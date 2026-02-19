@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>검색 IDE - 참소식.com</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0f172a;
+      --panel: #111827;
+      --panel-border: #1f2937;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --accent: #22c55e;
+      --accent-2: #38bdf8;
+    }
+
+    body {
+      margin: 0;
+      background: radial-gradient(1200px 600px at 20% -20%, #1f2937, transparent),
+                  radial-gradient(900px 500px at 120% 0%, #0b3b2a, transparent),
+                  var(--bg);
+      color: var(--text);
+      font-family: "Pretendard", "Noto Sans KR", system-ui, -apple-system, "Segoe UI", sans-serif;
+      min-height: 100vh;
+      overflow: hidden;
+    }
+
+    .app-shell {
+      display: grid;
+      grid-template-rows: auto 1fr;
+      height: 100vh;
+    }
+
+    .top-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 20px;
+      background: rgba(15, 23, 42, 0.85);
+      border-bottom: 1px solid var(--panel-border);
+      backdrop-filter: blur(8px);
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 700;
+      letter-spacing: 0.3px;
+    }
+
+    .brand-badge {
+      width: 10px;
+      height: 10px;
+      background: var(--accent);
+      border-radius: 50%;
+      box-shadow: 0 0 12px rgba(34, 197, 94, 0.6);
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: 1.1fr 1.4fr;
+      gap: 16px;
+      padding: 16px;
+      height: 100%;
+    }
+
+    .panel {
+      background: var(--panel);
+      border: 1px solid var(--panel-border);
+      border-radius: 14px;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.4);
+    }
+
+    .panel-header {
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--panel-border);
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--muted);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .editor-area {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      padding: 16px;
+      gap: 16px;
+    }
+
+    .search-input {
+      background: #0b1220;
+      color: var(--text);
+      border: 1px solid #1f2a44;
+      border-radius: 12px;
+      padding: 14px 16px;
+      font-size: 1rem;
+      outline: none;
+    }
+
+    .search-input:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 2px rgba(34, 197, 94, 0.2);
+    }
+
+    .action-row {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .action-btn {
+      border: none;
+      border-radius: 10px;
+      padding: 12px 14px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      cursor: pointer;
+      color: #0b1220;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    .action-btn.naver {
+      background: #3bd671;
+      box-shadow: 0 6px 16px rgba(59, 214, 113, 0.35);
+    }
+
+    .action-btn.youtube {
+      background: #ff5959;
+      box-shadow: 0 6px 16px rgba(255, 89, 89, 0.35);
+    }
+
+    .action-btn:hover {
+      transform: translateY(-1px);
+    }
+
+    .hint {
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+
+    .snippet-panel {
+      flex: 1;
+      padding: 16px;
+      display: grid;
+      grid-template-rows: auto 1fr;
+      gap: 12px;
+    }
+
+    .snippet-header {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+
+    .snippet-list {
+      display: grid;
+      gap: 12px;
+      overflow-y: auto;
+      padding-right: 6px;
+    }
+
+    .snippet-card {
+      border: 1px solid #1f2a44;
+      border-radius: 12px;
+      padding: 14px;
+      background: #0b1220;
+      display: grid;
+      gap: 8px;
+    }
+
+    .snippet-card h6 {
+      margin: 0;
+      font-size: 0.95rem;
+      color: var(--text);
+    }
+
+    .snippet-card p {
+      margin: 0;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+
+    .snippet-actions {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .snippet-actions a {
+      font-size: 0.85rem;
+      color: var(--accent-2);
+      text-decoration: none;
+    }
+
+    .result-panel {
+      display: grid;
+      grid-template-rows: auto 1fr;
+    }
+
+    .result-tabs {
+      display: flex;
+      gap: 10px;
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--panel-border);
+      background: rgba(15, 23, 42, 0.7);
+    }
+
+    .result-tab {
+      border: 1px solid #1f2a44;
+      background: #0b1220;
+      color: var(--muted);
+      padding: 6px 12px;
+      border-radius: 999px;
+      cursor: pointer;
+      font-size: 0.85rem;
+    }
+
+    .result-tab.active {
+      color: var(--text);
+      border-color: var(--accent);
+      box-shadow: 0 0 0 1px rgba(34, 197, 94, 0.25);
+    }
+
+    .result-display {
+      padding: 16px;
+      overflow-y: auto;
+      background: #0b1220;
+    }
+
+    .result-display code {
+      color: #93c5fd;
+      font-size: 0.9rem;
+    }
+
+    .empty-state {
+      border: 1px dashed #1f2a44;
+      border-radius: 12px;
+      padding: 18px;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 980px) {
+      .layout {
+        grid-template-columns: 1fr;
+      }
+      body {
+        overflow: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="app-shell">
+    <header class="top-bar">
+      <div class="brand">
+        <span class="brand-badge"></span>
+        검색 IDE - 참소식.com
+      </div>
+      <div class="hint">Naver / YouTube 검색을 빠르게 정리하는 전용 화면</div>
+    </header>
+
+    <main class="layout">
+      <section class="panel">
+        <div class="panel-header">
+          검색 프롬프트
+          <span class="hint">Enter 키로 네이버 검색</span>
+        </div>
+        <div class="editor-area">
+          <input id="queryInput" class="search-input" placeholder="예: 레이디두아 결말" />
+          <div class="action-row">
+            <button class="action-btn naver" onclick="runSearch('naver')">
+              네이버 검색 실행
+            </button>
+            <button class="action-btn youtube" onclick="runSearch('youtube')">
+              유튜브 검색 실행
+            </button>
+          </div>
+          <div class="hint">검색 결과는 오른쪽 패널에 링크로 표시됩니다.</div>
+          <div class="snippet-panel">
+            <div class="snippet-header">최근 검색 히스토리</div>
+            <div id="historyList" class="snippet-list">
+              <div class="empty-state">검색 기록이 없습니다.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel result-panel">
+        <div class="result-tabs">
+          <button class="result-tab active" data-tab="naver" onclick="switchTab('naver')">Naver</button>
+          <button class="result-tab" data-tab="youtube" onclick="switchTab('youtube')">YouTube</button>
+        </div>
+        <div class="result-display" id="resultDisplay">
+          <div class="empty-state">검색을 실행하면 링크가 표시됩니다.</div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    const historyList = [];
+    let activeTab = 'naver';
+
+    const urls = {
+      naver: (q) => `https://search.naver.com/search.naver?query=${encodeURIComponent(q)}`,
+      youtube: (q) => `https://www.youtube.com/results?search_query=${encodeURIComponent(q)}`
+    };
+
+    const queryInput = document.getElementById('queryInput');
+    queryInput.addEventListener('keydown', (event) => {
+      if (event.key === 'Enter') {
+        runSearch('naver');
+      }
+    });
+
+    function runSearch(source) {
+      const query = queryInput.value.trim();
+      if (!query) {
+        showResult(source, '검색어를 입력해주세요.');
+        return;
+      }
+
+      const url = urls[source](query);
+      const item = {
+        id: Date.now(),
+        query,
+        source,
+        url
+      };
+      historyList.unshift(item);
+      updateHistory();
+      showResult(source, url, query);
+      window.open(url, '_blank');
+    }
+
+    function updateHistory() {
+      const container = document.getElementById('historyList');
+      container.innerHTML = '';
+      historyList.slice(0, 6).forEach((item) => {
+        const card = document.createElement('div');
+        card.className = 'snippet-card';
+        card.innerHTML = `
+          <h6>${item.query}</h6>
+          <p>${item.source.toUpperCase()} 검색</p>
+          <div class="snippet-actions">
+            <a href="${item.url}" target="_blank">바로 열기</a>
+            <a href="#" onclick="switchTab('${item.source}'); showResult('${item.source}', '${item.url}', '${item.query.replace(/'/g, "&#39;")}'); return false;">오른쪽에 표시</a>
+          </div>
+        `;
+        container.appendChild(card);
+      });
+
+      if (historyList.length === 0) {
+        container.innerHTML = '<div class="empty-state">검색 기록이 없습니다.</div>';
+      }
+    }
+
+    function showResult(source, url, query = '') {
+      activeTab = source;
+      setActiveTab();
+      const display = document.getElementById('resultDisplay');
+      if (!url.startsWith('http')) {
+        display.innerHTML = `<div class="empty-state">${url}</div>`;
+        return;
+      }
+      display.innerHTML = `
+        <h5>${source === 'naver' ? 'Naver 검색' : 'YouTube 검색'}</h5>
+        <p class="hint">검색어: <strong>${escapeHtml(query)}</strong></p>
+        <p>링크: <a href="${url}" target="_blank">${url}</a></p>
+        <div class="empty-state">새 창에서 검색 결과가 열렸습니다.</div>
+      `;
+    }
+
+    function switchTab(tab) {
+      activeTab = tab;
+      setActiveTab();
+    }
+
+    function setActiveTab() {
+      document.querySelectorAll('.result-tab').forEach((btn) => {
+        btn.classList.toggle('active', btn.dataset.tab === activeTab);
+      });
+    }
+
+    function escapeHtml(text) {
+      const div = document.createElement('div');
+      div.textContent = text;
+      return div.innerHTML;
+    }
+  </script>
+</body>
+</html>

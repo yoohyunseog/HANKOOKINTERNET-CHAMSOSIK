@@ -1,0 +1,15 @@
+# 웹 크롤러 필수 패키지
+selenium>=4.16.0
+beautifulsoup4>=4.12.0
+lxml>=5.1.0
+requests>=2.31.0
+
+# 한국어 처리 (형태소 분석)
+konlpy>=0.6.0
+
+# 데이터 처리
+pandas>=2.1.0
+numpy>=1.24.0
+
+# 키워드 추출
+scikit-learn>=1.3.0

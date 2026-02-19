@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>한국인터넷.한국 - N/B 데이터베이스</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+  <style>
+    :root {
+      --primary-color: #059669;
+      --dark-bg: #064e3b;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Noto Sans KR', sans-serif;
+      background: linear-gradient(135deg, var(--dark-bg) 0%, #065f46 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      overflow-x: hidden;
+    }
+
+    .hero-section {
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .hero-title {
+      font-size: 4em;
+      font-weight: 700;
+      margin-bottom: 20px;
+      text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .hero-subtitle {
+      font-size: 1.5em;
+      margin-bottom: 40px;
+      opacity: 0.9;
+    }
+
+    .feature-card {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 15px;
+      padding: 30px;
+      transition: all 0.3s ease;
+      height: 100%;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-10px);
+      background: rgba(255, 255, 255, 0.15);
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+    }
+
+    .feature-icon {
+      font-size: 3em;
+      margin-bottom: 20px;
+      display: block;
+    }
+
+    .btn-hero {
+      padding: 15px 40px;
+      font-size: 1.2em;
+      border-radius: 50px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    .btn-hero:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 30px rgba(5, 150, 105, 0.4);
+    }
+
+    @media (max-width: 768px) {
+      .hero-title {
+        font-size: 2.5em;
+      }
+
+      .hero-subtitle {
+        font-size: 1.2em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="hero-section">
+      <h1 class="hero-title">
+        <i class="bi bi-database-fill-check"></i><br>
+        한국인터넷.한국
+      </h1>
+      <p class="hero-subtitle">N/B 데이터베이스 & 보이니치 필사본 해독 시스템</p>
+
+      <div class="row g-4 mb-5">
+        <div class="col-md-4">
+          <div class="feature-card">
+            <i class="bi bi-calculator feature-icon"></i>
+            <h3>N/B 계산기</h3>
+            <p class="mb-3">음수/양수 시간흐름 가중치 실시간 계산</p>
+            <a href="calculator.html" class="btn btn-light btn-sm">
+              <i class="bi bi-play-circle"></i> 시작
+            </a>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="feature-card">
+            <i class="bi bi-database feature-icon"></i>
+            <h3>데이터베이스</h3>
+            <p class="mb-3">계산 결과 검색 및 보이니치 토큰 조회</p>
+            <a href="참소식.com/database.html" class="btn btn-success btn-sm">
+              <i class="bi bi-search"></i> 검색
+            </a>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="feature-card">
+            <i class="bi bi-code-slash feature-icon"></i>
+            <h3>API 가이드</h3>
+            <p class="mb-3">RESTful API 사용 방법과 예제 코드</p>
+            <a href="참소식.com/api.html" class="btn btn-primary btn-sm">
+              <i class="bi bi-braces"></i> API 문서
+            </a>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="feature-card">
+            <i class="bi bi-book feature-icon"></i>
+            <h3>보이니치 해독</h3>
+            <p class="mb-3">보이니치 필사본 N/B 기반 해독 결과</p>
+            <a href="보이니치/index.html" class="btn btn-warning btn-sm">
+              <i class="bi bi-file-earmark-text"></i> 해독 보기
+            </a>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="feature-card">
+            <i class="bi bi-info-circle feature-icon"></i>
+            <h3>위키 문서</h3>
+            <p class="mb-3">N/B 데이터베이스 설계 지식 문서</p>
+            <a href="http://한국인터넷.한국#wiki" class="btn btn-info btn-sm">
+              <i class="bi bi-journal-text"></i> 문서
+            </a>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="feature-card">
+            <i class="bi bi-file-earmark-bar-graph feature-icon"></i>
+            <h3>도메인 관리 보고서</h3>
+            <p class="mb-3">한국인터넷.한국 도메인 관리 현황</p>
+            <a href="domain-report.html" class="btn btn-secondary btn-sm">
+              <i class="bi bi-clipboard-data"></i> 보고서 보기
+            </a>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="feature-card">
+            <i class="bi bi-controller feature-icon"></i>
+            <h3>🎮 판 정리표</h3>
+            <p class="mb-3">세계관적 퀘스트 로그 시스템</p>
+            <a href="quest-board.html" class="btn btn-dark btn-sm">
+              <i class="bi bi-joystick"></i> 퀘스트 보기
+            </a>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="feature-card">
+            <i class="bi bi-robot feature-icon"></i>
+            <h3>데이터 크롤러</h3>
+            <p class="mb-3">웹 수집 & 장르별 검색어 생성</p>
+            <a href="data-crawler.html" class="btn btn-success btn-sm">
+              <i class="bi bi-download"></i> 시스템 보기
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-5">
+        <a href="calculator.html" class="btn btn-outline-light btn-hero me-3">
+          <i class="bi bi-calculator"></i> 계산기 실행
+        </a>
+        <a href="참소식.com/database.html" class="btn btn-success btn-hero">
+          <i class="bi bi-database"></i> 데이터베이스
+        </a>
+      </div>
+
+      <div class="mt-5 text-center">
+        <p class="small opacity-75">
+          <i class="bi bi-info-circle"></i> 
+          N/B MAX/MIN 알고리즘 기반 계산 결과를 저장하고 검색할 수 있습니다
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

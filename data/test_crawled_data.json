@@ -1,0 +1,57 @@
+{
+  "total_count": 2,
+  "crawled_at": "2026-02-18T20:59:03.452232",
+  "stats": {
+    "total_pages": 2,
+    "total_keywords": 14,
+    "avg_keywords_per_page": 7.0,
+    "genre_distribution": {
+      "블로그": 1,
+      "뉴스": 1
+    }
+  },
+  "data": [
+    {
+      "id": "crawl_20260218205852_1",
+      "url": "https://www.python.org",
+      "domain": "www.python.org",
+      "title": "Welcome to Python.org",
+      "genre": "블로그",
+      "summary": "You can learn to use Python and see almost immediate gains in productivity and lower maintenance ...",
+      "keywords": [
+        "Python",
+        "and",
+        "the",
+        "to",
+        "of",
+        "can",
+        "in"
+      ],
+      "meta_description": "The official home of the Python Programming Language",
+      "paragraphs_count": 27,
+      "content_length": 2411,
+      "crawled_at": "2026-02-18T20:58:52.305135"
+    },
+    {
+      "id": "crawl_20260218205903_2",
+      "url": "https://www.yonhapnews.co.kr",
+      "domain": "www.yonhapnews.co.kr",
+      "title": "연합뉴스",
+      "genre": "뉴스",
+      "summary": "설 연휴 마지막 날인 18일 귀경객들이 몰리면서 주요 기차역과 버스터미널, 공항 등이 북적였다",
+      "keywords": [
+        "연합뉴스",
+        "주요",
+        "window",
+        "18일",
+        "연휴",
+        "마지막",
+        "장관에게"
+      ],
+      "meta_description": "연합뉴스는 새로운 시대에 걸맞은 멀티미디어 콘텐츠로 다양한 상품, 다양한 뉴스를 생산하고 있습니다.",
+      "paragraphs_count": 12,
+      "content_length": 872,
+      "crawled_at": "2026-02-18T20:59:03.445250"
+    }
+  ]
+}

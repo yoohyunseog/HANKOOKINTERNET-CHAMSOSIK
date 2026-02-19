@@ -1,0 +1,54 @@
+# Node modules
+node_modules/
+npm-debug.log*
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Environment files
+.env
+.venv
+venv/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+logs/
+server.log
+nohup.out
+
+# Data files (optional - 용량이 크면 제외)
+# data/nb_max/
+# data/nb_min/
+# data/naver_creator_trends/
+# data/ollama_chat/
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.old
+
+# Cache
+.cache/
+*.cache

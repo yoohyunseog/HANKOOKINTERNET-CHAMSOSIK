@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>참소식.com - N/B 데이터베이스</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+  <style>
+    :root {
+      --primary-color: #059669;
+      --dark-bg: #064e3b;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Noto Sans KR', sans-serif;
+      background: #f8f9fa;
+      min-height: 100vh;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    .top-bar {
+      background: linear-gradient(135deg, var(--dark-bg) 0%, #065f46 100%);
+      color: white;
+      padding: 15px 0;
+      text-align: center;
+      font-size: 1.3em;
+      font-weight: 700;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .category-filter {
+      background: white;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 1400px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .category-btn {
+      margin: 5px;
+      padding: 8px 20px;
+      border-radius: 20px;
+      border: 2px solid #ddd;
+      background: white;
+      color: #333;
+      font-weight: 600;
+      transition: all 0.3s;
+      cursor: pointer;
+    }
+
+    .category-btn:hover {
+      background: #f0f0f0;
+      transform: translateY(-2px);
+    }
+
+    .category-btn.active {
+      background: var(--primary-color);
+      color: white;
+      border-color: var(--primary-color);
+    }
+
+    .masonry-grid {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 15px;
+    }
+
+    .masonry-item {
+      width: 100%;
+      margin-bottom: 20px;
+      break-inside: avoid;
+    }
+
+    @media (min-width: 768px) {
+      .masonry-grid {
+        column-count: 2;
+        column-gap: 20px;
+      }
+    }
+
+    @media (min-width: 1200px) {
+      .masonry-grid {
+        column-count: 3;
+        column-gap: 20px;
+      }
+    }
+
+    .data-card {
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      border-left: 4px solid var(--primary-color);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .data-card:hover {
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+      transform: translateY(-3px);
+    }
+
+    .badge-rank {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      padding: 6px 12px;
+      border-radius: 20px;
+      font-weight: 600;
+      color: white;
+    }
+
+    .badge-views {
+      background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+      padding: 6px 12px;
+      border-radius: 20px;
+      font-weight: 600;
+      color: white;
+    }
+
+    .title-link {
+      color: #0f766e;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1.05em;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .title-link:hover {
+      color: var(--primary-color);
+      text-decoration: underline;
+    }
+
+    .search-links a {
+      margin-right: 5px;
+    }
+
+    .tab-pane {
+      padding: 20px 0;
+    }
+
+    .loading-spinner {
+      text-align: center;
+      padding: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="top-bar">
+    <i class="bi bi-database"></i> 참소식.com - N/B 데이터베이스
+  </div>
+
+  <div class="container-fluid">
+    
+    <!-- 탭 네비게이션 -->
+    <div class="category-filter">
+      <ul class="nav nav-pills justify-content-center" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="recent-tab" data-bs-toggle="pill" data-bs-target="#recent-panel" type="button" role="tab">
+            <i class="bi bi-clock-history"></i> 최근 100개
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="popular-tab" data-bs-toggle="pill" data-bs-target="#popular-panel" type="button" role="tab">
+            <i class="bi bi-fire"></i> 조회수 TOP 100
+          </button>
+        </li>
+      </ul>
+    </div>
+
+    <!-- 카테고리 필터 -->
+    <div class="category-filter">
+      <div class="text-center mb-3">
+        <strong><i class="bi bi-filter"></i> 카테고리 필터</strong>
+      </div>
+      <div class="text-center" id="category-buttons">
+        <button class="category-btn active" data-category="all">전체</button>
+        <button class="category-btn" data-category="정치">정치</button>
+        <button class="category-btn" data-category="경제">경제</button>
+        <button class="category-btn" data-category="사회">사회</button>
+        <button class="category-btn" data-category="문화">문화</button>
+        <button class="category-btn" data-category="스포츠">스포츠</button>
+        <button class="category-btn" data-category="기술">기술</button>
+        <button class="category-btn" data-category="국제">국제</button>
+        <button class="category-btn" data-category="연예">연예</button>
+        <button class="category-btn" data-category="사건사고">사건사고</button>
+        <button class="category-btn" data-category="건강">건강</button>
+        <button class="category-btn" data-category="교육">교육</button>
+        <button class="category-btn" data-category="일반">일반</button>
+      </div>
+    </div>
+
+    <!-- 탭 컨텐츠 -->
+    <div class="tab-content">
+      <div class="tab-pane fade show active" id="recent-panel" role="tabpanel">
+        <div class="text-center mb-3">
+          <span class="badge bg-primary">날짜순 정렬</span>
+          <span class="badge bg-info ms-2" id="recent-count">로딩 중...</span>
+        </div>
+        <div class="masonry-grid" id="recent-data">
+          <div class="loading-spinner">
+            <div class="spinner-border text-success" role="status"></div>
+            <p class="mt-2">데이터 로딩 중...</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-pane fade" id="popular-panel" role="tabpanel">
+        <div class="text-center mb-3">
+          <span class="badge bg-danger">조회수순 정렬</span>
+          <span class="badge bg-info ms-2" id="popular-count">로딩 중...</span>
+        </div>
+        <div class="masonry-grid" id="popular-data">
+          <div class="loading-spinner">
+            <div class="spinner-border text-success" role="status"></div>
+            <p class="mt-2">데이터 로딩 중...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const API_BASE = window.location.origin;
+    let recentDataCache = [];
+    let popularDataCache = [];
+    let currentCategory = 'all';
+
+    function escapeHtml(text) {
+      const div = document.createElement('div');
+      div.textContent = text;
+      return div.innerHTML;
+    }
+
+    function cleanInputText(text) {
+      if (!text) return '';
+      return text.replace(/\*/g, '');
+    }
+
+    function buildNaverSearchUrl(text) {
+      const query = encodeURIComponent(text || '');
+      return `https://search.naver.com/search.naver?query=${query}`;
+    }
+
+    function buildSearchLinks(text) {
+      if (!text) return '';
+      const query = encodeURIComponent(text);
+      return `
+        <a class="btn btn-sm btn-outline-success" href="https://search.naver.com/search.naver?query=${query}" target="_blank" rel="noopener" title="Naver">
+          <i class="bi bi-search"></i>
+        </a>
+        <a class="btn btn-sm btn-outline-primary" href="https://www.bing.com/search?q=${query}" target="_blank" rel="noopener" title="Bing">
+          <i class="bi bi-compass"></i>
+        </a>
+        <a class="btn btn-sm btn-outline-dark" href="https://www.google.com/search?q=${query}" target="_blank" rel="noopener" title="Google">
+          <i class="bi bi-google"></i>
+        </a>
+        <a class="btn btn-sm btn-outline-danger" href="https://www.youtube.com/results?search_query=${query}" target="_blank" rel="noopener" title="YouTube">
+          <i class="bi bi-youtube"></i>
+        </a>
+      `;
+    }
+
+    function renderDataCard(item, index, showRank = false) {
+      const category = item.category || '일반';
+      return `
+        <div class="masonry-item" data-category="${category}">
+          <div class="data-card" ${item.type === 'text' ? `onclick="trackKeywordClick('${escapeHtml(cleanInputText(item.input))}')"` : ''}>
+            <div class="mb-2">
+              ${showRank && index < 3 ? `<span class="badge-rank">🏆 ${index + 1}위</span>` : `<span class="badge bg-secondary">#${index + 1}</span>`}
+              ${showRank ? `<span class="badge-views ms-2">👁️ ${item.view_count || 0}회</span>` : ''}
+              <span class="badge bg-info ms-2">${item.type === 'text' ? '텍스트' : '숫자'}</span>
+              <span class="badge bg-secondary ms-2">${category}</span>
+            </div>
+            <div class="mb-2">
+              ${item.type === 'text'
+                ? `<a class="title-link" href="${buildNaverSearchUrl(cleanInputText(item.input))}" target="_blank" rel="noopener">${escapeHtml(cleanInputText(item.input))}</a>`
+                : `<span class="fw-bold">${escapeHtml(`[${item.input.join(', ')}]`)}</span>`
+              }
+            </div>
+            ${item.type === 'text' ? `<div class="mb-2 search-links">${buildSearchLinks(cleanInputText(item.input))}</div>` : ''}
+            <div class="small text-muted">
+              <i class="bi bi-calendar3"></i> ${new Date(item.timestamp).toLocaleString('ko-KR')}
+            </div>
+            <div class="small mt-2">
+              <i class="bi bi-arrow-up-circle text-success"></i> MAX: ${item.results?.[0]?.nb_max || 'N/A'}
+              <span class="ms-2"><i class="bi bi-arrow-down-circle text-danger"></i> MIN: ${item.results?.[0]?.nb_min || 'N/A'}</span>
+            </div>
+          </div>
+        </div>
+      `;
+    }
+
+    function filterDataByCategory(data, category) {
+      if (category === 'all') return data;
+      return data.filter(item => (item.category || '일반') === category);
+    }
+
+    function renderFilteredData(containerId, data, showRank = false) {
+      const filtered = filterDataByCategory(data, currentCategory);
+      const container = document.getElementById(containerId);
+      
+      if (filtered.length === 0) {
+        container.innerHTML = '<div class="text-center py-5"><p class="text-muted">해당 카테고리의 데이터가 없습니다.</p></div>';
+        return;
+      }
+      
+      const html = filtered.map((item, index) => renderDataCard(item, index, showRank)).join('');
+      container.innerHTML = html;
+    }
+
+    async function loadRecentData() {
+      try {
+        const response = await fetch(`${API_BASE}/api/recent?limit=100`);
+        const data = await response.json();
+        recentDataCache = data.results;
+        document.getElementById('recent-count').textContent = `${data.count}개`;
+        renderFilteredData('recent-data', recentDataCache, false);
+      } catch (error) {
+        document.getElementById('recent-data').innerHTML = '<div class="alert alert-danger"><i class="bi bi-exclamation-triangle"></i> 데이터를 불러올 수 없습니다.</div>';
+      }
+    }
+
+    async function loadPopularData() {
+      try {
+        const response = await fetch(`${API_BASE}/api/most-viewed?limit=100`);
+        const data = await response.json();
+        popularDataCache = data.results;
+        document.getElementById('popular-count').textContent = `${data.count}개`;
+        renderFilteredData('popular-data', popularDataCache, true);
+      } catch (error) {
+        document.getElementById('popular-data').innerHTML = '<div class="alert alert-danger"><i class="bi bi-exclamation-triangle"></i> 데이터를 불러올 수 없습니다.</div>';
+      }
+    }
+
+    // 카테고리 필터 버튼 이벤트
+    document.getElementById('category-buttons').addEventListener('click', function(e) {
+      if (e.target.classList.contains('category-btn')) {
+        // 모든 버튼의 active 제거
+        document.querySelectorAll('.category-btn').forEach(btn => btn.classList.remove('active'));
+        // 클릭한 버튼 active 추가
+        e.target.classList.add('active');
+        
+        // 현재 카테고리 업데이트
+        currentCategory = e.target.dataset.category;
+        
+        // 현재 활성 탭에 따라 데이터 재렌더링
+        const activeTab = document.querySelector('.nav-link.active').id;
+        if (activeTab === 'recent-tab') {
+          renderFilteredData('recent-data', recentDataCache, false);
+        } else if (activeTab === 'popular-tab') {
+          renderFilteredData('popular-data', popularDataCache, true);
+        }
+      }
+    });
+
+    // 탭 전환 이벤트
+    document.getElementById('popular-tab').addEventListener('shown.bs.tab', function () {
+      if (popularDataCache.length === 0) {
+        loadPopularData();
+      } else {
+        renderFilteredData('popular-data', popularDataCache, true);
+      }
+    });
+
+    document.getElementById('recent-tab').addEventListener('shown.bs.tab', function () {
+      renderFilteredData('recent-data', recentDataCache, false);
+    });
+
+    // 키워드 클릭 추적
+    function trackKeywordClick(keyword) {
+      if (keyword) {
+        fetch(`${API_BASE}/api/track-keyword?keyword=${encodeURIComponent(keyword)}`)
+          .catch(err => console.log('Keyword tracking:', err));
+      }
+    }
+
+    // 초기 로드
+    document.addEventListener('DOMContentLoaded', function() {
+      loadRecentData();
+    });
+  </script>
+
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4501795912654667"
+    crossorigin="anonymous"></script>
+  <ins class="adsbygoogle"
+    style="display:block"
+    data-ad-client="ca-pub-4501795912654667"
+    data-ad-slot="3078174225"
+    data-ad-format="auto"
+    data-full-width-responsive="true"></ins>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+
+</body>
+</html>

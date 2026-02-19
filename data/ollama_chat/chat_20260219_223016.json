@@ -1,0 +1,30 @@
+{
+  "model": "gpt-oss:120b-cloud",
+  "timestamp": "2026-02-19T22:30:32.189016",
+  "messages": [
+    {
+      "role": "user",
+      "content": "/트렌드검색반복 60 [오늘 주요 노스]"
+    },
+    {
+      "role": "user",
+      "content": "/반복 1 0 올팜 맞팜"
+    },
+    {
+      "role": "user",
+      "content": "올팜 맞팜"
+    },
+    {
+      "role": "assistant",
+      "content": "검색 결과에 따르면 “올팜 맞팜”에 대한 구체적인 내용은 확인되지 않았으며, 관련 영상은 유튜브에서 “올파 맞파”라는 검색어로 확인할 수 있습니다. 유튜브 검색 링크: https://www.youtube.com/results?search_query=%EC%98%AC%ED%8C%9C%20%EB%A7%9E%ED%8C%9C"
+    },
+    {
+      "role": "user",
+      "content": "/반복 1 0 닌텐도 스위치2"
+    },
+    {
+      "role": "user",
+      "content": "닌텐도 스위치2"
+    }
+  ]
+}
