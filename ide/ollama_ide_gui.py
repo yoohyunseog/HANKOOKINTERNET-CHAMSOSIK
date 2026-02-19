@@ -108,6 +108,7 @@ class OllamaIDE:
         self.batch_index = 0
         self.batch_interval = 2.0
         self.batch_search_mode = False
+        self.batch_infinite = False
         
         # 즐겨찾기 명령어
         self.favorites = []
@@ -484,22 +485,79 @@ class OllamaIDE:
         chat_container.pack(side=tk.RIGHT, fill=tk.BOTH, expand=True)
         
         # 상단 바
-        top_frame = tk.Frame(chat_container, bg="#1e293b", height=60)
+        top_frame = tk.Frame(chat_container, bg="#1e293b")
         top_frame.pack(fill=tk.X, padx=0, pady=0)
-        top_frame.pack_propagate(False)
+        
+        # 제목이 있는 상단 첫 번째 줄
+        title_frame = tk.Frame(top_frame, bg="#1e293b", height=50)
+        title_frame.pack(fill=tk.X)
+        title_frame.pack_propagate(False)
         
         title_label = tk.Label(
-            top_frame, 
+            title_frame, 
             text="🤖 Ollama IDE", 
             bg="#1e293b", 
             fg="#22c55e",
             font=("Arial", 16, "bold")
         )
-        title_label.pack(side=tk.LEFT, padx=20, pady=15)
+        title_label.pack(side=tk.LEFT, padx=20, pady=10)
         
-        # 모델 선택
-        model_frame = tk.Frame(top_frame, bg="#1e293b")
-        model_frame.pack(side=tk.RIGHT, padx=20)
+        # 모델 선택 (제목과 같은 줄)
+        model_frame = tk.Frame(title_frame, bg="#1e293b")
+        model_frame.pack(side=tk.RIGHT, padx=20, pady=10)
+        
+        # 카테고리 선택 프레임 (두 번째 줄)
+        category_frame = tk.Frame(top_frame, bg="#1e293b", height=45)
+        category_frame.pack(fill=tk.X, padx=20, pady=(0, 10))
+        category_frame.pack_propagate(False)
+        
+        tk.Label(
+            category_frame,
+            text="카테고리:",
+            bg="#1e293b",
+            fg="#94a3b8",
+            font=("Arial", 10)
+        ).pack(side=tk.LEFT, padx=(0, 10))
+        
+        self.category_var = tk.StringVar(value="all")
+        categories = [
+            ("전체", "all"),
+            ("정치", "정치"),
+            ("경제", "경제"),
+            ("사회", "사회"),
+            ("문화", "문화"),
+            ("게임", "게임"),
+            ("드라마", "드라마"),
+            ("영화", "영화"),
+            ("애니메이션", "애니메이션"),
+            ("괴물딴지", "괴물딴지"),
+            ("스포츠", "스포츠"),
+            ("기술", "기술"),
+            ("국제", "국제"),
+            ("연예", "연예"),
+            ("사건사고", "사건사고"),
+            ("건강", "건강"),
+            ("교육", "교육"),
+        ]
+        
+        for label, value in categories:
+            btn_color = "#22c55e" if value == "all" else "#334155"
+            btn_fg = "#000" if value == "all" else "#e2e8f0"
+            tk.Radiobutton(
+                category_frame,
+                text=label,
+                variable=self.category_var,
+                value=value,
+                bg="#1e293b",
+                fg=btn_fg,
+                selectcolor="#22c55e",
+                font=("Arial", 9),
+                relief=tk.FLAT,
+                cursor="hand2",
+                padx=8,
+                pady=4,
+                bd=0
+            ).pack(side=tk.LEFT, padx=2)
         
         tk.Label(
             model_frame, 
@@ -659,7 +717,9 @@ class OllamaIDE:
 
 🧾 트렌드 일괄 실행:
     • /트렌드반복 [간격초] - 최신 트렌드 키워드 순서대로 실행
+    • /트렌드반복 [간격초] --infinite - 트렌드 반복 (무한 반복)
     • /트렌드검색반복 [간격초] [키워드,키워드] - 최신 트렌드 키워드를 /검색으로 순서 실행
+    • /트렌드검색반복 [간격초] --infinite [키워드,키워드] - 검색 반복 (무한 반복)
 
 ⭐ 즐겨찾기:
     • 입력 후 [+ 추가] 버튼 클릭하여 저장
@@ -1022,9 +1082,9 @@ class OllamaIDE:
 
     def handle_trend_batch_command(self, message: str) -> bool:
         """트렌드 키워드 일괄 실행 명령 처리"""
-        match = re.match(r'^/(?:트렌드반복|trend-batch)(?:\s+(\d+(?:\.\d+)?))?\s*$', message)
+        match = re.match(r'^/(?:트렌드반복|trend-batch)(?:\s+(\d+(?:\.\d+)?))?(?:\s+(--infinite|-무한))?\s*$', message)
         if not match:
-            match = re.match(r'^/(?:트렌드검색반복|trend-batch-search)(?:\s+(\d+(?:\.\d+)?))?(?:\s*\[(.+)\])?\s*$', message)
+            match = re.match(r'^/(?:트렌드검색반복|trend-batch-search)(?:\s+(\d+(?:\.\d+)?))?(?:\s+(--infinite|-무한))?(?:\s*\[(.+)\])?\s*$', message)
             if not match:
                 return False
 
@@ -1033,12 +1093,20 @@ class OllamaIDE:
             self.display_message("system", "간격은 0.5초 이상이어야 합니다.")
             return True
 
+        # 무한 반복 옵션 확인
+        infinite_mode = bool(match.group(2)) if match.lastindex >= 2 else False
+        # 키워드 추출 (트렌드검색반복의 경우 그룹 3)
+        extra_raw = None
+        if '/트렌드검색반복' in message or '/trend-batch-search' in message:
+            extra_raw = match.group(3) if match.lastindex >= 3 else None
+        else:
+            extra_raw = match.group(2) if match.lastindex >= 2 and not match.group(2) else None
+
         keywords = self.load_trend_keywords_from_file()
         if not keywords:
             self.display_message("system", "트렌드 키워드를 찾을 수 없습니다.")
             return True
 
-        extra_raw = match.group(2) if match and len(match.groups()) > 1 else None
         extra_keywords = self.parse_extra_keywords(extra_raw)
         if extra_keywords:
             keywords.extend(extra_keywords)
@@ -1046,7 +1114,7 @@ class OllamaIDE:
         self.stop_repeat()
         self.stop_batch()
         search_mode = message.startswith('/트렌드검색반복') or message.startswith('/trend-batch-search')
-        self.start_batch(keywords, interval, search_mode)
+        self.start_batch(keywords, interval, search_mode, infinite_loop=infinite_mode)
         return True
 
     def parse_extra_keywords(self, raw: str) -> list:
@@ -1103,16 +1171,20 @@ class OllamaIDE:
 
         return keywords
 
-    def start_batch(self, items: list, interval: float, search_mode: bool = False):
+    def start_batch(self, items: list, interval: float, search_mode: bool = False, infinite_loop: bool = False):
         self.batch_active = True
         self.batch_items = items
         self.batch_index = 0
         self.batch_interval = interval
         self.batch_search_mode = search_mode
+        self.batch_infinite = infinite_loop
         if search_mode:
-            self.display_message("system", f"🧾 트렌드 검색 일괄 실행 시작: {len(items)}개, 간격 {interval}초")
+            mode_text = f"쿼리 {len(items)}개" if infinite_loop else f"{len(items)}개"
+            repeat_text = ", 무한 반복" if infinite_loop else ""
+            self.display_message("system", f"🧾 트렌드 검색 일괄 실행 시작: {mode_text}, 간격 {interval}초{repeat_text}")
         else:
-            self.display_message("system", f"🧾 트렌드 일괄 실행 시작: {len(items)}개, 간격 {interval}초")
+            repeat_text = ", 무한 반복" if infinite_loop else ""
+            self.display_message("system", f"🧾 트렌드 일괄 실행 시작: {len(items)}개, 간격 {interval}초{repeat_text}")
         self.run_batch_cycle()
 
     def stop_batch(self):
@@ -1127,9 +1199,14 @@ class OllamaIDE:
             return
 
         if self.batch_index >= len(self.batch_items):
-            self.batch_active = False
-            self.display_message("system", "✅ 트렌드 일괄 실행 완료")
-            return
+            # 무한 반복 모드이면 처음부터 다시
+            if getattr(self, 'batch_infinite', False):
+                self.batch_index = 0
+                self.display_message("system", "🔄 처음부터 다시 시작합니다...")
+            else:
+                self.batch_active = False
+                self.display_message("system", "✅ 트렌드 일괄 실행 완료")
+                return
 
         if self.is_generating:
             self.root.after(300, self.run_batch_cycle)
@@ -1491,7 +1568,10 @@ class OllamaIDE:
         """AI가 텍스트 내용을 분석해서 카테고리 생성"""
         try:
             prompt = f"""다음 텍스트를 읽고 가장 적절한 카테고리를 한 단어로 답변하세요.
-카테고리 예시: 정치, 경제, 사회, 문화, 스포츠, 기술, 국제, 연예, 사건사고, 건강, 교육
+카테고리 예시: 정치, 경제, 사회, 문화, 게임, 드라마, 영화, 애니메이션, 괴물딴지, 스포츠, 기술, 국제, 연예, 사건사고, 건강, 교육
+
+카테고리 설명:
+- 괴물딴지: 미스테리, 괴담, 미소지막, 공포, 검은색 덕후, UFO, 초능력, 초자연 현상, 행운, 불운 등 신비로운 주제
 
 텍스트: {text[:200]}
 
