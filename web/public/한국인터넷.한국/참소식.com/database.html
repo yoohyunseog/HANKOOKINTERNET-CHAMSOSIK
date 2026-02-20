@@ -594,7 +594,15 @@ data/nb_min/9/9/9/0/result_nb_calc_12345.json</div>
             if (!nbParam) {
                 return;
             }
-            const decoded = decodeURIComponent(nbParam);
+            
+            let decoded;
+            try {
+                decoded = decodeURIComponent(nbParam);
+            } catch (e) {
+                console.error('URL 디코딩 오류:', e);
+                // 디코딩 실패 시 원본 사용
+                decoded = nbParam;
+            }
             
             // URL이 포함된 텍스트는 저장하지 않음
             if (decoded.includes('http://') || decoded.includes('https://')) {
@@ -608,8 +616,12 @@ data/nb_min/9/9/9/0/result_nb_calc_12345.json</div>
             // category 파라미터 처리
             const categoryParam = getQueryParam('category');
             if (categoryParam) {
-                const categoryInput = document.getElementById('categoryInput');
-                categoryInput.value = decodeURIComponent(categoryParam);
+                try {
+                    const categoryInput = document.getElementById('categoryInput');
+                    categoryInput.value = decodeURIComponent(categoryParam);
+                } catch (e) {
+                    console.error('카테고리 디코딩 오류:', e);
+                }
             }
             
             performSearch();
@@ -628,16 +640,32 @@ data/nb_min/9/9/9/0/result_nb_calc_12345.json</div>
             }
 
             console.log(`Page will close in ${seconds} seconds`);
-            setTimeout(() => {
-                // 브라우저 보안 우회: opener를 설정하면 닫을 수 있음
-                window.opener = window;
-                window.close();
-                
-                // 닫기가 실패하면 빈 페이지로 이동
-                if (!window.closed) {
-                    window.location.href = 'about:blank';
+
+            const attemptClose = () => {
+                try {
+                    window.opener = window;
+                    window.close();
+                } catch (e) {
+                    // ignore
                 }
-            }, seconds * 1000);
+
+                if (!window.closed) {
+                    // 브라우저가 닫기를 막을 때는 빈 페이지로 전환 후 재시도
+                    document.body.innerHTML = '';
+                    document.documentElement.innerHTML = '';
+                    window.location.replace('about:blank');
+                    setTimeout(() => {
+                        try {
+                            window.open('', '_self');
+                            window.close();
+                        } catch (e) {
+                            // ignore
+                        }
+                    }, 100);
+                }
+            };
+
+            setTimeout(attemptClose, seconds * 1000);
         }
 
         loadStatistics();

@@ -6,6 +6,9 @@
   <title>참소식.com - N/B 데이터베이스</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+  <!-- RSS 피드 링크 -->
+  <link rel="alternate" type="application/rss+xml" title="참소식.com RSS 피드" href="/feed.xml">
+  <link rel="alternate" type="application/rss+xml" title="참소식.com 인기글" href="/feed-popular.xml">
   <style>
     :root {
       --primary-color: #059669;
@@ -63,20 +66,67 @@
       border-color: var(--primary-color);
     }
 
+    .category-btn.reset {
+      background: #dc3545;
+      color: white;
+      border-color: #dc3545;
+    }
+
+    .category-btn.reset:hover {
+      background: #bb2d3b;
+      border-color: #bb2d3b;
+      color: white;
+    }
+
     .masonry-grid {
       max-width: 1400px;
       margin: 0 auto;
       padding: 0 15px;
-      transition: opacity 0.3s ease;
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      position: relative;
+    }
+
+    .masonry-grid.sorting {
+      opacity: 0.5;
+      filter: blur(1px);
     }
 
     .masonry-item {
       width: 100%;
       margin-bottom: 20px;
       break-inside: avoid;
+      opacity: 1;
+      transform: translateY(0) scale(1);
+      animation: none;
+      transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+
+    /* 제거 애니메이션 */
+    .masonry-item.removing {
       opacity: 0;
-      transform: translateY(20px);
-      animation: fadeInUp 0.5s ease forwards;
+      transform: translateY(-20px) scale(0.9);
+      pointer-events: none;
+    }
+
+    /* 새로 추가될 때 애니메이션 */
+    .masonry-item.new-item {
+      opacity: 0;
+      transform: translateY(30px) scale(0.95);
+      animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+    }
+
+    @keyframes slideInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
 
     @keyframes fadeInUp {
@@ -212,6 +262,7 @@
         <button class="category-btn" data-category="건강">건강</button>
         <button class="category-btn" data-category="교육">교육</button>
         <button class="category-btn" data-category="일반">일반</button>
+        <button class="category-btn reset" onclick="window.location.href='../'">🔄 초기화</button>
       </div>
     </div>
 
@@ -299,19 +350,19 @@
           <div class="data-card" data-item-index="${index}">
             <div class="mb-2">
               ${showRank && index < 3 ? `<span class="badge-rank">🏆 ${index + 1}위</span>` : `<span class="badge bg-secondary">#${index + 1}</span>`}
-              ${showRank ? `<span class="badge-views ms-2">👁️ ${item.view_count || 0}회</span>` : ''}
               <span class="badge bg-info ms-2">${item.type === 'text' ? '텍스트' : '숫자'}</span>
               <span class="badge bg-secondary ms-2">${category}</span>
             </div>
             <div class="mb-2">
               ${item.type === 'text'
-                ? `<span class="title-text" onclick="sortBySimilarity(${index}, ${nbMax}, ${nbMin})">${escapeHtml(cleanInputText(item.input))}</span>`
+                ? `<span class="title-text" data-item-id="${item.id || item.calculation_id}" data-item-text="${escapeHtml(cleanInputText(item.input))}" data-item-index="${index}" onclick="incrementViewCount(this.getAttribute('data-item-id')); searchByKeyword(this.getAttribute('data-item-text'), ${index}, ${nbMax}, ${nbMin})">${escapeHtml(cleanInputText(item.input))}</span>`
                 : `<span class="fw-bold">${escapeHtml(`[${item.input.join(', ')}]`)}</span>`
               }
             </div>
             ${item.type === 'text' ? `<div class="mb-2 search-links">${buildSearchLinks(cleanInputText(item.input))}</div>` : ''}
             <div class="small text-muted">
               <i class="bi bi-calendar3"></i> ${new Date(item.timestamp).toLocaleString('ko-KR')}
+              <span class="ms-3">조회수 ${item.view_count || 0}회</span>
             </div>
             <div class="small mt-2">
               <i class="bi bi-arrow-up-circle text-success"></i> MAX: ${nbMax}
@@ -347,11 +398,47 @@
 
     async function loadRecentData() {
       try {
-        const response = await fetch(`${API_BASE}/api/recent?limit=100`);
-        const data = await response.json();
-        recentDataCache = data.results;
-        document.getElementById('recent-count').textContent = `${data.count}개`;
-        renderFilteredData('recent-data', recentDataCache, false);
+        // URL 파라미터 확인
+        const urlParams = new URLSearchParams(window.location.search);
+        const searchKeyword = urlParams.get('search');
+        const selectedMax = urlParams.get('selected_max');
+        const selectedMin = urlParams.get('selected_min');
+        
+        let response, data;
+        
+        if (searchKeyword && selectedMax !== null && selectedMin !== null) {
+          // 제목 클릭 모드 - 두 API를 동시에 호출
+          const [searchResponse, recentResponse] = await Promise.all([
+            fetch(`${API_BASE}/api/search?text=${encodeURIComponent(searchKeyword)}&limit=99`),
+            fetch(`${API_BASE}/api/recent?limit=99`)
+          ]);
+          
+          const searchData = await searchResponse.json();
+          const recentData = await recentResponse.json();
+          
+          document.getElementById('recent-count').textContent = `🎯 "${searchKeyword}" 기준 유사 항목 ${recentData.count}개`;
+          
+          recentDataCache = recentData.results;
+          
+          // 선택된 항목의 카테고리 찾기
+          const clickedItem = recentDataCache.find(item => 
+            cleanInputText(item.input) === searchKeyword
+          );
+          const targetCategory = clickedItem?.category || '일반';
+          const targetMax = parseFloat(selectedMax);
+          const targetMin = parseFloat(selectedMin);
+          
+          // 유사도 기반 정렬 수행
+          sortBySimilarityWithData('recent-data', recentDataCache, targetCategory, targetMax, targetMin, false);
+        } else {
+          // 일반 모드 - limit 100
+          response = await fetch(`${API_BASE}/api/recent?limit=100`);
+          data = await response.json();
+          document.getElementById('recent-count').textContent = `${data.count}개`;
+          
+          recentDataCache = data.results;
+          renderFilteredData('recent-data', recentDataCache, false);
+        }
       } catch (error) {
         document.getElementById('recent-data').innerHTML = '<div class="alert alert-danger"><i class="bi bi-exclamation-triangle"></i> 데이터를 불러올 수 없습니다.</div>';
       }
@@ -411,12 +498,40 @@
       }
     }
 
+    // 조회수 증가 (제목 클릭 시)
+    function incrementViewCount(itemId) {
+      if (!itemId) {
+        console.warn('조회수 증가: ID 없음');
+        return;
+      }
+      
+      fetch(`${API_BASE}/api/search?id=${encodeURIComponent(itemId)}`)
+        .then(res => res.json())
+        .then(data => {
+          console.log('조회수 증가 성공:', data);
+          if (data.success && data.results && data.results.length > 0) {
+            const newViewCount = data.results[0].view_count;
+            console.log('새 조회수:', newViewCount);
+            // TODO: 화면의 조회수 배지 업데이트
+          }
+        })
+        .catch(err => console.error('조회수 증가 실패:', err));
+    }
+
+    // 검색 모드로 전환 (페이지 새로고침)
+    function searchByKeyword(keyword, index, nbMax, nbMin) {
+      // URL에 검색 파라미터와 선택된 항목 정보 추가하여 페이지 이동
+      const params = new URLSearchParams();
+      params.set('search', keyword);
+      params.set('selected_max', nbMax);
+      params.set('selected_min', nbMin);
+      
+      // 페이지 새로고침하면서 검색 모드로 전환
+      window.location.href = `${window.location.pathname}?${params.toString()}`;
+    }
+
     // MAX/MIN 값 기준 유사도 정렬 (카테고리 50% + MAX 25% + MIN 25%)
     function sortBySimilarity(clickedIndex, targetMax, targetMin) {
-      // 진행 중인 모든 애니메이션 타이머 취소
-      sortingTimers.forEach(timer => clearTimeout(timer));
-      sortingTimers = [];
-      
       // 현재 활성 탭 확인
       const activeTab = document.querySelector('.nav-link.active').id;
       let currentData = activeTab === 'recent-tab' ? recentDataCache : popularDataCache;
@@ -426,6 +541,15 @@
       // 클릭된 항목의 카테고리 찾기
       const clickedItem = currentData[clickedIndex];
       const targetCategory = clickedItem?.category || '일반';
+      
+      sortBySimilarityWithData(containerId, currentData, targetCategory, targetMax, targetMin, showRank);
+    }
+
+    // 유사도 정렬 실제 수행 함수
+    function sortBySimilarityWithData(containerId, currentData, targetCategory, targetMax, targetMin, showRank) {
+      // 진행 중인 모든 애니메이션 타이머 취소
+      sortingTimers.forEach(timer => clearTimeout(timer));
+      sortingTimers = [];
       
       // 카테고리 필터 적용
       let filtered = filterDataByCategory(currentData, currentCategory);
@@ -464,14 +588,24 @@
         };
       }).sort((a, b) => a.totalSimilarity - b.totalSimilarity); // 점수가 낮을수록 유사
       
-      // 컨테이너 비우기
+      // 컨테이너에 정렬 중 효과 추가
       const container = document.getElementById(containerId);
-      container.innerHTML = '';
+      container.classList.add('sorting');
       
-      // 스크롤을 최상단으로
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+      // 기존 아이템들에 sorting 클래스 추가
+      const existingItems = container.querySelectorAll('.masonry-item');
+      existingItems.forEach(item => item.classList.add('sorting'));
       
-      // 카드를 하나씩 순차적으로 추가
+      // 애니메이션 후 컨테이너 비우기
+      setTimeout(() => {
+        container.innerHTML = '';
+        container.classList.remove('sorting');
+        
+        // 스크롤을 최상단으로
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }, 300);
+      
+      // 카드를 하나씩 순차적으로 추가 (300ms 딜레이 후 시작)
       sortedData.forEach((item, index) => {
         const timer = setTimeout(() => {
           const category = item.category || '일반';
@@ -483,24 +617,24 @@
           const categoryMatch = category === targetCategory ? '✓' : '✗';
           
           const cardHtml = `
-            <div class="masonry-item" data-category="${category}" style="animation-delay: 0s">
+            <div class="masonry-item new-item" data-category="${category}" style="animation-delay: ${(index * 50)}ms">
               <div class="data-card ${isSimilar ? 'similar-sorted' : ''}" data-item-index="${item.originalIndex}">
                 <div class="mb-2">
                   ${index === 0 ? `<span class="badge bg-warning">🎯 선택됨</span>` : ''}
                   ${isSimilar ? `<span class="badge bg-warning ms-2">📊 유사 ${index}</span>` : `<span class="badge bg-secondary">#${index + 1}</span>`}
-                  ${showRank ? `<span class="badge-views ms-2">👁️ ${item.view_count || 0}회</span>` : ''}
                   <span class="badge bg-info ms-2">${item.type === 'text' ? '텍스트' : '숫자'}</span>
                   <span class="badge bg-secondary ms-2">${category}</span>
                 </div>
                 <div class="mb-2">
                   ${item.type === 'text'
-                    ? `<span class="title-text" onclick="sortBySimilarity(${item.originalIndex}, ${nbMax}, ${nbMin})">${escapeHtml(cleanInputText(item.input))}</span>`
+                    ? `<span class="title-text" data-item-id="${item.id || item.calculation_id}" data-item-text="${escapeHtml(cleanInputText(item.input))}" data-item-index="${item.originalIndex}" onclick="incrementViewCount(this.getAttribute('data-item-id')); searchByKeyword(this.getAttribute('data-item-text'), ${item.originalIndex}, ${nbMax}, ${nbMin})">${escapeHtml(cleanInputText(item.input))}</span>`
                     : `<span class="fw-bold">${escapeHtml(`[${item.input.join(', ')}]`)}</span>`
                   }
                 </div>
                 ${item.type === 'text' ? `<div class="mb-2 search-links">${buildSearchLinks(cleanInputText(item.input))}</div>` : ''}
                 <div class="small text-muted">
                   <i class="bi bi-calendar3"></i> ${new Date(item.timestamp).toLocaleString('ko-KR')}
+                  <span class="ms-3">조회수 ${item.view_count || 0}회</span>
                 </div>
                 <div class="small mt-2">
                   <i class="bi bi-arrow-up-circle text-success"></i> MAX: ${nbMax}
@@ -517,8 +651,14 @@
           // 임시 div에 HTML 삽입 후 첫 번째 자식 요소를 실제 컨테이너에 추가
           const tempDiv = document.createElement('div');
           tempDiv.innerHTML = cardHtml;
-          container.appendChild(tempDiv.firstElementChild);
-        }, index * 100); // 각 카드마다 100ms 간격
+          const newCard = tempDiv.firstElementChild;
+          container.appendChild(newCard);
+          
+          // 애니메이션 완료 후 new-item 클래스 제거
+          setTimeout(() => {
+            newCard.classList.remove('new-item');
+          }, 600 + (index * 50)); // 애니메이션 시간 + 딜레이
+        }, 300 + (index * 100)); // 300ms 딜레이 + 각 카드마다 100ms 간격
         
         sortingTimers.push(timer);
       });
@@ -526,6 +666,11 @@
 
     // 초기 로드
     document.addEventListener('DOMContentLoaded', function() {
+      loadRecentData();
+    });
+
+    // 브라우저 뒤로/앞으로 가기 지원
+    window.addEventListener('popstate', function(event) {
       loadRecentData();
     });
   </script>

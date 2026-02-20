@@ -223,18 +223,58 @@ app.post('/api/calculate', async (req, res) => {
 });
 
 // API: 검색 (Unicode 배열 또는 텍스트)
+// API: 검색 (POST + GET 지원, ID 검색 추가)
 app.post('/api/search', async (req, res) => {
     try {
-        const { text, unicode } = req.body;
+        const { text, unicode, id, limit } = req.body;
         
         let results = [];
+        const searchLimit = parseInt(limit) || 10;
         
-        if (unicode && Array.isArray(unicode)) {
+        if (id) {
+            // ID로 검색 (조회수 증가)
+            const calculation = await storage.loadCalculation(id, true);
+            if (calculation) {
+                results = [calculation];
+            }
+        } else if (unicode && Array.isArray(unicode)) {
             // Unicode 배열로 검색
             results = await storage.searchByUnicode(unicode);
         } else if (text) {
             // 텍스트로 검색
-            results = await storage.searchByText(text);
+            results = await storage.searchByText(text, searchLimit);
+        } else {
+            return res.status(400).json({ error: '검색어를 입력해주세요.' });
+        }
+        
+        return res.json({
+            success: true,
+            count: results.length,
+            results: results
+        });
+    } catch (error) {
+        console.error('검색 오류:', error);
+        res.status(500).json({ error: error.message });
+    }
+});
+
+// API: 검색 (GET 요청 지원 - 조회수 증가용)
+app.get('/api/search', async (req, res) => {
+    try {
+        const { text, id, limit } = req.query;
+        
+        let results = [];
+        const searchLimit = parseInt(limit) || 10;
+        
+        if (id) {
+            // ID로 검색 (조회수 증가)
+            const calculation = await storage.loadCalculation(id, true);
+            if (calculation) {
+                results = [calculation];
+            }
+        } else if (text) {
+            // 텍스트로 검색
+            results = await storage.searchByText(text, searchLimit);
         } else {
             return res.status(400).json({ error: '검색어를 입력해주세요.' });
         }
@@ -278,6 +318,81 @@ app.get('/api/stats', async (req, res) => {
     }
 });
 
+// API: RSS 피드 (dlvr.it용)
+app.get('/feed.xml', async (req, res) => {
+    try {
+        const limit = parseInt(req.query.limit) || 30;
+        const results = await storage.getRecentCalculations(limit);
+        
+        // RSS 2.0 형식의 XML 생성
+        const siteUrl = 'https://xn--9l4b4xi9r.com'; // 참소식.com의 실제 도메인으로 변경 필요
+        const feedUrl = `${siteUrl}/feed.xml`;
+        
+        const buildDate = new Date().toUTCString();
+        
+        // 각 항목의 아이템 생성
+        const items = results.map(item => {
+            const pubDate = new Date(item.timestamp).toUTCString();
+            const category = item.category || '일반';
+            const title = item.input instanceof Array ? `[${item.input.join(', ')}]` : item.input;
+            const cleanTitle = typeof title === 'string' ? title.replace(/\*/g, '') : title;
+            const nbMax = (item.results && item.results[0] && item.results[0].nb_max) || 0;
+            const nbMin = (item.results && item.results[0] && item.results[0].nb_min) || 0;
+            
+            // index.html 검색 링크 형식
+            const itemLink = `${siteUrl}/index.html?search=${encodeURIComponent(cleanTitle)}&selected_max=${nbMax}&selected_min=${nbMin}`.replace(/&/g, '&amp;');
+            
+            const description = `
+                <p><strong>카테고리:</strong> ${category}</p>
+                <p><strong>MAX:</strong> ${nbMax} | <strong>MIN:</strong> ${nbMin}</p>
+                <p><strong>유형:</strong> ${item.type === 'text' ? '텍스트' : '숫자'}</p>
+                <p><strong>조회수:</strong> ${item.view_count || 0}</p>
+            `.trim();
+            
+            return `
+    <item>
+        <title><![CDATA[${title}]]></title>
+        <description><![CDATA[${description}]]></description>
+        <link>${itemLink}</link>
+        <category><![CDATA[${category}]]></category>
+        <pubDate>${pubDate}</pubDate>
+        <guid>${siteUrl}#${item.id || item.timestamp}</guid>
+    </item>
+            `.trim();
+        }).join('\n');
+        
+        const rss = `<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+    <channel>
+        <title>참소식.com - N/B 데이터베이스</title>
+        <link>${siteUrl}</link>
+        <description>참소식 - 최신 N/B 계산 결과</description>
+        <language>ko-kr</language>
+        <lastBuildDate>${buildDate}</lastBuildDate>
+        <image>
+            <title>참소식.com</title>
+            <url>${siteUrl}/logo.png</url>
+            <link>${siteUrl}</link>
+        </image>
+${items}
+    </channel>
+</rss>`;
+        
+        res.type('application/xml; charset=utf-8');
+        res.send(rss);
+    } catch (error) {
+        console.error('RSS 피드 생성 오류:', error);
+        res.status(500).type('application/xml').send(`<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+    <channel>
+        <title>참소식.com - 오류</title>
+        <link>https://xn--9l4b4xi9r.com</link>
+        <description>오류가 발생했습니다.</description>
+    </channel>
+</rss>`);
+    }
+});
+
 // API: 조회수가 가장 많은 결과
 app.get('/api/most-viewed', async (req, res) => {
     try {
@@ -295,7 +410,133 @@ app.get('/api/most-viewed', async (req, res) => {
     }
 });
 
-// API: 키워드 클릭 추적
+// XML 이스케이프 함수
+function escapeXml(str) {
+    if (!str) return '';
+    return str.replace(/[<>&'"]/g, (char) => {
+        const entities = {
+            '&': '&amp;',
+            '<': '&lt;',
+            '>': '&gt;',
+            "'": '&apos;',
+            '"': '&quot;'
+        };
+        return entities[char] || char;
+    });
+}
+
+// API: RSS 피드 - 인기글 (dlvr.it용)
+app.get('/feed-popular.xml', async (req, res) => {
+    try {
+        const limit = parseInt(req.query.limit) || 30;
+        const results = await storage.getMostViewedCalculations(limit);
+        
+        // RSS 2.0 형식의 XML 생성
+        const siteUrl = 'https://xn--9l4b4xi9r.com'; // 참소식.com의 실제 도메인으로 변경 필요
+        const feedUrl = `${siteUrl}/feed-popular.xml`;
+        
+        const buildDate = new Date().toUTCString();
+        
+        // 각 항목의 아이템 생성
+        const items = results.map(item => {
+            const pubDate = new Date(item.timestamp).toUTCString();
+            const category = item.category || '일반';
+            const title = item.input instanceof Array ? `[${item.input.join(', ')}]` : item.input;
+            const cleanTitle = typeof title === 'string' ? title.replace(/\*/g, '') : title;
+            const nbMax = (item.results && item.results[0] && item.results[0].nb_max) || 0;
+            const nbMin = (item.results && item.results[0] && item.results[0].nb_min) || 0;
+            
+            // index.html 검색 링크 형식
+            const itemLink = `${siteUrl}/index.html?search=${encodeURIComponent(cleanTitle)}&selected_max=${nbMax}&selected_min=${nbMin}`.replace(/&/g, '&amp;');
+            
+            const description = `
+                <p><strong>카테고리:</strong> ${category}</p>
+                <p><strong>MAX:</strong> ${nbMax} | <strong>MIN:</strong> ${nbMin}</p>
+                <p><strong>유형:</strong> ${item.type === 'text' ? '텍스트' : '숫자'}</p>
+                <p><strong>조회수:</strong> ${item.view_count || 0}</p>
+            `.trim();
+            
+            return `
+    <item>
+        <title><![CDATA[${title}]]></title>
+        <description><![CDATA[${description}]]></description>
+        <link>${itemLink}</link>
+        <category><![CDATA[${category}]]></category>
+        <pubDate>${pubDate}</pubDate>
+        <guid>${siteUrl}#${item.id || item.timestamp}</guid>
+    </item>
+            `.trim();
+        }).join('\n');
+        
+        const rss = `<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+    <channel>
+        <title>참소식.com - 인기글</title>
+        <link>${siteUrl}</link>
+        <description>참소식 - 조회수 많은 N/B 계산 결과</description>
+        <language>ko-kr</language>
+        <lastBuildDate>${buildDate}</lastBuildDate>
+        <image>
+            <title>참소식.com</title>
+            <url>${siteUrl}/logo.png</url>
+            <link>${siteUrl}</link>
+        </image>
+${items}
+    </channel>
+</rss>`;
+        
+        res.type('application/xml; charset=utf-8');
+        res.send(rss);
+    } catch (error) {
+        console.error('인기글 RSS 피드 생성 오류:', error);
+        res.status(500).type('application/xml').send(`<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+    <channel>
+        <title>참소식.com - 오류</title>
+        <link>https://xn--9l4b4xi9r.com</link>
+        <description>오류가 발생했습니다.</description>
+    </channel>
+</rss>`);
+    }
+});
+
+// API: Sitemap (SEO)
+app.get('/sitemap.xml', async (req, res) => {
+    try {
+        const siteUrl = 'https://xn--9l4b4xi9r.com';
+        const lastMod = new Date().toISOString().split('T')[0];
+        
+        let urls = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>${siteUrl}/</loc>
+        <lastmod>${lastMod}</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>${siteUrl}/feed.xml</loc>
+        <lastmod>${lastMod}</lastmod>
+        <changefreq>hourly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>${siteUrl}/feed-popular.xml</loc>
+        <lastmod>${lastMod}</lastmod>
+        <changefreq>hourly</changefreq>
+        <priority>0.8</priority>
+    </url>
+</urlset>`;
+        
+        res.type('application/xml; charset=utf-8');
+        res.send(urls);
+    } catch (error) {
+        console.error('Sitemap 생성 오류:', error);
+        res.status(500).send('오류가 발생했습니다.');
+    }
+});
+
+// API: robots.txt
 app.get('/api/track-keyword', (req, res) => {
     const keyword = normalizeKeyword(req.query.keyword || '');
     if (!keyword) {

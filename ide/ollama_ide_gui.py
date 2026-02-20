@@ -10,7 +10,7 @@ import json
 import os
 import sys
 import time
-from datetime import datetime
+from datetime import datetime, timedelta
 from threading import Thread
 import glob
 import re
@@ -39,6 +39,15 @@ def log_debug(msg):
             f.write(log_msg + "\n")
     except:
         pass
+
+# 웹뷰 라이브러리 임포트
+try:
+    from tkinterweb import HtmlFrame
+    WEBVIEW_AVAILABLE = True
+    log_debug("[시스템] tkinterweb 사용 가능 - 웹뷰 모드로 실행")
+except ImportError:
+    WEBVIEW_AVAILABLE = False
+    log_debug("[시스템] tkinterweb 미설치 - 브라우저 모드로 실행")
 
 # 검색 모듈 import
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -109,6 +118,7 @@ class OllamaIDE:
         self.batch_interval = 2.0
         self.batch_search_mode = False
         self.batch_infinite = False
+        self.batch_open_background = False
         
         # 즐겨찾기 명령어
         self.favorites = []
@@ -188,6 +198,171 @@ class OllamaIDE:
                 cleaned = re.sub(r'\*\*', '', line).strip()
                 items.append(cleaned)
         return items
+
+    def is_today_news_date(self, date_text: str) -> bool:
+        if not date_text:
+            return False
+
+        text = date_text.strip().lower()
+
+        if '방금' in text or '초 전' in text or '분 전' in text or '시간 전' in text:
+            return True
+        if '오늘' in text:
+            return True
+        if '어제' in text:
+            return False
+
+        days_ago = re.search(r'(\d+)\s*일\s*전', text)
+        if days_ago:
+            return days_ago.group(1) == '0'
+
+        today = datetime.now().date()
+        for fmt in ("%Y.%m.%d", "%Y-%m-%d", "%Y/%m/%d"):
+            try:
+                dt = datetime.strptime(text[:10], fmt).date()
+                return dt == today
+            except ValueError:
+                pass
+
+        m = re.search(r'(\d{1,2})[./-](\d{1,2})', text)
+        if m:
+            month = int(m.group(1))
+            day = int(m.group(2))
+            try:
+                dt = datetime(today.year, month, day).date()
+                return dt == today
+            except ValueError:
+                return False
+
+        return False
+
+    def filter_today_news_items(self, items: list) -> list:
+        if not items:
+            return []
+        return [item for item in items if self.is_today_news_date(item.get('date', ''))]
+
+    def is_today_news_text(self, text: str) -> bool:
+        if not text:
+            return False
+
+        cleaned = text.strip().lower()
+
+        if '방금' in cleaned or '초 전' in cleaned or '분 전' in cleaned or '시간 전' in cleaned:
+            return True
+        if '오늘' in cleaned:
+            return True
+        if '어제' in cleaned:
+            return False
+
+        days_ago = re.search(r'(\d+)\s*일\s*전', cleaned)
+        if days_ago:
+            return days_ago.group(1) == '0'
+
+        today = datetime.now().date()
+        for fmt in ("%Y.%m.%d", "%Y-%m-%d", "%Y/%m/%d"):
+            for match in re.finditer(r'\d{4}[./-]\d{1,2}[./-]\d{1,2}', cleaned):
+                try:
+                    dt = datetime.strptime(match.group(0), fmt).date()
+                    return dt == today
+                except ValueError:
+                    continue
+
+        for match in re.finditer(r'(\d{1,2})[./-](\d{1,2})', cleaned):
+            month = int(match.group(1))
+            day = int(match.group(2))
+            try:
+                dt = datetime(today.year, month, day).date()
+                return dt == today
+            except ValueError:
+                continue
+
+        return False
+
+    def extract_date_from_text(self, text: str):
+        if not text:
+            return None
+        today = datetime.now().date()
+        patterns = [
+            r'(\d{4})[./-](\d{1,2})[./-](\d{1,2})',
+            r'(\d{4})\s*년\s*(\d{1,2})\s*월\s*(\d{1,2})\s*일',
+            r'(\d{1,2})[./-](\d{1,2})'
+        ]
+        for pattern in patterns:
+            match = re.search(pattern, text)
+            if not match:
+                continue
+            parts = [int(p) for p in match.groups()]
+            try:
+                if len(parts) == 3:
+                    year, month, day = parts
+                else:
+                    year = today.year
+                    month, day = parts
+                return datetime(year, month, day).date()
+            except ValueError:
+                continue
+        return None
+
+    def is_text_stale_by_date(self, text: str, category: str = "검색") -> bool:
+        if not text:
+            return True
+
+        cleaned = text.strip().lower()
+        if "작년" in cleaned or "지난해" in cleaned:
+            return True
+
+        today = datetime.now().date()
+        must_be_today = category in ["정치", "경제"]
+        prefer_today = category in ["사회", "문화", "게임", "드라마", "영화", "애니메이션", "스포츠"]
+
+        dt = self.extract_date_from_text(cleaned)
+        if not dt:
+            return False
+        if dt.year < today.year:
+            return True
+        if must_be_today and dt != today:
+            return True
+        if prefer_today and dt < (today - timedelta(days=7)):
+            return True
+        return False
+
+    def ai_is_recent_text(self, text: str, category: str = "검색") -> bool:
+        if self.is_text_stale_by_date(text, category):
+            return False
+
+        try:
+            today = datetime.now().strftime("%Y년 %m월 %d일")
+            prompt = f"""다음 문장이 최신 정보인지 판단하세요.
+
+오늘 날짜: {today}
+카테고리: {category}
+
+규칙:
+- 정치/경제는 오늘({today}) 정보만 최신
+- 사회/문화/게임/드라마/영화/애니메이션/스포츠는 최근 7일 이내면 최신
+- 그 외는 명백한 과거 연도/날짜가 있으면 오래됨
+
+문장:
+{text}
+
+출력 형식: YES 또는 NO 중 하나만 반환
+"""
+            response = requests.post(
+                f"{OLLAMA_URL}/api/generate",
+                json={
+                    "model": self.current_model,
+                    "prompt": prompt,
+                    "stream": False
+                },
+                timeout=12
+            )
+            response.raise_for_status()
+            data = response.json()
+            verdict = (data.get('response') or '').strip().upper()
+            return verdict.startswith("YES")
+        except Exception as e:
+            log_debug(f"[신선도 판단 오류] {e}")
+            return not self.is_text_stale_by_date(text, category)
 
     def save_news_result(self, question: str, answer: str):
         try:
@@ -720,6 +895,7 @@ class OllamaIDE:
     • /트렌드반복 [간격초] --infinite - 트렌드 반복 (무한 반복)
     • /트렌드검색반복 [간격초] [키워드,키워드] - 최신 트렌드 키워드를 /검색으로 순서 실행
     • /트렌드검색반복 [간격초] --infinite [키워드,키워드] - 검색 반복 (무한 반복)
+    • /트렌드검색반복 [간격초] --bg [키워드,키워드] - 페이지를 백그라운드로 열기
 
 ⭐ 즐겨찾기:
     • 입력 후 [+ 추가] 버튼 클릭하여 저장
@@ -1082,9 +1258,9 @@ class OllamaIDE:
 
     def handle_trend_batch_command(self, message: str) -> bool:
         """트렌드 키워드 일괄 실행 명령 처리"""
-        match = re.match(r'^/(?:트렌드반복|trend-batch)(?:\s+(\d+(?:\.\d+)?))?(?:\s+(--infinite|-무한))?\s*$', message)
+        match = re.match(r'^/(?:트렌드반복|trend-batch)(?:\s+(\d+(?:\.\d+)?))?(?:\s+(--infinite|-무한))?(?:\s+(--bg|--background))?\s*$', message)
         if not match:
-            match = re.match(r'^/(?:트렌드검색반복|trend-batch-search)(?:\s+(\d+(?:\.\d+)?))?(?:\s+(--infinite|-무한))?(?:\s*\[(.+)\])?\s*$', message)
+            match = re.match(r'^/(?:트렌드검색반복|trend-batch-search)(?:\s+(\d+(?:\.\d+)?))?(?:\s+(--infinite|-무한))?(?:\s+(--bg|--background))?(?:\s*\[(.+)\])?\s*$', message)
             if not match:
                 return False
 
@@ -1095,10 +1271,11 @@ class OllamaIDE:
 
         # 무한 반복 옵션 확인
         infinite_mode = bool(match.group(2)) if match.lastindex >= 2 else False
+        background_mode = bool(match.group(3)) if match.lastindex >= 3 else False
         # 키워드 추출 (트렌드검색반복의 경우 그룹 3)
         extra_raw = None
         if '/트렌드검색반복' in message or '/trend-batch-search' in message:
-            extra_raw = match.group(3) if match.lastindex >= 3 else None
+            extra_raw = match.group(4) if match.lastindex >= 4 else None
         else:
             extra_raw = match.group(2) if match.lastindex >= 2 and not match.group(2) else None
 
@@ -1113,6 +1290,7 @@ class OllamaIDE:
 
         self.stop_repeat()
         self.stop_batch()
+        self.batch_open_background = background_mode
         search_mode = message.startswith('/트렌드검색반복') or message.startswith('/trend-batch-search')
         self.start_batch(keywords, interval, search_mode, infinite_loop=infinite_mode)
         return True
@@ -1410,6 +1588,13 @@ class OllamaIDE:
             
             # 뉴스 결과 (가장 중요)
             if search_results.get('news') and len(search_results['news']) > 0:
+                news_items = self.filter_today_news_items(search_results['news'])
+                if not news_items:
+                    search_results['news'] = []
+                else:
+                    search_results['news'] = news_items
+
+            if search_results.get('news') and len(search_results['news']) > 0:
                 search_context += "📰 최신 뉴스:\n"
                 search_context += "─" * 60 + "\n"
                 
@@ -1603,63 +1788,244 @@ class OllamaIDE:
             log_debug(f"[카테고리 생성 오류] {e}")
             return "일반"
 
-    def save_search_summary_as_news(self, keyword: str, summary_text: str, category: str = "검색"):
-        """검색 페이지 요약 결과를 뉴스 항목으로 저장"""
+    def filter_recent_news_by_ai(self, summary_text: str, category: str = "검색") -> list:
+        """AI가 요약을 카테고리에 따라 다르게 필터링
+        
+        카테고리별 규칙:
+        - 정치, 경제: 무조건 오늘자 뉴스만
+        - 사회, 문화, 게임, 드라마, 영화, 애니메이션, 스포츠: 오늘자 뉴스 필수
+        - 괴물딴지, 기술: 과거 데이터도 상관없음 (내용의 과거 날짜만 제외)
+        """
         try:
-            # 요약에서 각 뉴스 문장 추출
-            lines = summary_text.split('\n')
-            news_items = []
+            today = datetime.now().strftime("%Y년 %m월 %d일")
             
-            for line in lines:
+            # 카테고리별 필터링 규칙 결정
+            must_be_today = category in ["정치", "경제"]
+            prefer_today = category in ["사회", "문화", "게임", "드라마", "영화", "애니메이션", "스포츠"]
+            no_date_limit = category in ["괴물딴지", "기술"]
+            
+            if must_be_today:
+                # 정치, 경제: 무조건 오늘자 뉴스만
+                filter_prompt = f"""다음은 검색 결과 요약입니다. 
+
+카테고리: {category}
+오늘 날짜: {today}
+
+**필수 조건: 오늘({today})의 뉴스/정보만 포함하세요.**
+
+**제외할 항목:**
+1. 오늘이 아닌 다른 날짜
+2. 과거 날짜 (작년, 지난달 등)
+3. 미래 날짜
+
+요약:
+{summary_text}
+
+지시사항:
+1. 각 항목이 정확히 오늘({today})의 정보인지 확인
+2. 오늘이 아닌 모든 항목 제외
+3. 원래 형식대로 "• [내용]" 형태로 반환
+4. 조건에 맞는 항목이 없으면 빈 결과 반환
+
+필터링된 결과:"""
+            
+            elif prefer_today:
+                # 사회, 문화, 게임, 드라마 등: 오늘 뉴스 우선, 최근(1주일) 정보는 가능
+                filter_prompt = f"""다음은 검색 결과 요약입니다.
+
+카테고리: {category}
+오늘 날짜: {today}
+
+**선호 조건: 오늘({today})부터 최근 1주일 내의 뉴스/정보만 포함하세요.**
+
+**제외할 항목:**
+1. 명백한 과거 날짜 (작년, 지난해, 2025년, 2024년 등)
+2. 미래 날짜
+
+요약:
+{summary_text}
+
+지시사항:
+1. 각 항목의 날짜를 확인
+2. 지난해/작년 같은 과거 명시 정보는 제외
+3. 최근 1주일 내의 항목 우선
+4. 원래 형식대로 "• [내용]" 형태로 반환
+5. 조건에 맞는 항목이 없으면 빈 결과 반환
+
+필터링된 결과:"""
+            
+            else:  # no_date_limit - 괴물딴지, 기술
+                # 과거 데이터 괜찮음, 하지만 명시된 과거 날짜는 확인
+                filter_prompt = f"""다음은 검색 결과 요약입니다.
+
+카테고리: {category}
+
+**조건: 현재/최신 정보 우선이지만 과거 정보도 포함 가능**
+
+**제외할 항목:**
+1. 명확한 과거 출시/발표 날짜가 과도하게 오래된 경우만 고려
+   (예: 5년 이상 전, 매우 오래된 정보)
+2. 미래 날짜는 제외
+
+요약:
+{summary_text}
+
+지시사항:
+1. 대부분의 항목을 포함 (정보성 있는 모든 항목)
+2. 너무 오래된 정보(5년 이상 전)만 제외
+3. 원래 형식대로 "• [내용]" 형태로 반환
+4. 조건에 맞는 항목이 없으면 빈 결과 반환
+
+필터링된 결과:"""
+            
+            log_debug(f"[AI 필터링] 카테고리({category}) 분석 중...")
+            
+            response = requests.post(
+                f"{OLLAMA_URL}/api/generate",
+                json={
+                    "model": self.current_model,
+                    "prompt": filter_prompt,
+                    "stream": False,
+                    "options": {
+                        "temperature": 0.3,
+                        "num_predict": 1000
+                    }
+                },
+                timeout=30
+            )
+            
+            if response.status_code != 200:
+                log_debug(f"[AI 필터링 실패] Status: {response.status_code}")
+                return []
+            
+            filtered_text = response.json().get('response', '').strip()
+            log_debug(f"[AI 필터링 결과] {filtered_text[:100]}")
+            
+            # 필터링된 결과를 항목으로 파싱
+            if not filtered_text or filtered_text == "":
+                log_debug(f"[AI 필터링] 카테고리({category}) 조건에 맞는 항목 없음")
+                return []
+            
+            # 각 라인을 항목으로 추출
+            news_items = []
+            for line in filtered_text.split('\n'):
                 line = line.strip()
-                # 헤더나 구분선 제외
                 if not line or line.startswith('━') or line.startswith('─'):
                     continue
-                if line.startswith('🔍') or line.startswith('📄') or line.startswith('🔗'):
-                    continue
-                
-                # 불릿 포인트 제거
                 if line.startswith('•'):
                     line = line[1:].strip()
                 elif line.startswith('-'):
                     line = line[1:].strip()
                 
-                # 의미있는 내용만 추출 (20자 이상)
+                # 의미있는 길이 확인
                 if len(line) > 20:
                     news_items.append(line)
+            
+            log_debug(f"[AI 필터링] {len(news_items)}개 항목 추출")
+            return news_items
+            
+        except requests.exceptions.Timeout:
+            log_debug("[AI 필터링] 타임아웃")
+            return []
+        except Exception as e:
+            log_debug(f"[AI 필터링 오류] {e}")
+            return []
+
+    def open_url_in_webview(self, url: str, auto_close_seconds: int = 5):
+        """Selenium으로 URL 열기 (작은 창)"""
+        log_debug(f"[Selenium] URL 로드 시작: {url[:100]}...")
+        
+        driver = None
+        try:
+            # Chrome 옵션 설정
+            chrome_options = Options()
+            chrome_options.add_argument('--window-size=800,600')
+            chrome_options.add_argument('--window-position=100,100')
+            # chrome_options.add_argument('--headless')  # 주석: 창을 보려면 headless 제거
+            chrome_options.add_argument('--disable-gpu')
+            chrome_options.add_argument('--no-sandbox')
+            chrome_options.add_argument('--disable-dev-shm-usage')
+            chrome_options.add_argument('--disable-blink-features=AutomationControlled')
+            chrome_options.add_experimental_option("excludeSwitches", ["enable-automation"])
+            chrome_options.add_experimental_option('useAutomationExtension', False)
+            
+            log_debug("[Selenium] Chrome 드라이버 초기화 중...")
+            service = Service(ChromeDriverManager().install())
+            driver = webdriver.Chrome(service=service, options=chrome_options)
+            
+            log_debug(f"[Selenium] URL 로드: {url}")
+            driver.get(url)
+            
+            log_debug(f"[Selenium] {auto_close_seconds}초 대기 중...")
+            time.sleep(auto_close_seconds)
+            
+            log_debug("[Selenium] 브라우저 종료")
+            driver.quit()
+            log_debug("[Selenium] 작업 완료")
+            
+        except Exception as e:
+            log_debug(f"[Selenium 오류] {type(e).__name__}: {e}")
+            import traceback
+            log_debug(f"[Selenium 오류 상세] {traceback.format_exc()}")
+            if driver:
+                try:
+                    driver.quit()
+                except:
+                    pass
+
+    def save_search_summary_as_news(self, keyword: str, summary_text: str, category: str = "검색"):
+        """검색 페이지 요약 결과를 뉴스 항목으로 저장"""
+        try:
+            today_text = datetime.now().strftime("%Y년 %m월 %d일")
+            self.display_message("system", f"🤖 AI가 요약을 분석 중... (카테고리: {category}, 오늘: {today_text})")
+            
+            # AI가 요약을 분석해서 카테고리에 맞게 필터링
+            news_items = self.filter_recent_news_by_ai(summary_text, category)
 
             if not news_items:
-                log_debug("[저장 건너뜀] 요약에서 뉴스 항목 없음")
+                log_debug("[저장 건너뜀] 오늘 또는 최근 뉴스 항목 없음")
+                self.display_message("system", "⏭️ 최근 뉴스가 없어 저장을 건너뜁니다")
                 return
 
-            # 각 뉴스 문장마다 브라우저에서 database.html 열기
-            log_debug(f"[뉴스 저장] {len(news_items)}개 항목을 브라우저로 저장 시작")
+            # 각 뉴스 문장마다 웹뷰/브라우저에서 database.html 열기
+            log_debug(f"[뉴스 저장] {len(news_items)}개 항목을 웹뷰로 저장 시작")
+            self.display_message("system", f"💾 {len(news_items)}개 뉴스 항목 저장 시작...")
             
             for idx, item in enumerate(news_items[:8], 1):  # 최대 8개
                 try:
+                    if not self.ai_is_recent_text(item, category):
+                        log_debug(f"[저장 건너뜀] 오래된 문장: {item[:50]}...")
+                        self.display_message("system", f"⏭️ 오래된 문장 건너뜀: {item[:40]}...")
+                        continue
                     # AI가 텍스트 내용을 보고 카테고리 자동 생성
                     ai_category = self.generate_category_from_text(item)
                     log_debug(f"[{idx}] AI 생성 카테고리: {ai_category}")
                     
                     url = f"{DATABASE_BASE_URL}/database.html?nb={requests.utils.quote(item)}&category={requests.utils.quote(ai_category)}&end=5s"
-                    webbrowser.open_new_tab(url)
-                    log_debug(f"[{idx}] 브라우저 열림: {item[:50]}...")
-                    # 브라우저가 페이지를 로드할 시간 확보
+                    
+                    # 웹뷰로 열기 (tkinterweb 사용 가능 시)
+                    self.open_url_in_webview(url, auto_close_seconds=5)
+                    log_debug(f"[{idx}] 웹뷰 열림: {item[:50]}...")
+                    # 페이지 로드 시간 확보
                     time.sleep(0.5)
                 except Exception as e:
                     log_debug(f"[{idx}] 열기 실패: {e}")
             
             # 저장 완료 메시지
-            save_msg = f"\n💾 {len(news_items)}개 뉴스를 브라우저로 저장 중 (각 5초 후 자동 닫힘)\n"
+            save_msg = f"\n✅ {len(news_items)}개 뉴스를 저장 완료 (각 5초 후 자동 닫힘)\n"
             self.root.after(0, self.display_message, "system", save_msg)
             
         except Exception as e:
             log_debug(f"[저장 오류] 검색 요약 저장 실패: {e}")
-            log_debug(f"[저장 오류] 검색 요약 저장 실패: {e}")
+            self.display_message("system", f"❌ 저장 오류: {e}")
 
     def save_news_result(self, keyword: str, text: str, category: str = "검색"):
         """단일 뉴스 항목을 N/B 계산 및 저장"""
         try:
+            if not self.ai_is_recent_text(text, category) and '오늘' not in keyword:
+                log_debug("[저장 건너뜀] 오래된 문장")
+                return
+
             # AI가 텍스트 내용을 보고 카테고리 자동 생성
             ai_category = self.generate_category_from_text(text)
             log_debug(f"[AI 카테고리] {ai_category}")
@@ -1709,7 +2075,8 @@ class OllamaIDE:
 
         summary = self.summarize_search_pages(keyword, pages)
 
-        results_text = "\n📄 검색 페이지 요약\n" + "─" * 60 + "\n"
+        today = datetime.now().strftime("%Y년 %m월 %d일")
+        results_text = f"\n📄 검색 페이지 요약 [{today}]\n" + "─" * 60 + "\n"
         results_text += summary.strip() + "\n"
         results_text += "\n🔗 참고 URL\n" + "─" * 60 + "\n"
         for page in pages:
@@ -1774,6 +2141,7 @@ class OllamaIDE:
             elif search_type == 'news':
                 self.root.after(0, self.display_message, "system", "📰 뉴스 검색 중 (Selenium 크롤링)...")
                 news_results = get_naver_news_smart(keyword, limit=5, use_selenium=True)
+                news_results = self.filter_today_news_items(news_results)
                 
                 if news_results:
                     results_text += "\n📰 뉴스 검색 결과\n" + "─" * 60 + "\n"
@@ -1786,7 +2154,7 @@ class OllamaIDE:
                         if result.get('url'):
                             results_text += f"   🔗 {result['url'][:80]}\n"
                 else:
-                    results_text += "\n⚠️ 검색 결과 없음\n"
+                    results_text += "\n⚠️ 오늘 뉴스 없음\n"
             
             # 개별 검색 - 유튜브
             elif search_type == 'youtube':

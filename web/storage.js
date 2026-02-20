@@ -187,7 +187,7 @@ async function searchByUnicode(unicodeArray) {
 }
 
 // 텍스트로 검색
-async function searchByText(text) {
+async function searchByText(text, limit = 10) {
     try {
         const indexData = await readIndex();
         const textKey = text.toLowerCase();
@@ -196,7 +196,8 @@ async function searchByText(text) {
         
         // 각 매치에 대한 상세 정보 로드
         const results = [];
-        for (const match of matches.slice(0, 10)) { // 최대 10개
+        const maxResults = Math.min(limit, matches.length);
+        for (const match of matches.slice(0, maxResults)) {
             const result = await loadCalculation(match.id);
             if (result) {
                 results.push(result);

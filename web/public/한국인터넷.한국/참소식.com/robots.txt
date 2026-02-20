@@ -1,2 +1,24 @@
+# 모든 검색 로봇 허용
 User-agent: *
 Allow: /
+Disallow: /temp/
+Disallow: /*.tmp$
+Disallow: /node_modules/
+
+# 네이버 클로봇 명시적 허용
+User-agent: Naver
+Allow: /
+
+# 네이버 스마트앱 봇
+User-agent: Yeti
+Allow: /
+
+# 구글 봇
+User-agent: Googlebot
+Allow: /
+
+# Sitemap 위치
+Sitemap: https://xn--9l4b4xi9r.com/sitemap.xml
+
+# 크롤링 지연 시간 (옵션)
+Crawl-delay: 0

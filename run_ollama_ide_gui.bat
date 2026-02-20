@@ -1,3 +1,6 @@
 @echo off
 title Ollama IDE GUI
+echo tkinterweb 설치 확인 중...
+py -m pip install tkinterweb --quiet
+echo IDE 시작...
 py ide\ollama_ide_gui.py
