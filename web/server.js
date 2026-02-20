@@ -11,8 +11,60 @@ const OLLAMA_BASE_URL = process.env.OLLAMA_BASE_URL || 'http://localhost:11434';
 const TREND_DATA_PATH = path.join(__dirname, '..', 'data', 'naver_creator_trends', 'latest_trend_data.json');
 const DEFAULT_MODEL = process.env.OLLAMA_MODEL || 'llama3';
 
+// config 로드
+let config = { allowedDomains: [] };
+const configPath = path.join(__dirname, 'config.json');
+console.log(`[CONFIG] 설정 파일 경로: ${configPath}`);
+
+if (fs.existsSync(configPath)) {
+    try {
+        const configContent = fs.readFileSync(configPath, 'utf-8');
+        config = JSON.parse(configContent);
+        console.log(`[CONFIG] ✓ 설정 파일 로드 성공`);
+        console.log(`[CONFIG] allowedDomains: ${JSON.stringify(config.allowedDomains)}`);
+    } catch (err) {
+        console.error('[CONFIG] ✗ 설정 파일 로드 오류:', err.message);
+        console.error('[CONFIG] 오류 상세:', err);
+    }
+} else {
+    console.warn(`[CONFIG] ✗ 설정 파일이 존재하지 않습니다: ${configPath}`);
+}
+
 // 스토리지 초기화
 storage.initStorage();
+
+// 도메인 검증 미들웨어 (CORS 전에 실행)
+app.use((req, res, next) => {
+    const host = req.get('host') || req.hostname || 'unknown';
+    const allowedDomains = config.allowedDomains || [];
+    
+    // 포트 제거해서 도메인만 비교
+    const hostWithoutPort = host.split(':')[0].toLowerCase();
+    
+    console.log(`[DEBUG] Host: ${host} | hostname: ${req.hostname} | hostWithoutPort: ${hostWithoutPort} | allowedDomains: ${allowedDomains.join(', ')}`);
+    
+    // localhost는 항상 허용 (개발 환경)
+    if (hostWithoutPort === 'localhost' || hostWithoutPort === '127.0.0.1' || hostWithoutPort === '::1') {
+        console.log(`[허용됨] localhost 개발 환경`);
+        return next();
+    }
+    
+    // 허용된 도메인 확인 (www 버전도 포함)
+    const isAllowed = allowedDomains.some(domain => {
+        const domainLower = domain.toLowerCase();
+        return hostWithoutPort === domainLower || 
+               hostWithoutPort === 'www.' + domainLower;
+    });
+    
+    if (!isAllowed) {
+        console.warn(`[차단됨] 허용되지 않은 도메인 접속 시도: ${hostWithoutPort} from IP: ${req.ip}`);
+        // 연결을 즉시 끊음 (페이지 표시 안 함)
+        return res.destroy();
+    }
+    
+    console.log(`[허용됨] 도메인: ${hostWithoutPort}`);
+    next();
+});
 
 // CORS 설정
 app.use((req, res, next) => {
@@ -41,8 +93,7 @@ app.use((req, res, next) => {
     next();
 });
 
-// 설정 로드
-const config = {
+const calculationConfig = {
     bitDefaultValue: 999,
     decimalPlaces: 10,
     calculationCountForText: 1
@@ -124,7 +175,7 @@ app.get('/', (req, res) => {
 // API: 계산 요청
 app.post('/api/calculate', async (req, res) => {
     try {
-        const { input, bit = config.bitDefaultValue, category = 'general' } = req.body;
+        const { input, bit = calculationConfig.bitDefaultValue, category = 'general' } = req.body;
         
         if (!input) {
             return res.status(400).json({ error: '입력값이 없습니다.' });
@@ -149,9 +200,9 @@ app.post('/api/calculate', async (req, res) => {
                 input: values,
                 bit: bit,
                 category: category,
-                nb_max: parseFloat(maxResult.toFixed(config.decimalPlaces)),
-                nb_min: parseFloat(minResult.toFixed(config.decimalPlaces)),
-                difference: parseFloat((maxResult - minResult).toFixed(config.decimalPlaces))
+                nb_max: parseFloat(maxResult.toFixed(calculationConfig.decimalPlaces)),
+                nb_min: parseFloat(minResult.toFixed(calculationConfig.decimalPlaces)),
+                difference: parseFloat((maxResult - minResult).toFixed(calculationConfig.decimalPlaces))
             };
 
             // 데이터베이스에 저장
@@ -179,15 +230,15 @@ app.post('/api/calculate', async (req, res) => {
 
             // 3회 계산
             const results = [];
-            for (let i = 0; i < config.calculationCountForText; i++) {
+            for (let i = 0; i < calculationConfig.calculationCountForText; i++) {
                 const maxResult = calculateNB(unicodeArray, bit, false);
                 const minResult = calculateNB(unicodeArray, bit, true);
                 
                 results.push({
                     calculation: i + 1,
-                    nb_max: parseFloat(maxResult.toFixed(config.decimalPlaces)),
-                    nb_min: parseFloat(minResult.toFixed(config.decimalPlaces)),
-                    difference: parseFloat((maxResult - minResult).toFixed(config.decimalPlaces))
+                    nb_max: parseFloat(maxResult.toFixed(calculationConfig.decimalPlaces)),
+                    nb_min: parseFloat(minResult.toFixed(calculationConfig.decimalPlaces)),
+                    difference: parseFloat((maxResult - minResult).toFixed(calculationConfig.decimalPlaces))
                 });
             }
 

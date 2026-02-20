@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>    <!-- 도메인 검증 (모든 페이지에서 가장 먼0 실행되어야 함) -->
+    <script src="/domain-check.js"></script>
+      <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ICNN 인터넷 역사 - 참소식.com</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+  <style>
+    :root {
+      --primary-color: #059669;
+      --dark-bg: #064e3b;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Noto Sans KR', sans-serif;
+      background: #f8f9fa;
+      min-height: 100vh;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    .top-bar {
+      background: linear-gradient(135deg, var(--dark-bg) 0%, #065f46 100%);
+      color: white;
+      padding: 15px 0;
+      text-align: center;
+      font-size: 1.3em;
+      font-weight: 700;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .nav-section {
+      background: white;
+      padding: 15px 0;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+
+    .nav-pills .nav-link {
+      color: #333;
+      font-weight: 600;
+      margin: 0 5px;
+      border-radius: 20px;
+      transition: all 0.3s;
+    }
+
+    .nav-pills .nav-link:hover {
+      background: #f0f0f0;
+      color: #059669;
+    }
+
+    .nav-pills .nav-link.active, .nav-pills .nav-link:focus {
+      background: var(--primary-color);
+      color: white;
+    }
+
+    .content-wrapper {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 15px 40px;
+    }
+
+    .timeline {
+      position: relative;
+      padding: 20px 0;
+    }
+
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 0;
+      bottom: 0;
+      width: 3px;
+      background: linear-gradient(180deg, var(--primary-color) 0%, #059669 100%);
+      transform: translateX(-50%);
+    }
+
+    .timeline-item {
+      position: relative;
+      margin-bottom: 50px;
+      width: 100%;
+    }
+
+    .timeline-item:nth-child(odd) .timeline-content {
+      margin-left: 0;
+      margin-right: auto;
+      width: calc(50% - 40px);
+      text-align: right;
+    }
+
+    .timeline-item:nth-child(even) .timeline-content {
+      margin-left: auto;
+      margin-right: 0;
+      width: calc(50% - 40px);
+      text-align: left;
+    }
+
+    .timeline-content {
+      background: white;
+      padding: 20px 25px;
+      border-radius: 10px;
+      box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+      position: relative;
+      transition: all 0.3s ease;
+    }
+
+    .timeline-content:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 25px rgba(0,0,0,0.15);
+    }
+
+    .timeline-year {
+      display: inline-block;
+      background: var(--primary-color);
+      color: white;
+      padding: 8px 20px;
+      border-radius: 20px;
+      font-weight: 700;
+      font-size: 1.1em;
+      margin-bottom: 10px;
+    }
+
+    .timeline-title {
+      font-size: 1.3em;
+      font-weight: 700;
+      color: #333;
+      margin: 10px 0;
+    }
+
+    .timeline-description {
+      color: #666;
+      line-height: 1.6;
+    }
+
+    .timeline-dot {
+      position: absolute;
+      left: 50%;
+      top: 30px;
+      width: 20px;
+      height: 20px;
+      background: white;
+      border: 4px solid var(--primary-color);
+      border-radius: 50%;
+      transform: translateX(-50%);
+      z-index: 10;
+      box-shadow: 0 0 0 4px rgba(5, 150, 105, 0.2);
+    }
+
+    .hero-section {
+      background: linear-gradient(135deg, #064e3b 0%, #059669 100%);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .hero-section h1 {
+      font-size: 2.5em;
+      font-weight: 700;
+      margin-bottom: 15px;
+    }
+
+    .hero-section p {
+      font-size: 1.2em;
+      opacity: 0.9;
+    }
+
+    .info-card {
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
+    }
+
+    .info-card h3 {
+      color: var(--primary-color);
+      font-weight: 700;
+      margin-bottom: 15px;
+    }
+
+    .info-card ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .info-card ul li {
+      padding: 10px 0;
+      border-bottom: 1px solid #eee;
+    }
+
+    .info-card ul li:last-child {
+      border-bottom: none;
+    }
+
+    .info-card ul li i {
+      color: var(--primary-color);
+      margin-right: 10px;
+    }
+
+    .person-highlight {
+      color: #065f46;
+      font-weight: 700;
+      background: rgba(5, 150, 105, 0.12);
+      padding: 2px 6px;
+      border-radius: 6px;
+      display: inline-block;
+    }
+
+    .search-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.2rem 0.45rem;
+      border-radius: 999px;
+      border: 1px solid rgba(5, 150, 105, 0.3);
+      background: #ffffff;
+      margin-left: 8px;
+      text-decoration: none;
+    }
+
+    .search-icon {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.7rem;
+      font-weight: 800;
+      color: #ffffff;
+      letter-spacing: -0.5px;
+    }
+
+    .search-icon-naver {
+      background: #03c75a;
+    }
+
+    .search-icon-google {
+      background: #4285f4;
+    }
+
+    .search-icon-bing {
+      background: #008373;
+    }
+
+    @media (max-width: 768px) {
+      .timeline::before {
+        left: 20px;
+      }
+
+      .timeline-item:nth-child(odd) .timeline-content,
+      .timeline-item:nth-child(even) .timeline-content {
+        width: calc(100% - 60px);
+        margin-left: 60px;
+        margin-right: 0;
+        text-align: left;
+      }
+
+      .timeline-dot {
+        left: 20px;
+      }
+
+      .hero-section h1 {
+        font-size: 1.8em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="top-bar">
+    <i class="bi bi-globe"></i> ICNN 인터넷 역사
+  </div>
+
+  <div class="nav-section">
+    <div class="container-fluid">
+      <ul class="nav nav-pills justify-content-center" role="tablist">
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" href="index.html">
+            <i class="bi bi-clock-history"></i> 최근 100개
+          </a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" href="index.html#popular-panel">
+            <i class="bi bi-fire"></i> 조회수 TOP 100
+          </a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link active" href="icnn-history.html">
+            <i class="bi bi-globe"></i> ICNN 인터넷 역사
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="hero-section">
+    <h1><i class="bi bi-broadcast"></i> ICNN 인터넷 역사</h1>
+    <p>Internet Communication News Network의 발전과 한국 인터넷 문화의 역사</p>
+  </div>
+
+  <div class="content-wrapper">
+    
+    <div class="info-card">
+      <h3><i class="bi bi-info-circle"></i> ICNN이란?</h3>
+      <p>
+        ICNN(Internet Communication News Network)은 한국 인터넷 초창기부터 중요한 역할을 한 통신망 및 뉴스 플랫폼입니다.
+        PC통신 시대부터 인터넷 시대로의 전환기에 다양한 정보와 뉴스를 전달하며 한국 인터넷 문화 형성에 기여했습니다.
+      </p>
+      <ul>
+        <li><i class="bi bi-check-circle-fill"></i> 실시간 뉴스 및 정보 제공</li>
+        <li><i class="bi bi-check-circle-fill"></i> 커뮤니티 기반 소통 플랫폼</li>
+        <li><i class="bi bi-check-circle-fill"></i> 한국 인터넷 문화의 선구자</li>
+        <li><i class="bi bi-check-circle-fill"></i> 다양한 디지털 콘텐츠 서비스</li>
+      </ul>
+    </div>
+
+    <div class="info-card">
+      <h3><i class="bi bi-people"></i> 주요 인물</h3>
+      <p class="mb-3">
+        한국 인터넷의 성장 과정에서 상징적인 인물들입니다.
+      </p>
+      <ul>
+        <li><i class="bi bi-person-badge"></i> 전길남 박사</li>
+        <li><i class="bi bi-person-badge"></i> 네이버 이해진</li>
+        <li><i class="bi bi-person-badge"></i> 카카오 김범석</li>
+        <li><i class="bi bi-person-badge"></i> 엔시 김택진</li>
+      </ul>
+      <div class="d-flex flex-wrap align-items-center gap-2 mt-3">
+        <span class="badge bg-dark">LV 난이도: Lv. 7</span>
+        <span class="badge bg-success"><i class="bi bi-shield-check"></i> NPC 기록</span>
+        <span class="text-muted">이 모든 건 한국인터넷 NPC가 작성함</span>
+      </div>
+    </div>
+
+    <h2 class="text-center mb-4" style="font-weight: 700; color: #064e3b;">
+      <i class="bi bi-clock-history"></i> 주요 역사
+    </h2>
+
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-year">1990년대 초반</span>
+          <h3 class="timeline-title">PC통신 시대의 시작</h3>
+          <p class="timeline-description">
+            천리안, 하이텔, 나우누리 등 PC통신 서비스가 등장하며 한국 온라인 커뮤니케이션의 기초가 마련되었습니다.
+            초기 인터넷 문화가 형성되기 시작했습니다.
+            <a class="btn btn-sm btn-outline-success ms-2" href="https://search.naver.com/search.naver?query=천리안, 하이텔, 나우누리 등 PC통신 서비스가 등장하며 한국 온라인 커뮤니케이션의 기초가 마련되었습니다. 초기 인터넷 문화가 형성되기 시작했습니다." target="_blank" rel="noopener" title="네이버 검색">
+              <i class="bi bi-search"></i>
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-year">1994년</span>
+          <h3 class="timeline-title">한국 인터넷의 본격화</h3>
+          <p class="timeline-description">
+            한국통신이 코넷(KORNET) 서비스를 시작하며 일반인들도 인터넷에 접속할 수 있게 되었습니다.
+            이 시기 한국 인터넷의 기반을 닦은 <span class="person-highlight">전길남 박사</span> 같은 선구자들의 역할이 강조되었습니다.
+            웹 브라우저를 통한 정보 검색과 커뮤니케이션이 가능해졌습니다.
+            <a class="btn btn-sm btn-outline-success ms-2" href="https://search.naver.com/search.naver?query=한국통신이 코넷(KORNET) 서비스를 시작하며 일반인들도 인터넷에 접속할 수 있게 되었습니다. 이 시기 한국 인터넷의 기반을 닦은 전길남 박사 같은 선구자들의 역할이 강조되었습니다. 웹 브라우저를 통한 정보 검색과 커뮤니케이션이 가능해졌습니다." target="_blank" rel="noopener" title="네이버 검색">
+              <i class="bi bi-search"></i>
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-year">1995-1997년</span>
+          <h3 class="timeline-title">포털 사이트의 등장</h3>
+          <p class="timeline-description">
+            야후 코리아, 엠파스 등 초기 포털 사이트들이 등장하며 정보 검색과 뉴스 서비스가 본격화되었습니다.
+            인터넷을 통한 뉴스 소비가 시작되었습니다.
+            <a class="btn btn-sm btn-outline-success ms-2" href="https://search.naver.com/search.naver?query=야후 코리아, 엠파스 등 초기 포털 사이트들이 등장하며 정보 검색과 뉴스 서비스가 본격화되었습니다. 인터넷을 통한 뉴스 소비가 시작되었습니다." target="_blank" rel="noopener" title="네이버 검색">
+              <i class="bi bi-search"></i>
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-year">1998년</span>
+          <h3 class="timeline-title">초고속 인터넷 보급</h3>
+          <p class="timeline-description">
+            ADSL 및 케이블 모뎀을 통한 초고속 인터넷 서비스가 보급되기 시작했습니다.
+            멀티미디어 콘텐츠 소비가 가능해지며 인터넷 이용 패턴이 크게 변화했습니다.
+            <a class="btn btn-sm btn-outline-success ms-2" href="https://search.naver.com/search.naver?query=ADSL 및 케이블 모뎀을 통한 초고속 인터넷 서비스가 보급되기 시작했습니다. 멀티미디어 콘텐츠 소비가 가능해지며 인터넷 이용 패턴이 크게 변화했습니다." target="_blank" rel="noopener" title="네이버 검색">
+              <i class="bi bi-search"></i>
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-year">1999년</span>
+          <h3 class="timeline-title">다음(Daum)과 네이버(Naver) 시대</h3>
+          <p class="timeline-description">
+            다음 커뮤니케이션과 네이버가 본격적으로 성장하며 한국형 포털 서비스의 전성기가 시작되었습니다.
+            <span class="person-highlight">네이버 이해진</span>과 <span class="person-highlight">카카오 김범석</span> 같은 인물들이
+            인터넷 생태계를 이끄는 상징으로 자리잡았습니다.
+            카페, 블로그 등 사용자 생성 콘텐츠(UGC) 문화가 형성되었습니다.
+            <a class="btn btn-sm btn-outline-success ms-2" href="https://search.naver.com/search.naver?query=다음 커뮤니케이션과 네이버가 본격적으로 성장하며 한국형 포털 서비스의 전성기가 시작되었습니다. 네이버 이해진과 카카오 김범석 같은 인물들이 인터넷 생태계를 이끄는 상징으로 자리잡았습니다. 카페, 블로그 등 사용자 생성 콘텐츠(UGC) 문화가 형성되었습니다." target="_blank" rel="noopener" title="네이버 검색">
+              <i class="bi bi-search"></i>
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-year">2000년대 초중반</span>
+          <h3 class="timeline-title">포털 서비스 경쟁과 지식 커뮤니티</h3>
+          <p class="timeline-description">
+            네이버 지식인과 다음 카페가 대표적인 지식 공유와 커뮤니티의 양대 축으로 자리잡았습니다.
+            이 시기에는 야후 코리아도 강력한 검색 및 포털 서비스로 경쟁 구도를 형성했습니다.
+            <a class="btn btn-sm btn-outline-success ms-2" href="https://search.naver.com/search.naver?query=네이버 지식인과 다음 카페가 대표적인 지식 공유와 커뮤니티의 양대 축으로 자리잡았습니다. 이 시기에는 야후 코리아도 강력한 검색 및 포털 서비스로 경쟁 구도를 형성했습니다." target="_blank" rel="noopener" title="네이버 검색">
+              <i class="bi bi-search"></i>
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-year">2000년대 초반</span>
+          <h3 class="timeline-title">온라인 뉴스의 주류화</h3>
+          <p class="timeline-description">
+            전통 언론사들이 온라인 뉴스 서비스를 본격화하며 종이 신문에서 디지털 뉴스로의 전환이 가속화되었습니다.
+            실시간 뉴스와 댓글 문화가 발전했습니다.
+            <a class="btn btn-sm btn-outline-success ms-2" href="https://search.naver.com/search.naver?query=전통 언론사들이 온라인 뉴스 서비스를 본격화하며 종이 신문에서 디지털 뉴스로의 전환이 가속화되었습니다. 실시간 뉴스와 댓글 문화가 발전했습니다." target="_blank" rel="noopener" title="네이버 검색">
+              <i class="bi bi-search"></i>
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-year">2004-2005년</span>
+          <h3 class="timeline-title">Web 2.0과 소셜미디어</h3>
+          <p class="timeline-description">
+            싸이월드, 미니홈피 등 한국형 소셜 네트워크 서비스가 폭발적으로 성장했습니다.
+            개인 미디어 시대가 본격화되며 1인 크리에이터 개념이 등장했습니다.
+            <a class="btn btn-sm btn-outline-success ms-2" href="https://search.naver.com/search.naver?query=싸이월드, 미니홈피 등 한국형 소셜 네트워크 서비스가 폭발적으로 성장했습니다. 개인 미디어 시대가 본격화되며 1인 크리에이터 개념이 등장했습니다." target="_blank" rel="noopener" title="네이버 검색">
+              <i class="bi bi-search"></i>
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-year">2000년대 중반~2010년대 초반</span>
+          <h3 class="timeline-title">e스포츠와 온라인 게임 문화의 확장</h3>
+          <p class="timeline-description">
+            스타크래프트의 <span class="person-highlight">임요환</span>을 시작으로 프로게이머 문화가 대중화되었고, 월드 오브 워크래프트의 <span class="person-highlight">네임드 용개(EE)</span> 같은
+            유명 플레이어와 커뮤니티 문화가 주목받았습니다.
+            리그 오브 레전드에서는 반지의 제왕 원정대 같은 커뮤니티
+            원정대가 화제가 되었고, 한국 원정대가 북미 서버 원정대에 참여하면서 글로벌 교류가 활발해졌습니다.
+            이 당시 한국은 네임드 로테이션을 연습하며 전략 메타를 축적해갔습니다.
+            <a class="btn btn-sm btn-outline-success ms-2" href="https://search.naver.com/search.naver?query=스타크래프트의 임요환을 시작으로 프로게이머 문화가 대중화되었고, 월드 오브 워크래프트의 네임드 용개(EE) 같은 유명 플레이어와 커뮤니티 문화가 주목받았습니다. 리그 오브 레전드에서는 반지의 제왕 원정대 같은 커뮤니티 원정대가 화제가 되었고, 한국 원정대가 북미 서버 원정대에 참여하면서 글로벌 교류가 활발해졌습니다. 이 당시 한국은 네임드 로테이션을 연습하며 전략 메타를 축적해갔습니다." target="_blank" rel="noopener" title="네이버 검색">
+              <i class="bi bi-search"></i>
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-year">2009-2010년</span>
+          <h3 class="timeline-title">스마트폰 혁명</h3>
+          <p class="timeline-description">
+            아이폰과 안드로이드 스마트폰의 보급으로 모바일 인터넷 시대가 열렸습니다.
+            모바일 앱, 모바일 뉴스 소비 패턴이 주류가 되었습니다.
+            <a class="btn btn-sm btn-outline-success ms-2" href="https://search.naver.com/search.naver?query=아이폰과 안드로이드 스마트폰의 보급으로 모바일 인터넷 시대가 열렸습니다. 모바일 앱, 모바일 뉴스 소비 패턴이 주류가 되었습니다." target="_blank" rel="noopener" title="네이버 검색">
+              <i class="bi bi-search"></i>
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-year">2010년대 중반</span>
+          <h3 class="timeline-title">SNS와 동영상 플랫폼의 부상</h3>
+          <p class="timeline-description">
+            페이스북, 인스타그램, 유튜브 등 글로벌 플랫폼이 한국 시장에서 급성장했습니다.
+            동영상 콘텐츠가 주요 미디어로 자리잡으며 크리에이터 경제가 형성되었습니다.
+            <a class="btn btn-sm btn-outline-success ms-2" href="https://search.naver.com/search.naver?query=페이스북, 인스타그램, 유튜브 등 글로벌 플랫폼이 한국 시장에서 급성장했습니다. 동영상 콘텐츠가 주요 미디어로 자리잡으며 크리에이터 경제가 형성되었습니다." target="_blank" rel="noopener" title="네이버 검색">
+              <i class="bi bi-search"></i>
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-year">2010년대 중반 이후</span>
+          <h3 class="timeline-title">페이커 등장과 e스포츠 글로벌화</h3>
+          <p class="timeline-description">
+            한국 e스포츠의 상징으로 <span class="person-highlight">페이커 이상혁</span>이 등장하며 세계적인 스타가 되었습니다.
+            e스포츠는 방송과 스트리밍을 통해 글로벌 문화로 자리잡았습니다.
+            <a class="btn btn-sm btn-outline-success ms-2" href="https://search.naver.com/search.naver?query=한국 e스포츠의 상징으로 페이커 이상혁이 등장하며 세계적인 스타가 되었습니다. e스포츠는 방송과 스트리밍을 통해 글로벌 문화로 자리잡았습니다." target="_blank" rel="noopener" title="네이버 검색">
+              <i class="bi bi-search"></i>
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-year">2020년대</span>
+          <h3 class="timeline-title">AI와 개인화된 뉴스</h3>
+          <p class="timeline-description">
+            이재명 대통령이 LoL 전설 <span class="person-highlight">페이커 이상혁</span>에게 체육훈장 청룡장을 수여했다는 소식이 보도되었습니다.
+            해당 사건은 한국 e스포츠의 위상을 상징적으로 보여주는 기록으로 남았으며, 현재 진행형의 역사로 기록됩니다.
+            한국 원정대 단장의 말로는 좋은 성적을 낼 것 같은 특이하게 무빙을 하는 선수였다는 미드 라이전의 일화가 전해집니다.
+            <a class="btn btn-sm btn-outline-success ms-2" href="https://search.naver.com/search.naver?query=이재명 대통령이 LoL 전설 페이커 이상혁에게 체육훈장 청룡장을 수여했다는 소식이 보도되었습니다. 해당 사건은 한국 e스포츠의 위상을 상징적으로 보여주는 기록으로 남았으며, 현재 진행형의 역사로 기록됩니다. 한국 원정대 단장의 말로는 좋은 성적을 낼 것 같은 특이하게 무빙을 하는 선수였다는 미드 라이전의 일화가 전해집니다." target="_blank" rel="noopener" title="네이버 검색">
+              <i class="bi bi-search"></i>
+            </a>
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="info-card mt-5">
+      <h3><i class="bi bi-lightning-charge"></i> 한국 인터넷의 특징</h3>
+      <div class="row mt-4">
+        <div class="col-md-6">
+          <h5 style="color: var(--primary-color); font-weight: 600;">
+            <i class="bi bi-speedometer2"></i> 세계 최고 수준의 인터넷 속도
+          </h5>
+          <p>한국은 세계에서 가장 빠른 평균 인터넷 속도를 자랑하며, 초고속 인터넷 보급률도 매우 높습니다.</p>
+        </div>
+        <div class="col-md-6">
+          <h5 style="color: var(--primary-color); font-weight: 600;">
+            <i class="bi bi-phone"></i> 모바일 우선 문화
+          </h5>
+          <p>스마트폰 보급률이 세계 최고 수준이며, 대부분의 인터넷 활동이 모바일을 통해 이루어집니다.</p>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-md-6">
+          <h5 style="color: var(--primary-color); font-weight: 600;">
+            <i class="bi bi-chat-dots"></i> 활발한 댓글 문화
+          </h5>
+          <p>뉴스 기사와 게시물에 대한 활발한 댓글 참여가 특징이며, 여론 형성에 큰 영향을 미칩니다.</p>
+        </div>
+        <div class="col-md-6">
+          <h5 style="color: var(--primary-color); font-weight: 600;">
+            <i class="bi bi-camera-video"></i> 라이브 스트리밍과 짧은 동영상
+          </h5>
+          <p>실시간 방송과 숏폼 콘텐츠가 인기를 끌며 새로운 형태의 미디어 소비가 이루어지고 있습니다.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mt-5 mb-4">
+      <a href="index.html" class="btn btn-lg btn-success">
+        <i class="bi bi-house-door"></i> 메인 페이지로 돌아가기
+      </a>
+    </div>
+
+  </div>
+
+  <footer class="text-center py-4 bg-light mt-5">
+    <p class="mb-0 text-muted">
+      <i class="bi bi-c-circle"></i> 2024 참소식.com | ICNN 인터넷 역사 아카이브
+    </p>
+    <p class="mb-0 text-muted">
+      <i class="bi bi-person-square"></i> 참소식.COM은 이 문서를 작성하는 한국인터넷 NPC입니다.
+    </p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // 스크롤 애니메이션
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -100px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.timeline-item').forEach((item, index) => {
+      item.style.opacity = '0';
+      item.style.transform = 'translateY(30px)';
+      item.style.transition = `all 0.6s ease ${index * 0.1}s`;
+      observer.observe(item);
+    });
+
+    const naverLinks = document.querySelectorAll('a[title="네이버 검색"]');
+    naverLinks.forEach((naverLink) => {
+      if (naverLink.dataset.enhanced === 'true') {
+        return;
+      }
+
+      const url = new URL(naverLink.href);
+      const query = url.searchParams.get('query') || '';
+      const parent = naverLink.parentElement;
+
+      naverLink.dataset.enhanced = 'true';
+      naverLink.classList.add('search-link');
+      naverLink.innerHTML = '<span class="search-icon search-icon-naver">N</span>';
+
+      const googleLink = document.createElement('a');
+      googleLink.className = 'search-link';
+      googleLink.href = `https://www.google.com/search?q=${encodeURIComponent(query)}`;
+      googleLink.target = '_blank';
+      googleLink.rel = 'noopener';
+      googleLink.title = '구글 검색';
+      googleLink.innerHTML = '<span class="search-icon search-icon-google">G</span>';
+
+      const bingLink = document.createElement('a');
+      bingLink.className = 'search-link';
+      bingLink.href = `https://www.bing.com/search?q=${encodeURIComponent(query)}`;
+      bingLink.target = '_blank';
+      bingLink.rel = 'noopener';
+      bingLink.title = '빙 검색';
+      bingLink.innerHTML = '<span class="search-icon search-icon-bing">B</span>';
+
+      parent.insertBefore(googleLink, naverLink.nextSibling);
+      parent.insertBefore(bingLink, googleLink.nextSibling);
+    });
+  </script>
+
+</body>
+</html>

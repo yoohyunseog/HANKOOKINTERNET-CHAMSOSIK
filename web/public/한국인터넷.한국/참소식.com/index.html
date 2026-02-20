@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
+  <!-- 도메인 검증 (모든 페이지에서 가장 먼저 실행되어야 함) -->
+  <script src="../domain-check.js"></script>
+  
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>참소식.com - N/B 데이터베이스</title>
@@ -208,13 +211,43 @@
       padding: 20px 0;
     }
 
+    .tab-content {
+      overflow: hidden;
+    }
+
     .loading-spinner {
       text-align: center;
       padding: 50px;
     }
+
+    .site-footer {
+      text-align: center;
+      padding: 20px 0 30px;
+      color: #666;
+      font-size: 0.9em;
+    }
+
+    .footer-certification {
+      margin-top: 6px;
+      color: #777;
+      font-size: 0.85em;
+    }
   </style>
 </head>
 <body>
+
+
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4501795912654667"
+    crossorigin="anonymous"></script>
+  <ins class="adsbygoogle"
+    style="display:block"
+    data-ad-client="ca-pub-4501795912654667"
+    data-ad-slot="3078174225"
+    data-ad-format="auto"
+    data-full-width-responsive="true"></ins>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
 
   <div class="top-bar">
     <i class="bi bi-database"></i> 참소식.com - N/B 데이터베이스
@@ -304,6 +337,61 @@
     let popularDataCache = [];
     let currentCategory = 'all';
     let sortingTimers = []; // 진행 중인 애니메이션 타이머들
+
+    // 카테고리별 개수 계산 및 버튼 업데이트
+    function updateCategoryCount(data) {
+      const categoryCounts = {};
+      
+      // 각 카테고리별 개수 계산
+      data.forEach(item => {
+        const category = item.category || '일반';
+        categoryCounts[category] = (categoryCounts[category] || 0) + 1;
+      });
+      
+      // 모든 카테고리 버튼 업데이트
+      document.querySelectorAll('.category-btn').forEach(btn => {
+        const category = btn.dataset.category;
+        
+        // reset 버튼은 skip
+        if (!category || btn.classList.contains('reset')) {
+          return;
+        }
+        
+        let displayText = '';
+        
+        if (category === 'all') {
+          displayText = `전체 (${data.length})`;
+        } else {
+          const count = categoryCounts[category] || 0;
+          displayText = `${category} (${count})`;
+        }
+        
+        btn.textContent = displayText;
+      });
+    }
+
+    // 카테고리 버튼 클릭 이벤트 설정
+    function setupCategoryButtonListeners() {
+      document.getElementById('category-buttons').addEventListener('click', function(e) {
+        if (e.target.classList.contains('category-btn')) {
+          // 모든 버튼의 active 제거
+          document.querySelectorAll('.category-btn').forEach(btn => btn.classList.remove('active'));
+          // 클릭한 버튼 active 추가
+          e.target.classList.add('active');
+          
+          // 현재 카테고리 업데이트
+          currentCategory = e.target.dataset.category;
+          
+          // 현재 활성 탭에 따라 데이터 재렌더링
+          const activeTab = document.querySelector('.nav-link.active').id;
+          if (activeTab === 'recent-tab') {
+            renderFilteredData('recent-data', recentDataCache, false);
+          } else if (activeTab === 'popular-tab') {
+            renderFilteredData('popular-data', popularDataCache, true);
+          }
+        }
+      });
+    }
 
     function escapeHtml(text) {
       const div = document.createElement('div');
@@ -409,8 +497,8 @@
         if (searchKeyword && selectedMax !== null && selectedMin !== null) {
           // 제목 클릭 모드 - 두 API를 동시에 호출
           const [searchResponse, recentResponse] = await Promise.all([
-            fetch(`${API_BASE}/api/search?text=${encodeURIComponent(searchKeyword)}&limit=99`),
-            fetch(`${API_BASE}/api/recent?limit=99`)
+            fetch(`${API_BASE}/api/search?text=${encodeURIComponent(searchKeyword)}&limit=100`),
+            fetch(`${API_BASE}/api/recent?limit=100`)
           ]);
           
           const searchData = await searchResponse.json();
@@ -430,6 +518,7 @@
           
           // 유사도 기반 정렬 수행
           sortBySimilarityWithData('recent-data', recentDataCache, targetCategory, targetMax, targetMin, false);
+          updateCategoryCount(recentDataCache);
         } else {
           // 일반 모드 - limit 100
           response = await fetch(`${API_BASE}/api/recent?limit=100`);
@@ -438,6 +527,7 @@
           
           recentDataCache = data.results;
           renderFilteredData('recent-data', recentDataCache, false);
+          updateCategoryCount(recentDataCache);
         }
       } catch (error) {
         document.getElementById('recent-data').innerHTML = '<div class="alert alert-danger"><i class="bi bi-exclamation-triangle"></i> 데이터를 불러올 수 없습니다.</div>';
@@ -451,31 +541,11 @@
         popularDataCache = data.results;
         document.getElementById('popular-count').textContent = `${data.count}개`;
         renderFilteredData('popular-data', popularDataCache, true);
+        updateCategoryCount(popularDataCache);
       } catch (error) {
         document.getElementById('popular-data').innerHTML = '<div class="alert alert-danger"><i class="bi bi-exclamation-triangle"></i> 데이터를 불러올 수 없습니다.</div>';
       }
     }
-
-    // 카테고리 필터 버튼 이벤트
-    document.getElementById('category-buttons').addEventListener('click', function(e) {
-      if (e.target.classList.contains('category-btn')) {
-        // 모든 버튼의 active 제거
-        document.querySelectorAll('.category-btn').forEach(btn => btn.classList.remove('active'));
-        // 클릭한 버튼 active 추가
-        e.target.classList.add('active');
-        
-        // 현재 카테고리 업데이트
-        currentCategory = e.target.dataset.category;
-        
-        // 현재 활성 탭에 따라 데이터 재렌더링
-        const activeTab = document.querySelector('.nav-link.active').id;
-        if (activeTab === 'recent-tab') {
-          renderFilteredData('recent-data', recentDataCache, false);
-        } else if (activeTab === 'popular-tab') {
-          renderFilteredData('popular-data', popularDataCache, true);
-        }
-      }
-    });
 
     // 탭 전환 이벤트
     document.getElementById('popular-tab').addEventListener('shown.bs.tab', function () {
@@ -553,6 +623,9 @@
       
       // 카테고리 필터 적용
       let filtered = filterDataByCategory(currentData, currentCategory);
+      
+      // 카테고리 개수 업데이트
+      updateCategoryCount(currentData);
       
       // MAX/MIN 범위 계산 (정규화용)
       const maxValues = filtered.map(f => f.results?.[0]?.nb_max || 0);
@@ -666,6 +739,7 @@
 
     // 초기 로드
     document.addEventListener('DOMContentLoaded', function() {
+      setupCategoryButtonListeners();
       loadRecentData();
     });
 
@@ -675,17 +749,18 @@
     });
   </script>
 
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4501795912654667"
-    crossorigin="anonymous"></script>
-  <ins class="adsbygoogle"
-    style="display:block"
-    data-ad-client="ca-pub-4501795912654667"
-    data-ad-slot="3078174225"
-    data-ad-format="auto"
-    data-full-width-responsive="true"></ins>
-  <script>
-    (adsbygoogle = window.adsbygoogle || []).push({});
-  </script>
-
+  <footer class="site-footer">
+    © 2026 참소식.com. All rights reserved.
+    <div class="footer-certification">
+      본 도메인은 ICANN 규정에 따라 인증된 계정으로 관리됩니다.
+    </div>
+    <div class="footer-certification">
+      <a href="https://drive.google.com/file/d/1gM0n8VceHOF-P1uW6V0oK-TN4uhs9yfm/view" target="_blank" rel="noopener">successfully completed the curriculum for</a>
+      <br>
+      This is a non-accredited course
+      <br>
+      offered by ICANN
+    </div>
+  </footer>
 </body>
 </html>
