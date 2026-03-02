@@ -5,6 +5,8 @@ Ollama IDE - GPT 같은 채팅 인터페이스
 
 import os
 import json
+import time
+import random
 import requests
 from datetime import datetime
 from pathlib import Path
@@ -12,6 +14,7 @@ from pathlib import Path
 # 설정
 OLLAMA_URL = "http://localhost:11434"
 HISTORY_DIR = "data/ollama_chat"
+ROTATION_FILE = os.path.join(HISTORY_DIR, "model_rotation.json")
 os.makedirs(HISTORY_DIR, exist_ok=True)
 
 # 색상 코드
@@ -66,23 +69,98 @@ def select_model(models):
             return models[0]
 
 
-def chat_with_ollama(model, prompt, stream=False):
-    """Ollama API 호출"""
+def load_model_rotation(models, preferred_model=None):
+    state = {"models": models, "index": 0}
+    if os.path.exists(ROTATION_FILE):
+        try:
+            with open(ROTATION_FILE, 'r', encoding='utf-8') as f:
+                saved = json.load(f)
+            saved_models = saved.get("models", [])
+            saved_index = int(saved.get("index", 0))
+            if saved_models == models and 0 <= saved_index < len(models):
+                state = {"models": models, "index": saved_index}
+        except Exception:
+            pass
+
+    if preferred_model in models:
+        state["index"] = models.index(preferred_model)
+
+    save_model_rotation(state)
+    return state
+
+
+def save_model_rotation(state):
     try:
-        response = requests.post(
-            f"{OLLAMA_URL}/api/generate",
-            json={
-                "model": model,
-                "prompt": prompt,
-                "stream": stream
-            },
-            timeout=120
-        )
-        response.raise_for_status()
-        data = response.json()
-        return data.get('response', ''), None
-    except Exception as e:
-        return None, str(e)
+        with open(ROTATION_FILE, 'w', encoding='utf-8') as f:
+            json.dump(state, f, ensure_ascii=False, indent=2)
+    except Exception:
+        pass
+
+
+def advance_model_rotation(state):
+    models = state.get("models", [])
+    if not models:
+        return None
+    state["index"] = (state.get("index", 0) + 1) % len(models)
+    save_model_rotation(state)
+    return models[state["index"]]
+
+
+def chat_with_ollama(model, prompt, rotation, stream=False):
+    """Ollama API 호출 (429/5xx 시 모델 전환)"""
+    models = rotation.get("models", []) if rotation else []
+    if not models:
+        models = [model]
+
+    try:
+        start_index = models.index(model)
+    except ValueError:
+        start_index = rotation.get("index", 0) if rotation else 0
+
+    base_delay = 1.5
+    last_error = None
+
+    for attempt in range(len(models)):
+        current_model = models[start_index]
+        try:
+            response = requests.post(
+                f"{OLLAMA_URL}/api/generate",
+                json={
+                    "model": current_model,
+                    "prompt": prompt,
+                    "stream": stream
+                },
+                timeout=120
+            )
+            if response.status_code in (429, 500, 502, 503, 504):
+                raise requests.HTTPError(
+                    f"{response.status_code} {response.reason}",
+                    response=response
+                )
+            response.raise_for_status()
+            data = response.json()
+            if rotation and current_model in models:
+                rotation["index"] = models.index(current_model)
+                save_model_rotation(rotation)
+            return data.get('response', ''), None, current_model
+        except requests.HTTPError as e:
+            status = e.response.status_code if e.response else None
+            if status in (429, 500, 502, 503, 504):
+                last_error = str(e)
+                delay = base_delay * (2 ** attempt) + random.uniform(0, 0.5)
+                print_colored(f"재시도 대기: {delay:.1f}s (상태 {status})", Color.YELLOW)
+                time.sleep(delay)
+                if rotation:
+                    next_model = advance_model_rotation(rotation)
+                    if next_model:
+                        print_colored(f"🔁 모델 전환: {current_model} -> {next_model}", Color.YELLOW)
+                        start_index = models.index(next_model)
+                        continue
+            return None, str(e), current_model
+        except Exception as e:
+            return None, str(e), current_model
+
+    return None, last_error or "모든 모델에서 429가 발생했습니다.", model
 
 
 def save_chat_history(model, history):
@@ -156,6 +234,8 @@ def main():
         return
     
     current_model = select_model(models)
+    rotation = load_model_rotation(models, preferred_model=current_model)
+    current_model = rotation.get("models", [current_model])[rotation.get("index", 0)] if rotation else current_model
     print_colored(f"\n✅ 선택된 모델: {current_model}\n", Color.GREEN)
     
     # 최근 대화 표시
@@ -201,6 +281,8 @@ def main():
                 elif cmd == '/model':
                     models = get_available_models()
                     current_model = select_model(models)
+                    rotation = load_model_rotation(models, preferred_model=current_model)
+                    current_model = rotation.get("models", [current_model])[rotation.get("index", 0)] if rotation else current_model
                     print_colored(f"✅ 모델 변경: {current_model}", Color.GREEN)
                     continue
                 
@@ -223,7 +305,9 @@ def main():
             
             # AI 응답 생성
             print_colored(f"\n{Color.GRAY}생성 중...{Color.RESET}", Color.GRAY)
-            response, error = chat_with_ollama(current_model, user_input)
+            response, error, used_model = chat_with_ollama(current_model, user_input, rotation)
+            if used_model and used_model != current_model:
+                current_model = used_model
             
             if error:
                 print_colored(f"❌ 오류: {error}", Color.RED)

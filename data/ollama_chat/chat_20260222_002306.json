@@ -1,0 +1,30 @@
+{
+  "model": "llama2:latest",
+  "timestamp": "2026-02-22T00:23:51.912512",
+  "messages": [
+    {
+      "role": "user",
+      "content": "/트렌드검색반복 60 --infinite [오늘 주요 뉴스]"
+    },
+    {
+      "role": "user",
+      "content": "/반복 1 0 애니 추천"
+    },
+    {
+      "role": "user",
+      "content": "애니 추천"
+    },
+    {
+      "role": "assistant",
+      "content": "\n🔍 '애니 추천' 검색 결과:\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n📄 검색 페이지 요약 [2026년 02월 22일]\n────────────────────────────────────────────────────────────\n• 검색 결과에 오류가 있는 것은 알아보았습니다. • 하지만, 이러한 오류를 해결하기 위해 특별히 설정을 구성했습니다. • 추가적인 정보를 검색하여 뉴스에 대한 정보를 축적합니다. • 이러한 과정에서 얻어진 정보를 토대로 뉴스의 설정을 다시 구성합니다.\n\n🔗 참고 URL\n────────────────────────────────────────────────────────────\n• Naver Web: https://search.naver.com/search.naver?where=nexearch&query=%EC%95%A0%EB%8B%88%20%EC%B6%94%EC%B2%9C\n• Naver News: https://search.naver.com/search.naver?where=news&query=%EC%95%A0%EB%8B%88%20%EC%B6%94%EC%B2%9C&sm=tab_opt&sort=1&photo=0&field=0&pd=0&docid=&related=0&mynews=0&office_type=0&office_section_code=0&news_office_checked=&nso=so:dd,p:all,a:all\n• Bing Web: https://www.bing.com/search?q=%EC%95%A0%EB%8B%88%20%EC%B6%94%EC%B2%9C\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n"
+    },
+    {
+      "role": "user",
+      "content": "/반복 1 0 다이소 폴라폴라"
+    },
+    {
+      "role": "user",
+      "content": "다이소 폴라폴라"
+    }
+  ]
+}

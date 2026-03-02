@@ -1,0 +1,22 @@
+{
+  "model": "gpt-oss:120b-cloud",
+  "timestamp": "2026-02-19T22:24:33.939374",
+  "messages": [
+    {
+      "role": "user",
+      "content": "/트렌드검색반복 60 [오늘 주요 뉴스]"
+    },
+    {
+      "role": "user",
+      "content": "/반복 1 0 올팜 맞팜"
+    },
+    {
+      "role": "user",
+      "content": "올팜 맞팜"
+    },
+    {
+      "role": "assistant",
+      "content": "올팜 맞팜은 SNS에서 “올라프(또는 올린 사진) + 맞팔(맞게 팔로우)”을 줄인 말로, 서로 팔로우해 주자는 뜻입니다."
+    }
+  ]
+}

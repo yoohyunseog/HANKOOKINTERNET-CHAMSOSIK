@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>참소식.com - N/B 데이터베이스 & 보이니치 해독</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+  <style>
+    :root {
+      --primary-color: #059669;
+      --dark-bg: #064e3b;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Noto Sans KR', sans-serif;
+      background: #f8f9fa;
+      min-height: 100vh;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    .top-bar {
+      background: linear-gradient(135deg, var(--dark-bg) 0%, #065f46 100%);
+      color: white;
+      padding: 10px 0;
+      text-align: center;
+      font-size: 1.1em;
+      font-weight: 600;
+    }
+
+    .ad-container {
+      background: #fff;
+      border: 2px dashed #ddd;
+      border-radius: 8px;
+      padding: 20px;
+      margin: 20px auto;
+      text-align: center;
+      color: #999;
+      max-width: 728px;
+    }
+    
+    .ad-container.sidebar {
+      max-width: 300px;
+      margin: 20px;
+    }
+
+    .data-section {
+      background: white;
+      color: #333;
+      padding: 20px 0;
+      margin-top: 0;
+    }
+
+    .main-layout {
+      display: flex;
+      max-width: 1400px;
+      margin: 0 auto;
+      gap: 20px;
+      padding: 0 15px;
+    }
+
+    .content-area {
+      flex: 1;
+    }
+
+    .sidebar-ad {
+      width: 300px;
+      position: sticky;
+      top: 20px;
+      height: fit-content;
+    }
+
+    @media (max-width: 992px) {
+      .main-layout {
+        flex-direction: column;
+      }
+      .sidebar-ad {
+        width: 100%;
+        position: static;
+      }
+    }
+
+    .data-card {
+      background: white;
+      border-radius: 8px;
+      padding: 15px;
+      margin-bottom: 10px;
+      border-left: 4px solid var(--primary-color);
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      transition: all 0.2s ease;
+    }
+
+    .data-card:hover {
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      transform: translateX(5px);
+    }
+
+    .badge-rank {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      padding: 5px 10px;
+      border-radius: 20px;
+      font-weight: 600;
+      color: white;
+    }
+
+    .badge-views {
+      background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+      padding: 5px 10px;
+      border-radius: 20px;
+      font-weight: 600;
+   !-- 상단 타이틀바 -->
+  <div class="top-bar">
+    <i class="bi bi-database-fill-check"></i> 참소식.com - N/B 데이터베이스
+    <a href="/database.html" class="btn btn-success btn-sm ms-3">검색</a>
+    <a href="/api.html" class="btn btn-primary btn-sm ms-2">API</a>
+    <a href="http://한국인터넷.한국" class="btn btn-light btn-sm ms-2">메인</a>
+  </div>
+
+  <!-- 상단 광고 영역 (728x90) -->
+  <div class="ad-container">
+    <div style="height: 90px; display: flex; align-items: center; justify-content: center;">
+      <span><i class="bi bi-badge-ad"></i> 광고 영역 728x90</span>
+    </div>
+  </div>
+
+  <!-- 메인 레이아웃 -->
+  <div class="main-layout">
+    <!-- 메인 컨텐츠 -->
+    <div class="content-area">      <!-- 검색 박스 -->
+      <div class="search-box">
+        <div class="text-center mb-3">
+          <h5><i class="bi bi-search"></i> 검색</h5>
+        </div>
+        <div class="d-flex flex-wrap justify-content-center align-items-center gap-2">
+          <input type="text" 
+                 id="searchInput" 
+                 class="search-input" 
+                 placeholder="검색어를 입력하세요..."
+                 onkeypress="if(event.key==='Enter') searchNaver()">
+          <button onclick="searchNaver()" class="search-btn btn-naver">
+            <i class="bi bi-search"></i> 네이버 검색
+          </button>
+          <button onclick="searchYoutube()" class="search-btn btn-youtube">
+            <i class="bi bi-youtube"></i> 유튜브 검색
+          </button>
+        </div>
+      </div>
+      <div class="data-section
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <di/h1>
+      <p class="hero-subtitle">N/B 데이터베이스</p>
+      
+      <div class="text-center mb-4">
+        <a href="/database.html" class="btn btn-success btn-hero me-2">
+          <i class="bi bi-search"></i> 검색
+        </a>
+        <a href="/api.html" class="btn btn-outline-light btn-hero me-2">
+          <i class="bi bi-braces"></i> API
+        </a>
+        <a href="http://한국인터넷.한국" class="btn btn-outline-light btn-hero">
+          <i class="bi bi-house"></i> 메인
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 데이터 목록 섹션 -->
+  <div class="data-section">
+    <div class="container">
+      <h2 class="text-center mb-4">
+        <i class="bi bi-server"></i> 데이터베이스 통계
+      </h2>
+
+      <!-- 탭 네비게이션 -->
+      <ul class="nav nav-pills justify-content-center mb-4" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="recent-tab" data-bs-toggle="pill" 
+                  data-bs-target="#recent-panel" type="button" role="tab">
+            <i class="bi bi-clock-history"></i> 최근 100개
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="popular-tab" data-bs-toggle="pill" 
+                  data-bs-target="#popular-panel" type="button" role="tab">
+            <i class="bi bi-fire"></i> 조회수 TOP 100
+          </button>
+        </li>
+      </ul>
+
+      <!-- 탭 컨텐츠 -->
+      <div class="tab-content">
+        <!-- 최근 100개 -->
+        <div class="tab-pane fade show active" id="recent-panel" role="tabpanel">
+          <div class="text-center mb-3">
+            <span class="badge bg-primary">날짜순 정렬</span>
+            <span class="badge bg-info ms-2" id="recent-count">로딩 중...</span>
+          </div>
+          <div id="recent-data" class="data-container">
+            <div class="loading-spinner">
+      </div>
+    </div>
+
+    <!-- 사이드바 광고 영역 (300x600) -->
+    <div class="sidebar-ad">
+      <div class="ad-container sidebar">
+        <div style="height: 250px; display: flex; align-items: center; justify-content: center; flex-direction: column;">
+          <i class="bi bi-badge-ad" style="font-size: 2em;"></i>
+          <p class="mt-2 mb-0">광고 영역 300x250</p>
+        </div>
+      </div>
+      
+      <div class="ad-container sidebar mt-3">
+        <div style="height: 250px; display: flex; align-items: center; justify-content: center; flex-direction: column;">
+          <i class="bi bi-badge-ad" style="font-size: 2em;"></i>
+          <p class="mt-2 mb-0">광고 영역 300x250</p>
+        </div>
+      </div>
+              <div class="spinner-border text-success" role="status"></div>
+              <p class="mt-2">데이터 로딩 중...</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 조회수 TOP 100 -->
+        <div class="tab-pane fade" id="popular-panel" role="tabpanel">
+          <div class="text-center mb-3">
+            <span class="badge bg-danger">조회수순 정렬</span>
+            <span class="badge bg-info ms-2" id="popular-count">로딩 중...</span>
+          </div>
+          <div id="popular-data" class="data-container">
+            <div class="loading-spinner">
+              <div class="spinner-border text-success" role="status"></div>
+              <p class="mt-2">데이터 로딩 중...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    // API 베이스 URL
+    const API_BASE = window.location.origin;
+
+    // HTML 이스케이프 함수 (XSS 방지 및 특수문자 표시)
+    function escapeHtml(text) {
+      const div = document.createElement('div');
+      div.textContent = text;
+      return div.innerHTML;
+    }
+
+    // 네이버 검색
+    function searchNaver() {
+      const query = document.getElementById('searchInput').value.trim();
+      if (!query) {
+        alert('검색어를 입력해주세요.');
+        return;
+      }
+      const url = `https://search.naver.com/search.naver?query=${encodeURIComponent(query)}`;
+      window.open(url, '_blank');
+    }
+
+    // 유튜브 검색
+    function searchYoutube() {
+      const query = document.getElementById('searchInput').value.trim();
+      if (!query) {
+        alert('검색어를 입력해주세요.');
+        return;
+      }
+      const url = `https://www.youtube.com/results?search_query=${encodeURIComponent(query)}`;
+      window.open(url, '_blank');
+    }
+
+    // 최근 데이터 로드
+    async function loadRecentData() {
+      try {
+        const response = await fetch(`${API_BASE}/api/recent?limit=100`);
+        const data = await response.json();
+        
+        document.getElementById('recent-count').textContent = `${data.count}개`;
+        
+        const html = data.results.map((item, index) => `
+          <div class="data-card">
+            <div class="d-flex justify-content-between align-items-start">
+              <div class="flex-grow-1">
+                <div class="mb-2">
+                  <span class="badge bg-secondary">#${index + 1}</span>
+                  <span class="badge bg-info ms-2">${item.type === 'text' ? '텍스트' : '숫자'}</span>
+                  ${item.view_count ? `<span class="badge bg-warning ms-2">👁️ ${item.view_count}회</span>` : ''}
+                </div>
+                <div class="fw-bold mb-1">
+                  ${escapeHtml(item.type === 'text' ? item.input : `[${item.input.join(', ')}]`)}
+                </div>
+                <div class="small-text">
+                  <i class="bi bi-calendar3"></i> ${new Date(item.timestamp).toLocaleString('ko-KR')}
+                  <span class="ms-3">
+                    <i class="bi bi-arrow-up-circle text-success"></i> MAX: ${item.results?.[0]?.nb_max || 'N/A'}
+                  </span>
+                  <span class="ms-2">
+                    <i class="bi bi-arrow-down-circle text-danger"></i> MIN: ${item.results?.[0]?.nb_min || 'N/A'}
+                  </span>
+                </div>
+              </div>
+              <div>
+                <button class="btn btn-sm btn-outline-primary" 
+                        onclick="viewDetail('${item.id}')">
+                  <i class="bi bi-search"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        `).join('');
+        
+        document.getElementById('recent-data').innerHTML = html;
+      } catch (error) {
+        console.error('최근 데이터 로딩 오류:', error);
+        document.getElementById('recent-data').innerHTML = `
+          <div class="alert alert-danger">
+            <i class="bi bi-exclamation-triangle"></i> 데이터를 불러올 수 없습니다.
+          </div>
+        `;
+      }
+    }
+
+    // 조회수 많은 순 데이터 로드
+    async function loadPopularData() {
+      try {
+        const response = await fetch(`${API_BASE}/api/most-viewed?limit=100`);
+        const data = await response.json();
+        
+        document.getElementById('popular-count').textContent = `${data.count}개`;
+        
+        const html = data.results.map((item, index) => {
+          const rankBadge = index < 3 ? 
+            `<span class="badge-rank">🏆 ${index + 1}위</span>` :
+            `<span class="badge bg-secondary">#${index + 1}</span>`;
+          
+          return `
+            <div class="data-card">
+              <div class="d-flex justify-content-between align-items-start">
+                <div class="flex-grow-1">
+                  <div class="mb-2">
+                    ${rankBadge}
+                    <span class="badge-views">👁️ ${item.view_count || 0}회</span>
+                    <span class="badge bg-info ms-2">${item.type === 'text' ? '텍스트' : '숫자'}</span>
+                  </div>
+                  <div class="fw-bold mb-1">
+                    ${escapeHtml(item.type === 'text' ? item.input : `[${item.input.join(', ')}]`)}
+                  </div>
+                  <div class="small-text">
+                    <i class="bi bi-calendar3"></i> ${new Date(item.timestamp).toLocaleString('ko-KR')}
+                    ${item.last_viewed ? `<span class="ms-2"><i class="bi bi-eye"></i> 최근: ${new Date(item.last_viewed).toLocaleString('ko-KR')}</span>` : ''}
+                  </div>
+                  <div class="small-text mt-1">
+                    <i class="bi bi-arrow-up-circle text-success"></i> MAX: ${item.results?.[0]?.nb_max || 'N/A'}
+                    <span class="ms-2">
+                      <i class="bi bi-arrow-down-circle text-danger"></i> MIN: ${item.results?.[0]?.nb_min || 'N/A'}
+                    </span>
+                  </div>
+                </div>
+                <div>
+                  <button class="btn btn-sm btn-outline-primary" 
+                          onclick="viewDetail('${item.id}')">
+                    <i class="bi bi-search"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          `;
+        }).join('');
+        
+        document.getElementById('popular-data').innerHTML = html;
+      } catch (error) {
+        console.error('인기 데이터 로딩 오류:', error);
+        document.getElementById('popular-data').innerHTML = `
+          <div class="alert alert-danger">
+            <i class="bi bi-exclamation-triangle"></i> 데이터를 불러올 수 없습니다.
+          </div>
+        `;
+      }
+    }
+
+    // 상세보기
+    function viewDetail(id) {
+      window.location.href = `/database.html?id=${id}`;
+    }
+
+    // 탭 전환 이벤트
+    document.getElementById('popular-tab').addEventListener('shown.bs.tab', function () {
+      // 인기 데이터가 로드되지 않았으면 로드
+      if (document.getElementById('popular-data').querySelector('.loading-spinner')) {
+        loadPopularData();
+      }
+    });
+
+    // 페이지 로드 시 최근 데이터 자동 로드
+    document.addEventListener('DOMContentLoaded', function() {
+      loadRecentData();
+    });
+  </script>
+</body>
+</html>

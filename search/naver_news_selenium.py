@@ -257,8 +257,8 @@ def get_naver_news_search_selenium(keyword: str, limit: int = 10) -> List[Dict]:
         
         # 렌더링 대기
         try:
-            wait = WebDriverWait(driver, 15)
-            wait.until(EC.presence_of_all_elements_located((By.CSS_SELECTOR, 'div.news_area, a.news_tit')))
+            wait = WebDriverWait(driver, 20)
+            wait.until(EC.presence_of_all_elements_located((By.CSS_SELECTOR, 'div.news_area, a.news_tit, li.bx')))
         except:
             logger.warning("⚠️  렌더링 대기 시간 초과")
         
@@ -277,21 +277,25 @@ def get_naver_news_search_selenium(keyword: str, limit: int = 10) -> List[Dict]:
         
         for idx, item in enumerate(items[:limit], 1):
             try:
-                # 제목
-                title_elem = item.select_one('a.news_tit, a.tit, a')
+                # 제목 - 다양한 selector 시도
+                title_elem = item.select_one('a.news_tit, a[href*="news.naver.com"], a.tit, a')
                 if not title_elem:
                     continue
                 
                 title = title_elem.get_text(strip=True)
                 url_link = title_elem.get('href', '')
                 
-                # 설명
-                desc_elem = item.select_one('div.dsc, span.lede')
-                desc = desc_elem.get_text(strip=True)[:150] if desc_elem else ''
+                # 설명 - li.bx 구조에 맞는 selector
+                desc = ''
+                desc_elem = item.select_one('div.dsc, span.lede, div.news_dsc, p.dsc')
+                if desc_elem:
+                    desc = desc_elem.get_text(strip=True)[:150]
                 
-                # 날짜/출처
-                info_elem = item.select_one('span.info')
-                info = info_elem.get_text(strip=True) if info_elem else ''
+                # 날짜/출처 - 다양한 selector
+                info = ''
+                info_elem = item.select_one('span.info, span.date, span.time')
+                if info_elem:
+                    info = info_elem.get_text(strip=True)
                 
                 if _is_valid_news_title(title):
                     results.append({

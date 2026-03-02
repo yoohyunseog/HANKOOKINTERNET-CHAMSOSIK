@@ -1,0 +1,34 @@
+{
+  "model": "gpt-oss:120b-cloud",
+  "timestamp": "2026-02-22T00:17:46.707787",
+  "messages": [
+    {
+      "role": "user",
+      "content": "/트렌드검색반복 60 --infinite [오늘 주요 뉴스]"
+    },
+    {
+      "role": "user",
+      "content": "/반복 1 0 스타벅스 리유저블컵"
+    },
+    {
+      "role": "user",
+      "content": "스타벅스 리유저블컵"
+    },
+    {
+      "role": "assistant",
+      "content": "\n🔍 '스타벅스 리유저블컵' 검색 결과:\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n📄 검색 페이지 요약 [2026년 02월 22일]\n────────────────────────────────────────────────────────────\n요약 중 오류가 발생했습니다: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60)\n\n🔗 참고 URL\n────────────────────────────────────────────────────────────\n• Naver Web: https://search.naver.com/search.naver?where=nexearch&query=%EC%8A%A4%ED%83%80%EB%B2%85%EC%8A%A4%20%EB%A6%AC%EC%9C%A0%EC%A0%80%EB%B8%94%EC%BB%B5\n• Naver News: https://search.naver.com/search.naver?where=news&query=%EC%8A%A4%ED%83%80%EB%B2%85%EC%8A%A4%20%EB%A6%AC%EC%9C%A0%EC%A0%80%EB%B8%94%EC%BB%B5&sm=tab_opt&sort=1&photo=0&field=0&pd=0&docid=&related=0&mynews=0&office_type=0&office_section_code=0&news_office_checked=&nso=so:dd,p:all,a:all\n• Bing Web: https://www.bing.com/search?q=%EC%8A%A4%ED%83%80%EB%B2%85%EC%8A%A4%20%EB%A6%AC%EC%9C%A0%EC%A0%80%EB%B8%94%EC%BB%B5\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n"
+    },
+    {
+      "role": "user",
+      "content": "/반복 1 0 커플 밸런스게임"
+    },
+    {
+      "role": "user",
+      "content": "커플 밸런스게임"
+    },
+    {
+      "role": "assistant",
+      "content": "\n🔍 '커플 밸런스게임' 검색 결과:\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n📄 검색 페이지 요약 [2026년 02월 22일]\n────────────────────────────────────────────────────────────\n요약 중 오류가 발생했습니다: 429 Too Many Requests\n\n🔗 참고 URL\n────────────────────────────────────────────────────────────\n• Naver Web: https://search.naver.com/search.naver?where=nexearch&query=%EC%BB%A4%ED%94%8C%20%EB%B0%B8%EB%9F%B0%EC%8A%A4%EA%B2%8C%EC%9E%84\n• Naver News: https://search.naver.com/search.naver?where=news&query=%EC%BB%A4%ED%94%8C%20%EB%B0%B8%EB%9F%B0%EC%8A%A4%EA%B2%8C%EC%9E%84&sm=tab_opt&sort=1&photo=0&field=0&pd=0&docid=&related=0&mynews=0&office_type=0&office_section_code=0&news_office_checked=&nso=so:dd,p:all,a:all\n• Bing Web: https://www.bing.com/search?q=%EC%BB%A4%ED%94%8C%20%EB%B0%B8%EB%9F%B0%EC%8A%A4%EA%B2%8C%EC%9E%84\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n"
+    }
+  ]
+}

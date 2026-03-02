@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N/B 데이터베이스 - 참소식.com</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <style>
+        :root {
+            --primary-color: #059669;
+            --secondary-color: #10b981;
+            --dark-bg: #064e3b;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Noto Sans KR', sans-serif;
+            background: linear-gradient(135deg, var(--dark-bg) 0%, #065f46 100%);
+            min-height: 100vh;
+            color: #1f2937;
+        }
+
+        .header {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: white;
+            padding: 60px 0;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 40px rgba(5, 150, 105, 0.3);
+        }
+
+        .main-content {
+            background: white;
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+
+        .search-section {
+            background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%);
+            border-left: 4px solid var(--primary-color);
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+
+        .result-card {
+            border-left: 4px solid var(--primary-color);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .result-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(5, 150, 105, 0.15);
+        }
+
+        .badge-nb-max {
+            background: linear-gradient(135deg, #059669 0%, #10b981 100%);
+        }
+
+        .badge-nb-min {
+            background: linear-gradient(135deg, #f59e0b 0%, #fbbf24 100%);
+        }
+
+        .code-display {
+            background: #1e293b;
+            color: #e2e8f0;
+            padding: 15px;
+            border-radius: 8px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+            overflow-x: auto;
+        }
+
+        .footer {
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            text-align: center;
+            padding: 30px;
+            backdrop-filter: blur(10px);
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                padding: 40px 15px;
+            }
+
+            .main-content {
+                padding: 20px;
+            }
+
+            .search-section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <!-- 헤더 -->
+        <header class="header">
+            <div class="container">
+                <div class="text-center">
+                    <h1 class="display-4"><i class="bi bi-database"></i> N/B 데이터베이스</h1>
+                    <p class="lead">N/B 계산 결과 저장 및 검색 시스템</p>
+                    <p class="mb-0">
+                        <a href="index.html" class="btn btn-light btn-sm me-2">
+                            <i class="bi bi-house"></i> 홈
+                        </a>
+                        <a href="dashboard.html" class="btn btn-info btn-sm me-2">
+                            <i class="bi bi-bar-chart"></i> 대시보드
+                        </a>
+                        <a href="api.html" class="btn btn-primary btn-sm me-2">
+                            <i class="bi bi-code-slash"></i> API 가이드
+                        </a>
+                        <a href="http://한국인터넷.한국" class="btn btn-light btn-sm">
+                            <i class="bi bi-calculator"></i> N/B 계산기
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </header>
+
+        <!-- 메인 콘텐츠 -->
+        <main class="container">
+            <div class="main-content">
+                <!-- 검색 섹션 -->
+                <section class="search-section">
+                    <h2 class="h4 mb-4"><i class="bi bi-search"></i> 문자 검색</h2>
+                    
+                    <div class="row g-3">
+                        <div class="col-12">
+                            <label for="textInput" class="form-label">문자 입력</label>
+                            <input type="text" class="form-control form-control-lg" id="textInput" placeholder="예: 안녕하세요, Hello, 한글테스트">
+                            <div class="form-text">
+                                <i class="bi bi-info-circle"></i> 입력한 문자를 기반으로 N/B 계산 결과를 검색합니다.
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="categoryInput" class="form-label">카테고리</label>
+                            <input type="text" class="form-control form-control-lg" id="categoryInput" placeholder="예: 뉴스, 검색, 트렌드 등" value="일반">
+                            <div class="form-text">
+                                <i class="bi bi-info-circle"></i> 카테고리를 자유롭게 입력하세요.
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 d-flex align-items-end">
+                            <button class="btn btn-success btn-lg w-100" id="searchBtn">
+                                <i class="bi bi-search"></i> 계산 및 검색
+                            </button>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 단일 조회 섹션 -->
+                <section class="search-section">
+                    <h2 class="h4 mb-4"><i class="bi bi-file-text"></i> 단일 조회 (계산 ID)</h2>
+                    
+                    <div class="row g-3">
+                        <div class="col-12">
+                            <label for="calculationIdInput" class="form-label">계산 ID</label>
+                            <input type="text" class="form-control form-control-lg" id="calculationIdInput" placeholder="예: 1a250e38f2d96fe9">
+                            <div class="form-text">
+                                <i class="bi bi-info-circle"></i> 계산 ID를 입력하여 특정 계산 결과를 조회합니다.
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <button class="btn btn-primary btn-lg w-100" id="findByIdBtn">
+                                <i class="bi bi-search"></i> ID로 조회
+                            </button>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 리스트 조회 섹션 -->
+                <section class="search-section">
+                    <h2 class="h4 mb-4"><i class="bi bi-list-ul"></i> 전체 리스트 조회</h2>
+                    
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <label for="listLimit" class="form-label">조회 개수</label>
+                            <select class="form-select form-select-lg" id="listLimit">
+                                <option value="10">10개</option>
+                                <option value="20" selected>20개</option>
+                                <option value="50">50개</option>
+                                <option value="100">100개</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label class="form-label">&nbsp;</label>
+                            <button class="btn btn-info btn-lg w-100" id="listAllBtn">
+                                <i class="bi bi-list-check"></i> 전체 조회
+                            </button>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 통계 섹션 -->
+                <section class="mb-4">
+                    <h2 class="h4 mb-3"><i class="bi bi-bar-chart"></i> 데이터베이스 통계</h2>
+                    <div class="row g-3">
+                        <div class="col-md-4">
+                            <div class="card text-center">
+                                <div class="card-body">
+                                    <h3 class="display-6 text-success" id="totalCalculations">0</h3>
+                                    <p class="text-muted mb-0">총 계산 수</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card text-center">
+                                <div class="card-body">
+                                    <h3 class="display-6 text-primary" id="totalMaxResults">0</h3>
+                                    <p class="text-muted mb-0">MAX 결과</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card text-center">
+                                <div class="card-body">
+                                    <h3 class="display-6 text-warning" id="totalMinResults">0</h3>
+                                    <p class="text-muted mb-0">MIN 결과</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 검색 결과 섹션 -->
+                <section id="resultsSection" style="display: none;">
+                    <h2 class="h4 mb-3"><i class="bi bi-list-check"></i> 검색 결과 <span class="badge bg-success" id="resultCount">0</span></h2>
+                    <div id="resultsContainer"></div>
+                </section>
+
+                <!-- 최근 계산 결과 -->
+                <section class="mt-4">
+                    <h2 class="h4 mb-3"><i class="bi bi-clock-history"></i> 최근 계산 결과</h2>
+                    <div id="recentResults">
+                        <div class="alert alert-info">
+                            <i class="bi bi-info-circle"></i> 아직 저장된 계산 결과가 없습니다.
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 데이터베이스 구조 정보 -->
+                <section class="mt-5">
+                    <h2 class="h4 mb-3"><i class="bi bi-diagram-3"></i> 데이터베이스 구조</h2>
+                    <div class="accordion" id="dbStructureAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#structureNB">
+                                    N/B 계산 결과 구조
+                                </button>
+                            </h2>
+                            <div id="structureNB" class="accordion-collapse collapse" data-bs-parent="#dbStructureAccordion">
+                                <div class="accordion-body">
+                                    <p><strong>계층형 디렉터리:</strong></p>
+                                    <div class="code-display">data/nb_max/5/9/6/8/result_nb_calc_12345.json
+data/nb_min/9/9/9/0/result_nb_calc_12345.json</div>
+                                    <p class="mt-3"><strong>JSON 스키마:</strong></p>
+                                    <div class="code-display">{
+  "calculation_id": "nb_calc_12345",
+  "input": "okeedy",
+  "unicode": [111, 107, 101, 101, 100, 121],
+  "bit": 999,
+  "results": [
+    { "iteration": 1, "nb_max": 5.96, "nb_min": 999.00 },
+    { "iteration": 2, "nb_max": 5.96, "nb_min": 999.00 },
+    { "iteration": 3, "nb_max": 5.96, "nb_min": 999.00 }
+  ],
+  "created_at": "2026-02-18T12:00:00Z"
+}</div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#structureIndex">
+                                    인덱스 구조
+                                </button>
+                            </h2>
+                            <div id="structureIndex" class="accordion-collapse collapse" data-bs-parent="#dbStructureAccordion">
+                                <div class="accordion-body">
+                                    <p><strong>nb_max_index.json:</strong></p>
+                                    <div class="code-display">{
+  "5.9686932681": ["nb_calc_12345", "nb_calc_67890"]
+}</div>
+                                    <p class="mt-3"><strong>unicode_index.json:</strong></p>
+                                    <div class="code-display">{
+  "111,107,101,101,100,121": ["nb_calc_12345"]
+}</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <!-- 푸터 -->
+        <footer class="footer">
+            <p class="mb-1">&copy; 2026 참소식.com | N/B Database System</p>
+            <p class="mb-0">
+                <a href="http://한국인터넷.한국" class="text-white text-decoration-none">한국인터넷.한국</a> |
+                <a href="/database.html" class="text-white text-decoration-none">데이터베이스</a>
+            </p>
+        </footer>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // 데이터베이스 검색 기능
+        const searchBtn = document.getElementById('searchBtn');
+        const resultsSection = document.getElementById('resultsSection');
+        const resultsContainer = document.getElementById('resultsContainer');
+        const resultCount = document.getElementById('resultCount');
+
+        searchBtn.addEventListener('click', performSearch);
+
+        // 엔터 키로 검색
+        document.getElementById('textInput').addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') performSearch();
+        });
+
+        async function performSearch() {
+            const textInput = document.getElementById('textInput').value.trim();
+
+            if (!textInput) {
+                alert('문자를 입력해주세요.');
+                return;
+            }
+
+            // Unicode 배열로 변환
+            const unicodeArray = [];
+            for (let i = 0; i < textInput.length; i++) {
+                unicodeArray.push(textInput.charCodeAt(i));
+            }
+
+            // 로딩 표시
+            displayLoading(textInput, unicodeArray);
+
+            try {
+                // 1단계: 검색 시도
+                const searchResponse = await fetch('/api/search', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ text: textInput, unicode: unicodeArray })
+                });
+
+                const searchData = await searchResponse.json();
+
+                if (searchData.success && searchData.results.length > 0) {
+                    // 기존 결과 표시
+                    displaySearchResults(searchData.results);
+                } else {
+                    // 2단계: 새로 계산
+                    const category = document.getElementById('categoryInput').value.trim() || 'general';
+                    const calcResponse = await fetch('/api/calculate', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ input: textInput, bit: 999, category: category })
+                    });
+
+                    const calcData = await calcResponse.json();
+                    
+                    // 새 계산 결과 표시
+                    displayCalculationResult(calcData);
+                    
+                    // 통계 새로고침
+                    loadStatistics();
+                }
+            } catch (error) {
+                console.error('API 오류:', error);
+                displayError('API 연결 오류가 발생했습니다. 서버가 실행 중인지 확인해주세요.');
+            }
+        }
+
+        function displayLoading(input, unicodeArray) {
+            resultsSection.style.display = 'block';
+            resultCount.textContent = '...';
+
+            resultsContainer.innerHTML = `
+                <div class="card result-card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <span class="badge badge-nb-max">MAX: 계산 중...</span>
+                            <span class="badge badge-nb-min">MIN: 계산 중...</span>
+                        </h5>
+                        <p class="mb-2"><strong>입력:</strong> ${input}</p>
+                        <p class="mb-2"><strong>Unicode:</strong> <code>[${unicodeArray.join(', ')}]</code></p>
+                        <div class="spinner-border spinner-border-sm text-primary" role="status">
+                            <span class="visually-hidden">계산 중...</span>
+                        </div>
+                        <span class="ms-2 text-muted small">BIT: 999 | 계산 중...</span>
+                    </div>
+                </div>
+            `;
+
+            resultsContainer.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+
+        function displaySearchResults(results) {
+            resultCount.textContent = results.length;
+
+            let html = '';
+            results.forEach((result, index) => {
+                const firstCalc = result.results[0];
+                const categoryLabel = result.category || '일반';
+                html += `
+                    <div class="card result-card mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <span class="badge badge-nb-max">MAX: ${firstCalc.nb_max}</span>
+                                <span class="badge badge-nb-min">MIN: ${firstCalc.nb_min}</span>
+                                <span class="badge bg-secondary">${categoryLabel}</span>
+                            </h5>
+                            <p class="mb-2"><strong>입력:</strong> ${result.input}</p>
+                            <p class="mb-2"><strong>Unicode:</strong> <code>[${result.unicode.join(', ')}]</code></p>
+                            <p class="mb-2"><strong>계산 ID:</strong> <code>${result.id}</code></p>
+                            <p class="mb-2"><strong>차이값:</strong> ${firstCalc.difference}</p>
+                            <p class="mb-2">
+                                <span class="badge bg-info">
+                                    <i class="bi bi-eye"></i> 조회수: ${result.view_count || 0}
+                                </span>
+                                ${result.last_viewed ? `<small class="text-muted ms-2">마지막 조회: ${new Date(result.last_viewed).toLocaleString('ko-KR')}</small>` : ''}
+                            </p>
+                            <p class="mb-0 text-muted small">
+                                ${new Date(result.timestamp).toLocaleString('ko-KR')} | 
+                                BIT: ${result.bit}
+                            </p>
+                        </div>
+                    </div>
+                `;
+            });
+
+            resultsContainer.innerHTML = html;
+            resultsContainer.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+
+        function displayCalculationResult(data) {
+            resultCount.textContent = '1 (새로 계산됨)';
+
+            const firstCalc = data.results[0];
+            const categoryLabel = data.category || '일반';
+            
+            // 파일 경로 계산
+            function getFilePath(value, id, type) {
+                const numStr = Math.floor(value).toString().replace('.', '').replace('-', '_');
+                const digits = numStr.split('').slice(0, 4);
+                const path = digits.join('/');
+                return `data/nb_${type}/${path}/result_${id}.json`;
+            }
+            
+            const maxPath = getFilePath(firstCalc.nb_max, data.calculation_id, 'max');
+            const minPath = getFilePath(firstCalc.nb_min, data.calculation_id, 'min');
+            
+            const html = `
+                <div class="card result-card mb-3 border-success">
+                    <div class="card-body">
+                        <div class="badge bg-success mb-2">
+                            <i class="bi bi-check-circle"></i> 새로 계산하여 저장됨
+                        </div>
+                        <h5 class="card-title">
+                            <span class="badge badge-nb-max">MAX: ${firstCalc.nb_max}</span>
+                            <span class="badge badge-nb-min">MIN: ${firstCalc.nb_min}</span>
+                            <span class="badge bg-secondary">${categoryLabel}</span>
+                        </h5>
+                        <p class="mb-2"><strong>입력:</strong> ${data.input}</p>
+                        <p class="mb-2"><strong>Unicode:</strong> <code>[${data.unicode.join(', ')}]</code></p>
+                        <p class="mb-2"><strong>계산 ID:</strong> <code>${data.calculation_id}</code></p>
+                        <p class="mb-2"><strong>차이값:</strong> ${firstCalc.difference}</p>
+                        <p class="mb-2">
+                            <span class="badge bg-info">
+                                <i class="bi bi-eye"></i> 조회수: ${data.view_count || 0}
+                            </span>
+                        </p>
+                        <p class="mb-2">
+                            <strong>저장 경로:</strong><br>
+                            <small class="text-muted">
+                                <i class="bi bi-folder"></i> MAX: <a href="/${maxPath}" target="_blank" class="text-decoration-none"><code>${maxPath}</code></a><br>
+                                <i class="bi bi-folder"></i> MIN: <a href="/${minPath}" target="_blank" class="text-decoration-none"><code>${minPath}</code></a>
+                            </small>
+                        </p>
+                        <p class="mb-0 text-muted small">
+                            방금 전 | BIT: ${data.bit}
+                        </p>
+                    </div>
+                </div>
+            `;
+
+            resultsContainer.innerHTML = html;
+            resultsContainer.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+
+        function displayError(message) {
+            resultsSection.style.display = 'block';
+            resultCount.textContent = '0';
+
+            resultsContainer.innerHTML = `
+                <div class="alert alert-danger">
+                    <i class="bi bi-exclamation-triangle"></i> ${message}
+                </div>
+            `;
+
+            resultsContainer.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+
+        // 초기 통계 로드
+        async function loadStatistics() {
+            try {
+                const response = await fetch('/api/stats');
+                const stats = await response.json();
+                
+                document.getElementById('totalCalculations').textContent = stats.total_calculations.toLocaleString('ko-KR');
+                document.getElementById('totalMaxResults').textContent = stats.total_max_results.toLocaleString('ko-KR');
+                document.getElementById('totalMinResults').textContent = stats.total_min_results.toLocaleString('ko-KR');
+            } catch (error) {
+                console.error('통계 로드 오류:', error);
+                document.getElementById('totalCalculations').textContent = '0';
+                document.getElementById('totalMaxResults').textContent = '0';
+                document.getElementById('totalMinResults').textContent = '0';
+            }
+        }
+
+        // 최근 계산 결과 로드
+        async function loadRecentCalculations() {
+            try {
+                const response = await fetch('/api/recent?limit=5');
+                const data = await response.json();
+                
+                if (data.success && data.results.length > 0) {
+                    const recentSection = document.createElement('section');
+                    recentSection.className = 'mb-5';
+                    recentSection.innerHTML = `
+                        <h2><i class="bi bi-clock-history"></i> 최근 계산 결과</h2>
+                        <div id="recentResults"></div>
+                    `;
+                    
+                    const statsSection = document.querySelector('.statistics-section');
+                    if (statsSection && statsSection.parentNode) {
+                        statsSection.parentNode.insertBefore(recentSection, statsSection.nextSibling);
+                    } else {
+                        // statistics-section이 없으면 main 컨테이너에 추가
+                        const mainContainer = document.querySelector('main .container') || document.querySelector('.container');
+                        if (mainContainer) {
+                            mainContainer.appendChild(recentSection);
+                        }
+                    }
+                    
+                    const recentResults = document.getElementById('recentResults');
+                    let html = '';
+                    
+                    data.results.forEach(result => {
+                        const firstCalc = result.results[0];
+                        html += `
+                            <div class="card mb-2">
+                                <div class="card-body py-2">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div>
+                                            <strong>${result.input}</strong>
+                                            <span class="badge badge-nb-max ms-2">MAX: ${firstCalc.nb_max}</span>
+                                            <span class="badge badge-nb-min">MIN: ${firstCalc.nb_min}</span>
+                                        </div>
+                                        <small class="text-muted">${new Date(result.timestamp).toLocaleString('ko-KR')}</small>
+                                    </div>
+                                </div>
+                            </div>
+                        `;
+                    });
+                    
+                    recentResults.innerHTML = html;
+                }
+            } catch (error) {
+                console.error('최근 결과 로드 오류:', error);
+            }
+        }
+
+        function getQueryParam(name) {
+            const params = new URLSearchParams(window.location.search);
+            return params.get(name);
+        }
+
+        function autoRunFromQuery() {
+            const nbParam = getQueryParam('nb');
+            if (!nbParam) {
+                return;
+            }
+            const decoded = decodeURIComponent(nbParam);
+            
+            // URL이 포함된 텍스트는 저장하지 않음
+            if (decoded.includes('http://') || decoded.includes('https://')) {
+                console.log('URL이 포함된 텍스트는 저장하지 않습니다:', decoded);
+                return;
+            }
+            
+            const input = document.getElementById('textInput');
+            input.value = decoded;
+            
+            // category 파라미터 처리
+            const categoryParam = getQueryParam('category');
+            if (categoryParam) {
+                const categoryInput = document.getElementById('categoryInput');
+                categoryInput.value = decodeURIComponent(categoryParam);
+            }
+            
+            performSearch();
+        }
+
+        function handleAutoClose() {
+            const endParam = getQueryParam('end');
+            if (!endParam) {
+                return;
+            }
+
+            let seconds = 10;
+            const match = endParam.match(/^(\d+)s?$/);
+            if (match) {
+                seconds = parseInt(match[1]);
+            }
+
+            console.log(`Page will close in ${seconds} seconds`);
+            setTimeout(() => {
+                // 브라우저 보안 우회: opener를 설정하면 닫을 수 있음
+                window.opener = window;
+                window.close();
+                
+                // 닫기가 실패하면 빈 페이지로 이동
+                if (!window.closed) {
+                    window.location.href = 'about:blank';
+                }
+            }, seconds * 1000);
+        }
+
+        loadStatistics();
+        loadRecentCalculations();
+        autoRunFromQuery();
+        handleAutoClose();
+
+        // 단일 조회 (계산 ID로 조회)
+        const findByIdBtn = document.getElementById('findByIdBtn');
+        findByIdBtn.addEventListener('click', async () => {
+            const calculationId = document.getElementById('calculationIdInput').value.trim();
+
+            if (!calculationId) {
+                alert('계산 ID를 입력해주세요.');
+                return;
+            }
+
+            try {
+                resultsSection.style.display = 'block';
+                resultCount.textContent = '...';
+                resultsContainer.innerHTML = '<div class="text-center"><div class="spinner-border text-primary" role="status"><span class="visually-hidden">조회 중...</span></div></div>';
+
+                const response = await fetch(`/api/calculation/${calculationId}`);
+                const data = await response.json();
+
+                if (data.success && data.result) {
+                    displaySearchResults([data.result]);
+                } else {
+                    resultsContainer.innerHTML = `
+                        <div class="alert alert-warning">
+                            <i class="bi bi-exclamation-triangle"></i> 해당 ID의 계산 결과를 찾을 수 없습니다.
+                        </div>
+                    `;
+                    resultCount.textContent = '0';
+                }
+            } catch (error) {
+                console.error('단일 조회 오류:', error);
+                displayError('조회 중 오류가 발생했습니다.');
+            }
+        });
+
+        // 리스트 조회
+        const listAllBtn = document.getElementById('listAllBtn');
+        listAllBtn.addEventListener('click', async () => {
+            const limit = document.getElementById('listLimit').value;
+
+            try {
+                resultsSection.style.display = 'block';
+                resultCount.textContent = '...';
+                resultsContainer.innerHTML = '<div class="text-center"><div class="spinner-border text-info" role="status"><span class="visually-hidden">로딩 중...</span></div></div>';
+
+                const response = await fetch(`/api/calculations?limit=${limit}`);
+                const data = await response.json();
+
+                if (data.success && data.results.length > 0) {
+                    displaySearchResults(data.results);
+                } else {
+                    resultsContainer.innerHTML = `
+                        <div class="alert alert-info">
+                            <i class="bi bi-info-circle"></i> 저장된 계산 결과가 없습니다.
+                        </div>
+                    `;
+                    resultCount.textContent = '0';
+                }
+            } catch (error) {
+                console.error('리스트 조회 오류:', error);
+                displayError('리스트 조회 중 오류가 발생했습니다.');
+            }
+        });
+    </script>
+</body>
+</html>

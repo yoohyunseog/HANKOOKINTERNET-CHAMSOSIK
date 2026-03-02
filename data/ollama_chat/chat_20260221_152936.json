@@ -1,0 +1,18 @@
+{
+  "model": "mistral:latest",
+  "timestamp": "2026-02-21T15:29:36.742778",
+  "messages": [
+    {
+      "role": "user",
+      "content": "/트렌드검색반복 60 [오늘 주요 뉴스]"
+    },
+    {
+      "role": "user",
+      "content": "/반복 1 0 만화·애니"
+    },
+    {
+      "role": "user",
+      "content": "만화·애니"
+    }
+  ]
+}

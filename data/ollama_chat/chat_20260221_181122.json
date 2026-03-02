@@ -1,0 +1,18 @@
+{
+  "model": "mistral:latest",
+  "timestamp": "2026-02-21T18:11:22.771104",
+  "messages": [
+    {
+      "role": "user",
+      "content": "/트렌드검색반복 60 --infinite [오늘 주요 뉴스]"
+    },
+    {
+      "role": "user",
+      "content": "/반복 1 0 주술회전 3기 8화"
+    },
+    {
+      "role": "user",
+      "content": "주술회전 3기 8화"
+    }
+  ]
+}

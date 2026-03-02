@@ -202,9 +202,34 @@ echo.
 echo ✅ 키워드 수집 완료
 echo.
 
+REM 키워드를 JSON에 추가
+echo [5/5] 키워드를 트렌드 데이터에 추가 중...
+echo.
+
+if exist temp_bitcoin_keywords.txt (
+    echo 📊 비트코인 키워드 추가 중...
+    py 8BIT\add_keywords_to_trend.py temp_bitcoin_keywords.txt 비트코인
+    echo.
+)
+
+if exist temp_stock_keywords.txt (
+    echo 📈 주식 키워드 추가 중...
+    py 8BIT\add_keywords_to_trend.py temp_stock_keywords.txt 주식
+    echo.
+)
+
+if exist temp_animation_keywords.txt (
+    echo 🎬 애니메이션 키워드 추가 중...
+    py 8BIT\add_keywords_to_trend.py temp_animation_keywords.txt 애니메이션
+    echo.
+)
+
 REM 임시 파일 정리
 if exist temp_bitcoin_keywords.txt del temp_bitcoin_keywords.txt
 if exist temp_stock_keywords.txt del temp_stock_keywords.txt
 if exist temp_animation_keywords.txt del temp_animation_keywords.txt
 
-pause
+echo.
+echo ✅ 모든 작업이 완료되었습니다!
+echo 📁 데이터 위치: data\naver_creator_trends\latest_trend_data.json
+echo.

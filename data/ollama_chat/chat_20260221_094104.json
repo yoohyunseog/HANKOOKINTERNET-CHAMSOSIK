@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:120b-cloud",
+  "timestamp": "2026-02-21T09:41:04.813421",
+  "messages": [
+    {
+      "role": "user",
+      "content": "ollama list"
+    }
+  ]
+}

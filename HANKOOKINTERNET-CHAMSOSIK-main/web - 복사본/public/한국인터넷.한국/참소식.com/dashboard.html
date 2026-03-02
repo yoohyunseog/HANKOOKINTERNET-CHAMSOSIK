@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>통계 대시보드 - 참소식.com</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-2.26.0.min.js"></script>
+    <style>
+        :root {
+            --primary-color: #059669;
+            --dark-bg: #064e3b;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Noto Sans KR', sans-serif;
+            background: linear-gradient(135deg, var(--dark-bg) 0%, #065f46 100%);
+            min-height: 100vh;
+            padding: 20px 0;
+        }
+
+        .header {
+            background: linear-gradient(135deg, var(--primary-color) 0%, #10b981 100%);
+            color: white;
+            padding: 40px 0;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 40px rgba(5, 150, 105, 0.3);
+        }
+
+        .stat-card {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .stat-number {
+            font-size: 2.5em;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+
+        .stat-label {
+            color: #666;
+            font-size: 0.95em;
+            margin-top: 5px;
+        }
+
+        .chart-container {
+            position: relative;
+            height: 550px;
+            margin-bottom: 40px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .chart-wrapper {
+            flex: 1;
+            position: relative;
+            min-height: 350px;
+        }
+
+        .chart-title {
+            font-size: 1.3em;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .table-container {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            overflow-x: auto;
+        }
+
+        .keyword-badge {
+            background: var(--primary-color);
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            display: inline-block;
+            margin-right: 8px;
+            margin-bottom: 8px;
+        }
+
+        .region-section {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .region-title {
+            font-size: 1.1em;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 15px;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 10px;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: #999;
+        }
+
+        .spinner {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid var(--primary-color);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .footer {
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            text-align: center;
+            padding: 30px;
+            backdrop-filter: blur(10px);
+            margin-top: 50px;
+        }
+
+        @media (max-width: 768px) {
+            .chart-container {
+                height: 300px;
+            }
+
+            .stat-number {
+                font-size: 2em;
+            }
+
+            .chart-container[style*="height: 600px"] {
+                height: 400px !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 헤더 -->
+    <header class="header">
+        <div class="container">
+            <div class="text-center">
+                <h1 class="display-4"><i class="bi bi-bar-chart"></i> 통계 대시보드</h1>
+                <p class="lead mb-3">참소식.com 방문 및 키워드 통계</p>
+                <p>
+                    <a href="index.html" class="btn btn-light btn-sm me-2">
+                        <i class="bi bi-house"></i> 홈
+                    </a>
+                    <a href="database.html" class="btn btn-light btn-sm me-2">
+                        <i class="bi bi-database"></i> N/B 데이터베이스
+                    </a>
+                    <a href="http://한국인터넷.한국" class="btn btn-light btn-sm">
+                        <i class="bi bi-calculator"></i> N/B 계산기
+                    </a>
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <!-- 메인 콘텐츠 -->
+    <main class="container">
+        <!-- 요약 통계 -->
+        <div class="row mb-40">
+            <div class="col-md-6 col-lg-4">
+                <div class="stat-card">
+                    <div class="stat-number" id="totalVisits">0</div>
+                    <div class="stat-label">
+                        <i class="bi bi-eye"></i> 총 방문자
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="stat-card">
+                    <div class="stat-number" id="uniqueRegions">0</div>
+                    <div class="stat-label">
+                        <i class="bi bi-globe"></i> 방문 지역 수
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="stat-card">
+                    <div class="stat-number" id="totalKeywords">0</div>
+                    <div class="stat-label">
+                        <i class="bi bi-search"></i> 검색된 키워드
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 시간대별 방문자 차트 -->
+        <div class="chart-container">
+            <div class="chart-title"><i class="bi bi-clock-history"></i> 시간대별 방문자</div>
+            <div id="hourlyLoading" class="loading">
+                <div class="spinner"></div>
+                <p>로딩 중...</p>
+            </div>
+            <canvas id="hourlyChart" style="display: none;"></canvas>
+        </div>
+
+        <!-- 지역별 방문자 차트 -->
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="chart-container">
+                    <div class="chart-title"><i class="bi bi-map"></i> 지역별 방문자</div>
+                    <div id="regionLoading" class="loading">
+                        <div class="spinner"></div>
+                        <p>로딩 중...</p>
+                    </div>
+                    <canvas id="regionChart" style="display: none;"></canvas>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="chart-container">
+                    <div class="chart-title"><i class="bi bi-pie-chart"></i> 지역별 비율</div>
+                    <div id="regionPieLoading" class="loading">
+                        <div class="spinner"></div>
+                        <p>로딩 중...</p>
+                    </div>
+                    <canvas id="regionPieChart" style="display: none;"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <!-- 세계 지도 -->
+        <div class="chart-container" style="height: 600px;">
+            <div class="chart-title"><i class="bi bi-globe"></i> 세계 방문자 분포</div>
+            <div id="worldMapLoading" class="loading" style="flex: 1; display: flex; align-items: center; justify-content: center;">
+                <div>
+                    <div class="spinner"></div>
+                    <p>지도 로딩 중...</p>
+                </div>
+            </div>
+            <div id="worldMap" style="display: none; flex: 1;"></div>
+        </div>
+
+        <!-- 인기 키워드 테이블 -->
+        <div class="table-container">
+            <h3 class="chart-title"><i class="bi bi-fire"></i> 인기 키워드 TOP 20</h3>
+            <div id="keywordsLoading" class="loading">
+                <div class="spinner"></div>
+                <p>로딩 중...</p>
+            </div>
+            <table class="table table-hover" id="keywordsTable" style="display: none;">
+                <thead>
+                    <tr class="table-success">
+                        <th style="width: 10%;">순위</th>
+                        <th style="width: 50%;">키워드</th>
+                        <th style="width: 40%; text-align: right;">조회 수</th>
+                    </tr>
+                </thead>
+                <tbody id="keywordsTableBody">
+                </tbody>
+            </table>
+        </div>
+
+        <!-- 지역별 인기 키워드 -->
+        <h3 class="mb-4"><i class="bi bi-globe2"></i> 지역별 인기 키워드</h3>
+        <div id="regionKeywordsContainer">
+            <div class="loading">
+                <div class="spinner"></div>
+                <p>로딩 중...</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- 푸터 -->
+    <footer class="footer">
+        <p class="mb-1">&copy; 2026 참소식.com | Dashboard System</p>
+        <p class="mb-0">
+            <a href="http://한국인터넷.한국" class="text-white text-decoration-none">한국인터넷.한국</a> |
+            <a href="/" class="text-white text-decoration-none">홈</a>
+        </p>
+    </footer>
+
+    <!-- 지역 키워드 모달 -->
+    <div class="modal fade" id="regionKeywordModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header" style="background: linear-gradient(135deg, #059669 0%, #10b981 100%); color: white;">
+                    <h5 class="modal-title">
+                        <i class="bi bi-geo-alt"></i> <span id="modalRegionName"></span>의 인기 키워드
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body" id="modalKeywordsContainer">
+                    <p class="text-center text-muted">로딩 중...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const API_BASE = window.location.origin;
+        let hourlyChart, regionChart, regionPieChart;
+        let regionKeywordsData = {};
+
+        // 시간대별 방문자 로드
+        async function loadHourlyData() {
+            try {
+                const response = await fetch(`${API_BASE}/api/visits/hourly`);
+                const data = await response.json();
+
+                if (!data.success || !data.data || data.data.length === 0) {
+                    document.getElementById('hourlyLoading').innerHTML = '<p class="text-muted">아직 데이터가 없습니다.</p>';
+                    return;
+                }
+
+                const labels = data.data.map(d => d.hour);
+                const counts = data.data.map(d => d.count);
+
+                document.getElementById('hourlyLoading').style.display = 'none';
+                document.getElementById('hourlyChart').style.display = 'block';
+
+                const ctx = document.getElementById('hourlyChart').getContext('2d');
+                hourlyChart = new Chart(ctx, {
+                    type: 'line',
+                    data: {
+                        labels: labels,
+                        datasets: [{
+                            label: '방문자 수',
+                            data: counts,
+                            borderColor: '#059669',
+                            backgroundColor: 'rgba(5, 150, 105, 0.1)',
+                            borderWidth: 3,
+                            fill: true,
+                            tension: 0.4,
+                            pointRadius: 5,
+                            pointBackgroundColor: '#059669',
+                            pointHoverBackgroundColor: '#047857'
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            legend: {
+                                display: true,
+                                labels: { font: { size: 12 } }
+                            }
+                        },
+                        scales: {
+                            y: {
+                                beginAtZero: true,
+                                ticks: { stepSize: 1 }
+                            }
+                        }
+                    }
+                });
+            } catch (error) {
+                console.error('시간대별 데이터 로드 오류:', error);
+                document.getElementById('hourlyLoading').innerHTML = '<p class="text-danger">데이터를 불러올 수 없습니다.</p>';
+            }
+        }
+
+        // 지역별 방문자 로드
+        async function loadRegionData() {
+            try {
+                const response = await fetch(`${API_BASE}/api/visits/region`);
+                const data = await response.json();
+
+                if (!data.success || !data.data || data.data.length === 0) {
+                    document.getElementById('regionLoading').innerHTML = '<p class="text-muted">아직 데이터가 없습니다.</p>';
+                    document.getElementById('regionPieLoading').innerHTML = '<p class="text-muted">아직 데이터가 없습니다.</p>';
+                    document.getElementById('worldMapLoading').innerHTML = '<p class="text-muted">아직 데이터가 없습니다.</p>';
+                    return;
+                }
+
+                const labels = data.data.map(d => d.region);
+                const counts = data.data.map(d => d.count);
+                const totalVisits = counts.reduce((a, b) => a + b, 0);
+                document.getElementById('totalVisits').textContent = totalVisits.toLocaleString('ko-KR');
+                document.getElementById('uniqueRegions').textContent = data.data.length;
+
+                document.getElementById('regionLoading').style.display = 'none';
+                document.getElementById('regionChart').style.display = 'block';
+                document.getElementById('regionPieLoading').style.display = 'none';
+                document.getElementById('regionPieChart').style.display = 'block';
+                document.getElementById('worldMapLoading').style.display = 'none';
+                document.getElementById('worldMap').style.display = 'block';
+
+                // 막대 차트
+                const ctx1 = document.getElementById('regionChart').getContext('2d');
+                regionChart = new Chart(ctx1, {
+                    type: 'bar',
+                    data: {
+                        labels: labels,
+                        datasets: [{
+                            label: '방문자 수',
+                            data: counts,
+                            backgroundColor: '#059669',
+                            borderColor: '#047857',
+                            borderWidth: 1
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            legend: { display: true }
+                        },
+                        scales: {
+                            y: { beginAtZero: true }
+                        }
+                    }
+                });
+
+                // 파이 차트
+                const ctx2 = document.getElementById('regionPieChart').getContext('2d');
+                regionPieChart = new Chart(ctx2, {
+                    type: 'pie',
+                    data: {
+                        labels: labels,
+                        datasets: [{
+                            data: counts,
+                            backgroundColor: [
+                                '#059669', '#10b981', '#34d399', '#6ee7b7', '#a7f3d0',
+                                '#d1fae5', '#ecfdf5', '#fbbf24', '#f59e0b', '#ec4899'
+                            ],
+                            borderColor: '#ffffff',
+                            borderWidth: 2
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            legend: {
+                                position: 'bottom',
+                                labels: { font: { size: 12 } }
+                            }
+                        }
+                    }
+                });
+
+                // 세계 지도 (Choropleth)
+                loadWorldMap(data.data);
+            } catch (error) {
+                console.error('지역 데이터 로드 오류:', error);
+                document.getElementById('regionLoading').innerHTML = '<p class="text-danger">데이터를 불러올 수 없습니다.</p>';
+            }
+        }
+
+        // 세계 지도 로드
+        function loadWorldMap(regionData) {
+            try {
+                // 국가 코드 매핑 (지역명 -> ISO 코드)
+                const countryMap = {
+                    '한국': 'KOR',
+                    'KR': 'KOR',
+                    '미국': 'USA',
+                    'US': 'USA',
+                    '중국': 'CHN',
+                    'CN': 'CHN',
+                    '일본': 'JPN',
+                    'JP': 'JPN',
+                    '인도': 'IND',
+                    'IN': 'IND',
+                    '독일': 'DEU',
+                    'DE': 'DEU',
+                    '프랑스': 'FRA',
+                    'FR': 'FRA',
+                    '영국': 'GBR',
+                    'GB': 'GBR',
+                    '캐나다': 'CAN',
+                    'CA': 'CAN',
+                    '호주': 'AUS',
+                    'AU': 'AUS',
+                    '브라질': 'BRA',
+                    'BR': 'BRA'
+                };
+
+                // 역매핑 (ISO 코드 -> 지역명)
+                const reverseCountryMap = {};
+                Object.entries(countryMap).forEach(([region, code]) => {
+                    reverseCountryMap[code] = region;
+                });
+
+                const locations = [];
+                const counts = [];
+                const texts = [];
+
+                regionData.forEach(item => {
+                    const code = countryMap[item.region] || item.region;
+                    locations.push(code);
+                    counts.push(item.count);
+                    texts.push(`${item.region}: ${item.count}명`);
+                });
+
+                const mapData = [{
+                    type: 'choropleth',
+                    locations: locations,
+                    z: counts,
+                    text: texts,
+                    hovertemplate: '<b>%{text}</b><extra></extra>',
+                    colorscale: 'Greens',
+                    autocolorscale: false,
+                    reversescale: false,
+                    marker: {
+                        line: {
+                            color: 'darkgray',
+                            width: 0.5
+                        }
+                    },
+                    colorbar: {
+                        title: '방문자 수',
+                        thickness: 15,
+                        len: 0.7
+                    }
+                }];
+
+                const layout = {
+                    title: '세계 방문자 분포',
+                    geo: {
+                        projection_type: 'natural earth',
+                        showland: true,
+                        landcolor: 'rgb(243, 243, 243)',
+                        coastcolor: 'rgb(204, 204, 204)'
+                    },
+                    margin: { l: 0, r: 0, t: 40, b: 0 }
+                };
+
+                Plotly.newPlot('worldMap', mapData, layout, { responsive: true });
+
+                // 지도 클릭 이벤트 처리
+                const worldMapEl = document.getElementById('worldMap');
+                worldMapEl.on('plotly_click', function(data) {
+                    const clickedCountryCode = data.points[0].location;
+                    const regionName = reverseCountryMap[clickedCountryCode] || clickedCountryCode;
+                    
+                    // 해당 지역의 키워드가 있으면 모달 표시
+                    if (regionKeywordsData[regionName]) {
+                        showRegionKeywords(regionName, regionKeywordsData[regionName]);
+                    }
+                });
+
+                setTimeout(() => Plotly.Plots.resize('worldMap'), 100);
+            } catch (error) {
+                console.error('세계 지도 로드 오류:', error);
+                document.getElementById('worldMap').innerHTML = '<p class="text-warning">지도를 불러올 수 없습니다.</p>';
+            }
+        }
+
+        // 지역 키워드 모달 표시
+        function showRegionKeywords(regionName, keywords) {
+            document.getElementById('modalRegionName').textContent = regionName;
+            const container = document.getElementById('modalKeywordsContainer');
+            container.innerHTML = keywords.length > 0 ? `
+                <div>
+                    ${keywords.map(k => `
+                        <span class="keyword-badge" style="margin: 5px;">
+                            ${escapeHtml(k.keyword)} <strong>${k.count}</strong>
+                        </span>
+                    `).join('')}
+                </div>
+            ` : '<p class="text-muted">검색된 키워드가 없습니다.</p>';
+            
+            new bootstrap.Modal(document.getElementById('regionKeywordModal')).show();
+        }
+
+        // 인기 키워드 로드
+        async function loadKeywordsData() {
+            try {
+                const response = await fetch(`${API_BASE}/api/keywords/top?limit=20`);
+                const data = await response.json();
+
+                if (!data.success || !data.data || data.data.length === 0) {
+                    document.getElementById('keywordsLoading').innerHTML = '<p class="text-muted">아직 데이터가 없습니다.</p>';
+                    return;
+                }
+
+                document.getElementById('totalKeywords').textContent = data.data.length;
+                document.getElementById('keywordsLoading').style.display = 'none';
+                document.getElementById('keywordsTable').style.display = 'table';
+
+                const tbody = document.getElementById('keywordsTableBody');
+                tbody.innerHTML = data.data.map((item, index) => `
+                    <tr>
+                        <td><strong>${index + 1}</strong></td>
+                        <td>${escapeHtml(item.keyword)}</td>
+                        <td style="text-align: right;"><span class="badge bg-success">${item.count}</span></td>
+                    </tr>
+                `).join('');
+            } catch (error) {
+                console.error('키워드 데이터 로드 오류:', error);
+                document.getElementById('keywordsLoading').innerHTML = '<p class="text-danger">데이터를 불러올 수 없습니다.</p>';
+            }
+        }
+
+        // 지역별 인기 키워드 로드
+        async function loadRegionKeywordsData() {
+            try {
+                const response = await fetch(`${API_BASE}/api/keywords/by-region?limit=10`);
+                const data = await response.json();
+
+                if (!data.success || !data.data || Object.keys(data.data).length === 0) {
+                    document.getElementById('regionKeywordsContainer').innerHTML = '<p class="text-muted">아직 데이터가 없습니다.</p>';
+                    return;
+                }
+
+                // 전역 변수에 데이터 저장 (지도 클릭용)
+                regionKeywordsData = data.data;
+
+                const container = document.getElementById('regionKeywordsContainer');
+                container.innerHTML = '';
+
+                Object.entries(data.data).forEach(([region, keywords]) => {
+                    const section = document.createElement('div');
+                    section.className = 'region-section';
+                    section.innerHTML = `
+                        <div class="region-title">
+                            <i class="bi bi-geo-alt"></i> ${escapeHtml(region)}
+                        </div>
+                        <div>
+                            ${keywords.map(k => `
+                                <span class="keyword-badge">
+                                    ${escapeHtml(k.keyword)} <strong>${k.count}</strong>
+                                </span>
+                            `).join('')}
+                        </div>
+                    `;
+                    container.appendChild(section);
+                });
+            } catch (error) {
+                console.error('지역별 키워드 데이터 로드 오류:', error);
+                document.getElementById('regionKeywordsContainer').innerHTML = '<p class="text-danger">데이터를 불러올 수 없습니다.</p>';
+            }
+        }
+
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+
+        // 페이지 로드 시 모든 데이터 로드
+        document.addEventListener('DOMContentLoaded', () => {
+            loadHourlyData();
+            loadRegionData();
+            loadKeywordsData();
+            loadRegionKeywordsData();
+            
+            // 30초마다 자동새로고침
+            setInterval(async () => {
+                console.log('[Dashboard] Auto-refreshing data...');
+                await loadHourlyData();
+                await loadRegionData();
+                await loadKeywordsData();
+                await loadRegionKeywordsData();
+            }, 30000);
+        });
+    </script>
+</body>
+</html>

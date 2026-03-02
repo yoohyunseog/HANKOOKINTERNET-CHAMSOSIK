@@ -1,0 +1,18 @@
+{
+  "name": "nb-calculator-web",
+  "version": "1.0.0",
+  "description": "N/B MAX, N/B MIN 계산 웹사이트",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": ["nb", "calculator"],
+  "author": "8BIT Project",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "body-parser": "^1.20.2",
+    "geoip-lite": "^1.4.7"
+  }
+}

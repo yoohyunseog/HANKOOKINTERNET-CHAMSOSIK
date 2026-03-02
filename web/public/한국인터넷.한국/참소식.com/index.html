@@ -6,6 +6,16 @@
   
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="참소식.com - 최신 뉴스와 트렌드 데이터베이스">
+  
+  <!-- Open Graph 메타 태그 -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="참소식.com">
+  <meta property="og:url" content="https://참소식.com/">
+  <meta property="og:title" content="참소식.com - N/B 데이터베이스">
+  <meta property="og:description" content="최신 뉴스와 트렌드 데이터베이스">
+  <meta property="og:image" content="/img/d5b92548-136d-42ad-a139-6e774a511e81.png">
+  
   <title>참소식.com - N/B 데이터베이스</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
@@ -115,7 +125,14 @@
     .masonry-item.new-item {
       opacity: 0;
       transform: translateY(30px) scale(0.95);
-      animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+      animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards, highlightBg 1.2s ease;
+      background: #e0ffe0 !important;
+      transition: background 1.2s;
+    @keyframes highlightBg {
+      0% { background: #e0ffe0; }
+      80% { background: #e0ffe0; }
+      100% { background: white; }
+    }
     }
 
     @keyframes slideInUp {
@@ -196,6 +213,7 @@
       display: block;
       margin-bottom: 10px;
       cursor: pointer;
+      text-decoration: none;
     }
 
     .title-text:hover {
@@ -295,6 +313,7 @@
         <button class="category-btn" data-category="건강">건강</button>
         <button class="category-btn" data-category="교육">교육</button>
         <button class="category-btn" data-category="일반">일반</button>
+        <button class="category-btn" data-category="비트코인">비트코인</button>
         <button class="category-btn reset" onclick="window.location.href='../'">🔄 초기화</button>
       </div>
     </div>
@@ -370,6 +389,28 @@
       });
     }
 
+    // 동적 메타 태그 업데이트
+    function updateMetaTags(item) {
+      if (!item) return;
+      
+      const title = cleanInputText(item.input);
+      const category = item.category || '일반';
+      const description = `${category} | 조회수 ${item.view_count || 0}회 | MAX: ${item.results?.[0]?.nb_max || 0}, MIN: ${item.results?.[0]?.nb_min || 0}`;
+      const imageUrl = '/img/d5b92548-136d-42ad-a139-6e774a511e81.png'; // 고정 이미지
+      
+      // 기본 메타 태그 업데이트
+      document.title = `${title} | 참소식.com`;
+      document.querySelector('meta[name="description"]').setAttribute('content', description);
+      
+      // Open Graph 메타 태그 업데이트
+      document.querySelector('meta[property="og:title"]').setAttribute('content', title);
+      document.querySelector('meta[property="og:description"]').setAttribute('content', description);
+      document.querySelector('meta[property="og:image"]').setAttribute('content', imageUrl);
+      document.querySelector('meta[property="og:url"]').setAttribute('content', window.location.href);
+      
+      console.log('[메타 태그] 업데이트:', { title, category, description });
+    }
+
     // 카테고리 버튼 클릭 이벤트 설정
     function setupCategoryButtonListeners() {
       document.getElementById('category-buttons').addEventListener('click', function(e) {
@@ -443,7 +484,7 @@
             </div>
             <div class="mb-2">
               ${item.type === 'text'
-                ? `<span class="title-text" data-item-id="${item.id || item.calculation_id}" data-item-text="${escapeHtml(cleanInputText(item.input))}" data-item-index="${index}" onclick="incrementViewCount(this.getAttribute('data-item-id')); searchByKeyword(this.getAttribute('data-item-text'), ${index}, ${nbMax}, ${nbMin})">${escapeHtml(cleanInputText(item.input))}</span>`
+                ? `<a href="?search=${encodeURIComponent(cleanInputText(item.input))}&selected_max=${nbMax}&selected_min=${nbMin}" class="title-text" data-item-id="${item.id || item.calculation_id}" onclick="incrementViewCount(this.getAttribute('data-item-id'))">${escapeHtml(cleanInputText(item.input))}</a>`
                 : `<span class="fw-bold">${escapeHtml(`[${item.input.join(', ')}]`)}</span>`
               }
             </div>
@@ -485,6 +526,45 @@
     }
 
     async function loadRecentData() {
+      window._lastRecentId = null; // 실시간 업데이트용
+      // 최신 게시물 추가 및 날짜순 재정렬
+      try {
+        const response = await fetch(`${API_BASE}/api/recent?limit=1`);
+        if (!response.ok) {
+          console.warn(`[loadRecentData] API 응답 실패: ${response.status} ${response.statusText}`);
+          return;
+        }
+        const data = await response.json();
+        if (!data.results || data.results.length === 0) return;
+        const newItem = data.results[0];
+        // 이미 존재하는지 체크 (id 기준)
+        if (recentDataCache.some(item => item.id === newItem.id)) {
+          console.log('[loadRecentData] 중복 게시물입니다:', newItem.id);
+          return;
+        }
+        // 최신 게시물 추가
+        recentDataCache.unshift(newItem);
+        // 최대 10개 유지
+        if (recentDataCache.length > 10) recentDataCache.pop();
+        // 날짜순 재정렬
+        recentDataCache.sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp));
+        // Masonry 테이블에 반영
+        renderFilteredData('recent-data', recentDataCache, false);
+        // 추가된 첫 번째 masonry-item에 애니메이션 효과 적용
+        setTimeout(() => {
+          const container = document.getElementById('recent-data');
+          const firstItem = container.querySelector('.masonry-item');
+          if (firstItem) {
+            firstItem.classList.add('new-item');
+            setTimeout(() => {
+              firstItem.classList.remove('new-item');
+            }, 1200);
+          }
+        }, 100);
+        console.log('[loadRecentData] 최신 게시물 추가 및 날짜순 정렬:', recentDataCache.map(item => item.timestamp));
+      } catch (error) {
+        console.error('[loadRecentData] 오류:', error);
+      }
       try {
         // URL 파라미터 확인
         const urlParams = new URLSearchParams(window.location.search);
@@ -501,6 +581,10 @@
             fetch(`${API_BASE}/api/recent?limit=100`)
           ]);
           
+          if (!searchResponse.ok || !recentResponse.ok) {
+            throw new Error(`API 응답 실패: search=${searchResponse.status}, recent=${recentResponse.status}`);
+          }
+          
           const searchData = await searchResponse.json();
           const recentData = await recentResponse.json();
           
@@ -516,12 +600,20 @@
           const targetMax = parseFloat(selectedMax);
           const targetMin = parseFloat(selectedMin);
           
+          // 메타 태그 업데이트
+          if (clickedItem) {
+            updateMetaTags(clickedItem);
+          }
+          
           // 유사도 기반 정렬 수행
           sortBySimilarityWithData('recent-data', recentDataCache, targetCategory, targetMax, targetMin, false);
           updateCategoryCount(recentDataCache);
         } else {
           // 일반 모드 - limit 100
           response = await fetch(`${API_BASE}/api/recent?limit=100`);
+          if (!response.ok) {
+            throw new Error(`API 응답 실패: ${response.status} ${response.statusText}`);
+          }
           data = await response.json();
           document.getElementById('recent-count').textContent = `${data.count}개`;
           
@@ -530,20 +622,71 @@
           updateCategoryCount(recentDataCache);
         }
       } catch (error) {
-        document.getElementById('recent-data').innerHTML = '<div class="alert alert-danger"><i class="bi bi-exclamation-triangle"></i> 데이터를 불러올 수 없습니다.</div>';
+        console.error('[loadRecentData] 오류:', error);
+        
+        // 기존 캐시가 있으면 계속 표시
+        if (recentDataCache.length > 0) {
+          console.warn('[loadRecentData] API 실패하지만 기존 데이터 유지');
+          renderFilteredData('recent-data', recentDataCache, false);
+          
+          // 상단에 경고 메시지 추가
+          const alertDiv = document.createElement('div');
+          alertDiv.className = 'alert alert-warning alert-dismissible fade show mx-3 mt-2';
+          alertDiv.innerHTML = `
+            <i class="bi bi-exclamation-circle"></i> 
+            <strong>서버 오류:</strong> 최신 데이터를 불러올 수 없습니다. (기존 데이터 표시 중)
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+          `;
+          document.getElementById('recent-data').parentElement.insertBefore(alertDiv, document.getElementById('recent-data'));
+          
+          // 5초 후 자동으로 메시지 제거
+          setTimeout(() => {
+            alertDiv.remove();
+          }, 5000);
+        } else {
+          // 캐시가 없으면 에러 메시지만 표시
+          document.getElementById('recent-data').innerHTML = `<div class="alert alert-danger"><i class="bi bi-exclamation-triangle"></i> 데이터를 불러올 수 없습니다.<br><small>오류: ${error.message}</small></div>`;
+        }
       }
     }
 
     async function loadPopularData() {
       try {
         const response = await fetch(`${API_BASE}/api/most-viewed?limit=100`);
+        if (!response.ok) {
+          throw new Error(`API 응답 실패: ${response.status} ${response.statusText}`);
+        }
         const data = await response.json();
         popularDataCache = data.results;
         document.getElementById('popular-count').textContent = `${data.count}개`;
         renderFilteredData('popular-data', popularDataCache, true);
         updateCategoryCount(popularDataCache);
       } catch (error) {
-        document.getElementById('popular-data').innerHTML = '<div class="alert alert-danger"><i class="bi bi-exclamation-triangle"></i> 데이터를 불러올 수 없습니다.</div>';
+        console.error('[loadPopularData] 오류:', error);
+        
+        // 기존 캐시가 있으면 계속 표시
+        if (popularDataCache.length > 0) {
+          console.warn('[loadPopularData] API 실패하지만 기존 데이터 유지');
+          renderFilteredData('popular-data', popularDataCache, true);
+          
+          // 상단에 경고 메시지 추가
+          const alertDiv = document.createElement('div');
+          alertDiv.className = 'alert alert-warning alert-dismissible fade show mx-3 mt-2';
+          alertDiv.innerHTML = `
+            <i class="bi bi-exclamation-circle"></i> 
+            <strong>서버 오류:</strong> 최신 데이터를 불러올 수 없습니다. (기존 데이터 표시 중)
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+          `;
+          document.getElementById('popular-data').parentElement.insertBefore(alertDiv, document.getElementById('popular-data'));
+          
+          // 5초 후 자동으로 메시지 제거
+          setTimeout(() => {
+            alertDiv.remove();
+          }, 5000);
+        } else {
+          // 캐시가 없으면 에러 메시지만 표시
+          document.getElementById('popular-data').innerHTML = `<div class="alert alert-danger"><i class="bi bi-exclamation-triangle"></i> 데이터를 불러올 수 없습니다.<br><small>오류: ${error.message}</small></div>`;
+        }
       }
     }
 
@@ -700,7 +843,7 @@
                 </div>
                 <div class="mb-2">
                   ${item.type === 'text'
-                    ? `<span class="title-text" data-item-id="${item.id || item.calculation_id}" data-item-text="${escapeHtml(cleanInputText(item.input))}" data-item-index="${item.originalIndex}" onclick="incrementViewCount(this.getAttribute('data-item-id')); searchByKeyword(this.getAttribute('data-item-text'), ${item.originalIndex}, ${nbMax}, ${nbMin})">${escapeHtml(cleanInputText(item.input))}</span>`
+                    ? `<a href="?search=${encodeURIComponent(cleanInputText(item.input))}&selected_max=${nbMax}&selected_min=${nbMin}" class="title-text" data-item-id="${item.id || item.calculation_id}" onclick="incrementViewCount(this.getAttribute('data-item-id'))">${escapeHtml(cleanInputText(item.input))}</a>`
                     : `<span class="fw-bold">${escapeHtml(`[${item.input.join(', ')}]`)}</span>`
                   }
                 </div>
@@ -737,10 +880,12 @@
       });
     }
 
+    loadRecentData();
+
     // 초기 로드
     document.addEventListener('DOMContentLoaded', function() {
       setupCategoryButtonListeners();
-      loadRecentData();
+      setInterval(loadRecentData, 5000); // 5초마다 실시간 업데이트
     });
 
     // 브라우저 뒤로/앞으로 가기 지원

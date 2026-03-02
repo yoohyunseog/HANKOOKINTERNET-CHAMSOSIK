@@ -1,0 +1,18 @@
+{
+  "model": "llama2:latest",
+  "timestamp": "2026-02-22T00:36:13.189921",
+  "messages": [
+    {
+      "role": "user",
+      "content": "/트렌드검색반복 60 --infinite [오늘 주요 뉴스]"
+    },
+    {
+      "role": "user",
+      "content": "/반복 1 0 빈센트앤코"
+    },
+    {
+      "role": "user",
+      "content": "빈센트앤코"
+    }
+  ]
+}

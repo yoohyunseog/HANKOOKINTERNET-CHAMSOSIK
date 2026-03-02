@@ -1,9 +1,14 @@
+// ...existing code...
+// 한국 IP 여부 확인 API
+// (app이 선언된 후 아래에 위치해야 함)
+// ...existing code...
 const express = require('express');
 const bodyParser = require('body-parser');
 const path = require('path');
-const fs = require('fs');
+const fs = require('fs'); // fs require를 path와 함께 위쪽에 위치
 const { calculateNB } = require('./calculate');
 const storage = require('./storage');
+const config = require('./config.json');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -11,27 +16,90 @@ const OLLAMA_BASE_URL = process.env.OLLAMA_BASE_URL || 'http://localhost:11434';
 const TREND_DATA_PATH = path.join(__dirname, '..', 'data', 'naver_creator_trends', 'latest_trend_data.json');
 const DEFAULT_MODEL = process.env.OLLAMA_MODEL || 'llama3';
 
-// config 로드
-let config = { allowedDomains: [] };
-const configPath = path.join(__dirname, 'config.json');
-console.log(`[CONFIG] 설정 파일 경로: ${configPath}`);
+// /api/recent 응답 캐시 (JSON 파일, limit별)
+const RECENT_CACHE_TTL_MS = parseInt(process.env.RECENT_CACHE_TTL_MS || '10000', 10);
+const RECENT_CACHE_TTL_LIMIT_100_MS = parseInt(process.env.RECENT_CACHE_TTL_LIMIT_100_MS || '60000', 10);
+const RECENT_CACHE_TTL_LIMIT_1_MS = parseInt(process.env.RECENT_CACHE_TTL_LIMIT_1_MS || '10000', 10);
+const RECENT_CACHE_DIR = path.join(__dirname, '..', 'data', 'cache');
+const RECENT_CACHE_FILE_PATH = path.join(RECENT_CACHE_DIR, 'recent_api_cache.json');
 
-if (fs.existsSync(configPath)) {
-    try {
-        const configContent = fs.readFileSync(configPath, 'utf-8');
-        config = JSON.parse(configContent);
-        console.log(`[CONFIG] ✓ 설정 파일 로드 성공`);
-        console.log(`[CONFIG] allowedDomains: ${JSON.stringify(config.allowedDomains)}`);
-    } catch (err) {
-        console.error('[CONFIG] ✗ 설정 파일 로드 오류:', err.message);
-        console.error('[CONFIG] 오류 상세:', err);
-    }
-} else {
-    console.warn(`[CONFIG] ✗ 설정 파일이 존재하지 않습니다: ${configPath}`);
+function getRecentCacheTtlMs(limit) {
+    if (limit === 100) return RECENT_CACHE_TTL_LIMIT_100_MS;
+    if (limit === 1) return RECENT_CACHE_TTL_LIMIT_1_MS;
+    return RECENT_CACHE_TTL_MS;
 }
+
+function ensureRecentCacheDir() {
+    if (!fs.existsSync(RECENT_CACHE_DIR)) {
+        fs.mkdirSync(RECENT_CACHE_DIR, { recursive: true });
+    }
+}
+
+function ensureRecentCacheFile() {
+    try {
+        ensureRecentCacheDir();
+        if (!fs.existsSync(RECENT_CACHE_FILE_PATH)) {
+            fs.writeFileSync(RECENT_CACHE_FILE_PATH, '{}', 'utf8');
+            console.log(`[recent-cache] 캐시 파일 생성: ${RECENT_CACHE_FILE_PATH}`);
+        }
+    } catch (error) {
+        console.error('[recent-cache] 캐시 파일 초기화 오류:', error.message);
+    }
+}
+
+function readRecentFileCache() {
+    try {
+        ensureRecentCacheFile();
+        if (!fs.existsSync(RECENT_CACHE_FILE_PATH)) {
+            return {};
+        }
+        const raw = fs.readFileSync(RECENT_CACHE_FILE_PATH, 'utf8');
+        if (!raw) return {};
+        return JSON.parse(raw);
+    } catch (error) {
+        console.error('[recent-cache] 파일 읽기 오류:', error.message);
+        return {};
+    }
+}
+
+function writeRecentFileCache(cacheObject) {
+    try {
+        ensureRecentCacheFile();
+        fs.writeFileSync(RECENT_CACHE_FILE_PATH, JSON.stringify(cacheObject, null, 2), 'utf8');
+        return true;
+    } catch (error) {
+        console.error('[recent-cache] 파일 쓰기 오류:', error.message);
+        console.error('[recent-cache] 쓰기 대상 경로:', RECENT_CACHE_FILE_PATH);
+        return false;
+    }
+}
+
+// MMDB 파일 경로 선언
+const MMDB_PATH = path.join(__dirname, 'GeoLite2-Country.mmdb');
+
+// GeoIP MMDB 라이브러리 추가
+const maxmind = require('maxmind');
+let geoipLookup = null;
+if (fs.existsSync(MMDB_PATH)) {
+    maxmind.open(MMDB_PATH)
+        .then(lookup => {
+            geoipLookup = lookup;
+            console.log('[GeoIP] MMDB 로드 성공');
+        })
+        .catch(err => {
+            console.error('[GeoIP] MMDB 로드 실패:', err);
+        });
+} else {
+    console.warn(`[GeoIP] MMDB 파일이 없습니다. 다운로드 필요: ${MMDB_PATH}`);
+    // MMDB 다운로드 안내
+    console.warn('GeoLite2-Country.mmdb 파일을 https://dev.maxmind.com/geoip/geolite2-free-geolocation-data?lang=ko 에서 다운로드 후 server.js와 같은 폴더에 넣으세요.');
+}
+
 
 // 스토리지 초기화
 storage.initStorage();
+ensureRecentCacheFile();
+console.log(`[recent-cache] 사용 경로: ${RECENT_CACHE_FILE_PATH}`);
 
 // 도메인 검증 미들웨어 (CORS 전에 실행)
 app.use((req, res, next) => {
@@ -345,15 +413,38 @@ app.get('/api/search', async (req, res) => {
 app.get('/api/recent', async (req, res) => {
     try {
         const limit = parseInt(req.query.limit) || 10;
+        const ttlMs = getRecentCacheTtlMs(limit);
+        const now = Date.now();
+        const cacheKey = String(limit);
+        const cacheStore = readRecentFileCache();
+        const cached = cacheStore[cacheKey];
+
+        // TTL 이내 캐시 응답
+        if (cached && now - cached.cachedAt < ttlMs) {
+            return res.json(cached.payload);
+        }
+
         const results = await storage.getRecentCalculations(limit);
-        
-        return res.json({
+        const payload = {
             success: true,
             count: results.length,
             results: results
-        });
+        };
+
+        cacheStore[cacheKey] = { cachedAt: now, payload };
+        writeRecentFileCache(cacheStore);
+        return res.json(payload);
     } catch (error) {
         console.error('최근 결과 조회 오류:', error);
+
+        // 오류 시 stale 캐시 fallback
+        const limit = parseInt(req.query.limit) || 10;
+        const staleStore = readRecentFileCache();
+        const stale = staleStore[String(limit)];
+        if (stale && stale.payload) {
+            return res.status(200).json(stale.payload);
+        }
+
         res.status(500).json({ error: error.message });
     }
 });
@@ -798,7 +889,7 @@ app.get('/api/keywords/by-region', async (req, res) => {
 });
 
 // 서버 시작
-app.listen(PORT, () => {
+const server = app.listen(PORT, () => {
     console.log(`
 ╔════════════════════════════════════════════════════════════════════╗
 ║           N/B MAX, N/B MIN 계산 웹서버                           ║
@@ -821,4 +912,23 @@ app.listen(PORT, () => {
 
 💡 종료: Ctrl+C
     `);
+
+    // 1시간(3600000ms) 마다 자동 재부팅
+    const ONE_HOUR = 3600000; // 1시간 = 3600000ms
+    setInterval(() => {
+        console.log('\n⚠️  [자동 재부팅] 1시간 경과 - 서버 재부팅 시작...');
+        console.log(`⏰ 재부팅 시간: ${new Date().toLocaleString('ko-KR')}`);
+        
+        // 서버 종료 (PM2/배치파일이 자동으로 재시작)
+        server.close(() => {
+            console.log('✅ 서버 종료 완료. 재시작 대기 중...');
+            process.exit(0);
+        });
+        
+        // 강제 종료 (30초 후에도 안 닫혀있으면)
+        setTimeout(() => {
+            console.error('❌ 강제 종료 (30초 타임아웃)');
+            process.exit(1);
+        }, 30000);
+    }, ONE_HOUR);
 });

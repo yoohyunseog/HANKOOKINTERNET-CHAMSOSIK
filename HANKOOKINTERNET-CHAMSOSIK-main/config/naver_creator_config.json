@@ -1,0 +1,20 @@
+{
+  "naver_id": "your_naver_id",
+  "naver_password": "your_password",
+  "blog_id": "dbghwns2",
+  "schedule": {
+    "enabled": true,
+    "interval_minutes": 60,
+    "start_time": "09:00",
+    "end_time": "22:00"
+  },
+  "output": {
+    "save_json": true,
+    "save_csv": true,
+    "save_screenshot": true
+  },
+  "chrome_driver": {
+    "headless": false,
+    "window_size": "1920,1080"
+  }
+}
