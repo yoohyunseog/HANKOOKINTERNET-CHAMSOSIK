@@ -1,0 +1,66 @@
+{
+  "model": "gpt-oss:120b-cloud",
+  "timestamp": "2026-02-19T22:28:57.234573",
+  "messages": [
+    {
+      "role": "user",
+      "content": "/트렌드검색반복 60 [오늘 주요 뉴스]"
+    },
+    {
+      "role": "user",
+      "content": "/반복 1 0 올팜 맞팜"
+    },
+    {
+      "role": "user",
+      "content": "올팜 맞팜"
+    },
+    {
+      "role": "assistant",
+      "content": "검색 결과에 “올팜 맞팜”에 관한 구체적인 뉴스·웹·동영상 내용이 없습니다. 현재 제공된 자료에서는 해당 키워드와 직접 연결된 정보가 확인되지 않으니, 보다 정확한 검색어를 사용하거나 추가적인 자료를 확인해 보시기 바랍니다."
+    },
+    {
+      "role": "user",
+      "content": "/반복 1 0 닌텐도 스위치2"
+    },
+    {
+      "role": "user",
+      "content": "닌텐도 스위치2"
+    },
+    {
+      "role": "assistant",
+      "content": "현재 검색 결과에는 닌텐도 스위치 2에 대한 구체적인 뉴스나 발표 내용이 없습니다. 확인된 항목은 “서비스 영역”과 “옵션 초기화” 정도이며, 상세한 정보는 별도 검색이 필요합니다."
+    },
+    {
+      "role": "user",
+      "content": "/반복 1 0 밸런스게임"
+    },
+    {
+      "role": "user",
+      "content": "밸런스게임"
+    },
+    {
+      "role": "assistant",
+      "content": "검색 결과에는 “서비스 영역”, “옵션 초기화”라는 일반적인 항목과 https://www.youtube.com/results?search_query=빙룬스게임 이라는 유튜브 검색 링크만 포함돼 있습니다. 따라서 “밸런스게임”에 대한 구체적인 내용이나 수치는 제공되지 않았습니다."
+    },
+    {
+      "role": "user",
+      "content": "/반복 1 0 리니지 클래식"
+    },
+    {
+      "role": "user",
+      "content": "리니지 클래식"
+    },
+    {
+      "role": "assistant",
+      "content": "현재 검색 결과에서는 리니지 클래식에 대한 구체적인 뉴스·서비스 정보가 없습니다. 관련 영상은 YouTube에서 “리니지 클래식”을 검색해 확인할 수 있습니다: https://www.youtube.com/results?search_query=%EB%A6%AC%EB%8B%88%EC%A7%80%20%ED%81%B4%EB%9E%98%EC%8B%9D"
+    },
+    {
+      "role": "user",
+      "content": "/반복 1 0 고스톱 규칙"
+    },
+    {
+      "role": "user",
+      "content": "고스톱 규칙"
+    }
+  ]
+}

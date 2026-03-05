@@ -23,6 +23,11 @@ const RECENT_CACHE_TTL_LIMIT_1_MS = parseInt(process.env.RECENT_CACHE_TTL_LIMIT_
 const RECENT_CACHE_DIR = path.join(__dirname, '..', 'data', 'cache');
 const RECENT_CACHE_FILE_PATH = path.join(RECENT_CACHE_DIR, 'recent_api_cache.json');
 
+// 인기 키워드 캐시 설정 (1분)
+const KEYWORDS_CACHE_TTL_MS = parseInt(process.env.KEYWORDS_CACHE_TTL_MS || '60000', 10);
+const KEYWORDS_CACHE_FILE_PATH = path.join(RECENT_CACHE_DIR, 'keywords_top_cache.json');
+const KEYWORDS_REGION_CACHE_FILE_PATH = path.join(RECENT_CACHE_DIR, 'keywords_region_cache.json');
+
 function getRecentCacheTtlMs(limit) {
     if (limit === 100) return RECENT_CACHE_TTL_LIMIT_100_MS;
     if (limit === 1) return RECENT_CACHE_TTL_LIMIT_1_MS;
@@ -70,6 +75,70 @@ function writeRecentFileCache(cacheObject) {
     } catch (error) {
         console.error('[recent-cache] 파일 쓰기 오류:', error.message);
         console.error('[recent-cache] 쓰기 대상 경로:', RECENT_CACHE_FILE_PATH);
+        return false;
+    }
+}
+
+// 인기 키워드 캐시 파일 읽기/쓰기
+function readKeywordsCache() {
+    try {
+        ensureRecentCacheDir();
+        if (!fs.existsSync(KEYWORDS_CACHE_FILE_PATH)) {
+            return null;
+        }
+        const raw = fs.readFileSync(KEYWORDS_CACHE_FILE_PATH, 'utf8');
+        if (!raw) return null;
+        return JSON.parse(raw);
+    } catch (error) {
+        console.error('[keywords-cache] 파일 읽기 오류:', error.message);
+        return null;
+    }
+}
+
+function writeKeywordsCache(data) {
+    try {
+        ensureRecentCacheDir();
+        const cacheData = {
+            timestamp: Date.now(),
+            data: data
+        };
+        fs.writeFileSync(KEYWORDS_CACHE_FILE_PATH, JSON.stringify(cacheData, null, 2), 'utf8');
+        console.log('[keywords-cache] 캐시 저장 완료');
+        return true;
+    } catch (error) {
+        console.error('[keywords-cache] 파일 쓰기 오류:', error.message);
+        return false;
+    }
+}
+
+// 지역별 키워드 캐시 읽기/쓰기
+function readRegionKeywordsCache() {
+    try {
+        ensureRecentCacheDir();
+        if (!fs.existsSync(KEYWORDS_REGION_CACHE_FILE_PATH)) {
+            return null;
+        }
+        const raw = fs.readFileSync(KEYWORDS_REGION_CACHE_FILE_PATH, 'utf8');
+        if (!raw) return null;
+        return JSON.parse(raw);
+    } catch (error) {
+        console.error('[region-keywords-cache] 파일 읽기 오류:', error.message);
+        return null;
+    }
+}
+
+function writeRegionKeywordsCache(data) {
+    try {
+        ensureRecentCacheDir();
+        const cacheData = {
+            timestamp: Date.now(),
+            data: data
+        };
+        fs.writeFileSync(KEYWORDS_REGION_CACHE_FILE_PATH, JSON.stringify(cacheData, null, 2), 'utf8');
+        console.log('[region-keywords-cache] 캐시 저장 완료');
+        return true;
+    } catch (error) {
+        console.error('[region-keywords-cache] 파일 쓰기 오류:', error.message);
         return false;
     }
 }
@@ -861,11 +930,58 @@ app.get('/api/visits/region', async (req, res) => {
 app.get('/api/keywords/top', async (req, res) => {
     try {
         const limit = Math.min(parseInt(req.query.limit) || 20, 100);
-        const keywords = await storage.getTopKeywords(limit);
+        
+        // 캐시 확인
+        const cache = readKeywordsCache();
+        const now = Date.now();
+        
+        // 캐시가 유효한 경우 (1분 이내)
+        if (cache && cache.timestamp && (now - cache.timestamp) < KEYWORDS_CACHE_TTL_MS) {
+            console.log('[keywords-cache] 캐시에서 반환 (유효기간: ' + Math.floor((KEYWORDS_CACHE_TTL_MS - (now - cache.timestamp)) / 1000) + '초 남음)');
+        
+        // 캐시 확인
+        const cache = readRegionKeywordsCache();
+        const now = Date.now();
+        
+        // 캐시가 유효한 경우 (1분 이내)
+        if (cache && cache.timestamp && (now - cache.timestamp) < KEYWORDS_CACHE_TTL_MS) {
+            console.log('[region-keywords-cache] 캐시에서 반환 (유효기간: ' + Math.floor((KEYWORDS_CACHE_TTL_MS - (now - cache.timestamp)) / 1000) + '초 남음)');
+            return res.json({
+                success: true,
+                data: cache.data,
+                cached: true,
+                cacheAge: Math.floor((now - cache.timestamp) / 1000)
+            });
+        }
+        
+        // 캐시 만료 또는 없음 - DB에서 조회
+        console.log('[region-keywords-cache] 캐시 만료 또는 없음, DB 조회 후 캐시 갱신');
+        const keywords = await storage.getKeywordsByRegion(limit);
+        
+        // 캐시 저장
+        writeRegionKeywordsCache(keywords);
+        
         return res.json({
             success: true,
-            count: keywords.length,
-            data: keywords
+            data: keywords,
+            cached: falsee.data.slice(0, limit),
+                cached: true,
+                cacheAge: Math.floor((now - cache.timestamp) / 1000)
+            });
+        }
+        
+        // 캐시 만료 또는 없음 - DB에서 조회
+        console.log('[keywords-cache] 캐시 만료 또는 없음, DB 조회 후 캐시 갱신');
+        const keywords = await storage.getTopKeywords(100); // 최대 100개 캐시
+        
+        // 캐시 저장
+        writeKeywordsCache(keywords);
+        
+        return res.json({
+            success: true,
+            count: keywords.slice(0, limit).length,
+            data: keywords.slice(0, limit),
+            cached: false
         });
     } catch (error) {
         console.error('인기 키워드 조회 오류:', error);
@@ -885,6 +1001,72 @@ app.get('/api/keywords/by-region', async (req, res) => {
     } catch (error) {
         console.error('지역별 키워드 조회 오류:', error);
         res.status(500).json({ error: error.message });
+    }
+});
+
+// 1주일 인기 키워드
+app.get('/api/keywords/weekly', async (req, res) => {
+    try {
+        console.log('[API] /api/keywords/weekly 요청 시작');
+        const limit = Math.min(parseInt(req.query.limit) || 20, 100);
+        
+        if (!storage.getKeywordsByPeriod) {
+            console.error('[API] storage.getKeywordsByPeriod 함수가 없습니다!');
+            return res.status(500).json({ 
+                success: false, 
+                error: 'getKeywordsByPeriod function not available' 
+            });
+        }
+        
+        const keywords = await storage.getKeywordsByPeriod('week', limit);
+        console.log(`[API] 1주일 키워드 ${keywords.length}개 반환`);
+        
+        return res.json({
+            success: true,
+            count: keywords.length,
+            data: keywords
+        });
+    } catch (error) {
+        console.error('[API] 1주일 키워드 조회 오류:', error);
+        console.error(error.stack);
+        res.status(500).json({ 
+            success: false, 
+            error: error.message,
+            stack: process.env.NODE_ENV === 'development' ? error.stack : undefined
+        });
+    }
+});
+
+// 오늘 인기 키워드
+app.get('/api/keywords/today', async (req, res) => {
+    try {
+        console.log('[API] /api/keywords/today 요청 시작');
+        const limit = Math.min(parseInt(req.query.limit) || 20, 100);
+        
+        if (!storage.getKeywordsByPeriod) {
+            console.error('[API] storage.getKeywordsByPeriod 함수가 없습니다!');
+            return res.status(500).json({ 
+                success: false, 
+                error: 'getKeywordsByPeriod function not available' 
+            });
+        }
+        
+        const keywords = await storage.getKeywordsByPeriod('today', limit);
+        console.log(`[API] 오늘 키워드 ${keywords.length}개 반환`);
+        
+        return res.json({
+            success: true,
+            count: keywords.length,
+            data: keywords
+        });
+    } catch (error) {
+        console.error('[API] 오늘 키워드 조회 오류:', error);
+        console.error(error.stack);
+        res.status(500).json({ 
+            success: false, 
+            error: error.message,
+            stack: process.env.NODE_ENV === 'development' ? error.stack : undefined
+        });
     }
 });
 
@@ -912,23 +1094,4 @@ const server = app.listen(PORT, () => {
 
 💡 종료: Ctrl+C
     `);
-
-    // 1시간(3600000ms) 마다 자동 재부팅
-    const ONE_HOUR = 3600000; // 1시간 = 3600000ms
-    setInterval(() => {
-        console.log('\n⚠️  [자동 재부팅] 1시간 경과 - 서버 재부팅 시작...');
-        console.log(`⏰ 재부팅 시간: ${new Date().toLocaleString('ko-KR')}`);
-        
-        // 서버 종료 (PM2/배치파일이 자동으로 재시작)
-        server.close(() => {
-            console.log('✅ 서버 종료 완료. 재시작 대기 중...');
-            process.exit(0);
-        });
-        
-        // 강제 종료 (30초 후에도 안 닫혀있으면)
-        setTimeout(() => {
-            console.error('❌ 강제 종료 (30초 타임아웃)');
-            process.exit(1);
-        }, 30000);
-    }, ONE_HOUR);
 });

@@ -1,0 +1,250 @@
+{
+  "model": "gpt-oss:120b-cloud",
+  "timestamp": "2026-02-22T07:27:53.929042",
+  "messages": [
+    {
+      "role": "user",
+      "content": "/트렌드검색반복 60 --infinite [오늘 주요 뉴스]"
+    },
+    {
+      "role": "user",
+      "content": "/반복 1 0 오늘 주요 뉴스"
+    },
+    {
+      "role": "user",
+      "content": "오늘 주요 뉴스"
+    },
+    {
+      "role": "assistant",
+      "content": "\n🔍 '오늘 주요 뉴스' 검색 결과:\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n📄 검색 페이지 요약 [2026년 02월 22일]\n────────────────────────────────────────────────────────────\n요약 중 오류가 발생했습니다: 500 Server Error: Internal Server Error for url: http://localhost:11434/api/generate\n\n🔗 참고 URL\n────────────────────────────────────────────────────────────\n• Naver Web: https://search.naver.com/search.naver?where=nexearch&query=%EC%98%A4%EB%8A%98%20%EC%A3%BC%EC%9A%94%20%EB%89%B4%EC%8A%A4\n• Naver News: https://search.naver.com/search.naver?where=news&query=%EC%98%A4%EB%8A%98%20%EC%A3%BC%EC%9A%94%20%EB%89%B4%EC%8A%A4&sm=tab_opt&sort=1&photo=0&field=0&pd=0&docid=&related=0&mynews=0&office_type=0&office_section_code=0&news_office_checked=&nso=so:dd,p:all,a:all\n• Bing Web: https://www.bing.com/search?q=%EC%98%A4%EB%8A%98%20%EC%A3%BC%EC%9A%94%20%EB%89%B4%EC%8A%A4\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n"
+    },
+    {
+      "role": "user",
+      "content": "/반복 1 0 오늘 주요 뉴스"
+    },
+    {
+      "role": "user",
+      "content": "오늘 주요 뉴스"
+    },
+    {
+      "role": "assistant",
+      "content": "\n🔍 '오늘 주요 뉴스' 검색 결과:\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n📄 검색 페이지 요약 [2026년 02월 22일]\n────────────────────────────────────────────────────────────\n요약 중 오류가 발생했습니다: 500 Server Error: Internal Server Error for url: http://localhost:11434/api/generate\n\n🔗 참고 URL\n────────────────────────────────────────────────────────────\n• Naver Web: https://search.naver.com/search.naver?where=nexearch&query=%EC%98%A4%EB%8A%98%20%EC%A3%BC%EC%9A%94%20%EB%89%B4%EC%8A%A4\n• Naver News: https://search.naver.com/search.naver?where=news&query=%EC%98%A4%EB%8A%98%20%EC%A3%BC%EC%9A%94%20%EB%89%B4%EC%8A%A4&sm=tab_opt&sort=1&photo=0&field=0&pd=0&docid=&related=0&mynews=0&office_type=0&office_section_code=0&news_office_checked=&nso=so:dd,p:all,a:all\n• Bing Web: https://www.bing.com/search?q=%EC%98%A4%EB%8A%98%20%EC%A3%BC%EC%9A%94%20%EB%89%B4%EC%8A%A4\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n"
+    },
+    {
+      "role": "user",
+      "content": "/반복 1 0 오늘 주요 뉴스"
+    },
+    {
+      "role": "user",
+      "content": "오늘 주요 뉴스"
+    },
+    {
+      "role": "assistant",
+      "content": "\n🔍 '오늘 주요 뉴스' 검색 결과:\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n📄 검색 페이지 요약 [2026년 02월 22일]\n────────────────────────────────────────────────────────────\n요약 중 오류가 발생했습니다: 500 Server Error: Internal Server Error for url: http://localhost:11434/api/generate\n\n🔗 참고 URL\n────────────────────────────────────────────────────────────\n• Naver Web: https://search.naver.com/search.naver?where=nexearch&query=%EC%98%A4%EB%8A%98%20%EC%A3%BC%EC%9A%94%20%EB%89%B4%EC%8A%A4\n• Naver News: https://search.naver.com/search.naver?where=news&query=%EC%98%A4%EB%8A%98%20%EC%A3%BC%EC%9A%94%20%EB%89%B4%EC%8A%A4&sm=tab_opt&sort=1&photo=0&field=0&pd=0&docid=&related=0&mynews=0&office_type=0&office_section_code=0&news_office_checked=&nso=so:dd,p:all,a:all\n• Bing Web: https://www.bing.com/search?q=%EC%98%A4%EB%8A%98%20%EC%A3%BC%EC%9A%94%20%EB%89%B4%EC%8A%A4\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n"
+    },
+    {
+      "role": "user",
+      "content": "/반복 1 0 오늘 주요 뉴스"
+    },
+    {
+      "role": "user",
+      "content": "오늘 주요 뉴스"
+    },
+    {
+      "role": "assistant",
+      "content": "\n🔍 '오늘 주요 뉴스' 검색 결과:\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n📄 검색 페이지 요약 [2026년 02월 22일]\n────────────────────────────────────────────────────────────\n요약 중 오류가 발생했습니다: 500 Server Error: Internal Server Error for url: http://localhost:11434/api/generate\n\n🔗 참고 URL\n────────────────────────────────────────────────────────────\n• Naver Web: https://search.naver.com/search.naver?where=nexearch&query=%EC%98%A4%EB%8A%98%20%EC%A3%BC%EC%9A%94%20%EB%89%B4%EC%8A%A4\n• Naver News: https://search.naver.com/search.naver?where=news&query=%EC%98%A4%EB%8A%98%20%EC%A3%BC%EC%9A%94%20%EB%89%B4%EC%8A%A4&sm=tab_opt&sort=1&photo=0&field=0&pd=0&docid=&related=0&mynews=0&office_type=0&office_section_code=0&news_office_checked=&nso=so:dd,p:all,a:all\n• Bing Web: https://www.bing.com/search?q=%EC%98%A4%EB%8A%98%20%EC%A3%BC%EC%9A%94%20%EB%89%B4%EC%8A%A4\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n"
+    },
+    {
+      "role": "user",
+      "content": "/반복 1 0 오늘 주요 뉴스"
+    },
+    {
+      "role": "user",
+      "content": "오늘 주요 뉴스"
+    },
+    {
+      "role": "assistant",
+      "content": "\n🔍 '오늘 주요 뉴스' 검색 결과:\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n📄 검색 페이지 요약 [2026년 02월 22일]\n────────────────────────────────────────────────────────────\n요약 중 오류가 발생했습니다: 500 Server Error: Internal Server Error for url: http://localhost:11434/api/generate\n\n🔗 참고 URL\n────────────────────────────────────────────────────────────\n• Naver Web: https://search.naver.com/search.naver?where=nexearch&query=%EC%98%A4%EB%8A%98%20%EC%A3%BC%EC%9A%94%20%EB%89%B4%EC%8A%A4\n• Naver News: https://search.naver.com/search.naver?where=news&query=%EC%98%A4%EB%8A%98%20%EC%A3%BC%EC%9A%94%20%EB%89%B4%EC%8A%A4&sm=tab_opt&sort=1&photo=0&field=0&pd=0&docid=&related=0&mynews=0&office_type=0&office_section_code=0&news_office_checked=&nso=so:dd,p:all,a:all\n• Bing Web: https://www.bing.com/search?q=%EC%98%A4%EB%8A%98%20%EC%A3%BC%EC%9A%94%20%EB%89%B4%EC%8A%A4\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n"
+    },
+    {
+      "role": "user",
+      "content": "/반복 1 0 오늘 주요 뉴스"
+    },
+    {
+      "role": "user",
+      "content": "오늘 주요 뉴스"
+    },
+    {
+      "role": "assistant",
+      "content": "\n🔍 '오늘 주요 뉴스' 검색 결과:\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n📄 검색 페이지 요약 [2026년 02월 22일]\n────────────────────────────────────────────────────────────\n요약 중 오류가 발생했습니다: 500 Server Error: Internal Server Error for url: http://localhost:11434/api/generate\n\n🔗 참고 URL\n────────────────────────────────────────────────────────────\n• Naver Web: https://search.naver.com/search.naver?where=nexearch&query=%EC%98%A4%EB%8A%98%20%EC%A3%BC%EC%9A%94%20%EB%89%B4%EC%8A%A4\n• Naver News: https://search.naver.com/search.naver?where=news&query=%EC%98%A4%EB%8A%98%20%EC%A3%BC%EC%9A%94%20%EB%89%B4%EC%8A%A4&sm=tab_opt&sort=1&photo=0&field=0&pd=0&docid=&related=0&mynews=0&office_type=0&office_section_code=0&news_office_checked=&nso=so:dd,p:all,a:all\n• Bing Web: https://www.bing.com/search?q=%EC%98%A4%EB%8A%98%20%EC%A3%BC%EC%9A%94%20%EB%89%B4%EC%8A%A4\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n"
+    },
+    {
+      "role": "user",
+      "content": "/반복 1 0 오늘 주요 뉴스"
+    },
+    {
+      "role": "user",
+      "content": "오늘 주요 뉴스"
+    },
+    {
+      "role": "assistant",
+      "content": "\n🔍 '오늘 주요 뉴스' 검색 결과:\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n📄 검색 페이지 요약 [2026년 02월 22일]\n────────────────────────────────────────────────────────────\n요약 중 오류가 발생했습니다: 500 Server Error: Internal Server Error for url: http://localhost:11434/api/generate\n\n🔗 참고 URL\n────────────────────────────────────────────────────────────\n• Naver Web: https://search.naver.com/search.naver?where=nexearch&query=%EC%98%A4%EB%8A%98%20%EC%A3%BC%EC%9A%94%20%EB%89%B4%EC%8A%A4\n• Naver News: https://search.naver.com/search.naver?where=news&query=%EC%98%A4%EB%8A%98%20%EC%A3%BC%EC%9A%94%20%EB%89%B4%EC%8A%A4&sm=tab_opt&sort=1&photo=0&field=0&pd=0&docid=&related=0&mynews=0&office_type=0&office_section_code=0&news_office_checked=&nso=so:dd,p:all,a:all\n• Bing Web: https://www.bing.com/search?q=%EC%98%A4%EB%8A%98%20%EC%A3%BC%EC%9A%94%20%EB%89%B4%EC%8A%A4\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n"
+    },
+    {
+      "role": "user",
+      "content": "/반복 1 0 오늘 주요 뉴스"
+    },
+    {
+      "role": "user",
+      "content": "오늘 주요 뉴스"
+    },
+    {
+      "role": "assistant",
+      "content": "\n🔍 '오늘 주요 뉴스' 검색 결과:\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n📄 검색 페이지 요약 [2026년 02월 22일]\n────────────────────────────────────────────────────────────\n요약 중 오류가 발생했습니다: 500 Server Error: Internal Server Error for url: http://localhost:11434/api/generate\n\n🔗 참고 URL\n────────────────────────────────────────────────────────────\n• Naver Web: https://search.naver.com/search.naver?where=nexearch&query=%EC%98%A4%EB%8A%98%20%EC%A3%BC%EC%9A%94%20%EB%89%B4%EC%8A%A4\n• Naver News: https://search.naver.com/search.naver?where=news&query=%EC%98%A4%EB%8A%98%20%EC%A3%BC%EC%9A%94%20%EB%89%B4%EC%8A%A4&sm=tab_opt&sort=1&photo=0&field=0&pd=0&docid=&related=0&mynews=0&office_type=0&office_section_code=0&news_office_checked=&nso=so:dd,p:all,a:all\n• Bing Web: https://www.bing.com/search?q=%EC%98%A4%EB%8A%98%20%EC%A3%BC%EC%9A%94%20%EB%89%B4%EC%8A%A4\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n"
+    },
+    {
+      "role": "user",
+      "content": "/반복 1 0 오늘 주요 뉴스"
+    },
+    {
+      "role": "user",
+      "content": "오늘 주요 뉴스"
+    },
+    {
+      "role": "assistant",
+      "content": "\n🔍 '오늘 주요 뉴스' 검색 결과:\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n📄 검색 페이지 요약 [2026년 02월 22일]\n────────────────────────────────────────────────────────────\n요약 중 오류가 발생했습니다: 500 Server Error: Internal Server Error for url: http://localhost:11434/api/generate\n\n🔗 참고 URL\n────────────────────────────────────────────────────────────\n• Naver Web: https://search.naver.com/search.naver?where=nexearch&query=%EC%98%A4%EB%8A%98%20%EC%A3%BC%EC%9A%94%20%EB%89%B4%EC%8A%A4\n• Naver News: https://search.naver.com/search.naver?where=news&query=%EC%98%A4%EB%8A%98%20%EC%A3%BC%EC%9A%94%20%EB%89%B4%EC%8A%A4&sm=tab_opt&sort=1&photo=0&field=0&pd=0&docid=&related=0&mynews=0&office_type=0&office_section_code=0&news_office_checked=&nso=so:dd,p:all,a:all\n• Bing Web: https://www.bing.com/search?q=%EC%98%A4%EB%8A%98%20%EC%A3%BC%EC%9A%94%20%EB%89%B4%EC%8A%A4\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n"
+    },
+    {
+      "role": "user",
+      "content": "/반복 1 0 오늘 주요 뉴스"
+    },
+    {
+      "role": "user",
+      "content": "오늘 주요 뉴스"
+    },
+    {
+      "role": "assistant",
+      "content": "\n🔍 '오늘 주요 뉴스' 검색 결과:\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n📄 검색 페이지 요약 [2026년 02월 22일]\n────────────────────────────────────────────────────────────\n요약 중 오류가 발생했습니다: 500 Server Error: Internal Server Error for url: http://localhost:11434/api/generate\n\n🔗 참고 URL\n────────────────────────────────────────────────────────────\n• Naver Web: https://search.naver.com/search.naver?where=nexearch&query=%EC%98%A4%EB%8A%98%20%EC%A3%BC%EC%9A%94%20%EB%89%B4%EC%8A%A4\n• Naver News: https://search.naver.com/search.naver?where=news&query=%EC%98%A4%EB%8A%98%20%EC%A3%BC%EC%9A%94%20%EB%89%B4%EC%8A%A4&sm=tab_opt&sort=1&photo=0&field=0&pd=0&docid=&related=0&mynews=0&office_type=0&office_section_code=0&news_office_checked=&nso=so:dd,p:all,a:all\n• Bing Web: https://www.bing.com/search?q=%EC%98%A4%EB%8A%98%20%EC%A3%BC%EC%9A%94%20%EB%89%B4%EC%8A%A4\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n"
+    },
+    {
+      "role": "user",
+      "content": "/반복 1 0 오늘 주요 뉴스"
+    },
+    {
+      "role": "user",
+      "content": "오늘 주요 뉴스"
+    },
+    {
+      "role": "assistant",
+      "content": "\n🔍 '오늘 주요 뉴스' 검색 결과:\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n📄 검색 페이지 요약 [2026년 02월 22일]\n────────────────────────────────────────────────────────────\n요약 중 오류가 발생했습니다: 500 Server Error: Internal Server Error for url: http://localhost:11434/api/generate\n\n🔗 참고 URL\n────────────────────────────────────────────────────────────\n• Naver Web: https://search.naver.com/search.naver?where=nexearch&query=%EC%98%A4%EB%8A%98%20%EC%A3%BC%EC%9A%94%20%EB%89%B4%EC%8A%A4\n• Naver News: https://search.naver.com/search.naver?where=news&query=%EC%98%A4%EB%8A%98%20%EC%A3%BC%EC%9A%94%20%EB%89%B4%EC%8A%A4&sm=tab_opt&sort=1&photo=0&field=0&pd=0&docid=&related=0&mynews=0&office_type=0&office_section_code=0&news_office_checked=&nso=so:dd,p:all,a:all\n• Bing Web: https://www.bing.com/search?q=%EC%98%A4%EB%8A%98%20%EC%A3%BC%EC%9A%94%20%EB%89%B4%EC%8A%A4\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n"
+    },
+    {
+      "role": "user",
+      "content": "/반복 1 0 오늘 주요 뉴스"
+    },
+    {
+      "role": "user",
+      "content": "오늘 주요 뉴스"
+    },
+    {
+      "role": "assistant",
+      "content": "\n🔍 '오늘 주요 뉴스' 검색 결과:\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n📄 검색 페이지 요약 [2026년 02월 22일]\n────────────────────────────────────────────────────────────\n요약 중 오류가 발생했습니다: 500 Server Error: Internal Server Error for url: http://localhost:11434/api/generate\n\n🔗 참고 URL\n────────────────────────────────────────────────────────────\n• Naver Web: https://search.naver.com/search.naver?where=nexearch&query=%EC%98%A4%EB%8A%98%20%EC%A3%BC%EC%9A%94%20%EB%89%B4%EC%8A%A4\n• Naver News: https://search.naver.com/search.naver?where=news&query=%EC%98%A4%EB%8A%98%20%EC%A3%BC%EC%9A%94%20%EB%89%B4%EC%8A%A4&sm=tab_opt&sort=1&photo=0&field=0&pd=0&docid=&related=0&mynews=0&office_type=0&office_section_code=0&news_office_checked=&nso=so:dd,p:all,a:all\n• Bing Web: https://www.bing.com/search?q=%EC%98%A4%EB%8A%98%20%EC%A3%BC%EC%9A%94%20%EB%89%B4%EC%8A%A4\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n"
+    },
+    {
+      "role": "user",
+      "content": "/반복 1 0 오늘 주요 뉴스"
+    },
+    {
+      "role": "user",
+      "content": "오늘 주요 뉴스"
+    },
+    {
+      "role": "assistant",
+      "content": "\n🔍 '오늘 주요 뉴스' 검색 결과:\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n📄 검색 페이지 요약 [2026년 02월 22일]\n────────────────────────────────────────────────────────────\n요약 중 오류가 발생했습니다: 500 Server Error: Internal Server Error for url: http://localhost:11434/api/generate\n\n🔗 참고 URL\n────────────────────────────────────────────────────────────\n• Naver Web: https://search.naver.com/search.naver?where=nexearch&query=%EC%98%A4%EB%8A%98%20%EC%A3%BC%EC%9A%94%20%EB%89%B4%EC%8A%A4\n• Naver News: https://search.naver.com/search.naver?where=news&query=%EC%98%A4%EB%8A%98%20%EC%A3%BC%EC%9A%94%20%EB%89%B4%EC%8A%A4&sm=tab_opt&sort=1&photo=0&field=0&pd=0&docid=&related=0&mynews=0&office_type=0&office_section_code=0&news_office_checked=&nso=so:dd,p:all,a:all\n• Bing Web: https://www.bing.com/search?q=%EC%98%A4%EB%8A%98%20%EC%A3%BC%EC%9A%94%20%EB%89%B4%EC%8A%A4\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n"
+    },
+    {
+      "role": "user",
+      "content": "/반복 1 0 오늘 주요 뉴스"
+    },
+    {
+      "role": "user",
+      "content": "오늘 주요 뉴스"
+    },
+    {
+      "role": "assistant",
+      "content": "\n🔍 '오늘 주요 뉴스' 검색 결과:\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n📄 검색 페이지 요약 [2026년 02월 22일]\n────────────────────────────────────────────────────────────\n요약 중 오류가 발생했습니다: 500 Server Error: Internal Server Error for url: http://localhost:11434/api/generate\n\n🔗 참고 URL\n────────────────────────────────────────────────────────────\n• Naver Web: https://search.naver.com/search.naver?where=nexearch&query=%EC%98%A4%EB%8A%98%20%EC%A3%BC%EC%9A%94%20%EB%89%B4%EC%8A%A4\n• Naver News: https://search.naver.com/search.naver?where=news&query=%EC%98%A4%EB%8A%98%20%EC%A3%BC%EC%9A%94%20%EB%89%B4%EC%8A%A4&sm=tab_opt&sort=1&photo=0&field=0&pd=0&docid=&related=0&mynews=0&office_type=0&office_section_code=0&news_office_checked=&nso=so:dd,p:all,a:all\n• Bing Web: https://www.bing.com/search?q=%EC%98%A4%EB%8A%98%20%EC%A3%BC%EC%9A%94%20%EB%89%B4%EC%8A%A4\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n"
+    },
+    {
+      "role": "user",
+      "content": "/반복 1 0 오늘 주요 뉴스"
+    },
+    {
+      "role": "user",
+      "content": "오늘 주요 뉴스"
+    },
+    {
+      "role": "assistant",
+      "content": "\n🔍 '오늘 주요 뉴스' 검색 결과:\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n📄 검색 페이지 요약 [2026년 02월 22일]\n────────────────────────────────────────────────────────────\n요약 중 오류가 발생했습니다: 500 Server Error: Internal Server Error for url: http://localhost:11434/api/generate\n\n🔗 참고 URL\n────────────────────────────────────────────────────────────\n• Naver Web: https://search.naver.com/search.naver?where=nexearch&query=%EC%98%A4%EB%8A%98%20%EC%A3%BC%EC%9A%94%20%EB%89%B4%EC%8A%A4\n• Naver News: https://search.naver.com/search.naver?where=news&query=%EC%98%A4%EB%8A%98%20%EC%A3%BC%EC%9A%94%20%EB%89%B4%EC%8A%A4&sm=tab_opt&sort=1&photo=0&field=0&pd=0&docid=&related=0&mynews=0&office_type=0&office_section_code=0&news_office_checked=&nso=so:dd,p:all,a:all\n• Bing Web: https://www.bing.com/search?q=%EC%98%A4%EB%8A%98%20%EC%A3%BC%EC%9A%94%20%EB%89%B4%EC%8A%A4\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n"
+    },
+    {
+      "role": "user",
+      "content": "/반복 1 0 오늘 주요 뉴스"
+    },
+    {
+      "role": "user",
+      "content": "오늘 주요 뉴스"
+    },
+    {
+      "role": "assistant",
+      "content": "\n🔍 '오늘 주요 뉴스' 검색 결과:\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n📄 검색 페이지 요약 [2026년 02월 22일]\n────────────────────────────────────────────────────────────\n요약 중 오류가 발생했습니다: 500 Server Error: Internal Server Error for url: http://localhost:11434/api/generate\n\n🔗 참고 URL\n────────────────────────────────────────────────────────────\n• Naver Web: https://search.naver.com/search.naver?where=nexearch&query=%EC%98%A4%EB%8A%98%20%EC%A3%BC%EC%9A%94%20%EB%89%B4%EC%8A%A4\n• Naver News: https://search.naver.com/search.naver?where=news&query=%EC%98%A4%EB%8A%98%20%EC%A3%BC%EC%9A%94%20%EB%89%B4%EC%8A%A4&sm=tab_opt&sort=1&photo=0&field=0&pd=0&docid=&related=0&mynews=0&office_type=0&office_section_code=0&news_office_checked=&nso=so:dd,p:all,a:all\n• Bing Web: https://www.bing.com/search?q=%EC%98%A4%EB%8A%98%20%EC%A3%BC%EC%9A%94%20%EB%89%B4%EC%8A%A4\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n"
+    },
+    {
+      "role": "user",
+      "content": "/반복 1 0 오늘 주요 뉴스"
+    },
+    {
+      "role": "user",
+      "content": "오늘 주요 뉴스"
+    },
+    {
+      "role": "assistant",
+      "content": "\n🔍 '오늘 주요 뉴스' 검색 결과:\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n📄 검색 페이지 요약 [2026년 02월 22일]\n────────────────────────────────────────────────────────────\n요약 중 오류가 발생했습니다: 500 Server Error: Internal Server Error for url: http://localhost:11434/api/generate\n\n🔗 참고 URL\n────────────────────────────────────────────────────────────\n• Naver Web: https://search.naver.com/search.naver?where=nexearch&query=%EC%98%A4%EB%8A%98%20%EC%A3%BC%EC%9A%94%20%EB%89%B4%EC%8A%A4\n• Naver News: https://search.naver.com/search.naver?where=news&query=%EC%98%A4%EB%8A%98%20%EC%A3%BC%EC%9A%94%20%EB%89%B4%EC%8A%A4&sm=tab_opt&sort=1&photo=0&field=0&pd=0&docid=&related=0&mynews=0&office_type=0&office_section_code=0&news_office_checked=&nso=so:dd,p:all,a:all\n• Bing Web: https://www.bing.com/search?q=%EC%98%A4%EB%8A%98%20%EC%A3%BC%EC%9A%94%20%EB%89%B4%EC%8A%A4\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n"
+    },
+    {
+      "role": "user",
+      "content": "/반복 1 0 오늘 주요 뉴스"
+    },
+    {
+      "role": "user",
+      "content": "오늘 주요 뉴스"
+    },
+    {
+      "role": "assistant",
+      "content": "\n🔍 '오늘 주요 뉴스' 검색 결과:\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n📄 검색 페이지 요약 [2026년 02월 22일]\n────────────────────────────────────────────────────────────\n요약 중 오류가 발생했습니다: 500 Server Error: Internal Server Error for url: http://localhost:11434/api/generate\n\n🔗 참고 URL\n────────────────────────────────────────────────────────────\n• Naver Web: https://search.naver.com/search.naver?where=nexearch&query=%EC%98%A4%EB%8A%98%20%EC%A3%BC%EC%9A%94%20%EB%89%B4%EC%8A%A4\n• Naver News: https://search.naver.com/search.naver?where=news&query=%EC%98%A4%EB%8A%98%20%EC%A3%BC%EC%9A%94%20%EB%89%B4%EC%8A%A4&sm=tab_opt&sort=1&photo=0&field=0&pd=0&docid=&related=0&mynews=0&office_type=0&office_section_code=0&news_office_checked=&nso=so:dd,p:all,a:all\n• Bing Web: https://www.bing.com/search?q=%EC%98%A4%EB%8A%98%20%EC%A3%BC%EC%9A%94%20%EB%89%B4%EC%8A%A4\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n"
+    },
+    {
+      "role": "user",
+      "content": "/반복 1 0 오늘 주요 뉴스"
+    },
+    {
+      "role": "user",
+      "content": "오늘 주요 뉴스"
+    },
+    {
+      "role": "assistant",
+      "content": "\n🔍 '오늘 주요 뉴스' 검색 결과:\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n📄 검색 페이지 요약 [2026년 02월 22일]\n────────────────────────────────────────────────────────────\n요약 중 오류가 발생했습니다: 429 Client Error: Too Many Requests for url: http://localhost:11434/api/generate\n\n🔗 참고 URL\n────────────────────────────────────────────────────────────\n• Naver Web: https://search.naver.com/search.naver?where=nexearch&query=%EC%98%A4%EB%8A%98%20%EC%A3%BC%EC%9A%94%20%EB%89%B4%EC%8A%A4\n• Naver News: https://search.naver.com/search.naver?where=news&query=%EC%98%A4%EB%8A%98%20%EC%A3%BC%EC%9A%94%20%EB%89%B4%EC%8A%A4&sm=tab_opt&sort=1&photo=0&field=0&pd=0&docid=&related=0&mynews=0&office_type=0&office_section_code=0&news_office_checked=&nso=so:dd,p:all,a:all\n• Bing Web: https://www.bing.com/search?q=%EC%98%A4%EB%8A%98%20%EC%A3%BC%EC%9A%94%20%EB%89%B4%EC%8A%A4\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n"
+    },
+    {
+      "role": "user",
+      "content": "/반복 1 0 오늘 주요 뉴스"
+    },
+    {
+      "role": "user",
+      "content": "오늘 주요 뉴스"
+    },
+    {
+      "role": "assistant",
+      "content": "\n🔍 '오늘 주요 뉴스' 검색 결과:\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n📄 검색 페이지 요약 [2026년 02월 22일]\n────────────────────────────────────────────────────────────\n요약 중 오류가 발생했습니다: 429 Client Error: Too Many Requests for url: http://localhost:11434/api/generate\n\n🔗 참고 URL\n────────────────────────────────────────────────────────────\n• Naver Web: https://search.naver.com/search.naver?where=nexearch&query=%EC%98%A4%EB%8A%98%20%EC%A3%BC%EC%9A%94%20%EB%89%B4%EC%8A%A4\n• Naver News: https://search.naver.com/search.naver?where=news&query=%EC%98%A4%EB%8A%98%20%EC%A3%BC%EC%9A%94%20%EB%89%B4%EC%8A%A4&sm=tab_opt&sort=1&photo=0&field=0&pd=0&docid=&related=0&mynews=0&office_type=0&office_section_code=0&news_office_checked=&nso=so:dd,p:all,a:all\n• Bing Web: https://www.bing.com/search?q=%EC%98%A4%EB%8A%98%20%EC%A3%BC%EC%9A%94%20%EB%89%B4%EC%8A%A4\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n"
+    }
+  ]
+}

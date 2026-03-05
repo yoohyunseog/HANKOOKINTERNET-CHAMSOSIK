@@ -404,22 +404,6 @@ async function getStatistics() {
     }
 }
 
-module.exports = {
-    initStorage,
-    saveCalculation,
-    searchByUnicode,
-    searchByText,
-    loadCalculation,
-    getRecentCalculations,
-    getMostViewedCalculations,
-    getStatistics,
-    recordVisit,
-    getVisitsByHour,
-    getVisitsByRegion,
-    getTopKeywords,
-    getKeywordsByRegion
-};
-
 // ===== 방문 통계 함수 =====
 
 // 방문 기록 저장
@@ -513,26 +497,46 @@ async function getVisitsByRegion() {
 async function getTopKeywords(limit = 20) {
     try {
         const files = await getAllCalculationFiles();
+        
+        if (files.length === 0) {
+            console.log('[getTopKeywords] 파일이 없습니다.');
+            return [];
+        }
+        
         const keywords = {};
 
         for (const filePath of files) {
             try {
                 const content = await fs.readFile(filePath, 'utf-8');
                 const calculation = JSON.parse(content);
+                
                 if (calculation.input) {
-                    keywords[calculation.input] = (keywords[calculation.input] || 0) + (calculation.view_count || 0);
+                    // input이 배열인 경우 문자열로 변환
+                    let keywordText = calculation.input;
+                    if (Array.isArray(calculation.input)) {
+                        keywordText = calculation.input.join(', ');
+                    } else if (typeof calculation.input !== 'string') {
+                        keywordText = String(calculation.input);
+                    }
+                    
+                    // 조회수 누적
+                    const viewCount = parseInt(calculation.view_count) || 0;
+                    keywords[keywordText] = (keywords[keywordText] || 0) + viewCount;
                 }
-            } catch {
-                // 파일 읽기 오류 무시
+            } catch (fileError) {
+                // 파일 읽기 오류 무시 (손상된 파일 건너뛰기)
             }
         }
 
-        return Object.entries(keywords)
+        const result = Object.entries(keywords)
             .map(([keyword, count]) => ({ keyword, count }))
             .sort((a, b) => b.count - a.count)
             .slice(0, limit);
+            
+        console.log(`[getTopKeywords] ${result.length}개 키워드 반환`);
+        return result;
     } catch (error) {
-        console.error('Get top keywords error:', error);
+        console.error('[getTopKeywords] 오류:', error);
         return [];
     }
 }
@@ -542,6 +546,11 @@ async function getKeywordsByRegion(limit = 10) {
     try {
         const content = await fs.readFile(VISITS_FILE, 'utf-8');
         const visits = JSON.parse(content);
+        
+        if (!Array.isArray(visits) || visits.length === 0) {
+            console.log('[getKeywordsByRegion] visits 데이터가 비어있습니다.');
+            return {};
+        }
         
         const regionKeywords = {};
         
@@ -563,9 +572,98 @@ async function getKeywordsByRegion(limit = 10) {
                 .slice(0, limit);
         });
 
+        console.log(`[getKeywordsByRegion] ${Object.keys(result).length}개 지역 반환`);
         return result;
     } catch (error) {
-        console.error('Get keywords by region error:', error);
+        console.error('[getKeywordsByRegion] 오류:', error);
         return {};
     }
 }
+
+// 기간별 인기 키워드 (week, today)
+async function getKeywordsByPeriod(period = 'week', limit = 20) {
+    try {
+        const files = await getAllCalculationFiles();
+        
+        if (!files || files.length === 0) {
+            console.log('[getKeywordsByPeriod] 파일이 없습니다.');
+            return [];
+        }
+        
+        const now = Date.now();
+        let timeLimit;
+        
+        if (period === 'today') {
+            // 오늘 00:00:00부터
+            const today = new Date();
+            today.setHours(0, 0, 0, 0);
+            timeLimit = today.getTime();
+        } else if (period === 'week') {
+            // 7일 전부터
+            timeLimit = now - (7 * 24 * 60 * 60 * 1000);
+        } else {
+            timeLimit = 0;
+        }
+        
+        const keywords = {};
+
+        for (const filePath of files) {
+            try {
+                const content = await fs.readFile(filePath, 'utf-8');
+                const calculation = JSON.parse(content);
+                
+                // timestamp 확인 (없으면 건너뜀)
+                if (!calculation.timestamp) continue;
+                
+                const fileTime = new Date(calculation.timestamp).getTime();
+                if (isNaN(fileTime) || fileTime < timeLimit) continue;
+                
+                if (calculation.input) {
+                    // input이 배열인 경우 문자열로 변환
+                    let keywordText = calculation.input;
+                    if (Array.isArray(calculation.input)) {
+                        keywordText = calculation.input.join(', ');
+                    } else if (typeof calculation.input !== 'string') {
+                        keywordText = String(calculation.input);
+                    }
+                    
+                    // 조회수 누적
+                    const viewCount = parseInt(calculation.view_count) || 1;
+                    keywords[keywordText] = (keywords[keywordText] || 0) + viewCount;
+                }
+            } catch (fileError) {
+                // 파일 읽기 오류 무시
+            }
+        }
+
+        const result = Object.entries(keywords)
+            .map(([keyword, count]) => ({ keyword, count }))
+            .sort((a, b) => b.count - a.count)
+            .slice(0, limit);
+            
+        console.log(`[getKeywordsByPeriod(${period})] ${result.length}개 키워드 반환 (전체: ${Object.keys(keywords).length})`);
+        return result;
+    } catch (error) {
+        console.error(`[getKeywordsByPeriod(${period})] 오류:`, error);
+        console.error(error.stack);
+        return [];
+    }
+}
+
+// ===== EXPORTS =====
+module.exports = {
+    initStorage,
+    saveCalculation,
+    searchByUnicode,
+    searchByText,
+    loadCalculation,
+    getRecentCalculations,
+    getMostViewedCalculations,
+    getStatistics,
+    recordVisit,
+    getVisitsByHour,
+    getVisitsByRegion,
+    getTopKeywords,
+    getKeywordsByRegion,
+    getKeywordsByPeriod
+};
