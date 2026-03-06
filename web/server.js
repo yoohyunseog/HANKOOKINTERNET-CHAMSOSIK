@@ -4,6 +4,7 @@
 // ...existing code...
 const express = require('express');
 const bodyParser = require('body-parser');
+const compression = require('compression');
 const path = require('path');
 const fs = require('fs'); // fs require를 path와 함께 위쪽에 위치
 const { calculateNB } = require('./calculate');
@@ -11,20 +12,21 @@ const storage = require('./storage');
 const config = require('./config.json');
 
 const app = express();
+app.use(compression()); // Gzip 압축 활성화
 const PORT = process.env.PORT || 3000;
 const OLLAMA_BASE_URL = process.env.OLLAMA_BASE_URL || 'http://localhost:11434';
 const TREND_DATA_PATH = path.join(__dirname, '..', 'data', 'naver_creator_trends', 'latest_trend_data.json');
 const DEFAULT_MODEL = process.env.OLLAMA_MODEL || 'llama3';
 
-// /api/recent 응답 캐시 (JSON 파일, limit별)
-const RECENT_CACHE_TTL_MS = parseInt(process.env.RECENT_CACHE_TTL_MS || '10000', 10);
-const RECENT_CACHE_TTL_LIMIT_100_MS = parseInt(process.env.RECENT_CACHE_TTL_LIMIT_100_MS || '60000', 10);
-const RECENT_CACHE_TTL_LIMIT_1_MS = parseInt(process.env.RECENT_CACHE_TTL_LIMIT_1_MS || '10000', 10);
+// /api/recent 응답 캐시 (JSON 파일, limit별) - 최적화: TTL 증가
+const RECENT_CACHE_TTL_MS = parseInt(process.env.RECENT_CACHE_TTL_MS || '30000', 10); // 10초 → 30초
+const RECENT_CACHE_TTL_LIMIT_100_MS = parseInt(process.env.RECENT_CACHE_TTL_LIMIT_100_MS || '120000', 10); // 1분 → 2분
+const RECENT_CACHE_TTL_LIMIT_1_MS = parseInt(process.env.RECENT_CACHE_TTL_LIMIT_1_MS || '30000', 10); // 10초 → 30초
 const RECENT_CACHE_DIR = path.join(__dirname, '..', 'data', 'cache');
 const RECENT_CACHE_FILE_PATH = path.join(RECENT_CACHE_DIR, 'recent_api_cache.json');
 
-// 인기 키워드 캐시 설정 (1분)
-const KEYWORDS_CACHE_TTL_MS = parseInt(process.env.KEYWORDS_CACHE_TTL_MS || '60000', 10);
+// 인기 키워드 캐시 설정 - 최적화: 5분으로 증가
+const KEYWORDS_CACHE_TTL_MS = parseInt(process.env.KEYWORDS_CACHE_TTL_MS || '300000', 10); // 1분 → 5분
 const KEYWORDS_CACHE_FILE_PATH = path.join(RECENT_CACHE_DIR, 'keywords_top_cache.json');
 const KEYWORDS_REGION_CACHE_FILE_PATH = path.join(RECENT_CACHE_DIR, 'keywords_region_cache.json');
 
@@ -45,7 +47,9 @@ function ensureRecentCacheFile() {
         ensureRecentCacheDir();
         if (!fs.existsSync(RECENT_CACHE_FILE_PATH)) {
             fs.writeFileSync(RECENT_CACHE_FILE_PATH, '{}', 'utf8');
-            console.log(`[recent-cache] 캐시 파일 생성: ${RECENT_CACHE_FILE_PATH}`);
+            if (process.env.NODE_ENV !== 'production') {
+                console.log(`[recent-cache] 캐시 파일 생성: ${RECENT_CACHE_FILE_PATH}`);
+            }
         }
     } catch (error) {
         console.error('[recent-cache] 캐시 파일 초기화 오류:', error.message);
@@ -178,11 +182,15 @@ app.use((req, res, next) => {
     // 포트 제거해서 도메인만 비교
     const hostWithoutPort = host.split(':')[0].toLowerCase();
     
-    console.log(`[DEBUG] Host: ${host} | hostname: ${req.hostname} | hostWithoutPort: ${hostWithoutPort} | allowedDomains: ${allowedDomains.join(', ')}`);
+    if (process.env.NODE_ENV !== 'production') {
+        console.log(`[DEBUG] Host: ${host} | hostname: ${req.hostname} | hostWithoutPort: ${hostWithoutPort} | allowedDomains: ${allowedDomains.join(', ')}`);
+    }
     
     // localhost는 항상 허용 (개발 환경)
     if (hostWithoutPort === 'localhost' || hostWithoutPort === '127.0.0.1' || hostWithoutPort === '::1') {
-        console.log(`[허용됨] localhost 개발 환경`);
+        if (process.env.NODE_ENV !== 'production') {
+            console.log(`[허용됨] localhost 개발 환경`);
+        }
         return next();
     }
     
@@ -199,7 +207,9 @@ app.use((req, res, next) => {
         return res.destroy();
     }
     
-    console.log(`[허용됨] 도메인: ${hostWithoutPort}`);
+    if (process.env.NODE_ENV !== 'production') {
+        console.log(`[허용됨] 도메인: ${hostWithoutPort}`);
+    }
     next();
 });
 
@@ -217,7 +227,53 @@ app.use((req, res, next) => {
 // 미들웨어
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(express.static(path.join(__dirname, 'public', '한국인터넷.한국')));
+
+// 도메인별 정적 파일 제공 미들웨어
+app.use((req, res, next) => {
+    // /api/* 요청은 정적 파일로 처리하지 않음
+    if (req.path.startsWith('/api/') || req.path.startsWith('/feed') || req.path.startsWith('/sitemap')) {
+        return next();
+    }
+    
+    const host = req.get('host') || req.hostname || '한국인터넷.한국';
+    const hostWithoutPort = host.split(':')[0].toLowerCase();
+    
+    // 도메인에 따라 정적 파일 경로 결정
+    let staticDir = '한국인터넷.한국'; // 기본값
+    
+    // config.json의 allowedDomains에서 도메인 확인
+    const domainMap = {
+        '한국인터넷.한국': '한국인터넷.한국',
+        'xn--3e0bx5eku0am2irhf.xn--3e0b707e': '한국인터넷.한국',
+        '참소식.com': '한국인터넷.한국/참소식.com',
+        'www.참소식.com': '한국인터넷.한국/참소식.com',
+        'xn--9l4b4xi9r.com': '한국인터넷.한국/참소식.com',
+        'www.xn--9l4b4xi9r.com': '한국인터넷.한국/참소식.com'
+    };
+    
+    // www 제거해서 확인
+    const domainKey = hostWithoutPort.replace(/^www\./, '');
+    if (domainMap[domainKey] || domainMap[hostWithoutPort]) {
+        staticDir = domainMap[domainKey] || domainMap[hostWithoutPort];
+    }
+    
+    const fullPath = path.join(__dirname, 'public', staticDir);
+    
+    // 정적 파일 제공 - 최적화: 브라우저 캐싱 추가 (7일)
+    express.static(fullPath, {
+        maxAge: '7d', // 7일간 브라우저 캐시
+        etag: true,    // ETag 헤더 활성화
+        lastModified: true, // Last-Modified 헤더 활성화
+        setHeaders: (res, path) => {
+            // HTML은 짧게, CSS/JS/이미지는 길게
+            if (path.endsWith('.html')) {
+                res.setHeader('Cache-Control', 'public, max-age=3600'); // 1시간
+            } else if (path.match(/\.(css|js|jpg|jpeg|png|gif|ico|woff|woff2)$/)) {
+                res.setHeader('Cache-Control', 'public, max-age=604800'); // 7일
+            }
+        }
+    })(req, res, next);
+});
 
 // 방문 기록 미들웨어
 app.use((req, res, next) => {
@@ -924,6 +980,39 @@ app.get('/api/visits/region', async (req, res) => {
     }
 });
 
+// 일별 방문 통계
+app.get('/api/visits/daily', async (req, res) => {
+    try {
+        const days = parseInt(req.query.days) || 30;
+        const daily = await storage.getVisitsByDay(days);
+        return res.json({
+            success: true,
+            data: daily
+        });
+    } catch (error) {
+        console.error('일별 방문 조회 오류:', error);
+        res.status(500).json({ error: error.message });
+    }
+});
+
+// 방문자 요약 통계
+app.get('/api/visits/summary', async (req, res) => {
+    try {
+        const todayVisits = await storage.getTodayVisits();
+        const totalVisits = await storage.getTotalVisits();
+        return res.json({
+            success: true,
+            data: {
+                today: todayVisits,
+                total: totalVisits
+            }
+        });
+    } catch (error) {
+        console.error('방문자 요약 조회 오류:', error);
+        res.status(500).json({ error: error.message });
+    }
+});
+
 // ===== 키워드 통계 API =====
 
 // 전체 인기 키워드
@@ -937,7 +1026,9 @@ app.get('/api/keywords/top', async (req, res) => {
         
         // 캐시가 유효한 경우 (1분 이내)
         if (cache && cache.timestamp && (now - cache.timestamp) < KEYWORDS_CACHE_TTL_MS) {
-            console.log('[keywords-cache] 캐시에서 반환 (유효기간: ' + Math.floor((KEYWORDS_CACHE_TTL_MS - (now - cache.timestamp)) / 1000) + '초 남음)');
+            if (process.env.NODE_ENV !== 'production') {
+                console.log('[keywords-cache] 캐시에서 반환 (유효기간: ' + Math.floor((KEYWORDS_CACHE_TTL_MS - (now - cache.timestamp)) / 1000) + '초 남음)');
+            }
         
         // 캐시 확인
         const cache = readRegionKeywordsCache();
@@ -945,7 +1036,9 @@ app.get('/api/keywords/top', async (req, res) => {
         
         // 캐시가 유효한 경우 (1분 이내)
         if (cache && cache.timestamp && (now - cache.timestamp) < KEYWORDS_CACHE_TTL_MS) {
-            console.log('[region-keywords-cache] 캐시에서 반환 (유효기간: ' + Math.floor((KEYWORDS_CACHE_TTL_MS - (now - cache.timestamp)) / 1000) + '초 남음)');
+            if (process.env.NODE_ENV !== 'production') {
+                console.log('[region-keywords-cache] 캐시에서 반환 (유효기간: ' + Math.floor((KEYWORDS_CACHE_TTL_MS - (now - cache.timestamp)) / 1000) + '초 남음)');
+            }
             return res.json({
                 success: true,
                 data: cache.data,
@@ -955,7 +1048,9 @@ app.get('/api/keywords/top', async (req, res) => {
         }
         
         // 캐시 만료 또는 없음 - DB에서 조회
-        console.log('[region-keywords-cache] 캐시 만료 또는 없음, DB 조회 후 캐시 갱신');
+        if (process.env.NODE_ENV !== 'production') {
+            console.log('[region-keywords-cache] 캐시 만료 또는 없음, DB 조회 후 캐시 갱신');
+        }
         const keywords = await storage.getKeywordsByRegion(limit);
         
         // 캐시 저장
@@ -971,7 +1066,9 @@ app.get('/api/keywords/top', async (req, res) => {
         }
         
         // 캐시 만료 또는 없음 - DB에서 조회
-        console.log('[keywords-cache] 캐시 만료 또는 없음, DB 조회 후 캐시 갱신');
+        if (process.env.NODE_ENV !== 'production') {
+            console.log('[keywords-cache] 캐시 만료 또는 없음, DB 조회 후 캐시 갱신');
+        }
         const keywords = await storage.getTopKeywords(100); // 최대 100개 캐시
         
         // 캐시 저장
@@ -1007,7 +1104,9 @@ app.get('/api/keywords/by-region', async (req, res) => {
 // 1주일 인기 키워드
 app.get('/api/keywords/weekly', async (req, res) => {
     try {
-        console.log('[API] /api/keywords/weekly 요청 시작');
+        if (process.env.NODE_ENV !== 'production') {
+            console.log('[API] /api/keywords/weekly 요청 시작');
+        }
         const limit = Math.min(parseInt(req.query.limit) || 20, 100);
         
         if (!storage.getKeywordsByPeriod) {
@@ -1019,7 +1118,9 @@ app.get('/api/keywords/weekly', async (req, res) => {
         }
         
         const keywords = await storage.getKeywordsByPeriod('week', limit);
-        console.log(`[API] 1주일 키워드 ${keywords.length}개 반환`);
+        if (process.env.NODE_ENV !== 'production') {
+            console.log(`[API] 1주일 키워드 ${keywords.length}개 반환`);
+        }
         
         return res.json({
             success: true,
@@ -1040,7 +1141,9 @@ app.get('/api/keywords/weekly', async (req, res) => {
 // 오늘 인기 키워드
 app.get('/api/keywords/today', async (req, res) => {
     try {
-        console.log('[API] /api/keywords/today 요청 시작');
+        if (process.env.NODE_ENV !== 'production') {
+            console.log('[API] /api/keywords/today 요청 시작');
+        }
         const limit = Math.min(parseInt(req.query.limit) || 20, 100);
         
         if (!storage.getKeywordsByPeriod) {
@@ -1052,7 +1155,9 @@ app.get('/api/keywords/today', async (req, res) => {
         }
         
         const keywords = await storage.getKeywordsByPeriod('today', limit);
-        console.log(`[API] 오늘 키워드 ${keywords.length}개 반환`);
+        if (process.env.NODE_ENV !== 'production') {
+            console.log(`[API] 오늘 키워드 ${keywords.length}개 반환`);
+        }
         
         return res.json({
             success: true,

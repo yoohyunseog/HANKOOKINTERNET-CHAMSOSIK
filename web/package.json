@@ -7,12 +7,16 @@
     "start": "node server.js",
     "dev": "node server.js"
   },
-  "keywords": ["nb", "calculator"],
+  "keywords": [
+    "nb",
+    "calculator"
+  ],
   "author": "8BIT Project",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.18.2",
     "body-parser": "^1.20.2",
+    "compression": "^1.8.1",
+    "express": "^4.18.2",
     "geoip-lite": "^1.4.7"
   }
 }

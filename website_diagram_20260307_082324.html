@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>참소식.com - N/B 데이터베이스 - 웹사이트 구조 다이어그램</title>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+    <style>
+        body {
+            font-family: 'Pretendard', 'Malgun Gothic', sans-serif;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .container {
+            background: white;
+            border-radius: 16px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+        h1 {
+            color: #2d3748;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+            text-align: center;
+        }
+        .meta-info {
+            text-align: center;
+            color: #718096;
+            margin-bottom: 30px;
+            font-size: 0.95em;
+        }
+        .url-info {
+            background: #f7fafc;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            border-left: 4px solid #667eea;
+        }
+        .url-info strong {
+            color: #4a5568;
+        }
+        .url-info a {
+            color: #667eea;
+            text-decoration: none;
+            word-break: break-all;
+        }
+        .url-info a:hover {
+            text-decoration: underline;
+        }
+        .diagram-container {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 12px;
+            margin-top: 20px;
+            border: 1px solid #e2e8f0;
+            overflow-x: auto;
+        }
+        .mermaid {
+            display: flex;
+            justify-content: center;
+            min-height: 400px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #e2e8f0;
+            color: #a0aec0;
+            font-size: 0.9em;
+        }
+        .ai-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            margin-bottom: 20px;
+        }
+        .controls {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .btn {
+            background: #667eea;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1em;
+            margin: 5px;
+            transition: all 0.3s ease;
+        }
+        .btn:hover {
+            background: #5568d3;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🌐 참소식.com - N/B 데이터베이스</h1>
+        <div class="meta-info">
+            <div class="ai-badge">✨ Ollama AI로 자동 생성됨 (news-singleline:latest)</div>
+            <div>생성 시간: 2026년 03월 07일 08:27:10</div>
+        </div>
+        
+        <div class="url-info">
+            <strong>📍 분석 웹사이트:</strong> <a href="https://xn--9l4b4xi9r.com" target="_blank">https://xn--9l4b4xi9r.com</a>
+        </div>
+
+        <div class="diagram-container">
+            <div class="mermaid">
+flowchart LR
+    A[이란-미국 긴장 고조] --> B(호르무즈 해협 봉쇄 우려);
+    A --> C(원유 가격 변동 예측);
+    A --> D(이란 미사일 공격 관련 뉴스);
+    B --> E[글로벌 에너지 시장 영향 분석];
+    C --> F[에너지 저장 공간 부족 심화];
+    D --> G[쿠르드족 활용 관련 분석];
+    E --> H[미국 작전 기관 개입 가능성];
+    F --> I[미사일·드론 공격 타격 목표];
+    G --> J[해외 작전 기관 개입 가능성 타진];
+    H --> K[지상전 지원 보지 않는 미국];
+    A --> L[각 관련 뉴스 링크];
+    style A fill:#f9f,stroke:#333,color:#000
+    style B fill:#ccf,stroke:#333,color:#000
+    style C fill:#fcc,stroke:#333,color:#000
+            </div>
+        </div>
+
+        <div class="controls">
+            <button class="btn" onclick="window.print()">🖨️ 인쇄하기</button>
+            <button class="btn" onclick="location.reload()">🔄 새로고침</button>
+        </div>
+
+        <div class="footer">
+            <p>이 다이어그램은 Ollama AI가 웹사이트 구조를 분석하여 자동으로 생성했습니다.</p>
+            <p>Mermaid 다이어그램 엔진을 사용하여 렌더링됩니다.</p>
+        </div>
+    </div>
+
+    <script>
+        mermaid.initialize({ 
+            startOnLoad: true,
+            theme: 'default',
+            flowchart: {
+                useMaxWidth: true,
+                htmlLabels: true,
+                curve: 'basis'
+            }
+        });
+    </script>
+</body>
+</html>

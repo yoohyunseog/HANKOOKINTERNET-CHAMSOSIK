@@ -1,0 +1,57 @@
+{
+  "timestamp": "2026-03-07T01:18:01.066922",
+  "model": "gemma3:4b",
+  "keyword_count": 3,
+  "analyze_subtitles": true,
+  "analysis_source": "youtube",
+  "keywords": [
+    {
+      "keyword": "오늘의 주요 뉴스",
+      "is_fixed": true,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "주요 뉴스",
+      "is_fixed": false,
+      "views": [
+        506
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "[12뉴스] 오늘의 주요뉴스 / SBS",
+          "video_id": "CSzkC3d3zAE",
+          "views": 506,
+          "upload_date": "2026-03-06",
+          "url": "https://www.youtube.com/watch?v=CSzkC3d3zAE",
+          "subtitle_summary": "을 3줄로 요약한 내용입니다.\n1.  서울 지역 유류 가격이 급등하고, 중동 원유 수송로 불안으로 인해 국제 가도가 상승하며, 이재명 대통령은 유류 최고가 지정 가격 시행을 지시했습니다.\n2.  정유사 가격 자율화 가능성을 경고하며 기름값 폭리를 반사회적 악행으로 규정하고 엄정 대응을 예고했습니다.\n3.  중동 전쟁이 지속되는 가운데 이란의 드론 공격이 확산되고, 트럼프 미국 대통령이 이란 최고 지도자의 아들을 거부하며 후계 구도 개입 의지를 밝혔습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "배현진",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    }
+  ]
+}

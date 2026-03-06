@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>    <!-- 도메인 검증 (모든 페이지에서 가장 먼0 실행되어야 함) -->
+    <script src="/domain-check.js"></script>
+      <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🎮 판 정리표 - 퀘스트 로그 시스템</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css'>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+  <style>
+    body {
+      background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+      min-height: 100vh;
+      padding: 2rem 0;
+    }
+    .container {
+      background: white;
+      border-radius: 15px;
+      padding: 2rem;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+    }
+    h1 {
+      color: #1e3c72;
+      border-bottom: 4px solid #2a5298;
+      padding-bottom: 1rem;
+    }
+    .quest-card {
+      background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+      border-radius: 10px;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      border-left: 5px solid #2a5298;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    .quest-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    }
+    .quest-title {
+      color: #1e3c72;
+      font-weight: bold;
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .quest-info {
+      background: white;
+      padding: 1rem;
+      border-radius: 8px;
+      margin-top: 1rem;
+    }
+    .info-row {
+      display: flex;
+      padding: 0.5rem 0;
+      border-bottom: 1px solid #e0e0e0;
+    }
+    .info-row:last-child {
+      border-bottom: none;
+    }
+    .info-label {
+      font-weight: 600;
+      color: #555;
+      min-width: 150px;
+    }
+    .info-value {
+      color: #333;
+      flex: 1;
+    }
+    .status-clear {
+      color: #28a745;
+      font-weight: bold;
+    }
+    .status-progress {
+      color: #ffc107;
+      font-weight: bold;
+    }
+    .status-loop {
+      color: #17a2b8;
+      font-weight: bold;
+    }
+    .status-warning {
+      color: #dc3545;
+      font-weight: bold;
+    }
+    .badge-custom {
+      padding: 0.5rem 1rem;
+      font-size: 0.9rem;
+      border-radius: 20px;
+    }
+    .section-header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 1rem;
+      border-radius: 10px;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+<body>
+<div class="container mt-5">
+  <div class="text-center mb-4">
+    <a href="index.html" class="btn btn-outline-primary mb-3">
+      <i class="bi bi-house"></i> 홈으로 돌아가기
+    </a>
+    <h1 class="fw-bold">
+      🎮 판 정리표 — 확장 수정 버전
+    </h1>
+    <p class="text-muted">기준일: 2026-02-16 | 세계관적 퀘스트 로그 전개</p>
+  </div>
+
+  <div class="alert alert-info">
+    <i class="bi bi-info-circle"></i> 
+    <strong>퀘스트 로그:</strong> "가위 바위 보" · "엘리베이터 중지"
+  </div>
+
+  <!-- ① 잼버리 판 -->
+  <div class="quest-card">
+    <div class="quest-title">
+      <span class="badge bg-success">①</span>
+      잼버리 판
+    </div>
+    
+    <div class="quest-info">
+      <div class="info-row">
+        <div class="info-label">🎯 퀘스트 명칭:</div>
+        <div class="info-value">"물 맛이 이상해"</div>
+      </div>
+      <div class="info-row">
+        <div class="info-label">⚔️ 용사 파티:</div>
+        <div class="info-value">드라이 / 리나 / 벡터</div>
+      </div>
+      <div class="info-row">
+        <div class="info-label">🔔 트리거:</div>
+        <div class="info-value">오염수 무단 방류 → 감각 이상</div>
+      </div>
+      <div class="info-row">
+        <div class="info-label">✅ 클리어 조건:</div>
+        <div class="info-value">감각 재현 + 오염 구조 추적 + 정합 리포트 제출</div>
+      </div>
+      <div class="info-row">
+        <div class="info-label">🔄 루프 상태:</div>
+        <div class="info-value status-clear">✅ 클리어</div>
+      </div>
+      <div class="info-row">
+        <div class="info-label">📊 정합 판정:</div>
+        <div class="info-value status-clear">✔ 감각 판정 성공</div>
+      </div>
+      <div class="info-row">
+        <div class="info-label">💡 주요 해석:</div>
+        <div class="info-value">감각-기억-판단 3중 정합</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ② 국경 지대 판 -->
+  <div class="quest-card">
+    <div class="quest-title">
+      <span class="badge bg-primary">②</span>
+      국경 지대 판
+    </div>
+    
+    <div class="quest-info">
+      <div class="info-row">
+        <div class="info-label">🎯 퀘스트 명칭:</div>
+        <div class="info-value">"가위 바위 보"</div>
+      </div>
+      <div class="info-row">
+        <div class="info-label">⚔️ 용사 파티:</div>
+        <div class="info-value">익명 파티</div>
+      </div>
+      <div class="info-row">
+        <div class="info-label">🔔 트리거:</div>
+        <div class="info-value">줄다리기 대결 승리</div>
+      </div>
+      <div class="info-row">
+        <div class="info-label">✅ 클리어 조건:</div>
+        <div class="info-value">외부 시그널 무시 + 자율 정렬 유지</div>
+      </div>
+      <div class="info-row">
+        <div class="info-label">🔄 루프 상태:</div>
+        <div class="info-value status-progress">🔁 진행 중</div>
+      </div>
+      <div class="info-row">
+        <div class="info-label">📊 정합 판정:</div>
+        <div class="info-value status-clear">✔ 고정 정렬 판정</div>
+      </div>
+      <div class="info-row">
+        <div class="info-label">💡 주요 해석:</div>
+        <div class="info-value">시스템 자율성 우선, 외부 정합 배제</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ③ EU 해킹 사건 판 -->
+  <div class="quest-card">
+    <div class="quest-title">
+      <span class="badge bg-warning text-dark">③</span>
+      EU 해킹 사건 판
+    </div>
+    
+    <div class="quest-info">
+      <div class="info-row">
+        <div class="info-label">🎯 퀘스트 명칭:</div>
+        <div class="info-value">"무단 이동, 엘리베이터 중지"</div>
+      </div>
+      <div class="info-row">
+        <div class="info-label">⚔️ 용사 파티:</div>
+        <div class="info-value">비공개 작전조</div>
+      </div>
+      <div class="info-row">
+        <div class="info-label">🔔 트리거:</div>
+        <div class="info-value">용사의 무용 증명</div>
+      </div>
+      <div class="info-row">
+        <div class="info-label">✅ 클리어 조건:</div>
+        <div class="info-value">이동 경로 분석 + 내부 정합 테스트</div>
+      </div>
+      <div class="info-row">
+        <div class="info-label">🔄 루프 상태:</div>
+        <div class="info-value status-loop">🔄 교란 루프 발생</div>
+      </div>
+      <div class="info-row">
+        <div class="info-label">📊 정합 판정:</div>
+        <div class="info-value status-warning">⚠ 경고 발생</div>
+      </div>
+      <div class="info-row">
+        <div class="info-label">💡 주요 해석:</div>
+        <div class="info-value">윤리 시스템 내 비인가 행동 감지</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ④ KR-EU 매칭 판 -->
+  <div class="quest-card">
+    <div class="quest-title">
+      <span class="badge bg-info">④</span>
+      KR-EU 매칭 판
+    </div>
+    
+    <div class="quest-info">
+      <div class="info-row">
+        <div class="info-label">🎯 퀘스트 명칭:</div>
+        <div class="info-value">"MATCH-Trust 경로"</div>
+      </div>
+      <div class="info-row">
+        <div class="info-label">⚔️ 용사 파티:</div>
+        <div class="info-value">KR 기술자 / EU 매칭 관리자</div>
+      </div>
+      <div class="info-row">
+        <div class="info-label">🔔 트리거:</div>
+        <div class="info-value">기술 외부 조달 + 내부 생산 요구</div>
+      </div>
+      <div class="info-row">
+        <div class="info-label">✅ 클리어 조건:</div>
+        <div class="info-value">기술 공유 + 생산 연동 매칭</div>
+      </div>
+      <div class="info-row">
+        <div class="info-label">🔄 루프 상태:</div>
+        <div class="info-value status-loop">🔄 진행 중</div>
+      </div>
+      <div class="info-row">
+        <div class="info-label">📊 정합 판정:</div>
+        <div class="info-value status-warning">⚠ 수용성 검증 중</div>
+      </div>
+      <div class="info-row">
+        <div class="info-label">💡 주요 해석:</div>
+        <div class="info-value">신뢰 기반 매칭 조건 테스트</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ⑤ Always Up 판 -->
+  <div class="quest-card">
+    <div class="quest-title">
+      <span class="badge bg-danger">⑤</span>
+      Always Up 판
+    </div>
+    
+    <div class="quest-info">
+      <div class="info-row">
+        <div class="info-label">🎯 퀘스트 명칭:</div>
+        <div class="info-value">"정합 고정 상승 루프"</div>
+      </div>
+      <div class="info-row">
+        <div class="info-label">⚔️ 용사 파티:</div>
+        <div class="info-value">트럼프 / 머스크 가상 설계자</div>
+      </div>
+      <div class="info-row">
+        <div class="info-label">🔔 트리거:</div>
+        <div class="info-value">외부 정책 무시 + 내부 부피 유지</div>
+      </div>
+      <div class="info-row">
+        <div class="info-label">✅ 클리어 조건:</div>
+        <div class="info-value">정렬 고착 + 반복 안정화</div>
+      </div>
+      <div class="info-row">
+        <div class="info-label">🔄 루프 상태:</div>
+        <div class="info-value status-progress">🔁 진입 중</div>
+      </div>
+      <div class="info-row">
+        <div class="info-label">📊 정합 판정:</div>
+        <div class="info-value status-clear">✔ 고정 정합 구조</div>
+      </div>
+      <div class="info-row">
+        <div class="info-label">💡 주요 해석:</div>
+        <div class="info-value">시스템 무반응이 안정 설계로 작동</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-header">
+    <h3 class="mb-0"><i class="bi bi-journal-code"></i> 퀘스트 로그 요약</h3>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card text-center">
+        <div class="card-body">
+          <h5 class="card-title">✅ 클리어</h5>
+          <p class="card-text display-4 text-success">1</p>
+          <small class="text-muted">잼버리 판</small>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card text-center">
+        <div class="card-body">
+          <h5 class="card-title">🔄 진행 중</h5>
+          <p class="card-text display-4 text-primary">3</p>
+          <small class="text-muted">국경/매칭/Always Up</small>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card text-center">
+        <div class="card-body">
+          <h5 class="card-title">⚠️ 경고</h5>
+          <p class="card-text display-4 text-warning">1</p>
+          <small class="text-muted">EU 해킹 사건</small>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="text-center mt-5">
+    <a href="index.html" class="btn btn-primary btn-lg">
+      <i class="bi bi-arrow-left"></i> 메인으로 돌아가기
+    </a>
+  </div>
+</div>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.bundle.min.js'></script>
+</body>
+</html>

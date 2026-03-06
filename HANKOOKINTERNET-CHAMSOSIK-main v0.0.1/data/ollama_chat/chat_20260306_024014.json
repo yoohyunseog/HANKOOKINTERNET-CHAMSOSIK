@@ -1,0 +1,18 @@
+{
+  "model": "gemma3:4b",
+  "timestamp": "2026-03-06T03:16:56.608612",
+  "messages": [
+    {
+      "role": "user",
+      "content": "/보고서검색반복 60 --infinite"
+    },
+    {
+      "role": "user",
+      "content": "/보고서검색반복 60 --infinite"
+    },
+    {
+      "role": "assistant",
+      "content": "유튜브 검색 결과에서 “/보고서검색반복 60 --infinite” 명령어를 사용하여 60개의 보고서 결과를 무한 스크롤 방식으로 검색할 수 있습니다. 검색 쿼리: “보고서검색반복 60 --infinite”"
+    }
+  ]
+}

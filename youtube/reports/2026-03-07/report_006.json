@@ -1,0 +1,57 @@
+{
+  "timestamp": "2026-03-07T01:08:10.505784",
+  "model": "gemma3:4b",
+  "keyword_count": 3,
+  "analyze_subtitles": true,
+  "analysis_source": "youtube",
+  "keywords": [
+    {
+      "keyword": "오늘의 주요 뉴스",
+      "is_fixed": true,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "주요 뉴스",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "배현진",
+      "is_fixed": false,
+      "views": [
+        9177
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "'징계 효력정지' 배현진…\"장동혁, 입이 열 개라도 할 말이 있겠냐\"｜지금 이 뉴스",
+          "video_id": "iLO2pFzizB0",
+          "views": 9177,
+          "upload_date": "2026-03-06",
+          "url": "https://www.youtube.com/watch?v=iLO2pFzizB0",
+          "subtitle_summary": "을 3줄로 요약한 내용입니다.\n1.  서울 남부지법은 국민의힘 배현진 의원의 1년 당원권 정지 징계 효력 정지 가처분 신청을 인용하여 징계 효력을 중단시켰다.\n2.  배현진 의원은 장동혁 대표에게 당원과 국민에게 사과할 것을 요구하며, 장동혁 대표를 향해 “입이 열 개라도 할 말이 있겠냐”라며 비판했다.\n3.  베이원은 장동혁 대표가 내부 총질을 중단하고 전격적인 노선 변화를 선언해야 한다고 강조하며, 장동혁 대표에 대한 불신이 깊다는 점을 드러냈다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    }
+  ]
+}

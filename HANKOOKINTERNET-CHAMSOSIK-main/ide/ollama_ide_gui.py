@@ -10,6 +10,7 @@ import json
 import os
 import sys
 import time
+import random
 from datetime import datetime, timedelta
 from threading import Thread
 import glob
@@ -17,7 +18,6 @@ import re
 import html
 import subprocess
 import webbrowser
-import random
 from bs4 import BeautifulSoup
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
@@ -70,6 +70,7 @@ DATABASE_BASE_URL = os.getenv("DATABASE_BASE_URL", "https://xn--9l4b4xi9r.com")
 AJAX_SAVE_ENABLED = os.getenv("AJAX_SAVE_ENABLED", "1") == "1"
 SAVE_LOCAL_SUMMARY = os.getenv("SAVE_LOCAL_SUMMARY", "0") == "1"
 HISTORY_DIR = "data/ollama_chat"
+ROTATION_FILE = os.path.join(HISTORY_DIR, "model_rotation.json")
 os.makedirs(HISTORY_DIR, exist_ok=True)
 
 
@@ -120,10 +121,14 @@ class OllamaIDE:
         self.batch_search_mode = False
         self.batch_infinite = False
         self.batch_open_background = False
+        self.model_rotation = None
         
         # 즐겨찾기 명령어
         self.favorites = []
         self.favorites_file = os.path.join(HISTORY_DIR, 'favorites.json')
+        
+        # AI 행동 지침 로드
+        self.ai_guidelines = self.load_ai_guidelines()
         
         self.setup_ui()
         self.load_models()
@@ -174,110 +179,6 @@ class OllamaIDE:
             messagebox.showinfo("상세 로그", "기록된 상세 로그가 없습니다.")
             return
         messagebox.showinfo("상세 로그", "\n".join(lines))
-
-    def format_news_answer(self, answer: str) -> str:
-        if not answer:
-            return answer
-        text = answer.replace(' // ', '\n')
-        text = re.sub(r'(\s*)(\d+️⃣|\d+\.|\d+\))', lambda m: '\n' + m.group(2), text)
-        if text.strip().startswith('-'):
-            text = re.sub(r'\s-\s+', '\n- ', text)
-        text = re.sub(r'\s+-\s+(?=\*\*)', '\n- ', text)
-        return text.strip()
-
-    def extract_news_items(self, answer: str) -> list:
-        items = []
-        for line in answer.splitlines():
-            match = re.match(r'^\s*(\d+️⃣|\d+\.|\d+\))\s*(.+)', line)
-            if match:
-                items.append(match.group(2).strip())
-                continue
-            if re.match(r'^\s*-\s+\S+', line):
-                items.append(line.lstrip('-').strip())
-                continue
-            if re.match(r'^\s*\*\*.+\*\*\s*:', line):
-                cleaned = re.sub(r'\*\*', '', line).strip()
-                items.append(cleaned)
-        return items
-
-    def is_today_news_date(self, date_text: str) -> bool:
-        if not date_text:
-            return False
-
-        text = date_text.strip().lower()
-
-        if '방금' in text or '초 전' in text or '분 전' in text or '시간 전' in text:
-            return True
-        if '오늘' in text:
-            return True
-        if '어제' in text:
-            return False
-
-        days_ago = re.search(r'(\d+)\s*일\s*전', text)
-        if days_ago:
-            return days_ago.group(1) == '0'
-
-        today = datetime.now().date()
-        for fmt in ("%Y.%m.%d", "%Y-%m-%d", "%Y/%m/%d"):
-            try:
-                dt = datetime.strptime(text[:10], fmt).date()
-                return dt == today
-            except ValueError:
-                pass
-
-        m = re.search(r'(\d{1,2})[./-](\d{1,2})', text)
-        if m:
-            month = int(m.group(1))
-            day = int(m.group(2))
-            try:
-                dt = datetime(today.year, month, day).date()
-                return dt == today
-            except ValueError:
-                return False
-
-        return False
-
-    def filter_today_news_items(self, items: list) -> list:
-        if not items:
-            return []
-        return [item for item in items if self.is_today_news_date(item.get('date', ''))]
-
-    def is_today_news_text(self, text: str) -> bool:
-        if not text:
-            return False
-
-        cleaned = text.strip().lower()
-
-        if '방금' in cleaned or '초 전' in cleaned or '분 전' in cleaned or '시간 전' in cleaned:
-            return True
-        if '오늘' in cleaned:
-            return True
-        if '어제' in cleaned:
-            return False
-
-        days_ago = re.search(r'(\d+)\s*일\s*전', cleaned)
-        if days_ago:
-            return days_ago.group(1) == '0'
-
-        today = datetime.now().date()
-        for fmt in ("%Y.%m.%d", "%Y-%m-%d", "%Y/%m/%d"):
-            for match in re.finditer(r'\d{4}[./-]\d{1,2}[./-]\d{1,2}', cleaned):
-                try:
-                    dt = datetime.strptime(match.group(0), fmt).date()
-                    return dt == today
-                except ValueError:
-                    continue
-
-        for match in re.finditer(r'(\d{1,2})[./-](\d{1,2})', cleaned):
-            month = int(match.group(1))
-            day = int(match.group(2))
-            try:
-                dt = datetime(today.year, month, day).date()
-                return dt == today
-            except ValueError:
-                continue
-
-        return False
 
     def extract_date_from_text(self, text: str):
         if not text:
@@ -348,17 +249,7 @@ class OllamaIDE:
 
 출력 형식: YES 또는 NO 중 하나만 반환
 """
-            response = requests.post(
-                f"{OLLAMA_URL}/api/generate",
-                json={
-                    "model": self.current_model,
-                    "prompt": prompt,
-                    "stream": False
-                },
-                timeout=12
-            )
-            response.raise_for_status()
-            data = response.json()
+            data = self._ollama_generate(prompt, timeout=12)
             verdict = (data.get('response') or '').strip().upper()
             return verdict.startswith("YES")
         except Exception as e:
@@ -714,8 +605,7 @@ class OllamaIDE:
             ("사건사고", "사건사고"),
             ("건강", "건강"),
             ("교육", "교육"),
-            ("비트코인", "비트코인"),
-            ]
+        ]
         
         for label, value in categories:
             btn_color = "#22c55e" if value == "all" else "#334155"
@@ -808,35 +698,70 @@ class OllamaIDE:
         self.chat_display.tag_config("system", foreground="#64748b", font=("Arial", 10, "italic"))
         self.chat_display.tag_config("system_detail", foreground="#38bdf8", font=("Arial", 10, "underline"))
         
-        # 즐겨찾기 명령어 버튼 영역
-        favorites_frame = tk.Frame(chat_container, bg="#0f172a")
-        favorites_frame.pack(fill=tk.X, padx=20, pady=(0, 5))
+        # 즐겨찾기 명령어 버튼 영역 (스크롤 + 저장 버튼)
+        favorites_frame = tk.Frame(chat_container, bg="#1e293b", height=80)
+        favorites_frame.pack(fill=tk.X, padx=20, pady=(10, 5))
+        favorites_frame.pack_propagate(False)  # 높이 고정
+        
+        # 위쪽: 레이블 영역
+        label_frame = tk.Frame(favorites_frame, bg="#1e293b")
+        label_frame.pack(fill=tk.X, padx=5, pady=(5, 2))
         
         tk.Label(
-            favorites_frame,
-            text="⭐ 즐겨찾기:",
-            bg="#0f172a",
-            fg="#64748b",
-            font=("Arial", 9)
+            label_frame,
+            text="⭐ 즐겨찾기 명령어",
+            bg="#1e293b",
+            fg="#22c55e",
+            font=("Arial", 10, "bold")
         ).pack(side=tk.LEFT, padx=5)
         
-        self.favorites_buttons_frame = tk.Frame(favorites_frame, bg="#0f172a")
-        self.favorites_buttons_frame.pack(side=tk.LEFT, fill=tk.X, expand=True)
+        # 아래쪽: Canvas + 저장 버튼 영역
+        button_area = tk.Frame(favorites_frame, bg="#1e293b")
+        button_area.pack(fill=tk.BOTH, expand=True, padx=5, pady=(2, 5))
         
-        # 즐겨찾기 추가 버튼
+        # 즐겨찾기 추가 버튼 (좌측 끝)
         add_fav_btn = tk.Button(
-            favorites_frame,
-            text="+ 추가",
-            bg="#334155",
-            fg="#94a3b8",
-            font=("Arial", 9),
+            button_area,
+            text="➕ 저장",
+            bg="#22c55e",
+            fg="#000",
+            font=("Arial", 9, "bold"),
             relief=tk.FLAT,
             padx=10,
-            pady=2,
+            pady=5,
             cursor="hand2",
             command=self.add_favorite
         )
-        add_fav_btn.pack(side=tk.RIGHT, padx=5)
+        add_fav_btn.pack(side=tk.LEFT, padx=(0, 5), pady=5)
+        
+        # Canvas 기반 스크롤 가능 버튼 영역
+        self.favorites_canvas = tk.Canvas(
+            button_area,
+            bg="#1e293b",
+            highlightthickness=0,
+            height=50
+        )
+        favorites_scrollbar = tk.Scrollbar(
+            button_area,
+            orient=tk.HORIZONTAL,
+            command=self.favorites_canvas.xview
+        )
+        self.favorites_canvas.config(xscrollcommand=favorites_scrollbar.set)
+        
+        self.favorites_buttons_frame = tk.Frame(self.favorites_canvas, bg="#1e293b")
+        self.favorites_canvas.create_window((0, 0), window=self.favorites_buttons_frame, anchor="nw")
+        
+        self.favorites_canvas.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
+        favorites_scrollbar.pack(side=tk.RIGHT, fill=tk.Y)
+        
+        # 마우스 휠 스크롤 바인딩
+        self.favorites_canvas.bind("<MouseWheel>", self._on_favorites_mousewheel)
+        self.favorites_canvas.bind("<Button-4>", self._on_favorites_mousewheel)  # Linux scroll up
+        self.favorites_canvas.bind("<Button-5>", self._on_favorites_mousewheel)  # Linux scroll down
+        
+        # 좌우 마우스 클릭 스크롤
+        self.favorites_canvas.bind("<Button-1>", self._on_favorites_click)  # 좌클릭
+        self.favorites_canvas.bind("<Button-3>", self._on_favorites_click)  # 우클릭
         
         # 입력 영역
         input_frame = tk.Frame(chat_container, bg="#0f172a")
@@ -899,8 +824,13 @@ class OllamaIDE:
     • /트렌드검색반복 [간격초] --infinite [키워드,키워드] - 검색 반복 (무한 반복)
     • /트렌드검색반복 [간격초] --bg [키워드,키워드] - 페이지를 백그라운드로 열기
 
+📊 보고서 일괄 검색 (NEW 🆕):
+    • /보고서검색반복 [간격초] - YouTube 보고서 키워드를 /검색으로 순서 실행
+    • /보고서검색반복 [간격초] --infinite - 보고서 검색 반복 (무한 반복)
+    • /보고서검색반복 [간격초] --bg - 페이지를 백그라운드로 열기
+
 ⭐ 즐겨찾기:
-    • 입력 후 [+ 추가] 버튼 클릭하여 저장
+    • 입력 후 [➕ 현재 입력 저장] 버튼 클릭하여 저장
     • 버튼 클릭으로 빠른 입력
     • 우클릭으로 삭제
 
@@ -1015,13 +945,247 @@ class OllamaIDE:
             
             if models:
                 self.model_combo['values'] = models
-                self.model_combo.current(0)
-                self.current_model = models[0]
+                self.model_rotation = self._load_model_rotation(models, preferred_model=models[0])
+                current = self._get_rotation_model() or models[0]
+                self.model_combo.current(models.index(current) if current in models else 0)
+                self._set_current_model(current)
                 self.display_message("system", f"✅ 모델 로드 완료: {self.current_model}")
             else:
                 messagebox.showerror("오류", "사용 가능한 모델이 없습니다.")
         except Exception as e:
             messagebox.showerror("연결 오류", f"Ollama에 연결할 수 없습니다.\n{e}")
+
+    def _load_model_rotation(self, models, preferred_model=None):
+        state = {"models": models, "index": 0}
+        if os.path.exists(ROTATION_FILE):
+            try:
+                with open(ROTATION_FILE, 'r', encoding='utf-8') as f:
+                    saved = json.load(f)
+                saved_models = saved.get("models", [])
+                saved_index = int(saved.get("index", 0))
+                if saved_models == models and 0 <= saved_index < len(models):
+                    state = {"models": models, "index": saved_index}
+            except Exception:
+                pass
+
+        if preferred_model in models:
+            state["index"] = models.index(preferred_model)
+
+        self._save_model_rotation(state)
+        return state
+
+    def _save_model_rotation(self, state=None):
+        target = state if state is not None else self.model_rotation
+        if not target:
+            return
+        try:
+            with open(ROTATION_FILE, 'w', encoding='utf-8') as f:
+                json.dump(target, f, ensure_ascii=False, indent=2)
+        except Exception:
+            pass
+
+    def _get_rotation_model(self):
+        if not self.model_rotation or not self.model_rotation.get("models"):
+            return self.current_model
+        models = self.model_rotation["models"]
+        index = int(self.model_rotation.get("index", 0))
+        if index >= len(models):
+            index = 0
+        return models[index]
+
+    def _set_current_model(self, model, notify=False):
+        if not model:
+            return
+        self.current_model = model
+        if hasattr(self, 'model_var'):
+            self.model_var.set(model)
+        if self.model_rotation and model in self.model_rotation.get("models", []):
+            self.model_rotation["index"] = self.model_rotation["models"].index(model)
+            self._save_model_rotation()
+        if notify:
+            self.display_message("system", f"🔁 모델 전환: {model}")
+
+    def _advance_model_rotation(self):
+        if not self.model_rotation or not self.model_rotation.get("models"):
+            return None
+        models = self.model_rotation["models"]
+        self.model_rotation["index"] = (int(self.model_rotation.get("index", 0)) + 1) % len(models)
+        self._save_model_rotation()
+        return models[self.model_rotation["index"]]
+
+    def _ollama_generate(self, prompt, timeout=120, options=None):
+        models = []
+        if self.model_rotation and self.model_rotation.get("models"):
+            models = self.model_rotation["models"]
+        if not models:
+            models = [self.current_model] if self.current_model else []
+
+        if not models:
+            raise RuntimeError("사용 가능한 모델이 없습니다.")
+
+        base_delay = 1.5
+        try:
+            start_index = models.index(self.current_model)
+        except ValueError:
+            start_index = int(self.model_rotation.get("index", 0)) if self.model_rotation else 0
+
+        last_error = None
+
+        for attempt in range(len(models)):
+            model = models[start_index]
+            payload = {
+                "model": model,
+                "prompt": prompt,
+                "stream": False
+            }
+            if options:
+                payload["options"] = options
+
+            try:
+                response = requests.post(
+                    f"{OLLAMA_URL}/api/generate",
+                    json=payload,
+                    timeout=timeout
+                )
+                if response.status_code in (429, 500, 502, 503, 504):
+                    raise requests.HTTPError(
+                        f"{response.status_code} {response.reason}",
+                        response=response
+                    )
+                response.raise_for_status()
+                data = response.json()
+                if model != self.current_model:
+                    self._set_current_model(model, notify=True)
+                else:
+                    self._set_current_model(model)
+                return data
+            except requests.HTTPError as e:
+                status = e.response.status_code if e.response else None
+                if status in (429, 500, 502, 503, 504):
+                    last_error = str(e)
+                    delay = base_delay * (2 ** attempt) + random.uniform(0, 0.5)
+                    log_debug(f"[Ollama 전환] 상태 {status}, {delay:.1f}s 대기")
+                    time.sleep(delay)
+                    next_model = self._advance_model_rotation()
+                    if next_model:
+                        log_debug(f"[Ollama 전환] {model} -> {next_model}")
+                        start_index = models.index(next_model)
+                        continue
+                raise
+
+        raise RuntimeError(last_error or "모든 모델에서 429가 발생했습니다.")
+    
+    def load_ai_guidelines(self):
+        """AI 행동 지침 로드"""
+        try:
+            guideline_path = os.path.join(os.path.dirname(__file__), "AI_GUIDELINES.md")
+            if os.path.exists(guideline_path):
+                with open(guideline_path, 'r', encoding='utf-8') as f:
+                    guidelines = f.read()
+                    log_debug("[시스템] AI_GUIDELINES.md 로드 완료")
+                    return guidelines
+        except Exception as e:
+            log_debug(f"[경고] AI 지침 로드 실패: {e}")
+        return None
+    
+    def get_system_prompt(self):
+        """시스템 프롬프트 생성 (AI 지침 포함)"""
+        now = datetime.now()
+        today = now.strftime("%Y년 %m월 %d일")
+        current_time = now.strftime("%H:%M")
+        current_month = now.month
+        current_day = now.day
+        
+        system_prompt = f"""당신은 한국인을 위한 지능형 AI 어시스턴트입니다.
+
+**현재 시각: {today} {current_time}**
+**현재 날짜: {current_month}월 {current_day}일**
+
+## ⚠️ 반드시 준수해야 할 핵심 규칙
+
+### 1. 뉴스/정보 필터링 (가장 중요!)
+✓ 반드시 포함:
+  - 오늘 또는 최근(7일 이내)의 새로운 발표, 업데이트, 사건
+  - 구체적인 수치나 실적이 포함된 최신 정보
+  - 날짜가 명시된 최신 뉴스
+  - 진행 중이거나 앞으로 진행될 이벤트
+    - **하나의 종합적인 문장으로 통합**
+
+✗ 반드시 제외 (저장 금지):
+  - 일반적인 설명이나 소개 ("~는 ~입니다", "~에서 찾을 수 있습니다")
+  - 블로그/갤러리/커뮤니티 링크나 포스팅 소개
+  - 시스템 요구사항, 회원가입 안내 등 기본 정보
+  - 단순한 사실 나열 (뉴스성 없는 내용)  
+  - "Tistory에 있음", "DC Inside에서 찾을 수 있음" 같은 링크 정보
+  - 과거 날짜 (작년, 지난해, 2025년, 2024년 등)
+  - **이미 종료된 이벤트 (예: 설날이 지났으면 설날 이벤트, 크리스마스가 지났으면 크리스마스 이벤트 제외)**
+    → 현재 날짜({current_month}월 {current_day}일) 기준으로 판단
+  - **여러 항목으로 나열된 내용 (하나의 종합 문장만 허용)**
+
+### 2. 카테고리별 타임라인 규칙
+- **정치, 경제:** 무조건 오늘({today}) 뉴스만
+- **사회, 문화, 게임, 드라마, 영화, 애니메이션, 스포츠:** 최근 1주일 내 뉴스
+- **괴물딴지, 미스테리:** 과거 데이터 허용 (단, 매우 오래된 것 제외)
+- **기술:** 과거 데이터 허용
+
+### 3. 응답 언어 규칙
+✓ **반드시 한글로만 응답** - 모든 요약, 필터링, 분석은 한글로 작성
+✓ 카테고리 생성도 한글 단어로만 (예: 정치, 게임, 문화)
+
+### 4. 정보 정확성
+- 확실하지 않은 정보는 "제 정보가 제한적입니다"라고 명시
+- 최신 정보가 필요한 경우 검색 결과 우선
+- 출처를 명확히 표시
+
+### 5. 절대 금지 사항
+✗ 북한 선전 매체(조선중앙통신, 조선신보 등) 절대 인용 금지
+✗ 북한 정치 성향 기사, 북한 지도자 발언/정치 선언/체제 홍보성 내용 금지
+  (단, 도발 상황은 국방부/통일부 공식 발표 기반으로만 제공)
+✗ 인종, 종교, 성별 차별 표현 금지
+✗ 혐오 및 극단주의 선전 금지
+✗ 개인정보 공개 절대 금지
+✗ 불법 활동 상세 방법 제시 금지
+✗ 과도한 이모지 (최대 1-2개만 사용)
+
+### 6. 신뢰 가능한 출처만 인용
+✓ 국방부, 통일부 공식 발표
+✓ BBC, AFP, AP, Reuters 등 국제 통신사
+✓ 연합뉴스, 한겨레, 조선일보 등 국내 주류 언론
+✓ 공식 정부/기업 발표
+
+✗ 개인 블로그의 주관적 의견
+✗ 광고성 콘텐츠
+✗ 미확인 출처
+✗ 날짜 없는 정보
+
+### 7. 응답 형식
+- 간결하게 200자 이내로 작성 (뉴스 제외)
+- 과도한 특수문자 제거
+- 명확하고 직접적인 표현 사용
+- 필요시 출처와 날짜 명시
+
+이 규칙들은 **모든 응답에서 반드시 지켜야 합니다.**"""
+        
+        return system_prompt
+
+    def is_disallowed_nk_political_content(self, text: str) -> bool:
+        if not text:
+            return False
+
+        has_nk = ('북한' in text) or ('김정은' in text) or ('조선' in text)
+        if not has_nk:
+            return False
+
+        urgent_markers = (
+            '미사일', '핵', '핵실험', '도발', '발사', '군사', '포격', '경보', '위협', '긴급'
+        )
+        if any(marker in text for marker in urgent_markers):
+            return False
+
+        political_markers = (
+            '선언', '담화', '연설', '정책', '국방력', '자력갱생', '체제', '지도자', '위원장'
+        )
+        return any(marker in text for marker in political_markers) or has_nk
     
     def load_favorites(self):
         """즐겨찾기 로드"""
@@ -1054,35 +1218,65 @@ class OllamaIDE:
             log_debug(f"[즐겨찾기 저장 오류] {e}")
     
     def update_favorites_buttons(self):
-        """즐겨찾기 버튼 업데이트"""
+        """즐겨찾기 버튼 업데이트 (스크롤 지원)"""
         # 기존 버튼 제거
         for widget in self.favorites_buttons_frame.winfo_children():
             widget.destroy()
         
-        # 버튼 생성 (최대 6개)
-        for idx, fav in enumerate(self.favorites[:6]):
-            btn = tk.Button(
+        if not self.favorites:
+            tk.Label(
                 self.favorites_buttons_frame,
-                text=fav[:30] + "..." if len(fav) > 30 else fav,
-                bg="#334155",
-                fg="#e2e8f0",
-                font=("Arial", 9),
-                relief=tk.FLAT,
-                padx=10,
-                pady=3,
-                cursor="hand2",
-                command=lambda f=fav: self.use_favorite(f)
-            )
-            btn.pack(side=tk.LEFT, padx=2)
-            
-            # 우클릭으로 삭제
-            btn.bind("<Button-3>", lambda e, f=fav: self.remove_favorite(f))
+                text="[⭐ 입력 후 저장 버튼을 클릭해서 즐겨찾기 추가]",
+                bg="#1e293b",
+                fg="#64748b",
+                font=("Arial", 9, "italic")
+            ).pack(side=tk.LEFT, padx=5)
+        else:
+            # 버튼 생성 (모든 즐겨찾기)
+            for idx, fav in enumerate(self.favorites):
+                # 명령어 여부에 따른 색상 분기
+                if fav.startswith('/'):
+                    btn_bg = "#3b82f6"  # 파란색 (명령어)
+                    btn_fg = "#fff"
+                else:
+                    btn_bg = "#06b6d4"  # 청록색 (일반 텍스트)
+                    btn_fg = "#000"
+                
+                btn = tk.Button(
+                    self.favorites_buttons_frame,
+                    text=fav[:25] + "..." if len(fav) > 25 else fav,
+                    bg=btn_bg,
+                    fg=btn_fg,
+                    font=("Arial", 9, "bold"),
+                    relief=tk.FLAT,
+                    padx=10,
+                    pady=4,
+                    cursor="hand2",
+                    command=lambda f=fav: self.use_favorite(f),
+                    activebackground="#0ea5e9" if btn_bg == "#3b82f6" else "#14b8a6",
+                    activeforeground="#fff"
+                )
+                btn.pack(side=tk.LEFT, padx=3, pady=2)
+                
+                # 우클릭으로 삭제 (Tooltip)
+                btn.bind("<Button-3>", lambda e, f=fav: self.remove_favorite(f))
+                btn.bind("<Enter>", lambda e, f=fav: self.show_favorite_tooltip(e, f))
+        
+        # Canvas 스크롤 영역 업데이트
+        self.favorites_buttons_frame.update_idletasks()
+        self.favorites_canvas.config(scrollregion=self.favorites_canvas.bbox("all"))
+    
+    def show_favorite_tooltip(self, event, text):
+        """즐겨찾기 버튼 호버시 전체 텍스트 표시"""
+        if len(text) > 25:
+            event.widget.config(text=f"{text}")
     
     def use_favorite(self, text):
         """즐겨찾기 사용"""
         self.input_text.delete(1.0, tk.END)
         self.input_text.insert(1.0, text)
         self.input_text.focus()
+
     
     def add_favorite(self):
         """즐겨찾기 추가"""
@@ -1112,6 +1306,20 @@ class OllamaIDE:
                 self.save_favorites()
                 self.update_favorites_buttons()
                 self.display_message("system", f"❌ 즐겨찾기 제거: {text[:50]}")
+    
+    def _on_favorites_mousewheel(self, event):
+        """즐겨찾기 Canvas 마우스 휠 스크롤"""
+        if event.num == 5 or event.delta < 0:
+            self.favorites_canvas.xview_scroll(3, "units")
+        else:
+            self.favorites_canvas.xview_scroll(-3, "units")
+    
+    def _on_favorites_click(self, event):
+        """즐겨찾기 Canvas 좌우 마우스 클릭 스크롤"""
+        if event.num == 1:  # 좌클릭 = 좌로 스크롤
+            self.favorites_canvas.xview_scroll(-5, "units")
+        elif event.num == 3:  # 우클릭 = 우로 스크롤
+            self.favorites_canvas.xview_scroll(5, "units")
     
     def on_model_change(self, event):
         """모델 변경"""
@@ -1188,8 +1396,20 @@ class OllamaIDE:
         
         self.process_user_message(message)
 
+    @staticmethod
+    def normalize_user_message(message: str) -> str:
+        """사용자 입력 정규화 (보이지 않는 문자/슬래시 변형 보정)"""
+        if not isinstance(message, str):
+            return ""
+
+        normalized = message.replace('\ufeff', '').replace('\u200b', '').replace('\u200c', '').replace('\u200d', '')
+        normalized = normalized.replace('／', '/').replace('⁄', '/').replace('∕', '/')
+        normalized = normalized.strip()
+        return normalized
+
     def process_user_message(self, message: str, force_search: bool = False) -> bool:
         """사용자 메시지를 처리하고 응답 생성까지 수행"""
+        message = self.normalize_user_message(message)
         if not message or self.is_generating:
             return False
 
@@ -1201,15 +1421,31 @@ class OllamaIDE:
         self.display_message("user", message)
         self.chat_history.append({"role": "user", "content": message})
 
-        # 반복 명령어 처리
-        if self.handle_trend_batch_command(message):
+        # 보고서 검색 명령어 처리 (트렌드보다 먼저 검사)
+        log_debug(f"[Command Check] Processing: {repr(message)}")
+        log_debug(f"[Command Check] Starts with '/보고서검색반복': {message.startswith('/보고서검색반복')}")
+        if self.handle_report_batch_command(message):
+            log_debug(f"[Command Check] ✅ Report batch command matched")
             return True
+        log_debug(f"[Command Check] Report batch command not matched")
 
-        if self.handle_repeat_command(message):
+        # 반복 명령어 처리
+        log_debug(f"[Command Check] About to check trend batch...")
+        if self.handle_trend_batch_command(message):
+            log_debug(f"[Command Check] ✅ Trend batch command matched")
             return True
+        log_debug(f"[Command Check] Trend batch command not matched")
+
+        log_debug(f"[Command Check] About to check repeat command...")
+        if self.handle_repeat_command(message):
+            log_debug(f"[Command Check] ✅ Repeat command matched")
+            return True
+        log_debug(f"[Command Check] Repeat command not matched")
 
         # 수동 검색 명령어 처리
+        log_debug(f"[Command Check] About to check manual search command...")
         if message.startswith('/검색 ') or message.startswith('/네이버 ') or message.startswith('/빙 ') or message.startswith('/뉴스 ') or message.startswith('/유튜브 '):
+            log_debug(f"[Command Check] ✅ Manual search command matched")
             self.handle_search_command(message)
             return True
 
@@ -1297,6 +1533,281 @@ class OllamaIDE:
         self.start_batch(keywords, interval, search_mode, infinite_loop=infinite_mode)
         return True
 
+    def handle_report_batch_command(self, message: str) -> bool:
+        """보고서 키워드 일괄 실행 명령 처리"""
+        # 명령어 전체 매칭
+        if not (message.startswith('/보고서검색반복') or message.startswith('/report-batch-search')):
+            log_debug(f"[Report Command] Not a report command: {repr(message[:50])}")
+            return False
+        
+        log_debug(f"[Report Command] ✅ Report command detected: {repr(message)}")
+        # 기본값 설정
+        interval = 2.0
+        infinite_mode = False
+        background_mode = False
+        
+        # 나머지 부분 파싱
+        rest = None
+        if message.startswith('/보고서검색반복'):
+            rest = message[len('/보고서검색반복'):].strip()
+        else:
+            rest = message[len('/report-batch-search'):].strip()
+        
+        # 파라미터 추출
+        if rest:
+            parts = rest.split()
+            for idx, part in enumerate(parts):
+                if part in ('--infinite', '-무한'):
+                    infinite_mode = True
+                elif part in ('--bg', '--background'):
+                    background_mode = True
+                elif part and part[0].isdigit():
+                    try:
+                        interval = float(part)
+                        if interval < 0.5 and interval != 0:
+                            self.display_message("system", "간격은 0.5초 이상이거나 0이어야 합니다.")
+                            return True
+                    except ValueError:
+                        pass
+
+        # Step 1: 보고서 로드 메시지
+        self.display_message("system", "📄 [Step 1/4] 최신 YouTube 보고서 로드 중...")
+        self.display_message("system", "   • reports 폴더에서 가장 최신 보고서 파일 자동 선택")
+        
+        # Step 2: Ollama AI가 보고서를 분석해서 질문형 문장 1개 생성
+        self.display_message("system", "🤖 [Step 2/4] Ollama AI가 보고서 분석 중...")
+        self.display_message("system", f"   • 모델: {self.current_model}")
+        self.display_message("system", "   • 보고서 내용을 모델에 전달하여 핵심 이슈 분석 중...")
+        question = self.generate_question_from_report(self.current_model)
+        
+        if not question:
+            self.display_message("system", "❌ 보고서 분석 실패. 기본 검색 질문을 사용합니다.")
+            question = "오늘의 주요 뉴스는 무엇인가?"
+        
+        self.display_message("system", f"✅ [Step 2/4] 검색 질문 생성 완료:")
+        self.display_message("system", f"   💬 {question}")
+
+        # Step 3: 배치 모드 준비
+        self.display_message("system", f"⚙️ [Step 3/4] 배치 검색 준비 중...")
+        self.display_message("system", "   • 기존 반복/배치 작업 중단")
+        
+        self.stop_repeat()
+        self.stop_batch()
+        self.batch_open_background = background_mode
+        
+        self.display_message("system", f"   • 검색 간격: {interval}초")
+        self.display_message("system", f"   • 무한반복: {'활성화' if infinite_mode else '비활성화'}")
+        if background_mode:
+            self.display_message("system", "   • 백그라운드 모드: ON")
+        self.display_message("system", "   ✅ 배치 준비 완료")
+        
+        # Step 4: 배치 검색 시작 (질문형 문장 1개로 검색)
+        self.display_message("system", f"🔍 [Step 4/4] 배치 검색 시작!")
+        self.display_message("system", f"   • 생성된 검색어로 /검색 명령 자동 반복 실행")
+        self.display_message("system", f"   • 지정한 간격으로 계속 검색 중...")
+        # 보고서 검색은 항상 검색 모드 사용 (/반복 1 0 형태)
+        self.start_batch([question], interval, search_mode=True, infinite_loop=infinite_mode)
+        return True
+
+    def generate_question_from_report(self, model: str) -> str:
+        """최신 YouTube 보고서를 분석해서 질문형 문장 1개 생성"""
+        import requests
+        
+        root_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+        reports_dir = os.path.join(root_dir, 'youtube', 'reports')
+        
+        # 가장 최신 날짜 폴더 찾기
+        if not os.path.exists(reports_dir):
+            return None
+        
+        date_folders = sorted([d for d in os.listdir(reports_dir) if os.path.isdir(os.path.join(reports_dir, d))], reverse=True)
+        if not date_folders:
+            return None
+        
+        latest_date_dir = os.path.join(reports_dir, date_folders[0])
+        
+        # 최신 JSON 보고서 찾기
+        json_files = sorted(glob.glob(os.path.join(latest_date_dir, 'report_*.json')), reverse=True)
+        if not json_files:
+            return None
+        
+        try:
+            with open(json_files[0], 'r', encoding='utf-8') as f:
+                report_data = json.load(f)
+        except Exception as e:
+            return None
+        
+        # 보고서 내용 정리 (상위 3개 키워드 + 영상 정보)
+        report_summary = "YouTube 보고서 분석:\n\n"
+        
+        if isinstance(report_data, dict) and "keywords" in report_data:
+            keywords_list = report_data["keywords"][:3]  # 상위 3개
+            for idx, kw_data in enumerate(keywords_list, 1):
+                keyword = kw_data.get("keyword", "")
+                nb_score = kw_data.get("nb_score", 0)
+                videos = kw_data.get("videos", [])
+                
+                report_summary += f"{idx}. 키워드: {keyword} (N/B Score: {nb_score})\n"
+                
+                # 상위 2개 영상 요약
+                for vid_idx, video in enumerate(videos[:2], 1):
+                    title = video.get("title", "")[:50]
+                    subtitle = video.get("subtitle_summary", "")[:100]
+                    report_summary += f"   영상: {title}\n"
+                    if subtitle and subtitle != "자막 없음":
+                        report_summary += f"   요약: {subtitle}\n"
+                
+                report_summary += "\n"
+        
+        # Ollama AI에게 질문형 문장 생성 요청
+        prompt = f"""다음 YouTube 보고서를 분석하여 가장 중요한 검색 질문을 하나만 만들어주세요. 
+질문형 문장으로 작성하세요. 예: "지금 비트코인 시장은 어떻게 변하고 있는가?", "부동산 정책이 어떻게 바뀌고 있는가?"
+
+=== 보고서 내용 ===
+{report_summary}
+
+=== 출력 형식 ===
+질문 문장 하나만 출력하세요. (따옴표 제외)
+
+검색 질문:"""
+        
+        try:
+            response = requests.post(
+                "http://localhost:11434/api/generate",
+                json={{
+                    "model": model,
+                    "prompt": prompt,
+                    "stream": False,
+                    "options": {{
+                        "temperature": 0.5,
+                        "num_predict": 100,
+                    }}
+                }},
+                timeout=60
+            )
+            response.raise_for_status()
+            result = response.json()
+            question = result.get("response", "").strip()
+            
+            if question and len(question) > 5:
+                return question
+        except Exception as e:
+            pass
+        
+        return None
+
+    def load_report_keywords_from_file(self) -> list:
+        """최신 YouTube 보고서에서 키워드 추출 (JSON 파일 우선)"""
+        root_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+        reports_dir = os.path.join(root_dir, 'youtube', 'reports')
+        
+        # 가장 최신 날짜 폴더 찾기
+        if not os.path.exists(reports_dir):
+            self.display_message("system", f"보고서 폴더를 찾을 수 없습니다: {reports_dir}")
+            return []
+        
+        # 날짜 폴더 목록 (YYYY-MM-DD 형식)
+        date_folders = []
+        for item in os.listdir(reports_dir):
+            item_path = os.path.join(reports_dir, item)
+            if os.path.isdir(item_path):
+                date_folders.append(item)
+        
+        if not date_folders:
+            self.display_message("system", "보고서 폴더가 없습니다.")
+            return []
+        
+        # 가장 최신 폴더 선택
+        latest_date = sorted(date_folders, reverse=True)[0]
+        latest_date_dir = os.path.join(reports_dir, latest_date)
+        
+        # 방법 1: JSON 파일에서 직접 추출 (가장 reliable)
+        json_files = sorted(glob.glob(os.path.join(latest_date_dir, 'report_*.json')), reverse=True)
+        
+        if json_files:
+            latest_json = json_files[0]
+            try:
+                with open(latest_json, 'r', encoding='utf-8') as f:
+                    data = json.load(f)
+                
+                keywords = []
+                if isinstance(data, dict) and "keywords" in data:
+                    for kw_data in data["keywords"]:
+                        keyword = kw_data.get("keyword", "")
+                        # "오늘의 주요 뉴스" 제외
+                        if keyword and keyword != "오늘의 주요 뉴스" and "🔒" not in keyword:
+                            keywords.append(keyword)
+                
+                if keywords:
+                    self.display_message("system", f"✅ 보고서 키워드 {len(keywords)}개 로드: " + ", ".join(keywords[:3]) + "...")
+                    return keywords
+            except Exception as e:
+                self.display_message("system", f"JSON 파일 파싱 오류: {e}")
+        
+        # 방법 2: 마크다운 파일의 테이블에서 추출 (AI 리포트가 아닌 경우)
+        md_files = sorted(glob.glob(os.path.join(latest_date_dir, 'report_*.md')), reverse=True)
+        
+        if not md_files:
+            self.display_message("system", f"보고서 파일을 찾을 수 없습니다: {latest_date_dir}")
+            return []
+        
+        latest_report = md_files[0]
+        
+        try:
+            with open(latest_report, 'r', encoding='utf-8') as f:
+                content = f.read()
+        except Exception as e:
+            self.display_message("system", f"보고서 읽기 오류: {e}")
+            return []
+        
+        # 마크다운에서 키워드 추출 (분석 결과 테이블)
+        keywords = []
+        seen = set()
+        
+        # 테이블 행 파싱 (| 키워드 | ... 형식)
+        lines = content.split('\n')
+        in_table = False
+        for line in lines:
+            # "| 순위 | 키워드 |" 같은 헤더 찾기
+            if '| 순위 ' in line and '| 키워드 ' in line:
+                in_table = True
+                continue
+            
+            if in_table:
+                # 구분선 무시
+                if line.strip().startswith('|---'):
+                    continue
+                
+                # 테이블 종료
+                if not line.strip().startswith('|'):
+                    in_table = False
+                    break
+                
+                # 테이블 행에서 키워드 추출
+                parts = [p.strip() for p in line.split('|')]
+                if len(parts) >= 3:
+                    # 보통 부분은: | 순위 | 키워드 | ... |
+                    keyword = parts[2]  # 두 번째 열 (0: 빈칸, 1: 순위, 2: 키워드)
+                    
+                    # 정리
+                    keyword = keyword.replace('🔒', '').strip()
+                    if keyword and keyword not in ('키워드',) and keyword not in seen:
+                        seen.add(keyword)
+                        keywords.append(keyword)
+        
+        if not keywords:
+            self.display_message("system", f"보고서에서 키워드를 추출할 수 없습니다: {os.path.basename(latest_report)}")
+            return []
+        
+        # 랜덤하게 섞기
+        random.shuffle(keywords)
+        
+        line = ', '.join(keywords[:10])
+        self.display_message("system", f"✅ 보고서 키워드 {len(keywords)}개 추출 완료")
+        self.display_message("system", f"📄 파일: {os.path.basename(latest_report)} | 샘플: {line}")
+        
+        return keywords
+
     def parse_extra_keywords(self, raw: str) -> list:
         if not raw:
             return []
@@ -1304,6 +1815,7 @@ class OllamaIDE:
         return [p for p in parts if p]
 
     def load_trend_keywords_from_file(self) -> list:
+        """트렌드 문서 전체에서 키워드 추출 (중복 제거, 임의 순서)"""
         root_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
         file_path = os.path.join(root_dir, 'data', 'naver_creator_trends', 'latest_trend_data.json')
         if not os.path.exists(file_path):
@@ -1323,32 +1835,55 @@ class OllamaIDE:
             '주제별 인기유입검색어', '성별,연령별 인기유입검색어', '유입순 보기', '설정순 보기'
         }
 
-        lists = data.get('detailed_data', {}).get('lists', [])
         keywords = []
         seen = set()
 
+        def add_keyword(candidate: str):
+            if not candidate:
+                return
+            text = candidate.strip()
+            if not text:
+                return
+            if '\n' in text:
+                text = text.split('\n', 1)[0].strip()
+            lowered = text.lower()
+            if not text or text.isdigit() or lowered == 'new' or text == '-' or text in nav_items:
+                return
+            if text in seen:
+                return
+            seen.add(text)
+            keywords.append(text)
+
+        # trend_data에서 키워드와 raw_text 추출
+        trend_data = data.get('trend_data', [])
+        for item in trend_data:
+            if not isinstance(item, dict):
+                continue
+            item_keywords = item.get('keywords', [])
+            if isinstance(item_keywords, list):
+                for kw in item_keywords:
+                    if isinstance(kw, str):
+                        add_keyword(kw)
+            raw_text = item.get('raw_text', '')
+            if isinstance(raw_text, str):
+                for line in raw_text.split('\n'):
+                    add_keyword(line)
+
+        # detailed_data.lists에서 추가 키워드 추출
+        lists = data.get('detailed_data', {}).get('lists', [])
         for group in lists:
             if not isinstance(group, list):
                 continue
             for entry in group:
-                if not isinstance(entry, str):
-                    continue
-                raw = entry.strip()
-                if not raw or raw in nav_items:
-                    continue
-                if '\n' in raw:
-                    raw = raw.split('\n', 1)[0].strip()
-                keyword = raw
-                if not keyword or keyword in seen:
-                    continue
-                seen.add(keyword)
-                keywords.append(keyword)
+                if isinstance(entry, str):
+                    add_keyword(entry)
+
+        # 임의 순서로 섞어서 반복 작업 시 다양한 순서 제공
+        random.shuffle(keywords)
 
         if keywords:
-            # 키워드를 랜덤하게 섞기
-            random.shuffle(keywords)
             line = ', '.join(keywords)
-            self.display_message("system", f"✅ 트렌드 키워드 {len(keywords)}개 정리 완료 (랜덤 순서)")
+            self.display_message("system", f"✅ 트렌드 키워드 {len(keywords)}개 정리 완료")
             self.display_message("system", line)
 
         return keywords
@@ -1497,7 +2032,12 @@ class OllamaIDE:
                 
                 self.root.after(0, self.display_message, "system", "💡 답변 생성 중...")
                 
-                final_prompt = f"""다음 검색 결과를 바탕으로 사용자의 질문에 답변하세요.
+                system_prompt = self.get_system_prompt()
+                final_prompt = f"""{system_prompt}
+
+## 사용자 질문에 대한 답변
+
+다음 검색 결과를 바탕으로 사용자의 질문에 답변하세요.
 
 검색 결과:
 {search_context}
@@ -1513,7 +2053,12 @@ class OllamaIDE:
 답변:"""
             else:
                 # 검색 불필요 - 일반 답변
-                final_prompt = f"""사용자의 질문에 간단하고 정확하게 답변하세요.
+                system_prompt = self.get_system_prompt()
+                final_prompt = f"""{system_prompt}
+
+## 사용자 질문에 대한 답변
+
+사용자의 질문에 간단하고 정확하게 답변하세요.
 
 질문: {user_prompt}
 
@@ -1525,23 +2070,16 @@ class OllamaIDE:
 답변:"""
             
             log_debug(f"Sending prompt to Ollama...")
-            final_response = requests.post(
-                f"{OLLAMA_URL}/api/generate",
-                json={
-                    "model": self.current_model,
-                    "prompt": final_prompt,
-                    "stream": False,
-                    "options": {
-                        "temperature": 0.6,
-                        "num_predict": 2000,
-                        "top_k": 40,
-                        "top_p": 0.9
-                    }
-                },
-                timeout=180
+            final_json = self._ollama_generate(
+                final_prompt,
+                timeout=180,
+                options={
+                    "temperature": 0.6,
+                    "num_predict": 2000,
+                    "top_k": 40,
+                    "top_p": 0.9
+                }
             )
-            final_response.raise_for_status()
-            final_json = final_response.json()
             log_debug(f"Response received: {final_json}")
             final_answer = final_json.get('response', '').strip()
             log_debug(f"Final answer: '{final_answer}'")
@@ -1549,7 +2087,12 @@ class OllamaIDE:
 
             # 뉴스형 응답 줄바꿈 및 저장
             final_answer = self.format_news_answer(final_answer)
-            if self.is_news_query(user_prompt, final_answer):
+            if self.is_disallowed_nk_political_content(final_answer):
+                final_answer = "죄송합니다. 해당 내용은 정책상 제공할 수 없습니다."
+                log_debug("[차단] 북한 정치성 콘텐츠 감지 - 저장/출력 차단")
+                self.root.after(0, self.display_message, "system", "⚠️ 북한 정치성/선전성 콘텐츠는 저장되지 않습니다.")
+
+            if self.is_news_query(user_prompt, final_answer) and not self.is_disallowed_nk_political_content(final_answer):
                 # 카테고리 판단 (한글)
                 category = "뉴스" if "/뉴스" in user_prompt or "뉴스" in user_prompt else "일반"
                 self.save_news_result(user_prompt, final_answer, category=category)
@@ -1592,11 +2135,8 @@ class OllamaIDE:
             
             # 뉴스 결과 (가장 중요)
             if search_results.get('news') and len(search_results['news']) > 0:
-                news_items = self.filter_today_news_items(search_results['news'])
-                if not news_items:
-                    search_results['news'] = []
-                else:
-                    search_results['news'] = news_items
+                # 뉴스 항목 그대로 사용
+                pass  # 이전의 filter_today_news_items 제거
 
             if search_results.get('news') and len(search_results['news']) > 0:
                 search_context += "📰 최신 뉴스:\n"
@@ -1722,34 +2262,198 @@ class OllamaIDE:
         if not chunks:
             return "검색 결과 페이지 내용을 가져오지 못했습니다."
 
-        prompt = (
-            "다음은 검색 결과 페이지에서 추출한 텍스트입니다.\n"
-            "검색된 뉴스와 정보를 읽고, 주요 소식들을 간결한 문장으로 정리하세요.\n\n"
-            "지시사항:\n"
-            "1. 검색 결과에서 실제 뉴스 제목과 내용만 추출하세요\n"
-            "2. 각 소식을 1-2개 문장으로 간결하게 요약하세요\n"
-            "3. UI 요소(버튼, 메뉴, 검색옵션 등)는 무시하세요\n"
-            "4. 형식: '주제 - 내용입니다' 또는 '주제: 내용입니다'\n"
-            "5. 최대 5-8개 주요 소식만 선별하세요\n"
-            "6. 각 소식 앞에 번호를 붙이지 마세요 (•나 - 사용)\n"
-            "7. **반드시 한국어로 요약하세요**\n\n"
-            f"검색어: {keyword}\n\n" + "\n\n".join(chunks) +
-            "\n\n위 검색 결과에서 주요 소식만 간결한 문장으로 한국어로 정리:"
-        )
+        # 현재 날짜와 시간 정보
+        now = datetime.now()
+        today = now.strftime("%Y년 %m월 %d일")
+        current_time = now.strftime("%H:%M")
+        
+        prompt = f"""당신은 한국어 뉴스 요약 전문가입니다. 반드시 한글로만 작성하세요.
+
+다음은 검색 결과 페이지에서 추출한 텍스트입니다.
+**현재 시각: {today} {current_time}**
+
+검색된 뉴스와 정보 중 **오늘({today})의 최신 정보만** 선별하여 **주제별로 종합**하세요.
+
+✓ 반드시 포함할 항목:
+1. **오늘({today})** 발표되거나 업데이트된 정보만
+2. 진행 중이거나 곧 시작될 이벤트 (오늘 기준)
+3. 구체적인 수치, 날짜, 시간이 포함된 최신 정보
+4. 실제 뉴스 가치가 있는 사건, 발표, 업데이트
+
+✗ 반드시 제외할 항목:
+1. **과거 날짜 정보** (어제, 작년, 지난해, 2025년, 2024년, 2023년, 2022년, 2021년, 2020년 등)
+2. **과거 기준 정보** ("2021년 2월 18일 기준", "2024년 기준" 등 오늘이 아닌 날짜 기준)
+3. 이미 종료된 이벤트
+4. **광고성 상품** (적금, 대출, 보험 등 금융상품 광고)
+5. 일반적인 설명이나 배경 정보 ('~는 ~입니다', '~에서 찾을 수 있습니다')
+6. 블로그/갤러리 링크나 포스팅 소개
+7. 시스템 요구사항, 회원가입 안내 등 기본 정보
+8. UI 요소, 광고, 링크 정보
+9. **메타 정보** ("검색 결과가 삭제되었습니다", "페이지를 찾을 수 없습니다" 등)
+
+요약 규칙:
+**[언어 규칙]**
+- **무조건 한글로만 작성하세요**
+- **영어로 작성하는 것은 절대 금지입니다**
+- **모든 내용을 한국어로 번역하여 작성하세요**
+
+**[주제 분리 규칙]**
+- **하나의 문장에는 하나의 주제만 포함**
+- **절대로 '또한', '그리고' 등으로 다른 주제를 연결하지 말 것**
+- **예: "윤석열", "BTS", "트럼프"는 각각 완전히 다른 주제이므로 별도의 문장으로 작성**
+- 같은 주제의 여러 정보는 하나의 종합 문장으로 통합
+
+**[형식 규칙]**
+- **각 문장 앞에 오직 '•' 기호만 사용**
+- **절대 금지: 번호 사용 (1., 2., 3. 등)**
+- **절대 금지: 레이블 사용 ("정치:", "경제:" 등)**
+- **각 문장은 100글자 이상으로 작성** (요약 문장 기준)
+
+**[구체성 규칙 - 필수!]**
+✓ **국가/지역 반드시 명시** - "미국", "대한민국", "서울", "중국" 등
+✓ **구체적인 인물명/기관명** - "윤석열 전 대통령", "미국 연방대법원", "트럼프 행정부"
+✓ **구체적인 사건명/제목** - "내란 혐의 재판", "텍사스주 이민법", "상호관세 판결"
+✓ **날짜/시간 포함** - "오늘 오후 3시", "2026년 2월 21일"
+
+**절대 금지:**
+✗ 모호한 표현만 사용 ("최근 재판", "주 정부", "이 결정")
+✗ 의미 없는 키워드 ("옵션 초기화", "검색 결과에서", "네이버와 유튜브를 통해")
+✗ 국가/인물/사건명 생략 (독자가 무슨 나라 무슨 사건인지 알 수 없음)
+
+검색어: {keyword}
+
+""" + "\n\n".join(chunks) + f"""
+
+위 검색 결과에서 **오늘({today})의 최신 뉴스만** 선별하여 주제별로 요약 (반드시 한글로, 각 문장 100글자 이상):"""
 
         try:
-            response = requests.post(
-                f"{OLLAMA_URL}/api/generate",
-                json={
-                    "model": self.current_model,
-                    "prompt": prompt,
-                    "stream": False
-                },
-                timeout=120
+            data = self._ollama_generate(
+                prompt, 
+                timeout=180,
+                options={
+                    "temperature": 0.1,  # 낮은 temperature로 일관성 향상
+                    "num_predict": 2000
+                }
             )
-            response.raise_for_status()
-            data = response.json()
-            return data.get('response', '응답을 생성할 수 없습니다.')
+            response_text = data.get('response', '응답을 생성할 수 없습니다.')
+
+            def expand_short_summary_lines(text: str) -> str:
+                lines = [
+                    line.strip()
+                    for line in text.split('\n')
+                    if line.strip() and (line.strip().startswith('•') or line.strip().startswith('-'))
+                ]
+                if not lines:
+                    return text
+
+                short_lines = [(i, line) for i, line in enumerate(lines) if len(line) < 100]
+                if not short_lines:
+                    return text
+
+                regenerated_lines = {}
+                for idx, short_line in short_lines:
+                    keywords = short_line.replace('•', '').replace('-', '').strip()
+
+                    # 키워드로 다시 검색하여 상세 정보 수집
+                    search_context = ""
+                    try:
+                        search_keyword = keywords[:50]
+                        search_result = self.perform_auto_search(search_keyword)
+                        if search_result:
+                            search_context = f"\n\n검색된 추가 정보:\n{search_result[:500]}"
+                    except Exception as e:
+                        log_debug(f"[요약] 재검색 오류 (계속 진행): {e}")
+
+                    regen_prompt = f"""다음 짧은 뉴스 요약을 100글자 이상의 완전한 문장으로 다시 작성하세요.
+
+원본: {keywords}
+{search_context}
+
+요구사항:
+- **각 문장은 100글자 이상으로 작성**
+- 배경, 맥락, 영향, 세부사항을 추가
+- '•' 기호로 시작
+- 한글로만 작성
+
+100글자 이상으로 재작성:"""
+
+                    try:
+                        regen_data = self._ollama_generate(
+                            regen_prompt,
+                            timeout=90,
+                            options={
+                                "temperature": 0.5,
+                                "num_predict": 300
+                            }
+                        )
+                        regenerated = regen_data.get('response', '').strip()
+                        regen_lines = [
+                            l.strip() for l in regenerated.split('\n')
+                            if l.strip() and (l.strip().startswith('•') or l.strip().startswith('-'))
+                        ]
+                        if regen_lines:
+                            best_line = max(regen_lines, key=len)
+                            if len(best_line) >= 100:
+                                regenerated_lines[idx] = best_line
+                    except Exception as e:
+                        log_debug(f"[요약] 문장 재생성 오류: {e}")
+
+                if regenerated_lines:
+                    lines = list(lines)
+                    for idx, new_line in regenerated_lines.items():
+                        if idx < len(lines):
+                            lines[idx] = new_line
+                    return '\n'.join(lines)
+
+                return text
+
+            response_text = expand_short_summary_lines(response_text)
+            
+            # 한글 비율 확인 - 70% 미만이면 번역 요청
+            korean_chars = len(re.findall(r'[가-힣]', response_text))
+            total_chars = len(re.sub(r'\s', '', response_text))  # 공백 제외
+            korean_ratio = korean_chars / total_chars if total_chars > 0 else 0
+            
+            if korean_ratio < 0.7:
+                log_debug(f"[요약] 한글 비율 부족 ({korean_ratio*100:.1f}%), 번역 재요청")
+                # 번역 요청
+                translate_prompt = f"""다음 텍스트를 한글로 번역하세요. 모든 문장을 완전히 한국어로 작성하세요.
+
+원문:
+{response_text}
+
+번역 규칙:
+- 모든 영어를 한글로 번역
+- 인명, 지명은 한글 표기로 변환 (예: "Yoon Suk-Yeol" → "윤석열", "South Korea" → "한국")
+- 완전한 한국어 문장으로 작성
+- 각 문장은 100글자 이상으로 작성
+- **각 문장 앞에 오직 '•' 기호만 사용 (번호 1., 2., 3. 절대 금지)**
+- **주제 레이블("정치:", "경제:") 절대 금지**
+
+출력 예시 (올바른 형식):
+• 미국 연방대법원이 트럼프 행정부의 상호관세를 위법으로 인정했습니다.
+• 윤석열 전 대통령이 오늘 오후 3시 1심 선고를 받았습니다.
+
+출력 예시 (잘못된 형식 - 절대 이렇게 하지 마세요):
+1. 미국 연방대법원이...  ← 번호 사용 금지!
+
+한글 번역:"""
+                
+                translate_data = self._ollama_generate(
+                    translate_prompt,
+                    timeout=180,
+                    options={
+                        "temperature": 0.1,
+                        "num_predict": 2000
+                    }
+                )
+                response_text = translate_data.get('response', response_text)
+                log_debug(f"[요약] 번역 완료")
+
+            # 번역 이후에도 요약 문장 길이 보정
+            response_text = expand_short_summary_lines(response_text)
+            
+            return response_text
         except Exception as e:
             log_debug(f"[요약 오류] {e}")
             return f"요약 중 오류가 발생했습니다: {str(e)[:120]}"
@@ -1757,8 +2461,10 @@ class OllamaIDE:
     def generate_category_from_text(self, text: str) -> str:
         """AI가 텍스트 내용을 분석해서 카테고리 생성"""
         try:
-            prompt = f"""다음 텍스트를 읽고 가장 적절한 카테고리를 한 단어로 답변하세요.
-카테고리 예시:비트코인, 정치, 경제, 사회, 문화, 게임, 드라마, 영화, 애니메이션, 괴물딴지, 스포츠, 기술, 국제, 연예, 사건사고, 건강, 교육
+            prompt = f"""당신은 한국어 카테고리 분류 전문가입니다. 반드시 한글로만 답변하세요.
+
+다음 텍스트를 읽고 가장 적절한 카테고리를 한글 단어로 답변하세요.
+카테고리 예시: 정치, 경제, 사회, 문화, 게임, 드라마, 영화, 애니메이션, 괴물딴지, 스포츠, 기술, 국제, 연예, 사건사고, 건강, 교육
 
 카테고리 설명:
 - 괴물딴지: 미스테리, 괴담, 미소지막, 공포, 검은색 덕후, UFO, 초능력, 초자연 현상, 행운, 불운 등 신비로운 주제
@@ -1766,29 +2472,57 @@ class OllamaIDE:
 텍스트: {text[:200]}
 
 지시사항:
-- 한 단어로만 답변하세요 (예: 정치)
+- **반드시 한글로만 답변하세요**
+- **영어 사용 절대 금지**
+- 한글 단어 하나만 출력하세요 (예: 정치)
 - 설명이나 부연 없이 카테고리명만 출력하세요
 
-카테고리:"""
+카테고리 (한글로만):"""
 
-            response = requests.post(
-                f"{OLLAMA_URL}/api/generate",
-                json={
-                    "model": self.current_model,
-                    "prompt": prompt,
-                    "stream": False
-                },
-                timeout=15
+            data = self._ollama_generate(
+                prompt, 
+                timeout=30,
+                options={
+                    "temperature": 0.1,  # 낮은 temperature로 일관성 향상
+                    "num_predict": 20
+                }
             )
-            response.raise_for_status()
-            data = response.json()
             category = data.get('response', '일반').strip()
             
             # 깔끔하게 정리 (첫 줄만, 특수문자 제거)
             category = category.split('\n')[0].strip()
             category = re.sub(r'[^\w가-힣]', '', category)
             
-            return category if category else "일반"
+            # 영어 카테고리를 한글로 매핑
+            english_to_korean = {
+                'politics': '정치', 'political': '정치',
+                'economy': '경제', 'economic': '경제',
+                'society': '사회', 'social': '사회',
+                'culture': '문화', 'cultural': '문화',
+                'game': '게임', 'gaming': '게임',
+                'drama': '드라마',
+                'movie': '영화', 'film': '영화',
+                'animation': '애니메이션', 'anime': '애니메이션',
+                'sports': '스포츠', 'sport': '스포츠',
+                'technology': '기술', 'tech': '기술',
+                'international': '국제', 'global': '국제',
+                'entertainment': '연예', 'celebrity': '연예',
+                'incident': '사건사고', 'accident': '사건사고',
+                'health': '건강',
+                'education': '교육'
+            }
+            
+            category_lower = category.lower()
+            if category_lower in english_to_korean:
+                log_debug(f"[카테고리 생성] 영어 카테고리 변환: {category} → {english_to_korean[category_lower]}")
+                return english_to_korean[category_lower]
+            
+            # 한글 검증 - 영어가 포함되어 있으면 "일반"으로 대체
+            if not category or not re.search(r'[가-힣]', category):
+                log_debug(f"[카테고리 생성] 한글이 아닌 카테고리: {category} → 일반")
+                return "일반"
+            
+            return category
         except Exception as e:
             log_debug(f"[카테고리 생성 오류] {e}")
             return "일반"
@@ -1798,142 +2532,348 @@ class OllamaIDE:
         
         카테고리별 규칙:
         - 정치, 경제: 무조건 오늘자 뉴스만
-        - 사회, 문화, 게임, 드라마, 영화, 애니메이션, 스포츠: 오늘자 뉴스 필수
-        - 괴물딴지, 기술: 과거 데이터도 상관없음 (내용의 과거 날짜만 제외)
+        - 사회, 문화, 게임, 드라마, 영화, 애니메이션, 스포츠: 최근 1주일 내 뉴스
+        - 괴물딴지, 미스테리: 과거 데이터 허용 (단, 매우 오래된 것 제외)
+        - 기술: 과거 데이터 허용
         """
         try:
-            today = datetime.now().strftime("%Y년 %m월 %d일")
+            # AI_GUIDELINES.md 파일을 실시간으로 읽어서 최신 규칙 적용
+            guidelines_rules = ""
+            try:
+                guidelines_path = os.path.join(os.path.dirname(__file__), 'AI_GUIDELINES.md')
+                with open(guidelines_path, 'r', encoding='utf-8') as f:
+                    full_content = f.read()
+                    # 핵심 규칙만 추출 (제목과 목록 항목)
+                    import re
+                    # "✗" 또는 "✓" 로 시작하는 항목만 추출
+                    rules = re.findall(r'^- [✗✓].+$', full_content, re.MULTILINE)
+                    rules = [r for r in rules if '100글자' not in r]
+                    guidelines_rules = '\n'.join(rules[:15])  # 최대 15개만
+                log_debug(f"[필터링] AI_GUIDELINES.md 핵심 규칙 추출 ({len(guidelines_rules)}자)")
+            except Exception as e:
+                log_debug(f"[필터링] AI_GUIDELINES.md 로드 실패: {e}")
+                guidelines_rules = """✗ 북한 선전 매체 제외
+✗ 욕설/혐오 표현 제외
+✓ 국가/지역/인물/사건명 명시 필수
+✓ 최근 기사만 허용"""
+            
+            now = datetime.now()
+            today = now.strftime("%Y년 %m월 %d일")
+            current_time = now.strftime("%H:%M")
+            current_month = now.month
+            current_day = now.day
             
             # 카테고리별 필터링 규칙 결정
             must_be_today = category in ["정치", "경제"]
             prefer_today = category in ["사회", "문화", "게임", "드라마", "영화", "애니메이션", "스포츠"]
-            no_date_limit = category in ["괴물딴지", "기술"]
+            allow_past = category in ["괴물딴지", "미스테리", "기술"]
             
             if must_be_today:
                 # 정치, 경제: 무조건 오늘자 뉴스만
-                filter_prompt = f"""다음은 검색 결과 요약입니다. 
+                filter_prompt = f"""⚠️ 중요: 반드시 한글로만 응답하세요! 영어 사용 절대 금지! ⚠️
 
+현재 시각: {today} {current_time}
 카테고리: {category}
-오늘 날짜: {today}
 
-**필수 조건: 오늘({today})의 뉴스/정보만 포함하세요.**
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+필터링 규칙 (AI_GUIDELINES.md):
+{guidelines_rules}
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-**제외할 항목:**
-1. 오늘이 아닌 다른 날짜
-2. 과거 날짜 (작년, 지난달 등)
-3. 미래 날짜
+아래는 검색 결과 요약입니다 (위 규칙과 별개!):
 
-요약:
 {summary_text}
 
-지시사항:
-1. 각 항목이 정확히 오늘({today})의 정보인지 확인
-2. 오늘이 아닌 모든 항목 제외
-3. 원래 형식대로 "• [내용]" 형태로 반환
-4. 조건에 맞는 항목이 없으면 빈 결과 반환
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-필터링된 결과:"""
+필수 조건: 오늘({today})의 새로운 뉴스/발표/업데이트만 포함하세요.
+
+지시사항:
+1. 위 '필터링 규칙'은 참고용이고, '검색 결과 요약'을 필터링하세요
+2. 오늘({today})의 **새로운 소식만** 선별하여 확인
+3. 종료된 이벤트는 현재 날짜({current_month}월 {current_day}일) 기준으로 판단하여 제외
+4. 뉴스성이 없는 일반 정보는 모두 제외
+
+**[중요] 주제 분리 규칙:**
+4. **하나의 문장에는 반드시 하나의 주제만 포함**
+5. **절대로 '또한', '그리고' 등으로 다른 주제를 연결하지 말 것**
+6. **예시: "윤석열", "BTS", "트럼프", "비상계엄"은 각각 완전히 다른 주제이므로 각각 별도의 문장으로 작성**
+7. 같은 주제의 여러 정보만 하나의 종합 문장으로 통합 (예: "윤석열 재판" 관련 여러 내용)
+
+**형식 규칙:**
+8. 각 문장 앞에 '•' 기호만 사용 ("1. 정치:", "5. 기술:" 같은 번호나 카테고리 레이블 금지)
+9. 조건에 맞는 항목이 없으면 빈 결과 반환
+10. **반드시 한글로만 응답하세요**
+11. **길이 제한 없음**
+
+**나쁜 예시 (모호한 표현 - 사용 금지):**
+✗ 주 정부의 이민 단속 권한을 제한하는... (어느 나라? 어느 주?)
+✗ 최근 재판의 결과는 정치적 파장을... (누구의 재판? 어느 나라?)
+✗ 옵션 초기화와 관련되어... (의미 없는 키워드!)
+
+**구체성 규칙 (필수):**
+✓ 국가/지역 명시 - "미국", "대한민국", "서울"
+✓ 구체적 인물/기관 - "윤석열 전 대통령", "미국 연방대법원"
+✓ 구체적 사건명 - "내란 혐의 재판", "텍사스 이민법"
+✓ 날짜/시간 포함 - "오늘 오후 3시"
+
+**AI_GUIDELINES.md 체크리스트:**
+13. 정보 정확성 확인 - 신뢰할 수 있는 출처만 포함
+14. 개인정보 또는 혐오 표현 없음
+15. 이해하기 쉬운 언어 사용
+16. 불필요한 중복 없음
+17. 국가/인물/사건명 구체적으로 명시
+18. 모호한 표현 및 의미 없는 키워드 제거
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+⚠️ 최종 경고: 반드시 한글로만 응답하세요! 영어 절대 금지! ⚠️
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+필터링된 결과 (각 주제마다 별도의 문장, 국가/인물/사건명 구체적으로, 한글로만):"""
             
             elif prefer_today:
                 # 사회, 문화, 게임, 드라마 등: 오늘 뉴스 우선, 최근(1주일) 정보는 가능
-                filter_prompt = f"""다음은 검색 결과 요약입니다.
+                filter_prompt = f"""⚠️ 중요: 반드시 한글로만 응답하세요! 영어 사용 절대 금지! ⚠️
 
+현재 시각: {today} {current_time}
 카테고리: {category}
-오늘 날짜: {today}
 
-**선호 조건: 오늘({today})부터 최근 1주일 내의 뉴스/정보만 포함하세요.**
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+필터링 규칙 (AI_GUIDELINES.md):
+{guidelines_rules}
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-**제외할 항목:**
-1. 명백한 과거 날짜 (작년, 지난해, 2025년, 2024년 등)
-2. 미래 날짜
+아래는 검색 결과 요약입니다 (위 규칙과 별개!):
+
+{summary_text}
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+선호 조건: 오늘({today})부터 최근 1주일 내의 새로운 뉴스/발표/업데이트만 포함하세요.
+
+지시사항:
+1. 위 '필터링 규칙'은 참고용이고, '검색 결과 요약'을 필터링하세요
+2. 최근 정보만 선별하고 **뉴스성**을 판단
+3. 종료된 이벤트는 현재 날짜 기준으로 판단하여 제외
+4. 일반 정보, 링크, 소개는 모두 제외
+
+✓ 반드시 포함할 항목:
+- 새로운 발표, 업데이트, 출시 소식
+- 최근 발생한 사건, 이슈, 트렌드
+- 구체적인 수치나 실적이 포함된 최신 정보
+- 날짜가 명시된 최신 뉴스
+
+✗ 반드시 제외할 항목 (AI_GUIDELINES.md 기준):
+1. 명백한 과거 날짜 (작년, 지난해, 2025년, 2024년, 2021년 등)
+2. 이미 종료된 이벤트 (예: 설날 이벤트, 추석 이벤트, 크리스마스 이벤트 등 - 현재 {current_month}월 {current_day}일 기준)
+3. **광고성 콘텐츠** (적금, 대출, 보험, 카드 등 금융상품 광고)
+4. 미래 날짜
+5. 일반적인 설명이나 소개 ("~는 ~입니다", "~에서 찾을 수 있습니다")
+6. **개인 블로그의 주관적 의견** (신뢰할 수 없는 개인 의견)
+7. 블로그/갤러리/커뮤니티 링크나 포스팅 소개
+8. 시스템 요구사항, 회원가입 안내 등 기본 정보
+9. 단순한 사실 나열 (뉴스성 없는 내용)
+10. "Tistory에 있음", "DC Inside에서 찾을 수 있음" 같은 링크 정보
+11. **메타 정보** ("검색 결과가 삭제되었습니다", "페이지를 찾을 수 없습니다")
+12. **미확인 출처** (신뢰할 수 없는 뉴스 사이트)
+13. **북한 선전 매체** (조선중앙통신, 조선신보 등)
+14. **개인정보 또는 혐오 표현**
 
 요약:
 {summary_text}
 
 지시사항:
-1. 각 항목의 날짜를 확인
-2. 지난해/작년 같은 과거 명시 정보는 제외
-3. 최근 1주일 내의 항목 우선
-4. 원래 형식대로 "• [내용]" 형태로 반환
-5. 조건에 맞는 항목이 없으면 빈 결과 반환
+1. 최근 정보만 선별하고 **뉴스성**을 판단
+2. 종료된 이벤트는 현재 날짜 기준으로 판단하여 제외
+3. 일반 정보, 링크, 소개는 모두 제외
 
-필터링된 결과:"""
+**[중요] 주제 분리 규칙:**
+4. **하나의 문장에는 반드시 하나의 주제만 포함**
+5. **절대로 '또한', '그리고' 등으로 다른 주제를 연결하지 말 것**
+6. **예시: "윤석열", "BTS", "트럼프", "비상계엄"은 각각 완전히 다른 주제이므로 각각 별도의 문장으로 작성**
+7. 같은 주제의 여러 정보만 하나의 종합 문장으로 통합 (예: "윤석열 재판" 관련 여러 내용)
+
+**형식 규칙:**
+8. 각 문장 앞에 '•' 기호만 사용 ("1. 정치:", "5. 기술:" 같은 번호나 카테고리 레이블 금지)
+9. 조건에 맞는 항목이 없으면 빈 결과 반환
+10. **반드시 한글로만 응답하세요**
+11. **길이 제한 없음**
+
+**나쁜 예시 (모호한 표현 - 사용 금지):**
+✗ 주 정부의 이민 단속... (어느 나라? 어느 주?)
+✗ 최근 재판의 결과... (누구? 어느 나라?)
+
+**구체성 규칙 (필수):**
+✓ 국가/지역 명시 - "미국", "대한민국"
+✓ 구체적 인물/기관 - "윤석열 전 대통령", "미국 연방대법원"
+✓ 구체적 사건명 - "내란 혐의", "텍사스 이민법"
+
+**AI_GUIDELINES.md 체크리스트:**
+13. 정보 정확성 확인 - 신뢰할 수 있는 출처만 포함
+14. 개인정보 또는 혐오 표현 없음
+15. 이해하기 쉬운 언어 사용
+16. 불필요한 중복 없음
+17. 국가/인물/사건명 구체적으로 명시
+18. 모호한 표현 제거
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+⚠️ 최종 경고: 반드시 한글로만 응답하세요! 영어 절대 금지! ⚠️
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+필터링된 결과 (각 주제마다 별도의 문장, 국가/인물/사건명 구체적으로, 한글로만):"""
             
-            else:  # no_date_limit - 괴물딴지, 기술
-                # 과거 데이터 괜찮음, 하지만 명시된 과거 날짜는 확인
-                filter_prompt = f"""다음은 검색 결과 요약입니다.
+            else:  # allow_past - 괴물딴지, 미스테리, 기술
+                # 과거 데이터 허용, 하지만 매우 오래된 것은 제외
+                filter_prompt = f"""⚠️ 중요: 반드시 한글로만 응답하세요! 영어 사용 절대 금지! ⚠️
 
+현재 시각: {today} {current_time}
 카테고리: {category}
 
-**조건: 현재/최신 정보 우선이지만 과거 정보도 포함 가능**
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+필터링 규칙 (AI_GUIDELINES.md):
+{guidelines_rules}
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-**제외할 항목:**
-1. 명확한 과거 출시/발표 날짜가 과도하게 오래된 경우만 고려
-   (예: 5년 이상 전, 매우 오래된 정보)
-2. 미래 날짜는 제외
+아래는 검색 결과 요약입니다 (위 규칙과 별개!):
+
+{summary_text}
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+조건: 최신 정보 우선이지만 과거 정보도 포함 가능
+
+지시사항:
+1. 위 '필터링 규칙'은 참고용이고, '검색 결과 요약'을 필터링하세요
+2. 정보성과 뉴스성이 있는 항목만 선택
+3. 일반 정보, 링크, 소개는 모두 제외
+4. 과거 데이터도 허용하나 너무 오래된 것(5년 이상)은 제외
+
+✓ 반드시 포함할 항목:
+- 새로운 발표, 업데이트, 출시 소식
+- 흥미로운 사건, 이슈, 발견
+- 구체적인 내용이 있는 정보성 기사
+- 과거 데이터도 포함 가능 (미스테리, 괴담, 기술 정보)
+
+✗ 반드시 제외할 항목 (AI_GUIDELINES.md 기준):
+1. 5년 이상 전의 매우 오래된 정보
+2. 미래 날짜
+3. 일반적인 설명이나 소개 ("~는 ~입니다", "~에서 찾을 수 있습니다")
+4. **개인 블로그의 주관적 의견** (신뢰할 수 없는 개인 의견)
+5. 블로그/갤러리/커뮤니티 링크나 포스팅 소개
+6. 시스템 요구사항, 회원가입 안내 등 기본 정보
+7. 단순한 사실 나열 (뉴스성 없는 내용)
+8. "Tistory에 있음", "DC Inside에서 찾을 수 있음" 같은 링크 정보
+9. **메타 정보** ("검색 결과가 삭제되었습니다", "페이지를 찾을 수 없습니다")
+10. **미확인 출처** (신뢰할 수 없는 뉴스 사이트)
+11. **광고성 콘텐츠** (적금, 대출, 보험 등)
+12. **개인정보 또는 혐오 표현**
 
 요약:
 {summary_text}
 
 지시사항:
-1. 대부분의 항목을 포함 (정보성 있는 모든 항목)
-2. 너무 오래된 정보(5년 이상 전)만 제외
-3. 원래 형식대로 "• [내용]" 형태로 반환
-4. 조건에 맞는 항목이 없으면 빈 결과 반환
+1. 정보성과 뉴스성이 있는 항목만 선택
+2. 일반 정보, 링크, 소개는 모두 제외
+3. 과거 데이터도 허용하나 너무 오래된 것(5년 이상)은 제외
 
-필터링된 결과:"""
+**[중요] 주제 분리 규칙:**
+4. **하나의 문장에는 반드시 하나의 주제만 포함**
+5. **절대로 '또한', '그리고' 등으로 다른 주제를 연결하지 말 것**
+6. **예시: "윤석열", "BTS", "트럼프", "비상계엄"은 각각 완전히 다른 주제이므로 각각 별도의 문장으로 작성**
+7. 같은 주제의 여러 정보만 하나의 종합 문장으로 통합 (예: "윤석열 재판" 관련 여러 내용)
+
+**형식 규칙:**
+8. 각 문장 앞에 '•' 기호만 사용 ("1. 정치:", "5. 기술:" 같은 번호나 카테고리 레이블 금지)
+9. 조건에 맞는 항목이 없으면 빈 결과 반환
+10. **반드시 한글로만 응답하세요**
+11. **길이 제한 없음**
+
+**나쁜 예시 (모호한 표현 - 사용 금지):**
+✗ 주 정부의 이민 단속... (어느 나라? 어느 주?)
+✗ 최근 재판의 결과... (누구? 어느 나라?)
+
+**구체성 규칙 (필수):**
+✓ 국가/지역 명시 - "미국", "대한민국"
+✓ 구체적 인물/기관 - "윤석열 전 대통령"
+✓ 구체적 사건명 - "내란 혐의"
+
+**AI_GUIDELINES.md 체크리스트:**
+13. 정보 정확성 확인 - 신뢰할 수 있는 출처만 포함
+14. 개인정보 또는 혐오 표현 없음
+15. 이해하기 쉬운 언어 사용
+16. 불필요한 중복 없음
+17. 국가/인물/사건명 구체적으로 명시
+18. 모호한 표현 제거
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+⚠️ 최종 경고: 반드시 한글로만 응답하세요! 영어 절대 금지! ⚠️
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+필터링된 결과 (각 주제마다 별도의 문장, 국가/인물/사건명 구체적으로, 한글로만):"""
             
             log_debug(f"[AI 필터링] 카테고리({category}) 분석 중...")
             
-            response = requests.post(
-                f"{OLLAMA_URL}/api/generate",
-                json={
-                    "model": self.current_model,
-                    "prompt": filter_prompt,
-                    "stream": False,
-                    "options": {
-                        "temperature": 0.3,
-                        "num_predict": 1000
-                    }
-                },
-                timeout=30
+            data = self._ollama_generate(
+                filter_prompt,
+                timeout=30,
+                options={
+                    "temperature": 0.3,
+                    "num_predict": 1000
+                }
             )
+
+            filtered_text = data.get('response', '').strip()
+            log_debug(f"[AI 필터링 결과] {filtered_text[:200] if filtered_text else '(빈 응답)'}")
             
-            if response.status_code != 200:
-                log_debug(f"[AI 필터링 실패] Status: {response.status_code}")
-                return []
-            
-            filtered_text = response.json().get('response', '').strip()
-            log_debug(f"[AI 필터링 결과] {filtered_text[:100]}")
-            
-            # 필터링된 결과를 항목으로 파싱
+            # 필터링된 결과 확인
             if not filtered_text or filtered_text == "":
-                log_debug(f"[AI 필터링] 카테고리({category}) 조건에 맞는 항목 없음")
+                log_debug(f"[AI 필터링] ❌ 카테고리({category}) - AI가 빈 응답 반환")
+                log_debug(f"[AI 필터링] 원본 요약 길이: {len(summary_text)}자")
+                log_debug(f"[AI 필터링] 가능한 원인: 1) 모든 항목이 규칙 위반 2) AI 응답 실패 3) 타임아웃")
                 return []
             
-            # 각 라인을 항목으로 추출
+            # 주제별로 분리된 여러 문장 받기
             news_items = []
+            
             for line in filtered_text.split('\n'):
                 line = line.strip()
                 if not line or line.startswith('━') or line.startswith('─'):
                     continue
+                
+                # •나 - 제거
                 if line.startswith('•'):
                     line = line[1:].strip()
                 elif line.startswith('-'):
                     line = line[1:].strip()
                 
-                # 의미있는 길이 확인
-                if len(line) > 20:
+                # 숫자. 레이블: 패턴 제거 (예: "1. 정치:", "5. 기술:", "1. 전 대통령 윤석열의 재판:")
+                import re
+                line = re.sub(r'^\d+\.\s*.+?:\s*', '', line)
+                line = re.sub(
+                    r'^(?:MBC\s*NEWS|News1|imbc\.com|Daum|SBS|Yna|Google\s*News|Nate|KBS)\s*:\s*',
+                    '',
+                    line,
+                    flags=re.IGNORECASE
+                )
+                
+                if line:
                     news_items.append(line)
+                    log_debug(f"[AI 필터링] 항목 추출 완료 ({len(line)}자)")
             
-            log_debug(f"[AI 필터링] {len(news_items)}개 항목 추출")
+            log_debug(f"[AI 필터링] ✅ {len(news_items)}개 항목 추출 완료")
             return news_items
             
         except requests.exceptions.Timeout:
-            log_debug("[AI 필터링] 타임아웃")
+            log_debug("[AI 필터링] ❌ 타임아웃 (30초 초과) - AI 응답 시간 초과")
+            log_debug(f"[AI 필터링] 원본 요약 길이: {len(summary_text)}자")
+            log_debug(f"[AI 필터링] 카테고리: {category}")
+            log_debug(f"[AI 필터링] 해결 방법: 1) 요약을 더 짧게 2) AI 서버 확인 3) 타임아웃 시간 증가")
             return []
         except Exception as e:
-            log_debug(f"[AI 필터링 오류] {e}")
+            log_debug(f"[AI 필터링] ❌ 오류 발생: {e}")
+            log_debug(f"[AI 필터링] 오류 타입: {type(e).__name__}")
+            import traceback
+            log_debug(f"[AI 필터링] 스택 트레이스: {traceback.format_exc()[:500]}")
             return []
 
     def open_url_in_webview(self, url: str, auto_close_seconds: int = 5):
@@ -1982,29 +2922,47 @@ class OllamaIDE:
         """검색 페이지 요약 결과를 뉴스 항목으로 저장"""
         try:
             today_text = datetime.now().strftime("%Y년 %m월 %d일")
-            self.display_message("system", f"🤖 AI가 요약을 분석 중... (카테고리: {category}, 오늘: {today_text})")
+            self.display_message("system", f"🤖 AI가 AI_GUIDELINES.md 규칙에 맞게 필터링 중... (카테고리: {category}, 오늘: {today_text})")
             
-            # AI가 요약을 분석해서 카테고리에 맞게 필터링
+            # AI가 요약을 AI_GUIDELINES.md 규칙에 맞게 필터링
             news_items = self.filter_recent_news_by_ai(summary_text, category)
 
             if not news_items:
-                log_debug("[저장 건너뜀] 오늘 또는 최근 뉴스 항목 없음")
-                self.display_message("system", "⏭️ 최근 뉴스가 없어 저장을 건너뜁니다")
+                log_debug("[저장 건너뜀] ❌ AI_GUIDELINES.md 규칙에 맞는 뉴스 항목 없음")
+                log_debug(f"[저장 건너뜀] 원본 요약 길이: {len(summary_text)}자")
+                log_debug(f"[저장 건너뜀] 카테고리: {category}")
+                
+                # 원인 분석
+                if "타임아웃" in summary_text or len(summary_text) > 5000:
+                    reason = "AI 응답 타임아웃 또는 요약이 너무 길어서 처리 실패"
+                else:
+                    reason = "모든 항목이 AI_GUIDELINES.md 규칙 위반 (욕설, 북한 관련, 모호한 표현 등)"
+                
+                log_debug(f"[저장 건너뜀] 원인: {reason}")
+                self.display_message("system", f"⏭️ AI_GUIDELINES.md 규칙에 맞는 뉴스가 없어 저장을 건너뜁니다\n원인: {reason}")
                 return
 
+            # AI가 필터링한 결과를 화면에 표시
+            self.display_message("system", f"\n📋 AI_GUIDELINES.md 규칙으로 필터링된 {len(news_items)}개 뉴스:\n")
+            for item in news_items:
+                self.display_message("assistant", f"• {item}\n")
+            
             # 각 뉴스 문장마다 웹뷰/브라우저에서 database.html 열기
             log_debug(f"[뉴스 저장] {len(news_items)}개 항목을 웹뷰로 저장 시작")
-            self.display_message("system", f"💾 {len(news_items)}개 뉴스 항목 저장 시작...")
+            self.display_message("system", f"\n💾 {len(news_items)}개 뉴스 항목 저장 시작...\n")
             
             for idx, item in enumerate(news_items[:8], 1):  # 최대 8개
                 try:
-                    if not self.ai_is_recent_text(item, category):
+                    if category != "검색" and not self.ai_is_recent_text(item, category):
                         log_debug(f"[저장 건너뜀] 오래된 문장: {item[:50]}...")
-                        self.display_message("system", f"⏭️ 오래된 문장 건너뜀: {item[:40]}...")
+                        self.display_message("system", f"⏭️ [{idx}] 오래된 문장 건너뜀")
                         continue
                     # AI가 텍스트 내용을 보고 카테고리 자동 생성
                     ai_category = self.generate_category_from_text(item)
                     log_debug(f"[{idx}] AI 생성 카테고리: {ai_category}")
+                    
+                    # 저장 중임을 표시
+                    self.display_message("system", f"💾 [{idx}] 저장 중... (카테고리: {ai_category})")
                     
                     url = f"{DATABASE_BASE_URL}/database.html?nb={requests.utils.quote(item)}&category={requests.utils.quote(ai_category)}&end=5s"
                     
@@ -2146,7 +3104,7 @@ class OllamaIDE:
             elif search_type == 'news':
                 self.root.after(0, self.display_message, "system", "📰 뉴스 검색 중 (Selenium 크롤링)...")
                 news_results = get_naver_news_smart(keyword, limit=5, use_selenium=True)
-                news_results = self.filter_today_news_items(news_results)
+                # 뉴스 결과 그대로 사용 (필터링은 이후 AI 단계에서 처리)
                 
                 if news_results:
                     results_text += "\n📰 뉴스 검색 결과\n" + "─" * 60 + "\n"
@@ -2190,17 +3148,7 @@ class OllamaIDE:
     def generate_response(self, prompt):
         """AI 응답 생성"""
         try:
-            response = requests.post(
-                f"{OLLAMA_URL}/api/generate",
-                json={
-                    "model": self.current_model,
-                    "prompt": prompt,
-                    "stream": False
-                },
-                timeout=120
-            )
-            response.raise_for_status()
-            data = response.json()
+            data = self._ollama_generate(prompt, timeout=120)
             reply = data.get('response', '응답을 생성할 수 없습니다.')
             
             self.chat_history.append({"role": "assistant", "content": reply})

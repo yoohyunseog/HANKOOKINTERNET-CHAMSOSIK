@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>웹 데이터 수집 & 장르별 검색어 생성 시스템</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css'>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+  <style>
+    body {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      padding: 2rem 0;
+    }
+    .container {
+      max-width: 1400px;
+    }
+    .main-card {
+      background: white;
+      border-radius: 15px;
+      padding: 2rem;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+      margin-bottom: 2rem;
+    }
+    h1 {
+      color: #667eea;
+      border-bottom: 3px solid #764ba2;
+      padding-bottom: 1rem;
+    }
+    .section-title {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 1rem;
+      border-radius: 10px;
+      margin: 2rem 0 1rem 0;
+    }
+    .data-card {
+      border-left: 4px solid #667eea;
+      background: #f8f9fa;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+    }
+    .data-card:hover {
+      transform: translateX(10px);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+    .genre-badge {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      font-weight: 600;
+      margin-right: 0.5rem;
+    }
+    .genre-tech { background: #17a2b8; color: white; }
+    .genre-news { background: #28a745; color: white; }
+    .genre-blog { background: #ffc107; color: #333; }
+    .genre-shop { background: #dc3545; color: white; }
+    .genre-video { background: #6f42c1; color: white; }
+    
+    .summary-box {
+      background: linear-gradient(135deg, #e0f7fa 0%, #b2ebf2 100%);
+      border-left: 5px solid #00acc1;
+      padding: 1rem;
+      margin: 0.5rem 0;
+      border-radius: 8px;
+    }
+    
+    .keyword-box {
+      background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
+      border-left: 5px solid #fb8c00;
+      padding: 1rem;
+      margin: 0.5rem 0;
+      border-radius: 8px;
+    }
+    
+    .keyword-tag {
+      display: inline-block;
+      background: white;
+      padding: 0.3rem 0.8rem;
+      margin: 0.2rem;
+      border-radius: 15px;
+      border: 2px solid #fb8c00;
+      font-size: 0.9rem;
+    }
+    
+    .process-step {
+      background: white;
+      border: 2px solid #667eea;
+      border-radius: 10px;
+      padding: 1.5rem;
+      margin-bottom: 1rem;
+      position: relative;
+    }
+    
+    .step-number {
+      position: absolute;
+      top: -15px;
+      left: 20px;
+      background: #667eea;
+      color: white;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+    
+    .code-preview {
+      background: #2d2d2d;
+      color: #f8f8f2;
+      padding: 1rem;
+      border-radius: 8px;
+      font-family: 'Courier New', monospace;
+      font-size: 0.9rem;
+      overflow-x: auto;
+    }
+    
+    .stat-box {
+      text-align: center;
+      padding: 2rem;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+    
+    .stat-number {
+      font-size: 3rem;
+      font-weight: bold;
+      color: #667eea;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="text-center mb-4">
+    <a href="index.html" class="btn btn-outline-light mb-3">
+      <i class="bi bi-house"></i> 홈으로 돌아가기
+    </a>
+  </div>
+
+  <div class="main-card">
+    <h1 class="text-center mb-4">
+      <i class="bi bi-robot"></i> 웹 데이터 수집 & 장르별 검색어 생성 시스템
+    </h1>
+    <p class="text-center text-muted">Selenium 크롤링 → 장르 분류 → 1줄 요약 → 검색어 추출</p>
+  </div>
+
+  <!-- 프로세스 플로우 -->
+  <div class="main-card">
+    <div class="section-title">
+      <h3 class="mb-0"><i class="bi bi-diagram-3"></i> 데이터 처리 프로세스</h3>
+    </div>
+
+    <div class="process-step">
+      <div class="step-number">1</div>
+      <h5 class="mt-2"><i class="bi bi-cloud-download"></i> 데이터 수집 (Selenium)</h5>
+      <p class="mb-0">Chrome Selenium으로 웹페이지 크롤링 → HTML 파싱 → 텍스트 추출</p>
+    </div>
+
+    <div class="process-step">
+      <div class="step-number">2</div>
+      <h5 class="mt-2"><i class="bi bi-funnel"></i> 장르 자동 분류</h5>
+      <p class="mb-0">URL 패턴, 키워드, 메타데이터 분석 → 기술/뉴스/블로그/쇼핑/영상 분류</p>
+    </div>
+
+    <div class="process-step">
+      <div class="step-number">3</div>
+      <h5 class="mt-2"><i class="bi bi-file-text"></i> 1줄 요약 생성</h5>
+      <p class="mb-0">본문 내용 분석 → 핵심 문장 추출 → 1줄 요약문 생성</p>
+    </div>
+
+    <div class="process-step">
+      <div class="step-number">4</div>
+      <h5 class="mt-2"><i class="bi bi-tags"></i> 검색어 추출</h5>
+      <p class="mb-0">요약문 형태소 분석 → 명사/키워드 추출 → 검색어 리스트 생성</p>
+    </div>
+  </div>
+
+  <!-- 예제 데이터 -->
+  <div class="main-card">
+    <div class="section-title">
+      <h3 class="mb-0"><i class="bi bi-card-list"></i> 수집 데이터 예제</h3>
+    </div>
+
+    <!-- 기술 뉴스 예제 -->
+    <div class="data-card">
+      <div class="d-flex justify-content-between align-items-start mb-2">
+        <div>
+          <span class="genre-badge genre-tech">기술</span>
+          <strong>OpenAI, GPT-5 개발 중단 발표</strong>
+        </div>
+        <small class="text-muted">2026-02-15</small>
+      </div>
+      
+      <div class="summary-box">
+        <strong><i class="bi bi-chat-quote"></i> 1줄 요약:</strong><br>
+        OpenAI가 안전성 검증 미비로 GPT-5 개발을 중단하고 GPT-4 개선에 집중한다고 발표했다.
+      </div>
+      
+      <div class="keyword-box">
+        <strong><i class="bi bi-search"></i> 추출 검색어:</strong><br>
+        <span class="keyword-tag">OpenAI</span>
+        <span class="keyword-tag">GPT-5</span>
+        <span class="keyword-tag">개발중단</span>
+        <span class="keyword-tag">안전성검증</span>
+        <span class="keyword-tag">인공지능</span>
+      </div>
+      
+      <small class="text-muted">
+        <i class="bi bi-link-45deg"></i> https://example.com/tech/openai-gpt5-news
+      </small>
+    </div>
+
+    <!-- 블로그 예제 -->
+    <div class="data-card">
+      <div class="d-flex justify-content-between align-items-start mb-2">
+        <div>
+          <span class="genre-badge genre-blog">블로그</span>
+          <strong>2026년 웹 개발 트렌드 정리</strong>
+        </div>
+        <small class="text-muted">2026-02-10</small>
+      </div>
+      
+      <div class="summary-box">
+        <strong><i class="bi bi-chat-quote"></i> 1줄 요약:</strong><br>
+        2026년 웹 개발은 AI 통합, Edge Computing, WebAssembly 확대가 핵심 트렌드로 부상했다.
+      </div>
+      
+      <div class="keyword-box">
+        <strong><i class="bi bi-search"></i> 추출 검색어:</strong><br>
+        <span class="keyword-tag">웹개발</span>
+        <span class="keyword-tag">2026트렌드</span>
+        <span class="keyword-tag">AI통합</span>
+        <span class="keyword-tag">Edge Computing</span>
+        <span class="keyword-tag">WebAssembly</span>
+      </div>
+      
+      <small class="text-muted">
+        <i class="bi bi-link-45deg"></i> https://example.com/blog/web-trends-2026
+      </small>
+    </div>
+
+    <!-- 쇼핑 예제 -->
+    <div class="data-card">
+      <div class="d-flex justify-content-between align-items-start mb-2">
+        <div>
+          <span class="genre-badge genre-shop">쇼핑</span>
+          <strong>아이폰16 프로 최저가 할인</strong>
+        </div>
+        <small class="text-muted">2026-02-18</small>
+      </div>
+      
+      <div class="summary-box">
+        <strong><i class="bi bi-chat-quote"></i> 1줄 요약:</strong><br>
+        아이폰16 프로 256GB 모델이 통신사 결합 할인으로 120만원대에 판매 중이다.
+      </div>
+      
+      <div class="keyword-box">
+        <strong><i class="bi bi-search"></i> 추출 검색어:</strong><br>
+        <span class="keyword-tag">아이폰16</span>
+        <span class="keyword-tag">프로</span>
+        <span class="keyword-tag">최저가</span>
+        <span class="keyword-tag">할인</span>
+        <span class="keyword-tag">통신사결합</span>
+      </div>
+      
+      <small class="text-muted">
+        <i class="bi bi-link-45deg"></i> https://example.com/shop/iphone16-pro
+      </small>
+    </div>
+
+    <!-- 영상 예제 -->
+    <div class="data-card">
+      <div class="d-flex justify-content-between align-items-start mb-2">
+        <div>
+          <span class="genre-badge genre-video">영상</span>
+          <strong>[리뷰] 테슬라 모델Y 2026 신형 시승기</strong>
+        </div>
+        <small class="text-muted">2026-02-12</small>
+      </div>
+      
+      <div class="summary-box">
+        <strong><i class="bi bi-chat-quote"></i> 1줄 요약:</strong><br>
+        테슬라 모델Y 2026년형은 주행거리 600km, 자율주행 레벨4 지원으로 대폭 업그레이드되었다.
+      </div>
+      
+      <div class="keyword-box">
+        <strong><i class="bi bi-search"></i> 추출 검색어:</strong><br>
+        <span class="keyword-tag">테슬라</span>
+        <span class="keyword-tag">모델Y</span>
+        <span class="keyword-tag">2026신형</span>
+        <span class="keyword-tag">시승기</span>
+        <span class="keyword-tag">자율주행</span>
+      </div>
+      
+      <small class="text-muted">
+        <i class="bi bi-link-45deg"></i> https://youtube.com/watch?v=example
+      </small>
+    </div>
+
+    <!-- 뉴스 예제 -->
+    <div class="data-card">
+      <div class="d-flex justify-content-between align-items-start mb-2">
+        <div>
+          <span class="genre-badge genre-news">뉴스</span>
+          <strong>한국 AI 반도체 수출 첫 10조 돌파</strong>
+        </div>
+        <small class="text-muted">2026-02-17</small>
+      </div>
+      
+      <div class="summary-box">
+        <strong><i class="bi bi-chat-quote"></i> 1줄 요약:</strong><br>
+        2026년 1월 한국의 AI 반도체 수출이 월간 최초로 10조원을 돌파하며 역대 최고치를 기록했다.
+      </div>
+      
+      <div class="keyword-box">
+        <strong><i class="bi bi-search"></i> 추출 검색어:</strong><br>
+        <span class="keyword-tag">한국</span>
+        <span class="keyword-tag">AI반도체</span>
+        <span class="keyword-tag">수출</span>
+        <span class="keyword-tag">10조돌파</span>
+        <span class="keyword-tag">반도체산업</span>
+      </div>
+      
+      <small class="text-muted">
+        <i class="bi bi-link-45deg"></i> https://news.example.com/economy/ai-chip-export
+      </small>
+    </div>
+  </div>
+
+  <!-- 통계 -->
+  <div class="main-card">
+    <div class="section-title">
+      <h3 class="mb-0"><i class="bi bi-bar-chart"></i> 수집 통계</h3>
+    </div>
+
+    <div class="row">
+      <div class="col-md-3">
+        <div class="stat-box">
+          <div class="stat-number">1,240</div>
+          <p class="text-muted mb-0">총 수집 페이지</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="stat-box">
+          <div class="stat-number">5</div>
+          <p class="text-muted mb-0">분류 장르</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="stat-box">
+          <div class="stat-number">1,240</div>
+          <p class="text-muted mb-0">생성된 요약</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="stat-box">
+          <div class="stat-number">6,820</div>
+          <p class="text-muted mb-0">추출 검색어</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 기술 스택 -->
+  <div class="main-card">
+    <div class="section-title">
+      <h3 class="mb-0"><i class="bi bi-stack"></i> 기술 스택 (예정)</h3>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6">
+        <h5><i class="bi bi-browser-chrome"></i> 크롤링</h5>
+        <ul>
+          <li>Selenium (Chrome WebDriver)</li>
+          <li>BeautifulSoup4 (HTML 파싱)</li>
+          <li>requests (HTTP 요청)</li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <h5><i class="bi bi-cpu"></i> 데이터 처리</h5>
+        <ul>
+          <li>konlpy (한국어 형태소 분석)</li>
+          <li>scikit-learn (TF-IDF 키워드 추출)</li>
+          <li>pandas (데이터 처리)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="code-preview mt-3">
+<pre># 예시 코드 구조 (실제 구현 예정)
+from selenium import webdriver
+from bs4 import BeautifulSoup
+from konlpy.tag import Okt
+
+# 1. 데이터 수집
+driver = webdriver.Chrome()
+driver.get('https://example.com')
+html = driver.page_source
+
+# 2. 장르 분류
+genre = classify_genre(url, keywords)
+
+# 3. 1줄 요약 생성
+summary = generate_summary(text)
+
+# 4. 검색어 추출
+keywords = extract_keywords(summary)</pre>
+    </div>
+  </div>
+
+  <div class="text-center mt-4 mb-4">
+    <a href="index.html" class="btn btn-primary btn-lg">
+      <i class="bi bi-arrow-left"></i> 메인으로 돌아가기
+    </a>
+  </div>
+</div>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.bundle.min.js'></script>
+</body>
+</html>

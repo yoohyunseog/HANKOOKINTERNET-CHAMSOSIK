@@ -431,7 +431,9 @@ async function recordVisit(ip, path, userAgent, keyword = null) {
         };
 
         visits.push(visit);
-        console.log('[DEBUG] Visit recorded:', country, keyword, 'Total visits:', visits.length);
+        if (process.env.NODE_ENV !== 'production') {
+            console.log('[DEBUG] Visit recorded:', country, keyword, 'Total visits:', visits.length);
+        }
         
         // 최근 10000개만 유지
         if (visits.length > 10000) {
@@ -490,6 +492,68 @@ async function getVisitsByRegion() {
     } catch (error) {
         console.error('Get visits by region error:', error);
         return [];
+    }
+}
+
+// 일별 방문 통계 (최근 30일)
+async function getVisitsByDay(days = 30) {
+    try {
+        const content = await fs.readFile(VISITS_FILE, 'utf-8');
+        const visits = JSON.parse(content);
+        
+        const daily = {};
+        const today = new Date();
+        const cutoffDate = new Date(today);
+        cutoffDate.setDate(cutoffDate.getDate() - days);
+        
+        visits.forEach(visit => {
+            const date = new Date(visit.timestamp);
+            if (date >= cutoffDate) {
+                const dateStr = date.toISOString().split('T')[0]; // YYYY-MM-DD
+                daily[dateStr] = (daily[dateStr] || 0) + 1;
+            }
+        });
+
+        // 날짜별로 정렬
+        return Object.keys(daily)
+            .sort()
+            .map(date => ({ date, count: daily[date] }));
+    } catch (error) {
+        console.error('Get visits by day error:', error);
+        return [];
+    }
+}
+
+// 오늘 방문자 수
+async function getTodayVisits() {
+    try {
+        const content = await fs.readFile(VISITS_FILE, 'utf-8');
+        const visits = JSON.parse(content);
+        
+        const today = new Date();
+        const todayStr = today.toISOString().split('T')[0];
+        
+        const todayVisits = visits.filter(visit => {
+            const visitDate = new Date(visit.timestamp).toISOString().split('T')[0];
+            return visitDate === todayStr;
+        });
+        
+        return todayVisits.length;
+    } catch (error) {
+        console.error('Get today visits error:', error);
+        return 0;
+    }
+}
+
+// 전체 방문자 수
+async function getTotalVisits() {
+    try {
+        const content = await fs.readFile(VISITS_FILE, 'utf-8');
+        const visits = JSON.parse(content);
+        return visits.length;
+    } catch (error) {
+        console.error('Get total visits error:', error);
+        return 0;
     }
 }
 
@@ -663,6 +727,9 @@ module.exports = {
     recordVisit,
     getVisitsByHour,
     getVisitsByRegion,
+    getVisitsByDay,
+    getTodayVisits,
+    getTotalVisits,
     getTopKeywords,
     getKeywordsByRegion,
     getKeywordsByPeriod

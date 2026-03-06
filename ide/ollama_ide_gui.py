@@ -698,35 +698,70 @@ class OllamaIDE:
         self.chat_display.tag_config("system", foreground="#64748b", font=("Arial", 10, "italic"))
         self.chat_display.tag_config("system_detail", foreground="#38bdf8", font=("Arial", 10, "underline"))
         
-        # 즐겨찾기 명령어 버튼 영역
-        favorites_frame = tk.Frame(chat_container, bg="#0f172a")
-        favorites_frame.pack(fill=tk.X, padx=20, pady=(0, 5))
+        # 즐겨찾기 명령어 버튼 영역 (스크롤 + 저장 버튼)
+        favorites_frame = tk.Frame(chat_container, bg="#1e293b", height=80)
+        favorites_frame.pack(fill=tk.X, padx=20, pady=(10, 5))
+        favorites_frame.pack_propagate(False)  # 높이 고정
+        
+        # 위쪽: 레이블 영역
+        label_frame = tk.Frame(favorites_frame, bg="#1e293b")
+        label_frame.pack(fill=tk.X, padx=5, pady=(5, 2))
         
         tk.Label(
-            favorites_frame,
-            text="⭐ 즐겨찾기:",
-            bg="#0f172a",
-            fg="#64748b",
-            font=("Arial", 9)
+            label_frame,
+            text="⭐ 즐겨찾기 명령어",
+            bg="#1e293b",
+            fg="#22c55e",
+            font=("Arial", 10, "bold")
         ).pack(side=tk.LEFT, padx=5)
         
-        self.favorites_buttons_frame = tk.Frame(favorites_frame, bg="#0f172a")
-        self.favorites_buttons_frame.pack(side=tk.LEFT, fill=tk.X, expand=True)
+        # 아래쪽: Canvas + 저장 버튼 영역
+        button_area = tk.Frame(favorites_frame, bg="#1e293b")
+        button_area.pack(fill=tk.BOTH, expand=True, padx=5, pady=(2, 5))
         
-        # 즐겨찾기 추가 버튼
+        # 즐겨찾기 추가 버튼 (좌측 끝)
         add_fav_btn = tk.Button(
-            favorites_frame,
-            text="+ 추가",
-            bg="#334155",
-            fg="#94a3b8",
-            font=("Arial", 9),
+            button_area,
+            text="➕ 저장",
+            bg="#22c55e",
+            fg="#000",
+            font=("Arial", 9, "bold"),
             relief=tk.FLAT,
             padx=10,
-            pady=2,
+            pady=5,
             cursor="hand2",
             command=self.add_favorite
         )
-        add_fav_btn.pack(side=tk.RIGHT, padx=5)
+        add_fav_btn.pack(side=tk.LEFT, padx=(0, 5), pady=5)
+        
+        # Canvas 기반 스크롤 가능 버튼 영역
+        self.favorites_canvas = tk.Canvas(
+            button_area,
+            bg="#1e293b",
+            highlightthickness=0,
+            height=50
+        )
+        favorites_scrollbar = tk.Scrollbar(
+            button_area,
+            orient=tk.HORIZONTAL,
+            command=self.favorites_canvas.xview
+        )
+        self.favorites_canvas.config(xscrollcommand=favorites_scrollbar.set)
+        
+        self.favorites_buttons_frame = tk.Frame(self.favorites_canvas, bg="#1e293b")
+        self.favorites_canvas.create_window((0, 0), window=self.favorites_buttons_frame, anchor="nw")
+        
+        self.favorites_canvas.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
+        favorites_scrollbar.pack(side=tk.RIGHT, fill=tk.Y)
+        
+        # 마우스 휠 스크롤 바인딩
+        self.favorites_canvas.bind("<MouseWheel>", self._on_favorites_mousewheel)
+        self.favorites_canvas.bind("<Button-4>", self._on_favorites_mousewheel)  # Linux scroll up
+        self.favorites_canvas.bind("<Button-5>", self._on_favorites_mousewheel)  # Linux scroll down
+        
+        # 좌우 마우스 클릭 스크롤
+        self.favorites_canvas.bind("<Button-1>", self._on_favorites_click)  # 좌클릭
+        self.favorites_canvas.bind("<Button-3>", self._on_favorites_click)  # 우클릭
         
         # 입력 영역
         input_frame = tk.Frame(chat_container, bg="#0f172a")
@@ -789,8 +824,13 @@ class OllamaIDE:
     • /트렌드검색반복 [간격초] --infinite [키워드,키워드] - 검색 반복 (무한 반복)
     • /트렌드검색반복 [간격초] --bg [키워드,키워드] - 페이지를 백그라운드로 열기
 
+📊 보고서 일괄 검색 (NEW 🆕):
+    • /보고서검색반복 [간격초] - YouTube 보고서 키워드를 /검색으로 순서 실행
+    • /보고서검색반복 [간격초] --infinite - 보고서 검색 반복 (무한 반복)
+    • /보고서검색반복 [간격초] --bg - 페이지를 백그라운드로 열기
+
 ⭐ 즐겨찾기:
-    • 입력 후 [+ 추가] 버튼 클릭하여 저장
+    • 입력 후 [➕ 현재 입력 저장] 버튼 클릭하여 저장
     • 버튼 클릭으로 빠른 입력
     • 우클릭으로 삭제
 
@@ -1178,35 +1218,65 @@ class OllamaIDE:
             log_debug(f"[즐겨찾기 저장 오류] {e}")
     
     def update_favorites_buttons(self):
-        """즐겨찾기 버튼 업데이트"""
+        """즐겨찾기 버튼 업데이트 (스크롤 지원)"""
         # 기존 버튼 제거
         for widget in self.favorites_buttons_frame.winfo_children():
             widget.destroy()
         
-        # 버튼 생성 (최대 6개)
-        for idx, fav in enumerate(self.favorites[:6]):
-            btn = tk.Button(
+        if not self.favorites:
+            tk.Label(
                 self.favorites_buttons_frame,
-                text=fav[:30] + "..." if len(fav) > 30 else fav,
-                bg="#334155",
-                fg="#e2e8f0",
-                font=("Arial", 9),
-                relief=tk.FLAT,
-                padx=10,
-                pady=3,
-                cursor="hand2",
-                command=lambda f=fav: self.use_favorite(f)
-            )
-            btn.pack(side=tk.LEFT, padx=2)
-            
-            # 우클릭으로 삭제
-            btn.bind("<Button-3>", lambda e, f=fav: self.remove_favorite(f))
+                text="[⭐ 입력 후 저장 버튼을 클릭해서 즐겨찾기 추가]",
+                bg="#1e293b",
+                fg="#64748b",
+                font=("Arial", 9, "italic")
+            ).pack(side=tk.LEFT, padx=5)
+        else:
+            # 버튼 생성 (모든 즐겨찾기)
+            for idx, fav in enumerate(self.favorites):
+                # 명령어 여부에 따른 색상 분기
+                if fav.startswith('/'):
+                    btn_bg = "#3b82f6"  # 파란색 (명령어)
+                    btn_fg = "#fff"
+                else:
+                    btn_bg = "#06b6d4"  # 청록색 (일반 텍스트)
+                    btn_fg = "#000"
+                
+                btn = tk.Button(
+                    self.favorites_buttons_frame,
+                    text=fav[:25] + "..." if len(fav) > 25 else fav,
+                    bg=btn_bg,
+                    fg=btn_fg,
+                    font=("Arial", 9, "bold"),
+                    relief=tk.FLAT,
+                    padx=10,
+                    pady=4,
+                    cursor="hand2",
+                    command=lambda f=fav: self.use_favorite(f),
+                    activebackground="#0ea5e9" if btn_bg == "#3b82f6" else "#14b8a6",
+                    activeforeground="#fff"
+                )
+                btn.pack(side=tk.LEFT, padx=3, pady=2)
+                
+                # 우클릭으로 삭제 (Tooltip)
+                btn.bind("<Button-3>", lambda e, f=fav: self.remove_favorite(f))
+                btn.bind("<Enter>", lambda e, f=fav: self.show_favorite_tooltip(e, f))
+        
+        # Canvas 스크롤 영역 업데이트
+        self.favorites_buttons_frame.update_idletasks()
+        self.favorites_canvas.config(scrollregion=self.favorites_canvas.bbox("all"))
+    
+    def show_favorite_tooltip(self, event, text):
+        """즐겨찾기 버튼 호버시 전체 텍스트 표시"""
+        if len(text) > 25:
+            event.widget.config(text=f"{text}")
     
     def use_favorite(self, text):
         """즐겨찾기 사용"""
         self.input_text.delete(1.0, tk.END)
         self.input_text.insert(1.0, text)
         self.input_text.focus()
+
     
     def add_favorite(self):
         """즐겨찾기 추가"""
@@ -1236,6 +1306,20 @@ class OllamaIDE:
                 self.save_favorites()
                 self.update_favorites_buttons()
                 self.display_message("system", f"❌ 즐겨찾기 제거: {text[:50]}")
+    
+    def _on_favorites_mousewheel(self, event):
+        """즐겨찾기 Canvas 마우스 휠 스크롤"""
+        if event.num == 5 or event.delta < 0:
+            self.favorites_canvas.xview_scroll(3, "units")
+        else:
+            self.favorites_canvas.xview_scroll(-3, "units")
+    
+    def _on_favorites_click(self, event):
+        """즐겨찾기 Canvas 좌우 마우스 클릭 스크롤"""
+        if event.num == 1:  # 좌클릭 = 좌로 스크롤
+            self.favorites_canvas.xview_scroll(-5, "units")
+        elif event.num == 3:  # 우클릭 = 우로 스크롤
+            self.favorites_canvas.xview_scroll(5, "units")
     
     def on_model_change(self, event):
         """모델 변경"""
@@ -1312,8 +1396,20 @@ class OllamaIDE:
         
         self.process_user_message(message)
 
+    @staticmethod
+    def normalize_user_message(message: str) -> str:
+        """사용자 입력 정규화 (보이지 않는 문자/슬래시 변형 보정)"""
+        if not isinstance(message, str):
+            return ""
+
+        normalized = message.replace('\ufeff', '').replace('\u200b', '').replace('\u200c', '').replace('\u200d', '')
+        normalized = normalized.replace('／', '/').replace('⁄', '/').replace('∕', '/')
+        normalized = normalized.strip()
+        return normalized
+
     def process_user_message(self, message: str, force_search: bool = False) -> bool:
         """사용자 메시지를 처리하고 응답 생성까지 수행"""
+        message = self.normalize_user_message(message)
         if not message or self.is_generating:
             return False
 
@@ -1325,15 +1421,31 @@ class OllamaIDE:
         self.display_message("user", message)
         self.chat_history.append({"role": "user", "content": message})
 
-        # 반복 명령어 처리
-        if self.handle_trend_batch_command(message):
+        # 보고서 검색 명령어 처리 (트렌드보다 먼저 검사)
+        log_debug(f"[Command Check] Processing: {repr(message)}")
+        log_debug(f"[Command Check] Starts with '/보고서검색반복': {message.startswith('/보고서검색반복')}")
+        if self.handle_report_batch_command(message):
+            log_debug(f"[Command Check] ✅ Report batch command matched")
             return True
+        log_debug(f"[Command Check] Report batch command not matched")
 
-        if self.handle_repeat_command(message):
+        # 반복 명령어 처리
+        log_debug(f"[Command Check] About to check trend batch...")
+        if self.handle_trend_batch_command(message):
+            log_debug(f"[Command Check] ✅ Trend batch command matched")
             return True
+        log_debug(f"[Command Check] Trend batch command not matched")
+
+        log_debug(f"[Command Check] About to check repeat command...")
+        if self.handle_repeat_command(message):
+            log_debug(f"[Command Check] ✅ Repeat command matched")
+            return True
+        log_debug(f"[Command Check] Repeat command not matched")
 
         # 수동 검색 명령어 처리
+        log_debug(f"[Command Check] About to check manual search command...")
         if message.startswith('/검색 ') or message.startswith('/네이버 ') or message.startswith('/빙 ') or message.startswith('/뉴스 ') or message.startswith('/유튜브 '):
+            log_debug(f"[Command Check] ✅ Manual search command matched")
             self.handle_search_command(message)
             return True
 
@@ -1420,6 +1532,281 @@ class OllamaIDE:
         search_mode = message.startswith('/트렌드검색반복') or message.startswith('/trend-batch-search')
         self.start_batch(keywords, interval, search_mode, infinite_loop=infinite_mode)
         return True
+
+    def handle_report_batch_command(self, message: str) -> bool:
+        """보고서 키워드 일괄 실행 명령 처리"""
+        # 명령어 전체 매칭
+        if not (message.startswith('/보고서검색반복') or message.startswith('/report-batch-search')):
+            log_debug(f"[Report Command] Not a report command: {repr(message[:50])}")
+            return False
+        
+        log_debug(f"[Report Command] ✅ Report command detected: {repr(message)}")
+        # 기본값 설정
+        interval = 2.0
+        infinite_mode = False
+        background_mode = False
+        
+        # 나머지 부분 파싱
+        rest = None
+        if message.startswith('/보고서검색반복'):
+            rest = message[len('/보고서검색반복'):].strip()
+        else:
+            rest = message[len('/report-batch-search'):].strip()
+        
+        # 파라미터 추출
+        if rest:
+            parts = rest.split()
+            for idx, part in enumerate(parts):
+                if part in ('--infinite', '-무한'):
+                    infinite_mode = True
+                elif part in ('--bg', '--background'):
+                    background_mode = True
+                elif part and part[0].isdigit():
+                    try:
+                        interval = float(part)
+                        if interval < 0.5 and interval != 0:
+                            self.display_message("system", "간격은 0.5초 이상이거나 0이어야 합니다.")
+                            return True
+                    except ValueError:
+                        pass
+
+        # Step 1: 보고서 로드 메시지
+        self.display_message("system", "📄 [Step 1/4] 최신 YouTube 보고서 로드 중...")
+        self.display_message("system", "   • reports 폴더에서 가장 최신 보고서 파일 자동 선택")
+        
+        # Step 2: Ollama AI가 보고서를 분석해서 질문형 문장 1개 생성
+        self.display_message("system", "🤖 [Step 2/4] Ollama AI가 보고서 분석 중...")
+        self.display_message("system", f"   • 모델: {self.current_model}")
+        self.display_message("system", "   • 보고서 내용을 모델에 전달하여 핵심 이슈 분석 중...")
+        question = self.generate_question_from_report(self.current_model)
+        
+        if not question:
+            self.display_message("system", "❌ 보고서 분석 실패. 기본 검색 질문을 사용합니다.")
+            question = "오늘의 주요 뉴스는 무엇인가?"
+        
+        self.display_message("system", f"✅ [Step 2/4] 검색 질문 생성 완료:")
+        self.display_message("system", f"   💬 {question}")
+
+        # Step 3: 배치 모드 준비
+        self.display_message("system", f"⚙️ [Step 3/4] 배치 검색 준비 중...")
+        self.display_message("system", "   • 기존 반복/배치 작업 중단")
+        
+        self.stop_repeat()
+        self.stop_batch()
+        self.batch_open_background = background_mode
+        
+        self.display_message("system", f"   • 검색 간격: {interval}초")
+        self.display_message("system", f"   • 무한반복: {'활성화' if infinite_mode else '비활성화'}")
+        if background_mode:
+            self.display_message("system", "   • 백그라운드 모드: ON")
+        self.display_message("system", "   ✅ 배치 준비 완료")
+        
+        # Step 4: 배치 검색 시작 (질문형 문장 1개로 검색)
+        self.display_message("system", f"🔍 [Step 4/4] 배치 검색 시작!")
+        self.display_message("system", f"   • 생성된 검색어로 /검색 명령 자동 반복 실행")
+        self.display_message("system", f"   • 지정한 간격으로 계속 검색 중...")
+        # 보고서 검색은 항상 검색 모드 사용 (/반복 1 0 형태)
+        self.start_batch([question], interval, search_mode=True, infinite_loop=infinite_mode)
+        return True
+
+    def generate_question_from_report(self, model: str) -> str:
+        """최신 YouTube 보고서를 분석해서 질문형 문장 1개 생성"""
+        import requests
+        
+        root_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+        reports_dir = os.path.join(root_dir, 'youtube', 'reports')
+        
+        # 가장 최신 날짜 폴더 찾기
+        if not os.path.exists(reports_dir):
+            return None
+        
+        date_folders = sorted([d for d in os.listdir(reports_dir) if os.path.isdir(os.path.join(reports_dir, d))], reverse=True)
+        if not date_folders:
+            return None
+        
+        latest_date_dir = os.path.join(reports_dir, date_folders[0])
+        
+        # 최신 JSON 보고서 찾기
+        json_files = sorted(glob.glob(os.path.join(latest_date_dir, 'report_*.json')), reverse=True)
+        if not json_files:
+            return None
+        
+        try:
+            with open(json_files[0], 'r', encoding='utf-8') as f:
+                report_data = json.load(f)
+        except Exception as e:
+            return None
+        
+        # 보고서 내용 정리 (상위 3개 키워드 + 영상 정보)
+        report_summary = "YouTube 보고서 분석:\n\n"
+        
+        if isinstance(report_data, dict) and "keywords" in report_data:
+            keywords_list = report_data["keywords"][:3]  # 상위 3개
+            for idx, kw_data in enumerate(keywords_list, 1):
+                keyword = kw_data.get("keyword", "")
+                nb_score = kw_data.get("nb_score", 0)
+                videos = kw_data.get("videos", [])
+                
+                report_summary += f"{idx}. 키워드: {keyword} (N/B Score: {nb_score})\n"
+                
+                # 상위 2개 영상 요약
+                for vid_idx, video in enumerate(videos[:2], 1):
+                    title = video.get("title", "")[:50]
+                    subtitle = video.get("subtitle_summary", "")[:100]
+                    report_summary += f"   영상: {title}\n"
+                    if subtitle and subtitle != "자막 없음":
+                        report_summary += f"   요약: {subtitle}\n"
+                
+                report_summary += "\n"
+        
+        # Ollama AI에게 질문형 문장 생성 요청
+        prompt = f"""다음 YouTube 보고서를 분석하여 가장 중요한 검색 질문을 하나만 만들어주세요. 
+질문형 문장으로 작성하세요. 예: "지금 비트코인 시장은 어떻게 변하고 있는가?", "부동산 정책이 어떻게 바뀌고 있는가?"
+
+=== 보고서 내용 ===
+{report_summary}
+
+=== 출력 형식 ===
+질문 문장 하나만 출력하세요. (따옴표 제외)
+
+검색 질문:"""
+        
+        try:
+            response = requests.post(
+                "http://localhost:11434/api/generate",
+                json={{
+                    "model": model,
+                    "prompt": prompt,
+                    "stream": False,
+                    "options": {{
+                        "temperature": 0.5,
+                        "num_predict": 100,
+                    }}
+                }},
+                timeout=60
+            )
+            response.raise_for_status()
+            result = response.json()
+            question = result.get("response", "").strip()
+            
+            if question and len(question) > 5:
+                return question
+        except Exception as e:
+            pass
+        
+        return None
+
+    def load_report_keywords_from_file(self) -> list:
+        """최신 YouTube 보고서에서 키워드 추출 (JSON 파일 우선)"""
+        root_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+        reports_dir = os.path.join(root_dir, 'youtube', 'reports')
+        
+        # 가장 최신 날짜 폴더 찾기
+        if not os.path.exists(reports_dir):
+            self.display_message("system", f"보고서 폴더를 찾을 수 없습니다: {reports_dir}")
+            return []
+        
+        # 날짜 폴더 목록 (YYYY-MM-DD 형식)
+        date_folders = []
+        for item in os.listdir(reports_dir):
+            item_path = os.path.join(reports_dir, item)
+            if os.path.isdir(item_path):
+                date_folders.append(item)
+        
+        if not date_folders:
+            self.display_message("system", "보고서 폴더가 없습니다.")
+            return []
+        
+        # 가장 최신 폴더 선택
+        latest_date = sorted(date_folders, reverse=True)[0]
+        latest_date_dir = os.path.join(reports_dir, latest_date)
+        
+        # 방법 1: JSON 파일에서 직접 추출 (가장 reliable)
+        json_files = sorted(glob.glob(os.path.join(latest_date_dir, 'report_*.json')), reverse=True)
+        
+        if json_files:
+            latest_json = json_files[0]
+            try:
+                with open(latest_json, 'r', encoding='utf-8') as f:
+                    data = json.load(f)
+                
+                keywords = []
+                if isinstance(data, dict) and "keywords" in data:
+                    for kw_data in data["keywords"]:
+                        keyword = kw_data.get("keyword", "")
+                        # "오늘의 주요 뉴스" 제외
+                        if keyword and keyword != "오늘의 주요 뉴스" and "🔒" not in keyword:
+                            keywords.append(keyword)
+                
+                if keywords:
+                    self.display_message("system", f"✅ 보고서 키워드 {len(keywords)}개 로드: " + ", ".join(keywords[:3]) + "...")
+                    return keywords
+            except Exception as e:
+                self.display_message("system", f"JSON 파일 파싱 오류: {e}")
+        
+        # 방법 2: 마크다운 파일의 테이블에서 추출 (AI 리포트가 아닌 경우)
+        md_files = sorted(glob.glob(os.path.join(latest_date_dir, 'report_*.md')), reverse=True)
+        
+        if not md_files:
+            self.display_message("system", f"보고서 파일을 찾을 수 없습니다: {latest_date_dir}")
+            return []
+        
+        latest_report = md_files[0]
+        
+        try:
+            with open(latest_report, 'r', encoding='utf-8') as f:
+                content = f.read()
+        except Exception as e:
+            self.display_message("system", f"보고서 읽기 오류: {e}")
+            return []
+        
+        # 마크다운에서 키워드 추출 (분석 결과 테이블)
+        keywords = []
+        seen = set()
+        
+        # 테이블 행 파싱 (| 키워드 | ... 형식)
+        lines = content.split('\n')
+        in_table = False
+        for line in lines:
+            # "| 순위 | 키워드 |" 같은 헤더 찾기
+            if '| 순위 ' in line and '| 키워드 ' in line:
+                in_table = True
+                continue
+            
+            if in_table:
+                # 구분선 무시
+                if line.strip().startswith('|---'):
+                    continue
+                
+                # 테이블 종료
+                if not line.strip().startswith('|'):
+                    in_table = False
+                    break
+                
+                # 테이블 행에서 키워드 추출
+                parts = [p.strip() for p in line.split('|')]
+                if len(parts) >= 3:
+                    # 보통 부분은: | 순위 | 키워드 | ... |
+                    keyword = parts[2]  # 두 번째 열 (0: 빈칸, 1: 순위, 2: 키워드)
+                    
+                    # 정리
+                    keyword = keyword.replace('🔒', '').strip()
+                    if keyword and keyword not in ('키워드',) and keyword not in seen:
+                        seen.add(keyword)
+                        keywords.append(keyword)
+        
+        if not keywords:
+            self.display_message("system", f"보고서에서 키워드를 추출할 수 없습니다: {os.path.basename(latest_report)}")
+            return []
+        
+        # 랜덤하게 섞기
+        random.shuffle(keywords)
+        
+        line = ', '.join(keywords[:10])
+        self.display_message("system", f"✅ 보고서 키워드 {len(keywords)}개 추출 완료")
+        self.display_message("system", f"📄 파일: {os.path.basename(latest_report)} | 샘플: {line}")
+        
+        return keywords
 
     def parse_extra_keywords(self, raw: str) -> list:
         if not raw:
