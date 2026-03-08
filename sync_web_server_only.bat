@@ -22,6 +22,7 @@ scp "%LOCAL_DIR%\storage.js" %SERVER%:%REMOTE_BASE%/web/
 scp "%LOCAL_DIR%\calculate.js" %SERVER%:%REMOTE_BASE%/web/
 scp "%LOCAL_DIR%\package.json" %SERVER%:%REMOTE_BASE%/web/
 scp "%LOCAL_DIR%\package-lock.json" %SERVER%:%REMOTE_BASE%/web/
+scp "%LOCAL_DIR%\restart_every_10min.js" %SERVER%:%REMOTE_BASE%/web/
 
 echo Done.
 endlocal

@@ -5,6 +5,11 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const compression = require('compression');
+const helmet = require('helmet');
+const rateLimit = require('express-rate-limit');
+const cors = require('cors');
+const xss = require('xss-clean');
+const hpp = require('hpp');
 const path = require('path');
 const fs = require('fs'); // fs require를 path와 함께 위쪽에 위치
 const { calculateNB } = require('./calculate');
@@ -12,6 +17,43 @@ const storage = require('./storage');
 const config = require('./config.json');
 
 const app = express();
+
+// Trust proxy - Nginx 리버스 프록시 뒤에서 실행
+app.set('trust proxy', 1);
+
+// 보안 미들웨어 적용
+app.use(helmet()); // HTTP 헤더 보안
+app.use(cors()); // CORS 설정
+app.use(xss()); // XSS 공격 방어
+app.use(hpp()); // HTTP Parameter Pollution 방어
+
+// Rate Limiting
+const limiter = rateLimit({
+  windowMs: 15 * 60 * 1000, // 15분
+  max: 100, // IP당 최대 100 요청
+  message: '너무 많은 요청이 발생했습니다. 잠시 후 다시 시도해주세요.',
+  validate: {xForwardedForHeader: false}, // X-Forwarded-For validation 비활성화
+  skip: (req) => {
+    const path = req.path || '';
+    // SEO 및 주요 API 경로는 rate limit 제외
+    return path === '/sitemap.xml' ||
+           path === '/feed.xml' ||
+           path === '/feed-popular.xml' ||
+           path === '/robots.txt' ||
+           path === '/ads.txt' ||
+           path.startsWith('/api/recent') ||
+           path.startsWith('/api/calculation') ||
+           path.startsWith('/api/search') ||
+           path.startsWith('/api/most-viewed') ||
+           path.startsWith('/api/visits/') ||
+           path.startsWith('/api/keywords/') ||
+           path.startsWith('/api/stats') ||
+           path === '/api/health' ||
+           /^\/google[a-zA-Z0-9]+\.html$/.test(path);
+  }
+});
+app.use(limiter);
+
 app.use(compression()); // Gzip 압축 활성화
 const PORT = process.env.PORT || 3000;
 const OLLAMA_BASE_URL = process.env.OLLAMA_BASE_URL || 'http://localhost:11434';

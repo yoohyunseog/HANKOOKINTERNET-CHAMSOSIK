@@ -1,0 +1,515 @@
+{
+  "timestamp": "2026-03-07T18:01:04.879699",
+  "model": "news-singleline:latest",
+  "keyword_count": 3,
+  "analyze_subtitles": true,
+  "analysis_source": "youtube",
+  "keywords": [
+    {
+      "keyword": "오늘의 주요 뉴스",
+      "is_fixed": true,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "단독 뉴스",
+      "is_fixed": false,
+      "views": [
+        50995,
+        149479
+      ],
+      "video_count": 2,
+      "videos": [
+        {
+          "title": "[단독] 초밥 8만 원, 치킨 13만 원…사망 당일 내역 보니 / SBS 8뉴스",
+          "video_id": "OtwrOSauxBs",
+          "views": 50995,
+          "upload_date": "2026-03-06",
+          "url": "https://www.youtube.com/watch?v=OtwrOSauxBs",
+          "subtitle_summary": "[사건 피의자 김모 씨가 피해자를 대상으로 고가의 음식물(초밥, 치킨)을 배달하며 경제적 이익을 취한 것으로 드러났고, 피해자의 사망 시점과 범행 시점을 추정하는 데 결정적인 증거가 되었다.]",
+          "db_saved": true
+        },
+        {
+          "title": "[단독] '시민단체 출신 특검보'가 '김건희 봐주기' 의혹 수사 지휘 / JTBC 뉴스룸",
+          "video_id": "H0qO8ZwRUj0",
+          "views": 149479,
+          "upload_date": "2026-03-06",
+          "url": "https://www.youtube.com/watch?v=H0qO8ZwRUj0",
+          "subtitle_summary": "2차 종합 특검이 검찰의 김건희 씨 봐주기 의혹 수사에 시민단체 출신 특검보가 수사 지휘하며 자료 확보에 나섰고, 텔레그램 메시지 확보를 통해 수사 무마 의혹을 조사하는 가운데 도이치 모터스 주가 조작 사건 기록도 포함된 자료를 넘겨받을 예정입니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 3.0658,
+      "min": 0.4841,
+      "nb_score": 6.3331,
+      "avg_views": 100237.0,
+      "total_views": 200474
+    },
+    {
+      "keyword": "경제 뉴스",
+      "is_fixed": false,
+      "views": [
+        54770,
+        214770
+      ],
+      "video_count": 2,
+      "videos": [
+        {
+          "title": "국제유가 또 12% 급등…\"세계 경제 붕괴할 수도\" / SBS",
+          "video_id": "IsxdEY-wCvs",
+          "views": 54770,
+          "upload_date": "2026-03-06",
+          "url": "https://www.youtube.com/watch?v=IsxdEY-wCvs",
+          "subtitle_summary": "[이란의 지속적인 공격과 트럼프 대통령의 협상 발언으로 국제유가가 12% 급등하며 배럴당 90달러를 돌파했고, 저장고 부족 현상과 중동 산유국의 생산 감축 가능성까지 겹쳐 세계 경제 붕괴 우려가 커지고 있습니다.]",
+          "db_saved": true
+        },
+        {
+          "title": "[에디터픽] 대이란 군사작전 '전쟁 청구서' 폭탄...미국 경제에 몰아칠 '피바람' / YTN",
+          "video_id": "PDj6LVpksSY",
+          "views": 214770,
+          "upload_date": "2026-03-06",
+          "url": "https://www.youtube.com/watch?v=PDj6LVpksSY",
+          "subtitle_summary": "미국이 이란 군사 작전 대응을 위해 의회에 500억 달러 규모의 추가 지출 승인을 요청할 것으로 예상되며, 이는 미국 경제에 상당한 부담을 줄 수 있습니다. 트럼프 행정부의 추가 지출 요청은 의회 내 야당과 재정 매파들의 반발에 직면할 가능성이 높습니다. 이스라엘을 비롯한 주변 국가들의 방공 미사일 확보 경쟁이 심화되는 가운데, 우크라이나 역시 러시아 미사일 방어를 위한 미사일 지원을 요청하고 있습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 2.946,
+      "min": 1.0823,
+      "nb_score": 2.7219,
+      "avg_views": 134770.0,
+      "total_views": 269540
+    },
+    {
+      "keyword": "대통령 뉴스",
+      "is_fixed": false,
+      "views": [
+        96119,
+        63790,
+        15948
+      ],
+      "video_count": 3,
+      "videos": [
+        {
+          "title": "[오늘 이 뉴스] '7대 비정상' 지목한 대통령, \"걸리면 패가망신\" 경고 (2026.03.06/MBC뉴스)",
+          "video_id": "MsDoBs0jKFw",
+          "views": 96119,
+          "upload_date": "2026-03-06",
+          "url": "https://www.youtube.com/watch?v=MsDoBs0jKFw",
+          "subtitle_summary": "[대통령은 세계 경제 위기와 중동 상황에 대비하여 ‘7대 비정상’ 문제 해결을 강조하며, 국민 삶의 안위를 지키기 위한 정부의 총력을 다할 것을 밝혔다.]",
+          "db_saved": true
+        },
+        {
+          "title": "탄핵 D-7 '대통령을 지켜라'.. 용산의 극비 시나리오 [뉴스.zip/MBC뉴스]",
+          "video_id": "o8HGGp5raHI",
+          "views": 63790,
+          "upload_date": "2026-03-07",
+          "url": "https://www.youtube.com/watch?v=o8HGGp5raHI",
+          "subtitle_summary": "윤석열 대통령 탄핵 심판 과정에서 대통령실이 작성한 극비 문건이 공개되어, 민주당의 탄핵 인용 시나리오를 담고 있다는 의혹이 제기되었으며, 한덕수, 최상목 총리에 대한 직무 유기 혐의가 적용되었습니다. 문건 작성 과정에서 대통령실 관계자들이 해명에 나섰지만, 헌법 재판관 구성에 유리하게 조직하려는 시도가 위헌성을 드러냈고, 마은혁 재판관 임명 보류와 이완규 후보자 지명은 위법 행위로 판단되었습니다. 결국 내란 특검은 윤석열 정부 인사들을 재판에 넘겨 탄핵 과정의 특수성을 드러냈습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[지금뉴스] ‘왕사남’ 천만 돌파, 대통령도 축하 / KBS 2026.03.07.",
+          "video_id": "OOQBkzvNrKs",
+          "views": 15948,
+          "upload_date": "2026-03-07",
+          "url": "https://www.youtube.com/watch?v=OOQBkzvNrKs",
+          "subtitle_summary": "[‘왕사남’ 천만 돌파에 대통령이 축하하며, 유희진과 박지훈의 명품 사각 로맨스에 관객들의 울컥함이 감돌았고, 영월당 마을에 벌어진 혼란스러운 상황이 전파되어 큰 화제를 모았다.]",
+          "db_saved": true
+        }
+      ],
+      "max": 2.225,
+      "min": 2.8399,
+      "nb_score": 0.7835,
+      "avg_views": 58619.0,
+      "total_views": 175857
+    },
+    {
+      "keyword": "속보",
+      "is_fixed": false,
+      "views": [
+        71790,
+        2327373,
+        588770,
+        549972
+      ],
+      "video_count": 4,
+      "videos": [
+        {
+          "title": "[🔴속보] 이스라엘 하늘에 비처럼 쏟아진 '악마의 무기'…\"이란, 이스라엘에 집속탄 쐈다\"｜하나가 수백 개로 분열…유엔 사용 금지 무기 / 연합뉴스TV(YonhapnewsTV)",
+          "video_id": "7M1Y_KIARyc",
+          "views": 71790,
+          "upload_date": "2026-03-07",
+          "url": "https://www.youtube.com/watch?v=7M1Y_KIARyc",
+          "subtitle_summary": "주한미군이 패트리어트와 사드 등 방공 시스템을 활용하여 대북 억지력을 강화하고 있으며, 최근 이스라엘에 집속탄을 공격한 것은 ‘에이테스’라는 강력한 지대공 미사일 시스템의 동원 가능성을 시사한다.",
+          "db_saved": true
+        },
+        {
+          "title": "[속보] 전투기 100대 출격 테헤란 '융단폭격', 군기지 '불바다'..뻥 뚫린 이란 방공망 - [MBC 뉴스속보] MBC뉴스 2026년 03월 05일",
+          "video_id": "9xh-cwd1faQ",
+          "views": 2327373,
+          "upload_date": "2026-03-06",
+          "url": "https://www.youtube.com/watch?v=9xh-cwd1faQ",
+          "subtitle_summary": "이스라엘이 전투기 100대 이상을 동원하여 이란 수도 테헤란의 군 시설을 융단폭격하고, 수천 명의 이란군을 제압했다는 주장을 제기했습니다. 이 과정에서 이란의 미사일이 나토 회원국인 터키로 날아가 격추되었고, 긴장이 고조되었으며, 이란 또한 미사일과 드론 공격을 감행했습니다. 새로운 이란 지도자로 유력한 모즈타바 하메네이가 하메이 최고 지도자의 차남으로, 강경파의 지지를 얻으며 후계자 자리를 차지할 가능성이 높아졌습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[Breaking News] UAE Benefits from 'Cheonggung': \"Two National Aircraft to be Deployed to Korea\"",
+          "video_id": "ap4PdpA_Vv4",
+          "views": 588770,
+          "upload_date": "2026-03-06",
+          "url": "https://www.youtube.com/watch?v=ap4PdpA_Vv4",
+          "subtitle_summary": "[이재명 대통령은 우방국과의 공조를 바탕으로 중동 지역 체류 국민의 신속한 철수와 안전을 최우선으로 지시했으며, UAE와 긴밀히 협력하여 항공편 운항 재계, 귀국 지원, 그리고 호르무즈 해협 원유 수급 안보 위기 경보에 대응하기로 합의했습니다.]",
+          "db_saved": true
+        },
+        {
+          "title": "[속보] 걸프해역 유조선 피격..\"자폭선박 공격 추정\" 이란 혁명수비대 \"중동 인프라 완전 파괴\" - [MBC 뉴스속보] MBC뉴스 2026년 03월 06일",
+          "video_id": "DlFDAcn4Yl8",
+          "views": 549972,
+          "upload_date": "2026-03-07",
+          "url": "https://www.youtube.com/watch?v=DlFDAcn4Yl8",
+          "subtitle_summary": "걸프해역에서 유조선이 폭발적으로 파괴된 가운데, 이란 혁명수비대가 중동 인프라 완전 파괴를 주장하며 미국 유도선 등 공격을 감행, 중앙아시아 아제르바이잔까지 드론 공격을 받는 등 국제적 긴장이 고조되고 있습니다. 프랑스, 독일, 영국, 이탈리아 등 유럽 국가들이 걸프 국가를 지원하며 위기감이 커지고 있으며, 이스라엘 군은 이란 방공망의 80% 미사일 발세대를 파괴했다고 주장했습니다. 쿠르드족 무장 세력의 지상전 가능성도 제기되며 상황은 더욱 복잡해지고 있습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0.965,
+      "min": 1.8359,
+      "nb_score": 0.5256,
+      "avg_views": 884476.25,
+      "total_views": 3537905
+    },
+    {
+      "keyword": "실시간 뉴스",
+      "is_fixed": false,
+      "views": [
+        246282,
+        70557,
+        550030,
+        26637,
+        129421,
+        29585,
+        449758
+      ],
+      "video_count": 7,
+      "videos": [
+        {
+          "title": "\"무조건 항복 외에 없다\"‥\"4~6주 안에 종료\" - [LIVE] MBC 뉴스투데이 2026년 03월 07일",
+          "video_id": "9f_p6gAvzZA",
+          "views": 246282,
+          "upload_date": "2026-03-06",
+          "url": "https://www.youtube.com/watch?v=9f_p6gAvzZA",
+          "subtitle_summary": "트럼프 미국 대통령이 이란과의 협상에 대해 무조건적인 항복 외에는 고려하지 않겠다고 강경하게 밝혔으며, 한 달 안에 군사 작전을 종료하겠다는 입장을 표명했습니다. 이스라엘과 이란 간의 교전이 지속되는 가운데, 미국은 이란의 미사일 생산 능력을 파괴하고, 민간 시설 공격까지 감행하며 전장을 확대하고 있습니다. 정부는 아라 매미리트를 통해 600만 배럴의 원유를 긴급 도입하고, 아랍 에미리트와 전세기 투입 방안을 논의 중입니다.",
+          "db_saved": true
+        },
+        {
+          "title": "이란 영공 장악했다는 미국‥\"무조건 항복하라\" - [LIVE] MBC 뉴스 2026년 3월 7일",
+          "video_id": "M2iLewWBn0A",
+          "views": 70557,
+          "upload_date": "2026-03-07",
+          "url": "https://www.youtube.com/watch?v=M2iLewWBn0A",
+          "subtitle_summary": "트럼프 대통령은 이란에 대한 군사 작전이 한 달 안에 끝날 것이며, 이란의 무조건 항복 외에는 어떤 협상도 없을 것이라고 선언했습니다. 백악관은 이란 차기 지도자 후보군을 주시하고 있으며, 이란의 탄도 미사일 공격 감소를 통해 연공 장악 수순에 접어들었다고 주장했습니다. 또한, 쿠바 등 인접 국가에 대한 협상 가능성을 열어두며 국제 유가가 급등하는 등 중동 지역의 긴장감이 지속되고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[속보] 걸프해역 유조선 피격..\"자폭선박 공격 추정\" 이란 혁명수비대 \"중동 인프라 완전 파괴\" - [MBC 뉴스속보] MBC뉴스 2026년 03월 06일",
+          "video_id": "DlFDAcn4Yl8",
+          "views": 550030,
+          "upload_date": "2026-03-07",
+          "url": "https://www.youtube.com/watch?v=DlFDAcn4Yl8",
+          "subtitle_summary": "걸프해역에서 유조선이 폭발적으로 파괴된 사건으로 이란 혁명수비대가 중동 인프라 완전 파괴를 주장하며 긴장이 고조되고 있습니다. 이란은 미국 유도선 공격과 함께 걸프 국가 및 이스라엘을 상대로 공격을 감행했고, 아제르바이잔까지 드론 공격을 받으며 유럽 국가들도 방공전력 지원에 나섰습니다. 동시에 인도양에서는 미군 잠수함 공격으로 군함이 침몰하는 등 복잡한 해상 위기가 발생하고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[풀영상] 뉴스광장 : 중동 사태 7일째…“‘무조건 항복’이 합의 조건” - 2026년 3월 7일(토) / KBS",
+          "video_id": "MGA6R_FQaT8",
+          "views": 26637,
+          "upload_date": "2026-03-06",
+          "url": "https://www.youtube.com/watch?v=MGA6R_FQaT8",
+          "subtitle_summary": "이스라엘이 이란 수도 테란의 지하 벙커를 집중 폭격하고, 이란은 장거리 탄도 미사일 발사 등 반격을 이어가면서 중동 사태가 격화되고 있으며, 트럼프 대통령은 이란의 무조건적인 항복이 유일한 합의 조건이라고 주장했습니다. 국제 유가 급등하고, 우리 국민 귀국 지원 등 긴장감이 고조되는 가운데, 중동 지역의 민간 시설 피해가 속출하고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[🔴속보] 최신 미사일 '프리즘' 투입 \"2단계 공습 개시\"…격전지는 이란 서부 \"내륙 깊이 타격할 것\"| SBS 실시간 라이브",
+          "video_id": "HsA9vnlS7yU",
+          "views": 129421,
+          "upload_date": "2026-03-06",
+          "url": "https://www.youtube.com/watch?v=HsA9vnlS7yU",
+          "subtitle_summary": "미국은 이란 지도부 제거를 위한 2단계 공습 작전을 개시하여 이란 서부 내륙 깊숙한 곳을 주요 타격 목표로 삼고 있으며, 헤그세스 장관은 트럼프 대통령 암살 시도 혐의로 이란 군 지휘관을 사살했다고 발표했습니다. 동시에 인도양에서 이란함 격침 영상을 공개하며 해상에서의 군사적 압박을 강화하고, 쿠르드족 지부의 지상 작전에 대한 의혹도 제기되고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "\"'무조건 항복' 외엔 없을 것\"‥트럼프 강경 의지 - [LIVE] MBC 뉴스25 2026년 03월 07일",
+          "video_id": "RleIwEWZbnc",
+          "views": 29585,
+          "upload_date": "2026-03-06",
+          "url": "https://www.youtube.com/watch?v=RleIwEWZbnc",
+          "subtitle_summary": "트럼프 대통령은 이란의 하메이니 최고 지도자 후계자를 용납할 수 없다고 강하게 반발하며, 합의는 무조건 항복 외에는 없을 것이라는 입장을 재확인했습니다. 미군은 이란의 미사일 생산 능력 차단 작전을 본격화하며 전역에서 주요 군사 시설을 집중 타격하고, 선박과 우주 사정부격 기관을 공격했습니다. 트럼프 대통령은 이란 지도부 구성에 직접 간섭하겠다는 의지를 밝히며, 중장기전투 가능성을 시사했습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "\"중동 기름 오지도 않았는데\"..짭짤하게 벌다가 '매운맛' #뉴스다 / JTBC News",
+          "video_id": "MREgAhSVREs",
+          "views": 449758,
+          "upload_date": "2026-03-06",
+          "url": "https://www.youtube.com/watch?v=MREgAhSVREs",
+          "subtitle_summary": "[전국 주유소 기름값이 급등하며 서민 경제에 부담을 가중시키고 있으며, 정부는 중동 사태를 이용한 불법적인 가격 인상 행위에 대해 강력하게 시장 점검과 단속을 진행할 예정입니다. 유가 위기를 악용한 행위에 대한 경고와 함께, 가짜 석유 유통 및 유통 대리점 조사 등 다각적인 조치를 통해 시장 안정을 도모하고 있습니다. 이재명 대통령은 최고 가격 지정제 검토를 지시하고 금융시장 변동성에 대한 대응을 주문했습니다.]",
+          "db_saved": true
+        }
+      ],
+      "max": 0.8512,
+      "min": 1.6596,
+      "nb_score": 0.5129,
+      "avg_views": 214610.0,
+      "total_views": 1502270
+    },
+    {
+      "keyword": "실시간 속보",
+      "is_fixed": false,
+      "views": [
+        2328571,
+        71885,
+        95512,
+        129439,
+        550197
+      ],
+      "video_count": 5,
+      "videos": [
+        {
+          "title": "[속보] 전투기 100대 출격 테헤란 '융단폭격', 군기지 '불바다'..뻥 뚫린 이란 방공망 - [MBC 뉴스속보] MBC뉴스 2026년 03월 05일",
+          "video_id": "9xh-cwd1faQ",
+          "views": 2328571,
+          "upload_date": "2026-03-06",
+          "url": "https://www.youtube.com/watch?v=9xh-cwd1faQ",
+          "subtitle_summary": "이스라엘이 전투기 100대 이상을 동원하여 이란 수도 테헤란의 군 시설을 융단폭격하고, 수천 명의 이란군을 제압했다는 주장이 제기되었습니다. 이 과정에서 이란의 미사일이 나토 회원국인 터키로 날아가 격추되었고, 미국 주둔 군사 기지를 겨냥한 것으로 의심되기도 했습니다. 긴장 속에서 이란 역시 이스라엘과 주변 국가들에 대한 미사일 및 드론 공격을 지속하며, 차기 지도자로 유력한 하메이의 아들 모즈타바가 폭격으로 사망하면서 후계 구도 변화에 대한 우려가 커지고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[🔴속보] 이스라엘 하늘에 비처럼 쏟아진 '악마의 무기'…\"이란, 이스라엘에 집속탄 쐈다\"｜하나가 수백 개로 분열…유엔 사용 금지 무기 / 연합뉴스TV(YonhapnewsTV)",
+          "video_id": "7M1Y_KIARyc",
+          "views": 71885,
+          "upload_date": "2026-03-07",
+          "url": "https://www.youtube.com/watch?v=7M1Y_KIARyc",
+          "subtitle_summary": "주한미군이 패트리어트와 사드 등 방공 시스템을 활용하여 대북 억지력을 강화하고 있으며, 최근 이스라엘에 집속탄을 공격한 사건과 관련하여 에이테스 등 차세대 지대공 미사일 도입 가능성도 논의되고 있다.",
+          "db_saved": true
+        },
+        {
+          "title": "[🔴속보] '사거리 2천㎞' 이란, 케이바르 셰칸 미사일 투입…'對이스라엘 전용 무기' 장거리 탄도미사일 발사 시작 / 연합뉴스TV(YonhapnewsTV)",
+          "video_id": "nxH_Mp0Rkns",
+          "views": 95512,
+          "upload_date": "2026-03-06",
+          "url": "https://www.youtube.com/watch?v=nxH_Mp0Rkns",
+          "subtitle_summary": "두바이 공항에서 인천-두바이 직항 노선이 미국과 이스라엘의 이란 공습 이후 처음으로 운항을 재개했으며, 에미레이트 항공 32편이 현지 시간 오전 6시경 이륙했다. 트럼프 전 대통령이 크루드족의 이란 지상 작전을 공개적으로 지지하며, 차기 지도자 선출에도 개입하겠다는 의사를 밝혔고, 이라크 크루드족이 이란 국경을 넘나들며 긴장을 고조시키고 있다.",
+          "db_saved": true
+        },
+        {
+          "title": "[🔴속보] 최신 미사일 '프리즘' 투입 \"2단계 공습 개시\"…격전지는 이란 서부 \"내륙 깊이 타격할 것\"| SBS 실시간 라이브",
+          "video_id": "HsA9vnlS7yU",
+          "views": 129439,
+          "upload_date": "2026-03-06",
+          "url": "https://www.youtube.com/watch?v=HsA9vnlS7yU",
+          "subtitle_summary": "미국은 이란 지도부 제거를 위한 2단계 공습 작전을 개시하여 이란 서부 내륙 깊숙이 타격하고 있으며, 이란 군사 시설에 대한 폭탄 공격과 잠수함 공격을 통해 군사적 능력을 약화시키고 있습니다. 트럼프 대통령은 이란 지도자 제거를 목표로 압박을 강화하며, 미국은 이란의 전함 격침을 통해 인도양 해역에서의 영향력을 확대하고 있습니다. 또한, 이라크 쿠르드족의 지상 작전에 대한 의혹이 제기되며 미국과 이스라엘의 개입 가능성이 제기되고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[속보] 걸프해역 유조선 피격..\"자폭선박 공격 추정\" 이란 혁명수비대 \"중동 인프라 완전 파괴\" - [MBC 뉴스속보] MBC뉴스 2026년 03월 06일",
+          "video_id": "DlFDAcn4Yl8",
+          "views": 550197,
+          "upload_date": "2026-03-07",
+          "url": "https://www.youtube.com/watch?v=DlFDAcn4Yl8",
+          "subtitle_summary": "걸프해역에서 유조선이 폭발적으로 파괴된 가운데, 이란 혁명수비대가 자폭선박 공격을 추정하고 중동 인프라 완전 파괴를 주장하며 미국 유도선 타격 등 공격을 감행했습니다. 유럽 국가들이 걸프해 방공전력 지원에 동참하면서 위기감이 고조되었고, 동시에 인도양에서 미군 잠수함 공격으로 군함이 침몰, 시신 수습 및 구조 작업이 진행되었습니다. 쿠르드족 무장 세력의 지상전 가능성도 제기되면서 상황이 더욱 복잡해지고 있습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0.4515,
+      "min": 1.4311,
+      "nb_score": 0.3155,
+      "avg_views": 635120.8,
+      "total_views": 3175604
+    },
+    {
+      "keyword": "주요 뉴스",
+      "is_fixed": false,
+      "views": [
+        2093
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "[모닝와이드] 오늘의 주요뉴스 / SBS",
+          "video_id": "r8Gqr87w7-U",
+          "views": 2093,
+          "upload_date": "2026-03-06",
+          "url": "https://www.youtube.com/watch?v=r8Gqr87w7-U",
+          "subtitle_summary": "미국과 이스라엘의 이란 공격 작전이 진행 중이며, 트럼프 전 대통령이 이란에 무조건 항복을 압박하고 백악관은 작전 목표 기간을 제시했습니다. 국제 유가가 배럴당 90달러를 넘으면서 세계 경제 붕괴 우려가 제기되었고, 이재명 대통령은 기름값 급등에 대한 대응을 강화했습니다. 월드 베이스볼 클래식에서 우리 대표팀이 일본을 상대로 이변을 노리고 있습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "긴급 뉴스",
+      "is_fixed": false,
+      "views": [
+        290468
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "새벽에 들어온 긴급 뉴스! 이재명 언급..? [배승희 뉴스배송]",
+          "video_id": "shC5Y34IhIM",
+          "views": 290468,
+          "upload_date": "2026-03-06",
+          "url": "https://www.youtube.com/watch?v=shC5Y34IhIM",
+          "subtitle_summary": "미국이 이란을 공격하며 초유의 군사적 긴장 상황이 벌어진 가운데, 트럼프 대통령이 김정은을 다음 목표로 지목하고 미국은 이란을 제거하는 동시에 북한의 핵 개발에 대한 경고를 강화했습니다. 이재명이 북한을 언급한 발언은 트럼프 대통령의 전략을 저격한 것으로 해석되며, 이재명 정치적 입지가 더욱 위축될 것으로 예상됩니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "오늘 헤드라인",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "오늘 이슈",
+      "is_fixed": false,
+      "views": [
+        87313
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "[이슈] 역대급 롤코 증시 '시한폭탄' 불붙었다…'빚투' 강제 청산 오늘 터지나?/2026년 3월 6일(금)/KBS",
+          "video_id": "sOtmzADm5rs",
+          "views": 87313,
+          "upload_date": "2026-03-06",
+          "url": "https://www.youtube.com/watch?v=sOtmzADm5rs",
+          "subtitle_summary": "[B2조 규모의 강제 청산이 ‘시한폭탄’으로 불리며 불안감을 증폭시키고 있으며, 신용융자 장고의 담보 비율 유지가 안 될 경우 증권사들이 반대 매매 및 강제 청산을 단행할 가능성이 높아지고 있다.]",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "핫이슈 뉴스",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "정치 뉴스",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "사회 뉴스",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "사건 사고",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "국회 뉴스",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "정부 발표",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "정책 뉴스",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "국정 뉴스",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    }
+  ]
+}

@@ -13,6 +13,7 @@ import json
 from datetime import datetime
 import argparse
 import time
+import re
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
@@ -386,10 +387,7 @@ def generate_diagram_with_ollama(url, page_content, model=OLLAMA_MODEL):
         # 실제 데이터 아이템 정보
         data_items_info = '\n'.join(page_content['data_items'][:15]) if page_content.get('data_items') else "데이터 없음"
         
-        # 콘텐츠 링크 정보 (카테고리/메뉴 제외)
-        links_info = '\n'.join(page_content['links'][:15]) if page_content['links'] else "링크 없음"
-        
-        # 프롬프트 생성 (카테고리/메뉴 정보 제외, 실제 데이터 위주)
+        # 프롬프트 생성 (실제 콘텐츠만, 링크/메타 정보 제외)
         prompt = f"""다음은 웹사이트 '{url}'의 실제 콘텐츠 데이터입니다:
 
 【웹사이트 제목】
@@ -398,31 +396,49 @@ def generate_diagram_with_ollama(url, page_content, model=OLLAMA_MODEL):
 【실제 데이터 아이템 ({len(page_content.get('data_items', []))}개)】
 {data_items_info}
 
-【콘텐츠 링크 ({len(page_content['links'])}개)】
-{links_info}
-
 ---
 
-위 정보를 바탕으로 이 웹사이트의 **실제 데이터 콘텐츠 구조**를 보여주는 **Mermaid 플로우차트 다이어그램 코드**를 생성해주세요.
+위 정보를 바탕으로 이 웹사이트의 **실제 콘텐츠만**을 보여주는 **Mermaid 플로우차트 다이어그램 코드**를 생성해주세요.
 
 **중요 요구사항:**
 1. 반드시 Mermaid flowchart 문법만 사용 (```mermaid 태그 없이, 코드만)
 2. flowchart TD 또는 flowchart LR로 시작
-3. **카테고리나 메뉴가 아닌, 실제 데이터 아이템과 콘텐츠 링크를 노드로 표현**
-4. 실제 뉴스/게시물/아이템 간의 관계를 화살표로 표현
+3. **실제 데이터의 제목과 내용만 노드로 표현** (구조적 노드 제외)
+4. 실제 콘텐츠 간의 주제 관계를 화살표로 표현
 5. 한글 레이블 사용 (노드 ID는 영문)
-6. **최소 10개 이상의 노드 포함** (실제 데이터 아이템 기반)
-7. 스타일링 추가 (classDef, class 사용) - 최소 3가지 스타일 클래스
-8. 부가 설명이나 주석 없이 Mermaid 코드만 출력
-9. **"정치", "경제", "카테고리", "필터" 같은 메뉴 항목은 제외하고, 실제 콘텐츠만 사용**
+6. **최소 12개 이상의 노드 포함** (실제 데이터 아이템 기반)
+7. 스타일링 추가 (classDef, class 사용)
+8. **마지막에 AI 분석 노드 추가**: 트렌드 분석, 예상/예측, 결론, 인사이트
+9. 부가 설명이나 주석 없이 Mermaid 코드만 출력
+
+**반드시 제외해야 할 것들:**
+- "홈페이지", "메인", "최신 뉴스", "뉴스 섹션" 같은 일반적 구조 노드
+- "링크", "검색", "다운로드", "URL" 같은 메타 정보
+- "조회수 TOP", "인기 검색어" 같은 통계 정보
+- "네이버", "구글", "드라이브" 같은 외부 서비스
+- "정치", "경제", "사회" 같은 단순 카테고리명
+
+**반드시 포함해야 할 것들:**
+- 실제 뉴스/게시물의 구체적인 제목
+- 데이터의 실제 내용과 세부사항
+- 콘텐츠 간의 주제 연관성
+- **마지막 섹션: AI 분석 결과 (트렌드, 예측, 결론, 인사이트)**
 
 **출력 형식 (예시):**
 flowchart TD
-    A[홈페이지] --> B[뉴스 섹션]
-    A --> C[데이터베이스]
-    B --> D[연예 뉴스]
-    classDef mainStyle fill:#667eea,stroke:#333,color:#fff
-    class A mainStyle
+    A[트럼프 이란 공습 작전 발표] --> B[헤그세스 장관 암살 시도]
+    C[미국 이란 관계 악화] --> A
+    D[중동 긴장 고조] --> C
+    E[이란 핵 시설 타격] --> F[국제 원유 가격 급등]
+    
+    %% AI 분석 섹션
+    G[AI 트렌드 분석: 중동 정세 불안 심화] --> H[예측: 원유 공급 차질 우려]
+    H --> I[결론: 국제 경제 영향 불가피]
+    
+    classDef newsStyle fill:#e3f2fd,stroke:#1976d2,color:#000
+    classDef aiStyle fill:#fff3e0,stroke:#f57c00,color:#000,stroke-width:3px
+    class A,B,C,D,E,F newsStyle
+    class G,H,I aiStyle
 
 지금 바로 Mermaid 다이어그램 코드를 생성하세요:"""
 
@@ -452,6 +468,9 @@ flowchart TD
         # flowchart로 시작하지 않으면 추가
         if not mermaid_code.startswith('flowchart') and not mermaid_code.startswith('graph'):
             mermaid_code = "flowchart TD\n" + mermaid_code
+
+        # 노드 라벨 불필요 접두어 제거
+        mermaid_code = re.sub(r'텍스트일반\s*:\s*', '', mermaid_code)
         
         print(f"✅ 다이어그램 생성 완료 ({len(mermaid_code)} 바이트)")
         print(f"\n【생성된 Mermaid 코드】\n{mermaid_code[:300]}...\n")
@@ -471,11 +490,12 @@ flowchart TD
     class A mainStyle"""
 
 
-def save_diagram_html(mermaid_code, url, page_content, output_path, model=OLLAMA_MODEL):
-    """생성된 Mermaid 다이어그램을 HTML 파일로 저장"""
+def save_diagram_files(mermaid_code, url, page_content, output_path, model=OLLAMA_MODEL):
+    """생성된 Mermaid 다이어그램을 HTML과 .mmd 파일로 저장"""
     try:
         timestamp = datetime.now().strftime("%Y년 %m월 %d일 %H:%M:%S")
         
+        # HTML 파일 저장
         html_content = HTML_TEMPLATE.format(
             title=page_content['title'],
             url=url,
@@ -488,10 +508,17 @@ def save_diagram_html(mermaid_code, url, page_content, output_path, model=OLLAMA
             f.write(html_content)
         
         print(f"\n✅ HTML 파일 저장 완료: {output_path}")
+        
+        # .mmd 파일 저장 (다이어그램 코드만)
+        mmd_path = output_path.replace('.html', '.mmd')
+        with open(mmd_path, 'w', encoding='utf-8') as f:
+            f.write(mermaid_code)
+        
+        print(f"✅ Mermaid 파일 저장 완료: {mmd_path}")
         return True
         
     except Exception as e:
-        print(f"❌ HTML 파일 저장 실패: {e}")
+        print(f"❌ 파일 저장 실패: {e}")
         return False
 
 
@@ -532,8 +559,13 @@ def main():
     if args.output:
         output_path = args.output
     else:
-        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        output_path = f"website_diagram_{timestamp}.html"
+        # 고정된 경로 설정
+        base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+        output_dir = os.path.join(base_dir, 'web', 'public', '한국인터넷.한국', '참소식.com')
+        output_path = os.path.join(output_dir, 'website_diagram.html')
+        
+        # 디렉토리가 없으면 생성
+        os.makedirs(output_dir, exist_ok=True)
     
     print("=" * 70)
     print("🌐 웹사이트 구조 다이어그램 자동 생성 도구")
@@ -589,9 +621,9 @@ def main():
     # 3단계: Ollama AI로 다이어그램 생성
     mermaid_code = generate_diagram_with_ollama(url, page_content, args.model)
     
-    # 4단계: HTML 파일 저장
-    print("\n💾 HTML 파일 생성 중...")
-    success = save_diagram_html(mermaid_code, url, page_content, output_path, args.model)
+    # 4단계: HTML과 .mmd 파일 저장
+    print("\n💾 다이어그램 파일 생성 중...")
+    success = save_diagram_files(mermaid_code, url, page_content, output_path, args.model)
     
     if success:
         print("\n" + "=" * 70)

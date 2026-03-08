@@ -22,6 +22,7 @@
   <!-- RSS 피드 링크 -->
   <link rel="alternate" type="application/rss+xml" title="참소식.com RSS 피드" href="/feed.xml">
   <link rel="alternate" type="application/rss+xml" title="참소식.com 인기글" href="/feed-popular.xml">
+  <!-- 다이어그램(.mmd) 파싱은 내부 스크립트로 처리 -->
   <style>
     :root {
       --primary-color: #059669;
@@ -104,6 +105,150 @@
       max-width: 1400px;
       border-radius: 10px;
       box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    /* 다이어그램 섹션 스타일 */
+    .diagram-section {
+      background: white;
+      padding: 30px 20px;
+      margin: 30px auto;
+      max-width: 1400px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .diagram-container {
+      width: 100%;
+      min-height: 600px;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      overflow: auto;
+      background: #f9f9f9;
+      padding: 20px;
+      -webkit-overflow-scrolling: touch; /* 모바일 스크롤 개선 */
+    }
+
+    .diagram-masonry {
+      max-width: none;
+      padding: 0;
+    }
+
+    .diagram-relation-card {
+      background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+      border-radius: 12px;
+      padding: 14px;
+      border: 1px solid #dbe4ef;
+      box-shadow: 0 3px 12px rgba(15, 23, 42, 0.08);
+      cursor: pointer;
+      transition: transform 0.18s ease, box-shadow 0.18s ease;
+    }
+
+    .diagram-relation-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(15, 23, 42, 0.12);
+    }
+
+    .diagram-node {
+      border: 2px solid #cbd5e1;
+      border-radius: 12px;
+      padding: 10px 12px;
+      background: #ffffff;
+      position: relative;
+    }
+
+    .diagram-node.source {
+      border-color: #059669;
+      background: #ecfdf5;
+    }
+
+    .diagram-node.target {
+      border-color: #0891b2;
+      background: #ecfeff;
+    }
+
+    .diagram-node.ai {
+      border-color: #f59e0b;
+      background: #fffbeb;
+      box-shadow: 0 0 0 2px rgba(245, 158, 11, 0.15) inset;
+    }
+
+    .diagram-node-badge {
+      display: inline-block;
+      font-size: 0.72em;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 999px;
+      margin-bottom: 6px;
+      color: white;
+    }
+
+    .diagram-node.source .diagram-node-badge {
+      background: #059669;
+    }
+
+    .diagram-node.target .diagram-node-badge {
+      background: #0891b2;
+    }
+
+    .diagram-node.ai .diagram-node-badge {
+      background: #d97706;
+    }
+
+    .diagram-label {
+      font-size: 0.96em;
+      line-height: 1.45;
+      color: #1f2937;
+      word-break: keep-all;
+    }
+
+    .diagram-link {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 8px 0;
+      gap: 2px;
+    }
+
+    .diagram-link-line {
+      width: 2px;
+      height: 18px;
+      background: linear-gradient(180deg, #34d399 0%, #0ea5e9 100%);
+      border-radius: 999px;
+    }
+
+    .diagram-arrow {
+      color: #059669;
+      font-weight: 700;
+      text-align: center;
+      font-size: 1em;
+    }
+
+    .diagram-search-links {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 12px;
+    }
+
+    .diagram-search-link {
+      width: 40px;
+      height: 40px;
+      border-radius: 999px;
+      border: 1px solid #d1d5db;
+      background: white;
+      color: #374151;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      font-size: 1.15em;
+    }
+
+    .diagram-search-link:hover {
+      color: #059669;
+      border-color: #10b981;
+      background: #f0fdf4;
     }
 
     .region-keywords-title {
@@ -218,6 +363,51 @@
       to {
         opacity: 1;
         transform: translateY(0);
+      }
+    }
+
+    @keyframes highlightText {
+      0% {
+        color: #059669;
+        font-weight: 700;
+        transform: scale(1.1);
+      }
+      50% {
+        color: #10b981;
+        font-weight: 700;
+        transform: scale(1.15);
+      }
+      100% {
+        color: inherit;
+        font-weight: normal;
+        transform: scale(1);
+      }
+    }
+
+    /* 모바일 최적화 */
+    @media (max-width: 767px) {
+      .diagram-section {
+        padding: 15px 10px;
+        margin: 15px 5px;
+      }
+
+      .diagram-section h3 {
+        font-size: 1.2em;
+      }
+
+      .diagram-section .text-muted {
+        font-size: 0.9em;
+      }
+
+      .diagram-container {
+        min-height: 280px;
+        padding: 10px;
+        overflow: visible;
+      }
+
+      .region-keywords-section {
+        padding: 15px 10px;
+        margin: 15px 5px;
       }
     }
 
@@ -383,12 +573,16 @@
       </div>
     </div>
 
-    <!-- 오늘 인기 참소식 -->
-    <div class="region-keywords-section">
-      <div class="text-center mb-4">
-        <h3><i class="bi bi-fire"></i> 오늘 인기 참소식</h3>
+    <!-- 웹사이트 구조 다이어그램 -->
+    <div class="diagram-section">
+      <div class="text-center mb-3">
+        <h3><i class="bi bi-diagram-3"></i> 실시간 포켓 카드 이슈 맵</h3>
+        <p class="text-muted">포켓 카드로 보는 검색 흐름</p>
+        <span class="badge bg-success" id="diagram-count">로딩 중...</span>
       </div>
-      <div id="today-keywords-container" style="text-align: center; padding: 10px;"></div>
+      <div class="diagram-container">
+        <div id="diagram-masonry" class="masonry-grid diagram-masonry"></div>
+      </div>
     </div>
 
     <!-- 탭 컨텐츠 -->
@@ -423,12 +617,225 @@
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- 다이어그램(.mmd) 로드 -->
+  <script>
+    function escapeDiagramHtml(text) {
+      const div = document.createElement('div');
+      div.textContent = text || '';
+      return div.innerHTML;
+    }
+
+    function parseMermaidToRelations(mermaidCode) {
+      const relations = [];
+      const nodeLabelMap = new Map();
+
+      const normalized = (mermaidCode || '')
+        .replace(/^```.*$/gm, '')
+        .replace(/%%.*$/gm, '')
+        .replace(/\/\/.*$/gm, '')
+        .replace(/\r/g, '');
+
+      const parseNodeToken = (token) => {
+        const trimmed = (token || '').trim();
+        if (!trimmed) return null;
+
+        const labelMatch = trimmed.match(/^([A-Za-z0-9_]+)\s*(?:\[(.*?)\]|\{(.*?)\})?$/);
+        if (!labelMatch) return null;
+
+        const nodeId = (labelMatch[1] || '').trim();
+        const nodeLabel = ((labelMatch[2] ?? labelMatch[3] ?? '') || '').trim();
+        return { nodeId, nodeLabel };
+      };
+
+      const nodeDefRegex = /([A-Za-z0-9_]+)\s*(?:\[(.*?)\]|\{(.*?)\})/g;
+      let nodeMatch;
+      while ((nodeMatch = nodeDefRegex.exec(normalized)) !== null) {
+        const nodeId = (nodeMatch[1] || '').trim();
+        const nodeLabel = ((nodeMatch[2] ?? nodeMatch[3] ?? '') || '').trim();
+        if (nodeId && nodeLabel) {
+          nodeLabelMap.set(nodeId, nodeLabel);
+        }
+      }
+
+      const edgeRegex = new RegExp('([^\\n;]+?)\\s*-->\\s*([^\\n;]+?)(?=\\s*(?:\\n|;|$))', 'g');
+      let edgeMatch;
+      while ((edgeMatch = edgeRegex.exec(normalized)) !== null) {
+        const fromToken = parseNodeToken(edgeMatch[1]);
+        const toToken = parseNodeToken(edgeMatch[2]);
+        if (!fromToken || !toToken) continue;
+
+        const fromLabel = (fromToken.nodeLabel || nodeLabelMap.get(fromToken.nodeId) || fromToken.nodeId || '').trim();
+        const toLabel = (toToken.nodeLabel || nodeLabelMap.get(toToken.nodeId) || toToken.nodeId || '').trim();
+        if (!fromLabel || !toLabel) continue;
+
+        relations.push({ fromLabel, toLabel });
+      }
+
+      return relations;
+    }
+
+    function renderDiagramMasonry(relations) {
+      const container = document.getElementById('diagram-masonry');
+      const countBadge = document.getElementById('diagram-count');
+      if (!container) return;
+
+      const buildSearchUrl = (engine, query) => {
+        const encoded = encodeURIComponent(query || '');
+        if (engine === 'naver') return `https://search.naver.com/search.naver?query=${encoded}`;
+        if (engine === 'google') return `https://www.google.com/search?q=${encoded}`;
+        if (engine === 'bing') return `https://www.bing.com/search?q=${encoded}`;
+        return `https://www.youtube.com/results?search_query=${encoded}`;
+      };
+
+      const buildCombinedQuery = (fromLabel, toLabel) => {
+        const first = (fromLabel || '').trim();
+        const second = (toLabel || '').trim();
+        if (!first && !second) return '';
+        if (!first) return second;
+        if (!second) return first;
+        if (first === second) return first;
+        return `${first} ${second}`;
+      };
+
+      if (!relations.length) {
+        container.innerHTML = '<div class="text-center py-4 text-muted">표시할 다이어그램 데이터가 없습니다.</div>';
+        if (countBadge) countBadge.textContent = '0개';
+        return;
+      }
+
+      container.innerHTML = relations.map((relation, index) => `
+        <div class="masonry-item">
+          <div class="diagram-relation-card" data-search-query="${encodeURIComponent(buildCombinedQuery(relation.fromLabel, relation.toLabel))}">
+            <div class="diagram-node source ${relation.fromLabel.includes('AI 분석') ? 'ai' : ''}">
+              <div class="diagram-label">${escapeDiagramHtml(relation.fromLabel)}</div>
+            </div>
+            <div class="diagram-link">
+              <div class="diagram-link-line"></div>
+              <div class="diagram-arrow"><i class="bi bi-arrow-down-circle-fill"></i></div>
+            </div>
+            <div class="diagram-node target ${relation.toLabel.includes('AI 분석') ? 'ai' : ''}">
+              <div class="diagram-label fw-semibold">${escapeDiagramHtml(relation.toLabel)}</div>
+            </div>
+            <div class="diagram-search-links">
+              <a class="diagram-search-link" href="${buildSearchUrl('naver', buildCombinedQuery(relation.fromLabel, relation.toLabel))}" target="_blank" rel="noopener" title="네이버 검색"><i class="bi bi-search"></i></a>
+              <a class="diagram-search-link" href="${buildSearchUrl('google', buildCombinedQuery(relation.fromLabel, relation.toLabel))}" target="_blank" rel="noopener" title="구글 검색"><i class="bi bi-google"></i></a>
+              <a class="diagram-search-link" href="${buildSearchUrl('bing', buildCombinedQuery(relation.fromLabel, relation.toLabel))}" target="_blank" rel="noopener" title="빙 검색"><i class="bi bi-compass"></i></a>
+              <a class="diagram-search-link" href="${buildSearchUrl('youtube', buildCombinedQuery(relation.fromLabel, relation.toLabel))}" target="_blank" rel="noopener" title="유튜브 검색"><i class="bi bi-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+      `).join('');
+
+      container.addEventListener('click', (event) => {
+        const searchIconLink = event.target.closest('.diagram-search-link');
+        if (searchIconLink) return;
+
+        const card = event.target.closest('.diagram-relation-card');
+        if (!card) return;
+
+        const encodedQuery = card.dataset.searchQuery || '';
+        if (!encodedQuery) return;
+
+        const query = decodeURIComponent(encodedQuery);
+
+        const naverUrl = `https://search.naver.com/search.naver?query=${encodeURIComponent(query)}`;
+        window.open(naverUrl, '_blank', 'noopener');
+      });
+
+      if (countBadge) countBadge.textContent = `${relations.length}개`;
+    }
+
+    async function loadDiagramMasonry() {
+      try {
+        const response = await fetch('website_diagram.mmd');
+        if (!response.ok) {
+          throw new Error('다이어그램 파일을 찾을 수 없습니다.');
+        }
+        const mermaidCode = await response.text();
+        const relations = parseMermaidToRelations(mermaidCode);
+        renderDiagramMasonry(relations);
+      } catch (error) {
+        console.error('다이어그램 로드 실패:', error);
+        const container = document.getElementById('diagram-masonry');
+        const countBadge = document.getElementById('diagram-count');
+        if (!container) return;
+        container.innerHTML = 
+          '<div style="text-align: center; padding: 20px; color: #666;">' +
+          '<i class="bi bi-exclamation-triangle" style="font-size: 2em;"></i>' +
+          '<p style="margin-top: 15px; font-size: 0.95em;">다이어그램을 로드할 수 없습니다.</p>' +
+          '<p style="font-size: 0.85em; color: #999;">파일 생성: tools\\run_website_diagram.bat</p>' +
+          '</div>';
+        if (countBadge) countBadge.textContent = '오류';
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', loadDiagramMasonry);
+  </script>
+  
   <script>
     const API_BASE = window.location.origin;
     let recentDataCache = [];
     let popularDataCache = [];
     let currentCategory = 'all';
     let sortingTimers = []; // 진행 중인 애니메이션 타이머들
+
+    async function fetchJsonWithRetry(url, options = {}) {
+      const retries = options.retries ?? 2;
+      const retryDelayMs = options.retryDelayMs ?? 700;
+      const retryStatuses = options.retryStatuses ?? [502, 503, 504];
+
+      let lastError = null;
+
+      for (let attempt = 0; attempt <= retries; attempt++) {
+        try {
+          const response = await fetch(url);
+
+          if (response.ok) {
+            return await response.json();
+          }
+
+          const shouldRetry = retryStatuses.includes(response.status) && attempt < retries;
+          if (shouldRetry) {
+            await new Promise(resolve => setTimeout(resolve, retryDelayMs * (attempt + 1)));
+            continue;
+          }
+
+          throw new Error(`API 응답 실패: ${response.status} ${response.statusText}`);
+        } catch (error) {
+          lastError = error;
+          if (attempt < retries) {
+            await new Promise(resolve => setTimeout(resolve, retryDelayMs * (attempt + 1)));
+            continue;
+          }
+        }
+      }
+
+      throw lastError || new Error('API 요청 실패');
+    }
+
+    async function fetchRecentWithFallback(preferredLimit = 100) {
+      const limits = [preferredLimit, 50, 20, 10].filter((value, index, array) => array.indexOf(value) === index);
+      let lastError = null;
+
+      for (const limit of limits) {
+        try {
+          const payload = await fetchJsonWithRetry(`${API_BASE}/api/recent?limit=${limit}`, {
+            retries: 3,
+            retryDelayMs: 1000
+          });
+
+          if (payload && Array.isArray(payload.results)) {
+            return payload;
+          }
+        } catch (error) {
+          lastError = error;
+          console.warn(`[fetchRecentWithFallback] limit=${limit} 실패:`, error.message);
+        }
+      }
+
+      throw lastError || new Error('최근 데이터 조회 실패');
+    }
 
     // 카테고리별 개수 계산 및 버튼 업데이트
     function updateCategoryCount(data) {
@@ -460,66 +867,6 @@
         
         btn.textContent = displayText;
       });
-    }
-
-    // 오늘 인기 키워드 로드 (로컬 데이터 기반)
-    let todayKeywordsCache = [];
-    
-    async function loadTodayKeywordsData() {
-      try {
-        const container = document.getElementById('today-keywords-container');
-        
-        // 캐시데이터가 있으면 바로 표시
-        if (todayKeywordsCache.length > 0) {
-          renderKeywords(todayKeywordsCache);
-          return;
-        }
-        
-        // 최근 데이터에서 키워드 추출
-        const response = await fetch(`${API_BASE}/api/recent?limit=50`);
-        const data = await response.json();
-        
-        if (!data.success || !data.data || data.data.length === 0) {
-          container.innerHTML = '<p class="text-muted text-center" style="padding: 20px;">아직 데이터가 없습니다.</p>';
-          return;
-        }
-        
-        // 키워드 빈도 계산
-        const keywords = {};
-        data.data.forEach(item => {
-          if (item.input && typeof item.input === 'string') {
-            const key = item.input.substring(0, 50); // 긴 키워드 자르기
-            keywords[key] = (keywords[key] || 0) + (parseInt(item.view_count) || 1);
-          }
-        });
-        
-        // 상위 20개 추출
-        todayKeywordsCache = Object.entries(keywords)
-          .map(([keyword, count]) => ({ keyword, count }))
-          .sort((a, b) => b.count - a.count)
-          .slice(0, 20);
-        
-        renderKeywords(todayKeywordsCache);
-        
-      } catch (error) {
-        console.error('오늘 키워드 데이터 로드 오류:', error);
-        document.getElementById('today-keywords-container').innerHTML = 
-          '<p class="text-muted text-center" style="padding: 20px;">데이터를 불러오는 중...</p>';
-      }
-    }
-    
-    function renderKeywords(keywords) {
-      const container = document.getElementById('today-keywords-container');
-      if (!keywords || keywords.length === 0) {
-        container.innerHTML = '<p class="text-muted text-center" style="padding: 20px;">아직 데이터가 없습니다.</p>';
-        return;
-      }
-      
-      container.innerHTML = keywords.map((item, idx) => `
-        <span class="keyword-badge" onclick="window.open('https://search.naver.com/search.naver?query=' + encodeURIComponent('${escapeHtml(item.keyword)}'), '_blank')" style="cursor: pointer;">
-          <strong>#${idx + 1}</strong> ${escapeHtml(item.keyword)}
-        </span>
-      `).join('');
     }
 
     function escapeHtml(text) {
@@ -664,31 +1011,40 @@
       }, 100);
     }
 
-    async function loadRecentData() {
-      window._lastRecentId = null; // 실시간 업데이트용
-      // 최신 게시물 추가 및 날짜순 재정렬
+    // 실시간 업데이트: 새 게시물 체크 (5초마다 실행)
+    async function checkForNewPosts() {
+      // 캐시가 없으면 실행하지 않음
+      if (recentDataCache.length === 0) return;
+      
       try {
         const response = await fetch(`${API_BASE}/api/recent?limit=1`);
         if (!response.ok) {
-          console.warn(`[loadRecentData] API 응답 실패: ${response.status} ${response.statusText}`);
+          console.warn(`[checkForNewPosts] API 응답 실패: ${response.status} ${response.statusText}`);
           return;
         }
         const data = await response.json();
         if (!data.results || data.results.length === 0) return;
+        
         const newItem = data.results[0];
+        
         // 이미 존재하는지 체크 (id 기준)
         if (recentDataCache.some(item => item.id === newItem.id)) {
-          console.log('[loadRecentData] 중복 게시물입니다:', newItem.id);
-          return;
+          return; // 중복이면 조용히 종료
         }
+        
         // 최신 게시물 추가
         recentDataCache.unshift(newItem);
-        // 최대 10개 유지
-        if (recentDataCache.length > 10) recentDataCache.pop();
+        
+        // 최대 100개 유지
+        if (recentDataCache.length > 100) recentDataCache.pop();
+        
         // 날짜순 재정렬
         recentDataCache.sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp));
+        
         // Masonry 테이블에 반영
         renderFilteredData('recent-data', recentDataCache, false);
+        updateCategoryCount(recentDataCache);
+        
         // 추가된 첫 번째 masonry-item에 애니메이션 효과 적용
         setTimeout(() => {
           const container = document.getElementById('recent-data');
@@ -700,10 +1056,14 @@
             }, 1200);
           }
         }, 100);
-        console.log('[loadRecentData] 최신 게시물 추가 및 날짜순 정렬:', recentDataCache.map(item => item.timestamp));
+        
+        console.log('[checkForNewPosts] 새 게시물 추가:', newItem.id);
       } catch (error) {
-        console.error('[loadRecentData] 오류:', error);
+        console.error('[checkForNewPosts] 오류:', error);
       }
+    }
+
+    async function loadRecentData() {
       try {
         // URL 파라미터 확인
         const urlParams = new URLSearchParams(window.location.search);
@@ -711,21 +1071,9 @@
         const selectedMax = urlParams.get('selected_max');
         const selectedMin = urlParams.get('selected_min');
         
-        let response, data;
-        
         if (searchKeyword && selectedMax !== null && selectedMin !== null) {
-          // 제목 클릭 모드 - 두 API를 동시에 호출
-          const [searchResponse, recentResponse] = await Promise.all([
-            fetch(`${API_BASE}/api/search?text=${encodeURIComponent(searchKeyword)}&limit=100`),
-            fetch(`${API_BASE}/api/recent?limit=100`)
-          ]);
-          
-          if (!searchResponse.ok || !recentResponse.ok) {
-            throw new Error(`API 응답 실패: search=${searchResponse.status}, recent=${recentResponse.status}`);
-          }
-          
-          const searchData = await searchResponse.json();
-          const recentData = await recentResponse.json();
+          // 제목 클릭 모드 - 최근 데이터만 로드 (불필요한 search API 호출 제거)
+          const recentData = await fetchRecentWithFallback(100);
           
           document.getElementById('recent-count').textContent = `🎯 "${searchKeyword}" 기준 유사 항목 ${recentData.count}개`;
           
@@ -749,11 +1097,7 @@
           updateCategoryCount(recentDataCache);
         } else {
           // 일반 모드 - limit 100
-          response = await fetch(`${API_BASE}/api/recent?limit=100`);
-          if (!response.ok) {
-            throw new Error(`API 응답 실패: ${response.status} ${response.statusText}`);
-          }
-          data = await response.json();
+          const data = await fetchRecentWithFallback(100);
           document.getElementById('recent-count').textContent = `${data.count}개`;
           
           recentDataCache = data.results;
@@ -864,10 +1208,54 @@
           if (data.success && data.results && data.results.length > 0) {
             const newViewCount = data.results[0].view_count;
             console.log('새 조회수:', newViewCount);
-            // TODO: 화면의 조회수 배지 업데이트
+            
+            // 화면의 조회수 배지 업데이트
+            updateViewCountOnScreen(itemId, newViewCount);
           }
         })
         .catch(err => console.error('조회수 증가 실패:', err));
+    }
+
+    // 화면의 조회수 표시 업데이트
+    function updateViewCountOnScreen(itemId, newViewCount) {
+      // 모든 카드에서 해당 ID를 가진 요소 찾기
+      const titleElements = document.querySelectorAll(`[data-item-id="${itemId}"]`);
+      
+      titleElements.forEach(titleElement => {
+        // 제목 요소의 부모 카드에서 조회수 span 찾기
+        const card = titleElement.closest('.data-card');
+        if (card) {
+          const viewCountSpan = card.querySelector('.text-muted .ms-3');
+          if (viewCountSpan) {
+            viewCountSpan.textContent = `조회수 ${newViewCount}회`;
+            // 조회수가 업데이트되었음을 시각적으로 표시
+            viewCountSpan.style.animation = 'highlightText 0.5s ease';
+            setTimeout(() => {
+              viewCountSpan.style.animation = '';
+            }, 500);
+          }
+        }
+      });
+      
+      // 캐시에도 업데이트
+      updateViewCountInCache(itemId, newViewCount);
+    }
+
+    // 캐시 데이터의 조회수 업데이트
+    function updateViewCountInCache(itemId, newViewCount) {
+      // recentDataCache 업데이트
+      recentDataCache.forEach(item => {
+        if ((item.id || item.calculation_id) === itemId) {
+          item.view_count = newViewCount;
+        }
+      });
+      
+      // popularDataCache 업데이트
+      popularDataCache.forEach(item => {
+        if ((item.id || item.calculation_id) === itemId) {
+          item.view_count = newViewCount;
+        }
+      });
     }
 
     // 검색 모드로 전환 (페이지 새로고침)
@@ -1024,12 +1412,7 @@
     // 초기 로드
     document.addEventListener('DOMContentLoaded', function() {
       setupCategoryButtonListeners();
-      loadTodayKeywordsData();
-      setInterval(loadRecentData, 5000); // 5초마다 실시간 업데이트
-      setInterval(() => {
-        todayKeywordsCache = []; // 캐시 초기화
-        loadTodayKeywordsData();
-      }, 300000); // 5분마다 오늘 키워드 업데이트
+      setInterval(checkForNewPosts, 5000); // 5초마다 새 게시물 체크
     });
 
     // 브라우저 뒤로/앞으로 가기 지원
