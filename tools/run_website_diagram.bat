@@ -43,10 +43,23 @@ echo.
 
 REM Python 스크립트 실행 (이미 루트 디렉토리로 이동함)
 python tools\generate_website_diagram.py "%TARGET_URL%"
+set "GEN_RESULT=%ERRORLEVEL%"
+
+REM .mmd 기반 SEO 메타 태그 자동 업데이트
+if %GEN_RESULT% EQU 0 (
+    echo.
+    echo [추가] website_diagram.mmd 기반 메타 태그 업데이트 중...
+    python tools\update_meta_from_mmd.py
+    if %ERRORLEVEL% EQU 0 (
+        echo ✅ 메타 태그 자동 업데이트 완료
+    ) else (
+        echo ⚠️  메타 태그 업데이트 실패 (다이어그램 생성은 완료)
+    )
+)
 
 echo.
 echo ========================================
-if %ERRORLEVEL% EQU 0 (
+if %GEN_RESULT% EQU 0 (
     echo ✅ 다이어그램 생성 완료!
     echo.
     echo 생성된 파일이 web/public/한국인터넷.한국/참소식.com/ 에 저장되었습니다.

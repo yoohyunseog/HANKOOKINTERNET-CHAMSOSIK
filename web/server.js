@@ -627,10 +627,58 @@ app.get('/api/stats', async (req, res) => {
     }
 });
 
-// API: RSS 피드 (dlvr.it용)
+// API: RSS 피드 (dlvr.it용) - 캐싱 적용
+const FEED_CACHE_TTL_MS = parseInt(process.env.FEED_CACHE_TTL_MS || '300000', 10); // 5분
+const FEED_CACHE_FILE_PATH = path.join(RECENT_CACHE_DIR, 'feed_cache.json');
+
+function readFeedCache() {
+    try {
+        if (!fs.existsSync(FEED_CACHE_FILE_PATH)) {
+            return {};
+        }
+        const raw = fs.readFileSync(FEED_CACHE_FILE_PATH, 'utf8');
+        if (!raw) return {};
+        return JSON.parse(raw);
+    } catch (error) {
+        console.error('[feed-cache] 파일 읽기 오류:', error.message);
+        return {};
+    }
+}
+
+function writeFeedCache(cacheObject) {
+    try {
+        ensureRecentCacheDir();
+        fs.writeFileSync(FEED_CACHE_FILE_PATH, JSON.stringify(cacheObject, null, 2), 'utf8');
+        return true;
+    } catch (error) {
+        console.error('[feed-cache] 파일 쓰기 오류:', error.message);
+        return false;
+    }
+}
+
 app.get('/feed.xml', async (req, res) => {
     try {
         const limit = parseInt(req.query.limit) || 30;
+        const cacheKey = String(limit);
+        const now = Date.now();
+        
+        // 캐시 확인
+        const cacheStore = readFeedCache();
+        const cached = cacheStore[cacheKey];
+        
+        if (cached && cached.cachedAt && (now - cached.cachedAt) < FEED_CACHE_TTL_MS) {
+            if (process.env.NODE_ENV !== 'production') {
+                console.log(`[feed-cache] HIT: limit=${limit}, age=${Math.round((now - cached.cachedAt) / 1000)}s`);
+            }
+            res.type('application/xml; charset=utf-8');
+            return res.send(cached.payload);
+        }
+        
+        // 캐시 미스 - 데이터 로드
+        if (process.env.NODE_ENV !== 'production') {
+            console.log(`[feed-cache] MISS: limit=${limit}, generating...`);
+        }
+        
         const results = await storage.getRecentCalculations(limit);
         
         // RSS 2.0 형식의 XML 생성
@@ -653,9 +701,10 @@ app.get('/feed.xml', async (req, res) => {
             
             const description = `
                 <p><strong>카테고리:</strong> ${category}</p>
+                <p><strong>키워드:</strong> ${cleanTitle}</p>
                 <p><strong>MAX:</strong> ${nbMax} | <strong>MIN:</strong> ${nbMin}</p>
-                <p><strong>유형:</strong> ${item.type === 'text' ? '텍스트' : '숫자'}</p>
-                <p><strong>조회수:</strong> ${item.view_count || 0}</p>
+                <p><strong>유형:</strong> ${item.type === 'text' ? '텍스트' : '숫자'} | <strong>조회수:</strong> ${item.view_count || 0}</p>
+                <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>
             `.trim();
             
             return `
@@ -673,9 +722,9 @@ app.get('/feed.xml', async (req, res) => {
         const rss = `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0">
     <channel>
-        <title>참소식.com - N/B 데이터베이스</title>
+        <title>참소식.com | 실시간 이슈 맵 RSS</title>
         <link>${siteUrl}</link>
-        <description>참소식 - 최신 N/B 계산 결과</description>
+        <description>중동 정세, 지정학 리스크, 원유 공급, 글로벌 경제·부동산 이슈 흐름을 실시간으로 제공하는 참소식 RSS 피드</description>
         <language>ko-kr</language>
         <lastBuildDate>${buildDate}</lastBuildDate>
         <image>
@@ -687,10 +736,25 @@ ${items}
     </channel>
 </rss>`;
         
+        // 캐시 저장
+        cacheStore[cacheKey] = { cachedAt: now, payload: rss };
+        writeFeedCache(cacheStore);
+        
         res.type('application/xml; charset=utf-8');
         res.send(rss);
     } catch (error) {
         console.error('RSS 피드 생성 오류:', error);
+        
+        // 오류 시 stale 캐시 fallback
+        const limit = parseInt(req.query.limit) || 30;
+        const staleStore = readFeedCache();
+        const stale = staleStore[String(limit)];
+        if (stale && stale.payload) {
+            console.log(`[feed-cache] FALLBACK: 캐시된 피드 사용`);
+            res.type('application/xml; charset=utf-8');
+            return res.send(stale.payload);
+        }
+        
         res.status(500).type('application/xml').send(`<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0">
     <channel>
@@ -734,10 +798,58 @@ function escapeXml(str) {
     });
 }
 
-// API: RSS 피드 - 인기글 (dlvr.it용)
+// API: RSS 피드 - 인기글 (dlvr.it용) - 캐싱 적용
+const FEED_POPULAR_CACHE_TTL_MS = parseInt(process.env.FEED_POPULAR_CACHE_TTL_MS || '600000', 10); // 10분
+const FEED_POPULAR_CACHE_FILE_PATH = path.join(RECENT_CACHE_DIR, 'feed_popular_cache.json');
+
+function readFeedPopularCache() {
+    try {
+        if (!fs.existsSync(FEED_POPULAR_CACHE_FILE_PATH)) {
+            return {};
+        }
+        const raw = fs.readFileSync(FEED_POPULAR_CACHE_FILE_PATH, 'utf8');
+        if (!raw) return {};
+        return JSON.parse(raw);
+    } catch (error) {
+        console.error('[feed-popular-cache] 파일 읽기 오류:', error.message);
+        return {};
+    }
+}
+
+function writeFeedPopularCache(cacheObject) {
+    try {
+        ensureRecentCacheDir();
+        fs.writeFileSync(FEED_POPULAR_CACHE_FILE_PATH, JSON.stringify(cacheObject, null, 2), 'utf8');
+        return true;
+    } catch (error) {
+        console.error('[feed-popular-cache] 파일 쓰기 오류:', error.message);
+        return false;
+    }
+}
+
 app.get('/feed-popular.xml', async (req, res) => {
     try {
         const limit = parseInt(req.query.limit) || 30;
+        const cacheKey = String(limit);
+        const now = Date.now();
+        
+        // 캐시 확인
+        const cacheStore = readFeedPopularCache();
+        const cached = cacheStore[cacheKey];
+        
+        if (cached && cached.cachedAt && (now - cached.cachedAt) < FEED_POPULAR_CACHE_TTL_MS) {
+            if (process.env.NODE_ENV !== 'production') {
+                console.log(`[feed-popular-cache] HIT: limit=${limit}, age=${Math.round((now - cached.cachedAt) / 1000)}s`);
+            }
+            res.type('application/xml; charset=utf-8');
+            return res.send(cached.payload);
+        }
+        
+        // 캐시 미스 - 데이터 로드
+        if (process.env.NODE_ENV !== 'production') {
+            console.log(`[feed-popular-cache] MISS: limit=${limit}, generating...`);
+        }
+        
         const results = await storage.getMostViewedCalculations(limit);
         
         // RSS 2.0 형식의 XML 생성
@@ -760,9 +872,10 @@ app.get('/feed-popular.xml', async (req, res) => {
             
             const description = `
                 <p><strong>카테고리:</strong> ${category}</p>
+                <p><strong>키워드:</strong> ${cleanTitle}</p>
                 <p><strong>MAX:</strong> ${nbMax} | <strong>MIN:</strong> ${nbMin}</p>
-                <p><strong>유형:</strong> ${item.type === 'text' ? '텍스트' : '숫자'}</p>
-                <p><strong>조회수:</strong> ${item.view_count || 0}</p>
+                <p><strong>유형:</strong> ${item.type === 'text' ? '텍스트' : '숫자'} | <strong>조회수:</strong> ${item.view_count || 0}</p>
+                <p><strong>인기 이슈 맵 바로가기:</strong> 지정학 리스크·경제 영향 트렌드 확인</p>
             `.trim();
             
             return `
@@ -780,9 +893,9 @@ app.get('/feed-popular.xml', async (req, res) => {
         const rss = `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0">
     <channel>
-        <title>참소식.com - 인기글</title>
+        <title>참소식.com | 인기 이슈 RSS</title>
         <link>${siteUrl}</link>
-        <description>참소식 - 조회수 많은 N/B 계산 결과</description>
+        <description>조회수 높은 핵심 이슈를 빠르게 모아보는 참소식 인기 RSS 피드</description>
         <language>ko-kr</language>
         <lastBuildDate>${buildDate}</lastBuildDate>
         <image>
@@ -794,10 +907,25 @@ ${items}
     </channel>
 </rss>`;
         
+        // 캐시 저장
+        cacheStore[cacheKey] = { cachedAt: now, payload: rss };
+        writeFeedPopularCache(cacheStore);
+        
         res.type('application/xml; charset=utf-8');
         res.send(rss);
     } catch (error) {
         console.error('인기글 RSS 피드 생성 오류:', error);
+        
+        // 오류 시 stale 캐시 fallback
+        const limit = parseInt(req.query.limit) || 30;
+        const staleStore = readFeedPopularCache();
+        const stale = staleStore[String(limit)];
+        if (stale && stale.payload) {
+            console.log(`[feed-popular-cache] FALLBACK: 캐시된 피드 사용`);
+            res.type('application/xml; charset=utf-8');
+            return res.send(stale.payload);
+        }
+        
         res.status(500).type('application/xml').send(`<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0">
     <channel>
@@ -822,6 +950,12 @@ app.get('/sitemap.xml', async (req, res) => {
         <lastmod>${lastMod}</lastmod>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>${siteUrl}/index.html</loc>
+        <lastmod>${lastMod}</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.9</priority>
     </url>
     <url>
         <loc>${siteUrl}/feed.xml</loc>
