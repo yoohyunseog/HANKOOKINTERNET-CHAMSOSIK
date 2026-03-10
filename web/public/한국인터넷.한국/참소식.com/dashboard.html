@@ -380,14 +380,108 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
         const API_BASE = window.location.origin;
+        const USE_GA4_ANALYTICS = false;
+        const PLAUSIBLE_URL = 'https://plausible.io';
+        const SEARCH_CONSOLE_URL = 'https://search.google.com/search-console';
         let hourlyChart, regionChart, regionPieChart, dailyChart;
         let regionKeywordsData = {};
+
+        function initGaModeDashboard() {
+            const summaryCards = {
+                todayVisits: 'Plausible',
+                totalVisits: 'Plausible',
+                uniqueRegions: 'Plausible',
+                totalKeywords: 'SC'
+            };
+
+            Object.entries(summaryCards).forEach(([id, value]) => {
+                const el = document.getElementById(id);
+                if (el) el.textContent = value;
+            });
+
+            const main = document.querySelector('main.container');
+            if (!main) return;
+
+            const notice = document.createElement('div');
+            notice.className = 'alert alert-info mb-4';
+            notice.innerHTML = `
+                <strong>로컬 조회수/키워드 수집은 비활성화되었습니다.</strong><br>
+                방문 데이터는 Plausible Analytics, 검색 키워드는 Search Console에서 자동 수집됩니다.<br>
+                <a href="${PLAUSIBLE_URL}" target="_blank" rel="noopener" class="btn btn-sm btn-outline-primary mt-2 me-2">Plausible 대시보드</a>
+                <a href="${SEARCH_CONSOLE_URL}" target="_blank" rel="noopener" class="btn btn-sm btn-outline-success mt-2">Search Console 열기</a>
+            `;
+            main.prepend(notice);
+
+            const sectionsToHide = [
+                'dailyLoading', 'dailyChart',
+                'hourlyLoading', 'hourlyChart',
+                'regionLoading', 'regionChart',
+                'regionPieLoading', 'regionPieChart',
+                'worldMapLoading', 'worldMap',
+                'keywordsLoading', 'keywordsTable',
+                'todayKeywordsLoading', 'todayKeywordsTable',
+                'weeklyKeywordsLoading', 'weeklyKeywordsTable',
+                'regionKeywordsContainer'
+            ];
+
+            sectionsToHide.forEach(id => {
+                const element = document.getElementById(id);
+                if (element) element.style.display = 'none';
+            });
+        }
+
+        function wait(ms) {
+            return new Promise(resolve => setTimeout(resolve, ms));
+        }
+
+        async function fetchApiJson(endpoint) {
+            const maxRetries = 3;
+            let lastError = null;
+
+            for (let attempt = 1; attempt <= maxRetries; attempt++) {
+                try {
+                    const separator = endpoint.includes('?') ? '&' : '?';
+                    const controller = new AbortController();
+                    const timeoutId = setTimeout(() => controller.abort(), 8000);
+
+                    const response = await fetch(`${API_BASE}${endpoint}${separator}_=${Date.now()}`, {
+                        cache: 'no-store',
+                        signal: controller.signal
+                    });
+
+                    clearTimeout(timeoutId);
+
+                    if (!response.ok) {
+                        const shouldRetry = [502, 503, 504].includes(response.status);
+                        if (shouldRetry && attempt < maxRetries) {
+                            await wait(500 * attempt);
+                            continue;
+                        }
+                        throw new Error(`API 응답 실패: ${response.status} ${response.statusText}`);
+                    }
+
+                    return response.json();
+                } catch (error) {
+                    lastError = error;
+                    const isAbort = error && error.name === 'AbortError';
+                    if (attempt < maxRetries && isAbort) {
+                        await wait(500 * attempt);
+                        continue;
+                    }
+                    if (attempt < maxRetries) {
+                        await wait(500 * attempt);
+                        continue;
+                    }
+                }
+            }
+
+            throw lastError || new Error('API 요청 실패');
+        }
 
         // 방문자 요약 통계 로드
         async function loadVisitsSummary() {
             try {
-                const response = await fetch(`${API_BASE}/api/visits/summary`);
-                const data = await response.json();
+                const data = await fetchApiJson('/api/visits/summary');
 
                 if (data.success && data.data) {
                     document.getElementById('todayVisits').textContent = data.data.today.toLocaleString('ko-KR');
@@ -401,8 +495,7 @@
         // 일별 방문자 로드
         async function loadDailyData() {
             try {
-                const response = await fetch(`${API_BASE}/api/visits/daily?days=30`);
-                const data = await response.json();
+                const data = await fetchApiJson('/api/visits/daily?days=30');
 
                 if (!data.success || !data.data || data.data.length === 0) {
                     document.getElementById('dailyLoading').innerHTML = '<p class="text-muted">아직 데이터가 없습니다.</p>';
@@ -419,6 +512,9 @@
                 document.getElementById('dailyChart').style.display = 'block';
 
                 const ctx = document.getElementById('dailyChart').getContext('2d');
+                if (dailyChart) {
+                    dailyChart.destroy();
+                }
                 dailyChart = new Chart(ctx, {
                     type: 'line',
                     data: {
@@ -471,8 +567,7 @@
         // 시간대별 방문자 로드
         async function loadHourlyData() {
             try {
-                const response = await fetch(`${API_BASE}/api/visits/hourly`);
-                const data = await response.json();
+                const data = await fetchApiJson('/api/visits/hourly');
 
                 if (!data.success || !data.data || data.data.length === 0) {
                     document.getElementById('hourlyLoading').innerHTML = '<p class="text-muted">아직 데이터가 없습니다.</p>';
@@ -486,6 +581,9 @@
                 document.getElementById('hourlyChart').style.display = 'block';
 
                 const ctx = document.getElementById('hourlyChart').getContext('2d');
+                if (hourlyChart) {
+                    hourlyChart.destroy();
+                }
                 hourlyChart = new Chart(ctx, {
                     type: 'line',
                     data: {
@@ -529,8 +627,7 @@
         // 지역별 방문자 로드
         async function loadRegionData() {
             try {
-                const response = await fetch(`${API_BASE}/api/visits/region`);
-                const data = await response.json();
+                const data = await fetchApiJson('/api/visits/region');
 
                 if (!data.success || !data.data || data.data.length === 0) {
                     document.getElementById('regionLoading').innerHTML = '<p class="text-muted">아직 데이터가 없습니다.</p>';
@@ -552,6 +649,9 @@
 
                 // 막대 차트
                 const ctx1 = document.getElementById('regionChart').getContext('2d');
+                if (regionChart) {
+                    regionChart.destroy();
+                }
                 regionChart = new Chart(ctx1, {
                     type: 'bar',
                     data: {
@@ -578,6 +678,9 @@
 
                 // 파이 차트
                 const ctx2 = document.getElementById('regionPieChart').getContext('2d');
+                if (regionPieChart) {
+                    regionPieChart.destroy();
+                }
                 regionPieChart = new Chart(ctx2, {
                     type: 'pie',
                     data: {
@@ -691,10 +794,13 @@
                     margin: { l: 0, r: 0, t: 40, b: 0 }
                 };
 
-                Plotly.newPlot('worldMap', mapData, layout, { responsive: true });
+                Plotly.react('worldMap', mapData, layout, { responsive: true });
 
                 // 지도 클릭 이벤트 처리
                 const worldMapEl = document.getElementById('worldMap');
+                if (typeof worldMapEl.removeAllListeners === 'function') {
+                    worldMapEl.removeAllListeners('plotly_click');
+                }
                 worldMapEl.on('plotly_click', function(data) {
                     const clickedCountryCode = data.points[0].location;
                     const regionName = reverseCountryMap[clickedCountryCode] || clickedCountryCode;
@@ -732,8 +838,7 @@
         // 인기 키워드 로드
         async function loadKeywordsData() {
             try {
-                const response = await fetch(`${API_BASE}/api/keywords/top?limit=20`);
-                const data = await response.json();
+                const data = await fetchApiJson('/api/keywords/top?limit=20');
 
                 if (!data.success || !data.data || data.data.length === 0) {
                     document.getElementById('keywordsLoading').innerHTML = '<p class="text-muted">아직 데이터가 없습니다.</p>';
@@ -761,8 +866,7 @@
         // 지역별 인기 키워드 로드
         async function loadRegionKeywordsData() {
             try {
-                const response = await fetch(`${API_BASE}/api/keywords/by-region?limit=10`);
-                const data = await response.json();
+                const data = await fetchApiJson('/api/keywords/by-region?limit=10');
 
                 if (!data.success || !data.data || Object.keys(data.data).length === 0) {
                     document.getElementById('regionKeywordsContainer').innerHTML = '<p class="text-muted">아직 데이터가 없습니다.</p>';
@@ -807,8 +911,7 @@
         // 오늘 인기 키워드 로드
         async function loadTodayKeywordsData() {
             try {
-                const response = await fetch(`${API_BASE}/api/keywords/today?limit=10`);
-                const data = await response.json();
+                const data = await fetchApiJson('/api/keywords/today?limit=10');
 
                 if (!data.success || !data.data || data.data.length === 0) {
                     document.getElementById('todayKeywordsLoading').innerHTML = '<p class="text-muted">아직 데이터가 없습니다.</p>';
@@ -835,8 +938,7 @@
         // 1주일 인기 키워드 로드
         async function loadWeeklyKeywordsData() {
             try {
-                const response = await fetch(`${API_BASE}/api/keywords/weekly?limit=10`);
-                const data = await response.json();
+                const data = await fetchApiJson('/api/keywords/weekly?limit=10');
 
                 if (!data.success || !data.data || data.data.length === 0) {
                     document.getElementById('weeklyKeywordsLoading').innerHTML = '<p class="text-muted">아직 데이터가 없습니다.</p>';
@@ -862,6 +964,11 @@
 
         // 페이지 로드 시 모든 데이터 로드
         document.addEventListener('DOMContentLoaded', () => {
+            if (USE_GA4_ANALYTICS) {
+                initGaModeDashboard();
+                return;
+            }
+
             loadVisitsSummary();
             loadDailyData();
             loadHourlyData();

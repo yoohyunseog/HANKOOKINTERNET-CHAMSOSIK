@@ -288,34 +288,61 @@ def extract_page_content(html_content):
     """BeautifulSoup로 주요 내용 추출 (실제 데이터 콘텐츠 위주)"""
     try:
         soup = BeautifulSoup(html_content, 'html.parser')
-        
+        # RSS 피드 여부 확인 (channel/item 구조)
+        is_rss = bool(soup.find('rss')) or bool(soup.find('channel'))
+        if is_rss:
+            channel = soup.find('channel')
+            title = channel.find('title').get_text(strip=True) if channel and channel.find('title') else "제목 없음"
+            meta_desc = channel.find('description').get_text(strip=True) if channel and channel.find('description') else ""
+            items = channel.find_all('item') if channel else []
+            data_items = []
+            links = []
+            headings = []
+            for item in items:
+                item_title = item.find('title').get_text(strip=True) if item.find('title') else ""
+                item_desc = item.find('description').get_text(strip=True) if item.find('description') else ""
+                item_link = item.find('link').get_text(strip=True) if item.find('link') else ""
+                # 주요 데이터는 제목+설명
+                if item_title:
+                    data_items.append(item_title)
+                if item_desc:
+                    data_items.append(item_desc)
+                if item_link:
+                    links.append(item_link)
+            text_content = '\n'.join(data_items)
+            print(f"   📦 추출된 RSS 데이터 아이템 수: {len(data_items)}")
+            print(f"   📎 추출된 RSS 링크 수: {len(links)}")
+            return {
+                'title': title,
+                'meta_description': meta_desc,
+                'text_preview': text_content[:2000],
+                'data_items': data_items,
+                'links': links,
+                'headings': headings,
+                'has_real_data': len(data_items) > 0 or len(links) > 5
+            }
+        # 기존 HTML 파싱 로직 (변경 없음)
+        # ...기존 코드...
         # 스크립트, 스타일 태그 제거
         for script in soup(["script", "style"]):
             script.decompose()
-        
         # 제목
         title = soup.title.string if soup.title else "제목 없음"
-        
         # 메타 설명
         meta_desc = ""
         meta_tag = soup.find("meta", attrs={"name": "description"})
         if meta_tag and meta_tag.get("content"):
             meta_desc = meta_tag["content"]
-        
         # 주요 텍스트 추출 (전체, 나중에 필터링)
         text_content = soup.get_text(separator=' ', strip=True)
         text_content = ' '.join(text_content.split())
-        
         # 실제 데이터 콘텐츠 추출 (뉴스 아이템, 카드 등)
         data_items = []
-        
-        # 다양한 선택자로 콘텐츠 아이템 찾기
         possible_selectors = [
             {'class': ['news-item', 'article', 'post', 'item', 'card']},
             {'attrs': {'data-item': True}},
             {'attrs': {'data-article': True}},
         ]
-        
         for selector_dict in possible_selectors:
             if 'class' in selector_dict:
                 for class_name in selector_dict['class']:
@@ -323,56 +350,73 @@ def extract_page_content(html_content):
                     for item in items[:30]:
                         item_text = item.get_text(strip=True)
                         if item_text and len(item_text) > 10 and '로딩' not in item_text:
-                            data_items.append(item_text[:200])  # 각 아이템 최대 200자
+                            data_items.append(item_text[:200])
             elif 'attrs' in selector_dict:
                 items = soup.find_all(attrs=selector_dict['attrs'])
                 for item in items[:30]:
                     item_text = item.get_text(strip=True)
                     if item_text and len(item_text) > 10 and '로딩' not in item_text:
                         data_items.append(item_text[:200])
-        
-        # 중복 제거
         data_items = list(dict.fromkeys(data_items))
+
+        # 최신 날짜순 정렬 (내림차순)
+        import re
+        from datetime import datetime
+        def extract_date(text):
+            # YYYY-MM-DD, YYYY.MM.DD, YYYY/MM/DD, YYYYMMDD 등 다양한 날짜 패턴 지원
+            patterns = [
+                r'(20\d{2}[.-/]\d{1,2}[.-/]\d{1,2})', # 2024-03-11, 2024.03.11, 2024/03/11
+                r'(20\d{2}\d{2}\d{2})',                # 20240311
+            ]
+            for pat in patterns:
+                m = re.search(pat, text)
+                if m:
+                    date_str = m.group(1)
+                    # 정규화
+                    date_str = date_str.replace('.', '-').replace('/', '-').replace(' ', '')
+                    try:
+                        if '-' in date_str:
+                            return datetime.strptime(date_str, '%Y-%m-%d')
+                        else:
+                            return datetime.strptime(date_str, '%Y%m%d')
+                    except Exception:
+                        continue
+            return None
+
+        data_items = sorted(
+            data_items,
+            key=lambda x: extract_date(x) if extract_date(x) else datetime(1900,1,1),
+            reverse=True
+        )
         print(f"   📦 추출된 데이터 아이템 수: {len(data_items)}")
-        
-        # 링크 추출 (데이터 콘텐츠 링크만)
         links = []
         seen_hrefs = set()
         for a in soup.find_all('a', href=True):
             link_text = a.get_text(strip=True)
             link_href = a['href']
-            
-            # 카테고리/메뉴가 아닌 실제 콘텐츠 링크만 추출
             excluded_keywords = ['카테고리', '메뉴', '필터', '정렬', '초기화', '전체', '정치', '경제', '사회', '문화']
             is_excluded = any(keyword in link_text for keyword in excluded_keywords)
-            
             if link_href not in seen_hrefs and link_text and len(link_text) > 5 and not is_excluded:
                 if not link_href.startswith(('#', 'javascript:')):
                     links.append(f"{link_text} → {link_href}")
                     seen_hrefs.add(link_href)
-                    
             if len(links) >= 50:
                 break
-        
         print(f"   📎 추출된 콘텐츠 링크 수: {len(links)}")
-        
-        # 주요 헤딩
         headings = []
-        for h in soup.find_all(['h1', 'h2', 'h3', 'h4'])[:30]:  # 최대 30개
+        for h in soup.find_all(['h1', 'h2', 'h3', 'h4'])[:30]:
             heading_text = h.get_text(strip=True)
             if heading_text and len(heading_text) > 0:
                 headings.append(f"{h.name}: {heading_text}")
-        
         print(f"   📋 추출된 헤딩 수: {len(headings)}")
-        
         return {
             'title': title,
             'meta_description': meta_desc,
-            'text_preview': text_content[:2000],  # 2000자로 제한
-            'data_items': data_items,  # 실제 데이터 아이템
+            'text_preview': text_content[:2000],
+            'data_items': data_items,
             'links': links,
             'headings': headings,
-            'has_real_data': len(data_items) > 0 or len(links) > 5  # 실제 데이터 존재 여부
+            'has_real_data': len(data_items) > 0 or len(links) > 5
         }
     except Exception as e:
         print(f"⚠️ 내용 추출 중 오류: {e}")
@@ -387,60 +431,11 @@ def generate_diagram_with_ollama(url, page_content, model=OLLAMA_MODEL):
         # 실제 데이터 아이템 정보
         data_items_info = '\n'.join(page_content['data_items'][:15]) if page_content.get('data_items') else "데이터 없음"
         
-        # 프롬프트 생성 (실제 콘텐츠만, 링크/메타 정보 제외)
-        prompt = f"""다음은 웹사이트 '{url}'의 실제 콘텐츠 데이터입니다:
-
-【웹사이트 제목】
-{page_content['title']}
-
-【실제 데이터 아이템 ({len(page_content.get('data_items', []))}개)】
-{data_items_info}
-
----
-
-위 정보를 바탕으로 이 웹사이트의 **실제 콘텐츠만**을 보여주는 **Mermaid 플로우차트 다이어그램 코드**를 생성해주세요.
-
-**중요 요구사항:**
-1. 반드시 Mermaid flowchart 문법만 사용 (```mermaid 태그 없이, 코드만)
-2. flowchart TD 또는 flowchart LR로 시작
-3. **실제 데이터의 제목과 내용만 노드로 표현** (구조적 노드 제외)
-4. 실제 콘텐츠 간의 주제 관계를 화살표로 표현
-5. 한글 레이블 사용 (노드 ID는 영문)
-6. **최소 12개 이상의 노드 포함** (실제 데이터 아이템 기반)
-7. 스타일링 추가 (classDef, class 사용)
-8. **마지막에 AI 분석 노드 추가**: 트렌드 분석, 예상/예측, 결론, 인사이트
-9. 부가 설명이나 주석 없이 Mermaid 코드만 출력
-
-**반드시 제외해야 할 것들:**
-- "홈페이지", "메인", "최신 뉴스", "뉴스 섹션" 같은 일반적 구조 노드
-- "링크", "검색", "다운로드", "URL" 같은 메타 정보
-- "조회수 TOP", "인기 검색어" 같은 통계 정보
-- "네이버", "구글", "드라이브" 같은 외부 서비스
-- "정치", "경제", "사회" 같은 단순 카테고리명
-
-**반드시 포함해야 할 것들:**
-- 실제 뉴스/게시물의 구체적인 제목
-- 데이터의 실제 내용과 세부사항
-- 콘텐츠 간의 주제 연관성
-- **마지막 섹션: AI 분석 결과 (트렌드, 예측, 결론, 인사이트)**
-
-**출력 형식 (예시):**
-flowchart TD
-    A[트럼프 이란 공습 작전 발표] --> B[헤그세스 장관 암살 시도]
-    C[미국 이란 관계 악화] --> A
-    D[중동 긴장 고조] --> C
-    E[이란 핵 시설 타격] --> F[국제 원유 가격 급등]
-    
-    %% AI 분석 섹션
-    G[AI 트렌드 분석: 중동 정세 불안 심화] --> H[예측: 원유 공급 차질 우려]
-    H --> I[결론: 국제 경제 영향 불가피]
-    
-    classDef newsStyle fill:#e3f2fd,stroke:#1976d2,color:#000
-    classDef aiStyle fill:#fff3e0,stroke:#f57c00,color:#000,stroke-width:3px
-    class A,B,C,D,E,F newsStyle
-    class G,H,I aiStyle
-
-지금 바로 Mermaid 다이어그램 코드를 생성하세요:"""
+        # 모든 데이터 아이템 사용, 출력 제한 해제, 마지막 줄까지 반드시 출력하도록 명시
+        # 데이터 아이템 30개로 제한 (출력 잘림 방지)
+        limited_items = page_content.get('data_items', [])[:30]
+        limited_items_info = '\n'.join(limited_items) if limited_items else "데이터 없음"
+        prompt = f"""다음은 웹사이트 '{url}'의 실제 데이터입니다. 아래 항목을 노드로 하는 Mermaid flowchart TD 코드를 생성하세요.\n- 노드 간 관계는 자유롭게 연결하고, 한글 레이블을 사용하세요.\n- 각 에지(화살표)에는 중요도를 [중요], [보통], [낮음] 중 하나로 표기하세요. 예시: A[뉴스] -> B[주가][중요]\n- Mermaid 코드에서 반드시 'A -> B' 형식(단일 하이픈)만 사용하세요. (예: A -> B, C -> D)\n- 부가 설명, 주석, 태그 없이 코드만 출력하세요.\n- 반드시 마지막 줄까지(마지막 classDef, class 등 포함) 모두 출력하세요.\n- 코드가 길어도 중간에 멈추지 말고 끝까지 출력하세요.\n\n{limited_items_info}"""
 
         # Ollama API 호출
         payload = {
@@ -449,32 +444,86 @@ flowchart TD
             "stream": False,
             "options": {
                 "temperature": 0.7,
-                "num_predict": 1500  # 더 긴 출력 허용
+                "num_predict": 2000  # 최대한 긴 출력 허용
             }
         }
         
         response = requests.post(OLLAMA_API_URL, json=payload, timeout=120)
         response.raise_for_status()
         result = response.json()
-        
+
+        # Ollama API 원본 응답 전체 출력 (디버깅용)
+        print("\n[Ollama API 원본 응답]")
+        print(json.dumps(result, ensure_ascii=False, indent=2))
+
         mermaid_code = result.get('response', '').strip()
-        
+
         # Mermaid 코드 정리 (```mermaid 태그 제거)
         if '```mermaid' in mermaid_code:
             mermaid_code = mermaid_code.split('```mermaid')[1].split('```')[0].strip()
         elif '```' in mermaid_code:
             mermaid_code = mermaid_code.split('```')[1].split('```')[0].strip()
-        
+
         # flowchart로 시작하지 않으면 추가
         if not mermaid_code.startswith('flowchart') and not mermaid_code.startswith('graph'):
             mermaid_code = "flowchart TD\n" + mermaid_code
 
-        # 노드 라벨 불필요 접두어 제거
-        mermaid_code = re.sub(r'텍스트일반\s*:\s*', '', mermaid_code)
-        
+
+        # 노드 라벨 불필요 접두어 및 불필요 텍스트 제거
+        patterns_to_remove = [
+            r'카테고리\s*:\s*일반',
+            r'유형\s*:?\s*텍스트',
+            r'유형\s*:?\s*',
+            r'텍스트일반\s*:?\s*',
+            r'조회수\s*:?\s*\d+',
+            r'일반 카테고리',
+            r'카테고리',
+            r'유형',
+            r'텍스트',
+            r'조회수'
+        ]
+        for pat in patterns_to_remove:
+            mermaid_code = re.sub(pat, '', mermaid_code)
+
+
+
+        # 중복 에지/노드 제거 + 모든 에지 'A -> B' 형태로 변환 및 중요도 표기 보정
+        def dedup_and_fix_edges_and_importance(code):
+            lines = code.split('\n')
+            seen = set()
+            fixed_lines = []
+            # 다양한 Mermaid 에지 패턴 허용 (--> , --o->, --x-> 등)
+            edge_pattern = re.compile(r'^(\s*[^\s-][^\n]*?)\s*[-]+[a-zA-Z]*>\s*(.*)$')
+            importance_pattern = re.compile(r'\[(중요|보통|낮음)\]$')
+            for line in lines:
+                m = edge_pattern.match(line)
+                if m:
+                    left = m.group(1).strip()
+                    right = m.group(2).strip()
+                    # 중요도 추출 또는 기본값 부여
+                    if right:
+                        # 오른쪽 노드에 중요도 표기 없으면 [보통] 추가
+                        if not importance_pattern.search(right):
+                            right = right.rstrip(';') + ' [보통]'
+                    else:
+                        right = '"" [보통]'
+                    edge = (left, right)
+                    line_str = f"{left} -> {right}"
+                    if edge not in seen:
+                        fixed_lines.append(line_str)
+                        seen.add(edge)
+                else:
+                    # 노드 정의/기타 라인도 중복 방지
+                    if line.strip() and line not in seen:
+                        fixed_lines.append(line)
+                        seen.add(line)
+            return '\n'.join(fixed_lines)
+
+        mermaid_code = dedup_and_fix_edges_and_importance(mermaid_code)
+
         print(f"✅ 다이어그램 생성 완료 ({len(mermaid_code)} 바이트)")
-        print(f"\n【생성된 Mermaid 코드】\n{mermaid_code[:300]}...\n")
-        
+        print(f"\n【생성된 Mermaid 코드 전체】\n{mermaid_code}\n")
+
         return mermaid_code
         
     except Exception as e:
@@ -492,9 +541,34 @@ flowchart TD
 
 def save_diagram_files(mermaid_code, url, page_content, output_path, model=OLLAMA_MODEL):
     """생성된 Mermaid 다이어그램을 HTML과 .mmd 파일로 저장"""
+    def get_mermaid_truncation_prompt(mermaid_code: str) -> str:
+        """
+        Ollama AI에게 Mermaid 코드의 정상/잘림 여부를 판별하도록 요청하는 프롬프트를 반환합니다.
+        """
+        return f"""아래는 Mermaid 다이어그램 코드입니다.\n\n{mermaid_code}\n\n이 코드가 중간에 잘려서 불완전하게 생성된 것인지, 아니면 정상적으로 끝까지 생성된 것인지 판별해 주세요.\n\n판별 기준:\n- flowchart 또는 graph로 시작하는지\n- 노드(대괄호 [ ] 포함) 2개 이상, 에지(--> 포함) 1개 이상인지\n- 마지막 10줄 이내에 classDef 또는 class 문이 있는지\n- 중간에 대괄호 [가 열리고 ]로 닫히지 않은 라인이 있는지\n\n결과를 아래 형식으로 답변해 주세요.\n1. 잘림 여부: (예/아니오)\n2. 사유: (간단한 이유)\n"""
+
+    # 간단한 코드 기반 잘림 감지 함수 추가
+    def is_truncated_mermaid(mermaid_code: str) -> bool:
+        """
+        Mermaid 코드가 비었거나, 노드/에지 개수가 너무 적거나, 괄호 불일치 등 명백한 잘림/불완전 여부만 간단히 감지합니다.
+        """
+        code = mermaid_code.strip()
+        if not code or code == 'flowchart TD':
+            return True
+        # 노드(대괄호 [ ]) 2개 미만, 에지(--> ) 1개 미만
+        node_count = code.count('[')
+        edge_count = code.count('-->')
+        if node_count < 2 or edge_count < 1:
+            return True
+        # 대괄호 불일치
+        if code.count('[') != code.count(']'):
+            return True
+        # classDef/class 조건 제거 (더 이상 체크하지 않음)
+        return False
+
     try:
         timestamp = datetime.now().strftime("%Y년 %m월 %d일 %H:%M:%S")
-        
+
         # HTML 파일 저장
         html_content = HTML_TEMPLATE.format(
             title=page_content['title'],
@@ -503,20 +577,23 @@ def save_diagram_files(mermaid_code, url, page_content, output_path, model=OLLAM
             model=model,
             mermaid_code=mermaid_code
         )
-        
+
         with open(output_path, 'w', encoding='utf-8') as f:
             f.write(html_content)
-        
+
         print(f"\n✅ HTML 파일 저장 완료: {output_path}")
-        
+
         # .mmd 파일 저장 (다이어그램 코드만)
         mmd_path = output_path.replace('.html', '.mmd')
-        with open(mmd_path, 'w', encoding='utf-8') as f:
-            f.write(mermaid_code)
-        
-        print(f"✅ Mermaid 파일 저장 완료: {mmd_path}")
+        # Mermaid 코드가 잘렸거나 불완전하면 기존 파일 유지
+        if mermaid_code.strip() == 'flowchart TD' or is_truncated_mermaid(mermaid_code):
+            print(f"⚠️ 새 다이어그램이 비거나 잘려서 기존 .mmd 파일을 유지합니다: {mmd_path}")
+        else:
+            with open(mmd_path, 'w', encoding='utf-8') as f:
+                f.write(mermaid_code)
+            print(f"✅ Mermaid 파일 저장 완료: {mmd_path}")
         return True
-        
+
     except Exception as e:
         print(f"❌ 파일 저장 실패: {e}")
         return False
@@ -549,12 +626,15 @@ def main():
                         default=WAIT_TIME)
     
     args = parser.parse_args()
-    
+
+    # 강제로 gemma3:4b 사용
+    args.model = "gemma3:4b"
+
     # URL 정규화
     url = args.url
     if not url.startswith('http'):
         url = 'https://' + url
-    
+
     # 출력 파일명 설정
     if args.output:
         output_path = args.output

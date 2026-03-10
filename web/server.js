@@ -693,20 +693,18 @@ app.get('/feed.xml', async (req, res) => {
             const category = item.category || '일반';
             const title = item.input instanceof Array ? `[${item.input.join(', ')}]` : item.input;
             const cleanTitle = typeof title === 'string' ? title.replace(/\*/g, '') : title;
+            // nbMax, nbMin 제거
+            // index.html 검색 링크 형식 (nbMax, nbMin은 여전히 링크에 포함)
             const nbMax = (item.results && item.results[0] && item.results[0].nb_max) || 0;
             const nbMin = (item.results && item.results[0] && item.results[0].nb_min) || 0;
-            
-            // index.html 검색 링크 형식
             const itemLink = `${siteUrl}/index.html?search=${encodeURIComponent(cleanTitle)}&selected_max=${nbMax}&selected_min=${nbMin}`.replace(/&/g, '&amp;');
-            
+            // nb_max, nb_min 없는 description
             const description = `
                 <p><strong>카테고리:</strong> ${category}</p>
                 <p><strong>키워드:</strong> ${cleanTitle}</p>
-                <p><strong>MAX:</strong> ${nbMax} | <strong>MIN:</strong> ${nbMin}</p>
                 <p><strong>유형:</strong> ${item.type === 'text' ? '텍스트' : '숫자'} | <strong>조회수:</strong> ${item.view_count || 0}</p>
                 <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>
             `.trim();
-            
             return `
     <item>
         <title><![CDATA[${title}]]></title>
@@ -864,20 +862,18 @@ app.get('/feed-popular.xml', async (req, res) => {
             const category = item.category || '일반';
             const title = item.input instanceof Array ? `[${item.input.join(', ')}]` : item.input;
             const cleanTitle = typeof title === 'string' ? title.replace(/\*/g, '') : title;
+            // nbMax, nbMin 제거
+            // index.html 검색 링크 형식 (nbMax, nbMin은 여전히 링크에 포함)
             const nbMax = (item.results && item.results[0] && item.results[0].nb_max) || 0;
             const nbMin = (item.results && item.results[0] && item.results[0].nb_min) || 0;
-            
-            // index.html 검색 링크 형식
             const itemLink = `${siteUrl}/index.html?search=${encodeURIComponent(cleanTitle)}&selected_max=${nbMax}&selected_min=${nbMin}`.replace(/&/g, '&amp;');
-            
+            // nb_max, nb_min 없는 description
             const description = `
                 <p><strong>카테고리:</strong> ${category}</p>
                 <p><strong>키워드:</strong> ${cleanTitle}</p>
-                <p><strong>MAX:</strong> ${nbMax} | <strong>MIN:</strong> ${nbMin}</p>
                 <p><strong>유형:</strong> ${item.type === 'text' ? '텍스트' : '숫자'} | <strong>조회수:</strong> ${item.view_count || 0}</p>
                 <p><strong>인기 이슈 맵 바로가기:</strong> 지정학 리스크·경제 영향 트렌드 확인</p>
             `.trim();
-            
             return `
     <item>
         <title><![CDATA[${title}]]></title>
@@ -1195,61 +1191,29 @@ app.get('/api/visits/summary', async (req, res) => {
 app.get('/api/keywords/top', async (req, res) => {
     try {
         const limit = Math.min(parseInt(req.query.limit) || 20, 100);
-        
         // 캐시 확인
         const cache = readKeywordsCache();
         const now = Date.now();
-        
-        // 캐시가 유효한 경우 (1분 이내)
+        // 캐시가 유효한 경우 (5분 이내)
         if (cache && cache.timestamp && (now - cache.timestamp) < KEYWORDS_CACHE_TTL_MS) {
             if (process.env.NODE_ENV !== 'production') {
                 console.log('[keywords-cache] 캐시에서 반환 (유효기간: ' + Math.floor((KEYWORDS_CACHE_TTL_MS - (now - cache.timestamp)) / 1000) + '초 남음)');
             }
-        
-        // 캐시 확인
-        const cache = readRegionKeywordsCache();
-        const now = Date.now();
-        
-        // 캐시가 유효한 경우 (1분 이내)
-        if (cache && cache.timestamp && (now - cache.timestamp) < KEYWORDS_CACHE_TTL_MS) {
-            if (process.env.NODE_ENV !== 'production') {
-                console.log('[region-keywords-cache] 캐시에서 반환 (유효기간: ' + Math.floor((KEYWORDS_CACHE_TTL_MS - (now - cache.timestamp)) / 1000) + '초 남음)');
-            }
             return res.json({
                 success: true,
-                data: cache.data,
+                count: cache.data.slice(0, limit).length,
+                data: cache.data.slice(0, limit),
                 cached: true,
                 cacheAge: Math.floor((now - cache.timestamp) / 1000)
             });
         }
-        
-        // 캐시 만료 또는 없음 - DB에서 조회
-        if (process.env.NODE_ENV !== 'production') {
-            console.log('[region-keywords-cache] 캐시 만료 또는 없음, DB 조회 후 캐시 갱신');
-        }
-        const keywords = await storage.getKeywordsByRegion(limit);
-        
-        // 캐시 저장
-        writeRegionKeywordsCache(keywords);
-        
-        return res.json({
-            success: true,
-            data: keywords,
-            cached: falsee.data.slice(0, limit),
-                cached: true,
-                cacheAge: Math.floor((now - cache.timestamp) / 1000)
-            });
-        }
-        
         // 캐시 만료 또는 없음 - DB에서 조회
         if (process.env.NODE_ENV !== 'production') {
             console.log('[keywords-cache] 캐시 만료 또는 없음, DB 조회 후 캐시 갱신');
         }
         const keywords = await storage.getTopKeywords(100); // 최대 100개 캐시
-        
         // 캐시 저장
         writeKeywordsCache(keywords);
-        
         return res.json({
             success: true,
             count: keywords.slice(0, limit).length,

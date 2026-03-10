@@ -30,8 +30,8 @@ if exist ".venv\Scripts\activate.bat" (
 )
 
 REM 항상 자동 실행 (URL 입력 없이 기본 대상 분석)
-set TARGET_URL=https://xn--9l4b4xi9r.com
-echo 🤖 자동 실행: 참소식.com을 분석합니다...
+set TARGET_URL=https://xn--9l4b4xi9r.com/feed.xml
+echo 🤖 자동 실행: 참소식.com의 feed.xml을 분석합니다...
 
 :start_generation
 

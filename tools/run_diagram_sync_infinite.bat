@@ -9,7 +9,7 @@ set "ROOT_DIR=%~dp0.."
 cd /d "%ROOT_DIR%"
 
 REM 사이클 간 대기 시간(초). 필요하면 값 변경: 0 이면 즉시 반복
-set "INTERVAL_SECONDS=10"
+set "INTERVAL_SECONDS=100"
 
 REM run_website_diagram.bat의 pause/입력 대기 방지
 set "AUTO_MODE=1"

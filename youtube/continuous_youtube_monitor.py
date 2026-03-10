@@ -2832,7 +2832,7 @@ def run_monitoring_cycle(
 
 def main():
     parser = argparse.ArgumentParser(description="YouTube 키워드 지속 모니터링")
-    parser.add_argument("--model", default="qwen2.5:7b", help="Ollama 모델 (기본: qwen2.5:7b)")
+    parser.add_argument("--model", default="gpt-oss:120b-cloud", help="Ollama 모델 (기본: gpt-oss:120b-cloud)")
     parser.add_argument("--keywords", type=int, default=10, help="키워드 개수 (기본: 10, '오늘의 주요 뉴스' 고정 포함)")
     parser.add_argument("--videos", type=int, default=10, help="키워드당 영상 수 (기본: 10)")
     parser.add_argument("--interval", type=int, default=30, help="모니터링 간격(분) (기본: 30분)")

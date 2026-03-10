@@ -33,7 +33,7 @@ exit /b 1
 echo [INFO] Python: %PYTHON_EXE%
 
 :: Ollama 모델 설정 (환경변수로 커스터마이징 가능)
-if not defined OLLAMA_MODEL set OLLAMA_MODEL=gemma3:4b
+if not defined OLLAMA_MODEL set OLLAMA_MODEL=gpt-oss:120b-cloud
 
 :: 키인드 개수 (기본: 3개)
 if not defined KEYWORD_COUNT set KEYWORD_COUNT=3
