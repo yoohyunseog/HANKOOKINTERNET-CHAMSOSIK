@@ -541,6 +541,7 @@ def generate_diagram_with_ollama(url, page_content, model=OLLAMA_MODEL):
 
 def save_diagram_files(mermaid_code, url, page_content, output_path, model=OLLAMA_MODEL):
     """생성된 Mermaid 다이어그램을 HTML과 .mmd 파일로 저장"""
+    import re
     def get_mermaid_truncation_prompt(mermaid_code: str) -> str:
         """
         Ollama AI에게 Mermaid 코드의 정상/잘림 여부를 판별하도록 요청하는 프롬프트를 반환합니다.
@@ -551,19 +552,24 @@ def save_diagram_files(mermaid_code, url, page_content, output_path, model=OLLAM
     def is_truncated_mermaid(mermaid_code: str) -> bool:
         """
         Mermaid 코드가 비었거나, 노드/에지 개수가 너무 적거나, 괄호 불일치 등 명백한 잘림/불완전 여부만 간단히 감지합니다.
+        '->' 형식과 중요도([중요], [보통], [낮음]) 표기도 인식합니다.
         """
         code = mermaid_code.strip()
         if not code or code == 'flowchart TD':
             return True
-        # 노드(대괄호 [ ]) 2개 미만, 에지(--> ) 1개 미만
+        # 노드(대괄호 [ ]) 2개 미만, 에지(->) 1개 미만
         node_count = code.count('[')
-        edge_count = code.count('-->')
+        edge_count = code.count('->')
+        # 중요도 표기 포함 여부
+        importance_count = sum(code.count(f'[{imp}]') for imp in ['중요', '보통', '낮음'])
         if node_count < 2 or edge_count < 1:
             return True
         # 대괄호 불일치
         if code.count('[') != code.count(']'):
             return True
-        # classDef/class 조건 제거 (더 이상 체크하지 않음)
+        # 중요도 표기가 하나도 없으면 잘림으로 간주
+        if importance_count < 1:
+            return True
         return False
 
     try:
@@ -592,6 +598,38 @@ def save_diagram_files(mermaid_code, url, page_content, output_path, model=OLLAM
             with open(mmd_path, 'w', encoding='utf-8') as f:
                 f.write(mermaid_code)
             print(f"✅ Mermaid 파일 저장 완료: {mmd_path}")
+
+        # .json 파일 저장 (에지와 중요도: 1~100)
+        json_path = output_path.replace('.html', '.json')
+        edges = []
+        # Mermaid 코드에서 에지 추출: A -> B [중요] (graph/flowchart 모두 지원, 다양한 화살표)
+        edge_pattern = re.compile(r'^(\s*[^\s-][^\n]*?)\s*[-]+[a-zA-Z]*>\s*([^\[]+?)\s*\[(중요|보통|낮음)\]', re.UNICODE)
+        importance_map = {'중요': 100, '보통': 50, '낮음': 1}
+        for line in mermaid_code.split('\n'):
+            m = edge_pattern.match(line)
+            if m:
+                source = m.group(1).strip()
+                target = m.group(2).strip()
+                importance_label = m.group(3)
+                importance = importance_map.get(importance_label, 50)
+                edges.append({
+                    'source': source,
+                    'target': target,
+                    'importance': importance
+                })
+        json_obj = {
+            'edges': edges,
+            'generated_at': timestamp,
+            'url': url,
+            'title': page_content.get('title', ''),
+        }
+        try:
+            with open(json_path, 'w', encoding='utf-8') as f:
+                json.dump(json_obj, f, ensure_ascii=False, indent=2)
+            print(f"✅ JSON 파일 저장 완료: {json_path}")
+        except Exception as je:
+            print(f"❌ JSON 파일 저장 실패: {je}")
+
         return True
 
     except Exception as e:
