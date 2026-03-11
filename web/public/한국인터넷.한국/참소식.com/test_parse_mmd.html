@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>Mermaid MMD 파싱 테스트</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f7f7fa;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px #0001;
+  padding: 32px;
+}
+
+h1 {
+  font-size: 1.7em;
+  margin-bottom: 0.5em;
+}
+
+pre {
+  background: #f4f4f4;
+  padding: 1em;
+  border-radius: 8px;
+  overflow-x: auto;
+}
+
+.relation-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2em;
+}
+
+.relation-table th,
+.relation-table td {
+  border: 1px solid #ddd;
+  padding: 8px 10px;
+}
+
+.relation-table th {
+  background: #f0f0f8;
+}
+
+.badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 8px;
+  font-size: 0.9em;
+  background: #eee;
+  margin-left: 6px;
+}
+
+.badge.중요 {
+  background: #ffbdbd;
+  color: #a00;
+}
+
+.badge.보통 {
+  background: #dbefff;
+  color: #005;
+}
+
+.badge.낮음 {
+  background: #e0e0e0;
+  color: #888;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>website_diagram.mmd 파싱 결과</h1>
+
+<h3>Mermaid 원본</h3>
+<pre id="mmd-raw"></pre>
+
+<h3>관계 테이블</h3>
+<table class="relation-table" id="relation-table">
+<thead>
+<tr>
+<th>FROM</th>
+<th>TO</th>
+<th>EDGE LABEL</th>
+<th>EDGE IMPORTANCE</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+
+</div>
+
+<script src="parseMermaidMmd.js?v=1"></script>
+
+<script>
+
+function escapeHtml(str){
+  return (str || '').replace(/[&<>"']/g,function(s){
+    return {
+      '&':'&amp;',
+      '<':'&lt;',
+      '>':'&gt;',
+      '"':'&quot;',
+      "'":'&#39;'
+    }[s];
+  });
+}
+
+async function main(){
+
+  const resp = await fetch("website_diagram.mmd");
+  const text = await resp.text();
+
+  document.getElementById("mmd-raw").textContent = text;
+
+  if(typeof window.parseMermaidToRelations !== "function"){
+    alert("Mermaid 파서 JS 로드 실패");
+    return;
+  }
+
+  const relations = window.parseMermaidToRelations(text);
+
+  const tbody = document.querySelector("#relation-table tbody");
+  tbody.innerHTML = "";
+
+  if(relations.length === 0){
+
+    const nodeDefRegex = /([A-Za-z0-9_]+)\s*[\[{](.*?)[\]}]/g;
+    let match;
+
+    while((match = nodeDefRegex.exec(text)) !== null){
+
+      const tr = document.createElement("tr");
+
+      tr.innerHTML =
+        "<td>"+escapeHtml(match[1])+"</td>"+
+        "<td>"+escapeHtml(match[2])+"</td>"+
+        "<td>"+escapeHtml(match[3])+"</td>"+
+        "<td>"+escapeHtml(match[4])+"</td>"
+
+      tbody.appendChild(tr);
+    }
+
+  }else{
+
+    relations.forEach(function(rel){
+      const tr = document.createElement("tr");
+      tr.innerHTML =
+        "<td>"+escapeHtml(rel.fromLabel)+"</td>"+
+        "<td>"+escapeHtml(rel.toLabel)+"</td>"+
+        "<td>"+escapeHtml(rel.edgeLabel || "")+"</td>"+
+        "<td>"+(rel.edgeImportance ? ("<span class='badge "+escapeHtml(rel.edgeImportance)+"'>"+escapeHtml(rel.edgeImportance)+"</span>") : "")+"</td>";
+      tbody.appendChild(tr);
+    });
+
+  }
+
+}
+
+window.addEventListener("DOMContentLoaded",main);
+
+</script>
+
+</body>
+</html>

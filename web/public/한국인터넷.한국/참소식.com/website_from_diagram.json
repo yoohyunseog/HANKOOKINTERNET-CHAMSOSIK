@@ -1,0 +1,162 @@
+{
+  "nodes": [
+    {
+      "id": "A",
+      "label": "KOSPI: 5,532.59"
+    },
+    {
+      "id": "B",
+      "label": "KOSPI_설명: KOSPI가 5,532.59에 나타나고 있습니다. 시장 심미에 영향을 미칠 수 있습니다."
+    },
+    {
+      "id": "C",
+      "label": "KOSDAQ: 1,137.68"
+    },
+    {
+      "id": "D",
+      "label": "KOSDAQ_설명: KOSDAQ가 1,137.68에 나타나고 있습니다. ... "
+    },
+    {
+      "id": "E",
+      "label": "S&P500: 149.40"
+    },
+    {
+      "id": "F",
+      "label": "S&P500_설명: S&P500이 149.40에 나타나고 있습니다. ... "
+    },
+    {
+      "id": "G",
+      "label": "NASDAQ: 149.40"
+    },
+    {
+      "id": "H",
+      "label": "NASDAQ_설명: NASDAQ이 149.40에 나타나고 있습니다. ... "
+    },
+    {
+      "id": "I",
+      "label": "DOWJONES: 149.40"
+    },
+    {
+      "id": "J",
+      "label": "DOWJONES_설명: DOWJONES이 149.40에 나타나고 있습니다. ... "
+    },
+    {
+      "id": "K",
+      "label": "Bitcoin: $69915.33"
+    },
+    {
+      "id": "L",
+      "label": "Bitcoin_설명: 시장 상황, 변동성, 환율 영향 ... "
+    },
+    {
+      "id": "M",
+      "label": "Ethereum: $2034.72"
+    },
+    {
+      "id": "N",
+      "label": "Ethereum_설명: ... "
+    },
+    {
+      "id": "O",
+      "label": "USD/KRW: 1,475.50"
+    },
+    {
+      "id": "P",
+      "label": "USD/KRW_설명: 원/달러 환율이 1,475.50에 나타나고 있습니다. ... "
+    },
+    {
+      "id": "Q",
+      "label": "Gold: 2026.03"
+    },
+    {
+      "id": "R",
+      "label": "Gold_설명: 금 가격이 2026.03에 나타나고 있습니다. ... "
+    }
+  ],
+  "edges": [
+    {
+      "source": "A",
+      "target": "B",
+      "label": "중요",
+      "type": "important"
+    },
+    {
+      "source": "C",
+      "target": "D",
+      "label": "중요",
+      "type": "important"
+    },
+    {
+      "source": "E",
+      "target": "F",
+      "label": "중요",
+      "type": "important"
+    },
+    {
+      "source": "G",
+      "target": "H",
+      "label": "중요",
+      "type": "important"
+    },
+    {
+      "source": "I",
+      "target": "J",
+      "label": "중요",
+      "type": "important"
+    },
+    {
+      "source": "K",
+      "target": "L",
+      "label": "중요",
+      "type": "important"
+    },
+    {
+      "source": "M",
+      "target": "N",
+      "label": "중요",
+      "type": "important"
+    },
+    {
+      "source": "O",
+      "target": "P",
+      "label": "중요",
+      "type": "important"
+    },
+    {
+      "source": "Q",
+      "target": "R",
+      "label": "중요",
+      "type": "important"
+    },
+    {
+      "source": "B",
+      "target": "F",
+      "label": "보통",
+      "type": "normal"
+    },
+    {
+      "source": "H",
+      "target": "F",
+      "label": "보통",
+      "type": "normal"
+    },
+    {
+      "source": "J",
+      "target": "F",
+      "label": "보통",
+      "type": "normal"
+    },
+    {
+      "source": "L",
+      "target": "N",
+      "label": "보통",
+      "type": "normal"
+    },
+    {
+      "source": "P",
+      "target": "R",
+      "label": "보통",
+      "type": "normal"
+    }
+  ]
+}
