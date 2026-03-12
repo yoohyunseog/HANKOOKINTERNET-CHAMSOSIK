@@ -1,0 +1,198 @@
+{
+  "nodes": [
+    {
+      "id": "KOSPI",
+      "label": "KOSPI: 5,557.11",
+      "desc": "",
+      "importance": "보통"
+    },
+    {
+      "id": "KOSPI_설명",
+      "label": "KOSPI_설명",
+      "desc": "KOSPI가 5,557.11에 나타나고 있습니다. 경제 지표로 활용되며, 국내 주식 시장의 전반적인 흐름을 반영합니다.",
+      "importance": "보통"
+    },
+    {
+      "id": "KOSDAQ",
+      "label": "KOSDAQ: 1,143.86",
+      "desc": "",
+      "importance": "보통"
+    },
+    {
+      "id": "KOSDAQ_설명",
+      "label": "KOSDAQ_설명",
+      "desc": "KOSDAQ가 1,143.86에 나타나고 있습니다. KOSDAQ는 기술주 중심의 주식 시장 지수로, 혁신적인 기술 기업들의 성장을 보여줍니다.",
+      "importance": "보통"
+    },
+    {
+      "id": "S&P500",
+      "label": "S&P500: 69244.43",
+      "desc": "",
+      "importance": "보통"
+    },
+    {
+      "id": "S&P500_설명",
+      "label": "S&P500_설명",
+      "desc": "S&P500이 69244.43에 나타나고 있습니다. 미국 대표 주가지수로, 미국 경제의 전반적인 상황을 나타냅니다.",
+      "importance": "보통"
+    },
+    {
+      "id": "NASDAQ",
+      "label": "NASDAQ: 69242.03",
+      "desc": "",
+      "importance": "보통"
+    },
+    {
+      "id": "NASDAQ_설명",
+      "label": "NASDAQ_설명",
+      "desc": "NASDAQ가 69242.03에 나타나고 있습니다. 기술주 중심의 주가지수로, 혁신적인 기술 기업들의 성장을 보여줍니다.",
+      "importance": "보통"
+    },
+    {
+      "id": "DOWJONES",
+      "label": "DOWJONES: 69242.03",
+      "desc": "",
+      "importance": "보통"
+    },
+    {
+      "id": "DOWJONES_설명",
+      "label": "DOWJONES_설명",
+      "desc": "DOWJONES가 69242.03에 나타나고 있습니다. 다우존스 산업평균지수로, 미국 대기업들의 성과를 반영합니다.",
+      "importance": "보통"
+    },
+    {
+      "id": "Bitcoin",
+      "label": "Bitcoin: $69309.59",
+      "desc": "",
+      "importance": "보통"
+    },
+    {
+      "id": "Bitcoin_설명",
+      "label": "Bitcoin_설명",
+      "desc": "비트코인이 $69309.59에 나타나고 있습니다. 암호화폐 시장의 대표적인 디지털 자산으로, 변동성이 큽니다.",
+      "importance": "보통"
+    },
+    {
+      "id": "Ethereum",
+      "label": "Ethereum: $2022.03",
+      "desc": "",
+      "importance": "보통"
+    },
+    {
+      "id": "Ethereum_설명",
+      "label": "Ethereum_설명",
+      "desc": "이더리움이 $2022.03에 나타나고 있습니다. 스마트 컨트랙트 기능을 제공하는 블록체인 플랫폼입니다.",
+      "importance": "보통"
+    },
+    {
+      "id": "USD_KRW",
+      "label": "USD/KRW (원/달러): 1,478.10",
+      "desc": "",
+      "importance": "보통"
+    },
+    {
+      "id": "USD_KRW_설명",
+      "label": "USD/KRW_설명",
+      "desc": "USD/KRW 환율이 1,478.10에 나타나고 있습니다. 미국 달러 대비 한국 원의 가치를 나타냅니다.",
+      "importance": "보통"
+    },
+    {
+      "id": "Gold",
+      "label": "Gold (g 또는 oz 단위, 원): 2026.03",
+      "desc": "",
+      "importance": "보통"
+    },
+    {
+      "id": "Gold_설명",
+      "label": "Gold_설명",
+      "desc": "금 가격이 2026.03에 나타나고 있습니다. 안전 자산으로, 인플레이션 헤지 수단으로 활용됩니다.",
+      "importance": "보통"
+    },
+    {
+      "id": "S&P500_KRW",
+      "label": "S&P500_KRW: 102350191",
+      "desc": "",
+      "importance": "보통"
+    },
+    {
+      "id": "S&P500_KRW_설명",
+      "label": "S&P500_KRW_설명",
+      "desc": "S&P500 KRW 지수가 102350191에 나타나고 있습니다. 한국 원화로 표시된 S&P 500 지수입니다.",
+      "importance": "보통"
+    },
+    {
+      "id": "NASDAQ_KRW",
+      "label": "NASDAQ_KRW: 102346644",
+      "desc": "",
+      "importance": "보통"
+    },
+    {
+      "id": "NASDAQ_KRW_설명",
+      "label": "NASDAQ_KRW_설명",
+      "desc": "NASDAQ KRW 지수가 102346644에 나타나고 있습니다. 한국 원화로 표시된 NASDAQ 지수입니다.",
+      "importance": "보통"
+    },
+    {
+      "id": "DOWJONES_KRW",
+      "label": "DOWJONES_KRW: 102346644",
+      "desc": "",
+      "importance": "보통"
+    },
+    {
+      "id": "DOWJONES_KRW_설명",
+      "label": "DOWJONES_KRW_설명",
+      "desc": "DOWJONES KRW 지수가 102346644에 나타나고 있습니다. 한국 원화로 표시된 DOWJONES 지수입니다.",
+      "importance": "보통"
+    },
+    {
+      "id": "--",
+      "label": "보통",
+      "desc": "",
+      "importance": "보통"
+    }
+  ],
+  "edges": [
+    {
+      "source": "KOSDAQ: 1,143.86",
+      "target": "NASDAQ: 69242.03",
+      "label": "",
+      "importance": "보통"
+    },
+    {
+      "source": "NASDAQ: 69242.03",
+      "target": "Ethereum: $2022.03",
+      "label": "",
+      "importance": "중요"
+    },
+    {
+      "source": "DOWJONES: 69242.03",
+      "target": "USD/KRW (원/달러): 1,478.10",
+      "label": "",
+      "importance": "중요"
+    },
+    {
+      "source": "Bitcoin: $69309.59",
+      "target": "Gold (g 또는 oz 단위, 원): 2026.03",
+      "label": "",
+      "importance": "중요"
+    },
+    {
+      "source": "Ethereum: $2022.03",
+      "target": "Gold (g 또는 oz 단위, 원): 2026.03",
+      "label": "",
+      "importance": "중요"
+    },
+    {
+      "source": "Gold (g 또는 oz 단위, 원): 2026.03",
+      "target": "NASDAQ_KRW: 102346644",
+      "label": "",
+      "importance": "중요"
+    },
+    {
+      "source": "DOWJONES_KRW: 102346644",
+      "target": "NASDAQ_KRW: 102346644",
+      "label": "",
+      "importance": "보통"
+    }
+  ]
+}

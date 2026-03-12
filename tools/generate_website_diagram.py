@@ -1,3 +1,26 @@
+def google_search_and_extract(query, driver, wait_time=10):
+    """
+    구글 검색 후 첫 번째 결과 페이지의 주요 텍스트를 추출
+    """
+    from selenium.webdriver.common.keys import Keys
+    import re
+    search_url = f'https://www.google.com/search?q={query}'
+    driver.get(search_url)
+    time.sleep(2)
+    # 첫 번째 검색 결과 클릭
+    try:
+        first_result = driver.find_element(By.CSS_SELECTOR, 'a h3')
+        first_result.find_element(By.XPATH, '..').click()
+    except Exception:
+        return "(구글 검색 결과를 찾을 수 없음)"
+    time.sleep(wait_time)
+    try:
+        body_elem = driver.find_element(By.TAG_NAME, 'body')
+        text = body_elem.text
+        # 너무 길면 앞부분만
+        return text[:2000]
+    except Exception:
+        return "(구글 검색 페이지 텍스트 추출 실패)"
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
@@ -25,7 +48,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 
 # Ollama API 설정
 OLLAMA_API_URL = "http://localhost:11434/api/generate"
-OLLAMA_MODEL = os.environ.get("OLLAMA_MODEL", "gemma3:4b")
+OLLAMA_MODEL = os.environ.get("OLLAMA_MODEL", "gpt-oss:120b-cloud")
 
 # Selenium 설정
 WAIT_TIME = 10  # 페이지 로딩 대기 시간 (초)
@@ -376,15 +399,28 @@ def generate_diagram_with_ollama(url, page_content, model=OLLAMA_MODEL):
         print(f"\n🤖 Ollama AI로 다이어그램 생성 중... (모델: {model})")
         price_nodes = []
         explanation_nodes = []
+        google_texts = {}
         try:
             base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
             finance_json_path = os.path.join(base_dir, 'web', 'public', '한국인터넷.한국', '참소식.com', 'realtime_finance_data.json')
             if os.path.exists(finance_json_path):
                 with open(finance_json_path, 'r', encoding='utf-8') as f:
                     finance_json = json.load(f)
+                # 크롬 드라이버 준비
+                chrome_options = Options()
+                chrome_options.add_argument('--headless')
+                chrome_options.add_argument('--no-sandbox')
+                chrome_options.add_argument('--disable-dev-shm-usage')
+                chrome_options.add_argument('user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36')
+                service = Service(ChromeDriverManager().install())
+                driver = webdriver.Chrome(service=service, options=chrome_options)
                 for k, v in finance_json.items():
                     if not k.endswith('_ollama'):
                         price_nodes.append(f"{k}: {v}")
+                        # 지표별 구글 검색 및 텍스트 추출
+                        google_query = f"{k} 지수 실시간" if '코스피' in k or 'KOSPI' in k or '지수' in k else f"{k} 실시간 시세"
+                        google_text = google_search_and_extract(google_query, driver, wait_time=10)
+                        google_texts[k] = google_text
                     if k.endswith('_ollama'):
                         try:
                             if isinstance(v, str) and v.strip().startswith('{'):
@@ -397,9 +433,24 @@ def generate_diagram_with_ollama(url, page_content, model=OLLAMA_MODEL):
                                 explanation_nodes.append(f"{k.replace('_ollama','')}_설명: {v.strip()}")
                         except Exception:
                             explanation_nodes.append(f"{k.replace('_ollama','')}_설명: {v}")
+                driver.quit()
         except Exception as e:
-            print(f"⚠️ 금융 데이터 JSON 파싱 오류: {e}")
-        merged_items = (price_nodes + explanation_nodes)[:12]
+            print(f"⚠️ 금융 데이터 JSON 파싱/구글 검색 오류: {e}")
+        # 항상 포함할 주요 지표 키워드 목록
+        always_include = ['KOSPI', 'KOSDAQ', '코스피', '코스닥']
+        always_items = []
+        rest_items = []
+        for item in price_nodes + explanation_nodes:
+            # item이 예: 'KOSPI: 1234' 또는 'KOSPI_설명: ...' 형태이므로 키워드 포함 여부로 판단
+            if any(key in item for key in always_include):
+                always_items.append(item)
+            else:
+                rest_items.append(item)
+        # 중복 제거(항상 포함 항목이 rest에도 있을 수 있음)
+        always_items = list(dict.fromkeys(always_items))
+        rest_items = [x for x in rest_items if x not in always_items]
+        merged_items = always_items + rest_items
+        merged_items = merged_items[:12]  # 최대 12개 유지
         import_path = os.path.join(os.path.dirname(__file__), 'diagram_prompt_template.json')
         try:
             with open(import_path, 'r', encoding='utf-8') as pf:
@@ -411,7 +462,13 @@ def generate_diagram_with_ollama(url, page_content, model=OLLAMA_MODEL):
         if prompt_json:
             if len(merged_items) > 0 and 'finance' in prompt_json:
                 merged_items_info = '\n'.join(merged_items)
-                prompt = prompt_json['finance'].replace('{merged_items_info}', merged_items_info)
+                # 구글 검색 결과도 프롬프트에 추가
+                google_info_lines = []
+                for k, v in google_texts.items():
+                    v_short = v[:100].replace('\n', ' ')
+                    google_info_lines.append(f"[구글검색] {k}: {v_short} ...")
+                google_info = '\n'.join(google_info_lines)
+                prompt = prompt_json['finance'].replace('{merged_items_info}', merged_items_info + '\n' + google_info)
             elif 'default' in prompt_json:
                 limited_items = page_content.get('data_items', [])[:12]
                 limited_items_info = '\n'.join(limited_items) if limited_items else "데이터 없음"
@@ -558,7 +615,7 @@ def main():
                         type=int,
                         default=WAIT_TIME)
     args = parser.parse_args()
-    args.model = "gemma3:4b"
+    args.model = "gpt-oss:120b-cloud"
     url = args.url
     if not url.startswith('http'):
         url = 'https://' + url

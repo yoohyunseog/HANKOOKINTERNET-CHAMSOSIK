@@ -2,12 +2,30 @@
 import time
 import json
 import requests
+import xml.etree.ElementTree as ET
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+"""
+🔄 업데이트 포인트 (실시간 이슈 맵 개선)
+1. 실시간 데이터 반영
+    - 최신 뉴스 기사와 트렌드 키워드가 자동으로 갱신되는지 확인 필요
+    - 특정 이슈가 오래된 상태로 남아 있다면, 데이터 소스 업데이트 주기 조정 필요
+2. 카테고리 정리
+    - 에너지, 경제, 정치, 사회 등 주요 분야별로 카드가 구분되어야 함
+    - 현재 카드가 단순 키워드 나열이라면, 주제별 그룹화 필요
+3. 시각화 개선
+    - 단순 텍스트보다 그래프·맵·타임라인 형태로 트렌드 흐름을 직관적으로 표시
+    - 예: “에너지 산업” 관련 키워드가 급상승 중이라면, 상승 곡선을 시각적으로 표시
+
+TODO:
+- 실시간 뉴스/트렌드 API 연동 및 주기적 데이터 갱신
+- 카드 데이터에 카테고리(분야) 필드 추가 및 그룹화 로직 구현
+- 카드/이슈맵 시각화(그래프, 타임라인 등) 함수 추가
+"""
 # ollama REST API 연동 함수
 OLLAMA_URL = "http://localhost:11434"
 OLLAMA_MODEL = "gemma3:1b"
@@ -166,6 +184,22 @@ def get_value(driver, target):
         return None
 
 def main():
+    # 1. 주요 뉴스 헤드라인 추출 (RSS)
+    NEWS_FEED_URL = "https://xn--9l4b4xi9r.com/feed.xml"
+    news_headlines = []
+    try:
+        resp = requests.get(NEWS_FEED_URL, timeout=10)
+        if resp.status_code == 200:
+            root = ET.fromstring(resp.content)
+            for item in root.findall('.//item'):
+                title = item.find('title')
+                if title is not None and title.text:
+                    news_headlines.append(title.text.strip())
+        else:
+            news_headlines.append("(뉴스 피드 불러오기 실패)")
+    except Exception as e:
+        news_headlines.append(f"(뉴스 피드 에러: {e})")
+    news_text = '\n'.join(news_headlines[:10])  # 상위 10개 뉴스만 사용
     # 최신 selenium에서는 Service 객체로 드라이버 경로 지정
     service = Service(CHROME_DRIVER_PATH)
     driver = webdriver.Chrome(service=service, options=chrome_options)
@@ -203,8 +237,9 @@ def main():
 
     usdkrw = parse_float(raw_values.get('USD/KRW'))
     if usdkrw:
-        # S&P500, NASDAQ, DOWJONES, Bitcoin, Ethereum, Gold(달러 단위만) 환산
         for key, src in [
+            ('KOSPI_KRW', 'KOSPI'),  # 추가
+            ('KOSDAQ_KRW', 'KOSDAQ'),  # 추가
             ('S&P500_KRW', 'S&P500'),
             ('NASDAQ_KRW', 'NASDAQ'),
             ('DOWJONES_KRW', 'DOWJONES'),
@@ -213,7 +248,8 @@ def main():
         ]:
             val = parse_float(raw_values.get(src))
             if val:
-                results[key] = int(val * usdkrw)
+                # KOSPI, KOSDAQ은 이미 원화이므로 그냥 val 사용
+                results[key] = int(val) if 'KOSPI' in key or 'KOSDAQ' in key else int(val * usdkrw)
         # Gold는 이미 원화 단위로 추출된 경우가 많으므로 별도 처리 생략
     driver.quit()
 
@@ -226,11 +262,15 @@ def main():
     for key in all_keys:
         val = results.get(key)
         val_krw = results.get(f"{key}_KRW")
+        page_text = page_texts.get(key, "")
         if val:
             prompt = (
                 f"아래 값은 {key}의 실시간 최신 데이터입니다. 만약 달러 단위라면 환율({results.get('USD/KRW (원/달러)')}원/달러)로 원화(KRW)로 환산해서, "
                 f"실제 투자 참고가 될 수 있도록 시장 상황, 변동성, 환율 영향, 최근 트렌드, 투자자 유의점 등도 함께 상세하게 한글로 해설해줘. "
-                f"예시: {{\"value_krw\": \"숫자(원)\", \"explanation\": \"실시간 시장 해설 및 투자 참고\"}}\n\n값: {val}, 원화 환산값: {val_krw}"
+                f"아래는 해당 종목의 최신 페이지 주요 텍스트입니다:\n{page_text}\n"
+                f"또한 아래는 오늘의 주요 뉴스 헤드라인입니다. 뉴스와 지표가 연결되는 부분이 있다면 함께 해설해줘:\n{news_text}\n"
+                f"예시: {{\"value_krw\": \"숫자(원)\", \"explanation\": \"실시간 시장 해설 및 투자 참고\"}}\n\n"
+                f"값: {val}, 원화 환산값: {val_krw}"
             )
             ollama_result = ollama_explain(prompt)
             results[f"{key}_ollama"] = ollama_result
