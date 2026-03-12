@@ -894,10 +894,18 @@
             });
 
           // 텍스트 노드가 있으면 표시
+          // 텍스트 노드 중요도 색상 결정 (첫 번째 노드 기준)
+          let textColor = '#6c757d';
+          if (textNodes.length > 0 && textNodes[0].importance) {
+            textColor = textNodes[0].importance === '중요' ? '#dc2626'
+              : textNodes[0].importance === '보통' ? '#f59e42'
+              : textNodes[0].importance === '낮음' ? '#64748b'
+              : '#6c757d';
+          }
           const textHtml = textNodes.length > 0
-            ? `<div class="diagram-text-nodes mb-2" style="border:1.5px dashed #aaa;border-radius:8px;padding:7px 10px 7px 10px;background:#f8fafc;">
+            ? `<div class="diagram-text-nodes mb-2" style="border:1.5px dashed #aaa;border-radius:8px;padding:7px 10px 7px 10px;background:#f8fafc; color:${textColor};">
                 <i class="bi bi-chat-left-text text-info"></i>
-                <span class="small text-secondary">${textNodes.map(tn => escapeDiagramHtml((tn.toLabel||'').replace(/^\[text\]/, '').trim())).join('<br>')}</span>
+                <span class="small">${textNodes.map(tn => escapeDiagramHtml((tn.toLabel||'').replace(/^\[text\]/, '').trim())).join('<br>')}</span>
               </div>`
             : '';
 
