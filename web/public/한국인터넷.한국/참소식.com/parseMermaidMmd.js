@@ -28,6 +28,9 @@ function parseWebsiteFromDiagramJsonToGraph(jsonData) {
   const edges = jsonData.edges.map(edge => ({ ...edge }));
   return { nodes, edges };
 }
+
+// ESM import 대응: 주요 함수 export
+export { parseMermaidToRelations, parseWebsiteFromDiagramJsonText, parseWebsiteFromDiagramJsonToGraph, parseDiagramJsonToGraph };
 // .mmd 파일 파싱 전용 JS (중요도 지원)
 
 function parseMermaidToRelations(mermaidCode) {
