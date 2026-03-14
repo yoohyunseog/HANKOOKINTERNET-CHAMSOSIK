@@ -44,6 +44,9 @@ def build_meta(labels):
         f"참소식.com 실시간 이슈 맵: {summary} 흐름을 한눈에 확인하고, "
         f"지정학 리스크·글로벌 경제 영향을 빠르게 파악하세요."
     )
+    # 500자 이하로 자르기
+    if len(description) > 500:
+        description = description[:500] + '...'
 
     keyword_base = [
         "참소식",

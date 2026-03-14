@@ -1,0 +1,31 @@
+
+# Ollama AI 프롬프트 예시 (Chainlink 연동용)
+
+아래 HTML에서 주요 데이터(예: 날짜, 지역, 가격 등)를 추출하여, 반드시 아래와 같은 JSON 양식으로 변환해 주세요.
+
+반드시 설명 없이, JSON만 출력하세요.
+
+JSON 예시:
+
+[
+  {
+    "timestamp": "2026-03-13T12:00:00Z",
+    "location": "서울",
+    "price": 12345,
+    "unit": "KRW",
+    "source": {
+      "name": "참소식.com",
+      "url": "https://참소식.com",
+      "retrieved_at": "2026-03-13T12:00:00Z",
+      "reliability": "high"
+    }
+  }
+]
+
+- 데이터가 여러 개라면 위와 같이 배열로 반환
+- 불필요한 텍스트, 광고, UI 요소는 제외
+- 날짜, 숫자, 단위 등은 최대한 표준화
+- JSON은 UTF-8, indent=2로 출력
+- 반드시 설명, 안내, Thinking 등은 출력하지 말고 JSON만 반환
+
+Chainlink에서 활용할 수 있도록, 데이터의 신뢰성과 출처 정보(source 필드)를 반드시 포함하세요.

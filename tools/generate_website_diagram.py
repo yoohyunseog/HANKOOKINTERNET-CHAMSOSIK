@@ -451,37 +451,35 @@ def generate_diagram_with_ollama(url, page_content, model=OLLAMA_MODEL):
         rest_items = [x for x in rest_items if x not in always_items]
         merged_items = always_items + rest_items
         merged_items = merged_items[:12]  # 최대 12개 유지
-        import_path = os.path.join(os.path.dirname(__file__), 'diagram_prompt_template.json')
+        import_path = os.path.join(os.path.dirname(__file__), 'diagram_prompt_template.txt')
         try:
             with open(import_path, 'r', encoding='utf-8') as pf:
-                prompt_json = json.load(pf)
+                prompt_template = pf.read()
         except Exception as e:
-            print(f"⚠️ JSON 프롬프트 템플릿 로드 오류: {e}")
-            prompt_json = None
+            print(f"⚠️ 프롬프트 템플릿 로드 오류: {e}")
+            prompt_template = None
         prompt = None
-        if prompt_json:
-            if len(merged_items) > 0 and 'finance' in prompt_json:
-                merged_items_info = '\n'.join(merged_items)
-                # 구글 검색 결과도 프롬프트에 추가
-                google_info_lines = []
-                for k, v in google_texts.items():
-                    v_short = v[:100].replace('\n', ' ')
-                    google_info_lines.append(f"[구글검색] {k}: {v_short} ...")
-                google_info = '\n'.join(google_info_lines)
-                prompt = prompt_json['finance'].replace('{merged_items_info}', merged_items_info + '\n' + google_info)
-            elif 'default' in prompt_json:
-                limited_items = page_content.get('data_items', [])[:12]
-                limited_items_info = '\n'.join(limited_items) if limited_items else "데이터 없음"
-                prompt = prompt_json['default'].replace('{url}', url).replace('{limited_items_info}', limited_items_info)
+        if prompt_template:
+            merged_items_info = '\n'.join(merged_items)
+            google_info_lines = []
+            for k, v in google_texts.items():
+                v_short = v[:100].replace('\n', ' ')
+                google_info_lines.append(f"[구글검색] {k}: {v_short} ...")
+            google_info = '\n'.join(google_info_lines)
+            prompt = prompt_template.replace('{merged_items_info}', merged_items_info + '\n' + google_info)
+            prompt = prompt.replace('{url}', url)
+            limited_items = page_content.get('data_items', [])[:12]
+            limited_items_info = '\n'.join(limited_items) if limited_items else "데이터 없음"
+            prompt = prompt.replace('{limited_items_info}', limited_items_info)
         if not prompt:
-            raise RuntimeError('프롬프트 템플릿을 찾을 수 없습니다. tools/diagram_prompt_template.json을 확인하세요.')
+            raise RuntimeError('프롬프트 템플릿을 찾을 수 없습니다. tools/diagram_prompt_template.txt을 확인하세요.')
         payload = {
             "model": model,
             "prompt": prompt,
             "stream": False,
             "options": {
                 "temperature": 0.7,
-                "num_predict": 2000
+                "num_predict": 10000
             }
         }
         response = requests.post(OLLAMA_API_URL, json=payload, timeout=120)
