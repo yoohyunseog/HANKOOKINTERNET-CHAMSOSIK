@@ -36,6 +36,7 @@ DATABASE_SAVE_ENABLED = os.getenv("DATABASE_SAVE_ENABLED", "1") == "1"
 DATABASE_OPEN_PAGE = os.getenv("DATABASE_OPEN_PAGE", "0") == "1"
 DATABASE_OPEN_MODE = os.getenv("DATABASE_OPEN_MODE", "popup").strip().lower()
 YOUTUBE_CC_FALLBACK = os.getenv("YOUTUBE_CC_FALLBACK", "0") == "1"
+BLOCK_KOREAN_PERSON_NAMES = os.getenv("BLOCK_KOREAN_PERSON_NAMES", "1") == "1"
 SCRIPT_DIR = Path(__file__).parent.resolve()
 REPORTS_BASE_DIR = SCRIPT_DIR / "reports"
 LOGS_DIR = SCRIPT_DIR / "logs"
@@ -79,7 +80,11 @@ def load_keywords_from_file(max_keywords: int = 0) -> List[str]:
             return []
 
         with open(KEYWORDS_FILE, "r", encoding="utf-8") as f:
-            lines = [line.strip() for line in f if line.strip()]
+            lines = [
+                line.strip()
+                for line in f
+                if line.strip() and not line.lstrip().startswith("#")
+            ]
 
         loaded_keywords = []
         seen = set()
@@ -99,8 +104,25 @@ def load_keywords_from_file(max_keywords: int = 0) -> List[str]:
 
 
 def save_keywords_to_file(keywords: List[str]) -> None:
-    """키워드 자동 저장 비활성화 (수동 관리 전용)"""
-    return
+    """키워드 파일 저장"""
+    unique_keywords = []
+    seen = set()
+
+    for keyword in keywords:
+        keyword_text = str(keyword).strip()
+        if not keyword_text or keyword_text == FIXED_KEYWORD or keyword_text.startswith("#"):
+            continue
+        if keyword_text in seen:
+            continue
+        seen.add(keyword_text)
+        unique_keywords.append(keyword_text)
+
+    KEYWORDS_FILE.parent.mkdir(parents=True, exist_ok=True)
+    with open(KEYWORDS_FILE, "w", encoding="utf-8") as f:
+        f.write("# Auto-updated YouTube monitor keywords\n")
+        f.write(f"# Updated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n\n")
+        for keyword in unique_keywords:
+            f.write(f"{keyword}\n")
 
 
 def normalize_summary_text(text: str) -> str:
@@ -123,6 +145,80 @@ def normalize_summary_text(text: str) -> str:
     return "\n".join(normalized_lines).strip()
 
 
+def redact_korean_person_names(text: str) -> str:
+    """한국인 실명은 일반 표현으로 치환하고, 미국 인명 등은 그대로 둔다."""
+    if not text or not BLOCK_KOREAN_PERSON_NAMES:
+        return text
+
+    import re
+
+    surname = r"[김이박최정강조윤장임한오서신권황안송전홍유고문양손배백허남심노하곽성차주우구민진지엄채원천방공현함변염여추도소석선설마길연위표명기반왕금옥육인맹제모남탁국어은편용]"
+    role_words = (
+        "대통령|전 대통령|정치인|여당 인사|야당 인사|의원|국회의원|장관|총리|후보|지사|시장|군수|도지사|"
+        "회장|부회장|대표|대표이사|사장|부사장|기업인|재계 인사|창업자|총수|"
+        "감독|코치|선수|배우|가수|방송인|앵커|기자|교수|작가|변호사|검사|판사|아나운서|"
+        "유튜버|인플루언서|전문가"
+    )
+    generic_map = {
+        "대통령": "국내 정치인",
+        "전 대통령": "국내 정치인",
+        "정치인": "국내 정치인",
+        "여당 인사": "국내 정치권 인사",
+        "야당 인사": "국내 정치권 인사",
+        "의원": "국내 정치인",
+        "국회의원": "국내 정치인",
+        "장관": "국내 고위 인사",
+        "총리": "국내 고위 인사",
+        "후보": "국내 정치인",
+        "지사": "국내 정치인",
+        "시장": "국내 정치인",
+        "군수": "국내 정치인",
+        "도지사": "국내 정치인",
+        "회장": "국내 기업인",
+        "부회장": "국내 기업인",
+        "대표": "국내 기업인",
+        "대표이사": "국내 기업인",
+        "사장": "국내 기업인",
+        "부사장": "국내 기업인",
+        "기업인": "국내 기업인",
+        "재계 인사": "국내 기업인",
+        "창업자": "국내 기업인",
+        "총수": "국내 기업인",
+        "감독": "국내 인사",
+        "코치": "국내 인사",
+        "선수": "국내 인사",
+        "배우": "국내 인사",
+        "가수": "국내 인사",
+        "방송인": "국내 인사",
+        "앵커": "국내 인사",
+        "기자": "국내 인사",
+        "교수": "국내 전문가",
+        "작가": "국내 인사",
+        "변호사": "국내 전문가",
+        "검사": "국내 인사",
+        "판사": "국내 인사",
+        "아나운서": "국내 인사",
+        "유튜버": "국내 크리에이터",
+        "인플루언서": "국내 크리에이터",
+        "전문가": "국내 전문가",
+    }
+
+    def replace_name_with_role(match: re.Match) -> str:
+        role = match.group("role")
+        return generic_map.get(role, "국내 인사")
+
+    patterns = [
+        rf"(?P<name>{surname}[가-힣]{{2}})\s*(?P<role>{role_words})",
+        rf"(?P<role>{role_words})\s*(?P<name>{surname}[가-힣]{{2}})",
+    ]
+
+    redacted = text
+    for pattern in patterns:
+        redacted = re.sub(pattern, replace_name_with_role, redacted)
+
+    return redacted
+
+
 def format_summary_with_ollama(keyword: str, upload_date: str, summary: str) -> str:
     """올라마가 요약을 포맷팅: 키워드에 맞는 메시지 + 핵심 내용 1줄"""
     global CURRENT_OLLAMA_MODEL
@@ -143,6 +239,8 @@ def format_summary_with_ollama(keyword: str, upload_date: str, summary: str) -> 
 4) 여러 내용이 있으면 가장 중요한 1개만 선택
 5) 괄호 포함 전체 길이는 90~140자 (즉, 문장 본문은 88~138자)
 6) 설명/접두어/추가 문장 절대 금지
+7) 한국인 실명은 쓰지 말고 '국내 정치인', '국내 기업인', '국내 인사'처럼 일반화할 것
+8) 미국 인명이나 해외 인명은 필요하면 그대로 써도 됨
 
 출력: 대괄호 한 문장 1개만"""
     
@@ -168,6 +266,7 @@ def format_summary_with_ollama(keyword: str, upload_date: str, summary: str) -> 
             max_body_len = 138
 
             one_line = " ".join(formatted.split())
+            one_line = redact_korean_person_names(one_line)
 
             # 1) 대괄호 문장 우선 추출
             bracket_match = re.search(r"\[(.*?)\]", one_line)
@@ -311,6 +410,139 @@ UNAVAILABLE_SUMMARIES = {
 def is_summary_eligible_for_db(summary: str) -> bool:
     summary = normalize_summary_text(summary or "")
     return bool(summary) and summary not in UNAVAILABLE_SUMMARIES
+
+
+def is_unavailable_summary(summary: str) -> bool:
+    """DB 저장 대상이 아닌 실패/스킵 요약인지 판별"""
+    normalized = normalize_summary_text(summary or "")
+    return not normalized or normalized in UNAVAILABLE_SUMMARIES
+
+
+def analyze_with_search_fallback(video_title: str, keyword: str, model: str) -> Dict[str, Any]:
+    """일반 검색 엔진을 순차 시도해 사용 가능한 요약을 반환"""
+    engine_funcs = {
+        "google": analyze_with_google,
+        "naver": analyze_with_naver,
+        "zum": analyze_with_zum,
+    }
+
+    raw_order = os.getenv("SEARCH_FALLBACK_ORDER", "google,naver,zum").strip()
+    engines = [item.strip().lower() for item in raw_order.split(",") if item.strip()]
+    if not engines:
+        engines = ["google", "naver", "zum"]
+
+    attempts = []
+    last_summary = "검색 결과 없음"
+
+    for engine in engines:
+        func = engine_funcs.get(engine)
+        if not func:
+            continue
+
+        summary = normalize_summary_text(func(video_title, keyword, model))
+        attempts.append({"engine": engine, "summary": summary})
+        last_summary = summary or last_summary
+
+        if is_summary_eligible_for_db(summary):
+            return {
+                "engine": engine,
+                "summary": summary,
+                "attempts": attempts,
+            }
+
+    return {
+        "engine": "",
+        "summary": last_summary,
+        "attempts": attempts,
+    }
+
+
+def is_today_video_with_search_data(video: Dict[str, Any], keyword: str, search_summary: str, model: str) -> bool:
+    """일반 검색 결과를 근거로 오늘 날짜/당일성 영상인지 재판정"""
+    upload_date = (video.get("upload_date") or "").strip()
+    if upload_date and not is_within_last_24_hours(upload_date):
+        return False
+
+    normalized_summary = normalize_summary_text(search_summary or "")
+    if not is_summary_eligible_for_db(normalized_summary):
+        return False
+
+    if not model:
+        return bool(upload_date and is_within_last_24_hours(upload_date))
+
+    now_str = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    today_str = datetime.now().strftime("%Y-%m-%d")
+    prompt = f"""다음 정보만 보고 이 YouTube 영상이 현재 시각({now_str}) 기준으로 '오늘 날짜 데이터/당일 이슈를 다루는 영상'인지 판정하세요.
+
+[영상 제목]
+{video.get('title', '')[:250]}
+
+[키워드]
+{keyword[:120]}
+
+[업로드일]
+{upload_date or '확인 불가'}
+
+[일반 검색 요약]
+{normalized_summary[:1800]}
+
+판정 기준:
+1) 오늘, 금일, 현재, 실시간, 방금, 당일 시황/뉴스/속보처럼 현재 날짜와 직접 연결되면 YES
+2) 검색 요약에 오늘 날짜({today_str}) 또는 그에 해당하는 당일 맥락이 드러나면 YES
+3) 상시 정보, 일반 강의, 과거 회고, 날짜 불명은 NO
+4) 애매하면 NO
+
+출력: YES 또는 NO 하나만"""
+
+    try:
+        response = requests.post(
+            f"{OLLAMA_URL}/api/generate",
+            json={
+                "model": model,
+                "prompt": prompt,
+                "stream": False,
+                "options": {
+                    "temperature": 0.0,
+                    "num_predict": 5,
+                    "top_p": 0.1,
+                },
+            },
+            timeout=20,
+        )
+        response.raise_for_status()
+        result = response.json()
+        verdict = (result.get("response", "") or "").strip().upper()
+        return verdict.startswith("YES")
+    except Exception:
+        return bool(upload_date and is_within_last_24_hours(upload_date))
+
+
+def apply_search_fallback_if_needed(
+    video: Dict[str, Any],
+    keyword: str,
+    model: str,
+    current_summary: str,
+) -> str:
+    """자막 기반 분석이 실패했을 때 일반 검색으로 보강"""
+    normalized = normalize_summary_text(current_summary or "")
+    if not is_unavailable_summary(normalized):
+        return normalized
+
+    fallback = analyze_with_search_fallback(video.get("title", ""), keyword, model)
+    fallback_summary = normalize_summary_text(fallback.get("summary", ""))
+    fallback_engine = fallback.get("engine", "")
+
+    if not is_summary_eligible_for_db(fallback_summary):
+        return fallback_summary or normalized or "검색 결과 없음"
+
+    if not is_today_video_with_search_data(video, keyword, fallback_summary, model):
+        return "오늘 날짜 영상 아님(건너뜀)"
+
+    if fallback_engine:
+        print(f"            -> 자막 실패, {fallback_engine} 검색 데이터로 대체")
+    else:
+        print("            -> 자막 실패, 일반 검색 데이터로 대체")
+    return fallback_summary
 
 
 def open_database_page(url: str) -> str:
@@ -636,6 +868,7 @@ def choose_ollama_model(requested_model: str) -> str:
     
     # 폴백 우선순위 (gemma3 모델 중심)
     fallback_order = [
+        "deepseek-v3.1:671b-cloud",  # 최상위 모델 (성능 최고, 클라우드 전용)
         "gemma3:12b",      # 추천: 높은 성능 + 안정성
         "gemma3:4b",       # 빠르고 안정적
         "gemma3:27b",      # 강력하지만 느림
@@ -2326,6 +2559,7 @@ def collect_youtube_data(
                             model,
                             upload_date=video.get("upload_date", ""),
                         )
+                        summary = apply_search_fallback_if_needed(video, keyword, model, summary)
                     elif analysis_source == "subtitles":
                         print(f"         자막 분석 중: [{idx+1}/{len(all_videos)}] {video_title} (업로드일: {video_upload_date})")
                         subtitles = get_video_subtitles(video_id)
@@ -2356,7 +2590,10 @@ def collect_youtube_data(
                                 summary = analyze_subtitles_with_ollama(subtitles, model, video['title'])
                         else:
                             print("            → 자막 없음, Google 검색 분석으로 폴백")
-                            summary = analyze_with_google(video["title"], keyword, model)
+                            summary = "자막 없음"
+
+                    if analysis_source in {"youtube", "subtitles", "auto"}:
+                        summary = apply_search_fallback_if_needed(video, keyword, model, summary)
 
                     summary = normalize_summary_text(summary)
                     video["subtitle_summary"] = summary
@@ -2551,7 +2788,7 @@ def generate_report_with_ollama(report_data: Dict[str, Any], model: str) -> str:
                     video_summary = {
                         "title": video['title'],
                         "views": video['views'],
-                        "subtitle_summary": video.get('subtitle_summary', '자막 없음')
+                        "subtitle_summary": redact_korean_person_names(video.get('subtitle_summary', '자막 없음'))
                     }
                     videos_info.append(video_summary)
             
@@ -2588,6 +2825,8 @@ def generate_report_with_ollama(report_data: Dict[str, Any], model: str) -> str:
 4. 한국어로 작성
 5. 데이터 기반의 구체적인 분석 제공
 6. N/B 스코어 해석 포함
+7. 한국인 실명은 직접 쓰지 말고 국내 정치인, 국내 기업인, 국내 인사처럼 일반화
+8. 미국 인명과 해외 인명은 필요하면 그대로 유지
 
 전문적인 형식의 마크다운 리포트를 작성해주세요:"""
         
@@ -2680,7 +2919,7 @@ def save_report(report_data: Dict[str, Any], report_dir: Path, report_num: int, 
                         for vid_idx, video in enumerate(kw_data["videos"], 1):
                             f.write(f"{vid_idx}. **{video['title']}**\n")
                             f.write(f"   - 조회수: {video['views']:,}\n")
-                            subtitle = video.get('subtitle_summary', '자막 미분석')
+                            subtitle = redact_korean_person_names(video.get('subtitle_summary', '자막 미분석'))
                             if subtitle and subtitle != "자막 미분석":
                                 f.write(f"   - 분석 요약: {subtitle}\n")
                             f.write("\n")
@@ -2832,7 +3071,7 @@ def run_monitoring_cycle(
 
 def main():
     parser = argparse.ArgumentParser(description="YouTube 키워드 지속 모니터링")
-    parser.add_argument("--model", default="gpt-oss:120b-cloud", help="Ollama 모델 (기본: gpt-oss:120b-cloud)")
+    parser.add_argument("--model", default="deepseek-v3.1:671b-cloud", help="Ollama 모델 (기본: deepseek-v3.1:671b-cloud)")
     parser.add_argument("--keywords", type=int, default=10, help="키워드 개수 (기본: 10, '오늘의 주요 뉴스' 고정 포함)")
     parser.add_argument("--videos", type=int, default=10, help="키워드당 영상 수 (기본: 10)")
     parser.add_argument("--interval", type=int, default=30, help="모니터링 간격(분) (기본: 30분)")
@@ -2840,7 +3079,7 @@ def main():
     parser.add_argument("--no-subtitles", action="store_false", dest="subtitles", help="자막 분석 비활성화")
     parser.add_argument(
         "--analysis-source",
-        choices=["subtitles", "google", "bing", "naver", "zum", "youtube", "auto"],
+        choices=["subtitles", "google", "naver", "zum", "youtube", "auto"],
         default="youtube",
         help="분석 소스 선택 (subtitles|google|bing|naver|zum|youtube|auto)",
     )

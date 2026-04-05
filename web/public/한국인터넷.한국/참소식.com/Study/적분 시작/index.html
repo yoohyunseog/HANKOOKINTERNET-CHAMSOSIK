@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>적분 시작 - 감으로 이해하는 미적분</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="page">
+      <div class="page-width-bar">
+        <span class="page-width-label">레이아웃 폭</span>
+        <div class="page-width-controls">
+          <button id="widthMinus" type="button" class="width-button" aria-label="레이아웃 폭 줄이기">-</button>
+          <strong id="widthValue" class="width-value">430px</strong>
+          <button id="widthPlus" type="button" class="width-button" aria-label="레이아웃 폭 늘리기">+</button>
+        </div>
+      </div>
+
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Study / 적분 시작</p>
+          <h1>미분에서 적분으로 넘어가는 첫 장면</h1>
+          <p class="hero-text">
+            접선의 기울기였던 미분에서 출발해
+            <strong>원래 함수 찾기, 적분상수, 정적분, 넓이, 미적분의 기본정리</strong>
+            까지 한 흐름으로 이어지는 인터랙티브 수업입니다.
+          </p>
+          <p class="hero-text">
+            지금 화면은 대본의 핵심 흐름을 따라가도록 재구성했습니다. 장면을 넘기거나 x를
+            움직이면서 “길이를 쌓으면 넓이가 된다”는 감각을 바로 확인해 보세요.
+          </p>
+        </div>
+
+        <div class="hero-card">
+          <div class="scene-header">
+            <span class="scene-step" id="sceneStep">1 / 5</span>
+            <h2 id="sceneTitle">미분 복습: 접선의 기울기</h2>
+          </div>
+          <p id="sceneDescription" class="scene-description"></p>
+          <div class="scene-buttons" id="sceneButtons"></div>
+        </div>
+      </section>
+
+      <section class="workspace">
+        <aside class="controls">
+          <label class="control-block">
+            <span>장면 선택</span>
+            <input id="sceneRange" type="range" min="0" max="4" step="1" value="0" />
+          </label>
+
+          <label class="control-block">
+            <span>x 위치 이동</span>
+            <input id="xRange" type="range" min="0.2" max="3" step="0.01" value="1.2" />
+          </label>
+
+          <div class="readout-grid">
+            <div class="readout">
+              <span class="readout-label">x</span>
+              <strong id="xValue">1.20</strong>
+              <small id="xDetail" class="readout-detail"></small>
+            </div>
+            <div class="readout">
+              <span class="readout-label">f(x)=x²</span>
+              <strong id="fxValue">1.44</strong>
+              <small id="fxDetail" class="readout-detail"></small>
+            </div>
+            <div class="readout">
+              <span class="readout-label">f'(x)=2x</span>
+              <strong id="dfValue">2.40</strong>
+              <small id="dfDetail" class="readout-detail"></small>
+            </div>
+            <div class="readout">
+              <span class="readout-label">∫0→x t²dt</span>
+              <strong id="areaValue">0.58</strong>
+              <small id="areaDetail" class="readout-detail"></small>
+            </div>
+            <div class="readout">
+              <span class="readout-label">+ C</span>
+              <strong id="constantValue">3.00</strong>
+              <small id="constantDetail" class="readout-detail"></small>
+            </div>
+            <div class="readout">
+              <span class="readout-label">예시 0→3 ∫2x dx</span>
+              <strong id="sampleValue">9.00</strong>
+              <small id="sampleDetail" class="readout-detail"></small>
+            </div>
+          </div>
+        </aside>
+
+        <div class="visual-panel">
+          <svg id="graph" viewBox="0 0 900 580" aria-label="적분 시작 시각화"></svg>
+        </div>
+
+        <aside class="lesson-panel">
+          <div class="lesson-card">
+            <h3>지금 보는 포인트</h3>
+            <ul id="lessonPoints" class="lesson-points"></ul>
+          </div>
+
+          <div class="lesson-card">
+            <h3>핵심 수식</h3>
+            <div id="formulaBox" class="formula-box"></div>
+          </div>
+
+          <div class="lesson-card">
+            <h3>계산 흐름</h3>
+            <ol id="processBox" class="process-list"></ol>
+          </div>
+
+          <div class="lesson-card">
+            <h3>설명</h3>
+            <p id="explanationBox" class="explanation-box"></p>
+          </div>
+        </aside>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

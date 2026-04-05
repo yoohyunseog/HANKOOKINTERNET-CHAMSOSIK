@@ -31,7 +31,9 @@ if exist ".venv\Scripts\activate.bat" (
 
 REM 항상 자동 실행 (URL 입력 없이 기본 대상 분석)
 set TARGET_URL=https://xn--9l4b4xi9r.com/feed.xml
+set SELENIUM_HEADLESS=1
 echo 🤖 자동 실행: 참소식.com의 feed.xml을 분석합니다...
+echo 🕶️ Selenium 백그라운드(헤드리스) 모드로 실행합니다.
 
 :start_generation
 

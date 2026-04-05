@@ -1,0 +1,431 @@
+{
+  "timestamp": "2026-04-02T15:14:57.624119",
+  "model": "mistral:latest",
+  "keyword_count": 3,
+  "analyze_subtitles": true,
+  "analysis_source": "youtube",
+  "keywords": [
+    {
+      "keyword": "오늘의 주요 뉴스",
+      "is_fixed": true,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "부동산 집값 전망",
+      "is_fixed": false,
+      "views": [
+        5078,
+        14682
+      ],
+      "video_count": 2,
+      "videos": [
+        {
+          "title": "The Reason Seoul Housing Prices Are Alarming (Seoul Real Estate Outlook) | Whistle Part 1 [Hurang...",
+          "video_id": "mivG4xT0PYo",
+          "views": 5078,
+          "upload_date": "2026-04-01",
+          "url": "https://www.youtube.com/watch?v=mivG4xT0PYo",
+          "subtitle_summary": "1. 서울의 주택 가격은 지속적으로 상승하고 있습니다. 특히 관학구, 성북구, 강서구, 노원구, 구로구에서 가장 심각합니다.\n2. 이 상승은 규제 때문인 것으로 보입니다. 15억 이하의 주택이 많아지고 있습니다.\n3. 강남, 서초, 송파, 강동에서는 가격이 내려가고 있으며, 용산도 마이너스입니다. 성부는 0.2% 내려가고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "이재명 정부, 집값 이렇게 잡나. 싱가포르식 부동산 정책의 실체 | 경읽남과 토론합시다 | 한문도x김인만 5편",
+          "video_id": "NEc3kJywGI4",
+          "views": 14682,
+          "upload_date": "2026-04-01",
+          "url": "https://www.youtube.com/watch?v=NEc3kJywGI4",
+          "subtitle_summary": "1. 이재명 정부는 7월부터 11월까지 시장에 혼동을 줄 것으로 예상되며, 이를 통해 계산이 가능할 것이다. 이 정부의 노선은 무엇인가?\n2. 이재명 대통령이 싱가포르의 부동산 정책을 배우기 위해 방문했으며, 그 중에서 취득세가 60%이고 양도세와 상속세는 0%인 점이 특히 유의하게 되었다.\n3. 싱가포르의 부동산 정책과 우리나라의 부동산 정책은 결과적으로 차이가 있어 논의할 점이 있다고 한다.",
+          "db_saved": true
+        }
+      ],
+      "max": 3.0943,
+      "min": 0.4295,
+      "nb_score": 7.2052,
+      "avg_views": 9880.0,
+      "total_views": 19760
+    },
+    {
+      "keyword": "트럼프 이란 강경 발언",
+      "is_fixed": false,
+      "views": [
+        2340,
+        617
+      ],
+      "video_count": 2,
+      "videos": [
+        {
+          "title": "\"종전? 2~3주 이란 극도로 강력한 타격 감행\"...코스피, 트럼프 강경 발언에 장중 5,400선 내줘 [이슈PLAY] / JTBC News",
+          "video_id": "HYfaOtY-gck",
+          "views": 2340,
+          "upload_date": "2026-04-02",
+          "url": "https://www.youtube.com/watch?v=HYfaOtY-gck",
+          "subtitle_summary": "1. 대통령은 그빅을 통해서 법안을 통해 경제는 비약적인 성장을 이뤄낼 것이며, 3주 내에 강력한 타격을 감행할 것입니다.\n2. 이라크의 리더들이 모두 사망하여 새로운 리더 그룹이 등장했고, 이제는 석유 자산과 같은 표적을 타격할 수 있습니다.\n3. 미국은 1년 동안 1차 세계 대전에 개입하여 2차 대전, 한국 전쟁, 베트남 전쟁, 이라크 전쟁까지 32일 동안 강력한 군사력을 보여주었고, 이라크는 완전히 파괴되어 더 이상 위협이 없게 됐습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[지금뉴스] “앗, 종전은 커녕 더 세게?” 트럼프 연설하자 ‘쑥’ 빠진 코스피 / KBS 2026.04.02.",
+          "video_id": "ABA4so40RSo",
+          "views": 617,
+          "upload_date": "2026-04-02",
+          "url": "https://www.youtube.com/watch?v=ABA4so40RSo",
+          "subtitle_summary": "1. 도날드 트럼프의 연설 중에 코스피는 5,400선으로 하락했습니다.\n2. 이전보다 2% 내려서 오늘 10시 반 코스피는 5,300선에서 거래되고 있었습니다.\n3. 트럼프는 이란을 극도로 강하게 타격할 것이라고 말했으며, 이 연설 앞두고 종전 선언 등의 기대가 있었지만 그러한 소식은 없었습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 2.9632,
+      "min": 1.0171,
+      "nb_score": 2.9133,
+      "avg_views": 1478.5,
+      "total_views": 2957
+    },
+    {
+      "keyword": "삼성전자 주가 분석",
+      "is_fixed": false,
+      "views": [
+        2648,
+        2192,
+        2588,
+        748,
+        1672,
+        4853,
+        2586,
+        2038,
+        3985,
+        5081
+      ],
+      "video_count": 10,
+      "videos": [
+        {
+          "title": "[삼성전자 주가전망] \"긴급\" 5분전, 사건발생 갑작스러운 폭락 지금 \"XX\" 하셔야 합니다. 외국인 결국 \"이 자리\"에서 다시 강력하게 매수한다! #삼성전자#삼성전자주가전망",
+          "video_id": "bnj1HuNdsQQ",
+          "views": 2648,
+          "upload_date": "2026-04-02",
+          "url": "https://www.youtube.com/watch?v=bnj1HuNdsQQ",
+          "subtitle_summary": "1. 현재 Samsung Electronics의 주가는 5% 정도 하락하고 있습니다. 이전에는 3% 올라갔었지만, Trump의 대규모 폭격을 예고한 연설로 인해 다시 내려왔습니다.\n2. 차트승은 추격 매수하지 말고 뭐 해라고 주장합니다. 이유는 현재 구간에서 양봉의 크기가 얼마나 큰지 확인하면 알 수 있으며, 추세가 무너졌다고 볼 수 없습니다.\n3. 차트승은 주가가 올라갈 때 현금 확보를 해야 합니다. 이유는 추가락이 나오면 더 살 돈이 없으면 매우 아픈 상황이 될 수 있기 때문입니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[삼성전자 주가 전망 실시간] 트럼프 폭탄 발언으로 시장 급락! 5일선 대응이 정말중요합니다! 삼성전자 주식 분석 #삼성전자 #삼성전자주가 #삼성전자주가전망",
+          "video_id": "XZkD56qBM5g",
+          "views": 2192,
+          "upload_date": "2026-04-02",
+          "url": "https://www.youtube.com/watch?v=XZkD56qBM5g",
+          "subtitle_summary": "1. Trump의 폭탄 발언으로 인해 Samsung전자가 급락하고 있습니다. 지금은 매도하는 것이 아닙니다.\n2. 미국과 이란의 공격에 대한 기대감으로 인해 지난 날 국내 시장이 상승했습니다. 그러나 이 기대감은 꺾일 것으로 보입니다.\n3. Samsung전자의 경우, 과도하게 빠지고 있는데 단기적으로 강하게 상승한 후 이평선을 수렴시키고 있습니다. 중요한 라인은 3일선, 5일선 부근입니다. 따라서 지금 신규 매수나 추가 매수를 하는 것은 무리입니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[삼성전자 주가 전망]-2분전 대박뉴스 등장! #삼성전자 #삼성전자주가 #삼성전자주가전망",
+          "video_id": "baSICUIRAo0",
+          "views": 2588,
+          "upload_date": "2026-04-02",
+          "url": "https://www.youtube.com/watch?v=baSICUIRAo0",
+          "subtitle_summary": "1. 트럼프 행정부는 전쟁을 장기화하기 어려울 것으로 예상되며, 이에 따라 유가가 급등한 상황에서 상승 전환이 완벽히 이루어지지 않을 수 있다고 생각한다.\n2. 삼성전자는 강력한 이슈들로 인해 30만 대의 주가를 빠르게 돌파할 가능성이 높아 보이며, 오늘은 삼성전자가 개웃된 상승이 나올 수밖에 없는 결정적인 이유를 설명할 것이다.\n3. 삼성전자는 플렉트 그룹과 유럽 최대 공조전시 MC에 참가하며, 통합 솔루션, 산업 조준, 유럽 맞춤형 에너지 초격차 전략, 친환경 묘환, AI 기반의 무품 생태 확장 등 다양한 분야에서 혁신적인 노력을 보이고 있다.",
+          "db_saved": true
+        },
+        {
+          "title": "[삼성전자 주가전망] \"30만원까지\" 한방에 상승간다 매도 \"절대 금지\" #삼성전자 #삼성전자호재 #삼성전자주가",
+          "video_id": "IYMLFP9R3pQ",
+          "views": 748,
+          "upload_date": "2026-04-02",
+          "url": "https://www.youtube.com/watch?v=IYMLFP9R3pQ",
+          "subtitle_summary": "1. 삼성전자의 주가가 60일 하락 이후 갑작스러운 12% 상승으로 20만원 고점을 돌파했습니다.\n2. 지금은 기관 외인들의 수급이 재등장하여 우리는 절대 매도 버튼을 누르면 안 됩니다.\n3. RSI 지표를 통해 삼성전자의 과매수세를 확인할 수 있으며, 이 신호가 서서히 고개를 드는 것을 보여주고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[삼성전자 주가 전망][긴급]이상수급발생!대차잔고급증!왜?앞으로주가!이렇게됩니다!주주님들,꼭확인하세요! #삼성전자 #삼성전자주가 #삼성전자주가전망",
+          "video_id": "yPMcA_Uw9uM",
+          "views": 1672,
+          "upload_date": "2026-04-02",
+          "url": "https://www.youtube.com/watch?v=yPMcA_Uw9uM",
+          "subtitle_summary": "1. 현재 삼성전자의 매물이 튀어나오고 있으며, 5% 하락하는 것으로 보인다. 이유는 프로그램 매도와 대차 장고 증가로 인한 수급 상황이다.\n2. 대차 장고에서 6조 공매도를 치려는 것으로 보이지만, 삼성전자는 그렇지 않다. 현재 삼성전자의 개별 공매도 정보를 보면 37만 주가 650억 금액으로 나타난다.\n3. 이러한 상황은 ETF와 관련되어 증권사 AP가 보유하고 차입한 종목을 운영사에 대여하기 위해 삼성전자 주식을 ETF에 집어넣는데, 이때 대규모로 편입하면 주가를 올리지 않게 하려는 것으로 보인다.",
+          "db_saved": true
+        },
+        {
+          "title": "[삼성전자 주가 전망 강프로]*긴급* 트럼프 충격 발언 긴급 대응! 여기서 90%가 당한다! 프로그램 이상수급 중요합니다! 꼭 확인하세요!",
+          "video_id": "Qzo0fFKuoIw",
+          "views": 4853,
+          "upload_date": "2026-04-02",
+          "url": "https://www.youtube.com/watch?v=Qzo0fFKuoIw",
+          "subtitle_summary": "1. 삼성전자의 주가가 상승하다가 트럼프의 충격 발언으로 급락한 것으로, 이는 지난 시장에서 무려 천만 주를 매도한 개인들의 패닉셀 때문이다.\n2. 현재 삼성전자 하락은 패시브 자본들이 아니라 개인들이 무리하게 배팅을 했고, 이로 인해 발생한 변동성이다.\n3. 따라서 우리는 지금은 대응하지 않고, 수급상에서 또 한번 패시브 자본들이 담아가는 모습을 보여주면 저점 구간에서 기회를 잡아야 할 것이다.",
+          "db_saved": true
+        },
+        {
+          "title": "[삼성전자 주가전망] 4월 2일 목요일 긴급속보 떴다! 예상주가 대박입니다! 삼성전자 주가 어디까지 상승 할까요? 필수시청 #삼성전자 #삼성전자주가 #삼성전자주가전망",
+          "video_id": "ND0FyCDGIGg",
+          "views": 2586,
+          "upload_date": "2026-04-02",
+          "url": "https://www.youtube.com/watch?v=ND0FyCDGIGg",
+          "subtitle_summary": "1. 트럼프 대통령이 미국의 정권 교체가 목표가 아니라고 발표, 이ран과 중국 지수도 하락하며 삼성전자 주가는 변동성이 심해서 예측하기 어려워졌습니다.\n2. 삼성전자의 1분기 실적 발표가 매우 긍정적으로 역대급으로 나올 것으로 예상되며, 증권가에 빠르게 조치할 예정입니다.\n3. 매수매도 타이밍을 실시간으로 준비하는 포인트가 중요합니다. 따라서 매일 발빠르게 안내를 드리고 체크해보시면서 세영상 하단클을 통해 삼성전자의 주가에 대한 정보를 확인할 수 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[Samsung Electronics Stock Forecast] Exclusive! Breaking News! Trump to withdraw troops in 2-3 we...",
+          "video_id": "UCDiJAUWsAA",
+          "views": 2038,
+          "upload_date": "2026-04-02",
+          "url": "https://www.youtube.com/watch?v=UCDiJAUWsAA",
+          "subtitle_summary": "1. 금일 분석할 종목은 Samsung Electronics입니다. 트럼프의 대국민 연설에서 2주 ~ 3주 내에 Iran을 강력하게 공격하고 철수할 것이라는 발표로 인해, Samsung Electronics의 주가가 흔들리고 있다.\n2. 중요한 점은 Trump이 Iran에 대한 공격을 후속하게 철수할 것이며, 이는 원유 수입에 영향을 미치므로 호르무즈 해협을 통해 재개방에 대해서 노력해야 한다는 점입니다.\n3. Samsung Electronics의 주가 상승의 트리거가 되는 것은 메모리 반도체 분야의 주가 상승으로, 미국 증권사인 Citi 피츠럴드가 마이크로의 목표가를 700달러로 상향하며 메모리 주를 강력하게 추천했다는 점입니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[삼성전자 주가 분석] 어제 12% 반등 이후 주가 하락에 \"불안한\" 주주라면 필수시청! 18만원 돌아온 외인 매수와 함께 4월 \"이가격\" 갑니다. 절대 하락에 속지마세요.",
+          "video_id": "VJwropavZDI",
+          "views": 3985,
+          "upload_date": "2026-04-02",
+          "url": "https://www.youtube.com/watch?v=VJwropavZDI",
+          "subtitle_summary": "1. 삼성전자의 주가가 60일 동안 하락한 후 갑작스러운 12% 상승으로 오늘 20만원 고점을 돌파했습니다.\n2. 이 상승은 외인 매수가 시작된 것으로 보입니다. 우리는 불안감에 매도하지 않고 물량을 잡아야 합니다.\n3. 김과장이 중요한 신호인 RSI 지표를 통해 타점을 잡으시면서 삼성전자에서 큰 수익을 만들어보세요.",
+          "db_saved": true
+        },
+        {
+          "title": "[삼성전자 주가 전망] [속보] 큰손들의 대량 매수! 저는 '여기'까지 봅니다. 목요일 주요일! 필수 시청 #차트의제왕 #삼성전자",
+          "video_id": "SAoHq_YkHso",
+          "views": 5081,
+          "upload_date": "2026-04-01",
+          "url": "https://www.youtube.com/watch?v=SAoHq_YkHso",
+          "subtitle_summary": "1. 미국과 이ран의 전쟁 리스크는 현재 완화되고 있습니다.\n2. 오늘 삼성전자는 7% 상승을 보여주며, 8분 남은 시간에 마지막 동시호가 체결될 것으로 예상됩니다.\n3. 추가적인 프로그램에서의 매수세는 전아줄 것이며, 삼성전자의 분석은 이란과 미국에 대한 전쟁 리스크와 관점에 따라 달라질 것입니다. 현재 삼성전자는 저평가된 구간이며, 추가적인 조정은 예상되지만 반등할 것이다.",
+          "db_saved": true
+        }
+      ],
+      "max": 1.3993,
+      "min": 2.0222,
+      "nb_score": 0.692,
+      "avg_views": 2839.1,
+      "total_views": 28391
+    },
+    {
+      "keyword": "하이닉스 주가 전망",
+      "is_fixed": false,
+      "views": [
+        2501,
+        2443,
+        2608,
+        38768,
+        574,
+        272,
+        2839
+      ],
+      "video_count": 7,
+      "videos": [
+        {
+          "title": "[SK Hynix Stock Outlook] Market Plunges After Trump's Speech! 60-Day Moving Average Broken Again!...",
+          "video_id": "k9CCooghIm8",
+          "views": 2501,
+          "upload_date": "2026-04-02",
+          "url": "https://www.youtube.com/watch?v=k9CCooghIm8",
+          "subtitle_summary": "1. SK Hynix의 주가는 트럼프의 연설 이후 급락하고 있습니다. 코스피, 코스닥도 마찬가지입니다. 이는 우려로 인해 육가와 환율이 상승하고 시장이 떨어지고 있습니다.\n2. 저는 트럼프가 전쟁을 빠르게 끝내고 협상에서 우위를 점하기 위한 블러핑으로 인한 것으로 생각합니다.\n3. SK Hynix의 경우 60일 평균선을 회복했다가 다시 이탈되고 있습니다. 지금은 20일 평균선에 도달하면서 잠시 내려오는 것으로 보입니다. 따라서 우리가 여기서 쫄 필요는 없습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[SK하이닉스 주가전망] 💥4월 2일 목요일 긴급속보! 예상주가 난리입니다! SK하이닉스 주가 어디까지 올라갈까요 필수시청! #sk하이닉스주가전망 #sk하이닉스주가 #sk하이닉스",
+          "video_id": "h-9YztORLlY",
+          "views": 2443,
+          "upload_date": "2026-04-02",
+          "url": "https://www.youtube.com/watch?v=h-9YztORLlY",
+          "subtitle_summary": "1. SK하이닉스의 주가는 4월 2일 목요일에 계속해서 37조원 증권가 목표를 초과할 것으로 예상된다.\n2. 트럼프 대통령이 이ран 문제에 강경한 발언을 했고, 이는 SK하이닉스의 주가 상승에 긍정적인 영향을 미칠 것으로 보인다.\n3. 김선재 대표는 1분기 영업 이익이 37조원, 디맨랜드 가격 목표가 160만 원으로 예상되며, 이는 SK하이닉스의 주가 상승에 긍정적인 영향을 미칠 것으로 보인다.",
+          "db_saved": true
+        },
+        {
+          "title": "SK하이닉스주가전망 4월 2일 긴급특보 이제 잡으세요.  #SK하이닉스주가전망 #SK하이닉스주가 #SK하이닉스",
+          "video_id": "VJavg8irSuk",
+          "views": 2608,
+          "upload_date": "2026-04-02",
+          "url": "https://www.youtube.com/watch?v=VJavg8irSuk",
+          "subtitle_summary": "1. SK 하이닉스의 주가에 대한 분석: 현재 시장 상황에서 안전하지 않고 계속 상승할 수 있는 중요한 모멘텀이 있다. 오늘 미국 대통령이 일본의 새 정권을 위해 휴전 요청을 했고, 이 연설 때문에 우리나라 증시가 2%~3% 하락했다.\n2. SK 하이닉스의 주가 변동성: 미국 중심은 오늘 하락하지 않았고, 실제로 보이는 것처럼 상승했다. 3월 31일 우리나라 증시가 진짜 미친듯이 하락했다가 매수를 통해 반등했고, 지금 다시 조정받는 것이다.\n3. SK 하이닉스의 전쟁에 대한 불안감: 전쟁에 대한 하락은 기회였다고 계속 말하고 있으며, SK 하이닉스는 4월 5일부터 상승할 수 있는 호재 공시를 가지고 있다.",
+          "db_saved": true
+        },
+        {
+          "title": "삼성전자·SK하이닉스 주가 전망, 정말 솔직히 말씀드릴게요 (박진희 부장)",
+          "video_id": "Ef3FnEzCP2s",
+          "views": 38768,
+          "upload_date": "2026-04-01",
+          "url": "https://www.youtube.com/watch?v=Ef3FnEzCP2s",
+          "subtitle_summary": "1. 박진희 부장은 4월부터 5월까지 전쟁이 마무리가 되고 회복 단계에 접어들 수 있는 상황으로 예상하고 있습니다.\n2. 기본적으로 4월 5월 달도 3월 달 못지 않게 변동성이 크다고 생각합니다. 따라서 좀 변동성을 대비하는 것이 좋습니다.\n3. 단기적으로는 전쟁 마무리가 되면서 시장이 좀 반등하고 금리 안정화되고 외국인들 수급 들어오면 뭐 물론 삼성전자, 하이닉스, 현대차가 올라오겠다고 생각합니다. 반도체 소부장들 중에서 실적 좋은 종목들이 계속 나올 것으로 예상합니다. 하지만 기대치가 주가에 많이 반영되었다는 점도 고려해야 합니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[SK하이닉스 주가전망] 삼성전자 13% 폭주할 때 왜 10%만 올랐나 3배 비싼 'HBM4' 독점 설계도 실체 #SK하이닉스주가전망 #SK하이닉스주가 #SK하이닉스",
+          "video_id": "gjsm5S4Eteo",
+          "views": 574,
+          "upload_date": "2026-04-01",
+          "url": "https://www.youtube.com/watch?v=gjsm5S4Eteo",
+          "subtitle_summary": "SK하이닉스의 주가는 어제 8만6,000원으로 10% 이상 급등했습니다. 하지만 삼성전자는 13% 증가했습니다. SK하이닉스는 HBM4 독점 설계도를 보유하고 있어서, 해당 물량의 본격화로 개당 단가가 세배 상승할 것으로 예측됩니다. 이로 인해 매출이 폭발할 수밖에 없는 구조입니다. 실적 PER이 15배인데 올해 영업 이익 전망이 작년 대비 두 배 가까이 늘어날 것으로 예상됩니다. 따라서, SK하이닉스의 주가는 현재 89만 원에서 100만 원 이상으로 올라갈 수 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[SK하이닉스 주가 전망]*5분전긴급* 美트럼프 속보, 기술적 중요구간 이탈, 여기서 98%는 당합니다! 주주님들 꼭 확인하세요!",
+          "video_id": "R_ESjU07S2M",
+          "views": 272,
+          "upload_date": "2026-04-02",
+          "url": "https://www.youtube.com/watch?v=R_ESjU07S2M",
+          "subtitle_summary": "1. SK하이닉스의 주가가 6% 급락했습니다.\n2. 미국 대통령 트럼프는 2주 동안 더 거세게 몰아붙일 것이라고 말했습니다.\n3. 트럼프는 이란과의 전쟁을 계속할 것인지, 또는 4월 중에 끝내려는 것인지 불명확하나, 전쟁이 계속되면 트럼프는 최소한 4월 중까지 끝내려고 합니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[SK하이닉스 주가 전망] \"4월 1일 마감긴급속보.대차1685만주 모건 매수전환 이유 나왔다.\" 저녁9시 기습발표.진짜는 내일입니다. #SK하이닉스 #SK하이닉스주가전망 #HBM",
+          "video_id": "lzDjv5ppSwQ",
+          "views": 2839,
+          "upload_date": "2026-04-01",
+          "url": "https://www.youtube.com/watch?v=lzDjv5ppSwQ",
+          "subtitle_summary": "1. SK하이닉스의 주가는 4월 첫 거래일인 오늘 11% 이상 상승중이며, 3월 급락 출발으로 인해 지난 2월부터 시작한 MSC 리밸런싱 이후의 전쟁 이슈까지 겹치면서 3월은 급락 출발했다.\n2. 외국인들이 코스피에서 순매도한 금액이 최근 35조 9천억 정도 36조 가까이 증가함으로써, 2008년 금융기 이후로 가장 충격적인 지금이 월간 하락 흐름 중에 하나가 나왔다. SK하이닉스도 피해갈 수는 없었다.\n3. 결국 이번 저점이 확인되는 구간에서는 외국인들이 돌아올 때 강한 매수 수급이 올 확률이 높기 때문에, SK하이닉스의 매수 준비를 해야 된다고 제가 강조했다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0.2085,
+      "min": 0.9773,
+      "nb_score": 0.2133,
+      "avg_views": 7143.57,
+      "total_views": 50005
+    },
+    {
+      "keyword": "이란 호르무즈 해협 상황",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "한미 정상회담 외교",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "K-컬처 국가전략 정책",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "AI 반도체 HBM 전망",
+      "is_fixed": false,
+      "views": [
+        92
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "AI 반도체 병목 해소! 삼성의 역습 시작",
+          "video_id": "YBv4JQT3bAM",
+          "views": 92,
+          "upload_date": "2026-04-02",
+          "url": "https://www.youtube.com/watch?v=YBv4JQT3bAM",
+          "subtitle_summary": "AI 시장의 두 번째 경쟁은 진행 중이며, 고대역 메모리(HBM) 시장에서 엔비디아가 과반수를 점유하고 있지만 삼성전자는 HBM4 기술력 확보와 턴키 전략을 통해 AMD 등 협력사들과 파운드리 협력을 강화하여 AI 사이클의 구조적 변화를 이끌고 있습니다. 또한, 로봇 산업에서는 가전 분야와 같은 강점을 확장하며 실질적인 수익 구간에 진입하고 있으며, 에너지 섹터에서는 원전 수주 모멘텀이 강력한 2차 상승 랠리를 준비하고 있습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "코스피 증시 동향",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "신안산선 터널 안전 논란",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "중동 전쟁 유가 영향",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "지중해식 식단 건강 효능",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "MZ 세대 불교 트렌드",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "창업 박람회 아이템",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "노년층 낙상 예방법",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    }
+  ]
+}

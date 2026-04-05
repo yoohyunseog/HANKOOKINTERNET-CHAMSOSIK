@@ -1,0 +1,291 @@
+{
+  "timestamp": "2026-04-04T00:18:05.235160",
+  "model": "mistral:latest",
+  "keyword_count": 3,
+  "analyze_subtitles": true,
+  "analysis_source": "youtube",
+  "keywords": [
+    {
+      "keyword": "오늘의 주요 뉴스",
+      "is_fixed": true,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "서울시장 노래",
+      "is_fixed": false,
+      "views": [
+        416,
+        720
+      ],
+      "video_count": 2,
+      "videos": [
+        {
+          "title": "[이런뉴스] 정원오·박주민·전현희…서울시민에게 한 소절 / KBS 2026.04.03.",
+          "video_id": "xbl60TDb21U",
+          "views": 416,
+          "upload_date": "2026-04-03",
+          "url": "https://www.youtube.com/watch?v=xbl60TDb21U",
+          "subtitle_summary": "이 영상에서는 서울 노래자랑 시장에 참여한 3명의 후보인 정원오, 박주민, 전현희가 자신들이 무대에 올 때 선택할 곡과 그 이유를 설명하고 있습니다.\n정원오는 \"시민이 불러 주시면 무조건 달려가겠습니다\"라는 소절을 선택했으며, 지난 12년간 성동구민이 부른 곡과 함께 시민들과 문제를 해결하고 기쁨과 슬픔을 나누는 것에 대한 의미가 있다고 설명했습니다.\n박주민은 \"둘리\"라는 소절을 선택했으며, 자신이 지난 대선 때 마이콜 캐릭터와 연관된 별명을 얻었기 때문에 그 노래를 선택했다고 설명했습니다.\n전현희는 BTS의 \"스링 of your skin\"을 선택했으며, 이 노래는 우리들의 용기를 상징하는 것으로 서울에서 더 큰 세상으로 나아가고 싶다는 의미가 있다고 설명했습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[Politics Talk] \"Is Lee and the Democratic Party having a selfie party?\"... Even a singing contes...",
+          "video_id": "cP9uwal0K7w",
+          "views": 720,
+          "upload_date": "2026-04-03",
+          "url": "https://www.youtube.com/watch?v=cP9uwal0K7w",
+          "subtitle_summary": "1. 대통령 안철수와 민주당 의원들이 국회에서 셀카 파티를 했다는 소문이 있으며, 이로 인해 중동발 위기로 인한 국민 고통을 낙관하고 있다는 비판이 있습니다.\n2. 셀카 전쟁이 벌어진 것으로, 대통령과 의원들은 사진을 자랑스럽게 공유했고, 노래 자랑까지 펼쳐졌습니다.\n3. 이러한 행동은 지방 선거 국면에서 지우기 어려울 것으로 보입니다. 또한, 노래 자랑을 통해 표심을 잡는 모습이 있었습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 3.6777,
+      "min": 0.0,
+      "nb_score": 36776.6667,
+      "avg_views": 568.0,
+      "total_views": 1136
+    },
+    {
+      "keyword": "대북송금 국정조사",
+      "is_fixed": false,
+      "views": [
+        81800,
+        31817
+      ],
+      "video_count": 2,
+      "videos": [
+        {
+          "title": "[현장영상] \"대북송금 실체 밝힐 첩보 있다\"…국정원장 10분간 '작심발언' / JTBC News",
+          "video_id": "3dnWfholBok",
+          "views": 81800,
+          "upload_date": "2026-04-03",
+          "url": "https://www.youtube.com/watch?v=3dnWfholBok",
+          "subtitle_summary": "1. 국가정보원장 이종석은 대북 선금 사건 관련 특별 감사 결과를 공개했다. 2. 감찰 부서에 고의직을 신설하여 전직 검찰 수사관을 임명한 후, 쌍방울의 남북규리 협력 사업 관련 불법 탈법적 개입 점검을 실시했다는 사실이 파악되었습니다. 3. 이 감사 결과에서는 8월 18일 통일부에 관련 내용이 통보되었으나, 당시 통일부의 후속 조치가 확인되지 못했습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "\"Yoon Suk-yeol Administration’s NIS and Presidential Office Involved in North Korea Remittance Sc...",
+          "video_id": "SLRNCKOwnX8",
+          "views": 31817,
+          "upload_date": "2026-04-03",
+          "url": "https://www.youtube.com/watch?v=SLRNCKOwnX8",
+          "subtitle_summary": "1. Yoon Suk-yeol Administration's National Intelligence Service (NIS) and Presidential Office are suspected of interfering in the North Korea remittance investigation led by prosecutors.\n2. The organization involved in the investigation, including a vice prosecutor who was a former head of the NIS inspection department during Yoon Suk-yeol's administration, is said to have focused the investigation on one side.\n3. Missing documents related to North Korea remittance and other internal data from the NIS were found, as well as evidence suggesting that Kim Seong-tae-jeon, chairman of the Ssangbongul (a North Korean collection organization), attempted to manipulate stock prices using North Korea business as a pretext. These pieces of evidence were not presented in court. The Yoon Suk-yeol Administration's Presidential Office and NIS are also suspected of attempting to interfere in the North Korea remittance investigation.",
+          "db_saved": true
+        }
+      ],
+      "max": 3.17,
+      "min": 0.1143,
+      "nb_score": 27.7332,
+      "avg_views": 56808.5,
+      "total_views": 113617
+    },
+    {
+      "keyword": "호르무즈 해협 선박 통과",
+      "is_fixed": false,
+      "views": [
+        88187,
+        8930
+      ],
+      "video_count": 2,
+      "videos": [
+        {
+          "title": "[Today's News] \"First French Ship to Pass Through Hormuz\"... Opening the Door for Western Vessels...",
+          "video_id": "zFA18eadze8",
+          "views": 88187,
+          "upload_date": "2026-04-03",
+          "url": "https://www.youtube.com/watch?v=zFA18eadze8",
+          "subtitle_summary": "1. 프랑스 소유의 컨테이너선, CMA CGM의 크리비오가 전쟁 발발 이후 처음으로 호르무주 해협을 통과하였다는 보도가 있었습니다.\n2. 크리비오는 이란 방면에서 두바이에서 출발했고, 이란의 공격은 없었습니다.\n3. 크리비오는 현재 화물이 가득 실려 있는 상태로 호르무지 통과를 시도하였으며, 이란과의 협의나 통행료 지급에 대한 정보는 아직 알려져 있지 않습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "허 찌른 이란, 일본 프랑스 선박 호르무즈 해협 통과시켰다 \"호르무즈, 핵보다 중요\" (2026.4.3)",
+          "video_id": "xCkkHVYhAyM",
+          "views": 8930,
+          "upload_date": "2026-04-03",
+          "url": "https://www.youtube.com/watch?v=xCkkHVYhAyM",
+          "subtitle_summary": "1. 일본과 프랑스의 선박이 이ран에서 봉쇄되었던 호르무즈 해협을 통과했다.\n2. 이라크와 카슬 사이 새로운 안전 경로를 개설한 이ран에서 이 선박들이 통행하였다.\n3. 이 일은 현재 세계가 분열되고 있는 것으로 보인다. (세계정보는 상세한 정보를 제공하지 않았습니다.)",
+          "db_saved": true
+        }
+      ],
+      "max": 2.8047,
+      "min": 2.0778,
+      "nb_score": 1.3498,
+      "avg_views": 48558.5,
+      "total_views": 97117
+    },
+    {
+      "keyword": "하지원 영화",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "CSK vs PBKS 하이라이트",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "송창식 음악",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "김민재 축구 코치",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "브리온 K리그",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "걸프국 에너지 시설 피격",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "마싱루이 부패 조사",
+      "is_fixed": false,
+      "views": [
+        11110
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "[Multi SUB] ｜重生回到十七岁纨绔时期，他摒弃恶习潜心苦读，一路考取秀才、乡试亚元、会试贡士，最终殿试高中探花！#剧能充电站 #MiniDrama#精彩大陆短剧",
+          "video_id": "39zbV9SKf0M",
+          "views": 11110,
+          "upload_date": "2026-04-03",
+          "url": "https://www.youtube.com/watch?v=39zbV9SKf0M",
+          "subtitle_summary": "1. 주인공은 과거 자신의 오해로 조카를 살해하려던 계획을 꾸몄다가, 독에 걸리고 집안이 파산하는 등 악행을 저지른 후 17세 때 사망한 것 같은 모습으로 환생했다.\n2. 환생된 후, 자신의 오해를 깨우고 옳은 길을 선택하며, 秀才, 乡试亚元, 会试贡士, 最终殿试高中探花와 같은 시험을 통과한다.\n3. 결국 자신의 오해를 깨우고 명예를 되찾으려는 노력에 성공하지만, 전생의 악행에 대한 황실의 칙령을 받아 처단당한다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "대구시장",
+      "is_fixed": false,
+      "views": [
+        1489
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "주호영 ‘컷오프’ 가처분 기각…“대구시장 후보 경선 예정대로” [9시 뉴스] / KBS  2026.04.03.",
+          "video_id": "rQ2Y4x5OtnM",
+          "views": 1489,
+          "upload_date": "2026-04-03",
+          "url": "https://www.youtube.com/watch?v=rQ2Y4x5OtnM",
+          "subtitle_summary": "1. 국민의 힘 대구시장 후보 선거에서 주호영 의원이 가처분을 요청한 것이 기각됐습니다.\n2. 법원은 심각한 하자가 있다고 보긴 어렵고, 당원 당규가 정한 절차를 위반했다는 것을 보기 어렵다고 판단했습니다.\n3. 국민의 힘은 여섯 명의 경선으로 김부겸 민주당 후보와 대결하게 되며, 이진숙전 위원장이 무소속 출마를 시사했지만 대구시장 선거 구도는 여전히 여러 변수가 있습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "변호사 수 감축 촉구",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "개헌안 공동 발의",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "HBM 반도체 기술",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "텅스텐 광산 미국",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    }
+  ]
+}

@@ -45,12 +45,14 @@ if "%USER_URL%"=="" (
 echo.
 set /p WAIT_TIME="JavaScript 로딩 대기 시간 (초, 기본: 10): "
 if "%WAIT_TIME%"=="" set WAIT_TIME=10
+set SELENIUM_HEADLESS=1
 
 echo.
 echo ========================================
 echo 🚀 다이어그램 생성 시작
 echo ========================================
 echo.
+echo 🕶️ Selenium 백그라운드(헤드리스) 모드로 실행합니다.
 
 REM Python 스크립트 실행
 python tools\generate_website_diagram.py "%TARGET_URL%" -w %WAIT_TIME%

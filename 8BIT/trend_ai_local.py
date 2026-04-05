@@ -17,6 +17,7 @@ DATA_PATH = os.path.join("data", "naver_creator_trends", "latest_trend_data.json
 OUTPUT_DIR = os.path.join("data", "revenue_content")
 OLLAMA_BASE_URL = os.environ.get("OLLAMA_BASE_URL", "http://localhost:11434")
 OLLAMA_MODEL = os.environ.get("OLLAMA_MODEL", "")
+OLLAMA_TIMEOUT_SECONDS = int(os.environ.get("OLLAMA_TIMEOUT_SECONDS", "240"))
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
@@ -46,7 +47,7 @@ def call_ollama(prompt, model):
     response = requests.post(
         f"{OLLAMA_BASE_URL}/api/generate",
         json={"model": model, "prompt": prompt, "stream": False},
-        timeout=120
+        timeout=OLLAMA_TIMEOUT_SECONDS
     )
     response.raise_for_status()
     data = response.json()

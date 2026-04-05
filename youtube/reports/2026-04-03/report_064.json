@@ -1,0 +1,381 @@
+{
+  "timestamp": "2026-04-03T13:41:01.445611",
+  "model": "mistral:latest",
+  "keyword_count": 3,
+  "analyze_subtitles": true,
+  "analysis_source": "youtube",
+  "keywords": [
+    {
+      "keyword": "오늘의 주요 뉴스",
+      "is_fixed": true,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "코스피 외국인 순매수",
+      "is_fixed": false,
+      "views": [
+        87,
+        371
+      ],
+      "video_count": 2,
+      "videos": [
+        {
+          "title": "[오후의 쟁점] ADC 신약 후보물질 확보 기대 '셀트리온' / 머니투데이방송 (증시, 증권)",
+          "video_id": "E8LHso5O72A",
+          "views": 87,
+          "upload_date": "2026-04-03",
+          "url": "https://www.youtube.com/watch?v=E8LHso5O72A",
+          "subtitle_summary": "1. 오후의 쟁점 프로그램이 시작되었습니다. 최후 통첩일인 4월 6일에 어떤 일이 있을지 불확실성이 존재합니다.\n2. 외국인이 코스피 시장에 진입하며, 11시 기준으로 열 가지 종목이 나타났습니다. 특히 HD 현대 에너지 솔루션이 대장쪽으로 움직이고 있는 것으로 보입니다.\n3. HD 현대 에너지 솔루션은 국내향 비중이 높아서, 최근 고유가로 인해 대체에너지 수요가 높아지고 있으며, 정부의 재생 에너지 정책 수위를 받을 것이라는 네러티브가 형성되어 주가 상승률을 보여주고 있습니다. 하나 솔루션은 유상증자 문제로 인해 주가가 무너지는 모습이 나왔으나, 소액 주주들의 노이즈도 지속적으로 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[Intraday Market Update] 4/3 Market opens higher, wait-and-see sentiment prevails / Net buying in...",
+          "video_id": "YRgiV4YwOaQ",
+          "views": 371,
+          "upload_date": "2026-04-03",
+          "url": "https://www.youtube.com/watch?v=YRgiV4YwOaQ",
+          "subtitle_summary": "4월 3일 시장은 상승 출발을 했으나 힘이 조금씩 떨어지고 있습니다. 주말 불확실성과 미국-이란 협상 기간 끝나는 시점에서 발전소 타격 등의 불안 요소가 생길 수 있습니다. 외국인과 기관은 순 매수 유입이 되어 있지만 포지션이 자꾸 바뀌고 있습니다. 또한, 대체 에너지 관련 종목군들이 강세를 보이고 있습니다. 따라서, 주의하시기 바랍니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 2.9199,
+      "min": 1.2225,
+      "nb_score": 2.3886,
+      "avg_views": 229.0,
+      "total_views": 458
+    },
+    {
+      "keyword": "이란 데이터 센터 공격",
+      "is_fixed": false,
+      "views": [
+        1498,
+        31185
+      ],
+      "video_count": 2,
+      "videos": [
+        {
+          "title": "이란은 보복 “데이터 센터 타격”…“사드 레이더도 파손” / KBS  2026.04.03.",
+          "video_id": "2mFnFDCLH7w",
+          "views": 1498,
+          "upload_date": "2026-04-03",
+          "url": "https://www.youtube.com/watch?v=2mFnFDCLH7w",
+          "subtitle_summary": "1. Saudi Arabia's data center and military radar were reportedly attacked by Iran, following claims that Iran retaliated for the alleged attack on a US bridge in the United States which resulted in casualties.\n2. Iran is said to have launched missiles and drones against military bases in Yemen, Israel, and other locations, causing significant damage to buildings and infrastructure.\n3. The Saudi Arabian government's radar system at a military base was damaged, estimated to be worth around 2 billion won (approximately $1.7 million USD), according to CNM News. This incident follows multiple attacks on the same base, with the most recent attack causing damage to an E3 early warning and control system.",
+          "db_saved": true
+        },
+        {
+          "title": "다리 폭격으로 100여 명 사상...걸프국 빅테크 공격 / YTN",
+          "video_id": "t8zWWWLdbb8",
+          "views": 31185,
+          "upload_date": "2026-04-03",
+          "url": "https://www.youtube.com/watch?v=t8zWWWLdbb8",
+          "subtitle_summary": "1. 35일째 미국과 이스라엘의 이란에 대한 전쟁. 미국은 테일란 근처의 주요 다리를 폭격하여 최소 100명 사상, 일하는 주변 걸프들의 미빅테크 시설을 공격했습니다.\n2. 이란은 이날 바레인과 아랍 에미리트에 위치한 미국 빅테크 기업 데이터 센터를 공격했고, 두바이 오라클 데이터 센터와 바레인의 아마존 데이터 센터에도 피격을 주장했습니다.\n3. 이란은 미국과 이스라엘의 공격으로 최소 6명 사망, 26,500명 부상된 것으로 알려졌으며, 이단 반관형 메흐르 통신에 따르면 이슬람 혁명 수비되는 정보 기술 테러 기업 아마존의 바레인 클라우드 서비스 센터를 공격해 파괴했다고 밝혔습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 2.762,
+      "min": 2.4162,
+      "nb_score": 1.1431,
+      "avg_views": 16341.5,
+      "total_views": 32683
+    },
+    {
+      "keyword": "대한광통신 주가 전망",
+      "is_fixed": false,
+      "views": [
+        552,
+        1484,
+        1069,
+        421,
+        2086,
+        716,
+        1323
+      ],
+      "video_count": 7,
+      "videos": [
+        {
+          "title": "[대한광통신 주가전망]팔 때 못 팔면 \"땅을치고 후회한다\", 앞으로 \"이렇게\"될겁니다. #과열구간  #트레이더진",
+          "video_id": "2aTa7lQtP9Q",
+          "views": 552,
+          "upload_date": "2026-04-03",
+          "url": "https://www.youtube.com/watch?v=2aTa7lQtP9Q",
+          "subtitle_summary": "1. 대한광통신의 주가는 지금 20% 상승중이며, 과거부터 지금까지 좋은 모습을 보여줬다.\n2. 현재 대한강통신 주자들은 손실을 보고 있는 사람이 많지 않으며, 단기적으로 수익을 보고 계시겠다는 예측.\n3. 트레이더진에서는 대한강통신 주가 상승 전략과 공매도 관련된 문의를 해결하기 위해 영상을 제작했으며, 지금은 기회가 있다고 말한다.",
+          "db_saved": true
+        },
+        {
+          "title": "[대한광통신 주가 전망] 오늘도 급등! 역사적 신고가 경신! 고점 매도는 여기서 하세요! #대한광통신 #대한광통신주가 #대한광통신주가전망",
+          "video_id": "GlLh9PsYKeQ",
+          "views": 1484,
+          "upload_date": "2026-04-03",
+          "url": "https://www.youtube.com/watch?v=GlLh9PsYKeQ",
+          "subtitle_summary": "1. 오늘 대한광통신의 주가는 급등하고 있으며, 역사적인 신고가를 경신했습니다.\n2. 차트 분석에 따르면 중요한 라인을 뚫어내고 지금 단기적으로 강한 상승이 나왔고, 고점 라인도 단번에 뚫어낸 것 같습니다.\n3. 현재 매물이 없고 주가를 더 올리기 좋은 환경이 조성되었으며, 20일 전까지 단기적으로 가격 조정을 강하게 만들어 개인들을 털어내고 바로 주가를 끌어올리는 것 같습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "대한광통신 주가전망 미국 AI 광통신 인프라 확대에 대규모 수주 랠리 쏟아진다!? 주주분들 핵심 정보 꼭 알고가세요!! #대한광통신주가전망 #대한광통신분석 #대한광통신주가분석",
+          "video_id": "m7PRfs6SUes",
+          "views": 1069,
+          "upload_date": "2026-04-03",
+          "url": "https://www.youtube.com/watch?v=m7PRfs6SUes",
+          "subtitle_summary": "1. 대한광통신은 AI 데이터 센터, 국미 인프라 투자 등으로 인해 기록적인 상승세를 보여주고 있습니다.\n2. 중요한 점은 이번 AI 데이터 센터가 만들어지는 모멘텀이 어디까지 이어질지에 대한 궁금증입니다.\n3. 역대급 상승 랠리가 나오고 있으며, 지난 유정 물량도 충분히 소화되었습니다. 이 상승 흐름을 견고하게 유지하기 위해서는 추가적인 호재들이 필요합니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[대한광통신 주가 전망] 🔥긴급속보🔥 외인 창구와 프로그램 매매 수급 불일치! 대차 상환 숏커버링 후 의도적 상승 구간 포착! 대응 필수! #대한광통신주가전망",
+          "video_id": "OfIEYXjMNsc",
+          "views": 421,
+          "upload_date": "2026-04-03",
+          "url": "https://www.youtube.com/watch?v=OfIEYXjMNsc",
+          "subtitle_summary": "1. 대한강통신 주가는 오늘부터 갭상승으로 강하게 올라가고 있습니다. 지금은 중요한 구간이며, 2,350만 주의 물량 추례를 위한 상승 추세가 가능성이 높습니다.\n2. 대응하기 위해서는 현재 구간에서 남들이 흔들리는 개인들이 매도세를 잡아가는 것을 노력해야 합니다. 밑구간 매수에 대한 기회를 잡으면, 우리는 좋은 결과로 나올 수 있습니다.\n3. 외인들과 프로그램 사이에 괴리가 발생하고 있음을 확인할 수 있으며, 이를 우리가 부착할 수 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[대한광통신]🚨대폭락?! 대폭등?!🚨 '이 가격' 만 지켜주면 됩니다. 꼭 미리 '준비'하세요",
+          "video_id": "uC8iwzOKOFY",
+          "views": 2086,
+          "upload_date": "2026-04-02",
+          "url": "https://www.youtube.com/watch?v=uC8iwzOKOFY",
+          "subtitle_summary": "1. 대한광통신의 주가는 상한가가 나와 영망치형 음봉 캔들이 마감되어 큰 변동성을 보이고 있습니다.\n2. 미국과 이란의 전쟁 문제로 인해 주식 시장에서 큰 변동성이 예상됩니다.\n3. 대한광통신은 젠슨이 미래 먹거리로 선택한 테마이며, 엔비디아와 같은 세력들의 매집 흔적이 계속해서 나오고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[대한광통신 주가 전망]*5분전긴급* 프매 매수폭탄에 외인 관망하는 진짜이유! 장대양봉 여기까지 간다! 주주님들 꼭 확인하세요!",
+          "video_id": "2FEEA1NzW1I",
+          "views": 716,
+          "upload_date": "2026-04-03",
+          "url": "https://www.youtube.com/watch?v=2FEEA1NzW1I",
+          "subtitle_summary": "1. 대한광통신의 주가는 트럼프 대통령의 연설으로 인해 상승하고 있습니다.\n2. 현재 신고 영역에서 추가적인 매수가 발생하고 있으며, 주가 상승은 웨인과 프로그램의 비중으로 인해 나타나고 있습니다.\n3. 중요한 포인트는 수급이에요. 수급이 언제부터 거래량이 빠지면서 수급이 붙는지, 외인들의 수급이 어떻게 되는지, 주가를 핸들링하는 진짜 세력들은 어떻게 움직이는지 체크해야 합니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[대한광통신 주가전망]🚨긴급🚨윗꼬리 캔들의 의미는? 외인·기관은 팔았을까? 전쟁 변동성! 매매 전략! 현시점 무조건 '이렇게' 대응하세요! #대한광통신주가전망",
+          "video_id": "S7sH36koLfQ",
+          "views": 1323,
+          "upload_date": "2026-04-02",
+          "url": "https://www.youtube.com/watch?v=S7sH36koLfQ",
+          "subtitle_summary": "1. 대한강통신의 주가가 전일 고점 대비 10% 이상 떨어졌으며, 위꼬리 캔들이 형성되었습니다. 이는 지수 하락에 의한 외적인 요인이 크기 때문에 주가가 늘릴 경우 향후 모멘텀을 봤을 때 비중을 확보할 수 있는 기회의 구간으로 보입니다.\n2. 최근에 개인들이 약 400만 주 가까이 매도한 반면, 외국인은 추가적으로 물량을 매수하여 개인들이 파는 물량을 담았습니다. 따라서 본격적인 호재가 많이 남아 있고, 단기적으로 끝날 것은 아니라는 점에서 중장기적으로 보셔야 됩니다.\n3. 대한강통신은 오히려 주가가 신고가를 찍고 있으며, 지난달부터 진행된 빅테크 향 수주에 대해서 계약이 발생할 것으로 예상됩니다. 따라서 국내 유일하게 갖고 있는 기술에 대한 주목을 받을 수밖에 없습니다. 지금 추세의 구간 속에서 눌림목 구간에 진입하는 것이 중요합니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 1.0759,
+      "min": 2.2959,
+      "nb_score": 0.4686,
+      "avg_views": 1093.0,
+      "total_views": 7651
+    },
+    {
+      "keyword": "테슬라 Y 모델 출시",
+      "is_fixed": false,
+      "views": [
+        8072,
+        80890,
+        27561,
+        4896,
+        4
+      ],
+      "video_count": 5,
+      "videos": [
+        {
+          "title": "테슬라 모델YL 한국출시! 6499만원에 8시 47분 계약완료, 내 차 출고는 언제..?!",
+          "video_id": "hX_1DKtOe4s",
+          "views": 8072,
+          "upload_date": "2026-04-03",
+          "url": "https://www.youtube.com/watch?v=hX_1DKtOe4s",
+          "subtitle_summary": "1. Tesla Model YL 한국 출시! 6499만원으로 8시 47분에 계약이 완료되었습니다.\n2. 내 차가 언제 출고할지는 불명, 하지만 오늘 아침 영상을 올리고 상무실에서 엘베를 누른 것으로 보이며, 모델 Y가 홈페이지에 나타나는 것을 확인했습니다.\n3. 옵션은 선택하기 어려웠고, 스텔스 그레이의 블랙시트를 선택했으며, 디자인 편지를 통해서 나중에 컬러를 바꿀 수 있다는 것을 알고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "테슬라 모델Y L 가격 6499만원! 마침내 국내 출시!...6인승 쏘렌토 잡고 국내 1위 되나? 현대기아 자동차 업계가 발칵!",
+          "video_id": "4-mg4R_ncgo",
+          "views": 80890,
+          "upload_date": "2026-04-03",
+          "url": "https://www.youtube.com/watch?v=4-mg4R_ncgo",
+          "subtitle_summary": "1. Tesla Model Y, 6499만원, 국내 출시. 모델 YL은 크고 한 번 충전으로 더 멀리 가는 차. 6인승 가능.\n2. 테슬라 Model YL이 새롭게 나왔다는 소식으로 사람들이 주문하기 시작했습니다. 디자인과 색깔을 고르는 등의 편집 필요.\n3. Model YL은 모델 Y보다 크고, 더 많은 옵션이 있으며, 가격은 6499만원입니다. 차량 길이, 뒷유리, 유리의 형상, 트렁크 리드가 전혀 다르고 더 멋있다는 생각이 들었습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "테코의 기습!! 26년형 모델 Y 롱레인지 갑자기 출시!? 5499만원??",
+          "video_id": "JvL_ta34LTo",
+          "views": 27561,
+          "upload_date": "2026-04-02",
+          "url": "https://www.youtube.com/watch?v=JvL_ta34LTo",
+          "subtitle_summary": "1. Tesla Model Y Long Range 발매되었습니다. 이 모델은 RWD(Rear-Wheel Drive)로 전체 출시가격은 5,499만원입니다.\n2. 이 모델은 LG Energy Solution MCM 배터리를 사용하며, 주행거리는 약 505km입니다.\n3. Model Y의 라인업에는 RWD, Long Range RWD, AWD Long Range, Long Range Dual Motor(롱바디)가 있으며, 각각의 가격은 499만원, 5,499만원, 5,999만원, 6,299만원입니다.",
+          "db_saved": true
+        },
+        {
+          "title": "6499만원! 테슬라 모델Y L 롱바디 한국 출시 | 구매 전 보조금 성능 총정리",
+          "video_id": "XbFpgO5WTao",
+          "views": 4896,
+          "upload_date": "2026-04-03",
+          "url": "https://www.youtube.com/watch?v=XbFpgO5WTao",
+          "subtitle_summary": "1. Tesla Model Y Long Range 모델이 6,499만 원으로 한국 출시되었습니다.\n2. 주행 거리는 550km 이상, 가속 시간은 5초 정도 늘어났습니다.\n3. 중형차로 등록되며, 취득세 할인금액이 140만 원 할인될 수 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "테슬라 모델YL 드디어 출시!! 6,499만원에 FSD까지 넘사벽이네.. 일주일 안에 출고 받으세요",
+          "video_id": "DwEcjRrHC-s",
+          "views": 4,
+          "upload_date": "2026-04-03",
+          "url": "https://www.youtube.com/watch?v=DwEcjRrHC-s",
+          "subtitle_summary": "1. Model YL, 6-seater electric SUV from Tesla, has officially been released. It's not just an extended version of the Model X; it features a new wheelbase that significantly changes space, seating comfort, and details.\n2. The key feature of Model YL is its independent second row with fully separated captain seats that provide a comfortable and luxurious feeling. A central passage between the seats makes it easier for children to move around, and the rear seats offer a high-end feel.\n3. Model YL offers a driving range of up to 553km, certified with an 88.2kWh battery, which is the most appealing specification. It also features Tesla's FSD technology, making it an excellent value for its price of 6,499,000 won (approximately 6,200,000 won with Seoul subsidies). The limited production has led to high demand, and securing a delivery within a week is possible by reserving the special edition launch stock.",
+          "db_saved": true
+        }
+      ],
+      "max": 0.6142,
+      "min": 1.458,
+      "nb_score": 0.4213,
+      "avg_views": 24284.6,
+      "total_views": 121423
+    },
+    {
+      "keyword": "나이키 신제품 발매",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "종량제봉투 가격 동결",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "바레인 통신시설 피해",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "쓰봉 대란 대응 방안",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "중동 미군기지 보복 공격",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "SM-3 미사일 도입 계획",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "K-아이언돔 LAMD 개발",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "HD현대 조선 수주 실적",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "원유 위기경보 격상",
+      "is_fixed": false,
+      "views": [
+        9509
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "정부, 원유 위기경보 3단계 '경계'로 격상... 큰일 났네 진짜...",
+          "video_id": "QL2FnmH6kFI",
+          "views": 9509,
+          "upload_date": "2026-04-02",
+          "url": "https://www.youtube.com/watch?v=QL2FnmH6kFI",
+          "subtitle_summary": "1. 정부는 원유와 가스 공급 문제로 3단계 '경계' 상태로 격상, 국내 수급 감소, LNG 수급도 어려워질 것으로 예측\n2. 에너지 위기가 심화되면 차량 운행 제한이 강제될 가능성이 있고, 전기류나 난방비 등의 비용이 증가할 것으로 예상\n3. 국민들과 기업들에게는 불편함이 늘어날 것으로 보임",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "저유가 시대 종말 전망",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "SK윤활유 가격 인상",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    }
+  ]
+}

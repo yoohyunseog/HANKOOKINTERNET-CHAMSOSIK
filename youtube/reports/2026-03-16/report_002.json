@@ -1,0 +1,5403 @@
+{
+  "timestamp": "2026-03-16T03:44:00.567762",
+  "model": "news-singleline:latest",
+  "keyword_count": 3,
+  "analyze_subtitles": true,
+  "analysis_source": "youtube",
+  "keywords": [
+    {
+      "keyword": "오늘의 주요 뉴스",
+      "is_fixed": true,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "가상화폐",
+      "is_fixed": false,
+      "views": [
+        5445,
+        7611
+      ],
+      "video_count": 2,
+      "videos": [
+        {
+          "title": "Bitcoin, the Opportunity of War",
+          "video_id": "V4Am_W81Q6w",
+          "views": 5445,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=V4Am_W81Q6w",
+          "subtitle_summary": "전쟁으로 인한 유가 급등과 인플레이션, 연준의 금리 결정 딜레마가 지속되면서 비트코인 불상세가 발생할 수 있다는 분석이 제기되었다. 호르무즈 해협의 긴장 고조는 유가 상승을 야기하고, 이는 연준의 금리 정책 결정에 어려움을 더하며, 결국 비트코인 가격 상승의 기회를 제공할 수 있다. 아서 헤이지의 예측과 무부 지수 등 시장 지표를 주의 깊게 살펴야 한다는 점을 강조한다.",
+          "db_saved": true
+        },
+        {
+          "title": "\"비트코인 보유 꿈도 꾸지 마\"…연준, 작정하고 은행 차단 '충격'",
+          "video_id": "kGCO3VHcFB4",
+          "views": 7611,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=kGCO3VHcFB4",
+          "subtitle_summary": "[미국 연준이 다음 주 비트코인에 1250%의 위험 가중치를 적용하는 규제안을 발표, 가상자산을 유회 자산으로 분류하며 은행의 비트코인 보유를 사실상 차단하는 충격적인 조치로 해석됨]",
+          "db_saved": true
+        }
+      ],
+      "max": 4.132,
+      "min": 0.0,
+      "nb_score": 41319.5901,
+      "avg_views": 6528.0,
+      "total_views": 13056
+    },
+    {
+      "keyword": "SEC",
+      "is_fixed": false,
+      "views": [
+        2291,
+        3924
+      ],
+      "video_count": 2,
+      "videos": [
+        {
+          "title": "SEC Basketball Tournament Predictions: Arkansas/Vanderbilt, Bracketology, Bubble Watch, More",
+          "video_id": "3aTNsyYpDN0",
+          "views": 2291,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=3aTNsyYpDN0",
+          "subtitle_summary": "[오늘, SEC 농구 토너먼트 결승전인 ‘선서일’을 맞아 4~5시간에 걸쳐 생중계가 진행되며, 아칸소 대학교와 뱅더빌 대학교의 경기가 주목받고 있습니다. Nashville의 브로드웨이에는 예상외로 많은 사람들이 나타지 않았으며, 날씨 또한 악화될 가능성이 있습니다. 두 명의 블루드(Blueblood) 팀이 결승전에서 격돌할 것으로 예상됩니다.]",
+          "db_saved": true
+        },
+        {
+          "title": "SEC TITLE PREVIEW: Arkansas vs Vandy | 'Tyler Tanner vs Darius Acuff will be ELITE!' | AFTER DARK",
+          "video_id": "LIzDCkUeh7Q",
+          "views": 3924,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=LIzDCkUeh7Q",
+          "subtitle_summary": "[세인트루이스 대학과 밴달루트 대학 간의 SEC 타이틀 게임이 열리며, 2000년 이후 첫 SEC 타이틀을 놓고 경쟁할 것으로 예상된다. 티yler 테너와 데이비드 아쿠프의 강한 수비수 맞대결이 주요 쟁점이며, 밴달루트 대학의 홈 경기 이점을 고려해야 한다. 브라질의 아키프가 좋은 경기력을 보여줄지 여부가 승부에 중요한 영향을 미칠 것으로 보인다.]",
+          "db_saved": true
+        }
+      ],
+      "max": 3.6707,
+      "min": 0.0,
+      "nb_score": 36706.6131,
+      "avg_views": 3107.5,
+      "total_views": 6215
+    },
+    {
+      "keyword": "에너지 관련주",
+      "is_fixed": false,
+      "views": [
+        4409,
+        10251
+      ],
+      "video_count": 2,
+      "videos": [
+        {
+          "title": "[Stock Recommendation] Accelerating commercialization ahead of nuclear SMRs! Nuclear fusion is th...",
+          "video_id": "JT9OnvhZryw",
+          "views": 4409,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=JT9OnvhZryw",
+          "subtitle_summary": "[한국의 KSTAR 프로젝트가 1억도 초고온 플라즈마를 48초 동안 안정적으로 유지하는 획기적인 성과를 달성하여 세계를 놀라게 했으며, 이는 초전도 자석 기술을 활용한 세계 최초의 초전도 토카막 장치로, 국제 핵융합 실험 ITER의 성공적인 검증을 위한 중요한 기반을 마련했다.]",
+          "db_saved": true
+        },
+        {
+          "title": "[주식] 내일 상한가 유력! 미친 급등 임박 3종목 공개🔴 AI 반도체 원전 해체 전쟁 신재생에너지 관련주 대장주 [03/15 미라클 급등주]",
+          "video_id": "XBbXsSlggwY",
+          "views": 10251,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=XBbXsSlggwY",
+          "subtitle_summary": "[내일 미라클 급등주 3종목 공개: AI 반도체, 원전 해체 전쟁, 신재생에너지 관련주 대장주들이 상한가 가능성을 보이며 시장의 변동성이 커질 것으로 예상된다. 지난주 급등주들의 강세와 더불어 환율 급등, 전쟁 이슈까지 겹쳐 투자자들의 신중한 대응이 필요하다. 미라클 전문가가 추세가 살아있는 종목과 이미 매집된 종목을 중심으로 급등 가능성이 높은 3종목을 분석하여 투자 전략을 제시한다.]",
+          "db_saved": true
+        }
+      ],
+      "max": 3.2583,
+      "min": 0.0,
+      "nb_score": 32583.1138,
+      "avg_views": 7330.0,
+      "total_views": 14660
+    },
+    {
+      "keyword": "장기투자",
+      "is_fixed": false,
+      "views": [
+        5785,
+        16434
+      ],
+      "video_count": 2,
+      "videos": [
+        {
+          "title": "To novice investors struggling with a lack of cash | It's nice to have cash, but it's okay if you...",
+          "video_id": "5ej1LCOQjOk",
+          "views": 5785,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=5ej1LCOQjOk",
+          "subtitle_summary": "[미국 주식 시장 조정이 지속되고, 전쟁으로 인한 유가 급등과 물가 상승 우려로 금리 인하 가능성이 낮아지면서 투자자들의 불안감이 커지고 있습니다. 현금 부족은 기회를 놓치는 손실로 이어질 수 있으며, 하락장 대기 전략은 오히려 수익 기회를 놓치는 기회 비용 발생을 초래할 수 있습니다. 완벽한 타이밍을 맞추기 어려운 상황에서 현금 보유는 투자 결정을 늦추거나, 시장 초반 급락 시 과도한 투자를 유발하여 손실을 키울 수 있습니다.]",
+          "db_saved": true
+        },
+        {
+          "title": "[투자마인드] 주식 시장 최악의 시나리오 터졌다! 폭락장보다 더 무서운 '진짜 악재'가 온다! 미국 이란 전쟁 현재 상황은? 공포가 몰려올 때 투자 전략? 이렇게만 대응하세요!",
+          "video_id": "O504dDYeIl0",
+          "views": 16434,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=O504dDYeIl0",
+          "subtitle_summary": "미국과 이스라엘 간 중동 분쟁 장기화로 인해 시장 불안감이 고조되고 있으며, 호르무즈 해협 통제 불능 상황이 전 세계 유가 급등과 스테그플레이션 우려를 야기하고 있습니다. 3주 연속 주가 하락, 금리 급등, 금리 선물 시장의 금리 인하 불투명성 등 악재가 겹치면서 투자자들의 불안감이 커지고 있습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 3.0833,
+      "min": 0.4063,
+      "nb_score": 7.5889,
+      "avg_views": 11109.5,
+      "total_views": 22219
+    },
+    {
+      "keyword": "매수",
+      "is_fixed": false,
+      "views": [
+        7530,
+        1857
+      ],
+      "video_count": 2,
+      "videos": [
+        {
+          "title": "중동 전쟁·유가 폭등… S&P500 연중최저, 공포장 매수전략",
+          "video_id": "Cm3KyjbwXjg",
+          "views": 7530,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=Cm3KyjbwXjg",
+          "subtitle_summary": "[중동 전쟁과 유가 급등으로 S&P500이 연중 최저치를 기록하며 투자 심리가 위축되었고, 공포 심리로 인한 매수 전략이 반복되면서 외국인이 셀코리아에 수조원 규모를 매수하는 모습이 나타났습니다. 그러나 호르무즈 해협 통제 문제와 드론 공격 등 예상보다 장기화될 수 있는 지정학적 리스크가 부상하면서 에너지 가격이 급등하고 사모 대출 시장의 균열 조짐이 보이고 있습니다. 전문가들은 불안정한 시기에 투자 대가들의 위기 대처법을 살펴보고, 기회가 왔을 때 무엇을 담아야 할지 정리하는 것이 중요하다고 강조합니다.]",
+          "db_saved": true
+        },
+        {
+          "title": "[상한가 주식추천] 내일 상한가 급등할 \"이 주식\" 바로! 매수 3월 주도주 될겁니다 ➖차트, 수급, 재료 확인 완료 03월 16일 급등예언! | 디에스경제TOP 영철",
+          "video_id": "MzF3qSWVlUU",
+          "views": 1857,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=MzF3qSWVlUU",
+          "subtitle_summary": "[변동성이 큰 시장에서 수익을 내기 위한 투자 전략으로, 상승하는 종목을 중심으로 차트, 수급, 재료를 분석하여 매수 타이밍을 포착하고, 특히 G2G 바이오의 8만1천원 매수 타점을 활용한 급상승을 주목해야 합니다.]",
+          "db_saved": true
+        }
+      ],
+      "max": 2.9289,
+      "min": 1.1462,
+      "nb_score": 2.5553,
+      "avg_views": 4693.5,
+      "total_views": 9387
+    },
+    {
+      "keyword": "갤럭시 s26",
+      "is_fixed": false,
+      "views": [
+        20848,
+        4602
+      ],
+      "video_count": 2,
+      "videos": [
+        {
+          "title": "Honest review...! Galaxy S26 Ultra 2-Week Pros and Cons Analysis",
+          "video_id": "Dlf7PMF7nRY",
+          "views": 20848,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=Dlf7PMF7nRY",
+          "subtitle_summary": "갤럭시 S26 울트라 2주 사용 후기에서 가장 중요한 점은 60W 이상 고출력 어댑터 구매를 통해 45분 내외로 충전이 가능하다는 점이며, 프라이버시 디스플레이 옵션은 버스나 지하철 등에서 유용하게 활용할 수 있다는 점입니다. 또한, 삼성 정품 어댑터 외에도 3A 이상 어댑터로도 60W 충전이 가능하다는 점이 확인되었으며, 프라이버시 디스플레이의 경우 세로 화면에서 시인성 문제가 발생할 수 있다는 점이 언급되었습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "\"애플도 못한 혁신\"…갤S26 울트라, 성능 얼마나 미쳤길래",
+          "video_id": "qsZpRQ8JSWA",
+          "views": 4602,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=qsZpRQ8JSWA",
+          "subtitle_summary": "삼성 갤럭시 S26 울트라가 역대 갤럭시 S 시리즈 중 가장 강력한 도약으로 평가받으며, 애플조차 구현하지 못한 프라이버시 디스플레이와 보안 기술 혁신으로 호평을 받았다. 특히 카메라 성능이 국제 화질 평가 기관에서 1위를 차지하고, 포브스 등 주요 매체로부터 최고의 제품성을 인정받았다. MWC26 최고 전시 제품상 수상으로 모바일 기술의 경계를 확장하며 실질적인 가치를 제공했다는 평가를 받았다.",
+          "db_saved": true
+        }
+      ],
+      "max": 2.8815,
+      "min": 1.3373,
+      "nb_score": 2.1548,
+      "avg_views": 12725.0,
+      "total_views": 25450
+    },
+    {
+      "keyword": "메쥬 공모주",
+      "is_fixed": false,
+      "views": [
+        29,
+        134
+      ],
+      "video_count": 2,
+      "videos": [
+        {
+          "title": "적자 회사가 코스닥 간다고?! 메쥬 공모주 완벽 분석 ㅣ 청약 방법부터 상장일까지 #주식",
+          "video_id": "qcyD5FbAY7A",
+          "views": 29,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=qcyD5FbAY7A",
+          "subtitle_summary": "[환자 실시간 모니터링 플랫폼 기업 매주가 코스닥 상장 예정이며, 1100대 1의 높은 청약 경쟁률을 기록했다. 하지만 매출 23억 원, 영업 손실 60억 원으로 자본 잠식을 심화시킨 상황이다. 기관 투자자들의 뜨거운 관심에도 불구하고 상장 후 흑자 전환 가능성은 불투명하다.]",
+          "db_saved": true
+        },
+        {
+          "title": "[3월 3주 IPO] 코스닥 '따따블' 열풍! 슈퍼루키' 메쥬·한패스 출격",
+          "video_id": "3eNr-kEsr2g",
+          "views": 134,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=3eNr-kEsr2g",
+          "subtitle_summary": "코스닥 공모주 시장에서 400% 상승률을 기록하는 ‘따따블’ 현상이 발생하며 투자자들의 관심이 집중되고 있다. 11조 7천억 원 규모의 증거금이 몰린 IM 바이오로직스, 9조 5천억 원의 자금이 유입된 카나프 테라퓨틱스와 같은 공모주들의 높은 수익률이 투자 심리를 자극했기 때문이다. 기관 투자자들의 의무보유 확약 비율이 높아 물량이 적은 상황과 코스닥 시장의 성장 가능성을 높이면서 이러한 현상이 나타나고 있다.",
+          "db_saved": true
+        }
+      ],
+      "max": 2.8908,
+      "min": 1.352,
+      "nb_score": 2.1381,
+      "avg_views": 81.5,
+      "total_views": 163
+    },
+    {
+      "keyword": "3월 공모주 일정",
+      "is_fixed": false,
+      "views": [
+        508,
+        3717
+      ],
+      "video_count": 2,
+      "videos": [
+        {
+          "title": "IPO Subscription Schedule for the 4th Week of March! Let's Find the IPOs You Don't Want to Miss |...",
+          "video_id": "56TcBw7Qt9w",
+          "views": 508,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=56TcBw7Qt9w",
+          "subtitle_summary": "3월 4주차에 예정된 인벤테라 공모주 청약 정보를 제공하며, 23일~24일 양일간 청약 진행될 예정이며 NH증권 및 유진투자증권에서 청약 증권을 받을 수 있다. 인벤테라는 나노 의약품 스타트업으로 국내 임상 3상을 진행 중이며, 조용제 시장 규모가 5조 원 이상으로 성장하고 있어 투자 기회를 제공할 수 있다. 다만, 공모가가 높게 형성되어 있어 재평가를 고려해야 하며, 동국생명과학과 비교했을 때 높은 평가를 받고 있다는 점을 인지해야 한다.",
+          "db_saved": true
+        },
+        {
+          "title": "IPOs and other schedules for the 3rd week of March 2026... Kanap... IM Biologics... Listings... T...",
+          "video_id": "L-kTIvtkyVg",
+          "views": 3717,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=L-kTIvtkyVg",
+          "subtitle_summary": "3월 3주차 IPO 일정으로 카나프 테라퓨틱스, 한투, IM 바이오로직스, 신한 등이 상장 예정이며, 카나프 테라퓨틱스의 경우 1,300만 주 공모 및 95%의 기간 의무 보유 조건으로 높은 수혜 측 비율을 기록했습니다. IM 바이오로직스의 공모 주 수는 8만 원 시 1억당 2.5주 정도 배정될 것으로 예상되며, 청약 성공률은 76% 수준으로 전망되었습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 2.8118,
+      "min": 1.874,
+      "nb_score": 1.5004,
+      "avg_views": 2112.5,
+      "total_views": 4225
+    },
+    {
+      "keyword": "Rally",
+      "is_fixed": false,
+      "views": [
+        5929,
+        51680
+      ],
+      "video_count": 2,
+      "videos": [
+        {
+          "title": "Final Day Highlights & Reaction | WRC Safari Rally Kenya 2026",
+          "video_id": "vqTmt_DkGYQ",
+          "views": 5929,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=vqTmt_DkGYQ",
+          "subtitle_summary": "[타카타 모토루와 프르모가 WRC 사파리 랠리 케냐에서 메이저리 승리를 놓고 치열한 경쟁을 벌였다. 프르모는 심리전을 통해 타카타를 압박했지만, 타카타는 18일차 느린 타이어 문제를 겪은 프르모의 실수를 틈타 격차를 벌렸다. 최종 구간에서 42초의 여유를 확보하며 타카타가 첫 승을 차지하며, 3명만이 이 험난한 랠리를 완주할 수 있었다.]",
+          "db_saved": true
+        },
+        {
+          "title": "🔴 Post-Event Show LIVE | WRC Safari Rally Kenya 2026",
+          "video_id": "Dt3y99ukvP4",
+          "views": 51680,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=Dt3y99ukvP4",
+          "subtitle_summary": "[타카토 모 츠타야 드라이버는 WRC 사파리 랠리 케냐에서 첫 승리를 거두면서 팀과 가족, 그리고 오이탄 타나크에게 감사를 표하며 극적인 감동을 드러냈습니다. 수많은 어려움 속에서도 팀의 믿음에 힘입어 이뤄낸 승리였으며, 그의 눈물은 좌절감보다는 기쁨과 감격으로 가득했습니다. 챔피언십 내에서도 존경받는 오이탄 타나크에게 감사를 전하며 잊지 못할 순간을 기록했습니다.]",
+          "db_saved": true
+        }
+      ],
+      "max": 2.8024,
+      "min": 2.0053,
+      "nb_score": 1.3975,
+      "avg_views": 28804.5,
+      "total_views": 57609
+    },
+    {
+      "keyword": "아이폰 18",
+      "is_fixed": false,
+      "views": [
+        16026,
+        1308
+      ],
+      "video_count": 2,
+      "videos": [
+        {
+          "title": "아이폰 18 프로 - 저는 이게 정말 싫어요 하지만",
+          "video_id": "AvifOpjyE_U",
+          "views": 16026,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=AvifOpjyE_U",
+          "subtitle_summary": "아이폰 18 Pro 맥스의 두께가 아이폰 17 Pro 맥스보다 0.05mm 더 두꺼워져 휴대성이 너프될 가능성이 제기되었으며, 과거 루머와 일치하는 소식으로 확인되었고, 카메라 및 배터리 변화로 두께 영향을 최소화할 것으로 예상된다. 디스플레이 크기는 유지될 것으로 전망되며, 성능과 배터리 성능에 중점을 둔 소비자들이 증가하면서 아이폰의 방향성이 변화하고 있다는 분석이 제시되었다. 휴대성에 대한 시청자들의 의견을 묻는 마무리 멘트가 이어졌다.",
+          "db_saved": true
+        },
+        {
+          "title": "iPhone 18 Pro Max LEAKS - Biggest UPGRADES Revealed!",
+          "video_id": "uI4mUb6Vs_g",
+          "views": 1308,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=uI4mUb6Vs_g",
+          "subtitle_summary": "애플은 아이폰 18 프로와 프로 맥스 모델에 새로운 마론, 퍼플, 베이지 색상의 파스텔 색상을 도입할 것으로 예상되며, 기존 아이폰 17 프로 맥스의 두 가지색 디자인과는 차이를 보일 전망입니다. 또한, 아이폰 18 프로 시리즈는 2톤 색상과 세라믹 글래스 재질을 대체할 새로운 디자인으로 변화될 가능성이 제기되고 있습니다. 아이폰 18 프로 출시를 앞두고, 아이폰 17 프로 맥스 구매를 미루는 것이 합리적일 수 있습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 2.7933,
+      "min": 2.1984,
+      "nb_score": 1.2706,
+      "avg_views": 8667.0,
+      "total_views": 17334
+    },
+    {
+      "keyword": "아이폰18",
+      "is_fixed": false,
+      "views": [
+        15936,
+        1227
+      ],
+      "video_count": 2,
+      "videos": [
+        {
+          "title": "아이폰 18 프로 - 저는 이게 정말 싫어요 하지만",
+          "video_id": "AvifOpjyE_U",
+          "views": 15936,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=AvifOpjyE_U",
+          "subtitle_summary": "아이폰 18 Pro 맥스의 두께가 아이폰 17 Pro 맥스보다 0.05mm 더 두꺼워져 휴대성이 너프될 가능성이 제기되었으며, 과거 루머와 일치하는 소식으로 확인되었고, 카메라 및 배터리 변화로 두께 영향 최소화 시도 중이다. 디스플레이 크기는 유지될 것으로 예상되며, 성능과 배터리 성능에 중점을 둔 소비자들이 증가하면서 아이폰은 휴대성을 희생하고 갤럭시는 휴대성을 개선하는 방향으로 나아가고 있다. 이번 아이폰 18 Pro의 휴대성에 대한 소비자들의 의견이 궁금하다.",
+          "db_saved": true
+        },
+        {
+          "title": "iPhone 18 Pro Max LEAKS - Biggest UPGRADES Revealed!",
+          "video_id": "uI4mUb6Vs_g",
+          "views": 1227,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=uI4mUb6Vs_g",
+          "subtitle_summary": "[iPhone 18 Pro와 iPhone 18 Pro Max는 6개월 후 출시될 예정이며, 새로운 색상으로 인해 iPhone 17 Pro Max를 구매하기보다는 기다리는 것이 좋습니다. 새로운 Pro 모델에는 마론, 퍼플, 베이지 색상이 추가될 가능성이 있으며, 블랙 또는 화이트 색상은 없을 것으로 예상됩니다. 또한, Apple은 두 톤 색상 디자인을 변경할 수 있습니다.]",
+          "db_saved": true
+        }
+      ],
+      "max": 2.7752,
+      "min": 2.2421,
+      "nb_score": 1.2378,
+      "avg_views": 8581.5,
+      "total_views": 17163
+    },
+    {
+      "keyword": "버즈4프로",
+      "is_fixed": false,
+      "views": [
+        225209,
+        11524
+      ],
+      "video_count": 2,
+      "videos": [
+        {
+          "title": "QC 이슈로 폭망하고 2년동안 칼을 갈았다? 진짜 좋아진 삼성 버즈4 프로 2주 사용기",
+          "video_id": "CCH4BMyUDdo",
+          "views": 225209,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=CCH4BMyUDdo",
+          "subtitle_summary": "삼성 버즈 4 Pro는 QC 이슈로 출시가 늦어졌으나, 디자인 개선과 사용성 향상으로 완성도를 높였다. 특히, 이전 모델보다 한 손에 착 감기는 디자인과 투명 케이스, 정성화된 유닛 삽입 방식이 개선되어 편의성을 높였다. 하지만, 여전히 에어팟에 비해 사용성 면에서는 아쉬움을 드러냈다.",
+          "db_saved": true
+        },
+        {
+          "title": "【소리체험】 늦은만큼 세계에서 가장 자세한 측정리뷰. 🙏 삼성 갤럭시 버즈4 프로 vs 버즈3 시리즈 비교, 노이즈 검증",
+          "video_id": "k8vOCEHbnUk",
+          "views": 11524,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=k8vOCEHbnUk",
+          "subtitle_summary": "삼성 버즈4 시리즈와 버즈3 시리즈를 비교 분석한 영상에서, 버즈4 시리즈는 노캔 성능이 크게 향상되었으며 특히 오픈형 모델의 차음성이 개선된 점이 눈에 띄고, 칩셋 변경으로 신호처리 성능도 향상되었다. 일반 모델은 중음 차단에 집중하여 에어팟4 수준의 생활 소음 차단 효과를 제공하지만, 프로 모델은 에어팟 프로3와 유사한 최대 성능을 보여주었다.",
+          "db_saved": true
+        }
+      ],
+      "max": 2.7827,
+      "min": 2.378,
+      "nb_score": 1.1702,
+      "avg_views": 118366.5,
+      "total_views": 236733
+    },
+    {
+      "keyword": "Roadshow",
+      "is_fixed": false,
+      "views": [
+        23571,
+        964
+      ],
+      "video_count": 2,
+      "videos": [
+        {
+          "title": "Do Ex-Muslims MISS Ramadan? LIVE with Apostate of Allah",
+          "video_id": "FsUaocybZXo",
+          "views": 23571,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=FsUaocybZXo",
+          "subtitle_summary": "[이석준 전 대표, 코리아이즈 회장 등 16명에게 배임횡령 혐의를 적용하여 재판에 넘겨졌으며, 혐의를 전액 부인하는 가운데 1심에서 유죄를 인정]",
+          "db_saved": true
+        },
+        {
+          "title": "These Vintage Finds Are Worth a FORTUNE | Antiques Roadshow",
+          "video_id": "HVzIO9-m-9s",
+          "views": 964,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=HVzIO9-m-9s",
+          "subtitle_summary": "[1950년대 살바도르 달리(Salvador Dali)가 만든 브론즈 컴팩트가 18~20년 전 증여품으로 밝혀져 예상치 못한 높은 가치를 인정받았다. 달리 특유의 상징성과 예술적 재능이 결합된 이 오브제는 예술과 실용성을 융합한 디자인으로, 현대 수집품 디자인의 선구적인 역할을 했다. 특히 유럽 장인들과의 협업을 통해 제작된 이 컴팩트는 럭셔리한 요소들을 담아내어 희소성을 더했다.]",
+          "db_saved": true
+        }
+      ],
+      "max": 2.7807,
+      "min": 2.4372,
+      "nb_score": 1.1409,
+      "avg_views": 12267.5,
+      "total_views": 24535
+    },
+    {
+      "keyword": "한국 경제",
+      "is_fixed": false,
+      "views": [
+        55502,
+        1936
+      ],
+      "video_count": 2,
+      "videos": [
+        {
+          "title": "🔴[긴급 라이브] 현재 중동 전선 상황은?...환율+유가 재상승, 사모신용 위기감 속 내일 시장 대응 전략 (조한범, 박종연, 하창완, 염승환) | 인포맥스라이브 260315",
+          "video_id": "nlLYBPTdl0o",
+          "views": 55502,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=nlLYBPTdl0o",
+          "subtitle_summary": "[중동 전선 상황 악화로 인한 유가 급등과 달러 인덱스 상승, 사모 신용 위기감 확산 등 금융 시장 변동성이 커지고 있으며, 다극 시대의 불확실성 증가는 투자 전략 수립에 어려움을 야기하고 있다.]",
+          "db_saved": true
+        },
+        {
+          "title": "중동 사태 파장…한국 경제 충격 [일요진단 라이브] / KBS  2026.03.15.",
+          "video_id": "hhx2G7BR9gM",
+          "views": 1936,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=hhx2G7BR9gM",
+          "subtitle_summary": "중동 사태로 인한 국제 유가 급등과 호르무지 해협 군남 파견 요구 등 불확실성 증폭으로 한국 주식 및 부동산 시장에 큰 변동성이 발생하고 있으며, 글로벌 금융 시장의 안전 자산 선호 현상과 함께 오일 쇼크 우려가 확산되고 있다.",
+          "db_saved": true
+        }
+      ],
+      "max": 2.7679,
+      "min": 2.4833,
+      "nb_score": 1.1146,
+      "avg_views": 28719.0,
+      "total_views": 57438
+    },
+    {
+      "keyword": "Short squeeze",
+      "is_fixed": false,
+      "views": [
+        8143,
+        156
+      ],
+      "video_count": 2,
+      "videos": [
+        {
+          "title": "URGENT 🚨 XRP BITCOIN ‼️ MOTHER OF ALL SHORT SQUEEZES!",
+          "video_id": "eEQVFy7kzJ0",
+          "views": 8143,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=eEQVFy7kzJ0",
+          "subtitle_summary": "[XRP에 대한 ‘모든 것의 단기 급등’ 가능성이 제기되며, 2022년과 2025년 유사한 패턴과 함께 부정적인 차입 금리, 레버리지 활용이 단기 급등의 ‘연료’가 될 수 있다고 분석합니다. 2022년과 2025년의 유사한 설정과 함께 단기 급등의 ‘점화제’가 될 수 있는 요소를 살펴보고, 투자자들에게 해당 상황을 주시할 것을 권고합니다.]",
+          "db_saved": true
+        },
+        {
+          "title": "KASPA: THE MOST EPIC SHORT SQUEEZE THAT COULD MAKE YOU MILLIONS",
+          "video_id": "JAnk9nbOcwY",
+          "views": 156,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=JAnk9nbOcwY",
+          "subtitle_summary": "[KASPA(Caser)의 가격이 흥미로운 움직임을 보이며 단기 급등(숏  squeez) 가능성이 제기되고 있으며, L1 관련 상황을 이해하는 것이 Caser의 가격 변동을 파악하는 데 중요하다고 분석합니다.]",
+          "db_saved": true
+        }
+      ],
+      "max": 2.7534,
+      "min": 2.5852,
+      "nb_score": 1.065,
+      "avg_views": 4149.5,
+      "total_views": 8299
+    },
+    {
+      "keyword": "퇴직연금",
+      "is_fixed": false,
+      "views": [
+        6433,
+        3
+      ],
+      "video_count": 2,
+      "videos": [
+        {
+          "title": "Retired after 31 years as a civil servant… Pension is 2.7 million won, but living expenses are 4 ...",
+          "video_id": "kbgS8GiWuEU",
+          "views": 6433,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=kbgS8GiWuEU",
+          "subtitle_summary": "[31세에 부천시 공무원 시험에 합격하여 31년 간 근무한 김부라고 씨가 2023년 12월 정년 퇴직했으며, 연금액은 270만 원이지만 월 생활비로 400만 원 정도를 지출하고 있어 조기 연금 수령을 고려 중이다.]",
+          "db_saved": true
+        },
+        {
+          "title": "정부의 쌈짓돈 시즌2 퇴직연금",
+          "video_id": "-LTE2Qy6GNA",
+          "views": 3,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=-LTE2Qy6GNA",
+          "subtitle_summary": "정부가 국민연금과 퇴직금을 활용한 환율 방어 정책은 국가의 자산 통제를 의미하며, 국민연금의 손실과 환차손 발생을 초래하고 있습니다. 근본적인 해결책 없이 돌려막기식 정책은 대한민국을 좀비 국가로 만들 수 있으며, 진정한 미래를 위한 정책 방향을 재고해야 합니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 2.7762,
+      "min": 2.6662,
+      "nb_score": 1.0413,
+      "avg_views": 3218.0,
+      "total_views": 6436
+    },
+    {
+      "keyword": "도지코인",
+      "is_fixed": false,
+      "views": [
+        2289,
+        1807,
+        1824,
+        598,
+        1850
+      ],
+      "video_count": 5,
+      "videos": [
+        {
+          "title": "도지코인 일론이 도지를 기축통화로 만드는 법! 테슬라 모델2 결제 확정 #도지코인 #도지코인분석 #도지코인전망",
+          "video_id": "EYxJAp_YNWM",
+          "views": 2289,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=EYxJAp_YNWM",
+          "subtitle_summary": "[도지코인이 다시 상승할 기회를 잡을 수 있다는 분석이며, 비트코인의 그랜드 사이클과 유사한 상승 사이클을 통해 단기간에 자산을 크게 불릴 수 있다고 주장합니다. 캔들 차트와 거래량을 분석하여 기준봉을 확인하고, 강력한 상승 파동을 포착하는 전략을 제시하며 투자자들에게 기회를 제공하겠다고 합니다.]",
+          "db_saved": true
+        },
+        {
+          "title": "[도지코인]🚨비상사태🚨'10조 매도 예정' , 꼭 '이렇게' 대응하세요. ※필수시청※",
+          "video_id": "Q_Aiaqz-VT8",
+          "views": 1807,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=Q_Aiaqz-VT8",
+          "subtitle_summary": "도지코인 창시자 빌리마커스의 유튜브 라이브 방송과 락업제 시작으로 초기 투자 물량 매도 가능성이 제기되어 시장의 큰 매도세가 예상되며, 0.13~0.28원 구간에서 가격 하락이 발생할 경우 -50% 이상 급락할 수 있다는 우려가 확산되고 있다. 월가 애널리스트들은 빌리마커스의 매도 움직임에 따라 도지코인 가격 붕괴를 예상하며, 현재 눌림목 구간을 지키는 것이 중요하다고 강조하고 있다.",
+          "db_saved": true
+        },
+        {
+          "title": "[도지코인 전망] 드디어 터졌다! 재단 역대급 계획?! '이날' 마지막 탈출기회일 수 있습니다.",
+          "video_id": "-sDvEBEWBK8",
+          "views": 1824,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=-sDvEBEWBK8",
+          "subtitle_summary": "도지코인 재단이 역대급 소각 계획을 발표하며 급격한 반등에 성공할 가능성을 제시하고 있으며, 고래들의 매도와 물량 소각을 통해 가격 상승을 유도하는 전략을 보여주고 있습니다. 소각 시점 파악과 함께 재단 고래들의 움직임을 주시하며, 목표 가격에 대한 타이밍을 잡는 것이 중요하다고 분석하고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "도지코인(DOGE) 🚨150~155원 돌파 후 큰 거 옵니다!!!! (도지코인분석·전망)",
+          "video_id": "85uZtZi_a2g",
+          "views": 598,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=85uZtZi_a2g",
+          "subtitle_summary": "[비트코인 상승과 ETF 출시로 인한 투자 심리 개선에 힘입어 도지코인이 155원 돌파 시 170~180원까지 상승 가능성이 높으며, 기존 패닉셀 구간에서 벗어난 현재 상황은 단기적인 매도 시도가 아닌 보유 전략을 유지하는 것이 합리적임을 시사한다.]",
+          "db_saved": true
+        },
+        {
+          "title": "[도지코인 코인전망] 밈코인 초대박속보 떴다! 무조건 이렇게 대응하세요!",
+          "video_id": "yjSzzbRwZyA",
+          "views": 1850,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=yjSzzbRwZyA",
+          "subtitle_summary": "[도지코인이 1달러 돌파 기대감과 함께 일론 머스크의 김용 서비스 라이선스 획득으로 실질적인 결제 수단으로서 지휘를 확보하며 가격 지지대를 형성하고, 락업 일정과 에어드랍 이벤트로 인한 투자 기회를 주목해야 한다.]",
+          "db_saved": true
+        }
+      ],
+      "max": 2.3485,
+      "min": 2.6983,
+      "nb_score": 0.8703,
+      "avg_views": 1673.6,
+      "total_views": 8368
+    },
+    {
+      "keyword": "속보",
+      "is_fixed": false,
+      "views": [
+        15889,
+        774165,
+        245345
+      ],
+      "video_count": 3,
+      "videos": [
+        {
+          "title": "[🔴속보] 美의 이란 하르그섬 공습 여파…\"기뢰·군사시설 등 90곳 타격\" / 연합뉴스TV(YonhapnewsTV)",
+          "video_id": "2kKadoLRNZw",
+          "views": 15889,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=2kKadoLRNZw",
+          "subtitle_summary": "트럼프 전 대통령이 호르무즈 해협의 안보를 위해 중국, 일본, 프랑스, 영국 등 5개국에 군함 파견을 요구하며, 이란의 하르그섬 공습 여파로 긴장이 고조되고 있다. 미군은 하르그섬에 위치한 군사 시설 90곳 이상을 타격했으며, 석유 인프라 파괴는 없었으나 푸자이라 항구, 두바이 제베랄리 항구, 아부다비 항구 등도 공격했다. 조기 종전 기대감은 낮아지고 있으며, 트럼프 전 대통령은 이란에 추가 공격을 촉구했다.",
+          "db_saved": true
+        },
+        {
+          "title": "[속보] 미, '석유심장' 하르그 폭격..해병 2천5백 명 '중동파병'..이란\"석유기업 잿더미\" 맞불..이라크 '미 대사관' 피격-[MBC뉴스속보] MBC뉴스 2026년03월14일",
+          "video_id": "GC2BqIMPcYE",
+          "views": 774165,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=GC2BqIMPcYE",
+          "subtitle_summary": "미국이 이란의 주요 원유 수출 기지인 하르그 섬을 공격하며 중동 지역의 긴장을 고조시켰고, 이에 이란은 석유 시설 파괴를 위협하며 맞대응 가능성을 높였다. 미국은 해병 2,500명 규모의 병력을 중동에 파병하고, 이란 지도자에 대한 현상금을 걸어 압박 수위를 더했다. 향후 추가 공격 가능성도 제기되며, 양국 간의 군사적 충돌 위험이 더욱 커지고 있다.",
+          "db_saved": true
+        },
+        {
+          "title": "[속보] 트럼프, 한중일등 5개국 거명하며 호르무즈 해협에 군함 파견 요구/2026년 3월 15일(일)/KBS",
+          "video_id": "mbh02_nnwOY",
+          "views": 245345,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=mbh02_nnwOY",
+          "subtitle_summary": "트럼프 대통령은 하르그섬 공격 이후 호르무즈 해협 봉쇄에 대한 압박을 강화하며 중국, 프랑스, 일본, 영국 등 5개국에 군사 지원을 요청했고, 이란의 부두인 부이라를 공격하며 국제적인 긴장을 고조시켰다. 미군은 섬의 군사 시설을 파괴했지만 석유 인프라는 보존하며, 반격 시 자국 에너지 시설 공격을 경고했다. 호르무즈 해협 봉쇄 관련 국제 협력을 촉구하며 중동 지역의 불안정성을 심화시킨 가운데 이스라엘과 이란 간의 군사적 충돌도 격화되었다.",
+          "db_saved": true
+        }
+      ],
+      "max": 1.5529,
+      "min": 2.1496,
+      "nb_score": 0.7224,
+      "avg_views": 345133.0,
+      "total_views": 1035399
+    },
+    {
+      "keyword": "대우건설",
+      "is_fixed": false,
+      "views": [
+        1705,
+        485,
+        2278,
+        516,
+        1210,
+        2240,
+        2928,
+        1239
+      ],
+      "video_count": 8,
+      "videos": [
+        {
+          "title": "[대우건설] 목표가 달성?, 상승랠리 안 끝났다 #대우건설",
+          "video_id": "25uKXrJbnKs",
+          "views": 1705,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=25uKXrJbnKs",
+          "subtitle_summary": "[대우건설은 해외 플랜트 수주 증가로 17% 상승 마감했으며, 시장 불확실성이 해소되면서 추가 상승 가능성이 높지만, 섣부른 매도는 금물이며, 세력의 개미 털기 전략에 따라 목표 가격에 도달할 것으로 예상된다.]",
+          "db_saved": true
+        },
+        {
+          "title": "[대우건설] 상승랠리 계속 이어갑니다!! '이 가격' 잡으세요!!",
+          "video_id": "D8cdQ4JD2Fs",
+          "views": 485,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=D8cdQ4JD2Fs",
+          "subtitle_summary": "대우건설 주가가 신고가를 기록하며 긍정적인 흐름을 보이고 있으며, 중동 전쟁이라는 지정학적 리스크로 인한 시장 변동성에 주목해야 합니다. 과거 걸프전 이후 나타난 시장의 안정화 및 반등 패턴을 고려할 때, 대우건설의 추가적인 상승 가능성이 높으며, 현 시점에서 적극적인 매수 전략을 취하는 것이 유리할 수 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[대우건설] 이 자리 딱 그 구간 정확히 '여기'입니다!! *주주 필수시청* #대우건설",
+          "video_id": "kXFnS2hhZJs",
+          "views": 2278,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=kXFnS2hhZJs",
+          "subtitle_summary": "[최근 전쟁 이슈로 단기 급락했던 대우건설이 원자력 발전 관련 기대감과 폭발적인 거래량 증가로 상승 추세를 회복하며 강한 상승 구조를 형성하고 있다.]",
+          "db_saved": true
+        },
+        {
+          "title": "[대우건설 주가전망] 내일 월요일부터 이렇게 대응하셔야합니다 정확한 이슈 및 차트분석(핵심편집)",
+          "video_id": "1CyWfkkipI4",
+          "views": 516,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=1CyWfkkipI4",
+          "subtitle_summary": "대우건설 주가 전망 분석 영상에 따르면, 대미투자 특별법 통과에 따른 호재를 반영하여 주가가 상승했으며, 9,770원 지지선 유지 시 12,990원 목표치 달 가능성이 높다고 분석했습니다. 다음 주 월요일 상승 채널 지지를 통해 추가 상승을 기대할 수 있으며, 신규 매수 시 지지선 관리가 중요하다고 조언했습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "대우건설 주가전망. 결국 터질게 터졌다! 월요일 대응은 \"이렇게\"",
+          "video_id": "vPENym45k1s",
+          "views": 1210,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=vPENym45k1s",
+          "subtitle_summary": "대우건설 주가 급등에도 불구하고, JP모건, 신한투자 등 세력이 대량 매도하고 있어 주가 하락 가능성이 높습니다. 과거 급락 시 매수했던 세력들의 현재 포지션을 파악하는 것이 중요하며, 주가 움직이는 주포를 알아내야 합니다. 시청자들의 좋아요를 통해 영상 제작자에게 응원하는 것이 핵심입니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[대우건설 주가전망] 체코 원전! 본격수주 열렸다! 월요일 상한가 갈 이유!",
+          "video_id": "lIQ60OqmVDg",
+          "views": 2240,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=lIQ60OqmVDg",
+          "subtitle_summary": "대우건설 주가는 체코 원전 수주 기대감과 함께 상단 추세선 뚫림에 힘입어 월요일 상한가로 마감하며 투자 심리가 개선될 가능성이 높다. 전문가들은 추세선 지지 및 매물대 뚫림을 확인한 점을 근거로 주가 재상승을 전망하며, 단기 목표가를 제시할 예정이다. 투자자들은 증시에 대한 브리핑을 통해 향후 주가 흐름을 주시해야 한다.",
+          "db_saved": true
+        },
+        {
+          "title": "[대우건설 주가전망]저 PER 재부각? 여기까지 상승합니다 #대우건설 #대우건설주가 #대우건설주가전망",
+          "video_id": "2euLAOFAEMM",
+          "views": 2928,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=2euLAOFAEMM",
+          "subtitle_summary": "대우건설이 해수 담수화 등 고부가 수리 시장 선점과 저 PER 재부각으로 금요일 급등 마감하며 17% 상승했다. 현재 PER 19배 수준으로 건설업종 평균 PER 41배 대비 저평가되어 상승 가능성이 높다고 분석했다. 월봉 15,000원 돌파를 예상하며 중장기적인 관점에서 추가 상승을 기대하고 있다.",
+          "db_saved": true
+        },
+        {
+          "title": "대우건설, 외국인과 기관이 바닥에서 싹쓸이! 420억 규모 자사주 소각이 불러온 역대급 랠리, 흔들기에 속지 마세요!",
+          "video_id": "6FvGIZPGj3A",
+          "views": 1239,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=6FvGIZPGj3A",
+          "subtitle_summary": "대우건설은 420억 원 규모의 자사주 소각을 통해 외인과 기관의 투자를 유치하며 역대급 랠리를 기록했다. 우크라이나 재건 테마와 더불어 원전 수주 협상 타결 등 긍정적인 호재가 복합적으로 작용한 결과다. 앞으로 대우건설의 수주 실적과 성장 가능성에 대한 기대감이 투자 심리를 자극하며 주가 상승을 견인할 것으로 전망된다.",
+          "db_saved": true
+        }
+      ],
+      "max": 1.2532,
+      "min": 2.1366,
+      "nb_score": 0.5865,
+      "avg_views": 1575.12,
+      "total_views": 12601
+    },
+    {
+      "keyword": "금시세",
+      "is_fixed": false,
+      "views": [
+        8763,
+        1570,
+        1754,
+        4393,
+        11358
+      ],
+      "video_count": 5,
+      "videos": [
+        {
+          "title": "“Plunging Gold Prices” This year’s gold prices will be truly shocking. Do ‘this’ with all the gol...",
+          "video_id": "GcSD_EAA-zc",
+          "views": 8763,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=GcSD_EAA-zc",
+          "subtitle_summary": "금값이 급락하고 횡보하며 투자자들의 멘탈을 흔드는 가운데, 글로벌 공급망 불안과 인플레이션 심화에도 불구하고 금값 상승세가 주춤하면서 투자 심리가 위축되고 있다. 전문가들은 금값 하락에 대한 공포심을 조장하는 목소리에도 불구하고, 장기적인 관점에서 금의 가치는 여전히 높다고 분석하며, 지금이 저가 매수의 기회라고 전망한다. 투자자들은 이러한 상황을 긍정적으로 해석하고 신중하게 투자 결정을 내려야 할 것이다.",
+          "db_saved": true
+        },
+        {
+          "title": "금 투자자 90%가 모르는 전쟁과 금값의 불편한 진실",
+          "video_id": "c6cfSdp96Dk",
+          "views": 1570,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=c6cfSdp96Dk",
+          "subtitle_summary": "중동 전쟁 발발 이후 금값은 급락하고 있으며, 트럼프 대통령의 한국 군함 파병 요구가 금시장을 더욱 불안하게 만들고 있습니다. 호르무즈 해협 봉쇄로 인한 석유 수급 차질과 이란의 반발이 이어지면서 금 투자자들의 손실이 발생하고 있습니다. 금값 하락의 원인과 앞으로의 시나리오를 분석하는 영상이 곧 공개될 예정입니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[최신] 2026년 3월 15일 🇰🇷 오늘 한국 금가격: 금값 하락 압력, 기회가 될까",
+          "video_id": "ZJhSFsV9RrQ",
+          "views": 1754,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=ZJhSFsV9RrQ",
+          "subtitle_summary": "오늘 국내 금값이 어제보다 크게 하락하며, 1.38% 폭락하며 5년래 최대 하락폭을 기록했다. 이는 국제 금시장의 반등 시점을 찾지 못하고 약세를 보이는 흐름과 더불어 은 시장의 급락 압력이 복합적으로 작용한 결과다. 실물 금 가격의 프리미엄 또한 높아 실 소비자 가격에 부담을 주고 있으며, 국제 금시장의 약세가 국내 금시장에 영향을 미치고 있다는 분석이다.",
+          "db_saved": true
+        },
+        {
+          "title": "금 모조리 휴지조각 된다? 자산 이동은 이미 시작됐다｜존버나드 지식자랑",
+          "video_id": "5olHnsYl_Ko",
+          "views": 4393,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=5olHnsYl_Ko",
+          "subtitle_summary": "[인도에서 4월 1일부터 국내 현물 가격을 책정하며, 런던·상하이·인도 시장 간 금·은 가격 프리미엄이 확대되는 현상에 주목해야 한다. ETF 가격 책정 시 국제 금시세로 참고하던 방식에서 인도 현물 가격이 반영될 가능성이 높아졌으며, 이는 금·은 시장의 자산 이동을 가속화할 수 있다.]",
+          "db_saved": true
+        },
+        {
+          "title": "[News Pick] Gold Price 'Danger Signal?'...\"I Sold My Gold\"",
+          "video_id": "ZSRuinaY3xU",
+          "views": 11358,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=ZSRuinaY3xU",
+          "subtitle_summary": "[미국-이란 전쟁과 유가 급등으로 인해 금값 하락이 불가피하며, 시장 심리적 위축과 금리 인상 가능성 시대로 인해 금 차익 실현 심리가 작용하고 있다.]",
+          "db_saved": true
+        }
+      ],
+      "max": 1.1782,
+      "min": 2.2054,
+      "nb_score": 0.5342,
+      "avg_views": 5567.6,
+      "total_views": 27838
+    },
+    {
+      "keyword": "갤럭시 s26 울트라",
+      "is_fixed": false,
+      "views": [
+        20981,
+        4622,
+        7369
+      ],
+      "video_count": 3,
+      "videos": [
+        {
+          "title": "Honest review...! Galaxy S26 Ultra 2-Week Pros and Cons Analysis",
+          "video_id": "Dlf7PMF7nRY",
+          "views": 20981,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=Dlf7PMF7nRY",
+          "subtitle_summary": "갤럭시 S26 울트라 2주 사용 후기에서 가장 중요한 점은 60W 이상 고출력 어댑터 구매를 통해 15분 만에 50% 충전이 가능하다는 점이며, 프라이버시 디스플레이 옵션은 버스나 지하철 등에서 유용하게 활용할 수 있다는 점입니다. 또한, 삼성 정품 어댑터 외에도 앵커 65W 충전기 등 다양한 어댑터로도 60W 충전이 가능하다는 점이 주목할 만합니다. 다만, 프라이버시 디스플레이 시인성이 다소 떨어질 수 있다는 단점도 존재합니다.",
+          "db_saved": true
+        },
+        {
+          "title": "\"애플도 못한 혁신\"…갤S26 울트라, 성능 얼마나 미쳤길래",
+          "video_id": "qsZpRQ8JSWA",
+          "views": 4622,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=qsZpRQ8JSWA",
+          "subtitle_summary": "삼성 갤럭시 S26 울트라가 역대 갤럭시 S 시리즈 중 가장 강력한 도약으로 평가받으며, 애플조차 구현하지 못한 프라이버시 디스플레이와 보안 기술 혁신으로 호평을 받았다. 특히 카메라 성능이 국제 화질 평가 기관의 1위 선정과 최고 전시 제품상 수상 등 긍정적인 평가를 얻었다. AI 기능과 보안 혁신을 앞세운 갤럭시 S26 울트라는 글로벌 시장에서 높은 성과를 기대감을 높이고 있다.",
+          "db_saved": true
+        },
+        {
+          "title": "S26 울트라 60W, 아무거나 꽂으면 돈 날리는 이유!!",
+          "video_id": "7UB7UnIbMpQ",
+          "views": 7369,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=7UB7UnIbMpQ",
+          "subtitle_summary": "삼성 갤럭시 S16 울트라의 초고속 충전 기술이 기대에 미치지 못하면서 소비자들의 불만이 끓어오르고 있으며, 60W 충전 지원이 일반 모델에는 적용되지 않아 혼란을 야기하고 있습니다. 충전 속도 제한의 원인은 PMIC 칩의 제한적인 기능으로, 충전기에 가변 전압식 칩이 없는 경우 충전 속도를 낮추는 방식이기 때문입니다. 중국 스마트폰과의 경쟁에서 뒤쳐지는 것에 대한 소비자들의 우려가 제기되고 있습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 1.3061,
+      "min": 3.0444,
+      "nb_score": 0.429,
+      "avg_views": 10990.67,
+      "total_views": 32972
+    },
+    {
+      "keyword": "실시간 뉴스",
+      "is_fixed": false,
+      "views": [
+        184681,
+        137500,
+        54702,
+        801963
+      ],
+      "video_count": 4,
+      "videos": [
+        {
+          "title": "막힌 호르무즈..한중일 등 5개국에 군함 요구 - [LIVE] MBC 뉴스데스크 & 스트레이트 2026년 03월 15일",
+          "video_id": "62bSyB6qxJM",
+          "views": 184681,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=62bSyB6qxJM",
+          "subtitle_summary": "트럼프 미국 대통령이 호르무즈 해협 봉쇄로 인한 석유 공급 차단 문제 해결을 위해 한국, 중국, 일본 등 5개국에 군함 파견을 요구하며, 이란의 미사일 드론 공격으로 물류가 마비된 상황 속에서 긴장감이 고조되고 있다. 미국의 핵심 동맹국으로서 한국에 어려운 과제가 부여되었지만, 트럼프 대통령은 다국적 공동 대응을 촉구하며 청해부대 투입 가능성을 시사하고 있다. 정부는 한미 간 긴밀한 소통과 신중한 검토를 통해 대응 방안을 모색 중이며, 군함 파견은 최소 호위 임무로 제한될 것으로 예상된다.",
+          "db_saved": true
+        },
+        {
+          "title": "[다시보기] 뉴스룸｜트럼프, 한국 등에 '군함 파견' 요청 / 이란, 호르무즈 밖 UAE 항구 공습 (26.3.15) / JTBC News",
+          "video_id": "Ejm_JiBNLrU",
+          "views": 137500,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=Ejm_JiBNLrU",
+          "subtitle_summary": "트럼프 대통령이 호르무즈 해협에 군함 파견을 요청하며 한국을 포함한 동맹국에 압박했고, 이는 비용 전가 전략의 일환으로 해석된다. 미국은 안전한 거리에서 공습에 집중하려 하지만, 동맹국에 위험을 떠넘기고 영향력을 행사하는 행태로 비판받고 있다. 한국 정부는 국가 안보를 중심으로 관련 논의를 이어가면서 신중한 태도를 유지하며, 국제 해상 물류망의 안전 확보 방안을 검토하고 있다.",
+          "db_saved": true
+        },
+        {
+          "title": "🔴LIVE \"이란 하르그섬 석유 시설 터지면..\" 이란도, 트럼프도, 전세계 치명타 | SBS 실시간 라이브",
+          "video_id": "p9de0lh8d4k",
+          "views": 54702,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=p9de0lh8d4k",
+          "subtitle_summary": "이란의 하르그섬 석유 시설 폭발로 인한 인명 피해와 이스라엘의 레바논 헤즈볼라 공격이 격화되면서 중동 지역의 긴장이 고조되고 있으며, 이란은 보복 수위를 높여 글로벌 금융 기관들을 공격하고 있습니다. 미국은 호르무즈 해협을 중심으로 군사력을 증강하고 있으며, 트럼프 대통령은 이란의 해상 전력을 약화시켰다고 주장했습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[이슈픽] 미군 덮친 의문의 대폭발…뜻밖의 참변에 '아비규환' / YTN",
+          "video_id": "IWuP7zBAR04",
+          "views": 801963,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=IWuP7zBAR04",
+          "subtitle_summary": "쿠웨이트 슈이바 한구에서 이란의 미사일과 드론 공격으로 인해 미군 6명이 사망하고 최소 140명이 부상당한 참변이 발생했으며, 공격 당시 코리스 중사 등 미군들의 안면 손상과 부상으로 인한 고통이 심각한 상황이었습니다. 특히, 파병 지역에서 발생한 이번 공격은 30년 넘게 전쟁이 없던 쿠웨이트에서 발생하여 충격을 더했으며, 이란이 개발한 해저 잠수함 격파용 기회(약 6,000발)로 인해 호르무즈 해협의 안전이 위협받고 있습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0.8017,
+      "min": 1.9066,
+      "nb_score": 0.4205,
+      "avg_views": 294711.5,
+      "total_views": 1178846
+    },
+    {
+      "keyword": "이더리움",
+      "is_fixed": false,
+      "views": [
+        1633,
+        1606,
+        5198,
+        736
+      ],
+      "video_count": 4,
+      "videos": [
+        {
+          "title": "[이더리움] 이 패턴 또 나왔습니다! 역사적 전환점 임박 했습니다! *홀더 필수시청* #이더리움",
+          "video_id": "WIocnwHUJqA",
+          "views": 1633,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=WIocnwHUJqA",
+          "subtitle_summary": "최근 XRP의 상승 신호와 ETF 자금 유입 증가로 알트코인 전반에 자금 순환이 시작될 가능성이 제기되고 있으며, 일주일간의 토큰 언락은 가격 하락을 유도하여 세력이 물량을 매수할 기회를 제공할 수 있는 상승 신호로 분석된다. 현재 이더리움은 박스권 안에서 횡보하며 거래량 변화가 없는 완만한 상승 추세를 보이고 있으며, 이는 락업 회전 물량 정리 구간의 특징으로 판단된다.",
+          "db_saved": true
+        },
+        {
+          "title": "[Ethereum] The Supercycle Finally Returns. The collapse of the bottom line is imminent. We are go...",
+          "video_id": "qmXAR32aU7o",
+          "views": 1606,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=qmXAR32aU7o",
+          "subtitle_summary": "[이더리움은 지난달 중순부터 추세 전환 모멘텀을 보이며 반등세를 보였으나, 밴드 중단 돌파 후 일시적 하락을 겪고 있으며, 락업 해제와 토큰 소각 이슈로 인해 결정적인 시기를 맞이하고 있습니다. 락업 해제 시 가격 펌핑이 예상되며, 급락 후 진짜 기회가 올 것으로 전망됩니다.]",
+          "db_saved": true
+        },
+        {
+          "title": "Bitcoin, the Opportunity of War",
+          "video_id": "V4Am_W81Q6w",
+          "views": 5198,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=V4Am_W81Q6w",
+          "subtitle_summary": "전쟁으로 인한 유가 급등과 인플레이션, 연준의 금리 인상 딜레마가 지속되면서 채권 시장이 흔들리고 연준이 돈을 풀게 될 가능성을 제시하며, 비트코인이 기회 될 수 있다고 분석했습니다. 호르무즈 해협의 긴장 고조로 인한 유가 상승과 물가 상승 압력이 연준의 금리 결정에 어려움을 주고 있으며, 아서 헤이지의 전망을 참고하여 무부 지수 등 핵심 지표를 주시해야 한다고 강조했습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "Ethereum Outlook: $760 Million Net Inflow into US Bitcoin ETFs This Week… BlackRock Accounts for 80%",
+          "video_id": "Sr8IdaY5QJw",
+          "views": 736,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=Sr8IdaY5QJw",
+          "subtitle_summary": "[이번 주 미국 비트코인 ETF 유입액 7억 6천만 달러, 블랙록이 80%를 차지하며 이더리움 시장에도 긍정적인 영향을 미치는 가운데, 57~58K 구간에 형성된 저항선을 돌파할 가능성에 대한 분석이 이루어지고 있으며, MVRB Z스코어 지표를 활용한 추가 하락 예측이 제시되었다.]",
+          "db_saved": true
+        }
+      ],
+      "max": 0.9625,
+      "min": 2.289,
+      "nb_score": 0.4205,
+      "avg_views": 2293.25,
+      "total_views": 9173
+    },
+    {
+      "keyword": "주가 전망",
+      "is_fixed": false,
+      "views": [
+        10860,
+        3418,
+        6970,
+        5335,
+        2854,
+        1198,
+        2330,
+        2488
+      ],
+      "video_count": 8,
+      "videos": [
+        {
+          "title": "[삼성전자 주가전망] 美기관 10년만 최대 공매도 포지션 ! 내일 이렇게 됩니다 ! 주가 폭락이냐.. 숏커버링 폭등이냐...      박프로 #삼성전자",
+          "video_id": "cq3dQ4nm-yA",
+          "views": 10860,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=cq3dQ4nm-yA",
+          "subtitle_summary": "지정학적 리스크 심화로 나스닥, 한국 IC ETF 등 주요 시장 하락하며 원유 가격 급등에 투자 심리 위축되고, 삼성전자 호재에도 글로벌 경기 침체 우려와 트럼프 대통령의 공격적인 발언으로 인해 코스피 급락 가능성이 높아지고 있다.",
+          "db_saved": true
+        },
+        {
+          "title": "[삼성전자 주가전망] 단독! 긴급속보! 이란 원유 공급! 악재 소멸! 월요일 20% 급반등 이슈! 머스크 스페이스X 관련주!",
+          "video_id": "Ye0F_AWj6S8",
+          "views": 3418,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=Ye0F_AWj6S8",
+          "subtitle_summary": "호르무즈 해협 통과 재개 가능성 시점으로 하나솔루션 주가 급락에 따른 악재가 소멸될 조짐을 보이며, 미국과 이스라엘을 제외한 국가들의 선박 통행을 허용함에 따라 원유 공급 차질이 해소될 것으로 전망된다. 이는 석화 산업 전반에 긍정적인 영향을 미쳐 하나솔루션 등 관련 종목의 단기 반등 가능성을 높이는 요인으로 작용할 것으로 예상된다. 외무장관의 발언은 석유 공급망 재편에 대한 기대감을 증폭시키고 있다.",
+          "db_saved": true
+        },
+        {
+          "title": "[두산에너빌리티 주가전망]💥일.실시간 미국긴급속보!💥웨스팅하우스 제치고 핵폭탄급 미국 원전계약 터졌다!!💥신고가 직전에 이게 터지네요! #두산에너빌리티 #완벽대응전략 #차프로",
+          "video_id": "srKK8S2Nzzk",
+          "views": 6970,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=srKK8S2Nzzk",
+          "subtitle_summary": "[트럼프 행정부가 웨스팅하우스 대신 히타치와 한국, 특히 한국전력과의 협상을 통해 미국 원전계약에 성공하며 두산에너빌리티 주가에 긍정적인 영향을 미칠 가능성이 제기되고 있다.]",
+          "db_saved": true
+        },
+        {
+          "title": "🔴[삼성전자 주가전망] 현재가 184,000원 3월 16일 주가 '이렇게' 됩니다.",
+          "video_id": "nogI7sS5Y3s",
+          "views": 5335,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=nogI7sS5Y3s",
+          "subtitle_summary": "[삼성전자 주가 하락은 중동 긴장과 유가 급등, 외국인 자금 유출 등 글로벌 시장 변동성 속에서 발생한 차익 실현 성격이 강하며, AI 데이터 센터 투자 확대와 HBM 수요 증가로 인해 삼성전자는 여전히 강력한 성장 구조를 가지고 있어 단기적인 하락은 끝난 자리일 수 있다.]",
+          "db_saved": true
+        },
+        {
+          "title": "[삼성전자 주가전망] 일요일 분석! 미장 반도체만 급등 마감! 월요일부터 상승하는 증거! \"이 일정\"에 따라서 대응! 일정과 대응전략 공개! 삼성전자 주식분석! 삼성전자 목표가!",
+          "video_id": "J784qDzNBuw",
+          "views": 2854,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=J784qDzNBuw",
+          "subtitle_summary": "[금요일 코스피 및 삼성전자 주가 하락에도 불구하고 미국 미장 반도체 지수가 반등하며 월요일 상승 가능성을 시사하는 분석이 나왔다. 이란 전쟁 장기화와 유가 급등 우려에도 시장 충격을 흡수하며 삼성전자, SK하이닉스 등 반도체 관련주 반등에 대한 기대감을 높였다.]",
+          "db_saved": true
+        },
+        {
+          "title": "[현대차 주가전망] 美기관 10年만 최대 '공매도' 포지션 .. 내일 이렇게 됩니다 ! 주가 폭락이냐 or 숏커버링 폭등이냐..",
+          "video_id": "a2BkKseoei0",
+          "views": 1198,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=a2BkKseoei0",
+          "subtitle_summary": "미국 기관들의 공매도 포지션이 3년 만에 최대치를 기록하며 나스닥, ETF 시장이 급락하는 가운데, 지정학적 리스크 심화로 유가 급등하며 국내 주식 시장에도 악영향을 미칠 수 있다는 우려가 제기되었다. 특히, SP 500 선물은 10년 만에 최대 하락폭을 보이며, 시장 변동성이 커질 가능성을 시사하고 있다.",
+          "db_saved": true
+        },
+        {
+          "title": "[현대차 주가전망 조교수] 유가 100달러 임박! 미증시 하락마감! 다음주 마지막 바겐세일입니다! 내일 하락하면 '이렇게' 하세요",
+          "video_id": "WFQfCzr6brU",
+          "views": 2330,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=WFQfCzr6brU",
+          "subtitle_summary": "현대차 주가는 50만원 선 돌파 후 보합세로 마감했지만, 미국 증시 하락과 유가 급등으로 인해 종가 1.3% 하락하며 51만9천원에 마감했으며, 특히 유가 98달러를 기록하며 미·이란 전쟁 장기화 우려가 커지면서 현대차 주가 하락에 영향을 미쳤다.",
+          "db_saved": true
+        },
+        {
+          "title": "[우리기술 주가전망]원전 테마가 상승 하는 이유는? 주가 연일 오름세 #우리기술 #우리기술주가 #우리기술주가전망",
+          "video_id": "3x0RfT1vAoM",
+          "views": 2488,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=3x0RfT1vAoM",
+          "subtitle_summary": "원전 테마 상승에 힘입어 우리기술이 연일 강세를 보이며 11% 상승 마감했고, 2,550원까지 추가 상승하며 거래대금 1조 4,368억 원을 기록했다. 미국, 체코 등 원전 관련 이슈와 정부 신규 원전 건설 정책, AI 전력 수요 폭증 등의 호재에 외국인 투자 증가로 인해 장기적인 성장 가능성이 높다고 분석했다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0.7591,
+      "min": 1.8123,
+      "nb_score": 0.4188,
+      "avg_views": 4431.62,
+      "total_views": 35453
+    },
+    {
+      "keyword": "환율",
+      "is_fixed": false,
+      "views": [
+        4884,
+        13610,
+        7432,
+        71935
+      ],
+      "video_count": 4,
+      "videos": [
+        {
+          "title": "평균 환율 1,476원 '외환위기 이후 최고'...1,500원대 뚫리나 / YTN",
+          "video_id": "Pf9CbAa2d_E",
+          "views": 4884,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=Pf9CbAa2d_E",
+          "subtitle_summary": "[중동사태로 인한 지정학적 충격과 글로벌 원유 가격 상승으로 원달러 환율이 외환 위기 이후 최고 수준인 1,476원에 육박하며 1,500원대 돌파 가능성이 제기되는 가운데, 물가 상승 압력과 실물 경제에 대한 우려가 커지고 있습니다.]",
+          "db_saved": true
+        },
+        {
+          "title": "The dollar is standing still, but the exchange rate is skyrocketing!! Only the value of the won i...",
+          "video_id": "U_vc0Zsp-gE",
+          "views": 13610,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=U_vc0Zsp-gE",
+          "subtitle_summary": "[중동 전쟁의 영향으로 원/달러 환율이 1,500원까지 급등한 가운데, 달러의 가치는 상승하지 않았으므로 원화 가치 하락이 주된 원인이며, 미국의 금리 인상과 한국의 유동성 공급이 환율 상승을 부추기고 있다.]",
+          "db_saved": true
+        },
+        {
+          "title": "'Exchange Rate at 1,500 Won' Highest Since Foreign Exchange Crisis... Won's Drop Ranks Among 'Hig...",
+          "video_id": "bDhcIx2poWg",
+          "views": 7432,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=bDhcIx2poWg",
+          "subtitle_summary": "[중동 전쟁과 호르무즈 해협 봉쇄 우려로 원화 가치가 급등하여 달러 대비 1998년 외환 위기 이후 최고치인 1500원대를 돌파하고, 주요 통화 대비 가장 큰 폭으로 하락]",
+          "db_saved": true
+        },
+        {
+          "title": "[이슈PICK] 외국인 20조 매도 대탈출 시작됐다... 빚투 33조 풀베팅에 반대매매 터졌다 / 사건텔러",
+          "video_id": "gDebVb9ks18",
+          "views": 71935,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=gDebVb9ks18",
+          "subtitle_summary": "외국인 투자자들이 2월에만 20조 원 규모의 국내 주식을 대량 매도했으며, 높은 환율과 글로벌 금융 변동성으로 인해 반위험 차익 매도 움직임이 나타나고 있습니다. 개인 투자자들의 과도한 레버리지 투자와 미수/신용 거래 증가가 맞물려 시장의 취약성을 높이고 있으며, 주가 하락 시 반대 매매가 발생할 가능성이 커지고 있습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0.6765,
+      "min": 1.83,
+      "nb_score": 0.3697,
+      "avg_views": 24465.25,
+      "total_views": 97861
+    },
+    {
+      "keyword": "코스닥",
+      "is_fixed": false,
+      "views": [
+        2597,
+        2129,
+        7126
+      ],
+      "video_count": 3,
+      "videos": [
+        {
+          "title": "다음 급등주, 코스닥 액티브 ETF 안에 있었다",
+          "video_id": "6ZVGhezysVw",
+          "views": 2597,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=6ZVGhezysVw",
+          "subtitle_summary": "코스닥 지수는 약보합세를 보였지만, 코스닥 150 레버리지 ETF는 2% 넘게 급락하는 이례적인 현상이 발생했으며, 이는 코스닥 지수와 레버리지 ETF 간의 차이로 인해 발생한 것으로 분석됨.",
+          "db_saved": true
+        },
+        {
+          "title": "KOSDAQ Active ETFs, Which One Should You Choose? Comparison of Fees and Portfolio Weights / PLUS ...",
+          "video_id": "AL4q78jzynY",
+          "views": 2129,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=AL4q78jzynY",
+          "subtitle_summary": "코스닥 액티브 ETF 시장에 3가지 주요 ETF, 코획트, 타임, 플러스 코스닥 150이 출시되어 투자자들의 관심을 받고 있으며, 각 ETF는 수수료, 투자 전략, 구성 종목에서 차이를 보입니다. 특히 코획트는 저평가 가치주 중심, 타임은 2차전지 및 바이오 비중이 높고, 플러스 코스닥 150은 코스닥 150 지수 편입 및 우량주 중심 포트폴리오를 구성하여 투자 목적에 맞는 선택이 중요합니다.",
+          "db_saved": true
+        },
+        {
+          "title": "1조 몰린 코스닥 액티브 ETF… 지금 투자해도 될까 I 김세종 I 이윤희 I ETF아는형",
+          "video_id": "eskZaDOMuAo",
+          "views": 7126,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=eskZaDOMuAo",
+          "subtitle_summary": "코스닥 액티브 ETF에 개인 투자자들의 순매수 주문이 집중되며 코액트 코스닥 액티브가 가장 높은 상승률을 기록했고, 원유 선물 ETF가 20% 이상 급등하며 1, 2위를 차지했습니다. 중동 리스크로 인한 시장 변동성 확대와 함께 테슬라, 니오 등 중국 전기차 관련 ETF도 상승하며 탑 10에 이름을 올렸습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 1.1587,
+      "min": 3.4456,
+      "nb_score": 0.3363,
+      "avg_views": 3950.67,
+      "total_views": 11852
+    },
+    {
+      "keyword": "삼성전자 주가",
+      "is_fixed": false,
+      "views": [
+        2538,
+        7005,
+        7105,
+        18134,
+        2847,
+        3418,
+        5778,
+        27061
+      ],
+      "video_count": 8,
+      "videos": [
+        {
+          "title": "[삼성전자 주가전망] \"단독\" 美현지 우려했던 \"이 소식\" 결국 터졌다..! 본사 난리났다 다음주 주가 난리나겠네요...",
+          "video_id": "3odpuH7BBeg",
+          "views": 2538,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=3odpuH7BBeg",
+          "subtitle_summary": "미국과 이란의 중동 전쟁 지속으로 유가 상승과 인플레이션 우려가 커지면서 연준의 금리 인하가 지연될 가능성이 높아, 삼성전자 주가 하락세가 이어질 전망이며 17만원~16만원까지 추가 하락 가능성도 제기되었다.",
+          "db_saved": true
+        },
+        {
+          "title": "Samsung Electronics Stock Price Outlook - Urgent) If it reaches 'this price' tomorrow, I will buy...",
+          "video_id": "YHxau7E4oO0",
+          "views": 7005,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=YHxau7E4oO0",
+          "subtitle_summary": "삼성전자 주가가 2월 말 급락하며 18만 원 선까지 하락했고, 일부 투자자들이 마지막 매수 기회로 빚까지 내고 주식을 사들이고 있다. 금리 인상과 AI·반도체 산업의 불확실성으로 인해 주가가 장기화될 가능성이 있으며, 증권사들의 긍정적인 전망으로 인해 투자 심리가 더욱 자극되고 있다. 현재 증권사 목표 주가는 30~34만 원 수준이며, 마이너스 통장 대출 급증이 이러한 현상을 심화시키고 있다.",
+          "db_saved": true
+        },
+        {
+          "title": "[삼성전자 주가전망] 단독! 긴급속보! 호르무즈 해협 통행 허용! 증시 급등의 방아쇠 당겼다! 낸드 50% 급등! 50만원 간다",
+          "video_id": "0jlRCSKZKg8",
+          "views": 7105,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=0jlRCSKZKg8",
+          "subtitle_summary": "이란 외무장관의 호르무즈 해협 통행 허용 발언으로 유가 하락 기대감 증폭되어 삼성전자 주가 급등에 영향을 미쳤으며, 낸드 플래시 메모리 가격 또한 50% 넘게 상승한 가운데 증시 전반의 긍정적인 분위기가 형성되었다.",
+          "db_saved": true
+        },
+        {
+          "title": "[삼성전자 주가전망] 美기관 10년만 최대 공매도 포지션 ! 내일 이렇게 됩니다 ! 주가 폭락이냐.. 숏커버링 폭등이냐...      박프로 #삼성전자",
+          "video_id": "cq3dQ4nm-yA",
+          "views": 18134,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=cq3dQ4nm-yA",
+          "subtitle_summary": "미국 트럼프 대통령의 지속적인 공격 발언과 지정학적 리스크 심화로 인해 나스닥, 한국 IC ETF 시장 모두 하락 마감했으며, 원유 가격 급등으로 인해 내일 시장 상황에 대한 우려가 커지고 있습니다. 삼성전자 호재에도 불구하고 글로벌 시장의 부정적인 추세와 지정학적 리스크 장기화 가능성을 고려할 때, 코스피의 추가 하락 가능성도 배제할 수 없으며, 투자자들은 신중한 대응이 필요합니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[삼성전자 주가전망] 지금은 단기 하락 어쩔 수 없지만, 결국은 \"40만원\"까지 매도금지 !",
+          "video_id": "PHN8_dMZY70",
+          "views": 2847,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=PHN8_dMZY70",
+          "subtitle_summary": "[호르무즈 해협 봉쇄 지속 가능성 및 미국-이란 충돌 심화로 인한 삼성전자 주가 하락 전망이 예상되며, 중동 지역 추가 공격 가능성으로 보험료 급등 등 악순환이 반복될 것으로 분석됨]",
+          "db_saved": true
+        },
+        {
+          "title": "[삼성전자 주가전망] 단독! 긴급속보! 이란 원유 공급! 악재 소멸! 월요일 20% 급반등 이슈! 머스크 스페이스X 관련주!",
+          "video_id": "Ye0F_AWj6S8",
+          "views": 3418,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=Ye0F_AWj6S8",
+          "subtitle_summary": "호르무즈 해협 통과 문제로 급락했던 하나솔루션 주가, 이란 외무장관의 모든 국가 통행 허용 발언으로 인해 월요일 20% 넘게 급등할 가능성이 제기되었으며, 유조선 통행 재개 시 석유 공급이 정상화되어 주가 반등에 긍정적인 영향을 미칠 것으로 분석된다.",
+          "db_saved": true
+        },
+        {
+          "title": "삼성전자 주가 전망. \"내일부터 차트 어떻게 움직일까요?\" 확실히 말씀 드릴게요.(핵심 편집) 26.03.15",
+          "video_id": "i4DPjpSrdfc",
+          "views": 5778,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=i4DPjpSrdfc",
+          "subtitle_summary": "삼성전자 주가 전망 방송에서 채널 구독자들의 심리를 활용하여 주가 하락을 예상하고, 신규 시청자들의 반발을 늦추기 위해 주가 상승을 예측하는 전략을 설명하며, 내일 주가 심리 변화에 따라 예측이 빗나갈 수 있다는 점을 시사한다.",
+          "db_saved": true
+        },
+        {
+          "title": "[삼성전자 주가전망]💥실시간일요일 미국현지 긴급속보!! \"중동전쟁 긴급정보!! 다음주,공매도 반대매매까지!\" 대반전 세력정보!!💥무조건 이렇게대응하세요!!💥#완벽대응전략 #주식대장",
+          "video_id": "hi6RLXHsVoU",
+          "views": 27061,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=hi6RLXHsVoU",
+          "subtitle_summary": "[내일 월요일 코스피 증시, 중동 전쟁과 반도체 미국 현지 상황을 주시하며 삼성전자 주가 반등에 집중해야, 투매 지양하고 꽉 잡는 전략이 필요하며, 2조 원 규모의 매도 물량에도 불구하고 다음 주 반전의 기회가 있을 것으로 예상된다.]",
+          "db_saved": true
+        }
+      ],
+      "max": 0.5269,
+      "min": 1.6237,
+      "nb_score": 0.3245,
+      "avg_views": 9235.75,
+      "total_views": 73886
+    },
+    {
+      "keyword": "우리기술",
+      "is_fixed": false,
+      "views": [
+        835,
+        2737,
+        1270,
+        3473,
+        9787,
+        3722,
+        1514,
+        40740,
+        735,
+        1475
+      ],
+      "video_count": 10,
+      "videos": [
+        {
+          "title": "[우리기술 주가전망] 지금 매수해도 될까? 세력들의 매집인가 설거지인가. 주주분들이시라면 반드시 필수시청 #우리기술",
+          "video_id": "tHyuDEJzk0U",
+          "views": 835,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=tHyuDEJzk0U",
+          "subtitle_summary": "우리기술 주가 전망에 대한 분석 영상으로, 국내 증시의 하락과 지정학적 리스크 부각 속에서 우리기술이 14% 상승하며 반등하는 모습을 보이고 있으며, 대규모 보호예수 해제 이벤트가 호재로 작용하여 추가 상승 여력이 남아있다고 분석함.",
+          "db_saved": true
+        },
+        {
+          "title": "[Woori Technology Stock Price Outlook] *Urgent 5 Minutes Ago* 1.7 Million Rights Selling Date, Mi...",
+          "video_id": "kH3Trs1o2dU",
+          "views": 2737,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=kH3Trs1o2dU",
+          "subtitle_summary": "미래세 증권이 보유한 200만 주 물량이 보호예수 기간 연장될 가능성은 낮으며, 권리 매도 시점인 16일 월요일에 주가가 강하게 하락할 수 있다는 분석이다. 유튜버들의 잘못된 정보 유포에 현혹되지 않고, 발행 시점부터 1년이 지난 현재 물량 회수 가능성이 희박하다는 점을 강조한다.",
+          "db_saved": true
+        },
+        {
+          "title": "[우리기술] 新고가 이어갑니다, 월요일 '이 가격' 집중!!",
+          "video_id": "0MWoJ2LbFmY",
+          "views": 1270,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=0MWoJ2LbFmY",
+          "subtitle_summary": "우리기술 주가가 신고가를 연일 경신하며 상승세를 이어갔으나, 중동 전쟁이라는 지정학적 리스크로 인한 시장 변동성에 대한 우려가 제기되고 있다. 과거 걸프전 이후 전쟁 발생 후 한 달 동안 시장 안정화, 3개월 동안 지수 회복이라는 법칙을 고려할 때, 우리기술 주가 추가 상승 가능성이 높다고 분석하며, 거대 세력의 물량 정리 시점을 예측했다.",
+          "db_saved": true
+        },
+        {
+          "title": "[우리기술] CB 사채권자 \"수익률 989%\" 10억이 100억 됐다! 폭락주의보! 수익률 989% 사채 물량 투하... 세력의 '피날레' 탈출 시나리오 공개\"",
+          "video_id": "J6QYdSP82Qs",
+          "views": 3473,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=J6QYdSP82Qs",
+          "subtitle_summary": "[우리기술 사채권 가격이 폭락하며 10억이 100억으로 급등한 가운데, 투자자들에게 수익을 안전하게 인출할 방법을 제시하고 코아시아 CM, 폴라리스 AI 파마 등 두 종목을 추천하여 투자자들의 수익을 극대화하는 전략을 공유하고 있다.]",
+          "db_saved": true
+        },
+        {
+          "title": "[우리기술 주가전망]긴급]미쳤다 미래에셋 전환사채 490억 처분공시 나왔네요 \"외국계증권사 128만원 확신\" #우리기술주가 #우리기술 #차명석 #주식타짜 안교수 우리기술",
+          "video_id": "tHZCu4Olm-E",
+          "views": 9787,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=tHZCu4Olm-E",
+          "subtitle_summary": "미래에셋 전환사채 490억 처분 공시가 발표되어 우리기술 주가에 큰 영향을 미쳤으며, 제3자 물량 청구로 인해 주세력들이 고점에서 탈출하는 전략을 보일 것이라는 분석이 나왔다. 특히 전환사체 물량 상장 이후 발생하는 광기 구간을 활용한 매도세가 예상되며, 투자자들은 주의를 기울여야 한다.",
+          "db_saved": true
+        },
+        {
+          "title": "[Woori Technology Stock Outlook] Continuous Increase in Order Backlog! Further Explosion Next Wee...",
+          "video_id": "bUvsY9OlOZw",
+          "views": 3722,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=bUvsY9OlOZw",
+          "subtitle_summary": "우리기술의 주가가 기관 투자자 물량에 힘입어 25,000원까지 상승하며, 적정 시총 대비 케파 증가 가능성을 지속적으로 강조하고 있으며, 미국-이란 갈등과 유가 급등으로 신재생 에너지 관련주와 원전 섹터가 상승하는 가운데, 우리기술의 추가적인 성장 가능성에 주목하고 있다.",
+          "db_saved": true
+        },
+        {
+          "title": "[우리기술 주가 전망] 美트럼프 폭탄 발언, 내일 폭락일까? 세력도 긴장했습니다.. 주가 폭락이냐.. or 숏커버링 폭등이냐.       #우리기술",
+          "video_id": "bqKACeqJ1Ng",
+          "views": 1514,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=bqKACeqJ1Ng",
+          "subtitle_summary": "[트럼프 발언으로 인한 지정학적 리스크 지속 가능성에 따라 우리기술 주가 급락 가능성을 경계하면서도, 유가 상승과 원전 호재를 통해 주가 상승을 이끌어낼 가능성을 높게 평가하며, 단기적인 고점 판단과 매도 타이밍을 중요하게 고려하고 있다.]",
+          "db_saved": true
+        },
+        {
+          "title": "[Woori Technology Stock Price Outlook] *Urgent 5 Minutes Ago* 1.7 Million Rights Sell-Off, Mirae ...",
+          "video_id": "V3IGDysyBBU",
+          "views": 40740,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=V3IGDysyBBU",
+          "subtitle_summary": "[최박스에 따르면, 미국 증시 하락과 코스피 야간 선물 하락에 따라 개별 종목 주가가 하락하자, 저점 매수 기회를 포착하여 23,550원부터 22,000원 사이의 구간에 매수를 받아들이고, 25,000원 시점에서는 시장가 매수를 통해 주가 하락에 대응하라는 전략을 제시했다.]",
+          "db_saved": true
+        },
+        {
+          "title": "[우리기술] 내일부터 진짜다!! \"이 가격\" 무조건 지키세요 대미투자특별법 본회의 통과 원전수혜  *주주 필수시청*",
+          "video_id": "V-584uEMggo",
+          "views": 735,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=V-584uEMggo",
+          "subtitle_summary": "대미 투자 특별법 본회의 통과로 원전, 에너지, 전력망 투자 확대에 따라 우리 기술의 원전 계측 제어 시스템 기술력에 대한 시장 기대감이 높아지고, 외인 매수세가 지속적으로 강세를 보이며 주가 상승 체력을 확인하고 있는 상황이다. 세력들은 목표 가격에 도달 시 매도 물량을 던질 수 있으므로, 투자자들은 매도 타점을 정확히 파악하고 매도 예약을 통해 안전하게 자산을 확보해야 한다. 상승 기간은 단 2주 안에 물량 정리까지 완료될 예정이며, 최고점 매도 시간을 확인하는 것이 중요하다.",
+          "db_saved": true
+        },
+        {
+          "title": "[WooriTech Stock Outlook] Trump's 'love call' for Korean nuclear power! A race against time start...",
+          "video_id": "3oYEAeQLYuI",
+          "views": 1475,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=3oYEAeQLYuI",
+          "subtitle_summary": "트럼프 정부가 한국의 원전 해체 사업에 대한 투자 유치를 적극적으로 추진하며, 미국 내 데이터 센터 전력 공급 부족 문제를 해결하기 위한 협력을 모색하고 있습니다. 30일 반사 이익 효과를 기대하며, 한국의 원전 기술이 AI 패권 경쟁에서 핵심적인 역할을 할 수 있다는 점을 강조하고 있습니다. 미국이 독자적으로 원전을 확대하기 어려워진 상황에서, 한국의 원전 기술이 미국 데이터 센터의 전력 공급을 담당하게 될 가능성이 높습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0.1428,
+      "min": 0.8535,
+      "nb_score": 0.1673,
+      "avg_views": 6628.8,
+      "total_views": 66288
+    },
+    {
+      "keyword": "주요 뉴스",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "긴급 뉴스",
+      "is_fixed": false,
+      "views": [
+        52637
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "🔴[긴급 라이브] 현재 중동 전선 상황은?...환율+유가 재상승, 사모신용 위기감 속 내일 시장 대응 전략 (조한범, 박종연, 하창완, 염승환) | 인포맥스라이브 260315",
+          "video_id": "nlLYBPTdl0o",
+          "views": 52637,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=nlLYBPTdl0o",
+          "subtitle_summary": "[중동 전선 상황 악화로 인한 유가 및 달러 강세, 사모 신용 위기감 고조 등 금융 시장 변동성이 커지고 있으며, 다극화 시대의 불확실성 증가는 투자 전략 수립에 어려움을 야기하고 있다.]",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "donald trump live",
+      "is_fixed": false,
+      "views": [
+        19001
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "US-Iran War LIVE: Trump: Iran War to Continue Until Nuclear Threat in the Middle East Is Eliminated",
+          "video_id": "XqU9FCQyyfI",
+          "views": 19001,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=XqU9FCQyyfI",
+          "subtitle_summary": "[트럼프 대통령은 카르 섬 공격을 통해 이란 정권에 ‘석유 기반 시설 공격 시 즉각 대응’ 메시지를 전달하고자 했다. 미국은 정밀 유도 무기를 사용하여 이란의 석유 생산 시설을 직접적으로 타격하지 않고 해군뢰도 보관 시설, 미사일 보관 시설 등 군사 시설을 공격했다. 전문가들은 카르 섬 공격이 석유 가격을 100달러에서 150달러까지 치솟게 할 수 있다고 전망했다.]",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "이재명 라이브",
+      "is_fixed": false,
+      "views": [
+        9031
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "[대통령 LIVE 🔴]  3.15의거 기념식 이재명 대통령 참석｜20260315",
+          "video_id": "BLJUXHAg8jA",
+          "views": 9031,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=BLJUXHAg8jA",
+          "subtitle_summary": "3.15의거 기념식에서 이재명 대통령은 마산의 자유민주 시민들의 용기와 정신을 기렸으며, 1960년 부정 선거에 항거한 시민들의 숭고한 정신을 되새김으로써 민주주의 수호의 중요성을 강조했습니다. 눈부신 오늘, 끝나지 않는 이야기가 되어온 3.15의거 정신은 오늘날 민주주의 발전에 끊임없이 헌신하는 시민들의 의지를 북돋아주고 있습니다. 정의를 향한 시민들의 굳건한 염원은 민주주의의 미래를 밝히는 등대 역할을 하고 있습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "배현진",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "이준석",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "장한길",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "경제성장률",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "경기회복",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "Bernie Sanders",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "Kamala Harris",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "한미동맹",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "# 주식/코인/경제 용어 추가",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "블록체인",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "디파이",
+      "is_fixed": false,
+      "views": [
+        6413
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "유가 100달러 시대, 비트코인 8만 달러 간다",
+          "video_id": "BMab2GKeZJw",
+          "views": 6413,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=BMab2GKeZJw",
+          "subtitle_summary": "유가 급등과 함께 비트코인이 상승하며 투자자들의 관심을 끌고 있으며, 하이닉스, 구글 등 주요 기업들의 고점 매수 전략과 더불어 이란 공격 가능성, 2월 소비자 물가 동향 등 복합적인 경제 상황이 전개세를 주도하고 있다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "ETF",
+      "is_fixed": false,
+      "views": [
+        7311
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "KOSDAQ 150 Active ETF Launched… Will It Beat Active Asset Managers? | Kim Se-jong | Lee Yun-hee |...",
+          "video_id": "eskZaDOMuAo",
+          "views": 7311,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=eskZaDOMuAo",
+          "subtitle_summary": "[이번 주 코스닥 액티브 ETF 신규 상장 시 개인 투자자들의 순매수 집중, 특히 코액트 코스닥 액티브가 7,314억 원을 투자하며 큰 폭의 상승률을 기록했으며, 타임 코스닥 액티브는 3,689억 원을 매수했습니다.]",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "상승장",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "불마켓",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "시가총액",
+      "is_fixed": false,
+      "views": [
+        4
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "주식 초보 탈출! 기업 기술적 분석 핵심 정리(시가총액·PER·ROE 쉽게!! 한 번에!!) #주식 #주식투자 #주식초보 #주식기초 #주식공부 #주식강의 #주식분석 #기업분석",
+          "video_id": "xSBbVBkBBOY",
+          "views": 4,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=xSBbVBkBBOY",
+          "subtitle_summary": "주식 투자 초보자를 위한 기업 기술적 분석 핵심 정리를 통해 주가 예측의 세 가지 렌즈, 즉 기본적 분석, 기술적 분석, 포트폴리오 이론을 소개하고, 기본적 분석은 튼튼한 치킨집 고르기처럼 기업의 펀한 가치를 평가하는 본질 가치와 상대 가치를 활용하여 투자 결정을 내릴 수 있도록 안내한다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "PBR",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "EPS",
+      "is_fixed": false,
+      "views": [
+        3955
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "🔴LIVE : edappadi palaniswamy | ADMK | EPS | ஈபிஎஸ் பரபரப்பு பிரஸ்மீட்",
+          "video_id": "ZLdIJ0eifN4",
+          "views": 3955,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=ZLdIJ0eifN4",
+          "subtitle_summary": "[애د파디 팔라니삼이(EPS)는 현재 정부가 과거 아명(அம்மா) 정권의 정책을 계승하고 있으며, 소수 민족에 대한 안전감을 제공한다는 점을 강조하며, 민주당과의 연대에 대한 우려를 표명하고 있습니다.]",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "우량주",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "성장주",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "주식분할",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "무상증자",
+      "is_fixed": false,
+      "views": [
+        3951
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "[Woori Tech Stock Price Forecast] 🟢 1:5 Stock Split!! It's chaos!! Stock price surge scenario!! #...",
+          "video_id": "8vKbh8U0lWQ",
+          "views": 3951,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=8vKbh8U0lWQ",
+          "subtitle_summary": "[우리기술이 주주원 발표 및 무상증자 추진 소식으로 인해 주가가 급등할 가능성을 보이며, 노갑선 대표가 유동성 확보 및 공매도 압박 해소를 위해 무상증자를 추진 중이라는 발표가 나왔습니다. 무상증자는 시장 주목도와 주가 모멘텀을 확보하고, 이후 유상증자 등 자금 조달을 용이하게 하는 효과를 기대하며, 유사 기업 사례를 참고했을 것으로 분석됩니다.]",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "상장폐지",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "김치프리미엄",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "반감기",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "현물거래",
+      "is_fixed": false,
+      "views": [
+        885
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "비트겟 선물거래 방법 선물 계정 활성화와 자산 이동 순서 한 장 정리",
+          "video_id": "6TO7ChrQ-6w",
+          "views": 885,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=6TO7ChrQ-6w",
+          "subtitle_summary": "비트겟 선물거래를 통해 코인 투자 수익을 극대화할 수 있는 방법들을 소개하며, 초보자도 쉽게 따라 할 수 있는 코인 거래법과 AI 단타법, 100달러 가입 이벤트 등 유용한 정보들을 제공합니다. 해외 거래소의 레버리지, 낮은 수수료, 세금 혜택 등을 활용하여 소액으로도 큰 수익을 낼 수 있는 기회를 제공하며, 수수료 문제에 대한 경각심을 일깨웁니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "스캘핑",
+      "is_fixed": false,
+      "views": [
+        27410
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "5년 단타 매달 손실 자영업 부부 트레이더  [개미원정대]",
+          "video_id": "m8jFDg6-LXI",
+          "views": 27410,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=m8jFDg6-LXI",
+          "subtitle_summary": "[5년 단타 매달 손실을 본 자영업 부부 트레이더를 만나 계좌 분석 및 매매 실수 원인 파악, 인건비 상승 등 어려움 속 호프집 운영 경험을 살린 투자 전략 공유]",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "포트폴리오",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "리밸런싱",
+      "is_fixed": false,
+      "views": [
+        67912
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "진짜 시장의 공포는 ○○에 있다? 기존 질서가 신용을 잃은 주식 시장, 포트폴리오 리밸런싱 어떻게 해야 하나? 윤센의 큰 그림 조언 I 멤버십 방송 공개분 I 최경영TV",
+          "video_id": "bEca3TbpaP4",
+          "views": 67912,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=bEca3TbpaP4",
+          "subtitle_summary": "전쟁 이후 투자 전략을 논하며, 이란 전쟁의 지속 가능성과 그에 따른 인플레이션 위협, 리세션 리스크를 경고하고, 포트폴리오 리밸런싱의 필요성을 강조하며, 삼성전자와 하이디스의 실적 및 주주 환원 정책에 주목할 것을 제안한다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "양적완화",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "디플레이션",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "리플레이션",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "물가상승률",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "명목금리",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "명목GDP",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "소비지출",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "투자지출",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "정부지출",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "순수출",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "총수요",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "총공급",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "경기순환",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "경기확장",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "경기후퇴",
+      "is_fixed": false,
+      "views": [
+        6123
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "\"경기침체 오든 말든 상관 없다\"  금 vs 은, 올해는 무조건 이걸 사야 이득입니다 | 조규원 대표 2부",
+          "video_id": "3CWr3wIfBdM",
+          "views": 6123,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=3CWr3wIfBdM",
+          "subtitle_summary": "[경기 침체 상황에서도 아파트처럼 급매물이 출현하면 이익을 얻을 수 있으며, 시장의 적색 신호에도 불구하고 상승하는 특성이 존재합니다. 조규원 대표는 시기별, 방법별 차이로 큰 손실을 줄일 수 있다고 조언하며, 급매를 활용한 투자를 추천합니다.]",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "경기침체",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "경기과열",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "경기둔화",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "경기지표",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "선행지표",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "동행지표",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "후행지표",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "경기예측",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "경기전망",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "# 경제 용어 추가",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "GDP",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "GNP",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "CPI",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "PPI",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "IMF",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "OECD",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "FTA",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "FTA협정",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "무역장벽",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "관세",
+      "is_fixed": false,
+      "views": [
+        656
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "[프리즘] 트럼프 관세 이어 유가 출렁…韓 경제 또 시험대 / 연합뉴스TV (YonhapnewsTV)",
+          "video_id": "lHwLlkmXiqc",
+          "views": 656,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=lHwLlkmXiqc",
+          "subtitle_summary": "트럼프 행정부의 관세 압박과 중동 위기, 국제유가 급등으로 한국 경제가 불안정한 상황이며, 수출은 견조하지만 유가 상승과 지정학적 리스크가 경제에 부담으로 작용하고 있습니다. 특히, S0포 스태그플레이션 우려와 원달러 환율 급등으로 성장률 달성 가능성에 대한 불확실성이 커지고 있으며, 중동 정세에 따라 한국 경제의 향방이 결정될 것으로 보입니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "수출",
+      "is_fixed": false,
+      "views": [
+        25746
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "미, 이란 '석유수출 기지' 하르그섬 전격 공습  / 연합뉴스 (Yonhapnews)",
+          "video_id": "db_MHRaYqwI",
+          "views": 25746,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=db_MHRaYqwI",
+          "subtitle_summary": "[미국이 이란의 석유 수출 기지인 하르그섬을 전격 공습하여 이란의 에너지 공급망에 심각한 타격을 가했으며, 이번 공격은 이란의 중동 지역 활동에 대한 미국의 강력한 경고 메시지로 해석된다.]",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "수입",
+      "is_fixed": false,
+      "views": [
+        10548
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "Prosecution Keeps Monthly Income, Expenditure, and Balance of Special Activity Funds Non-Disclosu...",
+          "video_id": "sFRB9nlMCUs",
+          "views": 10548,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=sFRB9nlMCUs",
+          "subtitle_summary": "[법원이 검찰의 특수활동비 수입·지출·잔액 정보를 공개하도록 명령하여, 과거 수사 과정에서 쌈지돈으로 사용되었을 가능성이 제기되고 있으며, 연말 잔액 결산 보고서가 드러나면서 의혹이 더욱 증폭되고 있습니다.]",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "무역적자",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "무역흑자",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "경상수지",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "자본수지",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "외환보유고",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "외환위기",
+      "is_fixed": false,
+      "views": [
+        2089
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "평균 환율 1,476원 '외환위기 이후 최고'...1,500원대 뚫리나 / YTN",
+          "video_id": "AZ1bSyHlMJE",
+          "views": 2089,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=AZ1bSyHlMJE",
+          "subtitle_summary": "[중동 사태로 인한 지정학적 충격과 글로벌 원유 가격 상승으로 원달러 환율이 외환 위기 이후 최고 수준인 1,476원에 육박하며 1,500원 돌파 가능성이 제기되는 가운데, 물가 상승 압력과 실물 경제에 대한 우려가 커지고 있습니다.]",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "외환시장",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "환율조작국",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "금본위제",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "브레튼우즈체제",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "변동환율제",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "고정환율제",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "통화스와프",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "긴축정책",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "재정정책",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "통화정책",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "기준금리",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "정책금리",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "시장금리",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "국채",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "회사채",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "신용등급",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "신용평가",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "신용경색",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "부실채권",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "부도",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "파산",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "구조조정",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "리스크관리",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "헤지펀드",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "사모펀드",
+      "is_fixed": false,
+      "views": [
+        5704
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "현시점 월가 초대형 '사모펀드' 폭탄 터진 진짜 이유⚠️ (+한국 17조 직격탄)",
+          "video_id": "UFYObDmek6I",
+          "views": 5704,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=UFYObDmek6I",
+          "subtitle_summary": "월가 대형 사모펀드 운용사들의 현금 부족 사태는 한국 경제에 17조 원 규모의 ‘폭탄’이 터질 수 있다는 우려를 낳고 있으며, 사모 펀드의 공격적인 투자 방식과 시장 확대가 위험 신호로 작용하고 있다. 특히 사모 신용 펀드의 급격한 성장과 함께 일반 투자자들의 참여가 늘어난 점이 불안감을 증폭시키고 있으며, 환매 중단 사태가 연쇄적으로 발생할 가능성도 제기되고 있다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "공모펀드",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "연기금",
+      "is_fixed": false,
+      "views": [
+        4429
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "연기금, 기관이 가장 많이 모은 '이 종목' 4월 초까지는 계속 사모아야 하는 이유ㅣ유안타증권 박진희 부장",
+          "video_id": "QJT8CQphQTk",
+          "views": 4429,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=QJT8CQphQTk",
+          "subtitle_summary": "전쟁 등의 악재로 인해 시장 변동성이 확대되고 있으며, 개인 투자자들의 상승장 심취와 유동성 증가가 변동성을 더욱 심화시키는 요인으로 작용하고 있다. 특히, 금리 부담과 인플레이션 압박으로 인해 섹터별 주가 변동성이 커지고 있으며, 이벤트성 주들의 반응을 주시해야 한다. 3월 말에서 4월 초까지 시장 변동성의 핵심 포인트를 파악하는 것이 중요하며, 단기적인 부담감 속에서 유동성 관리에 유의해야 한다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "국민연금",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "사회보장제도",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "최저임금",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "실업급여",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "고용보험",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "노동시장",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "노동생산성",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "노동조합",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "임금피크제",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "정년연장",
+      "is_fixed": false,
+      "views": [
+        2384
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "(Breaking) Government Decides to Accept National Human Rights Commission Recommendation! The reti...",
+          "video_id": "uMhULr4Swv0",
+          "views": 2384,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=uMhULr4Swv0",
+          "subtitle_summary": "정부, 국가인권위원회 권고에 따라 고령 근로자의 법정년을 65세로 연장 추진, 이는 2013년 공무원 정년 통일 및 2015년 연금법 개정으로 인해 발생하는 5년의 소득 절벽 문제를 해결하기 위한 조치이며, 기업의 인건비 부담 증가 및 임금 피크제 도입 가능성에 대한 우려도 제기되고 있다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "고령화사회",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "저출산",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "인구구조",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "소득분배",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "지니계수",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "빈부격차",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "중산층",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "절대빈곤",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "상대빈곤",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "복지정책",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "사회복지",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "공공부문",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "민간부문",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "공기업",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "민영화",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "공공요금",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "공공서비스",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "공공재정",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "재정적자",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "재정흑자",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "국가채무",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "국가신용등급",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "국가부도",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "국제금융",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "국제통화기금",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "세계은행",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "아시아개발은행",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "유럽중앙은행",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "미국연방준비제도",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "중앙은행",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "통화량",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "통화유통속도",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "화폐공급",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "화폐수요",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "화폐가치",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "# English financial/stock market terms (NY/US focus)",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "NYSE",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "NASDAQ",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "Dow Jones",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "S&P 500",
+      "is_fixed": false,
+      "views": [
+        2388
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "Beating the S&P 500 for 99 Years",
+          "video_id": "CWGWaNmuGuY",
+          "views": 2388,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=CWGWaNmuGuY",
+          "subtitle_summary": "[지난 30년 동안 버크셔 해瑟웨이가 S&P 500을 능가한 것처럼, CFS 펀드 역시 지난 30년, 10년, 5년, 12개월 동안 버크셔 해瑟웨이를 앞섰습니다. CFS 펀드는 10% 이상의 배당 수익을 제공하며, 70개 이상의 포트폴리오를 분석할 시간 없이 투자자들에게 매력적인 선택지가 될 수 있습니다. 1989년부터 시작된 배당금 추적 및 1981년부터의 총 배당금 기록을 통해 안정적인 수익을 제공하는 펀드로 평가됩니다.]",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "Russell 2000",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "VIX",
+      "is_fixed": false,
+      "views": [
+        4104
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "VIX Is Spiking — 3 Trades to Profit From Market Panic!",
+          "video_id": "Q3TYgPl1sRw",
+          "views": 4104,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=Q3TYgPl1sRw",
+          "subtitle_summary": "[오늘 영상에서는 시장 변동성인 VIX 급등 시 수익을 얻을 수 있는 트레이드 방법을 소개한다. VIX는 예측 가능한 횡단열차와 같이 안정적인 움직임도 있지만, 급격한 변동성을 가진 롤러코스터와 같이 예측 불가능한 움직임이 주를 이므로, 이를 이해하는 것이 중요하다. VIX가 상승했을 때 얼마나 오래 견딜 수 있는지 분석하여 적절한 트레이드 시점을 파악하는 방법을 알려준다.]",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "Blue chip",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "FAANG",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "IPO",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "SPAC",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "REIT",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "ADR",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "Pre-market",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "After-hours",
+      "is_fixed": false,
+      "views": [
+        3249
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "Trevor Linden Reflects On Canucks Career And Life After Hockey | After Hours",
+          "video_id": "9lzEFRi5yME",
+          "views": 3249,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=9lzEFRi5yME",
+          "subtitle_summary": "[트레버 린 전 CANUCK스 선수 겸업가 겸 여행광은 은퇴 후 20년 동안의 활동적인 삶을 즐기며, 아내와 아들과 함께 빙하를 횡단하는 등 다양한 액티비티를 경험하고 있습니다.]",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "Circuit breaker",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "Margin call",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "Leverage",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "Hedge fund",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "Private equity",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "Venture capital",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "Quantitative easing",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "Tapering",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "Federal Reserve",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "FOMC",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "10-K",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "10-Q",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "Form S-1",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "Earnings report",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "Guidance",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "Dividend yield",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "Stock split",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "Reverse split",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "Buyback",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "Insider trading",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "Block trade",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "Dark pool",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "Market maker",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "Liquidity",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "Bid-ask spread",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "Order book",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "Limit order",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "Market order",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "Stop loss",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "Trailing stop",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "Fill or kill",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "Good till canceled",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "Volatility",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "Beta",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "Alpha",
+      "is_fixed": false,
+      "views": [
+        35268
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "Untitled_12 (‘DAZED KOREA x Miu Miu’ Magazine Shoot & Manifeste Pop-Up).ald1",
+          "video_id": "uz5y1GtzNTI",
+          "views": 35268,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=uz5y1GtzNTI",
+          "subtitle_summary": "[JUNSEO와 GEONWOO는 ‘DAZED KOREA x Miu Miu’ 화보 촬영 현장에서 긴장감과 만족감을 동시에 드러내며, 데뷔를 앞둔 기대감을 표현했습니다. 추운 날씨에도 스타일리시한 의상을 입고 촬영에 임하며, 촬영팀에게 감사 인사를 전하고 새로운 뷰티 아이템을 시도하는 등 활기찬 분위기를 연출했습니다. 데뷔를 앞둔 두 멤버의 멋진 활약을 응원하는 화보 촬영이 성공적으로 마무리되었습니다.]",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "Sharpe ratio",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "Drawdown",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "Portfolio",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "Asset allocation",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "Diversification",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "Rebalancing",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "Index fund",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "Growth stock",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "Value stock",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "Penny stock",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "Blue sky laws",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "Bear market",
+      "is_fixed": false,
+      "views": [
+        19474
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "Stagflation Leading into a Bear Market? Prepare!",
+          "video_id": "UJEK9zj_wG8",
+          "views": 19474,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=UJEK9zj_wG8",
+          "subtitle_summary": "[현재 중동 전쟁 장기화와 물가 급등으로 인해 ‘스택플레션’이라는 새로운 위기가 투자자들을 불안하게 만들고 있으며, 낮은 경제 성장과 높은 물가 상승이 맞물려 증시가 하락하는 상황이 나타나고 있습니다. 과거 2022년 이후에도 유사한 ‘스택플레션’ 우려가 여러 차례 제기되었지만, 이번에는 더욱 심각한 수준으로 나타나면서 투자 심리를 위축시키고 있습니다. 이러한 배경 속에서 증시 하락이 ‘하 bear market’으로 이어질 가능성에 대한 우려가 커지고 있습니다.]",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "Bull market",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "Correction",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "All-time high",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "All-time low",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "Support level",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "Resistance level",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "Breakout",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "Pullback",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "Sell-off",
+      "is_fixed": false,
+      "views": [
+        730
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "How an AI plugin sparked a sell off in financial data stocks — and why it was overdone",
+          "video_id": "xEzIZ_gKRgA",
+          "views": 730,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=xEzIZ_gKRgA",
+          "subtitle_summary": "[AI 플러그인 Claude의 출시와 S&P Global의 분석 부문 약세가 금융 데이터 주가 하락의 주요 원인이었으며, 이는 AI로 인한 경쟁 심화에 대한 우려를 증폭시켰습니다. S&P Global의 실적 발표는 예상보다 긍정적인 성과를 보여주며 시장의 불안감을 해소했지만, AI 경쟁 심화에 대한 투자 심리는 여전히 남아있었습니다. Moody’s의 실적 개선은 시장의 이러한 우려를 일부 완화시키는 요인으로 작용했습니다.]",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "Volume",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "Float",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "Outstanding shares",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "Market cap",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "P/E ratio",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "PEG ratio",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "Book value",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "ROE",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "ROA",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "EBITDA",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "DCF",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "DCF model",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "Technical analysis",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "Fundamental analysis",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "Moving average",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "RSI",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "MACD",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "Candlestick",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "Doji",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "Hammer",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "Gap up",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "Gap down",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "Pre-IPO",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "IT·컴퓨터",
+      "is_fixed": false,
+      "views": [
+        10057
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "어떻게 동시에 중고나라에서 구입한 새 컴퓨터들이 입고가 되었지?!",
+          "video_id": "hb58ImO-41s",
+          "views": 10057,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=hb58ImO-41s",
+          "subtitle_summary": "중고나라에서 구매한 PC 2대 모두 초기 불량으로 입고되어 점검되었으며, 구매 가격 대비 고사양 부품을 사용했음에도 불구하고 장시간 사용 시 발생하는 난수리 현상이 주요 문제점으로 확인되었으며, 구매 영수증 확보의 어려움 등 중고거래 시 주의해야 할 점을 강조했다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "케이뱅크 돈나무",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "맥북 네오",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "아이폰 17e",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "벚꽃 개화시기",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "싸이월드",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "유튜브 화면 어두워짐",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "멜론 이용권 해지",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "아이폰17프로",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "아이폰17e",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "넷플릭스 요금제",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "삼성페이 교통카드",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "아이폰18 출시일",
+      "is_fixed": false,
+      "views": [
+        15964
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "아이폰 18 프로 - 저는 이게 정말 싫어요 하지만",
+          "video_id": "AvifOpjyE_U",
+          "views": 15964,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=AvifOpjyE_U",
+          "subtitle_summary": "아이폰 18 Pro 맥스의 두께가 아이폰 17 Pro 맥스보다 0.05mm 더 두꺼워져 휴대성이 너프될 가능성이 제기되었으며, 과거 루머와 일치하는 소식으로 확인되었고, 카메라 및 배터리 변화로 두께 영향 최소화 시도 중이다. 디스플레이 크기는 유지되는 가운데, 아이폰은 성능 향상에 집중하고 삼성은 휴대성 개선에 집중하는 브랜드 전략이 뚜렷하게 나타나고 있다. 휴대성에 대한 소비자 반응이 주목받고 있으며, 성능과 배터리 비중을 중시하는 소비자들이 증가 추세임을 시사한다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "클로드 ai",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "제미나이 대학생 무료",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "유튜브 프리미엄 가격",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "비즈니스·경제",
+      "is_fixed": false,
+      "views": [
+        2019
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "공장 없어도 대표님? 한국에 유독 화장품 사업자가 많은 '이유'",
+          "video_id": "YSneMzr1Mfo",
+          "views": 2019,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=YSneMzr1Mfo",
+          "subtitle_summary": "한국 화장품 시장은 낮은 진입 장벽과 높은 레버리지 덕분에 신생 브랜드들이 글로벌 시장에서 성공할 수 있는 매력적인 환경을 갖추고 있습니다. ODM, OEM 제조사들의 등장으로 공장 없이 아이디어만으로 화장품 브랜드를 만들 수 있게 되었고, 온라인 유통 채널 확대는 시장 진입을 더욱 용이하게 했습니다. 화장품 산업은 수요 증가에 따라 생산량을 빠르게 확장할 수 있어 글로벌 시장 진출에 유리합니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "청년미래적금",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "영등포자이디그니티",
+      "is_fixed": false,
+      "views": [
+        60
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "무주택 생애최초 부부라면 영등포자이디그니티 이대로 청약하세요!",
+          "video_id": "HDQeCpCH-Uc",
+          "views": 60,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=HDQeCpCH-Uc",
+          "subtitle_summary": "영등포 자이 디그니티는 분양가 8억, 시세 18억으로 서울 로또 청약 기회를 제공하며, 특히 무순위 청약 경쟁률이 높게 나타나고 있습니다. 5호선과 여의도, 광화문 접근성이 뛰어나고 코스트코, 학원 등 생활 인프라가 잘 갖춰져 있어 수요가 몰리고 있습니다. 생애최초 부부의 경우 무순위 청약이 가능하며, 59A, 84B 타입 등 다양한 세대별 조건으로 청약 신청이 가능합니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "청년도약계좌",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "ISA 계좌",
+      "is_fixed": false,
+      "views": [
+        17311
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "🤔 Which brokerage is best to open an ISA? | ISA 10th Anniversary Event | Smart and Frugal Tech | ...",
+          "video_id": "Ctg-Q3haZAE",
+          "views": 17311,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=Ctg-Q3haZAE",
+          "subtitle_summary": "[ISA 출시 10주년을 맞아 주요 증권사들이 다양한 계좌 개설 이벤트를 진행하고 있으며, 자기 자본 기준으로 상위 10개 증권사 모두 참여하고 있어 투자자들에게 유리한 기회를 제공하고 있습니다. 이벤트 참여 시 수수료, 혜택, 상품권 제공 등 주요 항목을 비교 분석하여 자신에게 맞는 증권사를 선택하고, 만기 재매수 시 이벤트 참여를 통해 부적절한 상품을 놓치지 않도록 주의해야 합니다.]",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "영등포 자이 디그니티",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "아이엠바이오로직스",
+      "is_fixed": false,
+      "views": [
+        3708
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "IPOs and other schedules for the 3rd week of March 2026... Kanap... IM Biologics... Listings... T...",
+          "video_id": "L-kTIvtkyVg",
+          "views": 3708,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=L-kTIvtkyVg",
+          "subtitle_summary": "2026년 3월 3주차 주요 IPO 일정으로, 카나프 테라퓨틱스, 한투, IM 바이오로직스, 신한 등이 상장 예정이며, 카나프 테라퓨틱스의 상장 주식 1,300만 주와 시가총액 2,600억 원이 예상되는 가운데, 95%의 기간 의무 보유 락업 해제 및 76.1%의 수혜 측 비율을 보였다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "HBF 관련주",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "2026 청년미래적금",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "원전 관련주",
+      "is_fixed": false,
+      "views": [
+        4344
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "원전·전력 대장주 주가전망) 당장 월요일 상한가 임박! 결국! 이 주식 터진다!! | SMR 가스터빈 전력설비 데이터센터 HVDC 에너지 코스피 코스닥 급등 디에스경제타임즈 광수",
+          "video_id": "bCkJVrSQmus",
+          "views": 4344,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=bCkJVrSQmus",
+          "subtitle_summary": "광수 분석에 따르면, 시장 변동성이 커진 상황에서 지지부진한 종목에 무분별하게 투자하는 행태는 금물이며, 시장 회복 시 함께 상승한 종목에 주목해야 합니다. 특히, 준비된 종목에 대한 투자와 세력의 매집을 통해 시세를 주도하는 종목들을 파악하는 것이 중요하며, 과거 추천 종목들의 사례처럼 단기간에 높은 수익을 얻을 수 있습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "미국환율",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "더샵 프리엘라",
+      "is_fixed": false,
+      "views": [
+        57
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "🟩✅ “지금 위험할 수 있습니다” 서울 더샵 프리엘라 주택청약",
+          "video_id": "PEcP8wgpKQs",
+          "views": 57,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=PEcP8wgpKQs",
+          "subtitle_summary": "[강남 3구 용산 지역 아파트 가격 하락 전환 시 서울 더샵 프리엘라 주택청약이 나왔으나, 강남권 집값 조정과 매물 증가로 청약 여부를 신중하게 결정해야 하며, 보유 계획, 자금 구조, 다른 단지와의 수익 구조 비교 등 세 가지 기준을 충분히 고려해야 함]",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "코스피 야간선물",
+      "is_fixed": false,
+      "views": [
+        663
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "[삼성 주가 전망] [속보] 외국인 야간선물 숏베팅! 월요일 판 뒤집힌다! 대응 필수입니다! 반등 호재 예상 폭등 폭락 #삼성전자 #삼성전자주가 #삼성전자주가전망 #목표가 #손절가",
+          "video_id": "6va_60O8bH4",
+          "views": 663,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=6va_60O8bH4",
+          "subtitle_summary": "삼성전자 주가가 금요일 야간선물 만기 영향으로 급락했으나, 시장 변동성 확대 및 반도체 수급 상황을 고려할 때 다음 주에는 삼성전자 중심으로 수급이 재편될 가능성이 높으며, 엔비디아 실사관찰 및 AMD CEO 방문 등 긍정적 이벤트가 예상됨에 따라 대응이 필요하다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "신생아 특례대출",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "Lock-up period",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "Underwriter",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "Quiet period",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "Syndicate",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "Greenshoe option",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "Prospectus",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "S-3 filing",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "Shelf registration",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "오픈AI 로봇",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "OpenAI 로봇",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "OpenAI 로봇 개발",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "OpenAI 인공지능 로봇",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "OpenAI 휴머노이드",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "OpenAI 로봇 뉴스",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "OpenAI 로봇 최신",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "OpenAI 로봇 시장",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "OpenAI 로봇 기술",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "OpenAI 로봇 동향",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "테슬라 로봇",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "Tesla 로봇",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "Tesla Optimus",
+      "is_fixed": false,
+      "views": [
+        5524
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "Why Digital Optimus Is a BREAKTHROUGH For Tesla (and the World)",
+          "video_id": "QmMio2xtgLY",
+          "views": 5524,
+          "upload_date": "2026-03-15",
+          "url": "https://www.youtube.com/watch?v=QmMio2xtgLY",
+          "subtitle_summary": "[엘론 머스크가 2040년 이전 출시될 디지털 옵티무스라는 새로운 유형의 로봇을 발표하며 큰 파장을 일으키고 있다. 디지털 옵티무스는 실제 옵티무스보다 훨씬 앞서 출시될 예정이며, 이는 인간의 육체 노동을 대체하는 혁신적인 제품으로 평가된다. 특히 백색 넥사슬러 직업 시장의 규모와 연봉 수준을 고려할 때, 디지털 옵티무스가 더 큰 시장 잠재력을 가지고 있을 것으로 예상된다.]",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "테슬라 옵티머스",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "테슬라 휴머노이드",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "테슬라 로봇 개발",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "테슬라 로봇 뉴스",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "테슬라 로봇 최신",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "테슬라 로봇 시장",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "테슬라 로봇 기술",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "테슬라 로봇 동향",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    }
+  ]
+}

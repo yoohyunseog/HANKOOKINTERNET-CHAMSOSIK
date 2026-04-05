@@ -46,6 +46,7 @@ if not defined MONITOR_INTERVAL set MONITOR_INTERVAL=0
 
 :: 자막 분석 활성화 (기본: 활성화, 비활성화하려면 set ANALYZE_SUBTITLES=0)
 if not defined ANALYZE_SUBTITLES set ANALYZE_SUBTITLES=1
+if not defined BLOCK_KOREAN_PERSON_NAMES set BLOCK_KOREAN_PERSON_NAMES=1
 
 :: 분석 소스 (subtitles|google|bing|naver|zum|youtube|auto)
 if not defined ANALYSIS_SOURCE set ANALYSIS_SOURCE=youtube
@@ -88,6 +89,7 @@ echo - Keywords Source: monitor_keywords.txt (all lines + fixed keyword)
 echo - Keywords Count Option: %KEYWORD_COUNT% (fallback only)
 echo - Video Limit: %VIDEO_LIMIT%/keyword
 echo - Subtitle Analysis: %ANALYZE_SUBTITLES%
+echo - Block Korean Person Names: %BLOCK_KOREAN_PERSON_NAMES%
 echo - Analysis Source: %ANALYSIS_SOURCE%
 if "%ANALYSIS_SOURCE%"=="google" (
     if %SHOW_SEARCH_WINDOW%==0 (

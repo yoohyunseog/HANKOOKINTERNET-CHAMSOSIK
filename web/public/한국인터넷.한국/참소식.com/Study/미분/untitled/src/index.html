@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미분과 적분 애니메이션 수업</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="page">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Study / 미분 / 애니메이션</p>
+          <h1>미분과 적분을 눈으로 이해하는 수업</h1>
+          <p class="hero-text">
+            수업에서 설명한 흐름대로
+            <strong>기울기 → 접선 → 도함수 → 부정적분 → 정적분</strong>
+            을 한 화면에서 따라갈 수 있게 만들었습니다.
+          </p>
+        </div>
+
+        <div class="hero-card">
+          <div class="scene-header">
+            <span class="scene-step" id="sceneStep">1 / 5</span>
+            <h2 id="sceneTitle">직선의 기울기</h2>
+          </div>
+          <p id="sceneDescription" class="scene-description"></p>
+          <div class="scene-buttons" id="sceneButtons"></div>
+        </div>
+      </section>
+
+      <section class="workspace">
+        <div class="controls">
+          <label class="control-block">
+            <span>장면 선택</span>
+            <input id="sceneRange" type="range" min="0" max="4" step="1" value="0" />
+          </label>
+
+          <label class="control-block">
+            <span>x 위치 이동</span>
+            <input id="xRange" type="range" min="-2.5" max="2.5" step="0.01" value="1" />
+          </label>
+
+          <div class="readout-grid">
+            <div class="readout">
+              <span class="readout-label">x</span>
+              <strong id="xValue">1.00</strong>
+            </div>
+            <div class="readout">
+              <span class="readout-label">f(x)</span>
+              <strong id="fxValue">1.00</strong>
+            </div>
+            <div class="readout">
+              <span class="readout-label">f'(x)</span>
+              <strong id="dfValue">2.00</strong>
+            </div>
+            <div class="readout">
+              <span class="readout-label">적분 넓이</span>
+              <strong id="areaValue">0.33</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="visual-panel">
+          <svg id="graph" viewBox="0 0 900 560" aria-label="미분 적분 그래프"></svg>
+        </div>
+
+        <aside class="lesson-panel">
+          <div class="lesson-card">
+            <h3>지금 보는 핵심</h3>
+            <ul id="lessonPoints" class="lesson-points"></ul>
+          </div>
+
+          <div class="lesson-card math-card">
+            <h3>현재 식</h3>
+            <div id="formulaBox" class="formula-box"></div>
+          </div>
+        </aside>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,509 @@
+{
+  "timestamp": "2026-04-04T19:50:24.730907",
+  "model": "mistral:latest",
+  "keyword_count": 3,
+  "analyze_subtitles": true,
+  "analysis_source": "youtube",
+  "keywords": [
+    {
+      "keyword": "오늘의 주요 뉴스",
+      "is_fixed": true,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "이란 미군 전투기 피격",
+      "is_fixed": false,
+      "views": [
+        46272,
+        11222
+      ],
+      "video_count": 2,
+      "videos": [
+        {
+          "title": "[속보] 이란 \"중부상공서 미 스텔스 전투기 F-35 격추\" 주장…중동 전쟁 악화일로/2026년 4월 3일(금)/KBS",
+          "video_id": "2HKslxNjn40",
+          "views": 46272,
+          "upload_date": "2026-04-03",
+          "url": "https://www.youtube.com/watch?v=2HKslxNjn40",
+          "subtitle_summary": "1. 이ран은 미국의 F-35 5세대 스텔스 전투기를 자국 공중에서 두 번째로 격추한 것으로 주장했습니다.\n2. 이란은 미국 데이터 센터와 사우디아에 있는 미군 기재 레이더를 공격했고, 이스라엘 본토와 유르단, 바레인 미국 기지까지 타격했습니다.\n3. 이란과의 전쟁은 20일을 넘겼으며, 이스라엘은 이번 전쟁으로 이란이 핵과 미사일 제조 능력을 잃었다고 주장했습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "이란 \"중부 상공서 미 스텔스 전투기 F-35 격추\" 주장 / KBS  2026.04.03.",
+          "video_id": "6K4t7cF-xIg",
+          "views": 11222,
+          "upload_date": "2026-04-03",
+          "url": "https://www.youtube.com/watch?v=6K4t7cF-xIg",
+          "subtitle_summary": "1. 이란이 두 번째로 F-35 스텔스 전투기를 자국 공중에서 격추했다고 주장하였습니다.\n2. 이란의 반관영 메흐르 통신은 해당 사건에 대한 보도와, 피격된 F-35의 잔해로 보이는 사진들을 공개했습니다.\n3. 미국 중부사령부의 공식적인 입장은 아직 나오지 않았습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 2.9373,
+      "min": 1.1605,
+      "nb_score": 2.5311,
+      "avg_views": 28747.0,
+      "total_views": 57494
+    },
+    {
+      "keyword": "이란 호르무즈 해협 상황",
+      "is_fixed": false,
+      "views": [
+        81729,
+        16545
+      ],
+      "video_count": 2,
+      "videos": [
+        {
+          "title": "[속보] 트럼프 \"미국, 조만간 봉쇄 호르무즈 해협 개방 가능\" [이슈PLAY] / JTBC News",
+          "video_id": "kZ0QBbTUflI",
+          "views": 81729,
+          "upload_date": "2026-04-04",
+          "url": "https://www.youtube.com/watch?v=kZ0QBbTUflI",
+          "subtitle_summary": "1. 이ран은 전쟁이 끝난 후에도 호르무즈 해협을 통과하려는 선박들을 계속 감시할 예정입니다. 이란과 오만은 해협을 공동으로 감시하기로 했으며, 안전 보장을 내세우면서 사실상 통제권을 연구하고 있습니다.\n2. 국가들이 해업을 열기 위해 군사력까지 동원하는 방안을 추진했다는 소식이 있었으며, 영국 외무장관의 주제로 열린 40여국 화상회의에서 공동 대응의 의지를 확인했습니다.\n3. 트럼프 미국 대통령은 호르무즈 사태의 해결책으로 미국산 원유 세일즈에 나왔으며, 이를 통한 조정이 유력한 공급망 다변화 선택지로 거론되고 있습니다. 하지만 현재 전체 수입량의 17%인 미국산 비중을 높이려면 많은 비용이 따라붙습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[속보] \"답답하면 직접 해\" 트럼프 발언에 호르무즈 '무력 방어'?/이란 \"핵보다 호르무즈\"…중동전쟁 뇌관 됐다\"/2026년 4월 3일(금)/KBS",
+          "video_id": "QCe3axnLuk0",
+          "views": 16545,
+          "upload_date": "2026-04-04",
+          "url": "https://www.youtube.com/watch?v=QCe3axnLuk0",
+          "subtitle_summary": "1. 이란과 오만은 5만만(호르무즈 해협 관문)을 공유하고 있으며, 이란이 선박들을 안전하게 5만만을 통행할 수 있도록 서비스를 제공하겠다는 의미로 호르무즈 해협 규칙을 새로 만들고 있습니다.\n2. 이란에 대한 적대국은 통행이 불가능합니다. 미국은 호르무주 문제에 관여하지 않겠다는 입장을 취하고 있으며, 불확실성이 커지고 있습니다.\n3. 이란이 미국 기업들의 데이터 센터를 타격한 상황에서, 미국 빅테크 기업과 관련 단지에는 경계가 강화되고 있습니다. 또한, 40여개 나라의 외교 장관들이 화상으로 열린 회의를 통해 후르무즈 문제를 해결하기 위해 노력하고 있습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 2.8877,
+      "min": 1.4328,
+      "nb_score": 2.0155,
+      "avg_views": 49137.0,
+      "total_views": 98274
+    },
+    {
+      "keyword": "전지현 마크롱 영부인",
+      "is_fixed": false,
+      "views": [
+        54955,
+        422434,
+        9017
+      ],
+      "video_count": 3,
+      "videos": [
+        {
+          "title": "From Lee Jae-yong and Lee Boo-jin to Jun Ji-hyun and Felix… All Out at Macron’s Luncheon [On-site...",
+          "video_id": "2jwNrQYloSA",
+          "views": 54955,
+          "upload_date": "2026-04-03",
+          "url": "https://www.youtube.com/watch?v=2jwNrQYloSA",
+          "subtitle_summary": "1. Lee Jae-yong, Lee Boo-jin, Jun Ji-hyun, Felix, and others attended a luncheon with French President Macron.\n2. The event marked the beginning of a significant diplomatic moment for South Korea.\n3. The attendees expressed gratitude towards France and promised to foster more cultural exchange, acknowledging the influence of Victor Hugo's works.",
+          "db_saved": true
+        },
+        {
+          "title": "\"에마뉘엘 마크롱, 눈 감아ㅠㅠ\" 브리지트 여사, 스트레이키즈 보자마자 눈에서 하트 뿅뿅 [현장쏙]  / 연합뉴스TV(YonhapnewsTV)",
+          "video_id": "V4MSvaFDW-Y",
+          "views": 422434,
+          "upload_date": "2026-04-03",
+          "url": "https://www.youtube.com/watch?v=V4MSvaFDW-Y",
+          "subtitle_summary": "1. 현재, 대한민국의 대통령 내부에서 입장이 있습니다. (내용)\n2. 관심을 가지고 주시를 바랍니다. (요청)\n3. [음악] [박수] [음압] [박수] (반응)",
+          "db_saved": true
+        },
+        {
+          "title": "이재용·이부진부터 전지현·필릭스까지..마크롱 대통령 국빈 오찬 총출동 [26. 4. 3.]",
+          "video_id": "krhN_ufmLcs",
+          "views": 9017,
+          "upload_date": "2026-04-03",
+          "url": "https://www.youtube.com/watch?v=krhN_ufmLcs",
+          "subtitle_summary": "1. 이재명 대통령은 이스라엘 마크롱 프스공화국 대통령 내분을 위한 회담을 시작하며, 양국 국가연주와 환영사를 선보였습니다.\n2. 이재명 대통령은 프랑스와의 영원한 우정을 기원하며, 프랑스는 대한민국의 오래된 친구이자 동료입니다. 프랑스가 625 전쟁에서 3천명 이상의 병사를 파병해 대한민국의 자유와 민주주의를 위해 함께 싸웠습니다.\n3. 프랑스의 기술력으로 대한민국의 원전 1호기가 건설되었고, 이를 바탕으로 빠른 경제 성장을 견인할 수 있었습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 1.1399,
+      "min": 2.0476,
+      "nb_score": 0.5567,
+      "avg_views": 162135.33,
+      "total_views": 486406
+    },
+    {
+      "keyword": "토론회",
+      "is_fixed": false,
+      "views": [
+        8110,
+        627,
+        1307
+      ],
+      "video_count": 3,
+      "videos": [
+        {
+          "title": "[LIVE] 더불어민주당 서울시장 후보자 2차 경선 합동토론회/2026년 4월 3일(금)/KBS",
+          "video_id": "AJas3DgdpNg",
+          "views": 8110,
+          "upload_date": "2026-04-03",
+          "url": "https://www.youtube.com/watch?v=AJas3DgdpNg",
+          "subtitle_summary": "1. 더불어민주당, 중앙당, 선관위가 주최한 서울시장 후보자 합동토론회는 KBS에서 진행되고 있습니다. 이번 토론은 대한민국의 수도 서울의 시정을 책임지는 시장의 어깨에 무거운 문제들, 예를 들어 집값, 물가, 교통 등이 있습니다.\n2. 더불어민주당의 서울시장 후보로서 적합한 사람은 누구인지 토론에서 결정하려는 것으로, 오늘 토론이 여러분의 선택과 결정에 도움이 될 것이라고 합니다.\n3. 토론은 각 후보가 자신이 더불어민주당 서울시장 후보가 돼야 하는 이유를 발표한 뒤, 공통 질문과 부동산과 민생 경제를 주제로 하는 주도권 토론이 이어집니다. 후보자들의 마무리 발언으로 끝나고 실시간으로 함께할 수 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "지지자들도 '대실망'? 추미애 tv토론회 논란...도대체 어땠길래?[흑백여의도]",
+          "video_id": "MPzfXGDXrAg",
+          "views": 627,
+          "upload_date": "2026-04-04",
+          "url": "https://www.youtube.com/watch?v=MPzfXGDXrAg",
+          "subtitle_summary": "1. 민주당은 2차 토론회가 끝났고, 춘미의원에 대한 비판적인 기사들이 나오고 있습니다.\n2. 지지자들 중심으로 추미의 의원에 대한 지지가 있어도, 경기도 현안과 주요 정책적 현상에 대해서는 분명하게 답변이 필요합니다.\n3. 김동현 지사의 대답은 뜬금없고 답답했다는 평가가 있으나, 지지자들의 결선이 가능성이 있기 때문에 희망을 갖고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "더불어민주당 주관 강릉시장 예비후보 경선 토론회 LIVE",
+          "video_id": "J5jbAKEMiFM",
+          "views": 1307,
+          "upload_date": "2026-04-04",
+          "url": "https://www.youtube.com/watch?v=J5jbAKEMiFM",
+          "subtitle_summary": "더불어민주당이 강릉시장 예비후보 경선 토론회를 진행하고 있습니다. 이 토론회는 공직 선거법을 준수하며 LG 헬로비전 지역 채널과 유튜브 헬로 TV 뉴스 채널로도 동시에 생중계됩니다. 토론의 진행 순서는 후보자들이 지지를 호소하는 발언, 공통 질문과 주도권 토론, 또 한 번의 공통 질문과 주도권 토론, 마지막 공통 질문과 마무리 발언으로 진행됩니다. 이번 토론회에서는 김중남 후보와 김한근 후보가 참여하고 있습니다. 김중남은 지금 강릉을 바꿀 수 있는 절로회 기회를 가지고 새로운 사람들이 강릉을 이끌어갈 수 있는 시대를 열어야 한다고 말했습니다. 김한근은 우리 강릉은 무너진 행정과 불안한 미래 앞에서 있으며, 부패한 독점 권력을 청산해야 할 과제도 절박하다고 말했습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 1.1353,
+      "min": 2.2932,
+      "nb_score": 0.495,
+      "avg_views": 3348.0,
+      "total_views": 10044
+    },
+    {
+      "keyword": "윤석열 탄핵 1년",
+      "is_fixed": false,
+      "views": [
+        2012,
+        7751,
+        1844,
+        1685,
+        778,
+        104,
+        2157
+      ],
+      "video_count": 7,
+      "videos": [
+        {
+          "title": "[Replay] Democratic Party of Korea, Public Briefing on the 1st Anniversary of Yoon Suk-yeol's Imp...",
+          "video_id": "G6V5irrbqi8",
+          "views": 2012,
+          "upload_date": "2026-04-04",
+          "url": "https://www.youtube.com/watch?v=G6V5irrbqi8",
+          "subtitle_summary": "1. 대한민국 1년 만에 변화의 영상을 시청합니다. 2022년 4월 4일, 대통령 윤성열이 탄핵되어 민주주의로 물리쳐지는 사건으로 인해 민주주의 새로운 역사가 기록되었습니다. 2. 정치적 신을 위해 대한민국은 중제공지사청 조직 및 운영에 관한 건이 가결되었으며, 국가 재을 마중물로 삼아 경제 사순환을 계산하고 있습니다. 3. 정치적 신인 대통령 윤성열의 파면 선고 후, 국회법사위원장은 헌법재판소에 감사했고 민주주의 힘으로 윤성열을 물리쳐준 국민들에게 감사 말씀을 드렸습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "윤석열 탄핵 선고 1년 더불어민주당 대국민 보고회 생중계",
+          "video_id": "n_As_nL9UFs",
+          "views": 7751,
+          "upload_date": "2026-04-04",
+          "url": "https://www.youtube.com/watch?v=n_As_nL9UFs",
+          "subtitle_summary": "1. 이 영상은 윤석열 탄핵 선고 1년 후 대한민국의 변화와 의미를 담은 영상입니다.\n2. 정청내 당대표, 탄핵소추단 의원들, 탄핵소추 대리인단 변호사들이 참석하여 진행됩니다.\n3. 윤석열 파면 후 1년간 국가적 손실보다 헌법수의 이익이 크다는 주장이 있으며, 민주주의의 새로운 역사를 썼음을 선언합니다.",
+          "db_saved": true
+        },
+        {
+          "title": "One Year Since Yoon Suk-yeol's Impeachment... Rallies by Progressive and Conservative Groups Acro...",
+          "video_id": "-zHBm-yqcGM",
+          "views": 1844,
+          "upload_date": "2026-04-04",
+          "url": "https://www.youtube.com/watch?v=-zHBm-yqcGM",
+          "subtitle_summary": "1년 만에 윤석열 대통령의 탄핵 후, 오늘 서울 도시내 곳곳에서 대규모 음악 행사가 열립니다. 보수 단체인 신자유연대와 자유대학은 서울역 광장에서 집회를 열고 종로고 헌법 재판소 근처까지 행진하며, 3시 반부터 음악 행사를 열 예정입니다. 진보 단체인 비상동은 오후 4시부터 헌법 재판소 근처에서 수만 명 규모의 음악 행사를 신고했습니다. 또한, 광화문에는 부활절 음악 행사가 예고되어 있어 세종대로 광화문 교차료와 세종 교차로 구간 차량 통행이 전면 통제됩니다.",
+          "db_saved": true
+        },
+        {
+          "title": "One Year Since Yoon's Impeachment, Rallies Held Across Seoul... Traffic Congestion Expected / SBS",
+          "video_id": "22leBAz5hMk",
+          "views": 1685,
+          "upload_date": "2026-04-03",
+          "url": "https://www.youtube.com/watch?v=22leBAz5hMk",
+          "subtitle_summary": "1. 오늘, 윤석열 전 대통령의 탄핵 1년 만인 도시 곳곳에서 진보와 보수 성향 시민단체들이 집회를 열 예정입니다. 비상행동은 안국역 일대, 자유대학은 서울역 광장에서 약 1만 명과 5000명의 규모로 집회를 벌이고 있습니다. 한국교회총연합은 오늘 하루 세종대로 인근에서 부활절 행사를 벌입니다. 경찰은 도심 곳곳의 집회로 인한 교통 정체가 예상되며, 지하철 이용을 당부했습니다.\n2. 어제 필리핀에서 마약왕 박왕열이 검찰에 넘겨졌습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "One Year Since Yoon Suk-yeol's Impeachment Verdict | A Nation Built on a Revolution of Light, I W...",
+          "video_id": "sS88WYLc_tU",
+          "views": 778,
+          "upload_date": "2026-04-04",
+          "url": "https://www.youtube.com/watch?v=sS88WYLc_tU",
+          "subtitle_summary": "1. 비상 개엄 발표. (Emergency declaration announced.)\nYoon Suk-yeol's impeachment verdict has been decided. (Music)\nWe ask for the dismissal of the accused, Yoon Seok-yul, in the name of democracy and the constitution. (Music)\nThe impeached president, Yoon Sung-yun, is dismissed. (Music)\n2. Grateful for the wise and historic decision of the Constitutional Court that defeated the enemy of the constitution. (Music)\nThank you sincerely to the citizens who have turned the enemy of democracy into a democratic citizen. (Music)\nWe declare with confidence that the new Republic of Korea has fully returned to the international community, becoming a beacon for world citizens. (Music)\n3. Stock market (KOSPI) surpassed 5000 points for the first time this morning. (Music)\nWe will strive to achieve co-prosperity between large and small businesses. (Music)\nWe will revive economic circulation by using national finances as a medium. (Music)\nWe will intensify efforts in investigations related to the prosecution and legal justice. (Music)\nThe bill on the organization and operation of the special investigation team has been passed. (Music)",
+          "db_saved": true
+        },
+        {
+          "title": "It Has Already Been a Year Since Yoon Suk-yeol's Impeachment Verdict… Jeong Cheong-rae Makes Poin...",
+          "video_id": "HdIuv4YED_4",
+          "views": 104,
+          "upload_date": "2026-04-04",
+          "url": "https://www.youtube.com/watch?v=HdIuv4YED_4",
+          "subtitle_summary": "1. 지난 1년 동안, 민주주의 새 역사를 썼으며, 2023년 4월 4일 11시 22분, 대한민국은 대통령 윤석열을 파면함으로써 헌법수의 이익이 압도적으로 크다는 것을 인정했습니다.\n2. 피청구인 윤석열은 주권자인 국민에 대한 명백한 배신이었고, 신뢰가 완전히 무너졌습니다.\n3. 국회의원들과 군인들의 합작품으로 개엄을 막았고, 민주주의와 헌법수를 지키는 데 노력했던 국회 탄핵 소추위원 등이 윤석열의 파면을 이끌어내었습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[자막] 당대표, 윤석열 탄핵 1주년 대국민 보고회 \"무관용 원칙으로 내란 잔재 티끌까지 밟아버릴 것\"",
+          "video_id": "e1Dss9yYMcM",
+          "views": 2157,
+          "upload_date": "2026-04-04",
+          "url": "https://www.youtube.com/watch?v=e1Dss9yYMcM",
+          "subtitle_summary": "1. 당사는 윤석열 탄핵이 1년이나 지난 것으로, 내란은 여전히 진행 중이며 반민주 세력에 의해 계속 유지되고 있다는 점을 강조합니다.\n2. 당사는 국민의 힘이 윤어개인을 외치고 있으며, 내란 옹호 세력에 대해서는 무관용의 원칙으로 엄중히 처벌해야 한다고 주장합니다.\n3. 당사는 내란 청산을 위해 3대 특검(내란 특검, 김건희 특검, 최병 특검)과 2차 종합 특검법을 통과시켰으며, 123 비상기업 내란의 주범 공범 동조 세력들을 확실하게 단하고 제도적인 방지책을 완비할 것이다는 선언을 한다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0.5526,
+      "min": 1.3843,
+      "nb_score": 0.3992,
+      "avg_views": 2333.0,
+      "total_views": 16331
+    },
+    {
+      "keyword": "삼성전자 주식 전망",
+      "is_fixed": false,
+      "views": [
+        2022,
+        2565,
+        1645,
+        4457,
+        4258,
+        1548,
+        2127,
+        1810,
+        3711
+      ],
+      "video_count": 9,
+      "videos": [
+        {
+          "title": "[삼성전자 주가전망] 💥결국 나올게나왔네요. 방금 발표했습니다. 필수시청 #삼성전자주가전망 #삼성전자주가 #삼성전자",
+          "video_id": "AAIBBrTDCRw",
+          "views": 2022,
+          "upload_date": "2026-04-04",
+          "url": "https://www.youtube.com/watch?v=AAIBBrTDCRw",
+          "subtitle_summary": "1. 삼성전자의 주가 전망이 발표되었습니다. 주말 사이에 중요한 포인트들이 있으며, 원자력과 해상 폭력 분야에서 협업이 강하게 수급될 가능성이 높다는 내용이 있었습니다.\n2. 마크롱(프랑스의 대통령)이 한국을 방문했고, 한국과 프랑스 간의 여러 분야에서 선명하게 협력할 계획이 있었습니다.\n3. 유가는 최근 120원 정도까지 올랐으나, 현재 하방으로 갈 수밖에 없다고 생각되며, 이를 위해서 5만을 통해서 유가를 추출하는 방법이 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[삼성전자 주가 전망]*긴급*🔥美전투기 격추 파장.. 삼성전자 월요일 '이 가격'까지 밀리나? 외인들의 숨겨진 설계 #삼성전자 주주님들필수시청!",
+          "video_id": "EvQa_qP9ncA",
+          "views": 2565,
+          "upload_date": "2026-04-04",
+          "url": "https://www.youtube.com/watch?v=EvQa_qP9ncA",
+          "subtitle_summary": "1. 삼성전자의 월요일 시장 변동에 대해 논의하며, 지난금요일에 외국인들이 매수 전환을 했다는 점이 중요합니다.\n2. 현재 삼성전자의 주가는 1510원으로 올라갔고, 영업 이익이 40조원까지 예상되어 있습니다.\n3. 의견이 분분할 수밖에 없는 중요한 변곡점 구간에 있으며, 월요일 시장의 변동성은 커질 것으로 예상됩니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[삼성전자 주가 전망][긴급] \" 실적발표 +옵션만기 \" 대폭등 준비하세요 !! 외국인 트리거 발동 ! 포지션 변화 옵니다! 꼭 필수시청. #삼성전자주가전망  #삼성전자",
+          "video_id": "mJE79gVFgVM",
+          "views": 1645,
+          "upload_date": "2026-04-04",
+          "url": "https://www.youtube.com/watch?v=mJE79gVFgVM",
+          "subtitle_summary": "1. 삼성전자 주가 전망에 대한 긴급 영상입니다. 4월 4일 현재, 삼성전자 주가는 흔들리고 있지만 크게 무너지는 것은 아닙니다. 하지만 누군가가 계속 주가를 흔들어 놓고 있으며, 다음 주에 이런 모습들이 보일 수 있을 것으로 예상됩니다.\n2. 외국인들이 대차 물량에서 1800만 주를 빌려왔습니다. 이는 공매도의 공포로 시장에서 받아들여졌으며, 4월 1일에 많은 물량의 매도가 나왔습니다.\n3. 그러나 기관과 금투는 거의 1,300만 주에다하는 엄청난 매수세를 보여 주었으며, 4월 1일 날 주가는 거의 12% 상승했습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[Samsung Electronics Stock Price Outlook] It exploded again early Saturday morning! US Trump decl...",
+          "video_id": "_3onWR_d-Os",
+          "views": 4457,
+          "upload_date": "2026-04-03",
+          "url": "https://www.youtube.com/watch?v=_3onWR_d-Os",
+          "subtitle_summary": "1. 분석가는 삼성전자 주식 시장 상황에 대해 긴급한 정보를 전달하기 위해 주말 새벽에도 영상을 촬영했습니다.\n2. 지난 날 외국인과 기관의 매수가 들어와 강하게 상승했으나, 추격 매수는 금액 제한이 있고 리스크가 높아서 피해야 합니다.\n3. 분석가는 지금은 최적의 시기가 아니라고 생각하며, 미국, 이ран 전쟁이 종전을 향해 가고 있음을 예측합니다. 따라서 다음주부터 추세를 변화할 것으로 보입니다. 삼성전자의 차트에서는 지금 하락하는 추세를 돌려 올리고, 올라가는 시점에 매수하면 괜찮은 상황이며, 주말 동안 리스크를 관리할 필요가 없다고 추천합니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[삼성전자 주가 전망]트럼프리스크끝!실적터집니다!이상수급발생!외인매수본격화!이번주,XX기회입니다! #삼성전자 #삼성전자주가 #삼성전자주가전망",
+          "video_id": "5LD0J_IMfN0",
+          "views": 4258,
+          "upload_date": "2026-04-04",
+          "url": "https://www.youtube.com/watch?v=5LD0J_IMfN0",
+          "subtitle_summary": "1. 트럼프 문제로 인해 삼성전자 주가 두 번 빠졌으나, 이제 전쟁 문제가 해결되었고 호르문조 해업도 풀렸다.\n2. 미국 시장은 부활하여 상승했고, 일본 증시도 1.2% 상승했다.\n3. 삼성전자의 실적이 좋을 것으로 예상되며, HM은 SK에서 조금 뒤지시면 지금 따라 잡고 있고 비싼 H4를 먼저 공급하고 있다.",
+          "db_saved": true
+        },
+        {
+          "title": "[삼성전자 주가 전망] \"삼성전자 4월 23일까지 절대 팔지 마라\" 지금 파는 개미들 통곡할겁니다!! #삼성전자주가전망 #삼성전자목표가 #삼성전자",
+          "video_id": "AE4PHXG9Noo",
+          "views": 1548,
+          "upload_date": "2026-04-04",
+          "url": "https://www.youtube.com/watch?v=AE4PHXG9Noo",
+          "subtitle_summary": "1. 삼성전자의 상황이 곤란하며, 지금 판매하면 7% 감소할 수 있습니다. 20만 원 위에서 물리신 분들은 고점 22만8,500원에서 18.7% 빠졌을 때 손절할 것이며, 18만 원대에서 들고 계신 분들도 어제의 반등으로 인한 희생을 고민해야 합니다. 3. 아직 못한 분들은 올라가는 것을 보며 늦었다고 생각하지만, 이제 삼성전자의 주가가 최저치일 수 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "삼성전자주가전망 4월 4일 긴급특보 호재공시 발표 진짜 기회입니다. 준비하세요 #삼성전자 #삼성전자주가전망 #삼성전자주가",
+          "video_id": "eXKtMiXxwy8",
+          "views": 2127,
+          "upload_date": "2026-04-04",
+          "url": "https://www.youtube.com/watch?v=eXKtMiXxwy8",
+          "subtitle_summary": "1. 4월 10일 삼성전자가 발표할 예정인 호재공시로 인해 삼성전자의 주가가 더 올라갈 수 있다는 분석이 제시되었습니다.\n2. 미국 증시와 같은 시장에서는 전쟁으로 인한 불안감으로 인해 하락했다가 반등했다가 보여주고 있지만, 이러한 불안감을 이용할 수 있는 기회로 본다는 것이 강조되었습니다.\n3. 트럼프의 계속적인 종전에 대한 언급은 미국 시민들이 지속적으로 석유가격이 오르기 때문에 비난하고 있다는 것으로 나타났고, 삼성전자도 안전한 상승을 보여줄 수 있다는 것이 강조되었습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[삼성전자 주가전망] 단독! 긴급속보! 이란 파격적인 협상안 제안! 7일 실적 발표! 50조 잭팟! 30만원 돌파 시동! 재료 확인!",
+          "video_id": "OfC8KV823-Q",
+          "views": 1810,
+          "upload_date": "2026-04-04",
+          "url": "https://www.youtube.com/watch?v=OfC8KV823-Q",
+          "subtitle_summary": "1. 분석 대상은 삼성전자입니다. 금일 종가는 18만 5,800원으로 4% 상승했고, 20일선을 목표로 하며 60일선에서 하회를 했지만 지지받는 흐름이 나타나 본격적인 상승이 시작되고 있습니다.\n2. 전쟁 이슈로 인해 삼성전자가 하락했으나, 이란의 온공개혁파 핵심인물인 모하마드 자바드 전 외무 장관이 평화 협상안을 제안함으로써 불확실성이 제거되고 있어 삼성전자의 주가는 올라갈 수 있습니다.\n3. 1분기 실적은 4월 7일 화요일에 발표될 예정이며, 대략적으로 36조에서 45조가 나올 것으로 전망되고 있습니다. 역대 최고치를 두 배 초과하는 점유율을 기대할 수 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[삼성전자 주가전망] ⚠️이재용, 이런 선택 할줄은 몰랐다 반도체 2차 폭등 간다!! | 강산 #삼성전자 #삼성전자주가 #삼성전자전망",
+          "video_id": "mEg4X1L4OWU",
+          "views": 3711,
+          "upload_date": "2026-04-04",
+          "url": "https://www.youtube.com/watch?v=mEg4X1L4OWU",
+          "subtitle_summary": "1. Samsung Electronics 주가 전망에서, 최근 악재가 나오고 있지만 군 기지 내에 AI 데이터 센터를 사용할 계획이 있어서 수요가 증가하고 있다.\n2. GPU, PCB 등의 요소가 AI 데이터 센터에 필수적으로 필요하기 때문에 그 수요는 계속해서 증가할 것이다.\n3. 현재 Samsung Electronics의 지분을 가장 많이 보유한 것은 외인과 투신이며, 최근 중동전쟁과 터보컨트 등의 문제로 인해 외인들이 매도하고 있다. 하지만 차익을 실현한 금액은 다시 Samsung Electronics에 투자할 것이다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0.9434,
+      "min": 2.7889,
+      "nb_score": 0.3383,
+      "avg_views": 2682.56,
+      "total_views": 24143
+    },
+    {
+      "keyword": "k리그1 최신 경기 결과",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "허영만 신작 연재",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "치지직 스트리머 소식",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "미국 철강 관세 발표",
+      "is_fixed": false,
+      "views": [
+        55011
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "U.S. Imposes 25% Flat Tariff on Finished Steel Products Including Washing Machines (April 3, 2026...",
+          "video_id": "5OqVMaUfqn0",
+          "views": 55011,
+          "upload_date": "2026-04-03",
+          "url": "https://www.youtube.com/watch?v=5OqVMaUfqn0",
+          "subtitle_summary": "1. U.S. President Donald Trump signed a bill imposing a 25% tariff on steel products with high aluminum and manganese content, effective from April 6th. This action may affect Korean companies exporting appliances such as washing machines and refrigerators to the U.S.\n2. The White House stated that they are closely monitoring the situation through press briefings and will assess the impact on domestic industry.\n3. The tariff is expected to have an impact on Korean companies exporting appliances to the U.S., particularly those specializing in washing machines and refrigerators.",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "스페이스X 기업가치 목표",
+      "is_fixed": false,
+      "views": [
+        67734
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "스페이스X 상장 전 테슬라 주식 팔아야 할까? 버티면 이렇게 됩니다",
+          "video_id": "CeknuZxbxF8",
+          "views": 67734,
+          "upload_date": "2026-04-03",
+          "url": "https://www.youtube.com/watch?v=CeknuZxbxF8",
+          "subtitle_summary": "1. SpaceX, 로켓 회사이다. 그 중심은 스타링크이며, 인터넷을 하늘에 깔아 전 세계를 연결하는 서비스를 제공한다.\n2. SpaceX가 2026년 2월 AI 회사 XAI를 전격 인수했다. 이로써 로켓, 인터넷, AI까지 제공할 계획이다.\n3. SpaceX는 SEC에 상장 서류를 제출했으나, 매출, 부채, 리스크는 아직 공개되지 않았다. 이유는 변론을 피하기 위해 IPO 직전까지 최대한 안 보여주고 싶어서이며, 스타링크 매출 구조를 일부러 비공개로 먼저 넣었다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "한국교육과정평가원 시험 일정",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "부활절 퍼레이드 2024",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "한프랑스 수교 140주년",
+      "is_fixed": false,
+      "views": [
+        74
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "[스팟Live] *풀영상* '한-프랑스 수교 140주년' AI·양자 등 전략기술 동맹 강화...한국-프랑스 양해각서 서약식 | 26.04.03",
+          "video_id": "80n9fuKtTew",
+          "views": 74,
+          "upload_date": "2026-04-03",
+          "url": "https://www.youtube.com/watch?v=80n9fuKtTew",
+          "subtitle_summary": "1. 대한민국과 프랑스 정부는 양해 각서식을 시작하며, 양측은 협력 의향서를 서명합니다. 이 중에서 특히 AI, 양자 등 전략기술 분야에서 동맹을 강화하는 것으로 보입니다.\n2. 양측은 각자의 부담 분담하여 산업, 에너지, 디지털 주권 구간, 핵심물 및 금속 분야에서 협력하는 것으로 보입니다.\n3. 양측은 핵심 자원(민감 자원) 분야에서도 협력하기로 합의하며, 이를 위한 협력 의향서를 서명합니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "강남구청장 경선 소송",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    }
+  ]
+}

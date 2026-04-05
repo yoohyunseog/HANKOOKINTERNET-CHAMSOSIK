@@ -1,0 +1,104 @@
+{
+  "title": "이클립스 센츄어리 D.P 브리핑",
+  "model": "deepseek-v3.1:671b-cloud",
+  "source_feed": "https://xn--9l4b4xi9r.com/feed.xml",
+  "updated_at": "2026-04-05T03:37:40.993512+00:00",
+  "feed_last_build_date": "Sun, 05 Apr 2026 03:37:13 GMT",
+  "item_count": 12,
+  "headline": "중동 군사 긴장 격화와 삼성 상속세 납부 완료 등 복합적 이슈 발생",
+  "summary": "미국과 이란의 미군 조종사 수색 경쟁으로 군사적 긴장이 고조되고 있습니다. 중동 전쟁 확대 우려가 지역 경제 성장 잠재력을 위협하며 빈곤층 증가 가능성이 제기됩니다. 국내에서는 삼성 상속세 납부 완료로 유족 부담 감소와 주담대 규제 강화가 동시에 진행됩니다.",
+  "signals": [
+    "미-이란 군사 긴장 격화",
+    "중동 전쟁 확대 우려",
+    "삼성 상속세 납부 완료",
+    "주담대 규제 강화"
+  ],
+  "risks": [
+    "군사衝突 가능성",
+    "중동 경제 위기",
+    "주택시장 불확실성",
+    "글로벌 유가 변동성"
+  ],
+  "market_impact": [
+    "코스피: 방산주 일시 상승 가능",
+    "코스닥: 변동성 증가 전망",
+    "비트코인: 안전자산 수요 증가",
+    "한국 증시 심리: 신중한 관세 우세"
+  ],
+  "outlook": "중동 긴장 지속과 국내 규제 변화가 시장 변동성을 높일 전망",
+  "quality_note": "중동 군사 이슈와 국내 경제 뉴스가 혼재되어 피드의 초점이 다소 분산됨",
+  "weighted_signal": {
+    "score": 68,
+    "upper_bound": 32,
+    "lower_bound": 36,
+    "grade": "주의",
+    "upper_factors": [
+      "삼성 경영 안정화 기대 +15",
+      "K콘텐츠 글로벌 영향력 확대 +10",
+      "문화유산 관심 증가 +7"
+    ],
+    "lower_factors": [
+      "중동 군사 긴장 심화 -18",
+      "주담대 규제 강화 -9",
+      "중동 경제 성장 저하 -9"
+    ]
+  },
+  "items": [
+    {
+      "title": "[국내 기업인 체제 하 삼성의 최대 12조원 상속세 납부가 완료됨에 따라 유족들의 세금 부담이 크게 완화되는 동시에 삼성의 사업 전략에 변화가 예상된다. 관련 파장이 확산되고 있습니다.]",
+      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [국내 기업인 체제 하 삼성의 최대 12조원 상속세 납부가 완료됨에 따라 유족들의 세금 부담이 크게 완화되는 동시에 삼성의 사업 전략에 변화가 예상된다. 관련 파장이 확산되고 있습니다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
+      "category": "일반",
+      "pubDate": "Sun, 05 Apr 2026 03:36:32 GMT",
+      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B%EA%B5%AD%EB%82%B4%20%EA%B8%B0%EC%97%85%EC%9D%B8%20%EC%B2%B4%EC%A0%9C%20%ED%95%98%20%EC%82%BC%EC%84%B1%EC%9D%98%20%EC%B5%9C%EB%8C%80%2012%EC%A1%B0%EC%9B%90%20%EC%83%81%EC%86%8D%EC%84%B8%20%EB%82%A9%EB%B6%80%EA%B0%80%20%EC%99%84%EB%A3%8C%EB%90%A8%EC%97%90%20%EB%94%B0%EB%9D%BC%20%EC%9C%A0%EC%A1%B1%EB%93%A4%EC%9D%98%20%EC%84%B8%EA%B8%88%20%EB%B6%80%EB%8B%B4%EC%9D%B4%20%ED%81%AC%EA%B2%8C%20%EC%99%84%ED%99%94%EB%90%98%EB%8A%94%20%EB%8F%99%EC%8B%9C%EC%97%90%20%EC%82%BC%EC%84%B1%EC%9D%98%20%EC%82%AC%EC%97%85%20%EC%A0%84%EB%9E%B5%EC%97%90%20%EB%B3%80%ED%99%94%EA%B0%80%20%EC%98%88%EC%83%81%EB%90%9C%EB%8B%A4.%20%EA%B4%80%EB%A0%A8%20%ED%8C%8C%EC%9E%A5%EC%9D%B4%20%ED%99%95%EC%82%B0%EB%90%98%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%5D&selected_max=43587.6573602095&selected_min=0.0007178592"
+    },
+    {
+      "title": "[수도권 및 규제 지역 다주택자 주담대 대출 만기 연장이 원칙적으로 금지되어 약 2조 7천억 원 규모의 대출에 직접적인 영향을 미칠 전망이다 관련 파장이 확산되고 있습니다.]",
+      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [수도권 및 규제 지역 다주택자 주담대 대출 만기 연장이 원칙적으로 금지되어 약 2조 7천억 원 규모의 대출에 직접적인 영향을 미칠 전망이다 관련 파장이 확산되고 있습니다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
+      "category": "일반",
+      "pubDate": "Sun, 05 Apr 2026 03:35:02 GMT",
+      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B%EC%88%98%EB%8F%84%EA%B6%8C%20%EB%B0%8F%20%EA%B7%9C%EC%A0%9C%20%EC%A7%80%EC%97%AD%20%EB%8B%A4%EC%A3%BC%ED%83%9D%EC%9E%90%20%EC%A3%BC%EB%8B%B4%EB%8C%80%20%EB%8C%80%EC%B6%9C%20%EB%A7%8C%EA%B8%B0%20%EC%97%B0%EC%9E%A5%EC%9D%B4%20%EC%9B%90%EC%B9%99%EC%A0%81%EC%9C%BC%EB%A1%9C%20%EA%B8%88%EC%A7%80%EB%90%98%EC%96%B4%20%EC%95%BD%202%EC%A1%B0%207%EC%B2%9C%EC%96%B5%20%EC%9B%90%20%EA%B7%9C%EB%AA%A8%EC%9D%98%20%EB%8C%80%EC%B6%9C%EC%97%90%20%EC%A7%81%EC%A0%91%EC%A0%81%EC%9D%B8%20%EC%98%81%ED%96%A5%EC%9D%84%20%EB%AF%B8%EC%B9%A0%20%EC%A0%84%EB%A7%9D%EC%9D%B4%EB%8B%A4%20%EA%B4%80%EB%A0%A8%20%ED%8C%8C%EC%9E%A5%EC%9D%B4%20%ED%99%95%EC%82%B0%EB%90%98%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%5D&selected_max=46766.5669169912&selected_min=0.0007702713"
+    },
+    {
+      "title": "[중동 전쟁의 심각한 위기로 인해 아랍 지역 경제가 1년간의 성장 잠재력을 잃고 막대한 손실이 발생하며 수많은 사람들이 빈곤층으로 전락할 수 있다는 우려가 제기되었다.]",
+      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [중동 전쟁의 심각한 위기로 인해 아랍 지역 경제가 1년간의 성장 잠재력을 잃고 막대한 손실이 발생하며 수많은 사람들이 빈곤층으로 전락할 수 있다는 우려가 제기되었다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
+      "category": "일반",
+      "pubDate": "Sun, 05 Apr 2026 03:32:51 GMT",
+      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B%EC%A4%91%EB%8F%99%20%EC%A0%84%EC%9F%81%EC%9D%98%20%EC%8B%AC%EA%B0%81%ED%95%9C%20%EC%9C%84%EA%B8%B0%EB%A1%9C%20%EC%9D%B8%ED%95%B4%20%EC%95%84%EB%9E%8D%20%EC%A7%80%EC%97%AD%20%EA%B2%BD%EC%A0%9C%EA%B0%80%201%EB%85%84%EA%B0%84%EC%9D%98%20%EC%84%B1%EC%9E%A5%20%EC%9E%A0%EC%9E%AC%EB%A0%A5%EC%9D%84%20%EC%9E%83%EA%B3%A0%20%EB%A7%89%EB%8C%80%ED%95%9C%20%EC%86%90%EC%8B%A4%EC%9D%B4%20%EB%B0%9C%EC%83%9D%ED%95%98%EB%A9%B0%20%EC%88%98%EB%A7%8E%EC%9D%80%20%EC%82%AC%EB%9E%8C%EB%93%A4%EC%9D%B4%20%EB%B9%88%EA%B3%A4%EC%B8%B5%EC%9C%BC%EB%A1%9C%20%EC%A0%84%EB%9D%BD%ED%95%A0%20%EC%88%98%20%EC%9E%88%EB%8B%A4%EB%8A%94%20%EC%9A%B0%EB%A0%A4%EA%B0%80%20%EC%A0%9C%EA%B8%B0%EB%90%98%EC%97%88%EB%8B%A4.%5D&selected_max=48074.0263670268&selected_min=0.0007984737"
+    },
+    {
+      "title": "[이란이 미군 실종 조종사 수색에 적극적으로 나서면서 미국과 이란 간의 수색 경쟁이 격화되고, 호르무제해 인근에서 추가적인 미군 전투기 격추 사고가 발생하여 긴장감이 고조되고 있습니다.]",
+      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [이란이 미군 실종 조종사 수색에 적극적으로 나서면서 미국과 이란 간의 수색 경쟁이 격화되고, 호르무제해 인근에서 추가적인 미군 전투기 격추 사고가 발생하여 긴장감이 고조되고 있습니다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
+      "category": "일반",
+      "pubDate": "Sun, 05 Apr 2026 03:30:23 GMT",
+      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B%EC%9D%B4%EB%9E%80%EC%9D%B4%20%EB%AF%B8%EA%B5%B0%20%EC%8B%A4%EC%A2%85%20%EC%A1%B0%EC%A2%85%EC%82%AC%20%EC%88%98%EC%83%89%EC%97%90%20%EC%A0%81%EA%B7%B9%EC%A0%81%EC%9C%BC%EB%A1%9C%20%EB%82%98%EC%84%9C%EB%A9%B4%EC%84%9C%20%EB%AF%B8%EA%B5%AD%EA%B3%BC%20%EC%9D%B4%EB%9E%80%20%EA%B0%84%EC%9D%98%20%EC%88%98%EC%83%89%20%EA%B2%BD%EC%9F%81%EC%9D%B4%20%EA%B2%A9%ED%99%94%EB%90%98%EA%B3%A0%2C%20%ED%98%B8%EB%A5%B4%EB%AC%B4%EC%A0%9C%ED%95%B4%20%EC%9D%B8%EA%B7%BC%EC%97%90%EC%84%9C%20%EC%B6%94%EA%B0%80%EC%A0%81%EC%9D%B8%20%EB%AF%B8%EA%B5%B0%20%EC%A0%84%ED%88%AC%EA%B8%B0%20%EA%B2%A9%EC%B6%94%20%EC%82%AC%EA%B3%A0%EA%B0%80%20%EB%B0%9C%EC%83%9D%ED%95%98%EC%97%AC%20%EA%B8%B4%EC%9E%A5%EA%B0%90%EC%9D%B4%20%EA%B3%A0%EC%A1%B0%EB%90%98%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%5D&selected_max=43586.8489523492&selected_min=0.0007178724"
+    },
+    {
+      "title": "[미국과 이란 간의 미군 실종 수색 작전이 계속되는 가운데, 조종사의 신병 확보를 둘러싼 양국의 강경한 입장으로 인해 국제적인 긴장이 고조되고 있습니다. 관련 파장이 확산되고 있습니다.]",
+      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [미국과 이란 간의 미군 실종 수색 작전이 계속되는 가운데, 조종사의 신병 확보를 둘러싼 양국의 강경한 입장으로 인해 국제적인 긴장이 고조되고 있습니다. 관련 파장이 확산되고 있습니다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
+      "category": "일반",
+      "pubDate": "Sun, 05 Apr 2026 03:29:13 GMT",
+      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B%EB%AF%B8%EA%B5%AD%EA%B3%BC%20%EC%9D%B4%EB%9E%80%20%EA%B0%84%EC%9D%98%20%EB%AF%B8%EA%B5%B0%20%EC%8B%A4%EC%A2%85%20%EC%88%98%EC%83%89%20%EC%9E%91%EC%A0%84%EC%9D%B4%20%EA%B3%84%EC%86%8D%EB%90%98%EB%8A%94%20%EA%B0%80%EC%9A%B4%EB%8D%B0%2C%20%EC%A1%B0%EC%A2%85%EC%82%AC%EC%9D%98%20%EC%8B%A0%EB%B3%91%20%ED%99%95%EB%B3%B4%EB%A5%BC%20%EB%91%98%EB%9F%AC%EC%8B%BC%20%EC%96%91%EA%B5%AD%EC%9D%98%20%EA%B0%95%EA%B2%BD%ED%95%9C%20%EC%9E%85%EC%9E%A5%EC%9C%BC%EB%A1%9C%20%EC%9D%B8%ED%95%B4%20%EA%B5%AD%EC%A0%9C%EC%A0%81%EC%9D%B8%20%EA%B8%B4%EC%9E%A5%EC%9D%B4%20%EA%B3%A0%EC%A1%B0%EB%90%98%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%20%EA%B4%80%EB%A0%A8%20%ED%8C%8C%EC%9E%A5%EC%9D%B4%20%ED%99%95%EC%82%B0%EB%90%98%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%5D&selected_max=43587.6573602095&selected_min=0.0007178592"
+    },
+    {
+      "title": "[미군 조종사 실종 사건으로 인해 이란과 미국이 실종 조종사 수색을 위한 긴장된 작전 수행 중인 가운데, 조종사 생포 및 구조를 위한 노력과 함께 국제적인 문제 해결의 중요성이 부각되고 있다]",
+      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [미군 조종사 실종 사건으로 인해 이란과 미국이 실종 조종사 수색을 위한 긴장된 작전 수행 중인 가운데, 조종사 생포 및 구조를 위한 노력과 함께 국제적인 문제 해결의 중요성이 부각되고 있다]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
+      "category": "일반",
+      "pubDate": "Sun, 05 Apr 2026 03:28:14 GMT",
+      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B%EB%AF%B8%EA%B5%B0%20%EC%A1%B0%EC%A2%85%EC%82%AC%20%EC%8B%A4%EC%A2%85%20%EC%82%AC%EA%B1%B4%EC%9C%BC%EB%A1%9C%20%EC%9D%B8%ED%95%B4%20%EC%9D%B4%EB%9E%80%EA%B3%BC%20%EB%AF%B8%EA%B5%AD%EC%9D%B4%20%EC%8B%A4%EC%A2%85%20%EC%A1%B0%EC%A2%85%EC%82%AC%20%EC%88%98%EC%83%89%EC%9D%84%20%EC%9C%84%ED%95%9C%20%EA%B8%B4%EC%9E%A5%EB%90%9C%20%EC%9E%91%EC%A0%84%20%EC%88%98%ED%96%89%20%EC%A4%91%EC%9D%B8%20%EA%B0%80%EC%9A%B4%EB%8D%B0%2C%20%EC%A1%B0%EC%A2%85%EC%82%AC%20%EC%83%9D%ED%8F%AC%20%EB%B0%8F%20%EA%B5%AC%EC%A1%B0%EB%A5%BC%20%EC%9C%84%ED%95%9C%20%EB%85%B8%EB%A0%A5%EA%B3%BC%20%ED%95%A8%EA%BB%98%20%EA%B5%AD%EC%A0%9C%EC%A0%81%EC%9D%B8%20%EB%AC%B8%EC%A0%9C%20%ED%95%B4%EA%B2%B0%EC%9D%98%20%EC%A4%91%EC%9A%94%EC%84%B1%EC%9D%B4%20%EB%B6%80%EA%B0%81%EB%90%98%EA%B3%A0%20%EC%9E%88%EB%8B%A4%5D&selected_max=42193.5712825822&selected_min=0.0007001592"
+    },
+    {
+      "title": "[이란의 수색 작전 중 미군 헬기에 대한 총격으로 인해 긴장 고조되고, 실종 조종사의 신병 확보를 위한 양국 경쟁이 더욱 치열해지는 상황입니다 관련 파장이 확산되고 있습니다.]",
+      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [이란의 수색 작전 중 미군 헬기에 대한 총격으로 인해 긴장 고조되고, 실종 조종사의 신병 확보를 위한 양국 경쟁이 더욱 치열해지는 상황입니다 관련 파장이 확산되고 있습니다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
+      "category": "일반",
+      "pubDate": "Sun, 05 Apr 2026 03:27:09 GMT",
+      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B%EC%9D%B4%EB%9E%80%EC%9D%98%20%EC%88%98%EC%83%89%20%EC%9E%91%EC%A0%84%20%EC%A4%91%20%EB%AF%B8%EA%B5%B0%20%ED%97%AC%EA%B8%B0%EC%97%90%20%EB%8C%80%ED%95%9C%20%EC%B4%9D%EA%B2%A9%EC%9C%BC%EB%A1%9C%20%EC%9D%B8%ED%95%B4%20%EA%B8%B4%EC%9E%A5%20%EA%B3%A0%EC%A1%B0%EB%90%98%EA%B3%A0%2C%20%EC%8B%A4%EC%A2%85%20%EC%A1%B0%EC%A2%85%EC%82%AC%EC%9D%98%20%EC%8B%A0%EB%B3%91%20%ED%99%95%EB%B3%B4%EB%A5%BC%20%EC%9C%84%ED%95%9C%20%EC%96%91%EA%B5%AD%20%EA%B2%BD%EC%9F%81%EC%9D%B4%20%EB%8D%94%EC%9A%B1%20%EC%B9%98%EC%97%B4%ED%95%B4%EC%A7%80%EB%8A%94%20%EC%83%81%ED%99%A9%EC%9E%85%EB%8B%88%EB%8B%A4%20%EA%B4%80%EB%A0%A8%20%ED%8C%8C%EC%9E%A5%EC%9D%B4%20%ED%99%95%EC%82%B0%EB%90%98%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%5D&selected_max=46301.5093554357&selected_min=0.0007620383"
+    },
+    {
+      "title": "[이란의 적극적인 신병 확보 시도로 인해 미군 조종사 실종 수색 작전이 난항을 겪고 있으며, 이는 미국과 이란 간의 긴장을 고조시키는 요인으로 작용하고 있다. 관련 파장이 확산되고 있습니다.]",
+      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [이란의 적극적인 신병 확보 시도로 인해 미군 조종사 실종 수색 작전이 난항을 겪고 있으며, 이는 미국과 이란 간의 긴장을 고조시키는 요인으로 작용하고 있다. 관련 파장이 확산되고 있습니다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
+      "category": "일반",
+      "pubDate": "Sun, 05 Apr 2026 03:26:03 GMT",
+      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B%EC%9D%B4%EB%9E%80%EC%9D%98%20%EC%A0%81%EA%B7%B9%EC%A0%81%EC%9D%B8%20%EC%8B%A0%EB%B3%91%20%ED%99%95%EB%B3%B4%20%EC%8B%9C%EB%8F%84%EB%A1%9C%20%EC%9D%B8%ED%95%B4%20%EB%AF%B8%EA%B5%B0%20%EC%A1%B0%EC%A2%85%EC%82%AC%20%EC%8B%A4%EC%A2%85%20%EC%88%98%EC%83%89%20%EC%9E%91%EC%A0%84%EC%9D%B4%20%EB%82%9C%ED%95%AD%EC%9D%84%20%EA%B2%AA%EA%B3%A0%20%EC%9E%88%EC%9C%BC%EB%A9%B0%2C%20%EC%9D%B4%EB%8A%94%20%EB%AF%B8%EA%B5%AD%EA%B3%BC%20%EC%9D%B4%EB%9E%80%20%EA%B0%84%EC%9D%98%20%EA%B8%B4%EC%9E%A5%EC%9D%84%20%EA%B3%A0%EC%A1%B0%EC%8B%9C%ED%82%A4%EB%8A%94%20%EC%9A%94%EC%9D%B8%EC%9C%BC%EB%A1%9C%20%EC%9E%91%EC%9A%A9%ED%95%98%EA%B3%A0%20%EC%9E%88%EB%8B%A4.%20%EA%B4%80%EB%A0%A8%20%ED%8C%8C%EC%9E%A5%EC%9D%B4%20%ED%99%95%EC%82%B0%EB%90%98%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%5D&selected_max=42353.8182108136&selected_min=0.0006975185"
+    }
+  ]
+}

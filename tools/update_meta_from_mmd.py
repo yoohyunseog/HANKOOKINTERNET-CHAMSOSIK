@@ -8,6 +8,9 @@ import re
 from pathlib import Path
 
 
+ROOT_DIR = Path(__file__).resolve().parent.parent
+
+
 def extract_labels(mmd_text: str):
     labels = re.findall(r"\[(.*?)\]", mmd_text, flags=re.DOTALL)
     cleaned = []
@@ -136,6 +139,11 @@ def main():
 
     mmd_path = Path(args.mmd)
     html_path = Path(args.html)
+
+    if not mmd_path.is_absolute():
+        mmd_path = ROOT_DIR / mmd_path
+    if not html_path.is_absolute():
+        html_path = ROOT_DIR / html_path
 
     if not mmd_path.exists():
         raise FileNotFoundError(f"MMD 파일을 찾을 수 없습니다: {mmd_path}")

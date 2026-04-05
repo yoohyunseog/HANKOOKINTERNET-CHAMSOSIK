@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>참소식.com | 실시간 이슈 맵 RSS - Website Diagram</title>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+    <style>
+        body {
+            font-family: 'Pretendard', 'Malgun Gothic', sans-serif;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .container {
+            background: white;
+            border-radius: 16px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+        h1 {
+            color: #2d3748;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+            text-align: center;
+        }
+        .meta-info {
+            text-align: center;
+            color: #718096;
+            margin-bottom: 30px;
+            font-size: 0.95em;
+        }
+        .url-info {
+            background: #f7fafc;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            border-left: 4px solid #667eea;
+        }
+        .url-info strong {
+            color: #4a5568;
+        }
+        .url-info a {
+            color: #667eea;
+            text-decoration: none;
+            word-break: break-all;
+        }
+        .url-info a:hover {
+            text-decoration: underline;
+        }
+        .diagram-container {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 12px;
+            margin-top: 20px;
+            border: 1px solid #e2e8f0;
+            overflow-x: auto;
+        }
+        .mermaid {
+            display: flex;
+            justify-content: center;
+            min-height: 400px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #e2e8f0;
+            color: #a0aec0;
+            font-size: 0.9em;
+        }
+        .ai-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            margin-bottom: 20px;
+        }
+        .controls {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .btn {
+            background: #667eea;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1em;
+            margin: 5px;
+            transition: all 0.3s ease;
+        }
+        .btn:hover {
+            background: #5568d3;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>참소식.com | 실시간 이슈 맵 RSS</h1>
+        <div class="meta-info">
+            <div class="ai-badge">Auto generated with Ollama (gpt-oss:120b-cloud)</div>
+            <div>Generated at: 2026-04-03 21:01:03</div>
+        </div>
+
+        <div class="url-info">
+            <strong>Source URL:</strong>
+            <a href="https://xn--9l4b4xi9r.com/feed.xml" target="_blank" rel="noopener">https://xn--9l4b4xi9r.com/feed.xml</a>
+        </div>
+
+        <div class="diagram-container">
+            <div class="mermaid">
+flowchart TD
+    A[KOSPI: 5,583.25]
+    B[KOSPI_설명: KOSPI는 약세 추세이며 달러 강세와 AI 영향 등으로 변동성 확대]
+    C[KOSDAQ: 1,148.40]
+    D[KOSDAQ_설명: KOSDAQ은 유가 급등·달러 강세 등 복합 요인으로 하락세]
+    E[KOSPI_KRW: 5,583]
+    F[KOSPI_KRW_설명: 원/달러 1,490.90 적용 시 KOSPI 환산값]
+    G[KOSDAQ_KRW: 1,148]
+    H[KOSDAQ_KRW_설명: 원/달러 1,490.90 적용 시 KOSDAQ 환산값]
+    I[S&P500: 69,903.53]
+    J[S&P500_설명: 미국 연준 정책·실질 성장 영향]
+    K[NASDAQ: 69,903.53]
+    L[NASDAQ_설명: 기술주 중심·글로벌 금리·달러 흐름]
+    M[DOWJONES: 69,903.53]
+    N[DOWJONES_설명: 대기업 실적·미국 경기 전망]
+    O[Bitcoin: $69,859.53]
+    P[Bitcoin_설명: 암호화폐 변동성·글로벌 리스크]
+    Q[Ethereum: $2,051.01]
+    R[Ethereum_설명: 스마트컨트랙트 플랫폼·시장 동향]
+    S[USD/KRW: 1,490.90]
+    T[USD/KRW_설명: 원/달러 환율]
+    U[시장동향_설명: 전반적인 약세와 변동성 확대]
+    V[국제·정치_설명: 트럼프 발언·국제 유가 급등·글로벌 위험 회피]
+
+    A -- [중요] --> B
+    C -- [중요] --> D
+    E -- [중요] --> F
+    G -- [중요] --> H
+    I -- [중요] --> J
+    K -- [중요] --> L
+    M -- [중요] --> N
+    O -- [중요] --> P
+    Q -- [중요] --> R
+    S -- [중요] --> T
+
+    B -- [보통] --> U
+    D -- [보통] --> U
+    U -- [보통] --> V
+
+    A -- [보통] --> E
+    C -- [보통] --> G
+    S -- [보통] --> E
+    S -- [보통] --> G
+    I -- [보통] --> S
+    K -- [보통] --> S
+    M -- [보통] --> S
+
+    P -- [보통] --> V
+    R -- [보통] --> V
+            </div>
+        </div>
+
+        <div class="controls">
+            <button class="btn" onclick="window.print()">Print</button>
+            <button class="btn" onclick="location.reload()">Reload</button>
+        </div>
+
+        <div class="footer">
+            <p>This diagram was generated automatically from website content.</p>
+            <p>Rendered with Mermaid.</p>
+        </div>
+    </div>
+
+    <script>
+        mermaid.initialize({
+            startOnLoad: true,
+            theme: "default",
+            flowchart: {
+                useMaxWidth: true,
+                htmlLabels: true,
+                curve: "basis"
+            }
+        });
+    </script>
+</body>
+</html>

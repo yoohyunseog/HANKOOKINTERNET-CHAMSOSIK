@@ -1,0 +1,289 @@
+:root {
+  --paper: rgba(255, 252, 246, 0.94);
+  --ink: #182026;
+  --muted: #5f6c72;
+  --accent: #c7663a;
+  --accent-2: #1f6f78;
+  --accent-3: #dfa43a;
+  --shadow: 0 22px 60px rgba(60, 42, 20, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Pretendard", "Noto Sans KR", "Apple SD Gothic Neo", sans-serif;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at top left, rgba(223, 164, 58, 0.22), transparent 26%),
+    radial-gradient(circle at bottom right, rgba(31, 111, 120, 0.18), transparent 24%),
+    linear-gradient(180deg, #fbf6ea 0%, #f0e6d3 100%);
+}
+
+.page {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 32px 24px 48px;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1.35fr 1fr;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.hero-copy,
+.hero-card,
+.controls,
+.visual-panel,
+.lesson-card {
+  background: var(--paper);
+  border: 1px solid rgba(212, 198, 173, 0.9);
+  border-radius: 28px;
+  box-shadow: var(--shadow);
+}
+
+.hero-copy {
+  padding: 34px;
+}
+
+.eyebrow {
+  margin: 0 0 10px;
+  color: var(--accent);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(2.2rem, 4vw, 4.3rem);
+  line-height: 1.02;
+  letter-spacing: -0.04em;
+}
+
+.hero-text,
+.scene-description,
+.lesson-points {
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.hero-text {
+  margin: 18px 0 0;
+  font-size: 1.05rem;
+}
+
+.hero-card,
+.controls,
+.lesson-card {
+  padding: 22px 28px;
+}
+
+.scene-step {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: rgba(199, 102, 58, 0.14);
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+
+.scene-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.scene-button {
+  border: 0;
+  border-radius: 999px;
+  padding: 10px 16px;
+  background: #efe4d0;
+  color: var(--ink);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.scene-button.active,
+.scene-button:hover {
+  background: var(--accent);
+  color: #fff9f1;
+}
+
+.workspace {
+  display: grid;
+  grid-template-columns: 320px minmax(0, 1fr) 320px;
+  gap: 24px;
+  align-items: start;
+}
+
+.controls,
+.lesson-panel {
+  position: sticky;
+  top: 20px;
+}
+
+.control-block {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 18px;
+  font-weight: 700;
+}
+
+input[type="range"] {
+  width: 100%;
+  accent-color: var(--accent);
+}
+
+.readout-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.readout {
+  padding: 14px;
+  border-radius: 20px;
+  background: #f8f1e2;
+  border: 1px solid #eadcc4;
+}
+
+.readout-label {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin-bottom: 8px;
+}
+
+.visual-panel {
+  padding: 16px;
+  overflow: hidden;
+}
+
+#graph {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.lesson-panel {
+  display: grid;
+  gap: 16px;
+}
+
+.lesson-points {
+  padding-left: 18px;
+}
+
+.formula-box {
+  margin-top: 14px;
+  padding: 18px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #1c262c 0%, #24353d 100%);
+  color: #eff8fa;
+  font-family: "JetBrains Mono", "Consolas", monospace;
+  line-height: 1.8;
+  min-height: 140px;
+  white-space: pre-line;
+}
+
+.grid-line {
+  stroke: rgba(24, 32, 38, 0.09);
+  stroke-width: 1;
+}
+
+.axis {
+  stroke: rgba(24, 32, 38, 0.45);
+  stroke-width: 2.2;
+}
+
+.curve {
+  fill: none;
+  stroke: var(--accent-2);
+  stroke-width: 4;
+}
+
+.secant {
+  fill: none;
+  stroke: var(--accent-3);
+  stroke-width: 3;
+  stroke-dasharray: 10 10;
+}
+
+.tangent {
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 3.5;
+}
+
+.area-fill {
+  fill: rgba(199, 102, 58, 0.2);
+  stroke: rgba(199, 102, 58, 0.45);
+  stroke-width: 2;
+}
+
+.point-main {
+  fill: var(--accent);
+}
+
+.point-helper {
+  fill: var(--accent-3);
+}
+
+.helper-line {
+  stroke: rgba(24, 32, 38, 0.25);
+  stroke-width: 2;
+  stroke-dasharray: 6 8;
+}
+
+.label {
+  font-size: 15px;
+  fill: var(--ink);
+  font-weight: 700;
+}
+
+.label-soft {
+  fill: var(--muted);
+  font-weight: 600;
+}
+
+.fade {
+  opacity: 0;
+  transform: translateY(6px);
+  animation: fadeUp 0.5s ease forwards;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 1180px) {
+  .workspace {
+    grid-template-columns: 1fr;
+  }
+
+  .controls,
+  .lesson-panel {
+    position: static;
+  }
+}
+
+@media (max-width: 820px) {
+  .page {
+    padding: 18px 14px 28px;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+  }
+}

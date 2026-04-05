@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>참소식.com × 이클립스 센츄어리 D.P | 조회수 상승 캘린더</title>
+  <meta
+    name="description"
+    content="참소식.com × 이클립스 센츄어리 D.P의 사이트 조회수 상승을 위한 4주 콘텐츠 캘린더와 운영 루틴입니다."
+  >
+  <style>
+    :root {
+      --bg: #f6efe5;
+      --paper: rgba(255, 251, 246, 0.92);
+      --paper-strong: #fffdfa;
+      --ink: #1f1a16;
+      --muted: #6b6257;
+      --line: rgba(72, 53, 34, 0.14);
+      --brand: #c8632c;
+      --brand-soft: #f7d8c6;
+      --green: #2d6c52;
+      --green-soft: #dcefe6;
+      --blue: #46639d;
+      --blue-soft: #dbe5fb;
+      --gold: #8c6b1f;
+      --gold-soft: #f5ebc6;
+      --shadow: 0 24px 80px rgba(58, 40, 24, 0.12);
+      --radius-xl: 30px;
+      --radius-lg: 22px;
+      --radius-md: 18px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: var(--ink);
+      font-family: "Noto Sans KR", "Segoe UI", sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(255, 255, 255, 0.9), transparent 28%),
+        radial-gradient(circle at bottom right, rgba(200, 99, 44, 0.14), transparent 24%),
+        linear-gradient(135deg, #efe3d2 0%, #f7f3ec 50%, #eadfce 100%);
+    }
+
+    .page {
+      width: min(1320px, calc(100% - 28px));
+      margin: 0 auto;
+      padding: 24px 0 48px;
+    }
+
+    .hero,
+    .panel,
+    .week-card,
+    .day-card {
+      border: 1px solid var(--line);
+      border-radius: var(--radius-xl);
+      background: var(--paper);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(18px);
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      padding: 34px;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      right: -70px;
+      top: -40px;
+      width: 240px;
+      height: 240px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(200, 99, 44, 0.16), transparent 68%);
+      pointer-events: none;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 14px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.74);
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 18px 0 14px;
+      font-size: clamp(34px, 5vw, 66px);
+      line-height: 0.94;
+      letter-spacing: -0.06em;
+    }
+
+    .hero-copy,
+    .body-copy,
+    .metric-note,
+    .day-copy,
+    .small-copy {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.75;
+    }
+
+    .hero-grid,
+    .stats,
+    .focus-grid,
+    .routine-grid,
+    .week-grid,
+    .day-grid,
+    .guide-grid {
+      display: grid;
+      gap: 18px;
+    }
+
+    .hero-grid {
+      grid-template-columns: minmax(0, 1.15fr) minmax(300px, 0.85fr);
+      margin-top: 26px;
+      align-items: start;
+    }
+
+    .stats {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      margin-top: 22px;
+    }
+
+    .metric {
+      padding: 18px;
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.72);
+    }
+
+    .metric strong {
+      display: block;
+      font-size: 30px;
+      letter-spacing: -0.05em;
+    }
+
+    .metric span {
+      display: block;
+      margin-top: 8px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .panel {
+      padding: 24px;
+      margin-top: 20px;
+    }
+
+    .section-head {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 12px;
+      align-items: end;
+      margin-bottom: 18px;
+    }
+
+    h2,
+    h3,
+    h4 {
+      margin: 0;
+      letter-spacing: -0.04em;
+    }
+
+    h2 {
+      font-size: clamp(26px, 3vw, 36px);
+    }
+
+    h3 {
+      font-size: 22px;
+    }
+
+    h4 {
+      font-size: 16px;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 9px 12px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.72);
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .focus-grid,
+    .routine-grid,
+    .guide-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .focus-card,
+    .routine-card,
+    .guide-card {
+      padding: 18px;
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.74);
+    }
+
+    .focus-card.brand { background: linear-gradient(180deg, rgba(247, 216, 198, 0.7), rgba(255, 255, 255, 0.82)); }
+    .focus-card.green { background: linear-gradient(180deg, rgba(220, 239, 230, 0.78), rgba(255, 255, 255, 0.82)); }
+    .focus-card.blue { background: linear-gradient(180deg, rgba(219, 229, 251, 0.8), rgba(255, 255, 255, 0.82)); }
+    .guide-card.gold { background: linear-gradient(180deg, rgba(245, 235, 198, 0.78), rgba(255, 255, 255, 0.84)); }
+
+    .tag {
+      display: inline-flex;
+      padding: 7px 10px;
+      border-radius: 999px;
+      margin-bottom: 10px;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--muted);
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.72);
+    }
+
+    ul {
+      margin: 14px 0 0;
+      padding-left: 18px;
+      color: var(--muted);
+      line-height: 1.7;
+    }
+
+    li + li {
+      margin-top: 6px;
+    }
+
+    .week-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .week-card {
+      padding: 20px;
+    }
+
+    .week-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+      margin-bottom: 14px;
+    }
+
+    .week-pill {
+      display: inline-flex;
+      padding: 7px 11px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--muted);
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.76);
+    }
+
+    .day-grid {
+      grid-template-columns: repeat(7, minmax(0, 1fr));
+    }
+
+    .day-card {
+      padding: 14px;
+      min-height: 224px;
+      border-radius: var(--radius-lg);
+      background: rgba(255, 255, 255, 0.78);
+    }
+
+    .day-card.brand { border-color: rgba(200, 99, 44, 0.24); }
+    .day-card.green { border-color: rgba(45, 108, 82, 0.24); }
+    .day-card.blue { border-color: rgba(70, 99, 157, 0.24); }
+    .day-card.gold { border-color: rgba(140, 107, 31, 0.24); }
+
+    .day-top {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      align-items: start;
+      margin-bottom: 8px;
+    }
+
+    .day-name {
+      font-size: 13px;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .day-date {
+      font-size: 24px;
+      font-weight: 800;
+      letter-spacing: -0.05em;
+    }
+
+    .day-topic {
+      margin: 0 0 8px;
+      font-size: 15px;
+      line-height: 1.45;
+    }
+
+    .mini-list {
+      display: grid;
+      gap: 8px;
+      margin-top: 10px;
+    }
+
+    .mini-item {
+      padding: 10px 11px;
+      border-radius: 14px;
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.72);
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.55;
+    }
+
+    .footer-note {
+      margin-top: 18px;
+      padding: 16px 18px;
+      border-radius: var(--radius-lg);
+      border: 1px dashed rgba(72, 53, 34, 0.18);
+      color: var(--muted);
+      background: rgba(255, 255, 255, 0.55);
+      line-height: 1.8;
+    }
+
+    @media (max-width: 1200px) {
+      .day-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 980px) {
+      .hero-grid,
+      .week-grid,
+      .focus-grid,
+      .routine-grid,
+      .guide-grid,
+      .stats {
+        grid-template-columns: 1fr;
+      }
+
+      .day-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 640px) {
+      .page {
+        width: min(100% - 18px, 1320px);
+      }
+
+      .hero,
+      .panel,
+      .week-card,
+      .day-card {
+        padding: 18px;
+      }
+
+      .day-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <section class="hero">
+      <span class="eyebrow">ChamSosik.com × Eclipse Century D.P</span>
+      <h1>조회수를 올리는 일정은<br>기사보다 먼저<br>리듬을 만듭니다.</h1>
+      <p class="hero-copy">
+        이 페이지는 <strong>2026년 3월 30일</strong>부터 <strong>2026년 4월 26일</strong>까지 운영하는
+        `참소식.com × 이클립스 센츄어리 D.P` 전용 조회수 상승 캘린더입니다.
+        핵심은 하루에 많이 올리는 것이 아니라, 반복 방문을 만드는 고정 포맷을 심는 것입니다.
+      </p>
+
+      <div class="hero-grid">
+        <div class="focus-card brand">
+          <span class="tag">운영 원칙</span>
+          <h3>트래픽은 “검색 + 재방문 + 공유” 3축으로 쌓습니다.</h3>
+          <ul>
+            <li>검색 유입용: 실시간 키워드, 비교형 제목, 이슈 요약</li>
+            <li>재방문용: 오전 브리핑, 오후 업데이트, 밤 정리 시리즈</li>
+            <li>공유용: 논쟁 포인트, 3줄 요약, 카드형 정리 문장</li>
+          </ul>
+        </div>
+
+        <div class="focus-card blue">
+          <span class="tag">핵심 목표</span>
+          <h3>하루 3회 고정 발행으로 체류와 재유입을 만든다.</h3>
+          <ul>
+            <li>오전 7시 30분: 오늘의 이슈 브리핑</li>
+            <li>오후 1시: 상승 키워드 해설 또는 비교 글</li>
+            <li>오후 8시 30분: 하루 총정리와 다음 날 예고</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="stats">
+        <div class="metric">
+          <strong>3회</strong>
+          <span>하루 권장 발행 횟수</span>
+        </div>
+        <div class="metric">
+          <strong>4주</strong>
+          <span>고정 포맷 학습 기간</span>
+        </div>
+        <div class="metric">
+          <strong>7종</strong>
+          <span>반복 주간 콘텐츠 테마</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <div class="section-head">
+        <div>
+          <h2>조회수 상승용 콘텐츠 축</h2>
+          <p class="body-copy">매일 다른 주제를 쓰기보다, 독자가 기억하는 반복 시리즈를 먼저 세팅합니다.</p>
+        </div>
+        <span class="badge">4 pillars</span>
+      </div>
+
+      <div class="focus-grid">
+        <article class="focus-card brand">
+          <span class="tag">실시간 유입</span>
+          <h4>속보형 이슈 브리핑</h4>
+          <p class="body-copy">검색량이 오르는 키워드를 짧고 빠르게 정리해 첫 유입을 잡습니다.</p>
+        </article>
+        <article class="focus-card green">
+          <span class="tag">깊이 있는 체류</span>
+          <h4>왜 중요한가 해설</h4>
+          <p class="body-copy">단순 뉴스 복붙이 아니라 배경, 이해관계, 다음 흐름까지 설명합니다.</p>
+        </article>
+        <article class="focus-card blue">
+          <span class="tag">재방문 유도</span>
+          <h4>오전·오후·야간 고정 시리즈</h4>
+          <p class="body-copy">시간대별 발행 습관이 생기면 사용자가 사이트를 다시 찾게 됩니다.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="panel">
+      <div class="section-head">
+        <div>
+          <h2>일일 운영 루틴</h2>
+          <p class="body-copy">콘텐츠의 품질보다 먼저 중요한 것은 같은 시간에 같은 기대를 만드는 것입니다.</p>
+        </div>
+        <span class="badge">daily routine</span>
+      </div>
+
+      <div class="routine-grid">
+        <article class="routine-card">
+          <span class="tag">07:30</span>
+          <h4>아침 브리핑</h4>
+          <p class="body-copy">오늘 가장 많이 볼 키워드 3개를 5줄 이내로 정리합니다.</p>
+        </article>
+        <article class="routine-card">
+          <span class="tag">13:00</span>
+          <h4>정오 해설</h4>
+          <p class="body-copy">오전 트래픽이 붙은 키워드를 비교, 전망, 배경 설명으로 확장합니다.</p>
+        </article>
+        <article class="routine-card">
+          <span class="tag">20:30</span>
+          <h4>야간 총정리</h4>
+          <p class="body-copy">하루 정리와 내일 관전 포인트를 함께 넣어 다음 방문을 예약합니다.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="panel">
+      <div class="section-head">
+        <div>
+          <h2>4주 조회수 상승 캘린더</h2>
+          <p class="body-copy">시작일은 2026년 3월 30일 월요일 기준입니다. 요일별 기대감을 심는 구성이 핵심입니다.</p>
+        </div>
+        <span class="badge">2026-03-30 to 2026-04-26</span>
+      </div>
+
+      <div class="week-grid">
+        <article class="week-card">
+          <div class="week-meta">
+            <h3>1주차: 진입 루틴 만들기</h3>
+            <span class="week-pill">2026-03-30 ~ 2026-04-05</span>
+            <span class="week-pill">목표: 고정 방문 습관 심기</span>
+          </div>
+          <div class="day-grid">
+            <article class="day-card brand">
+              <div class="day-top"><span class="day-name">Mon</span><strong class="day-date">03/30</strong></div>
+              <h4 class="day-topic">오픈 선언: 참소식.com × 이클립스 센츄어리 D.P가 보는 오늘의 이슈</h4>
+              <p class="day-copy">브랜드 협업 성격을 분명하게 보여주는 시작 포스트.</p>
+              <div class="mini-list">
+                <div class="mini-item">오전: 오늘 꼭 봐야 할 3가지</div>
+                <div class="mini-item">오후: 왜 지금 이 이슈가 커지는가</div>
+                <div class="mini-item">밤: 내일 이어질 키워드 예고</div>
+              </div>
+            </article>
+            <article class="day-card green">
+              <div class="day-top"><span class="day-name">Tue</span><strong class="day-date">03/31</strong></div>
+              <h4 class="day-topic">비교형 콘텐츠: 어제와 오늘, 무엇이 바뀌었나</h4>
+              <p class="day-copy">검색과 체류 모두 잡기 좋은 구조.</p>
+              <div class="mini-list">
+                <div class="mini-item">제목에 “비교”, “차이”, “정리” 포함</div>
+                <div class="mini-item">표 형식 또는 3문단 정리</div>
+              </div>
+            </article>
+            <article class="day-card blue">
+              <div class="day-top"><span class="day-name">Wed</span><strong class="day-date">04/01</strong></div>
+              <h4 class="day-topic">실시간 반응 모음: 사람들이 많이 찾는 질문 5선</h4>
+              <p class="day-copy">검색어형 제목으로 롱테일을 확보합니다.</p>
+              <div class="mini-list">
+                <div class="mini-item">FAQ 스타일 구성</div>
+                <div class="mini-item">마지막에 관련 글 3개 연결</div>
+              </div>
+            </article>
+            <article class="day-card gold">
+              <div class="day-top"><span class="day-name">Thu</span><strong class="day-date">04/02</strong></div>
+              <h4 class="day-topic">이슈 맥락 해설: 한 번에 이해하는 배경</h4>
+              <p class="day-copy">짧은 뉴스보다 오래 읽히는 해설형 글.</p>
+              <div class="mini-list">
+                <div class="mini-item">배경 1개, 이해관계 1개, 전망 1개</div>
+              </div>
+            </article>
+            <article class="day-card brand">
+              <div class="day-top"><span class="day-name">Fri</span><strong class="day-date">04/03</strong></div>
+              <h4 class="day-topic">금요일 총정리: 이번 주 가장 많이 읽힌 흐름</h4>
+              <p class="day-copy">재방문자를 묶어두는 주간 정리 포맷.</p>
+              <div class="mini-list">
+                <div class="mini-item">조회수 높은 글 5개 재링크</div>
+              </div>
+            </article>
+            <article class="day-card green">
+              <div class="day-top"><span class="day-name">Sat</span><strong class="day-date">04/04</strong></div>
+              <h4 class="day-topic">주말 읽을거리: 가볍지만 공유되는 해설</h4>
+              <p class="day-copy">평일보다 덜 급한 주제를 스토리텔링으로 풀어냅니다.</p>
+            </article>
+            <article class="day-card blue">
+              <div class="day-top"><span class="day-name">Sun</span><strong class="day-date">04/05</strong></div>
+              <h4 class="day-topic">다음 주 예고: 월요일에 다시 오게 만드는 글</h4>
+              <p class="day-copy">다음 주 관전 포인트를 짧고 강하게 제시합니다.</p>
+            </article>
+          </div>
+        </article>
+
+        <article class="week-card">
+          <div class="week-meta">
+            <h3>2주차: 검색 유입 강화</h3>
+            <span class="week-pill">2026-04-06 ~ 2026-04-12</span>
+            <span class="week-pill">목표: 제목과 구조 최적화</span>
+          </div>
+          <div class="day-grid">
+            <article class="day-card brand">
+              <div class="day-top"><span class="day-name">Mon</span><strong class="day-date">04/06</strong></div>
+              <h4 class="day-topic">오늘의 핵심 키워드 3개와 한 줄 전망</h4>
+              <p class="day-copy">빠르게 읽히고 클릭되는 진입형 글.</p>
+            </article>
+            <article class="day-card green">
+              <div class="day-top"><span class="day-name">Tue</span><strong class="day-date">04/07</strong></div>
+              <h4 class="day-topic">“무슨 뜻인가” 해설형 제목 집중 발행</h4>
+              <p class="day-copy">초보 독자 유입에 강한 구조.</p>
+            </article>
+            <article class="day-card blue">
+              <div class="day-top"><span class="day-name">Wed</span><strong class="day-date">04/08</strong></div>
+              <h4 class="day-topic">관련 키워드 묶음 정리: 같이 보면 이해되는 이슈</h4>
+              <p class="day-copy">내부 링크를 촘촘히 연결하는 날.</p>
+            </article>
+            <article class="day-card gold">
+              <div class="day-top"><span class="day-name">Thu</span><strong class="day-date">04/09</strong></div>
+              <h4 class="day-topic">인물 또는 기관 중심 해설</h4>
+              <p class="day-copy">고유명사 검색 유입을 노리는 포맷.</p>
+            </article>
+            <article class="day-card brand">
+              <div class="day-top"><span class="day-name">Fri</span><strong class="day-date">04/10</strong></div>
+              <h4 class="day-topic">이번 주 검색 상승 키워드 TOP 5</h4>
+              <p class="day-copy">순위형 포스트는 클릭률이 높습니다.</p>
+            </article>
+            <article class="day-card green">
+              <div class="day-top"><span class="day-name">Sat</span><strong class="day-date">04/11</strong></div>
+              <h4 class="day-topic">주말 Q&A 특집</h4>
+              <p class="day-copy">댓글이나 검색형 문장을 그대로 제목화합니다.</p>
+            </article>
+            <article class="day-card blue">
+              <div class="day-top"><span class="day-name">Sun</span><strong class="day-date">04/12</strong></div>
+              <h4 class="day-topic">다음 주 체크포인트 7선</h4>
+              <p class="day-copy">주간 탐색용 랜딩 글로 활용합니다.</p>
+            </article>
+          </div>
+        </article>
+
+        <article class="week-card">
+          <div class="week-meta">
+            <h3>3주차: 재방문과 공유 확대</h3>
+            <span class="week-pill">2026-04-13 ~ 2026-04-19</span>
+            <span class="week-pill">목표: 브랜드 포맷 기억시키기</span>
+          </div>
+          <div class="day-grid">
+            <article class="day-card brand">
+              <div class="day-top"><span class="day-name">Mon</span><strong class="day-date">04/13</strong></div>
+              <h4 class="day-topic">아침 한 장 요약: 3줄 카드 브리핑</h4>
+              <p class="day-copy">짧은 카드형 문장으로 공유성을 높입니다.</p>
+            </article>
+            <article class="day-card green">
+              <div class="day-top"><span class="day-name">Tue</span><strong class="day-date">04/14</strong></div>
+              <h4 class="day-topic">논쟁 포인트 정리: 찬반이 갈리는 이유</h4>
+              <p class="day-copy">공유와 댓글 반응이 잘 붙는 포맷.</p>
+            </article>
+            <article class="day-card blue">
+              <div class="day-top"><span class="day-name">Wed</span><strong class="day-date">04/15</strong></div>
+              <h4 class="day-topic">숫자로 읽는 오늘의 흐름</h4>
+              <p class="day-copy">수치, 순위, 변동폭 중심으로 압축합니다.</p>
+            </article>
+            <article class="day-card gold">
+              <div class="day-top"><span class="day-name">Thu</span><strong class="day-date">04/16</strong></div>
+              <h4 class="day-topic">한 문장 요약과 긴 설명의 조합</h4>
+              <p class="day-copy">SNS 공유용 한 줄과 사이트 체류용 본문을 함께 설계합니다.</p>
+            </article>
+            <article class="day-card brand">
+              <div class="day-top"><span class="day-name">Fri</span><strong class="day-date">04/17</strong></div>
+              <h4 class="day-topic">한 주 반응 정리: 많이 본 제목, 오래 읽은 글</h4>
+              <p class="day-copy">데이터 기반 회고형 포스트.</p>
+            </article>
+            <article class="day-card green">
+              <div class="day-top"><span class="day-name">Sat</span><strong class="day-date">04/18</strong></div>
+              <h4 class="day-topic">스토리형 해설: 맥락을 서사로 풀기</h4>
+              <p class="day-copy">주말엔 가독성이 높은 길게 읽는 글이 유리합니다.</p>
+            </article>
+            <article class="day-card blue">
+              <div class="day-top"><span class="day-name">Sun</span><strong class="day-date">04/19</strong></div>
+              <h4 class="day-topic">다음 주 미리보기와 내부 링크 묶음</h4>
+              <p class="day-copy">주간 허브 페이지로 재활용 가능합니다.</p>
+            </article>
+          </div>
+        </article>
+
+        <article class="week-card">
+          <div class="week-meta">
+            <h3>4주차: 성과 점검과 반복 최적화</h3>
+            <span class="week-pill">2026-04-20 ~ 2026-04-26</span>
+            <span class="week-pill">목표: 잘되는 포맷만 남기기</span>
+          </div>
+          <div class="day-grid">
+            <article class="day-card brand">
+              <div class="day-top"><span class="day-name">Mon</span><strong class="day-date">04/20</strong></div>
+              <h4 class="day-topic">지난 3주 최고 클릭 제목 리메이크</h4>
+              <p class="day-copy">같은 주제를 다른 각도로 다시 씁니다.</p>
+            </article>
+            <article class="day-card green">
+              <div class="day-top"><span class="day-name">Tue</span><strong class="day-date">04/21</strong></div>
+              <h4 class="day-topic">최고 체류 글 확장판 발행</h4>
+              <p class="day-copy">머문 글을 더 길고 깊게 확장합니다.</p>
+            </article>
+            <article class="day-card blue">
+              <div class="day-top"><span class="day-name">Wed</span><strong class="day-date">04/22</strong></div>
+              <h4 class="day-topic">낮은 반응 포맷 정리와 대체 실험</h4>
+              <p class="day-copy">조회수보다 전환이 낮은 형식은 과감히 교체합니다.</p>
+            </article>
+            <article class="day-card gold">
+              <div class="day-top"><span class="day-name">Thu</span><strong class="day-date">04/23</strong></div>
+              <h4 class="day-topic">시리즈 모음집: 처음 온 사람도 한 번에 이해</h4>
+              <p class="day-copy">입문용 허브 페이지를 만들어 전체 PV를 끌어올립니다.</p>
+            </article>
+            <article class="day-card brand">
+              <div class="day-top"><span class="day-name">Fri</span><strong class="day-date">04/24</strong></div>
+              <h4 class="day-topic">월간 베스트 10과 다음 달 예고</h4>
+              <p class="day-copy">성과를 보여주면서 다음 방문의 이유를 남깁니다.</p>
+            </article>
+            <article class="day-card green">
+              <div class="day-top"><span class="day-name">Sat</span><strong class="day-date">04/25</strong></div>
+              <h4 class="day-topic">주말 특집: 독자가 오래 머문 주제 심화</h4>
+              <p class="day-copy">긴 글과 내부 링크 확장에 최적화된 날.</p>
+            </article>
+            <article class="day-card blue">
+              <div class="day-top"><span class="day-name">Sun</span><strong class="day-date">04/26</strong></div>
+              <h4 class="day-topic">4주 성과 회고와 다음 4주 루틴 확정</h4>
+              <p class="day-copy">조회수 상승의 원인이 된 포맷을 표준 운영안으로 고정합니다.</p>
+            </article>
+          </div>
+        </article>
+      </div>
+
+      <div class="footer-note">
+        운영 팁: 제목은 “무슨 일”, “왜 중요”, “무엇이 달라졌나” 중 하나를 반드시 포함하고,
+        본문 첫 3문장은 검색 사용자가 바로 답을 얻는 구조로 쓰는 것이 좋습니다.
+        각 글 하단에는 관련 글 3개 이상을 연결해 단일 방문을 연쇄 방문으로 바꿔주세요.
+      </div>
+    </section>
+
+    <section class="panel">
+      <div class="section-head">
+        <div>
+          <h2>실행 가이드</h2>
+          <p class="body-copy">조회수는 게시 수보다 연결 구조와 반복 기대감에서 더 크게 올라갑니다.</p>
+        </div>
+        <span class="badge">action guide</span>
+      </div>
+
+      <div class="guide-grid">
+        <article class="guide-card gold">
+          <span class="tag">제목 공식</span>
+          <h4>[핵심 키워드] + [왜 중요한가] + [오늘 바뀐 점]</h4>
+          <p class="small-copy">예: “이슈 키워드, 왜 다시 커지나? 오늘 바뀐 3가지”</p>
+        </article>
+        <article class="guide-card">
+          <span class="tag">내부 링크 공식</span>
+          <h4>모든 글에 이전 글 2개, 다음 읽을 글 1개</h4>
+          <p class="small-copy">랜딩 글 하나가 여러 페이지뷰로 이어지게 설계합니다.</p>
+        </article>
+        <article class="guide-card">
+          <span class="tag">성과 확인</span>
+          <h4>매주 금요일에 클릭 제목과 체류 제목을 분리 분석</h4>
+          <p class="small-copy">많이 눌린 글과 오래 읽힌 글은 다를 수 있으니 따로 봐야 합니다.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

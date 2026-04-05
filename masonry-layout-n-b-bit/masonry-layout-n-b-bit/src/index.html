@@ -1,0 +1,117 @@
+<div class="container">
+  <h3 class="mb-4">🧱 뉴스 카드 추가 및 정렬</h3>
+
+  <!-- 전역 입력 필드 -->
+  <div class="row g-3 mb-4">
+    <div class="col-md-4">
+      <input type="text" class="form-control" id="sortKeywordGlobal" placeholder="정렬 기준 키워드 입력 시 자동 계산">
+    </div>
+    <div class="col-md-4">
+      <input type="number" class="form-control" id="bitMaxGlobal" placeholder="BIT_MAX 자동 계산됨">
+    </div>
+    <div class="col-md-4">
+      <input type="number" class="form-control" id="bitMinGlobal" placeholder="BIT_MIN 자동 계산됨">
+    </div>
+    <div class="col-12 mt-2">
+      <button class="btn btn-secondary w-100" onclick="sortCardsByScoreDescending()">📌 전체 카드에 적용</button>
+    </div>
+  </div>
+ 
+  <div class="d-none">
+    <div class="switchStep"></div>
+    <div class="cardCount"></div>
+    <div class="totalCards"></div>
+  </div>
+  <!-- 카드 리스트 -->
+  <div class="row" id="masonry-grid">
+    <!-- 카드 1 -->
+    <div class="col-sm-12 col-lg-12 masonry-item" data-title="NFT 게임" data-quote="나는 내 정원에, 시간을 심었다.">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title">NFT 게임</h5>
+          <p class="tag">#솔라나NFT #P2O게임</p>
+          <p class="quote">“나는 내 정원에, 시간을 심었다.”</p>
+          <input type="number" class="form-control mb-2 sort-score" placeholder="유사도">
+          <input type="number" class="form-control mb-2 bit-max-input" placeholder="BIT_MAX 직접 입력">
+          <input type="number" class="form-control mb-2 bit-min-input" placeholder="BIT_MIN 직접 입력">
+          <div class="score"></div>
+          <div class="max"></div>
+          <div class="min"></div>
+          <a href="https://www.youtube.com/results?search_query=솔라나+NFT+게임" target="_blank" class="btn btn-outline-primary btn-sm mt-2">게임 후기</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 카드 2 -->
+    <div class="col-sm-12 col-lg-12 masonry-item" data-title="링유 배우" data-quote="나는 내 역할을 통해 살아가는 세계를 이해한다.">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title">링유 배우</h5>
+          <p class="tag">#링유 #글로벌스타</p>
+          <p class="quote">“나는 내 역할을 통해 살아가는 세계를 이해한다.”</p>
+          <input type="number" class="form-control mb-2 sort-score" placeholder="유사도">
+          <input type="number" class="form-control mb-2 bit-max-input" placeholder="BIT_MAX 직접 입력">
+          <input type="number" class="form-control mb-2 bit-min-input" placeholder="BIT_MIN 직접 입력">
+          <div class="score"></div>
+          <div class="max"></div>
+          <div class="min"></div>
+          <a href="https://www.youtube.com/results?search_query=링유+할리우드" target="_blank" class="btn btn-outline-primary btn-sm mt-2">출연작 보기</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 카드 3 -->
+    <div class="col-sm-12 col-lg-12 masonry-item" data-title="습기 응급처치" data-quote="습기는 중력처럼 조용히 내려가요.">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title">습기 응급처치</h5>
+          <p class="tag">#습기제거 #충전단자</p>
+          <p class="quote">“습기는 중력처럼 조용히 내려가요.”</p>
+          <input type="number" class="form-control mb-2 sort-score" placeholder="유사도">
+          <input type="number" class="form-control mb-2 bit-max-input" placeholder="BIT_MAX 직접 입력">
+          <input type="number" class="form-control mb-2 bit-min-input" placeholder="BIT_MIN 직접 입력">
+          <div class="score"></div>
+          <div class="max"></div>
+          <div class="min"></div>
+          <a href="https://www.youtube.com/results?search_query=충전단자+습기제거" target="_blank" class="btn btn-outline-primary btn-sm mt-2">제거 방법</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 카드 4 -->
+    <div class="col-sm-12 col-lg-12 masonry-item" data-title="과학관 전시회" data-quote="오늘, 우주 만졌어.">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title">과학관 전시회</h5>
+          <p class="tag">#어린이날 #과천과학관</p>
+          <p class="quote">“오늘, 우주 만졌어.”</p>
+          <input type="number" class="form-control mb-2 sort-score" placeholder="유사도">
+          <input type="number" class="form-control mb-2 bit-max-input" placeholder="BIT_MAX 직접 입력">
+          <input type="number" class="form-control mb-2 bit-min-input" placeholder="BIT_MIN 직접 입력">
+          <div class="score"></div>
+          <div class="max"></div>
+          <div class="min"></div>
+          <a href="https://www.youtube.com/results?search_query=과천+어린이날+과학관" target="_blank" class="btn btn-outline-primary btn-sm mt-2">전시회 보기</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 카드 5 -->
+    <div class="col-sm-12 col-lg-12 masonry-item" data-title="충전 속도 향상" data-quote="충전기는 기다림의 상징이었죠.">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title">충전 속도 향상</h5>
+          <p class="tag">#스마트폰충전 #배터리관리</p>
+          <p class="quote">“충전기는 기다림의 상징이었죠.”</p>
+          <input type="number" class="form-control mb-2 sort-score" placeholder="유사도">
+          <input type="number" class="form-control mb-2 bit-max-input" placeholder="BIT_MAX 직접 입력">
+          <input type="number" class="form-control mb-2 bit-min-input" placeholder="BIT_MIN 직접 입력">
+          <div class="score"></div>
+          <div class="max"></div>
+          <div class="min"></div>
+          <a href="https://www.youtube.com/results?search_query=스마트폰+충전+팁" target="_blank" class="btn btn-outline-primary btn-sm mt-2">충전 팁 보기</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

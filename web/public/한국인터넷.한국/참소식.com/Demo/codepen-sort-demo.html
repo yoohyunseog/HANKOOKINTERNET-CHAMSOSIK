@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodePen Sort Demo</title>
+  <style>
+    :root { --bg:#f4f7fb; --panel:#fff; --text:#18212f; --muted:#68758a; --line:#d6e0ee; --blue:#2f6df6; --yellow:#ffcf5a; --shadow:0 16px 36px rgba(27,39,60,.12); }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:Segoe UI, Arial, sans-serif; color:var(--text); background:radial-gradient(circle at top left,#fff 0,#f4f7fb 45%,#e8eef8 100%); }
+    .page { max-width:1160px; margin:0 auto; padding:40px 20px 60px; }
+    h1 { margin:0 0 10px; font-size:clamp(32px,4vw,50px); letter-spacing:-.03em; }
+    p { margin:0; color:var(--muted); line-height:1.7; }
+    .toolbar { display:flex; flex-wrap:wrap; gap:10px; align-items:center; margin:22px 0; padding:16px; border:1px solid var(--line); border-radius:18px; background:rgba(255,255,255,.9); box-shadow:var(--shadow); }
+    .pill { padding:8px 12px; border-radius:999px; background:#fff; border:1px solid var(--line); color:var(--muted); font-size:14px; }
+    .btn { border:0; border-radius:999px; padding:11px 16px; font-weight:700; cursor:pointer; transition:.18s ease; }
+    .btn:hover { transform:translateY(-1px); }
+    .btn-primary { background:var(--blue); color:#fff; }
+    .btn-secondary { background:#e8eef8; color:#21314b; }
+    .btn-sort { background:#fff6d9; color:#755300; border:1px solid #f1d47a; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:18px; }
+    .masonry-item { transition:transform .28s ease, opacity .28s ease; }
+    .masonry-item.sorting { opacity:.72; }
+    .masonry-item.new-item { animation:pop-in .34s ease; }
+    @keyframes pop-in { from { opacity:.15; transform:translateY(10px) scale(.985); } to { opacity:1; transform:none; } }
+    .card { display:grid; gap:14px; padding:18px; border-radius:20px; background:linear-gradient(180deg,#fff 0,#fbfdff 100%); border:1px solid var(--line); box-shadow:var(--shadow); }
+    .card.similar { border-color:#efc44c; background:linear-gradient(180deg,#fff8de 0,#fffdf6 100%); }
+    .badges, .actions, .numbers { display:flex; flex-wrap:wrap; gap:8px; align-items:center; }
+    .badge { padding:6px 10px; border-radius:999px; font-size:12px; font-weight:700; }
+    .rank { background:#edf2ff; color:#3354a5; }
+    .type { background:#ebfbff; color:#007f9f; }
+    .cat { background:#eef3f7; color:#4e5d71; }
+    .sort-rank { background:#1f2a3d; color:#fff; }
+    .focus { background:var(--yellow); color:#513800; }
+    .title { margin:0; font-size:20px; line-height:1.35; }
+    .meta, .sort-meta { color:var(--muted); font-size:14px; }
+    .max { color:#129267; font-weight:700; }
+    .min { color:#d84a5b; font-weight:700; }
+    code { background:#eef3f8; padding:2px 6px; border-radius:8px; }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <h1>Sort Reorder Demo</h1>
+    <p><code>Sort</code>를 누르면 기존 카드 DOM을 다시 만들지 않고, 현재 보이는 카드를 하나씩 이동시켜 유사도 순으로 재정렬합니다.</p>
+
+    <div class="toolbar">
+      <span class="pill">Category 50%</span>
+      <span class="pill">MAX 25%</span>
+      <span class="pill">MIN 25%</span>
+      <button class="btn btn-primary" type="button" id="resetBtn">원래 순서</button>
+      <button class="btn btn-secondary" type="button" id="shuffleBtn">샘플 섞기</button>
+      <span class="pill" id="statusText">초기 상태</span>
+    </div>
+
+    <div class="grid" id="grid"></div>
+  </div>
+
+  <script>
+    const seedData = [
+      { id: 101, title: "AI 검색 플랫폼", category: "AI", nb_max: 92, nb_min: 18, date: "2026-03-24 09:10", views: 28 },
+      { id: 102, title: "반도체 사이클 분석", category: "주식", nb_max: 88, nb_min: 20, date: "2026-03-24 09:12", views: 32 },
+      { id: 103, title: "환율 변동 체크", category: "경제", nb_max: 61, nb_min: 11, date: "2026-03-24 09:15", views: 14 },
+      { id: 104, title: "생성형 모델 배포", category: "AI", nb_max: 95, nb_min: 21, date: "2026-03-24 09:17", views: 41 },
+      { id: 105, title: "원자재 선물 요약", category: "경제", nb_max: 57, nb_min: 9, date: "2026-03-24 09:20", views: 19 },
+      { id: 106, title: "2차전지 밸류체인", category: "주식", nb_max: 82, nb_min: 15, date: "2026-03-24 09:24", views: 36 },
+      { id: 107, title: "멀티모달 UX 실험", category: "AI", nb_max: 84, nb_min: 17, date: "2026-03-24 09:28", views: 23 },
+      { id: 108, title: "금리와 소비 흐름", category: "경제", nb_max: 64, nb_min: 13, date: "2026-03-24 09:34", views: 17 }
+    ];
+
+    const grid = document.getElementById("grid");
+    const statusText = document.getElementById("statusText");
+    const sortingTimers = [];
+    let currentData = seedData.map((item, index) => ({ ...item, originalIndex: index }));
+    let originalOrder = currentData.map(item => item.originalIndex);
+
+    function clearSortingTimers() {
+      while (sortingTimers.length) clearTimeout(sortingTimers.pop());
+    }
+
+    function renderSortButton(index, max, min) {
+      return `<button class="btn btn-sort" type="button" onclick="sortBySimilarity(${index}, ${max}, ${min})">Sort</button>`;
+    }
+
+    function cardMarkup(item, visualIndex) {
+      return `
+        <article class="masonry-item" data-original-index="${item.originalIndex}">
+          <section class="card" data-item-index="${item.originalIndex}">
+            <div class="badges">
+              <span class="badge rank">#${visualIndex + 1}</span>
+              <span class="badge type">TEXT</span>
+              <span class="badge cat">${item.category}</span>
+            </div>
+            <h2 class="title">${item.title}</h2>
+            <div class="meta">${item.date} · 조회수 ${item.views}</div>
+            <div class="numbers">
+              <span class="max">MAX ${item.nb_max}</span>
+              <span class="min">MIN ${item.nb_min}</span>
+            </div>
+            <div class="actions">${renderSortButton(item.originalIndex, item.nb_max, item.nb_min)}</div>
+          </section>
+        </article>
+      `;
+    }
+
+    function renderInitial(data) {
+      grid.innerHTML = data.map((item, index) => cardMarkup(item, index)).join("");
+      originalOrder = data.map(item => item.originalIndex);
+      statusText.textContent = "초기 상태";
+    }
+
+    function updateSortedCardState(card, item, index, total) {
+      if (!card) return;
+      const similar = index > 0 && index <= Math.min(5, total - 1);
+      card.classList.toggle("similar", similar);
+
+      const badges = card.querySelector(".badges");
+      let sortRank = badges.querySelector(".sort-rank");
+      if (!sortRank) {
+        sortRank = document.createElement("span");
+        sortRank.className = "badge sort-rank";
+        badges.prepend(sortRank);
+      }
+      sortRank.textContent = `Sort #${index + 1}`;
+
+      let focus = badges.querySelector(".focus");
+      if (index === 0 || similar) {
+        if (!focus) {
+          focus = document.createElement("span");
+          focus.className = "badge focus";
+          badges.appendChild(focus);
+        }
+        focus.textContent = index === 0 ? "Selected" : `Similar ${index}`;
+      } else if (focus) {
+        focus.remove();
+      }
+
+      let meta = card.querySelector(".sort-meta");
+      if (!meta) {
+        meta = document.createElement("div");
+        meta.className = "sort-meta";
+        card.appendChild(meta);
+      }
+      meta.textContent = `Score ${(item.totalSimilarity * 100).toFixed(1)}% · category ${(item.categoryDistance * 100).toFixed(0)} · max ${(item.maxDistance * 100).toFixed(1)} · min ${(item.minDistance * 100).toFixed(1)}`;
+    }
+
+    function resetOrder() {
+      clearSortingTimers();
+      const elementMap = new Map(Array.from(grid.querySelectorAll(".masonry-item")).map(el => [Number(el.dataset.originalIndex), el]));
+      originalOrder.forEach((originalIndex, index) => {
+        const element = elementMap.get(originalIndex);
+        if (!element) return;
+        const timer = setTimeout(() => {
+          const card = element.querySelector(".card");
+          element.classList.add("new-item");
+          element.classList.remove("sorting");
+          if (card) {
+            card.classList.remove("similar");
+            const sortMeta = card.querySelector(".sort-meta");
+            const sortRank = card.querySelector(".sort-rank");
+            const focus = card.querySelector(".focus");
+            if (sortMeta) sortMeta.remove();
+            if (sortRank) sortRank.remove();
+            if (focus) focus.remove();
+          }
+          grid.appendChild(element);
+          setTimeout(() => element.classList.remove("new-item"), 240);
+        }, index * 45);
+        sortingTimers.push(timer);
+      });
+      statusText.textContent = "원래 순서로 초기화";
+    }
+
+    function sortBySimilarity(clickedIndex, targetMax, targetMin) {
+      clearSortingTimers();
+
+      const selected = currentData.find(item => item.originalIndex === clickedIndex);
+      if (!selected) return;
+
+      const targetCategory = selected.category;
+      const maxValues = currentData.map(item => item.nb_max);
+      const minValues = currentData.map(item => item.nb_min);
+      const maxRange = Math.max(...maxValues) - Math.min(...maxValues) || 1;
+      const minRange = Math.max(...minValues) - Math.min(...minValues) || 1;
+
+      const sorted = currentData.map((item) => {
+        const categoryDistance = item.category === targetCategory ? 0 : 1;
+        const maxDistance = Math.abs(item.nb_max - targetMax) / maxRange;
+        const minDistance = Math.abs(item.nb_min - targetMin) / minRange;
+        const totalSimilarity = (categoryDistance * 0.5) + (maxDistance * 0.25) + (minDistance * 0.25);
+        return { ...item, categoryDistance, maxDistance, minDistance, totalSimilarity };
+      }).sort((a, b) => a.totalSimilarity - b.totalSimilarity);
+
+      const elementMap = new Map(Array.from(grid.querySelectorAll(".masonry-item")).map(el => [Number(el.dataset.originalIndex), el]));
+      Array.from(grid.children).forEach(el => el.classList.add("sorting"));
+
+      sorted.forEach((item, index) => {
+        const timer = setTimeout(() => {
+          const element = elementMap.get(item.originalIndex);
+          if (!element) return;
+          const card = element.querySelector(".card");
+          updateSortedCardState(card, item, index, sorted.length);
+          element.classList.add("new-item");
+          grid.appendChild(element);
+          const cleanup = setTimeout(() => {
+            element.classList.remove("new-item");
+            element.classList.remove("sorting");
+          }, 240);
+          sortingTimers.push(cleanup);
+        }, index * 90);
+        sortingTimers.push(timer);
+      });
+
+      statusText.textContent = `"${selected.title}" 기준으로 정렬`;
+    }
+
+    function shuffleCards() {
+      clearSortingTimers();
+      currentData = [...currentData].sort(() => Math.random() - 0.5);
+      renderInitial(currentData);
+      statusText.textContent = "샘플 섞기 완료";
+    }
+
+    document.getElementById("resetBtn").addEventListener("click", resetOrder);
+    document.getElementById("shuffleBtn").addEventListener("click", shuffleCards);
+    renderInitial(currentData);
+    window.sortBySimilarity = sortBySimilarity;
+  </script>
+</body>
+</html>

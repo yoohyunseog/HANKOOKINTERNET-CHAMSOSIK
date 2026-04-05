@@ -1,0 +1,36 @@
+{
+  "id": "6bbd44a59c1922f8",
+  "timestamp": "2026-03-17T13:47:31.495Z",
+  "type": "text",
+  "input": "speed test sample",
+  "unicode": [
+    115,
+    112,
+    101,
+    101,
+    100,
+    32,
+    116,
+    101,
+    115,
+    116,
+    32,
+    115,
+    97,
+    109,
+    112,
+    108,
+    101
+  ],
+  "bit": 999,
+  "category": "bench",
+  "view_count": 0,
+  "results": [
+    {
+      "calculation": 1,
+      "nb_max": 12345.6789,
+      "nb_min": 0.1234,
+      "difference": 12345.5555
+    }
+  ]
+}

@@ -390,6 +390,10 @@ async function callOllama(prompt, model) {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ model, prompt, stream: false })
     });
+    if (!response.ok) {
+        const errorText = await response.text();
+        throw new Error(`Ollama request failed: ${response.status} ${response.statusText} ${errorText.slice(0, 300)}`);
+    }
     const data = await response.json();
     return (data && data.response) ? data.response.trim() : '';
 }
@@ -403,6 +407,32 @@ function safeJsonParse(text) {
 }
 
 // 홈페이지
+app.post('/api/silverkmk-ai', async (req, res) => {
+    try {
+        const model = req.body?.model ? String(req.body.model) : DEFAULT_MODEL;
+        const systemPrompt = req.body?.systemPrompt ? String(req.body.systemPrompt) : '';
+        const userPrompt = req.body?.userPrompt ? String(req.body.userPrompt) : '';
+
+        if (!userPrompt.trim()) {
+            return res.status(400).json({ ok: false, error: 'userPrompt is required' });
+        }
+
+        const prompt = [
+            systemPrompt.trim(),
+            '',
+            userPrompt.trim(),
+            '',
+            'Return JSON only.'
+        ].join('\n').trim();
+
+        const content = await callOllama(prompt, model);
+        return res.json({ ok: true, model, content });
+    } catch (error) {
+        console.error('[silverkmk-ai] error:', error.message);
+        return res.status(500).json({ ok: false, error: error.message || 'unknown error' });
+    }
+});
+
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', '한국인터넷.한국', 'index.html'));
 });
