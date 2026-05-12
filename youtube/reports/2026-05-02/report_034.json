@@ -1,0 +1,449 @@
+{
+  "timestamp": "2026-05-02T05:38:31.780539",
+  "model": "news-singleline:latest",
+  "keyword_count": 3,
+  "analyze_subtitles": true,
+  "analysis_source": "youtube",
+  "keywords": [
+    {
+      "keyword": "오늘의 주요 뉴스",
+      "is_fixed": true,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "달러 반도체",
+      "is_fixed": false,
+      "views": [
+        5592,
+        2425
+      ],
+      "video_count": 2,
+      "videos": [
+        {
+          "title": "지난달 수출 48% 늘어난 859억 달러…반도체 수출 173.5%↑ / KBS  2026.05.01.",
+          "video_id": "29U06rDR5R4",
+          "views": 5592,
+          "upload_date": "2026-05-01",
+          "url": "https://www.youtube.com/watch?v=29U06rDR5R4",
+          "subtitle_summary": "[지난달 수출이 반도체 호황으로 48% 증가한 859억 달러를 기록하며 월 800억 달러 돌파는 두 차례로 축소되었고, 반도체 월 수출액은 역대 최대치를 경신하며 13개월 연속 최고 실적을 유지했습니다.]",
+          "db_saved": true
+        },
+        {
+          "title": "수출, 두 달 연속 800억 달러 넘어...반도체 319억 달러 / YTN",
+          "video_id": "z8J0ouuDYI4",
+          "views": 2425,
+          "upload_date": "2026-05-01",
+          "url": "https://www.youtube.com/watch?v=z8J0ouuDYI4",
+          "subtitle_summary": "[4월 수출이 859억 달러로 1년 전보다 48% 증가하며 2개월 연속 800억 달러를 넘어섰고, 특히 반도체 수출액이 319억 달러로 2개월 연속 300억 달러를 돌파하며 수출을 견인했으며, 무역수지는 20237억 7천만 달러의 흑자를 기록하며 15개월 연속 흑자 행진을 이어갔다.]",
+          "db_saved": true
+        }
+      ],
+      "max": 3.2527,
+      "min": 0.0,
+      "nb_score": 32527.4544,
+      "avg_views": 4008.5,
+      "total_views": 8017
+    },
+    {
+      "keyword": "9억 달러 반도체",
+      "is_fixed": false,
+      "views": [
+        2425,
+        375,
+        157,
+        6780
+      ],
+      "video_count": 4,
+      "videos": [
+        {
+          "title": "수출, 두 달 연속 800억 달러 넘어...반도체 319억 달러 / YTN",
+          "video_id": "z8J0ouuDYI4",
+          "views": 2425,
+          "upload_date": "2026-05-01",
+          "url": "https://www.youtube.com/watch?v=z8J0ouuDYI4",
+          "subtitle_summary": "[4월 수출이 859억 달러로 1년 전보다 48% 증가하며 2개월 연속 800억 달러를 넘어섰고, 특히 반도체 수출액이 319억 달러로 2개월 연속 300억 달러를 돌파하며 수출을 견인했으며, 무역수지는 20237억 7천만 달러의 흑자를 기록하며 15개월 연속 흑자 행진을 이어갔다.]",
+          "db_saved": true
+        },
+        {
+          "title": "수출, 두달 연속 800억 달러 돌파...반도체 319억 달러 '견인차' / YTN",
+          "video_id": "3H2r9vf8ut8",
+          "views": 375,
+          "upload_date": "2026-05-01",
+          "url": "https://www.youtube.com/watch?v=3H2r9vf8ut8",
+          "subtitle_summary": "[4월 수출이 중동 전쟁의 영향에도 불구하고 858억 9천만 달러를 기록하며 2개월 연속 800억 달러를 돌파했으며, 반도체 수출 319억 달러가 견인차 역할을 하여 13개월 연속 역대 최대 실적을 달성하고 무역수지 237억 7천만 달러 흑자를 기록했습니다.]",
+          "db_saved": true
+        },
+        {
+          "title": "두 달 연속 수출액 800억 달러 넘어…반도체 주도 [9시 뉴스] / KBS  2026.05.01.",
+          "video_id": "v5VkU_ozs6I",
+          "views": 157,
+          "upload_date": "2026-05-01",
+          "url": "https://www.youtube.com/watch?v=v5VkU_ozs6I",
+          "subtitle_summary": "[중동 사태에도 불구하고 우리나라 수출액이 사상 처음 두 달 연속 800억 달러를 넘어섰으며, 특히 반도체 수출이 크게 증가하여 수출 호조를 이끌었습니다.]",
+          "db_saved": true
+        },
+        {
+          "title": "수출, 두달 연속 800억 달러 돌파...반도체 315억 달러 '견인차' / YTN",
+          "video_id": "MTnP4nstnc8",
+          "views": 6780,
+          "upload_date": "2026-05-01",
+          "url": "https://www.youtube.com/watch?v=MTnP4nstnc8",
+          "subtitle_summary": "[4월 수출이 중동 전쟁의 영향에도 불구하고 800억 달러를 기록하며 11개월 연속 월 역대 최대 실적을 달성했고, 반도체 수출이 315억 달러를 견인하며 13개월 연속 월 최대 실적을 냈으며, AI 투자 확대와 유가 상승에 따른 석유제품 수출 증가로 무역수지는 237억 7천만 달러의 흑자를 기록했다.]",
+          "db_saved": true
+        }
+      ],
+      "max": 0.8787,
+      "min": 1.7673,
+      "nb_score": 0.4972,
+      "avg_views": 2434.25,
+      "total_views": 9737
+    },
+    {
+      "keyword": "반도체 319억 달러",
+      "is_fixed": false,
+      "views": [
+        2425,
+        385,
+        811,
+        5604,
+        335,
+        2286,
+        806,
+        1263,
+        81
+      ],
+      "video_count": 9,
+      "videos": [
+        {
+          "title": "수출, 두 달 연속 800억 달러 넘어...반도체 319억 달러 / YTN",
+          "video_id": "z8J0ouuDYI4",
+          "views": 2425,
+          "upload_date": "2026-05-01",
+          "url": "https://www.youtube.com/watch?v=z8J0ouuDYI4",
+          "subtitle_summary": "[4월 수출이 859억 달러로 1년 전보다 48% 증가하며 2개월 연속 800억 달러를 넘어섰고, 특히 반도체 수출액이 319억 달러로 2개월 연속 300억 달러를 돌파하며 수출을 견인했으며, 무역수지는 20237억 7천만 달러의 흑자를 기록하며 15개월 연속 흑자 행진을 이어갔다.]",
+          "db_saved": true
+        },
+        {
+          "title": "수출, 두달 연속 800억 달러 돌파...반도체 319억 달러 '견인차' / YTN",
+          "video_id": "3H2r9vf8ut8",
+          "views": 385,
+          "upload_date": "2026-05-01",
+          "url": "https://www.youtube.com/watch?v=3H2r9vf8ut8",
+          "subtitle_summary": "[4월 수출이 중동 전쟁의 영향에도 불구하고 858억 9천만 달러를 기록하며 2개월 연속 800억 달러를 돌파했으며, 반도체 수출이 319억 달러를 견인하여 13개월 연속 월 최대 실적을 달성하고 무역수지 흑자 기록]",
+          "db_saved": true
+        },
+        {
+          "title": "수출, 두 달 연속 800억 달러 넘어...반도체 319억 달러 / YTN",
+          "video_id": "3yuq-9W1U_o",
+          "views": 811,
+          "upload_date": "2026-05-01",
+          "url": "https://www.youtube.com/watch?v=3yuq-9W1U_o",
+          "subtitle_summary": "[4월 수출이 859억 달러로 1년 전보다 48% 증가하며 2개월 연속 800억 달러를 넘어섰고, 특히 반도체 수출액이 319억 달러로 2개월 연속 300억 달러를 돌파하며 견인 역할을 했습니다.]",
+          "db_saved": true
+        },
+        {
+          "title": "지난달 수출 48% 늘어난 859억 달러…반도체 수출 173.5%↑ / KBS  2026.05.01.",
+          "video_id": "29U06rDR5R4",
+          "views": 5604,
+          "upload_date": "2026-05-01",
+          "url": "https://www.youtube.com/watch?v=29U06rDR5R4",
+          "subtitle_summary": "[지난달 수출이 반도체 호황으로 48% 증가한 859억 달러를 기록하며 월 800억 달러 돌파는 두 차례로 축소되었고, 반도체 월 수출액은 역대 최대치를 경신하며 13개월 연속 최고 실적을 유지했습니다.]",
+          "db_saved": true
+        },
+        {
+          "title": "Semiconductor and petroleum product exports jump... Surpass $80 billion for two consecutive month...",
+          "video_id": "SZlapPLf4wY",
+          "views": 335,
+          "upload_date": "2026-05-01",
+          "url": "https://www.youtube.com/watch?v=SZlapPLf4wY",
+          "subtitle_summary": "지난 두 달 연속 반도체와 석유 제품 수출액이 800억 달러를 넘어섰으며, 반도체 수출이 48% 증가한 319억 달러를 기록했습니다. 호르무즈 해협 봉쇄로 인한 유가 급등이 석유 제품 수출액의 큰 폭 증가에 영향을 미쳤습니다. 이는 전년 동월 대비 수출액이 173.5% 증가한 결과입니다.",
+          "db_saved": true
+        },
+        {
+          "title": "Even Middle East War Could Not Stop Semiconductors... South Korea's Exports Surpass $80 Billion f...",
+          "video_id": "RcSb03mDiw4",
+          "views": 2286,
+          "upload_date": "2026-05-01",
+          "url": "https://www.youtube.com/watch?v=RcSb03mDiw4",
+          "subtitle_summary": "[4월 한국 수출액이 반도체 수요 급증과 석유 제품 수출 증가에 힘입어 사상 처음으로 858억 9천만 달러를 기록하며 800억 달러를 두 달 연속 돌파했으며, 특히 반도체 수출이 173.5% 폭증했습니다.]",
+          "db_saved": true
+        },
+        {
+          "title": "\"중동 전쟁에도 슈퍼사이클\"…수출 800억 달러 시대 / 연합뉴스TV (YonhapnewsTV)",
+          "video_id": "_aUQFfmOdJA",
+          "views": 806,
+          "upload_date": "2026-05-01",
+          "url": "https://www.youtube.com/watch?v=_aUQFfmOdJA",
+          "subtitle_summary": "[한국 수출이 반도체 호황과 함께 2개월 연속 800억 달러를 기록하며 역대 두 번째로 큰 실적을 달성했지만, 중동 전쟁의 영향으로 자동차 및 대중동 수출이 감소했습니다. 메모리 반도체의 고가 제품 수요와 AI 인프라 확대로 수출액이 급증한 반면, 석유 제품은 단가 상승과 수출 통제로 인해 물량 감소가 나타났습니다. 무역 수지는 15개월 연속 흑자 행진을 이어가며 237억 7천만 달러를 기록했습니다.]",
+          "db_saved": true
+        },
+        {
+          "title": "수출, 두달 연속 800억 달러 돌파...반도체 319억 달러 '견인차' / YTN",
+          "video_id": "SY1gE60ge2Q",
+          "views": 1263,
+          "upload_date": "2026-05-01",
+          "url": "https://www.youtube.com/watch?v=SY1gE60ge2Q",
+          "subtitle_summary": "[4월 수출이 중동 전쟁의 영향에도 불구하고 800억 달러를 기록하며 11개월 연속 월 역대 최대 실적을 달성했고, 반도체 수출이 319억 달러로 견인차 역할을 하며 13개월 연속 월 최대 실적을 냈습니다. 에너지 수입 급증과 중국, 미국 수출 증가에 힘입어 무역수지는 237억 7천만 달러의 흑자를 기록하며 역대 최대 실적을 경신했습니다.]",
+          "db_saved": true
+        },
+        {
+          "title": "April Exports Reach $85.9 Billion… Second Highest on Record Despite Middle East War",
+          "video_id": "5CAlDxhkOj8",
+          "views": 81,
+          "upload_date": "2026-05-01",
+          "url": "https://www.youtube.com/watch?v=5CAlDxhkOj8",
+          "subtitle_summary": "[중동 전쟁에도 불구하고 4월 수출액이 858억 9천만 달러를 기록하며 역대 2위를 차지했으며, 반도체 수출 급증과 함께 육류 수출의 급등이 견인 역할을 했습니다.]",
+          "db_saved": true
+        }
+      ],
+      "max": 0.4494,
+      "min": 1.2715,
+      "nb_score": 0.3535,
+      "avg_views": 1555.11,
+      "total_views": 13996
+    },
+    {
+      "keyword": "달러 반도체 319억",
+      "is_fixed": false,
+      "views": [
+        2425,
+        377,
+        811,
+        5600,
+        335,
+        2271,
+        1263,
+        715,
+        76
+      ],
+      "video_count": 9,
+      "videos": [
+        {
+          "title": "수출, 두 달 연속 800억 달러 넘어...반도체 319억 달러 / YTN",
+          "video_id": "z8J0ouuDYI4",
+          "views": 2425,
+          "upload_date": "2026-05-01",
+          "url": "https://www.youtube.com/watch?v=z8J0ouuDYI4",
+          "subtitle_summary": "[4월 수출이 859억 달러로 1년 전보다 48% 증가하며 2개월 연속 800억 달러를 넘어섰고, 특히 반도체 수출액이 319억 달러로 2개월 연속 300억 달러를 돌파하며 수출을 견인했으며, 무역수지는 20237억 7천만 달러의 흑자를 기록하며 15개월 연속 흑자 행진을 이어갔다.]",
+          "db_saved": true
+        },
+        {
+          "title": "수출, 두달 연속 800억 달러 돌파...반도체 319억 달러 '견인차' / YTN",
+          "video_id": "3H2r9vf8ut8",
+          "views": 377,
+          "upload_date": "2026-05-01",
+          "url": "https://www.youtube.com/watch?v=3H2r9vf8ut8",
+          "subtitle_summary": "[4월 수출이 중동 전쟁의 영향에도 불구하고 858억 9천만 달러를 기록하며 2개월 연속 800억 달러를 돌파했으며, 반도체 수출이 319억 달러를 견인하여 13개월 연속 월 최대 실적을 달성하고 무역수지 237억 7천만 달러 흑자를 기록했습니다.]",
+          "db_saved": true
+        },
+        {
+          "title": "수출, 두 달 연속 800억 달러 넘어...반도체 319억 달러 / YTN",
+          "video_id": "3yuq-9W1U_o",
+          "views": 811,
+          "upload_date": "2026-05-01",
+          "url": "https://www.youtube.com/watch?v=3yuq-9W1U_o",
+          "subtitle_summary": "[4월 수출이 859억 달러로 1년 전보다 48% 증가하며 2개월 연속 800억 달러를 넘어섰고, 특히 반도체 수출액이 319억 달러로 2개월 연속 300억 달러를 돌파하며 견인 역할을 했습니다.]",
+          "db_saved": true
+        },
+        {
+          "title": "지난달 수출 48% 늘어난 859억 달러…반도체 수출 173.5%↑ / KBS  2026.05.01.",
+          "video_id": "29U06rDR5R4",
+          "views": 5600,
+          "upload_date": "2026-05-01",
+          "url": "https://www.youtube.com/watch?v=29U06rDR5R4",
+          "subtitle_summary": "[지난달 수출이 반도체 호황으로 48% 증가한 859억 달러를 기록하며 월 800억 달러 돌파는 두 차례로 축소되었고, 반도체 월 수출액은 역대 최대치를 경신하며 13개월 연속 최고 실적을 유지했습니다.]",
+          "db_saved": true
+        },
+        {
+          "title": "Semiconductor and petroleum product exports jump... Surpass $80 billion for two consecutive month...",
+          "video_id": "SZlapPLf4wY",
+          "views": 335,
+          "upload_date": "2026-05-01",
+          "url": "https://www.youtube.com/watch?v=SZlapPLf4wY",
+          "subtitle_summary": "지난 두 달 연속 반도체 및 석유 제품 수출액이 800억 달러를 넘어섰으며, 반도체 수출이 48% 증가한 319억 달러를 기록했습니다. 호르무즈 해협 봉쇄로 인한 유가 급등은 석유 제품 수출액의 큰 폭 증가에 영향을 미쳤습니다. 이러한 수출 실적은 글로벌 경제에 긍정적인 신호로 해석될 수 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "Even Middle East War Could Not Stop Semiconductors... South Korea's Exports Surpass $80 Billion f...",
+          "video_id": "RcSb03mDiw4",
+          "views": 2271,
+          "upload_date": "2026-05-01",
+          "url": "https://www.youtube.com/watch?v=RcSb03mDiw4",
+          "subtitle_summary": "[4월 한국 수출액이 반도체 수요 견인으로 사상 처음으로 두 달 연속 800억 달러를 돌파했으며, 특히 반도체 수출은 173.5% 급증하여 수출 증대에 크게 기여했습니다.]",
+          "db_saved": true
+        },
+        {
+          "title": "수출, 두달 연속 800억 달러 돌파...반도체 319억 달러 '견인차' / YTN",
+          "video_id": "SY1gE60ge2Q",
+          "views": 1263,
+          "upload_date": "2026-05-01",
+          "url": "https://www.youtube.com/watch?v=SY1gE60ge2Q",
+          "subtitle_summary": "[4월 수출이 중동 전쟁의 영향에도 불구하고 800억 달러를 기록하며 11개월 연속 역대 최대 실적을 달성했고, 반도체 수출이 319억 달러로 견인차 역할을 하며 237억 7천만 달러의 무역수지 흑자를 이끌었습니다. AI 투자 확대와 유가 상승에 따른 수입 증가에도 불구하고 수출의 강세가 지속되면서 경제적 버팀목 역할을 했습니다.]",
+          "db_saved": true
+        },
+        {
+          "title": "\"중동 전쟁에도 슈퍼사이클\"…수출 800억 달러 시대 / 연합뉴스TV (YonhapnewsTV)",
+          "video_id": "_aUQFfmOdJA",
+          "views": 715,
+          "upload_date": "2026-05-01",
+          "url": "https://www.youtube.com/watch?v=_aUQFfmOdJA",
+          "subtitle_summary": "[한국 수출이 반도체 호황과 함께 2개월 연속 800억 달러를 기록하며 역대 두 번째로 큰 실적을 달성했지만, 중동 전쟁의 영향으로 자동차 및 대중동 수출이 감소했습니다. 메모리 반도체의 고가 제품 수요와 AI 인프라 확대로 수출액이 급증한 반면, 석유 제품은 단가 상승과 수출 통제로 인해 물량 감소가 나타났습니다. 무역 수지는 15개월 연속 흑자 행진을 이어가며 237억 7천만 달러를 기록했습니다.]",
+          "db_saved": true
+        },
+        {
+          "title": "April Exports Reach $85.9 Billion… Second Highest on Record Despite Middle East War",
+          "video_id": "5CAlDxhkOj8",
+          "views": 76,
+          "upload_date": "2026-05-01",
+          "url": "https://www.youtube.com/watch?v=5CAlDxhkOj8",
+          "subtitle_summary": "[중동 전쟁에도 불구하고 4월 수출액이 858억 9천만 달러를 기록하며 역대 2위를 차지했으며, 반도체 수출 급증과 함께 육류 수출의 급등이 견인 역할을 했습니다.]",
+          "db_saved": true
+        }
+      ],
+      "max": 0.4432,
+      "min": 1.2637,
+      "nb_score": 0.3507,
+      "avg_views": 1541.44,
+      "total_views": 13873
+    },
+    {
+      "keyword": "EU산 관세",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "관세 내주",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "트럼프 EU산 관세",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "EU산 관세 내주",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "관세 내주 25",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "트럼프 관세로",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "EU 관세",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "관세 25",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "내주부터 EU 관세",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "EU 관세 25",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "관세 25 인상",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    }
+  ]
+}

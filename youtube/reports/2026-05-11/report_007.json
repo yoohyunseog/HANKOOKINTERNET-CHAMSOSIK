@@ -1,0 +1,235 @@
+{
+  "timestamp": "2026-05-11T01:18:24.040662",
+  "model": "mistral:latest",
+  "keyword_count": 3,
+  "analyze_subtitles": true,
+  "analysis_source": "youtube",
+  "keywords": [
+    {
+      "keyword": "오늘의 주요 뉴스",
+      "is_fixed": true,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "삼성전자 노사 협상",
+      "is_fixed": false,
+      "views": [
+        6931,
+        3869
+      ],
+      "video_count": 2,
+      "videos": [
+        {
+          "title": "Samsung Electronics Labor and Management Back to the Negotiation Table... 'Watershed' for Strike ...",
+          "video_id": "HoU_hrVfahM",
+          "views": 6931,
+          "upload_date": "2026-05-10",
+          "url": "https://www.youtube.com/watch?v=HoU_hrVfahM",
+          "subtitle_summary": "1. Samsung Electronics labor union will meet with management again tomorrow under government mediation, as they continue to demand a performance bonus of 60 billion won per employee in the semiconductor division. This could be the last chance for the government to prevent a strike that was announced on the 21st.\n2. The labor union maintains a firm stance, with demands including formalizing a 15% profit-based bonus and abolishing the bonus cap. They have prepared for the strike as planned, but there is high expectation for a peaceful resolution due to active government intervention.\n3. However, internal disagreements within the labor union, which has been leading the semiconductor division strike, may complicate negotiations. Both sides are expected to work towards agreement in the two-day meeting starting tomorrow. (MBC News, Park Jinjun)",
+          "db_saved": true
+        },
+        {
+          "title": "Samsung Electronics Labor and Management to Resume Negotiations Tomorrow… The Final Negotiation? ...",
+          "video_id": "dNinN3VQER8",
+          "views": 3869,
+          "upload_date": "2026-05-10",
+          "url": "https://www.youtube.com/watch?v=dNinN3VQER8",
+          "subtitle_summary": "Samsung Electronics labor union and management will resume negotiations for two days starting tomorrow, potentially marking the final round of discussions before a strike. The union is demanding that 15% of the company's overall profits be allocated to employee bonuses and the abolition of a bonus cap that currently stands at 50%. The company has offered to allocate 10% of profits for bonuses but refuses to abolish the cap. The dispute arises from the fact that bonuses are determined based on departmental profits, with the semiconductor division seeing higher profits and thus larger bonuses due to its success, while other departments see lower profits and therefore smaller bonuses. The government is considering intervening to mediate the conflict.",
+          "db_saved": true
+        }
+      ],
+      "max": 3.6146,
+      "min": 0.0,
+      "nb_score": 36145.5778,
+      "avg_views": 5400.0,
+      "total_views": 10800
+    },
+    {
+      "keyword": "호르무즈 해협 선박 공격",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "나무호 피격 사건",
+      "is_fixed": false,
+      "views": [
+        152089
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "[자막] HMM 나무호 화재, 정부 합동조사단 현장 결과 발표 \"비행체 2기에 피격 확인\"",
+          "video_id": "AOg9U6SXnrY",
+          "views": 152089,
+          "upload_date": "2026-05-10",
+          "url": "https://www.youtube.com/watch?v=AOg9U6SXnrY",
+          "subtitle_summary": "1. 5월 4일, HMM 나무호 선박에서 발생한 화재 사고 조사결과 발표. 2기의 비행체가 선미현 평행수 탱크 외판을 약 1분 간격으로 두 차례 타격하여 화염이 발생했다는 결과 확인. 3. 조사단은 추가적인 분석을 통해 비행체의 발사 주체, 정확한 기종 및 물리적 크기를 확인하고자 노력할 예정이다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "AI 쇼크 대졸 청년",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "주식형 ETF 200조",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "한미 정상회담 대진표",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "중동 전쟁 고유가 영향",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "K-방산 빅4 실적",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "공중 드론 조준 공격",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "미분양 주택 세금 문제",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "좌표찍기 담당자 비공개",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "SNS 중독 건강 위험",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "호르무즈 항행 안전",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "범여권 단일화 셈법",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "선거전 보수 적자 경쟁",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    }
+  ]
+}

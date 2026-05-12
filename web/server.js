@@ -22,7 +22,22 @@ const app = express();
 app.set('trust proxy', 1);
 
 // 보안 미들웨어 적용
-app.use(helmet()); // HTTP 헤더 보안
+// 한국인터넷.한국은 아직 HTTPS 인증서가 없으므로 HSTS와 HTTP 자동 업그레이드를 끕니다.
+app.use(helmet({
+  strictTransportSecurity: false,
+  contentSecurityPolicy: {
+    directives: {
+      ...helmet.contentSecurityPolicy.getDefaultDirectives(),
+      'upgrade-insecure-requests': null
+    }
+  }
+})); // HTTP 헤더 보안
+
+// 기존 브라우저 HSTS 캐시 해제용 헤더
+app.use((req, res, next) => {
+  res.setHeader('Strict-Transport-Security', 'max-age=0');
+  next();
+});
 app.use(cors()); // CORS 설정
 app.use(xss()); // XSS 공격 방어
 app.use(hpp()); // HTTP Parameter Pollution 방어
@@ -270,6 +285,15 @@ app.use((req, res, next) => {
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
+// 예전 domain-check.js가 보내던 잘못된 404 경로 호환 처리
+app.use((req, res, next) => {
+    if (req.originalUrl.includes('/xn--9l4b4xi9r.com') &&
+        req.originalUrl.includes('/ErrPage/404/index.html')) {
+        return res.redirect(302, '/참소식.com/ErrPage/404/index.html');
+    }
+    next();
+});
+
 // 도메인별 정적 파일 제공 미들웨어
 app.use((req, res, next) => {
     // /api/* 요청은 정적 파일로 처리하지 않음
@@ -308,7 +332,9 @@ app.use((req, res, next) => {
         lastModified: true, // Last-Modified 헤더 활성화
         setHeaders: (res, path) => {
             // HTML은 짧게, CSS/JS/이미지는 길게
-            if (path.endsWith('.html')) {
+            if (path.endsWith('domain-check.js')) {
+                res.setHeader('Cache-Control', 'no-cache, max-age=0');
+            } else if (path.endsWith('.html')) {
                 res.setHeader('Cache-Control', 'public, max-age=3600'); // 1시간
             } else if (path.match(/\.(css|js|jpg|jpeg|png|gif|ico|woff|woff2)$/)) {
                 res.setHeader('Cache-Control', 'public, max-age=604800'); // 7일

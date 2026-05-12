@@ -1,0 +1,755 @@
+{
+  "timestamp": "2026-05-02T14:31:02.913897",
+  "model": "news-singleline:latest",
+  "keyword_count": 3,
+  "analyze_subtitles": true,
+  "analysis_source": "youtube",
+  "keywords": [
+    {
+      "keyword": "오늘의 주요 뉴스",
+      "is_fixed": true,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "관세 인상",
+      "is_fixed": false,
+      "views": [
+        1161,
+        10937,
+        7272
+      ],
+      "video_count": 3,
+      "videos": [
+        {
+          "title": "트럼프 \"다음 주부터 EU산 승용차·트럭 관세 인상\" / 연합뉴스TV (YonhapnewsTV)",
+          "video_id": "tLVEius53XA",
+          "views": 1161,
+          "upload_date": "2026-05-02",
+          "url": "https://www.youtube.com/watch?v=tLVEius53XA",
+          "subtitle_summary": "트럼프 대통령은 EU산 승용차·트럭에 대한 관세를 다음 주부터 15%에서 25%로 인상하겠다고 SNS를 통해 발표했다. 이는 EU가 미국의 파병 요청을 거절했다는 이유로, 무역 합의 불이행에 대한 보복 성격이다. 이번 조치로 인해 EU와 미국 간의 무역 갈등이 더욱 심화될 가능성이 제기되고 있다.",
+          "db_saved": true
+        },
+        {
+          "title": "Retaliation against Europe... \"Withdrawal of 5,000 US Troops from Germany, Tariff Hike\" (2026.05....",
+          "video_id": "aqyhBHYacCw",
+          "views": 10937,
+          "upload_date": "2026-05-02",
+          "url": "https://www.youtube.com/watch?v=aqyhBHYacCw",
+          "subtitle_summary": "[트럼프 미국 대통령이 유럽에 대한 보복 조치로 독일 주둔 미군 5,000명 철수를 결정하고, 유럽 연합산 승용차·트럭 관세를 25%로 인상하겠다고 발표하여 국제적인 파장을 일으키고 있다.]",
+          "db_saved": true
+        },
+        {
+          "title": "Retaliation against Europe... \"Withdrawal of 5,000 US Troops from Germany, Tariff Hike\" - [LIVE] ...",
+          "video_id": "JJVnjs8ujkk",
+          "views": 7272,
+          "upload_date": "2026-05-02",
+          "url": "https://www.youtube.com/watch?v=JJVnjs8ujkk",
+          "subtitle_summary": "트럼프 미국 대통령은 유럽에 대한 보복 조치로 독일 주둔 미군 5,000명 철수를 결정했으며, 유럽 연합산 승용차·트럭 관세를 25%로 인상 예고했습니다. 이는 유럽의 이란 전쟁 비판과 군기지 사용 거부 등에 대한 대응으로 분석되며, 다른 동맹국으로의 미군 철수 가능성도 제기되었습니다. 또한, 종전 합의 원한에 대한 여론이 높아짐에도 불구하고 트럼프 대통령은 협상안에 불만을 표명하며 유보적인 태도를 보였습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 2.3486,
+      "min": 2.5543,
+      "nb_score": 0.9195,
+      "avg_views": 6456.67,
+      "total_views": 19370
+    },
+    {
+      "keyword": "유럽 관세",
+      "is_fixed": false,
+      "views": [
+        593,
+        6623,
+        3314
+      ],
+      "video_count": 3,
+      "videos": [
+        {
+          "title": "트럼프, 전쟁 비협조 유럽에 관세 보복…한국은? / 연합뉴스TV (YonhapnewsTV)",
+          "video_id": "j-NebPtp9ds",
+          "views": 593,
+          "upload_date": "2026-05-02",
+          "url": "https://www.youtube.com/watch?v=j-NebPtp9ds",
+          "subtitle_summary": "트럼프 대통령이 유럽의 무역 합의 불이행과 호르무즈 해협 군함 배치 거절에 대한 보복으로 유럽산 자동차 및 트럭에 관세율을 10%P 인상하겠다고 발표하여 한국도 다음 표적이 될 수 있다는 우려가 제기되었다. 미국 자동차 시장의 가격 경쟁력 우위가 나타나더라도, 한국과 일본 역시 트럼프 대통령의 파병 요청을 거절한 점을 고려할 때 추가적인 관세 압박 가능성이 높다. 이러한 상황에서 한국은 무역 협상 이행 속도에서 일본에 비해 뒤쳐지는 만큼, 더욱 신중한 대외 전략 수립이 필요하다.",
+          "db_saved": true
+        },
+        {
+          "title": "Trump \"Dissatisfied with New Deal\"... 25% Tariff on EU Cars (May 2, 2026 / News Today / MBC)",
+          "video_id": "cWK9-HCfdXo",
+          "views": 6623,
+          "upload_date": "2026-05-01",
+          "url": "https://www.youtube.com/watch?v=cWK9-HCfdXo",
+          "subtitle_summary": "트럼프 대통령은 이란의 새 지도부에 대한 불만을 표명하며 중동 파키스탄을 통한 협상안에 만족하지 못했다고 밝혔습니다. 유럽연합의 승용차와 트럭에 대한 25% 관세 인상을 예고하며, 한국과 일본의 자동차 공장 투자에 대한 불만을 제기했습니다. 종전 합의에 대한 여론은 48%가 원하는 반면 46%는 군사 행동을 감수하더라도 더 나은 합의를 압박해야 한다는 의견으로 팽팽하게 맞서고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "\"Withdrawal of 5,000 US Troops from Germany · 25% Tariff on European Cars\" / SBS",
+          "video_id": "B7gapcQTHTM",
+          "views": 3314,
+          "upload_date": "2026-05-02",
+          "url": "https://www.youtube.com/watch?v=B7gapcQTHTM",
+          "subtitle_summary": "미국이 독일 주둔 미군 5000명 철수를 결정하고, 유럽산 자동차에 25% 관세를 재부과하며 안보 및 무역 보복 조치를 강화함에 따라 유럽 내 긴장감이 고조되고 있다. 6개월에서 12개월 안에 완료될 예정인 이번 철수는 독일에 배치된 미군 병력의 14% 감축에 해당하며, 유럽 동맹국들의 미국의 도움 거절과 메르츠 총리의 비판이 영향을 미친 것으로 분석된다. 미국은 무역 합의 이행 미준수 이유로 유럽산 자동차에 관세 부과를 결정하며, EU 역시 대응을 준비하고 있는 상황이다.",
+          "db_saved": true
+        }
+      ],
+      "max": 1.9141,
+      "min": 2.4873,
+      "nb_score": 0.7695,
+      "avg_views": 3510.0,
+      "total_views": 10530
+    },
+    {
+      "keyword": "관세 25 이란",
+      "is_fixed": false,
+      "views": [
+        84,
+        6683,
+        1734
+      ],
+      "video_count": 3,
+      "videos": [
+        {
+          "title": "트럼프, 유럽 車관세 25%로↑…\"이란 제안 불만\" / 연합뉴스TV (YonhapnewsTV)",
+          "video_id": "PaMeF5bYvKc",
+          "views": 84,
+          "upload_date": "2026-05-02",
+          "url": "https://www.youtube.com/watch?v=PaMeF5bYvKc",
+          "subtitle_summary": "트럼프 대통령은 유럽산 자동차 관세를 25%로 인상하겠다고 발표하며, 유럽 국가들의 이란 전쟁 중 비협조적인 태도에 대한 보복 성격을 시사했다. 관세 인상은 미국 자동차 시장 가격 상승을 야기하며, 한국과 일본의 상대적 우위를 확보했지만, 트럼프 대통령의 다음 표대로 예상되는 일본에 대한 압박 가능성이 제기되었다. 이란의 새로운 협상안은 트럼프 대통령에게 큰 호응을 얻지 못했으며, 이란 지도부의 분열 상황이 협상 난항의 주요 원인으로 지목되었다.",
+          "db_saved": true
+        },
+        {
+          "title": "Trump \"Dissatisfied with New Deal\"... 25% Tariff on EU Cars (May 2, 2026 / News Today / MBC)",
+          "video_id": "cWK9-HCfdXo",
+          "views": 6683,
+          "upload_date": "2026-05-01",
+          "url": "https://www.youtube.com/watch?v=cWK9-HCfdXo",
+          "subtitle_summary": "트럼프 대통령은 이란의 새 지도부에 대한 불만을 표명하며 중동 파키스탄을 통한 협상안에 만족하지 못했다고 밝혔습니다. 유럽연합산 승용차와 트럭에 대한 관세를 25%로 인상하겠다고 발표하며, 한국과 일본의 자동차 공장 투자에 대한 불만을 제기했습니다. 종전 합의에 대한 여론은 48%가 원하는 반면 46%는 군사 행동을 감수하더라도 더 나은 합의를 압박해야 한다는 의견으로 팽팽하게 맞서고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "트럼프 “EU 차량 관세 25%로↑”…주독 미군 약 5천 명 철수 / KBS  2026.05.02.",
+          "video_id": "CK2-y2AhXgU",
+          "views": 1734,
+          "upload_date": "2026-05-02",
+          "url": "https://www.youtube.com/watch?v=CK2-y2AhXgU",
+          "subtitle_summary": "트럼프 대통령이 이유 승용차 트럭에 대한 관세를 25%로 인상하고, 대미 투자 약속을 지키지 않아 불만을 표출하며, 독일 주둔 미군 약 5천 명 철수를 결정하여 국제적 파장을 더하고 있다.",
+          "db_saved": true
+        }
+      ],
+      "max": 1.4303,
+      "min": 2.0911,
+      "nb_score": 0.684,
+      "avg_views": 2833.67,
+      "total_views": 8501
+    },
+    {
+      "keyword": "종전안 제시 트럼프",
+      "is_fixed": false,
+      "views": [
+        4616,
+        94,
+        993
+      ],
+      "video_count": 3,
+      "videos": [
+        {
+          "title": "이란, 새 종전안 제시...트럼프 \"만족 못 해\" 압박 지속 / YTN",
+          "video_id": "xSAfss0urS8",
+          "views": 4616,
+          "upload_date": "2026-05-02",
+          "url": "https://www.youtube.com/watch?v=xSAfss0urS8",
+          "subtitle_summary": "이란이 파키스탄을 통해 제시한 새 종전안에는 미국과 이스라엘의 전쟁 중단 및 제재 일부 해제 후 핵 협상 가능성을 담고 있으며, 트럼프 전 대통령은 이에 만족하지 못하고 추가적인 요구를 할 것으로 예상됨. 이란은 경제적 어려움과 반조무시 가능성을 우려하여 협상에 무게를 두고 있으며, 핵 관련 전향적인 양보는 회의적인 입장임.",
+          "db_saved": true
+        },
+        {
+          "title": "이란, 새 종전안 제시…트럼프 \"불만족·조기철수 안해\" / 연합뉴스TV (YonhapnewsTV)",
+          "video_id": "auR7vSNFKlo",
+          "views": 94,
+          "upload_date": "2026-05-02",
+          "url": "https://www.youtube.com/watch?v=auR7vSNFKlo",
+          "subtitle_summary": "이란이 미국의 새 종전안을 제시했지만, 트럼프 대통령은 협상안에 만족하지 못하며 미군 조기 철수에 대한 압박을 지속했고, 이란 지도부의 분열 가능성도 제기되면서 양국 간 협상이 난항을 겪고 있다. 트럼프 대통령은 합의를 원하지만 자신은 만족스럽지 않다고 불만을 드러냈으며, 폭격 재개는 원하지 않는다고 강조했다. 미군은 이란에서 병력 철수에 대한 이란의 요구를 묵살하며 비핵화 합의가 있을 때까지 철수를 하지 않겠다는 입장을 고수했다.",
+          "db_saved": true
+        },
+        {
+          "title": "이란, 새 종전안 제시…트럼프 “만족스럽지 않아” / KBS  2026.05.02.",
+          "video_id": "p7SBOiq6y2A",
+          "views": 993,
+          "upload_date": "2026-05-01",
+          "url": "https://www.youtube.com/watch?v=p7SBOiq6y2A",
+          "subtitle_summary": "이란이 전쟁 종식을 위한 새 협상안을 제시했지만, 트럼프 대통령은 협상안에 만족하지 못하며 이란 지도부의 분열을 이유로 합의 가능성에 의구심을 표명했습니다. 아라그치 외무장관은 미국의 과도한 요구 중단 시 외교적 해법에 대한 노력을 시사했지만, 미국의 냉랭한 반응은 여전히 협상 진전을 불투명하게 만들었습니다. 이란 내부의 지도부 분열과 이스라엘의 군사 작전 계획 언급은 향후 상황에 대한 불확실성을 더했습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 1.3213,
+      "min": 2.099,
+      "nb_score": 0.6295,
+      "avg_views": 1901.0,
+      "total_views": 5703
+    },
+    {
+      "keyword": "관세 25",
+      "is_fixed": false,
+      "views": [
+        6193,
+        894,
+        53
+      ],
+      "video_count": 3,
+      "videos": [
+        {
+          "title": "Trump \"Dissatisfied with New Deal\"... 25% Tariff on EU Cars (May 2, 2026 / News Today / MBC)",
+          "video_id": "cWK9-HCfdXo",
+          "views": 6193,
+          "upload_date": "2026-05-01",
+          "url": "https://www.youtube.com/watch?v=cWK9-HCfdXo",
+          "subtitle_summary": "트럼프 대통령은 이란의 새 지도부에 대한 불만을 표명하며 중동 파키스탄을 통한 협상안에 만족하지 못했다고 밝혔습니다. 유럽연합의 승용차와 트럭에 대한 25% 관세 인상 방침을 예고하며, 한국과 일본의 자동차 공장 투자 속도를 문제 삼았습니다. 종전 합의에 대한 여론은 48%가 원하는 반면 46%는 군사 행동을 감수하겠다는 입장을 보였습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "트럼프 “EU 차량 관세 25%로↑”…주독 미군 약 5천 명 철수 / KBS  2026.05.02.",
+          "video_id": "CK2-y2AhXgU",
+          "views": 894,
+          "upload_date": "2026-05-02",
+          "url": "https://www.youtube.com/watch?v=CK2-y2AhXgU",
+          "subtitle_summary": "트럼프 대통령이 이유 승용차 트럭에 대한 관세를 25%로 인상하겠다고 발표했으며, 이는 대미 투자 약속 불이행을 근거로 삼았다고 밝혔습니다. 또한, 독일 주둔 미군 약 5천 명 철수 결정과 함께 이란전 지원에 대한 불만을 드러내면서 유럽 동맹국과의 갈등이 심화될 수 있다는 우려가 제기되었습니다. 트럼프 대통령은 60일 시안 활용을 통해 군사 작전의 자율성을 주장하며 전국 주도권을 확보하려는 시도로 해석됩니다.",
+          "db_saved": true
+        },
+        {
+          "title": "트럼프, 유럽 車관세 25%로↑…\"이란 제안 불만\" / 연합뉴스TV (YonhapnewsTV)",
+          "video_id": "PaMeF5bYvKc",
+          "views": 53,
+          "upload_date": "2026-05-02",
+          "url": "https://www.youtube.com/watch?v=PaMeF5bYvKc",
+          "subtitle_summary": "트럼프 대통령은 유럽산 자동차 관세를 25%로 인상하겠다고 발표하며, 유럽 국가들의 이란 전쟁 중 비협조적인 태도에 대한 보복 성격을 시사했다. 관세 인상은 미국 자동차 시장에서 유럽산 자동차 가격 상승을 야기하며, 한국과 일본의 가격 경쟁력 우위를 확보했지만, 동맹국들의 파병 거절에 따른 보복 가능성도 제기되었다. 이란의 새 협상안은 트럼프 대통령에게 큰 호응을 얻지 못했으며, 이란 지도부의 분열 상황이 협상 난항의 주요 원인으로 지목되었다.",
+          "db_saved": true
+        }
+      ],
+      "max": 1.1837,
+      "min": 2.008,
+      "nb_score": 0.5895,
+      "avg_views": 2380.0,
+      "total_views": 7140
+    },
+    {
+      "keyword": "유럽 관세 25",
+      "is_fixed": false,
+      "views": [
+        6647,
+        3594,
+        84,
+        1570,
+        614
+      ],
+      "video_count": 5,
+      "videos": [
+        {
+          "title": "Trump \"Dissatisfied with New Deal\"... 25% Tariff on EU Cars (May 2, 2026 / News Today / MBC)",
+          "video_id": "cWK9-HCfdXo",
+          "views": 6647,
+          "upload_date": "2026-05-01",
+          "url": "https://www.youtube.com/watch?v=cWK9-HCfdXo",
+          "subtitle_summary": "트럼프 대통령은 이란의 새 지도부에 대한 불만을 표명하며 중동 파키스탄을 통한 협상안에 만족하지 못했다고 밝혔습니다. 유럽연합의 승용차와 트럭에 대한 25% 관세 인상을 예고하며, 한국 및 일본의 자동차 공장 투자에 대한 불만을 드러냈습니다. 종전 합의에 대한 여론은 48%가 원하는 반면 46%는 군사 행동을 감수하더라도 더 나은 합의를 압박해야 한다는 의견으로 팽팽하게 맞서고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "\"Withdrawal of 5,000 US Troops from Germany · 25% Tariff on European Cars\" / SBS",
+          "video_id": "B7gapcQTHTM",
+          "views": 3594,
+          "upload_date": "2026-05-02",
+          "url": "https://www.youtube.com/watch?v=B7gapcQTHTM",
+          "subtitle_summary": "미국이 독일에 주둔 미군 5000명 철수를 결정하고, 유럽산 자동차에 25% 관세를 재부과하며 안보 및 무역 보복 조치를 강화함에 따라 유럽 내 긴장감이 고조되고 있다. 6개월에서 12개월 안에 완료될 예정인 이번 철수는 독일에 배치된 미군 병력의 14% 감소를 의미하며, 유럽 동맹국들의 미국의 도움 거절이 영향을 미친 것으로 분석된다. 트럼프 대통령은 무역 합의 이행 여부에 대한 불만을 표명하며, 유럽산 자동차에 대한 관세 부과를 예고했다.",
+          "db_saved": true
+        },
+        {
+          "title": "트럼프, 유럽 車관세 25%로↑…\"이란 제안 불만\" / 연합뉴스TV (YonhapnewsTV)",
+          "video_id": "PaMeF5bYvKc",
+          "views": 84,
+          "upload_date": "2026-05-02",
+          "url": "https://www.youtube.com/watch?v=PaMeF5bYvKc",
+          "subtitle_summary": "트럼프 대통령은 유럽산 자동차 관세를 25%로 인상하겠다고 발표하며, 유럽 국가들의 이란 전쟁 중 비협조적인 태도에 대한 보복 성격을 시사했다. 관세 인상은 미국 자동차 시장 가격 상승을 야기하며, 한국과 일본의 상대적 우위를 확보했지만, 트럼프 대통령의 다음 표대로 예상되는 일본에 대한 압박 가능성이 제기되었다. 이란의 새 협상안은 트럼프 대통령에게 큰 호응을 얻지 못했으며, 이란 지도부의 분열 상황이 협상 난항의 주요 원인으로 지목되었다.",
+          "db_saved": true
+        },
+        {
+          "title": "트럼프 “EU 차량 관세 25%로↑”…주독 미군 약 5천 명 철수 / KBS  2026.05.02.",
+          "video_id": "CK2-y2AhXgU",
+          "views": 1570,
+          "upload_date": "2026-05-02",
+          "url": "https://www.youtube.com/watch?v=CK2-y2AhXgU",
+          "subtitle_summary": "트럼프 대통령이 이유 승용차 트럭에 대한 관세를 25%로 인상하겠다고 발표했으며, 이는 대미 투자 약속을 지키지 않은 이유와 유럽 동맹국들의 이란 전쟁 지원 부족에 대한 불만 때문이라는 분석이 나오고 있습니다. 또한, 독일 주둔 미군 약 5천 명의 철수 결정이 내려졌으며, 트럼프 대통령은 60일 시안을 활용한 군사 작전 지속을 시사했습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "트럼프, 전쟁 비협조 유럽에 관세 보복…한국은? / 연합뉴스TV (YonhapnewsTV)",
+          "video_id": "j-NebPtp9ds",
+          "views": 614,
+          "upload_date": "2026-05-02",
+          "url": "https://www.youtube.com/watch?v=j-NebPtp9ds",
+          "subtitle_summary": "트럼프 대통령이 유럽의 무역 합의 불이행과 호르무즈 해협 군함 배치 거절에 대한 보복으로 유럽산 자동차 및 트럭에 관세율을 10%P 인상하겠다고 발표하여 한국도 다음 표적이 될 수 있다는 우려가 제기되었다. 미국 자동차 시장의 가격 경쟁력 우위가 나타나더라도, 한국과 일본 역시 트럼프 대통령의 파병 요청을 거절한 점을 고려할 때 추가적인 관세 압박 가능성이 높다. 이에 따라 한국은 무역 환경 변화에 대한 면밀한 대비가 필요하다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0.9336,
+      "min": 1.6644,
+      "nb_score": 0.5609,
+      "avg_views": 2501.8,
+      "total_views": 12509
+    },
+    {
+      "keyword": "트럼프 유럽 관세",
+      "is_fixed": false,
+      "views": [
+        6623,
+        606,
+        84,
+        1503
+      ],
+      "video_count": 4,
+      "videos": [
+        {
+          "title": "Trump \"Dissatisfied with New Deal\"... 25% Tariff on EU Cars (May 2, 2026 / News Today / MBC)",
+          "video_id": "cWK9-HCfdXo",
+          "views": 6623,
+          "upload_date": "2026-05-01",
+          "url": "https://www.youtube.com/watch?v=cWK9-HCfdXo",
+          "subtitle_summary": "트럼프 대통령은 이란의 새 지도부에 대한 불만을 표명하며 중동 파키스탄을 통한 협상안에 만족하지 못했다고 밝혔습니다. 유럽연합의 승용차와 트럭에 대한 25% 관세 인상을 예고하며, 한국과 일본의 자동차 공장 투자에 대한 불만을 드러냈습니다. 종전 합의에 대한 여론은 엇갈리고 있으며, 전쟁을 시작한 것이 실수였다는 의견이 압도적으로 높게 나타났습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "트럼프, 전쟁 비협조 유럽에 관세 보복…한국은? / 연합뉴스TV (YonhapnewsTV)",
+          "video_id": "j-NebPtp9ds",
+          "views": 606,
+          "upload_date": "2026-05-02",
+          "url": "https://www.youtube.com/watch?v=j-NebPtp9ds",
+          "subtitle_summary": "트럼프 대통령이 유럽의 무역 합의 불이행과 호르무즈 해협 군함 배치 거절에 대한 보복으로 유럽산 자동차와 트럭에 관세를 25%로 인상하겠다고 발표하여, 한국과 일본도 다음 표적이 될 가능성이 제기되고 있다.",
+          "db_saved": true
+        },
+        {
+          "title": "트럼프, 유럽 車관세 25%로↑…\"이란 제안 불만\" / 연합뉴스TV (YonhapnewsTV)",
+          "video_id": "PaMeF5bYvKc",
+          "views": 84,
+          "upload_date": "2026-05-02",
+          "url": "https://www.youtube.com/watch?v=PaMeF5bYvKc",
+          "subtitle_summary": "트럼프 대통령은 유럽산 자동차 관세를 25%로 인상하겠다고 발표하며, 유럽 국가들의 이란 전쟁 중 비협조적인 태도에 대한 보복 성격을 시사했다. 관세 인상은 미국 자동차 시장 가격 상승을 야기하며, 한국과 일본의 상대적 우위를 확보했지만, 트럼프 대통령의 다음 표대로 예상되는 일본에 대한 압박 가능성이 제기되었다. 이란의 새로운 협상안은 트럼프 대통령에게 큰 호응을 얻지 못했으며, 이란 지도부의 분열 상황이 협상 난항의 주요 원인으로 지목되었다.",
+          "db_saved": true
+        },
+        {
+          "title": "트럼프 “EU 차량 관세 25%로↑”…주독 미군 약 5천 명 철수 / KBS  2026.05.02.",
+          "video_id": "CK2-y2AhXgU",
+          "views": 1503,
+          "upload_date": "2026-05-02",
+          "url": "https://www.youtube.com/watch?v=CK2-y2AhXgU",
+          "subtitle_summary": "트럼프 대통령이 이유 승용차 트럭에 대한 관세를 25%로 인상하겠다고 발표했으며, 이는 대미 투자 약속 불이행을 근거로 삼았으며, 독일 주둔 미군 약 5천 명 철수 결정으로 파장이 이어질 전망이다. 관세 인상은 다음 주부터 적용될 예정이며, 이란전 지원에 대한 불만과 메르츠 총리와의 설전이 복합적으로 작용한 것으로 분석된다. 트럼프 대통령은 60일 시안을 활용한 군사 작전 지속을 시사하며 다시 전국 주도권을 확보하려는 전략을 보였다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0.7748,
+      "min": 1.6778,
+      "nb_score": 0.4618,
+      "avg_views": 2204.0,
+      "total_views": 8816
+    },
+    {
+      "keyword": "삼성바이오 전면",
+      "is_fixed": false,
+      "views": [
+        23191,
+        22467,
+        259,
+        5999,
+        4095,
+        1792,
+        1957,
+        115
+      ],
+      "video_count": 8,
+      "videos": [
+        {
+          "title": "삼성바이오 노조 첫 전면파업 돌입...\"6,400억 손실\" / YTN",
+          "video_id": "UpdYIynwd60",
+          "views": 23191,
+          "upload_date": "2026-05-01",
+          "url": "https://www.youtube.com/watch?v=UpdYIynwd60",
+          "subtitle_summary": "삼성바이오노조가 창사 첫 전면 파업으로 돌입하며 6,400억 원 손실이 예상되는 가운데, 경영진의 협상 소극적인 태도가 노사 갈등의 주요 원인이 되고 있습니다. 삼성전자 노조의 총파업 예고와 더불어 바이오 및 반도체 업계의 파업 확산은 우리 경제 전반에 걸쳐 심각한 파장과 수주 차질을 야기할 수 있다는 우려가 커지고 있습니다. 파업으로 인한 손실 책임 소재를 두고 노조와 경영권 간 책임론이 팽팽하게 맞서고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "삼성바이오 노조 첫 전면파업 돌입...\"6,400억 손실\" / YTN",
+          "video_id": "JpeuKN9q1W8",
+          "views": 22467,
+          "upload_date": "2026-05-01",
+          "url": "https://www.youtube.com/watch?v=JpeuKN9q1W8",
+          "subtitle_summary": "삼성바이오로직스 노조가 창사 첫 전면 파업에 돌입하며 6,400억 원 규모의 손실이 예상되는 가운데, 노사는 경영 사항 명문화 및 임금 인상폭을 두고 교섭에서 합의점을 찾지 못하고 있으며, 삼성전자 노조의 총파업 예고로 인해 그룹 전체와 경제 전반에 미칠 파장이 우려되고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "삼성바이오로직스 창사 이후 첫 전면 파업 / KBS  2026.05.02.",
+          "video_id": "1sMxA0w9Vhg",
+          "views": 259,
+          "upload_date": "2026-05-01",
+          "url": "https://www.youtube.com/watch?v=1sMxA0w9Vhg",
+          "subtitle_summary": "삼성바이오로직스 노조가 창사 이후 첫 전면 파업에 돌입하여 5일까지 파업을 진행하며, 격려금 지급 및 임금 인상, 성과급 배분 등을 요구하고 있습니다. 노사는 13차례 교섭에도 합의점에 이르지 못했고, 파업은 노조 구성원들의 권익 보호를 위한 행동입니다. 향후 노사 협상을 통해 원만한 해결책 모색이 필요합니다.",
+          "db_saved": true
+        },
+        {
+          "title": "Samsung Biologics Launches All-Out Strike... Union Says \"Management Must Engage in Substantive Ne...",
+          "video_id": "BivDDZ2H47s",
+          "views": 5999,
+          "upload_date": "2026-05-01",
+          "url": "https://www.youtube.com/watch?v=BivDDZ2H47s",
+          "subtitle_summary": "삼성바이오로직스가 임금 및 성과급 협상 결렬로 창사 첫 전면 파업에 돌입했으며, 노조는 14% 임금 인상과 영업이익의 20% 성과급 지급을 요구하는 반면, 사측은 6.2% 인상과 10% 성과급을 제시했습니다. 이번 파업으로 인한 막대한 피해가 예상되는 가운데, 노조는 사측의 압박과 책임 전가에 대응해 실질적인 협상 진전을 촉구했습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "삼성바이오 노조 첫 전면파업 돌입 [뉴스START] 다시보기 2026년 05월 02일  / YTN",
+          "video_id": "vF3hNHeNzRg",
+          "views": 4095,
+          "upload_date": "2026-05-01",
+          "url": "https://www.youtube.com/watch?v=vF3hNHeNzRg",
+          "subtitle_summary": "미국과 이란 간 종전 협상이 결렬되면서 이란이 파키스탄을 통해 새 협상안을 전달했으나 트럼프 대통령은 만족스럽지 않아 해상 봉쇄 등 전방위 고사 작전을 추진하고 있으며, 이란의 원유 수출량 급감으로 경제적 어려움이 가중되고 있다.",
+          "db_saved": true
+        },
+        {
+          "title": "삼성바이오 '첫 전면 파업'…\"손실 6,400억\" / 연합뉴스TV (YonhapnewsTV)",
+          "video_id": "uRLxKk99OI8",
+          "views": 1792,
+          "upload_date": "2026-05-01",
+          "url": "https://www.youtube.com/watch?v=uRLxKk99OI8",
+          "subtitle_summary": "삼성바이오로직스 노동조합이 임금 인상 등을 요구하며 창사일 첫 전면 파업에 돌입했다는 소식이다. 회사 측은 생산 중단 시 제품 폐기 등의 우려를 제기하며 가처분 신청을 냈으나, 법원은 일부 공정에서 파업 참여를 허용했다. 이번 파업으로 인해 삼성바이오로직스는 최소 6,400억 원의 손실을 입을 것으로 예상된다.",
+          "db_saved": true
+        },
+        {
+          "title": "삼성바이오 노조 첫 전면파업 돌입...\"6,400억 손실\" / YTN",
+          "video_id": "_CH6iXcKfDI",
+          "views": 1957,
+          "upload_date": "2026-05-01",
+          "url": "https://www.youtube.com/watch?v=_CH6iXcKfDI",
+          "subtitle_summary": "삼성바이오노조가 창사 첫 전면 파업으로 돌입하며 6,400억 손실 예상, 삼성전자 노조의 총파업 예고까지 겹쳐 바이오·반도체 업계와 전 경제에 파장 확산 우려가 커지고 있다. 노사는 경영 사항 명문화 및 임금 인상폭을 두고 교섭에서 합의점을 찾지 못하며 파업 사태가 장기화될 가능성이 제기되고 있다. 파업으로 인한 수주 차질 및 고객사 이탈 가능성 등 추가적인 손실 발생 우려도 고조되고 있다.",
+          "db_saved": true
+        },
+        {
+          "title": "삼성바이오 전면파업 이틀째…노사 입장차 '팽팽' / 연합뉴스TV (YonhapnewsTV)",
+          "video_id": "iQOjbcciYjs",
+          "views": 115,
+          "upload_date": "2026-05-02",
+          "url": "https://www.youtube.com/watch?v=iQOjbcciYjs",
+          "subtitle_summary": "삼성바이오 전면 파업이 2일째로 이어지고 있으며, 노조는 5일까지 파업을 유지할 계획이다. 노조는 임금 인상 및 경려급 지급을 요구하지만, 회사는 재원 확보를 고려하여 수용하기 어렵다는 입장이다. 파업 장기화 시 최소 640억 원 이상의 손실이 예상되며, 생산 차질과 제품 폐기 등의 문제도 발생하고 있다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0.6415,
+      "min": 1.3921,
+      "nb_score": 0.4608,
+      "avg_views": 7484.38,
+      "total_views": 59875
+    },
+    {
+      "keyword": "삼성바이오 전면 파업",
+      "is_fixed": false,
+      "views": [
+        23728,
+        22534,
+        262,
+        6000,
+        4148,
+        1957,
+        32,
+        120
+      ],
+      "video_count": 8,
+      "videos": [
+        {
+          "title": "삼성바이오 노조 첫 전면파업 돌입...\"6,400억 손실\" / YTN",
+          "video_id": "UpdYIynwd60",
+          "views": 23728,
+          "upload_date": "2026-05-01",
+          "url": "https://www.youtube.com/watch?v=UpdYIynwd60",
+          "subtitle_summary": "삼성바이오노조가 창사 첫 전면 파업으로 돌입하며 6,400억 원 손실이 예상되는 가운데, 경영진의 협상 소극적인 태도가 노사 갈등의 주요 원인이 되고 있습니다. 삼성전자 노조의 총파업 예고와 함께 두 회사의 파업이 국내 경제 전반에 미치는 파장 역시 우려되는 상황입니다. 파업으로 인한 수주 차질과 고객사 이탈 가능성 또한 제기되며, 손실 책임 소재에 대한 논쟁도 심화되고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "삼성바이오 노조 첫 전면파업 돌입...\"6,400억 손실\" / YTN",
+          "video_id": "JpeuKN9q1W8",
+          "views": 22534,
+          "upload_date": "2026-05-01",
+          "url": "https://www.youtube.com/watch?v=JpeuKN9q1W8",
+          "subtitle_summary": "삼성바이오로직스 노조가 창사 첫 전면 파업에 돌입하며 6,400억 원 규모의 손실이 예상되는 가운데, 경영진의 협상 소극적인 태도가 노조의 주장을 뒷받침하고 있으며, 삼성전자 노조의 총파업 예고로 경제 전반에 대한 우려가 커지고 있다.",
+          "db_saved": true
+        },
+        {
+          "title": "삼성바이오로직스 창사 이후 첫 전면 파업 / KBS  2026.05.02.",
+          "video_id": "1sMxA0w9Vhg",
+          "views": 262,
+          "upload_date": "2026-05-01",
+          "url": "https://www.youtube.com/watch?v=1sMxA0w9Vhg",
+          "subtitle_summary": "삼성바이오로직스 노조가 창사 이후 첫 전면 파업에 돌입하여 5일까지 파업을 진행하며, 격려금 지급 및 임금 인상, 성과급 배분 등을 요구하고 있습니다. 노사는 13차례 교섭 끝에 합의에 이르지 못했고, 파업은 노조 구성원들의 권익 보호를 위한 행동입니다. 향후 노사 협상을 통해 원만한 해결책 모색이 필요합니다.",
+          "db_saved": true
+        },
+        {
+          "title": "Samsung Biologics Launches All-Out Strike... Union Says \"Management Must Engage in Substantive Ne...",
+          "video_id": "BivDDZ2H47s",
+          "views": 6000,
+          "upload_date": "2026-05-01",
+          "url": "https://www.youtube.com/watch?v=BivDDZ2H47s",
+          "subtitle_summary": "삼성바이오로직스가 임금 및 성과급 인상 협상 결렬로 창사 첫 전면 파업에 돌입했으며, 노조는 14% 임금 인상과 영업이익의 20% 성과급 지급을 요구하고 있습니다. 파업으로 인한 막대한 피해가 예상되는 가운데, 사측은 임금 인상률을 낮게 제시하며 협상이 난항을 겪고 있습니다. 노조는 사측의 압박과 책임 전가에 대응하기 위한 즉각적인 실질 협상을 촉구하고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "삼성바이오 노조 첫 전면파업 돌입 [뉴스START] 다시보기 2026년 05월 02일  / YTN",
+          "video_id": "vF3hNHeNzRg",
+          "views": 4148,
+          "upload_date": "2026-05-01",
+          "url": "https://www.youtube.com/watch?v=vF3hNHeNzRg",
+          "subtitle_summary": "미국과 이란 간 종전 협상이 결렬되면서 이란이 파키스탄을 통해 새 협상안을 전달했으나 트럼프 대통령은 만족스럽지 않아 해상 봉쇄 등 전방위 고사 작전을 추진하고 있으며, 이란의 원유 수출량 급감으로 경제적 어려움이 가중되고 있다.",
+          "db_saved": true
+        },
+        {
+          "title": "삼성바이오 노조 첫 전면파업 돌입...\"6,400억 손실\" / YTN",
+          "video_id": "_CH6iXcKfDI",
+          "views": 1957,
+          "upload_date": "2026-05-01",
+          "url": "https://www.youtube.com/watch?v=_CH6iXcKfDI",
+          "subtitle_summary": "삼성바이오노조가 창사 첫 전면 파업으로 돌입하며 6,400억 손실이 예상되는 가운데, 노사는 경영사항 명문화 및 임금 인상폭을 두고 교섭에서 합의점을 찾지 못하고 있으며, 삼성전자 노조의 총파업 예고로 인해 그룹 전체와 한국 경제에 파장이 우려되고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "삼성바이오 전면파업 이틀째…노사 협상 '평행선' / 연합뉴스TV (YonhapnewsTV)",
+          "video_id": "_2ivsNcwRF8",
+          "views": 32,
+          "upload_date": "2026-05-02",
+          "url": "https://www.youtube.com/watch?v=_2ivsNcwRF8",
+          "subtitle_summary": "삼성바이오 전면 파업이 5일까지 이어질 전망이며, 파업으로 인한 최소 6,400억 원의 막대한 피해가 예상되는 가운데 노사 간 입장 차가 좁혀지지 않고 있습니다. 파업으로 생산 차질이 이미 발생했으며, 바이오 약품 공정 중단으로 인한 손실 규모가 커질 수 있다는 우려가 제기되고 있습니다. 오는 4일 중부지방 고용노동청 중재를 통해 재협상이 시도될 예정입니다.",
+          "db_saved": true
+        },
+        {
+          "title": "삼성바이오 전면파업 이틀째…노사 입장차 '팽팽' / 연합뉴스TV (YonhapnewsTV)",
+          "video_id": "iQOjbcciYjs",
+          "views": 120,
+          "upload_date": "2026-05-02",
+          "url": "https://www.youtube.com/watch?v=iQOjbcciYjs",
+          "subtitle_summary": "삼성바이오 전면 파업이 2일째로 이어지고 있으며, 노조는 5일까지 파업을 유지할 계획이다. 노조는 임금 인상 및 경려급 지급을 요구하지만, 회사는 재원 확보를 고려하여 수용하기 어렵다는 입장이다. 파업 장기화 시 최소 640억 원 이상의 손실이 예상되며, 생산 차질과 제품 폐기 등의 문제도 발생하고 있다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0.5973,
+      "min": 1.354,
+      "nb_score": 0.4412,
+      "avg_views": 7347.62,
+      "total_views": 58781
+    },
+    {
+      "keyword": "제시 트럼프",
+      "is_fixed": false,
+      "views": [
+        2638,
+        4492,
+        92,
+        978,
+        6635,
+        30463
+      ],
+      "video_count": 6,
+      "videos": [
+        {
+          "title": "Iran Proposes New End-of-War Proposal... Trump Says \"Not Satisfied\" / SBS",
+          "video_id": "Z9H7Otzylyw",
+          "views": 2638,
+          "upload_date": "2026-05-01",
+          "url": "https://www.youtube.com/watch?v=Z9H7Otzylyw",
+          "subtitle_summary": "이란이 미국과의 전쟁 종식을 위한 새 협상안을 제시했지만, 트럼프 대통령은 협상안에 만족하지 못하며 합의 가능성에 대한 의문을 제기했습니다. 이란 지도부에 내부 분열이 존재하여 협상이 더욱 어려울 것으로 예상되며, 종전 합의까지는 상당한 시간이 필요할 전망입니다. 트럼프 대통령은 전쟁권한법에 대한 위헌성을 주장하며 의회 승인 없이 이란과 전쟁할 수 있는 60일 시한에 반발했습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "이란, 새 종전안 제시...트럼프 \"만족 못 해\" 압박 지속 / YTN",
+          "video_id": "xSAfss0urS8",
+          "views": 4492,
+          "upload_date": "2026-05-02",
+          "url": "https://www.youtube.com/watch?v=xSAfss0urS8",
+          "subtitle_summary": "이란이 미국과 이스라엘과의 전쟁 중단을 전제로 핵 협상에 대한 준비 의사를 밝히며 새로운 종전안을 제시했으나, 트럼프 대통령은 만족하지 못하며 추가적인 요구를 할 가능성이 제기되고 있다. 경제적 어려움과 반조무시 우려로 최고 안보 위원회에서 협상에 중점 무게를 두고 있으며, 협상 결과에 따라 전향적인 양보 가능성은 낮다고 분석된다.",
+          "db_saved": true
+        },
+        {
+          "title": "이란, 새 종전안 제시…트럼프 \"불만족·조기철수 안해\" / 연합뉴스TV (YonhapnewsTV)",
+          "video_id": "auR7vSNFKlo",
+          "views": 92,
+          "upload_date": "2026-05-02",
+          "url": "https://www.youtube.com/watch?v=auR7vSNFKlo",
+          "subtitle_summary": "이란이 미국의 새 종전안을 제시했지만, 트럼프 대통령은 협상안에 만족하지 못하며 미군 조기 철수에 대한 압박을 지속하는 가운데 양국 간의 협상 교착 상태가 우려되는 상황이다. 아라그치 외무장관은 외교적 해법 가능성을 열어두었으나, 트럼프 대통령은 합의에 대한 불만을 드러내면서 협상 난항을 예고했다. 미군은 이란에 대한 새 군사 옵션을 보고했지만, 합의 전까지 미군 철수에는 신중한 입장을 보이며 양국 간의 긴장감을 높였다.",
+          "db_saved": true
+        },
+        {
+          "title": "이란, 새 종전안 제시…트럼프 “만족스럽지 않아” / KBS  2026.05.02.",
+          "video_id": "p7SBOiq6y2A",
+          "views": 978,
+          "upload_date": "2026-05-01",
+          "url": "https://www.youtube.com/watch?v=p7SBOiq6y2A",
+          "subtitle_summary": "이란이 전쟁 종식을 위한 새 협상안을 제시했지만, 트럼프 미국 대통령은 협상안에 만족하지 못하며 이란 지도부의 분열을 이유로 합의 가능성에 의구심을 표명했습니다. 아라그치 이란 외무장관은 미국의 과도한 요구 중단 시 외교적 해법에 대한 노력을 시사했지만, 미국의 냉랭한 반응은 여전히 협상 진전을 불투명하게 만들었습니다. 이란의 새 제안과 함께 이스라엘의 군사 작전 계획이 언급되며, 향후 협상 및 상황 전망에 대한 불확실성이 커지고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "트럼프 \"이란 제안 만족스럽지 않아...지도부 분열\" / YTN",
+          "video_id": "4Vc7JXrNnfE",
+          "views": 6635,
+          "upload_date": "2026-05-01",
+          "url": "https://www.youtube.com/watch?v=4Vc7JXrNnfE",
+          "subtitle_summary": "트럼프 대통령은 이란의 새 협상안에 만족하지 못하며, 핵과 관련된 구체적인 내용이 부족하다고 비판하며, 이란 지도부의 분열로 종전 합의가 쉽지 않다고 지적했습니다. 이란은 호르무즈 해협 개방과 제재 해제를 조건으로 핵 협상을 제안했으나, 트럼프 대통령은 이에 대한 만족감을 보이지 않고 추가 협상을 시도할 것으로 예상됩니다. 60일 전쟁 권한법 만료 시 미국의 파병 종료 가능성과 함께, 이란의 핵미사일 보유 의지가 협상에 변수로 작용할 수 있다는 분석이 나왔습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "이란, 새 종전 협상안 제시…트럼프 \"만족스럽지 않아\" 外 - SBS 모닝와이드｜5/2(토)",
+          "video_id": "6DQKh0NstB0",
+          "views": 30463,
+          "upload_date": "2026-05-01",
+          "url": "https://www.youtube.com/watch?v=6DQKh0NstB0",
+          "subtitle_summary": "이란이 새로운 종전 협상안을 제시했지만 트럼프 대통령은 제한이 만족스럽지 않아 종전 합의까지는 여전히 갈 길이 멀다고 평가했으며, 트럼프 대통령은 유럽산 자동차에 대한 관세 부과를 재개하겠다고 발표하여 유럽과의 무역 갈등이 심화될 수 있다는 우려가 제기되었습니다. 또한, 전국적으로 노동절 기념 행사가 열렸고, 경상북도 상주와 전남 고흥에서 각각 고속도로 추돌 사고와 화재가 발생하여 인명 피해가 속출했습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0.398,
+      "min": 1.2431,
+      "nb_score": 0.3202,
+      "avg_views": 7549.67,
+      "total_views": 45298
+    },
+    {
+      "keyword": "철수 관세",
+      "is_fixed": false,
+      "views": [
+        11342,
+        7640,
+        2434,
+        301851,
+        916,
+        8594
+      ],
+      "video_count": 6,
+      "videos": [
+        {
+          "title": "Retaliation against Europe... \"Withdrawal of 5,000 US Troops from Germany, Tariff Hike\" (2026.05....",
+          "video_id": "aqyhBHYacCw",
+          "views": 11342,
+          "upload_date": "2026-05-02",
+          "url": "https://www.youtube.com/watch?v=aqyhBHYacCw",
+          "subtitle_summary": "[트럼프 미국 대통령이 유럽에 대한 보복 조치로 독일 주둔 미군 5,000명 철수를 결정하고, 유럽 연합산 승용차·트럭 관세를 25%로 인상하겠다고 발표하여 국제적인 파장을 일으키고 있다.]",
+          "db_saved": true
+        },
+        {
+          "title": "Retaliation against Europe... \"Withdrawal of 5,000 US Troops from Germany, Tariff Hike\" - [LIVE] ...",
+          "video_id": "JJVnjs8ujkk",
+          "views": 7640,
+          "upload_date": "2026-05-02",
+          "url": "https://www.youtube.com/watch?v=JJVnjs8ujkk",
+          "subtitle_summary": "트럼프 미국 대통령은 유럽에 대한 보복 조치로 독일 주둔 미군 5,000명 철수를 결정했으며, 유럽 연합산 승용차·트럭 관세를 25%로 인상 예고했습니다. 이는 유럽의 이란 전쟁 비판과 군기지 사용 거부 등에 대한 대응으로 분석되며, 다른 동맹국으로의 미군 철수 가능성도 제기되었습니다. 또한, 종전 합의 원한에 대한 여론이 높아짐에도 불구하고 트럼프 대통령은 협상안에 불만을 표명하며 진전 가능성에 대한 의구심을 드러냈습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "\"Withdrawal of 5,000 US Troops from Germany · 25% Tariff on European Cars\" / SBS",
+          "video_id": "B7gapcQTHTM",
+          "views": 2434,
+          "upload_date": "2026-05-02",
+          "url": "https://www.youtube.com/watch?v=B7gapcQTHTM",
+          "subtitle_summary": "미국이 독일 주둔 미군 5,000명 철수를 결정하고, 유럽산 자동차에 25% 관세를 재부과하며 안보 및 무역 보복 조치를 강화하는 가운데, 유럽 동맹국들의 반발과 비판이 거세지고 있습니다. 6개월에서 12개월 안에 완료될 예정인 철수는 3,600명 감축에 해당하며, 유럽연합은 미국의 약속 불이행에 대한 대응을 예고했습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "Trump Turns Pentagon Upside Down with 'US Troop Withdrawal'... Against UK Discriminatory Treatmen...",
+          "video_id": "y9mMYOrPn6g",
+          "views": 301851,
+          "upload_date": "2026-05-01",
+          "url": "https://www.youtube.com/watch?v=y9mMYOrPn6g",
+          "subtitle_summary": "[트럼프 대통령이 나토 동맹국인 독일, 이탈리아, 스페인에 주둔하는 미군 철수를 검토하면서 미국 내에서 국익 손상에 대한 우려가 커지고, 국방부까지 발칵 뒤집혔습니다. 트럼프 대통령은 이란에 대한 대응에 불만을 품고 영국을 비난했던 이전의 태도를 번복하며 관세 정책을 양보했습니다. 이러한 즉흥적인 의사 결정은 동맹국들과의 관계에 혼란을 야기하며, 미국의 국제적 리더십에 대한 비판을 증폭시키고 있습니다.]",
+          "db_saved": true
+        },
+        {
+          "title": "트럼프 “EU 차량 관세 25%로↑”…주독 미군 약 5천 명 철수 / KBS  2026.05.02.",
+          "video_id": "CK2-y2AhXgU",
+          "views": 916,
+          "upload_date": "2026-05-02",
+          "url": "https://www.youtube.com/watch?v=CK2-y2AhXgU",
+          "subtitle_summary": "트럼프 대통령이 이유 승용차 트럭에 대한 관세를 25%로 인상하겠다고 발표했으며, 이는 대미 투자 약속 불이행을 근거로 삼았으며, 독일 주둔 미군 약 5천 명 철수 결정으로 파장이 이어질 전망이다. 관세 인상은 다음 주부터 적용될 예정이며, 이란전 지원에 대한 불만과 메르츠 총리와의 설전이 복합적으로 작용한 것으로 분석된다. 트럼프 대통령은 60일 시안을 활용한 군사 작전 지속을 시사하며 다시 전국 주도권을 확보하려는 전략을 보였다.",
+          "db_saved": true
+        },
+        {
+          "title": "속보) 트럼프, 주독 미군 철수 명령! 유럽 자동차 관세 25% 인상 선언! 보수재건 난리났다! (5월 2일 오후 2시 서울역 1호선 3번출구 공간모아)",
+          "video_id": "5_AccZSeJEw",
+          "views": 8594,
+          "upload_date": "2026-05-02",
+          "url": "https://www.youtube.com/watch?v=5_AccZSeJEw",
+          "subtitle_summary": "트럼프 대통령이 미국 주둔 이란군 일찍 철수 명령을 내렸으며, 핵무기 재개발 문제에 대한 경고와 함께 이란군에 대한 공격 사실을 부각하여 보복 의사를 시사했습니다. 또한, 유가 급락과 주식 시장 하락을 예상하며, 한일전 비협조에 대한 보복 가능성을 언급했습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0.2176,
+      "min": 0.9991,
+      "nb_score": 0.2178,
+      "avg_views": 55462.83,
+      "total_views": 332777
+    },
+    {
+      "keyword": "부동산 지옥",
+      "is_fixed": false,
+      "views": [
+        68670
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "\"정말 지옥이 찾아올 겁니다\" 모두가 실거주하면 이렇게 됩니다 [김제경 박사 2부]",
+          "video_id": "gJe3RaGlueM",
+          "views": 68670,
+          "upload_date": "2026-05-01",
+          "url": "https://www.youtube.com/watch?v=gJe3RaGlueM",
+          "subtitle_summary": "[정부의 비거주 1주택자 규제는 매물 털어내기 위한 조치로, 장기보유 특별 공제 폐지 시 양극화 심화 및 시장 혼란을 야기할 수 있으며, 결국 매물 증가를 통해 부동산 가격 상승을 유도하려는 전략이다.]",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "빼고 관세",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "병력 빼고 관세",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "빼고 관세 인상",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    }
+  ]
+}

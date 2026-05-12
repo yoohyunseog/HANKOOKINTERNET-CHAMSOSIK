@@ -1,0 +1,433 @@
+{
+  "timestamp": "2026-04-27T08:49:16.040321",
+  "model": "news-singleline:latest",
+  "keyword_count": 3,
+  "analyze_subtitles": true,
+  "analysis_source": "youtube",
+  "keywords": [
+    {
+      "keyword": "오늘의 주요 뉴스",
+      "is_fixed": true,
+      "views": [
+        342
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "[Morning Wide] Today's Top News / SBS",
+          "video_id": "v8mYyIekndM",
+          "views": 342,
+          "upload_date": "2026-04-26",
+          "url": "https://www.youtube.com/watch?v=v8mYyIekndM",
+          "subtitle_summary": "[미국 백악관에서 총기 난사 사건 발생 시, 용의자가 트럼프 대통령 암살을 시도하려는 성명서를 작성한 사실이 드러났으며, 이란 외무장관이 파키스탄으로 귀환하며 종전 조건 재협상을 거부하고, 고육 피해 지원금 지급 및 카드깡 특별 단속이 진행 중이다. 런던 마라톤에서 사바스티안 사회 선수가 두 시간 벽을 깨고 세계 신기록을 세웠다.]",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "미 이란 협상 교착",
+      "is_fixed": false,
+      "views": [
+        2645,
+        290
+      ],
+      "video_count": 2,
+      "videos": [
+        {
+          "title": "미국-이란 협상, 다시 교착국면으로…핵·호르무즈 두고 '강대강' 충돌 [현장쏙] / 연합뉴스TV(YonhapnewsTV)",
+          "video_id": "NszWxPYfXPM",
+          "views": 2645,
+          "upload_date": "2026-04-26",
+          "url": "https://www.youtube.com/watch?v=NszWxPYfXPM",
+          "subtitle_summary": "미국과 이란의 2차 협상이 파키스탄에서 무산되면서 ‘강대강’ 충돌이 지속되고 있으며, 호르무즈 해협 봉쇄와 핵 문제로 인한 양국 간 신경전이 고조되고 있습니다. 미국은 압박 수위를 높이는 동시에 이란과의 대화 가능성을 열어두고 있으며, 트럼프 대통령은 협상 우위를 확보하며 이란을 압박하는 전략을 보이고 있습니다. 아라그치 외무 장관의 파키스탄 재방문은 여전히 협상 가능성을 모색하고 있음을 시사합니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[뉴스특보] 美총격범, 범행직전 성명 작성…미·이란 협상 교착 / 연합뉴스TV (YonhapnewsTV)",
+          "video_id": "Dfxx8FBczj8",
+          "views": 290,
+          "upload_date": "2026-04-26",
+          "url": "https://www.youtube.com/watch?v=Dfxx8FBczj8",
+          "subtitle_summary": "[트럼프 대통령 암살 시도 총격 사건 발생, 범행 직전 성명서 작성 확인되며 이란과의 협상 교착 상태가 심화되었고, 사건 발생 장소가 이스라엘 대사관과 가까워 외교적 파장을 더하고 있으며, 트럼프 대통령은 사건을 개인의 일탈로 치부하며 이란과의 협상 무관을 시도했다.]",
+          "db_saved": true
+        }
+      ],
+      "max": 2.7842,
+      "min": 2.0518,
+      "nb_score": 1.3569,
+      "avg_views": 1467.5,
+      "total_views": 2935
+    },
+    {
+      "keyword": "고유가 지원금 지급",
+      "is_fixed": false,
+      "views": [
+        85427,
+        41604,
+        12367,
+        7651
+      ],
+      "video_count": 4,
+      "videos": [
+        {
+          "title": "'고유가 피해지원금' 27일부터 지급…\"나도 대상?\" 신청은 어떻게 [뉴스7]",
+          "video_id": "MKDkEYb9AAM",
+          "views": 85427,
+          "upload_date": "2026-04-26",
+          "url": "https://www.youtube.com/watch?v=MKDkEYb9AAM",
+          "subtitle_summary": "[정부가 고유가 피해를 본 국민들을 위해 추경 예산으로 최대 60만원까지 지급하는 지원금을 8월 27일부터 시작하며, 기초생활 수급자 및 소득 하위 70%를 대상으로 지역별 차등 지급될 예정입니다.]",
+          "db_saved": true
+        },
+        {
+          "title": "고유가지원금 내일부터 지급…'나는 얼마받을까?' / 연합뉴스TV (YonhapnewsTV)",
+          "video_id": "QwIEaxvTD8Y",
+          "views": 41604,
+          "upload_date": "2026-04-26",
+          "url": "https://www.youtube.com/watch?v=QwIEaxvTD8Y",
+          "subtitle_summary": "내일부터 정부가 고유가 피해를 입은 전 국민의 70%에게 최대 25만원을 지원하며, 기초생활 수급자와 취약 계층이 우선 지급받을 수 있으며, 지역별 차등 지급 및 지역사랑상품권으로 현금화 가능하다.",
+          "db_saved": true
+        },
+        {
+          "title": "'고유가 지원금' 내일부터 신청 가능…누가 얼마 받나 [이슈PLAY] / JTBC News",
+          "video_id": "XJhy-miiQvM",
+          "views": 12367,
+          "upload_date": "2026-04-26",
+          "url": "https://www.youtube.com/watch?v=XJhy-miiQvM",
+          "subtitle_summary": "[중동사태로 인한 물가 상승에 대비하여 기초생활 수급자, 차상위 계층, 한부모 가족 등 취약 계층을 대상으로 내일부터 보유가 피해 지원금이 45만 원에서 55만 원 한도로 지급될 예정이며, 70%의 국민에게 10만 원에서 60만 원을 지급하는 추가 지원도 추진 중이다.]",
+          "db_saved": true
+        },
+        {
+          "title": "Comparison of High Oil Price Relief Payment Methods: Credit Card vs. Prepaid Card vs. Gift Certif...",
+          "video_id": "ijNw3p6redM",
+          "views": 7651,
+          "upload_date": "2026-04-26",
+          "url": "https://www.youtube.com/watch?v=ijNw3p6redM",
+          "subtitle_summary": "고유가 PH 연금 신청 시 신용 카드, 체크 카드, 선불 카드, 지역사랑 상품권 등 다양한 지급 방식 중 가장 적합한 방법을 선택하는 것이 중요하며, 각 방식별 특징과 장단점을 비교 분석하여 개인의 상황에 맞는 최적의 방법을 선택해야 합니다. 신용/체크 카드는 편리하지만 지원금 사용에 대한 인식 부족이 있을 수 있으며, 할인 혜택 및 분실 시 재발급 등 장점을 제공합니다. 선불 카드는 지역 소상공인 매장에서만 사용 가능하며, 지역사랑 상품권은 지역 내 매장에서만 사용 가능합니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 1.069,
+      "min": 2.1025,
+      "nb_score": 0.5084,
+      "avg_views": 36762.25,
+      "total_views": 147049
+    },
+    {
+      "keyword": "샌프란시스코 자이언츠",
+      "is_fixed": false,
+      "views": [
+        274060,
+        4830,
+        14647
+      ],
+      "video_count": 3,
+      "videos": [
+        {
+          "title": "마이애미 vs 샌프란시스코｜5분 하이라이트｜2026 MLB (04.26)",
+          "video_id": "JYmkR5MUq8A",
+          "views": 274060,
+          "upload_date": "2026-04-26",
+          "url": "https://www.youtube.com/watch?v=JYmkR5MUq8A",
+          "subtitle_summary": "마이애미와 샌프란시스코의 경기에서 이정후 선수가 멀리 타구를 날려 2루를 득점했고, 유리 페레즈가 동점을 만들었으며, 라모스 선수가 홈런을 쳐 동점을 만들었습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "Jung Hoo Lee Delivers Amazing 4-Hit Performance vs Marlins | San Francisco Giants Highlights",
+          "video_id": "tT3TraHIoFg",
+          "views": 4830,
+          "upload_date": "2026-04-26",
+          "url": "https://www.youtube.com/watch?v=tT3TraHIoFg",
+          "subtitle_summary": "류현정 선수가 마린스와의 경기에서 4안타를 기록하며 팀의 귀중한 활약을 보였다. 첫 경기부터 맹렬한 타격으로 관중을 열정적으로 만들었으며, 6개의 타구를 포함해 경기 내내 강타 경향을 보였다. 류현정 선수의 뜨거운 타격감은 팀의 승리에 크게 기여했다.",
+          "db_saved": true
+        },
+        {
+          "title": "[스클 LIVE] 2026 메이저리그 샌프란시스코 자이언츠 : 마이애미 말린스 / 2026.04.27 경기 (이정후 1번 우익수 선발 출전)",
+          "video_id": "3TXs4GOctHk",
+          "views": 14647,
+          "upload_date": "2026-04-26",
+          "url": "https://www.youtube.com/watch?v=3TXs4GOctHk",
+          "subtitle_summary": "[2026년 메이저리그 샌프란시스코 자이언츠와 마이애미 말린스 경기에서 이정후 선수가 1번 타자 우익수로 선발 출전하며, 아라즈의 휴식과 타순 변화에 따라 이정후 선수의 역할이 확대될 가능성을 주목해야 한다. 김혜성 선수는 왼손 투수를 상대하는 시카고 컵스 선발 투수 자완을 상대로 유격수로 출전하며, 무키베트와 배츠의 복귀 가능성도 고려해야 한다. 송성문 선수는 멕시코 시리즈에서 교체 명단에 올라온 상태로 데뷔 여부가 중요한 소식이다.]",
+          "db_saved": true
+        }
+      ],
+      "max": 0.9949,
+      "min": 1.9702,
+      "nb_score": 0.505,
+      "avg_views": 97845.67,
+      "total_views": 293537
+    },
+    {
+      "keyword": "트럼프 총격 사건",
+      "is_fixed": false,
+      "views": [
+        22489,
+        53085,
+        113970,
+        74142,
+        138573,
+        23704,
+        22715,
+        115904,
+        19314
+      ],
+      "video_count": 9,
+      "videos": [
+        {
+          "title": "Charges full speed into security checkpoint with a gun... Video of Trump shooter revealed / SBS 8...",
+          "video_id": "3uuojXqbfVw",
+          "views": 22489,
+          "upload_date": "2026-04-26",
+          "url": "https://www.youtube.com/watch?v=3uuojXqbfVw",
+          "subtitle_summary": "[힐튼 호텔 지하에서 총기를 조립한 용의자가 백악관 기자단 만찬 행사에 돌진, 보안 요원과 총격전 끝에 제압되었으며, 산탄총과 칼 등 여러 무기를 소지한 채 공무원 폭행 혐의로 체포되었다.]",
+          "db_saved": true
+        },
+        {
+          "title": "Shooting at dinner attended by Trump... Trump evacuated, suspect arrested / SBS / #D Report",
+          "video_id": "VawwfawuG8Q",
+          "views": 53085,
+          "upload_date": "2026-04-26",
+          "url": "https://www.youtube.com/watch?v=VawwfawuG8Q",
+          "subtitle_summary": "트럼프 대통령이 참석한 백악관 출입 기자단 만찬 중 행사장 내에서 총격음이 발생하여 트럼프 대통령과 수행자들이 피신했고, 용의자가 현장에서 체포되었습니다. 현재 트럼프 대통령과 벤스부통능도는 부상 없이 안전한 것으로 보고되었으며, 사건 경위를 조사 중입니다. 보안 강화 및 추가적인 안전 조치에 대한 논의가 진행될 것으로 예상됩니다.",
+          "db_saved": true
+        },
+        {
+          "title": "Why a Caltech Graduate 'Teacher of the Month'? 'Trump Gunner's' Revealed Past 'Shocking' (Subtitl...",
+          "video_id": "IQr0D5WBGaY",
+          "views": 113970,
+          "upload_date": "2026-04-26",
+          "url": "https://www.youtube.com/watch?v=IQr0D5WBGaY",
+          "subtitle_summary": "[캘리포니아 공대 출신으로 이달의 교사 선정까지 받은 31세 남성이 트럼프를 겨냥한 암살 시도 사건의 용의자로 체포되었으며, 링크드인 프로필을 통해 교사 및 게임 개발자로 활동해 온 사실이 드러났습니다. 휠체어용 비상 제동장치 개발로도 인정받은 그의 과거는 충격적 범행과 대비되며 주목받고 있습니다. 현재 범행 동기는 아직 밝혀지지 않았으나, 트럼프는 정신적인 문제 가능성을 시사하며 단독 범행으로 보고 있습니다.]",
+          "db_saved": true
+        },
+        {
+          "title": "[속보] \"트럼프 만찬장에 총격...당국, 용의자 체포\" / YTN",
+          "video_id": "utY5k-Mi7zY",
+          "views": 74142,
+          "upload_date": "2026-04-26",
+          "url": "https://www.youtube.com/watch?v=utY5k-Mi7zY",
+          "subtitle_summary": "도널드 트럼프 대통령이 참석한 백악관 기자단 만찬 중 행사장 내에서 총격음이 발생하여 트럼프 대통령을 포함한 참석자들이 피신, 비밀 경호국이 현장 통제 및 수색 중이다.",
+          "db_saved": true
+        },
+        {
+          "title": "총격 사건 알고 있었나? 백악관 대변인의 의미심장한 인터뷰 [지금이뉴스] / YTN",
+          "video_id": "4gexOr8bSfU",
+          "views": 138573,
+          "upload_date": "2026-04-26",
+          "url": "https://www.youtube.com/watch?v=4gexOr8bSfU",
+          "subtitle_summary": "백악관 기자단 만찬 행사 중 발생한 총격 사건 직전에 백악관 대변인이 “오늘 밤에 총성이 울릴 것이다”라는 발언을 한 사실이 드러나면서 사건의 배후를 의심하는 시각이  높아지고 있습니다. 용의자는 체포되었고, 총격 사건으로 인해 부상자는 없었으나 한 경호 요원이 총에 맞은 채 생존했으며, 트럼프 대통령은 단독 범행으로 결론지었습니다. 사건 발생 후, 미국과 이란의 관계에 대한 오해를 불식시키기 위한 대통령의 설명이 덧붙여졌습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "'Bang' and Simultaneous Shaking of Water Glass... The Tense Scene of the Shooting at the Trump Di...",
+          "video_id": "VZaC6fEMjho",
+          "views": 23704,
+          "upload_date": "2026-04-26",
+          "url": "https://www.youtube.com/watch?v=VZaC6fEMjho",
+          "subtitle_summary": "트럼프 대통령이 참석한 만찬 중 물잔이 갑자기 흔들리며 총격음이 발생했고, 경호팀이 대통령과 일행을 안전한 곳으로 대피시켰다. 용의자가 체포되었으며, 트럼프 대통령은 헌법에 대한 공격으로 규정하고 용감한 경호팀의 역할을 강조했다. 사건 발생 후 긴급 기자 회견이 열려 추가적인 정보가 흘러나왔다.",
+          "db_saved": true
+        },
+        {
+          "title": "[News Catch] [Breaking News] [Urgent] Attempted Trump Assassination? Serial Burnouts During White...",
+          "video_id": "Vu25GpfqIeY",
+          "views": 22715,
+          "upload_date": "2026-04-26",
+          "url": "https://www.youtube.com/watch?v=Vu25GpfqIeY",
+          "subtitle_summary": "[무슨 일이 벌어진 것인지 파악하지 못한 채, 갑작스러운 공격에 당황한 상태로 사람들을 안전한 곳으로 이동시키려 하지만, 한 명이 쓰러지는 상황이 발생한다.]",
+          "db_saved": true
+        },
+        {
+          "title": "트럼프 만찬장에서 총격...용의자 체포 / YTN",
+          "video_id": "LX0uneSVz9w",
+          "views": 115904,
+          "upload_date": "2026-04-26",
+          "url": "https://www.youtube.com/watch?v=LX0uneSVz9w",
+          "subtitle_summary": "[트럼프 대통령이 참석한 배관 출입 기자 협회 만찬 중, 행사장에 무장한 비밀 경호국 요원들이 투입되어 만찬 참석자들을 대피시켰고, 트럼프 대통령과 멜라니아 여사 등 주요 내빈은 안전하게 현장에서 대피한 것으로 알려졌다.]",
+          "db_saved": true
+        },
+        {
+          "title": "트럼프 참석한 기자단 만찬서 '총격'...범인은 30대 남성",
+          "video_id": "84X9A5-sp3Q",
+          "views": 19314,
+          "upload_date": "2026-04-26",
+          "url": "https://www.youtube.com/watch?v=84X9A5-sp3Q",
+          "subtitle_summary": "[트럼프 기자단 만찬에서 무장한 남성이 보안 점검을 시도하다 보안 요원들에 의해 제압되었으며, 용감한 대응으로 위기를 극복했다.]",
+          "db_saved": true
+        }
+      ],
+      "max": 0.9485,
+      "min": 1.9549,
+      "nb_score": 0.4852,
+      "avg_views": 64877.33,
+      "total_views": 583896
+    },
+    {
+      "keyword": "아모레퍼시픽 주가",
+      "is_fixed": false,
+      "views": [
+        50,
+        71,
+        1087
+      ],
+      "video_count": 3,
+      "videos": [
+        {
+          "title": "아모레퍼시픽 아모레퍼시픽홀딩스/출발일 뿐? 왜 흥분해야? 선수들 총력 배팅/그 진짜 이유 #아모레퍼시픽홀딩스 #아모레퍼시픽  #아모레퍼시픽홀딩스 주가 #아모레퍼시픽 주가  #",
+          "video_id": "lfFADL53cjM",
+          "views": 50,
+          "upload_date": "2026-04-26",
+          "url": "https://www.youtube.com/watch?v=lfFADL53cjM",
+          "subtitle_summary": "아모레퍼시픽홀딩스 주가 급등 배경으로 반도체 영업이익 증가와 화장품 수출 급증을 분석하며, 이는 단기적인 반등 가능성이 높다는 전망을 제시하고 있으며, 실시간 정보 및 투자 팁을 제공하기 위한 텔레그램 방 운영을 안내하고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[Amorepacific] Earnings Expectations! What Is the Future Outlook for Amorepacific? \"Hot Pick Stoc...",
+          "video_id": "wQPJz-9XDRY",
+          "views": 71,
+          "upload_date": "2026-04-26",
+          "url": "https://www.youtube.com/watch?v=wQPJz-9XDRY",
+          "subtitle_summary": "아모레퍼시픽 주가 급등 배경은 화장품주 전반의 강세와 긍정적인 실적 발표에 있으며, 특히 APR과 달바 글로벌 등 일부 종목이 주목받고 있습니다. 아모레퍼시픽은 실적 개선으로 주가 강세 가능성이 있지만, 분기별 실적 변동성이 존재하여 꾸준한 성과를 기대하기는 어렵습니다. 과거 2015년, 2016년의 높은 실적을 감안할 때, 향후 예상치 이상의 실적을 기록할 경우 주가 상승 가능성이 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[Amorepacific Stock Price Outlook] Why Now Is Crucial!!! If You Don't Know, You're Bound to Be Ta...",
+          "video_id": "XoMdbPfrz18",
+          "views": 1087,
+          "upload_date": "2026-04-26",
+          "url": "https://www.youtube.com/watch?v=XoMdbPfrz18",
+          "subtitle_summary": "아모레퍼시픽 주가 전망을 분석하는 영상으로, 투자자들에게 정확한 정보와 시의적절한 매수/매도 타이밍을 제공하기 위해 실제 계좌 정보를 공개하며 투자 전략을 설명하고 있다. 특히 라이온캠텍의 성공적인 단타 투자 사례를 통해 투자 시점의 중요성을 강조하며, 투자자들이 정보에 기반하여 신중하게 투자 결정을 내리도록 유도하고 있다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0.9847,
+      "min": 2.0917,
+      "nb_score": 0.4708,
+      "avg_views": 402.67,
+      "total_views": 1208
+    },
+    {
+      "keyword": "아이언 돔 한국 도입",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "삼성전자 파업 위기",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "가짜 난민 브로커",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "반려동물 병원 진료",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "T-50A 훈련기 미국 수출",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "KF-21 전력화 지연",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "퇴직연금 IRP 전환",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "삼성전자 1분기 실적",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "코스피 박스권 전망",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "로베르트 레반도프스키",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    }
+  ]
+}

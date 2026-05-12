@@ -1,0 +1,275 @@
+{
+  "timestamp": "2026-04-27T01:21:26.354907",
+  "model": "news-singleline:latest",
+  "keyword_count": 3,
+  "analyze_subtitles": true,
+  "analysis_source": "youtube",
+  "keywords": [
+    {
+      "keyword": "오늘의 주요 뉴스",
+      "is_fixed": true,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "트럼프 피격 사건",
+      "is_fixed": false,
+      "views": [
+        114893,
+        18348,
+        72777,
+        48095,
+        17335,
+        3234
+      ],
+      "video_count": 6,
+      "videos": [
+        {
+          "title": "트럼프 만찬장에서 총격...용의자 체포 / YTN",
+          "video_id": "LX0uneSVz9w",
+          "views": 114893,
+          "upload_date": "2026-04-26",
+          "url": "https://www.youtube.com/watch?v=LX0uneSVz9w",
+          "subtitle_summary": "[트럼프 대통령이 참석한 배관 출입 기자 협회 만찬 중, 행사장에 무장한 비밀 경호국 요원들이 갑자기 투입되어 내빈들을 보호하고 대피시키는 긴급 상황이 발생했으며, 트럼프 대통령과 멜라니아 여사 등 주요 내빈은 안전하게 대피하여 현재 부상자는 없는 것으로 파악되었다.]",
+          "db_saved": true
+        },
+        {
+          "title": "트럼프 노린 총격범 영상 봤더니…장총 들고 검색대 휙 돌진 [현장쏙]  / 연합뉴스TV(YonhapnewsTV)",
+          "video_id": "r3IwN7zeRiE",
+          "views": 18348,
+          "upload_date": "2026-04-26",
+          "url": "https://www.youtube.com/watch?v=r3IwN7zeRiE",
+          "subtitle_summary": "[트럼프 대통령이 무대에서 연설하던 중, 총격범이 빠르게 무대로 돌진하여 멜라니아 여사를 함께 대피시키고 추가 보안 인력이 현장을 수색하는 상황이 전파되었습니다.]",
+          "db_saved": true
+        },
+        {
+          "title": "[속보] \"트럼프 만찬장에 총격...당국, 용의자 체포\" / YTN",
+          "video_id": "utY5k-Mi7zY",
+          "views": 72777,
+          "upload_date": "2026-04-26",
+          "url": "https://www.youtube.com/watch?v=utY5k-Mi7zY",
+          "subtitle_summary": "도널드 트럼프 대통령이 참석한 백악관 기자단 만찬 중 행사장 내에서 총소리(포격)가 발생하여 트럼프 대통령을 포함한 참석자들이 피신, 현재 정확한 경위와 피해 여부는 확인 중이다.",
+          "db_saved": true
+        },
+        {
+          "title": "Shooting at dinner attended by Trump... Trump evacuated, suspect arrested / SBS / #D Report",
+          "video_id": "VawwfawuG8Q",
+          "views": 48095,
+          "upload_date": "2026-04-26",
+          "url": "https://www.youtube.com/watch?v=VawwfawuG8Q",
+          "subtitle_summary": "트럼프 대통령이 참석한 백악관 출입 기자단 만찬 중 행사장 내에서 폭발음이 발생하여 대통령과 수행원들이 피신했고, 용의자가 현장에서 체포되었습니다. 현재 트럼프 대통령과 벤스부통능도 부상 없이 안전한 것으로 확인되었으며, 사건 경위를 조사 중입니다. 보안 강화 및 추가 상황 전파를 기다리는 가운데, 만찬은 즉시 중단되었습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "트럼프 참석한 기자단 만찬서 '총격'...범인은 30대 남성",
+          "video_id": "84X9A5-sp3Q",
+          "views": 17335,
+          "upload_date": "2026-04-26",
+          "url": "https://www.youtube.com/watch?v=84X9A5-sp3Q",
+          "subtitle_summary": "[트럼프 기자단 만찬에서 30대 남성이 무기를 들고 보안 점검을 공격, 용의자는 보안 요원들의 신속한 대응으로 제압당했다.]",
+          "db_saved": true
+        },
+        {
+          "title": "집권 후 첫 암살 시도 의심 사건...2년 만에 벌써 3번째 / YTN",
+          "video_id": "VwJ6yN5RJC8",
+          "views": 3234,
+          "upload_date": "2026-04-26",
+          "url": "https://www.youtube.com/watch?v=VwJ6yN5RJC8",
+          "subtitle_summary": "트럼프 대통령은 집권 후 첫 암살 시도 의심 사건을 포함하여 지난 2년 동안 총 세 차례에 걸쳐 직접적인 총격 위험에 노출되었으며, 이는 민주당 후보를 꺾고 대통령이 된 결정적인 계기가 되었습니다. 이번 사건에서는 연설 중 총격범의 공격을 입어 부상을 입었으며, 골프장에서도 소총으로 위협을 받았습니다. 이러한 암살 시도 의혹은 트럼프 대통령의 안전을 심각하게 위협하는 요인으로 작용하고 있습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0.9672,
+      "min": 1.6714,
+      "nb_score": 0.5787,
+      "avg_views": 45780.33,
+      "total_views": 274682
+    },
+    {
+      "keyword": "야닉 시너",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "정성호",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "LG그룹 신규 사업",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "킵초게",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "장특공제 개편 논란",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "서울교육감 경선",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "이란 백악관 음모론",
+      "is_fixed": false,
+      "views": [
+        6167
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "이란 언론 '백악관 만찬 총격'에 음모론...\"겁쟁이들\" / YTN",
+          "video_id": "beE1m2Z0WRM",
+          "views": 6167,
+          "upload_date": "2026-04-26",
+          "url": "https://www.youtube.com/watch?v=beE1m2Z0WRM",
+          "subtitle_summary": "이란 관영 통신은 백악관 만찬 총격 사건을 음모론으로 여기며 트럼프 대통령을 겁쟁이라고 비판하고, 미국 정부 관계자들의 대피를 조롱하는 등 논란을 일으키고 있다.이란은 파키스탄 방문 외무 장관을 파견하여 해상 봉쇄 해제와 협상 재개를 시도했으나, 미군이 상선 요격으로 해상 봉쇄를 유지하며 협상 가능성을 낮추고 있다.미국과 이란 간의 회담은 파키스탄을 거점으로 한 외교적 노력에도 불구하고, 해상 봉쇄 문제 등으로 인해 당분간 어려움을 겪을 것으로 보인다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "이주노동자 노동권",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "삼성고시 채용",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "러시아 고위급 방북",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "수영 세계기록 경신",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "직장 성희롱 근절",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "가짜 논문 판매",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "의학 논문 철회 이유",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    }
+  ]
+}

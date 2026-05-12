@@ -1,0 +1,619 @@
+{
+  "timestamp": "2026-05-02T21:01:11.266522",
+  "model": "news-singleline:latest",
+  "keyword_count": 3,
+  "analyze_subtitles": true,
+  "analysis_source": "youtube",
+  "keywords": [
+    {
+      "keyword": "오늘의 주요 뉴스",
+      "is_fixed": true,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "관세 압박",
+      "is_fixed": false,
+      "views": [
+        1889,
+        347
+      ],
+      "video_count": 2,
+      "videos": [
+        {
+          "title": "Trump Unleashes 'Grudge' Over Security and Trade... Will Tariff Pressure Spark Up? / JTBC Newsroom",
+          "video_id": "WFNRMxabGas",
+          "views": 1889,
+          "upload_date": "2026-05-02",
+          "url": "https://www.youtube.com/watch?v=WFNRMxabGas",
+          "subtitle_summary": "트럼프 대통령이 이유에 대한 관세를 10%P 올리기로 발표하며 유럽 국가들에 대한 무역 보복 수위를 높였고, 독일 및 이탈리아, 스페인 등지에 주둔하는 미군 철수를 추진하여 안보 불안을 야기했다. 중동 전쟁에 대한 유럽 동맹국들의 비판적 태도에 대한 반발로 해석되는 가운데, 미국의 관세 압박이 글로벌 경제에 미칠 영향에 대한 우려가 커지고 있다. 주한미군 주둔 규모 축소는 쉽지 않을 것으로 예상되는 가운데, 미국의 대중국 전략적 가치를 고려하여 주둔 규모 감축 논의는 현재 진행 중이지 않다.",
+          "db_saved": true
+        },
+        {
+          "title": "Trump Pressures Europe with Tariffs and Troops, Why? / Channel A / News A",
+          "video_id": "9uwQA5tO-Ag",
+          "views": 347,
+          "upload_date": "2026-05-02",
+          "url": "https://www.youtube.com/watch?v=9uwQA5tO-Ag",
+          "subtitle_summary": "트럼프 대통령이 유럽산 차량에 관세를 부과하고 주독 미군을 감축하며 유럽에 압박을 가하고 있는데, 이는 나토의 미국의 일환 전쟁 지원에 대한 비판과 글로벌 미군 태세 재조정의 일환으로 분석됩니다. 독일은 미군 감축으로 인해 안보 및 경제적 피해를 입을 수 있으며, 유럽 안보 지형에 상징적인 흠집을 초래할 수 있습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 2.8633,
+      "min": 1.5613,
+      "nb_score": 1.834,
+      "avg_views": 1118.0,
+      "total_views": 2236
+    },
+    {
+      "keyword": "트럭 관세",
+      "is_fixed": false,
+      "views": [
+        4104,
+        68,
+        7446,
+        9920
+      ],
+      "video_count": 4,
+      "videos": [
+        {
+          "title": "트럼프 \"다음 주부터 EU산 승용차·트럭 관세 인상\" / 연합뉴스TV (YonhapnewsTV)",
+          "video_id": "tLVEius53XA",
+          "views": 4104,
+          "upload_date": "2026-05-02",
+          "url": "https://www.youtube.com/watch?v=tLVEius53XA",
+          "subtitle_summary": "트럼프 대통령은 EU산 승용차·트럭에 대한 관세를 다음 주부터 15%에서 25%로 인상하겠다고 SNS를 통해 발표했다. 이는 EU가 미국의 파병 요청을 거절했다는 이유로, 무역 합의 불이행에 대한 보복 성격이다. 이번 조치로 인해 EU와 미국 간 무역 갈등이 더욱 심화될 가능성이 제기되고 있다.",
+          "db_saved": true
+        },
+        {
+          "title": "What is Trump's real intention behind raising tariffs on EU passenger cars and trucks to 25%? / C...",
+          "video_id": "0NEfcTl5URc",
+          "views": 68,
+          "upload_date": "2026-05-02",
+          "url": "https://www.youtube.com/watch?v=0NEfcTl5URc",
+          "subtitle_summary": "트럼프 대통령은 유럽 연합 차량에 대한 관세를 25%로 인상하며 무역합의 불이행을 이유로 설명했으나, 실제로는 유럽에 대한 외교안보 분야의 불만을 무역 문제로 확대하려는 의도가 있다는 분석이 제기되었다. 이는 독일 자동차 제조 업계에 큰 타격을 줄 수 있으며, 메르츠 총리의 반발에 직면한 가운데 무역 합의 위반에 대한 대응 경고도 이어졌다.",
+          "db_saved": true
+        },
+        {
+          "title": "Trump \"Dissatisfied with New Deal\"... 25% Tariff on EU Cars (May 2, 2026 / News Today / MBC)",
+          "video_id": "cWK9-HCfdXo",
+          "views": 7446,
+          "upload_date": "2026-05-01",
+          "url": "https://www.youtube.com/watch?v=cWK9-HCfdXo",
+          "subtitle_summary": "트럼프 대통령은 이란의 새 지도부에 대한 불만을 표명하며 중동 파키스탄을 통한 협상안에 만족하지 못했다고 밝혔습니다. 유럽연합산 승용차와 트럭에 대한 관세를 25%로 인상하겠다고 선언하며, 한국과 일본의 자동차 공장 투자에 대한 불만을 제기했습니다. 종전 합의에 대한 여론은 48%가 원하는 반면 46%는 군사 행동을 감수하더라도 더 나은 합의를 압박해야 한다는 의견으로 팽팽하게 맞서고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "트럼프 “EU 차량 관세 25%로↑”…주독 미군 약 5천 명 철수 / KBS  2026.05.02.",
+          "video_id": "CK2-y2AhXgU",
+          "views": 9920,
+          "upload_date": "2026-05-02",
+          "url": "https://www.youtube.com/watch?v=CK2-y2AhXgU",
+          "subtitle_summary": "트럼프 대통령이 이유 승용차 트럭에 대한 관세를 25%로 인상하고, 대미 투자 약속을 지키지 않아 불만을 표출하며, 독일 주둔 미군 약 5천 명 철수를 결정하여 국제적 파장을 더하고 있다.",
+          "db_saved": true
+        }
+      ],
+      "max": 2.1196,
+      "min": 1.8808,
+      "nb_score": 1.127,
+      "avg_views": 5384.5,
+      "total_views": 21538
+    },
+    {
+      "keyword": "트럭 관세 내주부터",
+      "is_fixed": false,
+      "views": [
+        92,
+        7457,
+        4181
+      ],
+      "video_count": 3,
+      "videos": [
+        {
+          "title": "US Retaliates for 'Non-cooperation in Iran War'... \"Tariffs on European Vehicles to Raise to 25% ...",
+          "video_id": "LafL7hFouvo",
+          "views": 92,
+          "upload_date": "2026-05-02",
+          "url": "https://www.youtube.com/watch?v=LafL7hFouvo",
+          "subtitle_summary": "[트럼프 미국 대통령이 유럽산 자동차에 대한 관세를 25%로 인상하겠다고 발표하여, 유럽의 이란 전쟁 비협조에 대한 보복이라는 해석이 제기되고 있으며, 일방적인 외교 행보로 국제 질서가 시험대에 오르고 있다.]",
+          "db_saved": true
+        },
+        {
+          "title": "Trump \"Dissatisfied with New Deal\"... 25% Tariff on EU Cars (May 2, 2026 / News Today / MBC)",
+          "video_id": "cWK9-HCfdXo",
+          "views": 7457,
+          "upload_date": "2026-05-01",
+          "url": "https://www.youtube.com/watch?v=cWK9-HCfdXo",
+          "subtitle_summary": "트럼프 대통령은 이란의 새 지도부에 대한 불만을 표명하며 중동 파키스탄을 통한 협상안에 만족하지 못했다고 밝혔습니다. 유럽연합의 승용차와 트럭에 대한 25% 관세 인상을 예고하며, 한국과 일본의 자동차 공장 투자에 대한 불만을 제기했습니다. 종전 합의에 대한 여론은 48%가 원하는 반면 46%는 군사 행동을 감수하더라도 더 나은 합의를 압박해야 한다는 의견으로 팽팽하게 맞서고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "트럼프 \"다음 주부터 EU산 승용차·트럭 관세 인상\" / 연합뉴스TV (YonhapnewsTV)",
+          "video_id": "tLVEius53XA",
+          "views": 4181,
+          "upload_date": "2026-05-02",
+          "url": "https://www.youtube.com/watch?v=tLVEius53XA",
+          "subtitle_summary": "트럼프 대통령은 EU산 승용차·트럭에 대한 관세를 다음 주부터 15%에서 25%로 인상하겠다고 SNS를 통해 발표했다. 이는 EU가 미국의 파병 요청을 거절했다는 이유로, 무역 합의 불이행에 대한 보복 성격이다. 이번 조치로 인해 EU와 미국 간 무역 갈등이 더욱 심화될 가능성이 제기되고 있다.",
+          "db_saved": true
+        }
+      ],
+      "max": 2.2014,
+      "min": 2.1533,
+      "nb_score": 1.0223,
+      "avg_views": 3910.0,
+      "total_views": 11730
+    },
+    {
+      "keyword": "자동차 관세 25",
+      "is_fixed": false,
+      "views": [
+        7464,
+        10119,
+        30556,
+        514,
+        7671
+      ],
+      "video_count": 5,
+      "videos": [
+        {
+          "title": "Trump \"Dissatisfied with New Deal\"... 25% Tariff on EU Cars (May 2, 2026 / News Today / MBC)",
+          "video_id": "cWK9-HCfdXo",
+          "views": 7464,
+          "upload_date": "2026-05-01",
+          "url": "https://www.youtube.com/watch?v=cWK9-HCfdXo",
+          "subtitle_summary": "트럼프 대통령은 이란의 새 지도부에 대한 불만을 표명하며 중동 파키스탄을 통한 협상안에 만족하지 못했다고 밝혔습니다. 유럽연합의 승용차와 트럭에 대한 25% 관세 인상을 예고하며, 한국과 일본의 자동차 공장 투자에 대한 불만을 드러냈습니다. 종전 합의에 대한 여론은 엇갈리고 있으며, 전쟁 시작을 실패로 판단하는 의견이 압도적으로 높은 상황입니다.",
+          "db_saved": true
+        },
+        {
+          "title": "트럼프 “EU 차량 관세 25%로↑”…주독 미군 약 5천 명 철수 / KBS  2026.05.02.",
+          "video_id": "CK2-y2AhXgU",
+          "views": 10119,
+          "upload_date": "2026-05-02",
+          "url": "https://www.youtube.com/watch?v=CK2-y2AhXgU",
+          "subtitle_summary": "트럼프 대통령이 이유 승용차 트럭에 대한 관세를 25%로 인상하겠다고 발표했으며, 이는 대미 투자 약속 불이행을 근거로 삼았으며, 독일 주둔 미군 약 5천 명 철수 결정으로 파장이 이어질 전망이다. 관세 인상은 다음 주부터 적용될 예정이며, 이란전 지원에 대한 불만과 메르츠 총리와의 설전도 영향을 미친 것으로 분석된다. 트럼프 대통령은 60일 시안을 활용한 군사 작전 지속을 시사하며 전국 주도권을 다시 확보하려는 움직임을 보였다.",
+          "db_saved": true
+        },
+        {
+          "title": "\"Withdrawal of 5,000 US Troops from Germany · 25% Tariff on European Cars\" / SBS",
+          "video_id": "B7gapcQTHTM",
+          "views": 30556,
+          "upload_date": "2026-05-02",
+          "url": "https://www.youtube.com/watch?v=B7gapcQTHTM",
+          "subtitle_summary": "미국이 독일에 주둔하는 미군 병력 5000명을 철수하고, 유럽산 자동차에 25% 관세를 부과하며 안보 및 무역 보복 조치를 본격화함에 따라 유럽과의 관계가 악화될 조짐이 보이고 있으며, EU 역시 이에 맞서 대응할 태세를 갖추고 있습니다. 트럼프 대통령의 이러한 행보는 유럽 동맹국들의 미국의 도움 거절과 메르츠 총리의 비판 등 복합적인 요인이 작용한 결과이며, 향후 안보 및 무역 불안정이 지속될 가능성이 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "EU 자동차에 25% 관세..이란전 비협조 보복? / SBS 8뉴스",
+          "video_id": "ZiRJjGHsy4E",
+          "views": 514,
+          "upload_date": "2026-05-02",
+          "url": "https://www.youtube.com/watch?v=ZiRJjGHsy4E",
+          "subtitle_summary": "트럼프 대통령이 유럽산 자동차에 대한 관세를 25%로 인상하며 무역 갈등이 재점화될 가능성이 제기되고 있다. 유럽의 이란전 비협조에 대한 보복이라는 분석도 나오고 있으며, 독일을 비롯한 한국 및 일본 자동차 산업에 큰 타격을 줄 수 있다. 유럽연합은 이에 맞대응할 수 있다는 입장을 밝히면서 무역 분쟁 심화 우려가 커지고 있다.",
+          "db_saved": true
+        },
+        {
+          "title": "'나토 보복' 나선 트럼프, EU 자동차 관세 25%로…주독미군 5천명 철수 [뉴스현장]",
+          "video_id": "Tyrr6pypzC8",
+          "views": 7671,
+          "upload_date": "2026-05-02",
+          "url": "https://www.youtube.com/watch?v=Tyrr6pypzC8",
+          "subtitle_summary": "트럼프 대통령이 이유 차량 관세를 25%로 인상하고, 독일에 주둔 중인 미군 5천여 명 철수를 결정하며 나토 국가들에 대한 보복 수위를 높였다. 유럽연합은 이에 맞대응할 가능성을 시사했고, 트럼프 행정부는 무역합의 이행 여부를 문제 삼아 관세 인상을 추진했다. 60일 이내 의회 승인 없이 군사 작전을 할 수 없었던 점도 위헌 소지를 주장하며 법적 문제를 제기했다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0.8861,
+      "min": 1.6586,
+      "nb_score": 0.5342,
+      "avg_views": 11264.8,
+      "total_views": 56324
+    },
+    {
+      "keyword": "승용차 트럭 관세",
+      "is_fixed": false,
+      "views": [
+        77,
+        4146,
+        371,
+        10008,
+        7450,
+        29630,
+        2193
+      ],
+      "video_count": 7,
+      "videos": [
+        {
+          "title": "What is Trump's real intention behind raising tariffs on EU passenger cars and trucks to 25%? / C...",
+          "video_id": "0NEfcTl5URc",
+          "views": 77,
+          "upload_date": "2026-05-02",
+          "url": "https://www.youtube.com/watch?v=0NEfcTl5URc",
+          "subtitle_summary": "트럼프 대통령이 유럽연합산 승용차·트럭에 대한 관세를 25%로 인상하겠다고 발표하며, 무역합의 불이행을 핑계로 설명했으나, 실제로는 유럽국들에 대한 외교안보 분야 불만을 무역 문제로 확대하려는 의도가 있다는 분석이 제기되었다. 이는 독일의 주요 자동차 제조 업체에 타격을 줄 수 있으며, 유럽국들의 반발과 충돌을 야기할 가능성이 있다.",
+          "db_saved": true
+        },
+        {
+          "title": "트럼프 \"다음 주부터 EU산 승용차·트럭 관세 인상\" / 연합뉴스TV (YonhapnewsTV)",
+          "video_id": "tLVEius53XA",
+          "views": 4146,
+          "upload_date": "2026-05-02",
+          "url": "https://www.youtube.com/watch?v=tLVEius53XA",
+          "subtitle_summary": "트럼프 대통령은 유럽연합산 승용차·트럭에 대한 관세를 다음 주부터 15%에서 25%로 인상하겠다고 SNS를 통해 발표했다. 이는 유럽연합이 미국의 파병 요청을 따르지 않았다는 이유를 들어 제기된 보복 조치로 분석된다. 이번 결정은 미국과 유럽연합 관계에 대한 우려를 증폭시키고 있다.",
+          "db_saved": true
+        },
+        {
+          "title": "EU 자동차에 25% 관세..이란전 비협조 보복? / SBS 8뉴스",
+          "video_id": "ZiRJjGHsy4E",
+          "views": 371,
+          "upload_date": "2026-05-02",
+          "url": "https://www.youtube.com/watch?v=ZiRJjGHsy4E",
+          "subtitle_summary": "트럼프 대통령이 유럽산 자동차에 대한 관세를 25%로 인상하며 무역 갈등이 재점화될 가능성이 제기되고 있다. 유럽의 이란전 비협조에 대한 보복이라는 분석도 나오고 있으며, 독일을 비롯한 한국 및 일본 자동차 산업에 큰 타격을 줄 수 있다. 유럽연합은 이에 맞대응할 수 있다는 입장을 밝히면서 무역 분쟁 심화 우려가 커지고 있다.",
+          "db_saved": true
+        },
+        {
+          "title": "트럼프 “EU 차량 관세 25%로↑”…주독 미군 약 5천 명 철수 / KBS  2026.05.02.",
+          "video_id": "CK2-y2AhXgU",
+          "views": 10008,
+          "upload_date": "2026-05-02",
+          "url": "https://www.youtube.com/watch?v=CK2-y2AhXgU",
+          "subtitle_summary": "트럼프 대통령이 이유 승용차 트럭에 대한 관세를 25%로 인상하겠다고 발표했으며, 이는 대미 투자 약속 불이행을 근거로 삼았으며, 독일 주둔 미군 약 5천 명 철수 결정으로 파장이 이어질 전망이다. 관세 인상은 다음 주부터 적용될 예정이며, 이란전 지원에 대한 불만과 메르츠 총리와의 설전도 영향을 미친 것으로 분석된다. 트럼프 대통령은 60일 시안을 활용한 군사 작전 지속을 시사하며 전국 주도권을 다시 확보하려는 움직임을 보였다.",
+          "db_saved": true
+        },
+        {
+          "title": "Trump \"Dissatisfied with New Deal\"... 25% Tariff on EU Cars (May 2, 2026 / News Today / MBC)",
+          "video_id": "cWK9-HCfdXo",
+          "views": 7450,
+          "upload_date": "2026-05-01",
+          "url": "https://www.youtube.com/watch?v=cWK9-HCfdXo",
+          "subtitle_summary": "트럼프 대통령은 이란의 새 지도부에 대한 불만을 표명하며 중동 파키스탄을 통한 협상안에 만족하지 못했다고 밝혔습니다. 유럽연합의 승용차와 트럭에 대한 25% 관세 인상을 예고하며, 한국 및 일본의 자동차 공장 투자에 대한 불만을 드러냈습니다. 종전 합의에 대한 여론은 48%가 원하는 반면 46%는 군사 행동을 감수하더라도 더 나은 합의를 압박해야 한다는 의견으로 팽팽하게 맞서고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "\"Withdrawal of 5,000 US Troops from Germany · 25% Tariff on European Cars\" / SBS",
+          "video_id": "B7gapcQTHTM",
+          "views": 29630,
+          "upload_date": "2026-05-02",
+          "url": "https://www.youtube.com/watch?v=B7gapcQTHTM",
+          "subtitle_summary": "미국이 독일 주둔 미군 5000명 철수를 결정하고, 유럽산 자동차에 25% 관세를 재부과하며 안보 및 무역 보복 조치를 강화함에 따라 유럽의 우려가 커지고 있으며, EU 역시 대응을 준비 중인 상황이다. 6개월에서 12개월 안에 완료될 예정인 이번 철수는 독일에 배치된 미군 병력의 14% 감소를 의미하며, 유럽 동맹국들의 미국의 도움 거절과 메르츠 총리의 비판이 영향을 미친 것으로 분석된다. 트럼프 대통령은 무역 합의 이행 여부에 대한 불만을 표명하며, 한국에 대한 지원 부족까지 덧붙여 보복 수위를 높이고 있다.",
+          "db_saved": true
+        },
+        {
+          "title": "트럼프, EU 차 관세 위협...EU \"합의 위반 땐 대응\" / YTN",
+          "video_id": "Cx99EuCurF8",
+          "views": 2193,
+          "upload_date": "2026-05-02",
+          "url": "https://www.youtube.com/watch?v=Cx99EuCurF8",
+          "subtitle_summary": "트럼프 대통령이 EU 자동차 관세 인상 위협으로 무역 합의 위반을 주장하며 EU에 강력한 대응을 예고했고, 이유 집행위원회는 합의 준수를 강조하며 협정 중단 등 옵션을 열어두고 있습니다. 미국이 EU의 일한전 비협조에 대한 무역 보복 조치로 국제 사회의 이목이 집중되고 있으며, 유럽은 미국의 불합리한 요구에 맞서 협정 수정 조항을 추가했습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0.4252,
+      "min": 1.2463,
+      "nb_score": 0.3412,
+      "avg_views": 7696.43,
+      "total_views": 53875
+    },
+    {
+      "keyword": "삼성 노조",
+      "is_fixed": false,
+      "views": [
+        209044,
+        26266,
+        5403,
+        50134,
+        100432,
+        24255,
+        11415,
+        4060
+      ],
+      "video_count": 8,
+      "videos": [
+        {
+          "title": "President Lee: \"Excessive demands from some unions unacceptable\"… Samsung Electronics Union Chair...",
+          "video_id": "UH5qdWqcjwo",
+          "views": 209044,
+          "upload_date": "2026-05-01",
+          "url": "https://www.youtube.com/watch?v=UH5qdWqcjwo",
+          "subtitle_summary": "[이재명 대통령이 일부 노조의 과도한 성과급 요구를 경계하며, 국민적 지탄을 받게 되는 상황이 다른 노동자들에게 피해를 줄 수 있다고 지적했습니다. 특히, 삼성전자 노조의 40조원 성과급 요구에 대한 우려를 표하며, 책임 의식과 연대 의식을 강조했습니다. LG플러스 노조의 30% 성과급 요구에 대한 대통령의 비판적 시각이 노조의 요구 수준에 대한 경고로 해석되었습니다.]",
+          "db_saved": true
+        },
+        {
+          "title": "국민 10명 중 7명 \"삼성 노조 파업 부적절\"…호남 81% '압도적 반대'",
+          "video_id": "VL9-9Ywe0gE",
+          "views": 26266,
+          "upload_date": "2026-05-01",
+          "url": "https://www.youtube.com/watch?v=VL9-9Ywe0gE",
+          "subtitle_summary": "국민 70% 이상이 삼성전자 노조의 총파업 예고에 대해 무리한 요구이자 산업 경쟁력 약화 우려를 담은 부적절하다고 응답했으며, 특히 호남 지역과 고령층에서 반대 여론이 압도적으로 나타난 가운데 글로벌 공급망 혼란 등 경제적 우려가 주요하게 지목되었습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "LG Uplus Union: \"Samsung Union Cowardly Shifting Blame\" - Labor-Management Conflict? [News Playli...",
+          "video_id": "8tXaM-o-mQg",
+          "views": 5403,
+          "upload_date": "2026-05-02",
+          "url": "https://www.youtube.com/watch?v=8tXaM-o-mQg",
+          "subtitle_summary": "삼성전자 노조의 과도한 성과급 요구와 파업 예고로 인해 이재명 대통령이 기업과 노동자의 상생을 강조했고, 노사 간의 갈등이 심화되면서 삼성전자는 노조를 상대로 총 금지 가처분 신청을 제기하며 법원의 최종 결론을 촉구하고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "“삼성 직원들 결국 폭발했다… ‘성과급 5억’ 전쟁 시작” (Feat.최승호 삼성 노조위원장, 유니스토리자산운용 김장열 본부장) [딥플 Deep-ple]",
+          "video_id": "OpMC5pPjzm8",
+          "views": 50134,
+          "upload_date": "2026-05-01",
+          "url": "https://www.youtube.com/watch?v=OpMC5pPjzm8",
+          "subtitle_summary": "삼성전자가 실적과 주가 호조에도 불구하고, 노조는 하이닉스 수준의 5억 원 성과급을 요구하며 파업 가능성을 시사하고 있습니다. 노조는 영업 이익의 15%를 성과급으로 배분하는 것을 주장하며, 이는 40조 원 규모의 성과급으로 이어질 수 있다고 전망합니다. 하이닉스와의 비교를 통해 4천만 원 수준의 성과급을 상향 조정하는 것을 목표로 하고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "The End of the Samsung Electronics 'Aristocratic Union' That Striked Demanding \"Give Us 45 Trilli...",
+          "video_id": "dNB9GwbM8H8",
+          "views": 100432,
+          "upload_date": "2026-05-01",
+          "url": "https://www.youtube.com/watch?v=dNB9GwbM8H8",
+          "subtitle_summary": "삼성전자 노조의 5억 원대 성과급 요구 파업은 반도체 부문의 역대 최대 실적과 극명한 대비를 보여주며, 가전 사업부의 몰락을 가속화시켰습니다. 45조 원에 달하는 요구는 회사의 내부 균열을 심화시키고, 결국 가전 라인의 폐쇄를 결정짓는 결정적인 계기가 되었습니다. 2026년 봄, 4만 명의 노사 갈등은 삼성전자의 ‘귀족 클럽’을 무너뜨린 비극적인 역사의 한 페이지로 기록되었습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "삼성바이오 노조 첫 전면파업 돌입...\"6,400억 손실\" / YTN",
+          "video_id": "JpeuKN9q1W8",
+          "views": 24255,
+          "upload_date": "2026-05-01",
+          "url": "https://www.youtube.com/watch?v=JpeuKN9q1W8",
+          "subtitle_summary": "삼성바이오로직스 노조가 창사 첫 전면 파업에 돌입하며 6,400억 원 규모의 손실이 예상되는 가운데, 노사는 경영 사항 명문화 및 임금 인상폭을 두고 교섭에서 합의점을 찾지 못하고 있습니다. 파업으로 인한 수주 차질과 삼성전자 노조의 총파업 예고로 인해 삼성그룹 및 한국 경제 전반에 미칠 파장이 우려되는 상황입니다. 특히, 파업 손실 책임 소재에 대한 논쟁이 벌어지면서 향후 파업의 향방에 대한 관심이 집중되고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "삼성전자 노조 '과반 지위' 인정…합법적 파업 날개 달았다",
+          "video_id": "kUk9qV1-39c",
+          "views": 11415,
+          "upload_date": "2026-05-01",
+          "url": "https://www.youtube.com/watch?v=kUk9qV1-39c",
+          "subtitle_summary": "삼성전자노조가 과반수 노조 지위를 인정받아 합법적인 파업을 위한 핵심 조건이 충족되면서, 영업이익의 15% 성과급 지급을 요구하며 다음 달 총파업을 예고했다는 소식이다. 반도체 산업 생산 차질 우려와 정부의 이례적인 우려 속에 노사 협상이 난항을 겪고 있으며, 법원은 다음 달 중 가처분 신청 심판을 진행할 예정이다. 파업의 파장과 국가 경제에 미치는 영향에 대한 관심이 집중되고 있다.",
+          "db_saved": true
+        },
+        {
+          "title": "\"파업해도 생산 차질 없다\"…삼성전자, 노조에 이례적 강공",
+          "video_id": "Y8_T8l15r64",
+          "views": 4060,
+          "upload_date": "2026-05-02",
+          "url": "https://www.youtube.com/watch?v=Y8_T8l15r64",
+          "subtitle_summary": "삼성전자는 노조의 총파업에도 생산 차질을 최소화하기 위한 대응 방침을 밝히고, 전담 조직을 통해 적법한 범위 내에서 생산을 유지하겠다는 입장을 표명했습니다. 노사 간 핵심 쟁점은 영업이익의 15% 성과급 지급 요구와 이에 대한 삼성전자의 유연한 협상 태도이며, 향후 협상 결과에 따라 실적에 미칠 영향이 예상됩니다. 파업 가능성에 따라 반도체 생산에 차질이 발생할 수 있다는 우려 속에서 노사 간 원만한 해결을 위한 대화 노력이 계속될 전망입니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0.3837,
+      "min": 1.2403,
+      "nb_score": 0.3094,
+      "avg_views": 53876.12,
+      "total_views": 431009
+    },
+    {
+      "keyword": "관세 25",
+      "is_fixed": false,
+      "views": [
+        9783,
+        7380,
+        6459
+      ],
+      "video_count": 3,
+      "videos": [
+        {
+          "title": "트럼프 “EU 차량 관세 25%로↑”…주독 미군 약 5천 명 철수 / KBS  2026.05.02.",
+          "video_id": "CK2-y2AhXgU",
+          "views": 9783,
+          "upload_date": "2026-05-02",
+          "url": "https://www.youtube.com/watch?v=CK2-y2AhXgU",
+          "subtitle_summary": "트럼프 대통령이 이유 승용차 트럭에 대한 관세를 25%로 인상하고, 대미 투자 약속을 지키지 않아 관세 인상을 결정했다고 밝혔으며, 독일 주둔 미군 약 5천 명 철수 결정으로 파장이 이어질 전망이다. 이는 이란전 지원에 대한 불만을 드러낸 점과 관련이 있으며, 메르츠 총리와의 설전, 다른 국가 미군 감축 시사 등 유럽 동맹국과의 갈등이 심화되고 있다. 트럼프 대통령은 60일 시안 활용을 통해 군사 작전의 자율성을 주장하며 전국 주도권을 쥐려 하고 있다.",
+          "db_saved": true
+        },
+        {
+          "title": "Trump \"Dissatisfied with New Deal\"... 25% Tariff on EU Cars (May 2, 2026 / News Today / MBC)",
+          "video_id": "cWK9-HCfdXo",
+          "views": 7380,
+          "upload_date": "2026-05-01",
+          "url": "https://www.youtube.com/watch?v=cWK9-HCfdXo",
+          "subtitle_summary": "트럼프 대통령은 이란의 새 지도부에 대한 불만을 표명하며 중동 파키스탄을 통한 협상안에 만족하지 못했다고 밝혔습니다. 유럽연합산 승용차와 트럭에 대한 관세를 25%로 인상하겠다고 발표하며, 한국과 일본의 자동차 공장 투자에 대한 불만을 제기했습니다. 종전 합의에 대한 여론은 48%가 원하는 반면 46%는 군사 행동을 감수하더라도 더 나은 합의를 압박해야 한다는 의견으로 팽팽하게 맞서고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "'나토 보복' 나선 트럼프, EU 자동차 관세 25%로…주독미군 5천명 철수 [뉴스현장]",
+          "video_id": "Tyrr6pypzC8",
+          "views": 6459,
+          "upload_date": "2026-05-02",
+          "url": "https://www.youtube.com/watch?v=Tyrr6pypzC8",
+          "subtitle_summary": "트럼프 대통령이 이유 차량 관세를 25%로 인상하고, 독일에 주둔한 미군 5천 명 철수를 결정하며 나토 국가들에 대한 보복 수위를 높였다. 유럽연합은 맞대응 가능성을 시사하고 있으며, 트럼프 행정부는 무역합의 이행을 미룬 나토 회원국들에 대한 압박 강화를 위한 조치로 해석된다. 60일 이내 의회 승인 없이 군사 작전을 할 수 없었던 점도 법적 문제 해결을 시도하며 논란을 빚었다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0.9591,
+      "min": 5.5,
+      "nb_score": 0.1744,
+      "avg_views": 7874.0,
+      "total_views": 23622
+    },
+    {
+      "keyword": "삼성 노조 폭주에",
+      "is_fixed": false,
+      "views": [
+        1
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "파업 수당 300만원? 삼성전자 노조 폭주에 주주들 뿔났다",
+          "video_id": "4dWZQRspO54",
+          "views": 1,
+          "upload_date": "2026-05-01",
+          "url": "https://www.youtube.com/watch?v=4dWZQRspO54",
+          "subtitle_summary": "삼성전자 노조의 사상초유 총파업 사태는 단일 기업의 파급력이 매우 크며, 노조가 300만원의 파업 수당과 15만원 일당을 지급하겠다고 밝혀 주주들의 우려를 낳고 있습니다. 노조 집행부는 파업에 참여하지 않는 구성원에 대한 압박 수위가 과하다고 비판받으며, 사실상의 블랙리스트 작성 시도라는 논란을 빚고 있습니다. 정부는 반도체 산업의 골든 타임을 놓칠 수 있다는 위기감을 내보이며, 노사 갈등의 심각성을 경고하고 있습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "관세 내주부터",
+      "is_fixed": false,
+      "views": [
+        86
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "US Retaliates for 'Non-cooperation in Iran War'... \"Tariffs on European Vehicles to Raise to 25% ...",
+          "video_id": "LafL7hFouvo",
+          "views": 86,
+          "upload_date": "2026-05-02",
+          "url": "https://www.youtube.com/watch?v=LafL7hFouvo",
+          "subtitle_summary": "[트럼프 미국 대통령이 유럽산 자동차에 대한 관세를 25%로 인상하겠다고 발표하여, 유럽의 이란 전쟁 비협조에 대한 보복이라는 해석이 제기되고 있으며, 일방적인 외교 행보로 국제 질서가 시험대에 오르고 있습니다.]",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "관세 내주부터 25",
+      "is_fixed": false,
+      "views": [
+        95
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "US Retaliates for 'Non-cooperation in Iran War'... \"Tariffs on European Vehicles to Raise to 25% ...",
+          "video_id": "LafL7hFouvo",
+          "views": 95,
+          "upload_date": "2026-05-02",
+          "url": "https://www.youtube.com/watch?v=LafL7hFouvo",
+          "subtitle_summary": "[트럼프 미국 대통령이 유럽산 자동차에 대한 관세를 25%로 인상하겠다고 발표하여, 유럽의 이란 전쟁 비협조에 대한 보복이라는 해석이 제기되고 있으며, 일방적인 외교 행보로 국제 질서가 시험대에 오르고 있습니다.]",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "자동차 관세",
+      "is_fixed": false,
+      "views": [
+        7464
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "Trump \"Dissatisfied with New Deal\"... 25% Tariff on EU Cars (May 2, 2026 / News Today / MBC)",
+          "video_id": "cWK9-HCfdXo",
+          "views": 7464,
+          "upload_date": "2026-05-01",
+          "url": "https://www.youtube.com/watch?v=cWK9-HCfdXo",
+          "subtitle_summary": "트럼프 대통령은 이란의 새 지도부에 대한 불만을 표명하며 중동 파키스탄을 통한 협상안에 만족하지 못했다고 밝혔고, 유럽 연합산 승용차와 트럭에 대한 관세를 25%로 인상하겠다고 발표했습니다. 종전 합의의 복잡한 상황과 60일 전쟁 시안 종료에 대한 불만, 그리고 한국과 일본의 투자 이행 속도 문제도 언급하며 보복 관세 가능성을 시사했습니다. 여론 조사 결과, 종전 합의를 원한다는 응답이 48%로, 군사 행동을 감수하더라도 더 나은 합의를 압박해야 한다는 응답이 46%로 팽팽하게 맞서고 있는 가운데 전쟁 시작이 실수였다는 응답이 61%를 기록했습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "관세 25 폭탄",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "작렬 관세",
+      "is_fixed": false,
+      "views": [
+        1889
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "Trump Unleashes 'Grudge' Over Security and Trade... Will Tariff Pressure Spark Up? / JTBC Newsroom",
+          "video_id": "WFNRMxabGas",
+          "views": 1889,
+          "upload_date": "2026-05-02",
+          "url": "https://www.youtube.com/watch?v=WFNRMxabGas",
+          "subtitle_summary": "트럼프 대통령이 이유에 대한 관세를 10%P 올리기로 발표하며 유럽 국가들에 대한 무역 보복 수위를 높였고, 독일 및 이탈리아, 스페인 등지에 주둔하는 미군 철수를 추진하여 안보 불안을 야기했다. 중동 전쟁에 대한 유럽 동맹국들의 비판에 대한 반발로 나타난 조치로, 미국과 이유 간의 갈등이 심화될 가능성이 제기되었다. 주한미군 주둔 규모 축소는 쉽지 않을 것으로 예상되는 가운데, 미국의 주동미군 철수 발언 이후 주한미군 감축 논의는 진행되지 않고 있다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "뒤끝 작렬 관세",
+      "is_fixed": false,
+      "views": [
+        2023
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "Trump Unleashes 'Grudge' Over Security and Trade... Will Tariff Pressure Spark Up? / JTBC Newsroom",
+          "video_id": "WFNRMxabGas",
+          "views": 2023,
+          "upload_date": "2026-05-02",
+          "url": "https://www.youtube.com/watch?v=WFNRMxabGas",
+          "subtitle_summary": "[트럼프 대통령이 이유에 대한 관세를 10% 포인트 인상하고, 독일 및 이탈리아, 스페인 등지에 주둔하는 미군을 감축시킬 가능성을 시사하며 유럽 동맹국들에 대한 보복 조치를 감행했다.]",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "작렬 관세 압박",
+      "is_fixed": false,
+      "views": [
+        2026
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "Trump Unleashes 'Grudge' Over Security and Trade... Will Tariff Pressure Spark Up? / JTBC Newsroom",
+          "video_id": "WFNRMxabGas",
+          "views": 2026,
+          "upload_date": "2026-05-02",
+          "url": "https://www.youtube.com/watch?v=WFNRMxabGas",
+          "subtitle_summary": "[트럼프 대통령이 이유에 대한 관세를 10% 포인트 인상하고, 독일 및 이탈리아, 스페인 등지에 주둔하는 미군을 감축시킬 가능성을 시사하며 유럽 동맹국들에 대한 보복 조치를 감행했다.]",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    }
+  ]
+}

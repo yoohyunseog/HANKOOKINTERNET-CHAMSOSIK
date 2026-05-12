@@ -1,0 +1,329 @@
+{
+  "timestamp": "2026-05-04T05:20:40.944805",
+  "model": "news-singleline:latest",
+  "keyword_count": 3,
+  "analyze_subtitles": true,
+  "analysis_source": "youtube",
+  "keywords": [
+    {
+      "keyword": "오늘의 주요 뉴스",
+      "is_fixed": true,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "감축 관세",
+      "is_fixed": false,
+      "views": [
+        1462,
+        17818,
+        2992
+      ],
+      "video_count": 3,
+      "videos": [
+        {
+          "title": "\"유럽 관세 인상에 독일 미군 감축\" 트럼프의 뒤끝 [티조Clip]",
+          "video_id": "lqF73aQknVk",
+          "views": 1462,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=lqF73aQknVk",
+          "subtitle_summary": "[트럼프 행정부가 유럽산 자동차에 관세를 인상하고 독일 미군 철수를 결정하면서 미국과 유럽의 관계가 악화되고 있으며, 나토 회원국들의 호르무즈 해협 봉쇄 동참 거부와 맞물려 미국의 안보 정책에 대한 우려가 커지고 있습니다.]",
+          "db_saved": true
+        },
+        {
+          "title": "[에디터픽] 통보 없는 전쟁 후 '뒤끝'…트럼프, \"미군 철수\" 이어 관세 보복, 동맹국 '날벼락' / YTN",
+          "video_id": "BN9dXQwKZwM",
+          "views": 17818,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=BN9dXQwKZwM",
+          "subtitle_summary": "트럼프 전 대통령이 이란 전쟁에 대한 비판적인 견해를 바탕으로 독일 총리에게 이란 핵 위협 제거에 간섭하지 말라고 경고하며, 독일을 포함한 나토 회원국에 대한 미군 철수 압박과 관세 보복을 감행하여 동맹국에 ‘날벼락’을 선사하고 있다.",
+          "db_saved": true
+        },
+        {
+          "title": "[이슈] 트럼프 'EU 비협조' 보복 시작…관세 올리고 미군 철수 / “예상했던 일”…주독미군 5천 명 감축에 독일 국방장관 '덤덤' | MBN NEWS",
+          "video_id": "ACuPqFUwLck",
+          "views": 2992,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=ACuPqFUwLck",
+          "subtitle_summary": "트럼프 대통령이 유럽산 자동차에 대한 관세를 25%로 인상하고, 주독 미군 5천 명 철수를 결정하며 유럽 및 한미 관계에 긴장을 고조시키고 있다. 이는 유럽의 호르무즈 해협 분파경과 군사기지 사용 요청 거절에 대한 보복 성격이 강하며, 트럼프식 외교가 우리나라로 이어질 수 있다는 우려가 제기된다. 주한미군 감축 가능성도 함께 주목받고 있다.",
+          "db_saved": true
+        }
+      ],
+      "max": 1.1382,
+      "min": 2.3222,
+      "nb_score": 0.4901,
+      "avg_views": 7424.0,
+      "total_views": 22272
+    },
+    {
+      "keyword": "미군 감축 관세",
+      "is_fixed": false,
+      "views": [
+        1456,
+        17825,
+        2992
+      ],
+      "video_count": 3,
+      "videos": [
+        {
+          "title": "\"유럽 관세 인상에 독일 미군 감축\" 트럼프의 뒤끝 [티조Clip]",
+          "video_id": "lqF73aQknVk",
+          "views": 1456,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=lqF73aQknVk",
+          "subtitle_summary": "트럼프 행정부는 유럽의 관세 인상과 독일 미군 감축을 통해 유럽 국가들에 대한 사실상의 보복 조치를 취하고 있으며, 이는 유럽의 대미 투자 미이행에 대한 불만 때문으로 분석됩니다. 유럽연합은 이에 맞대응할 가능성을 시사하며, 독일은 예측 가능한 일이라며 유럽의 안보 책임 강화 필요성을 강조했습니다. 이러한 조치는 나토 회원국들의 호르무즈 해협 봉쇄 동참 거절과 미국의 파병 요청 신중함에 대한 압박으로도 해석됩니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[에디터픽] 통보 없는 전쟁 후 '뒤끝'…트럼프, \"미군 철수\" 이어 관세 보복, 동맹국 '날벼락' / YTN",
+          "video_id": "BN9dXQwKZwM",
+          "views": 17825,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=BN9dXQwKZwM",
+          "subtitle_summary": "트럼프 전 대통령이 이란 전쟁에 대한 비판적인 견해를 바탕으로 독일 총리에게 이란 핵 위협 제거에 간섭하지 말라고 경고하며, 독일을 포함한 나토 회원국에 대한 미군 철수 압박과 관세 보복을 감행함에 따라 주독 미군 철수 가능성이 제기되고 있다. 특히, 우크라이나 전쟁 대응에 소홀한 트럼프 전 대통령의 동맹국 압박은 유럽 경제 불안 심화와 맞물려 안보 협력에 대한 의구심을 증폭시키고 있다.",
+          "db_saved": true
+        },
+        {
+          "title": "[이슈] 트럼프 'EU 비협조' 보복 시작…관세 올리고 미군 철수 / “예상했던 일”…주독미군 5천 명 감축에 독일 국방장관 '덤덤' | MBN NEWS",
+          "video_id": "ACuPqFUwLck",
+          "views": 2992,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=ACuPqFUwLck",
+          "subtitle_summary": "트럼프 미국 대통령이 유럽산 자동차에 대한 관세를 25%로 인상하고, 주독 미군 5천 명 철수를 결정하며 유럽과의 갈등을 심화시켰다. 이는 유럽의 호르무즈 해협 분파경과 군사기지 사용 요청 거절에 대한 보복 성격이 강하며, 우리나라 외교에도 영향을 미칠 수 있다는 우려가 제기된다. 트럼프 대통령의 일방적인 외교 행보가 국제 질서에 어떤 파장을 불러일으킬지 주목해야 한다.",
+          "db_saved": true
+        }
+      ],
+      "max": 1.1378,
+      "min": 2.3214,
+      "nb_score": 0.4901,
+      "avg_views": 7424.33,
+      "total_views": 22273
+    },
+    {
+      "keyword": "트럼프 이란",
+      "is_fixed": false,
+      "views": [
+        27565,
+        2776,
+        6556,
+        10730,
+        4324
+      ],
+      "video_count": 5,
+      "videos": [
+        {
+          "title": "[속보] 트럼프 “이란 공격 재개 할 수도…새 협상안 받아들이기 힘들어” [뉴스플레이리스트] / 채널A",
+          "video_id": "cdEW1bxiPrA",
+          "views": 27565,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=cdEW1bxiPrA",
+          "subtitle_summary": "트럼프 미국 대통령이 독일 주둔 미군 5,명 철수 및 유럽산 승용차 관세 25% 인상을 결정하며 유럽 안보 및 무역 현장에서 불만을 표출하고, 향후 유럽 안보 환경 변화에 대한 우려가 제기되고 있다.",
+          "db_saved": true
+        },
+        {
+          "title": "트럼프 \"이란 새 제안 수용 어려워\"...협상 출구는? / YTN",
+          "video_id": "O7WyCilaQdc",
+          "views": 2776,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=O7WyCilaQdc",
+          "subtitle_summary": "미국과 이란의 종전 협상이 난항을 겪으며 에너지 가격 상승 등 경제적 파장이 커지고 있으며, 트럼프 전 대통령은 이란의 새 제안을 검토하면서도 강경한 입장을 유지하고 있습니다. 이란은 휴전 협상과 함께 호르무제 해협 개방 및 협상 시점을 제시했지만, 트럼프 전 대통령은 전쟁 책임 등을 이유로 받아들이기 어렵다는 입장입니다. 복잡한 중동 상황 속에서 양국 간 협상이 지연되고 있으며, 향후 협상 일정 및 결과에 대한 불확실성이 높은 상황입니다.",
+          "db_saved": true
+        },
+        {
+          "title": "논란 자초한 트럼프...이란 봉쇄 자랑하다 '구설수' [지금이뉴스]  / YTN",
+          "video_id": "rwCq7rK8WUs",
+          "views": 6556,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=rwCq7rK8WUs",
+          "subtitle_summary": "트럼프 대통령이 이란 항만 봉쇄 과정에서 해군이 선박을 납포한 것을 두고 ‘해적’이라고 비판하며 논란을 자초했고, 이는 국제법 위반 주장에 휩싸이는 상황을 초래했습니다. 봉쇄는 이란 정권의 자금 압박을 위한 것이었으나, 실제로는 국제 규범을 무시한 행위로 평가받고 있으며, 해군 측은 지속적인 봉쇄를 시사했습니다. 이러한 행위는 미국과 이란 간의 긴장을 고조시키는 요인으로 작용할 수 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "\"세상에 이란 일이!\" 트럼프가 고함을 지르며 '공격 개시'를 외치는데… [뉴스와] / 연합뉴스TV(YonhapnewsTV)",
+          "video_id": "_2xNWvovolE",
+          "views": 10730,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=_2xNWvovolE",
+          "subtitle_summary": "트럼프 대통령이 이란의 새로운 제한안을 검토하겠다고 밝히면서, 미국의 레드라인인 핵무기 보유 제한 문제에 대한 이란의 명확한 거부 의사를 확인하고 종전 협상 재개를 고려하는 가운데, 미국 내부에서도 강경한 입장을 유지하면서도 현실적인 타협 가능성을 열어두고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "항공모함 꺼낸 트럼프 \"즉시 점령 가능\"...이란 다음 공격 대상? [지금이뉴스] / YTN",
+          "video_id": "qoxqOkQO5dU",
+          "views": 4324,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=qoxqOkQO5dU",
+          "subtitle_summary": "트럼프 전 대통령이 쿠바에 대한 군사 행동 가능성을 시사하며, 한국 모함 에이브로햄 링코노를 활용한 즉각 점령을 언급하고 쿠바 해안에 정박 시 항복을 유도하는 등 압박 수위를 높였습니다. 에너지, 국방, 금융 등 주요 산업 분야에 대한 추가 제재와 함께 후바 정부 인사들의 미국 입국 금지 조치를 발표했습니다. 쿠바는 트럼프 대통령의 위협에 강하게 반발하며 미국의 행위를 중대한 범죄 행위로 규탄했습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0.709,
+      "min": 1.8928,
+      "nb_score": 0.3746,
+      "avg_views": 10390.2,
+      "total_views": 51951
+    },
+    {
+      "keyword": "4월 원유수출",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "원유수출 사상",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "멕시코만으로 4월 원유수출",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "4월 원유수출 사상",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "원유수출 사상 최대",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "달러 수출",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "800억 달러 수출",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "관세 원투펀치에",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "감축 관세 원투펀치에",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "관세 원투펀치에 EU",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "관세 인상",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "감축 관세 인상",
+      "is_fixed": false,
+      "views": [
+        1462
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "\"유럽 관세 인상에 독일 미군 감축\" 트럼프의 뒤끝 [티조Clip]",
+          "video_id": "lqF73aQknVk",
+          "views": 1462,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=lqF73aQknVk",
+          "subtitle_summary": "트럼프 행정부는 유럽의 관세 인상과 독일 미군 감축을 통해 유럽 국가들에 대한 사실상의 보복 조치를 취하고 있으며, 이는 유럽의 대미 투자 및 무역 합의 이행 부족에 대한 불만 때문입니다. 유럽연합은 이에 맞대응할 가능성을 시사하며, 독일은 예측 가능한 일이라며 유럽의 안보 책임 강화 필요성을 강조했습니다. 이러한 조치로 인해 나토 회원국들의 호르무즈 해협 봉쇄 동참 거절과 미국의 파병 요청에 신중했던 국가들이 압박 대상이 될 수 있다는 우려가 제기되고 있습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    }
+  ]
+}

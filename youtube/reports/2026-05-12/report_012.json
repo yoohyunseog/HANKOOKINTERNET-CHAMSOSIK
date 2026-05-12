@@ -1,0 +1,277 @@
+{
+  "timestamp": "2026-05-12T03:15:51.816011",
+  "model": "mistral:latest",
+  "keyword_count": 3,
+  "analyze_subtitles": true,
+  "analysis_source": "youtube",
+  "keywords": [
+    {
+      "keyword": "오늘의 주요 뉴스",
+      "is_fixed": true,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "삼성전자 노사 협상",
+      "is_fixed": false,
+      "views": [
+        5643,
+        4915,
+        3245,
+        4589,
+        2566
+      ],
+      "video_count": 5,
+      "videos": [
+        {
+          "title": "삼성전자 노사, 막판 협상 줄다리기...'성과급 제도화' 관건 / YTN",
+          "video_id": "LMTLJP6mvMQ",
+          "views": 5643,
+          "upload_date": "2026-05-11",
+          "url": "https://www.youtube.com/watch?v=LMTLJP6mvMQ",
+          "subtitle_summary": "1. 삼성전자 노조와 사회계약 협상이 오늘 중앙 노동위원회에서 진행 중입니다. 이는 3월 말 결렬된 재협상 이후 한 달 반 만큼의 재협상으로, 성과급 산정 방식과 제도화에 대해서 양측이 논의하고 있습니다.\n2. 노조 내부에는 반도체와 비반도체 부문 노조원의 갈등이 격화되어 있으며, 완제품 부분 조합원들은 전사 공통재원을 확보하여 성과급을 배분하려는 요구를 했습니다.\n3. 초기업 노조는 이를 협상력을 약화시키는 일로 인식하여, 내년 안건으로 논의하겠다고 밝혔습니다. 또한 노조간 공동 투쟁 연대도 흔들리고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "삼성전자 노사협상 최종담판…성과급 상한 폐지 두고 '평행선' [뉴스9]",
+          "video_id": "-vzgfXJpF8I",
+          "views": 4915,
+          "upload_date": "2026-05-11",
+          "url": "https://www.youtube.com/watch?v=-vzgfXJpF8I",
+          "subtitle_summary": "1. Samsung Electronics labor union has announced a strike that will begin in a week, but they have returned to the negotiation table as mediated by the government. The main point of contention is the abolition of performance-based wage ceiling and its distribution method.\n2. After a long day of negotiations, both sides have agreed to continue discussions tomorrow, but the gap between their positions on performance-based wages remains significant.\n3. The key issues are the abolition of performance-based wage ceiling and the method for distributing it based on business profits. The labor union insists that a certain percentage of business profits should be allocated as performance-based wages, but the company has yet to express its stance on this matter. The national Samsung Electronics labor union is demanding common performance-based wage resources, while some local unions are skeptical about changing the current negotiation terms. The strike threat continues to grow, and there are concerns that it could disrupt the global semiconductor supply chain and have negative effects on competing countries. Negotiations will continue until tomorrow, with a possible resolution expected on the 21st, which is the last day of the strike deadline. (TYu Seon Jang Doo)",
+          "db_saved": true
+        },
+        {
+          "title": "삼성전자 노사, 총파업 전 막판 협상...이견 그대로 / YTN",
+          "video_id": "sXCuk4kekgo",
+          "views": 3245,
+          "upload_date": "2026-05-11",
+          "url": "https://www.youtube.com/watch?v=sXCuk4kekgo",
+          "subtitle_summary": "1. Samsung Electronics 노사(노동조합)는 21일부터 정부와 협상을 시작하여 성과급 기준을 제도화할지에 대해 논의 중이다.\n2. Samsung Electronics 노사는 연간 영업 이익의 15%를 개인 상한 없이 지급하고자 요구하고 있으나, 사택(사업부)은 영업 이익 10%를 재원으로 하되 메모리 사업부가 업계 1위를 달성할 경우 최고 수준에 보상을 하겠다는 입장을 취하고 있다.\n3. Samsung Electronics 노사와 사택의 협상은 오늘부터 내일까지 이어지고 있으나, 이견을 좁히지는 못한 것으로 보인다. 또한 Samsung Electronics 노사 내부에서는 반도체와 비반도체 부문 노조원의 갈등이 격화하고 있다.",
+          "db_saved": true
+        },
+        {
+          "title": "삼성전자 노사 막판 재협상 돌입…'성과급 기준' 관건 [세상만사] #삼성전자 #노사 #막판재협상",
+          "video_id": "9PfubipVEz0",
+          "views": 4589,
+          "upload_date": "2026-05-11",
+          "url": "https://www.youtube.com/watch?v=9PfubipVEz0",
+          "subtitle_summary": "1. Samsung Electronics의 노사 재협상이 정부 중재로 3월 말 협상이 결렬된 후 10시부터 세종시 중앙 노동위원회에서 이어지고 있습니다.\n2. 노조는 연간 영업 이익의 15%를 개인 상한 없이 지급할 것을 요구하고 있으나, 사측은 영업 이익 10%를 재원으로 하되 메모리 사업부가 업계 1위를 달성할 경우 최고 수준 보상을 하겠다는 입장입니다.\n3. 노조 내부에서도 반도체와 비반도체 부문 노조원의 갈등이 격화하고 있으며, 완제품 부문 노조원들은 전사 공통 재원을 확보해 성과급을 배분할 것을 요구했지만 초기업 노조는 협상력을 약화할 수 있다며 거절했습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "'Last Table' Samsung Electronics Labor and Management at a Standstill... Voices Calling for Settl...",
+          "video_id": "wP91I5EVTVk",
+          "views": 2566,
+          "upload_date": "2026-05-11",
+          "url": "https://www.youtube.com/watch?v=wP91I5EVTVk",
+          "subtitle_summary": "1. Samsung Electronics labor and management are at a standstill in their final negotiation over a 45 billion won performance bonus. The talks, scheduled to continue tomorrow, have yet to find common ground. However, with the growing burden of strike, there is a call for compromise from within.\n2. The upcoming total strike by Samsung Electronics union is anticipated due to the lack of agreement on the abolition of performance bonus cap. The union demands that the bonus be paid based on 15% of the company's profits and the cap be removed, which could potentially increase the bonus for each employee to around 6 billion won. However, the management has found it difficult to accept the demand while guaranteeing competitive performance bonuses.\n3. Concerns about potential discrimination among employees and the impact on global supply chains and Korea's investment competitiveness have been raised regarding the union's strike, as reported by the Seoul National Assembly Audit Office. If no resolution is reached in tomorrow's negotiations, the possibility of a total strike becoming a reality is high. MBN News, Shin-su.",
+          "db_saved": true
+        }
+      ],
+      "max": 1.4585,
+      "min": 3.6687,
+      "nb_score": 0.3976,
+      "avg_views": 4191.6,
+      "total_views": 20958
+    },
+    {
+      "keyword": "한미 정상회담",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "프로젝트 프리덤",
+      "is_fixed": false,
+      "views": [
+        2988
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "Project Freedom (KBS_Episode 451_Aired May 9, 2026)",
+          "video_id": "D_ML5tp1ZMA",
+          "views": 2988,
+          "upload_date": "2026-05-11",
+          "url": "https://www.youtube.com/watch?v=D_ML5tp1ZMA",
+          "subtitle_summary": "1. 전쟁이 다시 발발했습니다. 미국과 이란의 충돌은 최근 7일 호르무즈 협에서 일어났으며, 두 국가는 공격자와 피해자로서 정보에 대한 다른 주장을 하고 있습니다.\n2. 이 전쟁은 트럼프 대통령의 반응으로 화제가 되었습니다. 미국은 휴전 상태에서 공격을 한 것을 주장하고 있지만, 이란은 아니라고 항의하고 있습니다.\n3. 이 전쟁과 관련된 또 다른 주제는 프로젝트 프리덤입니다. 이 작전은 미국이 이란의 통제 구역에서 해협을 지나갈 수 있는 안전한 항로 정보를 제공하기 위해 시도되고 있으며, 현재 미군이 선박 코인을 제공할 수 없다는 문제가 있습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "한미 동맹 강화",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "AI 반도체 투자",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "코스피 사상 최고",
+      "is_fixed": false,
+      "views": [
+        9287
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "[Breaking News] KOSPI 'Back to All-Time High'... Samsung Electronics Return '+341.62%' [Jeong Wan...",
+          "video_id": "wSprX-Omk0Y",
+          "views": 9287,
+          "upload_date": "2026-05-11",
+          "url": "https://www.youtube.com/watch?v=wSprX-Omk0Y",
+          "subtitle_summary": "1. KOSPI (대한민국 주식시장)는 사상 최고치를 달성했습니다. 이는 8천 이상의 수준으로 예측됩니다.\n2. Samsung Electronics와 SK Hynix의 가격이 폭등하였습니다. Samsung Electronics의 수익률은 341.62%를 넘었습니다.\n3. 지난 8월 13일부터 조금씩 매수한 사람들이 많아서, 주식시장에서 반도체는 완전히 외거리로 보입니다. 현재 거래대금은 50조원으로 상당히 높습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "해상풍력 발전 협력",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "STO 제도화 전망",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "이란 원유 수출 제재",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "EU와 경제 협력",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "러시아 우크라이나 중재",
+      "is_fixed": false,
+      "views": [
+        6107
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "[자막뉴스] 별안간 손 든 푸틴 \"준비됐다\"...중동 핵 문제 중재자로 급부상 / YTN",
+          "video_id": "xXQ3sdnubCE",
+          "views": 6107,
+          "upload_date": "2026-05-11",
+          "url": "https://www.youtube.com/watch?v=xXQ3sdnubCE",
+          "subtitle_summary": "1. 푸틴(Putin)은 미국과의 핵 문제 협상에서 러시아가 핵무기급 우라늄을 보관할 수 있는 것으로 이루어질 것이며, 국제 원자력 기구의 통제 아래 안전하게 진행될 것이라고 말했습니다.\n2. 현재 협상 대상은 2015년과 달리 핵무기급 직전 단계의 60% 고농주 우라늄으로 알려졌습니다. 미국 정보당국은 이 440kg의 위치를 파악하지 못하고 있다고 보도했습니다.\n3. 러시아는 우크라이나 전쟁 이후 서방과 대립하고 있으며, 미국은 러시아의 중간 제재 문제를 해결하라고 요구했습니다. 따라서 러시아는 중동 문제의 중재자로 다시 존재감을 키우며, 외교 영향력을 보건하려는 의도가 있음이 추측되었습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "지방선거 보수 참패",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "급등하는 서울 전세가",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "주택연금 상속 제도",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    }
+  ]
+}

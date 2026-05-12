@@ -1,0 +1,265 @@
+{
+  "timestamp": "2026-05-11T08:33:08.057911",
+  "model": "mistral:latest",
+  "keyword_count": 3,
+  "analyze_subtitles": true,
+  "analysis_source": "youtube",
+  "keywords": [
+    {
+      "keyword": "오늘의 주요 뉴스",
+      "is_fixed": true,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "부산 LNG 발전소 화재",
+      "is_fixed": false,
+      "views": [
+        259694,
+        15019,
+        8240,
+        7149,
+        16271
+      ],
+      "video_count": 5,
+      "videos": [
+        {
+          "title": "[Today's News] 'Large Fire at Thermal Power Plant' Response Level 1... \"Stay Home\" Busan Saha in ...",
+          "video_id": "Tzt2FTpTvH0",
+          "views": 259694,
+          "upload_date": "2026-05-10",
+          "url": "https://www.youtube.com/watch?v=Tzt2FTpTvH0",
+          "subtitle_summary": "1. 발전소에서 큰 연기가 지속적으로 뿜어져 나오고 있습니다. (A thermal power plant is emitting a large amount of smoke continuously.)\n2. 불이 발생했다는 것으로 알려졌습니다. 소방 당국은 대응 1단계를 발령하고 있습니다. (A fire has been reported at a thermal power plant located in Saha-gu, Busan. The fire department has issued Level 1 response.)\n3. 안전에 유의하여 외출을 자재하라는 안내 문자가 발전소 화제로 인근 주민들에게 당부되었습니다. (The local government and fire department have asked nearby residents to be cautious and minimize outdoor activities due to the smoke from the power plant incident.)",
+          "db_saved": true
+        },
+        {
+          "title": "부산 LNG 화력발전소 화재…주말 사건·사고 [9시 뉴스] / KBS  2026.05.10.",
+          "video_id": "MDo0CNYH6r4",
+          "views": 15019,
+          "upload_date": "2026-05-10",
+          "url": "https://www.youtube.com/watch?v=MDo0CNYH6r4",
+          "subtitle_summary": "1. 부산에서 LNG 발전소가 화재로 인해 큰 불이 나왔으며, 인근 주택까지 연기가 퍼졌습니다.\n2. 소방 대응 1단계를 발령하고 진행했으나 피해자는 없었습니다.\n3. 동일한 날, 경기도 여주시 야산에서도 불이 발생하였으며, 30대 남성은 병원으로 옮겨지고 60대 남성은 화상을 입었습니다. 또한 서울 송동구에서도 불이 발생하여 2명의 주민이 다쳐 치료를 받았으며, 42명이 대피했습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "Massive fire at Busan LNG power plant... Fires in various locations due to dry weather / SBS 8 News",
+          "video_id": "cDc5_ZYXZEQ",
+          "views": 8240,
+          "upload_date": "2026-05-10",
+          "url": "https://www.youtube.com/watch?v=cDc5_ZYXZEQ",
+          "subtitle_summary": "1. 건조한 날씨 때문에 전국적으로 불이 났습니다. 특히, 부산 LNG 발전소에서도 큰 불이 발생했고, 산불도 일어났습니다.\n2. 화재가 처음 발생한 곳은 4호 증기터빈의 전기 설비로 추정되며, 대규모 사고와 액화천연가스 폭발은 없었습니다.\n3. 서울 성동구에서는 아파트 1층에서 불이 나 주민 2명이 화상을 입고 연기를 마셔 다쳤습니다. 소방 당국은 정확한 화재 원인을 조사하고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "부산 LNG 화력발전소 화재…신고 잇따라 / KBS  2026.05.10.",
+          "video_id": "b-CPTpJKn4A",
+          "views": 7149,
+          "upload_date": "2026-05-10",
+          "url": "https://www.youtube.com/watch?v=b-CPTpJKn4A",
+          "subtitle_summary": "1. 부산에서 LNG 발전소인 '한국 남부 발전 빚드림' 본부에 불이 나왔습니다.\n2. 소방당국은 대응 1단계를 발령하고 72명의 인력과 20대의 장비를 투입하여 진행중입니다.\n3. 불이 일으키는 연기가 주변 아파트와 주택에 번지며, 시민들도 신고하고 있습니다. 현재까지의 확인은 피해자 없음을 보고했습니다. (KBS, 2026.05.10)",
+          "db_saved": true
+        },
+        {
+          "title": "국가보안시설 발전소에서 불.. 대응 1단계 (2026-05-10,일/뉴스데스크/부산MBC)",
+          "video_id": "dZnj-fpoFug",
+          "views": 16271,
+          "upload_date": "2026-05-10",
+          "url": "https://www.youtube.com/watch?v=dZnj-fpoFug",
+          "subtitle_summary": "1. 부산의 천연가스 발전소에서 불이 발생하여 소방당국이 대응 1단계를 시작했습니다. 불이 두 시간 만에 제어되었으나, 수소 탱크가 있는 건물 안에 폭발 위험이 있어 완전히 진화하기는 어려웠습니다.\n2. 불은 스팸 터빈 전기 설비에서 시작되었으며, 소방당국은 폭발 위험으로 탱크한 수소를 옥상을 통해 배출하고 추가 진화를 계획했습니다.\n3. 전력 공급에는 큰 차질이 없었으며, 경찰과 소방당국은 진화작업을 마치면 정확한 화재 원인을 조사할 계획입니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0.3361,
+      "min": 1.2925,
+      "nb_score": 0.26,
+      "avg_views": 61274.6,
+      "total_views": 306373
+    },
+    {
+      "keyword": "미중 무역협상 한국",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "롯데 자이언츠 관중석",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "이란 우라늄 탈취작전",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "AI 공론장 다음 업스테이지",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "초고가 주택자 3중 규제",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "산부인과 인력난",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "미국 대학 위기",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "보이스피싱 공무원 무죄",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "양자컴퓨터 항암신약",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "SNS 건강 해로움",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "자외선 차단제 기미 주근깨",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "인도네시아 시중은행 위기",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "삼성전자 총파업 협상",
+      "is_fixed": false,
+      "views": [
+        10546
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "Samsung Electronics Labor and Management Back to the Negotiation Table... 'Watershed' for Strike ...",
+          "video_id": "HoU_hrVfahM",
+          "views": 10546,
+          "upload_date": "2026-05-10",
+          "url": "https://www.youtube.com/watch?v=HoU_hrVfahM",
+          "subtitle_summary": "1. Samsung Electronics labor union will meet with management again tomorrow under government mediation, as they continue to demand a performance bonus of 60 billion won per employee in the semiconductor division. This could be the last chance to prevent an upcoming strike announced for the 21st.\n2. The labor union maintains a firm stance, with demands including formalizing a 15% profit-based bonus and abolishing the performance bonus cap. They have prepared for the strike as planned.\n3. Both sides expect agreement in this round of negotiations due to active government intervention. However, internal dissent within the labor union, which represents only semiconductor workers, adds pressure to the negotiations. The outcome of these two days of negotiations could significantly impact the planned strike. (MBC News, Park Jin-jun)",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "코스피 7000 증시 전망",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    }
+  ]
+}

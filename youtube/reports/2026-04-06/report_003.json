@@ -1,0 +1,611 @@
+{
+  "timestamp": "2026-04-06T01:37:39.104706",
+  "model": "news-singleline:latest",
+  "keyword_count": 3,
+  "analyze_subtitles": true,
+  "analysis_source": "youtube",
+  "keywords": [
+    {
+      "keyword": "오늘의 주요 뉴스",
+      "is_fixed": true,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "트럼프 한국 실망 발언",
+      "is_fixed": false,
+      "views": [
+        3039,
+        13579
+      ],
+      "video_count": 2,
+      "videos": [
+        {
+          "title": "트럼프의 '한국 실망' 청구서로 날아드나? / YTN",
+          "video_id": "sLH75hJGMLY",
+          "views": 3039,
+          "upload_date": "2026-04-05",
+          "url": "https://www.youtube.com/watch?v=sLH75hJGMLY",
+          "subtitle_summary": "트럼프는 중동 전쟁에 동참하지 않는 우방국들에 대한 실망감을 드러내며 한국을 압박하고, 전쟁 이후 관세나 안보 협력 분야에서 ‘청구서’를 요구할 수 있다는 우려가 제기되고 있다. 특히 한미 정상회담 합의된 안보 협력 분야에 타격을 받을 가능성이 있으며, 원자력 협정 개정이나 핵추진 잠수함 도입 논의에 제동이 걸릴 수도 있다. 트럼프의 발언 배경에는 한미 협상 일정에 이미 그의 실망감이 반영된 것으로 추정된다.",
+          "db_saved": true
+        },
+        {
+          "title": "[자막뉴스] 한국 콕 집어 \"보답해야\"...트럼프의 '한국 실망' 청구서? / YTN",
+          "video_id": "JT-8Gckr5C8",
+          "views": 13579,
+          "upload_date": "2026-04-05",
+          "url": "https://www.youtube.com/watch?v=JT-8Gckr5C8",
+          "subtitle_summary": "트럼프는 이란 전쟁 중 우방국들의 협력 부족에 실망하며 한국을 압박, 주한미군 역할에 보답을 요구하는 등 관세 폭탄과 같은 보복 가능성을 시사하여 한미 협력에 부정적 영향을 미칠 수 있다는 우려가 제기되었다. 특히, 원자력 협정 개정 및 핵추진 잠수함 도입 논의에 제동이 걸릴 가능성이 있으며, 트럼프의 발언에 따라 한반도 관련 협상에 차질이 생길 수 있다.",
+          "db_saved": true
+        }
+      ],
+      "max": 2.9086,
+      "min": 1.2932,
+      "nb_score": 2.2492,
+      "avg_views": 8309.0,
+      "total_views": 16618
+    },
+    {
+      "keyword": "이 회담",
+      "is_fixed": false,
+      "views": [
+        120,
+        2142,
+        858
+      ],
+      "video_count": 3,
+      "videos": [
+        {
+          "title": "이 대통령-여야 대표 회담 의제는?...민감 현안도 다뤄질 듯 / YTN",
+          "video_id": "1zOrh2hCin0",
+          "views": 120,
+          "upload_date": "2026-04-05",
+          "url": "https://www.youtube.com/watch?v=1zOrh2hCin0",
+          "subtitle_summary": "[이 대통령과 여야 대표가 내일 회담을 통해 중동 위기 대응책, 국정조사, 개헌 등 민감 현안을 논의하며, 부동산 정책과 5·18 정신 관련 의견 교환도 이루어질 것으로 예상된다.]",
+          "db_saved": true
+        },
+        {
+          "title": "이 대통령-여야 대표 회담 의제는?...민감 현안도 다뤄질 듯 / YTN",
+          "video_id": "DugRg5H1TOE",
+          "views": 2142,
+          "upload_date": "2026-04-05",
+          "url": "https://www.youtube.com/watch?v=DugRg5H1TOE",
+          "subtitle_summary": "[이 대통령과 여야 대표가 중동 위기 대응, 조작 기소 의혹 국정조사, 개헌 등 민감 현안을 논의하며 회담을 가졌고, 부동산 정책과 5·18 정신 관련 의견 교환도 이루어질 것으로 예상된다.]",
+          "db_saved": true
+        },
+        {
+          "title": "이 대통령-여야 대표 회담 의제는?...민감 현안도 다뤄질 듯 / YTN",
+          "video_id": "HHp_kRe7N8s",
+          "views": 858,
+          "upload_date": "2026-04-05",
+          "url": "https://www.youtube.com/watch?v=HHp_kRe7N8s",
+          "subtitle_summary": "[이재명 대통령과 여야 대표 간 회담이 7일 개최되어 중동발 위기 대응, 국정 조사, 개헌 등 민감 현안이 논의될 가능성이 제기되며, 전임 정부 검찰 수사 및 악법 관련 논의도 이루어질 전망이다. 특히, 부동산 정책 관련 언급과 함께 국가 위기 극복을 위한 협력, 전쟁 추경안 심사 등이 주요 의제로 다뤄질 것으로 예상된다. 이번 회담을 통해 여야 협의체 운영 정례화 가능성도 주목받고 있다.]",
+          "db_saved": true
+        }
+      ],
+      "max": 1.7091,
+      "min": 2.3232,
+      "nb_score": 0.7356,
+      "avg_views": 1040.0,
+      "total_views": 3120
+    },
+    {
+      "keyword": "AI 미군 작전 추적",
+      "is_fixed": false,
+      "views": [
+        19218,
+        3388,
+        39255,
+        17983
+      ],
+      "video_count": 4,
+      "videos": [
+        {
+          "title": "Real-time tracking with AI… Chinese companies relaying U.S. military operations / SBS 8 News",
+          "video_id": "YEfPKpzQDhw",
+          "views": 19218,
+          "upload_date": "2026-04-05",
+          "url": "https://www.youtube.com/watch?v=YEfPKpzQDhw",
+          "subtitle_summary": "중국 민간 기업들이 AI 기반으로 미국 군사 장비 및 이동 경로를 실시간으로 추적 공개하며, 이란 지원 의혹을 낳고 있으며, 미국 정부는 관련 위성사진 유통 중단을 요청했습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "Trump: “24-Hour Location Tracking… Direct Operation Command” / Channel A / News A",
+          "video_id": "mDDxxUCKzKM",
+          "views": 3388,
+          "upload_date": "2026-04-05",
+          "url": "https://www.youtube.com/watch?v=mDDxxUCKzKM",
+          "subtitle_summary": "트럼프 대통령은 미군 조종사가 혼자가 아니었다 강조하며, 국방부 등 군부와 함께 24시간 위치를 추적하며 구출 작전을 직접 지휘했다고 주장했습니다. 수십대의 항공기와 전투기를 투입하여 적진 깊숙한 곳에서 조종사 두 명을 구조해 낸 것은 이번이 처음이라고 밝혔습니다. 구조 작전에 수백 명의 특수부대원과 미군 전투기, 사이버 우주 정보 역량이 동원되어 큰 관심을 모았습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[Replay] Successful Rescue of Missing US F-15… The Tense Two-Day Operation | April 5, 2026 News A",
+          "video_id": "Nmqx5QtdiwI",
+          "views": 39255,
+          "upload_date": "2026-04-05",
+          "url": "https://www.youtube.com/watch?v=Nmqx5QtdiwI",
+          "subtitle_summary": "트럼프 대통령이 이란에서 실종된 미군 F-15 전투기 조종사를 구조한 대담한 작전을 수행했으며, 37시간 만에 구조에 성공하여 미국 역사상 가장 긴장감 넘치는 작전 중 하나로 기록되었다. 작전 과정에서 이란군과의 치열한 교전과 물리적 충돌이 있었으며, 미군 특수부대원 수십 명이 투입되어 작전을 수행했다. 트럼프 대통령은 이번 작전을 통해 미국의 군사력과 특수부대의 능력을 과시하며, 미군 조종사가 결코 혼자가 아니었다고 강조했다.",
+          "db_saved": true
+        },
+        {
+          "title": "미 특수부대, 이란 격추 F-15 두번째 탑승자 구조…“역사상 가장 대담한 작전” [9시 뉴스] / KBS  2026.04.05.",
+          "video_id": "b3s_uB02YZQ",
+          "views": 17983,
+          "upload_date": "2026-04-05",
+          "url": "https://www.youtube.com/watch?v=b3s_uB02YZQ",
+          "subtitle_summary": "[미 특수부대가 이란 본토에서 영화 같은 구조 작전을 성공시켰으며, 격추된 미군 전투기 조종사를 36시간의 치열한 사투 끝에 무사 귀환시키고, 이란군 5명을 순식간에 제압했습니다.]",
+          "db_saved": true
+        }
+      ],
+      "max": 1.5615,
+      "min": 2.1861,
+      "nb_score": 0.7143,
+      "avg_views": 19961.0,
+      "total_views": 79844
+    },
+    {
+      "keyword": "국힘 광주시장 출마",
+      "is_fixed": false,
+      "views": [
+        5221,
+        4124,
+        1660,
+        1768,
+        120,
+        628
+      ],
+      "video_count": 6,
+      "videos": [
+        {
+          "title": "국힘 이정현, 전남광주시장 출마 “몸부림이라도 쳐보겠다” [이슈PLAY] / JTBC News",
+          "video_id": "lSrZjkDvTms",
+          "views": 5221,
+          "upload_date": "2026-04-05",
+          "url": "https://www.youtube.com/watch?v=lSrZjkDvTms",
+          "subtitle_summary": "이정현 국민의힘 공천위원장이 사퇴를 발표하며, 법원이 찰라낸 김영환 충북지사의 컷오프 효력 정지 가처분 신청을 인용하면서 당내 공천 절차가 대폭 수정될 전망이다. 이 위원장은 전남 광주 특별시장 출마를 공식화하며, 호남 지역 전략을 재검토하는 상황이다. 당권 주자들이 잇따라 사퇴하는 가운데, 국민의힘의 당내 갈등이 심화되고 있다.",
+          "db_saved": true
+        },
+        {
+          "title": "민주, 오늘 전남광주시장 본경선 발표...국힘은 '공천 난맥' / YTN",
+          "video_id": "VXsi06O61K8",
+          "views": 4124,
+          "upload_date": "2026-04-05",
+          "url": "https://www.youtube.com/watch?v=VXsi06O61K8",
+          "subtitle_summary": "더불어민주당은 전남 광주시장 본경선 결과를 발표하며 신정훈, 민배, 김영록 3파전이 치열하게 진행될 예정이며, 50% 합산 투표와 과반 득표자가 없는 경우 2인 결선 투표를 통해 최종 후보를 결정한다. 이번 선거에서 충남, 세종 등 주요 지역의 본경선 결과도 발표될 예정이며, 선거 슬로건은 ‘대한민국 국가정상화 일자리’로 정해졌다. 국민의힘은 대구시장 등 주요 지역에서 공천 잡음이 이어지며 보수 세력의 분열 가능성이 높아지고 있다.",
+          "db_saved": true
+        },
+        {
+          "title": "민주, 오늘 전남광주시장 본경선 발표...국힘은 '공천 난맥' / YTN",
+          "video_id": "JnmUJCq1VEw",
+          "views": 1660,
+          "upload_date": "2026-04-05",
+          "url": "https://www.youtube.com/watch?v=JnmUJCq1VEw",
+          "subtitle_summary": "더불어민주당은 전남 광주시장 본경선 결과 발표를 6시로 확정하고, 신정훈, 민영배, 김영로 후보 간 3파전 경쟁을 이어갈 예정이며, 과반 득표자가 나타나지 않을 경우 2인 결선 투표를 실시한다. 국민의힘은 대구, 충북 등 텃밭 공천 남맥과 컷오프된 의원들의 무소속 출마 가능성 등으로 당내 혼선이 지속되고 있으며, 공천관리위원회가 공천 결정을 위한 회의를 진행 중이다.",
+          "db_saved": true
+        },
+        {
+          "title": "민주, 오늘 전남광주시장 본경선 발표...국힘은 '공천 난맥' / YTN",
+          "video_id": "rwDZdxBNk2A",
+          "views": 1768,
+          "upload_date": "2026-04-05",
+          "url": "https://www.youtube.com/watch?v=rwDZdxBNk2A",
+          "subtitle_summary": "더불어민주당은 전남 광주시장 본경선 결과 신정훈, 민영배, 김영록 후보 중 과반 득표자가 없는 경우 1, 2위 후보 간 결선 투표를 통해 최종 후보를 결정하며, 서울시장 예비 후보들 역시 합동 연설를 진행하고 있습니다. 반면 국민의힘은 텃밭인 대구와 남해 지역에서 컷오프 결정이 유지되지 않고, 일부 의원과 전직 고위 관료의 무소속 출마 가능성이 제기되며 당내 혼선이 지속되고 있습니다. 공천 분열이 심화될 경우 민주당에 유리한 상황이 전개될 수 있다는 위기감도 감돌고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "국힘, 전남광주특별시장 추가공모…이정현, 출마선언 / 연합뉴스TV (YonhapnewsTV)",
+          "video_id": "S_sZ5cnuokw",
+          "views": 120,
+          "upload_date": "2026-04-05",
+          "url": "https://www.youtube.com/watch?v=S_sZ5cnuokw",
+          "subtitle_summary": "국민의힘이 전남 광주시장 추가 공모를 결정하고 이정현 전위원장이 출마를 공식 선언했으며, 호남 지역 광역 기초단체 후보자 추가 접수 시 심사료 80% 감액을 적용하는 등 유동적인 공천 전략을 보였다. 경기지사 공천 역시 추가 공모를 검토하며, 정치권의 향방에 주목해야 한다. 국민의힘은 호남 지역 심판을 피하기 위해 다양한 시도를 보여줄 것으로 예상된다.",
+          "db_saved": true
+        },
+        {
+          "title": "국힘  이정현, '전남 광주 통합시장' 출마 선언! ㅡ\"몸부림이라도 쳐보겠다!\"/2026.04.05",
+          "video_id": "8PPlitSUpz8",
+          "views": 628,
+          "upload_date": "2026-04-05",
+          "url": "https://www.youtube.com/watch?v=8PPlitSUpz8",
+          "subtitle_summary": "국민의힘 이정현 전 대표가 전남 광주 통합시장 출마를 선언하며, 지역구에서 두 번 당선된 기적적인 신세를 이어갈지 주목받고 있다. 63 지방 선거 공천 관리위원장 사퇴 후 ‘몸부림이라도 쳐보겠다’는 강경한 발언으로 정치적 의지를 드러냈으며, 호남 보수 진영의 가능성을 시험하겠다는 의중을 밝혔다. 광주 전남 통합시장 출마를 통해 정치적 재기를 노리는 그의 행보에 귀추가 이어진다.",
+          "db_saved": true
+        }
+      ],
+      "max": 1.1601,
+      "min": 1.6981,
+      "nb_score": 0.6831,
+      "avg_views": 2253.5,
+      "total_views": 13521
+    },
+    {
+      "keyword": "경기도지사 본경선",
+      "is_fixed": false,
+      "views": [
+        4378,
+        664,
+        2241
+      ],
+      "video_count": 3,
+      "videos": [
+        {
+          "title": "Democratic Party Begins 'Three-Way Race' Gyeonggi Governor Primary... 'Local Election Matchups' C...",
+          "video_id": "fhRt05IAKZI",
+          "views": 4378,
+          "upload_date": "2026-04-05",
+          "url": "https://www.youtube.com/watch?v=fhRt05IAKZI",
+          "subtitle_summary": "민주당은 경기지사 본경선 투표를 시작하여 4월 5~7일 동안 후보들을 선출하고, 과반 득표 시 최종 후보를 확정하며 선거 준비에 박차를 가하고 있습니다. 투표는 식목일 경기도에 ‘주호’를 심는 의미를 지니고 있으며, 권리당원 및 일반 국민 여론 조사를 합산하여 진행됩니다. 인천, 강원, 울산, 경남 등 광역단체장 선거에서 민주당과 국민의힘 후보들이 경쟁하고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "Democratic Party begins Gyeonggi Governor primary; the candidate the People Power Party is focusi...",
+          "video_id": "-7Iobuv7sLQ",
+          "views": 664,
+          "upload_date": "2026-04-05",
+          "url": "https://www.youtube.com/watch?v=-7Iobuv7sLQ",
+          "subtitle_summary": "더불어민주당과 국민의힘은 각각 경기지사 본경선을 시작하며, 4월 7일 최종 후보를 발표할 예정이며, 국민의힘은 반도체 전문가 영입에 집중하고 있다. 온라인 투표와 ARS 투표를 거쳐 권리당원과 국민 여론 조사 결과를 합산하여 경선 결과를 결정하며, 과반 득표에 실패할 경우 결선 투표가 진행된다.",
+          "db_saved": true
+        },
+        {
+          "title": "🔴LIVE [생중계] 더불어민주당 경기도지사 후보 본경선 합동연설회 | 26.04.04 / KNN",
+          "video_id": "CSYCsR1kFgs",
+          "views": 2241,
+          "upload_date": "2026-04-05",
+          "url": "https://www.youtube.com/watch?v=CSYCsR1kFgs",
+          "subtitle_summary": "더불어민주당 경기도지사 후보 본경선 합동연설회가 개최되어 소병훈 중앙당 선거관리위원장과 김동현 후보가 연설을 진행했으며, 34만여 명의 유권자들의 뜨거운 기대와 책임감을 강조하며 현명한 선택을 당부했다.",
+          "db_saved": true
+        }
+      ],
+      "max": 1.8299,
+      "min": 2.7753,
+      "nb_score": 0.6593,
+      "avg_views": 2427.67,
+      "total_views": 7283
+    },
+    {
+      "keyword": "민주당 지방선거 슬로건",
+      "is_fixed": false,
+      "views": [
+        5225,
+        1245,
+        3609,
+        897,
+        2971
+      ],
+      "video_count": 5,
+      "videos": [
+        {
+          "title": "더불어민주당 6.3 지방선거 슬로건·홍보캠페인 발표 - [끝까지 LIVE] MBC 중계방송 2026년 04월 05일",
+          "video_id": "SiLqgQMftic",
+          "views": 5225,
+          "upload_date": "2026-04-05",
+          "url": "https://www.youtube.com/watch?v=SiLqgQMftic",
+          "subtitle_summary": "더불어민주당은 6.3 지방선거를 ‘내란 완전 종식 및 국격 회복’을 슬로건으로 제시하며, 윤석열 정부의 내란 시도를 저지하고 국가 정상화를 실현하겠다는 의지를 밝혔다. 지역 내 내란 세력을 심판하고 국민 통합을 이루는 것을 목표로, 중앙 정부와의 협력을 강조하며 지방 정부의 일잘하는 모습을 보여주겠다고 약속했다. 선거 슬로건은 ‘대한민국 국가정상화’와 ‘일잘하는 지방정부’라는 두 가지 형태로 활용될 예정이다.",
+          "db_saved": true
+        },
+        {
+          "title": "[LIVE] 민주당 6·3 지방선거 슬로건·홍보캠페인 발표/2026년 4월 5일(일)/KBS",
+          "video_id": "e16Bn95TCOA",
+          "views": 1245,
+          "upload_date": "2026-04-05",
+          "url": "https://www.youtube.com/watch?v=e16Bn95TCOA",
+          "subtitle_summary": "더불어민주당은 윤석열 정부의 내란 시도를 저지하고 국가정상화를 실현하기 위해 제9회 전국 동시 지방 선거를 치르며 ‘내란 완전 종식 및 국격 회복’을 슬로건으로 제시했다. 60일 앞으로 다가온 선거에서 민주당은 내란 세력 척결과 국민 통합을 강조하며, 중앙 정부와 협력하여 국가의 초석을 마련하겠다는 의지를 밝혔다. 지역별 선거구 규모가 크다는 점을 고려하여 ‘대한민국 국가정상화 일잘하는 지방정부’라는 슬로건을 활용할 계획이다.",
+          "db_saved": true
+        },
+        {
+          "title": "[Replay] Democratic Party of Korea Announces June 3 Local Election Slogan and Promotional Campaig...",
+          "video_id": "woHuKU2pk9M",
+          "views": 3609,
+          "upload_date": "2026-04-05",
+          "url": "https://www.youtube.com/watch?v=woHuKU2pk9M",
+          "subtitle_summary": "더불어민주당은 60일 앞으로 다가온 지방 선거에서 ‘내란 완전 종식 및 국격 회복’을 슬로건으로 제시하며, 윤석열 정부의 내란 시도를 저지하고 국가 정상화를 실현하겠다는 의지를 밝혔다. 지역 내 내란 세력 심판과 국민 통합을 강조하며, 중앙 정부와의 협력을 통해 대한민국 대도약의 초석을 마련하겠다는 목표를 제시했다.",
+          "db_saved": true
+        },
+        {
+          "title": "[Live Broadcast] Democratic Party of Korea Announces June 3 Local Election Slogan and Promotional...",
+          "video_id": "CU0B4L9oix0",
+          "views": 897,
+          "upload_date": "2026-04-05",
+          "url": "https://www.youtube.com/watch?v=CU0B4L9oix0",
+          "subtitle_summary": "더불어민주당은 60일 앞으로 다가온 지방선거를 맞아 ‘내란 완전 종식 및 국격 회복’을 슬로건으로 정하고, 윤석열 정부의 내란 시도를 저지하고 국가 정상화를 실현하겠다는 의지를 밝혔다. 지역 내 내란 세력을 심판하고 국민 통합과 화합을 이루는 것을 목표로, 중앙 정부와 협력하여 지방 정부를 구성하고 대도약의 초석을 마련할 계획이다. ‘대한민국 국가정상화 일자’라는 슬로건을 활용하여 다양한 홍보 캠페인을 전개할 예정이다.",
+          "db_saved": true
+        },
+        {
+          "title": "Live Broadcast of the Announcement of the June 3 Local Election Slogan and Promotional Campaign -...",
+          "video_id": "i6In5__E9i8",
+          "views": 2971,
+          "upload_date": "2026-04-05",
+          "url": "https://www.youtube.com/watch?v=i6In5__E9i8",
+          "subtitle_summary": "더불어민주당은 6월 3일 지방 선거를 맞아 ‘내란 완전 종식 및 국격 회복’을 슬로건으로 정하고, 윤석열 정부의 반헌법적 행태와 내란 세력 옹호에 대한 비판을 강조하며 유권자들의 지지를 호소하고 있다.이번 선거는 탄핵 1주년 이후 치러지는 중요한 시기로, 내란 세력 심판과 국가 정상화를 통해 국민 통합을 이루겠다는 의지를 표명하며, 중앙 정부와의 협력을 통해 지방 정부의 발전을 도모하겠다고 밝혔다. 더불어민주당은 ‘대한민국 국가 정상화’라는 슬로건을 활용한 홍보 캠페인을 통해 유권자들에게 메시지를 전달할 계획이다.",
+          "db_saved": true
+        }
+      ],
+      "max": 1.3213,
+      "min": 2.3636,
+      "nb_score": 0.559,
+      "avg_views": 2789.4,
+      "total_views": 13947
+    },
+    {
+      "keyword": "F-15 조종사 구출",
+      "is_fixed": false,
+      "views": [
+        57252,
+        126120,
+        11885,
+        4441,
+        13164,
+        158272,
+        40451,
+        17093
+      ],
+      "video_count": 8,
+      "videos": [
+        {
+          "title": "[속보] 트럼프 \"실종된 F-15 전투기 조종사 구출\" / YTN",
+          "video_id": "YRQonuEAygQ",
+          "views": 57252,
+          "upload_date": "2026-04-05",
+          "url": "https://www.youtube.com/watch?v=YRQonuEAygQ",
+          "subtitle_summary": "[트럼프 대통령은 지난 3일 남서부 산악지대에서 실종된 F-15 전투기 조종사가 구조되면서 역사상 가장 대담한 작전을 완수했다고 발표했습니다. 이란이 격단 격추단 뒤 비상 탈출한 미군 조종사를 수색했으나, 트럼프 대통령은 조종사를 무사히 구조했다고 밝혔습니다. 건강 상태 등 자세한 내용은 추가 소식으로 보도할 예정입니다.]",
+          "db_saved": true
+        },
+        {
+          "title": "[속보] 트럼프 \"실종된 F-15 전투기 조종사 구출\" / YTN",
+          "video_id": "Y3FCotnHj-k",
+          "views": 126120,
+          "upload_date": "2026-04-05",
+          "url": "https://www.youtube.com/watch?v=Y3FCotnHj-k",
+          "subtitle_summary": "[이란 남서부 산악지대에서 실종된 미군 F-15 전투기 조종사가 트럼프 대통령의 주재로 역사상 가장 대담한 작전으로 무사히 구조되었으며, 이란도 수색에 나섰습니다.]",
+          "db_saved": true
+        },
+        {
+          "title": "美 특수부대, 격추된 F-15 조종사 구출…\"내륙 침투 대규모 작전\" [뉴스7]",
+          "video_id": "p4jjsMLqMgo",
+          "views": 11885,
+          "upload_date": "2026-04-05",
+          "url": "https://www.youtube.com/watch?v=p4jjsMLqMgo",
+          "subtitle_summary": "[트럼프 대통령이 역사상 가장 대담한 구조 작전이라고 평가한 가운데, 미국 특수부대와 전략 자산을 동원하여 격추된 F-15 전투기에 타고 있던 미군 조종사 두 명을 이란 상공에서 성공적으로 구조했습니다. 긴박했던 구조 작전에는 공중 급유기, 전투기, 헬기, 우주 위성 등 다양한 자산이 투입되었으며, 이란의 반격도 있었으나 미국은 조종사들을 모두 구출하는 데 성공했습니다.]",
+          "db_saved": true
+        },
+        {
+          "title": "미국, F-15 조종사 구출 성공 트럼프 \"대담한 작전 완수\" : MBC뉴스속보",
+          "video_id": "2Sh5oLbRvSE",
+          "views": 4441,
+          "upload_date": "2026-04-05",
+          "url": "https://www.youtube.com/watch?v=2Sh5oLbRvSE",
+          "subtitle_summary": "미국이 이란의 방공망을 무력화했다고 자신하더니, F-15 전투기 연이어 격추되면서 트럼프 대통령의 주장이 뭇매를 맞았으며, 호르무즈 해협 통과를 통한 석유 확보를 주장하는 동시에 국방 예산을 대폭 증액하려 하자 전문가와 야권에서 최고 사령관의 대비 부족을 비난하고 있다.",
+          "db_saved": true
+        },
+        {
+          "title": "미 특수부대, 이란서 격추된 F-15 두번째 탑승자 구조 / KBS  2026.04.05.",
+          "video_id": "pOJRsU4era4",
+          "views": 13164,
+          "upload_date": "2026-04-05",
+          "url": "https://www.youtube.com/watch?v=pOJRsU4era4",
+          "subtitle_summary": "[미군 특수부대가 이란에서 격추된 F-15 전투기 탑승자 두 번째를 구조했으며, 36시간 만에 전원 구조를 완료한 것으로 나타났다. 트럼프 대통령은 이 작전을 ‘역사상 가장 대담한 수색 및 구조 작전’으로 평가하며, 부상당한 미군 군인의 상태가 괜찮다고 밝혔다. 이란군은 생포 현상금을 걸고 수색 작전을 벌였으나, 미군의 적극적인 수색 작전으로 인해 구조에 성공했다.]",
+          "db_saved": true
+        },
+        {
+          "title": "美 특수부대, 이란 본토 투입...이틀 간 교전 끝 F-15 승무원 구출",
+          "video_id": "jpr63zd6uRs",
+          "views": 158272,
+          "upload_date": "2026-04-05",
+          "url": "https://www.youtube.com/watch?v=jpr63zd6uRs",
+          "subtitle_summary": "미군 특수부대가 이란 본토에 투입되어 F-15 전투기 조종사 한 명을 구조했으며, 헬기 지원과 함께 추가 조종사 수색 작전이 진행 중이다. 치열한 교전 끝에 F-15 전투기가 격추되었으나, 헬기 투입으로 한 명은 구조되었고, 다른 조종사의 행방을 찾기 위한 긴장된 수색이 이어지고 있다. 이란 역시 실종자 확보를 시도하며 군사적 긴장을 고조시키고 있으며, 구조 작전은 외교적 문제로 복잡하게 얽히고 있다.",
+          "db_saved": true
+        },
+        {
+          "title": "Missing F-15 Fighter Crew Rescued… \"Will Never Leave an American Warrior in Enemy Counting\" (Subt...",
+          "video_id": "KN9JCa1Vuco",
+          "views": 40451,
+          "upload_date": "2026-04-05",
+          "url": "https://www.youtube.com/watch?v=KN9JCa1Vuco",
+          "subtitle_summary": "[48시간 동안 벌어진 긴박한 수색 작전 끝에 이란 상공에서 격추된 F-15 전투기의 두 번째 탑승자가 구조되었으며, 이슬람 혁명 수비대의 포위에도 불구하고 미국 구조대와 이란군 간의 교전 끝에 조종사를 구출하여 신병으로 확인되었습니다. 이번 구조 성공으로 극심한 불확실성이 해소되었고, 트럼프 대통령은 ‘미국 역사상 가장 대담한 구조 작전’을 성공적으로 완수했다고 발표했습니다.]",
+          "db_saved": true
+        },
+        {
+          "title": "미 특수부대, 이란 격추 F-15 두번째 탑승자 구조…“역사상 가장 대담한 작전” [9시 뉴스] / KBS  2026.04.05.",
+          "video_id": "b3s_uB02YZQ",
+          "views": 17093,
+          "upload_date": "2026-04-05",
+          "url": "https://www.youtube.com/watch?v=b3s_uB02YZQ",
+          "subtitle_summary": "[미 특수부대가 이란 본토에서 영화 같은 구조 작전을 성공시키며 격추된 미군 전투기 조종사를 36시간 만에 무사 귀환시키고, 이란군 다섯명을 사살하는 등 역사상 가장 대담한 작전을 완수했다는 평가를 받았다.]",
+          "db_saved": true
+        }
+      ],
+      "max": 0.6564,
+      "min": 1.477,
+      "nb_score": 0.4444,
+      "avg_views": 53584.75,
+      "total_views": 428678
+    },
+    {
+      "keyword": "미군 이란 구조작전",
+      "is_fixed": false,
+      "views": [
+        246278,
+        156263,
+        13011,
+        15726,
+        23389,
+        8660
+      ],
+      "video_count": 6,
+      "videos": [
+        {
+          "title": "이란 한복판, 미 특수부대 투입…\"교전 끝 실종미군 극적구출\"/ 연합뉴스 (Yonhapnews)",
+          "video_id": "4tqh3JKvMQ0",
+          "views": 246278,
+          "upload_date": "2026-04-05",
+          "url": "https://www.youtube.com/watch?v=4tqh3JKvMQ0",
+          "subtitle_summary": "이란 현장에서 미 특수부대가 투입되어 교전 끝에 실종된 미군을 극적으로 구조했다는 소식이 전해지고 있다. 미군 부대와 현지 반군 간의 교전이 벌어진 가운데, 긴급 구조 작전이 펼쳐진 것으로 보인다. 이 과정에서 미군 일부가 실종된 채 발견되어 현재까지 정확한 상황은 파악되지 않고 있다.",
+          "db_saved": true
+        },
+        {
+          "title": "美 특수부대, 이란 본토 투입...이틀 간 교전 끝 F-15 승무원 구출",
+          "video_id": "jpr63zd6uRs",
+          "views": 156263,
+          "upload_date": "2026-04-05",
+          "url": "https://www.youtube.com/watch?v=jpr63zd6uRs",
+          "subtitle_summary": "미군 특수부대가 이란 본토에 투입되어 F-15 전투기 조종사 한 명을 구조했으며, 헬기 지원과 함께 추가 구조 작전이 진행되었고, 격추된 전투기 조종사는 아직 실종된 상태이다. 이란 혁명수비대 역시 작전 지역에 병력을 파견했지만 미공군의 공습으로 교전이 벌어졌으며, 긴장 속에서 구조 작전이 이어지고 있다. 트럼프 대통령은 이 작전을 “역사상 가장 대담한 수”라고 평가하며, 미군의 용맹함과 지휘부의 지원을 강조했다.",
+          "db_saved": true
+        },
+        {
+          "title": "미 특수부대, 이란서 격추된 F-15 두번째 탑승자 구조 / KBS  2026.04.05.",
+          "video_id": "pOJRsU4era4",
+          "views": 13011,
+          "upload_date": "2026-04-05",
+          "url": "https://www.youtube.com/watch?v=pOJRsU4era4",
+          "subtitle_summary": "[미군 특수부대가 이란에서 격추된 F-15 전투기 탑승자 두 번째를 구조했으며, 36시간 만에 전원 구조를 완료한 것으로 나타났다. 트럼프 대통령은 이 작전을 ‘역사상 가장 대담한 수색 및 구조 작전’으로 평가하며, 부상당한 미군에 대한 안도감을 표했다. 치열한 수색 작전 중 사망자도 발생했으며, 백악관 상황실에서 작전 상황을 지켜본 것으로 알려졌다.]",
+          "db_saved": true
+        },
+        {
+          "title": "미 특수부대, 이란 격추 F-15 두번째 탑승자 구조…“역사상 가장 대담한 작전” [9시 뉴스] / KBS  2026.04.05.",
+          "video_id": "b3s_uB02YZQ",
+          "views": 15726,
+          "upload_date": "2026-04-05",
+          "url": "https://www.youtube.com/watch?v=b3s_uB02YZQ",
+          "subtitle_summary": "[미 특수부대가 36시간간의 치열한 사투 끝에 이란 본토에서 격추된 미군 전투기 조종사를 구조하며, 이란군 5명을 사살하고 미군 전투기 2대를 격추하는 대담한 작전을 수행했다.]",
+          "db_saved": true
+        },
+        {
+          "title": "[속보] 트럼프 \"실종 미군 무사히 구조...역사상 가장 대담한 작전 완수\" [이슈PLAY] / JTBC News",
+          "video_id": "ltSiXqygUxg",
+          "views": 23389,
+          "upload_date": "2026-04-05",
+          "url": "https://www.youtube.com/watch?v=ltSiXqygUxg",
+          "subtitle_summary": "이란이 미국의 F35 스텔스 전투기를 두 번째 격추했으며, 중부 사령부의 사드 레이더를 파손하는 등 미군 시설을 공격하는 등 중동 지역에서 미국과 이란 간의 군사적 긴장이 고조되고 있다. CNN은 이란의 미사일 발사대 절반이 온전하고 공격용 드론이 무기고에 남아있다고 보도하며 이란의 전력이 여전히 강세를 보이고 있다고 분석했다. 트럼프 대통령은 앞으로 2~3주 동안 이란의 극단적인 타격을 경고했지만, 전문가들은 이란의 자원 활용 가능성을 고려할 때 비현실적인 목표라는 반응이다.",
+          "db_saved": true
+        },
+        {
+          "title": "미국·이란, 필사적인 조종사 수색 작전...휴전 협상 엇갈린 신호 / YTN",
+          "video_id": "8jxd5BYyzXk",
+          "views": 8660,
+          "upload_date": "2026-04-05",
+          "url": "https://www.youtube.com/watch?v=8jxd5BYyzXk",
+          "subtitle_summary": "미국과 이란이 실종된 미군 조종사 수색 작전을 병행하며 필사적으로 수색하고 있으며, 트럼프 대통령의 최후 통첩 이후 휴전 협상 신호가 엇갈리고 있습니다. 이스라엘이 이란 부쉐로 원전을 공격해 추가적인 긴장이 고조되고 있으며, 걸프 국가들은 방사능 유출에 대한 우려를 표명하고 있습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0.5725,
+      "min": 1.5038,
+      "nb_score": 0.3807,
+      "avg_views": 77221.17,
+      "total_views": 463327
+    },
+    {
+      "keyword": "이수현 검사",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "두 검사 갈등",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "근로기준법 월급 인상",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "K-방산 세계 도전",
+      "is_fixed": false,
+      "views": [
+        2101
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "질주하는 'K-방산', 세계 4강에 도전하다 / 통합특별시의 실험 |  더 보다 98회 (2026.04.05)",
+          "video_id": "AVVruRXTLxY",
+          "views": 2101,
+          "upload_date": "2026-04-05",
+          "url": "https://www.youtube.com/watch?v=AVVruRXTLxY",
+          "subtitle_summary": "한국의 방산 기술, 특히 천궁2 미사일 시스템이 이란 미사일 공격 방어에 성공하며 실전 능력을 입증했고, 글로벌 방산 시장에서 주목받고 있다. 독자 개발 기술과 러시아 미사일 기술 융합을 통해 가격 경쟁력과 성능을 동시에 갖춘 천궁2는 미국 호크 미사일 대체 효과를 가져오며 수출 가능성을 높였다. 방산 기업들의 기술 개발 투자와 성공적인 시험 비행 결과가 국내 방위 산업의 성장 동력으로 작용하고 있다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "삼성전자 영업익 전망",
+      "is_fixed": false,
+      "views": [
+        3813
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "[삼성전자 주가 전망] 삼성, 긴급속보에 내일 진짜 난리났다!!   50조 영업익·상속세 종료에 삼성에 올인 시작!   #삼성전자주식#삼성전자",
+          "video_id": "ET1wBZm41nM",
+          "views": 3813,
+          "upload_date": "2026-04-05",
+          "url": "https://www.youtube.com/watch?v=ET1wBZm41nM",
+          "subtitle_summary": "삼성전지 주가 급등에 투자자들의 관심이 쏠리고 있으며, 40조원 영업익, 상속세 완납 등의 긍정적 요인과 방산·원전 종목 손절 후 삼성전자 집중 매집이 이루어지고 있다. 특히, 거래량 감소에도 불구하고 주가가 상승한 점이 주목받고 있으며, 시장의 공포 심리가 약화된 금요일에 본격적인 매매가 시작될 것으로 예상된다. 투자자들은 거래량 증가에 집중하여 삼성전지 주가 상승을 기대하고 있다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "가계대출 규제 강화",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "분양가상한제 역설",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    }
+  ]
+}

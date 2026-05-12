@@ -1,0 +1,399 @@
+{
+  "timestamp": "2026-04-12T20:31:22.255128",
+  "model": "news-singleline:latest",
+  "keyword_count": 3,
+  "analyze_subtitles": true,
+  "analysis_source": "youtube",
+  "keywords": [
+    {
+      "keyword": "오늘의 주요 뉴스",
+      "is_fixed": true,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "중동전쟁 비상대응체제",
+      "is_fixed": false,
+      "views": [
+        15370,
+        76,
+        1499,
+        1028,
+        602
+      ],
+      "video_count": 5,
+      "videos": [
+        {
+          "title": "[자막] 이재명 정부, 중동전쟁 비상 경제 체제 유지 및 고유가 출퇴근 환급 혜택 파격 확대",
+          "video_id": "d94TBOftg70",
+          "views": 15370,
+          "upload_date": "2026-04-12",
+          "url": "https://www.youtube.com/watch?v=d94TBOftg70",
+          "subtitle_summary": "이재명 정부는 중동전쟁으로 인한 경제적 불확실성을 해소하기 위해 비상 경제 현안을 점검하고, 휴전 협상 가능성을 모색하는 동시에 물가 관리와 에너지 수급 안정을 위한 대책을 추진하고 있습니다. 특히 고유가 출퇴근 환급 혜택을 확대하고, 공공기관 차량 2부제 및 민간 자율 오부제 유지와 함께 나프타 수입 단가 차액 지원 사업을 통해 산업계 피해를 최소화하는 데 주력할 예정입니다.",
+          "db_saved": true
+        },
+        {
+          "title": "靑 \"명확한 종전 선언까지 비상대응체제 유지\" / 연합뉴스TV (YonhapnewsTV)",
+          "video_id": "8S5gDC7jreA",
+          "views": 76,
+          "upload_date": "2026-04-12",
+          "url": "https://www.youtube.com/watch?v=8S5gDC7jreA",
+          "subtitle_summary": "[정부는 중동전쟁 종전 선언 시까지 비상대응 체제를 유지하며 물류 운송 정상화 및 에너지 시설 복구에 대비하기 위한 경제 현안 점검을 지속할 예정이다. 김용범 정책실장 주재로 관계부처 차관들이 참석한 비상경제 폐의를 통해 공급망 물가 관리 및 품목별 점검 신호등 시스템을 운영한다. 사태에 따라 매점 매실 긴급 수급 안정 대책을 추가 검토하며, 상황 변화에 유연하게 대응할 계획이다.]",
+          "db_saved": true
+        },
+        {
+          "title": "[Replay] Blue House: \"Economic Uncertainty Remains... Emergency Response System to be Maintained ...",
+          "video_id": "0BB2tGC2b-g",
+          "views": 1499,
+          "upload_date": "2026-04-12",
+          "url": "https://www.youtube.com/watch?v=0BB2tGC2b-g",
+          "subtitle_summary": "[중동 전쟁으로 인한 경제적 불확실성이 지속되는 가운데, 청와대는 관계부처와 함께 비상 대응 체제를 유지하고 경제 현안을 점검하는 회의를 진행했습니다. 휴전 협상 이후에도 물류 및 에너지 복구 등 상단 기간이 장기화될 것으로 예상되는 만큼, 정부는 공급망 관리와 가격 안정에 총력을 기울일 계획입니다. 또한, 나프타 수입량 회복을 위해 재원 조치를 완료하고, 시스템 개선안을 확정하여 산업계 피해를 최소화하기 위한 노력을 지속할 예정입니다.]",
+          "db_saved": true
+        },
+        {
+          "title": "중동 휴전 첫날부터 불발...이재명 정부 \"불확실성 여전히 심각, 비상대응체제 유지\"",
+          "video_id": "eYAi_xY2oJY",
+          "views": 1028,
+          "upload_date": "2026-04-12",
+          "url": "https://www.youtube.com/watch?v=eYAi_xY2oJY",
+          "subtitle_summary": "이재명 정부는 중동 휴전 불발에도 불구하고 경제 상황의 불확실성을 해소하기 위해 비상대응 체제를 유지하고, 에너지 수급 관리, 물가 안정, 공급망 관리 등 다각적인 대책을 추진할 계획이다. 특히 나프타 수입량 회복을 위한 재원 조치를 완료하고, 국도 교통 시스템 개선안을 확정하여 경제적 타격을 최소화하는 데 집중할 예정이다. 향후 상황 변화에 따라 추가적인 대책 마련도 검토될 전망이다.",
+          "db_saved": true
+        },
+        {
+          "title": "[현장영상+] 청와대 \"나프타 공급량을 전쟁 이전 수준으로 회복에 총력\" / YTN",
+          "video_id": "99dIGQrH41U",
+          "views": 602,
+          "upload_date": "2026-04-12",
+          "url": "https://www.youtube.com/watch?v=99dIGQrH41U",
+          "subtitle_summary": "[청와대는 중동 전쟁으로 인한 나프타 공급량 부족 문제를 해결하기 위해 휴전 합의 불발에도 불구하고 전쟁 이전 수준인 211만 통까지 공급량 회복에 총력을 기울이겠다고 밝혔습니다. 정부는 에너지 수급 관리와 물가 안정을 위해 품목별 점검 시스템을 유지하고, 원유 가격 상승에 대응하기 위한 추가 대책을 검토할 예정입니다. 또한, 국도 교통부는 출퇴근 혼잡 완화를 위해 시스템 개선안을 확정하고, 모두의 카드 인센티브를 신속히 시행할 계획입니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0.3908,
+      "min": 1.2775,
+      "nb_score": 0.3059,
+      "avg_views": 3715.0,
+      "total_views": 18575
+    },
+    {
+      "keyword": "미국 이란 핵 협상 결렬",
+      "is_fixed": false,
+      "views": [
+        126087,
+        5393,
+        3519,
+        18804,
+        10974
+      ],
+      "video_count": 5,
+      "videos": [
+        {
+          "title": "美·이란, 종전 협상 결렬…\"기뢰 뿌려놓고 제거 방법 몰라 호르무즈 봉쇄\"",
+          "video_id": "F2_YpGjnBbA",
+          "views": 126087,
+          "upload_date": "2026-04-12",
+          "url": "https://www.youtube.com/watch?v=F2_YpGjnBbA",
+          "subtitle_summary": "미국과 이란의 종전 협상이 호르무즈 해협 기뢰밭 문제로 결렬되었으며, 이란 혁명 수비대는 해협 통과 시 엄중한 대응을 예고하여 긴장이 고조되고 있습니다. 미국은 호르무즈 해협에서 일방적인 기회 제거 작전을 실시하고 추가 병력을 배치하며 해역 통제를 강화하는 가운데, 이란은 해협 완전 통제권을 주장하며 민간 선박 통행 제한을 걸고 있습니다. 양국 간 핵심 쟁점 부재와 군사적 움직임으로 인해 호르무즈 해협의 불안정성이 지속될 전망입니다.",
+          "db_saved": true
+        },
+        {
+          "title": "미·이란 종전 협상 결렬...밴스 21시간 만에 귀국길 / YTN",
+          "video_id": "CHzcaWzNOMY",
+          "views": 5393,
+          "upload_date": "2026-04-12",
+          "url": "https://www.youtube.com/watch?v=CHzcaWzNOMY",
+          "subtitle_summary": "미국과 이란의 중동 전쟁 종전 협상이 합의 없이 결렬되었으며, 벤스 미국 부통령이 이란의 핵개발 포기 거부 등을 이유로 하루 만에 귀국했다. 협상 과정에서 미국은 레드라인을 제시했지만 이란은 요구를 받아들이지 않았고, 양측은 입장 차이를 좁히지 못했다. 향후 협상 재개 가능성은 열려 있지만, 핵개발 및 호르무즈 해협 문제 등 쟁점 해결이 쉽지 않은 상황이다.",
+          "db_saved": true
+        },
+        {
+          "title": "[뉴스특보] 미·이란 첫협상 결렬…'호르무즈·핵물질' 이견 / 연합뉴스TV (YonhapnewsTV)",
+          "video_id": "P5sJx5TTZN8",
+          "views": 3519,
+          "upload_date": "2026-04-12",
+          "url": "https://www.youtube.com/watch?v=P5sJx5TTZN8",
+          "subtitle_summary": "미국과 이란의 6주간 협상이 휴전 협정으로 결렬되었으며, 호르무즈 해협 개방과 이란 핵 문제에 대한 이견이 주요 쟁점이었다. 협상 결렬은 시장 불안정과 에너지 위기 속에서 이루어졌으며, 빅딜보다는 제한적인 합의(스몰딜) 가능성이 주목받고 있다.",
+          "db_saved": true
+        },
+        {
+          "title": "[속보] 미국-이란 '협상 결렬', 향후 3가지 시나리오 [즉시분석]",
+          "video_id": "cXGLqjD_5Yc",
+          "views": 18804,
+          "upload_date": "2026-04-12",
+          "url": "https://www.youtube.com/watch?v=cXGLqjD_5Yc",
+          "subtitle_summary": "미국과 이란의 종전 협상 결렬로, 1979년 단교 이후 최고위급 회담 첫 시도였음에도 불구하고 양측의 입장 차이로 합의에 실패했으며, 향후 협상 결렬 시 빠른 협상 가능성과 함께 심각한 문제 발생 가능성이 동시에 존재함.",
+          "db_saved": true
+        },
+        {
+          "title": "미·이란 첫 종전협상 결렬...호르무즈 해협 긴장 고조 / YTN",
+          "video_id": "KFN4_sePSGA",
+          "views": 10974,
+          "upload_date": "2026-04-12",
+          "url": "https://www.youtube.com/watch?v=KFN4_sePSGA",
+          "subtitle_summary": "미국과 이란의 첫 종전 협상이 합의에 이르지 못하면서 호르무즈 해협을 둘러싼 긴장이 고조되고 있으며, 핵포기 문제 등 핵심 쟁점에 대한 양측의 입장 차이로 인해 협상이 결렬된 가운데 중동 지역 불안정성이 커지고 있습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0.4169,
+      "min": 1.3872,
+      "nb_score": 0.3005,
+      "avg_views": 32955.4,
+      "total_views": 164777
+    },
+    {
+      "keyword": "부산시장",
+      "is_fixed": false,
+      "views": [
+        38761,
+        5202,
+        2541,
+        95716,
+        1262,
+        2060,
+        4732,
+        16434
+      ],
+      "video_count": 8,
+      "videos": [
+        {
+          "title": "국힘 부산시장 후보 박형준..민주 경선 후폭풍 / SBS 8뉴스",
+          "video_id": "ZaqAnrf6x7U",
+          "views": 38761,
+          "upload_date": "2026-04-11",
+          "url": "https://www.youtube.com/watch?v=ZaqAnrf6x7U",
+          "subtitle_summary": "국민의힘 박형준 부산시장 후보가 주진우 의원을 꺾고 최종 후보가 되었으며, 민주당 안호영 의원은 경선 결과에 불복하여 단식 투쟁을 시작했다. 6.3 지방선거와 함께 부산 북갑 지역의 국회의원 보궐선거 실시가 확정될 가능성이 높아졌고, 국민의힘은 당내 눈높이 후보를 지향하며 여야 모두 주요 인사들의 출마 여부가 불투명하다.",
+          "db_saved": true
+        },
+        {
+          "title": "국힘 부산시장 후보에 박형준..민주 전북지사 경선 후폭풍 / SBS",
+          "video_id": "V72uf_oYSAU",
+          "views": 5202,
+          "upload_date": "2026-04-12",
+          "url": "https://www.youtube.com/watch?v=V72uf_oYSAU",
+          "subtitle_summary": "국민의힘이 박형준 부산시장 후보를 확정했으며, 민주당 안호영 전북지사 경선 후보가 경선 무효를 주장하며 단식에 돌입했다. 부산 북갑 지역의 국회의원 보궐선거 실시 가능성과 한동훈 전 대표 출마 여부가 정치권의 주요 쟁점으로 떠오르고 있다.",
+          "db_saved": true
+        },
+        {
+          "title": "국힘 부산시장 후보 박형준 확정...전재수와 맞대결 / YTN",
+          "video_id": "3PTjDn3Y83k",
+          "views": 2541,
+          "upload_date": "2026-04-11",
+          "url": "https://www.youtube.com/watch?v=3PTjDn3Y83k",
+          "subtitle_summary": "[국민의힘 박형준 부산시장 후보가 최종 선출되어 민주당 전재수 의원과 맞대결을 펼치게 되었으며, 통일교 의혹을 둘러싼 여야 대리전이 격화되면서 63지방 선거의 주요 쟁점으로 부상하고 있다.]",
+          "db_saved": true
+        },
+        {
+          "title": "[정말 토크] 국민의힘 부산시장 후보로 박형준 확정, 민주당 전재수 후보와 격돌 외 | MBC 260411 방송",
+          "video_id": "Ed7OlW7a6HI",
+          "views": 95716,
+          "upload_date": "2026-04-11",
+          "url": "https://www.youtube.com/watch?v=Ed7OlW7a6HI",
+          "subtitle_summary": "국민의힘 부산시장 후보로 박형준이 최종 확정되어 더불어민주당 전재수 후보와의 경쟁이 시작되었으며, 청와대와 여당 내부에서 하정우 수석 영입을 둘러싼 경쟁과 이재명 대통령의 사진 활용에 대한 사과 등 정치권의 다양한 갈등이 벌어지고 있다.",
+          "db_saved": true
+        },
+        {
+          "title": "'투사 변신' 박형준...국민의힘 부산시장 후보 선출 / KNN",
+          "video_id": "cFLQZvKUSYY",
+          "views": 1262,
+          "upload_date": "2026-04-11",
+          "url": "https://www.youtube.com/watch?v=cFLQZvKUSYY",
+          "subtitle_summary": "[보수선명성을 강조한 박형준 부산시장 후보가 국민의힘 당원 투표와 시민 여론 조사에서 주진후 국회의원을 꺾고 선출되었으며, 삭발 투쟁 등 파격 행보로 지지층을 결집시킨 것이 승리의 결정적인 요인이 되었다.]",
+          "db_saved": true
+        },
+        {
+          "title": "국힘 부산시장 후보 박형준 확정...전재수와 맞대결 / YTN",
+          "video_id": "mNjpuLd9wRA",
+          "views": 2060,
+          "upload_date": "2026-04-11",
+          "url": "https://www.youtube.com/watch?v=mNjpuLd9wRA",
+          "subtitle_summary": "[국민의힘 박형준 부산시장 후보가 당내 경선 결과 압승으로 확정되어 더불어민주당 전재수 의원과 맞대결을 펼치게 되었으며, 전재수의 통일교 의혹은 선거판을 흔들 주요 쟁점으로 부각되었다.]",
+          "db_saved": true
+        },
+        {
+          "title": "Park Heong-joon Confirmed as People Power Party's Busan Mayoral Candidate... Head-to-Head Matchup...",
+          "video_id": "_v81wzUPITA",
+          "views": 4732,
+          "upload_date": "2026-04-11",
+          "url": "https://www.youtube.com/watch?v=_v81wzUPITA",
+          "subtitle_summary": "박형준 후보가 국민의힘 부산시장 후보로 확정되었으며, 주진후 의원과의 경선에서 승리하여 본선 진출을 확정했다. 지방선거가 부산의 미래와 대한민국의 민주주의를 위한 중요한 전선이라고 강조하며, 필요시 개혁신당과의 협력도 모색할 계획이다. 특히 민주당 후보 전재수 의원과의 경쟁에서 중도층을 겨냥하며 경쟁력을 발휘할 수 있다는 자신감을 드러냈다.",
+          "db_saved": true
+        },
+        {
+          "title": "국민의힘 부산시장 후보에 박형준..경선서 주진우에 승리 - [끝까지LIVE] MBC 중계방송 2026년 04월 11일",
+          "video_id": "BbA0I3ulHjM",
+          "views": 16434,
+          "upload_date": "2026-04-11",
+          "url": "https://www.youtube.com/watch?v=BbA0I3ulHjM",
+          "subtitle_summary": "박형준 후보가 국민의힘 부산시장 후보로 결정되었으며, 선거인단 투표와 여론 조사 결과를 합산하여 최종적으로 결정되었다. 이번 경선은 선거인단 투표 50%와 일반 국민 여론 조사 50%의 비율로 진행되었으며, 가감산점 적용 후 확정되었다. 월요일에 공식 후보가 발표될 예정이며, 당내 경선 결과는 박형준 후보의 승리로 끝났다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0.2784,
+      "min": 1.0935,
+      "nb_score": 0.2546,
+      "avg_views": 20838.5,
+      "total_views": 166708
+    },
+    {
+      "keyword": "한국은행 기준금리",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "전남광주 통합 논란",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "중국 대만 압박 교류",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "소방관 순직 사고",
+      "is_fixed": false,
+      "views": [
+        16338
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "순직 소방관, 예비 신랑·3남매 아빠…완도소방서장은 브리핑 도중 말 잇지 못해",
+          "video_id": "gliv0PkxC8s",
+          "views": 16338,
+          "upload_date": "2026-04-12",
+          "url": "https://www.youtube.com/watch?v=gliv0PkxC8s",
+          "subtitle_summary": "화재 진화 중 7명의 소방관이 다섯 명이 탈출했으나, 두 명이 추가로 탈출하여 고립된 채 발견되었으며, 구조 작업 중 추가 인명 발견으로 장례 절차를 진행할 예정입니다. 완도소방서장은 브리핑 중 슬픔에 잠겨 말을 잇지 못했으며, 유족과의 협의를 통해 장례 방식을 결정할 계획입니다. 현재 상황은 매우 안타까우며, 추가적인 인명 피해 방지에 최선을 다하고 있습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "드론 불빛 쇼",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "노트북 가격 인상",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "전세보증대출 만기 제한",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "아파트 가격 하락",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "반도체 산업 전망",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "공모주 시장 동향",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "유용한 시인 나태주",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "스탠드업 코미디언 장애인",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    }
+  ]
+}

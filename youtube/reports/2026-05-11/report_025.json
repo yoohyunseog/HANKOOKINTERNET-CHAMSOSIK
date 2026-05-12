@@ -1,0 +1,233 @@
+{
+  "timestamp": "2026-05-11T03:44:30.820726",
+  "model": "mistral:latest",
+  "keyword_count": 3,
+  "analyze_subtitles": true,
+  "analysis_source": "youtube",
+  "keywords": [
+    {
+      "keyword": "오늘의 주요 뉴스",
+      "is_fixed": true,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "나무호 드론 공격",
+      "is_fixed": false,
+      "views": [
+        89925,
+        3702,
+        4098
+      ],
+      "video_count": 3,
+      "videos": [
+        {
+          "title": "[단독] \"비행체가 타격해 나무호 폭발..5m 정도 찢어져\" / SBS 8뉴스",
+          "video_id": "xk8fVuE_cFs",
+          "views": 89925,
+          "upload_date": "2026-05-10",
+          "url": "https://www.youtube.com/watch?v=xk8fVuE_cFs",
+          "subtitle_summary": "government investigation team has concluded that an unidentified flying object struck and damaged HMM ship Naumuho, causing approximately 5 meters of damage. The investigation team, consisting of experts from the Maritime Safety Board and the Fire Department, examined the ship's CCTV footage, records, and statements from crew members to determine the cause of the explosion on August 8th. The government investigation team found that a mysterious flying object had struck the bow of HMM Naumuho, causing damage visible to the naked eye, but they could not confirm its exact type or size.",
+          "db_saved": true
+        },
+        {
+          "title": "[Breaking] Ministry of Foreign Affairs: \"Shot on Namuho Confirmed... Called Iranian Ambassador to...",
+          "video_id": "sIqa0vqzofw",
+          "views": 3702,
+          "upload_date": "2026-05-10",
+          "url": "https://www.youtube.com/watch?v=sIqa0vqzofw",
+          "subtitle_summary": "1. 5월 4일, 호르무즈 해협 내척 아랍 에미리트 인근 해역에서 발생한 사고로, 나무호 선박의 외관과 내부를 조사하였습니다. 1차 타격으로 인한 화재는 선박 내부와는 무관한 것으로 추정되며, 비행체가 포착되었지만 발사 주체, 정확한 기종 등을 확인하기에는 제약이 있습니다.\n2. 현재 추가적인 조사를 진행하고 있으며, 앞으로 발견되는 정보를 알리겠습니다.\n3. 초기에는 외부 공격으로 결론을 내린 것이지만, 피격의 확실성이 없어서 추가적인 조사가 필요하며, 파공을 식별하지 못했습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "'호르무즈 폭발·화재' 조사 사흘째…불운 겹친 나무호 / 연합뉴스TV (YonhapnewsTV)",
+          "video_id": "TfxyXDwedm4",
+          "views": 4098,
+          "upload_date": "2026-05-10",
+          "url": "https://www.youtube.com/watch?v=TfxyXDwedm4",
+          "subtitle_summary": "1. HMM 나무호, 아랍 에미리트 두바이 항에 있는 드라이독 월드 수리 조선소로 옮겨진 후 4일째 합동 조사가 진행중입니다. (정부 조사단, 해양안전심판원 조사관, 소방청 감식 전문가 참여)\n2. 선원들은 모두 하산한 상태이며, 나무 선체에는 구멍이나 침수 피해가 없습니다. (직접 확인 후 기울어짐 등은 보이지 않았습니다)\n3. 조사단은 화재 발생 장소에 진입하여 사고 원인을 정밀 감식하고, 선원 진술과 항의 기록 장치도 확보할 계획입니다. (필요한 경우 수중 드론 또는 크레인 등을 동원해서 순수선 하단부에 있는 손상 여부를 확인할 수 있습니다)",
+          "db_saved": true
+        }
+      ],
+      "max": 0.9563,
+      "min": 2.0521,
+      "nb_score": 0.466,
+      "avg_views": 32575.0,
+      "total_views": 97725
+    },
+    {
+      "keyword": "이란 핵 협상",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "호르무즈 해협 선박 공격",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "미중 정상회담 대진표",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "삼성전자 노조 갈등",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "양도세 중과토 논란",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "코스피 목표치 상향",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "AI 연구 한국 영향력",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "헌혈 캠페인 7월",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "중동 전쟁 유가 영향",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "수어 기본권 논의",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "주택담보대출 규제",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "클라우드 AI 비서",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "블록딜 고점 시그널",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "전자상거래 증권사 실수",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    }
+  ]
+}

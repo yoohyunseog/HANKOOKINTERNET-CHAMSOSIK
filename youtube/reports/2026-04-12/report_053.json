@@ -1,0 +1,321 @@
+{
+  "timestamp": "2026-04-12T22:00:10.809471",
+  "model": "news-singleline:latest",
+  "keyword_count": 3,
+  "analyze_subtitles": true,
+  "analysis_source": "youtube",
+  "keywords": [
+    {
+      "keyword": "오늘의 주요 뉴스",
+      "is_fixed": true,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "호르무즈 해협 한국 선박 통과",
+      "is_fixed": false,
+      "views": [
+        3397,
+        19626
+      ],
+      "video_count": 2,
+      "videos": [
+        {
+          "title": "Supertanker Passes Hormuz for the First Time Since Ceasefire… Korean Ships Yet [MBN News Center]",
+          "video_id": "R1oReQzAztQ",
+          "views": 3397,
+          "upload_date": "2026-04-12",
+          "url": "https://www.youtube.com/watch?v=R1oReQzAztQ",
+          "subtitle_summary": "[호르무즈 해협을 통과한 초대형 유조선은 중국 및 라이베리아 선박으로, 휴전 이후 처음으로 선박 통과가 허용되었으나, 협상 결렬로 인해 한국 선박의 운항 재개 시점은 여전히 불투명한 상황이다.]",
+          "db_saved": true
+        },
+        {
+          "title": "초대형 유조선 3척 호르무즈 통과…전쟁 이후 처음 [이슈PLAY] / JTBC News",
+          "video_id": "F06k3B29DvI",
+          "views": 19626,
+          "upload_date": "2026-04-12",
+          "url": "https://www.youtube.com/watch?v=F06k3B29DvI",
+          "subtitle_summary": "미국과 이란의 휴전 이후 처음으로 초대형 유조선 세척이 호르무즈 해협을 통과했으며, 이란은 하루 15척 이하로 선박 통행을 제한하고 통행료를 부과하겠다고 발표했습니다. 이란의 통행 제한은 호르무즈 해협의 물류 차단 해소에 대한 기대감을 높이는 동시에, 선박 보험료 상승 등 새로운 리스크 요소를 야기하고 있습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 2.8547,
+      "min": 1.6288,
+      "nb_score": 1.7526,
+      "avg_views": 11511.5,
+      "total_views": 23023
+    },
+    {
+      "keyword": "미국 이란 핵협상 결렬",
+      "is_fixed": false,
+      "views": [
+        143998,
+        6950,
+        11773,
+        81550,
+        6485,
+        1571
+      ],
+      "video_count": 6,
+      "videos": [
+        {
+          "title": "美·이란, 종전 협상 결렬…\"기뢰 뿌려놓고 제거 방법 몰라 호르무즈 봉쇄\"",
+          "video_id": "F2_YpGjnBbA",
+          "views": 143998,
+          "upload_date": "2026-04-12",
+          "url": "https://www.youtube.com/watch?v=F2_YpGjnBbA",
+          "subtitle_summary": "미국과 이란의 종전 협상이 호르무즈 해협 기뢰밭 문제로 결렬되었으며, 이란 혁명 수비대는 해협 통과 시 엄중한 대응을 예고하여 긴장이 고조되고 있다. 미국은 호르무즈 해협에서 일방적인 기회 제거 작전을 실시하고 추가 병력을 배치하며 해역 통제를 강화하는 가운데, 이란은 해협 완전 통제권을 주장하며 민간 선박 통행 제한을 시도하고 있다. 양국 간 핵심 쟁점 부재와 일방적인 행보로 인해 협상 결렬은 불가피한 수순이며, 호르무즈 해협의 지정학적 중요성이 더욱 부각되고 있다.",
+          "db_saved": true
+        },
+        {
+          "title": "[뉴스특보] 미·이란 첫협상 결렬…'호르무즈·핵물질' 이견 / 연합뉴스TV (YonhapnewsTV)",
+          "video_id": "P5sJx5TTZN8",
+          "views": 6950,
+          "upload_date": "2026-04-12",
+          "url": "https://www.youtube.com/watch?v=P5sJx5TTZN8",
+          "subtitle_summary": "미국과 이란의 6주간 협상이 휴전 협정으로 결렬되었으며, 호르무즈 해협 개방과 이란 핵 문제에 대한 이견이 주요 쟁점이었다. 협상 결렬은 국제 사회의 불안정한 상황 속에서 예상된 결과였으며, 빅딜보다는 적정선에서 양국 간의 여지를 확보하는 스몰딜 가능성이 남았다.",
+          "db_saved": true
+        },
+        {
+          "title": "미·이란 첫 종전협상 결렬...호르무즈 해협 긴장 고조 / YTN",
+          "video_id": "KFN4_sePSGA",
+          "views": 11773,
+          "upload_date": "2026-04-12",
+          "url": "https://www.youtube.com/watch?v=KFN4_sePSGA",
+          "subtitle_summary": "미국과 이란의 첫 종전 협상이 합의에 이르지 못하면서 호르무즈 해협을 둘러싼 긴장이 고조되고 있으며, 핵포기 문제 등 핵심 쟁점에 대한 양측의 입장 차이로 인해 협상이 결렬된 가운데 중동 지역 불안정성이 더욱 커질 수 있다는 전망이 나오고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[속보] 미국-이란 '협상 결렬', 향후 3가지 시나리오 [즉시분석]",
+          "video_id": "cXGLqjD_5Yc",
+          "views": 81550,
+          "upload_date": "2026-04-12",
+          "url": "https://www.youtube.com/watch?v=cXGLqjD_5Yc",
+          "subtitle_summary": "미국과 이란의 종전 협상 결렬로, 1979년 단교 이후 최고위급 회담 첫 시도였음에도 불구하고, 협상 결렬 시 양측에 큰 변수가 될 수 있으며, 향후 협상 결과에 따라 주식 시장, 환율, 국제 유가 등 전반적인 경제에 미치는 영향이 예측되는 상황이다.",
+          "db_saved": true
+        },
+        {
+          "title": "미·이란 종전 협상 결렬...밴스 21시간 만에 귀국길 / YTN",
+          "video_id": "CHzcaWzNOMY",
+          "views": 6485,
+          "upload_date": "2026-04-12",
+          "url": "https://www.youtube.com/watch?v=CHzcaWzNOMY",
+          "subtitle_summary": "미국과 이란의 중동 전쟁 종전 협상이 합의 없이 결렬되었으며, 벤스 미국 부통령이 이란의 핵개발 포기 거부 등을 이유로 하루 만에 귀국했다. 협상 과정에서 미국은 레드라인을 제시했지만 이란은 요구를 받아들이지 않았고, 양측은 입장 차이를 좁히지 못했다. 향후 협상 재개 가능성은 열려 있지만, 핵개발 및 호르무즈 해협 문제 등 쟁점 해결이 쉽지 않은 상황이다.",
+          "db_saved": true
+        },
+        {
+          "title": "미국 이란 종전협상 결렬! 핵무기 포기 안 하는 이란에게 앞으로 벌어질 끔찍한 일",
+          "video_id": "1D4XW2waodc",
+          "views": 1571,
+          "upload_date": "2026-04-12",
+          "url": "https://www.youtube.com/watch?v=1D4XW2waodc",
+          "subtitle_summary": "미국과 이란 간 47년 만의 협상이 21시간 마라톤 끝에 결렬되면서, 이란의 핵무기 포기 거부로 인해 앞으로 더욱 심각한 상황이 초래될 수 있다는 우려가 커지고 있습니다. 제한안을 받아들이지 않은 이란의 강경한 태도는 ‘마지막 기회’라는 의미를 내포하며, 추가적인 제재와 갈등 심화 가능성을 시사합니다. 특히, 2015년 핵합의의 허점을 노린 이란의 핵 개발 가속과 미국의 대응이 복잡하게 얽히면서 국제 정세 불안정 요인으로 작용할 전망입니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0.5397,
+      "min": 1.3942,
+      "nb_score": 0.3871,
+      "avg_views": 42054.5,
+      "total_views": 252327
+    },
+    {
+      "keyword": "이란 농축우라늄 반환 요구",
+      "is_fixed": false,
+      "views": [
+        11820
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "미·이란 첫 종전협상 결렬...호르무즈 해협 긴장 고조 / YTN",
+          "video_id": "KFN4_sePSGA",
+          "views": 11820,
+          "upload_date": "2026-04-12",
+          "url": "https://www.youtube.com/watch?v=KFN4_sePSGA",
+          "subtitle_summary": "미국과 이란의 첫 종전 협상이 합의에 이르지 못하면서 호르무즈 해협을 둘러싼 긴장이 고조되고 있으며, 핵포기 문제 등 핵심 쟁점에 대한 양측의 입장 차이로 인해 협상 결렬 국면이었습니다. 미국은 이란의 핵 개발 제거를 최대 목표로 삼았지만, 이란은 핵 개발 문제에 대한 명확한 약속을 얻지 못해 협상에 어려움을 겪었습니다. 현재 중동 지역 상황과 전망에 대한 우려가 커지고 있습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "한미일 해저전력 연결",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "EA-37B 전자전기 중동 투입",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "K-메모리 반도체 호황 전망",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "스페이스X 주식 한국 청약",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "K-약국 외국인 관광 열풍",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "ESG 기업 지속가능성 공시",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "가계대출 규제 증가율",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "전세값 상승 주택 시장",
+      "is_fixed": false,
+      "views": [
+        7015
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "전세 살 바엔 그냥 산다!... 강북 아파트값 11억 돌파",
+          "video_id": "5Kn5q9wHBhM",
+          "views": 7015,
+          "upload_date": "2026-04-11",
+          "url": "https://www.youtube.com/watch?v=5Kn5q9wHBhM",
+          "subtitle_summary": "[대출 규제와 전세난으로 인해 서울 강북 지역 아파트 가격이 사상 처음으로 11억 원을 넘어선 가운데, 강남 3구의 가격이 하락하는 등 아파트 시장의 온도차가 커지고 있다.]",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "동네공장 원자재 가격 급등",
+      "is_fixed": false,
+      "views": [
+        2485
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "'Direct Hit' by Soaring Raw Material Prices... 'Neighborhood Factories' Shut Down One After Anoth...",
+          "video_id": "znZV6q8r1TU",
+          "views": 2485,
+          "upload_date": "2026-04-12",
+          "url": "https://www.youtube.com/watch?v=znZV6q8r1TU",
+          "subtitle_summary": "중동 전쟁으로 인한 호르무제 협의 봉쇄 여파로 원자재 가격 급등이 국내 산업 현장을 마비시키고 있으며, 특히 소규모 사업장들이 원자재 가격 상승에 어려움을 겪으며 폐업 위기에 놓여 있습니다. 우레탄, 합성고무, 금속 등 다양한 원자재 수급난과 에너지 가격 급등으로 인해 제조업 공장들이 생산 차질을 빚고 있으며, 생존을 위한 단가 인상도 현실적으로 어려운 상황입니다. 이러한 3중고에 시달리는 국내 산업계는 단기간에 가격 안정이 쉽지 않아 소규모 업체들의 어려움이 지속될 전망입니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "소방관 순직 안전 대책",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "의대 입시 변경 정책",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "스탠드업 코미디언 장애인",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    }
+  ]
+}

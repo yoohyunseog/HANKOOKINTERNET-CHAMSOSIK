@@ -1,0 +1,403 @@
+{
+  "timestamp": "2026-04-05T22:39:06.585155",
+  "model": "news-singleline:latest",
+  "keyword_count": 3,
+  "analyze_subtitles": true,
+  "analysis_source": "youtube",
+  "keywords": [
+    {
+      "keyword": "오늘의 주요 뉴스",
+      "is_fixed": true,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "고리원전 재가동 에너지 위기",
+      "is_fixed": false,
+      "views": [
+        5522,
+        360
+      ],
+      "video_count": 2,
+      "videos": [
+        {
+          "title": "Kori Nuclear Power Plant Unit 2 Restarts Operations… 'Relief Pitcher' for Middle East Energy Cris...",
+          "video_id": "qMbo8Blmllo",
+          "views": 5522,
+          "upload_date": "2026-04-04",
+          "url": "https://www.youtube.com/watch?v=qMbo8Blmllo",
+          "subtitle_summary": "중동 에너지 위기 심화 속에 고리 2호기를 포함하여 노후 원전 6기를 재가동하고, 원전 이용률을 높여 에너지 위기에 대응하는 정부의 방안이 발표되었다. 천연가스 수급 불안정 및 가격 상승으로 인해 원전이 발전 연료로 활용되는 것이 중요해졌으며, 원전 재가동으로 인한 비용 절감 효과도 기대하고 있다. 다음 달까지 추가적인 노후 원전 재가동 계획도 추진될 예정이다.",
+          "db_saved": true
+        },
+        {
+          "title": "에너지 수급 위기 속 고리2호기 3년 만에 재가동 / KNN",
+          "video_id": "H_vbJ1UAp5w",
+          "views": 360,
+          "upload_date": "2026-04-04",
+          "url": "https://www.youtube.com/watch?v=H_vbJ1UAp5w",
+          "subtitle_summary": "[40년 운전 허가 만료 후 3년 만에 고리2호기가 재가동되어, 중동 사태로 인한 에너지 수급 위기 상황에서 국가 에너지 안보 확보를 위한 중요한 역할을 수행하게 되었다.]",
+          "db_saved": true
+        }
+      ],
+      "max": 2.7758,
+      "min": 2.3071,
+      "nb_score": 1.2032,
+      "avg_views": 2941.0,
+      "total_views": 5882
+    },
+    {
+      "keyword": "중국 AI 군사 작전 추적",
+      "is_fixed": false,
+      "views": [
+        6895,
+        270942
+      ],
+      "video_count": 2,
+      "videos": [
+        {
+          "title": "Real-time tracking with AI… Chinese companies relaying U.S. military operations / SBS 8 News",
+          "video_id": "YEfPKpzQDhw",
+          "views": 6895,
+          "upload_date": "2026-04-05",
+          "url": "https://www.youtube.com/watch?v=YEfPKpzQDhw",
+          "subtitle_summary": "중국 민간 기업들이 AI 기반으로 미국 군사 장비 및 이동 경로를 실시간으로 추적 공개하며, 이란 지원 의혹을 낳고 있으며, 미국 정부는 이에 대한 위성사진 유통 중단을 요청했습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[에디터픽] \"이란산 원유 싣고 항로 이탈\"…인도 간다던 유조선, 돌연 '의미심장' / YTN",
+          "video_id": "IhZ10LXBHTQ",
+          "views": 270942,
+          "upload_date": "2026-04-04",
+          "url": "https://www.youtube.com/watch?v=IhZ10LXBHTQ",
+          "subtitle_summary": "이란산 원유를 실은 유조선 핑순노가 인도에서 중국으로 항로를 변경한 것으로 나타났으며, 이는 미국의 제재 회피 시도라는 분석이 나오고 있습니다. 블룸버그 통신은 미국이 국제 안정을 위해 선박에 적재된 이란산 원유 판매를 허용한 바 있지만, 최근 예외 조치가 종료되면서 상황이 더욱 복잡해졌다고 보도했습니다. 호르무즈 해협 통항료는 200만 달러에 달하는 막대한 비용을 발생시키며, 국제 경제에 미치는 영향 또한 주목받고 있습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 2.7646,
+      "min": 2.539,
+      "nb_score": 1.0889,
+      "avg_views": 138918.5,
+      "total_views": 277837
+    },
+    {
+      "keyword": "이란 F-15 격추 사건",
+      "is_fixed": false,
+      "views": [
+        83764,
+        14272,
+        37214,
+        6988,
+        122257,
+        7148,
+        100206
+      ],
+      "video_count": 7,
+      "videos": [
+        {
+          "title": "[에디터픽] 이란 상공서 미군 전투기 '격추'…이란 혁명수비대 \"조종사 생포하라\" / YTN",
+          "video_id": "pnzIwbYmOuE",
+          "views": 83764,
+          "upload_date": "2026-04-04",
+          "url": "https://www.youtube.com/watch?v=pnzIwbYmOuE",
+          "subtitle_summary": "미군 전투기 한 대가 이란 상공에서 격추되어 조종사 두 명 중 한 명이 구조되었고, 다른 한 명은 실종되었으며, 이란 혁명수비대는 미군 조종사를 생포할 것을 요구하고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[시사쇼 정치다] 美, 이란서 격추된 F-15 두번째 탑승자 구조···36시간 '사투' 끝 전원 구조",
+          "video_id": "ZChmCX1Jevo",
+          "views": 14272,
+          "upload_date": "2026-04-05",
+          "url": "https://www.youtube.com/watch?v=ZChmCX1Jevo",
+          "subtitle_summary": "[미국이 이란에서 격추된 F-15 탑승자 한 명을 36시간 만에 구조했으며, 부상은 입었지만 상태가 괜찮다고 전해졌습니다. 이 구조 작전은 트럼프 행정부에 국내 지지 확보에 유리하게 작용할 수 있으며, 이란의 영토 내 미군 장교 공개라는 역전의 발판을 마련했습니다. 이제 이란이 대령을 생포할지 여부에 따라 상황이 크게 달라질 수 있으며, 협상 또는 폭격 가능성도 제기되고 있습니다.]",
+          "db_saved": true
+        },
+        {
+          "title": "Missing F-15 Fighter Crew Rescued… \"Will Never Leave an American Warrior in Enemy Counting\" (Subt...",
+          "video_id": "KN9JCa1Vuco",
+          "views": 37214,
+          "upload_date": "2026-04-05",
+          "url": "https://www.youtube.com/watch?v=KN9JCa1Vuco",
+          "subtitle_summary": "[48시간 동안 벌어진 긴박한 수색 작전 끝에 이란 상공에서 격추된 F-15 전투기의 두 번째 탑승자가 미국 틱수부대에 의해 구조되어 신병으로 확인되었으며, 트럼프 대통령은 ‘미국 역사상 가장 대담한 구조 작전’을 성공적으로 완수했다고 밝혔다.]",
+          "db_saved": true
+        },
+        {
+          "title": "美 특수부대, 격추된 F-15 조종사 구출…\"내륙 침투 대규모 작전\" [뉴스7]",
+          "video_id": "p4jjsMLqMgo",
+          "views": 6988,
+          "upload_date": "2026-04-05",
+          "url": "https://www.youtube.com/watch?v=p4jjsMLqMgo",
+          "subtitle_summary": "[트럼프 대통령이 역사상 가장 대담한 구조 작전이라고 평가한 가운데, 미국 특수부대와 전략 자산을 동원하여 격추된 F-15 전투기에 타고 있던 미군 조종사 두 명을 이란 상공에서 성공적으로 구조했습니다. 긴박했던 구조 작전에는 공중 급유기, 전투기, 헬기, 우주 위성 등 다양한 자산이 투입되었으며, 이란의 반격도 있었으나 미국은 조종사들을 모두 구출하는 데 성공했습니다.]",
+          "db_saved": true
+        },
+        {
+          "title": "구조 작업하던 미 헬기도 피습...\"이란 방공망 여전히 위력적\" / YTN",
+          "video_id": "I5Q3Xr0DdY8",
+          "views": 122257,
+          "upload_date": "2026-04-04",
+          "url": "https://www.youtube.com/watch?v=I5Q3Xr0DdY8",
+          "subtitle_summary": "미군 F15 전투기가 이란 영공에서 격추되어 조종사 1명은 구조되었으나 다른 1명은 아직 실종된 채로, 이란의 방공망이 여전히 강력함을 시사하며 전황을 더욱 복잡하게 만들고 있습니다. 격추 지점인 남서부 초람 인근과 호르무주 회협은 전략 요충지로 분석되며, 이란의 타격 작전 가능성이 제기되고 있습니다. 트럼프 행정부의 정치적 부담 또한 커지고 있는 가운데, 이란의 방공망 무력화 주장이  கேள்문표가 되고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[자막뉴스] 이란에 추락한 美 전투기...비상탈출한 조종사 '오리무중' / YTN",
+          "video_id": "RvP-o6GBB6w",
+          "views": 7148,
+          "upload_date": "2026-04-04",
+          "url": "https://www.youtube.com/watch?v=RvP-o6GBB6w",
+          "subtitle_summary": "[미군 F15 전투기 추락, 조종사 생존…이란과 협상 영향은 없을 듯 트럼프 대통령 발언]",
+          "db_saved": true
+        },
+        {
+          "title": "미·이란, 실종 조종사 확보 경쟁...전쟁 새 국면 들어서나? / YTN",
+          "video_id": "l1nsseMpqMA",
+          "views": 100206,
+          "upload_date": "2026-04-04",
+          "url": "https://www.youtube.com/watch?v=l1nsseMpqMA",
+          "subtitle_summary": "미군 F15, A10 전투기 2대 격추되면서 미·이란 전쟁 전황이 격화되고 있으며, 이란의 반공망 시스템과 미사일 공격 능력에 대한 우려가 커지고 있습니다. 며칠 전 조기 경보기 공격 사건 이후 이번 격추는 미국의 전략적 판단에 대한 의문을 증폭시키고 있으며, 지상전 가능성도 제기되고 있습니다. 정보당국은 이란의 핵 미사일 및 해군 능력이 상당 부분 남아있다고 평가하며 협상 가능성에 대한 염려를 표명했습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 1.0492,
+      "min": 1.7468,
+      "nb_score": 0.6007,
+      "avg_views": 53121.29,
+      "total_views": 371849
+    },
+    {
+      "keyword": "미군 장교 구조 작전",
+      "is_fixed": false,
+      "views": [
+        43908,
+        2267,
+        5889,
+        24833,
+        5567,
+        127733
+      ],
+      "video_count": 6,
+      "videos": [
+        {
+          "title": "의지할 건 호신용 권총 한 자루뿐이었다…실종 미군, 구출까지 버틸 수 있었던 이유 [뉴스와] / 연합뉴스TV(YonhapnewsTV)",
+          "video_id": "Ofs8J-UDoBw",
+          "views": 43908,
+          "upload_date": "2026-04-05",
+          "url": "https://www.youtube.com/watch?v=Ofs8J-UDoBw",
+          "subtitle_summary": "트럼프 대통령의 휴전 협상 연기 속에 미국과 이란의 긴장이 고조된 가운데, 유가 폭등 우려가 제기되는 등 중동 상황이 매우 불안정하며, 전쟁 목표 부재와 예측 불가능한 미국의 대응으로 인해 향후 전망이 더욱 엇갈리고 있다.",
+          "db_saved": true
+        },
+        {
+          "title": "\"Missing U.S. Soldier Rescued After Engagement\"… Trump Announces Personally / SBS 8 News",
+          "video_id": "CSZrUoKt8B8",
+          "views": 2267,
+          "upload_date": "2026-04-05",
+          "url": "https://www.youtube.com/watch?v=CSZrUoKt8B8",
+          "subtitle_summary": "이란에서 격추된 미군 전투기 조종사 한 명이 수십 대의 항공기와 특수부대 투입 끝에 이틀간의 교전 끝에 구조되었으며, 표적 탐지 장교는 실종된 채로 남아 현재까지 확인되지 않은 상황이다. 트럼프 대통령은 극적인 구조 소식을 발표하며 대담한 작전 완수를 환영했고, 이란 측은 5명이 순교했다며 사망자를 발표했다. 미군 사상자는 없는 가운데, 미국과 이란은 격렬한 접전 끝에 구조 작전을 성공적으로 수행했다.",
+          "db_saved": true
+        },
+        {
+          "title": "실종 미군 구조...이제 '거침없는 공세' 펼칠까 / YTN",
+          "video_id": "e3rb1cjHL8w",
+          "views": 5889,
+          "upload_date": "2026-04-05",
+          "url": "https://www.youtube.com/watch?v=e3rb1cjHL8w",
+          "subtitle_summary": "[이란 내륙에 추락한 미군 F15 전투기 승무원 2명 구조되었으며, 트럼프 대통령은 이란에 해협 개방을 요구하며 압박 수위를 높이고 호르무즈 해협 봉쇄 경고를 강화했습니다.]",
+          "db_saved": true
+        },
+        {
+          "title": "[Reporter Who Knows] “I held out with just a pistol”… The full story of the 37-hour operation / C...",
+          "video_id": "A_TdbZhZpGY",
+          "views": 24833,
+          "upload_date": "2026-04-05",
+          "url": "https://www.youtube.com/watch?v=A_TdbZhZpGY",
+          "subtitle_summary": "[이란 자국 영토에 은신한 미군 F-15 전투기 조종사 장교를 37시간 동안 구조한 대담한 작전이 진행되었으며, 이 장교는 무기체계 장교로 복좌화형 전투기에 탑승하여 무장 및 레이더 운영을 담당했다. 작전 중 미군 특수부대와 이란 혁명 수비대 간 치열한 교전이 벌어졌고, 일부 미군 장비에 피해가 발생했으며, 수백 명의 특수부대가 투입된 정교한 작전이었다.]",
+          "db_saved": true
+        },
+        {
+          "title": "Dramatic rescue of remaining F-15 occupants… \"The boldest operation in history\" [MBN News Center]",
+          "video_id": "PvG-gmU4yvY",
+          "views": 5567,
+          "upload_date": "2026-04-05",
+          "url": "https://www.youtube.com/watch?v=PvG-gmU4yvY",
+          "subtitle_summary": "이란 영토에서 격추된 미 F-15 전투기 탑승자 한 명이 36시간 만에 미군 대규모 구조 작전으로 무사히 구출되었으며, 조종사 및 무기 체계 장교가 함께 구조되었다. 수백명의 미군 특수 부대와 전투기가 동원된 이번 작전은 역사상 가장 대담한 구조 작전으로 평가받았으며, 트럼프 대통령은 적진에서 구조에 성공한 것은 처음이라고 밝혔다. 미국 측은 사상자 없이 구조에 성공한 반면, 이란 측은 공습 과정에서 5명이 사망한 것으로 전해졌다.",
+          "db_saved": true
+        },
+        {
+          "title": "美 특수부대, 이란 본토 투입...이틀 간 교전 끝 F-15 승무원 구출",
+          "video_id": "jpr63zd6uRs",
+          "views": 127733,
+          "upload_date": "2026-04-05",
+          "url": "https://www.youtube.com/watch?v=jpr63zd6uRs",
+          "subtitle_summary": "미군 특수부대가 이란 본토에 투입되어 F-15 전투기 조종사 한 명을 구조했으며, 헬기 지원과 함께 추가 조종사 수색 작전이 진행 중이다. 치열한 교전 끝에 F-15 전투기가 격추되었으나, 헬기 투입으로 한 명은 구조되었고, 다른 조종사의 행방을 찾기 위한 긴장된 수색이 이어지고 있다. 트럼프 대통령은 이 작전을 “역사상 가장 대담한 수색 작전”으로 평가하며, 미군의 용맹함과 지휘부의 지원을 강조했다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0.4606,
+      "min": 1.3556,
+      "nb_score": 0.3398,
+      "avg_views": 35032.83,
+      "total_views": 210197
+    },
+    {
+      "keyword": "SK하이닉스 반도체 호황",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "미국 이란 외교 갈등",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "한국 지방선거 공천 혼란",
+      "is_fixed": false,
+      "views": [
+        7383
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "[일요와이드] 6·3 지방선거 D-59…국힘, 공천 혼란 계속 / 연합뉴스TV (YonhapnewsTV)",
+          "video_id": "lbHrEK7JdfI",
+          "views": 7383,
+          "upload_date": "2026-04-05",
+          "url": "https://www.youtube.com/watch?v=lbHrEK7JdfI",
+          "subtitle_summary": "국민의힘은 6·3 지방선거를 앞두고 공천 과정에서 혼란이 지속되고 있으며, 특히 대구시장 공천을 둘러싼 파장이 커지면서 주호영, 이진숙 의원의 법원 가처분 신청과 이진숙 전 방통위원장의 무소속 출마 가능성이 제기되고 있다. 대구 시장 선거는 보수 진영의 핵심 지역으로, 민주당 김부겸 후보의 압승 가능성이 높아짐에 따라 보수 진영에서도 4파전 가능성이 거론되며 당혹감을 드러내고 있다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "반도체 소부장 기업 전망",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "홍해 봉쇄 물가 영향",
+      "is_fixed": false,
+      "views": [
+        2084
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "“후티반군 홍해 점령하면” 전세계가 멸망하는 이유",
+          "video_id": "4WnU4ouJjnI",
+          "views": 2084,
+          "upload_date": "2026-04-04",
+          "url": "https://www.youtube.com/watch?v=4WnU4ouJjnI",
+          "subtitle_summary": "[홍해를 장악한 후티반군의 위협이 전 세계 경제 시스템에 심각한 혼란을 야기하고 있으며, 이는 해상 운송비 폭등과 물가 상승으로 이어지고 있습니다. 예멘은 과거 글로벌 물류의 중심지였으나, 후티반군의 공격으로 인해 그 중요성이 더욱 부각되고 있으며, 이는 지정학적 위기로 확산될 가능성을 시사합니다. 이러한 상황은 세계 경제의 불안정성을 심화시키고, 개인의 자산 보호를 위한 전략 수립의 필요성을 강조합니다.]",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "강남역 사건 10주기 퍼포먼스",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "로봇공학 세계대회 KAIST",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "대구시장 선거 출마 선언",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "한강부동산 반등 전망",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "검찰개혁 논란 정치 이슈",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "식품안전 소아 해열제 기준",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    }
+  ]
+}

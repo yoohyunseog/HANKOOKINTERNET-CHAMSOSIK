@@ -1,0 +1,351 @@
+{
+  "timestamp": "2026-04-12T09:07:26.964117",
+  "model": "news-singleline:latest",
+  "keyword_count": 3,
+  "analyze_subtitles": true,
+  "analysis_source": "youtube",
+  "keywords": [
+    {
+      "keyword": "오늘의 주요 뉴스",
+      "is_fixed": true,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "K-패스 추경안 지원",
+      "is_fixed": false,
+      "views": [
+        3095,
+        2304
+      ],
+      "video_count": 2,
+      "videos": [
+        {
+          "title": "국회, 26.2조 추경안 처리…‘국민 70% 지원금’ 유지 / KBS  2026.04.11.",
+          "video_id": "fNMyyjMDYyA",
+          "views": 3095,
+          "upload_date": "2026-04-11",
+          "url": "https://www.youtube.com/watch?v=fNMyyjMDYyA",
+          "subtitle_summary": "[고유가 대응을 위한 26조 2천억 원 규모의 추가경정예산안이 국회를 통과했으며, 국민 70%에 최대 60만원을 지급하는 고유가 피해 지원금과 산업의 쌀 나프타 수급 안정화 지원, 농어민 지원 예산 등이 원안대로 유지되었습니다.]",
+          "db_saved": true
+        },
+        {
+          "title": "'26.2조' 추경 국회 통과…하위 70% 지원금 유지 / 연합뉴스TV (YonhapnewsTV)",
+          "video_id": "3nKDeFNHFWI",
+          "views": 2304,
+          "upload_date": "2026-04-11",
+          "url": "https://www.youtube.com/watch?v=3nKDeFNHFWI",
+          "subtitle_summary": "[국회는 중동 사태에 따른 26조 2000억원 규모의 전쟁 추경을 야당과의 합의를 통해 통과시켰으며, 하위 70% 지원금은 그대로 유지되어 약 3600만 명에게 10~60만원씩 지급될 예정입니다. 나프타 지원 및 K패스 할인 등 일부 예산이 증액되었고, 취약 계층 지원은 이번 달 중 완료될 전망입니다.]",
+          "db_saved": true
+        }
+      ],
+      "max": 4.2527,
+      "min": 0.0,
+      "nb_score": 42527.3506,
+      "avg_views": 2699.5,
+      "total_views": 5399
+    },
+    {
+      "keyword": "이스라엘 한국 외교 갈등",
+      "is_fixed": false,
+      "views": [
+        59131,
+        4507,
+        17193,
+        13533
+      ],
+      "video_count": 4,
+      "videos": [
+        {
+          "title": "[속보] 외교갈등 난리났다/이재명과 이스라엘 상호 비방, 경악",
+          "video_id": "_N6L897b2Ag",
+          "views": 59131,
+          "upload_date": "2026-04-11",
+          "url": "https://www.youtube.com/watch?v=_N6L897b2Ag",
+          "subtitle_summary": "이재명이 가짜 뉴스를 공유하여 이스라엘과의 외교 갈등을 심화시켰고, 2024년 발생한 가짜 영상까지 마치 실제 사건인 것처럼 언급하며 논란을 일으켰습니다. 이스라엘은 이재명의 행보를 매우 예민하게 받아들이며 강하게 비판하고 있습니다. 이러한 상황은 현재 미국-이란 전쟁과 맞물려 더욱 복잡하게 전개될 조짐을 보이고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "野 \"이 대통령, 이스라엘과 외교 충돌 수습해야\" / 연합뉴스TV (YonhapnewsTV)",
+          "video_id": "zzcETRlPgNM",
+          "views": 4507,
+          "upload_date": "2026-04-11",
+          "url": "https://www.youtube.com/watch?v=zzcETRlPgNM",
+          "subtitle_summary": "[국민의힘은 이재명 대통령의 이스라엘 외교 논쟁이 대한민국 국격과 신뢰를 심각하게 훼손했다고 비판하며 외교적 수습을 촉구했고, 조국혁신당은 대통령의 발언이 전쟁 범죄에 경솔한 반응이라며 이스라엘 사과를 요구했다.]",
+          "db_saved": true
+        },
+        {
+          "title": "이 대통령, 이스라엘 규탄에 재반박…\"반인권적\" / 연합뉴스TV (YonhapnewsTV)",
+          "video_id": "2FYrmMBnkfM",
+          "views": 17193,
+          "upload_date": "2026-04-11",
+          "url": "https://www.youtube.com/watch?v=2FYrmMBnkfM",
+          "subtitle_summary": "[이재명 대통령이 이스라엘의 반인권적 행동에 대해 재반박하며, 전시 민간인 학살 사례를 비유한 발언으로 인한 이스라엘 외교부의 규탄에 대해 ‘반인권적’이라는 비판을 되짚어보아야 한다고 주장했습니다. 정부는 국제 인도법과 인권을 준수해야 한다는 입장을 강조했지만, 외교 갈등 가능성에 대한 우려도 제기되었습니다.]",
+          "db_saved": true
+        },
+        {
+          "title": "President Lee: \"If I am in pain, others are in pain too\"... Rebuts to Israel's backlash: \"Cannot ...",
+          "video_id": "E4dQTduW6Jw",
+          "views": 13533,
+          "upload_date": "2026-04-11",
+          "url": "https://www.youtube.com/watch?v=E4dQTduW6Jw",
+          "subtitle_summary": "[이재명 대통령이 이스라엘의 반인권적 행위에 대해 비판하며, ‘내가 아프면 타인도 그만큼 아프다’고 발언한 가운데 이스라엘 외교부와 대통령실이 맞서 대응하고, 정치권에서도 비판이 쏟아지고 있습니다.]",
+          "db_saved": true
+        }
+      ],
+      "max": 0.9362,
+      "min": 2.0041,
+      "nb_score": 0.4672,
+      "avg_views": 23591.0,
+      "total_views": 94364
+    },
+    {
+      "keyword": "미국 이란 협상 전망",
+      "is_fixed": false,
+      "views": [
+        8627,
+        15734,
+        15937,
+        334770,
+        645267,
+        6637
+      ],
+      "video_count": 6,
+      "videos": [
+        {
+          "title": "[이슈] 트럼프 \"'완전한 궤멸'보다 강력한 재정비\"…이란 \"레바논 휴전 없으면 결렬\" 신경전/2026년 4월 11일(토)/KBS",
+          "video_id": "J8a52FLTye0",
+          "views": 8627,
+          "upload_date": "2026-04-11",
+          "url": "https://www.youtube.com/watch?v=J8a52FLTye0",
+          "subtitle_summary": "트럼프 대통령은 이란과의 협상에서 완전한 파괴보다 더 강력한 재정비 필요성을 강조하며, 협상에서 유리한 위치를 점하기 위해 압박 강도를 높이고 있으며, 전보다 더 강력한 공격 가능성을 경고했습니다. 벤스 부통령이 이끄는 미국 대표단은 파키스탄 수도 이슬람마드에서 군경 만 명이 배치된 최고 경계 태세 속에서 이란 대표단과 종전 협상을 시작했으며, 레바논 휴전과 자산 해제를 조건으로 협상에 임키고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[🔴속보] 미국·이스라엘, 이란 종전협상 앞두고 이상기류…트럼프 \"레바논 공격 자제해\"→네타냐후 \"우린 휴전 없다\" / 연합뉴스TV(YonhapnewsTV)",
+          "video_id": "WM9oCFkQa_E",
+          "views": 15734,
+          "upload_date": "2026-04-11",
+          "url": "https://www.youtube.com/watch?v=WM9oCFkQa_E",
+          "subtitle_summary": "[미국과 이란이 종전 협상에 한발짝 다가섰지만, 호르무즈 해협 통제 강화와 트럼프 대통령의 경고 등으로 인해 협상 난항이 예상되며, 국제 해운업계의 항해 꺼림 현상이 심화되고 있다.]",
+          "db_saved": true
+        },
+        {
+          "title": "\"미국·이란 종전 협상, '3자 대면 회담'으로 시작\" / YTN",
+          "video_id": "ihtN0Pdku3s",
+          "views": 15937,
+          "upload_date": "2026-04-11",
+          "url": "https://www.youtube.com/watch?v=ihtN0Pdku3s",
+          "subtitle_summary": "미국과 이란이 파키스탄에서 3자 대면 회담을 통해 종전 협상을 시작했으며, 호르무제 해협 지역에서 직접 만나 협의를 진행하고 있습니다. 회담에는 미국 제이디스 부통령, 위커프 중동 특사, 이란 갈리바프 국회의장 등 주요 인사가 참석하여 협상 단체를 구성했습니다. 동결 자산 해제와 이스라엘의 레바논 공격 등 주요 쟁점에 대한 논의도 이루어질 예정입니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[🔴속보] '미국-이란 메신저' 카말 하라지, 이스라엘 폭격에 결국 사망｜첫 회담 앞두고 '평화 협상 중재자' 죽음…협상 중대 변수되나 / 연합뉴스TV(YonhapnewsTV)",
+          "video_id": "uQaAgohWCbk",
+          "views": 334770,
+          "upload_date": "2026-04-11",
+          "url": "https://www.youtube.com/watch?v=uQaAgohWCbk",
+          "subtitle_summary": "이스라엘이 레바논 남부 지역에 대한 추가 공습으로 민간인 300명 이상 사망하고, 휴전 합의 발표 후에도 공격을 멈추지 않아 상황이 더욱 악화되고 있으며, 미국 주도의 레바논과의 협상 전망이 불투명해졌습니다. 이스라엘과 헤즈볼라 간의 충돌로 인한 인명 피해가 계속되고, 걸프 지역 국가들의 휴전 협상도 삐걱거리고 있습니다. 정병화 외교부 장관 특사가 이란에 파견되어 호르무즈 해협 통과와 중동 정세에 대한 의견을 교환할 예정입니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[특별 방송]  미국-이란 협상 결과 대기중....  ｜ -  오선의 미국 증시 라이브",
+          "video_id": "nKGisM7LFtQ",
+          "views": 645267,
+          "upload_date": "2026-04-11",
+          "url": "https://www.youtube.com/watch?v=nKGisM7LFtQ",
+          "subtitle_summary": "[미국과 이란 간 협상 진행 중이며, 협상 결과에 대한 불확실성이 높은 상황이다. 파키스탄 측은 협상이 단 하루 내지 최대 일주일 내에 종료될 가능성을 시사하며, 현재는 협상 결과에 대한 정보만 기다리고 있는 것으로 보인다.]",
+          "db_saved": true
+        },
+        {
+          "title": "[뉴스특보] 미국·이란 접점 찾을까…호르무즈 등 진통 예고 / 연합뉴스TV (YonhapnewsTV)",
+          "video_id": "rqh1qs1xIIo",
+          "views": 6637,
+          "upload_date": "2026-04-11",
+          "url": "https://www.youtube.com/watch?v=rqh1qs1xIIo",
+          "subtitle_summary": "미국과 이란 간 종전 협상단이 중재국 파키스탄에 모여 핵무기 프로그램 폐지, 호르무즈 해협 통제권, 이란 미사일 프로그램, 배상 문제, 공격 금지 등 5가지 협상 의제를 논의하고 있으며, 핵심 쟁점은 핵무기 제거와 호르무즈 해협 통제권 확보라는 두 가지 사항으로 최종 협상이 결정될 것으로 예상된다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0.4445,
+      "min": 1.3121,
+      "nb_score": 0.3388,
+      "avg_views": 171162.0,
+      "total_views": 1026972
+    },
+    {
+      "keyword": "삼성전자 노조 파업",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "지방선거 D-55 현황",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "국가채무 GDP 비율",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "MH-60R 해상작전헬기",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "삼성전자 스마트폰 시장점유율",
+      "is_fixed": false,
+      "views": [
+        257
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "Samsung Electronics Reclaims No. 1 Spot in Smartphone Sales",
+          "video_id": "DdUTFP1bPdI",
+          "views": 257,
+          "upload_date": "2026-04-11",
+          "url": "https://www.youtube.com/watch?v=DdUTFP1bPdI",
+          "subtitle_summary": "[삼성전자가 2024년 1분기에 전 세계 스마트폰 판매량 1위 자리를 애플에게서 탈환했으며, 움디아 조사에 따르면 삼성전자는 22%의 점유율을 기록했습니다. 갤럭시 S26 시리즈의 사전 예약 판매량이 전작 대비 10% 이상 증가한 것으로 나타났으며, 이는 삼성전자의 성공적인 시장 재도약의 신호로 분석됩니다.]",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "코스닥 액티브 ETF 성과",
+      "is_fixed": false,
+      "views": [
+        112
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "1조 몰렸는데 -15%…'코스닥 액티브 ETF' 첫 성적표 / 연합뉴스TV (YonhapnewsTV)",
+          "video_id": "STE4zFLgRAg",
+          "views": 112,
+          "upload_date": "2026-04-11",
+          "url": "https://www.youtube.com/watch?v=STE4zFLgRAg",
+          "subtitle_summary": "[국내 최초 코스닥 액티브 ETF가 출시 한 달 만에 12~15% 하락하며 기대에 미치지 못하는 성적을 기록했고, 3천원당 제약 종목의 하락이 주요 원인으로 분석됩니다. 1조원 이상의 자금 유입에도 불구하고 투자자 상당수가 손실 구간에 진입했으며, 액티브 전략 실패보다는 코스닥 지수의 특징과 종목 선정의 어려움이 복합적으로 작용한 것으로 평가됩니다.]",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "무인창고 절도 사건",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "법정 통화녹음 증거 효력",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "식물성 식단 치매 예방",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "와인 추천 가이드",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "AI 로봇 체험전",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "일자리 박람회 취업",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    }
+  ]
+}

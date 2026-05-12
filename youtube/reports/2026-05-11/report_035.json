@@ -1,0 +1,331 @@
+{
+  "timestamp": "2026-05-11T05:18:28.980823",
+  "model": "mistral:latest",
+  "keyword_count": 3,
+  "analyze_subtitles": true,
+  "analysis_source": "youtube",
+  "keywords": [
+    {
+      "keyword": "오늘의 주요 뉴스",
+      "is_fixed": true,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "반도체 ETF 투자 전략",
+      "is_fixed": false,
+      "views": [
+        15071,
+        64396
+      ],
+      "video_count": 2,
+      "videos": [
+        {
+          "title": "반도체만 보기엔 아쉽다! 지금 눈여겨볼 ETF는 이것 I 박승진 I 신얼 I ETF아는형",
+          "video_id": "zw9StnJzhaw",
+          "views": 15071,
+          "upload_date": "2026-05-10",
+          "url": "https://www.youtube.com/watch?v=zw9StnJzhaw",
+          "subtitle_summary": "1. 최근 40% 정도의 손실을 보여 주는 고버스 ETF들, 특히 코스피 200 고버스와 같은 경우, 주요 운영사들이 상장시킨 종목들이 모두 동점 주가로 떨어졌습니다.\n2. 키움과 플러스는 10억 대까지 순자장 가치가 떨어졌고, 50억 원 이하로 떨어지면 상장 폐지 요건이 되므로 상상 폐지 요건까지 좀 들어왔습니다.\n3. 최근에 특징적인 이슈는 그룹주 ETF들이 엇갈리는 모습을 보여주고 있음으로, 대기업 집단들을 포트폴리오로 만든 ETF들이 상장되어 있고, 삼성과 두산이 특히 그룹주 ETF에서 가장 잘 보여지는 형태입니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[#RealMarketAnalysis] Samsung Electronics & SK Hynix 2x ETF Listing Imminent! Will It Be the Sign...",
+          "video_id": "Yz3YAM0z2VM",
+          "views": 64396,
+          "upload_date": "2026-05-10",
+          "url": "https://www.youtube.com/watch?v=Yz3YAM0z2VM",
+          "subtitle_summary": "1. 미국 시장에서 8월, 반도체 분야가 핵심으로 강조되어 있었습니다. Dow Jones Index는 보합선에서 머물렀지만 SP 500은 +0.8%, NASDAQ은 +1.7%를 기록하고, Philadelphia Semiconductor Index는 5.51%를 기록했습니다.\n2. 최근 미국 비농업 고용은 예상치 이상으로 증가했습니다. AI 데이터 센터 투자 확대가 고용 지표 확대에도 영향을 미쳤습니다.\n3. 메모리 공급 부족이 가장 핵심적인 모습으로 나타났습니다. 이는 AI 수요 확대가 메모리 및 스토리지 값 체인으로 확산되고 있음을 보여줍니다. Samsung Electronics, Micron, SK Hynix 등 전반적으로 급등세를 연출했습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 2.9209,
+      "min": 1.2241,
+      "nb_score": 2.3862,
+      "avg_views": 39733.5,
+      "total_views": 79467
+    },
+    {
+      "keyword": "HMM 나무호 공격 조사",
+      "is_fixed": false,
+      "views": [
+        186387,
+        22412,
+        90928,
+        3848,
+        3845
+      ],
+      "video_count": 5,
+      "videos": [
+        {
+          "title": "[자막] HMM 나무호 화재, 정부 합동조사단 현장 결과 발표 \"비행체 2기에 피격 확인\"",
+          "video_id": "AOg9U6SXnrY",
+          "views": 186387,
+          "upload_date": "2026-05-10",
+          "url": "https://www.youtube.com/watch?v=AOg9U6SXnrY",
+          "subtitle_summary": "1. 5월 4일, HMM 나무호 선박에서 발생한 화재 조사결과 발표: 2기의 비행체가 선박 외판을 약 1분 간격으로 두 차례 타격하여 화염과 연기를 일으킨 것으로 확인.\n2. 조사결과에 따르면, 비행체의 발사 주체, 정확한 기종 및 물리적 크기는 확인하기 어려웠지만, CCTV 영상에서 해당 비행체가 포착되었습니다.\n3. 화재 원인은 선박 내부와는 무관한 것으로 추정되며, 엔진, 발전기, 보일러 등에서 특이점은 없었습니다. 사고 단시 선박의 파손 부분은 해수면보다 약 1m에서 1.5m 이상으로 발생했습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[현장영상+] 나무호 정부합동조사 \"좌측 선미 외판 폭 5m, 내부 약 7m까지 훼손\" / YTN",
+          "video_id": "-cIA6i5mzWA",
+          "views": 22412,
+          "upload_date": "2026-05-10",
+          "url": "https://www.youtube.com/watch?v=-cIA6i5mzWA",
+          "subtitle_summary": "1. 5월 4일, 호르무즈 해협 내척 아랍 에미리트 인근 해역에서 우리 선박 \"나무호\"에서 발생한 사고를 조사하기 위해 정부는 해수부, 해양 안전 심판원, 소방청 감식 전문가 등을 합동조사단으로 구성했습니다.\n2. 조사결과, 5월 4일 15시 30분경 미상의 비행체가 \"나무호\"의 좌측 선미 외판을 두 차례 타격하여 약 5m와 7m까지 훼손되었습니다. CCTV 영상에서 해당 비행체가 포착되었으나 발사 주체, 정확한 기종 및 물리적 크기를 확인하기에는 제약이 있습니다.\n3. 현재 추가 분석을 통해 비행체 엔진 잔해 등을 조사할 예정입니다. 또한, 사고 원인은 \"나무호\"의 내부와는 무관하며, 피격 가능성은 낮습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[단독] \"비행체가 타격해 나무호 폭발..5m 정도 찢어져\" / SBS 8뉴스",
+          "video_id": "xk8fVuE_cFs",
+          "views": 90928,
+          "upload_date": "2026-05-10",
+          "url": "https://www.youtube.com/watch?v=xk8fVuE_cFs",
+          "subtitle_summary": "정부 조사단은 HMM 나무호의 화재 원인 조사 결과, 비행체가 선미를 타격하여 5m 정도 찢어져 폭발한 것으로 확인. 현장에서 수거한 잔해는 추가 분석을 계획. 나무호는 조선소에서 수리를 받을 예정.",
+          "db_saved": true
+        },
+        {
+          "title": "[Replay] HMM Namuho Fire Investigation Concludes… 'Shot by Unidentified Aircraft' Confirmed - MBN...",
+          "video_id": "pNV1hv3VRfU",
+          "views": 3848,
+          "upload_date": "2026-05-10",
+          "url": "https://www.youtube.com/watch?v=pNV1hv3VRfU",
+          "subtitle_summary": "1. 4일 호르무지업에서 발생한 HMM Namuho 폭발의 원인이 외부 공격으로 확인됐습니다.\n2. 정부는 미상의 비행체가 HMM Namuho를 타격한 것으로 확인했고, 추가 분석을 통해 정확한 기종과 크기를 결정하려는 시도를 계속할 예정입니다.\n3. 미국은 아라비아 해 구축함 세척을 배치하고, 상선 쉰 일곱척의 항로를 변경시키는 등 이란에 접근을 차단하고 있지만, 미국의 전방은 압박에도 이란은 물러서지 않는 분위기입니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[Breaking] Ministry of Foreign Affairs: \"Shot on Namuho Confirmed... Called Iranian Ambassador to...",
+          "video_id": "sIqa0vqzofw",
+          "views": 3845,
+          "upload_date": "2026-05-10",
+          "url": "https://www.youtube.com/watch?v=sIqa0vqzofw",
+          "subtitle_summary": "1. 5월 4일, 호르무즈 해협 내척 아랍 에미리트 인근 해역에서 발생한 사고의 조사결과, 미상비행체가 HMM 나무호 선박에 두 차례 타격하였고 화염 및 연기가 발생했다는 내용을 공개했습니다.\n2. 조사단은 5월 6일 출국 후 5월 7일 현지 시간 새벽 두바이에 도착하였으며, 선박 외관과 내부를 감식하였습니다.\n3. 추가적인 분석을 통해 비행체의 엔진 자해 등을 확인할 예정이며, 사고 원인은 선박 내부와는 무관한 것으로 보입니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0.6985,
+      "min": 1.5784,
+      "nb_score": 0.4425,
+      "avg_views": 61484.0,
+      "total_views": 307420
+    },
+    {
+      "keyword": "미국 UFO 파일 공개",
+      "is_fixed": false,
+      "views": [
+        31842,
+        67443,
+        19842
+      ],
+      "video_count": 3,
+      "videos": [
+        {
+          "title": "U.S. Government Unexpectedly Releases ‘UFO Files’… “Unidentified Objects During Apollo Operations...",
+          "video_id": "wtkBY2nfIY4",
+          "views": 31842,
+          "upload_date": "2026-05-10",
+          "url": "https://www.youtube.com/watch?v=wtkBY2nfIY4",
+          "subtitle_summary": "1. The U.S. government has unexpectedly released a large number of files (over 100 cases) about Unidentified Flying Objects (UFOs), including mysterious glowing objects and a 40-60m long metallic-looking object, some captured during the Apollo missions.\n2. The released files include photographs and videos of UFO sightings, such as three glowing objects on the lunar surface during the Apollo 17 mission and a UFO seen in the Apollo 12 mission footage.\n3. This release is believed to be in response to President Trump's February order to declassify government documents related to extraterrestrial life and UFOs, causing renewed debate about UFOs.",
+          "db_saved": true
+        },
+        {
+          "title": "미국 UFO 공개 이어지자 '재소환' “난생처음 본 물체” 조종사의 증언｜ TJB",
+          "video_id": "hh0367oDu20",
+          "views": 67443,
+          "upload_date": "2026-05-10",
+          "url": "https://www.youtube.com/watch?v=hh0367oDu20",
+          "subtitle_summary": "1. Colombian government is calling for the U.S. government to release more UFO files, following the U.S.'s recent disclosure of unidentified flying objects (UFO) documents.\n2. A controversial UFO video, captured in Colombia by a pilot in 2022, shows an object resembling a dish flying at incredible speed. The pilot claimed to have never seen such a thing before and quickly recorded it on his phone.\n3. Experts believe the authenticity of this video is high, as it was considered the best UFO video ever recorded at the time of its release.",
+          "db_saved": true
+        },
+        {
+          "title": "[자막뉴스] 80년 숨겨온 'UFO X-파일' 해제? 미국 정부, 기밀 161건 공개 / YTN",
+          "video_id": "6BTU7M5y6rc",
+          "views": 19842,
+          "upload_date": "2026-05-10",
+          "url": "https://www.youtube.com/watch?v=6BTU7M5y6rc",
+          "subtitle_summary": "1. 미국 정부가 80년간 수집한 'UFO X-파일' 161건을 공개했다. 이는 달에 착륙한 아폴로 11호 조종사들이 비행체를 촬영한 것으로, 빛나고 금속 물체가 나타난 다이아몬드 형태의 비행체에 대한 신고가 있었다.\n2. 공개된 자료에는 외계 생명체를 목격했다고 주장한 사람들의 신고 내용이 담겨 있으나, 일부는 검게 가려져 정확한 식별이 어려웠다.\n3. 미국 정부는 외계 생명체가 지구를 방문했다는 결정적인 증거를 찾지 못했으며, 트럼프 대통령은 이를 공개함으로써 사람들이 스스로 판단할 수 있게 하겠다고 예고했다.",
+          "db_saved": true
+        }
+      ],
+      "max": 1.4248,
+      "min": 3.465,
+      "nb_score": 0.4112,
+      "avg_views": 39709.0,
+      "total_views": 119127
+    },
+    {
+      "keyword": "라리가 경기 하이라이트",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "LG 트윈스 경기 결과",
+      "is_fixed": false,
+      "views": [
+        271512
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "[LG vs Hanwha] 5/10 Match | 2026 Shinhan SOL KBO League | Highlights | TVING",
+          "video_id": "wN6zV6HfO1w",
+          "views": 271512,
+          "upload_date": "2026-05-10",
+          "url": "https://www.youtube.com/watch?v=wN6zV6HfO1w",
+          "subtitle_summary": "이 영상은 2026 Shinhan SOL KBO League의 LG Twins와 Hanwha Eagles의 경기 강연 합니다. 이 경기에서는 1번 홍창기, 2번 구본역, 3번 오스틴, 4번 오지환, 5번 천성호, 6번 이원석, 7번 타라자, 8번 문현빈, 9번 강백호, 10번 노시환이 나왔습니다. LG는 여섯 경기 나와서 2승 1패로 리그 1위를 차지했습니다. Hanwha는 빼어난 성적을 거두고 있으며, 이번 경기에서 박준영이 KBO 드래프트에 도전하여 지명되지 못한 것에서 퓨처스에서 빼어난 성적을 거두고 있습니다. 오스틴은 최고의 외국인 타자로 유명하며, 이번 경기에서는 3진을 잡아내고 2루타를 거두었습니다. LG는 강백호와 김태현을 통해 1대 0으로 이겼습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "이란 호르무즈 해협 선박 피격",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "한타이러스 크루즈선 격리 조치",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "삼성전자 반도체 성과급 분쟁",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "BTS 멕시코 공연 현장",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "AI 반도체 슈퍼사이클",
+      "is_fixed": false,
+      "views": [
+        42
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "🔥 AI 슈퍼사이클 ‘진짜 끝이 아니다’ 엔비디아·삼성전자·SK하이닉스 3년 랠리 시나리오",
+          "video_id": "Agjmen8KhYw",
+          "views": 42,
+          "upload_date": "2026-05-10",
+          "url": "https://www.youtube.com/watch?v=Agjmen8KhYw",
+          "subtitle_summary": "1. AI 및 슈퍼사이클은 이전에도 자주 언급했지만, 현재 시장은 AI 반도체가 휩쓸고 있으며, 6개월 정도 걸릴 것이 아니라 진행중인 상황입니다.\n2. 지난 시대와 달리, 이번 슈퍼사이클은 10만원부터 시작했으며, 버블이라는 것을 많은 사람들이 말하고 있습니다.\n3. 여러 기업(예: 엔비디아, 삼성전자, SK하이닉스)이 AI 반도체를 생산하며, 이들은 어느 정도까지 갈 것인가에 대한 의문이 있습니다. 또한, 이 상황이 버블일지 아닌지에 대한 의문도 있습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "미국 연준 금리 정책",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "재택 임종 의료 서비스",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "장애인 오케스트라 공연",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "반려동물 입양 지원금",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "전기차 판매 순위",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    }
+  ]
+}

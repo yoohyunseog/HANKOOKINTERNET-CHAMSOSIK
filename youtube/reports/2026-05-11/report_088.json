@@ -1,0 +1,493 @@
+{
+  "timestamp": "2026-05-11T23:14:46.181696",
+  "model": "mistral:latest",
+  "keyword_count": 3,
+  "analyze_subtitles": true,
+  "analysis_source": "youtube",
+  "keywords": [
+    {
+      "keyword": "오늘의 주요 뉴스",
+      "is_fixed": true,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "갭투자 허용 논란",
+      "is_fixed": false,
+      "views": [
+        23,
+        18304,
+        13,
+        2501
+      ],
+      "video_count": 4,
+      "videos": [
+        {
+          "title": "[속보] 이재명 대통령 “갭투자 허용? 사실상 억까”…분노의 정면 반박, 부동산 프레임 뒤집혔다",
+          "video_id": "h5pnJsTz_6E",
+          "views": 23,
+          "upload_date": "2026-05-11",
+          "url": "https://www.youtube.com/watch?v=h5pnJsTz_6E",
+          "subtitle_summary": "1. 이재명 대통령은 부동산 거래와 투자에 관한 프레임을 비판하며, 정부가 부동산 시장을 다시 열어주는 것이 아니라 거래와 투기를 일부러 같은 말로 섞어버리는 프레임의 문제라고 지적했습니다.\n2. 토지거래 가구역에서 비거주 일주택자가 있는 집을 팔 때, 무주택 매수자의 실거주 의무를 어떻게 다루는 것이 문제인 것으로 나타났습니다.\n3. 정부가 세입자 권리와 무주택 실수요자의 입주 의무를 어떻게 조율할 것인지에 대한 이야기로, 국토교통부는 세입자에게도 매도 기회를 제공하고자 했으나, 매수자는 무주택자로 한정되며, 임차 기간이 지난 뒤 입주할 수 있으며, 2년 안에 직접 들어가 살아야 하고, 매매대금 전액을 지급해야 한다는 조건이 제시되었습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "President Lee: \"'De Facto Allowing Gap Investment'? Closer to Forced Criticism\" / SBS",
+          "video_id": "hKhvhA5pPHA",
+          "views": 18304,
+          "upload_date": "2026-05-11",
+          "url": "https://www.youtube.com/watch?v=hKhvhA5pPHA",
+          "subtitle_summary": "1. 대통령 이재명은 정부가 비거주 1주택자의 매물에 대한 실거주 의무를 유예하는 방안을 검토하고 있다는 소문에 반박했습니다. 그는 이러한 조치로써 사실상 갭투자를 허용하는 것이라는 지적을 억지 비난으로 인식했다고 밝혔습니다.\n2. 대통령은 매수인이 무주택자로 한정되어 기존 임차인의 자녀 임차 기간이 지난 후에 입주할 수 있게 허용하고, 매수인이 2년 이내에 보증금을 내주고 직접 입주하며, 자녀 임대 기간 또한 최대 2년 이내에 보증금 포함 매매대금 전액을 지급해야 한다고 밝혔습니다.\n3. 대통령은 부동산 공화국 탈출을 우리나라의 정상화와 지속 발전을 위한 필수 과제로 인식하며, 이를 위해 협조를 요청했습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "이 대통령 \"세입자 있는 1주택자 매도 기회…갭투자 허용은 억까\"",
+          "video_id": "O4E-86mSvUE",
+          "views": 13,
+          "upload_date": "2026-05-11",
+          "url": "https://www.youtube.com/watch?v=O4E-86mSvUE",
+          "subtitle_summary": "1. 대통령 이재명이 직접 소셜 미디어를 통해 갭투자 관련 조치에 대한 입장을 밝혔습니다.\n2. 이 대통령은 갭투자 전세매매 허용의 목적은 소위 억가억지로 비난하는 것에 가깝다고 반박했습니다.\n3. 이 대통령은 국토교통부의 조치로 매수인이 기존 임차인의 자녀 임차 기간이 지난 후에 입주할 수 있게 허용하고, 일주택자들에게도 매각 기회를 제공하며, 매수인은 보증금을 내주고 직접 입주하는 것으로 이를 구현할 계획이라고 밝혔습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[자막] 이재명 대통령, 1주택자 매매 활성화 비판에 X(SNS)서 정면 반박",
+          "video_id": "RPeb8hTPPus",
+          "views": 2501,
+          "upload_date": "2026-05-11",
+          "url": "https://www.youtube.com/watch?v=RPeb8hTPPus",
+          "subtitle_summary": "1. 이재명 대통령은 SNS를 통해 정부의 비거주 1주택자 매매 활성화 방안에 대한 엇갈린 해석을 보고, 갭투자를 허용하는 것이라는 일부의 주장을 강력히 반박했습니다.\n2. 이재명 대통령은 이 조치의 목적은 실수로 집을 팔 수 없었던 여성들이 거래 절벽 현상을 해소하는 것으로, 매수인은 무주택자로 한정되며 실제 입주를 완료해야 하고, 보증금과 매매대금 전액을 지급해야 합니다.\n3. 이재명 대통령은 엄격한 실거주 요건이 있음에도 갭투자라고 비판하는 것은 과해 보인다고 지적했습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0.5923,
+      "min": 1.5056,
+      "nb_score": 0.3934,
+      "avg_views": 5210.25,
+      "total_views": 20841
+    },
+    {
+      "keyword": "이란 우라늄 제거 전쟁",
+      "is_fixed": false,
+      "views": [
+        2705,
+        4939,
+        671,
+        3035,
+        1197,
+        2155,
+        10237
+      ],
+      "video_count": 7,
+      "videos": [
+        {
+          "title": "[🔴이슈PLAY] 네타냐후 \"이란 우라늄 제거 없인 전쟁 끝나지 않아\"",
+          "video_id": "VgBpxKqYt9I",
+          "views": 2705,
+          "upload_date": "2026-05-11",
+          "url": "https://www.youtube.com/watch?v=VgBpxKqYt9I",
+          "subtitle_summary": "1. 한국 정부는 5월 4일 호르무주 해협에서 발생한 미상 비행체 공격으로 인한 피격을 확인했다. 이 사고로 인해 나무호가 공격당하고 큰 구멍이 발생했습니다.\n2. 이 공격에는 미국과 브레드 쿠퍼 중부 사령관이 이란의 공격이라고 말한 것으로 알려졌습니다.\n3. 하지만 정부는 이 사건에 대해서는 아직 확실한 근거를 제시하지 않고 있고, 이란의 공격이라는 것을 부인하고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "🔴LIVE \"2주간 더 떄려! 목표물 더 있다\"..네타냐후 \"이란 우라늄 제거할 때까지 전쟁 안 끝나\" | SBS 논스톱 라이브",
+          "video_id": "qJW9pE6Dc_w",
+          "views": 4939,
+          "upload_date": "2026-05-11",
+          "url": "https://www.youtube.com/watch?v=qJW9pE6Dc_w",
+          "subtitle_summary": "1. 나무호 수리 선박이 두바이로 향해 이동하기 시작했습니다. 예인선을 끌어올리는 데 필요한 장비와 발전기를 사용하여 준비 중입니다.\n2. 나무호의 내부 CCTV, 기관실 등을 확인할 계획이 있으며, 금이 갖고 있는지 검증하기 위해 수중 카메라를 사용할 예정입니다.\n3. 미국은 호르무지협에 발리 선박들을 빼내오는 해방 작전을 다시 시작하고자 합니다. 이란이 미국의 해상 봉쇄를 최소 1개월은 버틸 수 있을 것으로 예상되며, 사우디와 쿠웨이트가 미국을 지원하는 데 문제가 있다고 보도되었습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[🔴속보] 네타냐후 \"우라늄 제거 안 되면 전쟁 안 끝난다\"…\"많이 약화됐지만 이란에 고농축 우라늄 여전히 있어\" / 연합뉴스TV(YonhapnewsTV)",
+          "video_id": "METkyqvNqGg",
+          "views": 671,
+          "upload_date": "2026-05-11",
+          "url": "https://www.youtube.com/watch?v=METkyqvNqGg",
+          "subtitle_summary": "1. 이스라엘 총리 네타냐는 이란의 고농축 우라늄을 제거하지 않으면 전쟁은 끝나지 않을 것이라고 강조했습니다.\n2. 미국과 이란 간의 종전 협상이 진행중인 가운데, 이스라엘은 이란군 타격 계획을 포함한 대비를 하고 있습니다.\n3. 이란의 새 최고 지도자 모주타바는 미국의 공격이 수치스러운 패배로 끝나며, 영내에서 미국의 영향력을 제거하겠다고 선언했습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[🔴속보] 트럼프 \"2주 더 공격할 수도\"…네타냐후 \"우라늄 제거해야 끝난다\" 합세 / 연합뉴스TV(YonhapnewsTV)",
+          "video_id": "R2Qu0lvACZ4",
+          "views": 3035,
+          "upload_date": "2026-05-11",
+          "url": "https://www.youtube.com/watch?v=R2Qu0lvACZ4",
+          "subtitle_summary": "1. 이란 정부는 미상 비행체로 인한 EDEA 항공기 충돌 조사 결과를 발표했다. 당국은 공격을 부인해왔으나 아직 공식 입장이 나오지 않았다.\n2. HMM 나무호는 호르무즈 해협에서 화재로 인해 피해가 있었고, 정부는 사고가 아닌 의도적인 공격으로 인한 것이라고 결론을 내렸다.\n3. 현재 호르무즈 해협에서 여전히 우리 선박 26척, 160여명의 한국인 선원이 있으며, 안전 대책을 마련하는 것이 긴급해지고 있다.",
+          "db_saved": true
+        },
+        {
+          "title": "Netanyahu: \"The war isn't over... We must go in and extract Iran's highly enriched uranium\" [Issu...",
+          "video_id": "3QOIJYgl5hQ",
+          "views": 1197,
+          "upload_date": "2026-05-11",
+          "url": "https://www.youtube.com/watch?v=3QOIJYgl5hQ",
+          "subtitle_summary": "1. Iran has responded to the U.S.'s ceasefire proposal through Pakistan, focusing on ending the war and ensuring the safety of the Hormuz Strait, but not addressing the U.S.'s main concern about nuclear issues. Trump expressed dissatisfaction with this response.\n2. Iran attacked a cargo ship in the Gulf, prompting Israel to prepare for another war. The tension between Iran and Israel over nuclear issues continues.\n3. A temporary ceasefire has been agreed upon between Israel and Lebanon, but the conflict is not yet resolved. Israel maintains its military presence while Lebanon insists on complete Israeli withdrawal. The Middle East's volatile situation may escalate again due to Iran's naval attack and Israel's hardline policy.",
+          "db_saved": true
+        },
+        {
+          "title": "\"핵 제거 전까지 안 끝난다\"…네타냐후, 전쟁만이 (내가) 살 길? [뉴스와] / 연합뉴스TV(YonhapnewsTV)",
+          "video_id": "4vp1tyIHS2U",
+          "views": 2155,
+          "upload_date": "2026-05-11",
+          "url": "https://www.youtube.com/watch?v=4vp1tyIHS2U",
+          "subtitle_summary": "1. 미국과 이ран의 협상은 교절 상태로, 트럼프 대통령은 2주 내내 추가적인 공격을 할 수 있다고 보인다.\n2. 전쟁 제기 가능성이 높아지고 있으며, 협상이 연장될 가능성도 존재한다.\n3. 최근 트럼프 대통령은 중국 방문 전에 종전에 대한 원칙적인 합의를 제안했으나, 이ран의 답변은 미국의 기대와는 다르고 화를 낼 정도로 강력하였다.",
+          "db_saved": true
+        },
+        {
+          "title": "\"Allowing Uranium Recovery and Crude Oil Sales\"... Iran Adds More Demands / SBS 8 News",
+          "video_id": "PDOk3I2bvzc",
+          "views": 10237,
+          "upload_date": "2026-05-11",
+          "url": "https://www.youtube.com/watch?v=PDOk3I2bvzc",
+          "subtitle_summary": "미국과 이란은 핵 문제에서 해결하는 데 성공하지 못했습니다. 최근 이란이 추가 요구를 내놓고 협상은 더 멀어졌습니다. 미국과 이란은 전쟁 후 협상에 근접했지만, 이란의 대답은 트럼프 미 대통령의 공언과는 달랐습니다. 이란은 핵 농축 중단 기간을 짧게 하고, 핵시설 해체를 거부했으며, 미국에서 추출한 고농축 우라늄을 다시 받아줄 수 있는 조항을 요구했습니다. 또한 이란산 원유 판매 금지를 해제하려는 요구도 있었습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0.6271,
+      "min": 1.6124,
+      "nb_score": 0.3889,
+      "avg_views": 3562.71,
+      "total_views": 24939
+    },
+    {
+      "keyword": "고유가 지원금 지급",
+      "is_fixed": false,
+      "views": [
+        97837,
+        13304,
+        1654,
+        6288,
+        346,
+        7627,
+        4208
+      ],
+      "video_count": 7,
+      "videos": [
+        {
+          "title": "[자막] 윤호중 장관, 2차 고유가 피해지원금 지급 발표 (대상·금액·신청방법 총정리)",
+          "video_id": "Gso4LhNLLcw",
+          "views": 97837,
+          "upload_date": "2026-05-11",
+          "url": "https://www.youtube.com/watch?v=Gso4LhNLLcw",
+          "subtitle_summary": "1. 행정안전부 장관 윤호중이 발표한 2차 고육과 피해 지원금 계획:\n목적: 민생 부담을 덜어들이고 경기 회복을 유도하는 재정 조치\n대상자: 소득 중심으로 선별된 약 3,600만 명 (가구원 합산 재산세 12억 원 초과, 금융 소득 2천만 원 초과 제외)\n지급 금액: 1인당 10만 원 ~ 25만 원 (지방 우대 원칙 적용)\n신청 기간: 5월 18일부터 7월 3일까지 (1차 지급 대상자 중 아직 신청하지 못한 분들도 포함)\n지급 수단: 신용카드, 체크카드, 지역사랑 상품권, 선불카드 (가장 편리한 수단을 선택할 수 있음)\n사용 기간: 8월 31일까지 (사용이 제한되는 경우 기한 내에 사용하도록 당부)",
+          "db_saved": true
+        },
+        {
+          "title": "‘고유가 피해지원금’ 2차 지급 기준 내일(11일) 발표 / KBS  2026.05.10.",
+          "video_id": "q0EWiTcS300",
+          "views": 13304,
+          "upload_date": "2026-05-10",
+          "url": "https://www.youtube.com/watch?v=q0EWiTcS300",
+          "subtitle_summary": "1. '고유가 피해지원금'의 2차 지급 대상 선정 기준이 내일(11일) 발표될 예정입니다.\n2. 정부는 2차 지급을 소득 하위 70% 국민에게 시작할 것으로 예정되며, 건강보험료를 기준으로 선택하고, 고액 자산가를 제외한 세부 기준을 정할 것입니다.\n3. 2차 지급되는 '고유가 피해지원금'은 수도권 거주자에게 10만 원, 비수도권 15만 원이며, 인구 감소 지역과 특별 지원 지역에서는 각각 20만 원, 25만 원을 지급합니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[자막] 2차 고유가 피해지원금 5월 18일 지급 개시!",
+          "video_id": "HcNLvUouGsI",
+          "views": 1654,
+          "upload_date": "2026-05-11",
+          "url": "https://www.youtube.com/watch?v=HcNLvUouGsI",
+          "subtitle_summary": "1. 행정안부장관 윤호중이 발표했습니다. 2차 고유가 피해지원금은 7월 3일까지 신청이 가능합니다. 지급 대상자는 소득이 중심으로 선택되며, 지역별로 지급금액이 다르게 지급됩니다. 예를 들어 수도권은 10만원, 비수도권은 15만원, 인구감소 지역 우대 지원 지역은 20만원, 특별 지원 지역은 25만원입니다. 사용 기간은 8월 31일까지입니다.",
+          "db_saved": true
+        },
+        {
+          "title": "‘고유가 지원금’ 소득 하위 70%에 2차 지급…고액 자산가 제외 / KBS  2026.05.11.",
+          "video_id": "mdEfmSL7hEQ",
+          "views": 6288,
+          "upload_date": "2026-05-11",
+          "url": "https://www.youtube.com/watch?v=mdEfmSL7hEQ",
+          "subtitle_summary": "1. 정부는 5월 18일부터 건강보험료를 기준으로 소득하위 70%의 국민에게 '고유가 피해 지원금'을 2차 지급합니다.\n2. 지급 대상자는 수도권 10만 원, 비수도권 15만 원, 인구 감소 지역 최대 25만 원까지 받을 수 있습니다.\n3. 고액 자산가는 별도의 기준으로 제외되며, 신용카드나 선불카드를 통해 지원금을 받을 수 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[🔴LIVE] 고유가 피해지원금 2차 지급 관련 윤호중 행정안전부 장관 브리핑 생중계 | 2026년 5월 11일",
+          "video_id": "538PKJ5nG_Q",
+          "views": 346,
+          "upload_date": "2026-05-11",
+          "url": "https://www.youtube.com/watch?v=538PKJ5nG_Q",
+          "subtitle_summary": "1. 행정안전부 장관 윤호중이 2차 고유가 피해 지원금 계획을 발표했습니다. 이는 중동 전쟁으로 인한 민생 부담 감소와 경기 회복을 위해 수행됩니다.\n2. 2차 고유가 피해 지원금은 70% 국민에게 지급되며, 선택 기준은 건강 보험료를 중심으로 하여 고액 자산과 가구를 제외한 소득이 중심인 분들입니다.\n3. 지급금액은 1인당 10만 원에서 최대 25만 원까지, 지방 우대 원칙을 적용하여 수도권, 비수도권, 인구 감소 지역, 특별 지원 지역에 따라 다르게 지급됩니다. 5월 18일부터 7주간 신청이 진행되며, 사용 기한은 8월 31일까지입니다.",
+          "db_saved": true
+        },
+        {
+          "title": "'고유가 피해지원금' 다음주 월요일부터 2차 지급‥소득 하위 70% 대상 - [끝까지 LIVE] MBC 중계방송 2026년 05월 11일",
+          "video_id": "BYTKclwocso",
+          "views": 7627,
+          "upload_date": "2026-05-11",
+          "url": "https://www.youtube.com/watch?v=BYTKclwocso",
+          "subtitle_summary": "1. 중동 전쟁으로 인한 민생 부담이 증가하고 있음. 정부는 2차 고육가 피해 지원금을 지급하기 위해 노력하고 있습니다.\n2. 2차 고육가 피해 지원금은 소득이 중심으로 70%의 국민(약 3,600만 명)에게 지급될 예정입니다. 지급 금액은 1인당 10만 원 ~ 25만 원 사이이며, 지방 우대 원칙을 적용하여 수도권, 비수도권, 인구 감소 지역, 특별 지원 지역에서 다양한 금액으로 지급할 계획입니다.\n3. 2차 지급은 5월 18일부터 7주간(7월 3일까지) 진행될 예정이며, 1차 지급 대상자들 중 아직 신청하지 못한 분들도 동일한 기간 동안 신청할 수 있습니다. 지급 수단으로는 신용카드, 체크카드, 지역사랑상품권과 선불카드가 있습니다. 사용 기한은 8월 31일까지입니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[현장연결] 고유가 피해 지원금 '2차 지급' 기준 발표 / 연합뉴스TV (YonhapnewsTV)",
+          "video_id": "c0nGefqj304",
+          "views": 4208,
+          "upload_date": "2026-05-11",
+          "url": "https://www.youtube.com/watch?v=c0nGefqj304",
+          "subtitle_summary": "1. 정부는 2차 고유가 피해 지원금을 지급하기 위해 선재적이고 적극적인 재정 역할을 필요악시합니다. 이는 서민과 중산층의 일상에도 영향을 미치는 점에서입니다.\n2. 지급 대상자는 소득이 중심으로 선별되며, 고액 자산과 가구를 제외한 약 3,600만 명에게 지급됩니다. 지역별 우대 원칙을 적용하여 지급금액은 1인당 10만 원 ~ 25만 원 사이입니다.\n3. 5월 18일부터 7주간 진행되는 2차 지급은 신용카드, 체크카드, 지역사랑상품권 등으로 받을 수 있습니다. 사용기한은 8월 31일까지입니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0.2294,
+      "min": 1.004,
+      "nb_score": 0.2285,
+      "avg_views": 18752.0,
+      "total_views": 131264
+    },
+    {
+      "keyword": "나무호 피격 규탄",
+      "is_fixed": false,
+      "views": [
+        1601,
+        342782,
+        4254,
+        7024,
+        7161,
+        34474,
+        3035,
+        400
+      ],
+      "video_count": 8,
+      "videos": [
+        {
+          "title": "[자막] 위성락 안보실장, HMM 나무호 피격 강력 규탄 및 국제 공조 선언",
+          "video_id": "93WGB1ueJK8",
+          "views": 1601,
+          "upload_date": "2026-05-11",
+          "url": "https://www.youtube.com/watch?v=93WGB1ueJK8",
+          "subtitle_summary": "1. 정부 조합 조사단은 HMM 나무호 현장 조사를 거쳐 외교부 브리핑을 통해 미상의 비행체가 2회 남무호 선미에 타격하여 화연과 연기를 일으킨 것을 발표했습니다.\n2. 사고 당시 선박은 해수면보다 1-1.5m 위치에 파손이 있었으며, 폭발 압력으로 인한 파손 패턴과 반구형 관통 형상을 고려하면 비격 가능성은 낮습니다.\n3. 정부는 추가적인 조사를 통해 공격의 주체, 정확한 기종, 물리적 크기 등을 식별하고자 합니다. 이에 따라 필요한 대응 조치도 고려할 것입니다. 또한 육관국과의 지속적인 소통, 현재 인근 해협에 위치한 모든 선원 및 선박의 안전을 강화하기 위한 노력도 배가 할 것입니다. 국제사회와 함께 모든 선박의 안전과 자유로운 통행을 보장하기 위해 노력할 것입니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[On-site Video] \"Strongly Condemn\" Blue House’s Official Statement on Namuho Attack… Draws Sword ...",
+          "video_id": "Sz_Mqbl1zlU",
+          "views": 342782,
+          "upload_date": "2026-05-11",
+          "url": "https://www.youtube.com/watch?v=Sz_Mqbl1zlU",
+          "subtitle_summary": "1. 정부는 어제 나무호 선박에 대한 공격이 발생했고, 미상의 비행체가 2회 타격을 가했으며, 해수면 위 1-1.5m 부분에서 파손이 있었다는 것을 발표했습니다.\n2. 정부는 추가적인 조사를 통해 공격의 주체, 정확한 기종, 물리적 크기 등을 식별하고자 합니다. 이에 따라 필요한 대응 조치도 고려할 것입니다.\n3. 이러한 사건을 방지하기 위해서는 육관국들과의 지속적인 소통, 현재 인근 해협에 있는 모든 선원 및 선박의 안전 강화, 국제 사회와의 협력이 필요합니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[🔴속보] 靑, '나무호 피격'에 \"강력 규탄…공격주체 특정 위해 노력 중\"/ 연합뉴스TV(YonhapnewsTV)",
+          "video_id": "crv_fTu4IIE",
+          "views": 4254,
+          "upload_date": "2026-05-11",
+          "url": "https://www.youtube.com/watch?v=crv_fTu4IIE",
+          "subtitle_summary": "1. 두 번의 간격으로 나무호 선박에 타격이 있었고, 해상 1m ~ 1.5m 위치에서 파손이 발생했습니다.\n2. 폭발 압력으로 인한 파손 패턴과 반구형 관통 형상을 고려하여, 비격의 가능성은 낮아 보입니다.\n3. 정부는 공격의 주체, 기종, 물리적 크기를 식별하고 응답 조치를 고려할 계획이 있습니다. 또한 해협에서 우리 모든 선원과 선박의 안전을 강화하고, 국제사회와 지속적으로 소통하여 선박 안전과 자유로운 통행을 보장할 계획이 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "이란, 나무호 피격 답변 아직…또 상선 피격, 카타르 강력 규탄 / KBS  2026.05.11.",
+          "video_id": "yd4Fs2soIYM",
+          "views": 7024,
+          "upload_date": "2026-05-10",
+          "url": "https://www.youtube.com/watch?v=yd4Fs2soIYM",
+          "subtitle_summary": "1. 정부는 남무호 사건에 대해 아직 반응을 내리지 않고 있으며, 외국 상선이 또 피격당했습니다. (이란, 나무호 피격)\n2. 후르무주 해협에서는 긴장 수비가 더 높아졌고, 이란군이 해협 근처에 잠수함을 증강 배치했다고 보도되었습니다. (이란의 공격)\n3. 카타르 수호 도화에서 또 한 척의 상선이 피격당했으며, 카타르 정부는 국제법 위반이라고 강력히 비판했습니다. (카타르 강력 규탄)",
+          "db_saved": true
+        },
+        {
+          "title": "위성락 “나무호 피격, 강력 규탄.. 공격 주체 찾아내 조치” - [현장PLAY] MBC뉴스 2026년 05월 11일",
+          "video_id": "CUmuVuOXiLg",
+          "views": 7161,
+          "upload_date": "2026-05-11",
+          "url": "https://www.youtube.com/watch?v=CUmuVuOXiLg",
+          "subtitle_summary": "1. 정부 조사단은 어제 NSC 회의에서 발표했던 결과를 설명합니다. 미상의 비행체가 남무호 선미판에 두 번 타격하여 화염과 연기가 발생했으며, 해수면 1m 이상 위치한 선박이 파손되었습니다.\n2. 비행체 관련 정보를 추가적인 조사로부터 확인할 것입니다. 공격의 주체, 기종, 물리적 크기 등을 식별하고자 합니다.\n3. 육관국과 소통하여 재발이 방지되도록 노력할 것입니다. 또한 모든 선박의 안전과 자유로운 통행을 위해 국제사회와 협력할 계획입니다.",
+          "db_saved": true
+        },
+        {
+          "title": "Blue House \"Strongly Condemns Attack on Namuho... Will Identify Perpetrator and Take Action\" - [L...",
+          "video_id": "LxF8UHptTnM",
+          "views": 34474,
+          "upload_date": "2026-05-11",
+          "url": "https://www.youtube.com/watch?v=LxF8UHptTnM",
+          "subtitle_summary": "1. 청와대는 남무호 선미 외판의 화재를 공격으로 인정하지 않고, 이를 원인이 된 미상의 비행체에 대해 추가 조사를 통해 주체와 기종을 식별할 계획입니다.\n2. 외교부는 민간 선박에 대한 공격은 용납할 수 없다고 분명히 했습니다.\n3. 코스피가 7,800을 돌파하며 4상 최고가를 경신했으며, SK 하이닉스와 삼성전자의 주가도 급등했습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[Replay] [Breaking] Blue House: \"Attacks on civilian vessels such as the Namuho cannot be tolerat...",
+          "video_id": "0aALeJ150fo",
+          "views": 3035,
+          "upload_date": "2026-05-11",
+          "url": "https://www.youtube.com/watch?v=0aALeJ150fo",
+          "subtitle_summary": "1. 정부 합동 조사단이 어제 오후에 발표한 결과는 미상의 비행체가 2번 연속 민간 선박 'HMM 나무호'를 타격했고, 해수면 1m ~ 1.5m 위치에서 파손이 있었다는 것입니다.\n2. 기회 및 어려에 의한 비격 가능성은 낮으며, 추가적인 조사가 필요합니다.\n3. 정부는 'HM 나무호'와 같은 민간 선박에 대한 공격을 정당화하거나 용납할 수 없습니다. 추가 조사를 통해 공격의 주체, 정확한 기종, 물리적 크기 등을 식별하고자 합니다. 이러한 사건을 재발하지 않도록 육관국과 소통하고, 선원 및 선박의 안전을 강화하기 위해 노력할 것입니다.",
+          "db_saved": true
+        },
+        {
+          "title": "Video of Namuho being shot confirmed… Blue House “strongly condemns attack” / Channel A / News A",
+          "video_id": "mIqbFoXn1Jc",
+          "views": 400,
+          "upload_date": "2026-05-11",
+          "url": "https://www.youtube.com/watch?v=mIqbFoXn1Jc",
+          "subtitle_summary": "1. 청와대는 Namuho 사고의 원인이 외부 공격으로 드러나자 강력하게 규탄했습니다. (The Blue House strongly condemned the attack on Namuho, which was revealed to be caused by an external attack.)\n2. 현장에서 CCTV와 엔진 부품이 발견되어 피격으로 결론을 짓는 근거가 되었습니다. (Evidence from the scene, including CCTV footage and engine parts, suggests that it was an attack.)\n3. 공격 주체를 명확하게 규명하기 위해 자녀를 분해하고 분석할 계획이 있습니다. (The government plans to disassemble and analyze the remains to clearly identify the attacker.)",
+          "db_saved": true
+        }
+      ],
+      "max": 0.132,
+      "min": 0.7888,
+      "nb_score": 0.1674,
+      "avg_views": 50091.38,
+      "total_views": 400731
+    },
+    {
+      "keyword": "fifa u-17 여자 월드컵",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "희토류 대만 압박",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "친일파 땅 환수",
+      "is_fixed": false,
+      "views": [
+        2445
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "'친일파' 이두황 땅⋯'환수' 길 열리나",
+          "video_id": "KGf8PumPyEs",
+          "views": 2445,
+          "upload_date": "2026-05-11",
+          "url": "https://www.youtube.com/watch?v=KGf8PumPyEs",
+          "subtitle_summary": "1. 전라북도 장관이 되었던 친일파 이두황은 동학 농민군을 학살하고 명성왕우에게도 가담한 친일파로 유명합니다. 그의 무덤과 39,000제M 토지는 여전히 후손들이 소유하고 있습니다.\n2. 최근 친일 재산을 추적할 수 있는 길이 열렸습니다. 친일 반민족 행위자 재산의 국가 귀속 등에 관한 특별법이 국회를 통과했으므로 이도왕의 토지도 환수 대상이 될 수 있습니다.\n3. 과거에는 확인하기 어려운 토지 취득 시점, 자금 출처, 상속 과정 등을 조사할 수 있는 통로가 열렸습니다. 이를 바탕으로 친일 행적에 대한 재산까지 제대로 추적하고 국가의 품으로 돌려놓는 것은 지금도 필요합니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "철강 산업 생존 전략",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "달러 패권 설계도",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "주식 개인투자자 수익",
+      "is_fixed": false,
+      "views": [
+        82791
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "[이런뉴스] “26억 달성” “22억 풀매수” 주식 인증 글 넘쳐나는데 평균 수익 보니? / KBS 2026.05.11.",
+          "video_id": "B8AQ2_dRmoE",
+          "views": 82791,
+          "upload_date": "2026-05-11",
+          "url": "https://www.youtube.com/watch?v=B8AQ2_dRmoE",
+          "subtitle_summary": "1. 두 개인들이 온라인 커뮤니티에서 자신의 주식 투자 성과를 공개했습니다. 여성은 6년 동안 5억원을 투자해 26억원대 자산을 만들었고, 남자는 1억원으로 시작하여 11개월 동안 삼성전자와 SK 하이닉스를 매매하며 9억원을 벌었습니다.\n2. 신한 투자 증권은 지난 1분기 국내 주식을 매도한 개인 투자자의 수익과 손실을 분석했는데, 80%가 수익을 실현하였습니다. 수익액의 평균은 848만 원이었으나 손실액의 평균은 496만 원입니다.\n3. 가장 많은 투자자들이 수익과 손실을 내게 한 종목은 모두 삼성전자였습니다. 삼성전자를 매도한 고객 중 수익을 낸 고객의 평균 수익액은 714만 원이었으나 손실을 본 고객의 평균 손실액은 173만 원입니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "반도체 강국 투자 전략",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "재건축 통합 첫발",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "공천 후폭풍 지사 선거",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "미국 EU 규제 대응",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "AI 사용자 지배자 교육",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    }
+  ]
+}

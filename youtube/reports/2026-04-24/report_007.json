@@ -1,0 +1,403 @@
+{
+  "timestamp": "2026-04-24T03:06:30.003685",
+  "model": "news-singleline:latest",
+  "keyword_count": 3,
+  "analyze_subtitles": true,
+  "analysis_source": "youtube",
+  "keywords": [
+    {
+      "keyword": "오늘의 주요 뉴스",
+      "is_fixed": true,
+      "views": [
+        551,
+        621
+      ],
+      "video_count": 2,
+      "videos": [
+        {
+          "title": "[12 News] Today's Top News / SBS",
+          "video_id": "KjbdzuNIqpo",
+          "views": 551,
+          "upload_date": "2026-04-23",
+          "url": "https://www.youtube.com/watch?v=KjbdzuNIqpo",
+          "subtitle_summary": "[코스피가 사상 최고치를 기록하며 6500선을 돌파했고, SK하이닉스의 영업이익이 크게 증가했습니다. 트럼프 대통령은 이란과의 협상 가능성을 언급했지만, 해상 봉쇄는 계속되고 있으며, 미국 하원 의원들이 쿠팡을 비판하는 서한을 보냈습니다. 이재명 대통령은 베트남 방문 중 레밍 홍 총리와 베트남 국회의장과 회동하고, 기업인들과의 미팅도 예정되어 있습니다.]",
+          "db_saved": true
+        },
+        {
+          "title": "[News Briefing] Today's Top News / SBS",
+          "video_id": "F_3SaX3OzHg",
+          "views": 621,
+          "upload_date": "2026-04-23",
+          "url": "https://www.youtube.com/watch?v=F_3SaX3OzHg",
+          "subtitle_summary": "[한국 경제가 중동 전쟁 악재 속에서도 반도체 수출 호조로 올해 1분기에 큰 폭으로 성장했으며, 실질 국내 총 생산은 1.7% 증가하여 전망치를 두 배 이상 달성했습니다.]",
+          "db_saved": true
+        }
+      ],
+      "max": 4.8772,
+      "min": 0.0,
+      "nb_score": 48771.9807,
+      "avg_views": 586.0,
+      "total_views": 1172
+    },
+    {
+      "keyword": "공화당 쿠팡 차별 서한",
+      "is_fixed": false,
+      "views": [
+        274,
+        2330,
+        80,
+        2165,
+        1864
+      ],
+      "video_count": 5,
+      "videos": [
+        {
+          "title": "美공화 54명 \"쿠팡 공격말라\" 서한에 외교부 \"차별 없다\"…더 꼬이는 한미 관계 [뉴스9]",
+          "video_id": "4pMPGkmi3h0",
+          "views": 274,
+          "upload_date": "2026-04-23",
+          "url": "https://www.youtube.com/watch?v=4pMPGkmi3h0",
+          "subtitle_summary": "[미국 공화당 의원들이 쿠팡 사태 관련 강경화 대사에 항의 서한을 보냈고, 한국 정부의 대응에 대한 비판이 담겨 한미 관계가 더욱 복잡해지고 있다. 외교부는 쿠팡에 대한 조치가 적법 절차에 따른 것이며 차별은 없다고 반박했지만, 미국 측은 쿠팡 문제를 안보 협의에 연계하려는 움직임을 보이고 있다.]",
+          "db_saved": true
+        },
+        {
+          "title": "美공화, 한국 정부 압박…'쿠팡 탄압 중단' 서한에 외교부 반박 [이슈영상]",
+          "video_id": "ITd9_Gi1P-g",
+          "views": 2330,
+          "upload_date": "2026-04-23",
+          "url": "https://www.youtube.com/watch?v=ITd9_Gi1P-g",
+          "subtitle_summary": "[한국 정부는 미국 공화당 의원들의 쿠팡 압박에 대해 한미 합의를 준수하며, 쿠팡에 대한 조사 및 조치가 국내법과 적절한 절차에 따라 비차별적으로 진행될 것이라고 강력히 반박했습니다.]",
+          "db_saved": true
+        },
+        {
+          "title": "외교부, 美 의원 '쿠팡 서한'에 \"차별 없어\" / 연합뉴스TV (YonhapnewsTV)",
+          "video_id": "_XDHRxV9Qvk",
+          "views": 80,
+          "upload_date": "2026-04-23",
+          "url": "https://www.youtube.com/watch?v=_XDHRxV9Qvk",
+          "subtitle_summary": "외교부는 미국 하원의 쿠팡 서한 요구에 대해 차별이 없으며, 한미 정상 합의에 따른 약속을 충실히 이행하고 있다고 밝혔습니다. 쿠팡 조사 및 조치는 국내 법과 절차에 따라 국적과 무관하게 비차별적으로 진행되고 있습니다. 이는 미국 디지털 기업에 대한 차별적 조치 중단을 약속한 것입니다.",
+          "db_saved": true
+        },
+        {
+          "title": "U.S. Republican Lawmakers: \"End Discrimination Against Coupang\"… Ministry of Foreign Affairs Refu...",
+          "video_id": "DxHFjJoRpz0",
+          "views": 2165,
+          "upload_date": "2026-04-23",
+          "url": "https://www.youtube.com/watch?v=DxHFjJoRpz0",
+          "subtitle_summary": "미국 하원 공화당 의원들이 쿠팡 차별 규제 중단을 요구한 서한을 전달했으나, 외교부는 국내법 및 적법 절차에 따른 조사로 차별은 없다고 일축하며 비차별적 진행 중임을 밝혔다. 쿠팡에 대한 조사는 국적과 무관하게 진행되고 있으며, 외교부는 관련 서한에 대한 검토를 통해 적절한 대응을 할 계획이다.",
+          "db_saved": true
+        },
+        {
+          "title": "[핫라인] 美 의원들 \"쿠팡 공격말라\" 서한에···외교부 \"美 기업 차별 없다\"",
+          "video_id": "HuWprf0yMBU",
+          "views": 1864,
+          "upload_date": "2026-04-23",
+          "url": "https://www.youtube.com/watch?v=HuWprf0yMBU",
+          "subtitle_summary": "미국 의원들이 쿠팡에 대한 공격을 자제할 것을 촉구하는 서한을 발송한 가운데, 외교부는 미국 기업에 대한 차별은 없다고 반박하며 쿠팡의 입장을 옹호하고 있습니다. 이번 사태는 미국 내 쿠팡에 대한 부정적인 인식과 경쟁 심화가 복합적으로 작용한 결과로 분석됩니다. 외교부는 관련 문제 해결을 위해 미국 측과 지속적으로 소통할 계획입니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 2.1329,
+      "min": 1.8445,
+      "nb_score": 1.1564,
+      "avg_views": 1342.6,
+      "total_views": 6713
+    },
+    {
+      "keyword": "에어건 사건 구속영장",
+      "is_fixed": false,
+      "views": [
+        971,
+        944,
+        763,
+        322,
+        2235,
+        779,
+        845,
+        562,
+        33
+      ],
+      "video_count": 9,
+      "videos": [
+        {
+          "title": "'헤드락'에 손찌검까지..'에어건 사건' 대표 구속영장 / SBS 8뉴스",
+          "video_id": "sUBPG07aTPY",
+          "views": 971,
+          "upload_date": "2026-04-23",
+          "url": "https://www.youtube.com/watch?v=sUBPG07aTPY",
+          "subtitle_summary": "에어건 사건의 공장 대표 B 씨가 산업용 에어건으로 외국인 노동자에게 상해를 입힌 혐의로 구속영장에 붙잡혔으며, 공장 내 다른 직원들에 대한 폭행 혐의도 추가로 조사 중이다. 경찰은 의학적, 법적 증거를 토대로 B 씨의 행위가 장기 손상에 직접적인 영향을 미쳤다고 판단했으며, 유사 사례 분석 결과 고압 공기 분사가 피해에 결정적인 역할을 했다고 보고 있다. 현재 공장 내 다른 폭행이나 괴롭힘 여부도 조사하고 있는 상황이다.",
+          "db_saved": true
+        },
+        {
+          "title": "앞에선 '미안' 알고보니 '헤드락'까지? '에어건 분사' 결국 구속영장 신청 / SBS / 모아보는 뉴스",
+          "video_id": "gTPXzG14L0U",
+          "views": 944,
+          "upload_date": "2026-04-23",
+          "url": "https://www.youtube.com/watch?v=gTPXzG14L0U",
+          "subtitle_summary": "경찰이 금속 세척업체 대표 AC를 특수 업무상횡포, 상해 혐의로 사전 구속영장을 신청했으며, 산업용 에어건으로 외국인 노동자에게 에어건을 분사한 혐의를 추가 적용했다. 국과수 감정 결과 에어건의 압력으로 인한 장기 파열 등 피해 노동자의 상해에 대한 AC의 책임이 인정되었으며, 허위 진술 등으로 수사를 방해한 혐의도 적시되었다. 경찰은 피해자 보호를 위한 지원책을 마련하고 있으며, AC의 법률 위반 여부와 근로 조건 개선을 검토하고 있다.",
+          "db_saved": true
+        },
+        {
+          "title": "경찰, '에어건 분사' 사업주 구속영장 신청 / YTN",
+          "video_id": "k9_27LFe9So",
+          "views": 763,
+          "upload_date": "2026-04-23",
+          "url": "https://www.youtube.com/watch?v=k9_27LFe9So",
+          "subtitle_summary": "[경찰이 외국인 노동자에게 에어건을 분사한 혐의로 금속업체 대표를 구속영장 신청했으며, 정확한 사건 경위를 파악하고 특수 상해 혐의로 추가 수사 중이다.]",
+          "db_saved": true
+        },
+        {
+          "title": "[Case Tracking] \"Headlock Assault\" in addition to \"Air Gun Injury\"... Pre-arrest Warrant Issued f...",
+          "video_id": "czTb9ZFJZYE",
+          "views": 322,
+          "upload_date": "2026-04-23",
+          "url": "https://www.youtube.com/watch?v=czTb9ZFJZYE",
+          "subtitle_summary": "에어건 사업주가 노동자에게 에어건을 사정하여 장기 파열 사고를 낸 사건으로, 경찰은 신병 확보를 위해 사전 구속 영장을 신청했으며 피해자가 반복적인 폭행 피해를 주장함. 사업주는 실수였다고 주장하지만, 다른 노동자들의 폭행 혐의와 허위 진술 등으로 인해 구속 영장이 발부될 가능성이 높다. 또한, 탈출한 사슴 다섯 마리가 농장 근처 야산을 돌아다니며 소방 당국은 드론과 열화상 카메라를 활용한 유인 작전을 펼치고 있다.",
+          "db_saved": true
+        },
+        {
+          "title": "Business owner accused of 'air gun spraying' finally faces pre-arrest warrant... \"Used headlock, ...",
+          "video_id": "jJMMw63G64g",
+          "views": 2235,
+          "upload_date": "2026-04-23",
+          "url": "https://www.youtube.com/watch?v=jJMMw63G64g",
+          "subtitle_summary": "[경찰이 외국인 노동자에게 에어건을 쏜 사업주에 대한 신병 확보에 나섰으며, 에어건으로 인해 부상을 입은 노동자에 대한 폭행 혐의도 추가 적용됨]",
+          "db_saved": true
+        },
+        {
+          "title": "경찰, '에어건 분사' 업체 대표 구속영장 신청...폭행 혐의 추가 / YTN",
+          "video_id": "ej6eqY12ngE",
+          "views": 779,
+          "upload_date": "2026-04-23",
+          "url": "https://www.youtube.com/watch?v=ej6eqY12ngE",
+          "subtitle_summary": "경찰이 에어건 분사 혐의 금속업체 대표를 구속영장 신청했으며, 외국인 노동자의 신체 부위에 에어건으로 장기를 손상시킨 혐의를 조사 중이다. 피의자는 실수였다는 입장을 고수하고 있지만, 경찰은 유사례 논문 검토와 함께 폭행 혐의까지 추가하며 수사를 확대하고 있다. 정확한 사건 경위를 규명하기 위한 수사가 계속될 예정이다.",
+          "db_saved": true
+        },
+        {
+          "title": "'항문에 에어건 분사' 사업주 구속영장 신청…폭행 혐의 추가｜진술 오락가락…불신 자초 [뉴스쏙] / 연합뉴스TV(YonhapnewsTV)",
+          "video_id": "EJ6IaZH_iXI",
+          "views": 845,
+          "upload_date": "2026-04-23",
+          "url": "https://www.youtube.com/watch?v=EJ6IaZH_iXI",
+          "subtitle_summary": "산업용 에어건을 외국인 노동자에게 분사한 혐의로 경찰 조사를 받고 있는 사업주가 수차례 해명하며 미안함을 표했지만, 폭행 혐의는 부인하고 있어 진술이 오락가락하는 모습이 드러났습니다. 경찰은 사업주를 피의자 신분으로 계속 조사 중이며, 특수상의 혐의로 변경 수사를 진행하고 있습니다. 외국인 노동자에 대한 인권 유린 사건이 반복되면서 관련 대책 마련의 필요성이 더욱 커지고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "경찰, 외국인 노동자에 '에어건 분사' 사업주 영장 신청 / YTN",
+          "video_id": "rQAVfYJUvi8",
+          "views": 562,
+          "upload_date": "2026-04-23",
+          "url": "https://www.youtube.com/watch?v=rQAVfYJUvi8",
+          "subtitle_summary": "경찰이 외국인 노동자에게 에어건을 분사한 혐의를 받는 금속업체 대표에 대한 구속영장을 신청했으며, 진술 엇갈림으로 신병 확보가 필요한 상황이다. 경찰은 국과수 감정 및 관련자 조사, 사업장 압수 수색 등을 통해 수사를 진행 중이며, 폭행 혐의도 추가하여 조사하고 있다. 피의자는 조사에서 실수로 쐴었다는 입장을 고수하고 있지만 피해자는 고의성을 주장하며 갈등이 지속되고 있다.",
+          "db_saved": true
+        },
+        {
+          "title": "'에어건 고압 분사' 가해 사업주 영장... 외국인 노동자 '특수 상해' 혐의",
+          "video_id": "iqpMposzav0",
+          "views": 33,
+          "upload_date": "2026-04-23",
+          "url": "https://www.youtube.com/watch?v=iqpMposzav0",
+          "subtitle_summary": "[금속 세척업체 대표 60대에 대해 '특수 상해' 혐의로 사전 구속 영장이 발부되어 체포될 위기에 놓였으며, 외국인 노동자에게 산업용 에어건 고압 분사 혐의가 적용되었다.]",
+          "db_saved": true
+        }
+      ],
+      "max": 0.813,
+      "min": 1.485,
+      "nb_score": 0.5475,
+      "avg_views": 828.22,
+      "total_views": 7454
+    },
+    {
+      "keyword": "청남대 공화당",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "윤하정 공화당",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "더보이즈 컴백",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "노민우 포르쉐",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "서비스나우 IPO",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "김민지 아이브",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "IEEE 반도체 혁신상",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "의전원법 국회 통과",
+      "is_fixed": false,
+      "views": [
+        3
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "국회 본회의 법안 115건 줄통과, 핵심 4가지 총정리 | 전세사기·의전원·국민성장펀드",
+          "video_id": "beJJsDplQe4",
+          "views": 3,
+          "upload_date": "2026-04-23",
+          "url": "https://www.youtube.com/watch?v=beJJsDplQe4",
+          "subtitle_summary": "[전세사기 피해 최소 보장제, 의료 분쟁 조정법 개정, 국립 의학 전문 대학원 설립 등 핵심 법안 4가지가 국회에서 줄기통과되었으며, 특히 전세사기 피해자의 보증금 회수 부족분 지원과 의료 사고 책임 강화, 공공 의료 인력 양성 등이 주요 내용이다.]",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "ICC 두테르테 재판",
+      "is_fixed": false,
+      "views": [
+        4396
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "ICC, 두테르테 재판에 회부",
+          "video_id": "2bn5t3ZxZQ0",
+          "views": 4396,
+          "upload_date": "2026-04-23",
+          "url": "https://www.youtube.com/watch?v=2bn5t3ZxZQ0",
+          "subtitle_summary": "[국제형사재판소(ICC)는 두테르테 전 필리핀 대통령에 대한 살인 및 시도 살인 혐의를 확인하고 재판에 회부하기로 결정했다. 재판소는 두테르테 전 대통령이 2011년부터 2019년까지 마약과의전쟁 과정에서 민간인에 대한 반인도 범죄를 저질렀다고 판단했다. 이후 사건은 3명의 재판관으로 구성된 재판심판부로 이관되어 본격적인 재판 절차가 진행될 예정이다.]",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "AI 인프라 투자 전환",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "박제방 신상 유포",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "재정 인플레 우려",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "주식 시장 사이드카",
+      "is_fixed": false,
+      "views": [
+        22
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "사이드카·서킷브레이커…주식 시장이 멈춘다? [청경체] / EBS뉴스 2026. 04. 23",
+          "video_id": "qdqvVFOUG3k",
+          "views": 22,
+          "upload_date": "2026-04-23",
+          "url": "https://www.youtube.com/watch?v=qdqvVFOUG3k",
+          "subtitle_summary": "[전 세계 금융 시장의 변동성이 커지면서, 주식 시장을 보호하기 위한 사이드카와 서킷 브레이커가 잇따라 작동하며 투자자들의 불안감을 증폭시키고 있다. 사이드카는 5분간 자동 거래를 중단하는 제도이고, 서킷 브레이커는 20분간 시장 전체를 셧다운하는 강력한 조치이며, 이러한 방지턱 작동은 경제 상황의 심각성을 시사한다.]",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    }
+  ]
+}

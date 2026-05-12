@@ -1,0 +1,411 @@
+{
+  "timestamp": "2026-04-26T16:59:42.199580",
+  "model": "news-singleline:latest",
+  "keyword_count": 3,
+  "analyze_subtitles": true,
+  "analysis_source": "youtube",
+  "keywords": [
+    {
+      "keyword": "오늘의 주요 뉴스",
+      "is_fixed": true,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "대구시장",
+      "is_fixed": false,
+      "views": [
+        2953,
+        3785,
+        19124,
+        18787,
+        2149,
+        1231,
+        1517
+      ],
+      "video_count": 7,
+      "videos": [
+        {
+          "title": "[Replay] [Breaking] People Power Party's Daegu Mayoral Candidate Choo Kyung-ho Finally Confirmed ...",
+          "video_id": "1JGz6c4_rv0",
+          "views": 2953,
+          "upload_date": "2026-04-26",
+          "url": "https://www.youtube.com/watch?v=1JGz6c4_rv0",
+          "subtitle_summary": "국민의힘 대구시장 후보로 추경호 후보가 최종 확정되었으며, 선거인단 투표와 여론 조사 비율을 반영한 가감산점 평가 결과가 결정되었다. 또한, 경기 평택시 보궐선거에 유의동 후보가 단일 후보로 추천되었고, 인천 개양을 선거구 추가 공무 실시를 통해 후보를 선정할 예정이다.",
+          "db_saved": true
+        },
+        {
+          "title": "Choo Kyung-ho, People Power Party Candidate for Daegu Mayor... Head-to-Head Against Kim Boo-kyum ...",
+          "video_id": "8JsyOYEdsPs",
+          "views": 3785,
+          "upload_date": "2026-04-26",
+          "url": "https://www.youtube.com/watch?v=8JsyOYEdsPs",
+          "subtitle_summary": "추경호 의원을 대구시장 국민의힘 후보로 확정하고, 김부겸 더불어민주당 후보와 격돌하며 대구시장 선거가 본격화될 전망이다. 주호영, 이진숙 등 컷오프 반발 세력이 불출마를 결정하며 대진표가 확정되었으며, 민주당은 김부겸 후보 선거 사무실 개소식에 지지 야군을 동원했다.",
+          "db_saved": true
+        },
+        {
+          "title": "국힘, 내일 대구시장 최종 후보 발표…전망은? [뉴스현장]",
+          "video_id": "Y5I8OnTfaDU",
+          "views": 19124,
+          "upload_date": "2026-04-25",
+          "url": "https://www.youtube.com/watch?v=Y5I8OnTfaDU",
+          "subtitle_summary": "이진숙 전 방통위원장이 대구시장 선거 예비 후보 사퇴 결정을 내리면서 국민의힘 내부 경쟁이 추경호 유영하 후보 간 양자 대결로 좁혀졌으며, 김부겸 후보에 대한 효과적인 대응 전략이 핵심 쟁점이 될 전망이다.",
+          "db_saved": true
+        },
+        {
+          "title": "[속보] 이진숙 \"대구시장 예비시장 후보 자리 내려놔\" / 연합뉴스TV (YonhapnewsTV)",
+          "video_id": "RZE4tbP_a_I",
+          "views": 18787,
+          "upload_date": "2026-04-25",
+          "url": "https://www.youtube.com/watch?v=RZE4tbP_a_I",
+          "subtitle_summary": "[이진숙 전 방송통신 위원장이 대구시장 예비시장 후보 자리를 내려놓겠다고 밝히며 불출마를 결정, 조용 의원과 함께 대구 국민의힘 경선 경쟁 구도를 더욱 복잡하게 만들었습니다. 현재 국민의힘은 내일 최종 후보를 확정짓기 위한 경선을 진행 중이며, 이진숙 전 위원장의 불출마는 후보 선출에 영향을 미칠 수 있습니다.]",
+          "db_saved": true
+        },
+        {
+          "title": "[속보] 국민의힘 대구시장 후보 추경호 확정 [현장영상] / 채널A",
+          "video_id": "k9MYR6dTL-w",
+          "views": 2149,
+          "upload_date": "2026-04-26",
+          "url": "https://www.youtube.com/watch?v=k9MYR6dTL-w",
+          "subtitle_summary": "국민의힘 대구시장 후보로 추경호 후보가 확정되었으며, 선거인단 투표와 여론 조사 비율을 반영한 가감산점 평가 결과가 최종 결정되었다. 또한, 경기 평택시 보궐선거에 유의동 후보가 단일 후보로 추천되었고, 인천 개양을 선거구에서는 추가 공무를 실시할 예정이다.",
+          "db_saved": true
+        },
+        {
+          "title": "국민의힘, 대구시장 후보 결정…오늘(26일) 결과 발표 / KBS  2026.04.26.",
+          "video_id": "Pp2i7a8ErKM",
+          "views": 1231,
+          "upload_date": "2026-04-25",
+          "url": "https://www.youtube.com/watch?v=Pp2i7a8ErKM",
+          "subtitle_summary": "국민의힘이 오늘 대구시장 후보 경선 결과를 발표하며 추경호, 유영화 후보 간의 2파전을 마무리하고 최종 후보를 결정한다. 당원 투표와 여론 조사 결과 50%씩 반영하여 선출된 후보는 김부겸 더불어민주 후보와 경쟁하게 된다. 이번 경선 결과는 63지방선거의 중요한 변수로 작용할 전망이다.",
+          "db_saved": true
+        },
+        {
+          "title": "대구시장 후보 김부겸이 간다ㅣ☀️아침 달성시장에 왔심더 ㅣ김부겸이 제일 믿음직하지~!",
+          "video_id": "NlwED-rQYPQ",
+          "views": 1517,
+          "upload_date": "2026-04-26",
+          "url": "https://www.youtube.com/watch?v=NlwED-rQYPQ",
+          "subtitle_summary": "김부겸 대구시장 후보는 달성시장을 방문하여 지역 주민들과 소통하며, 젊은 세대의 일자리 문제 해결과 대구 경제 활성화에 대한 기대를 표명하고 지지자들에게 힘을 실어주었다. 특히, 김부겸 후보를 ‘믿음직하다’고 칭하며 대구 선거에서의 승리를 염원하는 목소리가 쏟아졌다. 대구 지역 유권자들의 향후 선택에 대한 기대감이 높게 나타났다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0.7222,
+      "min": 1.6595,
+      "nb_score": 0.4352,
+      "avg_views": 7078.0,
+      "total_views": 49546
+    },
+    {
+      "keyword": "삼성전자 주가 전망",
+      "is_fixed": false,
+      "views": [
+        607,
+        5118,
+        335,
+        2907,
+        28122,
+        7940,
+        6707,
+        3015,
+        3099,
+        3952
+      ],
+      "video_count": 10,
+      "videos": [
+        {
+          "title": "[삼성전자 주가전망] 주말 긴급소식 나왔습니다! 미국과 이란 2차 협상취소!!월요일장 중요합니다! 주주분 이라면 필수시청!! #강반장",
+          "video_id": "7gYfhui5cyE",
+          "views": 607,
+          "upload_date": "2026-04-26",
+          "url": "https://www.youtube.com/watch?v=7gYfhui5cyE",
+          "subtitle_summary": "미국과 이란의 2차 협상 취소 소식과 미국 주식 시장의 강세에 힘입어 삼성전자 주가가 신고가를 돌파할 가능성이 높으며, 반도체 메모리 섹터의 상승세가 지속될 것으로 전망했습니다. 특히 AI 섹터의 수급이 몰리면서 엔비디아와 인텔 등 글로벌 빅테크 주가도 급등하며 월요일 장에 대한 기대감을 높였습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[삼성전자 주가전망]💥실시간일요일 긴급속보!! 이란 2차협상불발?! 노걱정! 엔비디아발 미친세력정보 떳습니다!! 곧 큰거뜹니다!💥무조건 이렇게대응하세요!!💥#완벽대응전략 #주식대장",
+          "video_id": "eNA5q7IOHRg",
+          "views": 5118,
+          "upload_date": "2026-04-26",
+          "url": "https://www.youtube.com/watch?v=eNA5q7IOHRg",
+          "subtitle_summary": "[이란 외무 장관의 파키스탄 회담 불발 속보로 인해 삼성전자 주가 급락 가능성이 제기되었으나, 투자자들은 당황하지 않고 시장 상황을 주시하며 코인 시장에 집중해야 한다고 분석했습니다.]",
+          "db_saved": true
+        },
+        {
+          "title": "삼성전자 주가전망, 내일부터 불기둥 시작됩니다 무조건 \"이렇게\" 대응하세요",
+          "video_id": "z09650tXdX8",
+          "views": 335,
+          "upload_date": "2026-04-26",
+          "url": "https://www.youtube.com/watch?v=z09650tXdX8",
+          "subtitle_summary": "삼성전자 1분기 실적이 전년 동기 대비 영업이익이 8배 가까이 폭발적으로 증가하며 어닝 서프라이즈를 기록, 글로벌 주요 기업들을 압도하는 성과를 보였으며, AI 산업 성장과 함께 디램 가격 급등으로 인해 2분기 및 이후 실적 전망도 긍정적으로 작용할 것으로 예상된다.",
+          "db_saved": true
+        },
+        {
+          "title": "[삼성전자 주가전망] 4월 26일 일요일 긴급발표 떴다! 예상주가 대박입니다! 삼성전자 주가 어디까지 상승 할까요? 필수시청 #삼성전자 #삼성전자주가 #삼성전자주가전망",
+          "video_id": "0YzAQ-CKypA",
+          "views": 2907,
+          "upload_date": "2026-04-26",
+          "url": "https://www.youtube.com/watch?v=0YzAQ-CKypA",
+          "subtitle_summary": "[삼성전자 주가는 반도체 업황 회복과 AMD의 신고가, 특히 견조한 실적을 바탕으로 상승할 가능성이 높으며, 외인 매수세 증가와 함께 시장 상황을 고려한 현명한 투자 시기가 왔다고 분석했습니다.]",
+          "db_saved": true
+        },
+        {
+          "title": "반도체 정말 무섭게 오를 겁니다, SK하이닉스 아닌 '이 주식' 사세요 (박진희 부장)",
+          "video_id": "B7ZiSF6t6hg",
+          "views": 28122,
+          "upload_date": "2026-04-25",
+          "url": "https://www.youtube.com/watch?v=B7ZiSF6t6hg",
+          "subtitle_summary": "[반도체 레버리지 투자에 대한 경계심을 강조하며, 삼성전자와 SK하이닉스 주식의 변동성이 커질 것으로 예상하고 있으며, 해외 투자 유출을 막기 위해 레버리지 상품 투자보다는 신중한 접근을 권고한다.]",
+          "db_saved": true
+        },
+        {
+          "title": "[삼성전자 주가전망] 📌단독📌긴급🔥37만원 직행할 미친 소식 떴습니다🔥정말 뜻밖의 호재가 터졌네요🔥노조파업? 모두가 속았다🔥\"다음주 역대급 불기둥 옵니다🔥주주님들 필히시청 하세요🔥",
+          "video_id": "up3ReAsjyTk",
+          "views": 7940,
+          "upload_date": "2026-04-25",
+          "url": "https://www.youtube.com/watch?v=up3ReAsjyTk",
+          "subtitle_summary": "삼성전자 주가가 25만원을 돌파하며 상승했다가 일시적으로 하락했지만, 미국 반도체 지수의 급등과 엔비디아, 마이크론 등 대장주들의 폭등에 힘입어 다음 날 갭상승할 것으로 예상되어, 투자자들은 쫄보 개미 심리를 자극하는 얄팍한 눌림목을 짓밟고 적극적으로 매수해야 할 기회라고 분석했다.",
+          "db_saved": true
+        },
+        {
+          "title": "[삼성전자 주가전망] 일촉즉발 상황, 결국 터질 게 터졌습니다. 지금 난리가 났다고 하네요. #삼성전자목표가 #삼성전자대응",
+          "video_id": "N8_iTMZyBm8",
+          "views": 6707,
+          "upload_date": "2026-04-25",
+          "url": "https://www.youtube.com/watch?v=N8_iTMZyBm8",
+          "subtitle_summary": "글로벌 반도체 시장의 대세 상승과 AI 인프라 관련 빅테크의 폭발적인 성장이 필라델피아 반도체 지수와 삼성전자 주가를 동반하며 4.32%라는 역사적인 폭등세를 기록, 1만 포인트를 돌파했습니다. 특히 엔비디아와 인텔의 실적 호재와 함께 마이크로소프트, 아마존 등 글로벌 빅테크 기업들의 AI 주도권 경쟁 심화로 인해 반도체 수요가 급증하며 공급 부족 사태가 심화되고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[삼성전자 주가전망][긴급] 일요일 긴급 소식! 美-이란 협상 또 무산 월요일 장초반 무조건 이렇게 하세요 중요한건 따로있다",
+          "video_id": "CpClpnWlIeA",
+          "views": 3015,
+          "upload_date": "2026-04-25",
+          "url": "https://www.youtube.com/watch?v=CpClpnWlIeA",
+          "subtitle_summary": "미국과 이란 간의 협상 무산으로 전쟁 불확실성이 커지면서 주식 시장의 변동성이 확대될 수 있다는 우려가 제기되었으나, 과거 유사 사례를 통해 시장은 개별 이슈에 따라 빠르게 움직이는 경향이 있다는 분석이 제시되었다. 따라서 시장 상황을 주의 깊게 살펴보고, 기회를 포착하여 매수 전략을 수립하는 것이 중요하며, 단기적인 변동성에 일희일비하지 않고 장기적인 관점에서 투자해야 한다.",
+          "db_saved": true
+        },
+        {
+          "title": "[삼성전자 주가전망] 주말 미 반도체지수 급등!  인버스 상품은 외면중 의미가 큽니다.",
+          "video_id": "xykwyH0U9f4",
+          "views": 3099,
+          "upload_date": "2026-04-25",
+          "url": "https://www.youtube.com/watch?v=xykwyH0U9f4",
+          "subtitle_summary": "삼성전자 주가 하락에도 불구하고, 외국인 투자자들이 반도체 지수 급등과 인버스 상품의 제로 반응을 보며 삼성전자 파업에 대한 우려를 덜어내고 장기적인 추세는 긍정적일 수 있다는 분석이 나왔다.",
+          "db_saved": true
+        },
+        {
+          "title": "[삼성전자 주가 전망]필라델피아지수!17일연속상승,미국반도체주,난리났다!미선물지수도급등!월요일갭상승! #삼성전자 #삼성전자주가 #삼성전자분석",
+          "video_id": "Dhw3xht4yRo",
+          "views": 3952,
+          "upload_date": "2026-04-25",
+          "url": "https://www.youtube.com/watch?v=Dhw3xht4yRo",
+          "subtitle_summary": "미국 필라델피아 반도체 지수가 4% 급등하며 미국 반도체 주 전반에 상승세를 보인 가운데, 삼성전자 주가도 갭상승 마감하며 긍정적인 흐름을 보이고 있다. 전쟁 리스크 감소와 반도체 실적 호조, AI 슈퍼사이클에 따른 데이터 센터 투자 확대가 주 요인으로 분석되며, 나스닥 지수와 나스닥 100 지수 또한 동반 상승했다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0.2777,
+      "min": 1.068,
+      "nb_score": 0.2601,
+      "avg_views": 6180.2,
+      "total_views": 61802
+    },
+    {
+      "keyword": "금융위기 원화 가치 하락",
+      "is_fixed": false,
+      "views": [
+        4889
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "“모르면 더 가난해진다” 원화 가치 하락이 보내는 무서운 경고",
+          "video_id": "zdq04mTSfCg",
+          "views": 4889,
+          "upload_date": "2026-04-25",
+          "url": "https://www.youtube.com/watch?v=zdq04mTSfCg",
+          "subtitle_summary": "원화 가치 하락으로 인해 자산 가치가 급격히 감소하면서, 과거의 저축 믿음이 더 이상 부를 보장하지 못하는 시대가 도래하고 있습니다. 6년 동안 환율이 크게 상승하고 금값 또한 폭등하면서, 같은 금액으로 살 수 있는 물건의 양이 줄어들고 실질적인 구매력이 쪼그라드는 현상이 나타나고 있습니다. 이러한 상황은 일본의 엔화 약세 사례와 유사하며, 국민들의 자산 가치 하락을 간과하게 만들고 있습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "삼성전자 파업 노조 갈등",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "트럼프 암살 기도 사건",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "양자 컴퓨터 기술 발전",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "수도권 광역급행철도 B노선",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "주유소 고유가 지원금",
+      "is_fixed": false,
+      "views": [
+        2675
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "받아도 못 쓰는 ‘고유가 지원금’…시골 주유소 어쩌나 / KBS  2026.04.24.",
+          "video_id": "qLYI1h08XVw",
+          "views": 2675,
+          "upload_date": "2026-04-25",
+          "url": "https://www.youtube.com/watch?v=qLYI1h08XVw",
+          "subtitle_summary": "[중동 사태로 인한 고유가 피해지원금은 소득 하위 70%에게 지급되지만, 연매출 30억 원 이하 소상공인 매장으로 제한되어 상당수 주유소에서 활용이 어려울 것으로 예상되며, 특히 농어촌 지역의 불편이 가중될 전망이다.]",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "K-숙취해소제 트렌드",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "플라스틱 음식 푸드코트",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "이란 핵무기 트럼프 발언",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "장특공제 부동산 정책",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "AI 공공기관 도입 가점",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "삼성전자 역대급 실적",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "코스피 8000 전망",
+      "is_fixed": false,
+      "views": [
+        1678
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "Retail investors are reportedly trembling at the forecast of the KOSPI hitting 8,000 points, and ...",
+          "video_id": "pwrwyp-Cfn8",
+          "views": 1678,
+          "upload_date": "2026-04-25",
+          "url": "https://www.youtube.com/watch?v=pwrwyp-Cfn8",
+          "subtitle_summary": "[외국 증권사 리포트에서 코스피 8,500 예상에 투자자들이 불안감을 느끼는 가운데, 과거 골드마사스, 반도체 슈퍼 사이클 등 주가 하락 사례를 참고하여 신중한 투자 전략을 제시한다. 모건 스탠리의 과거 예측 실패와 미국 반도체 산업의 잠재적 위험성을 경고하며, 높은 목표가 제시될 경우 주의를 당부한다.]",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    }
+  ]
+}

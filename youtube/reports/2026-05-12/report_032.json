@@ -1,0 +1,311 @@
+{
+  "timestamp": "2026-05-12T08:32:29.949918",
+  "model": "mistral:latest",
+  "keyword_count": 3,
+  "analyze_subtitles": true,
+  "analysis_source": "youtube",
+  "keywords": [
+    {
+      "keyword": "오늘의 주요 뉴스",
+      "is_fixed": true,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "삼성전자 노사 협상 결렬",
+      "is_fixed": false,
+      "views": [
+        1744,
+        5701
+      ],
+      "video_count": 2,
+      "videos": [
+        {
+          "title": "[삼성전자·우 주가전망][긴급] 실시간 야간 선물 상승! 노사 협상 결렬 위기? 내일장 반드시 '이렇게' 하세요!!",
+          "video_id": "u8Tc3N4VMLg",
+          "views": 1744,
+          "upload_date": "2026-05-11",
+          "url": "https://www.youtube.com/watch?v=u8Tc3N4VMLg",
+          "subtitle_summary": "1. Samsung Electronics' closing price was 285,500 won today with a bullish candle, and the overnight futures are also showing a significant increase of over 1%. However, due to large sell-offs by foreign investors and program trading, the current market situation cannot be considered stable.\n2. The reason for the large sell-offs is the ongoing negotiation between Samsung Electronics and its labor union regarding wages and bonuses, which has been going on for 10 hours today but has not reached a consensus yet. If no agreement is reached tomorrow, there may be a strike starting from the 21st.\n3. JP Morgan has warned of potential losses of up to 43 trillion won due to this situation, and it is speculated that they are selling shares because of the prolonged negotiation over Samsung Electronics' labor issues. The chart also shows a significant gap between the current price and the 5-day moving average, which indicates that the stock may soon reverse direction due to its heavy weight in the market.",
+          "db_saved": true
+        },
+        {
+          "title": "삼성전자 노사, 막판 협상 줄다리기...'성과급 제도화' 관건 / YTN",
+          "video_id": "LMTLJP6mvMQ",
+          "views": 5701,
+          "upload_date": "2026-05-11",
+          "url": "https://www.youtube.com/watch?v=LMTLJP6mvMQ",
+          "subtitle_summary": "1. 삼성전자 노사와 사회계약의 막판 협상이 진행중입니다. 두 측은 성과급 산정 방식에 대한 차이가 있으며, 성과급을 제도화할지 여부를 논의하고 있습니다.\n2. 노조 내부에서는 반도체와 비반도체 부문 노조원의 갈등이 발생하고 있으며, 완제품 부분 노조원들은 전사 공통재원을 확보해 성과급을 배분할 것을 요구하고 있습니다.\n3. 초기업 노조는 내년 안건으로 논의를 제안했지만, 완제품 부문 노조는 이를 협상력을 약화시키는 일이라고 보고 있습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 3.022,
+      "min": 0.7236,
+      "nb_score": 4.1762,
+      "avg_views": 3722.5,
+      "total_views": 7445
+    },
+    {
+      "keyword": "AI 관련주 증시 랠리",
+      "is_fixed": false,
+      "views": [
+        5924,
+        1270,
+        3792
+      ],
+      "video_count": 3,
+      "videos": [
+        {
+          "title": "Morning Briefing. Positive and negative factors that shook the U.S. market during trading hours. ...",
+          "video_id": "uxZ4abRfraE",
+          "views": 5924,
+          "upload_date": "2026-05-11",
+          "url": "https://www.youtube.com/watch?v=uxZ4abRfraE",
+          "subtitle_summary": "1. 미국과 이ран의 협상 결과로 유가와 금리가 상승하여 전체적으로 지수가 둔해졌다. 반도체 업종 지수는 2.6% 상승, 시총 4로 지수를 끌어올리고 있다.\n2. 외국인 매도가 계속되고 있으며, 코스닥과 같은 경우는 1200포인트 박스권에 갇혀 있다.\n3. 전쟁 재계가 아닌 것 같지만, 미국 대통령이 생명 유지 장치에 의존하고 있으며, 대책 회의를 열었다고 보도되어 있다. 또한 이ран 쪽에서는 비합리적인 요구를 미국에 계속해서 비판하고 있다.",
+          "db_saved": true
+        },
+        {
+          "title": "[Samsung Electronics] 🚨Breaking Evening News! Lee Jae-yong's \"Tearful Announcement\" on Complete C...",
+          "video_id": "bIrEzlJyMho",
+          "views": 1270,
+          "upload_date": "2026-05-11",
+          "url": "https://www.youtube.com/watch?v=bIrEzlJyMho",
+          "subtitle_summary": "Samsung Electronics Chairman Lee Jae-yong held an emergency meeting with SK Hynix Chairman Cho Min-ji due to a direct request from Cho. The reason for the meeting is that AMD has excluded SK Hynics from its HBM supply for 2020, which Samsung supports. This move by AMD could lead to Samsung becoming an alternative, as AMD and SK Hynix have a history of not favoring Samsung due to past disputes.",
+          "db_saved": true
+        },
+        {
+          "title": "[Daehan Gwangtongsin] Breaking News 5 Minutes Ago!! \"Samsung M&A Announcement\" Even the Stock Spl...",
+          "video_id": "Wv1bTSdHfYI",
+          "views": 3792,
+          "upload_date": "2026-05-11",
+          "url": "https://www.youtube.com/watch?v=Wv1bTSdHfYI",
+          "subtitle_summary": "1. 대한강톤신의 공매도 과열로 인해 지금 청산 위기에 몰렸습니다. 이는 공매도 세력들이 완전히 벼랑 끝에 몰렸고, 쇼커버링(다시 주식을 구매하는 상황)이 발생할 것으로 예상됩니다.\n2. 이 경우 주가는 강제로 끌어올려질 수 있습니다. 지금 시장에서는 다음 주에 급등 가능성이 증권과 세력에서 동시에 나오고 있습니다.\n3. 이 전반적인 상황은 대한강톤신 주주분들에게 꼭 자 끝까지 시청해야 할 엄청난 급등 소식입니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 2.0513,
+      "min": 3.0826,
+      "nb_score": 0.6654,
+      "avg_views": 3662.0,
+      "total_views": 10986
+    },
+    {
+      "keyword": "쿠팡 동일인 지정 취소 소송",
+      "is_fixed": false,
+      "views": [
+        151,
+        14,
+        125880
+      ],
+      "video_count": 3,
+      "videos": [
+        {
+          "title": "쿠팡, ‘김범석 동일인 지정 취소’ 소송 / KBS  2026.05.11.",
+          "video_id": "KwSi3IeCV4Q",
+          "views": 151,
+          "upload_date": "2026-05-11",
+          "url": "https://www.youtube.com/watch?v=KwSi3IeCV4Q",
+          "subtitle_summary": "1. 쿠팡은 공정거래위원회가 김범석을 쿠팡 Inc. 이사회 의장으로서 쿠팡의 동일인으로 지정한 결정을 취소하라는 소송을 제기했습니다.\n2. 쿠팡은 동일인 변경 지정 취소 소송과 집행 정지 신청을 서울고등법원에 제기했습니다.\n3. 공정거래위원회는 김범석의 동생인 김유석, 쿠팡 Inc 부사장의 경영 참여로 지난달 말 쿠팡의 실질적 지배자 격인 동일인을 쿠팡 법인에서 김범석 의장으로 변경했습니다. 이는 기업 집단이 처음 소송을 제기한 사건입니다.",
+          "db_saved": true
+        },
+        {
+          "title": "쿠팡 '김범석 동일인 지정' 취소 소송! 달라진 기업 현실에 책임은 따로? [칼럼버스]",
+          "video_id": "UJm8BgOaXJE",
+          "views": 14,
+          "upload_date": "2026-05-11",
+          "url": "https://www.youtube.com/watch?v=UJm8BgOaXJE",
+          "subtitle_summary": "1. 일부 학자들은 대기업을 사람이 아닌 법인으로 동일인으로 지정하는 것을 제안하고 있습니다. 이는 재벌들이 회사를 물려주거나 사업을 확장하기 위해 만들어진 1980년대 동일인 지정 제도의 목적과 달라서 시대에 안 맞다고 주장합니다.\n2. 현재는 전문 갱영인 체제이며 지배 구조가 투명해졌습니다. 하지만 동일인을 법인으로 바꾸면 사람을 추적하는 구조를 무력화시킵니다.\n3. 대표적인 예로 쿠팡의 경우, 최근 김범서장이 동일인으로 지정되었을 때 동생이 경영에 직접 참여하고 100억 원 넘는 보수를 받았는데 이게 드러나지 않았습니다. 만약 초기의 김무장이 명확하게 동일인으로 지정되었다면, 이 부분을 훨씬 빨리 들여다볼 수 있을 가능성이 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[Replay] Newsroom | Government \"Strongly Condemns Attack on Namuho\" / [Exclusive] 'The Full Story...",
+          "video_id": "jIzIoIaOzCI",
+          "views": 125880,
+          "upload_date": "2026-05-11",
+          "url": "https://www.youtube.com/watch?v=jIzIoIaOzCI",
+          "subtitle_summary": "1. 청와대는 외부 공격으로 인해 나무호(HMM)이 폭발하고 화재했다는 사실을 확인하였습니다. 민간 선박에 대한 공격은 정당화되거나 용납할 수 없다고 규탄했습니다.\n2. 비행체 타격이 원인으로 보이며, 해상 미사일 흔적을 발견하였습니다. 전문가들은 자폭 미사일 또는 드론 공격 가능성을 언급했습니다.\n3. 최근 중동 전쟁에서 자주 구사한 시스키밍 공격과 유사하다고 보였으며, 배를 쉽게 침몰시키기 위해 해수면에서 1m 위 아랫부분을 타격한 것으로 보입니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0.9179,
+      "min": 1.8541,
+      "nb_score": 0.495,
+      "avg_views": 42015.0,
+      "total_views": 126045
+    },
+    {
+      "keyword": "한미 국방 수장 행동하는 동맹",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "LVMH K-명품시장",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "국민연금 운용 내역 논란",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "코스피 추가 상승 전망",
+      "is_fixed": false,
+      "views": [
+        28747
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "코스피 사상 첫 7,800선 돌파...매수 사이드카 발동 / YTN",
+          "video_id": "2Ntgz6u7w6o",
+          "views": 28747,
+          "upload_date": "2026-05-11",
+          "url": "https://www.youtube.com/watch?v=2Ntgz6u7w6o",
+          "subtitle_summary": "1. 코스피가 7,800 넘어서 사상 최고치를 달성하며, 매수 사이드카가 발동했습니다. 이는 지난주에 미국 증시에서 디램 ETF의 강세로 인한 반도체 분석 결과와 관련되어 있습니다.\n2. 코스피 대장주인 삼성전자와 SK 하이닉스는 각각 5%와 9%를 넘은 폭등세를 보였습니다. 개인 매수로 인해 코스피가 상승했지만, 외국인과 기관은 순매도하고 있습니다.\n3. 원달러 환율은 1460원대 중후반에서 거래되고 있으며, 도널드 트럼프의 이란 휴전 제한 거부와 인도분 유가 상승 등으로 인해 환율은 낙폭을 확대할 것으로 예상됩니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "이란 호르무즈 해상 피격",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "지방선거 부동산 공약",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "다주택자 양도세 중과 재개",
+      "is_fixed": false,
+      "views": [
+        37416
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "“10억 버나 했더니 세금이 7억?”…양도세 중과 재개, 시장 반응은? [잇슈 머니] / KBS  2026.05.11.",
+          "video_id": "KSWK-TWheLE",
+          "views": 37416,
+          "upload_date": "2026-05-11",
+          "url": "https://www.youtube.com/watch?v=KSWK-TWheLE",
+          "subtitle_summary": "1. 양도세 중과 유예 조치가 5월 9일부터 완전히 종료되면서, 서울 및 경기 지역의 2주택자와 3주택 이상 소유자는 추가 세금이 82.5%까지 늘어날 수 있습니다.\n2. 이로 인해, 매물 잠김과 거래 절벽이 나타나고 있으며, 시장에서는 팔 수 있는 급매물이 다 팔렸고, 실제 계약이 거의 이루어지지 않고 있습니다.\n3. 공급이 감소하여, 전세와 월세 시장도 흔들리고 있으며, 2026년 수도권 신축 입주 물량은 11만 1,700호로 예년 평균의 절반 수준에 이르게 될 것으로 예상됩니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "F-15EX F-35A 추가 구매",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "실손의료비 보험 병원 연계",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "부정청약 전수조사 실거주 검증",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "빚투 열풍 마통 잔액 증가",
+      "is_fixed": false,
+      "views": [
+        55885
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "\"Living even if I have to borrow\": Debt-fueled investment craze sweeps across ages 20s to 60s... ...",
+          "video_id": "9Nhomo6zGDc",
+          "views": 55885,
+          "upload_date": "2026-05-11",
+          "url": "https://www.youtube.com/watch?v=9Nhomo6zGDc",
+          "subtitle_summary": "1. 빚을 대출하여 투자하는 사람들이 증가하고 있으며, B2(비투) 수준까지 급증하고 있습니다. 특히 30대 남성 AC와 50대 이상의 세대들이 많이 참여하고 있습니다.\n2. 코스피디엔에서 빚을 빌려 투자하는 B2 현상이 최근 급증하고 있으며, 주요 시중은행의 마이너스 통장 잔액이 최대치를 경신했습니다.\n3. 금융감독원은 포모(투자 망상) 현상이 심해지고 있으며, 주가 하락에 따른 반대매매로 인한 투자 손실이 크게 확대될 수 있다는 점을 유의하고 있습니다. 전문가들은 손실을 감내할 수 있는 범위 내에서 투자해야 한다고 조언합니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    }
+  ]
+}

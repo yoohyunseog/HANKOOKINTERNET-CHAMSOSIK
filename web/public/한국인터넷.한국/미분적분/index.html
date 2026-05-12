@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미분적분</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: "Noto Sans KR", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        color: #172033;
+        background: #f6f8fb;
+      }
+
+      main {
+        width: min(980px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 56px 0;
+      }
+
+      h1 {
+        margin: 0 0 12px;
+        font-size: clamp(2rem, 5vw, 4rem);
+        line-height: 1.05;
+        letter-spacing: 0;
+      }
+
+      .lead {
+        max-width: 680px;
+        margin: 0 0 28px;
+        color: #4b5870;
+        line-height: 1.7;
+        font-size: 1.05rem;
+      }
+
+      .lesson-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+      }
+
+      .lesson-card {
+        display: block;
+        min-height: 180px;
+        padding: 24px;
+        border: 1px solid #d7dfec;
+        border-radius: 8px;
+        color: inherit;
+        text-decoration: none;
+        background: #ffffff;
+        box-shadow: 0 12px 30px rgba(23, 32, 51, 0.08);
+      }
+
+      .lesson-card:hover,
+      .lesson-card:focus-visible {
+        border-color: #2563eb;
+        outline: none;
+        transform: translateY(-2px);
+      }
+
+      .lesson-card small {
+        display: block;
+        margin-bottom: 12px;
+        color: #2563eb;
+        font-weight: 800;
+      }
+
+      .lesson-card strong {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 1.4rem;
+      }
+
+      .lesson-card span {
+        color: #5b667a;
+        line-height: 1.6;
+      }
+
+      .back-link {
+        display: inline-block;
+        margin-top: 30px;
+        color: #2563eb;
+        font-weight: 800;
+        text-decoration: none;
+      }
+
+      @media (max-width: 720px) {
+        main {
+          width: min(100% - 24px, 560px);
+          padding: 36px 0;
+        }
+
+        .lesson-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>미분적분</h1>
+      <p class="lead">
+        미분과 적분을 그래프, 넓이, 접선의 움직임으로 따라가며 이해하는 인터랙티브 수업입니다.
+      </p>
+
+      <div class="lesson-grid">
+        <a class="lesson-card" href="./pen-export-yyajdpv/dist/">
+          <small>Lesson 1</small>
+          <strong>미분과 적분 애니메이션 수업</strong>
+          <span>기울기, 접선, 도함수, 부정적분, 정적분을 한 화면에서 조작하며 확인합니다.</span>
+        </a>
+        <a class="lesson-card" href="./pen-export-yyaENZV/dist/">
+          <small>Lesson 2</small>
+          <strong>적분 시작</strong>
+          <span>미분에서 적분으로 넘어가는 흐름과 넓이의 감각을 단계별 장면으로 살펴봅니다.</span>
+        </a>
+      </div>
+
+      <a class="back-link" href="../참소식.com/">참소식.com으로 돌아가기</a>
+    </main>
+  </body>
+</html>

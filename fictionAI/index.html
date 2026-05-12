@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FictionAI Scene Loop Demo</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero">
+      <div class="eyebrow">FictionAI Stateful Loop</div>
+      <h1>과거, 현재, 미래, -0-를 잇는 장면 데이터베이스</h1>
+      <p class="lead">
+        장면 생성부터 이벤트, 규칙 평가, 상태 전이, 메모리 커밋, 미래 초안, 검증까지 한 사이클을
+        연속적으로 돌려보는 예제입니다. 파일 기반 장면 데이터베이스를 상정해
+        <code>prev</code>, <code>current</code>, <code>next</code> 흐름을 시각화합니다.
+      </p>
+      <div class="controls">
+        <button class="primary" id="runCycleBtn">한 사이클 실행</button>
+        <button class="secondary" id="advanceStepBtn">한 단계씩 진행</button>
+        <button class="ghost" id="resetBtn">세계 초기화</button>
+      </div>
+    </section>
+
+    <section class="layout">
+      <div class="panel">
+        <h2>Process Loop</h2>
+        <div class="flow" id="flow"></div>
+      </div>
+
+      <div class="cards">
+        <div class="panel">
+          <h2>World Bible</h2>
+          <div class="world-intro" id="worldIntro"></div>
+        </div>
+
+        <div class="panel">
+          <h2>World Monitor Event</h2>
+          <div class="monitor-card" id="monitorCard"></div>
+        </div>
+
+        <div class="panel">
+          <h2>Current Scene</h2>
+          <div class="mini-grid">
+            <div class="stat">
+              <span class="label">Cycle</span>
+              <div class="value" id="cycleValue">0</div>
+            </div>
+            <div class="stat">
+              <span class="label">Scene ID</span>
+              <div class="value" id="sceneValue">-0-</div>
+            </div>
+            <div class="stat">
+              <span class="label">Actor</span>
+              <div class="value" id="actorValue">Observer</div>
+            </div>
+            <div class="stat">
+              <span class="label">Intent Score</span>
+              <div class="value" id="scoreValue">0.00</div>
+            </div>
+          </div>
+          <div class="stat" style="margin-top:12px;">
+            <span class="label">Summary</span>
+            <div id="summaryValue">세계가 아직 생성되지 않았습니다.</div>
+          </div>
+          <div class="previous-scene" id="previousSceneCard"></div>
+        </div>
+
+        <div class="panel">
+          <h3>Rules Evaluation</h3>
+          <ul class="rules-list" id="rulesList"></ul>
+        </div>
+
+        <div class="panel">
+          <h3>Cast In Scene</h3>
+          <div class="character-list" id="characterList"></div>
+        </div>
+
+        <div class="panel">
+          <h3>Validation Log</h3>
+          <div class="log" id="log"></div>
+        </div>
+
+        <div class="panel">
+          <h3>Ollama Scene AI</h3>
+          <div class="ai-controls">
+            <button class="secondary" id="generateAiBtn">AI 장면 해석 생성</button>
+          </div>
+          <div class="ai-card" id="aiCard"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel" style="margin-top:20px;">
+      <h2>Temporal Database</h2>
+      <div class="worldline">
+        <article class="time-card zero">
+          <strong>-0- Seed</strong>
+          <div id="zeroCard">초기 조건, 세계 규칙, 기준 장면.</div>
+        </article>
+        <article class="time-card past">
+          <strong>Past</strong>
+          <div id="pastCard">아직 저장된 과거 장면이 없습니다.</div>
+        </article>
+        <article class="time-card present">
+          <strong>Present</strong>
+          <div id="presentCard">현재 장면이 생성되면 여기 표시됩니다.</div>
+        </article>
+        <article class="time-card future">
+          <strong>Future Draft</strong>
+          <ul class="future-list" id="futureList"></ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="layout" style="margin-top:20px;">
+      <div class="panel">
+        <h2>Memory Commit Queue</h2>
+        <ul class="memory-list" id="memoryList"></ul>
+      </div>
+      <div class="panel">
+        <h2>Data Shape</h2>
+        <div class="log-entry">
+          각 장면은 <code>scene_id</code>, <code>prev_id</code>, <code>next_candidates</code>,
+          <code>state</code>, <code>score</code>, <code>validation</code>을 가진다고 가정합니다.
+        </div>
+        <div class="log-entry">
+          첫 화면은 세계관 소개를 보여주고, 두 번째 장면부터는 직전 장면이 현재 장면 내부에
+          회상 블록으로 포함됩니다.
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,683 @@
+{
+  "timestamp": "2026-05-04T07:01:58.695193",
+  "model": "news-singleline:latest",
+  "keyword_count": 3,
+  "analyze_subtitles": true,
+  "analysis_source": "youtube",
+  "keywords": [
+    {
+      "keyword": "오늘의 주요 뉴스",
+      "is_fixed": true,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "삼성전자 노노 갈등",
+      "is_fixed": false,
+      "views": [
+        7347,
+        1773,
+        8234,
+        5137,
+        6161
+      ],
+      "video_count": 5,
+      "videos": [
+        {
+          "title": "\"I will withdraw from union that only cares about semiconductors\": Samsung Electronics, labor-man...",
+          "video_id": "oJKi8xwLCdM",
+          "views": 7347,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=oJKi8xwLCdM",
+          "subtitle_summary": "삼성전자 초기업 노조의 성과급 요구안과 사업 부문별 불균형에 대한 조합원들의 탈퇴가 급증하면서 내부 갈등이 심화되고 있으며, DS 부문 중심의 노조 구성에 대한 비판이 제기되고 있습니다. 특히, 완제품 사업 부문 소속 조합원들의 불만이 고조되면서 노조 탈퇴 신청이 폭주하고, 향후 노조의 행보에 대한 우려가 커지고 있습니다. 파업 기관 스태프에 대한 활동비 지급 결정 또한 갈등을 더욱 복잡하게 만들고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "\"반도체만 챙기나\" 노조 탈퇴 러시…삼성전자 '노노 갈등' 격화 [MBN 뉴스센터]",
+          "video_id": "3Xes0_CGMqw",
+          "views": 1773,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=3Xes0_CGMqw",
+          "subtitle_summary": "삼성전자 노조에서 반도체 사업부에 대한 불만이 커지며 하루 1,000명 이상 조합원 탈퇴가 이어지고, 전체 조합원의 80%를 차지하는 반도체 부문만을 챙긴다는 비판에 노조의 대표성과 파업 명분이 약화될 수 있다는 우려가 제기되고 있다. 노조는 영업이익의 15% 성가급을 요구하며 총파업을 예고했으나, 다른 사업부들의 어려움을 외면하며 갈등이 격화되고 있다. 노조는 오는 21일 총파업 강행 의지를 굽히지 않고 있다.",
+          "db_saved": true
+        },
+        {
+          "title": "삼성전자 노조 '노노 갈등' 표출...하루 1천 명 탈퇴 러시 / YTN",
+          "video_id": "qPmFgTawpbU",
+          "views": 8234,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=qPmFgTawpbU",
+          "subtitle_summary": "삼성전자 노조가 총파업을 예고하며 하루 1천 명 이상의 탈퇴 러시가 이어지고, 사업부별 차별 논란으로 내부 갈등이 심화되고 있습니다. 노조는 영업이익의 15%를 활용한 성과급 지급을 주장하지만, 가전·모바일 사업 부문과의 불균형 문제로 탈퇴가 늘고 있습니다. 파업 기간 노조 활동비 논란도 겹쳐 삼성전자 노조 내부의 파열음이 계속되고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "삼성전자 노조 '노노 갈등'...조합원 탈퇴 러시 / YTN",
+          "video_id": "HrN_HrLkSnY",
+          "views": 5137,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=HrN_HrLkSnY",
+          "subtitle_summary": "삼성전자노조의 대규모 파업 예고로 인해 가전·모바일 사업부 조합원들의 탈퇴가 급증하면서 노조 내부 갈등이 심화되고 있으며, 삼성바이오로직스 노조도 파업을 이어가고 있습니다. 노조는 메모리 사업부 직원에게 높은 성과급을 요구하는 반면, 다른 사업부에는 낮은 수준의 성과급을 제시하여 불만이 커지고 있습니다. 회사 측은 파업으로 인한 막대한 손실을 우려하며 노조의 요구를 받아들이지 않고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "삼성전자 노조 '노노 갈등' 표출...하루 1천 명 탈퇴 러시 / YTN",
+          "video_id": "AmojzKdUUfw",
+          "views": 6161,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=AmojzKdUUfw",
+          "subtitle_summary": "삼성전자 노조가 하루 1천 명 이상의 탈퇴를 감당하며 내부 갈등이 심화되고 있으며, 사업 부문별 차별 논란과 성과급 제도 개편 주장이 쟁점인 가운데 총파업이 임박함에 따라 노조 내부의 파열이 지속되고 있다.",
+          "db_saved": true
+        }
+      ],
+      "max": 2.2851,
+      "min": 2.5186,
+      "nb_score": 0.9073,
+      "avg_views": 5730.4,
+      "total_views": 28652
+    },
+    {
+      "keyword": "감축 관세",
+      "is_fixed": false,
+      "views": [
+        284,
+        1480,
+        17961,
+        3144
+      ],
+      "video_count": 4,
+      "videos": [
+        {
+          "title": "독일, ‘미군 감축·관세인상’ 후폭풍에 “최우선 동맹” / KBS  2026.05.04.",
+          "video_id": "p9AvVkDqEMI",
+          "views": 284,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=p9AvVkDqEMI",
+          "subtitle_summary": "[트럼프 대통령의 미군 감축 및 관세 인상 카드에 대응, 독일 총리가 미국을 ‘최우선 동맹’으로 평가하며 갈등 해결에 나섰고, 이란 핵 문제에 대한 공통 목표를 강조하며 대서양 동맹 유지에 힘쓰고 있다.]",
+          "db_saved": true
+        },
+        {
+          "title": "\"유럽 관세 인상에 독일 미군 감축\" 트럼프의 뒤끝 [티조Clip]",
+          "video_id": "lqF73aQknVk",
+          "views": 1480,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=lqF73aQknVk",
+          "subtitle_summary": "[트럼프 행정부가 유럽산 자동차에 대한 관세를 25%로 인상하면서 독일이 미군 철수를 결정하고, 나토 회원국들의 호르무즈 해협 봉쇄 동참 거부와 맞물려 미국 군사적 압박 수위를 높이고 있다.]",
+          "db_saved": true
+        },
+        {
+          "title": "[에디터픽] 통보 없는 전쟁 후 '뒤끝'…트럼프, \"미군 철수\" 이어 관세 보복, 동맹국 '날벼락' / YTN",
+          "video_id": "BN9dXQwKZwM",
+          "views": 17961,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=BN9dXQwKZwM",
+          "subtitle_summary": "트럼프 전 대통령이 이란 전쟁에 대한 비판적인 견해를 바탕으로 독일 총리에게 이란 핵 위협 제거에 간섭하지 말라고 경고하며, 독일을 포함한 나토 회원국에 대한 미군 철수 압박과 관세 보복을 감행하여 동맹국에 ‘날벼락’을 내린 상황이다. 미국 방부부는 주독 미군 5명 철수를 명령했으며, 주한미군에도 영향을 미칠지 주목되고 있다. 유럽 경제의 어려움과 미국 경제 압박 속에서 안보 협력 강화 방안을 모색하는 가운데, 트럼프 대통령은 지속적인 군사적 개입을 원하며 동맹국에 대한 경제적 압박을 강화하고 있다.",
+          "db_saved": true
+        },
+        {
+          "title": "[이슈] 트럼프 'EU 비협조' 보복 시작…관세 올리고 미군 철수 / “예상했던 일”…주독미군 5천 명 감축에 독일 국방장관 '덤덤' | MBN NEWS",
+          "video_id": "ACuPqFUwLck",
+          "views": 3144,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=ACuPqFUwLck",
+          "subtitle_summary": "트럼프 미국 대통령이 유럽산 자동차에 대한 관세를 25%로 인상하고, 주독 미군 5천 명 철수를 결정하며 유럽과의 갈등을 심화시켰다. 이는 약속된 투자 이행 지연 외에도 이란 전쟁에 대한 보복이라는 해석이 제기되고 있다. 이번 결정은 우리나라를 포함한 주변국에 대한 영향도 고려해야 할 중요한 사안이다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0.7003,
+      "min": 1.6457,
+      "nb_score": 0.4255,
+      "avg_views": 5717.25,
+      "total_views": 22869
+    },
+    {
+      "keyword": "미군 감축 관세",
+      "is_fixed": false,
+      "views": [
+        350,
+        17905,
+        1480,
+        3151
+      ],
+      "video_count": 4,
+      "videos": [
+        {
+          "title": "독일, ‘미군 감축·관세인상’ 후폭풍에 “최우선 동맹” / KBS  2026.05.04.",
+          "video_id": "p9AvVkDqEMI",
+          "views": 350,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=p9AvVkDqEMI",
+          "subtitle_summary": "[트럼프 대통령의 미군 감축 및 관세 인상 카드에 대응, 독일 총리가 미국을 ‘최우선 동맹’으로 평가하며 갈등 해결에 나섰고, 이란 핵 문제에 대한 공통 목표를 강조하며 대서양 동맹 유지에 힘쓰고 있다.]",
+          "db_saved": true
+        },
+        {
+          "title": "[에디터픽] 통보 없는 전쟁 후 '뒤끝'…트럼프, \"미군 철수\" 이어 관세 보복, 동맹국 '날벼락' / YTN",
+          "video_id": "BN9dXQwKZwM",
+          "views": 17905,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=BN9dXQwKZwM",
+          "subtitle_summary": "트럼프 전 대통령이 이란 전쟁에 대한 비판적인 견해를 바탕으로 독일 총리에게 이란 핵 위협 제거에 간섭하지 말라고 경고하며, 독일을 포함한 나토 회원국에 대한 미군 철수 압박과 관세 보복을 감행하여 동맹국에 ‘날벼락’을 내린 상황이다. 미국 방부부는 주독 미군 5명 철수를 명령했으며, 주한미군에도 영향을 미칠지 주목되고 있다. 유럽 경제의 어려움과 미국 경제 압박까지 더해져 유럽의 안보 협력 방안에 대한 논의가 필요해진 시점이다.",
+          "db_saved": true
+        },
+        {
+          "title": "\"유럽 관세 인상에 독일 미군 감축\" 트럼프의 뒤끝 [티조Clip]",
+          "video_id": "lqF73aQknVk",
+          "views": 1480,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=lqF73aQknVk",
+          "subtitle_summary": "[트럼프 행정부가 유럽산 자동차에 대한 관세를 25%로 인상하면서 독일이 미군 철수를 결정하고, 나토 회원국들의 호르무즈 해협 봉쇄 동참 거부와 맞물려 미국 군사적 압박 수위를 높이고 있다.]",
+          "db_saved": true
+        },
+        {
+          "title": "[이슈] 트럼프 'EU 비협조' 보복 시작…관세 올리고 미군 철수 / “예상했던 일”…주독미군 5천 명 감축에 독일 국방장관 '덤덤' | MBN NEWS",
+          "video_id": "ACuPqFUwLck",
+          "views": 3151,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=ACuPqFUwLck",
+          "subtitle_summary": "트럼프 미국 대통령이 유럽산 자동차에 대한 관세를 25%로 인상하고, 주독 미군 5천 명 철수를 결정하며 유럽과의 갈등을 심화시켰다. 이는 약속된 투자 이행 지연 외에도 이란 전쟁에 대한 보복이라는 해석이 제기되고 있다. 이번 결정은 우리나라를 포함한 주변국에 대한 영향도 고려해야 할 중요한 사안이다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0.7001,
+      "min": 1.655,
+      "nb_score": 0.423,
+      "avg_views": 5721.5,
+      "total_views": 22886
+    },
+    {
+      "keyword": "트럼프 이란",
+      "is_fixed": false,
+      "views": [
+        27608,
+        3382,
+        6584,
+        9274,
+        10763
+      ],
+      "video_count": 5,
+      "videos": [
+        {
+          "title": "[속보] 트럼프 “이란 공격 재개 할 수도…새 협상안 받아들이기 힘들어” [뉴스플레이리스트] / 채널A",
+          "video_id": "cdEW1bxiPrA",
+          "views": 27608,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=cdEW1bxiPrA",
+          "subtitle_summary": "트럼프 미국 대통령이 독일 주둔 미군 5,명 철수 및 유럽산 승용차 관세 25% 인상을 결정하며 유럽 안보 및 무역 현장에서 불만을 표출하고, 향후 유럽 안보 환경 변화에 대한 우려가 제기되고 있다. 이는 이란 전쟁에 대한 독일의 비협조적인 태도에 대한 보복 성격으로 해석될 수 있으며, 유럽 연합과의 무역 합의 불이행을 옹호하며 추가적인 관세 인상을 시도하고 있다. 이러한 결정은 독일 자동차 산업에 큰 타격을 줄 수 있으며, 주한 미군 배치에도 영향을 미칠 가능성이 있다.",
+          "db_saved": true
+        },
+        {
+          "title": "트럼프 \"이란 새 제안 수용 어려워\"...협상 출구는? / YTN",
+          "video_id": "O7WyCilaQdc",
+          "views": 3382,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=O7WyCilaQdc",
+          "subtitle_summary": "미국과 이란의 종전 협상이 난항을 겪으며 에너지 가격 상승 등 경제적 파장이 커지고 있으며, 트럼프 전 대통령은 이란의 새 제안을 검토하면서도 강경한 입장을 유지하고 있습니다. 이란은 휴전 협상과 함께 호르무제 해협 개방 및 협상 시점을 제시했지만, 트럼프 전 대통령은 전쟁 책임 등을 이유로 받아들이기 어렵다는 입장입니다. 복잡한 중동 상황 속에서 양국 간 협상이 지연되고 있으며, 향후 협상 일정에 대한 불확실성이 높은 상황입니다.",
+          "db_saved": true
+        },
+        {
+          "title": "논란 자초한 트럼프...이란 봉쇄 자랑하다 '구설수' [지금이뉴스]  / YTN",
+          "video_id": "rwCq7rK8WUs",
+          "views": 6584,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=rwCq7rK8WUs",
+          "subtitle_summary": "트럼프 대통령이 이란 항만 봉쇄 과정에서 해군이 선박을 납포한 것을 두고 ‘해적’이라고 비판하며 논란을 자초했고, 이는 국제법 위반 주장에 휩싸이는 상황을 초래했습니다. 미국 정부는 전쟁 자금 압박을 위한 항만 봉쇄를 지속하겠다는 입장을 밝혔으며, 이는 더욱 심각한 국제적 문제로 이어질 가능성을 내포하고 있습니다. 이러한 행위는 미국의 외교적 입지를 약화시키고, 국제 사회와의 갈등을 심화시킬 우려를 낳고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "Trump Rejects 'Iran Proposal'... Burdened with 'Cost and Oil Price Burden' in a Long-Term Battle ...",
+          "video_id": "1iicN8d3Obw",
+          "views": 9274,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=1iicN8d3Obw",
+          "subtitle_summary": "트럼프 대통령은 이란과의 협상안을 사실상 거부하며, 휴전 및 호르무즈 해협 정상화 합의 이후 핵협상 추진에 반대하는 입장을 밝혔습니다. 휘발유 가격 급등과 장기적인 비용 부담이 미국 국민에게 전가되는 상황이 지속되면서, 협상 교착 상태가 미국의 부담을 가중시키고 있습니다. 트럼프 대통령은 군사 압박 카드까지 활용하며, 호르무즈 봉쇄 해제 등 핵심 쟁점에 대한 합의를 이루지 못할 경우, 미국의 부담은 더욱 커질 것으로 전망했습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "\"세상에 이란 일이!\" 트럼프가 고함을 지르며 '공격 개시'를 외치는데… [뉴스와] / 연합뉴스TV(YonhapnewsTV)",
+          "video_id": "_2xNWvovolE",
+          "views": 10763,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=_2xNWvovolE",
+          "subtitle_summary": "트럼프 대통령이 이란의 새로운 제한안을 검토하겠다고 밝히면서, 미국의 레드라인을 어긴 핵문제 해결에 대한 회의적인 입장을 보이고 있습니다. 이란은 종전 합의 이후 호르무제 해양 봉쇄 해제와 핵협상을 제안했지만, 미국의 핵무장 금지 요구를 거부하며 강경한 입장을 유지하고 있습니다. 미국은 이란의 원자력 에너지 평화적 이용 권리를 인정해야 하는 상황임을 고려하여 유라늄 농축 자체를 인정하지 않는 강경한 태도를 유지하면서도, 현실적인 타협 가능성을 열어두고 있습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0.8401,
+      "min": 2.0406,
+      "nb_score": 0.4117,
+      "avg_views": 11522.2,
+      "total_views": 57611
+    },
+    {
+      "keyword": "추경호 개소식서",
+      "is_fixed": false,
+      "views": [
+        10376,
+        19652,
+        33022,
+        43650,
+        7512,
+        8086,
+        58857,
+        2576,
+        2973,
+        6096
+      ],
+      "video_count": 10,
+      "videos": [
+        {
+          "title": "추경호 대구시장 후보 선거사무소 개소식",
+          "video_id": "anXo50J6wwE",
+          "views": 10376,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=anXo50J6wwE",
+          "subtitle_summary": "추경호 대구시장 후보는 35년간의 정치 경험과 경제, 행정, 정치 역량을 바탕으로 대구 경제 살리기 및 현안 해결에 기여할 수 있다고 주장하며, 진보 정권의 추경 중독을 비판하고 민주당의 현혹에 넘어가지 않겠다는 대구 시민들의 의지를 강조했다.",
+          "db_saved": true
+        },
+        {
+          "title": "What Kim Moon-soo said while clenching his fist at Choo Kyung-ho's election office opening ceremo...",
+          "video_id": "O_TKvLRe3U8",
+          "views": 19652,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=O_TKvLRe3U8",
+          "subtitle_summary": "김문수 후보는 조경호 후보의 선거 유치를 칭찬하며 지지자들에게 박수를 요청했고, 이진수 후보를 폄하하며 조경호 후보를 대구 경제의 핵심으로 강조했다. 그는 박정희 대통령의 성공 사례를 들어 추경호 후보의 경제 정책에 대한 지지를 호소하며, 과거 반대했던 정책들을 성공적으로 추진한 것처럼 경제를 살릴 수 있다고 자신했다.",
+          "db_saved": true
+        },
+        {
+          "title": "Jang Dong-hyuk at Choo Kyung-ho's Election Office Opening Ceremony: \"Kim Boo-kyum in the Heart of...",
+          "video_id": "1HjiMXgKm2o",
+          "views": 33022,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=1HjiMXgKm2o",
+          "subtitle_summary": "장동혁 의장은 대구시민과 당원들에게 사과하며 공천 과정에서 생긴 상처를 언급하고, 조경어머님과 예진수 후보 등 경선 경쟁자들에게 감사를 표했다. 대구가 보수의 심장이며, 민노총 간첩단 사건 판결문에 담긴 북한 지령문 내용을 강조하며 검찰 개혁의 필요성을 주장했다. 오늘 대구가 하나되고 보수가 하나되고 대한민국이 하나되는 자리가 될 것이라고 강조했다.",
+          "db_saved": true
+        },
+        {
+          "title": "[LIVE] 추경호 대구시장 후보 선거사무소 개소식…장동혁·국힘의힘 지도부 총출동",
+          "video_id": "W70u42sT7Rs",
+          "views": 43650,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=W70u42sT7Rs",
+          "subtitle_summary": "추경호 대구시장 후보는 산업선과 국가 산업단지 유치 성과를 강조하며 35년 행정 경험을 내세워 지지층을 확보하고, 시민들의 어려움과 대구 경제의 침체에 대한 해결책으로 AI, 로봇 등 미래 성장 산업 육성을 약속하며 리더십을 어필했다. 박근혜 전 대통령의 지지 기반을 활용하고 경제부처 경험을 강조하며, 대구 시정의 부족한 부분을 채울 수 있는 유일한 인물임을 주장했다.",
+          "db_saved": true
+        },
+        {
+          "title": "[🔴라이브를 켜라] 추경호 국민의힘 대구시장 후보 선거사무소 개소식 / 채널A",
+          "video_id": "kv56ZNDqpz8",
+          "views": 7512,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=kv56ZNDqpz8",
+          "subtitle_summary": "추경호 대구시장 후보의 선거사무소 개소식이 진행 중이며, 많은 지지자들이 참석하여 뜨거운 열기를 보였다. 경북 도지사 후보의 지지 유도와 함께 보수 대통합의 메시지를 전달하고, 2026년 지방 선거 승리를 위한 캠프 개소를 알렸다. 좁은 공간에도 불구하고 많은 인파가 몰려 축제 분위기를 자아냈다.",
+          "db_saved": true
+        },
+        {
+          "title": "국민의힘 추경호 대구시장 후보 선거사무소 개소식 - [끝까지LIVE] MBC 중계방송 2026년 05월 03일",
+          "video_id": "xqiBBp_0iQ4",
+          "views": 8086,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=xqiBBp_0iQ4",
+          "subtitle_summary": "국민의힘 추경호 대구시장 후보의 선거사무소 개소식에서 후보와 예비 후보들은 대구 발전을 약속하며 지지자들의 단결을 강조하고, 성공적인 선거를 위한 최선을 다하겠다고 밝혔다. 개소식에는 지역구 국회의원들과 예비 후보들이 참석하여 추경호 후보를 격려하고 지지 의지를 표명했다. 장례 절차를 고려하여 행사장을 효율적으로 운영하고, 시민들의 협조를 구하는 모습이 나타났다.",
+          "db_saved": true
+        },
+        {
+          "title": "추경호 대구시장 후보 선거사무소 개소식 현장 생중계[장동혁 이철우 이진숙 등 총출동]",
+          "video_id": "QNggYc8QFv8",
+          "views": 58857,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=QNggYc8QFv8",
+          "subtitle_summary": "추경호 대구시장 후보 선거사무소 개소식에서 공간 부족으로 인해 일부 참석자들이 입장하지 못하는 상황이 발생했으며, 15시부터 본격적인 개소식이 진행될 예정이며, 참석자들의 협조를 구하고 있다.",
+          "db_saved": true
+        },
+        {
+          "title": "[LIVE] 추경호 국민의힘 대구시장 후보 선거사무소 개소식 /2026년 5월 3일(일)/KBS",
+          "video_id": "ptr2Qk08sD8",
+          "views": 2576,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=ptr2Qk08sD8",
+          "subtitle_summary": "추경호 대구시장 후보의 선거사무소 개소식이 열렸다.박성민 청년이 2018년 지방 선거에서 대구시 공동선대위원장을 맡아 승리의 기운을 이어가겠다고 하며, 보수 대통을 위한 길을 열어 시민들에게 승리의 메시지를 전달했다.국기에 대한 경례와 애국가 제창, 호국인 묵념 등으로 개소식에 경례를 마쳤다.",
+          "db_saved": true
+        },
+        {
+          "title": "선거 사무소 개소식 열고 선거 운동 본격 시작…격전지 대구 김부겸 추경호 후보 릴레이 인터뷰 [뉴스플레이리스트] / 채널A",
+          "video_id": "w1QRTR7wJzM",
+          "views": 2973,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=w1QRTR7wJzM",
+          "subtitle_summary": "추경호 대구시장 후보가 민주당 단일 후보로 사실상 확정되었으며, 최근 여론조사에서 42%에서 46%로 지지율이 상승하며 보수층 결집을 확인했다. 후보는 국회 의원직을 사퇴하고, 보수층의 지지를 얻기 위해 김문수 전 장관을 명예 선대위원장으로 위촉하며 본격적인 선거 운동에 돌입했다.",
+          "db_saved": true
+        },
+        {
+          "title": "[June 3 Local Elections] Jang Dong-hyuk heads to Daegu today after Busan… Rallying conservatives ...",
+          "video_id": "I_WRH4_UeIs",
+          "views": 6096,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=I_WRH4_UeIs",
+          "subtitle_summary": "[장동혁 국민의힘 대표가 부산에 이어 대구를 찾아 보수 텃밭 영남 지역 최대 격전지 확보에 총력을 기울이는 가운데, 공천 과정 갈등 봉합 시도와 김부겸 후보의 과거 이력 공격으로 보수층 심리 자극하고 있습니다.]",
+          "db_saved": true
+        }
+      ],
+      "max": 0.5657,
+      "min": 1.4401,
+      "nb_score": 0.3928,
+      "avg_views": 19280.0,
+      "total_views": 192800
+    },
+    {
+      "keyword": "트럼프 이란 제안",
+      "is_fixed": false,
+      "views": [
+        3956,
+        24693,
+        28212,
+        19628,
+        1728,
+        5636,
+        179778
+      ],
+      "video_count": 7,
+      "videos": [
+        {
+          "title": "트럼프 \"이란 새 제안 수용 어려워\"...협상 출구는? / YTN",
+          "video_id": "O7WyCilaQdc",
+          "views": 3956,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=O7WyCilaQdc",
+          "subtitle_summary": "미국과 이란의 종전 협상이 난항을 겪으며 에너지 가격 상승 등 경제적 파장이 커지고 있으며, 트럼프 전 대통령은 이란의 새 제안을 검토하면서도 강경한 입장을 유지하고 있습니다. 이란은 휴전 협상과 함께 호르무제 해협 개방 및 협상을 제안했지만, 트럼프 전 대통령은 전쟁 책임 등을 이유로 받아들이기 어렵다는 입장입니다. 복잡한 중동 상황 속에서 양국 협상 출구를 모색하는 데 어려움이 예상되며, 시간이 오래 걸릴 수 있다는 전망이 나오고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "이란 '새로운 제안' 제시...트럼프 \"곧 검토\" / YTN",
+          "video_id": "axOuhzBw3IU",
+          "views": 24693,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=axOuhzBw3IU",
+          "subtitle_summary": "이란이 새로운 제안을 하며 트럼프 대통령이 검토 의사를 밝히면서 미국과 이란 간의 종전 협상 교착 상태가 심화되고 있습니다. 미국 정부는 호르무주 해협 통과 해운사에 대한 제재 경고와 함께 이란의 적십자 기부금 등 수익 창출 경로를 차단하려는 움직임을 보이고 있습니다. 이러한 미국의 강경 대응에 중국이 반발하며, 미국 제재가 중국 기업들에게도 위협으로 다가오고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[속보] 트럼프 \"이란 새 제안에 불만족\"..\"이란에 호르무즈 통행료 내면 제재\" - [MBC뉴스속보] MBC뉴스 2026년 05월 03일",
+          "video_id": "QUocZPFF9zQ",
+          "views": 28212,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=QUocZPFF9zQ",
+          "subtitle_summary": "트럼프 미국 대통령이 이란의 새 협상안에 불만을 표명하며, 이란에 호르무즈 해협 통행료를 지불할 경우 제재 대상이 될 수 있음을 경고했습니다. 미 재무부의 해외자산 통제국은 해운사뿐 아니라 모든 개인 법인까지 제재 대상에 포함시켰으며, 우회적 방식의 자선 단체 기부도 금지했습니다. 호르무즈 해협 통과를 위한 협상이 교착 상태인 가운데, 트럼프 대통령은 장기전 가능성을 시사하며 협상에 신중한 입장을 보였습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[🔴속보] 트럼프, 이란 제안 듣자마자 대격노…에어포스원 탑승 전 \"공격 재개\" 언급 / 연합뉴스TV(YonhapnewsTV)",
+          "video_id": "VZeS7pLVmME",
+          "views": 19628,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=VZeS7pLVmME",
+          "subtitle_summary": "이란이 미국에 새 종전 협상안을 제시했지만, 트럼프 대통령은 여전히 이란의 요구에 만족하지 않으며 합의 가능성을 시사하지 않았습니다. 협상안에는 이란의 핵 관련 문제에 대한 논의 수용이 포함되었지만, 트럼프 대통령은 이란 지도부의 분열을 주장하며 난색을 표했습니다. 미국은 호르무즈 해협을 통한 이란 경제적 압박을 지속하며, 유럽 및 중국에 대한 제재를 강화하는 등 압박 수위를 높이고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "트럼프 \"이란 새 제안 수용 불가\"...이란 \"곧 이란 입장 발표\" / YTN",
+          "video_id": "bkttCYfdi50",
+          "views": 1728,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=bkttCYfdi50",
+          "subtitle_summary": "트럼프 대통령이 이란의 14개항 종전환안 수용 불가를 재확인했으며, 전쟁 피해 배상 및 해상제 폐해 완전한 종전을 요구하는 등 강경한 입장을 유지했습니다. 이에 이란은 미국의 종전안을 검토 중이며, 파키스탄을 통해 미국의 입장을 전달받아 대응할 계획입니다. 미국은 이란의 유정 폐쇄 가능성을 시사하며 경제적 압박을 강화하는 동시에 중국의 이란 원유 지원을 경계하고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "트럼프 \"이란 새 제안 검토\"...\"호르무즈 통제권 등 14개항\" / YTN",
+          "video_id": "hawa-kMEQIM",
+          "views": 5636,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=hawa-kMEQIM",
+          "subtitle_summary": "트럼프 미국 대통령이 이란의 새로운 제안을 검토하겠다고 발표하며, 이 제안에는 전쟁 배상금 지급, 호르무즈 해협 통제권 확보 등 14개항이 포함된 것으로 알려졌습니다. 미국과 이란 간의 종전 협상 교착 상태가 지속되는 가운데, 트럼프 대통령은 이 제안에 대해 회의적인 입장을 보였습니다. 미국은 호르무즈 해협 통과 선박에 대한 통행료 징수 요구와 함께, 이란 자금 지원 및 관련 회사에 대한 제재를 강화하며 압박 수위를 높이고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "트럼프 \"우리는 해적 같아..선박·석유 압수\"..\"이란 방금 보낸 제안 곧 검토\" - [MBC 뉴스속보] 2026년 05월 03일",
+          "video_id": "RnDA9e-kmMw",
+          "views": 179778,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=RnDA9e-kmMw",
+          "subtitle_summary": "미국이 호르무즈 해협 통과 해운사에 대한 제재 수위를 높이고, 이란의 종전 협상안을 거부하며 장기전 가능성을 시사했습니다. 미국은 선박 압수 및 석유 생산량 감산을 통해 이란을 압박하고, 핵협상 타결을 위한 조건을 제시했습니다. 호르무즈 해협의 긴장감이 지속되면서 국제 해상 운송에 차질이 예상됩니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0.2666,
+      "min": 1.0814,
+      "nb_score": 0.2466,
+      "avg_views": 37661.57,
+      "total_views": 263631
+    },
+    {
+      "keyword": "삼성전자 노노",
+      "is_fixed": false,
+      "views": [
+        7305,
+        8232,
+        6100,
+        1760,
+        5137,
+        47184,
+        1772
+      ],
+      "video_count": 7,
+      "videos": [
+        {
+          "title": "\"I will withdraw from union that only cares about semiconductors\": Samsung Electronics, labor-man...",
+          "video_id": "oJKi8xwLCdM",
+          "views": 7305,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=oJKi8xwLCdM",
+          "subtitle_summary": "삼성전자 초기업 노조의 성과급 요구안과 사업 부문별 불균형에 대한 조합원들의 탈퇴가 급증하면서 내부 갈등이 심화되고 있으며, DS 부문 중심의 노조 구성에 대한 비판이 제기되고 있습니다. 특히, 완제품 사업 부문 소속 조합원들의 불만이 고조되면서 노조 탈퇴 신청이 폭주하고, 향후 노조의 행보에 대한 우려가 커지고 있습니다. 파업 기관 스태프에 대한 활동비 지급 결정 또한 갈등을 더욱 복잡하게 만들고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "삼성전자 노조 '노노 갈등' 표출...하루 1천 명 탈퇴 러시 / YTN",
+          "video_id": "qPmFgTawpbU",
+          "views": 8232,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=qPmFgTawpbU",
+          "subtitle_summary": "삼성전자 노조가 총파업을 예고하며 하루 1천 명 이상의 탈퇴 러시가 이어지고, 사업부별 차별 논란으로 내부 갈등이 심화되고 있습니다. 노조는 영업 이익을 활용한 성과급 지급을 주장하지만, 가전 및 모바일 사업 부문 조합원들의 불만이 높아 탈퇴 신청이 잇따르고 있습니다. 파업 기간 노조 활동비 논란까지 겹쳐 삼성전자 노조 내부의 갈등이 더욱 격화될 전망입니다.",
+          "db_saved": true
+        },
+        {
+          "title": "삼성전자 노조 '노노 갈등' 표출...하루 1천 명 탈퇴 러시 / YTN",
+          "video_id": "AmojzKdUUfw",
+          "views": 6100,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=AmojzKdUUfw",
+          "subtitle_summary": "삼성전자 노조가 하루 1천 명 이상의 탈퇴를 감당하며 내부 갈등이 심화되고 있으며, 사업 부문별 차별 논란과 성과급 제도 개편 주장이 쟁점인 가운데 총파업이 임박함에 따라 노조 내부의 파열이 지속되고 있다.",
+          "db_saved": true
+        },
+        {
+          "title": "\"반도체만 챙기나\" 노조 탈퇴 러시…삼성전자 '노노 갈등' 격화 [MBN 뉴스센터]",
+          "video_id": "3Xes0_CGMqw",
+          "views": 1760,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=3Xes0_CGMqw",
+          "subtitle_summary": "삼성전자 노조에서 반도체 사업부에 대한 불만이 커지며 하루 1,000명 이상 조합원 탈퇴가 이어지고, 전체 조합원의 80%를 차지하는 반도체 부문만을 챙긴다는 비판에 노조의 대표성과 파업 명분이 약화될 수 있다는 우려가 제기되고 있다. 노조는 영업이익의 15% 성가급을 요구하며 총파업을 예고했으나, 다른 사업부들의 어려움을 외면하며 갈등이 격화되고 있다. 노조는 오는 21일 총파업 강행 의지를 굽히지 않고 있다.",
+          "db_saved": true
+        },
+        {
+          "title": "삼성전자 노조 '노노 갈등'...조합원 탈퇴 러시 / YTN",
+          "video_id": "HrN_HrLkSnY",
+          "views": 5137,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=HrN_HrLkSnY",
+          "subtitle_summary": "삼성전자노조의 대규모 파업 예고로 인해 가전·모바일 사업부 조합원들의 탈퇴가 급증하면서 노조 내부 갈등이 심화되고 있으며, 삼성바이오로직스 노조도 파업을 이어가고 있습니다. 노조는 메모리 사업부 직원에게 높은 성과급을 요구하는 반면, 다른 사업부에는 낮은 수준의 성과급을 제시하여 불만이 커지고 있습니다. 회사 측은 파업으로 인한 막대한 손실을 우려하며 노조의 요구를 받아들이지 않고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "\"왜 반도체만 챙겨?\" 삼성노조 부글부글..\"하루 1천 명\" 노조 탈퇴 인증 릴레이까지 (자막뉴스) / SBS",
+          "video_id": "uFBPcfzxJmA",
+          "views": 47184,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=uFBPcfzxJmA",
+          "subtitle_summary": "삼성전자 노조의 급격한 노조 탈퇴와 탈퇴 인증 릴레이가 확산되는 가운데, 반도체 사업 부문 중심의 노조가 다른 부문의 요구를 외면하고 성과급만 우선시한다는 비판에 직면했습니다. 특히, 파업 기간 수당 지급 등 스태프 모집에 나서면서 조합비 인상 결정에 대한 불만도 커지고, 노조 파업의 명분에 타격을 줄 수 있다는 전망이 제기되고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "삼성전자 파업 앞 '노노갈등'…\"반도체만 챙기나\" / 연합뉴스TV (YonhapnewsTV)",
+          "video_id": "BbUBYQ6pm4I",
+          "views": 1772,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=BbUBYQ6pm4I",
+          "subtitle_summary": "삼성전자 노조 내부의 ‘노노 갈등’이 심화되면서 반도체 중심의 성과급 요구에 비반도체 부문 조합원들의 반발이 커지며 노조 탈퇴가 급증하고 있습니다. DS 부문의 높은 영업이익에 대한 과도한 성과급 요구가 DX 부문의 적자 가능성을 야기하며 불균형 문제를 드러내고 있습니다. 삼성전자 파업은 수출 전선에 변수로 작용하며 우리 경제 전반에 부정적인 영향을 미칠 수 있다는 우려가 제기되고 있습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0.2956,
+      "min": 1.2142,
+      "nb_score": 0.2434,
+      "avg_views": 11070.0,
+      "total_views": 77490
+    },
+    {
+      "keyword": "4월 원유수출",
+      "is_fixed": false,
+      "views": [
+        45
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "호르무즈 막히자…지난달 미국 원유 수출 사상 최대 / 연합뉴스TV (YonhapnewsTV)",
+          "video_id": "nmsAhJRj2M8",
+          "views": 45,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=nmsAhJRj2M8",
+          "subtitle_summary": "[호르무즈 해협 통과가 막히면서 미국 원유 수출량이 전쟁 발발 전 최대치를 기록했으며, 하루 평균 520만 배럴로 급증했고, 이로 인해 호르무즈로 향하는 원유 운반선도 크게 늘었습니다.]",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "원유수출 사상",
+      "is_fixed": false,
+      "views": [
+        48
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "호르무즈 막히자…지난달 미국 원유 수출 사상 최대 / 연합뉴스TV (YonhapnewsTV)",
+          "video_id": "nmsAhJRj2M8",
+          "views": 48,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=nmsAhJRj2M8",
+          "subtitle_summary": "[호르무즈 해협 통과가 막히면서 미국 원유 수출량이 전쟁 발발 전인 2월보다 약 33% 증가한 하루 평균 520만 배럴을 기록했습니다. 미 경제방송 CNBC는 크플러 자료를 인용하며, 유조선 운항도 크게 늘어난 상황이었습니다. 다만, 이는 위기 상황에 따른 일시적 조치에 가깝다는 분석도 제기되었습니다.]",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "멕시코만으로 4월 원유수출",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "4월 원유수출 사상",
+      "is_fixed": false,
+      "views": [
+        49
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "호르무즈 막히자…지난달 미국 원유 수출 사상 최대 / 연합뉴스TV (YonhapnewsTV)",
+          "video_id": "nmsAhJRj2M8",
+          "views": 49,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=nmsAhJRj2M8",
+          "subtitle_summary": "[호르무즈 해협 통과가 막히면서 미국 원유 수출량이 전쟁 발발 전인 2월보다 약 33% 증가한 하루 평균 520만 배럴을 기록했습니다. 미 경제방송 CNBC는 크플러 자료를 인용하며, 유조선 운항량도 두 배 가까이 늘어난 것으로 보도했습니다. 이는 위기 상황에 따른 일시적 조치에 가깝다는 분석도 제기되었습니다.]",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "원유수출 사상 최대",
+      "is_fixed": false,
+      "views": [
+        49
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "호르무즈 막히자…지난달 미국 원유 수출 사상 최대 / 연합뉴스TV (YonhapnewsTV)",
+          "video_id": "nmsAhJRj2M8",
+          "views": 49,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=nmsAhJRj2M8",
+          "subtitle_summary": "[호르무즈 해협 통과가 막히면서 미국 원유 수출량이 전쟁 발발 전인 2월보다 약 33% 증가한 하루 평균 520만 배럴을 기록했습니다. 미 경제방송 CNBC는 크플러 자료를 인용하며, 유조선 운항도 늘어난 상황이었습니다. 다만, 이는 위기 상황에 따른 일시적 조치에 가깝다는 분석도 제기되었습니다.]",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "달러 넘은 수출",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "관세 인상",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "감축 관세 인상",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    }
+  ]
+}

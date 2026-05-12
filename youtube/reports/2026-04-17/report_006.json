@@ -1,0 +1,223 @@
+{
+  "timestamp": "2026-04-17T01:23:52.065860",
+  "model": "mistral:latest",
+  "keyword_count": 3,
+  "analyze_subtitles": true,
+  "analysis_source": "youtube",
+  "keywords": [
+    {
+      "keyword": "오늘의 주요 뉴스",
+      "is_fixed": true,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "삼성 전자 파업 가처분",
+      "is_fixed": false,
+      "views": [
+        2412,
+        1949
+      ],
+      "video_count": 2,
+      "videos": [
+        {
+          "title": "삼성전자 \"총파업에 10조 날릴 판\"…총파업 예고에 가처분 신청으로 '맞불' [뉴스9]",
+          "video_id": "UlTXoIuqvfg",
+          "views": 2412,
+          "upload_date": "2026-04-16",
+          "url": "https://www.youtube.com/watch?v=UlTXoIuqvfg",
+          "subtitle_summary": "1. Samsung Electronics, 현재 반도체 슈퍼 사이클 중에서 높은 성과를 거두고 있으나, 대립하는 상황에 처해 있습니다. 노조가 40조원의 성과급을 요구하여 총파업을 예고했습니다.\n2. Samsung Electronics 노동조합은 이렇게 투쟁하는 것은 단순히 돈을 많이 받고자 하는 것이 아니라, 성과급 투명화와 상한 폐지를 위해 노력하고 있다고 주장했습니다.\n3. 파업으로 인한 손실이 최대 10조원에 달할 수 있는 걱정이 있으며, 연속 공정의 특성 때문에 중간에 끊기면 앞에 진행된 것들이 모두 버려질 위험이 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[다시보기] 미국, 휴전 연장 없이 4월 말 끝낸다…다음 주 2차 협상 유력 - MBN 뉴스7 (2026.4.16)",
+          "video_id": "6OzmloQlyis",
+          "views": 1949,
+          "upload_date": "2026-04-16",
+          "url": "https://www.youtube.com/watch?v=6OzmloQlyis",
+          "subtitle_summary": "1. 미국이 4월 말까지 휴전을 유지하겠다는 낙관론이 있으나, 2차 협상에서 전쟁의 마침뼈를 찍겠다는 분위기가 있습니다.\n2. 미국은 군사적으로 일안을 더욱 압박하고 있으며, 3차 항공모함이 중동에 도착할 예정입니다. 또한 스텔스 폭격기와 상륙함까지 배치되었습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 4.5056,
+      "min": 0.0,
+      "nb_score": 45055.7629,
+      "avg_views": 2180.5,
+      "total_views": 4361
+    },
+    {
+      "keyword": "공매도 규제 현황",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "부동산 투자 전략 2024",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "전주국제영화제 프로그램",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "블루레이디 부업 후기",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "스테이블코인법 논란",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "AI 돌봄기술 지원 정책",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "대한민국맥주박람회 행사정보",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "전기차 충전소 아파트",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "IMF 한국 국가부채 경고",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "항공유 값 인상 영향",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "S&P500 7000 돌파 분석",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "양자컴퓨팅 기술 발전",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "재보선 분석",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "한동훈 조국 출마 의혹",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    }
+  ]
+}

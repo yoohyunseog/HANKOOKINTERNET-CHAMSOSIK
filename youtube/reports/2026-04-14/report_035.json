@@ -1,0 +1,233 @@
+{
+  "timestamp": "2026-04-14T10:33:35.316312",
+  "model": "mistral:latest",
+  "keyword_count": 3,
+  "analyze_subtitles": true,
+  "analysis_source": "youtube",
+  "keywords": [
+    {
+      "keyword": "오늘의 주요 뉴스",
+      "is_fixed": true,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "엔비디아 삼성전자 주가",
+      "is_fixed": false,
+      "views": [
+        451,
+        1179,
+        2379
+      ],
+      "video_count": 3,
+      "videos": [
+        {
+          "title": "[삼성전자 주가 전망] \"HBM4 세계 최초 양산\" 삼성전자 엔비디아 뚫었다! 57조 실적에 355조 전망! #삼성전자주가전망 #삼성전자주가 #삼성전자",
+          "video_id": "xjgXNteHNQU",
+          "views": 451,
+          "upload_date": "2026-04-14",
+          "url": "https://www.youtube.com/watch?v=xjgXNteHNQU",
+          "subtitle_summary": "1. Samsung Electronics, 현재 20만 원 주변에 움직이고 있으며, 1분기 영업 이익 57조원을 기록하였습니다.\n2. Samsung Electronics는 HBM4를 세계 최초로 양산했으며, 품질 테스트를 통과하여 미세한 분량까지 잡아냈습니다.\n3. 올해 영업 이익 전망은 355조원으로 상향 55%가 되었고, 2분기에는 디램 가격이 전분기 대비 38% 상승할 예정입니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[삼성전자 주가 전망] (속보!)엔비디아 HBM 부족은 삼성전자에게 기회다! 역대급 실적에 5.3조 소각인데 시장이 못알아본다!! #삼성전자주가전망 #삼성전자목표가 #삼성전자",
+          "video_id": "8zdR1gKrGoA",
+          "views": 1179,
+          "upload_date": "2026-04-13",
+          "url": "https://www.youtube.com/watch?v=8zdR1gKrGoA",
+          "subtitle_summary": "1. 삼성전자는 1분기에 역대급 실적을 거두었으나, 주가는 52주 신고가에서 10% 미묘하게 떨어졌다.\n2. 시장 참여자들이 삼성전자를 어떻게 보고 있는지 분석할 예정이며, 현재 W 패턴을 보이고 있다.\n3. 외국인과 기관의 심리가 다르며, 4월 8일에 장대 양봉이 나왔을 때 웨인은 323만 주를 매수했지만 하루 만에 판도가 갈렸다.",
+          "db_saved": true
+        },
+        {
+          "title": "[삼성전자 주가전망] ⚠️엔비디아 HBM4 수량 늘렸다!! 메모리 반도체 대규모 계약!! | 강산 #삼성전자 #삼성전자주가 #삼성전자전망",
+          "video_id": "3NKq5xz9DX0",
+          "views": 2379,
+          "upload_date": "2026-04-14",
+          "url": "https://www.youtube.com/watch?v=3NKq5xz9DX0",
+          "subtitle_summary": "1. 미국 미육군이 AI 데이터 센터를 건립하는 계획이 나왔고, 이로 인해 AI 데이터 센터에 대한 수요가 증가하고 있다.\n2. 현재 삼성전자의 주가를 유지할 수 있었던 것은 외국인 투자자들의 영향이었으나, 최근에는 중동 전쟁과 구글에 대한 문제로 인해 외국인 투자자들이 삼성전자를 매도하고 있다.\n3. 현재 외국인 투자자들은 일부 금액을 남겨두고 떠나고 있으며, 삼성전자의 주가가 20만 원대를 뚫고 내려오면서 다시 투자할 계획이 있다.",
+          "db_saved": true
+        }
+      ],
+      "max": 1.7095,
+      "min": 2.9556,
+      "nb_score": 0.5784,
+      "avg_views": 1336.33,
+      "total_views": 4009
+    },
+    {
+      "keyword": "미토스 해킹 툴",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "호르무즈 해상 봉쇄",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "공무원연금공단 개혁",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "HBM 반도체 경쟁",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "K-NPU 기술 발전",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "이란 미국 협상 전략",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "K-푸드 바지락 영양",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "약과 미국 디저트 인기",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "김치 산업 중국 경쟁",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "플란트라인 해킹 사건",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "스마트워치 한복 선물",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "전기차 전환 고유가 영향",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "코인원 영업정지 FIU",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "전세가격 광명 대단지",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    }
+  ]
+}

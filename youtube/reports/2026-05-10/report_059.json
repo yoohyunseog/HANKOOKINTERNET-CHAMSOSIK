@@ -1,0 +1,403 @@
+{
+  "timestamp": "2026-05-10T21:15:19.116055",
+  "model": "news-singleline:latest",
+  "keyword_count": 3,
+  "analyze_subtitles": true,
+  "analysis_source": "youtube",
+  "keywords": [
+    {
+      "keyword": "오늘의 주요 뉴스",
+      "is_fixed": true,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "HMM 선박 피격 조사",
+      "is_fixed": false,
+      "views": [
+        2170,
+        15871
+      ],
+      "video_count": 2,
+      "videos": [
+        {
+          "title": "[자막] HMM 나무호, 미상 비행체 2기에 피격 확인, 외교부 긴급 브리핑",
+          "video_id": "fPwk-M5nXqY",
+          "views": 2170,
+          "upload_date": "2026-05-10",
+          "url": "https://www.youtube.com/watch?v=fPwk-M5nXqY",
+          "subtitle_summary": "[5월 4일 호르무즈 해협에서 HMM 나무호가 미상 비행체 2기에 피격되어 선체 외판과 내부 프레임이 훼손된 사고 결과, 정부는 현장 조사단을 급파하여 CCTV 확인 및 선장 면담 등을 통해 정확한 피해 상황을 파악하고 있으며, 비행체 엔진 잔해 등을 추가 분석할 예정이다.]",
+          "db_saved": true
+        },
+        {
+          "title": "[자막] HMM 나무호 화재, 정부 합동조사단 현장 결과 발표 \"비행체 2기에 피격 확인\"",
+          "video_id": "AOg9U6SXnrY",
+          "views": 15871,
+          "upload_date": "2026-05-10",
+          "url": "https://www.youtube.com/watch?v=AOg9U6SXnrY",
+          "subtitle_summary": "[정부 합동조사단은 호르모즈 해협에서 발생한 HMM 나무호 화재 원인이 미상 비행체 2기에 의한 피격으로 결론 내렸으며, 비행체 2기가 선미현 평행수 탱크 외판을 타격하여 화재가 발생했다고 밝혔습니다. 조사 결과, 선체 외판과 내부 프레임이 손상되었으며, 화재 원인은 선박 내부와 무관한 것으로 추정되었고, 발사 주체 및 기종은 추가 분석을 통해 밝힐 예정입니다.]",
+          "db_saved": true
+        }
+      ],
+      "max": 2.8116,
+      "min": 1.8738,
+      "nb_score": 1.5005,
+      "avg_views": 9020.5,
+      "total_views": 18041
+    },
+    {
+      "keyword": "이란 러시아 해저 케이블",
+      "is_fixed": false,
+      "views": [
+        315,
+        3235,
+        1951
+      ],
+      "video_count": 3,
+      "videos": [
+        {
+          "title": "버티기 들어간 이란…러시아와 뒷거래, 해저 케이블 사용료 반격 [MBN 뉴스센터]",
+          "video_id": "uEA1hzvssrc",
+          "views": 315,
+          "upload_date": "2026-05-10",
+          "url": "https://www.youtube.com/watch?v=uEA1hzvssrc",
+          "subtitle_summary": "이란은 미국 해군 봉쇄를 우회하기 위해 러시아와 카스피 해를 통한 물자 거래를 진행했으며, 호르무즈 해협 해저 케이블 사용료 징수를 통해 제재 회피 시도를 감행하고 있습니다. 또한, 이스라엘이 이라크 서부 사막에 군사 기지를 구축하고 이란에 대한 공습 지원을 펼치면서 추가적인 긴장이 고조되고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "이란 \"공격시 美기지에 반격\"…해저케이블 사용료도 검토 / 연합뉴스TV (YonhapnewsTV)",
+          "video_id": "X91GBgCXzjU",
+          "views": 3235,
+          "upload_date": "2026-05-10",
+          "url": "https://www.youtube.com/watch?v=X91GBgCXzjU",
+          "subtitle_summary": "이란은 미군이 유조선을 공격할 경우 중동 기지 반격을 시사하며, 해저 케이블 사용료 검토 등 해협 통제력을 강화하려는 움직임을 보이고 있다. 휴전에도 불구하고 호르무제해업에서 무력 충돌이 지속되면서 이란은 미국의 보복 경고를 발하며 긴장을 고조시키고 있다. 미군의 해상 봉쇄와 이란의 대응 움직임이 맞물려 중동 지역의 불안정성이 더욱 심화될 수 있다는 우려가 제기된다.",
+          "db_saved": true
+        },
+        {
+          "title": "[일요와이드] 나무호 현장조사 마무리…미·이란 협상 다시 교착 / 연합뉴스TV (YonhapnewsTV)",
+          "video_id": "HxzJG0bU6GU",
+          "views": 1951,
+          "upload_date": "2026-05-10",
+          "url": "https://www.youtube.com/watch?v=HxzJG0bU6GU",
+          "subtitle_summary": "[HMM 선박 ‘나무호’ 화재 현장 조사 마무리, 미·이란 협상 교착 속 이란의 책임 의혹이 제기되면서 외교적 긴장이 고조되고 있으며, 정부는 조사 결과에 따라 외교적 대응 방안을 검토 중이다.]",
+          "db_saved": true
+        }
+      ],
+      "max": 2.1823,
+      "min": 2.5252,
+      "nb_score": 0.8642,
+      "avg_views": 1833.67,
+      "total_views": 5501
+    },
+    {
+      "keyword": "한미 조선협력센터 설립",
+      "is_fixed": false,
+      "views": [
+        594,
+        3853,
+        2,
+        13,
+        132,
+        342
+      ],
+      "video_count": 6,
+      "videos": [
+        {
+          "title": "한미 '조선협력센터' 세운다…대미투자 협의 / 연합뉴스TV (YonhapnewsTV)",
+          "video_id": "PR_aV7npwJc",
+          "views": 594,
+          "upload_date": "2026-05-10",
+          "url": "https://www.youtube.com/watch?v=PR_aV7npwJc",
+          "subtitle_summary": "[김정관 산업부 장관, 워싱턴 DC 방문하여 미국 측과 대미 전략적 투자 협력 및 산업 통상 분야 협력을 논의하고 한미 조선 협력 센터 설립 합의를 이루어 관련 양해각서 체결]",
+          "db_saved": true
+        },
+        {
+          "title": "[한화오션] “한화오션 결국 미국 먹었다… 480조 조선동맹 시작” 워싱턴에 ‘한미 조선협력센터’ 설립! “MRO 잭팟” 미국 군함 몰려온다! 목표가:20만원!",
+          "video_id": "zIZACyl-afA",
+          "views": 3853,
+          "upload_date": "2026-05-10",
+          "url": "https://www.youtube.com/watch?v=zIZACyl-afA",
+          "subtitle_summary": "한화오션이 미국 워싱턴에 ‘한미 조선 협력 센터’를 설립하고, 김정관 산업 장관의 방미를 통해 3,500억 달러 규모의 투자 논의가 본격화됨에 따라 주가 급등에 대한 기대감을 높이고 있다. 이 센터는 MRO 사업의 ‘잭팟’을 노리고 있으며, 미국 군함과의 협력을 통해 새로운 성장 동력을 확보할 것으로 전망된다. 480조 규모의 조선동맹 시작을 예고하며, 20만원 목표 달성을 위한 발판을 마련하고 있다.",
+          "db_saved": true
+        },
+        {
+          "title": "한미, 워싱턴에 조선 협력 센터 연내 설립 합의",
+          "video_id": "drYWCMGjhH0",
+          "views": 2,
+          "upload_date": "2026-05-09",
+          "url": "https://www.youtube.com/watch?v=drYWCMGjhH0",
+          "subtitle_summary": "[한미가 워싱턴에 조선 협력 센터를 설립하기로 합의하여 반도체 배터리 분야 협력과 더불어 조선 산업 협력의 제도화가 가속화될 전망이다. 미국이 조선 영량 부족 문제를 해결하고, 한미 조선 파트너십 이니셔티브를 통해 기술 협력을 강화하는 데 초점을 맞추고 있다. 센터 설립은 양국 조선업계에 새로운 수주 기회를 제공하고, 미국 내 관련 법안 통과 여부에 따라 실질적인 협력 체계가 구축될 것으로 보인다.]",
+          "db_saved": true
+        },
+        {
+          "title": "김정관, 대미 투자 프로젝트 논의한 뒤 귀국",
+          "video_id": "cwCwS0-NlFo",
+          "views": 13,
+          "upload_date": "2026-05-10",
+          "url": "https://www.youtube.com/watch?v=cwCwS0-NlFo",
+          "subtitle_summary": "김정관 산업통상부 장관이 미국 방문 중 대미 투자 프로젝트 논의를 진행하여 하워드 러트닉 미상무부 장관과 양국 간 투자 협력 방안을 모색하고 한미 조선 협력 센터 설립에 합의했습니다. 이번 논의를 통해 조선과 에너지 분야의 투자 프로젝트 추진 방향이 구체화되었으며, 공동 연구 개발 및 기업 협력을 위한 기반이 마련되었습니다. 이는 양국 간 경제 협력을 강화하고 에너지 분야의 협력을 확대하는 데 기여할 것으로 기대됩니다.",
+          "db_saved": true
+        },
+        {
+          "title": "트럼프가 한국 조선업을 선택한 진짜 이유 | KUSPI 체결, 빅3가 미국 본토에 진입했다",
+          "video_id": "SIrdqKo6F7M",
+          "views": 132,
+          "upload_date": "2026-05-10",
+          "url": "https://www.youtube.com/watch?v=SIrdqKo6F7M",
+          "subtitle_summary": "트럼프 정부는 미국 조선업 부활을 위해 한국과 한미 조선 파트너십 이니셔티브를 체결하여 1,500억 달러 규모의 투자 약속을 이끌어냈습니다. 25% 관세 인하 조건 하에 미국 조선업 재건을 위한 한미 조선 파트너십 센터 설립이 추진 중이며, 과거 미국의 조선 기술력이 전 세계를 호령했던 시절로 돌아가도록 돕는 것이 목표입니다. 이는 미국이 과거 대서양 전쟁에서 민주주의를 지키는 데 기여했던 ‘니버티선’의 정신을 계승하는 의미를 담고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[이시각헤드라인] 5월 9일 토요와이드(11시) / 연합뉴스TV (YonhapnewsTV)",
+          "video_id": "NVjxofTw7vQ",
+          "views": 342,
+          "upload_date": "2026-05-09",
+          "url": "https://www.youtube.com/watch?v=NVjxofTw7vQ",
+          "subtitle_summary": "미국이 호르무즈 해협에서 이란 유조선을 폭격하며 긴장 고조, 이란은 제한적 교전 사실을 밝혔고, 트럼프 대통령은 이란의 서해 진입을 예상하는 가운데 하르그섬 원유 유출 우려가 제기되었습니다. 한미 조선 파트너십 이니셔티브를 위한 양해각서가 체결되어 연내 워싱턴에 파트너십 센터가 설립될 예정이며, 전국적으로 맑고 포근한 날씨가 예상되나 대구와 경북 지역은 화재 주의가 필요합니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0.2983,
+      "min": 1.1156,
+      "nb_score": 0.2674,
+      "avg_views": 822.67,
+      "total_views": 4936
+    },
+    {
+      "keyword": "나무호 미상 비행체 피격",
+      "is_fixed": false,
+      "views": [
+        1676,
+        607,
+        10865,
+        881,
+        983,
+        339
+      ],
+      "video_count": 6,
+      "videos": [
+        {
+          "title": "[자막] HMM 나무호, 미상 비행체 2기에 피격 확인, 외교부 긴급 브리핑",
+          "video_id": "fPwk-M5nXqY",
+          "views": 1676,
+          "upload_date": "2026-05-10",
+          "url": "https://www.youtube.com/watch?v=fPwk-M5nXqY",
+          "subtitle_summary": "[HMM 나무호가 아랍에미리트 인근 해역에서 미상 비행체 2차 공격으로 선체 외판과 내부 프레임이 훼손된 채 발생한 화재 사고를 조사 결과 발표했으며, CCTV 영상 분석과 현장 조사 결과로 인해 정확한 발사 주체는 아직 확인되지 않았으며 추가 분석 예정임을 밝혔다.]",
+          "db_saved": true
+        },
+        {
+          "title": "HMM Namuho Fire Investigation Concludes… 'Struck by Unidentified Aircraft' Confirmed [MBN News Ce...",
+          "video_id": "ljKvZSyZzxw",
+          "views": 607,
+          "upload_date": "2026-05-10",
+          "url": "https://www.youtube.com/watch?v=ljKvZSyZzxw",
+          "subtitle_summary": "HMM 나무호 폭발 원인이 외부 요인, 특히 미상의 비행체가 선미를 타격한 것으로 공식 확인되었으며, 정부 합동 조사단은 정확한 기종 및 발사 주체를 밝히기 위해 추가 분석을 진행할 예정이다. 조사 과정에서 항해 기록, CCTV 영상, 선원 증언, 현장 감식 등을 통해 외부 피격설을 뒷받침하는 증거를 확보했으며, 향후 비행체의 정체 규명이 핵심 과제로 남았다. 외교부는 수거한 자원 분석을 통해 사고 원인을 명확히 규명하고 책임자를 밝히는 데 주력할 계획이다.",
+          "db_saved": true
+        },
+        {
+          "title": "[자막] HMM 나무호 화재, 정부 합동조사단 현장 결과 발표 \"비행체 2기에 피격 확인\"",
+          "video_id": "AOg9U6SXnrY",
+          "views": 10865,
+          "upload_date": "2026-05-10",
+          "url": "https://www.youtube.com/watch?v=AOg9U6SXnrY",
+          "subtitle_summary": "[정부 합동조사단은 호르모즈 해협에서 발생한 HMM 나무호 화재 원인이 미상 비행체 2기에 의한 피격으로 결론 내렸으며, 비행체 2기가 선미현 평행수 탱크 외판을 타격하여 화재가 발생했다고 밝혔습니다. 조사 결과, 선체 외판과 내부 프레임이 손상되었으며, 화재 원인은 선박 내부와 무관한 것으로 추정되었고, 발사 주체 및 기종은 추가 분석을 통해 밝힐 예정입니다.]",
+          "db_saved": true
+        },
+        {
+          "title": "[현장연결] 정부 \"나무호 화재원인, 미상 비행체 타격\" / 연합뉴스TV (YonhapnewsTV)",
+          "video_id": "e4RUt6Aa9Wk",
+          "views": 881,
+          "upload_date": "2026-05-10",
+          "url": "https://www.youtube.com/watch?v=e4RUt6Aa9Wk",
+          "subtitle_summary": "[정부 합동조사단은 HMM 나무호 화재 원인으로 미상 비행체 충격을 결론 내렸으며, 선미 외판에 2차례 타격되어 선체 훼손과 화재가 발생한 것으로 확인되었습니다. CCTV 영상 분석 결과 비행체가 포착되었으나 발사 주체는 불명이며, 기관실 화재는 비행체 타격으로 인한 것으로 추정됩니다. 선박 파손 부위와 폭발 압력 등을 고려할 때 외부 공격으로 인한 것임을 시사합니다.]",
+          "db_saved": true
+        },
+        {
+          "title": "\"나무호 화재 원인, 미상 비행체 타격\"…정부조사단, 외부 충격 폭발 판단 [뉴스7]",
+          "video_id": "oTUSCYvok6E",
+          "views": 983,
+          "upload_date": "2026-05-10",
+          "url": "https://www.youtube.com/watch?v=oTUSCYvok6E",
+          "subtitle_summary": "정부조사단은 나무호 화재 발생 원인이 미상의 비행체 타격으로 확인했으며, 정확한 기종 및 크기는 파악되지 않았다고 발표했다. 외교부는 공격 주체는 밝히지 않고 추가 분석을 통해 화재 원인을 명확히 할 예정이며, 이는 일한 측 공격 가능성을 배제하지 않는다는 점을 시사한다. 사고 직후 트럼프 대통령이 이란 공격이라고 주장했으나, 정부는 화재로 인한 선박 마비로 판단하며 조사에 착수했다.",
+          "db_saved": true
+        },
+        {
+          "title": "[속보] 외교부 \"나무호 피격 확인…조사결과 설명하려 주한이란대사 불러\" [현장영상] / 채널A",
+          "video_id": "sIqa0vqzofw",
+          "views": 339,
+          "upload_date": "2026-05-10",
+          "url": "https://www.youtube.com/watch?v=sIqa0vqzofw",
+          "subtitle_summary": "[외교부는 나무호 피격 확인 후 조사단을 현장에 급파하여 선박 외관 및 내부를 조사했으며, 미상 비행체에 의한 두 차례 타격으로 선체 훼손과 화재가 발생한 것으로 결론지었습니다. 현장 조사 결과, 비행체 발사 주체 및 기종은 확인되지 않았으며, 추가 분석을 통해 원인을 규명할 예정입니다. 정부는 아직 피격 주체를 특정하지 못하고 있으며, 추가 조사를 통해 정확한 상황을 파악할 계획입니다.]",
+          "db_saved": true
+        }
+      ],
+      "max": 0.3143,
+      "min": 1.2451,
+      "nb_score": 0.2524,
+      "avg_views": 2558.5,
+      "total_views": 15351
+    },
+    {
+      "keyword": "국민연금 개혁 방안",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "제주항공 주가 전망",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "레이지필 임상 결과",
+      "is_fixed": false,
+      "views": [
+        25647
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "KRX vs GEN 매치 56 하이라이트 | 2026 LCK",
+          "video_id": "ltAC5JyCNFs",
+          "views": 25647,
+          "upload_date": "2026-05-09",
+          "url": "https://www.youtube.com/watch?v=ltAC5JyCNFs",
+          "subtitle_summary": "KT BNK와 GEN의 경기에선, KT BNK가 이즈카르마 빌드를 변경하여 세라핀을 활용, 라인전 우위를 점하고, 키움 DRX는 라이즈 운영을 통해 젠즈를 압도하며 1세트를 승리했습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "LSG 대 CSK 하이라이트",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "땅집고 부동산 시세",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "지방선거 3주 앞두고",
+      "is_fixed": false,
+      "views": [
+        10563
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "39년 만의 개헌 시도 무산...지방선거 D-25, 판세는? / YTN",
+          "video_id": "oLu30V0o-7g",
+          "views": 10563,
+          "upload_date": "2026-05-09",
+          "url": "https://www.youtube.com/watch?v=oLu30V0o-7g",
+          "subtitle_summary": "39년 만의 헌법 개정 시도가 국민적 지지 부족으로 무산되면서 지방선거 판세에 영향을 미칠 변수가 커지고 있으며, 개헌 추진 과정에서 야당의 불참 투표가 논란이 되면서 정치권의 책임론이 제기되고 있다. 개헌 시도는 국민적 합의를 바탕으로 추진되었으나, 야당의 거부 의사는 개헌의 실현 가능성을 낮추고 있으며, 향후 지방선거 결과에 따라 정치 지형이 더욱 복잡해질 전망이다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "마통 하루 이자 2400억",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "비거주 1주택 매매 규제 완화",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "양도세 중과세 부동산 영향",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "미국 차세대 벙커버스터 개발",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "AI 반도체 엔비디아 성장",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    }
+  ]
+}

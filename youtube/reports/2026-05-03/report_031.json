@@ -1,0 +1,693 @@
+{
+  "timestamp": "2026-05-03T21:46:08.853595",
+  "model": "news-singleline:latest",
+  "keyword_count": 3,
+  "analyze_subtitles": true,
+  "analysis_source": "youtube",
+  "keywords": [
+    {
+      "keyword": "오늘의 주요 뉴스",
+      "is_fixed": true,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "관세 올리고",
+      "is_fixed": false,
+      "views": [
+        1996,
+        2630
+      ],
+      "video_count": 2,
+      "videos": [
+        {
+          "title": "[이슈] 트럼프 'EU 비협조' 보복 시작…관세 올리고 미군 철수 / “예상했던 일”…주독미군 5천 명 감축에 독일 국방장관 '덤덤' | MBN NEWS",
+          "video_id": "ACuPqFUwLck",
+          "views": 1996,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=ACuPqFUwLck",
+          "subtitle_summary": "트럼프 미국 대통령이 유럽산 자동차에 대한 관세를 25%로 인상하고, 주독 미군 5천 명 철수를 결정하며 유럽과의 갈등을 심화시켰다. 이는 유럽의 호르무즈 해협 분파경과 군사기지 사용 요청 거절에 대한 보복 성격이 강하며, 우리나라 외교에도 영향을 미칠 수 있다는 우려가 제기된다. 트럼프 대통령의 일방적인 외교 행보가 국제 질서에 어떤 파장을 불러일으킬지 주목해야 한다.",
+          "db_saved": true
+        },
+        {
+          "title": "전쟁 비협조 보복?…美, EU 차 관세 올리고 주독미군 5천명 철수 [뉴스7]",
+          "video_id": "a2f9oogg3Xs",
+          "views": 2630,
+          "upload_date": "2026-05-02",
+          "url": "https://www.youtube.com/watch?v=a2f9oogg3Xs",
+          "subtitle_summary": "[미국이 이란 전쟁 비협조 유럽 국가들을 압박하기 위해 EU 차관세 인상 및 주독미군 철수 계획을 발표하여 국제 관계에 긴장감을 고조시키고 있다.]",
+          "db_saved": true
+        }
+      ],
+      "max": 4.3391,
+      "min": 0.0,
+      "nb_score": 43391.0266,
+      "avg_views": 2313.0,
+      "total_views": 4626
+    },
+    {
+      "keyword": "공급책 구속 법원",
+      "is_fixed": false,
+      "views": [
+        61,
+        799,
+        666,
+        351
+      ],
+      "video_count": 4,
+      "videos": [
+        {
+          "title": "박왕열 마약공급책 '청담' 구속...\"공급 경위 추궁\" / YTN",
+          "video_id": "fUn7fi6iOes",
+          "views": 61,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=fUn7fi6iOes",
+          "subtitle_summary": "[마약 공급책 '청담' 최시, 마약류 밀수 혐의로 구속영장 발부, 경찰은 그의 공급 경위와 범죄 수익몰수 여부를 집중 조사하며 수사를 확대할 계획]",
+          "db_saved": true
+        },
+        {
+          "title": "박왕열 마약공급책 '청담', 잠시 뒤 영장심사 / YTN",
+          "video_id": "h3KXwU6Whzg",
+          "views": 799,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=h3KXwU6Whzg",
+          "subtitle_summary": "박왕열 마약 공급책 수사를 두고 최시가 오후 3시 30분경 구속 전면 심사를 받으며 마약 공급 혐의를 부인하고 있고, 경찰은 태국에서 최시를 긴급 체포 후 국내로 송환하는 등 수사를 진행 중이다.",
+          "db_saved": true
+        },
+        {
+          "title": "박왕열 마약공급책 '청담'...잠시 뒤 구속심사 / YTN",
+          "video_id": "fPPwfVfaDpU",
+          "views": 666,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=fPPwfVfaDpU",
+          "subtitle_summary": "마약공급책 최시, 구속영장심사에 시달리며 필로폰 22kg 밀수 혐의를 포함한 마약류 유통 혐의로 수사받고 있으며, 태국 거주 중 긴급 체포된 후 디지털 포렌식 및 여권법 위반 혐의도 조사 중이다.",
+          "db_saved": true
+        },
+        {
+          "title": "박왕열 상선 '청담사장' 구속 갈림길…'묵묵부답' / 연합뉴스TV (YonhapnewsTV)",
+          "video_id": "pXM8ZG3z1hM",
+          "views": 351,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=pXM8ZG3z1hM",
+          "subtitle_summary": "[마약 공급의 총책인 ‘청담사장’ 최모 씨가 경찰에 구속되면서 2019년부터 100억 원 상당의 마약을 박광열에게 공급한 혐의가 드러났으며, 공범 수사와 범죄 수익 은닉 정황을 포착하여 수사를 확대하고 있습니다.]",
+          "db_saved": true
+        }
+      ],
+      "max": 2.1857,
+      "min": 2.1427,
+      "nb_score": 1.0201,
+      "avg_views": 469.25,
+      "total_views": 1877
+    },
+    {
+      "keyword": "병력 빼고 관세",
+      "is_fixed": false,
+      "views": [
+        345,
+        1158,
+        9
+      ],
+      "video_count": 3,
+      "videos": [
+        {
+          "title": "\"한국은 도움이 안 됐다\" 트럼프, 독일 미군 5,000명 빼고 관세 25% 때렸다! \"다음은 한국?\" 보복 4단계 중 3단계 완료, 한 단계 남았다",
+          "video_id": "Go0w1ThfRDY",
+          "views": 345,
+          "upload_date": "2026-05-02",
+          "url": "https://www.youtube.com/watch?v=Go0w1ThfRDY",
+          "subtitle_summary": "트럼프 대통령은 한국에 대한 보복 조치를 단행하겠다고 밝히며, 독일 사례를 통해 보복 패턴을 제시하고, 한국에 대한 4단계 보복 중 3단계가 완료되었음을 시사했다. 독일의 호르무즈 해협 통과 거부와 주한미군 감축 결정은 한국에 대한 유사한 조치가 예상되는 배경이다. 트럼프는 동맹국들의 도움을 받지 않고 혼자 전쟁을 시작하고, 이를 통해 한국을 포함한 다른 국가에 대한 보복을 감행할 가능성을 내포하고 있다.",
+          "db_saved": true
+        },
+        {
+          "title": "\"If you don't listen, withdraw troops\" ➡️ Allies in a state of panic",
+          "video_id": "TVX9eksm1_w",
+          "views": 1158,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=TVX9eksm1_w",
+          "subtitle_summary": "[트럼프 대통령은 나토 동맹국들에게 ‘말 안 들으면 군대를 뺀다’는 강경 메시지를 전달하며, 안보를 결제의 영역으로 전환, 관세 부과와 이스라엘 무기 판매를 통해 동맹국들을 압박했습니다.]",
+          "db_saved": true
+        },
+        {
+          "title": "@생존우선순위/(이재명의 단순치촐한 논리) \"친노동 = 반기업 이분법 깨야“ /노동생산성은 생산에서 매출개념으로 변화해야 한다. 노사상생의 의미가 무엇인지?",
+          "video_id": "_Put0nqMh-w",
+          "views": 9,
+          "upload_date": "2026-05-02",
+          "url": "https://www.youtube.com/watch?v=_Put0nqMh-w",
+          "subtitle_summary": "이재명 대통령은 노동절 기념식에서 ‘친노동 = 반기업’이라는 이분법적 사고를 비판하며, 생산성 향상을 위해 노동자와 기업이 상호 협력해야 한다고 강조했습니다. 생산성 향상 목표 달성을 위해 노동자에게 일방적인 희생을 강요해서는 안 되며, 단결권 등 노동자의 권익 보호도 필요하다고 밝혔습니다. 특히, 기업 혁신과 투자를 통해 일자리를 창출하고, 노사 상생의 의미를 되새기며 협력적인 노사문화 정착을 촉구했습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 1.524,
+      "min": 2.0906,
+      "nb_score": 0.729,
+      "avg_views": 504.0,
+      "total_views": 1512
+    },
+    {
+      "keyword": "정청래 하정우",
+      "is_fixed": false,
+      "views": [
+        7178,
+        3855,
+        454,
+        393,
+        5320,
+        2484
+      ],
+      "video_count": 6,
+      "videos": [
+        {
+          "title": "What Was the Reaction of Merchants When Jeong Cheong-rae and Ha Jung-woo Visited Busan Gupo Marke...",
+          "video_id": "-3uuqsXEIug",
+          "views": 7178,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=-3uuqsXEIug",
+          "subtitle_summary": "[부산 구포 시장 방문 시 하정우 후보에게 뜨거운 환영을 보내는 상인들과 시민들의 반응을 영상에서 확인했으며, 구독고등학교 출신이라는 점을 언급하며 높은 관심과 호감도를 보였다고 밝혔다. 북구를 비롯한 지역을 사랑하는 마음을 담아 죽도록 열심히 일하겠다는 의지를 강조하며, 진정성을 잃지 않고 최선을 다하겠다고 덧붙였다.]",
+          "db_saved": true
+        },
+        {
+          "title": "[현장영상] \"하정우로 삼행시!\" 정청래까지 참전..부산 '후끈' / JTBC News",
+          "video_id": "aXjdGg8K6FI",
+          "views": 3855,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=aXjdGg8K6FI",
+          "subtitle_summary": "[하정우 후보가 부산 구포 시장을 방문하여 시민들과 교류하고, 지역 주민들의 뜨거운 환영을 받으며 지지율을 높이는 모습이 포착되었다. 시장은 하정우 후보를 ‘고향의 아들’로 맞이하며 감사의 마음을 전했고, 주민들은 그의 성공을 축하하며 격려했다. 하정우 후보는 지역 발전을 위해 ‘죽도록’ 노력하겠다는 의지를 밝히며 헌신적인 모습을 보여주었다.]",
+          "db_saved": true
+        },
+        {
+          "title": "Jeong Cheong-rae visits Busan Buk-gap… “Ha Jung-woo is the son of the Gupo Market” / Channel A / ...",
+          "video_id": "B2lkRGMKD7Y",
+          "views": 454,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=B2lkRGMKD7Y",
+          "subtitle_summary": "[더불어민주당 정청례 대표가 부산 구포 시장을 찾아 하정우 후보를 지지하며, PK와 TK 지역을 중심으로 총력적인 선거 캠페인을 펼치는 가운데, 국회의원 보궐선거가 미니총선급으로 확대되어 여야 간 경쟁이 더욱 치열해지고 있다.]",
+          "db_saved": true
+        },
+        {
+          "title": "Jeong Cheong-rae Visits PK, Starts Promoting Ha Jung-woo... \"A Very Affectionate and Proud Son\" [...",
+          "video_id": "mjvLFLFQOsg",
+          "views": 393,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=mjvLFLFQOsg",
+          "subtitle_summary": "[정청례 더불어민주당 대표이 부산 지역구 선거 지원에 나섰다. 하정우 후보 지지 활동과 함께 시민들과의 소통을 통해 지지율을 높이고 있으며, 김경수 경남지사 후보 선거 사무소 개소식에 참석하여 지지율을 결집했다.]",
+          "db_saved": true
+        },
+        {
+          "title": "정청래-하정우 부산 북갑에서 초1에 무슨 짓?/국힘 '아동학대' 강력 비판",
+          "video_id": "2OX4wAhwgjw",
+          "views": 5320,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=2OX4wAhwgjw",
+          "subtitle_summary": "[정청래와 하정우가 초등학교 1학년 학생들에게 ‘오빠’라고 부르며 아동학대 의혹을 빚어 논란이 되고 있으며, 국힘은 이들을 강력하게 비판하고 있다.]",
+          "db_saved": true
+        },
+        {
+          "title": "구포시장 간 정청래와 하정우, 논란 이후 부산 '충격' 반응! (황연실 신현영 박수빈) #끝장뉴스 (0503_일)",
+          "video_id": "4LtsdXf54KE",
+          "views": 2484,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=4LtsdXf54KE",
+          "subtitle_summary": "[오늘로 지방 선거 30일 남은 가운데, 민주당이 각종 여론 조사에서 상승 기류를 보이고 있으며, 이재명 대통령 지지율과 정부 여당의 힘을 실어 줘야 한다는 국민 여론이 형성되고 있다. 오세훈, 정원훈 후보 간 격차로 서울시 선거 결과에 대한 긴장감이 감돌고 있으며, 보수 지지자들의 투표 참여율에 따라 선거 판도가 크게 달라질 수 있다는 분석이 나오고 있다.]",
+          "db_saved": true
+        }
+      ],
+      "max": 1.2083,
+      "min": 1.8183,
+      "nb_score": 0.6645,
+      "avg_views": 3280.67,
+      "total_views": 19684
+    },
+    {
+      "keyword": "반도체만 챙기나",
+      "is_fixed": false,
+      "views": [
+        2495,
+        1584,
+        1128,
+        222,
+        668
+      ],
+      "video_count": 5,
+      "videos": [
+        {
+          "title": "\"왜 반도체만 챙기나\"..줄줄이 올라온 '탈퇴 인증글' / SBS 8뉴스",
+          "video_id": "ZtZOG0MwQys",
+          "views": 2495,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=ZtZOG0MwQys",
+          "subtitle_summary": "삼성전자 노조 내부 갈등이 심화되어 반도체 부문 중심의 파업 가능성이 커지고 있으며, 성과급 불균형 문제로 인해 노조 탈퇴가 급증하고 조합원 수가 감소하고 있습니다. 노조는 반도체 부문의 고수익을 요구하는 반면, 완제품 부문은 사업 재편에 대한 우려를 표명하며 갈등이 첨예화되고 있습니다. 사측의 교섭 태만과 노조의 추가 파업 검토로 인해 파업 사태가 장기화될 가능성이 제기되고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "“Are they only looking out for semiconductors?”… Samsung Electronics union members ‘mass resignat...",
+          "video_id": "0QEVdyzxyZw",
+          "views": 1584,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=0QEVdyzxyZw",
+          "subtitle_summary": "삼성전자노조가 반도체 부문만 높은 성과급을 요구하며 다른 사업부와의 불균형을 심화시키면서 내부 갈등이 격화되고 있으며, 노조 탈퇴 건수가 급증하여 노조의 지지율이 하락하고 있습니다. DS 부문의 최대 이익을 바탕으로 성과급을 요구하는 데다, 어려움을 겪는 DX 부문에 대한 구체적인 요구가 없어 노조 내부 반대 목소리가 커지고 있습니다. 이러한 상황은 삼성전자 전체의 노동 관계에 부정적인 영향을 미칠 수 있다는 우려를 낳고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "\"반도체만 챙기나\"‥삼성 비반도체 조합원 노조 탈퇴 잇따라 (2026.05.03/뉴스데스크/MBC)",
+          "video_id": "PeOe3-jGlrU",
+          "views": 1128,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=PeOe3-jGlrU",
+          "subtitle_summary": "삼성전자 비반도체 조합원들이 반도체 사업 중심의 노조 운영과 성과급 불균형에 불만을 느껴 대규모로 탈퇴하면서 노조 내부 균열이 심화되고 있으며, 파업 가능성이 더욱 높아지고 있습니다. 특히 반도체 부문의 압도적인 영향력으로 DX 부문의 성과급 지급이 보류되면서, 비반도체 조합원들의 어려움이 가시화되고 있습니다. 조합비 공제와 파업 가능성에 대한 우려로 탈퇴가 더욱 가속화되는 가운데, 노조의 총파업 예고에도 불구하고 갈등은 지속될 것으로 보입니다.",
+          "db_saved": true
+        },
+        {
+          "title": "\"반도체만 챙기나\" 노조 탈퇴 러시…삼성전자 '노노 갈등' 격화 [MBN 뉴스센터]",
+          "video_id": "3Xes0_CGMqw",
+          "views": 222,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=3Xes0_CGMqw",
+          "subtitle_summary": "삼성전자 노조에서 반도체 사업부만을 지나치게 챙긴다는 비판으로 인해 최근 2,500명 이상이 탈퇴하면서 노조 갈등이 심화되고 있으며, 총파업 예고에도 불구하고 노조의 대표성과 파업 명분이 약화될 수 있다는 우려가 제기되고 있다.",
+          "db_saved": true
+        },
+        {
+          "title": "삼성전자 파업 앞 '노노갈등'…\"반도체만 챙기나\" / 연합뉴스TV (YonhapnewsTV)",
+          "video_id": "BbUBYQ6pm4I",
+          "views": 668,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=BbUBYQ6pm4I",
+          "subtitle_summary": "삼성전자 노조 내부의 ‘노노 갈등’이 심화되면서 반도체 중심의 성과급 요구에 비반도체 부문 조합원들의 반발이 커지며 노조 탈퇴가 급증하고 있습니다. DS 부문의 높은 영업이익을 토대로 성과급 지급을 요구하는 노조의 행보가 DX 부문의 어려움을 가중시키면서 사업 재정립 가능성까지 제기되고 있습니다. 삼성전자 파업은 수출 전선에 변수로 작용하며 우리 경제 전반에 부정적인 영향을 미칠 수 있다는 우려가 커지고 있습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 1.3333,
+      "min": 2.0402,
+      "nb_score": 0.6535,
+      "avg_views": 1219.4,
+      "total_views": 6097
+    },
+    {
+      "keyword": "트럼프 이란",
+      "is_fixed": false,
+      "views": [
+        26248,
+        5254,
+        5843,
+        9023,
+        3441,
+        27317
+      ],
+      "video_count": 6,
+      "videos": [
+        {
+          "title": "[속보] 트럼프 “이란 공격 재개 할 수도…새 협상안 받아들이기 힘들어” [뉴스플레이리스트] / 채널A",
+          "video_id": "cdEW1bxiPrA",
+          "views": 26248,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=cdEW1bxiPrA",
+          "subtitle_summary": "트럼프 미국 대통령이 독일 주둔 미군 5,명 철수 및 유럽산 승용차 관세 25% 인상을 결정하며 유럽 안보 및 무역 현장에서 불만을 표출하고, 향후 유럽 안보 환경 변화에 대한 우려가 제기되고 있다.",
+          "db_saved": true
+        },
+        {
+          "title": "트럼프 \"대 이란 공격, 종결\"했다는데…이란 새 중재안은 거절 [뉴스7]",
+          "video_id": "gavZb-eZ2D8",
+          "views": 5254,
+          "upload_date": "2026-05-02",
+          "url": "https://www.youtube.com/watch?v=gavZb-eZ2D8",
+          "subtitle_summary": "트럼프 대통령은 미의회 승인 없이 전쟁 지속 가능성을 시사하며 대이란 공격 종결를 주장했으나, 향후 의회 승인 구할 뜻은 없다고 못 박았고 중동 미군 철수도 없을 예정임을 밝혔다. 휴전 이후 교전은 없었다는 서한을 의회에 전달했음에도 불구하고, 협상을 통한 합의를 선호하지만 호르무주 해협에서의 미군 활동은 지속될 것이라고 강조했다. 또한, 이란에 대한 경제 압박을 강화하여 석유 수입 중국 기업 제재를 통해 해협 통행료 지불을 압박하며 불만족스러운 파키스 새중 제시를 거절했다.",
+          "db_saved": true
+        },
+        {
+          "title": "논란 자초한 트럼프...이란 봉쇄 자랑하다 '구설수' [지금이뉴스]  / YTN",
+          "video_id": "rwCq7rK8WUs",
+          "views": 5843,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=rwCq7rK8WUs",
+          "subtitle_summary": "트럼프 대통령이 이란 항만 봉쇄 과정에서 해군이 선박을 납포한 것을 두고 ‘해적’이라고 비판하며 논란을 자초했고, 이는 국제법 위반 주장에 휩싸이는 상황을 초래했습니다. 미국 정부는 전쟁 자금 압박을 위한 항만 봉쇄를 지속하겠다는 입장을 밝혔으며, 이는 더욱 심각한 국제적 문제로 이어질 가능성을 내포하고 있습니다. 이러한 행위는 국제 사회의 우려를 낳고 있으며, 향후 추가적인 제재 및 갈등 심화 가능성을 시사합니다.",
+          "db_saved": true
+        },
+        {
+          "title": "\"세상에 이란 일이!\" 트럼프가 고함을 지르며 '공격 개시'를 외치는데… [뉴스와] / 연합뉴스TV(YonhapnewsTV)",
+          "video_id": "_2xNWvovolE",
+          "views": 9023,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=_2xNWvovolE",
+          "subtitle_summary": "트럼프 대통령이 이란의 새로운 제한안을 검토하겠다고 밝히면서, 미국이 요구하는 수준에 합의가 어렵다는 회의적인 입장을 보였습니다. 이란의 제한안은 우라늄 농축 권한에 대한 논의를 포함하고 있으며, 종전 합의 이후 핵협상을 추진하려는 시도입니다. 미국은 핵무력 문제를 다루는 부분에 대한 이란의 거부 의사를 확인하고, 유라늄 농축 자체를 인정하지 않겠다는 강경한 입장을 유지할 것으로 예상됩니다.",
+          "db_saved": true
+        },
+        {
+          "title": "항공모함 꺼낸 트럼프 \"즉시 점령 가능\"...이란 다음 공격 대상? [지금이뉴스] / YTN",
+          "video_id": "qoxqOkQO5dU",
+          "views": 3441,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=qoxqOkQO5dU",
+          "subtitle_summary": "트럼프 전 대통령이 쿠바에 대한 군사 행동 가능성을 시사하며, 한국 모함 에이브로햄 링코노를 활용한 즉각 점령을 언급하고 쿠바 해안에 배치 시 항복을 얻을 수 있다고 주장했습니다. 에너지, 국방, 금융 등 주요 산업 분야에 대한 추가 제재와 함께 쿠바 정부 인사들의 미국 입국 금지 조치를 발표하며 압박을 강화했습니다. 이에 쿠바는 트럼프 대통령의 위협을 강하게 반발하며 미국의 행위를 중대한 범죄 행위로 규탄했습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "Trump \"Not Satisfied with Iran Deal\"... How Long Will Iran Hold Out? (May 2, 2026 / Newsdesk / MBC)",
+          "video_id": "2LfauQbEp7s",
+          "views": 27317,
+          "upload_date": "2026-05-02",
+          "url": "https://www.youtube.com/watch?v=2LfauQbEp7s",
+          "subtitle_summary": "트럼프 대통령이 이란 핵 협상에 만족하지 않고 봉쇄 조치를 유지하며 장기전 가능성을 시사했고, 호르무즈 해협의 선박 통행은 제한적인 상황이 이어지고 있으며, 이란은 미국에 새로운 협상안을 제시했지만 협상력 약화 우려가 커지고 있다.",
+          "db_saved": true
+        }
+      ],
+      "max": 1.0646,
+      "min": 2.0515,
+      "nb_score": 0.5189,
+      "avg_views": 12854.33,
+      "total_views": 77126
+    },
+    {
+      "keyword": "반도체만 챙기나 삼성",
+      "is_fixed": false,
+      "views": [
+        1789,
+        7772,
+        722,
+        308,
+        2803
+      ],
+      "video_count": 5,
+      "videos": [
+        {
+          "title": "“Are they only looking out for semiconductors?”… Samsung Electronics union members ‘mass resignat...",
+          "video_id": "0QEVdyzxyZw",
+          "views": 1789,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=0QEVdyzxyZw",
+          "subtitle_summary": "삼성전자노조가 반도체 부문만 높은 성과급을 요구하며 다른 사업부와의 불균형을 심화시키면서 내부 갈등이 격화되고 있으며, 노조 탈퇴 건수가 급증하여 노조의 지지율이 하락하고 있습니다. DS 부문의 최대 이익을 바탕으로 성과급을 요구하는 데다, 어려움을 겪는 DX 부문에 대한 구체적인 요구가 없어 노조 내부 반대 목소리가 커지고 있습니다. 이러한 상황은 삼성전자 전체의 노동 관계에 부정적인 영향을 미칠 수 있다는 우려를 낳고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "\"반도체만 챙기나\"‥삼성 비반도체 조합원 노조 탈퇴 잇따라 (2026.05.03/뉴스데스크/MBC)",
+          "video_id": "PeOe3-jGlrU",
+          "views": 7772,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=PeOe3-jGlrU",
+          "subtitle_summary": "삼성전자 비반도체 조합원들이 반도체 사업 중심의 노조 운영과 성과급 불균형에 불만을 느껴 대규모로 탈퇴하면서 노조 내부 균열이 심화되고 있으며, 파업 가능성이 더욱 높아지고 있습니다. 특히 반도체 부문의 압도적인 영향력으로 DX 부문의 성과급 지급이 보류되면서, 비반도체 조합원들의 어려움이 가시화되고 있습니다. 조합비 공제와 파업 가능성에 대한 우려로 탈퇴가 더욱 가속화되는 가운데, 노조의 총파업 예고 또한 불안감을 증폭시키고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "삼성전자 파업 앞 '노노갈등'…\"반도체만 챙기나\" / 연합뉴스TV (YonhapnewsTV)",
+          "video_id": "BbUBYQ6pm4I",
+          "views": 722,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=BbUBYQ6pm4I",
+          "subtitle_summary": "삼성전자 노조 내부의 ‘노노 갈등’이 심화되면서 반도체 중심의 성과급 요구에 비반도체 부문 조합원들의 반발이 커지며 노조 탈퇴가 급증하고 있습니다. DS 부문의 높은 영업이익을 바탕으로 한 성과급 요구가 전체 임직원에게 고르게 적용될 수 있도록 해야 한다는 주장이 제기되고 있습니다. 삼성전자 파업은 수출 전선에 변수로 작용하며 우리 경제 전반에 부정적인 영향을 미칠 수 있다는 우려가 커지고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "\"반도체만 챙기나\" 노조 탈퇴 러시…삼성전자 '노노 갈등' 격화 [MBN 뉴스센터]",
+          "video_id": "3Xes0_CGMqw",
+          "views": 308,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=3Xes0_CGMqw",
+          "subtitle_summary": "삼성전자 노조에서 반도체 사업부만을 지나치게 챙긴다는 비판으로 인해 최근 2,500명 이상이 탈퇴하면서 노조 갈등이 심화되고 있으며, 총파업 예고에도 불구하고 노조의 대표성과 파업 명분이 약화될 수 있다는 우려가 제기되고 있다.",
+          "db_saved": true
+        },
+        {
+          "title": "\"왜 반도체만 챙기나\"..줄줄이 올라온 '탈퇴 인증글' / SBS 8뉴스",
+          "video_id": "ZtZOG0MwQys",
+          "views": 2803,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=ZtZOG0MwQys",
+          "subtitle_summary": "삼성전자 노조 내부 갈등이 심화되어 반도체 부문 중심의 파업 가능성이 커지고 있으며, 성과급 불균형 문제로 인해 노조 탈퇴가 급증하고 조합원 수가 감소하고 있습니다. 노조는 반도체 부문의 고액 성과급을 요구하는 반면, 완제품 부문에는 별도 요구안을 제시하지 않아 갈등이 더욱 첨예해지고 있습니다. 사측은 파업 피해가 발생하고 있지만 노조는 추가 파업 가능성을 열어두고 협상을 진행하고 있습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0.7185,
+      "min": 1.6606,
+      "nb_score": 0.4326,
+      "avg_views": 2678.8,
+      "total_views": 13394
+    },
+    {
+      "keyword": "챙기나 삼성",
+      "is_fixed": false,
+      "views": [
+        1742,
+        6253,
+        281,
+        706,
+        2731,
+        167
+      ],
+      "video_count": 6,
+      "videos": [
+        {
+          "title": "“Are they only looking out for semiconductors?”… Samsung Electronics union members ‘mass resignat...",
+          "video_id": "0QEVdyzxyZw",
+          "views": 1742,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=0QEVdyzxyZw",
+          "subtitle_summary": "삼성전자노조가 반도체 부문만 높은 성과급을 요구하며 다른 사업부와의 불균형을 심화시키면서 내부 갈등이 격화되고 있으며, 이는 노조 탈퇴 급증으로 이어져 노조 지지율이 하락하고 있습니다. DS 부문의 최대 이익을 바탕으로 성과급을 요구하는 행태가 DX 부문의 어려움을 가중시키고 있다는 비판이 제기되고 있습니다. 노조 내부의 갈등과 외부 비판이 겹치면서 파업 가능성이 더욱 높아지고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "\"반도체만 챙기나\"‥삼성 비반도체 조합원 노조 탈퇴 잇따라 (2026.05.03/뉴스데스크/MBC)",
+          "video_id": "PeOe3-jGlrU",
+          "views": 6253,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=PeOe3-jGlrU",
+          "subtitle_summary": "삼성전자 비반도체 조합원들이 반도체 사업 중심의 노조 운영과 성과급 불균형에 불만을 느껴 대규모로 탈퇴하면서 노조 내부 균열이 심화되고 있으며, 파업 가능성이 더욱 높아지고 있습니다. 특히 반도체 부문의 압도적인 영향력으로 DX 부문의 성과급 지급이 보류되면서, 비반도체 조합원들의 어려움이 가시화되고 있습니다. 조합비 공제와 파업 가능성에 대한 우려로 탈퇴가 더욱 가속화되는 가운데, 노조의 총파업 예고에도 불구하고 갈등은 지속될 것으로 보입니다.",
+          "db_saved": true
+        },
+        {
+          "title": "\"반도체만 챙기나\" 노조 탈퇴 러시…삼성전자 '노노 갈등' 격화 [MBN 뉴스센터]",
+          "video_id": "3Xes0_CGMqw",
+          "views": 281,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=3Xes0_CGMqw",
+          "subtitle_summary": "삼성전자 노조에서 반도체 사업부에 대한 불만이 커지며 하루 1,000명 이상 조합원 탈퇴가 이어지고, 전체 조합원의 80%를 차지하는 반도체 부문만을 챙긴다는 비판에 노조의 대표성과 파업 명분이 약화될 수 있다는 우려가 제기되고 있다. 노조는 영업이익의 15% 성가급을 요구하며 총파업을 예고했으나, 다른 사업부들의 어려움을 외면하며 갈등이 격화되고 있다. 오는 21일 총파업 강행 의지를 굽히지 않고 있는 가운데, 노조의 향후 행보가 주목된다.",
+          "db_saved": true
+        },
+        {
+          "title": "삼성전자 파업 앞 '노노갈등'…\"반도체만 챙기나\" / 연합뉴스TV (YonhapnewsTV)",
+          "video_id": "BbUBYQ6pm4I",
+          "views": 706,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=BbUBYQ6pm4I",
+          "subtitle_summary": "삼성전자 노조 내부의 ‘노노 갈등’이 심화되면서 반도체 중심의 성과급 요구에 비반도체 부문 조합원들의 반발이 커지며 노조 탈퇴가 급증하고 있습니다. DS 부문의 높은 영업이익을 바탕으로 성과급을 요구하는 노조의 행보가 DX 부문의 어려움을 가중시키면서 불균형적인 성과급 지급에 대한 우려가 제기되고 있습니다. 삼성전자 파업은 수출 전선에 변수로 작용하며 우리 경제 전체에 부정적인 영향을 미칠 수 있다는 지적이 나오고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "\"왜 반도체만 챙기나\"..줄줄이 올라온 '탈퇴 인증글' / SBS 8뉴스",
+          "video_id": "ZtZOG0MwQys",
+          "views": 2731,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=ZtZOG0MwQys",
+          "subtitle_summary": "삼성전자 노조 내부 갈등이 심화되어 반도체 부문 외 다른 부문의 직원들이 대규모로 노조 탈퇴를 결정하면서 조합원 수가 급감하고 있습니다. 반도체 부문의 높은 성과급 요구와 완제품 부문의 불확실한 미래에 대한 우려가 첨예하게 대립하며 노조의 파업 가능성이 커지고 있습니다. 노조의 조합비 인상 방침 또한 갈등을 더욱 심화시키고 있으며, 삼성 바이오로직스 노조 역시 파업을 지속하며 추가 협상 가능성을 열어두고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[다시보기] 트럼프 “우리는 해적과 같다”…이란 봉쇄 자랑하다 논란 자초 | 2026년 5월 3일 뉴스 TOP10",
+          "video_id": "nb7vwmc97zE",
+          "views": 167,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=nb7vwmc97zE",
+          "subtitle_summary": "미국 출장에서 큰 웃음을 뽐낸 트럼프의 모습과 함께, 70년 넘게 활동한 윤보키가 과거 계약 문제로 아이를 갖지 못했던 충격적인 고백을 털어놓으며 논란을 낳고 있습니다. 1960년대 원조 한류 스타로서 해외 활동 중이었던 윤보키 씨는 계약 조건 때문에 아이를 지울 수밖에 없었던 사연을 고백했습니다. 이로 인해 본인의 큰 아픔이 드러난 윤보키 씨는 회개와 함께 이 부분에 대한 이야기를 다시 한번 강조했습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0.6026,
+      "min": 1.4943,
+      "nb_score": 0.4033,
+      "avg_views": 1980.0,
+      "total_views": 11880
+    },
+    {
+      "keyword": "제시 트럼프",
+      "is_fixed": false,
+      "views": [
+        24065,
+        13965,
+        1030,
+        7135,
+        3718,
+        869,
+        2414,
+        3135
+      ],
+      "video_count": 8,
+      "videos": [
+        {
+          "title": "이란 '새로운 제안' 제시...트럼프 \"곧 검토\" / YTN",
+          "video_id": "axOuhzBw3IU",
+          "views": 24065,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=axOuhzBw3IU",
+          "subtitle_summary": "이란이 새로운 제안을 하며 트럼프 대통령이 검토 의사를 밝히면서 미국과 이란 간의 종전 협상 교착 상태가 심화되고 있습니다. 미국 정부는 호르무주 해협 통과 해운사에 대한 제재 경고와 함께 이란의 적십자 기부금 등 수익 창출 경로를 차단하려는 움직임을 보이고 있습니다. 이러한 미국의 강경 대응에 중국이 반발하며, 미국의 해외 자산 통제 카드가 중국 기업들에게도 부담으로 작용할 수 있다는 우려가 제기되고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "이란, 새 종전안 제시...트럼프 \"만족 못 해\" 압박 지속 / YTN",
+          "video_id": "xSAfss0urS8",
+          "views": 13965,
+          "upload_date": "2026-05-02",
+          "url": "https://www.youtube.com/watch?v=xSAfss0urS8",
+          "subtitle_summary": "이란이 파키스탄을 통해 제시한 새 종전안에는 미국과 이스라엘의 전쟁 중단 및 제재 일부 해제 후 핵 협상 가능성을 담고 있으며, 트럼프 전 대통령은 이에 만족하지 못하고 추가적인 요구를 할 것으로 예상됨. 이란은 경제적 어려움과 반조무시 가능성을 우려하여 협상에 무게를 두고 있으며, 핵 관련 전향적인 양보는 회의적인 입장임.",
+          "db_saved": true
+        },
+        {
+          "title": "이란, 14개 항 수정안 제시...트럼프 \"수용되기 어려워\" / YTN",
+          "video_id": "wWWFy3puEHM",
+          "views": 1030,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=wWWFy3puEHM",
+          "subtitle_summary": "이란이 14개항 수정안을 제시했지만, 트럼프 대통령은 충분한 대가를 받지 못했다며 수용 가능성이 낮다고 평가했고, 독일 주둔 미군 감축 규모를 5,000명 이상으로 확대하며 유럽 국가들에 압박을 가하고 있다. 호르무즈 해협 통과 선박에 대한 통행료 징수 보장과 제재 위험 경고를 통해 이란 전쟁 관련 국가들을 압박하는 가운데, 유가 상승으로 미국 정부의 부담이 커지고 있다.",
+          "db_saved": true
+        },
+        {
+          "title": "이란, 새 종전안 제시...트럼프 \"만족 못 해\" 압박 지속 / YTN",
+          "video_id": "pj4Jem0AWpE",
+          "views": 7135,
+          "upload_date": "2026-05-02",
+          "url": "https://www.youtube.com/watch?v=pj4Jem0AWpE",
+          "subtitle_summary": "이란이 새 종전안을 제시했지만, 트럼프 대통령은 이전 제안에 만족하지 못하며 압박을 지속하고 있으며, 호르무즈 해협 개방 및 핵 협상 등 핵심 쟁점에 대한 입장 차이를 극복하지 못하고 있는 상황이다. 새로운 안에서도 트럼프 대통령은 수용 불가 입장을 고수하며, 협상 교착 상태가 장기화될 가능성을 시사하고 있다. 월스트리트 저널 등 일부 언론은 이란이 봉쇄 철회와 종전 선언 유지에 초점을 맞춘 것으로 분석하고 있다.",
+          "db_saved": true
+        },
+        {
+          "title": "이란, 14개 항 수정안 제시...트럼프 \"수용 어려울 것\" / YTN",
+          "video_id": "O3211zskSD4",
+          "views": 3718,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=O3211zskSD4",
+          "subtitle_summary": "이란이 종전 협상에 14개 항의 새로운 제안을 제시했지만, 트럼프 대통령은 충분한 대가를 받지 못했다며 수용 가능성이 낮다고 평가하고 있습니다. 미국 측은 9개 항에 대한 반박 의견을 제시했으며, 이란은 해협 통제권 확보와 전선 완전 종전을 요구하고 있습니다. 양측의 입장 차이로 인해 협상 타결 가능성은 불투명한 상황입니다.",
+          "db_saved": true
+        },
+        {
+          "title": "이란, 14개항 새 협상안 제시…트럼프 “곧 검토할 것” / KBS  2026.05.03.",
+          "video_id": "u82Rh2IMdRQ",
+          "views": 869,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=u82Rh2IMdRQ",
+          "subtitle_summary": "이란이 전쟁 배상금 지급, 호르무주 해협 통제권, 미군 철수 등 14개항의 수정 협상안을 제시하며 전쟁 종식을 촉구했지만, 트럼프 대통령은 충분한 대가가 없는 협상에는 수용될 가능성이 낮다고 평가했습니다. 특히 호르무주 해협 통제권 문제는 트럼프 대통령이 타협할 수 없는 핵심 쟁점이며, 전쟁 배상금 지급에 대한 협상 가능성도 희박하다는 분석입니다. 이란의 수정 협상안은 미-이란 종전 협상에 새로운 변수를 던져 넣었지만, 합의는 여전히 어려운 상황으로 전망됩니다.",
+          "db_saved": true
+        },
+        {
+          "title": "'전쟁을 끝내는 방법' 제시한 이란…바로 걷어찬 트럼프 [뉴스와] / 연합뉴스TV(YonhapnewsTV)",
+          "video_id": "nIJ_PDTj_vs",
+          "views": 2414,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=nIJ_PDTj_vs",
+          "subtitle_summary": "미국이 호르무즈 해협 통과를 위해 이란과 협상하려던 시도를 거부하며, 해운사 제재 가능성을 경고하고 우라네 핵 자산 동결을 시도하는 가운데, 유가 상승과 미국 국민들의 불만이 고조되고 있다는 분석이 나오고 있다.",
+          "db_saved": true
+        },
+        {
+          "title": "[🔴속보] \"美 도발만 멈춘다면\" 이란 새 종전안 제시…트럼프 \"마음에 안 들어, 폭격 원하나\" / 연합뉴스TV(YonhapnewsTV)",
+          "video_id": "cnGHJMPtkWQ",
+          "views": 3135,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=cnGHJMPtkWQ",
+          "subtitle_summary": "이란이 미국과의 종전 협상안으로 해상 봉쇄 해제와 제재 해제를 제시했지만, 트럼프 대통령은 만족하지 않고 일괄적인 협상 탈을 선호하며 상황은 여전히 불투명하다. 미국 정부는 이란 전쟁으로 인한 유가 상승과 국민들의 불만을 겪고 있으며, 유가 하락을 위한 미 백악관의 수단이 제한되고 있다. 이란은 미국의 해상 봉쇄로 원유 저장고가 차오르자 선재적으로 원유 감산을 시작했지만, 과거 제재 경험을 바탕으로 대응하고 있다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0.469,
+      "min": 1.3748,
+      "nb_score": 0.3411,
+      "avg_views": 7041.38,
+      "total_views": 56331
+    },
+    {
+      "keyword": "빼고 관세",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "빼고 관세 올리고",
+      "is_fixed": false,
+      "views": [
+        52609
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "CEO 헝, 바나나 수확 | 싱글맘과 함께하는 자급자족 생활",
+          "video_id": "HiAGbDoVvu4",
+          "views": 52609,
+          "upload_date": "2026-05-02",
+          "url": "https://www.youtube.com/watch?v=HiAGbDoVvu4",
+          "subtitle_summary": "[CEO 헝은 불안정한 시장 상황과 목재 수급난에 대한 우려를 표하며, 신제품 출시 및 과시적인 행동을 자제하고 투안과 함께 캄보디아에서 목재를 수입하는 계획을 수립한다. 해외 관계 구축과 마케팅 강화, 투자 자금 확보를 통해 장기적인 성장을 위한 방안을 모색하며, 투안에게 해외 근무 및 자금 지원을 맡긴다.]",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "관세 올리고 트럼프",
+      "is_fixed": false,
+      "views": [
+        1998
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "[이슈] 트럼프 'EU 비협조' 보복 시작…관세 올리고 미군 철수 / “예상했던 일”…주독미군 5천 명 감축에 독일 국방장관 '덤덤' | MBN NEWS",
+          "video_id": "ACuPqFUwLck",
+          "views": 1998,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=ACuPqFUwLck",
+          "subtitle_summary": "트럼프 미국 대통령이 유럽산 자동차에 대한 관세를 25%로 인상하고, 주독 미군 5천 명 철수를 결정하며 유럽과의 갈등을 심화시켰다. 이는 약속된 투자 이행 지연 외에도 이란 전쟁에 대한 보복이라는 해석이 제기되고 있다. 이번 결정은 우리나라를 포함한 주변국에 대한 영향도 고려해야 할 중요한 사안이다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "구속 법원",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "법원 도주",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "구속 법원 도주",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    }
+  ]
+}

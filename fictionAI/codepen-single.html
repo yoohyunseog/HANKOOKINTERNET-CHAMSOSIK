@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FictionAI Scene Loop Demo</title>
+  <style>
+    :root {
+      --bg: #f5efe2;
+      --panel: rgba(255, 251, 243, 0.9);
+      --ink: #1b1a17;
+      --muted: #5c5448;
+      --line: rgba(70, 56, 38, 0.14);
+      --accent: #b64926;
+      --accent-2: #345c4f;
+      --accent-2-soft: #d9ebe3;
+      --shadow: 0 18px 45px rgba(67, 45, 18, 0.12);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", "Noto Sans KR", sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top left, rgba(255, 166, 77, 0.22), transparent 24%),
+        radial-gradient(circle at top right, rgba(52, 92, 79, 0.18), transparent 30%),
+        linear-gradient(180deg, #fbf7ef 0%, var(--bg) 100%);
+    }
+
+    .wrap {
+      width: min(1180px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 32px 0 56px;
+    }
+
+    .hero, .panel {
+      border: 1px solid var(--line);
+      background: rgba(255, 251, 243, 0.9);
+      box-shadow: var(--shadow);
+    }
+
+    .hero {
+      padding: 26px 28px;
+      border-radius: 28px;
+      background: linear-gradient(135deg, rgba(255,255,255,0.9), rgba(255,244,233,0.88));
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: #fff;
+      color: var(--accent);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 14px 0 10px;
+      font-size: clamp(30px, 4vw, 50px);
+      line-height: 1.04;
+    }
+
+    .lead {
+      max-width: 760px;
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.7;
+      font-size: 16px;
+    }
+
+    .controls, .flow, .cards, .memory-list, .future-list, .rules-list, .character-list, .log {
+      display: grid;
+      gap: 10px;
+    }
+
+    .controls {
+      grid-auto-flow: column;
+      grid-auto-columns: max-content;
+      justify-content: start;
+      margin-top: 22px;
+    }
+
+    button {
+      border: 0;
+      border-radius: 14px;
+      padding: 12px 18px;
+      font: inherit;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .primary { color: white; background: linear-gradient(135deg, var(--accent), #d56a46); }
+    .secondary { color: var(--accent-2); background: var(--accent-2-soft); }
+    .ghost { color: var(--ink); background: rgba(255, 255, 255, 0.75); border: 1px solid var(--line); }
+
+    .layout {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .panel {
+      border-radius: 24px;
+      padding: 20px;
+      backdrop-filter: blur(14px);
+    }
+
+    .panel h2, .panel h3 { margin: 0 0 14px; }
+
+    .step, .memory-item, .future-item, .rule-item, .character-card, .log-entry, .stat, .time-card {
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: rgba(255,255,255,0.82);
+      padding: 12px 14px;
+      line-height: 1.5;
+    }
+
+    .step {
+      position: relative;
+      padding-left: 18px;
+      overflow: hidden;
+    }
+
+    .step::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 6px;
+      background: transparent;
+    }
+
+    .step.active {
+      border-color: rgba(182, 73, 38, 0.38);
+      background: linear-gradient(135deg, #fffaf5, #fff1e7);
+    }
+
+    .step.active::before {
+      background: linear-gradient(180deg, var(--accent), #ff946c);
+    }
+
+    .step small, .label, .character-meta { color: var(--muted); }
+    .step-tag { font-size: 11px; font-weight: 800; color: var(--accent); letter-spacing: 0.08em; text-transform: uppercase; }
+
+    .mini-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .value { font-size: 23px; font-weight: 800; }
+
+    .worldline {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .time-card strong {
+      display: inline-block;
+      margin-bottom: 10px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      font-size: 12px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .past strong { background: #ece8ff; color: #5e46cf; }
+    .present strong { background: #d9ebe3; color: #245344; }
+    .future strong { background: #ffe3cb; color: #9c4f16; }
+    .zero strong { background: #efefef; color: #444; }
+
+    .memory-list, .future-list, .rules-list { margin: 0; padding: 0; list-style: none; }
+    .log { max-height: 280px; overflow: auto; }
+    .log-entry { border-left: 4px solid var(--accent-2); }
+
+    .character-card { display: grid; gap: 6px; }
+    .character-head { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+    .character-name { font-weight: 800; }
+    .character-role {
+      display: inline-block;
+      padding: 4px 8px;
+      border-radius: 999px;
+      background: var(--accent-2-soft);
+      color: var(--accent-2);
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    code {
+      display: inline-block;
+      padding: 2px 6px;
+      border-radius: 8px;
+      background: rgba(27, 26, 23, 0.08);
+      font-size: 12px;
+    }
+
+    @media (max-width: 980px) {
+      .layout { grid-template-columns: 1fr; }
+      .worldline { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+
+    @media (max-width: 640px) {
+      .wrap { width: min(100% - 20px, 1180px); }
+      .controls { grid-auto-flow: row; }
+      .mini-grid, .worldline { grid-template-columns: 1fr; }
+      .hero, .panel { border-radius: 20px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero">
+      <div class="eyebrow">FictionAI Stateful Loop</div>
+      <h1>과거, 현재, 미래, -0-를 잇는 장면 데이터베이스</h1>
+      <p class="lead">장면 생성부터 이벤트, 규칙 평가, 상태 전이, 메모리 커밋, 미래 초안, 검증까지 한 사이클을 연속적으로 돌려보는 예제입니다.</p>
+      <div class="controls">
+        <button class="primary" id="runCycleBtn">한 사이클 실행</button>
+        <button class="secondary" id="advanceStepBtn">한 단계씩 진행</button>
+        <button class="ghost" id="resetBtn">세계 초기화</button>
+      </div>
+    </section>
+
+    <section class="layout">
+      <div class="panel">
+        <h2>Process Loop</h2>
+        <div class="flow" id="flow"></div>
+      </div>
+
+      <div class="cards">
+        <div class="panel">
+          <h2>Current Scene</h2>
+          <div class="mini-grid">
+            <div class="stat"><span class="label">Cycle</span><div class="value" id="cycleValue">0</div></div>
+            <div class="stat"><span class="label">Scene ID</span><div class="value" id="sceneValue">-0-</div></div>
+            <div class="stat"><span class="label">Actor</span><div class="value" id="actorValue">Observer</div></div>
+            <div class="stat"><span class="label">Intent Score</span><div class="value" id="scoreValue">0.00</div></div>
+          </div>
+          <div class="stat" style="margin-top:12px;">
+            <span class="label">Summary</span>
+            <div id="summaryValue">세계가 아직 생성되지 않았습니다.</div>
+          </div>
+        </div>
+
+        <div class="panel">
+          <h3>Rules Evaluation</h3>
+          <ul class="rules-list" id="rulesList"></ul>
+        </div>
+
+        <div class="panel">
+          <h3>Cast In Scene</h3>
+          <div class="character-list" id="characterList"></div>
+        </div>
+
+        <div class="panel">
+          <h3>Validation Log</h3>
+          <div class="log" id="log"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel" style="margin-top:20px;">
+      <h2>Temporal Database</h2>
+      <div class="worldline">
+        <article class="time-card zero"><strong>-0- Seed</strong><div id="zeroCard">초기 조건, 세계 규칙, 기준 장면.</div></article>
+        <article class="time-card past"><strong>Past</strong><div id="pastCard">아직 저장된 과거 장면이 없습니다.</div></article>
+        <article class="time-card present"><strong>Present</strong><div id="presentCard">현재 장면이 생성되면 여기 표시됩니다.</div></article>
+        <article class="time-card future"><strong>Future Draft</strong><ul class="future-list" id="futureList"></ul></article>
+      </div>
+    </section>
+
+    <section class="layout" style="margin-top:20px;">
+      <div class="panel">
+        <h2>Memory Commit Queue</h2>
+        <ul class="memory-list" id="memoryList"></ul>
+      </div>
+      <div class="panel">
+        <h2>Data Shape</h2>
+        <div class="log-entry">각 장면은 <code>scene_id</code>, <code>prev_id</code>, <code>next_candidates</code>, <code>state</code>, <code>score</code>, <code>validation</code>을 가진다고 가정합니다.</div>
+        <div class="log-entry">이 파일은 CodePen 업로드용 단일 버전입니다.</div>
+      </div>
+    </section>
+  </div>
+
+  <script>
+    const steps = [
+      { title: "세계 상태 초기화", detail: "기준 규칙, 시간축, 메모리 루트 설정" },
+      { title: "장면 생성", detail: "시간, 장소, 인물, 환경을 결합해 Scene Birth 수행" },
+      { title: "상호작용 발생", detail: "이동, 대화, 충돌, 선택 중 하나의 이벤트 발화" },
+      { title: "물리·규칙 평가", detail: "가능 여부, 비용, 제약, 확률 가중치 계산" },
+      { title: "상태 변화", detail: "과거, 현재, 미래, -0- 관계 갱신" },
+      { title: "기억 저장", detail: "현재 장면 커밋 + prev / next 연결" },
+      { title: "의미 해석", detail: "유사도, 변화율, 의도 점수 계산" },
+      { title: "다음 장면 예측", detail: "미래 후보 장면 초안 생성" },
+      { title: "검증·정정", detail: "충돌, 모순, 단절을 검사하고 수정" },
+      { title: "연속 진입", detail: "세계 재초기화 없이 다음 장면 루프로 진입" }
+    ];
+
+    const actors = ["기록자", "항해사", "감시자", "아이", "사서"];
+    const places = ["유리 온실", "침수된 광장", "기록 보관소", "해안 관측소", "철제 복도"];
+    const moods = ["긴장", "정적", "기대", "왜곡", "회복"];
+    const events = ["이동", "대화", "충돌", "선택", "기억 호출"];
+    const supportRoles = ["관찰자", "조력자", "반대자", "증인", "기록 대상"];
+
+    const state = {
+      cycle: 0,
+      activeStep: 0,
+      memory: [],
+      currentScene: null,
+      futureDrafts: [],
+      worldSeed: {
+        id: "-0-",
+        summary: "세계의 기준점. 모든 장면은 이 상태에서 분기된다.",
+        rules: ["시간은 연속된다", "장면은 prev를 가진다", "미래는 복수 후보를 허용한다"]
+      }
+    };
+
+    const flowEl = document.getElementById("flow");
+    const cycleValue = document.getElementById("cycleValue");
+    const sceneValue = document.getElementById("sceneValue");
+    const actorValue = document.getElementById("actorValue");
+    const scoreValue = document.getElementById("scoreValue");
+    const summaryValue = document.getElementById("summaryValue");
+    const rulesList = document.getElementById("rulesList");
+    const characterList = document.getElementById("characterList");
+    const logEl = document.getElementById("log");
+    const zeroCard = document.getElementById("zeroCard");
+    const pastCard = document.getElementById("pastCard");
+    const presentCard = document.getElementById("presentCard");
+    const futureList = document.getElementById("futureList");
+    const memoryList = document.getElementById("memoryList");
+
+    function pick(list, offset = 0) {
+      return list[(state.cycle + offset) % list.length];
+    }
+
+    function renderFlow() {
+      flowEl.innerHTML = "";
+      steps.forEach((step, index) => {
+        const node = document.createElement("div");
+        node.className = `step${index === state.activeStep ? " active" : ""}`;
+        node.innerHTML = `<div class="step-tag">Step ${index + 1}</div><strong>${step.title}</strong><small>${step.detail}</small>`;
+        flowEl.appendChild(node);
+      });
+    }
+
+    function buildCast(mainActor, mood, event) {
+      return [
+        { name: mainActor, role: "주인공", state: `${mood} 상태`, intent: `${event}을 주도` },
+        { name: pick(actors, 1), role: pick(supportRoles, 1), state: "장면 반응 추적", intent: "주인공의 선택을 관찰" },
+        { name: pick(actors, 2), role: pick(supportRoles, 2), state: "긴장도 상승", intent: "갈등 또는 협력 가능성 보유" }
+      ];
+    }
+
+    function buildScene() {
+      const actor = pick(actors);
+      const place = pick(places, 1);
+      const mood = pick(moods, 2);
+      const event = pick(events, 3);
+      const id = `scene-${String(state.cycle + 1).padStart(3, "0")}`;
+      const prev = state.currentScene ? state.currentScene.id : state.worldSeed.id;
+      const score = Number((0.42 + ((state.cycle * 0.137) % 0.47)).toFixed(2));
+
+      return {
+        id,
+        prev_id: prev,
+        actor,
+        place,
+        mood,
+        event,
+        score,
+        cast: buildCast(actor, mood, event),
+        summary: `${actor}가 ${place}에서 ${event}을 발생시켜 ${mood} 상태를 만든 장면`,
+        rules: [`${event} 가능 여부: 허용`, `비용 평가: ${2 + (state.cycle % 4)}`, "제약 검사: prev 연결 유지"],
+        validation: ["시간 역행 없음", "인물 중복 충돌 없음", `prev 연결: ${prev}`]
+      };
+    }
+
+    function buildFutureDrafts(scene) {
+      return [
+        `${scene.actor}가 다음 장면에서 선택을 보류한다`,
+        `${scene.place}의 환경 변수가 바뀌어 충돌 비용이 증가한다`,
+        `${scene.prev_id}와의 의미 유사도가 높은 회상 장면이 개입한다`
+      ];
+    }
+
+    function commitScene(scene) {
+      state.memory.unshift({ id: scene.id, prev_id: scene.prev_id, summary: scene.summary, score: scene.score });
+      state.memory = state.memory.slice(0, 6);
+    }
+
+    function addLog(message) {
+      const entry = document.createElement("div");
+      entry.className = "log-entry";
+      entry.textContent = message;
+      logEl.prepend(entry);
+      while (logEl.children.length > 8) logEl.removeChild(logEl.lastChild);
+    }
+
+    function renderRules() {
+      rulesList.innerHTML = "";
+      const rules = state.currentScene ? state.currentScene.rules : state.worldSeed.rules;
+      rules.forEach((rule) => {
+        const item = document.createElement("li");
+        item.className = "rule-item";
+        item.textContent = rule;
+        rulesList.appendChild(item);
+      });
+    }
+
+    function renderCharacters() {
+      characterList.innerHTML = "";
+      const cast = state.currentScene ? state.currentScene.cast : [];
+      if (cast.length === 0) {
+        const empty = document.createElement("div");
+        empty.className = "character-card";
+        empty.textContent = "장면이 생성되면 등장인물 목록이 표시됩니다.";
+        characterList.appendChild(empty);
+        return;
+      }
+
+      cast.forEach((character) => {
+        const card = document.createElement("div");
+        card.className = "character-card";
+        card.innerHTML = `<div class="character-head"><span class="character-name">${character.name}</span><span class="character-role">${character.role}</span></div><div class="character-meta">상태: ${character.state}</div><div class="character-meta">의도: ${character.intent}</div>`;
+        characterList.appendChild(card);
+      });
+    }
+
+    function renderFutureDrafts() {
+      futureList.innerHTML = "";
+      const drafts = state.futureDrafts.length > 0 ? state.futureDrafts : ["미래 후보가 아직 생성되지 않았습니다."];
+      drafts.forEach((draft, index) => {
+        const item = document.createElement("li");
+        item.className = "future-item";
+        item.textContent = state.futureDrafts.length > 0 ? `Draft ${index + 1}. ${draft}` : draft;
+        futureList.appendChild(item);
+      });
+    }
+
+    function renderMemory() {
+      memoryList.innerHTML = "";
+      if (state.memory.length === 0) {
+        const empty = document.createElement("li");
+        empty.className = "memory-item";
+        empty.textContent = "아직 커밋된 장면이 없습니다.";
+        memoryList.appendChild(empty);
+        return;
+      }
+
+      state.memory.forEach((item) => {
+        const row = document.createElement("li");
+        row.className = "memory-item";
+        row.innerHTML = `<strong>${item.id}</strong><br>prev: <code>${item.prev_id}</code><br>${item.summary}<br>score: ${item.score.toFixed(2)}`;
+        memoryList.appendChild(row);
+      });
+    }
+
+    function renderWorld() {
+      cycleValue.textContent = String(state.cycle);
+      sceneValue.textContent = state.currentScene ? state.currentScene.id : "-0-";
+      actorValue.textContent = state.currentScene ? state.currentScene.actor : "Observer";
+      scoreValue.textContent = state.currentScene ? state.currentScene.score.toFixed(2) : "0.00";
+      summaryValue.textContent = state.currentScene ? state.currentScene.summary : "세계가 아직 생성되지 않았습니다.";
+      zeroCard.textContent = `${state.worldSeed.summary} 규칙 ${state.worldSeed.rules.length}개 활성`;
+      pastCard.textContent = state.memory[1] ? `${state.memory[1].id} | ${state.memory[1].summary}` : "아직 저장된 과거 장면이 없습니다.";
+      presentCard.textContent = state.currentScene ? `${state.currentScene.id} | prev: ${state.currentScene.prev_id} | ${state.currentScene.summary}` : "현재 장면이 생성되면 여기 표시됩니다.";
+      renderRules();
+      renderCharacters();
+      renderFutureDrafts();
+      renderMemory();
+      renderFlow();
+    }
+
+    function runCycle() {
+      state.cycle += 1;
+      state.activeStep = 1;
+      const scene = buildScene();
+      state.currentScene = scene;
+      addLog(`[${scene.id}] 장면 생성: ${scene.actor} @ ${scene.place}`);
+      state.activeStep = 2;
+      addLog(`[${scene.id}] 이벤트 발생: ${scene.event}`);
+      state.activeStep = 3;
+      addLog(`[${scene.id}] 규칙 평가 완료: 비용 ${2 + (state.cycle % 4)}`);
+      state.activeStep = 4;
+      addLog(`[${scene.id}] 상태 전이: past/present/future 갱신`);
+      state.activeStep = 5;
+      commitScene(scene);
+      addLog(`[${scene.id}] 메모리 커밋: prev=${scene.prev_id}`);
+      state.activeStep = 6;
+      addLog(`[${scene.id}] 의미 해석: intent score ${scene.score.toFixed(2)}`);
+      state.activeStep = 7;
+      state.futureDrafts = buildFutureDrafts(scene);
+      addLog(`[${scene.id}] 미래 초안 ${state.futureDrafts.length}개 생성`);
+      state.activeStep = 8;
+      addLog(`[${scene.id}] 검증 완료: ${scene.validation.join(", ")}`);
+      state.activeStep = 9;
+      addLog(`[${scene.id}] 다음 장면 루프로 연속 진입 준비`);
+      renderWorld();
+    }
+
+    function advanceStep() {
+      if (!state.currentScene || state.activeStep >= steps.length - 1) {
+        runCycle();
+        return;
+      }
+      state.activeStep += 1;
+      addLog(`단계 이동: ${steps[state.activeStep].title}`);
+      renderWorld();
+    }
+
+    function resetWorld() {
+      state.cycle = 0;
+      state.activeStep = 0;
+      state.memory = [];
+      state.currentScene = null;
+      state.futureDrafts = [];
+      logEl.innerHTML = "";
+      addLog("세계 상태 초기화 완료. -0- 시드만 남아 있습니다.");
+      renderWorld();
+    }
+
+    document.getElementById("runCycleBtn").addEventListener("click", runCycle);
+    document.getElementById("advanceStepBtn").addEventListener("click", advanceStep);
+    document.getElementById("resetBtn").addEventListener("click", resetWorld);
+    resetWorld();
+  </script>
+</body>
+</html>

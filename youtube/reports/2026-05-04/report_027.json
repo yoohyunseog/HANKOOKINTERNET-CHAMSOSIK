@@ -1,0 +1,585 @@
+{
+  "timestamp": "2026-05-04T12:13:53.370468",
+  "model": "news-singleline:latest",
+  "keyword_count": 3,
+  "analyze_subtitles": true,
+  "analysis_source": "youtube",
+  "keywords": [
+    {
+      "keyword": "오늘의 주요 뉴스",
+      "is_fixed": true,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "코스피 사상 최고치",
+      "is_fixed": false,
+      "views": [
+        61,
+        4959
+      ],
+      "video_count": 2,
+      "videos": [
+        {
+          "title": "코스피, 또 사상 최고치 경신…6,780선 돌파 / 연합뉴스TV (YonhapnewsTV)",
+          "video_id": "w-2wTtxHdS0",
+          "views": 61,
+          "upload_date": "2026-05-04",
+          "url": "https://www.youtube.com/watch?v=w-2wTtxHdS0",
+          "subtitle_summary": "코스피가 외국인 및 기관의 순매수 견인으로 6,780선까지 상승하며 연일 최고치를 경신했고, 코스닥 지수 역시 상승세를 이어갔으며, 뉴욕 증시의 긍정적인 흐름과 트럼프 행정부의 호르무존 선박 구출 작전 발표가 국내 증시 투자 심리를 개선시키는 데 영향을 미쳤다.",
+          "db_saved": true
+        },
+        {
+          "title": "[속보] 코스피, 6782.93에 개장…장중 사상 최고치 경신 [이슈PLAY] / JTBC News",
+          "video_id": "P-Xcb87CSEg",
+          "views": 4959,
+          "upload_date": "2026-05-04",
+          "url": "https://www.youtube.com/watch?v=P-Xcb87CSEg",
+          "subtitle_summary": "코스피가 미국과 이란의 종전 협상 악재에도 불구하고 반도체 수출 실적과 주요 기업들의 역대급 실적 덕분에 사상 최고치를 경신하며 6,382.93를 기록했고, 미국 연준의 금리 결정과 기업 실적 발표에 따른 변동성을 주시해야 상황이다.",
+          "db_saved": true
+        }
+      ],
+      "max": 2.7718,
+      "min": 2.6048,
+      "nb_score": 1.0641,
+      "avg_views": 2510.0,
+      "total_views": 5020
+    },
+    {
+      "keyword": "대한전선 주가 급등",
+      "is_fixed": false,
+      "views": [
+        2277,
+        1830,
+        317,
+        385,
+        2016,
+        2713
+      ],
+      "video_count": 6,
+      "videos": [
+        {
+          "title": "[대한전선 주가 전망] 오늘도 전력 섹터 급등! 목표가 여기까지 보셔야 합니다! 절대 놓치지 마세요! 대한전선 주식 분석! #대한전선 #대한전선주가 #대한전선주가전망",
+          "video_id": "pGEPL-ekxCM",
+          "views": 2277,
+          "upload_date": "2026-05-04",
+          "url": "https://www.youtube.com/watch?v=pGEPL-ekxCM",
+          "subtitle_summary": "전력 전선 섹터 동반 상승과 대한전선의 52주 신고가 경신, 연기금 펀드 등 기관 투자자들의 적극적인 매수세 유입으로 인해 8만원 돌파 가능성이 높아지고 있으며, 수주 잔고 증가와 1분기 실적 호조를 바탕으로 지속적인 상승세가 예상된다.",
+          "db_saved": true
+        },
+        {
+          "title": "[대한전선 주가전망] 이번주 이 흐름 아무도 모를겁니다.",
+          "video_id": "ZfXKWgkj1DE",
+          "views": 1830,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=ZfXKWgkj1DE",
+          "subtitle_summary": "대한전선 주가 흐름을 분석한 두박이의 영상으로, 주주 및 클로카죽분들을 환영하며 약속을 지키지 못한 점 양해를 구하고, 이번 주에는 두박이의 말 한마디에 집중해 달라는 요청을 전했습니다. 관성이 잃어버린 대한전선의 움직임은 예상치 못한 불안감을 야기하며, 꼬리 지점 가격대를 주목해야 함을 강조했습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[대한전선 주가 전망] 유턴기업 1호 + AI 데이터센터 전력 수요 폭증, 70,000원 돌파 가능,과연 오늘의 방향은? #대한전선",
+          "video_id": "FHO09dMBYjc",
+          "views": 317,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=FHO09dMBYjc",
+          "subtitle_summary": "대한전선 주가가 어닝 서프라이즈 실적과 유턴 기업 지정에 힘입어 70,000원 돌파 가능성이 제기되었으며, 사상 최대 분기 실적과 수주 잔고 증가로 외국인 및 기관의 동반 매수세가 쏟아지고 있다. 2010년 이후 최대 실적을 기록한 대한전선은 1분기 매출 1조 834억 원, 영업 이익 604억 원을 달성하며 주목받고 있다. 정부의 세제 혜택과 투자 지원 기대감도 주가 상승에 긍정적인 영향을 미치고 있다.",
+          "db_saved": true
+        },
+        {
+          "title": "[대한전선 주가전망] 신고가 59,400원 갱신! 5개월 +178% 폭등 대한전선 지금 들어가도 될까요?  #대한전선주가전망 #대한전선목표가 #대한전선",
+          "video_id": "us_vSj_Vzgc",
+          "views": 385,
+          "upload_date": "2026-05-04",
+          "url": "https://www.youtube.com/watch?v=us_vSj_Vzgc",
+          "subtitle_summary": "대한전선 주가가 5개월 만에 신고가 59,400원까지 급등하며 178% 상승했다. 1분기 사상 최대 영업이익과 역대 최대 수주 잔고를 기록하며 호실적이 시장에 반영된 결과다. 단, 과열 가능성을 염두에 두고 펀더멘털을 지속적으로 확인해야 한다.",
+          "db_saved": true
+        },
+        {
+          "title": "[대한전선 주가 전망] 2연상 찍고 투자 경고 지정 예고! 불장 꺾이지 않는 이유! 내일 갭상승 출발!  #대한전선목표가",
+          "video_id": "q_YxwrMZzZM",
+          "views": 2016,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=q_YxwrMZzZM",
+          "subtitle_summary": "[대한전선이 역대급 실적과 함께 최고가를 갱신하며 강세를 보이고 있으며, 애플 실적의 영향과 이란-미국 협상으로 인한 유가 하락, 원달러 환율 안정 기대감 등이 투자 심리를 자극하고 있습니다. 특히, MSCI 한국 지수 상승과 5월 증시 전망이 긍정적이며, 외국인 수급이 다시 증가한다면 대한전선 주가는 7만 원까지 급등할 가능성이 있습니다.]",
+          "db_saved": true
+        },
+        {
+          "title": "📕[대한전선 주가전망] 공매도 2690만주 증발사태 \"숏스퀴즈 제대로 터진다\" 반드시 '이 가격'에서 장대양봉 발생 대폭등 터질수 밖에 없는 진짜이유 세력 상단 돌파직전 쌍끌이매수",
+          "video_id": "6qQNuV70VGo",
+          "views": 2713,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=6qQNuV70VGo",
+          "subtitle_summary": "대한전선 주가가 3거래일 연속 장대양봉을 기록하며 56,300원 선에서 상승세를 이어가고 있으며, 프로그램 매수 및 증권사 타점 매수가 동시 발생하고 있습니다. 공매도 감소와 어닝 서프라이즈, 수급 개선 등의 요인이 맞물려 단기적으로 추가 상승 가능성이 높다고 분석됩니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 1.8069,
+      "min": 2.0733,
+      "nb_score": 0.8715,
+      "avg_views": 1589.67,
+      "total_views": 9538
+    },
+    {
+      "keyword": "하이닉스 주가 전망",
+      "is_fixed": false,
+      "views": [
+        3139,
+        2321,
+        317,
+        522,
+        3101,
+        316,
+        3042,
+        251,
+        315
+      ],
+      "video_count": 9,
+      "videos": [
+        {
+          "title": "[SK하이닉스 주가전망] 💥방금, 발표했습니다. 이거 심상치가 않습니다. 필수시청  #sk하이닉스 #sk하이닉스주가전망 #sk하이닉스주가",
+          "video_id": "wH7ItXsn9PA",
+          "views": 3139,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=wH7ItXsn9PA",
+          "subtitle_summary": "SK하이닉스가 52조 원 매출, 37조 원 영업이익을 기록하며 어닝 서프라이즈를 발표했지만, 시장의 기대치를 충족하지 못하고 HBM4 수익성 하락 및 AI 사이클 후반에 대한 우려가 제기됨에 따라 주가 상승에 제약이 예상된다.",
+          "db_saved": true
+        },
+        {
+          "title": "[SK하이닉스 주가전망] \"새벽 5시 긴급\" 실적재료 소멸? 외인  야간선물 4380억 롱배팅했네요. 오늘 터집니다. 오전장 싹 다 뒤집힙니다.",
+          "video_id": "Ztm132rCMcI",
+          "views": 2321,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=Ztm132rCMcI",
+          "subtitle_summary": "[SK하이닉스의 역대 최고 실적이 발표되었으나, 시장 기대치 상승과 일부 증권사의 하향 전망으로 인해 주가가 눌리고 있는 상황이다. 미국 반도체 시장의 강세와 그에 따른 온도 차이로 인해 오늘 장에서 주가 변동성이 커질 것으로 예상된다. 실적 재료 소멸 구간에서 털림을 줄이기 위해 투자자들은 신중한 접근이 필요하다.]",
+          "db_saved": true
+        },
+        {
+          "title": "[SK 하이닉스 주가 전망] 신고가 폭등! HBM4 엔비디아 루빈 70% 독점 \"영업이익 37조 사상최대\" #SK하이닉스주가전망 #SK하이닉스목표가 #SK하이닉스",
+          "video_id": "qCMWEXnajHw",
+          "views": 317,
+          "upload_date": "2026-05-04",
+          "url": "https://www.youtube.com/watch?v=qCMWEXnajHw",
+          "subtitle_summary": "SK 하이닉스가 1분기 사상 최대 영업이익 37조 원을 기록하며 주가가 신고가를 갈아치웠습니다. HBM4 양산 본격화와 엔비디아 루빈 독점 공급 모멘텀으로 2026년 연간 영업이익 231조 원 전망에 힘입어 목표 주가 상향이 이루어졌습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[sk하이닉스 주가 전망] 영업이익 251조 간다? KB증권 폭탄 전망 #SK하이닉스주가전망 #SK하이닉스목표가 #SK하이닉스",
+          "video_id": "Y3hADzqLUgw",
+          "views": 522,
+          "upload_date": "2026-05-04",
+          "url": "https://www.youtube.com/watch?v=Y3hADzqLUgw",
+          "subtitle_summary": "SK하이닉스가 1분기 매출 50조 원 신기록을 달성하며 영업이익률 72%를 기록, 글로벌 영업이익 4위에 해당하는 37조 6,103억 원을 발표하며 시장의 기대감을 높였습니다. KB증권은 SK하이닉스의 연간 영업이익을 251조 원으로 전망하며 목표가를 상향 조정했고, 다른 증권사들도 목표가를 높이는 추세입니다. 특히, 4월 27일 130만 원 고지를 넘긴 후 4월 30일 차익실현 매물로 128만 6,000원까지 하락했지만, 1분기 실적 호조로 증권사들의 긍정적인 전망이 이어지고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "SK하이닉스 주가 전망. \"내일부터 차트 어떻게 움직일까요?\" 확실히 말씀 드릴게요.(핵심 편집) 26.05.03",
+          "video_id": "dqmxPZjymMk",
+          "views": 3101,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=dqmxPZjymMk",
+          "subtitle_summary": "[미국과 이란의 협상 재개 가능성과 연준의 금리 동결 전망으로 SK하이닉스 주가에 횡보 조정이 이루어졌으나, 향후 이란-미국 협상 성공 시 주가 상승 가능성을 시사하며, 11월 3일 고점 및 2월 27일 고점을 연장선으로 활용한 추세 분석 전략을 제시한다.]",
+          "db_saved": true
+        },
+        {
+          "title": "[SK하이닉스 주가 전망] 무조건 알아야 합니다 1년 만에 8.2배 폭등, 신고가 1,333,000원 돌파 초읽기 #SK하이닉스 #SK하이닉스주가 #SK하이닉스주가전망",
+          "video_id": "jzRJ_Qt0Ty8",
+          "views": 316,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=jzRJ_Qt0Ty8",
+          "subtitle_summary": "SK하이닉스 주가가 1년 만에 7.9배 폭등하며 신고가 1,333,000원 돌파했으며, 1분기 매출 52조 5,763억 원, 영업이익 37조 6,103억 원으로 사상 최대 실적을 기록했다. 노무라 증권이 목표 주가를 234만 원으로 상향하며 글로벌 자금 유입 신호로 해석된다.",
+          "db_saved": true
+        },
+        {
+          "title": "[SK하이닉스 주가전망] 🔴5월4일 월요일 시초가 각오해야됩니다. #SK하이닉스 #SK하이닉스주가전망 #SK하이닉스주가",
+          "video_id": "LeRoe4Q1I-0",
+          "views": 3042,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=LeRoe4Q1I-0",
+          "subtitle_summary": "[내일 한국 증시는 중동 리스크와 FMC 회의 결과에 따른 악재 소화로 하락 출발 가능성이 크지만, 금리 동결 예상과 빅테크 실적 호조로 낙폭을 줄일 수 있으며, 특히 SK하이닉스는 호재로 상승할 것으로 전망된다.]",
+          "db_saved": true
+        },
+        {
+          "title": "[SK하이닉스 주가 전망] 1,286,000원, 지금 추격하면 \"위험\" 해요 매물대 핵심 자리 정리 #sk하이닉스주가전망 #SK하이닉스목표가 #SK하이닉스",
+          "video_id": "INNVBXqJ1NU",
+          "views": 251,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=INNVBXqJ1NU",
+          "subtitle_summary": "SK하이닉스 주가는 4월 30일 128만 6천원으로 마감하며 신고가 부근에서 차익 실현이 나타나는 자리로 분석됩니다. 1분기 매출 52조 5,763억, 영업 이익 37조 6,103억 등 사상 최대 실적을 기록했지만, HBM 4 양산 본격화와 LPDDR 6 신제품 출시 등으로 고점 부담과 미국 반도체 리스크가 존재합니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[SK하이닉스 주가 전망] 지금 매수할까요? 관망할까요? #SK하이닉스 #SK하이닉스주가전망 #SK하이닉스목표가",
+          "video_id": "RQfd8_WHOpA",
+          "views": 315,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=RQfd8_WHOpA",
+          "subtitle_summary": "SK하이닉스의 1분기 랜드 매출이 사상 처음으로 10조 원을 돌파하며 AI 투자 확대에 따른 반도체 빅테크 전반의 훈풍을 타고 주가가 상승했지만, 하청 업체 노조의 차별 규탄 기자회견으로 인한 노사 갈등 요인이 동시에 존재하며 투자 심리에 혼란을 야기하고 있습니다. 현재 주가는 130만 원 부근에서 박스권 움직이며, 133만 원 신고가 근처에서 매수하는 투자자들과 보수적인 관망 전략을 취하는 투자자들 간의 양상이 나타나고 있습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 1.1392,
+      "min": 1.7855,
+      "nb_score": 0.638,
+      "avg_views": 1480.44,
+      "total_views": 13324
+    },
+    {
+      "keyword": "두산에너빌리티 주가 분석",
+      "is_fixed": false,
+      "views": [
+        4763,
+        4385,
+        10745,
+        5600,
+        2308,
+        2296,
+        416,
+        1038
+      ],
+      "video_count": 8,
+      "videos": [
+        {
+          "title": "[두산에너빌리티 주가 전망] 두산, 긴급발표에 오늘 진짜 큰일났다!!  월요일 단 하루의 기회,100만 국민주·64%폭증! #두산에너빌리티 #두산에너빌리티주가전망",
+          "video_id": "t78p1yeA3_I",
+          "views": 4763,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=t78p1yeA3_I",
+          "subtitle_summary": "[월가 자본 시장이 두산에너지의 64% 영업이익 폭증에 경악하며, X에너지와의 협력 및 SMR 기술 경쟁력으로 인해 주가가 64% 폭등한 가운데, 연휴 동안 축적된 호재를 반영할 마지막 기회인 오늘 월요일에 주가 급등이 예상된다.]",
+          "db_saved": true
+        },
+        {
+          "title": "[두산에너빌리티] 아침속보! 눈물발표.. \"대국민 사죄\" 사태가 심각하다.. #두산에너빌리티주가 #두산에너빌리티전망 #두산에너빌리티",
+          "video_id": "Bp0KBPx955k",
+          "views": 4385,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=Bp0KBPx955k",
+          "subtitle_summary": "두산에너빌리티가 인수합병 및 액면 분할을 포함한 충격적인 속보를 발표하며 시장에 큰 파장을 일으키고 있으며, 외국인 및 세력의 움직임이 포착되어 관련 시장의 혼란이 가중되고 있다.",
+          "db_saved": true
+        },
+        {
+          "title": "[두산에너빌리티 주가 전망] \"긴급\" 지금구간에서 팔아야하나? 버텨야하나? 정확하게 말씀드리겠습니다. #두산에너빌리티  차트선생",
+          "video_id": "_Qa_fI3Yprw",
+          "views": 10745,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=_Qa_fI3Yprw",
+          "subtitle_summary": "[현재 두산에너빌리티 주가 구간은 상승 탄력을 받을 수 있는 기회이며, 코스피를 끌어올리는 삼성전자와 SK하이닉스의 강세에 따라 조정이 예상되지만, 이미 높은 수익을 얻고 있는 투자자들의 매도 심리가 주가 하락을 유발할 수 있다.]",
+          "db_saved": true
+        },
+        {
+          "title": "[두산에너빌리티] 저녁속보 충격! \"계약취소..눈물의발표\" 실시간 난리났다! #두산에너빌리티주가 #두산에너빌리티전망 #두산에너빌리티",
+          "video_id": "y_WnZ1CVNhQ",
+          "views": 5600,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=y_WnZ1CVNhQ",
+          "subtitle_summary": "[AI 반도체 기업 엔비디아가 데이터 센터 전력 수요 폭증에 따라 두산에너빌리티와 100조 원 규모의 원전 계약을 체결하면서 두산에너빌리티 주가가 급등하고 글로벌 전력 생태계 판도가 크게 바뀔 수 있다는 전망이 제기되었다.]",
+          "db_saved": true
+        },
+        {
+          "title": "두산에너빌리티 주가 전망. \"내일부터 차트 어떻게 움직일까요?\" 확실히 말씀 드릴게요.(핵심 편집) 26.05.03",
+          "video_id": "rP7NRzH7ln0",
+          "views": 2308,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=rP7NRzH7ln0",
+          "subtitle_summary": "[연준의 금리 동결 결정과 유가 급등으로 인해 두산에너지 주가가 일시적으로 조정되나, 외인 및 기관의 지속적인 순매수와 가스 터빈 수주 증가 기대감으로 인해 다음 주에는 추가 상승세가 나타날 것으로 전망된다.]",
+          "db_saved": true
+        },
+        {
+          "title": "[두산에너빌리티] 연휴속보! 계약취소...  #두산에너빌리티주가 #두산에너빌리티전망 #두산에너빌리티",
+          "video_id": "8naKqaHfUkQ",
+          "views": 2296,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=8naKqaHfUkQ",
+          "subtitle_summary": "[이재명 대통령의 필리핀 싱가포르 정상 회담에서 원전 협력이 공식 논의된 사실이 국가 전략 산업 복귀를 의미하며, 시장은 두산에너빌리티 주가와 원전 밸류체인 전체에 급등했습니다. 기계산업 지흥회 회장 선임과 증권사 목표 주가 상향 등 긍정적인 신호와 함께 폴란드 AP 1000 등 주요 프로젝트 수주 전망이 제시되어 투자 심리를 자극하고 있습니다.]",
+          "db_saved": true
+        },
+        {
+          "title": "[두산에너빌리티 주가전망]차트는 올라갈 준비가 됐는데 촉매가 없습니다 기술적으로 완성된 셋업이 카탈리스트를 기다리는 상태의 의미",
+          "video_id": "ztwtnDUyvQA",
+          "views": 416,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=ztwtnDUyvQA",
+          "subtitle_summary": "[유튜브 채널 성장을 위한 상위 노출 마케팅 전략을 PLG 팀이 제공하며, 단순한 운이 아닌 데이터 분석 기반의 맞춤형 전략 수립이 유튜브 상위 노출의 핵심임을 강조하고 있습니다.]",
+          "db_saved": true
+        },
+        {
+          "title": "두산에너빌리티 주가전망, 긴급 소식 떴습니다! 외국인이 조용히 매집 중인 이유! 2026년 수주 잭팟, 이제 시작인 이유! #두산에너빌리티주가전망 #SMR #원전주",
+          "video_id": "-jk9ZTZ-UkE",
+          "views": 1038,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=-jk9ZTZ-UkE",
+          "subtitle_summary": "외국인이 두산에너빌리티를 조용히 매집하고 기관이 순매수하는 가운데, 시장의 불안에도 불구하고 주가가 견조한 흐름을 보이며 2026년 SMR 수주 가능성과 AI 시대의 성장 기대감에 대한 투자 심리가 확산되고 있다. 최근 외국인 매도세에도 불구하고 메이저 세력의 꾸준한 매집과 기관의 순매수세가 주가 하락을 방어하며 긍정적인 신호를 보내고 있다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0.7541,
+      "min": 1.5588,
+      "nb_score": 0.4838,
+      "avg_views": 3943.88,
+      "total_views": 31551
+    },
+    {
+      "keyword": "삼성바이오로직스 파업",
+      "is_fixed": false,
+      "views": [
+        4974,
+        20514,
+        836,
+        1389
+      ],
+      "video_count": 4,
+      "videos": [
+        {
+          "title": "\"3000만원씩 달라\" 2800명 집단 연차 파업…삼성바이오, 항암제 공장 텅텅 비었다",
+          "video_id": "vA8TQyfXRz4",
+          "views": 4974,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=vA8TQyfXRz4",
+          "subtitle_summary": "삼성바이오로직스 창사일 첫 총파업으로 2800명 규모의 생산 차질이 발생, 약 1500억 원 손실을 입었으며 임금 인상 및 인사 참여 요구와 사측의 입장 차이로 노사 갈등이 장기화될 우려가 있다. 파업으로 의약품 생산에 차질이 생겨 환자 치료에 직접적인 영향을 미치고 있으며, 노사 협상 결과에 따라 바이오산업 전반에 미칠 영향도 주목받고 있다.",
+          "db_saved": true
+        },
+        {
+          "title": "삼성전자 노조, 일부 탈퇴러시...삼바 사흘 째 파업 / YTN",
+          "video_id": "QUnFsofWz1o",
+          "views": 20514,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=QUnFsofWz1o",
+          "subtitle_summary": "삼성전자 노조 일부 탈퇴 러시로 파업 규모 축소 및 내부 갈등 심화, 삼성 바이오로직스 파업 4일째 이어지며 막대한 손실 발생 전망",
+          "db_saved": true
+        },
+        {
+          "title": "\"채용·인사 등 경영권도 노조 사전동의 받아라\"...삼성바이오로직스 파업 [Y녹취록] / YTN",
+          "video_id": "fr7zrQ8iE9M",
+          "views": 836,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=fr7zrQ8iE9M",
+          "subtitle_summary": "삼성바이오로직스 노조가 신규 채용, 인사, 인수합병 시 노조 사전 동의를 요구하며 파업하고 있으며, 반도체 수출 증대에 국가 경제를 책임지는 만큼 제한적인 상황에서 노조의 요구가 더욱 민감하게 다뤄지고 있습니다. 수출 증가가 국가를 살리는 중요한 부분인 만큼, 노조와 경영권 간의 협상을 통해 합의점을 찾는 것이 시급한 상황입니다. 향후 노사 합의 결과에 따라 삼성 계열사의 경영 및 투자 전략에 영향을 미칠 것으로 예상됩니다.",
+          "db_saved": true
+        },
+        {
+          "title": "\"Demand 3,000 each\" Samsung Bio Union Strike: 2,800 Members Take Annual Leave... 600 Billion Won ...",
+          "video_id": "ONK86-v6qcQ",
+          "views": 1389,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=ONK86-v6qcQ",
+          "subtitle_summary": "삼성바이오로직스노조는 임금 및 경여금 인상 요구를 놓고 회사를 압박하며 전면 파업에 돌입하여 조합원 2,800여명이 연차를 활용한 시위로 생산 차질을 빚고 있으며, 파업으로 인한 최소 6,400억 원 피해가 예상되고 있습니다. 13차 교섭 무성에도 합의점을 찾지 못하고 5일까지 파업 지속을 예고하며 바이오 약품 생산에 막대한 손실이 발생하고 있습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0.7306,
+      "min": 1.7585,
+      "nb_score": 0.4155,
+      "avg_views": 6928.25,
+      "total_views": 27713
+    },
+    {
+      "keyword": "호르무즈 해협 선박 구출",
+      "is_fixed": false,
+      "views": [
+        4111,
+        11036,
+        1768,
+        745,
+        213,
+        819,
+        301
+      ],
+      "video_count": 7,
+      "videos": [
+        {
+          "title": "[자막뉴스] '호르무즈 갇힌 선박 구출 작전'...트럼프가 내린 지시 / YTN",
+          "video_id": "vxa8XaDAG4A",
+          "views": 4111,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=vxa8XaDAG4A",
+          "subtitle_summary": "[트럼프 전 대통령이 ‘프로젝트 프리덤’ 작전을 통해 호르무즈 해협에 갇힌 선박들을 구출할 계획을 발표했으며, 전 세계 국가들의 요청에 따라 인도적 차원의 구출 작전을 시작할 예정임을 밝혔다.]",
+          "db_saved": true
+        },
+        {
+          "title": "트럼프 \"4일부터 호르무즈에 갇힌 제3국 선박 구출 시작\" / YTN",
+          "video_id": "cVyPYzHhzzU",
+          "views": 11036,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=cVyPYzHhzzU",
+          "subtitle_summary": "트럼프 대통령은 호르무즈 해협에 갇힌 선박들을 구출하기 위한 ‘프로젝트 프리덤’ 작전을 4일부터 시작하고, 방해 시 강력한 대응하겠다고 경고했습니다. 이란은 미국의 14개항 종전안을 검토 중이지만 받아들일 수 없으며, 미국의 제한적인 휴전안에 대해서도 회의적인 입장을 보이고 있습니다. 미국은 이란의 유정 폐쇄 가능성을 시사하며, 걸프 국가들의 자산 동결을 통해 이란에 대한 경제 압박을 강화하고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "트럼프 \"호르무즈 갇힌 제3국 선박 구출...이란 종전안은 수용 불가\" / YTN",
+          "video_id": "3XoriYjKzmw",
+          "views": 1768,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=3XoriYjKzmw",
+          "subtitle_summary": "트럼프 전 대통령이 호르무즈 해협에 갇힌 선박 구조 작전 ‘프로젝트 프리덤’을 시작하며 국제적 긴장 완화에 나섰고, 이란은 미국의 종전안을 거부하며 강경한 입장을 유지하고 있습니다. 미국은 해상 봉쇄 효과를 강조하며 이란의 원유 수출을 압박하고, 이란 혁명수비대의 자산 동결을 시도하고 있습니다. 두 국가 간의 대립은 여전히 고조되고 있으며, 호르무즈 해협의 안정성은 불투명한 상황입니다.",
+          "db_saved": true
+        },
+        {
+          "title": "트럼프 \"4일부터 호르무즈에 갇힌 제3국 선박 구출 시작\" / YTN",
+          "video_id": "f_LdaO9xpvo",
+          "views": 745,
+          "upload_date": "2026-05-04",
+          "url": "https://www.youtube.com/watch?v=f_LdaO9xpvo",
+          "subtitle_summary": "[트럼프 대통령이 호르무즈 해협에 갇힌 제3국 선박들을 구출하는 지원 작전 ‘프로젝트 프리덤’을 시작하며, 이란의 해협 봉쇄에 균열을 내고 유가 안정을 도모하겠다는 의지를 밝혔습니다. 동시에 이란의 종전안 수용 불가 입장과 함께 협상에서는 자신감을 드러냈지만, 미재무장관은 이란의 유정 폐쇄 가능성과 중국의 원유 구매를 강조하며 미중 정상회담에서 관련 문제를 제기할 것으로 전망했습니다.]",
+          "db_saved": true
+        },
+        {
+          "title": "\"호르무즈 갇힌 선박 구출\" vs \"휴전 위반 간주\" / YTN",
+          "video_id": "QzE2zmw0FpY",
+          "views": 213,
+          "upload_date": "2026-05-04",
+          "url": "https://www.youtube.com/watch?v=QzE2zmw0FpY",
+          "subtitle_summary": "트럼프 전 대통령이 ‘프로젝트 프리덤’ 작전을 통해 호르무즈 해협에 갇힌 선박들의 탈출을 돕겠다고 발표했으나, 이란은 휴전 위반으로 간주하며 강하게 반발하고 있어 쉽지 않은 상황이 전개될 것으로 보입니다. 미국은 유도 미사일 구축함과 항공기를 동원하여 지원을 약속했지만, 구체적인 작전 개시 시간 및 방법은 밝히지 않고 있으며, 방해 시 강력한 대응하겠다고 경고했습니다. 이란의 반발 속에 선박들의 안전한 통항을 위한 국제적인 노력과 긴장이 고조되고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "\"호르무즈 선박 구출 시작\" 트럼프 프로젝트 프리덤 선언, 삼성전자 주주라면 꼭 봐야 할 신호인 이유",
+          "video_id": "Wdlah9GK2m8",
+          "views": 819,
+          "upload_date": "2026-05-04",
+          "url": "https://www.youtube.com/watch?v=Wdlah9GK2m8",
+          "subtitle_summary": "트럼프 대통령이 ‘프로젝트 프리덤’을 통해 호르무즈 해협에 갇힌 중립 선박들을 구출 작전을 시작했으며, 이는 군사적 타격이 아닌 선박 구출 작전임을 강조했습니다. 이 작전은 이란 등과의 갈등을 심화시킬 수 있는 상황이며, 파업과 중동 환율 변동 등 복합적인 변수로 인해 삼성전자 주주들에게 혼란을 야기할 수 있습니다. 선박 구출 과정에서 인도적 지원이 방해받는다면 강력한 대응이 있을 수 있다는 점을 시사했습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "트럼프 \"4일부터 호르무즈에 갇힌 제3국 선박 구출 시작\" [세상만사] #트럼프 #프로젝트프리덤 #선박구출작전",
+          "video_id": "sDWojEi06nU",
+          "views": 301,
+          "upload_date": "2026-05-04",
+          "url": "https://www.youtube.com/watch?v=sDWojEi06nU",
+          "subtitle_summary": "트럼프 대통령이 호르무즈 해협에 갇힌 선박들을 구출하기 위한 ‘프로젝트 프리덤’ 작전을 4일부터 시작하며, 인도적 지원과 함께 미국의 입장을 강조했습니다. 이란은 미국의 14개항 종전안을 검토 중이지만, 전쟁 피해 배상 등 요구사항에 대해 회의적인 입장을 보이고 있습니다. 데스턴트 장관은 이란의 유정 폐쇄 가능성을 시사하며, 걸프 국가들의 자산 동결을 통해 경제 압박 효과를 극대화하고 있다고 밝혔습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0.3554,
+      "min": 1.2267,
+      "nb_score": 0.2898,
+      "avg_views": 2713.29,
+      "total_views": 18993
+    },
+    {
+      "keyword": "캐시워크 정답 퀴즈",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "소득세 환급 조회",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "NH투자증권 앱",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "대우건설 주가 동향",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "농협은행 인터넷뱅킹",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "하나카드 혜택",
+      "is_fixed": false,
+      "views": [
+        18093
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "26년 5월 카드 발급 캐시백 이벤트 총정리 / 카드 재테크 하셔야죠?",
+          "video_id": "J2M-xTvWLJ0",
+          "views": 18093,
+          "upload_date": "2026-05-03",
+          "url": "https://www.youtube.com/watch?v=J2M-xTvWLJ0",
+          "subtitle_summary": "신용카드 발급 캐시백 이벤트가 진행 중이며, 각 카드별 이벤트 응모 및 발급, 기간, 이용 금액에 따른 캐시백 혜택을 확인해야 합니다. 특히, 이벤트 참여 시 마케팅 동의 및 카드 발급 후 일정 기간 내 이용 또는 해지 시 보너스 혜택이 제공될 수 있으므로 주의해야 합니다. 궁금한 점은 반드시 카드 센터에 문의하여 정확한 정보를 얻는 것이 중요합니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "원달러 환율 전망",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "반도체주 강세 이유",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "삼성전자 TV 사업부 재편",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    }
+  ]
+}

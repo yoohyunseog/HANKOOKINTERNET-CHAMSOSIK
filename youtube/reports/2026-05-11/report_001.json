@@ -1,0 +1,337 @@
+{
+  "timestamp": "2026-05-11T00:06:28.173271",
+  "model": "mistral:latest",
+  "keyword_count": 3,
+  "analyze_subtitles": true,
+  "analysis_source": "youtube",
+  "keywords": [
+    {
+      "keyword": "오늘의 주요 뉴스",
+      "is_fixed": true,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "나무호 피격 사건",
+      "is_fixed": false,
+      "views": [
+        102132,
+        11184,
+        18266,
+        4464
+      ],
+      "video_count": 4,
+      "videos": [
+        {
+          "title": "[자막] HMM 나무호 화재, 정부 합동조사단 현장 결과 발표 \"비행체 2기에 피격 확인\"",
+          "video_id": "AOg9U6SXnrY",
+          "views": 102132,
+          "upload_date": "2026-05-10",
+          "url": "https://www.youtube.com/watch?v=AOg9U6SXnrY",
+          "subtitle_summary": "1. HMM 나무호 화재 조사결과: 5월 4일 미상회 비행체가 HMM 나무호의 평행수 탱크 외판에 두 차례 타격하여 화염이 발생했다.\n2. 조사결과로부터 보인다면, 기관실 화제는 미상의 비행체 1차 타격으로 발화가 되고 화재 규모가 급격히 확산된 것으로 추정된다.\n3. 화재 원인은 선박 내부와는 무관한 것으로 추정되며, 바라 지점에서 특이점은 없었고 피격 가능성은 낮았다.",
+          "db_saved": true
+        },
+        {
+          "title": "[자막] HMM 나무호, 미상 비행체 2기에 피격 확인, 외교부 긴급 브리핑",
+          "video_id": "fPwk-M5nXqY",
+          "views": 11184,
+          "upload_date": "2026-05-10",
+          "url": "https://www.youtube.com/watch?v=fPwk-M5nXqY",
+          "subtitle_summary": "1. 5월 4일, HMM 나무호 선박에서 미상 비행체가 두 번 피격하여 화염이 발생했습니다.\n2. 조사단은 현장 조사를 진행하고 CCTV 영상을 확인하여 피격 사실을 확인했으나, 비행체의 발사 주체, 정확한 기종, 물리적 크기에 대한 정보는 제약이 있습니다.\n3. 추가 분석을 통해 피격 가능성과 화재 원인을 조사하고 있으며, 앞으로 추가적인 정보가 있을 경우 알리겠습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[🔴속보] '폭발' 나무호 본격 조사 시작 \"블랙박스 확인\"..외부 피격? 내부 화재? \"외벽 구멍 없지만\" 결정적 단서 | SBS 뉴스속보",
+          "video_id": "07ez97OdqXM",
+          "views": 18266,
+          "upload_date": "2026-05-09",
+          "url": "https://www.youtube.com/watch?v=07ez97OdqXM",
+          "subtitle_summary": "1. 정부 조사단은 두바이 수리소에서 화물선 '나무호'의 폭발 원인을 조사하기 시작했습니다. 사고 당일 중동 최대 수리 조선소인 드라이독 두바이에 도착한 나무호에 HMM 글자가 보였으며, 작업자들이 자재를 옮기는 모습도 있었습니다.\n2. 조사 핵심은 외부 공격인지 내부 결함인지의 여부입니다. 나무호의 외벽에 구멍이나 부서지는 능적은 육관으로 보이지 않았지만, 폭발음을 들었다는 증언과 화재의 진화를 위한 이상한 탄소가 세어나갔다는 증언이 있어 사고 원인에 대한 여러 가능성이 제기되었습니다.\n3. 조사단은 폭발이 난 기관실에 대한 정밀장 감식을 진행하고, 선박의 블랙박스와 CCTV 영상을 확인할 계획입니다.",
+          "db_saved": true
+        },
+        {
+          "title": "정부 조사단 \"나무호 화재는 비행체 타격에 의한 것\" / YTN",
+          "video_id": "1u_nyHKeWR4",
+          "views": 4464,
+          "upload_date": "2026-05-10",
+          "url": "https://www.youtube.com/watch?v=1u_nyHKeWR4",
+          "subtitle_summary": "1. 조사결과는 비행체 공격으로 나타났습니다. 이 사건의 성격은 일반적인 엔진실 화재와 달라지게 될 것으로 보입니다.\n2. 드론 공격이었다는 것과 이랍이 직접 공격했다는 것은 같은 말은 아닙니다. 따라서 드론의 종류, 비행 방향, 발사 지점, 통신적 정보, 인근 군사작 기록을 종합해서 조사해야 합니다.\n3. 이번 결과의 1차 의미는 외국 공격이 확인됐다는 것으로, 두 번 공격이 있어서 좀 나은 의도성이 있다고 보입니다. 하지만 확정할 수 없고, 공격 배우(정규군인, 연계 세력, 제3회 5인 미국)를 구분해야 합니다. 한국 정부는 이 사안을 매우 엄중하게 다루어야 할 것으로 보입니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0.7021,
+      "min": 1.7522,
+      "nb_score": 0.4007,
+      "avg_views": 34011.5,
+      "total_views": 136046
+    },
+    {
+      "keyword": "미상 비행체 선박 공격",
+      "is_fixed": false,
+      "views": [
+        12005,
+        1371,
+        2671,
+        1896,
+        105967,
+        636,
+        18492,
+        2280
+      ],
+      "video_count": 8,
+      "videos": [
+        {
+          "title": "[자막] HMM 나무호, 미상 비행체 2기에 피격 확인, 외교부 긴급 브리핑",
+          "video_id": "fPwk-M5nXqY",
+          "views": 12005,
+          "upload_date": "2026-05-10",
+          "url": "https://www.youtube.com/watch?v=fPwk-M5nXqY",
+          "subtitle_summary": "1. HMM 나무호 선박에서 5월 4일 미상 비행체가 두 차례 피격, 화염 발생.\n2. 조사단이 현장 조사를 진행하여 피격 시간과 위치, 피격으로 인한 피해 등을 확인.\n3. 추가적인 분석이 필요하며, 피격 주체나 비행체의 정확한 종류는 아직 확인되지 않았다.",
+          "db_saved": true
+        },
+        {
+          "title": "\"나무호 화재는 미상의 비행체가 선미 타격해 발생\" / YTN",
+          "video_id": "TXCeXujBY6c",
+          "views": 1371,
+          "upload_date": "2026-05-10",
+          "url": "https://www.youtube.com/watch?v=TXCeXujBY6c",
+          "subtitle_summary": "1. 미국과 이ран은 휴전 상태를 유지하고 있지만, 최근 호로모제에서 발생한 남무호 화재의 조사결과가 발표됐습니다.\n2. 조사결과는 미상의 비행체가 두 발에 타격을 했다는 내용이 포함되어 있습니다.\n3. 이 사건은 이ран의 소행인지, 우리나라 선체의 결함인지 중요한 쟁점으로 맺히고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "\"나무호 화재, 미상비행체 타격...공격주체 확인 못해\" / YTN",
+          "video_id": "UfaCOtq0hYU",
+          "views": 2671,
+          "upload_date": "2026-05-10",
+          "url": "https://www.youtube.com/watch?v=UfaCOtq0hYU",
+          "subtitle_summary": "1. 나무호 수송선이 화재가 발생하고 외부 공격을 받았으며, 미상의 비행체가 두 차례 타격한 것으로 확인되었습니다.\n2. 정부는 피격에 의한 화재로 결론내렸고, 해당 비행체의 발사 주체와 정확한 기종, 크기 등은 추가 분석 중입니다.\n3. 공격의 주체가 이란인지는 아직 확인되지 않았으나, 외교부에서 이란 대사가 조사 결과를 선 설명받았습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[현장연결] 정부 \"나무호 화재원인, 미상 비행체 타격\" / 연합뉴스TV (YonhapnewsTV)",
+          "video_id": "e4RUt6Aa9Wk",
+          "views": 1896,
+          "upload_date": "2026-05-10",
+          "url": "https://www.youtube.com/watch?v=e4RUt6Aa9Wk",
+          "subtitle_summary": "1. 5월 4일 미상비행체가 HMM 나무호 선박에 두 번 타격하여 화재가 발생했다는 정부 조사단의 현장 조사 결과를 알리고 있습니다.\n2. 비행체는 CCTV 영상에서 포착되었으나 발사 주체, 정확한 기종 및 물리적 크기 등을 확인하기에는 제약이 있습니다.\n3. 추가 분석을 통해 비행체 엔진 잔해 등을 조사할 예정입니다. 화재 원인은 선박 내부와는 무관한 것으로 추정되며, 기례 및 의뢰에 의한 피격 가능성은 낮습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[자막] HMM 나무호 화재, 정부 합동조사단 현장 결과 발표 \"비행체 2기에 피격 확인\"",
+          "video_id": "AOg9U6SXnrY",
+          "views": 105967,
+          "upload_date": "2026-05-10",
+          "url": "https://www.youtube.com/watch?v=AOg9U6SXnrY",
+          "subtitle_summary": "1. 5월 4일, HMM 나무호 선박에서 발생한 과제 관련 조사결과를 공개했습니다. 정부 합동조사단은 5월 6일 두바이에 도착하여 5월 8일 조사를 시작했습니다.\n2. CCTV 확인 및 선장 면담 결과, 5월 4일 15시 30분경 미상회 비행체가 HMM 나무호 선미현 평행수 탱크 외판에 두 차례 타격하였고, 이로 인한 화염과 연기가 발생했습니다.\n3. 조사결과에 따르면, 비행체의 발사 주체, 정확한 기종 및 물리적 크기는 확인하기 어려웠으나, 추가 분석을 통해 이를 파악할 예정입니다. 또한, 화재 원인은 선박 내부와는 무관하며, 바라 지점은 평행수 탱크 상판 전공된 지점으로 확인되었습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "정부 “나무호, 미상 비행체 2기가 타격”…외부공격 결론 [9시 뉴스] / KBS  2026.05.10.",
+          "video_id": "Cngbl2DIoyE",
+          "views": 636,
+          "upload_date": "2026-05-10",
+          "url": "https://www.youtube.com/watch?v=Cngbl2DIoyE",
+          "subtitle_summary": "1. 나무호 선박의 화재 원인이 외부 공격으로 확인되었습니다. 2차 비행체가 배 뒷부분을 타격하여 화재가 시작됐고, 1분 후 같은 곳에 두 차례 또 타격하여 화제가 급격히 커졌습니다. 3. 정부는 해당 비행체의 발사자를 공개하지 않았으나 CCTV 영상에서 해당 비행체가 포착되었습니다. 국제 조정을 위해 추가 분석과 미국이 주도하는 해양 자유구상 참여를 검토하고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[현장영상+] 나무호 정부합동조사 \"좌측 선미 외판 폭 5m, 내부 약 7m까지 훼손\" / YTN",
+          "video_id": "-cIA6i5mzWA",
+          "views": 18492,
+          "upload_date": "2026-05-10",
+          "url": "https://www.youtube.com/watch?v=-cIA6i5mzWA",
+          "subtitle_summary": "1. 5월 4일, 호르무즈 해협 내척 아랍 에미리트 인근 해역에서 정박 중이던 우리 선박 '나무호'에서 발생한 사고 관련 우리 정부 합동조사단의 현장조사 결과를 알려주었습니다.\n2. 조사단은 해수부, 해양안전심판원, 소방청 감식 전문가, 국방부 관계자 등을 포함하여 5월 6일 밤 출국 후 5월 7일 현지 시간 새벽 두바이에 도착하였습니다.\n3. 조사결과를 보면, 미상의 비행체가 2차례 나무호 선미 외판을 타격하여 화염 및 연기가 발생했고, 좌측 선미 외판이 약 5m, 내부 약 7m까지 훼손되었습니다. 현재 피격 주체를 확인하기에는 제약이 있으며, 추가 분석을 통해 비행체 엔진 잔해 등을 조사할 예정입니다.",
+          "db_saved": true
+        },
+        {
+          "title": "\"나무호 화재 원인, 미상 비행체 타격\"…정부조사단, 외부 충격 폭발 판단 [뉴스7]",
+          "video_id": "oTUSCYvok6E",
+          "views": 2280,
+          "upload_date": "2026-05-10",
+          "url": "https://www.youtube.com/watch?v=oTUSCYvok6E",
+          "subtitle_summary": "1. 4일 호르무조 해협에서 화재 발생한 우리 선박 '나무호'에서 외부 피격 상황이 발견됐다고 정부가 밝혔습니다.\n2. 미상의 비행체가 사고 선박의 선미를 타격한 것으로 확인되었습니다. 해당 비행체의 정확한 기종과 물리적 크기는 확인하기에 제약이 있습니다.\n3. 조사단을 두바이로 파견하여 3일 만에 외부 피격으로 인한 사고가 결정됐으며, 추가 분석을 위해 현장 수고 등을 추가 분석할 예정입니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0.1768,
+      "min": 0.9034,
+      "nb_score": 0.1957,
+      "avg_views": 18164.75,
+      "total_views": 145318
+    },
+    {
+      "keyword": "이란 미국 종전안",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "미중 정상회담 대진표",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "HMM 선박 공격",
+      "is_fixed": false,
+      "views": [
+        12003
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "[자막] HMM 나무호, 미상 비행체 2기에 피격 확인, 외교부 긴급 브리핑",
+          "video_id": "fPwk-M5nXqY",
+          "views": 12003,
+          "upload_date": "2026-05-10",
+          "url": "https://www.youtube.com/watch?v=fPwk-M5nXqY",
+          "subtitle_summary": "1. HMM 나무호 선박에서 5월 4일 미상 비행체가 두 번 피격하여 화염이 발생했다는 조사결과를 발표했습니다.\n2. 조사단은 해수부산화, 해양안전심판원, 소방청 감식 전문가 등을 포함하여 5월 6일 두바이에 도착한 후 선박 내부와 외관을 검사했습니다.\n3. 조사결과로 미상 비행체의 발사 주체, 정확한 기종, 물리적 크기 등은 확인되지 않았으며 추가 분석이 예정되었습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "한국 선박 호르무즈 해협",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "주요국 외교 관계",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "국제 원유 수송로 안보",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "한미 군사 협력",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "글로벌 해상 운송 위기",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "중동 지역 긴장 심화",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "국제 사회 경제 영향",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "에너지 가격 변동 전망",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "한국 기업 해외 위험 관리",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "국제 정치 군사 동향",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    }
+  ]
+}

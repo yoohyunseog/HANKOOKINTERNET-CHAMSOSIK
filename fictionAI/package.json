@@ -1,0 +1,9 @@
+{
+  "name": "fictionai-local-server",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Local server and proxy for fictionAI demo",
+  "scripts": {
+    "start": "node server.js"
+  }
+}

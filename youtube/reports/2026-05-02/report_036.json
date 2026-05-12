@@ -1,0 +1,345 @@
+{
+  "timestamp": "2026-05-02T06:04:33.081486",
+  "model": "news-singleline:latest",
+  "keyword_count": 3,
+  "analyze_subtitles": true,
+  "analysis_source": "youtube",
+  "keywords": [
+    {
+      "keyword": "오늘의 주요 뉴스",
+      "is_fixed": true,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "수출 800억 달러",
+      "is_fixed": false,
+      "views": [
+        2425,
+        405,
+        830,
+        335,
+        811,
+        5630,
+        2334,
+        6780
+      ],
+      "video_count": 8,
+      "videos": [
+        {
+          "title": "수출, 두 달 연속 800억 달러 넘어...반도체 319억 달러 / YTN",
+          "video_id": "z8J0ouuDYI4",
+          "views": 2425,
+          "upload_date": "2026-05-01",
+          "url": "https://www.youtube.com/watch?v=z8J0ouuDYI4",
+          "subtitle_summary": "[4월 수출이 859억 달러로 1년 전보다 48% 증가하며 2개월 연속 800억 달러를 넘어섰고, 특히 반도체 수출액이 319억 달러로 2개월 연속 300억 달러를 돌파하며 견인 역할을 했습니다. 자동차 수출은 감소했지만, 중동 전쟁으로 인한 석유제품 수출 증가와 대중국, 대미 수출 호조로 무역수지는 20조 77억 원의 흑자를 기록하며 15개월 연속 흑자 행진을 이어갔습니다.]",
+          "db_saved": true
+        },
+        {
+          "title": "수출, 두달 연속 800억 달러 돌파...반도체 319억 달러 '견인차' / YTN",
+          "video_id": "3H2r9vf8ut8",
+          "views": 405,
+          "upload_date": "2026-05-01",
+          "url": "https://www.youtube.com/watch?v=3H2r9vf8ut8",
+          "subtitle_summary": "[4월 수출이 중동 전쟁의 영향에도 불구하고 800억 달러를 기록하며 11개월 연속 월 역대 최대 실적을 달성했고, 반도체 수출이 319억 달러를 견인하며 고성능 메모리 가격 상승과 석유 제품 수출 증가에 힘입어 15대 주력 품목 중 8개가 증가했다. 4월 무역수지는 237억 7천만 달러의 흑자를 기록하며 역대 최대 실적을 경신했다.]",
+          "db_saved": true
+        },
+        {
+          "title": "\"중동 전쟁에도 슈퍼사이클\"…수출 800억 달러 시대 / 연합뉴스TV (YonhapnewsTV)",
+          "video_id": "_aUQFfmOdJA",
+          "views": 830,
+          "upload_date": "2026-05-01",
+          "url": "https://www.youtube.com/watch?v=_aUQFfmOdJA",
+          "subtitle_summary": "[한국 수출이 반도체 호황과 함께 2개월 연속 800억 달러를 기록하며 역대 두 번째 최고치를 달성했지만, 중동 전쟁의 영향으로 자동차 및 대중국 수출이 감소한 가운데 무역수지는 15개월 연속 흑자를 유지했다.]",
+          "db_saved": true
+        },
+        {
+          "title": "Semiconductor and petroleum product exports jump... Surpass $80 billion for two consecutive month...",
+          "video_id": "SZlapPLf4wY",
+          "views": 335,
+          "upload_date": "2026-05-01",
+          "url": "https://www.youtube.com/watch?v=SZlapPLf4wY",
+          "subtitle_summary": "지난 두 달간 반도체와 석유 제품 수출액이 각각 173.5%와 5% 증가한 319억 달러와 319억 달러로 800억 달러를 상회하며, 1년 대비 48% 증가한 858억 9천만 달러를 기록했습니다. 호르무즈 해협 봉쇄로 인한 유가 급등이 석유 제품 수출액 증가에 영향을 미쳤으며, 수출액 증가세는 지속되고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "수출, 두 달 연속 800억 달러 넘어...반도체 319억 달러 / YTN",
+          "video_id": "3yuq-9W1U_o",
+          "views": 811,
+          "upload_date": "2026-05-01",
+          "url": "https://www.youtube.com/watch?v=3yuq-9W1U_o",
+          "subtitle_summary": "[4월 수출이 859억 달러로 1년 전보다 48% 증가하며 2개월 연속 800억 달러를 넘어섰고, 특히 반도체 수출액이 319억 달러로 2개월 연속 300억 달러를 돌파하며 견인 역할을 했습니다.]",
+          "db_saved": true
+        },
+        {
+          "title": "지난달 수출 48% 늘어난 859억 달러…반도체 수출 173.5%↑ / KBS  2026.05.01.",
+          "video_id": "29U06rDR5R4",
+          "views": 5630,
+          "upload_date": "2026-05-01",
+          "url": "https://www.youtube.com/watch?v=29U06rDR5R4",
+          "subtitle_summary": "[지난달 수출이 반도체 호황으로 48% 증가한 859억 달러를 기록하며 월 800억 달러 돌파는 두 차례로 한정되었고, 반도체 수출은 역대 최대 실적을 13개월 연속 달성했습니다. 자동차 수출은 중동 전쟁 등의 영향으로 감소했지만, 석유 제품 수출은 유가 상승으로 크게 증가했습니다. 전체 무역 수지는 237억 7천만 달러의 흑자를 기록하며 15개월 연속 흑자 행진을 이어갔습니다.]",
+          "db_saved": true
+        },
+        {
+          "title": "Even Middle East War Could Not Stop Semiconductors... South Korea's Exports Surpass $80 Billion f...",
+          "video_id": "RcSb03mDiw4",
+          "views": 2334,
+          "upload_date": "2026-05-01",
+          "url": "https://www.youtube.com/watch?v=RcSb03mDiw4",
+          "subtitle_summary": "[4월 한국 수출액이 반도체 수요 급증과 석유 제품 수출 증가에 힘입어 사상 처음으로 두 달 연속 800억 달러를 돌파했으며, 특히 반도체 수출은 173.5% 폭증하여 수출 성장을 견인했습니다.]",
+          "db_saved": true
+        },
+        {
+          "title": "수출, 두달 연속 800억 달러 돌파...반도체 315억 달러 '견인차' / YTN",
+          "video_id": "MTnP4nstnc8",
+          "views": 6780,
+          "upload_date": "2026-05-01",
+          "url": "https://www.youtube.com/watch?v=MTnP4nstnc8",
+          "subtitle_summary": "[4월 수출이 중동 전쟁의 영향에도 불구하고 800억 달러를 기록하며 11개월 연속 역대 최대 실적을 달성했고, 반도체 수출이 315억 달러를 견인하며 13개월 연속 월 최대 실적을 냈으며, AI 투자 확대와 유가 상승에 따른 석유 제품 수출 증가로 무역수지는 237억 7천만 달러의 흑자를 기록했다.]",
+          "db_saved": true
+        }
+      ],
+      "max": 0.7016,
+      "min": 1.5696,
+      "nb_score": 0.447,
+      "avg_views": 2443.75,
+      "total_views": 19550
+    },
+    {
+      "keyword": "트럼프 이란",
+      "is_fixed": false,
+      "views": [
+        62859,
+        51693,
+        150668,
+        4250,
+        1235,
+        4336
+      ],
+      "video_count": 6,
+      "videos": [
+        {
+          "title": "\"이란, 경제 자체가 붕괴\" 트럼프가 웃고 있는 이유 [Y녹취록] / YTN",
+          "video_id": "CmEs_CKC5sA",
+          "views": 62859,
+          "upload_date": "2026-05-01",
+          "url": "https://www.youtube.com/watch?v=CmEs_CKC5sA",
+          "subtitle_summary": "이란 경제가 붕괴 직전이며, 화폐 가치 폭락으로 인해 물가가 치솟아 최저 임금의 실질 가치가 크게 하락하고 있다. 호르무즈 해협을 둘러싼 이란과 미국의 ‘치킨 게임’은 유가 급등의 원인이 되며, 140달러까지 오를 수 있다는 우려가 제기된다.",
+          "db_saved": true
+        },
+        {
+          "title": "[자막뉴스] 이란 내부 폭발 직전...트럼프의 역봉쇄에 '3차 대전' 트리거 되나 / YTN",
+          "video_id": "kdo7lEk2pcM",
+          "views": 51693,
+          "upload_date": "2026-05-01",
+          "url": "https://www.youtube.com/watch?v=kdo7lEk2pcM",
+          "subtitle_summary": "이란을 압박하는 트럼프 행정부의 해상 봉쇄 전략으로 이란의 원유 수출량이 급감하면서, 이란 경제에 어려움이 가중되고 있으며, 물가 상승과 화폐 가치 하락이 심화되고 있습니다. 동시에, 극단적인 상황에 몰린 이란이 주변 국가나 해로를 봉쇄할 가능성에 대한 우려가 제기되고 있습니다. 이러한 상황은 세계 경제에 큰 타격을 줄 수 있으며, 트럼프 대통령에게 또 다른 중대 고비를 안겨줄 수 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[🔴이슈PLAY] 트럼프 초강수에 이란 굴복했다",
+          "video_id": "sLWzqpNfmMs",
+          "views": 150668,
+          "upload_date": "2026-05-01",
+          "url": "https://www.youtube.com/watch?v=sLWzqpNfmMs",
+          "subtitle_summary": "트럼프 대통령이 독일 주둔 미군 감축을 결정할 예정이며, 이는 유럽 동맹국에 대한 경고이자 호르무즈 해협에서의 보복 조치로 해석된다. 주한 미군 감축 가능성 또한 제기되며, 한미 간 주둔 미군 규모 조정에 대한 논의는 현재까지 없다고 청와대가 밝혔다. 국제 유가가 급등하는 가운데, 미국은 호르무즈 해협 통항 제한을 위한 국제 사회의 동참을 촉구하며 긴장 고조를 늦추지 않고 있다.",
+          "db_saved": true
+        },
+        {
+          "title": "트럼프 \"이란 합의 원해\"...이란 \"핵 기술 수호\" / YTN",
+          "video_id": "LLubH9TFTLU",
+          "views": 4250,
+          "upload_date": "2026-05-01",
+          "url": "https://www.youtube.com/watch?v=LLubH9TFTLU",
+          "subtitle_summary": "트럼프 전 대통령은 이란 전쟁에서 미국의 승리를 강조하며 협상 타결을 희망하고, 이란의 군사 자원 파괴를 인정했지만 미사일·드론 등 핵심 자산은 여전히 남아있다고 판단하여 종전을 시도할 가치가 있다고 주장했습니다. 이란 경제는 미국 제재로 인해 식량·의약품 수입 차단, 물가 폭등, 실업 심화 등 심각한 위기를 겪고 있으며, 환율 급락으로 인해 실물 경제 마비 상태에 빠졌습니다. 호르무즈 해협 봉쇄를 통해 이란의 해상 활동을 지속적으로 제한하겠다는 입장을 밝히며, 해상 봉쇄가 폭격보다 효과적일 수 있다고 평가했습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "트럼프 \"이란, 간절히 협상 원해...지도자 불확실성 큰 문제\" / YTN",
+          "video_id": "MksDMCkMEJw",
+          "views": 1235,
+          "upload_date": "2026-05-01",
+          "url": "https://www.youtube.com/watch?v=MksDMCkMEJw",
+          "subtitle_summary": "트럼프는 이란이 협상에 간절히 뜻을 두고 있지만, 현재 이란 지도부의 불확실성이 협상 진행에 큰 걸림돌이 되고 있다고 지적했습니다. 전쟁이라고 부르지 않는 군사 작전 상황에서, 미국이 상대하는 이란 지도부의 수준이 낮아 미래를 예측하기 어렵다고 강조했습니다. 이란의 강경한 태도에도 불구하고, 휴전 필요성에 대한 확신을 갖지 못하며 상황을 주시하고 있다는 입장을 밝혔습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[🔴이슈를 켜라] [LIVE] 트럼프 \"빨리 상황 파악하라\" vs 이란 \"인내 한계 있다\" / 채널A",
+          "video_id": "rBRIdUEM-YI",
+          "views": 4336,
+          "upload_date": "2026-05-01",
+          "url": "https://www.youtube.com/watch?v=rBRIdUEM-YI",
+          "subtitle_summary": "트럼프는 이란에 “상황을 빨리 파악하라”며 핵 협상 재개를 압박하고, 호르무즈 해협 봉쇄를 통해 이란을 ‘질식’시키겠다는 강경 메시지를 전달했습니다. 새벽 4시 SNS 게시라는 점과 폭탄 사진 첨부 등을 통해 추가 군사력 사용 가능성을 시사하며, 경제적 타격을 강조하는 동시에 미중부 사령관의 군사적 옵션 보고를 준비 중이라는 소식도 나왔습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0.5913,
+      "min": 1.4235,
+      "nb_score": 0.4154,
+      "avg_views": 45840.17,
+      "total_views": 275041
+    },
+    {
+      "keyword": "EU산 관세",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "관세 내주",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "트럼프 EU산 관세",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "EU산 관세 내주",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "관세 내주 25",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "트럼프 관세로",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "EU 관세",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "관세 25",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "내주부터 EU 관세",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "EU 관세 25",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "관세 25 인상",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "트럼프 이란 제안에",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "트럼프 EU산",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    }
+  ]
+}

@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>항모 AI 전술 카드 상황실</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app">
+    <header class="topbar">
+      <section class="title-block">
+        <h1>항모 AI 전술 카드 상황실</h1>
+        <p>전장 지도, AI 위협 카드, 승무원 상태, 예비 플랜을 연결해 항모전단 작전을 유지하십시오.</p>
+      </section>
+      <nav class="screen-tabs" aria-label="게임 화면">
+        <button class="active" type="button" data-screen="situation">상황실</button>
+        <button type="button" data-screen="plans">예비 플랜</button>
+        <button type="button" data-screen="crew">승무원</button>
+        <button type="button" data-screen="performance">성과 연결</button>
+      </nav>
+      <section class="status-strip" id="statusStrip"></section>
+    </header>
+
+    <section class="screen active" id="situation">
+      <section class="war-room">
+        <aside class="priority-panel">
+          <div class="panel-heading">
+            <h2>실시간 우선순위</h2>
+            <span>AI 위협 카드</span>
+          </div>
+          <div class="priority-list" id="priorityList"></div>
+          <div class="panel-heading sub-heading">
+            <h2>필수 전술 카드</h2>
+          </div>
+          <div class="tactical-card-list" id="tacticalCardList"></div>
+        </aside>
+
+        <section class="battlefield-panel">
+          <div class="panel-heading">
+            <h2>전장 지도</h2>
+            <div class="phase" id="phaseLabel">작전 단계 1</div>
+          </div>
+          <canvas id="battlefield" width="980" height="660" aria-label="실시간 2D 항모 전장"></canvas>
+        </section>
+
+        <aside class="command-panel">
+          <div class="panel-heading">
+            <h2>명령 패널</h2>
+            <button class="icon-button" id="pauseButton" type="button">II</button>
+          </div>
+
+          <section>
+            <h3>선택 해역</h3>
+            <div class="selected-zone" id="selectedZone"></div>
+          </section>
+
+          <section>
+            <h3>명령</h3>
+            <div class="command-grid" id="commandGrid"></div>
+          </section>
+
+          <section>
+            <h3>AI 가중치 분석</h3>
+            <div class="weight-bars" id="weightBars"></div>
+          </section>
+
+          <section class="ollama-advisor">
+            <div class="advisor-head">
+              <h3>Ollama Cloud AI</h3>
+              <button type="button" id="aiAdviceButton">AI 추천</button>
+            </div>
+            <label class="advisor-field">
+              <span>Model</span>
+              <input id="ollamaModelInput" type="text" value="kimi-k2.6:cloud" autocomplete="off">
+            </label>
+            <div class="ai-advice" id="aiAdvice">전장 상태를 읽고 빠른 전술 추천을 생성합니다.</div>
+          </section>
+
+          <section>
+            <h3>승무원 연결</h3>
+            <div class="crew-link-mini" id="crewLinkMini"></div>
+          </section>
+        </aside>
+      </section>
+
+      <section class="lower-deck">
+        <section class="zones-panel">
+          <div class="panel-heading">
+            <h2>작전 구역</h2>
+            <span id="controlScore">통제율 0%</span>
+          </div>
+          <div class="zone-list" id="zoneList"></div>
+        </section>
+
+        <section class="log-panel">
+          <div class="panel-heading">
+            <h2>AI 상황 메시지</h2>
+            <span id="tickLabel">전술 계산 대기</span>
+          </div>
+          <div class="log-list" id="logList"></div>
+        </section>
+      </section>
+    </section>
+
+    <section class="screen" id="plans">
+      <section class="subscreen-head">
+        <div>
+          <h2>예비 플랜 카드</h2>
+          <p>현재 가중치는 낮지만 현장 반영으로 중요도가 올라갈 수 있는 중장기 대응 플랜입니다.</p>
+        </div>
+        <div class="tool-strip">
+          <button type="button" data-sort-plans="weight">가중치순</button>
+          <button type="button" data-sort-plans="success">성공률순</button>
+          <button type="button" id="autoSortButton">재배열 ON</button>
+        </div>
+      </section>
+      <section class="plans-layout">
+        <div class="plan-grid" id="planGrid"></div>
+        <aside class="connection-panel">
+          <div class="panel-heading">
+            <h2>플랜-승무원 연결</h2>
+            <span>실시간 배치</span>
+          </div>
+          <div class="plan-links" id="planLinks"></div>
+        </aside>
+      </section>
+    </section>
+
+    <section class="screen" id="crew">
+      <section class="subscreen-head">
+        <div>
+          <h2>승무원 실시간 상태</h2>
+          <p>피로도, 집중도, 준비도, 스트레스가 작전 카드의 성공률과 연결됩니다.</p>
+        </div>
+        <div class="crew-summary" id="crewSummary"></div>
+      </section>
+      <section class="crew-layout">
+        <div class="crew-grid" id="crewGrid"></div>
+        <aside class="crew-side">
+          <div class="panel-heading">
+            <h2>부서 요약</h2>
+          </div>
+          <div class="department-list" id="departmentList"></div>
+          <div class="panel-heading sub-heading">
+            <h2>경고</h2>
+          </div>
+          <div class="crew-alerts" id="crewAlerts"></div>
+        </aside>
+      </section>
+    </section>
+
+    <section class="screen" id="performance">
+      <section class="subscreen-head">
+        <div>
+          <h2>성과 비교 카드 연결 시스템</h2>
+          <p>팀 조합, 작전 카드, 승무원 상태를 성과 등급으로 묶어 현재 효율을 보여줍니다.</p>
+        </div>
+        <div class="performance-summary" id="performanceSummary"></div>
+      </section>
+      <section class="performance-layout">
+        <div class="grade-row" id="gradeRow"></div>
+        <div class="matrix-panel">
+          <div class="panel-heading">
+            <h2>실시간 연결 매트릭스</h2>
+          </div>
+          <div class="matrix" id="performanceMatrix"></div>
+        </div>
+        <aside class="team-panel">
+          <div class="panel-heading">
+            <h2>승무원 팀 현황</h2>
+          </div>
+          <div class="team-list" id="teamList"></div>
+        </aside>
+      </section>
+    </section>
+
+    <section class="result hidden" id="resultPanel">
+      <div>
+        <h2 id="resultTitle">작전 종료</h2>
+        <p id="resultText"></p>
+        <button type="button" data-command="restart">재시작</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
