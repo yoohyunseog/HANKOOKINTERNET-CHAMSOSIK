@@ -2,101 +2,100 @@
   "title": "이클립스 센츄어리 D.P 브리핑",
   "model": "deepseek-v3.1:671b-cloud",
   "source_feed": "https://xn--9l4b4xi9r.com/feed.xml",
-  "updated_at": "2026-05-12T18:20:30.561398+00:00",
-  "feed_last_build_date": "Tue, 12 May 2026 18:20:10 GMT",
+  "updated_at": "2026-05-12T20:39:00.167308+00:00",
+  "feed_last_build_date": "Tue, 12 May 2026 20:38:07 GMT",
   "item_count": 12,
-  "headline": "AI 국민배당금 제안으로 증시 혼란 및 급락",
-  "summary": "김용범 정책실장의 AI 기업 수익 국민배당금 환원 발언이 증시 급락을 촉발했습니다. 반도체 추가 세금 분배 방안과 과거 성과금 논쟁 재점화로 시장 불안이 확산 중입니다. 금융권 연체 채권 문제와 CPI 데이터 발표도 시장 변동성에 영향을 미칠 전망입니다.",
+  "headline": "삼성전자 노사갈등 심화, AI 국민배당금 논의 확산",
+  "summary": "삼성전자 노사 협상 실패와 총파업 위기가 반도체 산업 불안을 초래하고 있습니다. 한편 AI 초과세수를 활용한 국민배당금 제안이 논의되며 민생 지원 효과에 대한 관심이 높아지고 있습니다. 중동에서는 이란-쿠웨이트 국경 분쟁이 지속되고 있습니다.",
   "signals": [
-    "AI 국민배당금 제안 논란",
-    "반도체 세금 분배 방안 제시",
-    "금융권 연체 채권 문제 대두"
+    "삼성전자 노조 총파업 위기",
+    "AI 국민배당금 정책 제안",
+    "이란-쿠웨이트 국경 충돌"
   ],
   "risks": [
-    "정책 발언에 따른 증시 급락",
-    "반도체 기업 규제 불확실성",
-    "금융 시스템 취약성 노출"
+    "반도체 공급망 차질",
+    "대규모 성과급 요구 확산",
+    "중동 지정학적 긴장"
   ],
   "market_impact": [
     "코스피 하락 압력",
-    "코스닥 기술주 약세",
-    "비트코인 변동성 증가",
-    "한국 증시 심리 악화"
+    "코스닥 기술주 변동성 확대",
+    "비트코인 투자 심리 위축",
+    "한국 증시 불확실성 증가"
   ],
-  "outlook": "정책 논란과 금융 이슈가 단기 시장 불안을 지속시킬 전망",
-  "quality_note": "반복된 키워드 위주로 구성된 피드로 심층 분석 한계 있음",
+  "outlook": "단기적으로 삼성전자 파업이 증시에 부담으로 작용할 전망이지만, AI 관련 재정 정책 논의는 중장기적으로 긍정적일 수 있습니다.",
+  "quality_note": "반복된 키워드 위주로 구성되어 심도 있는 분석에는 한계가 있음",
   "weighted_signal": {
     "score": 42,
-    "upper_bound": 15,
-    "lower_bound": 57,
+    "upper_bound": 25,
+    "lower_bound": 58,
     "grade": "주의",
     "upper_factors": [
-      "정책적 소득 재분배 기대 +8",
-      "금융 시스템 개선 논의 +7"
+      "AI 배당금 정책 기대 +15",
+      "미국 인플레이션 안정 +10"
     ],
     "lower_factors": [
-      "증시 급락 충격 -20",
-      "반도체 규제 불확실성 -18",
-      "금융권 연체 채권 리스크 -12",
-      "CPI 데이터 변동성 우려 -7"
+      "삼성 파업 생산 차질 -25",
+      "반도체 산업 불확실성 -18",
+      "중동 긴장 재발 -15"
     ]
   },
   "items": [
     {
-      "title": "[AI 정책실장 김용범의 AI 기업 돈에 관하여 '국민 배당금으로 환원되어야 한다'고 말했지만 여론이 불타오르고 증시가 급락했습니다. 관련 파장이 확산되고 있습니다.]",
-      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [AI 정책실장 김용범의 AI 기업 돈에 관하여 '국민 배당금으로 환원되어야 한다'고 말했지만 여론이 불타오르고 증시가 급락했습니다. 관련 파장이 확산되고 있습니다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
+      "title": "[김용범, 청와대 정책실장이 AI 국민 배당금을 제안했으나 반도체 기업의 성과금 논쟁에서 다시 논란이 발생 관련 파장이 확산되고 있습니다.]",
+      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [김용범, 청와대 정책실장이 AI 국민 배당금을 제안했으나 반도체 기업의 성과금 논쟁에서 다시 논란이 발생 관련 파장이 확산되고 있습니다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
       "category": "일반",
-      "pubDate": "Tue, 12 May 2026 18:18:29 GMT",
-      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5BAI%20%EC%A0%95%EC%B1%85%EC%8B%A4%EC%9E%A5%20%EA%B9%80%EC%9A%A9%EB%B2%94%EC%9D%98%20AI%20%EA%B8%B0%EC%97%85%20%EB%8F%88%EC%97%90%20%EA%B4%80%ED%95%98%EC%97%AC%20'%EA%B5%AD%EB%AF%BC%20%EB%B0%B0%EB%8B%B9%EA%B8%88%EC%9C%BC%EB%A1%9C%20%ED%99%98%EC%9B%90%EB%90%98%EC%96%B4%EC%95%BC%20%ED%95%9C%EB%8B%A4'%EA%B3%A0%20%EB%A7%90%ED%96%88%EC%A7%80%EB%A7%8C%20%EC%97%AC%EB%A1%A0%EC%9D%B4%20%EB%B6%88%ED%83%80%EC%98%A4%EB%A5%B4%EA%B3%A0%20%EC%A6%9D%EC%8B%9C%EA%B0%80%20%EA%B8%89%EB%9D%BD%ED%96%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%20%EA%B4%80%EB%A0%A8%20%ED%8C%8C%EC%9E%A5%EC%9D%B4%20%ED%99%95%EC%82%B0%EB%90%98%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%5D&selected_max=48803.0398397202&selected_min=0.0008037624"
+      "pubDate": "Tue, 12 May 2026 20:37:29 GMT",
+      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B%EA%B9%80%EC%9A%A9%EB%B2%94%2C%20%EC%B2%AD%EC%99%80%EB%8C%80%20%EC%A0%95%EC%B1%85%EC%8B%A4%EC%9E%A5%EC%9D%B4%20AI%20%EA%B5%AD%EB%AF%BC%20%EB%B0%B0%EB%8B%B9%EA%B8%88%EC%9D%84%20%EC%A0%9C%EC%95%88%ED%96%88%EC%9C%BC%EB%82%98%20%EB%B0%98%EB%8F%84%EC%B2%B4%20%EA%B8%B0%EC%97%85%EC%9D%98%20%EC%84%B1%EA%B3%BC%EA%B8%88%20%EB%85%BC%EC%9F%81%EC%97%90%EC%84%9C%20%EB%8B%A4%EC%8B%9C%20%EB%85%BC%EB%9E%80%EC%9D%B4%20%EB%B0%9C%EC%83%9D%20%EA%B4%80%EB%A0%A8%20%ED%8C%8C%EC%9E%A5%EC%9D%B4%20%ED%99%95%EC%82%B0%EB%90%98%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%5D&selected_max=58309.2698283803&selected_min=0.0009606487"
     },
     {
-      "title": "[김실장은 과거와 같이 AI 시대 전환 교육 비용, 청년 창업자산, 농어촌 기본소득, 예술인 지원, 노력 연금 강화에 국민배당금을 이용할 계획 관련 파장이 확산되고 있습니다.]",
-      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [김실장은 과거와 같이 AI 시대 전환 교육 비용, 청년 창업자산, 농어촌 기본소득, 예술인 지원, 노력 연금 강화에 국민배당금을 이용할 계획 관련 파장이 확산되고 있습니다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
+      "title": "[AI 국민배당금 제안에 따른 민생 경제 지원의 효과가 확인됐다 관련 파장이 확산되고 있습니다.]",
+      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [AI 국민배당금 제안에 따른 민생 경제 지원의 효과가 확인됐다 관련 파장이 확산되고 있습니다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
       "category": "일반",
-      "pubDate": "Tue, 12 May 2026 18:17:26 GMT",
-      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B%EA%B9%80%EC%8B%A4%EC%9E%A5%EC%9D%80%20%EA%B3%BC%EA%B1%B0%EC%99%80%20%EA%B0%99%EC%9D%B4%20AI%20%EC%8B%9C%EB%8C%80%20%EC%A0%84%ED%99%98%20%EA%B5%90%EC%9C%A1%20%EB%B9%84%EC%9A%A9%2C%20%EC%B2%AD%EB%85%84%20%EC%B0%BD%EC%97%85%EC%9E%90%EC%82%B0%2C%20%EB%86%8D%EC%96%B4%EC%B4%8C%20%EA%B8%B0%EB%B3%B8%EC%86%8C%EB%93%9D%2C%20%EC%98%88%EC%88%A0%EC%9D%B8%20%EC%A7%80%EC%9B%90%2C%20%EB%85%B8%EB%A0%A5%20%EC%97%B0%EA%B8%88%20%EA%B0%95%ED%99%94%EC%97%90%20%EA%B5%AD%EB%AF%BC%EB%B0%B0%EB%8B%B9%EA%B8%88%EC%9D%84%20%EC%9D%B4%EC%9A%A9%ED%95%A0%20%EA%B3%84%ED%9A%8D%20%EA%B4%80%EB%A0%A8%20%ED%8C%8C%EC%9E%A5%EC%9D%B4%20%ED%99%95%EC%82%B0%EB%90%98%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%5D&selected_max=46332.4125681435&selected_min=0.0007615316"
+      "pubDate": "Tue, 12 May 2026 20:36:27 GMT",
+      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5BAI%20%EA%B5%AD%EB%AF%BC%EB%B0%B0%EB%8B%B9%EA%B8%88%20%EC%A0%9C%EC%95%88%EC%97%90%20%EB%94%B0%EB%A5%B8%20%EB%AF%BC%EC%83%9D%20%EA%B2%BD%EC%A0%9C%20%EC%A7%80%EC%9B%90%EC%9D%98%20%ED%9A%A8%EA%B3%BC%EA%B0%80%20%ED%99%95%EC%9D%B8%EB%90%90%EB%8B%A4%20%EA%B4%80%EB%A0%A8%20%ED%8C%8C%EC%9E%A5%EC%9D%B4%20%ED%99%95%EC%82%B0%EB%90%98%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%5D&selected_max=84853.4504505502&selected_min=0.0013945686"
     },
     {
-      "title": "[국내 국내 정치인장은 AI 국민배당금으로 반도체 수입 추가 세금을 분배하는 방안을 제시했습니다. 관련 파장이 확산되고 있습니다.]",
-      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [국내 국내 정치인장은 AI 국민배당금으로 반도체 수입 추가 세금을 분배하는 방안을 제시했습니다. 관련 파장이 확산되고 있습니다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
+      "title": "[김실장은 AI 초과 세수를 장기적인 사회 자산과 복지 재원으로 활용하는 '국민 배당금' 모델을 제안했다. 관련 파장이 확산되고 있습니다.]",
+      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [김실장은 AI 초과 세수를 장기적인 사회 자산과 복지 재원으로 활용하는 '국민 배당금' 모델을 제안했다. 관련 파장이 확산되고 있습니다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
       "category": "일반",
-      "pubDate": "Tue, 12 May 2026 18:16:22 GMT",
-      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B%EA%B5%AD%EB%82%B4%20%EA%B5%AD%EB%82%B4%20%EC%A0%95%EC%B9%98%EC%9D%B8%EC%9E%A5%EC%9D%80%20AI%20%EA%B5%AD%EB%AF%BC%EB%B0%B0%EB%8B%B9%EA%B8%88%EC%9C%BC%EB%A1%9C%20%EB%B0%98%EB%8F%84%EC%B2%B4%20%EC%88%98%EC%9E%85%20%EC%B6%94%EA%B0%80%20%EC%84%B8%EA%B8%88%EC%9D%84%20%EB%B6%84%EB%B0%B0%ED%95%98%EB%8A%94%20%EB%B0%A9%EC%95%88%EC%9D%84%20%EC%A0%9C%EC%8B%9C%ED%96%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%20%EA%B4%80%EB%A0%A8%20%ED%8C%8C%EC%9E%A5%EC%9D%B4%20%ED%99%95%EC%82%B0%EB%90%98%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%5D&selected_max=62359.6094129844&selected_min=0.0010274777"
+      "pubDate": "Tue, 12 May 2026 20:33:14 GMT",
+      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B%EA%B9%80%EC%8B%A4%EC%9E%A5%EC%9D%80%20AI%20%EC%B4%88%EA%B3%BC%20%EC%84%B8%EC%88%98%EB%A5%BC%20%EC%9E%A5%EA%B8%B0%EC%A0%81%EC%9D%B8%20%EC%82%AC%ED%9A%8C%20%EC%9E%90%EC%82%B0%EA%B3%BC%20%EB%B3%B5%EC%A7%80%20%EC%9E%AC%EC%9B%90%EC%9C%BC%EB%A1%9C%20%ED%99%9C%EC%9A%A9%ED%95%98%EB%8A%94%20'%EA%B5%AD%EB%AF%BC%20%EB%B0%B0%EB%8B%B9%EA%B8%88'%20%EB%AA%A8%EB%8D%B8%EC%9D%84%20%EC%A0%9C%EC%95%88%ED%96%88%EB%8B%A4.%20%EA%B4%80%EB%A0%A8%20%ED%8C%8C%EC%9E%A5%EC%9D%B4%20%ED%99%95%EC%82%B0%EB%90%98%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%5D&selected_max=58368.7493613473&selected_min=0.0009596729"
     },
     {
-      "title": "[국내 국내 정치인의 AI 국민배당금 구상에는 과거 반도체 기업 성과금 논쟁 때문에 다시 논란이 있습니다. 관련 파장이 확산되고 있습니다.]",
-      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [국내 국내 정치인의 AI 국민배당금 구상에는 과거 반도체 기업 성과금 논쟁 때문에 다시 논란이 있습니다. 관련 파장이 확산되고 있습니다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
+      "title": "[삼성전자와 노동조합이 협상 중, 최대 43조 손실 예상 관련 파장이 확산되고 있습니다.]",
+      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [삼성전자와 노동조합이 협상 중, 최대 43조 손실 예상 관련 파장이 확산되고 있습니다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
       "category": "일반",
-      "pubDate": "Tue, 12 May 2026 18:15:24 GMT",
-      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B%EA%B5%AD%EB%82%B4%20%EA%B5%AD%EB%82%B4%20%EC%A0%95%EC%B9%98%EC%9D%B8%EC%9D%98%20AI%20%EA%B5%AD%EB%AF%BC%EB%B0%B0%EB%8B%B9%EA%B8%88%20%EA%B5%AC%EC%83%81%EC%97%90%EB%8A%94%20%EA%B3%BC%EA%B1%B0%20%EB%B0%98%EB%8F%84%EC%B2%B4%20%EA%B8%B0%EC%97%85%20%EC%84%B1%EA%B3%BC%EA%B8%88%20%EB%85%BC%EC%9F%81%20%EB%95%8C%EB%AC%B8%EC%97%90%20%EB%8B%A4%EC%8B%9C%20%EB%85%BC%EB%9E%80%EC%9D%B4%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%20%EA%B4%80%EB%A0%A8%20%ED%8C%8C%EC%9E%A5%EC%9D%B4%20%ED%99%95%EC%82%B0%EB%90%98%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%5D&selected_max=58309.2698283803&selected_min=0.0009606487"
+      "pubDate": "Tue, 12 May 2026 20:32:01 GMT",
+      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90%EC%99%80%20%EB%85%B8%EB%8F%99%EC%A1%B0%ED%95%A9%EC%9D%B4%20%ED%98%91%EC%83%81%20%EC%A4%91%2C%20%EC%B5%9C%EB%8C%80%2043%EC%A1%B0%20%EC%86%90%EC%8B%A4%20%EC%98%88%EC%83%81%20%EA%B4%80%EB%A0%A8%20%ED%8C%8C%EC%9E%A5%EC%9D%B4%20%ED%99%95%EC%82%B0%EB%90%98%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%5D&selected_max=91641.8842734013&selected_min=0.0015110263"
     },
     {
-      "title": "[AI 국민 배당금 발언으로 인해 코스피 가격이 하락 관련 파장이 확산되고 있습니다.]",
-      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [AI 국민 배당금 발언으로 인해 코스피 가격이 하락 관련 파장이 확산되고 있습니다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
+      "title": "[삼성전자 노사와 중앙동위원회의 협상이 실패해 총파업에 대비한 조정안이 노동조합 갈맛 관련 파장이 확산되고 있습니다.]",
+      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [삼성전자 노사와 중앙동위원회의 협상이 실패해 총파업에 대비한 조정안이 노동조합 갈맛 관련 파장이 확산되고 있습니다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
       "category": "일반",
-      "pubDate": "Tue, 12 May 2026 18:08:13 GMT",
-      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5BAI%20%EA%B5%AD%EB%AF%BC%20%EB%B0%B0%EB%8B%B9%EA%B8%88%20%EB%B0%9C%EC%96%B8%EC%9C%BC%EB%A1%9C%20%EC%9D%B8%ED%95%B4%20%EC%BD%94%EC%8A%A4%ED%94%BC%20%EA%B0%80%EA%B2%A9%EC%9D%B4%20%ED%95%98%EB%9D%BD%20%EA%B4%80%EB%A0%A8%20%ED%8C%8C%EC%9E%A5%EC%9D%B4%20%ED%99%95%EC%82%B0%EB%90%98%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%5D&selected_max=95543.1158936045&selected_min=0.0015755033"
+      "pubDate": "Tue, 12 May 2026 20:30:03 GMT",
+      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90%20%EB%85%B8%EC%82%AC%EC%99%80%20%EC%A4%91%EC%95%99%EB%8F%99%EC%9C%84%EC%9B%90%ED%9A%8C%EC%9D%98%20%ED%98%91%EC%83%81%EC%9D%B4%20%EC%8B%A4%ED%8C%A8%ED%95%B4%20%EC%B4%9D%ED%8C%8C%EC%97%85%EC%97%90%20%EB%8C%80%EB%B9%84%ED%95%9C%20%EC%A1%B0%EC%A0%95%EC%95%88%EC%9D%B4%20%EB%85%B8%EB%8F%99%EC%A1%B0%ED%95%A9%20%EA%B0%88%EB%A7%9B%20%EA%B4%80%EB%A0%A8%20%ED%8C%8C%EC%9E%A5%EC%9D%B4%20%ED%99%95%EC%82%B0%EB%90%98%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%5D&selected_max=69147.7113346107&selected_min=0.0011371893"
     },
     {
-      "title": "[CPI 데이터 발표, 반도체 분야의 시장 분위기를 보일 것 관련 파장이 확산되고 있습니다.]",
-      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [CPI 데이터 발표, 반도체 분야의 시장 분위기를 보일 것 관련 파장이 확산되고 있습니다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
+      "title": "[삼성전자 노조 총파업에서의 협상은 국내 반도체 산업의 안정성을 많이 위협하고 있습니다. 관련 파장이 확산되고 있습니다.]",
+      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [삼성전자 노조 총파업에서의 협상은 국내 반도체 산업의 안정성을 많이 위협하고 있습니다. 관련 파장이 확산되고 있습니다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
       "category": "일반",
-      "pubDate": "Tue, 12 May 2026 18:05:39 GMT",
-      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5BCPI%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EB%B0%9C%ED%91%9C%2C%20%EB%B0%98%EB%8F%84%EC%B2%B4%20%EB%B6%84%EC%95%BC%EC%9D%98%20%EC%8B%9C%EC%9E%A5%20%EB%B6%84%EC%9C%84%EA%B8%B0%EB%A5%BC%20%EB%B3%B4%EC%9D%BC%20%EA%B2%83%20%EA%B4%80%EB%A0%A8%20%ED%8C%8C%EC%9E%A5%EC%9D%B4%20%ED%99%95%EC%82%B0%EB%90%98%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%5D&selected_max=88046.743394656&selected_min=0.0014516197"
+      "pubDate": "Tue, 12 May 2026 20:29:05 GMT",
+      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90%20%EB%85%B8%EC%A1%B0%20%EC%B4%9D%ED%8C%8C%EC%97%85%EC%97%90%EC%84%9C%EC%9D%98%20%ED%98%91%EC%83%81%EC%9D%80%20%EA%B5%AD%EB%82%B4%20%EB%B0%98%EB%8F%84%EC%B2%B4%20%EC%82%B0%EC%97%85%EC%9D%98%20%EC%95%88%EC%A0%95%EC%84%B1%EC%9D%84%20%EB%A7%8E%EC%9D%B4%20%EC%9C%84%ED%98%91%ED%95%98%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%20%EA%B4%80%EB%A0%A8%20%ED%8C%8C%EC%9E%A5%EC%9D%B4%20%ED%99%95%EC%82%B0%EB%90%98%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%5D&selected_max=67014.6487177111&selected_min=0.0011043005"
     },
     {
-      "title": "[대형 금융사들이 취약 차주들에게 압박하며 420억 원의 배당수익을 올렸다는 가장 중요한 소식 관련 파장이 확산되고 있습니다.]",
-      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [대형 금융사들이 취약 차주들에게 압박하며 420억 원의 배당수익을 올렸다는 가장 중요한 소식 관련 파장이 확산되고 있습니다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
+      "title": "[4명의 이란 혁명 수비대 대원이 쿠웨이트 영토로 미립국을 통해 침입하여 체포되었다. 관련 파장이 확산되고 있습니다.]",
+      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [4명의 이란 혁명 수비대 대원이 쿠웨이트 영토로 미립국을 통해 침입하여 체포되었다. 관련 파장이 확산되고 있습니다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
       "category": "일반",
-      "pubDate": "Tue, 12 May 2026 18:04:13 GMT",
-      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B%EB%8C%80%ED%98%95%20%EA%B8%88%EC%9C%B5%EC%82%AC%EB%93%A4%EC%9D%B4%20%EC%B7%A8%EC%95%BD%20%EC%B0%A8%EC%A3%BC%EB%93%A4%EC%97%90%EA%B2%8C%20%EC%95%95%EB%B0%95%ED%95%98%EB%A9%B0%20420%EC%96%B5%20%EC%9B%90%EC%9D%98%20%EB%B0%B0%EB%8B%B9%EC%88%98%EC%9D%B5%EC%9D%84%20%EC%98%AC%EB%A0%B8%EB%8B%A4%EB%8A%94%20%EA%B0%80%EC%9E%A5%20%EC%A4%91%EC%9A%94%ED%95%9C%20%EC%86%8C%EC%8B%9D%20%EA%B4%80%EB%A0%A8%20%ED%8C%8C%EC%9E%A5%EC%9D%B4%20%ED%99%95%EC%82%B0%EB%90%98%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%5D&selected_max=64141.8028306291&selected_min=0.0010568874"
+      "pubDate": "Tue, 12 May 2026 20:25:47 GMT",
+      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B4%EB%AA%85%EC%9D%98%20%EC%9D%B4%EB%9E%80%20%ED%98%81%EB%AA%85%20%EC%88%98%EB%B9%84%EB%8C%80%20%EB%8C%80%EC%9B%90%EC%9D%B4%20%EC%BF%A0%EC%9B%A8%EC%9D%B4%ED%8A%B8%20%EC%98%81%ED%86%A0%EB%A1%9C%20%EB%AF%B8%EB%A6%BD%EA%B5%AD%EC%9D%84%20%ED%86%B5%ED%95%B4%20%EC%B9%A8%EC%9E%85%ED%95%98%EC%97%AC%20%EC%B2%B4%ED%8F%AC%EB%90%98%EC%97%88%EB%8B%A4.%20%EA%B4%80%EB%A0%A8%20%ED%8C%8C%EC%9E%A5%EC%9D%B4%20%ED%99%95%EC%82%B0%EB%90%98%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%5D&selected_max=69077.2476807644&selected_min=0.0011383455"
     },
     {
-      "title": "[국내 국내 정치인은 장기 연체 채권을 보유한 금융 기관들이 자발적으로 해결하는 방안을 강조하고 있습니다. 관련 파장이 확산되고 있습니다.]",
-      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [국내 국내 정치인은 장기 연체 채권을 보유한 금융 기관들이 자발적으로 해결하는 방안을 강조하고 있습니다. 관련 파장이 확산되고 있습니다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
+      "title": "[5월 10일 뒤, '국내 전자업계 강자' Samsung Electronics 주가는 30% 차익으로 고점을 실현할 것 관련 파장이 확산되고 있습니다.]",
+      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [5월 10일 뒤, '국내 전자업계 강자' Samsung Electronics 주가는 30% 차익으로 고점을 실현할 것 관련 파장이 확산되고 있습니다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
       "category": "일반",
-      "pubDate": "Tue, 12 May 2026 18:02:53 GMT",
-      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B%EA%B5%AD%EB%82%B4%20%EA%B5%AD%EB%82%B4%20%EC%A0%95%EC%B9%98%EC%9D%B8%EC%9D%80%20%EC%9E%A5%EA%B8%B0%20%EC%97%B0%EC%B2%B4%20%EC%B1%84%EA%B6%8C%EC%9D%84%20%EB%B3%B4%EC%9C%A0%ED%95%9C%20%EA%B8%88%EC%9C%B5%20%EA%B8%B0%EA%B4%80%EB%93%A4%EC%9D%B4%20%EC%9E%90%EB%B0%9C%EC%A0%81%EC%9C%BC%EB%A1%9C%20%ED%95%B4%EA%B2%B0%ED%95%98%EB%8A%94%20%EB%B0%A9%EC%95%88%EC%9D%84%20%EA%B0%95%EC%A1%B0%ED%95%98%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%20%EA%B4%80%EB%A0%A8%20%ED%8C%8C%EC%9E%A5%EC%9D%B4%20%ED%99%95%EC%82%B0%EB%90%98%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%5D&selected_max=58309.2698283803&selected_min=0.0009606487"
+      "pubDate": "Tue, 12 May 2026 20:23:36 GMT",
+      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B5%EC%9B%94%2010%EC%9D%BC%20%EB%92%A4%2C%20'%EA%B5%AD%EB%82%B4%20%EC%A0%84%EC%9E%90%EC%97%85%EA%B3%84%20%EA%B0%95%EC%9E%90'%20Samsung%20Electronics%20%EC%A3%BC%EA%B0%80%EB%8A%94%2030%25%20%EC%B0%A8%EC%9D%B5%EC%9C%BC%EB%A1%9C%20%EA%B3%A0%EC%A0%90%EC%9D%84%20%EC%8B%A4%ED%98%84%ED%95%A0%20%EA%B2%83%20%EA%B4%80%EB%A0%A8%20%ED%8C%8C%EC%9E%A5%EC%9D%B4%20%ED%99%95%EC%82%B0%EB%90%98%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%5D&selected_max=53449.0460933913&selected_min=0.0008804745"
     }
   ]
 }
