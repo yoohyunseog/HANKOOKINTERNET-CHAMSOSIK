@@ -45,11 +45,12 @@ app.use(hpp()); // HTTP Parameter Pollution 방어
 // Rate Limiting
 const limiter = rateLimit({
   windowMs: 15 * 60 * 1000, // 15분
-  max: 100, // IP당 최대 100 요청
+  max: 250, // IP당 최대 250 요청
   message: '너무 많은 요청이 발생했습니다. 잠시 후 다시 시도해주세요.',
   validate: {xForwardedForHeader: false}, // X-Forwarded-For validation 비활성화
   skip: (req) => {
     const path = req.path || '';
+    const originalUrl = req.originalUrl || '';
     // SEO 및 주요 API 경로는 rate limit 제외
     return path === '/sitemap.xml' ||
            path === '/feed.xml' ||
@@ -62,6 +63,8 @@ const limiter = rateLimit({
            path.startsWith('/api/most-viewed') ||
            path.startsWith('/api/visits/') ||
            path.startsWith('/api/keywords/') ||
+           path.startsWith('/api/radio-state') ||
+           originalUrl.startsWith('/api/radio-state') ||
            path.startsWith('/api/stats') ||
            path === '/api/health' ||
            /^\/google[a-zA-Z0-9]+\.html$/.test(path);
@@ -81,6 +84,7 @@ const RECENT_CACHE_TTL_LIMIT_100_MS = parseInt(process.env.RECENT_CACHE_TTL_LIMI
 const RECENT_CACHE_TTL_LIMIT_1_MS = parseInt(process.env.RECENT_CACHE_TTL_LIMIT_1_MS || '30000', 10); // 10초 → 30초
 const RECENT_CACHE_DIR = path.join(__dirname, '..', 'data', 'cache');
 const RECENT_CACHE_FILE_PATH = path.join(RECENT_CACHE_DIR, 'recent_api_cache.json');
+const RADIO_STATE_FILE_PATH = path.join(RECENT_CACHE_DIR, 'radio_state.json');
 
 // 인기 키워드 캐시 설정 - 최적화: 5분으로 증가
 const KEYWORDS_CACHE_TTL_MS = parseInt(process.env.KEYWORDS_CACHE_TTL_MS || '300000', 10); // 1분 → 5분
@@ -138,6 +142,57 @@ function writeRecentFileCache(cacheObject) {
         console.error('[recent-cache] 쓰기 대상 경로:', RECENT_CACHE_FILE_PATH);
         return false;
     }
+}
+
+function defaultRadioState() {
+    const now = Date.now();
+    return {
+        stationUrl: 'https://soundcloud.com/revenue-589926433/sets/n-b-ai-dj',
+        trackIndex: 0,
+        trackId: null,
+        trackTitle: '',
+        artist: '',
+        status: 'paused',
+        positionMs: 0,
+        startedAt: now,
+        updatedAt: now,
+        version: 1,
+        source: 'server-default'
+    };
+}
+
+function readRadioState() {
+    try {
+        ensureRecentCacheDir();
+        if (!fs.existsSync(RADIO_STATE_FILE_PATH)) {
+            const state = defaultRadioState();
+            fs.writeFileSync(RADIO_STATE_FILE_PATH, JSON.stringify(state, null, 2), 'utf8');
+            return state;
+        }
+        const raw = fs.readFileSync(RADIO_STATE_FILE_PATH, 'utf8');
+        return raw ? { ...defaultRadioState(), ...JSON.parse(raw) } : defaultRadioState();
+    } catch (error) {
+        console.error('[radio-state] read error:', error.message);
+        return defaultRadioState();
+    }
+}
+
+function writeRadioState(nextState) {
+    ensureRecentCacheDir();
+    fs.writeFileSync(RADIO_STATE_FILE_PATH, JSON.stringify(nextState, null, 2), 'utf8');
+}
+
+function publicRadioState(state) {
+    const now = Date.now();
+    const livePositionMs = state.status === 'playing'
+        ? Math.max(0, Number(state.positionMs || 0) + Math.max(0, now - Number(state.startedAt || now)))
+        : Math.max(0, Number(state.positionMs || 0));
+
+    return {
+        ...state,
+        serverNow: now,
+        livePositionMs
+    };
 }
 
 // 인기 키워드 캐시 파일 읽기/쓰기
@@ -284,6 +339,11 @@ app.use((req, res, next) => {
 // 미들웨어
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
+
+// Favicon 요청을 기본적으로 처리
+app.get('/favicon.ico', (req, res) => {
+    res.status(204).end();
+});
 
 // 예전 domain-check.js가 보내던 잘못된 404 경로 호환 처리
 app.use((req, res, next) => {
@@ -1176,6 +1236,57 @@ app.get('/api/calculations', async (req, res) => {
 // 헬스 체크
 app.get('/api/health', (req, res) => {
     res.json({ status: 'OK', message: 'N/B 계산 서버 정상 작동 중' });
+});
+
+app.options(['/api/radio-state', '/api/radio-state/'], (req, res) => {
+    res.set('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
+    res.set('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+    res.sendStatus(204);
+});
+
+app.get(['/api/radio-state', '/api/radio-state/'], (req, res) => {
+    try {
+        return res.json({
+            success: true,
+            state: publicRadioState(readRadioState())
+        });
+    } catch (error) {
+        console.error('[radio-state] get error:', error);
+        return res.status(500).json({ success: false, error: error.message });
+    }
+});
+
+app.post(['/api/radio-state', '/api/radio-state/'], (req, res) => {
+    try {
+        const previous = readRadioState();
+        const body = req.body || {};
+        const now = Date.now();
+        const status = body.status === 'playing' ? 'playing' : 'paused';
+        const positionMs = Math.max(0, Math.floor(Number(body.positionMs || 0)));
+        const nextState = {
+            ...previous,
+            stationUrl: String(body.stationUrl || previous.stationUrl || '').slice(0, 500),
+            trackIndex: Math.max(0, Math.floor(Number(body.trackIndex ?? previous.trackIndex ?? 0))),
+            trackId: body.trackId ?? previous.trackId ?? null,
+            trackTitle: String(body.trackTitle || previous.trackTitle || '').slice(0, 300),
+            artist: String(body.artist || previous.artist || '').slice(0, 200),
+            status,
+            positionMs,
+            startedAt: status === 'playing' ? now - positionMs : now,
+            updatedAt: now,
+            version: Math.max(1, Number(previous.version || 1) + 1),
+            source: String(body.source || 'browser').slice(0, 80)
+        };
+
+        writeRadioState(nextState);
+        return res.json({
+            success: true,
+            state: publicRadioState(nextState)
+        });
+    } catch (error) {
+        console.error('[radio-state] post error:', error);
+        return res.status(500).json({ success: false, error: error.message });
+    }
 });
 
 // ===== 방문 통계 API =====

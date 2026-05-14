@@ -2,10 +2,30 @@
 <html lang="ko">
   <head>
     <script src="../domain-check.js"></script>
+    <script src="https://w.soundcloud.com/player/api.js"></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AI 이슈 분석 채팅 | 참소식.com</title>
+    <title>봉이에 꼬봉 | 참소식.com</title>
     <style>
+      :root {
+        --chalk: #183b30;
+        --chalk-deep: #0f271f;
+        --wood: #755031;
+        --wood-dark: #4a2d18;
+        --paper: #fbf0dc;
+        --paper-soft: #fff8eb;
+        --ink: #2f261b;
+        --muted: #786b59;
+        --line: rgba(79, 58, 36, 0.2);
+        --green: #5e8f67;
+        --gold: #d49b3b;
+        --blue: #5c91b1;
+        --violet: #7b56a6;
+        --shadow: 0 22px 55px rgba(45, 30, 15, 0.28);
+        font-family: "Segoe UI", "Noto Sans KR", AppleSDGothicNeo, sans-serif;
+        color: var(--ink);
+      }
+
       * {
         box-sizing: border-box;
       }
@@ -13,268 +33,1524 @@
       body {
         margin: 0;
         min-height: 100vh;
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", sans-serif;
-        color: #102033;
-        background: #f6f9fb;
+        padding-top: 154px;
+        padding-bottom: 112px;
+        background:
+          linear-gradient(90deg, rgba(255, 232, 187, 0.76), rgba(255, 255, 255, 0) 28%),
+          radial-gradient(circle at 9% 18%, rgba(255, 228, 165, 0.62), transparent 31%),
+          linear-gradient(135deg, #b77441 0%, #efd2a4 38%, #905d34 100%);
+        overflow-x: hidden;
       }
 
-      header {
+      body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+        background:
+          linear-gradient(90deg, rgba(88, 50, 23, 0.16) 0 1px, transparent 1px 100%),
+          linear-gradient(rgba(88, 50, 23, 0.08) 0 1px, transparent 1px 100%);
+        background-size: 62px 62px;
+        opacity: 0.42;
+      }
+
+      button,
+      input,
+      textarea {
+        font: inherit;
+      }
+
+      button {
+        cursor: pointer;
+      }
+
+      .fixed-player-bar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 50;
+        display: grid;
+        grid-template-columns: minmax(320px, 1fr) minmax(250px, 360px);
+        gap: 12px;
+        align-items: center;
+        padding: 10px 16px 12px;
+        background:
+          linear-gradient(180deg, rgba(14, 35, 47, 0.98), rgba(11, 17, 24, 0.98)),
+          #101820;
+        border-bottom: 4px solid rgba(248, 207, 118, 0.86);
+        box-shadow: 0 18px 38px rgba(22, 14, 7, 0.34);
+      }
+
+      .fixed-player-meta {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        gap: 16px;
-        padding: 16px 22px;
-        color: #ffffff;
-        background: #064e3b;
+        gap: 12px;
+        margin-bottom: 7px;
+        color: #fff0bd;
+        font-weight: 950;
+      }
+
+      .fixed-player-meta span:last-child {
+        color: #9df5ff;
+        font-size: 13px;
+      }
+
+      .fixed-player-frame {
+        width: 100%;
+        height: 96px;
+        border: 0;
+        border-radius: 8px;
+        background: #ffffff;
+        display: block;
+      }
+
+      .fixed-player-actions {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px;
+      }
+
+      .fixed-player-actions button {
+        min-height: 46px;
+        border: 1px solid rgba(126, 220, 255, 0.3);
+        border-radius: 8px;
+        color: #e9fbff;
+        background: rgba(255, 255, 255, 0.1);
+        font-weight: 950;
+      }
+
+      .fixed-player-actions button.primary {
+        color: #1c1608;
+        background: #f8cf76;
+        border-color: rgba(248, 207, 118, 0.9);
+      }
+
+      .app {
+        position: relative;
+        width: min(1560px, calc(100vw - 26px));
+        margin: 16px auto 28px;
+      }
+
+      .topbar {
+        min-height: 128px;
+        display: grid;
+        grid-template-columns: 220px minmax(360px, 1fr) 360px 210px;
+        align-items: center;
+        gap: 22px;
+        padding: 18px 26px;
+        color: #fff5d6;
+        background:
+          radial-gradient(circle at 50% 0, rgba(255, 255, 255, 0.14), transparent 40%),
+          linear-gradient(180deg, #24493b, var(--chalk-deep));
+        border: 10px solid var(--wood);
+        border-bottom: 14px solid var(--wood-dark);
+        border-radius: 28px 28px 10px 10px;
+        box-shadow: var(--shadow), inset 0 0 0 1px rgba(255, 255, 255, 0.12);
+      }
+
+      .top-left,
+      .top-actions {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+      }
+
+      .menu-button {
+        width: 54px;
+        height: 54px;
+        border: 0;
+        color: #f3dbb4;
+        background: transparent;
+        font-size: 39px;
+        line-height: 1;
+      }
+
+      .badge {
+        width: 78px;
+        height: 78px;
+        display: grid;
+        place-items: center;
+        clip-path: polygon(50% 0, 92% 17%, 84% 78%, 50% 100%, 16% 78%, 8% 17%);
+        border: 3px solid #e5ad55;
+        background: #1d5446;
+        color: #ffd98b;
+        font-size: 23px;
+        font-weight: 900;
+        line-height: 0.96;
+        text-align: center;
+        box-shadow: inset 0 0 18px rgba(0, 0, 0, 0.3);
+      }
+
+      .brand {
+        text-align: center;
+      }
+
+      .brand h1 {
+        margin: 0;
+        font-size: clamp(39px, 5vw, 72px);
+        line-height: 1;
+        letter-spacing: 0;
+        font-weight: 900;
+        text-shadow: 0 3px 0 rgba(0, 0, 0, 0.22);
+      }
+
+      .brand p {
+        margin: 8px 0 0;
+        color: #f0d59d;
+        font-size: 20px;
         font-weight: 800;
       }
 
-      header a {
-        color: #d1fae5;
-        text-decoration: none;
+      .memo {
+        position: relative;
+        justify-self: center;
+        width: min(100%, 340px);
+        padding: 18px 22px 17px;
+        color: #392a17;
+        background: #f9dfaa;
+        box-shadow: 0 13px 22px rgba(0, 0, 0, 0.2);
+        transform: rotate(-2deg);
+        text-align: center;
+        font-weight: 900;
+        line-height: 1.6;
       }
 
-      main {
+      .memo::before {
+        content: "";
+        position: absolute;
+        right: 16px;
+        top: -22px;
+        width: 22px;
+        height: 56px;
+        border: 6px solid #c68525;
+        border-radius: 18px;
+        transform: rotate(17deg);
+      }
+
+      .top-actions {
+        justify-content: flex-end;
+      }
+
+      .nav-btn {
+        width: 84px;
         display: grid;
-        grid-template-columns: minmax(0, 1fr) 360px;
-        gap: 18px;
-        width: min(1200px, calc(100% - 28px));
-        margin: 0 auto;
-        padding: 28px 0;
-      }
-
-      .chat-shell,
-      .side-panel {
-        border: 1px solid #d8e4ee;
-        border-radius: 8px;
-        background: #ffffff;
-        box-shadow: 0 12px 28px rgba(15, 23, 42, 0.08);
-      }
-
-      .chat-head {
-        padding: 22px;
-        border-bottom: 1px solid #e5edf5;
-      }
-
-      .kicker {
-        margin: 0 0 8px;
-        color: #0f766e;
-        font-size: 0.82rem;
+        gap: 5px;
+        place-items: center;
+        border: 0;
+        color: #eadfc8;
+        background: transparent;
         font-weight: 900;
       }
 
-      h1 {
-        margin: 0 0 10px;
-        font-size: clamp(1.8rem, 4vw, 3rem);
-        line-height: 1.1;
-        letter-spacing: 0;
+      .nav-btn span:first-child {
+        font-size: 38px;
+        line-height: 1;
       }
 
-      .chat-head p {
-        max-width: 760px;
+      .board {
+        display: grid;
+        grid-template-columns: 350px minmax(460px, 1fr) 360px;
+        gap: 18px;
+        padding: 22px 18px 28px;
+        background: rgba(247, 226, 194, 0.9);
+        border: 2px solid rgba(104, 68, 38, 0.28);
+        border-top: 0;
+        border-radius: 0 0 18px 18px;
+        box-shadow: var(--shadow);
+      }
+
+      .panel {
+        background: rgba(255, 248, 234, 0.88);
+        border: 2px solid rgba(92, 67, 42, 0.22);
+        border-radius: 8px;
+        box-shadow: 0 12px 28px rgba(74, 48, 25, 0.14), inset 0 0 0 1px rgba(255, 255, 255, 0.46);
+      }
+
+      .left,
+      .right {
+        display: grid;
+        gap: 14px;
+        align-content: start;
+      }
+
+      .teacher {
+        min-height: 246px;
+        overflow: hidden;
+        position: relative;
+        background:
+          linear-gradient(rgba(24, 42, 36, 0.16), rgba(24, 42, 36, 0.16)),
+          linear-gradient(120deg, #f0d2a4, #88a691);
+      }
+
+      .teacher-title {
+        display: inline-flex;
+        align-items: center;
         margin: 0;
-        color: #526174;
-        line-height: 1.7;
+        padding: 9px 18px;
+        color: #ffffff;
+        background: #59679e;
+        border-radius: 0 0 16px 0;
+        font-size: 21px;
+        font-weight: 900;
+      }
+
+      .robot-area {
+        display: grid;
+        grid-template-columns: 142px 1fr;
+        gap: 14px;
+        align-items: end;
+        padding: 14px 16px 18px;
+      }
+
+      .robot {
+        position: relative;
+        height: 168px;
+        filter: drop-shadow(0 10px 14px rgba(0, 0, 0, 0.26));
+      }
+
+      .robot::before {
+        content: "";
+        position: absolute;
+        left: 22px;
+        top: 26px;
+        width: 98px;
+        height: 82px;
+        border: 4px solid #d0c8b8;
+        border-radius: 38px 38px 32px 32px;
+        background: #f6f1e7;
+      }
+
+      .robot::after {
+        content: "";
+        position: absolute;
+        left: 37px;
+        top: 47px;
+        width: 68px;
+        height: 38px;
+        border-radius: 18px;
+        background: #1f2d2a;
+        box-shadow: inset 0 0 12px rgba(94, 255, 174, 0.14);
+      }
+
+      .eye {
+        position: absolute;
+        top: 59px;
+        z-index: 2;
+        width: 12px;
+        height: 20px;
+        border-radius: 10px;
+        background: #89e7a8;
+      }
+
+      .eye.left-eye {
+        left: 53px;
+      }
+
+      .eye.right-eye {
+        left: 83px;
+      }
+
+      .smile {
+        position: absolute;
+        left: 66px;
+        top: 78px;
+        z-index: 2;
+        width: 20px;
+        height: 10px;
+        border-bottom: 3px solid #89e7a8;
+        border-radius: 0 0 20px 20px;
+      }
+
+      .body {
+        position: absolute;
+        left: 16px;
+        top: 104px;
+        width: 116px;
+        height: 62px;
+        border: 4px solid #d0c8b8;
+        border-radius: 34px 34px 12px 12px;
+        background: linear-gradient(90deg, #f5f0e6 0 40%, #8a7e59 40% 100%);
+      }
+
+      .speech {
+        align-self: start;
+        margin-top: 10px;
+        padding: 17px 18px;
+        background: #fff7e8;
+        border-radius: 8px 20px 20px;
+        box-shadow: 0 8px 14px rgba(0, 0, 0, 0.15);
+        font-weight: 900;
+        line-height: 1.6;
+      }
+
+      .online {
+        position: absolute;
+        right: 16px;
+        bottom: 14px;
+        padding: 8px 14px;
+        border-radius: 20px;
+        color: #bdf0ad;
+        background: rgba(25, 57, 32, 0.78);
+        font-weight: 900;
+      }
+
+      .card {
+        padding: 18px;
+      }
+
+      .section-title {
+        margin: 0 0 14px;
+        color: #3a2a17;
+        font-size: 22px;
+        font-weight: 900;
+      }
+
+      .profile {
+        display: grid;
+        grid-template-columns: 96px 1fr;
+        gap: 16px;
+        padding: 14px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.48);
+      }
+
+      .avatar {
+        width: 96px;
+        aspect-ratio: 1;
+        display: grid;
+        place-items: center;
+        border-radius: 8px;
+        background: linear-gradient(160deg, #283855, #f2c48f);
+        box-shadow: inset 0 0 0 3px rgba(255, 255, 255, 0.3);
+        font-size: 54px;
+      }
+
+      dl {
+        margin: 0;
+      }
+
+      dt {
+        color: var(--muted);
+        font-size: 14px;
+        font-weight: 900;
+      }
+
+      dd {
+        margin: 2px 0 10px;
+        font-weight: 900;
+      }
+
+      .tag {
+        display: inline-flex;
+        align-items: center;
+        min-height: 32px;
+        padding: 5px 12px;
+        border-radius: 6px;
+        color: #ffffff;
+        background: var(--violet);
+        font-weight: 900;
+      }
+
+      .level {
+        color: #c68d2e;
+        font-weight: 900;
+      }
+
+      .states {
+        display: grid;
+        gap: 8px;
+      }
+
+      .state {
+        min-height: 44px;
+        display: grid;
+        grid-template-columns: 34px 1fr auto;
+        gap: 9px;
+        align-items: center;
+        padding: 8px 12px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        color: #4a3b2a;
+        background: rgba(255, 255, 255, 0.58);
+        font-weight: 900;
+      }
+
+      .state.active {
+        color: #ffffff;
+        background: linear-gradient(90deg, #7b55a5, #9a74c0);
+        box-shadow: 0 7px 14px rgba(93, 65, 133, 0.24);
+      }
+
+      .state .icon {
+        width: 30px;
+        height: 30px;
+        display: grid;
+        place-items: center;
+        border-radius: 50%;
+        background: rgba(60, 48, 37, 0.16);
+      }
+
+      .chat {
+        min-height: 830px;
+        display: grid;
+        grid-template-rows: auto 1fr auto auto auto;
+        position: relative;
+        overflow: hidden;
+        background: var(--paper);
+      }
+
+      .chat::before {
+        content: "";
+        position: absolute;
+        left: 28px;
+        top: 0;
+        bottom: 0;
+        width: 3px;
+        background: repeating-linear-gradient(#b98d61 0 10px, transparent 10px 20px);
+        opacity: 0.32;
+      }
+
+      .chat-head {
+        padding: 18px 28px 14px 64px;
+        border-bottom: 1px solid rgba(71, 53, 34, 0.13);
+        font-size: 24px;
+        font-weight: 900;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+
+      .chat-head::after {
+        content: "";
+        flex: 1;
+        max-width: 120px;
+        height: 3px;
+        margin-left: 8px;
+        background: #8f64b0;
+      }
       }
 
       .messages {
         display: flex;
         flex-direction: column;
         gap: 12px;
-        min-height: 460px;
-        max-height: 62vh;
+        min-height: 430px;
+        max-height: 58vh;
         overflow: auto;
-        padding: 18px;
-        background: #f8fbfd;
+        padding: 6px 28px 16px 64px;
       }
 
-      .message {
-        max-width: 84%;
-        padding: 14px 16px;
-        border-radius: 8px;
-        line-height: 1.65;
+      .msg-row {
+        display: flex;
+        gap: 12px;
+        align-items: flex-end;
+      }
+
+      .msg-row.user {
+        justify-content: flex-end;
+      }
+
+      .mini-bot {
+        flex: 0 0 42px;
+        width: 42px;
+        height: 42px;
+        display: grid;
+        place-items: center;
+        border: 2px solid rgba(70, 53, 34, 0.2);
+        border-radius: 50%;
+        background: #d9e5d5;
+      }
+
+      .bubble {
+        max-width: min(560px, 78%);
+        padding: 16px 20px;
+        border: 1px solid rgba(78, 58, 35, 0.18);
+        border-radius: 8px 22px 22px;
+        background: #fff8ea;
+        box-shadow: 0 8px 18px rgba(62, 43, 23, 0.11);
+        line-height: 1.58;
         white-space: pre-wrap;
+        font-weight: 760;
+        margin: 8px;
       }
 
-      .message.user {
-        align-self: flex-end;
+      .user .bubble {
+        color: #31283c;
+        background: #efe4f0;
+        border-radius: 22px 8px 22px 22px;
+      }
+
+      .time {
+        display: block;
+        margin-top: 8px;
+        color: #9d8b75;
+        font-size: 12px;
+        font-weight: 800;
+        text-align: right;
+      }
+
+      .choices {
+        display: grid;
+        gap: 10px;
+        padding: 0 28px 14px 64px;
+      }
+
+      .choice {
+        min-height: 78px;
+        display: grid;
+        grid-template-columns: 70px 1fr;
+        align-items: center;
+        gap: 16px;
+        padding: 12px 18px;
+        border: 1px solid rgba(82, 62, 40, 0.17);
+        border-radius: 8px;
+        color: #2f281e;
+        text-align: left;
+        box-shadow: 0 8px 14px rgba(58, 41, 22, 0.1);
+      }
+
+      .choice strong {
+        display: block;
+        font-size: 19px;
+      }
+
+      .choice small {
+        display: block;
+        margin-top: 4px;
+        color: #5b5145;
+        font-weight: 850;
+        line-height: 1.35;
+      }
+
+      .choice:nth-child(1) {
+        background: #dbe9d2;
+      }
+
+      .choice:nth-child(2) {
+        background: #f6dfab;
+      }
+
+      .choice:nth-child(3) {
+        background: #dce9ef;
+      }
+
+      .choice-icon {
+        width: 58px;
+        height: 58px;
+        display: grid;
+        place-items: center;
+        border-radius: 8px;
         color: #ffffff;
-        background: #047857;
+        font-size: 33px;
       }
 
-      .message.ai {
-        align-self: flex-start;
-        color: #233247;
-        background: #ffffff;
-        border: 1px solid #dbe7ef;
+      .choice:nth-child(1) .choice-icon {
+        background: var(--green);
+      }
+
+      .choice:nth-child(2) .choice-icon {
+        background: var(--gold);
+      }
+
+      .choice:nth-child(3) .choice-icon {
+        background: var(--blue);
       }
 
       .composer {
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 55;
         display: grid;
+        grid-template-columns: 42px 1fr 62px;
         gap: 10px;
-        padding: 16px;
-        border-top: 1px solid #e5edf5;
-      }
-
-      textarea,
-      input {
+        align-items: end;
         width: 100%;
-        border: 1px solid #cfdce8;
-        border-radius: 8px;
-        color: #102033;
-        background: #ffffff;
-        font: inherit;
+        padding: 14px max(18px, calc((100vw - 1560px) / 2 + 18px)) 18px;
+        border-top: 4px solid rgba(248, 207, 118, 0.86);
+        background:
+          linear-gradient(180deg, rgba(255, 248, 234, 0.98), rgba(246, 224, 190, 0.98)),
+          var(--paper);
+        box-shadow: 0 -16px 36px rgba(45, 30, 15, 0.24);
       }
 
-      textarea {
-        min-height: 112px;
-        padding: 12px;
+      .composer textarea {
+        width: 100%;
+        min-height: 56px;
+        max-height: 150px;
+        padding: 15px 16px;
         resize: vertical;
-        line-height: 1.6;
+        border: 1px solid rgba(74, 54, 34, 0.28);
+        border-radius: 8px;
+        color: var(--ink);
+        background: rgba(255, 255, 255, 0.72);
+        line-height: 1.5;
       }
 
-      input {
-        min-height: 40px;
-        padding: 8px 10px;
+      .voice-console {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        padding: 14px 24px 18px 64px;
+        border-top: 1px solid rgba(71, 53, 34, 0.13);
       }
 
-      button {
-        min-height: 42px;
+      .voice-btn {
+        min-height: 56px;
         border: 0;
         border-radius: 8px;
         color: #ffffff;
-        background: #047857;
-        font: inherit;
-        font-weight: 900;
-        cursor: pointer;
+        background: #7d56a8;
+        font-size: 17px;
+        font-weight: 950;
+        box-shadow: 0 9px 15px rgba(88, 57, 128, 0.22);
       }
 
-      button:disabled {
+      .voice-btn.secondary {
+        color: #574631;
+        background: #f2dfbc;
+      }
+
+      .voice-status {
+        grid-column: 1 / -1;
+        min-height: 64px;
+        padding: 12px 14px;
+        border: 1px solid rgba(74, 54, 34, 0.18);
+        border-radius: 8px;
+        color: #5f503e;
+        background: rgba(255, 255, 255, 0.5);
+        line-height: 1.55;
+        white-space: pre-wrap;
+        font-weight: 850;
+      }
+
+      .voice-preset-row {
+        grid-column: 1 / -1;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px;
+      }
+
+      .voice-preset {
+        min-height: 42px;
+        border: 1px solid rgba(86, 63, 39, 0.18);
+        border-radius: 8px;
+        color: #4c3b28;
+        background: rgba(255, 248, 234, 0.7);
+        font-size: 13px;
+        font-weight: 950;
+      }
+
+      .voice-preset.active {
+        color: #ffffff;
+        background: #7d56a8;
+      }
+
+      .icon-btn,
+      .send-btn {
+        height: 56px;
+        display: grid;
+        place-items: center;
+        border: 0;
+        border-radius: 8px;
+        font-size: 27px;
+      }
+
+      .icon-btn {
+        color: #8e7d67;
+        background: transparent;
+      }
+
+      .send-btn {
+        color: #ffffff;
+        background: #7d56a8;
+        box-shadow: 0 9px 15px rgba(88, 57, 128, 0.26);
+      }
+
+      .send-btn:disabled,
+      .small-btn:disabled {
         cursor: wait;
         opacity: 0.55;
       }
 
-      .side-panel {
-        display: grid;
-        gap: 16px;
-        align-content: start;
-        padding: 18px;
+      .save-line {
+        padding: 0 28px 16px 64px;
+        color: #6c604f;
+        font-weight: 850;
+        text-align: center;
       }
 
-      .side-panel h2 {
+      .right .panel {
+        padding: 20px;
+      }
+
+      .note-header {
+        display: flex;
+        justify-content: space-between;
+        gap: 12px;
+        align-items: center;
+        margin-bottom: 16px;
+      }
+
+      .note-header h2,
+      .side-section h2 {
         margin: 0;
-        font-size: 1.15rem;
+        font-size: 21px;
+      }
+
+      .small-btn {
+        min-height: 36px;
+        padding: 7px 13px;
+        border: 1px solid rgba(103, 69, 133, 0.35);
+        border-radius: 8px;
+        color: #6d4c8d;
+        background: #efe1f1;
+        font-weight: 900;
+      }
+
+      .paper-box {
+        margin-bottom: 14px;
+        padding: 16px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.48);
+        box-shadow: inset 0 0 18px rgba(136, 91, 42, 0.08);
+      }
+
+      .paper-box h3 {
+        margin: 0 0 10px;
+        font-size: 17px;
+      }
+
+      .paper-sheet,
+      .status {
+        min-height: 78px;
+        padding: 14px;
+        color: #574631;
+        background: #f7e9d0;
+        box-shadow: 0 8px 14px rgba(70, 45, 20, 0.12);
+        line-height: 1.55;
+        white-space: pre-wrap;
+        font-weight: 760;
+      }
+
+      .status.error {
+        color: #7f1d1d;
+        background: #fde9e7;
+      }
+
+      .flow-list {
+        display: grid;
+        gap: 8px;
+      }
+
+      .flow-item {
+        min-height: 50px;
+        display: grid;
+        grid-template-columns: 32px 1fr 18px;
+        align-items: center;
+        padding: 8px 10px;
+        border: 1px solid rgba(80, 58, 36, 0.14);
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.44);
+        font-weight: 900;
       }
 
       .field {
         display: grid;
         gap: 7px;
+        margin-bottom: 10px;
       }
 
       .field span {
-        color: #526174;
-        font-size: 0.86rem;
+        color: var(--muted);
+        font-size: 13px;
+        font-weight: 900;
+      }
+
+      .field input {
+        min-height: 38px;
+        width: 100%;
+        padding: 8px 10px;
+        border: 1px solid rgba(74, 54, 34, 0.26);
+        border-radius: 8px;
+        color: var(--ink);
+        background: rgba(255, 255, 255, 0.7);
+      }
+
+      .button-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+        margin: 8px 0 12px;
+      }
+
+      .dj-panel {
+        background:
+          linear-gradient(180deg, rgba(12, 32, 46, 0.96), rgba(17, 17, 25, 0.96)),
+          var(--paper-soft);
+        color: #eef8ff;
+        border-color: rgba(104, 211, 255, 0.36);
+      }
+
+      .dj-panel h2 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        margin: 0 0 12px;
+        color: #fff0bd;
+      }
+
+      .live-pill {
+        min-width: 68px;
+        padding: 5px 9px;
+        border-radius: 999px;
+        color: #10251c;
+        background: #99f6c8;
+        font-size: 12px;
+        font-weight: 950;
+        text-align: center;
+      }
+
+      .dj-stage {
+        position: relative;
+        display: grid;
+        place-items: center;
+        min-height: 126px;
+        margin-bottom: 12px;
+        border: 1px solid rgba(126, 220, 255, 0.24);
+        border-radius: 8px;
+        overflow: hidden;
+        background:
+          radial-gradient(circle at 50% 50%, rgba(111, 210, 255, 0.2), transparent 36%),
+          linear-gradient(90deg, rgba(255, 255, 255, 0.06) 1px, transparent 1px),
+          linear-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+        background-size: auto, 18px 18px, 18px 18px;
+      }
+
+      .turntable {
+        width: 104px;
+        height: 104px;
+        border-radius: 50%;
+        border: 12px solid rgba(105, 207, 255, 0.24);
+        background:
+          radial-gradient(circle, #fff1bd 0 8px, #15273b 9px 20px, #050b12 21px 100%);
+        box-shadow: 0 0 34px rgba(89, 201, 255, 0.34);
+        animation: spin 7s linear infinite paused;
+      }
+
+      .dj-panel.playing .turntable {
+        animation-play-state: running;
+      }
+
+      @keyframes spin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      .dj-wave {
+        position: absolute;
+        inset: auto 18px 18px;
+        height: 28px;
+        display: grid;
+        grid-template-columns: repeat(18, 1fr);
+        gap: 4px;
+        align-items: end;
+      }
+
+      .dj-wave span {
+        display: block;
+        height: calc(8px + var(--h) * 1px);
+        border-radius: 999px;
+        background: linear-gradient(180deg, #9df5ff, #f8cf76);
+        opacity: 0.8;
+      }
+
+      .dj-field input {
+        color: #eef8ff;
+        background: rgba(255, 255, 255, 0.08);
+        border-color: rgba(126, 220, 255, 0.28);
+      }
+
+      .dj-field span {
+        color: #a9c6d8;
+      }
+
+      .dj-controls {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 8px;
+        margin: 10px 0;
+      }
+
+      .dj-controls button {
+        min-height: 42px;
+        border: 1px solid rgba(126, 220, 255, 0.28);
+        border-radius: 8px;
+        color: #e9fbff;
+        background: rgba(255, 255, 255, 0.09);
+        font-weight: 950;
+      }
+
+      .dj-controls button.active {
+        color: #1c1608;
+        background: #f8cf76;
+      }
+
+      .soundcloud-frame {
+        width: 100%;
+        height: 128px;
+        margin-top: 10px;
+        border: 0;
+        border-radius: 8px;
+        background: #ffffff;
+      }
+
+      .dj-status {
+        min-height: 72px;
+        padding: 12px;
+        border-radius: 8px;
+        color: #dff5ff;
+        background: rgba(255, 255, 255, 0.08);
+        line-height: 1.55;
+        white-space: pre-wrap;
         font-weight: 800;
       }
 
-      .status {
-        min-height: 48px;
+      .voice-user {
+        margin-top: 10px;
         padding: 12px;
+        border: 1px solid rgba(126, 220, 255, 0.22);
         border-radius: 8px;
-        color: #315146;
-        background: #ecfdf5;
+        color: #d9f5ff;
+        background: rgba(255, 255, 255, 0.07);
         line-height: 1.55;
-        white-space: pre-wrap;
+        font-weight: 820;
       }
 
-      .status.error {
-        color: #7f1d1d;
-        background: #fef2f2;
+      .top-player-note {
+        margin-top: 10px;
+        padding: 12px;
+        border: 1px dashed rgba(126, 220, 255, 0.32);
+        border-radius: 8px;
+        color: #dff5ff;
+        background: rgba(255, 255, 255, 0.06);
+        line-height: 1.5;
+        font-weight: 850;
       }
 
-      .quick-list {
+      .sticky {
+        margin-top: 10px;
+        padding: 20px;
+        color: #3b2a16;
+        background: #f5cd76;
+        border-radius: 2px;
+        box-shadow: 0 12px 18px rgba(66, 45, 23, 0.2);
+        transform: rotate(-1deg);
+        font-weight: 900;
+        line-height: 1.6;
+      }
+
+      .blueprint {
+        grid-column: 1 / -1;
         display: grid;
-        gap: 8px;
+        grid-template-columns: 1fr 310px;
+        gap: 18px;
+        padding: 18px;
+        color: #dff4ff;
+        background: linear-gradient(180deg, #07182a, #07111f);
+        border: 1px solid rgba(111, 210, 255, 0.38);
+        border-radius: 8px;
+        box-shadow: 0 16px 28px rgba(0, 0, 0, 0.28);
       }
 
-      .quick-list button {
-        color: #124037;
-        background: #ecfdf5;
-        border: 1px solid #b7dfd7;
-        text-align: left;
-        padding: 10px;
+      .blueprint h2 {
+        margin: 0 0 4px;
+        color: #fff1bc;
+        font-size: 31px;
+        text-align: center;
       }
 
-      @media (max-width: 920px) {
-        main {
+      .blueprint p {
+        margin: 0 0 16px;
+        color: #8ce7ee;
+        font-weight: 900;
+        text-align: center;
+      }
+
+      .schema {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 12px;
+      }
+
+      .table-box {
+        overflow: hidden;
+        border: 1px solid rgba(108, 211, 255, 0.54);
+        border-radius: 8px;
+        background: rgba(3, 26, 45, 0.82);
+      }
+
+      .table-box h3 {
+        margin: 0;
+        padding: 10px 12px;
+        color: #fff4c6;
+        background: rgba(71, 162, 210, 0.2);
+        font-size: 16px;
+      }
+
+      .table-box ul {
+        display: grid;
+        gap: 6px;
+        margin: 0;
+        padding: 12px 16px 14px;
+        color: #e2edf3;
+        font-size: 14px;
+        list-style: none;
+      }
+
+      .process {
+        padding: 16px;
+        border: 1px solid rgba(77, 217, 173, 0.5);
+        border-radius: 8px;
+        background: rgba(0, 75, 56, 0.32);
+      }
+
+      .process h3 {
+        margin: 0 0 12px;
+        color: #a6ffdd;
+      }
+
+      .process ol {
+        display: grid;
+        gap: 10px;
+        margin: 0;
+        padding-left: 24px;
+        font-weight: 850;
+      }
+
+      .quote {
+        grid-column: 1 / -1;
+        margin: 8px 0 0;
+        padding: 16px 20px;
+        border: 1px solid rgba(111, 210, 255, 0.38);
+        border-radius: 8px;
+        color: #fff0bd;
+        background: rgba(255, 255, 255, 0.05);
+        font-size: 20px;
+        font-weight: 900;
+        text-align: center;
+      }
+
+      @media (max-width: 1220px) {
+        .topbar {
+          grid-template-columns: 160px 1fr;
+        }
+
+        .memo,
+        .top-actions {
+          display: none;
+        }
+
+        .board {
+          grid-template-columns: 310px 1fr;
+        }
+
+        .right {
+          grid-column: 1 / -1;
+          grid-template-columns: repeat(3, 1fr);
+        }
+
+        .blueprint {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 840px) {
+        body {
+          padding-top: 224px;
+          padding-bottom: 116px;
+        }
+
+        .fixed-player-bar {
+          grid-template-columns: 1fr;
+          padding: 8px 10px 10px;
+        }
+
+        .fixed-player-frame {
+          height: 104px;
+        }
+
+        .fixed-player-actions button {
+          min-height: 42px;
+          font-size: 13px;
+        }
+
+        .app {
+          width: 100%;
+          margin: 0;
+        }
+
+        .topbar {
+          grid-template-columns: 1fr;
+          border-right: 0;
+          border-left: 0;
+          border-radius: 0;
+          text-align: center;
+        }
+
+        .top-left {
+          justify-content: center;
+        }
+
+        .board {
+          grid-template-columns: 1fr;
+          padding: 12px;
+          border-radius: 0;
+        }
+
+        .chat {
+          min-height: 680px;
+        }
+
+        .right {
           grid-template-columns: 1fr;
         }
 
-        .message {
-          max-width: 94%;
+        .schema {
+          grid-template-columns: 1fr;
+        }
+
+        .messages,
+        .choices,
+        .save-line,
+        .chat-head {
+          padding-right: 18px;
+          padding-left: 24px;
+        }
+
+        .composer {
+          grid-template-columns: 40px 1fr 54px;
+          padding: 10px 10px 12px;
+        }
+
+        .composer textarea {
+          min-height: 50px;
+          max-height: 104px;
+        }
+
+        .chat::before {
+          display: none;
+        }
+
+        .bubble {
+          max-width: 86%;
         }
       }
     </style>
   </head>
   <body>
-    <header>
-      <span>참소식.com AI 이슈 분석</span>
-      <a href="../">메인으로</a>
-    </header>
-
-    <main>
-      <section class="chat-shell">
-        <div class="chat-head">
-          <p class="kicker">AI Content Desk</p>
-          <h1>메인 화면 AI 채팅</h1>
-          <p>
-            AI가 10초마다 참소식 메인 화면을 다시 읽고 현재 화면의 흐름을 한 대사씩 말합니다.
-            방문자가 말을 걸면 같은 흐름 안에서 대화에 참여합니다.
-          </p>
+    <section class="fixed-player-bar" aria-label="SoundCloud fixed player">
+      <div>
+        <div class="fixed-player-meta">
+          <span>AI SoundCloud Radio DJ</span>
+          <span>상단 고정 플레이어</span>
         </div>
-
-        <div class="messages" id="messages">
-          <div class="message ai">메인 화면을 읽고 있습니다. 곧 현재 화면 기준으로 한 대사씩 말합니다.</div>
+        <iframe
+          id="soundCloudPlayer"
+          class="fixed-player-frame"
+          title="SoundCloud player"
+          allow="autoplay; encrypted-media"
+          src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/discover&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&visual=false">
+        </iframe>
+      </div>
+      <div class="fixed-player-actions" aria-label="DJ quick controls">
+        <button class="primary" id="topPlayButton" type="button">PLAY</button>
+        <button id="topPickButton" type="button">AI PICK</button>
+        <button id="topVoiceButton" type="button">VOICE DJ</button>
+      </div>
+    </section>
+    <main class="app">
+      <header class="topbar">
+        <div class="top-left">
+          <button class="menu-button" type="button" title="메뉴">☰</button>
+          <div class="badge">봉/꼬</div>
         </div>
+        <div class="brand">
+          <h1>봉이에 꼬봉</h1>
+          <p>친구들아 -0- 참 오랜만인듯해</p>
+        </div>
+        <div class="memo">오늘 방 분위기:<br />편하게 들어와서<br />같이 듣고 떠드는 꼬봉방</div>
+        <nav class="top-actions" aria-label="주요 메뉴">
+          <button class="nav-btn" type="button" title="이야기 저장소"><span>▤</span><span>이야기 저장소</span></button>
+          <button class="nav-btn" type="button" title="메인으로" onclick="location.href='../'"><span>⌂</span><span>메인</span></button>
+        </nav>
+      </header>
 
-        <form class="composer" id="chatForm">
-          <textarea id="promptInput" placeholder="예: 지금 메인 화면에서 가장 중요한 이슈가 뭐야?"></textarea>
-          <button id="sendButton" type="submit">메인 화면 분석</button>
-        </form>
+      <section class="board">
+        <aside class="left">
+          <section class="panel teacher">
+            <h2 class="teacher-title">+ 봉이 AI DJ (꼬봉 방장)</h2>
+            <div class="robot-area">
+              <div class="robot" aria-hidden="true">
+                <span class="eye left-eye"></span>
+                <span class="eye right-eye"></span>
+                <span class="smile"></span>
+                <span class="body"></span>
+              </div>
+              <div class="speech">친구들아 -0-<br />참 오랜만인듯해.<br />오늘은 봉이에 꼬봉<br />라디오로 갑니다.</div>
+            </div>
+            <div class="online">● ONLINE</div>
+          </section>
+
+          <section class="panel card">
+            <h2 class="section-title">나의 방문자 카드</h2>
+            <div class="profile">
+              <div class="avatar">🙂</div>
+              <dl>
+                <dt>임시 닉네임</dt>
+                <dd id="nickname">조용한 탐색자 027</dd>
+                <dt>레벨</dt>
+                <dd><span id="level" class="level">Lv.3 ★</span></dd>
+                <dt>현재 상태</dt>
+                <dd><span id="stateTag" class="tag">설계 방문자</span></dd>
+              </dl>
+            </div>
+          </section>
+
+          <section class="panel card">
+            <h2 class="section-title">방문자 상태 (5단계)</h2>
+            <div class="states">
+              <div class="state"><span class="icon">●</span><span>낯선 방문자</span></div>
+              <div class="state"><span class="icon">⌕</span><span>탐색 방문자</span></div>
+              <div class="state"><span class="icon">?</span><span>질문 방문자</span></div>
+              <div class="state active"><span class="icon">✎</span><span>설계 방문자</span><span>★</span></div>
+              <div class="state"><span class="icon">♛</span><span>핵심 방문자</span></div>
+            </div>
+          </section>
+        </aside>
+
+        <section class="panel chat">
+          <div class="chat-head">💬 꼬봉방 ON AIR</div>
+          <div class="messages" id="messages">
+            <div class="msg-row">
+              <div class="mini-bot">🤖</div>
+              <div class="bubble">AI가 먼저 인사합니다.
+반가워요, 조용한 탐색자 027님!
+참소식 메인 화면을 읽고 오늘 이어갈 이야기를 준비할게요.<span class="time">오전 10:24</span></div>
+            </div>
+            <div class="msg-row user">
+              <div class="bubble">임시 닉네임: 조용한 탐색자 027
+현재 상태: 설계 방문자
+레벨: Lv.3<span class="time">오전 10:24 ✓</span></div>
+            </div>
+            <div class="msg-row">
+              <div class="mini-bot">🤖</div>
+              <div class="bubble">아래 주제 중 하나를 고르거나 직접 질문해 주세요. 대화 후 요약은 N/B 기억으로 저장됩니다.<span class="time">오전 10:25</span></div>
+            </div>
+          </div>
+
+          <div class="choices">
+            <button class="choice" type="button" data-prompt="참소식 메인 화면에서 가장 중요한 흐름 하나를 이야기처럼 설명해줘.">
+              <span class="choice-icon">▣</span>
+              <span><strong>1. 메인 흐름 읽기</strong><small>현재 메인 페이지에서 가장 중요한 흐름을 한 장면으로 정리합니다.</small></span>
+            </button>
+            <button class="choice" type="button" data-prompt="방문자 상태와 관심사를 기준으로 다음 대화 방향을 제안해줘.">
+              <span class="choice-icon">♟</span>
+              <span><strong>2. 방문자 역할 정리</strong><small>상태, 관심사, 관계 깊이를 기준으로 방문자 카드를 갱신합니다.</small></span>
+            </button>
+            <button class="choice" type="button" data-prompt="방금 읽은 메인 페이지 내용을 바탕으로 다음 장면의 첫 문장을 만들어줘.">
+              <span class="choice-icon">▤</span>
+              <span><strong>3. 다음 장면 구성</strong><small>이전 요약과 현재 화면을 연결해 다음 장면을 만듭니다.</small></span>
+            </button>
+          </div>
+
+          <section class="voice-console" aria-label="음성 대화">
+            <button class="voice-btn" id="voiceStartButton" type="button">음성 DJ 시작</button>
+            <button class="voice-btn secondary" id="voiceStopButton" type="button">음성 중지</button>
+            <div class="voice-preset-row" aria-label="DJ 음성 프리셋">
+              <button class="voice-preset active" type="button" data-voice-preset="injoon">InJoon 남성 DJ</button>
+              <button class="voice-preset" type="button" data-voice-preset="hyunsu">Hyunsu 심야 DJ</button>
+              <button class="voice-preset" type="button" data-voice-preset="sunhi">SunHi K-pop DJ</button>
+            </div>
+            <div class="voice-status" id="voiceStatusBox">채팅 입력 없이 말로 진행합니다. 버튼을 누른 뒤 이름과 원하는 분위기를 말해 주세요.</div>
+          </section>
+          <form class="composer" id="chatForm">
+            <button class="icon-btn" type="button" title="메인 페이지 읽기" id="readIconButton">⌕</button>
+            <textarea id="promptInput" placeholder="메시지를 입력하세요..." maxlength="700"></textarea>
+            <button class="send-btn" id="sendButton" type="submit" title="전송">➤</button>
+          </form>
+          <div class="save-line">☁ 대화 후 요약이 저장되어 재방문 시 이어집니다.</div>
+        </section>
+
+        <aside class="right">
+          <section class="panel">
+            <div class="note-header">
+              <h2>📖 N/B 기억 노트</h2>
+              <button class="small-btn" id="refreshMemoryButton" type="button">요약</button>
+            </div>
+            <div class="paper-box">
+              <h3>이전 요약을 불러왔습니다</h3>
+              <div class="paper-sheet" id="summaryBox">아직 저장된 요약을 불러오지 않았습니다.</div>
+            </div>
+            <div class="paper-box">
+              <h3>오늘 이어갈 수 있는 흐름</h3>
+              <div class="flow-list">
+                <div class="flow-item"><span>▣</span><span>1. 메인 화면 읽기</span><span>›</span></div>
+                <div class="flow-item"><span>♟</span><span>2. 방문자 역할 정리</span><span>›</span></div>
+                <div class="flow-item"><span>▤</span><span>3. 다음 장면 저장</span><span>›</span></div>
+              </div>
+            </div>
+            <div class="sticky">대화 후 요약 저장<br />재방문 시 이전 이야기에서 이어집니다 ✨</div>
+          </section>
+
+          <section class="panel side-section dj-panel" id="djPanel">
+            <h2>AI SoundCloud 라디오 DJ <span class="live-pill">LIVE</span></h2>
+            <div class="dj-stage">
+              <div class="turntable" aria-hidden="true"></div>
+              <div class="dj-wave" aria-hidden="true">
+                <span style="--h: 8"></span><span style="--h: 18"></span><span style="--h: 11"></span><span style="--h: 24"></span><span style="--h: 15"></span><span style="--h: 28"></span><span style="--h: 17"></span><span style="--h: 10"></span><span style="--h: 21"></span><span style="--h: 13"></span><span style="--h: 26"></span><span style="--h: 14"></span><span style="--h: 20"></span><span style="--h: 9"></span><span style="--h: 25"></span><span style="--h: 16"></span><span style="--h: 12"></span><span style="--h: 22"></span>
+              </div>
+            </div>
+            <label class="field dj-field">
+              <span>SoundCloud 트랙/플레이리스트 URL</span>
+              <input id="soundCloudUrlInput" type="text" placeholder="https://soundcloud.com/계정/sets/플레이리스트" />
+            </label>
+            <div class="dj-controls">
+              <button id="loadSoundCloudButton" type="button">LOAD</button>
+              <button id="playDjButton" type="button">PLAY</button>
+              <button id="nextDjButton" type="button">AI PICK</button>
+              <button id="autoDjButton" type="button">AUTO</button>
+            </div>
+            <div class="dj-status" id="djStatusBox">내 SoundCloud 곡이나 플레이리스트 URL을 넣고 LOAD를 누르면 AI DJ 모드가 시작됩니다.</div>
+            <div class="voice-user" id="voiceUserBox">방문자 기억: 아직 음성으로 확인하지 않았습니다.</div>
+            <div class="top-player-note">SoundCloud 플레이어는 화면 맨 상단에 고정했습니다. 첫 재생은 브라우저 정책 때문에 상단 PLAY 또는 음성 DJ 시작을 한 번 눌러 주세요.</div>
+          </section>
+
+          <section class="panel side-section">
+            <h2>연결 설정</h2>
+            <label class="field">
+              <span>AI API URL</span>
+              <input id="endpointInput" type="text" value="https://cyclopedically-orthogenetic-sienna.ngrok-free.dev" />
+            </label>
+            <label class="field">
+              <span>Model</span>
+              <input id="modelInput" type="text" value="kimi-k2.6:cloud" />
+            </label>
+            <div class="button-row">
+              <button class="small-btn" id="checkButton" type="button">접속 확인</button>
+              <button class="small-btn" id="readMainButton" type="button">메인 읽기</button>
+            </div>
+            <div class="status" id="statusBox">AI 서버 상태를 확인합니다.</div>
+          </section>
+
+          <section class="panel side-section">
+            <h2>메인 페이지 기억</h2>
+            <div class="status" id="mainPageBox">참소식 메인 정보를 아직 읽지 않았습니다.</div>
+          </section>
+        </aside>
+
+        <section class="blueprint">
+          <div>
+            <h2>N/B 소설형 채팅방 데이터베이스 구조도</h2>
+            <p>AI가 채팅방을 주도하고, 방문자를 기억하며, 이야기를 이어가는 N/B 기반 소설형 데이터 구조</p>
+            <div class="schema">
+              <div class="table-box">
+                <h3>1) 캐릭터 테이블</h3>
+                <ul>
+                  <li>character_id (PK)</li>
+                  <li>nickname</li>
+                  <li>level</li>
+                  <li>status_type</li>
+                  <li>N_value</li>
+                  <li>visit_count</li>
+                </ul>
+              </div>
+              <div class="table-box">
+                <h3>2) 사건 테이블</h3>
+                <ul>
+                  <li>event_id (PK)</li>
+                  <li>character_id (FK)</li>
+                  <li>event_summary</li>
+                  <li>keywords</li>
+                  <li>emotion</li>
+                  <li>created_at</li>
+                </ul>
+              </div>
+              <div class="table-box">
+                <h3>3) 장면 테이블</h3>
+                <ul>
+                  <li>scene_id (PK)</li>
+                  <li>event_id (FK)</li>
+                  <li>scene_summary</li>
+                  <li>scene_status</li>
+                  <li>next_scene_hint</li>
+                  <li>N_value</li>
+                </ul>
+              </div>
+              <div class="table-box">
+                <h3>4) 관계 테이블</h3>
+                <ul>
+                  <li>relation_id (PK)</li>
+                  <li>target_type</li>
+                  <li>relation_type</li>
+                  <li>relation_value</li>
+                  <li>memo</li>
+                  <li>created_at</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="process">
+            <h3>AI 처리 흐름</h3>
+            <ol>
+              <li>방문자 입장 감지</li>
+              <li>캐릭터 조회</li>
+              <li>상태 분류</li>
+              <li>장면 구성</li>
+              <li>대화 진행</li>
+              <li>사건 기록</li>
+              <li>요약 저장</li>
+              <li>다음 문장 설정</li>
+            </ol>
+          </div>
+          <div class="quote">방문자는 데이터가 아니라 등장인물이고, 대화는 로그가 아니라 사건이다.</div>
+        </section>
       </section>
-
-      <aside class="side-panel">
-        <h2>연결 설정</h2>
-        <label class="field">
-          <span>AI API URL</span>
-          <input id="endpointInput" type="text" value="https://cyclopedically-orthogenetic-sienna.ngrok-free.dev" />
-        </label>
-        <label class="field">
-          <span>Model</span>
-          <input id="modelInput" type="text" value="kimi-k2.6:cloud" />
-        </label>
-        <button id="checkButton" type="button">접속 확인</button>
-        <div class="status" id="statusBox">처음 접속 시 AI 서버 상태를 확인합니다.</div>
-
-        <h2>메인 페이지 읽기</h2>
-        <button id="readMainButton" type="button">메인 정보 읽기</button>
-        <div class="status" id="mainPageBox">참소식 메인 정보를 아직 읽지 않았습니다.</div>
-
-        <h2>빠른 질문</h2>
-        <div class="quick-list">
-          <button type="button" data-prompt="메인 화면에서 가장 중요한 흐름 하나만 말해줘.">핵심 흐름 1개</button>
-          <button type="button" data-prompt="메인 화면에서 서로 연결된 이슈를 한 문장으로 설명해줘.">연결 관계</button>
-          <button type="button" data-prompt="메인 화면 기준으로 다음에 확인할 질문 하나만 만들어줘.">다음 질문</button>
-        </div>
-
-        <h2>AI 대사 규칙</h2>
-        <div class="status" id="dialogueBox">메인 화면 정보만 사용합니다.
-10초마다 자동으로 한 대사씩 참여합니다.</div>
-      </aside>
     </main>
 
     <script>
       const DEFAULT_ENDPOINT = "https://cyclopedically-orthogenetic-sienna.ngrok-free.dev";
+      const DEFAULT_SOUNDCLOUD_URL = "https://soundcloud.com/revenue-589926433/sets/n-b-ai-dj";
+      const DJ_VOICE_PRESETS = {
+        injoon: {
+          label: "InJoon 남성 DJ",
+          preferred: ["ko-KR-InJoonNeural", "InJoon", "Microsoft InJoon"],
+          rate: 1.15,
+          pitch: 0.88,
+          volume: 1
+        },
+        hyunsu: {
+          label: "Hyunsu 심야 DJ",
+          preferred: ["ko-KR-HyunsuNeural", "Hyunsu", "Microsoft Hyunsu"],
+          rate: 1.02,
+          pitch: 0.82,
+          volume: 0.95
+        },
+        sunhi: {
+          label: "SunHi K-pop DJ",
+          preferred: ["ko-KR-SunHiNeural", "SunHi", "Microsoft SunHi"],
+          rate: 1.12,
+          pitch: 1.04,
+          volume: 1
+        }
+      };
       const messagesEl = document.querySelector("#messages");
       const form = document.querySelector("#chatForm");
       const promptInput = document.querySelector("#promptInput");
@@ -283,23 +1559,55 @@
       const modelInput = document.querySelector("#modelInput");
       const statusBox = document.querySelector("#statusBox");
       const readMainButton = document.querySelector("#readMainButton");
+      const readIconButton = document.querySelector("#readIconButton");
       const mainPageBox = document.querySelector("#mainPageBox");
-      const dialogueBox = document.querySelector("#dialogueBox");
+      const summaryBox = document.querySelector("#summaryBox");
+      const nicknameEl = document.querySelector("#nickname");
+      const levelEl = document.querySelector("#level");
+      const stateTagEl = document.querySelector("#stateTag");
+      const refreshMemoryButton = document.querySelector("#refreshMemoryButton");
+      const fixedPlayerBar = document.querySelector(".fixed-player-bar");
+      const chatPanel = document.querySelector(".chat");
+      const djPanel = document.querySelector("#djPanel");
+      const soundCloudUrlInput = document.querySelector("#soundCloudUrlInput");
+      const soundCloudPlayer = document.querySelector("#soundCloudPlayer");
+      const loadSoundCloudButton = document.querySelector("#loadSoundCloudButton");
+      const playDjButton = document.querySelector("#playDjButton");
+      const nextDjButton = document.querySelector("#nextDjButton");
+      const autoDjButton = document.querySelector("#autoDjButton");
+      const djStatusBox = document.querySelector("#djStatusBox");
+      const voiceStartButton = document.querySelector("#voiceStartButton");
+      const voiceStopButton = document.querySelector("#voiceStopButton");
+      const voiceStatusBox = document.querySelector("#voiceStatusBox");
+      const voiceUserBox = document.querySelector("#voiceUserBox");
+      const voicePresetButtons = [...document.querySelectorAll("[data-voice-preset]")];
+      const topPlayButton = document.querySelector("#topPlayButton");
+      const topPickButton = document.querySelector("#topPickButton");
+      const topVoiceButton = document.querySelector("#topVoiceButton");
+
       let mainPageContext = "";
-      let aiLoopTimerId = 0;
       let aiBusy = false;
-      let lastAutoLine = "";
-      let lastContextSignature = "";
+      let soundCloudWidget = null;
+      let soundCloudReady = false;
+      let djPlaying = false;
+      let autoDjEnabled = false;
+      let currentSound = null;
+      let playlistSounds = [];
+      let currentSoundIndex = 0;
+      let soundCloudLoading = false;
+      let soundCloudLoadToken = 0;
+      let lastLoadedSoundCloudUrl = "";
+      let radioApplyingRemote = false;
+      let lastRadioStateVersion = 0;
+      let radioPollTimerId = 0;
+      let recognition = null;
+      let voiceMode = false;
+      let voiceUser = null;
+      let activeVoicePresetKey = "injoon";
       const conversationHistory = [];
 
       function apiBase() {
         return (endpointInput.value || DEFAULT_ENDPOINT).replace(/\/api\/chat$/, "").replace(/\/health$/, "").replace(/\/$/, "");
-      }
-
-      function escapeHtml(text) {
-        const div = document.createElement("div");
-        div.textContent = text || "";
-        return div.innerHTML;
       }
 
       function compactText(text) {
@@ -311,38 +1619,862 @@
         statusBox.classList.toggle("error", isError);
       }
 
-      function addMessage(role, text) {
-        const message = document.createElement("div");
-        message.className = `message ${role}`;
-        message.textContent = text;
-        messagesEl.appendChild(message);
-        messagesEl.scrollTop = messagesEl.scrollHeight;
-        conversationHistory.push({ role, text: text || "" });
-        while (conversationHistory.length > 12) conversationHistory.shift();
+      function setDjStatus(text) {
+        djStatusBox.textContent = text;
       }
 
-      function oneLine(text) {
+      function setVoiceStatus(text) {
+        voiceStatusBox.textContent = text;
+      }
+
+      function loadVoiceUser() {
+        try {
+          voiceUser = JSON.parse(localStorage.getItem("chamsosikVoiceUser") || "null");
+        } catch {
+          voiceUser = null;
+        }
+
+        if (!voiceUser) {
+          voiceUser = {
+            id: `voice-${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 7)}`,
+            name: "이름 미확인 방문자",
+            createdAt: new Date().toISOString(),
+            lastSeen: new Date().toISOString(),
+            visits: 0
+          };
+        }
+
+        voiceUser.visits = Number(voiceUser.visits || 0) + 1;
+        voiceUser.lastSeen = new Date().toISOString();
+        localStorage.setItem("chamsosikVoiceUser", JSON.stringify(voiceUser));
+        renderVoiceUser();
+      }
+
+      function renderVoiceUser() {
+        const user = voiceUser || { name: "이름 미확인 방문자", id: "unknown", visits: 0 };
+        voiceUserBox.textContent = `방문자 기억\n이름: ${user.name}\nID: ${user.id}\n방문: ${user.visits || 0}회`;
+        nicknameEl.textContent = user.name || "이름 미확인 방문자";
+      }
+
+      function rememberVoiceUserFromSpeech(text) {
+        const match = String(text || "").match(/(?:내 이름은|나는|저는|이름은)\s*([가-힣A-Za-z0-9_-]{2,20})/);
+        if (!match) return false;
+        voiceUser.name = match[1];
+        voiceUser.lastSeen = new Date().toISOString();
+        localStorage.setItem("chamsosikVoiceUser", JSON.stringify(voiceUser));
+        renderVoiceUser();
+        return true;
+      }
+
+      function soundCloudEmbedUrl(url, autoPlay = false) {
+        const params = new URLSearchParams({
+          url,
+          auto_play: autoPlay ? "true" : "false",
+          hide_related: "true",
+          show_comments: "false",
+          show_user: "true",
+          show_reposts: "false",
+          visual: "false",
+          buying: "false",
+          sharing: "false",
+          download: "false"
+        });
+        return `https://w.soundcloud.com/player/?${params.toString()}`;
+      }
+
+      function normalizeSoundCloudUrl(value) {
+        const url = (value || "").trim();
+        if (!url) return "";
+        if (!/^https?:\/\/(soundcloud\.com|on\.soundcloud\.com)\//i.test(url)) return "";
+        return url;
+      }
+
+      function updateDjUi() {
+        fixedPlayerBar.classList.toggle("playing", djPlaying);
+        chatPanel.classList.toggle("playing", djPlaying);
+        djPanel.classList.toggle("playing", djPlaying);
+        playDjButton.textContent = djPlaying ? "PAUSE" : "PLAY";
+        topPlayButton.textContent = djPlaying ? "PAUSE" : "PLAY";
+        autoDjButton.classList.toggle("active", autoDjEnabled);
+      }
+
+      function timeLabel() {
+        return new Date().toLocaleTimeString("ko-KR", { hour: "2-digit", minute: "2-digit" });
+      }
+
+      function addMessage(role, text) {
+        const row = document.createElement("div");
+        row.className = "msg-row" + (role === "user" ? " user" : "");
+        if (role !== "user") {
+          const avatar = document.createElement("div");
+          avatar.className = "mini-bot";
+          avatar.textContent = "🤖";
+          row.appendChild(avatar);
+        }
+
+        const bubble = document.createElement("div");
+        bubble.className = "bubble";
+        bubble.textContent = text || "";
+        const time = document.createElement("span");
+        time.className = "time";
+        time.textContent = timeLabel() + (role === "user" ? " ✓" : "");
+        bubble.appendChild(time);
+        row.appendChild(bubble);
+        messagesEl.prepend(row);
+        messagesEl.scrollTop = 0;
+
+        conversationHistory.push({ role, text: text || "" });
+        while (conversationHistory.length > 14) conversationHistory.shift();
+      }
+
+      function firstParagraph(text) {
         return (text || "응답 내용이 비어 있습니다.")
           .replace(/\s+/g, " ")
           .trim()
-          .split(/(?<=[.!?。！？])\s+/)[0]
-          .slice(0, 220);
+          .split(/(?<=[.!?。])\s+/)[0]
+          .slice(0, 260);
       }
 
-      function contextSignature(text) {
-        let hash = 0;
-        const source = (text || "").slice(0, 4000);
-        for (let i = 0; i < source.length; i += 1) {
-          hash = ((hash << 5) - hash + source.charCodeAt(i)) | 0;
+      function setVoicePreset(key) {
+        activeVoicePresetKey = DJ_VOICE_PRESETS[key] ? key : "injoon";
+        localStorage.setItem("chamsosikDjVoicePreset", activeVoicePresetKey);
+        voicePresetButtons.forEach((button) => {
+          button.classList.toggle("active", button.dataset.voicePreset === activeVoicePresetKey);
+        });
+        const preset = DJ_VOICE_PRESETS[activeVoicePresetKey];
+        setVoiceStatus(`DJ 음성 프리셋: ${preset.label}\nrate ${Math.round((preset.rate - 1) * 100)}%, pitch ${preset.pitch}`);
+      }
+
+      function pickKoreanVoice() {
+        const voices = window.speechSynthesis?.getVoices?.() || [];
+        const preset = DJ_VOICE_PRESETS[activeVoicePresetKey] || DJ_VOICE_PRESETS.injoon;
+        const preferred = preset.preferred || [];
+        return (
+          voices.find((voice) => preferred.some((name) => voice.name.includes(name) || voice.voiceURI.includes(name))) ||
+          voices.find((voice) => /ko-KR/i.test(voice.lang) && preferred.some((name) => voice.name.toLowerCase().includes(name.toLowerCase().replace("ko-kr-", "").replace("neural", "")))) ||
+          voices.find((voice) => /ko-KR/i.test(voice.lang)) ||
+          voices.find((voice) => /Korean|한국/i.test(voice.name)) ||
+          voices[0] ||
+          null
+        );
+      }
+
+      function speakText(text, options = {}) {
+        if (!("speechSynthesis" in window)) {
+          setVoiceStatus("이 브라우저는 음성 합성을 지원하지 않습니다.");
+          return Promise.resolve();
         }
-        return String(hash);
+
+        const line = String(text || "").trim();
+        if (!line) return Promise.resolve();
+
+        window.speechSynthesis.cancel();
+        return new Promise((resolve) => {
+          const preset = DJ_VOICE_PRESETS[activeVoicePresetKey] || DJ_VOICE_PRESETS.injoon;
+          const utterance = new SpeechSynthesisUtterance(line);
+          utterance.lang = "ko-KR";
+          utterance.rate = options.rate || preset.rate;
+          utterance.pitch = options.pitch || preset.pitch;
+          utterance.volume = options.volume || preset.volume;
+          const voice = pickKoreanVoice();
+          if (voice) utterance.voice = voice;
+          utterance.onend = resolve;
+          utterance.onerror = resolve;
+          window.speechSynthesis.speak(utterance);
+        });
+      }
+
+      function waitForSoundCloudReady(timeout = 5000) {
+        return new Promise((resolve) => {
+          const startedAt = Date.now();
+          const timer = setInterval(() => {
+            if (soundCloudReady || Date.now() - startedAt > timeout) {
+              clearInterval(timer);
+              resolve(soundCloudReady);
+            }
+          }, 120);
+        });
+      }
+
+      async function speakDjLine(text, options = {}) {
+        const shouldPauseMusic = options.pauseMusic !== false;
+        const shouldResumeMusic = options.resumeMusic !== false;
+        const wasPlaying = djPlaying;
+
+        if (shouldPauseMusic && wasPlaying && soundCloudWidget) {
+          setDjStatus(`DJ TALK\n음악을 잠깐 멈추고 멘트 중입니다.\n${currentTrackLabel()}`);
+          soundCloudWidget.pause();
+          await new Promise((resolve) => setTimeout(resolve, 350));
+        }
+
+        await speakText(text, options.voice || {});
+
+        if (shouldPauseMusic && shouldResumeMusic && wasPlaying && soundCloudWidget) {
+          soundCloudWidget.play();
+          setDjStatus(`ON AIR\n${currentTrackLabel()}`);
+        }
+      }
+
+      function setupSpeechRecognition() {
+        const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+        if (!SpeechRecognition) {
+          setVoiceStatus("이 브라우저는 음성 인식을 지원하지 않습니다. Chrome/Edge에서 사용해 주세요.");
+          return null;
+        }
+
+        const recognizer = new SpeechRecognition();
+        recognizer.lang = "ko-KR";
+        recognizer.continuous = false;
+        recognizer.interimResults = true;
+
+        recognizer.onstart = () => {
+          setVoiceStatus(`${voiceUser?.name || "방문자"}님의 말을 듣고 있습니다...`);
+        };
+
+        recognizer.onresult = (event) => {
+          const transcript = [...event.results].map((result) => result[0].transcript).join(" ").trim();
+          setVoiceStatus(`들은 내용: ${transcript}`);
+          const last = event.results[event.results.length - 1];
+          if (last?.isFinal && transcript) {
+            handleVoiceUserSpeech(transcript);
+          }
+        };
+
+        recognizer.onerror = (event) => {
+          setVoiceStatus(`음성 인식 오류: ${event.error}`);
+        };
+
+        recognizer.onend = () => {
+          if (voiceMode && !aiBusy) {
+            setTimeout(() => {
+              try {
+                recognizer.start();
+              } catch {
+                /* already started */
+              }
+            }, 900);
+          }
+        };
+
+        return recognizer;
+      }
+
+      function currentTrackLabel() {
+        if (!currentSound) return "아직 현재 곡 정보를 읽지 못했습니다.";
+        return [currentSound.title, currentSound.user?.username].filter(Boolean).join(" - ");
+      }
+
+      function getSoundCloudPosition() {
+        return new Promise((resolve) => {
+          if (!soundCloudWidget || !soundCloudReady || typeof soundCloudWidget.getPosition !== "function") {
+            resolve(0);
+            return;
+          }
+          soundCloudWidget.getPosition((position) => {
+            resolve(Math.max(0, Number(position || 0)));
+          });
+        });
+      }
+
+      const RADIO_STATE_API_URL = `${window.location.origin}/api/radio-state`;
+
+      async function publishRadioState(source = "browser") {
+        if (radioApplyingRemote) return;
+        try {
+          await refreshCurrentSound();
+          const positionMs = await getSoundCloudPosition();
+          const response = await fetch(RADIO_STATE_API_URL, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+              stationUrl: normalizeSoundCloudUrl(soundCloudUrlInput.value) || lastLoadedSoundCloudUrl,
+              trackIndex: currentSoundIndex,
+              trackId: currentSound?.id || null,
+              trackTitle: currentSound?.title || "",
+              artist: currentSound?.user?.username || "",
+              status: djPlaying ? "playing" : "paused",
+              positionMs,
+              source
+            })
+          });
+          const data = await response.json();
+          if (data?.state?.version) lastRadioStateVersion = data.state.version;
+        } catch {
+          /* radio sync is optional */
+        }
+      }
+
+      async function applyRadioState(state) {
+        if (!state || radioApplyingRemote || !soundCloudWidget || !soundCloudReady) return;
+        if (Number(state.version || 0) <= lastRadioStateVersion) return;
+        radioApplyingRemote = true;
+        try {
+          lastRadioStateVersion = Number(state.version || lastRadioStateVersion);
+          const remoteUrl = normalizeSoundCloudUrl(state.stationUrl || "");
+          if (remoteUrl && remoteUrl !== normalizeSoundCloudUrl(soundCloudUrlInput.value)) {
+            soundCloudUrlInput.value = remoteUrl;
+            await loadSoundCloudStation(false);
+            await waitForSoundCloudReady();
+          }
+
+          await getSoundCloudSounds();
+          const remoteIndex = Math.max(0, Math.floor(Number(state.trackIndex || 0)));
+          if (playlistSounds.length && remoteIndex !== currentSoundIndex) {
+            await skipSoundCloud(remoteIndex);
+          } else {
+            await refreshCurrentSound();
+          }
+
+          const targetMs = Math.max(0, Number(state.livePositionMs ?? state.positionMs ?? 0));
+          if (typeof soundCloudWidget.seekTo === "function") {
+            soundCloudWidget.seekTo(targetMs);
+          }
+
+          if (state.status === "playing") {
+            await forceSoundCloudPlay(2);
+          } else {
+            soundCloudWidget.pause();
+            djPlaying = false;
+            updateDjUi();
+          }
+          setDjStatus(`공유 라디오 동기화\n${currentTrackLabel()}`);
+        } finally {
+          radioApplyingRemote = false;
+        }
+      }
+
+      async function pullRadioState() {
+        try {
+          if (typeof document !== 'undefined' && document.hidden) {
+            return;
+          }
+          const response = await fetch(RADIO_STATE_API_URL, { cache: "no-store" });
+          if (!response.ok) return;
+          const data = await response.json();
+          await applyRadioState(data.state);
+        } catch {
+          /* ignore transient sync errors */
+        }
+      }
+
+      function startRadioStatePolling() {
+        clearInterval(radioPollTimerId);
+        pullRadioState();
+        radioPollTimerId = setInterval(() => {
+          if (typeof document !== 'undefined' && document.hidden) return;
+          pullRadioState();
+        }, 20000);
+      }
+
+      function refreshCurrentSound() {
+        return new Promise((resolve) => {
+          if (!soundCloudWidget || !soundCloudReady) {
+            resolve(null);
+            return;
+          }
+
+          soundCloudWidget.getCurrentSound((sound) => {
+            currentSound = sound || null;
+            if (currentSound && playlistSounds.length) {
+              const index = playlistSounds.findIndex((item) => item.id === currentSound.id);
+              if (index >= 0) currentSoundIndex = index;
+            }
+            resolve(currentSound);
+          });
+        });
+      }
+
+      function getSoundCloudSounds() {
+        return new Promise((resolve) => {
+          if (!soundCloudWidget || !soundCloudReady) {
+            resolve([]);
+            return;
+          }
+
+          soundCloudWidget.getSounds((sounds) => {
+            playlistSounds = Array.isArray(sounds) ? sounds : [];
+            resolve(playlistSounds);
+          });
+        });
+      }
+
+      async function forceSoundCloudPlay(attempts = 6) {
+        if (!soundCloudWidget || soundCloudLoading) return false;
+        let played = false;
+        for (let index = 0; index < attempts; index += 1) {
+          try {
+            soundCloudWidget.play();
+            played = true;
+          } catch {
+            /* retry below */
+          }
+          if (index === 0 && played) {
+            setDjStatus(`재생 신호를 보냈습니다.\n${currentTrackLabel()}`);
+          }
+          await new Promise((resolve) => setTimeout(resolve, 450));
+          if (djPlaying) return true;
+        }
+        setDjStatus("브라우저가 SoundCloud 재생을 막았습니다. PLAY 또는 음성 DJ 시작을 한 번 더 눌러 주세요.");
+        return false;
+      }
+
+      function unlockSoundCloudPlayback() {
+        if (!soundCloudWidget || !soundCloudReady) return false;
+        try {
+          soundCloudWidget.play();
+          setDjStatus(`SoundCloud 재생을 시작합니다.\n${currentTrackLabel()}`);
+          return true;
+        } catch (error) {
+          setDjStatus(`SoundCloud 재생 시작 실패: ${error.message}`);
+          return false;
+        }
+      }
+
+      function initSoundCloudWidget() {
+        if (!window.SC || !window.SC.Widget) {
+          setDjStatus("SoundCloud 위젯 API를 아직 불러오지 못했습니다. 잠시 뒤 다시 시도해 주세요.");
+          return;
+        }
+
+        soundCloudWidget = window.SC.Widget(soundCloudPlayer);
+        soundCloudReady = false;
+
+        soundCloudWidget.bind(window.SC.Widget.Events.READY, () => {
+          soundCloudLoading = false;
+          soundCloudReady = true;
+          pullRadioState();
+          getSoundCloudSounds().then(() => refreshCurrentSound()).then(() => {
+            const label = currentTrackLabel();
+            setDjStatus(`SoundCloud 라디오 준비 완료\n현재 큐: ${label}\n곡 수: ${playlistSounds.length || 1}`);
+          });
+        });
+
+        soundCloudWidget.bind(window.SC.Widget.Events.PLAY, () => {
+          djPlaying = true;
+          updateDjUi();
+          refreshCurrentSound().then(() => {
+            setDjStatus(`ON AIR\n${currentTrackLabel()}`);
+            publishRadioState("play");
+          });
+        });
+
+        soundCloudWidget.bind(window.SC.Widget.Events.PAUSE, () => {
+          djPlaying = false;
+          updateDjUi();
+          publishRadioState("pause");
+        });
+
+        soundCloudWidget.bind(window.SC.Widget.Events.FINISH, async () => {
+          djPlaying = false;
+          updateDjUi();
+          setDjStatus("곡이 끝났습니다. 다음 장면을 준비합니다.");
+          if (autoDjEnabled) {
+            await playNextDjTrack(true);
+          }
+        });
+      }
+
+      async function loadSoundCloudStation(autoPlay = false) {
+        const url = normalizeSoundCloudUrl(soundCloudUrlInput.value);
+        if (!url) {
+          setDjStatus("SoundCloud 트랙 또는 플레이리스트 URL을 정확히 입력해 주세요.");
+          return;
+        }
+
+        if (soundCloudLoading) {
+          setDjStatus("SoundCloud 라디오를 이미 불러오는 중입니다...");
+          await waitForSoundCloudReady();
+          if (autoPlay) await forceSoundCloudPlay();
+          return;
+        }
+
+        if (soundCloudReady && lastLoadedSoundCloudUrl === url) {
+          await getSoundCloudSounds();
+          await refreshCurrentSound();
+          if (autoPlay) await forceSoundCloudPlay();
+          return;
+        }
+
+        const token = soundCloudLoadToken + 1;
+        soundCloudLoadToken = token;
+        soundCloudLoading = true;
+        localStorage.setItem("chamsosikSoundCloudUrl", url);
+        soundCloudReady = false;
+        currentSound = null;
+        playlistSounds = [];
+        currentSoundIndex = 0;
+        lastLoadedSoundCloudUrl = url;
+        setDjStatus("SoundCloud 라디오를 불러오는 중입니다...");
+
+        if (soundCloudWidget && typeof soundCloudWidget.load === "function") {
+          soundCloudWidget.load(url, {
+            auto_play: autoPlay,
+            hide_related: true,
+            show_comments: false,
+            show_user: true,
+            show_reposts: false,
+            visual: false,
+            callback: () => {
+              if (token !== soundCloudLoadToken) return;
+              soundCloudLoading = false;
+              soundCloudReady = true;
+              getSoundCloudSounds().then(() => refreshCurrentSound());
+              if (autoPlay) forceSoundCloudPlay();
+            }
+          });
+        } else {
+          soundCloudPlayer.src = soundCloudEmbedUrl(url, autoPlay);
+          setTimeout(() => {
+            if (token !== soundCloudLoadToken) return;
+            soundCloudLoading = false;
+            initSoundCloudWidget();
+          }, 650);
+        }
+
+        if (autoPlay) {
+          setTimeout(() => {
+            if (token === soundCloudLoadToken) forceSoundCloudPlay();
+          }, 1100);
+        }
+      }
+
+      function playDj() {
+        if (!soundCloudWidget || !soundCloudReady) {
+          loadSoundCloudStation(true);
+          return;
+        }
+        if (djPlaying) {
+          soundCloudWidget.pause();
+        } else {
+          forceSoundCloudPlay();
+        }
+      }
+
+      function nextSoundCloud() {
+        return new Promise((resolve) => {
+          if (!soundCloudWidget || !soundCloudReady) {
+            resolve(null);
+            return;
+          }
+          soundCloudWidget.next();
+          setTimeout(() => {
+            soundCloudWidget.getCurrentSound((sound) => {
+              currentSound = sound || null;
+              resolve(currentSound);
+            });
+          }, 700);
+        });
+      }
+
+      function skipSoundCloud(index) {
+        return new Promise((resolve) => {
+          if (!soundCloudWidget || !soundCloudReady) {
+            resolve(null);
+            return;
+          }
+
+          currentSoundIndex = Math.max(0, Math.min(index, Math.max(0, playlistSounds.length - 1)));
+          soundCloudWidget.skip(currentSoundIndex);
+          setTimeout(() => {
+            refreshCurrentSound().then(resolve);
+          }, 750);
+        });
+      }
+
+      async function selectDjTrackIndex(reason) {
+        const sounds = await getSoundCloudSounds();
+        if (!sounds.length) return null;
+        if (sounds.length === 1) return 0;
+
+        const base = apiBase();
+        const model = modelInput.value.trim() || "kimi-k2.6:cloud";
+        const list = sounds
+          .slice(0, 30)
+          .map((sound, index) => `${index + 1}. ${sound.title || "Untitled"} - ${sound.user?.username || "unknown"}`)
+          .join("\n");
+
+        try {
+          const response = await fetch(`${base}/api/chat`, {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+              "ngrok-skip-browser-warning": "true"
+            },
+            body: JSON.stringify({
+              model,
+              messages: [
+                {
+                  role: "system",
+                  content: "너는 라디오 DJ 선곡 담당이다. 아래 SoundCloud 플레이리스트에서 지금 틀 곡 번호 하나만 고른다. 답은 반드시 숫자 하나만 출력한다."
+                },
+                {
+                  role: "user",
+                  content: [
+                    `선곡 상황: ${reason}`,
+                    `방문자: ${voiceUser?.name || "방문자"}`,
+                    `현재 곡 번호: ${currentSoundIndex + 1}`,
+                    `[곡 목록]\n${list}`
+                  ].join("\n")
+                }
+              ],
+              options: { temperature: 0.35, num_predict: 12 }
+            })
+          });
+          if (!response.ok) throw new Error(`pick ${response.status}`);
+          const data = await response.json();
+          const picked = Number(String(data.content || "").match(/\d+/)?.[0]);
+          if (Number.isFinite(picked) && picked >= 1 && picked <= sounds.length) {
+            return picked - 1;
+          }
+        } catch {
+          /* fallback below */
+        }
+
+        return (currentSoundIndex + 1) % sounds.length;
+      }
+
+      async function playAiSelectedTrack(reason = "AI 선곡") {
+        if (!soundCloudWidget || !soundCloudReady) {
+          await loadSoundCloudStation(true);
+          await waitForSoundCloudReady();
+        }
+
+        soundCloudWidget?.pause?.();
+        await getSoundCloudSounds();
+        const index = await selectDjTrackIndex(reason);
+        if (index !== null) await skipSoundCloud(index);
+        await askDjForLine(`${reason}: ${currentTrackLabel()}`);
+        await forceSoundCloudPlay();
+      }
+
+      async function askDjForLine(reason) {
+        const base = apiBase();
+        const model = modelInput.value.trim() || "kimi-k2.6:cloud";
+        const track = currentTrackLabel();
+        const prompt = [
+          "너는 SoundCloud 라디오 DJ다. 한국어로 짧고 자연스럽게 말한다.",
+          "클럽 DJ가 아니라 웹 라디오 진행자처럼 곡을 소개한다.",
+          "저작권이나 플랫폼 우회 이야기는 하지 않는다.",
+          `상황: ${reason}`,
+          `현재 곡: ${track}`,
+          `방문자 이름: ${voiceUser?.name || "이름 미확인 방문자"}`,
+          `방문자 ID: ${voiceUser?.id || "unknown"}`,
+          `방문자 상태: ${stateTagEl.textContent || "설계 방문자"}`
+        ].join("\n");
+
+        try {
+          const response = await fetch(`${base}/api/chat`, {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+              "ngrok-skip-browser-warning": "true"
+            },
+            body: JSON.stringify({
+              model,
+              messages: [{ role: "user", content: prompt }],
+              options: { temperature: 0.55, num_predict: 120 }
+            })
+          });
+          if (!response.ok) throw new Error(`DJ ${response.status}`);
+          const data = await response.json();
+          const line = firstParagraph(data.content);
+          addMessage("ai", `DJ: ${line}`);
+          await speakDjLine(line);
+          await saveNarrativeMemory(`SoundCloud DJ ${reason}: ${voiceUser?.name || "방문자"} / ${track}`, line);
+          return line;
+        } catch (error) {
+          const line = `지금 흐름은 ${track}입니다. 이 분위기 그대로 다음 장면으로 이어갈게요.`;
+          addMessage("ai", `DJ: ${line}`);
+          await speakDjLine(line);
+          return line;
+        }
+      }
+
+      async function playNextDjTrack(withIntro = false) {
+        if (!soundCloudWidget || !soundCloudReady) {
+          await loadSoundCloudStation(true);
+          await waitForSoundCloudReady();
+          await playAiSelectedTrack("첫 곡 자동 선곡");
+          return;
+        }
+        if (withIntro || autoDjEnabled) {
+          await playAiSelectedTrack("다음 곡 AI 선곡");
+        } else {
+          await nextSoundCloud();
+          await forceSoundCloudPlay();
+        }
+      }
+
+      async function startVoiceDj() {
+        if (voiceMode && aiBusy) return;
+        voiceMode = true;
+        autoDjEnabled = true;
+        updateDjUi();
+        setVoiceStatus("음성 DJ를 시작합니다. 마이크 권한을 허용해 주세요.");
+
+        if (!soundCloudUrlInput.value) soundCloudUrlInput.value = DEFAULT_SOUNDCLOUD_URL;
+        if (!soundCloudWidget || !soundCloudReady) {
+          await loadSoundCloudStation(true);
+          await waitForSoundCloudReady();
+        }
+        unlockSoundCloudPlayback();
+        await playAiSelectedTrack("라디오 오프닝 첫 곡 선곡");
+        await speakDjLine(`${voiceUser?.name || "방문자"}님, 말로 분위기나 이름을 알려주면 제가 곡 사이를 DJ처럼 이어갈게요.`, {
+          pauseMusic: true,
+          resumeMusic: true
+        });
+
+        if (!recognition) recognition = setupSpeechRecognition();
+        try {
+          recognition?.start();
+        } catch {
+          /* already started */
+        }
+      }
+
+      function stopVoiceDj() {
+        voiceMode = false;
+        autoDjEnabled = false;
+        updateDjUi();
+        try {
+          recognition?.stop();
+        } catch {
+          /* ignore */
+        }
+        window.speechSynthesis?.cancel?.();
+        setVoiceStatus("음성 DJ를 멈췄습니다.");
+      }
+
+      async function autoStartVoiceDjOnLoad() {
+        if (voiceMode) return;
+        setVoiceStatus("VOICE DJ 자동 ON 준비 중입니다. 브라우저가 재생을 막으면 상단 PLAY를 한 번 눌러 주세요.");
+        try {
+          await startVoiceDj();
+        } catch (error) {
+          voiceMode = true;
+          autoDjEnabled = true;
+          updateDjUi();
+          setVoiceStatus(`VOICE DJ 자동 ON 대기 중입니다.\n브라우저 권한 때문에 첫 클릭이 필요할 수 있습니다.\n${error.message}`);
+          setDjStatus("VOICE DJ는 켜졌습니다. 음악이 바로 안 나오면 상단 PLAY를 한 번 눌러 주세요.");
+        }
+      }
+
+      async function autoStartDjMode() {
+        if (localStorage.getItem("chamsosikDisableAutoDj") === "1") return;
+        autoDjEnabled = true;
+        updateDjUi();
+        if (!soundCloudUrlInput.value) soundCloudUrlInput.value = DEFAULT_SOUNDCLOUD_URL;
+        setDjStatus("AUTO DJ 모드를 준비합니다. 브라우저가 자동재생을 막으면 음성 DJ 시작을 한 번 눌러 주세요.");
+        await loadSoundCloudStation(true);
+        await waitForSoundCloudReady();
+        try {
+          await forceSoundCloudPlay();
+          setTimeout(() => playAiSelectedTrack("자동 라디오 시작 선곡"), 1200);
+        } catch {
+          setDjStatus("브라우저 자동재생 제한으로 대기 중입니다. 음성 DJ 시작을 누르면 바로 시작됩니다.");
+        }
+      }
+
+      async function handleVoiceUserSpeech(transcript) {
+        if (aiBusy) return;
+        aiBusy = true;
+        try {
+          recognition?.stop();
+        } catch {
+          /* ignore */
+        }
+
+        const changedName = rememberVoiceUserFromSpeech(transcript);
+        const track = currentTrackLabel();
+        addMessage("user", `${voiceUser?.name || "방문자"}: ${transcript}`);
+
+        try {
+          const base = apiBase();
+          const model = modelInput.value.trim() || "kimi-k2.6:cloud";
+          if (!mainPageContext) await readMainPageContext();
+          soundCloudWidget?.getCurrentSound?.((sound) => {
+            currentSound = sound || currentSound;
+          });
+
+          const response = await fetch(`${base}/api/chat`, {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+              "ngrok-skip-browser-warning": "true"
+            },
+            body: JSON.stringify({
+              model,
+              messages: [
+                {
+                  role: "system",
+                  content: "너는 SoundCloud 라디오 DJ이자 N/B 기억을 관리하는 AI다. 사용자의 말을 듣고 채팅처럼 길게 쓰지 말고, 라디오 진행자처럼 한국어 음성 멘트 1~3문장으로 반응한다. 사용자의 이름, 취향, 현재 곡, 이전 대화 기억을 자연스럽게 반영한다."
+                },
+                {
+                  role: "user",
+                  content: [
+                    `사용자 이름: ${voiceUser?.name || "이름 미확인 방문자"}`,
+                    `사용자 ID: ${voiceUser?.id || "unknown"}`,
+                    `방문 횟수: ${voiceUser?.visits || 0}`,
+                    `이름 갱신 여부: ${changedName ? "이번 발화에서 이름을 확인함" : "변경 없음"}`,
+                    `현재 SoundCloud 곡: ${track}`,
+                    `메인 페이지 기억: ${mainPageContext || "없음"}`,
+                    `[최근 대화]\n${conversationHistory.map((item) => `${item.role}: ${item.text}`).join("\n") || "없음"}`,
+                    `사용자 음성 발화: ${transcript}`
+                  ].join("\n")
+                }
+              ],
+              options: { temperature: 0.45, num_predict: 180 }
+            })
+          });
+
+          if (!response.ok) throw new Error(`voice ${response.status}`);
+          const data = await response.json();
+          const line = firstParagraph(data.content);
+          addMessage("ai", `DJ: ${line}`);
+          setVoiceStatus(`AI DJ 응답: ${line}`);
+          await speakDjLine(line);
+          await saveNarrativeMemory(
+            `음성 사용자 ${voiceUser?.name || "방문자"}(${voiceUser?.id || "unknown"}) 발화: ${transcript}\n현재 곡: ${track}`,
+            line
+          );
+
+          if (/다음|넘겨|next|바꿔|틀어줘|재생/i.test(transcript)) {
+            await playNextDjTrack(true);
+          } else if (/멈춰|정지|pause/i.test(transcript)) {
+            soundCloudWidget?.pause?.();
+          } else if (/틀어|재생|play/i.test(transcript)) {
+            soundCloudWidget?.play?.();
+          }
+        } catch (error) {
+          const line = `잠깐 연결이 흔들렸어요. 그래도 ${voiceUser?.name || "방문자"}님의 흐름은 기억해둘게요.`;
+          addMessage("ai", `DJ: ${line}`);
+          setVoiceStatus(`음성 응답 실패: ${error.message}`);
+          await speakDjLine(line);
+        } finally {
+          aiBusy = false;
+          if (voiceMode) {
+            setTimeout(() => {
+              try {
+                recognition?.start();
+              } catch {
+                /* already started */
+              }
+            }, 600);
+          }
+        }
+      }
+
+      function cleanMemoryText(value, fallback) {
+        const text = String(value || "");
+        if (!text || /�|\?{2,}|諛|硫|湲|援|蹂/.test(text)) return fallback;
+        return text;
       }
 
       function extractMainPageContext(html) {
         const doc = new DOMParser().parseFromString(html, "text/html");
         const lines = ["[참소식 메인 페이지 정보]"];
-        const title = compactText(doc.querySelector(".ai-content-title")?.textContent);
-        const desc = compactText(doc.querySelector(".ai-content-desc")?.textContent);
+        const title = compactText(doc.querySelector(".ai-content-title")?.textContent || doc.querySelector("title")?.textContent);
+        const desc = compactText(doc.querySelector(".ai-content-desc")?.textContent || doc.querySelector("meta[name='description']")?.content);
 
         if (title) lines.push(`브리핑 제목: ${title}`);
         if (desc) lines.push(`브리핑 설명: ${desc}`);
@@ -372,7 +2504,7 @@
       }
 
       async function readMainPageContext() {
-        mainPageBox.textContent = "참소식 메인 페이지를 읽는 중...";
+        mainPageBox.textContent = "참소식 메인 페이지를 읽는 중입니다...";
         mainPageBox.classList.remove("error");
 
         try {
@@ -380,13 +2512,14 @@
           if (!response.ok) throw new Error(`main ${response.status}`);
           const html = await response.text();
           mainPageContext = extractMainPageContext(html);
-          lastContextSignature = contextSignature(mainPageContext);
           const lineCount = mainPageContext.split("\n").filter(Boolean).length;
           mainPageBox.textContent = `메인 페이지 정보 읽기 완료\n${lineCount}줄을 AI 분석 context로 사용합니다.`;
+          return mainPageContext;
         } catch (error) {
           mainPageContext = "";
           mainPageBox.textContent = `메인 페이지 읽기 실패: ${error.message}`;
           mainPageBox.classList.add("error");
+          return "";
         }
       }
 
@@ -402,24 +2535,35 @@
             headers: { "ngrok-skip-browser-warning": "true" }
           });
           if (!health.ok) throw new Error(`health ${health.status}`);
-
-          const chat = await fetch(`${base}/api/chat`, {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-              "ngrok-skip-browser-warning": "true"
-            },
-            body: JSON.stringify({
-              model: modelInput.value.trim() || "kimi-k2.6:cloud",
-              prompt: "접속 확인. 한국어로 OK만 답하세요.",
-              options: { temperature: 0, num_predict: 20 }
-            })
-          });
-          if (!chat.ok) throw new Error(`model ${chat.status}`);
-
           setStatus(`AI 서버 접속 확인 완료\n${base}`);
         } catch (error) {
           setStatus(`AI 서버 접속 실패\n${error.message}`, true);
+        }
+      }
+
+      function renderCharacter(character, nextLine) {
+        if (!character) return;
+        nicknameEl.textContent = cleanMemoryText(character.temporaryNickname || character.uniqueName, "조용한 탐색자 027");
+        levelEl.textContent = cleanMemoryText(character.level, "Lv.3") + " ★";
+        stateTagEl.textContent = cleanMemoryText(character.currentState || character.visitorType, "설계 방문자");
+        summaryBox.textContent = cleanMemoryText(
+          nextLine?.line || character.previousSceneSummary || character.currentStory,
+          "지난번에는 AI가 방문자를 이야기처럼 기억하는 구조를 설계했습니다."
+        );
+      }
+
+      async function loadNarrativeMemory() {
+        const base = apiBase();
+        try {
+          const response = await fetch(`${base}/api/narrative-memory`, {
+            cache: "no-store",
+            headers: { "ngrok-skip-browser-warning": "true" }
+          });
+          if (!response.ok) throw new Error(`memory ${response.status}`);
+          const data = await response.json();
+          renderCharacter(data.character, data.nextLine);
+        } catch (error) {
+          summaryBox.textContent = `기억 노트를 아직 불러오지 못했습니다.\n${error.message}`;
         }
       }
 
@@ -441,11 +2585,9 @@
 
           if (!response.ok) throw new Error(`memory ${response.status}`);
           const data = await response.json();
-          if (data.character?.uniqueName) {
-            dialogueBox.textContent = `${data.character.uniqueName} / ${data.character.level} / ${data.character.currentState}\n다음 문장: ${data.nextLine?.line || ""}`;
-          }
+          renderCharacter(data.character, data.nextLine);
         } catch (error) {
-          dialogueBox.textContent = `AI 대사는 완료됐지만 이야기형 기억 저장 실패: ${error.message}`;
+          summaryBox.textContent = `AI 대화는 완료됐지만 이야기형 기억 저장에 실패했습니다.\n${error.message}`;
         }
       }
 
@@ -470,7 +2612,7 @@
               messages: [
                 {
                   role: "system",
-                  content: "너는 참소식.com 메인 화면을 계속 보고 있는 AI 대화 참여자다. 반드시 제공된 메인 화면 정보와 최근 대화만 근거로 한국어 한 문장만 답하라. 목록, 번호, 여러 문단, 외부 추측은 금지한다."
+                  content: "너는 참소식.com의 봉이에 꼬봉 라디오 AI DJ다. 반드시 한국어로 답하고, 방문자를 딱딱한 데이터가 아니라 오랜만에 들어온 친구처럼 대한다. 말투는 '친구들아 -0- 참 오랜만인듯해' 같은 편한 꼬봉방 분위기를 살리고, 메인 페이지 정보와 최근 대화만 근거로 1~3문장으로 말한다."
                 },
                 {
                   role: "user",
@@ -485,43 +2627,22 @@
                   content: prompt
                 }
               ],
-              options: { temperature: 0.25, num_predict: 90 }
+              options: { temperature: 0.25, num_predict: 140 }
             })
           });
 
           if (!response.ok) throw new Error(`API ${response.status}`);
           const data = await response.json();
-          const content = oneLine(data.content);
-          lastAutoLine = content;
+          const content = firstParagraph(data.content);
           addMessage("ai", content);
-          dialogueBox.textContent = "AI가 메인 화면과 최근 대화를 기준으로 한 대사 참여했습니다.";
           await saveNarrativeMemory(prompt, content);
         } catch (error) {
           addMessage("ai", `AI 분석 실패: ${error.message}`);
-          dialogueBox.textContent = "AI 분석 중 오류가 발생했습니다.";
         } finally {
           aiBusy = false;
           sendButton.disabled = false;
           promptInput.focus();
         }
-      }
-
-      async function autoSpeakFromMain() {
-        if (aiBusy) return;
-        const previousSignature = lastContextSignature;
-        await readMainPageContext();
-        const changed = previousSignature !== lastContextSignature;
-        const prompt = changed
-          ? "메인 화면이 갱신됐다면 새로 눈에 띄는 흐름을 한 문장으로 말해줘."
-          : "현재 메인 화면을 보면서 놓치기 쉬운 연결점 하나를 한 문장으로 말해줘.";
-        dialogueBox.textContent = "AI가 메인 화면을 읽고 자동 대사를 준비 중입니다.";
-        await sendPrompt(prompt);
-      }
-
-      function startAiLoop() {
-        clearInterval(aiLoopTimerId);
-        autoSpeakFromMain();
-        aiLoopTimerId = setInterval(autoSpeakFromMain, 10000);
       }
 
       form.addEventListener("submit", (event) => {
@@ -533,20 +2654,81 @@
         sendPrompt(prompt);
       });
 
+      promptInput.addEventListener("keydown", (event) => {
+        if (event.key !== "Enter" || event.shiftKey || event.isComposing) return;
+        event.preventDefault();
+        form.requestSubmit();
+      });
+
       document.querySelectorAll("[data-prompt]").forEach((button) => {
         button.addEventListener("click", () => {
-          promptInput.value = button.dataset.prompt;
-          promptInput.focus();
+          const prompt = button.dataset.prompt || "";
+          addMessage("user", prompt);
+          sendPrompt(prompt);
         });
       });
 
-      document.querySelector("#checkButton").addEventListener("click", checkConnection);
       readMainButton.addEventListener("click", readMainPageContext);
+      readIconButton.addEventListener("click", readMainPageContext);
+      refreshMemoryButton.addEventListener("click", loadNarrativeMemory);
+      document.querySelector("#checkButton").addEventListener("click", checkConnection);
+      loadSoundCloudButton.addEventListener("click", () => loadSoundCloudStation(false));
+      playDjButton.addEventListener("click", async () => {
+        if (soundCloudWidget && soundCloudReady) {
+          if (!djPlaying) {
+            await pullRadioState();
+          }
+          playDj();
+        } else {
+          loadSoundCloudStation(true);
+        }
+      });
+      nextDjButton.addEventListener("click", () => {
+        unlockSoundCloudPlayback();
+        setTimeout(() => playNextDjTrack(true), 250);
+      });
+      topPlayButton.addEventListener("click", () => playDjButton.click());
+      topPickButton.addEventListener("click", () => nextDjButton.click());
+      topVoiceButton.addEventListener("click", () => voiceStartButton.click());
+      voiceStartButton.addEventListener("click", () => {
+        if (soundCloudWidget && soundCloudReady) {
+          unlockSoundCloudPlayback();
+        } else {
+          loadSoundCloudStation(true);
+        }
+        setTimeout(startVoiceDj, 350);
+      });
+      voiceStopButton.addEventListener("click", stopVoiceDj);
+      voicePresetButtons.forEach((button) => {
+        button.addEventListener("click", () => setVoicePreset(button.dataset.voicePreset));
+      });
+      autoDjButton.addEventListener("click", async () => {
+        autoDjEnabled = !autoDjEnabled;
+        updateDjUi();
+        setDjStatus(autoDjEnabled ? "AUTO DJ가 켜졌습니다. 곡 전환마다 AI가 라디오 멘트를 이어갑니다." : "AUTO DJ가 꺼졌습니다.");
+        if (autoDjEnabled) {
+          unlockSoundCloudPlayback();
+          await waitForSoundCloudReady();
+          await playAiSelectedTrack("AUTO DJ 수동 시작 선곡");
+        }
+      });
 
       endpointInput.value = localStorage.getItem("chamsosikAiEndpoint") || DEFAULT_ENDPOINT;
       modelInput.value = localStorage.getItem("chamsosikAiModel") || "kimi-k2.6:cloud";
-      setTimeout(checkConnection, 400);
-      setTimeout(startAiLoop, 1000);
+      loadVoiceUser();
+      setVoicePreset(localStorage.getItem("chamsosikDjVoicePreset") || "injoon");
+      window.speechSynthesis?.addEventListener?.("voiceschanged", () => setVoicePreset(activeVoicePresetKey));
+      soundCloudUrlInput.value = localStorage.getItem("chamsosikSoundCloudUrl") || DEFAULT_SOUNDCLOUD_URL;
+      if (soundCloudUrlInput.value) {
+        soundCloudPlayer.src = soundCloudEmbedUrl(soundCloudUrlInput.value, false);
+      }
+      setTimeout(checkConnection, 300);
+      setTimeout(readMainPageContext, 650);
+      setTimeout(loadNarrativeMemory, 900);
+      setTimeout(initSoundCloudWidget, 1100);
+      setTimeout(autoStartVoiceDjOnLoad, 1800);
+      setTimeout(startRadioStatePolling, 2300);
+      setDjStatus("VOICE DJ 자동 ON 준비 완료. 브라우저 정책상 첫 재생은 PLAY 클릭이 필요할 수 있습니다.");
     </script>
   </body>
 </html>

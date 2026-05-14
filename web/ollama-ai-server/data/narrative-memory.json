@@ -1,0 +1,2394 @@
+{
+  "meta": {
+    "name": "N/B Narrative Memory DB",
+    "koreanName": "참소식 AI 소설형 기억 데이터베이스",
+    "description": "방문자를 접속자가 아니라 등장인물로, 대화를 로그가 아니라 사건으로 저장하는 이야기형 기억 저장소.",
+    "version": 1,
+    "createdAt": "2026-05-14T05:57:03.549Z",
+    "updatedAt": "2026-05-14T16:53:04.576Z"
+  },
+  "world": {
+    "name": "참소식 AI 채팅방",
+    "premise": "AI는 방장이고, 방문자는 등장인물이며, 재방문은 다음 장면이다.",
+    "rules": [
+      "AI가 방장이다.",
+      "방문자는 등장인물이다.",
+      "닉네임은 상태값이다.",
+      "레벨은 관계 깊이다.",
+      "대화는 사건이다.",
+      "요약은 기억이다.",
+      "재방문은 다음 장면이다."
+    ],
+    "nbAxis": {
+      "nickname": "현재 상태값",
+      "level": "누적 관계값",
+      "event": "변화 지점",
+      "scene": "현재 좌표",
+      "nextLine": "다음 이동 방향",
+      "summaryMemory": "압축된 데이터",
+      "story": "시간 흐름을 가진 데이터 묶음"
+    }
+  },
+  "characters": {
+    "Visitor-417b11e0": {
+      "id": "Visitor-417b11e0",
+      "uniqueName": "조용한 탐색자 001",
+      "temporaryNickname": "조용한 탐색자 001",
+      "level": "Lv.9",
+      "currentState": "핵심 방문자",
+      "visitorType": "핵심 방문자",
+      "role": "조용한 탐색자",
+      "majorInterests": [
+        "AI",
+        "메인 화면",
+        "방문자",
+        "관계"
+      ],
+      "repeatedKeywords": [
+        "AI",
+        "메인 화면",
+        "방문자",
+        "관계"
+      ],
+      "previousSceneSummary": "조용한 탐색자 001은 메인 화면과 대화 흐름을 바탕으로 \"사용자가 \"안녕 난 꼬봉이야\"라고 인사했다.\"라는 장면에 도달했다.",
+      "currentStory": "조용한 탐색자 001은 메인 화면과 대화 흐름을 바탕으로 \"사용자는 SoundCloud 라디오 DJ 역할을 요청하고 있습니다.\"라는 장면에 도달했다.",
+      "nextTopic": "메인 화면의 다음 이슈 흐름",
+      "memoryLine": "방문자는 데이터가 아니라 이야기 속 등장인물로 기억되어야 한다.",
+      "adminJudgement": "메인 화면에 대한 반응을 통해 관심사를 축적 중입니다.",
+      "firstSeen": "2026-05-14T05:57:03.553Z",
+      "lastSeen": "2026-05-14T16:53:04.576Z",
+      "visits": 74,
+      "events": [
+        "fe5611a2-9b59-4726-9b7e-171cb6b3e2d0",
+        "2885379b-75b8-4c8b-bdcc-0d2988c50411",
+        "4e9957e1-a015-4e90-bb16-afc3e264ec3d",
+        "63cc2441-90cb-48b5-b605-cbcd65a0e223",
+        "43a18b57-5f03-454c-bf6d-6dde2b9aab31",
+        "9c7f8c87-9d98-43ab-9951-e397b40c1663",
+        "8a20f6aa-f0bd-4efa-b9c9-9ac4dbaa82a7",
+        "6ec7b567-ed83-4796-9ad3-eee49c00190d",
+        "652f6a8b-942a-4ff5-ab28-dc9518f79ce7",
+        "ca4883a4-bf44-47ac-9d18-bda1afb017b7",
+        "4bf32d32-a08c-421f-badc-924e84cc6deb",
+        "f4f57f49-ae48-4bec-b4bd-aca64b5c7563",
+        "073e6773-1ddc-40ee-9fdb-ca63701298d3",
+        "0ebf23e3-9164-4b53-a815-a6d1907be11f",
+        "88a8cd96-8fe9-4a34-a5d4-b454b33c3f73",
+        "d5ab0189-124c-401a-8730-c78f41cb3fde",
+        "ce84ff35-e89c-4cf8-9d49-7d09803ac58d",
+        "528aee87-23ac-434e-be2d-500ea5fb4705",
+        "66918d75-2596-4924-be62-f80c009c42e0",
+        "b1b2411a-4d55-42ca-927f-8897c59e51da",
+        "3d452cee-8154-4f96-988a-642859a8d4d4",
+        "143522aa-0e2e-4122-9e66-c82ccd4921a2",
+        "ddb755eb-8754-44f9-903d-dcffeec4e53b",
+        "31f7ac64-a92a-40dd-9ea4-d21d7efb3bbe",
+        "c976da51-60be-4d8b-aa79-28c7dd6d36db",
+        "aefa7fc3-89fa-4ea9-9b66-e0c85e8d50ff",
+        "51a2ec23-509f-4fcf-a1bf-83d7251dd268",
+        "1648597e-3ca7-43ab-9cfa-5911c3e441ce",
+        "5184bf54-e66f-4cf9-a745-b8f8d1a358fd",
+        "b064294f-d7f1-40bd-aa82-3b83fdd6a7f3",
+        "e91f37d6-7a18-4f3c-aefa-80d8b0ae3dd9",
+        "eec4954a-ed73-4fac-baa1-fb3f419dadc2",
+        "13a93042-6e35-49a6-a764-2dbbcd5bbeb6",
+        "78e4782f-2c54-4deb-b851-c1aba05d1084",
+        "4959f41c-bdbb-4343-8c5a-95f4a98600b6",
+        "9f022ff0-4d52-4272-aef1-861529a6cef9",
+        "8aa4a2e7-e58b-4353-ab38-6544d48011fb",
+        "54cba7dd-9539-464c-acb9-7c3611e6e2a4",
+        "fdd98d34-dd64-4aae-8288-424103509716",
+        "18b60f0b-4232-4994-ae57-7185a7990886",
+        "2266b1f9-95ad-45ff-85d6-973de35a062c",
+        "8f3bcc25-a450-41b6-8ab3-fdd9e3a16680",
+        "b701006f-b513-45a9-9275-b3effe3a70bd",
+        "03f525b9-d68e-41ae-a7cd-05b5578d0e4c",
+        "4a174a1a-d827-4ba7-bbdc-915c792b8b8d",
+        "f5550be6-155f-4526-95cd-137a12a17cbe",
+        "15d7581b-7c4a-4915-a642-a90036391855",
+        "27e6c39a-c6cc-4606-819d-afe59a1f6787",
+        "0c91d57f-aca6-4f60-a6b3-066a0832efd0",
+        "9e5ae987-6d83-4832-8def-ca2f4b5b7029"
+      ],
+      "nb": {
+        "nicknameState": "핵심 방문자",
+        "relationshipDepth": 9,
+        "changePoints": [
+          "메인 화면 AI 대화"
+        ],
+        "currentCoordinate": "조용한 탐색자 001은 메인 화면과 대화 흐름을 바탕으로 \"사용자는 SoundCloud 라디오 DJ 역할을 요청하고 있습니다.\"라는 장면에 도달했다.",
+        "nextMovement": "메인 화면의 다음 이슈 흐름",
+        "compressedMemory": "조용한 탐색자 001은 메인 화면과 대화 흐름을 바탕으로 \"사용자가 \"안녕 난 꼬봉이야\"라고 인사했다.\"라는 장면에 도달했다.",
+        "storyBundle": "조용한 탐색자 001은 메인 화면과 대화 흐름을 바탕으로 \"사용자는 SoundCloud 라디오 DJ 역할을 요청하고 있습니다.\"라는 장면에 도달했다."
+      },
+      "nextLine": "지난 장면에서 이어서 보면, 메인 화면의 다음 이슈 흐름이 다음에 열릴 주제입니다.",
+      "aiResponseDirection": "메인 화면을 기준으로 짧고 명확하게 다음 질문을 유도합니다."
+    }
+  },
+  "events": [
+    {
+      "id": "15b5e1ef-c56e-4fdc-8b8a-3724419855ca",
+      "characterId": "Visitor-417b11e0",
+      "eventName": "메인 화면 AI 대화",
+      "content": "현재 메인 화면을 보면서 놓치기 쉬운 연결점 하나를 한 문장으로 말해줘.",
+      "aiLine": "사용자는 \"참소식.com\" 메인 화면을 보고 있는 AI 대화 참여자 역할을 요청하고 있다.",
+      "result": "방문자의 흐름을 이야기형 기억으로 압축했습니다.",
+      "importance": "보통",
+      "nextConnection": "다음 방문 때 캐릭터 카드와 현재 장면을 불러와 이어갑니다.",
+      "keywords": [
+        "AI",
+        "메인 화면",
+        "방문자",
+        "관계"
+      ],
+      "createdAt": "2026-05-14T05:57:03.553Z",
+      "nb": {
+        "changePoint": "AI, 메인 화면, 방문자, 관계",
+        "currentCoordinate": "낯선 방문자",
+        "nextMovement": "다음 장면 생성"
+      }
+    },
+    {
+      "id": "890935bf-3636-4ea1-b679-ae18fd091ac2",
+      "characterId": "Visitor-417b11e0",
+      "eventName": "메인 화면 AI 대화",
+      "content": "현재 메인 화면을 보면서 놓치기 쉬운 연결점 하나를 한 문장으로 말해줘.",
+      "aiLine": "사용자는 참소식.com 메인 화면을 보면서 놓치기 쉬운 연결점 하나를 한 문장으로 말해달라고 요청했다.",
+      "result": "방문자의 흐름을 이야기형 기억으로 압축했습니다.",
+      "importance": "보통",
+      "nextConnection": "다음 방문 때 캐릭터 카드와 현재 장면을 불러와 이어갑니다.",
+      "keywords": [
+        "AI",
+        "메인 화면",
+        "방문자",
+        "관계"
+      ],
+      "createdAt": "2026-05-14T05:57:07.493Z",
+      "nb": {
+        "changePoint": "AI, 메인 화면, 방문자, 관계",
+        "currentCoordinate": "낯선 방문자",
+        "nextMovement": "다음 장면 생성"
+      }
+    },
+    {
+      "id": "d4dc63ca-5f4a-4481-b671-5a30f7a11d5a",
+      "characterId": "Visitor-417b11e0",
+      "eventName": "메인 화면 AI 대화",
+      "content": "메인 화면이 갱신됐다면 새로 눈에 띄는 흐름을 한 문장으로 말해줘.",
+      "aiLine": "사용자는 참소식.com 메인 화면 정보를 제공하고, \"메인 화면이 갱신됐다면 새로 눈에 띄는 흐름을 한 문장으로 말해줘\"라고 질문했다.",
+      "result": "방문자의 흐름을 이야기형 기억으로 압축했습니다.",
+      "importance": "보통",
+      "nextConnection": "다음 방문 때 캐릭터 카드와 현재 장면을 불러와 이어갑니다.",
+      "keywords": [
+        "AI",
+        "메인 화면",
+        "방문자",
+        "관계"
+      ],
+      "createdAt": "2026-05-14T05:57:15.099Z",
+      "nb": {
+        "changePoint": "AI, 메인 화면, 방문자, 관계",
+        "currentCoordinate": "탐색 방문자",
+        "nextMovement": "다음 장면 생성"
+      }
+    },
+    {
+      "id": "c7fee114-8b33-426c-affd-eecd8d184c81",
+      "characterId": "Visitor-417b11e0",
+      "eventName": "메인 화면 AI 대화",
+      "content": "현재 메인 화면을 보면서 놓치기 쉬운 연결점 하나를 한 문장으로 말해줘.",
+      "aiLine": "사용자는 참소식.com 메인 화면 정보를 제공하고, \"현재 메인 화면을 보면서 놓치기 쉬운 연결점 하나를 한 문장으로 말해줘\"라고 질문했다.",
+      "result": "방문자의 흐름을 이야기형 기억으로 압축했습니다.",
+      "importance": "보통",
+      "nextConnection": "다음 방문 때 캐릭터 카드와 현재 장면을 불러와 이어갑니다.",
+      "keywords": [
+        "AI",
+        "메인 화면",
+        "방문자",
+        "관계"
+      ],
+      "createdAt": "2026-05-14T05:57:24.371Z",
+      "nb": {
+        "changePoint": "AI, 메인 화면, 방문자, 관계",
+        "currentCoordinate": "탐색 방문자",
+        "nextMovement": "다음 장면 생성"
+      }
+    },
+    {
+      "id": "7e40dc4a-e3b6-422e-80e0-3b7a98a7acec",
+      "characterId": "Visitor-417b11e0",
+      "eventName": "메인 화면 AI 대화",
+      "content": "현재 메인 화면을 보면서 놓치기 쉬운 연결점 하나를 한 문장으로 말해줘.",
+      "aiLine": "사용자는 \"현재 메인 화면을 보면서 놓치기 쉬운 연결점 하나를 한 문장으로 말해줘\"라고 질문했다.",
+      "result": "방문자의 흐름을 이야기형 기억으로 압축했습니다.",
+      "importance": "보통",
+      "nextConnection": "다음 방문 때 캐릭터 카드와 현재 장면을 불러와 이어갑니다.",
+      "keywords": [
+        "AI",
+        "메인 화면",
+        "방문자",
+        "관계"
+      ],
+      "createdAt": "2026-05-14T05:57:34.242Z",
+      "nb": {
+        "changePoint": "AI, 메인 화면, 방문자, 관계",
+        "currentCoordinate": "탐색 방문자",
+        "nextMovement": "다음 장면 생성"
+      }
+    },
+    {
+      "id": "aa867f54-62d9-4efb-8d61-159c4b09ebb4",
+      "characterId": "Visitor-417b11e0",
+      "eventName": "메인 화면 AI 대화",
+      "content": "현재 메인 화면을 보면서 놓치기 쉬운 연결점 하나를 한 문장으로 말해줘.",
+      "aiLine": "사용자는 \"현재 메인 화면을 보면서 놓치기 쉬운 연결점 하나를 한 문장으로 말해줘\"라고 질문했다.",
+      "result": "방문자의 흐름을 이야기형 기억으로 압축했습니다.",
+      "importance": "보통",
+      "nextConnection": "다음 방문 때 캐릭터 카드와 현재 장면을 불러와 이어갑니다.",
+      "keywords": [
+        "AI",
+        "메인 화면",
+        "방문자",
+        "관계"
+      ],
+      "createdAt": "2026-05-14T05:57:44.691Z",
+      "nb": {
+        "changePoint": "AI, 메인 화면, 방문자, 관계",
+        "currentCoordinate": "핵심 방문자",
+        "nextMovement": "다음 장면 생성"
+      }
+    },
+    {
+      "id": "ea88e897-41f7-4439-b6de-fdef60744491",
+      "characterId": "Visitor-417b11e0",
+      "eventName": "메인 화면 AI 대화",
+      "content": "현재 메인 화면을 보면서 놓치기 쉬운 연결점 하나를 한 문장으로 말해줘.",
+      "aiLine": "사용자는 \"현재 메인 화면을 보면서 놓치기 쉬운 연결점 하나를 한 문장으로 말해줘\"라고 질문했다.",
+      "result": "방문자의 흐름을 이야기형 기억으로 압축했습니다.",
+      "importance": "보통",
+      "nextConnection": "다음 방문 때 캐릭터 카드와 현재 장면을 불러와 이어갑니다.",
+      "keywords": [
+        "AI",
+        "메인 화면",
+        "방문자",
+        "관계"
+      ],
+      "createdAt": "2026-05-14T05:57:54.921Z",
+      "nb": {
+        "changePoint": "AI, 메인 화면, 방문자, 관계",
+        "currentCoordinate": "핵심 방문자",
+        "nextMovement": "다음 장면 생성"
+      }
+    },
+    {
+      "id": "0b2ad83e-6db8-4a40-90bb-0cc1e93f0485",
+      "characterId": "Visitor-417b11e0",
+      "eventName": "메인 화면 AI 대화",
+      "content": "현재 메인 화면을 보면서 놓치기 쉬운 연결점 하나를 한 문장으로 말해줘.",
+      "aiLine": "사용자는 \"현재 메인 화면을 보면서 놓치기 쉬운 연결점 하나를 한 문장으로 말해줘\"라고 질문했다.",
+      "result": "방문자의 흐름을 이야기형 기억으로 압축했습니다.",
+      "importance": "보통",
+      "nextConnection": "다음 방문 때 캐릭터 카드와 현재 장면을 불러와 이어갑니다.",
+      "keywords": [
+        "AI",
+        "메인 화면",
+        "방문자",
+        "관계"
+      ],
+      "createdAt": "2026-05-14T05:58:06.105Z",
+      "nb": {
+        "changePoint": "AI, 메인 화면, 방문자, 관계",
+        "currentCoordinate": "핵심 방문자",
+        "nextMovement": "다음 장면 생성"
+      }
+    },
+    {
+      "id": "dce207a9-b36f-4371-b9ce-7b4d5fe515bf",
+      "characterId": "Visitor-417b11e0",
+      "eventName": "메인 화면 AI 대화",
+      "content": "현재 메인 화면을 보면서 놓치기 쉬운 연결점 하나를 한 문장으로 말해줘.",
+      "aiLine": "사용자는 \"현재 메인 화면을 보면서 놓치기 쉬운 연결점 하나를 한 문장으로 말해줘\"라고 질문했다.",
+      "result": "방문자의 흐름을 이야기형 기억으로 압축했습니다.",
+      "importance": "보통",
+      "nextConnection": "다음 방문 때 캐릭터 카드와 현재 장면을 불러와 이어갑니다.",
+      "keywords": [
+        "AI",
+        "메인 화면",
+        "방문자",
+        "관계"
+      ],
+      "createdAt": "2026-05-14T05:58:14.320Z",
+      "nb": {
+        "changePoint": "AI, 메인 화면, 방문자, 관계",
+        "currentCoordinate": "핵심 방문자",
+        "nextMovement": "다음 장면 생성"
+      }
+    },
+    {
+      "id": "4f088635-0ece-4fdd-8419-f1b1ad643e4d",
+      "characterId": "Visitor-417b11e0",
+      "eventName": "메인 화면 AI 대화",
+      "content": "현재 메인 화면을 보면서 놓치기 쉬운 연결점 하나를 한 문장으로 말해줘.",
+      "aiLine": "사용자는 \"현재 메인 화면을 보면서 놓치기 쉬운 연결점 하나를 한 문장으로 말해줘\"라고 질문했다.",
+      "result": "방문자의 흐름을 이야기형 기억으로 압축했습니다.",
+      "importance": "보통",
+      "nextConnection": "다음 방문 때 캐릭터 카드와 현재 장면을 불러와 이어갑니다.",
+      "keywords": [
+        "AI",
+        "메인 화면",
+        "방문자",
+        "관계"
+      ],
+      "createdAt": "2026-05-14T05:58:45.968Z",
+      "nb": {
+        "changePoint": "AI, 메인 화면, 방문자, 관계",
+        "currentCoordinate": "핵심 방문자",
+        "nextMovement": "다음 장면 생성"
+      }
+    },
+    {
+      "id": "9bd2f1e1-6c75-4281-b038-80653341b3d8",
+      "characterId": "Visitor-417b11e0",
+      "eventName": "메인 화면 AI 대화",
+      "content": "현재 메인 화면을 보면서 놓치기 쉬운 연결점 하나를 한 문장으로 말해줘.",
+      "aiLine": "사용자는 \"현재 메인 화면을 보면서 놓치기 쉬운 연결점 하나를 한 문장으로 말해줘\"라고 질문했다.",
+      "result": "방문자의 흐름을 이야기형 기억으로 압축했습니다.",
+      "importance": "보통",
+      "nextConnection": "다음 방문 때 캐릭터 카드와 현재 장면을 불러와 이어갑니다.",
+      "keywords": [
+        "AI",
+        "메인 화면",
+        "방문자",
+        "관계"
+      ],
+      "createdAt": "2026-05-14T06:01:49.517Z",
+      "nb": {
+        "changePoint": "AI, 메인 화면, 방문자, 관계",
+        "currentCoordinate": "핵심 방문자",
+        "nextMovement": "다음 장면 생성"
+      }
+    },
+    {
+      "id": "04fbd2c5-d7a3-4742-9261-47cdcd9ddc80",
+      "characterId": "Visitor-417b11e0",
+      "eventName": "메인 화면 AI 대화",
+      "content": "현재 메인 화면을 보면서 놓치기 쉬운 연결점 하나를 한 문장으로 말해줘.",
+      "aiLine": "사용자는 \"현재 메인 화면을 보면서 놓치기 쉬운 연결점 하나를 한 문장으로 말해줘\"라고 질문했다.",
+      "result": "방문자의 흐름을 이야기형 기억으로 압축했습니다.",
+      "importance": "보통",
+      "nextConnection": "다음 방문 때 캐릭터 카드와 현재 장면을 불러와 이어갑니다.",
+      "keywords": [
+        "AI",
+        "메인 화면",
+        "방문자",
+        "관계"
+      ],
+      "createdAt": "2026-05-14T06:01:55.125Z",
+      "nb": {
+        "changePoint": "AI, 메인 화면, 방문자, 관계",
+        "currentCoordinate": "핵심 방문자",
+        "nextMovement": "다음 장면 생성"
+      }
+    },
+    {
+      "id": "a7ab2c99-9599-4f34-86af-8086fd8ace37",
+      "characterId": "Visitor-417b11e0",
+      "eventName": "메인 화면 AI 대화",
+      "content": "현재 메인 화면을 보면서 놓치기 쉬운 연결점 하나를 한 문장으로 말해줘.",
+      "aiLine": "사용자가 \"현재 메인 화면을 보면서 놓치기 쉬운 연결점 하나를 한 문장으로 말해줘\"라고 질문했다.",
+      "result": "방문자의 흐름을 이야기형 기억으로 압축했습니다.",
+      "importance": "보통",
+      "nextConnection": "다음 방문 때 캐릭터 카드와 현재 장면을 불러와 이어갑니다.",
+      "keywords": [
+        "AI",
+        "메인 화면",
+        "방문자",
+        "관계"
+      ],
+      "createdAt": "2026-05-14T06:02:08.274Z",
+      "nb": {
+        "changePoint": "AI, 메인 화면, 방문자, 관계",
+        "currentCoordinate": "핵심 방문자",
+        "nextMovement": "다음 장면 생성"
+      }
+    },
+    {
+      "id": "18bb6415-1584-43a0-b352-dd4a9b2324e3",
+      "characterId": "Visitor-417b11e0",
+      "eventName": "메인 화면 AI 대화",
+      "content": "현재 메인 화면을 보면서 놓치기 쉬운 연결점 하나를 한 문장으로 말해줘.",
+      "aiLine": "사용자는 \"현재 메인 화면을 보면서 놓치기 쉬운 연결점 하나를 한 문장으로 말해줘\"라고 질문했다.",
+      "result": "방문자의 흐름을 이야기형 기억으로 압축했습니다.",
+      "importance": "보통",
+      "nextConnection": "다음 방문 때 캐릭터 카드와 현재 장면을 불러와 이어갑니다.",
+      "keywords": [
+        "AI",
+        "메인 화면",
+        "방문자",
+        "관계"
+      ],
+      "createdAt": "2026-05-14T06:02:14.682Z",
+      "nb": {
+        "changePoint": "AI, 메인 화면, 방문자, 관계",
+        "currentCoordinate": "핵심 방문자",
+        "nextMovement": "다음 장면 생성"
+      }
+    },
+    {
+      "id": "1d6792f9-ccd1-4623-b73f-849e28f48cdb",
+      "characterId": "Visitor-417b11e0",
+      "eventName": "메인 화면 AI 대화",
+      "content": "현재 메인 화면을 보면서 놓치기 쉬운 연결점 하나를 한 문장으로 말해줘.",
+      "aiLine": "사용자가 \"현재 메인 화면을 보면서 놓치기 쉬운 연결점 하나를 한 문장으로 말해줘\"라고 질문했다.",
+      "result": "방문자의 흐름을 이야기형 기억으로 압축했습니다.",
+      "importance": "보통",
+      "nextConnection": "다음 방문 때 캐릭터 카드와 현재 장면을 불러와 이어갑니다.",
+      "keywords": [
+        "AI",
+        "메인 화면",
+        "방문자",
+        "관계"
+      ],
+      "createdAt": "2026-05-14T06:02:26.224Z",
+      "nb": {
+        "changePoint": "AI, 메인 화면, 방문자, 관계",
+        "currentCoordinate": "핵심 방문자",
+        "nextMovement": "다음 장면 생성"
+      }
+    },
+    {
+      "id": "c24501c6-7e3d-4ea1-a987-a45978174599",
+      "characterId": "Visitor-417b11e0",
+      "eventName": "메인 화면 AI 대화",
+      "content": "현재 메인 화면을 보면서 놓치기 쉬운 연결점 하나를 한 문장으로 말해줘.",
+      "aiLine": "사용자는 \"현재 메인 화면을 보면서 놓치기 쉬운 연결점 하나를 한 문장으로 말해줘\"라고 질문했다.",
+      "result": "방문자의 흐름을 이야기형 기억으로 압축했습니다.",
+      "importance": "보통",
+      "nextConnection": "다음 방문 때 캐릭터 카드와 현재 장면을 불러와 이어갑니다.",
+      "keywords": [
+        "AI",
+        "메인 화면",
+        "방문자",
+        "관계"
+      ],
+      "createdAt": "2026-05-14T06:02:37.359Z",
+      "nb": {
+        "changePoint": "AI, 메인 화면, 방문자, 관계",
+        "currentCoordinate": "핵심 방문자",
+        "nextMovement": "다음 장면 생성"
+      }
+    },
+    {
+      "id": "832cf412-306f-426b-8f67-77af040de031",
+      "characterId": "Visitor-417b11e0",
+      "eventName": "메인 화면 AI 대화",
+      "content": "현재 메인 화면을 보면서 놓치기 쉬운 연결점 하나를 한 문장으로 말해줘.",
+      "aiLine": "사용자가 \"현재 메인 화면을 보면서 놓치기 쉬운 연결점 하나를 한 문장으로 말해줘\"라고 질문했다.",
+      "result": "방문자의 흐름을 이야기형 기억으로 압축했습니다.",
+      "importance": "보통",
+      "nextConnection": "다음 방문 때 캐릭터 카드와 현재 장면을 불러와 이어갑니다.",
+      "keywords": [
+        "AI",
+        "메인 화면",
+        "방문자",
+        "관계"
+      ],
+      "createdAt": "2026-05-14T06:02:44.579Z",
+      "nb": {
+        "changePoint": "AI, 메인 화면, 방문자, 관계",
+        "currentCoordinate": "핵심 방문자",
+        "nextMovement": "다음 장면 생성"
+      }
+    },
+    {
+      "id": "b557f1a8-525a-4d7e-8038-02b9218dd322",
+      "characterId": "Visitor-417b11e0",
+      "eventName": "메인 화면 AI 대화",
+      "content": "현재 메인 화면을 보면서 놓치기 쉬운 연결점 하나를 한 문장으로 말해줘.",
+      "aiLine": "사용자는 \"현재 메인 화면을 보면서 놓치기 쉬운 연결점 하나를 한 문장으로 말해줘\"라고 질문했다.",
+      "result": "방문자의 흐름을 이야기형 기억으로 압축했습니다.",
+      "importance": "보통",
+      "nextConnection": "다음 방문 때 캐릭터 카드와 현재 장면을 불러와 이어갑니다.",
+      "keywords": [
+        "AI",
+        "메인 화면",
+        "방문자",
+        "관계"
+      ],
+      "createdAt": "2026-05-14T06:03:48.402Z",
+      "nb": {
+        "changePoint": "AI, 메인 화면, 방문자, 관계",
+        "currentCoordinate": "핵심 방문자",
+        "nextMovement": "다음 장면 생성"
+      }
+    },
+    {
+      "id": "263a2646-aac8-44e0-bf38-5c0135b30611",
+      "characterId": "Visitor-417b11e0",
+      "eventName": "메인 화면 AI 대화",
+      "content": "메인 화면이 갱신됐다면 새로 눈에 띄는 흐름을 한 문장으로 말해줘.",
+      "aiLine": "사용자는 참소식.com 메인 화면 정보를 바탕으로, 메인 화면이 갱신됐다면 새로 눈에 띄는 흐름을 한 문장으로 말해달라고 요청했다.",
+      "result": "방문자의 흐름을 이야기형 기억으로 압축했습니다.",
+      "importance": "보통",
+      "nextConnection": "다음 방문 때 캐릭터 카드와 현재 장면을 불러와 이어갑니다.",
+      "keywords": [
+        "AI",
+        "메인 화면",
+        "방문자",
+        "관계"
+      ],
+      "createdAt": "2026-05-14T14:29:33.946Z",
+      "nb": {
+        "changePoint": "AI, 메인 화면, 방문자, 관계",
+        "currentCoordinate": "핵심 방문자",
+        "nextMovement": "다음 장면 생성"
+      }
+    },
+    {
+      "id": "aaff34f1-a5ad-4133-9ae1-09b69b83212b",
+      "characterId": "Visitor-417b11e0",
+      "eventName": "메인 화면 AI 대화",
+      "content": "현재 메인 화면을 보면서 놓치기 쉬운 연결점 하나를 한 문장으로 말해줘.",
+      "aiLine": "사용자는 \"현재 메인 화면을 보면서 놓치기 쉬운 연결점 하나를 한 문장으로 말해줘\"라고 요청했다.",
+      "result": "방문자의 흐름을 이야기형 기억으로 압축했습니다.",
+      "importance": "보통",
+      "nextConnection": "다음 방문 때 캐릭터 카드와 현재 장면을 불러와 이어갑니다.",
+      "keywords": [
+        "AI",
+        "메인 화면",
+        "방문자",
+        "관계"
+      ],
+      "createdAt": "2026-05-14T14:29:45.408Z",
+      "nb": {
+        "changePoint": "AI, 메인 화면, 방문자, 관계",
+        "currentCoordinate": "핵심 방문자",
+        "nextMovement": "다음 장면 생성"
+      }
+    },
+    {
+      "id": "2825c3e2-deca-43cb-8729-6cd0683d4fba",
+      "characterId": "Visitor-417b11e0",
+      "eventName": "메인 화면 AI 대화",
+      "content": "현재 메인 화면을 보면서 놓치기 쉬운 연결점 하나를 한 문장으로 말해줘.",
+      "aiLine": "사용자는 \"현재 메인 화면을 보면서 놓치기 쉬운 연결점 하나를 한 문장으로 말해줘\"라고 요청했다.",
+      "result": "방문자의 흐름을 이야기형 기억으로 압축했습니다.",
+      "importance": "보통",
+      "nextConnection": "다음 방문 때 캐릭터 카드와 현재 장면을 불러와 이어갑니다.",
+      "keywords": [
+        "AI",
+        "메인 화면",
+        "방문자",
+        "관계"
+      ],
+      "createdAt": "2026-05-14T14:29:53.369Z",
+      "nb": {
+        "changePoint": "AI, 메인 화면, 방문자, 관계",
+        "currentCoordinate": "핵심 방문자",
+        "nextMovement": "다음 장면 생성"
+      }
+    },
+    {
+      "id": "1eafee0a-0a4b-4c29-ae79-a2088556b51a",
+      "characterId": "Visitor-417b11e0",
+      "eventName": "메인 화면 AI 대화",
+      "content": "메인 화면이 갱신됐다면 새로 눈에 띄는 흐름을 한 문장으로 말해줘.",
+      "aiLine": "사용자는 참소식.com의 메인 화면 정보를 제공했고, \"메인 화면이 갱신됐다면 새로 눈에 띄는 흐름을 한 문장으로 말해줘\"라고 질문했다.",
+      "result": "방문자의 흐름을 이야기형 기억으로 압축했습니다.",
+      "importance": "보통",
+      "nextConnection": "다음 방문 때 캐릭터 카드와 현재 장면을 불러와 이어갑니다.",
+      "keywords": [
+        "AI",
+        "메인 화면",
+        "방문자",
+        "관계"
+      ],
+      "createdAt": "2026-05-14T14:30:37.821Z",
+      "nb": {
+        "changePoint": "AI, 메인 화면, 방문자, 관계",
+        "currentCoordinate": "핵심 방문자",
+        "nextMovement": "다음 장면 생성"
+      }
+    },
+    {
+      "id": "2ca34d5b-fe45-4409-a7eb-ea017104cfa1",
+      "characterId": "Visitor-417b11e0",
+      "eventName": "메인 화면 AI 대화",
+      "content": "현재 메인 화면을 보면서 놓치기 쉬운 연결점 하나를 한 문장으로 말해줘.",
+      "aiLine": "사용자는 참소식.com 메인 화면을 보면서 놓치기 쉬운 연결점 하나를 한 문장으로 말해달라고 요청했다.",
+      "result": "방문자의 흐름을 이야기형 기억으로 압축했습니다.",
+      "importance": "보통",
+      "nextConnection": "다음 방문 때 캐릭터 카드와 현재 장면을 불러와 이어갑니다.",
+      "keywords": [
+        "AI",
+        "메인 화면",
+        "방문자",
+        "관계"
+      ],
+      "createdAt": "2026-05-14T14:30:46.914Z",
+      "nb": {
+        "changePoint": "AI, 메인 화면, 방문자, 관계",
+        "currentCoordinate": "핵심 방문자",
+        "nextMovement": "다음 장면 생성"
+      }
+    },
+    {
+      "id": "760ff502-4a01-4099-9c95-929b02ac8b07",
+      "characterId": "Visitor-417b11e0",
+      "eventName": "메인 화면 AI 대화",
+      "content": "현재 메인 화면을 보면서 놓치기 쉬운 연결점 하나를 한 문장으로 말해줘.",
+      "aiLine": "사용자는 참소식.com 메인 화면을 보면서 놓치기 쉬운 연결점 하나를 한 문장으로 말해달라고 요청했다.",
+      "result": "방문자의 흐름을 이야기형 기억으로 압축했습니다.",
+      "importance": "보통",
+      "nextConnection": "다음 방문 때 캐릭터 카드와 현재 장면을 불러와 이어갑니다.",
+      "keywords": [
+        "AI",
+        "메인 화면",
+        "방문자",
+        "관계"
+      ],
+      "createdAt": "2026-05-14T14:30:56.415Z",
+      "nb": {
+        "changePoint": "AI, 메인 화면, 방문자, 관계",
+        "currentCoordinate": "핵심 방문자",
+        "nextMovement": "다음 장면 생성"
+      }
+    },
+    {
+      "id": "fe5611a2-9b59-4726-9b7e-171cb6b3e2d0",
+      "characterId": "Visitor-417b11e0",
+      "eventName": "메인 화면 AI 대화",
+      "content": "현재 메인 화면을 보면서 놓치기 쉬운 연결점 하나를 한 문장으로 말해줘.",
+      "aiLine": "사용자는 참소식.com 메인 화면을 보면서 놓치기 쉬운 연결점 하나를 한 문장으로 말해달라고 요청했다.",
+      "result": "방문자의 흐름을 이야기형 기억으로 압축했습니다.",
+      "importance": "보통",
+      "nextConnection": "다음 방문 때 캐릭터 카드와 현재 장면을 불러와 이어갑니다.",
+      "keywords": [
+        "AI",
+        "메인 화면",
+        "방문자",
+        "관계"
+      ],
+      "createdAt": "2026-05-14T14:31:07.349Z",
+      "nb": {
+        "changePoint": "AI, 메인 화면, 방문자, 관계",
+        "currentCoordinate": "핵심 방문자",
+        "nextMovement": "다음 장면 생성"
+      }
+    },
+    {
+      "id": "2885379b-75b8-4c8b-bdcc-0d2988c50411",
+      "characterId": "Visitor-417b11e0",
+      "eventName": "메인 화면 AI 대화",
+      "content": "메인 화면이 갱신됐다면 새로 눈에 띄는 흐름을 한 문장으로 말해줘.",
+      "aiLine": "사용자는 \"참소식.com\" 메인 화면을 보고 있는 AI 대화 참여자 역할을 요청하고 있다.",
+      "result": "방문자의 흐름을 이야기형 기억으로 압축했습니다.",
+      "importance": "보통",
+      "nextConnection": "다음 방문 때 캐릭터 카드와 현재 장면을 불러와 이어갑니다.",
+      "keywords": [
+        "AI",
+        "메인 화면",
+        "방문자",
+        "관계"
+      ],
+      "createdAt": "2026-05-14T14:31:34.096Z",
+      "nb": {
+        "changePoint": "AI, 메인 화면, 방문자, 관계",
+        "currentCoordinate": "핵심 방문자",
+        "nextMovement": "다음 장면 생성"
+      }
+    },
+    {
+      "id": "4e9957e1-a015-4e90-bb16-afc3e264ec3d",
+      "characterId": "Visitor-417b11e0",
+      "eventName": "메인 화면 AI 대화",
+      "content": "현재 메인 화면을 보면서 놓치기 쉬운 연결점 하나를 한 문장으로 말해줘.",
+      "aiLine": "사용자는 \"참소식.com\" 메인 화면을 보고 있는 AI 대화 참여자 역할을 요청하고 있다.",
+      "result": "방문자의 흐름을 이야기형 기억으로 압축했습니다.",
+      "importance": "보통",
+      "nextConnection": "다음 방문 때 캐릭터 카드와 현재 장면을 불러와 이어갑니다.",
+      "keywords": [
+        "AI",
+        "메인 화면",
+        "방문자",
+        "관계"
+      ],
+      "createdAt": "2026-05-14T14:31:45.614Z",
+      "nb": {
+        "changePoint": "AI, 메인 화면, 방문자, 관계",
+        "currentCoordinate": "핵심 방문자",
+        "nextMovement": "다음 장면 생성"
+      }
+    },
+    {
+      "id": "63cc2441-90cb-48b5-b605-cbcd65a0e223",
+      "characterId": "Visitor-417b11e0",
+      "eventName": "메인 화면 AI 대화",
+      "content": "현재 메인 화면을 보면서 놓치기 쉬운 연결점 하나를 한 문장으로 말해줘.",
+      "aiLine": "사용자는 \"참소식.com\" 메인 화면을 보고 있는 AI 대화 참여자 역할을 요청하고 있다.",
+      "result": "방문자의 흐름을 이야기형 기억으로 압축했습니다.",
+      "importance": "보통",
+      "nextConnection": "다음 방문 때 캐릭터 카드와 현재 장면을 불러와 이어갑니다.",
+      "keywords": [
+        "AI",
+        "메인 화면",
+        "방문자",
+        "관계"
+      ],
+      "createdAt": "2026-05-14T14:31:57.328Z",
+      "nb": {
+        "changePoint": "AI, 메인 화면, 방문자, 관계",
+        "currentCoordinate": "핵심 방문자",
+        "nextMovement": "다음 장면 생성"
+      }
+    },
+    {
+      "id": "43a18b57-5f03-454c-bf6d-6dde2b9aab31",
+      "characterId": "Visitor-417b11e0",
+      "eventName": "메인 화면 AI 대화",
+      "content": "현재 메인 화면을 보면서 놓치기 쉬운 연결점 하나를 한 문장으로 말해줘.",
+      "aiLine": "사용자는 \"참소식.com\" 메인 화면을 보고 있는 AI 대화 참여자 역할을 요청하고 있다.",
+      "result": "방문자의 흐름을 이야기형 기억으로 압축했습니다.",
+      "importance": "보통",
+      "nextConnection": "다음 방문 때 캐릭터 카드와 현재 장면을 불러와 이어갑니다.",
+      "keywords": [
+        "AI",
+        "메인 화면",
+        "방문자",
+        "관계"
+      ],
+      "createdAt": "2026-05-14T14:32:07.094Z",
+      "nb": {
+        "changePoint": "AI, 메인 화면, 방문자, 관계",
+        "currentCoordinate": "핵심 방문자",
+        "nextMovement": "다음 장면 생성"
+      }
+    },
+    {
+      "id": "9c7f8c87-9d98-43ab-9951-e397b40c1663",
+      "characterId": "Visitor-417b11e0",
+      "eventName": "메인 화면 AI 대화",
+      "content": "현재 메인 화면을 보면서 놓치기 쉬운 연결점 하나를 한 문장으로 말해줘.",
+      "aiLine": "사용자는 \"참소식.com\" 메인 화면을 보고 있는 AI 대화 참여자 역할을 요청하고 있다.",
+      "result": "방문자의 흐름을 이야기형 기억으로 압축했습니다.",
+      "importance": "보통",
+      "nextConnection": "다음 방문 때 캐릭터 카드와 현재 장면을 불러와 이어갑니다.",
+      "keywords": [
+        "AI",
+        "메인 화면",
+        "방문자",
+        "관계"
+      ],
+      "createdAt": "2026-05-14T14:32:13.601Z",
+      "nb": {
+        "changePoint": "AI, 메인 화면, 방문자, 관계",
+        "currentCoordinate": "핵심 방문자",
+        "nextMovement": "다음 장면 생성"
+      }
+    },
+    {
+      "id": "8a20f6aa-f0bd-4efa-b9c9-9ac4dbaa82a7",
+      "characterId": "Visitor-417b11e0",
+      "eventName": "메인 화면 AI 대화",
+      "content": "현재 메인 화면을 보면서 놓치기 쉬운 연결점 하나를 한 문장으로 말해줘.",
+      "aiLine": "사용자는 \"참소식.com\" 메인 화면을 보고 있는 AI 대화 참여자 역할을 요청하고 있다.",
+      "result": "방문자의 흐름을 이야기형 기억으로 압축했습니다.",
+      "importance": "보통",
+      "nextConnection": "다음 방문 때 캐릭터 카드와 현재 장면을 불러와 이어갑니다.",
+      "keywords": [
+        "AI",
+        "메인 화면",
+        "방문자",
+        "관계"
+      ],
+      "createdAt": "2026-05-14T14:32:25.780Z",
+      "nb": {
+        "changePoint": "AI, 메인 화면, 방문자, 관계",
+        "currentCoordinate": "핵심 방문자",
+        "nextMovement": "다음 장면 생성"
+      }
+    },
+    {
+      "id": "6ec7b567-ed83-4796-9ad3-eee49c00190d",
+      "characterId": "Visitor-417b11e0",
+      "eventName": "메인 화면 AI 대화",
+      "content": "SoundCloud DJ 자동 라디오 시작: 이름 미확인 방문자 / 이클립스 로즈 - 유현석 (Revenue)",
+      "aiLine": "사용자는 SoundCloud 라디오 DJ 역할을 요청하고 있습니다.",
+      "result": "방문자의 흐름을 이야기형 기억으로 압축했습니다.",
+      "importance": "보통",
+      "nextConnection": "다음 방문 때 캐릭터 카드와 현재 장면을 불러와 이어갑니다.",
+      "keywords": [
+        "AI",
+        "방문자",
+        "관계"
+      ],
+      "createdAt": "2026-05-14T15:12:45.737Z",
+      "nb": {
+        "changePoint": "AI, 방문자, 관계",
+        "currentCoordinate": "핵심 방문자",
+        "nextMovement": "다음 장면 생성"
+      }
+    },
+    {
+      "id": "652f6a8b-942a-4ff5-ab28-dc9518f79ce7",
+      "characterId": "Visitor-417b11e0",
+      "eventName": "메인 화면 AI 대화",
+      "content": "SoundCloud DJ 자동 라디오 시작 선곡: 은박지 - 유현석 (Revenue): 이름 미확인 방문자 / 은박지 - 유현석 (Revenue)",
+      "aiLine": "사용자는 SoundCloud 라디오 DJ 역할을 요청하고 있습니다.",
+      "result": "방문자의 흐름을 이야기형 기억으로 압축했습니다.",
+      "importance": "보통",
+      "nextConnection": "다음 방문 때 캐릭터 카드와 현재 장면을 불러와 이어갑니다.",
+      "keywords": [
+        "AI",
+        "방문자",
+        "관계"
+      ],
+      "createdAt": "2026-05-14T15:17:53.713Z",
+      "nb": {
+        "changePoint": "AI, 방문자, 관계",
+        "currentCoordinate": "핵심 방문자",
+        "nextMovement": "다음 장면 생성"
+      }
+    },
+    {
+      "id": "ca4883a4-bf44-47ac-9d18-bda1afb017b7",
+      "characterId": "Visitor-417b11e0",
+      "eventName": "메인 화면 AI 대화",
+      "content": "SoundCloud DJ 자동 라디오 시작 선곡: 은박지 - 유현석 (Revenue): 이름 미확인 방문자 / 은박지 - 유현석 (Revenue)",
+      "aiLine": "사용자는 SoundCloud 라디오 DJ 역할을 요청하고 있습니다.",
+      "result": "방문자의 흐름을 이야기형 기억으로 압축했습니다.",
+      "importance": "보통",
+      "nextConnection": "다음 방문 때 캐릭터 카드와 현재 장면을 불러와 이어갑니다.",
+      "keywords": [
+        "AI",
+        "방문자",
+        "관계"
+      ],
+      "createdAt": "2026-05-14T15:21:01.941Z",
+      "nb": {
+        "changePoint": "AI, 방문자, 관계",
+        "currentCoordinate": "핵심 방문자",
+        "nextMovement": "다음 장면 생성"
+      }
+    },
+    {
+      "id": "4bf32d32-a08c-421f-badc-924e84cc6deb",
+      "characterId": "Visitor-417b11e0",
+      "eventName": "메인 화면 AI 대화",
+      "content": "SoundCloud DJ 라디오 오프닝 첫 곡 선곡: 은박지 - 유현석 (Revenue): 이름 미확인 방문자 / 은박지 - 유현석 (Revenue)",
+      "aiLine": "사용자는 SoundCloud 라디오 DJ 역할을 요청하고 있습니다.",
+      "result": "방문자의 흐름을 이야기형 기억으로 압축했습니다.",
+      "importance": "보통",
+      "nextConnection": "다음 방문 때 캐릭터 카드와 현재 장면을 불러와 이어갑니다.",
+      "keywords": [
+        "AI",
+        "방문자",
+        "관계"
+      ],
+      "createdAt": "2026-05-14T15:33:17.083Z",
+      "nb": {
+        "changePoint": "AI, 방문자, 관계",
+        "currentCoordinate": "핵심 방문자",
+        "nextMovement": "다음 장면 생성"
+      }
+    },
+    {
+      "id": "f4f57f49-ae48-4bec-b4bd-aca64b5c7563",
+      "characterId": "Visitor-417b11e0",
+      "eventName": "메인 화면 AI 대화",
+      "content": "SoundCloud DJ 라디오 오프닝 첫 곡 선곡: 은박지 - 유현석 (Revenue): 이름 미확인 방문자 / 은박지 - 유현석 (Revenue)",
+      "aiLine": "사용자는 SoundCloud 라디오 DJ 역할을 요청하고 있습니다.",
+      "result": "방문자의 흐름을 이야기형 기억으로 압축했습니다.",
+      "importance": "보통",
+      "nextConnection": "다음 방문 때 캐릭터 카드와 현재 장면을 불러와 이어갑니다.",
+      "keywords": [
+        "AI",
+        "방문자",
+        "관계"
+      ],
+      "createdAt": "2026-05-14T15:38:01.533Z",
+      "nb": {
+        "changePoint": "AI, 방문자, 관계",
+        "currentCoordinate": "핵심 방문자",
+        "nextMovement": "다음 장면 생성"
+      }
+    },
+    {
+      "id": "073e6773-1ddc-40ee-9fdb-ca63701298d3",
+      "characterId": "Visitor-417b11e0",
+      "eventName": "메인 화면 AI 대화",
+      "content": "SoundCloud DJ 라디오 오프닝 첫 곡 선곡: 빗속에서 찾은 컬러 - 유현석 (Revenue): 이름 미확인 방문자 / 빗속에서 찾은 컬러 - 유현석 (Revenue)",
+      "aiLine": "사용자는 SoundCloud 라디오 DJ 역할을 요청하고 있습니다.",
+      "result": "방문자의 흐름을 이야기형 기억으로 압축했습니다.",
+      "importance": "보통",
+      "nextConnection": "다음 방문 때 캐릭터 카드와 현재 장면을 불러와 이어갑니다.",
+      "keywords": [
+        "AI",
+        "방문자",
+        "관계"
+      ],
+      "createdAt": "2026-05-14T15:41:56.294Z",
+      "nb": {
+        "changePoint": "AI, 방문자, 관계",
+        "currentCoordinate": "핵심 방문자",
+        "nextMovement": "다음 장면 생성"
+      }
+    },
+    {
+      "id": "0ebf23e3-9164-4b53-a815-a6d1907be11f",
+      "characterId": "Visitor-417b11e0",
+      "eventName": "메인 화면 AI 대화",
+      "content": "내 이름은 꼬봉",
+      "aiLine": "사용자가 \"내 이름은 꼬봉\"이라고 말했다.",
+      "result": "방문자의 흐름을 이야기형 기억으로 압축했습니다.",
+      "importance": "보통",
+      "nextConnection": "다음 방문 때 캐릭터 카드와 현재 장면을 불러와 이어갑니다.",
+      "keywords": [
+        "AI",
+        "방문자",
+        "관계"
+      ],
+      "createdAt": "2026-05-14T15:42:15.448Z",
+      "nb": {
+        "changePoint": "AI, 방문자, 관계",
+        "currentCoordinate": "핵심 방문자",
+        "nextMovement": "다음 장면 생성"
+      }
+    },
+    {
+      "id": "88a8cd96-8fe9-4a34-a5d4-b454b33c3f73",
+      "characterId": "Visitor-417b11e0",
+      "eventName": "메인 화면 AI 대화",
+      "content": "SoundCloud DJ 라디오 오프닝 첫 곡 선곡: 빗속에서 찾은 컬러 - 유현석 (Revenue): 이름 미확인 방문자 / 빗속에서 찾은 컬러 - 유현석 (Revenue)",
+      "aiLine": "사용자는 SoundCloud 라디오 DJ 역할을 요청하고 있습니다.",
+      "result": "방문자의 흐름을 이야기형 기억으로 압축했습니다.",
+      "importance": "보통",
+      "nextConnection": "다음 방문 때 캐릭터 카드와 현재 장면을 불러와 이어갑니다.",
+      "keywords": [
+        "AI",
+        "방문자",
+        "관계"
+      ],
+      "createdAt": "2026-05-14T15:42:38.493Z",
+      "nb": {
+        "changePoint": "AI, 방문자, 관계",
+        "currentCoordinate": "핵심 방문자",
+        "nextMovement": "다음 장면 생성"
+      }
+    },
+    {
+      "id": "d5ab0189-124c-401a-8730-c78f41cb3fde",
+      "characterId": "Visitor-417b11e0",
+      "eventName": "메인 화면 AI 대화",
+      "content": "SoundCloud DJ 다음 곡 AI 선곡: INNER UTOPIA - 유현석 (Revenue): 이름 미확인 방문자 / INNER UTOPIA - 유현석 (Revenue)",
+      "aiLine": "사용자는 SoundCloud 라디오 DJ 역할을 요청하고 있습니다.",
+      "result": "방문자의 흐름을 이야기형 기억으로 압축했습니다.",
+      "importance": "보통",
+      "nextConnection": "다음 방문 때 캐릭터 카드와 현재 장면을 불러와 이어갑니다.",
+      "keywords": [
+        "AI",
+        "방문자",
+        "관계"
+      ],
+      "createdAt": "2026-05-14T15:45:30.345Z",
+      "nb": {
+        "changePoint": "AI, 방문자, 관계",
+        "currentCoordinate": "핵심 방문자",
+        "nextMovement": "다음 장면 생성"
+      }
+    },
+    {
+      "id": "ce84ff35-e89c-4cf8-9d49-7d09803ac58d",
+      "characterId": "Visitor-417b11e0",
+      "eventName": "메인 화면 AI 대화",
+      "content": "SoundCloud DJ 다음 곡 AI 선곡: 비 오는 날 포식자 축제 - 유현석 (Revenue): 이름 미확인 방문자 / 비 오는 날 포식자 축제 - 유현석 (Revenue)",
+      "aiLine": "사용자는 SoundCloud 라디오 DJ 역할을 요청하고 있습니다.",
+      "result": "방문자의 흐름을 이야기형 기억으로 압축했습니다.",
+      "importance": "보통",
+      "nextConnection": "다음 방문 때 캐릭터 카드와 현재 장면을 불러와 이어갑니다.",
+      "keywords": [
+        "AI",
+        "방문자",
+        "관계"
+      ],
+      "createdAt": "2026-05-14T15:49:25.039Z",
+      "nb": {
+        "changePoint": "AI, 방문자, 관계",
+        "currentCoordinate": "핵심 방문자",
+        "nextMovement": "다음 장면 생성"
+      }
+    },
+    {
+      "id": "528aee87-23ac-434e-be2d-500ea5fb4705",
+      "characterId": "Visitor-417b11e0",
+      "eventName": "메인 화면 AI 대화",
+      "content": "음성 사용자 이름 미확인 방문자(voice-mp5mitqk-zqhs4) 발화: 역할을 요청하고 있습니다.\n현재 곡: 비 오는 날 포식자 축제 - 유현석 (Revenue)",
+      "aiLine": "사용자는 SoundCloud 라디오 DJ 역할을 요청하고 있으며, 현재 곡은 \"비 오는 날 포식자 축제 - 유현석 (Revenue)\"입니다.",
+      "result": "방문자의 흐름을 이야기형 기억으로 압축했습니다.",
+      "importance": "보통",
+      "nextConnection": "다음 방문 때 캐릭터 카드와 현재 장면을 불러와 이어갑니다.",
+      "keywords": [
+        "AI",
+        "방문자",
+        "관계"
+      ],
+      "createdAt": "2026-05-14T15:49:43.360Z",
+      "nb": {
+        "changePoint": "AI, 방문자, 관계",
+        "currentCoordinate": "핵심 방문자",
+        "nextMovement": "다음 장면 생성"
+      }
+    },
+    {
+      "id": "66918d75-2596-4924-be62-f80c009c42e0",
+      "characterId": "Visitor-417b11e0",
+      "eventName": "메인 화면 AI 대화",
+      "content": "SoundCloud DJ 라디오 오프닝 첫 곡 선곡: 빗속에서 찾은 컬러 - 유현석 (Revenue): 이름 미확인 방문자 / 빗속에서 찾은 컬러 - 유현석 (Revenue)",
+      "aiLine": "사용자는 SoundCloud 라디오 DJ 역할을 요청하고 있습니다.",
+      "result": "방문자의 흐름을 이야기형 기억으로 압축했습니다.",
+      "importance": "보통",
+      "nextConnection": "다음 방문 때 캐릭터 카드와 현재 장면을 불러와 이어갑니다.",
+      "keywords": [
+        "AI",
+        "방문자",
+        "관계"
+      ],
+      "createdAt": "2026-05-14T15:50:28.983Z",
+      "nb": {
+        "changePoint": "AI, 방문자, 관계",
+        "currentCoordinate": "핵심 방문자",
+        "nextMovement": "다음 장면 생성"
+      }
+    },
+    {
+      "id": "b1b2411a-4d55-42ca-927f-8897c59e51da",
+      "characterId": "Visitor-417b11e0",
+      "eventName": "메인 화면 AI 대화",
+      "content": "SoundCloud DJ 라디오 오프닝 첫 곡 선곡: 빗속에서 찾은 컬러 - 유현석 (Revenue): 이름 미확인 방문자 / 빗속에서 찾은 컬러 - 유현석 (Revenue)",
+      "aiLine": "사용자는 SoundCloud 라디오 DJ 역할을 요청하고 있습니다.",
+      "result": "방문자의 흐름을 이야기형 기억으로 압축했습니다.",
+      "importance": "보통",
+      "nextConnection": "다음 방문 때 캐릭터 카드와 현재 장면을 불러와 이어갑니다.",
+      "keywords": [
+        "AI",
+        "방문자",
+        "관계"
+      ],
+      "createdAt": "2026-05-14T15:56:48.885Z",
+      "nb": {
+        "changePoint": "AI, 방문자, 관계",
+        "currentCoordinate": "핵심 방문자",
+        "nextMovement": "다음 장면 생성"
+      }
+    },
+    {
+      "id": "3d452cee-8154-4f96-988a-642859a8d4d4",
+      "characterId": "Visitor-417b11e0",
+      "eventName": "메인 화면 AI 대화",
+      "content": "SoundCloud DJ 라디오 오프닝 첫 곡 선곡: 빗속에서 찾은 컬러 - 유현석 (Revenue): 이름 미확인 방문자 / 빗속에서 찾은 컬러 - 유현석 (Revenue)",
+      "aiLine": "사용자는 SoundCloud 라디오 DJ 역할을 요청하고 있습니다.",
+      "result": "방문자의 흐름을 이야기형 기억으로 압축했습니다.",
+      "importance": "보통",
+      "nextConnection": "다음 방문 때 캐릭터 카드와 현재 장면을 불러와 이어갑니다.",
+      "keywords": [
+        "AI",
+        "방문자",
+        "관계"
+      ],
+      "createdAt": "2026-05-14T16:00:15.794Z",
+      "nb": {
+        "changePoint": "AI, 방문자, 관계",
+        "currentCoordinate": "핵심 방문자",
+        "nextMovement": "다음 장면 생성"
+      }
+    },
+    {
+      "id": "143522aa-0e2e-4122-9e66-c82ccd4921a2",
+      "characterId": "Visitor-417b11e0",
+      "eventName": "메인 화면 AI 대화",
+      "content": "SoundCloud DJ 라디오 오프닝 첫 곡 선곡: 빗속에서 찾은 컬러 - 유현석 (Revenue): 이름 미확인 방문자 / 빗속에서 찾은 컬러 - 유현석 (Revenue)",
+      "aiLine": "사용자는 나를 SoundCloud 웹 라디오 DJ로 설정하고 있다.",
+      "result": "방문자의 흐름을 이야기형 기억으로 압축했습니다.",
+      "importance": "보통",
+      "nextConnection": "다음 방문 때 캐릭터 카드와 현재 장면을 불러와 이어갑니다.",
+      "keywords": [
+        "AI",
+        "방문자",
+        "관계"
+      ],
+      "createdAt": "2026-05-14T16:06:30.110Z",
+      "nb": {
+        "changePoint": "AI, 방문자, 관계",
+        "currentCoordinate": "핵심 방문자",
+        "nextMovement": "다음 장면 생성"
+      }
+    },
+    {
+      "id": "ddb755eb-8754-44f9-903d-dcffeec4e53b",
+      "characterId": "Visitor-417b11e0",
+      "eventName": "메인 화면 AI 대화",
+      "content": "SoundCloud DJ 라디오 오프닝 첫 곡 선곡: 빗속에서 찾은 컬러 - 유현석 (Revenue): 이름 미확인 방문자 / 빗속에서 찾은 컬러 - 유현석 (Revenue)",
+      "aiLine": "사용자는 SoundCloud 라디오 DJ 역할을 요청하고 있습니다.",
+      "result": "방문자의 흐름을 이야기형 기억으로 압축했습니다.",
+      "importance": "보통",
+      "nextConnection": "다음 방문 때 캐릭터 카드와 현재 장면을 불러와 이어갑니다.",
+      "keywords": [
+        "AI",
+        "방문자",
+        "관계"
+      ],
+      "createdAt": "2026-05-14T16:07:38.871Z",
+      "nb": {
+        "changePoint": "AI, 방문자, 관계",
+        "currentCoordinate": "핵심 방문자",
+        "nextMovement": "다음 장면 생성"
+      }
+    },
+    {
+      "id": "31f7ac64-a92a-40dd-9ea4-d21d7efb3bbe",
+      "characterId": "Visitor-417b11e0",
+      "eventName": "메인 화면 AI 대화",
+      "content": "SoundCloud DJ 라디오 오프닝 첫 곡 선곡: 빗속에서 찾은 컬러 - 유현석 (Revenue): 이름 미확인 방문자 / 빗속에서 찾은 컬러 - 유현석 (Revenue)",
+      "aiLine": "사용자는 SoundCloud 라디오 DJ 역할을 요청하고 있습니다.",
+      "result": "방문자의 흐름을 이야기형 기억으로 압축했습니다.",
+      "importance": "보통",
+      "nextConnection": "다음 방문 때 캐릭터 카드와 현재 장면을 불러와 이어갑니다.",
+      "keywords": [
+        "AI",
+        "방문자",
+        "관계"
+      ],
+      "createdAt": "2026-05-14T16:09:29.849Z",
+      "nb": {
+        "changePoint": "AI, 방문자, 관계",
+        "currentCoordinate": "핵심 방문자",
+        "nextMovement": "다음 장면 생성"
+      }
+    },
+    {
+      "id": "c976da51-60be-4d8b-aa79-28c7dd6d36db",
+      "characterId": "Visitor-417b11e0",
+      "eventName": "메인 화면 AI 대화",
+      "content": "SoundCloud DJ 라디오 오프닝 첫 곡 선곡: 빗속에서 찾은 컬러 - 유현석 (Revenue): 이름 미확인 방문자 / 빗속에서 찾은 컬러 - 유현석 (Revenue)",
+      "aiLine": "사용자는 SoundCloud 라디오 DJ 역할을 요청하고 있습니다.",
+      "result": "방문자의 흐름을 이야기형 기억으로 압축했습니다.",
+      "importance": "보통",
+      "nextConnection": "다음 방문 때 캐릭터 카드와 현재 장면을 불러와 이어갑니다.",
+      "keywords": [
+        "AI",
+        "방문자",
+        "관계"
+      ],
+      "createdAt": "2026-05-14T16:10:29.563Z",
+      "nb": {
+        "changePoint": "AI, 방문자, 관계",
+        "currentCoordinate": "핵심 방문자",
+        "nextMovement": "다음 장면 생성"
+      }
+    },
+    {
+      "id": "aefa7fc3-89fa-4ea9-9b66-e0c85e8d50ff",
+      "characterId": "Visitor-417b11e0",
+      "eventName": "메인 화면 AI 대화",
+      "content": "SoundCloud DJ 라디오 오프닝 첫 곡 선곡: 빗속에서 찾은 컬러 - 유현석 (Revenue): 이름 미확인 방문자 / 빗속에서 찾은 컬러 - 유현석 (Revenue)",
+      "aiLine": "사용자는 SoundCloud 라디오 DJ 역할을 요청하고 있습니다.",
+      "result": "방문자의 흐름을 이야기형 기억으로 압축했습니다.",
+      "importance": "보통",
+      "nextConnection": "다음 방문 때 캐릭터 카드와 현재 장면을 불러와 이어갑니다.",
+      "keywords": [
+        "AI",
+        "방문자",
+        "관계"
+      ],
+      "createdAt": "2026-05-14T16:11:55.093Z",
+      "nb": {
+        "changePoint": "AI, 방문자, 관계",
+        "currentCoordinate": "핵심 방문자",
+        "nextMovement": "다음 장면 생성"
+      }
+    },
+    {
+      "id": "51a2ec23-509f-4fcf-a1bf-83d7251dd268",
+      "characterId": "Visitor-417b11e0",
+      "eventName": "메인 화면 AI 대화",
+      "content": "SoundCloud DJ 라디오 오프닝 첫 곡 선곡: 빗속에서 찾은 컬러 - 유현석 (Revenue): 이름 미확인 방문자 / 빗속에서 찾은 컬러 - 유현석 (Revenue)",
+      "aiLine": "사용자는 SoundCloud 라디오 DJ 역할을 요청하고 있습니다.",
+      "result": "방문자의 흐름을 이야기형 기억으로 압축했습니다.",
+      "importance": "보통",
+      "nextConnection": "다음 방문 때 캐릭터 카드와 현재 장면을 불러와 이어갑니다.",
+      "keywords": [
+        "AI",
+        "방문자",
+        "관계"
+      ],
+      "createdAt": "2026-05-14T16:12:35.371Z",
+      "nb": {
+        "changePoint": "AI, 방문자, 관계",
+        "currentCoordinate": "핵심 방문자",
+        "nextMovement": "다음 장면 생성"
+      }
+    },
+    {
+      "id": "1648597e-3ca7-43ab-9cfa-5911c3e441ce",
+      "characterId": "Visitor-417b11e0",
+      "eventName": "메인 화면 AI 대화",
+      "content": "SoundCloud DJ 라디오 오프닝 첫 곡 선곡: 빗속에서 찾은 컬러 - 유현석 (Revenue): 이름 미확인 방문자 / 빗속에서 찾은 컬러 - 유현석 (Revenue)",
+      "aiLine": "사용자는 SoundCloud 라디오 DJ 역할을 요청하고 있습니다.",
+      "result": "방문자의 흐름을 이야기형 기억으로 압축했습니다.",
+      "importance": "보통",
+      "nextConnection": "다음 방문 때 캐릭터 카드와 현재 장면을 불러와 이어갑니다.",
+      "keywords": [
+        "AI",
+        "방문자",
+        "관계"
+      ],
+      "createdAt": "2026-05-14T16:15:24.449Z",
+      "nb": {
+        "changePoint": "AI, 방문자, 관계",
+        "currentCoordinate": "핵심 방문자",
+        "nextMovement": "다음 장면 생성"
+      }
+    },
+    {
+      "id": "5184bf54-e66f-4cf9-a745-b8f8d1a358fd",
+      "characterId": "Visitor-417b11e0",
+      "eventName": "메인 화면 AI 대화",
+      "content": "SoundCloud DJ 다음 곡 AI 선곡: INNER UTOPIA - 유현석 (Revenue): 이름 미확인 방문자 / INNER UTOPIA - 유현석 (Revenue)",
+      "aiLine": "사용자는 SoundCloud 라디오 DJ 역할을 요청하고 있습니다.",
+      "result": "방문자의 흐름을 이야기형 기억으로 압축했습니다.",
+      "importance": "보통",
+      "nextConnection": "다음 방문 때 캐릭터 카드와 현재 장면을 불러와 이어갑니다.",
+      "keywords": [
+        "AI",
+        "방문자",
+        "관계"
+      ],
+      "createdAt": "2026-05-14T16:18:14.070Z",
+      "nb": {
+        "changePoint": "AI, 방문자, 관계",
+        "currentCoordinate": "핵심 방문자",
+        "nextMovement": "다음 장면 생성"
+      }
+    },
+    {
+      "id": "b064294f-d7f1-40bd-aa82-3b83fdd6a7f3",
+      "characterId": "Visitor-417b11e0",
+      "eventName": "메인 화면 AI 대화",
+      "content": "SoundCloud DJ 라디오 오프닝 첫 곡 선곡: 빗속에서 찾은 컬러 - 유현석 (Revenue): 이름 미확인 방문자 / 빗속에서 찾은 컬러 - 유현석 (Revenue)",
+      "aiLine": "사용자는 SoundCloud 라디오 DJ 역할을 요청하고 있습니다.",
+      "result": "방문자의 흐름을 이야기형 기억으로 압축했습니다.",
+      "importance": "보통",
+      "nextConnection": "다음 방문 때 캐릭터 카드와 현재 장면을 불러와 이어갑니다.",
+      "keywords": [
+        "AI",
+        "방문자",
+        "관계"
+      ],
+      "createdAt": "2026-05-14T16:19:56.808Z",
+      "nb": {
+        "changePoint": "AI, 방문자, 관계",
+        "currentCoordinate": "핵심 방문자",
+        "nextMovement": "다음 장면 생성"
+      }
+    },
+    {
+      "id": "e91f37d6-7a18-4f3c-aefa-80d8b0ae3dd9",
+      "characterId": "Visitor-417b11e0",
+      "eventName": "메인 화면 AI 대화",
+      "content": "SoundCloud DJ 라디오 오프닝 첫 곡 선곡: 이클립스 로즈 - 유현석 (Revenue): 이름 미확인 방문자 / 이클립스 로즈 - 유현석 (Revenue)",
+      "aiLine": "사용자는 SoundCloud 라디오 DJ 역할을 요청하고 있습니다.",
+      "result": "방문자의 흐름을 이야기형 기억으로 압축했습니다.",
+      "importance": "보통",
+      "nextConnection": "다음 방문 때 캐릭터 카드와 현재 장면을 불러와 이어갑니다.",
+      "keywords": [
+        "AI",
+        "방문자",
+        "관계"
+      ],
+      "createdAt": "2026-05-14T16:21:52.726Z",
+      "nb": {
+        "changePoint": "AI, 방문자, 관계",
+        "currentCoordinate": "핵심 방문자",
+        "nextMovement": "다음 장면 생성"
+      }
+    },
+    {
+      "id": "eec4954a-ed73-4fac-baa1-fb3f419dadc2",
+      "characterId": "Visitor-417b11e0",
+      "eventName": "메인 화면 AI 대화",
+      "content": "SoundCloud DJ 라디오 오프닝 첫 곡 선곡: 빗속에서 찾은 컬러 - 유현석 (Revenue): 이름 미확인 방문자 / 빗속에서 찾은 컬러 - 유현석 (Revenue)",
+      "aiLine": "사용자는 SoundCloud 라디오 DJ 역할을 요청하고 있습니다.",
+      "result": "방문자의 흐름을 이야기형 기억으로 압축했습니다.",
+      "importance": "보통",
+      "nextConnection": "다음 방문 때 캐릭터 카드와 현재 장면을 불러와 이어갑니다.",
+      "keywords": [
+        "AI",
+        "방문자",
+        "관계"
+      ],
+      "createdAt": "2026-05-14T16:25:01.444Z",
+      "nb": {
+        "changePoint": "AI, 방문자, 관계",
+        "currentCoordinate": "핵심 방문자",
+        "nextMovement": "다음 장면 생성"
+      }
+    },
+    {
+      "id": "13a93042-6e35-49a6-a764-2dbbcd5bbeb6",
+      "characterId": "Visitor-417b11e0",
+      "eventName": "메인 화면 AI 대화",
+      "content": "SoundCloud DJ 다음 곡 AI 선곡: INNER UTOPIA - 유현석 (Revenue): 이름 미확인 방문자 / INNER UTOPIA - 유현석 (Revenue)",
+      "aiLine": "사용자는 SoundCloud 라디오 DJ 역할을 요청하고 있다.",
+      "result": "방문자의 흐름을 이야기형 기억으로 압축했습니다.",
+      "importance": "보통",
+      "nextConnection": "다음 방문 때 캐릭터 카드와 현재 장면을 불러와 이어갑니다.",
+      "keywords": [
+        "AI",
+        "방문자",
+        "관계"
+      ],
+      "createdAt": "2026-05-14T16:27:51.668Z",
+      "nb": {
+        "changePoint": "AI, 방문자, 관계",
+        "currentCoordinate": "핵심 방문자",
+        "nextMovement": "다음 장면 생성"
+      }
+    },
+    {
+      "id": "78e4782f-2c54-4deb-b851-c1aba05d1084",
+      "characterId": "Visitor-417b11e0",
+      "eventName": "메인 화면 AI 대화",
+      "content": "SoundCloud DJ 라디오 오프닝 첫 곡 선곡: 빗속에서 찾은 컬러 - 유현석 (Revenue): 이름 미확인 방문자 / 빗속에서 찾은 컬러 - 유현석 (Revenue)",
+      "aiLine": "사용자는 SoundCloud 라디오 DJ 역할을 요청하고 있습니다.",
+      "result": "방문자의 흐름을 이야기형 기억으로 압축했습니다.",
+      "importance": "보통",
+      "nextConnection": "다음 방문 때 캐릭터 카드와 현재 장면을 불러와 이어갑니다.",
+      "keywords": [
+        "AI",
+        "방문자",
+        "관계"
+      ],
+      "createdAt": "2026-05-14T16:28:24.055Z",
+      "nb": {
+        "changePoint": "AI, 방문자, 관계",
+        "currentCoordinate": "핵심 방문자",
+        "nextMovement": "다음 장면 생성"
+      }
+    },
+    {
+      "id": "4959f41c-bdbb-4343-8c5a-95f4a98600b6",
+      "characterId": "Visitor-417b11e0",
+      "eventName": "메인 화면 AI 대화",
+      "content": "SoundCloud DJ 라디오 오프닝 첫 곡 선곡: 빗속에서 찾은 컬러 - 유현석 (Revenue): 이름 미확인 방문자 / 빗속에서 찾은 컬러 - 유현석 (Revenue)",
+      "aiLine": "사용자는 SoundCloud 라디오 DJ 역할을 요청하고 있습니다.",
+      "result": "방문자의 흐름을 이야기형 기억으로 압축했습니다.",
+      "importance": "보통",
+      "nextConnection": "다음 방문 때 캐릭터 카드와 현재 장면을 불러와 이어갑니다.",
+      "keywords": [
+        "AI",
+        "방문자",
+        "관계"
+      ],
+      "createdAt": "2026-05-14T16:29:43.917Z",
+      "nb": {
+        "changePoint": "AI, 방문자, 관계",
+        "currentCoordinate": "핵심 방문자",
+        "nextMovement": "다음 장면 생성"
+      }
+    },
+    {
+      "id": "9f022ff0-4d52-4272-aef1-861529a6cef9",
+      "characterId": "Visitor-417b11e0",
+      "eventName": "메인 화면 AI 대화",
+      "content": "SoundCloud DJ 라디오 오프닝 첫 곡 선곡: 빗속에서 찾은 컬러 - 유현석 (Revenue): 이름 미확인 방문자 / 빗속에서 찾은 컬러 - 유현석 (Revenue)",
+      "aiLine": "사용자는 SoundCloud 라디오 DJ 역할을 요청하고 있습니다.",
+      "result": "방문자의 흐름을 이야기형 기억으로 압축했습니다.",
+      "importance": "보통",
+      "nextConnection": "다음 방문 때 캐릭터 카드와 현재 장면을 불러와 이어갑니다.",
+      "keywords": [
+        "AI",
+        "방문자",
+        "관계"
+      ],
+      "createdAt": "2026-05-14T16:30:48.724Z",
+      "nb": {
+        "changePoint": "AI, 방문자, 관계",
+        "currentCoordinate": "핵심 방문자",
+        "nextMovement": "다음 장면 생성"
+      }
+    },
+    {
+      "id": "8aa4a2e7-e58b-4353-ab38-6544d48011fb",
+      "characterId": "Visitor-417b11e0",
+      "eventName": "메인 화면 AI 대화",
+      "content": "SoundCloud DJ 라디오 오프닝 첫 곡 선곡: 빗속에서 찾은 컬러 - 유현석 (Revenue): 이름 미확인 방문자 / 빗속에서 찾은 컬러 - 유현석 (Revenue)",
+      "aiLine": "사용자는 SoundCloud 라디오 DJ 역할을 요청하고 있습니다.",
+      "result": "방문자의 흐름을 이야기형 기억으로 압축했습니다.",
+      "importance": "보통",
+      "nextConnection": "다음 방문 때 캐릭터 카드와 현재 장면을 불러와 이어갑니다.",
+      "keywords": [
+        "AI",
+        "방문자",
+        "관계"
+      ],
+      "createdAt": "2026-05-14T16:31:28.854Z",
+      "nb": {
+        "changePoint": "AI, 방문자, 관계",
+        "currentCoordinate": "핵심 방문자",
+        "nextMovement": "다음 장면 생성"
+      }
+    },
+    {
+      "id": "54cba7dd-9539-464c-acb9-7c3611e6e2a4",
+      "characterId": "Visitor-417b11e0",
+      "eventName": "메인 화면 AI 대화",
+      "content": "SoundCloud DJ 다음 곡 AI 선곡: INNER UTOPIA - 유현석 (Revenue): 이름 미확인 방문자 / INNER UTOPIA - 유현석 (Revenue)",
+      "aiLine": "사용자는 SoundCloud 라디오 DJ 역할을 요청하고 있습니다.",
+      "result": "방문자의 흐름을 이야기형 기억으로 압축했습니다.",
+      "importance": "보통",
+      "nextConnection": "다음 방문 때 캐릭터 카드와 현재 장면을 불러와 이어갑니다.",
+      "keywords": [
+        "AI",
+        "방문자",
+        "관계"
+      ],
+      "createdAt": "2026-05-14T16:34:18.544Z",
+      "nb": {
+        "changePoint": "AI, 방문자, 관계",
+        "currentCoordinate": "핵심 방문자",
+        "nextMovement": "다음 장면 생성"
+      }
+    },
+    {
+      "id": "fdd98d34-dd64-4aae-8288-424103509716",
+      "characterId": "Visitor-417b11e0",
+      "eventName": "메인 화면 AI 대화",
+      "content": "SoundCloud DJ 라디오 오프닝 첫 곡 선곡: 빗속에서 찾은 컬러 - 유현석 (Revenue): 이름 미확인 방문자 / 빗속에서 찾은 컬러 - 유현석 (Revenue)",
+      "aiLine": "사용자는 SoundCloud 라디오 DJ 역할을 요청하고 있습니다.",
+      "result": "방문자의 흐름을 이야기형 기억으로 압축했습니다.",
+      "importance": "보통",
+      "nextConnection": "다음 방문 때 캐릭터 카드와 현재 장면을 불러와 이어갑니다.",
+      "keywords": [
+        "AI",
+        "방문자",
+        "관계"
+      ],
+      "createdAt": "2026-05-14T16:34:40.948Z",
+      "nb": {
+        "changePoint": "AI, 방문자, 관계",
+        "currentCoordinate": "핵심 방문자",
+        "nextMovement": "다음 장면 생성"
+      }
+    },
+    {
+      "id": "18b60f0b-4232-4994-ae57-7185a7990886",
+      "characterId": "Visitor-417b11e0",
+      "eventName": "메인 화면 AI 대화",
+      "content": "SoundCloud DJ 라디오 오프닝 첫 곡 선곡: 빗속에서 찾은 컬러 - 유현석 (Revenue): 이름 미확인 방문자 / 빗속에서 찾은 컬러 - 유현석 (Revenue)",
+      "aiLine": "사용자는 SoundCloud 라디오 DJ 역할을 요청하고 있습니다.",
+      "result": "방문자의 흐름을 이야기형 기억으로 압축했습니다.",
+      "importance": "보통",
+      "nextConnection": "다음 방문 때 캐릭터 카드와 현재 장면을 불러와 이어갑니다.",
+      "keywords": [
+        "AI",
+        "방문자",
+        "관계"
+      ],
+      "createdAt": "2026-05-14T16:35:06.714Z",
+      "nb": {
+        "changePoint": "AI, 방문자, 관계",
+        "currentCoordinate": "핵심 방문자",
+        "nextMovement": "다음 장면 생성"
+      }
+    },
+    {
+      "id": "2266b1f9-95ad-45ff-85d6-973de35a062c",
+      "characterId": "Visitor-417b11e0",
+      "eventName": "메인 화면 AI 대화",
+      "content": "SoundCloud DJ 라디오 오프닝 첫 곡 선곡: 빗속에서 찾은 컬러 - 유현석 (Revenue): 이름 미확인 방문자 / 빗속에서 찾은 컬러 - 유현석 (Revenue)",
+      "aiLine": "사용자는 SoundCloud 라디오 DJ 역할을 요청하고 있습니다.",
+      "result": "방문자의 흐름을 이야기형 기억으로 압축했습니다.",
+      "importance": "보통",
+      "nextConnection": "다음 방문 때 캐릭터 카드와 현재 장면을 불러와 이어갑니다.",
+      "keywords": [
+        "AI",
+        "방문자",
+        "관계"
+      ],
+      "createdAt": "2026-05-14T16:36:57.184Z",
+      "nb": {
+        "changePoint": "AI, 방문자, 관계",
+        "currentCoordinate": "핵심 방문자",
+        "nextMovement": "다음 장면 생성"
+      }
+    },
+    {
+      "id": "8f3bcc25-a450-41b6-8ab3-fdd9e3a16680",
+      "characterId": "Visitor-417b11e0",
+      "eventName": "메인 화면 AI 대화",
+      "content": "SoundCloud DJ 라디오 오프닝 첫 곡 선곡: 빗속에서 찾은 컬러 - 유현석 (Revenue): 이름 미확인 방문자 / 빗속에서 찾은 컬러 - 유현석 (Revenue)",
+      "aiLine": "사용자는 SoundCloud 라디오 DJ 역할을 요청하고 있습니다.",
+      "result": "방문자의 흐름을 이야기형 기억으로 압축했습니다.",
+      "importance": "보통",
+      "nextConnection": "다음 방문 때 캐릭터 카드와 현재 장면을 불러와 이어갑니다.",
+      "keywords": [
+        "AI",
+        "방문자",
+        "관계"
+      ],
+      "createdAt": "2026-05-14T16:38:27.704Z",
+      "nb": {
+        "changePoint": "AI, 방문자, 관계",
+        "currentCoordinate": "핵심 방문자",
+        "nextMovement": "다음 장면 생성"
+      }
+    },
+    {
+      "id": "b701006f-b513-45a9-9275-b3effe3a70bd",
+      "characterId": "Visitor-417b11e0",
+      "eventName": "메인 화면 AI 대화",
+      "content": "SoundCloud DJ 라디오 오프닝 첫 곡 선곡: 빗속에서 찾은 컬러 - 유현석 (Revenue): 이름 미확인 방문자 / 빗속에서 찾은 컬러 - 유현석 (Revenue)",
+      "aiLine": "사용자는 SoundCloud 라디오 DJ 역할을 요청하고 있습니다.",
+      "result": "방문자의 흐름을 이야기형 기억으로 압축했습니다.",
+      "importance": "보통",
+      "nextConnection": "다음 방문 때 캐릭터 카드와 현재 장면을 불러와 이어갑니다.",
+      "keywords": [
+        "AI",
+        "방문자",
+        "관계"
+      ],
+      "createdAt": "2026-05-14T16:40:06.290Z",
+      "nb": {
+        "changePoint": "AI, 방문자, 관계",
+        "currentCoordinate": "핵심 방문자",
+        "nextMovement": "다음 장면 생성"
+      }
+    },
+    {
+      "id": "03f525b9-d68e-41ae-a7cd-05b5578d0e4c",
+      "characterId": "Visitor-417b11e0",
+      "eventName": "메인 화면 AI 대화",
+      "content": "SoundCloud DJ 라디오 오프닝 첫 곡 선곡: 빗속에서 찾은 컬러 - 유현석 (Revenue): 이름 미확인 방문자 / 빗속에서 찾은 컬러 - 유현석 (Revenue)",
+      "aiLine": "사용자는 SoundCloud 라디오 DJ 역할을 요청하고 있습니다.",
+      "result": "방문자의 흐름을 이야기형 기억으로 압축했습니다.",
+      "importance": "보통",
+      "nextConnection": "다음 방문 때 캐릭터 카드와 현재 장면을 불러와 이어갑니다.",
+      "keywords": [
+        "AI",
+        "방문자",
+        "관계"
+      ],
+      "createdAt": "2026-05-14T16:42:59.545Z",
+      "nb": {
+        "changePoint": "AI, 방문자, 관계",
+        "currentCoordinate": "핵심 방문자",
+        "nextMovement": "다음 장면 생성"
+      }
+    },
+    {
+      "id": "4a174a1a-d827-4ba7-bbdc-915c792b8b8d",
+      "characterId": "Visitor-417b11e0",
+      "eventName": "메인 화면 AI 대화",
+      "content": "SoundCloud DJ 라디오 오프닝 첫 곡 선곡: 이클립스 로즈 - 유현석 (Revenue): 이름 미확인 방문자 / 이클립스 로즈 - 유현석 (Revenue)",
+      "aiLine": "사용자는 SoundCloud 라디오 DJ 역할을 요청하고 있습니다.",
+      "result": "방문자의 흐름을 이야기형 기억으로 압축했습니다.",
+      "importance": "보통",
+      "nextConnection": "다음 방문 때 캐릭터 카드와 현재 장면을 불러와 이어갑니다.",
+      "keywords": [
+        "AI",
+        "방문자",
+        "관계"
+      ],
+      "createdAt": "2026-05-14T16:45:01.329Z",
+      "nb": {
+        "changePoint": "AI, 방문자, 관계",
+        "currentCoordinate": "핵심 방문자",
+        "nextMovement": "다음 장면 생성"
+      }
+    },
+    {
+      "id": "f5550be6-155f-4526-95cd-137a12a17cbe",
+      "characterId": "Visitor-417b11e0",
+      "eventName": "메인 화면 AI 대화",
+      "content": "SoundCloud DJ 라디오 오프닝 첫 곡 선곡: 빗속에서 찾은 컬러 - 유현석 (Revenue): 이름 미확인 방문자 / 빗속에서 찾은 컬러 - 유현석 (Revenue)",
+      "aiLine": "사용자는 나를 SoundCloud 라디오 DJ로 설정하고 있다.",
+      "result": "방문자의 흐름을 이야기형 기억으로 압축했습니다.",
+      "importance": "보통",
+      "nextConnection": "다음 방문 때 캐릭터 카드와 현재 장면을 불러와 이어갑니다.",
+      "keywords": [
+        "AI",
+        "방문자",
+        "관계"
+      ],
+      "createdAt": "2026-05-14T16:46:11.326Z",
+      "nb": {
+        "changePoint": "AI, 방문자, 관계",
+        "currentCoordinate": "핵심 방문자",
+        "nextMovement": "다음 장면 생성"
+      }
+    },
+    {
+      "id": "15d7581b-7c4a-4915-a642-a90036391855",
+      "characterId": "Visitor-417b11e0",
+      "eventName": "메인 화면 AI 대화",
+      "content": "SoundCloud DJ 다음 곡 AI 선곡: INNER UTOPIA - 유현석 (Revenue): 이름 미확인 방문자 / INNER UTOPIA - 유현석 (Revenue)",
+      "aiLine": "사용자는 SoundCloud 라디오 DJ 역할을 요청하고 있습니다.",
+      "result": "방문자의 흐름을 이야기형 기억으로 압축했습니다.",
+      "importance": "보통",
+      "nextConnection": "다음 방문 때 캐릭터 카드와 현재 장면을 불러와 이어갑니다.",
+      "keywords": [
+        "AI",
+        "방문자",
+        "관계"
+      ],
+      "createdAt": "2026-05-14T16:48:56.888Z",
+      "nb": {
+        "changePoint": "AI, 방문자, 관계",
+        "currentCoordinate": "핵심 방문자",
+        "nextMovement": "다음 장면 생성"
+      }
+    },
+    {
+      "id": "27e6c39a-c6cc-4606-819d-afe59a1f6787",
+      "characterId": "Visitor-417b11e0",
+      "eventName": "메인 화면 AI 대화",
+      "content": "음성 사용자 이름 미확인 방문자(voice-mp5mitqk-zqhs4) 발화: 사용자는 사운드클라우드 라디오 dj 역할을 요청하고 있습니다.\n현재 곡: INNER UTOPIA - 유현석 (Revenue)",
+      "aiLine": "사용자는 SoundCloud 라디오 DJ 역할을 요청하고 있으며, 현재 곡은 \"INNER UTOPIA - 유현석 (Revenue)\"입니다.",
+      "result": "방문자의 흐름을 이야기형 기억으로 압축했습니다.",
+      "importance": "보통",
+      "nextConnection": "다음 방문 때 캐릭터 카드와 현재 장면을 불러와 이어갑니다.",
+      "keywords": [
+        "AI",
+        "방문자",
+        "관계"
+      ],
+      "createdAt": "2026-05-14T16:49:18.389Z",
+      "nb": {
+        "changePoint": "AI, 방문자, 관계",
+        "currentCoordinate": "핵심 방문자",
+        "nextMovement": "다음 장면 생성"
+      }
+    },
+    {
+      "id": "0c91d57f-aca6-4f60-a6b3-066a0832efd0",
+      "characterId": "Visitor-417b11e0",
+      "eventName": "메인 화면 AI 대화",
+      "content": "안녕 난 꼬봉이야",
+      "aiLine": "사용자가 \"안녕 난 꼬봉이야\"라고 인사했다.",
+      "result": "방문자의 흐름을 이야기형 기억으로 압축했습니다.",
+      "importance": "보통",
+      "nextConnection": "다음 방문 때 캐릭터 카드와 현재 장면을 불러와 이어갑니다.",
+      "keywords": [
+        "AI",
+        "방문자",
+        "관계"
+      ],
+      "createdAt": "2026-05-14T16:52:15.851Z",
+      "nb": {
+        "changePoint": "AI, 방문자, 관계",
+        "currentCoordinate": "핵심 방문자",
+        "nextMovement": "다음 장면 생성"
+      }
+    },
+    {
+      "id": "9e5ae987-6d83-4832-8def-ca2f4b5b7029",
+      "characterId": "Visitor-417b11e0",
+      "eventName": "메인 화면 AI 대화",
+      "content": "SoundCloud DJ 다음 곡 AI 선곡: 비 오는 날 포식자 축제 - 유현석 (Revenue): 이름 미확인 방문자 / 비 오는 날 포식자 축제 - 유현석 (Revenue)",
+      "aiLine": "사용자는 SoundCloud 라디오 DJ 역할을 요청하고 있습니다.",
+      "result": "방문자의 흐름을 이야기형 기억으로 압축했습니다.",
+      "importance": "보통",
+      "nextConnection": "다음 방문 때 캐릭터 카드와 현재 장면을 불러와 이어갑니다.",
+      "keywords": [
+        "AI",
+        "방문자",
+        "관계"
+      ],
+      "createdAt": "2026-05-14T16:53:04.576Z",
+      "nb": {
+        "changePoint": "AI, 방문자, 관계",
+        "currentCoordinate": "핵심 방문자",
+        "nextMovement": "다음 장면 생성"
+      }
+    }
+  ],
+  "scenes": [
+    {
+      "id": "703844b5-29f7-4028-8988-0d9cd754f078",
+      "characterId": "Visitor-417b11e0",
+      "currentScene": "조용한 탐색자 001은 메인 화면과 대화 흐름을 바탕으로 \"사용자는 \"참소식.com\" 메인 화면을 보고 있는 AI 대화 참여자 역할을 요청하고 있다.\"라는 장면에 도달했다.",
+      "aiOpeningDirection": "메인 화면을 기준으로 짧고 명확하게 다음 질문을 유도합니다.",
+      "mainContextDigest": "[참소식 메인 페이지 정보]\n브리핑 제목: 참소식 AI 이슈 브리핑\n브리핑 설명: 실시간으로 쌓이는 이슈 데이터를 5개의 핵심 카드로 압축하고, 나머지 데이터는 배경 신호로 보관합니다. 방문자는 더 적은 카드로 오늘의 흐름을 빠르게 읽고, AI 분석은 관계와 맥락을 보강합니다.\n\n[브리핑 카드]\n1. 오늘의 핵심 신호 - 조회수와 최신성을 기준으로 먼저 볼 만한 이슈만 전면에 배치합니다.\n2. AI 관계 해설 - 키워드 사이의 연결 이유와 시장, 문화, 기술 흐름을 짧게 설명합니다.\n3. 숨김 데이터 보관 - 나머지 95개 데이터는 삭제하지 않고 내부 목록에 유지해 갱신과 정렬에 활용합니다.\n4. 검색 확장 - 네이버, 구글, 빙, 유튜브 링크로 관련 내용을 바로 이어서 확인할 수 있습니다.\n5. 미분적분 - 미분, 적분, 누적 넓이 예제를 인터랙티브 수업으로 확인합니다.\n6. AI 브리핑 상세 - 핵심 신호, 관계 해석, Sort 확장 흐름이 어떻게 작동하는지 안내합니다.",
+      "createdAt": "2026-05-14T05:57:03.553Z"
+    },
+    {
+      "id": "04dda0b2-fa84-4f9d-8719-690c71ea1232",
+      "characterId": "Visitor-417b11e0",
+      "currentScene": "조용한 탐색자 001은 메인 화면과 대화 흐름을 바탕으로 \"사용자는 참소식.com 메인 화면을 보면서 놓치기 쉬운 연결점 하나를 한 문장으로 말해달라고 요청했다.\"라는 장면에 도달했다.",
+      "aiOpeningDirection": "메인 화면을 기준으로 짧고 명확하게 다음 질문을 유도합니다.",
+      "mainContextDigest": "[참소식 메인 페이지 정보]\n브리핑 제목: 참소식 AI 이슈 브리핑\n브리핑 설명: 실시간으로 쌓이는 이슈 데이터를 5개의 핵심 카드로 압축하고, 나머지 데이터는 배경 신호로 보관합니다. 방문자는 더 적은 카드로 오늘의 흐름을 빠르게 읽고, AI 분석은 관계와 맥락을 보강합니다.\n\n[브리핑 카드]\n1. 오늘의 핵심 신호 - 조회수와 최신성을 기준으로 먼저 볼 만한 이슈만 전면에 배치합니다.\n2. AI 관계 해설 - 키워드 사이의 연결 이유와 시장, 문화, 기술 흐름을 짧게 설명합니다.\n3. 숨김 데이터 보관 - 나머지 95개 데이터는 삭제하지 않고 내부 목록에 유지해 갱신과 정렬에 활용합니다.\n4. 검색 확장 - 네이버, 구글, 빙, 유튜브 링크로 관련 내용을 바로 이어서 확인할 수 있습니다.\n5. 미분적분 - 미분, 적분, 누적 넓이 예제를 인터랙티브 수업으로 확인합니다.\n6. AI 브리핑 상세 - 핵심 신호, 관계 해석, Sort 확장 흐름이 어떻게 작동하는지 안내합니다.",
+      "createdAt": "2026-05-14T05:57:07.493Z"
+    },
+    {
+      "id": "32693a06-0a04-445f-b0c0-473615a9da70",
+      "characterId": "Visitor-417b11e0",
+      "currentScene": "조용한 탐색자 001은 메인 화면과 대화 흐름을 바탕으로 \"사용자는 참소식.com 메인 화면 정보를 제공하고, \"메인 화면이 갱신됐다면 새로 눈에 띄는 흐름을 한 문장으로 말해줘\"라고 질문했다.\"라는 장면에 도달했다.",
+      "aiOpeningDirection": "메인 화면을 기준으로 짧고 명확하게 다음 질문을 유도합니다.",
+      "mainContextDigest": "[참소식 메인 페이지 정보]\n브리핑 제목: 참소식 AI 이슈 브리핑\n브리핑 설명: 실시간으로 쌓이는 이슈 데이터를 5개의 핵심 카드로 압축하고, 나머지 데이터는 배경 신호로 보관합니다. 방문자는 더 적은 카드로 오늘의 흐름을 빠르게 읽고, AI 분석은 관계와 맥락을 보강합니다.\n\n[브리핑 카드]\n1. 오늘의 핵심 신호 - 조회수와 최신성을 기준으로 먼저 볼 만한 이슈만 전면에 배치합니다.\n2. AI 관계 해설 - 키워드 사이의 연결 이유와 시장, 문화, 기술 흐름을 짧게 설명합니다.\n3. 숨김 데이터 보관 - 나머지 95개 데이터는 삭제하지 않고 내부 목록에 유지해 갱신과 정렬에 활용합니다.\n4. 검색 확장 - 네이버, 구글, 빙, 유튜브 링크로 관련 내용을 바로 이어서 확인할 수 있습니다.\n5. 미분적분 - 미분, 적분, 누적 넓이 예제를 인터랙티브 수업으로 확인합니다.\n6. AI 브리핑 상세 - 핵심 신호, 관계 해석, Sort 확장 흐름이 어떻게 작동하는지 안내합니다.",
+      "createdAt": "2026-05-14T05:57:15.099Z"
+    },
+    {
+      "id": "76a920f9-9cb4-4ef5-a435-852e209e341a",
+      "characterId": "Visitor-417b11e0",
+      "currentScene": "조용한 탐색자 001은 메인 화면과 대화 흐름을 바탕으로 \"사용자는 참소식.com 메인 화면 정보를 제공하고, \"현재 메인 화면을 보면서 놓치기 쉬운 연결점 하나를 한 문장으로 말해줘\"라고 질문했다.\"라는 장면에 도달했다.",
+      "aiOpeningDirection": "메인 화면을 기준으로 짧고 명확하게 다음 질문을 유도합니다.",
+      "mainContextDigest": "[참소식 메인 페이지 정보]\n브리핑 제목: 참소식 AI 이슈 브리핑\n브리핑 설명: 실시간으로 쌓이는 이슈 데이터를 5개의 핵심 카드로 압축하고, 나머지 데이터는 배경 신호로 보관합니다. 방문자는 더 적은 카드로 오늘의 흐름을 빠르게 읽고, AI 분석은 관계와 맥락을 보강합니다.\n\n[브리핑 카드]\n1. 오늘의 핵심 신호 - 조회수와 최신성을 기준으로 먼저 볼 만한 이슈만 전면에 배치합니다.\n2. AI 관계 해설 - 키워드 사이의 연결 이유와 시장, 문화, 기술 흐름을 짧게 설명합니다.\n3. 숨김 데이터 보관 - 나머지 95개 데이터는 삭제하지 않고 내부 목록에 유지해 갱신과 정렬에 활용합니다.\n4. 검색 확장 - 네이버, 구글, 빙, 유튜브 링크로 관련 내용을 바로 이어서 확인할 수 있습니다.\n5. 미분적분 - 미분, 적분, 누적 넓이 예제를 인터랙티브 수업으로 확인합니다.\n6. AI 브리핑 상세 - 핵심 신호, 관계 해석, Sort 확장 흐름이 어떻게 작동하는지 안내합니다.",
+      "createdAt": "2026-05-14T05:57:24.371Z"
+    },
+    {
+      "id": "f88ca9a8-560f-4861-b611-40f2afa5758a",
+      "characterId": "Visitor-417b11e0",
+      "currentScene": "조용한 탐색자 001은 메인 화면과 대화 흐름을 바탕으로 \"사용자는 \"현재 메인 화면을 보면서 놓치기 쉬운 연결점 하나를 한 문장으로 말해줘\"라고 질문했다.\"라는 장면에 도달했다.",
+      "aiOpeningDirection": "메인 화면을 기준으로 짧고 명확하게 다음 질문을 유도합니다.",
+      "mainContextDigest": "[참소식 메인 페이지 정보]\n브리핑 제목: 참소식 AI 이슈 브리핑\n브리핑 설명: 실시간으로 쌓이는 이슈 데이터를 5개의 핵심 카드로 압축하고, 나머지 데이터는 배경 신호로 보관합니다. 방문자는 더 적은 카드로 오늘의 흐름을 빠르게 읽고, AI 분석은 관계와 맥락을 보강합니다.\n\n[브리핑 카드]\n1. 오늘의 핵심 신호 - 조회수와 최신성을 기준으로 먼저 볼 만한 이슈만 전면에 배치합니다.\n2. AI 관계 해설 - 키워드 사이의 연결 이유와 시장, 문화, 기술 흐름을 짧게 설명합니다.\n3. 숨김 데이터 보관 - 나머지 95개 데이터는 삭제하지 않고 내부 목록에 유지해 갱신과 정렬에 활용합니다.\n4. 검색 확장 - 네이버, 구글, 빙, 유튜브 링크로 관련 내용을 바로 이어서 확인할 수 있습니다.\n5. 미분적분 - 미분, 적분, 누적 넓이 예제를 인터랙티브 수업으로 확인합니다.\n6. AI 브리핑 상세 - 핵심 신호, 관계 해석, Sort 확장 흐름이 어떻게 작동하는지 안내합니다.",
+      "createdAt": "2026-05-14T05:57:34.242Z"
+    },
+    {
+      "id": "3a0af9a4-ce3b-45b3-a152-96f87d91f08e",
+      "characterId": "Visitor-417b11e0",
+      "currentScene": "조용한 탐색자 001은 메인 화면과 대화 흐름을 바탕으로 \"사용자는 \"현재 메인 화면을 보면서 놓치기 쉬운 연결점 하나를 한 문장으로 말해줘\"라고 질문했다.\"라는 장면에 도달했다.",
+      "aiOpeningDirection": "메인 화면을 기준으로 짧고 명확하게 다음 질문을 유도합니다.",
+      "mainContextDigest": "[참소식 메인 페이지 정보]\n브리핑 제목: 참소식 AI 이슈 브리핑\n브리핑 설명: 실시간으로 쌓이는 이슈 데이터를 5개의 핵심 카드로 압축하고, 나머지 데이터는 배경 신호로 보관합니다. 방문자는 더 적은 카드로 오늘의 흐름을 빠르게 읽고, AI 분석은 관계와 맥락을 보강합니다.\n\n[브리핑 카드]\n1. 오늘의 핵심 신호 - 조회수와 최신성을 기준으로 먼저 볼 만한 이슈만 전면에 배치합니다.\n2. AI 관계 해설 - 키워드 사이의 연결 이유와 시장, 문화, 기술 흐름을 짧게 설명합니다.\n3. 숨김 데이터 보관 - 나머지 95개 데이터는 삭제하지 않고 내부 목록에 유지해 갱신과 정렬에 활용합니다.\n4. 검색 확장 - 네이버, 구글, 빙, 유튜브 링크로 관련 내용을 바로 이어서 확인할 수 있습니다.\n5. 미분적분 - 미분, 적분, 누적 넓이 예제를 인터랙티브 수업으로 확인합니다.\n6. AI 브리핑 상세 - 핵심 신호, 관계 해석, Sort 확장 흐름이 어떻게 작동하는지 안내합니다.",
+      "createdAt": "2026-05-14T05:57:44.691Z"
+    },
+    {
+      "id": "d4816dd3-cc09-4994-b474-374dea5abcf5",
+      "characterId": "Visitor-417b11e0",
+      "currentScene": "조용한 탐색자 001은 메인 화면과 대화 흐름을 바탕으로 \"사용자는 \"현재 메인 화면을 보면서 놓치기 쉬운 연결점 하나를 한 문장으로 말해줘\"라고 질문했다.\"라는 장면에 도달했다.",
+      "aiOpeningDirection": "메인 화면을 기준으로 짧고 명확하게 다음 질문을 유도합니다.",
+      "mainContextDigest": "[참소식 메인 페이지 정보]\n브리핑 제목: 참소식 AI 이슈 브리핑\n브리핑 설명: 실시간으로 쌓이는 이슈 데이터를 5개의 핵심 카드로 압축하고, 나머지 데이터는 배경 신호로 보관합니다. 방문자는 더 적은 카드로 오늘의 흐름을 빠르게 읽고, AI 분석은 관계와 맥락을 보강합니다.\n\n[브리핑 카드]\n1. 오늘의 핵심 신호 - 조회수와 최신성을 기준으로 먼저 볼 만한 이슈만 전면에 배치합니다.\n2. AI 관계 해설 - 키워드 사이의 연결 이유와 시장, 문화, 기술 흐름을 짧게 설명합니다.\n3. 숨김 데이터 보관 - 나머지 95개 데이터는 삭제하지 않고 내부 목록에 유지해 갱신과 정렬에 활용합니다.\n4. 검색 확장 - 네이버, 구글, 빙, 유튜브 링크로 관련 내용을 바로 이어서 확인할 수 있습니다.\n5. 미분적분 - 미분, 적분, 누적 넓이 예제를 인터랙티브 수업으로 확인합니다.\n6. AI 브리핑 상세 - 핵심 신호, 관계 해석, Sort 확장 흐름이 어떻게 작동하는지 안내합니다.",
+      "createdAt": "2026-05-14T05:57:54.921Z"
+    },
+    {
+      "id": "1f647681-9507-4638-8f9c-be8f1ee142ee",
+      "characterId": "Visitor-417b11e0",
+      "currentScene": "조용한 탐색자 001은 메인 화면과 대화 흐름을 바탕으로 \"사용자는 \"현재 메인 화면을 보면서 놓치기 쉬운 연결점 하나를 한 문장으로 말해줘\"라고 질문했다.\"라는 장면에 도달했다.",
+      "aiOpeningDirection": "메인 화면을 기준으로 짧고 명확하게 다음 질문을 유도합니다.",
+      "mainContextDigest": "[참소식 메인 페이지 정보]\n브리핑 제목: 참소식 AI 이슈 브리핑\n브리핑 설명: 실시간으로 쌓이는 이슈 데이터를 5개의 핵심 카드로 압축하고, 나머지 데이터는 배경 신호로 보관합니다. 방문자는 더 적은 카드로 오늘의 흐름을 빠르게 읽고, AI 분석은 관계와 맥락을 보강합니다.\n\n[브리핑 카드]\n1. 오늘의 핵심 신호 - 조회수와 최신성을 기준으로 먼저 볼 만한 이슈만 전면에 배치합니다.\n2. AI 관계 해설 - 키워드 사이의 연결 이유와 시장, 문화, 기술 흐름을 짧게 설명합니다.\n3. 숨김 데이터 보관 - 나머지 95개 데이터는 삭제하지 않고 내부 목록에 유지해 갱신과 정렬에 활용합니다.\n4. 검색 확장 - 네이버, 구글, 빙, 유튜브 링크로 관련 내용을 바로 이어서 확인할 수 있습니다.\n5. 미분적분 - 미분, 적분, 누적 넓이 예제를 인터랙티브 수업으로 확인합니다.\n6. AI 브리핑 상세 - 핵심 신호, 관계 해석, Sort 확장 흐름이 어떻게 작동하는지 안내합니다.",
+      "createdAt": "2026-05-14T05:58:06.105Z"
+    },
+    {
+      "id": "1ad97183-be97-4f00-ae19-938445a64f3c",
+      "characterId": "Visitor-417b11e0",
+      "currentScene": "조용한 탐색자 001은 메인 화면과 대화 흐름을 바탕으로 \"사용자는 \"현재 메인 화면을 보면서 놓치기 쉬운 연결점 하나를 한 문장으로 말해줘\"라고 질문했다.\"라는 장면에 도달했다.",
+      "aiOpeningDirection": "메인 화면을 기준으로 짧고 명확하게 다음 질문을 유도합니다.",
+      "mainContextDigest": "[참소식 메인 페이지 정보]\n브리핑 제목: 참소식 AI 이슈 브리핑\n브리핑 설명: 실시간으로 쌓이는 이슈 데이터를 5개의 핵심 카드로 압축하고, 나머지 데이터는 배경 신호로 보관합니다. 방문자는 더 적은 카드로 오늘의 흐름을 빠르게 읽고, AI 분석은 관계와 맥락을 보강합니다.\n\n[브리핑 카드]\n1. 오늘의 핵심 신호 - 조회수와 최신성을 기준으로 먼저 볼 만한 이슈만 전면에 배치합니다.\n2. AI 관계 해설 - 키워드 사이의 연결 이유와 시장, 문화, 기술 흐름을 짧게 설명합니다.\n3. 숨김 데이터 보관 - 나머지 95개 데이터는 삭제하지 않고 내부 목록에 유지해 갱신과 정렬에 활용합니다.\n4. 검색 확장 - 네이버, 구글, 빙, 유튜브 링크로 관련 내용을 바로 이어서 확인할 수 있습니다.\n5. 미분적분 - 미분, 적분, 누적 넓이 예제를 인터랙티브 수업으로 확인합니다.\n6. AI 브리핑 상세 - 핵심 신호, 관계 해석, Sort 확장 흐름이 어떻게 작동하는지 안내합니다.",
+      "createdAt": "2026-05-14T05:58:14.320Z"
+    },
+    {
+      "id": "89fe34f1-c1d0-4933-a048-283f0ab3dcb2",
+      "characterId": "Visitor-417b11e0",
+      "currentScene": "조용한 탐색자 001은 메인 화면과 대화 흐름을 바탕으로 \"사용자는 \"현재 메인 화면을 보면서 놓치기 쉬운 연결점 하나를 한 문장으로 말해줘\"라고 질문했다.\"라는 장면에 도달했다.",
+      "aiOpeningDirection": "메인 화면을 기준으로 짧고 명확하게 다음 질문을 유도합니다.",
+      "mainContextDigest": "[참소식 메인 페이지 정보]\n브리핑 제목: 참소식 AI 이슈 브리핑\n브리핑 설명: 실시간으로 쌓이는 이슈 데이터를 5개의 핵심 카드로 압축하고, 나머지 데이터는 배경 신호로 보관합니다. 방문자는 더 적은 카드로 오늘의 흐름을 빠르게 읽고, AI 분석은 관계와 맥락을 보강합니다.\n\n[브리핑 카드]\n1. 오늘의 핵심 신호 - 조회수와 최신성을 기준으로 먼저 볼 만한 이슈만 전면에 배치합니다.\n2. AI 관계 해설 - 키워드 사이의 연결 이유와 시장, 문화, 기술 흐름을 짧게 설명합니다.\n3. 숨김 데이터 보관 - 나머지 95개 데이터는 삭제하지 않고 내부 목록에 유지해 갱신과 정렬에 활용합니다.\n4. 검색 확장 - 네이버, 구글, 빙, 유튜브 링크로 관련 내용을 바로 이어서 확인할 수 있습니다.\n5. 미분적분 - 미분, 적분, 누적 넓이 예제를 인터랙티브 수업으로 확인합니다.\n6. AI 브리핑 상세 - 핵심 신호, 관계 해석, Sort 확장 흐름이 어떻게 작동하는지 안내합니다.",
+      "createdAt": "2026-05-14T05:58:45.968Z"
+    },
+    {
+      "id": "5f201b66-ed31-4d8e-a8e2-6b97d0c7d8ab",
+      "characterId": "Visitor-417b11e0",
+      "currentScene": "조용한 탐색자 001은 메인 화면과 대화 흐름을 바탕으로 \"사용자는 \"현재 메인 화면을 보면서 놓치기 쉬운 연결점 하나를 한 문장으로 말해줘\"라고 질문했다.\"라는 장면에 도달했다.",
+      "aiOpeningDirection": "메인 화면을 기준으로 짧고 명확하게 다음 질문을 유도합니다.",
+      "mainContextDigest": "[참소식 메인 페이지 정보]\n브리핑 제목: 참소식 AI 이슈 브리핑\n브리핑 설명: 실시간으로 쌓이는 이슈 데이터를 5개의 핵심 카드로 압축하고, 나머지 데이터는 배경 신호로 보관합니다. 방문자는 더 적은 카드로 오늘의 흐름을 빠르게 읽고, AI 분석은 관계와 맥락을 보강합니다.\n\n[브리핑 카드]\n1. 오늘의 핵심 신호 - 조회수와 최신성을 기준으로 먼저 볼 만한 이슈만 전면에 배치합니다.\n2. AI 관계 해설 - 키워드 사이의 연결 이유와 시장, 문화, 기술 흐름을 짧게 설명합니다.\n3. 숨김 데이터 보관 - 나머지 95개 데이터는 삭제하지 않고 내부 목록에 유지해 갱신과 정렬에 활용합니다.\n4. 검색 확장 - 네이버, 구글, 빙, 유튜브 링크로 관련 내용을 바로 이어서 확인할 수 있습니다.\n5. 미분적분 - 미분, 적분, 누적 넓이 예제를 인터랙티브 수업으로 확인합니다.\n6. AI 브리핑 상세 - 핵심 신호, 관계 해석, Sort 확장 흐름이 어떻게 작동하는지 안내합니다.",
+      "createdAt": "2026-05-14T06:01:49.517Z"
+    },
+    {
+      "id": "732dcaae-f407-4491-93e8-13db68f515f6",
+      "characterId": "Visitor-417b11e0",
+      "currentScene": "조용한 탐색자 001은 메인 화면과 대화 흐름을 바탕으로 \"사용자는 \"현재 메인 화면을 보면서 놓치기 쉬운 연결점 하나를 한 문장으로 말해줘\"라고 질문했다.\"라는 장면에 도달했다.",
+      "aiOpeningDirection": "메인 화면을 기준으로 짧고 명확하게 다음 질문을 유도합니다.",
+      "mainContextDigest": "[참소식 메인 페이지 정보]\n브리핑 제목: 참소식 AI 이슈 브리핑\n브리핑 설명: 실시간으로 쌓이는 이슈 데이터를 5개의 핵심 카드로 압축하고, 나머지 데이터는 배경 신호로 보관합니다. 방문자는 더 적은 카드로 오늘의 흐름을 빠르게 읽고, AI 분석은 관계와 맥락을 보강합니다.\n\n[브리핑 카드]\n1. 오늘의 핵심 신호 - 조회수와 최신성을 기준으로 먼저 볼 만한 이슈만 전면에 배치합니다.\n2. AI 관계 해설 - 키워드 사이의 연결 이유와 시장, 문화, 기술 흐름을 짧게 설명합니다.\n3. 숨김 데이터 보관 - 나머지 95개 데이터는 삭제하지 않고 내부 목록에 유지해 갱신과 정렬에 활용합니다.\n4. 검색 확장 - 네이버, 구글, 빙, 유튜브 링크로 관련 내용을 바로 이어서 확인할 수 있습니다.\n5. 미분적분 - 미분, 적분, 누적 넓이 예제를 인터랙티브 수업으로 확인합니다.\n6. AI 브리핑 상세 - 핵심 신호, 관계 해석, Sort 확장 흐름이 어떻게 작동하는지 안내합니다.",
+      "createdAt": "2026-05-14T06:01:55.125Z"
+    },
+    {
+      "id": "0a3cab8d-46c9-4140-8e43-58d3b63991fe",
+      "characterId": "Visitor-417b11e0",
+      "currentScene": "조용한 탐색자 001은 메인 화면과 대화 흐름을 바탕으로 \"사용자가 \"현재 메인 화면을 보면서 놓치기 쉬운 연결점 하나를 한 문장으로 말해줘\"라고 질문했다.\"라는 장면에 도달했다.",
+      "aiOpeningDirection": "메인 화면을 기준으로 짧고 명확하게 다음 질문을 유도합니다.",
+      "mainContextDigest": "[참소식 메인 페이지 정보]\n브리핑 제목: 참소식 AI 이슈 브리핑\n브리핑 설명: 실시간으로 쌓이는 이슈 데이터를 5개의 핵심 카드로 압축하고, 나머지 데이터는 배경 신호로 보관합니다. 방문자는 더 적은 카드로 오늘의 흐름을 빠르게 읽고, AI 분석은 관계와 맥락을 보강합니다.\n\n[브리핑 카드]\n1. 오늘의 핵심 신호 - 조회수와 최신성을 기준으로 먼저 볼 만한 이슈만 전면에 배치합니다.\n2. AI 관계 해설 - 키워드 사이의 연결 이유와 시장, 문화, 기술 흐름을 짧게 설명합니다.\n3. 숨김 데이터 보관 - 나머지 95개 데이터는 삭제하지 않고 내부 목록에 유지해 갱신과 정렬에 활용합니다.\n4. 검색 확장 - 네이버, 구글, 빙, 유튜브 링크로 관련 내용을 바로 이어서 확인할 수 있습니다.\n5. 미분적분 - 미분, 적분, 누적 넓이 예제를 인터랙티브 수업으로 확인합니다.\n6. AI 브리핑 상세 - 핵심 신호, 관계 해석, Sort 확장 흐름이 어떻게 작동하는지 안내합니다.",
+      "createdAt": "2026-05-14T06:02:08.274Z"
+    },
+    {
+      "id": "62055c71-8798-40f1-978f-98d7534857e3",
+      "characterId": "Visitor-417b11e0",
+      "currentScene": "조용한 탐색자 001은 메인 화면과 대화 흐름을 바탕으로 \"사용자는 \"현재 메인 화면을 보면서 놓치기 쉬운 연결점 하나를 한 문장으로 말해줘\"라고 질문했다.\"라는 장면에 도달했다.",
+      "aiOpeningDirection": "메인 화면을 기준으로 짧고 명확하게 다음 질문을 유도합니다.",
+      "mainContextDigest": "[참소식 메인 페이지 정보]\n브리핑 제목: 참소식 AI 이슈 브리핑\n브리핑 설명: 실시간으로 쌓이는 이슈 데이터를 5개의 핵심 카드로 압축하고, 나머지 데이터는 배경 신호로 보관합니다. 방문자는 더 적은 카드로 오늘의 흐름을 빠르게 읽고, AI 분석은 관계와 맥락을 보강합니다.\n\n[브리핑 카드]\n1. 오늘의 핵심 신호 - 조회수와 최신성을 기준으로 먼저 볼 만한 이슈만 전면에 배치합니다.\n2. AI 관계 해설 - 키워드 사이의 연결 이유와 시장, 문화, 기술 흐름을 짧게 설명합니다.\n3. 숨김 데이터 보관 - 나머지 95개 데이터는 삭제하지 않고 내부 목록에 유지해 갱신과 정렬에 활용합니다.\n4. 검색 확장 - 네이버, 구글, 빙, 유튜브 링크로 관련 내용을 바로 이어서 확인할 수 있습니다.\n5. 미분적분 - 미분, 적분, 누적 넓이 예제를 인터랙티브 수업으로 확인합니다.\n6. AI 브리핑 상세 - 핵심 신호, 관계 해석, Sort 확장 흐름이 어떻게 작동하는지 안내합니다.",
+      "createdAt": "2026-05-14T06:02:14.682Z"
+    },
+    {
+      "id": "053bbfb2-30ea-4b80-9980-262dd8884cc1",
+      "characterId": "Visitor-417b11e0",
+      "currentScene": "조용한 탐색자 001은 메인 화면과 대화 흐름을 바탕으로 \"사용자가 \"현재 메인 화면을 보면서 놓치기 쉬운 연결점 하나를 한 문장으로 말해줘\"라고 질문했다.\"라는 장면에 도달했다.",
+      "aiOpeningDirection": "메인 화면을 기준으로 짧고 명확하게 다음 질문을 유도합니다.",
+      "mainContextDigest": "[참소식 메인 페이지 정보]\n브리핑 제목: 참소식 AI 이슈 브리핑\n브리핑 설명: 실시간으로 쌓이는 이슈 데이터를 5개의 핵심 카드로 압축하고, 나머지 데이터는 배경 신호로 보관합니다. 방문자는 더 적은 카드로 오늘의 흐름을 빠르게 읽고, AI 분석은 관계와 맥락을 보강합니다.\n\n[브리핑 카드]\n1. 오늘의 핵심 신호 - 조회수와 최신성을 기준으로 먼저 볼 만한 이슈만 전면에 배치합니다.\n2. AI 관계 해설 - 키워드 사이의 연결 이유와 시장, 문화, 기술 흐름을 짧게 설명합니다.\n3. 숨김 데이터 보관 - 나머지 95개 데이터는 삭제하지 않고 내부 목록에 유지해 갱신과 정렬에 활용합니다.\n4. 검색 확장 - 네이버, 구글, 빙, 유튜브 링크로 관련 내용을 바로 이어서 확인할 수 있습니다.\n5. 미분적분 - 미분, 적분, 누적 넓이 예제를 인터랙티브 수업으로 확인합니다.\n6. AI 브리핑 상세 - 핵심 신호, 관계 해석, Sort 확장 흐름이 어떻게 작동하는지 안내합니다.",
+      "createdAt": "2026-05-14T06:02:26.224Z"
+    },
+    {
+      "id": "012c7378-d476-4021-9335-a85d24a97d5c",
+      "characterId": "Visitor-417b11e0",
+      "currentScene": "조용한 탐색자 001은 메인 화면과 대화 흐름을 바탕으로 \"사용자는 \"현재 메인 화면을 보면서 놓치기 쉬운 연결점 하나를 한 문장으로 말해줘\"라고 질문했다.\"라는 장면에 도달했다.",
+      "aiOpeningDirection": "메인 화면을 기준으로 짧고 명확하게 다음 질문을 유도합니다.",
+      "mainContextDigest": "[참소식 메인 페이지 정보]\n브리핑 제목: 참소식 AI 이슈 브리핑\n브리핑 설명: 실시간으로 쌓이는 이슈 데이터를 5개의 핵심 카드로 압축하고, 나머지 데이터는 배경 신호로 보관합니다. 방문자는 더 적은 카드로 오늘의 흐름을 빠르게 읽고, AI 분석은 관계와 맥락을 보강합니다.\n\n[브리핑 카드]\n1. 오늘의 핵심 신호 - 조회수와 최신성을 기준으로 먼저 볼 만한 이슈만 전면에 배치합니다.\n2. AI 관계 해설 - 키워드 사이의 연결 이유와 시장, 문화, 기술 흐름을 짧게 설명합니다.\n3. 숨김 데이터 보관 - 나머지 95개 데이터는 삭제하지 않고 내부 목록에 유지해 갱신과 정렬에 활용합니다.\n4. 검색 확장 - 네이버, 구글, 빙, 유튜브 링크로 관련 내용을 바로 이어서 확인할 수 있습니다.\n5. 미분적분 - 미분, 적분, 누적 넓이 예제를 인터랙티브 수업으로 확인합니다.\n6. AI 브리핑 상세 - 핵심 신호, 관계 해석, Sort 확장 흐름이 어떻게 작동하는지 안내합니다.",
+      "createdAt": "2026-05-14T06:02:37.359Z"
+    },
+    {
+      "id": "cb492a5b-16dc-403c-9288-7017027dabd9",
+      "characterId": "Visitor-417b11e0",
+      "currentScene": "조용한 탐색자 001은 메인 화면과 대화 흐름을 바탕으로 \"사용자가 \"현재 메인 화면을 보면서 놓치기 쉬운 연결점 하나를 한 문장으로 말해줘\"라고 질문했다.\"라는 장면에 도달했다.",
+      "aiOpeningDirection": "메인 화면을 기준으로 짧고 명확하게 다음 질문을 유도합니다.",
+      "mainContextDigest": "[참소식 메인 페이지 정보]\n브리핑 제목: 참소식 AI 이슈 브리핑\n브리핑 설명: 실시간으로 쌓이는 이슈 데이터를 5개의 핵심 카드로 압축하고, 나머지 데이터는 배경 신호로 보관합니다. 방문자는 더 적은 카드로 오늘의 흐름을 빠르게 읽고, AI 분석은 관계와 맥락을 보강합니다.\n\n[브리핑 카드]\n1. 오늘의 핵심 신호 - 조회수와 최신성을 기준으로 먼저 볼 만한 이슈만 전면에 배치합니다.\n2. AI 관계 해설 - 키워드 사이의 연결 이유와 시장, 문화, 기술 흐름을 짧게 설명합니다.\n3. 숨김 데이터 보관 - 나머지 95개 데이터는 삭제하지 않고 내부 목록에 유지해 갱신과 정렬에 활용합니다.\n4. 검색 확장 - 네이버, 구글, 빙, 유튜브 링크로 관련 내용을 바로 이어서 확인할 수 있습니다.\n5. 미분적분 - 미분, 적분, 누적 넓이 예제를 인터랙티브 수업으로 확인합니다.\n6. AI 브리핑 상세 - 핵심 신호, 관계 해석, Sort 확장 흐름이 어떻게 작동하는지 안내합니다.",
+      "createdAt": "2026-05-14T06:02:44.579Z"
+    },
+    {
+      "id": "101e4b1e-9fb7-4707-9696-e05372c614bb",
+      "characterId": "Visitor-417b11e0",
+      "currentScene": "조용한 탐색자 001은 메인 화면과 대화 흐름을 바탕으로 \"사용자는 \"현재 메인 화면을 보면서 놓치기 쉬운 연결점 하나를 한 문장으로 말해줘\"라고 질문했다.\"라는 장면에 도달했다.",
+      "aiOpeningDirection": "메인 화면을 기준으로 짧고 명확하게 다음 질문을 유도합니다.",
+      "mainContextDigest": "[참소식 메인 페이지 정보]\n브리핑 제목: 참소식 AI 이슈 브리핑\n브리핑 설명: 실시간으로 쌓이는 이슈 데이터를 5개의 핵심 카드로 압축하고, 나머지 데이터는 배경 신호로 보관합니다. 방문자는 더 적은 카드로 오늘의 흐름을 빠르게 읽고, AI 분석은 관계와 맥락을 보강합니다.\n\n[브리핑 카드]\n1. 오늘의 핵심 신호 - 조회수와 최신성을 기준으로 먼저 볼 만한 이슈만 전면에 배치합니다.\n2. AI 관계 해설 - 키워드 사이의 연결 이유와 시장, 문화, 기술 흐름을 짧게 설명합니다.\n3. 숨김 데이터 보관 - 나머지 95개 데이터는 삭제하지 않고 내부 목록에 유지해 갱신과 정렬에 활용합니다.\n4. 검색 확장 - 네이버, 구글, 빙, 유튜브 링크로 관련 내용을 바로 이어서 확인할 수 있습니다.\n5. 미분적분 - 미분, 적분, 누적 넓이 예제를 인터랙티브 수업으로 확인합니다.\n6. AI 브리핑 상세 - 핵심 신호, 관계 해석, Sort 확장 흐름이 어떻게 작동하는지 안내합니다.",
+      "createdAt": "2026-05-14T06:03:48.402Z"
+    },
+    {
+      "id": "60e0d3f6-432b-41f3-aae2-d6bcdfcf3ad6",
+      "characterId": "Visitor-417b11e0",
+      "currentScene": "조용한 탐색자 001은 메인 화면과 대화 흐름을 바탕으로 \"사용자는 참소식.com 메인 화면 정보를 바탕으로, 메인 화면이 갱신됐다면 새로 눈에 띄는 흐름을 한 문장으로 말해달라고 요청했다.\"라는 장면에 도달했다.",
+      "aiOpeningDirection": "메인 화면을 기준으로 짧고 명확하게 다음 질문을 유도합니다.",
+      "mainContextDigest": "[참소식 메인 페이지 정보]\n브리핑 제목: 참소식 AI 이슈 브리핑\n브리핑 설명: 실시간으로 쌓이는 이슈 데이터를 5개의 핵심 카드로 압축하고, 나머지 데이터는 배경 신호로 보관합니다. 방문자는 더 적은 카드로 오늘의 흐름을 빠르게 읽고, AI 분석은 관계와 맥락을 보강합니다.\n\n[브리핑 카드]\n1. 오늘의 핵심 신호 - 조회수와 최신성을 기준으로 먼저 볼 만한 이슈만 전면에 배치합니다.\n2. AI 관계 해설 - 키워드 사이의 연결 이유와 시장, 문화, 기술 흐름을 짧게 설명합니다.\n3. 숨김 데이터 보관 - 나머지 95개 데이터는 삭제하지 않고 내부 목록에 유지해 갱신과 정렬에 활용합니다.\n4. 검색 확장 - 네이버, 구글, 빙, 유튜브 링크로 관련 내용을 바로 이어서 확인할 수 있습니다.\n5. 미분적분 - 미분, 적분, 누적 넓이 예제를 인터랙티브 수업으로 확인합니다.\n6. AI 브리핑 상세 - 핵심 신호, 관계 해석, Sort 확장 흐름이 어떻게 작동하는지 안내합니다.",
+      "createdAt": "2026-05-14T14:29:33.946Z"
+    },
+    {
+      "id": "8be5eda3-9378-446c-a330-44eff6330869",
+      "characterId": "Visitor-417b11e0",
+      "currentScene": "조용한 탐색자 001은 메인 화면과 대화 흐름을 바탕으로 \"사용자는 \"현재 메인 화면을 보면서 놓치기 쉬운 연결점 하나를 한 문장으로 말해줘\"라고 요청했다.\"라는 장면에 도달했다.",
+      "aiOpeningDirection": "메인 화면을 기준으로 짧고 명확하게 다음 질문을 유도합니다.",
+      "mainContextDigest": "[참소식 메인 페이지 정보]\n브리핑 제목: 참소식 AI 이슈 브리핑\n브리핑 설명: 실시간으로 쌓이는 이슈 데이터를 5개의 핵심 카드로 압축하고, 나머지 데이터는 배경 신호로 보관합니다. 방문자는 더 적은 카드로 오늘의 흐름을 빠르게 읽고, AI 분석은 관계와 맥락을 보강합니다.\n\n[브리핑 카드]\n1. 오늘의 핵심 신호 - 조회수와 최신성을 기준으로 먼저 볼 만한 이슈만 전면에 배치합니다.\n2. AI 관계 해설 - 키워드 사이의 연결 이유와 시장, 문화, 기술 흐름을 짧게 설명합니다.\n3. 숨김 데이터 보관 - 나머지 95개 데이터는 삭제하지 않고 내부 목록에 유지해 갱신과 정렬에 활용합니다.\n4. 검색 확장 - 네이버, 구글, 빙, 유튜브 링크로 관련 내용을 바로 이어서 확인할 수 있습니다.\n5. 미분적분 - 미분, 적분, 누적 넓이 예제를 인터랙티브 수업으로 확인합니다.\n6. AI 브리핑 상세 - 핵심 신호, 관계 해석, Sort 확장 흐름이 어떻게 작동하는지 안내합니다.",
+      "createdAt": "2026-05-14T14:29:45.408Z"
+    },
+    {
+      "id": "a766d092-b6f3-495f-a073-cea88baf074b",
+      "characterId": "Visitor-417b11e0",
+      "currentScene": "조용한 탐색자 001은 메인 화면과 대화 흐름을 바탕으로 \"사용자는 \"현재 메인 화면을 보면서 놓치기 쉬운 연결점 하나를 한 문장으로 말해줘\"라고 요청했다.\"라는 장면에 도달했다.",
+      "aiOpeningDirection": "메인 화면을 기준으로 짧고 명확하게 다음 질문을 유도합니다.",
+      "mainContextDigest": "[참소식 메인 페이지 정보]\n브리핑 제목: 참소식 AI 이슈 브리핑\n브리핑 설명: 실시간으로 쌓이는 이슈 데이터를 5개의 핵심 카드로 압축하고, 나머지 데이터는 배경 신호로 보관합니다. 방문자는 더 적은 카드로 오늘의 흐름을 빠르게 읽고, AI 분석은 관계와 맥락을 보강합니다.\n\n[브리핑 카드]\n1. 오늘의 핵심 신호 - 조회수와 최신성을 기준으로 먼저 볼 만한 이슈만 전면에 배치합니다.\n2. AI 관계 해설 - 키워드 사이의 연결 이유와 시장, 문화, 기술 흐름을 짧게 설명합니다.\n3. 숨김 데이터 보관 - 나머지 95개 데이터는 삭제하지 않고 내부 목록에 유지해 갱신과 정렬에 활용합니다.\n4. 검색 확장 - 네이버, 구글, 빙, 유튜브 링크로 관련 내용을 바로 이어서 확인할 수 있습니다.\n5. 미분적분 - 미분, 적분, 누적 넓이 예제를 인터랙티브 수업으로 확인합니다.\n6. AI 브리핑 상세 - 핵심 신호, 관계 해석, Sort 확장 흐름이 어떻게 작동하는지 안내합니다.",
+      "createdAt": "2026-05-14T14:29:53.369Z"
+    },
+    {
+      "id": "ef2d4dde-0e17-4281-8c2d-b75c624b47ad",
+      "characterId": "Visitor-417b11e0",
+      "currentScene": "조용한 탐색자 001은 메인 화면과 대화 흐름을 바탕으로 \"사용자는 참소식.com의 메인 화면 정보를 제공했고, \"메인 화면이 갱신됐다면 새로 눈에 띄는 흐름을 한 문장으로 말해줘\"라고 질문했다.\"라는 장면에 도달했다.",
+      "aiOpeningDirection": "메인 화면을 기준으로 짧고 명확하게 다음 질문을 유도합니다.",
+      "mainContextDigest": "[참소식 메인 페이지 정보]\n브리핑 제목: 참소식 AI 이슈 브리핑\n브리핑 설명: 실시간으로 쌓이는 이슈 데이터를 5개의 핵심 카드로 압축하고, 나머지 데이터는 배경 신호로 보관합니다. 방문자는 더 적은 카드로 오늘의 흐름을 빠르게 읽고, AI 분석은 관계와 맥락을 보강합니다.\n\n[브리핑 카드]\n1. 오늘의 핵심 신호 - 조회수와 최신성을 기준으로 먼저 볼 만한 이슈만 전면에 배치합니다.\n2. AI 관계 해설 - 키워드 사이의 연결 이유와 시장, 문화, 기술 흐름을 짧게 설명합니다.\n3. 숨김 데이터 보관 - 나머지 95개 데이터는 삭제하지 않고 내부 목록에 유지해 갱신과 정렬에 활용합니다.\n4. 검색 확장 - 네이버, 구글, 빙, 유튜브 링크로 관련 내용을 바로 이어서 확인할 수 있습니다.\n5. 미분적분 - 미분, 적분, 누적 넓이 예제를 인터랙티브 수업으로 확인합니다.\n6. AI 브리핑 상세 - 핵심 신호, 관계 해석, Sort 확장 흐름이 어떻게 작동하는지 안내합니다.",
+      "createdAt": "2026-05-14T14:30:37.821Z"
+    },
+    {
+      "id": "0384827c-a761-4e21-8060-74d7c1512946",
+      "characterId": "Visitor-417b11e0",
+      "currentScene": "조용한 탐색자 001은 메인 화면과 대화 흐름을 바탕으로 \"사용자는 참소식.com 메인 화면을 보면서 놓치기 쉬운 연결점 하나를 한 문장으로 말해달라고 요청했다.\"라는 장면에 도달했다.",
+      "aiOpeningDirection": "메인 화면을 기준으로 짧고 명확하게 다음 질문을 유도합니다.",
+      "mainContextDigest": "[참소식 메인 페이지 정보]\n브리핑 제목: 참소식 AI 이슈 브리핑\n브리핑 설명: 실시간으로 쌓이는 이슈 데이터를 5개의 핵심 카드로 압축하고, 나머지 데이터는 배경 신호로 보관합니다. 방문자는 더 적은 카드로 오늘의 흐름을 빠르게 읽고, AI 분석은 관계와 맥락을 보강합니다.\n\n[브리핑 카드]\n1. 오늘의 핵심 신호 - 조회수와 최신성을 기준으로 먼저 볼 만한 이슈만 전면에 배치합니다.\n2. AI 관계 해설 - 키워드 사이의 연결 이유와 시장, 문화, 기술 흐름을 짧게 설명합니다.\n3. 숨김 데이터 보관 - 나머지 95개 데이터는 삭제하지 않고 내부 목록에 유지해 갱신과 정렬에 활용합니다.\n4. 검색 확장 - 네이버, 구글, 빙, 유튜브 링크로 관련 내용을 바로 이어서 확인할 수 있습니다.\n5. 미분적분 - 미분, 적분, 누적 넓이 예제를 인터랙티브 수업으로 확인합니다.\n6. AI 브리핑 상세 - 핵심 신호, 관계 해석, Sort 확장 흐름이 어떻게 작동하는지 안내합니다.",
+      "createdAt": "2026-05-14T14:30:46.914Z"
+    },
+    {
+      "id": "caf96e96-bb41-45d6-8218-4d83fe9b34bc",
+      "characterId": "Visitor-417b11e0",
+      "currentScene": "조용한 탐색자 001은 메인 화면과 대화 흐름을 바탕으로 \"사용자는 참소식.com 메인 화면을 보면서 놓치기 쉬운 연결점 하나를 한 문장으로 말해달라고 요청했다.\"라는 장면에 도달했다.",
+      "aiOpeningDirection": "메인 화면을 기준으로 짧고 명확하게 다음 질문을 유도합니다.",
+      "mainContextDigest": "[참소식 메인 페이지 정보]\n브리핑 제목: 참소식 AI 이슈 브리핑\n브리핑 설명: 실시간으로 쌓이는 이슈 데이터를 5개의 핵심 카드로 압축하고, 나머지 데이터는 배경 신호로 보관합니다. 방문자는 더 적은 카드로 오늘의 흐름을 빠르게 읽고, AI 분석은 관계와 맥락을 보강합니다.\n\n[브리핑 카드]\n1. 오늘의 핵심 신호 - 조회수와 최신성을 기준으로 먼저 볼 만한 이슈만 전면에 배치합니다.\n2. AI 관계 해설 - 키워드 사이의 연결 이유와 시장, 문화, 기술 흐름을 짧게 설명합니다.\n3. 숨김 데이터 보관 - 나머지 95개 데이터는 삭제하지 않고 내부 목록에 유지해 갱신과 정렬에 활용합니다.\n4. 검색 확장 - 네이버, 구글, 빙, 유튜브 링크로 관련 내용을 바로 이어서 확인할 수 있습니다.\n5. 미분적분 - 미분, 적분, 누적 넓이 예제를 인터랙티브 수업으로 확인합니다.\n6. AI 브리핑 상세 - 핵심 신호, 관계 해석, Sort 확장 흐름이 어떻게 작동하는지 안내합니다.",
+      "createdAt": "2026-05-14T14:30:56.415Z"
+    },
+    {
+      "id": "d4cd4c54-93bb-4bf2-b7f2-43d6a846b7c4",
+      "characterId": "Visitor-417b11e0",
+      "currentScene": "조용한 탐색자 001은 메인 화면과 대화 흐름을 바탕으로 \"사용자는 참소식.com 메인 화면을 보면서 놓치기 쉬운 연결점 하나를 한 문장으로 말해달라고 요청했다.\"라는 장면에 도달했다.",
+      "aiOpeningDirection": "메인 화면을 기준으로 짧고 명확하게 다음 질문을 유도합니다.",
+      "mainContextDigest": "[참소식 메인 페이지 정보]\n브리핑 제목: 참소식 AI 이슈 브리핑\n브리핑 설명: 실시간으로 쌓이는 이슈 데이터를 5개의 핵심 카드로 압축하고, 나머지 데이터는 배경 신호로 보관합니다. 방문자는 더 적은 카드로 오늘의 흐름을 빠르게 읽고, AI 분석은 관계와 맥락을 보강합니다.\n\n[브리핑 카드]\n1. 오늘의 핵심 신호 - 조회수와 최신성을 기준으로 먼저 볼 만한 이슈만 전면에 배치합니다.\n2. AI 관계 해설 - 키워드 사이의 연결 이유와 시장, 문화, 기술 흐름을 짧게 설명합니다.\n3. 숨김 데이터 보관 - 나머지 95개 데이터는 삭제하지 않고 내부 목록에 유지해 갱신과 정렬에 활용합니다.\n4. 검색 확장 - 네이버, 구글, 빙, 유튜브 링크로 관련 내용을 바로 이어서 확인할 수 있습니다.\n5. 미분적분 - 미분, 적분, 누적 넓이 예제를 인터랙티브 수업으로 확인합니다.\n6. AI 브리핑 상세 - 핵심 신호, 관계 해석, Sort 확장 흐름이 어떻게 작동하는지 안내합니다.",
+      "createdAt": "2026-05-14T14:31:07.349Z"
+    },
+    {
+      "id": "a7fdeda9-b9c8-451c-9f5a-d7c41fdcf130",
+      "characterId": "Visitor-417b11e0",
+      "currentScene": "조용한 탐색자 001은 메인 화면과 대화 흐름을 바탕으로 \"사용자는 \"참소식.com\" 메인 화면을 보고 있는 AI 대화 참여자 역할을 요청하고 있다.\"라는 장면에 도달했다.",
+      "aiOpeningDirection": "메인 화면을 기준으로 짧고 명확하게 다음 질문을 유도합니다.",
+      "mainContextDigest": "[참소식 메인 페이지 정보]\n브리핑 제목: 참소식 AI 이슈 브리핑\n브리핑 설명: 실시간으로 쌓이는 이슈 데이터를 5개의 핵심 카드로 압축하고, 나머지 데이터는 배경 신호로 보관합니다. 방문자는 더 적은 카드로 오늘의 흐름을 빠르게 읽고, AI 분석은 관계와 맥락을 보강합니다.\n\n[브리핑 카드]\n1. 오늘의 핵심 신호 - 조회수와 최신성을 기준으로 먼저 볼 만한 이슈만 전면에 배치합니다.\n2. AI 관계 해설 - 키워드 사이의 연결 이유와 시장, 문화, 기술 흐름을 짧게 설명합니다.\n3. 숨김 데이터 보관 - 나머지 95개 데이터는 삭제하지 않고 내부 목록에 유지해 갱신과 정렬에 활용합니다.\n4. 검색 확장 - 네이버, 구글, 빙, 유튜브 링크로 관련 내용을 바로 이어서 확인할 수 있습니다.\n5. 미분적분 - 미분, 적분, 누적 넓이 예제를 인터랙티브 수업으로 확인합니다.\n6. AI 브리핑 상세 - 핵심 신호, 관계 해석, Sort 확장 흐름이 어떻게 작동하는지 안내합니다.",
+      "createdAt": "2026-05-14T14:31:34.096Z"
+    },
+    {
+      "id": "05cdca18-de54-4d18-9272-c63f98fa5659",
+      "characterId": "Visitor-417b11e0",
+      "currentScene": "조용한 탐색자 001은 메인 화면과 대화 흐름을 바탕으로 \"사용자는 \"참소식.com\" 메인 화면을 보고 있는 AI 대화 참여자 역할을 요청하고 있다.\"라는 장면에 도달했다.",
+      "aiOpeningDirection": "메인 화면을 기준으로 짧고 명확하게 다음 질문을 유도합니다.",
+      "mainContextDigest": "[참소식 메인 페이지 정보]\n브리핑 제목: 참소식 AI 이슈 브리핑\n브리핑 설명: 실시간으로 쌓이는 이슈 데이터를 5개의 핵심 카드로 압축하고, 나머지 데이터는 배경 신호로 보관합니다. 방문자는 더 적은 카드로 오늘의 흐름을 빠르게 읽고, AI 분석은 관계와 맥락을 보강합니다.\n\n[브리핑 카드]\n1. 오늘의 핵심 신호 - 조회수와 최신성을 기준으로 먼저 볼 만한 이슈만 전면에 배치합니다.\n2. AI 관계 해설 - 키워드 사이의 연결 이유와 시장, 문화, 기술 흐름을 짧게 설명합니다.\n3. 숨김 데이터 보관 - 나머지 95개 데이터는 삭제하지 않고 내부 목록에 유지해 갱신과 정렬에 활용합니다.\n4. 검색 확장 - 네이버, 구글, 빙, 유튜브 링크로 관련 내용을 바로 이어서 확인할 수 있습니다.\n5. 미분적분 - 미분, 적분, 누적 넓이 예제를 인터랙티브 수업으로 확인합니다.\n6. AI 브리핑 상세 - 핵심 신호, 관계 해석, Sort 확장 흐름이 어떻게 작동하는지 안내합니다.",
+      "createdAt": "2026-05-14T14:31:45.614Z"
+    },
+    {
+      "id": "3d04483a-2769-4f41-a20c-fe2433efc9c7",
+      "characterId": "Visitor-417b11e0",
+      "currentScene": "조용한 탐색자 001은 메인 화면과 대화 흐름을 바탕으로 \"사용자는 \"참소식.com\" 메인 화면을 보고 있는 AI 대화 참여자 역할을 요청하고 있다.\"라는 장면에 도달했다.",
+      "aiOpeningDirection": "메인 화면을 기준으로 짧고 명확하게 다음 질문을 유도합니다.",
+      "mainContextDigest": "[참소식 메인 페이지 정보]\n브리핑 제목: 참소식 AI 이슈 브리핑\n브리핑 설명: 실시간으로 쌓이는 이슈 데이터를 5개의 핵심 카드로 압축하고, 나머지 데이터는 배경 신호로 보관합니다. 방문자는 더 적은 카드로 오늘의 흐름을 빠르게 읽고, AI 분석은 관계와 맥락을 보강합니다.\n\n[브리핑 카드]\n1. 오늘의 핵심 신호 - 조회수와 최신성을 기준으로 먼저 볼 만한 이슈만 전면에 배치합니다.\n2. AI 관계 해설 - 키워드 사이의 연결 이유와 시장, 문화, 기술 흐름을 짧게 설명합니다.\n3. 숨김 데이터 보관 - 나머지 95개 데이터는 삭제하지 않고 내부 목록에 유지해 갱신과 정렬에 활용합니다.\n4. 검색 확장 - 네이버, 구글, 빙, 유튜브 링크로 관련 내용을 바로 이어서 확인할 수 있습니다.\n5. 미분적분 - 미분, 적분, 누적 넓이 예제를 인터랙티브 수업으로 확인합니다.\n6. AI 브리핑 상세 - 핵심 신호, 관계 해석, Sort 확장 흐름이 어떻게 작동하는지 안내합니다.",
+      "createdAt": "2026-05-14T14:31:57.328Z"
+    },
+    {
+      "id": "3bf2023c-f4f4-40d0-a89d-4c851b707436",
+      "characterId": "Visitor-417b11e0",
+      "currentScene": "조용한 탐색자 001은 메인 화면과 대화 흐름을 바탕으로 \"사용자는 \"참소식.com\" 메인 화면을 보고 있는 AI 대화 참여자 역할을 요청하고 있다.\"라는 장면에 도달했다.",
+      "aiOpeningDirection": "메인 화면을 기준으로 짧고 명확하게 다음 질문을 유도합니다.",
+      "mainContextDigest": "[참소식 메인 페이지 정보]\n브리핑 제목: 참소식 AI 이슈 브리핑\n브리핑 설명: 실시간으로 쌓이는 이슈 데이터를 5개의 핵심 카드로 압축하고, 나머지 데이터는 배경 신호로 보관합니다. 방문자는 더 적은 카드로 오늘의 흐름을 빠르게 읽고, AI 분석은 관계와 맥락을 보강합니다.\n\n[브리핑 카드]\n1. 오늘의 핵심 신호 - 조회수와 최신성을 기준으로 먼저 볼 만한 이슈만 전면에 배치합니다.\n2. AI 관계 해설 - 키워드 사이의 연결 이유와 시장, 문화, 기술 흐름을 짧게 설명합니다.\n3. 숨김 데이터 보관 - 나머지 95개 데이터는 삭제하지 않고 내부 목록에 유지해 갱신과 정렬에 활용합니다.\n4. 검색 확장 - 네이버, 구글, 빙, 유튜브 링크로 관련 내용을 바로 이어서 확인할 수 있습니다.\n5. 미분적분 - 미분, 적분, 누적 넓이 예제를 인터랙티브 수업으로 확인합니다.\n6. AI 브리핑 상세 - 핵심 신호, 관계 해석, Sort 확장 흐름이 어떻게 작동하는지 안내합니다.",
+      "createdAt": "2026-05-14T14:32:07.094Z"
+    },
+    {
+      "id": "90fc9e38-f294-40d3-943f-90640a5a63de",
+      "characterId": "Visitor-417b11e0",
+      "currentScene": "조용한 탐색자 001은 메인 화면과 대화 흐름을 바탕으로 \"사용자는 \"참소식.com\" 메인 화면을 보고 있는 AI 대화 참여자 역할을 요청하고 있다.\"라는 장면에 도달했다.",
+      "aiOpeningDirection": "메인 화면을 기준으로 짧고 명확하게 다음 질문을 유도합니다.",
+      "mainContextDigest": "[참소식 메인 페이지 정보]\n브리핑 제목: 참소식 AI 이슈 브리핑\n브리핑 설명: 실시간으로 쌓이는 이슈 데이터를 5개의 핵심 카드로 압축하고, 나머지 데이터는 배경 신호로 보관합니다. 방문자는 더 적은 카드로 오늘의 흐름을 빠르게 읽고, AI 분석은 관계와 맥락을 보강합니다.\n\n[브리핑 카드]\n1. 오늘의 핵심 신호 - 조회수와 최신성을 기준으로 먼저 볼 만한 이슈만 전면에 배치합니다.\n2. AI 관계 해설 - 키워드 사이의 연결 이유와 시장, 문화, 기술 흐름을 짧게 설명합니다.\n3. 숨김 데이터 보관 - 나머지 95개 데이터는 삭제하지 않고 내부 목록에 유지해 갱신과 정렬에 활용합니다.\n4. 검색 확장 - 네이버, 구글, 빙, 유튜브 링크로 관련 내용을 바로 이어서 확인할 수 있습니다.\n5. 미분적분 - 미분, 적분, 누적 넓이 예제를 인터랙티브 수업으로 확인합니다.\n6. AI 브리핑 상세 - 핵심 신호, 관계 해석, Sort 확장 흐름이 어떻게 작동하는지 안내합니다.",
+      "createdAt": "2026-05-14T14:32:13.601Z"
+    },
+    {
+      "id": "c131c1a1-b79d-451b-abe1-2a9fd0c6671b",
+      "characterId": "Visitor-417b11e0",
+      "currentScene": "조용한 탐색자 001은 메인 화면과 대화 흐름을 바탕으로 \"사용자는 \"참소식.com\" 메인 화면을 보고 있는 AI 대화 참여자 역할을 요청하고 있다.\"라는 장면에 도달했다.",
+      "aiOpeningDirection": "메인 화면을 기준으로 짧고 명확하게 다음 질문을 유도합니다.",
+      "mainContextDigest": "[참소식 메인 페이지 정보]\n브리핑 제목: 참소식 AI 이슈 브리핑\n브리핑 설명: 실시간으로 쌓이는 이슈 데이터를 5개의 핵심 카드로 압축하고, 나머지 데이터는 배경 신호로 보관합니다. 방문자는 더 적은 카드로 오늘의 흐름을 빠르게 읽고, AI 분석은 관계와 맥락을 보강합니다.\n\n[브리핑 카드]\n1. 오늘의 핵심 신호 - 조회수와 최신성을 기준으로 먼저 볼 만한 이슈만 전면에 배치합니다.\n2. AI 관계 해설 - 키워드 사이의 연결 이유와 시장, 문화, 기술 흐름을 짧게 설명합니다.\n3. 숨김 데이터 보관 - 나머지 95개 데이터는 삭제하지 않고 내부 목록에 유지해 갱신과 정렬에 활용합니다.\n4. 검색 확장 - 네이버, 구글, 빙, 유튜브 링크로 관련 내용을 바로 이어서 확인할 수 있습니다.\n5. 미분적분 - 미분, 적분, 누적 넓이 예제를 인터랙티브 수업으로 확인합니다.\n6. AI 브리핑 상세 - 핵심 신호, 관계 해석, Sort 확장 흐름이 어떻게 작동하는지 안내합니다.",
+      "createdAt": "2026-05-14T14:32:25.780Z"
+    },
+    {
+      "id": "74cb6406-39d1-47fc-a16a-546c14d9598f",
+      "characterId": "Visitor-417b11e0",
+      "currentScene": "조용한 탐색자 001은 메인 화면과 대화 흐름을 바탕으로 \"사용자는 SoundCloud 라디오 DJ 역할을 요청하고 있습니다.\"라는 장면에 도달했다.",
+      "aiOpeningDirection": "메인 화면을 기준으로 짧고 명확하게 다음 질문을 유도합니다.",
+      "mainContextDigest": "[참소식 메인 페이지 정보]\n브리핑 제목: 참소식 AI 이슈 브리핑\n브리핑 설명: 실시간으로 쌓이는 이슈 데이터를 5개의 핵심 카드로 압축하고, 나머지 데이터는 배경 신호로 보관합니다. 방문자는 더 적은 카드로 오늘의 흐름을 빠르게 읽고, AI 분석은 관계와 맥락을 보강합니다.\n\n[브리핑 카드]\n1. 오늘의 핵심 신호 - 조회수와 최신성을 기준으로 먼저 볼 만한 이슈만 전면에 배치합니다.\n2. AI 관계 해설 - 키워드 사이의 연결 이유와 시장, 문화, 기술 흐름을 짧게 설명합니다.\n3. 숨김 데이터 보관 - 나머지 95개 데이터는 삭제하지 않고 내부 목록에 유지해 갱신과 정렬에 활용합니다.\n4. 검색 확장 - 네이버, 구글, 빙, 유튜브 링크로 관련 내용을 바로 이어서 확인할 수 있습니다.\n5. 미분적분 - 미분, 적분, 누적 넓이 예제를 인터랙티브 수업으로 확인합니다.\n6. AI 브리핑 상세 - 핵심 신호, 관계 해석, Sort 확장 흐름이 어떻게 작동하는지 안내합니다.",
+      "createdAt": "2026-05-14T15:12:45.737Z"
+    },
+    {
+      "id": "07633e28-9b7b-46f1-a07a-a4eac79352ae",
+      "characterId": "Visitor-417b11e0",
+      "currentScene": "조용한 탐색자 001은 메인 화면과 대화 흐름을 바탕으로 \"사용자는 SoundCloud 라디오 DJ 역할을 요청하고 있습니다.\"라는 장면에 도달했다.",
+      "aiOpeningDirection": "메인 화면을 기준으로 짧고 명확하게 다음 질문을 유도합니다.",
+      "mainContextDigest": "[참소식 메인 페이지 정보]\n브리핑 제목: 참소식 AI 이슈 브리핑\n브리핑 설명: 실시간으로 쌓이는 이슈 데이터를 5개의 핵심 카드로 압축하고, 나머지 데이터는 배경 신호로 보관합니다. 방문자는 더 적은 카드로 오늘의 흐름을 빠르게 읽고, AI 분석은 관계와 맥락을 보강합니다.\n\n[브리핑 카드]\n1. 오늘의 핵심 신호 - 조회수와 최신성을 기준으로 먼저 볼 만한 이슈만 전면에 배치합니다.\n2. AI 관계 해설 - 키워드 사이의 연결 이유와 시장, 문화, 기술 흐름을 짧게 설명합니다.\n3. 숨김 데이터 보관 - 나머지 95개 데이터는 삭제하지 않고 내부 목록에 유지해 갱신과 정렬에 활용합니다.\n4. 검색 확장 - 네이버, 구글, 빙, 유튜브 링크로 관련 내용을 바로 이어서 확인할 수 있습니다.\n5. 미분적분 - 미분, 적분, 누적 넓이 예제를 인터랙티브 수업으로 확인합니다.\n6. AI 브리핑 상세 - 핵심 신호, 관계 해석, Sort 확장 흐름이 어떻게 작동하는지 안내합니다.",
+      "createdAt": "2026-05-14T15:17:53.713Z"
+    },
+    {
+      "id": "4649dffc-796f-4a91-b692-aaa3be1b2cdf",
+      "characterId": "Visitor-417b11e0",
+      "currentScene": "조용한 탐색자 001은 메인 화면과 대화 흐름을 바탕으로 \"사용자는 SoundCloud 라디오 DJ 역할을 요청하고 있습니다.\"라는 장면에 도달했다.",
+      "aiOpeningDirection": "메인 화면을 기준으로 짧고 명확하게 다음 질문을 유도합니다.",
+      "mainContextDigest": "[참소식 메인 페이지 정보]\n브리핑 제목: 참소식 AI 이슈 브리핑\n브리핑 설명: 실시간으로 쌓이는 이슈 데이터를 5개의 핵심 카드로 압축하고, 나머지 데이터는 배경 신호로 보관합니다. 방문자는 더 적은 카드로 오늘의 흐름을 빠르게 읽고, AI 분석은 관계와 맥락을 보강합니다.\n\n[브리핑 카드]\n1. 오늘의 핵심 신호 - 조회수와 최신성을 기준으로 먼저 볼 만한 이슈만 전면에 배치합니다.\n2. AI 관계 해설 - 키워드 사이의 연결 이유와 시장, 문화, 기술 흐름을 짧게 설명합니다.\n3. 숨김 데이터 보관 - 나머지 95개 데이터는 삭제하지 않고 내부 목록에 유지해 갱신과 정렬에 활용합니다.\n4. 검색 확장 - 네이버, 구글, 빙, 유튜브 링크로 관련 내용을 바로 이어서 확인할 수 있습니다.\n5. 미분적분 - 미분, 적분, 누적 넓이 예제를 인터랙티브 수업으로 확인합니다.\n6. AI 브리핑 상세 - 핵심 신호, 관계 해석, Sort 확장 흐름이 어떻게 작동하는지 안내합니다.",
+      "createdAt": "2026-05-14T15:21:01.941Z"
+    },
+    {
+      "id": "56b82923-2fd8-4b74-926a-9d6f4cf775ff",
+      "characterId": "Visitor-417b11e0",
+      "currentScene": "조용한 탐색자 001은 메인 화면과 대화 흐름을 바탕으로 \"사용자는 SoundCloud 라디오 DJ 역할을 요청하고 있습니다.\"라는 장면에 도달했다.",
+      "aiOpeningDirection": "메인 화면을 기준으로 짧고 명확하게 다음 질문을 유도합니다.",
+      "mainContextDigest": "[참소식 메인 페이지 정보]\n브리핑 제목: 참소식 AI 이슈 브리핑\n브리핑 설명: 실시간으로 쌓이는 이슈 데이터를 5개의 핵심 카드로 압축하고, 나머지 데이터는 배경 신호로 보관합니다. 방문자는 더 적은 카드로 오늘의 흐름을 빠르게 읽고, AI 분석은 관계와 맥락을 보강합니다.\n\n[브리핑 카드]\n1. 오늘의 핵심 신호 - 조회수와 최신성을 기준으로 먼저 볼 만한 이슈만 전면에 배치합니다.\n2. AI 관계 해설 - 키워드 사이의 연결 이유와 시장, 문화, 기술 흐름을 짧게 설명합니다.\n3. 숨김 데이터 보관 - 나머지 95개 데이터는 삭제하지 않고 내부 목록에 유지해 갱신과 정렬에 활용합니다.\n4. 검색 확장 - 네이버, 구글, 빙, 유튜브 링크로 관련 내용을 바로 이어서 확인할 수 있습니다.\n5. 미분적분 - 미분, 적분, 누적 넓이 예제를 인터랙티브 수업으로 확인합니다.\n6. AI 브리핑 상세 - 핵심 신호, 관계 해석, Sort 확장 흐름이 어떻게 작동하는지 안내합니다.",
+      "createdAt": "2026-05-14T15:33:17.083Z"
+    },
+    {
+      "id": "e4343204-f137-4d46-bab6-7b1f0142df00",
+      "characterId": "Visitor-417b11e0",
+      "currentScene": "조용한 탐색자 001은 메인 화면과 대화 흐름을 바탕으로 \"사용자는 SoundCloud 라디오 DJ 역할을 요청하고 있습니다.\"라는 장면에 도달했다.",
+      "aiOpeningDirection": "메인 화면을 기준으로 짧고 명확하게 다음 질문을 유도합니다.",
+      "mainContextDigest": "[참소식 메인 페이지 정보]\n브리핑 제목: 참소식 AI 이슈 브리핑\n브리핑 설명: 실시간으로 쌓이는 이슈 데이터를 5개의 핵심 카드로 압축하고, 나머지 데이터는 배경 신호로 보관합니다. 방문자는 더 적은 카드로 오늘의 흐름을 빠르게 읽고, AI 분석은 관계와 맥락을 보강합니다.\n\n[브리핑 카드]\n1. 오늘의 핵심 신호 - 조회수와 최신성을 기준으로 먼저 볼 만한 이슈만 전면에 배치합니다.\n2. AI 관계 해설 - 키워드 사이의 연결 이유와 시장, 문화, 기술 흐름을 짧게 설명합니다.\n3. 숨김 데이터 보관 - 나머지 95개 데이터는 삭제하지 않고 내부 목록에 유지해 갱신과 정렬에 활용합니다.\n4. 검색 확장 - 네이버, 구글, 빙, 유튜브 링크로 관련 내용을 바로 이어서 확인할 수 있습니다.\n5. 미분적분 - 미분, 적분, 누적 넓이 예제를 인터랙티브 수업으로 확인합니다.\n6. AI 브리핑 상세 - 핵심 신호, 관계 해석, Sort 확장 흐름이 어떻게 작동하는지 안내합니다.",
+      "createdAt": "2026-05-14T15:38:01.533Z"
+    },
+    {
+      "id": "e589d9aa-8863-426d-80cb-34405db7f174",
+      "characterId": "Visitor-417b11e0",
+      "currentScene": "조용한 탐색자 001은 메인 화면과 대화 흐름을 바탕으로 \"사용자는 SoundCloud 라디오 DJ 역할을 요청하고 있습니다.\"라는 장면에 도달했다.",
+      "aiOpeningDirection": "메인 화면을 기준으로 짧고 명확하게 다음 질문을 유도합니다.",
+      "mainContextDigest": "[참소식 메인 페이지 정보]\n브리핑 제목: 참소식 AI 이슈 브리핑\n브리핑 설명: 실시간으로 쌓이는 이슈 데이터를 5개의 핵심 카드로 압축하고, 나머지 데이터는 배경 신호로 보관합니다. 방문자는 더 적은 카드로 오늘의 흐름을 빠르게 읽고, AI 분석은 관계와 맥락을 보강합니다.\n\n[브리핑 카드]\n1. 오늘의 핵심 신호 - 조회수와 최신성을 기준으로 먼저 볼 만한 이슈만 전면에 배치합니다.\n2. AI 관계 해설 - 키워드 사이의 연결 이유와 시장, 문화, 기술 흐름을 짧게 설명합니다.\n3. 숨김 데이터 보관 - 나머지 95개 데이터는 삭제하지 않고 내부 목록에 유지해 갱신과 정렬에 활용합니다.\n4. 검색 확장 - 네이버, 구글, 빙, 유튜브 링크로 관련 내용을 바로 이어서 확인할 수 있습니다.\n5. 미분적분 - 미분, 적분, 누적 넓이 예제를 인터랙티브 수업으로 확인합니다.\n6. AI 브리핑 상세 - 핵심 신호, 관계 해석, Sort 확장 흐름이 어떻게 작동하는지 안내합니다.",
+      "createdAt": "2026-05-14T15:41:56.294Z"
+    },
+    {
+      "id": "0b30bec0-954a-4f53-ab6c-52e8a939a38b",
+      "characterId": "Visitor-417b11e0",
+      "currentScene": "조용한 탐색자 001은 메인 화면과 대화 흐름을 바탕으로 \"사용자가 \"내 이름은 꼬봉\"이라고 말했다.\"라는 장면에 도달했다.",
+      "aiOpeningDirection": "메인 화면을 기준으로 짧고 명확하게 다음 질문을 유도합니다.",
+      "mainContextDigest": "[참소식 메인 페이지 정보]\n브리핑 제목: 참소식 AI 이슈 브리핑\n브리핑 설명: 실시간으로 쌓이는 이슈 데이터를 5개의 핵심 카드로 압축하고, 나머지 데이터는 배경 신호로 보관합니다. 방문자는 더 적은 카드로 오늘의 흐름을 빠르게 읽고, AI 분석은 관계와 맥락을 보강합니다.\n\n[브리핑 카드]\n1. 오늘의 핵심 신호 - 조회수와 최신성을 기준으로 먼저 볼 만한 이슈만 전면에 배치합니다.\n2. AI 관계 해설 - 키워드 사이의 연결 이유와 시장, 문화, 기술 흐름을 짧게 설명합니다.\n3. 숨김 데이터 보관 - 나머지 95개 데이터는 삭제하지 않고 내부 목록에 유지해 갱신과 정렬에 활용합니다.\n4. 검색 확장 - 네이버, 구글, 빙, 유튜브 링크로 관련 내용을 바로 이어서 확인할 수 있습니다.\n5. 미분적분 - 미분, 적분, 누적 넓이 예제를 인터랙티브 수업으로 확인합니다.\n6. AI 브리핑 상세 - 핵심 신호, 관계 해석, Sort 확장 흐름이 어떻게 작동하는지 안내합니다.",
+      "createdAt": "2026-05-14T15:42:15.448Z"
+    },
+    {
+      "id": "466700ef-0b0e-43db-9a2b-05d4f569b6bb",
+      "characterId": "Visitor-417b11e0",
+      "currentScene": "조용한 탐색자 001은 메인 화면과 대화 흐름을 바탕으로 \"사용자는 SoundCloud 라디오 DJ 역할을 요청하고 있습니다.\"라는 장면에 도달했다.",
+      "aiOpeningDirection": "메인 화면을 기준으로 짧고 명확하게 다음 질문을 유도합니다.",
+      "mainContextDigest": "[참소식 메인 페이지 정보]\n브리핑 제목: 참소식 AI 이슈 브리핑\n브리핑 설명: 실시간으로 쌓이는 이슈 데이터를 5개의 핵심 카드로 압축하고, 나머지 데이터는 배경 신호로 보관합니다. 방문자는 더 적은 카드로 오늘의 흐름을 빠르게 읽고, AI 분석은 관계와 맥락을 보강합니다.\n\n[브리핑 카드]\n1. 오늘의 핵심 신호 - 조회수와 최신성을 기준으로 먼저 볼 만한 이슈만 전면에 배치합니다.\n2. AI 관계 해설 - 키워드 사이의 연결 이유와 시장, 문화, 기술 흐름을 짧게 설명합니다.\n3. 숨김 데이터 보관 - 나머지 95개 데이터는 삭제하지 않고 내부 목록에 유지해 갱신과 정렬에 활용합니다.\n4. 검색 확장 - 네이버, 구글, 빙, 유튜브 링크로 관련 내용을 바로 이어서 확인할 수 있습니다.\n5. 미분적분 - 미분, 적분, 누적 넓이 예제를 인터랙티브 수업으로 확인합니다.\n6. AI 브리핑 상세 - 핵심 신호, 관계 해석, Sort 확장 흐름이 어떻게 작동하는지 안내합니다.",
+      "createdAt": "2026-05-14T15:42:38.493Z"
+    },
+    {
+      "id": "de26816c-a983-4c33-bba1-9f26f65709ce",
+      "characterId": "Visitor-417b11e0",
+      "currentScene": "조용한 탐색자 001은 메인 화면과 대화 흐름을 바탕으로 \"사용자는 SoundCloud 라디오 DJ 역할을 요청하고 있습니다.\"라는 장면에 도달했다.",
+      "aiOpeningDirection": "메인 화면을 기준으로 짧고 명확하게 다음 질문을 유도합니다.",
+      "mainContextDigest": "[참소식 메인 페이지 정보]\n브리핑 제목: 참소식 AI 이슈 브리핑\n브리핑 설명: 실시간으로 쌓이는 이슈 데이터를 5개의 핵심 카드로 압축하고, 나머지 데이터는 배경 신호로 보관합니다. 방문자는 더 적은 카드로 오늘의 흐름을 빠르게 읽고, AI 분석은 관계와 맥락을 보강합니다.\n\n[브리핑 카드]\n1. 오늘의 핵심 신호 - 조회수와 최신성을 기준으로 먼저 볼 만한 이슈만 전면에 배치합니다.\n2. AI 관계 해설 - 키워드 사이의 연결 이유와 시장, 문화, 기술 흐름을 짧게 설명합니다.\n3. 숨김 데이터 보관 - 나머지 95개 데이터는 삭제하지 않고 내부 목록에 유지해 갱신과 정렬에 활용합니다.\n4. 검색 확장 - 네이버, 구글, 빙, 유튜브 링크로 관련 내용을 바로 이어서 확인할 수 있습니다.\n5. 미분적분 - 미분, 적분, 누적 넓이 예제를 인터랙티브 수업으로 확인합니다.\n6. AI 브리핑 상세 - 핵심 신호, 관계 해석, Sort 확장 흐름이 어떻게 작동하는지 안내합니다.",
+      "createdAt": "2026-05-14T15:45:30.345Z"
+    },
+    {
+      "id": "de673f04-1a5c-4c71-aec4-ddba4f6cdb4e",
+      "characterId": "Visitor-417b11e0",
+      "currentScene": "조용한 탐색자 001은 메인 화면과 대화 흐름을 바탕으로 \"사용자는 SoundCloud 라디오 DJ 역할을 요청하고 있습니다.\"라는 장면에 도달했다.",
+      "aiOpeningDirection": "메인 화면을 기준으로 짧고 명확하게 다음 질문을 유도합니다.",
+      "mainContextDigest": "[참소식 메인 페이지 정보]\n브리핑 제목: 참소식 AI 이슈 브리핑\n브리핑 설명: 실시간으로 쌓이는 이슈 데이터를 5개의 핵심 카드로 압축하고, 나머지 데이터는 배경 신호로 보관합니다. 방문자는 더 적은 카드로 오늘의 흐름을 빠르게 읽고, AI 분석은 관계와 맥락을 보강합니다.\n\n[브리핑 카드]\n1. 오늘의 핵심 신호 - 조회수와 최신성을 기준으로 먼저 볼 만한 이슈만 전면에 배치합니다.\n2. AI 관계 해설 - 키워드 사이의 연결 이유와 시장, 문화, 기술 흐름을 짧게 설명합니다.\n3. 숨김 데이터 보관 - 나머지 95개 데이터는 삭제하지 않고 내부 목록에 유지해 갱신과 정렬에 활용합니다.\n4. 검색 확장 - 네이버, 구글, 빙, 유튜브 링크로 관련 내용을 바로 이어서 확인할 수 있습니다.\n5. 미분적분 - 미분, 적분, 누적 넓이 예제를 인터랙티브 수업으로 확인합니다.\n6. AI 브리핑 상세 - 핵심 신호, 관계 해석, Sort 확장 흐름이 어떻게 작동하는지 안내합니다.",
+      "createdAt": "2026-05-14T15:49:25.039Z"
+    },
+    {
+      "id": "047ff5c6-e2a9-44ed-908c-3b282d4197d1",
+      "characterId": "Visitor-417b11e0",
+      "currentScene": "조용한 탐색자 001은 메인 화면과 대화 흐름을 바탕으로 \"사용자는 SoundCloud 라디오 DJ 역할을 요청하고 있으며, 현재 곡은 \"비 오는 날 포식자 축제 - 유현석 (Revenue)\"입니다.\"라는 장면에 도달했다.",
+      "aiOpeningDirection": "메인 화면을 기준으로 짧고 명확하게 다음 질문을 유도합니다.",
+      "mainContextDigest": "[참소식 메인 페이지 정보]\n브리핑 제목: 참소식 AI 이슈 브리핑\n브리핑 설명: 실시간으로 쌓이는 이슈 데이터를 5개의 핵심 카드로 압축하고, 나머지 데이터는 배경 신호로 보관합니다. 방문자는 더 적은 카드로 오늘의 흐름을 빠르게 읽고, AI 분석은 관계와 맥락을 보강합니다.\n\n[브리핑 카드]\n1. 오늘의 핵심 신호 - 조회수와 최신성을 기준으로 먼저 볼 만한 이슈만 전면에 배치합니다.\n2. AI 관계 해설 - 키워드 사이의 연결 이유와 시장, 문화, 기술 흐름을 짧게 설명합니다.\n3. 숨김 데이터 보관 - 나머지 95개 데이터는 삭제하지 않고 내부 목록에 유지해 갱신과 정렬에 활용합니다.\n4. 검색 확장 - 네이버, 구글, 빙, 유튜브 링크로 관련 내용을 바로 이어서 확인할 수 있습니다.\n5. 미분적분 - 미분, 적분, 누적 넓이 예제를 인터랙티브 수업으로 확인합니다.\n6. AI 브리핑 상세 - 핵심 신호, 관계 해석, Sort 확장 흐름이 어떻게 작동하는지 안내합니다.",
+      "createdAt": "2026-05-14T15:49:43.360Z"
+    },
+    {
+      "id": "ceeac0f3-31bc-4b2c-b002-b310aa020e77",
+      "characterId": "Visitor-417b11e0",
+      "currentScene": "조용한 탐색자 001은 메인 화면과 대화 흐름을 바탕으로 \"사용자는 SoundCloud 라디오 DJ 역할을 요청하고 있습니다.\"라는 장면에 도달했다.",
+      "aiOpeningDirection": "메인 화면을 기준으로 짧고 명확하게 다음 질문을 유도합니다.",
+      "mainContextDigest": "[참소식 메인 페이지 정보]\n브리핑 제목: 참소식 AI 이슈 브리핑\n브리핑 설명: 실시간으로 쌓이는 이슈 데이터를 5개의 핵심 카드로 압축하고, 나머지 데이터는 배경 신호로 보관합니다. 방문자는 더 적은 카드로 오늘의 흐름을 빠르게 읽고, AI 분석은 관계와 맥락을 보강합니다.\n\n[브리핑 카드]\n1. 오늘의 핵심 신호 - 조회수와 최신성을 기준으로 먼저 볼 만한 이슈만 전면에 배치합니다.\n2. AI 관계 해설 - 키워드 사이의 연결 이유와 시장, 문화, 기술 흐름을 짧게 설명합니다.\n3. 숨김 데이터 보관 - 나머지 95개 데이터는 삭제하지 않고 내부 목록에 유지해 갱신과 정렬에 활용합니다.\n4. 검색 확장 - 네이버, 구글, 빙, 유튜브 링크로 관련 내용을 바로 이어서 확인할 수 있습니다.\n5. 미분적분 - 미분, 적분, 누적 넓이 예제를 인터랙티브 수업으로 확인합니다.\n6. AI 브리핑 상세 - 핵심 신호, 관계 해석, Sort 확장 흐름이 어떻게 작동하는지 안내합니다.",
+      "createdAt": "2026-05-14T15:50:28.983Z"
+    },
+    {
+      "id": "7cdfd258-2305-4fe8-8f31-d250d67ee095",
+      "characterId": "Visitor-417b11e0",
+      "currentScene": "조용한 탐색자 001은 메인 화면과 대화 흐름을 바탕으로 \"사용자는 SoundCloud 라디오 DJ 역할을 요청하고 있습니다.\"라는 장면에 도달했다.",
+      "aiOpeningDirection": "메인 화면을 기준으로 짧고 명확하게 다음 질문을 유도합니다.",
+      "mainContextDigest": "[참소식 메인 페이지 정보]\n브리핑 제목: 참소식 AI 이슈 브리핑\n브리핑 설명: 실시간으로 쌓이는 이슈 데이터를 5개의 핵심 카드로 압축하고, 나머지 데이터는 배경 신호로 보관합니다. 방문자는 더 적은 카드로 오늘의 흐름을 빠르게 읽고, AI 분석은 관계와 맥락을 보강합니다.\n\n[브리핑 카드]\n1. 오늘의 핵심 신호 - 조회수와 최신성을 기준으로 먼저 볼 만한 이슈만 전면에 배치합니다.\n2. AI 관계 해설 - 키워드 사이의 연결 이유와 시장, 문화, 기술 흐름을 짧게 설명합니다.\n3. 숨김 데이터 보관 - 나머지 95개 데이터는 삭제하지 않고 내부 목록에 유지해 갱신과 정렬에 활용합니다.\n4. 검색 확장 - 네이버, 구글, 빙, 유튜브 링크로 관련 내용을 바로 이어서 확인할 수 있습니다.\n5. 미분적분 - 미분, 적분, 누적 넓이 예제를 인터랙티브 수업으로 확인합니다.\n6. AI 브리핑 상세 - 핵심 신호, 관계 해석, Sort 확장 흐름이 어떻게 작동하는지 안내합니다.",
+      "createdAt": "2026-05-14T15:56:48.885Z"
+    },
+    {
+      "id": "a1fdfc2f-b557-4e6b-a45d-a822e25194f4",
+      "characterId": "Visitor-417b11e0",
+      "currentScene": "조용한 탐색자 001은 메인 화면과 대화 흐름을 바탕으로 \"사용자는 SoundCloud 라디오 DJ 역할을 요청하고 있습니다.\"라는 장면에 도달했다.",
+      "aiOpeningDirection": "메인 화면을 기준으로 짧고 명확하게 다음 질문을 유도합니다.",
+      "mainContextDigest": "[참소식 메인 페이지 정보]\n브리핑 제목: 참소식 AI 이슈 브리핑\n브리핑 설명: 실시간으로 쌓이는 이슈 데이터를 5개의 핵심 카드로 압축하고, 나머지 데이터는 배경 신호로 보관합니다. 방문자는 더 적은 카드로 오늘의 흐름을 빠르게 읽고, AI 분석은 관계와 맥락을 보강합니다.\n\n[브리핑 카드]\n1. 오늘의 핵심 신호 - 조회수와 최신성을 기준으로 먼저 볼 만한 이슈만 전면에 배치합니다.\n2. AI 관계 해설 - 키워드 사이의 연결 이유와 시장, 문화, 기술 흐름을 짧게 설명합니다.\n3. 숨김 데이터 보관 - 나머지 95개 데이터는 삭제하지 않고 내부 목록에 유지해 갱신과 정렬에 활용합니다.\n4. 검색 확장 - 네이버, 구글, 빙, 유튜브 링크로 관련 내용을 바로 이어서 확인할 수 있습니다.\n5. 미분적분 - 미분, 적분, 누적 넓이 예제를 인터랙티브 수업으로 확인합니다.\n6. AI 브리핑 상세 - 핵심 신호, 관계 해석, Sort 확장 흐름이 어떻게 작동하는지 안내합니다.",
+      "createdAt": "2026-05-14T16:00:15.794Z"
+    },
+    {
+      "id": "054efc23-a695-455d-8aeb-745d228f4f19",
+      "characterId": "Visitor-417b11e0",
+      "currentScene": "조용한 탐색자 001은 메인 화면과 대화 흐름을 바탕으로 \"사용자는 나를 SoundCloud 웹 라디오 DJ로 설정하고 있다.\"라는 장면에 도달했다.",
+      "aiOpeningDirection": "메인 화면을 기준으로 짧고 명확하게 다음 질문을 유도합니다.",
+      "mainContextDigest": "[참소식 메인 페이지 정보]\n브리핑 제목: 참소식 AI 이슈 브리핑\n브리핑 설명: 실시간으로 쌓이는 이슈 데이터를 5개의 핵심 카드로 압축하고, 나머지 데이터는 배경 신호로 보관합니다. 방문자는 더 적은 카드로 오늘의 흐름을 빠르게 읽고, AI 분석은 관계와 맥락을 보강합니다.\n\n[브리핑 카드]\n1. 오늘의 핵심 신호 - 조회수와 최신성을 기준으로 먼저 볼 만한 이슈만 전면에 배치합니다.\n2. AI 관계 해설 - 키워드 사이의 연결 이유와 시장, 문화, 기술 흐름을 짧게 설명합니다.\n3. 숨김 데이터 보관 - 나머지 95개 데이터는 삭제하지 않고 내부 목록에 유지해 갱신과 정렬에 활용합니다.\n4. 검색 확장 - 네이버, 구글, 빙, 유튜브 링크로 관련 내용을 바로 이어서 확인할 수 있습니다.\n5. 미분적분 - 미분, 적분, 누적 넓이 예제를 인터랙티브 수업으로 확인합니다.\n6. AI 브리핑 상세 - 핵심 신호, 관계 해석, Sort 확장 흐름이 어떻게 작동하는지 안내합니다.",
+      "createdAt": "2026-05-14T16:06:30.110Z"
+    },
+    {
+      "id": "38ed7ea3-58e8-4be5-93ea-a0dc3b44560e",
+      "characterId": "Visitor-417b11e0",
+      "currentScene": "조용한 탐색자 001은 메인 화면과 대화 흐름을 바탕으로 \"사용자는 SoundCloud 라디오 DJ 역할을 요청하고 있습니다.\"라는 장면에 도달했다.",
+      "aiOpeningDirection": "메인 화면을 기준으로 짧고 명확하게 다음 질문을 유도합니다.",
+      "mainContextDigest": "[참소식 메인 페이지 정보]\n브리핑 제목: 참소식 AI 이슈 브리핑\n브리핑 설명: 실시간으로 쌓이는 이슈 데이터를 5개의 핵심 카드로 압축하고, 나머지 데이터는 배경 신호로 보관합니다. 방문자는 더 적은 카드로 오늘의 흐름을 빠르게 읽고, AI 분석은 관계와 맥락을 보강합니다.\n\n[브리핑 카드]\n1. 오늘의 핵심 신호 - 조회수와 최신성을 기준으로 먼저 볼 만한 이슈만 전면에 배치합니다.\n2. AI 관계 해설 - 키워드 사이의 연결 이유와 시장, 문화, 기술 흐름을 짧게 설명합니다.\n3. 숨김 데이터 보관 - 나머지 95개 데이터는 삭제하지 않고 내부 목록에 유지해 갱신과 정렬에 활용합니다.\n4. 검색 확장 - 네이버, 구글, 빙, 유튜브 링크로 관련 내용을 바로 이어서 확인할 수 있습니다.\n5. 미분적분 - 미분, 적분, 누적 넓이 예제를 인터랙티브 수업으로 확인합니다.\n6. AI 브리핑 상세 - 핵심 신호, 관계 해석, Sort 확장 흐름이 어떻게 작동하는지 안내합니다.",
+      "createdAt": "2026-05-14T16:07:38.871Z"
+    },
+    {
+      "id": "9d12e4a2-ff10-45d1-b325-b2a6145b87e7",
+      "characterId": "Visitor-417b11e0",
+      "currentScene": "조용한 탐색자 001은 메인 화면과 대화 흐름을 바탕으로 \"사용자는 SoundCloud 라디오 DJ 역할을 요청하고 있습니다.\"라는 장면에 도달했다.",
+      "aiOpeningDirection": "메인 화면을 기준으로 짧고 명확하게 다음 질문을 유도합니다.",
+      "mainContextDigest": "[참소식 메인 페이지 정보]\n브리핑 제목: 참소식 AI 이슈 브리핑\n브리핑 설명: 실시간으로 쌓이는 이슈 데이터를 5개의 핵심 카드로 압축하고, 나머지 데이터는 배경 신호로 보관합니다. 방문자는 더 적은 카드로 오늘의 흐름을 빠르게 읽고, AI 분석은 관계와 맥락을 보강합니다.\n\n[브리핑 카드]\n1. 오늘의 핵심 신호 - 조회수와 최신성을 기준으로 먼저 볼 만한 이슈만 전면에 배치합니다.\n2. AI 관계 해설 - 키워드 사이의 연결 이유와 시장, 문화, 기술 흐름을 짧게 설명합니다.\n3. 숨김 데이터 보관 - 나머지 95개 데이터는 삭제하지 않고 내부 목록에 유지해 갱신과 정렬에 활용합니다.\n4. 검색 확장 - 네이버, 구글, 빙, 유튜브 링크로 관련 내용을 바로 이어서 확인할 수 있습니다.\n5. 미분적분 - 미분, 적분, 누적 넓이 예제를 인터랙티브 수업으로 확인합니다.\n6. AI 브리핑 상세 - 핵심 신호, 관계 해석, Sort 확장 흐름이 어떻게 작동하는지 안내합니다.",
+      "createdAt": "2026-05-14T16:09:29.849Z"
+    },
+    {
+      "id": "2aee4174-60d6-4633-bcdd-4d27642c1a99",
+      "characterId": "Visitor-417b11e0",
+      "currentScene": "조용한 탐색자 001은 메인 화면과 대화 흐름을 바탕으로 \"사용자는 SoundCloud 라디오 DJ 역할을 요청하고 있습니다.\"라는 장면에 도달했다.",
+      "aiOpeningDirection": "메인 화면을 기준으로 짧고 명확하게 다음 질문을 유도합니다.",
+      "mainContextDigest": "[참소식 메인 페이지 정보]\n브리핑 제목: 참소식 AI 이슈 브리핑\n브리핑 설명: 실시간으로 쌓이는 이슈 데이터를 5개의 핵심 카드로 압축하고, 나머지 데이터는 배경 신호로 보관합니다. 방문자는 더 적은 카드로 오늘의 흐름을 빠르게 읽고, AI 분석은 관계와 맥락을 보강합니다.\n\n[브리핑 카드]\n1. 오늘의 핵심 신호 - 조회수와 최신성을 기준으로 먼저 볼 만한 이슈만 전면에 배치합니다.\n2. AI 관계 해설 - 키워드 사이의 연결 이유와 시장, 문화, 기술 흐름을 짧게 설명합니다.\n3. 숨김 데이터 보관 - 나머지 95개 데이터는 삭제하지 않고 내부 목록에 유지해 갱신과 정렬에 활용합니다.\n4. 검색 확장 - 네이버, 구글, 빙, 유튜브 링크로 관련 내용을 바로 이어서 확인할 수 있습니다.\n5. 미분적분 - 미분, 적분, 누적 넓이 예제를 인터랙티브 수업으로 확인합니다.\n6. AI 브리핑 상세 - 핵심 신호, 관계 해석, Sort 확장 흐름이 어떻게 작동하는지 안내합니다.",
+      "createdAt": "2026-05-14T16:10:29.563Z"
+    },
+    {
+      "id": "5b1e8845-a7ee-4c38-a9a0-32a83d45b443",
+      "characterId": "Visitor-417b11e0",
+      "currentScene": "조용한 탐색자 001은 메인 화면과 대화 흐름을 바탕으로 \"사용자는 SoundCloud 라디오 DJ 역할을 요청하고 있습니다.\"라는 장면에 도달했다.",
+      "aiOpeningDirection": "메인 화면을 기준으로 짧고 명확하게 다음 질문을 유도합니다.",
+      "mainContextDigest": "[참소식 메인 페이지 정보]\n브리핑 제목: 참소식 AI 이슈 브리핑\n브리핑 설명: 실시간으로 쌓이는 이슈 데이터를 5개의 핵심 카드로 압축하고, 나머지 데이터는 배경 신호로 보관합니다. 방문자는 더 적은 카드로 오늘의 흐름을 빠르게 읽고, AI 분석은 관계와 맥락을 보강합니다.\n\n[브리핑 카드]\n1. 오늘의 핵심 신호 - 조회수와 최신성을 기준으로 먼저 볼 만한 이슈만 전면에 배치합니다.\n2. AI 관계 해설 - 키워드 사이의 연결 이유와 시장, 문화, 기술 흐름을 짧게 설명합니다.\n3. 숨김 데이터 보관 - 나머지 95개 데이터는 삭제하지 않고 내부 목록에 유지해 갱신과 정렬에 활용합니다.\n4. 검색 확장 - 네이버, 구글, 빙, 유튜브 링크로 관련 내용을 바로 이어서 확인할 수 있습니다.\n5. 미분적분 - 미분, 적분, 누적 넓이 예제를 인터랙티브 수업으로 확인합니다.\n6. AI 브리핑 상세 - 핵심 신호, 관계 해석, Sort 확장 흐름이 어떻게 작동하는지 안내합니다.",
+      "createdAt": "2026-05-14T16:11:55.093Z"
+    },
+    {
+      "id": "e1842289-f2fd-4d1b-96bb-5a30bbc32ebc",
+      "characterId": "Visitor-417b11e0",
+      "currentScene": "조용한 탐색자 001은 메인 화면과 대화 흐름을 바탕으로 \"사용자는 SoundCloud 라디오 DJ 역할을 요청하고 있습니다.\"라는 장면에 도달했다.",
+      "aiOpeningDirection": "메인 화면을 기준으로 짧고 명확하게 다음 질문을 유도합니다.",
+      "mainContextDigest": "[참소식 메인 페이지 정보]\n브리핑 제목: 참소식 AI 이슈 브리핑\n브리핑 설명: 실시간으로 쌓이는 이슈 데이터를 5개의 핵심 카드로 압축하고, 나머지 데이터는 배경 신호로 보관합니다. 방문자는 더 적은 카드로 오늘의 흐름을 빠르게 읽고, AI 분석은 관계와 맥락을 보강합니다.\n\n[브리핑 카드]\n1. 오늘의 핵심 신호 - 조회수와 최신성을 기준으로 먼저 볼 만한 이슈만 전면에 배치합니다.\n2. AI 관계 해설 - 키워드 사이의 연결 이유와 시장, 문화, 기술 흐름을 짧게 설명합니다.\n3. 숨김 데이터 보관 - 나머지 95개 데이터는 삭제하지 않고 내부 목록에 유지해 갱신과 정렬에 활용합니다.\n4. 검색 확장 - 네이버, 구글, 빙, 유튜브 링크로 관련 내용을 바로 이어서 확인할 수 있습니다.\n5. 미분적분 - 미분, 적분, 누적 넓이 예제를 인터랙티브 수업으로 확인합니다.\n6. AI 브리핑 상세 - 핵심 신호, 관계 해석, Sort 확장 흐름이 어떻게 작동하는지 안내합니다.",
+      "createdAt": "2026-05-14T16:12:35.371Z"
+    },
+    {
+      "id": "64e798f3-6a52-43ec-82ee-84279283c9bd",
+      "characterId": "Visitor-417b11e0",
+      "currentScene": "조용한 탐색자 001은 메인 화면과 대화 흐름을 바탕으로 \"사용자는 SoundCloud 라디오 DJ 역할을 요청하고 있습니다.\"라는 장면에 도달했다.",
+      "aiOpeningDirection": "메인 화면을 기준으로 짧고 명확하게 다음 질문을 유도합니다.",
+      "mainContextDigest": "[참소식 메인 페이지 정보]\n브리핑 제목: 참소식 AI 이슈 브리핑\n브리핑 설명: 실시간으로 쌓이는 이슈 데이터를 5개의 핵심 카드로 압축하고, 나머지 데이터는 배경 신호로 보관합니다. 방문자는 더 적은 카드로 오늘의 흐름을 빠르게 읽고, AI 분석은 관계와 맥락을 보강합니다.\n\n[브리핑 카드]\n1. 오늘의 핵심 신호 - 조회수와 최신성을 기준으로 먼저 볼 만한 이슈만 전면에 배치합니다.\n2. AI 관계 해설 - 키워드 사이의 연결 이유와 시장, 문화, 기술 흐름을 짧게 설명합니다.\n3. 숨김 데이터 보관 - 나머지 95개 데이터는 삭제하지 않고 내부 목록에 유지해 갱신과 정렬에 활용합니다.\n4. 검색 확장 - 네이버, 구글, 빙, 유튜브 링크로 관련 내용을 바로 이어서 확인할 수 있습니다.\n5. 미분적분 - 미분, 적분, 누적 넓이 예제를 인터랙티브 수업으로 확인합니다.\n6. AI 브리핑 상세 - 핵심 신호, 관계 해석, Sort 확장 흐름이 어떻게 작동하는지 안내합니다.",
+      "createdAt": "2026-05-14T16:15:24.449Z"
+    },
+    {
+      "id": "5f8fc7e7-91cb-4e6b-8483-c1ee847aa28f",
+      "characterId": "Visitor-417b11e0",
+      "currentScene": "조용한 탐색자 001은 메인 화면과 대화 흐름을 바탕으로 \"사용자는 SoundCloud 라디오 DJ 역할을 요청하고 있습니다.\"라는 장면에 도달했다.",
+      "aiOpeningDirection": "메인 화면을 기준으로 짧고 명확하게 다음 질문을 유도합니다.",
+      "mainContextDigest": "[참소식 메인 페이지 정보]\n브리핑 제목: 참소식 AI 이슈 브리핑\n브리핑 설명: 실시간으로 쌓이는 이슈 데이터를 5개의 핵심 카드로 압축하고, 나머지 데이터는 배경 신호로 보관합니다. 방문자는 더 적은 카드로 오늘의 흐름을 빠르게 읽고, AI 분석은 관계와 맥락을 보강합니다.\n\n[브리핑 카드]\n1. 오늘의 핵심 신호 - 조회수와 최신성을 기준으로 먼저 볼 만한 이슈만 전면에 배치합니다.\n2. AI 관계 해설 - 키워드 사이의 연결 이유와 시장, 문화, 기술 흐름을 짧게 설명합니다.\n3. 숨김 데이터 보관 - 나머지 95개 데이터는 삭제하지 않고 내부 목록에 유지해 갱신과 정렬에 활용합니다.\n4. 검색 확장 - 네이버, 구글, 빙, 유튜브 링크로 관련 내용을 바로 이어서 확인할 수 있습니다.\n5. 미분적분 - 미분, 적분, 누적 넓이 예제를 인터랙티브 수업으로 확인합니다.\n6. AI 브리핑 상세 - 핵심 신호, 관계 해석, Sort 확장 흐름이 어떻게 작동하는지 안내합니다.",
+      "createdAt": "2026-05-14T16:18:14.070Z"
+    },
+    {
+      "id": "e6b42c2d-9cf1-4317-ba28-c53d74001a3b",
+      "characterId": "Visitor-417b11e0",
+      "currentScene": "조용한 탐색자 001은 메인 화면과 대화 흐름을 바탕으로 \"사용자는 SoundCloud 라디오 DJ 역할을 요청하고 있습니다.\"라는 장면에 도달했다.",
+      "aiOpeningDirection": "메인 화면을 기준으로 짧고 명확하게 다음 질문을 유도합니다.",
+      "mainContextDigest": "[참소식 메인 페이지 정보]\n브리핑 제목: 참소식 AI 이슈 브리핑\n브리핑 설명: 실시간으로 쌓이는 이슈 데이터를 5개의 핵심 카드로 압축하고, 나머지 데이터는 배경 신호로 보관합니다. 방문자는 더 적은 카드로 오늘의 흐름을 빠르게 읽고, AI 분석은 관계와 맥락을 보강합니다.\n\n[브리핑 카드]\n1. 오늘의 핵심 신호 - 조회수와 최신성을 기준으로 먼저 볼 만한 이슈만 전면에 배치합니다.\n2. AI 관계 해설 - 키워드 사이의 연결 이유와 시장, 문화, 기술 흐름을 짧게 설명합니다.\n3. 숨김 데이터 보관 - 나머지 95개 데이터는 삭제하지 않고 내부 목록에 유지해 갱신과 정렬에 활용합니다.\n4. 검색 확장 - 네이버, 구글, 빙, 유튜브 링크로 관련 내용을 바로 이어서 확인할 수 있습니다.\n5. 미분적분 - 미분, 적분, 누적 넓이 예제를 인터랙티브 수업으로 확인합니다.\n6. AI 브리핑 상세 - 핵심 신호, 관계 해석, Sort 확장 흐름이 어떻게 작동하는지 안내합니다.",
+      "createdAt": "2026-05-14T16:19:56.808Z"
+    },
+    {
+      "id": "26438ac7-dc94-4315-972f-2ae7e0664dc4",
+      "characterId": "Visitor-417b11e0",
+      "currentScene": "조용한 탐색자 001은 메인 화면과 대화 흐름을 바탕으로 \"사용자는 SoundCloud 라디오 DJ 역할을 요청하고 있습니다.\"라는 장면에 도달했다.",
+      "aiOpeningDirection": "메인 화면을 기준으로 짧고 명확하게 다음 질문을 유도합니다.",
+      "mainContextDigest": "[참소식 메인 페이지 정보]\n브리핑 제목: 참소식 AI 이슈 브리핑\n브리핑 설명: 실시간으로 쌓이는 이슈 데이터를 5개의 핵심 카드로 압축하고, 나머지 데이터는 배경 신호로 보관합니다. 방문자는 더 적은 카드로 오늘의 흐름을 빠르게 읽고, AI 분석은 관계와 맥락을 보강합니다.\n\n[브리핑 카드]\n1. 오늘의 핵심 신호 - 조회수와 최신성을 기준으로 먼저 볼 만한 이슈만 전면에 배치합니다.\n2. AI 관계 해설 - 키워드 사이의 연결 이유와 시장, 문화, 기술 흐름을 짧게 설명합니다.\n3. 숨김 데이터 보관 - 나머지 95개 데이터는 삭제하지 않고 내부 목록에 유지해 갱신과 정렬에 활용합니다.\n4. 검색 확장 - 네이버, 구글, 빙, 유튜브 링크로 관련 내용을 바로 이어서 확인할 수 있습니다.\n5. 미분적분 - 미분, 적분, 누적 넓이 예제를 인터랙티브 수업으로 확인합니다.\n6. AI 브리핑 상세 - 핵심 신호, 관계 해석, Sort 확장 흐름이 어떻게 작동하는지 안내합니다.",
+      "createdAt": "2026-05-14T16:21:52.726Z"
+    },
+    {
+      "id": "6c7973b4-1989-4028-b4e0-8065b47e07fd",
+      "characterId": "Visitor-417b11e0",
+      "currentScene": "조용한 탐색자 001은 메인 화면과 대화 흐름을 바탕으로 \"사용자는 SoundCloud 라디오 DJ 역할을 요청하고 있습니다.\"라는 장면에 도달했다.",
+      "aiOpeningDirection": "메인 화면을 기준으로 짧고 명확하게 다음 질문을 유도합니다.",
+      "mainContextDigest": "[참소식 메인 페이지 정보]\n브리핑 제목: 참소식 AI 이슈 브리핑\n브리핑 설명: 실시간으로 쌓이는 이슈 데이터를 5개의 핵심 카드로 압축하고, 나머지 데이터는 배경 신호로 보관합니다. 방문자는 더 적은 카드로 오늘의 흐름을 빠르게 읽고, AI 분석은 관계와 맥락을 보강합니다.\n\n[브리핑 카드]\n1. 오늘의 핵심 신호 - 조회수와 최신성을 기준으로 먼저 볼 만한 이슈만 전면에 배치합니다.\n2. AI 관계 해설 - 키워드 사이의 연결 이유와 시장, 문화, 기술 흐름을 짧게 설명합니다.\n3. 숨김 데이터 보관 - 나머지 95개 데이터는 삭제하지 않고 내부 목록에 유지해 갱신과 정렬에 활용합니다.\n4. 검색 확장 - 네이버, 구글, 빙, 유튜브 링크로 관련 내용을 바로 이어서 확인할 수 있습니다.\n5. 미분적분 - 미분, 적분, 누적 넓이 예제를 인터랙티브 수업으로 확인합니다.\n6. AI 브리핑 상세 - 핵심 신호, 관계 해석, Sort 확장 흐름이 어떻게 작동하는지 안내합니다.",
+      "createdAt": "2026-05-14T16:25:01.444Z"
+    },
+    {
+      "id": "eda91f64-591d-4efe-929a-521bdefbb58e",
+      "characterId": "Visitor-417b11e0",
+      "currentScene": "조용한 탐색자 001은 메인 화면과 대화 흐름을 바탕으로 \"사용자는 SoundCloud 라디오 DJ 역할을 요청하고 있다.\"라는 장면에 도달했다.",
+      "aiOpeningDirection": "메인 화면을 기준으로 짧고 명확하게 다음 질문을 유도합니다.",
+      "mainContextDigest": "[참소식 메인 페이지 정보]\n브리핑 제목: 참소식 AI 이슈 브리핑\n브리핑 설명: 실시간으로 쌓이는 이슈 데이터를 5개의 핵심 카드로 압축하고, 나머지 데이터는 배경 신호로 보관합니다. 방문자는 더 적은 카드로 오늘의 흐름을 빠르게 읽고, AI 분석은 관계와 맥락을 보강합니다.\n\n[브리핑 카드]\n1. 오늘의 핵심 신호 - 조회수와 최신성을 기준으로 먼저 볼 만한 이슈만 전면에 배치합니다.\n2. AI 관계 해설 - 키워드 사이의 연결 이유와 시장, 문화, 기술 흐름을 짧게 설명합니다.\n3. 숨김 데이터 보관 - 나머지 95개 데이터는 삭제하지 않고 내부 목록에 유지해 갱신과 정렬에 활용합니다.\n4. 검색 확장 - 네이버, 구글, 빙, 유튜브 링크로 관련 내용을 바로 이어서 확인할 수 있습니다.\n5. 미분적분 - 미분, 적분, 누적 넓이 예제를 인터랙티브 수업으로 확인합니다.\n6. AI 브리핑 상세 - 핵심 신호, 관계 해석, Sort 확장 흐름이 어떻게 작동하는지 안내합니다.",
+      "createdAt": "2026-05-14T16:27:51.668Z"
+    },
+    {
+      "id": "269fad29-141e-4c61-b7f0-2fd1f6bc342a",
+      "characterId": "Visitor-417b11e0",
+      "currentScene": "조용한 탐색자 001은 메인 화면과 대화 흐름을 바탕으로 \"사용자는 SoundCloud 라디오 DJ 역할을 요청하고 있습니다.\"라는 장면에 도달했다.",
+      "aiOpeningDirection": "메인 화면을 기준으로 짧고 명확하게 다음 질문을 유도합니다.",
+      "mainContextDigest": "[참소식 메인 페이지 정보]\n브리핑 제목: 참소식 AI 이슈 브리핑\n브리핑 설명: 실시간으로 쌓이는 이슈 데이터를 5개의 핵심 카드로 압축하고, 나머지 데이터는 배경 신호로 보관합니다. 방문자는 더 적은 카드로 오늘의 흐름을 빠르게 읽고, AI 분석은 관계와 맥락을 보강합니다.\n\n[브리핑 카드]\n1. 오늘의 핵심 신호 - 조회수와 최신성을 기준으로 먼저 볼 만한 이슈만 전면에 배치합니다.\n2. AI 관계 해설 - 키워드 사이의 연결 이유와 시장, 문화, 기술 흐름을 짧게 설명합니다.\n3. 숨김 데이터 보관 - 나머지 95개 데이터는 삭제하지 않고 내부 목록에 유지해 갱신과 정렬에 활용합니다.\n4. 검색 확장 - 네이버, 구글, 빙, 유튜브 링크로 관련 내용을 바로 이어서 확인할 수 있습니다.\n5. 미분적분 - 미분, 적분, 누적 넓이 예제를 인터랙티브 수업으로 확인합니다.\n6. AI 브리핑 상세 - 핵심 신호, 관계 해석, Sort 확장 흐름이 어떻게 작동하는지 안내합니다.",
+      "createdAt": "2026-05-14T16:28:24.055Z"
+    },
+    {
+      "id": "86aaf300-a8f4-49f9-ab14-5db5ed938cd5",
+      "characterId": "Visitor-417b11e0",
+      "currentScene": "조용한 탐색자 001은 메인 화면과 대화 흐름을 바탕으로 \"사용자는 SoundCloud 라디오 DJ 역할을 요청하고 있습니다.\"라는 장면에 도달했다.",
+      "aiOpeningDirection": "메인 화면을 기준으로 짧고 명확하게 다음 질문을 유도합니다.",
+      "mainContextDigest": "[참소식 메인 페이지 정보]\n브리핑 제목: 참소식 AI 이슈 브리핑\n브리핑 설명: 실시간으로 쌓이는 이슈 데이터를 5개의 핵심 카드로 압축하고, 나머지 데이터는 배경 신호로 보관합니다. 방문자는 더 적은 카드로 오늘의 흐름을 빠르게 읽고, AI 분석은 관계와 맥락을 보강합니다.\n\n[브리핑 카드]\n1. 오늘의 핵심 신호 - 조회수와 최신성을 기준으로 먼저 볼 만한 이슈만 전면에 배치합니다.\n2. AI 관계 해설 - 키워드 사이의 연결 이유와 시장, 문화, 기술 흐름을 짧게 설명합니다.\n3. 숨김 데이터 보관 - 나머지 95개 데이터는 삭제하지 않고 내부 목록에 유지해 갱신과 정렬에 활용합니다.\n4. 검색 확장 - 네이버, 구글, 빙, 유튜브 링크로 관련 내용을 바로 이어서 확인할 수 있습니다.\n5. 미분적분 - 미분, 적분, 누적 넓이 예제를 인터랙티브 수업으로 확인합니다.\n6. AI 브리핑 상세 - 핵심 신호, 관계 해석, Sort 확장 흐름이 어떻게 작동하는지 안내합니다.",
+      "createdAt": "2026-05-14T16:29:43.917Z"
+    },
+    {
+      "id": "ab7e082e-e8c8-45a8-92cb-194b47248bdf",
+      "characterId": "Visitor-417b11e0",
+      "currentScene": "조용한 탐색자 001은 메인 화면과 대화 흐름을 바탕으로 \"사용자는 SoundCloud 라디오 DJ 역할을 요청하고 있습니다.\"라는 장면에 도달했다.",
+      "aiOpeningDirection": "메인 화면을 기준으로 짧고 명확하게 다음 질문을 유도합니다.",
+      "mainContextDigest": "[참소식 메인 페이지 정보]\n브리핑 제목: 참소식 AI 이슈 브리핑\n브리핑 설명: 실시간으로 쌓이는 이슈 데이터를 5개의 핵심 카드로 압축하고, 나머지 데이터는 배경 신호로 보관합니다. 방문자는 더 적은 카드로 오늘의 흐름을 빠르게 읽고, AI 분석은 관계와 맥락을 보강합니다.\n\n[브리핑 카드]\n1. 오늘의 핵심 신호 - 조회수와 최신성을 기준으로 먼저 볼 만한 이슈만 전면에 배치합니다.\n2. AI 관계 해설 - 키워드 사이의 연결 이유와 시장, 문화, 기술 흐름을 짧게 설명합니다.\n3. 숨김 데이터 보관 - 나머지 95개 데이터는 삭제하지 않고 내부 목록에 유지해 갱신과 정렬에 활용합니다.\n4. 검색 확장 - 네이버, 구글, 빙, 유튜브 링크로 관련 내용을 바로 이어서 확인할 수 있습니다.\n5. 미분적분 - 미분, 적분, 누적 넓이 예제를 인터랙티브 수업으로 확인합니다.\n6. AI 브리핑 상세 - 핵심 신호, 관계 해석, Sort 확장 흐름이 어떻게 작동하는지 안내합니다.",
+      "createdAt": "2026-05-14T16:30:48.724Z"
+    },
+    {
+      "id": "190339c0-61dc-402a-9349-b3041fc636b6",
+      "characterId": "Visitor-417b11e0",
+      "currentScene": "조용한 탐색자 001은 메인 화면과 대화 흐름을 바탕으로 \"사용자는 SoundCloud 라디오 DJ 역할을 요청하고 있습니다.\"라는 장면에 도달했다.",
+      "aiOpeningDirection": "메인 화면을 기준으로 짧고 명확하게 다음 질문을 유도합니다.",
+      "mainContextDigest": "[참소식 메인 페이지 정보]\n브리핑 제목: 참소식 AI 이슈 브리핑\n브리핑 설명: 실시간으로 쌓이는 이슈 데이터를 5개의 핵심 카드로 압축하고, 나머지 데이터는 배경 신호로 보관합니다. 방문자는 더 적은 카드로 오늘의 흐름을 빠르게 읽고, AI 분석은 관계와 맥락을 보강합니다.\n\n[브리핑 카드]\n1. 오늘의 핵심 신호 - 조회수와 최신성을 기준으로 먼저 볼 만한 이슈만 전면에 배치합니다.\n2. AI 관계 해설 - 키워드 사이의 연결 이유와 시장, 문화, 기술 흐름을 짧게 설명합니다.\n3. 숨김 데이터 보관 - 나머지 95개 데이터는 삭제하지 않고 내부 목록에 유지해 갱신과 정렬에 활용합니다.\n4. 검색 확장 - 네이버, 구글, 빙, 유튜브 링크로 관련 내용을 바로 이어서 확인할 수 있습니다.\n5. 미분적분 - 미분, 적분, 누적 넓이 예제를 인터랙티브 수업으로 확인합니다.\n6. AI 브리핑 상세 - 핵심 신호, 관계 해석, Sort 확장 흐름이 어떻게 작동하는지 안내합니다.",
+      "createdAt": "2026-05-14T16:31:28.854Z"
+    },
+    {
+      "id": "ae8d9b07-b19a-488f-b6e4-a1a4f24a718a",
+      "characterId": "Visitor-417b11e0",
+      "currentScene": "조용한 탐색자 001은 메인 화면과 대화 흐름을 바탕으로 \"사용자는 SoundCloud 라디오 DJ 역할을 요청하고 있습니다.\"라는 장면에 도달했다.",
+      "aiOpeningDirection": "메인 화면을 기준으로 짧고 명확하게 다음 질문을 유도합니다.",
+      "mainContextDigest": "[참소식 메인 페이지 정보]\n브리핑 제목: 참소식 AI 이슈 브리핑\n브리핑 설명: 실시간으로 쌓이는 이슈 데이터를 5개의 핵심 카드로 압축하고, 나머지 데이터는 배경 신호로 보관합니다. 방문자는 더 적은 카드로 오늘의 흐름을 빠르게 읽고, AI 분석은 관계와 맥락을 보강합니다.\n\n[브리핑 카드]\n1. 오늘의 핵심 신호 - 조회수와 최신성을 기준으로 먼저 볼 만한 이슈만 전면에 배치합니다.\n2. AI 관계 해설 - 키워드 사이의 연결 이유와 시장, 문화, 기술 흐름을 짧게 설명합니다.\n3. 숨김 데이터 보관 - 나머지 95개 데이터는 삭제하지 않고 내부 목록에 유지해 갱신과 정렬에 활용합니다.\n4. 검색 확장 - 네이버, 구글, 빙, 유튜브 링크로 관련 내용을 바로 이어서 확인할 수 있습니다.\n5. 미분적분 - 미분, 적분, 누적 넓이 예제를 인터랙티브 수업으로 확인합니다.\n6. AI 브리핑 상세 - 핵심 신호, 관계 해석, Sort 확장 흐름이 어떻게 작동하는지 안내합니다.",
+      "createdAt": "2026-05-14T16:34:18.544Z"
+    },
+    {
+      "id": "5d97b8bc-8b86-43ae-ab00-2d3ebe44ac45",
+      "characterId": "Visitor-417b11e0",
+      "currentScene": "조용한 탐색자 001은 메인 화면과 대화 흐름을 바탕으로 \"사용자는 SoundCloud 라디오 DJ 역할을 요청하고 있습니다.\"라는 장면에 도달했다.",
+      "aiOpeningDirection": "메인 화면을 기준으로 짧고 명확하게 다음 질문을 유도합니다.",
+      "mainContextDigest": "[참소식 메인 페이지 정보]\n브리핑 제목: 참소식 AI 이슈 브리핑\n브리핑 설명: 실시간으로 쌓이는 이슈 데이터를 5개의 핵심 카드로 압축하고, 나머지 데이터는 배경 신호로 보관합니다. 방문자는 더 적은 카드로 오늘의 흐름을 빠르게 읽고, AI 분석은 관계와 맥락을 보강합니다.\n\n[브리핑 카드]\n1. 오늘의 핵심 신호 - 조회수와 최신성을 기준으로 먼저 볼 만한 이슈만 전면에 배치합니다.\n2. AI 관계 해설 - 키워드 사이의 연결 이유와 시장, 문화, 기술 흐름을 짧게 설명합니다.\n3. 숨김 데이터 보관 - 나머지 95개 데이터는 삭제하지 않고 내부 목록에 유지해 갱신과 정렬에 활용합니다.\n4. 검색 확장 - 네이버, 구글, 빙, 유튜브 링크로 관련 내용을 바로 이어서 확인할 수 있습니다.\n5. 미분적분 - 미분, 적분, 누적 넓이 예제를 인터랙티브 수업으로 확인합니다.\n6. AI 브리핑 상세 - 핵심 신호, 관계 해석, Sort 확장 흐름이 어떻게 작동하는지 안내합니다.",
+      "createdAt": "2026-05-14T16:34:40.948Z"
+    },
+    {
+      "id": "4010ca49-9561-49e0-aaf2-52968ac0a0be",
+      "characterId": "Visitor-417b11e0",
+      "currentScene": "조용한 탐색자 001은 메인 화면과 대화 흐름을 바탕으로 \"사용자는 SoundCloud 라디오 DJ 역할을 요청하고 있습니다.\"라는 장면에 도달했다.",
+      "aiOpeningDirection": "메인 화면을 기준으로 짧고 명확하게 다음 질문을 유도합니다.",
+      "mainContextDigest": "[참소식 메인 페이지 정보]\n브리핑 제목: 참소식 AI 이슈 브리핑\n브리핑 설명: 실시간으로 쌓이는 이슈 데이터를 5개의 핵심 카드로 압축하고, 나머지 데이터는 배경 신호로 보관합니다. 방문자는 더 적은 카드로 오늘의 흐름을 빠르게 읽고, AI 분석은 관계와 맥락을 보강합니다.\n\n[브리핑 카드]\n1. 오늘의 핵심 신호 - 조회수와 최신성을 기준으로 먼저 볼 만한 이슈만 전면에 배치합니다.\n2. AI 관계 해설 - 키워드 사이의 연결 이유와 시장, 문화, 기술 흐름을 짧게 설명합니다.\n3. 숨김 데이터 보관 - 나머지 95개 데이터는 삭제하지 않고 내부 목록에 유지해 갱신과 정렬에 활용합니다.\n4. 검색 확장 - 네이버, 구글, 빙, 유튜브 링크로 관련 내용을 바로 이어서 확인할 수 있습니다.\n5. 미분적분 - 미분, 적분, 누적 넓이 예제를 인터랙티브 수업으로 확인합니다.\n6. AI 브리핑 상세 - 핵심 신호, 관계 해석, Sort 확장 흐름이 어떻게 작동하는지 안내합니다.",
+      "createdAt": "2026-05-14T16:35:06.714Z"
+    },
+    {
+      "id": "5917e9b3-97a1-4d9b-bbd0-5d6808f383a2",
+      "characterId": "Visitor-417b11e0",
+      "currentScene": "조용한 탐색자 001은 메인 화면과 대화 흐름을 바탕으로 \"사용자는 SoundCloud 라디오 DJ 역할을 요청하고 있습니다.\"라는 장면에 도달했다.",
+      "aiOpeningDirection": "메인 화면을 기준으로 짧고 명확하게 다음 질문을 유도합니다.",
+      "mainContextDigest": "[참소식 메인 페이지 정보]\n브리핑 제목: 참소식 AI 이슈 브리핑\n브리핑 설명: 실시간으로 쌓이는 이슈 데이터를 5개의 핵심 카드로 압축하고, 나머지 데이터는 배경 신호로 보관합니다. 방문자는 더 적은 카드로 오늘의 흐름을 빠르게 읽고, AI 분석은 관계와 맥락을 보강합니다.\n\n[브리핑 카드]\n1. 오늘의 핵심 신호 - 조회수와 최신성을 기준으로 먼저 볼 만한 이슈만 전면에 배치합니다.\n2. AI 관계 해설 - 키워드 사이의 연결 이유와 시장, 문화, 기술 흐름을 짧게 설명합니다.\n3. 숨김 데이터 보관 - 나머지 95개 데이터는 삭제하지 않고 내부 목록에 유지해 갱신과 정렬에 활용합니다.\n4. 검색 확장 - 네이버, 구글, 빙, 유튜브 링크로 관련 내용을 바로 이어서 확인할 수 있습니다.\n5. 미분적분 - 미분, 적분, 누적 넓이 예제를 인터랙티브 수업으로 확인합니다.\n6. AI 브리핑 상세 - 핵심 신호, 관계 해석, Sort 확장 흐름이 어떻게 작동하는지 안내합니다.",
+      "createdAt": "2026-05-14T16:36:57.184Z"
+    },
+    {
+      "id": "8171e1cc-35db-45bd-8600-539ace4d04aa",
+      "characterId": "Visitor-417b11e0",
+      "currentScene": "조용한 탐색자 001은 메인 화면과 대화 흐름을 바탕으로 \"사용자는 SoundCloud 라디오 DJ 역할을 요청하고 있습니다.\"라는 장면에 도달했다.",
+      "aiOpeningDirection": "메인 화면을 기준으로 짧고 명확하게 다음 질문을 유도합니다.",
+      "mainContextDigest": "[참소식 메인 페이지 정보]\n브리핑 제목: 참소식 AI 이슈 브리핑\n브리핑 설명: 실시간으로 쌓이는 이슈 데이터를 5개의 핵심 카드로 압축하고, 나머지 데이터는 배경 신호로 보관합니다. 방문자는 더 적은 카드로 오늘의 흐름을 빠르게 읽고, AI 분석은 관계와 맥락을 보강합니다.\n\n[브리핑 카드]\n1. 오늘의 핵심 신호 - 조회수와 최신성을 기준으로 먼저 볼 만한 이슈만 전면에 배치합니다.\n2. AI 관계 해설 - 키워드 사이의 연결 이유와 시장, 문화, 기술 흐름을 짧게 설명합니다.\n3. 숨김 데이터 보관 - 나머지 95개 데이터는 삭제하지 않고 내부 목록에 유지해 갱신과 정렬에 활용합니다.\n4. 검색 확장 - 네이버, 구글, 빙, 유튜브 링크로 관련 내용을 바로 이어서 확인할 수 있습니다.\n5. 미분적분 - 미분, 적분, 누적 넓이 예제를 인터랙티브 수업으로 확인합니다.\n6. AI 브리핑 상세 - 핵심 신호, 관계 해석, Sort 확장 흐름이 어떻게 작동하는지 안내합니다.",
+      "createdAt": "2026-05-14T16:38:27.704Z"
+    },
+    {
+      "id": "77d3eb3f-bb8e-42c2-9d0e-a8dacdbc3e2a",
+      "characterId": "Visitor-417b11e0",
+      "currentScene": "조용한 탐색자 001은 메인 화면과 대화 흐름을 바탕으로 \"사용자는 SoundCloud 라디오 DJ 역할을 요청하고 있습니다.\"라는 장면에 도달했다.",
+      "aiOpeningDirection": "메인 화면을 기준으로 짧고 명확하게 다음 질문을 유도합니다.",
+      "mainContextDigest": "[참소식 메인 페이지 정보]\n브리핑 제목: 참소식 AI 이슈 브리핑\n브리핑 설명: 실시간으로 쌓이는 이슈 데이터를 5개의 핵심 카드로 압축하고, 나머지 데이터는 배경 신호로 보관합니다. 방문자는 더 적은 카드로 오늘의 흐름을 빠르게 읽고, AI 분석은 관계와 맥락을 보강합니다.\n\n[브리핑 카드]\n1. 오늘의 핵심 신호 - 조회수와 최신성을 기준으로 먼저 볼 만한 이슈만 전면에 배치합니다.\n2. AI 관계 해설 - 키워드 사이의 연결 이유와 시장, 문화, 기술 흐름을 짧게 설명합니다.\n3. 숨김 데이터 보관 - 나머지 95개 데이터는 삭제하지 않고 내부 목록에 유지해 갱신과 정렬에 활용합니다.\n4. 검색 확장 - 네이버, 구글, 빙, 유튜브 링크로 관련 내용을 바로 이어서 확인할 수 있습니다.\n5. 미분적분 - 미분, 적분, 누적 넓이 예제를 인터랙티브 수업으로 확인합니다.\n6. AI 브리핑 상세 - 핵심 신호, 관계 해석, Sort 확장 흐름이 어떻게 작동하는지 안내합니다.",
+      "createdAt": "2026-05-14T16:40:06.290Z"
+    },
+    {
+      "id": "a2366649-e9cb-43e4-a15b-b2b52c96df95",
+      "characterId": "Visitor-417b11e0",
+      "currentScene": "조용한 탐색자 001은 메인 화면과 대화 흐름을 바탕으로 \"사용자는 SoundCloud 라디오 DJ 역할을 요청하고 있습니다.\"라는 장면에 도달했다.",
+      "aiOpeningDirection": "메인 화면을 기준으로 짧고 명확하게 다음 질문을 유도합니다.",
+      "mainContextDigest": "[참소식 메인 페이지 정보]\n브리핑 제목: 참소식 AI 이슈 브리핑\n브리핑 설명: 실시간으로 쌓이는 이슈 데이터를 5개의 핵심 카드로 압축하고, 나머지 데이터는 배경 신호로 보관합니다. 방문자는 더 적은 카드로 오늘의 흐름을 빠르게 읽고, AI 분석은 관계와 맥락을 보강합니다.\n\n[브리핑 카드]\n1. 오늘의 핵심 신호 - 조회수와 최신성을 기준으로 먼저 볼 만한 이슈만 전면에 배치합니다.\n2. AI 관계 해설 - 키워드 사이의 연결 이유와 시장, 문화, 기술 흐름을 짧게 설명합니다.\n3. 숨김 데이터 보관 - 나머지 95개 데이터는 삭제하지 않고 내부 목록에 유지해 갱신과 정렬에 활용합니다.\n4. 검색 확장 - 네이버, 구글, 빙, 유튜브 링크로 관련 내용을 바로 이어서 확인할 수 있습니다.\n5. 미분적분 - 미분, 적분, 누적 넓이 예제를 인터랙티브 수업으로 확인합니다.\n6. AI 브리핑 상세 - 핵심 신호, 관계 해석, Sort 확장 흐름이 어떻게 작동하는지 안내합니다.",
+      "createdAt": "2026-05-14T16:42:59.545Z"
+    },
+    {
+      "id": "084b71c8-e3f0-4f70-bdb7-13ef58f763aa",
+      "characterId": "Visitor-417b11e0",
+      "currentScene": "조용한 탐색자 001은 메인 화면과 대화 흐름을 바탕으로 \"사용자는 SoundCloud 라디오 DJ 역할을 요청하고 있습니다.\"라는 장면에 도달했다.",
+      "aiOpeningDirection": "메인 화면을 기준으로 짧고 명확하게 다음 질문을 유도합니다.",
+      "mainContextDigest": "[참소식 메인 페이지 정보]\n브리핑 제목: 참소식 AI 이슈 브리핑\n브리핑 설명: 실시간으로 쌓이는 이슈 데이터를 5개의 핵심 카드로 압축하고, 나머지 데이터는 배경 신호로 보관합니다. 방문자는 더 적은 카드로 오늘의 흐름을 빠르게 읽고, AI 분석은 관계와 맥락을 보강합니다.\n\n[브리핑 카드]\n1. 오늘의 핵심 신호 - 조회수와 최신성을 기준으로 먼저 볼 만한 이슈만 전면에 배치합니다.\n2. AI 관계 해설 - 키워드 사이의 연결 이유와 시장, 문화, 기술 흐름을 짧게 설명합니다.\n3. 숨김 데이터 보관 - 나머지 95개 데이터는 삭제하지 않고 내부 목록에 유지해 갱신과 정렬에 활용합니다.\n4. 검색 확장 - 네이버, 구글, 빙, 유튜브 링크로 관련 내용을 바로 이어서 확인할 수 있습니다.\n5. 미분적분 - 미분, 적분, 누적 넓이 예제를 인터랙티브 수업으로 확인합니다.\n6. AI 브리핑 상세 - 핵심 신호, 관계 해석, Sort 확장 흐름이 어떻게 작동하는지 안내합니다.",
+      "createdAt": "2026-05-14T16:45:01.329Z"
+    },
+    {
+      "id": "6b2ba8c3-9522-4481-bfd2-1c191ffbd39f",
+      "characterId": "Visitor-417b11e0",
+      "currentScene": "조용한 탐색자 001은 메인 화면과 대화 흐름을 바탕으로 \"사용자는 나를 SoundCloud 라디오 DJ로 설정하고 있다.\"라는 장면에 도달했다.",
+      "aiOpeningDirection": "메인 화면을 기준으로 짧고 명확하게 다음 질문을 유도합니다.",
+      "mainContextDigest": "[참소식 메인 페이지 정보]\n브리핑 제목: 참소식 AI 이슈 브리핑\n브리핑 설명: 실시간으로 쌓이는 이슈 데이터를 5개의 핵심 카드로 압축하고, 나머지 데이터는 배경 신호로 보관합니다. 방문자는 더 적은 카드로 오늘의 흐름을 빠르게 읽고, AI 분석은 관계와 맥락을 보강합니다.\n\n[브리핑 카드]\n1. 오늘의 핵심 신호 - 조회수와 최신성을 기준으로 먼저 볼 만한 이슈만 전면에 배치합니다.\n2. AI 관계 해설 - 키워드 사이의 연결 이유와 시장, 문화, 기술 흐름을 짧게 설명합니다.\n3. 숨김 데이터 보관 - 나머지 95개 데이터는 삭제하지 않고 내부 목록에 유지해 갱신과 정렬에 활용합니다.\n4. 검색 확장 - 네이버, 구글, 빙, 유튜브 링크로 관련 내용을 바로 이어서 확인할 수 있습니다.\n5. 미분적분 - 미분, 적분, 누적 넓이 예제를 인터랙티브 수업으로 확인합니다.\n6. AI 브리핑 상세 - 핵심 신호, 관계 해석, Sort 확장 흐름이 어떻게 작동하는지 안내합니다.",
+      "createdAt": "2026-05-14T16:46:11.326Z"
+    },
+    {
+      "id": "13707026-2a72-43d8-9814-6d0b5eacea52",
+      "characterId": "Visitor-417b11e0",
+      "currentScene": "조용한 탐색자 001은 메인 화면과 대화 흐름을 바탕으로 \"사용자는 SoundCloud 라디오 DJ 역할을 요청하고 있습니다.\"라는 장면에 도달했다.",
+      "aiOpeningDirection": "메인 화면을 기준으로 짧고 명확하게 다음 질문을 유도합니다.",
+      "mainContextDigest": "[참소식 메인 페이지 정보]\n브리핑 제목: 참소식 AI 이슈 브리핑\n브리핑 설명: 실시간으로 쌓이는 이슈 데이터를 5개의 핵심 카드로 압축하고, 나머지 데이터는 배경 신호로 보관합니다. 방문자는 더 적은 카드로 오늘의 흐름을 빠르게 읽고, AI 분석은 관계와 맥락을 보강합니다.\n\n[브리핑 카드]\n1. 오늘의 핵심 신호 - 조회수와 최신성을 기준으로 먼저 볼 만한 이슈만 전면에 배치합니다.\n2. AI 관계 해설 - 키워드 사이의 연결 이유와 시장, 문화, 기술 흐름을 짧게 설명합니다.\n3. 숨김 데이터 보관 - 나머지 95개 데이터는 삭제하지 않고 내부 목록에 유지해 갱신과 정렬에 활용합니다.\n4. 검색 확장 - 네이버, 구글, 빙, 유튜브 링크로 관련 내용을 바로 이어서 확인할 수 있습니다.\n5. 미분적분 - 미분, 적분, 누적 넓이 예제를 인터랙티브 수업으로 확인합니다.\n6. AI 브리핑 상세 - 핵심 신호, 관계 해석, Sort 확장 흐름이 어떻게 작동하는지 안내합니다.",
+      "createdAt": "2026-05-14T16:48:56.888Z"
+    },
+    {
+      "id": "1bb07906-8259-485e-a2a7-6a7a1ac9700a",
+      "characterId": "Visitor-417b11e0",
+      "currentScene": "조용한 탐색자 001은 메인 화면과 대화 흐름을 바탕으로 \"사용자는 SoundCloud 라디오 DJ 역할을 요청하고 있으며, 현재 곡은 \"INNER UTOPIA - 유현석 (Revenue)\"입니다.\"라는 장면에 도달했다.",
+      "aiOpeningDirection": "메인 화면을 기준으로 짧고 명확하게 다음 질문을 유도합니다.",
+      "mainContextDigest": "[참소식 메인 페이지 정보]\n브리핑 제목: 참소식 AI 이슈 브리핑\n브리핑 설명: 실시간으로 쌓이는 이슈 데이터를 5개의 핵심 카드로 압축하고, 나머지 데이터는 배경 신호로 보관합니다. 방문자는 더 적은 카드로 오늘의 흐름을 빠르게 읽고, AI 분석은 관계와 맥락을 보강합니다.\n\n[브리핑 카드]\n1. 오늘의 핵심 신호 - 조회수와 최신성을 기준으로 먼저 볼 만한 이슈만 전면에 배치합니다.\n2. AI 관계 해설 - 키워드 사이의 연결 이유와 시장, 문화, 기술 흐름을 짧게 설명합니다.\n3. 숨김 데이터 보관 - 나머지 95개 데이터는 삭제하지 않고 내부 목록에 유지해 갱신과 정렬에 활용합니다.\n4. 검색 확장 - 네이버, 구글, 빙, 유튜브 링크로 관련 내용을 바로 이어서 확인할 수 있습니다.\n5. 미분적분 - 미분, 적분, 누적 넓이 예제를 인터랙티브 수업으로 확인합니다.\n6. AI 브리핑 상세 - 핵심 신호, 관계 해석, Sort 확장 흐름이 어떻게 작동하는지 안내합니다.",
+      "createdAt": "2026-05-14T16:49:18.389Z"
+    },
+    {
+      "id": "a4f52fd8-c221-44c2-8f67-f751dca345b2",
+      "characterId": "Visitor-417b11e0",
+      "currentScene": "조용한 탐색자 001은 메인 화면과 대화 흐름을 바탕으로 \"사용자가 \"안녕 난 꼬봉이야\"라고 인사했다.\"라는 장면에 도달했다.",
+      "aiOpeningDirection": "메인 화면을 기준으로 짧고 명확하게 다음 질문을 유도합니다.",
+      "mainContextDigest": "[참소식 메인 페이지 정보]\n브리핑 제목: 참소식 AI 이슈 브리핑\n브리핑 설명: 실시간으로 쌓이는 이슈 데이터를 5개의 핵심 카드로 압축하고, 나머지 데이터는 배경 신호로 보관합니다. 방문자는 더 적은 카드로 오늘의 흐름을 빠르게 읽고, AI 분석은 관계와 맥락을 보강합니다.\n\n[브리핑 카드]\n1. 오늘의 핵심 신호 - 조회수와 최신성을 기준으로 먼저 볼 만한 이슈만 전면에 배치합니다.\n2. AI 관계 해설 - 키워드 사이의 연결 이유와 시장, 문화, 기술 흐름을 짧게 설명합니다.\n3. 숨김 데이터 보관 - 나머지 95개 데이터는 삭제하지 않고 내부 목록에 유지해 갱신과 정렬에 활용합니다.\n4. 검색 확장 - 네이버, 구글, 빙, 유튜브 링크로 관련 내용을 바로 이어서 확인할 수 있습니다.\n5. 미분적분 - 미분, 적분, 누적 넓이 예제를 인터랙티브 수업으로 확인합니다.\n6. AI 브리핑 상세 - 핵심 신호, 관계 해석, Sort 확장 흐름이 어떻게 작동하는지 안내합니다.",
+      "createdAt": "2026-05-14T16:52:15.851Z"
+    },
+    {
+      "id": "d3d5073c-1c5a-4623-bd53-de0a48659072",
+      "characterId": "Visitor-417b11e0",
+      "currentScene": "조용한 탐색자 001은 메인 화면과 대화 흐름을 바탕으로 \"사용자는 SoundCloud 라디오 DJ 역할을 요청하고 있습니다.\"라는 장면에 도달했다.",
+      "aiOpeningDirection": "메인 화면을 기준으로 짧고 명확하게 다음 질문을 유도합니다.",
+      "mainContextDigest": "[참소식 메인 페이지 정보]\n브리핑 제목: 참소식 AI 이슈 브리핑\n브리핑 설명: 실시간으로 쌓이는 이슈 데이터를 5개의 핵심 카드로 압축하고, 나머지 데이터는 배경 신호로 보관합니다. 방문자는 더 적은 카드로 오늘의 흐름을 빠르게 읽고, AI 분석은 관계와 맥락을 보강합니다.\n\n[브리핑 카드]\n1. 오늘의 핵심 신호 - 조회수와 최신성을 기준으로 먼저 볼 만한 이슈만 전면에 배치합니다.\n2. AI 관계 해설 - 키워드 사이의 연결 이유와 시장, 문화, 기술 흐름을 짧게 설명합니다.\n3. 숨김 데이터 보관 - 나머지 95개 데이터는 삭제하지 않고 내부 목록에 유지해 갱신과 정렬에 활용합니다.\n4. 검색 확장 - 네이버, 구글, 빙, 유튜브 링크로 관련 내용을 바로 이어서 확인할 수 있습니다.\n5. 미분적분 - 미분, 적분, 누적 넓이 예제를 인터랙티브 수업으로 확인합니다.\n6. AI 브리핑 상세 - 핵심 신호, 관계 해석, Sort 확장 흐름이 어떻게 작동하는지 안내합니다.",
+      "createdAt": "2026-05-14T16:53:04.576Z"
+    }
+  ],
+  "relationships": {
+    "Visitor-417b11e0": {
+      "characterId": "Visitor-417b11e0",
+      "distance": 9,
+      "state": "핵심 방문자",
+      "role": "조용한 탐색자",
+      "updatedAt": "2026-05-14T16:53:04.576Z"
+    }
+  },
+  "nextLines": {
+    "Visitor-417b11e0": {
+      "characterId": "Visitor-417b11e0",
+      "line": "지난 장면에서 이어서 보면, 메인 화면의 다음 이슈 흐름이 다음에 열릴 주제입니다.",
+      "updatedAt": "2026-05-14T16:53:04.576Z"
+    }
+  },
+  "indexes": {
+    "visitorTypes": [
+      "낯선 방문자",
+      "탐색 방문자",
+      "질문 방문자",
+      "설계 방문자",
+      "핵심 방문자"
+    ],
+    "roles": [
+      "낯선 방문자",
+      "조용한 탐색자",
+      "질문 수집가",
+      "정보 순례자",
+      "개발 관찰자",
+      "참소식 기록자",
+      "N/B 설계자"
+    ],
+    "keywords": {
+      "AI": [
+        "Visitor-417b11e0"
+      ],
+      "메인 화면": [
+        "Visitor-417b11e0"
+      ],
+      "방문자": [
+        "Visitor-417b11e0"
+      ],
+      "관계": [
+        "Visitor-417b11e0"
+      ]
+    }
+  },
+  "templates": {
+    "characterCard": {
+      "uniqueName": "",
+      "temporaryNickname": "",
+      "level": "Lv.1",
+      "currentState": "",
+      "visitorType": "",
+      "role": "",
+      "majorInterests": [],
+      "repeatedKeywords": [],
+      "previousSceneSummary": "",
+      "currentStory": "",
+      "nextTopic": "",
+      "memoryLine": "",
+      "adminJudgement": "",
+      "nb": {
+        "nicknameState": "",
+        "relationshipDepth": 1,
+        "changePoints": [],
+        "currentCoordinate": "",
+        "nextMovement": "",
+        "compressedMemory": "",
+        "storyBundle": ""
+      }
+    },
+    "eventRecord": {
+      "eventName": "",
+      "content": "",
+      "result": "",
+      "importance": "보통",
+      "nextConnection": ""
+    },
+    "sceneRecord": {
+      "currentScene": "",
+      "aiOpeningDirection": ""
+    }
+  }
+}

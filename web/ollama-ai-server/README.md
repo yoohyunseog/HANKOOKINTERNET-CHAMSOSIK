@@ -31,6 +31,8 @@ Authorization: Bearer 원하는_비밀값
 - `POST /api/game-ai-advice`
 - `GET /api/issue-search?q=검색어`
 - `POST /api/issue-search`
+- `GET /api/narrative-memory`
+- `POST /api/narrative-memory`
 
 이슈 검색 예시:
 
@@ -39,6 +41,15 @@ Invoke-RestMethod "http://127.0.0.1:3110/api/issue-search?q=AI%20반도체&limit
 ```
 
 응답에는 AI가 바로 읽기 좋은 `text` 필드가 포함됩니다.
+
+## N/B Narrative Memory DB
+
+`/api/narrative-memory`는 방문자와 대화를 일반 로그가 아니라 이야기형 기억으로 저장합니다.
+
+저장 단위는 `캐릭터`, `사건`, `장면`, `관계`, `다음 문장`입니다.
+저장 파일은 `data/narrative-memory.json`에 생성됩니다.
+
+자세한 구조는 `NB_NARRATIVE_MEMORY_DB.md`를 참고하세요.
 
 ## 외부 공개
 
