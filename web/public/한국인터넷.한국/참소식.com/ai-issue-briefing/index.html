@@ -36,9 +36,9 @@
 
       main {
         display: grid;
-        grid-template-columns: minmax(0, 1fr) 340px;
+        grid-template-columns: minmax(0, 1fr) 360px;
         gap: 18px;
-        width: min(1180px, calc(100% - 28px));
+        width: min(1200px, calc(100% - 28px));
         margin: 0 auto;
         padding: 28px 0;
       }
@@ -89,7 +89,7 @@
       }
 
       .message {
-        max-width: 82%;
+        max-width: 84%;
         padding: 14px 16px;
         border-radius: 8px;
         line-height: 1.65;
@@ -163,7 +163,7 @@
 
       .side-panel h2 {
         margin: 0;
-        font-size: 1.2rem;
+        font-size: 1.15rem;
       }
 
       .field {
@@ -177,6 +177,21 @@
         font-weight: 800;
       }
 
+      .status {
+        min-height: 48px;
+        padding: 12px;
+        border-radius: 8px;
+        color: #315146;
+        background: #ecfdf5;
+        line-height: 1.55;
+        white-space: pre-wrap;
+      }
+
+      .status.error {
+        color: #7f1d1d;
+        background: #fef2f2;
+      }
+
       .quick-list {
         display: grid;
         gap: 8px;
@@ -188,61 +203,6 @@
         border: 1px solid #b7dfd7;
         text-align: left;
         padding: 10px;
-      }
-
-      .status {
-        min-height: 48px;
-        padding: 12px;
-        border-radius: 8px;
-        color: #315146;
-        background: #ecfdf5;
-        line-height: 1.55;
-      }
-
-      .status.error {
-        color: #7f1d1d;
-        background: #fef2f2;
-      }
-
-      .visitor-list,
-      .room-list {
-        display: grid;
-        gap: 8px;
-        max-height: 190px;
-        overflow: auto;
-      }
-
-      .visitor-chip,
-      .room-message {
-        padding: 10px;
-        border: 1px solid #d8e4ee;
-        border-radius: 8px;
-        background: #f8fbfd;
-      }
-
-      .visitor-chip strong,
-      .room-message strong {
-        display: block;
-        margin-bottom: 4px;
-        color: #064e3b;
-        font-size: 0.88rem;
-      }
-
-      .visitor-chip span,
-      .room-message span {
-        color: #64748b;
-        font-size: 0.78rem;
-      }
-
-      .room-message p {
-        margin: 6px 0 0;
-        color: #233247;
-        line-height: 1.5;
-      }
-
-      .room-form {
-        display: grid;
-        gap: 8px;
       }
 
       @media (max-width: 920px) {
@@ -266,20 +226,20 @@
       <section class="chat-shell">
         <div class="chat-head">
           <p class="kicker">AI Content Desk</p>
-          <h1>이슈 분석 채팅</h1>
+          <h1>메인 화면 AI 채팅</h1>
           <p>
-            오늘의 이슈, 키워드 묶음, 시장 신호를 입력하면 AI가 관계와 맥락을 분석합니다.
-            참소식의 Sort 결과나 검색 키워드를 붙여넣고 질문해도 됩니다.
+            AI가 10초마다 참소식 메인 화면을 다시 읽고 현재 화면의 흐름을 한 대사씩 말합니다.
+            방문자가 말을 걸면 같은 흐름 안에서 대화에 참여합니다.
           </p>
         </div>
 
         <div class="messages" id="messages">
-          <div class="message ai">안녕하세요. 분석할 이슈나 키워드를 보내주세요. 핵심 요약, 관계 해석, 위험 신호, 다음 확인 질문으로 정리해드릴게요.</div>
+          <div class="message ai">메인 화면을 읽고 있습니다. 곧 현재 화면 기준으로 한 대사씩 말합니다.</div>
         </div>
 
         <form class="composer" id="chatForm">
-          <textarea id="promptInput" placeholder="예: KOSPI 상승, 반도체 관세, AI 투자 확대가 동시에 언급됐어. 이 흐름을 분석해줘."></textarea>
-          <button id="sendButton" type="submit">AI 분석 요청</button>
+          <textarea id="promptInput" placeholder="예: 지금 메인 화면에서 가장 중요한 이슈가 뭐야?"></textarea>
+          <button id="sendButton" type="submit">메인 화면 분석</button>
         </form>
       </section>
 
@@ -296,21 +256,20 @@
         <button id="checkButton" type="button">접속 확인</button>
         <div class="status" id="statusBox">처음 접속 시 AI 서버 상태를 확인합니다.</div>
 
+        <h2>메인 페이지 읽기</h2>
+        <button id="readMainButton" type="button">메인 정보 읽기</button>
+        <div class="status" id="mainPageBox">참소식 메인 정보를 아직 읽지 않았습니다.</div>
+
         <h2>빠른 질문</h2>
         <div class="quick-list">
-          <button type="button" data-prompt="오늘 이슈를 핵심 신호 5개로 압축하고 서로의 관계를 설명해줘.">핵심 신호 5개</button>
-          <button type="button" data-prompt="이 이슈들이 경제, 기술, 국제 리스크에 어떤 영향을 줄 수 있는지 분석해줘.">영향 분석</button>
-          <button type="button" data-prompt="검색으로 추가 확인해야 할 키워드와 질문을 만들어줘.">추가 검색 질문</button>
+          <button type="button" data-prompt="메인 화면에서 가장 중요한 흐름 하나만 말해줘.">핵심 흐름 1개</button>
+          <button type="button" data-prompt="메인 화면에서 서로 연결된 이슈를 한 문장으로 설명해줘.">연결 관계</button>
+          <button type="button" data-prompt="메인 화면 기준으로 다음에 확인할 질문 하나만 만들어줘.">다음 질문</button>
         </div>
 
-        <h2>방문자 채팅방</h2>
-        <div class="status" id="visitorBox">방문자 확인 중...</div>
-        <div class="visitor-list" id="visitorList"></div>
-        <div class="room-list" id="roomMessages"></div>
-        <form class="room-form" id="roomForm">
-          <input id="roomInput" type="text" maxlength="800" placeholder="방문자 채팅 메시지" />
-          <button type="submit">채팅 보내기</button>
-        </form>
+        <h2>AI 대사 규칙</h2>
+        <div class="status" id="dialogueBox">메인 화면 정보만 사용합니다.
+10초마다 자동으로 한 대사씩 참여합니다.</div>
       </aside>
     </main>
 
@@ -323,15 +282,28 @@
       const endpointInput = document.querySelector("#endpointInput");
       const modelInput = document.querySelector("#modelInput");
       const statusBox = document.querySelector("#statusBox");
-      const visitorBox = document.querySelector("#visitorBox");
-      const visitorList = document.querySelector("#visitorList");
-      const roomMessages = document.querySelector("#roomMessages");
-      const roomForm = document.querySelector("#roomForm");
-      const roomInput = document.querySelector("#roomInput");
-      let roomTimer = null;
+      const readMainButton = document.querySelector("#readMainButton");
+      const mainPageBox = document.querySelector("#mainPageBox");
+      const dialogueBox = document.querySelector("#dialogueBox");
+      let mainPageContext = "";
+      let aiLoopTimerId = 0;
+      let aiBusy = false;
+      let lastAutoLine = "";
+      let lastContextSignature = "";
+      const conversationHistory = [];
 
       function apiBase() {
         return (endpointInput.value || DEFAULT_ENDPOINT).replace(/\/api\/chat$/, "").replace(/\/health$/, "").replace(/\/$/, "");
+      }
+
+      function escapeHtml(text) {
+        const div = document.createElement("div");
+        div.textContent = text || "";
+        return div.innerHTML;
+      }
+
+      function compactText(text) {
+        return (text || "").replace(/\s+/g, " ").trim();
       }
 
       function setStatus(text, isError = false) {
@@ -345,67 +317,77 @@
         message.textContent = text;
         messagesEl.appendChild(message);
         messagesEl.scrollTop = messagesEl.scrollHeight;
+        conversationHistory.push({ role, text: text || "" });
+        while (conversationHistory.length > 12) conversationHistory.shift();
       }
 
-      function formatTime(value) {
-        if (!value) return "";
-        return new Date(value).toLocaleTimeString("ko-KR", { hour: "2-digit", minute: "2-digit" });
+      function oneLine(text) {
+        return (text || "응답 내용이 비어 있습니다.")
+          .replace(/\s+/g, " ")
+          .trim()
+          .split(/(?<=[.!?。！？])\s+/)[0]
+          .slice(0, 220);
       }
 
-      function renderRoom(payload) {
-        if (!payload || !payload.ok) return;
-        visitorBox.textContent = `현재 방문자: ${payload.visitor.id} (${payload.visitor.maskedIp})`;
-
-        visitorList.innerHTML = payload.visitors.map((visitor) => `
-          <div class="visitor-chip">
-            <strong>${visitor.id}</strong>
-            <span>${visitor.maskedIp} / ${formatTime(visitor.lastSeen)}</span>
-          </div>
-        `).join("");
-
-        roomMessages.innerHTML = payload.messages.map((message) => `
-          <div class="room-message">
-            <strong>${message.visitorId}</strong>
-            <span>${message.maskedIp} / ${formatTime(message.createdAt)}</span>
-            <p>${escapeHtml(message.text)}</p>
-          </div>
-        `).join("");
-        roomMessages.scrollTop = roomMessages.scrollHeight;
-      }
-
-      function escapeHtml(text) {
-        const div = document.createElement("div");
-        div.textContent = text;
-        return div.innerHTML;
-      }
-
-      async function refreshVisitorRoom() {
-        const base = apiBase();
-        try {
-          const response = await fetch(`${base}/api/visitor-room`, {
-            cache: "no-store",
-            headers: { "ngrok-skip-browser-warning": "true" }
-          });
-          if (!response.ok) throw new Error(`room ${response.status}`);
-          renderRoom(await response.json());
-        } catch (error) {
-          visitorBox.textContent = `방문자 채팅방 연결 실패: ${error.message}`;
-          visitorBox.classList.add("error");
+      function contextSignature(text) {
+        let hash = 0;
+        const source = (text || "").slice(0, 4000);
+        for (let i = 0; i < source.length; i += 1) {
+          hash = ((hash << 5) - hash + source.charCodeAt(i)) | 0;
         }
+        return String(hash);
       }
 
-      async function sendRoomMessage(text) {
-        const base = apiBase();
-        const response = await fetch(`${base}/api/visitor-room`, {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-            "ngrok-skip-browser-warning": "true"
-          },
-          body: JSON.stringify({ text })
-        });
-        if (!response.ok) throw new Error(`room ${response.status}`);
-        renderRoom(await response.json());
+      function extractMainPageContext(html) {
+        const doc = new DOMParser().parseFromString(html, "text/html");
+        const lines = ["[참소식 메인 페이지 정보]"];
+        const title = compactText(doc.querySelector(".ai-content-title")?.textContent);
+        const desc = compactText(doc.querySelector(".ai-content-desc")?.textContent);
+
+        if (title) lines.push(`브리핑 제목: ${title}`);
+        if (desc) lines.push(`브리핑 설명: ${desc}`);
+
+        const briefingCards = [...doc.querySelectorAll(".ai-content-card")].slice(0, 12);
+        if (briefingCards.length) {
+          lines.push("");
+          lines.push("[브리핑 카드]");
+          briefingCards.forEach((card, index) => {
+            const name = compactText(card.querySelector("strong")?.textContent);
+            const text = compactText(card.querySelector("p")?.textContent);
+            if (name || text) lines.push(`${index + 1}. ${name} - ${text}`);
+          });
+        }
+
+        const dataCards = [...doc.querySelectorAll(".data-card")].slice(0, 40);
+        if (dataCards.length) {
+          lines.push("");
+          lines.push("[현재 HTML에 포함된 이슈 카드]");
+          dataCards.forEach((card, index) => {
+            const text = compactText(card.textContent);
+            if (text) lines.push(`${index + 1}. ${text.slice(0, 500)}`);
+          });
+        }
+
+        return lines.join("\n");
+      }
+
+      async function readMainPageContext() {
+        mainPageBox.textContent = "참소식 메인 페이지를 읽는 중...";
+        mainPageBox.classList.remove("error");
+
+        try {
+          const response = await fetch("../index.html", { cache: "no-store" });
+          if (!response.ok) throw new Error(`main ${response.status}`);
+          const html = await response.text();
+          mainPageContext = extractMainPageContext(html);
+          lastContextSignature = contextSignature(mainPageContext);
+          const lineCount = mainPageContext.split("\n").filter(Boolean).length;
+          mainPageBox.textContent = `메인 페이지 정보 읽기 완료\n${lineCount}줄을 AI 분석 context로 사용합니다.`;
+        } catch (error) {
+          mainPageContext = "";
+          mainPageBox.textContent = `메인 페이지 읽기 실패: ${error.message}`;
+          mainPageBox.classList.add("error");
+        }
       }
 
       async function checkConnection() {
@@ -441,13 +423,42 @@
         }
       }
 
+      async function saveNarrativeMemory(userText, aiText) {
+        const base = apiBase();
+        try {
+          const response = await fetch(`${base}/api/narrative-memory`, {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+              "ngrok-skip-browser-warning": "true"
+            },
+            body: JSON.stringify({
+              text: userText,
+              aiText,
+              mainContext: mainPageContext
+            })
+          });
+
+          if (!response.ok) throw new Error(`memory ${response.status}`);
+          const data = await response.json();
+          if (data.character?.uniqueName) {
+            dialogueBox.textContent = `${data.character.uniqueName} / ${data.character.level} / ${data.character.currentState}\n다음 문장: ${data.nextLine?.line || ""}`;
+          }
+        } catch (error) {
+          dialogueBox.textContent = `AI 대사는 완료됐지만 이야기형 기억 저장 실패: ${error.message}`;
+        }
+      }
+
       async function sendPrompt(prompt) {
         const base = apiBase();
         const model = modelInput.value.trim() || "kimi-k2.6:cloud";
-        addMessage("user", prompt);
+        if (aiBusy) return;
+        aiBusy = true;
         sendButton.disabled = true;
 
         try {
+          if (!mainPageContext) await readMainPageContext();
+
           const response = await fetch(`${base}/api/chat`, {
             method: "POST",
             headers: {
@@ -459,26 +470,58 @@
               messages: [
                 {
                   role: "system",
-                  content: "너는 참소식.com의 AI 이슈 분석가다. 한국어로 답하라. 핵심 요약, 관계 분석, 위험 신호, 다음 확인 질문을 간결하게 정리하라."
+                  content: "너는 참소식.com 메인 화면을 계속 보고 있는 AI 대화 참여자다. 반드시 제공된 메인 화면 정보와 최근 대화만 근거로 한국어 한 문장만 답하라. 목록, 번호, 여러 문단, 외부 추측은 금지한다."
+                },
+                {
+                  role: "user",
+                  content: mainPageContext || "[참소식 메인 페이지 정보 없음]"
+                },
+                {
+                  role: "user",
+                  content: `[최근 대화]\n${conversationHistory.map((item) => `${item.role}: ${item.text}`).join("\n") || "없음"}`
                 },
                 {
                   role: "user",
                   content: prompt
                 }
               ],
-              options: { temperature: 0.35, num_predict: 500 }
+              options: { temperature: 0.25, num_predict: 90 }
             })
           });
 
           if (!response.ok) throw new Error(`API ${response.status}`);
           const data = await response.json();
-          addMessage("ai", (data.content || "응답 내용이 비어 있습니다.").trim());
+          const content = oneLine(data.content);
+          lastAutoLine = content;
+          addMessage("ai", content);
+          dialogueBox.textContent = "AI가 메인 화면과 최근 대화를 기준으로 한 대사 참여했습니다.";
+          await saveNarrativeMemory(prompt, content);
         } catch (error) {
           addMessage("ai", `AI 분석 실패: ${error.message}`);
+          dialogueBox.textContent = "AI 분석 중 오류가 발생했습니다.";
         } finally {
+          aiBusy = false;
           sendButton.disabled = false;
           promptInput.focus();
         }
+      }
+
+      async function autoSpeakFromMain() {
+        if (aiBusy) return;
+        const previousSignature = lastContextSignature;
+        await readMainPageContext();
+        const changed = previousSignature !== lastContextSignature;
+        const prompt = changed
+          ? "메인 화면이 갱신됐다면 새로 눈에 띄는 흐름을 한 문장으로 말해줘."
+          : "현재 메인 화면을 보면서 놓치기 쉬운 연결점 하나를 한 문장으로 말해줘.";
+        dialogueBox.textContent = "AI가 메인 화면을 읽고 자동 대사를 준비 중입니다.";
+        await sendPrompt(prompt);
+      }
+
+      function startAiLoop() {
+        clearInterval(aiLoopTimerId);
+        autoSpeakFromMain();
+        aiLoopTimerId = setInterval(autoSpeakFromMain, 10000);
       }
 
       form.addEventListener("submit", (event) => {
@@ -486,6 +529,7 @@
         const prompt = promptInput.value.trim();
         if (!prompt) return;
         promptInput.value = "";
+        addMessage("user", prompt);
         sendPrompt(prompt);
       });
 
@@ -497,25 +541,12 @@
       });
 
       document.querySelector("#checkButton").addEventListener("click", checkConnection);
-
-      roomForm.addEventListener("submit", async (event) => {
-        event.preventDefault();
-        const text = roomInput.value.trim();
-        if (!text) return;
-        roomInput.value = "";
-        try {
-          await sendRoomMessage(text);
-        } catch (error) {
-          visitorBox.textContent = `채팅 전송 실패: ${error.message}`;
-          visitorBox.classList.add("error");
-        }
-      });
+      readMainButton.addEventListener("click", readMainPageContext);
 
       endpointInput.value = localStorage.getItem("chamsosikAiEndpoint") || DEFAULT_ENDPOINT;
       modelInput.value = localStorage.getItem("chamsosikAiModel") || "kimi-k2.6:cloud";
       setTimeout(checkConnection, 400);
-      setTimeout(refreshVisitorRoom, 600);
-      roomTimer = setInterval(refreshVisitorRoom, 5000);
+      setTimeout(startAiLoop, 1000);
     </script>
   </body>
 </html>

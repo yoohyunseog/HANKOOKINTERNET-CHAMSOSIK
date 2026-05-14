@@ -1,5 +1,7 @@
 const http = require("http");
 const crypto = require("crypto");
+const fs = require("fs");
+const path = require("path");
 
 const HOST = process.env.HOST || "0.0.0.0";
 const PORT = Number(process.env.PORT || 3110);
@@ -9,7 +11,9 @@ const API_TOKEN = process.env.OLLAMA_PROXY_TOKEN || "";
 const ALLOWED_ORIGIN = process.env.ALLOWED_ORIGIN || "*";
 const MAX_BODY_BYTES = Number(process.env.MAX_BODY_BYTES || 1_000_000);
 const NEWS_SEARCH_LIMIT = Number(process.env.NEWS_SEARCH_LIMIT || 10);
-const roomMessages = [];
+const DATA_DIR = process.env.NARRATIVE_DATA_DIR || path.join(__dirname, "data");
+const NARRATIVE_MEMORY_FILE = process.env.NARRATIVE_MEMORY_FILE || path.join(DATA_DIR, "narrative-memory.json");
+const issueRoomMessages = [];
 const visitors = new Map();
 
 function clientIp(req) {
@@ -43,6 +47,309 @@ function touchVisitor(req) {
   };
   visitors.set(id, visitor);
   return visitor;
+}
+
+function nowIso() {
+  return new Date().toISOString();
+}
+
+function ensureDataDir() {
+  fs.mkdirSync(DATA_DIR, { recursive: true });
+}
+
+function emptyNarrativeMemory() {
+  return {
+    meta: {
+      name: "N/B Narrative Memory DB",
+      koreanName: "참소식 AI 소설형 기억 데이터베이스",
+      description: "방문자를 접속자가 아니라 등장인물로, 대화를 로그가 아니라 사건으로 저장하는 이야기형 기억 저장소.",
+      version: 1,
+      createdAt: nowIso(),
+      updatedAt: nowIso()
+    },
+    world: {
+      name: "참소식 AI 채팅방",
+      premise: "AI는 방장이고, 방문자는 등장인물이며, 재방문은 다음 장면이다.",
+      rules: [
+        "AI가 방장이다.",
+        "방문자는 등장인물이다.",
+        "닉네임은 상태값이다.",
+        "레벨은 관계 깊이다.",
+        "대화는 사건이다.",
+        "요약은 기억이다.",
+        "재방문은 다음 장면이다."
+      ],
+      nbAxis: {
+        nickname: "현재 상태값",
+        level: "누적 관계값",
+        event: "변화 지점",
+        scene: "현재 좌표",
+        nextLine: "다음 이동 방향",
+        summaryMemory: "압축된 데이터",
+        story: "시간 흐름을 가진 데이터 묶음"
+      }
+    },
+    characters: {},
+    events: [],
+    scenes: [],
+    relationships: {},
+    nextLines: {},
+    indexes: {
+      visitorTypes: ["낯선 방문자", "탐색 방문자", "질문 방문자", "설계 방문자", "핵심 방문자"],
+      roles: ["낯선 방문자", "조용한 탐색자", "질문 수집가", "정보 순례자", "개발 관찰자", "참소식 기록자", "N/B 설계자"],
+      keywords: {}
+    },
+    templates: {
+      characterCard: {
+        uniqueName: "",
+        temporaryNickname: "",
+        level: "Lv.1",
+        currentState: "",
+        visitorType: "",
+        role: "",
+        majorInterests: [],
+        repeatedKeywords: [],
+        previousSceneSummary: "",
+        currentStory: "",
+        nextTopic: "",
+        memoryLine: "",
+        adminJudgement: "",
+        nb: {
+          nicknameState: "",
+          relationshipDepth: 1,
+          changePoints: [],
+          currentCoordinate: "",
+          nextMovement: "",
+          compressedMemory: "",
+          storyBundle: ""
+        }
+      },
+      eventRecord: {
+        eventName: "",
+        content: "",
+        result: "",
+        importance: "보통",
+        nextConnection: ""
+      },
+      sceneRecord: {
+        currentScene: "",
+        aiOpeningDirection: ""
+      }
+    }
+  };
+}
+
+function readNarrativeMemory() {
+  ensureDataDir();
+  if (!fs.existsSync(NARRATIVE_MEMORY_FILE)) {
+    const initial = emptyNarrativeMemory();
+    writeNarrativeMemory(initial);
+    return initial;
+  }
+  return JSON.parse(fs.readFileSync(NARRATIVE_MEMORY_FILE, "utf8"));
+}
+
+function writeNarrativeMemory(memory) {
+  ensureDataDir();
+  memory.meta.updatedAt = nowIso();
+  fs.writeFileSync(NARRATIVE_MEMORY_FILE, JSON.stringify(memory, null, 2), "utf8");
+}
+
+function narrativeNickname(index) {
+  return `조용한 탐색자 ${String(index).padStart(3, "0")}`;
+}
+
+function uniq(values) {
+  return [...new Set(values.filter(Boolean))];
+}
+
+function extractKeywords(text) {
+  const source = String(text || "").toLowerCase();
+  const candidates = [
+    "AI", "채팅방", "메인 화면", "데이터베이스", "소설형", "기억", "방문자",
+    "등장인물", "사건", "장면", "관계", "다음 문장", "N/B", "설계", "운영", "자동화"
+  ];
+  return candidates.filter((word) => source.includes(word.toLowerCase()));
+}
+
+function classifyVisitor(text, character) {
+  const combined = `${text}\n${(character.majorInterests || []).join(" ")}`;
+  if (/소설형|데이터베이스|구조|설계|N\/B|운영|시스템/.test(combined)) return "설계 방문자";
+  if (/왜|어떻게|무엇|질문|알려|설명/.test(combined)) return "질문 방문자";
+  if ((character.events || []).length >= 5) return "핵심 방문자";
+  if ((character.events || []).length >= 2) return "탐색 방문자";
+  return "낯선 방문자";
+}
+
+function levelFromEvents(count) {
+  return `Lv.${Math.min(9, Math.max(1, Math.floor(count / 2) + 1))}`;
+}
+
+function buildNarrativeText(memory, character) {
+  const recentEvents = (character.events || [])
+    .slice(-5)
+    .map((eventId) => memory.events.find((event) => event.id === eventId))
+    .filter(Boolean);
+
+  return [
+    "[방문자 기억 조회 결과]",
+    `방문자명: ${character.uniqueName}`,
+    `현재 상태: ${character.currentState}`,
+    `레벨: ${character.level}`,
+    `방문자 유형: ${character.visitorType}`,
+    `주요 관심사: ${(character.majorInterests || []).join(", ") || "아직 없음"}`,
+    `반복 키워드: ${(character.repeatedKeywords || []).join(", ") || "아직 없음"}`,
+    "",
+    "[이전 장면 요약]",
+    character.previousSceneSummary || "아직 축적된 장면이 없습니다.",
+    "",
+    "[현재 이야기]",
+    character.currentStory || "현재 이야기를 구성 중입니다.",
+    "",
+    "[최근 사건]",
+    ...recentEvents.map((event, index) => `${index + 1}. ${event.eventName}: ${event.content}`),
+    "",
+    "[다음 문장]",
+    memory.nextLines[character.id]?.line || character.nextLine || "오늘의 대화에서 다음 장면을 열어야 합니다.",
+    "",
+    "[AI 응답 방향]",
+    character.aiResponseDirection || "방문자를 데이터가 아니라 이야기 속 등장인물로 대한다."
+  ].join("\n");
+}
+
+function upsertNarrativeMemory({ visitor, text, aiText, mainContext }) {
+  const memory = readNarrativeMemory();
+  const characterCount = Object.keys(memory.characters).length + 1;
+  const previous = memory.characters[visitor.id];
+  const now = nowIso();
+  const keywords = extractKeywords(`${text}\n${aiText}\n${mainContext}`);
+
+  const character = previous || {
+    id: visitor.id,
+    uniqueName: narrativeNickname(characterCount),
+    temporaryNickname: narrativeNickname(characterCount),
+    level: "Lv.1",
+    currentState: "첫 장면 진입",
+    visitorType: "낯선 방문자",
+    role: "조용한 탐색자",
+    majorInterests: [],
+    repeatedKeywords: [],
+    previousSceneSummary: "",
+    currentStory: "",
+    nextTopic: "",
+    memoryLine: "방문자는 데이터가 아니라 이야기 속 등장인물로 기억되어야 한다.",
+    adminJudgement: "새로운 방문자 흐름을 관찰합니다.",
+    firstSeen: now,
+    lastSeen: now,
+    visits: 0,
+    events: [],
+    nb: {
+      nicknameState: "첫 장면",
+      relationshipDepth: 1,
+      changePoints: [],
+      currentCoordinate: "입장",
+      nextMovement: "관심사 확인",
+      compressedMemory: "",
+      storyBundle: ""
+    }
+  };
+
+  character.visits += 1;
+  character.lastSeen = now;
+  character.majorInterests = uniq([...(character.majorInterests || []), ...keywords]).slice(-12);
+  character.repeatedKeywords = uniq([...(character.repeatedKeywords || []), ...keywords]).slice(-16);
+  character.visitorType = classifyVisitor(text, character);
+  character.level = levelFromEvents((character.events || []).length + 1);
+  character.currentState = character.visitorType === "설계 방문자" ? "AI 구조 설계 관심형" : character.visitorType;
+  character.role = character.visitorType === "설계 방문자" ? "N/B 설계자" : character.role;
+
+  const event = {
+    id: crypto.randomUUID(),
+    characterId: visitor.id,
+    eventName: keywords.includes("소설형") || keywords.includes("데이터베이스")
+      ? "AI 소설형 기억 데이터베이스 구상"
+      : "메인 화면 AI 대화",
+    content: String(text || "").slice(0, 1200),
+    aiLine: String(aiText || "").slice(0, 800),
+    result: "방문자의 흐름을 이야기형 기억으로 압축했습니다.",
+    importance: character.visitorType === "설계 방문자" ? "높음" : "보통",
+    nextConnection: "다음 방문 때 캐릭터 카드와 현재 장면을 불러와 이어갑니다.",
+    keywords,
+    createdAt: now,
+    nb: {
+      changePoint: keywords.join(", ") || "대화 참여",
+      currentCoordinate: character.currentState,
+      nextMovement: "다음 장면 생성"
+    }
+  };
+
+  memory.events.push(event);
+  character.events = [...(character.events || []), event.id].slice(-50);
+
+  character.previousSceneSummary = character.currentStory || "방문자는 참소식 AI 채팅방에 들어와 메인 화면과 AI 운영 흐름을 탐색하기 시작했다.";
+  character.currentStory = aiText
+    ? `${character.uniqueName}은 메인 화면과 대화 흐름을 바탕으로 "${String(aiText).slice(0, 180)}"라는 장면에 도달했다.`
+    : `${character.uniqueName}은 ${keywords.join(", ") || "현재 이슈"}에 대한 장면을 만들고 있다.`;
+  character.nextTopic = keywords.includes("데이터베이스") ? "AI가 저장한 이야기를 검색하고 다음 장면으로 연결하는 방식" : "메인 화면의 다음 이슈 흐름";
+  character.nextLine = `지난 장면에서 이어서 보면, ${character.nextTopic}이 다음에 열릴 주제입니다.`;
+  character.adminJudgement = character.visitorType === "설계 방문자"
+    ? "사이트 구조와 기억 시스템 방향에 영향을 주는 설계형 방문자입니다."
+    : "메인 화면에 대한 반응을 통해 관심사를 축적 중입니다.";
+  character.aiResponseDirection = character.visitorType === "설계 방문자"
+    ? "기술 설명보다 세계관, 구조, 운영 흐름 중심으로 응답합니다."
+    : "메인 화면을 기준으로 짧고 명확하게 다음 질문을 유도합니다.";
+
+  character.nb = {
+    nicknameState: character.currentState,
+    relationshipDepth: Number(character.level.replace("Lv.", "")),
+    changePoints: uniq([...(character.nb.changePoints || []), event.eventName]).slice(-10),
+    currentCoordinate: character.currentStory,
+    nextMovement: character.nextTopic,
+    compressedMemory: character.previousSceneSummary,
+    storyBundle: character.currentStory
+  };
+
+  const scene = {
+    id: crypto.randomUUID(),
+    characterId: visitor.id,
+    currentScene: character.currentStory,
+    aiOpeningDirection: character.aiResponseDirection,
+    mainContextDigest: String(mainContext || "").slice(0, 1200),
+    createdAt: now
+  };
+
+  memory.scenes.push(scene);
+  memory.characters[visitor.id] = character;
+  memory.relationships[visitor.id] = {
+    characterId: visitor.id,
+    distance: character.nb.relationshipDepth,
+    state: character.currentState,
+    role: character.role,
+    updatedAt: now
+  };
+  memory.nextLines[visitor.id] = {
+    characterId: visitor.id,
+    line: character.nextLine,
+    updatedAt: now
+  };
+
+  keywords.forEach((keyword) => {
+    memory.indexes.keywords[keyword] = uniq([...(memory.indexes.keywords[keyword] || []), visitor.id]);
+  });
+
+  while (memory.events.length > 500) memory.events.shift();
+  while (memory.scenes.length > 500) memory.scenes.shift();
+
+  writeNarrativeMemory(memory);
+
+  return {
+    memory,
+    character,
+    event,
+    scene,
+    nextLine: memory.nextLines[visitor.id],
+    textForAi: buildNarrativeText(memory, character)
+  };
 }
 
 function corsHeaders() {
@@ -262,6 +569,60 @@ async function handleIssueSearch(req, res, url) {
   }
 }
 
+async function handleNarrativeMemory(req, res, url) {
+  if (!verifyAuth(req)) {
+    sendJson(res, 401, { ok: false, error: "Unauthorized" });
+    return;
+  }
+
+  try {
+    const visitor = touchVisitor(req);
+
+    if (req.method === "GET") {
+      const memory = readNarrativeMemory();
+      const characterId = url.searchParams.get("characterId") || visitor.id;
+      const character = memory.characters[characterId] || null;
+      sendJson(res, 200, {
+        ok: true,
+        visitor,
+        memory,
+        character,
+        textForAi: character ? buildNarrativeText(memory, character) : ""
+      });
+      return;
+    }
+
+    const body = await parseJsonBody(req);
+    const text = String(body.text || body.userText || "").trim();
+    const aiText = String(body.aiText || body.response || "").trim();
+    const mainContext = String(body.mainContext || "").trim();
+
+    if (!text && !aiText && !mainContext) {
+      sendJson(res, 400, { ok: false, error: "text, aiText, or mainContext is required" });
+      return;
+    }
+
+    const result = upsertNarrativeMemory({
+      visitor,
+      text,
+      aiText,
+      mainContext
+    });
+
+    sendJson(res, 200, {
+      ok: true,
+      visitor,
+      character: result.character,
+      event: result.event,
+      scene: result.scene,
+      nextLine: result.nextLine,
+      textForAi: result.textForAi
+    });
+  } catch (error) {
+    sendJson(res, 500, { ok: false, error: error.message });
+  }
+}
+
 async function handleChat(req, res) {
   if (!verifyAuth(req)) {
     sendJson(res, 401, { ok: false, error: "Unauthorized" });
@@ -385,7 +746,7 @@ async function handleVisitorRoom(req, res) {
       ok: true,
       visitor,
       visitors: activeVisitors,
-      messages: roomMessages.slice(-80)
+      messages: issueRoomMessages.slice(-80)
     });
     return;
   }
@@ -398,20 +759,63 @@ async function handleVisitorRoom(req, res) {
       return;
     }
 
-    roomMessages.push({
+    const userMessage = {
       id: crypto.randomUUID(),
+      role: "user",
       visitorId: visitor.id,
       maskedIp: visitor.maskedIp,
       text,
       createdAt: new Date().toISOString()
-    });
+    };
+    issueRoomMessages.push(userMessage);
 
-    while (roomMessages.length > 200) roomMessages.shift();
+    try {
+      const data = await callOllamaChat({
+        model: body.model || DEFAULT_MODEL,
+        messages: [
+          {
+            role: "system",
+            content: "너는 참소식.com의 공개 이슈 분석 채팅방 AI다. 방문자가 올린 이슈 메시지를 한국어로 짧게 분석하라. 핵심 요약, 연결 키워드, 다음 확인 질문을 포함하라."
+          },
+          {
+            role: "user",
+            content: text
+          }
+        ],
+        options: body.options || {
+          temperature: 0.35,
+          num_predict: 260
+        }
+      });
+
+      issueRoomMessages.push({
+        id: crypto.randomUUID(),
+        role: "ai",
+        visitorId: "AI-Analyst",
+        maskedIp: "server",
+        text: extractOllamaText(data) || "분석 응답이 비어 있습니다.",
+        createdAt: new Date().toISOString(),
+        replyTo: userMessage.id
+      });
+    } catch (error) {
+      issueRoomMessages.push({
+        id: crypto.randomUUID(),
+        role: "ai",
+        visitorId: "AI-Analyst",
+        maskedIp: "server",
+        text: `AI 분석 실패: ${error.message}`,
+        createdAt: new Date().toISOString(),
+        replyTo: userMessage.id
+      });
+    }
+
+    while (issueRoomMessages.length > 200) issueRoomMessages.shift();
 
     sendJson(res, 200, {
       ok: true,
       visitor,
-      messages: roomMessages.slice(-80)
+      visitors: activeVisitors,
+      messages: issueRoomMessages.slice(-80)
     });
   } catch (error) {
     sendJson(res, 500, { ok: false, error: error.message });
@@ -446,6 +850,11 @@ const server = http.createServer((req, res) => {
     return;
   }
 
+  if (url.pathname === "/api/narrative-memory" && (req.method === "GET" || req.method === "POST")) {
+    handleNarrativeMemory(req, res, url);
+    return;
+  }
+
   if (url.pathname === "/api/visitor-room" && (req.method === "GET" || req.method === "POST")) {
     handleVisitorRoom(req, res);
     return;
@@ -454,7 +863,7 @@ const server = http.createServer((req, res) => {
   sendJson(res, 404, {
     ok: false,
     error: "Not found",
-    routes: ["GET /health", "POST /api/chat", "POST /api/game-ai-advice", "GET|POST /api/issue-search", "GET|POST /api/visitor-room"]
+    routes: ["GET /health", "POST /api/chat", "POST /api/game-ai-advice", "GET|POST /api/issue-search", "GET|POST /api/narrative-memory", "GET|POST /api/visitor-room"]
   });
 });
 
