@@ -1,0 +1,299 @@
+{
+  "timestamp": "2026-05-14T10:02:25.860591",
+  "model": "mistral:latest",
+  "keyword_count": 3,
+  "analyze_subtitles": true,
+  "analysis_source": "youtube",
+  "keywords": [
+    {
+      "keyword": "오늘의 주요 뉴스",
+      "is_fixed": true,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "반도체 호황 경상흑자",
+      "is_fixed": false,
+      "views": [
+        8102,
+        3867
+      ],
+      "video_count": 2,
+      "videos": [
+        {
+          "title": "[Economy at a Glance] \"Strong Booms Can Overheat\"… Supercycle Shaking the Korean Economy / KBS Ma...",
+          "video_id": "1sTbWsOQBEs",
+          "views": 8102,
+          "upload_date": "2026-05-13",
+          "url": "https://www.youtube.com/watch?v=1sTbWsOQBEs",
+          "subtitle_summary": "1. 블럼보그 뉴스에 따르면, AI 슈퍼 서플라이스로 인해 2026년 한국의 경상수지 흑자가 GP 대비 10% 이상 증가할 것으로 예상된다.\n2. 반도체 수출이 우리나라에 크나 큰 영향을 주고 있고, 계속적으로 좋은 흐름을 이어갈 것이며, 경기가 과열될 수 있다는 예상이 있다.\n3. 한국의 성장률은 0%에서 2.5%로 예상되고, 금리 인상이 하반기부터 1~2번 발생할 수 있다는 것이 전망이다.",
+          "db_saved": true
+        },
+        {
+          "title": "“반도체가 한국 경제 통째로 바꾼다?”…골드만삭스 분석 봤더니 [잇슈 머니]  / KBS  2026.05.13.",
+          "video_id": "IfckuN3HrGY",
+          "views": 3867,
+          "upload_date": "2026-05-13",
+          "url": "https://www.youtube.com/watch?v=IfckuN3HrGY",
+          "subtitle_summary": "1. 전세계 투자은행 Goldman Sachs는 한국 경제에 대해 긍정적인 예측을 내놓았다고 보도되었습니다. 이는 AI 반도체 수출 호황이 두 나라의 경상수지 흑자를 사상 최대 수준으로 끌어올리는 것으로 예상되었기 때문입니다.\n2. Goldman Sachs는 \"AI 슈퍼 서플러스(AI Supe Su plus)\"라는 표현을 사용하여 AI가 만들어낸 초대형 흑자를 의미합니다. 예상되는 수치로, 2026년 한국의 경상수지 흑자는 GDP 대비 10%를 넘어설 것으로 예상되었습니다.\n3. Goldman Sachs는 한국의 AI 관련 수출이 올해 경제 규모의 거의 30%까지 커질 수 있다고 분석했습니다. 이것은 지난 10년 동안 GDP 대비 10% 미만이었던 AI 관련 수출에 비해 거의 세 배 수준으로 뛰는 것입니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 3.3875,
+      "min": 0.0,
+      "nb_score": 33874.7593,
+      "avg_views": 5984.5,
+      "total_views": 11969
+    },
+    {
+      "keyword": "이란 중국 미국 정상회담",
+      "is_fixed": false,
+      "views": [
+        14364,
+        2680
+      ],
+      "video_count": 2,
+      "videos": [
+        {
+          "title": "[이슈] '방중' 트럼프 \"손 떼라\"…시진핑 '반격'…중동에 손 뻗는 중국…정상회담 '냉기'/2026년 5월 13일(수)/KBS",
+          "video_id": "4M2KQAD-D0A",
+          "views": 14364,
+          "upload_date": "2026-05-13",
+          "url": "https://www.youtube.com/watch?v=4M2KQAD-D0A",
+          "subtitle_summary": "1. 미국 대통령 트럼프는 중국 베이징으로 방중하여, 2박 3일간의 정상회담을 진행할 예정입니다. 이란 문제와 무역 문제가 주된 논의 대상이며, 미국은 이란과의 합의를 위해 중국의 협조를 요청할 것으로 예상됩니다.\n2. 트럼프는 중국에서 대만 문제와 중동사태 해결을 논의하고, 대만에 대한 미국산 무기 수출을 이번 정상회담에서 다루겠다고 밝혔습니다.\n3. 양측의 신경전으로 인해 경제 협력에 대한 불확실성이 높아지고 있으며, 트럼프는 이번 회담에서 시진핑에게 호르무주 해협 개방과 종전을 위해 이란을 설득해달라고 요청할 것으로 보입니다.",
+          "db_saved": true
+        },
+        {
+          "title": "이란, 미중 정상회담 앞두고 중국에 “우리 목소리 전해달라\" [세상만사] #이란 #미국 #중국 #정상회담",
+          "video_id": "15Pcnuc0nfE",
+          "views": 2680,
+          "upload_date": "2026-05-13",
+          "url": "https://www.youtube.com/watch?v=15Pcnuc0nfE",
+          "subtitle_summary": "1. 트럼프 대통령은 미중 정상회담을 위해 중국에 출발했습니다.\n2. 이란과의 관계에 대해서는 도움이 필요 없다고 주장했으나, 그것이 진짜인지 의문이 있습니다.\n3. 트럼프 대통령은 중국과의 협상에서 자신의 협상력을 키우기 위해 전략적인 수사를 하고 있는 것으로 보입니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 2.8569,
+      "min": 1.5517,
+      "nb_score": 1.8412,
+      "avg_views": 8522.0,
+      "total_views": 17044
+    },
+    {
+      "keyword": "현대모비스 주가 전망",
+      "is_fixed": false,
+      "views": [
+        1837,
+        1992,
+        1348,
+        1677
+      ],
+      "video_count": 4,
+      "videos": [
+        {
+          "title": "[Hyundai Mobis Stock Price Forecast] Just the beginning of a massive surge?! Manipulation by mark...",
+          "video_id": "tKI2IL2_4e8",
+          "views": 1837,
+          "upload_date": "2026-05-13",
+          "url": "https://www.youtube.com/watch?v=tKI2IL2_4e8",
+          "subtitle_summary": "1. Hyundai Mobis 주식은 최근 조정을 받아 하락했으나, 오늘 강력한 장대 양봉이 터졌어서 전고점을 돌파할 가능성이 있습니다.\n2. 차트를 보면 2월에 커앤 패턴이 나타났으며, 이 부분을 막고 떨어졌던 전고점을 다시 돌파하는 것이 주의깊게 필요합니다.\n3. 거래량이 강하게 붙었으며, 이번에도 매수 타이밍으로 보인다고 말했습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[현대모비스 주가전망] 보스턴다이내믹스 액추에이터 공급과 휴머노이드 신사업 수혜 분석",
+          "video_id": "qiuERGYpDpI",
+          "views": 1992,
+          "upload_date": "2026-05-14",
+          "url": "https://www.youtube.com/watch?v=qiuERGYpDpI",
+          "subtitle_summary": "1. 현재 증시는 역사적인 순간을 거치고 있으며, 대한민국 코스피와 뉴욕 증시, 달러-원 환율의 변동성이 심한 상황입니다.\n2. 현대 모비스는 최근 전동화 부문 매출과 폭스바겐 배터리 시스템 수주 등으로 인해 급등하고 있지만, 단기 급등에 따른 차익 실현 매물이 넘쳐나고 있어 주가가 널뛰기를 합니다.\n3. 현재 우리 개미들 물량 털어내려고 하며, 공포감을 조성할 것이지만, 결국 폭발적인 상승이 나올 겁니다. 주식에는 큰 이벤트들이 있으며, 유증 터질 때 주가가 반토막 난다는 것을 알아두어야 합니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[현대모비스 주가전망] 🚨긴급 속보! 결국 나올게 나왔습니다  필수시청 #현대모비스 #아틀라스 #로봇대장주",
+          "video_id": "gZjBNUFmwzs",
+          "views": 1348,
+          "upload_date": "2026-05-13",
+          "url": "https://www.youtube.com/watch?v=gZjBNUFmwzs",
+          "subtitle_summary": "1. 로봇 산업에 대한 관심이 높아지고 있으며, 주목해야 할 기업은 현대 모비스입니다. 현대차 그룹이 보스턴 다이네믹스를 통해 생산하는 로봇 '아틀라스'의 하드웨어 80%가 현대 모비스에서 제조됩니다.\n2. 현대차 그룹은 데이터 사업으로 진화하고 있으며, 올해 3분기 예정인 로봇 훈련센터 RMC에는 구글 딥마인드와 엔비디아가 투자자로 참여할 가능성이 매우 높습니다.\n3. 현대 모비스는 단순한 자동차 부품사가 아닙니다. 피지컬 AI 시대의 물리적 실체를 책임지며, 글로벌 로봇 생산 기지입니다. 이 종목은 삼성이 수조원 때 투자할 가능성이 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "현대모비스주가전망 5월 13일 긴급속보발표 대박 공시 호재 나왔습니다. 중요한 기회 #현대모비스주가전망 #현대모비스목표가 #현대모비스",
+          "video_id": "UgVBPclHLzc",
+          "views": 1677,
+          "upload_date": "2026-05-13",
+          "url": "https://www.youtube.com/watch?v=UgVBPclHLzc",
+          "subtitle_summary": "1. 현대 모비스의 미래 성장에 관심사가 계속 증가하고 있다는 점을 강조합니다.\n2. 현재 시작이며, 안전한 포지션으로 수익을 만들어낼 수 있다는 것을 제시합니다.\n3. 최근 부동산법 변경으로 인해 600조 이상의 자금이 규정적으로 현대 모비스에 투자될 수 있다는 것을 설명합니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 1.1433,
+      "min": 5.1963,
+      "nb_score": 0.22,
+      "avg_views": 1713.5,
+      "total_views": 6854
+    },
+    {
+      "keyword": "그랜저 신차 출시",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "코스피 7900선 반도체 순환매",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "심장 건강에 좋은 음식",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "AI 직장 생활 치트키",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "항공사고 보험금 보호 강화",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "삼성전자 초기업노조 과반노조",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "한은 기준금리 동결",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "여의도 봄꽃축제",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "HBM 반도체 전망",
+      "is_fixed": false,
+      "views": [
+        2538
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "[우리기술] 목요일  새벽에 이게 무슨일이야ㅠ 속보 떴다! 놀라지마세요!!",
+          "video_id": "dAXeOxR7WEg",
+          "views": 2538,
+          "upload_date": "2026-05-13",
+          "url": "https://www.youtube.com/watch?v=dAXeOxR7WEg",
+          "subtitle_summary": "1. 5월 14일 목요일, 새벽 6시 13분에 방송을 진행합니다. 뉴욕 증시가 새벽 5시에 마감되었고, 대표적인 종목들이 큰 하락이 없어서 안정적입니다.\n2. 우리 국내 증시에 영향을 미치는 것으로 필라델피아 반도체 지수가 2.57% 상승했고, 엔비디아와 테슬라도 상승하였습니다.\n3. 우리 기술은 빠질 만큼 빠져야 한다고 주장합니다. 17,000원과 14,000원을 기억하여 분할 매수를 잘 하면 최대한 저점을 잡고 상승시의 수익률이 크다는 것을 강조합니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "인공태양 개발 경쟁",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "전통시장 골목상권 회복",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "이커머스 적자 영업이익",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    }
+  ]
+}

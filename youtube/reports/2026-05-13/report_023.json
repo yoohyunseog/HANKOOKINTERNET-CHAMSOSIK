@@ -1,0 +1,305 @@
+{
+  "timestamp": "2026-05-13T08:17:59.776335",
+  "model": "mistral:latest",
+  "keyword_count": 3,
+  "analyze_subtitles": true,
+  "analysis_source": "youtube",
+  "keywords": [
+    {
+      "keyword": "오늘의 주요 뉴스",
+      "is_fixed": true,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "신한카드 연체채권 매각",
+      "is_fixed": false,
+      "views": [
+        3147,
+        155446
+      ],
+      "video_count": 2,
+      "videos": [
+        {
+          "title": "Financial Sector Sells 'Evergreen' Bonds Amid Presidential Criticism / Korea Economic TV News",
+          "video_id": "OeGPoyFvnzc",
+          "views": 3147,
+          "upload_date": "2026-05-12",
+          "url": "https://www.youtube.com/watch?v=OeGPoyFvnzc",
+          "subtitle_summary": "1. 대통령이 금융사들이 장기 연체 채권을 상록수에 넘겨 매각하는 것을 비판하면서, 금융사들은 최근 이 채권을 새도약 기금에 매각하기로 결정했습니다.\n2. 상록수는 장기간 보유하고 관리한 지불 어려운 연체 채권을 가지고 있으며, 이를 세도약 기금에 넘기지 않고 추심하고 있습니다.\n3. 최근 이 사실이 알려졌으므로 상록수 출자들은 5년간 약 400억 원 가량의 배당을 받았는데, 이는 선거에서 논란의 중심이 되었습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "\"Holding a '42 Billion Won' Spree Over 5 Years...\"There Is a Limit,\" President Steps In / SBS 8 News",
+          "video_id": "E-Sib3gX3B8",
+          "views": 155446,
+          "upload_date": "2026-05-12",
+          "url": "https://www.youtube.com/watch?v=E-Sib3gX3B8",
+          "subtitle_summary": "1. 대형 금융사들이 취약한 고객들을 위협하며 배당 수익을 높이는 방법으로, 부실 채권 처리 회사를 통해 장기 연체 채권을 구매하고 추심하거나 소각하는 것이 드러났습니다.\n2. 이재명 대통령은 이를 원시적인 약탈 금융으로 비판하며, 서민들의 목줄을 죄고 있다고 주장했습니다.\n3. 금융사들은 최근 5년간 420억 원의 배당 수익을 올린 것으로 알려졌으며, 이를 처리하기 위해 대상 채권 약 5000억 원을 새도약기금에 매각하고, 나머지 약 3500억 원을 한국자산관리공사로 전송할 계획이 있었습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 2.7785,
+      "min": 2.554,
+      "nb_score": 1.0879,
+      "avg_views": 79296.5,
+      "total_views": 158593
+    },
+    {
+      "keyword": "AI 국민배당금",
+      "is_fixed": false,
+      "views": [
+        30338,
+        66791,
+        31452,
+        13700,
+        9403
+      ],
+      "video_count": 5,
+      "videos": [
+        {
+          "title": "'AI National Dividend' Remarks Spark Widespread Controversy... Blue House Draws Line / SBS 8 News",
+          "video_id": "LcMuJDFwL5w",
+          "views": 30338,
+          "upload_date": "2026-05-12",
+          "url": "https://www.youtube.com/watch?v=LcMuJDFwL5w",
+          "subtitle_summary": "청와대 정책실장 김용범은 AI, 반도체 산업의 성과를 국민에게 '국민배당금'으로 돌려주는 것을 제안했습니다. 이 발언으로 인해 파문이 확산되고 있습니다. 김용범은 AI 시대의 메모리와 인프라 수요가 장기적 구조 변화에 따라 한국은 처음으로 지속적 초과 이윤을 생산하는 국가가 될 수 있다고 주장했습니다. 김용범은 전 국민에게 구조적으로 환원되어야 할 과실의 일부를 '국민배당금'이라는 이름으로 지칭하고자 했습니다. 그러나 초과 세수가 생기지 않는다면 국민 배당금은 허황된 이야기라고 주장했습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[지금뉴스] 김용범 ‘AI 국민배당금’ 발언에…“코스피 급락 배경” “개인 의견” / KBS 2026.05.12.",
+          "video_id": "HFo3esZdGH0",
+          "views": 66791,
+          "upload_date": "2026-05-12",
+          "url": "https://www.youtube.com/watch?v=HFo3esZdGH0",
+          "subtitle_summary": "1. 코스피 주가가 8천선을 돌파하고 급격히 하락한 이유로 분석에 따라 김용범, 청와대 정책실장의 AI 국민배당금 언급이 영향을 미쳤다는 것으로 알려졌습니다.\n2. 김실장은 SNS를 통해 AI 시대에서 초과 이윤을 사회적으로 환원하기 위해 국민 배당금 도입을 제안했고, 이 발언은 외국인 투자자들이 양대 반도체 기업 주식을 수조원어치 순매도함으로써 주가가 약세로 급격히 전환된 것으로 보였습니다.\n3. 김실장은 새로운 세금 신설이 아닌 초과 세수를 활용하자는 취지라고 해명했으며, 이 발언에 대한 비판도 쏟아졌습니다. 국민의 힘 장동혁 대표는 공산당 본색이 드러났다고 주장했고, 개혁신당 이준석 대표는 야인 시대 정치라고 비판했습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "Chief of Staff Kim Yong-beom Proposes 'National Dividend' for AI Era: \"Anti-Market\" vs. \"Virtuous...",
+          "video_id": "DR-RPwodaKA",
+          "views": 31452,
+          "upload_date": "2026-05-12",
+          "url": "https://www.youtube.com/watch?v=DR-RPwodaKA",
+          "subtitle_summary": "1. 청와대 정책실장 Kim Yong-beom 은 AI 시대에서 일자리가 사라질 수 있다는 경고를 하며, AI 산업의 성장으로 인한 사회 내부 격차를 줄이기 위해 '국민 배당 금' (National Dividend) 을 제안했습니다.\n2. 김 Yong-beom 은 AI 산업의 과실은 전국민이 쌓은 기반으로부터 나온 것이며, 초과 세수를 일부 국민에게 환원해야 한다고 주장했습니다.\n3. 이 제안에 대한 논쟁이 발생하여 정치권도 탐침을 보였으나, 청와대는 개인의견이며 새로운 횡제세를 도입하는 것이 아니라고 해명했습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "Kim Yong-bum's 'AI National Dividend' Controversy... Opinions Say \"Time for Discussion\" / JTBC Ne...",
+          "video_id": "l15CpL9UW3c",
+          "views": 13700,
+          "upload_date": "2026-05-12",
+          "url": "https://www.youtube.com/watch?v=l15CpL9UW3c",
+          "subtitle_summary": "1. 코스피는 오늘 8,000선까지 올라갔다가 외국인 매도로 하락하며 7,400선에 정지했습니다.\n2. 이 폭락의 원인으로 김용범 청와대 정책실장의 AI 국민 배당금 발언이 제시되었습니다.\n3. 김실장은 초과세수를 활용하여 국민에게 혜택을 나누는 것으로 새로운 세율을 부과하지 않는 의미였고, 청와대는 개인 의견일뿐 정부 방침과 무관하다고 주장했습니다. 그러나 AI 산업 호황의 혜택을 우리 서회가 어떻게 나누는지에 대한 논의를 본격화할 필요가 있다는 의견도 나옵니다.",
+          "db_saved": true
+        },
+        {
+          "title": "‘AI 국민 배당금’ 띄운 정책실장…“과실 특정 기업만의 결과 아냐” [9시 뉴스] / KBS  2026.05.12.",
+          "video_id": "p5l-dpXbCOQ",
+          "views": 9403,
+          "upload_date": "2026-05-12",
+          "url": "https://www.youtube.com/watch?v=p5l-dpXbCOQ",
+          "subtitle_summary": "1. 김용범 정책실장은 AI 국민 배당금 구상을 밝혔으나, 과세 규제에 대한 의견이 분분하여 추세와 혼란이 일어났습니다.\n2. 김용범은 AI 인프라 시대에는 특정 기업만의 결과가 아닌 국민에게 일부 과실을 구조적으로 환원해야 한다고 주장했습니다.\n3. 이 발언으로 인해 한국 증시에서 AI 수회 기업에 대한 새로운 과세 신호가 나타났고, 투자자 혼란이 커졌습니다. 또한 정치적인 공방도 이어졌습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0.9743,
+      "min": 2.1609,
+      "nb_score": 0.4509,
+      "avg_views": 30336.8,
+      "total_views": 151684
+    },
+    {
+      "keyword": "삼성 노조 파업",
+      "is_fixed": false,
+      "views": [
+        40753,
+        2042,
+        7964,
+        3351
+      ],
+      "video_count": 4,
+      "videos": [
+        {
+          "title": "'파업 D-8' 삼성전자 노사, 협상 결렬...노조 \"요구 관철 안 돼\" / YTN",
+          "video_id": "h-ks40Aif4E",
+          "views": 40753,
+          "upload_date": "2026-05-12",
+          "url": "https://www.youtube.com/watch?v=h-ks40Aif4E",
+          "subtitle_summary": "1. 삼성전자 노사와 중앙동위원회는 21일 총파업을 앞두고 16시간 이상의 장기간 협상을 하였으나 결과적으로 이견을 좁히지 못했습니다.\n2. 노조는 중앙동위원회의 조정안에서 자신들의 요구를 관찰하기 어려워 불만을 표명했습니다.\n3. 삼성전자 노사와 노동조합은 추가 사후 조정을 요청할 경우에는 언제든지 지원할 수 있음을 덧붙였으나, 현재 상황에서는 회의를 종료하고 추가 조정을 요구하지 않았습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "\"No, you're really asking for 2.6 billion won?\" The real reason why the more the Samsung Electron...",
+          "video_id": "_YfloAxiHks",
+          "views": 2042,
+          "upload_date": "2026-05-12",
+          "url": "https://www.youtube.com/watch?v=_YfloAxiHks",
+          "subtitle_summary": "1. 삼성전자의 최고 실적을 기록했지만 특정 집단은 회사의 금고를 열어달라는 요구를 하였습니다. 이들은 삼성전자 노조입니다. 그들의 요구대로라면 반도체 직원 한 명이 3년 안에 성과급으로 26억 원을 받게 될 것입니다.\n2. 노후 대비로 400만 주주가 지난해 받은 배당금에 네배에 달하는 돈이라면 회사의 15%를 성과급으로 요구하고 있습니다.\n3. 노조의 요구는 삼성전자가 번 돈의 15%를 성과급으로 달라고 하며, 올해 반도체로 벌어들릴 것으로 예상되는 270조원의 15%면 40조원이 넘는 돈을 의미합니다. 이걸 직원수로 나누고 3년치를 합산하면 1인당 26억이라는 금액이 나옵니다.",
+          "db_saved": true
+        },
+        {
+          "title": "삼성전자 노사, 오늘 마지막 담판...총파업 기로 / YTN",
+          "video_id": "onVQsU7XEto",
+          "views": 7964,
+          "upload_date": "2026-05-12",
+          "url": "https://www.youtube.com/watch?v=onVQsU7XEto",
+          "subtitle_summary": "1. Samsung Electronics노사(협상위원)가 정부 중재 아래 성과급 문제로 인한 마지막 협상에서 어려움을 겪고 있다.\n2. 양측의 차이점은 성과급 산정방식과 제도화 여부이며, 도조측은 영업 이익 15%를 성과급 재원으로 확보하고 지급 상한을 없애는 방안을 주장하고 있다.\n3. 사측은 직원들의 추가 의견이 수렴되어야 성과급 체계의 제도화를 허용한다며 난색을 나타내고 있으며, 업계 최고 수준의 실적을 달성한다면 추가 보상을 하겠다는 입장이다.\n4. 파업이 현실화되면 충격은 만만치 않을 것으로 예고되며, 글로벌 빅테크 기업들이 반도체 생산 차지를 우려하고 있다.\n5. 주요 기업들이 핵심 부품 공급처를 다변화할 가능성도 제기되며, 경쟁국이 반사 이익을 얻을 수 있는 분석도 나온다.\n6. 중소 협력사들의 직격 탄도가 불가피할 전망이며, Samsung Electronics의 손실 규모는 30조원 암타크로 추산된다.",
+          "db_saved": true
+        },
+        {
+          "title": "Final Day of Mediation at Samsung Electronics, Facing 'General Strike Crossroads'... Union: \"Will...",
+          "video_id": "8OlPzJbwPpM",
+          "views": 3351,
+          "upload_date": "2026-05-12",
+          "url": "https://www.youtube.com/watch?v=8OlPzJbwPpM",
+          "subtitle_summary": "1. The initial union at Samsung Electronics, established last year as a new birth of the labor union, has grown to represent over half of the employees within six months, with one individual actively working from the DS division.\n2. The union representative now aims to achieve satisfactory results for the members and emphasizes their commitment to achieving the best outcome, whether it's a compromise or a strike.\n3. They wish to convey the message that they will strive for the best possible result in the ongoing mediation process at Samsung Electronics.",
+          "db_saved": true
+        }
+      ],
+      "max": 0.6816,
+      "min": 1.7648,
+      "nb_score": 0.3862,
+      "avg_views": 13527.5,
+      "total_views": 54110
+    },
+    {
+      "keyword": "나스닥 100 지수",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "K-철강 생존 전략",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "약탈금융 전수조사",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "부동산 세금 인상",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "소비 양극화 현상",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "한국 잠수함 전력 순위",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "ETF 순자산 증가",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "산업 AI 마키나락스",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "중국 과잉공급 규제",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "한미 동맹 부담 분담",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "디지털 개발자 AI 통제",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    }
+  ]
+}

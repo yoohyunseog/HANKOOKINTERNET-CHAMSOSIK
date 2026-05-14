@@ -2539,6 +2539,18 @@ KOSDAQ 시장은 다변화된 투자 포트폴리오를 구축하고, 투자 자
       box-shadow: 0 8px 20px rgba(15, 23, 42, 0.07);
     }
 
+    .ai-content-card.ai-content-link {
+      display: block;
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .ai-content-card.ai-content-link:active,
+    .ai-content-card.ai-content-link.clicked {
+      background: #e0f2fe;
+      border-color: #2563eb;
+    }
+
     .ai-content-card strong {
       display: block;
       margin-bottom: 8px;
@@ -2583,6 +2595,12 @@ KOSDAQ 시장은 다변화된 투자 포트폴리오를 구축하고, 투자 자
       background: linear-gradient(180deg, #ffffff 0%, #f9fbff 100%) !important;
       box-shadow: 0 8px 18px rgba(30, 64, 175, 0.14) !important;
       transition: transform 0.18s ease, box-shadow 0.18s ease !important;
+    }
+
+    .data-card.clicked {
+      border-left-color: #0f9f9a !important;
+      background: linear-gradient(180deg, #dcfce7 0%, #ecfeff 100%) !important;
+      box-shadow: 0 16px 34px rgba(15, 159, 154, 0.22) !important;
     }
 
     .data-card:hover {
@@ -2679,6 +2697,14 @@ KOSDAQ 시장은 다변화된 투자 포트폴리오를 구축하고, 투자 자
           <strong>검색 확장</strong>
           <p>네이버, 구글, 빙, 유튜브 링크로 관련 내용을 바로 이어서 확인할 수 있습니다.</p>
         </article>
+        <a class="ai-content-card ai-content-link" href="../미분적분/">
+          <strong>미분적분</strong>
+          <p>미분, 적분, 누적 넓이 예제를 인터랙티브 수업으로 확인합니다.</p>
+        </a>
+        <a class="ai-content-card ai-content-link" href="./ai-issue-briefing/">
+          <strong>AI 브리핑 상세</strong>
+          <p>핵심 신호, 관계 해석, Sort 확장 흐름이 어떻게 작동하는지 안내합니다.</p>
+        </a>
       </div>
     </section>
     
@@ -3222,6 +3248,7 @@ KOSDAQ 시장은 다변화된 투자 포트폴리오를 구축하고, 투자 자
     let currentCategory = 'all';
     let sortingTimers = []; // 진행 중인 애니메이션 타이머들
     let newPostsIntervalId = null;
+    let selectedCardId = null;
 
     function clearSortInterruptingIntervals() {
       window.__sortModeActive = true;
@@ -3419,10 +3446,12 @@ KOSDAQ 시장은 다변화된 투자 포트폴리오를 구축하고, 투자 자
       const category = item.category || '일반';
       const nbMax = item.results?.[0]?.nb_max || 0;
       const nbMin = item.results?.[0]?.nb_min || 0;
+      const itemId = item.id || item.calculation_id || `item-${originalIndex}`;
+      const clickedClass = selectedCardId === String(itemId) ? ' clicked' : '';
       
       return `
         <div class="masonry-item" data-category="${category}" style="animation-delay: ${index * 0.05}s">
-          <div class="data-card" data-item-index="${originalIndex}">
+          <div class="data-card${clickedClass}" data-item-index="${originalIndex}" data-card-id="${escapeHtml(String(itemId))}">
             <div class="mb-2">
               ${showRank && index < 3 ? `<span class="badge-rank">🏆 ${index + 1}위</span>` : `<span class="badge bg-secondary">#${index + 1}</span>`}
               <span class="badge bg-info ms-2">${item.type === 'text' ? '텍스트' : '숫자'}</span>
@@ -3485,6 +3514,24 @@ KOSDAQ 시장은 다변화된 투자 포트폴리오를 구축하고, 투자 자
         cardElement.appendChild(sortMeta);
       }
       sortMeta.innerHTML = `<i class="bi bi-arrow-down-up"></i> Sort rank #${index + 1} | Score ${(item.totalSimilarity * 100).toFixed(1)}%`;
+    }
+
+    function setupCardSelectionListeners() {
+      document.addEventListener('click', function(event) {
+        const linkCard = event.target.closest('.ai-content-link');
+        if (linkCard) {
+          linkCard.classList.add('clicked');
+        }
+
+        const dataCard = event.target.closest('.data-card');
+        if (!dataCard) return;
+
+        selectedCardId = dataCard.dataset.cardId || null;
+        document.querySelectorAll('.data-card.clicked').forEach(card => {
+          card.classList.remove('clicked');
+        });
+        dataCard.classList.add('clicked');
+      });
     }
 
     function filterDataByCategory(data, category) {
@@ -3969,6 +4016,7 @@ KOSDAQ 시장은 다변화된 투자 포트폴리오를 구축하고, 투자 자
     // 초기 로드
     document.addEventListener('DOMContentLoaded', function() {
       setupCategoryButtonListeners();
+      setupCardSelectionListeners();
       newPostsIntervalId = setInterval(checkForNewPosts, 5000); // 5초마다 새 게시물 체크
     });
 

@@ -2,100 +2,101 @@
   "title": "이클립스 센츄어리 D.P 브리핑",
   "model": "deepseek-v3.1:671b-cloud",
   "source_feed": "https://xn--9l4b4xi9r.com/feed.xml",
-  "updated_at": "2026-05-12T20:39:00.167308+00:00",
-  "feed_last_build_date": "Tue, 12 May 2026 20:38:07 GMT",
+  "updated_at": "2026-05-14T04:08:16.517723+00:00",
+  "feed_last_build_date": "Thu, 14 May 2026 04:08:09 GMT",
   "item_count": 12,
-  "headline": "삼성전자 노사갈등 심화, AI 국민배당금 논의 확산",
-  "summary": "삼성전자 노사 협상 실패와 총파업 위기가 반도체 산업 불안을 초래하고 있습니다. 한편 AI 초과세수를 활용한 국민배당금 제안이 논의되며 민생 지원 효과에 대한 관심이 높아지고 있습니다. 중동에서는 이란-쿠웨이트 국경 분쟁이 지속되고 있습니다.",
+  "headline": "미중 정상회담 진행 중, 삼성 노사 분쟁과 군사협력 요구로 시장 불확실성 증가",
+  "summary": "미중 정상회담이 진행되며 양국 협력 강조 메시지가 나오고 있습니다. 삼성전자 노사 분쟁이 심화되며 생산 차질 우려가 커지고 있습니다. 미국의 대일 군사작전 협력 요구로 지정학적 긴장이 높아지고 있습니다.",
   "signals": [
-    "삼성전자 노조 총파업 위기",
-    "AI 국민배당금 정책 제안",
-    "이란-쿠웨이트 국경 충돌"
+    "미중 정상회담 협력 메시지",
+    "삼성전자 노조 총파업 예정",
+    "미국 군사작전 협력 요구"
   ],
   "risks": [
-    "반도체 공급망 차질",
-    "대규모 성과급 요구 확산",
-    "중동 지정학적 긴장"
+    "삼성전자 생산 차질 가능성",
+    "지정학적 긴장 고조",
+    "노사 분쟁 장기화 우려"
   ],
   "market_impact": [
-    "코스피 하락 압력",
-    "코스닥 기술주 변동성 확대",
-    "비트코인 투자 심리 위축",
-    "한국 증시 불확실성 증가"
+    "코스피 하방 압력",
+    "코스닥 변동성 확대",
+    "비트코인 안전자산 수요 증가",
+    "한국 증시 심리 위축"
   ],
-  "outlook": "단기적으로 삼성전자 파업이 증시에 부담으로 작용할 전망이지만, AI 관련 재정 정책 논의는 중장기적으로 긍정적일 수 있습니다.",
-  "quality_note": "반복된 키워드 위주로 구성되어 심도 있는 분석에는 한계가 있음",
+  "outlook": "단기적으로 삼성 관련 주식 변동성 확대와 지정학적 리스크가 증시에 부정적 영향을 줄 전망",
+  "quality_note": "피드가 실시간 이슈를 제공하지만 일부 항목이 중복되고 상세한 데이터가 부족함",
   "weighted_signal": {
     "score": 42,
-    "upper_bound": 25,
-    "lower_bound": 58,
+    "upper_bound": 20,
+    "lower_bound": 38,
     "grade": "주의",
     "upper_factors": [
-      "AI 배당금 정책 기대 +15",
-      "미국 인플레이션 안정 +10"
+      "미중 협력 메시지 +8",
+      "보수적 ETF 수요 증가 +6",
+      "삼성SDI 주가 상승 +6"
     ],
     "lower_factors": [
-      "삼성 파업 생산 차질 -25",
-      "반도체 산업 불확실성 -18",
-      "중동 긴장 재발 -15"
+      "삼성전자 파업 우려 -15",
+      "지정학적 긴장 심화 -12",
+      "GM 계약 중단 우려 -11"
     ]
   },
   "items": [
     {
-      "title": "[김용범, 청와대 정책실장이 AI 국민 배당금을 제안했으나 반도체 기업의 성과금 논쟁에서 다시 논란이 발생 관련 파장이 확산되고 있습니다.]",
-      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [김용범, 청와대 정책실장이 AI 국민 배당금을 제안했으나 반도체 기업의 성과금 논쟁에서 다시 논란이 발생 관련 파장이 확산되고 있습니다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
+      "title": "[미국은 대일 군사작전에 한국의 협력을 요구하며, 프로젝트 프리덤에 참여할 것입니다. 관련 파장이 확산되고 있습니다.]",
+      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [미국은 대일 군사작전에 한국의 협력을 요구하며, 프로젝트 프리덤에 참여할 것입니다. 관련 파장이 확산되고 있습니다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
       "category": "일반",
-      "pubDate": "Tue, 12 May 2026 20:37:29 GMT",
-      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B%EA%B9%80%EC%9A%A9%EB%B2%94%2C%20%EC%B2%AD%EC%99%80%EB%8C%80%20%EC%A0%95%EC%B1%85%EC%8B%A4%EC%9E%A5%EC%9D%B4%20AI%20%EA%B5%AD%EB%AF%BC%20%EB%B0%B0%EB%8B%B9%EA%B8%88%EC%9D%84%20%EC%A0%9C%EC%95%88%ED%96%88%EC%9C%BC%EB%82%98%20%EB%B0%98%EB%8F%84%EC%B2%B4%20%EA%B8%B0%EC%97%85%EC%9D%98%20%EC%84%B1%EA%B3%BC%EA%B8%88%20%EB%85%BC%EC%9F%81%EC%97%90%EC%84%9C%20%EB%8B%A4%EC%8B%9C%20%EB%85%BC%EB%9E%80%EC%9D%B4%20%EB%B0%9C%EC%83%9D%20%EA%B4%80%EB%A0%A8%20%ED%8C%8C%EC%9E%A5%EC%9D%B4%20%ED%99%95%EC%82%B0%EB%90%98%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%5D&selected_max=58309.2698283803&selected_min=0.0009606487"
+      "pubDate": "Thu, 14 May 2026 04:07:27 GMT",
+      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B%EB%AF%B8%EA%B5%AD%EC%9D%80%20%EB%8C%80%EC%9D%BC%20%EA%B5%B0%EC%82%AC%EC%9E%91%EC%A0%84%EC%97%90%20%ED%95%9C%EA%B5%AD%EC%9D%98%20%ED%98%91%EB%A0%A5%EC%9D%84%20%EC%9A%94%EA%B5%AC%ED%95%98%EB%A9%B0%2C%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%ED%94%84%EB%A6%AC%EB%8D%A4%EC%97%90%20%EC%B0%B8%EC%97%AC%ED%95%A0%20%EA%B2%83%EC%9E%85%EB%8B%88%EB%8B%A4.%20%EA%B4%80%EB%A0%A8%20%ED%8C%8C%EC%9E%A5%EC%9D%B4%20%ED%99%95%EC%82%B0%EB%90%98%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%5D&selected_max=69077.2476807644&selected_min=0.0011383455"
     },
     {
-      "title": "[AI 국민배당금 제안에 따른 민생 경제 지원의 효과가 확인됐다 관련 파장이 확산되고 있습니다.]",
-      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [AI 국민배당금 제안에 따른 민생 경제 지원의 효과가 확인됐다 관련 파장이 확산되고 있습니다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
+      "title": "[시진핑과 트럼프는 중국과 미국이 '파트너'가 되어야 하며, 두 나라는 세계의 문제를 해결하기 위한 작업을 함께 해야 한다고 강조했습니다. 관련 파장이 확산되고 있습니다.]",
+      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [시진핑과 트럼프는 중국과 미국이 '파트너'가 되어야 하며, 두 나라는 세계의 문제를 해결하기 위한 작업을 함께 해야 한다고 강조했습니다. 관련 파장이 확산되고 있습니다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
       "category": "일반",
-      "pubDate": "Tue, 12 May 2026 20:36:27 GMT",
-      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5BAI%20%EA%B5%AD%EB%AF%BC%EB%B0%B0%EB%8B%B9%EA%B8%88%20%EC%A0%9C%EC%95%88%EC%97%90%20%EB%94%B0%EB%A5%B8%20%EB%AF%BC%EC%83%9D%20%EA%B2%BD%EC%A0%9C%20%EC%A7%80%EC%9B%90%EC%9D%98%20%ED%9A%A8%EA%B3%BC%EA%B0%80%20%ED%99%95%EC%9D%B8%EB%90%90%EB%8B%A4%20%EA%B4%80%EB%A0%A8%20%ED%8C%8C%EC%9E%A5%EC%9D%B4%20%ED%99%95%EC%82%B0%EB%90%98%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%5D&selected_max=84853.4504505502&selected_min=0.0013945686"
+      "pubDate": "Thu, 14 May 2026 04:06:10 GMT",
+      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B%EC%8B%9C%EC%A7%84%ED%95%91%EA%B3%BC%20%ED%8A%B8%EB%9F%BC%ED%94%84%EB%8A%94%20%EC%A4%91%EA%B5%AD%EA%B3%BC%20%EB%AF%B8%EA%B5%AD%EC%9D%B4%20'%ED%8C%8C%ED%8A%B8%EB%84%88'%EA%B0%80%20%EB%90%98%EC%96%B4%EC%95%BC%20%ED%95%98%EB%A9%B0%2C%20%EB%91%90%20%EB%82%98%EB%9D%BC%EB%8A%94%20%EC%84%B8%EA%B3%84%EC%9D%98%20%EB%AC%B8%EC%A0%9C%EB%A5%BC%20%ED%95%B4%EA%B2%B0%ED%95%98%EA%B8%B0%20%EC%9C%84%ED%95%9C%20%EC%9E%91%EC%97%85%EC%9D%84%20%ED%95%A8%EA%BB%98%20%ED%95%B4%EC%95%BC%20%ED%95%9C%EB%8B%A4%EA%B3%A0%20%EA%B0%95%EC%A1%B0%ED%96%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%20%EA%B4%80%EB%A0%A8%20%ED%8C%8C%EC%9E%A5%EC%9D%B4%20%ED%99%95%EC%82%B0%EB%90%98%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%5D&selected_max=47258.9471084689&selected_min=0.0007783901"
     },
     {
-      "title": "[김실장은 AI 초과 세수를 장기적인 사회 자산과 복지 재원으로 활용하는 '국민 배당금' 모델을 제안했다. 관련 파장이 확산되고 있습니다.]",
-      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [김실장은 AI 초과 세수를 장기적인 사회 자산과 복지 재원으로 활용하는 '국민 배당금' 모델을 제안했다. 관련 파장이 확산되고 있습니다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
+      "title": "[미국 대통령 트럼프와 중국 주석 시진핑이 베이징에서 정상회담을 시작했다. 관련 파장이 확산되고 있습니다.]",
+      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [미국 대통령 트럼프와 중국 주석 시진핑이 베이징에서 정상회담을 시작했다. 관련 파장이 확산되고 있습니다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
       "category": "일반",
-      "pubDate": "Tue, 12 May 2026 20:33:14 GMT",
-      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B%EA%B9%80%EC%8B%A4%EC%9E%A5%EC%9D%80%20AI%20%EC%B4%88%EA%B3%BC%20%EC%84%B8%EC%88%98%EB%A5%BC%20%EC%9E%A5%EA%B8%B0%EC%A0%81%EC%9D%B8%20%EC%82%AC%ED%9A%8C%20%EC%9E%90%EC%82%B0%EA%B3%BC%20%EB%B3%B5%EC%A7%80%20%EC%9E%AC%EC%9B%90%EC%9C%BC%EB%A1%9C%20%ED%99%9C%EC%9A%A9%ED%95%98%EB%8A%94%20'%EA%B5%AD%EB%AF%BC%20%EB%B0%B0%EB%8B%B9%EA%B8%88'%20%EB%AA%A8%EB%8D%B8%EC%9D%84%20%EC%A0%9C%EC%95%88%ED%96%88%EB%8B%A4.%20%EA%B4%80%EB%A0%A8%20%ED%8C%8C%EC%9E%A5%EC%9D%B4%20%ED%99%95%EC%82%B0%EB%90%98%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%5D&selected_max=58368.7493613473&selected_min=0.0009596729"
+      "pubDate": "Thu, 14 May 2026 04:05:09 GMT",
+      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B%EB%AF%B8%EA%B5%AD%20%EB%8C%80%ED%86%B5%EB%A0%B9%20%ED%8A%B8%EB%9F%BC%ED%94%84%EC%99%80%20%EC%A4%91%EA%B5%AD%20%EC%A3%BC%EC%84%9D%20%EC%8B%9C%EC%A7%84%ED%95%91%EC%9D%B4%20%EB%B2%A0%EC%9D%B4%EC%A7%95%EC%97%90%EC%84%9C%20%EC%A0%95%EC%83%81%ED%9A%8C%EB%8B%B4%EC%9D%84%20%EC%8B%9C%EC%9E%91%ED%96%88%EB%8B%A4.%20%EA%B4%80%EB%A0%A8%20%ED%8C%8C%EC%9E%A5%EC%9D%B4%20%ED%99%95%EC%82%B0%EB%90%98%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%5D&selected_max=76181.9683899089&selected_min=0.0012530863"
     },
     {
-      "title": "[삼성전자와 노동조합이 협상 중, 최대 43조 손실 예상 관련 파장이 확산되고 있습니다.]",
-      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [삼성전자와 노동조합이 협상 중, 최대 43조 손실 예상 관련 파장이 확산되고 있습니다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
+      "title": "[국내 정치인과 미국 대통령 투키디데스 중 상의, 전세계가 관심을 갖게 됨 관련 파장이 확산되고 있습니다.]",
+      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [국내 정치인과 미국 대통령 투키디데스 중 상의, 전세계가 관심을 갖게 됨 관련 파장이 확산되고 있습니다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
       "category": "일반",
-      "pubDate": "Tue, 12 May 2026 20:32:01 GMT",
-      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90%EC%99%80%20%EB%85%B8%EB%8F%99%EC%A1%B0%ED%95%A9%EC%9D%B4%20%ED%98%91%EC%83%81%20%EC%A4%91%2C%20%EC%B5%9C%EB%8C%80%2043%EC%A1%B0%20%EC%86%90%EC%8B%A4%20%EC%98%88%EC%83%81%20%EA%B4%80%EB%A0%A8%20%ED%8C%8C%EC%9E%A5%EC%9D%B4%20%ED%99%95%EC%82%B0%EB%90%98%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%5D&selected_max=91641.8842734013&selected_min=0.0015110263"
+      "pubDate": "Thu, 14 May 2026 04:04:10 GMT",
+      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B%EA%B5%AD%EB%82%B4%20%EC%A0%95%EC%B9%98%EC%9D%B8%EA%B3%BC%20%EB%AF%B8%EA%B5%AD%20%EB%8C%80%ED%86%B5%EB%A0%B9%20%ED%88%AC%ED%82%A4%EB%94%94%EB%8D%B0%EC%8A%A4%20%EC%A4%91%20%EC%83%81%EC%9D%98%2C%20%EC%A0%84%EC%84%B8%EA%B3%84%EA%B0%80%20%EA%B4%80%EC%8B%AC%EC%9D%84%20%EA%B0%96%EA%B2%8C%20%EB%90%A8%20%EA%B4%80%EB%A0%A8%20%ED%8C%8C%EC%9E%A5%EC%9D%B4%20%ED%99%95%EC%82%B0%EB%90%98%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%5D&selected_max=76104.3365890615&selected_min=0.0012543603"
     },
     {
-      "title": "[삼성전자 노사와 중앙동위원회의 협상이 실패해 총파업에 대비한 조정안이 노동조합 갈맛 관련 파장이 확산되고 있습니다.]",
-      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [삼성전자 노사와 중앙동위원회의 협상이 실패해 총파업에 대비한 조정안이 노동조합 갈맛 관련 파장이 확산되고 있습니다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
+      "title": "[삼성SDI의 주가는 63만7,000원에서 +2.5% 상승하여 현재 본정권 자리이고, 오늘 박스권 다지기 흐름이 있습니다. 관련 파장이 확산되고 있습니다.]",
+      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [삼성SDI의 주가는 63만7,000원에서 +2.5% 상승하여 현재 본정권 자리이고, 오늘 박스권 다지기 흐름이 있습니다. 관련 파장이 확산되고 있습니다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
       "category": "일반",
-      "pubDate": "Tue, 12 May 2026 20:30:03 GMT",
-      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90%20%EB%85%B8%EC%82%AC%EC%99%80%20%EC%A4%91%EC%95%99%EB%8F%99%EC%9C%84%EC%9B%90%ED%9A%8C%EC%9D%98%20%ED%98%91%EC%83%81%EC%9D%B4%20%EC%8B%A4%ED%8C%A8%ED%95%B4%20%EC%B4%9D%ED%8C%8C%EC%97%85%EC%97%90%20%EB%8C%80%EB%B9%84%ED%95%9C%20%EC%A1%B0%EC%A0%95%EC%95%88%EC%9D%B4%20%EB%85%B8%EB%8F%99%EC%A1%B0%ED%95%A9%20%EA%B0%88%EB%A7%9B%20%EA%B4%80%EB%A0%A8%20%ED%8C%8C%EC%9E%A5%EC%9D%B4%20%ED%99%95%EC%82%B0%EB%90%98%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%5D&selected_max=69147.7113346107&selected_min=0.0011371893"
+      "pubDate": "Thu, 14 May 2026 04:02:46 GMT",
+      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B%EC%82%BC%EC%84%B1SDI%EC%9D%98%20%EC%A3%BC%EA%B0%80%EB%8A%94%2063%EB%A7%8C7%2C000%EC%9B%90%EC%97%90%EC%84%9C%20%2B2.5%25%20%EC%83%81%EC%8A%B9%ED%95%98%EC%97%AC%20%ED%98%84%EC%9E%AC%20%EB%B3%B8%EC%A0%95%EA%B6%8C%20%EC%9E%90%EB%A6%AC%EC%9D%B4%EA%B3%A0%2C%20%EC%98%A4%EB%8A%98%20%EB%B0%95%EC%8A%A4%EA%B6%8C%20%EB%8B%A4%EC%A7%80%EA%B8%B0%20%ED%9D%90%EB%A6%84%EC%9D%B4%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%20%EA%B4%80%EB%A0%A8%20%ED%8C%8C%EC%9E%A5%EC%9D%B4%20%ED%99%95%EC%82%B0%EB%90%98%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%5D&selected_max=52448.795011536&selected_min=0.0008559963"
     },
     {
-      "title": "[삼성전자 노조 총파업에서의 협상은 국내 반도체 산업의 안정성을 많이 위협하고 있습니다. 관련 파장이 확산되고 있습니다.]",
-      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [삼성전자 노조 총파업에서의 협상은 국내 반도체 산업의 안정성을 많이 위협하고 있습니다. 관련 파장이 확산되고 있습니다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
+      "title": "[삼성SDI가 미국 GM과의 인디아나 뉴칼라일 배터리 공장 계약 중단으로, 예정된 양산 일정 지연 우려 관련 파장이 확산되고 있습니다.]",
+      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [삼성SDI가 미국 GM과의 인디아나 뉴칼라일 배터리 공장 계약 중단으로, 예정된 양산 일정 지연 우려 관련 파장이 확산되고 있습니다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
       "category": "일반",
-      "pubDate": "Tue, 12 May 2026 20:29:05 GMT",
-      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90%20%EB%85%B8%EC%A1%B0%20%EC%B4%9D%ED%8C%8C%EC%97%85%EC%97%90%EC%84%9C%EC%9D%98%20%ED%98%91%EC%83%81%EC%9D%80%20%EA%B5%AD%EB%82%B4%20%EB%B0%98%EB%8F%84%EC%B2%B4%20%EC%82%B0%EC%97%85%EC%9D%98%20%EC%95%88%EC%A0%95%EC%84%B1%EC%9D%84%20%EB%A7%8E%EC%9D%B4%20%EC%9C%84%ED%98%91%ED%95%98%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%20%EA%B4%80%EB%A0%A8%20%ED%8C%8C%EC%9E%A5%EC%9D%B4%20%ED%99%95%EC%82%B0%EB%90%98%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%5D&selected_max=67014.6487177111&selected_min=0.0011043005"
+      "pubDate": "Thu, 14 May 2026 04:01:31 GMT",
+      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B%EC%82%BC%EC%84%B1SDI%EA%B0%80%20%EB%AF%B8%EA%B5%AD%20GM%EA%B3%BC%EC%9D%98%20%EC%9D%B8%EB%94%94%EC%95%84%EB%82%98%20%EB%89%B4%EC%B9%BC%EB%9D%BC%EC%9D%BC%20%EB%B0%B0%ED%84%B0%EB%A6%AC%20%EA%B3%B5%EC%9E%A5%20%EA%B3%84%EC%95%BD%20%EC%A4%91%EB%8B%A8%EC%9C%BC%EB%A1%9C%2C%20%EC%98%88%EC%A0%95%EB%90%9C%20%EC%96%91%EC%82%B0%20%EC%9D%BC%EC%A0%95%20%EC%A7%80%EC%97%B0%20%EC%9A%B0%EB%A0%A4%20%EA%B4%80%EB%A0%A8%20%ED%8C%8C%EC%9E%A5%EC%9D%B4%20%ED%99%95%EC%82%B0%EB%90%98%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%5D&selected_max=59864.5837866035&selected_min=0.0009863092"
     },
     {
-      "title": "[4명의 이란 혁명 수비대 대원이 쿠웨이트 영토로 미립국을 통해 침입하여 체포되었다. 관련 파장이 확산되고 있습니다.]",
-      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [4명의 이란 혁명 수비대 대원이 쿠웨이트 영토로 미립국을 통해 침입하여 체포되었다. 관련 파장이 확산되고 있습니다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
+      "title": "[삼성 SDI의 주가는 70만 원 이상으로 상승하며, 증권과 평균 목표 주가는 82만 원 이상으로 상향되어 있습니다. 관련 파장이 확산되고 있습니다.]",
+      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [삼성 SDI의 주가는 70만 원 이상으로 상승하며, 증권과 평균 목표 주가는 82만 원 이상으로 상향되어 있습니다. 관련 파장이 확산되고 있습니다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
       "category": "일반",
-      "pubDate": "Tue, 12 May 2026 20:25:47 GMT",
-      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B4%EB%AA%85%EC%9D%98%20%EC%9D%B4%EB%9E%80%20%ED%98%81%EB%AA%85%20%EC%88%98%EB%B9%84%EB%8C%80%20%EB%8C%80%EC%9B%90%EC%9D%B4%20%EC%BF%A0%EC%9B%A8%EC%9D%B4%ED%8A%B8%20%EC%98%81%ED%86%A0%EB%A1%9C%20%EB%AF%B8%EB%A6%BD%EA%B5%AD%EC%9D%84%20%ED%86%B5%ED%95%B4%20%EC%B9%A8%EC%9E%85%ED%95%98%EC%97%AC%20%EC%B2%B4%ED%8F%AC%EB%90%98%EC%97%88%EB%8B%A4.%20%EA%B4%80%EB%A0%A8%20%ED%8C%8C%EC%9E%A5%EC%9D%B4%20%ED%99%95%EC%82%B0%EB%90%98%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%5D&selected_max=69077.2476807644&selected_min=0.0011383455"
+      "pubDate": "Thu, 14 May 2026 04:00:29 GMT",
+      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B%EC%82%BC%EC%84%B1%20SDI%EC%9D%98%20%EC%A3%BC%EA%B0%80%EB%8A%94%2070%EB%A7%8C%20%EC%9B%90%20%EC%9D%B4%EC%83%81%EC%9C%BC%EB%A1%9C%20%EC%83%81%EC%8A%B9%ED%95%98%EB%A9%B0%2C%20%EC%A6%9D%EA%B6%8C%EA%B3%BC%20%ED%8F%89%EA%B7%A0%20%EB%AA%A9%ED%91%9C%20%EC%A3%BC%EA%B0%80%EB%8A%94%2082%EB%A7%8C%20%EC%9B%90%20%EC%9D%B4%EC%83%81%EC%9C%BC%EB%A1%9C%20%EC%83%81%ED%96%A5%EB%90%98%EC%96%B4%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%20%EA%B4%80%EB%A0%A8%20%ED%8C%8C%EC%9E%A5%EC%9D%B4%20%ED%99%95%EC%82%B0%EB%90%98%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%5D&selected_max=54093.1605858411&selected_min=0.0008910987"
     },
     {
-      "title": "[5월 10일 뒤, '국내 전자업계 강자' Samsung Electronics 주가는 30% 차익으로 고점을 실현할 것 관련 파장이 확산되고 있습니다.]",
-      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [5월 10일 뒤, '국내 전자업계 강자' Samsung Electronics 주가는 30% 차익으로 고점을 실현할 것 관련 파장이 확산되고 있습니다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
+      "title": "[노동부가 삼성전자 노사 사후 조정에 대한 긴급 조정권 검토중 관련 파장이 확산되고 있습니다.]",
+      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [노동부가 삼성전자 노사 사후 조정에 대한 긴급 조정권 검토중 관련 파장이 확산되고 있습니다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
       "category": "일반",
-      "pubDate": "Tue, 12 May 2026 20:23:36 GMT",
-      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B5%EC%9B%94%2010%EC%9D%BC%20%EB%92%A4%2C%20'%EA%B5%AD%EB%82%B4%20%EC%A0%84%EC%9E%90%EC%97%85%EA%B3%84%20%EA%B0%95%EC%9E%90'%20Samsung%20Electronics%20%EC%A3%BC%EA%B0%80%EB%8A%94%2030%25%20%EC%B0%A8%EC%9D%B5%EC%9C%BC%EB%A1%9C%20%EA%B3%A0%EC%A0%90%EC%9D%84%20%EC%8B%A4%ED%98%84%ED%95%A0%20%EA%B2%83%20%EA%B4%80%EB%A0%A8%20%ED%8C%8C%EC%9E%A5%EC%9D%B4%20%ED%99%95%EC%82%B0%EB%90%98%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%5D&selected_max=53449.0460933913&selected_min=0.0008804745"
+      "pubDate": "Thu, 14 May 2026 03:58:00 GMT",
+      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B%EB%85%B8%EB%8F%99%EB%B6%80%EA%B0%80%20%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90%20%EB%85%B8%EC%82%AC%20%EC%82%AC%ED%9B%84%20%EC%A1%B0%EC%A0%95%EC%97%90%20%EB%8C%80%ED%95%9C%20%EA%B8%B4%EA%B8%89%20%EC%A1%B0%EC%A0%95%EA%B6%8C%20%EA%B2%80%ED%86%A0%EC%A4%91%20%EA%B4%80%EB%A0%A8%20%ED%8C%8C%EC%9E%A5%EC%9D%B4%20%ED%99%95%EC%82%B0%EB%90%98%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%5D&selected_max=86530.6899686732&selected_min=0.0014207197"
     }
   ]
 }

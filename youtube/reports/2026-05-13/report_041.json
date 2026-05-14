@@ -1,0 +1,461 @@
+{
+  "timestamp": "2026-05-13T14:35:32.315729",
+  "model": "mistral:latest",
+  "keyword_count": 3,
+  "analyze_subtitles": true,
+  "analysis_source": "youtube",
+  "keywords": [
+    {
+      "keyword": "오늘의 주요 뉴스",
+      "is_fixed": true,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "코스피 변동성 1만 시대",
+      "is_fixed": false,
+      "views": [
+        918,
+        11380
+      ],
+      "video_count": 2,
+      "videos": [
+        {
+          "title": "[직설] 변동성 커지는 코스피…1만 시대 전망 속 상승세 이어갈까?",
+          "video_id": "YkaCi3O5p_A",
+          "views": 918,
+          "upload_date": "2026-05-13",
+          "url": "https://www.youtube.com/watch?v=YkaCi3O5p_A",
+          "subtitle_summary": "1. 코스피는 올해 글로벌 증시 상위권을 유지하면서 6위까지 상승했다. 그러나 급한 오르기에 따른 조정에 대한 공포감이 커지고 있으며, 삼성전자의 노사 갈등도 변수가 되었습니다.\n2. 코스피가 어떤 역사적인 불장을 이어갈 수 있을지 논의되고 있습니다. 전망치는 1만 포인트에 달할 수 있으며, 12,000 포인트까지도 나왔습니다.\n3. 증시가 단기간 강하다는 분석은 유효하고, 메모리 반도체에 대한 집중된 AI 모멘텀이 우리도 그리고 미국 정치와 같이 있어서 단기적인 불안감은 있지만, 상승세는 계속될 것으로 보입니다. 코스피의 체력과 수급이 강해졌고, 외국인 매도세에도 불구하고 우리 증시가 큰폭으로 상승을 계속할 것으로 보입니다.",
+          "db_saved": true
+        },
+        {
+          "title": "1만 코스피.. 진정한 버블의 시대인가!? '이 종목' 100만원도 쌉니다",
+          "video_id": "xyT0J-S-Obk",
+          "views": 11380,
+          "upload_date": "2026-05-13",
+          "url": "https://www.youtube.com/watch?v=xyT0J-S-Obk",
+          "subtitle_summary": "1. 주식 시장이 급등하고 있으며, 미국 시장은 0.7% 떨어졌지만 코스피와 비교해서 급격히 상승하고 있다.\n2. 주식 시장이 매일 급등을 이어가고 있으며, 변한 것은 우리의 마음이 되었다는 것.\n3. 시장은 계속 강세하지만, 변한 것은 우리의 마음이 그걸 해석하는 것이며, 최소 저항선을 지키는 것이 중요할 수 있다.",
+          "db_saved": true
+        }
+      ],
+      "max": 2.7659,
+      "min": 2.231,
+      "nb_score": 1.2398,
+      "avg_views": 6149.0,
+      "total_views": 12298
+    },
+    {
+      "keyword": "카카오모빌리티 미국 증시 상장",
+      "is_fixed": false,
+      "views": [
+        3644,
+        521,
+        3119
+      ],
+      "video_count": 3,
+      "videos": [
+        {
+          "title": "[Daehan Gwangtongsin] It's absolutely wrecked... Shareholders are going crazy in real-time! #Daeh...",
+          "video_id": "CLJSBybzR-o",
+          "views": 3644,
+          "upload_date": "2026-05-12",
+          "url": "https://www.youtube.com/watch?v=CLJSBybzR-o",
+          "subtitle_summary": "1. 박프로는 대한광통신 주주들에게 환영합니다. 현재 시장에서 대한광통신과 삼성전자와 관련된 의미 있는 흐름이 발견됐습니다.\n2. 삼성전자가 데이터 전송에 필요한 구조를 가지고 있는 대한광통신이 마지막 퍼즐입니다. 삼성전자, 비디아의 AI 서버와 연결되면 완성된 밸류 체인이 만들어집니다.\n3. 시장은 항상 구조에서 움직이며, 연결된 종목들이 폭발합니다. 현재 대한광통신은 이러한 구조의 자리입니다. 이미 급등이 일어났지만, 여전히 상승을 준비하는 자리입니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[Daehan Gwangtongsin] Investment Warning: The risk of trading suspension is serious. #DaehanGwang...",
+          "video_id": "uGtPqDWTOUw",
+          "views": 521,
+          "upload_date": "2026-05-12",
+          "url": "https://www.youtube.com/watch?v=uGtPqDWTOUw",
+          "subtitle_summary": "1. 대한광통신의 주가는 역사적인 신고가를 두 번 경신했습니다. (27% 대양봉)\n2. 매도 선동 악칠 유튜버들과 흔들던 세력들이 완전히 박사를 내버렸습니다.\n3. 지금은 고점 한참 멀었으므로, 구간 매도 금지입니다. 장대 양봉이 나온 것을 보여 상승 추세가 계속될 가능성이 높습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[Daehan Gwangtongsin] Shock 5 minutes ago! Samsung Electronics stock split... Big trouble ahead f...",
+          "video_id": "iSWed15EtXA",
+          "views": 3119,
+          "upload_date": "2026-05-12",
+          "url": "https://www.youtube.com/watch?v=iSWed15EtXA",
+          "subtitle_summary": "대한광통신이 50대 1 액면 분할을 고려하는 것으로 보아 시장에서 큰 변화가 일어날 수 있다는 소식이 퍼졌습니다. 이 액면 분할은 개인 투자자들이 더 쉽게 접근하게 되며, 거래량과 시세가 상승할 수 있을 것으로 예상됩니다. 따라서 이 소식에 대해 신속히 알고 먼저 대응하는 사람들이 수익을 가져갈 수 있을 것으로 보입니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 2.8584,
+      "min": 2.6752,
+      "nb_score": 1.0685,
+      "avg_views": 2428.0,
+      "total_views": 7284
+    },
+    {
+      "keyword": "국민 배당금제 지방선거",
+      "is_fixed": false,
+      "views": [
+        10370,
+        1252,
+        431,
+        16038,
+        6711,
+        219,
+        13653,
+        1525
+      ],
+      "video_count": 8,
+      "videos": [
+        {
+          "title": "‘AI 국민 배당금’ 띄운 정책실장…“과실 특정 기업만의 결과 아냐” [9시 뉴스] / KBS  2026.05.12.",
+          "video_id": "p5l-dpXbCOQ",
+          "views": 10370,
+          "upload_date": "2026-05-12",
+          "url": "https://www.youtube.com/watch?v=p5l-dpXbCOQ",
+          "subtitle_summary": "1. 김용범 정책실장은 AI 국민 배당금 구상을 밝혔으나, 과실이 특정 기업만의 결과가 아닌지에 대한 논란이 발생했습니다.\n2. 김용범은 인공지능 관련 호황으로 세금을 많이 거치면 일부를 국민에게 돌려주는 것이 필요하다고 주장했습니다.\n3. 이 발언으로 인해 한국 증시의 극심한 변동성이 촉발되었고, AI 수업 기업에 대한 새로운 과세 신호가 나타났습니다. 또한 정치권 공방도 이어졌으며, 국민의 힘과 개혁신당은 반기업 정책을 비판하고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[🔴 무조건 간다 LIVE] '팔천피' 목전 코스피 급락···AI·반도체 '국민배당금' 꺼낸 김용범 때문?",
+          "video_id": "P3tB9YixGts",
+          "views": 1252,
+          "upload_date": "2026-05-13",
+          "url": "https://www.youtube.com/watch?v=P3tB9YixGts",
+          "subtitle_summary": "1. 김용범, 청와대 정책실장은 AI 시대의 과실을 특정 기업만의 결과가 아니라고 주장하며, 초과 이익을 '국민배당금'으로 사회와 나누자는 제안을 했습니다.\n2. 김용범의 발언에 대해 야당은 공산당이나 할 짓이라며 경지를 요구하고, 일부 외신들은 코스피가 크게 급락한 것으로 김실장을 원인으로 지목했습니다.\n3. 청와대는 김용범의 개인 의견이라며 선을 그었고, 민주당은 국민 배당금에 대해 직접적으로 논의한 적이 없다고 진화했습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[뉴스포커스] 여야, 지방선거 주도권 경쟁…'감사의 정원' 공방 / 연합뉴스TV (YonhapnewsTV)",
+          "video_id": "179IEsD21K4",
+          "views": 431,
+          "upload_date": "2026-05-13",
+          "url": "https://www.youtube.com/watch?v=179IEsD21K4",
+          "subtitle_summary": "1. 21일 내에 여야 지방선거가 진행되며, 서울시장 선거에서 '감사의 정원'이 다시 뇌관으로 등극하고 있습니다.\n2. 김성대전 더불어민주당 의원은 지방정부를 선택하여 대한민국의 비정상을 정상화시키려는 목적으로 행동 중입니다.\n3. 장동혁 대표도 본격적인 현장 행보를 시작했으며, 이제 영남권부터 충청까지 떠나고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[Choi Byung-mook's Facts] Why Kim Yong-bum's 'National Dividend' is a Political Misjudgment",
+          "video_id": "LgruKjP3TJA",
+          "views": 16038,
+          "upload_date": "2026-05-13",
+          "url": "https://www.youtube.com/watch?v=LgruKjP3TJA",
+          "subtitle_summary": "1. 김용범, 대통령 정책실장이 국민 배당금을 제안했습니다. 이는 AI 산업으로 얻은 이익을 전국민에게 나누는 것을 의미합니다.\n2. 이런 제안의 근본은 AI 인프라 공급망에서의 전략적 위치로 구조적 호황을 만들고, 그것이 역대급 초과 세수를 일으키면 그 돈은 선택의 문제가 아니라 설계의 문제입니다.\n3. 김용범의 정치적 목적은 삼성전자와 하이닉스의 대금을 국민들에게 돌려주는 것으로, 이를 통해 직권당에 대한 호감도를 높일 것입니다.",
+          "db_saved": true
+        },
+        {
+          "title": "사회주의 본색 드러냈다! “대한민국 인민”,“기업이익 배분!!!”(20260512). 김용범 한마디에 시장 극심한 공포. 코스피 5% 급락. “AI 배당금? 대통령 월급도 나누자”",
+          "video_id": "VhbDznHg4aQ",
+          "views": 6711,
+          "upload_date": "2026-05-12",
+          "url": "https://www.youtube.com/watch?v=VhbDznHg4aQ",
+          "subtitle_summary": "1. 고용노동부 장관 김영훈이 \"대한민국 인민\"이라는 SNS 포스팅으로 사회주의적 정책을 선언했다.\n2. 청와대 정책실장 김용범은 기업 초과 이윤을 국민 배당하자고 말했으나 사회주의적 반발을 유발했다.\n3. 이재명 정권에서 한 자리 차지하기 위해서는 주둥이 가벼운 것이 필수인 것으로 보였고, 김영훈의 SNS 포스팅은 민주공화국을 위한 정당한 노력이 아닌 갈라치기 정치를 유발할 가능성이 있다는 비판을 받았습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "정청래 \"필승, 내란 심판\"...장동혁 선대위 곧 출범 / YTN",
+          "video_id": "mcFZYa0Dok0",
+          "views": 219,
+          "upload_date": "2026-05-13",
+          "url": "https://www.youtube.com/watch?v=mcFZYa0Dok0",
+          "subtitle_summary": "1. 63 지방 선거가 22일 남았습니다. 민주당은 내란 청산을 기치로 필승 의지를 갖추었으며, 국민의 힘도 공식적인 선거 모드로 전환했습니다.\n2. 정청래 대표는 지방 선거로 국민의 힘을 심각하게 심판해야 한다고 강조했으며, 당원과 지지자들에게도 감사를 표했습니다.\n3. 장동혁 대표는 사실상 원톱 체제를 구성하여 선거 전면에 나서었으며, 정치권 공방이 일어났습니다. (예: AI 국민 배당금 제한)",
+          "db_saved": true
+        },
+        {
+          "title": "‘용모닝이라니…’ 김용남·조국 갈등/재보궐 최대 격전지 ‘부산 북갑’ 접전?/모습 드러낸 논란의 ‘받들어 총’/미, “이란전 동참” 압박(하어영,박진영,이승준,길윤형)[뷰리핑]",
+          "video_id": "EcM8w2nIhEU",
+          "views": 13653,
+          "upload_date": "2026-05-13",
+          "url": "https://www.youtube.com/watch?v=EcM8w2nIhEU",
+          "subtitle_summary": "1. 대검감찰위원회는 어제 열린 것은 아니며, 사실 없었다는 것이 밝혀졌습니다. 하지만 외부위원들은 윤성열정권 때 임명된 사람들이며, 검찰이 약간 친화적일 수 있습니다.\n2. 박상용 검사는 지금 윤성열 검찰총장 당시 사용한 수법을 따라하고 있으며, 그 징계가 부당하다고 판단되면 팝법부에 소송을 걸 계획입니다.\n3. 이렇게 수법을 사용하여 징계 시간을 끌고, 여러 번 위원회를 열어가며 징계를 했지만, 결국 법무부에서 가처분 신청을 했습니다. 이때 판결은 징계 절차가 문제가 없었다고 밝혔으나, 가처분 시청 단계에서는 여론이 법원이 윤성열 총장 쪽에 친화적일 수 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[김태현의 정치쇼] 오세훈 \"감사의 정원 논란? 보면 자부심 뿜뿜...정원오, 양자토론 응해야\" |이너:뷰 260513(수)",
+          "video_id": "fIVAFFIDNLw",
+          "views": 1525,
+          "upload_date": "2026-05-13",
+          "url": "https://www.youtube.com/watch?v=fIVAFFIDNLw",
+          "subtitle_summary": "1. 오세훈, 서울시장 후보는 정원호와 맞춤을 못하면 무능함을 의미한다고 말했습니다.\n2. 이번 선거에서 정은호와의 격차가 있었으며, 정은호는 3월 초부터 구청장을 사퇴하고 선거 운동을 시작했습니다.\n3. 오세훈은 정은호에 대해 과대 포장이 있고, 성수동 발전 지역에서 공을 가져간 것으로 인해 엉터리라는 평가를 받았다고 밝혔습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0.9245,
+      "min": 1.5409,
+      "nb_score": 0.6,
+      "avg_views": 6274.88,
+      "total_views": 50199
+    },
+    {
+      "keyword": "정원오 여종업원 외박 폭행",
+      "is_fixed": false,
+      "views": [
+        8046,
+        7113,
+        14116,
+        329,
+        3143,
+        4787,
+        843
+      ],
+      "video_count": 7,
+      "videos": [
+        {
+          "title": "[Hot People] Kim Jae-seop: “Jeong Won-oh’s Past Assault Unrelated to 5·18” / Channel A / Kim Jin’...",
+          "video_id": "VYYRktHnHTE",
+          "views": 8046,
+          "upload_date": "2026-05-13",
+          "url": "https://www.youtube.com/watch?v=VYYRktHnHTE",
+          "subtitle_summary": "1. 서울시장 선거에서 가장 뜨겁게 논란이 되고 있는 부분은 정원호 후보의 과거 폭행 사건입니다.\n2. 정원호는 공범 AC와 민간인 BC를 주먹과 발로 때렸고, 경찰관을 머리로 들이받고 민간인 또한 발로 거뒀습니다.\n3. 폭행 공무집행 방해 혐의로 300만 원 벌금을 당했으며, 정원호측은 과거 폭행의 주요 원인 중 하나를 5.18과 관련된 정치적 견해 차이로 감정을 추수리지 못했다고 해명했습니다. 최근 김재섭 의원은 폭행과 5.18이 무관하다고 주장했습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "정원오 폭행 충격 내막/여종업원과 외박 터졌다/국힘 충격 폭로, 경악",
+          "video_id": "yJO5M0XiW18",
+          "views": 7113,
+          "upload_date": "2026-05-13",
+          "url": "https://www.youtube.com/watch?v=yJO5M0XiW18",
+          "subtitle_summary": "1. 강신업 TV는 특별히 만든 2플 2 혜택을 제공합니다. 이를 지금 구입할 수 있으며, 이번 기회에 알면 꼭 이용해 보시길 권장합니다.\n2. 김재섭 국민의임 의원이 정원호 서울시상 후보의 과거 폭행 사건과 관련해서 술자리에서 카페 주인에게 여종업안과의 외박을 강요하고 제지하는 시민을 폭행했다고 주장했습니다.\n3. 정원호는 이 사건에 대해서 부인했으나, 이미 벌금을 받았고 공직에 있었던 자가 폭행한 것으로 보입니다.",
+          "db_saved": true
+        },
+        {
+          "title": "The Full Story of Jung Won-oh's Shocking Assault Case 31 Years Ago: \"Forcing Bar Waitress to Stay...",
+          "video_id": "zoiIaJs_H8c",
+          "views": 14116,
+          "upload_date": "2026-05-13",
+          "url": "https://www.youtube.com/watch?v=zoiIaJs_H8c",
+          "subtitle_summary": "1. 정원호, 현재 서울시장 후보, 과거에 폭력 사건으로 인해 파문이 일어났습니다. 31년 전(1995년)에는 카페 주인과 여정원(의무원)과의 외박을 강요하고, 거절한 주인을 협박하며 시민들도 함께 폭행했습니다.\n2. 이 사건은 5.18 민주화 운동에 대한 인식 차이로 인해 논쟁이 일어났으나, 정원호는 반면 속죄하며 살아왔습니다.\n3. 최근 김재섭 국민의 임의에 의해 공개된 속기록에 따르면, 이 폭력 사건은 전혀 무관하였던 5.18 민주화 운동과는 별개로 발생했습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "김재섭 \"정원오, 여종업원과  외박 거절당해  폭행\"했다고? ㅡ사실이라면 정원오는.../2026.05.13",
+          "video_id": "R52zCn-8EFc",
+          "views": 329,
+          "upload_date": "2026-05-13",
+          "url": "https://www.youtube.com/watch?v=R52zCn-8EFc",
+          "subtitle_summary": "김재섭 국민의 힘 의원은 정원오, 2019년 과거 폭행 사건에 대해 폭탄 발언을 했다. 당시 정원오는 서울시 여정어봉과 외박을 강요하려고 했으나, 카페 주인이 거절했다. 이에 경찰관을 폭행한 것으로 알려져 있으며, 정원오는 이를 거짓 해명하고 있다고 한다. 김재섭은 정원오의 폭행 사건에 대해 국회 소통관에서 자신의 주장을 제기했으며, 이는 민주화 운동 인식 차이로 인한 논쟁으로 인한 것이었다고 한다. 정원오는 이에 대해서 국민앞에 솔직하게 해명을 요구받았다.",
+          "db_saved": true
+        },
+        {
+          "title": "Not the 'May 18 Controversy' but a dispute over a 'female employee staying out overnight'?… Chung...",
+          "video_id": "ePPTXf2e1tQ",
+          "views": 3143,
+          "upload_date": "2026-05-13",
+          "url": "https://www.youtube.com/watch?v=ePPTXf2e1tQ",
+          "subtitle_summary": "1. 정원호 후보의 과거 경찰관 폭행 사건이 다시 공개되어 논란이 되고 있습니다.\n2. 김재섭 의원은 이 사건과 5.18과는 무관하다고 주장했으나, 정원호 후보는 폭행의 주요 원인 중 하나를 5.18과 관련된 정치적 견해 차이로 감정을 추수리지 못했다고 해명했습니다.\n3. 최근 김재섭 의원이 기자회견을 열어 정원호 후보의 폭행은 5.18과 무관하다는 주장을 했으나, 정원호 후보 측에서는 이를 반박하지 않았습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[June 3/Breaking News-15] Jung Won-oh Assault Case, Shocking! Because of May 18? Lies? Forcing a ...",
+          "video_id": "AqI9KduQct8",
+          "views": 4787,
+          "upload_date": "2026-05-13",
+          "url": "https://www.youtube.com/watch?v=AqI9KduQct8",
+          "subtitle_summary": "제목: June 3/Breaking News-15: Jung Won-oh Assault Case\n1. 정은호 후보가 양천구청장 비서 신분으로 술을 마시고 민간인 두 명과 공무집행 중인 경찰관 두 명을 폭행했다는 판결문이 공개됐습니다.\n2. 정은호 후보는 5.18 민주화 운동에 대한 인식 차이로 인한 다툼이라고 설명했지만, 이는 거짓말이 드러났습니다.\n3. 정은호 후보의 폭행은 5.18 민주화 운동과는 전혀 무관했고, 카페 주인에게 여종업원과의 외박을 강요하고 거절하는 주인을 협박하며 폭행한 끔찍한 사건이었습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "정원오 흔들린다! 격차 2,1%p, 역전 코앞. 정원오 과거 폭행 충격적 속기록. 여종업원 외박 강요에 자해까지!!!(20260513)",
+          "video_id": "EN3K99Ldc1s",
+          "views": 843,
+          "upload_date": "2026-05-13",
+          "url": "https://www.youtube.com/watch?v=EN3K99Ldc1s",
+          "subtitle_summary": "1. 민주당 서울시장 후보 정원호에 대한 사건이 발생했습니다. 과거 카페에서 여종업원과 외박을 강요하고, 시민을 폭행하며 자해까지 했다는 것으로 알려졌습니다.\n2. 이 사건은 1995년 당시 인식 차이 때문에 벌어진 5.18 민주화 운동과 관련이 없었다는 정후보의 설명입니다.\n3. 이 사건은 국회의원 보작관 이모시와 경찰관 등을 폭행한 혐의로 벌금 300만 원을 선고받았습니다. 또한, 장구 의원의 속기록에서는 정후보가 술을 마시며 여종업원과 외박을 요구하고, 카페 주인이 거절했다는 내용이 담겨 있습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0.9043,
+      "min": 1.595,
+      "nb_score": 0.567,
+      "avg_views": 5482.43,
+      "total_views": 38377
+    },
+    {
+      "keyword": "삼성전자 노조 사후조정",
+      "is_fixed": false,
+      "views": [
+        10403,
+        5261,
+        6290,
+        3881,
+        13720
+      ],
+      "video_count": 5,
+      "videos": [
+        {
+          "title": "삼성전자 노사, 사후조정 결렬…총파업 위기 고조 속 막판협상 기대 [이슈PLAY] / JTBC News",
+          "video_id": "__FEXSGx_6A",
+          "views": 10403,
+          "upload_date": "2026-05-13",
+          "url": "https://www.youtube.com/watch?v=__FEXSGx_6A",
+          "subtitle_summary": "1. 삼성전자 노조와 사측은 17시간 동안 협상했으나 합의는 결렬됐습니다. 노조는 영업 이익의 15%를 성과급 재원으로 활용하고, 연봉의 50%로 제한된 성과급 상한도 폐지하라는 요구를 했습니다.\n2. 노조는 중앙노동위원회에서 제시한 조정안이 오히려 퇴보되었다고 밝혔습니다. 사측은 업계 최고 수준 특별 포상을 검토할 수 있다면서도 성과급 상한 폐지 제도화는 받아들일 수 없는 입장입니다.\n3. 삼성전자 노조는 21일부터 18일간 총 파업을 계획하고 있으며, 정부가 긴급 조정권을 사용할 수도 있습니다. 만약 법원이 반도체 공장 가동을 위한 필수 인력을 넓게 해석한다면 파업은 동력을 이룰 수도 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[🔴속보] 삼성전자 노조 21일 총파업 수순…사후조정 결렬 '경제 충격파 주목' / 연합뉴스TV(YonhapnewsTV)",
+          "video_id": "4Qspxmit7J8",
+          "views": 5261,
+          "upload_date": "2026-05-13",
+          "url": "https://www.youtube.com/watch?v=4Qspxmit7J8",
+          "subtitle_summary": "1. 삼성전자 노사 협상은 새벽까지 이어진 후 불발되었습니다. 노조는 핵심 쟁점을 해결하지 못한 것으로 보고 조정한 퇴보를 선언했습니다.\n2. 조정안에는 성과급 상한 50%가 폐지되지 않았고 기존 초과 이익 성과금 제도를 유지하는 내용이 담겼습니다.\n3. 노조는 현재로선 사측과 다시 만날 계획이 없으나, 제대로 된 제한을 가져온다면 검토할 생각이 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[🔴속보] 삼성전자 노사 사후조정 끝내 불발..김민석 총리 \"삼성전자, 어떤 경우에도 파업하지 않게 노사 대화 지원\" '긴급조정' 21년 만에 발동하나 | SBS 뉴스속보",
+          "video_id": "IPmNM2Q5BjA",
+          "views": 6290,
+          "upload_date": "2026-05-13",
+          "url": "https://www.youtube.com/watch?v=IPmNM2Q5BjA",
+          "subtitle_summary": "1. 삼성전자 노사 사후조정이 결렬됐으며, 다음 주 목요일에 총파업이 현실화할 수 있습니다. 노조와 사측의 입장 차이가 크고, 노조는 영업 이익의 15%를 상한없이 성과급으로 지급하고 제도화하라고 요구했습니다.\n2. 사측은 반도체 부문이 국내 1위 성과를 낼 경우 경쟁사보다 좋은 보상을 할 수 있지만, 성과급 기준을 제도화하는 건 어렵다고 생각했습니다.\n3. 노조는 추가 조정을 고려하고 있지 않으며, 최후의 수단인 정부가 파업을 강제 중단시키는 긴급조정권을 발동할 수도 있다는 관측이 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[Issue] Samsung Electronics Labor-Management Mediation Collapses Due to Differences Over Performa...",
+          "video_id": "WDbHXe86WfY",
+          "views": 3881,
+          "upload_date": "2026-05-13",
+          "url": "https://www.youtube.com/watch?v=WDbHXe86WfY",
+          "subtitle_summary": "1. Samsung Electronics labor union has declared a strike after failing to find mediation with management due to disagreements over performance bonuses.\n2. The Central Mediation Committee proposed a mediation plan, but the differences could not be narrowed down, especially regarding the performance bonus ratio.\n3. Despite the failure of self-negotiations, both sides are continuing negotiations and the Central Mediation Committee is preparing another mediation plan. The labor union has suggested a reduction in the performance bonus ratio from 15% to 1-2%, while management proposed giving a performance bonus of more than 10% of operating profit only during times of success.",
+          "db_saved": true
+        },
+        {
+          "title": "[🔴이슈를 켜라] 삼성전자 노사 사후조정 '고비'…AI 배당금 논란 / 채널A",
+          "video_id": "VPczdpjdSnU",
+          "views": 13720,
+          "upload_date": "2026-05-12",
+          "url": "https://www.youtube.com/watch?v=VPczdpjdSnU",
+          "subtitle_summary": "1. Samsung Electronics는 노조에 의해 성과금 26억 원을 받을 수 있게 하려는 요구가 있습니다. 이 요구는 회사의 영업이익 15%를 필요로합니다.\n2. 회사는 현재 영업이 10%를 구수하고 있으며, 비메모리는 추가로 챙길 수 없습니다. 두 시간 안에 결과가 나오지 않으면 노조와 협상이 중단될 것입니다.\n3. 김영범 대통령 정책실장이 국민 배당금을 제안했습니다. 이는 반도체 사업부의 초과 이익으로 늘어난 법인세를 재원으로 삼아 국민에게 분배하는 것을 의미합니다. 이 구상은 SNS에서 AI 인프라 시대의 과실이 특정 기업만의 결과가 아닌 전 국민에게 구조적으로 환원되어야 한다고 주장했습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 1.1575,
+      "min": 2.8225,
+      "nb_score": 0.4101,
+      "avg_views": 7911.0,
+      "total_views": 39555
+    },
+    {
+      "keyword": "청년 연구자 학부 연구경험",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "버스 준공영제 전면 개혁",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "국제유가 환율 1500원",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "AI 일자리 창조적 파괴",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "월세 20만원 지원 반전",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "소비 양극화 불장 백화점",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "이란 전쟁 미국 휘발유값",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "중국 총책 구속영장 신청",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "전작권 전환 한미 온도차",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "검찰 모스 탄 수사",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    }
+  ]
+}

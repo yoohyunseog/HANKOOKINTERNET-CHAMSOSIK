@@ -1,5 +1,6 @@
 const canvas = document.querySelector("#battlefield");
 const ctx = canvas.getContext("2d");
+const DEFAULT_GAME_AI_ENDPOINT = "https://cyclopedically-orthogenetic-sienna.ngrok-free.dev";
 
 const state = {
   minute: 12 * 60,
@@ -1106,14 +1107,21 @@ function setAIAdvice(text, status = "") {
   advice.textContent = text;
 }
 
+function gameAiBaseUrl(endpoint) {
+  return endpoint.replace(/\/api\/game-ai-advice$/, "").replace(/\/api\/chat$/, "").replace(/\/health$/, "").replace(/\/$/, "");
+}
+
 async function requestOllamaAdvice() {
   const button = document.querySelector("#aiAdviceButton");
   const modelInput = document.querySelector("#ollamaModelInput");
+  const endpointInput = document.querySelector("#gameAiEndpointInput");
   const model = (modelInput?.value || "kimi-k2.6:cloud").trim();
-  const endpoint = localStorage.getItem("ollamaEndpoint") || "http://127.0.0.1:11434";
+  const endpoint = normalizeGameAiEndpoint((endpointInput?.value || localStorage.getItem("gameAiEndpoint") || DEFAULT_GAME_AI_ENDPOINT).trim());
   const snapshot = gameSnapshotForAI();
 
   localStorage.setItem("ollamaModel", model);
+  localStorage.setItem("gameAiEndpoint", endpoint);
+  if (endpointInput) endpointInput.value = endpoint;
   if (button) button.disabled = true;
   setAIAdvice("Ollama Cloud 모델이 전술 상태를 분석 중입니다...", "loading");
 
@@ -1121,34 +1129,23 @@ async function requestOllamaAdvice() {
   const timeout = setTimeout(() => controller.abort(), 9000);
 
   try {
-    const response = await fetch(`${endpoint.replace(/\/$/, "")}/api/chat`, {
+    const response = await fetch(endpoint, {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
+      headers: {
+        "Content-Type": "application/json",
+        "ngrok-skip-browser-warning": "true"
+      },
       signal: controller.signal,
       body: JSON.stringify({
         model,
-        stream: false,
-        options: {
-          temperature: 0.25,
-          num_predict: 140
-        },
-        messages: [
-          {
-            role: "system",
-            content: "You are a fast tactical advisor for an arcade carrier command game. Answer in Korean. Keep it under 3 short lines. Recommend exactly one command id and explain why."
-          },
-          {
-            role: "user",
-            content: JSON.stringify(snapshot)
-          }
-        ]
+        snapshot
       })
     });
 
     if (!response.ok) throw new Error(`Ollama 응답 실패: ${response.status}`);
 
     const data = await response.json();
-    const content = data?.message?.content || data?.response || "";
+    const content = data?.content || data?.message?.content || data?.response || "";
     setAIAdvice(content.trim() || localTacticalAdvice());
     addLog("Ollama Cloud AI 전술 추천을 수신했습니다.", "good");
   } catch (error) {
@@ -1157,6 +1154,65 @@ async function requestOllamaAdvice() {
   } finally {
     clearTimeout(timeout);
     if (button) button.disabled = false;
+  }
+}
+
+function normalizeGameAiEndpoint(value) {
+  if (!value) return `${DEFAULT_GAME_AI_ENDPOINT}/api/game-ai-advice`;
+  const trimmed = value.replace(/\/$/, "");
+  if (trimmed.endsWith("/api/game-ai-advice")) return trimmed;
+  if (trimmed.startsWith("http://") || trimmed.startsWith("https://")) {
+    return `${trimmed}/api/game-ai-advice`;
+  }
+  return trimmed;
+}
+
+async function checkOllamaCloudConnection() {
+  const modelInput = document.querySelector("#ollamaModelInput");
+  const endpointInput = document.querySelector("#gameAiEndpointInput");
+  const model = (modelInput?.value || "kimi-k2.6:cloud").trim();
+  const endpoint = normalizeGameAiEndpoint((endpointInput?.value || localStorage.getItem("gameAiEndpoint") || DEFAULT_GAME_AI_ENDPOINT).trim());
+  const baseUrl = gameAiBaseUrl(endpoint);
+
+  if (endpointInput) endpointInput.value = baseUrl;
+  localStorage.setItem("gameAiEndpoint", endpoint);
+  setAIAdvice(`Ollama Cloud 접속 확인 중...\n모델: ${model}\n서버: ${baseUrl}`, "loading");
+
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), 12000);
+
+  try {
+    const healthResponse = await fetch(`${baseUrl}/health`, {
+      cache: "no-store",
+      headers: { "ngrok-skip-browser-warning": "true" },
+      signal: controller.signal
+    });
+    if (!healthResponse.ok) throw new Error(`health ${healthResponse.status}`);
+    const health = await healthResponse.json();
+    if (health.ollama !== "ok") throw new Error(`ollama ${health.ollama}`);
+
+    const chatResponse = await fetch(`${baseUrl}/api/chat`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "ngrok-skip-browser-warning": "true"
+      },
+      signal: controller.signal,
+      body: JSON.stringify({
+        model,
+        prompt: "연결 확인. 한국어로 OK만 답하세요.",
+        options: { temperature: 0, num_predict: 16 }
+      })
+    });
+    if (!chatResponse.ok) throw new Error(`model ${chatResponse.status}`);
+    const data = await chatResponse.json();
+
+    setAIAdvice(`Ollama Cloud 접속 확인 완료\n모델: ${data.model || model}\n서버: ${baseUrl}`);
+    addLog("Ollama Cloud AI 모델 접속 확인 완료.", "good");
+  } catch (error) {
+    setAIAdvice(`Ollama Cloud 접속 확인 실패\n서버: ${baseUrl}\n오류: ${error.message}`, "error");
+  } finally {
+    clearTimeout(timeout);
   }
 }
 
@@ -1364,6 +1420,12 @@ const savedOllamaModel = localStorage.getItem("ollamaModel");
 if (savedOllamaModel) {
   document.querySelector("#ollamaModelInput").value = savedOllamaModel;
 }
+const savedGameAiEndpoint = localStorage.getItem("gameAiEndpoint");
+if (savedGameAiEndpoint) {
+  document.querySelector("#gameAiEndpointInput").value = gameAiBaseUrl(savedGameAiEndpoint);
+} else {
+  document.querySelector("#gameAiEndpointInput").value = DEFAULT_GAME_AI_ENDPOINT;
+}
 
 canvas.addEventListener("click", canvasClick);
 window.addEventListener("resize", resizeCanvasForDisplay);
@@ -1372,4 +1434,5 @@ addLog("작전 개시. AI 전술 카드 상황실이 전장 우선순위를 계�
 addLog("전장 지도 또는 구역 카드를 선택한 뒤 전술 카드를 실행하십시오.");
 spawnEnemy();
 render();
+setTimeout(checkOllamaCloudConnection, 500);
 requestAnimationFrame(loop);

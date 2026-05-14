@@ -1,0 +1,337 @@
+{
+  "timestamp": "2026-05-13T10:29:17.797449",
+  "model": "mistral:latest",
+  "keyword_count": 3,
+  "analyze_subtitles": true,
+  "analysis_source": "youtube",
+  "keywords": [
+    {
+      "keyword": "오늘의 주요 뉴스",
+      "is_fixed": true,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "코스피 하락세",
+      "is_fixed": false,
+      "views": [
+        6234,
+        476,
+        327471
+      ],
+      "video_count": 3,
+      "videos": [
+        {
+          "title": "KOSPI falls just below 8,000... KOSDAQ also drops to the 3% range (May 12, 2026 / 12 MBC News)",
+          "video_id": "WVhGeSk3upI",
+          "views": 6234,
+          "upload_date": "2026-05-12",
+          "url": "https://www.youtube.com/watch?v=WVhGeSk3upI",
+          "subtitle_summary": "1. 코스피(Korean Stock Price Index) 8,000 초과로 오르다가 중간 기준 7,400대까지 하락하며 반복되고 있습니다.\n2. 오늘 시작한 코스피는 1.68% 상승했으나 외국인 투자자들의 대규모 매물이 추회되어 하락하였습니다.\n3. 코스닥(Korean Securities Dealers Automated Quotation) 지수는 오늘 0.63% 상승 출발했으나 3% 이상의 하락세를 보이며 1,160대에서 거래되고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "코스피 이틀 연속 내림세...삼성전자 4%대 하락 / YTN",
+          "video_id": "YLudmouXBRo",
+          "views": 476,
+          "upload_date": "2026-05-13",
+          "url": "https://www.youtube.com/watch?v=YLudmouXBRo",
+          "subtitle_summary": "1. 코스피는 이틀 연속으로 내리고 있습니다. 특히 삼성전자가 노사 협상 불발 소식과 미국 반도체 약세에 인해 5% 내렸습니다.\n2. 코스피는 오늘도 1.69% 내린 7,513으로 하락 출발했고, 외국인이 순매도하고 있습니다.\n3. 원달러 환율은 오늘 1493.8원으로 상승했으며, 이란과의 협상 지연 등 불확실성이 유입되면서 국제 유가는 상승세입니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[Economy Snippet] Dropping Just Before 8,000 Points... \"Foreigners Net Selling\" Trading Halted To...",
+          "video_id": "eN1g9MGqnTc",
+          "views": 327471,
+          "upload_date": "2026-05-12",
+          "url": "https://www.youtube.com/watch?v=eN1g9MGqnTc",
+          "subtitle_summary": "1. 미국 뉴욕 증시는 상승세로 마감됐고, 우리 증시는 크게 출렁였습니다. (Economy Snippet) Dropping Just Before 8,000 Points...\n2. 트럼프 대통령이 이란과의 휴전이 아슬아슬하고, SMP 지수, Nasdaq 지수가 사상 최고치를 기록했습니다. (Trump's peace talks with Iran are precarious and stock indices reach all-time highs)\n3. 미국 증시에서 Samsung Electronics, Hyundai Motor Group stocks were expected to push the Kospi above the top 12, but the market fell sharply at the opening, failing to reach 8,000 points. (The Korean stock market failed to reach 8,000 points due to a sharp drop in Samsung Electronics and Hyundai Motor Group stocks)",
+          "db_saved": true
+        }
+      ],
+      "max": 0.9417,
+      "min": 1.8834,
+      "nb_score": 0.5,
+      "avg_views": 111393.67,
+      "total_views": 334181
+    },
+    {
+      "keyword": "반도체 국민배당금",
+      "is_fixed": false,
+      "views": [
+        33518,
+        132227,
+        35481,
+        1993,
+        70212,
+        2756
+      ],
+      "video_count": 6,
+      "videos": [
+        {
+          "title": "'AI National Dividend' Remarks Spark Widespread Controversy... Blue House Draws Line / SBS 8 News",
+          "video_id": "LcMuJDFwL5w",
+          "views": 33518,
+          "upload_date": "2026-05-12",
+          "url": "https://www.youtube.com/watch?v=LcMuJDFwL5w",
+          "subtitle_summary": "청와대 정책실장 김용범은 AI, 반도체 산업의 성과를 국민에게 돌려주는 '국민배당금제'를 제안했습니다. 이로 인해 파문이 확산되고 있으며, 야당은 공산당 본색을 드러냈다고 비판하고 있습니다. 김용범은 AI 시대의 메모리와 인프라 수요가 장기적 구조 변화로 한국이 처음으로 지속적 초과 이윤을 생산하는 국가가 될 수 있다고 주장했습니다. 이에 국민배당금이라는 이름으로 전 국민이 구조적으로 환원되어야 하는 과실의 일부를 제시했습니다. 김용범은 초과 세수가 생기지 않는다면 국민 배당금은 허황된 이야기라고 주장했으며, 이에 대한 해석은 삼성전자나 SK하이닉스와 같은 반도체 기업의 초과이익을 염두에 둔 것이라고 보도되었습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[5월 12일 화요일 한국시황] 반도체 이익을 국민배당금으로? 논란의 발언, 시장은 왜 흔들렸나 | SK하이닉스 목표가 310만원? | 삼성家 재산 111조원",
+          "video_id": "08Fm-dzQW1I",
+          "views": 132227,
+          "upload_date": "2026-05-12",
+          "url": "https://www.youtube.com/watch?v=08Fm-dzQW1I",
+          "subtitle_summary": "1. 5월 12일 한국 시장이 하락했고, 이에 관련해 논란이 있었습니다. 특히 국민배당금 이슈가 제기되었습니다.\n2. 외국인의 매도가 시장 하락을 크게 흔들었으며, 반도체 지수에서 큰 폭으로 하락했습니다.\n3. SK하이닉스와 삼성전자가 오늘 거래소에서 하락했고, ETF의 자금 유출이 사상 최대로 일어나었습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "Chief of Staff Kim Yong-beom Proposes 'National Dividend' for AI Era: \"Anti-Market\" vs. \"Virtuous...",
+          "video_id": "DR-RPwodaKA",
+          "views": 35481,
+          "upload_date": "2026-05-12",
+          "url": "https://www.youtube.com/watch?v=DR-RPwodaKA",
+          "subtitle_summary": "1. AI 시대에 일자리가 줄어들 수 있다는 경고가 나오며, 청와대 정책실장 Kim Yong-beom 은 'National Dividend' (국민 배당)를 제안하여 AI 산업의 성장으로 인한 사회 내부 격차를 줄이고, 과실을 환원해야 한다는 주장을 했습니다.\n2. Kim Yong-beom은 SNS를 통해 AI 인프라의 과실은 전국민에게 구조적으로 환원되어야 하며, AI 시대의 초과 이유는 속성상 집중된다고 강조했습니다.\n3. 청와대의 발언에 대한 분석은 국민 배당 금지를 제한하고, AI 슈퍼사이클로 수혜받은 반도체 기업에 대한 이익 분배에 대한 압력을 준 것으로 해석되었습니다. 또한 정치권에서도 번졌고, 반시장적이라는 비판이 나오며, 대규모 법인세 초과 세수를 어떻게 활용할지 논의하자는 취지로 설명되었습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[반도체 국민배당금] 피할수 없는 이유 : 이건 정부 말이 맞다 공장 생산직이 10억 받아갈수 있을거라 생각했으면 너무 나이브한것이다 결국 욕심부리다가 전국민이랑 나누게 생겼다",
+          "video_id": "uTD6szV7fG0",
+          "views": 1993,
+          "upload_date": "2026-05-12",
+          "url": "https://www.youtube.com/watch?v=uTD6szV7fG0",
+          "subtitle_summary": "1. 반도체 국민배당금은 복잡하고, 생산직 공장 노동자들이 5억~10억 받을 것으로 예상되었지만, 전기와 수자원 공사에 대한 비용 등이 문제가 된다.\n2. 하이닉스 노동자들은 중국 공장에서 일하는 중국인을 포함해, 한국 본사에 대한 요구를 하고 있으나, 한국 본사가 적절한 대응을 못 하고 있다.\n3. 이 문제는 미국의 자동차 산업이 망했던 원인과 같은 것으로, 온갖 사람들이 돈을 달라는 것이 제조업에 문제를 가져오고 있다.",
+          "db_saved": true
+        },
+        {
+          "title": "[지금뉴스] 김용범 ‘AI 국민배당금’ 발언에…“코스피 급락 배경” “개인 의견” / KBS 2026.05.12.",
+          "video_id": "HFo3esZdGH0",
+          "views": 70212,
+          "upload_date": "2026-05-12",
+          "url": "https://www.youtube.com/watch?v=HFo3esZdGH0",
+          "subtitle_summary": "1. 코스피 주가는 김용범, 청와대 정책실장의 AI 국민배당금 발언 이후 급격히 하락했습니다. 2. 김용범은 SNS를 통해 AI 시대에서 초과 이윤을 사회적으로 환원하는 국민 배당금 도입을 제안했습니다. 3. 외국인 투자자들은 발언 이후 양대 반도체 기업 주식을 수조원어치 순매도하면서 주가가 약세로 급격히 전환됐습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "National Dividend Amid Semiconductor Boom?… Opposition Launches Fierce Attack, \"Dismiss Kim Yong-...",
+          "video_id": "B-ugbzaQeII",
+          "views": 2756,
+          "upload_date": "2026-05-12",
+          "url": "https://www.youtube.com/watch?v=B-ugbzaQeII",
+          "subtitle_summary": "1. 김명범 정책실장은 오늘 삼성 노조가 요구한 것을 국민 배당금(National Dividend)으로 설명했습니다.\n2. 공산당이나 하는 것이 아닌가 문제인지, 누가 투자하고 돈을 벌 것인지에 대해 의문을 갖습니다.\n3. 이재명 정부는 기업이 숨쉬게 해야 투자를 할 수 있고, 일자리를 만들지 않겠다고 하여 민낯을 드러내고 있습니다. (이는 National Dividend Amid Semiconductor Boom?에서 반대의견으로 나타난 것으로 보입니다.)",
+          "db_saved": true
+        }
+      ],
+      "max": 0.7608,
+      "min": 1.5445,
+      "nb_score": 0.4926,
+      "avg_views": 46031.17,
+      "total_views": 276187
+    },
+    {
+      "keyword": "호르무즈 해협 기여",
+      "is_fixed": false,
+      "views": [
+        1288,
+        1570,
+        552,
+        4700
+      ],
+      "video_count": 4,
+      "videos": [
+        {
+          "title": "[🔴속보] 안규백 \"호르무즈 단계적 기여방안 검토…美 전달\" / 연합뉴스TV(YonhapnewsTV)",
+          "video_id": "inn_TO5oGE0",
+          "views": 1288,
+          "upload_date": "2026-05-13",
+          "url": "https://www.youtube.com/watch?v=inn_TO5oGE0",
+          "subtitle_summary": "1. 안규백 국방부 장관은 미국에게 호르무즈 해협 통항 정상화와 관련된 단계적인 기여 방안을 전달했다.\n2. 양국의 국방 장관들은 워싱턴에서 회담하여 전시작전 통제권 전환, 핵추진 잠수함 건조 협력 등 주요 안보 현상을 논의했다.\n3. 양국은 협력하여 한미연합 방위태세를 강화하기 위해 현실적이고 실용적인 접근이 중요하다는 것을 강조했으며, 우리 주도의 한반도 방위를 실현하기 위해 최대한의 노력을 다하고 있음을 알렸습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[뉴스특보] 韓 \"호르무즈 단계적 기여 검토\"…트럼프 中 출발 / 연합뉴스TV (YonhapnewsTV)",
+          "video_id": "OnAoW2cQsbw",
+          "views": 1570,
+          "upload_date": "2026-05-13",
+          "url": "https://www.youtube.com/watch?v=OnAoW2cQsbw",
+          "subtitle_summary": "1. 한국의 국방장관 안규백은 워싱턴에서 호르무즈 해협 통항 정상화와 관련해 미국에게 단계적으로 기여하는 방안을 제시했다.\n2. 이런 방안은 인력 파견, 정보 공유, 군사적 자산 지원 등이 포함될 수 있으며, 국내법 절차에 따라서 해야 할 사항도 있다.\n3. 미국과의 협력은 필요하고, 전쟁의 여러 가지 영향을 봤을 때 우리가 할 수 있는 역할이 있다고 한다.",
+          "db_saved": true
+        },
+        {
+          "title": "Ahn Gyu-baek \"Conveys Position to U.S. on Phased Contribution to Hormuz\" (May 13, 2026 / News Tod...",
+          "video_id": "B-xGN3M4pw4",
+          "views": 552,
+          "upload_date": "2026-05-12",
+          "url": "https://www.youtube.com/watch?v=B-xGN3M4pw4",
+          "subtitle_summary": "1. 국방부 장관 안규백, 미국 방문 중, 호르모저 해협 통항 정상화에 대한 단계적 기여 방안을 검토하겠다고 전달했습니다.\n2. 안규백은 워싱턴 DC 주미 한국 대사관에서 특파원들과 간담회를 갖고, 이원으로서 구르무제협 통항 제계와 관련해 미국 측에 국제 사회에 책임 있는 참여를 선언했습니다.\n3. 안규백은 단계적 기업 방법, 지지 표면과 인력 파견, 정보 공유, 군사적 자산 지원 등을 언급하며, 우리군의 참여 확대에 대해선 이야기를 깊게 했다고 설명했습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "한미 국방장관 중대 시점에 회담…호르무즈 기여 압박[9시 뉴스] / KBS  2026.05.12.",
+          "video_id": "v6hfwWpQPU8",
+          "views": 4700,
+          "upload_date": "2026-05-12",
+          "url": "https://www.youtube.com/watch?v=v6hfwWpQPU8",
+          "subtitle_summary": "1. The United States has requested South Korea's cooperation in a potential military operation against Iran, emphasizing the alliance during a meeting between US and South Korean defense ministers.\n2. The situation arises due to the attack on a South Korean ship in the Strait of Hormuz, which could become a target due to the ongoing military project \"Freedoms Sentinel\" led by the US and its allies.\n3. In response to the crisis in the Strait of Hormuz, South Korea has participated in another multilateral meeting led by England and France to discuss safety and freedom of navigation in the region.",
+          "db_saved": true
+        }
+      ],
+      "max": 0.9886,
+      "min": 2.1907,
+      "nb_score": 0.4513,
+      "avg_views": 2027.5,
+      "total_views": 8110
+    },
+    {
+      "keyword": "민생회복 소비쿠폰",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "청년고용률 하락",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "계엄 매뉴얼 논란",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "약탈금융 전수조사",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "AI 데이터센터 포항",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "미 이란 압박",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "긴축재정 논란",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "전작권 전환 논의",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "유보통합 조건",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "무인 부상병 후송",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "자율주행차 광주",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "반도체 TOP10 커버드콜",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    }
+  ]
+}

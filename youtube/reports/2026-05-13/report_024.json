@@ -1,0 +1,319 @@
+{
+  "timestamp": "2026-05-13T08:33:37.175324",
+  "model": "mistral:latest",
+  "keyword_count": 3,
+  "analyze_subtitles": true,
+  "analysis_source": "youtube",
+  "keywords": [
+    {
+      "keyword": "오늘의 주요 뉴스",
+      "is_fixed": true,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "삼성전자 노조 파업",
+      "is_fixed": false,
+      "views": [
+        48245,
+        25345,
+        11139,
+        2083,
+        8019
+      ],
+      "video_count": 5,
+      "videos": [
+        {
+          "title": "'파업 D-8' 삼성전자 노사, 협상 결렬...노조 \"요구 관철 안 돼\" / YTN",
+          "video_id": "h-ks40Aif4E",
+          "views": 48245,
+          "upload_date": "2026-05-12",
+          "url": "https://www.youtube.com/watch?v=h-ks40Aif4E",
+          "subtitle_summary": "1. 삼성전자 노사와 중앙동위원회는 21일 총파업을 앞두고 16시간 넘게 협상했지만 결과적으로 이견이 컸다.\n2. 노조는 기존 요구 사항이 전혀 관찰되지 않고 오히려 퇴보된 조정안을 제시받았다고 밝혔습니다.\n3. 삼성전자 노사의 최승호 초기업노조 삼성전자 지부 위원장은 중로위에 조정안을 요청했으나, 노조의 요구보다 더 퇴보된 결과를 받았다고 평가했습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "\"파업이고 뭐고 탈퇴합니다\"…삼성전자 MZ노조 분노 폭발",
+          "video_id": "GSUGLT13Zzg",
+          "views": 25345,
+          "upload_date": "2026-05-12",
+          "url": "https://www.youtube.com/watch?v=GSUGLT13Zzg",
+          "subtitle_summary": "1. Samsung Electronics is facing intense internal turmoil as the union criticizes the company for focusing solely on profits from the semiconductor division, leading to collective backlash from employees in smartphone and home appliance sectors.\n2. The conflict within Samsung's union has reached a critical point, with some unions withdrawing membership and demanding that the executive committee stop prioritizing specific business units.\n3. The criticism includes accusations of ignoring the achievements of the Galaxy and Home Appliances divisions, which have historically contributed to Samsung's success in difficult times for the semiconductor industry. This internal discord is causing concern about Samsung's management uncertainty amidst fierce competition in AI semiconductors.",
+          "db_saved": true
+        },
+        {
+          "title": "[Replay] Final Day of Samsung Electronics Labor-Management Mediation... Union: \"We Will Do Our Be...",
+          "video_id": "3bvuvPdgerc",
+          "views": 11139,
+          "upload_date": "2026-05-12",
+          "url": "https://www.youtube.com/watch?v=3bvuvPdgerc",
+          "subtitle_summary": "1. 노동조 대표는 어제의 회의에서 처음으로 이견을 나누었다고 말한다. (Yesterday, we had our first disagreement during the meeting.)\n2. 초기업 노동조가 작년에 단체벽을 처음 체결하여 6개월 만에 과반수를 이루었다고 설명한다. (We became a majority union within 6 months after the initial agreement last year.)\n3. 노동조 대표는 노동조합원들이 만족할 수 있는 결과를 위해 최선을 다하고 있으며, 합의나 분쟁에 관계없이 그렇게 노력하고 있음을 전달한다. (I am working hard to achieve a result that will satisfy the union members, regardless of whether it's a compromise or conflict.)",
+          "db_saved": true
+        },
+        {
+          "title": "\"No, you're really asking for 2.6 billion won?\" The real reason why the more the Samsung Electron...",
+          "video_id": "_YfloAxiHks",
+          "views": 2083,
+          "upload_date": "2026-05-12",
+          "url": "https://www.youtube.com/watch?v=_YfloAxiHks",
+          "subtitle_summary": "1. 삼성전자의 최고 실적을 기록했지만 특정 집단은 2.6조원의 금액을 요구하는데, 이는 반도체 직원들의 성과급으로 달라는 것입니다.\n2. 이 요구가 발생한 이유는 삼성전자가 최근 적자를 보고 노조는 흡사하게 소리를 지르지 않았었으나, 실적이 살아난 후 금액을 요구하기 시작했습니다.\n3. 노조의 요구가 걸맞는 금액인지 그 구조와 진짜 비용을 분석해보겠습니다. 또한, 이 요구로 인해 직원들이 받을 배당금과 미래 기술에 투자할 돈도 함께 줄어들 수 있으므로 사람들은 이러한 요구를 비판하고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "삼성전자 노사, 오늘 마지막 담판...총파업 기로 / YTN",
+          "video_id": "onVQsU7XEto",
+          "views": 8019,
+          "upload_date": "2026-05-12",
+          "url": "https://www.youtube.com/watch?v=onVQsU7XEto",
+          "subtitle_summary": "1. Samsung Electronics노사(공장 노동자)가 정부 중재 아래 성과급 협상에서 어려움을 겪고 있음. 최종 결론은 12시간 이상의 논의로 내리지 못했으며, 오늘(당일) 중앙노동위원회에서 두 번째 사후조정 회의가 진행중.\n2. 양측의 분쟁점은 성과급 산정 방식과 제도화 여부이며, 도조측(사장단)는 영업 이익 15%를 성과급 재원으로 확보하고 지급 상한을 없애는 방안을 주장하고 있음. 반면, 사측(노동자)은 추가 의견이 수렴되어야 성과급 체계를 제도화해야 한다며 난색을 나타내고 있음.\n3. 총파업이 현실화될 경우, 충격은 만만치 않을 것으로 보이며, 글로벌 빅테크 기업들이 반도체 생산 차지를 걱정하고 있으며, 주요 기업들이 핵심 부품 공급처를 다변화할 가능성이 제기되었음.",
+          "db_saved": true
+        }
+      ],
+      "max": 0.9405,
+      "min": 1.773,
+      "nb_score": 0.5305,
+      "avg_views": 18966.2,
+      "total_views": 94831
+    },
+    {
+      "keyword": "AI 국민배당금 논란",
+      "is_fixed": false,
+      "views": [
+        13798,
+        67122,
+        9489,
+        15206
+      ],
+      "video_count": 4,
+      "videos": [
+        {
+          "title": "Kim Yong-bum's 'AI National Dividend' Controversy... Opinions Say \"Time for Discussion\" / JTBC Ne...",
+          "video_id": "l15CpL9UW3c",
+          "views": 13798,
+          "upload_date": "2026-05-12",
+          "url": "https://www.youtube.com/watch?v=l15CpL9UW3c",
+          "subtitle_summary": "1. 코스피는 오늘 8,000선까지 올라갔다가 외국인 매도로 하락하며 7,400선에 정지했습니다.\n2. 이 폭락의 원인으로 김용범 청와대 정책실장의 AI 국민 배당금 발언이 지목되었습니다.\n3. 김실장은 초과세수를 활용하여 국민에게 혜택을 균등하게 나누는 것을 제안했으며, 청와대는 개인의 의견일뿐 정부 방침과 무관하다고 주장했습니다. 이로 인해 우리 서회가 AI 산업 호황의 혜택을 어떻게 나눌 것인지에 대한 논의가 필요하다는 의견도 나옵니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[지금뉴스] 김용범 ‘AI 국민배당금’ 발언에…“코스피 급락 배경” “개인 의견” / KBS 2026.05.12.",
+          "video_id": "HFo3esZdGH0",
+          "views": 67122,
+          "upload_date": "2026-05-12",
+          "url": "https://www.youtube.com/watch?v=HFo3esZdGH0",
+          "subtitle_summary": "1. 코스피 주가는 김용범, 청와대 정책실장의 AI 국민 배당금 발언 이후 급격히 하락했습니다.\n2. 김용범은 SNS를 통해 AI 시대에서 초과 이윤을 사회적으로 환원하는 국민 배당금 도입을 제안했습니다.\n3. 분석가들은 김실장의 발언이 외국인 투자자들에게 삼성전자와 SK 하이닉스 주식을 수조원어치로 순매도하는 데 영향을 미쳤다고 보았습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "‘AI 국민 배당금’ 띄운 정책실장…“과실 특정 기업만의 결과 아냐” [9시 뉴스] / KBS  2026.05.12.",
+          "video_id": "p5l-dpXbCOQ",
+          "views": 9489,
+          "upload_date": "2026-05-12",
+          "url": "https://www.youtube.com/watch?v=p5l-dpXbCOQ",
+          "subtitle_summary": "1. 김용범, 청와대 정책실장은 AI 국민 배당금을 제안했으나 반도체 기업의 성과금 논쟁 속에서 다시 논란이 발생했습니다. 김실장은 인공지능 관련 호황으로 세금을 많이 거치면 일부를 국민에게 돌려주는 것이 필요하다고 주장했습니다.\n2. 김용범은 인공지능 인프라 시대의 과실은 특정 기업만의 결과가 아니라고 말했으나, 역대급 초과세수가 전제되면 국민 배당금은 허황된 이야기라고 하였습니다.\n3. 김용범의 발언으로 인해 한국 증시에서 극심한 변동성이 촉발되었고, AI 수회 기업에 대한 새로운 과세 신호(횡제세)가 나타났습니다. 또한 정치권 공방도 이어졌으며, 국민의 힘과 개혁신당은 반기업 정책 공산주의 배극 경제라고 맹공했습니다. 여당은 과도한 정치공세라며 반박했지만 당차원의 공식 입장을 내진 않았습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "Blue House on ‘National Dividend’ Controversy: “Personal Opinion” / Channel A / News A",
+          "video_id": "Yz2RiCYOh9E",
+          "views": 15206,
+          "upload_date": "2026-05-12",
+          "url": "https://www.youtube.com/watch?v=Yz2RiCYOh9E",
+          "subtitle_summary": "1. 김영범 대통령 정책실장은 국민 배당금을 제안했습니다. 이는 반도체 호환기 등의 초과 이익으로 늘어난 법인세를 재원으로, 청년 창업자산, 농어촌 기본소득, 노력연금 강화 등에 분배하는 것을 의미합니다.\n2. 이 제안은 국민 혼란을 일으켰고, 야당은 비판이 쏟아졌습니다. 또한 코스피 장 중 5% 급락의 원인 중 하나로 지목되었습니다.\n3. 청와대는 개인 의견이라며 선을 거두었으며, 국민 배당금 구상에 시민들 의견은 엇갈렸습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0.7176,
+      "min": 2.1816,
+      "nb_score": 0.3289,
+      "avg_views": 26403.75,
+      "total_views": 105615
+    },
+    {
+      "keyword": "카카오 T 최신동향",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "마이크론 테크놀로지 뉴스",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "신한은행 서울시금고 수성",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "하나카드 삼성월렛 해외결제",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "K-철강 생존 전략",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "소비 양극화 현상",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "부동산 세금 인상",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "중국 과잉공급 영향",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "ETF 순자산 1조",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "반도체주 차익실현",
+      "is_fixed": false,
+      "views": [
+        4
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "인플레 우려에 꺾인 반도체 랠리 / 이란전 휴전 붕괴 우려…다시 고개드는 유가 #인플레 #반도체 #이란전 #유가 #글로벌시황센터",
+          "video_id": "JC0nVUE_-7A",
+          "views": 4,
+          "upload_date": "2026-05-12",
+          "url": "https://www.youtube.com/watch?v=JC0nVUE_-7A",
+          "subtitle_summary": "1. 글로벌 시황센터에서는 미국의 4월 소비자 물가 지수 CPI가 전년동활 대비 3.8% 상승으로 최고 수준으로 증가했다는 것을 발표하였습니다.\n2. 이 인플레이션 우려로 인해 투자자들은 차이 실현계를 노리며 반도체 종목들에 대한 매물을 쏟아내었습니다.\n3. 이날 뉴욕 증권 거래소에서 대장주 엔비디아는 78달러로 220.78달러로 하락했으며, 인텔과 AMD와 같은 반도체 회사들도 급격히 하락했습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "LG전자 로봇사업 전망",
+      "is_fixed": false,
+      "views": [
+        247
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "[LG Electronics Stock Outlook] 17% Surge to a New Record High! Explosive Expectations for Robotic...",
+          "video_id": "af5ZcbsdO-g",
+          "views": 247,
+          "upload_date": "2026-05-12",
+          "url": "https://www.youtube.com/watch?v=af5ZcbsdO-g",
+          "subtitle_summary": "1. LG Electronics의 주가는 17% 상승하여 신고가를 갱신했습니다. 이는 홈로봇 LG 클로이드의 로보틱스 사업 기대감으로 인해 발생했습니다.\n2. 3분기 실적에 대한 예상은 크게 반등할 것으로 예상되며, 증권사 22명의 애널리스트는 매수 의견을 유지하고 있습니다.\n3. 외국인이 643주를 대량 순매수하고 기관도 317주를 순매수하여 세력이 본격적으로 진입한 상황입니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "해군 잠수함 전력 순위",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "월세 지원 정책 반전",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    }
+  ]
+}

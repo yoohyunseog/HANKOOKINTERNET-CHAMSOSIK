@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <script src="../domain-check.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI 이슈 분석 채팅 | 참소식.com</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", sans-serif;
+        color: #102033;
+        background: #f6f9fb;
+      }
+
+      header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        padding: 16px 22px;
+        color: #ffffff;
+        background: #064e3b;
+        font-weight: 800;
+      }
+
+      header a {
+        color: #d1fae5;
+        text-decoration: none;
+      }
+
+      main {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) 340px;
+        gap: 18px;
+        width: min(1180px, calc(100% - 28px));
+        margin: 0 auto;
+        padding: 28px 0;
+      }
+
+      .chat-shell,
+      .side-panel {
+        border: 1px solid #d8e4ee;
+        border-radius: 8px;
+        background: #ffffff;
+        box-shadow: 0 12px 28px rgba(15, 23, 42, 0.08);
+      }
+
+      .chat-head {
+        padding: 22px;
+        border-bottom: 1px solid #e5edf5;
+      }
+
+      .kicker {
+        margin: 0 0 8px;
+        color: #0f766e;
+        font-size: 0.82rem;
+        font-weight: 900;
+      }
+
+      h1 {
+        margin: 0 0 10px;
+        font-size: clamp(1.8rem, 4vw, 3rem);
+        line-height: 1.1;
+        letter-spacing: 0;
+      }
+
+      .chat-head p {
+        max-width: 760px;
+        margin: 0;
+        color: #526174;
+        line-height: 1.7;
+      }
+
+      .messages {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        min-height: 460px;
+        max-height: 62vh;
+        overflow: auto;
+        padding: 18px;
+        background: #f8fbfd;
+      }
+
+      .message {
+        max-width: 82%;
+        padding: 14px 16px;
+        border-radius: 8px;
+        line-height: 1.65;
+        white-space: pre-wrap;
+      }
+
+      .message.user {
+        align-self: flex-end;
+        color: #ffffff;
+        background: #047857;
+      }
+
+      .message.ai {
+        align-self: flex-start;
+        color: #233247;
+        background: #ffffff;
+        border: 1px solid #dbe7ef;
+      }
+
+      .composer {
+        display: grid;
+        gap: 10px;
+        padding: 16px;
+        border-top: 1px solid #e5edf5;
+      }
+
+      textarea,
+      input {
+        width: 100%;
+        border: 1px solid #cfdce8;
+        border-radius: 8px;
+        color: #102033;
+        background: #ffffff;
+        font: inherit;
+      }
+
+      textarea {
+        min-height: 112px;
+        padding: 12px;
+        resize: vertical;
+        line-height: 1.6;
+      }
+
+      input {
+        min-height: 40px;
+        padding: 8px 10px;
+      }
+
+      button {
+        min-height: 42px;
+        border: 0;
+        border-radius: 8px;
+        color: #ffffff;
+        background: #047857;
+        font: inherit;
+        font-weight: 900;
+        cursor: pointer;
+      }
+
+      button:disabled {
+        cursor: wait;
+        opacity: 0.55;
+      }
+
+      .side-panel {
+        display: grid;
+        gap: 16px;
+        align-content: start;
+        padding: 18px;
+      }
+
+      .side-panel h2 {
+        margin: 0;
+        font-size: 1.2rem;
+      }
+
+      .field {
+        display: grid;
+        gap: 7px;
+      }
+
+      .field span {
+        color: #526174;
+        font-size: 0.86rem;
+        font-weight: 800;
+      }
+
+      .quick-list {
+        display: grid;
+        gap: 8px;
+      }
+
+      .quick-list button {
+        color: #124037;
+        background: #ecfdf5;
+        border: 1px solid #b7dfd7;
+        text-align: left;
+        padding: 10px;
+      }
+
+      .status {
+        min-height: 48px;
+        padding: 12px;
+        border-radius: 8px;
+        color: #315146;
+        background: #ecfdf5;
+        line-height: 1.55;
+      }
+
+      .status.error {
+        color: #7f1d1d;
+        background: #fef2f2;
+      }
+
+      .visitor-list,
+      .room-list {
+        display: grid;
+        gap: 8px;
+        max-height: 190px;
+        overflow: auto;
+      }
+
+      .visitor-chip,
+      .room-message {
+        padding: 10px;
+        border: 1px solid #d8e4ee;
+        border-radius: 8px;
+        background: #f8fbfd;
+      }
+
+      .visitor-chip strong,
+      .room-message strong {
+        display: block;
+        margin-bottom: 4px;
+        color: #064e3b;
+        font-size: 0.88rem;
+      }
+
+      .visitor-chip span,
+      .room-message span {
+        color: #64748b;
+        font-size: 0.78rem;
+      }
+
+      .room-message p {
+        margin: 6px 0 0;
+        color: #233247;
+        line-height: 1.5;
+      }
+
+      .room-form {
+        display: grid;
+        gap: 8px;
+      }
+
+      @media (max-width: 920px) {
+        main {
+          grid-template-columns: 1fr;
+        }
+
+        .message {
+          max-width: 94%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <span>참소식.com AI 이슈 분석</span>
+      <a href="../">메인으로</a>
+    </header>
+
+    <main>
+      <section class="chat-shell">
+        <div class="chat-head">
+          <p class="kicker">AI Content Desk</p>
+          <h1>이슈 분석 채팅</h1>
+          <p>
+            오늘의 이슈, 키워드 묶음, 시장 신호를 입력하면 AI가 관계와 맥락을 분석합니다.
+            참소식의 Sort 결과나 검색 키워드를 붙여넣고 질문해도 됩니다.
+          </p>
+        </div>
+
+        <div class="messages" id="messages">
+          <div class="message ai">안녕하세요. 분석할 이슈나 키워드를 보내주세요. 핵심 요약, 관계 해석, 위험 신호, 다음 확인 질문으로 정리해드릴게요.</div>
+        </div>
+
+        <form class="composer" id="chatForm">
+          <textarea id="promptInput" placeholder="예: KOSPI 상승, 반도체 관세, AI 투자 확대가 동시에 언급됐어. 이 흐름을 분석해줘."></textarea>
+          <button id="sendButton" type="submit">AI 분석 요청</button>
+        </form>
+      </section>
+
+      <aside class="side-panel">
+        <h2>연결 설정</h2>
+        <label class="field">
+          <span>AI API URL</span>
+          <input id="endpointInput" type="text" value="https://cyclopedically-orthogenetic-sienna.ngrok-free.dev" />
+        </label>
+        <label class="field">
+          <span>Model</span>
+          <input id="modelInput" type="text" value="kimi-k2.6:cloud" />
+        </label>
+        <button id="checkButton" type="button">접속 확인</button>
+        <div class="status" id="statusBox">처음 접속 시 AI 서버 상태를 확인합니다.</div>
+
+        <h2>빠른 질문</h2>
+        <div class="quick-list">
+          <button type="button" data-prompt="오늘 이슈를 핵심 신호 5개로 압축하고 서로의 관계를 설명해줘.">핵심 신호 5개</button>
+          <button type="button" data-prompt="이 이슈들이 경제, 기술, 국제 리스크에 어떤 영향을 줄 수 있는지 분석해줘.">영향 분석</button>
+          <button type="button" data-prompt="검색으로 추가 확인해야 할 키워드와 질문을 만들어줘.">추가 검색 질문</button>
+        </div>
+
+        <h2>방문자 채팅방</h2>
+        <div class="status" id="visitorBox">방문자 확인 중...</div>
+        <div class="visitor-list" id="visitorList"></div>
+        <div class="room-list" id="roomMessages"></div>
+        <form class="room-form" id="roomForm">
+          <input id="roomInput" type="text" maxlength="800" placeholder="방문자 채팅 메시지" />
+          <button type="submit">채팅 보내기</button>
+        </form>
+      </aside>
+    </main>
+
+    <script>
+      const DEFAULT_ENDPOINT = "https://cyclopedically-orthogenetic-sienna.ngrok-free.dev";
+      const messagesEl = document.querySelector("#messages");
+      const form = document.querySelector("#chatForm");
+      const promptInput = document.querySelector("#promptInput");
+      const sendButton = document.querySelector("#sendButton");
+      const endpointInput = document.querySelector("#endpointInput");
+      const modelInput = document.querySelector("#modelInput");
+      const statusBox = document.querySelector("#statusBox");
+      const visitorBox = document.querySelector("#visitorBox");
+      const visitorList = document.querySelector("#visitorList");
+      const roomMessages = document.querySelector("#roomMessages");
+      const roomForm = document.querySelector("#roomForm");
+      const roomInput = document.querySelector("#roomInput");
+      let roomTimer = null;
+
+      function apiBase() {
+        return (endpointInput.value || DEFAULT_ENDPOINT).replace(/\/api\/chat$/, "").replace(/\/health$/, "").replace(/\/$/, "");
+      }
+
+      function setStatus(text, isError = false) {
+        statusBox.textContent = text;
+        statusBox.classList.toggle("error", isError);
+      }
+
+      function addMessage(role, text) {
+        const message = document.createElement("div");
+        message.className = `message ${role}`;
+        message.textContent = text;
+        messagesEl.appendChild(message);
+        messagesEl.scrollTop = messagesEl.scrollHeight;
+      }
+
+      function formatTime(value) {
+        if (!value) return "";
+        return new Date(value).toLocaleTimeString("ko-KR", { hour: "2-digit", minute: "2-digit" });
+      }
+
+      function renderRoom(payload) {
+        if (!payload || !payload.ok) return;
+        visitorBox.textContent = `현재 방문자: ${payload.visitor.id} (${payload.visitor.maskedIp})`;
+
+        visitorList.innerHTML = payload.visitors.map((visitor) => `
+          <div class="visitor-chip">
+            <strong>${visitor.id}</strong>
+            <span>${visitor.maskedIp} / ${formatTime(visitor.lastSeen)}</span>
+          </div>
+        `).join("");
+
+        roomMessages.innerHTML = payload.messages.map((message) => `
+          <div class="room-message">
+            <strong>${message.visitorId}</strong>
+            <span>${message.maskedIp} / ${formatTime(message.createdAt)}</span>
+            <p>${escapeHtml(message.text)}</p>
+          </div>
+        `).join("");
+        roomMessages.scrollTop = roomMessages.scrollHeight;
+      }
+
+      function escapeHtml(text) {
+        const div = document.createElement("div");
+        div.textContent = text;
+        return div.innerHTML;
+      }
+
+      async function refreshVisitorRoom() {
+        const base = apiBase();
+        try {
+          const response = await fetch(`${base}/api/visitor-room`, {
+            cache: "no-store",
+            headers: { "ngrok-skip-browser-warning": "true" }
+          });
+          if (!response.ok) throw new Error(`room ${response.status}`);
+          renderRoom(await response.json());
+        } catch (error) {
+          visitorBox.textContent = `방문자 채팅방 연결 실패: ${error.message}`;
+          visitorBox.classList.add("error");
+        }
+      }
+
+      async function sendRoomMessage(text) {
+        const base = apiBase();
+        const response = await fetch(`${base}/api/visitor-room`, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            "ngrok-skip-browser-warning": "true"
+          },
+          body: JSON.stringify({ text })
+        });
+        if (!response.ok) throw new Error(`room ${response.status}`);
+        renderRoom(await response.json());
+      }
+
+      async function checkConnection() {
+        const base = apiBase();
+        localStorage.setItem("chamsosikAiEndpoint", base);
+        localStorage.setItem("chamsosikAiModel", modelInput.value.trim() || "kimi-k2.6:cloud");
+        setStatus("AI 서버 접속 확인 중...");
+
+        try {
+          const health = await fetch(`${base}/health`, {
+            cache: "no-store",
+            headers: { "ngrok-skip-browser-warning": "true" }
+          });
+          if (!health.ok) throw new Error(`health ${health.status}`);
+
+          const chat = await fetch(`${base}/api/chat`, {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+              "ngrok-skip-browser-warning": "true"
+            },
+            body: JSON.stringify({
+              model: modelInput.value.trim() || "kimi-k2.6:cloud",
+              prompt: "접속 확인. 한국어로 OK만 답하세요.",
+              options: { temperature: 0, num_predict: 20 }
+            })
+          });
+          if (!chat.ok) throw new Error(`model ${chat.status}`);
+
+          setStatus(`AI 서버 접속 확인 완료\n${base}`);
+        } catch (error) {
+          setStatus(`AI 서버 접속 실패\n${error.message}`, true);
+        }
+      }
+
+      async function sendPrompt(prompt) {
+        const base = apiBase();
+        const model = modelInput.value.trim() || "kimi-k2.6:cloud";
+        addMessage("user", prompt);
+        sendButton.disabled = true;
+
+        try {
+          const response = await fetch(`${base}/api/chat`, {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+              "ngrok-skip-browser-warning": "true"
+            },
+            body: JSON.stringify({
+              model,
+              messages: [
+                {
+                  role: "system",
+                  content: "너는 참소식.com의 AI 이슈 분석가다. 한국어로 답하라. 핵심 요약, 관계 분석, 위험 신호, 다음 확인 질문을 간결하게 정리하라."
+                },
+                {
+                  role: "user",
+                  content: prompt
+                }
+              ],
+              options: { temperature: 0.35, num_predict: 500 }
+            })
+          });
+
+          if (!response.ok) throw new Error(`API ${response.status}`);
+          const data = await response.json();
+          addMessage("ai", (data.content || "응답 내용이 비어 있습니다.").trim());
+        } catch (error) {
+          addMessage("ai", `AI 분석 실패: ${error.message}`);
+        } finally {
+          sendButton.disabled = false;
+          promptInput.focus();
+        }
+      }
+
+      form.addEventListener("submit", (event) => {
+        event.preventDefault();
+        const prompt = promptInput.value.trim();
+        if (!prompt) return;
+        promptInput.value = "";
+        sendPrompt(prompt);
+      });
+
+      document.querySelectorAll("[data-prompt]").forEach((button) => {
+        button.addEventListener("click", () => {
+          promptInput.value = button.dataset.prompt;
+          promptInput.focus();
+        });
+      });
+
+      document.querySelector("#checkButton").addEventListener("click", checkConnection);
+
+      roomForm.addEventListener("submit", async (event) => {
+        event.preventDefault();
+        const text = roomInput.value.trim();
+        if (!text) return;
+        roomInput.value = "";
+        try {
+          await sendRoomMessage(text);
+        } catch (error) {
+          visitorBox.textContent = `채팅 전송 실패: ${error.message}`;
+          visitorBox.classList.add("error");
+        }
+      });
+
+      endpointInput.value = localStorage.getItem("chamsosikAiEndpoint") || DEFAULT_ENDPOINT;
+      modelInput.value = localStorage.getItem("chamsosikAiModel") || "kimi-k2.6:cloud";
+      setTimeout(checkConnection, 400);
+      setTimeout(refreshVisitorRoom, 600);
+      roomTimer = setInterval(refreshVisitorRoom, 5000);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,371 @@
+{
+  "timestamp": "2026-05-13T06:27:32.328494",
+  "model": "mistral:latest",
+  "keyword_count": 3,
+  "analyze_subtitles": true,
+  "analysis_source": "youtube",
+  "keywords": [
+    {
+      "keyword": "오늘의 주요 뉴스",
+      "is_fixed": true,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "삼성전자 총파업",
+      "is_fixed": false,
+      "views": [
+        9804,
+        3237,
+        27901,
+        22628,
+        60592
+      ],
+      "video_count": 5,
+      "videos": [
+        {
+          "title": "'파업 D-8' 삼성전자 노사, 협상 결렬...노조 \"요구 관철 안 돼\" / YTN",
+          "video_id": "h-ks40Aif4E",
+          "views": 9804,
+          "upload_date": "2026-05-12",
+          "url": "https://www.youtube.com/watch?v=h-ks40Aif4E",
+          "subtitle_summary": "1. 삼성전자 노사와 중앙노동위원회는 21일 총파업을 앞두고 16시간 이상의 장기 협상 끝에 결국 이견을 좁히지 못했습니다.\n2. 노조는 중앙동위원회의 조정안을 요구하였으나, 제시된 안이 기존 요구사항보다 퇴보되었다고 밝혔습니다.\n3. 삼성전자 노사와 노동조합은 추가 사후 조정을 요청할 경우에는 언제든지 지원할 수 있다고 덧붙였으나, 현재 상황에서는 회의를 종료하기로 했습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "Final Day of Mediation at Samsung Electronics, Facing 'General Strike Crossroads'... Union: \"Will...",
+          "video_id": "8OlPzJbwPpM",
+          "views": 3237,
+          "upload_date": "2026-05-12",
+          "url": "https://www.youtube.com/watch?v=8OlPzJbwPpM",
+          "subtitle_summary": "1. The initial union at Samsung Electronics, which was established last year as a new labor union, initially had only two active members from DS division. However, within six months, they have grown to represent more than half of the workers. Now, the speaker represents both Samsung employees and the labor union. Therefore, they are working hard to achieve results that will satisfy their union members, whether it's a compromise or a strike.\n2. The speaker emphasizes their commitment to achieving the best possible outcome, be it a settlement or a strike. They wish to convey this message.\n3. The union is currently at a crossroads regarding a 'general strike'.",
+          "db_saved": true
+        },
+        {
+          "title": "[🔴이슈를 켜라] 삼성전자 주주들 \"총파업은 한국 반도체 산업 사형 선고\" / 채널A",
+          "video_id": "0DiDyftx-aY",
+          "views": 27901,
+          "upload_date": "2026-05-12",
+          "url": "https://www.youtube.com/watch?v=0DiDyftx-aY",
+          "subtitle_summary": "삼성전자 주주들이 대화중, 총파업 문제에 관한 의견을 나누고 있으며, 내일 또 회의를 계속할 예정이다. 공개된 정보가 없으므로 결과는 미리 예측하기 어렵다. 양측은 조정안을 만들고 있지만, 노사(회의)에서 결정이 필요하며, 양해가 필요한 일이라고 인식한다.",
+          "db_saved": true
+        },
+        {
+          "title": "\"파업이고 뭐고 탈퇴합니다\"…삼성전자 MZ노조 분노 폭발",
+          "video_id": "GSUGLT13Zzg",
+          "views": 22628,
+          "upload_date": "2026-05-12",
+          "url": "https://www.youtube.com/watch?v=GSUGLT13Zzg",
+          "subtitle_summary": "1. Samsung Electronics is facing intense internal turmoil as the union criticizes the company's focus on semiconductor profits at the expense of other divisions like smartphones and appliances. This has led to collective backlash from affected employees.\n2. The conflict within Samsung's union has reached a critical point, with some unions withdrawing membership and demanding that the executive committee stop prioritizing specific business units. They accuse the union of ignoring the achievements of the smartphone and appliance divisions, particularly Galaxy and home appliances.\n3. The internal discord is affecting the union's strength for the upcoming strike, with the number of union members declining significantly. Market analysts predict that this strike may not be a company-wide action but could be limited to the semiconductor division due to intense competition in AI chip manufacturing. This further adds to uncertainty in Samsung's management.",
+          "db_saved": true
+        },
+        {
+          "title": "[이슈체크] 삼성전자 결국 총파업 가나?…마지막 협상 결과는?",
+          "video_id": "Se2Jxr6SiBY",
+          "views": 60592,
+          "upload_date": "2026-05-12",
+          "url": "https://www.youtube.com/watch?v=Se2Jxr6SiBY",
+          "subtitle_summary": "1. 삼성전자와 노조의 협상은 12시간 가까운 전날 끝내지 못했고, 오늘 마지막 단판을 버리며 성과급 산정 방식에 대한 문제로 인해 극적 타결이 어려워졌습니다.\n2. 삼성전자는 2000년부터 성과 인센티브를 지급했으나, 노조는 영업 이익에 대한 금액을 정할 때 영업 이익에다가 일정률을 곱하거나, 경제적 부과 가치 기준으로 하는 것을 요구합니다.\n3. 노조는 자신들이 요구하는 영업 이익 15%와 성과 환도 폐지를 명문화 제도화하고, 외부 환경의 변화로 인한 영업 이익을 고정화시키는 것은 경영의 유연성을 떨어뜨리고 앞으로의 탄력적인 경영에 제약이 되기 때문에 굉장히 강조하고 있습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0.9963,
+      "min": 1.8326,
+      "nb_score": 0.5437,
+      "avg_views": 24832.4,
+      "total_views": 124162
+    },
+    {
+      "keyword": "AI 초과세수 활용",
+      "is_fixed": false,
+      "views": [
+        65563,
+        29457,
+        49489
+      ],
+      "video_count": 3,
+      "videos": [
+        {
+          "title": "[지금뉴스] 김용범 ‘AI 국민배당금’ 발언에…“코스피 급락 배경” “개인 의견” / KBS 2026.05.12.",
+          "video_id": "HFo3esZdGH0",
+          "views": 65563,
+          "upload_date": "2026-05-12",
+          "url": "https://www.youtube.com/watch?v=HFo3esZdGH0",
+          "subtitle_summary": "1. 코스피 주가는 김용범, 청와대 정책실장의 AI 국민배당금 발언 이후 급격히 하락했습니다.\n2. 분석자들은 김실장의 발언이 외국인 투자자들에게 삼성전자와 SK 하이닉스 주식을 수조원어치 순매도하는 데 영향을 미쳤다고 보았습니다.\n3. 김실장은 AI로 인한 초과 세수를 활용하자는 의미로 발언했으며, 보수 야권에서는 공산당 본색이라고 비판했습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "'AI National Dividend' Remarks Spark Widespread Controversy... Blue House Draws Line / SBS 8 News",
+          "video_id": "LcMuJDFwL5w",
+          "views": 29457,
+          "upload_date": "2026-05-12",
+          "url": "https://www.youtube.com/watch?v=LcMuJDFwL5w",
+          "subtitle_summary": "김용범, 청와대 정책실장은 AI 및 반도체 산업의 성과를 '국민배당금'으로 국민에게 돌리자는 제안을 했습니다. 이 발언으로 인해 파문이 확산되고 있으며, 청와대는 개인 의견이라고 선을 그었습니다. 김용범은 AI 시대의 메모리와 인프라 수요가 장기적 구조 변화에 따라 한국은 처음으로 지속적 초과이윤을 생산하는 국가가 될 수 있다고 주장했습니다. 이에 국민배당금이라는 이름으로 전 국민의 구조적인 환원이 필요하다고 밝혔습니다. 김용범의 발언은 삼성전자, SK하이닉스와 같은 반도체 기업의 초과이익을 염두에 둔 것으로 해석되며, 미국 블룸버그 통신은 한국 증시가 크게 출렁었다고 보도했습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "'국민배당금제' 꺼낸 김용범...\"특정 기업만이 끌어낸 결과 아냐\" [지금이뉴스] / YTN",
+          "video_id": "IdGjOCqs0dE",
+          "views": 49489,
+          "upload_date": "2026-05-12",
+          "url": "https://www.youtube.com/watch?v=IdGjOCqs0dE",
+          "subtitle_summary": "1. 김용범, 청와대 정책실장은 국민배당금제를 통해 과거 특정 기업이 얻었던 결과를 국민에게 환원하기 위해 한다고 말했습니다.\n2. 김실장은 AI 인프라 공급망에서의 전략적 위치가 역대급 초과 세수를 만들어내면 그 돈을 어떻게 사용할지는 선택의 문제가 아니라 응당 고민해야 할 문제라고 강조했습니다.\n3. 김실장은 과거와 같이 구조적인 초과 이윤을 사회적으로 제도화하는 여러 모델에 대해 언급했고, 가친 국민 배당금의 목적은 노력 연금 강화, 예술인 지원, 청년 창업자 자산, 농어촌 기본 소득 등을 포함하여 백가쟁명식 사회적 합의를 통해 정교화할 것이라고 밝혔습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 1.7241,
+      "min": 4.3776,
+      "nb_score": 0.3938,
+      "avg_views": 48169.67,
+      "total_views": 144509
+    },
+    {
+      "keyword": "단일화",
+      "is_fixed": false,
+      "views": [
+        1640,
+        2876,
+        944,
+        69692
+      ],
+      "video_count": 4,
+      "videos": [
+        {
+          "title": "[Kim Sang-wook Interview] Kim Sang-wook Personally Reveals Why 'Ulsan Unification' Is Difficult! ...",
+          "video_id": "9PHbKxErRbM",
+          "views": 1640,
+          "upload_date": "2026-05-12",
+          "url": "https://www.youtube.com/watch?v=9PHbKxErRbM",
+          "subtitle_summary": "1. 김상욱, Ulsan의 시립 후보자, 인터뷰에서 '단화' 여부가 관심이 있으며, 선거 운동을 새로 시작하면서 개소식도 안 하고 정책 중심으로 진행 중이다.\n2. 김상욱은 지난번 지방 선거 때도 기초단체장과 연동했었는데, 현재 진보당이 시장 후보자 단위로 접근하여 문제를 해결하고 있다고 말한다.\n3. 김상욱은 중앙당과 시당의 진보당에게 적극적인 교섭을 부탁하며, 단일라 교섭이 실패하더라도 후보자관 단위로는 이루어져야 한다고 강국 기호청을 반복하고 있다.",
+          "db_saved": true
+        },
+        {
+          "title": "[June 3 Local Elections] Will the tide of unification change due to the close race between Ha Jun...",
+          "video_id": "sKNyG1XfMdg",
+          "views": 2876,
+          "upload_date": "2026-05-12",
+          "url": "https://www.youtube.com/watch?v=sKNyG1XfMdg",
+          "subtitle_summary": "1. 6월 3일 지방선거에서 관심 중심인 부산 북구 국회의원 선거에서 민주당 후보 하정우와 무소속 후보 한동훈이 접전을 벌였습니다.\n2. 최근 조사에서는 한동훈이 하정우와의 격차를 좁히고 있음을 나타내었으며, 3자 대결에서 하정우 37%, 박민시 국민의 힘 후보 17%, 한동훈 30%로 기록했습니다.\n3. 단일화에 대한 의견이 분분하여, 중심으로 한 후보가 백이 종군해야 한다는 요구와 친환계에서는 단일화가 한 후보 중심으로 이루어질 것이라는 의견이 우세합니다.",
+          "db_saved": true
+        },
+        {
+          "title": "'용꿈' 한동훈·조국, 단일화 쉽게 못하는 이유…\"체급 안 맞아서\" [팩트앤뷰 천하람]",
+          "video_id": "K4lDd9IjYqk",
+          "views": 944,
+          "upload_date": "2026-05-12",
+          "url": "https://www.youtube.com/watch?v=K4lDd9IjYqk",
+          "subtitle_summary": "1. 한동훈 대표는 대선주자급으로, 단일화를 쉽게 할 수 없는 이유는 본인 체급에 대한 고려가 있다.\n2. 한동훈과 조국은 단일라를 쉽게 할 수 없는 이유로, 소수당이며 정의한 후보들이 선거에서 배제되는 문제가 있다고 보인다.\n3. 해결책으로, 제도적 조치와 문화적 노력을 통해 작은 당의 도전자를 선거에서 배제하는 것이 말이 안 되는 우수운 일이라고 생각한다.",
+          "db_saved": true
+        },
+        {
+          "title": "[Anecdotes] Unification by Votes?.. Is Conservative Sentiment in Busan Buk-gap Sweeping for Han D...",
+          "video_id": "0e6Di-ls5sU",
+          "views": 69692,
+          "upload_date": "2026-05-12",
+          "url": "https://www.youtube.com/watch?v=0e6Di-ls5sU",
+          "subtitle_summary": "1. 전라북도와 Busan Buk-gap의 여론조사 결과를 소개합니다. 최근 부산 Buk-gap 여론조사에서는 민주당 후보 하정우가 37%, 국민의힘 박민식이 17%, 무소속 한동훈이 30%를 차지했습니다.\n2. 4월 말에는 박민식 후보가 46%, 한동훈 후보가 30%를 받았으나, 최근 조사에서는 박민식 후보의 지지율이 8% 떨어졌고, 한동훈 후보의 지지율이 6% 상승했습니다.\n3. 이 변화로 인해 지금 부산 Buk-gap은 대체적으로 보수적인 지역으로 나타나고 있으며, 보수층 중에서 박민식보다는 한동훈을 선택하는 추세가 강화되고 있습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0.5017,
+      "min": 1.4852,
+      "nb_score": 0.3378,
+      "avg_views": 18788.0,
+      "total_views": 75152
+    },
+    {
+      "keyword": "국민배당금 논란",
+      "is_fixed": false,
+      "views": [
+        13479,
+        14256,
+        9102
+      ],
+      "video_count": 3,
+      "videos": [
+        {
+          "title": "Kim Yong-bum's 'AI National Dividend' Controversy... Opinions Say \"Time for Discussion\" / JTBC Ne...",
+          "video_id": "l15CpL9UW3c",
+          "views": 13479,
+          "upload_date": "2026-05-12",
+          "url": "https://www.youtube.com/watch?v=l15CpL9UW3c",
+          "subtitle_summary": "1. 코스피는 오늘 8,000선까지 올라갔다가 5% 이상 하락했습니다. 이 폭락의 원인으로 김영범 청와대 정책실장이 AI 국민 배당금을 제안한 발언이 지목되었습니다.\n2. 김영범은 반도체 호황으로 초과 세수가 발생하면 그 혜택을 국민에게 균등하게 나누자는 의미로 AI 국민 배당금을 제안했습니다.\n3. 이 발언은 시장의 혼란을 일으켰고, 청와대 내부 논의 없이 설익한 아이디어로 비판이 나오고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "Blue House on ‘National Dividend’ Controversy: “Personal Opinion” / Channel A / News A",
+          "video_id": "Yz2RiCYOh9E",
+          "views": 14256,
+          "upload_date": "2026-05-12",
+          "url": "https://www.youtube.com/watch?v=Yz2RiCYOh9E",
+          "subtitle_summary": "1. 김영범 대통령 정책실장은 국민 배당금을 제안했습니다. 이는 반도체 업계의 과일 이익으로 얻어지는 법인세 초과 세수를 재원으로 국민에게 분배하는 것을 의미합니다.\n2. 이 제안은 청년 창업자산, 농어촌 기본소득, 노력연금강화 등과 같은 분배처로 고려되었습니다.\n3. 이 제안에 대해서는 국민의 의견이 엇갈렸으며, 야당은 비판을 쏟아냈고, 청와대는 개인 의견이라며 선을 거었습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "‘AI 국민 배당금’ 띄운 정책실장…“과실 특정 기업만의 결과 아냐” [9시 뉴스] / KBS  2026.05.12.",
+          "video_id": "p5l-dpXbCOQ",
+          "views": 9102,
+          "upload_date": "2026-05-12",
+          "url": "https://www.youtube.com/watch?v=p5l-dpXbCOQ",
+          "subtitle_summary": "1. 김용범 정책실장은 AI 국민 배당금 구상을 발표하며, 인공지능 관련 호황으로 세금이 많이 거치면 일부를 국민에게 돌려주자는 주장을 했습니다.\n2. 김용범은 과실은 특정 기업만의 결과가 아닌 것으로 설명하며, 관련 산업 성장의 기반을 함께 쌓아온 만큼 호황에 따른 과실의 일부가 국민에게 구조적으로 환원되어야 한다고 주장했습니다.\n3. 김용범의 발언으로 인해 한국 증시에서 AI 수회 기업에 대한 새로운 과세 신호가 나타나며, 투자자 혼란이 커졌고 관련주가 하락했습니다. 또한 정치권 공방도 이어졌습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 1.5633,
+      "min": 5.5,
+      "nb_score": 0.2842,
+      "avg_views": 12279.0,
+      "total_views": 36837
+    },
+    {
+      "keyword": "주식시장 외인 매매동향",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "서울시장 선거 여론조사",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "이란 혁명수비대 쿠웨이트",
+      "is_fixed": false,
+      "views": [
+        53049
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "[Breaking] Iranian Revolutionary Guard captured while infiltrating Kuwait... 4 Iranian Revolution...",
+          "video_id": "A3dzkCsl8O0",
+          "views": 53049,
+          "upload_date": "2026-05-12",
+          "url": "https://www.youtube.com/watch?v=A3dzkCsl8O0",
+          "subtitle_summary": "1. 4 명의 이ран 혁명 수비대 대원이 쿠웨이트 영토로 미립국을 통해 침입하여 체포됐다는 소식이 발표되었습니다.\n2. 이들은 어선을 이용해 쿠웨이트 북부에 위치한 부비한삼 근처의 해역으로 접근했고, 검문 과정에서 자신들이 혁명 수비대 소속임을 자백했습니다.\n3. 이 사건은 국가안보 위협으로 인해 쿠웨이트 내부에서 우려가 빠르게 확산되고 있으며, 쿠웨이트는 자국 영토와 해양 경계를 침범하려는 어떤 시도도 용납하지 않겠다고 강조했습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "수능 절대평가 공약",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "반도체 노조 파업 영향",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "한미 동맹 부담 분담",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "부동산 비거주 1주택",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "뉴욕증시 나스닥 하락",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "교육감 선거 공약",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "인텔 TSMC 무노조 경영",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "P-CAB 제제 약가 인하",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    }
+  ]
+}

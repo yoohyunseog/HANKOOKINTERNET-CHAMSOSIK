@@ -1,0 +1,319 @@
+{
+  "timestamp": "2026-05-13T13:10:21.165906",
+  "model": "mistral:latest",
+  "keyword_count": 3,
+  "analyze_subtitles": true,
+  "analysis_source": "youtube",
+  "keywords": [
+    {
+      "keyword": "오늘의 주요 뉴스",
+      "is_fixed": true,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "삼성전자 총파업",
+      "is_fixed": false,
+      "views": [
+        3003,
+        1078,
+        6334
+      ],
+      "video_count": 3,
+      "videos": [
+        {
+          "title": "오늘 '삼성전자 파업금지 가처분' 2차 심문…이 시각 법원 / YTN",
+          "video_id": "j0j98Q8t58M",
+          "views": 3003,
+          "upload_date": "2026-05-13",
+          "url": "https://www.youtube.com/watch?v=j0j98Q8t58M",
+          "subtitle_summary": "1. 파업금지 가처분 2차 심문이 진행중입니다. 조합원들은 50% 이상의 증언을 해줬으며, 법원에서는 자료를 반박하고 적법한 쟁이가 잘 이루어질 수 있도록 답변을 드릴 예정입니다.\n2. 노조는 경직된 제도화만 시총 고수한 것으로 주장했지만, 성과가 안 나는 경우엔 성과급을 지급받지 않고, 성과가 나는 경우에만 같이 성과를 공유하므로 경직된 제도화라는 것은 아닙니다.\n3. 파업에 참여할 수 있는 원인으로, 원제료 폐기, 제조화, 생산, 기술이 기존에도 협정 근로자 범위가 아니었습니다. 파업을 못 한다는 것은 법원에서 잘 따져 주실 거라고 생각합니다.",
+          "db_saved": true
+        },
+        {
+          "title": "삼성전자 총파업 '눈앞'...드디어 매수 타이밍 왔다!",
+          "video_id": "WfS2Rrw60_U",
+          "views": 1078,
+          "upload_date": "2026-05-13",
+          "url": "https://www.youtube.com/watch?v=WfS2Rrw60_U",
+          "subtitle_summary": "1. 주식 회전이 시작되었으며, SK Hynix와 Samsung Electronics가 양전을 성공적으로 했습니다.\n2. 외국인 투자자들의 매도세가 지속되고 있어서 전략이 꼼꼼히 챙겨보고 있습니다.\n3. 전략 조언: 매수 견은 드리며, 시간은 오늘 오후나 내일 오후가 될 것으로 예상됩니다. 하지만 가수급이 증권회사에서 채점되고 있는데, SKS와 Samsung Electronics의 경우 외국인 순매도가 확인되고 있어서 조금은 관망합니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[자막뉴스] “한발 물러섰는데도 거부”...삼성전자 총파업 현실 되나 / YTN",
+          "video_id": "E5gvdkoOi1g",
+          "views": 6334,
+          "upload_date": "2026-05-13",
+          "url": "https://www.youtube.com/watch?v=E5gvdkoOi1g",
+          "subtitle_summary": "1. Samsung Electronics' proposed restructuring, aimed at preventing economic loss from a potential strike by unionized workers, was finalized after a 17-hour mediation session by the Central Labor-Management Mediation Committee.\n2. The union expressed dissatisfaction with the agreed-upon measures, particularly regarding wage cuts and the use of operating profits, and demanded further negotiations.\n3. Despite the union's requests for additional discussions, the mediation committee declared the end of post-agreement mediation, leaving room for potential future meetings if both parties request it. The strike at Samsung Electronics, involving a significant number of employees, could have a substantial impact on the entire semiconductor industry in South Korea.",
+          "db_saved": true
+        }
+      ],
+      "max": 1.6982,
+      "min": 2.8538,
+      "nb_score": 0.5951,
+      "avg_views": 3471.67,
+      "total_views": 10415
+    },
+    {
+      "keyword": "긴급조정권 발동",
+      "is_fixed": false,
+      "views": [
+        307,
+        3472,
+        186844
+      ],
+      "video_count": 3,
+      "videos": [
+        {
+          "title": "사후조정 결렬...정부, 긴급조정권 발동할까? / YTN",
+          "video_id": "w4tgxVcYMlg",
+          "views": 307,
+          "upload_date": "2026-05-13",
+          "url": "https://www.youtube.com/watch?v=w4tgxVcYMlg",
+          "subtitle_summary": "1. 중앙동 노동위원회는 삼성전자 노조의 사후 조정이 결렬되었습니다. 파업이 일주일 앞서 시작될 것으로 예고되어 정부가 긴급 조정권을 발동할지 관심이 많아졌습니다.\n2. 긴급 조정권은 국민 일상생활이나 경제에 해로운 쟁의 행위가 예상되는 때 고용노동부 장관이 발동할 수 있습니다. 파업으로 인한 반도체 생산 차질의 규모는 20조원으로 추산되어 큰 영향을 미칠 상황입니다.\n3. 정부는 긴급 조정권 발동을 고려하지 않았습니다. 하지만 삼성전자 노조의 사후 조정이 결렬된 뒤로 미묘한 변화가 감지되어 긴급 조정권 발동의 가능성이 있다는 것으로 보입니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[김영훈 장관 인터뷰] 삼성전자 노사 협상 결렬, 긴급조정권 발동? \"대화로 해결할 것...오솔길이라도 내겠다\"",
+          "video_id": "YhG5Mq88N3o",
+          "views": 3472,
+          "upload_date": "2026-05-13",
+          "url": "https://www.youtube.com/watch?v=YhG5Mq88N3o",
+          "subtitle_summary": "1. 삼성전자 노동조합의 파업이 지금 진행중이며, 김영훈 노동부 장관은 현장에 뛰어다니고 있으며 최근 사우조정에서 노사 협상을 했으나 최종 합의에 성공하지 못했습니다.\n2. 김영훈 장관은 이 과정에서 노조와 교섭하는 것이 어려운 것으로 인식하며, 노조의 요구사항을 해결하기 위해 노조가 보이지 못했던 것들을 고려하고 있습니다.\n3. 김영훈 장관은 사우조정에서 노사 협상을 통해 최소한 노사가 발생하지 않도록 노력했으나, 현재는 긴급조정권이 발동되었다고 묘사합니다.",
+          "db_saved": true
+        },
+        {
+          "title": "삼성전자 노사 협상 결렬‥정부 '긴급조정권' 발동? - [LIVE] MBC 뉴스투데이 2026년 05월 13일",
+          "video_id": "f4wsAuH1Rrs",
+          "views": 186844,
+          "upload_date": "2026-05-12",
+          "url": "https://www.youtube.com/watch?v=f4wsAuH1Rrs",
+          "subtitle_summary": "1. 삼성전자 노사의 재협상이 새벽까지 진행되었으나 결과는 결렬됐습니다. 노조가 예고한 파업은 8일 앞으로 다가오며, 노사의 규모가 수십조원에 달할 수 있는 정부의 긴급 조정권 발동 가능성도 제기되고 있습니다.\n2. 미국 대통령이 미중 정상 회담을 위해 방중길에 오르면서 무역이 주요 의제라고 밝혔으며, 이란이 종전 등 자국의 입장을 대변해줄 것을 중국에 전달했다고 보도되었습니다.\n3. 정부는 비행체 자네를 외교 행랑으로 들여와 국내에서 정밀 분석하기로 했으며, 중동의 우방국이 나라 에미리트는 남무호 피격을 테러로 규정하고 강하게 교탄했습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0.9414,
+      "min": 1.8829,
+      "nb_score": 0.5,
+      "avg_views": 63541.0,
+      "total_views": 190623
+    },
+    {
+      "keyword": "국민배당금 논란",
+      "is_fixed": false,
+      "views": [
+        72766,
+        18087,
+        14773,
+        8924
+      ],
+      "video_count": 4,
+      "videos": [
+        {
+          "title": "[지금뉴스] 김용범 ‘AI 국민배당금’ 발언에…“코스피 급락 배경” “개인 의견” / KBS 2026.05.12.",
+          "video_id": "HFo3esZdGH0",
+          "views": 72766,
+          "upload_date": "2026-05-12",
+          "url": "https://www.youtube.com/watch?v=HFo3esZdGH0",
+          "subtitle_summary": "1. 코스피 주가가 8천선을 돌파하고 급격히 폭락한 이유로는 김용범, 청와대 정책실장의 AI 국민배당금 발언에 영향을 미쳤다는 분석이 있습니다.\n2. 김용범은 SNS를 통해 AI 시대를 맞아 초과 이윤을 사회적으로 환원하는 국민 배당금 도입을 주장했습니다.\n3. 블룸버그와 일부 시장 전문가들은 김실장의 발언을 삼성전자와 SK 하이닉스 등 AI 수회 기업들에 대한 사실상의 횡제세 부과 가능성으로 해석했습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "Blue House on ‘National Dividend’ Controversy: “Personal Opinion” / Channel A / News A",
+          "video_id": "Yz2RiCYOh9E",
+          "views": 18087,
+          "upload_date": "2026-05-12",
+          "url": "https://www.youtube.com/watch?v=Yz2RiCYOh9E",
+          "subtitle_summary": "1. 김영범 대통령 정책실장은 국민 배당금을 제안했습니다. 이는 반도체 호환기 등의 초과 이익으로 늘어난 법인세를 재원으로 국민에게 분배하는 것입니다.\n2. 이 제안은 청년 창업자산, 농어촌 기본소득, 노력연금강화 등을 포함한 다양한 분배처로 고려되었습니다.\n3. 이 제안에 대해서는 국민의 의견이 엇갈렸으며, 야당은 비판을 쏟아내고 있습니다. 또한 코스피 장 중 5% 급락의 원인으로 지목되었습니다. 청와대는 개인 의견이라며 선을 거두었습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "Kim Yong-bum's 'AI National Dividend' Controversy... Opinions Say \"Time for Discussion\" / JTBC Ne...",
+          "video_id": "l15CpL9UW3c",
+          "views": 14773,
+          "upload_date": "2026-05-12",
+          "url": "https://www.youtube.com/watch?v=l15CpL9UW3c",
+          "subtitle_summary": "1. 코스피는 오늘 8,000선에 가까워졌지만 외국인 매도로 하락하며 7,400선까지 폭락했습니다.\n2. 이 폭락의 원인으로 김용범 청와대 정책실장의 AI 국민 배당금 발언을 지목했습니다.\n3. 김실장은 초과세수를 활용하여 국민에게 혜택을 나누는 것이 목적이며, 청와대는 개인의견일뿐 정부 방침과 무관하다고 주장했습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[Ranking News] Kim Yong-bum's 'AI National Dividend' Remarks Spark Widespread Controversy / Drunk...",
+          "video_id": "Z2uxoLapR54",
+          "views": 8924,
+          "upload_date": "2026-05-12",
+          "url": "https://www.youtube.com/watch?v=Z2uxoLapR54",
+          "subtitle_summary": "1. 일본인 어머니가 횡단보도로 돌진한 음주 차량에 참변을 당하여 사망하고 딸이 크게 다쳤습니다. 법원은 운전자에 대해 징역 5년을 선고했으나 이에 대한 논란이 있습니다.\n2. AI 정책실장 김용범이 SNS에서 AI 기업의 돈은 특정 기업이 낸 결과가 아닌 국민 배당금으로 환원되어야 한다고 말했습니다. 여론은 곧바로 불타올랐으며, 증시에서 미국 블룸버그는 김 정책실장의 AI 국민 배당금 발언이 코스피의 급락의 원인이라고 지목했습니다.\n3. 초등학생이 실종되었으나 4일 후 숨진 채 발견됐습니다. 부모는 사흘 동안 입구에서 아들을 기다리며 오열했습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0.7756,
+      "min": 2.1249,
+      "nb_score": 0.365,
+      "avg_views": 28637.5,
+      "total_views": 114550
+    },
+    {
+      "keyword": "농심 해외매출 목표",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "고유가 피해 지원금",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "이란 전쟁 유가 영향",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "AI 일자리 위기",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "한미 전작권 전환",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "부동산 재산세 감면",
+      "is_fixed": false,
+      "views": [
+        714
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "[On-site Video] \"Pushing for Property Tax Reduction for Single-Home Owners\" Jeong Won-oh Announce...",
+          "video_id": "dvkleIeOy9k",
+          "views": 714,
+          "upload_date": "2026-05-13",
+          "url": "https://www.youtube.com/watch?v=dvkleIeOy9k",
+          "subtitle_summary": "1. 서울시는 소득 없는 60세 이상의 일주택자들에게 한 번에 올해 증가한 재산세를 일시적으로 면제하려고 합니다.\n2. 서울시와 25개구는 구별 조례 계정을 추진하여, 9월부터 올해 증가분 재산세를 면제할 예정입니다.\n3. 이 조치로 인해 시민의 불편을 최소화하고, 복잡한 집행 방법으로부터 벗어나기 위해 노력할 것입니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "소비 양극화 현상",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "중국 해킹 구속영장",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "BTS 중국 송환",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "반도체 경기 회복세",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "월세 지원금 정책",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "신라면 40주년 기념",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    }
+  ]
+}
