@@ -1,0 +1,281 @@
+{
+  "timestamp": "2026-05-15T02:28:01.866459",
+  "model": "mistral:latest",
+  "keyword_count": 3,
+  "analyze_subtitles": true,
+  "analysis_source": "youtube",
+  "keywords": [
+    {
+      "keyword": "오늘의 주요 뉴스",
+      "is_fixed": true,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "삼성전자 노조 파업",
+      "is_fixed": false,
+      "views": [
+        5419,
+        10722
+      ],
+      "video_count": 2,
+      "videos": [
+        {
+          "title": "[속보] 삼성전자 노조 \"성과급 제도화, 대표가 내일까지 답하라\" [이슈PLAY] / JTBC News",
+          "video_id": "cQGWbxY_QjA",
+          "views": 5419,
+          "upload_date": "2026-05-14",
+          "url": "https://www.youtube.com/watch?v=cQGWbxY_QjA",
+          "subtitle_summary": "1. 삼성전자와 노조는 사후 조정 절차에서 이견을 해결하지 못했으며, 최근 노조는 정부의 불신을 드러냈습니다.\n2. 노조는 15% 보장안을 요구하여 중앙노동위원회가 사후 조정을 중단한 것에 반발했으며, 긴급 조정권을 요구하고 있습니다.\n3. 법원의 판단이 총파업의 결과를 좌우할 수 있으며, 삼성전자가 노조의 파업을 막아달라는 의사소통이 진행중입니다.",
+          "db_saved": true
+        },
+        {
+          "title": "삼성전자 30만원 직전! 전문가들 \"노조 파업은 매수 기회\" (2026년 5월 14일 장 마감)｜성공투자 오후증시｜파이널콜",
+          "video_id": "DHXqK3xt-SY",
+          "views": 10722,
+          "upload_date": "2026-05-14",
+          "url": "https://www.youtube.com/watch?v=DHXqK3xt-SY",
+          "subtitle_summary": "1. 시장은 8,000포인트 근처에 위치하며 메인 섹터들이 혼조 양상을 보이고 있습니다. 삼성전자는 파업 우려 속에서도 상승하고 있으며, 하이닉스는 조정 중입니다.\n2. 미중 정상회담은 135분 만에 종료되었으나 결과는 아직 확인되지 않았습니다. 이번 회담의 주요 핵심 이슈는 무역 대망이 될 수 있을 것입니다.\n3. 반도체 로봇 2차전지가 혼조 양상을 뛸 때 쉬어가는 섹터에서 기회를 모색할 수 있을 것입니다. 현재 전력 전선 섹터가 급락하고 있습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 3.4715,
+      "min": 0.0,
+      "nb_score": 34714.6078,
+      "avg_views": 8070.5,
+      "total_views": 16141
+    },
+    {
+      "keyword": "트럼프 시진핑 정상회담",
+      "is_fixed": false,
+      "views": [
+        3578,
+        18277
+      ],
+      "video_count": 2,
+      "videos": [
+        {
+          "title": "[속보] 트럼프 \"시진핑은 위대한 지도자다!\"…\"중국, 아름다워\"…회담 후 '칭찬 폭주'/2026년 5월 14일(목)/KBS",
+          "video_id": "Eo2QQWAsGcY",
+          "views": 3578,
+          "upload_date": "2026-05-14",
+          "url": "https://www.youtube.com/watch?v=Eo2QQWAsGcY",
+          "subtitle_summary": "1. 트럼프 미국 대통령과 시진핑 중국 주석관의 역사적인 정상 회담이 시작됐습니다. 두 사람은 친구처럼 만나며, 양국간 새로운 대국 관계 모델을 연구할 것으로 예상됩니다.\n2. 미국방장관과 국무장관 등이 함께 배석하여 호르무지 해협 재개방, 이란 전쟁 종식 방안, 대만 문제, 남중 국회와 군사 한라인 보건 문제 등이 논의될 것으로 예상됩니다.\n3. 오후에는 양국 정상은 텐탄 공원으로 이동하여 대화를 이어갈 예정입니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[🔴라이브를 켜라] 이란 전쟁 종결되나… 트럼프-시진핑, 9년 만의 ‘세기의 담판’ / 채널A",
+          "video_id": "J5hpACt9oX4",
+          "views": 18277,
+          "upload_date": "2026-05-14",
+          "url": "https://www.youtube.com/watch?v=J5hpACt9oX4",
+          "subtitle_summary": "1. Trump delivers a speech discussing global economies, mentioning the importance of MBI and his control over Iran militarily. He is asked about President Xi's potential involvement in a deal with Iran, but he believes no help is needed as Iran is already defeated militarily.\n2. The conversation shifts to Hong Kong, where Trump suggests China has significant leverage but acknowledges that China does indeed have a choice.\n3. Topics include Google, ping pong, Obama, and Tesla, with Trump expressing satisfaction with various aspects of these entities. He also refers to a less trafficked area and a human robot, though the context is unclear.",
+          "db_saved": true
+        }
+      ],
+      "max": 2.8693,
+      "min": 1.4882,
+      "nb_score": 1.928,
+      "avg_views": 10927.5,
+      "total_views": 21855
+    },
+    {
+      "keyword": "미중 관계 개선 신호",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "한국 등록",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "반도체 호황 경상흑자",
+      "is_fixed": false,
+      "views": [
+        176
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "[이브닝 스페셜] 반도체 호황으로 한국과 대만의 경상수지 흑자가 크게 늘어날 거라는 전망 외 | 26.05.13 | News Headlines",
+          "video_id": "A4Qu6H9hQTA",
+          "views": 176,
+          "upload_date": "2026-05-14",
+          "url": "https://www.youtube.com/watch?v=A4Qu6H9hQTA",
+          "subtitle_summary": "1. 반도체 업swing(상승)으로 인해 한국과 대만의 경상수지 흑자(현금 입고)가 크게 늘어날 것으로 예상되었습니다.\n2. AI 기술 사이클(주기)은 양국에서 최강의 기술 사이클로 평가되고 있습니다.\n3. 글로벌 투자은행 Goldman Sachs는 AI 주도 반도체 수출(出口)으로 인해 한국과 대만의 경상수지 흑자가 거의 최고가 될 것이며, 사상 최대 규모가 될 것이라고 예측했습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "AI 수익률 반전",
+      "is_fixed": false,
+      "views": [
+        42
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "전쟁 공포 뚫고 '수익률 16%'…AI가 이끈 반전 [청경체] / EBS뉴스 2026. 05. 14",
+          "video_id": "YjnghKWUsBo",
+          "views": 42,
+          "upload_date": "2026-05-14",
+          "url": "https://www.youtube.com/watch?v=YjnghKWUsBo",
+          "subtitle_summary": "1. 4월 경제는 3월과 달리 전쟁 공포가 사라지고 확신이 돌아온 상태로, AI 기업들의 성적으로 인해 기술주 중심으로 자금이 몰렸습니다. SMP 500 지수는 7,000 선을 돌파했고 Nasdaq 100 지수도 최고치를 기록했습니다.\n2. 청소년 모의 투자 결과는 4월에 테크덕쿠형이 AI와 반도체 종목들의 활약에 힘입어서 16%의 수익률로 1위를 차지했습니다.\n3. 반대로, 1월에 1위였던 승부 사용이 4월에는 꼴찌였고 마이너스 수익률까지 기록하게 되었습니다. 이유는 시장의 관심사가 전쟁 이슈로부터 평화 협상 분위기로 바뀌었기 때문입니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "가상자산 투자 한국인",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "현대차 로봇 사업",
+      "is_fixed": false,
+      "views": [
+        5741
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "주가 급등한 현대차...'로봇 사업' 언급한 정의선 회장이 밝힌 포부 [지금이뉴스] / YTN",
+          "video_id": "m6SuGzjV_Ms",
+          "views": 5741,
+          "upload_date": "2026-05-14",
+          "url": "https://www.youtube.com/watch?v=m6SuGzjV_Ms",
+          "subtitle_summary": "1. 현대자동차 그룹 정의선 회장은 최근 주가 상승에 집중하겠다고 밝혔습니다. 2. 로봇 사업을 시작한 것으로, 로봇들을 배치함으로써 하드웨어와 소프트웨어의 화학적 결합을 이끌기 위해 노력하고 있습니다. 3. 중국과 테슬라가 빠르게 자유주행 기술을 개발하고 있지만, 안전의 최우선 가치를 두고 이를 개발할 계획입니다. 또한 사우디 공장 건설 지원에 대한 우려를 표하면서도 위기를 기회로 바꾸겠다는 의지를 내비쳤습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "한국 주택가격 상승",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "청년전용 청약통장 혜택",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "국고채 금리 4%",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "ESG 탄소중립법 개정",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "비정규직 차별 해소",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "포르자 호라이즌 6 출시",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "상장지수펀드 투자 트렌드",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    }
+  ]
+}

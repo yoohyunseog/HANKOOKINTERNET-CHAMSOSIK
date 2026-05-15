@@ -1,0 +1,505 @@
+{
+  "timestamp": "2026-05-15T21:21:54.511339",
+  "model": "mistral:latest",
+  "keyword_count": 3,
+  "analyze_subtitles": true,
+  "analysis_source": "youtube",
+  "keywords": [
+    {
+      "keyword": "오늘의 주요 뉴스",
+      "is_fixed": true,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "삼성 메리츠 실적",
+      "is_fixed": false,
+      "views": [
+        117,
+        1069
+      ],
+      "video_count": 2,
+      "videos": [
+        {
+          "title": "\"삼성전자보다 무섭게 번다\"…미래에셋증권,  스페이스X로 1조 '잭팟'",
+          "video_id": "4vQIU2W7bro",
+          "views": 117,
+          "upload_date": "2026-05-15",
+          "url": "https://www.youtube.com/watch?v=4vQIU2W7bro",
+          "subtitle_summary": "1. 1분기 국내 10대 증권사의 단기 순익이 4조 3,320억원으로 기록되었습니다. 전년 대비 모두 100% 이상 성장했고, 특히 미래에셋증권이 1조원을 돌파하여 연간 4조원을 돌파할 수 있는 것으로 보입니다.\n2. 국내 금융 시장에 대한 변화가 있다고 생각되며, 이를 견인하는 요소로 국장 코스피와 브로커리지의 폭발적인 증가가 제시되었습니다.\n3. 증권사들은 IB(개인 투자)를 중심으로 하는 새로운 전략을 도입하여 수익성을 확대하고 있으며, 이에 따라 레버리지 사용이 증가하고 있고, 신용증자와 신용 장고의 증가로 우려가 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "Has the Materials, Parts, and Component Market Rises Too Much? Two Reasons It Is Too Early to Dis...",
+          "video_id": "I3a4NQliYfk",
+          "views": 1069,
+          "upload_date": "2026-05-15",
+          "url": "https://www.youtube.com/watch?v=I3a4NQliYfk",
+          "subtitle_summary": "1. 멀티플 배수가 역대 경험해 보지 못한 지점으로 계속 갈 것이라고 생각하며, 반도체 섹터 주가도 업종의 실적에서 확인할 수 있는 호환기를 지나고 있다.\n2. 소부장 업체들의 주가의 고점은 개별 종목들의 멀티플이 결정하지 않았으며, 과거의 메모리 사이클들을 보면 주가의 피크 위로 피크든 혹은 바닥이든 간에 결국 메모리의 전체적인 업황이 주가를 결정했다.\n3. 반도체 섹터에서의 주가 동행성을 보여주는 세 가지 차트가 있으며, 메모리의 업항이 실제로 반전될 때 공급이 부족하고 메모리의 가격이 오르는 것을 확인할 수 있다.",
+          "db_saved": true
+        }
+      ],
+      "max": 2.7846,
+      "min": 2.0524,
+      "nb_score": 1.3568,
+      "avg_views": 593.0,
+      "total_views": 1186
+    },
+    {
+      "keyword": "삼성전자 노조 파업",
+      "is_fixed": false,
+      "views": [
+        15478,
+        743,
+        1934,
+        50231,
+        12200
+      ],
+      "video_count": 5,
+      "videos": [
+        {
+          "title": "삼성 주주단체 \"노조 파업 강행시 손해배상 청구\" / 연합뉴스TV (YonhapnewsTV)",
+          "video_id": "lLj7ji0gZsA",
+          "views": 15478,
+          "upload_date": "2026-05-15",
+          "url": "https://www.youtube.com/watch?v=lLj7ji0gZsA",
+          "subtitle_summary": "1. 소액 주주 단체 Samsung Electronics는 노동조합의 파업 강행에 대해 법적 대응을 취하겠다고 밝혔습니다.\n2. 이들은 노무비 명목으로 선취에 배분한 건 재산권 침해와 위장된 위법 배당으로 보았으며, 사측 경영진과 이사회 결의를 강행하는 것도 충실 의무 위반과 업무상 배임 혐의로 볼 수 있다고 주장했습니다.\n3. Samsung Electronics의 파업 강행으로 인해 발생한 반도체 생산 차질과 기업 가치 훼소는 재산권 치매 행위라고 밝혔으며, 조합원 전원에게 민사상 손해 배상을 청구할 계획이다.",
+          "db_saved": true
+        },
+        {
+          "title": "삼성전자 노사 협상 교착…파업 강행 가능성 / KBS  2026.05.15.",
+          "video_id": "XlNnVj_Vx30",
+          "views": 743,
+          "upload_date": "2026-05-15",
+          "url": "https://www.youtube.com/watch?v=XlNnVj_Vx30",
+          "subtitle_summary": "1. Samsung Electronics proposed a transparency plan for the performance-based pay system in a letter sent today, urging discussions.\n2. The union is reviewing the proposal and also reconsidering the selection method for existing overtime bonuses and the establishment of an unlimited special bonus scheme.\n3. Despite the union's statement that they will discuss after June 7th, there is a possibility of a strike starting from May 21st due to recent disclosure of partial records from the Central Labor Welfare Fund Committee meeting and rejection of post-meeting adjustments by the labor union.",
+          "db_saved": true
+        },
+        {
+          "title": "'삼성전자 노조 파업' 시민도 갑론을박...초과이윤 논쟁도 / YTN",
+          "video_id": "07EK3ylMaUk",
+          "views": 1934,
+          "upload_date": "2026-05-15",
+          "url": "https://www.youtube.com/watch?v=07EK3ylMaUk",
+          "subtitle_summary": "1. Samsung Electronics union is planning a total strike on the 21st, causing a growing controversy over excessive profits and high wages.\n2. The opinions of citizens are divided on whether the company's earnings, due to a shortage of semiconductors and long-term investments, justify the union's demands for high wages, or if they are excessive.\n3. There is also debate about whether excess profits in the semiconductor industry should be shared among stakeholders beyond shareholders and employees, with some calling for violence at a meeting discussing the issue.",
+          "db_saved": true
+        },
+        {
+          "title": "삼성전자 파업 전 또...노조 내부 갈등 법적 분쟁 비화 조짐 [지금이뉴스] / YTN",
+          "video_id": "hshi8nIw8bk",
+          "views": 50231,
+          "upload_date": "2026-05-15",
+          "url": "https://www.youtube.com/watch?v=hshi8nIw8bk",
+          "subtitle_summary": "1. 삼성전자의 반도체와 완제품 부문에서 입장이 차이나서 노동조합 내부 갈등이 발생하여, 법적 분쟁으로 비화할 가능성이 있습니다.\n2. DX 소속 조합원들은 DS 중심 최대 노조의 대표성을 문제삼고 협상을 중단하려는 가처분 신청에 돌입했습니다.\n3. 삼성전자 산 커뮤니티에서는 삼성전자지부와 임금 협상 및 파업 금지를 요구하는 가처분 신청을 제기하고 있으며, 이들은 법무법인을 선정해 구체적인 요구안을 확정할 예정입니다.",
+          "db_saved": true
+        },
+        {
+          "title": "“대화하자” “조건 먼저”…삼성 파업 D-7 수싸움 / KBS  2026.05.14.",
+          "video_id": "xNNdWil1qwg",
+          "views": 12200,
+          "upload_date": "2026-05-14",
+          "url": "https://www.youtube.com/watch?v=xNNdWil1qwg",
+          "subtitle_summary": "1. Samsung 파업 D-7 수싸움에서, 중앙노동위원회와 Samsung 사측이 노조에게 추가 대화를 제안했습니다. 노조는 교섭 상황을 일부 공개하며 사측의 양보를 선결 조건으로 걸었습니다.\n2. 정부는 \"삼성전자 파업은 성장·수출·금융시장 등 전반에 상당한 리스크\"라고 주장했습니다. 국면에서 사후조정 결렬 이후, 청와대부터 노동부 장관까지 연쇄 압박을 가했으며, 사측이 먼저 움직였습니다.\n3. 노조는 \"상한 폐지·제도화·투명화에 대한 구체적 안을 제시하면 대화하겠다\"고 답변했으며, 사후조정 때 오간 협상도 일부 공개했습니다. 파업 현실화 가능성은 커지는 상황이며, 조합원 수는 4만 명 이상으로 늘어나고 있습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0.6706,
+      "min": 1.5441,
+      "nb_score": 0.4343,
+      "avg_views": 16117.2,
+      "total_views": 80586
+    },
+    {
+      "keyword": "핵추진잠수함 기본계획",
+      "is_fixed": false,
+      "views": [
+        4767,
+        1965,
+        1474
+      ],
+      "video_count": 3,
+      "videos": [
+        {
+          "title": "드디어 한국도 가진다! 전대미문 인류 최강 무기 핵잠 완벽 정리 [뉴스플레이리스트] / 채널A",
+          "video_id": "87EdnJ4wCO8",
+          "views": 4767,
+          "upload_date": "2026-05-15",
+          "url": "https://www.youtube.com/watch?v=87EdnJ4wCO8",
+          "subtitle_summary": "1. 한미가 핵잠수 건조(Submarine-Launched Ballistic Missile, SLBM)를 공식화했다. 이는 수면 아래에서만 논의되던 핵잠수 협력이 드디어 물 위로 떠오른 것으로, 중국과 일본도 반응하는 모습을 보였다.\n2. 미국은 중국을 부상하는 것을 굉장히 싫어하고, 이를 방지하기 위해서 한미가 핵잠수 추진을 허용했다.\n3. 한미의 목적은 북한의 SLBM을 억제하고, 미군이 지금 있기 때문에 중국과 일본으로부터의 유린 압박을 받는 것을 방지하는 데 있다.",
+          "db_saved": true
+        },
+        {
+          "title": "[🔴이슈를 켜라] 드디어 한국도 가진다! 전대미문 인류 최강 무기 핵잠 완벽 정리 / 채널A",
+          "video_id": "jGzm86fHMvA",
+          "views": 1965,
+          "upload_date": "2026-05-15",
+          "url": "https://www.youtube.com/watch?v=jGzm86fHMvA",
+          "subtitle_summary": "1. 한미가 공식화했다고 발표한 핵잠수함 건조는 중국 견제의 이유로 인해 미국이 허용하였다.\n2. 한미의 시각은 핵잠수 사용에 대해서 다목적으로 활용할 계획이 있다. 목적 중 하나는 북한의 SLBM을 억제하고, 미군이 지금 있기 때문에 일본에서의 유린 압박은 없어진다.\n3. 이러한 핵잠수 발표로 인해 중국과 일본은 예민하게 반응했으며, 이는 해군 전력의 차별화된 성격 때문에 가능할 것으로 보인다.",
+          "db_saved": true
+        },
+        {
+          "title": "전작권 회수도 올해안에 로드맵 완성한다는 잼통! 이달 말 핵추진잠수함 기본계획도 발표!...이재명 대통령은 계획이 다 있구나!",
+          "video_id": "t9RqzDCqJpI",
+          "views": 1474,
+          "upload_date": "2026-05-15",
+          "url": "https://www.youtube.com/watch?v=t9RqzDCqJpI",
+          "subtitle_summary": "1. 대통령은 이달 말에 핵추진 잠소함 기본 계획을 발표했다고 밝혔습니다.\n2. 이 계획에서는 한국은 비확산 의무를 철저히 이행할 것이며, 핵잠용핵을 무기 개발로 사용하지 않고 IAEA 검증에 적극 협력하겠다는 약속을 포함합니다.\n3. 이 계획은 미국과의 협상 결과로 나오며, 미국에서 쿠팡(Koch Industries)과 같은 방해하는 세력들의 목소리가 있었지만, 이러한 조건을 만족시키기로 했다고 합니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 1.2413,
+      "min": 3.5241,
+      "nb_score": 0.3522,
+      "avg_views": 2735.33,
+      "total_views": 8206
+    },
+    {
+      "keyword": "코스피 8000 돌파",
+      "is_fixed": false,
+      "views": [
+        2765,
+        3293,
+        13412,
+        7309,
+        2846,
+        4559,
+        1153,
+        6741,
+        957,
+        27416
+      ],
+      "video_count": 10,
+      "videos": [
+        {
+          "title": "[속보] 코스피 8,000선 돌파…파죽지세로 새 기록  / 연합뉴스TV (YonhapnewsTV)",
+          "video_id": "HMiIHxbdekM",
+          "views": 2765,
+          "upload_date": "2026-05-15",
+          "url": "https://www.youtube.com/watch?v=HMiIHxbdekM",
+          "subtitle_summary": "1. 코스피(Korean Stock Price Index)는 오늘 처음으로 8,000점을 돌파하였습니다.\n2. 최근 시장 상황에서 개인 투자자, 지수, 외국인 등이 코스피를 견인하고 있으며, 상위 기업들은 혼조세를 보이고 있습니다.\n3. 코스닥(KOSDAQ)은 계속해서 박스권에 갇힌 상태로 1490원대 중반선에서 움직이고 있으며, 1500원 선을 위협하고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[속보] '불기둥' 코스피 8,000 돌파...'8천 시대' 개막 / YTN",
+          "video_id": "qgEcLvoArVU",
+          "views": 3293,
+          "upload_date": "2026-05-15",
+          "url": "https://www.youtube.com/watch?v=qgEcLvoArVU",
+          "subtitle_summary": "1. 코스피는 9일 이전 6일 지난 7,000대를 넘어서 꿈에 8,000대를 돌파했으며, '코스피 8,000 시대'가 열렸습니다.\n2. 곳곳에서는 '코스피 8,000 시대'를 기념하는 행사가 진행중이며, 현장은 보여지고 있습니다.\n3. 뉴욕 증시 3대 지수의 상승으로 인해 코스피도 상승 탄력을 받고 있으며, 미중 정상회담 납관론과 AI 기업 실적 호조로 나스닥과 SP 500 지수도 사상 최고치를 달성했습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[경제읽기] 코스피 8000 첫 돌파…한국 증시 새 역사 / 연합뉴스TV (YonhapnewsTV)",
+          "video_id": "Z_Uo6lXAu14",
+          "views": 13412,
+          "upload_date": "2026-05-15",
+          "url": "https://www.youtube.com/watch?v=Z_Uo6lXAu14",
+          "subtitle_summary": "1. 코스피는 8,000 기준을 넘어서 최근 7일 내에 8천선을 돌파했습니다. 이는 전 세계 정시 역사상 가장 빠른 폭발적인 성장입니다.\n2. 이 증가는 반도체와 인공지능 분야에서의 우리나라의 강점으로 인해 일어난 것으로 보입니다.\n3. 그러나 외국인 매도로 인한 주가 하락이 있었고, 지금은 개미들이 계속 매수를 하면서 외국인들이 대량으로 매도하는 상황에 있습니다. 따라서 코스피의 추가 반등이나 조정 기간은 미래에 어떻게 될지 궁금증이 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "KOSPI Surpasses 8,000 for the First Time During Trading... Dawn of the '8,000-Point Era' (May 15,...",
+          "video_id": "VajsK9qAaME",
+          "views": 7309,
+          "upload_date": "2026-05-15",
+          "url": "https://www.youtube.com/watch?v=VajsK9qAaME",
+          "subtitle_summary": "1. 코스피(KOSPI)는 5월 15일 오전 9시 13분 4초에 처음으로 8,000 점을 넘어선 장중 기록이 되었습니다.\n2. 이 기록은 7천선에서 8천선까지 도달하는 데 7거래일만에 이루어졌으며, 역대 최단 수준의 상승 속도를 보였습니다.\n3. 현재 코스피는 9시 29분 기준으로 8,419.7점을 기록하고 있습니다. 이는 '8,000-Point Era'의 낮을 나타내는 것으로 보입니다.",
+          "db_saved": true
+        },
+        {
+          "title": "코스피 8,000선 돌파했지만…차익 실현에 하락 전환 / 연합뉴스TV (YonhapnewsTV)",
+          "video_id": "PxmXb6Uo77U",
+          "views": 2846,
+          "upload_date": "2026-05-15",
+          "url": "https://www.youtube.com/watch?v=PxmXb6Uo77U",
+          "subtitle_summary": "1. 코스피는 처음으로 8,000선을 돌파했지만 차익 실현 매물이 나타나면서 하락 전환했습니다. 현재 7,700선에서 거래 중입니다.\n2. 외국인과 기관은 팔고 있으며, 특히 외국인이 2조원 넘게 순매도 중이고 개인은 2조원 순매수하고 있지만 역부족입니다.\n3. 시가 총액 상회 종목들도 약세로 돌아서는 분위기입니다. 특히 코스피를 이끄는 반도체 투톱인 삼성전자와 SK 하이닉스는 3에서 4% 정도 하락 중입니다. 반면 로봇과 전력 인프라 관련주인 현대차와 삼성전기는 강세입니다. 코스닥 지수도 비슷한 상황입니다.",
+          "db_saved": true
+        },
+        {
+          "title": "동학개미가 일냈다!…코스피 8,000선 사상 첫 돌파｜외국인은 던지고 개미는 사고, 격돌하는 증시…이 시각 한국거래소 LIVE [현장쏙]  / 연합뉴스TV(YonhapnewsTV)",
+          "video_id": "l7pBc_ugDTQ",
+          "views": 4559,
+          "upload_date": "2026-05-15",
+          "url": "https://www.youtube.com/watch?v=l7pBc_ugDTQ",
+          "subtitle_summary": "1. 코스피는 오늘 드디어 장중 8,000점을 돌파했습니다. 개장 초반에 약세로 출발하였으나 개인의 매수세가 몰리면서 7천점을 넘고 8,000점 고지에 올라섰습니다.\n2. 이날 코스피는 전 거래일보다 0.37% 내려졌으나 차익 실험 매물이 나오면서 약세를 보였지만 개인이 외국인 매도 물량을 받아내면서 빠르게 방향을 틀었습니다.\n3. 현재도 8,000점 부근에서 등락하고 있으며, 수급을 보면 개인과 기간이 9억 원, 1억 원 순매수하며 지수 상승을 이끌고 있습니다. 반면 외국인은 1조원 넘게 팔아치우고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "코스피 사상 첫 8,000 돌파...8천피 시대 개막  [세상만사] #코스피 #코스닥 #8000돌파",
+          "video_id": "cbopgbc5kVY",
+          "views": 1153,
+          "upload_date": "2026-05-15",
+          "url": "https://www.youtube.com/watch?v=cbopgbc5kVY",
+          "subtitle_summary": "1. 코스피는 오늘 하락 출발했지만 상승세로 돌아서며, 처음으로 8,000을 돌파했습니다. 이 기록은 7거래일 내에 8,000 돌파라는 놀라운 성적을 보였습니다.\n2. 코스피의 상황을 알아보려고 추재 기자가 연결되었습니다. 현재 코스피는 8천선 위에서 오르내리고 있으며, SK 하이닉스와 삼성전자는 모두 하락 출발했습니다.\n3. 원달러 환율은 1490원대 후반에서 오르내리고 있으며, 최근 외국인 매도세와 포르무즈 해협 개방을 둘러싼 불확실성 때문에 코스피 시장에서 외국인 순 매도가 계속되고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "\"코스피 8,000 돌파 후 기습 매물 폭탄\"… 세력들 차익 실현 시작됐다, 개미들만 '벼락거지' 신세",
+          "video_id": "owTI2Wpa8Z4",
+          "views": 6741,
+          "upload_date": "2026-05-15",
+          "url": "https://www.youtube.com/watch?v=owTI2Wpa8Z4",
+          "subtitle_summary": "1. 코스피 8,000 돌파: 지난 날 코스피 8,000을 뛰어넘었습니다. 하지만 분위기가 안착하고 있으며, 특정 수치에 대한 인식이 생겨 매물이 빨리 나오는 경향이 있습니다.\n2. 코스피 시장의 돌파력: 코스피 8,000 돌파로 인해 돌파력이 굉장히 높아졌으나, 오늘 또 하락전환이 되는 원인은 여러 가지가 있습니다.\n3. 강소 기업 공략: 코스피에 있는 대표 종목들보다는 좀 탄력이 떨어진 코스닥 종목들은 여전히 매우 좋은 시장이라고 보고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "코스피 8,000선 첫 돌파…개미들이 만들었다 / 연합뉴스TV (YonhapnewsTV)",
+          "video_id": "tt3kdDWCBbA",
+          "views": 957,
+          "upload_date": "2026-05-15",
+          "url": "https://www.youtube.com/watch?v=tt3kdDWCBbA",
+          "subtitle_summary": "1. 코스피는 오늘 처음으로 8,000선을 돌파했습니다. 7,000선을 넘어서 8,400점까지 상승했습니다.\n2. 코스피는 전날보다 0.37% 내려서 출발했으나 개인의 매수세가 몰리면서 8,000선을 돌파했습니다.\n3. 현재 코스피는 8,000선 주변에서 등락하고 있으며, 외국인은 1조원 이상의 매도를 하고 있습니다. 또한 코스닥 지수는 상승 출발했지만 현재 1% 하락 중입니다.",
+          "db_saved": true
+        },
+        {
+          "title": "코스피 8천 찍고 주르륵..외인은 셀코리아 개인은 빚투? #코스피8000 #주식투자 #빚투 #레버리지 #ETF #경제뉴스",
+          "video_id": "wozNL1-GL_o",
+          "views": 27416,
+          "upload_date": "2026-05-15",
+          "url": "https://www.youtube.com/watch?v=wozNL1-GL_o",
+          "subtitle_summary": "1. 코스피는 최근 7일 만에 역대 처음으로 8천선을 뛰어넘었습니다.\n2. 그러나 지수가 고점을 돌파한 직후부터 하락 전환되며, 현재는 방향을 받고 하락 폭이 증가하고 있습니다.\n3. 외국인의 매도세가 거쳐지고 있으며, 코스피 8천선 돌파는 사상 처음 일입니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0.3467,
+      "min": 1.2268,
+      "nb_score": 0.2826,
+      "avg_views": 7045.1,
+      "total_views": 70451
+    },
+    {
+      "keyword": "울산시장 단일화",
+      "is_fixed": false,
+      "views": [
+        140289,
+        10435,
+        4255,
+        4800,
+        4238,
+        5898,
+        6999
+      ],
+      "video_count": 7,
+      "videos": [
+        {
+          "title": "Innovation Party Ulsan Mayoral Candidate Resigns… Hwang Myung-pil: \"Agreed to Unify with Kim Sang...",
+          "video_id": "0jzq97r6ddk",
+          "views": 140289,
+          "upload_date": "2026-05-14",
+          "url": "https://www.youtube.com/watch?v=0jzq97r6ddk",
+          "subtitle_summary": "1. Ulsan Mayoral Candidate Hwang Myung-pil from the Justice and Liberty Party has agreed to unify with Kim Sang-wook, a candidate from the Democratic Party. Hwang explained that this decision was due to concerns that without unity, Kim's victory could once again cause harm to the people of Ulsan.\n2. The negotiations for the unification between the Democratic Party and the Progressive Party are still ongoing, with Kim Sang-wook emphasizing that a victory in Ulsan is essential for the progressive camp. He also expressed his intention to hold talks with the Progressive Party's candidate, Kim Jong-hun.\n3. Both parties are currently in discussions regarding the unification, and Hwang Myung-pil stated that they aim to reach an agreement by tomorrow. The Democratic Party recognizes the public's demand for a merger and is negotiating with the intention of forming a united front ahead of the election.",
+          "db_saved": true
+        },
+        {
+          "title": "[Replay] [Breaking] Democratic Party's Kim Sang-wook and Progressive Party's Kim Jong-hoon, Ulsan...",
+          "video_id": "gs4trRnL3-M",
+          "views": 10435,
+          "upload_date": "2026-05-15",
+          "url": "https://www.youtube.com/watch?v=gs4trRnL3-M",
+          "subtitle_summary": "1. 더불어민주당(DP) 및 진보당(PP)은 63지방선거 울산 광역시 부산 연재구에서 단일화를 발표하고 후보 단일화 발표 및 서명식을 진행할 것이며, 언론인들의 간단한 지의 응답 시간을 가질 예정입니다.\n2. 참석자로 나타난 사람들은 신창현(PP 사무총장), 모인한(PP 기획부총장), 손솔(PP 수석대변인), 조승래(DP 사무총장), 이연희(DP 전략계획 위원장) 등입니다.\n3. 진보당과 더불어민주당은 함께 노동이 존중되는 울산을 만들고, 기득권 정치와 내란 세력을 완전히 청산하기 위해 힘을 모으려고 합니다. 또한 부산에서도 국민의 힘 일당 독점 정치를 끝내고, 새로운 부산을 만들어 시민의 삶과 목소리가 시정에 반영되는 정치를 구축하려고 합니다.",
+          "db_saved": true
+        },
+        {
+          "title": "\"100% 여론조사 경선\" 김상욱·김종훈 울산시장 후보 단일화 합의",
+          "video_id": "WIZtkGCY5BM",
+          "views": 4255,
+          "upload_date": "2026-05-15",
+          "url": "https://www.youtube.com/watch?v=WIZtkGCY5BM",
+          "subtitle_summary": "1. 울산시장 후보인 김상욱(더불어민주당)은 6삼지방 선거에서 시민주의 민주도시 울산을 회복하고, AI 시대에 노동 중심의 산업 AX 대전환을 선도해야 한다고 말했습니다.\n2. 이는 법민주 진영(민주당, 진보당, 조국혁신당) 모두 함께 할 수 있는 큰 과제로 인식되었으며, 시민들은 선거 때부터 법민주 진영이 하나가 되어서 울산의 민주를 되찾아오기를 원했습니다.\n3. 김상욱은 단일화 합의에 대한 계획을 시민들 앞에 밝혔으며, 이는 함께 정책을 같이 하고 마음을 함께 하는 것이 아닌 진정으로 함께 하는 것이라고 강조했습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[속보] 민주 김상욱-진보 김종훈, 울산시장 선거 단일화 합의",
+          "video_id": "bD1tHyQf6Fg",
+          "views": 4800,
+          "upload_date": "2026-05-15",
+          "url": "https://www.youtube.com/watch?v=bD1tHyQf6Fg",
+          "subtitle_summary": "두 당, 더불어민주당과 진보당은 63지방선거에서 울산시장 후보를 단일화하기로 합의했습니다. 각 당의 후보는 결과를 존중하고 공동으로 선거 승리를 위해 최선을 다할 것입니다. 울산시장 후보는 울산오계군, 구군, 기초단체장, 일부 지역 광역의원 후보 등이 될 것으로 결정되었습니다. 또한 부산 광역시 연제구, 울산 동구, 북북구, 중국장, 남구, 울주군수에서도 각 당의 후보가 경선 방식으로 단일화되었습니다. 세부사항은 별도 협의하겠다는 내용이 포함되어 있습니다. 합의문을 서명한 것으로 알려졌습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "\"Ulsan Mayoral Candidate Unification by Pro-Ruling Party\"... \"Only Oh Se-hoon for Seoul Mayor\" (2...",
+          "video_id": "6JPWixXtB50",
+          "views": 4238,
+          "upload_date": "2026-05-15",
+          "url": "https://www.youtube.com/watch?v=6JPWixXtB50",
+          "subtitle_summary": "1. 두 당(더불어민주당 및 진보당)의 울산시장 후보, 김상욱과 김종은, 단일화에 동의하여 법여권이 한 명으로 경쟁할 가능성이 있습니다.\n2. 민주당 정원호 서울시장 후보와 오세훈 후보 사이에는 부동산 공약 문제로 맞물려 있으며, 국민의 장동혁 상임선대위원장은 오세훈을 지원하고 있습니다.\n3. 정의용 선거대책 본부장과 공동선대위원장 송원석은 이재명 대통령이 전통시장에 방문한 것을 선거개입으로 비판하며, 권력을 신뢰하지 않는다고 주장합니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[LIVE] 더불어민주당·진보당 \"여론조사로 울산시장 후보 단일화\"…울산 구청장 3곳 교통정리/2026년 5월 15일(금)/KBS",
+          "video_id": "z1ffqW7A0QU",
+          "views": 5898,
+          "upload_date": "2026-05-15",
+          "url": "https://www.youtube.com/watch?v=z1ffqW7A0QU",
+          "subtitle_summary": "더불어민주당과 진보당은 울산 광역시 부산 연재구의 선거 후보를 단일화하기로 했습니다. 두 당의 사무총장이 발표에서 각자 말씀을 드렸으며, 함께 노동이 존중되는 울산을 만들고 국민의 힘 일당 독점 정치를 끝내려는 목적을 가지고 있습니다. 또한 시민의 삶과 목소리가 시정에 반영되는 새로운 부산을 만들기로 했으며, 이 결단은 전국 정치변의 출발점이 될 것이라고 생각합니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[박정호의 핫스팟+김봉신] 속보) 울산시장 단일화 합의! 민주 김상욱·진보 김종훈, 국힘 큰일났다!",
+          "video_id": "PD8GbyXkKNU",
+          "views": 6999,
+          "upload_date": "2026-05-15",
+          "url": "https://www.youtube.com/watch?v=PD8GbyXkKNU",
+          "subtitle_summary": "1. 울산시장 후보 박정호(민주당)와 김봉신(진보당)은 단일화 합의를 했다.\n2. 이 결과로 인해 울산 광역 시장, 울산 기초 단체장, 부산 연제구 기초단체장 후보 선거에서는 양당 후보 경선이 치러질 것이다.\n3. 울산 동구청장은 진보당 후보로, 울산 부구청장과 중구청장은 민주당 후보로 단일화되었으며, 나머지 지역에서는 100% 여론조사 결과로 단일화될 예정이다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0.1727,
+      "min": 0.9866,
+      "nb_score": 0.175,
+      "avg_views": 25273.43,
+      "total_views": 176914
+    },
+    {
+      "keyword": "한미 반도체 협력",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "이란 화물선 피격",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "청해부대 중동 파견",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "GTX 만원 버스",
+      "is_fixed": false,
+      "views": [
+        144
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "[현장에서 묻다]GTX 만들었는데 만원 버스 탄다…경기지사 후보의 해법은? / 채널A / 뉴스A",
+          "video_id": "o85o836X4Ls",
+          "views": 144,
+          "upload_date": "2026-05-15",
+          "url": "https://www.youtube.com/watch?v=o85o836X4Ls",
+          "subtitle_summary": "1. 대한민국의 경기도 인구 1400만 명 중 상당수가 서울로 출퇴근하고, GTX(고속도로 열차)를 이용하여 30분을 소중히 생각하는 사람들이 많습니다. 그러나 경기 도민들은 GTX 대신 만원 버스를 타고 다닌다는 것으로 보아 서울 출퇴근에 문제가 있어 불편함을 느껴지고 있습니다.\n2. 정서원 기자는 GTX와 버스의 차이를 묻고, 아침에는 별로 차이가 없다고 하여 출퇴근 고통을 느꼈습니다.\n3. 정서원 기자는 경기 지사 후보와 만나 현재 문제를 해결하는 방안에 대해 질문했으며, 530이런 시스템을 구축하고 있다고 합니다. 이 시스템은 집에서부터 30분 내로 서울까지 도착할 수 있는 교통 체계를 구축하려는 것으로 보입니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "스테이블코인 동맹",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "반도체 레버리지 ETF",
+      "is_fixed": false,
+      "views": [
+        583
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "\"개미들만 또 당한다…삼성전자·SK하이닉스 2배 레버리지 ETF 절대 사지 마라\" (JW인베스트 곽유정 대표)",
+          "video_id": "nVnTYOfwt78",
+          "views": 583,
+          "upload_date": "2026-05-15",
+          "url": "https://www.youtube.com/watch?v=nVnTYOfwt78",
+          "subtitle_summary": "1. 현재 시장에서 관심이 많은 종목은 반도체 토핑인 Samsung Electronics와 SK Hynix입니다. 두 회사는 6~70% 정도 하락하고 있습니다.\n2. Samsung Electronics에는 노조 파업 리스크가 계속 존재하며, 대화 진행이 6월 7일 이쯤 될 것으로 예상됩니다.\n3. 시장 전체적으로 금요일 장세 차익 실현이 강하게 나타나고 있습니다. 따라서, 반도체 회사의 노조 파업 리스크보다는 시장 전반적인 상황에 초점을 맞추어야 합니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "육군 대병과제 시행",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "서울시 철근 감사",
+      "is_fixed": false,
+      "views": [
+        7536
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "[단독] \"철근 2묶음을 1묶음인 줄\"‥서울시에 감사 착수 (2026.05.15/뉴스데스크/MBC)",
+          "video_id": "VvNiKX_oWQY",
+          "views": 7536,
+          "upload_date": "2026-05-15",
+          "url": "https://www.youtube.com/watch?v=VvNiKX_oWQY",
+          "subtitle_summary": "1. 대규모 철근 누락 사고가 발생했습니다. 이는 작업자가 설계 도면을 착각하여 시공에 나서서 발생한 것으로 보입니다.\n2. 이 사고는 2023년 인천 검단과 같은 부실 시공을 반복할 뻔 했던 사건입니다. 영동대로 복합 환승센터 공사장에서 2500여개의 철근이 누락되었습니다.\n3. 서울시와 국가 철도공단은 외부 전문가 자문 회의를 열었고, 지난달 말부터 긴급 안전 점검을 실시했습니다. 또한 철근이 빠진 기둥에는 보강 공법이 검토되고 있습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "나리타공항 화물 취급",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    }
+  ]
+}

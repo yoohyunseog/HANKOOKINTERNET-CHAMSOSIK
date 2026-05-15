@@ -250,6 +250,157 @@
     updatedEl.textContent = formatTime(payload.updated_at);
     modelEl.textContent = payload.model || "-";
 
+    const weighted = payload.weighted_signal || {};
+    const factors = normalizeFactorLists(weighted);
+    const score = Number.isFinite(Number(weighted.score)) ? Number(weighted.score) : "-";
+    const upperBound = Number.isFinite(Number(weighted.upper_bound)) ? Number(weighted.upper_bound) : "-";
+    const lowerBound = Number.isFinite(Number(weighted.lower_bound)) ? Number(weighted.lower_bound) : "-";
+    const grade = weighted.grade || "-";
+    const signals = Array.isArray(payload.signals) && payload.signals.length
+      ? payload.signals
+      : ["아직 핵심 신호 데이터가 없습니다."];
+    const risks = Array.isArray(payload.risks) && payload.risks.length
+      ? payload.risks
+      : ["아직 리스크 데이터가 없습니다."];
+    const marketImpact = Array.isArray(payload.market_impact) && payload.market_impact.length
+      ? payload.market_impact
+      : ["아직 시장 영향 데이터가 없습니다."];
+    const splitFactor = (item) => {
+      const text = String(item || "").trim();
+      const match = text.match(/^(.*?)([+-]\s*\d+(?:\.\d+)?)\s*$/);
+      if (!match) return [text, ""];
+      return [match[1].trim(), match[2].replace(/\s+/g, "")];
+    };
+    const upperFactors = factors.upper.length
+      ? factors.upper.map(splitFactor)
+      : [["상한치 요인이 아직 없습니다.", ""]];
+    const lowerFactors = factors.lower.length
+      ? factors.lower.map(splitFactor)
+      : [["하한치 요인이 아직 없습니다.", ""]];
+    const googleSearchText = [
+      "이클립스 센츄어리 D.P",
+      "핵심 신호",
+      ...signals,
+      "리스크",
+      ...risks,
+      "시장 영향",
+      ...marketImpact,
+      "가중치 상한 하한",
+      `등급 ${grade}`,
+      `종합 가중치 ${score}`,
+      `상한치 ${upperBound}`,
+      `하한치 ${lowerBound}`,
+      "상한치 요인",
+      ...upperFactors.map(([label, value]) => `${label} ${value}`),
+      "하한치 요인",
+      ...lowerFactors.map(([label, value]) => `${label} ${value}`),
+    ].join(" ");
+    const googleSearchUrl = `https://www.google.com/search?q=${encodeURIComponent(googleSearchText)}`;
+    const cardSearches = [
+      ["핵심 신호", ["이클립스 센츄어리 D.P", "핵심 신호", ...signals].join(" ")],
+      ["리스크", ["이클립스 센츄어리 D.P", "리스크", ...risks].join(" ")],
+      ["시장 영향", ["이클립스 센츄어리 D.P", "시장 영향", ...marketImpact].join(" ")],
+      [
+        "가중치",
+        [
+          "이클립스 센츄어리 D.P",
+          "가중치 상한 하한",
+          `등급 ${grade}`,
+          `종합 가중치 ${score}`,
+          `상한치 ${upperBound}`,
+          `하한치 ${lowerBound}`,
+          ...upperFactors.map(([label, value]) => `${label} ${value}`),
+          ...lowerFactors.map(([label, value]) => `${label} ${value}`),
+        ].join(" "),
+      ],
+    ];
+    const renderPlainList = (items, iconClass) => `
+      <ul class="ecdp-list ${iconClass}">
+        ${items.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}
+      </ul>
+    `;
+    const renderFactorList = (items, type) => `
+      <ul class="ecdp-factor-list ${type}">
+        ${items.map(([label, value]) => `<li><span>${escapeHtml(label)}</span><strong>${escapeHtml(value)}</strong></li>`).join("")}
+      </ul>
+    `;
+
+    target.innerHTML = `
+      <div class="ecdp-layout" aria-label="이클립스 센츄어리 D.P 분석 카드">
+        <article class="ecdp-card ecdp-card-signal">
+          <div class="ecdp-icon"><i class="bi bi-graph-up-arrow"></i></div>
+          <div class="ecdp-content">
+            <h3>핵심 신호</h3>
+            <span class="ecdp-rule"></span>
+            ${renderPlainList(signals, "is-blue")}
+          </div>
+        </article>
+        <article class="ecdp-card ecdp-card-risk">
+          <div class="ecdp-icon"><i class="bi bi-shield-exclamation"></i></div>
+          <div class="ecdp-content">
+            <h3>리스크</h3>
+            <span class="ecdp-rule"></span>
+            ${renderPlainList(risks, "is-pink")}
+          </div>
+        </article>
+        <article class="ecdp-card ecdp-card-market">
+          <div class="ecdp-icon"><i class="bi bi-bar-chart-line"></i></div>
+          <div class="ecdp-content">
+            <h3>시장 영향</h3>
+            <span class="ecdp-rule"></span>
+            ${renderPlainList(marketImpact, "is-teal")}
+          </div>
+        </article>
+        <article class="ecdp-card ecdp-card-search">
+          <div class="ecdp-icon"><i class="bi bi-google"></i></div>
+          <div class="ecdp-content">
+            <h3>전체 브리핑 텍스트 검색</h3>
+            <span class="ecdp-rule"></span>
+            <p class="ecdp-search-desc">핵심 신호, 리스크, 시장 영향, 가중치 요인을 하나의 검색어로 묶었습니다.</p>
+            <div class="ecdp-google-actions">
+              <a class="ecdp-google-main" href="${googleSearchUrl}" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-google"></i>
+                전체 검색
+              </a>
+              ${cardSearches.map(([label, query]) => `
+                <a href="https://www.google.com/search?q=${encodeURIComponent(query)}" target="_blank" rel="noopener noreferrer">
+                  ${escapeHtml(label)}
+                </a>
+              `).join("")}
+            </div>
+          </div>
+        </article>
+        <article class="ecdp-card ecdp-card-weight">
+          <div class="ecdp-icon"><i class="bi bi-scales"></i></div>
+          <div class="ecdp-content">
+            <h3>가중치 상한·하한</h3>
+            <span class="ecdp-rule"></span>
+            <div class="ecdp-score-grid">
+              <div><span>등급</span><strong>${escapeHtml(grade)}</strong></div>
+              <div><span>종합 가중치</span><strong>${escapeHtml(String(score))}</strong></div>
+              <div><span>상한치</span><strong>${escapeHtml(String(upperBound))}</strong></div>
+              <div><span>하한치</span><strong>${escapeHtml(String(lowerBound))}</strong></div>
+            </div>
+            <div class="ecdp-scale">
+              <div class="ecdp-scale-track"><span></span><span></span><span></span></div>
+              <div class="ecdp-scale-labels"><span>0</span><span>${escapeHtml(String(upperBound))}</span><span>${escapeHtml(String(score))}</span><span>100</span></div>
+            </div>
+            <div class="ecdp-factor-grid">
+              <div class="ecdp-factor-box">
+                <h4>상한치 요인 <span>↑</span></h4>
+                ${renderFactorList(upperFactors, "upper")}
+              </div>
+              <div class="ecdp-factor-box">
+                <h4>하한치 요인 <span>↓</span></h4>
+                ${renderFactorList(lowerFactors, "lower")}
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    `;
+    return;
+
     target.innerHTML = `
       <div class="world-monitor-ai-panel">
         <h3 class="world-monitor-ai-headline">${escapeHtml(payload.headline || "이클립스 센츄어리 D.P 브리핑")}</h3>

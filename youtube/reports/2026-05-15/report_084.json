@@ -1,0 +1,481 @@
+{
+  "timestamp": "2026-05-15T20:39:04.071603",
+  "model": "mistral:latest",
+  "keyword_count": 3,
+  "analyze_subtitles": true,
+  "analysis_source": "youtube",
+  "keywords": [
+    {
+      "keyword": "오늘의 주요 뉴스",
+      "is_fixed": true,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "지방선거 여론조사",
+      "is_fixed": false,
+      "views": [
+        2980,
+        576,
+        3350,
+        2729
+      ],
+      "video_count": 4,
+      "videos": [
+        {
+          "title": "[갓생쇼] 李대통령 지지율 61%｜6·3 지방선거 D-19, ‘4대 최후 격전지’ 집중 분석 with 김봉신 메타보이스 대표, 윤희웅 오피니언즈 대표｜KBS 260515 방송",
+          "video_id": "DtlOldZpV8U",
+          "views": 2980,
+          "upload_date": "2026-05-15",
+          "url": "https://www.youtube.com/watch?v=DtlOldZpV8U",
+          "subtitle_summary": "1. 최근 조사에서 이재명 대통령의 직무수행 평가가 61%로 나왔으며, 2주 전 대비해서 3% 하락했다.\n2. 긍정적인 요소로 경제와 민생이 나타났고, 부정적인 요소로는 도덕성과 본인 재판 회피가 있었다.\n3. 12일부터 14일까지 전국 만 18세 이상 남녀 111명을 조사한 결과, 피보차는 95% 신뢰 수준에서 +/-3.1% 포인트였다.",
+          "db_saved": true
+        },
+        {
+          "title": "[서귀포 보선 여론조사] 지방선거 인식·국정평가·정당 지지도 / KBS  2026.05.14.",
+          "video_id": "PuE60gUFCf8",
+          "views": 576,
+          "upload_date": "2026-05-15",
+          "url": "https://www.youtube.com/watch?v=PuE60gUFCf8",
+          "subtitle_summary": "1. KBS 처음으로 서귀포시에서 국회의원 보궐 선거 여론조사를 실시했습니다. 이번 지방 선거에 대한 유권자의 인식 중 가장 중요한 변수는 이재명 정부에 대한 평가입니다.\n2. 국정운영에 대해 긍정적으로 평가하는 유권자는 77%를 차지했습니다. 민주당 국회의원 후보에 대한 지지율이 상대적으로 높지 않았던 70대 이상과 20대 이하 연령층, 그리고 보수층에서도 긍정 평가가 50%를 넘겼습니다.\n3. 정당 지지도에서는 민주당이 55%, 국민의임이 16%로 크게 앞서었습니다. 소수정당에서는 조국 혁신당이 2%, 개혁신당과 기본 소득당 녹색당이 각각 1%였습니다. 보수층 중 자신의 이념 성향을 보수라고 답한 유권자 중에서도 국민의임 지지자는 40%, 민주당 28% 지지하는 정당이 없다.",
+          "db_saved": true
+        },
+        {
+          "title": "[서귀포 보선 여론조사] 지방선거 인식·국정평가·정당 지지도 / KBS  2026.05.14.",
+          "video_id": "JrUXxeo_dQk",
+          "views": 3350,
+          "upload_date": "2026-05-14",
+          "url": "https://www.youtube.com/watch?v=JrUXxeo_dQk",
+          "subtitle_summary": "1. 최종 순위에서 보궐이 선거 여론 조사의 마지막 순서였습니다. 이번 지방 선거에서 이재명 정부에 대한 평가는 중요한 변수입니다. 석기포시 유권자들은 국정운영에 대해 긍정적으로 평가했습니다.\n2. 77%의 유권자가 국정운영에 대해 긍정적인 평가를 내리며, 민주당 국회의원 후보에 대한 지지율이 상대적으로 높았습니다.\n3. 이번 여론조사는 KBS에서 한국 리서치에 의뢰하여 4월 동안 석기포시 지역 18살 이상 500명을 대상으로 진행한 전화 면접 조사였습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[Local Election Opinion Poll] ② Gimhae Mayoral Election (May 14, 2026 / Newsdesk / MBC Gyeongnam)",
+          "video_id": "Wd_5sFoSPGw",
+          "views": 2729,
+          "upload_date": "2026-05-14",
+          "url": "https://www.youtube.com/watch?v=Wd_5sFoSPGw",
+          "subtitle_summary": "1. 김해시장 선거에 대한 여론조사 결과, 정영두(더불어민주당)가 홍태용(국민의 힘)을 5차범위 밖에서 앞섰습니다.\n2. 정영두 후보의 당선 가능성이 홍태용 후보보다 더 높았으며, 소속 정당이 가장 높은 이유로 지지하는 사람이 많았습니다.\n3. 김해시의원 선거에서도 더불어민주당이 지지도가 높았으며, 공공의료원 등 의료인프라 구축이 차기 김해시장이 가장 시급하게 해결해야 할 현상으로 보입니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 2.8605,
+      "min": 2.4387,
+      "nb_score": 1.173,
+      "avg_views": 2408.75,
+      "total_views": 9635
+    },
+    {
+      "keyword": "삼성전자 파업",
+      "is_fixed": false,
+      "views": [
+        49232,
+        10280,
+        678,
+        46897,
+        1531,
+        329
+      ],
+      "video_count": 6,
+      "videos": [
+        {
+          "title": "삼성전자 파업 전 또...노조 내부 갈등 법적 분쟁 비화 조짐 [지금이뉴스] / YTN",
+          "video_id": "hshi8nIw8bk",
+          "views": 49232,
+          "upload_date": "2026-05-15",
+          "url": "https://www.youtube.com/watch?v=hshi8nIw8bk",
+          "subtitle_summary": "1. 삼성전자 내부에서 반도체와 완제품 부문간의 차이로 인한 노동조합 갈등이 법적 분쟁으로 비화할 듯하며, DX 소속 조합원들은 DS 중심 최대 노조의 대표성을 문제삼고 협상을 중단하려는 가처분 신청에 돌입했습니다.\n2. 삼성전자 산 커뮤니티에서는 삼성전자지부와 임금 협상 및 파업 금지를 요구하는 가처분 신청이 제기되고 있습니다. DX 조합원들은 DS 파업을 반대하며, 쟁이기간 초기업 노조 조합비가 5만 원으로 인상되는데 불만을 표시하고 있습니다.\n3. 가처분 신청이 실제로 제기되면, 노조로서는 현재 사측이 제기한 불법 쟁의 행위 금지 가처분 신청과 함께 파업전 두 개의 법정 리스크에 직면할 것입니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[지금뉴스] 삼성전자 총파업 D-6…30일 파업 막는 ‘긴급조정권’이란? / KBS 2026.05.15.",
+          "video_id": "N2ECanRc3yQ",
+          "views": 10280,
+          "upload_date": "2026-05-15",
+          "url": "https://www.youtube.com/watch?v=N2ECanRc3yQ",
+          "subtitle_summary": "1. Samsung Electronics is threatening a nationwide strike on the 21st, and there's discussion about the possibility of the government using emergency powers to prevent it. The Minister of Trade, Industry and Energy believes that if a strike occurs, emergency measures will be necessary due to semiconductors being Korea's only growth engine in strategic assets.\n2. Emergency powers can be used by the Minister of Labor when there's a risk of significant harm to the national economy or daily life. If activated, the union must halt all strikes for 30 days and the government will intervene with regulation and mediation. However, actual cases are rare.\n3. Samsung Electronics has reportedly prepared for a strike by reducing semiconductor production and activating emergency measures. The potential damage could reach up to 100 trillion won due to the nature of 24-hour semiconductor production lines where even a brief shutdown results in significant loss. The Central Labor Union has requested a post-strike review to be held tomorrow, while the union has set conditions for negotiations, including the presentation of concrete proposals from management on key issues such as abolishing performance-based pay, institutionalization, and transparency.",
+          "db_saved": true
+        },
+        {
+          "title": "삼성전자 노사 협상 교착…파업 강행 가능성 / KBS  2026.05.15.",
+          "video_id": "XlNnVj_Vx30",
+          "views": 678,
+          "upload_date": "2026-05-15",
+          "url": "https://www.youtube.com/watch?v=XlNnVj_Vx30",
+          "subtitle_summary": "1. Samsung Electronics proposed a plan for transparency in performance-based pay, but the union is considering it from May 21st and may proceed with a strike if an agreement isn't reached.\n2. The company's management has initiated talks without conditions, but the union has raised concerns about the Central Labor Relations Committee's post-meeting minutes disclosure, which could potentially lead to rejection of the committee's post-meeting adjustments.\n3. The union has also revealed some parts of the minutes from the Central Labor Relations Committee meeting held on May 11th, causing distrust towards the committee, and as a result, they have rejected the committee's post-meeting adjustment restrictions.",
+          "db_saved": true
+        },
+        {
+          "title": "파업 피해는 시작됐다…삼성, ‘비상 플랜’ 가동 / 채널A / 김진의 돌직구쇼",
+          "video_id": "xWUb6FY2bgo",
+          "views": 46897,
+          "upload_date": "2026-05-15",
+          "url": "https://www.youtube.com/watch?v=xWUb6FY2bgo",
+          "subtitle_summary": "1. 중국 업체들이 100조원의 손실을 걱정하고 있습니다. 산업통부 장관이 긴급 조정을 필요하다고 언급했습니다.\n2. 김정관 장관은 반도체 공장 파업으로 인해 큰 국가적인 위기가 발생할 수 있다는 것을 말했습니다.\n3. 노동자 권리 파급 효과를 고려하면서도, 반도체 공장이 우리나라의 중요한 부분이며 국가적인 위기로 이어질 수 있다는 것을 인식하고 있습니다. 정부는 노동자와의 합의를 원하고 있으며, 긴급 조정을 통해 공장 멈춰 세우는 파업을 막기로 결심했습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[현장] \"삼성전자 파업하면 경제 마비? 정부가 밝힌 '긴급조정권' 검토의 진실과 1,700개 협력사 운명 걸린 일촉즉발 현상황\"",
+          "video_id": "zvUUUPVyYrA",
+          "views": 1531,
+          "upload_date": "2026-05-15",
+          "url": "https://www.youtube.com/watch?v=zvUUUPVyYrA",
+          "subtitle_summary": "1. 긴급조정권 발동에 대해 많은 의견이 있지만, 아직 결정단계가 없습니다. 노서의 협의를 기대하고 있으며, 삼성전자는 국가 경제에 크게 영향을 미치고 있습니다.\n2. 1700개 이상의 협력사로 구성된 삼성전자는 주식으로 많은 국민들이 소유하고 있어서, 파업과 같은 문제가 발생하지 않을 것으로 예상됩니다.\n3. 산업부장관의 말씀에 따르면, 각자의 부서 역할을 수행하고 있습니다. 재경부는 거시 경제를 갖다 충발하고, 산업부는 실무 경제를 총괄하며, 노동부는 노동 정책을 관장합니다.",
+          "db_saved": true
+        },
+        {
+          "title": "삼성전자 노조 “파업 이후 협의”…파업 D-6, 강 대 강 대치 / KBS  2026.05.15.",
+          "video_id": "rMHyz8_AjFI",
+          "views": 329,
+          "upload_date": "2026-05-15",
+          "url": "https://www.youtube.com/watch?v=rMHyz8_AjFI",
+          "subtitle_summary": "1. Samsung Electronics union has announced that the strike, scheduled to start in 6 days, will proceed as planned. The union has not yet agreed to a more advanced compromise proposal from management.\n2. The union emphasized that the strike will go ahead as planned on June 7th or later, and they have already received proposals for the abolition of the ceiling system and transparency from management regarding their demands.\n3. The government's mediation is not easy in the current deadlock situation. The National Labor-Management Council has limited the extension of post-strike mediation, but all parties must agree to start the procedure. However, the union does not believe that mediation through the council is possible, and past mediation records have been disclosed publicly.",
+          "db_saved": true
+        }
+      ],
+      "max": 0.8777,
+      "min": 1.5647,
+      "nb_score": 0.5609,
+      "avg_views": 18157.83,
+      "total_views": 108947
+    },
+    {
+      "keyword": "미중 정상 회담",
+      "is_fixed": false,
+      "views": [
+        6208,
+        1082,
+        312,
+        21449,
+        4944,
+        34625
+      ],
+      "video_count": 6,
+      "videos": [
+        {
+          "title": "합의문 없이 끝난 첫날 정상회담...미중 새로운 시대로? [세상만사] #미중정상회담",
+          "video_id": "w7mHntZaMVQ",
+          "views": 6208,
+          "upload_date": "2026-05-15",
+          "url": "https://www.youtube.com/watch?v=w7mHntZaMVQ",
+          "subtitle_summary": "1. 미국 대통령 트럼프와 중국 주석 시진핑이 어제 정상회담에서 빅딜 없이 끝났다.\n2. 두 정상은 중국 벌려의 심장부에서 만나게 되는데, 관련 내용을 강준영(한국외대), 문성무(국가전략연구원), 통일전략센터장과 함께 이야기하겠다고 했습니다.\n3. 미국과 중국의 관계에서 중요한 문제로 대만 문제가 있으며, 양정상의 단어를 보면 두 정상이 극명한 차이가 드러나고 있다는 것을 알 수 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "합의문 없이 끝난 첫날 정상회담...미중 새로운 시대로? [오늘의 세상만사 TOP5] #트럼프 #시진핑 #미중정상회담",
+          "video_id": "nUhet0z5Z7g",
+          "views": 1082,
+          "upload_date": "2026-05-15",
+          "url": "https://www.youtube.com/watch?v=nUhet0z5Z7g",
+          "subtitle_summary": "1. 미국 대통령 트럼프와 중국 주석 시진핑이 어제 정상회담을 끝내었습니다. 두 정상은 중국 벌려의 심장부에서 만날 예정입니다.\n2. 전문가들과 함께 이번 정상회담의 관련 내용을 짚어보겠습니다. 대만 문제는 중국과 미국 간에 걸림돌이 될 수 있습니다.\n3. 트럼프 대통령은 시진핑 주석을 위대한 지도자라고 지켜세우며, 양정상의 단어를 보면 두 정상이 극명한 차이가 있습니다. 트럼프는 미래에 굉장히 밝아 보입니다.",
+          "db_saved": true
+        },
+        {
+          "title": "미중 정상회담 마무리…트럼프 \"환상적인 무역합의 이뤘다\"",
+          "video_id": "aMUtHp1w_kc",
+          "views": 312,
+          "upload_date": "2026-05-15",
+          "url": "https://www.youtube.com/watch?v=aMUtHp1w_kc",
+          "subtitle_summary": "1. 미국과 중국의 두 번째 정상회담이 베이징에서 마무리됐습니다. 양국은 경제 협력과 중동 리스크 관리를 중심으로 집중했습니다.\n2. 미국 대통령 트럼프는 이번 정상회담에서 만족스러운 무역합의라고 평가했으며, 이번 방문은 놀라운 방문이었다고 말했습니다.\n3. 양국은 미국의 대란무기 지원에 관한 문제를 논의하면서, 미중 관계 개선과 이란의 핵문제와 호르무주 해업 개방 필요성에 대해 공감을 나누었습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[현장연결] 미중 정상회담 모두발언...시진핑 “서로에게 기회” 트럼프 “더 굳건한 관계 전망” / 연합뉴스TV (YonhapnewsTV)",
+          "video_id": "UFAMRuJjkAg",
+          "views": 21449,
+          "upload_date": "2026-05-14",
+          "url": "https://www.youtube.com/watch?v=UFAMRuJjkAg",
+          "subtitle_summary": "1. 미중 정상회담에서 누구가 배석하고, 왼쪽과 오른쪽에 누구가 안게 될지는 중요합니다. 의전 서열순으로 앉아서 차이치(중앙 판공청의 주임)는 미국 대통령 비서실장에 속하며, 마크로비오(미국 외교부장관)가 트럼프 대통령 옆에 앉을 것 같습니다.\n2. 핵세스(미국 국방장관)은 이번 정상회담에 참석하는데, 이는 보통 국방장관은 나라를 지켜야 하는 이유로 이례적입니다.\n3. 트럼프 대통령이 정상회담 내부에 진입했으며, 대부분의 인사들이 모두 착석했습니다. 핵세스 국방장관과 루비오(미국 외교부장관)는 이번 정상회담에 참석하고 있으며, 중국의 입제를 여러 번 제기한 적이 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[뉴스나우] 합의문 없이 끝난 첫날 정상회담...미중 새로운 시대로? / YTN",
+          "video_id": "0FeI-VKrD9c",
+          "views": 4944,
+          "upload_date": "2026-05-15",
+          "url": "https://www.youtube.com/watch?v=0FeI-VKrD9c",
+          "subtitle_summary": "1. 미국과 중국의 정상회담에서 양정상은 상당히 노골적인 표현을 사용하여 대만 문제와 미국이 대만을 지원하는 것에 대해 경계했다.\n2. 럼프 대통령은 양정상과의 관계가 불편한 때를 포함해 항상 전화로 문제를 풀었고, 미래에는 굉장히 밝아 보였다.\n3. 양정상과 럼프 대통령은 서로 사전에 발언문을 교환하지 않았으나, 실제 회담에서 할 발언문이 중요한 것으로, 각각의 관심사와 입장을 알 수 있는 정보가 포함된다고 추측된다.",
+          "db_saved": true
+        },
+        {
+          "title": "[미중 정상회담] 협상 잘됐다? \"주말 트럼프 SNS 봐야\"‥코스피 8천 찍고 하락 왜?",
+          "video_id": "Tw-IWEOnnwo",
+          "views": 34625,
+          "upload_date": "2026-05-15",
+          "url": "https://www.youtube.com/watch?v=Tw-IWEOnnwo",
+          "subtitle_summary": "1. 미국 대통령 트럼프와 중국 정상인 시진핑이 2박 3일간 중국에서 정상회담을 하고, 오늘도 티타임 오찬을 함께했습니다.\n2. 미중 정상회담의 평가는 조급한 트럼프와 단호한 시진핑으로 나누어지고 있으며, 중국이 더 강화된 위상을 보여주었다는 것으로 인해 미국 언론들은 충격적으로 받아들였습니다.\n3. 이번 정상회담에서 이란의 문제에 대한 확실한 합의는 보이지 않았고, 이에 따라 코스피가 급등하여 7% 이상 폭락하고 있습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0.6952,
+      "min": 1.4921,
+      "nb_score": 0.4659,
+      "avg_views": 11436.67,
+      "total_views": 68620
+    },
+    {
+      "keyword": "코스피 8000 돌파",
+      "is_fixed": false,
+      "views": [
+        2737,
+        3270,
+        13113,
+        7288,
+        4559,
+        2785,
+        566,
+        1153,
+        6701,
+        957
+      ],
+      "video_count": 10,
+      "videos": [
+        {
+          "title": "[속보] 코스피 8,000선 돌파…파죽지세로 새 기록  / 연합뉴스TV (YonhapnewsTV)",
+          "video_id": "HMiIHxbdekM",
+          "views": 2737,
+          "upload_date": "2026-05-15",
+          "url": "https://www.youtube.com/watch?v=HMiIHxbdekM",
+          "subtitle_summary": "1. 코스피(한국 주식 시장) 오늘 처음으로 8,000점 돌파, 최근 파악지세로 새로운 역사를 쓰고 있다는 소식이 전해졌습니다.\n2. 개인 투자자가 코스피에 매수하고 있으며, 외국인은 순도를 유지하고 있습니다.\n3. 상위 기업들을 보면 혼조세를 보이고 있으며, LG 전자 등이 상승세를 보이고 있는 반면에 코스닥은 조금씩 박스권에 갇힌 모습을 보이고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[속보] '불기둥' 코스피 8,000 돌파...'8천 시대' 개막 / YTN",
+          "video_id": "qgEcLvoArVU",
+          "views": 3270,
+          "upload_date": "2026-05-15",
+          "url": "https://www.youtube.com/watch?v=qgEcLvoArVU",
+          "subtitle_summary": "1. 코스피는 9일 지난 6일부터 7,000 이상을 넘어서 8,000 대를 돌파하여 '코스피 8,000 시대'를 개막했습니다.\n2. 곳곳에서는 이 사건을 기념하는 행사가 열리고 있으며, 이 화면은 행사장 현장입니다.\n3. 코스피의 상승은 뉴욕 증시 3대 지수의 상승과 미중 정상회담 납관론, AI 기업 실적 호조로 인해 일어나고 있으며, 자세한 소식은 추후 추제 기자와 연결하여 전할 예정입니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[경제읽기] 코스피 8000 첫 돌파…한국 증시 새 역사 / 연합뉴스TV (YonhapnewsTV)",
+          "video_id": "Z_Uo6lXAu14",
+          "views": 13113,
+          "upload_date": "2026-05-15",
+          "url": "https://www.youtube.com/watch?v=Z_Uo6lXAu14",
+          "subtitle_summary": "1. 코스피는 8,000 기준을 뛰어넘었습니다. 이전 7,000 선을 뚫고 나서 하락 전환을 했지만 의미가 있습니다.\n2. 한국 증시는 최근 7천 돌파부터 8천을 돌파하여 10개월 내에 5분 이상 신기록을 세웠습니다. 이는 전 세계 정시 역사상 가장 빠른 폭발적인 성장입니다.\n3. 최근 인공지능 사이클 슈퍼 사이클에서 반도체를 중심으로 정말 뛰어난 성과를 거두었습니다. 하지만 8,000 돌파하자마자 외국인 매도가 쏟아져 주가가 조금 떨어졌습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "KOSPI Surpasses 8,000 for the First Time During Trading... Dawn of the '8,000-Point Era' (May 15,...",
+          "video_id": "VajsK9qAaME",
+          "views": 7288,
+          "upload_date": "2026-05-15",
+          "url": "https://www.youtube.com/watch?v=VajsK9qAaME",
+          "subtitle_summary": "1. 코스피(KOSPI)는 5월 15일 오전 9시 13분 4상에 8,000 점을 넘어서며, 7천선에서 8천선까지 7거래일 내에 역대 최단 수준의 상승 속도로 증가했습니다.\n2. 이 시점에서는 코스피 지수는 9시 29분에 8,41.97을 기록하고 있습니다.\n3. MBC 930뉴스로부터 보도된 내용입니다.",
+          "db_saved": true
+        },
+        {
+          "title": "동학개미가 일냈다!…코스피 8,000선 사상 첫 돌파｜외국인은 던지고 개미는 사고, 격돌하는 증시…이 시각 한국거래소 LIVE [현장쏙]  / 연합뉴스TV(YonhapnewsTV)",
+          "video_id": "l7pBc_ugDTQ",
+          "views": 4559,
+          "upload_date": "2026-05-15",
+          "url": "https://www.youtube.com/watch?v=l7pBc_ugDTQ",
+          "subtitle_summary": "1. 코스피는 오늘 드디어 장중 8,000점을 돌파했습니다. 개장 초반에 약세로 출발하였지만 개인의 매수세가 몰리면서 7천점을 넘고 8,000점 고지에 올라섰습니다.\n2. 코스피는 전 거래일보다 0.37% 내려왔으나 차익 실험 매물이 나오면서 약세를 보였지만 개인이 외국인 매도 물량을 받아내면서 빠르게 방향을 틀었습니다.\n3. 현재 코스피는 8,000점 부근에서 등락하고 있으며, 수급은 개인과 기간이 9억 원, 1억 원 순매수하여 지수 상승을 이끌고 있습니다. 반면 외국인은 1조원 넘게 팔아치우고 있으며, 코스피와 달리 코스닥 지수는 상승 출발했지만 현재 1% 하락 중입니다.",
+          "db_saved": true
+        },
+        {
+          "title": "코스피 8,000선 돌파했지만…차익 실현에 하락 전환 / 연합뉴스TV (YonhapnewsTV)",
+          "video_id": "PxmXb6Uo77U",
+          "views": 2785,
+          "upload_date": "2026-05-15",
+          "url": "https://www.youtube.com/watch?v=PxmXb6Uo77U",
+          "subtitle_summary": "1. 코스피는 처음으로 8,000선을 돌파했지만 차익 실현 매물의 폭발적인 등장으로 인해 하락 전환되었습니다.\n2. 현재 코스피는 7,700선에서 거래 중이며, 외국인과 기관은 팔고 있으나 개인은 매수하고 있지만 물량을 받아내고 있지 않습니다.\n3. 코스피를 이끄는 반도체 회사들이 하락 중이지만, 로봇과 전력 인프라 관련 주식은 강세입니다. 코스닥 지수도 비슷한 상황을 보이고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "KOSPI Surpasses 8,000… The Era of the Dream '8,000' [Subtitled News] / Channel A",
+          "video_id": "SRx8JEsYsBA",
+          "views": 566,
+          "upload_date": "2026-05-15",
+          "url": "https://www.youtube.com/watch?v=SRx8JEsYsBA",
+          "subtitle_summary": "1. KOSPI (Korean Stock Price Index) surpassed the 8,000 mark, a significant milestone in the Korean stock market.\n2. The news is accompanied by upbeat music, indicating a positive and exciting atmosphere surrounding this event.\n3. No explicit information is provided beyond these two points, but the title suggests that this achievement has been long-awaited or dreamt about (the 'Era of the Dream 8,000').",
+          "db_saved": true
+        },
+        {
+          "title": "코스피 사상 첫 8,000 돌파...8천피 시대 개막  [세상만사] #코스피 #코스닥 #8000돌파",
+          "video_id": "cbopgbc5kVY",
+          "views": 1153,
+          "upload_date": "2026-05-15",
+          "url": "https://www.youtube.com/watch?v=cbopgbc5kVY",
+          "subtitle_summary": "1. 코스피는 오늘 하락 출발했으나 순매수로 인해 8,000을 돌파했습니다. 이로써 7거래일 만에 8,000 돌파 기록을 세웠습니다.\n2. 현재 코스피는 8천선 위에서 오르내리고 있으며, 대장주인 삼성전자와 SK하이닉스도 하락 출발했지만 상승세로 전환했습니다.\n3. 코스닥은 0.5% 오른 197으로 출발해 연틀 상승세를 나타내고 있으며, 외국인과 기관이 순매수를 하고 있습니다. 또한 원달러 환율은 1490원대 후반에서 오르내리고 있으며, 최근들어 상승세를 나타내고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "\"코스피 8,000 돌파 후 기습 매물 폭탄\"… 세력들 차익 실현 시작됐다, 개미들만 '벼락거지' 신세",
+          "video_id": "owTI2Wpa8Z4",
+          "views": 6701,
+          "upload_date": "2026-05-15",
+          "url": "https://www.youtube.com/watch?v=owTI2Wpa8Z4",
+          "subtitle_summary": "1. 코스피 8,000 돌파: 오늘 코스피가 8,000을 돌파했습니다. 하지만 분위기는 아직 안착한 상태입니다.\n2. 코스닥 하락: 코스닥은 1% 하락폭을 보이고 있으며, 바이오, 2차전지 등의 주요 종목에 대한 투자 신호가 많이 나옵니다.\n3. 강소 기업 공격: 여전히 코스피 시장이 강하고, 강소 기업들을 포함한 코스닥 종목들은 펀더멘탈이 튼튼했던 것으로 보아 매우 좋은 시장입니다.",
+          "db_saved": true
+        },
+        {
+          "title": "코스피 8,000선 첫 돌파…개미들이 만들었다 / 연합뉴스TV (YonhapnewsTV)",
+          "video_id": "tt3kdDWCBbA",
+          "views": 957,
+          "upload_date": "2026-05-15",
+          "url": "https://www.youtube.com/watch?v=tt3kdDWCBbA",
+          "subtitle_summary": "1. 코스피는 오늘 8,000선을 처음으로 돌파했습니다. 7,000선을 넘어서 8,400점까지 상승했습니다.\n2. 이 증시 상승은 개인 매수와 외국인 매도 물량의 반대로 일어났으며, 코스피는 7,950점에서 출발했습니다.\n3. 현재 코스피는 8,000선 주변에서 등락하고 있으며, 외국인은 1조원 이상을 팔아치우고 있습니다. 또한 환율은 1490원 후반으로 올라가고 있어서 외국인 수급이 계속 부담될 가능성도 있습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0.5712,
+      "min": 1.4427,
+      "nb_score": 0.3959,
+      "avg_views": 4312.9,
+      "total_views": 43129
+    },
+    {
+      "keyword": "한미 반도체 협력",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "그랜저 신형 출시",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "주담대 금리 상승",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "한미 원자력 협력",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "수원 플레이엑스포",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "국제정원박람회 서울숲",
+      "is_fixed": false,
+      "views": [
+        46
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "2026 Seoul International Garden Fair to Create 167 gardens in Seoul Forest",
+          "video_id": "8xIn9Jn10pQ",
+          "views": 46,
+          "upload_date": "2026-05-15",
+          "url": "https://www.youtube.com/watch?v=8xIn9Jn10pQ",
+          "subtitle_summary": "2026년 Seoul International Garden Fair를 통해 서울 포스트 그린 문화로 자연과 도시가 하나로 되는 정원도시를 목표로 한다. 167개의 다양한 정원이 설치되어 있으며, 중심으로 '해치와 친구들' 지자체정원이 있습니다. 여기에는 농심, 롯데월드, 생명보험 사회공헌재단 등의 기업정원도 포함되어 있습니다. 또한 마포구, 노원구, 중랑구, 성동구, 동대문구, 강서구 등 각 자치구에서 이야기를 담은 정원도 있습니다. 이 정원들을 방문하여 시민들의 휴식공간으로 사용할 수 있습니다. 서울숲은 지난 세월에 왕실 사냥터, 경마장, 수돗물 공급 정수시설이었으나 2000년대 들어 시민공원으로 바뀌었습니다. 현재는 문화예술, 생태숲 등으로 구성된 도시 속 자연공원으로서 시민의 사랑을 받고 있습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "강바람 풋살장",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "안전공업 화재 참사",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "청약 당첨 노하우",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "러닝 피로 영양소",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "김홍도 전시회",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    }
+  ]
+}

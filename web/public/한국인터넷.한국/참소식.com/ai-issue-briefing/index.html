@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ko">
   <head>
     <script src="../domain-check.js"></script>
@@ -31,6 +31,7 @@
       }
 
       body {
+        overflow-x: hidden;
         margin: 0;
         min-height: 100vh;
         padding-top: 154px;
@@ -247,6 +248,30 @@
       .nav-btn span:first-child {
         font-size: 38px;
         line-height: 1;
+      }
+
+      .home-link {
+        min-width: 112px;
+        min-height: 54px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        padding: 10px 14px;
+        border: 2px solid rgba(255, 217, 139, 0.72);
+        border-radius: 10px;
+        color: #fff5d6;
+        background: rgba(255, 255, 255, 0.09);
+        text-decoration: none;
+        font-weight: 950;
+        box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+      }
+
+      .home-link:hover,
+      .home-link:focus-visible {
+        color: #1d2f28;
+        background: #ffd98b;
+        outline: none;
       }
 
       .board {
@@ -1289,7 +1314,7 @@
         <div class="memo">오늘 방 분위기:<br />편하게 들어와서<br />같이 듣고 떠드는 꼬봉방</div>
         <nav class="top-actions" aria-label="주요 메뉴">
           <button class="nav-btn" type="button" title="이야기 저장소"><span>▤</span><span>이야기 저장소</span></button>
-          <button class="nav-btn" type="button" title="메인으로" onclick="location.href='../'"><span>⌂</span><span>메인</span></button>
+          <a class="home-link" href="../" title="참소식 메인 페이지로 이동"><span>⌂</span><span>메인 페이지로</span></a>
         </nav>
       </header>
 
@@ -1604,6 +1629,9 @@
       let voiceMode = false;
       let voiceUser = null;
       let activeVoicePresetKey = "injoon";
+      let djTalkCount = 0;
+      let soundCloudVolume = 100;
+      const recentDjLines = [];
       const conversationHistory = [];
 
       function apiBase() {
@@ -1735,6 +1763,27 @@
           .slice(0, 260);
       }
 
+      function rememberDjLine(line) {
+        const text = compactText(line);
+        if (!text) return;
+        recentDjLines.push(text);
+        while (recentDjLines.length > 6) recentDjLines.shift();
+      }
+
+      function nextDjStyle(reason = "") {
+        djTalkCount += 1;
+        const styles = [
+          "짧은 신청곡 접수 멘트처럼, 반갑고 바로 곡으로 넘긴다.",
+          "심야 라디오처럼 한 문장에 여백을 두고 말한다.",
+          "방금 사용자의 말을 받아서 즉흥 코멘트처럼 말한다.",
+          "곡 제목에서 떠오르는 이미지 하나만 잡아 말한다.",
+          "친한 진행자가 사연을 읽듯 부드럽게 말한다.",
+          "다음 행동을 분명히 알려주는 진행 멘트로 말한다."
+        ];
+        const seed = `${reason}${currentSoundIndex}${djTalkCount}`.length;
+        return styles[(djTalkCount + seed) % styles.length];
+      }
+
       function setVoicePreset(key) {
         activeVoicePresetKey = DJ_VOICE_PRESETS[key] ? key : "injoon";
         localStorage.setItem("chamsosikDjVoicePreset", activeVoicePresetKey);
@@ -1797,20 +1846,29 @@
       }
 
       async function speakDjLine(text, options = {}) {
-        const shouldPauseMusic = options.pauseMusic !== false;
+        const shouldPauseMusic = options.pauseMusic === true;
+        const shouldDuckMusic = options.duckMusic !== false;
         const shouldResumeMusic = options.resumeMusic !== false;
         const wasPlaying = djPlaying;
+        const duckVolume = Math.max(8, Math.min(45, Number(options.duckVolume ?? 24)));
 
         if (shouldPauseMusic && wasPlaying && soundCloudWidget) {
           setDjStatus(`DJ TALK\n음악을 잠깐 멈추고 멘트 중입니다.\n${currentTrackLabel()}`);
           soundCloudWidget.pause();
           await new Promise((resolve) => setTimeout(resolve, 350));
+        } else if (shouldDuckMusic && wasPlaying && soundCloudWidget?.setVolume) {
+          setDjStatus(`DJ TALK\n음악은 살짝 낮추고 멘트 중입니다.\n${currentTrackLabel()}`);
+          soundCloudWidget.setVolume(duckVolume);
+          await new Promise((resolve) => setTimeout(resolve, 120));
         }
 
         await speakText(text, options.voice || {});
 
         if (shouldPauseMusic && shouldResumeMusic && wasPlaying && soundCloudWidget) {
           soundCloudWidget.play();
+          setDjStatus(`ON AIR\n${currentTrackLabel()}`);
+        } else if (shouldDuckMusic && wasPlaying && soundCloudWidget?.setVolume) {
+          soundCloudWidget.setVolume(soundCloudVolume);
           setDjStatus(`ON AIR\n${currentTrackLabel()}`);
         }
       }
@@ -1907,6 +1965,11 @@
       async function applyRadioState(state) {
         if (!state || radioApplyingRemote || !soundCloudWidget || !soundCloudReady) return;
         if (Number(state.version || 0) <= lastRadioStateVersion) return;
+        const stateAgeMs = Date.now() - Number(state.updatedAt || 0);
+        if (state.status === "paused" && djPlaying && (state.source === "server-default" || !state.updatedAt || stateAgeMs > 30000)) {
+          lastRadioStateVersion = Number(state.version || lastRadioStateVersion);
+          return;
+        }
         radioApplyingRemote = true;
         try {
           lastRadioStateVersion = Number(state.version || lastRadioStateVersion);
@@ -1998,6 +2061,60 @@
         });
       }
 
+      function normalizeSearchText(value) {
+        return String(value || "")
+          .toLowerCase()
+          .replace(/[^\p{L}\p{N}\s]/gu, " ")
+          .replace(/\s+/g, " ")
+          .trim();
+      }
+
+      function extractSongRequest(text) {
+        const value = compactText(text);
+        const patterns = [
+          /신청곡\s*(?:은|으로|:)?\s*(.+?)(?:\s*(?:틀어줘|재생해줘|들려줘|부탁해|해줘))?$/i,
+          /(.+?)\s*(?:틀어줘|재생해줘|들려줘|골라줘|부탁해)$/i
+        ];
+        for (const pattern of patterns) {
+          const match = value.match(pattern);
+          if (!match) continue;
+          const song = compactText(match[1]).replace(/^(다음|노래|곡|음악)\s+/, "");
+          if (song && !/^(다음|다음 곡|다른 곡|아무거나|랜덤|랜덤으로|노래|음악|다시)$/.test(song)) return song;
+        }
+        return "";
+      }
+
+      async function findRequestedTrackIndex(query) {
+        const sounds = await getSoundCloudSounds();
+        const wanted = normalizeSearchText(query);
+        if (!sounds.length || !wanted) return -1;
+
+        let best = { index: -1, score: 0 };
+        sounds.forEach((sound, index) => {
+          const title = normalizeSearchText(sound.title);
+          const artist = normalizeSearchText(sound.user?.username);
+          const label = `${title} ${artist}`.trim();
+          let score = 0;
+          if (label === wanted || title === wanted) score = 100;
+          else if (label.includes(wanted) || wanted.includes(title)) score = 80;
+          else {
+            const words = wanted.split(" ").filter((word) => word.length >= 2);
+            const hits = words.filter((word) => label.includes(word)).length;
+            score = hits ? 40 + hits * 12 : 0;
+          }
+          if (score > best.score) best = { index, score };
+        });
+
+        return best.score >= 52 ? best.index : -1;
+      }
+
+      function setSoundCloudVolume(nextVolume, source = "volume") {
+        soundCloudVolume = Math.max(0, Math.min(100, Math.round(Number(nextVolume || 0))));
+        soundCloudWidget?.setVolume?.(soundCloudVolume);
+        setDjStatus(`볼륨 ${soundCloudVolume}%\n${currentTrackLabel()}`);
+        publishRadioState(source);
+      }
+
       async function forceSoundCloudPlay(attempts = 6) {
         if (!soundCloudWidget || soundCloudLoading) return false;
         let played = false;
@@ -2042,6 +2159,9 @@
         soundCloudWidget.bind(window.SC.Widget.Events.READY, () => {
           soundCloudLoading = false;
           soundCloudReady = true;
+          soundCloudWidget.getVolume?.((volume) => {
+            soundCloudVolume = Math.max(0, Math.min(100, Number(volume || soundCloudVolume)));
+          });
           pullRadioState();
           getSoundCloudSounds().then(() => refreshCurrentSound()).then(() => {
             const label = currentTrackLabel();
@@ -2239,12 +2359,118 @@
           await waitForSoundCloudReady();
         }
 
-        soundCloudWidget?.pause?.();
         await getSoundCloudSounds();
         const index = await selectDjTrackIndex(reason);
         if (index !== null) await skipSoundCloud(index);
         await askDjForLine(`${reason}: ${currentTrackLabel()}`);
         await forceSoundCloudPlay();
+      }
+
+      async function playRequestedTrack(query, reason = "신청곡") {
+        if (!soundCloudWidget || !soundCloudReady) {
+          await loadSoundCloudStation(true);
+          await waitForSoundCloudReady();
+        }
+
+        const index = await findRequestedTrackIndex(query);
+        if (index >= 0) {
+          await skipSoundCloud(index);
+          await askDjForLine(`${reason} 접수: ${query} / ${currentTrackLabel()}`);
+          await forceSoundCloudPlay();
+          publishRadioState("request");
+          return true;
+        }
+
+        const line = `${query}는 지금 큐에서 정확히 못 찾았어요. 대신 분위기가 가까운 곡으로 골라볼게요.`;
+        addMessage("ai", `DJ: ${line}`);
+        await speakDjLine(line);
+        await playAiSelectedTrack(`${reason} 대체 선곡: ${query}`);
+        return true;
+      }
+
+      async function handleRadioCommandFromText(text, source = "user") {
+        const transcript = compactText(text);
+        if (!transcript) return false;
+
+        const requestedSong = extractSongRequest(transcript);
+        const hasRadioCommand =
+          Boolean(requestedSong) ||
+          /(자동|auto)\s*(dj)?\s*(켜|시작|on|꺼|중지|off)/i.test(transcript) ||
+          /이전|앞\s*곡|previous|prev|다음|넘겨|다른\s*곡|next|바꿔|멈춰|정지|pause|스톱|stop|다시\s*(틀어|재생)|틀어|재생|play|소리|볼륨|volume/i.test(transcript);
+
+        if (!hasRadioCommand) return false;
+
+        if (!soundCloudWidget || !soundCloudReady) {
+          if (!soundCloudUrlInput.value) soundCloudUrlInput.value = DEFAULT_SOUNDCLOUD_URL;
+          await loadSoundCloudStation(true);
+          await waitForSoundCloudReady();
+        }
+
+        if (requestedSong) {
+          await playRequestedTrack(requestedSong, source === "voice" ? "음성 신청곡" : "채팅 신청곡");
+          return true;
+        }
+
+        if (/(자동|auto)\s*(dj)?\s*(켜|시작|on)/i.test(transcript)) {
+          autoDjEnabled = true;
+          updateDjUi();
+          await askDjForLine("사용자 요청으로 AUTO DJ ON");
+          await forceSoundCloudPlay();
+          return true;
+        }
+
+        if (/(자동|auto)\s*(dj)?\s*(꺼|중지|off)/i.test(transcript)) {
+          autoDjEnabled = false;
+          updateDjUi();
+          const line = "AUTO DJ는 잠깐 내려둘게요. 지금 곡은 그대로 이어갑니다.";
+          addMessage("ai", `DJ: ${line}`);
+          await speakDjLine(line);
+          return true;
+        }
+
+        if (/이전|앞\s*곡|previous|prev/i.test(transcript)) {
+          await getSoundCloudSounds();
+          await skipSoundCloud((currentSoundIndex - 1 + Math.max(playlistSounds.length, 1)) % Math.max(playlistSounds.length, 1));
+          await askDjForLine("사용자 요청으로 이전 곡");
+          await forceSoundCloudPlay();
+          return true;
+        }
+
+        if (/다음|넘겨|다른\s*곡|next|바꿔/i.test(transcript)) {
+          await playNextDjTrack(true);
+          return true;
+        }
+
+        if (/멈춰|정지|pause|스톱|stop/i.test(transcript)) {
+          soundCloudWidget?.pause?.();
+          const line = "좋아요, 라디오는 잠깐 멈춰둘게요.";
+          addMessage("ai", `DJ: ${line}`);
+          await speakDjLine(line, { duckMusic: false });
+          publishRadioState("command-pause");
+          return true;
+        }
+
+        if (/다시\s*(틀어|재생)|틀어|재생|play/i.test(transcript)) {
+          await forceSoundCloudPlay();
+          const line = `다시 이어갑니다. 지금은 ${currentTrackLabel()}입니다.`;
+          addMessage("ai", `DJ: ${line}`);
+          await speakDjLine(line);
+          publishRadioState("command-play");
+          return true;
+        }
+
+        if (/소리|볼륨|volume/i.test(transcript)) {
+          if (/키워|올려|크게|up/i.test(transcript)) {
+            setSoundCloudVolume(soundCloudVolume + 15, "volume-up");
+            return true;
+          }
+          if (/줄여|낮춰|작게|down/i.test(transcript)) {
+            setSoundCloudVolume(soundCloudVolume - 15, "volume-down");
+            return true;
+          }
+        }
+
+        return false;
       }
 
       async function askDjForLine(reason) {
@@ -2255,11 +2481,14 @@
           "너는 SoundCloud 라디오 DJ다. 한국어로 짧고 자연스럽게 말한다.",
           "클럽 DJ가 아니라 웹 라디오 진행자처럼 곡을 소개한다.",
           "저작권이나 플랫폼 우회 이야기는 하지 않는다.",
+          "이전 멘트와 같은 문장 구조, 같은 첫마디, 같은 감탄사를 반복하지 않는다.",
+          `이번 진행 스타일: ${nextDjStyle(reason)}`,
           `상황: ${reason}`,
           `현재 곡: ${track}`,
           `방문자 이름: ${voiceUser?.name || "이름 미확인 방문자"}`,
           `방문자 ID: ${voiceUser?.id || "unknown"}`,
-          `방문자 상태: ${stateTagEl.textContent || "설계 방문자"}`
+          `방문자 상태: ${stateTagEl.textContent || "설계 방문자"}`,
+          `[최근 DJ 멘트]\n${recentDjLines.join("\n") || "없음"}`
         ].join("\n");
 
         try {
@@ -2278,14 +2507,16 @@
           if (!response.ok) throw new Error(`DJ ${response.status}`);
           const data = await response.json();
           const line = firstParagraph(data.content);
+          rememberDjLine(line);
           addMessage("ai", `DJ: ${line}`);
-          await speakDjLine(line);
+          await speakDjLine(line, { pauseMusic: false, duckMusic: true });
           await saveNarrativeMemory(`SoundCloud DJ ${reason}: ${voiceUser?.name || "방문자"} / ${track}`, line);
           return line;
         } catch (error) {
           const line = `지금 흐름은 ${track}입니다. 이 분위기 그대로 다음 장면으로 이어갈게요.`;
+          rememberDjLine(line);
           addMessage("ai", `DJ: ${line}`);
-          await speakDjLine(line);
+          await speakDjLine(line, { pauseMusic: false, duckMusic: true });
           return line;
         }
       }
@@ -2320,7 +2551,8 @@
         unlockSoundCloudPlayback();
         await playAiSelectedTrack("라디오 오프닝 첫 곡 선곡");
         await speakDjLine(`${voiceUser?.name || "방문자"}님, 말로 분위기나 이름을 알려주면 제가 곡 사이를 DJ처럼 이어갈게요.`, {
-          pauseMusic: true,
+          pauseMusic: false,
+          duckMusic: true,
           resumeMusic: true
         });
 
@@ -2407,7 +2639,13 @@
               messages: [
                 {
                   role: "system",
-                  content: "너는 SoundCloud 라디오 DJ이자 N/B 기억을 관리하는 AI다. 사용자의 말을 듣고 채팅처럼 길게 쓰지 말고, 라디오 진행자처럼 한국어 음성 멘트 1~3문장으로 반응한다. 사용자의 이름, 취향, 현재 곡, 이전 대화 기억을 자연스럽게 반영한다."
+                  content: [
+                    "너는 SoundCloud 라디오 DJ이자 N/B 기억을 관리하는 AI다.",
+                    "사용자의 말을 듣고 채팅처럼 길게 쓰지 말고, 라디오 진행자처럼 한국어 음성 멘트 1~3문장으로 반응한다.",
+                    "사용자의 이름, 취향, 현재 곡, 이전 대화 기억을 자연스럽게 반영한다.",
+                    "이전 멘트와 같은 첫마디나 같은 문장 구조를 반복하지 않는다.",
+                    `이번 진행 스타일: ${nextDjStyle(transcript)}`
+                  ].join("\n")
                 },
                 {
                   role: "user",
@@ -2419,6 +2657,7 @@
                     `현재 SoundCloud 곡: ${track}`,
                     `메인 페이지 기억: ${mainPageContext || "없음"}`,
                     `[최근 대화]\n${conversationHistory.map((item) => `${item.role}: ${item.text}`).join("\n") || "없음"}`,
+                    `[최근 DJ 멘트]\n${recentDjLines.join("\n") || "없음"}`,
                     `사용자 음성 발화: ${transcript}`
                   ].join("\n")
                 }
@@ -2430,26 +2669,22 @@
           if (!response.ok) throw new Error(`voice ${response.status}`);
           const data = await response.json();
           const line = firstParagraph(data.content);
+          rememberDjLine(line);
           addMessage("ai", `DJ: ${line}`);
           setVoiceStatus(`AI DJ 응답: ${line}`);
-          await speakDjLine(line);
+          await speakDjLine(line, { pauseMusic: false, duckMusic: true });
           await saveNarrativeMemory(
             `음성 사용자 ${voiceUser?.name || "방문자"}(${voiceUser?.id || "unknown"}) 발화: ${transcript}\n현재 곡: ${track}`,
             line
           );
 
-          if (/다음|넘겨|next|바꿔|틀어줘|재생/i.test(transcript)) {
-            await playNextDjTrack(true);
-          } else if (/멈춰|정지|pause/i.test(transcript)) {
-            soundCloudWidget?.pause?.();
-          } else if (/틀어|재생|play/i.test(transcript)) {
-            soundCloudWidget?.play?.();
-          }
+          await handleRadioCommandFromText(transcript, "voice");
         } catch (error) {
           const line = `잠깐 연결이 흔들렸어요. 그래도 ${voiceUser?.name || "방문자"}님의 흐름은 기억해둘게요.`;
+          rememberDjLine(line);
           addMessage("ai", `DJ: ${line}`);
           setVoiceStatus(`음성 응답 실패: ${error.message}`);
-          await speakDjLine(line);
+          await speakDjLine(line, { pauseMusic: false, duckMusic: true });
         } finally {
           aiBusy = false;
           if (voiceMode) {
@@ -2599,6 +2834,12 @@
         sendButton.disabled = true;
 
         try {
+          const handledRadioCommand = await handleRadioCommandFromText(prompt, "chat");
+          if (handledRadioCommand) {
+            await saveNarrativeMemory(`채팅 라디오 조작 요청: ${prompt}`, `현재 곡: ${currentTrackLabel()}`);
+            return;
+          }
+
           if (!mainPageContext) await readMainPageContext();
 
           const response = await fetch(`${base}/api/chat`, {

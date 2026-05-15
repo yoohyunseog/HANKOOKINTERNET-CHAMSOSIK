@@ -2,102 +2,104 @@
   "title": "이클립스 센츄어리 D.P 브리핑",
   "model": "deepseek-v3.1:671b-cloud",
   "source_feed": "https://xn--9l4b4xi9r.com/feed.xml",
-  "updated_at": "2026-05-14T16:51:44.191316+00:00",
-  "feed_last_build_date": "Thu, 14 May 2026 16:49:50 GMT",
+  "updated_at": "2026-05-15T19:18:41.870117+00:00",
+  "feed_last_build_date": "Fri, 15 May 2026 19:17:25 GMT",
   "item_count": 12,
-  "headline": "AI·반도체 호조와 미중 정상회담 긍정적, 삼성 노사갈등은 리스크",
-  "summary": "AI와 반도체 업종 호황 및 미중 정상회담 진행으로 긍정적 신호가 나타나고 있습니다. 그러나 삼성전자 노사갈등과 파업 위기가 심화되어 국내 증시에 부정적 영향을 줄 수 있습니다. 골드만삭스의 경상수지 호전 전망은 수출 주도 산업에 낙관적 전망을 제시합니다.",
+  "headline": "원달러 1500원 돌파, AI 반도체 수요 증가 기대와 삼성전자 파업 리스크 공존",
+  "summary": "원달러 환율이 1500원을 돌파하며 수출 호조 기대감이 형성되고 있습니다. AI 반도체 수요 증가와 데이터 센터 건설 확대로 관련주 급등이 이어지고 있습니다. 반면 삼성전자 파업 가능성과 정부의 긴급조치 우려가 반도체 산업에 부정적 영향을 줄 수 있습니다. 미군 폴란드 배치 중단 등 지정학적 이슈는 여전히 불확실성을 유지하고 있습니다.",
   "signals": [
-    "AI·반도체 수익률 반전",
-    "미중 정상회담 진행",
-    "골드만삭스 경상수지 호전 전망"
+    "원달러 환율 1500원 돌파",
+    "AI 반도체 수요 증가 예상",
+    "데이터 센터 구리 수요 폭증",
+    "삼성전자 파업 교착상태"
   ],
   "risks": [
-    "삼성전자 총파업 위기",
-    "노조 파업 정부 중재 거절",
-    "삼성전자 영업이익 감소 위험"
+    "삼성전자 파업 장기화 우려",
+    "정치적 불확실성",
+    "지정학적 긴장 지속",
+    "노사 갈등 확대 가능성"
   ],
   "market_impact": [
-    "코스피 혼조세",
-    "코스닥 하방 압력",
-    "비트코인 변동성 완화",
-    "한국 증시 신흥 기술주 혼조"
+    "코스피: 수출 기업 환율 효과 긍정적",
+    "코스닥: AI 관련주 상승 영향",
+    "비트코인: 달러 강세로 단기 부담",
+    "한국 증시 심리: 호재와 악재 혼재된 불안정한 상태"
   ],
-  "outlook": "AI·반도체 호조와 미중 관계 개선 효과가 있으나, 삼성전자 파업 위기가 실물 경제와 증시 심리에 부담으로 작용할 전망입니다.",
-  "quality_note": "피드 내용이 반복적이고 원유·중동 관련 주요 이슈가 부재하여 분석의 깊이가 다소 제한적입니다.",
+  "outlook": "환율 상승으로 수출 호조 기대되지만, 삼성전자 파업과 지정학적 리스크로 시장 변동성 확대될 전망",
+  "quality_note": "피드 내용이 반복적이고 구체적 데이터가 부족해 분석에 한계가 있음",
   "weighted_signal": {
     "score": 58,
     "upper_bound": 42,
-    "lower_bound": 38,
+    "lower_bound": 36,
     "grade": "주의",
     "upper_factors": [
-      "AI·반도체 수출 호전 +15",
-      "미중 관계 개선 기대 +12",
-      "경상수지 흑자 전망 +10",
-      "테마주 모의투자 활발 +5"
+      "원달러 환율 상승 수출 호조 기대 +15",
+      "AI 반도체 수요 증가 전망 +12",
+      "데이터 센터 건설 확대 +10",
+      "관광산업 활성화 기대 +5"
     ],
     "lower_factors": [
-      "삼성전자 파업 위기 -18",
-      "노사갈등 확산 우려 -12",
-      "기업 이익 감소 리스크 -8"
+      "삼성전자 파업 장기화 우려 -18",
+      "지정학적 불확실성 지속 -10",
+      "노사 갈등 확대 가능성 -8"
     ]
   },
   "items": [
     {
-      "title": "[4월 모의 투자 결과, 테크덕쿠형이 AI와 반도체 종목들의 활약에 힘입어 1위를 차지했다. 관련 파장이 확산되고 있습니다.]",
-      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [4월 모의 투자 결과, 테크덕쿠형이 AI와 반도체 종목들의 활약에 힘입어 1위를 차지했다. 관련 파장이 확산되고 있습니다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
+      "title": "[미국 정부는 폴란드에 4,000 소л데리어를 배치할 계획을 중단했습니다. 관련 파장이 확산되고 있습니다.]",
+      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [미국 정부는 폴란드에 4,000 소л데리어를 배치할 계획을 중단했습니다. 관련 파장이 확산되고 있습니다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
       "category": "일반",
-      "pubDate": "Thu, 14 May 2026 16:47:21 GMT",
-      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B4%EC%9B%94%20%EB%AA%A8%EC%9D%98%20%ED%88%AC%EC%9E%90%20%EA%B2%B0%EA%B3%BC%2C%20%ED%85%8C%ED%81%AC%EB%8D%95%EC%BF%A0%ED%98%95%EC%9D%B4%20AI%EC%99%80%20%EB%B0%98%EB%8F%84%EC%B2%B4%20%EC%A2%85%EB%AA%A9%EB%93%A4%EC%9D%98%20%ED%99%9C%EC%95%BD%EC%97%90%20%ED%9E%98%EC%9E%85%EC%96%B4%201%EC%9C%84%EB%A5%BC%20%EC%B0%A8%EC%A7%80%ED%96%88%EB%8B%A4.%20%EA%B4%80%EB%A0%A8%20%ED%8C%8C%EC%9E%A5%EC%9D%B4%20%ED%99%95%EC%82%B0%EB%90%98%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%5D&selected_max=65461.4713995612&selected_min=0.0010658685"
+      "pubDate": "Fri, 15 May 2026 19:14:12 GMT",
+      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B%EB%AF%B8%EA%B5%AD%20%EC%A0%95%EB%B6%80%EB%8A%94%20%ED%8F%B4%EB%9E%80%EB%93%9C%EC%97%90%204%2C000%20%EC%86%8C%D0%BB%EB%8D%B0%EB%A6%AC%EC%96%B4%EB%A5%BC%20%EB%B0%B0%EC%B9%98%ED%95%A0%20%EA%B3%84%ED%9A%8D%EC%9D%84%20%EC%A4%91%EB%8B%A8%ED%96%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%20%EA%B4%80%EB%A0%A8%20%ED%8C%8C%EC%9E%A5%EC%9D%B4%20%ED%99%95%EC%82%B0%EB%90%98%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%5D&selected_max=76183.3798771971&selected_min=0.0012530632"
     },
     {
-      "title": "[노조와의 파업 정부 중재금액에 대한 거절 소동 관련 파장이 확산되고 있습니다.]",
-      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [노조와의 파업 정부 중재금액에 대한 거절 소동 관련 파장이 확산되고 있습니다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
+      "title": "[아이로보틱스가 5만 원에서 상한가까지 급등, 하나마이크론의 가격 전망 변화 관련 파장이 확산되고 있습니다.]",
+      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [아이로보틱스가 5만 원에서 상한가까지 급등, 하나마이크론의 가격 전망 변화 관련 파장이 확산되고 있습니다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
       "category": "일반",
-      "pubDate": "Thu, 14 May 2026 16:42:06 GMT",
-      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B%EB%85%B8%EC%A1%B0%EC%99%80%EC%9D%98%20%ED%8C%8C%EC%97%85%20%EC%A0%95%EB%B6%80%20%EC%A4%91%EC%9E%AC%EA%B8%88%EC%95%A1%EC%97%90%20%EB%8C%80%ED%95%9C%20%EA%B1%B0%EC%A0%88%20%EC%86%8C%EB%8F%99%20%EA%B4%80%EB%A0%A8%20%ED%8C%8C%EC%9E%A5%EC%9D%B4%20%ED%99%95%EC%82%B0%EB%90%98%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%5D&selected_max=102060.2267337727&selected_min=0.0016832431"
+      "pubDate": "Fri, 15 May 2026 19:09:35 GMT",
+      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B%EC%95%84%EC%9D%B4%EB%A1%9C%EB%B3%B4%ED%8B%B1%EC%8A%A4%EA%B0%80%205%EB%A7%8C%20%EC%9B%90%EC%97%90%EC%84%9C%20%EC%83%81%ED%95%9C%EA%B0%80%EA%B9%8C%EC%A7%80%20%EA%B8%89%EB%93%B1%2C%20%ED%95%98%EB%82%98%EB%A7%88%EC%9D%B4%ED%81%AC%EB%A1%A0%EC%9D%98%20%EA%B0%80%EA%B2%A9%20%EC%A0%84%EB%A7%9D%20%EB%B3%80%ED%99%94%20%EA%B4%80%EB%A0%A8%20%ED%8C%8C%EC%9E%A5%EC%9D%B4%20%ED%99%95%EC%82%B0%EB%90%98%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%5D&selected_max=74835.5259644322&selected_min=0.0012334096"
     },
     {
-      "title": "[정부가 삼성전자 노조-관리 갈등 해결에 대한 즉시 조치를 요구하는 의견이 있음 관련 파장이 확산되고 있습니다.]",
-      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [정부가 삼성전자 노조-관리 갈등 해결에 대한 즉시 조치를 요구하는 의견이 있음 관련 파장이 확산되고 있습니다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
+      "title": "[AI 반도체 수요 증가 예상, SFA, 이로보틱스 등 매수 추천 관련 파장이 확산되고 있습니다.]",
+      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [AI 반도체 수요 증가 예상, SFA, 이로보틱스 등 매수 추천 관련 파장이 확산되고 있습니다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
       "category": "일반",
-      "pubDate": "Thu, 14 May 2026 16:41:01 GMT",
-      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B%EC%A0%95%EB%B6%80%EA%B0%80%20%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90%20%EB%85%B8%EC%A1%B0-%EA%B4%80%EB%A6%AC%20%EA%B0%88%EB%93%B1%20%ED%95%B4%EA%B2%B0%EC%97%90%20%EB%8C%80%ED%95%9C%20%EC%A6%89%EC%8B%9C%20%EC%A1%B0%EC%B9%98%EB%A5%BC%20%EC%9A%94%EA%B5%AC%ED%95%98%EB%8A%94%20%EC%9D%98%EA%B2%AC%EC%9D%B4%20%EC%9E%88%EC%9D%8C%20%EA%B4%80%EB%A0%A8%20%ED%8C%8C%EC%9E%A5%EC%9D%B4%20%ED%99%95%EC%82%B0%EB%90%98%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%5D&selected_max=72420.7301685814&selected_min=0.0011935401"
+      "pubDate": "Fri, 15 May 2026 19:08:35 GMT",
+      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5BAI%20%EB%B0%98%EB%8F%84%EC%B2%B4%20%EC%88%98%EC%9A%94%20%EC%A6%9D%EA%B0%80%20%EC%98%88%EC%83%81%2C%20SFA%2C%20%EC%9D%B4%EB%A1%9C%EB%B3%B4%ED%8B%B1%EC%8A%A4%20%EB%93%B1%20%EB%A7%A4%EC%88%98%20%EC%B6%94%EC%B2%9C%20%EA%B4%80%EB%A0%A8%20%ED%8C%8C%EC%9E%A5%EC%9D%B4%20%ED%99%95%EC%82%B0%EB%90%98%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%5D&selected_max=83153.5299663554&selected_min=0.0013707813"
     },
     {
-      "title": "[AI 기업의 수익률이 반전했다 관련 파장이 확산되고 있습니다.]",
-      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [AI 기업의 수익률이 반전했다 관련 파장이 확산되고 있습니다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
+      "title": "[인공지능 데이터 센터 구리 요구량이 폭증하고 있으며, 미국 마이크로소프트, 아마존, 메타, 초대형 데이터 센터들이 하반기부터 본격적인 착공을 시작할 예정입니다.]",
+      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [인공지능 데이터 센터 구리 요구량이 폭증하고 있으며, 미국 마이크로소프트, 아마존, 메타, 초대형 데이터 센터들이 하반기부터 본격적인 착공을 시작할 예정입니다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
       "category": "일반",
-      "pubDate": "Thu, 14 May 2026 16:38:48 GMT",
-      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5BAI%20%EA%B8%B0%EC%97%85%EC%9D%98%20%EC%88%98%EC%9D%B5%EB%A5%A0%EC%9D%B4%20%EB%B0%98%EC%A0%84%ED%96%88%EB%8B%A4%20%EA%B4%80%EB%A0%A8%20%ED%8C%8C%EC%9E%A5%EC%9D%B4%20%ED%99%95%EC%82%B0%EB%90%98%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%5D&selected_max=128318.4026511608&selected_min=0.0021177174"
+      "pubDate": "Fri, 15 May 2026 18:57:58 GMT",
+      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B%EC%9D%B8%EA%B3%B5%EC%A7%80%EB%8A%A5%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%84%BC%ED%84%B0%20%EA%B5%AC%EB%A6%AC%20%EC%9A%94%EA%B5%AC%EB%9F%89%EC%9D%B4%20%ED%8F%AD%EC%A6%9D%ED%95%98%EA%B3%A0%20%EC%9E%88%EC%9C%BC%EB%A9%B0%2C%20%EB%AF%B8%EA%B5%AD%20%EB%A7%88%EC%9D%B4%ED%81%AC%EB%A1%9C%EC%86%8C%ED%94%84%ED%8A%B8%2C%20%EC%95%84%EB%A7%88%EC%A1%B4%2C%20%EB%A9%94%ED%83%80%2C%20%EC%B4%88%EB%8C%80%ED%98%95%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%84%BC%ED%84%B0%EB%93%A4%EC%9D%B4%20%ED%95%98%EB%B0%98%EA%B8%B0%EB%B6%80%ED%84%B0%20%EB%B3%B8%EA%B2%A9%EC%A0%81%EC%9D%B8%20%EC%B0%A9%EA%B3%B5%EC%9D%84%20%EC%8B%9C%EC%9E%91%ED%95%A0%20%EC%98%88%EC%A0%95%EC%9E%85%EB%8B%88%EB%8B%A4.%5D&selected_max=49825.7967716381&selected_min=0.0008226676"
     },
     {
-      "title": "[Goldman Sachs가 AI 주도 반도체 수출으로 한국과 대만의 경상수지를 거의 최고가시며 규모가 최대가 될 것으로 예측했다. 관련 파장이 확산되고 있습니다.]",
-      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [Goldman Sachs가 AI 주도 반도체 수출으로 한국과 대만의 경상수지를 거의 최고가시며 규모가 최대가 될 것으로 예측했다. 관련 파장이 확산되고 있습니다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
+      "title": "[국내 정부는 Samsung Electronics의 21일 파업을 방지하기 위해 긴급제압권을 사용할 가능성이 있습니다. 관련 파장이 확산되고 있습니다.]",
+      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [국내 정부는 Samsung Electronics의 21일 파업을 방지하기 위해 긴급제압권을 사용할 가능성이 있습니다. 관련 파장이 확산되고 있습니다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
       "category": "일반",
-      "pubDate": "Thu, 14 May 2026 16:37:39 GMT",
-      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5BGoldman%20Sachs%EA%B0%80%20AI%20%EC%A3%BC%EB%8F%84%20%EB%B0%98%EB%8F%84%EC%B2%B4%20%EC%88%98%EC%B6%9C%EC%9C%BC%EB%A1%9C%20%ED%95%9C%EA%B5%AD%EA%B3%BC%20%EB%8C%80%EB%A7%8C%EC%9D%98%20%EA%B2%BD%EC%83%81%EC%88%98%EC%A7%80%EB%A5%BC%20%EA%B1%B0%EC%9D%98%20%EC%B5%9C%EA%B3%A0%EA%B0%80%EC%8B%9C%EB%A9%B0%20%EA%B7%9C%EB%AA%A8%EA%B0%80%20%EC%B5%9C%EB%8C%80%EA%B0%80%20%EB%90%A0%20%EA%B2%83%EC%9C%BC%EB%A1%9C%20%EC%98%88%EC%B8%A1%ED%96%88%EB%8B%A4.%20%EA%B4%80%EB%A0%A8%20%ED%8C%8C%EC%9E%A5%EC%9D%B4%20%ED%99%95%EC%82%B0%EB%90%98%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%5D&selected_max=49336.7061182158&selected_min=0.0008126522"
+      "pubDate": "Fri, 15 May 2026 18:56:45 GMT",
+      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B%EA%B5%AD%EB%82%B4%20%EC%A0%95%EB%B6%80%EB%8A%94%20Samsung%20Electronics%EC%9D%98%2021%EC%9D%BC%20%ED%8C%8C%EC%97%85%EC%9D%84%20%EB%B0%A9%EC%A7%80%ED%95%98%EA%B8%B0%20%EC%9C%84%ED%95%B4%20%EA%B8%B4%EA%B8%89%EC%A0%9C%EC%95%95%EA%B6%8C%EC%9D%84%20%EC%82%AC%EC%9A%A9%ED%95%A0%20%EA%B0%80%EB%8A%A5%EC%84%B1%EC%9D%B4%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%20%EA%B4%80%EB%A0%A8%20%ED%8C%8C%EC%9E%A5%EC%9D%B4%20%ED%99%95%EC%82%B0%EB%90%98%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%5D&selected_max=53449.0460933913&selected_min=0.0008804745"
     },
     {
-      "title": "[미국 대통령 트럼프와 중국 주석관 시진핑이 역사적인 정상회담을 맺음 관련 파장이 확산되고 있습니다.]",
-      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [미국 대통령 트럼프와 중국 주석관 시진핑이 역사적인 정상회담을 맺음 관련 파장이 확산되고 있습니다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
+      "title": "[삼성전자 파업 중재: 정부, 관계자 곤란에 직면하며, 교착상태 관련 파장이 확산되고 있습니다.]",
+      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [삼성전자 파업 중재: 정부, 관계자 곤란에 직면하며, 교착상태 관련 파장이 확산되고 있습니다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
       "category": "일반",
-      "pubDate": "Thu, 14 May 2026 16:28:58 GMT",
-      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B%EB%AF%B8%EA%B5%AD%20%EB%8C%80%ED%86%B5%EB%A0%B9%20%ED%8A%B8%EB%9F%BC%ED%94%84%EC%99%80%20%EC%A4%91%EA%B5%AD%20%EC%A3%BC%EC%84%9D%EA%B4%80%20%EC%8B%9C%EC%A7%84%ED%95%91%EC%9D%B4%20%EC%97%AD%EC%82%AC%EC%A0%81%EC%9D%B8%20%EC%A0%95%EC%83%81%ED%9A%8C%EB%8B%B4%EC%9D%84%20%EB%A7%BA%EC%9D%8C%20%EA%B4%80%EB%A0%A8%20%ED%8C%8C%EC%9E%A5%EC%9D%B4%20%ED%99%95%EC%82%B0%EB%90%98%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%5D&selected_max=80264.5398921325&selected_min=0.0013203699"
+      "pubDate": "Fri, 15 May 2026 18:55:45 GMT",
+      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90%20%ED%8C%8C%EC%97%85%20%EC%A4%91%EC%9E%AC%3A%20%EC%A0%95%EB%B6%80%2C%20%EA%B4%80%EA%B3%84%EC%9E%90%20%EA%B3%A4%EB%9E%80%EC%97%90%20%EC%A7%81%EB%A9%B4%ED%95%98%EB%A9%B0%2C%20%EA%B5%90%EC%B0%A9%EC%83%81%ED%83%9C%20%EA%B4%80%EB%A0%A8%20%ED%8C%8C%EC%9E%A5%EC%9D%B4%20%ED%99%95%EC%82%B0%EB%90%98%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%5D&selected_max=84723.0295228773&selected_min=0.001396708"
     },
     {
-      "title": "[삼성전자의 연간 영업 이익이 최대 43조원까지 줄어들 위험 관련 파장이 확산되고 있습니다.]",
-      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [삼성전자의 연간 영업 이익이 최대 43조원까지 줄어들 위험 관련 파장이 확산되고 있습니다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
+      "title": "[원달러 환율 1500원 돌파는 좋은 것으로 보이며, 관광객이 많아질 수 있다. 관련 파장이 확산되고 있습니다.]",
+      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [원달러 환율 1500원 돌파는 좋은 것으로 보이며, 관광객이 많아질 수 있다. 관련 파장이 확산되고 있습니다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
       "category": "일반",
-      "pubDate": "Thu, 14 May 2026 16:19:08 GMT",
-      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90%EC%9D%98%20%EC%97%B0%EA%B0%84%20%EC%98%81%EC%97%85%20%EC%9D%B4%EC%9D%B5%EC%9D%B4%20%EC%B5%9C%EB%8C%80%2043%EC%A1%B0%EC%9B%90%EA%B9%8C%EC%A7%80%20%EC%A4%84%EC%96%B4%EB%93%A4%20%EC%9C%84%ED%97%98%20%EA%B4%80%EB%A0%A8%20%ED%8C%8C%EC%9E%A5%EC%9D%B4%20%ED%99%95%EC%82%B0%EB%90%98%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%5D&selected_max=88046.743394656&selected_min=0.0014516197"
+      "pubDate": "Fri, 15 May 2026 18:53:38 GMT",
+      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B%EC%9B%90%EB%8B%AC%EB%9F%AC%20%ED%99%98%EC%9C%A8%201500%EC%9B%90%20%EB%8F%8C%ED%8C%8C%EB%8A%94%20%EC%A2%8B%EC%9D%80%20%EA%B2%83%EC%9C%BC%EB%A1%9C%20%EB%B3%B4%EC%9D%B4%EB%A9%B0%2C%20%EA%B4%80%EA%B4%91%EA%B0%9D%EC%9D%B4%20%EB%A7%8E%EC%95%84%EC%A7%88%20%EC%88%98%20%EC%9E%88%EB%8B%A4.%20%EA%B4%80%EB%A0%A8%20%ED%8C%8C%EC%9E%A5%EC%9D%B4%20%ED%99%95%EC%82%B0%EB%90%98%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%5D&selected_max=72424.7596731897&selected_min=0.0011934739"
     },
     {
-      "title": "[삼성전자 사후조정 협상 실패, 노조 2일 이내 총파업 준비 관련 파장이 확산되고 있습니다.]",
-      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [삼성전자 사후조정 협상 실패, 노조 2일 이내 총파업 준비 관련 파장이 확산되고 있습니다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
+      "title": "[15일 원달러 환율이 1,500원을 돌파했습니다. 관련 파장이 확산되고 있습니다.]",
+      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [15일 원달러 환율이 1,500원을 돌파했습니다. 관련 파장이 확산되고 있습니다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
       "category": "일반",
-      "pubDate": "Thu, 14 May 2026 16:18:07 GMT",
-      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90%20%EC%82%AC%ED%9B%84%EC%A1%B0%EC%A0%95%20%ED%98%91%EC%83%81%20%EC%8B%A4%ED%8C%A8%2C%20%EB%85%B8%EC%A1%B0%202%EC%9D%BC%20%EC%9D%B4%EB%82%B4%20%EC%B4%9D%ED%8C%8C%EC%97%85%20%EC%A4%80%EB%B9%84%20%EA%B4%80%EB%A0%A8%20%ED%8C%8C%EC%9E%A5%EC%9D%B4%20%ED%99%95%EC%82%B0%EB%90%98%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%5D&selected_max=88228.0042600405&selected_min=0.0014486476"
+      "pubDate": "Fri, 15 May 2026 18:52:40 GMT",
+      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B15%EC%9D%BC%20%EC%9B%90%EB%8B%AC%EB%9F%AC%20%ED%99%98%EC%9C%A8%EC%9D%B4%201%2C500%EC%9B%90%EC%9D%84%20%EB%8F%8C%ED%8C%8C%ED%96%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%20%EA%B4%80%EB%A0%A8%20%ED%8C%8C%EC%9E%A5%EC%9D%B4%20%ED%99%95%EC%82%B0%EB%90%98%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%5D&selected_max=97626.4288592038&selected_min=0.0016097612"
     }
   ]
 }
