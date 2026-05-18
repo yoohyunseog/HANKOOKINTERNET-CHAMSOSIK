@@ -2,104 +2,103 @@
   "title": "이클립스 센츄어리 D.P 브리핑",
   "model": "deepseek-v3.1:671b-cloud",
   "source_feed": "https://xn--9l4b4xi9r.com/feed.xml",
-  "updated_at": "2026-05-15T19:18:41.870117+00:00",
-  "feed_last_build_date": "Fri, 15 May 2026 19:17:25 GMT",
+  "updated_at": "2026-05-18T07:50:17.501792+00:00",
+  "feed_last_build_date": "Mon, 18 May 2026 07:49:00 GMT",
   "item_count": 12,
-  "headline": "원달러 1500원 돌파, AI 반도체 수요 증가 기대와 삼성전자 파업 리스크 공존",
-  "summary": "원달러 환율이 1500원을 돌파하며 수출 호조 기대감이 형성되고 있습니다. AI 반도체 수요 증가와 데이터 센터 건설 확대로 관련주 급등이 이어지고 있습니다. 반면 삼성전자 파업 가능성과 정부의 긴급조치 우려가 반도체 산업에 부정적 영향을 줄 수 있습니다. 미군 폴란드 배치 중단 등 지정학적 이슈는 여전히 불확실성을 유지하고 있습니다.",
+  "headline": "GTX 사고와 삼성전자 파업 우려, 한일 정상회담과 LS전선 호재 혼재",
+  "summary": "GTX 삼성역 철근 누락 사고로 안전 불감증과 정치 책임 논란이 확산되고 있습니다. 삼성전자 총파업 가능성과 법원 가처분으로 노사 갈등이 지속됩니다. 반면 한일 정상회담 개최로 관계 개선 기대와 LS전선의 AI 데이터센터 수주 호재가 발생했습니다.",
   "signals": [
-    "원달러 환율 1500원 돌파",
-    "AI 반도체 수요 증가 예상",
-    "데이터 센터 구리 수요 폭증",
-    "삼성전자 파업 교착상태"
+    "GTX 철근 누락 사고 책임 논란 확산",
+    "삼성전자 총파업 가능성과 가처분 소송",
+    "한일 정상회담 개최로 관계 개선 기대",
+    "LS전선 AI 데이터센터 수주 호재"
   ],
   "risks": [
-    "삼성전자 파업 장기화 우려",
-    "정치적 불확실성",
-    "지정학적 긴장 지속",
-    "노사 갈등 확대 가능성"
+    "건설사고 확산에 따른 사회적 불안",
+    "주요 기업 노사갈등 장기화 우려",
+    "정치적 책임 공방 심화"
   ],
   "market_impact": [
-    "코스피: 수출 기업 환율 효과 긍정적",
-    "코스닥: AI 관련주 상승 영향",
-    "비트코인: 달러 강세로 단기 부담",
-    "한국 증시 심리: 호재와 악재 혼재된 불안정한 상태"
+    "건설주 일부 부담 가능",
+    "삼성전자 관련 주식 변동성 확대",
+    "비트코인 영향 미미",
+    "한국 증시 심리 일부 위축"
   ],
-  "outlook": "환율 상승으로 수출 호조 기대되지만, 삼성전자 파업과 지정학적 리스크로 시장 변동성 확대될 전망",
-  "quality_note": "피드 내용이 반복적이고 구체적 데이터가 부족해 분석에 한계가 있음",
+  "outlook": "단기적으로 건설·전기 업종 호흡 가를 전망이지만 정치·노사 리스크로 시장 심리 제한적 개선 예상",
+  "quality_note": "국내 이슈 위주 피드로 글로벌 경제·중동 정세 연계성 낮음",
   "weighted_signal": {
-    "score": 58,
-    "upper_bound": 42,
-    "lower_bound": 36,
+    "score": 48,
+    "upper_bound": 32,
+    "lower_bound": 44,
     "grade": "주의",
     "upper_factors": [
-      "원달러 환율 상승 수출 호조 기대 +15",
-      "AI 반도체 수요 증가 전망 +12",
-      "데이터 센터 건설 확대 +10",
-      "관광산업 활성화 기대 +5"
+      "한일 관계 개선 기대 +12",
+      "LS전선 AI 수주 호재 +10",
+      "정상회담 경제 협력 기대 +10"
     ],
     "lower_factors": [
-      "삼성전자 파업 장기화 우려 -18",
-      "지정학적 불확실성 지속 -10",
-      "노사 갈등 확대 가능성 -8"
+      "GTX 사고 정치 갈등 심화 -15",
+      "삼성전자 파업 우려 -14",
+      "건설 안전 사고 확산 -10",
+      "노사 분쟁 장기화 -5"
     ]
   },
   "items": [
     {
-      "title": "[미국 정부는 폴란드에 4,000 소л데리어를 배치할 계획을 중단했습니다. 관련 파장이 확산되고 있습니다.]",
-      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [미국 정부는 폴란드에 4,000 소л데리어를 배치할 계획을 중단했습니다. 관련 파장이 확산되고 있습니다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
+      "title": "[GTX 삼성역 철근 누락 사고는 안전 불감증의 심각한 문제로 드러나면서, 사고 책임 소재 규명과 재발 방지 대책 마련이 시급한 상황이다. 관련 파장이 확산되고 있습니다.]",
+      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [GTX 삼성역 철근 누락 사고는 안전 불감증의 심각한 문제로 드러나면서, 사고 책임 소재 규명과 재발 방지 대책 마련이 시급한 상황이다. 관련 파장이 확산되고 있습니다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
       "category": "일반",
-      "pubDate": "Fri, 15 May 2026 19:14:12 GMT",
-      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B%EB%AF%B8%EA%B5%AD%20%EC%A0%95%EB%B6%80%EB%8A%94%20%ED%8F%B4%EB%9E%80%EB%93%9C%EC%97%90%204%2C000%20%EC%86%8C%D0%BB%EB%8D%B0%EB%A6%AC%EC%96%B4%EB%A5%BC%20%EB%B0%B0%EC%B9%98%ED%95%A0%20%EA%B3%84%ED%9A%8D%EC%9D%84%20%EC%A4%91%EB%8B%A8%ED%96%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%20%EA%B4%80%EB%A0%A8%20%ED%8C%8C%EC%9E%A5%EC%9D%B4%20%ED%99%95%EC%82%B0%EB%90%98%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%5D&selected_max=76183.3798771971&selected_min=0.0012530632"
+      "pubDate": "Mon, 18 May 2026 07:47:57 GMT",
+      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5BGTX%20%EC%82%BC%EC%84%B1%EC%97%AD%20%EC%B2%A0%EA%B7%BC%20%EB%88%84%EB%9D%BD%20%EC%82%AC%EA%B3%A0%EB%8A%94%20%EC%95%88%EC%A0%84%20%EB%B6%88%EA%B0%90%EC%A6%9D%EC%9D%98%20%EC%8B%AC%EA%B0%81%ED%95%9C%20%EB%AC%B8%EC%A0%9C%EB%A1%9C%20%EB%93%9C%EB%9F%AC%EB%82%98%EB%A9%B4%EC%84%9C%2C%20%EC%82%AC%EA%B3%A0%20%EC%B1%85%EC%9E%84%20%EC%86%8C%EC%9E%AC%20%EA%B7%9C%EB%AA%85%EA%B3%BC%20%EC%9E%AC%EB%B0%9C%20%EB%B0%A9%EC%A7%80%20%EB%8C%80%EC%B1%85%20%EB%A7%88%EB%A0%A8%EC%9D%B4%20%EC%8B%9C%EA%B8%89%ED%95%9C%20%EC%83%81%ED%99%A9%EC%9D%B4%EB%8B%A4.%20%EA%B4%80%EB%A0%A8%20%ED%8C%8C%EC%9E%A5%EC%9D%B4%20%ED%99%95%EC%82%B0%EB%90%98%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%5D&selected_max=47276.477075574&selected_min=0.0007781024"
     },
     {
-      "title": "[아이로보틱스가 5만 원에서 상한가까지 급등, 하나마이크론의 가격 전망 변화 관련 파장이 확산되고 있습니다.]",
-      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [아이로보틱스가 5만 원에서 상한가까지 급등, 하나마이크론의 가격 전망 변화 관련 파장이 확산되고 있습니다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
+      "title": "[GTX 삼성역 철근 누락 사고로 인해 GTX 무정차 열차 개통이 연기될 가능성이 높아짐에 따라 안전 문제에 대한 우려가 커지고 있다. 관련 파장이 확산되고 있습니다.]",
+      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [GTX 삼성역 철근 누락 사고로 인해 GTX 무정차 열차 개통이 연기될 가능성이 높아짐에 따라 안전 문제에 대한 우려가 커지고 있다. 관련 파장이 확산되고 있습니다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
       "category": "일반",
-      "pubDate": "Fri, 15 May 2026 19:09:35 GMT",
-      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B%EC%95%84%EC%9D%B4%EB%A1%9C%EB%B3%B4%ED%8B%B1%EC%8A%A4%EA%B0%80%205%EB%A7%8C%20%EC%9B%90%EC%97%90%EC%84%9C%20%EC%83%81%ED%95%9C%EA%B0%80%EA%B9%8C%EC%A7%80%20%EA%B8%89%EB%93%B1%2C%20%ED%95%98%EB%82%98%EB%A7%88%EC%9D%B4%ED%81%AC%EB%A1%A0%EC%9D%98%20%EA%B0%80%EA%B2%A9%20%EC%A0%84%EB%A7%9D%20%EB%B3%80%ED%99%94%20%EA%B4%80%EB%A0%A8%20%ED%8C%8C%EC%9E%A5%EC%9D%B4%20%ED%99%95%EC%82%B0%EB%90%98%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%5D&selected_max=74835.5259644322&selected_min=0.0012334096"
+      "pubDate": "Mon, 18 May 2026 07:46:53 GMT",
+      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5BGTX%20%EC%82%BC%EC%84%B1%EC%97%AD%20%EC%B2%A0%EA%B7%BC%20%EB%88%84%EB%9D%BD%20%EC%82%AC%EA%B3%A0%EB%A1%9C%20%EC%9D%B8%ED%95%B4%20GTX%20%EB%AC%B4%EC%A0%95%EC%B0%A8%20%EC%97%B4%EC%B0%A8%20%EA%B0%9C%ED%86%B5%EC%9D%B4%20%EC%97%B0%EA%B8%B0%EB%90%A0%20%EA%B0%80%EB%8A%A5%EC%84%B1%EC%9D%B4%20%EB%86%92%EC%95%84%EC%A7%90%EC%97%90%20%EB%94%B0%EB%9D%BC%20%EC%95%88%EC%A0%84%20%EB%AC%B8%EC%A0%9C%EC%97%90%20%EB%8C%80%ED%95%9C%20%EC%9A%B0%EB%A0%A4%EA%B0%80%20%EC%BB%A4%EC%A7%80%EA%B3%A0%20%EC%9E%88%EB%8B%A4.%20%EA%B4%80%EB%A0%A8%20%ED%8C%8C%EC%9E%A5%EC%9D%B4%20%ED%99%95%EC%82%B0%EB%90%98%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%5D&selected_max=48275.4805108156&selected_min=0.0007951522"
     },
     {
-      "title": "[AI 반도체 수요 증가 예상, SFA, 이로보틱스 등 매수 추천 관련 파장이 확산되고 있습니다.]",
-      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [AI 반도체 수요 증가 예상, SFA, 이로보틱스 등 매수 추천 관련 파장이 확산되고 있습니다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
+      "title": "[GTX 철근 누락 사고의 책임 소재를 둘러싼 정치권의 비판이 거세지면서, 서울시장으로서 안전 관리 책임에 대한 논란이 심화되고 있다. 관련 파장이 확산되고 있습니다.]",
+      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [GTX 철근 누락 사고의 책임 소재를 둘러싼 정치권의 비판이 거세지면서, 서울시장으로서 안전 관리 책임에 대한 논란이 심화되고 있다. 관련 파장이 확산되고 있습니다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
       "category": "일반",
-      "pubDate": "Fri, 15 May 2026 19:08:35 GMT",
-      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5BAI%20%EB%B0%98%EB%8F%84%EC%B2%B4%20%EC%88%98%EC%9A%94%20%EC%A6%9D%EA%B0%80%20%EC%98%88%EC%83%81%2C%20SFA%2C%20%EC%9D%B4%EB%A1%9C%EB%B3%B4%ED%8B%B1%EC%8A%A4%20%EB%93%B1%20%EB%A7%A4%EC%88%98%20%EC%B6%94%EC%B2%9C%20%EA%B4%80%EB%A0%A8%20%ED%8C%8C%EC%9E%A5%EC%9D%B4%20%ED%99%95%EC%82%B0%EB%90%98%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%5D&selected_max=83153.5299663554&selected_min=0.0013707813"
+      "pubDate": "Mon, 18 May 2026 07:45:48 GMT",
+      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5BGTX%20%EC%B2%A0%EA%B7%BC%20%EB%88%84%EB%9D%BD%20%EC%82%AC%EA%B3%A0%EC%9D%98%20%EC%B1%85%EC%9E%84%20%EC%86%8C%EC%9E%AC%EB%A5%BC%20%EB%91%98%EB%9F%AC%EC%8B%BC%20%EC%A0%95%EC%B9%98%EA%B6%8C%EC%9D%98%20%EB%B9%84%ED%8C%90%EC%9D%B4%20%EA%B1%B0%EC%84%B8%EC%A7%80%EB%A9%B4%EC%84%9C%2C%20%EC%84%9C%EC%9A%B8%EC%8B%9C%EC%9E%A5%EC%9C%BC%EB%A1%9C%EC%84%9C%20%EC%95%88%EC%A0%84%20%EA%B4%80%EB%A6%AC%20%EC%B1%85%EC%9E%84%EC%97%90%20%EB%8C%80%ED%95%9C%20%EB%85%BC%EB%9E%80%EC%9D%B4%20%EC%8B%AC%ED%99%94%EB%90%98%EA%B3%A0%20%EC%9E%88%EB%8B%A4.%20%EA%B4%80%EB%A0%A8%20%ED%8C%8C%EC%9E%A5%EC%9D%B4%20%ED%99%95%EC%82%B0%EB%90%98%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%5D&selected_max=48275.4805108156&selected_min=0.0007951522"
     },
     {
-      "title": "[인공지능 데이터 센터 구리 요구량이 폭증하고 있으며, 미국 마이크로소프트, 아마존, 메타, 초대형 데이터 센터들이 하반기부터 본격적인 착공을 시작할 예정입니다.]",
-      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [인공지능 데이터 센터 구리 요구량이 폭증하고 있으며, 미국 마이크로소프트, 아마존, 메타, 초대형 데이터 센터들이 하반기부터 본격적인 착공을 시작할 예정입니다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
+      "title": "[영동대로 GTX 철근 누락 사고로 시민 불편을 드려 죄송하며, 국토부 검증 후 강판 보강으로 즉각 시공하여 안전 문제를 해결하고 사업을 차질 없이 추진하겠습니다.]",
+      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [영동대로 GTX 철근 누락 사고로 시민 불편을 드려 죄송하며, 국토부 검증 후 강판 보강으로 즉각 시공하여 안전 문제를 해결하고 사업을 차질 없이 추진하겠습니다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
       "category": "일반",
-      "pubDate": "Fri, 15 May 2026 18:57:58 GMT",
-      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B%EC%9D%B8%EA%B3%B5%EC%A7%80%EB%8A%A5%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%84%BC%ED%84%B0%20%EA%B5%AC%EB%A6%AC%20%EC%9A%94%EA%B5%AC%EB%9F%89%EC%9D%B4%20%ED%8F%AD%EC%A6%9D%ED%95%98%EA%B3%A0%20%EC%9E%88%EC%9C%BC%EB%A9%B0%2C%20%EB%AF%B8%EA%B5%AD%20%EB%A7%88%EC%9D%B4%ED%81%AC%EB%A1%9C%EC%86%8C%ED%94%84%ED%8A%B8%2C%20%EC%95%84%EB%A7%88%EC%A1%B4%2C%20%EB%A9%94%ED%83%80%2C%20%EC%B4%88%EB%8C%80%ED%98%95%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%84%BC%ED%84%B0%EB%93%A4%EC%9D%B4%20%ED%95%98%EB%B0%98%EA%B8%B0%EB%B6%80%ED%84%B0%20%EB%B3%B8%EA%B2%A9%EC%A0%81%EC%9D%B8%20%EC%B0%A9%EA%B3%B5%EC%9D%84%20%EC%8B%9C%EC%9E%91%ED%95%A0%20%EC%98%88%EC%A0%95%EC%9E%85%EB%8B%88%EB%8B%A4.%5D&selected_max=49825.7967716381&selected_min=0.0008226676"
+      "pubDate": "Mon, 18 May 2026 07:44:42 GMT",
+      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B%EC%98%81%EB%8F%99%EB%8C%80%EB%A1%9C%20GTX%20%EC%B2%A0%EA%B7%BC%20%EB%88%84%EB%9D%BD%20%EC%82%AC%EA%B3%A0%EB%A1%9C%20%EC%8B%9C%EB%AF%BC%20%EB%B6%88%ED%8E%B8%EC%9D%84%20%EB%93%9C%EB%A0%A4%20%EC%A3%84%EC%86%A1%ED%95%98%EB%A9%B0%2C%20%EA%B5%AD%ED%86%A0%EB%B6%80%20%EA%B2%80%EC%A6%9D%20%ED%9B%84%20%EA%B0%95%ED%8C%90%20%EB%B3%B4%EA%B0%95%EC%9C%BC%EB%A1%9C%20%EC%A6%89%EA%B0%81%20%EC%8B%9C%EA%B3%B5%ED%95%98%EC%97%AC%20%EC%95%88%EC%A0%84%20%EB%AC%B8%EC%A0%9C%EB%A5%BC%20%ED%95%B4%EA%B2%B0%ED%95%98%EA%B3%A0%20%EC%82%AC%EC%97%85%EC%9D%84%20%EC%B0%A8%EC%A7%88%20%EC%97%86%EC%9D%B4%20%EC%B6%94%EC%A7%84%ED%95%98%EA%B2%A0%EC%8A%B5%EB%8B%88%EB%8B%A4.%5D&selected_max=49438.2748968828&selected_min=0.0008109879"
     },
     {
-      "title": "[국내 정부는 Samsung Electronics의 21일 파업을 방지하기 위해 긴급제압권을 사용할 가능성이 있습니다. 관련 파장이 확산되고 있습니다.]",
-      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [국내 정부는 Samsung Electronics의 21일 파업을 방지하기 위해 긴급제압권을 사용할 가능성이 있습니다. 관련 파장이 확산되고 있습니다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
+      "title": "[현대건설의 GTX-A 철근 누락 사고가 자체 과실이며, 서울시의 은폐 가능성에 대한 우려를 낳으며 정치적 공격에 대응하고 있다. 관련 파장이 확산되고 있습니다.]",
+      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [현대건설의 GTX-A 철근 누락 사고가 자체 과실이며, 서울시의 은폐 가능성에 대한 우려를 낳으며 정치적 공격에 대응하고 있다. 관련 파장이 확산되고 있습니다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
       "category": "일반",
-      "pubDate": "Fri, 15 May 2026 18:56:45 GMT",
-      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B%EA%B5%AD%EB%82%B4%20%EC%A0%95%EB%B6%80%EB%8A%94%20Samsung%20Electronics%EC%9D%98%2021%EC%9D%BC%20%ED%8C%8C%EC%97%85%EC%9D%84%20%EB%B0%A9%EC%A7%80%ED%95%98%EA%B8%B0%20%EC%9C%84%ED%95%B4%20%EA%B8%B4%EA%B8%89%EC%A0%9C%EC%95%95%EA%B6%8C%EC%9D%84%20%EC%82%AC%EC%9A%A9%ED%95%A0%20%EA%B0%80%EB%8A%A5%EC%84%B1%EC%9D%B4%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%20%EA%B4%80%EB%A0%A8%20%ED%8C%8C%EC%9E%A5%EC%9D%B4%20%ED%99%95%EC%82%B0%EB%90%98%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%5D&selected_max=53449.0460933913&selected_min=0.0008804745"
+      "pubDate": "Mon, 18 May 2026 07:43:37 GMT",
+      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B%ED%98%84%EB%8C%80%EA%B1%B4%EC%84%A4%EC%9D%98%20GTX-A%20%EC%B2%A0%EA%B7%BC%20%EB%88%84%EB%9D%BD%20%EC%82%AC%EA%B3%A0%EA%B0%80%20%EC%9E%90%EC%B2%B4%20%EA%B3%BC%EC%8B%A4%EC%9D%B4%EB%A9%B0%2C%20%EC%84%9C%EC%9A%B8%EC%8B%9C%EC%9D%98%20%EC%9D%80%ED%8F%90%20%EA%B0%80%EB%8A%A5%EC%84%B1%EC%97%90%20%EB%8C%80%ED%95%9C%20%EC%9A%B0%EB%A0%A4%EB%A5%BC%20%EB%82%B3%EC%9C%BC%EB%A9%B0%20%EC%A0%95%EC%B9%98%EC%A0%81%20%EA%B3%B5%EA%B2%A9%EC%97%90%20%EB%8C%80%EC%9D%91%ED%95%98%EA%B3%A0%20%EC%9E%88%EB%8B%A4.%20%EA%B4%80%EB%A0%A8%20%ED%8C%8C%EC%9E%A5%EC%9D%B4%20%ED%99%95%EC%82%B0%EB%90%98%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%5D&selected_max=49885.0097826272&selected_min=0.0008216942"
     },
     {
-      "title": "[삼성전자 파업 중재: 정부, 관계자 곤란에 직면하며, 교착상태 관련 파장이 확산되고 있습니다.]",
-      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [삼성전자 파업 중재: 정부, 관계자 곤란에 직면하며, 교착상태 관련 파장이 확산되고 있습니다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
+      "title": "[삼성전자 노사 간 총파업 가능성에 대한 사후 조정이 시작되었지만, 법원의 쟁의행위 금지 가처분 신청 인용으로 파업이 멈추는 데 제동이 걸리면서 상황이 복잡하게 전개되고 있다.]",
+      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [삼성전자 노사 간 총파업 가능성에 대한 사후 조정이 시작되었지만, 법원의 쟁의행위 금지 가처분 신청 인용으로 파업이 멈추는 데 제동이 걸리면서 상황이 복잡하게 전개되고 있다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
       "category": "일반",
-      "pubDate": "Fri, 15 May 2026 18:55:45 GMT",
-      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90%20%ED%8C%8C%EC%97%85%20%EC%A4%91%EC%9E%AC%3A%20%EC%A0%95%EB%B6%80%2C%20%EA%B4%80%EA%B3%84%EC%9E%90%20%EA%B3%A4%EB%9E%80%EC%97%90%20%EC%A7%81%EB%A9%B4%ED%95%98%EB%A9%B0%2C%20%EA%B5%90%EC%B0%A9%EC%83%81%ED%83%9C%20%EA%B4%80%EB%A0%A8%20%ED%8C%8C%EC%9E%A5%EC%9D%B4%20%ED%99%95%EC%82%B0%EB%90%98%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%5D&selected_max=84723.0295228773&selected_min=0.001396708"
+      "pubDate": "Mon, 18 May 2026 07:42:21 GMT",
+      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90%20%EB%85%B8%EC%82%AC%20%EA%B0%84%20%EC%B4%9D%ED%8C%8C%EC%97%85%20%EA%B0%80%EB%8A%A5%EC%84%B1%EC%97%90%20%EB%8C%80%ED%95%9C%20%EC%82%AC%ED%9B%84%20%EC%A1%B0%EC%A0%95%EC%9D%B4%20%EC%8B%9C%EC%9E%91%EB%90%98%EC%97%88%EC%A7%80%EB%A7%8C%2C%20%EB%B2%95%EC%9B%90%EC%9D%98%20%EC%9F%81%EC%9D%98%ED%96%89%EC%9C%84%20%EA%B8%88%EC%A7%80%20%EA%B0%80%EC%B2%98%EB%B6%84%20%EC%8B%A0%EC%B2%AD%20%EC%9D%B8%EC%9A%A9%EC%9C%BC%EB%A1%9C%20%ED%8C%8C%EC%97%85%EC%9D%B4%20%EB%A9%88%EC%B6%94%EB%8A%94%20%EB%8D%B0%20%EC%A0%9C%EB%8F%99%EC%9D%B4%20%EA%B1%B8%EB%A6%AC%EB%A9%B4%EC%84%9C%20%EC%83%81%ED%99%A9%EC%9D%B4%20%EB%B3%B5%EC%9E%A1%ED%95%98%EA%B2%8C%20%EC%A0%84%EA%B0%9C%EB%90%98%EA%B3%A0%20%EC%9E%88%EB%8B%A4.%5D&selected_max=45906.270583332&selected_min=0.0007529861"
     },
     {
-      "title": "[원달러 환율 1500원 돌파는 좋은 것으로 보이며, 관광객이 많아질 수 있다. 관련 파장이 확산되고 있습니다.]",
-      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [원달러 환율 1500원 돌파는 좋은 것으로 보이며, 관광객이 많아질 수 있다. 관련 파장이 확산되고 있습니다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
+      "title": "[국내 정치인의 취임 후 첫 외교 행사인 한일 정상 회담이 안동에서 개최되어 한일 관계 개선과 국제 정세 논의의 중요한 계기가 될 전망이다. 관련 파장이 확산되고 있습니다.]",
+      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [국내 정치인의 취임 후 첫 외교 행사인 한일 정상 회담이 안동에서 개최되어 한일 관계 개선과 국제 정세 논의의 중요한 계기가 될 전망이다. 관련 파장이 확산되고 있습니다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
       "category": "일반",
-      "pubDate": "Fri, 15 May 2026 18:53:38 GMT",
-      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B%EC%9B%90%EB%8B%AC%EB%9F%AC%20%ED%99%98%EC%9C%A8%201500%EC%9B%90%20%EB%8F%8C%ED%8C%8C%EB%8A%94%20%EC%A2%8B%EC%9D%80%20%EA%B2%83%EC%9C%BC%EB%A1%9C%20%EB%B3%B4%EC%9D%B4%EB%A9%B0%2C%20%EA%B4%80%EA%B4%91%EA%B0%9D%EC%9D%B4%20%EB%A7%8E%EC%95%84%EC%A7%88%20%EC%88%98%20%EC%9E%88%EB%8B%A4.%20%EA%B4%80%EB%A0%A8%20%ED%8C%8C%EC%9E%A5%EC%9D%B4%20%ED%99%95%EC%82%B0%EB%90%98%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%5D&selected_max=72424.7596731897&selected_min=0.0011934739"
+      "pubDate": "Mon, 18 May 2026 07:39:18 GMT",
+      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B%EA%B5%AD%EB%82%B4%20%EC%A0%95%EC%B9%98%EC%9D%B8%EC%9D%98%20%EC%B7%A8%EC%9E%84%20%ED%9B%84%20%EC%B2%AB%20%EC%99%B8%EA%B5%90%20%ED%96%89%EC%82%AC%EC%9D%B8%20%ED%95%9C%EC%9D%BC%20%EC%A0%95%EC%83%81%20%ED%9A%8C%EB%8B%B4%EC%9D%B4%20%EC%95%88%EB%8F%99%EC%97%90%EC%84%9C%20%EA%B0%9C%EC%B5%9C%EB%90%98%EC%96%B4%20%ED%95%9C%EC%9D%BC%20%EA%B4%80%EA%B3%84%20%EA%B0%9C%EC%84%A0%EA%B3%BC%20%EA%B5%AD%EC%A0%9C%20%EC%A0%95%EC%84%B8%20%EB%85%BC%EC%9D%98%EC%9D%98%20%EC%A4%91%EC%9A%94%ED%95%9C%20%EA%B3%84%EA%B8%B0%EA%B0%80%20%EB%90%A0%20%EC%A0%84%EB%A7%9D%EC%9D%B4%EB%8B%A4.%20%EA%B4%80%EB%A0%A8%20%ED%8C%8C%EC%9E%A5%EC%9D%B4%20%ED%99%95%EC%82%B0%EB%90%98%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%5D&selected_max=46862.8445764628&selected_min=0.0007686938"
     },
     {
-      "title": "[15일 원달러 환율이 1,500원을 돌파했습니다. 관련 파장이 확산되고 있습니다.]",
-      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [15일 원달러 환율이 1,500원을 돌파했습니다. 관련 파장이 확산되고 있습니다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
+      "title": "[한일 정상회담 후 다카이치 총리가 안동의 안동 소주와 지역 특산물을 함께 즐길 수 있는 방한 일정이 추진 중이다 관련 파장이 확산되고 있습니다.]",
+      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [한일 정상회담 후 다카이치 총리가 안동의 안동 소주와 지역 특산물을 함께 즐길 수 있는 방한 일정이 추진 중이다 관련 파장이 확산되고 있습니다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
       "category": "일반",
-      "pubDate": "Fri, 15 May 2026 18:52:40 GMT",
-      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B15%EC%9D%BC%20%EC%9B%90%EB%8B%AC%EB%9F%AC%20%ED%99%98%EC%9C%A8%EC%9D%B4%201%2C500%EC%9B%90%EC%9D%84%20%EB%8F%8C%ED%8C%8C%ED%96%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%20%EA%B4%80%EB%A0%A8%20%ED%8C%8C%EC%9E%A5%EC%9D%B4%20%ED%99%95%EC%82%B0%EB%90%98%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%5D&selected_max=97626.4288592038&selected_min=0.0016097612"
+      "pubDate": "Mon, 18 May 2026 07:38:12 GMT",
+      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B%ED%95%9C%EC%9D%BC%20%EC%A0%95%EC%83%81%ED%9A%8C%EB%8B%B4%20%ED%9B%84%20%EB%8B%A4%EC%B9%B4%EC%9D%B4%EC%B9%98%20%EC%B4%9D%EB%A6%AC%EA%B0%80%20%EC%95%88%EB%8F%99%EC%9D%98%20%EC%95%88%EB%8F%99%20%EC%86%8C%EC%A3%BC%EC%99%80%20%EC%A7%80%EC%97%AD%20%ED%8A%B9%EC%82%B0%EB%AC%BC%EC%9D%84%20%ED%95%A8%EA%BB%98%20%EC%A6%90%EA%B8%B8%20%EC%88%98%20%EC%9E%88%EB%8A%94%20%EB%B0%A9%ED%95%9C%20%EC%9D%BC%EC%A0%95%EC%9D%B4%20%EC%B6%94%EC%A7%84%20%EC%A4%91%EC%9D%B4%EB%8B%A4%20%EA%B4%80%EB%A0%A8%20%ED%8C%8C%EC%9E%A5%EC%9D%B4%20%ED%99%95%EC%82%B0%EB%90%98%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%5D&selected_max=55543.2241666148&selected_min=0.0009112654"
     }
   ]
 }

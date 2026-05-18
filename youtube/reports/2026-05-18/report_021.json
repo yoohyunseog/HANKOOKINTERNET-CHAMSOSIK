@@ -1,0 +1,401 @@
+{
+  "timestamp": "2026-05-18T05:54:24.602710",
+  "model": "news-singleline:latest",
+  "keyword_count": 3,
+  "analyze_subtitles": true,
+  "analysis_source": "youtube",
+  "keywords": [
+    {
+      "keyword": "오늘의 주요 뉴스",
+      "is_fixed": true,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "이재용 삼성 전자",
+      "is_fixed": false,
+      "views": [
+        8395,
+        1912
+      ],
+      "video_count": 2,
+      "videos": [
+        {
+          "title": "[🔴속보] 이재용, 직접 나서자 노사 협상 '속도'…내일 총파업 전 마지막 사후조정 / 연합뉴스TV(YonhapnewsTV)",
+          "video_id": "ZtNDenL1A_E",
+          "views": 8395,
+          "upload_date": "2026-05-17",
+          "url": "https://www.youtube.com/watch?v=ZtNDenL1A_E",
+          "subtitle_summary": "[이재용 삼성전자 부회장이 노사 간 총파업을 막기 위해 직접 대국민 사과를 하고 대화 재개를 시도했으나, 노조는 여전히 성과급 지급 방식에 대한 입장 차이를 좁히지 않고 파업 가능성을 내포하며 긴장감이 고조되고 있다.]",
+          "db_saved": true
+        },
+        {
+          "title": "[이슈] 이재용 삼성 회장 대국민 사과…노조에 “우리는 한 가족” / 삼성전자 노사 18일 교섭 재개 예정…교섭요원 교체로 재개 물살 | MBN NEWS",
+          "video_id": "V3TFwfUcebk",
+          "views": 1912,
+          "upload_date": "2026-05-17",
+          "url": "https://www.youtube.com/watch?v=V3TFwfUcebk",
+          "subtitle_summary": "이재용 회장이 노조와 ‘한 가족’임을 강조하며 대국민 사과에 나섰고, 성과급 배분 문제 등 갈등 해소에 노력하는 모습을 보였다. 노사 교섭 재개 예정으로 협상 분위기가 전환되었으나, 상여금 상한 폐지 등 핵심 쟁점에 대한 합의는 아직 이루어지지 않았다. 오는 18일 중앙노동위원회에서 교섭이 재개될 전망이며, 정부의 중재 노력이 긍정적인 영향을 미칠지 주목된다.",
+          "db_saved": true
+        }
+      ],
+      "max": 2.9002,
+      "min": 1.2796,
+      "nb_score": 2.2665,
+      "avg_views": 5153.5,
+      "total_views": 10307
+    },
+    {
+      "keyword": "정부 개입 시사",
+      "is_fixed": false,
+      "views": [
+        4686,
+        821,
+        2219
+      ],
+      "video_count": 3,
+      "videos": [
+        {
+          "title": "김 총리 “최대 100조 피해, 합의점 찾아달라”…정부 개입 가능성 시사 / KBS  2026.05.17.",
+          "video_id": "Rg5k4UTLUgQ",
+          "views": 4686,
+          "upload_date": "2026-05-17",
+          "url": "https://www.youtube.com/watch?v=Rg5k4UTLUgQ",
+          "subtitle_summary": "김민석 국무총리는 삼성전자 파업으로 최대 100조 원의 경제적 피해가 발생할 수 있다는 우려를 표명하며 정부의 개입 가능성을 시사했습니다. 파업은 수출 감소와 금융시장 불안 등 국민 경제 전반에 심각한 상처를 남길 수 있으며, 협상이 결렬될 경우 18일간의 총파업이 예정되어 있습니다. 정부는 노사 간 대화를 적극 지원하되, 파업으로 인한 피해가 막아지지 않을 경우 긴급조정 등 모든 수단을 검토할 것이라고 밝혔습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "김 총리 “내일(18일)이 마지막 기회”…‘긴급조정’ 정부 개입 시사 [9시 뉴스] / KBS  2026.05.17.",
+          "video_id": "fMK4WxGKn34",
+          "views": 821,
+          "upload_date": "2026-05-17",
+          "url": "https://www.youtube.com/watch?v=fMK4WxGKn34",
+          "subtitle_summary": "[김민서 총리, 삼성전자 파업을 ‘마지막 기회’로 지목하며 정부의 긴급 조정권 발동 가능성을 공식 언급, 경제적 피해 우려 속에 노사 간 대화와 합의를 촉구했습니다.]",
+          "db_saved": true
+        },
+        {
+          "title": "[Issue at a Glance] 4 Prior Cases of 'Emergency Mediation'… Government Weighs Intervention in Sam...",
+          "video_id": "AnfGZa-2JxI",
+          "views": 2219,
+          "upload_date": "2026-05-17",
+          "url": "https://www.youtube.com/watch?v=AnfGZa-2JxI",
+          "subtitle_summary": "김민석 국무총리는 삼성전자 총파업의 심각성을 우려하며 노사 간 대화와 타협을 촉구하고, 파업이 국민 경제에 미칠 수 있는 막대한 피해(최대 100조원)를 경고했습니다. 정부는 노사 간 교섭의 마지막 기회를 강조하며 적극적인 지원을 약속했지만, 협상이 결렬될 경우 긴급 조정 등 모든 수단을 검토할 수 있음을 시사했습니다. 앞서 관계 장관 회의에서 파업의 파급력을 면밀히 검토하고, 노사 간 자율적인 합의를 촉구하는 등 정부의 개입 가능성을 높였습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 1.6826,
+      "min": 2.8816,
+      "nb_score": 0.5839,
+      "avg_views": 2575.33,
+      "total_views": 7726
+    },
+    {
+      "keyword": "긴급조정권 논란",
+      "is_fixed": false,
+      "views": [
+        7809,
+        2734,
+        76303
+      ],
+      "video_count": 3,
+      "videos": [
+        {
+          "title": "긴급조정권 첫 언급...내일 협상 타결 가능성은? / YTN",
+          "video_id": "FDoz6lmfx9I",
+          "views": 7809,
+          "upload_date": "2026-05-17",
+          "url": "https://www.youtube.com/watch?v=FDoz6lmfx9I",
+          "subtitle_summary": "삼성전자 노조의 총파업 예고로 정부가 긴급 조정권을 처음으로 언급하며 협상 타결을 압박하고, 노동조합법 77조에 따라 파업 중단 선언 및 직권 조정이 가능한 가운데, 국민 경제에 미치는 파장과 국제적 논란이 우려되는 상황이다. 정부는 ILO 협약 해석의 차이로 인해 긴급 조정권 발동 요건 충족 여부를 놓고 법적 이견이 있으며, 이 경우 국제적인 제재 가능성도 제기되고 있다. 내일 협상 결과와 함께 파업 여부 및 경제적 파급 효과가 결정될 초읽기 상황이다.",
+          "db_saved": true
+        },
+        {
+          "title": "[Replay] PM Kim Min-seok: \"Up to 100 Trillion Won in Damages\"... Government Warns of Emergency Me...",
+          "video_id": "A4f2HSw6hQs",
+          "views": 2734,
+          "upload_date": "2026-05-17",
+          "url": "https://www.youtube.com/watch?v=A4f2HSw6hQs",
+          "subtitle_summary": "정부는 삼성전자 파업으로 인한 최대 100조 원 규모의 경제적 피해를 우려하며, 내일 교섭을 통해 노사 간의 대화와 타협을 촉구하고 긴급 조정권 발동 가능성을 시사했습니다. 파업이 경제 전반에 미칠 충격을 강조하며, 노사가 반드시 성과를 내도록 간절히 요청하는 동시에, 노조의 총파업 가능성을 경고했습니다. 정부는 노사 간의 접점을 찾도록 적극 지원하겠다고 밝혔지만, 교섭 결렬 시에는 더욱 강력한 압박을 가할 것으로 예상됩니다.",
+          "db_saved": true
+        },
+        {
+          "title": "\"따르지 않으면 징역 2년\"...정부, 총파업 예고에 초강수 대응 예고 [이슈톺] / YTN",
+          "video_id": "8ewviiPkpbM",
+          "views": 76303,
+          "upload_date": "2026-05-17",
+          "url": "https://www.youtube.com/watch?v=8ewviiPkpbM",
+          "subtitle_summary": "정부의 초강수 대응 예고로 삼성전자 노조 파업 상황이 극도로 긴장되고 있으며, 정부는 노동조합법 77조에 따른 긴급 조정권을 발동하여 파업 중단을 명령하고, 이를 따르지 않을 경우 징역 2년 형을 처벌하겠다는 강경한 입장을 보이고 있다. ILO와의 협약 해석 차이로 인해 긴급 조정권 발동 요건이 불확실하며, 양대 노조는 이에 강력하게 반발하고 있어 파업 해결 전망이 더욱 어렵게 되고 있다.",
+          "db_saved": true
+        }
+      ],
+      "max": 1.0642,
+      "min": 2.0867,
+      "nb_score": 0.51,
+      "avg_views": 28948.67,
+      "total_views": 86846
+    },
+    {
+      "keyword": "반도체 파업 긴급조정",
+      "is_fixed": false,
+      "views": [
+        13917,
+        4153,
+        9551,
+        24994,
+        31,
+        1084,
+        2358
+      ],
+      "video_count": 7,
+      "videos": [
+        {
+          "title": "'삼성전자 파업'에 칼 빼든 정부…\"긴급조정 등 강구\" 초강경 대응 예고 [뉴스와]/ 연합뉴스TV(YonhapnewsTV)",
+          "video_id": "VERO7lJJRuE",
+          "views": 13917,
+          "upload_date": "2026-05-17",
+          "url": "https://www.youtube.com/watch?v=VERO7lJJRuE",
+          "subtitle_summary": "삼성전자와 정부가 성과급 협상 결렬 위기에 대응, 김영훈 고용노동부 장관이 삼성전자 경영진 면담을 진행하며 대화 재개를 시도했으나, 노조의 강력한 요구와 사측의 고집 사이에서 21일 총파업 가능성이 높은 상황이다. 노사는 파업 전 마지막 협상 기회로 사후 조정에 나섰지만, 핵심 쟁점에 대한 입장 차이를 좁히기 어려울 전망이다. 정부의 긴급 조정권 활용 가능성도 제기되며, 파업의 향방에 관심이 집중되고 있다.",
+          "db_saved": true
+        },
+        {
+          "title": "[🔴속보] 정부, 삼성전자 파업에 강경 기조…\"긴급조정 등 모든 수단 강구\"/ 연합뉴스TV(YonhapnewsTV)",
+          "video_id": "2bn1doZZqgA",
+          "views": 4153,
+          "upload_date": "2026-05-17",
+          "url": "https://www.youtube.com/watch?v=2bn1doZZqgA",
+          "subtitle_summary": "정부는 삼성전자 파업의 경제적 파급력을 우려하여 긴급 관계 장관 회의를 개최하고, 노사 간 대화와 타협을 촉구하며 모든 수단을 강구하고 있습니다. 노사 간 성과급 재원 및 지급 기준 제도화 문제 등 핵심 쟁점에 대한 입장 차이를 좁히기 위해 정부 차원에서 적극적으로 중재하고 있으며, 파업 결렬 시 경제 전반에 미칠 영향에 대한 우려를 표명했습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[🔴속보] 주주들 '손해배상 청구'·정부 '긴급조정' 압박…삼성전자 총파업 '분수령'/ 연합뉴스TV(YonhapnewsTV)",
+          "video_id": "VRRXigbI8Ng",
+          "views": 9551,
+          "upload_date": "2026-05-17",
+          "url": "https://www.youtube.com/watch?v=VRRXigbI8Ng",
+          "subtitle_summary": "삼성전자 총파업을 둘러싼 노사간 입장 차이로 2차 사후 조정마저 결렬 위기에 놓이며, 내일 예정된 총파업의 실현 가능성에 대한 우려가 커지고 있다. 핵심 쟁점은 성과급 재원과 지급 기준 제도화 여부이며, 정부는 추가 중재를 시도하고 있지만 좁혀지지 않는 입장 때문에 어려움을 겪고 있다. 이재용 회장은 총파업 앞두고 대국민 사과를 통해 회사 내부 문제에 대한 책임을 인정했다.",
+          "db_saved": true
+        },
+        {
+          "title": "2차 조정 앞둔 삼전 노조 \"긴급조정 압박, 굴하지 않겠다\" / SBS 8뉴스",
+          "video_id": "DX4QnFbUei8",
+          "views": 24994,
+          "upload_date": "2026-05-17",
+          "url": "https://www.youtube.com/watch?v=DX4QnFbUei8",
+          "subtitle_summary": "삼성전자 노조는 정부의 긴급 조정 압박에 굴하지 않고 성과급 제도화 요구를 고수하며, 2차 사후조정에서 합의 가능성을 타진하는 가운데 내일 막판 협상을 진행할 전망이다. 노조는 반도체 부문 영업이익의 15% 지급을 요구하는 반면, 사측은 기존 체계 유지 및 한시적 성과급 조정안을 제시하며 입장 차이를 좁히지 못하고 있다. 정부의 강경한 입장과 파업 압력이 고조됨에 따라, 내일 협상 결과가 삼성전자 노사 관계 및 전체 산업계에 미치는 영향이 주목된다.",
+          "db_saved": true
+        },
+        {
+          "title": "김민석 \"파업 피해 우려될 경우 긴급조정 등 모든 수단 강구\"...마지막 사후조정 귀추 주목(2026.5.17) #국무총리 #담화 #삼성전자 #반도체 #파업 #긴급조정",
+          "video_id": "eyn_nX9dFrI",
+          "views": 31,
+          "upload_date": "2026-05-17",
+          "url": "https://www.youtube.com/watch?v=eyn_nX9dFrI",
+          "subtitle_summary": "[정부, 삼성전자 반도체 파업의 경제적 피해 가능성에 대해 심각한 우려를 표하며, 노사 간 대화와 타협을 촉구하고 마지막 교섭 기회를 강조했습니다. 파업으로 인한 막대한 경제적 손실과 국가적 위협을 경고하며, 국민경제 전반에 미치는 부정적 영향을 강조했습니다. 정부는 노사 합의를 위해 적극적으로 노력하고 있으며, 파업 방지를 위한 최후의 수단으로 교섭을 지지하고 있습니다.]",
+          "db_saved": true
+        },
+        {
+          "title": "김 총리 \"파업 피해 우려되면 긴급조정 등 모든 수단 강구\" / YTN",
+          "video_id": "uZ0nGo9Bu4k",
+          "views": 1084,
+          "upload_date": "2026-05-17",
+          "url": "https://www.youtube.com/watch?v=uZ0nGo9Bu4k",
+          "subtitle_summary": "김민석 국무총리는 삼성전자 파업으로 인한 막대한 경제적 피해를 우려하며, 노사 간의 자율적인 대화와 합의 도출을 강력히 촉구했습니다. 교섭 재개에 의미를 부여하며, 파업이 현실화될 경우 긴급 조정 등 모든 수단을 강구할 수 있음을 시사했습니다. 파업으로 인한 경제적 손실은 최대 100조원에 이를 수 있어, 국가적 차원의 대응이 필요하다는 점을 강조했습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "김 총리 \"파업 피해 우려되면 긴급조정 등 모든 수단 강구\" / YTN",
+          "video_id": "JP3QXgy9V8w",
+          "views": 2358,
+          "upload_date": "2026-05-17",
+          "url": "https://www.youtube.com/watch?v=JP3QXgy9V8w",
+          "subtitle_summary": "김민석 국무총리는 삼성전자 파업으로 인한 막대한 경제적 피해를 우려하며, 노사 간 합의를 촉구하고 긴급 조정 등 모든 수단을 동원할 가능성을 시사했습니다. 파업은 최대 1조 원의 피해를 낳을 수 있으며, 국가 핵심 전략 자산인 반도체 산업의 쇠락으로 이어질 수 있다고 경고했습니다. 정부는 노사 간 자율적 대화를 통해 합의점을 도출할 것을 강력히 촉구하며, 파업 현실화 시 대응 수단을 강구할 수 있음을 시사했습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0.6524,
+      "min": 1.4106,
+      "nb_score": 0.4625,
+      "avg_views": 8012.57,
+      "total_views": 56088
+    },
+    {
+      "keyword": "미중 정상회담 결과",
+      "is_fixed": false,
+      "views": [
+        27533,
+        2303,
+        2636,
+        8163
+      ],
+      "video_count": 4,
+      "videos": [
+        {
+          "title": "[🔴속보] \"미국 호르무즈 결의안, 시기도 내용도 부적절\"..'미중 정상회담' 트럼프 중국 떠나자마자 중국 '돌변' | SBS 논스톱 라이브",
+          "video_id": "cQyg0v-oUAQ",
+          "views": 27533,
+          "upload_date": "2026-05-17",
+          "url": "https://www.youtube.com/watch?v=cQyg0v-oUAQ",
+          "subtitle_summary": "미국과 중국 정상회담 결과, 호르무즈 해협 결의안이 부적절하다는 평가 속에 미중 관계가 악화되고 있으며, 미국은 전쟁 준비 태세를 강화하는 등 긴장 고조가 예상된다. 트럼프 대통령은 중국 시진핑 주석과 이란 문제에 대한 의견 일치를 확인했지만, 중국의 원론적인 입장 변화는 협상 돌파구 마련에 어려움을 가중시켰다. 중동 지역은 다시 전쟁 전야 시계로 돌아가고 있으며, 양국 간 불신이 깊어지면서 향후 갈등 가능성이 높아지고 있다.",
+          "db_saved": true
+        },
+        {
+          "title": "이 대통령, 트럼프와 통화…미중 정상회담 결과 논의 / 연합뉴스TV (YonhapnewsTV)",
+          "video_id": "My3Bb1jRWU4",
+          "views": 2303,
+          "upload_date": "2026-05-17",
+          "url": "https://www.youtube.com/watch?v=My3Bb1jRWU4",
+          "subtitle_summary": "이 대통령은 트럼프 미 대통령과 미중 정상회담 결과에 대한 의견을 나누었고, 한국 측에서 회담 결과 공유를 요청하여 통화가 이루어졌으며, 지난해 10월 경주 정상회담 이후 200일 만에 직접 소통한 것으로 나타났다.",
+          "db_saved": true
+        },
+        {
+          "title": "이 대통령-트럼프 통화...\"미중 정상회담 결과 등 공유\" / YTN",
+          "video_id": "qnrKDrx-TqQ",
+          "views": 2636,
+          "upload_date": "2026-05-17",
+          "url": "https://www.youtube.com/watch?v=qnrKDrx-TqQ",
+          "subtitle_summary": "[이재명 대통령이 도널드 트럼프 전 미국 대통령과 한반도 평화와 미중 관계 등 주요 현안을 논의하며 통화했고, 양국 정상은 미중 정상회담 결과를 공유하며 건설적인 협의를 평가했다.]",
+          "db_saved": true
+        },
+        {
+          "title": "[🔴속보] \"미국 호르무즈 결의안, 시기도 내용도 부적절\"..'미중 정상회담' 트럼프 중국 떠나자마자 중국 '돌변' | SBS 논스톱 라이브",
+          "video_id": "HtPC7vvti9A",
+          "views": 8163,
+          "upload_date": "2026-05-17",
+          "url": "https://www.youtube.com/watch?v=HtPC7vvti9A",
+          "subtitle_summary": "트럼프 대통령과 시진핑 주석의 미중 정상회담은 호르무즈 해협과 이란 핵 문제 등 주요 현안에 대한 입장 차이를 드러내며 가시적인 성과를 내지 못했다는 평가가 나왔다. 시진핑 주석이 호르무즈 해협 개방을 지지하는 듯한 발언을 했으나, 트럼프 대통령이 이란산 수입을 계속하겠다는 입장을 고수하며 갈등을 지속시켰다. 결국 양국 정상은 전략적 경쟁 관계 속에서 갈등을 관리하는 데 초점을 맞추며, 세계 질서의 새로운 패권 구도 확대를 확인하는 데 그쳤다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0.7678,
+      "min": 1.9515,
+      "nb_score": 0.3934,
+      "avg_views": 10158.75,
+      "total_views": 40635
+    },
+    {
+      "keyword": "삼성 노조 파업 투표",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "메모리 품귀 현황",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "K-방산 수출 호조",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "주담대 금리 상승",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "고유가 대책 방안",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "성과급 논란 기업",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "IPO 시장 동향",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "부동산 정책 협공",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "선거 판세 분석",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "긴급조정 불사 정부",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    }
+  ]
+}

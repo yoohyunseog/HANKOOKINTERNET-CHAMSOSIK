@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>꼬봉 채팅 보드</title>
+    <style>
+      :root {
+        --ink: #1f2933;
+        --muted: #6b7280;
+        --line: rgba(34, 42, 55, 0.14);
+        --panel: rgba(255, 255, 255, 0.88);
+        --panel-strong: #ffffff;
+        --dj: #1f3a5f;
+        --user: #0f8b6f;
+        --warm: #ffcf70;
+        --rose: #d94f70;
+        --shadow: 0 18px 45px rgba(28, 42, 67, 0.14);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        color: var(--ink);
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", sans-serif;
+        background:
+          linear-gradient(180deg, rgba(255, 250, 240, 0.86), rgba(237, 246, 255, 0.92)),
+          url("https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=1800&q=80") center / cover fixed;
+      }
+
+      .app {
+        min-height: 100vh;
+        padding: 18px;
+        background: rgba(255, 255, 255, 0.38);
+        backdrop-filter: blur(5px);
+      }
+
+      .topbar {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) auto;
+        gap: 14px;
+        align-items: center;
+        width: min(1480px, 100%);
+        margin: 0 auto 14px;
+        padding: 14px 16px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.9);
+        box-shadow: var(--shadow);
+      }
+
+      .brand {
+        min-width: 0;
+      }
+
+      .brand h1 {
+        margin: 0;
+        color: #13233a;
+        font-size: 1.28rem;
+        line-height: 1.2;
+      }
+
+      .brand p {
+        margin: 5px 0 0;
+        color: var(--muted);
+        font-size: 0.9rem;
+        line-height: 1.45;
+      }
+
+      .top-actions {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        gap: 8px;
+      }
+
+      button,
+      a.button {
+        min-height: 40px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        padding: 9px 12px;
+        color: var(--ink);
+        background: var(--panel-strong);
+        font: inherit;
+        font-weight: 850;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      button.primary {
+        border-color: transparent;
+        color: #1f1605;
+        background: var(--warm);
+      }
+
+      button.active {
+        border-color: transparent;
+        color: #ffffff;
+        background: linear-gradient(135deg, #0f8b6f, #0b6f8a);
+      }
+
+      .board {
+        display: grid;
+        grid-template-columns: 280px minmax(0, 1fr) 320px;
+        gap: 14px;
+        width: min(1480px, 100%);
+        margin: 0 auto;
+        align-items: start;
+      }
+
+      .panel {
+        min-width: 0;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: var(--panel);
+        box-shadow: var(--shadow);
+        overflow: hidden;
+      }
+
+      .panel-head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        min-height: 52px;
+        padding: 14px;
+        border-bottom: 1px solid var(--line);
+        background: rgba(255, 255, 255, 0.72);
+      }
+
+      .panel-head h2 {
+        margin: 0;
+        font-size: 0.98rem;
+      }
+
+      .pill {
+        flex: 0 0 auto;
+        padding: 4px 8px;
+        border-radius: 999px;
+        color: #10251c;
+        background: #a7f3d0;
+        font-size: 0.72rem;
+        font-weight: 950;
+      }
+
+      .lane-list,
+      .note-list {
+        display: grid;
+        gap: 10px;
+        padding: 12px;
+      }
+
+      .lane-card,
+      .note-card {
+        border: 1px solid rgba(34, 42, 55, 0.12);
+        border-radius: 8px;
+        padding: 12px;
+        background: rgba(255, 255, 255, 0.76);
+      }
+
+      .lane-card strong,
+      .note-card strong {
+        display: block;
+        margin-bottom: 5px;
+        color: #13233a;
+      }
+
+      .lane-card span,
+      .note-card span {
+        display: block;
+        color: var(--muted);
+        font-size: 0.86rem;
+        line-height: 1.45;
+      }
+
+      .progress-strip {
+        display: grid;
+        gap: 8px;
+        padding: 12px;
+        border-top: 1px solid var(--line);
+      }
+
+      .progress-label {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        color: var(--muted);
+        font-size: 0.82rem;
+        font-weight: 850;
+      }
+
+      .progress-bar {
+        height: 9px;
+        overflow: hidden;
+        border-radius: 999px;
+        background: rgba(31, 41, 51, 0.12);
+      }
+
+      .progress-fill {
+        width: 0%;
+        height: 100%;
+        border-radius: inherit;
+        background: linear-gradient(90deg, var(--user), var(--warm), var(--rose));
+        transition: width 0.35s ease;
+      }
+
+      .chat-panel {
+        display: grid;
+        grid-template-rows: auto minmax(460px, calc(100vh - 236px)) auto;
+      }
+
+      .chat-stream {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        padding: 18px;
+        overflow: auto;
+        scroll-behavior: smooth;
+      }
+
+      .msg {
+        display: grid;
+        grid-template-columns: 38px minmax(0, 1fr);
+        gap: 10px;
+        align-items: end;
+        max-width: 82%;
+      }
+
+      .msg.user {
+        grid-template-columns: minmax(0, 1fr) 38px;
+        align-self: end;
+      }
+
+      .avatar {
+        width: 38px;
+        height: 38px;
+        display: grid;
+        place-items: center;
+        border-radius: 50%;
+        color: #ffffff;
+        background: var(--dj);
+        font-weight: 950;
+        box-shadow: 0 8px 18px rgba(31, 58, 95, 0.24);
+      }
+
+      .msg.user .avatar {
+        grid-column: 2;
+        background: var(--user);
+      }
+
+      .bubble {
+        position: relative;
+        min-width: 0;
+        padding: 12px 14px;
+        border: 1px solid rgba(31, 58, 95, 0.12);
+        border-radius: 14px 14px 14px 4px;
+        background: #ffffff;
+        line-height: 1.6;
+        font-weight: 720;
+        overflow-wrap: anywhere;
+      }
+
+      .msg.user .bubble {
+        grid-column: 1;
+        grid-row: 1;
+        color: #ffffff;
+        border-color: rgba(15, 139, 111, 0.2);
+        border-radius: 14px 14px 4px 14px;
+        background: linear-gradient(135deg, #0f8b6f, #0b6f8a);
+      }
+
+      .bubble::before {
+        content: "";
+        position: absolute;
+        left: -7px;
+        bottom: 8px;
+        border-top: 7px solid transparent;
+        border-bottom: 7px solid transparent;
+        border-right: 8px solid #ffffff;
+      }
+
+      .msg.user .bubble::before {
+        left: auto;
+        right: -7px;
+        border-right: 0;
+        border-left: 8px solid #0b6f8a;
+      }
+
+      .meta {
+        display: block;
+        margin-top: 6px;
+        color: rgba(31, 41, 51, 0.52);
+        font-size: 0.75rem;
+        font-weight: 850;
+      }
+
+      .msg.user .meta {
+        color: rgba(255, 255, 255, 0.72);
+      }
+
+      .composer {
+        display: grid;
+        grid-template-columns: auto minmax(0, 1fr) auto;
+        gap: 8px;
+        padding: 12px;
+        border-top: 1px solid var(--line);
+        background: rgba(255, 255, 255, 0.78);
+      }
+
+      .composer textarea {
+        width: 100%;
+        min-height: 44px;
+        max-height: 130px;
+        resize: vertical;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        padding: 11px 12px;
+        color: var(--ink);
+        font: inherit;
+        line-height: 1.5;
+        background: #ffffff;
+      }
+
+      .mood-board {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 8px;
+        padding: 12px;
+      }
+
+      .mood {
+        min-height: 74px;
+        padding: 12px;
+        border-radius: 8px;
+        color: #ffffff;
+        background: linear-gradient(135deg, #263d5e, #5a4a80);
+      }
+
+      .mood:nth-child(2) {
+        background: linear-gradient(135deg, #a84461, #67407d);
+      }
+
+      .mood:nth-child(3) {
+        background: linear-gradient(135deg, #0f766e, #155e75);
+      }
+
+      .mood:nth-child(4) {
+        background: linear-gradient(135deg, #8a4c0f, #9f1239);
+      }
+
+      .mood strong {
+        display: block;
+        margin-bottom: 5px;
+      }
+
+      .mood span {
+        display: block;
+        color: rgba(255, 255, 255, 0.82);
+        font-size: 0.82rem;
+      }
+
+      @media (max-width: 1050px) {
+        .board {
+          grid-template-columns: 1fr;
+        }
+
+        .chat-panel {
+          grid-template-rows: auto minmax(420px, 62vh) auto;
+        }
+
+        .msg {
+          max-width: 92%;
+        }
+      }
+
+      @media (max-width: 640px) {
+        .app {
+          padding: 10px;
+        }
+
+        .topbar {
+          grid-template-columns: 1fr;
+        }
+
+        .top-actions {
+          justify-content: stretch;
+        }
+
+        .top-actions button,
+        .top-actions .button {
+          flex: 1 1 120px;
+        }
+
+        .chat-stream {
+          padding: 12px;
+        }
+
+        .msg {
+          grid-template-columns: 30px minmax(0, 1fr);
+          gap: 8px;
+          max-width: 96%;
+        }
+
+        .msg.user {
+          grid-template-columns: minmax(0, 1fr) 30px;
+        }
+
+        .avatar {
+          width: 30px;
+          height: 30px;
+          font-size: 0.78rem;
+        }
+
+        .bubble {
+          padding: 10px 11px;
+          border-radius: 12px 12px 12px 4px;
+          font-size: 0.92rem;
+        }
+
+        .composer {
+          grid-template-columns: 1fr;
+        }
+
+        .mood-board {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="app">
+      <header class="topbar">
+        <div class="brand">
+          <h1>꼬봉 채팅 보드</h1>
+          <p>AI DJ와 게임 진행을 한 화면에서 보는 말풍선형 보드</p>
+        </div>
+        <nav class="top-actions" aria-label="빠른 동작">
+          <a class="button" href="../ai-issue-briefing/">라디오 방</a>
+          <button type="button" id="djButton">DJ 멘트</button>
+          <button class="primary" type="button" id="gameButton">게임 시작</button>
+        </nav>
+      </header>
+
+      <main class="board">
+        <aside class="panel">
+          <div class="panel-head">
+            <h2>보드 레인</h2>
+            <span class="pill">LIVE</span>
+          </div>
+          <div class="lane-list">
+            <div class="lane-card">
+              <strong>현재 곡</strong>
+              <span>SoundCloud 큐를 기준으로 DJ가 곡 멘트를 엽니다.</span>
+            </div>
+            <div class="lane-card">
+              <strong>게임 장면</strong>
+              <span>꼬봉의 연애 흑역사를 선택형 장면으로 진행합니다.</span>
+            </div>
+            <div class="lane-card">
+              <strong>사용자 요청</strong>
+              <span>신청곡, 다음 곡, 1번/2번/3번 선택을 말풍선에 기록합니다.</span>
+            </div>
+          </div>
+          <div class="progress-strip">
+            <div class="progress-label"><span>게임 진행도</span><span id="progressText">0 / 5</span></div>
+            <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+          </div>
+        </aside>
+
+        <section class="panel chat-panel">
+          <div class="panel-head">
+            <h2>말풍선 채팅</h2>
+            <span class="pill" id="modePill">DJ BOARD</span>
+          </div>
+          <div class="chat-stream" id="chatStream" aria-live="polite">
+            <article class="msg">
+              <div class="avatar">DJ</div>
+              <div class="bubble">
+                현재 곡 위에 꼬봉방 보드를 열었습니다. 라디오는 DJ 멘트로, 게임은 장면 선택으로 이어갑니다.
+                <span class="meta">AI DJ · 방금</span>
+              </div>
+            </article>
+            <article class="msg user">
+              <div class="avatar">나</div>
+              <div class="bubble">
+                게임 시작하면 졸업식 고백 장면까지 가보자.
+                <span class="meta">사용자 · 예시</span>
+              </div>
+            </article>
+          </div>
+          <form class="composer" id="chatForm">
+            <button type="button" id="clearButton">정리</button>
+            <textarea id="messageInput" placeholder="메시지, 신청곡, 게임 선택을 입력하세요"></textarea>
+            <button class="primary" type="submit">보내기</button>
+          </form>
+        </section>
+
+        <aside class="panel">
+          <div class="panel-head">
+            <h2>진행 카드</h2>
+            <span class="pill">GM</span>
+          </div>
+          <div class="mood-board">
+            <div class="mood"><strong>허세</strong><span>센 척하다가 장면을 키움</span></div>
+            <div class="mood"><strong>용기</strong><span>고백과 선택을 밀어붙임</span></div>
+            <div class="mood"><strong>눈맞춤</strong><span>공허함을 줄이는 지표</span></div>
+            <div class="mood"><strong>현실감</strong><span>카니 결말을 피할지도 모름</span></div>
+          </div>
+          <div class="note-list">
+            <div class="note-card">
+              <strong>사연 핵심</strong>
+              <span>일진 여자친구의 “사귀자” 선언에서 시작해, 졸업식 고백과 카니 머리채 엔딩까지 갑니다.</span>
+            </div>
+            <div class="note-card">
+              <strong>말풍선 규칙</strong>
+              <span>AI는 곡 멘트와 게임 진행을 섞고, 사용자는 선택과 신청곡으로 흐름을 바꿉니다.</span>
+            </div>
+          </div>
+        </aside>
+      </main>
+    </div>
+
+    <script>
+      const chatStream = document.querySelector("#chatStream");
+      const chatForm = document.querySelector("#chatForm");
+      const messageInput = document.querySelector("#messageInput");
+      const modePill = document.querySelector("#modePill");
+      const djButton = document.querySelector("#djButton");
+      const gameButton = document.querySelector("#gameButton");
+      const clearButton = document.querySelector("#clearButton");
+      const progressText = document.querySelector("#progressText");
+      const progressFill = document.querySelector("#progressFill");
+
+      const djLines = [
+        "현재 곡의 박자 위에 꼬봉의 공허한 사귐 장면을 살짝 올립니다. 사귀는 건 맞는데 눈도 못 마주치는 그 묘한 정적이 오늘의 인트로예요.",
+        "이번 트랙은 졸업식 전후의 오락실 불빛이 잘 어울립니다. 선배 누나들과 배운 데이트 감각이 아직 실전 앞에서는 삐걱거리네요.",
+        "곡이 조금 더 짙어졌습니다. '너는 너무 어려서 안 됨'이라는 한 줄이 들어오면, 꼬봉은 웃는 척하다가 혼자 푸웁 하고 무너집니다.",
+        "이 장면의 엔딩은 웃기고도 아픕니다. 카니한테 머리채 잡히는 소동까지 포함해서, 꼬봉방 라디오는 계속 갑니다."
+      ];
+
+      const gameChapters = [
+        {
+          title: "1장. 관계의 씨앗",
+          scene: "상대가 먼저 '사귀자'라고 선언합니다. 감정보다 제도가 먼저 온 순간, 꼬봉은 고개를 끄덕일지 도망칠지 골라야 합니다.",
+          choices: ["일단 사귄다고 한다", "왜 나인지 묻는다", "눈을 피한다"]
+        },
+        {
+          title: "2장. 공허한 사귐",
+          scene: "겉으로는 사귀는 중입니다. 하지만 반응 없음, 눈맞춤 없음, 관계는 있는데 장면이 없는 상태입니다.",
+          choices: ["옆자리만 지킨다", "친구들 앞에서 허세를 부린다", "진짜 대화를 시도한다"]
+        },
+        {
+          title: "3장. 오락실과 당구장",
+          scene: "선배 누나들과 오락실과 당구장을 돌며 데이트라는 걸 배웁니다. 그런데 배움과 허세는 종종 같이 올라갑니다.",
+          choices: ["게임 실력으로 분위기를 잡는다", "당구 큐를 잡고 어른인 척한다", "배운 걸 조용히 기억한다"]
+        },
+        {
+          title: "4장. 졸업식 고백",
+          scene: "졸업식 날입니다. 후배 입장에서 고백하는 순간, 연습은 끝나고 실전의 무게가 옵니다.",
+          choices: ["정면으로 고백한다", "메시지로 먼저 떠본다", "웃기려고 장난부터 친다"]
+        },
+        {
+          title: "5장. 현실의 벽",
+          scene: "메시지에는 '너는 너무 어려서 안 됨'이 남습니다. 꼬봉은 억울해서 혼자 푸웁 웃고 맙니다.",
+          choices: ["억울하지만 인정한다", "아닌 척 더 센 척한다", "카니에게 들키기 전에 도망친다"]
+        },
+        {
+          title: "엔딩. 카니의 손아귀",
+          scene: "결국 카니의 손이 머리채로 들어옵니다. 웃기고도 아픈 결말이지만, 꼬봉은 다음 곡에서 조금 성장합니다.",
+          choices: ["처음부터 다시", "DJ 엔딩 멘트", "다음 이야기로 넘긴다"]
+        }
+      ];
+
+      let djIndex = 0;
+      let gameIndex = 0;
+      let gameRunning = false;
+      let gameTimer = 0;
+      let idleTicks = 0;
+      const MESSAGE_STORAGE_KEY = "koboongChatBoardMessages";
+      const AI_ACTION_STORAGE_KEY = "koboongChatBoardAiActions";
+      const MAX_SAVED_MESSAGES = 50;
+      const MAX_AI_ACTIONS = 50;
+      let messageLog = [];
+      let aiActionLog = [];
+      const gameStats = {
+        허세: 1,
+        용기: 1,
+        눈맞춤: 0,
+        현실감: 1
+      };
+
+      function timeLabel() {
+        return new Date().toLocaleTimeString("ko-KR", { hour: "2-digit", minute: "2-digit" });
+      }
+
+      function saveMessages() {
+        messageLog = messageLog.slice(-MAX_SAVED_MESSAGES);
+        localStorage.setItem(MESSAGE_STORAGE_KEY, JSON.stringify(messageLog));
+      }
+
+      function saveAiActions() {
+        aiActionLog = aiActionLog.slice(-MAX_AI_ACTIONS);
+        localStorage.setItem(AI_ACTION_STORAGE_KEY, JSON.stringify(aiActionLog));
+      }
+
+      function rememberAiAction(type, text) {
+        aiActionLog.push({
+          type,
+          text,
+          at: new Date().toISOString()
+        });
+        saveAiActions();
+      }
+
+      function recentAiActionContext(limit = 8) {
+        return aiActionLog
+          .slice(-limit)
+          .map((item) => `${item.type}: ${item.text}`)
+          .join("\n");
+      }
+
+      function trimChatDom() {
+        const messages = [...chatStream.querySelectorAll(".msg")];
+        const overflow = messages.length - MAX_SAVED_MESSAGES;
+        if (overflow > 0) {
+          messages.slice(0, overflow).forEach((node) => node.remove());
+        }
+      }
+
+      function recentMessageContext(limit = 8) {
+        return messageLog
+          .slice(-limit)
+          .map((item) => `${item.role}: ${item.text}`)
+          .join("\n");
+      }
+
+      function addBubble(role, text, options = {}) {
+        const savedAt = options.savedAt || timeLabel();
+        const article = document.createElement("article");
+        article.className = role === "user" ? "msg user" : "msg";
+
+        const avatar = document.createElement("div");
+        avatar.className = "avatar";
+        avatar.textContent = role === "user" ? "나" : role === "game" ? "GM" : "DJ";
+
+        const bubble = document.createElement("div");
+        bubble.className = "bubble";
+        bubble.textContent = text;
+
+        const meta = document.createElement("span");
+        meta.className = "meta";
+        meta.textContent = `${role === "user" ? "사용자" : role === "game" ? "AI GM" : "AI DJ"} · ${savedAt}`;
+        bubble.appendChild(meta);
+
+        article.appendChild(avatar);
+        article.appendChild(bubble);
+        chatStream.appendChild(article);
+        chatStream.scrollTop = chatStream.scrollHeight;
+
+        if (options.persist !== false) {
+          messageLog.push({
+            role,
+            text,
+            savedAt,
+            createdAt: new Date().toISOString()
+          });
+          saveMessages();
+        }
+        trimChatDom();
+      }
+
+      function loadSavedMessages() {
+        try {
+          const saved = JSON.parse(localStorage.getItem(MESSAGE_STORAGE_KEY) || "[]");
+          messageLog = Array.isArray(saved) ? saved.slice(-MAX_SAVED_MESSAGES) : [];
+        } catch {
+          messageLog = [];
+        }
+
+        if (!messageLog.length) return;
+        chatStream.innerHTML = "";
+        messageLog.forEach((item) => {
+          addBubble(item.role, item.text, {
+            savedAt: item.savedAt || "저장됨",
+            persist: false
+          });
+        });
+      }
+
+      function loadSavedAiActions() {
+        try {
+          const saved = JSON.parse(localStorage.getItem(AI_ACTION_STORAGE_KEY) || "[]");
+          aiActionLog = Array.isArray(saved) ? saved.slice(-MAX_AI_ACTIONS) : [];
+        } catch {
+          aiActionLog = [];
+        }
+      }
+
+      function addDjLine() {
+        modePill.textContent = "DJ BOARD";
+        const context = recentMessageContext(4);
+        const actionContext = recentAiActionContext(3);
+        const contextLine = context || actionContext ? `\n\n최근 흐름을 피해서 새 멘트로 이어갑니다.` : "";
+        const line = `${djLines[djIndex % djLines.length]}${contextLine}`;
+        rememberAiAction("dj-line", line);
+        addBubble("dj", line);
+        djIndex += 1;
+      }
+
+      function updateGameProgress() {
+        const max = Math.max(gameChapters.length - 1, 1);
+        const current = Math.min(gameIndex, gameChapters.length - 1);
+        progressText.textContent = `${current} / ${max}`;
+        progressFill.style.width = `${Math.round((current / max) * 100)}%`;
+      }
+
+      function choiceHint(choices) {
+        return choices.map((choice, index) => `${index + 1}. ${choice}`).join("\n");
+      }
+
+      function statsLabel() {
+        return Object.entries(gameStats).map(([key, value]) => `${key} ${value}`).join(" · ");
+      }
+
+      function addGameLine(reason = "auto") {
+        modePill.textContent = "AI GM";
+        const chapter = gameChapters[Math.min(gameIndex, gameChapters.length - 1)];
+        const prefix = reason === "choice" ? "선택 반영" : reason === "start" ? "게임 시작" : "자동 진행";
+        const line = `${prefix}: ${chapter.title}\n${chapter.scene}\n\n선택지\n${choiceHint(chapter.choices)}\n\n현재 스탯: ${statsLabel()}\n\n최근 메시지 참조\n${recentMessageContext(5) || "아직 저장된 흐름이 없습니다."}\n\n최근 AI 행동 참조\n${recentAiActionContext(5) || "아직 저장된 AI 행동이 없습니다."}`;
+        rememberAiAction("game-progress", line);
+        addBubble("game", line);
+        updateGameProgress();
+        idleTicks = 0;
+      }
+
+      function applyChoice(choiceNumber) {
+        const chapter = gameChapters[Math.min(gameIndex, gameChapters.length - 1)];
+        const choice = chapter.choices[choiceNumber - 1];
+        if (!choice) return false;
+
+        addBubble("user", `${choiceNumber}번 선택: ${choice}`);
+        if (choiceNumber === 1) {
+          gameStats.용기 += 1;
+        } else if (choiceNumber === 2) {
+          gameStats.현실감 += 1;
+        } else {
+          gameStats.허세 += 1;
+          gameStats.눈맞춤 = Math.max(0, gameStats.눈맞춤 - 1);
+        }
+
+        if (gameIndex < gameChapters.length - 1) {
+          gameIndex += 1;
+        } else if (choiceNumber === 1) {
+          gameIndex = 0;
+        }
+
+        addGameLine("choice");
+        return true;
+      }
+
+      function continueGameLoop() {
+        if (!gameRunning) return;
+        idleTicks += 1;
+
+        if (idleTicks % 2 === 0) {
+          addDjLine();
+        }
+
+        if (gameIndex < gameChapters.length - 1) {
+          gameIndex += 1;
+          addGameLine("auto");
+        } else {
+          addBubble("game", `엔딩 이후 후일담을 이어갑니다.\n카니 사건 뒤 꼬봉은 ${statsLabel()} 상태로 다음 곡을 기다립니다.\n1번을 입력하면 처음부터 다시 시작합니다.`);
+          updateGameProgress();
+        }
+      }
+
+      function startGameLoop() {
+        if (gameRunning) return;
+        gameRunning = true;
+        gameButton.classList.add("active");
+        gameButton.textContent = "게임 일시정지";
+        modePill.textContent = "AI GM AUTO";
+        if (!gameTimer) {
+          gameTimer = window.setInterval(continueGameLoop, 8000);
+        }
+        addGameLine(gameIndex === 0 ? "start" : "auto");
+      }
+
+      function pauseGameLoop() {
+        gameRunning = false;
+        gameButton.classList.remove("active");
+        gameButton.textContent = "게임 계속";
+        modePill.textContent = "PAUSED";
+      }
+
+      function toggleGameLoop() {
+        if (gameRunning) {
+          pauseGameLoop();
+        } else {
+          startGameLoop();
+        }
+      }
+
+      chatForm.addEventListener("submit", (event) => {
+        event.preventDefault();
+        const text = messageInput.value.trim();
+        if (!text) return;
+        messageInput.value = "";
+
+        const choiceMatch = text.match(/(?:^|\s)([123])(?:번|$|\s)/);
+        if (choiceMatch && gameRunning) {
+          applyChoice(Number(choiceMatch[1]));
+          return;
+        }
+
+        addBubble("user", text);
+
+        if (/게임|시작|고백|졸업식|카니/.test(text)) {
+          if (!gameRunning) startGameLoop();
+          else continueGameLoop();
+        } else {
+          addDjLine();
+        }
+      });
+
+      djButton.addEventListener("click", addDjLine);
+      gameButton.addEventListener("click", toggleGameLoop);
+      clearButton.addEventListener("click", () => {
+        chatStream.innerHTML = "";
+        messageLog = [];
+        aiActionLog = [];
+        localStorage.removeItem(MESSAGE_STORAGE_KEY);
+        localStorage.removeItem(AI_ACTION_STORAGE_KEY);
+        gameIndex = 0;
+        idleTicks = 0;
+        Object.assign(gameStats, { 허세: 1, 용기: 1, 눈맞춤: 0, 현실감: 1 });
+        updateGameProgress();
+        addBubble("dj", "보드를 정리했습니다. 다음 말풍선부터 다시 라디오와 게임 진행을 쌓아갑니다.");
+      });
+      loadSavedAiActions();
+      loadSavedMessages();
+      updateGameProgress();
+    </script>
+  </body>
+</html>

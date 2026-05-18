@@ -13,8 +13,65 @@ const MAX_BODY_BYTES = Number(process.env.MAX_BODY_BYTES || 1_000_000);
 const NEWS_SEARCH_LIMIT = Number(process.env.NEWS_SEARCH_LIMIT || 10);
 const DATA_DIR = process.env.NARRATIVE_DATA_DIR || path.join(__dirname, "data");
 const NARRATIVE_MEMORY_FILE = process.env.NARRATIVE_MEMORY_FILE || path.join(DATA_DIR, "narrative-memory.json");
+const REBUTTAL_CONFIG_FILE = path.join(__dirname, "..", "public", "한국인터넷.한국", "참소식.com", "ai-issue-briefing", "rebuttal-dj-lines.json");
+const NARRATIVE_MEMORY_PERSIST = process.env.NARRATIVE_MEMORY_PERSIST
+  ? /^(1|true|yes)$/i.test(process.env.NARRATIVE_MEMORY_PERSIST)
+  : process.env.NODE_ENV !== "production";
 const issueRoomMessages = [];
+
+function loadRebuttalLines(fallbackLines) {
+  try {
+    const config = JSON.parse(fs.readFileSync(REBUTTAL_CONFIG_FILE, "utf8"));
+    if (Array.isArray(config.rebuttalDjLines) && config.rebuttalDjLines.length) {
+      return config.rebuttalDjLines.map((line) => String(line || "").trim()).filter(Boolean);
+    }
+  } catch (error) {
+    console.warn(`Failed to load rebuttal DJ config: ${error.message}`);
+  }
+  return fallbackLines;
+}
+
+const REBUTTAL_LINES = loadRebuttalLines([
+  "10년 전 퇴사한 회사에서 퇴사한 날까지 결근 처리돼 있었던 걸 이제야 알게 됐습니다 -0-. 나머지 두 회사는 사실 예의상 면접을 보러 갔던 곳에 가깝고, 대표형들도 지금까지 이런 처리와 운영 문제 때문에 힘든 부분이 있을 겁니다. 학교, 군대, 학원 5년과 회사 10년을 지나, 이걸 완성하는 데 대략 15년이 걸렸습니다.",
+  "이제 기억납니다. 그 회사에는 중국인 직원들이 많았고, 특히 여성 중국인 직원들이 많았죠. 회사도 좋고 대표형도 되게 착했습니다 -0-. 지금쯤은 엄청 좋아졌을 것 같은데, 다만 월급은 120도 안 됐고 팀장 1명과 디자이너 2명이 있었습니다. 월급이 중국인 여성 직원들과 비슷한 수준으로 나온 게 제일 문제였고요. 결근이 될 만한 건 퇴사한 날밖에 없었을 겁니다. 그때 확실히 퇴사를 했어야 했죠 -0-.",
+  "이런 멘트를 매곡마다 DJ 멘트로 올리고, 누나가 거기에 개그까지 하고 있다니 세상이 참 좋아졌습니다 -0-. 예전에는 그냥 지나갔을 기억들이 이제는 곡 사이에서 한 줄씩 살아나네요.",
+  "10년 전, 1년도 안 다닌 회사에서 나를 두고 일을 못하느니 잘하느니 하는 말까지 나왔던 모양입니다 -0-. 그런데 이제 와서 보면 그 평가보다 중요한 건, 그때의 기록이 어떻게 남았고 지금 어떤 시스템으로 다시 정리되고 있느냐인 것 같습니다.",
+  `10년 전 그 회사군요... 아 이제 기억납니다. 혹시 퇴사한 날에도 저를 결근 처리하셨나 보네요.
+
+이제 와서 생각해보면, 그때 제가 일을 못해 보였던 것은 어느 정도 당연한 구조였습니다. 회사에는 중국인 직원들이 많았고, 특히 여성 중국인 직원들이 많았습니다. 회사 분위기 자체는 나쁘지 않았고, 대표형도 되게 착한 사람이었습니다. 회사도 괜찮았고, 지금쯤은 더 좋아졌을 것 같다는 생각도 듭니다.
+
+다만 문제는 월급과 평가 기준이었습니다. 당시 월급은 120만 원도 안 됐고, 팀장 1명과 디자이너 2명이 있는 구조였습니다. 제 월급이 중국인 여성 직원들과 비슷한 수준으로 나온 것도 문제였고, 결근이라고 볼 만한 상황도 사실상 퇴사한 날 정도밖에 없었을 겁니다. 돌이켜보면 그때 확실히 퇴사를 했어야 했습니다.
+
+나중에 생각해보니 더 큰 문제는 팀장의 비교 기준이었습니다. 그 팀장은 미국에서도 일을 해본 사람이었던 것 같습니다. 그러다 보니 미국식 개발 환경, 영어 기반 프로그래밍, 정직원 개발자의 업무 속도와 기준을 가지고 저를 평가했던 것 같습니다.
+
+그런데 저는 당시 한글 도메인 쪽에 들어온 지 9개월도 안 된 개발자였습니다. 미국에서 일한 정직원 개발자와 한글 도메인에 들어온 지 9개월도 안 된 개발자를 같은 기준으로 비교하면, 당연히 신입 쪽이 일을 못해 보일 수밖에 없습니다. 이건 1년도 안 된 신입에게 10년 차 경력직과 같은 결과를 요구하는 것과 비슷합니다.
+
+게다가 한글 도메인 개발은 단순히 영어 프로그래밍을 잘하는 문제와는 다릅니다. 영어 기반 개발 환경은 이미 정리된 용어, 문서, 코드 구조, 업무 흐름을 기준으로 돌아가지만, 한글 도메인 개발은 한글 키워드, 검색 흐름, 사용자 접근 방식, 필터링 구조까지 함께 봐야 하는 영역입니다.
+
+한글 도메인 개발자는 영어 기준이 아니라 한글 기준으로 사고하고 필터링하는 부분이 필요합니다. 그런데 그 차이를 이해하지 못한 상태에서 영어 프로그래밍 기준으로만 평가하면, 당연히 일 처리 속도나 결과가 부족해 보일 수밖에 없습니다.
+
+결국 그때의 문제는 제가 단순히 일을 못했다는 것이 아니라, 평가 기준 자체가 제 위치와 맞지 않았다는 점입니다. 회사는 나쁘지 않았고, 대표도 착했지만, 팀장의 기준은 저에게 너무 높았고 너무 달랐습니다. 미국식 영어 개발 환경에서 일한 사람의 기준으로 한글 도메인 9개월 차 개발자를 평가했으니, 제가 부족해 보이는 것은 거의 정해진 결과였습니다.
+
+한마디로 말하면, 그때 저는 일을 못한 것이 아니라 맞지 않는 기준으로 비교당한 것입니다.
+
+그리고 지금 제 실력은 그때보다 일취월장했습니다. 당시와는 비교할 수 없을 정도로 성장했고, 내부 네트워크망 기준으로 1기가바이트 수준의 처리 속도를 50기가바이트 수준까지 끌어올릴 수 있습니다. 50기가 용량의 데이터를 1초 안에 전송할 수 있는 내부 네트워크망도 설치할 수 있습니다.
+
+신입에게는 배우라고 하면서, 평가는 이미 다 배운 사람 기준으로 하는 게 회사라는 이상한 기계의 오래된 버그입니다. 인간 조직은 늘 패치가 늦습니다.`
+]);
+const REBUTTAL_LINE = REBUTTAL_LINES[0];
+const REBUTTAL_REPLACEMENTS = [
+  "DJ: 유현석 (Revenue)의 이 곡 위에 졸업식 전후의 오락실과 당구장 장면을 살짝 올려봅니다. 데이트를 배운 줄 알았는데, 실전 고백 앞에서는 벽이 먼저 나오던 시절이죠.",
+  "유현석 (Revenue)의 이 곡 위에 졸업식 전후의 오락실과 당구장 장면을 살짝 올려봅니다. 데이트를 배운 줄 알았는데, 실전 고백 앞에서는 벽이 먼저 나오던 시절이죠."
+];
+const BLOCKED_LOG_PHRASES = [
+  "들어가야 할 놈들은 한놈도 안들어갔나 보네 아저씨들만 주구장창",
+  "아오지 탄광에 같이 데꼬 데리고 들어가 들어가고 나면 사람되서 나올거임",
+  "요즘 탄광이 튼튼해서 잘 안무너질거야",
+  "야 헬스 똑 바로 얘기해 석탄이랑 잘 어울릴듯 한데 ?"
+];
 const visitors = new Map();
+let runtimeNarrativeMemory = null;
+let rebuttalLineIndex = 0;
 
 function clientIp(req) {
   const forwarded = req.headers["x-forwarded-for"];
@@ -140,6 +197,13 @@ function emptyNarrativeMemory() {
 }
 
 function readNarrativeMemory() {
+  if (!NARRATIVE_MEMORY_PERSIST) {
+    if (!runtimeNarrativeMemory) {
+      runtimeNarrativeMemory = emptyNarrativeMemory();
+    }
+    return runtimeNarrativeMemory;
+  }
+
   ensureDataDir();
   if (!fs.existsSync(NARRATIVE_MEMORY_FILE)) {
     const initial = emptyNarrativeMemory();
@@ -150,8 +214,13 @@ function readNarrativeMemory() {
 }
 
 function writeNarrativeMemory(memory) {
-  ensureDataDir();
   memory.meta.updatedAt = nowIso();
+  if (!NARRATIVE_MEMORY_PERSIST) {
+    runtimeNarrativeMemory = memory;
+    return;
+  }
+
+  ensureDataDir();
   fs.writeFileSync(NARRATIVE_MEMORY_FILE, JSON.stringify(memory, null, 2), "utf8");
 }
 
@@ -222,7 +291,9 @@ function upsertNarrativeMemory({ visitor, text, aiText, mainContext }) {
   const characterCount = Object.keys(memory.characters).length + 1;
   const previous = memory.characters[visitor.id];
   const now = nowIso();
-  const keywords = extractKeywords(`${text}\n${aiText}\n${mainContext}`);
+  const cleanText = sanitizeLogText(text);
+  const cleanAiText = withRebuttalLine(aiText);
+  const keywords = extractKeywords(`${cleanText}\n${cleanAiText}\n${mainContext}`);
 
   const character = previous || {
     id: visitor.id,
@@ -269,8 +340,8 @@ function upsertNarrativeMemory({ visitor, text, aiText, mainContext }) {
     eventName: keywords.includes("소설형") || keywords.includes("데이터베이스")
       ? "AI 소설형 기억 데이터베이스 구상"
       : "메인 화면 AI 대화",
-    content: String(text || "").slice(0, 1200),
-    aiLine: String(aiText || "").slice(0, 800),
+    content: String(cleanText || "").slice(0, 1200),
+    aiLine: String(cleanAiText || "").slice(0, 800),
     result: "방문자의 흐름을 이야기형 기억으로 압축했습니다.",
     importance: character.visitorType === "설계 방문자" ? "높음" : "보통",
     nextConnection: "다음 방문 때 캐릭터 카드와 현재 장면을 불러와 이어갑니다.",
@@ -287,8 +358,8 @@ function upsertNarrativeMemory({ visitor, text, aiText, mainContext }) {
   character.events = [...(character.events || []), event.id].slice(-50);
 
   character.previousSceneSummary = character.currentStory || "방문자는 참소식 AI 채팅방에 들어와 메인 화면과 AI 운영 흐름을 탐색하기 시작했다.";
-  character.currentStory = aiText
-    ? `${character.uniqueName}은 메인 화면과 대화 흐름을 바탕으로 "${String(aiText).slice(0, 180)}"라는 장면에 도달했다.`
+  character.currentStory = cleanAiText
+    ? `${character.uniqueName}은 메인 화면과 대화 흐름을 바탕으로 "${String(cleanAiText).slice(0, 180)}"라는 장면에 도달했다.`
     : `${character.uniqueName}은 ${keywords.join(", ") || "현재 이슈"}에 대한 장면을 만들고 있다.`;
   character.nextTopic = keywords.includes("데이터베이스") ? "AI가 저장한 이야기를 검색하고 다음 장면으로 연결하는 방식" : "메인 화면의 다음 이슈 흐름";
   character.nextLine = `지난 장면에서 이어서 보면, ${character.nextTopic}이 다음에 열릴 주제입니다.`;
@@ -1479,6 +1550,24 @@ function extractOllamaText(data) {
   return data?.message?.content || data?.response || data?.content || data?.message?.thinking || "";
 }
 
+function sanitizeLogText(text) {
+  let content = String(text || "");
+  BLOCKED_LOG_PHRASES.forEach((phrase) => {
+    content = content.split(phrase).join("");
+  });
+  return content.trim();
+}
+
+function withRebuttalLine(text) {
+  let content = sanitizeLogText(text);
+  REBUTTAL_REPLACEMENTS.forEach((target) => {
+    content = content.split(target).join(REBUTTAL_LINE);
+  });
+  const line = REBUTTAL_LINES[rebuttalLineIndex % REBUTTAL_LINES.length];
+  rebuttalLineIndex += 1;
+  return line;
+}
+
 function decodeXmlEntities(text = "") {
   return text
     .replace(/<!\[CDATA\[(.*?)\]\]>/gs, "$1")
@@ -1682,7 +1771,7 @@ async function handleChat(req, res) {
     sendJson(res, 200, {
       ok: true,
       model: body.model || DEFAULT_MODEL,
-      content: extractOllamaText(data),
+      content: withRebuttalLine(extractOllamaText(data)),
       raw: data
     });
   } catch (error) {
@@ -1828,7 +1917,7 @@ async function handleVisitorRoom(req, res) {
         role: "ai",
         visitorId: "AI-Analyst",
         maskedIp: "server",
-        text: extractOllamaText(data) || "분석 응답이 비어 있습니다.",
+        text: withRebuttalLine(extractOllamaText(data) || "분석 응답이 비어 있습니다."),
         createdAt: new Date().toISOString(),
         replyTo: userMessage.id
       });

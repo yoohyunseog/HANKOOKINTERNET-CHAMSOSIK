@@ -1,0 +1,243 @@
+{
+  "timestamp": "2026-05-16T04:44:20.447442",
+  "model": "mistral:latest",
+  "keyword_count": 3,
+  "analyze_subtitles": true,
+  "analysis_source": "youtube",
+  "keywords": [
+    {
+      "keyword": "오늘의 주요 뉴스",
+      "is_fixed": true,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "SK하이닉스 엔비디아 매출 실적",
+      "is_fixed": false,
+      "views": [
+        2806,
+        2428
+      ],
+      "video_count": 2,
+      "videos": [
+        {
+          "title": "[SK하이닉스] 앞으로 이렇게 됩니다｜HBM 시장과 주가 전망 총정리 #SK하이닉스 #주가전망 #반도체주",
+          "video_id": "rFX8CylK7Q8",
+          "views": 2806,
+          "upload_date": "2026-05-15",
+          "url": "https://www.youtube.com/watch?v=rFX8CylK7Q8",
+          "subtitle_summary": "1. SK Hynix는 목표가를 300만원으로 높였습니다. 현재 영업익 277조, 영업 이익률 세계 1을 달성할 수 있을 것으로 예상됩니다.\n2. 하지만 최근에는 매도 세가 계속되고 있어서 200만원 이하에서 외인 수급이 추가적으로 들어올 것으로 예상됩니다.\n3. 따라서 앞으로 단기적으로는 문제가 있었던 수급적인 부분에서 복귀가 관건이며, 중장기적으로는 반도체 쪽에서 주목해야 합니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[ SK하이닉스 주가전망 ] 이제는 300만닉스! 영업이익률 78% 세계 1위 노리는 SK하이닉스의 위엄",
+          "video_id": "dEJurRSBjTA",
+          "views": 2428,
+          "upload_date": "2026-05-15",
+          "url": "https://www.youtube.com/watch?v=dEJurRSBjTA",
+          "subtitle_summary": "1. SK하이닉스의 주가는 최근 8,000선을 찍었다가 급락했으나, AI 데이터 센터와 출론 모델의 열리면서 HBM 수요가 폭발적으로 증가하고 있습니다.\n2. SK하이닉스는 세계 최초로 HBM 32를 양산하며 NBDI의 독점 공급 중인 기업으로 AI 서버용 메모리 수요 급증과 일반 D램 가격 반등이 동시에 진행되면서 수주 장고가 빠르게 쌓이고 있습니다.\n3. SK하이닉스의 주가는 현재 스피닝탑 캔들을 만들었으며, 다음 주 월요일장이 열리면 반등이 나올 수 있습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 4.7819,
+      "min": 0.0,
+      "nb_score": 47818.6386,
+      "avg_views": 2617.0,
+      "total_views": 5234
+    },
+    {
+      "keyword": "청해부대 대드론 방호체계",
+      "is_fixed": false,
+      "views": [
+        5106,
+        2488,
+        41
+      ],
+      "video_count": 3,
+      "videos": [
+        {
+          "title": "'Wang Geon' Ship, Enhanced with Drone Defenses, Departs for Middle East Today... Will Hormuz Miss...",
+          "video_id": "HfsMjlZP-ng",
+          "views": 5106,
+          "upload_date": "2026-05-15",
+          "url": "https://www.youtube.com/watch?v=HfsMjlZP-ng",
+          "subtitle_summary": "1. 청해부대 48진이 중동 아덴만 해역으로 추항했습니다. 목적지는 6개월 동안 우리 선박의 안전 호송과 대회적 작업을 수행하게 됩니다.\n2. 왕건함에는 승조원, UDTC 특전 요원, 건문 검색대, 의무 정비지원 인력 등 약 200명이 탑승했습니다.\n3. 이번 추항은 미국이 호르무즈 해협에 군사적 기어를 압박하는 가운데 주목받고 있으며, 포르무즈 해업을 대비한 드론 방호 체계를 보강했다는 의혹도 나왔습니다. 하지만 해군측은 이것은 차원적인 임무변화를 전제로 준비한 것이 아니라고 밝혔습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "대드론 보강한 왕건함 출항…호르무즈로 임무 확대? [9시 뉴스] / KBS  2026.05.15.",
+          "video_id": "RE7IzTvh824",
+          "views": 2488,
+          "upload_date": "2026-05-15",
+          "url": "https://www.youtube.com/watch?v=RE7IzTvh824",
+          "subtitle_summary": "1. 왕건함은 소말리아 아덴만 해역으로 출항하여 임무를 교대합니다. 이는 중동 전쟁의 위험 요인을 감안한 것으로, 자폭드론 방어 능력을 강화하기 위해 대드론 보강을 진행했습니다.\n2. 왕건함은 127m 한포와 24발의 미사일을 쏠 수 있는 한국형 수직 발사 체계를 갖추고 있으며, 근접 방어 체계인 30mm 기관포로 빠르게 드론을 격추할 수 있습니다.\n3. 왕건함의 임무 범위가 호르무즈 헤업으로까지 확대되는 것은 아니라고 해군 관계자들이 말하며, 다양한 위협에 대비하기 위한 것임을 강조했습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "‘드론전 강화’ 왕건함…호르무즈 투입 촉각 / KBS  2026.05.15.",
+          "video_id": "DLGdLtlq8gg",
+          "views": 41,
+          "upload_date": "2026-05-15",
+          "url": "https://www.youtube.com/watch?v=DLGdLtlq8gg",
+          "subtitle_summary": "1. 왕건함, 4,400톤급 구축함 중 한국 해군의 주력 전투함이 오늘 부산에서 추항하여 소말리아 아덴만 해역으로 향합니다.\n2. 현재 소말리아 아덴만 해역에서 임무수행 중인 대조영함과 교대할 예정이며, 중동 사태의 핵심 위협으로 자폭드론을 대응하기 위해 대드론 방호 체계를 강화했다는 보도가 있었습니다.\n3. 왕건함은 127m 한포와 24발의 미사일을 쏠 수 있는 한국형 수직 발사 체계를 갖추고 있으며, 근접 방어 체계로 30mm 기관포가 장비되어 있습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 2.0012,
+      "min": 2.1383,
+      "nb_score": 0.9359,
+      "avg_views": 2545.0,
+      "total_views": 7635
+    },
+    {
+      "keyword": "애스턴 빌라 리버풀 하이라이트",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "용인 반도체 클러스터 현황",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "반도체 파업 해외 수출 영향",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "AI 데이터센터 구리값 급등",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "금리 인상 보험론 김진일",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "연금 투자 개미 외국인 매도",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "금값 하락 전망 금리 영향",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "K자율주행 규제 현황",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "오픈AI 애플 소설 검토",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "토론회 일정",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "이 체험",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "마크롱 시진핑 회담 성과",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    }
+  ]
+}

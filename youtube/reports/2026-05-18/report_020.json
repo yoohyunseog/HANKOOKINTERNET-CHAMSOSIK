@@ -1,0 +1,339 @@
+{
+  "timestamp": "2026-05-18T05:08:19.288353",
+  "model": "mistral:latest",
+  "keyword_count": 3,
+  "analyze_subtitles": true,
+  "analysis_source": "youtube",
+  "keywords": [
+    {
+      "keyword": "오늘의 주요 뉴스",
+      "is_fixed": true,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "GTX 삼성역 철근",
+      "is_fixed": false,
+      "views": [
+        9680,
+        4743
+      ],
+      "video_count": 2,
+      "videos": [
+        {
+          "title": "Oh Se-hoon on GTX-A 'Rebar Omission' Criticism: \"Jeong Won-oh Must Be Feeling the Pressure Now\" [...",
+          "video_id": "nQ7ogdfGcTk",
+          "views": 9680,
+          "upload_date": "2026-05-17",
+          "url": "https://www.youtube.com/watch?v=nQ7ogdfGcTk",
+          "subtitle_summary": "1. Oh Se-hoon is criticizing Jeong Won-oh for attacking Samsung's GTX-A project in the Samsung Station area, claiming that Jeong's criticism is unfounded since the construction of the project is being funded by Hyundai Group and public funds.\n2. Hyundai Construction admitted to an error in interpreting the design plans for the project, which led to the omission of rebar.\n3. To rectify the issue, Hyundai Construction will reinforce the structure with additional steel bars and strengthening plates, but this will likely increase costs for the company.",
+          "db_saved": true
+        },
+        {
+          "title": "[다시보기] 정원오, GTX '철근누락'에 총공세…\"무책임한 안전불감증\"-5월 17일 (일) 풀영상 [이슈현장] / JTBC News",
+          "video_id": "S-dMd91IwvI",
+          "views": 4743,
+          "upload_date": "2026-05-17",
+          "url": "https://www.youtube.com/watch?v=S-dMd91IwvI",
+          "subtitle_summary": "1. 정원오는 GTX 프로젝트의 보급파스 센터에서 총공세를 받고 있으며, 현재 진행률은 대략 60%입니다.\n2. 지하 5층부터 3층까지 시공이 완료되었으나, 3층 바닥에서 누락된 부분이 발견되어 보고하였습니다.\n3. 강판 보강을 통해 빠르게 시공을 진행하여 안전에 대한 문제를 없앨 계획입니다. 국토부의 최종 검증이 필요합니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 3.4103,
+      "min": 0.0,
+      "nb_score": 34103.0398,
+      "avg_views": 7211.5,
+      "total_views": 14423
+    },
+    {
+      "keyword": "삼성전자 파업",
+      "is_fixed": false,
+      "views": [
+        107941,
+        14065,
+        18966
+      ],
+      "video_count": 3,
+      "videos": [
+        {
+          "title": "21년 만에 부활하나...삼성전자 노사 향한 경고에 노동계 '강력 반발' [지금이뉴스] / YTN",
+          "video_id": "KLpT86bcY2Y",
+          "views": 107941,
+          "upload_date": "2026-05-17",
+          "url": "https://www.youtube.com/watch?v=KLpT86bcY2Y",
+          "subtitle_summary": "1. 정부는 17일 삼성전자 파업 위기로 인해 최후의 수단으로 긴급 조정권 발동이 가능성이 있다고 밝혔습니다.\n2. 18일 중앙동위원회 사후 조정이 파업전 마지막 단판 기회로 보이며, 정부는 양측의 대화로서 해결할 것을 요구하고 있습니다.\n3. 김민석 국무총리는 긴급 조정권 발동에 대해 노사가 무게를 가볍게 여기지 않아야 한다고 강조했으며, 이는 파업을 막을 수 있는 마지막 기회라고 보입니다.",
+          "db_saved": true
+        },
+        {
+          "title": "\"긴급조정권 발동하면 투쟁\"…민노총, 삼성전자 노조 파업 기습 등판",
+          "video_id": "hDccGzVJT4Y",
+          "views": 14065,
+          "upload_date": "2026-05-17",
+          "url": "https://www.youtube.com/watch?v=hDccGzVJT4Y",
+          "subtitle_summary": "1. 삼성전자 노조 파업 문제가 정부와 노동계 간의 갈등으로 번지고 있음을 보이고 있습니다.\n2. 민주노총은 삼성전자 노사 갈등에 강경대응하며, 정부가 긴급조정권 발동을 논의할 경우 투쟁에 나서겠다고 경고했습니다.\n3. 노동계는 이번 사안을 삼성전자 한 기업의 문제로만 보지 않고, 반도체 산업 파업에 대해 같은 논리가 적용될 수 있다는 우려가 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "\"삼성전자 노조, 파업 고집 안 돼\"...'최후 수단' 언급한 김민석 총리 [지금이뉴스] / YTN",
+          "video_id": "iK8YfuTa6sQ",
+          "views": 18966,
+          "upload_date": "2026-05-17",
+          "url": "https://www.youtube.com/watch?v=iK8YfuTa6sQ",
+          "subtitle_summary": "1. 국무총회에서 김민서 총리는 삼성전자 노조가 파업을 진행할 경우 피해는 상상을 초월할 것이며, 대화와 타협을 통한 합의를 추구했다고 밝혔습니다.\n2. 김총인은 삼성전자 파업은 반도체 생산 외에도 국민경제 전반에 깊은 상처를 줄 것이라고 강조했으며, 정부는 모든 수단을 사용하여 국민 피해를 방지할 것이다고 밝혔습니다.\n3. 김총리는 삼성전자 노조와의 대화와 타협을 통해 합의점을 찾도록 요청했고, 긴급 관계부처 장관 회의를 열어 삼성전자 노조 파업에 대비한 대책을 논의했다고 하였습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 1.0854,
+      "min": 2.53,
+      "nb_score": 0.429,
+      "avg_views": 46990.67,
+      "total_views": 140972
+    },
+    {
+      "keyword": "정청래 암살단 제보",
+      "is_fixed": false,
+      "views": [
+        36748,
+        6384,
+        4371,
+        2118,
+        7432,
+        22294,
+        794
+      ],
+      "video_count": 7,
+      "videos": [
+        {
+          "title": "[Today's News] \"Tip-off on Recruitment of Assassination Squad for Chung Cheong-rae\"... Request fo...",
+          "video_id": "gtkcAr_ukBQ",
+          "views": 36748,
+          "upload_date": "2026-05-17",
+          "url": "https://www.youtube.com/watch?v=gtkcAr_ukBQ",
+          "subtitle_summary": "1. 정치적 폭력 위협으로, SNS 단체방에서 정청례를 죽이고 정청 암살단을 모집하는 테러 모의가 발생했다는 제보가 접수되었습니다.\n2. 이로 인해 당차원에서 경찰의 신속한 수사 의뢰와 함께 정치인 및 민주주의를 위한 철저한 신변 보호를 요청했습니다.\n3. 이러한 상황에서 정치적 폭력으로 인한 대한민국의 미래에 해를 가할 수 있는 것이므로, 신속한 수사 절차와 철저한 신변보호를 요구하고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "민주당 “온라인서 정청래 테러 모의 정황 제보 받아…수사·신변보호 요청” [현장영상] / 채널A",
+          "video_id": "snflB3Cq27I",
+          "views": 6384,
+          "upload_date": "2026-05-17",
+          "url": "https://www.youtube.com/watch?v=snflB3Cq27I",
+          "subtitle_summary": "1. 더불어민주당 공보단장 강준현은 63일 남은 지방선거에 관련해 정치적 폭력과 테러모의가 있음을 알리며, 경찰에게 신속한 수사 요청과 철저한 신변보호를 하겠다고 요청했습니다.\n2. 강준현은 정치적 협박으로 인해 정치의 후퇴를 방지하기 위해, 정당의 지방선거 승리와 당원들의 당선을 위한 최고의 노력을 다할 것이라고 밝혔습니다.\n3. 강준현은 정치적 폭력으로 인해 대한민국의 미래에 피해를 줄 수 있음을 경계하며, 정치와 민주주의를 크게 후퇴시키는 불행한 일이 반복되지 않도록 요구했습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "'정청래 겨냥 테러 모의' 제보 잇따라…민주 \"수사·신변보호 요청\" [현장영상]",
+          "video_id": "Jvk4zxXZAWs",
+          "views": 4371,
+          "upload_date": "2026-05-17",
+          "url": "https://www.youtube.com/watch?v=Jvk4zxXZAWs",
+          "subtitle_summary": "1. 더불어민주당은 정청래 대표를 위한 테러 모의에 관련한 제보가 계속 들어오고 있으며, 이로 인해 경찰의 수사 요청과 신변 보호를 요구했습니다.\n2. 강준현, 더불어민주당 선대위 공보단장, 63일 지방 선거가 남았음을 밝혔고, 정치적 폭력이나 협박으로 인한 정치인의 행동 위축에 대해 경찰에 신속한 수사 요청과 철저한 신변보호를 부탁했습니다.\n3. 정청래 대표는 어떠한 우협과 협박에도 굴하지 않고, 당선을 위해 최선을 다할 것입니다.",
+          "db_saved": true
+        },
+        {
+          "title": "Democratic Party: \"Requesting Police Investigation into Jeong Cheong-rae's 'Assassination Plot' R...",
+          "video_id": "9kKE5A8mtxY",
+          "views": 2118,
+          "upload_date": "2026-05-17",
+          "url": "https://www.youtube.com/watch?v=9kKE5A8mtxY",
+          "subtitle_summary": "Democratic Party has reportedly requested a police investigation into allegations of an assassination plot against Jeong Cheong-rae, citing concerns about a terror plan being organized in a secret SNS music group chat. They have also asked for protection from the police and the music platform due to specific threats made that could potentially endanger lives, labeling such actions as serious interference with election campaigns.",
+          "db_saved": true
+        },
+        {
+          "title": "정청래 “암살 모의, 참담하고 괴로워…자수 후 선처 호소하라” [현장영상] / 채널A",
+          "video_id": "JIrOJaPjgG8",
+          "views": 7432,
+          "upload_date": "2026-05-17",
+          "url": "https://www.youtube.com/watch?v=JIrOJaPjgG8",
+          "subtitle_summary": "1. 이 영상에서는 정치인 박지원이 전북 특별자치도 위원회 후보로 참석한 것을 보여주며, 그의 선거운동과 정부 지원을 강조합니다.\n2. 또한 김대근 신부가 중국에서 도착한 성당에서 경건한 마음으로 미사를 드렸다는 것도 언급됩니다.\n3. 최후반에는 정치인 박지원이 SNS에서 암살단을 모집하고 가입할 생각을 표시한 글을 보았다는 사실과, 그 배후에 대해 경찰의 수사를 진행중이라는 것이 언급됩니다. 또한 이런 암살의 대상이 박지원인 것으로 보여집니다.",
+          "db_saved": true
+        },
+        {
+          "title": "“鄭 죽이자·암살단 모집”…친명·친정 갈등 여파? / 채널A / 뉴스 TOP10",
+          "video_id": "LZ49uWK_ejc",
+          "views": 22294,
+          "upload_date": "2026-05-17",
+          "url": "https://www.youtube.com/watch?v=LZ49uWK_ejc",
+          "subtitle_summary": "1. 정치적 갈등으로 인해 최근 선거에서 가장 큰 음악 격전지가 되고 있는 것 같습니다. 정치인들은 테러 위협을 받고 있으며, 어제와 오늘 굉장히 큰 파장을 일으켰습니다.\n2. 지난 주말 정치인의 발언에서 테러 위협글이 나왔고, 당연히 기자들이 물었습니다. 그 결과 정치인은 \"암살단을 모집하고 가입할 것입니다\"는 SNS 글을 보았고, 이를 본 민주당에서 경찰의 수사를 요청했습니다.\n3. 정치인은 \"어떤 건지 파악되지 않았지만 집단적으로 모여서 테러를 가할 것\"이라는 SNS 글들이 확인되었고, 이에 대해서는 방관할 수 없습니다. 특히 선거가 아직 진행중이며, 민주당의 여당 당대표인 정치인을 테러하겠다는 모의가 있고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[Political Scene] \"Recruiting a Jeong Cheong-rae Assassination Squad\": The Democratic Party Turne...",
+          "video_id": "y0QPRtFXcWI",
+          "views": 794,
+          "upload_date": "2026-05-17",
+          "url": "https://www.youtube.com/watch?v=y0QPRtFXcWI",
+          "subtitle_summary": "1. 정치적 단체들에서 정청내 대표인 정청래를 살해하기 위한 암살단을 모집하는 것으로 알려진 SNS 채팅방이 있다고 보도되었습니다.\n2. 이에 대응하여 당사는 철저한 신변 보호를 요청하고, 수사 의뢰를 제출했으며, 테러 모의 또는 실체로서 중대한 범죄입니다.\n3. 이러한 일은 정치적 폭력과 협박을 포함하여 선거운동에 큰 방해를 줄 수 있으며, 우리 민주주의와 정치를 위해서는 이러한 일이 반복되면 안 됩니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0.5769,
+      "min": 1.4279,
+      "nb_score": 0.404,
+      "avg_views": 11448.71,
+      "total_views": 80141
+    },
+    {
+      "keyword": "긴급조정권 논란",
+      "is_fixed": false,
+      "views": [
+        2612
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "[Replay] PM Kim Min-seok: \"Up to 100 Trillion Won in Damages\"... Government Warns of Emergency Me...",
+          "video_id": "A4f2HSw6hQs",
+          "views": 2612,
+          "upload_date": "2026-05-17",
+          "url": "https://www.youtube.com/watch?v=A4f2HSw6hQs",
+          "subtitle_summary": "1. 정부는 삼성전자의 노조 파업으로 인해 최대 100조원의 경제적 피해를 예상하고 있습니다. 내일 사후 조정에서 노조와의 협상이 마지막 기회라고 강조했으며, 긴급 조정권을 발동할 수도 있다고 밝혔습니다.\n2. 김민석 국무총리는 대국민 담화를 발표하여 노조와의 협상을 촉구했으며, 파업이 극단적인 선택보다 대화와 타협을 통해 위기를 함께 해결해야 한다고 강조했습니다.\n3. 노조는 영업 이익의 15%를 요구하며, 제도화까지 주장하고 있으나, 사측은 업계 1위를 달성할 경우에만 특별 포상을 주겠다는 입장을 취했습니다. 매년 수십조원의 투자가 필요한 반도체 산업 특성상 성과급 비율을 고정하는 것이 어렵다고 보고 있습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "미중 정상회담 결과",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "이란 제재 트럼프",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "메모리 반도체 품귀",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "초가공식품 건강",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "부동산 정책 협공",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "코스피 8000 전망",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "전세난 아파트 세입자",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "석유화학 업종 전망",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "삼성전자 노조 분사",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "한동훈 법사위 폭거",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "광주 5·18 헌법전문 수록",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    }
+  ]
+}
