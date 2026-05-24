@@ -1,0 +1,269 @@
+{
+  "timestamp": "2026-05-23T01:59:09.990948",
+  "model": "mistral:latest",
+  "keyword_count": 3,
+  "analyze_subtitles": true,
+  "analysis_source": "youtube",
+  "keywords": [
+    {
+      "keyword": "오늘의 주요 뉴스",
+      "is_fixed": true,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "소방청장 감찰 착수",
+      "is_fixed": false,
+      "views": [
+        54525,
+        72800
+      ],
+      "video_count": 2,
+      "videos": [
+        {
+          "title": "President Lee Orders Emergency Inspection of Fire Commissioner (05/22/2026/News Desk/MBC)",
+          "video_id": "r5N3U3ospcM",
+          "views": 54525,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=r5N3U3ospcM",
+          "subtitle_summary": "1. 대통령(Lee) 청와대에서 오늘 저녁 공지로, 소방청장(Kim Seung-ryeol)의 개인 비에 관한 즉각적인 진실 확인을 지시했다는 것이 밝혔습니다.\n2. 정부 관계자는 최근 공공기관 차량 2부제를 피해 긴급 출동용 전기차로 출퇴근한 서울 성동경찰서장의 대기발령 조치가 이루어졌다고 설명했습니다.\n3. 이와 유사한 사례라는 것으로 추정됩니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[속보] 청와대, \"현 소방청장 감찰 착수\"... 이 대통령, 진상 확인 지시",
+          "video_id": "Sl5SEVQqCxw",
+          "views": 72800,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=Sl5SEVQqCxw",
+          "subtitle_summary": "1. 이재명 대통령이 김승용 소방청장에 대한 즉각적인 진상 확인과 감찰 착수를 지시했습니다.\n2. 대통령실은 구체적인 배경에 대해서는 공개하지 않았으며, 어떤 사안이 보고됐고 감찰이 시작된 이유에 대해서도 설명하지 않았습니다.\n3. 향후 감찰 결과와 관련해 추가 입장을 내놓을 것으로 예상됩니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 4.2976,
+      "min": 0.0,
+      "nb_score": 42975.8328,
+      "avg_views": 63662.5,
+      "total_views": 127325
+    },
+    {
+      "keyword": "국민성장펀드 6000억 완판",
+      "is_fixed": false,
+      "views": [
+        7115,
+        1405
+      ],
+      "video_count": 2,
+      "videos": [
+        {
+          "title": "[Issue] People's Participation Growth Fund Sells Out on Day One... Financial Authorities Prepare ...",
+          "video_id": "S2vV3l5W_Lg",
+          "views": 7115,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=S2vV3l5W_Lg",
+          "subtitle_summary": "1. 국민참여 성장 펀드가 1일 매각되었습니다. 이 펀드는 6억원의 규모로 반도체, AI, 방산 바이오 등 12개 종목에 투자하게 됩니다.\n2. 정부가 제공하는 혜택으로, 손실 가능성이 있지만 소득공제 및 분리 과세 등의 장점이 있습니다.\n3. 19세 이상 근로 소득자 또는 금융소득 종합과세 대상자가 가입할 수 있으며, 직전 3년 동안 2천만원 초과한 이자와 배당 소득을 받은 분들에게 제안됩니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[지금뉴스] “10분만에 다 팔렸다”…국민성장펀드 첫날 ‘혼란’ / KBS 2026.05.22.",
+          "video_id": "Ryueywcc998",
+          "views": 1405,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=Ryueywcc998",
+          "subtitle_summary": "1. 국민성장펀드(National Growth Fund)의 첫날, 투자자들이 혼란스러운 상황을 보여주며 신분증과 기존 투자 성향을 제시하여 펀드에 참여합니다.\n2. 펀드의 특징은 공격 투자형이며, 정부 재정을 통해 안전성과 세제 혜택이 있음을 설명합니다.\n3. 투자자는 국민성장펀드를 통해 미래 경제와 산업에 참여하고 싶어하며, 펀드의 구상과 계획을 위해 이러한 참여가 당연하다고 느꼈음을 밝힘.",
+          "db_saved": true
+        }
+      ],
+      "max": 2.8656,
+      "min": 1.4825,
+      "nb_score": 1.9329,
+      "avg_views": 4260.0,
+      "total_views": 8520
+    },
+    {
+      "keyword": "트럼프 나토 동맹국 실망",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "미국 항공모함 증파 폴란드",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "에볼라 확산 민주콩고 항공중단",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "우크라이나 러시아 점령지 학교 공습",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "초등학교 학폭 방관자 증가",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "AI 대학 입시 제도 변화",
+      "is_fixed": false,
+      "views": [
+        26438
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "아직도 '대학 입시'에만 쩔쩔매는 대한민국 😨 반도체 공학 인재들이 설자리는 어디에?ㅣ KBS 다큐 인사이트 - 인재전쟁2 : 2부 코리아 딜레마  260521 방송",
+          "video_id": "-VrzRGXVZ6s",
+          "views": 26438,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=-VrzRGXVZ6s",
+          "subtitle_summary": "1. 대한민국의 학생들은 현재 대학 입시에만 집중하고 있으며, 반도체 공학 분야에서는 직업 수요가 높지만 대체할 사람이 쉽지 않다고 생각한다.\n2. 의료 시설에서 의사 체험을 제공하며, 학부모들은 비싼 가격에도 만족도가 높다고 보고된다.\n3. 의대 입시는 여전히 경쟁이 치열하지만, 최상위권 학생들은 중북 합격을 한 100% 이상 빠져나가고 있다. 반도체 계약학과에서는 입시에 대비해 예측되었지만, SK Hynix의 1분기 실적은 사상 최고치를 기록했다. 하지만 수험생들 입장에서는 취업이 어려운 상황이며, AI 산업은 빠르게 성장하고 있다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "중국 대사 혐중 가짜뉴스 비판",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "반도체 공급망 AI 경제동맹",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "원달러 환율 1517원 마감",
+      "is_fixed": false,
+      "views": [
+        2294
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "Exchange rate nears 1,520 won intraday.. \"Firm action if necessary\" / SBS 8 News",
+          "video_id": "GXmGwx63I3k",
+          "views": 2294,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=GXmGwx63I3k",
+          "subtitle_summary": "1. Previous Blue House aide's interrogation has been conducted. (SBS News Credit)\n2. The closing exchange rate reached 1517 won, surpassing the previous day by more than 11 won. This rise is attributed to international gold prices escalating due to tension between the U.S. and Iran, and a consecutive 12-day net sale by foreigners in our stock market.\n3. The government and Bank of Korea have stated they will take firm action if necessary, as they perceive the exchange rate movement to be excessive compared to the current economic conditions.",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "테슬라 자율주행 중국 승인",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "정년퇴직 구직급여 신청",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "서울 경기 전월세 급등",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "화물선 관련 최",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    }
+  ]
+}

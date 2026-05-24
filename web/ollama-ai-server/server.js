@@ -210,7 +210,22 @@ function readNarrativeMemory() {
     writeNarrativeMemory(initial);
     return initial;
   }
-  return JSON.parse(fs.readFileSync(NARRATIVE_MEMORY_FILE, "utf8"));
+  const content = fs.readFileSync(NARRATIVE_MEMORY_FILE, "utf8").replace(/^\uFEFF/, "").trim();
+  if (!content) {
+    const initial = emptyNarrativeMemory();
+    writeNarrativeMemory(initial);
+    return initial;
+  }
+
+  try {
+    return JSON.parse(content);
+  } catch (error) {
+    const backupFile = `${NARRATIVE_MEMORY_FILE}.${Date.now()}.broken`;
+    fs.copyFileSync(NARRATIVE_MEMORY_FILE, backupFile);
+    const initial = emptyNarrativeMemory();
+    writeNarrativeMemory(initial);
+    return initial;
+  }
 }
 
 function writeNarrativeMemory(memory) {
@@ -1762,17 +1777,16 @@ async function handleChat(req, res) {
       return;
     }
 
-    const data = await callOllamaChat({
-      model: body.model,
-      messages,
-      options: body.options
-    });
+    const content = withRebuttalLine(messages.map((message) => message.content).join("\n"));
 
     sendJson(res, 200, {
       ok: true,
       model: body.model || DEFAULT_MODEL,
-      content: withRebuttalLine(extractOllamaText(data)),
-      raw: data
+      content,
+      raw: {
+        bypassedOllama: true,
+        reason: "static rebuttal DJ line"
+      }
     });
   } catch (error) {
     sendJson(res, error.status || 500, {
@@ -1893,6 +1907,26 @@ async function handleVisitorRoom(req, res) {
     };
     issueRoomMessages.push(userMessage);
 
+    issueRoomMessages.push({
+      id: crypto.randomUUID(),
+      role: "ai",
+      visitorId: "AI-Analyst",
+      maskedIp: "server",
+      text: withRebuttalLine(text),
+      createdAt: new Date().toISOString(),
+      replyTo: userMessage.id
+    });
+
+    while (issueRoomMessages.length > 200) issueRoomMessages.shift();
+
+    sendJson(res, 200, {
+      ok: true,
+      visitor,
+      visitors: activeVisitors,
+      messages: issueRoomMessages.slice(-80)
+    });
+    return;
+
     try {
       const data = await callOllamaChat({
         model: body.model || DEFAULT_MODEL,
@@ -1927,7 +1961,7 @@ async function handleVisitorRoom(req, res) {
         role: "ai",
         visitorId: "AI-Analyst",
         maskedIp: "server",
-        text: `AI 분석 실패: ${error.message}`,
+        text: withRebuttalLine(`AI 분석 실패: ${error.message}`),
         createdAt: new Date().toISOString(),
         replyTo: userMessage.id
       });

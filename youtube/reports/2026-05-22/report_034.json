@@ -1,0 +1,433 @@
+{
+  "timestamp": "2026-05-22T11:36:24.069615",
+  "model": "mistral:latest",
+  "keyword_count": 3,
+  "analyze_subtitles": true,
+  "analysis_source": "youtube",
+  "keywords": [
+    {
+      "keyword": "오늘의 주요 뉴스",
+      "is_fixed": true,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "삼성증권 주가 전망",
+      "is_fixed": false,
+      "views": [
+        3219,
+        10011
+      ],
+      "video_count": 2,
+      "videos": [
+        {
+          "title": "[삼성전자 주가 전망] 새벽미장, 야간선물 보합 유지중!! 그러나 어제 들어온 모건형제의 1조8천억 대량매수!! 오늘도 추가매수?! 일단 영상부터 빠르게 확인 하세요!!",
+          "video_id": "drPsgiklRHM",
+          "views": 3219,
+          "upload_date": "2026-05-21",
+          "url": "https://www.youtube.com/watch?v=drPsgiklRHM",
+          "subtitle_summary": "1. 현재 시간은 12:26, 엄프로는 매일 새벽 미장과 야간 선물을 분석하여 삼성전자의 주가 변동성에 대해 예측합니다.\n2. 오늘도 강한 흐름의 상승이 발생했으며, 최근 신규 투자금이 유입되고 있음을 확인할 수 있었습니다.\n3. 미장과 야간 선물에서는 보합권을 유지하고 있으며, 내일도 반도체 종목들이 추가적인 상승을 만들어 갈 확률이 매우 높아 보입니다.",
+          "db_saved": true
+        },
+        {
+          "title": "삼성중공업 주가 전망. 역사적인 오늘, 심상치 않았죠? 내일 주가 감히 맞춰보겠습니다. 반드시 체크해보세요. 5월 21일 방송.",
+          "video_id": "jVEcU12XO6I",
+          "views": 10011,
+          "upload_date": "2026-05-21",
+          "url": "https://www.youtube.com/watch?v=jVEcU12XO6I",
+          "subtitle_summary": "1. 삼성중공업의 세력 마인드를 보여준 것으로, 다른 종목과 달리 자신 갈길을 택하고 있음을 설명했습니다.\n2. 삼성중공업은 LNG선 수주 등으로 최근 성장하고 있으며, 이런 상황에서 하락한 후 또 올라가는 추세를 보이고 있음을 예측했습니다.\n3. 삼성중공업은 트럼프의 정책주로 인해 미국 테마주로서 상승할 가능성이 있으며, 미국 중간 선거 직전에는 고점을 찍고 3개월 후 하락할 수 있음을 예측했습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 3.0287,
+      "min": 0.6301,
+      "nb_score": 4.8067,
+      "avg_views": 6615.0,
+      "total_views": 13230
+    },
+    {
+      "keyword": "지지율",
+      "is_fixed": false,
+      "views": [
+        13807,
+        1695,
+        20031
+      ],
+      "video_count": 3,
+      "videos": [
+        {
+          "title": "[Straight to Issue] Polls Show Ha Jung-woo and Han Dong-hoon Tie in Two-Candidate Matchup... Are ...",
+          "video_id": "AyvvSFD2Slk",
+          "views": 13807,
+          "upload_date": "2026-05-21",
+          "url": "https://www.youtube.com/watch?v=AyvvSFD2Slk",
+          "subtitle_summary": "1. 두 후보, Ha Jung-woo 및 Han Dong-hoon, 동등한 상황에 있습니다. 박미식 후보를 지원하는 사람들은 이를 '밴드 외건 효과'로 인해 한동훈 후보에게 영향을 미칠 수 있습니다.\n2. 지방 선거가 시작되면 여론조사의 홍수가 일어나며, 광역 단체장, 기초 단체장, 광역 의원, 기초의원 등에서 여론조사를 하루에 수십개의 전화를 받습니다.\n3. 최근 여론조사에서 Ha Jung-woo와 Han Dong-hoon은 5차 범위 내에서 초박빙인 구도입니다. 김동원 대변님은 여러 가지 여론조사에서 북값이 제일 많이 나온 것 같습니다. 하지만 후보가 확정된 이후에 나온 여론조사에서는 흐름이 좀 바뀌었습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "Official Campaign Begins... What Are the Candidates' Poll Numbers? / SBS 8 News / 2026 Choice of ...",
+          "video_id": "xdMv_l1C9KA",
+          "views": 1695,
+          "upload_date": "2026-05-21",
+          "url": "https://www.youtube.com/watch?v=xdMv_l1C9KA",
+          "subtitle_summary": "공식 선거운동이 시작됐으며, 서울시장 여론조사에서 정 후보가 오세훈 후보보다 11% 점수 차이로 앞서고 있습니다. 대구시장 선거에서는 민주 김부겸과 국민의힘 추경호 두 후보가 접전하고 있으며, 부산 북갑 국회의원 보궐선거에서는 민주 하정우와 무소속 한동훈이 접전 중입니다. 여러 분석가들은 각자의 전략에 대해 관심을 가지고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "김종혁 \"하정우의 토론 회피? 이런 태도가 지지율 박스권에 갇히게 한 것\" 김준일 \"정원오는 토론하는 게 맞고, 하정우는 안 하는 게 맞아\"",
+          "video_id": "CK5uUWcmXyI",
+          "views": 20031,
+          "upload_date": "2026-05-21",
+          "url": "https://www.youtube.com/watch?v=CK5uUWcmXyI",
+          "subtitle_summary": "토론 회의에서 후보들이 직접적으로 토론을 할 수 있는 기회가 열리지 않아 불만이 많다. 정원호, 하정훈, 추미의 등 민주당 후보들은 한 번만 토론하고 끝내겠다는 입장이며, 자세히 알 수 있는 기회가 필요하지만 그런 분들이 자신감이 없거나 박스권에 갇혀 있는 것으로 보인다. 또한, 정원호와 같은 후보들이 앞서 가고 코치를 받아 대답하지 않거나 입담을 하는 등 공개적인 논쟁을 피하는 것으로 보인다.",
+          "db_saved": true
+        }
+      ],
+      "max": 2.4608,
+      "min": 2.45,
+      "nb_score": 1.0044,
+      "avg_views": 11844.33,
+      "total_views": 35533
+    },
+    {
+      "keyword": "삼성전자 노사 합의안",
+      "is_fixed": false,
+      "views": [
+        582270,
+        146585,
+        10826,
+        164779,
+        220341
+      ],
+      "video_count": 5,
+      "videos": [
+        {
+          "title": "\"노사 임금 합의안은 무효\"...반기 든 삼성전자 주주단체 '소송전' 예고 [지금이뉴스] / YTN",
+          "video_id": "A0db6n_jlqE",
+          "views": 582270,
+          "upload_date": "2026-05-21",
+          "url": "https://www.youtube.com/watch?v=A0db6n_jlqE",
+          "subtitle_summary": "1. 대한민국 주주 운동본부는 21일 삼성전자의 노사 임금 협상 결과를 위법으로 규정하며, 법적 대응을 예고했습니다.\n2. 주주운동 본부는 이날 오전 이재용 삼성전자 회장 자택일대에서 집회를 열고, 노사 합의가 법률상 무효라고 주장했습니다.\n3. 잠정 협의를 비준 집행하는 이사회의 결의가 상정될 경우, 무효 확인의 소송을 제기하고 위법 행위 유지 청구권을 행사할 것이며, 전국 단위 주주 결집에 즉시 돌입할 것이라고 밝혔습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[에디터픽] \"노사 임금 합의안, 법률상 무효\"…삼성전자 주주단체 반발 '법적 대응' 예고 / YTN",
+          "video_id": "iMKOsla52gM",
+          "views": 146585,
+          "upload_date": "2026-05-21",
+          "url": "https://www.youtube.com/watch?v=iMKOsla52gM",
+          "subtitle_summary": "1. 대한민국 주주운동본부는 21일 삼성전자 노사의 임금 협상 잠정 합의안을 위법으로 규정하며, 법적 대응을 예고했습니다.\n2. 주주운동본부는 이날 오전 이재용 삼성전자 회장 자택일대에서 집회를 열고, 노사 합의가 법률상 무효라고 주장했습니다.\n3. 잠정 협의를 비준 집행하는 이사회의 결의가 상정될 경우, 무효 확인의 소송을 제기하고 위법 행위 유지 청구권을 행사할 것이라고 밝혔습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[IssueSnap] Samsung Electronics Labor-Management Agreement, 600 Million Won Per Person... What's ...",
+          "video_id": "E8aWFE83_24",
+          "views": 10826,
+          "upload_date": "2026-05-21",
+          "url": "https://www.youtube.com/watch?v=E8aWFE83_24",
+          "subtitle_summary": "Samsung Electronics의 노조와 관계자들이 갈등을 겪고 결국 6:4로 협상에서 노조가 조금 더 유리한 결과를 내었다. 이번 협상으로 Samsung Electronics는 연봉 10억 원을 받을 수 있는 시대가 되었고, 올해 영업이익이 300조 원에서 내년까지 490조 원으로 예상되며, 메모리 반도체 직원들은 1인당 6억 원을 받게 될 것으로 보인다. 이번 협상의 결과는 우리 산업에 어떤 영향을 미칠지는 현재 화제이며, 양쪽을 다 칭찬하고 싶다는 생각으로 새로운 과제들을 어떻게 대응할 것인가에 관심이 있다.",
+          "db_saved": true
+        },
+        {
+          "title": "[Breaking] Samsung Electronics shareholder group: “Labor-management agreement is legally invalid”...",
+          "video_id": "e6RsMRHboJc",
+          "views": 164779,
+          "upload_date": "2026-05-21",
+          "url": "https://www.youtube.com/watch?v=e6RsMRHboJc",
+          "subtitle_summary": "1. Samsung Electronics의 노조와 관계자가 잠정 합의를 맺었습니다. 노조는 영업 이익의 15%를 현금으로 받고 싶었지만, 이를 중론으로 하는 전문가들이 있어서 결정에 동의했습니다. 대신 영업 이익의 10%를 주식으로 자사주로 지급하게 되었습니다.\n2. 노조는 공감하고 있어서 반도체 공장이 멈추지 않았다는 점에 대해 축하고 있습니다.\n3. Samsung Electronics 직원들은 영업 이익의 12%를 받으면 약 6조 6억 정도를 받을 것입니다. 이는 2029년까지 계속되어 18억 20억 정도를 받을 수 있게 됩니다.",
+          "db_saved": true
+        },
+        {
+          "title": "총파업 막았다! 삼성전자 노사 '성과급' 잠정 합의!｜2026.05.21 Ep.654 다시보기",
+          "video_id": "HOEEUdSbRT4",
+          "views": 220341,
+          "upload_date": "2026-05-21",
+          "url": "https://www.youtube.com/watch?v=HOEEUdSbRT4",
+          "subtitle_summary": "1. 비교원 인터넷 사이트에서 인터넷 서비스를 추천하며, 한삼덩굴에서 발견한 식물성 안심 원료 HSY2가 최신 어린이 키장 개별 인정형 원료로, 8개국에서 특허를 받았고 OECD 안전등급을 획득했다는 것을 소개합니다.\n2. 이어서 보험 관련 내용이 나오며, 보험료가 적정하고 준비가 되어 있는지 점검이 필요하며, 불필요한 보장을 줄이고 부족한 보장을 늘리는 것이 중요하다는 내용이 제시됩니다.\n3. 마지막으로 가자 지구에서 이스라엘군이 나포된 한국인 활동가들이 이스라엘의 나포 권한을 물었고, 이성 국가 안보실장이 별도로 검토해 보겠다는 대답을 받았지만 대통령은 문제를 이해하기 어려웠다는 내용이 소개된다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0.9711,
+      "min": 1.6957,
+      "nb_score": 0.5727,
+      "avg_views": 224960.2,
+      "total_views": 1124801
+    },
+    {
+      "keyword": "우리금융캐피탈 LPBA 대회",
+      "is_fixed": false,
+      "views": [
+        1978,
+        13036,
+        70924,
+        20147,
+        5236
+      ],
+      "video_count": 5,
+      "videos": [
+        {
+          "title": "8강｜서한솔 vs 히가시우치 나쓰미｜우리금융캐피탈LPBA챔피언십 2026-2027",
+          "video_id": "bTQUYuppEio",
+          "views": 1978,
+          "upload_date": "2026-05-21",
+          "url": "https://www.youtube.com/watch?v=bTQUYuppEio",
+          "subtitle_summary": "1. 9번 플레이어는 오른쪽으로 뒤돌리기를 자주 선택합니다. 파브 쿠션을 사용하면 키스 타이밍에 걱정이 있습니다.\n2. 서한솔은 공격력이 강해 보이며, 이전과 비슷한 경기를 펼치고 있습니다. 두 선수는 비슷한 느낌의 컨디션으로 경기를 진행합니다.\n3. 이번 경기는 예상대로 길지 않을 것으로 보입니다. 접전이나 난타전이 예상됩니다.",
+          "db_saved": true
+        },
+        {
+          "title": "8강｜김가영 vs 이유주｜우리금융캐피탈LPBA챔피언십 2026-2027",
+          "video_id": "jOfzcP_UB8E",
+          "views": 13036,
+          "upload_date": "2026-05-21",
+          "url": "https://www.youtube.com/watch?v=jOfzcP_UB8E",
+          "subtitle_summary": "1. 8강 경기에서 김가영과 이유주의 LPBA 챔피언십 2026-2027 매치는 9억 1천만원 이상의 금액을 넘어선 대회입니다.\n2. 초구 배치 포메이션에서 파브 쿠션이 더 적합하다고 판단되며, 스트로크의 속도 때문에 PBA 선수들은 쿠션으로 전환할 것을 제안합니다.\n3. 이유주는 노란공 처리가 어려워 보이지만, 목적국길이와 큐볼이 충돌하여 딱 맞추고 실패했습니다. 김강희 선수는 평균 득점이 1.2대에서 지난 시즌 1.1대로 내려왔으며, 다음 시기가 1.3대, 1.4대일 것으로 예상됩니다.",
+          "db_saved": true
+        },
+        {
+          "title": "32강 #해커 vs #임성균｜풀영상｜우리금융캐피탈 PBA-LPBA 챔피언십 2026",
+          "video_id": "u91X3YtmQR0",
+          "views": 70924,
+          "upload_date": "2026-05-21",
+          "url": "https://www.youtube.com/watch?v=u91X3YtmQR0",
+          "subtitle_summary": "1. 32강 해커 임성균과의 첫 세트에서 초구 배치가 5쿠션으로 득점하여 빨간공 두께 처리가 예민한 부분이 되었습니다.\n2. 임성균은 23, 24시즌 준우승까지 한번 갔던 전적이 있으며, 지난해는 16강 두 번, 8강 한 번 전적을 보였습니다.\n3. 이번 경기에서 뱅크 샷으로 4대 1을 만들어내고 조회선에서는 탈락하지만 앞돌리기로 짧게 득점을 내려갔습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "8강 #김가영 vs #이유주｜풀영상｜우리금융캐피탈 PBA-LPBA 챔피언십 2026",
+          "video_id": "nijryEG93rY",
+          "views": 20147,
+          "upload_date": "2026-05-21",
+          "url": "https://www.youtube.com/watch?v=nijryEG93rY",
+          "subtitle_summary": "1. 김가영과 이유주의 경기에서 두 선수는 각자 자신의 전략으로 뒤돌리기와 앞돌리기를 시도하며, 빨간공을 따라가는 것이 중요합니다.\n2. 김가영은 뒤돌리기 배치로 득점하고, 이유주는 앞돌리기를 시도했으나 키스(볼의 중심)을 제거하지 못해 두께를 완벽하게 잡아내지 못했습니다.\n3. 김가영은 첫 득점을 어렵게 뽑아내며, 이유주의 경기 초반에는 약간의 긴장감이 있었습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "최후의 세트｜8강｜김가영 vs 이유주｜우리금융캐피탈LPBA챔피언십 2026-2027",
+          "video_id": "7qrT9pcPyzQ",
+          "views": 5236,
+          "upload_date": "2026-05-21",
+          "url": "https://www.youtube.com/watch?v=7qrT9pcPyzQ",
+          "subtitle_summary": "1. 두 선수는 3세트에서 경기를 진행하고 있으며, 1세트에서 두께가 너무 얇았다는 평가가 있었습니다.\n2. 2세트에서는 빨간공을 처리하는 것이 중요했으며, 왼쪽으로 갔어야 했지만 노란공으로 맞았습니다.\n3. 두께와 당점의 조정이 중요한 경기였으며, 일목적과 거리가 있어서 충격을 최대로 내려야 했습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0.6129,
+      "min": 1.5539,
+      "nb_score": 0.3944,
+      "avg_views": 22264.2,
+      "total_views": 111321
+    },
+    {
+      "keyword": "이스라엘 한국인 석방",
+      "is_fixed": false,
+      "views": [
+        11730,
+        269336,
+        4911,
+        6696,
+        17227,
+        8933
+      ],
+      "video_count": 6,
+      "videos": [
+        {
+          "title": "Blue House: \"Israel Releases South Koreans Detained During Ship Interception... We Welcome the De...",
+          "video_id": "ZYCaYOy0vto",
+          "views": 11730,
+          "upload_date": "2026-05-21",
+          "url": "https://www.youtube.com/watch?v=ZYCaYOy0vto",
+          "subtitle_summary": "1. 대한민국 평화활동가 2명, 이스라엘에서 체포된 것으로 알려졌다는 소식이 청와대가 발표했습니다.\n2. 청와대 수석대변인은 이스라엘 측의 즉시 석방에 대해 높이 평가하며, 환영한 것으로 보고 있습니다.\n3. 필요한 조치와 외교적 대응을 통해 이스라엘 측이 특별한 한국 국민 2명에 대해 구금 시설을 거치지 않고 바로 추방했다고 설명했습니다. 또한, 이스라엘 측의 이번 사안으로 한-이스라엘 관계가 영향을 받지 않고 더욱 발전하기를 희망했다고 밝혔습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[On-the-Scene] \"Detained Citizens Released Immediately\"... Hearing the Israeli Side's Stance / JT...",
+          "video_id": "57tZ3-iN0Vg",
+          "views": 269336,
+          "upload_date": "2026-05-21",
+          "url": "https://www.youtube.com/watch?v=57tZ3-iN0Vg",
+          "subtitle_summary": "1. 강유정, 청와대 수석 대변인은 한국인 활동과 구금 해제 관련 브리핑을 진행했습니다. 이재명 정부는 이스라엘이 우리 국민을 체포한 것에 대해 강한 유감을 표하지만, 이스라엘이 우리 국민을 즉시 석방한 점을 높이 평가합니다.\n2. 이재명 정부는 필요한 영사 조력과 외교적 대응에 만전을 기해, 이스라엘 측이 특별히 한국 국민 두 명은 구금 시설을 거치지 않고 바로 추방했습니다.\n3. 이재명 정부는 국제 인권 문제를 비롯해 우리 국민 안전을 지키기 위해 원칙 있고 책임 있게 대응하며, 관련국들과의 외교적 소통도 긴밀히 이어나가겠습니다. 또한 서울 성동 경찰서장이 긴급 출동 차량을 유용한 사실을 취재한 SBS 보도회에 대해 신속한 감찰을 통해 문책하고, GTXA 삼성역 구간 철근 누락 사태에 대해 엄정한 실태 파악과 철저한 안전 점검을 지시했습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[🔴생중계] '이스라엘군 나포' 한국인 활동가 귀국…이 시각 인천국제공항 LIVE / 연합뉴스TV(YonhapnewsTV)",
+          "video_id": "yH9nkzTSgSM",
+          "views": 4911,
+          "upload_date": "2026-05-21",
+          "url": "https://www.youtube.com/watch?v=yH9nkzTSgSM",
+          "subtitle_summary": "1. 한국인 활동가가 가자지구에 진입하여 이스라엘군의 나포 사건을 비판했습니다.\n2. 대통령은 네타냐후 총리에 대한 체포영장 발부를 검토하도록 지시했습니다.\n3. 대통령은 이스라엘군이 제3국의 선박을 불법적으로 납포하고 잡아가는 것에 대해 강력히 비판했습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[속보] 靑 \"이스라엘 나포 한국인 2명 석방…환영\" / 연합뉴스TV (YonhapnewsTV)",
+          "video_id": "JMgoNcF0dkM",
+          "views": 6696,
+          "upload_date": "2026-05-21",
+          "url": "https://www.youtube.com/watch?v=JMgoNcF0dkM",
+          "subtitle_summary": "1. 이스라엘에서 2명의 한국인을 체포한 후, 즉시 석방하여 환영받았다. (YonhapnewsTV)\n2. 이재명 정부는 민의 안전과 권익 보호에 대해 심각한 우려를 표했으며, 국제인도법 등을 활용하여 이 사건을 해결했다.\n3. 정부는 관련국들과의 외교적 소통을 긴밀히 이어나가고, 국민의 생명과 안전을 최우선으로 두며 책임을 다하겠다고 밝혔습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "2 South Korean Activists Released by Israel Arrive at Incheon Airport / JTBC Morning&",
+          "video_id": "zdcJYoi1ER4",
+          "views": 17227,
+          "upload_date": "2026-05-21",
+          "url": "https://www.youtube.com/watch?v=zdcJYoi1ER4",
+          "subtitle_summary": "두 명의 한국인 활동가, 김아현과 김동현, 이스라엘에서 체포되었던 것으로 알려졌는데, 이스라엘은 체포한 구호선단의 모든 활동가를 석방했다고 밝혔습니다. 두 사람은 오늘 인천공항에 도착하여 귀국했습니다. 이들은 지난주 팔레스타인 자치령 가자지구로 향하던 국제 구호선단에 탑승했을 때 이스라엘군에 납포됐습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[LIVE] \"Israel Releases 2 South Koreans Arrested After Ship Seizure... Welcomed\" Blue House Brief...",
+          "video_id": "hWXscRG1gck",
+          "views": 8933,
+          "upload_date": "2026-05-21",
+          "url": "https://www.youtube.com/watch?v=hWXscRG1gck",
+          "subtitle_summary": "1. 이스라엘이 가자지구행 구호 선박 납포 행위로 두 명의 한국인을 체포하였으나, 그들은 추방되었고 국민 안전과 권익 보호에 대해 심각한 우려를 표했다.\n2. 이재명 정부는 서울 성동 경찰서장이 긴급 출동 차량을 유용한 사실을 취재한 SBS 보도회에 대해 신속한 감찰을 통해 문책하고 공직 기간 해의 사례가 발생하지 않도록 철저히 조치할 것을 지시했다.\n3. GTXA 삼성역 구간 철근 누락 사태에 대해 국토부와 행안부 등 관계 부처의 엄정한 실태 파악과 철저한 안전 점검을 지시했다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0.2308,
+      "min": 1.0757,
+      "nb_score": 0.2145,
+      "avg_views": 53138.83,
+      "total_views": 318833
+    },
+    {
+      "keyword": "더불 단일화",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "국립중앙박물관 전시회",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "건강보험료 인상 논란",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "유니클로 한국 한정판",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "두산 베어스 순위",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "한국장학재단 대출 조건",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "청와대 기밀문서 유출",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "삼성전자 주주환원 비교",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "국민성장펀드 가입 혜택",
+      "is_fixed": false,
+      "views": [
+        226
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "[Breaking News] Government Announcement!!! If this applies to you, DO NOT sign up for the Nationa...",
+          "video_id": "dkQPULoR8Pk",
+          "views": 226,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=dkQPULoR8Pk",
+          "subtitle_summary": "1. 정부가 국민 참여형 성장 펀드에 대한 자세한 정보를 발표했습니다. 6억원 이하의 금액으로 5월 22일부터 6월 11일까지 3주 동안 선착순으로 판매됩니다.\n2. 은행과 증권사를 통해 가입할 수 있으며, 개인 자산 관리 종합 계좌와 ISA 계좌 가입용 소득 확인 증명서가 필요합니다.\n3. 세금 혜택이 있지만, 5년 동안 환매가 금지되며, 온라인에서는 일주일 내에 판매가 마감될 것으로 예상됩니다. 또한, 서민 전용 물량이 있고, 5월 22일부터 6월 4일까지만 전체 판매에게 20% 서민 전용으로 배정됩니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "비트코인 현물 ETF 상장",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    }
+  ]
+}

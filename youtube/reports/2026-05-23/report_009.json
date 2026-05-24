@@ -1,0 +1,279 @@
+{
+  "timestamp": "2026-05-23T01:48:50.615579",
+  "model": "mistral:latest",
+  "keyword_count": 3,
+  "analyze_subtitles": true,
+  "analysis_source": "youtube",
+  "keywords": [
+    {
+      "keyword": "오늘의 주요 뉴스",
+      "is_fixed": true,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "삼성전자 노조 투표",
+      "is_fixed": false,
+      "views": [
+        14807,
+        1580,
+        28579,
+        22267
+      ],
+      "video_count": 4,
+      "videos": [
+        {
+          "title": "[🔴속보] '삼전 합의안 투표 개시 임박' DX 전격 기자회견..\"반대표 던져!\" 노노 갈등 '극심' | SBS 뉴스속보",
+          "video_id": "r2_XJ7S0X1k",
+          "views": 14807,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=r2_XJ7S0X1k",
+          "subtitle_summary": "1. 전국 삼성전자 노동조합 DX와 SEU가 인근교섭 잠점 카비의안에 대해 입장을 발표하였다. 2. 이번 의안은 졸속적이고 부실한 내용으로, DX 직원들이 문제를 제기하고 있는 것을 설명하고자 한다. 3. 차별이 심하고 균형이 안 잡혀 문제가 될 수 있으므로, 건전하고 균형잡힌 노사 협의를 위해 분위기를 만들어 갈 것이다.",
+          "db_saved": true
+        },
+        {
+          "title": "삼성전자 노조 오늘(22일)부터 합의안 두고 투표 / KBS  2026.05.22.",
+          "video_id": "j_0EBI6wawQ",
+          "views": 1580,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=j_0EBI6wawQ",
+          "subtitle_summary": "1. Samsung Electronics노조는 5월 22일부터 조합원들에게 투표를 시작하여 합의안을 통과시키려고 합니다. 이 투표를 통과해야 성과급 관련 조항이 실현됩니다.\n2. 잠정 합의안에는 반도체부문에 대한 특별 성과급, 평균 임금 6.2% 인상, 주택자금 대출 제도 등이 포함되어 있습니다.\n3. 투표는 5월 27일 오전 10시까지 진행되며, 과반수의 찬성이 필요하여 약 3만명 이상의 찬성이 필요합니다. 그러나 비메모리 조합원들은 합의안에 대한 평가가 엇갈리고, 일부 완제품 소속 조합원들은 졸속 합의라며 반발하고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "오늘부터 합의안 찬반 투표..막판 변수 '촉각', 투표권 놓고 '충돌'..100배 차이 '부글' - [핫이슈PLAY] MBC뉴스 2026년 05월 22일",
+          "video_id": "IbIR5Nm4sZM",
+          "views": 28579,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=IbIR5Nm4sZM",
+          "subtitle_summary": "1. 삼성전자의 합의안에서는 반도체 DS 부분에만 추가로 지급되는 특별 경영 성과급이 중점입니다. 사업 성과의 10.5%를 재원으로 하면, 올해 삼성전자가 예상대로 영업 이익 300조원을 낸다면 특별 성과급 재원은 31조 5천억 원이 되며, 40%는 반도체 부문 전체가 나누고 나머지 60%는 사업부별로 성과대로 나눕니다.\n2. 직원 한 명당 평균적으로 메모리 사업은 기존 성과급 7천만 원, 특별 성과급 5억 5천만 원을 더해 총 6억 2천만 원이 지급되고, DX 부문에는 기존의 성과급만 받을 수 있습니다.\n3. 불공평하다는 비판이 나올 수밖에 없으므로, 삼성전자는 DX 부문에 600만 원 상당의 자사주를 주기로 했습니다. 반도체 부문에 지급되는 특별 성과급은 팔 수 있고, 나머지는 1년 뒤 2년 뒤 매각할 수 있도록 조건도 붙였습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[이슈픽] 총파업 고비 넘겼지만 내부 '균열'?…역풍 예고된 삼성전자 / YTN",
+          "video_id": "WOlhjc4utqg",
+          "views": 22267,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=WOlhjc4utqg",
+          "subtitle_summary": "1. Samsung Electronics reached a critical agreement with the labor union to temporarily suspend the strike, but the final resolution depends on the vote of the union members. The production conflict was avoided, but the negotiation process revealed significant labor disputes between different departments.\n2. The main issue of contention is between the semiconductor DS department and the DX division that produces finished products such as smartphones. The DX division claims that the initial Samsung union focused too much on the success bonus for the DS department, neglecting the needs of other divisions.\n3. The internal conflict within Samsung Electronics, which has made significant investments to overcome crises, is testing the One Samsung management system. Additionally, a shareholder group is challenging the interim agreement reached by Samsung and threatening legal action if it is not approved through the proper shareholders' meeting procedure.",
+          "db_saved": true
+        }
+      ],
+      "max": 2.2859,
+      "min": 2.0487,
+      "nb_score": 1.1158,
+      "avg_views": 16808.25,
+      "total_views": 67233
+    },
+    {
+      "keyword": "화물선 충돌 사고",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "항공모함 전력 배치",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "지포스 신제품 출시",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "리게티 컴퓨팅 기술",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "에볼라 확산 대응",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "미군 증파 폴란드",
+      "is_fixed": false,
+      "views": [
+        31925
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "[Urgent/Analysis-315] Trump Sends 5,000 Additional US Troops to Poland. A Huge Hit for Poland! Wi...",
+          "video_id": "6bh6wFmxDjc",
+          "views": 31925,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=6bh6wFmxDjc",
+          "subtitle_summary": "1. 트럼프 대통령이 5,000명의 미군을 폴란다로 추가 파병했습니다.\n2. 이는 카브로스키 현 폴란다 대통령과의 성공적인 관계를 바탕으로 미국의 결정입니다.\n3. 이 결정은 유럽이 거대하게 재편되고 있는 상황에서 중요한 의미를 지닌다고 보여집니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "우크라이나 학교 공습",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "초등학교 학폭 증가",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "재건축 재개발 TF",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "AI 대학 입시",
+      "is_fixed": false,
+      "views": [
+        24713
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "아직도 '대학 입시'에만 쩔쩔매는 대한민국 😨 반도체 공학 인재들이 설자리는 어디에?ㅣ KBS 다큐 인사이트 - 인재전쟁2 : 2부 코리아 딜레마  260521 방송",
+          "video_id": "-VrzRGXVZ6s",
+          "views": 24713,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=-VrzRGXVZ6s",
+          "subtitle_summary": "1. 대한민국에서는 의사가 선호하는 직업으로 인해, 의학과 입시에 대한 경쟁이 치열하고 있습니다. 반도체 계약학과 등 기타 분야에서는 지원자 수가 증가하고 있습니다.\n2. 의사 시험을 통해 의사가 되려는 부모들은 특정 의대 쪽에 중북 합격을 받으면 거의 100% 지금 빠져나가고 있습니다.\n3. 수험생들의 입장에서는, 특정 분야의 산업에서 계속 지속될지에 대한 불확실성이 있으며, AI 반도체 기업과 같은 AA 산업은 빠르게 성장하고 있습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "웹툰 제주일상 인기",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "반도체 공급망 협력",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "환율 원달러 전망",
+      "is_fixed": false,
+      "views": [
+        2194
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "Exchange rate nears 1,520 won intraday.. \"Firm action if necessary\" / SBS 8 News",
+          "video_id": "GXmGwx63I3k",
+          "views": 2194,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=GXmGwx63I3k",
+          "subtitle_summary": "1. The interrogation of a former Blue House aide has been conducted. (SBS News)\n2. Yesterday, the exchange rate closed at 1517 won per dollar, an increase of over 11 won compared to the previous day. This rise is attributed to continued net selling by foreigners in our stock market, which is believed to be due to international tensions between the U.S. and Iran.\n3. The government and Bank of Korea have stated that they will take firm action if necessary, as they believe the movement in the exchange rate may be excessive considering the current economic conditions. (SBS News)",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "전월세 급등 대책",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    }
+  ]
+}

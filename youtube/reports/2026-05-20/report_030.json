@@ -1,0 +1,605 @@
+{
+  "timestamp": "2026-05-20T22:25:31.972192",
+  "model": "news-singleline:latest",
+  "keyword_count": 3,
+  "analyze_subtitles": true,
+  "analysis_source": "youtube",
+  "keywords": [
+    {
+      "keyword": "오늘의 주요 뉴스",
+      "is_fixed": true,
+      "views": [
+        2391,
+        1009,
+        2423
+      ],
+      "video_count": 3,
+      "videos": [
+        {
+          "title": "[뉴스브리핑] 오늘의 주요뉴스..\"탁 치니 억하고 말라\" 이번엔 무신사 비판 / SBS",
+          "video_id": "FbyZUU0ACtM",
+          "views": 2391,
+          "upload_date": "2026-05-20",
+          "url": "https://www.youtube.com/watch?v=FbyZUU0ACtM",
+          "subtitle_summary": "삼성전자 노사 협상이 성과급 문제로 결렬되어 노조가 총파업에 돌입하고, 이재명 대통령이 무신사 과거 광고의 ‘탁 치니 억하고 말라’ 문구를 비판하며 5.18 탱크데이 논란을 제기했으며, 트럼프 전 대통령이 이란 공격 재개 시기를 며칠로 연장하면서 긴장감이 지속되고 있다.",
+          "db_saved": true
+        },
+        {
+          "title": "[12 News] Today's Top Stories / SBS",
+          "video_id": "cWFeMXLg94M",
+          "views": 1009,
+          "upload_date": "2026-05-20",
+          "url": "https://www.youtube.com/watch?v=cWFeMXLg94M",
+          "subtitle_summary": "삼성전자 노사 협상 결렬되다 시종일관 강경한 입장을 고수하며 총파업 예고, 트럼프 대통령의 이란 압박 지속되면서 6주간 휴전 후 전쟁 재개 가능성 시사, 한일 정상회담에서 에너지 공급망 협력 강화 합의되었으나 6월 지방선거 및 국회의원 재보궐 선거 공식 선거운동 시작으로 정치권 격전지화",
+          "db_saved": true
+        },
+        {
+          "title": "[News Briefing] Today's Top Headlines.. 'Thank-you Day' Controversy, Chung Yong-jin Apologizes / SBS",
+          "video_id": "8DQCDz1WtSU",
+          "views": 2423,
+          "upload_date": "2026-05-19",
+          "url": "https://www.youtube.com/watch?v=8DQCDz1WtSU",
+          "subtitle_summary": "[이재명 대통령과 다카이치 일본 총리가 경상북도 안동에서 4번째 정상회담을 갖고 중동 전쟁 여파에 따른 에너지 협력 방안을 논의했으며, 삼성전자 노조 총파업 시점이 임박한 가운데 노사 협상 진행 상황이 주목받고 있다.]",
+          "db_saved": true
+        }
+      ],
+      "max": 2.5114,
+      "min": 4.1415,
+      "nb_score": 0.6064,
+      "avg_views": 1941.0,
+      "total_views": 5823
+    },
+    {
+      "keyword": "중국 반도체주 급등 파업",
+      "is_fixed": false,
+      "views": [
+        13193,
+        902,
+        127856,
+        63599
+      ],
+      "video_count": 4,
+      "videos": [
+        {
+          "title": "Strike crisis aftermath? \"Chinese semiconductor stocks soar,\" \"Japanese firms expect windfall\" (0...",
+          "video_id": "CdknfpRxoIo",
+          "views": 13193,
+          "upload_date": "2026-05-20",
+          "url": "https://www.youtube.com/watch?v=CdknfpRxoIo",
+          "subtitle_summary": "[삼성전자 파업으로 인한 글로벌 반도체 공급망 악재가 발생, 중국 반도체 주가 급등과 일본 기업의 반사 이익 기대 심화로 이어지면서 AI 호황을 저해하는 대형 공급망 위기가 초래되고 있다.]",
+          "db_saved": true
+        },
+        {
+          "title": "중국 반도체주 일제히 급등…외신도 긴급 타전 [9시 뉴스] / KBS  2026.05.20.",
+          "video_id": "jymm62vMSpI",
+          "views": 902,
+          "upload_date": "2026-05-20",
+          "url": "https://www.youtube.com/watch?v=jymm62vMSpI",
+          "subtitle_summary": "[삼성전자 파업 가능성에 따른 중국 반도체 기업 주가가 일제히 급등했으며, 외신들도 이 소식을 긴급 타전하여 글로벌 반도체 공급망에 대한 우려가 커지고 있다.]",
+          "db_saved": true
+        },
+        {
+          "title": "[긴급 진단] '삼성 파업' 다음 진짜는 '금리'…내 계좌, 과연 언제까지 버티면 회복될까?ㅣ최창규ㅣ김성준ㅣ이진우",
+          "video_id": "711iA86zJdY",
+          "views": 127856,
+          "upload_date": "2026-05-19",
+          "url": "https://www.youtube.com/watch?v=711iA86zJdY",
+          "subtitle_summary": "삼성그룹 파업 이후 금리 인상 가능성이 제기되며 증시가 급락하고 있으며, 코스피는 3% 넘게 하락하고 코스닥 지수 역시 하락세를 보이고 있습니다. 외국인 투자자들의 대규모 매도세가 주장의 주요 원인으로 분석되고 있으며, 환율 하락과 스페이스X IPO를 앞둔 물량 매도도 영향을 미치고 있습니다. 시장은 당분간 조정될 가능성이 높다고 전망됩니다.",
+          "db_saved": true
+        },
+        {
+          "title": "“1억 넣었는데, 지금 팔아야 할까요?”…코스피 짓누르는 악재는? [잇슈 머니] / KBS  2026.05.20.",
+          "video_id": "DIAV0uYhFKA",
+          "views": 63599,
+          "upload_date": "2026-05-20",
+          "url": "https://www.youtube.com/watch?v=DIAV0uYhFKA",
+          "subtitle_summary": "코스피 하락의 주요 원인은 미국 국채 금리 급등, 반도체 고점 논란, 그리고 삼성전자 파업 이슈로 인한 외국인 투자자들의 차익 실현 매물입니다. 미국 금리 상승은 신흥 시장 자금 유출을 야기하며, 기술주와 반도체주에 대한 밸류에이션 멀티플 압축을 심화시킵니다. 중동 불안, 유가 상승 등 글로벌 경제 악재와 중국 기업으로의 물량 이동 우려까지 겹치면서 국내 주식 시장의 변동성이 더욱 커지고 있습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 1.1569,
+      "min": 1.8053,
+      "nb_score": 0.6408,
+      "avg_views": 51387.5,
+      "total_views": 205550
+    },
+    {
+      "keyword": "삼성전자 총파업 노사 협상",
+      "is_fixed": false,
+      "views": [
+        37576,
+        4037,
+        106485,
+        104000,
+        6669,
+        9897
+      ],
+      "video_count": 6,
+      "videos": [
+        {
+          "title": "총파업 현실로..삼성전자 노사 협상 끝내 결렬 / SBS",
+          "video_id": "EjOCrAR3T3w",
+          "views": 37576,
+          "upload_date": "2026-05-20",
+          "url": "https://www.youtube.com/watch?v=EjOCrAR3T3w",
+          "subtitle_summary": "삼성전자 노사 성과급 협상이 결국 결렬되어 노조는 내일 총파업에 돌입할 가능성이 높아졌으며, 사측은 노조의 과도한 요구가 회사 경영 원칙을 흔들릴 수 있다고 주장했습니다. 중노위 조정안이 노조측에 수락되었으나 사측의 유보로 2차 사후 조정은 불성립되었고, 21년 만에 사용될 수 있는 긴급 조정권 발동 가능성도 제기되었습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "삼성전자 노사협상 끝내 결렬...노조 \"내일 총파업\" / YTN",
+          "video_id": "CoDa1EKfkPw",
+          "views": 4037,
+          "upload_date": "2026-05-20",
+          "url": "https://www.youtube.com/watch?v=CoDa1EKfkPw",
+          "subtitle_summary": "삼성전자와 노조 간 성과급 배분 문제로 인한 협상이 결렬되어 노조는 내일 총파업을 강행할 예정이다. 노조는 반도체 부문 성과급 배분 비율 7:3을 요구했으나, 사측이 적자 부문에도 높은 성과급을 지급하는 데 반대하며 합의점을 찾지 못했다. 파업에도 불구하고 노조는 타결을 위한 노력을 지속하며, 총파업 규모는 7명 수준으로 유지할 계획이다.",
+          "db_saved": true
+        },
+        {
+          "title": "[🔴속보] 삼성전자 노사 협상 결렬..\"사측 거부로 조정 종료, 내일 총파업\" | SBS 뉴스속보",
+          "video_id": "XPjUi7acIg4",
+          "views": 106485,
+          "upload_date": "2026-05-20",
+          "url": "https://www.youtube.com/watch?v=XPjUi7acIg4",
+          "subtitle_summary": "삼성전자 노사 협상이 성과급 상한 폐지에 대한 공감대 형성에도 불구하고 핵심 쟁점에 대한 합의를 이루지 못해 조정이 결렬되었으며, 노조는 내일 총파업을 강행할 가능성이 높아졌습니다. 정부는 21년 만에 사용된 긴급 조정권을 발동할 수 있으며, 파업이 장기화될 경우 국민경제에 미치는 피해를 최소화하기 위한 조치가 예상됩니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[뉴스초점] 삼성전자 노사 협상 결렬…\"내일 총파업\" / 연합뉴스TV (YonhapnewsTV)",
+          "video_id": "qD1HsskDc3s",
+          "views": 104000,
+          "upload_date": "2026-05-20",
+          "url": "https://www.youtube.com/watch?v=qD1HsskDc3s",
+          "subtitle_summary": "삼성전자 노사 협상이 성과급 지급 문제로 결렬되어, 초기업노동조합이 내일 총파업을 강행할 예정이다. 중학노동위원회의 조정안에도 불구하고 삼성전자 경영측이 거부 의사를 밝힘에 따라 협상 직결 시도가 실패했고, 파업이 예정대로 진행될 전망이다. 정부의 중재안에도 불구하고 노조측의 반대로 협상이 결렬된 상황이다.",
+          "db_saved": true
+        },
+        {
+          "title": "[Replay] Samsung Electronics labor negotiations break down... Union declares \"General strike star...",
+          "video_id": "E8DxRvZbXLs",
+          "views": 6669,
+          "upload_date": "2026-05-20",
+          "url": "https://www.youtube.com/watch?v=E8DxRvZbXLs",
+          "subtitle_summary": "삼성전자 노조와 사측 간의 임금 협상이 중앙노동위원회의 중재에도 불구하고 성립되지 못해 파업이 종료되었으며, 노조는 향후 타결을 위한 노력을 지속할 것이라고 발표했다. 교섭 과정에서 사측은 교섭 위원에게 직접적인 협의를 허용하지 않았고, 노조 측은 정부 및 고용노동부 관계자들의 도움을 받아 협상을 진행했다. 양측은 현재 상황에 대한 구체적인 내용은 밝히지 않았다.",
+          "db_saved": true
+        },
+        {
+          "title": "[속보] 삼성전자 노사협상 결렬...노조 \"내일 총파업 돌입\" / YTN",
+          "video_id": "YLOX4grDkrQ",
+          "views": 9897,
+          "upload_date": "2026-05-20",
+          "url": "https://www.youtube.com/watch?v=YLOX4grDkrQ",
+          "subtitle_summary": "삼성전자 노사 협상이 최후의 단판 회의 끝에 결렬되어, 노조는 내일부터 18일간 총파업에 돌입한다. 사측은 과도한 요구를 수용했으나, 성과급 규모 등 핵심 쟁점에 대한 합의를 이루지 못하며 파업을 결정짓게 되었다. 정부는 100조 원 규모의 경제적 손실을 우려하여 긴급 조정권 발동을 검토 중이다.",
+          "db_saved": true
+        }
+      ],
+      "max": 1.0562,
+      "min": 1.7284,
+      "nb_score": 0.6111,
+      "avg_views": 44777.33,
+      "total_views": 268664
+    },
+    {
+      "keyword": "내고향여자축구단 경기 결과",
+      "is_fixed": false,
+      "views": [
+        7904,
+        16597,
+        23152,
+        42987,
+        44247,
+        8821
+      ],
+      "video_count": 6,
+      "videos": [
+        {
+          "title": "오늘(20일) 남북축구 맞대결! 내고향 “경기에만 집중”…수원FC “물러서지 않고 대응” / KBS  2026.05.20.",
+          "video_id": "cyi3G-B3PNM",
+          "views": 7904,
+          "upload_date": "2026-05-20",
+          "url": "https://www.youtube.com/watch?v=cyi3G-B3PNM",
+          "subtitle_summary": "[12년 만의 남북 여자 축구 맞대결이 수원에서 열리며, 내고향 축구단은 경기 집중을 강조하고, 수원FC는 강한 심정으로 북한팀에 맞서기로 했다. 북한 선수들의 거친 플레이에 선수들도 적극적으로 대응할 준비를 마쳤으며, 경기장은 삼엄한 경비 속에 진행되었다. 아시아 여자 챔피언스리그 4강전은 KBS가 생중계한다.]",
+          "db_saved": true
+        },
+        {
+          "title": "북한 선수들? \"심한 태클에 욕설\"..'리빙 레전드' 지소연, '내고향'과 전면전 예고 / 스포츠머그",
+          "video_id": "pfD4-IeEwlA",
+          "views": 16597,
+          "upload_date": "2026-05-19",
+          "url": "https://www.youtube.com/watch?v=pfD4-IeEwlA",
+          "subtitle_summary": "[지소연 선수와 수원 FC가 언론의 과도한 관심과 북한 팀의 거친 플레이에 맞서 적극적으로 대응하겠다는 의지를 밝혔으며, 내일 경기에 최선을 다해 승리하는 데 집중할 것이라고 강조했다.]",
+          "db_saved": true
+        },
+        {
+          "title": "수원FC vs 내고향, 역사적인 여자축구 남북 대결…KBS 1TV 생중계 / KBS  2026.05.20.",
+          "video_id": "aXjxBajcYFA",
+          "views": 23152,
+          "upload_date": "2026-05-20",
+          "url": "https://www.youtube.com/watch?v=aXjxBajcYFA",
+          "subtitle_summary": "[지소연이 이끄는 수원FC 위민과 북한 내고향여자축구단이 아시아축구연맹 챔피언스리그 준결승전을 벌이며, 북한 여자 축구 클럽팀의 한국 첫 방한 경기가 성사되었습니다. 8년 만에 북한 선수가 국내 대회에 출전하는 가운데, 7천 명의 일반 예매 티켓과 3천 명의 응원단이 운집했습니다. KBS 1TV는 오늘 저녁 6시 50분부터 생중계됩니다.]",
+          "db_saved": true
+        },
+        {
+          "title": "[LIVE] '여축 12년 만의 방한' 북한 여자축구팀 기자회견/내일 수원FC 위민과 4강전/2026년 5월 19일(화)/KBS",
+          "video_id": "p0pPTC9keTI",
+          "views": 42987,
+          "upload_date": "2026-05-19",
+          "url": "https://www.youtube.com/watch?v=p0pPTC9keTI",
+          "subtitle_summary": "북한 여자축구팀이 AFC 여자 챔피언리그 결승전을 앞두고 기자회견을 열어, 내일 수원FC 위민과의 4강전 준비 상황을 설명하고, 상대 팀에 대한 정보가 제한적인 상황에서도 최선을 다할 것임을 밝혔습니다. 감독은 조별 리그 성적이나 선수들의 실력을 섣불리 판단하지 않고, 내일 경기에서 좋은 결과를 얻기 위해 모든 노력을 기울일 것이라고 강조했습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "\"Here to Play\"... North Korea's Naegohyang Women's Soccer Team Shows 'Twist' After Expressionless...",
+          "video_id": "YHjvI4NaYyk",
+          "views": 44247,
+          "upload_date": "2026-05-19",
+          "url": "https://www.youtube.com/watch?v=YHjvI4NaYyk",
+          "subtitle_summary": "북한 여자 축구단이 훈련 중 밝은 표정을 보이며 변화된 모습을 드러냈으나, 기자 회견에서는 여전히 무표정으로 일관했다. 리일 감독은 경기 내용에 집중하며 외부적인 질문을 차단했고, 선수들은 팀의 목표와 기대에 부응하기 위해 최선을 다할 것이라고 밝혔다. 북한 여자 축구단은 수원 FC 위민과의 준결승 경기에서 치열한 접전을 펼칠 예정이다.",
+          "db_saved": true
+        },
+        {
+          "title": "[🔴이슈를 켜라] 남북 여자축구 경기 전 살벌한 기싸움…\"지지 않는다\" / 채널A",
+          "video_id": "i7x42Lhd9DQ",
+          "views": 8821,
+          "upload_date": "2026-05-19",
+          "url": "https://www.youtube.com/watch?v=i7x42Lhd9DQ",
+          "subtitle_summary": "[남북 여자 축구 경기 전 살벌한 기싸움이 벌어졌으나, 북한 응원단장 이일 감독은 경기 집중을 강조하며 신경전을 최소화했고, 정치적 요인과 선수들의 긴장감 해소를 위해 냉랭한 분위기를 누그러뜨리며 긍정적인 시선을 보였다.]",
+          "db_saved": true
+        }
+      ],
+      "max": 1.2901,
+      "min": 2.2944,
+      "nb_score": 0.5623,
+      "avg_views": 23951.33,
+      "total_views": 143708
+    },
+    {
+      "keyword": "주식 파킹 논란 정치검사",
+      "is_fixed": false,
+      "views": [
+        3490,
+        701,
+        529
+      ],
+      "video_count": 3,
+      "videos": [
+        {
+          "title": "Ha Jung-woo ‘Stock Parking’ Allegations?… Responds to ‘Political Prosecutor’ Attacks with “Abnorm...",
+          "video_id": "E8t_X0J3rAM",
+          "views": 3490,
+          "upload_date": "2026-05-20",
+          "url": "https://www.youtube.com/watch?v=E8t_X0J3rAM",
+          "subtitle_summary": "하정훈 후보가 AI 수석으로 자문 역할을 맡으면서 주식 베팅 논란이 불거졌고, 주식 매도 행위가 의혹을 더욱 키웠다. 후보 측은 계약상 발생하는 일환이며, 주식은 3년 후 일부 본인 것으로 확정된 사안이라 주장했다. 업스테이지 주식 관련 논란은 과도한 의혹으로, 후보 측의 백지 신탁 및 계약 반납은 정당하다는 입장을 밝혔다.",
+          "db_saved": true
+        },
+        {
+          "title": "Ha Jung-woo Vesting Controversy, Han Dong-hoon Joins the Fray: \"Political Prosecutor Habits\" vs. ...",
+          "video_id": "C3rqpIJKw6A",
+          "views": 701,
+          "upload_date": "2026-05-20",
+          "url": "https://www.youtube.com/watch?v=C3rqpIJKw6A",
+          "subtitle_summary": "하정우 후보의 베스팅 논란으로 한동훈 후보가 이해 충돌을 비판하며 설전을 벌였다.하후보는 정치 검사들의 ‘탈 털’ 수법을 지적하며, 전직 정치 검사 출신 후보를 직격했다.한 후보는 하후보의 주장을 팩트로 반박하며, AI 스타트업과의 관계를 심각한 이해 충돌로 지목했다.",
+          "db_saved": true
+        },
+        {
+          "title": "[다시보기] 삼성전자 총파업 D-1, 노사교섭 극적 재개…노동장관 직접 중재 - MBN 뉴스7 (2026.5.20)",
+          "video_id": "NSiNcCj2ATg",
+          "views": 529,
+          "upload_date": "2026-05-20",
+          "url": "https://www.youtube.com/watch?v=NSiNcCj2ATg",
+          "subtitle_summary": "삼성전자 노사, 결렬 끝난 협상에 김영훈 노동부 장관 주도하 집중 중재로 재개되어 총파업 가능성을 낮추고 있으며, 긴급 조정권 발동 가능성도 제기되면서 국가 경제에 미치는 영향이 주요 쟁점으로 부각되고 있다.",
+          "db_saved": true
+        }
+      ],
+      "max": 1.1075,
+      "min": 2.6365,
+      "nb_score": 0.4201,
+      "avg_views": 1573.33,
+      "total_views": 4720
+    },
+    {
+      "keyword": "이란 한국 유조선 호르무즈 통과",
+      "is_fixed": false,
+      "views": [
+        23899,
+        7545,
+        6691,
+        1681,
+        1640,
+        3160,
+        4600
+      ],
+      "video_count": 7,
+      "videos": [
+        {
+          "title": "[속보] 조현 \"한국 유조선, 이란과 협의해 호르무즈 해협 통과 중\" [이슈PLAY] / JTBC News",
+          "video_id": "CZapsWtG1mY",
+          "views": 23899,
+          "upload_date": "2026-05-20",
+          "url": "https://www.youtube.com/watch?v=CZapsWtG1mY",
+          "subtitle_summary": "이란이 비트코인 결제를 이용한 ‘호르무즈 세이프’ 보험 서비스를 도입하며, 15조 원의 수익을 기대하고 있는 가운데, 호르무즈 해협 통과 선박에 대한 집단적인 외교 경제적 압력이 강화되고 있다. 미국과 중국 정상의 호르무즈 개방 공감대 형성과 함께, 26개국이 정상화를 위한 공동 성명을 발표하며 긴장감을 더하고 있다. 최근 우리나라 유조선들이 호르무즈 해협을 통과하며 원유 수급 안정에 긍정적인 영향을 미치고 있지만, 여전히 국제 해사 안보에 대한 우려가 지속되고 있다.",
+          "db_saved": true
+        },
+        {
+          "title": "[속보] 조현 외교장관 \"한국 유조선, 이란과 협의해 호르무즈 통과 중\"/외신 \"HMM 소속 초대형 유조선\"/2026년 5월 20일(수)/KBS",
+          "video_id": "Wgz2cnCdQTY",
+          "views": 7545,
+          "upload_date": "2026-05-20",
+          "url": "https://www.youtube.com/watch?v=Wgz2cnCdQTY",
+          "subtitle_summary": "HMM 소속 초대형 유조선이 이란과 협의하여 호르무즈 해협 통과를 시도하고 있으며, 위치 추적 장치를 끄고 움직였다는 사실이 확인되었습니다. 200만 배럴 규모의 원유를 실은 유조선들이 이란 혁명 수비대의 경고를 무시하고 해협을 통과한 것으로 드러났습니다. 이 과정에서 한국 해운사의 안전 문제와 국제 해상 안전에 대한 우려가 제기되고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "한국 유조선, 호르무즈 해협 통과 중 / YTN",
+          "video_id": "MK1-6VJwdJo",
+          "views": 6691,
+          "upload_date": "2026-05-20",
+          "url": "https://www.youtube.com/watch?v=MK1-6VJwdJo",
+          "subtitle_summary": "한국 유조선이 호르무즈 해협 통과를 시도하며 중동의 화약고 상황이 고조되고 있으며, 미국은 이란과의 협상 지속과 동시에 대규모 공격 가능성을 경고하고 있습니다. 이란은 반격 수위를 높이며 F35 격추 등 성과를 강조하는 동시에 협상 거부 입장을 고수하고 있습니다. 러시아는 종전 협상에 대한 돌입 의사를 내비치며 복잡하게 얽힌 중동 정세에 변수로 작용하고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "\"South Korean oil tanker passes through Strait of Hormuz without tolls\"... What about the remaini...",
+          "video_id": "l6wDOPVKFt8",
+          "views": 1681,
+          "upload_date": "2026-05-20",
+          "url": "https://www.youtube.com/watch?v=l6wDOPVKFt8",
+          "subtitle_summary": "[전쟁 이후 처음으로 호르무즈 해협을 통과한 한국 유조선 ‘유니버설 위너후’는 이란과의 협의를 통해 통행료 없이 이동했으며, 남아 있는 25척 유조선의 추가 통과 협의를 추진 중이다.]",
+          "db_saved": true
+        },
+        {
+          "title": "South Korean Oil Tanker Passing Through Strait of Hormuz Following Agreement with Iran / SBS",
+          "video_id": "K5TEltwJNVI",
+          "views": 1640,
+          "upload_date": "2026-05-20",
+          "url": "https://www.youtube.com/watch?v=K5TEltwJNVI",
+          "subtitle_summary": "[이란과의 협의를 통해 호르무즈 해협 통항이 허용된 한국 유조선 ‘유니버설 위너호’가 해협을 통과했으며, 21명의 한국인 선원과 함께 울산항으로 원유 200만 배럴을 수송하게 된다고 정부가 밝혔다. 이란의 해협 봉쇄 이후 처음으로 한국 선박이 해협을 통과하게 된 이번 조치는 중동 전쟁 상황 속에서 한국의 에너지 공급망 안정에 중요한 의미를 갖는다. 현재 호르무즈 해협에 남아있는 한국 선박은 총 25척이며, 두바이항으로 예인되어 수리 중인 나무호도 포함된다.]",
+          "db_saved": true
+        },
+        {
+          "title": "한국 초대형 유조선, 호르무즈 해협 통과 시도... 성공 시 '최초' [지금이뉴스] / YTN",
+          "video_id": "ERiB03c5204",
+          "views": 3160,
+          "upload_date": "2026-05-20",
+          "url": "https://www.youtube.com/watch?v=ERiB03c5204",
+          "subtitle_summary": "[쿠웨이트산 원유를 수송 중인 HMM 소속 유조선 ‘유니버설 위너호’가 호르무즈 해협 통과를 시도, 성공 시 한국 선박으로는 최초의 사례가 될 것으로 예상된다. 중국 초대형 유조선 ‘두청호’ 역시 유사한 경로를 시도 중이며, 이들 유조선의 안전한 해협 통과는 중동 지역 유류 수송에 큰 영향을 미칠 전망이다. 다만, 일부 선박의 위치 신호 불통으로 인해 아직 완전한 통과 여부는 확인되지 않은 상황이다.]",
+          "db_saved": true
+        },
+        {
+          "title": "Iran \"South Korea may pass\": Large South Korean oil tanker currently transiting the Strait of Hormuz",
+          "video_id": "jFI2BOL7BLE",
+          "views": 4600,
+          "upload_date": "2026-05-20",
+          "url": "https://www.youtube.com/watch?v=jFI2BOL7BLE",
+          "subtitle_summary": "한국 국적 유조선 ‘유니버설 위너호’가 호르무즈 해협 통과를 위해 이란 당국과 협의를 거쳐 안전하게 통과했으며, 이는 한국 유조선 역사상 최초의 호르무즈 해협 통과 사례로 평가됩니다. 외교부는 미국 측과도 긴밀히 소통하며 선박의 안전을 확보하는 데 주력하고 있으며, 현재 호르무즈 해협에 남아있는 한국 선박은 총 25척입니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0.4245,
+      "min": 1.4686,
+      "nb_score": 0.2891,
+      "avg_views": 7030.86,
+      "total_views": 49216
+    },
+    {
+      "keyword": "GTX 철근 누락 사고",
+      "is_fixed": false,
+      "views": [
+        413,
+        22141,
+        891,
+        137,
+        406
+      ],
+      "video_count": 5,
+      "videos": [
+        {
+          "title": "\"철근 누락에 슬래브 균열까지?\" GTX-A 삼성역 부실시공 현장 질의에 현대건설 \"변명할 게 없습니다\" 빠른사과",
+          "video_id": "NeWdNRPEYUU",
+          "views": 413,
+          "upload_date": "2026-05-20",
+          "url": "https://www.youtube.com/watch?v=NeWdNRPEYUU",
+          "subtitle_summary": "[GTX-A 삼성역 부실시공으로 철근 누락, 슬래브 균열 등 중대한 부실이 드러나 현대건설이 사과하며 변명하는 모습이 포착되었고, 막대한 혈세낭비와 공사 지연의 책임에 대한 논란이 심화되고 있다.]",
+          "db_saved": true
+        },
+        {
+          "title": "‘GTX 삼성역 철근 누락’ 파문-오세훈, 사고도 안 났는데 웬 호들갑?-고민정 “중증 안전불감증, 이런 적반하장이 어디 있습니까!!”",
+          "video_id": "Cdd0IoGrGwY",
+          "views": 22141,
+          "upload_date": "2026-05-19",
+          "url": "https://www.youtube.com/watch?v=Cdd0IoGrGwY",
+          "subtitle_summary": "삼성역 복합환승센터 건설 현장에서 철근이 절반 이상 누락된 채 공사가 진행되어 시민 안전에 대한 우려가 커지고 있으며, 서울시의 미온적인 대처가 비판받고 있습니다. 5개월간 문제 인지 후 보강 방안을 제출한 점과 담당자들이 안전 문제에 대한 무책임한 발언을 한 점이 중점적으로 논란이 되고 있습니다. 이번 사태는 인천 순살 아파트 사건과 유사하다는 지적과 함께, 공무원의 안전 책임에 대한 근본적인 질문을 던지고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "GTX rebar omission dispute... PPP: \"Reported monthly\" vs. DP: \"Should have reported separately\"",
+          "video_id": "VlAjvbTAqTY",
+          "views": 891,
+          "upload_date": "2026-05-20",
+          "url": "https://www.youtube.com/watch?v=VlAjvbTAqTY",
+          "subtitle_summary": "[GTX 삼성역 철근 누락 사고와 관련하여 서울시의 별도 보고 의무성에 대한 여야의 엇갈린 입장과 국토부의 대응이 논란이 되고 있습니다. 민주당은 서울시의 보고 지연이 사고 은폐 의혹을 낳고 있다고 비판하며, 국민의힘은 서울시가 매달 보고서를 제출했음에도 국토부가 제대로 대응하지 않았다고 맞서고 있습니다. 김윤덕 장관은 안전 문제의 심각성을 고려하여 별도 보고의 중요성을 강조하며 재반발했습니다.]",
+          "db_saved": true
+        },
+        {
+          "title": "GTX-A 삼성역 기둥 50개 ‘철근 누락’…보고 여부 ‘쟁점’ [9시 뉴스]​ / KBS  2026.05.20.",
+          "video_id": "jgFUYf3L6yg",
+          "views": 137,
+          "upload_date": "2026-05-20",
+          "url": "https://www.youtube.com/watch?v=jgFUYf3L6yg",
+          "subtitle_summary": "[GTX-A 삼성역 기둥 50개 철근 2500여 개 누락 사건이 발생하여, 보고 시점에 대한 서울시와 관련 기관 간의 주장이 엇갈리고 있으며, 감리 과정에서의 오류를 간과한 점이 논란이 되고 있습니다. 시공사 및 감리사에 책임을 묻고 보수 공사를 진행하겠다고 서울시가 밝혔으며, 이로 인해 GTX A 노선의 운행 일정에 차질이 예상됩니다.]",
+          "db_saved": true
+        },
+        {
+          "title": "GTX '철근 누락' 일파만파-오세훈 \"철근 괴담, 사고도 안 났는데\"-고민정 \"세월호 이태원 떠올라...증증 안전불감증\"",
+          "video_id": "4_MTc6wMVhU",
+          "views": 406,
+          "upload_date": "2026-05-19",
+          "url": "https://www.youtube.com/watch?v=4_MTc6wMVhU",
+          "subtitle_summary": "[GTX 철반조 프로젝트에서 2,500개의 철근이 누락된 사실이 드러나면서 오세훈 시장의 책임을 묻는 요구가 거세지고 있으며, 고민정 국회의장은 안전 불감증을 지적하며 세월호 이태원 사고를 언급하고 있습니다. 구조 안전성 검토 결과에도 불구하고 철근 누락이 발생한 점에 대해 의혹이 증폭되고 있으며, 관련 수사가 진행 중입니다.]",
+          "db_saved": true
+        }
+      ],
+      "max": 0.3122,
+      "min": 1.1834,
+      "nb_score": 0.2638,
+      "avg_views": 4797.6,
+      "total_views": 23988
+    },
+    {
+      "keyword": "스타벅스 탱크 텀블러 논란",
+      "is_fixed": false,
+      "views": [
+        328257,
+        11326,
+        22654,
+        70541,
+        33386,
+        10333
+      ],
+      "video_count": 6,
+      "videos": [
+        {
+          "title": "\"용납할 수 없어\"...'탱크데이' 논란에 입 연 스타벅스 미국 본사 [지금이뉴스] / YTN",
+          "video_id": "ZY6mgFVQmtI",
+          "views": 328257,
+          "upload_date": "2026-05-19",
+          "url": "https://www.youtube.com/watch?v=ZY6mgFVQmtI",
+          "subtitle_summary": "[스타벅스 미국 본사는 5.18 탱크데이 행사에 대해 깊은 사과하며, 역사적으로 민주화 운동에 기여한 모든 분들께 아픔과 모욕감을 안겨 준 점을 인정하고 내부 통제 강화 및 교육 시행을 약속했습니다.]",
+          "db_saved": true
+        },
+        {
+          "title": "🔴LIVE \"멸공\" 정용진 과거 '극우 의혹' 파묘..'스타벅스 탱크데이 논란' 사과했지만 '스타벅스 불매운동' 후폭풍  | SBS 뉴스속보",
+          "video_id": "afgPRsulYhA",
+          "views": 11326,
+          "upload_date": "2026-05-19",
+          "url": "https://www.youtube.com/watch?v=afgPRsulYhA",
+          "subtitle_summary": "스타벅스가 5·18 민주화운동을 조롱하는 듯한 ‘탱크데이’ 이벤트를 열어 온라인 여론의 거센 비판을 받았다. ‘책상의 탁’이라는 문구로 5·18 학살을 연상케 한 점이 문제였으며, 기업의 역사 인식에 대한 의혹이 커지자 결국 행사를 중단하고 사과했다. 이번 사건으로 스타벅스 코리아 대표가 해임되는 등 후폭풍이 예상된다.",
+          "db_saved": true
+        },
+        {
+          "title": "정용진, '탱크 데이' 논란 직접 사과...스타벅스 대표 해임 / YTN",
+          "video_id": "oLdizyW-1EY",
+          "views": 22654,
+          "upload_date": "2026-05-19",
+          "url": "https://www.youtube.com/watch?v=oLdizyW-1EY",
+          "subtitle_summary": "정용진 신세계그룹 회장이 스타벅스 코리아의 ‘탱크 데이’ 논란에 대해 직접 사과하며 최고 경영자 및 임원 해임을 지시했고, 그룹 전체 역사 인식 재점검 및 윤리 교육 실시를 약속했습니다. 5.18 민주화운동 등 역사적 진실에 대한 책임 의식을 보여주지 못해 비판 여론이 거세졌고, 결국 스타벅스 코리아 대표를 포함한 핵심 인물들이 해임되었습니다. 이번 사건을 계기로 신세계그룹의 사회적 책임과 윤리 경영에 대한 논의가 더욱 중요해지고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "'Mini Tank Day' on Sewol Ferry anniversary... Mounting allegations against Starbucks #BehindNews ...",
+          "video_id": "ed5dVtgQ9qw",
+          "views": 70541,
+          "upload_date": "2026-05-19",
+          "url": "https://www.youtube.com/watch?v=ed5dVtgQ9qw",
+          "subtitle_summary": "스타벅스 코리아가 세월호 참사 당일 ‘미니 탱크 데이’ 이벤트를 개최한 사실이 드러나면서 5.18 탱크데이 논란과 맞물려 의혹이 더욱 커지고 있으며, 행사 문구와 용량, 할인율 등이 참사 관련 의혹을 낳고 있다. 신세계는 관련 경위를 파악하기 위해 조사를 진행 중이지만, 시민들의 분노가 거세지면서 단순 실수를 넘어선 의혹에 대한 비판이 제기되고 있다. 이번 사태가 단순 실수로 보기 어렵다는 점을 고려하여 진실 규명과 시민들의 불만을 해소하기 위한 노력이 필요하다.",
+          "db_saved": true
+        },
+        {
+          "title": "\"They crossed the line, and crossed it too hard.\" Starbucks, why 'Mini Tank Day' of all days on A...",
+          "video_id": "JMQPTZ4IVHA",
+          "views": 33386,
+          "upload_date": "2026-05-19",
+          "url": "https://www.youtube.com/watch?v=JMQPTZ4IVHA",
+          "subtitle_summary": "[5.18 민주화운동 기념일에 탱크데이 행사를 열어 논란이 되고 있는 스타벅스가 세월호 참사 추념일에도 유사한 행사를 진행했다는 의혹이 제기되며, 미니 탱크 텀블러 이벤트가 세월호 참사 4·16과 겹쳐 비판이 커지고 있습니다. 이재명 대통령은 스타벅스의 행사를 ‘저질 장사치의 비인간적 막장 행태’라며 강도 높게 비판했고, 정용진 회장은 사과문을 발표했습니다.]",
+          "db_saved": true
+        },
+        {
+          "title": "After Starbucks apologizes for '5.18 Tank Day'.. People Power Party sparks controversy with mocki...",
+          "video_id": "-Yc8Lb36MHA",
+          "views": 10333,
+          "upload_date": "2026-05-19",
+          "url": "https://www.youtube.com/watch?v=-Yc8Lb36MHA",
+          "subtitle_summary": "스타벅스의 ‘5.18 탱크데’ 논란에 국민의힘 충북도당이 2차 가해 논란에 휩싸이며 반어법 해명까지 하면서, 5.18 유족회는 국가 폭력 희생자를 조롱하고 희화하는 행위라고 비판하고 있습니다. 충북도당은 논란 후 게시물을 삭제하고 사과했지만, 여전히 논란이 지속되고 있으며, 관련 SNS 글을 올린 청년 위원은 당직자 신분이라는 사실이 드러났습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0.3335,
+      "min": 1.2685,
+      "nb_score": 0.2629,
+      "avg_views": 79416.17,
+      "total_views": 476497
+    },
+    {
+      "keyword": "APEC 스타트업 얼라이언스 출범",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "긴급조정권 발동 파업 위기",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "청년주택 정책 현황",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "AI 브랜드 마케팅 전략",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "백두대간수목원 방문 정보",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "석유 재생에너지 전환 현실",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "한식 세계화 문화 전략",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    }
+  ]
+}

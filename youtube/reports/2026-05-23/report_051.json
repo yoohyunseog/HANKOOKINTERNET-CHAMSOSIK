@@ -1,0 +1,353 @@
+{
+  "timestamp": "2026-05-23T11:11:42.258013",
+  "model": "mistral:latest",
+  "keyword_count": 3,
+  "analyze_subtitles": true,
+  "analysis_source": "youtube",
+  "keywords": [
+    {
+      "keyword": "오늘의 주요 뉴스",
+      "is_fixed": true,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "스페이스X 상장 소식",
+      "is_fixed": false,
+      "views": [
+        6766,
+        29083
+      ],
+      "video_count": 2,
+      "videos": [
+        {
+          "title": "[Economy at a Glance] \"Raising 100 Trillion Won via IPO\"... SpaceX Listing, How to Invest? / KBS ...",
+          "video_id": "dpmZXPWRia4",
+          "views": 6766,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=dpmZXPWRia4",
+          "subtitle_summary": "1. SpaceX, 엘론 머스크의 다른 회사, IPO(공시)가 예상되며 100조원 정도의 목표금액을 보이고 있습니다.\n2. 관심이 많아지고 있는 상황으로, 미래스 그룹과 조그만 기업 '스페어'에 대한 관심이 높아지고 있습니다.\n3. SpaceX의 가치는 옵션 가치와 미래 산업, 정부계약, 위성사업, 로켓발사 등으로 인해 평가받고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "SpaceX and OpenAI IPOs 'Imminent'... A Storm Approaches to Shake Up the South Korean Stock Market...",
+          "video_id": "UWLgnYtqrwM",
+          "views": 29083,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=UWLgnYtqrwM",
+          "subtitle_summary": "1. 글로벌 투자 시장에서 초대형 AI 우주 기업들의 미국 증시 상장이 예고되어 있으며, 새 기업 예상 시총은 5조 4천억 달러(8000조원)를 넘을 수 있습니다.\n2. 이 흐름에서 JP모가는 스페이스엑스 하나만으로도 기존 빅테크 주식 약 144조원 규모의 매도가 필요할 수 있다고 분석했습니다.\n3. 이러한 상황은 미국을 넘어 신흥 시장인 한국에도 영향을 줄 수 있으며, 최근 외국인 투자자들은 국내 증시에서 12 거래일 연속 순매도를 이어가고 있습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 2.9238,
+      "min": 1.2289,
+      "nb_score": 2.3792,
+      "avg_views": 17924.5,
+      "total_views": 35849
+    },
+    {
+      "keyword": "삼성전자 노조 투표",
+      "is_fixed": false,
+      "views": [
+        1737,
+        15081,
+        33553,
+        28933
+      ],
+      "video_count": 4,
+      "videos": [
+        {
+          "title": "삼성전자 노조 오늘(22일)부터 합의안 두고 투표 / KBS  2026.05.22.",
+          "video_id": "j_0EBI6wawQ",
+          "views": 1737,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=j_0EBI6wawQ",
+          "subtitle_summary": "1. Samsung Electronics labor union started a vote today on the tentative agreement, which includes proposed changes such as special performance bonuses for semiconductor divisions and a 6.2% wage increase. The agreement needs to be approved by more than half of the union members for it to become final.\n2. If the agreement is passed, it will also include provisions for establishing a housing loan scheme. Samsung Electronics labor union chairman, Cho Min-ho, has described this tentative agreement as a significant achievement for the union and common struggle committee.\n3. However, not all union members are in favor of the agreement, with some memory division workers criticizing it as insufficient, while some complete product division workers have expressed opposition, calling it a sellout. A rejection campaign is being led by DX (complete product) employees to overturn the tentative settlement. According to reports, at least 15,000 members out of 30,000 are needed for the agreement to pass.",
+          "db_saved": true
+        },
+        {
+          "title": "[🔴속보] '삼전 합의안 투표 개시 임박' DX 전격 기자회견..\"반대표 던져!\" 노노 갈등 '극심' | SBS 뉴스속보",
+          "video_id": "r2_XJ7S0X1k",
+          "views": 15081,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=r2_XJ7S0X1k",
+          "subtitle_summary": "1. 전국 삼성전자 노동조합 DX와 SEU가 인근교섭 잠점 카비의안에 대해 입장을 발표하였습니다. 이번 의안은 부실하고 졸속적이며, DX 직원들이 문제를 제기하고 있습니다.\n2. DX는 노사 협의가 파행적으로 가지 않도록 노력하고 건전하고 균형잡힌 노사 협의를 원합니다. 특히, DX 부문에 있는 직원들이 어떤 생각을 가지고 있는지에 대해서 집중하고자 합니다.\n3. DX는 초기업 노동조합의 잠정 합의안에 대한 규탄을 했습니다. 이번 합의안은 GX 부분을 철저히 패싱하고 차별하는 것으로, 일터의 노동조합은 분노하여 요구하고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[🔴속보] 삼성전자 적자 사업부도 1.6억 원, \"메모리 6억인데 우린 600만 원?\"…'100배 차이' 투표에 영향? | SBS 뉴스속보",
+          "video_id": "vVxsg28vX7Y",
+          "views": 33553,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=vVxsg28vX7Y",
+          "subtitle_summary": "1. 삼성전자의 DX(완제품 DX) 부문에서 600만 원 주식을 지급하기로 합의되었으나, 메모리 사업부 직원이 최대한 받을 수 있는 금액의 1% 정도로 매우 적은 양입니다.\n2. 반도체(DS) 부문에서 예상되는 적자가 있으나, 특별 경영 성과급으로 1억 6천만 원 이상을 받을 수 있습니다.\n3. DX 부문의 직원들은 DS 부문 직원보다 적은 금액을 받게 될 것으로 예상되어 불만이 터져나오고 있으며, 이는 삼성전자에서 부문간의 갈등과 조직 내부 불신이 남게 됐습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "오늘부터 합의안 찬반 투표..막판 변수 '촉각', 투표권 놓고 '충돌'..100배 차이 '부글' - [핫이슈PLAY] MBC뉴스 2026년 05월 22일",
+          "video_id": "IbIR5Nm4sZM",
+          "views": 28933,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=IbIR5Nm4sZM",
+          "subtitle_summary": "1. 삼성전자의 합의안에서 반도체 DS 부문은 특별 경영 성과급을 받게 되며, 평균적으로 1인당 6억 2천만 원을 지급받을 것이다. 반면 비메모리 사업부는 기존 성과급만 받아 연봉 1억 원에서 최대 5천만 원까지 지급될 것이며, DX 부문은 특별 성과급을 받지 못한다.\n2. 이로 인해 삼성전자 직원들 사이에서는 불만이 많고, 최종적으로 조합원들이 동의하기 전까지 투표의 변수가 될 것으로 보인다.\n3. 삼성전자 공동투쟁 본부는 27일까지 전자투표 방식으로 노사 잠정 합의안에 대한 조합원 천반 투표를 실시할 예정이다.",
+          "db_saved": true
+        }
+      ],
+      "max": 2.3237,
+      "min": 2.0312,
+      "nb_score": 1.144,
+      "avg_views": 19826.0,
+      "total_views": 79304
+    },
+    {
+      "keyword": "단일화",
+      "is_fixed": false,
+      "views": [
+        7355,
+        3503,
+        61,
+        1014,
+        5492
+      ],
+      "video_count": 5,
+      "videos": [
+        {
+          "title": "박민식 \"배신자와 단일화?\"...한동훈 \"하정우 돕나\" / YTN",
+          "video_id": "Iz1uvKl-iPM",
+          "views": 7355,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=Iz1uvKl-iPM",
+          "subtitle_summary": "1. 63 지방 선거의 최대 변수인 부산 북값 국회의원 보궐에서 보수 단율화가 점점 희박해지고 있습니다.\n2. 민주당 후보 하정우와 무소속 한동훈이 공격을 교환하고 있으며, 한동훈은 단일화가 존재할 수 없는 망상이라고 주장했습니다.\n3. 이명박, 박근혜, 윤성열 등의 대통령들이 한동훈을 지원하지 않았으며, 당권파와 박민식 후보는 자신의 낙선인 것 같다고 비판했습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[시사쇼 정치다] 박민식, 출정식서 단일화 거부 의사 밝히며 삭발… 90대 노모가 직접 나서",
+          "video_id": "nI_3YI3d-RA",
+          "views": 3503,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=nI_3YI3d-RA",
+          "subtitle_summary": "1. 정치인 박민식이 출정식에서 단일화 거부하고 삭발, 자신의 배신을 비판하며 반응했다.\n2. 박민식은 지난 선거에서 한동훈과 함께 당선되었으나, 이번 선거에서는 자신의 정치적 인생이 흔들리게 될 수 있다고 예측된다.\n3. 박민식의 배신을 비판하며 단일화를 반대한 메시지가 전해졌으나, 한동훈은 이에 대해 반응하는 방법은 아직 알려지지 않았다.",
+          "db_saved": true
+        },
+        {
+          "title": "진보 내일(23일)부터 울산시장 후보 단일화 경선…보수는 평행선 / KBS  2026.05.22.",
+          "video_id": "wYJGTS5d9gY",
+          "views": 61,
+          "upload_date": "2026-05-23",
+          "url": "https://www.youtube.com/watch?v=wYJGTS5d9gY",
+          "subtitle_summary": "1. 더불어민주당과 진보당의 울산시장 후보 단일화 경선이 23일부터 24일까지 100% 일반 시민 여론 조사 방식으로 진행되고, 결과는 1일 밤에 나올 예정입니다.\n2. 보수진영의 울산시장 후보 단일화는 여전히 난항을 겪고 있으며, 무소속 박맹우 후보가 완주 의사를 분명히 하고 있습니다.\n3. 국민의 힘 후보들이 단일화를 촉구하면서 박맹우 후보에게 단일라 무산의 책임을 넘기고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "부산 북구갑 선거전 후끈…보수 단일화 공방 / KBS  2026.05.22.",
+          "video_id": "ikIJw759hnM",
+          "views": 1014,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=ikIJw759hnM",
+          "subtitle_summary": "1. 부산 북구갑 국회의원 선거에서 3명의 후보가 표심을 잡고 있으며, 최근 보수 단일화가 문제로 떠오르고 있습니다.\n2. 하정우 후보는 도시를 직접 방문하여 시민과 소통하고 있으며, 실효적인 방법을 찾아내는 것에 중요함을 강조했습니다.\n3. 박미식 후보는 만덕 시장을 찾아 상인들의 지지를 호소하고 있으며, 한동훈 후보와 박민식 후보가 서로 공격하고 있습니다. 이는 선거 후반에 핵심 쟁점으로 떠나고 있으며, 더욱 치열해질 전망입니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[뉴스직격]오세훈 \"대통령님, 선거 개입 그만\"/삭발 박민식 \"단일화 없다\"..한동훈 “박민식, 하정우와 단일화한셈\"/김용남, 멍든 조국에 \"파란색 부럽나\"/김병채 김종일 김정현",
+          "video_id": "ELnfY6iXm6Y",
+          "views": 5492,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=ELnfY6iXm6Y",
+          "subtitle_summary": "1. 63 지방 선거 운동이 2주째입니다. 여야 대표들의 매력과 영향력이 미치기 힘들 것으로 보인다는 평가.\n2. 정청례 대표와 장동혁 대표 사이에서 민주당 입장에서 정청례 대표가 더 낮다고 판단된다.\n3. 부산에서 오빠 논란이 있었으나, 본격적인 선거 운동 시작 후에는 정총래 대표도 조심을 할 것으로 예상된다.",
+          "db_saved": true
+        }
+      ],
+      "max": 1.5063,
+      "min": 1.7643,
+      "nb_score": 0.8538,
+      "avg_views": 3485.0,
+      "total_views": 17425
+    },
+    {
+      "keyword": "암호화폐 시장 동향",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "주식 성과급 논란",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "스타벅스 불매 운동",
+      "is_fixed": false,
+      "views": [
+        10230
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "[스타벅스 탱크데이] 李대통령 \"거기 커피는 아니죠?\" '탈벅' 파장에 파묘되는 정용진 '멸공' 논란 #스타벅스 #탱크데이 _260522",
+          "video_id": "9zZLIlhWsTs",
+          "views": 10230,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=9zZLIlhWsTs",
+          "subtitle_summary": "1. Starbucks Korea controversy escalating, with social media posts about quitting the app and boycotting stores increasing due to issues with their reward system and pre-paid deposit fees.\n2. The stock price of Starbucks Korea has seen a significant drop, but its overall impact on the market is unclear as it mirrors the general trend of the Kospi index.\n3. The controversy may have an impact on EMART, which relies heavily on the cash & carry business that Starbucks Korea contributes to, potentially causing negative effects for both companies in the future.",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "AI 로봇 산업 확산",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "부동산 관리비 개선",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "F-16 전투기 판매량",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "외국인 주식 매도",
+      "is_fixed": false,
+      "views": [
+        228
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "외국인 매도? 오해였습니다돈 몰리는 종목 알려드립니다 / 이데일리인사이트(260523)",
+          "video_id": "KSMJs0JSGYM",
+          "views": 228,
+          "upload_date": "2026-05-23",
+          "url": "https://www.youtube.com/watch?v=KSMJs0JSGYM",
+          "subtitle_summary": "1. 삼성전자의 총파업에 따라 사후 조정이 시작되고 있으며, 금리와 환율 등 외국인 매도가 일어나고 있는 상황입니다.\n2. 최근 전쟁과 금리 등의 변화로 주식 시장에서 변동성이 증가하여 주가와 매크로 지표가 서로 따로 노는 상황입니다.\n3. 금리가 올라가고 유가 때문에 물가 자극을 받으며, 금리가 우상향하는 추세가 지난주 동안 강해졌습니다. 이제 M비디아의 실적이 거의 마무리되고 있으므로 이후에는 주가와 매크로 지표의 변동성을 분석하여 시장 리스크를 평가해야 할 것입니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "코스닥 정책자금 효과",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "성과급 갈등 로봇투자",
+      "is_fixed": false,
+      "views": [
+        13963
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "“사람 대신 로봇?”…삼성전자·현대차, AI 공장 선언한 이유는? [잇슈 머니] / KBS  2026.05.22.",
+          "video_id": "l8pgBubW9hk",
+          "views": 13963,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=l8pgBubW9hk",
+          "subtitle_summary": "1. 삼성전자 노사 갈등은 AI 시대의 첫 번째 대규모 성과 배분 갈등으로 볼 수 있습니다. 이는 한국 경제가 특정 기업과 특정 산업에 압도적으로 의존하고 있음을 보여주며, 노동자들의 협상력도 커집니다.\n2. 이 갈등은 \"한국 경제는 과연 충분히 분산돼 있는가?\"와 \"한 기업, 한 산업, 한 기술 인력군에 너무 많이 의존하고 있는 것은 아닌가?\"라는 질문을 던지고 있습니다.\n3. 앞으로 이러한 갈등이 반복될 가능성이 높고, 핵심 인재의 몸값과 협상력은 더 커질 것입니다. 따라서 정부와 기업은 준비해야 할 사항도 명확합니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "채권자경단 위험 경고",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "퇴직연금 원금보장 상품",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "웹툰 제주일상 인기",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    }
+  ]
+}

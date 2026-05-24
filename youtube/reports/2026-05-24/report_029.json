@@ -1,0 +1,223 @@
+{
+  "timestamp": "2026-05-24T04:29:11.481350",
+  "model": "mistral:latest",
+  "keyword_count": 3,
+  "analyze_subtitles": true,
+  "analysis_source": "youtube",
+  "keywords": [
+    {
+      "keyword": "오늘의 주요 뉴스",
+      "is_fixed": true,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "반도체 산업 전망",
+      "is_fixed": false,
+      "views": [
+        4380,
+        15072
+      ],
+      "video_count": 2,
+      "videos": [
+        {
+          "title": "삼성전자 50만 간다?… 월가가 갑자기 한국 반도체에 미친 진짜 이유“엔비디아보다 무섭다”… 지금 조용히 돈 쓸어담는 한국 기업",
+          "video_id": "g4lYdeVLjfQ",
+          "views": 4380,
+          "upload_date": "2026-05-23",
+          "url": "https://www.youtube.com/watch?v=g4lYdeVLjfQ",
+          "subtitle_summary": "1. 상성전자의 상승은 단순한 반등으로 보기엔 과하며, 한국 시장 전체가 바뀌고 있다는 분석이 나오고 있습니다.\n2. AI 시장의 중심축이 GPU에서 메모리로 이동하고 있으며, 삼성전자는 전 세계 메모리 이깁니다.\n3. 최근 외국제 증권사 보고서들을 보면 분위기가 완전히 바뀌었습니다. 삼성전자의 목표가를 50만원 1부 이상으로 많은 기관들이 시각을 바꾸고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "Start Accumulating These '2 Semiconductor Stocks' Now (Part 2 with Reporter Ahn Seok-hyun)",
+          "video_id": "QutYU04kWMM",
+          "views": 15072,
+          "upload_date": "2026-05-23",
+          "url": "https://www.youtube.com/watch?v=QutYU04kWMM",
+          "subtitle_summary": "1. 현재 시장에서 강점을 가진 반도체 회사로 엔비디아를 지칭하고 있으나, GPU 시대의 계속적인 이어짐과 맞춤형 A직 반도체 시장의 성장으로 인해 엔비디아의 독점을 깨우는 시도가 지속적으로 나오고 있다.\n2. 최근 AI 반도체 생태계에서 범용성이 높은 M비디아 GPU를 사용하는 회사들이 대량의 인프라 투자가 필요하며, TCO(총소유 비용) 측면에서 GPU 구입과 전기요금 등에 대한 반발심리가 강해지고 있다.\n3. 이러한 상황에서 브로드컴이라는 회사가 선봉되어 있으며, AI가 학습에서 추론으로 넘어간 본격적인 시점을 보고자 한다. 하지만 엔비디아가 여전히 1황이며, 예상했던 시점과는 달리 아직 밀리고 있다고 나오고 있다.",
+          "db_saved": true
+        }
+      ],
+      "max": 2.9801,
+      "min": 0.8506,
+      "nb_score": 3.5035,
+      "avg_views": 9726.0,
+      "total_views": 19452
+    },
+    {
+      "keyword": "원자력 발전소 안전",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "미세플라스틱 제거 방법",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "AI 스포츠 분석",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "아르테미스 달 탐사",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "UFO 과학적 검증",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "수도권 GTX 사업",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "주택 재건축 현장",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "삼성전자 성과급 논란",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "챔피언십 리그 하이라이트",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "MLB",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "외래종 사슴 관리",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "환절기 알레르기 관리",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "부동산 펀드 투자",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "스타벅스 사회적 논란",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    }
+  ]
+}

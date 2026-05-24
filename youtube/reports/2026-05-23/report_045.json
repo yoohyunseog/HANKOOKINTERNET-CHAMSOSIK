@@ -1,0 +1,351 @@
+{
+  "timestamp": "2026-05-23T09:36:19.247346",
+  "model": "mistral:latest",
+  "keyword_count": 3,
+  "analyze_subtitles": true,
+  "analysis_source": "youtube",
+  "keywords": [
+    {
+      "keyword": "오늘의 주요 뉴스",
+      "is_fixed": true,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "삼성전자 성과급 논란",
+      "is_fixed": false,
+      "views": [
+        4604,
+        4056
+      ],
+      "video_count": 2,
+      "videos": [
+        {
+          "title": "[Samsung Electronics Bonus Controversy] \"Samsung Electronics paid -250 billion won in corporate t...",
+          "video_id": "YVnTbbhotgQ",
+          "views": 4604,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=YVnTbbhotgQ",
+          "subtitle_summary": "1. Samsung Electronics 은 -2500억원의 법인세를 낸 것으로, 그 과정에서 주주들의 반발이 심해지고 있습니다.\n2. Samsung Electronics는 국가적 지원을 받아 성공한 반도체 부품 산업에 투자했으며, 그 과정에서 선대 회장들의 과감한 투자와 주주들의 위험을 감수하는 참여가 있었습니다.\n3. Samsung Electronics가 현재 호항에서 즐기고 있는 성공은 AI 붐으로 인한 반도체 인프라 투자 수요 때문일 것으로 보입니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[🔴속보] 삼성전자 주주단체 \"주총 승인 없으면 무효 소송\"...특별성과급 논란 확산 / 연합뉴스TV(YonhapnewsTV)",
+          "video_id": "W8PPsTMscpM",
+          "views": 4056,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=W8PPsTMscpM",
+          "subtitle_summary": "1. 삼성전자에서 메모리 사업부 직원은 6억 원의 성과급, 비메모리 사업부도 1억 원대의 특별 경영 성과급을 받을 예정이며, 완제품 DX와 같은 비반도체 부문에서는 배제되었다는 불만이 있습니다.\n2. 이 투표에서 과반 찬성이 나온다고 하더라도 노동계와 주주 단체 간의 갈등이 지속될 것으로 보입니다.\n3. 주주 단체는 삼성전자 노사 합의안에서 법적으로도 맞지 않고, 주주의 이익을 침해하는 것으로 규정했습니다. 또한 가처분 신청과 소송도 예고했습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 4.8793,
+      "min": 0.0,
+      "nb_score": 48792.7889,
+      "avg_views": 4330.0,
+      "total_views": 8660
+    },
+    {
+      "keyword": "반도체 레버리지 ETF",
+      "is_fixed": false,
+      "views": [
+        4912,
+        77261
+      ],
+      "video_count": 2,
+      "videos": [
+        {
+          "title": "삼전·하이닉스 2배 ETF 저는 이렇게 준비합니다",
+          "video_id": "2kwQ135ATGk",
+          "views": 4912,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=2kwQ135ATGk",
+          "subtitle_summary": "1. 삼전·하이닉스 2배 ETF가 5월 27일 상장되었습니다. 이는 국내 증시 역사상 처음으로 단일 종목을 두 배로 따라가는 상품입니다.\n2. 이 ETF의 상장은 삼성전자와 SK 하이닉스 주가의 단기적인 좋은 신호로 보입니다. 이유는 새로운 매수 자금, 개인 투자 심리, 반도체 섹터에 시선이 쏠린다는 점으로 인해서입니다.\n3. 중요한 것은 상장 초기부터 첫 주까지 실제로 몇 만 원의 돈이 몰리는지를 보아야 합니다. 이게 왜 중요한지는 나중에 설명하겠습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "At the Center of the Semiconductor Era, Add Leverage! | ACE Samsung Electronics & SK Hynix Single...",
+          "video_id": "yF4gx-G9UV0",
+          "views": 77261,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=yF4gx-G9UV0",
+          "subtitle_summary": "1. 국내 시장에서도 단일 종목 레버리지 투자가 가능해졌습니다. 이번 강점은 대한민국 시가 총액 1,2위인 삼성전자와 SK Hynix에 투자하는 방법입니다.\n2. 단일 종목 레버리지 상품의 특징은 해당 종목의 주가 흐름에만 두 배로 집중하며, 해외 상장 상품과 달리 환전 비용이 없고 국내 장중 변동성에 실시간 대응할 수 있습니다.\n3. 단일 종목 레버리지 상품은 높은 확률로 명확한 방향성이 보일 때 강력하며, 포트폴리오의 효율성을 높이고, 적은 비중으로 높은 익스포저를 확보하기 위해 활용할 수 있습니다. 그러나 양날의 검이 될 수 있으므로 장기 투자 시에는 주의가 필요합니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 2.7799,
+      "min": 2.3119,
+      "nb_score": 1.2024,
+      "avg_views": 41086.5,
+      "total_views": 82173
+    },
+    {
+      "keyword": "초기업노조 합의안",
+      "is_fixed": false,
+      "views": [
+        26814,
+        50239,
+        82246,
+        12440
+      ],
+      "video_count": 4,
+      "videos": [
+        {
+          "title": "[속보] 삼성전자 노조 '잠정합의안' 투표 돌입 초기업노조 \"부결 시 위원장 사퇴\"/2026년 5월 22일(금)/KBS",
+          "video_id": "bnyKL8Z5BpM",
+          "views": 26814,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=bnyKL8Z5BpM",
+          "subtitle_summary": "1. Samsung Electronics노조는 오늘부터 잠정합의안에 대한 찬반투표를 시작했습니다. 투표가 과반수 찬성하면 잠정합의가 이루어지고 특별 성과급 조항이 실현됩니다.\n2. Samsung Electronics노조에서 도출한 잠정 합의안에는 반도체부문을 대상으로 특별 성과급 신설, 평균 임금 6.2% 인상, 주택자금 대출 제도 등이 포함되어 있습니다.\n3. 잠정합의한 투표 결과를 조합원들이 주신 초기업노동조합 성적표로 삼겠다고 했으나, 비메모리 조합원들은 합의안에 대해 평가가 엇갈릴 정도로 반발하고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[On-Site Footage] \"A Warning to the Mega-Union\"… DX Union 'Furious' Over \"Hasty Tentative Agreeme...",
+          "video_id": "KrUSKZBp6O4",
+          "views": 50239,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=KrUSKZBp6O4",
+          "subtitle_summary": "1. 전국 Samsung 노동조합 수원 지부장 이호석은 DX 직원들이 좀 균형이 안 잡혔다고 생각하며, 자신들의 목소리를 설명하고 문제점을 밝히려고 한다고 말했습니다.\n2. 동행노조국장 부정환은 초기업 노동조합 삼성전자 지부 위원장이 대다수 노동조합의 여면을 외면하고, 차별적인 합의안을 서명했다는 규탄을 하며, 12명의 결집이 두려움과 초기업 노조에 치조한 투표를 요청했습니다.\n3. 일터의 노동자들은 민주적인 심판을 위해 우리 동행 노조로 대거 결집했으며, 초기업 위원장과 집행부는 반성하지 않고 늘어난 만 명의 목소리를 두려워 천반 투표에서 동행 노조 조합원들을 배제하려고 하고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "\"여러분은 투표권 없다\"...파장 불러올 삼성전자 초기업노조 통보 [지금이뉴스] / YTN",
+          "video_id": "1C-EXKAYu_k",
+          "views": 82246,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=1C-EXKAYu_k",
+          "subtitle_summary": "Samsung Electronics' initial labor union, focused on the semiconductor division, has announced that they have reached a tentative wage agreement with the general labor union, but without voting rights for members in the mobile and home appliance divisions. A second labor union, with a high membership in the DX (Device Experience) department, which handles Samsung's mobile business, has expressed concern over this situation, stating that they want to ensure a fair vote and reflect the voices of all parties involved. Yesterday, the initial labor union announced the tentative agreement unilaterally, potentially silencing the voices of DX department employees once again. The second labor union has released an email sent by the chairman of the initial labor union, confirming that the joint negotiating team has reached a tentative agreement for the 2026 wage contract, but the second labor union has terminated the team, resulting in no voting rights. This situation has arisen amidst growing dissatisfaction among employees in the device experience and semiconductor divisions. Yesterday, many employees from the DX department joined the central Samsung labor union and the secondary labor union, increasing the membership of the latter from around 2,600 to over 12,000 as of this afternoon. The secondary labor union represents Samsung employees in the DX department.",
+          "db_saved": true
+        },
+        {
+          "title": "[현장] 삼전 '잠정합의안' 표결 앞두고 노노 갈등 폭발/DX 노조 \"부결시킬 것\"/2026년 5월 22일(금)/KBS",
+          "video_id": "CEiC9EtQStk",
+          "views": 12440,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=CEiC9EtQStk",
+          "subtitle_summary": "1. 현재, 국내 삼성전자 노동조합(NESu와 SEU)은 잠정 합의안에 대한 입장을 언론사분들과 공유하고 있습니다. 이는 DX직원들의 불만 및 배분, 임금 인상 문제를 포함합니다.\n2. 특히, 수원에 있는 DX직원들이 어떤 문제를 제기하고 있는지에 대해서 집중하고자 합니다. 차별이 심하고 균형이 안 잡혔으므로 좀 더 건전하고 균형잡힌 노동조합 협의가 필요합니다.\n3. 최근, 초기업 노동조합 삼성전자 지부 위원장은 독단적으로 잠정 합의안에 서명했고, 이에 대한 참반 투표를 요청했습니다. 하지만 초기업 집행부는 반성하지 않고 동행 노조 조합원들을 원천배제하려는 최악의 악수를 두고 있습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 1.4069,
+      "min": 2.4405,
+      "nb_score": 0.5765,
+      "avg_views": 42934.75,
+      "total_views": 171739
+    },
+    {
+      "keyword": "지방선거 여론조사",
+      "is_fixed": false,
+      "views": [
+        89936,
+        7270,
+        2865,
+        15129,
+        3404
+      ],
+      "video_count": 5,
+      "videos": [
+        {
+          "title": "[이슈][KBS 여론조사] 6·3 지방선거 'D-13' 민심 향방은?…'주요 승부처' KBS 여론조사 대공개/2026년 5월 21일(목)/KBS",
+          "video_id": "YofJWtj9hRM",
+          "views": 89936,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=YofJWtj9hRM",
+          "subtitle_summary": "KBS 여론조사에 따르면 6·3 지방선거 'D-13'의 주요 격전지로 서울시장 후보 중 정원호와 오동수가 나왔습니다. 정후보는 서울의 민주당 지지와 큰 차이가 없었고, 오후보는 국민의 임 지지도보다 10% 포인트 가량 높았습니다. 부산시장 선거에서는 더불어민주당 전제수 후보가 국내 힘 박형진 후보를 5차범위 밖에서 앞섰습니다. 부산시 교육감 선거에서는 김석준 후보가 29%로 가장 앞서었습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[뉴스퀘어 2PM] 6·3 지방선거 D-12...여론조사로 보는 지금 판세는? / YTN",
+          "video_id": "OlebmNtNbuM",
+          "views": 7270,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=OlebmNtNbuM",
+          "subtitle_summary": "6월 3일부터 12일까지 지방선거 공식 운동이 진행되고 있습니다. 국회의원 빈자리를 채우는 재보궐 선거도 큰 관심을 받고 있습니다. 최근 여론조사에서 정원호 후보가 45%, 오세훈 후보가 34%로 격차가 나타나고 있으며, 이전과 비교하면 상당히 의미 있는 격차가 유지되고 있습니다. 이번 선거는 정부 여당에 대한 평가이며, 윤석열 전 대통령의 불법 개엄과 탄핵에 관련된 첫 전국 선거입니다. 일부 영남 지역을 제외한 많은 지역들에서는 야당 후보들이 고전하고 있으며, 서울 같은 경우에도 중도층의 호응이 오세훈 시장에게 약간 기울어져 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[Issue at a Glance] Opinion Poll Results for Key Battleground Districts in Local Elections / KBS ...",
+          "video_id": "lDlVXvIMA40",
+          "views": 2865,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=lDlVXvIMA40",
+          "subtitle_summary": "1. 서울시장 선거에서 정원호와 오후보가 주력으로 경쟁하고 있으며, 정원호의 지지율이 45%로 나타났습니다. 오후보는 34%, 나머지 후보들은 1% 미만으로 조사되었습니다.\n2. 지난 한 달 동안 조사해서 두 후보 간의 격차는 모두 11% 포인트로 나타났습니다. 정원호의 지지율은 서울의 민주당 지지와 큰 차이가 없었고, 오후보는 국민의 임 지지도보다 10% 포인트 가량 높았습니다.\n3. 적극 투표층에서는 두 후보 간의 격차가 지지율보다 더 벌어졌지만, 지난 조사 때보단 차이가 줄어든 모습입니다. 또한 지지하는 후보가 없거나 모르는 응답은 여전히 20% 안파크로 나타났습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "12일 남은 6·3 지방선거...여론조사로 보는 지금 판세는? [세상만사] #지방선거 #선거 #여론조사",
+          "video_id": "B5Hx-6CI34I",
+          "views": 15129,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=B5Hx-6CI34I",
+          "subtitle_summary": "1. 6·3 지방선거가 2일 연속으로 중단되었습니다. 재보궐 선거도 큰 관심을 끌고 있습니다.\n2. 여론조사를 통해 정원호 후보가 45%, 오세훈 후보가 34%로 차이가 나타나고 있습니다.\n3. 지금 과거에 비해서 상당히 의미 있는 격차가 유지되고 있으며, 일부 영남 지역을 제외한 많은 지역들에서 야당 후보들이 고전하고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[Local Election Poll] Where Will the Centrist Vote Go in Yangsan, Namhae, and Hadong? (May 22, 20...",
+          "video_id": "lCx1tr9GdgA",
+          "views": 3404,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=lCx1tr9GdgA",
+          "subtitle_summary": "1. 양산시장 선거에서 조문관과 나동현이 5차범인의 접전을 보이고 있으며, 중도층의 표심이 승패를 결정할 것으로 예상됩니다.\n2. 양산에서 여당의 힘을 실어줘야 한다는 응답이 44.1%였고, 정당 지지도는 더불어민주당 40.8%, 국민의 힘 32.8%로 나타났습니다.\n3. 양산시장 후보 지지도는 더불어민주당 조문관 45.4%, 국민의 힘 나동현 41.8%로, 중도층에선 더불어민주당 53%, 국민의 힘 37.2%였습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0.4178,
+      "min": 1.4028,
+      "nb_score": 0.2978,
+      "avg_views": 23720.8,
+      "total_views": 118604
+    },
+    {
+      "keyword": "스타벅스 불매 운동",
+      "is_fixed": false,
+      "views": [
+        3275
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "'스타벅스 불매' 공직사회 확산...공무원노조도 동참 / YTN",
+          "video_id": "znj2HZ03WaI",
+          "views": 3275,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=znj2HZ03WaI",
+          "subtitle_summary": "1. 스타벅스의 탱크데이 이벤트로 인해 불매 운동이 공직사회에서 확산되고 있습니다. 행정안전부, 보험부 장관 등 정부 부처가 스타벅스 상품권을 사용하지 않겠다고 선언했으며, 법무부는 대검찰청에 스타벅스 상품 구매 내역을 보고하라는 지시를 한 것으로 알려졌습니다.\n2. 전국 공무원 노동 조합은 스타벅스 이용 중단을 요청했으며, 민주지주의와 인권의 가치를 중요시하기 때문에 엄중하게 대처해야 한다고 보고 15만 조합원에 251개 집으로 스타벅스 이용을 중단했습니다.\n3. 공무원노조 총년맹은 스타벅스 기프티콘 사용 자재령을 내렸고, 정용진 신세계 그룹 회장과 스타벅스 측에게 방지 대책을 촉구했습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "K바이오 기술수출",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "AI 일자리 대체",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "F-16 판매량 비교",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "UFO 검증 영역",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "경주시 개발 프로젝트",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "보이스피싱 수거책 검거",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "국제유가 하락 전환",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "스페이스X 상장 주관사",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "웹툰 제주일상 트렌드",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "장애인 고령 사회 이슈",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    }
+  ]
+}

@@ -1,0 +1,389 @@
+{
+  "timestamp": "2026-05-20T06:32:28.575924",
+  "model": "news-singleline:latest",
+  "keyword_count": 3,
+  "analyze_subtitles": true,
+  "analysis_source": "youtube",
+  "keywords": [
+    {
+      "keyword": "오늘의 주요 뉴스",
+      "is_fixed": true,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "코스피 외국인 매도",
+      "is_fixed": false,
+      "views": [
+        333,
+        9910
+      ],
+      "video_count": 2,
+      "videos": [
+        {
+          "title": "\"지금 안 팔면 후회한다\" 코스피 급락 속 현금 부자들이 당장 쓸어담을 '이 주식' (오르고TV 대표 1부)",
+          "video_id": "57HwoIxa-Z8",
+          "views": 333,
+          "upload_date": "2026-05-19",
+          "url": "https://www.youtube.com/watch?v=57HwoIxa-Z8",
+          "subtitle_summary": "코스피가 20일선 부근에서 지지 경신하며 조정 국면을 보이고 있으며, 시게이트 CEO 발언과 외국인 대규모 순매도, 미국 국채 금리 급등 등의 요인이 하락을 주도하고 있습니다. 특히, 마이크론, SK하이닉스 등 반도체 종목들의 약세와 삼성전자 총파업 우려도 투자 심리를 위축시키는 주요 악재로 작용하고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[주식]외국인 9일간 48조 매도 그래도 반도체는 매수 기회 단 이때 매수해야 합니다(20260519화)",
+          "video_id": "6W3Ab_KayJo",
+          "views": 9910,
+          "upload_date": "2026-05-19",
+          "url": "https://www.youtube.com/watch?v=6W3Ab_KayJo",
+          "subtitle_summary": "[오늘 코스피 지수가 외국인 대규모 매도에 3.25% 급락하며 7,271.66으로 마감되었고, 미국-이란 군사적 긴장과 금리 인상 우려로 투자 심리가 위축된 가운데 반도체 매수세가 약화되었다.]",
+          "db_saved": true
+        }
+      ],
+      "max": 2.7713,
+      "min": 2.487,
+      "nb_score": 1.1143,
+      "avg_views": 5121.5,
+      "total_views": 10243
+    },
+    {
+      "keyword": "삼성전자 노사 협상",
+      "is_fixed": false,
+      "views": [
+        5906,
+        141394,
+        49392,
+        29024
+      ],
+      "video_count": 4,
+      "videos": [
+        {
+          "title": "삼성전자 노사협상 막판 진통...밤 10시까지 연장 / YTN",
+          "video_id": "X4VowNkmWvk",
+          "views": 5906,
+          "upload_date": "2026-05-19",
+          "url": "https://www.youtube.com/watch?v=X4VowNkmWvk",
+          "subtitle_summary": "삼성전자 노사 협상이 중앙노동위원회 중재하에 밤 10시까지 연장되었으며, 핵심 쟁점인 성과급 배분 비율과 제도화에 대한 입장 차이로 막판 진통을 겪고 있다. 노사는 중노위가 마련한 대안을 놓고 최종 합의를 시도하고 있지만, 합의점을 찾지 못할 경우 중노위가 조정안을 제시하거나 협상이 결렬될 수 있다. 향후 밤 10시까지의 협상 결과에 따라 삼성전자 노사의 향후 방향이 결정될 것으로 보인다.",
+          "db_saved": true
+        },
+        {
+          "title": "삼성전자 최승호 \"못 해먹겠다\" 파장...노조 두 쪽 날 위기 [지금이뉴스] / YTN",
+          "video_id": "A6HRUICfcvw",
+          "views": 141394,
+          "upload_date": "2026-05-19",
+          "url": "https://www.youtube.com/watch?v=A6HRUICfcvw",
+          "subtitle_summary": "삼성전자와 노조 간 성과급 배분 비율을 둘러싼 협상이 난항 속에서 적자 사업부의 성과급 지급 문제와 노조 교섭권 확보를 위한 초기업 노조의 위기감이 고조되고 있다. 노조는 반도체 부문의 높은 영업이익을 활용해 적자 사업부에도 충분한 성과급을 지급해야 한다고 주장하는 반면, 사측은 성과주의 원칙을 지키기 위해 전체 배분율을 낮추는 방안을 고수하고 있다. 이러한 상황이 지속될 경우 노조의 지위가 약화될 수 있다는 우려가 제기되며, 정부의 긴급 조정권 발동 가능성도 커지고 있다.",
+          "db_saved": true
+        },
+        {
+          "title": "Samsung Electronics Management and Labor Enter Indefinite 'Last-Minute' Marathon Negotiations (05...",
+          "video_id": "6pJHoqMRlvQ",
+          "views": 49392,
+          "upload_date": "2026-05-19",
+          "url": "https://www.youtube.com/watch?v=6pJHoqMRlvQ",
+          "subtitle_summary": "삼성전자와 노사가 정부 중재하에 이틀째 진행 중인 임금 체계 후 조정 협상에 돌입하여, 회의 시간을 오늘 밤 10시까지 연장하며 핵심 쟁점인 성과급 규모 및 배분에 대한 줄다리기를 이어가고 있다. 정부는 파업 시까지 합의를 유도하기 위해 조정안 제시 가능성을 열어두고 있지만, 노사 양측은 자발적 타결을 위해 마지막까지 협상을 지속할 것으로 보인다. 극적인 타결 가능성과 파업의 불투명성 속, 향후 협상 결과에 귀추가 주목되고 있다.",
+          "db_saved": true
+        },
+        {
+          "title": "[🔴속보] 삼성전자 노사 2차 조정 회의 2일차 \"결렬 시 총파업\"..이르면 오늘 저녁 결론 | SBS 뉴스 속보",
+          "video_id": "pJV5rUtzny8",
+          "views": 29024,
+          "upload_date": "2026-05-19",
+          "url": "https://www.youtube.com/watch?v=pJV5rUtzny8",
+          "subtitle_summary": "[수원지방법원은 삼성전자 노조의 파업 관련 위법 쟁의 행위 금지 가처분 신청을 대부분 인용하여, 파업 중에도 안전 보호 시설 유지 및 특정 작업 수행을 조건으로 파업을 허용함으로써 노조의 파업 계획에 제동을 걸었습니다.]",
+          "db_saved": true
+        }
+      ],
+      "max": 1.039,
+      "min": 1.9023,
+      "nb_score": 0.5462,
+      "avg_views": 56429.0,
+      "total_views": 225716
+    },
+    {
+      "keyword": "지지율",
+      "is_fixed": false,
+      "views": [
+        12905,
+        19120,
+        8488
+      ],
+      "video_count": 3,
+      "videos": [
+        {
+          "title": "[Today's News] \"Daegu Dalseong-gun race within margin of error\": Park Hyung-ryong vs. Lee Jin-soo...",
+          "video_id": "MPCpBRJegXA",
+          "views": 12905,
+          "upload_date": "2026-05-19",
+          "url": "https://www.youtube.com/watch?v=MPCpBRJegXA",
+          "subtitle_summary": "[대구 달성군 국회의원 보궐선거에서 더불어민주당 박형용 후보가 41.7%의 지지율로, 국민의힘 이진숙 후보 48.5%를 오차범위 내에서 앞서나가고 있으며, 후보자 인물 및 자질이 주요 선택 기준인 것으로 나타났습니다. 적극 투표층의 경우 격차가 좁혀졌지만, 여전히 박형용 후보가 우세를 보이는 가운데, 높은 투표 의향을 보이는 유권자들의 지지가 핵심이 될 전망입니다. 이번 여론조사는 대구 MBC 의뢰로 에이스 리서치가 진행했으며, 5월 17일~18일 달성군 거주 만 18세 이상 남녀 504명을 대상으로 실시했습니다.]",
+          "db_saved": true
+        },
+        {
+          "title": "[MBC Poll] Busan Buk-gu-gap: Ha Jung-woo 38%, Han Dong-hoon 33%... Gyeonggi Pyeongtaek-eul: Kim Y...",
+          "video_id": "haeQSu3YgB0",
+          "views": 19120,
+          "upload_date": "2026-05-19",
+          "url": "https://www.youtube.com/watch?v=haeQSu3YgB0",
+          "subtitle_summary": "부산 북구갑 선거에서는 하정우 후보가 38%의 지지율을 기록하며 한동훈 후보를 33%로 앞섰고, 가상 대결에서는 하정우 후보가 박민식 후보를 18% 포인트 차이로 승리했으며, 법적 야당 지지율은 한동훈 후보가 47%로 압도했습니다. 경기 평택에서는 민주당 김용남 후보가 31%의 지지율을 보이며 조국 후보를 27%로 크게 앞섰고, 가상 대결에서는 김용남 후보가 유의동 후보를 30% 포인트 차이로 승리했습니다. 경기 하남갑 선거에서는 민주당 이광제 후보가 43%의 지지율을 얻어 국민의힘 이용 후보를 31%로 앞섰습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "Han Dong-hoon's Approval Rating Higher in Three-Way Race Than Park Heong-joon's in Two-Way Race",
+          "video_id": "9a6hUjcKrOs",
+          "views": 8488,
+          "upload_date": "2026-05-19",
+          "url": "https://www.youtube.com/watch?v=9a6hUjcKrOs",
+          "subtitle_summary": "[63재보궐선거 여론조사 결과, 국민의힘 한동훈 후보가 2자대결 구도에서 박홍준 후보보다 높은 지지율을 보이며, 서울, 대구, 부산 등 주요 지역에서 민주당 후보들과 격차는 줄어드는 추세지만 보수 후보들의 결집이 나타나는 가운데 현직 시장들의 낮은 평가와 이재명 대통령의 높은 지지율이 민주당에 불리한 지형을 조성하고 있다.]",
+          "db_saved": true
+        }
+      ],
+      "max": 1.515,
+      "min": 4.3508,
+      "nb_score": 0.3482,
+      "avg_views": 13504.33,
+      "total_views": 40513
+    },
+    {
+      "keyword": "한일 원유 스와프 협력",
+      "is_fixed": false,
+      "views": [
+        4600,
+        2067,
+        773,
+        3129,
+        2946,
+        44087,
+        1371,
+        18,
+        810
+      ],
+      "video_count": 9,
+      "videos": [
+        {
+          "title": "[🔴속보] 이 대통령 \"한일 공급망 협력 확대하기로\"…셔틀외교 완벽 복원ㅣ다카이치 \"다음엔 일본 아름다운 곳 모실 것\" / 연합뉴스TV(YonhapnewsTV)",
+          "video_id": "HnC3A0i37Ng",
+          "views": 4600,
+          "upload_date": "2026-05-19",
+          "url": "https://www.youtube.com/watch?v=HnC3A0i37Ng",
+          "subtitle_summary": "[이 대통령과 다카이치 총리가 경북 안동에서 정상회담을 갖고 한일 공급망 협력 확대 및 호르무즈 해상 이니셔티브 참여 등 다방면에서 협력을 강화하기로 합의했으며, 인도 태평양 지역 안정화와 미래 지향적인 관계 발전에 중점을 둔 양국 관계의 중요성을 강조했다.]",
+          "db_saved": true
+        },
+        {
+          "title": "\"Weathering the Storm of Global Uncertainty Together\"..Crude Oil and LNG Cooperation / SBS 8 News",
+          "video_id": "EOkFYawpVd4",
+          "views": 2067,
+          "upload_date": "2026-05-19",
+          "url": "https://www.youtube.com/watch?v=EOkFYawpVd4",
+          "subtitle_summary": "[이재명 대통령과 다카이치 일본 총리가 경북 안동에서 열린 정상회담에서 원유 및 LNG 공급망 협력을 강화하고, 싸울 필요 없는 한반도 구축을 위한 협력을 약속하며 한일 협력의 중요성을 재확인했습니다.]",
+          "db_saved": true
+        },
+        {
+          "title": "한일 정상회담…“불안한 국제정세 속 공급망·에너지 협력 확대” [9시 뉴스] / KBS  2026.05.19.",
+          "video_id": "DHwwueHNSFY",
+          "views": 773,
+          "upload_date": "2026-05-19",
+          "url": "https://www.youtube.com/watch?v=DHwwueHNSFY",
+          "subtitle_summary": "[중동전쟁으로 인한 공급망 및 에너지 불안에 대응하기 위해 이재명 대통령과 다카이치 총리가 한일 정상회담에서 협력을 강화하고 원유·LNG 공급 및 정보 공유 채널을 심화하기로 합의했습니다.]",
+          "db_saved": true
+        },
+        {
+          "title": "한일 정상, 에너지 안보 협력키로…\"원유 비축 등 소통 심화\" / 연합뉴스TV (YonhapnewsTV)",
+          "video_id": "vJKGhXWVH7A",
+          "views": 3129,
+          "upload_date": "2026-05-19",
+          "url": "https://www.youtube.com/watch?v=vJKGhXWVH7A",
+          "subtitle_summary": "[이재명 대통령과 다카이치 총리가 중동 전쟁으로 인한 에너지 안보 위기에 공동 대응하기 위해 원유 비축 정보 공유 및 소통 강화, LNG 협력 확대 등 에너지 안보 협력을 심화하기로 합의했습니다.]",
+          "db_saved": true
+        },
+        {
+          "title": "President Lee \"Expand Korea-Japan Supply Chain Cooperation\"... 4th Meeting Between Korea-Japan Le...",
+          "video_id": "JOjAdC-MJRs",
+          "views": 2946,
+          "upload_date": "2026-05-19",
+          "url": "https://www.youtube.com/watch?v=JOjAdC-MJRs",
+          "subtitle_summary": "이재명 대통령과 다카이치 일본 총리가 안동에서 정상 회담을 갖고, 연계조림 등 전통 음식 만찬과 함께 하회마을 선유 줄놀이 등을 즐겼습니다. 한일 관계 역사상 최초의 사례로, 원유 및 LNG 스와프 거래 협력을 확대하고 민간 대화를 이어갈 것을 합의했습니다. 또한, 한반도 평화 구축 의제를 논의하며, 북한 문제에 대한 긴밀한 연계 대응을 약속했습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "Now it's really the 'deadline'... Will 'all-night negotiations' begin? - [Full Video] MBC Newsdes...",
+          "video_id": "UVG12eWTWGM",
+          "views": 44087,
+          "upload_date": "2026-05-19",
+          "url": "https://www.youtube.com/watch?v=UVG12eWTWGM",
+          "subtitle_summary": "삼성전자 노사와 사태 해결을 위한 긴급 협상이 오늘 밤 10시까지 연장되었으며, 핵심 쟁점인 성과급 제도화 문제와 부문별 성과급 배분에 대한 이견 조정이 이어지고 있다. 정부의 조정안 제시 가능성도 언급되었으나, 노사와 사 측은 합의점을 찾기 위한 마지막 노력을 집중하고 있으며, 파업 예정일이 임박한 상황에서 극적인 타결 여부가 주목받고 있다.",
+          "db_saved": true
+        },
+        {
+          "title": "[Breaking] “South Korea and Japan to Strengthen Energy Supply Chain Cooperation”: Joint Announcem...",
+          "video_id": "rxAe9jx7tpk",
+          "views": 1371,
+          "upload_date": "2026-05-19",
+          "url": "https://www.youtube.com/watch?v=rxAe9jx7tpk",
+          "subtitle_summary": "[이재명 대통령과 다카이치 일본 총리는 한일 에너지 공급망 협력을 강화하고, 중동 지역의 에너지 안보 불안정에 공동 대응하기 위한 전략적 파트너십을 체결했다. 한일 간 연간 인적 교류 1,300만 명, 청년 세대의 활발한 교류를 확대하며 지역 간 협력을 강화하고, LNG 및 원유 분야의 협력을 심화하기로 했다.]",
+          "db_saved": true
+        },
+        {
+          "title": "\"LNG·원유 공급망 협력\"..줄불놀이 보며 친교 / SBS",
+          "video_id": "0x0zW-4XTFc",
+          "views": 18,
+          "upload_date": "2026-05-19",
+          "url": "https://www.youtube.com/watch?v=0x0zW-4XTFc",
+          "subtitle_summary": "[이재명 대통령과 다카이치 일본 총리가 경북 안동에서 열린 정상회담에서 원유와 LNG 공급망 협력을 강화하기로 합의했으며, 한반도 정세와 에너지 안보를 논의하며 양국 간 긴밀한 협력을 약속했습니다. 줄불놀이와 판소리 공연을 통해 친교를 다진 가운데, 한일 협력을 재확인하고 경제, 안보 등 다양한 분야에서 협력을 확대할 전망입니다.]",
+          "db_saved": true
+        },
+        {
+          "title": "안동서 '고향 셔틀외교'...\"원유·LNG 협력 확대\" / YTN",
+          "video_id": "_e-LkLrIX10",
+          "views": 810,
+          "upload_date": "2026-05-19",
+          "url": "https://www.youtube.com/watch?v=_e-LkLrIX10",
+          "subtitle_summary": "[이재명 대통령과 다카이치 총리가 한일 관계 개선을 위한 고향 셔틀 외교를 통해 중동 사태 극복과 에너지 공급망 협력 확대에 합의했으며, 특히 원유·LNG 분야의 협력을 강화하기로 약속했다.]",
+          "db_saved": true
+        }
+      ],
+      "max": 0.1388,
+      "min": 0.7958,
+      "nb_score": 0.1745,
+      "avg_views": 6644.56,
+      "total_views": 59801
+    },
+    {
+      "keyword": "부산 날씨 예보",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "미국 국방부 관련 뉴스",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "세입자 권리 보호",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "성과급 파업 노동법",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "전남 정치 지형 변화",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "쿠팡이츠 무료배달 확대",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "증시 활황과 목적세",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "데이터센터 성장 비교",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "동계 올림픽 중계권 논란",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "페북 인종차별 방치 논란",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "캠핑 박람회 고카프",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    }
+  ]
+}

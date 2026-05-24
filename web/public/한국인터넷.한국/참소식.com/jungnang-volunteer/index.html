@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>중랑구 자원봉사·지역 행사 기록 | 참소식.com</title>
+  <meta name="description" content="중랑구 자원봉사와 지역 행사 흐름을 기록, 제보, 공개 자료 기준으로 정리하고 최근 1~2주 유튜브 영상을 모아 보여주는 페이지입니다.">
+  <link rel="canonical" href="https://참소식.com/jungnang-volunteer/">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    :root {
+      --green-950: #002f24;
+      --green-900: #034333;
+      --green-800: #075a43;
+      --green-700: #08704f;
+      --green-100: #e8f6ef;
+      --pink-100: #fdecef;
+      --ink: #07352d;
+      --text: #243d4a;
+      --muted: #607684;
+      --line: #d6e3ea;
+      --paper: #ffffff;
+      --bg: #f5f9fb;
+      --shadow: 0 18px 42px rgba(15, 49, 64, .11);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", sans-serif;
+      color: var(--text);
+      background:
+        linear-gradient(180deg, rgba(255,255,255,.55), rgba(245,249,251,.92)),
+        radial-gradient(circle at 7% 18%, rgba(255, 197, 207, .23), transparent 25%),
+        radial-gradient(circle at 92% 84%, rgba(7, 112, 79, .12), transparent 26%),
+        var(--bg);
+    }
+
+    body::before,
+    body::after {
+      content: "";
+      position: fixed;
+      z-index: -1;
+      width: 330px;
+      height: 150px;
+      bottom: 0;
+      opacity: .24;
+      background:
+        linear-gradient(135deg, transparent 16px, rgba(7, 112, 79, .25) 17px, transparent 18px),
+        linear-gradient(45deg, transparent 42px, rgba(7, 112, 79, .19) 43px, transparent 44px);
+      background-size: 44px 44px, 70px 70px;
+    }
+
+    body::before {
+      left: 0;
+    }
+
+    body::after {
+      right: 0;
+      transform: scaleX(-1);
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .topbar {
+      min-height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(90deg, var(--green-950), var(--green-900) 50%, var(--green-950));
+      color: #fff;
+      box-shadow: 0 12px 28px rgba(2, 47, 36, .24);
+    }
+
+    .topbar-inner {
+      width: min(1200px, calc(100% - 42px));
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: baseline;
+      gap: 12px;
+      font-weight: 950;
+      color: #e8fff6;
+      letter-spacing: 0;
+    }
+
+    .brand strong {
+      font-size: 1.7rem;
+      line-height: 1;
+    }
+
+    .brand span {
+      color: #d4efe4;
+      font-size: .95rem;
+      font-weight: 850;
+    }
+
+    .site-menu {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .site-menu a {
+      min-height: 42px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 10px 18px;
+      border-radius: 8px;
+      border: 1px solid rgba(255,255,255,.18);
+      color: #fff;
+      text-decoration: none;
+      font-weight: 950;
+    }
+
+    .site-menu a[aria-current="page"],
+    .site-menu a:hover {
+      background: rgba(255,255,255,.13);
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,.11);
+    }
+
+    main {
+      width: min(1200px, calc(100% - 42px));
+      margin: 36px auto 54px;
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: minmax(0, 1.35fr) minmax(310px, .8fr);
+      gap: 30px;
+      min-height: 360px;
+      padding: 52px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background:
+        linear-gradient(90deg, rgba(255,255,255,.96) 0%, rgba(255,255,255,.88) 45%, rgba(255,255,255,.45) 100%),
+        url("https://images.unsplash.com/photo-1496062031456-07b8f162a322?auto=format&fit=crop&w=1400&q=70") center right / cover;
+      box-shadow: var(--shadow);
+    }
+
+    .hero::before,
+    .hero::after {
+      content: "";
+      position: absolute;
+      width: 86px;
+      height: 86px;
+      border-radius: 58% 42% 62% 38%;
+      background: rgba(249, 175, 185, .35);
+      transform: rotate(38deg);
+      pointer-events: none;
+    }
+
+    .hero::before {
+      left: -26px;
+      bottom: 18px;
+    }
+
+    .hero::after {
+      right: 48px;
+      top: -28px;
+    }
+
+    .hero-content,
+    .standard-card {
+      position: relative;
+      z-index: 1;
+    }
+
+    h1 {
+      margin: 0 0 22px;
+      color: var(--ink);
+      font-size: clamp(2.5rem, 5vw, 4.2rem);
+      line-height: 1.08;
+      font-weight: 950;
+      letter-spacing: 0;
+    }
+
+    .lead {
+      max-width: 650px;
+      margin: 0 0 28px;
+      color: #496372;
+      font-size: 1.08rem;
+      line-height: 1.8;
+      font-weight: 750;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .btn {
+      min-height: 48px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      padding: 12px 22px;
+      border-radius: 8px;
+      border: 1px solid var(--green-800);
+      text-decoration: none;
+      font-weight: 950;
+    }
+
+    .btn-primary {
+      color: #fff;
+      background: var(--green-900);
+      box-shadow: 0 12px 22px rgba(3, 67, 51, .2);
+    }
+
+    .btn-ghost {
+      color: var(--green-900);
+      background: rgba(255,255,255,.82);
+    }
+
+    .standard-card {
+      align-self: center;
+      padding: 28px;
+      border-radius: 12px;
+      border: 1px solid rgba(214, 227, 234, .95);
+      background: rgba(255,255,255,.9);
+      box-shadow: 0 16px 36px rgba(15, 49, 64, .13);
+      backdrop-filter: blur(6px);
+    }
+
+    .standard-card h2,
+    .section-title {
+      margin: 0;
+      color: var(--ink);
+      font-size: 1.25rem;
+      font-weight: 950;
+      letter-spacing: 0;
+    }
+
+    .standard-card h2 {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 18px;
+    }
+
+    .standard-list {
+      display: grid;
+      gap: 14px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .standard-list li {
+      display: grid;
+      grid-template-columns: 36px 1fr;
+      gap: 13px;
+      align-items: center;
+      padding-bottom: 14px;
+      border-bottom: 1px solid var(--line);
+      color: #355360;
+      line-height: 1.65;
+      font-weight: 760;
+    }
+
+    .standard-list li:last-child {
+      padding-bottom: 0;
+      border-bottom: 0;
+    }
+
+    .icon-box {
+      width: 36px;
+      height: 36px;
+      display: grid;
+      place-items: center;
+      border-radius: 9px;
+      color: var(--green-800);
+      background: var(--green-100);
+      font-size: 1.15rem;
+    }
+
+    .summary-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+      margin-top: 26px;
+    }
+
+    .summary-card,
+    .panel {
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: var(--paper);
+      box-shadow: 0 12px 28px rgba(15, 49, 64, .08);
+    }
+
+    .summary-card {
+      display: grid;
+      grid-template-columns: 82px 1fr 24px;
+      gap: 18px;
+      align-items: center;
+      min-height: 140px;
+      padding: 28px;
+      text-decoration: none;
+    }
+
+    .summary-card:nth-child(2) .summary-icon,
+    .summary-card:nth-child(3) .summary-icon {
+      background: var(--pink-100);
+    }
+
+    .summary-icon {
+      width: 72px;
+      height: 72px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: var(--green-100);
+      color: var(--green-800);
+      font-size: 2rem;
+    }
+
+    .summary-card strong {
+      display: block;
+      margin-bottom: 8px;
+      color: var(--ink);
+      font-size: 1.08rem;
+      font-weight: 950;
+    }
+
+    .summary-card p {
+      margin: 0;
+      color: #506a78;
+      line-height: 1.65;
+      font-weight: 720;
+    }
+
+    .summary-card .bi-chevron-right {
+      color: var(--ink);
+      font-size: 1.2rem;
+    }
+
+    .panel {
+      margin-top: 26px;
+      padding: 26px;
+    }
+
+    .record-table {
+      width: 100%;
+      margin-top: 16px;
+      border-collapse: collapse;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+      font-size: .96rem;
+    }
+
+    .record-table th,
+    .record-table td {
+      padding: 13px 18px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .record-table tr:last-child th,
+    .record-table tr:last-child td {
+      border-bottom: 0;
+    }
+
+    .record-table th {
+      width: 180px;
+      color: var(--ink);
+      background: #f7fbf8;
+      font-weight: 950;
+    }
+
+    .record-table td {
+      color: #415b68;
+      font-weight: 720;
+    }
+
+    .note {
+      display: grid;
+      grid-template-columns: 30px 1fr;
+      gap: 12px;
+      align-items: start;
+      margin-top: 16px;
+      padding: 16px 18px;
+      border: 1px solid #c9ddec;
+      border-radius: 8px;
+      color: #315162;
+      background: #f7fbff;
+      line-height: 1.7;
+      font-weight: 760;
+    }
+
+    .note i {
+      color: var(--green-800);
+      font-size: 1.2rem;
+    }
+
+    .youtube-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 18px;
+      margin-bottom: 18px;
+    }
+
+    .youtube-title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--ink);
+      font-weight: 950;
+    }
+
+    .youtube-title i {
+      color: #ff2c2c;
+      font-size: 1.55rem;
+    }
+
+    .youtube-meta {
+      color: #355360;
+      font-size: .9rem;
+      font-weight: 850;
+      text-align: right;
+    }
+
+    .youtube-grid {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .youtube-card {
+      display: flex;
+      flex-direction: column;
+      min-height: 100%;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      text-decoration: none;
+      box-shadow: 0 10px 22px rgba(15, 49, 64, .07);
+      transition: transform .18s ease, box-shadow .18s ease;
+    }
+
+    .youtube-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 16px 28px rgba(15, 49, 64, .11);
+    }
+
+    .youtube-thumb {
+      position: relative;
+      aspect-ratio: 16 / 9;
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+      color: var(--green-800);
+      background: linear-gradient(135deg, #e8f6ef, #f7fbff);
+      font-size: 2rem;
+    }
+
+    .youtube-thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .duration {
+      position: absolute;
+      right: 8px;
+      bottom: 8px;
+      padding: 2px 6px;
+      border-radius: 4px;
+      color: #fff;
+      background: rgba(0,0,0,.72);
+      font-size: .72rem;
+      font-weight: 850;
+    }
+
+    .youtube-body {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      gap: 8px;
+      padding: 12px;
+    }
+
+    .youtube-body strong {
+      color: var(--ink);
+      font-size: .94rem;
+      line-height: 1.45;
+      font-weight: 950;
+    }
+
+    .youtube-body p {
+      margin: 0;
+      color: #667c86;
+      font-size: .84rem;
+      line-height: 1.55;
+      font-weight: 650;
+    }
+
+    .youtube-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: auto;
+    }
+
+    .youtube-tags span {
+      padding: 5px 7px;
+      border-radius: 6px;
+      color: var(--green-800);
+      background: #edf8f2;
+      font-size: .72rem;
+      font-weight: 900;
+    }
+
+    .empty-state {
+      grid-column: 1 / -1;
+      padding: 28px;
+      border: 1px dashed var(--line);
+      border-radius: 8px;
+      color: var(--muted);
+      text-align: center;
+      font-weight: 850;
+    }
+
+    .more-button {
+      width: 100%;
+      min-height: 46px;
+      margin-top: 20px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      color: var(--green-900);
+      background: #f8fbfd;
+      font-size: 1rem;
+      font-weight: 950;
+    }
+
+    footer {
+      width: min(1200px, calc(100% - 42px));
+      margin: 0 auto 34px;
+      padding: 24px 0 44px;
+      color: #54707d;
+      text-align: center;
+      font-size: .95rem;
+      font-weight: 720;
+    }
+
+    @media (max-width: 1120px) {
+      .youtube-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 820px) {
+      .topbar-inner,
+      .youtube-head {
+        align-items: stretch;
+        flex-direction: column;
+      }
+
+      .site-menu {
+        justify-content: flex-start;
+      }
+
+      .hero,
+      .summary-grid,
+      .youtube-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        padding: 30px 24px;
+      }
+
+      .summary-card {
+        grid-template-columns: 70px 1fr 20px;
+        padding: 22px;
+      }
+
+      .summary-icon {
+        width: 62px;
+        height: 62px;
+      }
+
+      .youtube-meta {
+        text-align: left;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">
+        <strong>참소식.com</strong>
+        <span>· 지역 행사 기록</span>
+      </div>
+      <nav class="site-menu" aria-label="참소식 주요 메뉴">
+        <a href="../"><i class="bi bi-house-door-fill"></i> 메인</a>
+        <a href="../ai-issue-briefing/"><i class="bi bi-broadcast"></i> 라디오 페이지</a>
+        <a href="../chat-board/"><i class="bi bi-chat-left-text"></i> 포털방</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="page-title">
+      <div class="hero-content">
+        <h1 id="page-title">중랑구<br>자원봉사·지역 행사 기록</h1>
+        <p class="lead">
+          이 페이지는 중랑구 자원봉사와 지역 행사 흐름을 공개 자료, 현장 기록,
+          방문자 제보 기준으로 나누어 정리하는 기록형 브리핑 페이지입니다.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#youtube-title"><i class="bi bi-pencil-square"></i> 기록으로 남기기</a>
+          <a class="btn btn-ghost" href="#record-title">기록 기준 자세히 보기 <i class="bi bi-chevron-right"></i></a>
+        </div>
+      </div>
+
+      <aside class="standard-card" aria-label="기록 기준">
+        <h2><span class="icon-box"><i class="bi bi-pencil-square"></i></span> 기록 기준</h2>
+        <ul class="standard-list">
+          <li><span class="icon-box"><i class="bi bi-file-earmark-check"></i></span><span>확인된 공개 자료와 현장 기록을 우선 분류합니다.</span></li>
+          <li><span class="icon-box"><i class="bi bi-chat-square-text"></i></span><span>방문자 제보는 사실 확인 전까지 별도 표시합니다.</span></li>
+          <li><span class="icon-box"><i class="bi bi-diagram-3"></i></span><span>기관, 행사, 참여자 흐름은 관계 구조로 정리합니다.</span></li>
+        </ul>
+      </aside>
+    </section>
+
+    <section class="summary-grid" aria-label="핵심 분류">
+      <a class="summary-card" href="#record-title">
+        <span class="summary-icon"><i class="bi bi-balloon-heart-fill"></i></span>
+        <span>
+          <strong>자원봉사 흐름</strong>
+          <p>봉사 모집, 참여 안내, 현장 운영, 사후 기록을 분리해 봉사 흐름을 확인합니다.</p>
+        </span>
+        <i class="bi bi-chevron-right"></i>
+      </a>
+      <a class="summary-card" href="#record-title">
+        <span class="summary-icon"><i class="bi bi-calendar3"></i></span>
+        <span>
+          <strong>지역 행사 기록</strong>
+          <p>행사명, 장소, 기간, 주최·주관, 현장 반응을 기록 기준으로 정리합니다.</p>
+        </span>
+        <i class="bi bi-chevron-right"></i>
+      </a>
+      <a class="summary-card" href="#youtube-title">
+        <span class="summary-icon"><i class="bi bi-megaphone-fill"></i></span>
+        <span>
+          <strong>제보 정리</strong>
+          <p>방문자 메시지와 현장 제보는 공개 자료와 섞지 않고 별도 기록으로 보관합니다.</p>
+        </span>
+        <i class="bi bi-chevron-right"></i>
+      </a>
+    </section>
+
+    <section class="panel" aria-labelledby="record-title">
+      <h2 class="section-title" id="record-title">행사 기록 템플릿</h2>
+      <table class="record-table">
+        <tbody>
+          <tr>
+            <th>지역</th>
+            <td>중랑구</td>
+          </tr>
+          <tr>
+            <th>분류</th>
+            <td>자원봉사, 지역 행사, 현장 참여 기록</td>
+          </tr>
+          <tr>
+            <th>확인 자료</th>
+            <td>공개 공지, 현장 사진·영상, 방문자 제보, 관리자 메모</td>
+          </tr>
+          <tr>
+            <th>정리 방식</th>
+            <td>확인됨, 확인 필요, 제보, 보류 항목으로 분리</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="note">
+        <i class="bi bi-info-circle"></i>
+        <span>확인되지 않은 내용은 단정하지 않고, 기록과 제보를 나누어 관리합니다. 라디오 DJ 멘트와 방문자 대화는 별도 라디오 페이지에서 진행합니다.</span>
+      </div>
+    </section>
+
+    <section class="panel" aria-labelledby="youtube-title">
+      <div class="youtube-head">
+        <div>
+          <h2 class="youtube-title" id="youtube-title"><i class="bi bi-youtube"></i> 중랑구 행사 관련 유튜브 정리</h2>
+          <p class="lead" style="margin: 8px 0 0; font-size: .95rem;">자동봇이 10분마다 JSON을 갱신하고, 최근 1~2주 이내에 올라온 영상만 표시합니다.</p>
+        </div>
+        <div class="youtube-meta" id="youtubeMeta">불러오는 중</div>
+      </div>
+      <div class="youtube-grid" id="youtubeGrid">
+        <div class="empty-state">유튜브 정리 JSON을 불러오는 중입니다.</div>
+      </div>
+      <button class="more-button" type="button" id="loadMoreButton">더 많은 영상 보기 <i class="bi bi-chevron-down"></i></button>
+    </section>
+  </main>
+
+  <footer>© 2026 참소식.com. 중랑구 자원봉사·지역 행사 기록 페이지.</footer>
+
+  <script>
+    const YOUTUBE_JSON_URL = "jungnang-youtube.json";
+    const YOUTUBE_REFRESH_MS = 10 * 60 * 1000;
+    const INITIAL_VISIBLE_COUNT = 10;
+    let allYoutubeItems = [];
+    let visibleYoutubeCount = INITIAL_VISIBLE_COUNT;
+
+    const youtubeGrid = document.querySelector("#youtubeGrid");
+    const youtubeMeta = document.querySelector("#youtubeMeta");
+    const loadMoreButton = document.querySelector("#loadMoreButton");
+
+    function escapeHtml(value) {
+      return String(value || "")
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#039;");
+    }
+
+    function formatDateLabel(value) {
+      if (!value) return "";
+      if (/^\d{8}$/.test(value)) {
+        return `${value.slice(0, 4)}-${value.slice(4, 6)}-${value.slice(6, 8)}`;
+      }
+      const date = new Date(value);
+      if (Number.isNaN(date.getTime())) return value;
+      return date.toLocaleString("ko-KR");
+    }
+
+    function renderYoutubeItems(data = {}) {
+      allYoutubeItems = Array.isArray(data.items) ? data.items : [];
+      const visibleItems = allYoutubeItems.slice(0, visibleYoutubeCount);
+      youtubeMeta.textContent = `갱신: ${formatDateLabel(data.updatedAt) || "대기"} · ${allYoutubeItems.length}개`;
+
+      if (!visibleItems.length) {
+        youtubeGrid.innerHTML = '<div class="empty-state">표시할 최근 유튜브 기록이 없습니다.</div>';
+        loadMoreButton.hidden = true;
+        return;
+      }
+
+      youtubeGrid.innerHTML = visibleItems.map((item) => {
+        const title = escapeHtml(item.title || "제목 없음");
+        const summary = escapeHtml(item.summary || "중랑구 행사 관련 유튜브 항목입니다.");
+        const channel = escapeHtml(item.channel || "YouTube");
+        const query = escapeHtml(item.query || "중랑구 행사");
+        const status = escapeHtml(item.status || "확인 필요");
+        const date = escapeHtml(formatDateLabel(item.publishedAt));
+        const duration = escapeHtml(item.duration || "");
+        const url = escapeHtml(item.url || "https://www.youtube.com/results?search_query=%EC%A4%91%EB%9E%91%EA%B5%AC%20%ED%96%89%EC%82%AC");
+        const thumb = item.thumbnail
+          ? `<img src="${escapeHtml(item.thumbnail)}" alt="">`
+          : '<i class="bi bi-youtube"></i>';
+
+        return `
+          <a class="youtube-card" href="${url}" target="_blank" rel="noopener">
+            <div class="youtube-thumb">${thumb}${duration ? `<span class="duration">${duration}</span>` : ""}</div>
+            <div class="youtube-body">
+              <strong>${title}</strong>
+              <p>${summary}</p>
+              <div class="youtube-tags">
+                <span>${channel}</span>
+                <span>${query}</span>
+                <span>${status}</span>
+                ${date ? `<span>${date}</span>` : ""}
+              </div>
+            </div>
+          </a>
+        `;
+      }).join("");
+
+      loadMoreButton.hidden = visibleYoutubeCount >= allYoutubeItems.length;
+    }
+
+    async function loadYoutubeJson() {
+      try {
+        const response = await fetch(`${YOUTUBE_JSON_URL}?t=${Date.now()}`, { cache: "no-store" });
+        if (!response.ok) throw new Error(`JSON ${response.status}`);
+        const data = await response.json();
+        renderYoutubeItems(data);
+      } catch (error) {
+        youtubeMeta.textContent = `불러오기 실패: ${error.message}`;
+        youtubeGrid.innerHTML = '<div class="empty-state">유튜브 JSON을 아직 불러오지 못했습니다.</div>';
+        loadMoreButton.hidden = true;
+      }
+    }
+
+    loadMoreButton.addEventListener("click", () => {
+      visibleYoutubeCount += 10;
+      renderYoutubeItems({ items: allYoutubeItems, updatedAt: youtubeMeta.textContent.replace(/^갱신:\s*/, "").split(" · ")[0] });
+    });
+
+    loadYoutubeJson();
+    setInterval(loadYoutubeJson, YOUTUBE_REFRESH_MS);
+  </script>
+</body>
+</html>

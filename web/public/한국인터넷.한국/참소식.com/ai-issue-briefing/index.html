@@ -1964,6 +1964,30 @@
         return (endpointInput.value || DEFAULT_ENDPOINT).replace(/\/api\/chat$/, "").replace(/\/health$/, "").replace(/\/$/, "");
       }
 
+      function apiBaseCandidates() {
+        return [...new Set([
+          apiBase(),
+          "http://127.0.0.1:3110"
+        ])];
+      }
+
+      async function fetchApi(path, options = {}) {
+        let lastError = null;
+        for (const base of apiBaseCandidates()) {
+          try {
+            const response = await fetch(`${base}${path}`, options);
+            if (response.ok && base !== apiBase()) {
+              endpointInput.value = base;
+              localStorage.setItem("chamsosikAiEndpoint", base);
+            }
+            return response;
+          } catch (error) {
+            lastError = error;
+          }
+        }
+        throw lastError || new Error("API endpoint unavailable");
+      }
+
       function compactText(text) {
         return (text || "").replace(/\s+/g, " ").trim();
       }
@@ -2389,7 +2413,7 @@
 
       function renderVisitorRoomMessages(messages = []) {
         if (!messagesEl) return;
-        const visibleMessages = messages.slice(-40).reverse();
+        const visibleMessages = messages.slice(-40);
         messagesEl.innerHTML = "";
         visibleMessages.forEach((item) => {
           const role = item.role === "user" ? "user" : "ai";
@@ -2413,11 +2437,11 @@
           row.appendChild(bubble);
           messagesEl.appendChild(row);
         });
+        messagesEl.scrollTop = messagesEl.scrollHeight;
       }
 
       async function loadVisitorRoomMessages() {
-        const base = apiBase();
-        const response = await fetch(`${base}/api/visitor-room`, {
+        const response = await fetchApi("/api/visitor-room", {
           headers: { "ngrok-skip-browser-warning": "true" }
         });
         if (!response.ok) throw new Error(`visitor-room ${response.status}`);
@@ -3716,12 +3740,12 @@
         setStatus("AI 서버 접속 확인 중...");
 
         try {
-          const health = await fetch(`${base}/health`, {
+          const health = await fetchApi("/health", {
             cache: "no-store",
             headers: { "ngrok-skip-browser-warning": "true" }
           });
           if (!health.ok) throw new Error(`health ${health.status}`);
-          setStatus(`AI 서버 접속 확인 완료\n${base}`);
+          setStatus(`AI 서버 접속 확인 완료\n${apiBase()}`);
         } catch (error) {
           setStatus(`AI 서버 접속 실패\n${error.message}`, true);
         }
@@ -3741,9 +3765,8 @@
       }
 
       async function loadNarrativeMemory() {
-        const base = apiBase();
         try {
-          const response = await fetch(`${base}/api/narrative-memory`, {
+          const response = await fetchApi("/api/narrative-memory", {
             cache: "no-store",
             headers: { "ngrok-skip-browser-warning": "true" }
           });
@@ -3756,9 +3779,8 @@
       }
 
       async function saveNarrativeMemory(userText, aiText) {
-        const base = apiBase();
         try {
-          const response = await fetch(`${base}/api/narrative-memory`, {
+          const response = await fetchApi("/api/narrative-memory", {
             method: "POST",
             headers: {
               "Content-Type": "application/json",
@@ -3780,7 +3802,6 @@
       }
 
       async function sendPrompt(prompt) {
-        const base = apiBase();
         const model = modelInput.value.trim() || "kimi-k2.6:cloud";
         if (aiBusy) return;
         aiBusy = true;
@@ -3796,7 +3817,7 @@
             return;
           }
 
-          const response = await fetch(`${base}/api/visitor-room`, {
+          const response = await fetchApi("/api/visitor-room", {
             method: "POST",
             headers: {
               "Content-Type": "application/json",

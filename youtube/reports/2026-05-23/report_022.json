@@ -1,0 +1,245 @@
+{
+  "timestamp": "2026-05-23T04:59:00.462149",
+  "model": "mistral:latest",
+  "keyword_count": 3,
+  "analyze_subtitles": true,
+  "analysis_source": "youtube",
+  "keywords": [
+    {
+      "keyword": "오늘의 주요 뉴스",
+      "is_fixed": true,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "소방청장 감찰",
+      "is_fixed": false,
+      "views": [
+        82240,
+        64060,
+        19587
+      ],
+      "video_count": 3,
+      "videos": [
+        {
+          "title": "[속보] 청와대, \"현 소방청장 감찰 착수\"... 이 대통령, 진상 확인 지시",
+          "video_id": "Sl5SEVQqCxw",
+          "views": 82240,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=Sl5SEVQqCxw",
+          "subtitle_summary": "1. 이재명 대통령이 김승용 소방청장에 대한 즉각적인 진상 확인과 감찰 착수를 지시했습니다.\n2. 대통령실은 구체적인 배경에 대해서는 공개하지 않았습니다.\n3. 이재명 대통령이 정치권과 관계 문제, 재난 대응 과정, 내부 지위 체계, 과거 개엄 관련 추가 정황, 내부 비위 제보 등에 대해 감찰을 시작했으며, 향후 감찰 결과와 관련해 추가 입장을 내놓을 것으로 예상됩니다.",
+          "db_saved": true
+        },
+        {
+          "title": "President Lee Orders Emergency Inspection of Fire Commissioner (05/22/2026/News Desk/MBC)",
+          "video_id": "r5N3U3ospcM",
+          "views": 64060,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=r5N3U3ospcM",
+          "subtitle_summary": "1. 대통령(Lee) 지시로, 소방청장(Kim Seung-ryeol)의 개인 비에 관한 즉각적인 진실 확인을 위해 감찰이 시작되었다.\n2. 최근, 공공기관 차량 2부제를 피하고 긴급 출동용 전기차로 출퇴근한 서울 성동경찰서장의 대기발령 조치가 이루어졌다는 사례가 있었다.\n3. 이와 유사한 사례라고 설명했다. (이 문장은 추론된 내용으로, 자막에서는 직접적인 언급이 없음)",
+          "db_saved": true
+        },
+        {
+          "title": "President Lee praised the Fire Agency two days ago... Background of investigation: \"Allegations o...",
+          "video_id": "Lzrz8Hp43l0",
+          "views": 19587,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=Lzrz8Hp43l0",
+          "subtitle_summary": "1. 대통령 이재명은 2일 전 소방청장 김승용에 대해 공개적으로 칭찬했습니다.\n2. 대용산불 하체 줄인 것을 엄청난 성과라고 평가했지만, 이를 자막에 기재하지 않았습니다.\n3. 김승용은 허석군 전청장의 후임으로 올해 3월 승진하였으나, 123 비상개엄에 가담했다는 의혹으로 직위 해제되었습니다. 최근 감찰이 시작됐고 소방청 내부는 당혹스러운 분위기입니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 2.3914,
+      "min": 3.1926,
+      "nb_score": 0.749,
+      "avg_views": 55295.67,
+      "total_views": 165887
+    },
+    {
+      "keyword": "항공모함 금리인하 압박",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "이란 협상 진전",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "초등학교 학폭 증가",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "에볼라 확산 항공 중단",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "우크라이나 학교 공습",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "인천공항 난민 구금",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "삼성전자 노사 잠정합의",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "한일 원유 스와프",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "반도체 공급망 AI 동맹",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "국민연금 수령액 증가",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "삼성 성과급 차별",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "희토류 독립 생산",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "LG 자사주 소각",
+      "is_fixed": false,
+      "views": [
+        184
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "[LG 주가전망] 3500억 자사주 전량 소각 결정 공시 ! NXT 6% 급등 마감 .. 다음주 LG 주가 이렇게 됩니다 !",
+          "video_id": "fmJy-Z3PHss",
+          "views": 184,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=fmJy-Z3PHss",
+          "subtitle_summary": "LG 회사는 3500억 자사주를 전량 소각하기로 결정했습니다. 이 공시가 나온 후 NXT 6% 상승을 보였습니다. 다음주 LG 주가는 어떻게 될지 예측하기 어려우나, 최근 고점에서 조정이 크게 바뀌었으므로 매수 관점으로 보아야 합니다. LG는 자사주 소각을 실행하여 진정한 기업으로 나타내고 있습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "결혼박람회 계약금 환불",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    }
+  ]
+}

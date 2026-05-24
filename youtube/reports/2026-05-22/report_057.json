@@ -1,0 +1,627 @@
+{
+  "timestamp": "2026-05-22T22:03:05.048396",
+  "model": "mistral:latest",
+  "keyword_count": 3,
+  "analyze_subtitles": true,
+  "analysis_source": "youtube",
+  "keywords": [
+    {
+      "keyword": "오늘의 주요 뉴스",
+      "is_fixed": true,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "미디어텍 주가",
+      "is_fixed": false,
+      "views": [
+        371,
+        3006
+      ],
+      "video_count": 2,
+      "videos": [
+        {
+          "title": "[제주반도체 주가 전망] 퀄컴·미디어텍 인증 국내 유일, 저전력 메모리 강자 #제주반도체주가전망 #제주반도체목표가 #제주반도체",
+          "video_id": "3c_KFmFc6Bg",
+          "views": 371,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=3c_KFmFc6Bg",
+          "subtitle_summary": "1. 온디바이스 AI 시대가 열리면서 저전력 메모리를 설계하는 제주 반도체의 주가가 27,000원에서 13만7,100원으로 상승한 것을 보여줍니다.\n2. 퀄컴과 미디어텍 양쪽에서 인증받은 국내 유일의 업체이며, 글로벌 모바일 AP 제조사와 함께 저전력 메모리를 설계하는 회사입니다.\n3. 시장은 이 회사를 온디바이스 AI 직접 수혜주로 다시 평가하고 있으며, 제주 반도체의 매력성을 강조합니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[삼성전자 주가전망]단독! 긴급속보! 자사주 매입 결정! 대형호재! 이재용! 대만 미디어텍 방문! 다음주 이 재료 나오면 50만원!",
+          "video_id": "y_o2oYyU7uc",
+          "views": 3006,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=y_o2oYyU7uc",
+          "subtitle_summary": "1. 분석 대상은 삼성전자입니다. 지금 주가는 -2% 하락중이며, 과거 3월 같은 횡보하는 기간들이 있었고, 파업 이슈 해결 후 계단식 상승이 예상됩니다.\n2. 목표 주가는 59만 원(노무라 증권), 57만 원(한국 투자 증권), 48만 원(JP 모고), 33만 원(키움 증권)으로, 1차 또는 2차 저항 구간이라고 보면 됩니다.\n3. 주가 상승은 EPS 정확하게 얘기하면 실적 때문인데, 멀티플이 상향될 것으로 예상되며, 5월 21일 신한 증권에서도 초호황 속에 조정 국면은 매수 타점이라고 판단합니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 2.8122,
+      "min": 1.9472,
+      "nb_score": 1.4442,
+      "avg_views": 1688.5,
+      "total_views": 3377
+    },
+    {
+      "keyword": "스타벅스 환불 논란",
+      "is_fixed": false,
+      "views": [
+        115103,
+        299539,
+        7747
+      ],
+      "video_count": 3,
+      "videos": [
+        {
+          "title": "[Subtitled News] \"You Can't Leave Without Spending\"... A Look Into Starbucks' Rules / JTBC News",
+          "video_id": "0hDR14v9gIk",
+          "views": 115103,
+          "upload_date": "2026-05-21",
+          "url": "https://www.youtube.com/watch?v=0hDR14v9gIk",
+          "subtitle_summary": "1. 오늘 서울의 한 스타벅스 매장에서는 비교적 희석해 있으며, 온라인 커뮤니티에서는 스타벅스 선불 카드 환불 문제가 다루어지고 있습니다. 이용자들은 60% 이상 사용해야 환불이 가능하며, 상품 정보를 올리고 있습니다.\n2. 서울 재즈 페스티벌에서 예정된 스타벅스 부스의 운영을 취소했습니다. 최근 탱크데이 마케팅 논란으로 인한 여론 부담이 가장 큰 원인으로 보입니다.\n3. 스타벅스의 비즈니스 모델에는 선불 충전 시스템이 핵심이며, 고객이 미리 충전한 돈을 예금이나 신탁 상품 등 투자에 활용할 수 있습니다. 지난해말 계약 부채는 약 4,500억 원으로 고객의 미리 충전한 선수금과 사용하지 않은 리워드 포인트가 포함되어 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "美스타벅스 본사 \"철저 조사\"..계약 해지 '덜덜'? 고발 당한 정용진..이마트·신세계 주가 '뚝' - [핫이슈PLAY] MBC뉴스 2026년 05월 20일",
+          "video_id": "ObFI5nD2tLE",
+          "views": 299539,
+          "upload_date": "2026-05-21",
+          "url": "https://www.youtube.com/watch?v=ObFI5nD2tLE",
+          "subtitle_summary": "1. 신세계 그룹 회장 정용진과 Starbucks 본사가 계약 해지 가능성이 있는 것으로 보인다. 이는 정용진의 미국 마가 단체와 빌드업 코리아에 축하 메시지를 보내고, Trump 가족과도 가깝다는 소문 등으로 추측된다.\n2. Starbucks Korea의 CEO는 잔혹한 역사의 기억을 자극한 광고로 해임됐다. 이에 대해 주요 외신들은 특히 정용진 회장을 언급하고 있다.\n3. 이마트가 Starbucks Korea의 지분을 17.5%로부터 사들여, 계약이 해지되면 35% 할인한 가격에 다시 지분을 넘길 수 있는 콜 옵션을 맺었다. MBC는 이와 관련해 Starbucks 본사에 콜 옵션 행사를 논의하고 있다고 보도했으며, 현재 철저한 조사를 진행하고 있다고 답변을 받았다.",
+          "db_saved": true
+        },
+        {
+          "title": "\"스타벅스 불매합니다\" 분노한 소비자들, 이번엔 흐지부지 안 끝난다? [씬속뉴스] / 연합뉴스TV (YonhapnewsTV)",
+          "video_id": "XOZkNaPu_6Y",
+          "views": 7747,
+          "upload_date": "2026-05-21",
+          "url": "https://www.youtube.com/watch?v=XOZkNaPu_6Y",
+          "subtitle_summary": "1. Starbucks 5.18 Tank Day Marketing 문제로 인해 소비자들의 불매 운동이 확산되고 있습니다. SNS에는 스타벅스 제품을 사용한 후 쓰레기통에 버리는 영상이 올라오고 있으며, 기프티콘 또는 모바일카드를 환불받는 팁도 공유되고 있습니다.\n2. 과거 사회적 이슈와 기업 논란 등으로 인해 여러 불매 운동이 발생했었지만, 2019년은 노재팬 운동이 거세게 줄었습니다.\n3. 코로나19 시기에는 남양 유업의 자사 제품 불가리스가 코로나 확산을 77.8% 저감하는 효과를 보고 불매 운동이 벌어졌습니다. 지난해에는 SPC 3립 시화 공장에서 50대 노동자가 컨베이어에 끼어숨지는 사고가 발생하여 야구 팬들을 중심으로 불매 운동이 일어났습니다. 또한, 쿠팡의 개인정보 유출 사고와 미흡한 사과와 후속조치로 인해 탈판 행렬이 이어지기도 했습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 1.7149,
+      "min": 2.1888,
+      "nb_score": 0.7835,
+      "avg_views": 140796.33,
+      "total_views": 422389
+    },
+    {
+      "keyword": "코스닥 급등주",
+      "is_fixed": false,
+      "views": [
+        6317,
+        3634,
+        397,
+        428,
+        4729,
+        671,
+        436,
+        1914
+      ],
+      "video_count": 8,
+      "videos": [
+        {
+          "title": "코스닥의 반란 다음 수급 후보 점검｜다음주 핵심 일정｜주요 이슈",
+          "video_id": "s0SU1GyIU_c",
+          "views": 6317,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=s0SU1GyIU_c",
+          "subtitle_summary": "1. 코스닥의 반란으로 인한 매수 사이드카가 발동되어 엄청난 급등세를 보였습니다. 다음주까지 이어질 것인지 확인하고 6월 주요 일정을 점검합니다.\n2. 코스피는 오늘은 쉬어가는 모습으로 보입니다. 8천피를 돌파할 수 있는 적당히 쉬어가는 매물을 소화하는 것 같습니다.\n3. 미국 증시에서도 전력 신재생, 광통신 등 좋은 소식이 계속 들려왔으며, 블룸 에너지와 태양광 관련 종목이 급등을 보였습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "코스닥 다시 살아났다/국민참여성장펀드 힘 받을까?/급등주 따라가지 말자/다음 주도 순환매 이어질까? #코스닥 #국민참여성장펀드 #순환매",
+          "video_id": "TzkMNgMrPPw",
+          "views": 3634,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=TzkMNgMrPPw",
+          "subtitle_summary": "1. 코스닥 시장은 과대 낙폭 후 다시 억눌렸으며, 2차전지 주가도 올라갔다 내리고 있습니다.\n2. 2차전지는 조정이 아닌 실적에서 쉬고 있으며, 반점 패턴을 보여 다음 주 저점만 깨지지 않으면 완벽하게 바닥 만들어질 것으로 예상됩니다.\n3. 투자자들은 예전처럼 2차전지 오키시스를 쳐서는 안 되고, 완벽하게 ESS LFP 전고체 모멘텀을 갖추고 있으며 개선 키워드가 맞물리는 종목들을 중시해야 합니다.",
+          "db_saved": true
+        },
+        {
+          "title": "\"무늬만 성장주는 끝\"...국민성장펀드 출격 후 급등주는? | 박정언 캐스터",
+          "video_id": "DnlnusPAI1k",
+          "views": 397,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=DnlnusPAI1k",
+          "subtitle_summary": "1. 코스닥 시장은 오늘 5% 상승, 이전에 수급이 다른 곳으로 빠져나간 반도체와 같은 분야에서 재등장하고 있습니다.\n2. 국민 참여형 국민 성장 펀드가 6억원부터 시작되며, 향후 3조원 규모로 조성될 예정입니다. 이 자금은 첨단 전략 사업에 투자하고 있습니다.\n3. 코스닥 시장은 10월에 승강제를 도입할 계획으로, 5명의 문의 성장주와 함께 투자자들의 신뢰를 잃었던 우량 기업을 일부 올리고, 부실한 기업들은 시장에서 자연스럽게 가려내려는 목적입니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[특집] 국민성장펀드 흥행! 키 맞추기 나선 코스닥 전략 찾기 / 신중호 / LS증권 리서치센터장",
+          "video_id": "oWG0E2vvS1I",
+          "views": 428,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=oWG0E2vvS1I",
+          "subtitle_summary": "1. 시장은 후반부터 상승을 나타내고 있습니다. 매크로 환경을 점검하여 코스피, 코스닥의 전망을 보게 됩니다.\n2. 최상의 시나리오는 인플레이션 압박을 조금씩 줄일 수 있고 금리가 안정화되는 것으로, 유동성의 힘으로 시장은 레벨업할 수 있을 것입니다.\n3. 최악의 시나리오는 호르몬즈 해협이 계속 막히고, 인플레이션에 대한 압박이 지속되어 금리를 올려야 할 수 있습니다. 이로 인해 중앙은행의 스케줄이 많은 상황이 될 수 있고, 하반기에는 장이 없을 수도 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[Kim Jong-cheol One-Point Lesson] KOSPI Rises +8% Yesterday! Why the KOSDAQ Strong Today? Inflati...",
+          "video_id": "HNddpXUw4Fk",
+          "views": 4729,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=HNddpXUw4Fk",
+          "subtitle_summary": "1. 코스피는 어제 8% 상승했습니다. 오늘은 조금 쉬고 있지만 코사기는 오늘 상승하고 있습니다.\n2. 5일선이 외봉일 때는 20과 60선 사이가 바닥입니다. 현재 주가의 흐름은 여전히 뜰 만한 자리에서 뜨고 있습니다.\n3. 일부 종목들이 지금 상한가를 쫓아가는 것을 방지하고, 롱다 조수하는 것이 편합니다. 특히 레벨이 낮은 분들은 매매기가 어렵습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[Shinsung Delta Tech] Urgent) Can this rebound be the starting point for a rally? Foreign capital...",
+          "video_id": "LmdKY0MfQBQ",
+          "views": 671,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=LmdKY0MfQBQ",
+          "subtitle_summary": "1. Shinsung Delta Tech의 주가는 10% 이상 상승하여 49,100원으로 마무리를 했다. 이전에는 저점인 가격대가 나왔고 물량을 지워 잠재적인 단물이 나올 것 같았으나 그런 상황은 없었다.\n2. 미국 양자 섹터가 급등하여 코스닥 지수에 영향을 미치고 있는 것으로 보인다. 외국인의 자금이 코스피에서 코스닥으로 많이 들어오고 있다.\n3. Shinsung Delta Tech가 포함된 코스닥 150 종목 중 하나였지만 빠지진 않았고, 파란색 위로 가격을 마무리했다. 이는 수렴의 형태가 아닌 반등의 시작일 것으로 보인다.",
+          "db_saved": true
+        },
+        {
+          "title": "[예스 or 노] 핫이슈 종목! 예스 or 노? 한국첨단소재 · LS · 지아이이노베이션 / 이정민 / 뉴지인베스트 이사",
+          "video_id": "H3oCoAA2me4",
+          "views": 436,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=H3oCoAA2me4",
+          "subtitle_summary": "1. 코스닥 5% 이상 등장하고 있는 제약, 바이오, 2차전지 분야의 주요 종목에 관심을 가져야 한다.\n2. 현재 양자 컴퓨팅 테마가 가장 핫하며, 미국 상무부가 20억 달러 규모의 보조금을 지급할 예정이다.\n3. AI 시대가 도래한 상황에서 양자 컴퓨터는 성능을 향상시키고 연산 시간을 줄일 수 있어 투자를 할 가능성이 높다.",
+          "db_saved": true
+        },
+        {
+          "title": "[타세요 수익버스] 타세요! 수익버스 - HL만도·OCI홀딩스 / 김준호 / MBN골드 매니저",
+          "video_id": "7XQ7wLmqFJ0",
+          "views": 1914,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=7XQ7wLmqFJ0",
+          "subtitle_summary": "1. 오늘은 코스닥의 마지막 거래일입니다. 김준호 기자는 강한 시세를 보이는 에코프로 BM을 탑승했습니다.\n2. 5,000원으로 오늘 바이오 섹터의 저가 매수가 들어와 있고, 에코프로 BM은 1차 목표가를 좀 돌파하며 2차 목표가 236,500원으로 상해 보도록 합니다.\n3. SPG 버스도 액추에이터와 관련된 공동 개발을 하고 있으며, 삼성의 레인보우 로보틱스와 현대차가 감속기를 공급합니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0.6956,
+      "min": 1.6144,
+      "nb_score": 0.4309,
+      "avg_views": 2315.75,
+      "total_views": 18526
+    },
+    {
+      "keyword": "에볼라 바이러스",
+      "is_fixed": false,
+      "views": [
+        3373,
+        5001,
+        4148,
+        9369,
+        30303,
+        23728,
+        52601
+      ],
+      "video_count": 7,
+      "videos": [
+        {
+          "title": "\"No vaccines or treatments\"... Ebola fears, will it grow like COVID? [Vital] / Korea Economic TV ...",
+          "video_id": "ckiT0iH9nFo",
+          "views": 3373,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=ckiT0iH9nFo",
+          "subtitle_summary": "1. 글로벌 보건 기구는 콩고에서 발생한 에볼라 바이러스에 대해 국제적 공중보건 비상 사태를 선포했습니다. 인접 국가로 발병이 확산되고, 승인된 치료제나 백신이 없는 이유입니다.\n2. 현대 바이오사이언스가 개발 중인 항 에볼라 플랫폼의 효과를 주장했습니다.\n3. 전문가들은 변종 에볼라 바이러스가 과거부터 콩고와 우간다에서 발생한 적이 있지만, 이번 사태는 처음으로 큰 규모로 유행하고 있다고 말했습니다. 또한 전파 양식이 접촉으로 일어나기 때문에 팬데믹보다는 덜하지만, 점병이 번질 수 있고 위험할 가능성이 있다고 평가했습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "“시신 씻기다 감염”…백신 없는 ‘변종 에볼라’ 급속 확산",
+          "video_id": "-GstLXVVqx4",
+          "views": 5001,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=-GstLXVVqx4",
+          "subtitle_summary": "1. 에볼라 바이러스는 콩고민주공화국에서 급속히 확산되고 있으며, 사망자 수가 160명으로 파악되었습니다.\n2. 에볼라 바이러스는 아프리카와 아시아를 포함한 전 세계적으로 위협하고 있으며, 미국 정부는 강력한 검역조치를 발령했습니다.\n3. 현재 에볼라 바이러스에 대처하기 어려운 상태로, 환자의 접촉 차단과 증상 완화를 위한 치료는 있지만 뚜렷한 대처법은 없습니다. WHO는 백신 개발에 반년 이상이 걸릴 것으로 예상했습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "아프리카 강타한 죽음의 에볼라...사망자 속출하자 마지막 경고 [지금이뉴스] / YTN",
+          "video_id": "7C_xERfxVhU",
+          "views": 4148,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=7C_xERfxVhU",
+          "subtitle_summary": "1. 세계보건기구는 에볼라와 한타바이러스의 확산에 대해 경고하며, 국제사회가 팬데믹 대응 역량 부족을 지적했습니다.\n2. 글로벌 준비태세 감시위원회는 온난화와 환경 파괴로 인한 바이러스 전파, 민주고의 무장 세력들이 치료 시설과 민간인을 공격하여 보건 대응이 어려워지는 등 국제사회가 또 다른 팬데믹을 대비하기에 부족한 노력을 지적했습니다.\n3. 각국 지도자들에게 공평한 접근을 보장하는 팬데믹 협약을 맺으라고 촉구하며, 감염병 위기가 더 자주, 더 크게 발생할 수 있고 전 세계에 부담이 더 늘어날 것이라는 경고를 했습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "민주콩고 에볼라 급속 확산...현재 160명 사망 [세상만사] #에볼라 #민주콩고 #바이러스",
+          "video_id": "BS97E8p89UE",
+          "views": 9369,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=BS97E8p89UE",
+          "subtitle_summary": "1. 에볼라 바이러스가 아프리카 민주 홍콩에서 발생하여 수백km 떨어진 지역까지 급속히 퍼지고 있다.\n2. 국경을 막기 위해 우간다는 항공운항을 중단하고, 인도-아프리카 정상회의를 연기했습니다.\n3. 현재 민주홍고에서 에볼라 의심 사례는 670건이며, 관련 사망자는 160명으로 파악됐습니다. 민주 홍고 정부가 바이러스 확산을 방지하기 위해 장례 절차를 통제하자 반발하는 사람들이 있어 사회가 극심한 혼란에 빠졌습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "'에볼라 확산' 공포에 떠는 백악관...자국민 마저 거부해 논란 [지금이뉴스] / YTN",
+          "video_id": "vx0kPBWkt6M",
+          "views": 30303,
+          "upload_date": "2026-05-21",
+          "url": "https://www.youtube.com/watch?v=vx0kPBWkt6M",
+          "subtitle_summary": "1. 미국의 의료 선교사 Peter Staples, 에볼라 바이러스에 감염된 것으로 알려졌다. 그는 콩고민주공화국에서 근무하다가 결국 독일 병원으로 이송됐습니다.\n2. Peter Staples는 베를린의 샤리테 대학 병원에서 에볼라 치료를 받고 있다고 보도되었으며, 그의 귀국을 방지한 이유로 백악관이 반대했다는 것이 전해졌습니다.\n3. 워싱턴 포스트는 에볼라 의심 환자를 미국 국내로 입국시키는데 대한 대중의 시선에 백악관 내부에서 우여가 있었다고 보도했습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[이슈픽] 아프리카 덮친 공포의 바이러스…사망자 급증에 국경 폐쇄 '초비상' / YTN",
+          "video_id": "hG_e8HNyEXQ",
+          "views": 23728,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=hG_e8HNyEXQ",
+          "subtitle_summary": "1. 변종 에볼라 바이러스가 급속히 확산되어 아프리카 민주홍고에서 사망자가 130명을 초과했습니다. 세계보건기구는 비상 사태를 선포하고, 인적국가들은 국경을 폐쇄하며 긴급 방역조치를 취하였습니다.\n2. 에볼라 의심 환자들을 격리 수용하기 위한 시설이 세워졌으며, 현재 확진 사례는 30여건에 불과합니다.\n3. 120국가들은 민주홍고 국경을 폐쇄하고 검을 강화하고 있으며, 이번 발병한 에볼라 바이러스는 백신과 치료제가 없는 분뒤부조 변형으로 알려져 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[이슈] \"이런 속도는 처음\" WHO도 경악한 '변종 에볼라'/미국 \"오지 마\" 초강수...국경 넘어 초토화/2026년 5월 21일(목)/KBS",
+          "video_id": "8yaDOqXRSPA",
+          "views": 52601,
+          "upload_date": "2026-05-21",
+          "url": "https://www.youtube.com/watch?v=8yaDOqXRSPA",
+          "subtitle_summary": "1. 에볼라 바이러스가 콩고민주공화국에서 급속히 확산되고 있으며, 의심 사례는 390명이 보고됐고 105명이 사망했습니다.\n2. 이번 발병은 인구 이동이 많은 광산 지역에서 시작되었으며, 의료 인프라가 무너진 상태입니다.\n3. 콩고민주공화국과 이웃 나라인 우간다는 에볼라를 피하기 위해 국경을 폐쇄했습니다. 하지만 우간다에서도 두 명이 확진됐고 한 명이 사망했습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0.6344,
+      "min": 1.6117,
+      "nb_score": 0.3936,
+      "avg_views": 18360.43,
+      "total_views": 128523
+    },
+    {
+      "keyword": "주성엔지니어링",
+      "is_fixed": false,
+      "views": [
+        1242,
+        525,
+        1654,
+        1749,
+        474,
+        915,
+        3634,
+        295,
+        705,
+        247
+      ],
+      "video_count": 10,
+      "videos": [
+        {
+          "title": "[주성엔지니어링 주가전망] 🚨세력 \"3조\" 매도 추가 반등 적중!🚨월요일 개장 직후 추가 폭등 대비하세요! #주성엔지니어링 #주성엔지니어링주가전망 #주성엔지니어링주가",
+          "video_id": "KEqbWTezsPA",
+          "views": 1242,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=KEqbWTezsPA",
+          "subtitle_summary": "1. 주성 엔지니어링 주가는 20% 상승하고 23만500원 신고가에서 장마감, 월요일 개장 직후 세력의 움직임을 대비해야 한다.\n2. 세력들이 추가적으로 재매집하고 지금까지 홀딩 중인 물량을 추가로 매집하여 주가를 올리고 있다는 것으로 보인다.\n3. 최종적으로 이 세력들이 지분을 전부 팔기 위해서라도 주가를 강하게 추가 상승시키려고 한다는 것으로 보인다. 이 물량의 원화 단위로 3조가 넘는다.",
+          "db_saved": true
+        },
+        {
+          "title": "주성엔지니어링 심상치 않다… 세계 최초 장비에 시장 술렁",
+          "video_id": "Mf7q7zNIZJU",
+          "views": 525,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=Mf7q7zNIZJU",
+          "subtitle_summary": "1. 전문가는 지난해 7월부터 8월, 9월까지 반도체와 로봇에 추천을 했으며, 이들은 매우 성공적으로 갔습니다. 예를 들어 SPG, 뉴로메카 등의 종목에서 400%, 380%의 수익을 보였습니다.\n2. 현재 주성 엔지니어링과 제주 반도체는 17%, 9% 급등하여 610%, 799%의 수익을 보고 있습니다.\n3. 이러한 높은 수익률을 보이는 종목에 대해서는 전문가는 자신의 이전 방송에서 이미 녹화되어 있으므로 사실 확인하시면 됩니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[주성엔지니어링] 나홀로 고공행진을 보여주는 이유 아직도 상승 남아있다 #주성엔지니어링",
+          "video_id": "cVUIrs9CJHU",
+          "views": 1654,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=cVUIrs9CJHU",
+          "subtitle_summary": "1. 주성 엔지니어링의 주식이 과도하게 상승하고 있으며, 신고가를 달성한 후 빠르게 내려오는 패턴을 보여줍니다.\n2. 사람들은 정신이 없어지고 있으며, 이미 상승하락의 반복적인 패턴을 보여주고 있기 때문에 매도를 고려하고 있습니다.\n3. 재료는 충분히 좋으며, 반도체 장비나 HBM 수급이 집중적으로 들어오고 있습니다. 따라서 우리가 던졌던 물량을 결국 소화시키기 위한 피날레 상승은 필연적으로 나올 수밖에 없는 상황이고, 이번에는 최종 정리까지 물량 소화시키는 데까지 한 달 반 안에 모든 물량을 털고 빠져나갈 계획이라고 합니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[주성엔지니어링 주가전망] ALG장비 반도체판 흔들다! 이 기업 AI 사이클 선두로 갑니다 #주성엔지니어링 #주성엔지니어링주가전망 #주성엔지니어링주가",
+          "video_id": "OTWY9EAtVOo",
+          "views": 1749,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=OTWY9EAtVOo",
+          "subtitle_summary": "1. 주성 엔지니어링의 주가는 상승할 것으로 예측되며, 이미 상승하고 있습니다. 목표 매도가는 18만5,000원에서 도찌를 만들어 매수 타점을 제시했으며, 이전 영상에서도 같은 목표가를 설명했습니다.\n2. 주성 엔지니어링의 감축 기술은 반도체 장비와 태양광 분야에서 사용되는데, 이로 인해 두 가지 테마가 엮여 강력한 움직임을 보일 것으로 예상됩니다.\n3. 주성 엔지니어링의 매수 타점은 올라갈 때 매도만 치면 되며, 거래량이 들어오고 조정 구간에서 강하게 움직일 것으로 예상됩니다.",
+          "db_saved": true
+        },
+        {
+          "title": "주성엔지니어링 52주 신고가 돌파, '지금 올라타면' 다음 목표가가 열립니다!",
+          "video_id": "EckvbfxcTHo",
+          "views": 474,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=EckvbfxcTHo",
+          "subtitle_summary": "1. 제목 주성엔지니어링 52주 신고가 돌파, '지금 올라타면' 다음 목표가가 열립니다!\n자막에서는 주성 엔지니어링 기록을 미리 공유한 사진이 나왔으며, 이분들은 정보를 먼저 받고 준비가 끝난 후 영상이 올라오기 전에 대응을 마쳤다는 것을 알 수 있습니다.\n실제로 이분들이 남기신 수익 인증도 바로 이어지고 있으며, 여러분 같은 종목을 보더라도 누가 먼저 정보를 손에 쥐고 있느냐에 따라 결과가 완전히 달라지는 것을 강조했습니다.\n이 차이는 단순히 운이 아닌, 정보를 먼저 받는가 아닌가의 차이일 뿐입니다.\n2. 주성 엔지니어링 12주 최고가를 돌파한 종목에 대해 알려드리겠습니다.\n5월 22일 장중가 19,900원으로 상승 중이며, 4월 종가 대비로는 상당한 폭계 상승이 진행된 상태입니다.\n5월 15일 저가 136,100원에서 바닥을 찍고 불과 여섯 거래일 만에 21만5,000원까지 약 58% 급",
+          "db_saved": true
+        },
+        {
+          "title": "[주성엔지니어링 주가전망] 5월 마지막 드디어 승부부 신의 한수 터졌다! 다음주 \"이 구간\" 인생 마지막 기회! 놓치면 후회합니다! #주성엔지니어링",
+          "video_id": "oCf0QLAGvb0",
+          "views": 915,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=oCf0QLAGvb0",
+          "subtitle_summary": "1. 주성 엔지니어링의 주가는 최근 급등하고 있으며, 이번 구간은 인생 마지막 기회로 놓치면 후회할 것입니다.\n2. 현재 1차 목표를 잡았으므로 아직 못 담은 분들에게는 기회가 찾아오고 있습니다.\n3. 주성 엔지니어링의 매수를 추천하며, 5월 18일이 구간으로 보고 있습니다. 이 구간에서는 23% 급등이 나올 것입니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[주성엔지니어링 주가전망]💥방금, 발표했습니다. 결국 나올게 나왔습니. 필수시청 #주성엔지니어링 #주성엔지니어링주가 #주성엔지니어링전망",
+          "video_id": "VtKCzmSwR8s",
+          "views": 3634,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=VtKCzmSwR8s",
+          "subtitle_summary": "1. 주성 엔지니어링의 최신 기사에서 핵심적인 내용은 독점적 기술력, 표준 선점, AI 시대로의 최적화이다.\n독점적 기술력: ALG 장비가 ASML의 EUV 장비와 같은 수직 적층 구조 반도체 제조의 핵심적인 기술로 평가받음.\n표준 선점: AI 반도체 제조에 새로운 표준을 만들어 향후 높은 진입 장벽과 장기적인 수익성을 기대할 수 있음.\nAI 시대로의 최적화: ALG 장비가 고요율 저절력 반도체 제조에 필수적인 AI 연산 성능 향상을 위해 핵심 기술로 자리잡음.\n2. 주성 엔지니어링이 가지고 있는 주요 호재는 차세대 장비 상용화 세계 최초, AI 및 디림 투자 확대, 매출 1조 클럽 가인 및 사업 다각화이다.\n차세대 장비 상용화: 글로벌 반도체 기업에 공급하여 기존 미세공정의 한계를 극복함.\nAI 및 디림 투자 확대: AI 산업 확산으로 인해 주성 엔지니어링의 핵심 장비인 ALD, CVD 등에 강력한 수요가 뒷받침됨.",
+          "db_saved": true
+        },
+        {
+          "title": "주성엔지니어링 6거래일 만에 '이게 가능해' 52주 최고가 돌파, 아직 끝이 아닙니다!",
+          "video_id": "Z8XF-vzTswM",
+          "views": 295,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=Z8XF-vzTswM",
+          "subtitle_summary": "1. 주성 엔지니어링 채널에서 공개한 종목이 52주 최고가를 달성했습니다. (21만5,000원)\n2. 이 급등은 매수세가 압도적이었고, 수급이 완전히 한쪽으로 쏠린 상태였습니다.\n3. 현재 198,900원에서 20만 원 위에서 안착하는 중입니다. 구독자분들은 실시간으로 대응하는 공부방을 통해 수익 기회를 잡을 수 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[Jusung Engineering Stock Outlook] The Tech That Will Overtake the Global No. 1! The Hidden Scena...",
+          "video_id": "zMEknfc8raY",
+          "views": 705,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=zMEknfc8raY",
+          "subtitle_summary": "1. Jusung Engineering 주식은 20% 이상 상승하고 있지만, 최근 펌핑 등의 뉴스로 인해 예상대로 올라가지 못하고 있습니다.\n2. 오늘 영상에서는 이 상승이 실질적으로 더 나타날 것인지, 또는 다시 한번 하락할 구간이 나올 것인지 설명합니다.\n3. Jusung Engineering은 전세계 1위 업체를 패싱할 수 있는 압도적인 무기를 출시했고, 이번 기회로 모든 장비를 독점하고 있는 업체를 제낄 수 있는 기회를 마련했습니다. 따라서 앞으로도 폭발적인 상승을 만들어 낼 수밖에 없는 흐름이 가지고 있으며, 이 높은 구간에도 세력들은 매수를 하고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[Jusung Engineering Stock Outlook] [URGENT] 14:35 Short sellers scrambling to accumulate until th...",
+          "video_id": "1XLdR2e0sGc",
+          "views": 247,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=1XLdR2e0sGc",
+          "subtitle_summary": "1. Jusung Engineering's stock has experienced a significant surge today, reaching a new record high of 231,500 won during the trading session. This is due to increased demand from foreign investors and domestic institutions, as well as reevaluation of the semiconductor equipment market and gaming industry.\n2. The strong buying pressure has continued throughout the day, causing a continuous upward trend in the stock price. The analyst suggests that this movement indicates a significant influx of capital, and questions why foreign investors are aggressively accumulating shares and how far they will need to push for maximum profits.\n3. The analyst also mentions that the strong buying pressure from institutions and foreign investors is reminiscent of a well-oiled engine on a train, implying that it could drive the stock price towards its peak. They encourage viewers to stay invested and subscribe to their channel for further updates.",
+          "db_saved": true
+        }
+      ],
+      "max": 0.4729,
+      "min": 1.4548,
+      "nb_score": 0.325,
+      "avg_views": 1144.0,
+      "total_views": 11440
+    },
+    {
+      "keyword": "국민성장펀드",
+      "is_fixed": false,
+      "views": [
+        12585,
+        15775,
+        2796,
+        31457,
+        688,
+        4459,
+        7411,
+        399864,
+        1863
+      ],
+      "video_count": 9,
+      "videos": [
+        {
+          "title": "[National Growth Fund] 'Sold Out' National Growth Fund: Up to 40% Income Tax Deduction & Separate...",
+          "video_id": "1CHXbneZ4as",
+          "views": 12585,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=1CHXbneZ4as",
+          "subtitle_summary": "1. 이재명 정부가 3주 동안 11월 11일까지 선착순으로 판매되는 국민 성장 펀드를 발표했습니다. 이 펀드는 150조원의 규모로 정부가 선택한 12개의 전략 산업에 투자할 것입니다.\n2. 국민 참여형 국민 성장 펀드는 최대 40%까지 소득 공제 및 배당 소득에 대한 세금 분리가 적용되며, 5년간 폐쇄형이라고 합니다.\n3. 정부는 국민의 투자금을 모으기 위해 은행 10곳과 증권사 15곳에서 가입이 가능하며, 정부는 손실을 우선적으로 부담하여 국민의 투자금에 추가로 투자할 것입니다.",
+          "db_saved": true
+        },
+        {
+          "title": "국민참여성장펀드 ‘완판’ 행렬…금융당국 2차 물량 검토 착수 / KBS  2026.05.22.",
+          "video_id": "N_DYow9tLpw",
+          "views": 15775,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=N_DYow9tLpw",
+          "subtitle_summary": "1. 국민참여형 국민성장펀드, 정부와 민간의 손잡은 첨단산업에 투자하는 제품, 오늘 출시되었습니다. 가입 열기가 뜨겁습니다.\n2. 금융당국은 예상을 뛰어넘는 수요에 즉시 2차 물량 공급을 위한 준비 작업에 착수했습니다. 전용 계좌를 통해 가입하면, 투자 금액에 따라 최대 1800만 원까지 소득 공제를 받을 수 있고, 5년 동안 배당 소득에 대해선 9.9%의 낮은 세율로 분리 과세 혜택이 주어집니다.\n3. 원금이 보장되지 않는 고위험 상품이며, 가입 후 5년 동안 중도 환매가 불가능합니다. 코스닥 지수는 급등했습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "국민성장펀드 완판 순식간…'코스닥도?' 기대감에 솟았다 / JTBC 뉴스룸",
+          "video_id": "coRUcdWn98M",
+          "views": 2796,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=coRUcdWn98M",
+          "subtitle_summary": "1. 국민 참여형 국민성장 펀드가 3주 동안 선착순으로 판매되며, 6억 원의 국민 자금과 1,200억 원의 정부 재정을 모아 인공지능과 반도체 등 12개 첨단 전략 산업에 투자하는 상품입니다.\n2. 오전 8시 판매가 시작되자마자 신청이 몰리며, 주요 은행과 증권사에 배정된 온라인 물량이 10분 만에 동이났습니다.\n3. 코스닥은 오늘 국민 성장 펀드의 발표 후 4.99% 급등하며, 반도체와 성장주들이 오르면서 코스닥이 반등한 것으로 보입니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[5월 22일 금요일 한국시황] 국민성장 펀드에 코스닥 폭발!!!",
+          "video_id": "tOreM8zUWuI",
+          "views": 31457,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=tOreM8zUWuI",
+          "subtitle_summary": "1. 5월 22일 금요일, 코스닥이 폭발적으로 상승했다. 이전부터 코스닥은 버블이라는 것을 말하였지만, 오늘은 거꾸로 흐름이 나왔다.\n2. 외국인 매도가 약 2조 가까운 양으로 나왔고, ETF에서 기관 매수가 일부 작동하였다.\n3. 거래소 종합 주가 지수는 7,847포인트를 기록했고, 대형주 제외하면 대책 나쁘지 않은 날이었다. 그러나 삼성전자는 2% 빠졌다.",
+          "db_saved": true
+        },
+        {
+          "title": "\"출시 기다렸어요\"…국민성장펀드 첫날 '완판' / 연합뉴스TV (YonhapnewsTV)",
+          "video_id": "vB9nb_eTaIE",
+          "views": 688,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=vB9nb_eTaIE",
+          "subtitle_summary": "1. 국민성장펀드가 오늘부터 판매되며, 정부와 민간이 함께 미래 첨단 산업에 투자하는 국민 참여형 펀드로서, 출시 첫날부터 뜨거운 인기를 보였습니다.\n2. 투자자들은 정부가 손실에 20%까지 부담하는 구조, 세제 혜택, 최대 1,800만 원까지 소득 공제 등의 매력적인 요소로 이 펀드를 선호하고 있습니다.\n3. 투자자들은 폐쇄형 상품임에 주의하며, 중도 해지는 불가능하고 개인별 투자 원금이 보장되는 것은 아닙니다.",
+          "db_saved": true
+        },
+        {
+          "title": "국민성장펀드 온라인 완판, 흥행 기대감 [NEWS 11]",
+          "video_id": "xhJutcoGB8Y",
+          "views": 4459,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=xhJutcoGB8Y",
+          "subtitle_summary": "1. 국민 참여 성장 펀드의 판매가 시작됐습니다. 3주간 6억 원 규모로 선착순으로 판매되며, 일부 금융사는 이미 완판됐습니다.\n2. 투자하려면 1월 11일까지 국민과 신환등 은행 열꽃과 KB와 NH 등 증권사 15곳에서 가입이 가능합니다. 선착순이라서 물량이 소준되면 조기에 마감될 수 있습니다.\n3. 펀드는 원금 보장이 없고, 1등급 고위험 상품으로 운영됩니다. 적합한 투자 성향을 가지고 최대 1억 원까지 가입할 수 있으며, 최소 가입 금액은 대부분의 은행과 증권사가 100만 원입니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[집중진단] 국민성장펀드, 10분컷 완판 '흥행'…투자자 관심에 코스닥 5% 급등",
+          "video_id": "ghSaHL1Dcv8",
+          "views": 7411,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=ghSaHL1Dcv8",
+          "subtitle_summary": "1. 국민 자금과 정부 재정을 모아 첨단 전략산업에 투자하는 국민 성장 펀드가 첫날 대흥행을 기록했습니다.\n2. 이 펀드는 고위험 고수익 구조로, 비상장 또는 코스닥 기술 특례 상장사에 30% 이상을 투자합니다.\n3. 이 국민 참여 펀드의 출시로 인해, 코스닥 시장이 지금 강한 모습을 보이고 있으며, 2차전지 주와 같은 관련 업종에서도 상승이 확실하게 예상됩니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[See You at 12] National Growth Fund already closing?! That’s fast💦 The KOSDAQ is rising!!! Why n...",
+          "video_id": "wb4W86jr6F0",
+          "views": 399864,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=wb4W86jr6F0",
+          "subtitle_summary": "1. 외국인 투자자들이 한국 주식시장에서 매우 활발하게 파고 있다는 것으로 보아, 개미라는 용어를 사용해 보면 된다.\n2. 이런 상황은 또 다른 버를 만들거나 운영 중인지 여부에 대한 의문이 되고 있으며, 개인 투자자들이 위험한 시장에서 계속해서 주식을 받아내는 것은 뭔가 이상하다는 것을 의미한다.\n3. 최근 일간지들의 분석에 따르면, 외국인 투자자들이 주식시장에서 활발히 파고 있다는 것은 한국 주식시장의 신뢰를 갖고 계속해서 사고 있다는 것을 의미한다.",
+          "db_saved": true
+        },
+        {
+          "title": "What Happens If You Invest 30 Million Won in the National Growth Fund? A Direct 5-Year Return Com...",
+          "video_id": "V8STbNx0uyk",
+          "views": 1863,
+          "upload_date": "2026-05-21",
+          "url": "https://www.youtube.com/watch?v=V8STbNx0uyk",
+          "subtitle_summary": "1. 국민 성장 펀드는 정부가 5년간 150조원을 반도체, AI, 바이오 등 첨단 산업에 투자하는 국가 프로젝트입니다.\n2. 일반 국민이 직접 투자할 수 있는 부분은 6천억 원으로, 오늘 이야기하는 국민 참여형 국민 성장 펀드입니다.\n3. 가입 조건: 19세 이상, 15세 이상 근로 소득자, 연간 1억 원, 5년간 총 2억 원의 투자 한도, 수수료는 연간 1.2%, 온라인으로 가입하면 1.0%로 낮아집니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0.1065,
+      "min": 0.7153,
+      "nb_score": 0.1489,
+      "avg_views": 52988.67,
+      "total_views": 476898
+    },
+    {
+      "keyword": "토지거래허가제",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "도지코인 시세",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "SM-6 유도탄",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "원달러 환율 전망",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "전월세 임대주택",
+      "is_fixed": false,
+      "views": [
+        2010
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "\"Why Have Rentals Dried Up?\"… 66,000 Purchase-to-Rent Homes Coming to Regulated Areas (05/22/2026...",
+          "video_id": "sCGo3maC-gs",
+          "views": 2010,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=sCGo3maC-gs",
+          "subtitle_summary": "1. 수도권에서 전세 매물은 부족하고 가격이 오르고 있으며, 정부는 서울과 경기도의 규제 지역에 매입-임대 주택을 많이 공급하기로 했습니다.\n2. 현재 아파트 전세 물량은 줄어들고 있으며, 전월세도 찾기가 어려워서 정부는 9만 가구를 수도권에 공급하고, 특히 66,000 가구를 규제 지역에 집중 공급하기로 했습니다.\n3. 비아파트의 장점은 공급 속도를 빨리 할 수 있다는 것으로, 민간과 공공이 단기 공급 효과를 좀 극대할 수 있을 것으로 예상됩니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "AI 대학 입시",
+      "is_fixed": false,
+      "views": [
+        3357
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "아직도 '대학 입시'에만 쩔쩔매는 대한민국 😨 반도체 공학 인재들이 설자리는 어디에?ㅣ KBS 다큐 인사이트 - 인재전쟁2 : 2부 코리아 딜레마  260521 방송",
+          "video_id": "-VrzRGXVZ6s",
+          "views": 3357,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=-VrzRGXVZ6s",
+          "subtitle_summary": "1. 대한민국에서 의사는 현재 선호도가 높고, 경쟁이 치열하지만 높은 연봉을 받는 직업으로 인정되며, 학부모들에게 만족도가 높습니다.\n2. 의대 입시는 여전히 치열하고 상위권 학생들은 대학을 입학한 후 계속해서 중북 합격하며, 취업난이 어려운 상황입니다.\n3. AI 반도체 기업이 국산 기술로 출론에 특화된 신경망처리 장치를 개발하고 있으며, AI 트래픽을 가면 실제로 연산을 합니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "치매 치료법",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "웹툰 제주일기",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "K푸드 두릅 효능",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    }
+  ]
+}

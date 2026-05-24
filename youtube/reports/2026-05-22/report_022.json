@@ -1,0 +1,337 @@
+{
+  "timestamp": "2026-05-22T06:27:14.756504",
+  "model": "mistral:latest",
+  "keyword_count": 3,
+  "analyze_subtitles": true,
+  "analysis_source": "youtube",
+  "keywords": [
+    {
+      "keyword": "오늘의 주요 뉴스",
+      "is_fixed": true,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "교육감 선거 여론",
+      "is_fixed": false,
+      "views": [
+        1918,
+        496
+      ],
+      "video_count": 2,
+      "videos": [
+        {
+          "title": "[여론조사] 지방선거 D-13…전북도지사·교육감 지지도는? / KBS  2026.05.21.",
+          "video_id": "t8M78FG9tyM",
+          "views": 1918,
+          "upload_date": "2026-05-21",
+          "url": "https://www.youtube.com/watch?v=t8M78FG9tyM",
+          "subtitle_summary": "1. KBS는 63개 지방 선거가 다가오면서 전북도사와 전북 교육감 여론 조사를 실시했습니다. 민주당 이원택 후보는 39%, 무소속 김관영 후보는 37%로 5차범위 안에서 접전하고 있으며, 지난 3월의 여론 조사와 비교하면 16% 상승했습니다.\n2. 전북 교육감 선거는 단일화 과정을 거쳐 두 명의 후보가 각축을 버리고 있으며, 천호송 후보는 36%, 이남호 후보는 23%로 차이가 있습니다.\n3. 정당 지지도는 민주당 70%, 조국혁신당 6%, 국민의 힘 4%, 진보당 2%, 개혁신당 1% 등입니다. 지방 선거까지 남은 12일 동안 어떤 변수가 뒤따를지 주목됩니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[5차 여론조사] 전재수 45%·박형준 34%…교육감 김석준 1위 / KBS  2026.05.21.",
+          "video_id": "OFke0egkp8g",
+          "views": 496,
+          "upload_date": "2026-05-21",
+          "url": "https://www.youtube.com/watch?v=OFke0egkp8g",
+          "subtitle_summary": "1. KBS는 63 지방 선거를 위해 5차 여론조사를 진행했습니다.\n2. 부산시장 선거에서 더불어민주당 전재수보가 국문의 힘 박형준 후보를 앞섰으며, 교육감 선거에서 김석준 후보가 29%의 지지율로 나머지 두 후보를 크게 앞섰습니다.\n3. 전재수 후보가 45%, 박형준 후보가 34%로 기록했으며, 두 후보 사이의 격차는 11% 포인트로 전 후보가 앞서었습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 2.9387,
+      "min": 1.0697,
+      "nb_score": 2.7472,
+      "avg_views": 1207.0,
+      "total_views": 2414
+    },
+    {
+      "keyword": "엔비디아 실적 신기록",
+      "is_fixed": false,
+      "views": [
+        4373,
+        6099,
+        60512
+      ],
+      "video_count": 3,
+      "videos": [
+        {
+          "title": "엔비디아 실적은 또 신기록! 이제 삼성전자·SK하이닉스· 더 간다? 다른 AI반도체 상황은요?/ 강정수 블루닷AI 연구센터장 #삼성전자 #SK하이닉스 #오픈AI #앤스로픽",
+          "video_id": "8h3AdhjfkWA",
+          "views": 4373,
+          "upload_date": "2026-05-21",
+          "url": "https://www.youtube.com/watch?v=8h3AdhjfkWA",
+          "subtitle_summary": "1. 시장은 7,700원으로 상승세를 보여주고 있습니다. 삼성전자는 5%, SK하이닉스는 11% 상승했습니다.\n2. 최근 엔비디아의 실적 발표가 지연되었으며, 이미 예측 가능한 수준이라고 합니다. 따라서 엔비디아의 어닝콜이 나오면 주가가 하락하는 경향성을 보여줬습니다.\n3. AI 시장에 대한 인프라스트럭처 투자는 지속될 것으로 예상되며, 반도체 시장의 큰 사이클은 \"일반적으로 슈퍼 사이클\"이라고 하지만, 분석가는 이러한 사이클이란 말이 부적합하다고 생각합니다. 이유는 설비 투자를 위해 많은 시간과 재정이 필요하기 때문에, 설비가 완성되는 시점이 내려가는 지점이라고 한다면 반도체 산업의 충격을 받아서 망할 수 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "12분기 연속 신기록 달성한 엔비디아 실적! 그런데도 주가는 제자리? 이유가 있다? 아직 걱정할 필요가 없습니다! 엔비디아가 더 가려면 반드시 해결돼야 할 일은?",
+          "video_id": "7qjh7YNj_50",
+          "views": 6099,
+          "upload_date": "2026-05-21",
+          "url": "https://www.youtube.com/watch?v=7qjh7YNj_50",
+          "subtitle_summary": "엔비디아는 전세계 시장 최고의 기업으로 등극, 2027년 1분기 실적을 발표했습니다. 매출은 816억 달러로 85% 증가하며, 데이터 센터 매출은 752억 달러로 92% 증가했습니다. 이는 AI 인프라 투자에 대한 지속적인 증가를 나타냅니다. CEO는 AI 공장의 구축이 인류 역사상 가장 큰 인프라 확장이며, 에이전트형 AI의 도입을 강조했습니다. 이번 실적은 에이전트형 AI의 필요성과 증가하는 GPU, 네트워크, 메모리, 전력, 냉각 수요를 보여줍니다.",
+          "db_saved": true
+        },
+        {
+          "title": "엔비디아 집어삼킨 역설 있었지만...'12분기 신기록' 뒤 파격 결단 [지금이뉴스] / YTN",
+          "video_id": "k3NGqAljNT0",
+          "views": 60512,
+          "upload_date": "2026-05-21",
+          "url": "https://www.youtube.com/watch?v=k3NGqAljNT0",
+          "subtitle_summary": "1. Nvidia, 사업 최고 성과를 거두며 주주 환원 계획을 발표하여 가이던스의 실망감을 해소했습니다.\n2. 1분기 매출은 816억 2천만 달러로 전년 동기 대비 69% 증가했으며, 데이터 센터 부문이 실적을 견인했습니다.\n3. Nvidia는 1분기 추가 자사주 매입 800억 달러를 승인하고, 분기 배당금도 25원으로 인상했습니다. 이로 인해 잉여 현금 흐름이 486억 달러로 크게 늘어나며, 주주에게 막대한 현금 창출력을 보장했습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 1.0251,
+      "min": 2.2223,
+      "nb_score": 0.4613,
+      "avg_views": 23661.33,
+      "total_views": 70984
+    },
+    {
+      "keyword": "삼성전자 성과급",
+      "is_fixed": false,
+      "views": [
+        29346,
+        20505,
+        28291
+      ],
+      "video_count": 3,
+      "videos": [
+        {
+          "title": "[자막뉴스] 상한선 깨고 인재들 묶은 삼성전자...후폭풍 만만찮을 듯 / YTN",
+          "video_id": "I3ZNiZymPQ8",
+          "views": 29346,
+          "upload_date": "2026-05-21",
+          "url": "https://www.youtube.com/watch?v=I3ZNiZymPQ8",
+          "subtitle_summary": "1. Samsung Electronics 노사 합의로 세계적인 반도체 공급망 위기를 극적으로 모면했다는 보고가 있었습니다. (Samsung Electronics avoids a global crisis in the semiconductor supply chain with a labor agreement.)\n2. 파업으로 인한 최악의 생산 차질 우려가 있었는데, 이로 인해 반도체 가격 폭등, 각국 AI 인프라 투자 지연, 치명적인 타격을 받았다고 보고되었습니다. (There was a worry about the worst production gap due to strike, which could lead to price surge of semiconductors, delay in investment for AI infrastructure in each country, and a fatal blow.)\n3. 이번 성과급 보상 합의는 Samsung의 인재 유출을 막고, HBM 개발에서 뒤쳐졌던 2019년의 실책을 반복하지 않게 해주었다고 평가되었습니다. (This bonus agreement is evaluated as a way to prevent Samsung's brain drain and not to repeat the mistake of HBM development in 2019.)",
+          "db_saved": true
+        },
+        {
+          "title": "Will the Union Vote Pass Easily? 'Backlash from DX Division Over Performance Bonuses' is the Wild...",
+          "video_id": "h_RYhzHc0VA",
+          "views": 20505,
+          "upload_date": "2026-05-21",
+          "url": "https://www.youtube.com/watch?v=h_RYhzHc0VA",
+          "subtitle_summary": "1. Samsung employees have expressed significant dissatisfaction over performance bonuses, which vary up to 100 times. The union vote on the tentative agreement is ongoing, and it's uncertain if this dissent will influence the outcome.\n2. The main source of contention in the vote is the backlash from the DX division employees (approximately 50,000) due to their lower bonuses compared to other departments like smartphones and consumer electronics, which have made profits but received fewer company shares.\n3. Additionally, there's internal conflict within the DS semiconductor division (approximately 78,000 members), with disagreements between the memory and non-memory sectors over the fairness of sharing profits from the highly successful memory business unit.",
+          "db_saved": true
+        },
+        {
+          "title": "K-반도체 파국 막았다...'파격 성과급' 뒤 삼성전자가 단 단서조항 [이슈톺] / YTN",
+          "video_id": "flke3Qq3BGw",
+          "views": 28291,
+          "upload_date": "2026-05-21",
+          "url": "https://www.youtube.com/watch?v=flke3Qq3BGw",
+          "subtitle_summary": "1. 삼성전자와 노조측은 10년간 성과급 지급 계약을 체결했습니다. 이 계약에서는 반도체 부분 DS 부분의 영업 이익이 200조원 달성시 지급하겠다는 단서조항이 붙었으며, 이후로 100조원 이상 영업 이익이 났을 때 지급하도록 했습니다.\n2. 이 계약은 회사측의 입장도 반영된 부분으로, 성과급을 지속적으로 지출할 것인데 이는 재무전성에 영향을 줄 것입니다.\n3. 이번 합의는 회사와 주주, 투자자, 노동자가 영업 이익을 어떻게 나누어야 하는지에 대한 논의로 보입니다. 이미 근로자들이 일부분 갖고 가겠다는 것처럼 보일 수 있습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 1.3669,
+      "min": 5.5,
+      "nb_score": 0.2485,
+      "avg_views": 26047.33,
+      "total_views": 78142
+    },
+    {
+      "keyword": "이스라엘 한국인 석방",
+      "is_fixed": false,
+      "views": [
+        11215,
+        6545,
+        268927,
+        8901,
+        2234,
+        6659
+      ],
+      "video_count": 6,
+      "videos": [
+        {
+          "title": "Blue House: \"Israel Releases South Koreans Detained During Ship Interception... We Welcome the De...",
+          "video_id": "ZYCaYOy0vto",
+          "views": 11215,
+          "upload_date": "2026-05-21",
+          "url": "https://www.youtube.com/watch?v=ZYCaYOy0vto",
+          "subtitle_summary": "1. 두 명의 대한민국 평화 활동가가 이스라엘에서 체포되었다가 해방됐다는 소식이 청와대로부터 알려졌습니다.\n2. 청와대 수석대변인은 이스라엘 측의 즉시 해방에 대해 높이 평가하며, 필요한 조치를 취했고 결과적으로 추방되었다는 것을 설명했습니다.\n3. 청와대는 이 사건으로 인해 한-이스라엘 관계가 더욱 발전하기를 희망합니다. 또한, 6월 3일부터 지방선거와 국회의원 재보궐 선거의 공식 운동이 시작됩니다.",
+          "db_saved": true
+        },
+        {
+          "title": "청와대 \"이스라엘, 선박 나포로 체포한 한국인 2명 석방\" / YTN",
+          "video_id": "HWmRgUU8K4s",
+          "views": 6545,
+          "upload_date": "2026-05-21",
+          "url": "https://www.youtube.com/watch?v=HWmRgUU8K4s",
+          "subtitle_summary": "1. 이스라엘 정부가 최근 선박 나포로 체포한 두 명의 우리 국민을 곧바로 석방했다고 청와대가 밝혔습니다.\n2. 이재명 대통령은 이스라엘에 대해 비인도적이라는 지적을 했으나, 이번 사건으로 양국 관계가 영향을 받지 않고 발전하기를 희망한다고 밝혔습니다.\n3. 청와대는 이 사건과 관련해서 국제 형사 재판소에서 체포 영장이 발부된 상태인 베냐민 네타니아오 이스라엘 총리를 향해 검토하자고 언급했습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[On-the-Scene] \"Detained Citizens Released Immediately\"... Hearing the Israeli Side's Stance / JT...",
+          "video_id": "57tZ3-iN0Vg",
+          "views": 268927,
+          "upload_date": "2026-05-21",
+          "url": "https://www.youtube.com/watch?v=57tZ3-iN0Vg",
+          "subtitle_summary": "1. 강유정, 청와대 수석 대변인, 이스라엘에서 한국인을 체포한 후 즉시 해방한 점을 높이 평가하며 환영했습니다.\n2. 이재명 정부는 민의 안전과 권익 보호에 대해 심각한 우려를 표하고, 필요한 조치와 외교적 대응을 통해 국제 인권 문제와 우리 국민 안전을 지키겠다는 의도를 선언했습니다.\n3. 이재명 정부는 서울 성동 경찰서장이 긴급 출동 차량을 유용한 사실을 취재한 SBS 보도회에 대해 신속한 감찰을 통해 문책하고, GTXA 삼성역 구간 철근 누락 사태에 대해 관계 부처의 엄정한 실태 파악과 철저한 안전 점검을 지시했습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[LIVE] \"Israel Releases 2 South Koreans Arrested After Ship Seizure... Welcomed\" Blue House Brief...",
+          "video_id": "hWXscRG1gck",
+          "views": 8901,
+          "upload_date": "2026-05-21",
+          "url": "https://www.youtube.com/watch?v=hWXscRG1gck",
+          "subtitle_summary": "1. 이스라엘이 가자지구행 구호 선박 납포로 인해 두 명의 한국인을 체포한 사건에 대해, 강유정(청와대 수석 대변인)은 이재명 정부가 이스라엘 측의 즉시 구금 해제를 환영하고 국제 교황의 중요성을 강조했음을 밝혔습니다.\n2. 이재명 대통령은 서울 성동 경찰서장이 긴급 출동 차량을 이부제 예외 관용 전기차로 유용한 사실을 취재한 SBS 보도회에 대해 신속한 감찰을 통해 문책하고 공직 기간 해의 사례가 발생하지 않도록 철저히 조치할 것을 지시했습니다.\n3. GTXA 삼성역 구간 철근 누락 사태에 대해 국토부와 행안부 등 관계 부처의 엄정한 실태 파악과 철저한 안전 점검을 지시했습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "2 South Koreans detained by Israeli military released… Arriving in South Korea tomorrow / Channel...",
+          "video_id": "naekHoRwJsA",
+          "views": 2234,
+          "upload_date": "2026-05-21",
+          "url": "https://www.youtube.com/watch?v=naekHoRwJsA",
+          "subtitle_summary": "1. 두 명의 대한민국 국민이 이스라엘에 불법적으로 진입하여 체포되었습니다.\n2. 이스라엘은 이들을 추방형태로 석방했고, 합법적인 행위라고 주장했습니다.\n3. 두 명의 국민은 내일 오전에 대한민국으로 돌아갈 예정입니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[속보] 靑 \"이스라엘 나포 한국인 2명 석방…환영\" / 연합뉴스TV (YonhapnewsTV)",
+          "video_id": "JMgoNcF0dkM",
+          "views": 6659,
+          "upload_date": "2026-05-21",
+          "url": "https://www.youtube.com/watch?v=JMgoNcF0dkM",
+          "subtitle_summary": "1. 이스라엘에서 2명의 한국인을 체포한 뒤 즉시 석방하여 환영받았다. (YonhapnewsTV)\n2. 이재명 정부는 민의 안전과 권익 보호에 대해 심각한 우려를 표했으며, 국제인도법 등을 활용하여 이스라엘과 외교적 대응을 수행했다. (YonhapnewsTV)\n3. 이재명 정부는 서울 성동 경찰서장이 긴급 출동 차량을 유용한 사실을 취재한 SBS 보도회에 대해 신속한 감찰을 통해 문책하고, GTXA 삼성역 구간 철근 누락 사태에 대해 관계부처의 엄정한 실태 파악과 철저한 안전 점검을 지시했다. (YonhapnewsTV)",
+          "db_saved": true
+        }
+      ],
+      "max": 0.2221,
+      "min": 1.0275,
+      "nb_score": 0.2162,
+      "avg_views": 50746.83,
+      "total_views": 304481
+    },
+    {
+      "keyword": "이란 핵협상 전망",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "다우지수 사상 최고치",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "원유 스와프 한일",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "전작권 전환 일정",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "K방산 스타트업",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "가상자산 주도권 경쟁",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "성과급 차별 논란",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "부동산정책 평가 여론",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "이란 전쟁 종료 전망",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "한일 원전 협력",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    }
+  ]
+}

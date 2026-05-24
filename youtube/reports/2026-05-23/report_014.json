@@ -1,0 +1,337 @@
+{
+  "timestamp": "2026-05-23T02:51:52.518869",
+  "model": "mistral:latest",
+  "keyword_count": 3,
+  "analyze_subtitles": true,
+  "analysis_source": "youtube",
+  "keywords": [
+    {
+      "keyword": "오늘의 주요 뉴스",
+      "is_fixed": true,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "소방청장 감찰",
+      "is_fixed": false,
+      "views": [
+        58548,
+        12812
+      ],
+      "video_count": 2,
+      "videos": [
+        {
+          "title": "President Lee Orders Emergency Inspection of Fire Commissioner (05/22/2026/News Desk/MBC)",
+          "video_id": "r5N3U3ospcM",
+          "views": 58548,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=r5N3U3ospcM",
+          "subtitle_summary": "1. 대통령(Lee) 청와대에서 오늘 저녁 공지로, 소방청장(Kim Seung-ryeol)의 개인 비 (사고)에 대한 즉각적인 진실 확인을 지시했다는 것이 밝혔습니다.\n2. 정부 관계자는 최근 공공기관 차량 2부제(규정)를 피해 긴급 출동용 전기차로 출퇴근한 서울 성동경찰서장의 대기발령 조치가 이루어진 바 있다고 설명했습니다.\n3. 이와 유사한 사례라는 것으로 추정됩니다. (정부 관계자의 말에 따르면 이 사건과 같은 사례가 있다고 설명했기 때문)",
+          "db_saved": true
+        },
+        {
+          "title": "President Lee praised the Fire Agency two days ago... Background of investigation: \"Allegations o...",
+          "video_id": "Lzrz8Hp43l0",
+          "views": 12812,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=Lzrz8Hp43l0",
+          "subtitle_summary": "1. 대통령 이재명은 2일 전 소방청장 김승용에 대해 공개적으로 칭찬했다. (President Lee praised the Fire Agency head, Mr. Kim Seung-yong two days ago.)\n2. 대통령이 김승용에 대한 즉각적인 진실 확인을 지시하였고, 감찰에 착수했다는 소식이 났다. (The President has ordered an immediate investigation into Mr. Kim Seung-yong and it has been reported that the investigation has begun.)\n3. 김승용은 의혹으로 직위 해제된 전 소방청장 허석군의 후임이며, 올해 3월에 승진 발탁됐다. (Mr. Kim Seung-yong is the successor of former Fire Agency head, Mr. Hwang Sek-kun who was dismissed due to allegations. He was promoted this March.)",
+          "db_saved": true
+        }
+      ],
+      "max": 2.8856,
+      "min": 1.3438,
+      "nb_score": 2.1474,
+      "avg_views": 35680.0,
+      "total_views": 71360
+    },
+    {
+      "keyword": "에볼라 확산 민주콩고",
+      "is_fixed": false,
+      "views": [
+        19658,
+        104,
+        15968
+      ],
+      "video_count": 3,
+      "videos": [
+        {
+          "title": "[🔴속보] 에볼라 바이러스 대확산…민주콩고 확진 잇달아｜전세계 공포…검역 강화 / 연합뉴스TV(YonhapnewsTV)",
+          "video_id": "wT3JBt0mZcw",
+          "views": 19658,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=wT3JBt0mZcw",
+          "subtitle_summary": "1. 에볼라 바이러스가 아프리카 민주콩고와 우간다에서 확산하면서 미국도 검역을 강화했습니다. 민주콩고 보건당국은 670명의 에볼라 의심 사례가 있으며, 160명이 사망했습니다.\n2. 세계 보건 기구는 국제적 공중보건 비상 사태를 선포하였고, 에볼라 확산을 막기 위해 국경을 폐쇄하고 검역을 강화하는 등 대응에 나섰습니다.\n3. 미국 샌디에고에서 이슬람 사원에서 총기 난사로 세 명이 숨졌으며, 경찰은 증호범죄의 무게를 씻고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "DRC Ebola outbreak spreads hundreds of kilometers... 160 dead as countries impose border closures...",
+          "video_id": "Y6GXhVNmka8",
+          "views": 104,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=Y6GXhVNmka8",
+          "subtitle_summary": "1. 에볼라 바이러스 발생지인 콩고민주공화국에서 확산되어 이투리 주와 남키주까지 퍼져나가면서 팬데믹으로 이어지는 것으로 보입니다. 160명이 사망하고 600명에 달하는 감염 의심사가 있습니다.\n2. 민족고와 인접한 국가 우간다도 비상을 선언했으며, 미국은 이들과 남수단에서 체류하는 사람의 입국을 제한하였습니다.\n3. 이 상황에서 인도-아프리카 정상회의는 일주일 앞두고 연기됐으며, 현재 백신과 치료제가 없고 지사율은 약 30~50%입니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[🔴이슈] '에볼라 유행국' 민주콩고 출신 승객 탑승하자 여객기 긴급 회항..\"사망자 장례도 못 치러\" 변종 에볼라 확산 치료소 방화까지 | SBS 이슈라이브",
+          "video_id": "xdrZabv3iTA",
+          "views": 15968,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=xdrZabv3iTA",
+          "subtitle_summary": "1. 변종 에볼라 바이러스가 콩고동부에서 확산되고 있으며, WHO는 이미 2달 전부터 퍼졌을 가능성이 높다고 밝혔습니다.\n2. 이번 발병의 진원은 4월 24일 증상을 보인 간호사로 추정되며, 해당 간호사는 금강마을에서 사망했고 장례식에서 많은 사람이 시신과 접촉했습니다.\n3. 의료진 접근이 더욱 어려워지고 있으며, 미국 트럼프 대통령이 미국의 글로벌 보건 예산을 삭감하여 국제개발처의 역할을 해체시켰기 때문에 지역 전체가 위험에 노출된 상황입니다. WHO는 이번 발병을 국제적 공중보건 비상 사태로 선포하였습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 2.9879,
+      "min": 2.0438,
+      "nb_score": 1.462,
+      "avg_views": 11910.0,
+      "total_views": 35730
+    },
+    {
+      "keyword": "성장펀드 완판",
+      "is_fixed": false,
+      "views": [
+        7430,
+        47909,
+        16592,
+        335
+      ],
+      "video_count": 4,
+      "videos": [
+        {
+          "title": "[Issue] People's Participation Growth Fund Sells Out on Day One... Financial Authorities Prepare ...",
+          "video_id": "S2vV3l5W_Lg",
+          "views": 7430,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=S2vV3l5W_Lg",
+          "subtitle_summary": "1. 국민참여 성장 펀드가 1일 내에 매각되었습니다. 이 펀드는 정부 재정을 통해서 보강된 후순이 포함된 공격 투자형 펀드입니다.\n2. 투자 대상은 반도체, AI, 방산 바이오 등 첨단 산업에 12개 종목으로 구성되어 있습니다.\n3. 혜택으로는 정부가 손실의 20%를 보장하고, 세금 혜택이 있으며, 분리 과세도 적용됩니다. 19세 이상의 분들이 가입이 가능합니다.",
+          "db_saved": true
+        },
+        {
+          "title": "국민참여성장펀드 ‘완판’ 행렬…금융당국 2차 물량 검토 착수 / KBS  2026.05.22.",
+          "video_id": "N_DYow9tLpw",
+          "views": 47909,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=N_DYow9tLpw",
+          "subtitle_summary": "1. 국민참여형 국민성장펀드, 정부와 민간의 손잡은 첨단산업 투자 플랫폼, 오늘(22일) 출시. 가입 열기 뜨겁다.\n2. 5대 시중은행과 15개 증권사를 통해 선착순 판매 진행, 금융당국 2차 물량 검토 착수.\n3. 가입자는 투자 금액에 따라 최대 1800만원까지 소득 공제, 5년 동안 배당 소득에 대해선 9.9%의 낮은 세율로 분리 과세 혜택. 손실이 생기면 정부 재정 우선 흡수. 중도 환매 불가능.",
+          "db_saved": true
+        },
+        {
+          "title": "[National Growth Fund] 'Sold Out' National Growth Fund: Up to 40% Income Tax Deduction & Separate...",
+          "video_id": "1CHXbneZ4as",
+          "views": 16592,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=1CHXbneZ4as",
+          "subtitle_summary": "1. 이재명 정부의 국민 성장 펀드(National Growth Fund)가 3주 선착순으로 판매되며, 총 150조원 규모로 6억 원 대금을 모으고자 합니다.\n2. 이 펀드는 AI, 반도체, 바이오, 로봇, 2차전지 등 12개의 첨단 산업에 정부가 투자할 예정입니다.\n3. 국민 참여자는 최대 40%까지의 소득 공제 및 배당 소득에서도 특별한 세금 조절을 받게 됩니다. 또한, 정부가 20%까지의 손실을 우선적으로 부담합니다.",
+          "db_saved": true
+        },
+        {
+          "title": "\"National Growth Fund\" Off to a Successful Start on Day One… Sold Out / Channel A / News A",
+          "video_id": "CwtE8MtYkzc",
+          "views": 335,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=CwtE8MtYkzc",
+          "subtitle_summary": "\"National Growth Fund\" launched on the first day with immediate success, selling out quickly. The fund invests in advanced strategies for industries using a combination of public and private funds. The demand was so high that even during business hours, people were rushing to open accounts to join. However, experts advise potential investors to be aware that once money is invested, it cannot be withdrawn or exchanged for five years, making it a non-guaranteed asset product.",
+          "db_saved": true
+        }
+      ],
+      "max": 1.0163,
+      "min": 1.7629,
+      "nb_score": 0.5765,
+      "avg_views": 18066.5,
+      "total_views": 72266
+    },
+    {
+      "keyword": "ILO AI 정책",
+      "is_fixed": false,
+      "views": [
+        16,
+        1904,
+        739,
+        64,
+        211803
+      ],
+      "video_count": 5,
+      "videos": [
+        {
+          "title": "President Lee meets ILO chief Gilbert Houngbo to discuss labor policy in AI era",
+          "video_id": "xdbDrOYAk8E",
+          "views": 16,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=xdbDrOYAk8E",
+          "subtitle_summary": "1. President JYang and ILO Director General Gilbert Houngbo met at the Blue House to discuss labor-related matters, particularly the ILO's participation in South Korea's global AI hub initiative.\n2. The president expressed hopes for the ILO to play a more significant role in shaping labor policies during the AI era and sought insights on South Korea's labor policy.\n3. The ILO has agreed to join South Korea's global AI hub initiative, which was announced on Thursday and involves multiple UN entities.",
+          "db_saved": true
+        },
+        {
+          "title": "[Replay] President Lee Meets ILO Director-General: “Please Make Great Use of Korean Talents in In...",
+          "video_id": "diMjwdCfMPA",
+          "views": 1904,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=diMjwdCfMPA",
+          "subtitle_summary": "1. 대한민국 정부는 Global AI Hub을 출시했으며, ILO는 이를 활용하여 노동분야에서 AI를 최대화하고 활용할 수 있도록 준비가 되어 있습니다.\n2. 이로써 다른 국가들에게도 AI를 활용한 노동 행정, 사회보호, 및 노동 정책을 다양하게 유용하게 활용할 수 있을 것입니다.\n3. 대한민국의 다양한 기여와 공여에 감사함을 표현합니다. (이는 제가 장관님과 만찬 중에서도 말씀을 드렸지만)",
+          "db_saved": true
+        },
+        {
+          "title": "[현장] 이 대통령, 질베르 웅보 국제노동기구(ILO)사무총장 접견/2026년 5월 22일(금)/KBS",
+          "video_id": "9Y0jElKoN6A",
+          "views": 739,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=9Y0jElKoN6A",
+          "subtitle_summary": "1. 대통령과 ILO 사무총장은 만남을 가졌습니다. 이는 대한민국에서 AI 허브를 출범시키고 있으며, ILO도 참여하겠다는 의견이 있었습니다.\n2. ILO는 대한민국이 추진하는 AI 허브에 적극적으로 참여할 준비가 되어 있습니다. 이를 통해 노동분야에서 AI를 최대화하고 활용할 수 있을 것으로 보입니다.\n3. ILO는 대한민국의 공여금 순위가 12 안에 들기는 것을 알고 있습니다. 이에 대한 대한민국의 많은 유능한 인재를 감사하며, 국가의 거정을 고려해서 우리 대한민국에는 아주 유능한 인재들이 많습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "\"AI 일자리 대체 어떡합니까?\" 대통령 돌발 질문에 화들짝 놀란 ILO 수장... 면담 막바지 훅 들어온 '뼈있는 당부'는? (ft  글로벌 AI 허브)",
+          "video_id": "sQqmyQtmkk0",
+          "views": 64,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=sQqmyQtmkk0",
+          "subtitle_summary": "1. ILO 수장은 대한민국 방문 중인 것을 환영하며, 국제 운동사에서의 큰 영향을 많이 받았다고 말한다.\n2. ILO는 대한민국이 추진하는 Global AI Hub에 적극적으로 참여할 준비가 되어 있다고 밝혔다.\n3. ILO 수장은 대한민국의 공여금 순위가 12 안에 들기는 것을 알고, 대한민국에서 유능한 인재들이 많이 있다고 주장하며, 국제기구에서도 활용할 수 있을 것이라고 예측했다.",
+          "db_saved": true
+        },
+        {
+          "title": "[On-Site Video] \"I was deeply moved\": President seizes the moment to make a request after praisin...",
+          "video_id": "JRMtnEtLU98",
+          "views": 211803,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=JRMtnEtLU98",
+          "subtitle_summary": "1. 대통령은 코로나1 전에 한국을 방문했지만, 최근 글로벌 AI 허브를 출범하게 된 점에 감명깊었습니다.\n2. ILO는 대한민국이 추진하는 글로벌 AI 허브에 적극적으로 참여할 준비가 되어 있습니다.\n3. 대통령은 노동 정책 관련해서도 많은 좋은 부탁을 드립니다, 특히 인공지능에 의한 일자리 대체 문제에 대처하는 데 필요한 노력이 필요하다고 말했습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0.2819,
+      "min": 1.1164,
+      "nb_score": 0.2525,
+      "avg_views": 42905.2,
+      "total_views": 214526
+    },
+    {
+      "keyword": "항공모함 배치",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "지포스 신제품",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "초등학교 학폭 증가",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "우크라이나 학교 공습",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "노원 재건축 공약",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "충북 동해안 예산",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "반도체 공급망 협력",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "GTX 부실 공사",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "스타벅스 환불 논란",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "슈퍼 호황 반도체",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    }
+  ]
+}

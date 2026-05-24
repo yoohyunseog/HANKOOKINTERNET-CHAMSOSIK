@@ -345,6 +345,122 @@ app.get('/favicon.ico', (req, res) => {
     res.status(204).end();
 });
 
+function decodePathSafely(value) {
+    try {
+        return decodeURIComponent(value);
+    } catch (error) {
+        return value;
+    }
+}
+
+function isClosedPagePath(req) {
+    const rawPath = req.path || '';
+    const rawOriginalPath = (req.originalUrl || '').split('?')[0];
+    const paths = [
+        rawPath,
+        rawOriginalPath,
+        decodePathSafely(rawPath),
+        decodePathSafely(rawOriginalPath)
+    ].map(value => String(value || '').toLowerCase());
+
+    return paths.some(value =>
+        value.startsWith('/api/radio-state') ||
+        /(^|\/)(radio|radio\.html|chamsosik-radio|chamsosik-radio\.html|참소식-라디오|참소식라디오|라디오|ai-issue-briefing|chat-board)(\/|$)/i.test(value)
+    );
+}
+
+app.use((req, res, next) => {
+    if (!isClosedPagePath(req)) {
+        return next();
+    }
+
+    res.setHeader('Cache-Control', 'no-store, max-age=0');
+    if (req.path.startsWith('/api/') || req.accepts(['html', 'json']) === 'json') {
+        return res.status(410).json({
+            success: false,
+            error: 'This page is permanently closed. Reason: suspicious attempts to access long-term archived private information related to the server administrator have been identified. A record showing unauthorized absence on the day a resignation letter was submitted 10 years ago has also been identified. The server administrator has only now, 10 years after the incident, identified these circumstances and records. Korean-language domains may require additional filtering and verification when Korean and English are mixed, while English-only domains may not face the same filtering burden. Additional related findings may be reported to ICANN and other domain or network management authorities.'
+        });
+    }
+
+    return res.status(410).send(`<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>페이지 영구 폐쇄</title>
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      font-family: Arial, "Noto Sans KR", sans-serif;
+      color: #1f2933;
+      background: #f5f7fa;
+    }
+    main {
+      width: min(520px, calc(100% - 32px));
+      text-align: center;
+    }
+    h1 {
+      margin: 0 0 12px;
+      font-size: 28px;
+      line-height: 1.25;
+    }
+    p {
+      margin: 0;
+      color: #52606d;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    .notice-emphasis {
+      display: block;
+      margin: 18px 0;
+      padding: 12px 14px;
+      border-radius: 8px;
+      background: #7f1d1d;
+      color: #ffffff;
+      font-size: 18px;
+      font-weight: 900;
+      line-height: 1.55;
+    }
+    .notice-emphasis.secondary {
+      background: #1e3a8a;
+    }
+    a {
+      display: inline-block;
+      margin-top: 14px;
+      color: #1d4ed8;
+      font-weight: 800;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>🇰🇷 한글도메인 &lt;&gt; 🇺🇸 페이지가 영구적으로 폐쇄되었습니다</h1>
+    <p>사유: 최근 서버 관리자와 관련된 장기 보관 사적 정보 데이터에 대해 비정상적인 조회 시도로 의심되는 정황을 확인하였습니다. 또한 10년 전 회사에 사직서를 제출한 날이 무단 결근으로 처리된 기록도 확인되었습니다. <span class="notice-emphasis">서버 관리자는 사건 발생 후 10년이 지난 현재에서야 위와 같은 정황과 기록을 확인하였습니다.</span> 한글 도메인은 한글·영문 혼용 과정에서 추가적인 필터링과 검증 부담이 발생할 수 있는 반면, 영문 도메인은 상대적으로 동일한 필터링 부담이 적은 경우가 있습니다. <span class="notice-emphasis secondary">서버 관리자에 대한 10년 전 데이터의 정보 유출로 인해 해당 페이지를 폐쇄 조치합니다.</span> 해당 데이터에는 민감한 공공·국가 관련 정보가 포함될 가능성이 있어, 관련 페이지 운영을 중단합니다. 관련 정황이 추가로 확인될 경우, ICANN 등 도메인 및 네트워크 관리 기관에 제보될 수 있습니다.</p>
+    <a href="https://www.icann.org/compliance/complaint" target="_blank" rel="noopener noreferrer">ICANN Contractual Compliance Complaint</a>
+  </main>
+</body>
+</html>`);
+});
+
+app.use((req, res, next) => {
+    if ((req.path || '').toLowerCase() !== '/server-journal.html') {
+        return next();
+    }
+
+    res.setHeader('Cache-Control', 'no-store, max-age=0');
+    res.setHeader('X-Robots-Tag', 'noindex, nofollow, noarchive');
+    res.setHeader('Referrer-Policy', 'no-referrer');
+    res.setHeader('Permissions-Policy', 'camera=(), microphone=(), geolocation=(), payment=(), usb=(), interest-cohort=()');
+    res.setHeader('Cross-Origin-Resource-Policy', 'same-origin');
+    next();
+});
+
 // 예전 domain-check.js가 보내던 잘못된 404 경로 호환 처리
 app.use((req, res, next) => {
     if (req.originalUrl.includes('/xn--9l4b4xi9r.com') &&

@@ -1,0 +1,365 @@
+{
+  "timestamp": "2026-05-23T08:29:38.898985",
+  "model": "mistral:latest",
+  "keyword_count": 3,
+  "analyze_subtitles": true,
+  "analysis_source": "youtube",
+  "keywords": [
+    {
+      "keyword": "오늘의 주요 뉴스",
+      "is_fixed": true,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "스타벅스 불매 운동",
+      "is_fixed": false,
+      "views": [
+        3236,
+        3774
+      ],
+      "video_count": 2,
+      "videos": [
+        {
+          "title": "'스타벅스 불매' 공직사회 확산...공무원노조도 동참 / YTN",
+          "video_id": "znj2HZ03WaI",
+          "views": 3236,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=znj2HZ03WaI",
+          "subtitle_summary": "1. 스타벅스에 대한 불매 운동이 공직사회까지 확산되고 있으며, 행정안전부, 보험부 장관 등 정부 부처가 참여하여 나섰습니다.\n2. 법무부는 대검찰청에 스타벅스 상품 구매 내역을 보고하라는 지시를 한 것으로 알려졌으며, 전국 공무원 노동 조합은 스타벅스 이용 중단을 요청했습니다.\n3. 결국, 공무원 노조 총년맹은 스타벅스 기프티콘 사용 자재령을 내렸고, 정용진 신세계 그룹 회장과 스타벅스 측에게 방지 대책을 촉구하였습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[스타벅스 탱크데이] 李대통령 \"거기 커피는 아니죠?\" '탈벅' 파장에 파묘되는 정용진 '멸공' 논란 #스타벅스 #탱크데이 _260522",
+          "video_id": "9zZLIlhWsTs",
+          "views": 3774,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=9zZLIlhWsTs",
+          "subtitle_summary": "1. Starbucks Tank Day controversy escalating, with social media posts about canceling Starbucks app membership and boycotting the brand increasing. The issue is significant due to Starbucks' reliance on its app-based reward system and pre-paid credit usage.\n2. The stock price of Shinsegae, which includes a major cash cow business in the form of E-mart, has been affected by the Starbucks controversy as Starbucks Korea contributes significantly to their earnings.\n3. Despite the controversy, analysts predict that Shinsegae will still have good 2nd quarter earnings due to strong 1st quarter results and increased foreign demand for Korean luxury goods.",
+          "db_saved": true
+        }
+      ],
+      "max": 4.7338,
+      "min": 0.0,
+      "nb_score": 47338.0366,
+      "avg_views": 3505.0,
+      "total_views": 7010
+    },
+    {
+      "keyword": "스페이스X 상장 소식",
+      "is_fixed": false,
+      "views": [
+        6184,
+        27468
+      ],
+      "video_count": 2,
+      "videos": [
+        {
+          "title": "[Economy at a Glance] \"Raising 100 Trillion Won via IPO\"... SpaceX Listing, How to Invest? / KBS ...",
+          "video_id": "dpmZXPWRia4",
+          "views": 6184,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=dpmZXPWRia4",
+          "subtitle_summary": "1. SpaceX, 일론 머스크의 다른 회사, IPO가 예상되며 목표 자금은 100조원 근처입니다.\n2. 관심이 많아지고 있는 상황으로 여러 기업에서 SpaceX와 관련된 종목에 투자하는 경우가 있습니다.\n3. SpaceX의 가치는 옵션 가치, 미래 산업의 가치를 미리 받고 있으며, 매출이 아닌 달 탐색, 화성 기지, 우주 데이터 등을 선반영해서 평가받고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "SpaceX and OpenAI IPOs 'Imminent'... A Storm Approaches to Shake Up the South Korean Stock Market...",
+          "video_id": "UWLgnYtqrwM",
+          "views": 27468,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=UWLgnYtqrwM",
+          "subtitle_summary": "1. 글로벌 투자 시장에서 초대형 AI 우주 기업들이 미국 증시 상장을 예고되며, 새 기업 예상 시총은 5조 4천억 달러(8000조원)를 넘는다.\n2. 신규 상장사를 편입시키기 위해 패스트 엔트리 제도가 도입되어, 지수 추종 펀드들이 기존 빅테크 주식을 대거 매도하고 새 상장 기업을 사야 할 수 있는 상황이 생길 수 있다.\n3. 미국 대형 IPO로 인한 자금 이동 전략은 일부 영향을 미치고 있으며, 1990년대 다컴버블 시기보다 현재 상장 기업수는 적어서 시장이 이미 대비하고 있다는 분석이 나온다.",
+          "db_saved": true
+        }
+      ],
+      "max": 2.9058,
+      "min": 1.2886,
+      "nb_score": 2.255,
+      "avg_views": 16826.0,
+      "total_views": 33652
+    },
+    {
+      "keyword": "코스닥 ETF 투자",
+      "is_fixed": false,
+      "views": [
+        2052,
+        50318
+      ],
+      "video_count": 2,
+      "videos": [
+        {
+          "title": "[Editor's PICK] \"KOSDAQ explosion, is the real rally starting?\"… The #1 sector you must watch nex...",
+          "video_id": "aZNh58nU5bU",
+          "views": 2052,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=aZNh58nU5bU",
+          "subtitle_summary": "1. 코스닥의 흐름이 어제와 오늘이 다른지 논의되고 있습니다. 국민 성장 펀드가 핵심 트리거일 수 있는 것으로 보인다.\n2. 제약 바이오 분야가 강하지만, 음악 및 반도체와의 연계성과 국채 금리 내려가는 등 여러 요인에 따라 수급이 들어올 수 있는 환경이 조성되고 있다고 보고 있습니다.\n3. 코스닥 시가총액 상위 종목군들이 강한 모습을 보이며, 대형주에 입각한 흐름이 더 나올 수 있다는 의견이 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[#MarketUpdate] Foreign investors buy KOSDAQ for 6 consecutive days... Is the KOSDAQ bull market ...",
+          "video_id": "731u_AgPxfI",
+          "views": 50318,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=731u_AgPxfI",
+          "subtitle_summary": "1. 지난 5월 22일, 외국 투자자들이 6일 연속 KOSDAQ(코스닥)에 투자했습니다. 오늘도 코스닥 시장이 드라마틱하게 펼쳐졌습니다.\n2. 전반적인 증시 상황을 분석해보면, 지난 주초까지는 악재가 많았으나 이제는 호재로 둔갑되어 있습니다. 금리와 육가 환율이 올라가고 있으며, 2일 사이에 유가도 내리고 금리도 조정되었습니다.\n3. 특히, 엔비디아의 실적이 잘 나왔지만 시장에서는 더 뛰어난 결과를 보여줄 것인가에 대한 우려가 있습니다. 이전에도 같은 형태의 평가나 현상이 있었고, 실적 발표 후 조정이 오랜 기간 없었던 것을 보여주고 있습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 2.781,
+      "min": 2.4375,
+      "nb_score": 1.1409,
+      "avg_views": 26185.0,
+      "total_views": 52370
+    },
+    {
+      "keyword": "장병 복지사업 중단",
+      "is_fixed": false,
+      "views": [
+        3031,
+        20
+      ],
+      "video_count": 2,
+      "videos": [
+        {
+          "title": "공무원 노조까지…스타벅스 불매 공직사회 대확산｜법무부, 스벅 구매 '현황조사'·국방부는 협력사업 중단 [뉴스쏙] / 연합뉴스TV(YonhapnewsTV)",
+          "video_id": "JIs-19ep0ek",
+          "views": 3031,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=JIs-19ep0ek",
+          "subtitle_summary": "1. 스타벅스 코리아에서 이마트가 최대 주주가 되면서 미국 본사로부터 콜옵션(주식 매수 권한)이 재조명되고 있습니다.\n2. 스타벅스 코리아는 탱크데이 이벤트 논란으로 소비자 불매 움직임까지 겪었으며, 미국 본사도 나서 사과를 드렸습니다.\n3. 소비자 단체는 스타벅스에 대한 신뢰를 회복하기 위해 투명한 운영 방식을 개선하고, 선불식 충전 카드의 환불 규정을 개선해야 한다고 요구했습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[브레이킹 나우] 커지는 '탱크데이' 논란...국방부·행안부·법무부 등",
+          "video_id": "_bSH4NELIHw",
+          "views": 20,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=_bSH4NELIHw",
+          "subtitle_summary": "1. 탱크데이(Tank Day) 프로모션 논란이 확산되어 정부 및 검찰 조직에서 대응하고 있습니다.\n2. 국방부는 스타벅스와 함께 진행했던 장병 복지 증진 사업을 일시 중단하기로 결정했으며, 이는 순직 공상장병 자녀 장학금 지급 및 겨고지 부대음료 지원과 같은 목적 있는 장병 복지 사업으로 인해 이루어졌다고 설명했습니다.\n3. 정부 기관들은 최근 모바일 커피 교환권을 활용한 민주주의 행사나 공모전에서 스타벅스 상품을 제공하지 않겠다고 선언했으며, 법무부 검찰관도 대검찰청에서 올해 1월부터 현재까지 구매한 스타벅스 관련 상품 내역을 제출하라고 지시했습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 2.7595,
+      "min": 2.6488,
+      "nb_score": 1.0418,
+      "avg_views": 1525.5,
+      "total_views": 3051
+    },
+    {
+      "keyword": "서울시장 선거 여론",
+      "is_fixed": false,
+      "views": [
+        2769,
+        6866,
+        14484,
+        89470,
+        529
+      ],
+      "video_count": 5,
+      "videos": [
+        {
+          "title": "[Issue at a Glance] Opinion Poll Results for Key Battleground Districts in Local Elections / KBS ...",
+          "video_id": "lDlVXvIMA40",
+          "views": 2769,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=lDlVXvIMA40",
+          "subtitle_summary": "1. 서울시장 선거에서 정원호와 오후보가 주력으로 경쟁하고 있으며, 정원호의 지지율이 45%로 앞서고 있습니다.\n2. 부산시장 선거에서 전재수와 박형준이 주력으로 경쟁하고 있으며, 전재수의 지지율이 45%로 앞서고 있습니다.\n3. 대구시장 선거는 김부겸과 추경호가 주력으로 경쟁하고 있으며, 김부겸의 지지율이 40%로 앞서고 있습니다. 또한 경남지사 선거에서 김경수와 박관수가 주력으로 경쟁하고 있으며, 김경수의 지지율이 40%로 앞서고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "Seoul Mayoral Approval Ratings: Why Such Polarizing Polls? / Channel A / News TOP 10",
+          "video_id": "x4FDDLF8caw",
+          "views": 6866,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=x4FDDLF8caw",
+          "subtitle_summary": "1. Seoul mayoral election polls have shown polarizing results, making interpretation difficult as the difference between candidates Moon Jae-in and Oh Se-hoon is minimal (0.1%). However, a different poll released yesterday shows a larger gap of 11% in favor of Moon Jae-in.\n2. The discrepancy between polls is due to differences in polling methods and organizations, making it difficult for citizens to determine which poll accurately reflects public opinion.\n3. Despite the conflicting poll results, some argue that a consistent approach towards voters is more important than focusing on individual polls or their results, as the election approaches.",
+          "db_saved": true
+        },
+        {
+          "title": "12일 남은 6·3 지방선거...여론조사로 보는 지금 판세는? [세상만사] #지방선거 #선거 #여론조사",
+          "video_id": "B5Hx-6CI34I",
+          "views": 14484,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=B5Hx-6CI34I",
+          "subtitle_summary": "1. 6·3 지방선거가 2일 연속으로 중단되었습니다. 특히 재보궐 선거도 관심이 많습니다.\n2. 여론조사를 통해 정원호 후보와 오세훈 후보 간의 격차가 약 10%로 나타나고 있습니다.\n3. 이번 선거는 윤석열 전 대통령의 불법 개엄, 탄핵 등에 대한 평가를 받을 것으로 예상되며, 여러 지역에서 야당 후보들이 고전하는 추세를 보입니다. 중도층의 호응이 약간 오세운 시장 쪽으로 기울어져 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[이슈][KBS 여론조사] 6·3 지방선거 'D-13' 민심 향방은?…'주요 승부처' KBS 여론조사 대공개/2026년 5월 21일(목)/KBS",
+          "video_id": "YofJWtj9hRM",
+          "views": 89470,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=YofJWtj9hRM",
+          "subtitle_summary": "KBS는 6월 3일 지방선거 'D-13'에 대한 여론조사를 실시했습니다. 서울시장 후보 지지율에 대해 보도하였습니다. 정원호(더불어민주당)는 45%의 지지율을 기록했고, 나머지 후보들은 1% 이하로 조사됐습니다. 정후보와 오후보 간의 격차는 11% 포인트로 나타났으며, 적극 투표층에서도 두 후보 간의 차이가 줄어들었습니다. 또한, 20% 안파크로 나타난 무흥답비율은 투표율과 부동층의 움직임이 변수가 될 것으로 보입니다. 또한, KBS는 부산시장 선거와 교육감 선거에 대해 여론조사를 실시하였습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[6·3 지선] 정원오-오세훈 0.1%p 차 초접전 여론조사도…\"안전\" vs \"아기씨 굿당\" 공세 [MBN 뉴스7]",
+          "video_id": "_um4OkIoPl0",
+          "views": 529,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=_um4OkIoPl0",
+          "subtitle_summary": "1. 서울시장 선거의 후보 지지도에 대한 여론조사 결과가 나왔습니다. 정원호(민주당)와 오세훈(국민의 힘) 간격차는 0.1%로 매우 좁았지만, 이전 조사에서는 11%로 크게 차이가 있었습니다.\n2. 두 후보는 서로에 대한 공세를 계속했습니다. 정원호는 안전을 강조하고 GTX 삼성역 구실시공 논란을 부각시키며, 오세훈은 직접 삼성역에 가서 대책을 강구했습니다.\n3. 또한 정우보는 강북 재건축 단지를, 우후보는 한강벨트를 표심으로 선택했습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0.4335,
+      "min": 1.3273,
+      "nb_score": 0.3266,
+      "avg_views": 22823.6,
+      "total_views": 114118
+    },
+    {
+      "keyword": "삼성전자 성과급 논란",
+      "is_fixed": false,
+      "views": [
+        4513
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "[Samsung Electronics Bonus Controversy] \"Samsung Electronics paid -250 billion won in corporate t...",
+          "video_id": "YVnTbbhotgQ",
+          "views": 4513,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=YVnTbbhotgQ",
+          "subtitle_summary": "1. Samsung Electronics 은 -250억원의 성과급을 지불하였습니다. 이는 코스피 폭등의 직접적인 원인으로 볼 수 있습니다.\n2. Samsung Electronics 의 현재 모습은 내부 직원들만의 기여로 이루어진 것일까? 지난 몇 주 동안 국민이 관심을 가지고 보았습니다.\n3. Samsung Electronics 는 과거부터 반도체 부품을 국산화하기 위한 국가적 지원을 받았으며, 법인세를 낸 금액이 -250억원 이상이었습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "테슬라 모델 Y 출시",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "K바이오 기술수출",
+      "is_fixed": false,
+      "views": [
+        925
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "[카나프테라퓨틱스 주가전망] 🔥8% 150만주 보호예수 해제 마지막 저점 ASCO 2026 BIO USA ADC 항체 롯데바이오로직스 연구 성과 공개!",
+          "video_id": "BL1mjPu6Yhg",
+          "views": 925,
+          "upload_date": "2026-05-22",
+          "url": "https://www.youtube.com/watch?v=BL1mjPu6Yhg",
+          "subtitle_summary": "1. 5월 23일부터 까나프 테라틱스의 주가가 급등하여 최근 최저가 24,000원에서 5일선을 꺾었습니다.\n2. 보호예수로 인해 8%에 150만 주가 풀리기 위한 흐름이 있으며, 이는 6개월 물량이 남아 있습니다.\n3. 9월 16일까지 재료가 남아 있고, ADC 바이오 일정이 있어서 5월 26일에 매수 타점을 잡을 수 있습니다. 또한 6월 22일부터 6월 25일까지 벌어지는 표적 항암제 파트너링 행사에서 동화 ST G시, 녹자 국내 대기업들과 ADC 이주 강체 공동 개발 이력이 있는 까나프 테라틱스와 롯데 바이오가 주목을 받고 있습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "반도체 노사 협상",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "F-16 판매량 비교",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "환율 고공행진 전망",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "AI 거짓말 해결",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "한일 에너지 안보",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "웹툰 제주일상 화제",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "농가소득 증가율",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    }
+  ]
+}
