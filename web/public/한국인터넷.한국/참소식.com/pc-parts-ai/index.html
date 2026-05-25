@@ -1,0 +1,1228 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="AI가 컴퓨터 부품의 가격, 성능, 전력, 호환성을 분석해 조립 PC 자료를 정리하는 페이지">
+  <title>AI 컴퓨터 부품 분석 | 참소식.com</title>
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      color: #14213d;
+      background:
+        radial-gradient(circle at top left, rgba(37, 99, 235, 0.08), transparent 28rem),
+        #f4f7fb;
+      font-family: Arial, "Noto Sans KR", sans-serif;
+      line-height: 1.55;
+    }
+
+    a {
+      color: #1d4ed8;
+      font-weight: 900;
+      text-decoration: none;
+    }
+
+    .top-bar {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      color: #fff;
+      background: linear-gradient(110deg, #071326 0%, #0c1d46 58%, #0f3a8a 100%);
+      box-shadow: 0 12px 30px rgba(15, 23, 42, 0.18);
+    }
+
+    .top-inner {
+      width: min(1200px, calc(100% - 32px));
+      min-height: 74px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      min-width: 0;
+      font-size: 21px;
+      font-weight: 900;
+      letter-spacing: 0;
+    }
+
+    .brand-mark {
+      width: 42px;
+      height: 42px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 8px;
+      color: #dbeafe;
+      background: linear-gradient(145deg, #2563eb, #7c3aed);
+      font-size: 18px;
+      box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.24);
+    }
+
+    .top-status {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 8px;
+      color: #dbeafe;
+      font-size: 13px;
+      font-weight: 800;
+      text-align: right;
+    }
+
+    .page {
+      width: min(1200px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 22px 0 42px;
+    }
+
+    .hero {
+      min-height: 246px;
+      display: grid;
+      grid-template-columns: 180px minmax(0, 1fr) 320px;
+      align-items: center;
+      gap: 34px;
+      padding: 34px 38px;
+      border: 1px solid rgba(203, 213, 225, 0.9);
+      border-radius: 8px;
+      background: #fff;
+      box-shadow: 0 22px 58px rgba(15, 23, 42, 0.09);
+    }
+
+    .hero-chip {
+      width: 176px;
+      height: 176px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 8px;
+      background: linear-gradient(145deg, #2563eb, #8b5cf6);
+      box-shadow: 0 20px 36px rgba(37, 99, 235, 0.26);
+    }
+
+    .chip-core {
+      width: 108px;
+      height: 108px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 5px solid rgba(219, 234, 254, 0.82);
+      border-radius: 8px;
+      color: #dbeafe;
+      font-size: 36px;
+      font-weight: 900;
+      position: relative;
+    }
+
+    .chip-core::before,
+    .chip-core::after {
+      content: "";
+      position: absolute;
+      inset: -20px 18px;
+      border-top: 5px solid rgba(219, 234, 254, 0.64);
+      border-bottom: 5px solid rgba(219, 234, 254, 0.64);
+    }
+
+    .chip-core::after {
+      inset: 18px -20px;
+      border: 0;
+      border-left: 5px solid rgba(219, 234, 254, 0.64);
+      border-right: 5px solid rgba(219, 234, 254, 0.64);
+    }
+
+    .hero-copy h1 {
+      margin: 0;
+      color: #071326;
+      font-size: 42px;
+      line-height: 1.18;
+      letter-spacing: 0;
+    }
+
+    .hero-copy p {
+      max-width: 620px;
+      margin: 16px 0 0;
+      color: #52627a;
+      font-size: 16px;
+      font-weight: 700;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 38px;
+      padding: 9px 13px;
+      border: 1px solid #cbd5e1;
+      border-radius: 8px;
+      background: #fff;
+      color: #1e293b;
+      font-size: 13px;
+      font-weight: 900;
+    }
+
+    .button.primary {
+      border-color: #2563eb;
+      background: #2563eb;
+      color: #fff;
+    }
+
+    .updated-line {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 20px;
+      color: #64748b;
+      font-size: 14px;
+      font-weight: 800;
+    }
+
+    .hero-visual {
+      height: 176px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .monitor {
+      width: 188px;
+      height: 122px;
+      padding: 18px;
+      border: 4px solid #c7d2fe;
+      border-radius: 8px;
+      background: #eef4ff;
+      box-shadow: 0 18px 28px rgba(37, 99, 235, 0.12);
+    }
+
+    .chart-line {
+      height: 48px;
+      border-bottom: 4px solid #93c5fd;
+      background: linear-gradient(135deg, transparent 10%, transparent 24%, #3b82f6 25%, #3b82f6 28%, transparent 29%);
+    }
+
+    .chart-bars {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      align-items: end;
+      gap: 8px;
+      height: 42px;
+      margin-top: 8px;
+    }
+
+    .chart-bars span {
+      border-radius: 3px 3px 0 0;
+      background: #bfdbfe;
+    }
+
+    .float-token {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      color: #2563eb;
+      background: #eef2ff;
+      font-weight: 900;
+      box-shadow: 0 12px 26px rgba(37, 99, 235, 0.12);
+    }
+
+    .float-token.one { width: 54px; height: 54px; right: 8px; top: 2px; }
+    .float-token.two { width: 42px; height: 42px; left: 16px; top: 72px; }
+    .float-token.three { width: 48px; height: 48px; left: 82px; bottom: 8px; }
+
+    .status-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 18px;
+      margin: 18px 0;
+    }
+
+    .status-card,
+    .section-card,
+    .build-card,
+    .method-list li,
+    .links {
+      border: 1px solid rgba(203, 213, 225, 0.92);
+      border-radius: 8px;
+      background: #fff;
+      box-shadow: 0 18px 42px rgba(15, 23, 42, 0.07);
+    }
+
+    .status-card {
+      min-height: 138px;
+      display: grid;
+      grid-template-columns: 64px minmax(0, 1fr);
+      align-items: center;
+      gap: 18px;
+      padding: 22px;
+    }
+
+    .status-icon {
+      width: 60px;
+      height: 60px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      color: #fff;
+      background: linear-gradient(145deg, #2563eb, #38bdf8);
+      font-size: 26px;
+      font-weight: 900;
+    }
+
+    .status-card:nth-child(2) .status-icon { background: linear-gradient(145deg, #10b981, #d1fae5); }
+    .status-card:nth-child(3) .status-icon { background: linear-gradient(145deg, #8b5cf6, #ddd6fe); }
+    .status-card:nth-child(4) .status-icon { background: linear-gradient(145deg, #22c55e, #bbf7d0); }
+
+    .status-card strong {
+      display: block;
+      color: #071326;
+      font-size: 34px;
+      line-height: 1.1;
+      font-weight: 900;
+    }
+
+    .status-card span,
+    .status-card small {
+      display: block;
+      color: #64748b;
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    .section-card {
+      margin-top: 18px;
+      padding: 28px;
+    }
+
+    .section-title {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 18px;
+    }
+
+    .section-title h2 {
+      margin: 0;
+      color: #071326;
+      font-size: 26px;
+      line-height: 1.2;
+    }
+
+    .section-title p {
+      margin: 8px 0 0;
+      color: #64748b;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .controls {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 4px 0 18px;
+    }
+
+    .filter-panel {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+      margin: 18px 0;
+      padding: 18px;
+      border: 1px solid #cbd5e1;
+      border-radius: 8px;
+      background: #fff;
+      box-shadow: 0 18px 42px rgba(15, 23, 42, 0.06);
+    }
+
+    .filter-group strong {
+      display: block;
+      margin-bottom: 10px;
+      color: #0f172a;
+      font-size: 14px;
+    }
+
+    .filter-button {
+      min-height: 36px;
+      padding: 0 16px;
+      border: 1px solid rgba(203, 213, 225, 0.92);
+      border-radius: 8px;
+      color: #334155;
+      background: #f8fafc;
+      font-weight: 900;
+      cursor: pointer;
+    }
+
+    .filter-button.is-active {
+      color: #fff;
+      border-color: #2563eb;
+      background: #2563eb;
+      box-shadow: 0 10px 20px rgba(37, 99, 235, 0.2);
+    }
+
+    .table-wrap {
+      overflow-x: auto;
+      border: 1px solid rgba(203, 213, 225, 0.92);
+      border-radius: 8px;
+    }
+
+    table {
+      width: 100%;
+      min-width: 1080px;
+      border-collapse: collapse;
+      background: #fff;
+    }
+
+    th,
+    td {
+      padding: 14px 16px;
+      border-bottom: 1px solid #e5e7eb;
+      text-align: left;
+      vertical-align: top;
+      font-size: 14px;
+    }
+
+    th {
+      color: #334155;
+      background: linear-gradient(#f8fafc, #f1f5f9);
+      font-size: 13px;
+      font-weight: 900;
+      white-space: nowrap;
+    }
+
+    td {
+      color: #26364f;
+    }
+
+    .category-cell {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: #334155;
+      font-weight: 900;
+    }
+
+    .category-icon {
+      width: 22px;
+      height: 22px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #cbd5e1;
+      border-radius: 5px;
+      color: #1d4ed8;
+      background: #f8fafc;
+      font-size: 11px;
+      font-weight: 900;
+    }
+
+    .part-cell {
+      display: grid;
+      grid-template-columns: 54px minmax(0, 1fr);
+      align-items: center;
+      gap: 12px;
+    }
+
+    .part-thumb {
+      width: 54px;
+      aspect-ratio: 1;
+      border: 1px solid #cbd5e1;
+      border-radius: 8px;
+      object-fit: cover;
+      background: #f8fafc;
+    }
+
+    .part-name {
+      color: #071326;
+      font-weight: 900;
+      line-height: 1.35;
+    }
+
+    .part-meta {
+      color: #64748b;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .tag-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .tag {
+      padding: 4px 8px;
+      border-radius: 999px;
+      color: #1d4ed8;
+      background: #dbeafe;
+      font-size: 12px;
+      font-weight: 900;
+      white-space: nowrap;
+    }
+
+    .tag:nth-child(2n) { color: #6d28d9; background: #ede9fe; }
+    .tag:nth-child(3n) { color: #047857; background: #d1fae5; }
+
+    .notice {
+      margin-top: 18px;
+      padding: 15px 16px;
+      border: 1px solid #fed7aa;
+      border-radius: 8px;
+      color: #9a3412;
+      background: #fff7ed;
+      font-weight: 900;
+    }
+
+    .build-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 22px;
+    }
+
+    .level-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .level-card {
+      padding: 20px;
+      border: 1px solid #cbd5e1;
+      border-radius: 8px;
+      background: #f8fafc;
+    }
+
+    .level-card:nth-child(1) { border-color: #93c5fd; background: #eff6ff; }
+    .level-card:nth-child(2) { border-color: #c4b5fd; background: #f5f3ff; }
+    .level-card:nth-child(3) { border-color: #86efac; background: #ecfdf5; }
+
+    .level-card h3 {
+      margin: 0;
+      color: #0f172a;
+      font-size: 20px;
+    }
+
+    .level-card p {
+      margin: 8px 0 0;
+      color: #52627a;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .level-count {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 42px;
+      height: 32px;
+      margin-top: 12px;
+      border-radius: 999px;
+      color: #fff;
+      background: #2563eb;
+      font-weight: 900;
+    }
+
+    .level-card:nth-child(2) .level-count { background: #7c3aed; }
+    .level-card:nth-child(3) .level-count { background: #16a34a; }
+
+    .level-card ul {
+      margin: 14px 0 0;
+      padding-left: 18px;
+      color: #334155;
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    .build-card {
+      padding: 22px;
+      box-shadow: none;
+    }
+
+    .build-card:nth-child(1) { border-color: #93c5fd; }
+    .build-card:nth-child(2) { border-color: #c4b5fd; }
+    .build-card:nth-child(3) { border-color: #86efac; }
+
+    .build-head {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 8px;
+    }
+
+    .build-icon {
+      width: 48px;
+      height: 48px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      color: #fff;
+      background: linear-gradient(145deg, #2563eb, #38bdf8);
+      font-weight: 900;
+    }
+
+    .build-card:nth-child(2) .build-icon { background: linear-gradient(145deg, #7c3aed, #c4b5fd); }
+    .build-card:nth-child(3) .build-icon { background: linear-gradient(145deg, #16a34a, #86efac); }
+
+    .build-card h3 {
+      margin: 0;
+      color: #0f172a;
+      font-size: 20px;
+      line-height: 1.25;
+    }
+
+    .current-badge {
+      display: inline-flex;
+      align-items: center;
+      width: fit-content;
+      margin-bottom: 8px;
+      padding: 5px 9px;
+      border-radius: 999px;
+      background: #dcfce7;
+      color: #166534;
+      font-size: 12px;
+      font-weight: 900;
+    }
+
+    .build-card p {
+      margin: 8px 0 0;
+      color: #52627a;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .build-search-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: fit-content;
+      margin-top: 14px;
+      padding: 10px 14px;
+      border-radius: 8px;
+      background: #2563eb;
+      color: #fff;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 900;
+    }
+
+    .build-search-link:hover {
+      background: #1d4ed8;
+      color: #fff;
+    }
+
+    .build-meta {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+      margin: 18px 0;
+    }
+
+    .build-meta span {
+      padding: 12px 10px;
+      border-radius: 8px;
+      color: #1d4ed8;
+      background: #eff6ff;
+      text-align: center;
+      font-size: 14px;
+      font-weight: 900;
+    }
+
+    .build-card:nth-child(2) .build-meta span { color: #6d28d9; background: #f3e8ff; }
+    .build-card:nth-child(3) .build-meta span { color: #047857; background: #ecfdf5; }
+
+    .nb-weight {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px;
+      margin: 12px 0;
+      padding: 12px;
+      border: 1px solid #cbd5e1;
+      border-radius: 8px;
+      background: #f8fafc;
+    }
+
+    .nb-weight span {
+      color: #334155;
+      font-size: 13px;
+      font-weight: 900;
+    }
+
+    .nb-weight strong {
+      display: block;
+      color: #0f172a;
+      font-size: 18px;
+    }
+
+    .build-card ul {
+      margin: 12px 0 0;
+      padding-left: 18px;
+      color: #334155;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .build-card li {
+      margin-bottom: 8px;
+    }
+
+    .part-detail {
+      display: block;
+      color: #64748b;
+      font-size: 12px;
+      line-height: 1.45;
+    }
+
+    .method-list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .method-list li {
+      display: grid;
+      grid-template-columns: 44px minmax(0, 1fr);
+      align-items: center;
+      gap: 14px;
+      min-height: 72px;
+      padding: 16px;
+      box-shadow: none;
+    }
+
+    .method-icon {
+      width: 40px;
+      height: 40px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 8px;
+      color: #1d4ed8;
+      background: #eff6ff;
+      font-weight: 900;
+    }
+
+    .method-list strong {
+      display: block;
+      margin-bottom: 4px;
+      color: #0f172a;
+      font-size: 15px;
+    }
+
+    .method-list span {
+      color: #52627a;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .links {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 0;
+      margin-top: 28px;
+      overflow: hidden;
+    }
+
+    .links a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 70px;
+      border-right: 1px solid #cbd5e1;
+      color: #1d4ed8;
+      font-size: 15px;
+    }
+
+    .links a:last-child { border-right: 0; }
+
+    @media (max-width: 980px) {
+      .hero {
+        grid-template-columns: 150px minmax(0, 1fr);
+      }
+
+      .hero-visual { display: none; }
+
+      .status-grid,
+      .build-grid,
+      .level-grid,
+      .filter-panel,
+      .method-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 680px) {
+      .top-inner {
+        min-height: 66px;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px 0;
+      }
+
+      .brand { font-size: 17px; }
+      .top-status { text-align: left; }
+
+      .page {
+        width: min(100% - 18px, 1200px);
+        padding-top: 14px;
+      }
+
+      .hero {
+        grid-template-columns: 1fr;
+        gap: 18px;
+        padding: 22px;
+      }
+
+      .hero-chip {
+        width: 124px;
+        height: 124px;
+      }
+
+      .chip-core {
+        width: 78px;
+        height: 78px;
+        font-size: 26px;
+      }
+
+      .hero-copy h1 { font-size: 29px; }
+
+      .status-grid,
+      .build-grid,
+      .level-grid,
+      .filter-panel,
+      .method-list,
+      .links {
+        grid-template-columns: 1fr;
+      }
+
+      .section-card { padding: 20px; }
+      .section-title { align-items: flex-start; flex-direction: column; }
+      .links a { border-right: 0; border-bottom: 1px solid #cbd5e1; }
+      .links a:last-child { border-bottom: 0; }
+    }
+  </style>
+</head>
+<body>
+  <header class="top-bar">
+    <div class="top-inner">
+      <div class="brand">
+        <span class="brand-mark">AI</span>
+        <span>참소식.com · AI 컴퓨터 부품 분석 자료</span>
+      </div>
+      <div class="top-status">
+        <span>데이터 업데이트</span>
+        <span id="top-updated">확인 중</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="hero">
+      <div class="hero-chip" aria-hidden="true">
+        <div class="chip-core">AI</div>
+      </div>
+      <div class="hero-copy">
+        <h1>AI 컴퓨터 부품 가격·성능 분석</h1>
+        <p>AI가 Chrome 검색으로 부품 후보를 수집하고, 조립 가능한 조합을 반복 탐색해 N/B MAX 값이 높은 완성 PC를 계산합니다.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="../">참소식 메인</a>
+          <a class="button" href="./parts.html">부품 분석표</a>
+        </div>
+        <div class="updated-line" id="updated">갱신 시각 확인 중</div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <span class="float-token one">P</span>
+        <span class="float-token two">AI</span>
+        <span class="float-token three">C</span>
+        <div class="monitor">
+          <div class="chart-line"></div>
+          <div class="chart-bars">
+            <span style="height: 42%"></span>
+            <span style="height: 62%"></span>
+            <span style="height: 52%"></span>
+            <span style="height: 78%"></span>
+            <span style="height: 90%"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="status-grid" aria-label="분석 요약">
+      <article class="status-card">
+        <span class="status-icon">B</span>
+        <div>
+          <strong id="build-count">-</strong>
+          <span>완성 조립</span>
+        </div>
+      </article>
+      <article class="status-card">
+        <span class="status-icon">S</span>
+        <div>
+          <strong id="current-nb">-</strong>
+          <span>현재 N/B MAX</span>
+        </div>
+      </article>
+      <article class="status-card">
+        <span class="status-icon">V</span>
+        <div>
+          <small>현재 조립 상태</small>
+          <strong id="best-value">-</strong>
+        </div>
+      </article>
+      <article class="status-card">
+        <span class="status-icon">AI</span>
+        <div>
+          <small>조립 운영 방식</small>
+          <strong id="best-ai">-</strong>
+        </div>
+      </article>
+    </section>
+
+    <section class="filter-panel" aria-label="조립 N/B 값 필터">
+      <div class="filter-group">
+        <strong>조립 N/B 값</strong>
+        <div class="controls" id="nb-filters"></div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <div class="section-title">
+        <div>
+          <h2>AI 완성 컴퓨터 조립 결과</h2>
+          <p id="optimization-summary">수집된 부품으로 완성된 컴퓨터 조합을 만들고 N/B MAX 값을 우선해 정렬합니다.</p>
+        </div>
+      </div>
+      <div class="build-grid" id="builds"></div>
+    </section>
+
+    <section class="section-card">
+      <div class="section-title">
+        <div>
+          <h2>자료 생성 방식</h2>
+          <p>다음 단계에서 실제 가격 검색과 벤치마크 수집을 연결할 수 있습니다.</p>
+        </div>
+      </div>
+      <ul class="method-list" id="method-list"></ul>
+    </section>
+
+    <nav class="links" aria-label="자료 링크">
+      <a href="../">메인으로 돌아가기</a>
+      <a href="./parts.html">부품 분석표 보기</a>
+      <a id="json-link" href="./pc-parts-data.json">JSON 자료 보기</a>
+      <a id="script-link" href="./pc_parts_research_bot.js">자료 생성 방식 보기</a>
+    </nav>
+  </main>
+
+  <script>
+    const state = {
+      data: null,
+      activeCategory: "전체",
+      activePriceBand: "전체",
+      activeNbBand: "전체"
+    };
+    const assetVersion = Date.now();
+    document.getElementById("json-link").href = `./pc-parts-data.json?v=${assetVersion}`;
+    document.getElementById("script-link").href = `./pc_parts_research_bot.js?v=${assetVersion}`;
+
+    function formatKrw(value) {
+      if (!Number.isFinite(Number(value))) return "-";
+      return `${Number(value).toLocaleString("ko-KR")}원`;
+    }
+
+    function escapeHtml(value) {
+      return String(value ?? "")
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;")
+        .replaceAll("'", "&#039;");
+    }
+
+    function categoryIcon(category) {
+      return {
+        CPU: "C",
+        GPU: "G",
+        RAM: "R",
+        SSD: "S",
+        Mainboard: "M",
+        PSU: "P"
+      }[category] || "P";
+    }
+
+    function methodIcon(key) {
+      return {
+        performance: "P",
+        valueIndex: "V",
+        compatibility: "C",
+        nextStep: "N"
+      }[key] || "A";
+    }
+
+    function buildGoogleSearchUrl(build) {
+      return `https://www.google.com/search?q=${encodeURIComponent(buildSearchText(build))}`;
+    }
+
+    function buildSearchText(build) {
+      const partsText = (build.parts || []).map((part) => [
+        part.category,
+        part.name,
+        part.maker ? `제조사 ${part.maker}` : "",
+        part.platform ? `플랫폼 ${part.platform}` : "",
+        part.priceKrw ? `가격 ${formatKrw(part.priceKrw)}` : "",
+        part.speedLabel ? `속도 ${part.speedLabel}` : "",
+        part.unifiedSpeedScore ? `통합속도 ${part.unifiedSpeedScore}점` : "",
+        part.performance ? `성능 ${part.performance}점` : "",
+        part.valueIndex ? `가성비 ${part.valueIndex}점` : "",
+        part.powerWatts ? `전력 ${part.powerWatts}W` : ""
+      ].filter(Boolean).join(" ")).join(" / ");
+      return [
+        build.title,
+        build.purpose,
+        `총액 ${formatKrw(build.totalPriceKrw)}`,
+        `N/B MAX ${build.nbWeight?.bitMax ?? "-"}`,
+        `조합 가중치 ${build.nbWeight?.weightedScore ?? "-"}점`,
+        `가격 성능 지표 ${build.pricePerformanceIndex ?? "-"}`,
+        partsText,
+        "조립 PC",
+        "가격 성능 호환성 추천"
+      ].join(" ");
+    }
+
+    function shortText(value, maxLength = 110) {
+      const text = String(value || "").replace(/\s+/g, " ").trim();
+      return text.length > maxLength ? `${text.slice(0, maxLength)}...` : text;
+    }
+
+    function renderPartDetail(part) {
+      const details = [
+        part.maker ? `제조사 ${part.maker}` : "",
+        part.platform ? `플랫폼 ${part.platform}` : "",
+        part.speedLabel ? `속도 ${part.speedLabel}` : "",
+        part.unifiedSpeedScore ? `통합속도 ${part.unifiedSpeedScore}점` : "",
+        part.performance ? `성능 ${part.performance}점` : "",
+        part.valueIndex ? `가성비 ${part.valueIndex}점` : "",
+        part.aiUseScore ? `AI적합 ${part.aiUseScore}점` : "",
+        part.powerWatts ? `전력 ${part.powerWatts}W` : "",
+        part.tags?.length ? `용도 ${part.tags.join(", ")}` : ""
+      ].filter(Boolean).join(" · ");
+      return `<li><strong>${escapeHtml(part.category)} · ${escapeHtml(part.name)}</strong> · ${formatKrw(part.priceKrw)}<span class="part-detail">${escapeHtml(details)}</span></li>`;
+    }
+
+    function renderSummary(data) {
+      const currentBuild = data.builds.find((build) => build.currentAssembly) || data.builds[0];
+      document.getElementById("build-count").textContent = data.builds.length;
+      document.getElementById("current-nb").textContent = currentBuild?.nbWeight?.bitMax ?? "-";
+      document.getElementById("best-value").textContent = currentBuild ? currentBuild.title : "-";
+      document.getElementById("best-ai").textContent = data.assemblyState ? "계속 조립 상태" : "계산 준비";
+      document.getElementById("updated").textContent = `갱신 시각: ${data.updatedAt || "확인 필요"}`;
+      document.getElementById("top-updated").textContent = data.updatedAt || "확인 필요";
+      const notice = document.getElementById("notice");
+      if (notice) notice.textContent = data.notice || "";
+      const optimization = data.optimization;
+      const optimizationSummary = document.getElementById("optimization-summary");
+      if (optimization && optimizationSummary) {
+        const remainingText = Number.isFinite(optimization.remainingCombinations)
+          ? ` 남은 미검토 조립은 ${optimization.remainingCombinations}개입니다.`
+          : "";
+        const skippedText = Number.isFinite(optimization.skippedAlreadyChecked)
+          ? ` 이미 검토한 ${optimization.skippedAlreadyChecked}개 조립은 중복 계산에서 제외했습니다.`
+          : "";
+        optimizationSummary.textContent = `${optimization.testedCombinations}개 조합 중 ${optimization.validCombinations}개 호환 조합을 계산하고, ${optimization.selectedBuilds}개를 N/B MAX 기준으로 선택했습니다.${skippedText}${remainingText}`;
+      }
+    }
+
+    function renderFilters(data) {
+      const nbFilters = document.getElementById("nb-filters");
+      const nbBands = ["전체", "850~1000", "700~849", "500~699", "100~499"];
+      nbFilters.innerHTML = nbBands.map((band) => `
+        <button class="filter-button ${band === state.activeNbBand ? "is-active" : ""}" data-nb-band="${escapeHtml(band)}">
+          ${escapeHtml(band)}
+        </button>
+      `).join("");
+      nbFilters.querySelectorAll("button").forEach((button) => {
+        button.addEventListener("click", () => {
+          state.activeNbBand = button.dataset.nbBand;
+          render();
+        });
+      });
+    }
+
+    function renderParts(data) {
+      const table = document.getElementById("parts-table");
+      const parts = data.parts.filter((part) => {
+        const categoryOk = state.activeCategory === "전체" || part.category === state.activeCategory;
+        const priceOk = state.activePriceBand === "전체" || part.priceBand === state.activePriceBand;
+        return categoryOk && priceOk;
+      });
+
+      if (!parts.length) {
+        table.innerHTML = '<tr><td colspan="8">표시할 부품이 없습니다.</td></tr>';
+        return;
+      }
+
+      table.innerHTML = parts.map((part) => `
+        <tr>
+          <td>
+            <div class="category-cell">
+              <span class="category-icon">${escapeHtml(categoryIcon(part.category))}</span>
+              ${escapeHtml(part.category)}
+            </div>
+          </td>
+          <td>
+            <div class="part-cell">
+              <img class="part-thumb" src="${escapeHtml(part.imageUrl || "./img/cpu.svg")}" alt="${escapeHtml(part.category)} 이미지" loading="lazy">
+              <div>
+                <div class="part-name">${escapeHtml(part.name)}</div>
+                <div class="part-meta">${escapeHtml(part.maker)} · ${escapeHtml(part.platform)}</div>
+              </div>
+            </div>
+          </td>
+          <td>${formatKrw(part.estimatedPriceKrw)}</td>
+          <td>${escapeHtml(part.speedLabel || "-")}</td>
+          <td>
+            <div><strong>${escapeHtml(part.speedMetric?.label || "-")}</strong></div>
+            <div class="part-meta">${escapeHtml(part.speedMetric?.value ?? "-")} ${escapeHtml(part.speedMetric?.unit || "")}</div>
+            <div class="part-meta">${escapeHtml(part.speedMetric?.compareNote || "")}</div>
+          </td>
+          <td>${escapeHtml(part.unifiedSpeedScore || "-")}점</td>
+          <td>${escapeHtml(part.performance)}</td>
+          <td>${escapeHtml(part.valueIndex)}</td>
+          <td>${part.powerWatts ? `${escapeHtml(part.powerWatts)}W` : "-"}</td>
+          <td>${escapeHtml(part.aiExplanation?.userLevel?.level || "-")}</td>
+          <td>
+            <div class="tag-list">
+              ${(part.tags || []).map((tag) => `<span class="tag">${escapeHtml(tag)}</span>`).join("")}
+            </div>
+          </td>
+          <td>${escapeHtml(part.notes)}</td>
+        </tr>
+      `).join("");
+    }
+
+    function renderBuilds(data) {
+      const builds = document.getElementById("builds");
+      const filteredBuilds = data.builds.filter((build) => {
+        return state.activeNbBand === "전체" || build.nbWeight?.nbBand === state.activeNbBand;
+      });
+      if (!filteredBuilds.length) {
+        builds.innerHTML = "<p>선택한 N/B 값 구간에 해당하는 조립 후보가 없습니다.</p>";
+        return;
+      }
+
+      builds.innerHTML = filteredBuilds.map((build, index) => `
+        <article class="build-card">
+          <div class="build-head">
+            <span class="build-icon">${["B", "AI", "G"][index] || "P"}</span>
+            <div>
+              ${build.currentAssembly ? '<span class="current-badge">현재 유지 중인 조립</span>' : ""}
+              <h3>${escapeHtml(build.title)}</h3>
+              <p>${escapeHtml(build.purpose)}</p>
+              <p><strong>목표:</strong> ${escapeHtml(build.optimizationTarget || "N/B MAX")}</p>
+            </div>
+          </div>
+          <div class="build-meta">
+            <span>총액<br>${formatKrw(build.totalPriceKrw)}</span>
+            <span>점수<br>${escapeHtml(build.score)}점</span>
+            <span>예상 부하<br>${escapeHtml(build.estimatedLoadWatts)}W</span>
+            <span>파워 여유<br>${build.recommendedPsuHeadroomWatts ?? "-"}W</span>
+          </div>
+          ${build.nbWeight ? `
+            <div class="nb-weight">
+              <span>조합 가중치<strong>${escapeHtml(build.nbWeight.weightedScore)}점</strong></span>
+              <span>균형 점수<strong>${escapeHtml(build.nbWeight.balanceScore)}점</strong></span>
+              <span>N/B MAX<strong>${escapeHtml(build.nbWeight.bitMax)}</strong></span>
+              <span>N/B MIN<strong>${escapeHtml(build.nbWeight.bitMin)}</strong></span>
+              <span>N/B 구간<strong>${escapeHtml(build.nbWeight.nbBand)}</strong></span>
+            </div>
+            ${Number.isFinite(build.pricePerformanceIndex) ? `<p><strong>가격/성능 지표:</strong> ${escapeHtml(build.pricePerformanceIndex)} · 평균 성능 ${escapeHtml(build.avgPerformance || "-")}점</p>` : ""}
+            <p><strong>N/B 분석:</strong> ${escapeHtml(build.nbWeight.summary)}</p>
+          ` : ""}
+          ${build.aiExplanation ? `<p><strong>AI 요약:</strong> ${escapeHtml(shortText(build.aiExplanation.summary))}</p>` : ""}
+          ${build.aiExplanation?.verdict ? `<p><strong>판정:</strong> ${escapeHtml(build.aiExplanation.verdict)}</p>` : ""}
+          <ul>
+            ${build.parts.map(renderPartDetail).join("")}
+          </ul>
+          <a class="build-search-link" href="${buildGoogleSearchUrl(build)}" title="${escapeHtml(buildSearchText(build))}" target="_blank" rel="noopener noreferrer">전체 조립 상세 텍스트로 구글 검색</a>
+          ${build.warnings.length ? `<p><strong>주의:</strong> ${escapeHtml(build.warnings.join(" "))}</p>` : ""}
+        </article>
+      `).join("");
+    }
+
+    function renderLevelAnalysis(data) {
+      const root = document.getElementById("level-analysis");
+      const groups = data.levelAnalysis || [];
+      if (!groups.length) {
+        root.innerHTML = "<p>사용자 수준별 분석 자료가 없습니다.</p>";
+        return;
+      }
+
+      root.innerHTML = groups.map((group) => `
+        <article class="level-card">
+          <h3>${escapeHtml(group.level)}</h3>
+          <p>${escapeHtml(group.summary)}</p>
+          <span class="level-count">${escapeHtml(group.count)}개</span>
+          <ul>
+            ${(group.recommendedParts || []).map((part) => `
+              <li>${escapeHtml(part.category)} · ${escapeHtml(part.name)} · ${escapeHtml(part.speedLabel || "-")}</li>
+            `).join("")}
+          </ul>
+        </article>
+      `).join("");
+    }
+
+    function renderMethod(data) {
+      const method = data.method || {};
+      document.getElementById("method-list").innerHTML = Object.entries(method).map(([key, value]) => `
+        <li>
+          <span class="method-icon">${escapeHtml(methodIcon(key))}</span>
+          <div>
+            <strong>${escapeHtml(key)}</strong>
+            <span>${escapeHtml(value)}</span>
+          </div>
+        </li>
+      `).join("");
+    }
+
+    function render() {
+      if (!state.data) return;
+      renderSummary(state.data);
+      renderFilters(state.data);
+      renderBuilds(state.data);
+      renderMethod(state.data);
+    }
+
+    fetch(`./pc-parts-data.json?v=${assetVersion}`, { cache: "no-store" })
+      .then((response) => {
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        return response.json();
+      })
+      .then((data) => {
+        state.data = data;
+        render();
+      })
+      .catch((error) => {
+        document.getElementById("updated").textContent = "자료를 불러오지 못했습니다.";
+        document.getElementById("builds").innerHTML = `<p>${escapeHtml(error.message)}</p>`;
+      });
+  </script>
+</body>
+</html>

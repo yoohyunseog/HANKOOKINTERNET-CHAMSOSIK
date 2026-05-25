@@ -1,0 +1,85 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-05-25T11:18:47.651+09:00",
+  "category": "CPU",
+  "id": "cpu-ryzen-7-9700x",
+  "name": "AMD Ryzen 7 9700X",
+  "maker": "AMD",
+  "platform": "AM5",
+  "estimatedPriceKrw": 362980,
+  "priceBand": "30~60만원",
+  "speedLabel": "최대 부스트 약 5.5GHz",
+  "speedMetric": {
+    "kind": "cpu_boost_clock",
+    "label": "CPU 최대 부스트 클럭",
+    "value": 5.5,
+    "unit": "GHz",
+    "group": "CPU",
+    "compareNote": "CPU끼리는 GHz와 코어 수, 캐시, 세대 차이를 함께 봐야 합니다."
+  },
+  "unifiedSpeedScore": 917,
+  "performance": 88,
+  "valueIndex": 24.2,
+  "aiUseScore": 57,
+  "powerWatts": 65,
+  "tags": [
+    "gaming",
+    "creator",
+    "quiet"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "CPU",
+    "partId": "cpu-ryzen-7-9700x",
+    "partName": "AMD Ryzen 7 9700X",
+    "speed": {
+      "score": 917,
+      "weight": 0.42,
+      "metric": {
+        "kind": "cpu_boost_clock",
+        "label": "CPU 최대 부스트 클럭",
+        "value": 5.5,
+        "unit": "GHz",
+        "group": "CPU",
+        "compareNote": "CPU끼리는 GHz와 코어 수, 캐시, 세대 차이를 함께 봐야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 917,
+      "performance": 880,
+      "value": 323,
+      "aiFit": 570,
+      "priceEfficiency": 280,
+      "powerEfficiency": 451
+    },
+    "nbVector": [
+      917,
+      880,
+      323,
+      570,
+      280,
+      451
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 234.616,
+    "nbMin": 514,
+    "weightedScore": 713,
+    "nbBand": "700~849",
+    "summary": "CPU AMD Ryzen 7 9700X 부품을 속도 중심 N/B 데이터베이스 점수 713점으로 저장했습니다."
+  },
+  "nbWeightedScore": 713,
+  "nbMax": 234.616,
+  "nbMin": 514,
+  "nbBand": "700~849",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=AMD%20Ryzen%207%209700X%20%EA%B0%80%EA%B2%A9",
+  "notes": "Chrome 검색 수집 기준으로 가격을 확인하는 고효율 작업용 CPU 후보입니다."
+}

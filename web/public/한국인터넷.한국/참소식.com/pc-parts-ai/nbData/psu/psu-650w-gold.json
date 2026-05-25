@@ -1,0 +1,85 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-05-25T11:18:47.651+09:00",
+  "category": "PSU",
+  "id": "psu-650w-gold",
+  "name": "650W 80PLUS Gold PSU",
+  "maker": "Common",
+  "platform": "ATX",
+  "estimatedPriceKrw": 68000,
+  "priceBand": "15만원 미만",
+  "speedLabel": "650W 출력",
+  "speedMetric": {
+    "kind": "power_output",
+    "label": "정격 출력",
+    "value": 650,
+    "unit": "W",
+    "group": "PSU",
+    "compareNote": "파워는 속도가 아니라 정격 출력, 효율, 보호 회로, 품질을 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 650,
+  "performance": 74,
+  "valueIndex": 74,
+  "aiUseScore": 48,
+  "powerWatts": null,
+  "tags": [
+    "office",
+    "gaming",
+    "value"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "PSU",
+    "partId": "psu-650w-gold",
+    "partName": "650W 80PLUS Gold PSU",
+    "speed": {
+      "score": 650,
+      "weight": 0.32,
+      "metric": {
+        "kind": "power_output",
+        "label": "정격 출력",
+        "value": 650,
+        "unit": "W",
+        "group": "PSU",
+        "compareNote": "파워는 속도가 아니라 정격 출력, 효율, 보호 회로, 품질을 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 650,
+      "performance": 740,
+      "value": 987,
+      "aiFit": 480,
+      "priceEfficiency": 1470,
+      "powerEfficiency": 740
+    },
+    "nbVector": [
+      650,
+      740,
+      987,
+      480,
+      1470,
+      740
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 169.666,
+    "nbMin": 522.02,
+    "weightedScore": 704,
+    "nbBand": "700~849",
+    "summary": "PSU 650W 80PLUS Gold PSU 부품을 속도 중심 N/B 데이터베이스 점수 704점으로 저장했습니다."
+  },
+  "nbWeightedScore": 704,
+  "nbMax": 169.666,
+  "nbMin": 522.02,
+  "nbBand": "700~849",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=650W%2080PLUS%20Gold%20%ED%8C%8C%EC%9B%8C%20%EA%B0%80%EA%B2%A9",
+  "notes": "Chrome 검색 수집 기준으로 가격을 확인하는 기본 파워 후보입니다."
+}

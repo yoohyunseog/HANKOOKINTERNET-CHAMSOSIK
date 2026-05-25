@@ -1,0 +1,253 @@
+{
+  "ok": true,
+  "mode": "continuous-assembled-state",
+  "description": "컴퓨터는 계속 조립된 상태로 유지됩니다. 새 후보가 현재 N/B MAX를 넘을 때만 조립 상태를 갱신합니다.",
+  "sourceUpdatedAt": "2026-05-25T11:18:46.331+09:00",
+  "startedAt": "2026-05-24T19:11:34.389+09:00",
+  "lastCheckedAt": "2026-05-25T11:18:47.640+09:00",
+  "lastChangedAt": "2026-05-25T10:46:11.429+09:00",
+  "reason": "kept-current-assembly",
+  "currentBuildKey": "cpu-core-ultra-5-245k|gpu-rtx-5070|ram-ddr5-64-6000|ssd-nvme-2tb-gen4|mb-lga1851-b860|psu-650w-gold",
+  "currentBuild": {
+    "title": "N/B MAX 최적화 조립 #6",
+    "purpose": "Chrome 검색 수집 부품을 조합해 N/B MAX와 가격 대비 성능을 동시에 높인 구성",
+    "partIds": [
+      "cpu-core-ultra-5-245k",
+      "gpu-rtx-5070",
+      "ram-ddr5-64-6000",
+      "ssd-nvme-2tb-gen4",
+      "mb-lga1851-b860",
+      "psu-650w-gold"
+    ],
+    "totalPriceKrw": 1941720,
+    "score": 65,
+    "estimatedLoadWatts": 412,
+    "recommendedPsuHeadroomWatts": 238,
+    "pricePerformanceIndex": 42.6,
+    "avgPerformance": 82.7,
+    "nbWeight": {
+      "source": "bitCalculation.v.0.1.js 기반 N/B 가중치",
+      "bitMax": 252.076,
+      "bitMin": 665.766,
+      "balanceScore": 586.3,
+      "weightedScore": 671,
+      "nbBand": "500~699",
+      "nbVector": [
+        827,
+        539,
+        703,
+        773.67,
+        539,
+        401
+      ],
+      "vectorLabels": [
+        "평균 성능",
+        "평균 가성비",
+        "AI 적합도",
+        "통합 속도",
+        "가격 효율",
+        "전력 효율"
+      ],
+      "summary": "완성 조합의 통합 속도와 가격 효율을 100~1000점으로 변환해 N/B 상한 252.076, 하한 665.766, 조합 가중치 671점으로 계산했습니다."
+    },
+    "warnings": [],
+    "aiExplanation": {
+      "summary": "N/B MAX 최적화 조립 #6은 194만원대 예산에서 Chrome 검색 수집 부품을 조합해 N/B MAX와 가격 대비 성능을 동시에 높인 구성에 맞춰 계산된 조립 후보입니다.",
+      "reasons": [
+        "Intel Core Ultra 5 245K와 NVIDIA GeForce RTX 5070 조합으로 CPU와 GPU 성능 균형을 맞췄습니다",
+        "DDR5 64GB 6000MHz를 넣어 게임, 작업, 브라우저 동시 사용 여유를 확보했습니다",
+        "NVMe Gen4 SSD 2TB로 운영체제와 작업 파일 저장 공간을 확보했습니다",
+        "650W 파워 기준 예상 부하 412W로 계산했습니다"
+      ],
+      "verdict": "가격 변동을 보고 재검토"
+    },
+    "parts": [
+      {
+        "category": "CPU",
+        "name": "Intel Core Ultra 5 245K",
+        "maker": "Intel",
+        "platform": "LGA1851",
+        "priceKrw": 284070,
+        "speedLabel": "최대 터보 약 5.2GHz",
+        "unifiedSpeedScore": 867,
+        "performance": 82,
+        "valueIndex": 28.9,
+        "aiUseScore": 53,
+        "score": 57,
+        "powerWatts": 125,
+        "tags": [
+          "gaming",
+          "creator"
+        ],
+        "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Intel%20Core%20Ultra%205%20245K%20%EA%B0%80%EA%B2%A9"
+      },
+      {
+        "category": "GPU",
+        "name": "NVIDIA GeForce RTX 5070",
+        "maker": "NVIDIA",
+        "platform": "PCIe",
+        "priceKrw": 945800,
+        "speedLabel": "12GB VRAM / 고성능 GPU",
+        "unifiedSpeedScore": 500,
+        "performance": 93,
+        "valueIndex": 9.8,
+        "aiUseScore": 100,
+        "score": 52,
+        "powerWatts": 250,
+        "tags": [
+          "gaming",
+          "ai",
+          "creator"
+        ],
+        "sourceUrl": "https://search.danawa.com/dsearch.php?k1=NVIDIA%20GeForce%20RTX%205070%20%EA%B0%80%EA%B2%A9"
+      },
+      {
+        "category": "RAM",
+        "name": "DDR5 64GB 6000MHz",
+        "maker": "Common",
+        "platform": "DDR5",
+        "priceKrw": 260000,
+        "speedLabel": "DDR5-6000",
+        "unifiedSpeedScore": 750,
+        "performance": 88,
+        "valueIndex": 33.8,
+        "aiUseScore": 88,
+        "score": 62,
+        "powerWatts": 18,
+        "tags": [
+          "creator",
+          "ai"
+        ],
+        "sourceUrl": "https://search.danawa.com/dsearch.php?k1=DDR5%2064GB%206000MHz%20%EA%B0%80%EA%B2%A9"
+      },
+      {
+        "category": "SSD",
+        "name": "NVMe Gen4 SSD 2TB",
+        "maker": "Common",
+        "platform": "M.2",
+        "priceKrw": 125600,
+        "speedLabel": "순차 읽기 약 7,000MB/s급",
+        "unifiedSpeedScore": 875,
+        "performance": 84,
+        "valueIndex": 66.9,
+        "aiUseScore": 84,
+        "score": 78,
+        "powerWatts": 7,
+        "tags": [
+          "gaming",
+          "creator",
+          "ai"
+        ],
+        "sourceUrl": "https://search.danawa.com/dsearch.php?k1=NVMe%20Gen4%20SSD%202TB%20%EA%B0%80%EA%B2%A9"
+      },
+      {
+        "category": "Mainboard",
+        "name": "LGA1851 B860 Mainboard",
+        "maker": "Common",
+        "platform": "LGA1851",
+        "priceKrw": 258250,
+        "speedLabel": "DDR5 / PCIe 5.0 지원급",
+        "unifiedSpeedScore": 1000,
+        "performance": 75,
+        "valueIndex": 29,
+        "aiUseScore": 49,
+        "score": 54,
+        "powerWatts": 12,
+        "tags": [
+          "gaming",
+          "office"
+        ],
+        "sourceUrl": "https://search.danawa.com/dsearch.php?k1=LGA1851%20B860%20%EB%A9%94%EC%9D%B8%EB%B3%B4%EB%93%9C%20%EA%B0%80%EA%B2%A9"
+      },
+      {
+        "category": "PSU",
+        "name": "650W 80PLUS Gold PSU",
+        "maker": "Common",
+        "platform": "ATX",
+        "priceKrw": 68000,
+        "speedLabel": "650W 출력",
+        "unifiedSpeedScore": 650,
+        "performance": 74,
+        "valueIndex": 74,
+        "aiUseScore": 48,
+        "score": 89,
+        "powerWatts": null,
+        "tags": [
+          "office",
+          "gaming",
+          "value"
+        ],
+        "sourceUrl": "https://search.danawa.com/dsearch.php?k1=650W%2080PLUS%20Gold%20%ED%8C%8C%EC%9B%8C%20%EA%B0%80%EA%B2%A9"
+      }
+    ]
+  },
+  "bestNbMax": 287.98,
+  "highestPriceKrw": 1941720,
+  "progressionRule": "현재 조립보다 가격대와 N/B MAX가 모두 높아지는 후보가 있을 때만 다음 조립으로 갱신합니다.",
+  "exploredBuildKeys": [
+    "cpu-core-ultra-5-245k|gpu-rtx-5070|ram-ddr5-32-6000|ssd-nvme-2tb-gen4|mb-lga1851-b860|psu-850w-gold",
+    "cpu-core-ultra-5-245k|gpu-rtx-5070|ram-ddr5-32-6000|ssd-nvme-2tb-gen4|mb-lga1851-b860|psu-650w-gold",
+    "cpu-core-ultra-5-245k|gpu-rtx-5070|ram-ddr5-64-6000|ssd-nvme-2tb-gen4|mb-lga1851-b860|psu-850w-gold",
+    "cpu-ryzen-5-9600|gpu-rtx-5070|ram-ddr5-32-6000|ssd-nvme-2tb-gen4|mb-am5-b850|psu-850w-gold",
+    "cpu-core-ultra-5-245k|gpu-rtx-5070|ram-ddr5-32-6000|ssd-nvme-1tb-gen4|mb-lga1851-b860|psu-850w-gold",
+    "cpu-core-ultra-5-245k|gpu-rtx-5070|ram-ddr5-64-6000|ssd-nvme-2tb-gen4|mb-lga1851-b860|psu-650w-gold",
+    "cpu-ryzen-5-9600|gpu-rtx-5070|ram-ddr5-32-6000|ssd-nvme-2tb-gen4|mb-am5-b850|psu-650w-gold",
+    "cpu-ryzen-5-9600|gpu-rtx-5070|ram-ddr5-64-6000|ssd-nvme-2tb-gen4|mb-am5-b850|psu-850w-gold",
+    "cpu-core-ultra-5-245k|gpu-rtx-5070|ram-ddr5-32-6000|ssd-nvme-1tb-gen4|mb-lga1851-b860|psu-650w-gold",
+    "cpu-core-ultra-5-245k|gpu-rtx-5070|ram-ddr5-64-6000|ssd-nvme-1tb-gen4|mb-lga1851-b860|psu-850w-gold",
+    "cpu-ryzen-7-9700x|gpu-rtx-5070|ram-ddr5-32-6000|ssd-nvme-2tb-gen4|mb-am5-b850|psu-850w-gold",
+    "cpu-ryzen-5-9600|gpu-rtx-5070|ram-ddr5-32-6000|ssd-nvme-1tb-gen4|mb-am5-b850|psu-850w-gold"
+  ],
+  "exploredCount": 12,
+  "history": [
+    {
+      "changedAt": "2026-05-25T10:46:11.429+09:00",
+      "reason": "price-floor-restored",
+      "title": "N/B MAX 최적화 조립 #6",
+      "nbMax": 264.677,
+      "weightedScore": 679,
+      "totalPriceKrw": 1869470,
+      "priceIncreaseKrw": 275840,
+      "partIds": [
+        "cpu-core-ultra-5-245k",
+        "gpu-rtx-5070",
+        "ram-ddr5-64-6000",
+        "ssd-nvme-2tb-gen4",
+        "mb-lga1851-b860",
+        "psu-650w-gold"
+      ]
+    },
+    {
+      "changedAt": "2026-05-25T02:23:01.588+09:00",
+      "reason": "nb-max-improved",
+      "title": "N/B MAX 최적화 조립 #1",
+      "nbMax": 287.98,
+      "weightedScore": 738,
+      "totalPriceKrw": 1593630,
+      "partIds": [
+        "cpu-ryzen-5-9600",
+        "gpu-rtx-5070",
+        "ram-ddr5-32-6000",
+        "ssd-nvme-2tb-gen4",
+        "mb-am5-b850",
+        "psu-850w-gold"
+      ]
+    },
+    {
+      "changedAt": "2026-05-24T19:11:34.389+09:00",
+      "reason": "initial-assembly",
+      "title": "N/B MAX 최적화 조립 #1",
+      "nbMax": 258.392,
+      "weightedScore": 671,
+      "totalPriceKrw": 1819170,
+      "partIds": [
+        "cpu-core-ultra-5-245k",
+        "gpu-rtx-5070",
+        "ram-ddr5-32-6000",
+        "ssd-nvme-1tb-gen4",
+        "mb-lga1851-b860",
+        "psu-850w-gold"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-05-25T11:18:47.651+09:00",
+  "category": "RAM",
+  "id": "ram-ddr5-32-6000",
+  "name": "DDR5 32GB 6000MHz",
+  "maker": "Common",
+  "platform": "DDR5",
+  "estimatedPriceKrw": 140000,
+  "priceBand": "15만원 미만",
+  "speedLabel": "DDR5-6000",
+  "speedMetric": {
+    "kind": "memory_transfer_rate",
+    "label": "메모리 전송률",
+    "value": 6000,
+    "unit": "MT/s",
+    "group": "RAM",
+    "compareNote": "RAM은 GHz 표기보다 DDR 전송률과 지연 시간(CL)을 함께 봐야 합니다."
+  },
+  "unifiedSpeedScore": 750,
+  "performance": 78,
+  "valueIndex": 55.7,
+  "aiUseScore": 51,
+  "powerWatts": 12,
+  "tags": [
+    "gaming",
+    "creator",
+    "office"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "RAM",
+    "partId": "ram-ddr5-32-6000",
+    "partName": "DDR5 32GB 6000MHz",
+    "speed": {
+      "score": 750,
+      "weight": 0.42,
+      "metric": {
+        "kind": "memory_transfer_rate",
+        "label": "메모리 전송률",
+        "value": 6000,
+        "unit": "MT/s",
+        "group": "RAM",
+        "compareNote": "RAM은 GHz 표기보다 DDR 전송률과 지연 시간(CL)을 함께 봐야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 750,
+      "performance": 780,
+      "value": 743,
+      "aiFit": 510,
+      "priceEfficiency": 710,
+      "powerEfficiency": 1000
+    },
+    "nbVector": [
+      750,
+      780,
+      743,
+      510,
+      710,
+      1000
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 212.669,
+    "nbMin": 688.927,
+    "weightedScore": 743,
+    "nbBand": "700~849",
+    "summary": "RAM DDR5 32GB 6000MHz 부품을 속도 중심 N/B 데이터베이스 점수 743점으로 저장했습니다."
+  },
+  "nbWeightedScore": 743,
+  "nbMax": 212.669,
+  "nbMin": 688.927,
+  "nbBand": "700~849",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=DDR5%2032GB%206000MHz%20%EA%B0%80%EA%B2%A9",
+  "notes": "Chrome 검색 수집 기준으로 가격을 확인하는 기본 메모리 후보입니다."
+}

@@ -1,0 +1,4613 @@
+{
+  "ok": true,
+  "topic": "AI 컴퓨터 부품 가격·성능 분석 자료",
+  "updatedAt": "2026-05-25T11:18:47.651+09:00",
+  "intervalSeconds": 600,
+  "speedScoreScale": {
+    "min": 100,
+    "max": 1000,
+    "description": "부품 상태에서는 GHz, MT/s, MB/s, VRAM, W, PCIe 세대처럼 서로 다른 속도·성능 단위를 부품군별 기준으로 100~1000점 통합 속도 점수로 변환합니다."
+  },
+  "nbScoreScale": {
+    "min": 100,
+    "max": 1000,
+    "description": "N/B 값은 부품 단독이 아니라 조립이 완료된 컴퓨터 구성에 대해서만 계산합니다."
+  },
+  "currency": "KRW",
+  "sourceType": "chrome-collected",
+  "sourceUpdatedAt": "2026-05-25T11:18:46.331+09:00",
+  "nbDatabaseStorage": {
+    "mode": "per-part-json-files",
+    "root": "nbData",
+    "pattern": "nbData/{category}/{part-id}.json",
+    "categoryFolders": [
+      "cpu",
+      "gpu",
+      "ram",
+      "ssd",
+      "mainboard",
+      "psu"
+    ],
+    "serverLoadPolicy": "현재 수집된 부품만 카테고리별 JSON 파일로 나누어 저장하고, Top 15 랜덤 조합 계산은 사용자 브라우저에서 버튼 클릭 시 실행합니다.",
+    "partField": "parts[].nbDatabase"
+  },
+  "optimization": {
+    "target": "가격대와 N/B MAX 값을 함께 높이는 조립 탐색",
+    "mode": "반복 조립이 아니라 현재 조립 상태를 유지하며 가격대와 N/B MAX가 모두 높아지는 후보가 있을 때만 갱신",
+    "testedCombinations": 144,
+    "validCombinations": 72,
+    "uniqueCombinations": 72,
+    "skippedAlreadyChecked": 0,
+    "remainingCombinations": 60,
+    "exhausted": false,
+    "selectedBuilds": 12,
+    "ranking": "이미 검토한 조립은 제외하고 N/B MAX 우선, 조합 가중치와 가격 대비 성능 보조"
+  },
+  "skippedDuplicateParts": [],
+  "assemblyState": {
+    "ok": true,
+    "mode": "continuous-assembled-state",
+    "description": "컴퓨터는 계속 조립된 상태로 유지됩니다. 새 후보가 현재 N/B MAX를 넘을 때만 조립 상태를 갱신합니다.",
+    "sourceUpdatedAt": "2026-05-25T11:18:46.331+09:00",
+    "startedAt": "2026-05-24T19:11:34.389+09:00",
+    "lastCheckedAt": "2026-05-25T11:18:47.640+09:00",
+    "lastChangedAt": "2026-05-25T10:46:11.429+09:00",
+    "reason": "kept-current-assembly",
+    "currentBuildKey": "cpu-core-ultra-5-245k|gpu-rtx-5070|ram-ddr5-64-6000|ssd-nvme-2tb-gen4|mb-lga1851-b860|psu-650w-gold",
+    "currentBuild": {
+      "title": "N/B MAX 최적화 조립 #6",
+      "purpose": "Chrome 검색 수집 부품을 조합해 N/B MAX와 가격 대비 성능을 동시에 높인 구성",
+      "partIds": [
+        "cpu-core-ultra-5-245k",
+        "gpu-rtx-5070",
+        "ram-ddr5-64-6000",
+        "ssd-nvme-2tb-gen4",
+        "mb-lga1851-b860",
+        "psu-650w-gold"
+      ],
+      "totalPriceKrw": 1941720,
+      "score": 65,
+      "estimatedLoadWatts": 412,
+      "recommendedPsuHeadroomWatts": 238,
+      "pricePerformanceIndex": 42.6,
+      "avgPerformance": 82.7,
+      "nbWeight": {
+        "source": "bitCalculation.v.0.1.js 기반 N/B 가중치",
+        "bitMax": 252.076,
+        "bitMin": 665.766,
+        "balanceScore": 586.3,
+        "weightedScore": 671,
+        "nbBand": "500~699",
+        "nbVector": [
+          827,
+          539,
+          703,
+          773.67,
+          539,
+          401
+        ],
+        "vectorLabels": [
+          "평균 성능",
+          "평균 가성비",
+          "AI 적합도",
+          "통합 속도",
+          "가격 효율",
+          "전력 효율"
+        ],
+        "summary": "완성 조합의 통합 속도와 가격 효율을 100~1000점으로 변환해 N/B 상한 252.076, 하한 665.766, 조합 가중치 671점으로 계산했습니다."
+      },
+      "warnings": [],
+      "aiExplanation": {
+        "summary": "N/B MAX 최적화 조립 #6은 194만원대 예산에서 Chrome 검색 수집 부품을 조합해 N/B MAX와 가격 대비 성능을 동시에 높인 구성에 맞춰 계산된 조립 후보입니다.",
+        "reasons": [
+          "Intel Core Ultra 5 245K와 NVIDIA GeForce RTX 5070 조합으로 CPU와 GPU 성능 균형을 맞췄습니다",
+          "DDR5 64GB 6000MHz를 넣어 게임, 작업, 브라우저 동시 사용 여유를 확보했습니다",
+          "NVMe Gen4 SSD 2TB로 운영체제와 작업 파일 저장 공간을 확보했습니다",
+          "650W 파워 기준 예상 부하 412W로 계산했습니다"
+        ],
+        "verdict": "가격 변동을 보고 재검토"
+      },
+      "parts": [
+        {
+          "category": "CPU",
+          "name": "Intel Core Ultra 5 245K",
+          "maker": "Intel",
+          "platform": "LGA1851",
+          "priceKrw": 284070,
+          "speedLabel": "최대 터보 약 5.2GHz",
+          "unifiedSpeedScore": 867,
+          "performance": 82,
+          "valueIndex": 28.9,
+          "aiUseScore": 53,
+          "score": 57,
+          "powerWatts": 125,
+          "tags": [
+            "gaming",
+            "creator"
+          ],
+          "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Intel%20Core%20Ultra%205%20245K%20%EA%B0%80%EA%B2%A9"
+        },
+        {
+          "category": "GPU",
+          "name": "NVIDIA GeForce RTX 5070",
+          "maker": "NVIDIA",
+          "platform": "PCIe",
+          "priceKrw": 945800,
+          "speedLabel": "12GB VRAM / 고성능 GPU",
+          "unifiedSpeedScore": 500,
+          "performance": 93,
+          "valueIndex": 9.8,
+          "aiUseScore": 100,
+          "score": 52,
+          "powerWatts": 250,
+          "tags": [
+            "gaming",
+            "ai",
+            "creator"
+          ],
+          "sourceUrl": "https://search.danawa.com/dsearch.php?k1=NVIDIA%20GeForce%20RTX%205070%20%EA%B0%80%EA%B2%A9"
+        },
+        {
+          "category": "RAM",
+          "name": "DDR5 64GB 6000MHz",
+          "maker": "Common",
+          "platform": "DDR5",
+          "priceKrw": 260000,
+          "speedLabel": "DDR5-6000",
+          "unifiedSpeedScore": 750,
+          "performance": 88,
+          "valueIndex": 33.8,
+          "aiUseScore": 88,
+          "score": 62,
+          "powerWatts": 18,
+          "tags": [
+            "creator",
+            "ai"
+          ],
+          "sourceUrl": "https://search.danawa.com/dsearch.php?k1=DDR5%2064GB%206000MHz%20%EA%B0%80%EA%B2%A9"
+        },
+        {
+          "category": "SSD",
+          "name": "NVMe Gen4 SSD 2TB",
+          "maker": "Common",
+          "platform": "M.2",
+          "priceKrw": 125600,
+          "speedLabel": "순차 읽기 약 7,000MB/s급",
+          "unifiedSpeedScore": 875,
+          "performance": 84,
+          "valueIndex": 66.9,
+          "aiUseScore": 84,
+          "score": 78,
+          "powerWatts": 7,
+          "tags": [
+            "gaming",
+            "creator",
+            "ai"
+          ],
+          "sourceUrl": "https://search.danawa.com/dsearch.php?k1=NVMe%20Gen4%20SSD%202TB%20%EA%B0%80%EA%B2%A9"
+        },
+        {
+          "category": "Mainboard",
+          "name": "LGA1851 B860 Mainboard",
+          "maker": "Common",
+          "platform": "LGA1851",
+          "priceKrw": 258250,
+          "speedLabel": "DDR5 / PCIe 5.0 지원급",
+          "unifiedSpeedScore": 1000,
+          "performance": 75,
+          "valueIndex": 29,
+          "aiUseScore": 49,
+          "score": 54,
+          "powerWatts": 12,
+          "tags": [
+            "gaming",
+            "office"
+          ],
+          "sourceUrl": "https://search.danawa.com/dsearch.php?k1=LGA1851%20B860%20%EB%A9%94%EC%9D%B8%EB%B3%B4%EB%93%9C%20%EA%B0%80%EA%B2%A9"
+        },
+        {
+          "category": "PSU",
+          "name": "650W 80PLUS Gold PSU",
+          "maker": "Common",
+          "platform": "ATX",
+          "priceKrw": 68000,
+          "speedLabel": "650W 출력",
+          "unifiedSpeedScore": 650,
+          "performance": 74,
+          "valueIndex": 74,
+          "aiUseScore": 48,
+          "score": 89,
+          "powerWatts": null,
+          "tags": [
+            "office",
+            "gaming",
+            "value"
+          ],
+          "sourceUrl": "https://search.danawa.com/dsearch.php?k1=650W%2080PLUS%20Gold%20%ED%8C%8C%EC%9B%8C%20%EA%B0%80%EA%B2%A9"
+        }
+      ]
+    },
+    "bestNbMax": 287.98,
+    "highestPriceKrw": 1941720,
+    "progressionRule": "현재 조립보다 가격대와 N/B MAX가 모두 높아지는 후보가 있을 때만 다음 조립으로 갱신합니다.",
+    "exploredBuildKeys": [
+      "cpu-core-ultra-5-245k|gpu-rtx-5070|ram-ddr5-32-6000|ssd-nvme-2tb-gen4|mb-lga1851-b860|psu-850w-gold",
+      "cpu-core-ultra-5-245k|gpu-rtx-5070|ram-ddr5-32-6000|ssd-nvme-2tb-gen4|mb-lga1851-b860|psu-650w-gold",
+      "cpu-core-ultra-5-245k|gpu-rtx-5070|ram-ddr5-64-6000|ssd-nvme-2tb-gen4|mb-lga1851-b860|psu-850w-gold",
+      "cpu-ryzen-5-9600|gpu-rtx-5070|ram-ddr5-32-6000|ssd-nvme-2tb-gen4|mb-am5-b850|psu-850w-gold",
+      "cpu-core-ultra-5-245k|gpu-rtx-5070|ram-ddr5-32-6000|ssd-nvme-1tb-gen4|mb-lga1851-b860|psu-850w-gold",
+      "cpu-core-ultra-5-245k|gpu-rtx-5070|ram-ddr5-64-6000|ssd-nvme-2tb-gen4|mb-lga1851-b860|psu-650w-gold",
+      "cpu-ryzen-5-9600|gpu-rtx-5070|ram-ddr5-32-6000|ssd-nvme-2tb-gen4|mb-am5-b850|psu-650w-gold",
+      "cpu-ryzen-5-9600|gpu-rtx-5070|ram-ddr5-64-6000|ssd-nvme-2tb-gen4|mb-am5-b850|psu-850w-gold",
+      "cpu-core-ultra-5-245k|gpu-rtx-5070|ram-ddr5-32-6000|ssd-nvme-1tb-gen4|mb-lga1851-b860|psu-650w-gold",
+      "cpu-core-ultra-5-245k|gpu-rtx-5070|ram-ddr5-64-6000|ssd-nvme-1tb-gen4|mb-lga1851-b860|psu-850w-gold",
+      "cpu-ryzen-7-9700x|gpu-rtx-5070|ram-ddr5-32-6000|ssd-nvme-2tb-gen4|mb-am5-b850|psu-850w-gold",
+      "cpu-ryzen-5-9600|gpu-rtx-5070|ram-ddr5-32-6000|ssd-nvme-1tb-gen4|mb-am5-b850|psu-850w-gold"
+    ],
+    "exploredCount": 12,
+    "history": [
+      {
+        "changedAt": "2026-05-25T10:46:11.429+09:00",
+        "reason": "price-floor-restored",
+        "title": "N/B MAX 최적화 조립 #6",
+        "nbMax": 264.677,
+        "weightedScore": 679,
+        "totalPriceKrw": 1869470,
+        "priceIncreaseKrw": 275840,
+        "partIds": [
+          "cpu-core-ultra-5-245k",
+          "gpu-rtx-5070",
+          "ram-ddr5-64-6000",
+          "ssd-nvme-2tb-gen4",
+          "mb-lga1851-b860",
+          "psu-650w-gold"
+        ]
+      },
+      {
+        "changedAt": "2026-05-25T02:23:01.588+09:00",
+        "reason": "nb-max-improved",
+        "title": "N/B MAX 최적화 조립 #1",
+        "nbMax": 287.98,
+        "weightedScore": 738,
+        "totalPriceKrw": 1593630,
+        "partIds": [
+          "cpu-ryzen-5-9600",
+          "gpu-rtx-5070",
+          "ram-ddr5-32-6000",
+          "ssd-nvme-2tb-gen4",
+          "mb-am5-b850",
+          "psu-850w-gold"
+        ]
+      },
+      {
+        "changedAt": "2026-05-24T19:11:34.389+09:00",
+        "reason": "initial-assembly",
+        "title": "N/B MAX 최적화 조립 #1",
+        "nbMax": 258.392,
+        "weightedScore": 671,
+        "totalPriceKrw": 1819170,
+        "partIds": [
+          "cpu-core-ultra-5-245k",
+          "gpu-rtx-5070",
+          "ram-ddr5-32-6000",
+          "ssd-nvme-1tb-gen4",
+          "mb-lga1851-b860",
+          "psu-850w-gold"
+        ]
+      }
+    ]
+  },
+  "notice": "Chrome 브라우저 검색 수집 결과를 우선 사용했습니다. 실제 구매 전에는 판매처 가격과 재고를 다시 확인해야 합니다.",
+  "method": {
+    "performance": "성능 지수, 가격, 전력, 용도 태그를 함께 계산합니다.",
+    "valueIndex": "성능 지수를 예상 가격으로 나누어 가성비를 비교합니다.",
+    "compatibility": "CPU와 메인보드 플랫폼, 전원 공급 장치 여유를 점검합니다.",
+    "nextStep": "가격 검색 API, 쇼핑몰 크롤러, 벤치마크 데이터 수집기를 연결하면 자동 갱신형 추천으로 확장할 수 있습니다."
+  },
+  "categories": [
+    "CPU",
+    "GPU",
+    "RAM",
+    "SSD",
+    "Mainboard",
+    "PSU"
+  ],
+  "top10": [
+    {
+      "rank": 1,
+      "id": "psu-850w-gold",
+      "category": "PSU",
+      "name": "850W 80PLUS Gold PSU",
+      "estimatedPriceKrw": 106000,
+      "speedLabel": "850W 출력",
+      "unifiedSpeedScore": 850,
+      "totalScore": 86,
+      "valueIndex": 81.1,
+      "aiUseScore": 86,
+      "recommendation": "우선 검토 후보",
+      "aiSummary": "850W 80PLUS Gold PSU은 PSU 부품군에서 총점 86점, 가성비 81.1로 계산된 후보입니다.",
+      "aiReason": [
+        "가격 대비 성능 점수가 높아 예산형 구성에서 우선 검토할 만합니다",
+        "AI 작업 또는 크리에이터 작업 후보로 분류할 수 있습니다",
+        "게임용 조립 PC 후보에 넣기 좋습니다",
+        "Chrome 검색 수집 기준으로 가격을 확인하는 고용량 파워 후보입니다."
+      ],
+      "cautions": [],
+      "sourceQueries": [
+        "850W 80PLUS Gold PSU 가격",
+        "850W 80PLUS Gold PSU 성능",
+        "850W 80PLUS Gold PSU 벤치마크"
+      ],
+      "imageUrl": "./img/psu.svg"
+    },
+    {
+      "rank": 2,
+      "id": "psu-650w-gold",
+      "category": "PSU",
+      "name": "650W 80PLUS Gold PSU",
+      "estimatedPriceKrw": 68000,
+      "speedLabel": "650W 출력",
+      "unifiedSpeedScore": 650,
+      "totalScore": 89,
+      "valueIndex": 74,
+      "aiUseScore": 48,
+      "recommendation": "우선 검토 후보",
+      "aiSummary": "650W 80PLUS Gold PSU은 PSU 부품군에서 총점 89점, 가성비 74로 계산된 후보입니다.",
+      "aiReason": [
+        "가격 대비 성능 점수가 높아 예산형 구성에서 우선 검토할 만합니다",
+        "게임용 조립 PC 후보에 넣기 좋습니다",
+        "Chrome 검색 수집 기준으로 가격을 확인하는 기본 파워 후보입니다."
+      ],
+      "cautions": [],
+      "sourceQueries": [
+        "650W 80PLUS Gold PSU 가격",
+        "650W 80PLUS Gold PSU 성능",
+        "650W 80PLUS Gold PSU 벤치마크"
+      ],
+      "imageUrl": "./img/psu.svg"
+    },
+    {
+      "rank": 3,
+      "id": "ssd-nvme-2tb-gen4",
+      "category": "SSD",
+      "name": "NVMe Gen4 SSD 2TB",
+      "estimatedPriceKrw": 125600,
+      "speedLabel": "순차 읽기 약 7,000MB/s급",
+      "unifiedSpeedScore": 875,
+      "totalScore": 78,
+      "valueIndex": 66.9,
+      "aiUseScore": 84,
+      "recommendation": "우선 검토 후보",
+      "aiSummary": "NVMe Gen4 SSD 2TB은 SSD 부품군에서 총점 78점, 가성비 66.9로 계산된 후보입니다.",
+      "aiReason": [
+        "가격 대비 성능 점수가 높아 예산형 구성에서 우선 검토할 만합니다",
+        "전력 대비 성능이 좋아 발열과 소음 관리에 유리합니다",
+        "게임용 조립 PC 후보에 넣기 좋습니다",
+        "Chrome 검색 수집 기준으로 가격을 확인하는 대용량 저장장치 후보입니다."
+      ],
+      "cautions": [],
+      "sourceQueries": [
+        "NVMe Gen4 SSD 2TB 가격",
+        "NVMe Gen4 SSD 2TB 성능",
+        "NVMe Gen4 SSD 2TB 벤치마크"
+      ],
+      "imageUrl": "./img/ssd.svg"
+    },
+    {
+      "rank": 4,
+      "id": "ssd-nvme-1tb-gen4",
+      "category": "SSD",
+      "name": "NVMe Gen4 SSD 1TB",
+      "estimatedPriceKrw": 130000,
+      "speedLabel": "순차 읽기 약 5,000MB/s급",
+      "unifiedSpeedScore": 625,
+      "totalScore": 71,
+      "valueIndex": 58.5,
+      "aiUseScore": 49,
+      "recommendation": "조건부 검토 후보",
+      "aiSummary": "NVMe Gen4 SSD 1TB은 SSD 부품군에서 총점 71점, 가성비 58.5로 계산된 후보입니다.",
+      "aiReason": [
+        "가격 대비 성능 점수가 높아 예산형 구성에서 우선 검토할 만합니다",
+        "전력 대비 성능이 좋아 발열과 소음 관리에 유리합니다",
+        "게임용 조립 PC 후보에 넣기 좋습니다",
+        "Chrome 검색 수집 기준으로 가격을 확인하는 기본 저장장치 후보입니다."
+      ],
+      "cautions": [],
+      "sourceQueries": [
+        "NVMe Gen4 SSD 1TB 가격",
+        "NVMe Gen4 SSD 1TB 성능",
+        "NVMe Gen4 SSD 1TB 벤치마크"
+      ],
+      "imageUrl": "./img/ssd.svg"
+    },
+    {
+      "rank": 5,
+      "id": "ram-ddr5-32-6000",
+      "category": "RAM",
+      "name": "DDR5 32GB 6000MHz",
+      "estimatedPriceKrw": 140000,
+      "speedLabel": "DDR5-6000",
+      "unifiedSpeedScore": 750,
+      "totalScore": 70,
+      "valueIndex": 55.7,
+      "aiUseScore": 51,
+      "recommendation": "조건부 검토 후보",
+      "aiSummary": "DDR5 32GB 6000MHz은 RAM 부품군에서 총점 70점, 가성비 55.7로 계산된 후보입니다.",
+      "aiReason": [
+        "가격 대비 성능 점수가 높아 예산형 구성에서 우선 검토할 만합니다",
+        "전력 대비 성능이 좋아 발열과 소음 관리에 유리합니다",
+        "게임용 조립 PC 후보에 넣기 좋습니다",
+        "Chrome 검색 수집 기준으로 가격을 확인하는 기본 메모리 후보입니다."
+      ],
+      "cautions": [],
+      "sourceQueries": [
+        "DDR5 32GB 6000MHz 가격",
+        "DDR5 32GB 6000MHz 성능",
+        "DDR5 32GB 6000MHz 벤치마크"
+      ],
+      "imageUrl": "./img/ram.svg"
+    },
+    {
+      "rank": 6,
+      "id": "mb-am5-b850",
+      "category": "Mainboard",
+      "name": "AM5 B850 Mainboard",
+      "estimatedPriceKrw": 141650,
+      "speedLabel": "DDR5 / PCIe 5.0 지원급",
+      "unifiedSpeedScore": 1000,
+      "totalScore": 68,
+      "valueIndex": 53.7,
+      "aiUseScore": 49,
+      "recommendation": "조건부 검토 후보",
+      "aiSummary": "AM5 B850 Mainboard은 Mainboard 부품군에서 총점 68점, 가성비 53.7로 계산된 후보입니다.",
+      "aiReason": [
+        "전력 대비 성능이 좋아 발열과 소음 관리에 유리합니다",
+        "게임용 조립 PC 후보에 넣기 좋습니다",
+        "향후 업그레이드 여지를 함께 볼 수 있습니다",
+        "Chrome 검색 수집 기준으로 가격을 확인하는 AM5 메인보드 후보입니다."
+      ],
+      "cautions": [
+        "CPU 소켓, 메모리 규격, BIOS 지원 여부 확인이 필요합니다"
+      ],
+      "sourceQueries": [
+        "AM5 B850 Mainboard 가격",
+        "AM5 B850 Mainboard 성능",
+        "AM5 B850 Mainboard 벤치마크"
+      ],
+      "imageUrl": "./img/mainboard.svg"
+    },
+    {
+      "rank": 7,
+      "id": "ram-ddr5-64-6000",
+      "category": "RAM",
+      "name": "DDR5 64GB 6000MHz",
+      "estimatedPriceKrw": 260000,
+      "speedLabel": "DDR5-6000",
+      "unifiedSpeedScore": 750,
+      "totalScore": 62,
+      "valueIndex": 33.8,
+      "aiUseScore": 88,
+      "recommendation": "조건부 검토 후보",
+      "aiSummary": "DDR5 64GB 6000MHz은 RAM 부품군에서 총점 62점, 가성비 33.8로 계산된 후보입니다.",
+      "aiReason": [
+        "AI 작업 또는 크리에이터 작업 후보로 분류할 수 있습니다",
+        "전력 대비 성능이 좋아 발열과 소음 관리에 유리합니다",
+        "Chrome 검색 수집 기준으로 가격을 확인하는 작업용 대용량 메모리 후보입니다."
+      ],
+      "cautions": [],
+      "sourceQueries": [
+        "DDR5 64GB 6000MHz 가격",
+        "DDR5 64GB 6000MHz 성능",
+        "DDR5 64GB 6000MHz 벤치마크"
+      ],
+      "imageUrl": "./img/ram.svg"
+    },
+    {
+      "rank": 8,
+      "id": "cpu-ryzen-5-9600",
+      "category": "CPU",
+      "name": "AMD Ryzen 5 9600",
+      "estimatedPriceKrw": 216750,
+      "speedLabel": "최대 부스트 약 5.2GHz",
+      "unifiedSpeedScore": 867,
+      "totalScore": 59,
+      "valueIndex": 36,
+      "aiUseScore": 51,
+      "recommendation": "가격 변동 확인 후보",
+      "aiSummary": "AMD Ryzen 5 9600은 CPU 부품군에서 총점 59점, 가성비 36로 계산된 후보입니다.",
+      "aiReason": [
+        "전력 대비 성능이 좋아 발열과 소음 관리에 유리합니다",
+        "게임용 조립 PC 후보에 넣기 좋습니다",
+        "향후 업그레이드 여지를 함께 볼 수 있습니다",
+        "Chrome 검색 수집 기준으로 가격을 확인하는 AM5 CPU 후보입니다."
+      ],
+      "cautions": [
+        "AM5 메인보드와 DDR5 메모리 호환성을 함께 확인해야 합니다"
+      ],
+      "sourceQueries": [
+        "AMD Ryzen 5 9600 가격",
+        "AMD Ryzen 5 9600 성능",
+        "AMD Ryzen 5 9600 벤치마크"
+      ],
+      "imageUrl": "./img/cpu.svg"
+    },
+    {
+      "rank": 9,
+      "id": "gpu-rtx-5070",
+      "category": "GPU",
+      "name": "NVIDIA GeForce RTX 5070",
+      "estimatedPriceKrw": 945800,
+      "speedLabel": "12GB VRAM / 고성능 GPU",
+      "unifiedSpeedScore": 500,
+      "totalScore": 52,
+      "valueIndex": 9.8,
+      "aiUseScore": 100,
+      "recommendation": "가격 변동 확인 후보",
+      "aiSummary": "NVIDIA GeForce RTX 5070은 GPU 부품군에서 총점 52점, 가성비 9.8로 계산된 후보입니다.",
+      "aiReason": [
+        "AI 작업 또는 크리에이터 작업 후보로 분류할 수 있습니다",
+        "게임용 조립 PC 후보에 넣기 좋습니다",
+        "Chrome 검색 수집 기준으로 가격을 확인하는 고성능 GPU 후보입니다."
+      ],
+      "cautions": [
+        "AI 모델이나 고해상도 텍스처 작업에서는 VRAM 용량을 다시 확인해야 합니다",
+        "파워 용량과 케이스 내부 발열 여유를 같이 확인해야 합니다"
+      ],
+      "sourceQueries": [
+        "NVIDIA GeForce RTX 5070 가격",
+        "NVIDIA GeForce RTX 5070 성능",
+        "NVIDIA GeForce RTX 5070 벤치마크"
+      ],
+      "imageUrl": "./img/gpu.svg"
+    },
+    {
+      "rank": 10,
+      "id": "cpu-core-ultra-5-245k",
+      "category": "CPU",
+      "name": "Intel Core Ultra 5 245K",
+      "estimatedPriceKrw": 284070,
+      "speedLabel": "최대 터보 약 5.2GHz",
+      "unifiedSpeedScore": 867,
+      "totalScore": 57,
+      "valueIndex": 28.9,
+      "aiUseScore": 53,
+      "recommendation": "가격 변동 확인 후보",
+      "aiSummary": "Intel Core Ultra 5 245K은 CPU 부품군에서 총점 57점, 가성비 28.9로 계산된 후보입니다.",
+      "aiReason": [
+        "게임용 조립 PC 후보에 넣기 좋습니다",
+        "Chrome 검색 수집 기준으로 가격을 확인하는 인텔 플랫폼 CPU 후보입니다."
+      ],
+      "cautions": [
+        "LGA1851 메인보드와 DDR5 메모리 호환성을 함께 확인해야 합니다"
+      ],
+      "sourceQueries": [
+        "Intel Core Ultra 5 245K 가격",
+        "Intel Core Ultra 5 245K 성능",
+        "Intel Core Ultra 5 245K 벤치마크"
+      ],
+      "imageUrl": "./img/cpu.svg"
+    }
+  ],
+  "levelAnalysis": [
+    {
+      "level": "초보자용",
+      "count": 3,
+      "summary": "설치와 선택 기준이 단순하고 가격 부담이 낮은 부품을 우선 정리합니다.",
+      "recommendedParts": [
+        {
+          "id": "psu-650w-gold",
+          "category": "PSU",
+          "name": "650W 80PLUS Gold PSU",
+          "speedLabel": "650W 출력",
+          "estimatedPriceKrw": 68000,
+          "totalScore": 89,
+          "reason": "선택 기준이 비교적 단순하고 체감 개선이 쉬워 처음 조립하는 사용자도 접근하기 좋습니다.",
+          "imageUrl": "./img/psu.svg"
+        },
+        {
+          "id": "ssd-nvme-1tb-gen4",
+          "category": "SSD",
+          "name": "NVMe Gen4 SSD 1TB",
+          "speedLabel": "순차 읽기 약 5,000MB/s급",
+          "estimatedPriceKrw": 130000,
+          "totalScore": 71,
+          "reason": "선택 기준이 비교적 단순하고 체감 개선이 쉬워 처음 조립하는 사용자도 접근하기 좋습니다.",
+          "imageUrl": "./img/ssd.svg"
+        },
+        {
+          "id": "ram-ddr5-32-6000",
+          "category": "RAM",
+          "name": "DDR5 32GB 6000MHz",
+          "speedLabel": "DDR5-6000",
+          "estimatedPriceKrw": 140000,
+          "totalScore": 70,
+          "reason": "선택 기준이 비교적 단순하고 체감 개선이 쉬워 처음 조립하는 사용자도 접근하기 좋습니다.",
+          "imageUrl": "./img/ram.svg"
+        }
+      ]
+    },
+    {
+      "level": "중수용",
+      "count": 5,
+      "summary": "가격, 성능, 플랫폼 호환성을 함께 비교해야 하는 균형형 부품을 정리합니다.",
+      "recommendedParts": [
+        {
+          "id": "mb-am5-b850",
+          "category": "Mainboard",
+          "name": "AM5 B850 Mainboard",
+          "speedLabel": "DDR5 / PCIe 5.0 지원급",
+          "estimatedPriceKrw": 141650,
+          "totalScore": 68,
+          "reason": "가격과 성능 균형은 좋지만 플랫폼, 전력, 업그레이드 방향을 함께 비교해야 합니다.",
+          "imageUrl": "./img/mainboard.svg"
+        },
+        {
+          "id": "cpu-ryzen-5-9600",
+          "category": "CPU",
+          "name": "AMD Ryzen 5 9600",
+          "speedLabel": "최대 부스트 약 5.2GHz",
+          "estimatedPriceKrw": 216750,
+          "totalScore": 59,
+          "reason": "가격과 성능 균형은 좋지만 플랫폼, 전력, 업그레이드 방향을 함께 비교해야 합니다.",
+          "imageUrl": "./img/cpu.svg"
+        },
+        {
+          "id": "cpu-ryzen-7-9700x",
+          "category": "CPU",
+          "name": "AMD Ryzen 7 9700X",
+          "speedLabel": "최대 부스트 약 5.5GHz",
+          "estimatedPriceKrw": 362980,
+          "totalScore": 57,
+          "reason": "가격과 성능 균형은 좋지만 플랫폼, 전력, 업그레이드 방향을 함께 비교해야 합니다.",
+          "imageUrl": "./img/cpu.svg"
+        },
+        {
+          "id": "cpu-core-ultra-5-245k",
+          "category": "CPU",
+          "name": "Intel Core Ultra 5 245K",
+          "speedLabel": "최대 터보 약 5.2GHz",
+          "estimatedPriceKrw": 284070,
+          "totalScore": 57,
+          "reason": "가격과 성능 균형은 좋지만 플랫폼, 전력, 업그레이드 방향을 함께 비교해야 합니다.",
+          "imageUrl": "./img/cpu.svg"
+        },
+        {
+          "id": "mb-lga1851-b860",
+          "category": "Mainboard",
+          "name": "LGA1851 B860 Mainboard",
+          "speedLabel": "DDR5 / PCIe 5.0 지원급",
+          "estimatedPriceKrw": 258250,
+          "totalScore": 54,
+          "reason": "가격과 성능 균형은 좋지만 플랫폼, 전력, 업그레이드 방향을 함께 비교해야 합니다.",
+          "imageUrl": "./img/mainboard.svg"
+        }
+      ]
+    },
+    {
+      "level": "고수용",
+      "count": 6,
+      "summary": "고성능, 고전력, AI 작업, 상위 GPU처럼 확인할 요소가 많은 부품을 정리합니다.",
+      "recommendedParts": [
+        {
+          "id": "psu-850w-gold",
+          "category": "PSU",
+          "name": "850W 80PLUS Gold PSU",
+          "speedLabel": "850W 출력",
+          "estimatedPriceKrw": 106000,
+          "totalScore": 86,
+          "reason": "성능은 높지만 가격, 전력, 호환성 확인 부담이 커서 조립 경험이 있는 사용자에게 적합합니다.",
+          "imageUrl": "./img/psu.svg"
+        },
+        {
+          "id": "ssd-nvme-2tb-gen4",
+          "category": "SSD",
+          "name": "NVMe Gen4 SSD 2TB",
+          "speedLabel": "순차 읽기 약 7,000MB/s급",
+          "estimatedPriceKrw": 125600,
+          "totalScore": 78,
+          "reason": "성능은 높지만 가격, 전력, 호환성 확인 부담이 커서 조립 경험이 있는 사용자에게 적합합니다.",
+          "imageUrl": "./img/ssd.svg"
+        },
+        {
+          "id": "ram-ddr5-64-6000",
+          "category": "RAM",
+          "name": "DDR5 64GB 6000MHz",
+          "speedLabel": "DDR5-6000",
+          "estimatedPriceKrw": 260000,
+          "totalScore": 62,
+          "reason": "성능은 높지만 가격, 전력, 호환성 확인 부담이 커서 조립 경험이 있는 사용자에게 적합합니다.",
+          "imageUrl": "./img/ram.svg"
+        },
+        {
+          "id": "gpu-rtx-5070",
+          "category": "GPU",
+          "name": "NVIDIA GeForce RTX 5070",
+          "speedLabel": "12GB VRAM / 고성능 GPU",
+          "estimatedPriceKrw": 945800,
+          "totalScore": 52,
+          "reason": "성능은 높지만 가격, 전력, 호환성 확인 부담이 커서 조립 경험이 있는 사용자에게 적합합니다.",
+          "imageUrl": "./img/gpu.svg"
+        },
+        {
+          "id": "gpu-rtx-5060-ti",
+          "category": "GPU",
+          "name": "NVIDIA GeForce RTX 5060 Ti",
+          "speedLabel": "16GB VRAM / PCIe 그래픽",
+          "estimatedPriceKrw": 848000,
+          "totalScore": 46,
+          "reason": "성능은 높지만 가격, 전력, 호환성 확인 부담이 커서 조립 경험이 있는 사용자에게 적합합니다.",
+          "imageUrl": "./img/gpu.svg"
+        }
+      ]
+    }
+  ],
+  "parts": [
+    {
+      "id": "psu-650w-gold",
+      "category": "PSU",
+      "name": "650W 80PLUS Gold PSU",
+      "maker": "Common",
+      "platform": "ATX",
+      "estimatedPriceKrw": 68000,
+      "performance": 74,
+      "powerWatts": 0,
+      "wattCapacity": 650,
+      "speedLabel": "650W 출력",
+      "tags": [
+        "office",
+        "gaming",
+        "value"
+      ],
+      "notes": "Chrome 검색 수집 기준으로 가격을 확인하는 기본 파워 후보입니다.",
+      "sourceQuery": "650W 80PLUS Gold 파워 가격",
+      "sourceUrl": "https://search.danawa.com/dsearch.php?k1=650W%2080PLUS%20Gold%20%ED%8C%8C%EC%9B%8C%20%EA%B0%80%EA%B2%A9",
+      "sourceStatus": "chrome-collected",
+      "collectedPricesKrw": [
+        54000,
+        56000,
+        56500,
+        57770,
+        60100,
+        65500,
+        68000,
+        73500,
+        75650,
+        79000,
+        80210,
+        82000
+      ],
+      "imageUrl": "./img/psu.svg",
+      "speedMetric": {
+        "kind": "power_output",
+        "label": "정격 출력",
+        "value": 650,
+        "unit": "W",
+        "group": "PSU",
+        "compareNote": "파워는 속도가 아니라 정격 출력, 효율, 보호 회로, 품질을 비교해야 합니다."
+      },
+      "unifiedSpeedScore": 650,
+      "nbDatabase": {
+        "schema": "pc-part-nb-database.v1",
+        "unit": "100~1000",
+        "priority": "speed-first",
+        "category": "PSU",
+        "partId": "psu-650w-gold",
+        "partName": "650W 80PLUS Gold PSU",
+        "speed": {
+          "score": 650,
+          "weight": 0.32,
+          "metric": {
+            "kind": "power_output",
+            "label": "정격 출력",
+            "value": 650,
+            "unit": "W",
+            "group": "PSU",
+            "compareNote": "파워는 속도가 아니라 정격 출력, 효율, 보호 회로, 품질을 비교해야 합니다."
+          }
+        },
+        "scores": {
+          "speed": 650,
+          "performance": 740,
+          "value": 987,
+          "aiFit": 480,
+          "priceEfficiency": 1470,
+          "powerEfficiency": 740
+        },
+        "nbVector": [
+          650,
+          740,
+          987,
+          480,
+          1470,
+          740
+        ],
+        "vectorLabels": [
+          "속도",
+          "성능",
+          "가성비",
+          "AI 적합",
+          "가격 효율",
+          "전력 효율"
+        ],
+        "nbMax": 169.666,
+        "nbMin": 522.02,
+        "weightedScore": 704,
+        "nbBand": "700~849",
+        "summary": "PSU 650W 80PLUS Gold PSU 부품을 속도 중심 N/B 데이터베이스 점수 704점으로 저장했습니다."
+      },
+      "nbWeightedScore": 704,
+      "nbMax": 169.666,
+      "nbMin": 522.02,
+      "nbBand": "700~849",
+      "priceBand": "15만원 미만",
+      "valueIndex": 74,
+      "efficiencyIndex": null,
+      "aiUseScore": 48,
+      "totalScore": 89,
+      "aiExplanation": {
+        "summary": "650W 80PLUS Gold PSU은 PSU 부품군에서 총점 89점, 가성비 74로 계산된 후보입니다.",
+        "strengths": [
+          "가격 대비 성능 점수가 높아 예산형 구성에서 우선 검토할 만합니다",
+          "게임용 조립 PC 후보에 넣기 좋습니다"
+        ],
+        "cautions": [],
+        "userLevel": {
+          "level": "초보자용",
+          "reason": "선택 기준이 비교적 단순하고 체감 개선이 쉬워 처음 조립하는 사용자도 접근하기 좋습니다."
+        },
+        "recommendation": "우선 검토 후보"
+      },
+      "priceSourceStatus": "초기 기준값",
+      "sourceQueries": [
+        "650W 80PLUS Gold PSU 가격",
+        "650W 80PLUS Gold PSU 성능",
+        "650W 80PLUS Gold PSU 벤치마크"
+      ]
+    },
+    {
+      "id": "psu-850w-gold",
+      "category": "PSU",
+      "name": "850W 80PLUS Gold PSU",
+      "maker": "Common",
+      "platform": "ATX",
+      "estimatedPriceKrw": 106000,
+      "performance": 86,
+      "powerWatts": 0,
+      "wattCapacity": 850,
+      "speedLabel": "850W 출력",
+      "tags": [
+        "gaming",
+        "creator",
+        "ai"
+      ],
+      "notes": "Chrome 검색 수집 기준으로 가격을 확인하는 고용량 파워 후보입니다.",
+      "sourceQuery": "850W 80PLUS Gold 파워 가격",
+      "sourceUrl": "https://search.danawa.com/dsearch.php?k1=850W%2080PLUS%20Gold%20%ED%8C%8C%EC%9B%8C%20%EA%B0%80%EA%B2%A9",
+      "sourceStatus": "chrome-collected",
+      "collectedPricesKrw": [
+        88560,
+        93280,
+        93950,
+        95680,
+        96360,
+        96920,
+        106000,
+        112320,
+        112500,
+        116760,
+        116770,
+        119000
+      ],
+      "imageUrl": "./img/psu.svg",
+      "speedMetric": {
+        "kind": "power_output",
+        "label": "정격 출력",
+        "value": 850,
+        "unit": "W",
+        "group": "PSU",
+        "compareNote": "파워는 속도가 아니라 정격 출력, 효율, 보호 회로, 품질을 비교해야 합니다."
+      },
+      "unifiedSpeedScore": 850,
+      "nbDatabase": {
+        "schema": "pc-part-nb-database.v1",
+        "unit": "100~1000",
+        "priority": "speed-first",
+        "category": "PSU",
+        "partId": "psu-850w-gold",
+        "partName": "850W 80PLUS Gold PSU",
+        "speed": {
+          "score": 850,
+          "weight": 0.32,
+          "metric": {
+            "kind": "power_output",
+            "label": "정격 출력",
+            "value": 850,
+            "unit": "W",
+            "group": "PSU",
+            "compareNote": "파워는 속도가 아니라 정격 출력, 효율, 보호 회로, 품질을 비교해야 합니다."
+          }
+        },
+        "scores": {
+          "speed": 850,
+          "performance": 860,
+          "value": 1000,
+          "aiFit": 860,
+          "priceEfficiency": 940,
+          "powerEfficiency": 860
+        },
+        "nbVector": [
+          850,
+          860,
+          1000,
+          860,
+          940,
+          860
+        ],
+        "vectorLabels": [
+          "속도",
+          "성능",
+          "가성비",
+          "AI 적합",
+          "가격 효율",
+          "전력 효율"
+        ],
+        "nbMax": 45.943,
+        "nbMin": 1000,
+        "weightedScore": 797,
+        "nbBand": "700~849",
+        "summary": "PSU 850W 80PLUS Gold PSU 부품을 속도 중심 N/B 데이터베이스 점수 797점으로 저장했습니다."
+      },
+      "nbWeightedScore": 797,
+      "nbMax": 45.943,
+      "nbMin": 1000,
+      "nbBand": "700~849",
+      "priceBand": "15만원 미만",
+      "valueIndex": 81.1,
+      "efficiencyIndex": null,
+      "aiUseScore": 86,
+      "totalScore": 86,
+      "aiExplanation": {
+        "summary": "850W 80PLUS Gold PSU은 PSU 부품군에서 총점 86점, 가성비 81.1로 계산된 후보입니다.",
+        "strengths": [
+          "가격 대비 성능 점수가 높아 예산형 구성에서 우선 검토할 만합니다",
+          "AI 작업 또는 크리에이터 작업 후보로 분류할 수 있습니다",
+          "게임용 조립 PC 후보에 넣기 좋습니다"
+        ],
+        "cautions": [],
+        "userLevel": {
+          "level": "고수용",
+          "reason": "성능은 높지만 가격, 전력, 호환성 확인 부담이 커서 조립 경험이 있는 사용자에게 적합합니다."
+        },
+        "recommendation": "우선 검토 후보"
+      },
+      "priceSourceStatus": "초기 기준값",
+      "sourceQueries": [
+        "850W 80PLUS Gold PSU 가격",
+        "850W 80PLUS Gold PSU 성능",
+        "850W 80PLUS Gold PSU 벤치마크"
+      ]
+    },
+    {
+      "id": "ssd-nvme-2tb-gen4",
+      "category": "SSD",
+      "name": "NVMe Gen4 SSD 2TB",
+      "maker": "Common",
+      "platform": "M.2",
+      "estimatedPriceKrw": 125600,
+      "performance": 84,
+      "powerWatts": 7,
+      "speedLabel": "순차 읽기 약 7,000MB/s급",
+      "tags": [
+        "gaming",
+        "creator",
+        "ai"
+      ],
+      "notes": "Chrome 검색 수집 기준으로 가격을 확인하는 대용량 저장장치 후보입니다.",
+      "sourceQuery": "NVMe Gen4 SSD 2TB 가격",
+      "sourceUrl": "https://search.danawa.com/dsearch.php?k1=NVMe%20Gen4%20SSD%202TB%20%EA%B0%80%EA%B2%A9",
+      "sourceStatus": "chrome-collected",
+      "collectedPricesKrw": [
+        27900,
+        38500,
+        42900,
+        50400,
+        125600,
+        410490,
+        427500,
+        463490,
+        474430,
+        494500,
+        539000,
+        572800
+      ],
+      "imageUrl": "./img/ssd.svg",
+      "speedMetric": {
+        "kind": "sequential_read",
+        "label": "순차 읽기 속도",
+        "value": 7000,
+        "unit": "MB/s",
+        "group": "SSD",
+        "compareNote": "SSD는 순차 읽기뿐 아니라 랜덤 읽기, 컨트롤러, DRAM 캐시도 체감에 영향을 줍니다."
+      },
+      "unifiedSpeedScore": 875,
+      "nbDatabase": {
+        "schema": "pc-part-nb-database.v1",
+        "unit": "100~1000",
+        "priority": "speed-first",
+        "category": "SSD",
+        "partId": "ssd-nvme-2tb-gen4",
+        "partName": "NVMe Gen4 SSD 2TB",
+        "speed": {
+          "score": 875,
+          "weight": 0.42,
+          "metric": {
+            "kind": "sequential_read",
+            "label": "순차 읽기 속도",
+            "value": 7000,
+            "unit": "MB/s",
+            "group": "SSD",
+            "compareNote": "SSD는 순차 읽기뿐 아니라 랜덤 읽기, 컨트롤러, DRAM 캐시도 체감에 영향을 줍니다."
+          }
+        },
+        "scores": {
+          "speed": 875,
+          "performance": 840,
+          "value": 892,
+          "aiFit": 840,
+          "priceEfficiency": 800,
+          "powerEfficiency": 1000
+        },
+        "nbVector": [
+          875,
+          840,
+          892,
+          840,
+          800,
+          1000
+        ],
+        "vectorLabels": [
+          "속도",
+          "성능",
+          "가성비",
+          "AI 적합",
+          "가격 효율",
+          "전력 효율"
+        ],
+        "nbMax": 76.373,
+        "nbMin": 976.525,
+        "weightedScore": 868,
+        "nbBand": "850~1000",
+        "summary": "SSD NVMe Gen4 SSD 2TB 부품을 속도 중심 N/B 데이터베이스 점수 868점으로 저장했습니다."
+      },
+      "nbWeightedScore": 868,
+      "nbMax": 76.373,
+      "nbMin": 976.525,
+      "nbBand": "850~1000",
+      "priceBand": "15만원 미만",
+      "valueIndex": 66.9,
+      "efficiencyIndex": 12,
+      "aiUseScore": 84,
+      "totalScore": 78,
+      "aiExplanation": {
+        "summary": "NVMe Gen4 SSD 2TB은 SSD 부품군에서 총점 78점, 가성비 66.9로 계산된 후보입니다.",
+        "strengths": [
+          "가격 대비 성능 점수가 높아 예산형 구성에서 우선 검토할 만합니다",
+          "전력 대비 성능이 좋아 발열과 소음 관리에 유리합니다",
+          "게임용 조립 PC 후보에 넣기 좋습니다"
+        ],
+        "cautions": [],
+        "userLevel": {
+          "level": "고수용",
+          "reason": "성능은 높지만 가격, 전력, 호환성 확인 부담이 커서 조립 경험이 있는 사용자에게 적합합니다."
+        },
+        "recommendation": "우선 검토 후보"
+      },
+      "priceSourceStatus": "초기 기준값",
+      "sourceQueries": [
+        "NVMe Gen4 SSD 2TB 가격",
+        "NVMe Gen4 SSD 2TB 성능",
+        "NVMe Gen4 SSD 2TB 벤치마크"
+      ]
+    },
+    {
+      "id": "ssd-nvme-1tb-gen4",
+      "category": "SSD",
+      "name": "NVMe Gen4 SSD 1TB",
+      "maker": "Common",
+      "platform": "M.2",
+      "estimatedPriceKrw": 130000,
+      "performance": 76,
+      "powerWatts": 6,
+      "speedLabel": "순차 읽기 약 5,000MB/s급",
+      "tags": [
+        "gaming",
+        "office"
+      ],
+      "notes": "Chrome 검색 수집 기준으로 가격을 확인하는 기본 저장장치 후보입니다.",
+      "sourceQuery": "NVMe Gen4 SSD 1TB 가격",
+      "sourceUrl": "https://search.danawa.com/dsearch.php?k1=NVMe%20Gen4%20SSD%201TB%20%EA%B0%80%EA%B2%A9",
+      "sourceStatus": "chrome-collected",
+      "collectedPricesKrw": [
+        27900,
+        42900,
+        130000,
+        205200,
+        240000,
+        260070,
+        271110,
+        275860,
+        280000,
+        296000,
+        305690,
+        310000
+      ],
+      "imageUrl": "./img/ssd.svg",
+      "speedMetric": {
+        "kind": "sequential_read",
+        "label": "순차 읽기 속도",
+        "value": 5000,
+        "unit": "MB/s",
+        "group": "SSD",
+        "compareNote": "SSD는 순차 읽기뿐 아니라 랜덤 읽기, 컨트롤러, DRAM 캐시도 체감에 영향을 줍니다."
+      },
+      "unifiedSpeedScore": 625,
+      "nbDatabase": {
+        "schema": "pc-part-nb-database.v1",
+        "unit": "100~1000",
+        "priority": "speed-first",
+        "category": "SSD",
+        "partId": "ssd-nvme-1tb-gen4",
+        "partName": "NVMe Gen4 SSD 1TB",
+        "speed": {
+          "score": 625,
+          "weight": 0.42,
+          "metric": {
+            "kind": "sequential_read",
+            "label": "순차 읽기 속도",
+            "value": 5000,
+            "unit": "MB/s",
+            "group": "SSD",
+            "compareNote": "SSD는 순차 읽기뿐 아니라 랜덤 읽기, 컨트롤러, DRAM 캐시도 체감에 영향을 줍니다."
+          }
+        },
+        "scores": {
+          "speed": 625,
+          "performance": 760,
+          "value": 780,
+          "aiFit": 490,
+          "priceEfficiency": 770,
+          "powerEfficiency": 1000
+        },
+        "nbVector": [
+          625,
+          760,
+          780,
+          490,
+          770,
+          1000
+        ],
+        "vectorLabels": [
+          "속도",
+          "성능",
+          "가성비",
+          "AI 적합",
+          "가격 효율",
+          "전력 효율"
+        ],
+        "nbMax": 217.317,
+        "nbMin": 670.633,
+        "weightedScore": 694,
+        "nbBand": "500~699",
+        "summary": "SSD NVMe Gen4 SSD 1TB 부품을 속도 중심 N/B 데이터베이스 점수 694점으로 저장했습니다."
+      },
+      "nbWeightedScore": 694,
+      "nbMax": 217.317,
+      "nbMin": 670.633,
+      "nbBand": "500~699",
+      "priceBand": "15만원 미만",
+      "valueIndex": 58.5,
+      "efficiencyIndex": 12.67,
+      "aiUseScore": 49,
+      "totalScore": 71,
+      "aiExplanation": {
+        "summary": "NVMe Gen4 SSD 1TB은 SSD 부품군에서 총점 71점, 가성비 58.5로 계산된 후보입니다.",
+        "strengths": [
+          "가격 대비 성능 점수가 높아 예산형 구성에서 우선 검토할 만합니다",
+          "전력 대비 성능이 좋아 발열과 소음 관리에 유리합니다",
+          "게임용 조립 PC 후보에 넣기 좋습니다"
+        ],
+        "cautions": [],
+        "userLevel": {
+          "level": "초보자용",
+          "reason": "선택 기준이 비교적 단순하고 체감 개선이 쉬워 처음 조립하는 사용자도 접근하기 좋습니다."
+        },
+        "recommendation": "조건부 검토 후보"
+      },
+      "priceSourceStatus": "초기 기준값",
+      "sourceQueries": [
+        "NVMe Gen4 SSD 1TB 가격",
+        "NVMe Gen4 SSD 1TB 성능",
+        "NVMe Gen4 SSD 1TB 벤치마크"
+      ]
+    },
+    {
+      "id": "ram-ddr5-32-6000",
+      "category": "RAM",
+      "name": "DDR5 32GB 6000MHz",
+      "maker": "Common",
+      "platform": "DDR5",
+      "estimatedPriceKrw": 140000,
+      "performance": 78,
+      "powerWatts": 12,
+      "speedLabel": "DDR5-6000",
+      "tags": [
+        "gaming",
+        "creator",
+        "office"
+      ],
+      "notes": "Chrome 검색 수집 기준으로 가격을 확인하는 기본 메모리 후보입니다.",
+      "sourceQuery": "DDR5 32GB 6000MHz 가격",
+      "sourceUrl": "https://search.danawa.com/dsearch.php?k1=DDR5%2032GB%206000MHz%20%EA%B0%80%EA%B2%A9",
+      "sourceStatus": "fallback-price",
+      "collectedPricesKrw": [
+        18417,
+        18594,
+        18750,
+        19656,
+        20116,
+        20254,
+        21028,
+        21093,
+        21123,
+        21524,
+        21547,
+        21656
+      ],
+      "imageUrl": "./img/ram.svg",
+      "speedMetric": {
+        "kind": "memory_transfer_rate",
+        "label": "메모리 전송률",
+        "value": 6000,
+        "unit": "MT/s",
+        "group": "RAM",
+        "compareNote": "RAM은 GHz 표기보다 DDR 전송률과 지연 시간(CL)을 함께 봐야 합니다."
+      },
+      "unifiedSpeedScore": 750,
+      "nbDatabase": {
+        "schema": "pc-part-nb-database.v1",
+        "unit": "100~1000",
+        "priority": "speed-first",
+        "category": "RAM",
+        "partId": "ram-ddr5-32-6000",
+        "partName": "DDR5 32GB 6000MHz",
+        "speed": {
+          "score": 750,
+          "weight": 0.42,
+          "metric": {
+            "kind": "memory_transfer_rate",
+            "label": "메모리 전송률",
+            "value": 6000,
+            "unit": "MT/s",
+            "group": "RAM",
+            "compareNote": "RAM은 GHz 표기보다 DDR 전송률과 지연 시간(CL)을 함께 봐야 합니다."
+          }
+        },
+        "scores": {
+          "speed": 750,
+          "performance": 780,
+          "value": 743,
+          "aiFit": 510,
+          "priceEfficiency": 710,
+          "powerEfficiency": 1000
+        },
+        "nbVector": [
+          750,
+          780,
+          743,
+          510,
+          710,
+          1000
+        ],
+        "vectorLabels": [
+          "속도",
+          "성능",
+          "가성비",
+          "AI 적합",
+          "가격 효율",
+          "전력 효율"
+        ],
+        "nbMax": 212.669,
+        "nbMin": 688.927,
+        "weightedScore": 743,
+        "nbBand": "700~849",
+        "summary": "RAM DDR5 32GB 6000MHz 부품을 속도 중심 N/B 데이터베이스 점수 743점으로 저장했습니다."
+      },
+      "nbWeightedScore": 743,
+      "nbMax": 212.669,
+      "nbMin": 688.927,
+      "nbBand": "700~849",
+      "priceBand": "15만원 미만",
+      "valueIndex": 55.7,
+      "efficiencyIndex": 6.5,
+      "aiUseScore": 51,
+      "totalScore": 70,
+      "aiExplanation": {
+        "summary": "DDR5 32GB 6000MHz은 RAM 부품군에서 총점 70점, 가성비 55.7로 계산된 후보입니다.",
+        "strengths": [
+          "가격 대비 성능 점수가 높아 예산형 구성에서 우선 검토할 만합니다",
+          "전력 대비 성능이 좋아 발열과 소음 관리에 유리합니다",
+          "게임용 조립 PC 후보에 넣기 좋습니다"
+        ],
+        "cautions": [],
+        "userLevel": {
+          "level": "초보자용",
+          "reason": "선택 기준이 비교적 단순하고 체감 개선이 쉬워 처음 조립하는 사용자도 접근하기 좋습니다."
+        },
+        "recommendation": "조건부 검토 후보"
+      },
+      "priceSourceStatus": "초기 기준값",
+      "sourceQueries": [
+        "DDR5 32GB 6000MHz 가격",
+        "DDR5 32GB 6000MHz 성능",
+        "DDR5 32GB 6000MHz 벤치마크"
+      ]
+    },
+    {
+      "id": "mb-am5-b850",
+      "category": "Mainboard",
+      "name": "AM5 B850 Mainboard",
+      "maker": "Common",
+      "platform": "AM5",
+      "estimatedPriceKrw": 141650,
+      "performance": 76,
+      "powerWatts": 12,
+      "speedLabel": "DDR5 / PCIe 5.0 지원급",
+      "tags": [
+        "gaming",
+        "office",
+        "upgrade"
+      ],
+      "notes": "Chrome 검색 수집 기준으로 가격을 확인하는 AM5 메인보드 후보입니다.",
+      "sourceQuery": "AM5 B850 메인보드 가격",
+      "sourceUrl": "https://search.danawa.com/dsearch.php?k1=AM5%20B850%20%EB%A9%94%EC%9D%B8%EB%B3%B4%EB%93%9C%20%EA%B0%80%EA%B2%A9",
+      "sourceStatus": "chrome-collected",
+      "collectedPricesKrw": [
+        29000,
+        44000,
+        141650,
+        152480,
+        167000,
+        201200,
+        224550,
+        224700,
+        226690,
+        248000,
+        259000,
+        270210
+      ],
+      "imageUrl": "./img/mainboard.svg",
+      "speedMetric": {
+        "kind": "platform_io",
+        "label": "플랫폼 지원",
+        "value": 5,
+        "unit": "PCIe 세대",
+        "group": "Mainboard",
+        "compareNote": "메인보드는 GHz보다 CPU 소켓, 메모리 규격, PCIe 세대, 확장성을 봐야 합니다."
+      },
+      "unifiedSpeedScore": 1000,
+      "nbDatabase": {
+        "schema": "pc-part-nb-database.v1",
+        "unit": "100~1000",
+        "priority": "speed-first",
+        "category": "Mainboard",
+        "partId": "mb-am5-b850",
+        "partName": "AM5 B850 Mainboard",
+        "speed": {
+          "score": 1000,
+          "weight": 0.32,
+          "metric": {
+            "kind": "platform_io",
+            "label": "플랫폼 지원",
+            "value": 5,
+            "unit": "PCIe 세대",
+            "group": "Mainboard",
+            "compareNote": "메인보드는 GHz보다 CPU 소켓, 메모리 규격, PCIe 세대, 확장성을 봐야 합니다."
+          }
+        },
+        "scores": {
+          "speed": 1000,
+          "performance": 760,
+          "value": 716,
+          "aiFit": 490,
+          "priceEfficiency": 710,
+          "powerEfficiency": 1000
+        },
+        "nbVector": [
+          1000,
+          760,
+          716,
+          490,
+          710,
+          1000
+        ],
+        "vectorLabels": [
+          "속도",
+          "성능",
+          "가성비",
+          "AI 적합",
+          "가격 효율",
+          "전력 효율"
+        ],
+        "nbMax": 268.61,
+        "nbMin": 669.707,
+        "weightedScore": 738,
+        "nbBand": "700~849",
+        "summary": "Mainboard AM5 B850 Mainboard 부품을 속도 중심 N/B 데이터베이스 점수 738점으로 저장했습니다."
+      },
+      "nbWeightedScore": 738,
+      "nbMax": 268.61,
+      "nbMin": 669.707,
+      "nbBand": "700~849",
+      "priceBand": "15만원 미만",
+      "valueIndex": 53.7,
+      "efficiencyIndex": 6.33,
+      "aiUseScore": 49,
+      "totalScore": 68,
+      "aiExplanation": {
+        "summary": "AM5 B850 Mainboard은 Mainboard 부품군에서 총점 68점, 가성비 53.7로 계산된 후보입니다.",
+        "strengths": [
+          "전력 대비 성능이 좋아 발열과 소음 관리에 유리합니다",
+          "게임용 조립 PC 후보에 넣기 좋습니다",
+          "향후 업그레이드 여지를 함께 볼 수 있습니다"
+        ],
+        "cautions": [
+          "CPU 소켓, 메모리 규격, BIOS 지원 여부 확인이 필요합니다"
+        ],
+        "userLevel": {
+          "level": "중수용",
+          "reason": "가격과 성능 균형은 좋지만 플랫폼, 전력, 업그레이드 방향을 함께 비교해야 합니다."
+        },
+        "recommendation": "조건부 검토 후보"
+      },
+      "priceSourceStatus": "초기 기준값",
+      "sourceQueries": [
+        "AM5 B850 Mainboard 가격",
+        "AM5 B850 Mainboard 성능",
+        "AM5 B850 Mainboard 벤치마크"
+      ]
+    },
+    {
+      "id": "ram-ddr5-64-6000",
+      "category": "RAM",
+      "name": "DDR5 64GB 6000MHz",
+      "maker": "Common",
+      "platform": "DDR5",
+      "estimatedPriceKrw": 260000,
+      "performance": 88,
+      "powerWatts": 18,
+      "speedLabel": "DDR5-6000",
+      "tags": [
+        "creator",
+        "ai"
+      ],
+      "notes": "Chrome 검색 수집 기준으로 가격을 확인하는 작업용 대용량 메모리 후보입니다.",
+      "sourceQuery": "DDR5 64GB 6000MHz 가격",
+      "sourceUrl": "https://search.danawa.com/dsearch.php?k1=DDR5%2064GB%206000MHz%20%EA%B0%80%EA%B2%A9",
+      "sourceStatus": "fallback-price",
+      "collectedPricesKrw": [
+        17390,
+        18417,
+        18594,
+        20495,
+        20858,
+        21547,
+        21554,
+        22109,
+        22485,
+        22562,
+        22594,
+        22617
+      ],
+      "imageUrl": "./img/ram.svg",
+      "speedMetric": {
+        "kind": "memory_transfer_rate",
+        "label": "메모리 전송률",
+        "value": 6000,
+        "unit": "MT/s",
+        "group": "RAM",
+        "compareNote": "RAM은 GHz 표기보다 DDR 전송률과 지연 시간(CL)을 함께 봐야 합니다."
+      },
+      "unifiedSpeedScore": 750,
+      "nbDatabase": {
+        "schema": "pc-part-nb-database.v1",
+        "unit": "100~1000",
+        "priority": "speed-first",
+        "category": "RAM",
+        "partId": "ram-ddr5-64-6000",
+        "partName": "DDR5 64GB 6000MHz",
+        "speed": {
+          "score": 750,
+          "weight": 0.42,
+          "metric": {
+            "kind": "memory_transfer_rate",
+            "label": "메모리 전송률",
+            "value": 6000,
+            "unit": "MT/s",
+            "group": "RAM",
+            "compareNote": "RAM은 GHz 표기보다 DDR 전송률과 지연 시간(CL)을 함께 봐야 합니다."
+          }
+        },
+        "scores": {
+          "speed": 750,
+          "performance": 880,
+          "value": 451,
+          "aiFit": 880,
+          "priceEfficiency": 380,
+          "powerEfficiency": 1000
+        },
+        "nbVector": [
+          750,
+          880,
+          451,
+          880,
+          380,
+          1000
+        ],
+        "vectorLabels": [
+          "속도",
+          "성능",
+          "가성비",
+          "AI 적합",
+          "가격 효율",
+          "전력 효율"
+        ],
+        "nbMax": 296.635,
+        "nbMin": 574.459,
+        "weightedScore": 733,
+        "nbBand": "700~849",
+        "summary": "RAM DDR5 64GB 6000MHz 부품을 속도 중심 N/B 데이터베이스 점수 733점으로 저장했습니다."
+      },
+      "nbWeightedScore": 733,
+      "nbMax": 296.635,
+      "nbMin": 574.459,
+      "nbBand": "700~849",
+      "priceBand": "15~30만원",
+      "valueIndex": 33.8,
+      "efficiencyIndex": 4.89,
+      "aiUseScore": 88,
+      "totalScore": 62,
+      "aiExplanation": {
+        "summary": "DDR5 64GB 6000MHz은 RAM 부품군에서 총점 62점, 가성비 33.8로 계산된 후보입니다.",
+        "strengths": [
+          "AI 작업 또는 크리에이터 작업 후보로 분류할 수 있습니다",
+          "전력 대비 성능이 좋아 발열과 소음 관리에 유리합니다"
+        ],
+        "cautions": [],
+        "userLevel": {
+          "level": "고수용",
+          "reason": "성능은 높지만 가격, 전력, 호환성 확인 부담이 커서 조립 경험이 있는 사용자에게 적합합니다."
+        },
+        "recommendation": "조건부 검토 후보"
+      },
+      "priceSourceStatus": "초기 기준값",
+      "sourceQueries": [
+        "DDR5 64GB 6000MHz 가격",
+        "DDR5 64GB 6000MHz 성능",
+        "DDR5 64GB 6000MHz 벤치마크"
+      ]
+    },
+    {
+      "id": "cpu-ryzen-5-9600",
+      "category": "CPU",
+      "name": "AMD Ryzen 5 9600",
+      "maker": "AMD",
+      "platform": "AM5",
+      "estimatedPriceKrw": 216750,
+      "performance": 78,
+      "powerWatts": 65,
+      "speedLabel": "최대 부스트 약 5.2GHz",
+      "tags": [
+        "gaming",
+        "office",
+        "upgrade"
+      ],
+      "notes": "Chrome 검색 수집 기준으로 가격을 확인하는 AM5 CPU 후보입니다.",
+      "sourceQuery": "AMD Ryzen 5 9600 가격",
+      "sourceUrl": "https://search.danawa.com/dsearch.php?k1=AMD%20Ryzen%205%209600%20%EA%B0%80%EA%B2%A9",
+      "sourceStatus": "chrome-collected",
+      "collectedPricesKrw": [
+        216750,
+        240100,
+        259490,
+        268880,
+        268980,
+        270180,
+        270240,
+        280320,
+        289000,
+        293430,
+        354880,
+        372770
+      ],
+      "imageUrl": "./img/cpu.svg",
+      "speedMetric": {
+        "kind": "cpu_boost_clock",
+        "label": "CPU 최대 부스트 클럭",
+        "value": 5.2,
+        "unit": "GHz",
+        "group": "CPU",
+        "compareNote": "CPU끼리는 GHz와 코어 수, 캐시, 세대 차이를 함께 봐야 합니다."
+      },
+      "unifiedSpeedScore": 867,
+      "nbDatabase": {
+        "schema": "pc-part-nb-database.v1",
+        "unit": "100~1000",
+        "priority": "speed-first",
+        "category": "CPU",
+        "partId": "cpu-ryzen-5-9600",
+        "partName": "AMD Ryzen 5 9600",
+        "speed": {
+          "score": 867,
+          "weight": 0.42,
+          "metric": {
+            "kind": "cpu_boost_clock",
+            "label": "CPU 최대 부스트 클럭",
+            "value": 5.2,
+            "unit": "GHz",
+            "group": "CPU",
+            "compareNote": "CPU끼리는 GHz와 코어 수, 캐시, 세대 차이를 함께 봐야 합니다."
+          }
+        },
+        "scores": {
+          "speed": 867,
+          "performance": 780,
+          "value": 480,
+          "aiFit": 510,
+          "priceEfficiency": 460,
+          "powerEfficiency": 400
+        },
+        "nbVector": [
+          867,
+          780,
+          480,
+          510,
+          460,
+          400
+        ],
+        "vectorLabels": [
+          "속도",
+          "성능",
+          "가성비",
+          "AI 적합",
+          "가격 효율",
+          "전력 효율"
+        ],
+        "nbMax": 168.957,
+        "nbMin": 640.422,
+        "weightedScore": 699,
+        "nbBand": "500~699",
+        "summary": "CPU AMD Ryzen 5 9600 부품을 속도 중심 N/B 데이터베이스 점수 699점으로 저장했습니다."
+      },
+      "nbWeightedScore": 699,
+      "nbMax": 168.957,
+      "nbMin": 640.422,
+      "nbBand": "500~699",
+      "priceBand": "15~30만원",
+      "valueIndex": 36,
+      "efficiencyIndex": 1.2,
+      "aiUseScore": 51,
+      "totalScore": 59,
+      "aiExplanation": {
+        "summary": "AMD Ryzen 5 9600은 CPU 부품군에서 총점 59점, 가성비 36로 계산된 후보입니다.",
+        "strengths": [
+          "전력 대비 성능이 좋아 발열과 소음 관리에 유리합니다",
+          "게임용 조립 PC 후보에 넣기 좋습니다",
+          "향후 업그레이드 여지를 함께 볼 수 있습니다"
+        ],
+        "cautions": [
+          "AM5 메인보드와 DDR5 메모리 호환성을 함께 확인해야 합니다"
+        ],
+        "userLevel": {
+          "level": "중수용",
+          "reason": "가격과 성능 균형은 좋지만 플랫폼, 전력, 업그레이드 방향을 함께 비교해야 합니다."
+        },
+        "recommendation": "가격 변동 확인 후보"
+      },
+      "priceSourceStatus": "초기 기준값",
+      "sourceQueries": [
+        "AMD Ryzen 5 9600 가격",
+        "AMD Ryzen 5 9600 성능",
+        "AMD Ryzen 5 9600 벤치마크"
+      ]
+    },
+    {
+      "id": "cpu-ryzen-7-9700x",
+      "category": "CPU",
+      "name": "AMD Ryzen 7 9700X",
+      "maker": "AMD",
+      "platform": "AM5",
+      "estimatedPriceKrw": 362980,
+      "performance": 88,
+      "powerWatts": 65,
+      "speedLabel": "최대 부스트 약 5.5GHz",
+      "tags": [
+        "gaming",
+        "creator",
+        "quiet"
+      ],
+      "notes": "Chrome 검색 수집 기준으로 가격을 확인하는 고효율 작업용 CPU 후보입니다.",
+      "sourceQuery": "AMD Ryzen 7 9700X 가격",
+      "sourceUrl": "https://search.danawa.com/dsearch.php?k1=AMD%20Ryzen%207%209700X%20%EA%B0%80%EA%B2%A9",
+      "sourceStatus": "chrome-collected",
+      "collectedPricesKrw": [
+        189500,
+        362980,
+        368680,
+        373000,
+        379000,
+        379830,
+        381650,
+        393900,
+        394400,
+        401850,
+        488060,
+        495500
+      ],
+      "imageUrl": "./img/cpu.svg",
+      "speedMetric": {
+        "kind": "cpu_boost_clock",
+        "label": "CPU 최대 부스트 클럭",
+        "value": 5.5,
+        "unit": "GHz",
+        "group": "CPU",
+        "compareNote": "CPU끼리는 GHz와 코어 수, 캐시, 세대 차이를 함께 봐야 합니다."
+      },
+      "unifiedSpeedScore": 917,
+      "nbDatabase": {
+        "schema": "pc-part-nb-database.v1",
+        "unit": "100~1000",
+        "priority": "speed-first",
+        "category": "CPU",
+        "partId": "cpu-ryzen-7-9700x",
+        "partName": "AMD Ryzen 7 9700X",
+        "speed": {
+          "score": 917,
+          "weight": 0.42,
+          "metric": {
+            "kind": "cpu_boost_clock",
+            "label": "CPU 최대 부스트 클럭",
+            "value": 5.5,
+            "unit": "GHz",
+            "group": "CPU",
+            "compareNote": "CPU끼리는 GHz와 코어 수, 캐시, 세대 차이를 함께 봐야 합니다."
+          }
+        },
+        "scores": {
+          "speed": 917,
+          "performance": 880,
+          "value": 323,
+          "aiFit": 570,
+          "priceEfficiency": 280,
+          "powerEfficiency": 451
+        },
+        "nbVector": [
+          917,
+          880,
+          323,
+          570,
+          280,
+          451
+        ],
+        "vectorLabels": [
+          "속도",
+          "성능",
+          "가성비",
+          "AI 적합",
+          "가격 효율",
+          "전력 효율"
+        ],
+        "nbMax": 234.616,
+        "nbMin": 514,
+        "weightedScore": 713,
+        "nbBand": "700~849",
+        "summary": "CPU AMD Ryzen 7 9700X 부품을 속도 중심 N/B 데이터베이스 점수 713점으로 저장했습니다."
+      },
+      "nbWeightedScore": 713,
+      "nbMax": 234.616,
+      "nbMin": 514,
+      "nbBand": "700~849",
+      "priceBand": "30~60만원",
+      "valueIndex": 24.2,
+      "efficiencyIndex": 1.35,
+      "aiUseScore": 57,
+      "totalScore": 57,
+      "aiExplanation": {
+        "summary": "AMD Ryzen 7 9700X은 CPU 부품군에서 총점 57점, 가성비 24.2로 계산된 후보입니다.",
+        "strengths": [
+          "전력 대비 성능이 좋아 발열과 소음 관리에 유리합니다",
+          "게임용 조립 PC 후보에 넣기 좋습니다"
+        ],
+        "cautions": [
+          "AM5 메인보드와 DDR5 메모리 호환성을 함께 확인해야 합니다"
+        ],
+        "userLevel": {
+          "level": "중수용",
+          "reason": "가격과 성능 균형은 좋지만 플랫폼, 전력, 업그레이드 방향을 함께 비교해야 합니다."
+        },
+        "recommendation": "가격 변동 확인 후보"
+      },
+      "priceSourceStatus": "초기 기준값",
+      "sourceQueries": [
+        "AMD Ryzen 7 9700X 가격",
+        "AMD Ryzen 7 9700X 성능",
+        "AMD Ryzen 7 9700X 벤치마크"
+      ]
+    },
+    {
+      "id": "cpu-core-ultra-5-245k",
+      "category": "CPU",
+      "name": "Intel Core Ultra 5 245K",
+      "maker": "Intel",
+      "platform": "LGA1851",
+      "estimatedPriceKrw": 284070,
+      "performance": 82,
+      "powerWatts": 125,
+      "speedLabel": "최대 터보 약 5.2GHz",
+      "tags": [
+        "gaming",
+        "creator"
+      ],
+      "notes": "Chrome 검색 수집 기준으로 가격을 확인하는 인텔 플랫폼 CPU 후보입니다.",
+      "sourceQuery": "Intel Core Ultra 5 245K 가격",
+      "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Intel%20Core%20Ultra%205%20245K%20%EA%B0%80%EA%B2%A9",
+      "sourceStatus": "chrome-collected",
+      "collectedPricesKrw": [
+        284070,
+        335890,
+        1115020,
+        1135530,
+        1243610,
+        1384630,
+        1479690,
+        1548390,
+        1638450,
+        1690000,
+        1703060,
+        1780000
+      ],
+      "imageUrl": "./img/cpu.svg",
+      "speedMetric": {
+        "kind": "cpu_turbo_clock",
+        "label": "CPU 최대 터보 클럭",
+        "value": 5.2,
+        "unit": "GHz",
+        "group": "CPU",
+        "compareNote": "Intel CPU는 P코어/E코어 구조도 같이 확인해야 합니다."
+      },
+      "unifiedSpeedScore": 867,
+      "nbDatabase": {
+        "schema": "pc-part-nb-database.v1",
+        "unit": "100~1000",
+        "priority": "speed-first",
+        "category": "CPU",
+        "partId": "cpu-core-ultra-5-245k",
+        "partName": "Intel Core Ultra 5 245K",
+        "speed": {
+          "score": 867,
+          "weight": 0.42,
+          "metric": {
+            "kind": "cpu_turbo_clock",
+            "label": "CPU 최대 터보 클럭",
+            "value": 5.2,
+            "unit": "GHz",
+            "group": "CPU",
+            "compareNote": "Intel CPU는 P코어/E코어 구조도 같이 확인해야 합니다."
+          }
+        },
+        "scores": {
+          "speed": 867,
+          "performance": 820,
+          "value": 385,
+          "aiFit": 530,
+          "priceEfficiency": 350,
+          "powerEfficiency": 219
+        },
+        "nbVector": [
+          867,
+          820,
+          385,
+          530,
+          350,
+          219
+        ],
+        "vectorLabels": [
+          "속도",
+          "성능",
+          "가성비",
+          "AI 적합",
+          "가격 효율",
+          "전력 효율"
+        ],
+        "nbMax": 260.085,
+        "nbMin": 473.842,
+        "weightedScore": 676,
+        "nbBand": "500~699",
+        "summary": "CPU Intel Core Ultra 5 245K 부품을 속도 중심 N/B 데이터베이스 점수 676점으로 저장했습니다."
+      },
+      "nbWeightedScore": 676,
+      "nbMax": 260.085,
+      "nbMin": 473.842,
+      "nbBand": "500~699",
+      "priceBand": "15~30만원",
+      "valueIndex": 28.9,
+      "efficiencyIndex": 0.66,
+      "aiUseScore": 53,
+      "totalScore": 57,
+      "aiExplanation": {
+        "summary": "Intel Core Ultra 5 245K은 CPU 부품군에서 총점 57점, 가성비 28.9로 계산된 후보입니다.",
+        "strengths": [
+          "게임용 조립 PC 후보에 넣기 좋습니다"
+        ],
+        "cautions": [
+          "LGA1851 메인보드와 DDR5 메모리 호환성을 함께 확인해야 합니다"
+        ],
+        "userLevel": {
+          "level": "중수용",
+          "reason": "가격과 성능 균형은 좋지만 플랫폼, 전력, 업그레이드 방향을 함께 비교해야 합니다."
+        },
+        "recommendation": "가격 변동 확인 후보"
+      },
+      "priceSourceStatus": "초기 기준값",
+      "sourceQueries": [
+        "Intel Core Ultra 5 245K 가격",
+        "Intel Core Ultra 5 245K 성능",
+        "Intel Core Ultra 5 245K 벤치마크"
+      ]
+    },
+    {
+      "id": "mb-lga1851-b860",
+      "category": "Mainboard",
+      "name": "LGA1851 B860 Mainboard",
+      "maker": "Common",
+      "platform": "LGA1851",
+      "estimatedPriceKrw": 258250,
+      "performance": 75,
+      "powerWatts": 12,
+      "speedLabel": "DDR5 / PCIe 5.0 지원급",
+      "tags": [
+        "gaming",
+        "office"
+      ],
+      "notes": "Chrome 검색 수집 기준으로 가격을 확인하는 인텔 메인보드 후보입니다.",
+      "sourceQuery": "LGA1851 B860 메인보드 가격",
+      "sourceUrl": "https://search.danawa.com/dsearch.php?k1=LGA1851%20B860%20%EB%A9%94%EC%9D%B8%EB%B3%B4%EB%93%9C%20%EA%B0%80%EA%B2%A9",
+      "sourceStatus": "chrome-collected",
+      "collectedPricesKrw": [
+        258250,
+        289630,
+        289850,
+        292900,
+        299910,
+        345990,
+        347870,
+        356700,
+        357500,
+        368130,
+        369200,
+        370080
+      ],
+      "imageUrl": "./img/mainboard.svg",
+      "speedMetric": {
+        "kind": "platform_io",
+        "label": "플랫폼 지원",
+        "value": 5,
+        "unit": "PCIe 세대",
+        "group": "Mainboard",
+        "compareNote": "메인보드는 GHz보다 CPU 소켓, 메모리 규격, PCIe 세대, 확장성을 봐야 합니다."
+      },
+      "unifiedSpeedScore": 1000,
+      "nbDatabase": {
+        "schema": "pc-part-nb-database.v1",
+        "unit": "100~1000",
+        "priority": "speed-first",
+        "category": "Mainboard",
+        "partId": "mb-lga1851-b860",
+        "partName": "LGA1851 B860 Mainboard",
+        "speed": {
+          "score": 1000,
+          "weight": 0.32,
+          "metric": {
+            "kind": "platform_io",
+            "label": "플랫폼 지원",
+            "value": 5,
+            "unit": "PCIe 세대",
+            "group": "Mainboard",
+            "compareNote": "메인보드는 GHz보다 CPU 소켓, 메모리 규격, PCIe 세대, 확장성을 봐야 합니다."
+          }
+        },
+        "scores": {
+          "speed": 1000,
+          "performance": 750,
+          "value": 387,
+          "aiFit": 490,
+          "priceEfficiency": 390,
+          "powerEfficiency": 1000
+        },
+        "nbVector": [
+          1000,
+          750,
+          387,
+          490,
+          390,
+          1000
+        ],
+        "vectorLabels": [
+          "속도",
+          "성능",
+          "가성비",
+          "AI 적합",
+          "가격 효율",
+          "전력 효율"
+        ],
+        "nbMax": 225.845,
+        "nbMin": 580.233,
+        "weightedScore": 664,
+        "nbBand": "500~699",
+        "summary": "Mainboard LGA1851 B860 Mainboard 부품을 속도 중심 N/B 데이터베이스 점수 664점으로 저장했습니다."
+      },
+      "nbWeightedScore": 664,
+      "nbMax": 225.845,
+      "nbMin": 580.233,
+      "nbBand": "500~699",
+      "priceBand": "15~30만원",
+      "valueIndex": 29,
+      "efficiencyIndex": 6.25,
+      "aiUseScore": 49,
+      "totalScore": 54,
+      "aiExplanation": {
+        "summary": "LGA1851 B860 Mainboard은 Mainboard 부품군에서 총점 54점, 가성비 29로 계산된 후보입니다.",
+        "strengths": [
+          "전력 대비 성능이 좋아 발열과 소음 관리에 유리합니다",
+          "게임용 조립 PC 후보에 넣기 좋습니다"
+        ],
+        "cautions": [
+          "CPU 소켓, 메모리 규격, BIOS 지원 여부 확인이 필요합니다"
+        ],
+        "userLevel": {
+          "level": "중수용",
+          "reason": "가격과 성능 균형은 좋지만 플랫폼, 전력, 업그레이드 방향을 함께 비교해야 합니다."
+        },
+        "recommendation": "가격 변동 확인 후보"
+      },
+      "priceSourceStatus": "초기 기준값",
+      "sourceQueries": [
+        "LGA1851 B860 Mainboard 가격",
+        "LGA1851 B860 Mainboard 성능",
+        "LGA1851 B860 Mainboard 벤치마크"
+      ]
+    },
+    {
+      "id": "gpu-rtx-5070",
+      "category": "GPU",
+      "name": "NVIDIA GeForce RTX 5070",
+      "maker": "NVIDIA",
+      "platform": "PCIe",
+      "estimatedPriceKrw": 945800,
+      "performance": 93,
+      "powerWatts": 250,
+      "vramGb": 12,
+      "speedLabel": "12GB VRAM / 고성능 GPU",
+      "tags": [
+        "gaming",
+        "ai",
+        "creator"
+      ],
+      "notes": "Chrome 검색 수집 기준으로 가격을 확인하는 고성능 GPU 후보입니다.",
+      "sourceQuery": "NVIDIA GeForce RTX 5070 가격",
+      "sourceUrl": "https://search.danawa.com/dsearch.php?k1=NVIDIA%20GeForce%20RTX%205070%20%EA%B0%80%EA%B2%A9",
+      "sourceStatus": "chrome-collected",
+      "collectedPricesKrw": [
+        945800,
+        947000,
+        1050000,
+        1500000,
+        1532800,
+        1565000,
+        1620980
+      ],
+      "imageUrl": "./img/gpu.svg",
+      "speedMetric": {
+        "kind": "gpu_memory_capacity",
+        "label": "그래픽 메모리",
+        "value": 12,
+        "unit": "GB VRAM",
+        "group": "GPU",
+        "compareNote": "GPU는 GHz보다 코어 구조, VRAM, 메모리 대역폭, 전력 제한이 더 중요할 수 있습니다."
+      },
+      "unifiedSpeedScore": 500,
+      "nbDatabase": {
+        "schema": "pc-part-nb-database.v1",
+        "unit": "100~1000",
+        "priority": "speed-first",
+        "category": "GPU",
+        "partId": "gpu-rtx-5070",
+        "partName": "NVIDIA GeForce RTX 5070",
+        "speed": {
+          "score": 500,
+          "weight": 0.42,
+          "metric": {
+            "kind": "gpu_memory_capacity",
+            "label": "그래픽 메모리",
+            "value": 12,
+            "unit": "GB VRAM",
+            "group": "GPU",
+            "compareNote": "GPU는 GHz보다 코어 구조, VRAM, 메모리 대역폭, 전력 제한이 더 중요할 수 있습니다."
+          }
+        },
+        "scores": {
+          "speed": 500,
+          "performance": 930,
+          "value": 131,
+          "aiFit": 1000,
+          "priceEfficiency": 110,
+          "powerEfficiency": 124
+        },
+        "nbVector": [
+          500,
+          930,
+          131,
+          1000,
+          110,
+          124
+        ],
+        "vectorLabels": [
+          "속도",
+          "성능",
+          "가성비",
+          "AI 적합",
+          "가격 효율",
+          "전력 효율"
+        ],
+        "nbMax": 198.134,
+        "nbMin": 362.729,
+        "weightedScore": 531,
+        "nbBand": "500~699",
+        "summary": "GPU NVIDIA GeForce RTX 5070 부품을 속도 중심 N/B 데이터베이스 점수 531점으로 저장했습니다."
+      },
+      "nbWeightedScore": 531,
+      "nbMax": 198.134,
+      "nbMin": 362.729,
+      "nbBand": "500~699",
+      "priceBand": "60만원 이상",
+      "valueIndex": 9.8,
+      "efficiencyIndex": 0.37,
+      "aiUseScore": 100,
+      "totalScore": 52,
+      "aiExplanation": {
+        "summary": "NVIDIA GeForce RTX 5070은 GPU 부품군에서 총점 52점, 가성비 9.8로 계산된 후보입니다.",
+        "strengths": [
+          "AI 작업 또는 크리에이터 작업 후보로 분류할 수 있습니다",
+          "게임용 조립 PC 후보에 넣기 좋습니다"
+        ],
+        "cautions": [
+          "AI 모델이나 고해상도 텍스처 작업에서는 VRAM 용량을 다시 확인해야 합니다",
+          "파워 용량과 케이스 내부 발열 여유를 같이 확인해야 합니다"
+        ],
+        "userLevel": {
+          "level": "고수용",
+          "reason": "성능은 높지만 가격, 전력, 호환성 확인 부담이 커서 조립 경험이 있는 사용자에게 적합합니다."
+        },
+        "recommendation": "가격 변동 확인 후보"
+      },
+      "priceSourceStatus": "초기 기준값",
+      "sourceQueries": [
+        "NVIDIA GeForce RTX 5070 가격",
+        "NVIDIA GeForce RTX 5070 성능",
+        "NVIDIA GeForce RTX 5070 벤치마크"
+      ]
+    },
+    {
+      "id": "gpu-rtx-5060-ti",
+      "category": "GPU",
+      "name": "NVIDIA GeForce RTX 5060 Ti",
+      "maker": "NVIDIA",
+      "platform": "PCIe",
+      "estimatedPriceKrw": 848000,
+      "performance": 82,
+      "powerWatts": 180,
+      "vramGb": 16,
+      "speedLabel": "16GB VRAM / PCIe 그래픽",
+      "tags": [
+        "gaming",
+        "ai",
+        "creator"
+      ],
+      "notes": "Chrome 검색 수집 기준으로 가격을 확인하는 AI/게임 겸용 GPU 후보입니다.",
+      "sourceQuery": "NVIDIA GeForce RTX 5060 Ti 16GB 가격",
+      "sourceUrl": "https://search.danawa.com/dsearch.php?k1=NVIDIA%20GeForce%20RTX%205060%20Ti%2016GB%20%EA%B0%80%EA%B2%A9",
+      "sourceStatus": "chrome-collected",
+      "collectedPricesKrw": [
+        848000,
+        850000,
+        860000,
+        870000,
+        889000,
+        919000,
+        979990
+      ],
+      "imageUrl": "./img/gpu.svg",
+      "speedMetric": {
+        "kind": "gpu_memory_capacity",
+        "label": "그래픽 메모리",
+        "value": 16,
+        "unit": "GB VRAM",
+        "group": "GPU",
+        "compareNote": "GPU는 GHz보다 코어 구조, VRAM, 메모리 대역폭, 전력 제한이 더 중요할 수 있습니다."
+      },
+      "unifiedSpeedScore": 667,
+      "nbDatabase": {
+        "schema": "pc-part-nb-database.v1",
+        "unit": "100~1000",
+        "priority": "speed-first",
+        "category": "GPU",
+        "partId": "gpu-rtx-5060-ti",
+        "partName": "NVIDIA GeForce RTX 5060 Ti",
+        "speed": {
+          "score": 667,
+          "weight": 0.42,
+          "metric": {
+            "kind": "gpu_memory_capacity",
+            "label": "그래픽 메모리",
+            "value": 16,
+            "unit": "GB VRAM",
+            "group": "GPU",
+            "compareNote": "GPU는 GHz보다 코어 구조, VRAM, 메모리 대역폭, 전력 제한이 더 중요할 수 있습니다."
+          }
+        },
+        "scores": {
+          "speed": 667,
+          "performance": 820,
+          "value": 129,
+          "aiFit": 980,
+          "priceEfficiency": 120,
+          "powerEfficiency": 152
+        },
+        "nbVector": [
+          667,
+          820,
+          129,
+          980,
+          120,
+          152
+        ],
+        "vectorLabels": [
+          "속도",
+          "성능",
+          "가성비",
+          "AI 적합",
+          "가격 효율",
+          "전력 효율"
+        ],
+        "nbMax": 212.336,
+        "nbMin": 374.921,
+        "weightedScore": 579,
+        "nbBand": "500~699",
+        "summary": "GPU NVIDIA GeForce RTX 5060 Ti 부품을 속도 중심 N/B 데이터베이스 점수 579점으로 저장했습니다."
+      },
+      "nbWeightedScore": 579,
+      "nbMax": 212.336,
+      "nbMin": 374.921,
+      "nbBand": "500~699",
+      "priceBand": "60만원 이상",
+      "valueIndex": 9.7,
+      "efficiencyIndex": 0.46,
+      "aiUseScore": 98,
+      "totalScore": 46,
+      "aiExplanation": {
+        "summary": "NVIDIA GeForce RTX 5060 Ti은 GPU 부품군에서 총점 46점, 가성비 9.7로 계산된 후보입니다.",
+        "strengths": [
+          "AI 작업 또는 크리에이터 작업 후보로 분류할 수 있습니다",
+          "게임용 조립 PC 후보에 넣기 좋습니다"
+        ],
+        "cautions": [],
+        "userLevel": {
+          "level": "고수용",
+          "reason": "성능은 높지만 가격, 전력, 호환성 확인 부담이 커서 조립 경험이 있는 사용자에게 적합합니다."
+        },
+        "recommendation": "가격 변동 확인 후보"
+      },
+      "priceSourceStatus": "초기 기준값",
+      "sourceQueries": [
+        "NVIDIA GeForce RTX 5060 Ti 가격",
+        "NVIDIA GeForce RTX 5060 Ti 성능",
+        "NVIDIA GeForce RTX 5060 Ti 벤치마크"
+      ]
+    },
+    {
+      "id": "gpu-rx-9060-xt",
+      "category": "GPU",
+      "name": "AMD Radeon RX 9060 XT",
+      "maker": "AMD",
+      "platform": "PCIe",
+      "estimatedPriceKrw": 618800,
+      "performance": 78,
+      "powerWatts": 170,
+      "vramGb": 16,
+      "speedLabel": "16GB VRAM / PCIe 그래픽",
+      "tags": [
+        "gaming",
+        "value"
+      ],
+      "notes": "Chrome 검색 수집 기준으로 가격을 확인하는 가성비 GPU 후보입니다.",
+      "sourceQuery": "AMD Radeon RX 9060 XT 16GB 가격",
+      "sourceUrl": "https://search.danawa.com/dsearch.php?k1=AMD%20Radeon%20RX%209060%20XT%2016GB%20%EA%B0%80%EA%B2%A9",
+      "sourceStatus": "chrome-collected",
+      "collectedPricesKrw": [
+        618800,
+        619890,
+        650000,
+        652700,
+        655090,
+        677730,
+        732080,
+        777990
+      ],
+      "imageUrl": "./img/gpu.svg",
+      "speedMetric": {
+        "kind": "gpu_memory_capacity",
+        "label": "그래픽 메모리",
+        "value": 16,
+        "unit": "GB VRAM",
+        "group": "GPU",
+        "compareNote": "GPU는 GHz보다 코어 구조, VRAM, 메모리 대역폭, 전력 제한이 더 중요할 수 있습니다."
+      },
+      "unifiedSpeedScore": 667,
+      "nbDatabase": {
+        "schema": "pc-part-nb-database.v1",
+        "unit": "100~1000",
+        "priority": "speed-first",
+        "category": "GPU",
+        "partId": "gpu-rx-9060-xt",
+        "partName": "AMD Radeon RX 9060 XT",
+        "speed": {
+          "score": 667,
+          "weight": 0.42,
+          "metric": {
+            "kind": "gpu_memory_capacity",
+            "label": "그래픽 메모리",
+            "value": 16,
+            "unit": "GB VRAM",
+            "group": "GPU",
+            "compareNote": "GPU는 GHz보다 코어 구조, VRAM, 메모리 대역폭, 전력 제한이 더 중요할 수 있습니다."
+          }
+        },
+        "scores": {
+          "speed": 667,
+          "performance": 780,
+          "value": 168,
+          "aiFit": 510,
+          "priceEfficiency": 160,
+          "powerEfficiency": 153
+        },
+        "nbVector": [
+          667,
+          780,
+          168,
+          510,
+          160,
+          153
+        ],
+        "vectorLabels": [
+          "속도",
+          "성능",
+          "가성비",
+          "AI 적합",
+          "가격 효율",
+          "전력 효율"
+        ],
+        "nbMax": 201.777,
+        "nbMin": 425.434,
+        "weightedScore": 533,
+        "nbBand": "500~699",
+        "summary": "GPU AMD Radeon RX 9060 XT 부품을 속도 중심 N/B 데이터베이스 점수 533점으로 저장했습니다."
+      },
+      "nbWeightedScore": 533,
+      "nbMax": 201.777,
+      "nbMin": 425.434,
+      "nbBand": "500~699",
+      "priceBand": "60만원 이상",
+      "valueIndex": 12.6,
+      "efficiencyIndex": 0.46,
+      "aiUseScore": 51,
+      "totalScore": 46,
+      "aiExplanation": {
+        "summary": "AMD Radeon RX 9060 XT은 GPU 부품군에서 총점 46점, 가성비 12.6로 계산된 후보입니다.",
+        "strengths": [
+          "게임용 조립 PC 후보에 넣기 좋습니다"
+        ],
+        "cautions": [],
+        "userLevel": {
+          "level": "고수용",
+          "reason": "성능은 높지만 가격, 전력, 호환성 확인 부담이 커서 조립 경험이 있는 사용자에게 적합합니다."
+        },
+        "recommendation": "가격 변동 확인 후보"
+      },
+      "priceSourceStatus": "초기 기준값",
+      "sourceQueries": [
+        "AMD Radeon RX 9060 XT 가격",
+        "AMD Radeon RX 9060 XT 성능",
+        "AMD Radeon RX 9060 XT 벤치마크"
+      ]
+    }
+  ],
+  "builds": [
+    {
+      "id": "optimized-6",
+      "buildKey": "cpu-core-ultra-5-245k|gpu-rtx-5070|ram-ddr5-64-6000|ssd-nvme-2tb-gen4|mb-lga1851-b860|psu-650w-gold",
+      "title": "N/B MAX 최적화 조립 #6",
+      "purpose": "Chrome 검색 수집 부품을 조합해 N/B MAX와 가격 대비 성능을 동시에 높인 구성",
+      "optimizationTarget": "N/B MAX 상승",
+      "partIds": [
+        "cpu-core-ultra-5-245k",
+        "gpu-rtx-5070",
+        "ram-ddr5-64-6000",
+        "ssd-nvme-2tb-gen4",
+        "mb-lga1851-b860",
+        "psu-650w-gold"
+      ],
+      "nbWeight": {
+        "source": "bitCalculation.v.0.1.js 기반 N/B 가중치",
+        "bitMax": 252.076,
+        "bitMin": 665.766,
+        "balanceScore": 586.3,
+        "weightedScore": 671,
+        "nbBand": "500~699",
+        "nbVector": [
+          827,
+          539,
+          703,
+          773.67,
+          539,
+          401
+        ],
+        "vectorLabels": [
+          "평균 성능",
+          "평균 가성비",
+          "AI 적합도",
+          "통합 속도",
+          "가격 효율",
+          "전력 효율"
+        ],
+        "summary": "완성 조합의 통합 속도와 가격 효율을 100~1000점으로 변환해 N/B 상한 252.076, 하한 665.766, 조합 가중치 671점으로 계산했습니다."
+      },
+      "totalPriceKrw": 1941720,
+      "avgPerformance": 82.7,
+      "pricePerformanceIndex": 42.6,
+      "optimizationScore": 356.8,
+      "alreadyExplored": false,
+      "estimatedLoadWatts": 412,
+      "recommendedPsuHeadroomWatts": 238,
+      "score": 65,
+      "warnings": [],
+      "aiExplanation": {
+        "summary": "Thinking... * Role: Custom PC Recommendation/Analysis AI. * Task: Evaluate a specific PC build in Korean. * Constraints: * Short and clear. * Max 3 sentences. * No exaggeration. * Include Price, Performance, Compatibility, and Purpose. * Build Name: N/B MAX 최적화 조립 #6 * Total Price: 1,869,470 KRW * CPU: Intel Core Ultra 5 245K (New LGA1851) * GPU: NVIDIA GeForce RTX 5070 (Upcoming/Speculative, but treated as \u001b[K part of the prompt) * RAM: DDR5 64GB 6000MHz * SSD: NVMe Gen4 2TB * Mainboard: LGA1851 B860 * PSU: 650W 80PLUS Gold * Total Power Load: 412W * *Price:* ~1.87 million KRW. For these specs (Ultra 5 + RTX 5070), i\u001b[1D\u001b[K it's very aggressively priced (potentially unrealistic based on current mar\u001b[3D\u001b[K market expectations for 50-series, but I must analyze the provided data). * *Performance:* High-end gaming and productivity (64GB RAM + 5070). \u001b[K Core Ultra 5 245K is a modern mid-to-high range CPU. * *Compatibility:* LGA1851 board with Core Ultra 5 is correct. Gen4 S\u001b[1D\u001b[K SSD and DDR5 are standard. 650W Gold is sufficient for a 412W load, though \u001b[K slightly lean for high-end spikes. * *Purpose:* High-performance gaming, 4K/QHD content creation, and mu\u001b[2D\u001b[K multitasking. * *Draft 1:* 약 187만 원의 가격에 RTX 5070과 Core Ultra 5 245K를 조합\u001b[K 하여 최신 게임과 고사양 작업에 적합한 성능을 갖췄습니다. 최신 LGA1851 소켓과\u001b[K DDR5 64GB로 호환성과 확장성이 뛰어나며, 예상 부하 대비 650W 파워는 적절합니\u001b[K 다. 전반적으로 가성비와 고성능을 동시에 잡은 게이밍 및 작업용 구성입니다. * *Refining for constraints (3 sentences, clear, no exaggeration):* 1. 약 187만 원의 가격으로 RTX 5070과 Core Ultra 5 245K를 탑재해 고해상도\u001b[K 게임 및 전문 작업에 최적화된 성능을 제공합니다. 2. LGA1851 보드와 DDR5 64GB 메모리로 최신 플랫폼 호환성이 뛰어나며, 650\u001b[3D\u001b[K 650W 파워는 예상 부하(412W)를 충분히 감당합니다. 3. 최신 하드웨어 기반의 밸런스가 좋은 고성능 게이밍 및 멀티태스킹용 PC입\u001b[K 니다. * Short and clear? Yes. * 3 sentences or less? Yes. * No exaggeration? Yes. * Price included? Yes (~187만 원). * Performance included? Yes (고해상도 게임 및 전문 작업). * Compatibility included? Yes (LGA1851, 650W PSU). * Purpose included? Yes (게이밍 및 멀티태스킹). ...done thinking. 약 187만 원의 가격에 RTX 5070과 Core Ultra 5 245K를 탑재하여 고해상도 게임 \u001b[K 및 전문 작업에 최적화된 성능을 제공합니다. LGA1851 플랫폼과 DDR5 64GB 메모리\u001b[K 로 최신 호환성이 뛰어나며, 650W 파워는 예상 부하(412W)를 안정적으로 지원합니\u001b[K 다. 전반적으로 최신 하드웨어의 밸런스가 좋은 고성능 게이밍 및 멀티태스킹용 \u001b[K 구성입니다.",
+        "reasons": [
+          "Intel Core Ultra 5 245K와 NVIDIA GeForce RTX 5070 조합으로 CPU와 GPU 성능 균형을 맞췄습니다",
+          "DDR5 64GB 6000MHz를 넣어 게임, 작업, 브라우저 동시 사용 여유를 확보했습니다",
+          "NVMe Gen4 SSD 2TB로 운영체제와 작업 파일 저장 공간을 확보했습니다",
+          "650W 파워 기준 예상 부하 412W로 계산했습니다"
+        ],
+        "verdict": "가격 변동을 보고 재검토",
+        "source": "ollama:gemma4:31b-cloud"
+      },
+      "parts": [
+        {
+          "category": "CPU",
+          "name": "Intel Core Ultra 5 245K",
+          "maker": "Intel",
+          "platform": "LGA1851",
+          "priceKrw": 284070,
+          "speedLabel": "최대 터보 약 5.2GHz",
+          "unifiedSpeedScore": 867,
+          "performance": 82,
+          "valueIndex": 28.9,
+          "aiUseScore": 53,
+          "score": 57,
+          "powerWatts": 125,
+          "tags": [
+            "gaming",
+            "creator"
+          ],
+          "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Intel%20Core%20Ultra%205%20245K%20%EA%B0%80%EA%B2%A9"
+        },
+        {
+          "category": "GPU",
+          "name": "NVIDIA GeForce RTX 5070",
+          "maker": "NVIDIA",
+          "platform": "PCIe",
+          "priceKrw": 945800,
+          "speedLabel": "12GB VRAM / 고성능 GPU",
+          "unifiedSpeedScore": 500,
+          "performance": 93,
+          "valueIndex": 9.8,
+          "aiUseScore": 100,
+          "score": 52,
+          "powerWatts": 250,
+          "tags": [
+            "gaming",
+            "ai",
+            "creator"
+          ],
+          "sourceUrl": "https://search.danawa.com/dsearch.php?k1=NVIDIA%20GeForce%20RTX%205070%20%EA%B0%80%EA%B2%A9"
+        },
+        {
+          "category": "RAM",
+          "name": "DDR5 64GB 6000MHz",
+          "maker": "Common",
+          "platform": "DDR5",
+          "priceKrw": 260000,
+          "speedLabel": "DDR5-6000",
+          "unifiedSpeedScore": 750,
+          "performance": 88,
+          "valueIndex": 33.8,
+          "aiUseScore": 88,
+          "score": 62,
+          "powerWatts": 18,
+          "tags": [
+            "creator",
+            "ai"
+          ],
+          "sourceUrl": "https://search.danawa.com/dsearch.php?k1=DDR5%2064GB%206000MHz%20%EA%B0%80%EA%B2%A9"
+        },
+        {
+          "category": "SSD",
+          "name": "NVMe Gen4 SSD 2TB",
+          "maker": "Common",
+          "platform": "M.2",
+          "priceKrw": 125600,
+          "speedLabel": "순차 읽기 약 7,000MB/s급",
+          "unifiedSpeedScore": 875,
+          "performance": 84,
+          "valueIndex": 66.9,
+          "aiUseScore": 84,
+          "score": 78,
+          "powerWatts": 7,
+          "tags": [
+            "gaming",
+            "creator",
+            "ai"
+          ],
+          "sourceUrl": "https://search.danawa.com/dsearch.php?k1=NVMe%20Gen4%20SSD%202TB%20%EA%B0%80%EA%B2%A9"
+        },
+        {
+          "category": "Mainboard",
+          "name": "LGA1851 B860 Mainboard",
+          "maker": "Common",
+          "platform": "LGA1851",
+          "priceKrw": 258250,
+          "speedLabel": "DDR5 / PCIe 5.0 지원급",
+          "unifiedSpeedScore": 1000,
+          "performance": 75,
+          "valueIndex": 29,
+          "aiUseScore": 49,
+          "score": 54,
+          "powerWatts": 12,
+          "tags": [
+            "gaming",
+            "office"
+          ],
+          "sourceUrl": "https://search.danawa.com/dsearch.php?k1=LGA1851%20B860%20%EB%A9%94%EC%9D%B8%EB%B3%B4%EB%93%9C%20%EA%B0%80%EA%B2%A9"
+        },
+        {
+          "category": "PSU",
+          "name": "650W 80PLUS Gold PSU",
+          "maker": "Common",
+          "platform": "ATX",
+          "priceKrw": 68000,
+          "speedLabel": "650W 출력",
+          "unifiedSpeedScore": 650,
+          "performance": 74,
+          "valueIndex": 74,
+          "aiUseScore": 48,
+          "score": 89,
+          "powerWatts": null,
+          "tags": [
+            "office",
+            "gaming",
+            "value"
+          ],
+          "sourceUrl": "https://search.danawa.com/dsearch.php?k1=650W%2080PLUS%20Gold%20%ED%8C%8C%EC%9B%8C%20%EA%B0%80%EA%B2%A9"
+        }
+      ],
+      "currentAssembly": true,
+      "ollamaModel": "gemma4:31b-cloud"
+    },
+    {
+      "id": "optimized-1",
+      "buildKey": "cpu-core-ultra-5-245k|gpu-rtx-5070|ram-ddr5-32-6000|ssd-nvme-2tb-gen4|mb-lga1851-b860|psu-850w-gold",
+      "title": "N/B MAX 최적화 조립 #1",
+      "purpose": "Chrome 검색 수집 부품을 조합해 N/B MAX와 가격 대비 성능을 동시에 높인 구성",
+      "optimizationTarget": "N/B MAX 상승",
+      "partIds": [
+        "cpu-core-ultra-5-245k",
+        "gpu-rtx-5070",
+        "ram-ddr5-32-6000",
+        "ssd-nvme-2tb-gen4",
+        "mb-lga1851-b860",
+        "psu-850w-gold"
+      ],
+      "nbWeight": {
+        "source": "bitCalculation.v.0.1.js 기반 N/B 가중치",
+        "bitMax": 285.518,
+        "bitMin": 671.154,
+        "balanceScore": 614.4,
+        "weightedScore": 698,
+        "nbBand": "500~699",
+        "nbVector": [
+          830,
+          603,
+          705,
+          807,
+          603,
+          409
+        ],
+        "vectorLabels": [
+          "평균 성능",
+          "평균 가성비",
+          "AI 적합도",
+          "통합 속도",
+          "가격 효율",
+          "전력 효율"
+        ],
+        "summary": "완성 조합의 통합 속도와 가격 효율을 100~1000점으로 변환해 N/B 상한 285.518, 하한 671.154, 조합 가중치 698점으로 계산했습니다."
+      },
+      "totalPriceKrw": 1859720,
+      "avgPerformance": 83,
+      "pricePerformanceIndex": 44.6,
+      "optimizationScore": 382.4,
+      "alreadyExplored": false,
+      "estimatedLoadWatts": 406,
+      "recommendedPsuHeadroomWatts": 444,
+      "score": 66,
+      "warnings": [],
+      "aiExplanation": {
+        "summary": "최신 CPU와 RTX 5070을 탑재하여 고사양 게임 및 작업에 최적화된 고성능 구성입니다. 부품 간 호환성과 전력 공급(850W)은 안정적이나, SSD 가격이 다소 높게 책정되었습니다. 약 213만 원의 가격 대비 성능 밸런스가 우수한 상위권 조립 PC입니다.",
+        "reasons": [
+          "Intel Core Ultra 5 245K와 NVIDIA GeForce RTX 5070 조합으로 CPU와 GPU 성능 균형을 맞췄습니다",
+          "DDR5 32GB 6000MHz를 넣어 게임, 작업, 브라우저 동시 사용 여유를 확보했습니다",
+          "NVMe Gen4 SSD 2TB로 운영체제와 작업 파일 저장 공간을 확보했습니다",
+          "850W 파워 기준 예상 부하 406W로 계산했습니다"
+        ],
+        "verdict": "가격 변동을 보고 재검토",
+        "source": "ollama:gemma4:31b-cloud"
+      },
+      "parts": [
+        {
+          "category": "CPU",
+          "name": "Intel Core Ultra 5 245K",
+          "maker": "Intel",
+          "platform": "LGA1851",
+          "priceKrw": 284070,
+          "speedLabel": "최대 터보 약 5.2GHz",
+          "unifiedSpeedScore": 867,
+          "performance": 82,
+          "valueIndex": 28.9,
+          "aiUseScore": 53,
+          "score": 57,
+          "powerWatts": 125,
+          "tags": [
+            "gaming",
+            "creator"
+          ],
+          "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Intel%20Core%20Ultra%205%20245K%20%EA%B0%80%EA%B2%A9"
+        },
+        {
+          "category": "GPU",
+          "name": "NVIDIA GeForce RTX 5070",
+          "maker": "NVIDIA",
+          "platform": "PCIe",
+          "priceKrw": 945800,
+          "speedLabel": "12GB VRAM / 고성능 GPU",
+          "unifiedSpeedScore": 500,
+          "performance": 93,
+          "valueIndex": 9.8,
+          "aiUseScore": 100,
+          "score": 52,
+          "powerWatts": 250,
+          "tags": [
+            "gaming",
+            "ai",
+            "creator"
+          ],
+          "sourceUrl": "https://search.danawa.com/dsearch.php?k1=NVIDIA%20GeForce%20RTX%205070%20%EA%B0%80%EA%B2%A9"
+        },
+        {
+          "category": "RAM",
+          "name": "DDR5 32GB 6000MHz",
+          "maker": "Common",
+          "platform": "DDR5",
+          "priceKrw": 140000,
+          "speedLabel": "DDR5-6000",
+          "unifiedSpeedScore": 750,
+          "performance": 78,
+          "valueIndex": 55.7,
+          "aiUseScore": 51,
+          "score": 70,
+          "powerWatts": 12,
+          "tags": [
+            "gaming",
+            "creator",
+            "office"
+          ],
+          "sourceUrl": "https://search.danawa.com/dsearch.php?k1=DDR5%2032GB%206000MHz%20%EA%B0%80%EA%B2%A9"
+        },
+        {
+          "category": "SSD",
+          "name": "NVMe Gen4 SSD 2TB",
+          "maker": "Common",
+          "platform": "M.2",
+          "priceKrw": 125600,
+          "speedLabel": "순차 읽기 약 7,000MB/s급",
+          "unifiedSpeedScore": 875,
+          "performance": 84,
+          "valueIndex": 66.9,
+          "aiUseScore": 84,
+          "score": 78,
+          "powerWatts": 7,
+          "tags": [
+            "gaming",
+            "creator",
+            "ai"
+          ],
+          "sourceUrl": "https://search.danawa.com/dsearch.php?k1=NVMe%20Gen4%20SSD%202TB%20%EA%B0%80%EA%B2%A9"
+        },
+        {
+          "category": "Mainboard",
+          "name": "LGA1851 B860 Mainboard",
+          "maker": "Common",
+          "platform": "LGA1851",
+          "priceKrw": 258250,
+          "speedLabel": "DDR5 / PCIe 5.0 지원급",
+          "unifiedSpeedScore": 1000,
+          "performance": 75,
+          "valueIndex": 29,
+          "aiUseScore": 49,
+          "score": 54,
+          "powerWatts": 12,
+          "tags": [
+            "gaming",
+            "office"
+          ],
+          "sourceUrl": "https://search.danawa.com/dsearch.php?k1=LGA1851%20B860%20%EB%A9%94%EC%9D%B8%EB%B3%B4%EB%93%9C%20%EA%B0%80%EA%B2%A9"
+        },
+        {
+          "category": "PSU",
+          "name": "850W 80PLUS Gold PSU",
+          "maker": "Common",
+          "platform": "ATX",
+          "priceKrw": 106000,
+          "speedLabel": "850W 출력",
+          "unifiedSpeedScore": 850,
+          "performance": 86,
+          "valueIndex": 81.1,
+          "aiUseScore": 86,
+          "score": 86,
+          "powerWatts": null,
+          "tags": [
+            "gaming",
+            "creator",
+            "ai"
+          ],
+          "sourceUrl": "https://search.danawa.com/dsearch.php?k1=850W%2080PLUS%20Gold%20%ED%8C%8C%EC%9B%8C%20%EA%B0%80%EA%B2%A9"
+        }
+      ],
+      "currentAssembly": false,
+      "ollamaModel": "gemma4:31b-cloud"
+    },
+    {
+      "id": "optimized-2",
+      "buildKey": "cpu-core-ultra-5-245k|gpu-rtx-5070|ram-ddr5-32-6000|ssd-nvme-2tb-gen4|mb-lga1851-b860|psu-650w-gold",
+      "title": "N/B MAX 최적화 조립 #2",
+      "purpose": "Chrome 검색 수집 부품을 조합해 N/B MAX와 가격 대비 성능을 동시에 높인 구성",
+      "optimizationTarget": "N/B MAX 상승",
+      "partIds": [
+        "cpu-core-ultra-5-245k",
+        "gpu-rtx-5070",
+        "ram-ddr5-32-6000",
+        "ssd-nvme-2tb-gen4",
+        "mb-lga1851-b860",
+        "psu-650w-gold"
+      ],
+      "nbWeight": {
+        "source": "bitCalculation.v.0.1.js 기반 N/B 가중치",
+        "bitMax": 269.398,
+        "bitMin": 671.672,
+        "balanceScore": 597.7,
+        "weightedScore": 672,
+        "nbBand": "500~699",
+        "nbVector": [
+          810,
+          587,
+          642,
+          773.67,
+          587,
+          399
+        ],
+        "vectorLabels": [
+          "평균 성능",
+          "평균 가성비",
+          "AI 적합도",
+          "통합 속도",
+          "가격 효율",
+          "전력 효율"
+        ],
+        "summary": "완성 조합의 통합 속도와 가격 효율을 100~1000점으로 변환해 N/B 상한 269.398, 하한 671.672, 조합 가중치 672점으로 계산했습니다."
+      },
+      "totalPriceKrw": 1821720,
+      "avgPerformance": 81,
+      "pricePerformanceIndex": 44.5,
+      "optimizationScore": 365.8,
+      "alreadyExplored": false,
+      "estimatedLoadWatts": 406,
+      "recommendedPsuHeadroomWatts": 244,
+      "score": 67,
+      "warnings": [],
+      "aiExplanation": {
+        "summary": "Thinking... * Role: Custom PC Recommendation Analysis AI. * Task: Evaluate a specific PC build. * Language: Korean. * Constraint 1: Short and clear. * Constraint 2: Max 3 sentences. * Constraint 3: No exaggeration. * Content Requirements: Price, Performance, Compatibility, Usage. * Build Name: N/B MAX 최적화 조립 #2 * Total Price: 1,749,470 KRW. * CPU: Intel Core Ultra 5 245K (Latest gen, high performance). * GPU: RTX 5070 (Latest/Upcoming gen, high performance). * RAM: 32GB DDR5 6000MHz (High speed, standard capacity). * SSD: 2TB Gen4 NVMe (Fast, sufficient capacity). * Mainboard: B860 LGA1851 (Correct socket for Ultra 5). * PSU: 650W 80PLUS Gold (Possibly tight for a 5070/Ultra 5K combo, bu\u001b[2D\u001b[K but generally acceptable if efficiency is high). * Expected Load: 406W (Fits within 650W). * *Price:* Around 1.75M KRW. Fairly aggressive pricing for cutting-ed\u001b[10D\u001b[K cutting-edge hardware (Ultra 5 + RTX 5070). * *Performance:* Very high. High-end gaming and productivity. * *Compatibility:* LGA1851 socket matches the CPU. PSU wattage is suf\u001b[3D\u001b[K sufficient for the calculated load. * *Usage:* High-performance gaming, video editing, and AI work. * *Draft 1:* 최신 사양의 CPU와 GPU를 탑재하여 약 175만 원의 합리적인 \u001b[K 가격대에 매우 높은 성능을 냅니다. 부품 간 호환성이 뛰어나며, 고사양 게임 및\u001b[K 전문 작업용으로 최적입니다. 다만, 전력 부하 대비 650W 파워는 다소 여유가 적\u001b[K 으나 안정권입니다. * *Refining for constraints (3 sentences max, clear, concise):* 1. 약 175만 원의 가격 대비 최신 Ultra 5 및 RTX 5070 탑재로 매우 강력\u001b[K 한 성능을 제공합니다. 2. 최신 소켓 호환성이 완벽하며, 650W 파워는 예상 부하 대비 적정 수준\u001b[K 입니다. 3. 고사양 게이밍과 전문 작업용으로 적합한 고성능 구성입니다. * Sentence 1: Price & Performance. * Sentence 2: Compatibility & PSU check. * Sentence 3: Usage. ...done thinking. 약 175만 원의 가격 대비 최신 Ultra 5와 RTX 5070을 탑재해 매우 강력한 성능을\u001b[K 제공합니다. 최신 소켓 호환성이 완벽하며, 650W 파워는 예상 부하 대비 적정 수\u001b[K 준입니다. 고사양 게이밍 및 전문 작업용으로 최적화된 구성입니다.",
+        "reasons": [
+          "Intel Core Ultra 5 245K와 NVIDIA GeForce RTX 5070 조합으로 CPU와 GPU 성능 균형을 맞췄습니다",
+          "DDR5 32GB 6000MHz를 넣어 게임, 작업, 브라우저 동시 사용 여유를 확보했습니다",
+          "NVMe Gen4 SSD 2TB로 운영체제와 작업 파일 저장 공간을 확보했습니다",
+          "650W 파워 기준 예상 부하 406W로 계산했습니다"
+        ],
+        "verdict": "가격 변동을 보고 재검토",
+        "source": "ollama:gemma4:31b-cloud"
+      },
+      "parts": [
+        {
+          "category": "CPU",
+          "name": "Intel Core Ultra 5 245K",
+          "maker": "Intel",
+          "platform": "LGA1851",
+          "priceKrw": 284070,
+          "speedLabel": "최대 터보 약 5.2GHz",
+          "unifiedSpeedScore": 867,
+          "performance": 82,
+          "valueIndex": 28.9,
+          "aiUseScore": 53,
+          "score": 57,
+          "powerWatts": 125,
+          "tags": [
+            "gaming",
+            "creator"
+          ],
+          "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Intel%20Core%20Ultra%205%20245K%20%EA%B0%80%EA%B2%A9"
+        },
+        {
+          "category": "GPU",
+          "name": "NVIDIA GeForce RTX 5070",
+          "maker": "NVIDIA",
+          "platform": "PCIe",
+          "priceKrw": 945800,
+          "speedLabel": "12GB VRAM / 고성능 GPU",
+          "unifiedSpeedScore": 500,
+          "performance": 93,
+          "valueIndex": 9.8,
+          "aiUseScore": 100,
+          "score": 52,
+          "powerWatts": 250,
+          "tags": [
+            "gaming",
+            "ai",
+            "creator"
+          ],
+          "sourceUrl": "https://search.danawa.com/dsearch.php?k1=NVIDIA%20GeForce%20RTX%205070%20%EA%B0%80%EA%B2%A9"
+        },
+        {
+          "category": "RAM",
+          "name": "DDR5 32GB 6000MHz",
+          "maker": "Common",
+          "platform": "DDR5",
+          "priceKrw": 140000,
+          "speedLabel": "DDR5-6000",
+          "unifiedSpeedScore": 750,
+          "performance": 78,
+          "valueIndex": 55.7,
+          "aiUseScore": 51,
+          "score": 70,
+          "powerWatts": 12,
+          "tags": [
+            "gaming",
+            "creator",
+            "office"
+          ],
+          "sourceUrl": "https://search.danawa.com/dsearch.php?k1=DDR5%2032GB%206000MHz%20%EA%B0%80%EA%B2%A9"
+        },
+        {
+          "category": "SSD",
+          "name": "NVMe Gen4 SSD 2TB",
+          "maker": "Common",
+          "platform": "M.2",
+          "priceKrw": 125600,
+          "speedLabel": "순차 읽기 약 7,000MB/s급",
+          "unifiedSpeedScore": 875,
+          "performance": 84,
+          "valueIndex": 66.9,
+          "aiUseScore": 84,
+          "score": 78,
+          "powerWatts": 7,
+          "tags": [
+            "gaming",
+            "creator",
+            "ai"
+          ],
+          "sourceUrl": "https://search.danawa.com/dsearch.php?k1=NVMe%20Gen4%20SSD%202TB%20%EA%B0%80%EA%B2%A9"
+        },
+        {
+          "category": "Mainboard",
+          "name": "LGA1851 B860 Mainboard",
+          "maker": "Common",
+          "platform": "LGA1851",
+          "priceKrw": 258250,
+          "speedLabel": "DDR5 / PCIe 5.0 지원급",
+          "unifiedSpeedScore": 1000,
+          "performance": 75,
+          "valueIndex": 29,
+          "aiUseScore": 49,
+          "score": 54,
+          "powerWatts": 12,
+          "tags": [
+            "gaming",
+            "office"
+          ],
+          "sourceUrl": "https://search.danawa.com/dsearch.php?k1=LGA1851%20B860%20%EB%A9%94%EC%9D%B8%EB%B3%B4%EB%93%9C%20%EA%B0%80%EA%B2%A9"
+        },
+        {
+          "category": "PSU",
+          "name": "650W 80PLUS Gold PSU",
+          "maker": "Common",
+          "platform": "ATX",
+          "priceKrw": 68000,
+          "speedLabel": "650W 출력",
+          "unifiedSpeedScore": 650,
+          "performance": 74,
+          "valueIndex": 74,
+          "aiUseScore": 48,
+          "score": 89,
+          "powerWatts": null,
+          "tags": [
+            "office",
+            "gaming",
+            "value"
+          ],
+          "sourceUrl": "https://search.danawa.com/dsearch.php?k1=650W%2080PLUS%20Gold%20%ED%8C%8C%EC%9B%8C%20%EA%B0%80%EA%B2%A9"
+        }
+      ],
+      "currentAssembly": false,
+      "ollamaModel": "gemma4:31b-cloud"
+    },
+    {
+      "id": "optimized-3",
+      "buildKey": "cpu-core-ultra-5-245k|gpu-rtx-5070|ram-ddr5-64-6000|ssd-nvme-2tb-gen4|mb-lga1851-b860|psu-850w-gold",
+      "title": "N/B MAX 최적화 조립 #3",
+      "purpose": "Chrome 검색 수집 부품을 조합해 N/B MAX와 가격 대비 성능을 동시에 높인 구성",
+      "optimizationTarget": "N/B MAX 상승",
+      "partIds": [
+        "cpu-core-ultra-5-245k",
+        "gpu-rtx-5070",
+        "ram-ddr5-64-6000",
+        "ssd-nvme-2tb-gen4",
+        "mb-lga1851-b860",
+        "psu-850w-gold"
+      ],
+      "nbWeight": {
+        "source": "bitCalculation.v.0.1.js 기반 N/B 가중치",
+        "bitMax": 267.732,
+        "bitMin": 665.712,
+        "balanceScore": 602,
+        "weightedScore": 697,
+        "nbBand": "500~699",
+        "nbVector": [
+          847,
+          554,
+          767,
+          807,
+          554,
+          411
+        ],
+        "vectorLabels": [
+          "평균 성능",
+          "평균 가성비",
+          "AI 적합도",
+          "통합 속도",
+          "가격 효율",
+          "전력 효율"
+        ],
+        "summary": "완성 조합의 통합 속도와 가격 효율을 100~1000점으로 변환해 N/B 상한 267.732, 하한 665.712, 조합 가중치 697점으로 계산했습니다."
+      },
+      "totalPriceKrw": 1979720,
+      "avgPerformance": 84.7,
+      "pricePerformanceIndex": 42.8,
+      "optimizationScore": 373.2,
+      "alreadyExplored": false,
+      "estimatedLoadWatts": 412,
+      "recommendedPsuHeadroomWatts": 438,
+      "score": 65,
+      "warnings": [],
+      "aiExplanation": {
+        "summary": "N/B MAX 최적화 조립 #3은 198만원대 예산에서 Chrome 검색 수집 부품을 조합해 N/B MAX와 가격 대비 성능을 동시에 높인 구성에 맞춰 계산된 조립 후보입니다.",
+        "reasons": [
+          "Intel Core Ultra 5 245K와 NVIDIA GeForce RTX 5070 조합으로 CPU와 GPU 성능 균형을 맞췄습니다",
+          "DDR5 64GB 6000MHz를 넣어 게임, 작업, 브라우저 동시 사용 여유를 확보했습니다",
+          "NVMe Gen4 SSD 2TB로 운영체제와 작업 파일 저장 공간을 확보했습니다",
+          "850W 파워 기준 예상 부하 412W로 계산했습니다"
+        ],
+        "verdict": "가격 변동을 보고 재검토"
+      },
+      "parts": [
+        {
+          "category": "CPU",
+          "name": "Intel Core Ultra 5 245K",
+          "maker": "Intel",
+          "platform": "LGA1851",
+          "priceKrw": 284070,
+          "speedLabel": "최대 터보 약 5.2GHz",
+          "unifiedSpeedScore": 867,
+          "performance": 82,
+          "valueIndex": 28.9,
+          "aiUseScore": 53,
+          "score": 57,
+          "powerWatts": 125,
+          "tags": [
+            "gaming",
+            "creator"
+          ],
+          "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Intel%20Core%20Ultra%205%20245K%20%EA%B0%80%EA%B2%A9"
+        },
+        {
+          "category": "GPU",
+          "name": "NVIDIA GeForce RTX 5070",
+          "maker": "NVIDIA",
+          "platform": "PCIe",
+          "priceKrw": 945800,
+          "speedLabel": "12GB VRAM / 고성능 GPU",
+          "unifiedSpeedScore": 500,
+          "performance": 93,
+          "valueIndex": 9.8,
+          "aiUseScore": 100,
+          "score": 52,
+          "powerWatts": 250,
+          "tags": [
+            "gaming",
+            "ai",
+            "creator"
+          ],
+          "sourceUrl": "https://search.danawa.com/dsearch.php?k1=NVIDIA%20GeForce%20RTX%205070%20%EA%B0%80%EA%B2%A9"
+        },
+        {
+          "category": "RAM",
+          "name": "DDR5 64GB 6000MHz",
+          "maker": "Common",
+          "platform": "DDR5",
+          "priceKrw": 260000,
+          "speedLabel": "DDR5-6000",
+          "unifiedSpeedScore": 750,
+          "performance": 88,
+          "valueIndex": 33.8,
+          "aiUseScore": 88,
+          "score": 62,
+          "powerWatts": 18,
+          "tags": [
+            "creator",
+            "ai"
+          ],
+          "sourceUrl": "https://search.danawa.com/dsearch.php?k1=DDR5%2064GB%206000MHz%20%EA%B0%80%EA%B2%A9"
+        },
+        {
+          "category": "SSD",
+          "name": "NVMe Gen4 SSD 2TB",
+          "maker": "Common",
+          "platform": "M.2",
+          "priceKrw": 125600,
+          "speedLabel": "순차 읽기 약 7,000MB/s급",
+          "unifiedSpeedScore": 875,
+          "performance": 84,
+          "valueIndex": 66.9,
+          "aiUseScore": 84,
+          "score": 78,
+          "powerWatts": 7,
+          "tags": [
+            "gaming",
+            "creator",
+            "ai"
+          ],
+          "sourceUrl": "https://search.danawa.com/dsearch.php?k1=NVMe%20Gen4%20SSD%202TB%20%EA%B0%80%EA%B2%A9"
+        },
+        {
+          "category": "Mainboard",
+          "name": "LGA1851 B860 Mainboard",
+          "maker": "Common",
+          "platform": "LGA1851",
+          "priceKrw": 258250,
+          "speedLabel": "DDR5 / PCIe 5.0 지원급",
+          "unifiedSpeedScore": 1000,
+          "performance": 75,
+          "valueIndex": 29,
+          "aiUseScore": 49,
+          "score": 54,
+          "powerWatts": 12,
+          "tags": [
+            "gaming",
+            "office"
+          ],
+          "sourceUrl": "https://search.danawa.com/dsearch.php?k1=LGA1851%20B860%20%EB%A9%94%EC%9D%B8%EB%B3%B4%EB%93%9C%20%EA%B0%80%EA%B2%A9"
+        },
+        {
+          "category": "PSU",
+          "name": "850W 80PLUS Gold PSU",
+          "maker": "Common",
+          "platform": "ATX",
+          "priceKrw": 106000,
+          "speedLabel": "850W 출력",
+          "unifiedSpeedScore": 850,
+          "performance": 86,
+          "valueIndex": 81.1,
+          "aiUseScore": 86,
+          "score": 86,
+          "powerWatts": null,
+          "tags": [
+            "gaming",
+            "creator",
+            "ai"
+          ],
+          "sourceUrl": "https://search.danawa.com/dsearch.php?k1=850W%2080PLUS%20Gold%20%ED%8C%8C%EC%9B%8C%20%EA%B0%80%EA%B2%A9"
+        }
+      ],
+      "currentAssembly": false
+    },
+    {
+      "id": "optimized-4",
+      "buildKey": "cpu-ryzen-5-9600|gpu-rtx-5070|ram-ddr5-32-6000|ssd-nvme-2tb-gen4|mb-am5-b850|psu-850w-gold",
+      "title": "N/B MAX 최적화 조립 #4",
+      "purpose": "Chrome 검색 수집 부품을 조합해 N/B MAX와 가격 대비 성능을 동시에 높인 구성",
+      "optimizationTarget": "N/B MAX 상승",
+      "partIds": [
+        "cpu-ryzen-5-9600",
+        "gpu-rtx-5070",
+        "ram-ddr5-32-6000",
+        "ssd-nvme-2tb-gen4",
+        "mb-am5-b850",
+        "psu-850w-gold"
+      ],
+      "nbWeight": {
+        "source": "bitCalculation.v.0.1.js 기반 N/B 가중치",
+        "bitMax": 262.703,
+        "bitMin": 748.9,
+        "balanceScore": 513.8,
+        "weightedScore": 724,
+        "nbBand": "700~849",
+        "nbVector": [
+          825,
+          674,
+          702,
+          807,
+          674,
+          477
+        ],
+        "vectorLabels": [
+          "평균 성능",
+          "평균 가성비",
+          "AI 적합도",
+          "통합 속도",
+          "가격 효율",
+          "전력 효율"
+        ],
+        "summary": "완성 조합의 통합 속도와 가격 효율을 100~1000점으로 변환해 N/B 상한 262.703, 하한 748.9, 조합 가중치 724점으로 계산했습니다."
+      },
+      "totalPriceKrw": 1675800,
+      "avgPerformance": 82.5,
+      "pricePerformanceIndex": 49.2,
+      "optimizationScore": 381.1,
+      "alreadyExplored": false,
+      "estimatedLoadWatts": 346,
+      "recommendedPsuHeadroomWatts": 504,
+      "score": 69,
+      "warnings": [],
+      "aiExplanation": {
+        "summary": "N/B MAX 최적화 조립 #4은 168만원대 예산에서 Chrome 검색 수집 부품을 조합해 N/B MAX와 가격 대비 성능을 동시에 높인 구성에 맞춰 계산된 조립 후보입니다.",
+        "reasons": [
+          "AMD Ryzen 5 9600와 NVIDIA GeForce RTX 5070 조합으로 CPU와 GPU 성능 균형을 맞췄습니다",
+          "DDR5 32GB 6000MHz를 넣어 게임, 작업, 브라우저 동시 사용 여유를 확보했습니다",
+          "NVMe Gen4 SSD 2TB로 운영체제와 작업 파일 저장 공간을 확보했습니다",
+          "850W 파워 기준 예상 부하 346W로 계산했습니다"
+        ],
+        "verdict": "가격 변동을 보고 재검토"
+      },
+      "parts": [
+        {
+          "category": "CPU",
+          "name": "AMD Ryzen 5 9600",
+          "maker": "AMD",
+          "platform": "AM5",
+          "priceKrw": 216750,
+          "speedLabel": "최대 부스트 약 5.2GHz",
+          "unifiedSpeedScore": 867,
+          "performance": 78,
+          "valueIndex": 36,
+          "aiUseScore": 51,
+          "score": 59,
+          "powerWatts": 65,
+          "tags": [
+            "gaming",
+            "office",
+            "upgrade"
+          ],
+          "sourceUrl": "https://search.danawa.com/dsearch.php?k1=AMD%20Ryzen%205%209600%20%EA%B0%80%EA%B2%A9"
+        },
+        {
+          "category": "GPU",
+          "name": "NVIDIA GeForce RTX 5070",
+          "maker": "NVIDIA",
+          "platform": "PCIe",
+          "priceKrw": 945800,
+          "speedLabel": "12GB VRAM / 고성능 GPU",
+          "unifiedSpeedScore": 500,
+          "performance": 93,
+          "valueIndex": 9.8,
+          "aiUseScore": 100,
+          "score": 52,
+          "powerWatts": 250,
+          "tags": [
+            "gaming",
+            "ai",
+            "creator"
+          ],
+          "sourceUrl": "https://search.danawa.com/dsearch.php?k1=NVIDIA%20GeForce%20RTX%205070%20%EA%B0%80%EA%B2%A9"
+        },
+        {
+          "category": "RAM",
+          "name": "DDR5 32GB 6000MHz",
+          "maker": "Common",
+          "platform": "DDR5",
+          "priceKrw": 140000,
+          "speedLabel": "DDR5-6000",
+          "unifiedSpeedScore": 750,
+          "performance": 78,
+          "valueIndex": 55.7,
+          "aiUseScore": 51,
+          "score": 70,
+          "powerWatts": 12,
+          "tags": [
+            "gaming",
+            "creator",
+            "office"
+          ],
+          "sourceUrl": "https://search.danawa.com/dsearch.php?k1=DDR5%2032GB%206000MHz%20%EA%B0%80%EA%B2%A9"
+        },
+        {
+          "category": "SSD",
+          "name": "NVMe Gen4 SSD 2TB",
+          "maker": "Common",
+          "platform": "M.2",
+          "priceKrw": 125600,
+          "speedLabel": "순차 읽기 약 7,000MB/s급",
+          "unifiedSpeedScore": 875,
+          "performance": 84,
+          "valueIndex": 66.9,
+          "aiUseScore": 84,
+          "score": 78,
+          "powerWatts": 7,
+          "tags": [
+            "gaming",
+            "creator",
+            "ai"
+          ],
+          "sourceUrl": "https://search.danawa.com/dsearch.php?k1=NVMe%20Gen4%20SSD%202TB%20%EA%B0%80%EA%B2%A9"
+        },
+        {
+          "category": "Mainboard",
+          "name": "AM5 B850 Mainboard",
+          "maker": "Common",
+          "platform": "AM5",
+          "priceKrw": 141650,
+          "speedLabel": "DDR5 / PCIe 5.0 지원급",
+          "unifiedSpeedScore": 1000,
+          "performance": 76,
+          "valueIndex": 53.7,
+          "aiUseScore": 49,
+          "score": 68,
+          "powerWatts": 12,
+          "tags": [
+            "gaming",
+            "office",
+            "upgrade"
+          ],
+          "sourceUrl": "https://search.danawa.com/dsearch.php?k1=AM5%20B850%20%EB%A9%94%EC%9D%B8%EB%B3%B4%EB%93%9C%20%EA%B0%80%EA%B2%A9"
+        },
+        {
+          "category": "PSU",
+          "name": "850W 80PLUS Gold PSU",
+          "maker": "Common",
+          "platform": "ATX",
+          "priceKrw": 106000,
+          "speedLabel": "850W 출력",
+          "unifiedSpeedScore": 850,
+          "performance": 86,
+          "valueIndex": 81.1,
+          "aiUseScore": 86,
+          "score": 86,
+          "powerWatts": null,
+          "tags": [
+            "gaming",
+            "creator",
+            "ai"
+          ],
+          "sourceUrl": "https://search.danawa.com/dsearch.php?k1=850W%2080PLUS%20Gold%20%ED%8C%8C%EC%9B%8C%20%EA%B0%80%EA%B2%A9"
+        }
+      ],
+      "currentAssembly": false
+    },
+    {
+      "id": "optimized-5",
+      "buildKey": "cpu-core-ultra-5-245k|gpu-rtx-5070|ram-ddr5-32-6000|ssd-nvme-1tb-gen4|mb-lga1851-b860|psu-850w-gold",
+      "title": "N/B MAX 최적화 조립 #5",
+      "purpose": "Chrome 검색 수집 부품을 조합해 N/B MAX와 가격 대비 성능을 동시에 높인 구성",
+      "optimizationTarget": "N/B MAX 상승",
+      "partIds": [
+        "cpu-core-ultra-5-245k",
+        "gpu-rtx-5070",
+        "ram-ddr5-32-6000",
+        "ssd-nvme-1tb-gen4",
+        "mb-lga1851-b860",
+        "psu-850w-gold"
+      ],
+      "nbWeight": {
+        "source": "bitCalculation.v.0.1.js 기반 N/B 가중치",
+        "bitMax": 261.005,
+        "bitMin": 672.41,
+        "balanceScore": 588.6,
+        "weightedScore": 673,
+        "nbBand": "500~699",
+        "nbVector": [
+          817,
+          584,
+          647,
+          765.33,
+          584,
+          403
+        ],
+        "vectorLabels": [
+          "평균 성능",
+          "평균 가성비",
+          "AI 적합도",
+          "통합 속도",
+          "가격 효율",
+          "전력 효율"
+        ],
+        "summary": "완성 조합의 통합 속도와 가격 효율을 100~1000점으로 변환해 N/B 상한 261.005, 하한 672.41, 조합 가중치 673점으로 계산했습니다."
+      },
+      "totalPriceKrw": 1864120,
+      "avgPerformance": 81.7,
+      "pricePerformanceIndex": 43.8,
+      "optimizationScore": 362,
+      "alreadyExplored": false,
+      "estimatedLoadWatts": 405,
+      "recommendedPsuHeadroomWatts": 445,
+      "score": 65,
+      "warnings": [],
+      "aiExplanation": {
+        "summary": "N/B MAX 최적화 조립 #5은 186만원대 예산에서 Chrome 검색 수집 부품을 조합해 N/B MAX와 가격 대비 성능을 동시에 높인 구성에 맞춰 계산된 조립 후보입니다.",
+        "reasons": [
+          "Intel Core Ultra 5 245K와 NVIDIA GeForce RTX 5070 조합으로 CPU와 GPU 성능 균형을 맞췄습니다",
+          "DDR5 32GB 6000MHz를 넣어 게임, 작업, 브라우저 동시 사용 여유를 확보했습니다",
+          "NVMe Gen4 SSD 1TB로 운영체제와 작업 파일 저장 공간을 확보했습니다",
+          "850W 파워 기준 예상 부하 405W로 계산했습니다"
+        ],
+        "verdict": "가격 변동을 보고 재검토"
+      },
+      "parts": [
+        {
+          "category": "CPU",
+          "name": "Intel Core Ultra 5 245K",
+          "maker": "Intel",
+          "platform": "LGA1851",
+          "priceKrw": 284070,
+          "speedLabel": "최대 터보 약 5.2GHz",
+          "unifiedSpeedScore": 867,
+          "performance": 82,
+          "valueIndex": 28.9,
+          "aiUseScore": 53,
+          "score": 57,
+          "powerWatts": 125,
+          "tags": [
+            "gaming",
+            "creator"
+          ],
+          "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Intel%20Core%20Ultra%205%20245K%20%EA%B0%80%EA%B2%A9"
+        },
+        {
+          "category": "GPU",
+          "name": "NVIDIA GeForce RTX 5070",
+          "maker": "NVIDIA",
+          "platform": "PCIe",
+          "priceKrw": 945800,
+          "speedLabel": "12GB VRAM / 고성능 GPU",
+          "unifiedSpeedScore": 500,
+          "performance": 93,
+          "valueIndex": 9.8,
+          "aiUseScore": 100,
+          "score": 52,
+          "powerWatts": 250,
+          "tags": [
+            "gaming",
+            "ai",
+            "creator"
+          ],
+          "sourceUrl": "https://search.danawa.com/dsearch.php?k1=NVIDIA%20GeForce%20RTX%205070%20%EA%B0%80%EA%B2%A9"
+        },
+        {
+          "category": "RAM",
+          "name": "DDR5 32GB 6000MHz",
+          "maker": "Common",
+          "platform": "DDR5",
+          "priceKrw": 140000,
+          "speedLabel": "DDR5-6000",
+          "unifiedSpeedScore": 750,
+          "performance": 78,
+          "valueIndex": 55.7,
+          "aiUseScore": 51,
+          "score": 70,
+          "powerWatts": 12,
+          "tags": [
+            "gaming",
+            "creator",
+            "office"
+          ],
+          "sourceUrl": "https://search.danawa.com/dsearch.php?k1=DDR5%2032GB%206000MHz%20%EA%B0%80%EA%B2%A9"
+        },
+        {
+          "category": "SSD",
+          "name": "NVMe Gen4 SSD 1TB",
+          "maker": "Common",
+          "platform": "M.2",
+          "priceKrw": 130000,
+          "speedLabel": "순차 읽기 약 5,000MB/s급",
+          "unifiedSpeedScore": 625,
+          "performance": 76,
+          "valueIndex": 58.5,
+          "aiUseScore": 49,
+          "score": 71,
+          "powerWatts": 6,
+          "tags": [
+            "gaming",
+            "office"
+          ],
+          "sourceUrl": "https://search.danawa.com/dsearch.php?k1=NVMe%20Gen4%20SSD%201TB%20%EA%B0%80%EA%B2%A9"
+        },
+        {
+          "category": "Mainboard",
+          "name": "LGA1851 B860 Mainboard",
+          "maker": "Common",
+          "platform": "LGA1851",
+          "priceKrw": 258250,
+          "speedLabel": "DDR5 / PCIe 5.0 지원급",
+          "unifiedSpeedScore": 1000,
+          "performance": 75,
+          "valueIndex": 29,
+          "aiUseScore": 49,
+          "score": 54,
+          "powerWatts": 12,
+          "tags": [
+            "gaming",
+            "office"
+          ],
+          "sourceUrl": "https://search.danawa.com/dsearch.php?k1=LGA1851%20B860%20%EB%A9%94%EC%9D%B8%EB%B3%B4%EB%93%9C%20%EA%B0%80%EA%B2%A9"
+        },
+        {
+          "category": "PSU",
+          "name": "850W 80PLUS Gold PSU",
+          "maker": "Common",
+          "platform": "ATX",
+          "priceKrw": 106000,
+          "speedLabel": "850W 출력",
+          "unifiedSpeedScore": 850,
+          "performance": 86,
+          "valueIndex": 81.1,
+          "aiUseScore": 86,
+          "score": 86,
+          "powerWatts": null,
+          "tags": [
+            "gaming",
+            "creator",
+            "ai"
+          ],
+          "sourceUrl": "https://search.danawa.com/dsearch.php?k1=850W%2080PLUS%20Gold%20%ED%8C%8C%EC%9B%8C%20%EA%B0%80%EA%B2%A9"
+        }
+      ],
+      "currentAssembly": false
+    },
+    {
+      "id": "optimized-7",
+      "buildKey": "cpu-ryzen-5-9600|gpu-rtx-5070|ram-ddr5-32-6000|ssd-nvme-2tb-gen4|mb-am5-b850|psu-650w-gold",
+      "title": "N/B MAX 최적화 조립 #7",
+      "purpose": "Chrome 검색 수집 부품을 조합해 N/B MAX와 가격 대비 성능을 동시에 높인 구성",
+      "optimizationTarget": "N/B MAX 상승",
+      "partIds": [
+        "cpu-ryzen-5-9600",
+        "gpu-rtx-5070",
+        "ram-ddr5-32-6000",
+        "ssd-nvme-2tb-gen4",
+        "mb-am5-b850",
+        "psu-650w-gold"
+      ],
+      "nbWeight": {
+        "source": "bitCalculation.v.0.1.js 기반 N/B 가중치",
+        "bitMax": 246.647,
+        "bitMin": 749.874,
+        "balanceScore": 496.8,
+        "weightedScore": 698,
+        "nbBand": "500~699",
+        "nbVector": [
+          805,
+          658,
+          638,
+          773.67,
+          658,
+          465
+        ],
+        "vectorLabels": [
+          "평균 성능",
+          "평균 가성비",
+          "AI 적합도",
+          "통합 속도",
+          "가격 효율",
+          "전력 효율"
+        ],
+        "summary": "완성 조합의 통합 속도와 가격 효율을 100~1000점으로 변환해 N/B 상한 246.647, 하한 749.874, 조합 가중치 698점으로 계산했습니다."
+      },
+      "totalPriceKrw": 1637800,
+      "avgPerformance": 80.5,
+      "pricePerformanceIndex": 49.2,
+      "optimizationScore": 364.6,
+      "alreadyExplored": false,
+      "estimatedLoadWatts": 346,
+      "recommendedPsuHeadroomWatts": 304,
+      "score": 69,
+      "warnings": [],
+      "aiExplanation": {
+        "summary": "N/B MAX 최적화 조립 #7은 164만원대 예산에서 Chrome 검색 수집 부품을 조합해 N/B MAX와 가격 대비 성능을 동시에 높인 구성에 맞춰 계산된 조립 후보입니다.",
+        "reasons": [
+          "AMD Ryzen 5 9600와 NVIDIA GeForce RTX 5070 조합으로 CPU와 GPU 성능 균형을 맞췄습니다",
+          "DDR5 32GB 6000MHz를 넣어 게임, 작업, 브라우저 동시 사용 여유를 확보했습니다",
+          "NVMe Gen4 SSD 2TB로 운영체제와 작업 파일 저장 공간을 확보했습니다",
+          "650W 파워 기준 예상 부하 346W로 계산했습니다"
+        ],
+        "verdict": "가격 변동을 보고 재검토"
+      },
+      "parts": [
+        {
+          "category": "CPU",
+          "name": "AMD Ryzen 5 9600",
+          "maker": "AMD",
+          "platform": "AM5",
+          "priceKrw": 216750,
+          "speedLabel": "최대 부스트 약 5.2GHz",
+          "unifiedSpeedScore": 867,
+          "performance": 78,
+          "valueIndex": 36,
+          "aiUseScore": 51,
+          "score": 59,
+          "powerWatts": 65,
+          "tags": [
+            "gaming",
+            "office",
+            "upgrade"
+          ],
+          "sourceUrl": "https://search.danawa.com/dsearch.php?k1=AMD%20Ryzen%205%209600%20%EA%B0%80%EA%B2%A9"
+        },
+        {
+          "category": "GPU",
+          "name": "NVIDIA GeForce RTX 5070",
+          "maker": "NVIDIA",
+          "platform": "PCIe",
+          "priceKrw": 945800,
+          "speedLabel": "12GB VRAM / 고성능 GPU",
+          "unifiedSpeedScore": 500,
+          "performance": 93,
+          "valueIndex": 9.8,
+          "aiUseScore": 100,
+          "score": 52,
+          "powerWatts": 250,
+          "tags": [
+            "gaming",
+            "ai",
+            "creator"
+          ],
+          "sourceUrl": "https://search.danawa.com/dsearch.php?k1=NVIDIA%20GeForce%20RTX%205070%20%EA%B0%80%EA%B2%A9"
+        },
+        {
+          "category": "RAM",
+          "name": "DDR5 32GB 6000MHz",
+          "maker": "Common",
+          "platform": "DDR5",
+          "priceKrw": 140000,
+          "speedLabel": "DDR5-6000",
+          "unifiedSpeedScore": 750,
+          "performance": 78,
+          "valueIndex": 55.7,
+          "aiUseScore": 51,
+          "score": 70,
+          "powerWatts": 12,
+          "tags": [
+            "gaming",
+            "creator",
+            "office"
+          ],
+          "sourceUrl": "https://search.danawa.com/dsearch.php?k1=DDR5%2032GB%206000MHz%20%EA%B0%80%EA%B2%A9"
+        },
+        {
+          "category": "SSD",
+          "name": "NVMe Gen4 SSD 2TB",
+          "maker": "Common",
+          "platform": "M.2",
+          "priceKrw": 125600,
+          "speedLabel": "순차 읽기 약 7,000MB/s급",
+          "unifiedSpeedScore": 875,
+          "performance": 84,
+          "valueIndex": 66.9,
+          "aiUseScore": 84,
+          "score": 78,
+          "powerWatts": 7,
+          "tags": [
+            "gaming",
+            "creator",
+            "ai"
+          ],
+          "sourceUrl": "https://search.danawa.com/dsearch.php?k1=NVMe%20Gen4%20SSD%202TB%20%EA%B0%80%EA%B2%A9"
+        },
+        {
+          "category": "Mainboard",
+          "name": "AM5 B850 Mainboard",
+          "maker": "Common",
+          "platform": "AM5",
+          "priceKrw": 141650,
+          "speedLabel": "DDR5 / PCIe 5.0 지원급",
+          "unifiedSpeedScore": 1000,
+          "performance": 76,
+          "valueIndex": 53.7,
+          "aiUseScore": 49,
+          "score": 68,
+          "powerWatts": 12,
+          "tags": [
+            "gaming",
+            "office",
+            "upgrade"
+          ],
+          "sourceUrl": "https://search.danawa.com/dsearch.php?k1=AM5%20B850%20%EB%A9%94%EC%9D%B8%EB%B3%B4%EB%93%9C%20%EA%B0%80%EA%B2%A9"
+        },
+        {
+          "category": "PSU",
+          "name": "650W 80PLUS Gold PSU",
+          "maker": "Common",
+          "platform": "ATX",
+          "priceKrw": 68000,
+          "speedLabel": "650W 출력",
+          "unifiedSpeedScore": 650,
+          "performance": 74,
+          "valueIndex": 74,
+          "aiUseScore": 48,
+          "score": 89,
+          "powerWatts": null,
+          "tags": [
+            "office",
+            "gaming",
+            "value"
+          ],
+          "sourceUrl": "https://search.danawa.com/dsearch.php?k1=650W%2080PLUS%20Gold%20%ED%8C%8C%EC%9B%8C%20%EA%B0%80%EA%B2%A9"
+        }
+      ],
+      "currentAssembly": false
+    },
+    {
+      "id": "optimized-8",
+      "buildKey": "cpu-ryzen-5-9600|gpu-rtx-5070|ram-ddr5-64-6000|ssd-nvme-2tb-gen4|mb-am5-b850|psu-850w-gold",
+      "title": "N/B MAX 최적화 조립 #8",
+      "purpose": "Chrome 검색 수집 부품을 조합해 N/B MAX와 가격 대비 성능을 동시에 높인 구성",
+      "optimizationTarget": "N/B MAX 상승",
+      "partIds": [
+        "cpu-ryzen-5-9600",
+        "gpu-rtx-5070",
+        "ram-ddr5-64-6000",
+        "ssd-nvme-2tb-gen4",
+        "mb-am5-b850",
+        "psu-850w-gold"
+      ],
+      "nbWeight": {
+        "source": "bitCalculation.v.0.1.js 기반 N/B 가중치",
+        "bitMax": 246.39,
+        "bitMin": 740.261,
+        "balanceScore": 506.1,
+        "weightedScore": 723,
+        "nbBand": "700~849",
+        "nbVector": [
+          842,
+          625,
+          763,
+          807,
+          625,
+          478
+        ],
+        "vectorLabels": [
+          "평균 성능",
+          "평균 가성비",
+          "AI 적합도",
+          "통합 속도",
+          "가격 효율",
+          "전력 효율"
+        ],
+        "summary": "완성 조합의 통합 속도와 가격 효율을 100~1000점으로 변환해 N/B 상한 246.39, 하한 740.261, 조합 가중치 723점으로 계산했습니다."
+      },
+      "totalPriceKrw": 1795800,
+      "avgPerformance": 84.2,
+      "pricePerformanceIndex": 46.9,
+      "optimizationScore": 372.5,
+      "alreadyExplored": false,
+      "estimatedLoadWatts": 352,
+      "recommendedPsuHeadroomWatts": 498,
+      "score": 68,
+      "warnings": [],
+      "aiExplanation": {
+        "summary": "N/B MAX 최적화 조립 #8은 180만원대 예산에서 Chrome 검색 수집 부품을 조합해 N/B MAX와 가격 대비 성능을 동시에 높인 구성에 맞춰 계산된 조립 후보입니다.",
+        "reasons": [
+          "AMD Ryzen 5 9600와 NVIDIA GeForce RTX 5070 조합으로 CPU와 GPU 성능 균형을 맞췄습니다",
+          "DDR5 64GB 6000MHz를 넣어 게임, 작업, 브라우저 동시 사용 여유를 확보했습니다",
+          "NVMe Gen4 SSD 2TB로 운영체제와 작업 파일 저장 공간을 확보했습니다",
+          "850W 파워 기준 예상 부하 352W로 계산했습니다"
+        ],
+        "verdict": "가격 변동을 보고 재검토"
+      },
+      "parts": [
+        {
+          "category": "CPU",
+          "name": "AMD Ryzen 5 9600",
+          "maker": "AMD",
+          "platform": "AM5",
+          "priceKrw": 216750,
+          "speedLabel": "최대 부스트 약 5.2GHz",
+          "unifiedSpeedScore": 867,
+          "performance": 78,
+          "valueIndex": 36,
+          "aiUseScore": 51,
+          "score": 59,
+          "powerWatts": 65,
+          "tags": [
+            "gaming",
+            "office",
+            "upgrade"
+          ],
+          "sourceUrl": "https://search.danawa.com/dsearch.php?k1=AMD%20Ryzen%205%209600%20%EA%B0%80%EA%B2%A9"
+        },
+        {
+          "category": "GPU",
+          "name": "NVIDIA GeForce RTX 5070",
+          "maker": "NVIDIA",
+          "platform": "PCIe",
+          "priceKrw": 945800,
+          "speedLabel": "12GB VRAM / 고성능 GPU",
+          "unifiedSpeedScore": 500,
+          "performance": 93,
+          "valueIndex": 9.8,
+          "aiUseScore": 100,
+          "score": 52,
+          "powerWatts": 250,
+          "tags": [
+            "gaming",
+            "ai",
+            "creator"
+          ],
+          "sourceUrl": "https://search.danawa.com/dsearch.php?k1=NVIDIA%20GeForce%20RTX%205070%20%EA%B0%80%EA%B2%A9"
+        },
+        {
+          "category": "RAM",
+          "name": "DDR5 64GB 6000MHz",
+          "maker": "Common",
+          "platform": "DDR5",
+          "priceKrw": 260000,
+          "speedLabel": "DDR5-6000",
+          "unifiedSpeedScore": 750,
+          "performance": 88,
+          "valueIndex": 33.8,
+          "aiUseScore": 88,
+          "score": 62,
+          "powerWatts": 18,
+          "tags": [
+            "creator",
+            "ai"
+          ],
+          "sourceUrl": "https://search.danawa.com/dsearch.php?k1=DDR5%2064GB%206000MHz%20%EA%B0%80%EA%B2%A9"
+        },
+        {
+          "category": "SSD",
+          "name": "NVMe Gen4 SSD 2TB",
+          "maker": "Common",
+          "platform": "M.2",
+          "priceKrw": 125600,
+          "speedLabel": "순차 읽기 약 7,000MB/s급",
+          "unifiedSpeedScore": 875,
+          "performance": 84,
+          "valueIndex": 66.9,
+          "aiUseScore": 84,
+          "score": 78,
+          "powerWatts": 7,
+          "tags": [
+            "gaming",
+            "creator",
+            "ai"
+          ],
+          "sourceUrl": "https://search.danawa.com/dsearch.php?k1=NVMe%20Gen4%20SSD%202TB%20%EA%B0%80%EA%B2%A9"
+        },
+        {
+          "category": "Mainboard",
+          "name": "AM5 B850 Mainboard",
+          "maker": "Common",
+          "platform": "AM5",
+          "priceKrw": 141650,
+          "speedLabel": "DDR5 / PCIe 5.0 지원급",
+          "unifiedSpeedScore": 1000,
+          "performance": 76,
+          "valueIndex": 53.7,
+          "aiUseScore": 49,
+          "score": 68,
+          "powerWatts": 12,
+          "tags": [
+            "gaming",
+            "office",
+            "upgrade"
+          ],
+          "sourceUrl": "https://search.danawa.com/dsearch.php?k1=AM5%20B850%20%EB%A9%94%EC%9D%B8%EB%B3%B4%EB%93%9C%20%EA%B0%80%EA%B2%A9"
+        },
+        {
+          "category": "PSU",
+          "name": "850W 80PLUS Gold PSU",
+          "maker": "Common",
+          "platform": "ATX",
+          "priceKrw": 106000,
+          "speedLabel": "850W 출력",
+          "unifiedSpeedScore": 850,
+          "performance": 86,
+          "valueIndex": 81.1,
+          "aiUseScore": 86,
+          "score": 86,
+          "powerWatts": null,
+          "tags": [
+            "gaming",
+            "creator",
+            "ai"
+          ],
+          "sourceUrl": "https://search.danawa.com/dsearch.php?k1=850W%2080PLUS%20Gold%20%ED%8C%8C%EC%9B%8C%20%EA%B0%80%EA%B2%A9"
+        }
+      ],
+      "currentAssembly": false
+    },
+    {
+      "id": "optimized-9",
+      "buildKey": "cpu-core-ultra-5-245k|gpu-rtx-5070|ram-ddr5-32-6000|ssd-nvme-1tb-gen4|mb-lga1851-b860|psu-650w-gold",
+      "title": "N/B MAX 최적화 조립 #9",
+      "purpose": "Chrome 검색 수집 부품을 조합해 N/B MAX와 가격 대비 성능을 동시에 높인 구성",
+      "optimizationTarget": "N/B MAX 상승",
+      "partIds": [
+        "cpu-core-ultra-5-245k",
+        "gpu-rtx-5070",
+        "ram-ddr5-32-6000",
+        "ssd-nvme-1tb-gen4",
+        "mb-lga1851-b860",
+        "psu-650w-gold"
+      ],
+      "nbWeight": {
+        "source": "bitCalculation.v.0.1.js 기반 N/B 가중치",
+        "bitMax": 244.797,
+        "bitMin": 672.429,
+        "balanceScore": 572.4,
+        "weightedScore": 647,
+        "nbBand": "500~699",
+        "nbVector": [
+          797,
+          569,
+          583,
+          732,
+          569,
+          393
+        ],
+        "vectorLabels": [
+          "평균 성능",
+          "평균 가성비",
+          "AI 적합도",
+          "통합 속도",
+          "가격 효율",
+          "전력 효율"
+        ],
+        "summary": "완성 조합의 통합 속도와 가격 효율을 100~1000점으로 변환해 N/B 상한 244.797, 하한 672.429, 조합 가중치 647점으로 계산했습니다."
+      },
+      "totalPriceKrw": 1826120,
+      "avgPerformance": 79.7,
+      "pricePerformanceIndex": 43.6,
+      "optimizationScore": 345.3,
+      "alreadyExplored": false,
+      "estimatedLoadWatts": 405,
+      "recommendedPsuHeadroomWatts": 245,
+      "score": 66,
+      "warnings": [],
+      "aiExplanation": {
+        "summary": "N/B MAX 최적화 조립 #9은 183만원대 예산에서 Chrome 검색 수집 부품을 조합해 N/B MAX와 가격 대비 성능을 동시에 높인 구성에 맞춰 계산된 조립 후보입니다.",
+        "reasons": [
+          "Intel Core Ultra 5 245K와 NVIDIA GeForce RTX 5070 조합으로 CPU와 GPU 성능 균형을 맞췄습니다",
+          "DDR5 32GB 6000MHz를 넣어 게임, 작업, 브라우저 동시 사용 여유를 확보했습니다",
+          "NVMe Gen4 SSD 1TB로 운영체제와 작업 파일 저장 공간을 확보했습니다",
+          "650W 파워 기준 예상 부하 405W로 계산했습니다"
+        ],
+        "verdict": "가격 변동을 보고 재검토"
+      },
+      "parts": [
+        {
+          "category": "CPU",
+          "name": "Intel Core Ultra 5 245K",
+          "maker": "Intel",
+          "platform": "LGA1851",
+          "priceKrw": 284070,
+          "speedLabel": "최대 터보 약 5.2GHz",
+          "unifiedSpeedScore": 867,
+          "performance": 82,
+          "valueIndex": 28.9,
+          "aiUseScore": 53,
+          "score": 57,
+          "powerWatts": 125,
+          "tags": [
+            "gaming",
+            "creator"
+          ],
+          "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Intel%20Core%20Ultra%205%20245K%20%EA%B0%80%EA%B2%A9"
+        },
+        {
+          "category": "GPU",
+          "name": "NVIDIA GeForce RTX 5070",
+          "maker": "NVIDIA",
+          "platform": "PCIe",
+          "priceKrw": 945800,
+          "speedLabel": "12GB VRAM / 고성능 GPU",
+          "unifiedSpeedScore": 500,
+          "performance": 93,
+          "valueIndex": 9.8,
+          "aiUseScore": 100,
+          "score": 52,
+          "powerWatts": 250,
+          "tags": [
+            "gaming",
+            "ai",
+            "creator"
+          ],
+          "sourceUrl": "https://search.danawa.com/dsearch.php?k1=NVIDIA%20GeForce%20RTX%205070%20%EA%B0%80%EA%B2%A9"
+        },
+        {
+          "category": "RAM",
+          "name": "DDR5 32GB 6000MHz",
+          "maker": "Common",
+          "platform": "DDR5",
+          "priceKrw": 140000,
+          "speedLabel": "DDR5-6000",
+          "unifiedSpeedScore": 750,
+          "performance": 78,
+          "valueIndex": 55.7,
+          "aiUseScore": 51,
+          "score": 70,
+          "powerWatts": 12,
+          "tags": [
+            "gaming",
+            "creator",
+            "office"
+          ],
+          "sourceUrl": "https://search.danawa.com/dsearch.php?k1=DDR5%2032GB%206000MHz%20%EA%B0%80%EA%B2%A9"
+        },
+        {
+          "category": "SSD",
+          "name": "NVMe Gen4 SSD 1TB",
+          "maker": "Common",
+          "platform": "M.2",
+          "priceKrw": 130000,
+          "speedLabel": "순차 읽기 약 5,000MB/s급",
+          "unifiedSpeedScore": 625,
+          "performance": 76,
+          "valueIndex": 58.5,
+          "aiUseScore": 49,
+          "score": 71,
+          "powerWatts": 6,
+          "tags": [
+            "gaming",
+            "office"
+          ],
+          "sourceUrl": "https://search.danawa.com/dsearch.php?k1=NVMe%20Gen4%20SSD%201TB%20%EA%B0%80%EA%B2%A9"
+        },
+        {
+          "category": "Mainboard",
+          "name": "LGA1851 B860 Mainboard",
+          "maker": "Common",
+          "platform": "LGA1851",
+          "priceKrw": 258250,
+          "speedLabel": "DDR5 / PCIe 5.0 지원급",
+          "unifiedSpeedScore": 1000,
+          "performance": 75,
+          "valueIndex": 29,
+          "aiUseScore": 49,
+          "score": 54,
+          "powerWatts": 12,
+          "tags": [
+            "gaming",
+            "office"
+          ],
+          "sourceUrl": "https://search.danawa.com/dsearch.php?k1=LGA1851%20B860%20%EB%A9%94%EC%9D%B8%EB%B3%B4%EB%93%9C%20%EA%B0%80%EA%B2%A9"
+        },
+        {
+          "category": "PSU",
+          "name": "650W 80PLUS Gold PSU",
+          "maker": "Common",
+          "platform": "ATX",
+          "priceKrw": 68000,
+          "speedLabel": "650W 출력",
+          "unifiedSpeedScore": 650,
+          "performance": 74,
+          "valueIndex": 74,
+          "aiUseScore": 48,
+          "score": 89,
+          "powerWatts": null,
+          "tags": [
+            "office",
+            "gaming",
+            "value"
+          ],
+          "sourceUrl": "https://search.danawa.com/dsearch.php?k1=650W%2080PLUS%20Gold%20%ED%8C%8C%EC%9B%8C%20%EA%B0%80%EA%B2%A9"
+        }
+      ],
+      "currentAssembly": false
+    },
+    {
+      "id": "optimized-10",
+      "buildKey": "cpu-core-ultra-5-245k|gpu-rtx-5070|ram-ddr5-64-6000|ssd-nvme-1tb-gen4|mb-lga1851-b860|psu-850w-gold",
+      "title": "N/B MAX 최적화 조립 #10",
+      "purpose": "Chrome 검색 수집 부품을 조합해 N/B MAX와 가격 대비 성능을 동시에 높인 구성",
+      "optimizationTarget": "N/B MAX 상승",
+      "partIds": [
+        "cpu-core-ultra-5-245k",
+        "gpu-rtx-5070",
+        "ram-ddr5-64-6000",
+        "ssd-nvme-1tb-gen4",
+        "mb-lga1851-b860",
+        "psu-850w-gold"
+      ],
+      "nbWeight": {
+        "source": "bitCalculation.v.0.1.js 기반 N/B 가중치",
+        "bitMax": 243.304,
+        "bitMin": 668.328,
+        "balanceScore": 575,
+        "weightedScore": 672,
+        "nbBand": "500~699",
+        "nbVector": [
+          833,
+          536,
+          708,
+          765.33,
+          536,
+          406
+        ],
+        "vectorLabels": [
+          "평균 성능",
+          "평균 가성비",
+          "AI 적합도",
+          "통합 속도",
+          "가격 효율",
+          "전력 효율"
+        ],
+        "summary": "완성 조합의 통합 속도와 가격 효율을 100~1000점으로 변환해 N/B 상한 243.304, 하한 668.328, 조합 가중치 672점으로 계산했습니다."
+      },
+      "totalPriceKrw": 1984120,
+      "avgPerformance": 83.3,
+      "pricePerformanceIndex": 42,
+      "optimizationScore": 352.8,
+      "alreadyExplored": false,
+      "estimatedLoadWatts": 411,
+      "recommendedPsuHeadroomWatts": 439,
+      "score": 64,
+      "warnings": [],
+      "aiExplanation": {
+        "summary": "N/B MAX 최적화 조립 #10은 198만원대 예산에서 Chrome 검색 수집 부품을 조합해 N/B MAX와 가격 대비 성능을 동시에 높인 구성에 맞춰 계산된 조립 후보입니다.",
+        "reasons": [
+          "Intel Core Ultra 5 245K와 NVIDIA GeForce RTX 5070 조합으로 CPU와 GPU 성능 균형을 맞췄습니다",
+          "DDR5 64GB 6000MHz를 넣어 게임, 작업, 브라우저 동시 사용 여유를 확보했습니다",
+          "NVMe Gen4 SSD 1TB로 운영체제와 작업 파일 저장 공간을 확보했습니다",
+          "850W 파워 기준 예상 부하 411W로 계산했습니다"
+        ],
+        "verdict": "가격 변동을 보고 재검토"
+      },
+      "parts": [
+        {
+          "category": "CPU",
+          "name": "Intel Core Ultra 5 245K",
+          "maker": "Intel",
+          "platform": "LGA1851",
+          "priceKrw": 284070,
+          "speedLabel": "최대 터보 약 5.2GHz",
+          "unifiedSpeedScore": 867,
+          "performance": 82,
+          "valueIndex": 28.9,
+          "aiUseScore": 53,
+          "score": 57,
+          "powerWatts": 125,
+          "tags": [
+            "gaming",
+            "creator"
+          ],
+          "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Intel%20Core%20Ultra%205%20245K%20%EA%B0%80%EA%B2%A9"
+        },
+        {
+          "category": "GPU",
+          "name": "NVIDIA GeForce RTX 5070",
+          "maker": "NVIDIA",
+          "platform": "PCIe",
+          "priceKrw": 945800,
+          "speedLabel": "12GB VRAM / 고성능 GPU",
+          "unifiedSpeedScore": 500,
+          "performance": 93,
+          "valueIndex": 9.8,
+          "aiUseScore": 100,
+          "score": 52,
+          "powerWatts": 250,
+          "tags": [
+            "gaming",
+            "ai",
+            "creator"
+          ],
+          "sourceUrl": "https://search.danawa.com/dsearch.php?k1=NVIDIA%20GeForce%20RTX%205070%20%EA%B0%80%EA%B2%A9"
+        },
+        {
+          "category": "RAM",
+          "name": "DDR5 64GB 6000MHz",
+          "maker": "Common",
+          "platform": "DDR5",
+          "priceKrw": 260000,
+          "speedLabel": "DDR5-6000",
+          "unifiedSpeedScore": 750,
+          "performance": 88,
+          "valueIndex": 33.8,
+          "aiUseScore": 88,
+          "score": 62,
+          "powerWatts": 18,
+          "tags": [
+            "creator",
+            "ai"
+          ],
+          "sourceUrl": "https://search.danawa.com/dsearch.php?k1=DDR5%2064GB%206000MHz%20%EA%B0%80%EA%B2%A9"
+        },
+        {
+          "category": "SSD",
+          "name": "NVMe Gen4 SSD 1TB",
+          "maker": "Common",
+          "platform": "M.2",
+          "priceKrw": 130000,
+          "speedLabel": "순차 읽기 약 5,000MB/s급",
+          "unifiedSpeedScore": 625,
+          "performance": 76,
+          "valueIndex": 58.5,
+          "aiUseScore": 49,
+          "score": 71,
+          "powerWatts": 6,
+          "tags": [
+            "gaming",
+            "office"
+          ],
+          "sourceUrl": "https://search.danawa.com/dsearch.php?k1=NVMe%20Gen4%20SSD%201TB%20%EA%B0%80%EA%B2%A9"
+        },
+        {
+          "category": "Mainboard",
+          "name": "LGA1851 B860 Mainboard",
+          "maker": "Common",
+          "platform": "LGA1851",
+          "priceKrw": 258250,
+          "speedLabel": "DDR5 / PCIe 5.0 지원급",
+          "unifiedSpeedScore": 1000,
+          "performance": 75,
+          "valueIndex": 29,
+          "aiUseScore": 49,
+          "score": 54,
+          "powerWatts": 12,
+          "tags": [
+            "gaming",
+            "office"
+          ],
+          "sourceUrl": "https://search.danawa.com/dsearch.php?k1=LGA1851%20B860%20%EB%A9%94%EC%9D%B8%EB%B3%B4%EB%93%9C%20%EA%B0%80%EA%B2%A9"
+        },
+        {
+          "category": "PSU",
+          "name": "850W 80PLUS Gold PSU",
+          "maker": "Common",
+          "platform": "ATX",
+          "priceKrw": 106000,
+          "speedLabel": "850W 출력",
+          "unifiedSpeedScore": 850,
+          "performance": 86,
+          "valueIndex": 81.1,
+          "aiUseScore": 86,
+          "score": 86,
+          "powerWatts": null,
+          "tags": [
+            "gaming",
+            "creator",
+            "ai"
+          ],
+          "sourceUrl": "https://search.danawa.com/dsearch.php?k1=850W%2080PLUS%20Gold%20%ED%8C%8C%EC%9B%8C%20%EA%B0%80%EA%B2%A9"
+        }
+      ],
+      "currentAssembly": false
+    },
+    {
+      "id": "optimized-11",
+      "buildKey": "cpu-ryzen-7-9700x|gpu-rtx-5070|ram-ddr5-32-6000|ssd-nvme-2tb-gen4|mb-am5-b850|psu-850w-gold",
+      "title": "N/B MAX 최적화 조립 #11",
+      "purpose": "Chrome 검색 수집 부품을 조합해 N/B MAX와 가격 대비 성능을 동시에 높인 구성",
+      "optimizationTarget": "N/B MAX 상승",
+      "partIds": [
+        "cpu-ryzen-7-9700x",
+        "gpu-rtx-5070",
+        "ram-ddr5-32-6000",
+        "ssd-nvme-2tb-gen4",
+        "mb-am5-b850",
+        "psu-850w-gold"
+      ],
+      "nbWeight": {
+        "source": "bitCalculation.v.0.1.js 기반 N/B 가중치",
+        "bitMax": 238.904,
+        "bitMin": 750.685,
+        "balanceScore": 488.2,
+        "weightedScore": 725,
+        "nbBand": "700~849",
+        "nbVector": [
+          842,
+          648,
+          712,
+          815.33,
+          648,
+          487
+        ],
+        "vectorLabels": [
+          "평균 성능",
+          "평균 가성비",
+          "AI 적합도",
+          "통합 속도",
+          "가격 효율",
+          "전력 효율"
+        ],
+        "summary": "완성 조합의 통합 속도와 가격 효율을 100~1000점으로 변환해 N/B 상한 238.904, 하한 750.685, 조합 가중치 725점으로 계산했습니다."
+      },
+      "totalPriceKrw": 1822030,
+      "avgPerformance": 84.2,
+      "pricePerformanceIndex": 46.2,
+      "optimizationScore": 369.5,
+      "alreadyExplored": false,
+      "estimatedLoadWatts": 346,
+      "recommendedPsuHeadroomWatts": 504,
+      "score": 69,
+      "warnings": [],
+      "aiExplanation": {
+        "summary": "N/B MAX 최적화 조립 #11은 182만원대 예산에서 Chrome 검색 수집 부품을 조합해 N/B MAX와 가격 대비 성능을 동시에 높인 구성에 맞춰 계산된 조립 후보입니다.",
+        "reasons": [
+          "AMD Ryzen 7 9700X와 NVIDIA GeForce RTX 5070 조합으로 CPU와 GPU 성능 균형을 맞췄습니다",
+          "DDR5 32GB 6000MHz를 넣어 게임, 작업, 브라우저 동시 사용 여유를 확보했습니다",
+          "NVMe Gen4 SSD 2TB로 운영체제와 작업 파일 저장 공간을 확보했습니다",
+          "850W 파워 기준 예상 부하 346W로 계산했습니다"
+        ],
+        "verdict": "가격 변동을 보고 재검토"
+      },
+      "parts": [
+        {
+          "category": "CPU",
+          "name": "AMD Ryzen 7 9700X",
+          "maker": "AMD",
+          "platform": "AM5",
+          "priceKrw": 362980,
+          "speedLabel": "최대 부스트 약 5.5GHz",
+          "unifiedSpeedScore": 917,
+          "performance": 88,
+          "valueIndex": 24.2,
+          "aiUseScore": 57,
+          "score": 57,
+          "powerWatts": 65,
+          "tags": [
+            "gaming",
+            "creator",
+            "quiet"
+          ],
+          "sourceUrl": "https://search.danawa.com/dsearch.php?k1=AMD%20Ryzen%207%209700X%20%EA%B0%80%EA%B2%A9"
+        },
+        {
+          "category": "GPU",
+          "name": "NVIDIA GeForce RTX 5070",
+          "maker": "NVIDIA",
+          "platform": "PCIe",
+          "priceKrw": 945800,
+          "speedLabel": "12GB VRAM / 고성능 GPU",
+          "unifiedSpeedScore": 500,
+          "performance": 93,
+          "valueIndex": 9.8,
+          "aiUseScore": 100,
+          "score": 52,
+          "powerWatts": 250,
+          "tags": [
+            "gaming",
+            "ai",
+            "creator"
+          ],
+          "sourceUrl": "https://search.danawa.com/dsearch.php?k1=NVIDIA%20GeForce%20RTX%205070%20%EA%B0%80%EA%B2%A9"
+        },
+        {
+          "category": "RAM",
+          "name": "DDR5 32GB 6000MHz",
+          "maker": "Common",
+          "platform": "DDR5",
+          "priceKrw": 140000,
+          "speedLabel": "DDR5-6000",
+          "unifiedSpeedScore": 750,
+          "performance": 78,
+          "valueIndex": 55.7,
+          "aiUseScore": 51,
+          "score": 70,
+          "powerWatts": 12,
+          "tags": [
+            "gaming",
+            "creator",
+            "office"
+          ],
+          "sourceUrl": "https://search.danawa.com/dsearch.php?k1=DDR5%2032GB%206000MHz%20%EA%B0%80%EA%B2%A9"
+        },
+        {
+          "category": "SSD",
+          "name": "NVMe Gen4 SSD 2TB",
+          "maker": "Common",
+          "platform": "M.2",
+          "priceKrw": 125600,
+          "speedLabel": "순차 읽기 약 7,000MB/s급",
+          "unifiedSpeedScore": 875,
+          "performance": 84,
+          "valueIndex": 66.9,
+          "aiUseScore": 84,
+          "score": 78,
+          "powerWatts": 7,
+          "tags": [
+            "gaming",
+            "creator",
+            "ai"
+          ],
+          "sourceUrl": "https://search.danawa.com/dsearch.php?k1=NVMe%20Gen4%20SSD%202TB%20%EA%B0%80%EA%B2%A9"
+        },
+        {
+          "category": "Mainboard",
+          "name": "AM5 B850 Mainboard",
+          "maker": "Common",
+          "platform": "AM5",
+          "priceKrw": 141650,
+          "speedLabel": "DDR5 / PCIe 5.0 지원급",
+          "unifiedSpeedScore": 1000,
+          "performance": 76,
+          "valueIndex": 53.7,
+          "aiUseScore": 49,
+          "score": 68,
+          "powerWatts": 12,
+          "tags": [
+            "gaming",
+            "office",
+            "upgrade"
+          ],
+          "sourceUrl": "https://search.danawa.com/dsearch.php?k1=AM5%20B850%20%EB%A9%94%EC%9D%B8%EB%B3%B4%EB%93%9C%20%EA%B0%80%EA%B2%A9"
+        },
+        {
+          "category": "PSU",
+          "name": "850W 80PLUS Gold PSU",
+          "maker": "Common",
+          "platform": "ATX",
+          "priceKrw": 106000,
+          "speedLabel": "850W 출력",
+          "unifiedSpeedScore": 850,
+          "performance": 86,
+          "valueIndex": 81.1,
+          "aiUseScore": 86,
+          "score": 86,
+          "powerWatts": null,
+          "tags": [
+            "gaming",
+            "creator",
+            "ai"
+          ],
+          "sourceUrl": "https://search.danawa.com/dsearch.php?k1=850W%2080PLUS%20Gold%20%ED%8C%8C%EC%9B%8C%20%EA%B0%80%EA%B2%A9"
+        }
+      ],
+      "currentAssembly": false
+    },
+    {
+      "id": "optimized-12",
+      "buildKey": "cpu-ryzen-5-9600|gpu-rtx-5070|ram-ddr5-32-6000|ssd-nvme-1tb-gen4|mb-am5-b850|psu-850w-gold",
+      "title": "N/B MAX 최적화 조립 #12",
+      "purpose": "Chrome 검색 수집 부품을 조합해 N/B MAX와 가격 대비 성능을 동시에 높인 구성",
+      "optimizationTarget": "N/B MAX 상승",
+      "partIds": [
+        "cpu-ryzen-5-9600",
+        "gpu-rtx-5070",
+        "ram-ddr5-32-6000",
+        "ssd-nvme-1tb-gen4",
+        "mb-am5-b850",
+        "psu-850w-gold"
+      ],
+      "nbWeight": {
+        "source": "bitCalculation.v.0.1.js 기반 N/B 가중치",
+        "bitMax": 235.984,
+        "bitMin": 752.85,
+        "balanceScore": 483.1,
+        "weightedScore": 699,
+        "nbBand": "500~699",
+        "nbVector": [
+          812,
+          655,
+          643,
+          765.33,
+          655,
+          471
+        ],
+        "vectorLabels": [
+          "평균 성능",
+          "평균 가성비",
+          "AI 적합도",
+          "통합 속도",
+          "가격 효율",
+          "전력 효율"
+        ],
+        "summary": "완성 조합의 통합 속도와 가격 효율을 100~1000점으로 변환해 N/B 상한 235.984, 하한 752.85, 조합 가중치 699점으로 계산했습니다."
+      },
+      "totalPriceKrw": 1680200,
+      "avgPerformance": 81.2,
+      "pricePerformanceIndex": 48.3,
+      "optimizationScore": 359.6,
+      "alreadyExplored": false,
+      "estimatedLoadWatts": 345,
+      "recommendedPsuHeadroomWatts": 505,
+      "score": 68,
+      "warnings": [],
+      "aiExplanation": {
+        "summary": "N/B MAX 최적화 조립 #12은 168만원대 예산에서 Chrome 검색 수집 부품을 조합해 N/B MAX와 가격 대비 성능을 동시에 높인 구성에 맞춰 계산된 조립 후보입니다.",
+        "reasons": [
+          "AMD Ryzen 5 9600와 NVIDIA GeForce RTX 5070 조합으로 CPU와 GPU 성능 균형을 맞췄습니다",
+          "DDR5 32GB 6000MHz를 넣어 게임, 작업, 브라우저 동시 사용 여유를 확보했습니다",
+          "NVMe Gen4 SSD 1TB로 운영체제와 작업 파일 저장 공간을 확보했습니다",
+          "850W 파워 기준 예상 부하 345W로 계산했습니다"
+        ],
+        "verdict": "가격 변동을 보고 재검토"
+      },
+      "parts": [
+        {
+          "category": "CPU",
+          "name": "AMD Ryzen 5 9600",
+          "maker": "AMD",
+          "platform": "AM5",
+          "priceKrw": 216750,
+          "speedLabel": "최대 부스트 약 5.2GHz",
+          "unifiedSpeedScore": 867,
+          "performance": 78,
+          "valueIndex": 36,
+          "aiUseScore": 51,
+          "score": 59,
+          "powerWatts": 65,
+          "tags": [
+            "gaming",
+            "office",
+            "upgrade"
+          ],
+          "sourceUrl": "https://search.danawa.com/dsearch.php?k1=AMD%20Ryzen%205%209600%20%EA%B0%80%EA%B2%A9"
+        },
+        {
+          "category": "GPU",
+          "name": "NVIDIA GeForce RTX 5070",
+          "maker": "NVIDIA",
+          "platform": "PCIe",
+          "priceKrw": 945800,
+          "speedLabel": "12GB VRAM / 고성능 GPU",
+          "unifiedSpeedScore": 500,
+          "performance": 93,
+          "valueIndex": 9.8,
+          "aiUseScore": 100,
+          "score": 52,
+          "powerWatts": 250,
+          "tags": [
+            "gaming",
+            "ai",
+            "creator"
+          ],
+          "sourceUrl": "https://search.danawa.com/dsearch.php?k1=NVIDIA%20GeForce%20RTX%205070%20%EA%B0%80%EA%B2%A9"
+        },
+        {
+          "category": "RAM",
+          "name": "DDR5 32GB 6000MHz",
+          "maker": "Common",
+          "platform": "DDR5",
+          "priceKrw": 140000,
+          "speedLabel": "DDR5-6000",
+          "unifiedSpeedScore": 750,
+          "performance": 78,
+          "valueIndex": 55.7,
+          "aiUseScore": 51,
+          "score": 70,
+          "powerWatts": 12,
+          "tags": [
+            "gaming",
+            "creator",
+            "office"
+          ],
+          "sourceUrl": "https://search.danawa.com/dsearch.php?k1=DDR5%2032GB%206000MHz%20%EA%B0%80%EA%B2%A9"
+        },
+        {
+          "category": "SSD",
+          "name": "NVMe Gen4 SSD 1TB",
+          "maker": "Common",
+          "platform": "M.2",
+          "priceKrw": 130000,
+          "speedLabel": "순차 읽기 약 5,000MB/s급",
+          "unifiedSpeedScore": 625,
+          "performance": 76,
+          "valueIndex": 58.5,
+          "aiUseScore": 49,
+          "score": 71,
+          "powerWatts": 6,
+          "tags": [
+            "gaming",
+            "office"
+          ],
+          "sourceUrl": "https://search.danawa.com/dsearch.php?k1=NVMe%20Gen4%20SSD%201TB%20%EA%B0%80%EA%B2%A9"
+        },
+        {
+          "category": "Mainboard",
+          "name": "AM5 B850 Mainboard",
+          "maker": "Common",
+          "platform": "AM5",
+          "priceKrw": 141650,
+          "speedLabel": "DDR5 / PCIe 5.0 지원급",
+          "unifiedSpeedScore": 1000,
+          "performance": 76,
+          "valueIndex": 53.7,
+          "aiUseScore": 49,
+          "score": 68,
+          "powerWatts": 12,
+          "tags": [
+            "gaming",
+            "office",
+            "upgrade"
+          ],
+          "sourceUrl": "https://search.danawa.com/dsearch.php?k1=AM5%20B850%20%EB%A9%94%EC%9D%B8%EB%B3%B4%EB%93%9C%20%EA%B0%80%EA%B2%A9"
+        },
+        {
+          "category": "PSU",
+          "name": "850W 80PLUS Gold PSU",
+          "maker": "Common",
+          "platform": "ATX",
+          "priceKrw": 106000,
+          "speedLabel": "850W 출력",
+          "unifiedSpeedScore": 850,
+          "performance": 86,
+          "valueIndex": 81.1,
+          "aiUseScore": 86,
+          "score": 86,
+          "powerWatts": null,
+          "tags": [
+            "gaming",
+            "creator",
+            "ai"
+          ],
+          "sourceUrl": "https://search.danawa.com/dsearch.php?k1=850W%2080PLUS%20Gold%20%ED%8C%8C%EC%9B%8C%20%EA%B0%80%EA%B2%A9"
+        }
+      ],
+      "currentAssembly": false
+    }
+  ]
+}

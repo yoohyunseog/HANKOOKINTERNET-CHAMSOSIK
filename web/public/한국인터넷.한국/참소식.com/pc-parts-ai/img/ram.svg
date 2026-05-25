@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 240" role="img" aria-label="RAM">
+  <rect width="360" height="240" fill="#f8fafc"/>
+  <rect x="42" y="82" width="276" height="76" rx="10" fill="#166534"/>
+  <g fill="#86efac">
+    <rect x="68" y="104" width="34" height="28" rx="4"/>
+    <rect x="118" y="104" width="34" height="28" rx="4"/>
+    <rect x="168" y="104" width="34" height="28" rx="4"/>
+    <rect x="218" y="104" width="34" height="28" rx="4"/>
+    <rect x="268" y="104" width="24" height="28" rx="4"/>
+  </g>
+  <g fill="#facc15">
+    <rect x="76" y="158" width="12" height="12"/>
+    <rect x="100" y="158" width="12" height="12"/>
+    <rect x="124" y="158" width="12" height="12"/>
+    <rect x="148" y="158" width="12" height="12"/>
+    <rect x="172" y="158" width="12" height="12"/>
+    <rect x="196" y="158" width="12" height="12"/>
+    <rect x="220" y="158" width="12" height="12"/>
+    <rect x="244" y="158" width="12" height="12"/>
+  </g>
+  <text x="180" y="222" text-anchor="middle" fill="#0f172a" font-family="Arial, sans-serif" font-size="22" font-weight="800">RAM</text>
+</svg>

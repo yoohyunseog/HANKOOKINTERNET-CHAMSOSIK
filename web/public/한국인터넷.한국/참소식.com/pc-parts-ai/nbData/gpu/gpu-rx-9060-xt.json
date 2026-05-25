@@ -1,0 +1,84 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-05-25T11:18:47.651+09:00",
+  "category": "GPU",
+  "id": "gpu-rx-9060-xt",
+  "name": "AMD Radeon RX 9060 XT",
+  "maker": "AMD",
+  "platform": "PCIe",
+  "estimatedPriceKrw": 618800,
+  "priceBand": "60만원 이상",
+  "speedLabel": "16GB VRAM / PCIe 그래픽",
+  "speedMetric": {
+    "kind": "gpu_memory_capacity",
+    "label": "그래픽 메모리",
+    "value": 16,
+    "unit": "GB VRAM",
+    "group": "GPU",
+    "compareNote": "GPU는 GHz보다 코어 구조, VRAM, 메모리 대역폭, 전력 제한이 더 중요할 수 있습니다."
+  },
+  "unifiedSpeedScore": 667,
+  "performance": 78,
+  "valueIndex": 12.6,
+  "aiUseScore": 51,
+  "powerWatts": 170,
+  "tags": [
+    "gaming",
+    "value"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "GPU",
+    "partId": "gpu-rx-9060-xt",
+    "partName": "AMD Radeon RX 9060 XT",
+    "speed": {
+      "score": 667,
+      "weight": 0.42,
+      "metric": {
+        "kind": "gpu_memory_capacity",
+        "label": "그래픽 메모리",
+        "value": 16,
+        "unit": "GB VRAM",
+        "group": "GPU",
+        "compareNote": "GPU는 GHz보다 코어 구조, VRAM, 메모리 대역폭, 전력 제한이 더 중요할 수 있습니다."
+      }
+    },
+    "scores": {
+      "speed": 667,
+      "performance": 780,
+      "value": 168,
+      "aiFit": 510,
+      "priceEfficiency": 160,
+      "powerEfficiency": 153
+    },
+    "nbVector": [
+      667,
+      780,
+      168,
+      510,
+      160,
+      153
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 201.777,
+    "nbMin": 425.434,
+    "weightedScore": 533,
+    "nbBand": "500~699",
+    "summary": "GPU AMD Radeon RX 9060 XT 부품을 속도 중심 N/B 데이터베이스 점수 533점으로 저장했습니다."
+  },
+  "nbWeightedScore": 533,
+  "nbMax": 201.777,
+  "nbMin": 425.434,
+  "nbBand": "500~699",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=AMD%20Radeon%20RX%209060%20XT%2016GB%20%EA%B0%80%EA%B2%A9",
+  "notes": "Chrome 검색 수집 기준으로 가격을 확인하는 가성비 GPU 후보입니다."
+}

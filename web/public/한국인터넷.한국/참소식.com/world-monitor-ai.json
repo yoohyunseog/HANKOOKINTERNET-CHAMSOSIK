@@ -2,99 +2,101 @@
   "title": "이클립스 센츄어리 D.P 브리핑",
   "model": "deepseek-v3.1:671b-cloud",
   "source_feed": "https://xn--9l4b4xi9r.com/feed.xml",
-  "updated_at": "2026-05-24T03:41:35.445961+00:00",
-  "feed_last_build_date": "Sun, 24 May 2026 03:39:13 GMT",
+  "updated_at": "2026-05-25T02:15:49.207007+00:00",
+  "feed_last_build_date": "Mon, 25 May 2026 02:13:06 GMT",
   "item_count": 12,
-  "headline": "스타벅스 논란과 노사 갈등 지속, 미국 금리 상승과 이란 협상 난항",
-  "summary": "스타벅스 논란과 관련한 정치 사회적 갈등이 확산되고 있습니다. 삼성전자를 포함한 노사 간 성과급 분배 갈등도 지속되고 있습니다. 미국 국채 금리 상승과 이란 우라늄 협상 난항 등 대외 경제 리스크도 존재합니다.",
+  "headline": "삼성전자 노조 성과급 분쟁과 SpaceX IPO 등 글로벌 이슈 혼재",
+  "summary": "삼성전자 노조의 성과급 요구와 파업 위기가 반복적으로 보고되며 기업 경영 리스크가 부각됩니다. SpaceX의 IPO 개시와 Starship 발사 성공은 우주 산업 긍정적 신호로 작용합니다. 트럼프 대통령의 이란 종전 합의 지연 지시로 중동 정세 불확실성이 지속됩니다.",
   "signals": [
-    "스타벅스 논란 확산",
-    "노사 성과급 분배 갈등",
-    "미국 국채 금리 최고치",
-    "이란 협상 난항"
+    "삼성전자 노조 성과급 분쟁 확산",
+    "SpaceX IPO 개시 및 Starship 발사 성공",
+    "이란 종전 합의 지연 지시"
   ],
   "risks": [
-    "정치 사회적 갈등 심화",
-    "노사 관계 악화",
-    "금리 상승에 따른 경제 위기 가능성",
-    "지정학적 불안정"
+    "삼성전자 파업 위험",
+    "노조 갈등 증대",
+    "중동 정세 불확실성"
   ],
   "market_impact": [
-    "소비주식 변동성 증가",
-    "기업 지배구조 불확실성 확대",
-    "안전자산 수요 증가",
-    "투자심리 위축"
+    "코스피 삼성전자 하락 압력",
+    "코스닥 우주산업 주목",
+    "비트코인 무관",
+    "한국 증시 심리 부담"
   ],
-  "outlook": "국내 사회적 갈등과 글로벌 금리 불안정성이 증시에 부정적 영향을 줄 전망입니다.",
-  "quality_note": "반복되는 사회적 이슈 위주로 구성되어 경제적 영향 분석에는 한계가 있습니다.",
+  "outlook": "삼성전자 노조 문제가 단기 증시 부담으로 작용하나, 글로벌 기술 이슈는 일부 산업에 긍정적",
+  "quality_note": "피드가 삼성전자 이슈에 편중되어 다양성 부족",
   "weighted_signal": {
-    "score": 42,
-    "upper_bound": 15,
-    "lower_bound": 57,
+    "score": 58,
+    "upper_bound": 32,
+    "lower_bound": 41,
     "grade": "주의",
-    "upper_factors": [],
+    "upper_factors": [
+      "SpaceX IPO 성공 +15",
+      "우주 산업 성장 기대 +12",
+      "기술 혁신 긍정성 +5"
+    ],
     "lower_factors": [
-      "사회적 갈등 심화 -25",
-      "노사 관계 악화 -18",
-      "미국 금리 상승 -14"
+      "삼성전자 노조 분쟁 -18",
+      "파업 위험 -13",
+      "중동 정세 불확실성 -10"
     ]
   },
   "items": [
     {
-      "title": "[공공 행사에서 스타벅스 상품 금지 관련 파장이 확산되고 있습니다.]",
-      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [공공 행사에서 스타벅스 상품 금지 관련 파장이 확산되고 있습니다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
+      "title": "[가장 중요한 선을 지키기 위해서는 노조 성과급 논란에서 정당한 삼성전자 인사들이 공직적 혐의를 저지르지 않아야 함 관련 파장이 확산되고 있습니다.]",
+      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [가장 중요한 선을 지키기 위해서는 노조 성과급 논란에서 정당한 삼성전자 인사들이 공직적 혐의를 저지르지 않아야 함 관련 파장이 확산되고 있습니다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
       "category": "일반",
-      "pubDate": "Sun, 24 May 2026 03:38:25 GMT",
-      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B%EA%B3%B5%EA%B3%B5%20%ED%96%89%EC%82%AC%EC%97%90%EC%84%9C%20%EC%8A%A4%ED%83%80%EB%B2%85%EC%8A%A4%20%EC%83%81%ED%92%88%20%EA%B8%88%EC%A7%80%20%EA%B4%80%EB%A0%A8%20%ED%8C%8C%EC%9E%A5%EC%9D%B4%20%ED%99%95%EC%82%B0%EB%90%98%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%5D&selected_max=121378.7584386772&selected_min=0.0020028324"
+      "pubDate": "Mon, 25 May 2026 02:12:37 GMT",
+      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B%EA%B0%80%EC%9E%A5%20%EC%A4%91%EC%9A%94%ED%95%9C%20%EC%84%A0%EC%9D%84%20%EC%A7%80%ED%82%A4%EA%B8%B0%20%EC%9C%84%ED%95%B4%EC%84%9C%EB%8A%94%20%EB%85%B8%EC%A1%B0%20%EC%84%B1%EA%B3%BC%EA%B8%89%20%EB%85%BC%EB%9E%80%EC%97%90%EC%84%9C%20%EC%A0%95%EB%8B%B9%ED%95%9C%20%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90%20%EC%9D%B8%EC%82%AC%EB%93%A4%EC%9D%B4%20%EA%B3%B5%EC%A7%81%EC%A0%81%20%ED%98%90%EC%9D%98%EB%A5%BC%20%EC%A0%80%EC%A7%80%EB%A5%B4%EC%A7%80%20%EC%95%8A%EC%95%84%EC%95%BC%20%ED%95%A8%20%EA%B4%80%EB%A0%A8%20%ED%8C%8C%EC%9E%A5%EC%9D%B4%20%ED%99%95%EC%82%B0%EB%90%98%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%5D&selected_max=54752.9888483836&selected_min=0.0009019825"
     },
     {
-      "title": "[노조들은 성과금 배분 방식에 대해 Samsung Electronics와 다른 대업 회사들과 갈등 중 관련 파장이 확산되고 있습니다.]",
-      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [노조들은 성과금 배분 방식에 대해 Samsung Electronics와 다른 대업 회사들과 갈등 중 관련 파장이 확산되고 있습니다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
+      "title": "[엔비디아 ETF 출시로 인해 노조(사회자본가)에서 Samsung Electronics에게 추가적인 성과급 요구가 예상될 수 있다. 관련 파장이 확산되고 있습니다.]",
+      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [엔비디아 ETF 출시로 인해 노조(사회자본가)에서 Samsung Electronics에게 추가적인 성과급 요구가 예상될 수 있다. 관련 파장이 확산되고 있습니다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
       "category": "일반",
-      "pubDate": "Sun, 24 May 2026 03:23:47 GMT",
-      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B%EB%85%B8%EC%A1%B0%EB%93%A4%EC%9D%80%20%EC%84%B1%EA%B3%BC%EA%B8%88%20%EB%B0%B0%EB%B6%84%20%EB%B0%A9%EC%8B%9D%EC%97%90%20%EB%8C%80%ED%95%B4%20Samsung%20Electronics%EC%99%80%20%EB%8B%A4%EB%A5%B8%20%EB%8C%80%EC%97%85%20%ED%9A%8C%EC%82%AC%EB%93%A4%EA%B3%BC%20%EA%B0%88%EB%93%B1%20%EC%A4%91%20%EA%B4%80%EB%A0%A8%20%ED%8C%8C%EC%9E%A5%EC%9D%B4%20%ED%99%95%EC%82%B0%EB%90%98%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%5D&selected_max=60735.66701004&selected_min=0.0009986451"
+      "pubDate": "Mon, 25 May 2026 02:08:40 GMT",
+      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B%EC%97%94%EB%B9%84%EB%94%94%EC%95%84%20ETF%20%EC%B6%9C%EC%8B%9C%EB%A1%9C%20%EC%9D%B8%ED%95%B4%20%EB%85%B8%EC%A1%B0(%EC%82%AC%ED%9A%8C%EC%9E%90%EB%B3%B8%EA%B0%80)%EC%97%90%EC%84%9C%20Samsung%20Electronics%EC%97%90%EA%B2%8C%20%EC%B6%94%EA%B0%80%EC%A0%81%EC%9D%B8%20%EC%84%B1%EA%B3%BC%EA%B8%89%20%EC%9A%94%EA%B5%AC%EA%B0%80%20%EC%98%88%EC%83%81%EB%90%A0%20%EC%88%98%20%EC%9E%88%EB%8B%A4.%20%EA%B4%80%EB%A0%A8%20%ED%8C%8C%EC%9E%A5%EC%9D%B4%20%ED%99%95%EC%82%B0%EB%90%98%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%5D&selected_max=49387.0329905284&selected_min=0.0008118267"
     },
     {
-      "title": "[미국과 이란의 종전 협상에서 우라늄이 가장 큰 문제점으로 지속적으로 논쟁 관련 파장이 확산되고 있습니다.]",
-      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [미국과 이란의 종전 협상에서 우라늄이 가장 큰 문제점으로 지속적으로 논쟁 관련 파장이 확산되고 있습니다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
+      "title": "[삼성전자 노조 파업으로 인한 산업 위기에서 회피할 수 있게 된 것은 국내 정치인들이 6억 원의 보너스를 주었다. 관련 파장이 확산되고 있습니다.]",
+      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [삼성전자 노조 파업으로 인한 산업 위기에서 회피할 수 있게 된 것은 국내 정치인들이 6억 원의 보너스를 주었다. 관련 파장이 확산되고 있습니다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
       "category": "일반",
-      "pubDate": "Sun, 24 May 2026 03:14:22 GMT",
-      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B%EB%AF%B8%EA%B5%AD%EA%B3%BC%20%EC%9D%B4%EB%9E%80%EC%9D%98%20%EC%A2%85%EC%A0%84%20%ED%98%91%EC%83%81%EC%97%90%EC%84%9C%20%EC%9A%B0%EB%9D%BC%EB%8A%84%EC%9D%B4%20%EA%B0%80%EC%9E%A5%20%ED%81%B0%20%EB%AC%B8%EC%A0%9C%EC%A0%90%EC%9C%BC%EB%A1%9C%20%EC%A7%80%EC%86%8D%EC%A0%81%EC%9C%BC%EB%A1%9C%20%EB%85%BC%EC%9F%81%20%EA%B4%80%EB%A0%A8%20%ED%8C%8C%EC%9E%A5%EC%9D%B4%20%ED%99%95%EC%82%B0%EB%90%98%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%5D&selected_max=76104.3365890615&selected_min=0.0012543603"
+      "pubDate": "Mon, 25 May 2026 02:05:02 GMT",
+      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90%20%EB%85%B8%EC%A1%B0%20%ED%8C%8C%EC%97%85%EC%9C%BC%EB%A1%9C%20%EC%9D%B8%ED%95%9C%20%EC%82%B0%EC%97%85%20%EC%9C%84%EA%B8%B0%EC%97%90%EC%84%9C%20%ED%9A%8C%ED%94%BC%ED%95%A0%20%EC%88%98%20%EC%9E%88%EA%B2%8C%20%EB%90%9C%20%EA%B2%83%EC%9D%80%20%EA%B5%AD%EB%82%B4%20%EC%A0%95%EC%B9%98%EC%9D%B8%EB%93%A4%EC%9D%B4%206%EC%96%B5%20%EC%9B%90%EC%9D%98%20%EB%B3%B4%EB%84%88%EC%8A%A4%EB%A5%BC%20%EC%A3%BC%EC%97%88%EB%8B%A4.%20%EA%B4%80%EB%A0%A8%20%ED%8C%8C%EC%9E%A5%EC%9D%B4%20%ED%99%95%EC%82%B0%EB%90%98%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%5D&selected_max=55485.6545731186&selected_min=0.0009122078"
     },
     {
-      "title": "[스타벅스 \"탱크데이\" 문제로 인해 국내 정치인과 사회에서 논쟁이 계속됨 관련 파장이 확산되고 있습니다.]",
-      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [스타벅스 \"탱크데이\" 문제로 인해 국내 정치인과 사회에서 논쟁이 계속됨 관련 파장이 확산되고 있습니다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
+      "title": "[6월 3일까지 '사드' 운동 진행, 이재명 등 스타벅스 선거 불매 운동 예상 관련 파장이 확산되고 있습니다.]",
+      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [6월 3일까지 '사드' 운동 진행, 이재명 등 스타벅스 선거 불매 운동 예상 관련 파장이 확산되고 있습니다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
       "category": "일반",
-      "pubDate": "Sun, 24 May 2026 03:05:41 GMT",
-      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B%EC%8A%A4%ED%83%80%EB%B2%85%EC%8A%A4%20%22%ED%83%B1%ED%81%AC%EB%8D%B0%EC%9D%B4%22%20%EB%AC%B8%EC%A0%9C%EB%A1%9C%20%EC%9D%B8%ED%95%B4%20%EA%B5%AD%EB%82%B4%20%EC%A0%95%EC%B9%98%EC%9D%B8%EA%B3%BC%20%EC%82%AC%ED%9A%8C%EC%97%90%EC%84%9C%20%EB%85%BC%EC%9F%81%EC%9D%B4%20%EA%B3%84%EC%86%8D%EB%90%A8%20%EA%B4%80%EB%A0%A8%20%ED%8C%8C%EC%9E%A5%EC%9D%B4%20%ED%99%95%EC%82%B0%EB%90%98%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%5D&selected_max=77495.8842330739&selected_min=0.001274739"
+      "pubDate": "Mon, 25 May 2026 02:03:19 GMT",
+      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B6%EC%9B%94%203%EC%9D%BC%EA%B9%8C%EC%A7%80%20'%EC%82%AC%EB%93%9C'%20%EC%9A%B4%EB%8F%99%20%EC%A7%84%ED%96%89%2C%20%EC%9D%B4%EC%9E%AC%EB%AA%85%20%EB%93%B1%20%EC%8A%A4%ED%83%80%EB%B2%85%EC%8A%A4%20%EC%84%A0%EA%B1%B0%20%EB%B6%88%EB%A7%A4%20%EC%9A%B4%EB%8F%99%20%EC%98%88%EC%83%81%20%EA%B4%80%EB%A0%A8%20%ED%8C%8C%EC%9E%A5%EC%9D%B4%20%ED%99%95%EC%82%B0%EB%90%98%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%5D&selected_max=73608.3285389266&selected_min=0.0012131474"
     },
     {
-      "title": "[스타벅스 '탱크데이' 논란에서, 국내 정치인들이 해당 카페를 방문하는 사업 이슈가 계속되고 있음 관련 파장이 확산되고 있습니다.]",
-      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [스타벅스 '탱크데이' 논란에서, 국내 정치인들이 해당 카페를 방문하는 사업 이슈가 계속되고 있음 관련 파장이 확산되고 있습니다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
+      "title": "[노조 내의 갈등 증가, Samsung Electronics 재신임 투표 예정 관련 파장이 확산되고 있습니다.]",
+      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [노조 내의 갈등 증가, Samsung Electronics 재신임 투표 예정 관련 파장이 확산되고 있습니다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
       "category": "일반",
-      "pubDate": "Sun, 24 May 2026 03:04:37 GMT",
-      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B%EC%8A%A4%ED%83%80%EB%B2%85%EC%8A%A4%20'%ED%83%B1%ED%81%AC%EB%8D%B0%EC%9D%B4'%20%EB%85%BC%EB%9E%80%EC%97%90%EC%84%9C%2C%20%EA%B5%AD%EB%82%B4%20%EC%A0%95%EC%B9%98%EC%9D%B8%EB%93%A4%EC%9D%B4%20%ED%95%B4%EB%8B%B9%20%EC%B9%B4%ED%8E%98%EB%A5%BC%20%EB%B0%A9%EB%AC%B8%ED%95%98%EB%8A%94%20%EC%82%AC%EC%97%85%20%EC%9D%B4%EC%8A%88%EA%B0%80%20%EA%B3%84%EC%86%8D%EB%90%98%EA%B3%A0%20%EC%9E%88%EC%9D%8C%20%EA%B4%80%EB%A0%A8%20%ED%8C%8C%EC%9E%A5%EC%9D%B4%20%ED%99%95%EC%82%B0%EB%90%98%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%5D&selected_max=62359.6094129844&selected_min=0.0010274777"
+      "pubDate": "Mon, 25 May 2026 02:01:18 GMT",
+      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B%EB%85%B8%EC%A1%B0%20%EB%82%B4%EC%9D%98%20%EA%B0%88%EB%93%B1%20%EC%A6%9D%EA%B0%80%2C%20Samsung%20Electronics%20%EC%9E%AC%EC%8B%A0%EC%9E%84%20%ED%88%AC%ED%91%9C%20%EC%98%88%EC%A0%95%20%EA%B4%80%EB%A0%A8%20%ED%8C%8C%EC%9E%A5%EC%9D%B4%20%ED%99%95%EC%82%B0%EB%90%98%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%5D&selected_max=73608.3285389266&selected_min=0.0012131474"
     },
     {
-      "title": "[미국 국채 금리가 최고치에 도달, 경제 위기 유망 관련 파장이 확산되고 있습니다.]",
-      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [미국 국채 금리가 최고치에 도달, 경제 위기 유망 관련 파장이 확산되고 있습니다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
+      "title": "[SpaceX가 새벽 6시 IPO를 개시했으며, 전세계의 우주 비즈니스 독점 기업이 되는 것에 대한 기회가 생겼습니다 관련 파장이 확산되고 있습니다.]",
+      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [SpaceX가 새벽 6시 IPO를 개시했으며, 전세계의 우주 비즈니스 독점 기업이 되는 것에 대한 기회가 생겼습니다 관련 파장이 확산되고 있습니다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
       "category": "일반",
-      "pubDate": "Sun, 24 May 2026 03:02:43 GMT",
-      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B%EB%AF%B8%EA%B5%AD%20%EA%B5%AD%EC%B1%84%20%EA%B8%88%EB%A6%AC%EA%B0%80%20%EC%B5%9C%EA%B3%A0%EC%B9%98%EC%97%90%20%EB%8F%84%EB%8B%AC%2C%20%EA%B2%BD%EC%A0%9C%20%EC%9C%84%EA%B8%B0%20%EC%9C%A0%EB%A7%9D%20%EA%B4%80%EB%A0%A8%20%ED%8C%8C%EC%9E%A5%EC%9D%B4%20%ED%99%95%EC%82%B0%EB%90%98%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%5D&selected_max=97620.9972010171&selected_min=0.0016098505"
+      "pubDate": "Mon, 25 May 2026 01:58:46 GMT",
+      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5BSpaceX%EA%B0%80%20%EC%83%88%EB%B2%BD%206%EC%8B%9C%20IPO%EB%A5%BC%20%EA%B0%9C%EC%8B%9C%ED%96%88%EC%9C%BC%EB%A9%B0%2C%20%EC%A0%84%EC%84%B8%EA%B3%84%EC%9D%98%20%EC%9A%B0%EC%A3%BC%20%EB%B9%84%EC%A6%88%EB%8B%88%EC%8A%A4%20%EB%8F%85%EC%A0%90%20%EA%B8%B0%EC%97%85%EC%9D%B4%20%EB%90%98%EB%8A%94%20%EA%B2%83%EC%97%90%20%EB%8C%80%ED%95%9C%20%EA%B8%B0%ED%9A%8C%EA%B0%80%20%EC%83%9D%EA%B2%BC%EC%8A%B5%EB%8B%88%EB%8B%A4%20%EA%B4%80%EB%A0%A8%20%ED%8C%8C%EC%9E%A5%EC%9D%B4%20%ED%99%95%EC%82%B0%EB%90%98%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%5D&selected_max=54148.3393831733&selected_min=0.0008901936"
     },
     {
-      "title": "[스타벅스 사건에서 2차 사과와 같이 퍼진 국내 정치인의 조치를 의혹할 정치인이 두 파에서 경악을 자вля는 분쟁이 속지 않습니다. 관련 파장이 확산되고 있습니다.]",
-      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [스타벅스 사건에서 2차 사과와 같이 퍼진 국내 정치인의 조치를 의혹할 정치인이 두 파에서 경악을 자вля는 분쟁이 속지 않습니다. 관련 파장이 확산되고 있습니다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
+      "title": "[\"가장 중요한 것은 상식적인 선을 지키는 것이며, 사회 공동체가 제대로 작동하기 위해서 필요합니다.\" 관련 파장이 확산되고 있습니다.]",
+      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [\"가장 중요한 것은 상식적인 선을 지키는 것이며, 사회 공동체가 제대로 작동하기 위해서 필요합니다.\" 관련 파장이 확산되고 있습니다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
       "category": "일반",
-      "pubDate": "Sun, 24 May 2026 02:59:06 GMT",
-      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B%EC%8A%A4%ED%83%80%EB%B2%85%EC%8A%A4%20%EC%82%AC%EA%B1%B4%EC%97%90%EC%84%9C%202%EC%B0%A8%20%EC%82%AC%EA%B3%BC%EC%99%80%20%EA%B0%99%EC%9D%B4%20%ED%8D%BC%EC%A7%84%20%EA%B5%AD%EB%82%B4%20%EC%A0%95%EC%B9%98%EC%9D%B8%EC%9D%98%20%EC%A1%B0%EC%B9%98%EB%A5%BC%20%EC%9D%98%ED%98%B9%ED%95%A0%20%EC%A0%95%EC%B9%98%EC%9D%B8%EC%9D%B4%20%EB%91%90%20%ED%8C%8C%EC%97%90%EC%84%9C%20%EA%B2%BD%EC%95%85%EC%9D%84%20%EC%9E%90%D0%B2%D0%BB%D1%8F%EB%8A%94%20%EB%B6%84%EC%9F%81%EC%9D%B4%20%EC%86%8D%EC%A7%80%20%EC%95%8A%EC%8A%B5%EB%8B%88%EB%8B%A4.%20%EA%B4%80%EB%A0%A8%20%ED%8C%8C%EC%9E%A5%EC%9D%B4%20%ED%99%95%EC%82%B0%EB%90%98%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%5D&selected_max=49336.7061182158&selected_min=0.0008126522"
+      "pubDate": "Mon, 25 May 2026 01:57:02 GMT",
+      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B%22%EA%B0%80%EC%9E%A5%20%EC%A4%91%EC%9A%94%ED%95%9C%20%EA%B2%83%EC%9D%80%20%EC%83%81%EC%8B%9D%EC%A0%81%EC%9D%B8%20%EC%84%A0%EC%9D%84%20%EC%A7%80%ED%82%A4%EB%8A%94%20%EA%B2%83%EC%9D%B4%EB%A9%B0%2C%20%EC%82%AC%ED%9A%8C%20%EA%B3%B5%EB%8F%99%EC%B2%B4%EA%B0%80%20%EC%A0%9C%EB%8C%80%EB%A1%9C%20%EC%9E%91%EB%8F%99%ED%95%98%EA%B8%B0%20%EC%9C%84%ED%95%B4%EC%84%9C%20%ED%95%84%EC%9A%94%ED%95%A9%EB%8B%88%EB%8B%A4.%22%20%EA%B4%80%EB%A0%A8%20%ED%8C%8C%EC%9E%A5%EC%9D%B4%20%ED%99%95%EC%82%B0%EB%90%98%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%5D&selected_max=59925.6498523931&selected_min=0.0009853074"
     },
     {
-      "title": "[국내 정치인 및 기업인들이 지원하는 스타벅스 불매운동이 518 민주화 운동과 관련성을 보이며 공공 영역에서도 확산되고 있습니다. 관련 파장이 확산되고 있습니다.]",
-      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [국내 정치인 및 기업인들이 지원하는 스타벅스 불매운동이 518 민주화 운동과 관련성을 보이며 공공 영역에서도 확산되고 있습니다. 관련 파장이 확산되고 있습니다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
+      "title": "[최대 6억 원에 달하는 성과급 지급 계획이 합의되었습니다. 관련 파장이 확산되고 있습니다.]",
+      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [최대 6억 원에 달하는 성과급 지급 계획이 합의되었습니다. 관련 파장이 확산되고 있습니다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
       "category": "일반",
-      "pubDate": "Sun, 24 May 2026 02:58:03 GMT",
-      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B%EA%B5%AD%EB%82%B4%20%EC%A0%95%EC%B9%98%EC%9D%B8%20%EB%B0%8F%20%EA%B8%B0%EC%97%85%EC%9D%B8%EB%93%A4%EC%9D%B4%20%EC%A7%80%EC%9B%90%ED%95%98%EB%8A%94%20%EC%8A%A4%ED%83%80%EB%B2%85%EC%8A%A4%20%EB%B6%88%EB%A7%A4%EC%9A%B4%EB%8F%99%EC%9D%B4%20518%20%EB%AF%BC%EC%A3%BC%ED%99%94%20%EC%9A%B4%EB%8F%99%EA%B3%BC%20%EA%B4%80%EB%A0%A8%EC%84%B1%EC%9D%84%20%EB%B3%B4%EC%9D%B4%EB%A9%B0%20%EA%B3%B5%EA%B3%B5%20%EC%98%81%EC%97%AD%EC%97%90%EC%84%9C%EB%8F%84%20%ED%99%95%EC%82%B0%EB%90%98%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%20%EA%B4%80%EB%A0%A8%20%ED%8C%8C%EC%9E%A5%EC%9D%B4%20%ED%99%95%EC%82%B0%EB%90%98%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%5D&selected_max=49885.0097826272&selected_min=0.0008216942"
+      "pubDate": "Mon, 25 May 2026 01:55:51 GMT",
+      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B%EC%B5%9C%EB%8C%80%206%EC%96%B5%20%EC%9B%90%EC%97%90%20%EB%8B%AC%ED%95%98%EB%8A%94%20%EC%84%B1%EA%B3%BC%EA%B8%89%20%EC%A7%80%EA%B8%89%20%EA%B3%84%ED%9A%8D%EC%9D%B4%20%ED%95%A9%EC%9D%98%EB%90%98%EC%97%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%20%EA%B4%80%EB%A0%A8%20%ED%8C%8C%EC%9E%A5%EC%9D%B4%20%ED%99%95%EC%82%B0%EB%90%98%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%5D&selected_max=88138.190317733&selected_min=0.0014501188"
     }
   ]
 }

@@ -1,0 +1,84 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-05-25T11:18:47.651+09:00",
+  "category": "SSD",
+  "id": "ssd-nvme-1tb-gen4",
+  "name": "NVMe Gen4 SSD 1TB",
+  "maker": "Common",
+  "platform": "M.2",
+  "estimatedPriceKrw": 130000,
+  "priceBand": "15만원 미만",
+  "speedLabel": "순차 읽기 약 5,000MB/s급",
+  "speedMetric": {
+    "kind": "sequential_read",
+    "label": "순차 읽기 속도",
+    "value": 5000,
+    "unit": "MB/s",
+    "group": "SSD",
+    "compareNote": "SSD는 순차 읽기뿐 아니라 랜덤 읽기, 컨트롤러, DRAM 캐시도 체감에 영향을 줍니다."
+  },
+  "unifiedSpeedScore": 625,
+  "performance": 76,
+  "valueIndex": 58.5,
+  "aiUseScore": 49,
+  "powerWatts": 6,
+  "tags": [
+    "gaming",
+    "office"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "SSD",
+    "partId": "ssd-nvme-1tb-gen4",
+    "partName": "NVMe Gen4 SSD 1TB",
+    "speed": {
+      "score": 625,
+      "weight": 0.42,
+      "metric": {
+        "kind": "sequential_read",
+        "label": "순차 읽기 속도",
+        "value": 5000,
+        "unit": "MB/s",
+        "group": "SSD",
+        "compareNote": "SSD는 순차 읽기뿐 아니라 랜덤 읽기, 컨트롤러, DRAM 캐시도 체감에 영향을 줍니다."
+      }
+    },
+    "scores": {
+      "speed": 625,
+      "performance": 760,
+      "value": 780,
+      "aiFit": 490,
+      "priceEfficiency": 770,
+      "powerEfficiency": 1000
+    },
+    "nbVector": [
+      625,
+      760,
+      780,
+      490,
+      770,
+      1000
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 217.317,
+    "nbMin": 670.633,
+    "weightedScore": 694,
+    "nbBand": "500~699",
+    "summary": "SSD NVMe Gen4 SSD 1TB 부품을 속도 중심 N/B 데이터베이스 점수 694점으로 저장했습니다."
+  },
+  "nbWeightedScore": 694,
+  "nbMax": 217.317,
+  "nbMin": 670.633,
+  "nbBand": "500~699",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=NVMe%20Gen4%20SSD%201TB%20%EA%B0%80%EA%B2%A9",
+  "notes": "Chrome 검색 수집 기준으로 가격을 확인하는 기본 저장장치 후보입니다."
+}

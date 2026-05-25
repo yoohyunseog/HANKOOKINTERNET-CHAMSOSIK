@@ -1,0 +1,85 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-05-25T11:18:47.651+09:00",
+  "category": "GPU",
+  "id": "gpu-rtx-5060-ti",
+  "name": "NVIDIA GeForce RTX 5060 Ti",
+  "maker": "NVIDIA",
+  "platform": "PCIe",
+  "estimatedPriceKrw": 848000,
+  "priceBand": "60만원 이상",
+  "speedLabel": "16GB VRAM / PCIe 그래픽",
+  "speedMetric": {
+    "kind": "gpu_memory_capacity",
+    "label": "그래픽 메모리",
+    "value": 16,
+    "unit": "GB VRAM",
+    "group": "GPU",
+    "compareNote": "GPU는 GHz보다 코어 구조, VRAM, 메모리 대역폭, 전력 제한이 더 중요할 수 있습니다."
+  },
+  "unifiedSpeedScore": 667,
+  "performance": 82,
+  "valueIndex": 9.7,
+  "aiUseScore": 98,
+  "powerWatts": 180,
+  "tags": [
+    "gaming",
+    "ai",
+    "creator"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "GPU",
+    "partId": "gpu-rtx-5060-ti",
+    "partName": "NVIDIA GeForce RTX 5060 Ti",
+    "speed": {
+      "score": 667,
+      "weight": 0.42,
+      "metric": {
+        "kind": "gpu_memory_capacity",
+        "label": "그래픽 메모리",
+        "value": 16,
+        "unit": "GB VRAM",
+        "group": "GPU",
+        "compareNote": "GPU는 GHz보다 코어 구조, VRAM, 메모리 대역폭, 전력 제한이 더 중요할 수 있습니다."
+      }
+    },
+    "scores": {
+      "speed": 667,
+      "performance": 820,
+      "value": 129,
+      "aiFit": 980,
+      "priceEfficiency": 120,
+      "powerEfficiency": 152
+    },
+    "nbVector": [
+      667,
+      820,
+      129,
+      980,
+      120,
+      152
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 212.336,
+    "nbMin": 374.921,
+    "weightedScore": 579,
+    "nbBand": "500~699",
+    "summary": "GPU NVIDIA GeForce RTX 5060 Ti 부품을 속도 중심 N/B 데이터베이스 점수 579점으로 저장했습니다."
+  },
+  "nbWeightedScore": 579,
+  "nbMax": 212.336,
+  "nbMin": 374.921,
+  "nbBand": "500~699",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=NVIDIA%20GeForce%20RTX%205060%20Ti%2016GB%20%EA%B0%80%EA%B2%A9",
+  "notes": "Chrome 검색 수집 기준으로 가격을 확인하는 AI/게임 겸용 GPU 후보입니다."
+}

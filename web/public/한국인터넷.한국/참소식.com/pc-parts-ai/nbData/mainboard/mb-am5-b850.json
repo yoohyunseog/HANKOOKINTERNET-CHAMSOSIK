@@ -1,0 +1,85 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-05-25T11:18:47.651+09:00",
+  "category": "Mainboard",
+  "id": "mb-am5-b850",
+  "name": "AM5 B850 Mainboard",
+  "maker": "Common",
+  "platform": "AM5",
+  "estimatedPriceKrw": 141650,
+  "priceBand": "15만원 미만",
+  "speedLabel": "DDR5 / PCIe 5.0 지원급",
+  "speedMetric": {
+    "kind": "platform_io",
+    "label": "플랫폼 지원",
+    "value": 5,
+    "unit": "PCIe 세대",
+    "group": "Mainboard",
+    "compareNote": "메인보드는 GHz보다 CPU 소켓, 메모리 규격, PCIe 세대, 확장성을 봐야 합니다."
+  },
+  "unifiedSpeedScore": 1000,
+  "performance": 76,
+  "valueIndex": 53.7,
+  "aiUseScore": 49,
+  "powerWatts": 12,
+  "tags": [
+    "gaming",
+    "office",
+    "upgrade"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "Mainboard",
+    "partId": "mb-am5-b850",
+    "partName": "AM5 B850 Mainboard",
+    "speed": {
+      "score": 1000,
+      "weight": 0.32,
+      "metric": {
+        "kind": "platform_io",
+        "label": "플랫폼 지원",
+        "value": 5,
+        "unit": "PCIe 세대",
+        "group": "Mainboard",
+        "compareNote": "메인보드는 GHz보다 CPU 소켓, 메모리 규격, PCIe 세대, 확장성을 봐야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 1000,
+      "performance": 760,
+      "value": 716,
+      "aiFit": 490,
+      "priceEfficiency": 710,
+      "powerEfficiency": 1000
+    },
+    "nbVector": [
+      1000,
+      760,
+      716,
+      490,
+      710,
+      1000
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 268.61,
+    "nbMin": 669.707,
+    "weightedScore": 738,
+    "nbBand": "700~849",
+    "summary": "Mainboard AM5 B850 Mainboard 부품을 속도 중심 N/B 데이터베이스 점수 738점으로 저장했습니다."
+  },
+  "nbWeightedScore": 738,
+  "nbMax": 268.61,
+  "nbMin": 669.707,
+  "nbBand": "700~849",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=AM5%20B850%20%EB%A9%94%EC%9D%B8%EB%B3%B4%EB%93%9C%20%EA%B0%80%EA%B2%A9",
+  "notes": "Chrome 검색 수집 기준으로 가격을 확인하는 AM5 메인보드 후보입니다."
+}

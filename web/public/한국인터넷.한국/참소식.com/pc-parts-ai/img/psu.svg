@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 240" role="img" aria-label="PSU">
+  <rect width="360" height="240" fill="#f8fafc"/>
+  <rect x="82" y="58" width="196" height="124" rx="14" fill="#1f2937"/>
+  <circle cx="150" cy="120" r="42" fill="#374151"/>
+  <circle cx="150" cy="120" r="12" fill="#60a5fa"/>
+  <g stroke="#94a3b8" stroke-width="7" stroke-linecap="round">
+    <path d="M150 82v76"/>
+    <path d="M112 120h76"/>
+    <path d="M123 93l54 54"/>
+    <path d="M177 93l-54 54"/>
+  </g>
+  <rect x="210" y="96" width="42" height="48" rx="5" fill="#111827"/>
+  <text x="180" y="222" text-anchor="middle" fill="#0f172a" font-family="Arial, sans-serif" font-size="22" font-weight="800">PSU</text>
+</svg>

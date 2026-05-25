@@ -3188,12 +3188,146 @@ KOSDAQ 시장은 다변화된 투자 포트폴리오를 구축하고, 투자 자
       }
 
       .youtube-shorts-section {
-        padding: 48px 18px !important;
+        width: calc(100% - 16px) !important;
+        margin: 24px auto 28px !important;
+        padding: 28px 10px 30px !important;
+        border-radius: 18px !important;
+      }
+
+      .youtube-shorts-section::before,
+      .youtube-shorts-section::after {
+        width: 120px;
+        height: 120px;
+        opacity: 0.28;
+      }
+
+      .youtube-shorts-section::before {
+        left: -52px;
+        top: -42px;
+      }
+
+      .youtube-shorts-section::after {
+        right: -52px;
+        top: -42px;
+      }
+
+      .youtube-shorts-section .text-center {
+        padding: 0 6px;
+      }
+
+      .youtube-shorts-section h3 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        flex-wrap: wrap;
+        font-size: 1.9rem;
+        line-height: 1.2;
+        word-break: keep-all;
+      }
+
+      .youtube-shorts-section h3 i {
+        width: 42px;
+        height: 42px;
+        margin-right: 0;
+        font-size: 1.25rem;
+      }
+
+      .youtube-shorts-section .text-muted {
+        margin: 10px 0 22px;
+        font-size: 1rem;
+      }
+
+      #youtube-shorts-container {
+        width: 100%;
+        max-width: 390px;
+        grid-template-columns: minmax(0, 1fr) !important;
+        gap: 16px;
+        margin: 0 auto;
+        padding: 0 !important;
+      }
+
+      .youtube-shorts-item {
+        width: 100%;
+        min-width: 0;
       }
 
       .rose-short-card {
+        width: 100%;
         min-height: auto;
-        padding: 18px 18px 28px;
+        padding: 14px 14px 22px;
+        border-radius: 18px;
+      }
+
+      .rose-short-media {
+        border-radius: 14px;
+      }
+
+      .rose-short-badge {
+        left: 10px;
+        top: 10px;
+        max-width: calc(100% - 20px);
+        padding: 7px 9px;
+        font-size: 0.76rem;
+        white-space: normal;
+      }
+
+      .rose-short-play-large {
+        width: 62px;
+        height: 62px;
+      }
+
+      .rose-short-play-large::after {
+        left: 25px;
+        top: 18px;
+        border-left-width: 19px;
+        border-top-width: 12px;
+        border-bottom-width: 12px;
+      }
+
+      .rose-short-date {
+        display: flex;
+        margin: 14px 0 12px;
+        gap: 8px;
+        font-size: 0.84rem;
+        line-height: 1.45;
+        overflow-wrap: anywhere;
+      }
+
+      .rose-short-play {
+        width: 54px;
+        height: 54px;
+        margin-bottom: 14px;
+        font-size: 1.6rem;
+      }
+
+      .rose-short-card strong {
+        font-size: 1.02rem;
+        line-height: 1.45;
+        overflow-wrap: anywhere;
+      }
+
+      .rose-short-card p {
+        font-size: 0.9rem;
+        line-height: 1.5;
+        overflow-wrap: anywhere;
+      }
+
+      #shorts-iframe-modal .modal-dialog {
+        width: calc(100% - 16px);
+        max-width: 420px;
+        margin: 8px auto;
+      }
+
+      #shorts-iframe-modal .modal-body {
+        padding: 10px;
+      }
+
+      #shorts-iframe {
+        width: 100% !important;
+        height: min(74vh, 680px) !important;
+        aspect-ratio: 9 / 16;
+        border-radius: 10px !important;
       }
 
       .data-card {
@@ -3274,9 +3408,10 @@ KOSDAQ 시장은 다변화된 투자 포트폴리오를 구축하고, 투자 자
       }
 
       #youtube-shorts-container {
-        grid-template-columns: 1fr;
+        grid-template-columns: minmax(0, 1fr) !important;
         max-width: 420px;
         margin: 0 auto;
+        padding: 0 !important;
       }
     }
   </style>
@@ -3287,8 +3422,11 @@ KOSDAQ 시장은 다변화된 투자 포트폴리오를 구축하고, 투자 자
 
   <nav class="site-menu" aria-label="참소식 주요 메뉴">
     <a class="site-menu-link" href="./"><i class="bi bi-house-door"></i> 메인</a>
-    <a class="site-menu-link" href="./jungnang-volunteer/"><i class="bi bi-clipboard-check"></i> 지역 행사</a>
+    <a class="site-menu-link" href="./jungnang-volunteer/"><i class="bi bi-clipboard-check"></i> 중랑구 지역 소식</a>
     <a class="site-menu-link" href="./cathedral-news.html"><i class="bi bi-building"></i> 주요 성당 소식</a>
+    <a class="site-menu-link" href="./pc-parts-ai/"><i class="bi bi-cpu"></i> AI 컴퓨터 부품 분석</a>
+    <a class="site-menu-link" href="./pc-parts-ai/#builds"><i class="bi bi-pc-display"></i> 완성 컴퓨터 조립 결과</a>
+    <a class="site-menu-link" href="./pc-parts-ai/parts.html"><i class="bi bi-motherboard"></i> 컴퓨터 부품 분석표</a>
   </nav>
 
   <section class="server-journal-footer" aria-label="서버 일지 공지 메뉴">
@@ -3303,47 +3441,47 @@ KOSDAQ 시장은 다변화된 투자 포트폴리오를 구축하고, 투자 자
     <section class="ai-content-board ai-rose-shell" aria-labelledby="ai-content-board-title">
       <div class="ai-rose-hero">
         <div>
-          <h1 class="ai-rose-title" id="ai-content-board-title">중랑구 자원봉사 행사 브리핑 <span style="color:#ffc729">✦</span></h1>
-          <p class="ai-rose-desc">중랑구 자원봉사와 지역 행사 흐름을 기록, 제보, 공개 자료 기준으로 분리해 확인하세요.</p>
+          <h1 class="ai-rose-title" id="ai-content-board-title">중랑구 관련 지역 소식 브리핑 <span style="color:#ffc729">✦</span></h1>
+          <p class="ai-rose-desc">중랑구의 생활, 문화, 행사, 현장 이슈를 기록, 제보, 공개 자료 기준으로 분리해 확인하세요.</p>
           <div class="ai-rose-chips" aria-label="브리핑 상태">
             <div class="ai-rose-chip"><i class="bi bi-alarm"></i><span>실시간 업데이트<small id="heroUpdateTime">갱신 준비</small></span></div>
             <div class="ai-rose-chip"><i class="bi bi-cpu"></i><span>분석 모델<small id="heroAnalysisModel">Eclipse v2.6</small></span></div>
             <div class="ai-rose-chip"><i class="bi bi-database"></i><span>데이터 소스<small id="heroDataSource">N/B 통합 DB</small></span></div>
           </div>
         </div>
-        <aside class="ai-rose-event" aria-label="중랑구 자원봉사 및 지역 행사 점검">
-          <h2>중랑구 자원봉사·지역 행사 점검</h2>
-          <p>지역 행사와 봉사 참여 흐름을 기록 중심으로 확인합니다.</p>
+        <aside class="ai-rose-event" aria-label="중랑구 관련 지역 소식 점검">
+          <h2>중랑구 관련 지역 소식 점검</h2>
+          <p>생활 소식, 지역 행사, 현장 이슈 흐름을 기록 중심으로 확인합니다.</p>
           <dl>
-            <dt>대상</dt><dd>중랑구 자원봉사 및 지역 행사 흐름</dd>
+            <dt>대상</dt><dd>중랑구 생활·문화·행사·현장 소식 흐름</dd>
             <dt>방식</dt><dd>공개 자료, 현장 기록, 방문자 제보를 분리해 정리</dd>
           </dl>
-          <a class="ai-rose-button" href="./jungnang-volunteer/">행사 기록 보기 →</a>
+          <a class="ai-rose-button" href="./jungnang-volunteer/">지역 소식 보기 →</a>
         </aside>
       </div>
       <div class="ai-rose-features">
         <article class="ai-rose-feature">
           <i class="bi bi-bullseye"></i>
-          <strong>행사 핵심 신호</strong>
-          <p>자원봉사, 지역 행사, 현장 참여 흐름을 구분해 확인합니다.</p>
+          <strong>지역 핵심 신호</strong>
+          <p>생활 소식, 행사, 현장 이슈 흐름을 구분해 확인합니다.</p>
           <a href="#recent-panel">자세히 보기 →</a>
         </article>
         <article class="ai-rose-feature">
           <i class="bi bi-diagram-3"></i>
           <strong>관계 구조 해석</strong>
-          <p>기관, 행사, 참여 주체 사이의 연결 이유를 기록 기준으로 설명합니다.</p>
+          <p>기관, 장소, 지역 이슈 사이의 연결 이유를 기록 기준으로 설명합니다.</p>
           <a href="#world-monitor-ai-title">자세히 보기 →</a>
         </article>
         <article class="ai-rose-feature">
           <i class="bi bi-hdd-stack"></i>
           <strong>기록 데이터 점검</strong>
-          <p>확인된 내용과 추정 내용을 나누어 행사 맥락을 정리합니다.</p>
+          <p>확인된 내용과 추정 내용을 나누어 지역 맥락을 정리합니다.</p>
           <a href="#popular-panel">자세히 보기 →</a>
         </article>
         <article class="ai-rose-feature">
           <i class="bi bi-search"></i>
           <strong>자료 검색 확장</strong>
-          <p>검색, 제보, 공개 자료를 함께 보며 지역 행사 흐름을 추적합니다.</p>
+          <p>검색, 제보, 공개 자료를 함께 보며 중랑구 관련 지역 소식을 추적합니다.</p>
           <a href="#category-buttons">자세히 보기 →</a>
         </article>
       </div>
@@ -4778,13 +4916,13 @@ KOSDAQ 시장은 다변화된 투자 포트폴리오를 구축하고, 투자 자
 
   function createYoutubeShortCard(short, idx = 0) {
     const fallbackTitles = [
-      '중랑구 자원봉사 행사 기록 점검',
-      '지역 행사와 현장 참여 흐름 확인',
+      '중랑구 관련 지역 소식 기록 점검',
+      '생활 소식과 현장 이슈 흐름 확인',
       '공개 자료와 현장 제보 분리 정리'
     ];
     const fallbackTags = [
-      '#중랑구 #자원봉사 #행사기록',
-      '#지역행사 #현장참여 #공개자료',
+      '#중랑구 #지역소식 #현장기록',
+      '#생활소식 #현장이슈 #공개자료',
       '#참소식 #현장기록 #제보정리'
     ];
     const title = short.title || fallbackTitles[idx] || fallbackTitles[0];

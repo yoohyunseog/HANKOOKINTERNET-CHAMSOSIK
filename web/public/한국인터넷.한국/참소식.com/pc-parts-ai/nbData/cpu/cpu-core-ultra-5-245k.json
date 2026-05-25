@@ -1,0 +1,84 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-05-25T11:18:47.651+09:00",
+  "category": "CPU",
+  "id": "cpu-core-ultra-5-245k",
+  "name": "Intel Core Ultra 5 245K",
+  "maker": "Intel",
+  "platform": "LGA1851",
+  "estimatedPriceKrw": 284070,
+  "priceBand": "15~30만원",
+  "speedLabel": "최대 터보 약 5.2GHz",
+  "speedMetric": {
+    "kind": "cpu_turbo_clock",
+    "label": "CPU 최대 터보 클럭",
+    "value": 5.2,
+    "unit": "GHz",
+    "group": "CPU",
+    "compareNote": "Intel CPU는 P코어/E코어 구조도 같이 확인해야 합니다."
+  },
+  "unifiedSpeedScore": 867,
+  "performance": 82,
+  "valueIndex": 28.9,
+  "aiUseScore": 53,
+  "powerWatts": 125,
+  "tags": [
+    "gaming",
+    "creator"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "CPU",
+    "partId": "cpu-core-ultra-5-245k",
+    "partName": "Intel Core Ultra 5 245K",
+    "speed": {
+      "score": 867,
+      "weight": 0.42,
+      "metric": {
+        "kind": "cpu_turbo_clock",
+        "label": "CPU 최대 터보 클럭",
+        "value": 5.2,
+        "unit": "GHz",
+        "group": "CPU",
+        "compareNote": "Intel CPU는 P코어/E코어 구조도 같이 확인해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 867,
+      "performance": 820,
+      "value": 385,
+      "aiFit": 530,
+      "priceEfficiency": 350,
+      "powerEfficiency": 219
+    },
+    "nbVector": [
+      867,
+      820,
+      385,
+      530,
+      350,
+      219
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 260.085,
+    "nbMin": 473.842,
+    "weightedScore": 676,
+    "nbBand": "500~699",
+    "summary": "CPU Intel Core Ultra 5 245K 부품을 속도 중심 N/B 데이터베이스 점수 676점으로 저장했습니다."
+  },
+  "nbWeightedScore": 676,
+  "nbMax": 260.085,
+  "nbMin": 473.842,
+  "nbBand": "500~699",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Intel%20Core%20Ultra%205%20245K%20%EA%B0%80%EA%B2%A9",
+  "notes": "Chrome 검색 수집 기준으로 가격을 확인하는 인텔 플랫폼 CPU 후보입니다."
+}

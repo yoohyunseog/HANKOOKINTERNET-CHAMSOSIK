@@ -1,0 +1,85 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-05-25T11:18:47.651+09:00",
+  "category": "PSU",
+  "id": "psu-850w-gold",
+  "name": "850W 80PLUS Gold PSU",
+  "maker": "Common",
+  "platform": "ATX",
+  "estimatedPriceKrw": 106000,
+  "priceBand": "15만원 미만",
+  "speedLabel": "850W 출력",
+  "speedMetric": {
+    "kind": "power_output",
+    "label": "정격 출력",
+    "value": 850,
+    "unit": "W",
+    "group": "PSU",
+    "compareNote": "파워는 속도가 아니라 정격 출력, 효율, 보호 회로, 품질을 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 850,
+  "performance": 86,
+  "valueIndex": 81.1,
+  "aiUseScore": 86,
+  "powerWatts": null,
+  "tags": [
+    "gaming",
+    "creator",
+    "ai"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "PSU",
+    "partId": "psu-850w-gold",
+    "partName": "850W 80PLUS Gold PSU",
+    "speed": {
+      "score": 850,
+      "weight": 0.32,
+      "metric": {
+        "kind": "power_output",
+        "label": "정격 출력",
+        "value": 850,
+        "unit": "W",
+        "group": "PSU",
+        "compareNote": "파워는 속도가 아니라 정격 출력, 효율, 보호 회로, 품질을 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 850,
+      "performance": 860,
+      "value": 1000,
+      "aiFit": 860,
+      "priceEfficiency": 940,
+      "powerEfficiency": 860
+    },
+    "nbVector": [
+      850,
+      860,
+      1000,
+      860,
+      940,
+      860
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 45.943,
+    "nbMin": 1000,
+    "weightedScore": 797,
+    "nbBand": "700~849",
+    "summary": "PSU 850W 80PLUS Gold PSU 부품을 속도 중심 N/B 데이터베이스 점수 797점으로 저장했습니다."
+  },
+  "nbWeightedScore": 797,
+  "nbMax": 45.943,
+  "nbMin": 1000,
+  "nbBand": "700~849",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=850W%2080PLUS%20Gold%20%ED%8C%8C%EC%9B%8C%20%EA%B0%80%EA%B2%A9",
+  "notes": "Chrome 검색 수집 기준으로 가격을 확인하는 고용량 파워 후보입니다."
+}

@@ -1,0 +1,647 @@
+{
+  "timestamp": "2026-05-25T00:10:20.143944",
+  "model": "mistral:latest",
+  "keyword_count": 3,
+  "analyze_subtitles": true,
+  "analysis_source": "youtube",
+  "keywords": [
+    {
+      "keyword": "오늘의 주요 뉴스",
+      "is_fixed": true,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "AI 금융보안 규제 완화",
+      "is_fixed": false,
+      "views": [
+        2,
+        13
+      ],
+      "video_count": 2,
+      "videos": [
+        {
+          "title": "[오늘의 AI 뉴스 2026.05.24 | AI 보안, 자본전쟁, 신규 모델 공개]",
+          "video_id": "rZ5_jWaex-g",
+          "views": 2,
+          "upload_date": "2026-05-24",
+          "url": "https://www.youtube.com/watch?v=rZ5_jWaex-g",
+          "subtitle_summary": "1. 금융권의 새로운 보안 규제가 도입될 예정으로, 데이터 보안을 위해 시스템을 분리하여 해킹 위험을 줄이려는 망블리 규제입니다. 하지만 이러한 보안 규제는 업무 비효율을 초래할 수 있습니다.\n2. 최근 금융권의 보안을 강화하기 위해, 정부는 특정 기업의 독일을 얻어 실전적인 AI 모델을 활용한 보안 테스트를 진행했습니다. 이 테스트로 금융 시스템에서 총 7가지의 심각한 취약점이 발견되었습니다.\n3. 일본은 대규모 언어 모델을 개발하여 미국, 중국과 경쟁하고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "10조 시장 열린다! 금융 망분리 완화가 가져올 기회와 위기",
+          "video_id": "gfXjZFwX8NY",
+          "views": 13,
+          "upload_date": "2026-05-24",
+          "url": "https://www.youtube.com/watch?v=gfXjZFwX8NY",
+          "subtitle_summary": "1. 미국의 고성능 인공지능, MITOS, 해킹 공격에 악용될 수 있다는 우려가 있으며, 현재 보안 방식으로는 이 공격을 막아낼 수 없습니다.\n2. 대한민국의 금융 망분리 규제를 완화하기 위해 시작된 것으로, 인공지능 보안 도입을 위한 필수적인 조치라고 합니다.\n3. 금융위원회는 5월 22일에 인공지능 및 보안 전문가들과 주요 금융 회사의 CISO를 모아 중요한 간담회를 개최했습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 2.8346,
+      "min": 1.7558,
+      "nb_score": 1.6145,
+      "avg_views": 7.5,
+      "total_views": 15
+    },
+    {
+      "keyword": "지방선거 단일화",
+      "is_fixed": false,
+      "views": [
+        9898,
+        1006
+      ],
+      "video_count": 2,
+      "videos": [
+        {
+          "title": "민주 \"울산시장 단일화 여론조사 중단\"…진보 \"합의대로 진행해야\" / 연합뉴스TV (YonhapnewsTV)",
+          "video_id": "IJSnwGMUK3I",
+          "views": 9898,
+          "upload_date": "2026-05-24",
+          "url": "https://www.youtube.com/watch?v=IJSnwGMUK3I",
+          "subtitle_summary": "1. 더불어민주당 김상욱, 울산시장 후보는 진행 중인 단일화 여론조사를 중단했다고 밝혔습니다.\n2. 김두관, 김후보의 총괄 선대 본부장은 특이 사항을 발견하여 여론조사를 중단받았다고 말했습니다.\n3. 반면 진보당의 김종훈 후보측은 반발했으며, 합의한 대로 진행하고 결과를 겸하게 수용할 것이라고 덧붙였습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[6.3 지방선거] 민주·진보 '경선 중단'‥보수도 '책임 공방' (2026.05.24/뉴스데스크/울산MBC)",
+          "video_id": "7Oq2uZ-j8D8",
+          "views": 1006,
+          "upload_date": "2026-05-24",
+          "url": "https://www.youtube.com/watch?v=7Oq2uZ-j8D8",
+          "subtitle_summary": "1. 울산시장 후보 단일화의 여론조사가 중단되었습니다. 김상욱과 김종훈 두 후보는 서로 합의 정신 위반, 특정 세력 조직적 개입에 대한 의심을 표명했습니다.\n2. 국민의 힘 김두겸과 무소속 박명우 후보는 단일화와 관련된 책임을 덜어내며 설전을 주고받았습니다.\n3. 진보당은 민주당과 약속대로 경선조사를 정상적으로 진행하겠다고 강조했으나, 박명우는 김두겸의 제한을 뿌리쳐 보수층을 결집시키려는 전략에 불과하다고 평가했습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 2.8037,
+      "min": 2.0767,
+      "nb_score": 1.3501,
+      "avg_views": 5452.0,
+      "total_views": 10904
+    },
+    {
+      "keyword": "양지호 한국오픈 우승",
+      "is_fixed": false,
+      "views": [
+        828,
+        10637,
+        10401,
+        6,
+        12
+      ],
+      "video_count": 5,
+      "videos": [
+        {
+          "title": "[2026 KGA] 'Dominant Victory' Winner Ji-Ho Yang Highlights | KGA Kolon Korea Open FR | Wavve Golf",
+          "video_id": "pFuPpVJiorI",
+          "views": 828,
+          "upload_date": "2026-05-24",
+          "url": "https://www.youtube.com/watch?v=pFuPpVJiorI",
+          "subtitle_summary": "1. 최종 라운드 경기는 68회 한국 오픈입니다. 지난 2일부터 3일까지 비가 내렸으나 오늘은 맑은 날씨였습니다. 양지호 선수는 19.9°의 온도와 2.2m의 바람에 대처하여 마지막 콜을 내렸습니다.\n2. 양지호 선수는 오르막 경사를 통해 적당한 런을 발생시키고, 이로써 두 타까지 줄일 수 있었습니다. 이어서 투원에 성공하여 두 자리 언더로 둘째 날을 마무리할 수 있게 되었습니다.\n3. 양지호 선수는 2023년 한행 인비테이션에서 두 번째 우승을 기록했으며, 아내가 캐디를 했을 때 우승을 하면서도 화제가 되었습니다. 또한 자신의 첫 우승 장면이 기억나고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[2026 KPGA] 'Teary-eyed..' Awards Ceremony & Interview with Yang Ji-ho, a soon-to-be father in No...",
+          "video_id": "0rShNIQ9MTE",
+          "views": 10637,
+          "upload_date": "2026-05-24",
+          "url": "https://www.youtube.com/watch?v=0rShNIQ9MTE",
+          "subtitle_summary": "1. 2026 KPGA 대회에서 우승한 양지호 선수와 인터뷰.  Yang Ji-ho, the winner of the 2026 KPGA tournament, is interviewed.\n2. Yang Ji-ho shares his feelings about winning the Wiret Wire tournament, stating that he was nervous but managed to win with a little luck and determination. He also mentions that the turning point was the 9th hole.\n3. Yang Ji-ho talks about the emotional moment at the end of the game, saying that he felt both relief and tears as he approached the final shot. He also discusses his upcoming family life, expressing gratitude to his wife and soon-to-be baby for their support during difficult times.",
+          "db_saved": true
+        },
+        {
+          "title": "[2026 KPGA] Leader Under Pressure... Ji-ho Yang's Dramatic Chip-in Birdie!!! _Kolon 68th Korea Op...",
+          "video_id": "kI556N1m1fc",
+          "views": 10401,
+          "upload_date": "2026-05-24",
+          "url": "https://www.youtube.com/watch?v=kI556N1m1fc",
+          "subtitle_summary": "1. 양지호 선수는 앞선 경기에서 악몽을 겪었으나, 9번 홀에서 드라마틱한 치핀 버디를 내어 2위 왕정훈과 6타차로 후반전에 이유롭게 긴장을 느끼지 않는 상태가 되었습니다.\n2. 양지호 선수의 경기는 매우 흔들리지만, 끝까지 버티고 있어 골프 팬들에게 관심을 끌고 있습니다.\n3. 왕정훈은 최상의 컨디션으로 추격을 이어가다가, 9번 홀에서 위기를 겪었습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[2026 KGA] 진심을 꾹꾹 눌러 담은 양지호 우승 인터뷰ㅣKGA 코오롱 한국오픈 FRㅣ웨이브 골프",
+          "video_id": "bG1Hjn5Jyyg",
+          "views": 6,
+          "upload_date": "2026-05-24",
+          "url": "https://www.youtube.com/watch?v=bG1Hjn5Jyyg",
+          "subtitle_summary": "1. 양지호 선수는 오늘 응원해주신 시청자분들에게 감사하며, 이번 한국 오픈 대회에서의 우승을 보답으로 뿌듯함을 표현했습니다.\n2. 양지호 선수는 과거 하나은행 인피테이션널에서도 일본을 대표하는 선수를 이기고 우승한 적이 있으며, 이번 대회에서는 세계적인 선수들을 뒤로 두고 또 한 번의 큰 우승을 만들어냈습니다.\n3. 이 영상은 68회 한국 오픈 골프 대회 우승자인 양지호 선수와의 인터뷰입니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[2026 KGA] Wire-to-Wire, from qualifying to victory - Yang Ji-ho award ceremonyㅣKGA Kolon Korea O...",
+          "video_id": "4vS9-PcrlEM",
+          "views": 12,
+          "upload_date": "2026-05-24",
+          "url": "https://www.youtube.com/watch?v=4vS9-PcrlEM",
+          "subtitle_summary": "2026 KGA 대회에서 우승자 Yang Ji-ho가 있을 것이며, 우승상금은 7억 원이 될 것입니다. 시상식에서는 강용모 회장, 코롱 안회장, 김석필 천안 부시장이 각각 트로피, 자켓, 꽃따발을 전달할 것입니다. 또한, Yang Ji-ho는 7월에 영국의 Royal Berkshire Golf Club에서 1회 디오픈 챔피언십에 출전할 수 있는 특권이 주어질 것입니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 1.1587,
+      "min": 1.6815,
+      "nb_score": 0.6891,
+      "avg_views": 4376.8,
+      "total_views": 21884
+    },
+    {
+      "keyword": "봉축법요식",
+      "is_fixed": false,
+      "views": [
+        34791,
+        8192,
+        38060,
+        1452,
+        21967,
+        607,
+        11243,
+        5086,
+        1858
+      ],
+      "video_count": 9,
+      "videos": [
+        {
+          "title": "🔴 2026년 부처님오신날 봉축 법요식 #이재명대통령 #부처님오신날  #봉축법요식 #생방송 #이재명",
+          "video_id": "BFVV6VJCNSs",
+          "views": 34791,
+          "upload_date": "2026-05-24",
+          "url": "https://www.youtube.com/watch?v=BFVV6VJCNSs",
+          "subtitle_summary": "1. 이재명 대통령의 방송에서 조개사 보륜 스님과 조개사 원심 김철환님이 함께하여 2026년 부처님오신날 봉축 법요식을 진행합니다.\n2. 법요식은 MBC와 다른 방송국을 통해 전국에서 생중계되고, 휴대폰의 진동이나 무음으로 바꾸어 주시기를 부탁합니다.\n3. 육법 공양을 통해 부처님의 가르침을 널리 전하고, 꽃 공양으로 만행에서 고귀한 깨달음의 꽃이 피는 의식을 합니다.",
+          "db_saved": true
+        },
+        {
+          "title": "“나를 믿어라? 그런 가르침은 없다” 종정 스님이 말하는 불교의 진짜 비밀 [ 불기 2570년 부처님 오신 날 봉축 법요식｜법어]",
+          "video_id": "oWXyMDHpDh4",
+          "views": 8192,
+          "upload_date": "2026-05-24",
+          "url": "https://www.youtube.com/watch?v=oWXyMDHpDh4",
+          "subtitle_summary": "1. 대통령, 정당 대표 및 많은 불자가 종교 협의에서 부처님이 70년 전 세상에 오신 것을 축하며 참석했습니다.\n2. 부처님은 세상에 오신 목적은 어두운 세상을 밝히고 행복한 삶을 영광스럽게 하는 것이었습니다.\n3. 부처님의 가르침에서는 자신을 믿으면 용서를 받고 복을 받을 수 있는 것이 없었고, 개인이 스스로 진리를 깨달아 부처가 되어야 한다는 것이 중요했습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[자막] 이재명 대통령, 부처님오신날 봉축법요식 축사",
+          "video_id": "W36bBjwYsYg",
+          "views": 38060,
+          "upload_date": "2026-05-24",
+          "url": "https://www.youtube.com/watch?v=W36bBjwYsYg",
+          "subtitle_summary": "1. 이재명 대통령은 2570년 부처님의 오신 날을 기원하며, 종정 중봉성파 대종사 진우스님과 원로회의 의장 자광대종사님 등이 함께한 봉축법요식에서 부처님의 가르침을 감사하고 따라하겠다는 말을 했습니다.\n2. 부처님의 가르침은 국민의 아픔을 치유하고, 서로를 이해하고 화합하라는 것으로, 우리 사회를 더 단단한 공동체로 만들어 주었습니다.\n3. 국민의 목숨을 살리기 위해서 최선을 다하며, 가장 낮은 곳의 목소리에 귀를 기울이는 그런 나라를 만들겠다는 의도로, 부처님의 자회와 지혜가 온 세상에 더 넓고 깊이 전해지길 소망합니다.",
+          "db_saved": true
+        },
+        {
+          "title": "부처님오신날 봉축 법요식...'화합과 상생' 기원 / YTN",
+          "video_id": "EQ6SgslEymg",
+          "views": 1452,
+          "upload_date": "2026-05-24",
+          "url": "https://www.youtube.com/watch?v=EQ6SgslEymg",
+          "subtitle_summary": "1. 부처님의 탄생을 축하하는 봉축 법요식이 전국 사찰에서 열렸습니다. 세상의 화합과 상생, 가족의 건강과 소망을 기원했습니다.\n2. 불자와 시민들이 아기 부처를 찾고 관부르식에서 긴 줄이 늘어나며, 자비로운 세상이 되길 기원합니다. 모든 괴로움은 탐욕과 성 어리석음에서 비롯된다고 하였습니다.\n3. 화창한 날씨 속에 맞은 부처님의 오신 날, 평안하고 화합과 평화로운 세상이 되기를 기원했습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "Buddhist Era 2570 Buddha's Birthday Celebration Ceremony - [LIVE] MBC Broadcast May 24, 2026",
+          "video_id": "-zPfzMbKXR8",
+          "views": 21967,
+          "upload_date": "2026-05-24",
+          "url": "https://www.youtube.com/watch?v=-zPfzMbKXR8",
+          "subtitle_summary": "1. 이날은 2570년 부처님 오신 날 봉축 법요식을 봉행합니다. 모두 부처님을 향해 합장하여 주시기 바랍니다.\n2. 반야바라밀다를 의지함으로 마음에 걸림이 없고 걸림이 없음, 가신비하고 밝은 주문이며 비없는 주문이며 무엇과도 견줄 수 없는 주문이라고 합니다.\n3. 대한불교 조개종 총무원장 진우스님, 원로회의 의장 불령자광 대종사가 관불 의식을 봉행하며, 마정수기를 받은 어린이들에게 축복의 박수를 부탁드리고, 부처님께 공양을 올리는 순서를 함께 합니다.",
+          "db_saved": true
+        },
+        {
+          "title": "\"마음은 평안, 세상은 화합으로\"…부처님오신날 봉축법요식 / 연합뉴스TV (YonhapnewsTV)",
+          "video_id": "li9lyMwvCRY",
+          "views": 607,
+          "upload_date": "2026-05-24",
+          "url": "https://www.youtube.com/watch?v=li9lyMwvCRY",
+          "subtitle_summary": "1. 2570년 부처님 오신 날, 전국 사찰에서 동축 법요식이 진행되었습니다. 목소리가 마음의 평안과 세상의 화합을 기원했습니다.\n2. 봉축 법요시에서는 갈등과 분열이 깊어진 사회에서 서로 이해하고 공존하는 길을 강조했으며, 자신의 마음을 되돌아보라는 요청이 있었습니다.\n3. 법요식에 참여한 사람들은 평화와 평안을 기원하고, 온 세상의 자비가 뿌려져 모든 중생들이 고통 없이 살아갈 수 있도록 빌었습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "봉은사 봉축 법요식 (2026.05.24.)",
+          "video_id": "MfeYoTQ3wbo",
+          "views": 11243,
+          "upload_date": "2026-05-24",
+          "url": "https://www.youtube.com/watch?v=MfeYoTQ3wbo",
+          "subtitle_summary": "1. The V commemorative ceremony will start shortly at 10am, inviting all visitors to participate in offering incense, lanterns, flowers, fruit tea, and rice to the Buddha. After the main ceremony, there will be a Buddha bathing ritual.\n2. Notable attendees include the head of the Bongwon Sa temple, former leaders, and important members. The schedule includes a commemorative ceremony at 10am, followed by a prayer and lantern ceremony at 7pm.\n3. A brief introduction of some key figures was provided: Kim Sang-won (current temple president), former presidents, the current administrative head, and the head of the Moo-hoe (Buddhist lay organization).",
+          "db_saved": true
+        },
+        {
+          "title": "🔴LIVE 이재명 대통령 '부처님 오신 날' 봉축법요식 | SBS 뉴스속보",
+          "video_id": "dVChzXA1jf4",
+          "views": 5086,
+          "upload_date": "2026-05-24",
+          "url": "https://www.youtube.com/watch?v=dVChzXA1jf4",
+          "subtitle_summary": "1. 이재명 대통령은 2570년 부처님 오신 날 봉축 법요식을 열었습니다. 모두 부처님을 향해 합장하며, 삼계인이 악단의 연주와 함께 노래를 합니다.\n2. 반야바라밀따신경을 봉독하고, 가닭보살은 부처님께 의지함으로 두려운 것이 없습니다. 대한불교 조개종 총무원장 진우스님과 원로회의 의장 불령자광 대종사가 관불 의식을 봉행합니다.\n3. 미래의 부처님이 될 어린이들에게 마정수기를 내리고, 뉴트리팝스 오케스트라와 조개사 연합 창단 그리고 동국대학교 예술대학 한국 음악과 학생들이 부처님께 찬불을 합니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[자막] 이재명 대통령이 부처님오신날 거듭 다짐한 '이 약속'",
+          "video_id": "M8UZN2uAX3o",
+          "views": 1858,
+          "upload_date": "2026-05-24",
+          "url": "https://www.youtube.com/watch?v=M8UZN2uAX3o",
+          "subtitle_summary": "1. 이재명 대통령은 2570년 부처님의 오신 날을 기원합니다. 존경하는 종정 중봉성파 대종사님, 원로회의 의장 자광대종사님과 함께해 주셔서 감사합니다.\n2. 부처님의 가르침이 오랜 시간 우리 삶에 함께해왔으며, 국가적 위기와 슬픔을 맞이할 때마다 국민의 아픔을 치유하고 소외된 이웃의 안식처가 되었습니다.\n3. 우리 국민 주권 정부는 부처님의 귀한 말씀들을 등불로 삼겠습니다. 최선을 다하여 만인이 존귄하고 누구나 평등하다는 가르침을 실천하며, 국민과 나라의 위기를 극복해 나갈 것입니다. 부처님의 자회와 지혜가 온 세상에 더 넓고 깊이 전해지길 소망합니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0.7614,
+      "min": 1.47,
+      "nb_score": 0.518,
+      "avg_views": 13695.11,
+      "total_views": 123256
+    },
+    {
+      "keyword": "스타벅스 사과 발표",
+      "is_fixed": false,
+      "views": [
+        7544,
+        10043,
+        8053,
+        3158,
+        6120,
+        20145,
+        2668,
+        2911,
+        10068,
+        4645
+      ],
+      "video_count": 10,
+      "videos": [
+        {
+          "title": "정용진 회장, 모레 스타벅스 관련 대국민 사과...조사 결과도 발표 / YTN",
+          "video_id": "ypxPkfQ6vrU",
+          "views": 7544,
+          "upload_date": "2026-05-24",
+          "url": "https://www.youtube.com/watch?v=ypxPkfQ6vrU",
+          "subtitle_summary": "1. 정용진, 신세계 그룹 회장, 스타벅스의 탱크데이 이벤트 논란과 관련해 5월 26일 직접 대국민 사과에 나섰습니다.\n2. 정회장은 부적절한 마케팅으로 상처받은 모든 분들께 사과하기로 했습니다.\n3. 신세계 그룹은 이번 사태와 관련한 자체 진상 조사 결과도 함께 발표할 예정입니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[속보] 정용진, 26일 스타벅스 관련 재차 대국민 사과…조사결과도 발표 [이슈PLAY] / JTBC News",
+          "video_id": "mexpwkB8Suk",
+          "views": 10043,
+          "upload_date": "2026-05-24",
+          "url": "https://www.youtube.com/watch?v=mexpwkB8Suk",
+          "subtitle_summary": "1. 이재명 대통령은 스타벅스 코리아가 2년 전 세월호 참사 기간에 사이렌 머그잔을 홍보하며 광주 민주화운동과 박종철 열사를 모욕한 것으로 비판했습니다.\n2. 스타벅스는 이번 4월 16일 새로운 머그잔을 출시하며, 과거에서부터 괴물로 나타난 로고와 연관되어 있습니다.\n3. 불매 운동이 계속되고 있으며, 정의원 등은 스타벅스 회장 정용진이 사과해야 한다는 목소리가 강하다고 합니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[🔴속보] 스타벅스 '탱크데이' 거센 후폭풍에…정용진, 26일 대국민사과 나선다 / 연합뉴스TV(YonhapnewsTV)",
+          "video_id": "dlao8SmGzWs",
+          "views": 8053,
+          "upload_date": "2026-05-24",
+          "url": "https://www.youtube.com/watch?v=dlao8SmGzWs",
+          "subtitle_summary": "1. 스타벅스에서 과거 탱크데이 이벤트로 인해 논란이 되어 미사용 선불 충전금을 환불하라는 법원 명령이 제기됐습니다.\n2. 이 사건으로 인해 기업의 마케팅 검수 체계와 역사 사회적 감수성에 대한 점검이 불가피해졌습니다.\n3. 정부, 관련 기관들은 스타벅스의 반역사적 행태에 깊은 유감을 표하고 스타벅스 상품을 정부 행사에서 제공하지 않겠다는 선언을 했습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "정용진, 스타벅스 논란 대면 사과…조사결과 발표도 / 연합뉴스TV (YonhapnewsTV)",
+          "video_id": "ED3cDHi_z8g",
+          "views": 3158,
+          "upload_date": "2026-05-24",
+          "url": "https://www.youtube.com/watch?v=ED3cDHi_z8g",
+          "subtitle_summary": "1. 정용진, 스타벅스 관련 논란이 지속되고 있습니다. 26일 직접 대면 사과하였으며, 오전 강남구 조선 팰리스에서 대국민 사과문을 발표할 예정입니다.\n2. 이전에는 5.18 민주화운동 영령, 유가족 및 국민 여러분에게 깊은 상처를 주었다고 서면으로 사과문을 발표했습니다.\n3. 이날 자체 진상 조사 결과도 함께 발표할 계획입니다.",
+          "db_saved": true
+        },
+        {
+          "title": "정용진 26일 대국민 사과...스벅 자체조사 결과도 발표 / YTN",
+          "video_id": "DHKDR_qjSlo",
+          "views": 6120,
+          "upload_date": "2026-05-24",
+          "url": "https://www.youtube.com/watch?v=DHKDR_qjSlo",
+          "subtitle_summary": "1. 정용진, 신세계 그룹 회장, 5월 18일 스타벅스의 탱크데이 이벤트에서 부적절한 마케팅으로 인해 상처를 주었다는 비판을 받았습니다.\n2. 정용진은 5월 26일 오전, 직접 대국민 사과를 하고 스타벅스의 탱크데이 이벤트에 관한 자체 진상 조사 결과도 함께 발표할 예정입니다.\n3. 이번 사태는 정치권으로 번졌고, SNS에서 불매 운동이 확산되었습니다. 또한 시민 단체가 정회장을 경찰에 고발하며 형사 사건으로 번졌고, 과거 정회장의 멸공발언 이력까지 도마위에 오르는 상황입니다.",
+          "db_saved": true
+        },
+        {
+          "title": "Starbucks 'Tank Day' Controversy: Chung Yong-jin to Issue Public Apology and Announce Internal In...",
+          "video_id": "WD4KufDbnjU",
+          "views": 20145,
+          "upload_date": "2026-05-24",
+          "url": "https://www.youtube.com/watch?v=WD4KufDbnjU",
+          "subtitle_summary": "Starbucks Korea CEO Chung Yong-jin will issue a public apology and announce internal measures following controversy over a Tank Day event that was perceived as insensitive to the Gwangju 518 Democratization Movement and Park Jong-cheol's torture. The apology comes after widespread criticism, including from President Moon Jae-in, and a boycott movement. Starbucks Korea will announce details of their internal investigation and plans for addressing the issue at a press conference on May 20th.",
+          "db_saved": true
+        },
+        {
+          "title": "스타벅스 논란에 정용진 회장, 26일 직접 사과 나선다 / YTN",
+          "video_id": "f0J8IAPg5N0",
+          "views": 2668,
+          "upload_date": "2026-05-24",
+          "url": "https://www.youtube.com/watch?v=f0J8IAPg5N0",
+          "subtitle_summary": "1. 정용진, 신세계 그룹 회장은 26일 직접 대국민 사과하기로 했습니다. 이는 스타벅스의 탱크데이 이벤트와 관련된 논란으로 인해 발생했습니다.\n2. 정회장은 서울 역삼동 조선 팰리스 호텔에서 기자 회견을 열고, 모든 분들에게 직접 사과하려는 계획이라고 밝혔습니다.\n3. 신세계 그룹은 이번 사태와 관련한 자체 진상 조사 결과도 함께 발표하기로 했습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "Chung Yong-jin to Issue Public Apology on the 26th... Investigation Results Also to be Announced ...",
+          "video_id": "b9UahvuOJjQ",
+          "views": 2911,
+          "upload_date": "2026-05-24",
+          "url": "https://www.youtube.com/watch?v=b9UahvuOJjQ",
+          "subtitle_summary": "스타벅스 코리아의 모기업인 신세계그룹 정용진 회장은 5월 26일 대국민 사과문을 발표할 예정이며, 자체 조사 결과도 함께 공개할 것입니다. 논란은 스타벅스가 5월 18일의 광주 민주화운동에 관련한 탱크 시리즈 텀블러 행사 홍보 과정에서 발생했으며, 온라인에서는 계엄군 탱크 진압과 고 박종철 열사 고문치사 사건을 연상시키는 비판이 나타났습니다. 스타벅스는 행사를 중단하고 사과문을 냈고, 신세계그룹은 담당 임원을 해임했으며, 정 회장도 사과문을 내리고 사죄드린 것으로 알려졌습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "정용진, 모레(26일) 스타벅스 '5.18 모욕' 마케팅 논란 '대국민 사과'‥조사 결과도 발표 - [풀영상] ㅡ 뉴스데스크 2026년 05월 24일",
+          "video_id": "Yoea-lbmbw4",
+          "views": 10068,
+          "upload_date": "2026-05-24",
+          "url": "https://www.youtube.com/watch?v=Yoea-lbmbw4",
+          "subtitle_summary": "1. 정용진, 신세계 그룹 회장, 스타벅스의 '5.18' 모욕 마케팅에 대한 논란으로 인해 사과문을 발표했습니다.\n2. 이전 행정 논란과 4월 16일 세월로 참사를 조롱하는 마케팅 등으로 인해 비판 수위가 높아졌습니다.\n3. 정회장은 공식석상에서 사과문을 발표할 예정이며, 자체 진상조사 결과도 발표할 것으로 전해졌습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[Issue Pick? Pick!] Starbucks 'Tank Day' Scandal: Chung Yong-jin to Issue Public Apology and Anno...",
+          "video_id": "zz1YDALS92Y",
+          "views": 4645,
+          "upload_date": "2026-05-24",
+          "url": "https://www.youtube.com/watch?v=zz1YDALS92Y",
+          "subtitle_summary": "Starbucks 회장, 정용진, 5월 18일(518) 민주화 운동에 관련된 문구로 참사를 조롱하는 것으로 보이는 이벤트를 개최한 것에 대해 공분을 산 것으로 알려졌습니다. 이 사건으로 인해 불매 운동이 벌어지고 정회장에 대한 고발과 집단 손해 배상 소송 움직임까지 일어났습니다. 결국 정회장은 8일 만에 공식적으로 사과문을 발표하여 사람의 탈을 쓰는 것에 대해 사과했습니다. 또한 신세계 그룹은 이날 자체 진상 조사 결과도 발표할 예정입니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0.5495,
+      "min": 1.741,
+      "nb_score": 0.3157,
+      "avg_views": 7535.5,
+      "total_views": 75355
+    },
+    {
+      "keyword": "류현진 한미통산 200승",
+      "is_fixed": false,
+      "views": [
+        2985,
+        9000,
+        640,
+        5243,
+        6,
+        36544,
+        25,
+        4331
+      ],
+      "video_count": 8,
+      "videos": [
+        {
+          "title": "위대한 투수 류현진, 한미통산 200승 달성 [9시 뉴스] / KBS  2026.05.24.",
+          "video_id": "-iWQ1OiFMWc",
+          "views": 2985,
+          "upload_date": "2026-05-24",
+          "url": "https://www.youtube.com/watch?v=-iWQ1OiFMWc",
+          "subtitle_summary": "1. 야구 선수 류현진은 200승을 달성하여 한국 야구사상 최고의 투수로 손꼽히며, 35세에도 정상급 투수로 활약하며 역사를 썼습니다.\n2. 이 경기에서 유현진은 KBO리그 122승을 거뒀고, 미국에서 기록한 78승을 더해 한미통산 200승을 달성했습니다.\n3. 이 기록은 송진우 뒤인 두 번째로 프로리그에서 한국인 투수가 달성한 것입니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[5.24 리뷰]류현진의 한미 통산 200승! 주말 시리즈 스윕!",
+          "video_id": "wxcRYIQTA-8",
+          "views": 9000,
+          "upload_date": "2026-05-24",
+          "url": "https://www.youtube.com/watch?v=wxcRYIQTA-8",
+          "subtitle_summary": "1. 두산과 한화의 경기에서 한화가 5대2로 이겼습니다. 3연전 중 한화가 모두 이겼지만 현재 스코어는 5대2, 5대3, 5대2입니다.\n2. 경기는 치열했으나 한화 팬들은 최소 실점으로 3연전을 가져온다고 생각할 수 있었습니다.\n3. 이야기의 주제는 유현진 선수와 KBO의 변화입니다. 구속도 중요하지만 재구가 뛰어난 선수들은 어떤 역할을 하고 좋은 제구를 갖고 있는 선수가 어떤 성적을 낼 수 있으며 어디까지 갈 수 있는지를 잘 보여줬다고 생각합니다.",
+          "db_saved": true
+        },
+        {
+          "title": "\"류현진, 한미 통산 200승 위업\"..한화, 시즌 첫 스윕승｜ TJB 대전·세종·충남뉴스",
+          "video_id": "5rcRntLxCR4",
+          "views": 640,
+          "upload_date": "2026-05-24",
+          "url": "https://www.youtube.com/watch?v=5rcRntLxCR4",
+          "subtitle_summary": "1. 한화이글스가 3연전에서 두산과 모두 승리하며, 시즌 첫 스위를 달성했습니다.\n2. 투수 류현진은 이 경기에서 한미통산 200승을 달성했으며, 이는 한화 레전드 송진우 이후 두 번째입니다.\n3. 이 결과로 인해 한화는 순위도 단독 5위까지 끌어올렸습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "Korean Monster Ryu Hyun-jin Achieves Historic 200 Combined Wins in Korea and the U.S.! | #Basebal...",
+          "video_id": "NRmyJ0FaVs8",
+          "views": 5243,
+          "upload_date": "2026-05-24",
+          "url": "https://www.youtube.com/watch?v=NRmyJ0FaVs8",
+          "subtitle_summary": "1. 코리안 몬스터 류현진은 대전에서 한미 통산 200승을 달성했습니다. (World Cup is getting closer. Korean Monster Ryu Hyun-jin achieved a combined 200 wins in Korea and the U.S.)\n2. 류현진은 KBO 리그 데뷔 당시 7과 13이 이닝 동안 개의 탈삼진을 기록하며 괴물툰의 탄생을 알렸습니다. (Debuted in KBO league on April 12, 2006, Ryu Hyun-jin recorded 7 strikeouts and 13 innings without a walk.)\n3. 류현진은 MLB 진출 전 한국에서의 마지막 경기에서 99승을 달성하고, 이후 LA Dodgers의 유니폼을 입고 메이저리그 데뷔 첫 14승을 거뒀습니다. (Before joining MLB, Ryu Hyun-jin recorded 99 wins in Korea and wore the uniform of LA Dodgers for his major league debut.)",
+          "db_saved": true
+        },
+        {
+          "title": "[5.24 두산전 리뷰] 류현진 한미통산 200승 금자탑!!!",
+          "video_id": "ZKpStdwYkHo",
+          "views": 6,
+          "upload_date": "2026-05-24",
+          "url": "https://www.youtube.com/watch?v=ZKpStdwYkHo",
+          "subtitle_summary": "1. 유튜브 채널 '앵글리'가 3년 만에 복귀하며, 5월 24일 두산과의 대전 경기를 리뷰합니다. 한화는 이미 위닝 시리즈를 확보했고, 오늘 5대 2로 승리하여 수입승을 달성하며, 팀은 3연승을 달리게 됐습니다.\n2. 승리 투수는 류현진 선수였으며, 한미통산 200승의 금자탑을 쌓았습니다. 두산의 패전 투수는 최승용이었고, 문현빈 선수가 1회 1 3루에서 중견수 희생 플라이로 기록을 했습니다.\n3. 한화의 추가점은 수비에서 유격수 박찬호의 송구실책과 호수 윤준호의 포일로 차곡차곡 쌓아 올라가며, 경기 중반에 승기를 가져왔습니다. 유현진 선수는 6과 2분이 이이닝 동안 피안타 여섯 개 2실점으로 완벽투 아 승리 투수가 됐습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "류현진 한미 통산 200승 축하 메시지 #한화이글스 #류현진 #폰세 #와이스 (2026.5.24. vs. 두산)",
+          "video_id": "EcY6IX_KeS0",
+          "views": 36544,
+          "upload_date": "2026-05-24",
+          "url": "https://www.youtube.com/watch?v=EcY6IX_KeS0",
+          "subtitle_summary": "1. 류현진(Yadi)이 200승을 넘게 되어 축하는 메시지입니다. 그는 탁월한 사람, 팀원, 피치러로서 있습니다. 그의 가족과 잘 지내고 계시며 축하합니다.\n2. 류현진은 베이스볼 세계에서 모두에게 영감을 주는 인물입니다. 우리는 그를 좋아하고 지금까지 함께한 즐거운 기억을 소중히 가지고 있습니다.\n3. 류현진에게 좋은 경력을 축하며, 우리는 그를 또 보러 갈 수 있을 때까지 기다립니다. 여러분도 행복합니다. 신의 응원을 받으세요. 축하해, 야디! 좋아하십시오.  скоро 보러 올 것이라 기대합니다.",
+          "db_saved": true
+        },
+        {
+          "title": "한화 팬들이 류현진 200승에 울컥한 이유",
+          "video_id": "8zWIbbiAV4Y",
+          "views": 25,
+          "upload_date": "2026-05-24",
+          "url": "https://www.youtube.com/watch?v=8zWIbbiAV4Y",
+          "subtitle_summary": "한화 이글스 팬들은 류현진의 200승을 기념하며, 그의 야구 인생을 함께 되짚어보는 시간으로 시작했습니다. 2026년 5월 24일 대전 한화생명 볼파크에서 류현진은 두산 베어스와의 경기를 지배하여 200이라는 숫자에 도달했습니다. 이 경기는 정규 시즌 한 경기가 아니었고, 류현진은 신인 때부터 리그를 접수하며 리그 전체 최고의 선수로 인정받았습니다. 또한 2006년에 신인이었을 때 신인상과 정규 리그 MVP를 동시에 얻었습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "Hanwha Eagles' Pride Ryu Hyun-jin (May 24 Hanwha vs. Doosan Review)",
+          "video_id": "j5k_IZt90Pw",
+          "views": 4331,
+          "upload_date": "2026-05-24",
+          "url": "https://www.youtube.com/watch?v=j5k_IZt90Pw",
+          "subtitle_summary": "1. 이 영상은 Hanwha Eagles의 피치러 Ryu Hyun-jin에 대한 리뷰입니다. 20년 동안 함께하며 200승을 넘게 되었습니다. 2. 이번 경기에서 Ryu는 Doosan의 타자들에게 147을 꽂고 완벽한 피칭을 보여주었으며, 특히 양이지와의 승부에서 몸쪽으로 직구를 넣어 투수합당보를 유도했습니다. 3. Ryu는 역대 최초이자 앞으로도 없을 신인왕과 MVP를 동시에 수상하며, 2019년에 National League 평균자점 1위, 내셔널 리그 사이 영상 2위, 워렌스판상 수상 등 다양한 수상을 거두었습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0.2527,
+      "min": 1.0141,
+      "nb_score": 0.2492,
+      "avg_views": 7346.75,
+      "total_views": 58774
+    },
+    {
+      "keyword": "부처님 오신날",
+      "is_fixed": false,
+      "views": [
+        372176,
+        35050,
+        24733,
+        14245,
+        8379,
+        10842
+      ],
+      "video_count": 6,
+      "videos": [
+        {
+          "title": "[On-Site Video] \"Tell him to stop?\"... What caused an 'outburst of laughter' during the Buddha's ...",
+          "video_id": "kgp3_YzhORY",
+          "views": 372176,
+          "upload_date": "2026-05-24",
+          "url": "https://www.youtube.com/watch?v=kgp3_YzhORY",
+          "subtitle_summary": "1. 이 영상에서는 대통령이 나라 살림(불교 사람)들과 만난 것을 소개합니다. 살림살이(자기 자신의 존재를 살리는 행동)가 중요하다고 주장되며, 대통령은 나라 살림 사람이 아니라는 것을 묻습니다.\n2. 여러분들이 지금 어떤 일을 하고 있는지 생각해보라는 질문이 나오며, 살림살이를 하고 있음을 주장합니다.\n3. 대통령의 방문과 함께 봉축 행사가 열리는데, 각자 자기 자신의 삶을 잘 살리는 것이 중요하다고 주장되며, 부처님(불교의 성서)에게 진리를 받은 것으로 보입니다.",
+          "db_saved": true
+        },
+        {
+          "title": "🔴 2026년 부처님오신날 봉축 법요식 #이재명대통령 #부처님오신날  #봉축법요식 #생방송 #이재명",
+          "video_id": "BFVV6VJCNSs",
+          "views": 35050,
+          "upload_date": "2026-05-24",
+          "url": "https://www.youtube.com/watch?v=BFVV6VJCNSs",
+          "subtitle_summary": "1. 이재명 대통령의 방송에서 2026년 부처님오신날 봉축 법요식이 진행되고 있음을 알리며, 조개사 보륜 스님과 조개사 원심의 김철환님이 수화통역을 담당할 것임을 소개합니다.\n2. 모든 협력은 법요식이 원만하고 환의롭게 진행될 수 있도록 도움이 되며, 전국에서 MBC와 다른 방송국을 통해 생중계됩니다.\n3. 함께하는 모든 사람들이 고요하고 청정한 마음으로 도량결 의식에 참여하며, 육법 공양이 진행되고 있습니다. 이 육법 공양은 부처님 법의 공덕을 찬탄하기 위해 향, 등, 꽃, 과일, 차, 쌀 이렇게 여섯 가지 공약물을 올리는 의식입니다.",
+          "db_saved": true
+        },
+        {
+          "title": "부처님 오신날 반야심경 낭독중...카메라에 잡힌 서울시장 후보의 표정은?",
+          "video_id": "47l7d9AmkWA",
+          "views": 24733,
+          "upload_date": "2026-05-24",
+          "url": "https://www.youtube.com/watch?v=47l7d9AmkWA",
+          "subtitle_summary": "영상에서는 반야심경을 낭독하고 있으며, 서울시장 후보의 표정은 깊은 반자바란밀다를 행하는 사람이라는 것을 비추어보고 있습니다. 그는 세기공과 다르지 않고, 공이 이색과 다르며, 색이 공이고 공이고 색끼리 수상하지 않으며, 법하여 다지도 멸하지도 않는, 더럽지도 깨끗하지도 않고, 늙지도 줄지도 않는 것을 말합니다. 또한 얻을 것이 없는 가신비하고 밝은 주문인 반야바라밀다를 의지함으로 두려움이 없어서 완전한 열반에 들어가며, 세상깨을 얻는다고 말합니다. 마지막으로 반야바라주를 말하기 시작합니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[다시보기] 불기 2570년 부처님오신날 봉축 법요식-5월 24일 (일) 풀영상 [이슈현장] / JTBC News",
+          "video_id": "4X_BtfwgmuA",
+          "views": 14245,
+          "upload_date": "2026-05-24",
+          "url": "https://www.youtube.com/watch?v=4X_BtfwgmuA",
+          "subtitle_summary": "1. 오늘은 불기 2570년 부처님 오신 날 봉축 법요식을 진행할 예정이며, 모두 부처님을 향해 합장하여 주시기 바랍니다.\n2. 이 일은 대한불교 조개종 총무원장 진우스님과 원로회의 의장 불령자광 대종사가 관불 의식을 봉행할 것입니다.\n3. 이 일은 새로운 세상을 열어 부처님께 공양을 올리는 순서로, 대한불교종 총무원장 진우스님과 이재명 대통령이 함께 등 공양을 올리게 될 것입니다.",
+          "db_saved": true
+        },
+        {
+          "title": "“나를 믿어라? 그런 가르침은 없다” 종정 스님이 말하는 불교의 진짜 비밀 [ 불기 2570년 부처님 오신 날 봉축 법요식｜법어]",
+          "video_id": "oWXyMDHpDh4",
+          "views": 8379,
+          "upload_date": "2026-05-24",
+          "url": "https://www.youtube.com/watch?v=oWXyMDHpDh4",
+          "subtitle_summary": "1. 대통령 등 다양한 정당의 대표, 불교 협의의 대표 여러분들이 부처님 오신 날을 맞이하며 감사를 표합니다.\n2. 부처님은 세상에 오셔서 자연 대우주의 진리를 터득하셨으며, 이로써 어두운 세상을 밝히는 것입니다.\n3. 부처님의 가르침은 나를 믿으라는 것이 목적이 아니며, 개인이 스스로 진리를 깨달아서 모든 중생이 다 부처가 될 수 있도록 하는 법을 배우는 것입니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[🔴BBS특별생방송🔴] 불기2570년 부처님오신날 봉축 법요식 | 마음은 평안으로, 세상은 화합으로 #부처님오신날",
+          "video_id": "4oJ-lVbg-Xs",
+          "views": 10842,
+          "upload_date": "2026-05-24",
+          "url": "https://www.youtube.com/watch?v=4oJ-lVbg-Xs",
+          "subtitle_summary": "1. 대한불교종 진우스, 불령자강 등이 증명법사로 등단하여 2570년 부처님 오신 날 봉축 법요식을 열었습니다.\n2. 대한민국 대통령 이재명, 김혜경 여사, 우원식 국회의장 등도 함께 입장하며 큰 박수로 맞이했습니다.\n3. 삼계인은 악단의 연주에 맞춰 노래로 부처님을 응원하고, 반야바라밀타를 의지함으로 마음에 걸림이 없는 완전한 열반에 들어가며 세상에 따름을 얻었습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0.2537,
+      "min": 1.1265,
+      "nb_score": 0.2252,
+      "avg_views": 77570.83,
+      "total_views": 465425
+    },
+    {
+      "keyword": "외식업 플랫폼 수수료 부담",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "하이브리드차 판매 증가",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "반도체주 증시 전망",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "주담대 고정금리 상승",
+      "is_fixed": false,
+      "views": [
+        5918
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "Mortgage Rates Hit \"5% at Lowest\".. 'Rising Rate Trend' Returns, Warning Sounds for 'Debt-Fueled ...",
+          "video_id": "33EihCYj0q0",
+          "views": 5918,
+          "upload_date": "2026-05-24",
+          "url": "https://www.youtube.com/watch?v=33EihCYj0q0",
+          "subtitle_summary": "1. Mortgage rates are rising, with the lowest fixed rate reaching 5%. This trend is due to inflation concerns and interest rate hikes in Korea, influenced by global events like the ongoing Middle East conflict.\n2. KB Kookmin Bank has increased its mixed-rate mortgage by 0.1% point, reflecting a 0.1% increase in the 5-year financial institution rate. This raises the bank's lowest mixed-rate mortgage to 5.07% per year.\n3. This is the first time since November 2022 that the bank's fixed rate has exceeded 5%, marking a significant rise in interest rates. The increase is due to global inflation, particularly in the US and other countries, which have raised interest rates in response to rapid inflation. The Korean central bank has also increased interest rates twice this year, contributing to the current high-interest rate environment.",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "재건축 수주 삼성물산",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "피부 가려움 원인 치료",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "신장 건강 음료",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "TSMC 성과급 파업",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    }
+  ]
+}

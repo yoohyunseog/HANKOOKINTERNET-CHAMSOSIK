@@ -1,0 +1,85 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-05-25T11:18:47.651+09:00",
+  "category": "CPU",
+  "id": "cpu-ryzen-5-9600",
+  "name": "AMD Ryzen 5 9600",
+  "maker": "AMD",
+  "platform": "AM5",
+  "estimatedPriceKrw": 216750,
+  "priceBand": "15~30만원",
+  "speedLabel": "최대 부스트 약 5.2GHz",
+  "speedMetric": {
+    "kind": "cpu_boost_clock",
+    "label": "CPU 최대 부스트 클럭",
+    "value": 5.2,
+    "unit": "GHz",
+    "group": "CPU",
+    "compareNote": "CPU끼리는 GHz와 코어 수, 캐시, 세대 차이를 함께 봐야 합니다."
+  },
+  "unifiedSpeedScore": 867,
+  "performance": 78,
+  "valueIndex": 36,
+  "aiUseScore": 51,
+  "powerWatts": 65,
+  "tags": [
+    "gaming",
+    "office",
+    "upgrade"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "CPU",
+    "partId": "cpu-ryzen-5-9600",
+    "partName": "AMD Ryzen 5 9600",
+    "speed": {
+      "score": 867,
+      "weight": 0.42,
+      "metric": {
+        "kind": "cpu_boost_clock",
+        "label": "CPU 최대 부스트 클럭",
+        "value": 5.2,
+        "unit": "GHz",
+        "group": "CPU",
+        "compareNote": "CPU끼리는 GHz와 코어 수, 캐시, 세대 차이를 함께 봐야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 867,
+      "performance": 780,
+      "value": 480,
+      "aiFit": 510,
+      "priceEfficiency": 460,
+      "powerEfficiency": 400
+    },
+    "nbVector": [
+      867,
+      780,
+      480,
+      510,
+      460,
+      400
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 168.957,
+    "nbMin": 640.422,
+    "weightedScore": 699,
+    "nbBand": "500~699",
+    "summary": "CPU AMD Ryzen 5 9600 부품을 속도 중심 N/B 데이터베이스 점수 699점으로 저장했습니다."
+  },
+  "nbWeightedScore": 699,
+  "nbMax": 168.957,
+  "nbMin": 640.422,
+  "nbBand": "500~699",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=AMD%20Ryzen%205%209600%20%EA%B0%80%EA%B2%A9",
+  "notes": "Chrome 검색 수집 기준으로 가격을 확인하는 AM5 CPU 후보입니다."
+}

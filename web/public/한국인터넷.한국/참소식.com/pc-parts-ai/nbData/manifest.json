@@ -1,0 +1,35 @@
+{
+  "schema": "pc-parts-nb-database-manifest.v1",
+  "updatedAt": "2026-05-25T11:18:47.651+09:00",
+  "sourceType": "chrome-collected",
+  "root": "nbData",
+  "totalParts": 14,
+  "categories": {
+    "cpu": [
+      "cpu-ryzen-5-9600.json",
+      "cpu-ryzen-7-9700x.json",
+      "cpu-core-ultra-5-245k.json"
+    ],
+    "gpu": [
+      "gpu-rtx-5070.json",
+      "gpu-rtx-5060-ti.json",
+      "gpu-rx-9060-xt.json"
+    ],
+    "ram": [
+      "ram-ddr5-32-6000.json",
+      "ram-ddr5-64-6000.json"
+    ],
+    "ssd": [
+      "ssd-nvme-2tb-gen4.json",
+      "ssd-nvme-1tb-gen4.json"
+    ],
+    "mainboard": [
+      "mb-am5-b850.json",
+      "mb-lga1851-b860.json"
+    ],
+    "psu": [
+      "psu-650w-gold.json",
+      "psu-850w-gold.json"
+    ]
+  }
+}

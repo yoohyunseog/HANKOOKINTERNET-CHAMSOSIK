@@ -1,0 +1,501 @@
+{
+  "timestamp": "2026-05-24T23:18:00.236330",
+  "model": "mistral:latest",
+  "keyword_count": 3,
+  "analyze_subtitles": true,
+  "analysis_source": "youtube",
+  "keywords": [
+    {
+      "keyword": "오늘의 주요 뉴스",
+      "is_fixed": true,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "인천시장 선거 유정복 장동혁",
+      "is_fixed": false,
+      "views": [
+        2347,
+        1864
+      ],
+      "video_count": 2,
+      "videos": [
+        {
+          "title": "국민의힘, 오늘(24일) 인천서 집중 유세…수도권 표심 공략 / KBS  2026.05.24.",
+          "video_id": "cGVSxRPvVL8",
+          "views": 2347,
+          "upload_date": "2026-05-23",
+          "url": "https://www.youtube.com/watch?v=cGVSxRPvVL8",
+          "subtitle_summary": "1. 국민의힘 지도부는 인천서에서 집중 유세를 펼치며, 인천시장 후보 유정복과 같이 참석했습니다. 김유대 기자가 보고하고 있습니다.\n2. 박근혜 전 대통령은 어제 대구에서 추경호 후보 지원을 선언했습니다, 지지층 결집에 나섰습니다.\n3. 오세훈 서울시장 후보는 정 후보의 수도권 광역 급행 철도 철근 누락 공세에 \"토론부터 하자\" 응수했습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[Replay] People Power Party, Incheon Gyeyang Jakjeon Station Campaign - May 24 (Sun) Full Video [...",
+          "video_id": "SIaMV6KiY9c",
+          "views": 1864,
+          "upload_date": "2026-05-24",
+          "url": "https://www.youtube.com/watch?v=SIaMV6KiY9c",
+          "subtitle_summary": "1. 유정모(People Power Party)는 인천 지역에서 자리를 갖고 있으며, 미래를 만들어가는 데 노력하고 있습니다. 이는 정보 약속을 지키는 것으로 시작되고, 능력이 좋은 인천의 미래를 만들어가는 것입니다.\n2. 유정모 후보들이 여러분께서 지지하고 있습니다. 특히 장동혁 대표는 전국을 다니며 응원을 받고 있습니다.\n3. 유정모의 첫 번째 후보인 장동혁 대표는 지금 말씀을 드리고 있습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 4.4638,
+      "min": 0.0,
+      "nb_score": 44638.464,
+      "avg_views": 2105.5,
+      "total_views": 4211
+    },
+    {
+      "keyword": "이란 핵문제 호르무즈 통행",
+      "is_fixed": false,
+      "views": [
+        1360,
+        8125,
+        43567
+      ],
+      "video_count": 3,
+      "videos": [
+        {
+          "title": "[On-Site] Iran says \"Close to agreement,\" but retorts \"No promise to abandon nuclear program\" / S...",
+          "video_id": "5PadaoUXuqw",
+          "views": 1360,
+          "upload_date": "2026-05-24",
+          "url": "https://www.youtube.com/watch?v=5PadaoUXuqw",
+          "subtitle_summary": "미국과 이란은 합의가 가능성이 높아지는 분위기인데, 이란은 협상 결과에서 핵 프로그램을 포기하지 않고자 한다. 양해각서 최종본에는 핵 문제에 대한 약속이 없다고 보도되며, 이란이 미국에게 우라늄 포기 계획을 전달했다는 미 언론 보도를 부인했다. 양해각서가 조만간 체결되어도, 60일간의 협상에서는 핵 문제와 호르무즈 해협 등 쟁점을 두고 양측의 치열한 줄다리기가 예상된다.",
+          "db_saved": true
+        },
+        {
+          "title": "\"양해각서에 핵무기 개발 포기\"...이란 \"논의 안 해\" / YTN",
+          "video_id": "l70SAMoJbkM",
+          "views": 8125,
+          "upload_date": "2026-05-24",
+          "url": "https://www.youtube.com/watch?v=l70SAMoJbkM",
+          "subtitle_summary": "1. 미국과 이ран은 2월 28일부터 80여일 만에 전쟁 종결 협상에 근접했다고 보도되었습니다. 양해각서가 마무리 단계에 접어들었으나, 미국과 이ран의 공개된 내용에는 미묘한 차이가 있어 아직은 지켜봐야 합니다.\n2. 양해각서에는 이ран이 핵무기 개발을 포기하겠다는 약속이 들어 있다고 미국 언론이 보도했습니다. 그러나 이ран 측은 이 내용이 공개된 것에 대해 부인하고 있습니다.\n3. 양해각서에는 호르무 지업 개방과 관련한 합의 내용도 포함됐으며, 이를 통해 일부 제재가 면제되고 이란이 석유를 자유롭게 판매할 수 있도록 하는 등 양측의 관계가 개선될 것으로 보입니다. 그러나 이 내용에 대해서도 반박이 나오고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "\"양해각서에 핵무기 개발 포기\"...핵심 쟁점은 '복병' / YTN",
+          "video_id": "paEpELDg0v8",
+          "views": 43567,
+          "upload_date": "2026-05-24",
+          "url": "https://www.youtube.com/watch?v=paEpELDg0v8",
+          "subtitle_summary": "1. 종전 협상의 결과물, 14개 항목으로 이루어진 양해 각서가 마무리 단계에 접어들었지만 핵심 쟁점은 '복병'입니다.\n2. 미국 언론 보도로, 이란이 핵무기 개발을 포기하겠다는 약속이 있고, 우라늄 농축 프로그램 중단과 고농축 우라늄 비축량 배기에 대한 협상도 포함되었다는 보도가 있습니다.\n3. 이란 측은 아직 핵무기 개발 포기 약속을 공표하지 않았으며, 30일 또는 60일 내에 핵문제를 별도로 논의할 계획이라고 밝혔습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 1.2502,
+      "min": 2.1208,
+      "nb_score": 0.5895,
+      "avg_views": 17684.0,
+      "total_views": 53052
+    },
+    {
+      "keyword": "삼성전자 성과급 동행노조",
+      "is_fixed": false,
+      "views": [
+        21054,
+        18667,
+        11013
+      ],
+      "video_count": 3,
+      "videos": [
+        {
+          "title": "[🔴속보] '성과급 6억' 걸린 삼성전자 합의안, 첫날부터 투표율 60% 넘겨..'부결' 동행노조 \"투표권 없어\" 날벼락 | SBS 뉴스속보",
+          "video_id": "0AObXSRleb8",
+          "views": 21054,
+          "upload_date": "2026-05-23",
+          "url": "https://www.youtube.com/watch?v=0AObXSRleb8",
+          "subtitle_summary": "1. Samsung Electronics 노사가 진행중인 임금 협상안의 투표가 오늘(27일) 시작됐으며, 과반수 이상의 투표를 받아야 합의할 수 있습니다.\n2. 노조간 공방이 붉어지고 있으며, 비반도체 직원들이 성과급에서 소외되어 부결 운동까지 확산하고 있습니다.\n3. 제3 노조인 동행노조의 투표권 문제로 논란이 붉어졌으며, 초기업 노조가 탈퇴한 동행 노조에는 투표권이 없다고 주장하고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "\"5년차 6억인데 20년차가 2억\"…성과급 논란에 \"원팀은 무슨\"｜깊어지는 삼성전자 노노갈등 [뉴스와]  / 연합뉴스TV(YonhapnewsTV)",
+          "video_id": "8AZGLEmg9FM",
+          "views": 18667,
+          "upload_date": "2026-05-23",
+          "url": "https://www.youtube.com/watch?v=8AZGLEmg9FM",
+          "subtitle_summary": "1. 업계에서 예상되는 반도체 부문의 성과급은 최대 6억 원입니다.\n2. 이 경우 근로소득세가 약 2억 4천만 원으로 개선됩니다. 실제 과세 금액은 6억 7천만 원 정도입니다.\n3. 삼성전자는 이번 성과급을 자사주로 지급하며, 회사가 먼저 세금을 납부한 후 남은 금액으로 지급합니다. 지급된 자사주는 1분만 즉시 매각이 가능하고 나머지는 1년과 2년 동안 매각이 제한됩니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[🔴속보] 하루 만에 투표율 80% 돌파…적극 투표 나서는 삼성전자 노조원들｜비반도체는 '부결 운동'…노노갈등 심화 / 연합뉴스TV(YonhapnewsTV)",
+          "video_id": "Sh7gvgWzsrg",
+          "views": 11013,
+          "upload_date": "2026-05-24",
+          "url": "https://www.youtube.com/watch?v=Sh7gvgWzsrg",
+          "subtitle_summary": "1. 삼성전자 노조원들이 합의안에 대한 투표가 2일 동안 진행되고 있으며, 오늘 70%를 넘겼습니다. 투표율은 4만 명 이상이며, 최종 결과는 가능성이 높습니다.\n2. 노조원들의 찬반 투표 결과에 따라 삼성전자 메모리 사업부 직원 한 명당 최대 6억 원의 성과급이 예상됩니다. 이는 산업계 전반으로 확산되고 있습니다.\n3. 삼성전자와 SK 하이닉스가 수출액에서 차지하는 비중이 처음으로 절반을 넘어섰으며, 반도체 업계가 상위 10대 기업의 수출액에 대한 쏠림 현상을 보이고 있습니다. 이는 자본 시장에서도 나타나고 있으며, 이번 반도체 호황으로 SK 하이닉스가 역대급 성과급을 지급했고, 삼성전자도 파업 직전 노사가 타협하며 거액의 성과급 지급 방안을 논의하고 있습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 1.8555,
+      "min": 4.8154,
+      "nb_score": 0.3853,
+      "avg_views": 16911.33,
+      "total_views": 50734
+    },
+    {
+      "keyword": "골프 한국오픈 양지호 우승",
+      "is_fixed": false,
+      "views": [
+        9365,
+        588,
+        56718,
+        8611,
+        6,
+        3,
+        20410,
+        10246,
+        521
+      ],
+      "video_count": 9,
+      "videos": [
+        {
+          "title": "[2026 KPGA] '7억 원의 주인공' 와이어 투 와이어 우승! 양지호(-9) 주요장면_코오롱 제68회 한국오픈 FR",
+          "video_id": "-Ci0NcHKgfc",
+          "views": 9365,
+          "upload_date": "2026-05-24",
+          "url": "https://www.youtube.com/watch?v=-Ci0NcHKgfc",
+          "subtitle_summary": "1. 양지호는 2026 KPGA 7억 원의 주인공 대회에서 최종 라운드에서 드라이버를 선택하고, 베디가 잘 나오면서 홀아웃을 성공적으로 이루었습니다.\n2. 양지호는 6번 홀에서 스피트를 치며 페어웨를 놓치고, 하지만 풀샷을 남기면서 공에 스핀양을 만들었습니다.\n3. 양지호는 8번 아이언 더 그린 쪽으로 가까이 가는 것이 다음 샷이 수월하다고 판단했고, 치빈 버디를 치며 홀아웃을 성공적으로 이루었습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[2026 KGA] 'Dominant Victory' Winner Ji-Ho Yang Highlights | KGA Kolon Korea Open FR | Wavve Golf",
+          "video_id": "pFuPpVJiorI",
+          "views": 588,
+          "upload_date": "2026-05-24",
+          "url": "https://www.youtube.com/watch?v=pFuPpVJiorI",
+          "subtitle_summary": "1. 최종라운드 경기, 코롱제 68회 한국 오픈이 진행되고 있습니다. 비가 많이 내렸지만 3일 동안 날씨는 맑아서 선수들이 플레이할 수 있었습니다.\n2. 양지호 선수는 오늘 두 자리 언더로 둘째 날을 마무리하기 위해 노력하고 있으며, 10 스트로크 더 좋은 성적을 기록할 예정입니다.\n3. 양지호는 이미 통산 두 번의 우승을 기록하고 있으며, 2023년 한행 인비테이션에서 자신의 두 번째 우승을 만들어냈습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[2026 KPGA] 한국오픈 사상 첫 ‘예선 통과자 우승’ 역사적인 우승 기록하는 양지호!_코오롱 제68회 한국오픈 FR",
+          "video_id": "6wyxpqEHBVg",
+          "views": 56718,
+          "upload_date": "2026-05-24",
+          "url": "https://www.youtube.com/watch?v=6wyxpqEHBVg",
+          "subtitle_summary": "1. 양지호 선수가 68회 한국 오픈 대회에서 최종 라운드 경기에 진출하며, 3명의 선수 중 하나로 남아있습니다.\n2. 18번 홀은 페이드가 필요한 골프 샷으로 알려져 있으며, 양지호는 3번 우디에서 출발하여 최종 라인으로 나아갈 계획입니다.\n3. 양지호 선수가 이 대회를 우승하면서 KPJ투어 통산 세 번의 우승을 달성합니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[2026 KPGA] 'Teary-eyed..' Awards Ceremony & Interview with Yang Ji-ho, a soon-to-be father in No...",
+          "video_id": "0rShNIQ9MTE",
+          "views": 8611,
+          "upload_date": "2026-05-24",
+          "url": "https://www.youtube.com/watch?v=0rShNIQ9MTE",
+          "subtitle_summary": "1. 2026 KPGA 'Teary-eyed..' Awards Ceremony에서 대회 우승자 Yang Ji-ho 선수와 인터뷰. Yang Ji-ho는 앞서도 두 번 우승한 한국 오픈 챔피언이 되었습니다.\n2. Yang Ji-ho는 9번 홀에서 결정적인 순간을 겪었고, 그 순간 눈물이 나왔습니다. 또한 미리 계획하지 않은 12월에 출산할 첫 아들이 있어서 행복합니다.\n3. Yang Ji-ho는 시청자분들께 감사하며, 좀비 골프라고 불리는 것을 좋아하지 않습니다. 또한 다음에도 함께 할 수 있기를 바랍니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[2026 KGA] 진심을 꾹꾹 눌러 담은 양지호 우승 인터뷰ㅣKGA 코오롱 한국오픈 FRㅣ웨이브 골프",
+          "video_id": "bG1Hjn5Jyyg",
+          "views": 6,
+          "upload_date": "2026-05-24",
+          "url": "https://www.youtube.com/watch?v=bG1Hjn5Jyyg",
+          "subtitle_summary": "1. 양지호 선수는 오늘 응원받아서 감사하며, 시청자들과 함께 한 경기에서 우승했습니다. (Korean Golf Association's 2026 Korean Open)\n2. 양지호 선수는 좀비 골프라고 불리며, 많은 사람들이 응원해주셔서 감사하시오. (Fans and viewers who call him \"zombie golfer\")\n3. 양지호 선수는 한국 오픈에서 두 번째 우승을 기록했으며, 이번 대회에는 세계적인 선수들이 많이 참가했습니다. (Second win at the Hanwha Invitational and a big victory at the Korean Open with many top players)",
+          "db_saved": true
+        },
+        {
+          "title": "[2026 KGA] Wire-to-Wire, from qualifying to victory - Yang Ji-ho award ceremonyㅣKGA Kolon Korea O...",
+          "video_id": "4vS9-PcrlEM",
+          "views": 3,
+          "upload_date": "2026-05-24",
+          "url": "https://www.youtube.com/watch?v=4vS9-PcrlEM",
+          "subtitle_summary": "2026 KGA 대회에서 우승자 Yang Ji-ho가 있을 것이며, 우승상금은 7억 원이 될 것입니다. 시상식에서는 강용모 회장, 안병덕 부회장, 김석필 천안 부시장이 순회 트로피, 우승자켓, 특별 우승상금을 양지호에게 전달할 것입니다. 또한, Yang Ji-ho는 7월에 영국의 Royal Berkshire Golf Club에서 1회 디오픈 챔피언십에 출전할 수 있는 특별 권리를 받게 될 것입니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[2026 KPGA] An Overwhelming Score! One Step Away from a Wire-to-Wire Victory, Sole Leader Yang Ji...",
+          "video_id": "0xmSXpumV_Y",
+          "views": 20410,
+          "upload_date": "2026-05-23",
+          "url": "https://www.youtube.com/watch?v=0xmSXpumV_Y",
+          "subtitle_summary": "1. Yang Ji-ho 선수는 어제부터 오늘까지 드라이버 선택을 적게 하고, 집중하려는 노력을 했습니다. 첫 티샷은 우드로 걸었으며, 매우 좋은 그린 조건이라는 것을 알 수 있었습니다.\n2. Yang Ji-ho와 Yang Ji-ho의 파트너 선수가 같은 홀에서 두 번째 홀과는 느낌이 다르며, 양지호는 어제 이글 퍼를 했을 때 일곱 발자국 정도 됐었습니다.\n3. 오늘 1라운드에서 양지호는 4번 홀에서 첫 번째 차정 기회를 잡아내며, 5번 홀과 6번 홀 기회들을 앞서 기분 좋은 버디로 시작했습니다. 그러나 만약 줄이지 못하게 되면 부단감이 작용할 수 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[2026 KPGA] Leader Under Pressure... Ji-ho Yang's Dramatic Chip-in Birdie!!! _Kolon 68th Korea Op...",
+          "video_id": "kI556N1m1fc",
+          "views": 10246,
+          "upload_date": "2026-05-24",
+          "url": "https://www.youtube.com/watch?v=kI556N1m1fc",
+          "subtitle_summary": "1. 양지호 선수가 왕정훈 선수와 경기를 벌이고 있습니다. 만약 왕정훈이 그 위치에서 팔을 못 기록한다면, 양조 선수는 후반전에 더 편안할 것입니다.\n2. 양지호 선수는 드라이버를 선택하지 않고 오른쪽 러프 왼쪽을 많이 보기 부담스러운 골프 샷을 했습니다. 그러나 치핀 버디가 나와서 대단한 결과를 거두었습니다.\n3. 최악의 결과가 될 수도 있었던 상황이지만, 기대하지 않았던 최고의 결과가 나왔습니다. 양지호 선수는 2위 왕정훈과 여섯 타차 뒤입니다.",
+          "db_saved": true
+        },
+        {
+          "title": "First to Win Korea Open via Qualifiers: A New Chapter in History... Career Win No. 3 / SBS 8 News",
+          "video_id": "SwMQdHyA-lo",
+          "views": 521,
+          "upload_date": "2026-05-24",
+          "url": "https://www.youtube.com/watch?v=SwMQdHyA-lo",
+          "subtitle_summary": "1. 양지호 선수는 한국 오픈 대회에서 예선을 거쳐 우승하여 3번째 카리어 우승을 차렸습니다. 초반에는 티샷 난조로 1,2번홀 연속 보기를 범하며 흔들렸지만 5번홀부터 9번홀까지 차곡차곡 리드를 유지하여 우승했습니다.\n2. 와이어투 와이어 대회에서 11월에 만날 수 있게 노력하며, 아내와 함께 기쁨을 느끼는 양지호는 출산을 앞두고 무럭이를 생각하며 힘들었다고 말했습니다.\n3. 국내 여자골프에서 짜라위 군자는 태국 선수로서 정규 투어 우승을 차지했습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0.2683,
+      "min": 1.0251,
+      "nb_score": 0.2617,
+      "avg_views": 11829.78,
+      "total_views": 106468
+    },
+    {
+      "keyword": "한미 류현진 통산 200승",
+      "is_fixed": false,
+      "views": [
+        900,
+        351,
+        4117,
+        29678,
+        6,
+        25
+      ],
+      "video_count": 6,
+      "videos": [
+        {
+          "title": "위대한 투수 류현진, 한미통산 200승 달성 [9시 뉴스] / KBS  2026.05.24.",
+          "video_id": "-iWQ1OiFMWc",
+          "views": 900,
+          "upload_date": "2026-05-24",
+          "url": "https://www.youtube.com/watch?v=-iWQ1OiFMWc",
+          "subtitle_summary": "야구 선수 류현진은 200승을 달성하여 한국 야구사상 최고의 투수로 손꼽혔습니다. 35세인 류현진은 아직도 정상급 투수로 활동하며, 역사를 썼습니다. 이 경기에서 유현진은 KBO 리그 122승을 거뒀고, 미국에서 기록한 78승을 더해 한미 통산 200승을 달성했습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "\"류현진, 한미 통산 200승 위업\"..한화, 시즌 첫 스윕승｜ TJB 대전·세종·충남뉴스",
+          "video_id": "5rcRntLxCR4",
+          "views": 351,
+          "upload_date": "2026-05-24",
+          "url": "https://www.youtube.com/watch?v=5rcRntLxCR4",
+          "subtitle_summary": "1. 한화이글스가 3연전을 모두 이긴 것으로, 시즌 첫 스위를 달성했습니다. 이는 홍보된 주말 경기의 결과입니다.\n2. 선수 류현진은 두산과의 경기에서 한미통산 200승을 달성했습니다, 이로써 한화 레전드 송진우 이후 역대 두 번째 한국인 투수가 이 기록을 세웠습니다.\n3. 이날 승리로 KBO 리그 122승, 메이저 리그 78승을 달성했으며, 한화는 시즌 23승 24패를 기록하며 5알 승률 복귀를 눈앞에 뒤집어졌습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "Korean Monster Ryu Hyun-jin Achieves Historic 200 Combined Wins in Korea and the U.S.! | #Basebal...",
+          "video_id": "NRmyJ0FaVs8",
+          "views": 4117,
+          "upload_date": "2026-05-24",
+          "url": "https://www.youtube.com/watch?v=NRmyJ0FaVs8",
+          "subtitle_summary": "1. 코리안 몬스터 류현진은 대전에서 한미 통산 200승을 달성했습니다. (World Cup is approaching, bringing us closer together. Korean Monster Ryu Hyun-jin achieved a combined 200 wins in Korea and the U.S.)\n2. 류현진은 KBO 리그 데뷔 당시 7과 13이 이닝 동안 개의 탈삼진을 기록하며 괴물툰의 탄생을 알렸습니다. (In his debut, Ryu Hyun-jin recorded seven strikeouts in nine innings, marking the birth of the Monster Pitcher.)\n3. 류현진은 MLB 진출 전 한국에서의 마지막 경기에서 아흔 9번째 승리를 거뒀고, 이후 7년간 54승 평균 자책점 3점대 초반에 뛰어난 성적을 보였습니다. (Ryu Hyun-jin won his ninth game in a match that attracted much attention before joining the MLB, and he maintained exceptional statistics with an average ERA of 3 points for the next seven years.)",
+          "db_saved": true
+        },
+        {
+          "title": "류현진 한미 통산 200승 축하 메시지 #한화이글스 #류현진 #폰세 #와이스 (2026.5.24. vs. 두산)",
+          "video_id": "EcY6IX_KeS0",
+          "views": 29678,
+          "upload_date": "2026-05-24",
+          "url": "https://www.youtube.com/watch?v=EcY6IX_KeS0",
+          "subtitle_summary": "1. 류현진(Yadi)은 200승을 넘게 되어 축하받고 있습니다. (Ryu Hyun-jin has surpassed 200 wins and is being congratulated.)\n2. 수행한 이번 성적은 많은 사람들에게 amazing feat라고 불리며, 인정받는 팀원, 피치러와 축하를 보내는 사람으로서의 역할을 한 것으로 알려져 있습니다. (The achievement in this game is being called an amazing feat by many people and he is recognized as a great teammate, pitcher, and person to congratulate.)\n3. 수많은 좋은 기억이 있고, 가족과 함께 이 순간을 즐길 것을 바라며, 다시 한 번 류현진의 경기를 보러 오길 원하는 것으로 알려져 있습니다. (Many good memories have been made with him and it is hoped that he will enjoy this moment with his family and that they can watch him play again in the future.)",
+          "db_saved": true
+        },
+        {
+          "title": "[5.24 두산전 리뷰] 류현진 한미통산 200승 금자탑!!!",
+          "video_id": "ZKpStdwYkHo",
+          "views": 6,
+          "upload_date": "2026-05-24",
+          "url": "https://www.youtube.com/watch?v=ZKpStdwYkHo",
+          "subtitle_summary": "1. 유튜브 채널 '앵글리'가 3년 만에 복귀하며, 5월 24일 두산과의 대전 경기를 리뷰합니다. 한화는 이미 위닝 시리즈를 확보했고, 오늘 5대 2로 승리하여 수입승을 달성합니다.\n2. 승리 투수는 류현진 선수였으며, 이번 경기에서 한미통산 200승의 금자탑을 쌓게 됐습니다.\n3. 두산의 패전 투수는 최승용 선발이었으며, 문현빈 선수가 1회 1 3루에서 중견수 희생 플라이로 기록을 했습니다. 또한 유격수 박찬호의 송구실책과 호수 윤준호의 포일이 있었으며, 이들의 실책성 플레이로 한화가 추가점을 차곡차곡 쌓아 경기 중반에 승기를 가져올 수 있었습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "한화 팬들이 류현진 200승에 울컥한 이유",
+          "video_id": "8zWIbbiAV4Y",
+          "views": 25,
+          "upload_date": "2026-05-24",
+          "url": "https://www.youtube.com/watch?v=8zWIbbiAV4Y",
+          "subtitle_summary": "한화 이글스 팬들은 류현진의 한미 통산 200승을 기념하며 그의 커리어를 회상합니다. 2026년 5월 대전 경기에서 류현진은 압도적인 구속으로 승리 투수가 되었습니다. 그는 신인 때부터 이미 경기 운영을 할 줄 아는 추세였고, 2006년에 KBO 역사 최초로 신인상과 정규 리그 MVP를 동시에 얻었습니다. 이 기록은 지금도 말이 안 됩니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0.255,
+      "min": 1.0495,
+      "nb_score": 0.2429,
+      "avg_views": 5846.17,
+      "total_views": 35077
+    },
+    {
+      "keyword": "스타벅스 탱크데이 논란",
+      "is_fixed": false,
+      "views": [
+        115558,
+        3958,
+        1243,
+        12445,
+        11470,
+        2533,
+        7123
+      ],
+      "video_count": 7,
+      "videos": [
+        {
+          "title": "[이슈] 스타벅스 '탱크' 암호들 파보니 '소름'/브랜드 이미지 폭망 '칼손절'...정용진 사면초가/2026년 5월 23일(토)/KBS",
+          "video_id": "yfHknESVENQ",
+          "views": 115558,
+          "upload_date": "2026-05-24",
+          "url": "https://www.youtube.com/watch?v=yfHknESVENQ",
+          "subtitle_summary": "스타벅스 코리아의 최근 이벤트에서 발생한 논란은 5월 18일 탱크데이라는 행사를 열었을 때, 민주화 운동을 비하는 것으로 보이는 홍보 이미지가 공개되어 소비자들의 반응이 심상치 않습니다. 또한 온라인에서 추가적인 해석들이 나오면서, 503ml의 용량과 518항쟁 최초 충돌 시각, 개엄군의 첫 발포일, 공식 사망 숫자를 의미하는 것으로 보이는 코드가 포함되어 있습니다. 이러한 논란은 브랜드 이미지에 악영향을 미치고 있으며, 분노한 소비자들이 스타벅스를 사용하지 않겠다는 불매 운동을 시작하고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "\"It was bound to happen\": Starbucks internal unrest; was the 'Tank Day' controversy an avoidable ...",
+          "video_id": "fqAKg4f5rUI",
+          "views": 3958,
+          "upload_date": "2026-05-24",
+          "url": "https://www.youtube.com/watch?v=fqAKg4f5rUI",
+          "subtitle_summary": "Starbucks Korea is facing heavy criticism for hosting an event named 'Tank Day', which many find inappropriate. Employees claim this controversy was inevitable due to structural issues within the company, such as frequent promotion changes and a weak review system. An internal notice about the event was posted 12 days prior, but the headquarters' filtering system failed to function, allowing inappropriate expressions to be exposed publicly. A first-year employee found this shocking and suspects intentional negligence. Despite swift actions like an apology from the CEO and the dismissal of the COO, there is growing concern about excessive marketing competition and poor communication at the store level, which need to be addressed as underlying issues.",
+          "db_saved": true
+        },
+        {
+          "title": "'탱크데이' 논란 스타벅스...휴일에도 수사 속도 / YTN",
+          "video_id": "9wrRvmIDXhs",
+          "views": 1243,
+          "upload_date": "2026-05-24",
+          "url": "https://www.youtube.com/watch?v=9wrRvmIDXhs",
+          "subtitle_summary": "1. Starbucks 'Tank Day' event, which was held on May 18th and caused controversy due to allegations of mocking victims of the May 18th Democratization Movement, is still being investigated by police. Details will be provided by our on-site reporter, Kim Hee-young.\n2. The event involved using a phrase \"tank\" on desks, which led to accusations of mocking the May 18th Democratization Movement against Starbucks Korea's CEO, Sung Jong-won, and former CEO, Jung Jeong-hyun. The Seoul Metropolitan Police Agency's Public Corruption Investigation Team is conducting a swift investigation and has summoned both individuals as suspects.\n3. In addition to the investigation into the Starbucks Korea case, police are also investigating false information related to the May 18th Democratization Movement that has been spreading online. They have identified suspicious articles containing false claims about the May 18th uprising or North Korean interference, and are currently tracking down the authors of these articles. The police emphasized their commitment to taking swift action against any discovered violations and deleting or blocking problematic content in real-time.",
+          "db_saved": true
+        },
+        {
+          "title": "(여의도정치) \"'탱크데이', 본사 콜옵션 행사?\"...최강욱의 놀라운 분석력",
+          "video_id": "nwSxc3nopOE",
+          "views": 12445,
+          "upload_date": "2026-05-24",
+          "url": "https://www.youtube.com/watch?v=nwSxc3nopOE",
+          "subtitle_summary": "1. 초강옥천 의원과 JTV뉴스는 \"탱크데이\"(Stars Cafe) 이벤트에 대해 토론합니다. 최근 사건으로 인해 논란이 된 삼성전자의 영업 이익과 관련된 성과급 세 개를 보고 있을 것 같습니다.\n2. 이번 사건에 대해서는 과거에도 그 과거사(위안부 문제) 문제로 인해 논쟁이 있었던 정영진의 행동과 발언들을 보고 회사 분위기가 총수의 생각에 장악되어 있다는 것으로 추측합니다.\n3. 이전에도 미니 탱크데이(4월 16일)와 5.18 민주화 운동을 언급한 것으로 보아, 이러한 행동들은 정영진의 생각과 행보를 보여줍니다.",
+          "db_saved": true
+        },
+        {
+          "title": "'스타벅스 불매' 확산... '탱크데이' 논란에 대구시민들의 생각은?ㅣTBC e슈",
+          "video_id": "ut1yXJnI9x0",
+          "views": 11470,
+          "upload_date": "2026-05-23",
+          "url": "https://www.youtube.com/watch?v=ut1yXJnI9x0",
+          "subtitle_summary": "1. Starbucks Korea 는 5.18 민주화 기념일을 탱크데이 프로모션으로 했지만, 이름과 홍보문구에 문제가 있었습니다. 탱크와 책상의 표현은 5.18 민주화 운동 당시 개엄군의 탱크 투입과 박종철 고문치사 사건에 연관되어 비판을 받았습니다.\n2. 이로 인해 불매 운동이 일자 발생하며, 스타벅스는 더 나은 마케팅 전략을 고려해야 한다는 생각이 듭니다.\n3. 이번 사건은 스타벅스만의 문제가 아닙니다. 무신사도 과거에 민주항쟁을 모욕했다는 광고로 논란이 있었습니다. 최근에는 어린 아이들도 SNS를 통해 자주 접하게 되며, 민감한 사안을 조롱하거나 변화하는 행동은 절대 하지 말아야 합니다.",
+          "db_saved": true
+        },
+        {
+          "title": "Political Upheaval Over 'Tank Day' Controversy: \"8 Starbucks Coffees in Blue Jackets?\" / KNN",
+          "video_id": "ziqYhhHcZmw",
+          "views": 2533,
+          "upload_date": "2026-05-23",
+          "url": "https://www.youtube.com/watch?v=ziqYhhHcZmw",
+          "subtitle_summary": "1. 스타벅스 '탱크데이' 논란에 대한 후폭풍이 계속되고 있습니다. 더불어민주당 선거 운동원으로 보이는 인물들이 스타벅스에서 음료를 구매하는 사진이 퍼져 논란이 되었습니다.\n2. 앞서 이재명 대통령은 스타벅스의 탱크데이 마케팅 논란과 관련해 상응하는 책임이 따라야 한다고 발언했습니다. 또 서울 종로구 시민 간담회에서 카페를 방문하며 스타벅스를 겨냥한 것인지 의혹이 있었습니다.\n3. 윤호중 행정안전부 장관은 정부 행사에서 스타벅스 제품 사용을 지향하겠다고 입장을 밝혔습니다. 반면 국민의 힘은 정부가 특정 기업에 대한 불매 운동을 조장하고 있다고 비판했습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "스타벅스 '탱크데이' 후폭풍 어디까지…'총리 표창' 취소 검토까지 갔다 [뉴스와] / 연합뉴스TV(YonhapnewsTV)",
+          "video_id": "FZMzA1tkaSw",
+          "views": 7123,
+          "upload_date": "2026-05-24",
+          "url": "https://www.youtube.com/watch?v=FZMzA1tkaSw",
+          "subtitle_summary": "1. 정부가 스타벅스 코리아에 과거 정부 포상 취소 여부를 검토하고 있다는 것이 알려졌습니다.\n2. 스타벅스의 '탱크데이' 이벤트 후 사회적 논란이 커지자, 지난해 국무 총리 표창 취소 가능성을 논의했습니다.\n3. 스타벅스는 과거 공정 대형과 이번 논란에 직접적인 연관성이 있다고 판단한 것으로, 국방부와 법무부도 스타벅스 상품 사용을 촉구하거나 점검하기 시작했습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0.2184,
+      "min": 1.0094,
+      "nb_score": 0.2163,
+      "avg_views": 22047.14,
+      "total_views": 154330
+    },
+    {
+      "keyword": "플랫폼 수수료 배달료 부담",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "외식업 사장님 경영 어려움",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "주담대 고정금리 5퍼센트",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "부산 북구을 선거 여론조사",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "단일화 협상",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "스타벅스 카톡 선물하기 순위",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "중고폰 쇼핑몰 피해 주의",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "반도체주 하이닉스 대",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    }
+  ]
+}

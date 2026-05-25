@@ -14,11 +14,11 @@ const REMOTE_DIR = `${REMOTE_ROOT}/jungnang-volunteer`;
 const REMOTE_FILE = `${REMOTE_DIR}/jungnang-youtube.json`;
 const REMOTE_TMP_FILE = "/tmp/jungnang-youtube.json";
 const QUERIES = [
-  "중랑구 자원봉사 행사",
-  "중랑구 자원봉사 모집",
-  "중랑구 봉사활동",
-  "중랑구 지역 행사",
-  "중랑구청 자원봉사",
+  "중랑구 지역 소식",
+  "중랑구 생활 소식",
+  "중랑구 문화 행사",
+  "중랑구 현장 소식",
+  "중랑구청 소식",
   "중랑구 행사"
 ];
 
@@ -145,7 +145,7 @@ async function fetchYoutubeResults(query) {
     const duration = textFromRuns(video.lengthText);
     const summary = textFromRuns(video.detailedMetadataSnippets?.[0]?.snippetText)
       || textFromRuns(video.descriptionSnippet)
-      || "중랑구 자원봉사·지역 행사 관련 유튜브 검색 결과입니다.";
+      || "중랑구 관련 지역 소식 유튜브 검색 결과입니다.";
 
     const item = {
       id: videoId || `${query}:${title}`,
@@ -215,7 +215,7 @@ async function collect() {
   const finalItems = items.length ? items : fallbackItems(errors.join("; ") || "최근 14일 영상 결과 없음");
   return {
     ok: true,
-    topic: "중랑구 자원봉사·지역 행사 유튜브 정리",
+    topic: "중랑구 관련 지역 소식 유튜브 정리",
     filter: "최근 1~2주 이내 업로드 영상만 표시",
     recentDays: RECENT_DAYS,
     updatedAt: nowKst(),
