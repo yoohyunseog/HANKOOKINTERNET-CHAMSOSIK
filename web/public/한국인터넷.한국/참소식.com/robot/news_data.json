@@ -1,0 +1,104 @@
+{
+    "last_updated": "2026-05-26 17:09:57",
+    "total_count": 5,
+    "news": [
+        {
+            "original_title": "Arrive AI deploys Nvidia Isaac Sim and Blackwell GPUs for autonomous robotics",
+            "translated_title": "시뮬레이션으로 현실을 넘다: Arrive AI, 엔비디아 아이작 심·블랙웰 GPU로 자율 로봇 혁신 가속",
+            "summary": "자율 배송 인프라 기업 Arrive AI가 엔비디아의 Isaac Sim 시뮬레이션 플랫폼과 블랙웰(Blackwell) 아키텍처 기반 GPU 워크스테이션을 도입, AI·로봇 개발을 획기적으로 가속화하고 있다. 물리 기반 시뮬레이션을 통해 고도로 사실적인 디지털 환경에서 컴퓨터 비전 모델을 훈련, 수동 데이터 수집 없이도 현실 수준의 성능을 단기간에 달성할 수 있게 됐다. 대규모 AI 모델 학습에 필요한 연산력과 메모리를 갖춘 블랙웰 GPU 인프라는 지속적인 학습 파이프라인을 구축해 자율 배송 네트워크의 안전성과 신뢰성을 빠르게 개선할 것으로 기대된다.",
+            "full_post": "Arrive AI가 자율 주행 배송 로봇 및 자동화 시스템 개발을 위해 엔비디아의 첨단 AI 인프라를 전격 도입했다. 이 회사는 엔비디아 Isaac Sim(물리 기반 시뮬레이션 플랫폼)과 블랙웰(Blackwell) 아키텍처 기반 GPU 워크스테이션을 활용해 컴퓨터 비전 모델을 대규모로 훈련하고 있다.\n\n**주요 내용:**\n\n* **시뮬레이션 기반 AI 훈련**\n  - Isaac Sim은 중력, 마찰, 충돌, 물체 상호작용, 광선 추적 기반 포토리얼리스틱 조명 등 현실 조건을 완벽히 재현.\n  - 이를 통해 '그라운드 트루스(Ground Truth)' 데이터(객체 위치·궤적의 정확한 정보)를 자동 생성, 수동 레이블링 없이 고속·고정밀 훈련 가능.\n  - 시뮬레이션 훈련 덕분에 개발 시간과 비용을 대폭 줄이면서도 거의 현실과 동등한 성능 확보.\n\n* **블랙웰 GPU 인프라**\n  - 블랙웰 아키텍처 기반 고성능 GPU 워크스테이션 대거 배치.\n  - 수십억~수조 개 파라미터를 가진 범용 AI 모델(제너럴리스트 모델) 학습에 필요한 연산력과 메모리 제공.\n  - 복잡한 시뮬레이션과 훈련 파이프라인을 동시에 대규모로 실행 가능.\n\n* **지속적 학습 파이프라인**\n  - 여러 대의 고사양 시스템을 병렬 운용, 시뮬레이션→훈련→재시뮬레이션 사이클을 끊김 없이 반복.\n  - AI 모델이 실제 현장에서 발생할 수 있는 다양한 엣지 케이스에 빠르게 적응하도록 설계.\n\n* **실전 적용 및 확장**\n  - 자율 배송 네트워크 전개 과정에서 시뮬레이션 기반 반복 개선을 통해 시스템 성능·신뢰성·안전성을 지속 향상.\n  - 물류·헬스케어·기업용 애플리케이션 등 실제 물리 테스트 의존도를 낮추고 배포 시간을 단축.\n\nArrive AI의 CEO 댄 오툴(Dan O’Toole)은 \"시뮬레이션은 현대 AI 개발의 기반이 되고 있다\"며 \"엔비디아 Isaac Sim과 차세대 GPU 인프라를 활용하면 물리적 세계만으로는 불가능한 속도와 규모로 컴퓨터 비전·로봇 시스템을 훈련·개선할 수 있다\"고 강조했다.\n\n이번 투자는 AI·시뮬레이션·고성능 컴퓨팅의 결합이 자율 로봇 분야에서 실제 상용화를 앞당기는 대표 사례로 평가된다.",
+            "url": "https://roboticsandautomationnews.com/2026/05/18/arrive-ai-using-nvidia-isaac-sim-and-blackwell-gpus-to-develop-autonomous-drone-delivery-network/101651/",
+            "category": "AI/Research",
+            "importance": "High",
+            "comment_mood": "No visible comments",
+            "comment_summary": "해당 게시글에는 실제 댓글이 없으나, 업계 동향을 고려할 때 긍정적인 반응이 예상된다. 시뮬레이션 기반 AI 훈련과 블랙웰 GPU의 조합이 자율 배송 로봇 실용화에 가져올 혁신에 대한 기대감, 그리고 물리 테스트 의존도를 낮추는 비용 효율성에 대한 호평이 주를 이룰 것으로 추정된다.",
+            "reaction_keywords": [
+                "시뮬레이션 훈련",
+                "블랙웰 GPU",
+                "자율 배송 로봇"
+            ],
+            "visible_comment_count": 0,
+            "collected_at": "2026-05-26 17:08:36"
+        },
+        {
+            "original_title": "Gecko Robotics leverages Ouster Rev8 color lidar for next-generation AI infrastructure inspections",
+            "translated_title": "Gecko Robotics, Ouster Rev8 컬러 라이다로 차세대 AI 인프라 검사 혁신",
+            "summary": "Ouster의 새로운 Rev8 디지털 라이다 센서가 Gecko Robotics의 자율 검사 로봇에 탑재됩니다. Rev8는 3D 포인트를 컬러로 출력해 AI 소프트웨어가 구조적 이상 징후를 더 정확히 감지하도록 돕습니다. Gecko는 이를 통해 '발견 및 수리' 미션의 성능을 한 단계 끌어올릴 계획입니다.",
+            "full_post": "**Ouster, Gecko Robotics에 Rev8 컬러 라이다 공급**\n\n물리적 AI를 위한 센싱 및 인식 기술 전문 기업 Ouster가, 첨단 로보틱스 및 AI 소프트웨어 기업 Gecko Robotics의 차세대 인프라 검사 시스템에 자사의 새로운 Rev8 디지털 라이다 센서가 채택되었다고 발표했습니다.\n\nGecko Robotics는 기존에도 Ouster의 디지털 라이다를 사용해 복잡한 산업 환경을 탐색하고 주요 자산의 고해상도 디지털 트윈을 생성해 왔습니다. 이번에 도입된 Rev8 센서 제품군은 Gecko의 'Cantilever' 운영 플랫폼의 데이터 수집 능력을 크게 향상시킵니다.\n\n**Rev8의 핵심 특징**\n\n- **컬러 3D 데이터**: 모든 3D 포인트를 본연의 색상으로 출력하여 구조적 이상 징후(부식, 균열 등)를 시각화하기 쉬움.\n- **적외선 및 강도 데이터**: 주변 적외선(ambient IR)과 강도 데이터를 동시에 출력, AI 소프트웨어가 다차원 분석 가능.\n- **고정밀 센싱**: 기존 대비 향상된 정밀도로 자산 상태를 더 확실하게 이해.\n\n**Gecko Robotics 측 반응**\n\nGecko Robotics의 현장 배치 엔지니어 Chase David는 \"세계에서 가장 중요한 인프라를 보호하기 위해 우리는 항상 최고의 센서를 실험하고 있으며, Ouster의 Rev8 라이다는 센싱 능력에 있어 엄청난 도약\"이라고 말했습니다. 그는 \"모든 3D 포인트를 더욱 정밀하게 풀 컬러로 캡처함으로써, 소프트웨어는 단순히 물리적 세계를 매핑하는 것을 넘어 자산 건강 상태를 더 높은 확신으로 이해하고 고객에게 더 실행 가능한 데이터를 제공할 수 있다\"고 강조했습니다.\n\n**Ouster 측 입장**\n\nOuster의 최고 수익 책임자(CRO) Cyrille Jacquemet는 \"Gecko Robotics는 중요 인프라 보호의 선두주자이며, Ouster 디지털 라이다로 그들의 로봇 플랫폼을 지원하게 되어 자랑스럽다\"며 \"새로운 Rev8 센서는 복잡한 산업 데이터를 예측 자산 건강 인사이트로 전환하는 데 필요한 전례 없는 3D 컬러를 제공하며, 자동화 검사의 가능성을 확장한다\"고 말했습니다.\n\n**영향 및 전망**\n\n- Gecko Robotics는 Rev8을 통해 더 신뢰할 수 있는 검사 수행 가능.\n- AI 기반 'detect and repair' 미션의 정확도 향상.\n- 발전소, 석유화학 플랜트, 교량 등 중요 인프라의 예측 유지보수(predictive maintenance)에 혁신.\n- Ouster의 Rev8은 물리적 AI 시대에 필수적인 센서로 자리매김할 전망.",
+            "url": "https://roboticsandautomationnews.com/2026/05/22/gecko-robotics-tests-ousters-next-generation-color-lidar-to-enhance-ai-powered-infrastructure-inspections/101824/",
+            "category": "Industrial",
+            "importance": "High",
+            "comment_mood": "No visible comments",
+            "comment_summary": "별도의 댓글이 확인되지 않았습니다. 로보틱스 커뮤니티에서는 Ouster의 컬러 라이다 기술과 Gecko Robotics의 실제 현장 적용 사례에 대해 높은 관심을 보일 것으로 예상됩니다. 특히 '3D 포인트 클라우드에 컬러 정보가 추가되어 검사 정확도가 크게 향상될 것'이라는 점과 '예측 유지보수 분야의 실질적 진전'이라는 측면에서 긍정적인 반응이 예측됩니다. 일부 전문가들은 Rev8의 정밀도와 비용 효율성에 대한 추가 데이터를 요구할 가능성도 있습니다.",
+            "reaction_keywords": [
+                "컬러 라이다",
+                "AI 검사",
+                "디지털 트윈",
+                "예측 유지보수",
+                "자율 로봇"
+            ],
+            "visible_comment_count": 0,
+            "collected_at": "2026-05-26 17:08:54"
+        },
+        {
+            "original_title": "Doozy Robotics expands globally with physical AI humanoid workforce platform for industrial automation",
+            "translated_title": "두지 로보틱스, 물리적 AI 휴머노이드로 글로벌 산업 자동화 시장 정조준",
+            "summary": "싱가포르 기반 물리적 AI 휴머노이드 스타트업 두지 로보틱스(Doozy Robotics)가 미국, GCC, 아시아를 잇는 대규모 글로벌 확장을 발표했다. 이 회사는 자체 오케스트레이션 플랫폼 '에이와-OS(Eywa-OS)'를 기반으로 휴머노이드, 자율이동로봇(AMR), 자율지게차를 통합한 수직적 생태계를 구축 중이다. 2026년 3분기 출시 예정인 '산업용 슈퍼 휴머노이드'를 앞세워 구조적 노동력 부족 문제를 해결하겠다는 전략이다. 이미 2억 달러 이상의 글로벌 파이프라인과 1억 4400만 달러 규모의 계약을 확보하며 시드 단계에서 놀라운 상업적 성과를 입증했다.",
+            "full_post": "- **글로벌 확장 발표**: 두지 로보틱스가 미국, GCC(걸프협력회의), 아시아 시장으로 동시 확장을 선언. 시리즈A 투자 유치를 앞두고 본격적인 성장 단계에 돌입.\n- **핵심 기술 스택**: \n  - '산업용 슈퍼 휴머노이드' (2026년 3분기 출시 예정)\n  - 자율주행 모바일 로봇(AMR) 함대\n  - 자율 지게차\n  - 이들을 통합 제어하는 오케스트레이션 플랫폼 '에이와-OS(Eywa-OS)'\n- **에이와-OS의 역할**: 공장을 초지능 관리자처럼 운영. 고수준 생산 목표를 해석하고, 동적으로 휴머노이드와 로봇을 배치하며, 실시간 장애 대응.\n- **시장 배경**: 미국에서 2030년까지 노동력 부족으로 1조 달러 이상 GDP 손실 예상. 45세 이상 근로자가 절반, Z세대는 8%에 불과. 두지 로보틱스는 이에 대응하는 최초의 확장 가능한 산업용 에이전트 워크포스를 자처.\n- **비즈니스 모델**: '로봇 서비스형(RaaS)'을 다중 에이전트 생태계로 확장. 고객은 하드웨어를 구매하지 않고 월 구독료로 통합 자율 워크포스를 사용, 생산 수요에 따라 휴머노이드와 로봇 수를 탄력적으로 조절 가능. 자본 지출(CAPEX)에서 운영 비용(OPEX)으로 전환.\n- **상업적 성과**: \n  - 2억 달러 이상의 글로벌 파이프라인 확보\n  - 대형 산업체와 1억 4400만 달러 계약 체결\n  - 미국 제약 선도기업과 대규모 휴머노이드 파일럿 진행 중\n  - 다임러(Daimler), 캐리어(Carrier), 비타퀘스트(VitaQuest) 등 글로벌 고객이 2개 대륙에서 실제 운영 중\n- **투자자 의견**: 코쿤 캐피털(Cocoon Capital)의 마이클 블레이키 파트너는 \"두지 로보틱스의 실행 속도와 글로벌 고객 확보가 매우 인상적\"이라며 \"불규칙한 바닥, 비정형 공간을 문제없이 주행하고 기존 지게차 대비 50% 공간 효율을 달성하는 등 산업 로봇의 고질적 병목을 해결했다\"고 평가. 또한 \"대중 시장 채택이 불가피한 가격대에서 첨단 기능을 제공한다\"고 강조.",
+            "url": "https://roboticsandautomationnews.com/2026/05/22/doozy-robotics-launches-global-expansion-to-scale-ai-powered-humanoid-workforce-for-factories/101803/",
+            "category": "Humanoid/Industrial",
+            "importance": "High",
+            "comment_mood": "No visible comments",
+            "comment_summary": "실제 댓글은 확인되지 않았으나, 기사 내용을 바탕으로 추론한 커뮤니티 반응은 대체로 긍정적일 것으로 예상됩니다. 특히 시드 단계에서 2억 달러 파이프라인과 대형 계약을 확보한 점, RaaS 모델로 CAPEX 부담을 낮춘 점, 그리고 에이와-OS의 통합 오케스트레이션 능력이 주목받을 가능성이 높습니다. 다만 휴머노이드 출시가 2026년 3분기로 예정된 만큼 실제 양산 및 현장 적용까지의 간극에 대한 의구심도 있을 수 있습니다.",
+            "reaction_keywords": [
+                "물리적 AI",
+                "휴머노이드",
+                "산업 자동화",
+                "RaaS",
+                "글로벌 확장"
+            ],
+            "visible_comment_count": 0,
+            "collected_at": "2026-05-26 17:09:10"
+        },
+        {
+            "original_title": "Boston Dynamics trains Atlas humanoid robot to lift heavy appliances using AI-driven whole-body control",
+            "translated_title": "Boston Dynamics trains Atlas humanoid robot to lift heavy appliances using AI-driven whole-body control",
+            "summary": "원문 기사 'Boston Dynamics trains Atlas humanoid robot to lift heavy appliances using AI-driven whole-body control'를 수집했습니다. 자세한 내용은 원문 링크에서 확인할 수 있습니다.",
+            "full_post": "원문 기사 'Boston Dynamics trains Atlas humanoid robot to lift heavy appliances using AI-driven whole-body control'를 수집했습니다. 자세한 내용은 원문 링크에서 확인할 수 있습니다.",
+            "url": "https://roboticsandautomationnews.com/2026/05/20/boston-dynamics-trains-atlas-humanoid-robot-to-pick-up-and-place-washing-machine/101759/",
+            "category": "Humanoid",
+            "importance": "Medium",
+            "comment_mood": "No visible comments",
+            "comment_summary": "페이지에서 바로 확인 가능한 댓글을 찾지 못했습니다. 커뮤니티 반응은 추가 수집 후 판단이 필요합니다.",
+            "reaction_keywords": [
+                "휴머노이드",
+                "상용화",
+                "안전성"
+            ],
+            "visible_comment_count": 0,
+            "collected_at": "2026-05-26 17:09:43"
+        },
+        {
+            "original_title": "MIPI Alliance launches humanoid robotics group to explore standards for physical AI",
+            "translated_title": "MIPI 얼라이언스, 휴머노이드 로봇 표준화 돌입… '물리적 AI' 시장 선점 나선다",
+            "summary": "MIPI 얼라이언스가 휴머노이드 로봇을 위한 인터페이스 표준 개발을 목표로 '물리적 AI BoF 그룹'을 신설했습니다. 이 그룹은 기존 모바일·자동차용 MIPI 규격을 인간형 로봇에 최적화된 아키텍처로 확장하는 방안을 모색합니다. Yole 그룹은 2030년까지 휴머노이드 시장이 60억 달러, 2035년에는 510억 달러로 성장할 것으로 전망하며, 이에 따라 삼성·인텔·LG전자·소니 등 주요 기업들이 참여 중입니다.",
+            "full_post": "**MIPI 얼라이언스, 휴머노이드 로봇 표준화에 팔 걷다**\n\n모바일 및 연결 생태계용 유선 인터페이스 표준을 개발하는 국제 기구 MIPI 얼라이언스가 '물리적 AI BoF(Birds of a Feather) 그룹'을 공식 출범했습니다. 초점은 휴머노이드 로봇이며, 기존 MIPI 규격이 빠르게 진화하는 인간형 로봇 애플리케이션 영역을 어떻게 지원할 수 있을지 집중 탐구할 예정입니다.\n\n**시장 전망**\n- Yole 그룹은 휴머노이드 로봇 시장이 연평균 56% 성장해 2030년 60억 달러를 돌파할 것으로 예측\n- 2030년대 초반부터 채택률 급증, 2035년에는 510억 달러로 치솟을 전망\n- Yole 수석 애널리스트 Pierrick Boulay는 \"인간형 로봇이 변곡점에 도달했다\"며 \"AI 발전, 공급망 성숙, 부품 스케일링이 복잡한 프로토타입을 물류·제조 등 고부가 산업에서 ROI 측정 가능한 배치형 시스템으로 전환시키고 있다\"고 분석\n\n**BoF 그룹의 주요 임무**\n- 휴머노이드 로봇의 특수 요구사항(전력 효율, 비용 최적화, 소형 폼팩터)을 평가\n- MIPI 규격(PHY, 프로토콜, 애플리케이션 인터페이스)이 물리적 AI 시장의 표준화 부재를 해결할 수 있는 방안 검토\n- 평가 종료 후 MIPI 이사회에 공식 권고안 제출 → 신규 규격 개발 가능성\n\n**참여 기업** (일부)\nAmphenol, Binho, BitifEye, Genesys Logic, Intel, I-Pex, Kioxia, Lattice Semiconductor, LG전자, MediaTek, Mixel, NXP, Robert Bosch, Rohm, 삼성전자, Silvaco, 소니그룹, STMicroelectronics, Synopsys, TDK(InvenSense), Texas Instruments, Unisoc, Valens Semiconductor 등 24개사 이상\n\n**신규 이니셔티브**\n- MIPI는 '신흥 기술 이니셔티브(Emerging Technologies Initiative)'도 출범, 회원 및 비회원사 모두 참여 가능\n- 초점 분야: 물리적 AI BoF + 차세대 Die-to-Die BoF (2026년 이후 추가 그룹 예정)\n- BoF가 워킹 그룹으로 전환되거나 기존 그룹으로 이관될 경우, Adopter 회원·비회원사도 활동 지속 가능\n\n**전문가 코멘트** (기사 인용)\nMIPI 물리적 AI BoF 그룹 의장이자 MIPI 기술운영위원회 부의장인 Edo Cohen은 \"현재 많은 로봇 시스템이 모바일·자동차·산업용 아키텍처에 기반하고 있으나, 업계는 전력 효율·비용 절감·소형화를 우선시하는 상업적 설계로 전환 중\"이라며 \"MIPI의 축적된 경험과 검증된 기술을 바탕으로 물리적 AI 시장의 표준화 부재를 해결할 기회\"라고 강조했습니다.\n\n**참여 신청**\n관심 기업은 다음 링크에서 등록 가능: https://hubs.ly/Q04dBHmM0",
+            "url": "https://roboticsandautomationnews.com/2026/05/15/mipi-alliance-launches-physical-ai-birds-of-a-feather-group-focused-on-humanoids/101582/",
+            "category": "Humanoid/Industrial",
+            "importance": "High",
+            "comment_mood": "No visible comments",
+            "comment_summary": "댓글이 없는 상태입니다. 로봇공학 커뮤니티에서는 표준화 움직임이 휴머노이드 상용화를 가속화할 것이라는 긍정적 기대와 함께, MIPI 규격이 기존 모바일 중심이었던 점에서 휴머노이드 특화 요구를 얼마나 잘 반영할지에 대한 관심이 높을 것으로 예상됩니다. 특히 대형 칩셋 업체·전자 기업 다수가 참여한 점은 신뢰도를 높이는 요인으로 작용할 것입니다.",
+            "reaction_keywords": [
+                "휴머노이드 표준화",
+                "MIPI 얼라이언스",
+                "물리적 AI",
+                "로봇 인터페이스",
+                "시장 전망",
+                "산업용 로봇",
+                "AI 하드웨어"
+            ],
+            "visible_comment_count": 0,
+            "collected_at": "2026-05-26 17:09:57"
+        }
+    ]
+}

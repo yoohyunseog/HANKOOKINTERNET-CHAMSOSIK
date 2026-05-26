@@ -12,6 +12,7 @@ const xss = require('xss-clean');
 const hpp = require('hpp');
 const path = require('path');
 const fs = require('fs'); // fs require를 path와 함께 위쪽에 위치
+const crypto = require('crypto');
 const { calculateNB } = require('./calculate');
 const storage = require('./storage');
 const config = require('./config.json');
@@ -77,6 +78,12 @@ const PORT = process.env.PORT || 3000;
 const OLLAMA_BASE_URL = process.env.OLLAMA_BASE_URL || 'http://localhost:11434';
 const TREND_DATA_PATH = path.join(__dirname, '..', 'data', 'naver_creator_trends', 'latest_trend_data.json');
 const DEFAULT_MODEL = process.env.OLLAMA_MODEL || 'llama3';
+const COUPANG_DOMAIN = 'https://api-gateway.coupang.com';
+const COUPANG_ACCESS_KEY = process.env.COUPANG_ACCESS_KEY || '';
+const COUPANG_SECRET_KEY = process.env.COUPANG_SECRET_KEY || '';
+const COUPANG_SUB_ID = process.env.COUPANG_SUB_ID || '';
+const coupangProductsCache = new Map();
+const COUPANG_CACHE_TTL_MS = parseInt(process.env.COUPANG_CACHE_TTL_MS || '600000', 10);
 
 // /api/recent 응답 캐시 (JSON 파일, limit별) - 최적화: TTL 증가
 const RECENT_CACHE_TTL_MS = parseInt(process.env.RECENT_CACHE_TTL_MS || '30000', 10); // 10초 → 30초
@@ -545,6 +552,40 @@ function normalizeKeyword(rawText) {
         return '';
     }
     return firstLine.slice(0, 60);
+}
+
+function normalizeCoupangKeyword(rawText) {
+    return String(rawText || '')
+        .replace(/[^\p{L}\p{N}\s.+#-]/gu, ' ')
+        .replace(/\s+/g, ' ')
+        .trim()
+        .slice(0, 80);
+}
+
+function createCoupangAuthorization(method, pathWithQuery) {
+    const signedDate = new Date().toISOString().slice(2, 19).replace(/[-:T]/g, '');
+    const message = signedDate + method.toUpperCase() + pathWithQuery;
+    const signature = crypto
+        .createHmac('sha256', COUPANG_SECRET_KEY)
+        .update(message)
+        .digest('hex');
+
+    return `CEA algorithm=HmacSHA256, access-key=${COUPANG_ACCESS_KEY}, signed-date=${signedDate}, signature=${signature}`;
+}
+
+function mapCoupangProducts(payload) {
+    const items = payload?.data?.productData || payload?.data || [];
+    if (!Array.isArray(items)) return [];
+
+    return items.slice(0, 4).map((item) => ({
+        name: item.productName || item.name || '',
+        price: Number(item.productPrice || item.price || 0),
+        image: item.productImage || item.imageUrl || '',
+        url: item.productUrl || item.url || '',
+        rank: item.rank || null,
+        isRocket: Boolean(item.isRocket),
+        isFreeShipping: Boolean(item.isFreeShipping)
+    })).filter((item) => item.name && item.url);
 }
 
 function loadTrendKeywords(limit) {
@@ -1352,6 +1393,70 @@ app.get('/api/calculations', async (req, res) => {
 // 헬스 체크
 app.get('/api/health', (req, res) => {
     res.json({ status: 'OK', message: 'N/B 계산 서버 정상 작동 중' });
+});
+
+app.get('/api/coupang-products', async (req, res) => {
+    try {
+        if (!COUPANG_ACCESS_KEY || !COUPANG_SECRET_KEY) {
+            return res.status(503).json({
+                success: false,
+                error: 'Coupang Partners API keys are not configured.'
+            });
+        }
+
+        const keyword = normalizeCoupangKeyword(req.query.keyword);
+        const limit = Math.min(Math.max(parseInt(req.query.limit, 10) || 4, 1), 8);
+        if (!keyword) {
+            return res.status(400).json({ success: false, error: 'keyword is required.' });
+        }
+
+        const cacheKey = `${keyword}:${limit}`;
+        const cached = coupangProductsCache.get(cacheKey);
+        const now = Date.now();
+        if (cached && now - cached.cachedAt < COUPANG_CACHE_TTL_MS) {
+            return res.json({ ...cached.payload, cached: true });
+        }
+
+        const query = new URLSearchParams({
+            keyword,
+            limit: String(limit)
+        });
+        if (COUPANG_SUB_ID) {
+            query.set('subId', COUPANG_SUB_ID);
+        }
+
+        const pathWithQuery = `/v2/providers/affiliate_open_api/apis/openapi/products/search?${query.toString()}`;
+        const response = await fetch(`${COUPANG_DOMAIN}${pathWithQuery}`, {
+            method: 'GET',
+            headers: {
+                Authorization: createCoupangAuthorization('GET', pathWithQuery),
+                'Content-Type': 'application/json'
+            }
+        });
+
+        const payload = await response.json().catch(() => ({}));
+        if (!response.ok) {
+            console.error('[coupang-products] API error:', response.status, payload);
+            return res.status(response.status).json({
+                success: false,
+                error: 'Coupang Partners API request failed.'
+            });
+        }
+
+        const products = mapCoupangProducts(payload);
+        const result = {
+            success: true,
+            keyword,
+            products,
+            disclosure: '이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.',
+            cached: false
+        };
+        coupangProductsCache.set(cacheKey, { cachedAt: now, payload: result });
+        return res.json(result);
+    } catch (error) {
+        console.error('[coupang-products] error:', error.message);
+        return res.status(500).json({ success: false, error: 'Failed to load Coupang products.' });
+    }
 });
 
 app.options(['/api/radio-state', '/api/radio-state/'], (req, res) => {

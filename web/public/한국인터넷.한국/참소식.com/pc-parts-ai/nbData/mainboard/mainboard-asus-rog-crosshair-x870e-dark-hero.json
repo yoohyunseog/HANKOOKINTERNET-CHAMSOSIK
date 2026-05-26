@@ -1,0 +1,90 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-05-26T17:10:26.480+09:00",
+  "category": "Mainboard",
+  "id": "mainboard-asus-rog-crosshair-x870e-dark-hero",
+  "name": "ASUS ROG CROSSHAIR X870E DARK HERO",
+  "maker": "ASUS",
+  "platform": "AM5",
+  "estimatedPriceKrw": 1087110,
+  "priceBand": "60만원 이상",
+  "speedLabel": "DDR5 8600MHz",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "Mainboard",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 100,
+  "valueIndex": 9.2,
+  "aiUseScore": 65,
+  "powerWatts": 0,
+  "tags": [
+    "high-end",
+    "overclocking",
+    "X870E"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "Mainboard",
+    "partId": "mainboard-asus-rog-crosshair-x870e-dark-hero",
+    "partName": "ASUS ROG CROSSHAIR X870E DARK HERO",
+    "speed": {
+      "score": 100,
+      "weight": 0.32,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "Mainboard",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 1000,
+      "value": 123,
+      "aiFit": 650,
+      "priceEfficiency": 90,
+      "powerEfficiency": 1000
+    },
+    "nbVector": [
+      100,
+      1000,
+      123,
+      650,
+      90,
+      1000
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 238.028,
+    "nbMin": 356.548,
+    "weightedScore": 381,
+    "nbBand": "100~499",
+    "summary": "Mainboard ASUS ROG CROSSHAIR X870E DARK HERO 부품을 속도 중심 N/B 데이터베이스 점수 381점으로 저장했습니다."
+  },
+  "nbWeightedScore": 381,
+  "nbMax": 238.028,
+  "nbMin": 356.548,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=ASUS%20ROG%20Crosshair%20X870E%20Hero%20%EA%B0%80%EA%B2%A9",
+  "notes": "High-end AM5 motherboard with 20+2+2 phase power delivery and USB4 support.",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

@@ -1,8 +1,8 @@
 {
   "schema": "pc-parts-nb-category-index.v1",
-  "updatedAt": "2026-05-26T11:46:27.967+09:00",
+  "updatedAt": "2026-05-26T17:10:22.009+09:00",
   "category": "cpu",
-  "count": 61,
+  "count": 67,
   "files": [
     "cpu-amd-5-7500f.json",
     "cpu-amd-5-7600.json",
@@ -34,16 +34,20 @@
     "cpu-core-ultra-7-265kf.json",
     "cpu-core-ultra-9-285.json",
     "cpu-core-ultra-9-285k.json",
+    "cpu-intel-core-i3-14100.json",
     "cpu-intel-core-i5-13400f.json",
     "cpu-intel-core-i5-13600k.json",
     "cpu-intel-core-i5-13600kf.json",
+    "cpu-intel-core-i5-14400.json",
     "cpu-intel-core-i7-13700f.json",
     "cpu-intel-core-i7-13700k.json",
+    "cpu-intel-core-i7-14700f.json",
     "cpu-intel-core-i7-14700kf.json",
     "cpu-intel-core-i9-13900k.json",
     "cpu-intel-core-i9-14900k.json",
     "cpu-intel-core-i9-14900kf.json",
     "cpu-intel-core-i9-14900ks.json",
+    "cpu-intel-core-ultra-3-205.json",
     "cpu-intel-core-ultra-5-225-f.json",
     "cpu-intel-core-ultra-5-225.json",
     "cpu-intel-core-ultra-5-225f.json",
@@ -63,7 +67,9 @@
     "cpu-ryzen-7-9800x3d.json",
     "cpu-ryzen-9-7900.json",
     "cpu-ryzen-9-7950x.json",
+    "cpu-ryzen-9-7950x3d.json",
     "cpu-ryzen-9-9900x.json",
-    "cpu-ryzen-9-9950x.json"
+    "cpu-ryzen-9-9950x.json",
+    "cpu-ryzen-9-9950x3d.json"
   ]
 }

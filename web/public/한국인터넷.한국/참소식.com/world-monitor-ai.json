@@ -2,101 +2,103 @@
   "title": "이클립스 센츄어리 D.P 브리핑",
   "model": "deepseek-v3.1:671b-cloud",
   "source_feed": "https://xn--9l4b4xi9r.com/feed.xml",
-  "updated_at": "2026-05-26T02:40:14.553735+00:00",
-  "feed_last_build_date": "Tue, 26 May 2026 02:38:15 GMT",
+  "updated_at": "2026-05-26T08:08:50.505659+00:00",
+  "feed_last_build_date": "Tue, 26 May 2026 08:05:08 GMT",
   "item_count": 12,
-  "headline": "스페이스X IPO 기대와 삼성전자 호재로 글로벌 테마 주목",
-  "summary": "스페이스X의 대규모 IPO 예상으로 우주항공 산업 관련 ETF 강세가 나타나고 있습니다. 삼성전자는 파업 해소와 수급 개선으로 상승 전망을 보입니다. 국내에서는 고금리와 고물가 지속에 따른 경제 균형 조정 논의가 진행 중입니다.",
+  "headline": "서울 서소문 사고와 코스피 8000선 돌파 동시 발생",
+  "summary": "서울 서소문 고가차도 철거 현장에서 구조물 붕괴 사고로 인명 피해와 교통 혼잡이 발생했습니다. 한편 코스피는 미국-이란 협상 기대감과 외국인 매수세로 8000선을 돌파하며 최고치를 경신했습니다. 삼화콘덴서를 포함한 반도체 주식이 강세를 보였습니다.",
   "signals": [
-    "스페이스X 역사적 최대 IPO 예상",
-    "삼성전자 파업 해소와 수급 개선",
-    "우주항공 산업 구조적 성장 기대"
+    "서소문 고가차도 붕괴 사고 인명 피해",
+    "코스피 8000선 돌파 및 최고치 경신",
+    "미국-이란 협상 기대감으로 투자 심리 회복",
+    "삼화콘덴서 등 반도체 주식 강세"
   ],
   "risks": [
-    "고금리와 고물가 지속 압력",
-    "정치적 불확실성 확대",
-    "글로벌 군사산업 경쟁 심화"
+    "건설 현장 안전 사고 확산 가능성",
+    "고금리와 인플레이션 등 매크로 리스크 지속",
+    "외국인 리밸런싱 매각으로 환율 변동성 가능"
   ],
   "market_impact": [
-    "코스피 테마주 일부 호조",
-    "코스닥 우주항공 관련株 관심",
-    "비트코인 영향 미미",
-    "한국 증시 심리 제한적 호전"
+    "코스피 단기 강세 지속 가능",
+    "코스닥 반도체 관련주 수혜 예상",
+    "비트코인은 직접 영향 미미",
+    "한국 증시 심리 일시적 개선"
   ],
-  "outlook": "우주항공 테마 단기 호실적 예상되나, 고금리와 물가 압력으로 광범위한 상승에는 한계 존재",
-  "quality_note": "피드 내용이 반복적이고 구체적 데이터 부족으로 분석에 제약이 있음",
+  "outlook": "지정학적 안정화 기대와 실적 호전이 증시를 지지하나, 내부 리스크 요인과 기술적 조정 가능성 존재",
+  "quality_note": "국내 사고와 증시 뉴스 위주로 글로벌 이슈 다양성 부족",
   "weighted_signal": {
-    "score": 58,
-    "upper_bound": 35,
-    "lower_bound": 27,
+    "score": 65,
+    "upper_bound": 45,
+    "lower_bound": 30,
     "grade": "주의",
     "upper_factors": [
-      "스페이스X IPO 테마 활성화 +12",
-      "삼성전자 호실적 기대 +8",
-      "우주항공 산업 성장 +7"
+      "미국-이란 협상 기대감 +15",
+      "외국인 매수세 유입 +12",
+      "반도체 주식 강세 +10",
+      "개인 투자자 매수 +8"
     ],
     "lower_factors": [
-      "고금리 고물가 지속 -10",
-      "정치적 불확실성 -9",
-      "군사경쟁 확대 -8"
+      "건설 현장 안전 사고 -12",
+      "고금리 인플레이션 리스크 -10",
+      "정치적 반시장 정책 우려 -8"
     ]
   },
   "items": [
     {
-      "title": "[현대 모비스는 2031년까지 휴먼노이드 로봇 사업 매출이 2조원을 확대할 계획이다. 관련 파장이 확산되고 있습니다.]",
-      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [현대 모비스는 2031년까지 휴먼노이드 로봇 사업 매출이 2조원을 확대할 계획이다. 관련 파장이 확산되고 있습니다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
+      "title": "[서울 서소문 고가차도 철거 현장에서 붕괴 사고가 발생해 2명이 숨지고 1명이 심정지 상태가 되는 등 인명 피해가 발생했으며, 이로 인해 경의중앙선 열차 운행 중단과 도로 전면 통제 등 극심한 교통 혼잡이 빚어졌습니다.]",
+      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [서울 서소문 고가차도 철거 현장에서 붕괴 사고가 발생해 2명이 숨지고 1명이 심정지 상태가 되는 등 인명 피해가 발생했으며, 이로 인해 경의중앙선 열차 운행 중단과 도로 전면 통제 등 극심한 교통 혼잡이 빚어졌습니다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
       "category": "일반",
-      "pubDate": "Tue, 26 May 2026 02:19:20 GMT",
-      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B%ED%98%84%EB%8C%80%20%EB%AA%A8%EB%B9%84%EC%8A%A4%EB%8A%94%202031%EB%85%84%EA%B9%8C%EC%A7%80%20%ED%9C%B4%EB%A8%BC%EB%85%B8%EC%9D%B4%EB%93%9C%20%EB%A1%9C%EB%B4%87%20%EC%82%AC%EC%97%85%20%EB%A7%A4%EC%B6%9C%EC%9D%B4%202%EC%A1%B0%EC%9B%90%EC%9D%84%20%ED%99%95%EB%8C%80%ED%95%A0%20%EA%B3%84%ED%9A%8D%EC%9D%B4%EB%8B%A4.%20%EA%B4%80%EB%A0%A8%20%ED%8C%8C%EC%9E%A5%EC%9D%B4%20%ED%99%95%EC%82%B0%EB%90%98%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%5D&selected_max=69362.9457681771&selected_min=0.0011336722"
+      "pubDate": "Tue, 26 May 2026 08:03:52 GMT",
+      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B%EC%84%9C%EC%9A%B8%20%EC%84%9C%EC%86%8C%EB%AC%B8%20%EA%B3%A0%EA%B0%80%EC%B0%A8%EB%8F%84%20%EC%B2%A0%EA%B1%B0%20%ED%98%84%EC%9E%A5%EC%97%90%EC%84%9C%20%EB%B6%95%EA%B4%B4%20%EC%82%AC%EA%B3%A0%EA%B0%80%20%EB%B0%9C%EC%83%9D%ED%95%B4%202%EB%AA%85%EC%9D%B4%20%EC%88%A8%EC%A7%80%EA%B3%A0%201%EB%AA%85%EC%9D%B4%20%EC%8B%AC%EC%A0%95%EC%A7%80%20%EC%83%81%ED%83%9C%EA%B0%80%20%EB%90%98%EB%8A%94%20%EB%93%B1%20%EC%9D%B8%EB%AA%85%20%ED%94%BC%ED%95%B4%EA%B0%80%20%EB%B0%9C%EC%83%9D%ED%96%88%EC%9C%BC%EB%A9%B0%2C%20%EC%9D%B4%EB%A1%9C%20%EC%9D%B8%ED%95%B4%20%EA%B2%BD%EC%9D%98%EC%A4%91%EC%95%99%EC%84%A0%20%EC%97%B4%EC%B0%A8%20%EC%9A%B4%ED%96%89%20%EC%A4%91%EB%8B%A8%EA%B3%BC%20%EB%8F%84%EB%A1%9C%20%EC%A0%84%EB%A9%B4%20%ED%86%B5%EC%A0%9C%20%EB%93%B1%20%EA%B7%B9%EC%8B%AC%ED%95%9C%20%EA%B5%90%ED%86%B5%20%ED%98%BC%EC%9E%A1%EC%9D%B4%20%EB%B9%9A%EC%96%B4%EC%A1%8C%EC%8A%B5%EB%8B%88%EB%8B%A4.%5D&selected_max=36781.27061124&selected_min=0.0006062275"
     },
     {
-      "title": "[오늘 상승할 것으로 예측된 Samsung Electronics의 주가는 파업 해소, 수급 증가, 중동 뉴스 합의 등 이유로 인한 것입니다. 관련 파장이 확산되고 있습니다.]",
-      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [오늘 상승할 것으로 예측된 Samsung Electronics의 주가는 파업 해소, 수급 증가, 중동 뉴스 합의 등 이유로 인한 것입니다. 관련 파장이 확산되고 있습니다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
+      "title": "[서소문 고가차도 철거 현장에서 철제 구조물이 붕괴하는 사고가 발생해 소방 대응 1단계가 발령되었으며, 현재까지 파악된 6명의 인원 중 3명은 구조되었으나 나머지 3명의 상태는 확인 중에 있습니다.]",
+      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [서소문 고가차도 철거 현장에서 철제 구조물이 붕괴하는 사고가 발생해 소방 대응 1단계가 발령되었으며, 현재까지 파악된 6명의 인원 중 3명은 구조되었으나 나머지 3명의 상태는 확인 중에 있습니다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
       "category": "일반",
-      "pubDate": "Tue, 26 May 2026 01:45:33 GMT",
-      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B%EC%98%A4%EB%8A%98%20%EC%83%81%EC%8A%B9%ED%95%A0%20%EA%B2%83%EC%9C%BC%EB%A1%9C%20%EC%98%88%EC%B8%A1%EB%90%9C%20Samsung%20Electronics%EC%9D%98%20%EC%A3%BC%EA%B0%80%EB%8A%94%20%ED%8C%8C%EC%97%85%20%ED%95%B4%EC%86%8C%2C%20%EC%88%98%EA%B8%89%20%EC%A6%9D%EA%B0%80%2C%20%EC%A4%91%EB%8F%99%20%EB%89%B4%EC%8A%A4%20%ED%95%A9%EC%9D%98%20%EB%93%B1%20%EC%9D%B4%EC%9C%A0%EB%A1%9C%20%EC%9D%B8%ED%95%9C%20%EA%B2%83%EC%9E%85%EB%8B%88%EB%8B%A4.%20%EA%B4%80%EB%A0%A8%20%ED%8C%8C%EC%9E%A5%EC%9D%B4%20%ED%99%95%EC%82%B0%EB%90%98%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%5D&selected_max=46766.5669169912&selected_min=0.0007702713"
+      "pubDate": "Tue, 26 May 2026 07:57:46 GMT",
+      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B%EC%84%9C%EC%86%8C%EB%AC%B8%20%EA%B3%A0%EA%B0%80%EC%B0%A8%EB%8F%84%20%EC%B2%A0%EA%B1%B0%20%ED%98%84%EC%9E%A5%EC%97%90%EC%84%9C%20%EC%B2%A0%EC%A0%9C%20%EA%B5%AC%EC%A1%B0%EB%AC%BC%EC%9D%B4%20%EB%B6%95%EA%B4%B4%ED%95%98%EB%8A%94%20%EC%82%AC%EA%B3%A0%EA%B0%80%20%EB%B0%9C%EC%83%9D%ED%95%B4%20%EC%86%8C%EB%B0%A9%20%EB%8C%80%EC%9D%91%201%EB%8B%A8%EA%B3%84%EA%B0%80%20%EB%B0%9C%EB%A0%B9%EB%90%98%EC%97%88%EC%9C%BC%EB%A9%B0%2C%20%ED%98%84%EC%9E%AC%EA%B9%8C%EC%A7%80%20%ED%8C%8C%EC%95%85%EB%90%9C%206%EB%AA%85%EC%9D%98%20%EC%9D%B8%EC%9B%90%20%EC%A4%91%203%EB%AA%85%EC%9D%80%20%EA%B5%AC%EC%A1%B0%EB%90%98%EC%97%88%EC%9C%BC%EB%82%98%20%EB%82%98%EB%A8%B8%EC%A7%80%203%EB%AA%85%EC%9D%98%20%EC%83%81%ED%83%9C%EB%8A%94%20%ED%99%95%EC%9D%B8%20%EC%A4%91%EC%97%90%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%5D&selected_max=40813.407055909&selected_min=0.0006721254"
     },
     {
-      "title": "[공정위는 과거 1년간 큰 규모의 불공정 행위를 제재했으며, 이는 혁신과 경쟁을 위해 경율을 강화하고 있습니다. 관련 파장이 확산되고 있습니다.]",
-      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [공정위는 과거 1년간 큰 규모의 불공정 행위를 제재했으며, 이는 혁신과 경쟁을 위해 경율을 강화하고 있습니다. 관련 파장이 확산되고 있습니다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
+      "title": "[코스피가 외국인 투자자들의 매수세 유입에 힘입어 8,000선을 돌파하며 수급 구조가 개선되었으나, 고금리와 인플레이션 등 매크로 리스크가 여전해 추가 상승을 위해 바닥을 다지는 과정이 필요할 것으로 보입니다.]",
+      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [코스피가 외국인 투자자들의 매수세 유입에 힘입어 8,000선을 돌파하며 수급 구조가 개선되었으나, 고금리와 인플레이션 등 매크로 리스크가 여전해 추가 상승을 위해 바닥을 다지는 과정이 필요할 것으로 보입니다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
       "category": "일반",
-      "pubDate": "Tue, 26 May 2026 00:36:05 GMT",
-      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B%EA%B3%B5%EC%A0%95%EC%9C%84%EB%8A%94%20%EA%B3%BC%EA%B1%B0%201%EB%85%84%EA%B0%84%20%ED%81%B0%20%EA%B7%9C%EB%AA%A8%EC%9D%98%20%EB%B6%88%EA%B3%B5%EC%A0%95%20%ED%96%89%EC%9C%84%EB%A5%BC%20%EC%A0%9C%EC%9E%AC%ED%96%88%EC%9C%BC%EB%A9%B0%2C%20%EC%9D%B4%EB%8A%94%20%ED%98%81%EC%8B%A0%EA%B3%BC%20%EA%B2%BD%EC%9F%81%EC%9D%84%20%EC%9C%84%ED%95%B4%20%EA%B2%BD%EC%9C%A8%EC%9D%84%20%EA%B0%95%ED%99%94%ED%95%98%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%20%EA%B4%80%EB%A0%A8%20%ED%8C%8C%EC%9E%A5%EC%9D%B4%20%ED%99%95%EC%82%B0%EB%90%98%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%5D&selected_max=56122.1443051158&selected_min=0.0009245675"
+      "pubDate": "Tue, 26 May 2026 07:56:44 GMT",
+      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B%EC%BD%94%EC%8A%A4%ED%94%BC%EA%B0%80%20%EC%99%B8%EA%B5%AD%EC%9D%B8%20%ED%88%AC%EC%9E%90%EC%9E%90%EB%93%A4%EC%9D%98%20%EB%A7%A4%EC%88%98%EC%84%B8%20%EC%9C%A0%EC%9E%85%EC%97%90%20%ED%9E%98%EC%9E%85%EC%96%B4%208%2C000%EC%84%A0%EC%9D%84%20%EB%8F%8C%ED%8C%8C%ED%95%98%EB%A9%B0%20%EC%88%98%EA%B8%89%20%EA%B5%AC%EC%A1%B0%EA%B0%80%20%EA%B0%9C%EC%84%A0%EB%90%98%EC%97%88%EC%9C%BC%EB%82%98%2C%20%EA%B3%A0%EA%B8%88%EB%A6%AC%EC%99%80%20%EC%9D%B8%ED%94%8C%EB%A0%88%EC%9D%B4%EC%85%98%20%EB%93%B1%20%EB%A7%A4%ED%81%AC%EB%A1%9C%20%EB%A6%AC%EC%8A%A4%ED%81%AC%EA%B0%80%20%EC%97%AC%EC%A0%84%ED%95%B4%20%EC%B6%94%EA%B0%80%20%EC%83%81%EC%8A%B9%EC%9D%84%20%EC%9C%84%ED%95%B4%20%EB%B0%94%EB%8B%A5%EC%9D%84%20%EB%8B%A4%EC%A7%80%EB%8A%94%20%EA%B3%BC%EC%A0%95%EC%9D%B4%20%ED%95%84%EC%9A%94%ED%95%A0%20%EA%B2%83%EC%9C%BC%EB%A1%9C%20%EB%B3%B4%EC%9E%85%EB%8B%88%EB%8B%A4.%5D&selected_max=38601.0388929841&selected_min=0.0006281189"
     },
     {
-      "title": "[Tiger US Space Tech ETF는 오늘 미국 우주항공 산업의 구조적 성장을 앞두고 강세를 보여, 역대 최대 규모의 기업이 상장될 것으로 평가된다. 관련 파장이 확산되고 있습니다.]",
-      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [Tiger US Space Tech ETF는 오늘 미국 우주항공 산업의 구조적 성장을 앞두고 강세를 보여, 역대 최대 규모의 기업이 상장될 것으로 평가된다. 관련 파장이 확산되고 있습니다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
+      "title": "[미국과 이란의 협상 기대감 속에 외국인과 기관의 매수세가 유입되면서, 코스피 지수가 장중 8,100선을 돌파하며 역대 최고치를 경신하는 성과를 거두었습니다. 관련 파장이 확산되고 있습니다.]",
+      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [미국과 이란의 협상 기대감 속에 외국인과 기관의 매수세가 유입되면서, 코스피 지수가 장중 8,100선을 돌파하며 역대 최고치를 경신하는 성과를 거두었습니다. 관련 파장이 확산되고 있습니다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
       "category": "일반",
-      "pubDate": "Tue, 26 May 2026 00:34:33 GMT",
-      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5BTiger%20US%20Space%20Tech%20ETF%EB%8A%94%20%EC%98%A4%EB%8A%98%20%EB%AF%B8%EA%B5%AD%20%EC%9A%B0%EC%A3%BC%ED%95%AD%EA%B3%B5%20%EC%82%B0%EC%97%85%EC%9D%98%20%EA%B5%AC%EC%A1%B0%EC%A0%81%20%EC%84%B1%EC%9E%A5%EC%9D%84%20%EC%95%9E%EB%91%90%EA%B3%A0%20%EA%B0%95%EC%84%B8%EB%A5%BC%20%EB%B3%B4%EC%97%AC%2C%20%EC%97%AD%EB%8C%80%20%EC%B5%9C%EB%8C%80%20%EA%B7%9C%EB%AA%A8%EC%9D%98%20%EA%B8%B0%EC%97%85%EC%9D%B4%20%EC%83%81%EC%9E%A5%EB%90%A0%20%EA%B2%83%EC%9C%BC%EB%A1%9C%20%ED%8F%89%EA%B0%80%EB%90%9C%EB%8B%A4.%20%EA%B4%80%EB%A0%A8%20%ED%8C%8C%EC%9E%A5%EC%9D%B4%20%ED%99%95%EC%82%B0%EB%90%98%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%5D&selected_max=42353.8182108136&selected_min=0.0006975185"
+      "pubDate": "Tue, 26 May 2026 07:54:52 GMT",
+      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B%EB%AF%B8%EA%B5%AD%EA%B3%BC%20%EC%9D%B4%EB%9E%80%EC%9D%98%20%ED%98%91%EC%83%81%20%EA%B8%B0%EB%8C%80%EA%B0%90%20%EC%86%8D%EC%97%90%20%EC%99%B8%EA%B5%AD%EC%9D%B8%EA%B3%BC%20%EA%B8%B0%EA%B4%80%EC%9D%98%20%EB%A7%A4%EC%88%98%EC%84%B8%EA%B0%80%20%EC%9C%A0%EC%9E%85%EB%90%98%EB%A9%B4%EC%84%9C%2C%20%EC%BD%94%EC%8A%A4%ED%94%BC%20%EC%A7%80%EC%88%98%EA%B0%80%20%EC%9E%A5%EC%A4%91%208%2C100%EC%84%A0%EC%9D%84%20%EB%8F%8C%ED%8C%8C%ED%95%98%EB%A9%B0%20%EC%97%AD%EB%8C%80%20%EC%B5%9C%EA%B3%A0%EC%B9%98%EB%A5%BC%20%EA%B2%BD%EC%8B%A0%ED%95%98%EB%8A%94%20%EC%84%B1%EA%B3%BC%EB%A5%BC%20%EA%B1%B0%EB%91%90%EC%97%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%20%EA%B4%80%EB%A0%A8%20%ED%8C%8C%EC%9E%A5%EC%9D%B4%20%ED%99%95%EC%82%B0%EB%90%98%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%5D&selected_max=42353.8182108136&selected_min=0.0006975185"
     },
     {
-      "title": "[스페이스X IPO: 일론머스크 Led by, 최대 IPO 예정, 평가금액 약 17500억달러 관련 파장이 확산되고 있습니다.]",
-      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [스페이스X IPO: 일론머스크 Led by, 최대 IPO 예정, 평가금액 약 17500억달러 관련 파장이 확산되고 있습니다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
+      "title": "[미국과 이란의 종전 기대감으로 투자 심리가 회복되면서 삼성전자와 SK하이닉스 등 반도체 대형주의 강한 상승세에 힘입어 코스피 지수가 8,000선을 재돌파하며 장중 최고치를 경신했습니다.]",
+      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [미국과 이란의 종전 기대감으로 투자 심리가 회복되면서 삼성전자와 SK하이닉스 등 반도체 대형주의 강한 상승세에 힘입어 코스피 지수가 8,000선을 재돌파하며 장중 최고치를 경신했습니다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
       "category": "일반",
-      "pubDate": "Tue, 26 May 2026 00:25:07 GMT",
-      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4X%20IPO%3A%20%EC%9D%BC%EB%A1%A0%EB%A8%B8%EC%8A%A4%ED%81%AC%20Led%20by%2C%20%EC%B5%9C%EB%8C%80%20IPO%20%EC%98%88%EC%A0%95%2C%20%ED%8F%89%EA%B0%80%EA%B8%88%EC%95%A1%20%EC%95%BD%2017500%EC%96%B5%EB%8B%AC%EB%9F%AC%20%EA%B4%80%EB%A0%A8%20%ED%8C%8C%EC%9E%A5%EC%9D%B4%20%ED%99%95%EC%82%B0%EB%90%98%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%5D&selected_max=64141.8028306291&selected_min=0.0010568874"
+      "pubDate": "Tue, 26 May 2026 07:53:44 GMT",
+      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B%EB%AF%B8%EA%B5%AD%EA%B3%BC%20%EC%9D%B4%EB%9E%80%EC%9D%98%20%EC%A2%85%EC%A0%84%20%EA%B8%B0%EB%8C%80%EA%B0%90%EC%9C%BC%EB%A1%9C%20%ED%88%AC%EC%9E%90%20%EC%8B%AC%EB%A6%AC%EA%B0%80%20%ED%9A%8C%EB%B3%B5%EB%90%98%EB%A9%B4%EC%84%9C%20%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90%EC%99%80%20SK%ED%95%98%EC%9D%B4%EB%8B%89%EC%8A%A4%20%EB%93%B1%20%EB%B0%98%EB%8F%84%EC%B2%B4%20%EB%8C%80%ED%98%95%EC%A3%BC%EC%9D%98%20%EA%B0%95%ED%95%9C%20%EC%83%81%EC%8A%B9%EC%84%B8%EC%97%90%20%ED%9E%98%EC%9E%85%EC%96%B4%20%EC%BD%94%EC%8A%A4%ED%94%BC%20%EC%A7%80%EC%88%98%EA%B0%80%208%2C000%EC%84%A0%EC%9D%84%20%EC%9E%AC%EB%8F%8C%ED%8C%8C%ED%95%98%EB%A9%B0%20%EC%9E%A5%EC%A4%91%20%EC%B5%9C%EA%B3%A0%EC%B9%98%EB%A5%BC%20%EA%B2%BD%EC%8B%A0%ED%96%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%5D&selected_max=43427.0714916746&selected_min=0.000706728"
     },
     {
-      "title": "[캐나다는 노후 잠수함을 대체할 수주에서 중국 및 인도의 경쟁자와 같이 국내 정치인과 독일 기업인이 맞붙고 있습니다. 관련 파장이 확산되고 있습니다.]",
-      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [캐나다는 노후 잠수함을 대체할 수주에서 중국 및 인도의 경쟁자와 같이 국내 정치인과 독일 기업인이 맞붙고 있습니다. 관련 파장이 확산되고 있습니다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
+      "title": "[삼성전자와 SK하이닉스를 비롯한 반도체 관련주의 강한 상승세와 위험 자산 선호 심리 회복에 힘입어 코스피 지수가 8,000선을 돌파하며 장중 최고치를 경신하는 기록적인 성과를 거두었습니다.]",
+      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [삼성전자와 SK하이닉스를 비롯한 반도체 관련주의 강한 상승세와 위험 자산 선호 심리 회복에 힘입어 코스피 지수가 8,000선을 돌파하며 장중 최고치를 경신하는 기록적인 성과를 거두었습니다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
       "category": "일반",
-      "pubDate": "Tue, 26 May 2026 00:19:34 GMT",
-      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B%EC%BA%90%EB%82%98%EB%8B%A4%EB%8A%94%20%EB%85%B8%ED%9B%84%20%EC%9E%A0%EC%88%98%ED%95%A8%EC%9D%84%20%EB%8C%80%EC%B2%B4%ED%95%A0%20%EC%88%98%EC%A3%BC%EC%97%90%EC%84%9C%20%EC%A4%91%EA%B5%AD%20%EB%B0%8F%20%EC%9D%B8%EB%8F%84%EC%9D%98%20%EA%B2%BD%EC%9F%81%EC%9E%90%EC%99%80%20%EA%B0%99%EC%9D%B4%20%EA%B5%AD%EB%82%B4%20%EC%A0%95%EC%B9%98%EC%9D%B8%EA%B3%BC%20%EB%8F%85%EC%9D%BC%20%EA%B8%B0%EC%97%85%EC%9D%B8%EC%9D%B4%20%EB%A7%9E%EB%B6%99%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%20%EA%B4%80%EB%A0%A8%20%ED%8C%8C%EC%9E%A5%EC%9D%B4%20%ED%99%95%EC%82%B0%EB%90%98%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%5D&selected_max=54204.521431366&selected_min=0.0008892738"
+      "pubDate": "Tue, 26 May 2026 07:52:32 GMT",
+      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90%EC%99%80%20SK%ED%95%98%EC%9D%B4%EB%8B%89%EC%8A%A4%EB%A5%BC%20%EB%B9%84%EB%A1%AF%ED%95%9C%20%EB%B0%98%EB%8F%84%EC%B2%B4%20%EA%B4%80%EB%A0%A8%EC%A3%BC%EC%9D%98%20%EA%B0%95%ED%95%9C%20%EC%83%81%EC%8A%B9%EC%84%B8%EC%99%80%20%EC%9C%84%ED%97%98%20%EC%9E%90%EC%82%B0%20%EC%84%A0%ED%98%B8%20%EC%8B%AC%EB%A6%AC%20%ED%9A%8C%EB%B3%B5%EC%97%90%20%ED%9E%98%EC%9E%85%EC%96%B4%20%EC%BD%94%EC%8A%A4%ED%94%BC%20%EC%A7%80%EC%88%98%EA%B0%80%208%2C000%EC%84%A0%EC%9D%84%20%EB%8F%8C%ED%8C%8C%ED%95%98%EB%A9%B0%20%EC%9E%A5%EC%A4%91%20%EC%B5%9C%EA%B3%A0%EC%B9%98%EB%A5%BC%20%EA%B2%BD%EC%8B%A0%ED%95%98%EB%8A%94%20%EA%B8%B0%EB%A1%9D%EC%A0%81%EC%9D%B8%20%EC%84%B1%EA%B3%BC%EB%A5%BC%20%EA%B1%B0%EB%91%90%EC%97%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%5D&selected_max=42607.5425138465&selected_min=0.0006933778"
     },
     {
-      "title": "[김성욱 울산시장 단일화 여론조사 중단, 조직적 개입에 의심 관련 파장이 확산되고 있습니다.]",
-      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [김성욱 울산시장 단일화 여론조사 중단, 조직적 개입에 의심 관련 파장이 확산되고 있습니다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
+      "title": "[국내 정치인이 주장하는 코스피 5,000 시대는 실현 불가능한 구호이며, 오히려 반시장적인 정책 기조와 도덕성 논란이 코리아 디스카운트를 심화시켜 개인 투자자들에게 해가 될 수 있다는 비판이 제기되었습니다.]",
+      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [국내 정치인이 주장하는 코스피 5,000 시대는 실현 불가능한 구호이며, 오히려 반시장적인 정책 기조와 도덕성 논란이 코리아 디스카운트를 심화시켜 개인 투자자들에게 해가 될 수 있다는 비판이 제기되었습니다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
       "category": "일반",
-      "pubDate": "Mon, 25 May 2026 23:57:05 GMT",
-      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B%EA%B9%80%EC%84%B1%EC%9A%B1%20%EC%9A%B8%EC%82%B0%EC%8B%9C%EC%9E%A5%20%EB%8B%A8%EC%9D%BC%ED%99%94%20%EC%97%AC%EB%A1%A0%EC%A1%B0%EC%82%AC%20%EC%A4%91%EB%8B%A8%2C%20%EC%A1%B0%EC%A7%81%EC%A0%81%20%EA%B0%9C%EC%9E%85%EC%97%90%20%EC%9D%98%EC%8B%AC%20%EA%B4%80%EB%A0%A8%20%ED%8C%8C%EC%9E%A5%EC%9D%B4%20%ED%99%95%EC%82%B0%EB%90%98%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%5D&selected_max=88046.743394656&selected_min=0.0014516197"
+      "pubDate": "Tue, 26 May 2026 07:51:34 GMT",
+      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B%EA%B5%AD%EB%82%B4%20%EC%A0%95%EC%B9%98%EC%9D%B8%EC%9D%B4%20%EC%A3%BC%EC%9E%A5%ED%95%98%EB%8A%94%20%EC%BD%94%EC%8A%A4%ED%94%BC%205%2C000%20%EC%8B%9C%EB%8C%80%EB%8A%94%20%EC%8B%A4%ED%98%84%20%EB%B6%88%EA%B0%80%EB%8A%A5%ED%95%9C%20%EA%B5%AC%ED%98%B8%EC%9D%B4%EB%A9%B0%2C%20%EC%98%A4%ED%9E%88%EB%A0%A4%20%EB%B0%98%EC%8B%9C%EC%9E%A5%EC%A0%81%EC%9D%B8%20%EC%A0%95%EC%B1%85%20%EA%B8%B0%EC%A1%B0%EC%99%80%20%EB%8F%84%EB%8D%95%EC%84%B1%20%EB%85%BC%EB%9E%80%EC%9D%B4%20%EC%BD%94%EB%A6%AC%EC%95%84%20%EB%94%94%EC%8A%A4%EC%B9%B4%EC%9A%B4%ED%8A%B8%EB%A5%BC%20%EC%8B%AC%ED%99%94%EC%8B%9C%EC%BC%9C%20%EA%B0%9C%EC%9D%B8%20%ED%88%AC%EC%9E%90%EC%9E%90%EB%93%A4%EC%97%90%EA%B2%8C%20%ED%95%B4%EA%B0%80%20%EB%90%A0%20%EC%88%98%20%EC%9E%88%EB%8B%A4%EB%8A%94%20%EB%B9%84%ED%8C%90%EC%9D%B4%20%EC%A0%9C%EA%B8%B0%EB%90%98%EC%97%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%5D&selected_max=38922.3776204932&selected_min=0.0006337259"
     },
     {
-      "title": "[박민식은 단일화에 관련한 입장을 강조하며, 과정당과 보수당의 입장이 다르다고 주장했습니다. 관련 파장이 확산되고 있습니다.]",
-      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [박민식은 단일화에 관련한 입장을 강조하며, 과정당과 보수당의 입장이 다르다고 주장했습니다. 관련 파장이 확산되고 있습니다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
+      "title": "[코스피 8000 돌파 후 외국인의 리밸런싱 매각으로 환율이 상승하고 있으나, 삼성전자 등의 지분을 국내 투자자가 확보하여 향후 반도체 호황 시 이익을 얻을 수 있는 구조가 되었습니다.]",
+      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [코스피 8000 돌파 후 외국인의 리밸런싱 매각으로 환율이 상승하고 있으나, 삼성전자 등의 지분을 국내 투자자가 확보하여 향후 반도체 호황 시 이익을 얻을 수 있는 구조가 되었습니다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
       "category": "일반",
-      "pubDate": "Mon, 25 May 2026 23:56:04 GMT",
-      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B%EB%B0%95%EB%AF%BC%EC%8B%9D%EC%9D%80%20%EB%8B%A8%EC%9D%BC%ED%99%94%EC%97%90%20%EA%B4%80%EB%A0%A8%ED%95%9C%20%EC%9E%85%EC%9E%A5%EC%9D%84%20%EA%B0%95%EC%A1%B0%ED%95%98%EB%A9%B0%2C%20%EA%B3%BC%EC%A0%95%EB%8B%B9%EA%B3%BC%20%EB%B3%B4%EC%88%98%EB%8B%B9%EC%9D%98%20%EC%9E%85%EC%9E%A5%EC%9D%B4%20%EB%8B%A4%EB%A5%B4%EB%8B%A4%EA%B3%A0%20%EC%A3%BC%EC%9E%A5%ED%96%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%20%EA%B4%80%EB%A0%A8%20%ED%8C%8C%EC%9E%A5%EC%9D%B4%20%ED%99%95%EC%82%B0%EB%90%98%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%5D&selected_max=65071.6535331016&selected_min=0.0010722328"
+      "pubDate": "Tue, 26 May 2026 07:50:34 GMT",
+      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B%EC%BD%94%EC%8A%A4%ED%94%BC%208000%20%EB%8F%8C%ED%8C%8C%20%ED%9B%84%20%EC%99%B8%EA%B5%AD%EC%9D%B8%EC%9D%98%20%EB%A6%AC%EB%B0%B8%EB%9F%B0%EC%8B%B1%20%EB%A7%A4%EA%B0%81%EC%9C%BC%EB%A1%9C%20%ED%99%98%EC%9C%A8%EC%9D%B4%20%EC%83%81%EC%8A%B9%ED%95%98%EA%B3%A0%20%EC%9E%88%EC%9C%BC%EB%82%98%2C%20%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90%20%EB%93%B1%EC%9D%98%20%EC%A7%80%EB%B6%84%EC%9D%84%20%EA%B5%AD%EB%82%B4%20%ED%88%AC%EC%9E%90%EC%9E%90%EA%B0%80%20%ED%99%95%EB%B3%B4%ED%95%98%EC%97%AC%20%ED%96%A5%ED%9B%84%20%EB%B0%98%EB%8F%84%EC%B2%B4%20%ED%98%B8%ED%99%A9%20%EC%8B%9C%20%EC%9D%B4%EC%9D%B5%EC%9D%84%20%EC%96%BB%EC%9D%84%20%EC%88%98%20%EC%9E%88%EB%8A%94%20%EA%B5%AC%EC%A1%B0%EA%B0%80%20%EB%90%98%EC%97%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%5D&selected_max=43677.3906327076&selected_min=0.000716389"
     }
   ]
 }

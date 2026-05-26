@@ -1,11 +1,11 @@
 {
   "ok": true,
   "topic": "Chrome-based PC parts price collection source",
-  "collectedAt": "2026-05-26T11:46:27.967+09:00",
+  "collectedAt": "2026-05-26T17:10:22.009+09:00",
   "chromePath": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
   "searchEngine": "danawa",
-  "count": 189,
-  "previousCount": 189,
+  "count": 200,
+  "previousCount": 200,
   "batchSize": 3,
   "candidateStartIndex": 97,
   "candidateNextIndex": 97,
@@ -16,7 +16,7 @@
   "parts": [
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:31.369+09:00",
+      "updatedAt": "2026-05-26T17:08:07.398+09:00",
       "category": "CPU",
       "id": "cpu-amd-5-7500f",
       "name": "AMD 라이젠 5 7500F",
@@ -105,7 +105,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:31.373+09:00",
+      "updatedAt": "2026-05-26T17:08:07.408+09:00",
       "category": "CPU",
       "id": "cpu-amd-5-7600",
       "name": "AMD 라이젠 5 7600",
@@ -187,7 +187,7 @@
       "sourceUrl": "https://search.danawa.com/dsearch.php?k1=AMD%20%EB%9D%BC%EC%9D%B4%EC%A0%A0%205%207600%20%EC%B5%9C%EC%A0%80%EA%B0%80",
       "notes": "AMD 라이젠 5 7600은 가격과 성능, 플랫폼 호환성을 함께 확인할 CPU 후보입니다.",
       "textRepair": {
-        "checkedAt": "2026-05-26T11:43:31.373+09:00",
+        "checkedAt": "2026-05-26T17:08:07.408+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "notes"
@@ -200,7 +200,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:31.376+09:00",
+      "updatedAt": "2026-05-26T17:08:07.413+09:00",
       "category": "CPU",
       "id": "cpu-amd-5-9600x",
       "name": "AMD 라이젠 5 9600X",
@@ -289,7 +289,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:31.380+09:00",
+      "updatedAt": "2026-05-26T17:08:07.428+09:00",
       "category": "CPU",
       "id": "cpu-amd-7-7700",
       "name": "AMD 라이젠 7 7700",
@@ -371,7 +371,7 @@
       "sourceUrl": "https://search.danawa.com/dsearch.php?k1=AMD%20%EB%9D%BC%EC%9D%B4%EC%A0%A0%207%207700%20%EC%B5%9C%EC%A0%80%EA%B0%80",
       "notes": "AMD 라이젠 7 7700은 가격과 성능, 플랫폼 호환성을 함께 확인할 CPU 후보입니다.",
       "textRepair": {
-        "checkedAt": "2026-05-26T11:43:31.380+09:00",
+        "checkedAt": "2026-05-26T17:08:07.428+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "notes"
@@ -384,7 +384,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:31.383+09:00",
+      "updatedAt": "2026-05-26T17:08:07.439+09:00",
       "category": "CPU",
       "id": "cpu-amd-7-7700x",
       "name": "AMD 라이젠 7 7700X",
@@ -473,7 +473,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:31.386+09:00",
+      "updatedAt": "2026-05-26T17:08:07.447+09:00",
       "category": "CPU",
       "id": "cpu-amd-7-7800x3d",
       "name": "AMD 라이젠 7 7800X3D",
@@ -562,7 +562,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:31.389+09:00",
+      "updatedAt": "2026-05-26T17:08:07.456+09:00",
       "category": "CPU",
       "id": "cpu-amd-7-9700x",
       "name": "AMD 라이젠 7 9700X",
@@ -651,7 +651,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:31.392+09:00",
+      "updatedAt": "2026-05-26T17:08:07.461+09:00",
       "category": "CPU",
       "id": "cpu-amd-7-9800x3d",
       "name": "AMD 라이젠 7 9800X3D",
@@ -740,7 +740,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:31.395+09:00",
+      "updatedAt": "2026-05-26T17:08:07.474+09:00",
       "category": "CPU",
       "id": "cpu-amd-7-9850x3d",
       "name": "AMD 라이젠 7 9850X3D",
@@ -829,7 +829,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:31.398+09:00",
+      "updatedAt": "2026-05-26T17:08:07.480+09:00",
       "category": "CPU",
       "id": "cpu-amd-9-7950x3d",
       "name": "AMD 라이젠 9 7950X3D",
@@ -918,7 +918,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:31.402+09:00",
+      "updatedAt": "2026-05-26T17:08:07.494+09:00",
       "category": "CPU",
       "id": "cpu-amd-9-9900x",
       "name": "AMD 라이젠 9 9900X",
@@ -1008,7 +1008,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:31.406+09:00",
+      "updatedAt": "2026-05-26T17:08:07.500+09:00",
       "category": "CPU",
       "id": "cpu-amd-9-9950x",
       "name": "AMD 라이젠 9 9950X",
@@ -1098,7 +1098,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:31.409+09:00",
+      "updatedAt": "2026-05-26T17:08:07.513+09:00",
       "category": "CPU",
       "id": "cpu-ryzen-5-7500f",
       "name": "AMD Ryzen 5 7500F",
@@ -1187,7 +1187,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:31.414+09:00",
+      "updatedAt": "2026-05-26T17:08:07.522+09:00",
       "category": "CPU",
       "id": "cpu-ryzen-5-7600",
       "name": "AMD Ryzen 5 7600",
@@ -1270,7 +1270,7 @@
       "sourceUrl": "https://search.danawa.com/dsearch.php?k1=AMD%20Ryzen%205%207600%20price",
       "notes": "AMD Ryzen 5 7600은 가격과 성능, 플랫폼 호환성을 함께 확인할 CPU 후보입니다.",
       "textRepair": {
-        "checkedAt": "2026-05-26T11:43:31.414+09:00",
+        "checkedAt": "2026-05-26T17:08:07.522+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "speedLabel",
@@ -1284,7 +1284,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:31.417+09:00",
+      "updatedAt": "2026-05-26T17:08:07.528+09:00",
       "category": "CPU",
       "id": "cpu-ryzen-5-7600x",
       "name": "AMD Ryzen 5 7600X",
@@ -1373,7 +1373,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:31.420+09:00",
+      "updatedAt": "2026-05-26T17:08:07.533+09:00",
       "category": "CPU",
       "id": "cpu-ryzen-5-8600g",
       "name": "AMD Ryzen 5 8600G",
@@ -1462,7 +1462,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:31.423+09:00",
+      "updatedAt": "2026-05-26T17:08:07.542+09:00",
       "category": "CPU",
       "id": "cpu-ryzen-5-9600",
       "name": "AMD Ryzen 5 9600",
@@ -1545,7 +1545,7 @@
       "sourceUrl": "https://search.danawa.com/dsearch.php?k1=AMD%20Ryzen%205%209600%20price",
       "notes": "AMD Ryzen 5 9600은 가격과 성능, 플랫폼 호환성을 함께 확인할 CPU 후보입니다.",
       "textRepair": {
-        "checkedAt": "2026-05-26T11:43:31.423+09:00",
+        "checkedAt": "2026-05-26T17:08:07.542+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "speedLabel",
@@ -1559,7 +1559,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:31.427+09:00",
+      "updatedAt": "2026-05-26T17:08:07.547+09:00",
       "category": "CPU",
       "id": "cpu-amd-ryzen-5-9600x",
       "name": "AMD Ryzen 5 9600X",
@@ -1648,7 +1648,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:31.566+09:00",
+      "updatedAt": "2026-05-26T17:08:07.555+09:00",
       "category": "CPU",
       "id": "cpu-amd-ryzen-7-5700x3d",
       "name": "AMD Ryzen 7 5700X3D",
@@ -1737,7 +1737,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:31.593+09:00",
+      "updatedAt": "2026-05-26T17:08:07.560+09:00",
       "category": "CPU",
       "id": "cpu-ryzen-7-7700",
       "name": "AMD Ryzen 7 7700",
@@ -1820,7 +1820,7 @@
       "sourceUrl": "https://search.danawa.com/dsearch.php?k1=AMD%20Ryzen%207%207700%20price",
       "notes": "AMD Ryzen 7 7700은 가격과 성능, 플랫폼 호환성을 함께 확인할 CPU 후보입니다.",
       "textRepair": {
-        "checkedAt": "2026-05-26T11:43:31.593+09:00",
+        "checkedAt": "2026-05-26T17:08:07.560+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "speedLabel",
@@ -1834,7 +1834,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:31.596+09:00",
+      "updatedAt": "2026-05-26T17:08:07.565+09:00",
       "category": "CPU",
       "id": "cpu-amd-ryzen-7-7700x",
       "name": "AMD Ryzen 7 7700X",
@@ -1923,7 +1923,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:31.632+09:00",
+      "updatedAt": "2026-05-26T17:08:07.571+09:00",
       "category": "CPU",
       "id": "cpu-ryzen-7-7800x3d",
       "name": "AMD Ryzen 7 7800X3D",
@@ -2005,7 +2005,7 @@
       "sourceUrl": "https://search.danawa.com/dsearch.php?k1=AMD%20Ryzen%207%207800X3D%20price",
       "notes": "AMD Ryzen 7 7800X3D은 가격과 성능, 플랫폼 호환성을 함께 확인할 CPU 후보입니다.",
       "textRepair": {
-        "checkedAt": "2026-05-26T11:43:31.632+09:00",
+        "checkedAt": "2026-05-26T17:08:07.571+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "speedLabel",
@@ -2019,7 +2019,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:31.636+09:00",
+      "updatedAt": "2026-05-26T17:08:07.577+09:00",
       "category": "CPU",
       "id": "cpu-ryzen-7-8700g",
       "name": "AMD Ryzen 7 8700G",
@@ -2108,7 +2108,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:31.640+09:00",
+      "updatedAt": "2026-05-26T17:08:07.582+09:00",
       "category": "CPU",
       "id": "cpu-amd-ryzen-7-9600x",
       "name": "AMD Ryzen 7 9600X",
@@ -2190,7 +2190,7 @@
       "sourceUrl": "https://search.danawa.com/dsearch.php?k1=AMD%20Ryzen%207%209600X%20%EC%A0%95%ED%92%88%20%EC%B5%9C%EC%A0%80%EA%B0%80",
       "notes": "AMD Ryzen 7 9600X은 가격과 성능, 플랫폼 호환성을 함께 확인할 CPU 후보입니다.",
       "textRepair": {
-        "checkedAt": "2026-05-26T11:43:31.640+09:00",
+        "checkedAt": "2026-05-26T17:08:07.582+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "notes"
@@ -2203,7 +2203,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:31.644+09:00",
+      "updatedAt": "2026-05-26T17:08:07.592+09:00",
       "category": "CPU",
       "id": "cpu-ryzen-7-9700x",
       "name": "AMD Ryzen 7 9700X",
@@ -2286,7 +2286,7 @@
       "sourceUrl": "https://search.danawa.com/dsearch.php?k1=AMD%20Ryzen%207%209700X%20price",
       "notes": "AMD Ryzen 7 9700X은 가격과 성능, 플랫폼 호환성을 함께 확인할 CPU 후보입니다.",
       "textRepair": {
-        "checkedAt": "2026-05-26T11:43:31.644+09:00",
+        "checkedAt": "2026-05-26T17:08:07.592+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "speedLabel",
@@ -2300,7 +2300,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:31.648+09:00",
+      "updatedAt": "2026-05-26T17:08:07.597+09:00",
       "category": "CPU",
       "id": "cpu-ryzen-7-9800x3d",
       "name": "AMD Ryzen 7 9800X3D",
@@ -2389,7 +2389,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:31.651+09:00",
+      "updatedAt": "2026-05-26T17:08:07.601+09:00",
       "category": "CPU",
       "id": "cpu-ryzen-9-7900",
       "name": "AMD Ryzen 9 7900",
@@ -2478,7 +2478,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:31.654+09:00",
+      "updatedAt": "2026-05-26T17:08:07.609+09:00",
       "category": "CPU",
       "id": "cpu-amd-ryzen-9-7900x",
       "name": "AMD Ryzen 9 7900X",
@@ -2568,7 +2568,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:31.657+09:00",
+      "updatedAt": "2026-05-26T17:08:07.616+09:00",
       "category": "CPU",
       "id": "cpu-amd-ryzen-9-7900x3d",
       "name": "AMD Ryzen 9 7900X3D",
@@ -2657,7 +2657,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:31.662+09:00",
+      "updatedAt": "2026-05-26T17:08:07.623+09:00",
       "category": "CPU",
       "id": "cpu-ryzen-9-7950x",
       "name": "AMD Ryzen 9 7950X",
@@ -2747,7 +2747,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:31.664+09:00",
+      "updatedAt": "2026-05-26T17:08:07.630+09:00",
       "category": "CPU",
       "id": "cpu-amd-ryzen-9-7950x3d",
       "name": "AMD Ryzen 9 7950X3D",
@@ -2837,7 +2837,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:31.667+09:00",
+      "updatedAt": "2026-05-26T17:08:07.638+09:00",
       "category": "CPU",
       "id": "cpu-ryzen-9-9900x",
       "name": "AMD Ryzen 9 9900X",
@@ -2927,7 +2927,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:31.676+09:00",
+      "updatedAt": "2026-05-26T17:08:07.644+09:00",
       "category": "CPU",
       "id": "cpu-amd-ryzen-9-9900x3d",
       "name": "AMD Ryzen 9 9900X3D",
@@ -3017,7 +3017,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:31.680+09:00",
+      "updatedAt": "2026-05-26T17:08:07.649+09:00",
       "category": "CPU",
       "id": "cpu-ryzen-9-9950x",
       "name": "AMD Ryzen 9 9950X",
@@ -3107,7 +3107,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:31.684+09:00",
+      "updatedAt": "2026-05-26T17:08:07.655+09:00",
       "category": "CPU",
       "id": "cpu-amd-ryzen-9-9950x3d",
       "name": "AMD Ryzen 9 9950X3D",
@@ -3189,7 +3189,7 @@
       "sourceUrl": "https://search.danawa.com/dsearch.php?k1=AMD%20Ryzen%209%209950X%20%EC%B5%9C%EC%A0%80%EA%B0%80",
       "notes": "AMD Ryzen 9 9950X3D은 가격과 성능, 플랫폼 호환성을 함께 확인할 CPU 후보입니다.",
       "textRepair": {
-        "checkedAt": "2026-05-26T11:43:31.684+09:00",
+        "checkedAt": "2026-05-26T17:08:07.655+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "notes"
@@ -3202,7 +3202,96 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:31.686+09:00",
+      "updatedAt": "2026-05-26T17:08:07.659+09:00",
+      "category": "CPU",
+      "id": "cpu-intel-core-i3-14100",
+      "name": "Intel Core i3-14100",
+      "maker": "Intel",
+      "platform": "LGA1700",
+      "estimatedPriceKrw": 194400,
+      "priceBand": "15~30만원",
+      "speedLabel": "Up to 4.7GHz",
+      "speedMetric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "CPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      },
+      "unifiedSpeedScore": 100,
+      "performance": 35,
+      "valueIndex": 18,
+      "aiUseScore": 23,
+      "powerWatts": 60,
+      "tags": [
+        "office",
+        "budget"
+      ],
+      "nbDatabase": {
+        "schema": "pc-part-nb-database.v1",
+        "unit": "100~1000",
+        "priority": "speed-first",
+        "category": "CPU",
+        "partId": "cpu-intel-core-i3-14100",
+        "partName": "Intel Core i3-14100",
+        "speed": {
+          "score": 100,
+          "weight": 0.42,
+          "metric": {
+            "kind": "unknown",
+            "label": "속도 기준",
+            "value": null,
+            "unit": "",
+            "group": "CPU",
+            "compareNote": "부품군별 기준으로 비교해야 합니다."
+          }
+        },
+        "scores": {
+          "speed": 100,
+          "performance": 350,
+          "value": 240,
+          "aiFit": 230,
+          "priceEfficiency": 510,
+          "powerEfficiency": 194
+        },
+        "nbVector": [
+          100,
+          350,
+          240,
+          230,
+          510,
+          194
+        ],
+        "vectorLabels": [
+          "속도",
+          "성능",
+          "가성비",
+          "AI 적합",
+          "가격 효율",
+          "전력 효율"
+        ],
+        "nbMax": 212.288,
+        "nbMin": 426.698,
+        "weightedScore": 221,
+        "nbBand": "100~499",
+        "summary": "CPU Intel Core i3-14100 부품을 속도 중심 N/B 데이터베이스 점수 221점으로 저장했습니다."
+      },
+      "nbWeightedScore": 221,
+      "nbMax": 212.288,
+      "nbMin": 426.698,
+      "nbBand": "100~499",
+      "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Intel%20Core%20i3-14100%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+      "notes": "Raptor Lake Refresh",
+      "textRepair": null,
+      "sourceType": "collector",
+      "sourceQuery": "",
+      "collectedPricesKrw": [],
+      "targetMatched": null
+    },
+    {
+      "schema": "pc-part-nb-database-file.v1",
+      "updatedAt": "2026-05-26T17:08:07.663+09:00",
       "category": "CPU",
       "id": "cpu-intel-core-i5-13400f",
       "name": "Intel Core i5-13400F",
@@ -3291,7 +3380,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:31.713+09:00",
+      "updatedAt": "2026-05-26T17:08:07.667+09:00",
       "category": "CPU",
       "id": "cpu-intel-core-i5-13600k",
       "name": "Intel Core i5-13600K",
@@ -3380,7 +3469,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:31.718+09:00",
+      "updatedAt": "2026-05-26T17:08:07.672+09:00",
       "category": "CPU",
       "id": "cpu-intel-core-i5-13600kf",
       "name": "Intel Core i5-13600KF",
@@ -3469,7 +3558,96 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:31.721+09:00",
+      "updatedAt": "2026-05-26T17:08:07.676+09:00",
+      "category": "CPU",
+      "id": "cpu-intel-core-i5-14400",
+      "name": "Intel Core i5-14400",
+      "maker": "Intel",
+      "platform": "LGA1700",
+      "estimatedPriceKrw": 353000,
+      "priceBand": "30~60만원",
+      "speedLabel": "2.5GHz",
+      "speedMetric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "CPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      },
+      "unifiedSpeedScore": 100,
+      "performance": 65,
+      "valueIndex": 18.4,
+      "aiUseScore": 42,
+      "powerWatts": 65,
+      "tags": [
+        "mainstream",
+        "productivity"
+      ],
+      "nbDatabase": {
+        "schema": "pc-part-nb-database.v1",
+        "unit": "100~1000",
+        "priority": "speed-first",
+        "category": "CPU",
+        "partId": "cpu-intel-core-i5-14400",
+        "partName": "Intel Core i5-14400",
+        "speed": {
+          "score": 100,
+          "weight": 0.42,
+          "metric": {
+            "kind": "unknown",
+            "label": "속도 기준",
+            "value": null,
+            "unit": "",
+            "group": "CPU",
+            "compareNote": "부품군별 기준으로 비교해야 합니다."
+          }
+        },
+        "scores": {
+          "speed": 100,
+          "performance": 650,
+          "value": 245,
+          "aiFit": 420,
+          "priceEfficiency": 280,
+          "powerEfficiency": 333
+        },
+        "nbVector": [
+          100,
+          650,
+          245,
+          420,
+          280,
+          333
+        ],
+        "vectorLabels": [
+          "속도",
+          "성능",
+          "가성비",
+          "AI 적합",
+          "가격 효율",
+          "전력 효율"
+        ],
+        "nbMax": 227.067,
+        "nbMin": 399.013,
+        "weightedScore": 291,
+        "nbBand": "100~499",
+        "summary": "CPU Intel Core i5-14400 부품을 속도 중심 N/B 데이터베이스 점수 291점으로 저장했습니다."
+      },
+      "nbWeightedScore": 291,
+      "nbMax": 227.067,
+      "nbMin": 399.013,
+      "nbBand": "100~499",
+      "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Intel%20Core%20i5-14400%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+      "notes": "Raptor Lake Refresh",
+      "textRepair": null,
+      "sourceType": "collector",
+      "sourceQuery": "",
+      "collectedPricesKrw": [],
+      "targetMatched": null
+    },
+    {
+      "schema": "pc-part-nb-database-file.v1",
+      "updatedAt": "2026-05-26T17:08:07.680+09:00",
       "category": "CPU",
       "id": "cpu-core-i5-14400f",
       "name": "Intel Core i5-14400F",
@@ -3558,7 +3736,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:31.724+09:00",
+      "updatedAt": "2026-05-26T17:08:07.685+09:00",
       "category": "CPU",
       "id": "cpu-core-i5-14600k",
       "name": "Intel Core i5-14600K",
@@ -3647,7 +3825,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:31.728+09:00",
+      "updatedAt": "2026-05-26T17:08:07.689+09:00",
       "category": "CPU",
       "id": "cpu-intel-core-i7-13700f",
       "name": "Intel Core i7-13700F",
@@ -3736,7 +3914,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:31.732+09:00",
+      "updatedAt": "2026-05-26T17:08:07.693+09:00",
       "category": "CPU",
       "id": "cpu-intel-core-i7-13700k",
       "name": "Intel Core i7-13700K",
@@ -3825,7 +4003,96 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:31.736+09:00",
+      "updatedAt": "2026-05-26T17:08:07.697+09:00",
+      "category": "CPU",
+      "id": "cpu-intel-core-i7-14700f",
+      "name": "Intel Core i7-14700F",
+      "maker": "Intel",
+      "platform": "LGA1700",
+      "estimatedPriceKrw": 463400,
+      "priceBand": "30~60만원",
+      "speedLabel": "Up to 5.0 GHz",
+      "speedMetric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "CPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      },
+      "unifiedSpeedScore": 100,
+      "performance": 85,
+      "valueIndex": 18.3,
+      "aiUseScore": 55,
+      "powerWatts": 65,
+      "tags": [
+        "gaming",
+        "productivity"
+      ],
+      "nbDatabase": {
+        "schema": "pc-part-nb-database.v1",
+        "unit": "100~1000",
+        "priority": "speed-first",
+        "category": "CPU",
+        "partId": "cpu-intel-core-i7-14700f",
+        "partName": "Intel Core i7-14700F",
+        "speed": {
+          "score": 100,
+          "weight": 0.42,
+          "metric": {
+            "kind": "unknown",
+            "label": "속도 기준",
+            "value": null,
+            "unit": "",
+            "group": "CPU",
+            "compareNote": "부품군별 기준으로 비교해야 합니다."
+          }
+        },
+        "scores": {
+          "speed": 100,
+          "performance": 850,
+          "value": 244,
+          "aiFit": 550,
+          "priceEfficiency": 220,
+          "powerEfficiency": 436
+        },
+        "nbVector": [
+          100,
+          850,
+          244,
+          550,
+          220,
+          436
+        ],
+        "vectorLabels": [
+          "속도",
+          "성능",
+          "가성비",
+          "AI 적합",
+          "가격 효율",
+          "전력 효율"
+        ],
+        "nbMax": 198.275,
+        "nbMin": 368.314,
+        "weightedScore": 345,
+        "nbBand": "100~499",
+        "summary": "CPU Intel Core i7-14700F 부품을 속도 중심 N/B 데이터베이스 점수 345점으로 저장했습니다."
+      },
+      "nbWeightedScore": 345,
+      "nbMax": 198.275,
+      "nbMin": 368.314,
+      "nbBand": "100~499",
+      "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Intel%20Core%20i7-14700F%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+      "notes": "Raptor Lake Refresh, non-K version",
+      "textRepair": null,
+      "sourceType": "collector",
+      "sourceQuery": "",
+      "collectedPricesKrw": [],
+      "targetMatched": null
+    },
+    {
+      "schema": "pc-part-nb-database-file.v1",
+      "updatedAt": "2026-05-26T17:08:07.702+09:00",
       "category": "CPU",
       "id": "cpu-core-i7-14700k",
       "name": "Intel Core i7-14700K",
@@ -3914,7 +4181,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:31.740+09:00",
+      "updatedAt": "2026-05-26T17:08:07.706+09:00",
       "category": "CPU",
       "id": "cpu-intel-core-i7-14700kf",
       "name": "Intel Core i7-14700KF",
@@ -4003,7 +4270,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:31.743+09:00",
+      "updatedAt": "2026-05-26T17:08:07.711+09:00",
       "category": "CPU",
       "id": "cpu-intel-core-i9-13900k",
       "name": "Intel Core i9-13900K",
@@ -4093,7 +4360,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:31.747+09:00",
+      "updatedAt": "2026-05-26T17:08:07.716+09:00",
       "category": "CPU",
       "id": "cpu-intel-core-i9-14900k",
       "name": "Intel Core i9-14900K",
@@ -4183,7 +4450,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:31.751+09:00",
+      "updatedAt": "2026-05-26T17:08:07.720+09:00",
       "category": "CPU",
       "id": "cpu-intel-core-i9-14900kf",
       "name": "Intel Core i9-14900KF",
@@ -4273,7 +4540,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:31.754+09:00",
+      "updatedAt": "2026-05-26T17:08:07.724+09:00",
       "category": "CPU",
       "id": "cpu-intel-core-i9-14900ks",
       "name": "Intel Core i9-14900KS",
@@ -4363,7 +4630,96 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:31.758+09:00",
+      "updatedAt": "2026-05-26T17:08:07.728+09:00",
+      "category": "CPU",
+      "id": "cpu-intel-core-ultra-3-205",
+      "name": "Intel Core Ultra 3 205",
+      "maker": "Intel",
+      "platform": "LGA1851",
+      "estimatedPriceKrw": 250000,
+      "priceBand": "15~30만원",
+      "speedLabel": "Arrow Lake",
+      "speedMetric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "CPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      },
+      "unifiedSpeedScore": 100,
+      "performance": 30,
+      "valueIndex": 12,
+      "aiUseScore": 20,
+      "powerWatts": 65,
+      "tags": [
+        "office",
+        "entry"
+      ],
+      "nbDatabase": {
+        "schema": "pc-part-nb-database.v1",
+        "unit": "100~1000",
+        "priority": "speed-first",
+        "category": "CPU",
+        "partId": "cpu-intel-core-ultra-3-205",
+        "partName": "Intel Core Ultra 3 205",
+        "speed": {
+          "score": 100,
+          "weight": 0.42,
+          "metric": {
+            "kind": "unknown",
+            "label": "속도 기준",
+            "value": null,
+            "unit": "",
+            "group": "CPU",
+            "compareNote": "부품군별 기준으로 비교해야 합니다."
+          }
+        },
+        "scores": {
+          "speed": 100,
+          "performance": 300,
+          "value": 160,
+          "aiFit": 200,
+          "priceEfficiency": 400,
+          "powerEfficiency": 154
+        },
+        "nbVector": [
+          100,
+          300,
+          160,
+          200,
+          400,
+          154
+        ],
+        "vectorLabels": [
+          "속도",
+          "성능",
+          "가성비",
+          "AI 적합",
+          "가격 효율",
+          "전력 효율"
+        ],
+        "nbMax": 194.18,
+        "nbMin": 465.01,
+        "weightedScore": 186,
+        "nbBand": "100~499",
+        "summary": "CPU Intel Core Ultra 3 205 부품을 속도 중심 N/B 데이터베이스 점수 186점으로 저장했습니다."
+      },
+      "nbWeightedScore": 186,
+      "nbMax": 194.18,
+      "nbMin": 465.01,
+      "nbBand": "100~499",
+      "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Intel%20Core%20Ultra%203%20200%20series%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+      "notes": "Identified from Lenovo IdeaCentre Tower 08IAS10 specifications (Core Ultra 3 205 / Arrow Lake).",
+      "textRepair": null,
+      "sourceType": "collector",
+      "sourceQuery": "",
+      "collectedPricesKrw": [],
+      "targetMatched": null
+    },
+    {
+      "schema": "pc-part-nb-database-file.v1",
+      "updatedAt": "2026-05-26T17:08:07.732+09:00",
       "category": "CPU",
       "id": "cpu-intel-core-ultra-5-225",
       "name": "Intel Core Ultra 5 225",
@@ -4452,7 +4808,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:31.762+09:00",
+      "updatedAt": "2026-05-26T17:08:07.736+09:00",
       "category": "CPU",
       "id": "cpu-intel-core-ultra-5-225-f",
       "name": "Intel Core Ultra 5 225 F",
@@ -4541,7 +4897,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:31.766+09:00",
+      "updatedAt": "2026-05-26T17:08:07.740+09:00",
       "category": "CPU",
       "id": "cpu-intel-core-ultra-5-225f",
       "name": "Intel Core Ultra 5 225F",
@@ -4630,7 +4986,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:31.769+09:00",
+      "updatedAt": "2026-05-26T17:08:07.744+09:00",
       "category": "CPU",
       "id": "cpu-intel-core-ultra-5-225k",
       "name": "Intel Core Ultra 5 225K",
@@ -4719,7 +5075,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:31.773+09:00",
+      "updatedAt": "2026-05-26T17:08:07.748+09:00",
       "category": "CPU",
       "id": "cpu-core-ultra-5-245k",
       "name": "Intel Core Ultra 5 245K",
@@ -4801,7 +5157,7 @@
       "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Intel%20Core%20Ultra%205%20245K%20%EA%B0%80%EA%B2%A9",
       "notes": "Intel Core Ultra 5 245K은 가격과 성능, 플랫폼 호환성을 함께 확인할 CPU 후보입니다.",
       "textRepair": {
-        "checkedAt": "2026-05-26T11:43:31.773+09:00",
+        "checkedAt": "2026-05-26T17:08:07.748+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "speedLabel",
@@ -4815,7 +5171,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:31.778+09:00",
+      "updatedAt": "2026-05-26T17:08:07.752+09:00",
       "category": "CPU",
       "id": "cpu-core-ultra-5-245kf",
       "name": "Intel Core Ultra 5 245KF",
@@ -4904,7 +5260,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:31.782+09:00",
+      "updatedAt": "2026-05-26T17:08:07.757+09:00",
       "category": "CPU",
       "id": "cpu-intel-core-ultra-5-250k-plus",
       "name": "Intel Core Ultra 5 250K PLUS",
@@ -4986,7 +5342,7 @@
       "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Intel%20Core%20Ultra%20200S%20%EC%B5%9C%EC%A0%80%EA%B0%80",
       "notes": "Intel Core Ultra 5 250K PLUS은 가격과 성능, 플랫폼 호환성을 함께 확인할 CPU 후보입니다.",
       "textRepair": {
-        "checkedAt": "2026-05-26T11:43:31.782+09:00",
+        "checkedAt": "2026-05-26T17:08:07.757+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "notes"
@@ -4999,7 +5355,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:31.786+09:00",
+      "updatedAt": "2026-05-26T17:08:07.761+09:00",
       "category": "CPU",
       "id": "cpu-intel-core-ultra-7-265f",
       "name": "Intel Core Ultra 7 265F",
@@ -5088,7 +5444,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:31.790+09:00",
+      "updatedAt": "2026-05-26T17:08:07.765+09:00",
       "category": "CPU",
       "id": "cpu-core-ultra-7-265k",
       "name": "Intel Core Ultra 7 265K",
@@ -5171,7 +5527,7 @@
       "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Intel%20Core%20Ultra%207%20265K%20price",
       "notes": "Intel Core Ultra 7 265K은 가격과 성능, 플랫폼 호환성을 함께 확인할 CPU 후보입니다.",
       "textRepair": {
-        "checkedAt": "2026-05-26T11:43:31.790+09:00",
+        "checkedAt": "2026-05-26T17:08:07.765+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "speedLabel",
@@ -5185,7 +5541,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:31.794+09:00",
+      "updatedAt": "2026-05-26T17:08:07.769+09:00",
       "category": "CPU",
       "id": "cpu-core-ultra-7-265kf",
       "name": "Intel Core Ultra 7 265KF",
@@ -5274,7 +5630,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:31.799+09:00",
+      "updatedAt": "2026-05-26T17:08:07.775+09:00",
       "category": "CPU",
       "id": "cpu-core-ultra-9-285",
       "name": "Intel Core Ultra 9 285",
@@ -5363,7 +5719,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:31.805+09:00",
+      "updatedAt": "2026-05-26T17:08:07.778+09:00",
       "category": "CPU",
       "id": "cpu-core-ultra-9-285k",
       "name": "Intel Core Ultra 9 285K",
@@ -5453,7 +5809,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:31.811+09:00",
+      "updatedAt": "2026-05-26T17:08:07.782+09:00",
       "category": "CPU",
       "id": "cpu-intel-core-ultra-9-285kf",
       "name": "Intel Core Ultra 9 285KF",
@@ -5543,7 +5899,187 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:31.816+09:00",
+      "updatedAt": "2026-05-26T17:08:07.786+09:00",
+      "category": "CPU",
+      "id": "cpu-ryzen-9-7950x3d",
+      "name": "Ryzen 9 7950X3D",
+      "maker": "AMD",
+      "platform": "AM5",
+      "estimatedPriceKrw": 746700,
+      "priceBand": "60만원 이상",
+      "speedLabel": "4.2GHz",
+      "speedMetric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "CPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      },
+      "unifiedSpeedScore": 100,
+      "performance": 95,
+      "valueIndex": 12.7,
+      "aiUseScore": 62,
+      "powerWatts": 120,
+      "tags": [
+        "gaming",
+        "productivity",
+        "3D V-Cache"
+      ],
+      "nbDatabase": {
+        "schema": "pc-part-nb-database.v1",
+        "unit": "100~1000",
+        "priority": "speed-first",
+        "category": "CPU",
+        "partId": "cpu-ryzen-9-7950x3d",
+        "partName": "Ryzen 9 7950X3D",
+        "speed": {
+          "score": 100,
+          "weight": 0.42,
+          "metric": {
+            "kind": "unknown",
+            "label": "속도 기준",
+            "value": null,
+            "unit": "",
+            "group": "CPU",
+            "compareNote": "부품군별 기준으로 비교해야 합니다."
+          }
+        },
+        "scores": {
+          "speed": 100,
+          "performance": 950,
+          "value": 169,
+          "aiFit": 620,
+          "priceEfficiency": 130,
+          "powerEfficiency": 264
+        },
+        "nbVector": [
+          100,
+          950,
+          169,
+          620,
+          130,
+          264
+        ],
+        "vectorLabels": [
+          "속도",
+          "성능",
+          "가성비",
+          "AI 적합",
+          "가격 효율",
+          "전력 효율"
+        ],
+        "nbMax": 133.719,
+        "nbMin": 337.953,
+        "weightedScore": 344,
+        "nbBand": "100~499",
+        "summary": "CPU Ryzen 9 7950X3D 부품을 속도 중심 N/B 데이터베이스 점수 344점으로 저장했습니다."
+      },
+      "nbWeightedScore": 344,
+      "nbMax": 133.719,
+      "nbMin": 337.953,
+      "nbBand": "100~499",
+      "sourceUrl": "https://search.danawa.com/dsearch.php?k1=AMD%20Ryzen%209%207950X3D%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+      "notes": "Multi-pack version observed at 746,700 KRW",
+      "textRepair": null,
+      "sourceType": "collector",
+      "sourceQuery": "",
+      "collectedPricesKrw": [],
+      "targetMatched": null
+    },
+    {
+      "schema": "pc-part-nb-database-file.v1",
+      "updatedAt": "2026-05-26T17:08:07.790+09:00",
+      "category": "CPU",
+      "id": "cpu-ryzen-9-9950x3d",
+      "name": "Ryzen 9 9950X3D",
+      "maker": "AMD",
+      "platform": "AM5",
+      "estimatedPriceKrw": 1390000,
+      "priceBand": "60만원 이상",
+      "speedLabel": "5.7GHz",
+      "speedMetric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "CPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      },
+      "unifiedSpeedScore": 100,
+      "performance": 99,
+      "valueIndex": 7.1,
+      "aiUseScore": 64,
+      "powerWatts": 170,
+      "tags": [
+        "gaming",
+        "workstation",
+        "high-end"
+      ],
+      "nbDatabase": {
+        "schema": "pc-part-nb-database.v1",
+        "unit": "100~1000",
+        "priority": "speed-first",
+        "category": "CPU",
+        "partId": "cpu-ryzen-9-9950x3d",
+        "partName": "Ryzen 9 9950X3D",
+        "speed": {
+          "score": 100,
+          "weight": 0.42,
+          "metric": {
+            "kind": "unknown",
+            "label": "속도 기준",
+            "value": null,
+            "unit": "",
+            "group": "CPU",
+            "compareNote": "부품군별 기준으로 비교해야 합니다."
+          }
+        },
+        "scores": {
+          "speed": 100,
+          "performance": 990,
+          "value": 100,
+          "aiFit": 640,
+          "priceEfficiency": 70,
+          "powerEfficiency": 194
+        },
+        "nbVector": [
+          100,
+          990,
+          100,
+          640,
+          70,
+          194
+        ],
+        "vectorLabels": [
+          "속도",
+          "성능",
+          "가성비",
+          "AI 적합",
+          "가격 효율",
+          "전력 효율"
+        ],
+        "nbMax": 118.684,
+        "nbMin": 305.757,
+        "weightedScore": 335,
+        "nbBand": "100~499",
+        "summary": "CPU Ryzen 9 9950X3D 부품을 속도 중심 N/B 데이터베이스 점수 335점으로 저장했습니다."
+      },
+      "nbWeightedScore": 335,
+      "nbMax": 118.684,
+      "nbMin": 305.757,
+      "nbBand": "100~499",
+      "sourceUrl": "https://search.danawa.com/dsearch.php?k1=AMD%20Ryzen%209%209950X3D%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+      "notes": "16-core, 32-thread processor with 3D V-Cache.",
+      "textRepair": null,
+      "sourceType": "collector",
+      "sourceQuery": "",
+      "collectedPricesKrw": [],
+      "targetMatched": null
+    },
+    {
+      "schema": "pc-part-nb-database-file.v1",
+      "updatedAt": "2026-05-26T17:08:07.794+09:00",
       "category": "GPU",
       "id": "gpu-rx-7600",
       "name": "AMD Radeon RX 7600",
@@ -5632,7 +6168,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:31.821+09:00",
+      "updatedAt": "2026-05-26T17:08:07.797+09:00",
       "category": "GPU",
       "id": "gpu-rx-7600-xt",
       "name": "AMD Radeon RX 7600 XT",
@@ -5721,7 +6257,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:31.825+09:00",
+      "updatedAt": "2026-05-26T17:08:07.801+09:00",
       "category": "GPU",
       "id": "gpu-rx-7700-xt",
       "name": "AMD Radeon RX 7700 XT",
@@ -5803,7 +6339,7 @@
       "sourceUrl": "https://search.danawa.com/dsearch.php?k1=AMD%20Radeon%20RX%207700%20XT%20%EA%B0%80%EA%B2%A9",
       "notes": "AMD Radeon RX 7700 XT은 게임, 작업, AI 활용을 함께 검토할 그래픽카드 후보입니다.",
       "textRepair": {
-        "checkedAt": "2026-05-26T11:43:31.825+09:00",
+        "checkedAt": "2026-05-26T17:08:07.801+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "speedLabel",
@@ -5817,7 +6353,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:31.830+09:00",
+      "updatedAt": "2026-05-26T17:08:07.805+09:00",
       "category": "GPU",
       "id": "gpu-rx-7800-xt",
       "name": "AMD Radeon RX 7800 XT",
@@ -5900,7 +6436,7 @@
       "sourceUrl": "https://search.danawa.com/dsearch.php?k1=AMD%20Radeon%20RX%207800%20XT%20price",
       "notes": "AMD Radeon RX 7800 XT은 게임, 작업, AI 활용을 함께 검토할 그래픽카드 후보입니다.",
       "textRepair": {
-        "checkedAt": "2026-05-26T11:43:31.830+09:00",
+        "checkedAt": "2026-05-26T17:08:07.805+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "speedLabel",
@@ -5914,7 +6450,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:31.863+09:00",
+      "updatedAt": "2026-05-26T17:08:07.809+09:00",
       "category": "GPU",
       "id": "gpu-rx-7900-gre",
       "name": "AMD Radeon RX 7900 GRE",
@@ -6003,7 +6539,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:31.867+09:00",
+      "updatedAt": "2026-05-26T17:08:07.813+09:00",
       "category": "GPU",
       "id": "gpu-amd-radeon-rx-7900-xt",
       "name": "AMD Radeon RX 7900 XT",
@@ -6092,7 +6628,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:31.870+09:00",
+      "updatedAt": "2026-05-26T17:08:07.816+09:00",
       "category": "GPU",
       "id": "gpu-rx-7900-xtx",
       "name": "AMD Radeon RX 7900 XTX",
@@ -6182,7 +6718,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:31.874+09:00",
+      "updatedAt": "2026-05-26T17:08:07.821+09:00",
       "category": "GPU",
       "id": "gpu-rx-9060-xt",
       "name": "AMD Radeon RX 9060 XT",
@@ -6264,7 +6800,7 @@
       "sourceUrl": "https://search.danawa.com/dsearch.php?k1=AMD%20Radeon%20RX%209060%20XT%20price",
       "notes": "AMD Radeon RX 9060 XT은 게임, 작업, AI 활용을 함께 검토할 그래픽카드 후보입니다.",
       "textRepair": {
-        "checkedAt": "2026-05-26T11:43:31.874+09:00",
+        "checkedAt": "2026-05-26T17:08:07.821+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "speedLabel",
@@ -6278,7 +6814,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:31.877+09:00",
+      "updatedAt": "2026-05-26T17:08:07.825+09:00",
       "category": "GPU",
       "id": "gpu-rx-9070",
       "name": "AMD Radeon RX 9070",
@@ -6367,7 +6903,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:31.881+09:00",
+      "updatedAt": "2026-05-26T17:08:07.830+09:00",
       "category": "GPU",
       "id": "gpu-rx-9070-xt",
       "name": "AMD Radeon RX 9070 XT",
@@ -6457,7 +6993,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:31.884+09:00",
+      "updatedAt": "2026-05-26T17:08:07.834+09:00",
       "category": "GPU",
       "id": "gpu-rtx-4060",
       "name": "NVIDIA GeForce RTX 4060",
@@ -6546,7 +7082,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:31.887+09:00",
+      "updatedAt": "2026-05-26T17:08:07.840+09:00",
       "category": "GPU",
       "id": "gpu-rtx-4060-ti-16gb",
       "name": "NVIDIA GeForce RTX 4060 Ti 16GB",
@@ -6635,7 +7171,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:31.891+09:00",
+      "updatedAt": "2026-05-26T17:08:07.844+09:00",
       "category": "GPU",
       "id": "gpu-rtx-4070",
       "name": "NVIDIA GeForce RTX 4070",
@@ -6724,7 +7260,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:31.894+09:00",
+      "updatedAt": "2026-05-26T17:08:07.848+09:00",
       "category": "GPU",
       "id": "gpu-rtx-4070-super",
       "name": "NVIDIA GeForce RTX 4070 SUPER",
@@ -6807,7 +7343,7 @@
       "sourceUrl": "https://search.danawa.com/dsearch.php?k1=NVIDIA%20GeForce%20RTX%204070%20SUPER%20%EA%B0%80%EA%B2%A9",
       "notes": "NVIDIA GeForce RTX 4070 SUPER은 게임, 작업, AI 활용을 함께 검토할 그래픽카드 후보입니다.",
       "textRepair": {
-        "checkedAt": "2026-05-26T11:43:31.894+09:00",
+        "checkedAt": "2026-05-26T17:08:07.848+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "speedLabel",
@@ -6821,7 +7357,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:31.897+09:00",
+      "updatedAt": "2026-05-26T17:08:07.857+09:00",
       "category": "GPU",
       "id": "gpu-rtx-4070-ti-super",
       "name": "NVIDIA GeForce RTX 4070 Ti SUPER",
@@ -6910,7 +7446,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:31.901+09:00",
+      "updatedAt": "2026-05-26T17:08:07.862+09:00",
       "category": "GPU",
       "id": "gpu-rtx-4080-super",
       "name": "NVIDIA GeForce RTX 4080 SUPER",
@@ -7000,7 +7536,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:31.905+09:00",
+      "updatedAt": "2026-05-26T17:08:07.866+09:00",
       "category": "GPU",
       "id": "gpu-rtx-5060",
       "name": "NVIDIA GeForce RTX 5060",
@@ -7089,7 +7625,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:31.908+09:00",
+      "updatedAt": "2026-05-26T17:08:07.870+09:00",
       "category": "GPU",
       "id": "gpu-rtx-5060-ti",
       "name": "NVIDIA GeForce RTX 5060 Ti",
@@ -7172,7 +7708,7 @@
       "sourceUrl": "https://search.danawa.com/dsearch.php?k1=NVIDIA%20GeForce%20RTX%205060%20Ti%20price",
       "notes": "NVIDIA GeForce RTX 5060 Ti은 게임, 작업, AI 활용을 함께 검토할 그래픽카드 후보입니다.",
       "textRepair": {
-        "checkedAt": "2026-05-26T11:43:31.908+09:00",
+        "checkedAt": "2026-05-26T17:08:07.870+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "speedLabel",
@@ -7186,7 +7722,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:31.911+09:00",
+      "updatedAt": "2026-05-26T17:08:07.874+09:00",
       "category": "GPU",
       "id": "gpu-rtx-5060-ti-8gb",
       "name": "NVIDIA GeForce RTX 5060 Ti 8GB",
@@ -7275,7 +7811,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:31.914+09:00",
+      "updatedAt": "2026-05-26T17:08:07.879+09:00",
       "category": "GPU",
       "id": "gpu-rtx-5070",
       "name": "NVIDIA GeForce RTX 5070",
@@ -7358,7 +7894,7 @@
       "sourceUrl": "https://search.danawa.com/dsearch.php?k1=NVIDIA%20GeForce%20RTX%205070%20price",
       "notes": "NVIDIA GeForce RTX 5070은 게임, 작업, AI 활용을 함께 검토할 그래픽카드 후보입니다.",
       "textRepair": {
-        "checkedAt": "2026-05-26T11:43:31.914+09:00",
+        "checkedAt": "2026-05-26T17:08:07.878+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "speedLabel",
@@ -7372,7 +7908,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:31.918+09:00",
+      "updatedAt": "2026-05-26T17:08:07.882+09:00",
       "category": "GPU",
       "id": "gpu-rtx-5070-ti",
       "name": "NVIDIA GeForce RTX 5070 Ti",
@@ -7455,7 +7991,7 @@
       "sourceUrl": "https://search.danawa.com/dsearch.php?k1=NVIDIA%20GeForce%20RTX%205070%20Ti%20price",
       "notes": "NVIDIA GeForce RTX 5070 Ti은 게임, 작업, AI 활용을 함께 검토할 그래픽카드 후보입니다.",
       "textRepair": {
-        "checkedAt": "2026-05-26T11:43:31.918+09:00",
+        "checkedAt": "2026-05-26T17:08:07.882+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "speedLabel",
@@ -7469,7 +8005,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:31.923+09:00",
+      "updatedAt": "2026-05-26T17:08:07.891+09:00",
       "category": "GPU",
       "id": "gpu-rtx-5080",
       "name": "NVIDIA GeForce RTX 5080",
@@ -7560,7 +8096,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:31.926+09:00",
+      "updatedAt": "2026-05-26T17:08:07.896+09:00",
       "category": "GPU",
       "id": "gpu-rtx-5090",
       "name": "NVIDIA GeForce RTX 5090",
@@ -7650,7 +8186,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:31.930+09:00",
+      "updatedAt": "2026-05-26T17:08:07.900+09:00",
       "category": "Mainboard",
       "id": "mb-am5-a620",
       "name": "AM5 A620 Mainboard",
@@ -7739,7 +8275,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:31.948+09:00",
+      "updatedAt": "2026-05-26T17:08:07.905+09:00",
       "category": "Mainboard",
       "id": "mb-am5-b650",
       "name": "AM5 B650 Mainboard",
@@ -7822,7 +8358,7 @@
       "sourceUrl": "https://search.danawa.com/dsearch.php?k1=AM5%20B650%20Mainboard%20price",
       "notes": "AM5 B650 Mainboard은 CPU 소켓, 메모리 규격, 확장성을 함께 확인할 메인보드 후보입니다.",
       "textRepair": {
-        "checkedAt": "2026-05-26T11:43:31.948+09:00",
+        "checkedAt": "2026-05-26T17:08:07.905+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "speedLabel",
@@ -7836,7 +8372,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:31.952+09:00",
+      "updatedAt": "2026-05-26T17:08:07.909+09:00",
       "category": "Mainboard",
       "id": "mb-am5-b650e",
       "name": "AM5 B650E Mainboard",
@@ -7925,7 +8461,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:31.956+09:00",
+      "updatedAt": "2026-05-26T17:08:07.913+09:00",
       "category": "Mainboard",
       "id": "mb-am5-b850",
       "name": "AM5 B850 Mainboard",
@@ -8008,7 +8544,7 @@
       "sourceUrl": "https://search.danawa.com/dsearch.php?k1=AM5%20B850%20Mainboard%20price",
       "notes": "AM5 B850 Mainboard은 CPU 소켓, 메모리 규격, 확장성을 함께 확인할 메인보드 후보입니다.",
       "textRepair": {
-        "checkedAt": "2026-05-26T11:43:31.956+09:00",
+        "checkedAt": "2026-05-26T17:08:07.913+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "speedLabel",
@@ -8022,7 +8558,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:31.959+09:00",
+      "updatedAt": "2026-05-26T17:08:07.917+09:00",
       "category": "Mainboard",
       "id": "mb-am5-x670e",
       "name": "AM5 X670E Mainboard",
@@ -8111,7 +8647,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:31.977+09:00",
+      "updatedAt": "2026-05-26T17:08:07.925+09:00",
       "category": "Mainboard",
       "id": "mb-am5-x870",
       "name": "AM5 X870 Mainboard",
@@ -8201,7 +8737,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:31.980+09:00",
+      "updatedAt": "2026-05-26T17:08:07.931+09:00",
       "category": "Mainboard",
       "id": "mb-am5-x870e",
       "name": "AM5 X870E Mainboard",
@@ -8291,7 +8827,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:31.984+09:00",
+      "updatedAt": "2026-05-26T17:08:07.937+09:00",
       "category": "Mainboard",
       "id": "mainboard-asrock-b650-steel-legend-wifi",
       "name": "ASRock B650 Steel Legend WiFi",
@@ -8380,7 +8916,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:31.989+09:00",
+      "updatedAt": "2026-05-26T17:08:07.943+09:00",
       "category": "Mainboard",
       "id": "mainboard-asrock-x870e-taichi",
       "name": "ASRock X870E Taichi",
@@ -8469,7 +9005,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:31.992+09:00",
+      "updatedAt": "2026-05-26T17:08:07.953+09:00",
       "category": "Mainboard",
       "id": "mainboard-asrock-z890-taichi",
       "name": "ASRock Z890 Taichi",
@@ -8558,7 +9094,97 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:32.081+09:00",
+      "updatedAt": "2026-05-26T17:08:07.962+09:00",
+      "category": "Mainboard",
+      "id": "mainboard-asus-rog-crosshair-x870e-dark-hero",
+      "name": "ASUS ROG CROSSHAIR X870E DARK HERO",
+      "maker": "ASUS",
+      "platform": "AM5",
+      "estimatedPriceKrw": 1087110,
+      "priceBand": "60만원 이상",
+      "speedLabel": "DDR5 8600MHz",
+      "speedMetric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "Mainboard",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      },
+      "unifiedSpeedScore": 100,
+      "performance": 100,
+      "valueIndex": 9.2,
+      "aiUseScore": 65,
+      "powerWatts": 0,
+      "tags": [
+        "high-end",
+        "overclocking",
+        "X870E"
+      ],
+      "nbDatabase": {
+        "schema": "pc-part-nb-database.v1",
+        "unit": "100~1000",
+        "priority": "speed-first",
+        "category": "Mainboard",
+        "partId": "mainboard-asus-rog-crosshair-x870e-dark-hero",
+        "partName": "ASUS ROG CROSSHAIR X870E DARK HERO",
+        "speed": {
+          "score": 100,
+          "weight": 0.32,
+          "metric": {
+            "kind": "unknown",
+            "label": "속도 기준",
+            "value": null,
+            "unit": "",
+            "group": "Mainboard",
+            "compareNote": "부품군별 기준으로 비교해야 합니다."
+          }
+        },
+        "scores": {
+          "speed": 100,
+          "performance": 1000,
+          "value": 123,
+          "aiFit": 650,
+          "priceEfficiency": 90,
+          "powerEfficiency": 1000
+        },
+        "nbVector": [
+          100,
+          1000,
+          123,
+          650,
+          90,
+          1000
+        ],
+        "vectorLabels": [
+          "속도",
+          "성능",
+          "가성비",
+          "AI 적합",
+          "가격 효율",
+          "전력 효율"
+        ],
+        "nbMax": 238.028,
+        "nbMin": 356.548,
+        "weightedScore": 381,
+        "nbBand": "100~499",
+        "summary": "Mainboard ASUS ROG CROSSHAIR X870E DARK HERO 부품을 속도 중심 N/B 데이터베이스 점수 381점으로 저장했습니다."
+      },
+      "nbWeightedScore": 381,
+      "nbMax": 238.028,
+      "nbMin": 356.548,
+      "nbBand": "100~499",
+      "sourceUrl": "https://search.danawa.com/dsearch.php?k1=ASUS%20ROG%20Crosshair%20X870E%20Hero%20%EA%B0%80%EA%B2%A9",
+      "notes": "High-end AM5 motherboard with 20+2+2 phase power delivery and USB4 support.",
+      "textRepair": null,
+      "sourceType": "collector",
+      "sourceQuery": "",
+      "collectedPricesKrw": [],
+      "targetMatched": null
+    },
+    {
+      "schema": "pc-part-nb-database-file.v1",
+      "updatedAt": "2026-05-26T17:08:07.967+09:00",
       "category": "Mainboard",
       "id": "mainboard-asus-rog-strix-b860-f-gaming-wifi",
       "name": "ASUS ROG STRIX B860-F GAMING WIFI",
@@ -8647,7 +9273,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:32.084+09:00",
+      "updatedAt": "2026-05-26T17:08:07.978+09:00",
       "category": "Mainboard",
       "id": "mainboard-asus-rog-strix-x870-f-gaming-wifi",
       "name": "ASUS ROG STRIX X870-F GAMING WIFI",
@@ -8737,7 +9363,97 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:32.087+09:00",
+      "updatedAt": "2026-05-26T17:08:07.996+09:00",
+      "category": "Mainboard",
+      "id": "mainboard-asus-rog-strix-x870e-e-gaming-wifi-7-neo",
+      "name": "ASUS ROG STRIX X870E-E GAMING WIFI 7 NEO",
+      "maker": "ASUS",
+      "platform": "AMD AM5",
+      "estimatedPriceKrw": 950000,
+      "priceBand": "60만원 이상",
+      "speedLabel": "DDR5 9600MHz",
+      "speedMetric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "Mainboard",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      },
+      "unifiedSpeedScore": 100,
+      "performance": 95,
+      "valueIndex": 10,
+      "aiUseScore": 62,
+      "powerWatts": 0,
+      "tags": [
+        "high-end",
+        "wifi7",
+        "am5"
+      ],
+      "nbDatabase": {
+        "schema": "pc-part-nb-database.v1",
+        "unit": "100~1000",
+        "priority": "speed-first",
+        "category": "Mainboard",
+        "partId": "mainboard-asus-rog-strix-x870e-e-gaming-wifi-7-neo",
+        "partName": "ASUS ROG STRIX X870E-E GAMING WIFI 7 NEO",
+        "speed": {
+          "score": 100,
+          "weight": 0.32,
+          "metric": {
+            "kind": "unknown",
+            "label": "속도 기준",
+            "value": null,
+            "unit": "",
+            "group": "Mainboard",
+            "compareNote": "부품군별 기준으로 비교해야 합니다."
+          }
+        },
+        "scores": {
+          "speed": 100,
+          "performance": 950,
+          "value": 133,
+          "aiFit": 620,
+          "priceEfficiency": 110,
+          "powerEfficiency": 950
+        },
+        "nbVector": [
+          100,
+          950,
+          133,
+          620,
+          110,
+          950
+        ],
+        "vectorLabels": [
+          "속도",
+          "성능",
+          "가성비",
+          "AI 적합",
+          "가격 효율",
+          "전력 효율"
+        ],
+        "nbMax": 238.081,
+        "nbMin": 366.665,
+        "weightedScore": 368,
+        "nbBand": "100~499",
+        "summary": "Mainboard ASUS ROG STRIX X870E-E GAMING WIFI 7 NEO 부품을 속도 중심 N/B 데이터베이스 점수 368점으로 저장했습니다."
+      },
+      "nbWeightedScore": 368,
+      "nbMax": 238.081,
+      "nbMin": 366.665,
+      "nbBand": "100~499",
+      "sourceUrl": "https://search.danawa.com/dsearch.php?k1=ASUS%20ROG%20STRIX%20X870E-E%20GAMING%20WIFI%20%EA%B0%80%EA%B2%A9",
+      "notes": "Different model from the standard X870E-E (NEO variant). Supports DDR5 up to 9600MHz.",
+      "textRepair": null,
+      "sourceType": "collector",
+      "sourceQuery": "",
+      "collectedPricesKrw": [],
+      "targetMatched": null
+    },
+    {
+      "schema": "pc-part-nb-database-file.v1",
+      "updatedAt": "2026-05-26T17:08:08.004+09:00",
       "category": "Mainboard",
       "id": "mainboard-asus-rog-strix-z890-e-gaming-wifi",
       "name": "ASUS ROG STRIX Z890-E GAMING WIFI",
@@ -8827,7 +9543,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:32.091+09:00",
+      "updatedAt": "2026-05-26T17:08:08.011+09:00",
       "category": "Mainboard",
       "id": "mainboard-gigabyte-b860m-aorus-elite-wifi6e",
       "name": "GIGABYTE B860M AORUS ELITE WIFI6E",
@@ -8917,7 +9633,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:32.095+09:00",
+      "updatedAt": "2026-05-26T17:08:08.016+09:00",
       "category": "Mainboard",
       "id": "mainboard-gigabyte-b860m-gaming-x",
       "name": "GIGABYTE B860M GAMING X",
@@ -9006,7 +9722,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:32.098+09:00",
+      "updatedAt": "2026-05-26T17:08:08.021+09:00",
       "category": "Mainboard",
       "id": "mainboard-gigabyte-z890-aorus-elite-wifi-7",
       "name": "Gigabyte Z890 AORUS ELITE WIFI 7",
@@ -9096,7 +9812,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:32.101+09:00",
+      "updatedAt": "2026-05-26T17:08:08.029+09:00",
       "category": "Mainboard",
       "id": "mb-lga1700-b760",
       "name": "LGA1700 B760 Mainboard",
@@ -9185,7 +9901,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:32.113+09:00",
+      "updatedAt": "2026-05-26T17:08:08.034+09:00",
       "category": "Mainboard",
       "id": "mb-lga1700-z790",
       "name": "LGA1700 Z790 Mainboard",
@@ -9274,7 +9990,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:32.116+09:00",
+      "updatedAt": "2026-05-26T17:08:08.039+09:00",
       "category": "Mainboard",
       "id": "mb-lga1851-b860",
       "name": "LGA1851 B860 Mainboard",
@@ -9356,7 +10072,7 @@
       "sourceUrl": "https://search.danawa.com/dsearch.php?k1=LGA1851%20B860%20Mainboard%20price",
       "notes": "LGA1851 B860 Mainboard은 CPU 소켓, 메모리 규격, 확장성을 함께 확인할 메인보드 후보입니다.",
       "textRepair": {
-        "checkedAt": "2026-05-26T11:43:32.116+09:00",
+        "checkedAt": "2026-05-26T17:08:08.039+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "speedLabel",
@@ -9370,7 +10086,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:32.119+09:00",
+      "updatedAt": "2026-05-26T17:08:08.045+09:00",
       "category": "Mainboard",
       "id": "mb-lga1851-b860m",
       "name": "LGA1851 B860M Mainboard",
@@ -9459,7 +10175,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:32.122+09:00",
+      "updatedAt": "2026-05-26T17:08:08.052+09:00",
       "category": "Mainboard",
       "id": "mb-lga1851-h810",
       "name": "LGA1851 H810 Mainboard",
@@ -9548,7 +10264,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:32.135+09:00",
+      "updatedAt": "2026-05-26T17:08:08.065+09:00",
       "category": "Mainboard",
       "id": "mb-lga1851-z890-ai",
       "name": "LGA1851 Z890 AI Mainboard",
@@ -9638,7 +10354,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:32.138+09:00",
+      "updatedAt": "2026-05-26T17:08:08.097+09:00",
       "category": "Mainboard",
       "id": "mb-lga1851-z890",
       "name": "LGA1851 Z890 Mainboard",
@@ -9721,7 +10437,7 @@
       "sourceUrl": "https://search.danawa.com/dsearch.php?k1=LGA1851%20Z890%20Mainboard%20price",
       "notes": "LGA1851 Z890 Mainboard은 CPU 소켓, 메모리 규격, 확장성을 함께 확인할 메인보드 후보입니다.",
       "textRepair": {
-        "checkedAt": "2026-05-26T11:43:32.138+09:00",
+        "checkedAt": "2026-05-26T17:08:08.097+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "speedLabel",
@@ -9735,7 +10451,97 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:32.142+09:00",
+      "updatedAt": "2026-05-26T17:08:08.113+09:00",
+      "category": "Mainboard",
+      "id": "mainboard-mag-b860m-mortar-wifi",
+      "name": "MAG B860M Mortar WIFI",
+      "maker": "MSI",
+      "platform": "LGA1851",
+      "estimatedPriceKrw": 272480,
+      "priceBand": "15~30만원",
+      "speedLabel": "B860",
+      "speedMetric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "Mainboard",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      },
+      "unifiedSpeedScore": 100,
+      "performance": 75,
+      "valueIndex": 27.5,
+      "aiUseScore": 49,
+      "powerWatts": 0,
+      "tags": [
+        "mATX",
+        "DDR5",
+        "WiFi"
+      ],
+      "nbDatabase": {
+        "schema": "pc-part-nb-database.v1",
+        "unit": "100~1000",
+        "priority": "speed-first",
+        "category": "Mainboard",
+        "partId": "mainboard-mag-b860m-mortar-wifi",
+        "partName": "MAG B860M Mortar WIFI",
+        "speed": {
+          "score": 100,
+          "weight": 0.32,
+          "metric": {
+            "kind": "unknown",
+            "label": "속도 기준",
+            "value": null,
+            "unit": "",
+            "group": "Mainboard",
+            "compareNote": "부품군별 기준으로 비교해야 합니다."
+          }
+        },
+        "scores": {
+          "speed": 100,
+          "performance": 750,
+          "value": 367,
+          "aiFit": 490,
+          "priceEfficiency": 370,
+          "powerEfficiency": 750
+        },
+        "nbVector": [
+          100,
+          750,
+          367,
+          490,
+          370,
+          750
+        ],
+        "vectorLabels": [
+          "속도",
+          "성능",
+          "가성비",
+          "AI 적합",
+          "가격 효율",
+          "전력 효율"
+        ],
+        "nbMax": 371.489,
+        "nbMin": 384.891,
+        "weightedScore": 357,
+        "nbBand": "100~499",
+        "summary": "Mainboard MAG B860M Mortar WIFI 부품을 속도 중심 N/B 데이터베이스 점수 357점으로 저장했습니다."
+      },
+      "nbWeightedScore": 357,
+      "nbMax": 371.489,
+      "nbMin": 384.891,
+      "nbBand": "100~499",
+      "sourceUrl": "https://search.danawa.com/dsearch.php?k1=MSI%20MAG%20B860M%20Mortar%20WIFI%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+      "notes": "Compatible with Intel Core Ultra Series 2",
+      "textRepair": null,
+      "sourceType": "collector",
+      "sourceQuery": "",
+      "collectedPricesKrw": [],
+      "targetMatched": null
+    },
+    {
+      "schema": "pc-part-nb-database-file.v1",
+      "updatedAt": "2026-05-26T17:08:08.122+09:00",
       "category": "Mainboard",
       "id": "mainboard-mag-x870-tomahawk-wifi",
       "name": "MAG X870 TOMAHAWK WIFI",
@@ -9824,7 +10630,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:32.146+09:00",
+      "updatedAt": "2026-05-26T17:08:08.127+09:00",
       "category": "Mainboard",
       "id": "mainboard-mpg-x870e-carbon-wifi",
       "name": "MPG X870E CARBON WIFI",
@@ -9913,7 +10719,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:32.150+09:00",
+      "updatedAt": "2026-05-26T17:08:08.140+09:00",
       "category": "Mainboard",
       "id": "mainboard-msi-mag-b860m-wifi",
       "name": "MSI MAG B860M 박격포 WIFI",
@@ -10002,7 +10808,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:32.153+09:00",
+      "updatedAt": "2026-05-26T17:08:08.145+09:00",
       "category": "Mainboard",
       "id": "mainboard-msi-mpg-z890-carbon-wifi",
       "name": "MSI MPG Z890 CARBON WIFI",
@@ -10092,7 +10898,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:32.156+09:00",
+      "updatedAt": "2026-05-26T17:08:08.151+09:00",
       "category": "Mainboard",
       "id": "mainboard-msi-pro-z890-p-wifi",
       "name": "MSI PRO Z890-P WiFi",
@@ -10181,7 +10987,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:32.160+09:00",
+      "updatedAt": "2026-05-26T17:08:08.158+09:00",
       "category": "Mainboard",
       "id": "mainboard-rog-strix-x870e-e-gaming-wifi",
       "name": "ROG STRIX X870E-E GAMING WIFI",
@@ -10271,7 +11077,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:32.163+09:00",
+      "updatedAt": "2026-05-26T17:08:08.163+09:00",
       "category": "PSU",
       "id": "psu-1000w-gold",
       "name": "1000W 80PLUS Gold PSU",
@@ -10354,7 +11160,7 @@
       "sourceUrl": "https://search.danawa.com/dsearch.php?k1=1000W%2080PLUS%20Gold%20PSU%20price",
       "notes": "1000W 80PLUS Gold PSU은 출력, 효율, 그래픽카드 전원 여유를 함께 볼 파워서플라이 후보입니다.",
       "textRepair": {
-        "checkedAt": "2026-05-26T11:43:32.163+09:00",
+        "checkedAt": "2026-05-26T17:08:08.163+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "speedLabel",
@@ -10368,7 +11174,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:32.167+09:00",
+      "updatedAt": "2026-05-26T17:08:08.166+09:00",
       "category": "PSU",
       "id": "psu-1000w-platinum",
       "name": "1000W 80PLUS Platinum PSU",
@@ -10457,7 +11263,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:32.169+09:00",
+      "updatedAt": "2026-05-26T17:08:08.176+09:00",
       "category": "PSU",
       "id": "psu-1200w-platinum",
       "name": "1200W 80PLUS Platinum PSU",
@@ -10547,7 +11353,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:32.172+09:00",
+      "updatedAt": "2026-05-26T17:08:08.179+09:00",
       "category": "PSU",
       "id": "psu-1200w-gold-atx31",
       "name": "1200W Gold ATX 3.1 PSU",
@@ -10636,7 +11442,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:32.175+09:00",
+      "updatedAt": "2026-05-26T17:08:08.187+09:00",
       "category": "PSU",
       "id": "psu-1300w-gold-atx31",
       "name": "1300W Gold ATX 3.1 PSU",
@@ -10726,7 +11532,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:32.179+09:00",
+      "updatedAt": "2026-05-26T17:08:08.193+09:00",
       "category": "PSU",
       "id": "psu-1600w-titanium",
       "name": "1600W 80PLUS Titanium PSU",
@@ -10815,7 +11621,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:32.183+09:00",
+      "updatedAt": "2026-05-26T17:08:08.211+09:00",
       "category": "PSU",
       "id": "psu-550w-bronze",
       "name": "550W 80PLUS Bronze PSU",
@@ -10904,7 +11710,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:32.186+09:00",
+      "updatedAt": "2026-05-26T17:08:08.217+09:00",
       "category": "PSU",
       "id": "psu-600w-gold",
       "name": "600W 80PLUS Gold PSU",
@@ -10993,7 +11799,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:32.204+09:00",
+      "updatedAt": "2026-05-26T17:08:08.223+09:00",
       "category": "PSU",
       "id": "psu-650w-gold",
       "name": "650W 80PLUS Gold PSU",
@@ -11076,7 +11882,7 @@
       "sourceUrl": "https://search.danawa.com/dsearch.php?k1=650W%2080PLUS%20Gold%20PSU%20price",
       "notes": "650W 80PLUS Gold PSU은 출력, 효율, 그래픽카드 전원 여유를 함께 볼 파워서플라이 후보입니다.",
       "textRepair": {
-        "checkedAt": "2026-05-26T11:43:32.204+09:00",
+        "checkedAt": "2026-05-26T17:08:08.223+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "speedLabel",
@@ -11090,7 +11896,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:32.207+09:00",
+      "updatedAt": "2026-05-26T17:08:08.227+09:00",
       "category": "PSU",
       "id": "psu-700w-gold",
       "name": "700W 80PLUS Gold PSU",
@@ -11179,7 +11985,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:32.211+09:00",
+      "updatedAt": "2026-05-26T17:08:08.233+09:00",
       "category": "PSU",
       "id": "psu-750w-gold",
       "name": "750W 80PLUS Gold PSU",
@@ -11262,7 +12068,7 @@
       "sourceUrl": "https://search.danawa.com/dsearch.php?k1=750W%2080PLUS%20Gold%20PSU%20price",
       "notes": "750W 80PLUS Gold PSU은 출력, 효율, 그래픽카드 전원 여유를 함께 볼 파워서플라이 후보입니다.",
       "textRepair": {
-        "checkedAt": "2026-05-26T11:43:32.211+09:00",
+        "checkedAt": "2026-05-26T17:08:08.233+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "speedLabel",
@@ -11276,7 +12082,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:32.214+09:00",
+      "updatedAt": "2026-05-26T17:08:08.240+09:00",
       "category": "PSU",
       "id": "psu-750w-platinum",
       "name": "750W 80PLUS Platinum PSU",
@@ -11365,7 +12171,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:32.217+09:00",
+      "updatedAt": "2026-05-26T17:08:08.249+09:00",
       "category": "PSU",
       "id": "psu-850w-gold",
       "name": "850W 80PLUS Gold PSU",
@@ -11448,7 +12254,7 @@
       "sourceUrl": "https://search.danawa.com/dsearch.php?k1=850W%2080PLUS%20Gold%20PSU%20price",
       "notes": "850W 80PLUS Gold PSU은 출력, 효율, 그래픽카드 전원 여유를 함께 볼 파워서플라이 후보입니다.",
       "textRepair": {
-        "checkedAt": "2026-05-26T11:43:32.217+09:00",
+        "checkedAt": "2026-05-26T17:08:08.249+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "speedLabel",
@@ -11462,7 +12268,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:32.220+09:00",
+      "updatedAt": "2026-05-26T17:08:08.264+09:00",
       "category": "PSU",
       "id": "psu-850w-platinum",
       "name": "850W 80PLUS Platinum PSU",
@@ -11551,7 +12357,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:32.223+09:00",
+      "updatedAt": "2026-05-26T17:08:08.276+09:00",
       "category": "PSU",
       "id": "psu-cooler-master-v-sfx-gold-850-atx-3.1",
       "name": "Cooler Master V SFX Gold 850 ATX 3.1",
@@ -11640,7 +12446,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:32.226+09:00",
+      "updatedAt": "2026-05-26T17:08:08.280+09:00",
       "category": "PSU",
       "id": "psu-cooler-master-v750-sfx-gold",
       "name": "Cooler Master V750 SFX GOLD",
@@ -11729,7 +12535,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:32.229+09:00",
+      "updatedAt": "2026-05-26T17:08:08.294+09:00",
       "category": "PSU",
       "id": "psu-corsair-rm1000e-atx-3.0",
       "name": "Corsair RM1000e ATX 3.0",
@@ -11818,7 +12624,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:32.232+09:00",
+      "updatedAt": "2026-05-26T17:08:08.300+09:00",
       "category": "PSU",
       "id": "psu-corsair-rm1000x-shift-atx-3.1",
       "name": "Corsair RM1000x Shift ATX 3.1",
@@ -11907,7 +12713,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:32.235+09:00",
+      "updatedAt": "2026-05-26T17:08:08.313+09:00",
       "category": "PSU",
       "id": "psu-corsair-rm650e-atx-3.1",
       "name": "Corsair RM650e ATX 3.1",
@@ -11997,7 +12803,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:32.239+09:00",
+      "updatedAt": "2026-05-26T17:08:08.320+09:00",
       "category": "PSU",
       "id": "psu-corsair-rm750e-atx-3.0",
       "name": "Corsair RM750e ATX 3.0",
@@ -12086,7 +12892,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:32.242+09:00",
+      "updatedAt": "2026-05-26T17:08:08.327+09:00",
       "category": "PSU",
       "id": "psu-corsair-rm850e-atx-3.0",
       "name": "Corsair RM850e ATX 3.0",
@@ -12176,7 +12982,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:32.245+09:00",
+      "updatedAt": "2026-05-26T17:08:08.332+09:00",
       "category": "PSU",
       "id": "psu-corsair-rm850x-shift-atx-3.1",
       "name": "Corsair RM850x Shift ATX 3.1",
@@ -12266,7 +13072,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:32.248+09:00",
+      "updatedAt": "2026-05-26T17:08:08.342+09:00",
       "category": "PSU",
       "id": "psu-corsair-sf1000-80plus-platinum-atx-3.1",
       "name": "Corsair SF1000 80PLUS Platinum ATX 3.1",
@@ -12356,7 +13162,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:32.251+09:00",
+      "updatedAt": "2026-05-26T17:08:08.349+09:00",
       "category": "PSU",
       "id": "psu-corsair-sf750-80plus-platinum-atx-3.1",
       "name": "Corsair SF750 80PLUS Platinum ATX 3.1",
@@ -12445,7 +13251,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:32.254+09:00",
+      "updatedAt": "2026-05-26T17:08:08.359+09:00",
       "category": "PSU",
       "id": "psu-corsair-sf850-80plus-platinum-atx-3.1",
       "name": "Corsair SF850 80PLUS Platinum ATX 3.1",
@@ -12534,7 +13340,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:32.259+09:00",
+      "updatedAt": "2026-05-26T17:08:08.363+09:00",
       "category": "PSU",
       "id": "psu-msi-mag-a850gl-pcie5",
       "name": "MSI MAG A850GL PCIE5",
@@ -12623,7 +13429,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:32.262+09:00",
+      "updatedAt": "2026-05-26T17:08:08.367+09:00",
       "category": "PSU",
       "id": "psu-seasonic-new-focus-gx-850-gold-full-modular-atx-3.0",
       "name": "Seasonic NEW FOCUS GX-850 GOLD Full Modular ATX 3.0",
@@ -12713,7 +13519,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:32.266+09:00",
+      "updatedAt": "2026-05-26T17:08:08.373+09:00",
       "category": "PSU",
       "id": "psu-seasonic-vertex-gx-1000-gold-full-modular-atx-3.0",
       "name": "Seasonic Vertex GX-1000 GOLD Full Modular ATX 3.0",
@@ -12803,7 +13609,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:32.270+09:00",
+      "updatedAt": "2026-05-26T17:08:08.377+09:00",
       "category": "PSU",
       "id": "psu-silverstone-sx750-platinum",
       "name": "SilverStone SX750 Platinum",
@@ -12892,7 +13698,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:32.273+09:00",
+      "updatedAt": "2026-05-26T17:08:08.382+09:00",
       "category": "RAM",
       "id": "ram-corsair-dominator-titanium-rgb-ddr5-7200mhz-cl34-32gb-16gx2",
       "name": "Corsair Dominator Titanium RGB DDR5 7200MHz CL34 32GB (16Gx2)",
@@ -12981,7 +13787,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:32.276+09:00",
+      "updatedAt": "2026-05-26T17:08:08.391+09:00",
       "category": "RAM",
       "id": "ram-corsair-vengeance-rgb-ddr5-6000mhz-cl30-32gb-16gx2",
       "name": "Corsair Vengeance RGB DDR5 6000MHz CL30 32GB (16Gx2)",
@@ -13070,7 +13876,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:32.279+09:00",
+      "updatedAt": "2026-05-26T17:08:08.397+09:00",
       "category": "RAM",
       "id": "ram-corsair-vengeance-rgb-ddr5-6000mhz-cl30-64gb-32gx2",
       "name": "Corsair Vengeance RGB DDR5 6000MHz CL30 64GB (32Gx2)",
@@ -13160,7 +13966,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:32.283+09:00",
+      "updatedAt": "2026-05-26T17:08:08.406+09:00",
       "category": "RAM",
       "id": "ram-ddr5-128-5600",
       "name": "DDR5 128GB 5600MHz",
@@ -13250,7 +14056,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:32.286+09:00",
+      "updatedAt": "2026-05-26T17:08:08.410+09:00",
       "category": "RAM",
       "id": "ram-ddr5-128-6000",
       "name": "DDR5 128GB 6000MHz",
@@ -13340,7 +14146,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:32.290+09:00",
+      "updatedAt": "2026-05-26T17:08:08.415+09:00",
       "category": "RAM",
       "id": "ram-ddr5-32-5600",
       "name": "DDR5 32GB 5600MHz",
@@ -13429,7 +14235,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:32.293+09:00",
+      "updatedAt": "2026-05-26T17:08:08.420+09:00",
       "category": "RAM",
       "id": "ram-ddr5-32-6000",
       "name": "DDR5 32GB 6000MHz",
@@ -13512,7 +14318,7 @@
       "sourceUrl": "https://search.danawa.com/dsearch.php?k1=DDR5%2032GB%206000MHz%20%EA%B0%80%EA%B2%A9",
       "notes": "DDR5 32GB 6000MHz은 용량과 클럭을 함께 보는 DDR5 메모리 후보입니다.",
       "textRepair": {
-        "checkedAt": "2026-05-26T11:43:32.293+09:00",
+        "checkedAt": "2026-05-26T17:08:08.420+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "notes"
@@ -13525,7 +14331,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:32.296+09:00",
+      "updatedAt": "2026-05-26T17:08:08.425+09:00",
       "category": "RAM",
       "id": "ram-ddr5-32-6400",
       "name": "DDR5 32GB 6400MHz",
@@ -13607,7 +14413,7 @@
       "sourceUrl": "https://search.danawa.com/dsearch.php?k1=DDR5%2032GB%206400MHz%20price",
       "notes": "DDR5 32GB 6400MHz은 용량과 클럭을 함께 보는 DDR5 메모리 후보입니다.",
       "textRepair": {
-        "checkedAt": "2026-05-26T11:43:32.296+09:00",
+        "checkedAt": "2026-05-26T17:08:08.425+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "notes"
@@ -13620,7 +14426,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:32.299+09:00",
+      "updatedAt": "2026-05-26T17:08:08.429+09:00",
       "category": "RAM",
       "id": "ram-ddr5-48-6000",
       "name": "DDR5 48GB 6000MHz",
@@ -13709,7 +14515,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:32.302+09:00",
+      "updatedAt": "2026-05-26T17:08:08.434+09:00",
       "category": "RAM",
       "id": "ram-ddr5-64-5600",
       "name": "DDR5 64GB 5600MHz",
@@ -13798,7 +14604,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:32.305+09:00",
+      "updatedAt": "2026-05-26T17:08:08.439+09:00",
       "category": "RAM",
       "id": "ram-ddr5-64-6000",
       "name": "DDR5 64GB 6000MHz",
@@ -13880,7 +14686,7 @@
       "sourceUrl": "https://search.danawa.com/dsearch.php?k1=DDR5%2064GB%206000MHz%20%EA%B0%80%EA%B2%A9",
       "notes": "DDR5 64GB 6000MHz은 용량과 클럭을 함께 보는 DDR5 메모리 후보입니다.",
       "textRepair": {
-        "checkedAt": "2026-05-26T11:43:32.305+09:00",
+        "checkedAt": "2026-05-26T17:08:08.439+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "notes"
@@ -13893,7 +14699,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:32.308+09:00",
+      "updatedAt": "2026-05-26T17:08:08.445+09:00",
       "category": "RAM",
       "id": "ram-ddr5-64-6400",
       "name": "DDR5 64GB 6400MHz",
@@ -13975,7 +14781,7 @@
       "sourceUrl": "https://search.danawa.com/dsearch.php?k1=DDR5%2064GB%206400MHz%20price",
       "notes": "DDR5 64GB 6400MHz은 용량과 클럭을 함께 보는 DDR5 메모리 후보입니다.",
       "textRepair": {
-        "checkedAt": "2026-05-26T11:43:32.308+09:00",
+        "checkedAt": "2026-05-26T17:08:08.445+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "notes"
@@ -13988,7 +14794,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:32.311+09:00",
+      "updatedAt": "2026-05-26T17:08:08.450+09:00",
       "category": "RAM",
       "id": "ram-ddr5-64-7200",
       "name": "DDR5 64GB 7200MHz",
@@ -14077,7 +14883,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:32.315+09:00",
+      "updatedAt": "2026-05-26T17:08:08.460+09:00",
       "category": "RAM",
       "id": "ram-ddr5-96-6400",
       "name": "DDR5 96GB 6400MHz",
@@ -14167,7 +14973,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:32.318+09:00",
+      "updatedAt": "2026-05-26T17:08:08.467+09:00",
       "category": "RAM",
       "id": "ram-g.skill-trident-z5-neo-rgb-ddr5-6000mhz-cl30-32gb-16gx2",
       "name": "G.Skill Trident Z5 Neo RGB DDR5 6000MHz CL30 32GB (16Gx2)",
@@ -14256,7 +15062,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:32.321+09:00",
+      "updatedAt": "2026-05-26T17:08:08.482+09:00",
       "category": "RAM",
       "id": "ram-g.skill-trident-z5-neo-rgb-ddr5-6000mhz-cl30-64gb-32gx2",
       "name": "G.Skill Trident Z5 Neo RGB DDR5 6000MHz CL30 64GB (32Gx2)",
@@ -14345,7 +15151,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:32.324+09:00",
+      "updatedAt": "2026-05-26T17:08:08.494+09:00",
       "category": "RAM",
       "id": "ram-g.skill-trident-z5-neo-rgb-ddr5-6000mhz-cl30-96gb",
       "name": "G.Skill Trident Z5 Neo RGB DDR5 6000MHz CL30 96GB",
@@ -14435,7 +15241,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:32.327+09:00",
+      "updatedAt": "2026-05-26T17:08:08.531+09:00",
       "category": "RAM",
       "id": "ram-g.skill-trident-z5-rgb-ddr5-6400mhz-cl32-64gb-32gx2",
       "name": "G.Skill Trident Z5 RGB DDR5 6400MHz CL32 64GB (32Gx2)",
@@ -14524,7 +15330,96 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:32.331+09:00",
+      "updatedAt": "2026-05-26T17:08:08.541+09:00",
+      "category": "RAM",
+      "id": "ram-g.skill-trident-z5-rgb-ddr5-6800mhz-cl34-32gb-16gx2",
+      "name": "G.Skill Trident Z5 RGB DDR5 6800MHz CL34 32GB (16Gx2)",
+      "maker": "G.Skill",
+      "platform": "DDR5",
+      "estimatedPriceKrw": 376800,
+      "priceBand": "30~60만원",
+      "speedLabel": "6800MHz",
+      "speedMetric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "RAM",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      },
+      "unifiedSpeedScore": 100,
+      "performance": 85,
+      "valueIndex": 22.6,
+      "aiUseScore": 55,
+      "powerWatts": 0,
+      "tags": [
+        "gaming",
+        "overclock"
+      ],
+      "nbDatabase": {
+        "schema": "pc-part-nb-database.v1",
+        "unit": "100~1000",
+        "priority": "speed-first",
+        "category": "RAM",
+        "partId": "ram-g.skill-trident-z5-rgb-ddr5-6800mhz-cl34-32gb-16gx2",
+        "partName": "G.Skill Trident Z5 RGB DDR5 6800MHz CL34 32GB (16Gx2)",
+        "speed": {
+          "score": 100,
+          "weight": 0.42,
+          "metric": {
+            "kind": "unknown",
+            "label": "속도 기준",
+            "value": null,
+            "unit": "",
+            "group": "RAM",
+            "compareNote": "부품군별 기준으로 비교해야 합니다."
+          }
+        },
+        "scores": {
+          "speed": 100,
+          "performance": 850,
+          "value": 301,
+          "aiFit": 550,
+          "priceEfficiency": 270,
+          "powerEfficiency": 850
+        },
+        "nbVector": [
+          100,
+          850,
+          301,
+          550,
+          270,
+          850
+        ],
+        "vectorLabels": [
+          "속도",
+          "성능",
+          "가성비",
+          "AI 적합",
+          "가격 효율",
+          "전력 효율"
+        ],
+        "nbMax": 310.81,
+        "nbMin": 378.775,
+        "weightedScore": 382,
+        "nbBand": "100~499",
+        "summary": "RAM G.Skill Trident Z5 RGB DDR5 6800MHz CL34 32GB (16Gx2) 부품을 속도 중심 N/B 데이터베이스 점수 382점으로 저장했습니다."
+      },
+      "nbWeightedScore": 382,
+      "nbMax": 310.81,
+      "nbMin": 378.775,
+      "nbBand": "100~499",
+      "sourceUrl": "https://search.danawa.com/dsearch.php?k1=G.Skill%20Trident%20Z5%20RGB%20DDR5%206800MHz%2032GB%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+      "notes": "CL34-45-45-108, 1.40V, XMP 3.0",
+      "textRepair": null,
+      "sourceType": "collector",
+      "sourceQuery": "",
+      "collectedPricesKrw": [],
+      "targetMatched": null
+    },
+    {
+      "schema": "pc-part-nb-database-file.v1",
+      "updatedAt": "2026-05-26T17:08:08.548+09:00",
       "category": "RAM",
       "id": "ram-g.skill-trident-z5-rgb-ddr5-7200mhz-cl34-32gb-16gx2",
       "name": "G.Skill Trident Z5 RGB DDR5 7200MHz CL34 32GB (16Gx2)",
@@ -14614,7 +15509,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:32.334+09:00",
+      "updatedAt": "2026-05-26T17:08:08.561+09:00",
       "category": "RAM",
       "id": "ram-g.skill-trident-z5-rgb-ddr5-8000mhz-cl40-48gb-24gx2",
       "name": "G.Skill Trident Z5 RGB DDR5 8000MHz CL40 48GB (24Gx2)",
@@ -14703,7 +15598,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:32.338+09:00",
+      "updatedAt": "2026-05-26T17:08:08.565+09:00",
       "category": "RAM",
       "id": "ram-g.skill-trident-z5-rgb-ddr5-8000mhz-cl40-64gb",
       "name": "G.Skill Trident Z5 RGB DDR5 8000MHz CL40 64GB",
@@ -14792,7 +15687,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:32.341+09:00",
+      "updatedAt": "2026-05-26T17:08:08.573+09:00",
       "category": "RAM",
       "id": "ram-samsung-ddr5-16gb-5600mhz",
       "name": "Samsung DDR5 16GB 5600MHz",
@@ -14881,7 +15776,96 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:32.344+09:00",
+      "updatedAt": "2026-05-26T17:08:08.578+09:00",
+      "category": "RAM",
+      "id": "ram-samsung-ddr5-6400-cl52-cudimm-32gb",
+      "name": "Samsung DDR5-6400 CL52 CUDIMM 32GB",
+      "maker": "Samsung",
+      "platform": "DDR5",
+      "estimatedPriceKrw": 378680,
+      "priceBand": "30~60만원",
+      "speedLabel": "6400MHz",
+      "speedMetric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "RAM",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      },
+      "unifiedSpeedScore": 100,
+      "performance": 75,
+      "valueIndex": 19.8,
+      "aiUseScore": 49,
+      "powerWatts": 0,
+      "tags": [
+        "CUDIMM",
+        "Intel 15th Gen"
+      ],
+      "nbDatabase": {
+        "schema": "pc-part-nb-database.v1",
+        "unit": "100~1000",
+        "priority": "speed-first",
+        "category": "RAM",
+        "partId": "ram-samsung-ddr5-6400-cl52-cudimm-32gb",
+        "partName": "Samsung DDR5-6400 CL52 CUDIMM 32GB",
+        "speed": {
+          "score": 100,
+          "weight": 0.42,
+          "metric": {
+            "kind": "unknown",
+            "label": "속도 기준",
+            "value": null,
+            "unit": "",
+            "group": "RAM",
+            "compareNote": "부품군별 기준으로 비교해야 합니다."
+          }
+        },
+        "scores": {
+          "speed": 100,
+          "performance": 750,
+          "value": 264,
+          "aiFit": 490,
+          "priceEfficiency": 260,
+          "powerEfficiency": 750
+        },
+        "nbVector": [
+          100,
+          750,
+          264,
+          490,
+          260,
+          750
+        ],
+        "vectorLabels": [
+          "속도",
+          "성능",
+          "가성비",
+          "AI 적합",
+          "가격 효율",
+          "전력 효율"
+        ],
+        "nbMax": 310.582,
+        "nbMin": 388.808,
+        "weightedScore": 344,
+        "nbBand": "100~499",
+        "summary": "RAM Samsung DDR5-6400 CL52 CUDIMM 32GB 부품을 속도 중심 N/B 데이터베이스 점수 344점으로 저장했습니다."
+      },
+      "nbWeightedScore": 344,
+      "nbMax": 310.582,
+      "nbMin": 388.808,
+      "nbBand": "100~499",
+      "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Samsung%20DDR5%206400MHz%2032GB%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+      "notes": "CUDIMM module with clock driver, specifically targeted for newer Intel platforms.",
+      "textRepair": null,
+      "sourceType": "collector",
+      "sourceQuery": "",
+      "collectedPricesKrw": [],
+      "targetMatched": null
+    },
+    {
+      "schema": "pc-part-nb-database-file.v1",
+      "updatedAt": "2026-05-26T17:08:08.583+09:00",
       "category": "SSD",
       "id": "ssd-crucial-p5-plus-2tb",
       "name": "Crucial P5 Plus 2TB",
@@ -14970,7 +15954,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:32.390+09:00",
+      "updatedAt": "2026-05-26T17:08:08.597+09:00",
       "category": "SSD",
       "id": "ssd-crucial-t700-2tb",
       "name": "Crucial T700 2TB",
@@ -15060,7 +16044,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:32.394+09:00",
+      "updatedAt": "2026-05-26T17:08:08.615+09:00",
       "category": "SSD",
       "id": "ssd-crucial-t705-1tb",
       "name": "Crucial T705 1TB",
@@ -15149,7 +16133,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:32.397+09:00",
+      "updatedAt": "2026-05-26T17:08:08.630+09:00",
       "category": "SSD",
       "id": "ssd-crucial-t705-2tb",
       "name": "Crucial T705 2TB",
@@ -15238,7 +16222,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:32.400+09:00",
+      "updatedAt": "2026-05-26T17:08:08.646+09:00",
       "category": "SSD",
       "id": "ssd-crucial-t705-4tb",
       "name": "Crucial T705 4TB",
@@ -15327,7 +16311,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:32.474+09:00",
+      "updatedAt": "2026-05-26T17:08:08.660+09:00",
       "category": "SSD",
       "id": "ssd-crucial-x10-pro-2tb",
       "name": "Crucial X10 Pro 2TB",
@@ -15416,7 +16400,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:32.478+09:00",
+      "updatedAt": "2026-05-26T17:08:08.665+09:00",
       "category": "SSD",
       "id": "ssd-nvme-1tb-gen4",
       "name": "NVMe Gen4 SSD 1TB",
@@ -15498,7 +16482,7 @@
       "sourceUrl": "https://search.danawa.com/dsearch.php?k1=NVMe%20Gen4%20SSD%201TB%20price",
       "notes": "NVMe Gen4 SSD 1TB은 운영체제, 게임, 작업 파일 저장용으로 검토할 NVMe SSD 후보입니다.",
       "textRepair": {
-        "checkedAt": "2026-05-26T11:43:32.478+09:00",
+        "checkedAt": "2026-05-26T17:08:08.665+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "notes"
@@ -15511,7 +16495,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:32.482+09:00",
+      "updatedAt": "2026-05-26T17:08:08.679+09:00",
       "category": "SSD",
       "id": "ssd-nvme-2tb-gen4",
       "name": "NVMe Gen4 SSD 2TB",
@@ -15594,7 +16578,7 @@
       "sourceUrl": "https://search.danawa.com/dsearch.php?k1=NVMe%20Gen4%20SSD%202TB%20price",
       "notes": "NVMe Gen4 SSD 2TB은 운영체제, 게임, 작업 파일 저장용으로 검토할 NVMe SSD 후보입니다.",
       "textRepair": {
-        "checkedAt": "2026-05-26T11:43:32.482+09:00",
+        "checkedAt": "2026-05-26T17:08:08.679+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "notes"
@@ -15607,7 +16591,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:32.485+09:00",
+      "updatedAt": "2026-05-26T17:08:08.688+09:00",
       "category": "SSD",
       "id": "ssd-samsung-9100-pro-2tb",
       "name": "Samsung 9100 PRO 2TB",
@@ -15697,7 +16681,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:32.489+09:00",
+      "updatedAt": "2026-05-26T17:08:08.694+09:00",
       "category": "SSD",
       "id": "ssd-samsung-990-evo-plus-1tb",
       "name": "Samsung 990 EVO Plus 1TB",
@@ -15786,7 +16770,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:32.492+09:00",
+      "updatedAt": "2026-05-26T17:08:08.700+09:00",
       "category": "SSD",
       "id": "ssd-samsung-990-evo-plus-2tb",
       "name": "Samsung 990 EVO Plus 2TB",
@@ -15875,7 +16859,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:32.495+09:00",
+      "updatedAt": "2026-05-26T17:08:08.709+09:00",
       "category": "SSD",
       "id": "ssd-samsung-990-pro-1tb",
       "name": "Samsung 990 PRO 1TB",
@@ -15957,7 +16941,7 @@
       "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Samsung%20990%20PRO%201TB%20%EA%B0%80%EA%B2%A9",
       "notes": "Samsung 990 PRO 1TB은 운영체제, 게임, 작업 파일 저장용으로 검토할 NVMe SSD 후보입니다.",
       "textRepair": {
-        "checkedAt": "2026-05-26T11:43:32.495+09:00",
+        "checkedAt": "2026-05-26T17:08:08.709+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "notes"
@@ -15970,7 +16954,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:32.498+09:00",
+      "updatedAt": "2026-05-26T17:08:08.714+09:00",
       "category": "SSD",
       "id": "ssd-samsung-990-pro-2tb",
       "name": "Samsung 990 PRO 2TB",
@@ -16059,7 +17043,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:32.503+09:00",
+      "updatedAt": "2026-05-26T17:08:08.732+09:00",
       "category": "SSD",
       "id": "ssd-samsung-990-pro-2tb-heatsink",
       "name": "Samsung 990 PRO 2TB Heatsink",
@@ -16149,7 +17133,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:32.506+09:00",
+      "updatedAt": "2026-05-26T17:08:08.750+09:00",
       "category": "SSD",
       "id": "ssd-samsung-990-pro-4tb",
       "name": "Samsung 990 PRO 4TB",
@@ -16238,7 +17222,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:32.509+09:00",
+      "updatedAt": "2026-05-26T17:08:08.766+09:00",
       "category": "SSD",
       "id": "ssd-samsung-990-pro-8tb",
       "name": "Samsung 990 PRO 8TB",
@@ -16327,7 +17311,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:32.513+09:00",
+      "updatedAt": "2026-05-26T17:08:08.777+09:00",
       "category": "SSD",
       "id": "ssd-seagate-firecuda-540-2tb",
       "name": "Seagate FireCuda 540 2TB",
@@ -16416,7 +17400,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:32.516+09:00",
+      "updatedAt": "2026-05-26T17:08:08.782+09:00",
       "category": "SSD",
       "id": "ssd-sk-hynix-platinum-p41-1tb",
       "name": "SK hynix Platinum P41 1TB",
@@ -16506,7 +17490,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:32.520+09:00",
+      "updatedAt": "2026-05-26T17:08:08.792+09:00",
       "category": "SSD",
       "id": "ssd-sk-hynix-p41-2tb",
       "name": "SK hynix Platinum P41 2TB",
@@ -16595,7 +17579,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:32.525+09:00",
+      "updatedAt": "2026-05-26T17:08:08.807+09:00",
       "category": "SSD",
       "id": "ssd-sk-hynix-platinum-p41-4tb",
       "name": "SK hynix Platinum P41 4TB",
@@ -16685,7 +17669,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:32.528+09:00",
+      "updatedAt": "2026-05-26T17:08:08.816+09:00",
       "category": "SSD",
       "id": "ssd-sk-hynix-platinum-p41-500gb",
       "name": "SK hynix Platinum P41 500GB",
@@ -16774,7 +17758,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:32.531+09:00",
+      "updatedAt": "2026-05-26T17:08:08.831+09:00",
       "category": "SSD",
       "id": "ssd-solidigm-p44-pro-2tb",
       "name": "Solidigm P44 Pro 2TB",
@@ -16863,7 +17847,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:32.534+09:00",
+      "updatedAt": "2026-05-26T17:08:08.844+09:00",
       "category": "SSD",
       "id": "ssd-wd-sn850x-1tb",
       "name": "WD Black SN850X 1TB",
@@ -16952,7 +17936,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:32.537+09:00",
+      "updatedAt": "2026-05-26T17:08:08.849+09:00",
       "category": "SSD",
       "id": "ssd-wd-sn850x-2tb",
       "name": "WD Black SN850X 2TB",
@@ -17035,7 +18019,7 @@
       "sourceUrl": "https://search.danawa.com/dsearch.php?k1=WD%20Black%20SN850X%202TB%20%EA%B0%80%EA%B2%A9",
       "notes": "WD Black SN850X 2TB은 운영체제, 게임, 작업 파일 저장용으로 검토할 NVMe SSD 후보입니다.",
       "textRepair": {
-        "checkedAt": "2026-05-26T11:43:32.537+09:00",
+        "checkedAt": "2026-05-26T17:08:08.849+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "notes"
@@ -17048,7 +18032,7 @@
     },
     {
       "schema": "pc-part-nb-database-file.v1",
-      "updatedAt": "2026-05-26T11:43:32.540+09:00",
+      "updatedAt": "2026-05-26T17:08:08.858+09:00",
       "category": "SSD",
       "id": "ssd-wd-sn850x-4tb",
       "name": "WD Black SN850X 4TB",
@@ -17140,11 +18124,12 @@
   "updatedThisRun": [],
   "skippedSaved": [],
   "duplicateSkipped": [
-    "cpu-amd-ryzen-7-9700x",
-    "cpu-amd-ryzen-9-9900x",
+    "cpu-amd-ryzen-7-7800x3d",
     "cpu-amd-ryzen-9-9950x",
     "cpu-amd-ryzen-7-9800x3d",
-    "cpu-amd-ryzen-9-9950x3d",
+    "cpu-amd-ryzen-5-9600x",
+    "cpu-amd-ryzen-5-7500f",
+    "cpu-amd-ryzen-9-7900x",
     "psu-1600w-titanium",
     "cpu-ryzen-5-9600",
     "cpu-ryzen-7-9700x",

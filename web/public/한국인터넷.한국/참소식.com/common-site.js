@@ -52,11 +52,15 @@
         </a>
         <nav class="chamsosik-common-nav" aria-label="참소식 공통 메뉴">
           <a href="${root("./")}">메인</a>
-          <a href="${root("jungnang-volunteer/")}">중랑구 지역 소식</a>
-          <a href="${root("cathedral-news.html")}">주요 성당 소식</a>
+          <a href="${root("community/")}">컴퓨터 커뮤니티 뉴스</a>
+          <a href="${root("robot/")}">로봇 뉴스</a>
           <a href="${root("pc-parts-ai/")}">AI 컴퓨터 부품 분석</a>
           <a href="${root("pc-parts-ai/parts.html")}">부품 분석표</a>
           <a href="${root("server-journal.html")}">서버 일지</a>
+          <span class="chamsosik-common-archive" aria-label="비추천 보관 메뉴">
+            <a class="chamsosik-common-archived" href="${root("jungnang-volunteer/")}">중랑구 소식</a>
+            <a class="chamsosik-common-archived" href="${root("cathedral-news.html")}">주요 성당 소식</a>
+          </span>
         </nav>
       </div>
     `;
@@ -70,6 +74,7 @@
       <nav class="chamsosik-common-footer-nav" aria-label="참소식 하단 메뉴">
         <a href="${root("./")}">참소식.com 메인</a>
         <a href="${root("server-journal.html")}">서버 일지 공개 페이지</a>
+        <a href="${root("robot/")}">로봇 뉴스</a>
         <a href="${root("pc-parts-ai/")}">AI 컴퓨터 부품 분석</a>
         <a href="https://www.icann.org/compliance/complaint" target="_blank" rel="noopener noreferrer">ICANN 제보</a>
       </nav>

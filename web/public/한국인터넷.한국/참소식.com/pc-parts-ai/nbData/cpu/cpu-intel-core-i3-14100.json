@@ -1,0 +1,89 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-05-26T17:10:25.915+09:00",
+  "category": "CPU",
+  "id": "cpu-intel-core-i3-14100",
+  "name": "Intel Core i3-14100",
+  "maker": "Intel",
+  "platform": "LGA1700",
+  "estimatedPriceKrw": 194400,
+  "priceBand": "15~30만원",
+  "speedLabel": "Up to 4.7GHz",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "CPU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 35,
+  "valueIndex": 18,
+  "aiUseScore": 23,
+  "powerWatts": 60,
+  "tags": [
+    "office",
+    "budget"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "CPU",
+    "partId": "cpu-intel-core-i3-14100",
+    "partName": "Intel Core i3-14100",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "CPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 350,
+      "value": 240,
+      "aiFit": 230,
+      "priceEfficiency": 510,
+      "powerEfficiency": 194
+    },
+    "nbVector": [
+      100,
+      350,
+      240,
+      230,
+      510,
+      194
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 212.288,
+    "nbMin": 426.698,
+    "weightedScore": 221,
+    "nbBand": "100~499",
+    "summary": "CPU Intel Core i3-14100 부품을 속도 중심 N/B 데이터베이스 점수 221점으로 저장했습니다."
+  },
+  "nbWeightedScore": 221,
+  "nbMax": 212.288,
+  "nbMin": 426.698,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Intel%20Core%20i3-14100%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "Raptor Lake Refresh",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

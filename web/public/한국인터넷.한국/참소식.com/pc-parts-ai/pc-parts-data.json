@@ -1,7 +1,7 @@
 {
   "ok": true,
   "topic": "AI 컴퓨터 부품 가격·성능 분석 자료",
-  "updatedAt": "2026-05-26T10:13:35.196+09:00",
+  "updatedAt": "2026-05-26T17:01:25.029+09:00",
   "intervalSeconds": 600,
   "speedScoreScale": {
     "min": 100,
@@ -15,7 +15,7 @@
   },
   "currency": "KRW",
   "sourceType": "nbData",
-  "sourceUpdatedAt": "2026-05-26T10:13:20.633+09:00",
+  "sourceUpdatedAt": "2026-05-26T17:01:12.263+09:00",
   "nbDatabaseStorage": {
     "mode": "per-part-json-files",
     "root": "nbData",
@@ -48,9 +48,9 @@
     "ok": true,
     "mode": "continuous-assembled-state",
     "description": "컴퓨터는 계속 조립된 상태로 유지됩니다. 새 후보가 현재 N/B MAX를 넘을 때만 조립 상태를 갱신합니다.",
-    "sourceUpdatedAt": "2026-05-26T10:13:20.633+09:00",
+    "sourceUpdatedAt": "2026-05-26T17:01:12.263+09:00",
     "startedAt": "2026-05-24T19:11:34.389+09:00",
-    "lastCheckedAt": "2026-05-26T10:13:35.188+09:00",
+    "lastCheckedAt": "2026-05-26T17:01:24.968+09:00",
     "lastChangedAt": "2026-05-26T03:44:30.447+09:00",
     "reason": "kept-current-assembly",
     "currentBuildKey": "cpu-ryzen-7-7700|gpu-rtx-5080|ram-ddr5-64-6400|ssd-crucial-p5-plus-2tb|mb-am5-x870|psu-msi-mag-a850gl-pcie5",
@@ -693,7 +693,7 @@
   "levelAnalysis": [
     {
       "level": "초보자용",
-      "count": 47,
+      "count": 49,
       "summary": "설치와 선택 기준이 단순하고 가격 부담이 낮은 부품을 우선 정리합니다.",
       "recommendedParts": [
         {
@@ -750,7 +750,7 @@
     },
     {
       "level": "중수용",
-      "count": 64,
+      "count": 69,
       "summary": "가격, 성능, 플랫폼 호환성을 함께 비교해야 하는 균형형 부품을 정리합니다.",
       "recommendedParts": [
         {
@@ -807,7 +807,7 @@
     },
     {
       "level": "고수용",
-      "count": 78,
+      "count": 82,
       "summary": "고성능, 고전력, AI 작업, 상위 GPU처럼 확인할 요소가 많은 부품을 정리합니다.",
       "recommendedParts": [
         {
@@ -991,7 +991,7 @@
       "sourceStatus": "collector",
       "collectedPricesKrw": [],
       "textRepair": {
-        "checkedAt": "2026-05-26T10:13:23.000+09:00",
+        "checkedAt": "2026-05-26T17:01:17.659+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "speedLabel",
@@ -1107,7 +1107,7 @@
       "sourceStatus": "collector",
       "collectedPricesKrw": [],
       "textRepair": {
-        "checkedAt": "2026-05-26T10:13:23.000+09:00",
+        "checkedAt": "2026-05-26T17:01:17.659+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "speedLabel",
@@ -1652,7 +1652,7 @@
       "sourceStatus": "collector",
       "collectedPricesKrw": [],
       "textRepair": {
-        "checkedAt": "2026-05-26T10:13:23.006+09:00",
+        "checkedAt": "2026-05-26T17:01:17.662+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "notes"
@@ -3045,7 +3045,7 @@
       "sourceStatus": "collector",
       "collectedPricesKrw": [],
       "textRepair": {
-        "checkedAt": "2026-05-26T10:13:23.003+09:00",
+        "checkedAt": "2026-05-26T17:01:17.660+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "notes"
@@ -3268,7 +3268,7 @@
       "sourceStatus": "collector",
       "collectedPricesKrw": [],
       "textRepair": {
-        "checkedAt": "2026-05-26T10:13:23.000+09:00",
+        "checkedAt": "2026-05-26T17:01:17.659+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "speedLabel",
@@ -3383,7 +3383,7 @@
       "sourceStatus": "collector",
       "collectedPricesKrw": [],
       "textRepair": {
-        "checkedAt": "2026-05-26T10:13:23.005+09:00",
+        "checkedAt": "2026-05-26T17:01:17.662+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "notes"
@@ -3819,7 +3819,7 @@
       "sourceStatus": "collector",
       "collectedPricesKrw": [],
       "textRepair": {
-        "checkedAt": "2026-05-26T10:13:23.003+09:00",
+        "checkedAt": "2026-05-26T17:01:17.660+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "notes"
@@ -3934,7 +3934,7 @@
       "sourceStatus": "collector",
       "collectedPricesKrw": [],
       "textRepair": {
-        "checkedAt": "2026-05-26T10:13:22.999+09:00",
+        "checkedAt": "2026-05-26T17:01:17.658+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "speedLabel",
@@ -4053,7 +4053,7 @@
       "sourceStatus": "collector",
       "collectedPricesKrw": [],
       "textRepair": {
-        "checkedAt": "2026-05-26T10:13:22.999+09:00",
+        "checkedAt": "2026-05-26T17:01:17.658+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "speedLabel",
@@ -4169,7 +4169,7 @@
       "sourceStatus": "collector",
       "collectedPricesKrw": [],
       "textRepair": {
-        "checkedAt": "2026-05-26T10:13:23.004+09:00",
+        "checkedAt": "2026-05-26T17:01:17.662+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "notes"
@@ -4709,7 +4709,7 @@
       "sourceStatus": "collector",
       "collectedPricesKrw": [],
       "textRepair": {
-        "checkedAt": "2026-05-26T10:13:22.994+09:00",
+        "checkedAt": "2026-05-26T17:01:17.655+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "speedLabel",
@@ -5145,7 +5145,7 @@
       "sourceStatus": "collector",
       "collectedPricesKrw": [],
       "textRepair": {
-        "checkedAt": "2026-05-26T10:13:22.995+09:00",
+        "checkedAt": "2026-05-26T17:01:17.655+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "speedLabel",
@@ -5582,7 +5582,7 @@
       "sourceStatus": "collector",
       "collectedPricesKrw": [],
       "textRepair": {
-        "checkedAt": "2026-05-26T10:13:23.003+09:00",
+        "checkedAt": "2026-05-26T17:01:17.660+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "notes"
@@ -5908,7 +5908,7 @@
       "sourceStatus": "collector",
       "collectedPricesKrw": [],
       "textRepair": {
-        "checkedAt": "2026-05-26T10:13:22.994+09:00",
+        "checkedAt": "2026-05-26T17:01:17.655+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "speedLabel",
@@ -6348,7 +6348,7 @@
       "sourceStatus": "collector",
       "collectedPricesKrw": [],
       "textRepair": {
-        "checkedAt": "2026-05-26T10:13:23.003+09:00",
+        "checkedAt": "2026-05-26T17:01:17.660+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "notes"
@@ -6781,7 +6781,7 @@
       "sourceStatus": "collector",
       "collectedPricesKrw": [],
       "textRepair": {
-        "checkedAt": "2026-05-26T10:13:22.998+09:00",
+        "checkedAt": "2026-05-26T17:01:17.658+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "speedLabel",
@@ -7007,7 +7007,7 @@
       "sourceStatus": "collector",
       "collectedPricesKrw": [],
       "textRepair": {
-        "checkedAt": "2026-05-26T10:13:22.999+09:00",
+        "checkedAt": "2026-05-26T17:01:17.658+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "speedLabel",
@@ -7234,7 +7234,7 @@
       "sourceStatus": "collector",
       "collectedPricesKrw": [],
       "textRepair": {
-        "checkedAt": "2026-05-26T10:13:23.004+09:00",
+        "checkedAt": "2026-05-26T17:01:17.662+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "notes"
@@ -7349,7 +7349,7 @@
       "sourceStatus": "collector",
       "collectedPricesKrw": [],
       "textRepair": {
-        "checkedAt": "2026-05-26T10:13:22.993+09:00",
+        "checkedAt": "2026-05-26T17:01:17.655+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "speedLabel",
@@ -7467,7 +7467,7 @@
       "sourceStatus": "collector",
       "collectedPricesKrw": [],
       "textRepair": {
-        "checkedAt": "2026-05-26T10:13:22.999+09:00",
+        "checkedAt": "2026-05-26T17:01:17.658+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "speedLabel",
@@ -8016,7 +8016,7 @@
       "sourceStatus": "collector",
       "collectedPricesKrw": [],
       "textRepair": {
-        "checkedAt": "2026-05-26T10:13:22.991+09:00",
+        "checkedAt": "2026-05-26T17:01:17.653+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "speedLabel",
@@ -10840,7 +10840,7 @@
       "sourceStatus": "collector",
       "collectedPricesKrw": [],
       "textRepair": {
-        "checkedAt": "2026-05-26T10:13:22.992+09:00",
+        "checkedAt": "2026-05-26T17:01:17.654+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "speedLabel",
@@ -11609,7 +11609,7 @@
       "sourceStatus": "collector",
       "collectedPricesKrw": [],
       "textRepair": {
-        "checkedAt": "2026-05-26T10:13:22.994+09:00",
+        "checkedAt": "2026-05-26T17:01:17.655+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "speedLabel",
@@ -11835,7 +11835,7 @@
       "sourceStatus": "collector",
       "collectedPricesKrw": [],
       "textRepair": {
-        "checkedAt": "2026-05-26T10:13:22.995+09:00",
+        "checkedAt": "2026-05-26T17:01:17.656+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "speedLabel",
@@ -12036,6 +12036,113 @@
         "ASRock X870E Taichi 가격",
         "ASRock X870E Taichi 성능",
         "ASRock X870E Taichi 벤치마크"
+      ]
+    },
+    {
+      "id": "mainboard-asus-rog-crosshair-x870e-dark-hero",
+      "category": "Mainboard",
+      "name": "ASUS ROG CROSSHAIR X870E DARK HERO",
+      "maker": "ASUS",
+      "platform": "AM5",
+      "estimatedPriceKrw": 1087110,
+      "performance": 100,
+      "powerWatts": 0,
+      "speedLabel": "DDR5 8600MHz",
+      "tags": [
+        "high-end",
+        "overclocking",
+        "X870E"
+      ],
+      "notes": "High-end AM5 motherboard with 20+2+2 phase power delivery and USB4 support.",
+      "sourceQuery": "",
+      "sourceUrl": "https://search.danawa.com/dsearch.php?k1=ASUS%20ROG%20Crosshair%20X870E%20Hero%20%EA%B0%80%EA%B2%A9",
+      "sourceStatus": "collector",
+      "collectedPricesKrw": [],
+      "imageUrl": "./img/mainboard.svg",
+      "speedMetric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "Mainboard",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      },
+      "unifiedSpeedScore": 100,
+      "nbDatabase": {
+        "schema": "pc-part-nb-database.v1",
+        "unit": "100~1000",
+        "priority": "speed-first",
+        "category": "Mainboard",
+        "partId": "mainboard-asus-rog-crosshair-x870e-dark-hero",
+        "partName": "ASUS ROG CROSSHAIR X870E DARK HERO",
+        "speed": {
+          "score": 100,
+          "weight": 0.32,
+          "metric": {
+            "kind": "unknown",
+            "label": "속도 기준",
+            "value": null,
+            "unit": "",
+            "group": "Mainboard",
+            "compareNote": "부품군별 기준으로 비교해야 합니다."
+          }
+        },
+        "scores": {
+          "speed": 100,
+          "performance": 1000,
+          "value": 123,
+          "aiFit": 650,
+          "priceEfficiency": 90,
+          "powerEfficiency": 1000
+        },
+        "nbVector": [
+          100,
+          1000,
+          123,
+          650,
+          90,
+          1000
+        ],
+        "vectorLabels": [
+          "속도",
+          "성능",
+          "가성비",
+          "AI 적합",
+          "가격 효율",
+          "전력 효율"
+        ],
+        "nbMax": 238.028,
+        "nbMin": 356.548,
+        "weightedScore": 381,
+        "nbBand": "100~499",
+        "summary": "Mainboard ASUS ROG CROSSHAIR X870E DARK HERO 부품을 속도 중심 N/B 데이터베이스 점수 381점으로 저장했습니다."
+      },
+      "nbWeightedScore": 381,
+      "nbMax": 238.028,
+      "nbMin": 356.548,
+      "nbBand": "100~499",
+      "priceBand": "60만원 이상",
+      "valueIndex": 9.2,
+      "efficiencyIndex": null,
+      "aiUseScore": 65,
+      "totalScore": 55,
+      "aiExplanation": {
+        "summary": "ASUS ROG CROSSHAIR X870E DARK HERO은 Mainboard 부품군에서 총점 55점, 가성비 9.2로 계산된 후보입니다.",
+        "strengths": [],
+        "cautions": [
+          "CPU 소켓, 메모리 규격, BIOS 지원 여부 확인이 필요합니다"
+        ],
+        "userLevel": {
+          "level": "고수용",
+          "reason": "성능은 높지만 가격, 전력, 호환성 확인 부담이 커서 조립 경험이 있는 사용자에게 적합합니다."
+        },
+        "recommendation": "가격 변동 확인 후보"
+      },
+      "priceSourceStatus": "초기 기준값",
+      "sourceQueries": [
+        "ASUS ROG CROSSHAIR X870E DARK HERO 가격",
+        "ASUS ROG CROSSHAIR X870E DARK HERO 성능",
+        "ASUS ROG CROSSHAIR X870E DARK HERO 벤치마크"
       ]
     },
     {
@@ -12248,6 +12355,112 @@
         "Corsair RM1000e ATX 3.0 가격",
         "Corsair RM1000e ATX 3.0 성능",
         "Corsair RM1000e ATX 3.0 벤치마크"
+      ]
+    },
+    {
+      "id": "ram-g.skill-trident-z5-rgb-ddr5-6800mhz-cl34-32gb-16gx2",
+      "category": "RAM",
+      "name": "G.Skill Trident Z5 RGB DDR5 6800MHz CL34 32GB (16Gx2)",
+      "maker": "G.Skill",
+      "platform": "DDR5",
+      "estimatedPriceKrw": 376800,
+      "performance": 85,
+      "powerWatts": 0,
+      "speedLabel": "6800MHz",
+      "tags": [
+        "gaming",
+        "overclock"
+      ],
+      "notes": "CL34-45-45-108, 1.40V, XMP 3.0",
+      "sourceQuery": "",
+      "sourceUrl": "https://search.danawa.com/dsearch.php?k1=G.Skill%20Trident%20Z5%20RGB%20DDR5%206800MHz%2032GB%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+      "sourceStatus": "collector",
+      "collectedPricesKrw": [],
+      "imageUrl": "./img/ram.svg",
+      "speedMetric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "RAM",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      },
+      "unifiedSpeedScore": 100,
+      "nbDatabase": {
+        "schema": "pc-part-nb-database.v1",
+        "unit": "100~1000",
+        "priority": "speed-first",
+        "category": "RAM",
+        "partId": "ram-g.skill-trident-z5-rgb-ddr5-6800mhz-cl34-32gb-16gx2",
+        "partName": "G.Skill Trident Z5 RGB DDR5 6800MHz CL34 32GB (16Gx2)",
+        "speed": {
+          "score": 100,
+          "weight": 0.42,
+          "metric": {
+            "kind": "unknown",
+            "label": "속도 기준",
+            "value": null,
+            "unit": "",
+            "group": "RAM",
+            "compareNote": "부품군별 기준으로 비교해야 합니다."
+          }
+        },
+        "scores": {
+          "speed": 100,
+          "performance": 850,
+          "value": 301,
+          "aiFit": 550,
+          "priceEfficiency": 270,
+          "powerEfficiency": 850
+        },
+        "nbVector": [
+          100,
+          850,
+          301,
+          550,
+          270,
+          850
+        ],
+        "vectorLabels": [
+          "속도",
+          "성능",
+          "가성비",
+          "AI 적합",
+          "가격 효율",
+          "전력 효율"
+        ],
+        "nbMax": 310.81,
+        "nbMin": 378.775,
+        "weightedScore": 382,
+        "nbBand": "100~499",
+        "summary": "RAM G.Skill Trident Z5 RGB DDR5 6800MHz CL34 32GB (16Gx2) 부품을 속도 중심 N/B 데이터베이스 점수 382점으로 저장했습니다."
+      },
+      "nbWeightedScore": 382,
+      "nbMax": 310.81,
+      "nbMin": 378.775,
+      "nbBand": "100~499",
+      "priceBand": "30~60만원",
+      "valueIndex": 22.6,
+      "efficiencyIndex": null,
+      "aiUseScore": 55,
+      "totalScore": 55,
+      "aiExplanation": {
+        "summary": "G.Skill Trident Z5 RGB DDR5 6800MHz CL34 32GB (16Gx2)은 RAM 부품군에서 총점 55점, 가성비 22.6로 계산된 후보입니다.",
+        "strengths": [
+          "게임용 조립 PC 후보에 넣기 좋습니다"
+        ],
+        "cautions": [],
+        "userLevel": {
+          "level": "초보자용",
+          "reason": "선택 기준이 비교적 단순하고 체감 개선이 쉬워 처음 조립하는 사용자도 접근하기 좋습니다."
+        },
+        "recommendation": "가격 변동 확인 후보"
+      },
+      "priceSourceStatus": "초기 기준값",
+      "sourceQueries": [
+        "G.Skill Trident Z5 RGB DDR5 6800MHz CL34 32GB (16Gx2) 가격",
+        "G.Skill Trident Z5 RGB DDR5 6800MHz CL34 32GB (16Gx2) 성능",
+        "G.Skill Trident Z5 RGB DDR5 6800MHz CL34 32GB (16Gx2) 벤치마크"
       ]
     },
     {
@@ -13116,6 +13329,115 @@
       ]
     },
     {
+      "id": "cpu-ryzen-9-7950x3d",
+      "category": "CPU",
+      "name": "Ryzen 9 7950X3D",
+      "maker": "AMD",
+      "platform": "AM5",
+      "estimatedPriceKrw": 746700,
+      "performance": 95,
+      "powerWatts": 120,
+      "speedLabel": "4.2GHz",
+      "tags": [
+        "gaming",
+        "productivity",
+        "3D V-Cache"
+      ],
+      "notes": "Multi-pack version observed at 746,700 KRW",
+      "sourceQuery": "",
+      "sourceUrl": "https://search.danawa.com/dsearch.php?k1=AMD%20Ryzen%209%207950X3D%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+      "sourceStatus": "collector",
+      "collectedPricesKrw": [],
+      "imageUrl": "./img/cpu.svg",
+      "speedMetric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "CPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      },
+      "unifiedSpeedScore": 100,
+      "nbDatabase": {
+        "schema": "pc-part-nb-database.v1",
+        "unit": "100~1000",
+        "priority": "speed-first",
+        "category": "CPU",
+        "partId": "cpu-ryzen-9-7950x3d",
+        "partName": "Ryzen 9 7950X3D",
+        "speed": {
+          "score": 100,
+          "weight": 0.42,
+          "metric": {
+            "kind": "unknown",
+            "label": "속도 기준",
+            "value": null,
+            "unit": "",
+            "group": "CPU",
+            "compareNote": "부품군별 기준으로 비교해야 합니다."
+          }
+        },
+        "scores": {
+          "speed": 100,
+          "performance": 950,
+          "value": 169,
+          "aiFit": 620,
+          "priceEfficiency": 130,
+          "powerEfficiency": 264
+        },
+        "nbVector": [
+          100,
+          950,
+          169,
+          620,
+          130,
+          264
+        ],
+        "vectorLabels": [
+          "속도",
+          "성능",
+          "가성비",
+          "AI 적합",
+          "가격 효율",
+          "전력 효율"
+        ],
+        "nbMax": 133.719,
+        "nbMin": 337.953,
+        "weightedScore": 344,
+        "nbBand": "100~499",
+        "summary": "CPU Ryzen 9 7950X3D 부품을 속도 중심 N/B 데이터베이스 점수 344점으로 저장했습니다."
+      },
+      "nbWeightedScore": 344,
+      "nbMax": 133.719,
+      "nbMin": 337.953,
+      "nbBand": "100~499",
+      "priceBand": "60만원 이상",
+      "valueIndex": 12.7,
+      "efficiencyIndex": 0.79,
+      "aiUseScore": 62,
+      "totalScore": 54,
+      "aiExplanation": {
+        "summary": "Ryzen 9 7950X3D은 CPU 부품군에서 총점 54점, 가성비 12.7로 계산된 후보입니다.",
+        "strengths": [
+          "게임용 조립 PC 후보에 넣기 좋습니다"
+        ],
+        "cautions": [
+          "AM5 메인보드와 DDR5 메모리 호환성을 함께 확인해야 합니다"
+        ],
+        "userLevel": {
+          "level": "고수용",
+          "reason": "성능은 높지만 가격, 전력, 호환성 확인 부담이 커서 조립 경험이 있는 사용자에게 적합합니다."
+        },
+        "recommendation": "가격 변동 확인 후보"
+      },
+      "priceSourceStatus": "초기 기준값",
+      "sourceQueries": [
+        "Ryzen 9 7950X3D 가격",
+        "Ryzen 9 7950X3D 성능",
+        "Ryzen 9 7950X3D 벤치마크"
+      ]
+    },
+    {
       "id": "mainboard-asrock-z890-taichi",
       "category": "Mainboard",
       "name": "ASRock Z890 Taichi",
@@ -13780,7 +14102,7 @@
       "sourceStatus": "collector",
       "collectedPricesKrw": [],
       "textRepair": {
-        "checkedAt": "2026-05-26T10:13:22.990+09:00",
+        "checkedAt": "2026-05-26T17:01:17.653+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "notes"
@@ -13981,6 +14303,128 @@
         "Intel Core Ultra 5 245KF 가격",
         "Intel Core Ultra 5 245KF 성능",
         "Intel Core Ultra 5 245KF 벤치마크"
+      ]
+    },
+    {
+      "id": "cpu-ryzen-9-9950x3d",
+      "category": "CPU",
+      "name": "Ryzen 9 9950X3D",
+      "maker": "AMD",
+      "platform": "AM5",
+      "estimatedPriceKrw": 1390000,
+      "performance": 99,
+      "powerWatts": 170,
+      "speedLabel": "5.7GHz",
+      "tags": [
+        "gaming",
+        "workstation",
+        "high-end"
+      ],
+      "notes": "16-core, 32-thread processor with 3D V-Cache.",
+      "sourceQuery": "AMD Ryzen 9 9950X3D 최저가",
+      "sourceUrl": "https://search.danawa.com/dsearch.php?k1=AMD%20Ryzen%209%209950X3D%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+      "sourceStatus": "ai-discovered",
+      "collectedPricesKrw": [
+        42377,
+        75800,
+        77800,
+        79800,
+        202010,
+        250728,
+        250828,
+        250928,
+        251028,
+        251128,
+        251228,
+        260128
+      ],
+      "imageUrl": "./img/cpu.svg",
+      "speedMetric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "CPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      },
+      "unifiedSpeedScore": 100,
+      "nbDatabase": {
+        "schema": "pc-part-nb-database.v1",
+        "unit": "100~1000",
+        "priority": "speed-first",
+        "category": "CPU",
+        "partId": "cpu-ryzen-9-9950x3d",
+        "partName": "Ryzen 9 9950X3D",
+        "speed": {
+          "score": 100,
+          "weight": 0.42,
+          "metric": {
+            "kind": "unknown",
+            "label": "속도 기준",
+            "value": null,
+            "unit": "",
+            "group": "CPU",
+            "compareNote": "부품군별 기준으로 비교해야 합니다."
+          }
+        },
+        "scores": {
+          "speed": 100,
+          "performance": 990,
+          "value": 100,
+          "aiFit": 640,
+          "priceEfficiency": 70,
+          "powerEfficiency": 194
+        },
+        "nbVector": [
+          100,
+          990,
+          100,
+          640,
+          70,
+          194
+        ],
+        "vectorLabels": [
+          "속도",
+          "성능",
+          "가성비",
+          "AI 적합",
+          "가격 효율",
+          "전력 효율"
+        ],
+        "nbMax": 118.684,
+        "nbMin": 305.757,
+        "weightedScore": 335,
+        "nbBand": "100~499",
+        "summary": "CPU Ryzen 9 9950X3D 부품을 속도 중심 N/B 데이터베이스 점수 335점으로 저장했습니다."
+      },
+      "nbWeightedScore": 335,
+      "nbMax": 118.684,
+      "nbMin": 305.757,
+      "nbBand": "100~499",
+      "priceBand": "60만원 이상",
+      "valueIndex": 7.1,
+      "efficiencyIndex": 0.58,
+      "aiUseScore": 64,
+      "totalScore": 53,
+      "aiExplanation": {
+        "summary": "Ryzen 9 9950X3D은 CPU 부품군에서 총점 53점, 가성비 7.1로 계산된 후보입니다.",
+        "strengths": [
+          "게임용 조립 PC 후보에 넣기 좋습니다"
+        ],
+        "cautions": [
+          "AM5 메인보드와 DDR5 메모리 호환성을 함께 확인해야 합니다"
+        ],
+        "userLevel": {
+          "level": "고수용",
+          "reason": "성능은 높지만 가격, 전력, 호환성 확인 부담이 커서 조립 경험이 있는 사용자에게 적합합니다."
+        },
+        "recommendation": "가격 변동 확인 후보"
+      },
+      "priceSourceStatus": "초기 기준값",
+      "sourceQueries": [
+        "Ryzen 9 9950X3D 가격",
+        "Ryzen 9 9950X3D 성능",
+        "Ryzen 9 9950X3D 벤치마크"
       ]
     },
     {
@@ -14221,7 +14665,7 @@
       "sourceStatus": "collector",
       "collectedPricesKrw": [],
       "textRepair": {
-        "checkedAt": "2026-05-26T10:13:22.996+09:00",
+        "checkedAt": "2026-05-26T17:01:17.656+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "speedLabel",
@@ -14540,6 +14984,113 @@
       ]
     },
     {
+      "id": "mainboard-asus-rog-strix-x870e-e-gaming-wifi-7-neo",
+      "category": "Mainboard",
+      "name": "ASUS ROG STRIX X870E-E GAMING WIFI 7 NEO",
+      "maker": "ASUS",
+      "platform": "AMD AM5",
+      "estimatedPriceKrw": 950000,
+      "performance": 95,
+      "powerWatts": 0,
+      "speedLabel": "DDR5 9600MHz",
+      "tags": [
+        "high-end",
+        "wifi7",
+        "am5"
+      ],
+      "notes": "Different model from the standard X870E-E (NEO variant). Supports DDR5 up to 9600MHz.",
+      "sourceQuery": "",
+      "sourceUrl": "https://search.danawa.com/dsearch.php?k1=ASUS%20ROG%20STRIX%20X870E-E%20GAMING%20WIFI%20%EA%B0%80%EA%B2%A9",
+      "sourceStatus": "collector",
+      "collectedPricesKrw": [],
+      "imageUrl": "./img/mainboard.svg",
+      "speedMetric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "Mainboard",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      },
+      "unifiedSpeedScore": 100,
+      "nbDatabase": {
+        "schema": "pc-part-nb-database.v1",
+        "unit": "100~1000",
+        "priority": "speed-first",
+        "category": "Mainboard",
+        "partId": "mainboard-asus-rog-strix-x870e-e-gaming-wifi-7-neo",
+        "partName": "ASUS ROG STRIX X870E-E GAMING WIFI 7 NEO",
+        "speed": {
+          "score": 100,
+          "weight": 0.32,
+          "metric": {
+            "kind": "unknown",
+            "label": "속도 기준",
+            "value": null,
+            "unit": "",
+            "group": "Mainboard",
+            "compareNote": "부품군별 기준으로 비교해야 합니다."
+          }
+        },
+        "scores": {
+          "speed": 100,
+          "performance": 950,
+          "value": 133,
+          "aiFit": 620,
+          "priceEfficiency": 110,
+          "powerEfficiency": 950
+        },
+        "nbVector": [
+          100,
+          950,
+          133,
+          620,
+          110,
+          950
+        ],
+        "vectorLabels": [
+          "속도",
+          "성능",
+          "가성비",
+          "AI 적합",
+          "가격 효율",
+          "전력 효율"
+        ],
+        "nbMax": 238.081,
+        "nbMin": 366.665,
+        "weightedScore": 368,
+        "nbBand": "100~499",
+        "summary": "Mainboard ASUS ROG STRIX X870E-E GAMING WIFI 7 NEO 부품을 속도 중심 N/B 데이터베이스 점수 368점으로 저장했습니다."
+      },
+      "nbWeightedScore": 368,
+      "nbMax": 238.081,
+      "nbMin": 366.665,
+      "nbBand": "100~499",
+      "priceBand": "60만원 이상",
+      "valueIndex": 10,
+      "efficiencyIndex": null,
+      "aiUseScore": 62,
+      "totalScore": 53,
+      "aiExplanation": {
+        "summary": "ASUS ROG STRIX X870E-E GAMING WIFI 7 NEO은 Mainboard 부품군에서 총점 53점, 가성비 10로 계산된 후보입니다.",
+        "strengths": [],
+        "cautions": [
+          "CPU 소켓, 메모리 규격, BIOS 지원 여부 확인이 필요합니다"
+        ],
+        "userLevel": {
+          "level": "고수용",
+          "reason": "성능은 높지만 가격, 전력, 호환성 확인 부담이 커서 조립 경험이 있는 사용자에게 적합합니다."
+        },
+        "recommendation": "가격 변동 확인 후보"
+      },
+      "priceSourceStatus": "초기 기준값",
+      "sourceQueries": [
+        "ASUS ROG STRIX X870E-E GAMING WIFI 7 NEO 가격",
+        "ASUS ROG STRIX X870E-E GAMING WIFI 7 NEO 성능",
+        "ASUS ROG STRIX X870E-E GAMING WIFI 7 NEO 벤치마크"
+      ]
+    },
+    {
       "id": "mainboard-gigabyte-b860m-aorus-elite-wifi6e",
       "category": "Mainboard",
       "name": "GIGABYTE B860M AORUS ELITE WIFI6E",
@@ -14644,6 +15195,113 @@
         "GIGABYTE B860M AORUS ELITE WIFI6E 가격",
         "GIGABYTE B860M AORUS ELITE WIFI6E 성능",
         "GIGABYTE B860M AORUS ELITE WIFI6E 벤치마크"
+      ]
+    },
+    {
+      "id": "mainboard-mag-b860m-mortar-wifi",
+      "category": "Mainboard",
+      "name": "MAG B860M Mortar WIFI",
+      "maker": "MSI",
+      "platform": "LGA1851",
+      "estimatedPriceKrw": 272480,
+      "performance": 75,
+      "powerWatts": 0,
+      "speedLabel": "B860",
+      "tags": [
+        "mATX",
+        "DDR5",
+        "WiFi"
+      ],
+      "notes": "Compatible with Intel Core Ultra Series 2",
+      "sourceQuery": "",
+      "sourceUrl": "https://search.danawa.com/dsearch.php?k1=MSI%20MAG%20B860M%20Mortar%20WIFI%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+      "sourceStatus": "collector",
+      "collectedPricesKrw": [],
+      "imageUrl": "./img/mainboard.svg",
+      "speedMetric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "Mainboard",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      },
+      "unifiedSpeedScore": 100,
+      "nbDatabase": {
+        "schema": "pc-part-nb-database.v1",
+        "unit": "100~1000",
+        "priority": "speed-first",
+        "category": "Mainboard",
+        "partId": "mainboard-mag-b860m-mortar-wifi",
+        "partName": "MAG B860M Mortar WIFI",
+        "speed": {
+          "score": 100,
+          "weight": 0.32,
+          "metric": {
+            "kind": "unknown",
+            "label": "속도 기준",
+            "value": null,
+            "unit": "",
+            "group": "Mainboard",
+            "compareNote": "부품군별 기준으로 비교해야 합니다."
+          }
+        },
+        "scores": {
+          "speed": 100,
+          "performance": 750,
+          "value": 367,
+          "aiFit": 490,
+          "priceEfficiency": 370,
+          "powerEfficiency": 750
+        },
+        "nbVector": [
+          100,
+          750,
+          367,
+          490,
+          370,
+          750
+        ],
+        "vectorLabels": [
+          "속도",
+          "성능",
+          "가성비",
+          "AI 적합",
+          "가격 효율",
+          "전력 효율"
+        ],
+        "nbMax": 371.489,
+        "nbMin": 384.891,
+        "weightedScore": 357,
+        "nbBand": "100~499",
+        "summary": "Mainboard MAG B860M Mortar WIFI 부품을 속도 중심 N/B 데이터베이스 점수 357점으로 저장했습니다."
+      },
+      "nbWeightedScore": 357,
+      "nbMax": 371.489,
+      "nbMin": 384.891,
+      "nbBand": "100~499",
+      "priceBand": "15~30만원",
+      "valueIndex": 27.5,
+      "efficiencyIndex": null,
+      "aiUseScore": 49,
+      "totalScore": 53,
+      "aiExplanation": {
+        "summary": "MAG B860M Mortar WIFI은 Mainboard 부품군에서 총점 53점, 가성비 27.5로 계산된 후보입니다.",
+        "strengths": [],
+        "cautions": [
+          "CPU 소켓, 메모리 규격, BIOS 지원 여부 확인이 필요합니다"
+        ],
+        "userLevel": {
+          "level": "중수용",
+          "reason": "가격과 성능 균형은 좋지만 플랫폼, 전력, 업그레이드 방향을 함께 비교해야 합니다."
+        },
+        "recommendation": "가격 변동 확인 후보"
+      },
+      "priceSourceStatus": "초기 기준값",
+      "sourceQueries": [
+        "MAG B860M Mortar WIFI 가격",
+        "MAG B860M Mortar WIFI 성능",
+        "MAG B860M Mortar WIFI 벤치마크"
       ]
     },
     {
@@ -15821,6 +16479,115 @@
       ]
     },
     {
+      "id": "cpu-intel-core-i7-14700f",
+      "category": "CPU",
+      "name": "Intel Core i7-14700F",
+      "maker": "Intel",
+      "platform": "LGA1700",
+      "estimatedPriceKrw": 463400,
+      "performance": 85,
+      "powerWatts": 65,
+      "speedLabel": "Up to 5.0 GHz",
+      "tags": [
+        "gaming",
+        "productivity"
+      ],
+      "notes": "Raptor Lake Refresh, non-K version",
+      "sourceQuery": "",
+      "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Intel%20Core%20i7-14700F%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+      "sourceStatus": "collector",
+      "collectedPricesKrw": [],
+      "imageUrl": "./img/cpu.svg",
+      "speedMetric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "CPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      },
+      "unifiedSpeedScore": 100,
+      "nbDatabase": {
+        "schema": "pc-part-nb-database.v1",
+        "unit": "100~1000",
+        "priority": "speed-first",
+        "category": "CPU",
+        "partId": "cpu-intel-core-i7-14700f",
+        "partName": "Intel Core i7-14700F",
+        "speed": {
+          "score": 100,
+          "weight": 0.42,
+          "metric": {
+            "kind": "unknown",
+            "label": "속도 기준",
+            "value": null,
+            "unit": "",
+            "group": "CPU",
+            "compareNote": "부품군별 기준으로 비교해야 합니다."
+          }
+        },
+        "scores": {
+          "speed": 100,
+          "performance": 850,
+          "value": 244,
+          "aiFit": 550,
+          "priceEfficiency": 220,
+          "powerEfficiency": 436
+        },
+        "nbVector": [
+          100,
+          850,
+          244,
+          550,
+          220,
+          436
+        ],
+        "vectorLabels": [
+          "속도",
+          "성능",
+          "가성비",
+          "AI 적합",
+          "가격 효율",
+          "전력 효율"
+        ],
+        "nbMax": 198.275,
+        "nbMin": 368.314,
+        "weightedScore": 345,
+        "nbBand": "100~499",
+        "summary": "CPU Intel Core i7-14700F 부품을 속도 중심 N/B 데이터베이스 점수 345점으로 저장했습니다."
+      },
+      "nbWeightedScore": 345,
+      "nbMax": 198.275,
+      "nbMin": 368.314,
+      "nbBand": "100~499",
+      "priceBand": "30~60만원",
+      "valueIndex": 18.3,
+      "efficiencyIndex": 1.31,
+      "aiUseScore": 55,
+      "totalScore": 52,
+      "aiExplanation": {
+        "summary": "Intel Core i7-14700F은 CPU 부품군에서 총점 52점, 가성비 18.3로 계산된 후보입니다.",
+        "strengths": [
+          "전력 대비 성능이 좋아 발열과 소음 관리에 유리합니다",
+          "게임용 조립 PC 후보에 넣기 좋습니다"
+        ],
+        "cautions": [
+          "LGA1700 메인보드와 DDR5 메모리 호환성을 함께 확인해야 합니다"
+        ],
+        "userLevel": {
+          "level": "중수용",
+          "reason": "가격과 성능 균형은 좋지만 플랫폼, 전력, 업그레이드 방향을 함께 비교해야 합니다."
+        },
+        "recommendation": "가격 변동 확인 후보"
+      },
+      "priceSourceStatus": "초기 기준값",
+      "sourceQueries": [
+        "Intel Core i7-14700F 가격",
+        "Intel Core i7-14700F 성능",
+        "Intel Core i7-14700F 벤치마크"
+      ]
+    },
+    {
       "id": "gpu-rtx-4070-ti-super",
       "category": "GPU",
       "name": "NVIDIA GeForce RTX 4070 Ti SUPER",
@@ -15949,7 +16716,7 @@
       "sourceStatus": "collector",
       "collectedPricesKrw": [],
       "textRepair": {
-        "checkedAt": "2026-05-26T10:13:22.996+09:00",
+        "checkedAt": "2026-05-26T17:01:17.656+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "speedLabel",
@@ -16066,7 +16833,7 @@
       "sourceStatus": "collector",
       "collectedPricesKrw": [],
       "textRepair": {
-        "checkedAt": "2026-05-26T10:13:22.996+09:00",
+        "checkedAt": "2026-05-26T17:01:17.657+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "speedLabel",
@@ -17789,7 +18556,7 @@
       "sourceStatus": "collector",
       "collectedPricesKrw": [],
       "textRepair": {
-        "checkedAt": "2026-05-26T10:13:22.986+09:00",
+        "checkedAt": "2026-05-26T17:01:17.650+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "notes"
@@ -18444,7 +19211,7 @@
       "sourceStatus": "collector",
       "collectedPricesKrw": [],
       "textRepair": {
-        "checkedAt": "2026-05-26T10:13:22.996+09:00",
+        "checkedAt": "2026-05-26T17:01:17.657+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "speedLabel",
@@ -18646,6 +19413,110 @@
         "AMD Radeon RX 7900 GRE 가격",
         "AMD Radeon RX 7900 GRE 성능",
         "AMD Radeon RX 7900 GRE 벤치마크"
+      ]
+    },
+    {
+      "id": "ram-samsung-ddr5-6400-cl52-cudimm-32gb",
+      "category": "RAM",
+      "name": "Samsung DDR5-6400 CL52 CUDIMM 32GB",
+      "maker": "Samsung",
+      "platform": "DDR5",
+      "estimatedPriceKrw": 378680,
+      "performance": 75,
+      "powerWatts": 0,
+      "speedLabel": "6400MHz",
+      "tags": [
+        "CUDIMM",
+        "Intel 15th Gen"
+      ],
+      "notes": "CUDIMM module with clock driver, specifically targeted for newer Intel platforms.",
+      "sourceQuery": "",
+      "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Samsung%20DDR5%206400MHz%2032GB%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+      "sourceStatus": "collector",
+      "collectedPricesKrw": [],
+      "imageUrl": "./img/ram.svg",
+      "speedMetric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "RAM",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      },
+      "unifiedSpeedScore": 100,
+      "nbDatabase": {
+        "schema": "pc-part-nb-database.v1",
+        "unit": "100~1000",
+        "priority": "speed-first",
+        "category": "RAM",
+        "partId": "ram-samsung-ddr5-6400-cl52-cudimm-32gb",
+        "partName": "Samsung DDR5-6400 CL52 CUDIMM 32GB",
+        "speed": {
+          "score": 100,
+          "weight": 0.42,
+          "metric": {
+            "kind": "unknown",
+            "label": "속도 기준",
+            "value": null,
+            "unit": "",
+            "group": "RAM",
+            "compareNote": "부품군별 기준으로 비교해야 합니다."
+          }
+        },
+        "scores": {
+          "speed": 100,
+          "performance": 750,
+          "value": 264,
+          "aiFit": 490,
+          "priceEfficiency": 260,
+          "powerEfficiency": 750
+        },
+        "nbVector": [
+          100,
+          750,
+          264,
+          490,
+          260,
+          750
+        ],
+        "vectorLabels": [
+          "속도",
+          "성능",
+          "가성비",
+          "AI 적합",
+          "가격 효율",
+          "전력 효율"
+        ],
+        "nbMax": 310.582,
+        "nbMin": 388.808,
+        "weightedScore": 344,
+        "nbBand": "100~499",
+        "summary": "RAM Samsung DDR5-6400 CL52 CUDIMM 32GB 부품을 속도 중심 N/B 데이터베이스 점수 344점으로 저장했습니다."
+      },
+      "nbWeightedScore": 344,
+      "nbMax": 310.582,
+      "nbMin": 388.808,
+      "nbBand": "100~499",
+      "priceBand": "30~60만원",
+      "valueIndex": 19.8,
+      "efficiencyIndex": null,
+      "aiUseScore": 49,
+      "totalScore": 49,
+      "aiExplanation": {
+        "summary": "Samsung DDR5-6400 CL52 CUDIMM 32GB은 RAM 부품군에서 총점 49점, 가성비 19.8로 계산된 후보입니다.",
+        "strengths": [],
+        "cautions": [],
+        "userLevel": {
+          "level": "초보자용",
+          "reason": "선택 기준이 비교적 단순하고 체감 개선이 쉬워 처음 조립하는 사용자도 접근하기 좋습니다."
+        },
+        "recommendation": "가격 변동 확인 후보"
+      },
+      "priceSourceStatus": "초기 기준값",
+      "sourceQueries": [
+        "Samsung DDR5-6400 CL52 CUDIMM 32GB 가격",
+        "Samsung DDR5-6400 CL52 CUDIMM 32GB 성능",
+        "Samsung DDR5-6400 CL52 CUDIMM 32GB 벤치마크"
       ]
     },
     {
@@ -18883,7 +19754,7 @@
       "sourceStatus": "collector",
       "collectedPricesKrw": [],
       "textRepair": {
-        "checkedAt": "2026-05-26T10:13:22.995+09:00",
+        "checkedAt": "2026-05-26T17:01:17.656+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "speedLabel",
@@ -19209,7 +20080,7 @@
       "sourceStatus": "collector",
       "collectedPricesKrw": [],
       "textRepair": {
-        "checkedAt": "2026-05-26T10:13:22.989+09:00",
+        "checkedAt": "2026-05-26T17:01:17.652+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "notes"
@@ -19536,7 +20407,7 @@
       "sourceStatus": "collector",
       "collectedPricesKrw": [],
       "textRepair": {
-        "checkedAt": "2026-05-26T10:13:22.997+09:00",
+        "checkedAt": "2026-05-26T17:01:17.657+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "speedLabel",
@@ -20504,7 +21375,7 @@
       "sourceStatus": "collector",
       "collectedPricesKrw": [],
       "textRepair": {
-        "checkedAt": "2026-05-26T10:13:22.983+09:00",
+        "checkedAt": "2026-05-26T17:01:17.649+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "notes"
@@ -20597,6 +21468,112 @@
         "AMD 라이젠 5 7600 가격",
         "AMD 라이젠 5 7600 성능",
         "AMD 라이젠 5 7600 벤치마크"
+      ]
+    },
+    {
+      "id": "cpu-intel-core-i5-14400",
+      "category": "CPU",
+      "name": "Intel Core i5-14400",
+      "maker": "Intel",
+      "platform": "LGA1700",
+      "estimatedPriceKrw": 353000,
+      "performance": 65,
+      "powerWatts": 65,
+      "speedLabel": "2.5GHz",
+      "tags": [
+        "mainstream",
+        "productivity"
+      ],
+      "notes": "Raptor Lake Refresh",
+      "sourceQuery": "",
+      "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Intel%20Core%20i5-14400%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+      "sourceStatus": "collector",
+      "collectedPricesKrw": [],
+      "imageUrl": "./img/cpu.svg",
+      "speedMetric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "CPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      },
+      "unifiedSpeedScore": 100,
+      "nbDatabase": {
+        "schema": "pc-part-nb-database.v1",
+        "unit": "100~1000",
+        "priority": "speed-first",
+        "category": "CPU",
+        "partId": "cpu-intel-core-i5-14400",
+        "partName": "Intel Core i5-14400",
+        "speed": {
+          "score": 100,
+          "weight": 0.42,
+          "metric": {
+            "kind": "unknown",
+            "label": "속도 기준",
+            "value": null,
+            "unit": "",
+            "group": "CPU",
+            "compareNote": "부품군별 기준으로 비교해야 합니다."
+          }
+        },
+        "scores": {
+          "speed": 100,
+          "performance": 650,
+          "value": 245,
+          "aiFit": 420,
+          "priceEfficiency": 280,
+          "powerEfficiency": 333
+        },
+        "nbVector": [
+          100,
+          650,
+          245,
+          420,
+          280,
+          333
+        ],
+        "vectorLabels": [
+          "속도",
+          "성능",
+          "가성비",
+          "AI 적합",
+          "가격 효율",
+          "전력 효율"
+        ],
+        "nbMax": 227.067,
+        "nbMin": 399.013,
+        "weightedScore": 291,
+        "nbBand": "100~499",
+        "summary": "CPU Intel Core i5-14400 부품을 속도 중심 N/B 데이터베이스 점수 291점으로 저장했습니다."
+      },
+      "nbWeightedScore": 291,
+      "nbMax": 227.067,
+      "nbMin": 399.013,
+      "nbBand": "100~499",
+      "priceBand": "30~60만원",
+      "valueIndex": 18.4,
+      "efficiencyIndex": 1,
+      "aiUseScore": 42,
+      "totalScore": 44,
+      "aiExplanation": {
+        "summary": "Intel Core i5-14400은 CPU 부품군에서 총점 44점, 가성비 18.4로 계산된 후보입니다.",
+        "strengths": [],
+        "cautions": [
+          "LGA1700 메인보드와 DDR5 메모리 호환성을 함께 확인해야 합니다"
+        ],
+        "userLevel": {
+          "level": "중수용",
+          "reason": "가격과 성능 균형은 좋지만 플랫폼, 전력, 업그레이드 방향을 함께 비교해야 합니다."
+        },
+        "recommendation": "가격 변동 확인 후보"
+      },
+      "priceSourceStatus": "초기 기준값",
+      "sourceQueries": [
+        "Intel Core i5-14400 가격",
+        "Intel Core i5-14400 성능",
+        "Intel Core i5-14400 벤치마크"
       ]
     },
     {
@@ -21148,25 +22125,12 @@
         "gaming"
       ],
       "notes": "Intel Core Ultra 5 250K PLUS은 가격과 성능, 플랫폼 호환성을 함께 확인할 CPU 후보입니다.",
-      "sourceQuery": "Intel Core Ultra 200S 최저가",
+      "sourceQuery": "",
       "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Intel%20Core%20Ultra%20200S%20%EC%B5%9C%EC%A0%80%EA%B0%80",
-      "sourceStatus": "ai-discovered",
-      "collectedPricesKrw": [
-        29650,
-        34692,
-        40065,
-        45713,
-        47388,
-        48045,
-        81193,
-        202010,
-        396000,
-        401500,
-        572000,
-        722150
-      ],
+      "sourceStatus": "collector",
+      "collectedPricesKrw": [],
       "textRepair": {
-        "checkedAt": "2026-05-26T10:13:22.993+09:00",
+        "checkedAt": "2026-05-26T17:01:17.655+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "notes"
@@ -21471,6 +22435,218 @@
         "G.Skill Trident Z5 Neo RGB DDR5 6000MHz CL30 64GB (32Gx2) 가격",
         "G.Skill Trident Z5 Neo RGB DDR5 6000MHz CL30 64GB (32Gx2) 성능",
         "G.Skill Trident Z5 Neo RGB DDR5 6000MHz CL30 64GB (32Gx2) 벤치마크"
+      ]
+    },
+    {
+      "id": "cpu-intel-core-i3-14100",
+      "category": "CPU",
+      "name": "Intel Core i3-14100",
+      "maker": "Intel",
+      "platform": "LGA1700",
+      "estimatedPriceKrw": 194400,
+      "performance": 35,
+      "powerWatts": 60,
+      "speedLabel": "Up to 4.7GHz",
+      "tags": [
+        "office",
+        "budget"
+      ],
+      "notes": "Raptor Lake Refresh",
+      "sourceQuery": "",
+      "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Intel%20Core%20i3-14100%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+      "sourceStatus": "collector",
+      "collectedPricesKrw": [],
+      "imageUrl": "./img/cpu.svg",
+      "speedMetric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "CPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      },
+      "unifiedSpeedScore": 100,
+      "nbDatabase": {
+        "schema": "pc-part-nb-database.v1",
+        "unit": "100~1000",
+        "priority": "speed-first",
+        "category": "CPU",
+        "partId": "cpu-intel-core-i3-14100",
+        "partName": "Intel Core i3-14100",
+        "speed": {
+          "score": 100,
+          "weight": 0.42,
+          "metric": {
+            "kind": "unknown",
+            "label": "속도 기준",
+            "value": null,
+            "unit": "",
+            "group": "CPU",
+            "compareNote": "부품군별 기준으로 비교해야 합니다."
+          }
+        },
+        "scores": {
+          "speed": 100,
+          "performance": 350,
+          "value": 240,
+          "aiFit": 230,
+          "priceEfficiency": 510,
+          "powerEfficiency": 194
+        },
+        "nbVector": [
+          100,
+          350,
+          240,
+          230,
+          510,
+          194
+        ],
+        "vectorLabels": [
+          "속도",
+          "성능",
+          "가성비",
+          "AI 적합",
+          "가격 효율",
+          "전력 효율"
+        ],
+        "nbMax": 212.288,
+        "nbMin": 426.698,
+        "weightedScore": 221,
+        "nbBand": "100~499",
+        "summary": "CPU Intel Core i3-14100 부품을 속도 중심 N/B 데이터베이스 점수 221점으로 저장했습니다."
+      },
+      "nbWeightedScore": 221,
+      "nbMax": 212.288,
+      "nbMin": 426.698,
+      "nbBand": "100~499",
+      "priceBand": "15~30만원",
+      "valueIndex": 18,
+      "efficiencyIndex": 0.58,
+      "aiUseScore": 23,
+      "totalScore": 33,
+      "aiExplanation": {
+        "summary": "Intel Core i3-14100은 CPU 부품군에서 총점 33점, 가성비 18로 계산된 후보입니다.",
+        "strengths": [],
+        "cautions": [
+          "LGA1700 메인보드와 DDR5 메모리 호환성을 함께 확인해야 합니다"
+        ],
+        "userLevel": {
+          "level": "중수용",
+          "reason": "가격과 성능 균형은 좋지만 플랫폼, 전력, 업그레이드 방향을 함께 비교해야 합니다."
+        },
+        "recommendation": "가격 변동 확인 후보"
+      },
+      "priceSourceStatus": "초기 기준값",
+      "sourceQueries": [
+        "Intel Core i3-14100 가격",
+        "Intel Core i3-14100 성능",
+        "Intel Core i3-14100 벤치마크"
+      ]
+    },
+    {
+      "id": "cpu-intel-core-ultra-3-205",
+      "category": "CPU",
+      "name": "Intel Core Ultra 3 205",
+      "maker": "Intel",
+      "platform": "LGA1851",
+      "estimatedPriceKrw": 250000,
+      "performance": 30,
+      "powerWatts": 65,
+      "speedLabel": "Arrow Lake",
+      "tags": [
+        "office",
+        "entry"
+      ],
+      "notes": "Identified from Lenovo IdeaCentre Tower 08IAS10 specifications (Core Ultra 3 205 / Arrow Lake).",
+      "sourceQuery": "",
+      "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Intel%20Core%20Ultra%203%20200%20series%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+      "sourceStatus": "collector",
+      "collectedPricesKrw": [],
+      "imageUrl": "./img/cpu.svg",
+      "speedMetric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "CPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      },
+      "unifiedSpeedScore": 100,
+      "nbDatabase": {
+        "schema": "pc-part-nb-database.v1",
+        "unit": "100~1000",
+        "priority": "speed-first",
+        "category": "CPU",
+        "partId": "cpu-intel-core-ultra-3-205",
+        "partName": "Intel Core Ultra 3 205",
+        "speed": {
+          "score": 100,
+          "weight": 0.42,
+          "metric": {
+            "kind": "unknown",
+            "label": "속도 기준",
+            "value": null,
+            "unit": "",
+            "group": "CPU",
+            "compareNote": "부품군별 기준으로 비교해야 합니다."
+          }
+        },
+        "scores": {
+          "speed": 100,
+          "performance": 300,
+          "value": 160,
+          "aiFit": 200,
+          "priceEfficiency": 400,
+          "powerEfficiency": 154
+        },
+        "nbVector": [
+          100,
+          300,
+          160,
+          200,
+          400,
+          154
+        ],
+        "vectorLabels": [
+          "속도",
+          "성능",
+          "가성비",
+          "AI 적합",
+          "가격 효율",
+          "전력 효율"
+        ],
+        "nbMax": 194.18,
+        "nbMin": 465.01,
+        "weightedScore": 186,
+        "nbBand": "100~499",
+        "summary": "CPU Intel Core Ultra 3 205 부품을 속도 중심 N/B 데이터베이스 점수 186점으로 저장했습니다."
+      },
+      "nbWeightedScore": 186,
+      "nbMax": 194.18,
+      "nbMin": 465.01,
+      "nbBand": "100~499",
+      "priceBand": "15~30만원",
+      "valueIndex": 12,
+      "efficiencyIndex": 0.46,
+      "aiUseScore": 20,
+      "totalScore": 27,
+      "aiExplanation": {
+        "summary": "Intel Core Ultra 3 205은 CPU 부품군에서 총점 27점, 가성비 12로 계산된 후보입니다.",
+        "strengths": [],
+        "cautions": [
+          "LGA1851 메인보드와 DDR5 메모리 호환성을 함께 확인해야 합니다"
+        ],
+        "userLevel": {
+          "level": "중수용",
+          "reason": "가격과 성능 균형은 좋지만 플랫폼, 전력, 업그레이드 방향을 함께 비교해야 합니다."
+        },
+        "recommendation": "가격 변동 확인 후보"
+      },
+      "priceSourceStatus": "초기 기준값",
+      "sourceQueries": [
+        "Intel Core Ultra 3 205 가격",
+        "Intel Core Ultra 3 205 성능",
+        "Intel Core Ultra 3 205 벤치마크"
       ]
     }
   ],

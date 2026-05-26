@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-26T11:46:28.767+09:00",
+  "updatedAt": "2026-05-26T17:10:26.409+09:00",
   "category": "GPU",
   "id": "gpu-rtx-5070-ti",
   "name": "NVIDIA GeForce RTX 5070 Ti",
@@ -83,7 +83,7 @@
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=NVIDIA%20GeForce%20RTX%205070%20Ti%20price",
   "notes": "NVIDIA GeForce RTX 5070 Ti은 게임, 작업, AI 활용을 함께 검토할 그래픽카드 후보입니다.",
   "textRepair": {
-    "checkedAt": "2026-05-26T11:46:28.767+09:00",
+    "checkedAt": "2026-05-26T17:10:26.409+09:00",
     "method": "ai-text-sanity-rules",
     "repairedFields": [
       "speedLabel",

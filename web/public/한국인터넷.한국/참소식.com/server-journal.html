@@ -233,6 +233,16 @@
       <h2 id="timeline-title">시간별 서버 일지</h2>
       <ol class="timeline-list">
         <li class="timeline-item">
+          <time class="timeline-time" datetime="2026-05-26T17:10:00+09:00">2026-05-26 17:10 KST</time>
+          <div class="timeline-body">
+            <strong>메인 뉴스 브리핑, 포스팅 상세 화면, 제외 업로드 배치 개선</strong>
+            <p>참소식.com 메인 페이지의 컴퓨터 커뮤니티 뉴스 브리핑에 로봇 뉴스 3개를 함께 표시하도록 확장했습니다. 메인 카드에서는 외부 원문으로 바로 이동하지 않고, 커뮤니티 뉴스 또는 로봇 뉴스의 내부 포스팅 상세 화면으로 먼저 이동하도록 수정했습니다.</p>
+            <p><a href="./community/">컴퓨터 커뮤니티 뉴스</a>와 <a href="./robot/">로봇 뉴스</a> 페이지에는 <code>?post=번호</code> 기반 상세 포스팅 모드를 추가했습니다. 상세 화면에서는 AI 요약 본문을 포스팅 형태로 보여주고, 별표 기반 마크다운 표시를 제거하며, 원문 보기 링크와 Google, Naver, Bing, YouTube 관련 검색 링크를 함께 제공합니다.</p>
+            <p>서버 동기화 보조 배치 파일 <code>sync_chamsosik_no_exe_json.bat</code>을 새로 만들었습니다. 기존 동기화 파일은 유지하고, 새 배치 파일은 로컬 임시 스테이징 폴더를 만든 뒤 <code>*.exe</code>와 <code>*.json</code> 파일을 제외하고 업로드하도록 구성했습니다.</p>
+            <p>배치 파일 테스트 중 한글 경로 인코딩 문제와 SSH 대기 문제를 확인해 수정했습니다. 최종 테스트에서는 로컬 스테이징, 제외 규칙 적용, 서버 임시 폴더 생성, SCP 업로드, 원격 rsync 반영, 임시 폴더 정리까지 완료했습니다.</p>
+          </div>
+        </li>
+        <li class="timeline-item">
           <time class="timeline-time" datetime="2026-05-25T11:25:00+09:00">2026-05-25 11:25 KST</time>
           <div class="timeline-body">
             <strong>AI 컴퓨터 부품 분석 및 완성 조립 페이지 추가</strong>

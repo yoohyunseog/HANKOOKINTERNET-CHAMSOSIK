@@ -1,0 +1,365 @@
+﻿import json
+import os
+from datetime import datetime
+import requests
+from bs4 import BeautifulSoup
+from urllib.parse import urljoin, urlparse
+from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.common.by import By
+from webdriver_manager.chrome import ChromeDriverManager
+import ollama
+import time
+
+# --- 설정 ---
+# 직접 접속할 로봇/AI/자동화 사이트
+SOURCE_PAGES = [
+    {"name": "IEEE Spectrum Robotics", "url": "https://spectrum.ieee.org/robotics"},
+    {"name": "The Robot Report", "url": "https://www.therobotreport.com/"},
+    {"name": "Robotics & Automation News", "url": "https://roboticsandautomationnews.com/"},
+    {"name": "TechCrunch Robotics", "url": "https://techcrunch.com/category/robotics/"},
+    {"name": "Interesting Engineering Robotics", "url": "https://interestingengineering.com/innovation/robotics"},
+    {"name": "New Atlas Robotics", "url": "https://newatlas.com/robotics/"},
+    {"name": "ScienceDaily Robotics", "url": "https://www.sciencedaily.com/news/computers_math/robotics/"},
+    {"name": "MIT News Robotics", "url": "https://news.mit.edu/topic/robotics"},
+    {"name": "ZDNet Korea AI", "url": "https://zdnet.co.kr/news/?lstcode=0050"},
+    {"name": "ITWorld Korea AI", "url": "https://www.itworld.co.kr/news"},
+]
+
+# 우선순위 로봇/AI 전문 사이트
+TRUSTED_SOURCES = [
+    "spectrum.ieee.org", "therobotreport.com", "roboticsandautomationnews.com",
+    "techcrunch.com", "interestingengineering.com", "newatlas.com",
+    "sciencedaily.com", "news.mit.edu", "zdnet.co.kr", "itworld.co.kr"
+]
+
+ROBOT_TERMS = [
+    "robot", "robotics", "humanoid", "android", "automation", "autonomous",
+    "drone", "cobot", "manipulator", "actuator", "sensor", "lidar",
+    "warehouse", "factory", "industrial", "surgical", "medical robot",
+    "tesla bot", "optimus", "figure ai", "unitree", "boston dynamics",
+    "ai", "embodied ai", "machine learning", "navigation", "slam",
+    "로봇", "로보틱스", "휴머노이드", "안드로이드", "자동화", "자율주행",
+    "드론", "협동로봇", "산업용 로봇", "서비스 로봇", "의료 로봇",
+    "물류 로봇", "공장 자동화", "센서", "라이다", "액추에이터",
+    "보스턴 다이내믹스", "테슬라 옵티머스", "피규어 AI", "유니트리"
+]
+
+MAX_ARTICLES = int(os.getenv("NEWS_BOT_MAX_ARTICLES", "5"))
+MAX_CANDIDATE_LINKS = int(os.getenv("NEWS_BOT_MAX_CANDIDATES", "20"))
+SKIP_AI = os.getenv("NEWS_BOT_SKIP_AI", "0") == "1"
+REQUEST_HEADERS = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
+}
+
+# Ollama 모델 설정
+MODEL_NAME = "deepseek-v4-flash:cloud"
+# 결과 저장 경로
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+SAVE_PATH = os.path.abspath(os.path.join(BASE_DIR, "..", "news_data.json"))
+
+def setup_driver():
+    chrome_options = Options()
+    chrome_options.add_argument("--headless")
+    chrome_options.add_argument("--no-sandbox")
+    chrome_options.add_argument("--disable-dev-shm-usage")
+    # 더 실제 브라우저 같은 User-Agent 설정
+    chrome_options.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36")
+    chrome_options.add_argument("--disable-blink-features=AutomationControlled")
+    chrome_options.add_experimental_option("excludeSwitches", ["enable-automation"])
+    chrome_options.add_experimental_option('useAutomationExtension', False)
+    
+    service = Service(ChromeDriverManager().install())
+    driver = webdriver.Chrome(service=service, options=chrome_options)
+    # 자동화 감지 방지 스크립트 실행
+    driver.execute_cdp_cmd("Page.addScriptToEvaluateOnNewDocument", {
+        "source": """
+            Object.defineProperty(navigator, 'webdriver', {
+                get: () => undefined
+            })
+        """
+    })
+    return driver
+
+def normalize_url(base_url, href):
+    if not href:
+        return None
+    url = urljoin(base_url, href.split("#")[0])
+    parsed = urlparse(url)
+    if parsed.scheme not in ("http", "https"):
+        return None
+    return url
+
+def is_trusted_article_url(url):
+    parsed = urlparse(url)
+    host = parsed.netloc.lower().replace("www.", "")
+    path = parsed.path.strip("/").lower()
+    if not path or len(path) < 8:
+        return False
+    if any(skip in path for skip in [
+        "/tag/", "/author/", "/about", "/contact", "/privacy", "/video",
+        "/login", "/signup", "/search", "/category", "/page/", "/rss",
+        "/member", "/notice", "/event", "/shop", "/cart"
+    ]):
+        return False
+    return any(source.replace("www.", "") in host for source in TRUSTED_SOURCES)
+
+def score_hardware_link(title, url):
+    text = f"{title} {url}".lower()
+    return sum(1 for term in ROBOT_TERMS if term in text)
+
+def collect_direct_article_links(driver):
+    """Google 검색 대신 원본 사이트에 직접 접속해서 기사 링크를 수집한다."""
+    candidates = []
+    seen = set()
+
+    for source in SOURCE_PAGES:
+        source_url = source["url"]
+        print(f"Opening source page: {source_url}")
+        try:
+            response = requests.get(source_url, headers=REQUEST_HEADERS, timeout=12)
+            response.raise_for_status()
+            soup = BeautifulSoup(response.text, "html.parser")
+            anchors = soup.select("a[href]")
+        except Exception as e:
+            print(f"  Requests failed, trying browser: {e}")
+            try:
+                driver.get(source_url)
+                time.sleep(2)
+                anchors = driver.find_elements(By.CSS_SELECTOR, "a[href]")
+            except Exception as browser_error:
+                print(f"  Error opening source page: {browser_error}")
+                continue
+
+        for anchor in anchors:
+            get_attribute = getattr(anchor, "get_attribute", None)
+            if callable(get_attribute):
+                href = anchor.get_attribute("href")
+                title = (anchor.text or "").strip()
+            else:
+                href = anchor.get("href")
+                title = " ".join(anchor.get_text(" ", strip=True).split())
+                title = title or anchor.get("title", "") or anchor.get("aria-label", "")
+
+            url = normalize_url(source_url, href)
+            if not url or url in seen or not is_trusted_article_url(url):
+                continue
+
+            score = score_hardware_link(title, url)
+            if score <= 0:
+                continue
+
+            seen.add(url)
+            candidates.append({
+                "url": url,
+                "title": title,
+                "score": score,
+                "source": source["name"],
+            })
+
+    candidates.sort(key=lambda item: item["score"], reverse=True)
+    links = [item["url"] for item in candidates[:MAX_CANDIDATE_LINKS]]
+    print(f"Collected {len(links)} direct article links.")
+    return links
+
+def extract_article_content(driver, url):
+    """해당 URL에 접속하여 본문 텍스트 추출"""
+    try:
+        driver.get(url)
+        time.sleep(2)
+        paragraphs = driver.find_elements(By.TAG_NAME, "p")
+        content = "\n".join([p.text for p in paragraphs if len(p.text) > 20])
+        title = driver.title
+        comments = extract_visible_comments(driver)
+        return {"title": title, "content": content, "comments": comments, "url": url}
+    except Exception as e:
+        print(f"  ⚠️ Error extracting {url}: {e}")
+        return None
+
+def extract_visible_comments(driver):
+    """페이지에 바로 노출된 댓글/반응 텍스트를 최대한 수집한다."""
+    selectors = [
+        "[class*='comment']",
+        "[id*='comment']",
+        "[class*='reply']",
+        "[id*='reply']",
+        "[class*='reaction']",
+        "[class*='opinion']",
+        ".cmt",
+        ".reply",
+        ".comment",
+        ".comments",
+    ]
+    snippets = []
+    seen = set()
+
+    for selector in selectors:
+        try:
+            elements = driver.find_elements(By.CSS_SELECTOR, selector)
+        except Exception:
+            continue
+
+        for element in elements[:20]:
+            text = " ".join((element.text or "").split())
+            if len(text) < 12 or len(text) > 500:
+                continue
+            lowered = text.lower()
+            if lowered in seen:
+                continue
+            seen.add(lowered)
+            snippets.append(text)
+            if len(snippets) >= 12:
+                return snippets
+
+    return snippets
+
+def translate_and_summarize_with_ai(article):
+    """영어 본문을 AI에게 전달하여 한국어 뉴스 포스팅으로 변환"""
+    print(f"AI is translating and summarizing: {article['title'][:30]}...")
+    article_content = article["content"][:5000]
+    visible_comments = "\n".join(article.get("comments") or [])[:2500]
+    comments_block = visible_comments or "No visible comments were available. Infer likely community reaction from the article, but clearly mark it as inferred."
+    
+    prompt = f"""
+    You are a professional robotics and AI automation journalist.
+    Translate the following article into a high-quality Korean news post for a robotics community.
+    
+    [Original Title]: {article['title']}
+    [Original Content]: {article_content}
+    [Visible Comments or Reactions]: {comments_block}
+    
+    Please provide the result in the following JSON format:
+    {{
+        "translated_title": "Catchy Korean title that attracts robotics enthusiasts",
+        "summary": "A 3-5 sentence professional summary in Korean",
+        "full_post": "A detailed Korean news post (bullet points allowed) explaining the key points, specs, and implications",
+        "category": "Humanoid/Industrial/Service/Medical/Drone/AI/Research/Other",
+        "importance": "High/Medium/Low",
+        "comment_mood": "Positive/Negative/Mixed/Neutral/No visible comments",
+        "comment_summary": "A Korean summary of visible comment atmosphere. If there were no comments, say this is an inferred likely reaction.",
+        "reaction_keywords": ["short Korean keyword 1", "short Korean keyword 2", "short Korean keyword 3"]
+    }}
+    
+    Ensure the tone is professional yet engaging, like a robotics and AI automation blog.
+    Do not invent direct quotes. Separate visible comment analysis from inferred community reaction.
+    """
+
+    try:
+        if SKIP_AI:
+            raise RuntimeError("AI skipped by NEWS_BOT_SKIP_AI=1")
+
+        response = ollama.generate(model=MODEL_NAME, prompt=prompt, format="json")
+        return json.loads(response['response'])
+    except Exception as e:
+        print(f"  ❌ AI Error: {e}")
+        return fallback_news_post(article)
+
+def fallback_news_post(article):
+    title = article["title"]
+    summary = f"원문 기사 '{title}'를 수집했습니다. 자세한 내용은 원문 링크에서 확인할 수 있습니다."
+    comment_count = len(article.get("comments") or [])
+    if comment_count:
+        comment_mood = "Mixed"
+        comment_summary = f"페이지에서 댓글 또는 반응 텍스트 {comment_count}개를 확인했습니다. 상세 반응 분석은 AI 요약 실행 시 보강됩니다."
+    else:
+        comment_mood = "No visible comments"
+        comment_summary = "페이지에서 바로 확인 가능한 댓글을 찾지 못했습니다. 커뮤니티 반응은 추가 수집 후 판단이 필요합니다."
+    return {
+        "translated_title": title,
+        "summary": summary,
+        "full_post": summary,
+        "category": guess_category(article),
+        "importance": "Medium",
+        "comment_mood": comment_mood,
+        "comment_summary": comment_summary,
+        "reaction_keywords": guess_reaction_keywords(article)
+    }
+
+def guess_reaction_keywords(article):
+    category = guess_category(article)
+    if category == "Humanoid":
+        return ["휴머노이드", "상용화", "안전성"]
+    if category == "Industrial":
+        return ["공장 자동화", "생산성", "비용"]
+    if category == "Service":
+        return ["서비스 로봇", "현장 도입", "사용성"]
+    if category == "Medical":
+        return ["의료 로봇", "정밀도", "규제"]
+    if category == "Drone":
+        return ["드론", "자율비행", "물류"]
+    if category == "Research":
+        return ["연구", "알고리즘", "실험"]
+    return ["로봇", "AI", "상용화"]
+
+def guess_category(article):
+    text = f"{article['title']} {article['url']} {article['content'][:500]}".lower()
+    if any(term in text for term in ["humanoid", "android", "tesla bot", "optimus", "figure", "unitree", "휴머노이드", "안드로이드", "옵티머스"]):
+        return "Humanoid"
+    if any(term in text for term in ["industrial", "factory", "warehouse", "cobot", "automation", "공장", "산업용", "협동로봇", "물류"]):
+        return "Industrial"
+    if any(term in text for term in ["service robot", "delivery robot", "home robot", "서비스 로봇", "배달 로봇", "가정용"]):
+        return "Service"
+    if any(term in text for term in ["medical", "surgical", "healthcare", "의료", "수술"]):
+        return "Medical"
+    if any(term in text for term in ["drone", "uav", "드론", "자율비행"]):
+        return "Drone"
+    if any(term in text for term in ["research", "mit", "university", "paper", "연구", "논문", "실험"]):
+        return "Research"
+    if any(term in text for term in ["ai", "embodied", "machine learning", "인공지능", "AI"]):
+        return "AI"
+    return "Other"
+
+def main():
+    print("🚀 Starting Global Robotics News Curator Bot...")
+    driver = setup_driver()
+    final_news_list = []
+    processed_urls = set()
+    
+    try:
+        links = collect_direct_article_links(driver)
+        for link in links:
+            if len(final_news_list) >= MAX_ARTICLES:
+                break
+            if link in processed_urls:
+                continue
+            processed_urls.add(link)
+
+            article = extract_article_content(driver, link)
+            if article and len(article['content']) > 200:
+                ai_result = translate_and_summarize_with_ai(article)
+                if ai_result:
+                    final_news_list.append({
+                        "original_title": article['title'],
+                        "translated_title": ai_result.get('translated_title', article['title']),
+                        "summary": ai_result.get('summary', ''),
+                        "full_post": ai_result.get('full_post', ''),
+                        "url": article['url'],
+                        "category": ai_result.get('category', 'Other'),
+                        "importance": ai_result.get('importance', 'Medium'),
+                        "comment_mood": ai_result.get('comment_mood', 'No visible comments'),
+                        "comment_summary": ai_result.get('comment_summary', ''),
+                        "reaction_keywords": ai_result.get('reaction_keywords', []),
+                        "visible_comment_count": len(article.get('comments') or []),
+                        "collected_at": datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+                    })
+        
+        timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        output_data = {
+            "last_updated": timestamp,
+            "total_count": len(final_news_list),
+            "news": final_news_list
+        }
+        
+        with open(SAVE_PATH, "w", encoding="utf-8") as f:
+            json.dump(output_data, f, ensure_ascii=False, indent=4)
+            
+        print(f"\n✅ Successfully collected and translated {len(final_news_list)} articles!")
+        print(f"Saved to: {SAVE_PATH}")
+
+    finally:
+        driver.quit()
+
+if __name__ == "__main__":
+    main()
+

@@ -1,6 +1,6 @@
 {
   "schema": "pc-parts-collector-state.v1",
-  "updatedAt": "2026-05-26T11:46:26.973+09:00",
+  "updatedAt": "2026-05-26T17:10:21.955+09:00",
   "nextCandidateIndex": 97,
   "batchSize": 3,
   "candidateCount": 98,
@@ -8,304 +8,304 @@
   "aiDiscoveryEnabled": true,
   "aiSearchHistory": [
     {
-      "query": "(planner)",
-      "outcome": "error:Post \"https://ollama.com:443/api/generate?ts=1779762718\": dial tcp 34.36.133.15:443: connectex: An attempt was made to access a socket in a way forbidden by its access permissions.",
-      "at": "2026-05-26T11:31:58.762+09:00"
+      "query": "Intel Core Ultra 9 285K 최저가",
+      "outcome": "skip:The search text excerpt is empty, and no concrete price or product availability was provided for the Intel Core Ultra 9 285K.",
+      "at": "2026-05-26T16:52:25.923+09:00"
     },
     {
-      "query": "(planner)",
-      "outcome": "error:Post \"https://ollama.com:443/api/generate?ts=1779762718\": dial tcp 34.36.133.15:443: connectex: An attempt was made to access a socket in a way forbidden by its access permissions.",
-      "at": "2026-05-26T11:31:58.805+09:00"
-    },
-    {
-      "query": "(planner)",
-      "outcome": "error:Post \"https://ollama.com:443/api/generate?ts=1779762718\": dial tcp 34.36.133.15:443: connectex: An attempt was made to access a socket in a way forbidden by its access permissions.",
-      "at": "2026-05-26T11:31:58.845+09:00"
-    },
-    {
-      "query": "(planner)",
-      "outcome": "error:Post \"https://ollama.com:443/api/generate?ts=1779762718\": dial tcp 34.36.133.15:443: connectex: An attempt was made to access a socket in a way forbidden by its access permissions.",
-      "at": "2026-05-26T11:31:58.888+09:00"
-    },
-    {
-      "query": "(planner)",
-      "outcome": "error:Post \"https://ollama.com:443/api/generate?ts=1779762731\": dial tcp 34.36.133.15:443: connectex: An attempt was made to access a socket in a way forbidden by its access permissions.",
-      "at": "2026-05-26T11:32:11.285+09:00"
-    },
-    {
-      "query": "(planner)",
-      "outcome": "error:Post \"https://ollama.com:443/api/generate?ts=1779762731\": dial tcp 34.36.133.15:443: connectex: An attempt was made to access a socket in a way forbidden by its access permissions.",
-      "at": "2026-05-26T11:32:11.338+09:00"
-    },
-    {
-      "query": "(planner)",
-      "outcome": "error:Post \"https://ollama.com:443/api/generate?ts=1779762731\": dial tcp 34.36.133.15:443: connectex: An attempt was made to access a socket in a way forbidden by its access permissions.",
-      "at": "2026-05-26T11:32:11.390+09:00"
-    },
-    {
-      "query": "(planner)",
-      "outcome": "error:Post \"https://ollama.com:443/api/generate?ts=1779762731\": dial tcp 34.36.133.15:443: connectex: An attempt was made to access a socket in a way forbidden by its access permissions.",
-      "at": "2026-05-26T11:32:11.449+09:00"
-    },
-    {
-      "query": "(planner)",
-      "outcome": "error:Post \"https://ollama.com:443/api/generate?ts=1779762731\": dial tcp 34.36.133.15:443: connectex: An attempt was made to access a socket in a way forbidden by its access permissions.",
-      "at": "2026-05-26T11:32:11.498+09:00"
-    },
-    {
-      "query": "(planner)",
-      "outcome": "error:Post \"https://ollama.com:443/api/generate?ts=1779762731\": dial tcp 34.36.133.15:443: connectex: An attempt was made to access a socket in a way forbidden by its access permissions.",
-      "at": "2026-05-26T11:32:11.543+09:00"
-    },
-    {
-      "query": "(planner)",
-      "outcome": "error:Post \"https://ollama.com:443/api/generate?ts=1779762731\": dial tcp 34.36.133.15:443: connectex: An attempt was made to access a socket in a way forbidden by its access permissions.",
-      "at": "2026-05-26T11:32:11.587+09:00"
-    },
-    {
-      "query": "(planner)",
-      "outcome": "error:Post \"https://ollama.com:443/api/generate?ts=1779762731\": dial tcp 34.36.133.15:443: connectex: An attempt was made to access a socket in a way forbidden by its access permissions.",
-      "at": "2026-05-26T11:32:11.631+09:00"
-    },
-    {
-      "query": "(planner)",
-      "outcome": "error:Post \"https://ollama.com:443/api/generate?ts=1779762743\": dial tcp 34.36.133.15:443: connectex: An attempt was made to access a socket in a way forbidden by its access permissions.",
-      "at": "2026-05-26T11:32:23.802+09:00"
-    },
-    {
-      "query": "(planner)",
-      "outcome": "error:Post \"https://ollama.com:443/api/generate?ts=1779762743\": dial tcp 34.36.133.15:443: connectex: An attempt was made to access a socket in a way forbidden by its access permissions.",
-      "at": "2026-05-26T11:32:23.923+09:00"
-    },
-    {
-      "query": "(planner)",
-      "outcome": "error:Post \"https://ollama.com:443/api/generate?ts=1779762743\": dial tcp 34.36.133.15:443: connectex: An attempt was made to access a socket in a way forbidden by its access permissions.",
-      "at": "2026-05-26T11:32:24.007+09:00"
-    },
-    {
-      "query": "(planner)",
-      "outcome": "error:Post \"https://ollama.com:443/api/generate?ts=1779762744\": dial tcp 34.36.133.15:443: connectex: An attempt was made to access a socket in a way forbidden by its access permissions.",
-      "at": "2026-05-26T11:32:24.077+09:00"
-    },
-    {
-      "query": "(planner)",
-      "outcome": "error:Post \"https://ollama.com:443/api/generate?ts=1779762744\": dial tcp 34.36.133.15:443: connectex: An attempt was made to access a socket in a way forbidden by its access permissions.",
-      "at": "2026-05-26T11:32:24.145+09:00"
-    },
-    {
-      "query": "(planner)",
-      "outcome": "error:Post \"https://ollama.com:443/api/generate?ts=1779762744\": dial tcp 34.36.133.15:443: connectex: An attempt was made to access a socket in a way forbidden by its access permissions.",
-      "at": "2026-05-26T11:32:24.202+09:00"
-    },
-    {
-      "query": "(planner)",
-      "outcome": "error:Post \"https://ollama.com:443/api/generate?ts=1779762744\": dial tcp 34.36.133.15:443: connectex: An attempt was made to access a socket in a way forbidden by its access permissions.",
-      "at": "2026-05-26T11:32:24.258+09:00"
-    },
-    {
-      "query": "(planner)",
-      "outcome": "error:Post \"https://ollama.com:443/api/generate?ts=1779762744\": dial tcp 34.36.133.15:443: connectex: An attempt was made to access a socket in a way forbidden by its access permissions.",
-      "at": "2026-05-26T11:32:24.309+09:00"
-    },
-    {
-      "query": "(planner)",
-      "outcome": "error:Post \"https://ollama.com:443/api/generate?ts=1779762756\": dial tcp 34.36.133.15:443: connectex: An attempt was made to access a socket in a way forbidden by its access permissions.",
-      "at": "2026-05-26T11:32:36.937+09:00"
-    },
-    {
-      "query": "(planner)",
-      "outcome": "error:Post \"https://ollama.com:443/api/generate?ts=1779762756\": dial tcp 34.36.133.15:443: connectex: An attempt was made to access a socket in a way forbidden by its access permissions.",
-      "at": "2026-05-26T11:32:36.987+09:00"
-    },
-    {
-      "query": "(planner)",
-      "outcome": "error:Post \"https://ollama.com:443/api/generate?ts=1779762757\": dial tcp 34.36.133.15:443: connectex: An attempt was made to access a socket in a way forbidden by its access permissions.",
-      "at": "2026-05-26T11:32:37.038+09:00"
-    },
-    {
-      "query": "(planner)",
-      "outcome": "error:Post \"https://ollama.com:443/api/generate?ts=1779762757\": dial tcp 34.36.133.15:443: connectex: An attempt was made to access a socket in a way forbidden by its access permissions.",
-      "at": "2026-05-26T11:32:37.089+09:00"
-    },
-    {
-      "query": "(planner)",
-      "outcome": "error:Post \"https://ollama.com:443/api/generate?ts=1779762757\": dial tcp 34.36.133.15:443: connectex: An attempt was made to access a socket in a way forbidden by its access permissions.",
-      "at": "2026-05-26T11:32:37.152+09:00"
-    },
-    {
-      "query": "(planner)",
-      "outcome": "error:Post \"https://ollama.com:443/api/generate?ts=1779762757\": dial tcp 34.36.133.15:443: connectex: An attempt was made to access a socket in a way forbidden by its access permissions.",
-      "at": "2026-05-26T11:32:37.209+09:00"
-    },
-    {
-      "query": "(planner)",
-      "outcome": "error:Post \"https://ollama.com:443/api/generate?ts=1779762757\": dial tcp 34.36.133.15:443: connectex: An attempt was made to access a socket in a way forbidden by its access permissions.",
-      "at": "2026-05-26T11:32:37.262+09:00"
-    },
-    {
-      "query": "(planner)",
-      "outcome": "error:Post \"https://ollama.com:443/api/generate?ts=1779762757\": dial tcp 34.36.133.15:443: connectex: An attempt was made to access a socket in a way forbidden by its access permissions.",
-      "at": "2026-05-26T11:32:37.310+09:00"
-    },
-    {
-      "query": "(planner)",
-      "outcome": "error:Post \"https://ollama.com:443/api/generate?ts=1779762769\": dial tcp 34.36.133.15:443: connectex: An attempt was made to access a socket in a way forbidden by its access permissions.",
-      "at": "2026-05-26T11:32:49.567+09:00"
-    },
-    {
-      "query": "(planner)",
-      "outcome": "error:Post \"https://ollama.com:443/api/generate?ts=1779762769\": dial tcp 34.36.133.15:443: connectex: An attempt was made to access a socket in a way forbidden by its access permissions.",
-      "at": "2026-05-26T11:32:49.619+09:00"
-    },
-    {
-      "query": "(planner)",
-      "outcome": "error:Post \"https://ollama.com:443/api/generate?ts=1779762769\": dial tcp 34.36.133.15:443: connectex: An attempt was made to access a socket in a way forbidden by its access permissions.",
-      "at": "2026-05-26T11:32:49.663+09:00"
-    },
-    {
-      "query": "(planner)",
-      "outcome": "error:Post \"https://ollama.com:443/api/generate?ts=1779762769\": dial tcp 34.36.133.15:443: connectex: An attempt was made to access a socket in a way forbidden by its access permissions.",
-      "at": "2026-05-26T11:32:49.711+09:00"
-    },
-    {
-      "query": "(planner)",
-      "outcome": "error:Post \"https://ollama.com:443/api/generate?ts=1779762769\": dial tcp 34.36.133.15:443: connectex: An attempt was made to access a socket in a way forbidden by its access permissions.",
-      "at": "2026-05-26T11:32:49.755+09:00"
-    },
-    {
-      "query": "(planner)",
-      "outcome": "error:Post \"https://ollama.com:443/api/generate?ts=1779762769\": dial tcp 34.36.133.15:443: connectex: An attempt was made to access a socket in a way forbidden by its access permissions.",
-      "at": "2026-05-26T11:32:49.803+09:00"
-    },
-    {
-      "query": "(planner)",
-      "outcome": "error:Post \"https://ollama.com:443/api/generate?ts=1779762769\": dial tcp 34.36.133.15:443: connectex: An attempt was made to access a socket in a way forbidden by its access permissions.",
-      "at": "2026-05-26T11:32:49.850+09:00"
-    },
-    {
-      "query": "(planner)",
-      "outcome": "error:Post \"https://ollama.com:443/api/generate?ts=1779762769\": dial tcp 34.36.133.15:443: connectex: An attempt was made to access a socket in a way forbidden by its access permissions.",
-      "at": "2026-05-26T11:32:49.895+09:00"
-    },
-    {
-      "query": "Intel Core Ultra 200S series CPU",
-      "outcome": "skip:The search results did not return any individual Intel Core Ultra 200S series CPUs. The only relevant result is a pre-built Lenovo ThinkCentre desktop containing a 'Core Ultra 5' (Arrow Lake), but the specific CPU model number (e.g., Ultra 5 245K) and its standalone price are not provided.",
-      "at": "2026-05-26T11:38:08.830+09:00"
-    },
-    {
-      "query": "Intel Core Ultra 5 245K price",
-      "outcome": "duplicate:Intel Core Ultra 5 245K",
-      "at": "2026-05-26T11:38:28.583+09:00"
-    },
-    {
-      "query": "Intel Core Ultra 7 265K price",
-      "outcome": "skip:The search result is a landing page for a search engine (Danawa) showing categories and filters, but it does not provide a concrete price or a specific product listing for the Intel Core Ultra 7 265K. The 'Observed prices' provided in the prompt appear to be random numbers or unrelated data rather than actual market prices for this CPU.",
-      "at": "2026-05-26T11:38:45.452+09:00"
-    },
-    {
-      "query": "AMD Ryzen 7 9800X3D price",
-      "outcome": "skip:The search result is a landing page for Danawa's search engine. While '9800x3d' appears in the popular keywords list, there is no specific product listing, concrete price, or technical specification provided in the text excerpt. The 'Observed prices' provided are unrelated numbers and not actual market prices for the CPU.",
-      "at": "2026-05-26T11:39:11.453+09:00"
-    },
-    {
-      "query": "AMD Ryzen 9 9950X price",
-      "outcome": "skip:The search result for 'AMD Ryzen 9 9950X' did not return a specific product listing or price for that model. The only concrete product found in the text was an 'AMD Ryzen 5 8500G', which is a different model. The page is primarily a search landing page with filters and categories.",
-      "at": "2026-05-26T11:39:31.174+09:00"
-    },
-    {
-      "query": "AMD Ryzen 9 9900X price",
-      "outcome": "skip:The search result for 'AMD Ryzen 9 9900X' did not return a specific product listing or price for that model. The text provided is a search landing page with filters and a listing for a different CPU (Ryzen 5 8500G).",
-      "at": "2026-05-26T11:39:55.247+09:00"
-    },
-    {
-      "query": "Intel Core Ultra 9 285K price",
-      "outcome": "skip:The search result is a landing page for Danawa's search engine. It shows categories, filters, and popular keywords, but it does not provide a specific product listing, concrete price, or technical specifications for the Intel Core Ultra 9 285K. The 'Observed prices' are unrelated numbers from the page and not actual market prices for the CPU.",
-      "at": "2026-05-26T11:40:10.292+09:00"
-    },
-    {
-      "query": "AMD Ryzen 7 7800X3D price",
-      "outcome": "skip:The search result is a landing page for Danawa's search engine. While it lists categories and filters, it does not provide a specific product listing, concrete price, or technical specifications for the AMD Ryzen 7 7800X3D. The 'Observed prices' are unrelated numbers from the page layout, not actual market prices.",
-      "at": "2026-05-26T11:40:25.073+09:00"
-    },
-    {
-      "query": "Intel Core i5-14600K price",
-      "outcome": "skip:The search result is a Danawa landing page containing categories, filters, and popular keywords, but it does not provide a specific product listing, concrete price, or technical specifications for the Intel Core i5-14600K. The observed prices are unrelated numbers from the page layout.",
-      "at": "2026-05-26T11:41:21.542+09:00"
+      "query": "Intel Core i7-14700K 최저가",
+      "outcome": "skip:The search text excerpt is empty, and no concrete price or product availability was provided for the Intel Core i7-14700K.",
+      "at": "2026-05-26T16:52:45.462+09:00"
     },
     {
       "query": "Intel Core i5-14600K 최저가",
-      "outcome": "duplicate:Intel Core i5-14600K",
-      "at": "2026-05-26T11:41:37.133+09:00"
+      "outcome": "skip:The search text excerpt is empty, and no concrete price or product availability was provided for the Intel Core i5-14600K.",
+      "at": "2026-05-26T16:53:03.963+09:00"
     },
     {
-      "query": "Intel Core i7-14700K price",
-      "outcome": "skip:The search result is a landing page from Danawa containing categories, filters, and popular keywords, but it does not provide a specific product listing or a concrete market price for the Intel Core i7-14700K. The observed prices are unrelated numbers from the page layout.",
-      "at": "2026-05-26T11:41:50.715+09:00"
-    },
-    {
-      "query": "AMD Ryzen 5 7600X 최저가",
-      "outcome": "duplicate:AMD Ryzen 5 7600X",
-      "at": "2026-05-26T11:42:21.012+09:00"
-    },
-    {
-      "query": "AMD Ryzen 5 7500F price",
-      "outcome": "skip:The search result is a landing page from Danawa. While it mentions the query 'AMD Ryzen 5 7500F', the only concrete product listing with a price in the text is for the 'AMD Ryzen 5 8500G', which is a different model. No specific price or listing for the 7500F was found.",
-      "at": "2026-05-26T11:42:36.477+09:00"
-    },
-    {
-      "query": "Intel Core i9-14900K 최저가",
-      "outcome": "duplicate:Intel Core i9-14900K",
-      "at": "2026-05-26T11:42:51.930+09:00"
-    },
-    {
-      "query": "Intel Core Ultra 5 245K price",
-      "outcome": "skip:The search result is a Danawa landing page with categories and filters. It explicitly states '해당 옵션의 상품이 검색결과에 없습니다' (No products found for the selected options) and does not provide a specific product listing or market price for the Intel Core Ultra 5 245K.",
-      "at": "2026-05-26T11:43:04.378+09:00"
+      "query": "AMD Ryzen 7 7800X3D 최저가",
+      "outcome": "skip:The search text excerpt is empty, and no concrete price or availability was provided for the AMD Ryzen 7 7800X3D.",
+      "at": "2026-05-26T16:53:22.023+09:00"
     },
     {
       "query": "Intel Core Ultra 7 265K 최저가",
-      "outcome": "skip:The search result text is empty or does not provide a concrete product listing, price, or specifications for the Intel Core Ultra 7 265K.",
-      "at": "2026-05-26T11:43:27.136+09:00"
+      "outcome": "skip:The search result is a landing page from Danawa with category filters and general navigation links, but it does not provide a concrete price or specific product listing for the Intel Core Ultra 7 265K. The 'Observed prices' provided in the prompt are fragmented numbers from the page (likely unrelated IDs or metadata) and not actual product prices.",
+      "at": "2026-05-26T16:53:54.511+09:00"
     },
     {
-      "query": "AMD Ryzen 7 9700X 최저가",
-      "outcome": "duplicate:AMD Ryzen 7 9700X",
-      "at": "2026-05-26T11:44:08.918+09:00"
+      "query": "Intel Core Ultra 7 265K 가격",
+      "outcome": "skip:The search result is a general category/filter page from Danawa. It lists available filters (like 'Core Ultra 7') but does not provide a specific product listing, concrete price, or availability for the Intel Core Ultra 7 265K. The observed prices are unrelated metadata/IDs.",
+      "at": "2026-05-26T16:54:12.945+09:00"
     },
     {
-      "query": "AMD Ryzen 9 9900X 최저가",
-      "outcome": "duplicate:AMD Ryzen 9 9900X",
-      "at": "2026-05-26T11:44:19.913+09:00"
+      "query": "AMD Ryzen 9 7950X3D 최저가",
+      "outcome": "duplicate:AMD Ryzen 9 7950X3D",
+      "at": "2026-05-26T16:54:29.459+09:00"
+    },
+    {
+      "query": "AMD Ryzen 7 9800X3D 최저가",
+      "outcome": "duplicate:Ryzen 7 9800X3D",
+      "at": "2026-05-26T16:54:41.648+09:00"
     },
     {
       "query": "AMD Ryzen 9 9950X 최저가",
       "outcome": "duplicate:AMD Ryzen 9 9950X",
-      "at": "2026-05-26T11:44:39.759+09:00"
+      "at": "2026-05-26T16:54:55.793+09:00"
+    },
+    {
+      "query": "AMD Ryzen 5 9600X 최저가",
+      "outcome": "duplicate:AMD Ryzen 5 9600X",
+      "at": "2026-05-26T16:55:07.659+09:00"
+    },
+    {
+      "query": "AMD Ryzen 9 9900X 최저가",
+      "outcome": "duplicate:Ryzen 9 9900X",
+      "at": "2026-05-26T16:55:20.025+09:00"
+    },
+    {
+      "query": "AMD Ryzen 7 9700X 최저가",
+      "outcome": "duplicate:AMD Ryzen 7 9700X",
+      "at": "2026-05-26T16:55:35.313+09:00"
+    },
+    {
+      "query": "AMD Ryzen 5 7500F 최저가",
+      "outcome": "duplicate:AMD Ryzen 5 7500F",
+      "at": "2026-05-26T16:56:06.787+09:00"
+    },
+    {
+      "query": "Intel Core i5-14400F 최저가",
+      "outcome": "duplicate:Intel Core i5-14400F",
+      "at": "2026-05-26T16:56:36.204+09:00"
+    },
+    {
+      "query": "AMD Ryzen 7 7700 최저가",
+      "outcome": "duplicate:AMD Ryzen 7 7700",
+      "at": "2026-05-26T16:56:49.918+09:00"
+    },
+    {
+      "query": "Samsung 990 PRO 2TB Heatsink 가격",
+      "outcome": "skip:The part 'Samsung 990 PRO 2TB Heatsink' is already present in the saved parts list.",
+      "at": "2026-05-26T16:57:02.379+09:00"
+    },
+    {
+      "query": "Intel Core i7-14700K 최저가",
+      "outcome": "duplicate:Core i7-14700K",
+      "at": "2026-05-26T16:57:19.593+09:00"
+    },
+    {
+      "query": "AMD Ryzen 5 7600 최저가",
+      "outcome": "duplicate:Ryzen 5 7600",
+      "at": "2026-05-26T16:57:37.774+09:00"
+    },
+    {
+      "query": "Samsung DDR5 5600 16GB 최저가",
+      "outcome": "skip:The part 'Samsung DDR5 16GB 5600MHz' is already present in the saved parts list.",
+      "at": "2026-05-26T16:58:19.334+09:00"
+    },
+    {
+      "query": "Intel Core Ultra 9 285K 최저가",
+      "outcome": "duplicate:Intel Core Ultra 9 285K",
+      "at": "2026-05-26T16:58:39.856+09:00"
+    },
+    {
+      "query": "Intel Core Ultra 7 265K 최저가",
+      "outcome": "duplicate:Intel Core Ultra 7 265K",
+      "at": "2026-05-26T16:59:18.924+09:00"
+    },
+    {
+      "query": "AMD Ryzen 9 9950X 최저가",
+      "outcome": "duplicate:Ryzen 9 9950X",
+      "at": "2026-05-26T16:59:38.249+09:00"
     },
     {
       "query": "AMD Ryzen 7 9800X3D 최저가",
       "outcome": "duplicate:AMD Ryzen 7 9800X3D",
-      "at": "2026-05-26T11:44:55.255+09:00"
-    },
-    {
-      "query": "Intel Core Ultra 9 285K price",
-      "outcome": "skip:The search result is a Danawa landing page that explicitly states '해당 옵션의 상품이 검색결과에 없습니다' (No products found for the selected options). It provides categories and filters but no concrete product listing or market price for the Intel Core Ultra 9 285K.",
-      "at": "2026-05-26T11:45:06.739+09:00"
-    },
-    {
-      "query": "AMD Ryzen 9 9950X3D 최저가",
-      "outcome": "duplicate:AMD Ryzen 9 9950X3D",
-      "at": "2026-05-26T11:45:32.253+09:00"
-    },
-    {
-      "query": "AMD Ryzen 7 9800X3D price",
-      "outcome": "skip:The search result is a Danawa landing page that explicitly states '해당 옵션의 상품이 검색결과에 없습니다' (No products found for the selected options). It provides category filters and popular keywords but no concrete product listing or market price for the AMD Ryzen 7 9800X3D.",
-      "at": "2026-05-26T11:46:00.837+09:00"
+      "at": "2026-05-26T16:59:53.309+09:00"
     },
     {
       "query": "Intel Core Ultra 5 245K 최저가",
-      "outcome": "skip:The search result is a Danawa landing page that explicitly states '해당 옵션의 상품이 검색결과에 없습니다' (No products found for the selected options). It provides category filters and general navigation but no concrete product listing or market price for the Intel Core Ultra 5 245K.",
-      "at": "2026-05-26T11:46:26.908+09:00"
+      "outcome": "duplicate:Intel Core Ultra 5 245K",
+      "at": "2026-05-26T17:00:06.913+09:00"
+    },
+    {
+      "query": "AMD Ryzen 9 9950X3D 최저가",
+      "outcome": "collect:CPU:Ryzen 9 9950X3D",
+      "at": "2026-05-26T17:00:19.364+09:00"
+    },
+    {
+      "query": "Intel Core Ultra 9 285K 최저가",
+      "outcome": "skip:The search result is a general category page from Danawa and does not provide a specific price or concrete listing for the Intel Core Ultra 9 285K. Additionally, the 'Recent searches' log indicates this part was already considered a duplicate/previously handled.",
+      "at": "2026-05-26T17:00:31.274+09:00"
+    },
+    {
+      "query": "NVIDIA GeForce RTX 5080 최저가",
+      "outcome": "skip:The search result is a general category/filter page from Danawa. While 'RTX 5080' appears in the chipset filter list, there are no concrete product listings with specific prices, VRAM, or model details for a specific GPU card.",
+      "at": "2026-05-26T17:00:51.747+09:00"
+    },
+    {
+      "query": "Intel Core i5-13400F 최저가",
+      "outcome": "duplicate:Intel Core i5-13400F",
+      "at": "2026-05-26T17:01:11.794+09:00"
+    },
+    {
+      "query": "AMD Ryzen 7 7800X3D 최저가",
+      "outcome": "duplicate:AMD Ryzen 7 7800X3D",
+      "at": "2026-05-26T17:02:00.554+09:00"
+    },
+    {
+      "query": "Intel Core i7-14700K 최저가",
+      "outcome": "duplicate:Intel Core i7-14700K",
+      "at": "2026-05-26T17:02:10.107+09:00"
+    },
+    {
+      "query": "AMD Ryzen 5 7500F 최저가",
+      "outcome": "duplicate:AMD Ryzen 5 7500F",
+      "at": "2026-05-26T17:02:21.733+09:00"
+    },
+    {
+      "query": "Crucial T705 4TB 최저가",
+      "outcome": "skip:The part 'Crucial T705 4TB' is already present in the saved parts list.",
+      "at": "2026-05-26T17:02:30.648+09:00"
+    },
+    {
+      "query": "Intel Core i9-14900K 최저가",
+      "outcome": "duplicate:Intel Core i9-14900K",
+      "at": "2026-05-26T17:02:46.979+09:00"
+    },
+    {
+      "query": "AMD Ryzen 9 7950X 최저가",
+      "outcome": "duplicate:AMD Ryzen 9 7950X",
+      "at": "2026-05-26T17:02:58.388+09:00"
+    },
+    {
+      "query": "NVIDIA GeForce RTX 5070 최저가",
+      "outcome": "skip:The search result is a general category/filter page from Danawa. While 'RTX 5070' appears in the chipset filter list, there are no concrete product listings with specific prices, VRAM, or model details for a specific GPU card.",
+      "at": "2026-05-26T17:03:20.608+09:00"
+    },
+    {
+      "query": "AMD Ryzen 7 9700X 최저가",
+      "outcome": "duplicate:AMD Ryzen 7 9700X",
+      "at": "2026-05-26T17:03:39.443+09:00"
+    },
+    {
+      "query": "Intel Core Ultra 7 265K 최저가",
+      "outcome": "skip:The search result is a general category/filter page from Danawa. While 'Intel Core Ultra 7 265K' is the query and appears in the filter options, there are no concrete product listings with specific prices, specifications, or individual vendor offers in the provided text.",
+      "at": "2026-05-26T17:04:24.492+09:00"
+    },
+    {
+      "query": "Intel Core Ultra 9 285K 최저가",
+      "outcome": "skip:The search result is a general category/filter page from Danawa. While 'Intel Core Ultra 9 285K' is the query and appears in the filter options, there are no concrete product listings with specific prices, specifications, or individual vendor offers in the provided text.",
+      "at": "2026-05-26T17:04:32.108+09:00"
+    },
+    {
+      "query": "AMD Ryzen 7 9800X3D 최저가",
+      "outcome": "duplicate:AMD Ryzen 7 9800X3D",
+      "at": "2026-05-26T17:04:45.401+09:00"
+    },
+    {
+      "query": "AMD Ryzen 9 9950X 최저가",
+      "outcome": "duplicate:AMD Ryzen 9 9950X",
+      "at": "2026-05-26T17:04:55.146+09:00"
+    },
+    {
+      "query": "AMD Ryzen 9 9900X 최저가",
+      "outcome": "duplicate:AMD Ryzen 9 9900X",
+      "at": "2026-05-26T17:05:13.011+09:00"
+    },
+    {
+      "query": "Intel Core Ultra 5 245K 최저가",
+      "outcome": "skip:The search result is a general category/filter page from Danawa. While 'Intel Core Ultra 5 245K' is the query and appears in the filter options, there are no concrete product listings with specific prices, specifications, or individual vendor offers in the provided text.",
+      "at": "2026-05-26T17:05:25.314+09:00"
+    },
+    {
+      "query": "AMD Ryzen 5 9600X 최저가",
+      "outcome": "duplicate:AMD Ryzen 5 9600X",
+      "at": "2026-05-26T17:05:42.727+09:00"
+    },
+    {
+      "query": "Intel Core i5-14600K 최저가",
+      "outcome": "duplicate:Intel Core i5-14600K",
+      "at": "2026-05-26T17:05:55.397+09:00"
+    },
+    {
+      "query": "Intel Core i7-14700K 최저가",
+      "outcome": "duplicate:Intel Core i7-14700K",
+      "at": "2026-05-26T17:06:33.894+09:00"
+    },
+    {
+      "query": "Intel Core i9-14900K 최저가",
+      "outcome": "duplicate:Intel Core i9-14900K",
+      "at": "2026-05-26T17:06:44.484+09:00"
+    },
+    {
+      "query": "AMD Ryzen 9 7950X3D 최저가",
+      "outcome": "duplicate:AMD Ryzen 9 7950X3D",
+      "at": "2026-05-26T17:07:08.524+09:00"
+    },
+    {
+      "query": "Crucial T705 4TB 최저가",
+      "outcome": "skip:The part 'Crucial T705 4TB' is already present in the saved parts list.",
+      "at": "2026-05-26T17:07:17.332+09:00"
+    },
+    {
+      "query": "Intel Core Ultra 9 285K 최저가",
+      "outcome": "skip:The search result is a general category/filter page from Danawa. While 'Intel Core Ultra 9 285K' is the query and appears in the filter options, there are no concrete product listings with specific prices or individual vendor offers in the provided text.",
+      "at": "2026-05-26T17:07:29.041+09:00"
+    },
+    {
+      "query": "Intel Core Ultra 7 265K 최저가",
+      "outcome": "skip:The search result is a general category/filter page from Danawa. While 'Intel Core Ultra 7 265K' is the query and appears in the filter options, there are no concrete product listings with specific prices or individual vendor offers in the provided text.",
+      "at": "2026-05-26T17:07:40.178+09:00"
+    },
+    {
+      "query": "Intel Core Ultra 5 245KF 최저가",
+      "outcome": "skip:The search result is a general category/filter page from Danawa. Although the query 'Intel Core Ultra 5 245KF' is present, there are no concrete product listings with specific prices or individual vendor offers in the text. The 'Observed prices' provided in the prompt appear to be noise or unrelated numbers from the page layout rather than actual product prices.",
+      "at": "2026-05-26T17:07:54.575+09:00"
+    },
+    {
+      "query": "AMD Ryzen 7 9700X 최저가",
+      "outcome": "duplicate:AMD Ryzen 7 9700X",
+      "at": "2026-05-26T17:08:07.232+09:00"
+    },
+    {
+      "query": "AMD Ryzen 7 7800X3D 최저가",
+      "outcome": "duplicate:AMD Ryzen 7 7800X3D",
+      "at": "2026-05-26T17:08:42.825+09:00"
+    },
+    {
+      "query": "AMD Ryzen 9 7950X3D 최저가",
+      "outcome": "skip:The part 'AMD Ryzen 9 7950X3D' is already present in the saved parts list (as indicated in the Recent searches section of the prompt).",
+      "at": "2026-05-26T17:08:55.768+09:00"
+    },
+    {
+      "query": "Intel Core i9-14900K 최저가",
+      "outcome": "skip:The part 'Intel Core i9-14900K' is already listed in the Recent searches as a duplicate, and although prices are present in the text, it is not a new part to be added to the saved list.",
+      "at": "2026-05-26T17:09:17.338+09:00"
+    },
+    {
+      "query": "AMD Ryzen 9 9950X 최저가",
+      "outcome": "duplicate:AMD Ryzen 9 9950X",
+      "at": "2026-05-26T17:09:29.356+09:00"
+    },
+    {
+      "query": "AMD Ryzen 7 9800X3D 최저가",
+      "outcome": "duplicate:AMD Ryzen 7 9800X3D",
+      "at": "2026-05-26T17:09:39.060+09:00"
+    },
+    {
+      "query": "AMD Ryzen 5 9600X 최저가",
+      "outcome": "duplicate:AMD Ryzen 5 9600X",
+      "at": "2026-05-26T17:09:53.679+09:00"
+    },
+    {
+      "query": "AMD Ryzen 5 7500F 최저가",
+      "outcome": "duplicate:AMD Ryzen 5 7500F",
+      "at": "2026-05-26T17:10:10.329+09:00"
+    },
+    {
+      "query": "AMD Ryzen 9 7900X 최저가",
+      "outcome": "duplicate:AMD Ryzen 9 7900X",
+      "at": "2026-05-26T17:10:21.945+09:00"
     }
   ],
   "aiSearchQueue": [],
