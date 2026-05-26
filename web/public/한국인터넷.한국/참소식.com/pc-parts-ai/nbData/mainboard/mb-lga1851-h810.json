@@ -1,0 +1,89 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-05-26T11:46:28.874+09:00",
+  "category": "Mainboard",
+  "id": "mb-lga1851-h810",
+  "name": "LGA1851 H810 Mainboard",
+  "maker": "Common",
+  "platform": "LGA1851",
+  "estimatedPriceKrw": 123000,
+  "priceBand": "15만원 미만",
+  "speedLabel": "DDR5 / entry Intel",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "Mainboard",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 66,
+  "valueIndex": 53.7,
+  "aiUseScore": 43,
+  "powerWatts": 10,
+  "tags": [
+    "office",
+    "value"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "Mainboard",
+    "partId": "mb-lga1851-h810",
+    "partName": "LGA1851 H810 Mainboard",
+    "speed": {
+      "score": 100,
+      "weight": 0.32,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "Mainboard",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 660,
+      "value": 716,
+      "aiFit": 430,
+      "priceEfficiency": 810,
+      "powerEfficiency": 1000
+    },
+    "nbVector": [
+      100,
+      660,
+      716,
+      430,
+      810,
+      1000
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 384.4,
+    "nbMin": 361.278,
+    "weightedScore": 432,
+    "nbBand": "100~499",
+    "summary": "Mainboard LGA1851 H810 Mainboard 부품을 속도 중심 N/B 데이터베이스 점수 432점으로 저장했습니다."
+  },
+  "nbWeightedScore": 432,
+  "nbMax": 384.4,
+  "nbMin": 361.278,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=LGA1851%20H810%20Mainboard%20price",
+  "notes": "Auto-generated AI PC candidate added after the saved candidate list was exhausted.",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

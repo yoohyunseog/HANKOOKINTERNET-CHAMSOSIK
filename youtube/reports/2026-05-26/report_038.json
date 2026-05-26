@@ -1,0 +1,297 @@
+{
+  "timestamp": "2026-05-26T07:13:56.814199",
+  "model": "mistral:latest",
+  "keyword_count": 3,
+  "analyze_subtitles": true,
+  "analysis_source": "youtube",
+  "keywords": [
+    {
+      "keyword": "오늘의 주요 뉴스",
+      "is_fixed": true,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "부산 날씨 일기예보",
+      "is_fixed": false,
+      "views": [
+        12942,
+        100388
+      ],
+      "video_count": 2,
+      "videos": [
+        {
+          "title": "[날씨] 더위 계속…내일(26일), 전국 강하고 많은 비 / KBS  2026.05.25.",
+          "video_id": "Ei4RpOYVDwA",
+          "views": 12942,
+          "upload_date": "2026-05-25",
+          "url": "https://www.youtube.com/watch?v=Ei4RpOYVDwA",
+          "subtitle_summary": "1. 오늘(25일)은 대부분 지역에서 30도 이상의 더위가 예상되며, 오늘 저녁부터 제주도와 남해안, 밤부터는 호남과 경남에도 비가 오고 있습니다.\n2. 내일(26일)은 전국적으로 강하고 많은 비가 예상되며, 지리산 부근, 제주 산지에서는 최대 300밀리미터 이상의 비가 오게 될 것으로 보입니다.\n3. 내일은 전국적으로 바람도 강하게 불 것으로 예상됩니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[날씨] 내일(26일) 전국 비…남부지방 집중호우 주의 / KBS  2026.05.25.",
+          "video_id": "6DgHEOH3SYo",
+          "views": 100388,
+          "upload_date": "2026-05-25",
+          "url": "https://www.youtube.com/watch?v=6DgHEOH3SYo",
+          "subtitle_summary": "1. 오늘은 30도 이내의 여름 더위가 나타났으며, 내일(26일) 전국에 비가 내리게 될 것입니다.\n2. 남서쪽부터 시작하여 대부분 지역에서 내일 낮에 비가 내리고, 예상되는 비의 양은 전남과 경남, 제주에 최대 100mm가 넘을 것입니다.\n3. 중부지방과 전북, 경북은 20~80mm의 비가 내리고, 바다의 물결은 남해상과 제주도 해상에서 최고 3m 이하로 높게 일어날 것입니다. 이 비는 수요일 오전에 중부지방부터 그치고, 주 중반부턴 대체로 맑고 덥게 될 것입니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 2.7991,
+      "min": 1.9298,
+      "nb_score": 1.4504,
+      "avg_views": 56665.0,
+      "total_views": 113330
+    },
+    {
+      "keyword": "삼성전자 주가 전망",
+      "is_fixed": false,
+      "views": [
+        761,
+        3199,
+        3172,
+        3028,
+        3925,
+        2843
+      ],
+      "video_count": 6,
+      "videos": [
+        {
+          "title": "[삼성전자 주가 전망] \"실시간 긴급속보\" 결국 \"이 소식\" 나와주네요! 금일 시원한 불기둥 옵니다!",
+          "video_id": "McfaNdxtszI",
+          "views": 761,
+          "upload_date": "2026-05-25",
+          "url": "https://www.youtube.com/watch?v=McfaNdxtszI",
+          "subtitle_summary": "1. 삼성전자 주가는 최근 지루하고 답답한 구간으로 묘사되었습니다. 이 상황에서 눌림목이 나타났으나, 거래량은 어마어마한 것보다 확 줄어들어 있습니다.\n2. 이는 주포 세력들이 종목 안에 국건을 지키고 있음을 의미합니다. 그들은 개인 투자자들의 물량을 지치고 겁을 줘서 스스로 던지게 만들고 그 물량을 헐값에 받아먹기 위한 심리전을 펼치고 있습니다.\n3. 이 구간은 더 큰 도약을 위한 완벽한 순고르기이자 우리에겐 저로의 매수 기회가 될 수 있다는 것입니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[삼성전자 주가 전망] 삼성, 심장마비 긴급발표에 오늘 진짜 큰일났다! 80조 우주 동맹 확정, 세계 최초 HBM4·SDK 독점까지!#삼성전자주식#삼성전자",
+          "video_id": "ksUPyn08gzQ",
+          "views": 3199,
+          "upload_date": "2026-05-25",
+          "url": "https://www.youtube.com/watch?v=ksUPyn08gzQ",
+          "subtitle_summary": "1. Samsung Electronics has unveiled a premium-grade HBM (High Bandwidth Memory) software development kit (SDK), marking a significant expansion beyond hardware memory. This SDK allows HBM to self-analyze and operate, giving Samsung control over the entire HBM ecosystem.\n2. During the holiday season, it was announced that Samsung is developing a satellite AI chip, which played a crucial role in SpaceX's recent successful launch. The company that stands to benefit most from this development is expected to be SK Hynix, not Nvidia as previously thought.\n3. Starting today (Monday), Samsung Electronics' market capitalization of $590 billion is set to become a reality. This development means that the HBM software, custom HBM, and the industry's first HBM manufacturing software development kit (SDK) are now in Samsung's possession. This gives Samsung a significant advantage in the memory market as HBM will now have built-in intelligence, allowing it to make its own decisions and perform operations without relying solely on GPU commands.",
+          "db_saved": true
+        },
+        {
+          "title": "[삼성전자 주가전망] '새벽 05:57 사건 발생' ㅁ;쳤네요..美 전쟁변수 대폭발, 와.. 트럼프 긴급발표 보셨나요? 심상치않습니다. '이 가격' XX하세요. 오늘 싹 다 뒤집힙",
+          "video_id": "8ZVIJ3uvriU",
+          "views": 3172,
+          "upload_date": "2026-05-25",
+          "url": "https://www.youtube.com/watch?v=8ZVIJ3uvriU",
+          "subtitle_summary": "1. 삼성전자 주가 예측: 3가지 시나리오 제시 - 1) 이란이 핵 제한 조건을 받아들이고 호르무즈 해협 재개까지 합의하면서 60일 휴전 연장 발표, 2) 이란이 동결 자산 해제를 요구하는데 부분 합의만 나오는 경우, 3) 협상이 최종 결렬되고 트럼프가 이란이 조건을 거부한다.\n2. 현재 전쟁 관련 협상은 진행 중이지만, 서두르는 것을 금지하고 있으며, 분위기는 협상 쪽으로 가고 있다.\n3. 시장은 굉장히 애매해질 수 있으며, 추가적인 상승은 충분히 나올 수 있지만, 단순 휴전이 아닌 완전 종전을 원하기 때문에 시장이 흔들리는 경우도 있을 수 있다.",
+          "db_saved": true
+        },
+        {
+          "title": "[삼성전자 주가전망] 💥핵폭탄소식 터졌네요!! 미국,일본 난리났습니다.내일 갭상승 출발 확정!! 모르면 털린다!💥#완벽대응전략 #주식타짜 안교수 삼성전자 #삼성전자 #주식타짜안교수",
+          "video_id": "_YTAZg22ttw",
+          "views": 3028,
+          "upload_date": "2026-05-25",
+          "url": "https://www.youtube.com/watch?v=_YTAZg22ttw",
+          "subtitle_summary": "1. 현재 미국 시장과 한국 시장은 휴장 상태입니다. 하지만, 키옥시아 홀딩스의 14% 급등으로 아시아 증시가 3% 상승했습니다.\n2. 이는 원달러 환율이 1,500원대에서 1440원에서 1460원 사이로 안정되고 있기 때문입니다.\n3. 외국인들은 환율 시장에서 큰 자금을 운영하며, 환율이 급등할 경우 환차손의 위험에 걸리게 되어 주식 수익을 내고 있는 동시에 환율 상승으로 인한 손실을 피하기 위해 계속적으로 코스피 지수를 올리기 위한 선물 매수 포지션을 설정합니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[삼성전자 주가전망] 5분 전, 핵폭탄급 호재 떴다!! 이번 주 49만 원 간다!! 주주님들 '이 기사' 보셨나요? 안 보시면 평생 후회합니다",
+          "video_id": "VPdrFYMg5Jk",
+          "views": 3925,
+          "upload_date": "2026-05-25",
+          "url": "https://www.youtube.com/watch?v=VPdrFYMg5Jk",
+          "subtitle_summary": "1. 5월 25일 월요일에 미국과 이란이 호르무즈 해협 개방과 우라늄 폐기에 대한 공식 발표가 나왔습니다. 이는 종전 근접한 상황으로 해석할 수 있고, 이번 발표의 세부 내용은 처음이므로 시장에서 긍정적인 반응을 기대합니다.\n2. 이 발표 때문에 미국은 메모리얼 데이로 휴장되어 참고할 수 있는 내용이 많지 않습니다. 하지만, 일본의 니케이 지수가 2.8% 상승했으므로 우리 국내 증시도 상승할 확률이 높습니다.\n3. 따라서, 내일 장에 대응하는 것이 중요하며, 큰 수익을 볼 수 있을 것입니다. 또한, 우리 삼성전자의 주가는 역대급 실적을 기반으로 계속해서 상승할 수 있는 종목이므로 매도하면 안 됩니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[삼성전자 주가 전망]*5분전긴급*🔥美·이란 극적 합의+日 닛케이 폭발! 내일 삼성전자 18조 내던지던 외인들 포지션 '이 가격'에서 바뀔겁니다",
+          "video_id": "nMbEFqj5PP4",
+          "views": 2843,
+          "upload_date": "2026-05-25",
+          "url": "https://www.youtube.com/watch?v=nMbEFqj5PP4",
+          "subtitle_summary": "1. 일본 증시가 최고치를 갈아친 상황으로, 노사 리스크와 우라늄 환율이 조정되어 있어 삼성전자의 주가는 내일 장 열리고 갭상승을 예상합니다.\n2. 30만 원 구간에서 강력하게 터치할 확률이 높습니다.\n3. 삼성전자의 30만 원 위쪽으로 비중을 줄 것인지, 계속 상승 랠리를 이어갈 것인지는 현실적으로 내일 아침 시초가 확인해야 합니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 2.4775,
+      "min": 2.2825,
+      "nb_score": 1.0855,
+      "avg_views": 2821.33,
+      "total_views": 16928
+    },
+    {
+      "keyword": "암호화폐 시장 전망",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "미국 증시 휴장일 확인",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "스페이스X IPO 일정",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "공공기관 채무 상환 대책",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "고금리 시대 투자 전략",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "AI 산업 발전 동향",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "중소기업 금융 지원 정책",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "우주항공 ETF 투자",
+      "is_fixed": false,
+      "views": [
+        544
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "[TIGER 미국우주테크 ETF 전망] 스페이스X 역대 최대 IPO, 우주항공 섹터 강세 #우주항공ETF",
+          "video_id": "JyNSWcs5AZc",
+          "views": 544,
+          "upload_date": "2026-05-25",
+          "url": "https://www.youtube.com/watch?v=JyNSWcs5AZc",
+          "subtitle_summary": "1. Tiger US Space Tech ETF 상품은 오늘 장마감에 +4.42% 강세를 보였습니다. 이는 스페이스 X NASDAQ 상장 신청 소식과 우주항공 섹터 투자 심리 개선, 거래량 폭증으로 인한 강한 매수 시그널 구간입니다.\n2. 스페이스 X는 지난 5월 20일 NASDAQ 상장을 목표로 하고 있으며, 예상 기업 가치는 1조 7,500억 달러로 역대 최대 규모의 기업 공개입니다.\n3. 스페이스 X NASDAQ 상장은 미국 우주항공 산업의 구조적 성장을 견인할 전환점으로 평가되고 있으며, Tiger US Space Tech ETF는 우주항공 섹터 전반에 동반 강세 효과를 분산된 방식으로 누릴 수 있는 자리입니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "환율 변동 경제 영향",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "트럼프 중동 정책",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "갤럭시 배터리 방전 해결법",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "의료기기 산업 현황",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "반도체 공급망 뉴스",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    }
+  ]
+}

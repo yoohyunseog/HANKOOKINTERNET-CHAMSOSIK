@@ -1,0 +1,89 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-05-26T11:46:28.699+09:00",
+  "category": "GPU",
+  "id": "gpu-rx-7900-gre",
+  "name": "AMD Radeon RX 7900 GRE",
+  "maker": "AMD",
+  "platform": "PCIe",
+  "estimatedPriceKrw": 935940,
+  "priceBand": "60만원 이상",
+  "speedLabel": "16GB VRAM / gaming GPU",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "GPU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 88,
+  "valueIndex": 9.4,
+  "aiUseScore": 57,
+  "powerWatts": 260,
+  "tags": [
+    "gaming",
+    "creator"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "GPU",
+    "partId": "gpu-rx-7900-gre",
+    "partName": "AMD Radeon RX 7900 GRE",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "GPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 880,
+      "value": 125,
+      "aiFit": 570,
+      "priceEfficiency": 110,
+      "powerEfficiency": 113
+    },
+    "nbVector": [
+      100,
+      880,
+      125,
+      570,
+      110,
+      113
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 105.444,
+    "nbMin": 327.357,
+    "weightedScore": 308,
+    "nbBand": "100~499",
+    "summary": "GPU AMD Radeon RX 7900 GRE 부품을 속도 중심 N/B 데이터베이스 점수 308점으로 저장했습니다."
+  },
+  "nbWeightedScore": 308,
+  "nbMax": 105.444,
+  "nbMin": 327.357,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=AMD%20Radeon%20RX%207900%20GRE%20price",
+  "notes": "Auto-generated AI PC candidate added after the saved candidate list was exhausted.",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

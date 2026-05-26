@@ -1,0 +1,97 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-05-26T11:46:28.657+09:00",
+  "category": "CPU",
+  "id": "cpu-core-ultra-7-265k",
+  "name": "Intel Core Ultra 7 265K",
+  "maker": "Intel",
+  "platform": "LGA1851",
+  "estimatedPriceKrw": 520000,
+  "priceBand": "30~60만원",
+  "speedLabel": "최대 터보 약 5.5GHz",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "CPU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 91,
+  "valueIndex": 17.5,
+  "aiUseScore": 91,
+  "powerWatts": 125,
+  "tags": [
+    "gaming",
+    "creator",
+    "ai"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "CPU",
+    "partId": "cpu-core-ultra-7-265k",
+    "partName": "Intel Core Ultra 7 265K",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "CPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 910,
+      "value": 233,
+      "aiFit": 910,
+      "priceEfficiency": 190,
+      "powerEfficiency": 243
+    },
+    "nbVector": [
+      100,
+      910,
+      233,
+      910,
+      190,
+      243
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 205.554,
+    "nbMin": 364.692,
+    "weightedScore": 377,
+    "nbBand": "100~499",
+    "summary": "CPU Intel Core Ultra 7 265K 부품을 속도 중심 N/B 데이터베이스 점수 377점으로 저장했습니다."
+  },
+  "nbWeightedScore": 377,
+  "nbMax": 205.554,
+  "nbMin": 364.692,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Intel%20Core%20Ultra%207%20265K%20price",
+  "notes": "Intel Core Ultra 7 265K은 가격과 성능, 플랫폼 호환성을 함께 확인할 CPU 후보입니다.",
+  "textRepair": {
+    "checkedAt": "2026-05-26T11:46:28.657+09:00",
+    "method": "ai-text-sanity-rules",
+    "repairedFields": [
+      "speedLabel",
+      "notes"
+    ]
+  },
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

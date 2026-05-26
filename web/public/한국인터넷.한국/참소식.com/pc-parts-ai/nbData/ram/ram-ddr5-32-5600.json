@@ -1,0 +1,89 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-05-26T11:46:29.386+09:00",
+  "category": "RAM",
+  "id": "ram-ddr5-32-5600",
+  "name": "DDR5 32GB 5600MHz",
+  "maker": "Common",
+  "platform": "DDR5",
+  "estimatedPriceKrw": 120000,
+  "priceBand": "15만원 미만",
+  "speedLabel": "DDR5-5600",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "RAM",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 72,
+  "valueIndex": 60,
+  "aiUseScore": 47,
+  "powerWatts": 12,
+  "tags": [
+    "office",
+    "gaming"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "RAM",
+    "partId": "ram-ddr5-32-5600",
+    "partName": "DDR5 32GB 5600MHz",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "RAM",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 720,
+      "value": 800,
+      "aiFit": 470,
+      "priceEfficiency": 830,
+      "powerEfficiency": 1000
+    },
+    "nbVector": [
+      100,
+      720,
+      800,
+      470,
+      830,
+      1000
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 432.071,
+    "nbMin": 354.542,
+    "weightedScore": 471,
+    "nbBand": "100~499",
+    "summary": "RAM DDR5 32GB 5600MHz 부품을 속도 중심 N/B 데이터베이스 점수 471점으로 저장했습니다."
+  },
+  "nbWeightedScore": 471,
+  "nbMax": 432.071,
+  "nbMin": 354.542,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=DDR5%2032GB%205600MHz%20price",
+  "notes": "Auto-generated AI PC candidate added after the saved candidate list was exhausted.",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

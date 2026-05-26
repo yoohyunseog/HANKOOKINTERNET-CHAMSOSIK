@@ -1,0 +1,89 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-05-26T11:46:28.813+09:00",
+  "category": "Mainboard",
+  "id": "mainboard-asrock-b650-steel-legend-wifi",
+  "name": "ASRock B650 Steel Legend WiFi",
+  "maker": "ASRock",
+  "platform": "AM5",
+  "estimatedPriceKrw": 285000,
+  "priceBand": "15~30만원",
+  "speedLabel": "AI discovered board",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "Mainboard",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 75,
+  "valueIndex": 26.3,
+  "aiUseScore": 49,
+  "powerWatts": 0,
+  "tags": [
+    "B650",
+    "WiFi"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "Mainboard",
+    "partId": "mainboard-asrock-b650-steel-legend-wifi",
+    "partName": "ASRock B650 Steel Legend WiFi",
+    "speed": {
+      "score": 100,
+      "weight": 0.32,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "Mainboard",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 750,
+      "value": 351,
+      "aiFit": 490,
+      "priceEfficiency": 350,
+      "powerEfficiency": 750
+    },
+    "nbVector": [
+      100,
+      750,
+      351,
+      490,
+      350,
+      750
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 360.969,
+    "nbMin": 385.778,
+    "weightedScore": 353,
+    "nbBand": "100~499",
+    "summary": "Mainboard ASRock B650 Steel Legend WiFi 부품을 속도 중심 N/B 데이터베이스 점수 353점으로 저장했습니다."
+  },
+  "nbWeightedScore": 353,
+  "nbMax": 360.969,
+  "nbMin": 385.778,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=B650%20%EB%A9%94%EC%9D%B8%EB%B3%B4%EB%93%9C%20%EC%B6%94%EC%B2%9C",
+  "notes": "Observed price from Danawa search results.",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

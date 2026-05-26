@@ -1,14 +1,14 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-25T11:18:47.651+09:00",
+  "updatedAt": "2026-05-26T11:46:29.233+09:00",
   "category": "PSU",
   "id": "psu-850w-gold",
   "name": "850W 80PLUS Gold PSU",
   "maker": "Common",
   "platform": "ATX",
-  "estimatedPriceKrw": 106000,
-  "priceBand": "15만원 미만",
-  "speedLabel": "850W 출력",
+  "estimatedPriceKrw": 180000,
+  "priceBand": "15~30만원",
+  "speedLabel": "파워서플라이 출력 등급",
   "speedMetric": {
     "kind": "power_output",
     "label": "정격 출력",
@@ -19,9 +19,9 @@
   },
   "unifiedSpeedScore": 850,
   "performance": 86,
-  "valueIndex": 81.1,
+  "valueIndex": 47.8,
   "aiUseScore": 86,
-  "powerWatts": null,
+  "powerWatts": 0,
   "tags": [
     "gaming",
     "creator",
@@ -49,17 +49,17 @@
     "scores": {
       "speed": 850,
       "performance": 860,
-      "value": 1000,
+      "value": 637,
       "aiFit": 860,
-      "priceEfficiency": 940,
+      "priceEfficiency": 560,
       "powerEfficiency": 860
     },
     "nbVector": [
       850,
       860,
-      1000,
+      637,
       860,
-      940,
+      560,
       860
     ],
     "vectorLabels": [
@@ -70,16 +70,28 @@
       "가격 효율",
       "전력 효율"
     ],
-    "nbMax": 45.943,
-    "nbMin": 1000,
-    "weightedScore": 797,
+    "nbMax": 262.436,
+    "nbMin": 817.198,
+    "weightedScore": 716,
     "nbBand": "700~849",
-    "summary": "PSU 850W 80PLUS Gold PSU 부품을 속도 중심 N/B 데이터베이스 점수 797점으로 저장했습니다."
+    "summary": "PSU 850W 80PLUS Gold PSU 부품을 속도 중심 N/B 데이터베이스 점수 716점으로 저장했습니다."
   },
-  "nbWeightedScore": 797,
-  "nbMax": 45.943,
-  "nbMin": 1000,
+  "nbWeightedScore": 716,
+  "nbMax": 262.436,
+  "nbMin": 817.198,
   "nbBand": "700~849",
-  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=850W%2080PLUS%20Gold%20%ED%8C%8C%EC%9B%8C%20%EA%B0%80%EA%B2%A9",
-  "notes": "Chrome 검색 수집 기준으로 가격을 확인하는 고용량 파워 후보입니다."
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=850W%2080PLUS%20Gold%20PSU%20price",
+  "notes": "850W 80PLUS Gold PSU은 출력, 효율, 그래픽카드 전원 여유를 함께 볼 파워서플라이 후보입니다.",
+  "textRepair": {
+    "checkedAt": "2026-05-26T11:46:29.233+09:00",
+    "method": "ai-text-sanity-rules",
+    "repairedFields": [
+      "speedLabel",
+      "notes"
+    ]
+  },
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
 }

@@ -1,0 +1,97 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-05-26T11:46:28.784+09:00",
+  "category": "Mainboard",
+  "id": "mb-am5-b650",
+  "name": "AM5 B650 Mainboard",
+  "maker": "Common",
+  "platform": "AM5",
+  "estimatedPriceKrw": 180000,
+  "priceBand": "15~30만원",
+  "speedLabel": "DDR5 / PCIe 4.0 지원",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "Mainboard",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 72,
+  "valueIndex": 40,
+  "aiUseScore": 47,
+  "powerWatts": 12,
+  "tags": [
+    "gaming",
+    "office",
+    "value"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "Mainboard",
+    "partId": "mb-am5-b650",
+    "partName": "AM5 B650 Mainboard",
+    "speed": {
+      "score": 100,
+      "weight": 0.32,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "Mainboard",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 720,
+      "value": 533,
+      "aiFit": 470,
+      "priceEfficiency": 560,
+      "powerEfficiency": 1000
+    },
+    "nbVector": [
+      100,
+      720,
+      533,
+      470,
+      560,
+      1000
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 312.364,
+    "nbMin": 366.492,
+    "weightedScore": 402,
+    "nbBand": "100~499",
+    "summary": "Mainboard AM5 B650 Mainboard 부품을 속도 중심 N/B 데이터베이스 점수 402점으로 저장했습니다."
+  },
+  "nbWeightedScore": 402,
+  "nbMax": 312.364,
+  "nbMin": 366.492,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=AM5%20B650%20Mainboard%20price",
+  "notes": "AM5 B650 Mainboard은 CPU 소켓, 메모리 규격, 확장성을 함께 확인할 메인보드 후보입니다.",
+  "textRepair": {
+    "checkedAt": "2026-05-26T11:46:28.784+09:00",
+    "method": "ai-text-sanity-rules",
+    "repairedFields": [
+      "speedLabel",
+      "notes"
+    ]
+  },
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

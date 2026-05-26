@@ -1,0 +1,97 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-05-26T11:46:28.694+09:00",
+  "category": "GPU",
+  "id": "gpu-rx-7800-xt",
+  "name": "AMD Radeon RX 7800 XT",
+  "maker": "AMD",
+  "platform": "PCIe",
+  "estimatedPriceKrw": 720000,
+  "priceBand": "60만원 이상",
+  "speedLabel": "그래픽카드 성능 등급",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "GPU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 86,
+  "valueIndex": 11.9,
+  "aiUseScore": 56,
+  "powerWatts": 263,
+  "tags": [
+    "gaming",
+    "value",
+    "creator"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "GPU",
+    "partId": "gpu-rx-7800-xt",
+    "partName": "AMD Radeon RX 7800 XT",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "GPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 860,
+      "value": 159,
+      "aiFit": 560,
+      "priceEfficiency": 140,
+      "powerEfficiency": 109
+    },
+    "nbVector": [
+      100,
+      860,
+      159,
+      560,
+      140,
+      109
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 114.584,
+    "nbMin": 335.283,
+    "weightedScore": 310,
+    "nbBand": "100~499",
+    "summary": "GPU AMD Radeon RX 7800 XT 부품을 속도 중심 N/B 데이터베이스 점수 310점으로 저장했습니다."
+  },
+  "nbWeightedScore": 310,
+  "nbMax": 114.584,
+  "nbMin": 335.283,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=AMD%20Radeon%20RX%207800%20XT%20price",
+  "notes": "AMD Radeon RX 7800 XT은 게임, 작업, AI 활용을 함께 검토할 그래픽카드 후보입니다.",
+  "textRepair": {
+    "checkedAt": "2026-05-26T11:46:28.694+09:00",
+    "method": "ai-text-sanity-rules",
+    "repairedFields": [
+      "speedLabel",
+      "notes"
+    ]
+  },
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

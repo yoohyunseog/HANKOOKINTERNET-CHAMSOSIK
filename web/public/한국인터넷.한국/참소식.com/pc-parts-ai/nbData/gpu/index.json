@@ -1,11 +1,31 @@
 {
   "schema": "pc-parts-nb-category-index.v1",
-  "updatedAt": "2026-05-25T11:18:47.651+09:00",
-  "category": "GPU",
-  "count": 3,
+  "updatedAt": "2026-05-26T11:46:27.967+09:00",
+  "category": "gpu",
+  "count": 23,
   "files": [
-    "gpu-rtx-5070.json",
+    "gpu-amd-radeon-rx-7900-xt.json",
+    "gpu-rtx-4060-ti-16gb.json",
+    "gpu-rtx-4060.json",
+    "gpu-rtx-4070-super.json",
+    "gpu-rtx-4070-ti-super.json",
+    "gpu-rtx-4070.json",
+    "gpu-rtx-4080-super.json",
+    "gpu-rtx-5060-ti-8gb.json",
     "gpu-rtx-5060-ti.json",
-    "gpu-rx-9060-xt.json"
+    "gpu-rtx-5060.json",
+    "gpu-rtx-5070-ti.json",
+    "gpu-rtx-5070.json",
+    "gpu-rtx-5080.json",
+    "gpu-rtx-5090.json",
+    "gpu-rx-7600-xt.json",
+    "gpu-rx-7600.json",
+    "gpu-rx-7700-xt.json",
+    "gpu-rx-7800-xt.json",
+    "gpu-rx-7900-gre.json",
+    "gpu-rx-7900-xtx.json",
+    "gpu-rx-9060-xt.json",
+    "gpu-rx-9070-xt.json",
+    "gpu-rx-9070.json"
   ]
 }

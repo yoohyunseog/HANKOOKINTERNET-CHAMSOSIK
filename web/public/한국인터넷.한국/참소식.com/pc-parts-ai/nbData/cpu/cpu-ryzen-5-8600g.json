@@ -1,0 +1,89 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-05-26T11:46:28.378+09:00",
+  "category": "CPU",
+  "id": "cpu-ryzen-5-8600g",
+  "name": "AMD Ryzen 5 8600G",
+  "maker": "AMD",
+  "platform": "AM5",
+  "estimatedPriceKrw": 260000,
+  "priceBand": "15~30만원",
+  "speedLabel": "Radeon iGPU APU",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "CPU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 76,
+  "valueIndex": 29.2,
+  "aiUseScore": 49,
+  "powerWatts": 65,
+  "tags": [
+    "office",
+    "value"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "CPU",
+    "partId": "cpu-ryzen-5-8600g",
+    "partName": "AMD Ryzen 5 8600G",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "CPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 760,
+      "value": 389,
+      "aiFit": 490,
+      "priceEfficiency": 380,
+      "powerEfficiency": 390
+    },
+    "nbVector": [
+      100,
+      760,
+      389,
+      490,
+      380,
+      390
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 275.11,
+    "nbMin": 387.354,
+    "weightedScore": 351,
+    "nbBand": "100~499",
+    "summary": "CPU AMD Ryzen 5 8600G 부품을 속도 중심 N/B 데이터베이스 점수 351점으로 저장했습니다."
+  },
+  "nbWeightedScore": 351,
+  "nbMax": 275.11,
+  "nbMin": 387.354,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=AMD%20Ryzen%205%208600G%20price",
+  "notes": "Auto-generated AI PC candidate added after the saved candidate list was exhausted.",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

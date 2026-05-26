@@ -1,0 +1,89 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-05-26T11:46:28.938+09:00",
+  "category": "PSU",
+  "id": "psu-1000w-platinum",
+  "name": "1000W 80PLUS Platinum PSU",
+  "maker": "Common",
+  "platform": "ATX",
+  "estimatedPriceKrw": 202010,
+  "priceBand": "15~30만원",
+  "speedLabel": "1000W Platinum",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "PSU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 94,
+  "valueIndex": 46.5,
+  "aiUseScore": 94,
+  "powerWatts": 0,
+  "tags": [
+    "creator",
+    "ai"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "PSU",
+    "partId": "psu-1000w-platinum",
+    "partName": "1000W 80PLUS Platinum PSU",
+    "speed": {
+      "score": 100,
+      "weight": 0.32,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "PSU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 940,
+      "value": 620,
+      "aiFit": 940,
+      "priceEfficiency": 500,
+      "powerEfficiency": 940
+    },
+    "nbVector": [
+      100,
+      940,
+      620,
+      940,
+      500,
+      940
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 522.43,
+    "nbMin": 340.009,
+    "weightedScore": 497,
+    "nbBand": "100~499",
+    "summary": "PSU 1000W 80PLUS Platinum PSU 부품을 속도 중심 N/B 데이터베이스 점수 497점으로 저장했습니다."
+  },
+  "nbWeightedScore": 497,
+  "nbMax": 522.43,
+  "nbMin": 340.009,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=1000W%2080PLUS%20Platinum%20PSU%20price",
+  "notes": "Auto-generated AI PC candidate added after the saved candidate list was exhausted.",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

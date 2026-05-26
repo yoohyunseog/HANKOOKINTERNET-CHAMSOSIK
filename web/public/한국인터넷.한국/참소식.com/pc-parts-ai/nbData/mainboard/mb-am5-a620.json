@@ -1,0 +1,89 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-05-26T11:46:28.780+09:00",
+  "category": "Mainboard",
+  "id": "mb-am5-a620",
+  "name": "AM5 A620 Mainboard",
+  "maker": "Common",
+  "platform": "AM5",
+  "estimatedPriceKrw": 130000,
+  "priceBand": "15만원 미만",
+  "speedLabel": "DDR5 / entry AM5",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "Mainboard",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 64,
+  "valueIndex": 49.2,
+  "aiUseScore": 42,
+  "powerWatts": 10,
+  "tags": [
+    "office",
+    "value"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "Mainboard",
+    "partId": "mb-am5-a620",
+    "partName": "AM5 A620 Mainboard",
+    "speed": {
+      "score": 100,
+      "weight": 0.32,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "Mainboard",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 640,
+      "value": 656,
+      "aiFit": 420,
+      "priceEfficiency": 770,
+      "powerEfficiency": 1000
+    },
+    "nbVector": [
+      100,
+      640,
+      656,
+      420,
+      770,
+      1000
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 355.412,
+    "nbMin": 364.178,
+    "weightedScore": 415,
+    "nbBand": "100~499",
+    "summary": "Mainboard AM5 A620 Mainboard 부품을 속도 중심 N/B 데이터베이스 점수 415점으로 저장했습니다."
+  },
+  "nbWeightedScore": 415,
+  "nbMax": 355.412,
+  "nbMin": 364.178,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=AM5%20A620%20Mainboard%20price",
+  "notes": "Auto-generated AI PC candidate added after the saved candidate list was exhausted.",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

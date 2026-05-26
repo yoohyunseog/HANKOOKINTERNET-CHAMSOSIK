@@ -1,0 +1,89 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-05-26T11:46:28.750+09:00",
+  "category": "GPU",
+  "id": "gpu-rtx-5060",
+  "name": "NVIDIA GeForce RTX 5060",
+  "maker": "NVIDIA",
+  "platform": "PCIe",
+  "estimatedPriceKrw": 480000,
+  "priceBand": "30~60만원",
+  "speedLabel": "8GB VRAM / mainstream GPU",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "GPU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 76,
+  "valueIndex": 15.8,
+  "aiUseScore": 49,
+  "powerWatts": 145,
+  "tags": [
+    "gaming",
+    "value"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "GPU",
+    "partId": "gpu-rtx-5060",
+    "partName": "NVIDIA GeForce RTX 5060",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "GPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 760,
+      "value": 211,
+      "aiFit": 490,
+      "priceEfficiency": 210,
+      "powerEfficiency": 175
+    },
+    "nbVector": [
+      100,
+      760,
+      211,
+      490,
+      210,
+      175
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 150.218,
+    "nbMin": 363.595,
+    "weightedScore": 300,
+    "nbBand": "100~499",
+    "summary": "GPU NVIDIA GeForce RTX 5060 부품을 속도 중심 N/B 데이터베이스 점수 300점으로 저장했습니다."
+  },
+  "nbWeightedScore": 300,
+  "nbMax": 150.218,
+  "nbMin": 363.595,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=NVIDIA%20GeForce%20RTX%205060%20price",
+  "notes": "Auto-generated AI PC candidate added after the saved candidate list was exhausted.",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

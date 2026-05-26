@@ -1,14 +1,14 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-25T11:18:47.651+09:00",
+  "updatedAt": "2026-05-26T11:46:28.754+09:00",
   "category": "GPU",
   "id": "gpu-rtx-5060-ti",
   "name": "NVIDIA GeForce RTX 5060 Ti",
   "maker": "NVIDIA",
   "platform": "PCIe",
-  "estimatedPriceKrw": 848000,
+  "estimatedPriceKrw": 620000,
   "priceBand": "60만원 이상",
-  "speedLabel": "16GB VRAM / PCIe 그래픽",
+  "speedLabel": "그래픽카드 성능 등급",
   "speedMetric": {
     "kind": "gpu_memory_capacity",
     "label": "그래픽 메모리",
@@ -19,8 +19,8 @@
   },
   "unifiedSpeedScore": 667,
   "performance": 82,
-  "valueIndex": 9.7,
-  "aiUseScore": 98,
+  "valueIndex": 13.2,
+  "aiUseScore": 82,
   "powerWatts": 180,
   "tags": [
     "gaming",
@@ -49,17 +49,17 @@
     "scores": {
       "speed": 667,
       "performance": 820,
-      "value": 129,
-      "aiFit": 980,
-      "priceEfficiency": 120,
+      "value": 176,
+      "aiFit": 820,
+      "priceEfficiency": 160,
       "powerEfficiency": 152
     },
     "nbVector": [
       667,
       820,
-      129,
-      980,
-      120,
+      176,
+      820,
+      160,
       152
     ],
     "vectorLabels": [
@@ -70,16 +70,28 @@
       "가격 효율",
       "전력 효율"
     ],
-    "nbMax": 212.336,
-    "nbMin": 374.921,
-    "weightedScore": 579,
+    "nbMax": 259.049,
+    "nbMin": 424.931,
+    "weightedScore": 573,
     "nbBand": "500~699",
-    "summary": "GPU NVIDIA GeForce RTX 5060 Ti 부품을 속도 중심 N/B 데이터베이스 점수 579점으로 저장했습니다."
+    "summary": "GPU NVIDIA GeForce RTX 5060 Ti 부품을 속도 중심 N/B 데이터베이스 점수 573점으로 저장했습니다."
   },
-  "nbWeightedScore": 579,
-  "nbMax": 212.336,
-  "nbMin": 374.921,
+  "nbWeightedScore": 573,
+  "nbMax": 259.049,
+  "nbMin": 424.931,
   "nbBand": "500~699",
-  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=NVIDIA%20GeForce%20RTX%205060%20Ti%2016GB%20%EA%B0%80%EA%B2%A9",
-  "notes": "Chrome 검색 수집 기준으로 가격을 확인하는 AI/게임 겸용 GPU 후보입니다."
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=NVIDIA%20GeForce%20RTX%205060%20Ti%20price",
+  "notes": "NVIDIA GeForce RTX 5060 Ti은 게임, 작업, AI 활용을 함께 검토할 그래픽카드 후보입니다.",
+  "textRepair": {
+    "checkedAt": "2026-05-26T11:46:28.754+09:00",
+    "method": "ai-text-sanity-rules",
+    "repairedFields": [
+      "speedLabel",
+      "notes"
+    ]
+  },
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
 }

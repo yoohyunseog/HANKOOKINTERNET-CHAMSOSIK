@@ -1,0 +1,89 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-05-26T11:46:29.748+09:00",
+  "category": "SSD",
+  "id": "ssd-seagate-firecuda-540-2tb",
+  "name": "Seagate FireCuda 540 2TB",
+  "maker": "Seagate",
+  "platform": "M.2",
+  "estimatedPriceKrw": 202010,
+  "priceBand": "15~30만원",
+  "speedLabel": "PCIe 5.0 NVMe",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "SSD",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 96,
+  "valueIndex": 47.5,
+  "aiUseScore": 62,
+  "powerWatts": 11,
+  "tags": [
+    "creator",
+    "high-end"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "SSD",
+    "partId": "ssd-seagate-firecuda-540-2tb",
+    "partName": "Seagate FireCuda 540 2TB",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "SSD",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 960,
+      "value": 633,
+      "aiFit": 620,
+      "priceEfficiency": 500,
+      "powerEfficiency": 1000
+    },
+    "nbVector": [
+      100,
+      960,
+      633,
+      620,
+      500,
+      1000
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 406.72,
+    "nbMin": 358.422,
+    "weightedScore": 485,
+    "nbBand": "100~499",
+    "summary": "SSD Seagate FireCuda 540 2TB 부품을 속도 중심 N/B 데이터베이스 점수 485점으로 저장했습니다."
+  },
+  "nbWeightedScore": 485,
+  "nbMax": 406.72,
+  "nbMin": 358.422,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Seagate%20FireCuda%20540%202TB%20price",
+  "notes": "Auto-generated AI PC candidate added after the saved candidate list was exhausted.",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

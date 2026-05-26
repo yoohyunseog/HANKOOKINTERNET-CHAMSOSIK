@@ -1,0 +1,89 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-05-26T11:46:28.352+09:00",
+  "category": "CPU",
+  "id": "cpu-amd-9-7950x3d",
+  "name": "AMD 라이젠 9 7950X3D",
+  "maker": "AMD",
+  "platform": "AM5",
+  "estimatedPriceKrw": 850000,
+  "priceBand": "60만원 이상",
+  "speedLabel": "4.2GHz (Boost 5.7GHz)",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "CPU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 98,
+  "valueIndex": 11.5,
+  "aiUseScore": 64,
+  "powerWatts": 120,
+  "tags": [
+    "gaming",
+    "workstation"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "CPU",
+    "partId": "cpu-amd-9-7950x3d",
+    "partName": "AMD 라이젠 9 7950X3D",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "CPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 980,
+      "value": 153,
+      "aiFit": 640,
+      "priceEfficiency": 120,
+      "powerEfficiency": 272
+    },
+    "nbVector": [
+      100,
+      980,
+      153,
+      640,
+      120,
+      272
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 130.199,
+    "nbMin": 333.587,
+    "weightedScore": 349,
+    "nbBand": "100~499",
+    "summary": "CPU AMD 라이젠 9 7950X3D 부품을 속도 중심 N/B 데이터베이스 점수 349점으로 저장했습니다."
+  },
+  "nbWeightedScore": 349,
+  "nbMax": 130.199,
+  "nbMin": 333.587,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=AMD%20%EB%9D%BC%EC%9D%B4%EC%A0%A0%209%207950X3D%20%EC%B5%9C%EC%A0%80%EA%B0%80%20%EB%8B%A4%EB%82%98%EC%99%80",
+  "notes": "High-end 3D V-Cache processor. Price estimated based on market value as search results showed pre-built PCs.",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

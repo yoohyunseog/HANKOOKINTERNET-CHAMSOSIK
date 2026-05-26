@@ -1,0 +1,89 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-05-26T11:46:29.683+09:00",
+  "category": "SSD",
+  "id": "ssd-samsung-990-evo-plus-1tb",
+  "name": "Samsung 990 EVO Plus 1TB",
+  "maker": "Samsung",
+  "platform": "M.2 NVMe",
+  "estimatedPriceKrw": 183800,
+  "priceBand": "15~30만원",
+  "speedLabel": "7,150MB/s",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "SSD",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 75,
+  "valueIndex": 40.8,
+  "aiUseScore": 49,
+  "powerWatts": 0,
+  "tags": [
+    "PCIe 4.0",
+    "PS5"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "SSD",
+    "partId": "ssd-samsung-990-evo-plus-1tb",
+    "partName": "Samsung 990 EVO Plus 1TB",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "SSD",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 750,
+      "value": 544,
+      "aiFit": 490,
+      "priceEfficiency": 540,
+      "powerEfficiency": 750
+    },
+    "nbVector": [
+      100,
+      750,
+      544,
+      490,
+      540,
+      750
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 482.448,
+    "nbMin": 366.773,
+    "weightedScore": 405,
+    "nbBand": "100~499",
+    "summary": "SSD Samsung 990 EVO Plus 1TB 부품을 속도 중심 N/B 데이터베이스 점수 405점으로 저장했습니다."
+  },
+  "nbWeightedScore": 405,
+  "nbMax": 482.448,
+  "nbMin": 366.773,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Samsung%20990%20EVO%20Plus%201TB%20%EA%B0%80%EA%B2%A9",
+  "notes": "Sequential Read 7,150MB/s, Sequential Write 6,300MB/s, TBW 600TB",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

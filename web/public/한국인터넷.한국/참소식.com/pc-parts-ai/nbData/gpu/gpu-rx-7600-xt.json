@@ -1,0 +1,89 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-05-26T11:46:28.686+09:00",
+  "category": "GPU",
+  "id": "gpu-rx-7600-xt",
+  "name": "AMD Radeon RX 7600 XT",
+  "maker": "AMD",
+  "platform": "PCIe",
+  "estimatedPriceKrw": 430000,
+  "priceBand": "30~60만원",
+  "speedLabel": "16GB VRAM / value GPU",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "GPU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 72,
+  "valueIndex": 16.7,
+  "aiUseScore": 47,
+  "powerWatts": 190,
+  "tags": [
+    "gaming",
+    "value"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "GPU",
+    "partId": "gpu-rx-7600-xt",
+    "partName": "AMD Radeon RX 7600 XT",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "GPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 720,
+      "value": 223,
+      "aiFit": 470,
+      "priceEfficiency": 230,
+      "powerEfficiency": 126
+    },
+    "nbVector": [
+      100,
+      720,
+      223,
+      470,
+      230,
+      126
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 151.424,
+    "nbMin": 369.474,
+    "weightedScore": 290,
+    "nbBand": "100~499",
+    "summary": "GPU AMD Radeon RX 7600 XT 부품을 속도 중심 N/B 데이터베이스 점수 290점으로 저장했습니다."
+  },
+  "nbWeightedScore": 290,
+  "nbMax": 151.424,
+  "nbMin": 369.474,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=AMD%20Radeon%20RX%207600%20XT%20price",
+  "notes": "Auto-generated AI PC candidate added after the saved candidate list was exhausted.",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

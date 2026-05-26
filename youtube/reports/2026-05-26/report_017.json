@@ -1,0 +1,285 @@
+{
+  "timestamp": "2026-05-26T03:40:45.372414",
+  "model": "mistral:latest",
+  "keyword_count": 3,
+  "analyze_subtitles": true,
+  "analysis_source": "youtube",
+  "keywords": [
+    {
+      "keyword": "오늘의 주요 뉴스",
+      "is_fixed": true,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "신세계그룹 논란",
+      "is_fixed": false,
+      "views": [
+        5743,
+        36042
+      ],
+      "video_count": 2,
+      "videos": [
+        {
+          "title": "위기의 신세계그룹…정용진 직접 등판 이유는? / KBS  2026.05.25.",
+          "video_id": "JSS2EMdnPvI",
+          "views": 5743,
+          "upload_date": "2026-05-25",
+          "url": "https://www.youtube.com/watch?v=JSS2EMdnPvI",
+          "subtitle_summary": "1. 신세계그룹 회장 정용진은 5월 26일 대국민에게 사과를 예고했습니다. 이는 스타벅스코리아의 5월 18일 '탱크 데이' 할인 행사가 부적절했다고 인식된 사건으로 인해 발생했습니다.\n2. 정 회장은 약 13년 만에 신세계 그룹 총수로서 국민 앞에 고개를 숙이게 됐습니다. 이미 사과문을 냈던 정 회장이 재차 사과에 나서는 이유는 스타벅스가 심상치 않은 '불매' 움직임으로 인해 판단했기 때문입니다.\n3. 지난주 일부 스타벅스 매장 매출이 10%가량 빠진 것과, 카카오톡 교환권 선물 순위에서도 7년 만에 처음으로 다른 브랜드에 밀렸고, 충전식 선불카드 환불 요구가 잇따르고 있는 상황이 있었습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "'5·18 탱크데이 논란' 정용진 피의자 입건…직접 대국민 사과 나선다 [이슈PLAY] / JTBC News",
+          "video_id": "9cE5NOsZWes",
+          "views": 36042,
+          "upload_date": "2026-05-25",
+          "url": "https://www.youtube.com/watch?v=9cE5NOsZWes",
+          "subtitle_summary": "1. 정용진, 신세계 그룹 회장, 5월 18일 스타벅스 탱크데이 이벤트에서 사용한 문구로 인해 여론의 비판을 받았다.\n2. 이 이벤트는 개엄의 탱크 트입과 1987년 박종철 고문치사 사건을 연상시키며, 스타벅스 코리아의 대표와 임원을 해임했다.\n3. 이 사태는 겉잡을 수 없이 번졌고, 이재명 대통령도 강한 비판을 가했으며, 경찰은 피의자 신분으로 입권하여 수사를 시작했다.",
+          "db_saved": true
+        }
+      ],
+      "max": 2.8219,
+      "min": 1.7379,
+      "nb_score": 1.6237,
+      "avg_views": 20892.5,
+      "total_views": 41785
+    },
+    {
+      "keyword": "반도체 주가 전망",
+      "is_fixed": false,
+      "views": [
+        288,
+        305,
+        2138,
+        1988,
+        283,
+        625
+      ],
+      "video_count": 6,
+      "videos": [
+        {
+          "title": "[Hanmi Semiconductor Stock Outlook] TC Bonder Shipments Resume!! Q2 Earnings Rebound Begins!! You...",
+          "video_id": "wUxpoX6pxgs",
+          "views": 288,
+          "upload_date": "2026-05-25",
+          "url": "https://www.youtube.com/watch?v=wUxpoX6pxgs",
+          "subtitle_summary": "Hanmi Semiconductor, 메모리 적층에 사용되는 TC Bonder 장비를 제조하는 회사입니다. 2분기부터 TC Bonder 추화가 예상되어 실적이 개선될 것으로 전망되었습니다. 증권가들은 HBM4와 2.5D 패키징 확대에 따른 목표 주가를 38만 원으로 상향했습니다. 이는 SK Hynix의 HBM4 양산 본격화로 인한 TC Bonder 수요 폭발과 2.5D 오디 패키징 시장의 AI 가속기 수요와 맞물려 성장하는 구조적 성장 사이클에 올라타고 있는 종목이다.",
+          "db_saved": true
+        },
+        {
+          "title": "[Hanmi Semiconductor Stock Outlook] Why the Chairman Invested an Additional 8 Billion Won After Q...",
+          "video_id": "NJ3WLAVtUCU",
+          "views": 305,
+          "upload_date": "2026-05-25",
+          "url": "https://www.youtube.com/watch?v=NJ3WLAVtUCU",
+          "subtitle_summary": "1. Hanmi Semiconductor 회사의 1분기 매출과 영업 이익은 시장 예상보다 높게 성적이었으나, 주가는 최고점에서 30만 원까지 하락했습니다.\n2. 회사의 대표인 곽동신은 2분기부터 TC 본더 수주가 집중되고 있으며, 하반기에 가속화될 것이라고 밝혔습니다.\n3. 이러한 상황을 보고, 곽동신은 80억 원의 자사주를 추가 취득하였으며, 6월 16일에 장내입이 예정되었습니다. 이는 회사의 미래를 확신한다는 강력한 시그널이라고 합니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[한미반도체 주가전망] 내일 급등 터집니다! 연휴 호재 확인 #한미반도체 #한미반도체주가전망 #한미반도체주가",
+          "video_id": "nZyHI9mnY4s",
+          "views": 2138,
+          "upload_date": "2026-05-25",
+          "url": "https://www.youtube.com/watch?v=nZyHI9mnY4s",
+          "subtitle_summary": "1. 한미 반도체는 연휴 때문에 현재 국내 시장이 열리지 않으나, 내일 개방될 것으로 예상되며, 미국 시장의 최근 상승과 함께 추세전을 유지할 가능성이 높습니다.\n2. 한미 반도체는 최근 1분기 실적 실망으로 인해 급락했으나, 해외/국내 증권사들이 목표가를 상향시킨 점에서 2분기부터 V형 반등의 가능성이 있다고 평가합니다.\n3. 한미 반도체의 추가적인 매출 상승과 함께 영업 이익에 대한 기대감이 높으며, 중장기 전망도 긍정적입니다. 따라서, 최근 조정된 구간은 여러분들이 매도를 할 수 있는 기회의 구간일 수 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "제주반도체 주가 전망 와 연휴에 반도체 관련 이런 대형 호재 속보가 나오네요 ? 화요일 부터 반드시 이렇게 대응 하세요",
+          "video_id": "JiJ8__DzBr4",
+          "views": 1988,
+          "upload_date": "2026-05-25",
+          "url": "https://www.youtube.com/watch?v=JiJ8__DzBr4",
+          "subtitle_summary": "1. 제주 반도체 분들은 연휴 중 대형 반도체 호재 속보가 나왔습니다. 이에 대응하기 위해 명확한 대응법이 있으며, 최근 고점 매도를 통해 증거로 제시했습니다.\n2. 노무라 증권은 2026년 예상 ROE 24%, PBR 2.9배로 반도체가 코스피 상승을 주도할 것이라고 강조했습니다. 또한, 올해 코스피 순익 중 반도치 비중이 69%에서 74%까지 확대될 것으로 예상되었습니다.\n3. 이를 바탕으로 우리나라는 AI 시대 핵심 제조 플랫폼 국가로 진입하고 있으며, 이에 따른 실적을 견인할 것이다.",
+          "db_saved": true
+        },
+        {
+          "title": "[한미반도체 주가전망] 한미반도체 주가 전망! 반도체 후공정 독점 수주 시나리오와 310,000원 매물대 세력 원가 전격 대공개!",
+          "video_id": "AAD_LdG5ObU",
+          "views": 283,
+          "upload_date": "2026-05-25",
+          "url": "https://www.youtube.com/watch?v=AAD_LdG5ObU",
+          "subtitle_summary": "1. 한미반도체의 주가는 최고가인 424,500원에서 폭발적인 상승을 보이고 있으며, 현재 고점 대비 거래량이 철저하게 극하며 숨고르기를 하는 것은 세력의 이탈이 아니라 전고점 악성 매물을 완벽하게 흡수해내는 것입니다.\n2. 한미반도체가 인공지능 반도체의 핵심인 차세대 장비 공급망 리포트에서 독보적인 원창 기술력을 바탕으로 글로벌 시장의 주도권을 완전하게 주었다는 소식이 나왔습니다.\n3. 대형 증권사 보고소에 따르면 한미반도체에 대해 차세대 인공지능 인프라 핵심 장비 양산 체제 본격화에 따른 반도체 장비 SCM 사업의 주도권 장학과 구조적 성장세가 지속될 것이라고 강력하게 분석했습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[한미반도체 주가 전망] 신고가 후 25% 폭락.. 무조건 \"여기\"부터 반전 시작입니다! 3분만 집중 #한미반도체",
+          "video_id": "WTHfp9g8Xao",
+          "views": 625,
+          "upload_date": "2026-05-25",
+          "url": "https://www.youtube.com/watch?v=WTHfp9g8Xao",
+          "subtitle_summary": "1. 한미반도체 주가는 최근 4월 신고가로 25% 폭락했으며, 이번 주에 글로벌 투자 은행이 목표 주가를 50만원으로 상향 주정하였습니다.\n2. 이 목표 주가는 2028년 예상 순수익 기준 47배의 수익 비율을 적용해서 산출한 것으로, 2024년과 2025년 평균 대비 약 30% 할인된 보수적인 수치입니다.\n3. 핵심은 적용처가 다변화되고 있으며, 새로운 영역으로 넓어지고 있는 2.5D 로직이나 HBF와 같은 영역에서 수요가 증가하고 있고, 고객사도 다양화되고 있습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0.883,
+      "min": 2.0217,
+      "nb_score": 0.4368,
+      "avg_views": 937.83,
+      "total_views": 5627
+    },
+    {
+      "keyword": "엘니뇨 현상 영향",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "아이란 외교 정책",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "삼성전자 노조 파업",
+      "is_fixed": false,
+      "views": [
+        8264
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "[자막] 이재명 대통령이 삼성전자 노조 성과급 논란에 던진 일침",
+          "video_id": "JX_KvsD0CL8",
+          "views": 8264,
+          "upload_date": "2026-05-25",
+          "url": "https://www.youtube.com/watch?v=JX_KvsD0CL8",
+          "subtitle_summary": "이재명 대통령은 삼성전자 노조 성과급 논란에서 적정한 선을 지키는 것이 사회 공동체가 제대로 작동하기 위해서 중요하다고 주장했습니다. 이 선들은 도덕적, 상식적, 계약상, 휴약상, 법률적, 그리고 형법적인 기준으로 구분할 수 있으며, 상식적으로 보통 우리 국민이 동의하는 적절한 정도를 포함합니다. 이러한 선을 넘어서면 타인들에게 피해가 발생할 수 있으며, 공개된 장에서 책임 있는 인사들이 조직적으로 그런 만행을 저지릅니다. 또한 사회적 약자를 보호하기 위해서 우리는 특별한 보호를 하고, 예를 들어 단체 행동권, 노동 단결권, 음, 교소권과 같은 장치가 있습니다. 이러한 장치는 개인의 자유와 사회 전체의 자유로운 질서를 보장하기 위해서 작동합니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "스타벅스 불매 운동",
+      "is_fixed": false,
+      "views": [
+        16169
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "Jang Dong-hyeok: “(The ruling party’s) Starbucks boycott will only last until June 3rd... The tar...",
+          "video_id": "6_YpaguOqMM",
+          "views": 16169,
+          "upload_date": "2026-05-25",
+          "url": "https://www.youtube.com/watch?v=6_YpaguOqMM",
+          "subtitle_summary": "1. Jang Dong-hyeok predicts that the Starbucks boycott by the ruling party will last until June 3rd, suggesting that they will return to Starbucks coffee after that date. He recalls that in 2016, the Democratic Party held numerous shows against Samsung due to SARC emissions, but opposition to Samsung disappeared soon after the presidential election. Moon Jae-in took a pro-Samsung stance just one month into his presidency. In 2023, the Democratic Party mobilized the public for the Hokkaido nuclear decommissioning, and after the general election in 2024, they were discussing Hokkaido issues. Now, the target of the election campaign is Starbucks. Moon Jae-in is trying to channel the anger from his impeachment and special investigation into Starbucks. He calls for a local election based on the impeachment trial. To criticize Starbucks for 5.18 (a significant date in South Korean history), he suggests first addressing the issue of Song Young-gil, who was involved in a scandal related to Gwangju's 5.18 uprising, and Justice Minister Choo Mi-ae, who is accused of covering up the truth about the incident. He also calls for the resignation of Defense Minister Suh Wook and Prosecutor General Yoon Seok-youl, who are associated with the 5.18 incident. The people should judge between Starbucks and the impeachment scandal. This Friday, he urges the public to show their will for choosing their own coffee as a symbol of free citizenship in this election. He concludes that this election is a contest between Moon Jae-in and the free people.",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "전세 대출 대체",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "가공식품 보존료 위험",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "AI 기술 발전",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "성과급 투표 갈등",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "디지털 성범죄 대책",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "부동산 비과세 제도",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "ESS 요금 혼선",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    }
+  ]
+}

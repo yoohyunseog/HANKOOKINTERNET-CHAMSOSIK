@@ -1,0 +1,95 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-05-26T11:46:29.495+09:00",
+  "category": "RAM",
+  "id": "ram-ddr5-64-6400",
+  "name": "DDR5 64GB 6400MHz",
+  "maker": "Common",
+  "platform": "DDR5",
+  "estimatedPriceKrw": 320000,
+  "priceBand": "30~60만원",
+  "speedLabel": "DDR5-6400",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "RAM",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 92,
+  "valueIndex": 28.8,
+  "aiUseScore": 92,
+  "powerWatts": 18,
+  "tags": [
+    "creator",
+    "ai"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "RAM",
+    "partId": "ram-ddr5-64-6400",
+    "partName": "DDR5 64GB 6400MHz",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "RAM",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 920,
+      "value": 384,
+      "aiFit": 920,
+      "priceEfficiency": 310,
+      "powerEfficiency": 1000
+    },
+    "nbVector": [
+      100,
+      920,
+      384,
+      920,
+      310,
+      1000
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 365.823,
+    "nbMin": 363.4,
+    "weightedScore": 457,
+    "nbBand": "100~499",
+    "summary": "RAM DDR5 64GB 6400MHz 부품을 속도 중심 N/B 데이터베이스 점수 457점으로 저장했습니다."
+  },
+  "nbWeightedScore": 457,
+  "nbMax": 365.823,
+  "nbMin": 363.4,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=DDR5%2064GB%206400MHz%20price",
+  "notes": "DDR5 64GB 6400MHz은 용량과 클럭을 함께 보는 DDR5 메모리 후보입니다.",
+  "textRepair": {
+    "checkedAt": "2026-05-26T11:46:29.495+09:00",
+    "method": "ai-text-sanity-rules",
+    "repairedFields": [
+      "notes"
+    ]
+  },
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

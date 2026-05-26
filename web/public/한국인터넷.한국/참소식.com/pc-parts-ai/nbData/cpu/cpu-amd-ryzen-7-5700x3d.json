@@ -1,0 +1,89 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-05-26T11:46:28.389+09:00",
+  "category": "CPU",
+  "id": "cpu-amd-ryzen-7-5700x3d",
+  "name": "AMD Ryzen 7 5700X3D",
+  "maker": "AMD",
+  "platform": "AM4",
+  "estimatedPriceKrw": 257480,
+  "priceBand": "15~30만원",
+  "speedLabel": "3.0GHz",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "CPU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 75,
+  "valueIndex": 29.1,
+  "aiUseScore": 49,
+  "powerWatts": 105,
+  "tags": [
+    "gaming",
+    "3D V-Cache"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "CPU",
+    "partId": "cpu-amd-ryzen-7-5700x3d",
+    "partName": "AMD Ryzen 7 5700X3D",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "CPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 750,
+      "value": 388,
+      "aiFit": 490,
+      "priceEfficiency": 390,
+      "powerEfficiency": 238
+    },
+    "nbVector": [
+      100,
+      750,
+      388,
+      490,
+      390,
+      238
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 243.977,
+    "nbMin": 386.384,
+    "weightedScore": 341,
+    "nbBand": "100~499",
+    "summary": "CPU AMD Ryzen 7 5700X3D 부품을 속도 중심 N/B 데이터베이스 점수 341점으로 저장했습니다."
+  },
+  "nbWeightedScore": 341,
+  "nbMax": 243.977,
+  "nbMin": 386.384,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=AMD%20Ryzen%207%205700X3D%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "Vermeer architecture, 8 cores, 16 threads, L3 cache 96MB",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

@@ -1,0 +1,90 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-05-26T11:46:28.677+09:00",
+  "category": "CPU",
+  "id": "cpu-intel-core-ultra-9-285kf",
+  "name": "Intel Core Ultra 9 285KF",
+  "maker": "Intel",
+  "platform": "LGA1851",
+  "estimatedPriceKrw": 914990,
+  "priceBand": "60만원 이상",
+  "speedLabel": "Up to 5.7GHz",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "CPU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 98,
+  "valueIndex": 10.7,
+  "aiUseScore": 64,
+  "powerWatts": 125,
+  "tags": [
+    "high-end",
+    "gaming",
+    "workstation"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "CPU",
+    "partId": "cpu-intel-core-ultra-9-285kf",
+    "partName": "Intel Core Ultra 9 285KF",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "CPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 980,
+      "value": 143,
+      "aiFit": 640,
+      "priceEfficiency": 110,
+      "powerEfficiency": 261
+    },
+    "nbVector": [
+      100,
+      980,
+      143,
+      640,
+      110,
+      261
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 126.137,
+    "nbMin": 331.301,
+    "weightedScore": 346,
+    "nbBand": "100~499",
+    "summary": "CPU Intel Core Ultra 9 285KF 부품을 속도 중심 N/B 데이터베이스 점수 346점으로 저장했습니다."
+  },
+  "nbWeightedScore": 346,
+  "nbMax": 126.137,
+  "nbMin": 331.301,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Intel%20Core%20Ultra%209%20285KF%20%EC%A0%95%ED%92%88%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "KF model (no integrated graphics, unlocked multiplier)",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

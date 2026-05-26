@@ -1,0 +1,89 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-05-26T11:46:28.870+09:00",
+  "category": "Mainboard",
+  "id": "mb-lga1851-b860m",
+  "name": "LGA1851 B860M Mainboard",
+  "maker": "Common",
+  "platform": "LGA1851",
+  "estimatedPriceKrw": 141390,
+  "priceBand": "15만원 미만",
+  "speedLabel": "DDR5 / compact Intel",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "Mainboard",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 74,
+  "valueIndex": 52.3,
+  "aiUseScore": 48,
+  "powerWatts": 12,
+  "tags": [
+    "gaming",
+    "value"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "Mainboard",
+    "partId": "mb-lga1851-b860m",
+    "partName": "LGA1851 B860M Mainboard",
+    "speed": {
+      "score": 100,
+      "weight": 0.32,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "Mainboard",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 740,
+      "value": 697,
+      "aiFit": 480,
+      "priceEfficiency": 710,
+      "powerEfficiency": 1000
+    },
+    "nbVector": [
+      100,
+      740,
+      697,
+      480,
+      710,
+      1000
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 386.78,
+    "nbMin": 361.105,
+    "weightedScore": 442,
+    "nbBand": "100~499",
+    "summary": "Mainboard LGA1851 B860M Mainboard 부품을 속도 중심 N/B 데이터베이스 점수 442점으로 저장했습니다."
+  },
+  "nbWeightedScore": 442,
+  "nbMax": 386.78,
+  "nbMin": 361.105,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=LGA1851%20B860M%20Mainboard%20price",
+  "notes": "Auto-generated AI PC candidate added after the saved candidate list was exhausted.",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

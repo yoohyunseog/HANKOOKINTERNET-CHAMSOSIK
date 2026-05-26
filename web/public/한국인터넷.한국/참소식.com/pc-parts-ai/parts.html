@@ -396,6 +396,8 @@
       .links a:last-child { border-bottom: 0; }
     }
   </style>
+  <link rel="stylesheet" href="../common-site.css">
+  <script defer src="../common-site.js"></script>
 </head>
 <body>
   <header class="top-bar">
@@ -418,7 +420,17 @@
         <a class="button primary" href="../">참소식 메인</a>
         <a class="button primary" href="./">완성 조립 보기</a>
         <a class="button" id="json-link" href="./pc-parts-data.json">JSON 자료</a>
+        <a class="button" id="nbdb-link" href="./nbData/manifest.json">N/B 누적 DB</a>
       </div>
+    </section>
+
+    <section class="section-card" id="nb-top3-section" style="margin-bottom:18px;">
+      <h2>N/B 누적 Top 3 (서버 저장)</h2>
+      <p class="part-meta">서버에 저장된 랜덤 조합 결과의 Top 3를 선택해서 바로 확인합니다.</p>
+      <div style="display:flex;gap:10px;align-items:center;margin-top:12px;flex-wrap:wrap;">
+        <span class="part-meta" id="nb-top3-status">로드 대기</span>
+      </div>
+      <div class="combo-grid" id="nb-top3-results" style="margin-top:12px;"></div>
     </section>
 
     <section class="status-grid" aria-label="부품 요약">
@@ -457,7 +469,11 @@
       <p>부품별 N/B 데이터베이스 점수는 단일 JSON 안에 저장합니다. 서버는 파일만 제공하고, 완성형 PC Top 15 랜덤 조합은 버튼을 누른 브라우저에서만 계산합니다.</p>
       <div class="combo-status">
         <button class="button primary" id="random-combo-button" type="button">Top 15 랜덤 조합 계산</button>
-        <span class="part-meta" id="combo-progress">대기 중 · 200ms 간격 계산</span>
+        <button class="button" data-random-attempts="100" type="button">100번</button>
+        <button class="button" data-random-attempts="300" type="button">300번</button>
+        <button class="button" data-random-attempts="500" type="button">500번</button>
+        <button class="button" data-random-attempts="1000" type="button">1000번</button>
+        <span class="part-meta" id="combo-progress">대기 중 · 1ms 간격 계산</span>
       </div>
       <div class="combo-grid" id="combo-results"></div>
     </section>
@@ -519,6 +535,7 @@
     };
     const assetVersion = Date.now();
     document.getElementById("json-link").href = `./pc-parts-data.json?v=${assetVersion}`;
+    document.getElementById("nbdb-link").href = `./nbData/manifest.json?v=${assetVersion}`;
     document.getElementById("raw-link").href = `./pc-parts-raw.json?v=${assetVersion}`;
     document.getElementById("script-link").href = `./pc_parts_research_bot.js?v=${assetVersion}`;
 
@@ -643,6 +660,86 @@
       renderParts(state.data);
     }
 
+    function normalizePartForPage(part) {
+      const categoryImage = String(part.category || "cpu").toLowerCase();
+      return {
+        ...part,
+        sourceType: part.sourceType || "nbData",
+        imageUrl: part.imageUrl || `./img/${categoryImage}.svg`,
+        priceBand: part.priceBand || priceBandFor(part.estimatedPriceKrw),
+        aiExplanation: part.aiExplanation || {
+          userLevel: { level: "-" },
+          summary: part.notes || ""
+        }
+      };
+    }
+
+    function priceBandFor(price) {
+      const value = Number(price || 0);
+      if (value < 150000) return "15만원 미만";
+      if (value < 300000) return "15~30만원";
+      if (value < 600000) return "30~60만원";
+      return "60만원 이상";
+    }
+
+    function mergeParts(currentParts, nbParts) {
+      const merged = new Map();
+      for (const part of [...currentParts, ...nbParts].map(normalizePartForPage)) {
+        const key = `${part.category}|${part.id || part.name}|${part.estimatedPriceKrw}`;
+        merged.set(key, {
+          ...merged.get(key),
+          ...part
+        });
+      }
+      return [...merged.values()].sort((a, b) => {
+        if (a.category !== b.category) return String(a.category).localeCompare(String(b.category));
+        return (b.nbWeightedScore || 0) - (a.nbWeightedScore || 0);
+      });
+    }
+
+    async function fetchJson(url) {
+      const response = await fetch(`${url}?v=${assetVersion}`, { cache: "no-store" });
+      if (!response.ok) throw new Error(`${url} HTTP ${response.status}`);
+      return response.json();
+    }
+
+    async function loadNbDataParts() {
+      const manifest = await fetchJson("./nbData/manifest.json");
+      const entries = Object.entries(manifest.categories || {});
+      const requests = [];
+      for (const [folder, files] of entries) {
+        for (const fileName of files || []) {
+          requests.push(fetchJson(`./nbData/${folder}/${fileName}`).catch(() => null));
+        }
+      }
+      const loaded = await Promise.all(requests);
+      return {
+        manifest,
+        parts: loaded.filter(Boolean)
+      };
+    }
+
+    async function loadPageData() {
+      const data = await fetchJson("./pc-parts-data.json");
+      let nbData = { manifest: null, parts: [] };
+      try {
+        nbData = await loadNbDataParts();
+      } catch (error) {
+        console.warn("nbData load skipped", error);
+      }
+
+      const mergedParts = mergeParts(data.parts || [], nbData.parts || []);
+      return {
+        ...data,
+        parts: mergedParts,
+        categories: data.categories || ["CPU", "GPU", "RAM", "SSD", "Mainboard", "PSU"],
+        nbDataManifest: nbData.manifest,
+        notice: nbData.manifest
+          ? `${data.notice || "실제 구매 전에는 판매처 가격과 재고를 다시 확인해야 합니다."} N/B 누적 DB 기준 ${nbData.manifest.totalParts || mergedParts.length}개 부품 파일을 함께 표시합니다.`
+          : data.notice
+      };
+    }
+
     function partsByCategory(category) {
       return (state.data?.parts || []).filter((part) => part.category === category);
     }
@@ -732,8 +829,23 @@
       `).join("");
     }
 
-    async function calculateRandomCombos() {
+    function loadSavedCombos() {
+      const saved = localStorage.getItem("pc_parts_top15");
+      if (!saved) return;
+      try {
+        const { combos } = JSON.parse(saved);
+        if (combos && combos.length) {
+          renderCombos(combos);
+          document.getElementById("combo-progress").textContent = `저장된 Top ${combos.length} 결과 로드됨`;
+        }
+      } catch (e) {
+        console.error("Failed to load saved combos", e);
+      }
+    }
+
+    async function calculateRandomCombos(attempts = 100) {
       const button = document.getElementById("random-combo-button");
+      const attemptButtons = document.querySelectorAll("[data-random-attempts]");
       const progress = document.getElementById("combo-progress");
       const categories = ["CPU", "GPU", "RAM", "SSD", "Mainboard", "PSU"];
       const pools = Object.fromEntries(categories.map((category) => [category, partsByCategory(category)]));
@@ -743,8 +855,22 @@
       }
 
       button.disabled = true;
+      attemptButtons.forEach((item) => { item.disabled = true; });
+      
+      // 기존 저장된 TOP 15 데이터를 불러와서 시작점으로 설정
       const results = new Map();
-      const attempts = 80;
+      const saved = localStorage.getItem("pc_parts_top15");
+      if (saved) {
+        try {
+          const { combos } = JSON.parse(saved);
+          if (Array.isArray(combos)) {
+            combos.forEach(combo => results.set(combo.key, combo));
+          }
+        } catch (e) {
+          console.warn("기존 저장 데이터 로드 실패", e);
+        }
+      }
+
       for (let index = 0; index < attempts; index += 1) {
         const selected = categories.map((category) => randomItem(pools[category]));
         if (isCompatible(selected)) {
@@ -753,24 +879,77 @@
         }
         const top = [...results.values()].sort((a, b) => b.finalScore - a.finalScore).slice(0, 15);
         renderCombos(top);
-        progress.textContent = `${index + 1}/${attempts} 계산 중 · 후보 ${results.size}개 · 200ms`;
-        await new Promise((resolve) => setTimeout(resolve, 200));
+        progress.textContent = `${index + 1}/${attempts} 계산 중 · 후보 ${results.size}개 · 1ms`;
+        await new Promise((resolve) => setTimeout(resolve, 1));
       }
       const top15 = [...results.values()].sort((a, b) => b.finalScore - a.finalScore).slice(0, 15);
       renderCombos(top15);
-      progress.textContent = `완료 · Top ${top15.length} · 200ms 간격 랜덤 조합`;
+      
+      // 로컬 브라우저 저장
+      localStorage.setItem("pc_parts_top15", JSON.stringify({
+        timestamp: Date.now(),
+        combos: top15
+      }));
+
+      progress.textContent = `완료 · Top ${top15.length} · 1ms 간격 랜덤 조합`;
       button.disabled = false;
+      attemptButtons.forEach((item) => { item.disabled = false; });
     }
 
-    fetch(`./pc-parts-data.json?v=${assetVersion}`, { cache: "no-store" })
-      .then((response) => {
-        if (!response.ok) throw new Error(`HTTP ${response.status}`);
-        return response.json();
-      })
+    // --- New: load and render Top3 from nbData/manifest.json ---
+    async function fetchNbManifest() {
+      try {
+        const manifest = await fetchJson('./nbData/manifest.json');
+        return manifest;
+      } catch (err) {
+        console.warn('nb manifest load failed', err);
+        return null;
+      }
+    }
+
+    function renderNbTop3ForRun(manifest) {
+      const container = document.getElementById('nb-top3-results');
+      const status = document.getElementById('nb-top3-status');
+      container.innerHTML = '';
+      if (!manifest || !Array.isArray(manifest.runs)) {
+        status.textContent = '서버에 Top 데이터가 없습니다.';
+        return;
+      }
+      const run = [...manifest.runs].sort((a, b) => Number(b.count || 0) - Number(a.count || 0))[0];
+      if (!run || !Array.isArray(run.top3) || run.top3.length === 0) {
+        status.textContent = `서버 Top 데이터가 없습니다.`;
+        return;
+      }
+      status.textContent = `서버 Top ${run.top3.length} (count=${run.count})`;
+      container.innerHTML = run.top3.map((combo, idx) => {
+        const items = (combo.items || []).map((it) => `<li>${escapeHtml(it.name || it.title || 'Unnamed')} ${it.price ? '(' + formatKrw(it.price) + ')' : ''}</li>`).join('');
+        return `
+          <article class="combo-card">
+            <h3>Top ${idx + 1} · ${Math.round((combo.score || 0) * 100)/100}점</h3>
+            <p><strong>총액:</strong> ${formatKrw(combo.total_price || combo.totalPrice || 0)}</p>
+            <ul>${items}</ul>
+          </article>
+        `;
+      }).join('');
+    }
+
+    async function initNbTop3Widget() {
+      const manifest = await fetchNbManifest();
+      renderNbTop3ForRun(manifest);
+    }
+
+
+    loadPageData()
       .then((data) => {
         state.data = data;
         render();
-        document.getElementById("random-combo-button").addEventListener("click", calculateRandomCombos);
+        loadSavedCombos();
+        document.getElementById("random-combo-button").addEventListener("click", () => calculateRandomCombos(100));
+        document.querySelectorAll("[data-random-attempts]").forEach((button) => {
+          button.addEventListener("click", () => calculateRandomCombos(Number(button.dataset.randomAttempts || 100)));
+        });
+        // initialize Top3 widget that reads server manifest
+        initNbTop3Widget().catch(() => {});
       })
       .catch((error) => {
         document.getElementById("top-updated").textContent = "자료를 불러오지 못했습니다.";

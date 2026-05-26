@@ -1,0 +1,97 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-05-26T11:46:29.224+09:00",
+  "category": "PSU",
+  "id": "psu-750w-gold",
+  "name": "750W 80PLUS Gold PSU",
+  "maker": "Common",
+  "platform": "ATX",
+  "estimatedPriceKrw": 79500,
+  "priceBand": "15만원 미만",
+  "speedLabel": "파워서플라이 출력 등급",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "PSU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 80,
+  "valueIndex": 80,
+  "aiUseScore": 52,
+  "powerWatts": 0,
+  "tags": [
+    "gaming",
+    "value",
+    "creator"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "PSU",
+    "partId": "psu-750w-gold",
+    "partName": "750W 80PLUS Gold PSU",
+    "speed": {
+      "score": 100,
+      "weight": 0.32,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "PSU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 800,
+      "value": 1000,
+      "aiFit": 520,
+      "priceEfficiency": 1260,
+      "powerEfficiency": 800
+    },
+    "nbVector": [
+      100,
+      800,
+      1000,
+      520,
+      1260,
+      800
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 363.457,
+    "nbMin": 350.025,
+    "weightedScore": 533,
+    "nbBand": "500~699",
+    "summary": "PSU 750W 80PLUS Gold PSU 부품을 속도 중심 N/B 데이터베이스 점수 533점으로 저장했습니다."
+  },
+  "nbWeightedScore": 533,
+  "nbMax": 363.457,
+  "nbMin": 350.025,
+  "nbBand": "500~699",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=750W%2080PLUS%20Gold%20PSU%20price",
+  "notes": "750W 80PLUS Gold PSU은 출력, 효율, 그래픽카드 전원 여유를 함께 볼 파워서플라이 후보입니다.",
+  "textRepair": {
+    "checkedAt": "2026-05-26T11:46:29.224+09:00",
+    "method": "ai-text-sanity-rules",
+    "repairedFields": [
+      "speedLabel",
+      "notes"
+    ]
+  },
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

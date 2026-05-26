@@ -1,0 +1,90 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-05-26T11:46:28.672+09:00",
+  "category": "CPU",
+  "id": "cpu-core-ultra-9-285k",
+  "name": "Intel Core Ultra 9 285K",
+  "maker": "Intel",
+  "platform": "LGA1851",
+  "estimatedPriceKrw": 780000,
+  "priceBand": "60만원 이상",
+  "speedLabel": "Max turbo 5.7GHz",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "CPU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 98,
+  "valueIndex": 12.6,
+  "aiUseScore": 98,
+  "powerWatts": 125,
+  "tags": [
+    "creator",
+    "ai",
+    "high-end"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "CPU",
+    "partId": "cpu-core-ultra-9-285k",
+    "partName": "Intel Core Ultra 9 285K",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "CPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 980,
+      "value": 168,
+      "aiFit": 980,
+      "priceEfficiency": 130,
+      "powerEfficiency": 261
+    },
+    "nbVector": [
+      100,
+      980,
+      168,
+      980,
+      130,
+      261
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 182.617,
+    "nbMin": 353.654,
+    "weightedScore": 386,
+    "nbBand": "100~499",
+    "summary": "CPU Intel Core Ultra 9 285K 부품을 속도 중심 N/B 데이터베이스 점수 386점으로 저장했습니다."
+  },
+  "nbWeightedScore": 386,
+  "nbMax": 182.617,
+  "nbMin": 353.654,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Intel%20Core%20Ultra%209%20285K%20price",
+  "notes": "Additional AI PC candidate collected when saved parts are already exhausted.",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

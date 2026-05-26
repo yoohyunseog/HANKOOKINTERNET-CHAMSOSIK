@@ -1,0 +1,90 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-05-26T11:46:28.360+09:00",
+  "category": "CPU",
+  "id": "cpu-amd-9-9950x",
+  "name": "AMD 라이젠 9 9950X",
+  "maker": "AMD",
+  "platform": "AM5",
+  "estimatedPriceKrw": 808020,
+  "priceBand": "60만원 이상",
+  "speedLabel": "Zen 5",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "CPU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 98,
+  "valueIndex": 12.1,
+  "aiUseScore": 64,
+  "powerWatts": 170,
+  "tags": [
+    "high-end",
+    "productivity",
+    "gaming"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "CPU",
+    "partId": "cpu-amd-9-9950x",
+    "partName": "AMD 라이젠 9 9950X",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "CPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 980,
+      "value": 161,
+      "aiFit": 640,
+      "priceEfficiency": 120,
+      "powerEfficiency": 192
+    },
+    "nbVector": [
+      100,
+      980,
+      161,
+      640,
+      120,
+      192
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 120.59,
+    "nbMin": 328.453,
+    "weightedScore": 346,
+    "nbBand": "100~499",
+    "summary": "CPU AMD 라이젠 9 9950X 부품을 속도 중심 N/B 데이터베이스 점수 346점으로 저장했습니다."
+  },
+  "nbWeightedScore": 346,
+  "nbMax": 120.59,
+  "nbMin": 328.453,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=AMD%20%EB%9D%BC%EC%9D%B4%EC%A0%A0%209%209950X",
+  "notes": "Granite Ridge architecture, AM5 socket.",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

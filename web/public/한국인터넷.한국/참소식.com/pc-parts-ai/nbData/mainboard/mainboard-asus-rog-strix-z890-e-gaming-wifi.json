@@ -1,0 +1,90 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-05-26T11:46:28.835+09:00",
+  "category": "Mainboard",
+  "id": "mainboard-asus-rog-strix-z890-e-gaming-wifi",
+  "name": "ASUS ROG STRIX Z890-E GAMING WIFI",
+  "maker": "ASUS",
+  "platform": "LGA1851",
+  "estimatedPriceKrw": 755000,
+  "priceBand": "60만원 이상",
+  "speedLabel": "DDR5 8800MHz",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "Mainboard",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 95,
+  "valueIndex": 12.6,
+  "aiUseScore": 62,
+  "powerWatts": 0,
+  "tags": [
+    "gaming",
+    "overclocking",
+    "high-end"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "Mainboard",
+    "partId": "mainboard-asus-rog-strix-z890-e-gaming-wifi",
+    "partName": "ASUS ROG STRIX Z890-E GAMING WIFI",
+    "speed": {
+      "score": 100,
+      "weight": 0.32,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "Mainboard",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 950,
+      "value": 168,
+      "aiFit": 620,
+      "priceEfficiency": 130,
+      "powerEfficiency": 950
+    },
+    "nbVector": [
+      100,
+      950,
+      168,
+      620,
+      130,
+      950
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 248.457,
+    "nbMin": 367.907,
+    "weightedScore": 375,
+    "nbBand": "100~499",
+    "summary": "Mainboard ASUS ROG STRIX Z890-E GAMING WIFI 부품을 속도 중심 N/B 데이터베이스 점수 375점으로 저장했습니다."
+  },
+  "nbWeightedScore": 375,
+  "nbMax": 248.457,
+  "nbMin": 367.907,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=ASUS%20ROG%20STRIX%20Z890-E%20GAMING%20WIFI%20price",
+  "notes": "Z890 chipset, LGA1851 socket, supports up to 192GB DDR5, 7x M.2 slots, Thunderbolt 4 support.",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

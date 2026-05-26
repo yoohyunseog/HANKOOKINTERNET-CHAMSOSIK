@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-25T11:18:47.651+09:00",
+  "updatedAt": "2026-05-26T11:46:29.392+09:00",
   "category": "RAM",
   "id": "ram-ddr5-32-6000",
   "name": "DDR5 32GB 6000MHz",
@@ -81,5 +81,16 @@
   "nbMin": 688.927,
   "nbBand": "700~849",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=DDR5%2032GB%206000MHz%20%EA%B0%80%EA%B2%A9",
-  "notes": "Chrome 검색 수집 기준으로 가격을 확인하는 기본 메모리 후보입니다."
+  "notes": "DDR5 32GB 6000MHz은 용량과 클럭을 함께 보는 DDR5 메모리 후보입니다.",
+  "textRepair": {
+    "checkedAt": "2026-05-26T11:46:29.392+09:00",
+    "method": "ai-text-sanity-rules",
+    "repairedFields": [
+      "notes"
+    ]
+  },
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
 }

@@ -1,0 +1,267 @@
+{
+  "timestamp": "2026-05-26T06:59:33.132104",
+  "model": "mistral:latest",
+  "keyword_count": 3,
+  "analyze_subtitles": true,
+  "analysis_source": "youtube",
+  "keywords": [
+    {
+      "keyword": "오늘의 주요 뉴스",
+      "is_fixed": true,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "부산날씨 예보",
+      "is_fixed": false,
+      "views": [
+        12915,
+        100172
+      ],
+      "video_count": 2,
+      "videos": [
+        {
+          "title": "[날씨] 더위 계속…내일(26일), 전국 강하고 많은 비 / KBS  2026.05.25.",
+          "video_id": "Ei4RpOYVDwA",
+          "views": 12915,
+          "upload_date": "2026-05-25",
+          "url": "https://www.youtube.com/watch?v=Ei4RpOYVDwA",
+          "subtitle_summary": "1. 오늘(25일) 한낮에는 대부분 지역이 30도 가까운 더위를 경험할 것으로 예상됩니다.\n2. 내일(26일) 전국적으로 강하고 많은 비가 예상되며, 수도권과 경북에는 30~100mm, 남해안과 제주도, 지리산 부근에는 80~200mm, 제주 산지에는 최대 300mm의 비가 예상됩니다.\n3. 내일은 전국적으로 강한 바람도 동반될 것으로 예상됩니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[날씨] 내일(26일) 전국 비…남부지방 집중호우 주의 / KBS  2026.05.25.",
+          "video_id": "6DgHEOH3SYo",
+          "views": 100172,
+          "upload_date": "2026-05-25",
+          "url": "https://www.youtube.com/watch?v=6DgHEOH3SYo",
+          "subtitle_summary": "1. 오늘은 30도 이내의 여름 더위가 나타났으며, 내일(26일) 전국에서 비가 예상되고 있습니다.\n2. 남서쪽부터 시작하여 대부분의 지역에서 내일 낮에 비가 내리게 될 것으로 보입니다. 전남, 경남, 제주에는 최대 100mm 이상의 강한 비가 쏟아지는 곳도 있을 것입니다.\n3. 내일 아침 기온은 서울 21도, 부산 19도로 오늘보다 높고, 낮 기온은 서울 25도, 대전과 광주 24도, 대구 23도로 3~5도 정도 낮을 것입니다. 바다의 물결은 남해상과 제주도 해상에서 최고 3m 이내로 높게 일거리라고 합니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 2.799,
+      "min": 1.9298,
+      "nb_score": 1.4505,
+      "avg_views": 56543.5,
+      "total_views": 113087
+    },
+    {
+      "keyword": "스타벅스 논란",
+      "is_fixed": false,
+      "views": [
+        26828,
+        11125,
+        2408
+      ],
+      "video_count": 3,
+      "videos": [
+        {
+          "title": "\"We Won't Fall for It This Time\" Public Outrage... Starbucks' 'History of Controversy' / SBS / Ne...",
+          "video_id": "cpXFYUPn9w0",
+          "views": 26828,
+          "upload_date": "2026-05-25",
+          "url": "https://www.youtube.com/watch?v=cpXFYUPn9w0",
+          "subtitle_summary": "Starbucks 공식 홍보에 의하면, 오전 10시부터 탱크 시리즈 텀블러를 판매할 계획이었으나, 이 행동은 518 민주화 운동과 관련된 문구로 인해 대중의 분노와 비판을 받았습니다. 특히, \"탁\"이라는 문구는 과거 박종철 열사에 대한 책상을 탁친히 억추고 죽은 사건과 연관되어 오해의 소지가 있었습니다. 이로 인해 도시민 사회와 정치권에서는 스타벅스의 역사적 인식과 민주화 영령 모독을 비판하며, 성명서를 발표했습니다. 결국, Starbucks는 행사를 중단하고 대충 사과문을 통해 향후 유사한 사례가 발생하지 않도록 하겠다고 선언했습니다. 또한, Starbucks는 지난 26일 고객으로부터 가습기에 불이 났다는 신고를 받았고, 이 증정품으로 나눠준 가습기의 배터리가 과열되어 불이 난 것으로 추정되었습니다. 따라서, Starbucks는 국가 기술 표준원에 사고를 보고하고 있으며, 조사 결과와 무관하게 가스기 두 종류에 대해 자발적으로 리콜을 실시하고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[Kim Jong-seok’s Opening] ‘Starbucks Controversy’ Spreads to Election Campaign… Song Mi-ryeong’s ...",
+          "video_id": "DVZFfNk8bA4",
+          "views": 11125,
+          "upload_date": "2026-05-25",
+          "url": "https://www.youtube.com/watch?v=DVZFfNk8bA4",
+          "subtitle_summary": "1. Starbucks 문제가 지방 선거에 중심으로 빛나고 있습니다. 현재 정부의 장관들이 스타벅스 비판 메시지를 전파하고 있으며, 송미령(농림 축산부 장관)은 국내산 농산물로 만든 차들을 추천했습니다.\n2. 한 시민단체는 이재명 대통령과 장관들이 스타벅스 불매를 강요하고 있다고 경찰의 고발을 접수했습니다. 이 문제로 인해 국민당 의원 김기헌은 SNS에 스타벅스에서 주문한 사진을 올리며, \"나는 선택할 자유가 있는 나라에서 살고 싶다\"고 적었습니다.\n3. Starbucks는 7년간 잘 아시는 대로 부동일이었던 선물하는 쿠폰 기프티콘 순위에서도 밀렸으며, 스타벅스 로고를 지우는 인증 릴레이까지 벌어지고 있습니다. 또한 스타벅스 제유카드 출시 시점을 다시 검토하고 있으며, 상황이 더 나빠지면 스타벅스 제유카드 발급 중지도 검토할 수 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "Chung Yong-jin bows his head 8 days after ‘Starbucks controversy’… “History education for all emp...",
+          "video_id": "ZEnOhHBHIls",
+          "views": 2408,
+          "upload_date": "2026-05-25",
+          "url": "https://www.youtube.com/watch?v=ZEnOhHBHIls",
+          "subtitle_summary": "1. Chung Yong-jin, chairman of the Shinsegae Group, will officially appear at a public apology event nine days after the Starbucks controversy. He is expected to announce the results of an internal investigation into the incident and present plans for preventing its recurrence.\n2. The focus of discussion is on Chung's sincere apology and the question of intent in the internal investigation's findings. Forensic work has been conducted on marketing staff's mobile phones as part of the investigation.\n3. Plans to implement history education for employees, including Chung himself, were previously announced in a written apology. It is possible that details about the implementation timeline and educational methods will be disclosed. Future meetings with related organizations are also being considered after all information is gathered and a public apology is made. (News JTBC)",
+          "db_saved": true
+        }
+      ],
+      "max": 1.6917,
+      "min": 2.4731,
+      "nb_score": 0.684,
+      "avg_views": 13453.67,
+      "total_views": 40361
+    },
+    {
+      "keyword": "암호화폐 시장 동향",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "미국 증시 휴장일",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "스페이스X IPO",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "기상청 날씨预警",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "고금리 고물가 논란",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "우주항공 ETF",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "AI 산업 질서",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "디지털 성범죄 대책",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "사회적 감수성 마케팅",
+      "is_fixed": false,
+      "views": [
+        15077
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "[뉴스초점] 스타벅스 불매 확산…정용진, 내일 대국민 사과 / 연합뉴스TV (YonhapnewsTV)",
+          "video_id": "0YdeRWI-cO4",
+          "views": 15077,
+          "upload_date": "2026-05-25",
+          "url": "https://www.youtube.com/watch?v=0YdeRWI-cO4",
+          "subtitle_summary": "1. 정용진, 신세계 그룹 회장이 내일 대국민 사과를 할 예정입니다. 소비자들의 불매 움직임은 여전하며, 선불 환불금에 대한 논란도 있습니다.\n2. 스타벅스에서 탱크데이 사건으로 인해 발생한 문제를 수습하기 위해, 정용진 회장이 직접 대국민과 소통할 예정입니다.\n3. 스타벅스가 처음에 취해야 할 조치로, 초기 수습이 매우 중요하며, 진실을 알아내고 피해를 당한 사람들의 용서를 받거나 보안을 요구하는 것이 필요합니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "반도체 AI 유치",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "휴머노이드 로봇 전쟁",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "가상자산 사업 확장",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "초고배당 주식",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    }
+  ]
+}

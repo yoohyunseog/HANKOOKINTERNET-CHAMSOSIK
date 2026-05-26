@@ -1,0 +1,138 @@
+.chamsosik-common-header,
+.chamsosik-common-footer,
+.chamsosik-common-ad {
+  box-sizing: border-box;
+  font-family: Arial, "Noto Sans KR", sans-serif;
+}
+
+.chamsosik-common-header {
+  position: relative;
+  z-index: 1000;
+  color: #ffffff;
+  background: linear-gradient(108deg, #071326 0%, #0f2f72 56%, #1d4ed8 100%);
+  border-bottom: 3px solid #f59e0b;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.24);
+}
+
+.chamsosik-common-inner {
+  width: min(1280px, calc(100% - 28px));
+  min-height: 64px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 10px 0;
+}
+
+.chamsosik-common-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 900;
+  white-space: nowrap;
+}
+
+.chamsosik-common-mark {
+  width: 38px;
+  height: 38px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  color: #dbeafe;
+  background: linear-gradient(145deg, #2563eb, #7c3aed);
+  font-size: 15px;
+  font-weight: 900;
+}
+
+.chamsosik-common-nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.chamsosik-common-nav a {
+  min-height: 34px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7px 10px;
+  border: 1px solid rgba(219, 234, 254, 0.24);
+  border-radius: 8px;
+  color: #eff6ff;
+  background: rgba(255, 255, 255, 0.08);
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.chamsosik-common-nav a:hover,
+.chamsosik-common-nav a:focus {
+  color: #111827;
+  background: #fbbf24;
+  outline: none;
+}
+
+.chamsosik-common-ad {
+  width: min(1280px, calc(100% - 28px));
+  min-height: 90px;
+  margin: 14px auto;
+  padding: 10px;
+  border: 1px solid rgba(203, 213, 225, 0.7);
+  border-radius: 8px;
+  background: #ffffff;
+  box-shadow: 0 8px 22px rgba(15, 23, 42, 0.06);
+}
+
+.chamsosik-common-footer {
+  margin-top: 28px;
+  padding: 24px 14px 30px;
+  color: #dbeafe;
+  background: #0f172a;
+  text-align: center;
+  line-height: 1.7;
+}
+
+.chamsosik-common-footer a {
+  color: #bfdbfe;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.chamsosik-common-footer-nav {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 0 0 12px;
+}
+
+.chamsosik-common-footer small {
+  display: block;
+  color: #94a3b8;
+}
+
+body > footer.site-footer:not(.chamsosik-common-footer) {
+  display: none !important;
+}
+
+@media (max-width: 860px) {
+  .chamsosik-common-inner {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .chamsosik-common-nav {
+    justify-content: flex-start;
+  }
+
+  .chamsosik-common-brand {
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,289 @@
+{
+  "timestamp": "2026-05-26T04:16:41.821166",
+  "model": "mistral:latest",
+  "keyword_count": 3,
+  "analyze_subtitles": true,
+  "analysis_source": "youtube",
+  "keywords": [
+    {
+      "keyword": "오늘의 주요 뉴스",
+      "is_fixed": true,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "삼성전자 노조 투표",
+      "is_fixed": false,
+      "views": [
+        1736,
+        32117
+      ],
+      "video_count": 2,
+      "videos": [
+        {
+          "title": "삼성전자 잠정합의안 투표 마감 D-2...투표율 86% / YTN",
+          "video_id": "qS4crQbxMcw",
+          "views": 1736,
+          "upload_date": "2026-05-25",
+          "url": "https://www.youtube.com/watch?v=qS4crQbxMcw",
+          "subtitle_summary": "1. Samsung Electronics 임금협상 잠정합의안 투표는 2일 전까지 진행중이며, 오늘 아침 86%의 투표율을 보였습니다.\n2. 반도체 부문 조합원들이 가결 가능성이 크다는 예측이 나오고 있으며, 비반도체 부문 노조의 투표율은 81%에서 86%로 상승했습니다.\n3. 주주들도 반발하고 있으며, 특별 성과급 지급을 주주총회에서 승인받지 않으면 안 된다는 조건으로 이번 잠재 카비안에 대한 무효 확인 소송과 가처분 시점까지 내리고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "삼성전자 진짜 갈 데까지 가나…비반도체 노조 \"투표 가처분\" [뉴스와] / 연합뉴스TV(YonhapnewsTV)",
+          "video_id": "GiVEAs8AOXg",
+          "views": 32117,
+          "upload_date": "2026-05-25",
+          "url": "https://www.youtube.com/watch?v=GiVEAs8AOXg",
+          "subtitle_summary": "1. Samsung Electronics의 임금 협상 잠정 합의에 대한 노조 찬반 투표율이 86%로 돌파했습니다.\n2. 메모리 사업부 직원들이 과반을 차지하고 있으므로 가결 가능성이 높아지며, 내부 갈등도 확산되고 있습니다.\n3. 최대 노조인 초기업 노조 측은 동행노조가 공동 투쟁 본부를 탈퇴한만큼 이번 잠정 합의한 찬반 투표에서는 제외되었다고 입장했습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 2.7753,
+      "min": 2.3695,
+      "nb_score": 1.1713,
+      "avg_views": 16926.5,
+      "total_views": 33853
+    },
+    {
+      "keyword": "신세계그룹 사과",
+      "is_fixed": false,
+      "views": [
+        2124,
+        14405,
+        17680,
+        5841
+      ],
+      "video_count": 4,
+      "videos": [
+        {
+          "title": "위기의 신세계 그룹…정용진 회장 내일(26일) 대국민사과 [9시 뉴스] / KBS  2026.05.25.",
+          "video_id": "euiCA2mISAA",
+          "views": 2124,
+          "upload_date": "2026-05-25",
+          "url": "https://www.youtube.com/watch?v=euiCA2mISAA",
+          "subtitle_summary": "1. 신세계 그룹 회장 정용진은 5월 26일(내일) 대국민 사과를 예고했습니다. 이는 최근 8일 만에 스타벅스의 5.18 탱크데이 사태로 인해 그룹 총수가 등판한 것으로 알려졌습니다.\n2. 정용진은 2013년 국회 국정감사에서 공개적으로 사과했던 과거의 신세계 부회장이며, 내일은 그룹 총수로서 국민앞에 고개를 숙이게 될 것입니다.\n3. 정용진은 스타벅스가 5.18 민주화 운동 기념일에 부적절한 탱크데이 할인 행사를 하였다고 직접 사과하겠다는 것으로 보입니다. 이미 사과문을 냈던 정회장이 제차 사과에 나서는 이후, 그룹의 주요 현금 창출 원인인 스타벅스에 대한 불매 움직임이 심상치 않다고 판단되었습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "Shinsegae’s Chung Yong-jin to Issue Public Apology Tomorrow... Was He Informed? Was There Intent?...",
+          "video_id": "p868skYJs4k",
+          "views": 14405,
+          "upload_date": "2026-05-25",
+          "url": "https://www.youtube.com/watch?v=p868skYJs4k",
+          "subtitle_summary": "1. Shinsegae Group Chairman Chung Yong-jin will issue a public apology tomorrow for the Starbucks Tank Day event controversy on 5/18 Democracy Movement Day in Gwangju, and the group will also release the results of their internal investigation.\n2. The intention behind the event that mocked the 5/18 Democracy Movement is a key concern, as well as whether top executives were informed or gave orders for the event.\n3. Starbucks marketing staff have claimed that the event was not intentional, and it's expected that the results of their smartphones being forensically analyzed will be released. The Citizen's Society has called for the government to take action against the company's unethical behavior, as the National Pension Service holds a significant stake in Shinsegae-owned Emart and could suffer losses if the stock price drops.",
+          "db_saved": true
+        },
+        {
+          "title": "[News High Kick] Shinsegae Group Chairman Chung Yong-jin to Make a Public Apology Tomorrow Regard...",
+          "video_id": "m9was6MpYts",
+          "views": 17680,
+          "upload_date": "2026-05-25",
+          "url": "https://www.youtube.com/watch?v=m9was6MpYts",
+          "subtitle_summary": "1. News High Kick: Shinsegae Group Chairman Chung Yong-jin to Apologize Publicly Tomorrow\n2. OH Yeon-hee arrived and greeted the host. They discussed enjoying their weekend and the rainy weather in the evening.\n3. The conversation then shifted to discussing the beauty of Korea, particularly cafes and cultural sites in Seoul, which they found impressive compared to other countries. They also mentioned visiting a bookstore on Mount Samgaksan and enjoying wine at a street vendor.",
+          "db_saved": true
+        },
+        {
+          "title": "위기의 신세계그룹…정용진 직접 등판 이유는? / KBS  2026.05.25.",
+          "video_id": "JSS2EMdnPvI",
+          "views": 5841,
+          "upload_date": "2026-05-25",
+          "url": "https://www.youtube.com/watch?v=JSS2EMdnPvI",
+          "subtitle_summary": "1. 신세계그룹 회장 정용진은 5월 26일 대국민에게 사과를 예고했습니다. 이는 스타벅스코리아의 '탱크 데이' 할인 행사 문구에 대한 공식 사과의 성격입니다.\n2. 정 회장이 직접 등판하게 된 이유는 지난주 일부 스타벅스 매장 매출이 10%가량 빠졌고, 카카오톡 교환권 선물 순위에서도 다른 브랜드에 밀렸기 때문으로 보입니다.\n3. 신세계 그룹은 '탱크 데이' 행사 경위에 대한 조사 결과와 후속 조치도 예정되며, 이는 큰 부담이 될 것으로 보입니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 1.8429,
+      "min": 2.3309,
+      "nb_score": 0.7906,
+      "avg_views": 10012.5,
+      "total_views": 40050
+    },
+    {
+      "keyword": "엘니뇨 현상 영향",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "아브라함협정 강매",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "스타벅스 불매 운동",
+      "is_fixed": false,
+      "views": [
+        16229
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "Jang Dong-hyeok: “(The ruling party’s) Starbucks boycott will only last until June 3rd... The tar...",
+          "video_id": "6_YpaguOqMM",
+          "views": 16229,
+          "upload_date": "2026-05-25",
+          "url": "https://www.youtube.com/watch?v=6_YpaguOqMM",
+          "subtitle_summary": "1. Jang Dong-hyeok predicts that the Starbucks boycott by the ruling party will last until June 3rd, suggesting they will return to Starbucks coffee after that date. He recalls the opposition party's strong stance against Samsung in 2016, which quickly faded away after the election.\n2. The speaker criticizes President Yoon Suk-yeol for using the Starbucks boycott as a means to channel public anger towards him, following his impeachment and investigation. He calls for accountability from Song Young-gil, a politician in Gwangwon Province, and Chung Won-ho, who is seen as using the May 18th incident as a shield.\n3. The speaker emphasizes that this election is a battle between President Yoon Suk-yeol (and his supporters) and the free people, referring to the opposition party. He encourages voters to show their support for him by choosing Starbucks coffee on Friday (the day of the election).",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "전북 무소속 돌풍",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "배전망 ESS 요금 논란",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "부산 경남 호우 주의보",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "지방선거 벽보 공천",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "이재명 윤석열 예산 비교",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "메모리 반도체 주가 전망",
+      "is_fixed": false,
+      "views": [
+        308
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "[제주반도체 주가 전망] 영업이익 1713% 폭증! 슈퍼사이클 수혜 어디까지 #제주반도체",
+          "video_id": "qupZuchsMdA",
+          "views": 308,
+          "upload_date": "2026-05-25",
+          "url": "https://www.youtube.com/watch?v=qupZuchsMdA",
+          "subtitle_summary": "제주반도체는 1분기 매출이 273% 상승하며, 영업이익이 1713% 급증한 671억 원을 기록했습니다. 이는 LPDDR 4X의 공급 부족으로 인한 반사 이익 덕분입니다. 제주 반도체가 슈퍼사이클에 진입하고 있으며, 2분기에도 디램 가격이 48% 상승할 것으로 예상됩니다. 따라서, 제주 반도체는 중장기적으로 매우 중요한 자리입니다. 또한, 이전에 강조했던 아이로보틱스의 매수 타점과 손절 기준을 공유했습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "LG 올레드 TV 평가",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "하이닉스 생산직 채용 조건",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "삼성전자 성과급 논란",
+      "is_fixed": false,
+      "views": [
+        8315
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "[자막] 이재명 대통령이 삼성전자 노조 성과급 논란에 던진 일침",
+          "video_id": "JX_KvsD0CL8",
+          "views": 8315,
+          "upload_date": "2026-05-25",
+          "url": "https://www.youtube.com/watch?v=JX_KvsD0CL8",
+          "subtitle_summary": "이재명 대통령은 삼성전자 노조 성과급 논란에서 적정한 선을 지키는 것이 사회 공동체가 제대로 작동하기 위해서 중요하다고 주장했습니다. 그 중에서 가장 중요한 것은 상식적인 선입니다. 억압, 피해를 주는 행동은 사회 공동체의 피해를 일으킬 수 있다고 하며, 이러한 행위는 인간 사회에서 존재하지 않아야 합니다. 또한 약자들을 보호하기 위해 특별한 보호를 하고, 헌법적 장치를 통해 사회적 균형을 유지하는 것이 중요합니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    }
+  ]
+}

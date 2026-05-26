@@ -1,14 +1,14 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-25T11:18:47.651+09:00",
+  "updatedAt": "2026-05-26T11:46:28.866+09:00",
   "category": "Mainboard",
   "id": "mb-lga1851-b860",
   "name": "LGA1851 B860 Mainboard",
   "maker": "Common",
   "platform": "LGA1851",
-  "estimatedPriceKrw": 258250,
+  "estimatedPriceKrw": 202010,
   "priceBand": "15~30만원",
-  "speedLabel": "DDR5 / PCIe 5.0 지원급",
+  "speedLabel": "DDR5 / PCIe 5.0 지원",
   "speedMetric": {
     "kind": "platform_io",
     "label": "플랫폼 지원",
@@ -19,7 +19,7 @@
   },
   "unifiedSpeedScore": 1000,
   "performance": 75,
-  "valueIndex": 29,
+  "valueIndex": 37.1,
   "aiUseScore": 49,
   "powerWatts": 12,
   "tags": [
@@ -48,17 +48,17 @@
     "scores": {
       "speed": 1000,
       "performance": 750,
-      "value": 387,
+      "value": 495,
       "aiFit": 490,
-      "priceEfficiency": 390,
+      "priceEfficiency": 500,
       "powerEfficiency": 1000
     },
     "nbVector": [
       1000,
       750,
-      387,
+      495,
       490,
-      390,
+      500,
       1000
     ],
     "vectorLabels": [
@@ -69,16 +69,28 @@
       "가격 효율",
       "전력 효율"
     ],
-    "nbMax": 225.845,
-    "nbMin": 580.233,
-    "weightedScore": 664,
+    "nbMax": 181.164,
+    "nbMin": 668.659,
+    "weightedScore": 688,
     "nbBand": "500~699",
-    "summary": "Mainboard LGA1851 B860 Mainboard 부품을 속도 중심 N/B 데이터베이스 점수 664점으로 저장했습니다."
+    "summary": "Mainboard LGA1851 B860 Mainboard 부품을 속도 중심 N/B 데이터베이스 점수 688점으로 저장했습니다."
   },
-  "nbWeightedScore": 664,
-  "nbMax": 225.845,
-  "nbMin": 580.233,
+  "nbWeightedScore": 688,
+  "nbMax": 181.164,
+  "nbMin": 668.659,
   "nbBand": "500~699",
-  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=LGA1851%20B860%20%EB%A9%94%EC%9D%B8%EB%B3%B4%EB%93%9C%20%EA%B0%80%EA%B2%A9",
-  "notes": "Chrome 검색 수집 기준으로 가격을 확인하는 인텔 메인보드 후보입니다."
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=LGA1851%20B860%20Mainboard%20price",
+  "notes": "LGA1851 B860 Mainboard은 CPU 소켓, 메모리 규격, 확장성을 함께 확인할 메인보드 후보입니다.",
+  "textRepair": {
+    "checkedAt": "2026-05-26T11:46:28.866+09:00",
+    "method": "ai-text-sanity-rules",
+    "repairedFields": [
+      "speedLabel",
+      "notes"
+    ]
+  },
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
 }

@@ -1,0 +1,89 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-05-26T11:46:28.890+09:00",
+  "category": "Mainboard",
+  "id": "mainboard-mag-x870-tomahawk-wifi",
+  "name": "MAG X870 TOMAHAWK WIFI",
+  "maker": "MSI",
+  "platform": "AM5",
+  "estimatedPriceKrw": 450000,
+  "priceBand": "30~60만원",
+  "speedLabel": "X870",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "Mainboard",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 75,
+  "valueIndex": 16.7,
+  "aiUseScore": 49,
+  "powerWatts": 0,
+  "tags": [
+    "wifi",
+    "gaming"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "Mainboard",
+    "partId": "mainboard-mag-x870-tomahawk-wifi",
+    "partName": "MAG X870 TOMAHAWK WIFI",
+    "speed": {
+      "score": 100,
+      "weight": 0.32,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "Mainboard",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 750,
+      "value": 223,
+      "aiFit": 490,
+      "priceEfficiency": 220,
+      "powerEfficiency": 750
+    },
+    "nbVector": [
+      100,
+      750,
+      223,
+      490,
+      220,
+      750
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 288.95,
+    "nbMin": 388.769,
+    "weightedScore": 325,
+    "nbBand": "100~499",
+    "summary": "Mainboard MAG X870 TOMAHAWK WIFI 부품을 속도 중심 N/B 데이터베이스 점수 325점으로 저장했습니다."
+  },
+  "nbWeightedScore": 325,
+  "nbMax": 288.95,
+  "nbMin": 388.769,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=MSI%20MAG%20X870%20TOMAHAWK%20WIFI%20price",
+  "notes": "High-end AM5 motherboard for Ryzen 9000 series.",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

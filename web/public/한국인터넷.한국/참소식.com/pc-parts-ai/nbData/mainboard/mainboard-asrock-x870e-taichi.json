@@ -1,0 +1,89 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-05-26T11:46:28.817+09:00",
+  "category": "Mainboard",
+  "id": "mainboard-asrock-x870e-taichi",
+  "name": "ASRock X870E Taichi",
+  "maker": "ASRock",
+  "platform": "AM5",
+  "estimatedPriceKrw": 950000,
+  "priceBand": "60만원 이상",
+  "speedLabel": "X870E",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "Mainboard",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 100,
+  "valueIndex": 10.5,
+  "aiUseScore": 65,
+  "powerWatts": 0,
+  "tags": [
+    "high-end",
+    "overclocking"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "Mainboard",
+    "partId": "mainboard-asrock-x870e-taichi",
+    "partName": "ASRock X870E Taichi",
+    "speed": {
+      "score": 100,
+      "weight": 0.32,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "Mainboard",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 1000,
+      "value": 140,
+      "aiFit": 650,
+      "priceEfficiency": 110,
+      "powerEfficiency": 1000
+    },
+    "nbVector": [
+      100,
+      1000,
+      140,
+      650,
+      110,
+      1000
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 238.667,
+    "nbMin": 363.333,
+    "weightedScore": 385,
+    "nbBand": "100~499",
+    "summary": "Mainboard ASRock X870E Taichi 부품을 속도 중심 N/B 데이터베이스 점수 385점으로 저장했습니다."
+  },
+  "nbWeightedScore": 385,
+  "nbMax": 238.667,
+  "nbMin": 363.333,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=ASRock%20X870E%20Taichi%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "E-ATX, 24+2+1 Phase, PCIe 5.0, USB4 40Gbps",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

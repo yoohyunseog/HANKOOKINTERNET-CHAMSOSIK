@@ -1,0 +1,89 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-05-26T11:46:28.563+09:00",
+  "category": "CPU",
+  "id": "cpu-intel-core-i5-13600kf",
+  "name": "Intel Core i5-13600KF",
+  "maker": "Intel",
+  "platform": "LGA1700",
+  "estimatedPriceKrw": 355400,
+  "priceBand": "30~60만원",
+  "speedLabel": "Up to 5.1GHz",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "CPU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 75,
+  "valueIndex": 21.1,
+  "aiUseScore": 49,
+  "powerWatts": 125,
+  "tags": [
+    "gaming",
+    "productivity"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "CPU",
+    "partId": "cpu-intel-core-i5-13600kf",
+    "partName": "Intel Core i5-13600KF",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "CPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 750,
+      "value": 281,
+      "aiFit": 490,
+      "priceEfficiency": 280,
+      "powerEfficiency": 200
+    },
+    "nbVector": [
+      100,
+      750,
+      281,
+      490,
+      280,
+      200
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 185.822,
+    "nbMin": 376.312,
+    "weightedScore": 315,
+    "nbBand": "100~499",
+    "summary": "CPU Intel Core i5-13600KF 부품을 속도 중심 N/B 데이터베이스 점수 315점으로 저장했습니다."
+  },
+  "nbWeightedScore": 315,
+  "nbMax": 185.822,
+  "nbMin": 376.312,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Intel%20Core%20i5-13600KF%20%EA%B0%80%EA%B2%A9",
+  "notes": "Bulk version observed at 355,400 KRW",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

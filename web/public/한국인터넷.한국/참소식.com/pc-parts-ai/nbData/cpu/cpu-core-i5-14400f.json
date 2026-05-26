@@ -1,0 +1,89 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-05-26T11:46:28.567+09:00",
+  "category": "CPU",
+  "id": "cpu-core-i5-14400f",
+  "name": "Intel Core i5-14400F",
+  "maker": "Intel",
+  "platform": "LGA1700",
+  "estimatedPriceKrw": 202010,
+  "priceBand": "15~30만원",
+  "speedLabel": "10-core value CPU",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "CPU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 72,
+  "valueIndex": 35.6,
+  "aiUseScore": 47,
+  "powerWatts": 65,
+  "tags": [
+    "gaming",
+    "value"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "CPU",
+    "partId": "cpu-core-i5-14400f",
+    "partName": "Intel Core i5-14400F",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "CPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 720,
+      "value": 475,
+      "aiFit": 470,
+      "priceEfficiency": 500,
+      "powerEfficiency": 369
+    },
+    "nbVector": [
+      100,
+      720,
+      475,
+      470,
+      500,
+      369
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 342.664,
+    "nbMin": 391.442,
+    "weightedScore": 362,
+    "nbBand": "100~499",
+    "summary": "CPU Intel Core i5-14400F 부품을 속도 중심 N/B 데이터베이스 점수 362점으로 저장했습니다."
+  },
+  "nbWeightedScore": 362,
+  "nbMax": 342.664,
+  "nbMin": 391.442,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Intel%20Core%20i5-14400F%20price",
+  "notes": "Auto-generated AI PC candidate added after the saved candidate list was exhausted.",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

@@ -338,6 +338,63 @@ function priceBandFor(price) {
   return "60만원 이상";
 }
 
+function hasBrokenKorean(value) {
+  const text = String(value || "");
+  return /[�]|[媛-힣][-￿]|[理쒕꾨낫寃섏쭛湲곗쒖쇰줈뺤씤]/.test(text)
+    || text.includes("??")
+    || text.includes("?")
+    || text.includes("?꾨")
+    || text.includes("?섏");
+}
+
+function readableNotesForPart(part) {
+  if (part.category === "CPU") return `${part.name}은 가격과 성능, 플랫폼 호환성을 함께 확인할 CPU 후보입니다.`;
+  if (part.category === "GPU") return `${part.name}은 게임, 작업, AI 활용을 함께 검토할 그래픽카드 후보입니다.`;
+  if (part.category === "RAM") return `${part.name}은 용량과 클럭을 함께 보는 DDR5 메모리 후보입니다.`;
+  if (part.category === "SSD") return `${part.name}은 운영체제, 게임, 작업 파일 저장용으로 검토할 NVMe SSD 후보입니다.`;
+  if (part.category === "Mainboard") return `${part.name}은 CPU 소켓, 메모리 규격, 확장성을 함께 확인할 메인보드 후보입니다.`;
+  if (part.category === "PSU") return `${part.name}은 출력, 효율, 그래픽카드 전원 여유를 함께 볼 파워서플라이 후보입니다.`;
+  return `${part.name}은 AI가 검사해 정리한 PC 부품 후보입니다.`;
+}
+
+function readableSpeedLabelForPart(part) {
+  const current = String(part.speedLabel || "");
+  if (part.category === "CPU") {
+    const ghz = current.match(/([0-9]+(?:\.[0-9]+)?)\s*GHz/i)?.[1];
+    if (ghz) return `${part.maker === "Intel" ? "최대 터보" : "최대 부스트"} 약 ${ghz}GHz`;
+    return "CPU 성능 등급";
+  }
+  if (part.category === "GPU") return part.vramGb ? `${part.vramGb}GB VRAM / 그래픽카드` : "그래픽카드 성능 등급";
+  if (part.category === "RAM") return current && !hasBrokenKorean(current) ? current : "DDR5 메모리";
+  if (part.category === "SSD") return current && !hasBrokenKorean(current) && current !== "standard spec" ? current : "NVMe SSD";
+  if (part.category === "Mainboard") {
+    if (current.includes("5.0")) return "DDR5 / PCIe 5.0 지원";
+    if (current.includes("4.0")) return "DDR5 / PCIe 4.0 지원";
+    return "메인보드 확장성 등급";
+  }
+  if (part.category === "PSU") return part.wattCapacity ? `${part.wattCapacity}W 출력` : "파워서플라이 출력 등급";
+  return current || "부품 사양";
+}
+
+function repairPartTextFields(part) {
+  const fixed = { ...part };
+  const speedBroken = hasBrokenKorean(fixed.speedLabel) || String(fixed.speedLabel || "") === "standard spec";
+  const notesBroken = hasBrokenKorean(fixed.notes) || !String(fixed.notes || "").trim();
+  if (speedBroken) fixed.speedLabel = readableSpeedLabelForPart(fixed);
+  if (notesBroken) fixed.notes = readableNotesForPart(fixed);
+  if (speedBroken || notesBroken) {
+    fixed.textRepair = {
+      checkedAt: nowKst(),
+      method: "ai-text-sanity-rules",
+      repairedFields: [
+        ...(speedBroken ? ["speedLabel"] : []),
+        ...(notesBroken ? ["notes"] : [])
+      ]
+    };
+  }
+  return fixed;
+}
+
 function nbBandFor(score) {
   if (score >= 850) return "850~1000";
   if (score >= 700) return "700~849";
@@ -472,6 +529,7 @@ function speedMetricFor(part) {
 }
 
 function analyzePart(part) {
+  part = repairPartTextFields(part);
   const valueIndex = Math.round((part.performance / Math.max(part.estimatedPriceKrw / 100000, 1)) * 10) / 10;
   const efficiencyIndex = part.powerWatts ? Math.round((part.performance / part.powerWatts) * 100) / 100 : null;
   const aiUseScore = (part.tags || []).includes("ai")
@@ -688,6 +746,13 @@ function calculateBuildWeight(selected) {
   const avgPerformance = selected.reduce((sum, item) => sum + item.performance, 0) / Math.max(selected.length, 1);
   const avgValue = selected.reduce((sum, item) => sum + item.valueIndex, 0) / Math.max(selected.length, 1);
   const avgAi = selected.reduce((sum, item) => sum + item.aiUseScore, 0) / Math.max(selected.length, 1);
+  const nbScoreArray = selected.map((item) => Math.round(Number(item.nbWeightedScore || item.nbDatabase?.weightedScore || item.totalScore || 100) * 100) / 100);
+  const speedScoreArray = selected.map((item) => Math.round(Number(item.unifiedSpeedScore || 100) * 100) / 100);
+  const nbArrayMax = bitMaxNb(nbScoreArray, NB_SCORE_SCALE);
+  const nbArrayMin = bitMinNb(nbScoreArray, NB_SCORE_SCALE);
+  const speedArrayMax = bitMaxNb(speedScoreArray, NB_SCORE_SCALE);
+  const speedArrayMin = bitMinNb(speedScoreArray, NB_SCORE_SCALE);
+  const totalCalculationScore = Math.round((nbArrayMax + nbArrayMin + speedArrayMax + speedArrayMin) * 1000) / 1000;
   const speedSum = selected.reduce((sum, item) => sum + (item.unifiedSpeedScore || 100), 0);
   const avgSpeed = speedSum / Math.max(selected.length, 1);
   const priceEfficiency = normalizeToNbScore(avgValue, 75);
@@ -703,18 +768,33 @@ function calculateBuildWeight(selected) {
   const bitMax = bitMaxNb(nbVector, NB_SCORE_SCALE);
   const bitMin = bitMinNb(nbVector, NB_SCORE_SCALE);
   const balanceScore = Math.round(Math.max(100, NB_SCORE_SCALE - Math.abs(bitMax - bitMin)) * 10) / 10;
-  const weightedScore = Math.round(Math.max(100, Math.min(NB_SCORE_SCALE, (nbVector[0] * 0.28) + (nbVector[1] * 0.18) + (nbVector[2] * 0.14) + (nbVector[3] * 0.18) + (nbVector[4] * 0.12) + (nbVector[5] * 0.1))));
+  const weightedScore = Math.round(Math.max(100, Math.min(NB_SCORE_SCALE,
+    (nbVector[0] * 0.28) +
+    (nbVector[1] * 0.18) +
+    (nbVector[2] * 0.14) +
+    (nbVector[3] * 0.18) +
+    (nbVector[4] * 0.12) +
+    (nbVector[5] * 0.1)
+  )));
 
   return {
-    source: "bitCalculation.v.0.1.js 기반 N/B 가중치",
+    source: "part-nb-array-and-speed-array",
     bitMax: Math.round(bitMax * 1000) / 1000,
     bitMin: Math.round(bitMin * 1000) / 1000,
+    nbScoreArray,
+    speedScoreArray,
+    nbArrayMax: Math.round(nbArrayMax * 1000) / 1000,
+    nbArrayMin: Math.round(nbArrayMin * 1000) / 1000,
+    speedArrayMax: Math.round(speedArrayMax * 1000) / 1000,
+    speedArrayMin: Math.round(speedArrayMin * 1000) / 1000,
+    totalCalculationScore,
     balanceScore: Math.round(balanceScore * 10) / 10,
     weightedScore,
     nbBand: nbBandFor(weightedScore),
     nbVector,
-    vectorLabels: ["평균 성능", "평균 가성비", "AI 적합도", "통합 속도", "가격 효율", "전력 효율"],
-    summary: `완성 조합의 통합 속도와 가격 효율을 100~1000점으로 변환해 N/B 상한 ${Math.round(bitMax * 1000) / 1000}, 하한 ${Math.round(bitMin * 1000) / 1000}, 조합 가중치 ${weightedScore}점으로 계산했습니다.`
+    vectorLabels: ["avgPerformance", "avgValue", "aiFit", "avgSpeed", "priceEfficiency", "powerEfficiency"],
+    buildArrayLabels: ["CPU", "GPU", "RAM", "SSD", "Mainboard", "PSU"],
+    summary: "N/B array MAX " + (Math.round(nbArrayMax * 1000) / 1000) + ", MIN " + (Math.round(nbArrayMin * 1000) / 1000) + ", speed array MAX " + (Math.round(speedArrayMax * 1000) / 1000) + ", MIN " + (Math.round(speedArrayMin * 1000) / 1000) + ", total " + totalCalculationScore + "."
   };
 }
 
@@ -738,7 +818,7 @@ function analyzeBuild(profile, itemsById) {
 
   return {
     ...profile,
-    optimizationTarget: profile.optimizationTarget || "N/B MAX",
+    optimizationTarget: profile.optimizationTarget || "N/B array + speed array total",
     totalPriceKrw: totalPrice,
     estimatedLoadWatts,
     recommendedPsuHeadroomWatts: psu?.wattCapacity ? psu.wattCapacity - estimatedLoadWatts : null,
@@ -829,15 +909,15 @@ function createOptimizedBuilds(analyzedParts, maxBuilds = 12, options = {}) {
               const totalPrice = selected.reduce((sum, item) => sum + item.estimatedPriceKrw, 0);
               const avgPerformance = selected.reduce((sum, item) => sum + item.performance, 0) / selected.length;
               const pricePerformanceIndex = Math.round((avgPerformance / Math.max(totalPrice / 1000000, 0.1)) * 10) / 10;
-              const optimizationScore = Math.round(((nbWeight.bitMax * 0.48) + (nbWeight.weightedScore * 0.34) + (pricePerformanceIndex * 0.18)) * 10) / 10;
+              const optimizationScore = nbWeight.totalCalculationScore;
               const candidateKey = selected.map((item) => item.id).join("|");
 
               candidates.push({
                 id: `optimized-${candidates.length + 1}`,
                 buildKey: candidateKey,
-                title: `N/B MAX 최적화 조립 #${candidates.length + 1}`,
-                purpose: "Chrome 검색 수집 부품을 조합해 N/B MAX와 가격 대비 성능을 동시에 높인 구성",
-                optimizationTarget: "N/B MAX 상승",
+                title: `N/B array + speed array TOP #${candidates.length + 1}`,
+                purpose: "Top build by total of N/B array MAX/MIN and speed array MAX/MIN",
+                optimizationTarget: "N/B array + speed array total",
                 partIds: selected.map((item) => item.id),
                 nbWeight,
                 totalPriceKrw: totalPrice,
@@ -860,7 +940,9 @@ function createOptimizedBuilds(analyzedParts, maxBuilds = 12, options = {}) {
 
   const ranked = Array.from(unique.values())
     .sort((a, b) => {
-      if (b.nbWeight.bitMax !== a.nbWeight.bitMax) return b.nbWeight.bitMax - a.nbWeight.bitMax;
+      if (b.nbWeight.totalCalculationScore !== a.nbWeight.totalCalculationScore) return b.nbWeight.totalCalculationScore - a.nbWeight.totalCalculationScore;
+      if (b.nbWeight.nbArrayMax !== a.nbWeight.nbArrayMax) return b.nbWeight.nbArrayMax - a.nbWeight.nbArrayMax;
+      if (b.nbWeight.speedArrayMax !== a.nbWeight.speedArrayMax) return b.nbWeight.speedArrayMax - a.nbWeight.speedArrayMax;
       if (b.optimizationScore !== a.optimizationScore) return b.optimizationScore - a.optimizationScore;
       return b.pricePerformanceIndex - a.pricePerformanceIndex;
     });
@@ -873,8 +955,8 @@ function createOptimizedBuilds(analyzedParts, maxBuilds = 12, options = {}) {
       ...candidate,
       id: `optimized-${index + 1}`,
       title: exhausted
-        ? `검토 완료 상위 조립 #${index + 1}`
-        : `N/B MAX 최적화 조립 #${index + 1}`,
+        ? `Reviewed top build #${index + 1}`
+        : `N/B array + speed array TOP #${index + 1}`,
       alreadyExplored: exhausted || excludedKeys.has(candidate.buildKey || candidate.partIds.join("|"))
     }));
 
@@ -942,7 +1024,7 @@ function buildOllamaPrompt(build) {
     "",
     `조립명: ${build.title}`,
     `총액: ${build.totalPriceKrw}원`,
-    `N/B MAX: ${build.nbWeight?.bitMax ?? "-"}`,
+    `N/B MAX: ${build.nbWeight?.totalCalculationScore ?? "-"}`,
     `조합 가중치: ${build.nbWeight?.weightedScore ?? "-"}점`,
     `예상 부하: ${build.estimatedLoadWatts ?? "-"}W`,
     partsText
@@ -1090,7 +1172,7 @@ function createPayload() {
   const previousState = loadAssemblyState();
   const resetExplored = process.argv.includes("--reset-explored") || previousState?.sourceUpdatedAt !== source.sourceUpdatedAt;
   const exploredKeys = resetExplored ? [] : (previousState?.exploredBuildKeys || []);
-  const optimization = createOptimizedBuilds(analyzedParts, 12, {
+  const optimization = createOptimizedBuilds(analyzedParts, 15, {
     excludedKeys: new Set(exploredKeys)
   });
   let builds = optimization.profiles.length
@@ -1102,6 +1184,9 @@ function createPayload() {
   });
   builds = ensureCurrentBuildVisible(builds, assemblyState);
   builds = markCurrentAssembly(builds, assemblyState);
+  builds = builds
+    .sort((a, b) => Number(b.nbWeight?.totalCalculationScore || 0) - Number(a.nbWeight?.totalCalculationScore || 0))
+    .slice(0, 15);
   builds = enrichBuildsWithOllama(builds);
 
   return {
@@ -1212,7 +1297,7 @@ function stateFromBuild(build, previousState = null, reason = "initial-assembly"
       aiExplanation: build.aiExplanation,
       parts: build.parts
     },
-    bestNbMax: Math.max(previousState?.bestNbMax || 0, build.nbWeight?.bitMax || 0),
+    bestNbTotal: Math.max(previousState?.bestNbTotal || 0, build.nbWeight?.totalCalculationScore || 0),
     highestPriceKrw: Math.max(previousState?.highestPriceKrw || 0, previousState?.currentBuild?.totalPriceKrw || 0, historyHighestPrice, build.totalPriceKrw || 0),
     progressionRule: "현재 조립보다 가격대와 N/B MAX가 모두 높아지는 후보가 있을 때만 다음 조립으로 갱신합니다.",
     exploredBuildKeys,
@@ -1226,7 +1311,7 @@ function stateFromBuild(build, previousState = null, reason = "initial-assembly"
         changedAt: now,
         reason,
         title: build.title,
-        nbMax: build.nbWeight?.bitMax || 0,
+        nbMax: build.nbWeight?.totalCalculationScore || 0,
         weightedScore: build.nbWeight?.weightedScore || 0,
         totalPriceKrw: build.totalPriceKrw,
         priceIncreaseKrw: Math.max(0, (build.totalPriceKrw || 0) - (previousState?.currentBuild?.totalPriceKrw || 0)),
@@ -1243,8 +1328,9 @@ function updateAssemblyState(builds, previousState = loadAssemblyState(), option
   const candidates = builds
     .filter((build) => build?.nbWeight && Array.isArray(build.partIds))
     .sort((a, b) => {
-      if (b.nbWeight.bitMax !== a.nbWeight.bitMax) return b.nbWeight.bitMax - a.nbWeight.bitMax;
-      return b.nbWeight.weightedScore - a.nbWeight.weightedScore;
+      if (b.nbWeight.totalCalculationScore !== a.nbWeight.totalCalculationScore) return b.nbWeight.totalCalculationScore - a.nbWeight.totalCalculationScore;
+      if (b.nbWeight.nbArrayMax !== a.nbWeight.nbArrayMax) return b.nbWeight.nbArrayMax - a.nbWeight.nbArrayMax;
+      return b.nbWeight.speedArrayMax - a.nbWeight.speedArrayMax;
     });
   const exploredBuildKeys = Array.from(new Set([
     ...(options.resetExplored ? [] : (previousState?.exploredBuildKeys || [])),
@@ -1281,7 +1367,7 @@ function updateAssemblyState(builds, previousState = loadAssemblyState(), option
     return nextState;
   }
 
-  const previousNbMax = Number(previousState.bestNbMax || previousState.currentBuild?.nbWeight?.bitMax || 0);
+  const previousNbMax = Number(previousState.bestNbTotal || previousState.currentBuild?.nbWeight?.totalCalculationScore || 0);
   const previousPriceKrw = Number(previousState.highestPriceKrw || previousState.currentBuild?.totalPriceKrw || 0);
   const currentPriceKrw = Number(previousState.currentBuild?.totalPriceKrw || 0);
   const currentDroppedBelowPriceFloor = currentPriceKrw > 0 && previousPriceKrw > currentPriceKrw;
@@ -1292,7 +1378,7 @@ function updateAssemblyState(builds, previousState = loadAssemblyState(), option
         const priceStepA = Number(a.totalPriceKrw || 0) - previousPriceKrw;
         const priceStepB = Number(b.totalPriceKrw || 0) - previousPriceKrw;
         if (priceStepA !== priceStepB) return priceStepA - priceStepB;
-        return Number(b.nbWeight?.bitMax || 0) - Number(a.nbWeight?.bitMax || 0);
+        return Number(b.nbWeight?.totalCalculationScore || 0) - Number(a.nbWeight?.totalCalculationScore || 0);
       })[0]
     : null;
 
@@ -1307,12 +1393,12 @@ function updateAssemblyState(builds, previousState = loadAssemblyState(), option
 
   const progressiveCandidate = candidates
     .filter((build) => Number(build.totalPriceKrw || 0) > previousPriceKrw)
-    .filter((build) => Number(build.nbWeight?.bitMax || 0) > previousNbMax)
+    .filter((build) => Number(build.nbWeight?.totalCalculationScore || 0) > previousNbMax)
     .sort((a, b) => {
       const priceStepA = Number(a.totalPriceKrw || 0) - previousPriceKrw;
       const priceStepB = Number(b.totalPriceKrw || 0) - previousPriceKrw;
       if (priceStepA !== priceStepB) return priceStepA - priceStepB;
-      return Number(b.nbWeight?.bitMax || 0) - Number(a.nbWeight?.bitMax || 0);
+      return Number(b.nbWeight?.totalCalculationScore || 0) - Number(a.nbWeight?.totalCalculationScore || 0);
     })[0];
 
   if (progressiveCandidate) {
@@ -1417,7 +1503,60 @@ function dedupePartsByNameAndPrice(sourceParts) {
   return { parts, skipped };
 }
 
+function readJsonQuiet(filePath) {
+  try {
+    return JSON.parse(fs.readFileSync(filePath, "utf8"));
+  } catch {
+    return null;
+  }
+}
+
+function loadNbDataSourceParts() {
+  const manifestPath = path.join(NB_DATA_DIR, "manifest.json");
+  if (!fs.existsSync(manifestPath)) return null;
+  const manifest = readJsonQuiet(manifestPath);
+  const loaded = [];
+
+  for (const [folder, files] of Object.entries(manifest?.categories || {})) {
+    for (const fileName of files || []) {
+      const filePath = path.join(NB_DATA_DIR, folder, fileName);
+      const item = readJsonQuiet(filePath);
+      if (!item?.id || !item?.category) continue;
+      loaded.push({
+        id: item.id,
+        category: item.category,
+        name: item.name,
+        maker: item.maker || "Common",
+        platform: item.platform || "",
+        estimatedPriceKrw: Number(item.estimatedPriceKrw || item.fallbackPriceKrw || 0),
+        performance: Number(item.performance || 60),
+        powerWatts: Number(item.powerWatts || 0),
+        wattCapacity: item.wattCapacity,
+        vramGb: item.vramGb,
+        speedLabel: item.speedLabel || "",
+        tags: item.tags || [],
+        notes: item.notes || "nbData 누적 저장소를 바탕으로 분석한 후보입니다.",
+        sourceQuery: item.sourceQuery,
+        sourceUrl: item.sourceUrl,
+        sourceStatus: item.sourceStatus || item.sourceType || "nbData",
+        collectedPricesKrw: item.collectedPricesKrw || []
+      });
+    }
+  }
+
+  if (!loaded.length) return null;
+  return {
+    sourceType: "nbData",
+    sourceUpdatedAt: manifest.updatedAt || "",
+    skippedDuplicateParts: [],
+    parts: loaded
+  };
+}
+
 function loadSourceParts() {
+  const nbDataSource = loadNbDataSourceParts();
+  if (nbDataSource) return nbDataSource;
+
   if (fs.existsSync(RAW_INPUT_FILE)) {
     try {
       const raw = JSON.parse(fs.readFileSync(RAW_INPUT_FILE, "utf8"));
@@ -1552,6 +1691,13 @@ function safeFileName(value) {
     || "part";
 }
 
+function listNbPartFiles(categoryDir) {
+  if (!fs.existsSync(categoryDir)) return [];
+  return fs.readdirSync(categoryDir)
+    .filter((fileName) => fileName.endsWith(".json") && fileName !== "index.json")
+    .sort();
+}
+
 function writeNbDatabaseFiles(payload) {
   const categories = ["CPU", "GPU", "RAM", "SSD", "Mainboard", "PSU"];
   fs.mkdirSync(NB_DATA_DIR, { recursive: true });
@@ -1561,7 +1707,9 @@ function writeNbDatabaseFiles(payload) {
     updatedAt: payload.updatedAt,
     sourceType: payload.sourceType,
     root: "nbData",
-    totalParts: payload.parts.length,
+    currentRunParts: payload.parts.length,
+    totalParts: 0,
+    storageMode: "accumulated-per-part-json",
     categories: {}
   };
 
@@ -1570,48 +1718,56 @@ function writeNbDatabaseFiles(payload) {
     const categoryDir = path.join(NB_DATA_DIR, folderName);
     fs.mkdirSync(categoryDir, { recursive: true });
     const categoryParts = payload.parts.filter((part) => part.category === category);
-    manifest.categories[folderName] = categoryParts.map((part) => `${safeFileName(part.id)}.json`);
-
-    const categoryIndex = {
-      schema: "pc-parts-nb-category-index.v1",
-      updatedAt: payload.updatedAt,
-      category,
-      count: categoryParts.length,
-      files: manifest.categories[folderName]
-    };
+    const currentRunFiles = categoryParts.map((part) => `${safeFileName(part.id)}.json`);
 
     for (const part of categoryParts) {
+      const repairedPart = repairPartTextFields(part);
       const partPayload = {
         schema: "pc-part-nb-database-file.v1",
         updatedAt: payload.updatedAt,
         category,
-        id: part.id,
-        name: part.name,
-        maker: part.maker,
-        platform: part.platform,
-        estimatedPriceKrw: part.estimatedPriceKrw,
-        priceBand: part.priceBand,
-        speedLabel: part.speedLabel,
-        speedMetric: part.speedMetric,
-        unifiedSpeedScore: part.unifiedSpeedScore,
-        performance: part.performance,
-        valueIndex: part.valueIndex,
-        aiUseScore: part.aiUseScore,
-        powerWatts: part.powerWatts || null,
-        tags: part.tags || [],
-        nbDatabase: part.nbDatabase,
-        nbWeightedScore: part.nbWeightedScore,
-        nbMax: part.nbMax,
-        nbMin: part.nbMin,
-        nbBand: part.nbBand,
-        sourceType: part.sourceType,
-        sourceUrl: part.sourceUrl || null,
-        notes: part.notes || ""
+        id: repairedPart.id,
+        name: repairedPart.name,
+        maker: repairedPart.maker,
+        platform: repairedPart.platform,
+        estimatedPriceKrw: repairedPart.estimatedPriceKrw,
+        priceBand: repairedPart.priceBand,
+        speedLabel: repairedPart.speedLabel,
+        speedMetric: repairedPart.speedMetric,
+        unifiedSpeedScore: repairedPart.unifiedSpeedScore,
+        performance: repairedPart.performance,
+        valueIndex: repairedPart.valueIndex,
+        aiUseScore: repairedPart.aiUseScore,
+        powerWatts: repairedPart.powerWatts || null,
+        tags: repairedPart.tags || [],
+        nbDatabase: repairedPart.nbDatabase,
+        nbWeightedScore: repairedPart.nbWeightedScore,
+        nbMax: repairedPart.nbMax,
+        nbMin: repairedPart.nbMin,
+        nbBand: repairedPart.nbBand,
+        sourceType: repairedPart.sourceType,
+        sourceUrl: repairedPart.sourceUrl || null,
+        notes: repairedPart.notes || "",
+        textRepair: repairedPart.textRepair || null
       };
       const filePath = path.join(categoryDir, `${safeFileName(part.id)}.json`);
       fs.writeFileSync(`${filePath}.tmp`, JSON.stringify(partPayload, null, 2), "utf8");
       fs.renameSync(`${filePath}.tmp`, filePath);
     }
+
+    const files = Array.from(new Set([...listNbPartFiles(categoryDir), ...currentRunFiles])).sort();
+    manifest.totalParts += files.length;
+    manifest.categories[folderName] = files;
+
+    const categoryIndex = {
+      schema: "pc-parts-nb-category-index.v1",
+      updatedAt: payload.updatedAt,
+      category,
+      count: files.length,
+      currentRunCount: currentRunFiles.length,
+      files,
+      currentRunFiles
+    };
 
     const indexPath = path.join(categoryDir, "index.json");
     fs.writeFileSync(`${indexPath}.tmp`, JSON.stringify(categoryIndex, null, 2), "utf8");

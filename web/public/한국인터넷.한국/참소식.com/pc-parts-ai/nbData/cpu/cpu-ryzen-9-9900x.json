@@ -1,0 +1,90 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-05-26T11:46:28.525+09:00",
+  "category": "CPU",
+  "id": "cpu-ryzen-9-9900x",
+  "name": "AMD Ryzen 9 9900X",
+  "maker": "AMD",
+  "platform": "AM5",
+  "estimatedPriceKrw": 568260,
+  "priceBand": "30~60만원",
+  "speedLabel": "Max boost 5.6GHz",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "CPU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 96,
+  "valueIndex": 16.9,
+  "aiUseScore": 96,
+  "powerWatts": 120,
+  "tags": [
+    "creator",
+    "ai",
+    "high-end"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "CPU",
+    "partId": "cpu-ryzen-9-9900x",
+    "partName": "AMD Ryzen 9 9900X",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "CPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 960,
+      "value": 225,
+      "aiFit": 960,
+      "priceEfficiency": 180,
+      "powerEfficiency": 267
+    },
+    "nbVector": [
+      100,
+      960,
+      225,
+      960,
+      180,
+      267
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 202.212,
+    "nbMin": 360.491,
+    "weightedScore": 392,
+    "nbBand": "100~499",
+    "summary": "CPU AMD Ryzen 9 9900X 부품을 속도 중심 N/B 데이터베이스 점수 392점으로 저장했습니다."
+  },
+  "nbWeightedScore": 392,
+  "nbMax": 202.212,
+  "nbMin": 360.491,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=AMD%20Ryzen%209%209900X%20price",
+  "notes": "Additional AI PC candidate collected when saved parts are already exhausted.",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

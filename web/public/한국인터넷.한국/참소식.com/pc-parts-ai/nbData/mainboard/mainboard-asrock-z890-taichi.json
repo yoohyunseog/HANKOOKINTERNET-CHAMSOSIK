@@ -1,0 +1,89 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-05-26T11:46:28.822+09:00",
+  "category": "Mainboard",
+  "id": "mainboard-asrock-z890-taichi",
+  "name": "ASRock Z890 Taichi",
+  "maker": "ASRock",
+  "platform": "LGA1851",
+  "estimatedPriceKrw": 699000,
+  "priceBand": "60만원 이상",
+  "speedLabel": "Z890",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "Mainboard",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 95,
+  "valueIndex": 13.6,
+  "aiUseScore": 62,
+  "powerWatts": 0,
+  "tags": [
+    "high-end",
+    "overclocking"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "Mainboard",
+    "partId": "mainboard-asrock-z890-taichi",
+    "partName": "ASRock Z890 Taichi",
+    "speed": {
+      "score": 100,
+      "weight": 0.32,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "Mainboard",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 950,
+      "value": 181,
+      "aiFit": 620,
+      "priceEfficiency": 140,
+      "powerEfficiency": 950
+    },
+    "nbVector": [
+      100,
+      950,
+      181,
+      620,
+      140,
+      950
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 252.823,
+    "nbMin": 368.399,
+    "weightedScore": 378,
+    "nbBand": "100~499",
+    "summary": "Mainboard ASRock Z890 Taichi 부품을 속도 중심 N/B 데이터베이스 점수 378점으로 저장했습니다."
+  },
+  "nbWeightedScore": 378,
+  "nbMax": 252.823,
+  "nbMin": 368.399,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Z890%20%EB%A9%94%EC%9D%B8%EB%B3%B4%EB%93%9C%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "High-end Z890 chipset motherboard",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

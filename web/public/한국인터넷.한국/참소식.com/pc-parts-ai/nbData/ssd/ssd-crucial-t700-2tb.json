@@ -1,0 +1,90 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-05-26T11:46:29.606+09:00",
+  "category": "SSD",
+  "id": "ssd-crucial-t700-2tb",
+  "name": "Crucial T700 2TB",
+  "maker": "Crucial",
+  "platform": "M.2",
+  "estimatedPriceKrw": 196340,
+  "priceBand": "15~30만원",
+  "speedLabel": "PCIe 5.0 / up to 12,400MB/s",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "SSD",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 96,
+  "valueIndex": 48.9,
+  "aiUseScore": 96,
+  "powerWatts": 11,
+  "tags": [
+    "creator",
+    "ai",
+    "high-end"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "SSD",
+    "partId": "ssd-crucial-t700-2tb",
+    "partName": "Crucial T700 2TB",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "SSD",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 960,
+      "value": 652,
+      "aiFit": 960,
+      "priceEfficiency": 510,
+      "powerEfficiency": 1000
+    },
+    "nbVector": [
+      100,
+      960,
+      652,
+      960,
+      510,
+      1000
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 497.658,
+    "nbMin": 341.53,
+    "weightedScore": 522,
+    "nbBand": "500~699",
+    "summary": "SSD Crucial T700 2TB 부품을 속도 중심 N/B 데이터베이스 점수 522점으로 저장했습니다."
+  },
+  "nbWeightedScore": 522,
+  "nbMax": 497.658,
+  "nbMin": 341.53,
+  "nbBand": "500~699",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Crucial%20T700%202TB%20price",
+  "notes": "Additional AI PC candidate collected when saved parts are already exhausted.",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

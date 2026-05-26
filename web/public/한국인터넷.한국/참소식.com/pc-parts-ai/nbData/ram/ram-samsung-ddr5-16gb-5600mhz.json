@@ -1,0 +1,89 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-05-26T11:46:29.592+09:00",
+  "category": "RAM",
+  "id": "ram-samsung-ddr5-16gb-5600mhz",
+  "name": "Samsung DDR5 16GB 5600MHz",
+  "maker": "Samsung",
+  "platform": "DDR5",
+  "estimatedPriceKrw": 64000,
+  "priceBand": "15만원 미만",
+  "speedLabel": "5600MHz",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "RAM",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 50,
+  "valueIndex": 50,
+  "aiUseScore": 33,
+  "powerWatts": 0,
+  "tags": [
+    "standard",
+    "desktop"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "RAM",
+    "partId": "ram-samsung-ddr5-16gb-5600mhz",
+    "partName": "Samsung DDR5 16GB 5600MHz",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "RAM",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 500,
+      "value": 667,
+      "aiFit": 330,
+      "priceEfficiency": 1560,
+      "powerEfficiency": 500
+    },
+    "nbVector": [
+      100,
+      500,
+      667,
+      330,
+      1560,
+      500
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 152.115,
+    "nbMin": 318.294,
+    "weightedScore": 423,
+    "nbBand": "100~499",
+    "summary": "RAM Samsung DDR5 16GB 5600MHz 부품을 속도 중심 N/B 데이터베이스 점수 423점으로 저장했습니다."
+  },
+  "nbWeightedScore": 423,
+  "nbMax": 152.115,
+  "nbMin": 318.294,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Samsung%20DDR5%2016GB%205600MHz%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "Standard desktop RAM, non-ECC, no heatsink.",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

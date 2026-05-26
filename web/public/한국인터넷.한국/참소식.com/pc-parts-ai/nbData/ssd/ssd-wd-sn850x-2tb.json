@@ -1,0 +1,96 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-05-26T11:46:29.781+09:00",
+  "category": "SSD",
+  "id": "ssd-wd-sn850x-2tb",
+  "name": "WD Black SN850X 2TB",
+  "maker": "WD",
+  "platform": "M.2",
+  "estimatedPriceKrw": 164510,
+  "priceBand": "15~30만원",
+  "speedLabel": "NVMe SSD",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "SSD",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 90,
+  "valueIndex": 54.7,
+  "aiUseScore": 90,
+  "powerWatts": 8,
+  "tags": [
+    "gaming",
+    "creator",
+    "ai"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "SSD",
+    "partId": "ssd-wd-sn850x-2tb",
+    "partName": "WD Black SN850X 2TB",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "SSD",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 900,
+      "value": 729,
+      "aiFit": 900,
+      "priceEfficiency": 610,
+      "powerEfficiency": 1000
+    },
+    "nbVector": [
+      100,
+      900,
+      729,
+      900,
+      610,
+      1000
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 512.448,
+    "nbMin": 338.178,
+    "weightedScore": 523,
+    "nbBand": "500~699",
+    "summary": "SSD WD Black SN850X 2TB 부품을 속도 중심 N/B 데이터베이스 점수 523점으로 저장했습니다."
+  },
+  "nbWeightedScore": 523,
+  "nbMax": 512.448,
+  "nbMin": 338.178,
+  "nbBand": "500~699",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=WD%20Black%20SN850X%202TB%20%EA%B0%80%EA%B2%A9",
+  "notes": "WD Black SN850X 2TB은 운영체제, 게임, 작업 파일 저장용으로 검토할 NVMe SSD 후보입니다.",
+  "textRepair": {
+    "checkedAt": "2026-05-26T11:46:29.781+09:00",
+    "method": "ai-text-sanity-rules",
+    "repairedFields": [
+      "notes"
+    ]
+  },
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

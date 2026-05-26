@@ -1,0 +1,467 @@
+{
+  "timestamp": "2026-05-25T19:51:41.844624",
+  "model": "mistral:latest",
+  "keyword_count": 3,
+  "analyze_subtitles": true,
+  "analysis_source": "youtube",
+  "keywords": [
+    {
+      "keyword": "오늘의 주요 뉴스",
+      "is_fixed": true,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "지방선거 여론조사",
+      "is_fixed": false,
+      "views": [
+        21995,
+        59472
+      ],
+      "video_count": 2,
+      "videos": [
+        {
+          "title": "[Current Affairs Special] 10 Days to Local Elections… What Are the Variables Affecting the Vote i...",
+          "video_id": "nk_87H7t9DM",
+          "views": 21995,
+          "upload_date": "2026-05-24",
+          "url": "https://www.youtube.com/watch?v=nk_87H7t9DM",
+          "subtitle_summary": "1. 대통령 지지율이 64%에서 66%로 상승하였습니다. 이는 ESC의 경제 이코노미 주가 상승, S교의 중동 외교 신중함, 한일정상 회담, 대구 현장 방문, 종로구 익선동 행보 등 여러 요인으로 인해 발생했습니다.\n2. 이 지지율은 \"코트테일 효과\"라고 하여 강한 지도자와 함께함으로써 민주당 후보에게 긍정적인 영향을 미치고 있습니다.\n3. 그러나 지방 선거에서는 지역 이슈가 중요하기 때문에 여론 조사 결과는 상당히 변동적으로 나오고 있습니다. 따라서 기초 체력인 지지율이 지방 선거의 가장 중요한 요소가 될 것으로 보입니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[이슈][KBS 여론조사] 6·3 지방선거 'D-10' 울산 민심 향방은?…KBS 여론조사 대공개/2026년 5월 24일(일)/KBS",
+          "video_id": "qN7696Uviuk",
+          "views": 59472,
+          "upload_date": "2026-05-25",
+          "url": "https://www.youtube.com/watch?v=qN7696Uviuk",
+          "subtitle_summary": "1. 남은 기간에 가장 변수가 되는 것은 후보 단일화입니다. 특히 울산 시장 선거와 평택 국회의원 재선거에서 단일화 여부가 관심사입니다.\n2. 울산 시장 선거에서 4파전으로, 김상욱, 김두겸, 김종훈, 방맹이 후보로 경쟁하고 있습니다. 단일라 가능성을 열어두고 있지만 구체적인 움직임은 없습니다.\n3. 서울시장 선거에서 정원호와 김유대가 대표적인 후보로, 정원호가 45%, 김유대가 34%의 지지율을 기록했습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 3.1268,
+      "min": 0.2638,
+      "nb_score": 11.853,
+      "avg_views": 40733.5,
+      "total_views": 81467
+    },
+    {
+      "keyword": "엔비디아 주식",
+      "is_fixed": false,
+      "views": [
+        6396,
+        712
+      ],
+      "video_count": 2,
+      "videos": [
+        {
+          "title": "[주식] 엔비디아 삼성 SK가 노리는 이기업 유리기판 세계1위 팬티까지 팔아서 사모으세요",
+          "video_id": "I31jv1_9WkE",
+          "views": 6396,
+          "upload_date": "2026-05-24",
+          "url": "https://www.youtube.com/watch?v=I31jv1_9WkE",
+          "subtitle_summary": "1. 세계 최고의 유리 기판 제조업체인 SK Hynix, Samsung Electronics, LG Display, AMD 등이 유리 기판 생산에 대규모 투자를 진행하고 있습니다.\n2. 이는 인공지능 반도체의 발전으로 인해 기존 플라스틱 키판을 사용하면 온도 상승 등 문제가 생길 수 있음에 따라 유리 기판이 선택되었습니다.\n3. 인공지능 반도체의 규모가 커지면서 생산성이 한계를 겪은 웨이퍼 레벨 패키징에서 나온 패널 레벨 패키징으로 전환하고 있습니다. 이는 생산성을 세배 이상 개선할 수 있음을 보여줍니다.",
+          "db_saved": true
+        },
+        {
+          "title": "엔비디아가 유럽 최대 경제국보다 커졌다… AI 반도체가 무서워진다",
+          "video_id": "ITu9_JdLny0",
+          "views": 712,
+          "upload_date": "2026-05-25",
+          "url": "https://www.youtube.com/watch?v=ITu9_JdLny0",
+          "subtitle_summary": "1. 엔비디아의 시가 총액이 5월 중순 기준 5조 7천억 달러로, 독일의 2026년 국내 총생산 경제 규모를 넘어서며, 세계 3위자 유럽 최대 경제국인 독일의 경제 규모도 넘어선 것을 보고 있다.\n2. 이는 AI 반도체 독점과 인공지능 수요 급증, AA 인프라 투자 등으로 인해 엔비디아의 칩 수요가 계속 강하게 유지되고 있다는 뜻이며, 미국 빅테크 솔림 현상도 포함된다.\n3. 전망에 따르면 엔비디아가 계속해서 1위를 지키고 있을 가능성이 높으며, 알파벳은 빠르게 추격하고 있지만 엔비디아의 AI칩 블랙웨일 베라루빈 플랫폼에 대한 기대감이 여전히 강해서 단기적으로 왕자를 지킬 가능성이 큽니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 2.8106,
+      "min": 2.016,
+      "nb_score": 1.3941,
+      "avg_views": 3554.0,
+      "total_views": 7108
+    },
+    {
+      "keyword": "삼성전자 레버리지 ETF",
+      "is_fixed": false,
+      "views": [
+        119,
+        2044,
+        20094
+      ],
+      "video_count": 3,
+      "videos": [
+        {
+          "title": "드디어 상장! 삼성전자 / SK하이닉스 단일종목 레버리지 ETF 투자전략과 주의사항",
+          "video_id": "htN0qXWhPpQ",
+          "views": 119,
+          "upload_date": "2026-05-25",
+          "url": "https://www.youtube.com/watch?v=htN0qXWhPpQ",
+          "subtitle_summary": "1. 5월 27일, 타이거의 삼성전자 단일 종목 레버리지 ETF 및 SK하이닉스 단일 종목 레버리지 ETF가 상장되는 예고.\n2. 투자자들에게 고민을 주는 점은, 최근 1년 성과로 보면 삼성전자와 SK하이닉스의 주가가 매우 상승했으나, 5년 성과를 보면 그들의 주가는 더 안정적인 경향을 보임.\n3. 반도체 산업에 대한 기대감이 지나치게 높아지고 있으나, 현재 상황을 계속 관찰해야 할 것으로 보임.",
+          "db_saved": true
+        },
+        {
+          "title": "Which single-stock leverage product should I buy for Samsung Electronics and SK Hynix? #RichNomad",
+          "video_id": "czovtfb0j58",
+          "views": 2044,
+          "upload_date": "2026-05-25",
+          "url": "https://www.youtube.com/watch?v=czovtfb0j58",
+          "subtitle_summary": "1. 리치노만이 말하며, 이번 주에 대체 공유일 잘 보내고 계신가요? 마침 오늘은 조금 마음 편안하게 지낼 수 있을 것 같은데요. 어 이번 주에 빅 이벤트 국장의 빅 이벤트가 하나 있죠. 어 단일 종목 레버리지 상품이 이제 상장을 하는데 반도체가 더 갈까?\n2. 주말에도 테니스장에서 어떤 분이 제 아는 분이 야, 삼성전자 언제 팔아야 되냐 이렇게 물어보시던데 아, 타이밍을 맞추는 건 참 어렵지만 어쨌든 반도체가 앞으로 더 갈까에 대한 일단 큰 틀을 조금 체크를 해보고이 종목을 살지 말지 고민을 해 봐야 될 거 같은데요.\n3. 지금 삼성전자나 하이닉스의 영업비익 컨센서스는 계속 지금 늘어나고 있는 이제 그런 상황이고, 지금 이게 3월 달 거, 요게 5월 달 건데 지금 다 올라가고 있죠. 뭐 이런 상황이어서 전분기 대비 가격 상승세가 크게 둔화되지는 않을 것이다.",
+          "db_saved": true
+        },
+        {
+          "title": "“2배로 벌려다 다 잃을 수도”…‘삼전닉스 2배’ ETF 주의할 점은? [잇슈 머니] / KBS  2026.05.25.",
+          "video_id": "B1c731TCCKs",
+          "views": 20094,
+          "upload_date": "2026-05-24",
+          "url": "https://www.youtube.com/watch?v=B1c731TCCKs",
+          "subtitle_summary": "1. 5월 27일, 단일종목 레버리지 ETF(삼성전자, SK하이닉스 기초자산)가 상장되며, 8개 운용사로부터 16개의 상품이 동시에 출시될 예정입니다.\n2. 단일종목 레버리지 ETF는 기본 예탁금 1,000만 원 이상을 예치하고 2시간 교육을 완료해야 거래할 수 있습니다.\n3. 5월 28일에는 한국은행 금리 결정이 발표되며, 최근 금리 인상 논의가 활발하여 금리 변동성을 주목해야 합니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 1.1033,
+      "min": 1.963,
+      "nb_score": 0.5621,
+      "avg_views": 7419.0,
+      "total_views": 22257
+    },
+    {
+      "keyword": "에볼라 바이러스",
+      "is_fixed": false,
+      "views": [
+        73964,
+        45740,
+        130705
+      ],
+      "video_count": 3,
+      "videos": [
+        {
+          "title": "[Breaking] Ebola virus emergency... 900 suspected cases and 119 deaths [News Playlist] / Channel A",
+          "video_id": "1kMAOZvci7o",
+          "views": 73964,
+          "upload_date": "2026-05-25",
+          "url": "https://www.youtube.com/watch?v=1kMAOZvci7o",
+          "subtitle_summary": "1. Ebola virus outbreak in Africa is rapidly spreading, with over 750 suspected cases and 177 deaths as of now. The World Health Organization (WHO) has raised the risk level to the highest and declared a public health emergency.\n2. The WHO assesses the risk level by considering factors such as human threat and transmission potential, and has classified the current outbreak as having high transmission potential. The outbreak is mainly spreading in conflict zones, making containment difficult.\n3. In response, several countries have taken measures such as restricting travel to affected regions and imposing quarantine on suspected cases. The US has stopped issuing visas to individuals who have visited Ebola-affected areas within the past 21 days.",
+          "db_saved": true
+        },
+        {
+          "title": "아프리카 10개 국 에볼라 확산 위험…불안정한 치안에 방역 '구멍' [뉴스7]",
+          "video_id": "E2C-QcYRRZ0",
+          "views": 45740,
+          "upload_date": "2026-05-24",
+          "url": "https://www.youtube.com/watch?v=E2C-QcYRRZ0",
+          "subtitle_summary": "1. 변종 에볼라 바이러스 사태가 중앙 아프리카의 민주 홍고에서 심각해지고 있습니다. 사망자는 200명을 넘어섰으며, 주변 국가들로부터 확산할 위험성이 커지고 있습니다.\n2. 에볼라 바이러스 국가적 위험 수준을 높음에서 매우 높으로 상향한 세계 보건 기구는 인프라 부족과 보건당국의 불신으로 인해 방역에 어려움을 겪고 있습니다.\n3. 미국과 영국은 발생국발 외국인의 비자 발급을 일시 중단하거나, 특정 공항으로만 들어오게 하는 등 국경 통제를 강화하고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[News A!] \"Very Serious\" Ebola Outbreak Emergency / Channel A / News A",
+          "video_id": "GIvpfuMttA8",
+          "views": 130705,
+          "upload_date": "2026-05-24",
+          "url": "https://www.youtube.com/watch?v=GIvpfuMttA8",
+          "subtitle_summary": "1. Ebola virus is rapidly spreading in Africa, with no vaccine or treatment available. The World Health Organization (WHO) has raised the risk level to very high and declared a public health emergency of international concern.\n2. The number of suspected cases and deaths from Ebola has increased significantly, particularly in the Democratic Republic of Congo where there is evidence of human-to-human transmission and cluster outbreaks.\n3. In response, various countries have implemented travel restrictions and additional measures to prevent the spread of the virus, including limiting large gatherings and strengthening border controls. The World Cup, which is being held in multiple countries, has been identified as a potential new variable due to the expected influx of millions of visitors from affected regions.",
+          "db_saved": true
+        }
+      ],
+      "max": 1.5103,
+      "min": 3.7934,
+      "nb_score": 0.3981,
+      "avg_views": 83469.67,
+      "total_views": 250409
+    },
+    {
+      "keyword": "스페이스X IPO",
+      "is_fixed": false,
+      "views": [
+        2234,
+        12878,
+        4686,
+        20342,
+        70783
+      ],
+      "video_count": 5,
+      "videos": [
+        {
+          "title": "“머스크 상장설만 믿고 샀다간 물립니다” 스페이스X 관련주 과열 경고",
+          "video_id": "DO21ZcObJ_o",
+          "views": 2234,
+          "upload_date": "2026-05-25",
+          "url": "https://www.youtube.com/watch?v=DO21ZcObJ_o",
+          "subtitle_summary": "1. Elon Musk의 우주 기업 SpaceX가 공개 상장 가능성이 있어지면서 글로벌 투자 시장에 열광적인 반응을 보고 있습니다.\n2. SpaceX의 기업 가치는 1조 7,500달러(약 2,500조원)으로 추산되며 메가톤급 유망주로 꼽히고 있습니다.\n3. 하지만 국내 증시 전문가들은 스페이스 X의 미래 가치와 국내 관련주의 투자 매력도는 별개로 보아야 한다며, 성급한 추격 매수를 경계하고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "스페이스X 상장 임박! 최대 수혜 미국 우주항공 ETF 3종목 비교｜KODEX 미국우주항공, TIGER 미국우주테크, SOL 미국우주항공TOP10",
+          "video_id": "GKG_1bRcYtk",
+          "views": 12878,
+          "upload_date": "2026-05-25",
+          "url": "https://www.youtube.com/watch?v=GKG_1bRcYtk",
+          "subtitle_summary": "1. SpaceX의 IPO 날짜가 정해졌습니다. 6월 12일 NASDAQ에 상장하게 되며, 예상 시가총액은 1.7조 ~ 2조 달러입니다.\n2. SpaceX의 IPO로 인한 노출을 위해 새로운 우주항공 ETF들이 신규 상장되고 있습니다. NASDAQ백 지수에도 SpaceX가 편입될 예정입니다.\n3. 미국은 관련 ETF들이 쏟아져 나오는 것처럼 보이며, 우주항공 ETF를 포함한 새로운 ETF들을 참고하는 것이 유용할 수 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "Rocket Lab Neutron test issues again? The space stock shakeup begins before SpaceX IPO (Weekly Sp...",
+          "video_id": "iXgZ_7UMky8",
+          "views": 4686,
+          "upload_date": "2026-05-25",
+          "url": "https://www.youtube.com/watch?v=iXgZ_7UMky8",
+          "subtitle_summary": "1. SpaceX의 Starship V3가 5월 23일 7시 30분 발사, 조금 문제가 있었지만 성공적으로 인도양에 착수했습니다. 이는 스페이스 X IPO 전에 중요한 순간이었고, 일론 마스크가 대단하다고 할 수 있습니다.\n2. 이번 주 로켓랩 소식이 많았으며, 유상증자 역대 최고치 30억 달러짜리가 나왔고 장 마감하고 나온 소식에 주가가 폭락했습니다. 그 후 미우주군 노켓랩 정지계도 위성 계약을 공시했으며, 이는 역사상 처음으로 정지 궤계도 위성을 직접 만드는 계약입니다.\n3. 최근에 발생한 문제로, 5월 23일 뉴트론 핵심 구조물 하중 시험 중에 균열 파손이 난 사건이 있었습니다. 이는 로켓랩에게 중요한 문제가 될 수 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "스페이스X, ‘우주 독점 기업’의 IPO… “망할 수도 있다”는데 전세계 돈 몰리는 이유 | 똑소리E",
+          "video_id": "S6oAJahRLyk",
+          "views": 20342,
+          "upload_date": "2026-05-24",
+          "url": "https://www.youtube.com/watch?v=S6oAJahRLyk",
+          "subtitle_summary": "1. 스페이스X, 우주 독점 기업, 새벽 6시 공식적으로 IPO를 개시했습니다.\n2. 이 회사는 현재 전세계에서 우주 비즈니스의 대부분을 독점하고 있습니다.\n3. 이 회사가 상장되면서 일론 머스크가 지금까지 보유한 개인 회사와 같은 구조로 공개될 것으로 예상됩니다. 또한, 일론 머스크는 의결권을 보호하기 위해 특정 클래스 B 주식을 소유하고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "The ‘$240 Billion Black Hole’ SpaceX is Coming... Why Global Whales Are Selling Their Stocks / SB...",
+          "video_id": "obJaLRVs3t0",
+          "views": 70783,
+          "upload_date": "2026-05-24",
+          "url": "https://www.youtube.com/watch?v=obJaLRVs3t0",
+          "subtitle_summary": "1. SpaceX, 일론 머스크의 우주 기업, 최근 상장 예정으로 인해 글로벌 자금의 관심이 집중되고 있습니다.\n2. SpaceX는 12월 나스닥에 상장하고 있으며, IPO 과정을 통해 최대 750억 달러의 자금을 끌어들일 것으로 예상됩니다.\n3. SpaceX의 가장 큰 사업은 스타링크이며, 수천 개의 위성을 띄워서 전 세계에서 인터넷 연결을 제공하는 것입니다. 최근 활용 범위도 빠르게 넓어지고 있으며, AI와의 시너지를 기대하고 있습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0.6033,
+      "min": 1.56,
+      "nb_score": 0.3867,
+      "avg_views": 22184.6,
+      "total_views": 110923
+    },
+    {
+      "keyword": "스타벅스 탱크데이",
+      "is_fixed": false,
+      "views": [
+        25305,
+        17873,
+        4778,
+        182462,
+        12208,
+        129186,
+        3858,
+        4451
+      ],
+      "video_count": 8,
+      "videos": [
+        {
+          "title": "\"It was bound to happen\": Starbucks internal unrest; was the 'Tank Day' controversy an avoidable ...",
+          "video_id": "fqAKg4f5rUI",
+          "views": 25305,
+          "upload_date": "2026-05-24",
+          "url": "https://www.youtube.com/watch?v=fqAKg4f5rUI",
+          "subtitle_summary": "Starbucks Korea is facing heavy criticism for hosting an event named 'Tank Day', which many find inappropriate. Employees claim this controversy was inevitable due to structural issues within the company, such as frequent promotion changes and a weak review system. An internal memo revealed that the headquarters' filtering system failed to prevent inappropriate content from being displayed on an internal notice board 12 days before the event. A three-year employee found it shocking that the inappropriate expression was not edited, raising suspicions of intentionality. The chairman's apology and the dismissal of the CEO were swiftly implemented, but there is growing concern within the company about excessive marketing competition and poor communication at the store level, which need to be addressed as fundamental issues.",
+          "db_saved": true
+        },
+        {
+          "title": "[자막뉴스] '탱크 데이' 심상치 않은 후폭풍...광주 지역 스타벅스 가보니 / YTN",
+          "video_id": "h1_Vo0QxzbU",
+          "views": 17873,
+          "upload_date": "2026-05-25",
+          "url": "https://www.youtube.com/watch?v=h1_Vo0QxzbU",
+          "subtitle_summary": "1. 광주에 많은 인구가 있는 곳에서 유동인구도 많은 스타벅스 매장이 비어 있습니다. 5.18 민주화 운동을 기억하는 '탱크데이' 이벤트로 인해 스타벅스에 대한 불만이 증가하고 있으며, 시민단체들은 정회장의 경영일선 후퇴와 재발방지 대책 마련 등을 요구하고 있습니다.\n2. 정용진 회장이 대국민 사과를 할 수 있을지 주목되고 있습니다.\n3. YTN의 노사율입니다.",
+          "db_saved": true
+        },
+        {
+          "title": "'탱크데이' 논란 스타벅스…정용진 내일 직접 '대국민 사과' [뉴스현장]",
+          "video_id": "Nz7NO1CqaGE",
+          "views": 4778,
+          "upload_date": "2026-05-25",
+          "url": "https://www.youtube.com/watch?v=Nz7NO1CqaGE",
+          "subtitle_summary": "1. 스타벅스 코리아의 탱크데이 이벤트에 대한 논란이 지속되고 있으며, 정용진 신세계 그룹 회장이 내일 직접 사과하기로 결정했습니다.\n2. 이번 사태와 관련한 자체 진상 조사 결과도 함께 발표할 예정입니다. 업계에선 1차 사과문을 포함하여 재발방지 대책이 담길 것으로 예상됩니다.\n3. 스타벅스 글로벌 본사도 사과 입장을 내놨습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "\"Starbucks Faces Worst Internal Strife Yet\": Enraged Employees Expose Fallout / KNN",
+          "video_id": "RpnUDVWokkQ",
+          "views": 182462,
+          "upload_date": "2026-05-24",
+          "url": "https://www.youtube.com/watch?v=RpnUDVWokkQ",
+          "subtitle_summary": "Starbucks Korea is facing internal strife due to a leaked internal report alleging that a female employee, without remorse, has been acting inappropriately. This has sparked controversy on an anonymous employee community called \"Partners Who Do Wrong.\" The post accuses this woman of causing harm to other employees and customers, with store workers apologizing on behalf of the affected parties and managers struggling due to sales plan adjustments. Additionally, it's claimed that male executives who once supported her have been terminated. This controversy started during Starbucks Korea's Tank Day promotion, which was criticized for its connection to the 5.18 Democratization Movement and the Park Geun-hye Scandal due to its slogan and table top design. Starbucks eventually apologized and halted the event, with the CEO of Shinsegae Group publicly apologizing, as well as the CEO of Starbucks Korea and related executives being terminated.",
+          "db_saved": true
+        },
+        {
+          "title": "[이슈] '탱크데이' 스타벅스 과거 줄줄이 파묘…이 대통령 \"악질 장사치 패륜 행위\" 분노 표출/2026년 5월 24일(일)/KBS",
+          "video_id": "sJ7YwmLRVYo",
+          "views": 12208,
+          "upload_date": "2026-05-24",
+          "url": "https://www.youtube.com/watch?v=sJ7YwmLRVYo",
+          "subtitle_summary": "1. 스타벅스 코리아가 '탱크데이' 이벤트를 진행했고, 이에 대한 비판이 많아지며 정치권에도 확산되었습니다.\n2. 이재명 대통령은 SNS를 통해 스타벅스의 탱크데이 행사가 악질 장사치와 폐륜 행위라고 비판했습니다.\n3. 국민의 임 김기헌 의원과 강중년 수석 대변인은 이재명 대통령의 SNS가 큰 국가 폭력으로 되고 있다고 지적했습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "[이슈] 스타벅스 '탱크' 암호들 파보니 '소름'/브랜드 이미지 폭망 '칼손절'...정용진 사면초가/2026년 5월 23일(토)/KBS",
+          "video_id": "yfHknESVENQ",
+          "views": 129186,
+          "upload_date": "2026-05-24",
+          "url": "https://www.youtube.com/watch?v=yfHknESVENQ",
+          "subtitle_summary": "스타벅스 코리아의 최근 이벤트에 대한 비판이 터졌습니다. 5월 18일 탱크데이라는 행사를 열었는데, 탱크와 관련된 표현이 민주화 운동 당시 광주에 투입된 개엄군의 탱크와 1987년 고박종철 고문 치사 사건을 연상케 하는 비판이 나왔습니다. 또한, 미니 텀블러 이벤트에서 503ml의 용량과 518 보상자수와 유공자수 차이가 503명이라는 점을 근거로 가짜 유공자들이 섞여 있다는 왜곡된 주장도 나왔습니다. 이러한 사건으로 인해 스타벅스에 대한 분노와 비판이 증가하고 있습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "'탱크 데이' 후폭풍에 한산한 스타벅스...\"철저한 재발 방지 대책 필요\" / YTN",
+          "video_id": "wzCfaL_EQ60",
+          "views": 3858,
+          "upload_date": "2026-05-25",
+          "url": "https://www.youtube.com/watch?v=wzCfaL_EQ60",
+          "subtitle_summary": "1. Starbucks,  known for its high population density locations, has experienced a significant drop in customers due to controversy surrounding their Tank Day event, which is perceived as disrespecting the May 18 Democratic Movement in Gwangju.\n2. Citizen groups are demanding not only sincere apologies from Starbucks' CEO, but also concrete preventive measures and responsible actions from the Starbucks parent company, Shinsegae Group.\n3. The ongoing public outrage over the Tank Day event shows no signs of abating, with Starbucks stores receiving apology messages, and citizens are calling for changes in Starbucks' management to ensure such incidents do not happen again.",
+          "db_saved": true
+        },
+        {
+          "title": "[국내사연] 스타벅스 탱크데이의 최후..스벅이 끝까지 숨긴 '내부 암호'의 진짜 소름 돋는 의미",
+          "video_id": "jwDtkQ9DJl0",
+          "views": 4451,
+          "upload_date": "2026-05-25",
+          "url": "https://www.youtube.com/watch?v=jwDtkQ9DJl0",
+          "subtitle_summary": "1. 스타벅스 코리아가 최근 탱크데이(518) 행사를 열었는데, 이름에 비하적인 의미가 있다는 비판이 쏟아졌습니다.\n2. 소비자들은 탈벅을 외치며 앱탈퇴 인증을 올리고 있고, 이 사건 후 스타벅스 대표는 해임됐으며, 이마트 주가도 10% 이상 하락했습니다.\n3. 윤재민은 스타벅스 본사 마케팅팀에서 일했고, 입사 3년차 막내였습니다. 그는 아버지가 1980년 광주에서 돌아온 이야기를 듣고 있었습니다. 윤재민은 5월에 디자인팀에서 받은 신규 캠페인 시안에서 '탱크데이'라는 단어가 나타났고, 그것을 해석하면 광주 민주화 운동을 비하는 표현이었습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0.3898,
+      "min": 1.2512,
+      "nb_score": 0.3115,
+      "avg_views": 47515.12,
+      "total_views": 380121
+    },
+    {
+      "keyword": "아마존 웹 서비스",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "고혈압 보존료",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "테니스 엘보 관리법",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "GTX 철근 누락",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "성과급 논란",
+      "is_fixed": false,
+      "views": [
+        7385
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "[자막] 이재명 대통령이 삼성전자 노조 성과급 논란에 던진 일침",
+          "video_id": "JX_KvsD0CL8",
+          "views": 7385,
+          "upload_date": "2026-05-25",
+          "url": "https://www.youtube.com/watch?v=JX_KvsD0CL8",
+          "subtitle_summary": "이재명 대통령은 삼성전자 노조 성과급 논란에서 적정한 선을 지키는 것이 사회 공동체가 제대로 작동하기 위해서 중요하다고 주장했습니다. 이 선들은 도덕적, 상식적, 계약상, 휴약상, 법률적, 형법적 등이 있으며, 가장 중요한 것은 상식적인 선입니다. 또한 사회 공동체를 유지하기 위해서는 일정한 선을 정하고, 그 안에서는 자유로운 표현과 행동이 허용되어야 합니다. 그러나 이 선을 넘어서면 타인의 피해가 발생할 수 있으므로 주의하여야 합니다. 또한 사회적 약자를 보호하기 위해서 특별한 보호를 하고, 노동 상권을 통해 노동자들을 보호하며, 헌법적 장치를 통해 약자들에게 힘의 균형을 이뤄주는 것이 중요합니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "홈플러스 매각",
+      "is_fixed": false,
+      "views": [
+        435
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "홈플러스, 온라인몰·대형마트 등 잔존 사업 매각 추진 / 연합뉴스TV (YonhapnewsTV)",
+          "video_id": "irI4mqT1ywE",
+          "views": 435,
+          "upload_date": "2026-05-25",
+          "url": "https://www.youtube.com/watch?v=irI4mqT1ywE",
+          "subtitle_summary": "1. HomePlus, an online mall and large mart among its remaining businesses, has announced plans to seek approval for a sale or merger, excluding HomePlus Express, which was recently sold to NS Home Shopping.\n2. The potential buyer has already sent official investment explanation documents to several parties.\n3. This sale process is expected to be conducted through a public bidding method and requires the approval of Seoul Rehabilitation Court.",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "빈집 철거 지원",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "여성혐오 범죄",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "LA 적십자사 5·18",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    }
+  ]
+}

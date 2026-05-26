@@ -1,0 +1,89 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-05-26T11:46:29.560+09:00",
+  "category": "RAM",
+  "id": "ram-g.skill-trident-z5-rgb-ddr5-6400mhz-cl32-64gb-32gx2",
+  "name": "G.Skill Trident Z5 RGB DDR5 6400MHz CL32 64GB (32Gx2)",
+  "maker": "G.Skill",
+  "platform": "DDR5",
+  "estimatedPriceKrw": 453200,
+  "priceBand": "30~60만원",
+  "speedLabel": "6400MHz",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "RAM",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 85,
+  "valueIndex": 18.8,
+  "aiUseScore": 55,
+  "powerWatts": 0,
+  "tags": [
+    "gaming",
+    "overclock"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "RAM",
+    "partId": "ram-g.skill-trident-z5-rgb-ddr5-6400mhz-cl32-64gb-32gx2",
+    "partName": "G.Skill Trident Z5 RGB DDR5 6400MHz CL32 64GB (32Gx2)",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "RAM",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 850,
+      "value": 251,
+      "aiFit": 550,
+      "priceEfficiency": 220,
+      "powerEfficiency": 850
+    },
+    "nbVector": [
+      100,
+      850,
+      251,
+      550,
+      220,
+      850
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 287.631,
+    "nbMin": 378.346,
+    "weightedScore": 371,
+    "nbBand": "100~499",
+    "summary": "RAM G.Skill Trident Z5 RGB DDR5 6400MHz CL32 64GB (32Gx2) 부품을 속도 중심 N/B 데이터베이스 점수 371점으로 저장했습니다."
+  },
+  "nbWeightedScore": 371,
+  "nbMax": 287.631,
+  "nbMin": 378.346,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=G.Skill%20DDR5%2064GB%206400MHz%20CL32%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "CL32 timing, RGB, XMP 3.0",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

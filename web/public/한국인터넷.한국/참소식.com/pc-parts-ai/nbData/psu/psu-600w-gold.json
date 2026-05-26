@@ -1,0 +1,89 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-05-26T11:46:29.209+09:00",
+  "category": "PSU",
+  "id": "psu-600w-gold",
+  "name": "600W 80PLUS Gold PSU",
+  "maker": "Common",
+  "platform": "ATX",
+  "estimatedPriceKrw": 95000,
+  "priceBand": "15만원 미만",
+  "speedLabel": "600W Gold",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "PSU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 70,
+  "valueIndex": 70,
+  "aiUseScore": 46,
+  "powerWatts": 0,
+  "tags": [
+    "office",
+    "value"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "PSU",
+    "partId": "psu-600w-gold",
+    "partName": "600W 80PLUS Gold PSU",
+    "speed": {
+      "score": 100,
+      "weight": 0.32,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "PSU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 700,
+      "value": 933,
+      "aiFit": 460,
+      "priceEfficiency": 1050,
+      "powerEfficiency": 700
+    },
+    "nbVector": [
+      100,
+      700,
+      933,
+      460,
+      1050,
+      700
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 396.386,
+    "nbMin": 357.165,
+    "weightedScore": 475,
+    "nbBand": "100~499",
+    "summary": "PSU 600W 80PLUS Gold PSU 부품을 속도 중심 N/B 데이터베이스 점수 475점으로 저장했습니다."
+  },
+  "nbWeightedScore": 475,
+  "nbMax": 396.386,
+  "nbMin": 357.165,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=600W%2080PLUS%20Gold%20PSU%20price",
+  "notes": "Auto-generated AI PC candidate added after the saved candidate list was exhausted.",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

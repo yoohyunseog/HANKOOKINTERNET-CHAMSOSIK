@@ -1,0 +1,89 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-05-26T11:46:29.180+09:00",
+  "category": "PSU",
+  "id": "psu-550w-bronze",
+  "name": "550W 80PLUS Bronze PSU",
+  "maker": "Common",
+  "platform": "ATX",
+  "estimatedPriceKrw": 40065,
+  "priceBand": "15만원 미만",
+  "speedLabel": "550W Bronze",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "PSU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 64,
+  "valueIndex": 64,
+  "aiUseScore": 42,
+  "powerWatts": 0,
+  "tags": [
+    "office",
+    "value"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "PSU",
+    "partId": "psu-550w-bronze",
+    "partName": "550W 80PLUS Bronze PSU",
+    "speed": {
+      "score": 100,
+      "weight": 0.32,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "PSU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 640,
+      "value": 853,
+      "aiFit": 420,
+      "priceEfficiency": 2500,
+      "powerEfficiency": 640
+    },
+    "nbVector": [
+      100,
+      640,
+      853,
+      420,
+      2500,
+      640
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 124.588,
+    "nbMin": 289.026,
+    "weightedScore": 560,
+    "nbBand": "500~699",
+    "summary": "PSU 550W 80PLUS Bronze PSU 부품을 속도 중심 N/B 데이터베이스 점수 560점으로 저장했습니다."
+  },
+  "nbWeightedScore": 560,
+  "nbMax": 124.588,
+  "nbMin": 289.026,
+  "nbBand": "500~699",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=550W%2080PLUS%20Bronze%20PSU%20price",
+  "notes": "Auto-generated AI PC candidate added after the saved candidate list was exhausted.",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

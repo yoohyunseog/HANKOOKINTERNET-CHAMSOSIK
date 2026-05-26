@@ -1,14 +1,14 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-25T11:18:47.651+09:00",
+  "updatedAt": "2026-05-26T11:46:29.671+09:00",
   "category": "SSD",
   "id": "ssd-nvme-2tb-gen4",
   "name": "NVMe Gen4 SSD 2TB",
   "maker": "Common",
   "platform": "M.2",
-  "estimatedPriceKrw": 125600,
-  "priceBand": "15만원 미만",
-  "speedLabel": "순차 읽기 약 7,000MB/s급",
+  "estimatedPriceKrw": 190000,
+  "priceBand": "15~30만원",
+  "speedLabel": "NVMe SSD",
   "speedMetric": {
     "kind": "sequential_read",
     "label": "순차 읽기 속도",
@@ -19,7 +19,7 @@
   },
   "unifiedSpeedScore": 875,
   "performance": 84,
-  "valueIndex": 66.9,
+  "valueIndex": 44.2,
   "aiUseScore": 84,
   "powerWatts": 7,
   "tags": [
@@ -49,17 +49,17 @@
     "scores": {
       "speed": 875,
       "performance": 840,
-      "value": 892,
+      "value": 589,
       "aiFit": 840,
-      "priceEfficiency": 800,
+      "priceEfficiency": 530,
       "powerEfficiency": 1000
     },
     "nbVector": [
       875,
       840,
-      892,
+      589,
       840,
-      800,
+      530,
       1000
     ],
     "vectorLabels": [
@@ -70,16 +70,27 @@
       "가격 효율",
       "전력 효율"
     ],
-    "nbMax": 76.373,
-    "nbMin": 976.525,
-    "weightedScore": 868,
-    "nbBand": "850~1000",
-    "summary": "SSD NVMe Gen4 SSD 2TB 부품을 속도 중심 N/B 데이터베이스 점수 868점으로 저장했습니다."
+    "nbMax": 231.103,
+    "nbMin": 706.813,
+    "weightedScore": 804,
+    "nbBand": "700~849",
+    "summary": "SSD NVMe Gen4 SSD 2TB 부품을 속도 중심 N/B 데이터베이스 점수 804점으로 저장했습니다."
   },
-  "nbWeightedScore": 868,
-  "nbMax": 76.373,
-  "nbMin": 976.525,
-  "nbBand": "850~1000",
-  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=NVMe%20Gen4%20SSD%202TB%20%EA%B0%80%EA%B2%A9",
-  "notes": "Chrome 검색 수집 기준으로 가격을 확인하는 대용량 저장장치 후보입니다."
+  "nbWeightedScore": 804,
+  "nbMax": 231.103,
+  "nbMin": 706.813,
+  "nbBand": "700~849",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=NVMe%20Gen4%20SSD%202TB%20price",
+  "notes": "NVMe Gen4 SSD 2TB은 운영체제, 게임, 작업 파일 저장용으로 검토할 NVMe SSD 후보입니다.",
+  "textRepair": {
+    "checkedAt": "2026-05-26T11:46:29.671+09:00",
+    "method": "ai-text-sanity-rules",
+    "repairedFields": [
+      "notes"
+    ]
+  },
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
 }

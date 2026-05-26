@@ -1,0 +1,90 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-05-26T11:46:29.569+09:00",
+  "category": "RAM",
+  "id": "ram-g.skill-trident-z5-rgb-ddr5-7200mhz-cl34-32gb-16gx2",
+  "name": "G.Skill Trident Z5 RGB DDR5 7200MHz CL34 32GB (16Gx2)",
+  "maker": "G.Skill",
+  "platform": "DDR5",
+  "estimatedPriceKrw": 918980,
+  "priceBand": "60만원 이상",
+  "speedLabel": "7200MHz",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "RAM",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 95,
+  "valueIndex": 10.3,
+  "aiUseScore": 62,
+  "powerWatts": 0,
+  "tags": [
+    "high-speed",
+    "overclock",
+    "rgb"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "RAM",
+    "partId": "ram-g.skill-trident-z5-rgb-ddr5-7200mhz-cl34-32gb-16gx2",
+    "partName": "G.Skill Trident Z5 RGB DDR5 7200MHz CL34 32GB (16Gx2)",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "RAM",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 950,
+      "value": 137,
+      "aiFit": 620,
+      "priceEfficiency": 110,
+      "powerEfficiency": 950
+    },
+    "nbVector": [
+      100,
+      950,
+      137,
+      620,
+      110,
+      950
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 238.749,
+    "nbMin": 366.842,
+    "weightedScore": 379,
+    "nbBand": "100~499",
+    "summary": "RAM G.Skill Trident Z5 RGB DDR5 7200MHz CL34 32GB (16Gx2) 부품을 속도 중심 N/B 데이터베이스 점수 379점으로 저장했습니다."
+  },
+  "nbWeightedScore": 379,
+  "nbMax": 238.749,
+  "nbMin": 366.842,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=G.Skill%20Trident%20Z5%20RGB%20DDR5%207200MHz%20CL34%2032GB%20(16Gx2)%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "CL34-45-45-115, 1.40V, XMP 3.0",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}
