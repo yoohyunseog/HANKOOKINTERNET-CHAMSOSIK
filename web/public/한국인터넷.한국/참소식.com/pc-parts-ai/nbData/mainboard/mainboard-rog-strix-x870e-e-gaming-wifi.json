@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-26T17:10:26.582+09:00",
+  "updatedAt": "2026-05-27T23:36:11.263+09:00",
   "category": "Mainboard",
   "id": "mainboard-rog-strix-x870e-e-gaming-wifi",
   "name": "ROG STRIX X870E-E GAMING WIFI",
@@ -21,7 +21,7 @@
   "performance": 95,
   "valueIndex": 10,
   "aiUseScore": 62,
-  "powerWatts": 0,
+  "powerWatts": null,
   "tags": [
     "high-end",
     "gaming",
@@ -82,9 +82,5 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=ASUS%20ROG%20STRIX%20X870-E%20GAMING%20WIFI%20price",
   "notes": "High-end X870E chipset board with PCIe 5.0 and USB4 support.",
-  "textRepair": null,
-  "sourceType": "collector",
-  "sourceQuery": "",
-  "collectedPricesKrw": [],
-  "targetMatched": null
+  "textRepair": null
 }

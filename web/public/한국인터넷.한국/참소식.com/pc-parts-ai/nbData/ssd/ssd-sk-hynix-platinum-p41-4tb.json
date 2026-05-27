@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-26T17:10:26.887+09:00",
+  "updatedAt": "2026-05-27T23:36:11.263+09:00",
   "category": "SSD",
   "id": "ssd-sk-hynix-platinum-p41-4tb",
   "name": "SK hynix Platinum P41 4TB",
@@ -21,7 +21,7 @@
   "performance": 95,
   "valueIndex": 15.3,
   "aiUseScore": 62,
-  "powerWatts": 0,
+  "powerWatts": null,
   "tags": [
     "NVMe",
     "Gen4",
@@ -82,9 +82,5 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=SK%20hynix%20Platinum%20P41%204TB",
   "notes": "Sequential Read 7,000MB/s, Sequential Write 6,500MB/s, TBW 1,200TB",
-  "textRepair": null,
-  "sourceType": "collector",
-  "sourceQuery": "",
-  "collectedPricesKrw": [],
-  "targetMatched": null
+  "textRepair": null
 }

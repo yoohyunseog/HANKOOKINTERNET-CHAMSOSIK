@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-26T17:10:26.873+09:00",
+  "updatedAt": "2026-05-27T23:36:11.263+09:00",
   "category": "SSD",
   "id": "ssd-seagate-firecuda-540-2tb",
   "name": "Seagate FireCuda 540 2TB",
@@ -81,9 +81,5 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Seagate%20FireCuda%20540%202TB%20price",
   "notes": "Auto-generated AI PC candidate added after the saved candidate list was exhausted.",
-  "textRepair": null,
-  "sourceType": "collector",
-  "sourceQuery": "",
-  "collectedPricesKrw": [],
-  "targetMatched": null
+  "textRepair": null
 }

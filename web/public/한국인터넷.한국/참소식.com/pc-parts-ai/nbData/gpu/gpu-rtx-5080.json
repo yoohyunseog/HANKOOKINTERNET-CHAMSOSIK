@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-26T17:10:26.418+09:00",
+  "updatedAt": "2026-05-27T23:36:11.263+09:00",
   "category": "GPU",
   "id": "gpu-rtx-5080",
   "name": "NVIDIA GeForce RTX 5080",
@@ -83,9 +83,5 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=NVIDIA%20GeForce%20RTX%205080%20price",
   "notes": "Additional AI PC candidate collected when saved parts are already exhausted.",
-  "textRepair": null,
-  "sourceType": "collector",
-  "sourceQuery": "",
-  "collectedPricesKrw": [],
-  "targetMatched": null
+  "textRepair": null
 }

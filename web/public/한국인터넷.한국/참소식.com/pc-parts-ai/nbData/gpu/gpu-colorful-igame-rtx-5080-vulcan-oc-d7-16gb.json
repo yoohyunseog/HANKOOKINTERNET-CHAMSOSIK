@@ -1,0 +1,86 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-05-27T23:36:11.263+09:00",
+  "category": "GPU",
+  "id": "gpu-colorful-igame-rtx-5080-vulcan-oc-d7-16gb",
+  "name": "Colorful iGame 지포스 RTX 5080 Vulcan OC D7 16GB",
+  "maker": "Colorful",
+  "platform": "PCIe 5.0",
+  "estimatedPriceKrw": 2480000,
+  "priceBand": "60만원 이상",
+  "speedLabel": "2695MHz (OC)",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "GPU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 95,
+  "valueIndex": 3.8,
+  "aiUseScore": 95,
+  "powerWatts": 400,
+  "tags": [
+    "gaming",
+    "ai",
+    "high-end"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "GPU",
+    "partId": "gpu-colorful-igame-rtx-5080-vulcan-oc-d7-16gb",
+    "partName": "Colorful iGame 지포스 RTX 5080 Vulcan OC D7 16GB",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "GPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 950,
+      "value": 100,
+      "aiFit": 950,
+      "priceEfficiency": 40,
+      "powerEfficiency": 100
+    },
+    "nbVector": [
+      100,
+      950,
+      100,
+      950,
+      40,
+      100
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 164.267,
+    "nbMin": 308.884,
+    "weightedScore": 350,
+    "nbBand": "100~499",
+    "summary": "GPU Colorful iGame 지포스 RTX 5080 Vulcan OC D7 16GB 부품을 속도 중심 N/B 데이터베이스 점수 350점으로 저장했습니다."
+  },
+  "nbWeightedScore": 350,
+  "nbMax": 164.267,
+  "nbMin": 308.884,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Colorful%20iGame%20%EC%A7%80%ED%8F%AC%EC%8A%A4%20RTX%205080%20Vulcan%20OC%20D7%2016GB%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "LCD monitoring, GDDR7, 3-fan cooling",
+  "textRepair": null
+}

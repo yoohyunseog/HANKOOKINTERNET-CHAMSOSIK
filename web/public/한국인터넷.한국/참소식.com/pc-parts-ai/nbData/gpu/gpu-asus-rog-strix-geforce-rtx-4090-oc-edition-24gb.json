@@ -1,0 +1,86 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-05-27T23:36:11.263+09:00",
+  "category": "GPU",
+  "id": "gpu-asus-rog-strix-geforce-rtx-4090-oc-edition-24gb",
+  "name": "ASUS ROG Strix GeForce RTX 4090 OC Edition 24GB",
+  "maker": "ASUS",
+  "platform": "PCIe 4.0",
+  "estimatedPriceKrw": 6012000,
+  "priceBand": "60만원 이상",
+  "speedLabel": "OC Edition",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "GPU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 100,
+  "valueIndex": 1.7,
+  "aiUseScore": 100,
+  "powerWatts": 450,
+  "tags": [
+    "gaming",
+    "ai",
+    "high-end"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "GPU",
+    "partId": "gpu-asus-rog-strix-geforce-rtx-4090-oc-edition-24gb",
+    "partName": "ASUS ROG Strix GeForce RTX 4090 OC Edition 24GB",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "GPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 1000,
+      "value": 100,
+      "aiFit": 1000,
+      "priceEfficiency": 20,
+      "powerEfficiency": 100
+    },
+    "nbVector": [
+      100,
+      1000,
+      100,
+      1000,
+      20,
+      100
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 169.102,
+    "nbMin": 296.444,
+    "weightedScore": 364,
+    "nbBand": "100~499",
+    "summary": "GPU ASUS ROG Strix GeForce RTX 4090 OC Edition 24GB 부품을 속도 중심 N/B 데이터베이스 점수 364점으로 저장했습니다."
+  },
+  "nbWeightedScore": 364,
+  "nbMax": 169.102,
+  "nbMin": 296.444,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=GeForce%20RTX%204090%20ASUS%20ROG%20Strix%20OC%20Edition%20%EB%8B%A4%EB%82%98%EC%99%80",
+  "notes": "Standard OC Edition. White version also observed in results but this is the primary black model.",
+  "textRepair": null
+}

@@ -1,0 +1,4519 @@
+{
+  "schemaVersion": 1,
+  "algorithm": "louvain",
+  "totalFiles": 590,
+  "totalBatches": 35,
+  "exportsByPath": {
+    "common-site.js": [],
+    "community/bot/.wdm/drivers/chromedriver/win64/148.0.7778.178/chromedriver-win64/chromedriver.exe": [],
+    "community/bot/.wdm/drivers/chromedriver/win64/148.0.7778.178/chromedriver-win64/LICENSE.chromedriver": [],
+    "community/bot/.wdm/drivers/chromedriver/win64/148.0.7778.178/chromedriver-win64/THIRD_PARTY_NOTICES.chromedriver": [],
+    "community/bot/news_bot.py": [
+      "setup_driver",
+      "normalize_url",
+      "is_trusted_article_url",
+      "score_hardware_link",
+      "collect_direct_article_links",
+      "extract_article_content",
+      "extract_visible_comments",
+      "translate_and_summarize_with_ai",
+      "fallback_news_post",
+      "guess_product_tags",
+      "normalize_tags",
+      "guess_reaction_keywords",
+      "guess_category",
+      "main"
+    ],
+    "domain-check.js": [],
+    "eclipse-centauri-dp.js": [],
+    "index.html.backup": [],
+    "js/autonomous_driving_simulation_v1.js": [],
+    "js/bitCalculation.js": [],
+    "js/bitCalculation.v.0.1.js": [],
+    "js/database.js": [],
+    "js/final_demo.js": [],
+    "js/getGenreNameFunction.js": [],
+    "js/nb_calculation_node.js": [],
+    "js/NB_Weighted_System_Negative_Positive_v1_1.js": [],
+    "js/simple_db_test.js": [],
+    "js/test_database_direct.js": [],
+    "js/test_main_interactive.js": [],
+    "js/test_node_program.js": [],
+    "js/test_precision.js": [],
+    "js/test_query_feature.js": [],
+    "js/test_with_korean.js": [],
+    "js/verify_config.js": [],
+    "jungnang-volunteer/jungnang_youtube_bot.js": [],
+    "parseMermaidMmd.js": [
+      "parseMermaidToRelations",
+      "parseWebsiteFromDiagramJsonText",
+      "parseDiagramJsonToGraph",
+      "parseDirectDescriptionEdges",
+      "parseIndicatorsGroupedById",
+      "parseMermaidToGroupedIndicators",
+      "parseMermaidNodesWithMeta",
+      "parseDescriptionNodesToArray",
+      "parseDescriptionNodesGroupedByIndicator"
+    ],
+    "pc-parts-ai/pc_parts_ai_loop.js": [],
+    "pc-parts-ai/pc_parts_chrome_collector.js": [],
+    "pc-parts-ai/pc_parts_research_bot.js": [],
+    "robot/bot/.wdm/drivers/chromedriver/win64/148.0.7778.178/chromedriver-win64/chromedriver.exe": [],
+    "robot/bot/.wdm/drivers/chromedriver/win64/148.0.7778.178/chromedriver-win64/LICENSE.chromedriver": [],
+    "robot/bot/.wdm/drivers/chromedriver/win64/148.0.7778.178/chromedriver-win64/THIRD_PARTY_NOTICES.chromedriver": [],
+    "robot/bot/news_bot.py": [
+      "setup_driver",
+      "normalize_url",
+      "is_trusted_article_url",
+      "score_hardware_link",
+      "collect_direct_article_links",
+      "extract_article_content",
+      "extract_visible_comments",
+      "translate_and_summarize_with_ai",
+      "fallback_news_post",
+      "guess_product_tags",
+      "normalize_tags",
+      "guess_reaction_keywords",
+      "guess_category",
+      "main"
+    ],
+    "Study/誘몃텇/untitled/src/script.js": [],
+    "Study/?곷텇 ?쒖옉/script.js": [],
+    "updateRealtimeFinanceData.js": [],
+    "website_diagram.mmd": [],
+    "website_diagram.table": [],
+    "world-monitor-ai.js": [],
+    "www.xn--9l4b4xi9r.com_202506016D73B/Convert/www.xn--9l4b4xi9r.com_202506016D73B.jks": [],
+    "www.xn--9l4b4xi9r.com_202506016D73B/Convert/www.xn--9l4b4xi9r.com_202506016D73B.p7b": [],
+    "www.xn--9l4b4xi9r.com_202506016D73B/Convert/www.xn--9l4b4xi9r.com_202506016D73B.pfx": [],
+    "www.xn--9l4b4xi9r.com_202506016D73B/RootChain/AAACertificateServices.Root.crt.pem": [],
+    "www.xn--9l4b4xi9r.com_202506016D73B/RootChain/chain-bundle.pem": [],
+    "www.xn--9l4b4xi9r.com_202506016D73B/RootChain/root-chain-bundle.p7b": [],
+    "www.xn--9l4b4xi9r.com_202506016D73B/RootChain/root-chain-bundle.pem": [],
+    "www.xn--9l4b4xi9r.com_202506016D73B/RootChain/SectigoRSADVCA.Chain2.crt.pem": [],
+    "www.xn--9l4b4xi9r.com_202506016D73B/RootChain/USERTrustRSACA.Chain1.crt.pem": [],
+    "www.xn--9l4b4xi9r.com_202506016D73B/www.xn--9l4b4xi9r.com_202506016D73B.all.crt.pem": [],
+    "www.xn--9l4b4xi9r.com_202506016D73B/www.xn--9l4b4xi9r.com_202506016D73B.crt.pem": [],
+    "www.xn--9l4b4xi9r.com_202506016D73B/www.xn--9l4b4xi9r.com_202506016D73B.key.pem": []
+  },
+  "batches": [
+    {
+      "batchIndex": 1,
+      "files": [
+        {
+          "path": "js/database.js",
+          "language": "javascript",
+          "sizeLines": 156,
+          "fileCategory": "code"
+        },
+        {
+          "path": "js/nb_calculation_node.js",
+          "language": "javascript",
+          "sizeLines": 373,
+          "fileCategory": "code"
+        },
+        {
+          "path": "js/simple_db_test.js",
+          "language": "javascript",
+          "sizeLines": 45,
+          "fileCategory": "code"
+        },
+        {
+          "path": "js/test_database_direct.js",
+          "language": "javascript",
+          "sizeLines": 87,
+          "fileCategory": "code"
+        },
+        {
+          "path": "js/test_query_feature.js",
+          "language": "javascript",
+          "sizeLines": 67,
+          "fileCategory": "code"
+        }
+      ],
+      "batchImportData": {
+        "js/database.js": [],
+        "js/nb_calculation_node.js": [
+          "js/database.js"
+        ],
+        "js/simple_db_test.js": [
+          "js/database.js"
+        ],
+        "js/test_database_direct.js": [
+          "js/database.js"
+        ],
+        "js/test_query_feature.js": [
+          "js/database.js"
+        ]
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 2,
+      "files": [
+        {
+          "path": "API_?ъ슜_?덉젣.md",
+          "language": "markdown",
+          "sizeLines": 244,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "README.md",
+          "language": "markdown",
+          "sizeLines": 207,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "ads.txt",
+          "language": "txt",
+          "sizeLines": 0,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "api.html",
+          "language": "html",
+          "sizeLines": 771,
+          "fileCategory": "markup"
+        },
+        {
+          "path": "cathedral-news.html",
+          "language": "html",
+          "sizeLines": 262,
+          "fileCategory": "markup"
+        },
+        {
+          "path": "common-site.css",
+          "language": "css",
+          "sizeLines": 179,
+          "fileCategory": "markup"
+        },
+        {
+          "path": "config.json",
+          "language": "json",
+          "sizeLines": 18,
+          "fileCategory": "config"
+        },
+        {
+          "path": "dashboard.html",
+          "language": "html",
+          "sizeLines": 998,
+          "fileCategory": "markup"
+        },
+        {
+          "path": "database.html",
+          "language": "html",
+          "sizeLines": 745,
+          "fileCategory": "markup"
+        },
+        {
+          "path": "index.html",
+          "language": "html",
+          "sizeLines": 5313,
+          "fileCategory": "markup"
+        },
+        {
+          "path": "index_old.html",
+          "language": "html",
+          "sizeLines": 460,
+          "fileCategory": "markup"
+        },
+        {
+          "path": "naver_blog_rss.xml",
+          "language": "xml",
+          "sizeLines": 729,
+          "fileCategory": "config"
+        },
+        {
+          "path": "realtime_finance_data.json",
+          "language": "json",
+          "sizeLines": 26,
+          "fileCategory": "config"
+        },
+        {
+          "path": "robots.txt",
+          "language": "txt",
+          "sizeLines": 23,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "search-ide.html",
+          "language": "html",
+          "sizeLines": 410,
+          "fileCategory": "markup"
+        },
+        {
+          "path": "server-journal.html",
+          "language": "html",
+          "sizeLines": 338,
+          "fileCategory": "markup"
+        },
+        {
+          "path": "shorts_feed.xml",
+          "language": "xml",
+          "sizeLines": 652,
+          "fileCategory": "config"
+        },
+        {
+          "path": "test_api.html",
+          "language": "html",
+          "sizeLines": 129,
+          "fileCategory": "markup"
+        },
+        {
+          "path": "test_parse_mmd.html",
+          "language": "html",
+          "sizeLines": 176,
+          "fileCategory": "markup"
+        },
+        {
+          "path": "website_diagram.html",
+          "language": "html",
+          "sizeLines": 255,
+          "fileCategory": "markup"
+        }
+      ],
+      "batchImportData": {
+        "API_?ъ슜_?덉젣.md": [],
+        "README.md": [],
+        "ads.txt": [],
+        "api.html": [],
+        "cathedral-news.html": [],
+        "common-site.css": [],
+        "config.json": [],
+        "dashboard.html": [],
+        "database.html": [],
+        "index.html": [],
+        "index_old.html": [],
+        "naver_blog_rss.xml": [],
+        "realtime_finance_data.json": [],
+        "robots.txt": [],
+        "search-ide.html": [],
+        "server-journal.html": [],
+        "shorts_feed.xml": [],
+        "test_api.html": [],
+        "test_parse_mmd.html": [],
+        "website_diagram.html": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 3,
+      "files": [
+        {
+          "path": "website_diagram.json",
+          "language": "json",
+          "sizeLines": 5,
+          "fileCategory": "config"
+        },
+        {
+          "path": "website_diagram_full.json",
+          "language": "json",
+          "sizeLines": 197,
+          "fileCategory": "config"
+        },
+        {
+          "path": "website_from_diagram.json",
+          "language": "json",
+          "sizeLines": 0,
+          "fileCategory": "config"
+        },
+        {
+          "path": "world-monitor-ai.css",
+          "language": "css",
+          "sizeLines": 733,
+          "fileCategory": "markup"
+        },
+        {
+          "path": "world-monitor-ai.json",
+          "language": "json",
+          "sizeLines": 103,
+          "fileCategory": "config"
+        }
+      ],
+      "batchImportData": {
+        "website_diagram.json": [],
+        "website_diagram_full.json": [],
+        "website_from_diagram.json": [],
+        "world-monitor-ai.css": [],
+        "world-monitor-ai.json": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 4,
+      "files": [
+        {
+          "path": "jungnang-volunteer/index.html",
+          "language": "html",
+          "sizeLines": 822,
+          "fileCategory": "markup"
+        },
+        {
+          "path": "jungnang-volunteer/jungnang-youtube.json",
+          "language": "json",
+          "sizeLines": 402,
+          "fileCategory": "config"
+        },
+        {
+          "path": "jungnang-volunteer/run_jungnang_youtube_bot.bat",
+          "language": "batch",
+          "sizeLines": 5,
+          "fileCategory": "script"
+        }
+      ],
+      "batchImportData": {
+        "jungnang-volunteer/index.html": [],
+        "jungnang-volunteer/jungnang-youtube.json": [],
+        "jungnang-volunteer/run_jungnang_youtube_bot.bat": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 5,
+      "files": [
+        {
+          "path": "pc-parts-ai/index.html",
+          "language": "html",
+          "sizeLines": 1492,
+          "fileCategory": "markup"
+        },
+        {
+          "path": "pc-parts-ai/parts.html",
+          "language": "html",
+          "sizeLines": 960,
+          "fileCategory": "markup"
+        },
+        {
+          "path": "pc-parts-ai/pc-assembly-state.json",
+          "language": "json",
+          "sizeLines": 370,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/pc-ollama-build-cache.json",
+          "language": "json",
+          "sizeLines": 216,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/pc-parts-collector-state.json",
+          "language": "json",
+          "sizeLines": 315,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/pc-parts-data.json",
+          "language": "json",
+          "sizeLines": 54963,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/pc-parts-raw.json",
+          "language": "json",
+          "sizeLines": 42252,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/run_pc_parts_research_bot.bat",
+          "language": "batch",
+          "sizeLines": 9,
+          "fileCategory": "script"
+        }
+      ],
+      "batchImportData": {
+        "pc-parts-ai/index.html": [],
+        "pc-parts-ai/parts.html": [],
+        "pc-parts-ai/pc-assembly-state.json": [],
+        "pc-parts-ai/pc-ollama-build-cache.json": [],
+        "pc-parts-ai/pc-parts-collector-state.json": [],
+        "pc-parts-ai/pc-parts-data.json": [],
+        "pc-parts-ai/pc-parts-raw.json": [],
+        "pc-parts-ai/run_pc_parts_research_bot.bat": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 6,
+      "files": [
+        {
+          "path": "pc-parts-ai/nbData/cpu/cpu-5-2-245k.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/cpu/cpu-5-245k.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/cpu/cpu-5-7500f.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/cpu/cpu-5-9600x.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/cpu/cpu-7-265k.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/cpu/cpu-7-9700x.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/cpu/cpu-7-9800x3d.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/cpu/cpu-9-2-285k.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/cpu/cpu-9-285k.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/cpu/cpu-9-7950x3d.json",
+          "language": "json",
+          "sizeLines": 91,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/cpu/cpu-9-9950x.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/cpu/cpu-amd-5-5-7500f.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/cpu/cpu-amd-5-6-9600x.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/cpu/cpu-amd-5-7500f.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/cpu/cpu-amd-5-7600.json",
+          "language": "json",
+          "sizeLines": 90,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/cpu/cpu-amd-5-9600x.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/cpu/cpu-amd-7-5-7700.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/cpu/cpu-amd-7-5-7800x3d.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/cpu/cpu-amd-7-6-9700x.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/cpu/cpu-amd-7-6-9800x3d.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        }
+      ],
+      "batchImportData": {
+        "pc-parts-ai/nbData/cpu/cpu-5-2-245k.json": [],
+        "pc-parts-ai/nbData/cpu/cpu-5-245k.json": [],
+        "pc-parts-ai/nbData/cpu/cpu-5-7500f.json": [],
+        "pc-parts-ai/nbData/cpu/cpu-5-9600x.json": [],
+        "pc-parts-ai/nbData/cpu/cpu-7-265k.json": [],
+        "pc-parts-ai/nbData/cpu/cpu-7-9700x.json": [],
+        "pc-parts-ai/nbData/cpu/cpu-7-9800x3d.json": [],
+        "pc-parts-ai/nbData/cpu/cpu-9-2-285k.json": [],
+        "pc-parts-ai/nbData/cpu/cpu-9-285k.json": [],
+        "pc-parts-ai/nbData/cpu/cpu-9-7950x3d.json": [],
+        "pc-parts-ai/nbData/cpu/cpu-9-9950x.json": [],
+        "pc-parts-ai/nbData/cpu/cpu-amd-5-5-7500f.json": [],
+        "pc-parts-ai/nbData/cpu/cpu-amd-5-6-9600x.json": [],
+        "pc-parts-ai/nbData/cpu/cpu-amd-5-7500f.json": [],
+        "pc-parts-ai/nbData/cpu/cpu-amd-5-7600.json": [],
+        "pc-parts-ai/nbData/cpu/cpu-amd-5-9600x.json": [],
+        "pc-parts-ai/nbData/cpu/cpu-amd-7-5-7700.json": [],
+        "pc-parts-ai/nbData/cpu/cpu-amd-7-5-7800x3d.json": [],
+        "pc-parts-ai/nbData/cpu/cpu-amd-7-6-9700x.json": [],
+        "pc-parts-ai/nbData/cpu/cpu-amd-7-6-9800x3d.json": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 7,
+      "files": [
+        {
+          "path": "pc-parts-ai/nbData/cpu/cpu-amd-7-6-9850x3d.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/cpu/cpu-amd-7-7700.json",
+          "language": "json",
+          "sizeLines": 90,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/cpu/cpu-amd-7-7700x.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/cpu/cpu-amd-7-7800x3d.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/cpu/cpu-amd-7-9700x.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/cpu/cpu-amd-7-9800x3d.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/cpu/cpu-amd-7-9850x3d.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/cpu/cpu-amd-9-5-7950x3d.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/cpu/cpu-amd-9-6-9900x.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/cpu/cpu-amd-9-6-9950x.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/cpu/cpu-amd-9-6-9950x3d.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/cpu/cpu-amd-9-7950x.json",
+          "language": "json",
+          "sizeLines": 90,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/cpu/cpu-amd-9-7950x3d.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/cpu/cpu-amd-9-9900x.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/cpu/cpu-amd-9-9950x.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/cpu/cpu-amd-9-9950x3d.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/cpu/cpu-amd-ryzen-5-9600x.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/cpu/cpu-amd-ryzen-7-5700x3d.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/cpu/cpu-amd-ryzen-7-7700x.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/cpu/cpu-amd-ryzen-7-9600x.json",
+          "language": "json",
+          "sizeLines": 90,
+          "fileCategory": "config"
+        }
+      ],
+      "batchImportData": {
+        "pc-parts-ai/nbData/cpu/cpu-amd-7-6-9850x3d.json": [],
+        "pc-parts-ai/nbData/cpu/cpu-amd-7-7700.json": [],
+        "pc-parts-ai/nbData/cpu/cpu-amd-7-7700x.json": [],
+        "pc-parts-ai/nbData/cpu/cpu-amd-7-7800x3d.json": [],
+        "pc-parts-ai/nbData/cpu/cpu-amd-7-9700x.json": [],
+        "pc-parts-ai/nbData/cpu/cpu-amd-7-9800x3d.json": [],
+        "pc-parts-ai/nbData/cpu/cpu-amd-7-9850x3d.json": [],
+        "pc-parts-ai/nbData/cpu/cpu-amd-9-5-7950x3d.json": [],
+        "pc-parts-ai/nbData/cpu/cpu-amd-9-6-9900x.json": [],
+        "pc-parts-ai/nbData/cpu/cpu-amd-9-6-9950x.json": [],
+        "pc-parts-ai/nbData/cpu/cpu-amd-9-6-9950x3d.json": [],
+        "pc-parts-ai/nbData/cpu/cpu-amd-9-7950x.json": [],
+        "pc-parts-ai/nbData/cpu/cpu-amd-9-7950x3d.json": [],
+        "pc-parts-ai/nbData/cpu/cpu-amd-9-9900x.json": [],
+        "pc-parts-ai/nbData/cpu/cpu-amd-9-9950x.json": [],
+        "pc-parts-ai/nbData/cpu/cpu-amd-9-9950x3d.json": [],
+        "pc-parts-ai/nbData/cpu/cpu-amd-ryzen-5-9600x.json": [],
+        "pc-parts-ai/nbData/cpu/cpu-amd-ryzen-7-5700x3d.json": [],
+        "pc-parts-ai/nbData/cpu/cpu-amd-ryzen-7-7700x.json": [],
+        "pc-parts-ai/nbData/cpu/cpu-amd-ryzen-7-9600x.json": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 8,
+      "files": [
+        {
+          "path": "pc-parts-ai/nbData/cpu/cpu-amd-ryzen-9-7900x.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/cpu/cpu-amd-ryzen-9-7900x3d.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/cpu/cpu-amd-ryzen-9-7950x3d.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/cpu/cpu-amd-ryzen-9-9900x3d.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/cpu/cpu-amd-ryzen-9-9950x3d.json",
+          "language": "json",
+          "sizeLines": 90,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/cpu/cpu-core-i5-14400f.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/cpu/cpu-core-i5-14600k.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/cpu/cpu-core-i7-14700k.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/cpu/cpu-core-i9-14900k.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/cpu/cpu-core-ultra-5-245k.json",
+          "language": "json",
+          "sizeLines": 91,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/cpu/cpu-core-ultra-5-245kf.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/cpu/cpu-core-ultra-7-265k.json",
+          "language": "json",
+          "sizeLines": 92,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/cpu/cpu-core-ultra-7-265kf.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/cpu/cpu-core-ultra-9-285.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/cpu/cpu-core-ultra-9-285k.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/cpu/cpu-i5-14-14600k.json",
+          "language": "json",
+          "sizeLines": 90,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/cpu/cpu-intel-core-i3-14100.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/cpu/cpu-intel-core-i3-14100f.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/cpu/cpu-intel-core-i5-13400f.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/cpu/cpu-intel-core-i5-13600k.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        }
+      ],
+      "batchImportData": {
+        "pc-parts-ai/nbData/cpu/cpu-amd-ryzen-9-7900x.json": [],
+        "pc-parts-ai/nbData/cpu/cpu-amd-ryzen-9-7900x3d.json": [],
+        "pc-parts-ai/nbData/cpu/cpu-amd-ryzen-9-7950x3d.json": [],
+        "pc-parts-ai/nbData/cpu/cpu-amd-ryzen-9-9900x3d.json": [],
+        "pc-parts-ai/nbData/cpu/cpu-amd-ryzen-9-9950x3d.json": [],
+        "pc-parts-ai/nbData/cpu/cpu-core-i5-14400f.json": [],
+        "pc-parts-ai/nbData/cpu/cpu-core-i5-14600k.json": [],
+        "pc-parts-ai/nbData/cpu/cpu-core-i7-14700k.json": [],
+        "pc-parts-ai/nbData/cpu/cpu-core-i9-14900k.json": [],
+        "pc-parts-ai/nbData/cpu/cpu-core-ultra-5-245k.json": [],
+        "pc-parts-ai/nbData/cpu/cpu-core-ultra-5-245kf.json": [],
+        "pc-parts-ai/nbData/cpu/cpu-core-ultra-7-265k.json": [],
+        "pc-parts-ai/nbData/cpu/cpu-core-ultra-7-265kf.json": [],
+        "pc-parts-ai/nbData/cpu/cpu-core-ultra-9-285.json": [],
+        "pc-parts-ai/nbData/cpu/cpu-core-ultra-9-285k.json": [],
+        "pc-parts-ai/nbData/cpu/cpu-i5-14-14600k.json": [],
+        "pc-parts-ai/nbData/cpu/cpu-intel-core-i3-14100.json": [],
+        "pc-parts-ai/nbData/cpu/cpu-intel-core-i3-14100f.json": [],
+        "pc-parts-ai/nbData/cpu/cpu-intel-core-i5-13400f.json": [],
+        "pc-parts-ai/nbData/cpu/cpu-intel-core-i5-13600k.json": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 9,
+      "files": [
+        {
+          "path": "pc-parts-ai/nbData/cpu/cpu-intel-core-i5-13600kf.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/cpu/cpu-intel-core-i5-14400.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/cpu/cpu-intel-core-i5-14600k-raptor-lake-refresh.json",
+          "language": "json",
+          "sizeLines": 90,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/cpu/cpu-intel-core-i7-13700f.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/cpu/cpu-intel-core-i7-13700k.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/cpu/cpu-intel-core-i7-14700f.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/cpu/cpu-intel-core-i7-14700k-raptor-lake-refresh.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/cpu/cpu-intel-core-i7-14700kf.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/cpu/cpu-intel-core-i9-13900k.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/cpu/cpu-intel-core-i9-14900k-raptor-lake-refresh.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/cpu/cpu-intel-core-i9-14900k.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/cpu/cpu-intel-core-i9-14900kf.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/cpu/cpu-intel-core-i9-14900ks.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/cpu/cpu-intel-core-ultra-3-205.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/cpu/cpu-intel-core-ultra-5-225-f.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/cpu/cpu-intel-core-ultra-5-225.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/cpu/cpu-intel-core-ultra-5-225f.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/cpu/cpu-intel-core-ultra-5-225k.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/cpu/cpu-intel-core-ultra-5-245.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/cpu/cpu-intel-core-ultra-5-250k-plus.json",
+          "language": "json",
+          "sizeLines": 90,
+          "fileCategory": "config"
+        }
+      ],
+      "batchImportData": {
+        "pc-parts-ai/nbData/cpu/cpu-intel-core-i5-13600kf.json": [],
+        "pc-parts-ai/nbData/cpu/cpu-intel-core-i5-14400.json": [],
+        "pc-parts-ai/nbData/cpu/cpu-intel-core-i5-14600k-raptor-lake-refresh.json": [],
+        "pc-parts-ai/nbData/cpu/cpu-intel-core-i7-13700f.json": [],
+        "pc-parts-ai/nbData/cpu/cpu-intel-core-i7-13700k.json": [],
+        "pc-parts-ai/nbData/cpu/cpu-intel-core-i7-14700f.json": [],
+        "pc-parts-ai/nbData/cpu/cpu-intel-core-i7-14700k-raptor-lake-refresh.json": [],
+        "pc-parts-ai/nbData/cpu/cpu-intel-core-i7-14700kf.json": [],
+        "pc-parts-ai/nbData/cpu/cpu-intel-core-i9-13900k.json": [],
+        "pc-parts-ai/nbData/cpu/cpu-intel-core-i9-14900k-raptor-lake-refresh.json": [],
+        "pc-parts-ai/nbData/cpu/cpu-intel-core-i9-14900k.json": [],
+        "pc-parts-ai/nbData/cpu/cpu-intel-core-i9-14900kf.json": [],
+        "pc-parts-ai/nbData/cpu/cpu-intel-core-i9-14900ks.json": [],
+        "pc-parts-ai/nbData/cpu/cpu-intel-core-ultra-3-205.json": [],
+        "pc-parts-ai/nbData/cpu/cpu-intel-core-ultra-5-225-f.json": [],
+        "pc-parts-ai/nbData/cpu/cpu-intel-core-ultra-5-225.json": [],
+        "pc-parts-ai/nbData/cpu/cpu-intel-core-ultra-5-225f.json": [],
+        "pc-parts-ai/nbData/cpu/cpu-intel-core-ultra-5-225k.json": [],
+        "pc-parts-ai/nbData/cpu/cpu-intel-core-ultra-5-245.json": [],
+        "pc-parts-ai/nbData/cpu/cpu-intel-core-ultra-5-250k-plus.json": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 10,
+      "files": [
+        {
+          "path": "pc-parts-ai/nbData/cpu/cpu-intel-core-ultra-7-265.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/cpu/cpu-intel-core-ultra-7-265f.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/cpu/cpu-intel-core-ultra-7-265k-arrow-lake.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/cpu/cpu-intel-core-ultra-9-285k-arrow-lake.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/cpu/cpu-intel-core-ultra-9-285kf.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/cpu/cpu-intel-ultra-9-285k.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/cpu/cpu-ryzen-5-7500f.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/cpu/cpu-ryzen-5-7600.json",
+          "language": "json",
+          "sizeLines": 92,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/cpu/cpu-ryzen-5-7600x.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/cpu/cpu-ryzen-5-8600g.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/cpu/cpu-ryzen-5-9600.json",
+          "language": "json",
+          "sizeLines": 92,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/cpu/cpu-ryzen-5-9600x.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/cpu/cpu-ryzen-7-7700.json",
+          "language": "json",
+          "sizeLines": 92,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/cpu/cpu-ryzen-7-7800x3d.json",
+          "language": "json",
+          "sizeLines": 91,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/cpu/cpu-ryzen-7-8700g.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/cpu/cpu-ryzen-7-9700x.json",
+          "language": "json",
+          "sizeLines": 92,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/cpu/cpu-ryzen-7-9800x3d.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/cpu/cpu-ryzen-9-7900.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/cpu/cpu-ryzen-9-7950x.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/cpu/cpu-ryzen-9-7950x3d.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        }
+      ],
+      "batchImportData": {
+        "pc-parts-ai/nbData/cpu/cpu-intel-core-ultra-7-265.json": [],
+        "pc-parts-ai/nbData/cpu/cpu-intel-core-ultra-7-265f.json": [],
+        "pc-parts-ai/nbData/cpu/cpu-intel-core-ultra-7-265k-arrow-lake.json": [],
+        "pc-parts-ai/nbData/cpu/cpu-intel-core-ultra-9-285k-arrow-lake.json": [],
+        "pc-parts-ai/nbData/cpu/cpu-intel-core-ultra-9-285kf.json": [],
+        "pc-parts-ai/nbData/cpu/cpu-intel-ultra-9-285k.json": [],
+        "pc-parts-ai/nbData/cpu/cpu-ryzen-5-7500f.json": [],
+        "pc-parts-ai/nbData/cpu/cpu-ryzen-5-7600.json": [],
+        "pc-parts-ai/nbData/cpu/cpu-ryzen-5-7600x.json": [],
+        "pc-parts-ai/nbData/cpu/cpu-ryzen-5-8600g.json": [],
+        "pc-parts-ai/nbData/cpu/cpu-ryzen-5-9600.json": [],
+        "pc-parts-ai/nbData/cpu/cpu-ryzen-5-9600x.json": [],
+        "pc-parts-ai/nbData/cpu/cpu-ryzen-7-7700.json": [],
+        "pc-parts-ai/nbData/cpu/cpu-ryzen-7-7800x3d.json": [],
+        "pc-parts-ai/nbData/cpu/cpu-ryzen-7-8700g.json": [],
+        "pc-parts-ai/nbData/cpu/cpu-ryzen-7-9700x.json": [],
+        "pc-parts-ai/nbData/cpu/cpu-ryzen-7-9800x3d.json": [],
+        "pc-parts-ai/nbData/cpu/cpu-ryzen-9-7900.json": [],
+        "pc-parts-ai/nbData/cpu/cpu-ryzen-9-7950x.json": [],
+        "pc-parts-ai/nbData/cpu/cpu-ryzen-9-7950x3d.json": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 11,
+      "files": [
+        {
+          "path": "pc-parts-ai/nbData/cpu/cpu-ryzen-9-9900x.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/cpu/cpu-ryzen-9-9950x.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/cpu/cpu-ryzen-9-9950x3d.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/cpu/index.json",
+          "language": "json",
+          "sizeLines": 216,
+          "fileCategory": "config"
+        }
+      ],
+      "batchImportData": {
+        "pc-parts-ai/nbData/cpu/cpu-ryzen-9-9900x.json": [],
+        "pc-parts-ai/nbData/cpu/cpu-ryzen-9-9950x.json": [],
+        "pc-parts-ai/nbData/cpu/cpu-ryzen-9-9950x3d.json": [],
+        "pc-parts-ai/nbData/cpu/index.json": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 12,
+      "files": [
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-afox-rtx-4080-super-blower-d6x-16gb.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-amd-radeon-rx-7900-xt.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-asrock-amd-radeon-rx-7900-xt-20gb-oc.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-asrock-amd-radeon-rx-7900-xt-phantom-20gb-oc.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-asus-dual-geforce-rtx-4060-ti-oc-edition-16gb.json",
+          "language": "json",
+          "sizeLines": 83,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-asus-dual-geforce-rtx-4060-ti-oc-edition-8gb-gddr6.json",
+          "language": "json",
+          "sizeLines": 83,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-asus-dual-geforce-rtx-4060-ti-oc-edition-8gb.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-asus-dual-rtx-4060-ti-o8g-evo-oc-d6-8gb.json",
+          "language": "json",
+          "sizeLines": 83,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-asus-prime-geforce-rtx-4060-ti-o8g-oc-d6-8gb.json",
+          "language": "json",
+          "sizeLines": 83,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-asus-prime-geforce-rtx-4070-super-o12g-oc-12gb.json",
+          "language": "json",
+          "sizeLines": 83,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-asus-prime-geforce-rtx-5080-oc-d7-16gb.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-asus-prime-rtx-5080-oc-d7-16gb.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-asus-prime-rx-9070-xt-oc-d6-16gb.json",
+          "language": "json",
+          "sizeLines": 83,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-asus-proart-geforce-rtx-4060-ti-16gb-oc-edition.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-asus-proart-geforce-rtx-4070-ti-super-o16g-oc-16gb.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-asus-proart-geforce-rtx-4070-ti-super-o16g-oc-d6x-16gb.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-asus-proart-geforce-rtx-4070-ti-super-o16g-oc.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-asus-proart-geforce-rtx-4070-ti-super-oc-edition.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-asus-proart-geforce-rtx-4080-super-oc-edition.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-asus-proart-rtx-4070-ti-super-o16g-oc-d6x-16gb.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        }
+      ],
+      "batchImportData": {
+        "pc-parts-ai/nbData/gpu/gpu-afox-rtx-4080-super-blower-d6x-16gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-amd-radeon-rx-7900-xt.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-asrock-amd-radeon-rx-7900-xt-20gb-oc.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-asrock-amd-radeon-rx-7900-xt-phantom-20gb-oc.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-asus-dual-geforce-rtx-4060-ti-oc-edition-16gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-asus-dual-geforce-rtx-4060-ti-oc-edition-8gb-gddr6.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-asus-dual-geforce-rtx-4060-ti-oc-edition-8gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-asus-dual-rtx-4060-ti-o8g-evo-oc-d6-8gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-asus-prime-geforce-rtx-4060-ti-o8g-oc-d6-8gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-asus-prime-geforce-rtx-4070-super-o12g-oc-12gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-asus-prime-geforce-rtx-5080-oc-d7-16gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-asus-prime-rtx-5080-oc-d7-16gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-asus-prime-rx-9070-xt-oc-d6-16gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-asus-proart-geforce-rtx-4060-ti-16gb-oc-edition.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-asus-proart-geforce-rtx-4070-ti-super-o16g-oc-16gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-asus-proart-geforce-rtx-4070-ti-super-o16g-oc-d6x-16gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-asus-proart-geforce-rtx-4070-ti-super-o16g-oc.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-asus-proart-geforce-rtx-4070-ti-super-oc-edition.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-asus-proart-geforce-rtx-4080-super-oc-edition.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-asus-proart-rtx-4070-ti-super-o16g-oc-d6x-16gb.json": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 13,
+      "files": [
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-asus-proart-rtx-5080-oc-d7-16gb.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-asus-rog-astral-rtx-5080-white-oc-d7-16gb.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-asus-rog-astral-rtx-5090-oc-d7-32gb.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-asus-rog-strix-geforce-rtx-4070-super-oc-edition.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-asus-rog-strix-geforce-rtx-4080-super-oc-edition.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-asus-rog-strix-geforce-rtx-4090-gaming-oc-o24g.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-asus-rog-strix-geforce-rtx-4090-oc-edition.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-asus-rog-strix-geforce-rtx-4090-og-gaming-oc.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-asus-rog-strix-geforce-rtx-4090-white-oc-edition.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-asus-rog-strix-rtx-4080-oc.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-asus-rog-strix-rtx-4080-super-oc-d6x-16gb.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-asus-rog-strix-rtx-4090-gaming-oc-d6x-24gb-white.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-asus-rtx-4060-ti-oc-8gb.json",
+          "language": "json",
+          "sizeLines": 83,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-asus-rtx-5080-oc-d7-16gb-noctua.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-asus-sff-ready-prime-geforce-rtx-4070-ti-super-oc-edition-16gb.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-asus-tuf-gaming-geforce-rtx-4070-super-o12g-oc.json",
+          "language": "json",
+          "sizeLines": 83,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-asus-tuf-gaming-geforce-rtx-4070-ti-super-oc-edition.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-asus-tuf-gaming-geforce-rtx-4080-super-oc-edition-16gb.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-asus-tuf-gaming-geforce-rtx-5070-12gb-gddr7-oc-edition.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-asus-tuf-gaming-geforce-rtx-5080-16gb-gddr7-oc-edition.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        }
+      ],
+      "batchImportData": {
+        "pc-parts-ai/nbData/gpu/gpu-asus-proart-rtx-5080-oc-d7-16gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-asus-rog-astral-rtx-5080-white-oc-d7-16gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-asus-rog-astral-rtx-5090-oc-d7-32gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-asus-rog-strix-geforce-rtx-4070-super-oc-edition.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-asus-rog-strix-geforce-rtx-4080-super-oc-edition.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-asus-rog-strix-geforce-rtx-4090-gaming-oc-o24g.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-asus-rog-strix-geforce-rtx-4090-oc-edition.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-asus-rog-strix-geforce-rtx-4090-og-gaming-oc.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-asus-rog-strix-geforce-rtx-4090-white-oc-edition.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-asus-rog-strix-rtx-4080-oc.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-asus-rog-strix-rtx-4080-super-oc-d6x-16gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-asus-rog-strix-rtx-4090-gaming-oc-d6x-24gb-white.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-asus-rtx-4060-ti-oc-8gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-asus-rtx-5080-oc-d7-16gb-noctua.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-asus-sff-ready-prime-geforce-rtx-4070-ti-super-oc-edition-16gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-asus-tuf-gaming-geforce-rtx-4070-super-o12g-oc.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-asus-tuf-gaming-geforce-rtx-4070-ti-super-oc-edition.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-asus-tuf-gaming-geforce-rtx-4080-super-oc-edition-16gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-asus-tuf-gaming-geforce-rtx-5070-12gb-gddr7-oc-edition.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-asus-tuf-gaming-geforce-rtx-5080-16gb-gddr7-oc-edition.json": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 14,
+      "files": [
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-asus-tuf-gaming-geforce-rtx-5080-oc-edition-16gb-gddr7.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-asus-tuf-gaming-radeon-rx-7900-xtx-o24g-oc.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-asus-tuf-gaming-rtx-4070-super-o12g-oc-d6x-12gb.json",
+          "language": "json",
+          "sizeLines": 83,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-asus-tuf-gaming-rtx-4090-o24g-oc-d6x-24gb.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-asus-tuf-gaming-rx-7900-xtx-o24g-oc-d6-24gb.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-colorful-geforce-rtx-5060-gaming-duo-d7-8gb.json",
+          "language": "json",
+          "sizeLines": 83,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-colorful-geforce-rtx-5070-gaming-d7-12gb.json",
+          "language": "json",
+          "sizeLines": 83,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-colorful-igame-rtx-5080-vulcan-oc-d7-16gb.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-galax-geforce-rtx-4080-super-3x-d6x-16gb.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-galax-geforce-rtx-4080-super-3x-oc-d6x-16gb.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-galax-rtx-4070-ti-super-ex-gamer-black-oc-d6x-16gb.json",
+          "language": "json",
+          "sizeLines": 83,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-galax-rtx-4080-super-3x-d6x-16gb.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-galax-rtx-5070-black-oc-d7-12gb.json",
+          "language": "json",
+          "sizeLines": 83,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-galax-rtx-5070-ti-hof-gaming-black-d7-16gb.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-galax-rtx-5080-black-oc-d7-16gb.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-galax-rtx-5080-hof-gaming-black-d7-16gb.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-gaming-rtx-5070-solid-oc-d7-12gb.json",
+          "language": "json",
+          "sizeLines": 83,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-4060-8gb-gddr6.json",
+          "language": "json",
+          "sizeLines": 83,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-4060-ti-aero-oc-16g.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-4060-ti-aero-oc-16gb.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        }
+      ],
+      "batchImportData": {
+        "pc-parts-ai/nbData/gpu/gpu-asus-tuf-gaming-geforce-rtx-5080-oc-edition-16gb-gddr7.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-asus-tuf-gaming-radeon-rx-7900-xtx-o24g-oc.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-asus-tuf-gaming-rtx-4070-super-o12g-oc-d6x-12gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-asus-tuf-gaming-rtx-4090-o24g-oc-d6x-24gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-asus-tuf-gaming-rx-7900-xtx-o24g-oc-d6-24gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-colorful-geforce-rtx-5060-gaming-duo-d7-8gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-colorful-geforce-rtx-5070-gaming-d7-12gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-colorful-igame-rtx-5080-vulcan-oc-d7-16gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-galax-geforce-rtx-4080-super-3x-d6x-16gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-galax-geforce-rtx-4080-super-3x-oc-d6x-16gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-galax-rtx-4070-ti-super-ex-gamer-black-oc-d6x-16gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-galax-rtx-4080-super-3x-d6x-16gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-galax-rtx-5070-black-oc-d7-12gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-galax-rtx-5070-ti-hof-gaming-black-d7-16gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-galax-rtx-5080-black-oc-d7-16gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-galax-rtx-5080-hof-gaming-black-d7-16gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-gaming-rtx-5070-solid-oc-d7-12gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-4060-8gb-gddr6.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-4060-ti-aero-oc-16g.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-4060-ti-aero-oc-16gb.json": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 15,
+      "files": [
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-4060-ti-aero-oc-8g.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-4060-ti-aero-oc-8gb.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-4060-ti-asus-dual-oc.json",
+          "language": "json",
+          "sizeLines": 83,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-4060-ti-gaming-x-slim-16g.json",
+          "language": "json",
+          "sizeLines": 83,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-4060-ti-rog-strix-advanced-edition.json",
+          "language": "json",
+          "sizeLines": 83,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-4060-ti-rush-d6-8gb.json",
+          "language": "json",
+          "sizeLines": 83,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-4060-ti-xlr8-gaming-verto-rgb-triple-fan-oc-8gb.json",
+          "language": "json",
+          "sizeLines": 83,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-4070-super-aero-oc.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-4070-super-gaming-oc-d6x-12gb.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-4070-super-gaming-x-slim.json",
+          "language": "json",
+          "sizeLines": 83,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-4070-super-msi-gaming-x-slim.json",
+          "language": "json",
+          "sizeLines": 83,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-4070-super-rog-strix-oc-edition.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-4070-super-twin-edge.json",
+          "language": "json",
+          "sizeLines": 89,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-4070-super.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-4070-ti-super-aero-oc.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-4070-ti-super-ex-gamer-white-oc-v2-16gb.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-4070-ti-super-gaming-x-slim-d6x-16gb-tri-frozr-3.json",
+          "language": "json",
+          "sizeLines": 83,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-4070-ti-super-gaming-x-slim-white-d6x-16gb-tri-frozr-3.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-4070-ti-super-gaming-x-slim.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-4070-ti-super-rog-strix-oc-edition.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        }
+      ],
+      "batchImportData": {
+        "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-4060-ti-aero-oc-8g.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-4060-ti-aero-oc-8gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-4060-ti-asus-dual-oc.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-4060-ti-gaming-x-slim-16g.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-4060-ti-rog-strix-advanced-edition.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-4060-ti-rush-d6-8gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-4060-ti-xlr8-gaming-verto-rgb-triple-fan-oc-8gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-4070-super-aero-oc.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-4070-super-gaming-oc-d6x-12gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-4070-super-gaming-x-slim.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-4070-super-msi-gaming-x-slim.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-4070-super-rog-strix-oc-edition.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-4070-super-twin-edge.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-4070-super.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-4070-ti-super-aero-oc.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-4070-ti-super-ex-gamer-white-oc-v2-16gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-4070-ti-super-gaming-x-slim-d6x-16gb-tri-frozr-3.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-4070-ti-super-gaming-x-slim-white-d6x-16gb-tri-frozr-3.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-4070-ti-super-gaming-x-slim.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-4070-ti-super-rog-strix-oc-edition.json": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 16,
+      "files": [
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-4070-ti-super-trinity-black-edition.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-4070-ti-super-zotac-gaming-trinity-black-edition.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-4070-ti-super-zotac-gaming-trinity-oc-white-edition.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-4070-ti-super-zotac-trinity-oc-white-edition.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-4070-ti-super.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-4080-super-3x-d6x-16gb.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-4080-super-aero-oc.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-4080-super-blower-d6x-16gb.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-4080-super-gaming-x-slim-d6x-16gb.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-4080-super-gaming-x-slim.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-4080-super-rog-strix-oc-edition.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-4080-super-suprim-x.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-4080-super-ventus-3x-oc.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-4080-super.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-4090-aero-oc.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-4090-asus-rog-strix-white-oc-edition.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-4090-founders-edition.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-4090-gaming-x-slim-24g.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-4090-gaming-x-slim.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-4090-gaming-x-trio.json",
+          "language": "json",
+          "sizeLines": 91,
+          "fileCategory": "config"
+        }
+      ],
+      "batchImportData": {
+        "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-4070-ti-super-trinity-black-edition.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-4070-ti-super-zotac-gaming-trinity-black-edition.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-4070-ti-super-zotac-gaming-trinity-oc-white-edition.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-4070-ti-super-zotac-trinity-oc-white-edition.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-4070-ti-super.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-4080-super-3x-d6x-16gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-4080-super-aero-oc.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-4080-super-blower-d6x-16gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-4080-super-gaming-x-slim-d6x-16gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-4080-super-gaming-x-slim.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-4080-super-rog-strix-oc-edition.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-4080-super-suprim-x.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-4080-super-ventus-3x-oc.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-4080-super.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-4090-aero-oc.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-4090-asus-rog-strix-white-oc-edition.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-4090-founders-edition.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-4090-gaming-x-slim-24g.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-4090-gaming-x-slim.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-4090-gaming-x-trio.json": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 17,
+      "files": [
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-4090-rog-strix-oc-edition.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-4090-rog-strix.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-4090-suprim-liquid.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-4090-x-24g.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-4090.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-5070-gaming-d7-12gb.json",
+          "language": "json",
+          "sizeLines": 83,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-5070-gaming-oc-d7-12gb.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-5070-solid-oc-d7-12gb.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-5070-ti-gaming-trio-oc-d7-16gb-tri-frozr-4.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-5070-ti.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-5070-ventus-3x-oc.json",
+          "language": "json",
+          "sizeLines": 90,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-5080-gaming-trio-oc-d7-16gb-tri-frozr-4.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-5080-gaming-trio-oc-d7-16gb-trifrozr-4.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-5080-master-ice-d7-16gb.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-5080.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-5090-master-d7-32gb.json",
+          "language": "json",
+          "sizeLines": 91,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-5090.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-gigabyte-aorus-geforce-rtx-4080-super-master-16g.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-gigabyte-aorus-geforce-rtx-4090-master-24g.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-gigabyte-aorus-geforce-rtx-5080-master-d7-16gb.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        }
+      ],
+      "batchImportData": {
+        "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-4090-rog-strix-oc-edition.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-4090-rog-strix.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-4090-suprim-liquid.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-4090-x-24g.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-4090.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-5070-gaming-d7-12gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-5070-gaming-oc-d7-12gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-5070-solid-oc-d7-12gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-5070-ti-gaming-trio-oc-d7-16gb-tri-frozr-4.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-5070-ti.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-5070-ventus-3x-oc.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-5080-gaming-trio-oc-d7-16gb-tri-frozr-4.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-5080-gaming-trio-oc-d7-16gb-trifrozr-4.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-5080-master-ice-d7-16gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-5080.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-5090-master-d7-32gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-geforce-rtx-5090.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-gigabyte-aorus-geforce-rtx-4080-super-master-16g.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-gigabyte-aorus-geforce-rtx-4090-master-24g.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-gigabyte-aorus-geforce-rtx-5080-master-d7-16gb.json": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 18,
+      "files": [
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-gigabyte-aorus-geforce-rtx-5090-master-d7-32gb.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-gigabyte-aorus-geforce-rtx-5090-master-ice-d7-32gb.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-gigabyte-aorus-rtx-4080-super-master-d6x-16gb.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-gigabyte-aorus-rtx-5080-master-d7-16gb.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-gigabyte-aorus-rtx-5080-master-ice-d7-16gb.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-gigabyte-aorus-rtx-5080-xtreme-d7-16gb.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-gigabyte-aorus-rtx-5090-master-d7-32gb.json",
+          "language": "json",
+          "sizeLines": 91,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-gigabyte-geforce-rtx-4060-ti-aero-oc-16g.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-gigabyte-geforce-rtx-4060-ti-windforce-oc-16g.json",
+          "language": "json",
+          "sizeLines": 83,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-gigabyte-geforce-rtx-4060-ti-windforce-oc-8gb.json",
+          "language": "json",
+          "sizeLines": 83,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-gigabyte-geforce-rtx-4070-super-gaming-oc-d6x-12gb.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-gigabyte-geforce-rtx-4070-ti-super-gaming-oc-16g.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-gigabyte-geforce-rtx-4070-ti-super-gaming-oc.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-gigabyte-geforce-rtx-4070-windforce-oc-d6x-12gb.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-gigabyte-geforce-rtx-4080-super-gaming-oc-16g.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-gigabyte-geforce-rtx-4080-super-gaming-oc-16gb.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-gigabyte-geforce-rtx-4090-aorus-master-24g.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-gigabyte-geforce-rtx-5070-ti-gaming-oc-d7-16gb.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-gigabyte-radeon-rx-9070-xt-gaming-oc-d6-16gb.json",
+          "language": "json",
+          "sizeLines": 83,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-gigabyte-rtx-4060-ti-windforce-oc-d6-8gb.json",
+          "language": "json",
+          "sizeLines": 83,
+          "fileCategory": "config"
+        }
+      ],
+      "batchImportData": {
+        "pc-parts-ai/nbData/gpu/gpu-gigabyte-aorus-geforce-rtx-5090-master-d7-32gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-gigabyte-aorus-geforce-rtx-5090-master-ice-d7-32gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-gigabyte-aorus-rtx-4080-super-master-d6x-16gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-gigabyte-aorus-rtx-5080-master-d7-16gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-gigabyte-aorus-rtx-5080-master-ice-d7-16gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-gigabyte-aorus-rtx-5080-xtreme-d7-16gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-gigabyte-aorus-rtx-5090-master-d7-32gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-gigabyte-geforce-rtx-4060-ti-aero-oc-16g.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-gigabyte-geforce-rtx-4060-ti-windforce-oc-16g.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-gigabyte-geforce-rtx-4060-ti-windforce-oc-8gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-gigabyte-geforce-rtx-4070-super-gaming-oc-d6x-12gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-gigabyte-geforce-rtx-4070-ti-super-gaming-oc-16g.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-gigabyte-geforce-rtx-4070-ti-super-gaming-oc.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-gigabyte-geforce-rtx-4070-windforce-oc-d6x-12gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-gigabyte-geforce-rtx-4080-super-gaming-oc-16g.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-gigabyte-geforce-rtx-4080-super-gaming-oc-16gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-gigabyte-geforce-rtx-4090-aorus-master-24g.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-gigabyte-geforce-rtx-5070-ti-gaming-oc-d7-16gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-gigabyte-radeon-rx-9070-xt-gaming-oc-d6-16gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-gigabyte-rtx-4060-ti-windforce-oc-d6-8gb.json": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 19,
+      "files": [
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-gigabyte-rtx-4070-super-gaming-oc-d6x-12gb.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-gigabyte-rtx-4070-ti-super-aero-oc-d6x-16gb.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-gigabyte-rtx-4070-ti-super-gaming-oc-d6x-16gb.json",
+          "language": "json",
+          "sizeLines": 90,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-gigabyte-rtx-4080-super-gaming-oc-d6x-16gb.json",
+          "language": "json",
+          "sizeLines": 90,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-gigabyte-rtx-4090-gaming-oc-d6x-24gb.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-gigabyte-rtx-5070-gaming-oc-d7-12gb.json",
+          "language": "json",
+          "sizeLines": 83,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-gigabyte-rtx-5080-aero-oc-sff-d7-16gb.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-gigabyte-rtx-5080-gaming-oc-d7-16gb.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-gigabyte-rtx-5080-master-ice-d7-16gb.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-gigabyte-rtx-5080-windforce-oc-sff-d7-16gb.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-gigabyte-rtx-5090-gaming-oc-d7-32gb.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-manli-geforce-rtx-5080-16gb.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-msi-geforce-rtx-4060-ti-ventus-2x-16g-oc.json",
+          "language": "json",
+          "sizeLines": 83,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-msi-geforce-rtx-4070-super-gaming-x-slim-12gb.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-msi-geforce-rtx-4070-super-gaming-x-slim-d6x-12gb.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-msi-geforce-rtx-4070-ti-super-gaming-x-slim-16g.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-msi-geforce-rtx-4070-ti-super-gaming-x-slim-16gb.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-msi-geforce-rtx-4080-super-gaming-x-slim-16g.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-msi-geforce-rtx-4080-super-gaming-x-slim-16gb.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-msi-geforce-rtx-4080-super-gaming-x-slim-d6x-16gb-tri-frozr-3.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        }
+      ],
+      "batchImportData": {
+        "pc-parts-ai/nbData/gpu/gpu-gigabyte-rtx-4070-super-gaming-oc-d6x-12gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-gigabyte-rtx-4070-ti-super-aero-oc-d6x-16gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-gigabyte-rtx-4070-ti-super-gaming-oc-d6x-16gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-gigabyte-rtx-4080-super-gaming-oc-d6x-16gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-gigabyte-rtx-4090-gaming-oc-d6x-24gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-gigabyte-rtx-5070-gaming-oc-d7-12gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-gigabyte-rtx-5080-aero-oc-sff-d7-16gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-gigabyte-rtx-5080-gaming-oc-d7-16gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-gigabyte-rtx-5080-master-ice-d7-16gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-gigabyte-rtx-5080-windforce-oc-sff-d7-16gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-gigabyte-rtx-5090-gaming-oc-d7-32gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-manli-geforce-rtx-5080-16gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-msi-geforce-rtx-4060-ti-ventus-2x-16g-oc.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-msi-geforce-rtx-4070-super-gaming-x-slim-12gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-msi-geforce-rtx-4070-super-gaming-x-slim-d6x-12gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-msi-geforce-rtx-4070-ti-super-gaming-x-slim-16g.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-msi-geforce-rtx-4070-ti-super-gaming-x-slim-16gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-msi-geforce-rtx-4080-super-gaming-x-slim-16g.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-msi-geforce-rtx-4080-super-gaming-x-slim-16gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-msi-geforce-rtx-4080-super-gaming-x-slim-d6x-16gb-tri-frozr-3.json": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 20,
+      "files": [
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-msi-geforce-rtx-4080-super-ventus-3x-oc-d6x-16gb.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-msi-geforce-rtx-4090-gaming-x-trio-d6x-24gb-tri-frozr-3.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-msi-geforce-rtx-4090-suprim-liquid-24g.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-msi-geforce-rtx-4090-x-24g.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-msi-geforce-rtx-5080-gaming-trio-oc-d7-16gb.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-msi-geforce-rtx-5080-gaming-x-trio-oc-d7-16gb.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-msi-geforce-rtx-5090-suprim-soc-d7-32gb-hyper-frost.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-msi-geforce-rtx-5090-suprim-soc-d7-32gb.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-msi-rtx-4060-ti-2x-oc-d6-8gb.json",
+          "language": "json",
+          "sizeLines": 83,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-msi-rtx-4060-ti-x-16g.json",
+          "language": "json",
+          "sizeLines": 83,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-msi-rtx-4070-super-x-d6x-12gb-3.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-msi-rtx-4070-ti-super-x-d6x-16gb-3.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-msi-rtx-4080-super-gaming-x-slim-d6x-16gb-3.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-msi-rtx-4080-super-x-d6x-16gb-3.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-msi-rtx-4080.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-msi-rtx-4090-x-d6x-24gb-3.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-msi-rtx-5070-ti-oc-d7-16gb-4.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-msi-rtx-5080-3x-oc-d7-16gb.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-msi-rtx-5080-oc-d7-16gb-4.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-msi-rtx-5080-soc-d7-16gb.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        }
+      ],
+      "batchImportData": {
+        "pc-parts-ai/nbData/gpu/gpu-msi-geforce-rtx-4080-super-ventus-3x-oc-d6x-16gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-msi-geforce-rtx-4090-gaming-x-trio-d6x-24gb-tri-frozr-3.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-msi-geforce-rtx-4090-suprim-liquid-24g.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-msi-geforce-rtx-4090-x-24g.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-msi-geforce-rtx-5080-gaming-trio-oc-d7-16gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-msi-geforce-rtx-5080-gaming-x-trio-oc-d7-16gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-msi-geforce-rtx-5090-suprim-soc-d7-32gb-hyper-frost.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-msi-geforce-rtx-5090-suprim-soc-d7-32gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-msi-rtx-4060-ti-2x-oc-d6-8gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-msi-rtx-4060-ti-x-16g.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-msi-rtx-4070-super-x-d6x-12gb-3.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-msi-rtx-4070-ti-super-x-d6x-16gb-3.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-msi-rtx-4080-super-gaming-x-slim-d6x-16gb-3.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-msi-rtx-4080-super-x-d6x-16gb-3.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-msi-rtx-4080.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-msi-rtx-4090-x-d6x-24gb-3.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-msi-rtx-5070-ti-oc-d7-16gb-4.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-msi-rtx-5080-3x-oc-d7-16gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-msi-rtx-5080-oc-d7-16gb-4.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-msi-rtx-5080-soc-d7-16gb.json": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 21,
+      "files": [
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-msi-rtx-5090-soc-d7-32gb.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-nvidia-geforce-rtx-4060-ti-8gb.json",
+          "language": "json",
+          "sizeLines": 83,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-nvidia-geforce-rtx-4060-ti.json",
+          "language": "json",
+          "sizeLines": 83,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-nvidia-geforce-rtx-4090.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-palit-rtx-5080-gamerock-d7-16gb.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-proart-geforce-rtx-4070-ti-super-o16g-oc.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-proart-geforce-rtx-4080-super-oc-edition.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-radeon-rx-7800-xt-pulse-d6-16gb.json",
+          "language": "json",
+          "sizeLines": 83,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-radeon-rx-7900-xt-phantom-20gb-oc.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-radeon-rx-7900-xtx-merc-310-black-24gb.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-rog-strix-geforce-rtx-4070-ti-super-oc-edition.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-rog-strix-geforce-rtx-4090-gaming-oc.json",
+          "language": "json",
+          "sizeLines": 91,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-rtx-4060-ti-16gb.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-rtx-4060.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-rtx-4070-super.json",
+          "language": "json",
+          "sizeLines": 92,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-rtx-4070-ti-super.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-rtx-4070.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-rtx-4080-super-3x-d6x-16gb.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-rtx-4080-super-black-storm-oc-d6x-16gb.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-rtx-4080-super.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        }
+      ],
+      "batchImportData": {
+        "pc-parts-ai/nbData/gpu/gpu-msi-rtx-5090-soc-d7-32gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-nvidia-geforce-rtx-4060-ti-8gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-nvidia-geforce-rtx-4060-ti.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-nvidia-geforce-rtx-4090.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-palit-rtx-5080-gamerock-d7-16gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-proart-geforce-rtx-4070-ti-super-o16g-oc.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-proart-geforce-rtx-4080-super-oc-edition.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-radeon-rx-7800-xt-pulse-d6-16gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-radeon-rx-7900-xt-phantom-20gb-oc.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-radeon-rx-7900-xtx-merc-310-black-24gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-rog-strix-geforce-rtx-4070-ti-super-oc-edition.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-rog-strix-geforce-rtx-4090-gaming-oc.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-rtx-4060-ti-16gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-rtx-4060.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-rtx-4070-super.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-rtx-4070-ti-super.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-rtx-4070.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-rtx-4080-super-3x-d6x-16gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-rtx-4080-super-black-storm-oc-d6x-16gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-rtx-4080-super.json": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 22,
+      "files": [
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-rtx-5060-ti-8gb.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-rtx-5060-ti.json",
+          "language": "json",
+          "sizeLines": 92,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-rtx-5060.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-rtx-5070-ti.json",
+          "language": "json",
+          "sizeLines": 92,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-rtx-5070.json",
+          "language": "json",
+          "sizeLines": 92,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-rtx-5080.json",
+          "language": "json",
+          "sizeLines": 86,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-rtx-5090.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-rx-7600-xt.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-rx-7600.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-rx-7700-xt-nitro-oc-d6-12gb.json",
+          "language": "json",
+          "sizeLines": 83,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-rx-7700-xt.json",
+          "language": "json",
+          "sizeLines": 91,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-rx-7800-xt-pulse-d6-16gb.json",
+          "language": "json",
+          "sizeLines": 83,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-rx-7800-xt.json",
+          "language": "json",
+          "sizeLines": 92,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-rx-7900-gre.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-rx-7900-xtx.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-rx-9060-xt.json",
+          "language": "json",
+          "sizeLines": 91,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-rx-9070-xt.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-rx-9070.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-sapphire-radeon-rx-7800-xt-pulse-d6-16gb.json",
+          "language": "json",
+          "sizeLines": 83,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-sapphire-rx-7800-xt-pulse-d6-16gb.json",
+          "language": "json",
+          "sizeLines": 83,
+          "fileCategory": "config"
+        }
+      ],
+      "batchImportData": {
+        "pc-parts-ai/nbData/gpu/gpu-rtx-5060-ti-8gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-rtx-5060-ti.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-rtx-5060.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-rtx-5070-ti.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-rtx-5070.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-rtx-5080.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-rtx-5090.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-rx-7600-xt.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-rx-7600.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-rx-7700-xt-nitro-oc-d6-12gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-rx-7700-xt.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-rx-7800-xt-pulse-d6-16gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-rx-7800-xt.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-rx-7900-gre.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-rx-7900-xtx.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-rx-9060-xt.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-rx-9070-xt.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-rx-9070.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-sapphire-radeon-rx-7800-xt-pulse-d6-16gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-sapphire-rx-7800-xt-pulse-d6-16gb.json": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 23,
+      "files": [
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-sparkle-intel-arc-a770-titan-oc-edition-16gb.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-sparkle-intel-arc-b580-titan-oc-12gb.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-tuf-gaming-geforce-rtx-4070-ti-super-btf-white-oc.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-tuf-gaming-rx-7900-xtx-o24g-oc-d6-24gb.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-xfx-radeon-rx-7900-xtx-merc-310-black-d6-24gb.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-xfx-rx-7900-xtx-merc-310-black-d6-24gb.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-zotac-gaming-geforce-rtx-4070-super-trinity-black-edition.json",
+          "language": "json",
+          "sizeLines": 83,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-zotac-gaming-geforce-rtx-4070-super-trinity-oc.json",
+          "language": "json",
+          "sizeLines": 83,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-zotac-gaming-geforce-rtx-4070-ti-super-amp-holo-16gb.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-zotac-gaming-geforce-rtx-4070-ti-super-trinity-black-edition-dlss-3-16gb.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-zotac-gaming-geforce-rtx-4070-ti-super-trinity-black-edition.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-zotac-gaming-geforce-rtx-4070-ti-super-trinity-oc-white-edition.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-zotac-gaming-geforce-rtx-4080-super-amp-extreme-airo.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-zotac-gaming-geforce-rtx-4080-super-trinity-oc-white-edition-dlss-3-16gb.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-zotac-gaming-geforce-rtx-4080-super-trinity-oc-white-edition.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-zotac-gaming-geforce-rtx-4090-amp-extreme-airo-24gb-gddr6x.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-zotac-gaming-geforce-rtx-5070-solid-oc-d7-12gb.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-zotac-gaming-geforce-rtx-5090-amp-extreme-infinity-d7-32gb.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-zotac-gaming-rtx-4070-ti-super-trinity-oc-white-edition-d6x-16gb.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-zotac-gaming-rtx-4080-super-amp-extreme-airo-d6x-16gb.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        }
+      ],
+      "batchImportData": {
+        "pc-parts-ai/nbData/gpu/gpu-sparkle-intel-arc-a770-titan-oc-edition-16gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-sparkle-intel-arc-b580-titan-oc-12gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-tuf-gaming-geforce-rtx-4070-ti-super-btf-white-oc.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-tuf-gaming-rx-7900-xtx-o24g-oc-d6-24gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-xfx-radeon-rx-7900-xtx-merc-310-black-d6-24gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-xfx-rx-7900-xtx-merc-310-black-d6-24gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-zotac-gaming-geforce-rtx-4070-super-trinity-black-edition.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-zotac-gaming-geforce-rtx-4070-super-trinity-oc.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-zotac-gaming-geforce-rtx-4070-ti-super-amp-holo-16gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-zotac-gaming-geforce-rtx-4070-ti-super-trinity-black-edition-dlss-3-16gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-zotac-gaming-geforce-rtx-4070-ti-super-trinity-black-edition.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-zotac-gaming-geforce-rtx-4070-ti-super-trinity-oc-white-edition.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-zotac-gaming-geforce-rtx-4080-super-amp-extreme-airo.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-zotac-gaming-geforce-rtx-4080-super-trinity-oc-white-edition-dlss-3-16gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-zotac-gaming-geforce-rtx-4080-super-trinity-oc-white-edition.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-zotac-gaming-geforce-rtx-4090-amp-extreme-airo-24gb-gddr6x.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-zotac-gaming-geforce-rtx-5070-solid-oc-d7-12gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-zotac-gaming-geforce-rtx-5090-amp-extreme-infinity-d7-32gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-zotac-gaming-rtx-4070-ti-super-trinity-oc-white-edition-d6x-16gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-zotac-gaming-rtx-4080-super-amp-extreme-airo-d6x-16gb.json": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 24,
+      "files": [
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-zotac-gaming-rtx-5070-solid-oc-d7-12gb.json",
+          "language": "json",
+          "sizeLines": 83,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-zotac-gaming-rtx-5070-ti-solid-oc-d7-16gb.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-zotac-gaming-rtx-5080-amp-extreme-infinity-d7-16gb.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-zotac-gaming-rtx-5080-solid-oc-d7-16gb.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-zotac-gaming-rtx-5080-solid-oc-white-d7-16gb.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/gpu-zotac-gaming-rtx-5090-solid-oc-d7-32gb.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/gpu/index.json",
+          "language": "json",
+          "sizeLines": 502,
+          "fileCategory": "config"
+        }
+      ],
+      "batchImportData": {
+        "pc-parts-ai/nbData/gpu/gpu-zotac-gaming-rtx-5070-solid-oc-d7-12gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-zotac-gaming-rtx-5070-ti-solid-oc-d7-16gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-zotac-gaming-rtx-5080-amp-extreme-infinity-d7-16gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-zotac-gaming-rtx-5080-solid-oc-d7-16gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-zotac-gaming-rtx-5080-solid-oc-white-d7-16gb.json": [],
+        "pc-parts-ai/nbData/gpu/gpu-zotac-gaming-rtx-5090-solid-oc-d7-32gb.json": [],
+        "pc-parts-ai/nbData/gpu/index.json": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 25,
+      "files": [
+        {
+          "path": "pc-parts-ai/nbData/mainboard/index.json",
+          "language": "json",
+          "sizeLines": 82,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/mainboard/mainboard-asrock-b650-steel-legend-wifi.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/mainboard/mainboard-asrock-x870e-taichi.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/mainboard/mainboard-asrock-z890-taichi.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/mainboard/mainboard-asus-prime-z890-p-csm.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/mainboard/mainboard-asus-rog-crosshair-x870e-dark-hero.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/mainboard/mainboard-asus-rog-strix-b860-f-gaming-wifi.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/mainboard/mainboard-asus-rog-strix-x870-f-gaming-wifi.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/mainboard/mainboard-asus-rog-strix-x870e-e-gaming-wifi-7-neo.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/mainboard/mainboard-asus-rog-strix-z890-e-gaming-wifi.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/mainboard/mainboard-gigabyte-b860m-aorus-elite-wifi6e.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/mainboard/mainboard-gigabyte-b860m-gaming-x.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/mainboard/mainboard-gigabyte-z890-aorus-elite-wifi-7.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/mainboard/mainboard-gigabyte-z890m-aorus-elite-wifi7.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/mainboard/mainboard-mag-b860m-mortar-wifi.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/mainboard/mainboard-mag-x870-tomahawk-wifi.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/mainboard/mainboard-mpg-x870e-carbon-wifi.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/mainboard/mainboard-msi-mag-b650m-wifi.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/mainboard/mainboard-msi-mag-b860m-wifi.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/mainboard/mainboard-msi-mag-z890-tomahawk-wifi.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        }
+      ],
+      "batchImportData": {
+        "pc-parts-ai/nbData/mainboard/index.json": [],
+        "pc-parts-ai/nbData/mainboard/mainboard-asrock-b650-steel-legend-wifi.json": [],
+        "pc-parts-ai/nbData/mainboard/mainboard-asrock-x870e-taichi.json": [],
+        "pc-parts-ai/nbData/mainboard/mainboard-asrock-z890-taichi.json": [],
+        "pc-parts-ai/nbData/mainboard/mainboard-asus-prime-z890-p-csm.json": [],
+        "pc-parts-ai/nbData/mainboard/mainboard-asus-rog-crosshair-x870e-dark-hero.json": [],
+        "pc-parts-ai/nbData/mainboard/mainboard-asus-rog-strix-b860-f-gaming-wifi.json": [],
+        "pc-parts-ai/nbData/mainboard/mainboard-asus-rog-strix-x870-f-gaming-wifi.json": [],
+        "pc-parts-ai/nbData/mainboard/mainboard-asus-rog-strix-x870e-e-gaming-wifi-7-neo.json": [],
+        "pc-parts-ai/nbData/mainboard/mainboard-asus-rog-strix-z890-e-gaming-wifi.json": [],
+        "pc-parts-ai/nbData/mainboard/mainboard-gigabyte-b860m-aorus-elite-wifi6e.json": [],
+        "pc-parts-ai/nbData/mainboard/mainboard-gigabyte-b860m-gaming-x.json": [],
+        "pc-parts-ai/nbData/mainboard/mainboard-gigabyte-z890-aorus-elite-wifi-7.json": [],
+        "pc-parts-ai/nbData/mainboard/mainboard-gigabyte-z890m-aorus-elite-wifi7.json": [],
+        "pc-parts-ai/nbData/mainboard/mainboard-mag-b860m-mortar-wifi.json": [],
+        "pc-parts-ai/nbData/mainboard/mainboard-mag-x870-tomahawk-wifi.json": [],
+        "pc-parts-ai/nbData/mainboard/mainboard-mpg-x870e-carbon-wifi.json": [],
+        "pc-parts-ai/nbData/mainboard/mainboard-msi-mag-b650m-wifi.json": [],
+        "pc-parts-ai/nbData/mainboard/mainboard-msi-mag-b860m-wifi.json": [],
+        "pc-parts-ai/nbData/mainboard/mainboard-msi-mag-z890-tomahawk-wifi.json": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 26,
+      "files": [
+        {
+          "path": "pc-parts-ai/nbData/mainboard/mainboard-msi-mpg-z890-carbon-wifi.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/mainboard/mainboard-msi-pro-z890-p-wifi.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/mainboard/mainboard-rog-strix-x870e-e-gaming-wifi.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/mainboard/mb-am5-a620.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/mainboard/mb-am5-b650.json",
+          "language": "json",
+          "sizeLines": 92,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/mainboard/mb-am5-b650e.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/mainboard/mb-am5-b850.json",
+          "language": "json",
+          "sizeLines": 92,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/mainboard/mb-am5-x670e.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/mainboard/mb-am5-x870.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/mainboard/mb-am5-x870e.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/mainboard/mb-lga1700-b760.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/mainboard/mb-lga1700-z790.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/mainboard/mb-lga1851-b860.json",
+          "language": "json",
+          "sizeLines": 91,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/mainboard/mb-lga1851-b860m.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/mainboard/mb-lga1851-h810.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/mainboard/mb-lga1851-z890-ai.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/mainboard/mb-lga1851-z890.json",
+          "language": "json",
+          "sizeLines": 92,
+          "fileCategory": "config"
+        }
+      ],
+      "batchImportData": {
+        "pc-parts-ai/nbData/mainboard/mainboard-msi-mpg-z890-carbon-wifi.json": [],
+        "pc-parts-ai/nbData/mainboard/mainboard-msi-pro-z890-p-wifi.json": [],
+        "pc-parts-ai/nbData/mainboard/mainboard-rog-strix-x870e-e-gaming-wifi.json": [],
+        "pc-parts-ai/nbData/mainboard/mb-am5-a620.json": [],
+        "pc-parts-ai/nbData/mainboard/mb-am5-b650.json": [],
+        "pc-parts-ai/nbData/mainboard/mb-am5-b650e.json": [],
+        "pc-parts-ai/nbData/mainboard/mb-am5-b850.json": [],
+        "pc-parts-ai/nbData/mainboard/mb-am5-x670e.json": [],
+        "pc-parts-ai/nbData/mainboard/mb-am5-x870.json": [],
+        "pc-parts-ai/nbData/mainboard/mb-am5-x870e.json": [],
+        "pc-parts-ai/nbData/mainboard/mb-lga1700-b760.json": [],
+        "pc-parts-ai/nbData/mainboard/mb-lga1700-z790.json": [],
+        "pc-parts-ai/nbData/mainboard/mb-lga1851-b860.json": [],
+        "pc-parts-ai/nbData/mainboard/mb-lga1851-b860m.json": [],
+        "pc-parts-ai/nbData/mainboard/mb-lga1851-h810.json": [],
+        "pc-parts-ai/nbData/mainboard/mb-lga1851-z890-ai.json": [],
+        "pc-parts-ai/nbData/mainboard/mb-lga1851-z890.json": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 27,
+      "files": [
+        {
+          "path": "pc-parts-ai/nbData/psu/index.json",
+          "language": "json",
+          "sizeLines": 68,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/psu/psu-1000w-gold.json",
+          "language": "json",
+          "sizeLines": 92,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/psu/psu-1000w-platinum.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/psu/psu-1200w-gold-atx31.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/psu/psu-1200w-platinum.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/psu/psu-1300w-gold-atx31.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/psu/psu-1600w-titanium.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/psu/psu-550w-bronze.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/psu/psu-600w-gold.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/psu/psu-650w-gold.json",
+          "language": "json",
+          "sizeLines": 92,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/psu/psu-700w-gold.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/psu/psu-750w-gold.json",
+          "language": "json",
+          "sizeLines": 92,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/psu/psu-750w-platinum.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/psu/psu-850w-gold.json",
+          "language": "json",
+          "sizeLines": 92,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/psu/psu-850w-platinum.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/psu/psu-cooler-master-v-sfx-gold-850-atx-3.1.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/psu/psu-cooler-master-v750-sfx-gold.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/psu/psu-corsair-rm1000e-atx-3.0.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/psu/psu-corsair-rm1000x-shift-atx-3.1.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/psu/psu-corsair-rm650e-atx-3.1.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        }
+      ],
+      "batchImportData": {
+        "pc-parts-ai/nbData/psu/index.json": [],
+        "pc-parts-ai/nbData/psu/psu-1000w-gold.json": [],
+        "pc-parts-ai/nbData/psu/psu-1000w-platinum.json": [],
+        "pc-parts-ai/nbData/psu/psu-1200w-gold-atx31.json": [],
+        "pc-parts-ai/nbData/psu/psu-1200w-platinum.json": [],
+        "pc-parts-ai/nbData/psu/psu-1300w-gold-atx31.json": [],
+        "pc-parts-ai/nbData/psu/psu-1600w-titanium.json": [],
+        "pc-parts-ai/nbData/psu/psu-550w-bronze.json": [],
+        "pc-parts-ai/nbData/psu/psu-600w-gold.json": [],
+        "pc-parts-ai/nbData/psu/psu-650w-gold.json": [],
+        "pc-parts-ai/nbData/psu/psu-700w-gold.json": [],
+        "pc-parts-ai/nbData/psu/psu-750w-gold.json": [],
+        "pc-parts-ai/nbData/psu/psu-750w-platinum.json": [],
+        "pc-parts-ai/nbData/psu/psu-850w-gold.json": [],
+        "pc-parts-ai/nbData/psu/psu-850w-platinum.json": [],
+        "pc-parts-ai/nbData/psu/psu-cooler-master-v-sfx-gold-850-atx-3.1.json": [],
+        "pc-parts-ai/nbData/psu/psu-cooler-master-v750-sfx-gold.json": [],
+        "pc-parts-ai/nbData/psu/psu-corsair-rm1000e-atx-3.0.json": [],
+        "pc-parts-ai/nbData/psu/psu-corsair-rm1000x-shift-atx-3.1.json": [],
+        "pc-parts-ai/nbData/psu/psu-corsair-rm650e-atx-3.1.json": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 28,
+      "files": [
+        {
+          "path": "pc-parts-ai/nbData/psu/psu-corsair-rm750e-atx-3.0.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/psu/psu-corsair-rm850e-atx-3.0.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/psu/psu-corsair-rm850x-shift-atx-3.1.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/psu/psu-corsair-sf1000-80plus-platinum-atx-3.1.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/psu/psu-corsair-sf750-80plus-platinum-atx-3.1.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/psu/psu-corsair-sf850-80plus-platinum-atx-3.1.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/psu/psu-msi-mag-a850gl-pcie5.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/psu/psu-seasonic-new-focus-gx-850-gold-full-modular-atx-3.0.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/psu/psu-seasonic-vertex-gx-1000-gold-full-modular-atx-3.0.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/psu/psu-silverstone-sx750-platinum.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        }
+      ],
+      "batchImportData": {
+        "pc-parts-ai/nbData/psu/psu-corsair-rm750e-atx-3.0.json": [],
+        "pc-parts-ai/nbData/psu/psu-corsair-rm850e-atx-3.0.json": [],
+        "pc-parts-ai/nbData/psu/psu-corsair-rm850x-shift-atx-3.1.json": [],
+        "pc-parts-ai/nbData/psu/psu-corsair-sf1000-80plus-platinum-atx-3.1.json": [],
+        "pc-parts-ai/nbData/psu/psu-corsair-sf750-80plus-platinum-atx-3.1.json": [],
+        "pc-parts-ai/nbData/psu/psu-corsair-sf850-80plus-platinum-atx-3.1.json": [],
+        "pc-parts-ai/nbData/psu/psu-msi-mag-a850gl-pcie5.json": [],
+        "pc-parts-ai/nbData/psu/psu-seasonic-new-focus-gx-850-gold-full-modular-atx-3.0.json": [],
+        "pc-parts-ai/nbData/psu/psu-seasonic-vertex-gx-1000-gold-full-modular-atx-3.0.json": [],
+        "pc-parts-ai/nbData/psu/psu-silverstone-sx750-platinum.json": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 29,
+      "files": [
+        {
+          "path": "pc-parts-ai/nbData/ram/index.json",
+          "language": "json",
+          "sizeLines": 62,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/ram/ram-corsair-dominator-titanium-rgb-ddr5-7200mhz-cl34-32gb-16gx2.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/ram/ram-corsair-vengeance-rgb-ddr5-6000mhz-cl30-32gb-16gx2.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/ram/ram-corsair-vengeance-rgb-ddr5-6000mhz-cl30-64gb-32gx2.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/ram/ram-ddr5-128-5600.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/ram/ram-ddr5-128-6000.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/ram/ram-ddr5-32-5600.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/ram/ram-ddr5-32-6000.json",
+          "language": "json",
+          "sizeLines": 91,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/ram/ram-ddr5-32-6400.json",
+          "language": "json",
+          "sizeLines": 90,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/ram/ram-ddr5-48-6000.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/ram/ram-ddr5-64-5600.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/ram/ram-ddr5-64-6000.json",
+          "language": "json",
+          "sizeLines": 90,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/ram/ram-ddr5-64-6400.json",
+          "language": "json",
+          "sizeLines": 90,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/ram/ram-ddr5-64-7200.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/ram/ram-ddr5-6400-cl52-cudimm-32gb.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/ram/ram-ddr5-96-6400.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/ram/ram-g.skill-trident-z5-neo-rgb-ddr5-6000mhz-cl30-32gb-16gx2.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/ram/ram-g.skill-trident-z5-neo-rgb-ddr5-6000mhz-cl30-64gb-32gx2.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/ram/ram-g.skill-trident-z5-neo-rgb-ddr5-6000mhz-cl30-96gb.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/ram/ram-g.skill-trident-z5-rgb-ddr5-6400mhz-cl32-64gb-32gx2-white.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        }
+      ],
+      "batchImportData": {
+        "pc-parts-ai/nbData/ram/index.json": [],
+        "pc-parts-ai/nbData/ram/ram-corsair-dominator-titanium-rgb-ddr5-7200mhz-cl34-32gb-16gx2.json": [],
+        "pc-parts-ai/nbData/ram/ram-corsair-vengeance-rgb-ddr5-6000mhz-cl30-32gb-16gx2.json": [],
+        "pc-parts-ai/nbData/ram/ram-corsair-vengeance-rgb-ddr5-6000mhz-cl30-64gb-32gx2.json": [],
+        "pc-parts-ai/nbData/ram/ram-ddr5-128-5600.json": [],
+        "pc-parts-ai/nbData/ram/ram-ddr5-128-6000.json": [],
+        "pc-parts-ai/nbData/ram/ram-ddr5-32-5600.json": [],
+        "pc-parts-ai/nbData/ram/ram-ddr5-32-6000.json": [],
+        "pc-parts-ai/nbData/ram/ram-ddr5-32-6400.json": [],
+        "pc-parts-ai/nbData/ram/ram-ddr5-48-6000.json": [],
+        "pc-parts-ai/nbData/ram/ram-ddr5-64-5600.json": [],
+        "pc-parts-ai/nbData/ram/ram-ddr5-64-6000.json": [],
+        "pc-parts-ai/nbData/ram/ram-ddr5-64-6400.json": [],
+        "pc-parts-ai/nbData/ram/ram-ddr5-64-7200.json": [],
+        "pc-parts-ai/nbData/ram/ram-ddr5-6400-cl52-cudimm-32gb.json": [],
+        "pc-parts-ai/nbData/ram/ram-ddr5-96-6400.json": [],
+        "pc-parts-ai/nbData/ram/ram-g.skill-trident-z5-neo-rgb-ddr5-6000mhz-cl30-32gb-16gx2.json": [],
+        "pc-parts-ai/nbData/ram/ram-g.skill-trident-z5-neo-rgb-ddr5-6000mhz-cl30-64gb-32gx2.json": [],
+        "pc-parts-ai/nbData/ram/ram-g.skill-trident-z5-neo-rgb-ddr5-6000mhz-cl30-96gb.json": [],
+        "pc-parts-ai/nbData/ram/ram-g.skill-trident-z5-rgb-ddr5-6400mhz-cl32-64gb-32gx2-white.json": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 30,
+      "files": [
+        {
+          "path": "pc-parts-ai/nbData/ram/ram-g.skill-trident-z5-rgb-ddr5-6400mhz-cl32-64gb-32gx2.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/ram/ram-g.skill-trident-z5-rgb-ddr5-6800mhz-cl34-32gb-16gx2.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/ram/ram-g.skill-trident-z5-rgb-ddr5-7200mhz-cl34-32gb-16gx2.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/ram/ram-g.skill-trident-z5-rgb-ddr5-8000mhz-cl40-48gb-24gx2.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/ram/ram-g.skill-trident-z5-rgb-ddr5-8000mhz-cl40-64gb.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/ram/ram-samsung-ddr5-16gb-5600mhz.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/ram/ram-samsung-ddr5-6400-cl52-cudimm-32gb.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        }
+      ],
+      "batchImportData": {
+        "pc-parts-ai/nbData/ram/ram-g.skill-trident-z5-rgb-ddr5-6400mhz-cl32-64gb-32gx2.json": [],
+        "pc-parts-ai/nbData/ram/ram-g.skill-trident-z5-rgb-ddr5-6800mhz-cl34-32gb-16gx2.json": [],
+        "pc-parts-ai/nbData/ram/ram-g.skill-trident-z5-rgb-ddr5-7200mhz-cl34-32gb-16gx2.json": [],
+        "pc-parts-ai/nbData/ram/ram-g.skill-trident-z5-rgb-ddr5-8000mhz-cl40-48gb-24gx2.json": [],
+        "pc-parts-ai/nbData/ram/ram-g.skill-trident-z5-rgb-ddr5-8000mhz-cl40-64gb.json": [],
+        "pc-parts-ai/nbData/ram/ram-samsung-ddr5-16gb-5600mhz.json": [],
+        "pc-parts-ai/nbData/ram/ram-samsung-ddr5-6400-cl52-cudimm-32gb.json": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 31,
+      "files": [
+        {
+          "path": "pc-parts-ai/nbData/ssd/index.json",
+          "language": "json",
+          "sizeLines": 68,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/ssd/ssd-crucial-p5-plus-2tb.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/ssd/ssd-crucial-t700-2tb.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/ssd/ssd-crucial-t705-1tb.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/ssd/ssd-crucial-t705-2tb-heatsink.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/ssd/ssd-crucial-t705-2tb.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/ssd/ssd-crucial-t705-4tb-heatsink.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/ssd/ssd-crucial-t705-4tb.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/ssd/ssd-crucial-x10-pro-2tb.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/ssd/ssd-nvme-1tb-gen4.json",
+          "language": "json",
+          "sizeLines": 90,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/ssd/ssd-nvme-2tb-gen4.json",
+          "language": "json",
+          "sizeLines": 91,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/ssd/ssd-samsung-9100-pro-2tb.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/ssd/ssd-samsung-990-evo-plus-1tb.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/ssd/ssd-samsung-990-evo-plus-2tb.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/ssd/ssd-samsung-990-pro-1tb.json",
+          "language": "json",
+          "sizeLines": 90,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/ssd/ssd-samsung-990-pro-2tb-heatsink.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/ssd/ssd-samsung-990-pro-2tb.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/ssd/ssd-samsung-990-pro-4tb-heatsink.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/ssd/ssd-samsung-990-pro-4tb.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/ssd/ssd-samsung-990-pro-8tb-heatsink.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        }
+      ],
+      "batchImportData": {
+        "pc-parts-ai/nbData/ssd/index.json": [],
+        "pc-parts-ai/nbData/ssd/ssd-crucial-p5-plus-2tb.json": [],
+        "pc-parts-ai/nbData/ssd/ssd-crucial-t700-2tb.json": [],
+        "pc-parts-ai/nbData/ssd/ssd-crucial-t705-1tb.json": [],
+        "pc-parts-ai/nbData/ssd/ssd-crucial-t705-2tb-heatsink.json": [],
+        "pc-parts-ai/nbData/ssd/ssd-crucial-t705-2tb.json": [],
+        "pc-parts-ai/nbData/ssd/ssd-crucial-t705-4tb-heatsink.json": [],
+        "pc-parts-ai/nbData/ssd/ssd-crucial-t705-4tb.json": [],
+        "pc-parts-ai/nbData/ssd/ssd-crucial-x10-pro-2tb.json": [],
+        "pc-parts-ai/nbData/ssd/ssd-nvme-1tb-gen4.json": [],
+        "pc-parts-ai/nbData/ssd/ssd-nvme-2tb-gen4.json": [],
+        "pc-parts-ai/nbData/ssd/ssd-samsung-9100-pro-2tb.json": [],
+        "pc-parts-ai/nbData/ssd/ssd-samsung-990-evo-plus-1tb.json": [],
+        "pc-parts-ai/nbData/ssd/ssd-samsung-990-evo-plus-2tb.json": [],
+        "pc-parts-ai/nbData/ssd/ssd-samsung-990-pro-1tb.json": [],
+        "pc-parts-ai/nbData/ssd/ssd-samsung-990-pro-2tb-heatsink.json": [],
+        "pc-parts-ai/nbData/ssd/ssd-samsung-990-pro-2tb.json": [],
+        "pc-parts-ai/nbData/ssd/ssd-samsung-990-pro-4tb-heatsink.json": [],
+        "pc-parts-ai/nbData/ssd/ssd-samsung-990-pro-4tb.json": [],
+        "pc-parts-ai/nbData/ssd/ssd-samsung-990-pro-8tb-heatsink.json": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 32,
+      "files": [
+        {
+          "path": "pc-parts-ai/nbData/ssd/ssd-samsung-990-pro-8tb.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/ssd/ssd-seagate-firecuda-540-2tb.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/ssd/ssd-sk-hynix-p41-2tb.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/ssd/ssd-sk-hynix-platinum-p41-1tb.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/ssd/ssd-sk-hynix-platinum-p41-4tb.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/ssd/ssd-sk-hynix-platinum-p41-500gb.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/ssd/ssd-solidigm-p44-pro-2tb.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/ssd/ssd-wd-sn850x-1tb.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/ssd/ssd-wd-sn850x-2tb.json",
+          "language": "json",
+          "sizeLines": 91,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/nbData/ssd/ssd-wd-sn850x-4tb.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        }
+      ],
+      "batchImportData": {
+        "pc-parts-ai/nbData/ssd/ssd-samsung-990-pro-8tb.json": [],
+        "pc-parts-ai/nbData/ssd/ssd-seagate-firecuda-540-2tb.json": [],
+        "pc-parts-ai/nbData/ssd/ssd-sk-hynix-p41-2tb.json": [],
+        "pc-parts-ai/nbData/ssd/ssd-sk-hynix-platinum-p41-1tb.json": [],
+        "pc-parts-ai/nbData/ssd/ssd-sk-hynix-platinum-p41-4tb.json": [],
+        "pc-parts-ai/nbData/ssd/ssd-sk-hynix-platinum-p41-500gb.json": [],
+        "pc-parts-ai/nbData/ssd/ssd-solidigm-p44-pro-2tb.json": [],
+        "pc-parts-ai/nbData/ssd/ssd-wd-sn850x-1tb.json": [],
+        "pc-parts-ai/nbData/ssd/ssd-wd-sn850x-2tb.json": [],
+        "pc-parts-ai/nbData/ssd/ssd-wd-sn850x-4tb.json": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 33,
+      "files": [
+        {
+          "path": "ai-issue-briefing/index.html",
+          "language": "html",
+          "sizeLines": 3954,
+          "fileCategory": "markup"
+        },
+        {
+          "path": "ai-issue-briefing/rebuttal-dj-lines.json",
+          "language": "json",
+          "sizeLines": 82,
+          "fileCategory": "config"
+        },
+        {
+          "path": "chat-board/index.html",
+          "language": "html",
+          "sizeLines": 854,
+          "fileCategory": "markup"
+        },
+        {
+          "path": "common-site.js",
+          "language": "javascript",
+          "sizeLines": 117,
+          "fileCategory": "code"
+        },
+        {
+          "path": "community/bot/.wdm/drivers.json",
+          "language": "json",
+          "sizeLines": 5,
+          "fileCategory": "config"
+        },
+        {
+          "path": "community/bot/.wdm/drivers/chromedriver/win64/148.0.7778.178/chromedriver-win64/chromedriver.exe",
+          "language": "exe",
+          "sizeLines": 43538,
+          "fileCategory": "code"
+        },
+        {
+          "path": "community/bot/.wdm/drivers/chromedriver/win64/148.0.7778.178/chromedriver-win64/LICENSE.chromedriver",
+          "language": "chromedriver",
+          "sizeLines": 27,
+          "fileCategory": "code"
+        },
+        {
+          "path": "community/bot/.wdm/drivers/chromedriver/win64/148.0.7778.178/chromedriver-win64/THIRD_PARTY_NOTICES.chromedriver",
+          "language": "chromedriver",
+          "sizeLines": 16041,
+          "fileCategory": "code"
+        },
+        {
+          "path": "community/bot/news_bot.py",
+          "language": "python",
+          "sizeLines": 419,
+          "fileCategory": "code"
+        },
+        {
+          "path": "community/bot/run_community_bot.bat",
+          "language": "batch",
+          "sizeLines": 97,
+          "fileCategory": "script"
+        },
+        {
+          "path": "community/index.html",
+          "language": "html",
+          "sizeLines": 750,
+          "fileCategory": "markup"
+        },
+        {
+          "path": "community/news_data.json",
+          "language": "json",
+          "sizeLines": 149,
+          "fileCategory": "config"
+        },
+        {
+          "path": "Demo/codepen-sort-demo.html",
+          "language": "html",
+          "sizeLines": 232,
+          "fileCategory": "markup"
+        },
+        {
+          "path": "domain-check.js",
+          "language": "javascript",
+          "sizeLines": 79,
+          "fileCategory": "code"
+        },
+        {
+          "path": "eclipse-centauri-dp.js",
+          "language": "javascript",
+          "sizeLines": 113,
+          "fileCategory": "code"
+        },
+        {
+          "path": "ErrPage/400/index.html",
+          "language": "html",
+          "sizeLines": 18,
+          "fileCategory": "markup"
+        },
+        {
+          "path": "ErrPage/401/index.html",
+          "language": "html",
+          "sizeLines": 18,
+          "fileCategory": "markup"
+        },
+        {
+          "path": "ErrPage/403/index.html",
+          "language": "html",
+          "sizeLines": 18,
+          "fileCategory": "markup"
+        },
+        {
+          "path": "ErrPage/404/index.html",
+          "language": "html",
+          "sizeLines": 18,
+          "fileCategory": "markup"
+        },
+        {
+          "path": "ErrPage/500/index.html",
+          "language": "html",
+          "sizeLines": 18,
+          "fileCategory": "markup"
+        },
+        {
+          "path": "ErrPage/502/index.html",
+          "language": "html",
+          "sizeLines": 18,
+          "fileCategory": "markup"
+        },
+        {
+          "path": "ErrPage/503/index.html",
+          "language": "html",
+          "sizeLines": 20,
+          "fileCategory": "markup"
+        },
+        {
+          "path": "index.html.backup",
+          "language": "backup",
+          "sizeLines": 413,
+          "fileCategory": "code"
+        },
+        {
+          "path": "js/autonomous_driving_simulation_v1.js",
+          "language": "javascript",
+          "sizeLines": 2798,
+          "fileCategory": "code"
+        },
+        {
+          "path": "js/bitCalculation.js",
+          "language": "javascript",
+          "sizeLines": 618,
+          "fileCategory": "code"
+        }
+      ],
+      "batchImportData": {
+        "ai-issue-briefing/index.html": [],
+        "ai-issue-briefing/rebuttal-dj-lines.json": [],
+        "chat-board/index.html": [],
+        "common-site.js": [],
+        "community/bot/.wdm/drivers.json": [],
+        "community/bot/.wdm/drivers/chromedriver/win64/148.0.7778.178/chromedriver-win64/chromedriver.exe": [],
+        "community/bot/.wdm/drivers/chromedriver/win64/148.0.7778.178/chromedriver-win64/LICENSE.chromedriver": [],
+        "community/bot/.wdm/drivers/chromedriver/win64/148.0.7778.178/chromedriver-win64/THIRD_PARTY_NOTICES.chromedriver": [],
+        "community/bot/news_bot.py": [],
+        "community/bot/run_community_bot.bat": [],
+        "community/index.html": [],
+        "community/news_data.json": [],
+        "Demo/codepen-sort-demo.html": [],
+        "domain-check.js": [],
+        "eclipse-centauri-dp.js": [],
+        "ErrPage/400/index.html": [],
+        "ErrPage/401/index.html": [],
+        "ErrPage/403/index.html": [],
+        "ErrPage/404/index.html": [],
+        "ErrPage/500/index.html": [],
+        "ErrPage/502/index.html": [],
+        "ErrPage/503/index.html": [],
+        "index.html.backup": [],
+        "js/autonomous_driving_simulation_v1.js": [],
+        "js/bitCalculation.js": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 34,
+      "files": [
+        {
+          "path": "js/bitCalculation.v.0.1.js",
+          "language": "javascript",
+          "sizeLines": 562,
+          "fileCategory": "code"
+        },
+        {
+          "path": "js/final_demo.js",
+          "language": "javascript",
+          "sizeLines": 72,
+          "fileCategory": "code"
+        },
+        {
+          "path": "js/getGenreNameFunction.js",
+          "language": "javascript",
+          "sizeLines": 101,
+          "fileCategory": "code"
+        },
+        {
+          "path": "js/NB_Weighted_System_Negative_Positive_v1_1.js",
+          "language": "javascript",
+          "sizeLines": 541,
+          "fileCategory": "code"
+        },
+        {
+          "path": "js/test_main_interactive.js",
+          "language": "javascript",
+          "sizeLines": 58,
+          "fileCategory": "code"
+        },
+        {
+          "path": "js/test_node_program.js",
+          "language": "javascript",
+          "sizeLines": 80,
+          "fileCategory": "code"
+        },
+        {
+          "path": "js/test_precision.js",
+          "language": "javascript",
+          "sizeLines": 47,
+          "fileCategory": "code"
+        },
+        {
+          "path": "js/test_with_korean.js",
+          "language": "javascript",
+          "sizeLines": 66,
+          "fileCategory": "code"
+        },
+        {
+          "path": "js/verify_config.js",
+          "language": "javascript",
+          "sizeLines": 63,
+          "fileCategory": "code"
+        },
+        {
+          "path": "jungnang-volunteer/jungnang_youtube_bot.js",
+          "language": "javascript",
+          "sizeLines": 291,
+          "fileCategory": "code"
+        },
+        {
+          "path": "parseMermaidMmd.js",
+          "language": "javascript",
+          "sizeLines": 365,
+          "fileCategory": "code"
+        },
+        {
+          "path": "pc-parts-ai/nbData/manifest.json",
+          "language": "json",
+          "sizeLines": 491,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pc-parts-ai/pc_parts_ai_loop.js",
+          "language": "javascript",
+          "sizeLines": 142,
+          "fileCategory": "code"
+        },
+        {
+          "path": "pc-parts-ai/pc_parts_chrome_collector.js",
+          "language": "javascript",
+          "sizeLines": 1670,
+          "fileCategory": "code"
+        },
+        {
+          "path": "pc-parts-ai/pc_parts_research_bot.js",
+          "language": "javascript",
+          "sizeLines": 1810,
+          "fileCategory": "code"
+        },
+        {
+          "path": "robot/bot/.wdm/drivers.json",
+          "language": "json",
+          "sizeLines": 5,
+          "fileCategory": "config"
+        },
+        {
+          "path": "robot/bot/.wdm/drivers/chromedriver/win64/148.0.7778.178/chromedriver-win64/chromedriver.exe",
+          "language": "exe",
+          "sizeLines": 43538,
+          "fileCategory": "code"
+        },
+        {
+          "path": "robot/bot/.wdm/drivers/chromedriver/win64/148.0.7778.178/chromedriver-win64/LICENSE.chromedriver",
+          "language": "chromedriver",
+          "sizeLines": 27,
+          "fileCategory": "code"
+        },
+        {
+          "path": "robot/bot/.wdm/drivers/chromedriver/win64/148.0.7778.178/chromedriver-win64/THIRD_PARTY_NOTICES.chromedriver",
+          "language": "chromedriver",
+          "sizeLines": 16041,
+          "fileCategory": "code"
+        },
+        {
+          "path": "robot/bot/news_bot.py",
+          "language": "python",
+          "sizeLines": 422,
+          "fileCategory": "code"
+        },
+        {
+          "path": "robot/bot/run_robot_bot.bat",
+          "language": "batch",
+          "sizeLines": 97,
+          "fileCategory": "script"
+        },
+        {
+          "path": "robot/index.html",
+          "language": "html",
+          "sizeLines": 750,
+          "fileCategory": "markup"
+        },
+        {
+          "path": "robot/news_data.json",
+          "language": "json",
+          "sizeLines": 136,
+          "fileCategory": "config"
+        },
+        {
+          "path": "silverkmk/index.html",
+          "language": "html",
+          "sizeLines": 734,
+          "fileCategory": "markup"
+        },
+        {
+          "path": "Study/?곷텇 ?쒖옉/index.html",
+          "language": "html",
+          "sizeLines": 123,
+          "fileCategory": "markup"
+        }
+      ],
+      "batchImportData": {
+        "js/bitCalculation.v.0.1.js": [],
+        "js/final_demo.js": [],
+        "js/getGenreNameFunction.js": [],
+        "js/NB_Weighted_System_Negative_Positive_v1_1.js": [],
+        "js/test_main_interactive.js": [],
+        "js/test_node_program.js": [],
+        "js/test_precision.js": [],
+        "js/test_with_korean.js": [],
+        "js/verify_config.js": [],
+        "jungnang-volunteer/jungnang_youtube_bot.js": [],
+        "parseMermaidMmd.js": [],
+        "pc-parts-ai/nbData/manifest.json": [],
+        "pc-parts-ai/pc_parts_ai_loop.js": [],
+        "pc-parts-ai/pc_parts_chrome_collector.js": [],
+        "pc-parts-ai/pc_parts_research_bot.js": [],
+        "robot/bot/.wdm/drivers.json": [],
+        "robot/bot/.wdm/drivers/chromedriver/win64/148.0.7778.178/chromedriver-win64/chromedriver.exe": [],
+        "robot/bot/.wdm/drivers/chromedriver/win64/148.0.7778.178/chromedriver-win64/LICENSE.chromedriver": [],
+        "robot/bot/.wdm/drivers/chromedriver/win64/148.0.7778.178/chromedriver-win64/THIRD_PARTY_NOTICES.chromedriver": [],
+        "robot/bot/news_bot.py": [],
+        "robot/bot/run_robot_bot.bat": [],
+        "robot/index.html": [],
+        "robot/news_data.json": [],
+        "silverkmk/index.html": [],
+        "Study/?곷텇 ?쒖옉/index.html": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 35,
+      "files": [
+        {
+          "path": "Study/?곷텇 ?쒖옉/script.js",
+          "language": "javascript",
+          "sizeLines": 726,
+          "fileCategory": "code"
+        },
+        {
+          "path": "Study/?곷텇 ?쒖옉/style.css",
+          "language": "css",
+          "sizeLines": 462,
+          "fileCategory": "markup"
+        },
+        {
+          "path": "Study/誘몃텇/untitled/LICENSE.txt",
+          "language": "txt",
+          "sizeLines": 21,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "Study/誘몃텇/untitled/README.md",
+          "language": "markdown",
+          "sizeLines": 6,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "Study/誘몃텇/untitled/src/.codepen/pen.config.json",
+          "language": "json",
+          "sizeLines": 16,
+          "fileCategory": "config"
+        },
+        {
+          "path": "Study/誘몃텇/untitled/src/index.html",
+          "language": "html",
+          "sizeLines": 86,
+          "fileCategory": "markup"
+        },
+        {
+          "path": "Study/誘몃텇/untitled/src/script.js",
+          "language": "javascript",
+          "sizeLines": 264,
+          "fileCategory": "code"
+        },
+        {
+          "path": "Study/誘몃텇/untitled/src/style.css",
+          "language": "css",
+          "sizeLines": 289,
+          "fileCategory": "markup"
+        },
+        {
+          "path": "updateRealtimeFinanceData.js",
+          "language": "javascript",
+          "sizeLines": 14,
+          "fileCategory": "code"
+        },
+        {
+          "path": "website_diagram.mmd",
+          "language": "mmd",
+          "sizeLines": 100,
+          "fileCategory": "code"
+        },
+        {
+          "path": "website_diagram.table",
+          "language": "table",
+          "sizeLines": 8,
+          "fileCategory": "code"
+        },
+        {
+          "path": "world-monitor-ai.js",
+          "language": "javascript",
+          "sizeLines": 463,
+          "fileCategory": "code"
+        },
+        {
+          "path": "www.xn--9l4b4xi9r.com_202506016D73B/Convert/www.xn--9l4b4xi9r.com_202506016D73B.jks",
+          "language": "jks",
+          "sizeLines": 38,
+          "fileCategory": "code"
+        },
+        {
+          "path": "www.xn--9l4b4xi9r.com_202506016D73B/Convert/www.xn--9l4b4xi9r.com_202506016D73B.p7b",
+          "language": "p7b",
+          "sizeLines": 102,
+          "fileCategory": "code"
+        },
+        {
+          "path": "www.xn--9l4b4xi9r.com_202506016D73B/Convert/www.xn--9l4b4xi9r.com_202506016D73B.pfx",
+          "language": "pfx",
+          "sizeLines": 39,
+          "fileCategory": "code"
+        },
+        {
+          "path": "www.xn--9l4b4xi9r.com_202506016D73B/RootChain/AAACertificateServices.Root.crt.pem",
+          "language": "pem",
+          "sizeLines": 25,
+          "fileCategory": "code"
+        },
+        {
+          "path": "www.xn--9l4b4xi9r.com_202506016D73B/RootChain/chain-bundle.pem",
+          "language": "pem",
+          "sizeLines": 67,
+          "fileCategory": "code"
+        },
+        {
+          "path": "www.xn--9l4b4xi9r.com_202506016D73B/RootChain/root-chain-bundle.p7b",
+          "language": "p7b",
+          "sizeLines": 88,
+          "fileCategory": "code"
+        },
+        {
+          "path": "www.xn--9l4b4xi9r.com_202506016D73B/RootChain/root-chain-bundle.pem",
+          "language": "pem",
+          "sizeLines": 92,
+          "fileCategory": "code"
+        },
+        {
+          "path": "www.xn--9l4b4xi9r.com_202506016D73B/RootChain/SectigoRSADVCA.Chain2.crt.pem",
+          "language": "pem",
+          "sizeLines": 35,
+          "fileCategory": "code"
+        },
+        {
+          "path": "www.xn--9l4b4xi9r.com_202506016D73B/RootChain/USERTrustRSACA.Chain1.crt.pem",
+          "language": "pem",
+          "sizeLines": 32,
+          "fileCategory": "code"
+        },
+        {
+          "path": "www.xn--9l4b4xi9r.com_202506016D73B/www.xn--9l4b4xi9r.com_202506016D73B.all.crt.pem",
+          "language": "pem",
+          "sizeLines": 128,
+          "fileCategory": "code"
+        },
+        {
+          "path": "www.xn--9l4b4xi9r.com_202506016D73B/www.xn--9l4b4xi9r.com_202506016D73B.crt.pem",
+          "language": "pem",
+          "sizeLines": 36,
+          "fileCategory": "code"
+        },
+        {
+          "path": "www.xn--9l4b4xi9r.com_202506016D73B/www.xn--9l4b4xi9r.com_202506016D73B.key.pem",
+          "language": "pem",
+          "sizeLines": 27,
+          "fileCategory": "code"
+        }
+      ],
+      "batchImportData": {
+        "Study/?곷텇 ?쒖옉/script.js": [],
+        "Study/?곷텇 ?쒖옉/style.css": [],
+        "Study/誘몃텇/untitled/LICENSE.txt": [],
+        "Study/誘몃텇/untitled/README.md": [],
+        "Study/誘몃텇/untitled/src/.codepen/pen.config.json": [],
+        "Study/誘몃텇/untitled/src/index.html": [],
+        "Study/誘몃텇/untitled/src/script.js": [],
+        "Study/誘몃텇/untitled/src/style.css": [],
+        "updateRealtimeFinanceData.js": [],
+        "website_diagram.mmd": [],
+        "website_diagram.table": [],
+        "world-monitor-ai.js": [],
+        "www.xn--9l4b4xi9r.com_202506016D73B/Convert/www.xn--9l4b4xi9r.com_202506016D73B.jks": [],
+        "www.xn--9l4b4xi9r.com_202506016D73B/Convert/www.xn--9l4b4xi9r.com_202506016D73B.p7b": [],
+        "www.xn--9l4b4xi9r.com_202506016D73B/Convert/www.xn--9l4b4xi9r.com_202506016D73B.pfx": [],
+        "www.xn--9l4b4xi9r.com_202506016D73B/RootChain/AAACertificateServices.Root.crt.pem": [],
+        "www.xn--9l4b4xi9r.com_202506016D73B/RootChain/chain-bundle.pem": [],
+        "www.xn--9l4b4xi9r.com_202506016D73B/RootChain/root-chain-bundle.p7b": [],
+        "www.xn--9l4b4xi9r.com_202506016D73B/RootChain/root-chain-bundle.pem": [],
+        "www.xn--9l4b4xi9r.com_202506016D73B/RootChain/SectigoRSADVCA.Chain2.crt.pem": [],
+        "www.xn--9l4b4xi9r.com_202506016D73B/RootChain/USERTrustRSACA.Chain1.crt.pem": [],
+        "www.xn--9l4b4xi9r.com_202506016D73B/www.xn--9l4b4xi9r.com_202506016D73B.all.crt.pem": [],
+        "www.xn--9l4b4xi9r.com_202506016D73B/www.xn--9l4b4xi9r.com_202506016D73B.crt.pem": [],
+        "www.xn--9l4b4xi9r.com_202506016D73B/www.xn--9l4b4xi9r.com_202506016D73B.key.pem": []
+      },
+      "neighborMap": {}
+    }
+  ]
+}

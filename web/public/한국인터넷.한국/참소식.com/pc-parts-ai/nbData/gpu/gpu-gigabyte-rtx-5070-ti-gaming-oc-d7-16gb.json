@@ -1,0 +1,85 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-05-27T23:36:11.263+09:00",
+  "category": "GPU",
+  "id": "gpu-gigabyte-rtx-5070-ti-gaming-oc-d7-16gb",
+  "name": "GIGABYTE 지포스 RTX 5070 Ti GAMING OC D7 16GB",
+  "maker": "GIGABYTE",
+  "platform": "PCIe 5.0",
+  "estimatedPriceKrw": 1515720,
+  "priceBand": "60만원 이상",
+  "speedLabel": "2588MHz",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "GPU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 85,
+  "valueIndex": 5.6,
+  "aiUseScore": 85,
+  "powerWatts": null,
+  "tags": [
+    "gaming",
+    "ai"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "GPU",
+    "partId": "gpu-gigabyte-rtx-5070-ti-gaming-oc-d7-16gb",
+    "partName": "GIGABYTE 지포스 RTX 5070 Ti GAMING OC D7 16GB",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "GPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 850,
+      "value": 100,
+      "aiFit": 850,
+      "priceEfficiency": 70,
+      "powerEfficiency": 850
+    },
+    "nbVector": [
+      100,
+      850,
+      100,
+      850,
+      70,
+      850
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 310.753,
+    "nbMin": 354.988,
+    "weightedScore": 368,
+    "nbBand": "100~499",
+    "summary": "GPU GIGABYTE 지포스 RTX 5070 Ti GAMING OC D7 16GB 부품을 속도 중심 N/B 데이터베이스 점수 368점으로 저장했습니다."
+  },
+  "nbWeightedScore": 368,
+  "nbMax": 310.753,
+  "nbMin": 354.988,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=GIGABYTE%20%EC%A7%80%ED%8F%AC%EC%8A%A4%20RTX%205070%20Ti%20GAMING%20OC%20D7%2016GB%20%EC%B5%9C%EC%A0%80%EA%B0%80%20%EB%8B%A4%EB%82%98%EC%99%80",
+  "notes": "GDDR7, 3-fan, 16-pin (12V2x6) power connector",
+  "textRepair": null
+}

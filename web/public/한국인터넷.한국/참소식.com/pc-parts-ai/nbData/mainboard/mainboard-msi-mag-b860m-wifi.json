@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-26T17:10:26.567+09:00",
+  "updatedAt": "2026-05-27T23:36:11.263+09:00",
   "category": "Mainboard",
   "id": "mainboard-msi-mag-b860m-wifi",
   "name": "MSI MAG B860M 박격포 WIFI",
@@ -21,7 +21,7 @@
   "performance": 60,
   "valueIndex": 22.3,
   "aiUseScore": 39,
-  "powerWatts": 0,
+  "powerWatts": null,
   "tags": [
     "m-atx",
     "wifi"
@@ -81,9 +81,5 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=B860%20%EB%A9%94%EC%9D%B8%EB%B3%B4%EB%93%9C%20%EC%B5%9C%EC%A0%80%EA%B0%80",
   "notes": "B860 chipset motherboard for Intel LGA1851",
-  "textRepair": null,
-  "sourceType": "collector",
-  "sourceQuery": "",
-  "collectedPricesKrw": [],
-  "targetMatched": null
+  "textRepair": null
 }

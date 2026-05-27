@@ -1,0 +1,86 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-05-27T23:36:11.263+09:00",
+  "category": "Mainboard",
+  "id": "mainboard-msi-mag-z890-tomahawk-wifi",
+  "name": "MSI MAG Z890 TOMAHAWK WIFI",
+  "maker": "MSI",
+  "platform": "LGA1851",
+  "estimatedPriceKrw": 430480,
+  "priceBand": "30~60만원",
+  "speedLabel": "DDR5 9200MHz",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "Mainboard",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 75,
+  "valueIndex": 17.4,
+  "aiUseScore": 49,
+  "powerWatts": null,
+  "tags": [
+    "Z890",
+    "ATX",
+    "WiFi"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "Mainboard",
+    "partId": "mainboard-msi-mag-z890-tomahawk-wifi",
+    "partName": "MSI MAG Z890 TOMAHAWK WIFI",
+    "speed": {
+      "score": 100,
+      "weight": 0.32,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "Mainboard",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 750,
+      "value": 232,
+      "aiFit": 490,
+      "priceEfficiency": 230,
+      "powerEfficiency": 750
+    },
+    "nbVector": [
+      100,
+      750,
+      232,
+      490,
+      230,
+      750
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 293.764,
+    "nbMin": 389.038,
+    "weightedScore": 327,
+    "nbBand": "100~499",
+    "summary": "Mainboard MSI MAG Z890 TOMAHAWK WIFI 부품을 속도 중심 N/B 데이터베이스 점수 327점으로 저장했습니다."
+  },
+  "nbWeightedScore": 327,
+  "nbMax": 293.764,
+  "nbMin": 389.038,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=MSI%20Z890%20%ED%86%A0%EB%A7%88%ED%98%B8%ED%81%AC%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "Intel Z890 chipset, Socket 1851, PCIe 5.0, supports up to 256GB RAM",
+  "textRepair": null
+}

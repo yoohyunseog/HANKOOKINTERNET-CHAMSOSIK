@@ -1,0 +1,85 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-05-27T23:36:11.263+09:00",
+  "category": "Mainboard",
+  "id": "mainboard-pro-b650m-a",
+  "name": "PRO B650M-A",
+  "maker": "MSI",
+  "platform": "AM5",
+  "estimatedPriceKrw": 154000,
+  "priceBand": "15~30만원",
+  "speedLabel": "B650",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "Mainboard",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 50,
+  "valueIndex": 32.5,
+  "aiUseScore": 33,
+  "powerWatts": null,
+  "tags": [
+    "budget",
+    "m-atx"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "Mainboard",
+    "partId": "mainboard-pro-b650m-a",
+    "partName": "PRO B650M-A",
+    "speed": {
+      "score": 100,
+      "weight": 0.32,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "Mainboard",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 500,
+      "value": 433,
+      "aiFit": 330,
+      "priceEfficiency": 650,
+      "powerEfficiency": 500
+    },
+    "nbVector": [
+      100,
+      500,
+      433,
+      330,
+      650,
+      500
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 377.594,
+    "nbMin": 398.214,
+    "weightedScore": 308,
+    "nbBand": "100~499",
+    "summary": "Mainboard PRO B650M-A 부품을 속도 중심 N/B 데이터베이스 점수 308점으로 저장했습니다."
+  },
+  "nbWeightedScore": 308,
+  "nbMax": 377.594,
+  "nbMin": 398.214,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=B650%20%EB%A9%94%EC%9D%B8%EB%B3%B4%EB%93%9C%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "M-ATX form factor",
+  "textRepair": null
+}

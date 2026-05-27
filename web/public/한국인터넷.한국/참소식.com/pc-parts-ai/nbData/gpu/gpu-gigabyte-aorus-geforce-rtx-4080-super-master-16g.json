@@ -1,0 +1,86 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-05-27T23:36:11.263+09:00",
+  "category": "GPU",
+  "id": "gpu-gigabyte-aorus-geforce-rtx-4080-super-master-16g",
+  "name": "GIGABYTE AORUS GeForce RTX 4080 Super Master 16G",
+  "maker": "GIGABYTE",
+  "platform": "PCIe 4.0",
+  "estimatedPriceKrw": 2209680,
+  "priceBand": "60만원 이상",
+  "speedLabel": "GDDR6X",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "GPU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 92,
+  "valueIndex": 4.2,
+  "aiUseScore": 92,
+  "powerWatts": 320,
+  "tags": [
+    "gaming",
+    "ai",
+    "high-end"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "GPU",
+    "partId": "gpu-gigabyte-aorus-geforce-rtx-4080-super-master-16g",
+    "partName": "GIGABYTE AORUS GeForce RTX 4080 Super Master 16G",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "GPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 920,
+      "value": 100,
+      "aiFit": 920,
+      "priceEfficiency": 50,
+      "powerEfficiency": 100
+    },
+    "nbVector": [
+      100,
+      920,
+      100,
+      920,
+      50,
+      100
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 162.134,
+    "nbMin": 315.54,
+    "weightedScore": 342,
+    "nbBand": "100~499",
+    "summary": "GPU GIGABYTE AORUS GeForce RTX 4080 Super Master 16G 부품을 속도 중심 N/B 데이터베이스 점수 342점으로 저장했습니다."
+  },
+  "nbWeightedScore": 342,
+  "nbMax": 162.134,
+  "nbMin": 315.54,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Gigabyte%20%EC%A7%80%ED%8F%AC%EC%8A%A4%20RTX%204080%20SUPER%20AORUS%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "AORUS Master series with 3X WINDFORCE Fans",
+  "textRepair": null
+}

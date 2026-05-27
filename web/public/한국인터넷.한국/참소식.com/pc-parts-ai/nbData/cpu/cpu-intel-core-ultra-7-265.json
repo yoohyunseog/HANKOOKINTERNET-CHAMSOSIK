@@ -1,0 +1,85 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-05-27T23:36:11.263+09:00",
+  "category": "CPU",
+  "id": "cpu-intel-core-ultra-7-265",
+  "name": "Intel Core Ultra 7 265",
+  "maker": "Intel",
+  "platform": "LGA1851",
+  "estimatedPriceKrw": 620000,
+  "priceBand": "60만원 이상",
+  "speedLabel": "Arrow Lake",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "CPU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 85,
+  "valueIndex": 13.7,
+  "aiUseScore": 55,
+  "powerWatts": 125,
+  "tags": [
+    "productivity",
+    "gaming"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "CPU",
+    "partId": "cpu-intel-core-ultra-7-265",
+    "partName": "Intel Core Ultra 7 265",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "CPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 850,
+      "value": 183,
+      "aiFit": 550,
+      "priceEfficiency": 160,
+      "powerEfficiency": 227
+    },
+    "nbVector": [
+      100,
+      850,
+      183,
+      550,
+      160,
+      227
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 139.624,
+    "nbMin": 349.059,
+    "weightedScore": 319,
+    "nbBand": "100~499",
+    "summary": "CPU Intel Core Ultra 7 265 부품을 속도 중심 N/B 데이터베이스 점수 319점으로 저장했습니다."
+  },
+  "nbWeightedScore": 319,
+  "nbMax": 139.624,
+  "nbMin": 349.059,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Intel%20Core%20Ultra%207%20265%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "Non-K version of the Core Ultra 7 265. Price estimated based on typical market positioning relative to 265K.",
+  "textRepair": null
+}

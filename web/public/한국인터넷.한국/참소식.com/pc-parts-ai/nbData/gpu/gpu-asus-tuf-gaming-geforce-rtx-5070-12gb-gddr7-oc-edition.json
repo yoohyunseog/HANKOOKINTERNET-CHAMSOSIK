@@ -1,0 +1,85 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-05-27T23:36:11.263+09:00",
+  "category": "GPU",
+  "id": "gpu-asus-tuf-gaming-geforce-rtx-5070-12gb-gddr7-oc-edition",
+  "name": "ASUS TUF Gaming GeForce RTX 5070 12GB GDDR7 OC Edition",
+  "maker": "ASUS",
+  "platform": "PCIe 5.0",
+  "estimatedPriceKrw": 1387500,
+  "priceBand": "60만원 이상",
+  "speedLabel": "OC",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "GPU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 75,
+  "valueIndex": 5.4,
+  "aiUseScore": 49,
+  "powerWatts": 220,
+  "tags": [
+    "gaming",
+    "rtx50"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "GPU",
+    "partId": "gpu-asus-tuf-gaming-geforce-rtx-5070-12gb-gddr7-oc-edition",
+    "partName": "ASUS TUF Gaming GeForce RTX 5070 12GB GDDR7 OC Edition",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "GPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 750,
+      "value": 100,
+      "aiFit": 490,
+      "priceEfficiency": 70,
+      "powerEfficiency": 114
+    },
+    "nbVector": [
+      100,
+      750,
+      100,
+      490,
+      70,
+      114
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 115.003,
+    "nbMin": 319.507,
+    "weightedScore": 267,
+    "nbBand": "100~499",
+    "summary": "GPU ASUS TUF Gaming GeForce RTX 5070 12GB GDDR7 OC Edition 부품을 속도 중심 N/B 데이터베이스 점수 267점으로 저장했습니다."
+  },
+  "nbWeightedScore": 267,
+  "nbMax": 115.003,
+  "nbMin": 319.507,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=ASUS%20TUF%20Gaming%20GeForce%20RTX%205070%2012GB%20GDDR7%20OC%20Edition%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "GDDR7 memory, 3.125-slot design",
+  "textRepair": null
+}

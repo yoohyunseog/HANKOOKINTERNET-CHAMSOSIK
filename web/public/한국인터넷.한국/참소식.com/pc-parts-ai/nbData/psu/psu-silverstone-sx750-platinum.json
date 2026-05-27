@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-26T17:10:26.695+09:00",
+  "updatedAt": "2026-05-27T23:36:11.263+09:00",
   "category": "PSU",
   "id": "psu-silverstone-sx750-platinum",
   "name": "SilverStone SX750 Platinum",
@@ -81,9 +81,5 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=SilverStone%20SX750%20Platinum%20price",
   "notes": "SST-SX750-PT",
-  "textRepair": null,
-  "sourceType": "collector",
-  "sourceQuery": "",
-  "collectedPricesKrw": [],
-  "targetMatched": null
+  "textRepair": null
 }

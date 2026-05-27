@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-26T17:10:26.712+09:00",
+  "updatedAt": "2026-05-27T23:36:11.263+09:00",
   "category": "RAM",
   "id": "ram-ddr5-128-5600",
   "name": "DDR5 128GB 5600MHz",
@@ -82,9 +82,5 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=DDR5%20128GB%205600MHz%20price",
   "notes": "Auto-generated AI PC candidate added after the saved candidate list was exhausted.",
-  "textRepair": null,
-  "sourceType": "collector",
-  "sourceQuery": "",
-  "collectedPricesKrw": [],
-  "targetMatched": null
+  "textRepair": null
 }

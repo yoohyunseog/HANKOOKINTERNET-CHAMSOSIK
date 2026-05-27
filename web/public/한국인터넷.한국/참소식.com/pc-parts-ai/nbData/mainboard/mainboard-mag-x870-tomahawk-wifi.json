@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-26T17:10:26.556+09:00",
+  "updatedAt": "2026-05-27T23:36:11.263+09:00",
   "category": "Mainboard",
   "id": "mainboard-mag-x870-tomahawk-wifi",
   "name": "MAG X870 TOMAHAWK WIFI",
@@ -21,7 +21,7 @@
   "performance": 75,
   "valueIndex": 16.7,
   "aiUseScore": 49,
-  "powerWatts": 0,
+  "powerWatts": null,
   "tags": [
     "wifi",
     "gaming"
@@ -81,9 +81,5 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=MSI%20MAG%20X870%20TOMAHAWK%20WIFI%20price",
   "notes": "High-end AM5 motherboard for Ryzen 9000 series.",
-  "textRepair": null,
-  "sourceType": "collector",
-  "sourceQuery": "",
-  "collectedPricesKrw": [],
-  "targetMatched": null
+  "textRepair": null
 }

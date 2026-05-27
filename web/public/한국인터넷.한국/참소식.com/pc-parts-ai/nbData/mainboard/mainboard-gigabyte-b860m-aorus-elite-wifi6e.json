@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-26T17:10:26.505+09:00",
+  "updatedAt": "2026-05-27T23:36:11.263+09:00",
   "category": "Mainboard",
   "id": "mainboard-gigabyte-b860m-aorus-elite-wifi6e",
   "name": "GIGABYTE B860M AORUS ELITE WIFI6E",
@@ -21,7 +21,7 @@
   "performance": 75,
   "valueIndex": 27.8,
   "aiUseScore": 49,
-  "powerWatts": 0,
+  "powerWatts": null,
   "tags": [
     "B860",
     "mATX",
@@ -82,9 +82,5 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=B860M%20%EB%A9%94%EC%9D%B8%EB%B3%B4%EB%93%9C%20%EC%B6%94%EC%B2%9C%20%EC%B5%9C%EC%A0%80%EA%B0%80",
   "notes": "Observed price 270,000 KRW from Danawa search results.",
-  "textRepair": null,
-  "sourceType": "collector",
-  "sourceQuery": "",
-  "collectedPricesKrw": [],
-  "targetMatched": null
+  "textRepair": null
 }

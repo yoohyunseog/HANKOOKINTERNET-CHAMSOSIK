@@ -1,5 +1,6 @@
 ﻿import json
 import os
+import re
 from datetime import datetime
 import requests
 from bs4 import BeautifulSoup
@@ -247,10 +248,12 @@ def translate_and_summarize_with_ai(article):
         "importance": "High/Medium/Low",
         "comment_mood": "Positive/Negative/Mixed/Neutral/No visible comments",
         "comment_summary": "A Korean summary of visible comment atmosphere. If there were no comments, say this is an inferred likely reaction.",
+        "product_tags": ["specific product/model tag 1", "specific product/model tag 2", "specific product/model tag 3"],
         "reaction_keywords": ["short Korean keyword 1", "short Korean keyword 2", "short Korean keyword 3"]
     }}
     
     Ensure the tone is professional yet engaging, like a tech blog.
+    Product tags must be product-centered: model names, brands, chip names, standards, or concrete product lines from the article. Avoid generic tags like "AI", "hardware", "performance", or "news".
     Do not invent direct quotes. Separate visible comment analysis from inferred community reaction.
     """
 
@@ -282,8 +285,57 @@ def fallback_news_post(article):
         "importance": "Medium",
         "comment_mood": comment_mood,
         "comment_summary": comment_summary,
+        "product_tags": guess_product_tags(article),
         "reaction_keywords": guess_reaction_keywords(article)
     }
+
+def guess_product_tags(article):
+    text = f"{article['title']} {article['url']} {article['content'][:1200]}"
+    patterns = [
+        r"\bRTX\s?\d{4}(?:\s?Ti|\s?Super)?\b",
+        r"\bGTX\s?\d{4}(?:\s?Ti)?\b",
+        r"\bRX\s?\d{4}(?:\s?XT|\s?XTX)?\b",
+        r"\bRyzen\s?(?:AI\s?)?\d(?:\s?\d{3,4}[A-Z0-9]*)?\b",
+        r"\bCore\s?(?:Ultra\s?)?[iI]?\d[-\s]?\d{3,5}[A-Z]*\b",
+        r"\bXeon\s?[A-Z0-9 -]{2,18}\b",
+        r"\bDDR[45]\b",
+        r"\bPCIe\s?\d(?:\.\d)?\b",
+        r"\bFSR\s?\d(?:\.\d)?\b",
+        r"\bDLSS\s?\d(?:\.\d)?\b",
+        r"\b12V-?2x6\b",
+        r"\b12VHPWR\b",
+    ]
+    tags = []
+    seen = set()
+    for pattern in patterns:
+        for match in re.findall(pattern, text, flags=re.IGNORECASE):
+            tag = " ".join(match.split())
+            key = tag.lower()
+            if key not in seen:
+                seen.add(key)
+                tags.append(tag)
+            if len(tags) >= 8:
+                return tags
+
+    category = guess_category(article)
+    if category == "GPU":
+        return ["그래픽카드", "GPU", "전원 커넥터"]
+    if category == "CPU":
+        return ["프로세서", "CPU", "메인보드"]
+    if category == "Laptop":
+        return ["노트북", "모바일 프로세서", "디스플레이"]
+    if category == "Server":
+        return ["서버", "스토리지", "네트워크"]
+    return ["PC 부품", "컴퓨터 제품", "테크 제품"]
+
+def normalize_tags(value, fallback):
+    if isinstance(value, list):
+        tags = [str(item).strip() for item in value if str(item).strip()]
+    elif isinstance(value, str):
+        tags = [item.strip() for item in value.split(",") if item.strip()]
+    else:
+        tags = []
+    return tags[:8] if tags else fallback
 
 def guess_reaction_keywords(article):
     category = guess_category(article)
@@ -340,6 +392,7 @@ def main():
                         "importance": ai_result.get('importance', 'Medium'),
                         "comment_mood": ai_result.get('comment_mood', 'No visible comments'),
                         "comment_summary": ai_result.get('comment_summary', ''),
+                        "product_tags": normalize_tags(ai_result.get('product_tags'), guess_product_tags(article)),
                         "reaction_keywords": ai_result.get('reaction_keywords', []),
                         "visible_comment_count": len(article.get('comments') or []),
                         "collected_at": datetime.now().strftime("%Y-%m-%d %H:%M:%S")

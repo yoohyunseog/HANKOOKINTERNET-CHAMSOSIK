@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-26T17:10:26.405+09:00",
+  "updatedAt": "2026-05-27T23:36:11.263+09:00",
   "category": "GPU",
   "id": "gpu-rtx-5070",
   "name": "NVIDIA GeForce RTX 5070",
@@ -83,15 +83,11 @@
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=NVIDIA%20GeForce%20RTX%205070%20price",
   "notes": "NVIDIA GeForce RTX 5070은 게임, 작업, AI 활용을 함께 검토할 그래픽카드 후보입니다.",
   "textRepair": {
-    "checkedAt": "2026-05-26T17:10:26.405+09:00",
+    "checkedAt": "2026-05-27T23:36:12.417+09:00",
     "method": "ai-text-sanity-rules",
     "repairedFields": [
       "speedLabel",
       "notes"
     ]
-  },
-  "sourceType": "collector",
-  "sourceQuery": "",
-  "collectedPricesKrw": [],
-  "targetMatched": null
+  }
 }

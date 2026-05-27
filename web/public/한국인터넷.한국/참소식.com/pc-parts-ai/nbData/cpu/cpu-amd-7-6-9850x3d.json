@@ -1,0 +1,85 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-05-27T23:36:11.263+09:00",
+  "category": "CPU",
+  "id": "cpu-amd-7-6-9850x3d",
+  "name": "AMD 라이젠7-6세대 9850X3D (그래니트 릿지)",
+  "maker": "AMD",
+  "platform": "AM5",
+  "estimatedPriceKrw": 765000,
+  "priceBand": "60만원 이상",
+  "speedLabel": "6th Gen",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "CPU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 95,
+  "valueIndex": 12.4,
+  "aiUseScore": 62,
+  "powerWatts": 120,
+  "tags": [
+    "gaming",
+    "high-end"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "CPU",
+    "partId": "cpu-amd-7-6-9850x3d",
+    "partName": "AMD 라이젠7-6세대 9850X3D (그래니트 릿지)",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "CPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 950,
+      "value": 165,
+      "aiFit": 620,
+      "priceEfficiency": 130,
+      "powerEfficiency": 264
+    },
+    "nbVector": [
+      100,
+      950,
+      165,
+      620,
+      130,
+      264
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 133.219,
+    "nbMin": 337.609,
+    "weightedScore": 343,
+    "nbBand": "100~499",
+    "summary": "CPU AMD 라이젠7-6세대 9850X3D (그래니트 릿지) 부품을 속도 중심 N/B 데이터베이스 점수 343점으로 저장했습니다."
+  },
+  "nbWeightedScore": 343,
+  "nbMax": 133.219,
+  "nbMin": 337.609,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=AMD%20%EB%9D%BC%EC%9D%B4%EC%A0%A0%207%209700X3D%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "Found in search results for 9700X3D as a related product.",
+  "textRepair": null
+}

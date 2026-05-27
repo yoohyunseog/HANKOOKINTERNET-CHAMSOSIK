@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-26T17:10:26.953+09:00",
+  "updatedAt": "2026-05-27T23:36:11.263+09:00",
   "category": "SSD",
   "id": "ssd-wd-sn850x-2tb",
   "name": "WD Black SN850X 2TB",
@@ -83,14 +83,10 @@
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=WD%20Black%20SN850X%202TB%20%EA%B0%80%EA%B2%A9",
   "notes": "WD Black SN850X 2TB은 운영체제, 게임, 작업 파일 저장용으로 검토할 NVMe SSD 후보입니다.",
   "textRepair": {
-    "checkedAt": "2026-05-26T17:10:26.953+09:00",
+    "checkedAt": "2026-05-27T23:36:14.691+09:00",
     "method": "ai-text-sanity-rules",
     "repairedFields": [
       "notes"
     ]
-  },
-  "sourceType": "collector",
-  "sourceQuery": "",
-  "collectedPricesKrw": [],
-  "targetMatched": null
+  }
 }

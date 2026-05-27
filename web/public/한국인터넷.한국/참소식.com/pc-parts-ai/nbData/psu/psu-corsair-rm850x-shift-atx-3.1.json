@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-26T17:10:26.668+09:00",
+  "updatedAt": "2026-05-27T23:36:11.263+09:00",
   "category": "PSU",
   "id": "psu-corsair-rm850x-shift-atx-3.1",
   "name": "Corsair RM850x Shift ATX 3.1",
@@ -82,9 +82,5 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Corsair%20RM850x%20Shift%20ATX%203.1%20price",
   "notes": "Features side-interface cable management and ATX 3.1/PCIe 5.1 support.",
-  "textRepair": null,
-  "sourceType": "collector",
-  "sourceQuery": "",
-  "collectedPricesKrw": [],
-  "targetMatched": null
+  "textRepair": null
 }

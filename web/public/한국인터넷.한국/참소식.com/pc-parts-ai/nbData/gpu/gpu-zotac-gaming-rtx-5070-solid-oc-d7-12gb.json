@@ -1,0 +1,84 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-05-27T23:36:11.263+09:00",
+  "category": "GPU",
+  "id": "gpu-zotac-gaming-rtx-5070-solid-oc-d7-12gb",
+  "name": "ZOTAC GAMING 지포스 RTX 5070 SOLID OC D7 12GB",
+  "maker": "ZOTAC",
+  "platform": "PCIe 5.0",
+  "estimatedPriceKrw": 979000,
+  "priceBand": "60만원 이상",
+  "speedLabel": "2542MHz",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "GPU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 70,
+  "valueIndex": 7.2,
+  "aiUseScore": 46,
+  "powerWatts": 250,
+  "tags": [
+    "gaming"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "GPU",
+    "partId": "gpu-zotac-gaming-rtx-5070-solid-oc-d7-12gb",
+    "partName": "ZOTAC GAMING 지포스 RTX 5070 SOLID OC D7 12GB",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "GPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 700,
+      "value": 100,
+      "aiFit": 460,
+      "priceEfficiency": 100,
+      "powerEfficiency": 100
+    },
+    "nbVector": [
+      100,
+      700,
+      100,
+      460,
+      100,
+      100
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 102.267,
+    "nbMin": 344.933,
+    "weightedScore": 256,
+    "nbBand": "100~499",
+    "summary": "GPU ZOTAC GAMING 지포스 RTX 5070 SOLID OC D7 12GB 부품을 속도 중심 N/B 데이터베이스 점수 256점으로 저장했습니다."
+  },
+  "nbWeightedScore": 256,
+  "nbMax": 102.267,
+  "nbMin": 344.933,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=ZOTAC%20%EC%A7%80%ED%8F%AC%EC%8A%A4%20RTX%205070%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "Boost Clock 2542MHz, 3-fan model",
+  "textRepair": null
+}

@@ -1,6 +1,6 @@
 {
   "schema": "pc-parts-collector-state.v1",
-  "updatedAt": "2026-05-26T17:10:21.955+09:00",
+  "updatedAt": "2026-05-27T23:35:57.634+09:00",
   "nextCandidateIndex": 97,
   "batchSize": 3,
   "candidateCount": 98,
@@ -8,307 +8,310 @@
   "aiDiscoveryEnabled": true,
   "aiSearchHistory": [
     {
+      "query": "GeForce RTX 4070 SUPER MSI Gaming X Slim 최저가",
+      "outcome": "collect:GPU:GeForce RTX 4070 SUPER Gaming X Slim D6X 12GB TriFrozr 3",
+      "at": "2026-05-27T23:05:18.047+09:00"
+    },
+    {
+      "query": "GeForce RTX 4080 SUPER MSI Gaming X Slim 최저가",
+      "outcome": "duplicate:GeForce RTX 4080 SUPER Gaming X Slim D6X 16GB TriFrozr 3",
+      "at": "2026-05-27T23:05:29.220+09:00"
+    },
+    {
+      "query": "GeForce RTX 4090 MSI Gaming X Trio 최저가",
+      "outcome": "collect:GPU:GeForce RTX 4090 Gaming X Trio D6X 24GB TriFrozr 3",
+      "at": "2026-05-27T23:05:45.861+09:00"
+    },
+    {
+      "query": "AMD 라이젠 9 9950X 최저가",
+      "outcome": "skip:The search result text excerpt is empty, and no concrete product details or prices for the AMD Ryzen 9 9950X were provided in the input.",
+      "at": "2026-05-27T23:06:04.952+09:00"
+    },
+    {
       "query": "Intel Core Ultra 9 285K 최저가",
-      "outcome": "skip:The search text excerpt is empty, and no concrete price or product availability was provided for the Intel Core Ultra 9 285K.",
-      "at": "2026-05-26T16:52:25.923+09:00"
+      "outcome": "skip:The search result explicitly states '해당 옵션의 상품이 검색결과에 없습니다' (No products found for this option) for the Intel Core Ultra 9 285K. The provided text contains only category filters, navigation menus, and popular keywords.",
+      "at": "2026-05-27T23:07:55.795+09:00"
     },
     {
-      "query": "Intel Core i7-14700K 최저가",
-      "outcome": "skip:The search text excerpt is empty, and no concrete price or product availability was provided for the Intel Core i7-14700K.",
-      "at": "2026-05-26T16:52:45.462+09:00"
+      "query": "AMD 라이젠 7 9800X3D 최저가",
+      "outcome": "skip:The search result explicitly states '해당 옵션의 상품이 검색결과에 없습니다' (No products found for this option) for the AMD Ryzen 7 9800X3D. The listed products are different models such as 5600, 9950X, 3600, and 7500F.",
+      "at": "2026-05-27T23:08:09.440+09:00"
     },
     {
-      "query": "Intel Core i5-14600K 최저가",
-      "outcome": "skip:The search text excerpt is empty, and no concrete price or product availability was provided for the Intel Core i5-14600K.",
-      "at": "2026-05-26T16:53:03.963+09:00"
+      "query": "GeForce RTX 4060 Ti MSI Gaming X 최저가",
+      "outcome": "collect:GPU:GeForce RTX 4060 Ti Gaming X D6 8GB Twin Frozr 9",
+      "at": "2026-05-27T23:08:19.001+09:00"
     },
     {
-      "query": "AMD Ryzen 7 7800X3D 최저가",
-      "outcome": "skip:The search text excerpt is empty, and no concrete price or availability was provided for the AMD Ryzen 7 7800X3D.",
-      "at": "2026-05-26T16:53:22.023+09:00"
+      "query": "GeForce RTX 4060 Ti MSI Gaming X Slim 16G 최저가",
+      "outcome": "duplicate:GeForce RTX 4060 Ti Gaming X Slim D6 16GB",
+      "at": "2026-05-27T23:08:29.824+09:00"
+    },
+    {
+      "query": "GeForce RTX 4070 Ti SUPER MSI Gaming X Slim 최저가",
+      "outcome": "collect:GPU:GeForce RTX 4070 Ti SUPER Gaming X Slim D6X 16GB TriFrozr 3",
+      "at": "2026-05-27T23:08:40.039+09:00"
+    },
+    {
+      "query": "AMD 라이젠 7 9700X 최저가",
+      "outcome": "skip:The search result explicitly states '해당 옵션의 상품이 검색결과에 없습니다' (No products found for this option) for the AMD Ryzen 7 9700X. The listed prices and products are for other models like 7500F, 5600, and 9950X.",
+      "at": "2026-05-27T23:08:52.365+09:00"
     },
     {
       "query": "Intel Core Ultra 7 265K 최저가",
-      "outcome": "skip:The search result is a landing page from Danawa with category filters and general navigation links, but it does not provide a concrete price or specific product listing for the Intel Core Ultra 7 265K. The 'Observed prices' provided in the prompt are fragmented numbers from the page (likely unrelated IDs or metadata) and not actual product prices.",
-      "at": "2026-05-26T16:53:54.511+09:00"
+      "outcome": "skip:The search result explicitly states '해당 옵션의 상품이 검색결과에 없습니다' (No products found for this option) for the Intel Core Ultra 7 265K. The provided text contains only category filters and navigation menus.",
+      "at": "2026-05-27T23:09:12.773+09:00"
     },
     {
-      "query": "Intel Core Ultra 7 265K 가격",
-      "outcome": "skip:The search result is a general category/filter page from Danawa. It lists available filters (like 'Core Ultra 7') but does not provide a specific product listing, concrete price, or availability for the Intel Core Ultra 7 265K. The observed prices are unrelated metadata/IDs.",
-      "at": "2026-05-26T16:54:12.945+09:00"
+      "query": "AMD 라이젠 9 7950X3D 최저가",
+      "outcome": "skip:The search result explicitly states '해당 옵션의 상품이 검색결과에 없습니다' (No products found for this option) for the AMD Ryzen 9 7950X3D. The listed products are different models such as 7500F, 5600, 9950X, and 3600.",
+      "at": "2026-05-27T23:09:24.314+09:00"
     },
     {
-      "query": "AMD Ryzen 9 7950X3D 최저가",
-      "outcome": "duplicate:AMD Ryzen 9 7950X3D",
-      "at": "2026-05-26T16:54:29.459+09:00"
-    },
-    {
-      "query": "AMD Ryzen 7 9800X3D 최저가",
-      "outcome": "duplicate:Ryzen 7 9800X3D",
-      "at": "2026-05-26T16:54:41.648+09:00"
-    },
-    {
-      "query": "AMD Ryzen 9 9950X 최저가",
-      "outcome": "duplicate:AMD Ryzen 9 9950X",
-      "at": "2026-05-26T16:54:55.793+09:00"
-    },
-    {
-      "query": "AMD Ryzen 5 9600X 최저가",
-      "outcome": "duplicate:AMD Ryzen 5 9600X",
-      "at": "2026-05-26T16:55:07.659+09:00"
-    },
-    {
-      "query": "AMD Ryzen 9 9900X 최저가",
-      "outcome": "duplicate:Ryzen 9 9900X",
-      "at": "2026-05-26T16:55:20.025+09:00"
-    },
-    {
-      "query": "AMD Ryzen 7 9700X 최저가",
-      "outcome": "duplicate:AMD Ryzen 7 9700X",
-      "at": "2026-05-26T16:55:35.313+09:00"
-    },
-    {
-      "query": "AMD Ryzen 5 7500F 최저가",
-      "outcome": "duplicate:AMD Ryzen 5 7500F",
-      "at": "2026-05-26T16:56:06.787+09:00"
-    },
-    {
-      "query": "Intel Core i5-14400F 최저가",
-      "outcome": "duplicate:Intel Core i5-14400F",
-      "at": "2026-05-26T16:56:36.204+09:00"
-    },
-    {
-      "query": "AMD Ryzen 7 7700 최저가",
-      "outcome": "duplicate:AMD Ryzen 7 7700",
-      "at": "2026-05-26T16:56:49.918+09:00"
-    },
-    {
-      "query": "Samsung 990 PRO 2TB Heatsink 가격",
-      "outcome": "skip:The part 'Samsung 990 PRO 2TB Heatsink' is already present in the saved parts list.",
-      "at": "2026-05-26T16:57:02.379+09:00"
-    },
-    {
-      "query": "Intel Core i7-14700K 최저가",
-      "outcome": "duplicate:Core i7-14700K",
-      "at": "2026-05-26T16:57:19.593+09:00"
-    },
-    {
-      "query": "AMD Ryzen 5 7600 최저가",
-      "outcome": "duplicate:Ryzen 5 7600",
-      "at": "2026-05-26T16:57:37.774+09:00"
-    },
-    {
-      "query": "Samsung DDR5 5600 16GB 최저가",
-      "outcome": "skip:The part 'Samsung DDR5 16GB 5600MHz' is already present in the saved parts list.",
-      "at": "2026-05-26T16:58:19.334+09:00"
-    },
-    {
-      "query": "Intel Core Ultra 9 285K 최저가",
-      "outcome": "duplicate:Intel Core Ultra 9 285K",
-      "at": "2026-05-26T16:58:39.856+09:00"
-    },
-    {
-      "query": "Intel Core Ultra 7 265K 최저가",
-      "outcome": "duplicate:Intel Core Ultra 7 265K",
-      "at": "2026-05-26T16:59:18.924+09:00"
-    },
-    {
-      "query": "AMD Ryzen 9 9950X 최저가",
-      "outcome": "duplicate:Ryzen 9 9950X",
-      "at": "2026-05-26T16:59:38.249+09:00"
-    },
-    {
-      "query": "AMD Ryzen 7 9800X3D 최저가",
-      "outcome": "duplicate:AMD Ryzen 7 9800X3D",
-      "at": "2026-05-26T16:59:53.309+09:00"
-    },
-    {
-      "query": "Intel Core Ultra 5 245K 최저가",
-      "outcome": "duplicate:Intel Core Ultra 5 245K",
-      "at": "2026-05-26T17:00:06.913+09:00"
-    },
-    {
-      "query": "AMD Ryzen 9 9950X3D 최저가",
-      "outcome": "collect:CPU:Ryzen 9 9950X3D",
-      "at": "2026-05-26T17:00:19.364+09:00"
-    },
-    {
-      "query": "Intel Core Ultra 9 285K 최저가",
-      "outcome": "skip:The search result is a general category page from Danawa and does not provide a specific price or concrete listing for the Intel Core Ultra 9 285K. Additionally, the 'Recent searches' log indicates this part was already considered a duplicate/previously handled.",
-      "at": "2026-05-26T17:00:31.274+09:00"
-    },
-    {
-      "query": "NVIDIA GeForce RTX 5080 최저가",
-      "outcome": "skip:The search result is a general category/filter page from Danawa. While 'RTX 5080' appears in the chipset filter list, there are no concrete product listings with specific prices, VRAM, or model details for a specific GPU card.",
-      "at": "2026-05-26T17:00:51.747+09:00"
-    },
-    {
-      "query": "Intel Core i5-13400F 최저가",
-      "outcome": "duplicate:Intel Core i5-13400F",
-      "at": "2026-05-26T17:01:11.794+09:00"
-    },
-    {
-      "query": "AMD Ryzen 7 7800X3D 최저가",
-      "outcome": "duplicate:AMD Ryzen 7 7800X3D",
-      "at": "2026-05-26T17:02:00.554+09:00"
-    },
-    {
-      "query": "Intel Core i7-14700K 최저가",
-      "outcome": "duplicate:Intel Core i7-14700K",
-      "at": "2026-05-26T17:02:10.107+09:00"
-    },
-    {
-      "query": "AMD Ryzen 5 7500F 최저가",
-      "outcome": "duplicate:AMD Ryzen 5 7500F",
-      "at": "2026-05-26T17:02:21.733+09:00"
-    },
-    {
-      "query": "Crucial T705 4TB 최저가",
-      "outcome": "skip:The part 'Crucial T705 4TB' is already present in the saved parts list.",
-      "at": "2026-05-26T17:02:30.648+09:00"
+      "query": "GeForce RTX 4070 SUPER ASUS ROG Strix 최저가",
+      "outcome": "error:spawnSync curl ETIMEDOUT / spawnSync ollama ETIMEDOUT",
+      "at": "2026-05-27T23:11:54.933+09:00"
     },
     {
       "query": "Intel Core i9-14900K 최저가",
-      "outcome": "duplicate:Intel Core i9-14900K",
-      "at": "2026-05-26T17:02:46.979+09:00"
+      "outcome": "duplicate:Core i9-14900K",
+      "at": "2026-05-27T23:12:10.261+09:00"
     },
     {
-      "query": "AMD Ryzen 9 7950X 최저가",
-      "outcome": "duplicate:AMD Ryzen 9 7950X",
-      "at": "2026-05-26T17:02:58.388+09:00"
-    },
-    {
-      "query": "NVIDIA GeForce RTX 5070 최저가",
-      "outcome": "skip:The search result is a general category/filter page from Danawa. While 'RTX 5070' appears in the chipset filter list, there are no concrete product listings with specific prices, VRAM, or model details for a specific GPU card.",
-      "at": "2026-05-26T17:03:20.608+09:00"
-    },
-    {
-      "query": "AMD Ryzen 7 9700X 최저가",
-      "outcome": "duplicate:AMD Ryzen 7 9700X",
-      "at": "2026-05-26T17:03:39.443+09:00"
-    },
-    {
-      "query": "Intel Core Ultra 7 265K 최저가",
-      "outcome": "skip:The search result is a general category/filter page from Danawa. While 'Intel Core Ultra 7 265K' is the query and appears in the filter options, there are no concrete product listings with specific prices, specifications, or individual vendor offers in the provided text.",
-      "at": "2026-05-26T17:04:24.492+09:00"
+      "query": "AMD 라이젠 9 9950X 최저가",
+      "outcome": "duplicate:AMD 라이젠 9 9950X (그래니트 릿지)",
+      "at": "2026-05-27T23:12:23.259+09:00"
     },
     {
       "query": "Intel Core Ultra 9 285K 최저가",
-      "outcome": "skip:The search result is a general category/filter page from Danawa. While 'Intel Core Ultra 9 285K' is the query and appears in the filter options, there are no concrete product listings with specific prices, specifications, or individual vendor offers in the provided text.",
-      "at": "2026-05-26T17:04:32.108+09:00"
+      "outcome": "skip:The search result explicitly states '해당 옵션의 상품이 검색결과에 없습니다' (No products found for this option) for the Intel Core Ultra 9 285K. The provided text contains only category filters and navigation menus.",
+      "at": "2026-05-27T23:12:33.243+09:00"
     },
     {
-      "query": "AMD Ryzen 7 9800X3D 최저가",
-      "outcome": "duplicate:AMD Ryzen 7 9800X3D",
-      "at": "2026-05-26T17:04:45.401+09:00"
+      "query": "AMD 라이젠 7 9800X3D 최저가",
+      "outcome": "skip:The search result explicitly states '해당 옵션의 상품이 검색결과에 없습니다' (No products found for this option) for the AMD Ryzen 7 9800X3D. The listed products are other models such as 5600, 9950X, and 7500F.",
+      "at": "2026-05-27T23:12:46.994+09:00"
     },
     {
-      "query": "AMD Ryzen 9 9950X 최저가",
-      "outcome": "duplicate:AMD Ryzen 9 9950X",
-      "at": "2026-05-26T17:04:55.146+09:00"
+      "query": "GeForce RTX 4080 SUPER ASUS ROG Strix 최저가",
+      "outcome": "duplicate:GeForce RTX 4080 SUPER ROG Strix OC Edition",
+      "at": "2026-05-27T23:13:20.193+09:00"
     },
     {
-      "query": "AMD Ryzen 9 9900X 최저가",
-      "outcome": "duplicate:AMD Ryzen 9 9900X",
-      "at": "2026-05-26T17:05:13.011+09:00"
+      "query": "GeForce RTX 4090 MSI Gaming X Trio 최저가",
+      "outcome": "duplicate:GeForce RTX 4090 Gaming X Trio D6X 24GB TriFrozr 3",
+      "at": "2026-05-27T23:13:37.262+09:00"
     },
     {
-      "query": "Intel Core Ultra 5 245K 최저가",
-      "outcome": "skip:The search result is a general category/filter page from Danawa. While 'Intel Core Ultra 5 245K' is the query and appears in the filter options, there are no concrete product listings with specific prices, specifications, or individual vendor offers in the provided text.",
-      "at": "2026-05-26T17:05:25.314+09:00"
+      "query": "AMD 라이젠 5 7500F 최저가",
+      "outcome": "skip:The search result explicitly states '해당 옵션의 상품이 검색결과에 없습니다' (No products found for this option) for the AMD Ryzen 5 7500F. The listed products are other models such as 5300G, 9600, and 7950X3D.",
+      "at": "2026-05-27T23:14:05.571+09:00"
     },
     {
-      "query": "AMD Ryzen 5 9600X 최저가",
-      "outcome": "duplicate:AMD Ryzen 5 9600X",
-      "at": "2026-05-26T17:05:42.727+09:00"
+      "query": "GeForce RTX 4060 Ti MSI Gaming X 최저가",
+      "outcome": "duplicate:GeForce RTX 4060 Ti Gaming X D6 8GB Twin Frozr 9",
+      "at": "2026-05-27T23:14:53.509+09:00"
     },
     {
-      "query": "Intel Core i5-14600K 최저가",
-      "outcome": "duplicate:Intel Core i5-14600K",
-      "at": "2026-05-26T17:05:55.397+09:00"
+      "query": "GeForce RTX 4060 Ti MSI Gaming X 16G 최저가",
+      "outcome": "collect:GPU:GeForce RTX 4060 Ti Gaming X D6 16GB",
+      "at": "2026-05-27T23:15:04.141+09:00"
     },
     {
-      "query": "Intel Core i7-14700K 최저가",
-      "outcome": "duplicate:Intel Core i7-14700K",
-      "at": "2026-05-26T17:06:33.894+09:00"
+      "query": "GeForce RTX 4070 SUPER MSI Gaming X Slim 최저가",
+      "outcome": "duplicate:GeForce RTX 4070 SUPER Gaming X Slim D6X 12GB TriFrozr 3",
+      "at": "2026-05-27T23:15:14.682+09:00"
     },
     {
-      "query": "Intel Core i9-14900K 최저가",
-      "outcome": "duplicate:Intel Core i9-14900K",
-      "at": "2026-05-26T17:06:44.484+09:00"
+      "query": "Intel Core Ultra 7 265K 최저가 다나와",
+      "outcome": "skip:The search result explicitly states '해당 옵션의 상품이 검색결과에 없습니다' (No products found for this option) for the Intel Core Ultra 7 265K. The provided text contains only category filters, navigation menus, and general desktop brand lists.",
+      "at": "2026-05-27T23:15:34.341+09:00"
     },
     {
-      "query": "AMD Ryzen 9 7950X3D 최저가",
-      "outcome": "duplicate:AMD Ryzen 9 7950X3D",
-      "at": "2026-05-26T17:07:08.524+09:00"
+      "query": "GeForce RTX 4080 SUPER MSI Gaming X Trio 최저가",
+      "outcome": "skip:The search results for 'GeForce RTX 4080 SUPER MSI Gaming X Trio' did not return that specific model. Instead, it returned the 'Gaming X Slim' model and other unrelated items like water blocks. The 'Gaming X Slim' is a different model suffix than 'Gaming X Trio'.",
+      "at": "2026-05-27T23:15:48.976+09:00"
     },
     {
-      "query": "Crucial T705 4TB 최저가",
-      "outcome": "skip:The part 'Crucial T705 4TB' is already present in the saved parts list.",
-      "at": "2026-05-26T17:07:17.332+09:00"
+      "query": "AMD 라이젠 9 7950X3D 최저가",
+      "outcome": "skip:The search result explicitly states '해당 옵션의 상품이 검색결과에 없습니다' (No products found for this option) for the AMD Ryzen 9 7950X3D. The listed products are other models such as 7500F, 5600, and 9950X.",
+      "at": "2026-05-27T23:16:02.771+09:00"
+    },
+    {
+      "query": "GeForce RTX 4070 Ti SUPER MSI Gaming X Slim 최저가",
+      "outcome": "duplicate:GeForce RTX 4070 Ti SUPER Gaming X Slim D6X 16GB TriFrozr 3",
+      "at": "2026-05-27T23:16:20.020+09:00"
+    },
+    {
+      "query": "AMD 라이젠 9 9950X 최저가",
+      "outcome": "duplicate:AMD 라이젠 9 9950X (그래니트 릿지)",
+      "at": "2026-05-27T23:16:38.637+09:00"
+    },
+    {
+      "query": "GeForce RTX 4070 SUPER ASUS TUF Gaming 최저가",
+      "outcome": "duplicate:ASUS TUF Gaming GeForce RTX 4070 SUPER O12G OC D6X 12GB",
+      "at": "2026-05-27T23:18:59.230+09:00"
+    },
+    {
+      "query": "GeForce RTX 4080 SUPER ASUS TUF Gaming 최저가",
+      "outcome": "duplicate:ASUS TUF Gaming GeForce RTX 4080 SUPER OC Edition",
+      "at": "2026-05-27T23:19:22.423+09:00"
+    },
+    {
+      "query": "AMD 라이젠 7 7800X3D 최저가",
+      "outcome": "skip:The search result explicitly states '해당 옵션의 상품이 검색결과에 없습니다' (No products found for this option) for the AMD Ryzen 7 7800X3D. The listed products are different models such as 5300G, 9600, and 7950X3D.",
+      "at": "2026-05-27T23:19:48.869+09:00"
+    },
+    {
+      "query": "SK hynix Platinum P41 2TB 최저가",
+      "outcome": "skip:The part 'SK hynix Platinum P41 2TB' is already present in the saved parts list.",
+      "at": "2026-05-27T23:19:58.703+09:00"
+    },
+    {
+      "query": "AMD 라이젠 7 9700X 최저가",
+      "outcome": "error:Internal Server Error (ref: b1ff0dc8-ff01-41c6-9ed3-bde5d35844f8)",
+      "at": "2026-05-27T23:20:15.659+09:00"
+    },
+    {
+      "query": "AMD 라이젠 5 7500F 최저가",
+      "outcome": "skip:The search result explicitly states '해당 옵션의 상품이 검색결과에 없습니다' (No products found for this option) for the AMD Ryzen 5 7500F. The listed products are other models like 5300G, 9600, and 7950X3D.",
+      "at": "2026-05-27T23:20:41.278+09:00"
     },
     {
       "query": "Intel Core Ultra 9 285K 최저가",
-      "outcome": "skip:The search result is a general category/filter page from Danawa. While 'Intel Core Ultra 9 285K' is the query and appears in the filter options, there are no concrete product listings with specific prices or individual vendor offers in the provided text.",
-      "at": "2026-05-26T17:07:29.041+09:00"
+      "outcome": "skip:The search result explicitly states '해당 옵션의 상품이 검색결과에 없습니다' (No products found for this option) for the Intel Core Ultra 9 285K. The provided text contains only category filters and general search interface elements, not a concrete product listing with a price.",
+      "at": "2026-05-27T23:20:54.156+09:00"
+    },
+    {
+      "query": "GeForce RTX 4090 ASUS ROG Strix OC 최저가",
+      "outcome": "duplicate:ASUS ROG Strix GeForce RTX 4090 OC Edition",
+      "at": "2026-05-27T23:21:19.788+09:00"
     },
     {
       "query": "Intel Core Ultra 7 265K 최저가",
-      "outcome": "skip:The search result is a general category/filter page from Danawa. While 'Intel Core Ultra 7 265K' is the query and appears in the filter options, there are no concrete product listings with specific prices or individual vendor offers in the provided text.",
-      "at": "2026-05-26T17:07:40.178+09:00"
+      "outcome": "skip:The search result explicitly states '해당 옵션의 상품이 검색결과에 없습니다' (No products found for this option) for the Intel Core Ultra 7 265K. The provided text contains only category filters, popular keywords, and general UI elements, not a concrete product listing with a price.",
+      "at": "2026-05-27T23:21:53.164+09:00"
     },
     {
-      "query": "Intel Core Ultra 5 245KF 최저가",
-      "outcome": "skip:The search result is a general category/filter page from Danawa. Although the query 'Intel Core Ultra 5 245KF' is present, there are no concrete product listings with specific prices or individual vendor offers in the text. The 'Observed prices' provided in the prompt appear to be noise or unrelated numbers from the page layout rather than actual product prices.",
-      "at": "2026-05-26T17:07:54.575+09:00"
+      "query": "AMD 라이젠 9 9900X 최저가",
+      "outcome": "skip:The search result explicitly states '해당 옵션의 상품이 검색결과에 없습니다' (No products found for this option) for the AMD Ryzen 9 9900X. The listed products are other models such as 7500F, 5600, 9950X, and 3600.",
+      "at": "2026-05-27T23:22:18.457+09:00"
     },
     {
-      "query": "AMD Ryzen 7 9700X 최저가",
-      "outcome": "duplicate:AMD Ryzen 7 9700X",
-      "at": "2026-05-26T17:08:07.232+09:00"
+      "query": "(planner)",
+      "outcome": "error:spawnSync curl ETIMEDOUT / spawnSync ollama ETIMEDOUT",
+      "at": "2026-05-27T23:23:18.478+09:00"
     },
     {
-      "query": "AMD Ryzen 7 7800X3D 최저가",
-      "outcome": "duplicate:AMD Ryzen 7 7800X3D",
-      "at": "2026-05-26T17:08:42.825+09:00"
+      "query": "GeForce RTX 4060 Ti MSI Gaming X Slim 8GB 최저가",
+      "outcome": "duplicate:GeForce RTX 4060 Ti Gaming X Slim 16G",
+      "at": "2026-05-27T23:24:11.277+09:00"
     },
     {
-      "query": "AMD Ryzen 9 7950X3D 최저가",
-      "outcome": "skip:The part 'AMD Ryzen 9 7950X3D' is already present in the saved parts list (as indicated in the Recent searches section of the prompt).",
-      "at": "2026-05-26T17:08:55.768+09:00"
+      "query": "(planner)",
+      "outcome": "error:spawnSync curl ETIMEDOUT / spawnSync ollama ETIMEDOUT",
+      "at": "2026-05-27T23:25:11.309+09:00"
     },
     {
-      "query": "Intel Core i9-14900K 최저가",
-      "outcome": "skip:The part 'Intel Core i9-14900K' is already listed in the Recent searches as a duplicate, and although prices are present in the text, it is not a new part to be added to the saved list.",
-      "at": "2026-05-26T17:09:17.338+09:00"
+      "query": "AMD 라이젠 9 7950X3D 최저가",
+      "outcome": "skip:The search result explicitly states '해당 옵션의 상품이 검색결과에 없습니다' (No products found for this option) for the AMD Ryzen 9 7950X3D. The listed products are other models such as 7500F, 5600, 9950X, and 3600.",
+      "at": "2026-05-27T23:25:25.129+09:00"
     },
     {
-      "query": "AMD Ryzen 9 9950X 최저가",
-      "outcome": "duplicate:AMD Ryzen 9 9950X",
-      "at": "2026-05-26T17:09:29.356+09:00"
+      "query": "GeForce RTX 4070 Super ASUS TUF Gaming 최저가",
+      "outcome": "duplicate:ASUS TUF Gaming GeForce RTX 4070 SUPER O12G OC",
+      "at": "2026-05-27T23:26:02.469+09:00"
     },
     {
-      "query": "AMD Ryzen 7 9800X3D 최저가",
-      "outcome": "duplicate:AMD Ryzen 7 9800X3D",
-      "at": "2026-05-26T17:09:39.060+09:00"
+      "query": "AMD 라이젠 7 7800X3D 최저가",
+      "outcome": "skip:The search result explicitly states '해당 옵션의 상품이 검색결과에 없습니다' (No products found for this option) for the AMD Ryzen 7 7800X3D. The listed products are different models (5300G, 9600, 9985WX, etc.).",
+      "at": "2026-05-27T23:26:17.431+09:00"
     },
     {
-      "query": "AMD Ryzen 5 9600X 최저가",
-      "outcome": "duplicate:AMD Ryzen 5 9600X",
-      "at": "2026-05-26T17:09:53.679+09:00"
+      "query": "GeForce RTX 4080 Super ZOTAC Gaming OC 최저가",
+      "outcome": "duplicate:ZOTAC GAMING GeForce RTX 4080 SUPER Trinity OC White Edition",
+      "at": "2026-05-27T23:26:50.482+09:00"
     },
     {
-      "query": "AMD Ryzen 5 7500F 최저가",
-      "outcome": "duplicate:AMD Ryzen 5 7500F",
-      "at": "2026-05-26T17:10:10.329+09:00"
+      "query": "GeForce RTX 4080 Super ZOTAC AMP Extreme AIRO 최저가",
+      "outcome": "collect:GPU:GeForce RTX 4080 SUPER AMP Extreme AIRO D6X 16GB",
+      "at": "2026-05-27T23:27:04.099+09:00"
     },
     {
-      "query": "AMD Ryzen 9 7900X 최저가",
-      "outcome": "duplicate:AMD Ryzen 9 7900X",
-      "at": "2026-05-26T17:10:21.945+09:00"
+      "query": "AMD 라이젠 9 9950X 최저가",
+      "outcome": "duplicate:AMD 라이젠 9 9950X (그래니트 릿지)",
+      "at": "2026-05-27T23:27:13.490+09:00"
+    },
+    {
+      "query": "Intel Core Ultra 9 285K 최저가",
+      "outcome": "skip:The search result explicitly states '해당 옵션의 상품이 검색결과에 없습니다' (No products found for this option) for the Intel Core Ultra 9 285K. The provided text contains only category filters and general search interface elements, not a concrete product listing with a price.",
+      "at": "2026-05-27T23:27:49.012+09:00"
+    },
+    {
+      "query": "GeForce RTX 4070 Ti Super ZOTAC AMP Extreme AIRO 최저가",
+      "outcome": "duplicate:ZOTAC GAMING GeForce RTX 4070 Ti SUPER AMP Holo D6X 16GB",
+      "at": "2026-05-27T23:28:00.776+09:00"
+    },
+    {
+      "query": "AMD 라이젠 7 9700X 최저가",
+      "outcome": "skip:The search result explicitly states '해당 옵션의 상품이 검색결과에 없습니다' (No products found for this option) for the AMD Ryzen 7 9700X. The listed products are other models such as 7500F, 5600, and 9950X.",
+      "at": "2026-05-27T23:28:16.915+09:00"
+    },
+    {
+      "query": "Intel Core Ultra 7 265K 최저가",
+      "outcome": "skip:The search result explicitly states '해당 옵션의 상품이 검색결과에 없습니다' (No products found for this option) for the Intel Core Ultra 7 265K. The provided text contains only category filters and general search interface elements, not a concrete product listing with a price.",
+      "at": "2026-05-27T23:28:50.053+09:00"
+    },
+    {
+      "query": "AMD 라이젠 5 7500F 최저가",
+      "outcome": "skip:The search result explicitly states '해당 옵션의 상품이 검색결과에 없습니다' (No products found for this option) for the AMD Ryzen 5 7500F. The listed products are different models such as 5300G and 9600.",
+      "at": "2026-05-27T23:29:02.122+09:00"
+    },
+    {
+      "query": "GeForce RTX 4090 MSI Gaming X Slim 최저가",
+      "outcome": "collect:GPU:GeForce RTX 4090 Gaming X Slim D6X 24GB Tri Frozr 3",
+      "at": "2026-05-27T23:30:30.356+09:00"
+    },
+    {
+      "query": "GeForce RTX 4080 Super MSI Ventus 3X 최저가",
+      "outcome": "skip:The search result for 'GeForce RTX 4080 Super MSI Ventus 3X' returned a single overseas listing with an unrealistic price of 4,118,600 KRW, and the text explicitly states '해당 옵션의 상품이 검색결과에 없습니다' (No products found for this option) for the standard domestic market. The other listed GPUs are from the RTX 50-series, which are different models.",
+      "at": "2026-05-27T23:30:50.868+09:00"
+    },
+    {
+      "query": "AMD 라이젠 9 7950X3D 최저가",
+      "outcome": "skip:The search result explicitly states '해당 옵션의 상품이 검색결과에 없습니다' (No products found for this option) for the AMD Ryzen 9 7950X3D. The other listed CPUs are different models (5600, 9950X, 3600, 7600, etc.).",
+      "at": "2026-05-27T23:31:13.841+09:00"
+    },
+    {
+      "query": "GeForce RTX 4070 Super ASUS ROG STRIX 최저가",
+      "outcome": "collect:GPU:ROG Strix GeForce RTX 4070 Super OC Edition",
+      "at": "2026-05-27T23:31:52.320+09:00"
+    },
+    {
+      "query": "GeForce RTX 4070 Ti Super ASUS ROG STRIX 최저가",
+      "outcome": "error:spawnSync curl ETIMEDOUT / spawnSync ollama ETIMEDOUT",
+      "at": "2026-05-27T23:32:57.489+09:00"
+    },
+    {
+      "query": "(planner)",
+      "outcome": "error:spawnSync curl ETIMEDOUT / spawnSync ollama ETIMEDOUT",
+      "at": "2026-05-27T23:33:57.566+09:00"
+    },
+    {
+      "query": "(planner)",
+      "outcome": "error:spawnSync curl ETIMEDOUT / spawnSync ollama ETIMEDOUT",
+      "at": "2026-05-27T23:34:57.602+09:00"
+    },
+    {
+      "query": "(planner)",
+      "outcome": "error:spawnSync curl ETIMEDOUT / spawnSync ollama ETIMEDOUT",
+      "at": "2026-05-27T23:35:57.628+09:00"
     }
   ],
   "aiSearchQueue": [],
-  "collectedThisRun": [],
+  "collectedThisRun": [
+    "gpu-geforce-rtx-4090-gaming-x-slim-d6x-24gb-tri-frozr-3",
+    "gpu-rog-strix-geforce-rtx-4070-super-oc-edition"
+  ],
   "updatedThisRun": []
 }

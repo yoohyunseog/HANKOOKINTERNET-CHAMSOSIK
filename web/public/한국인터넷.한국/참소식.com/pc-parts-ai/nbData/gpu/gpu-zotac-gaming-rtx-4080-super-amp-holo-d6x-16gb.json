@@ -1,0 +1,85 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-05-27T23:36:11.263+09:00",
+  "category": "GPU",
+  "id": "gpu-zotac-gaming-rtx-4080-super-amp-holo-d6x-16gb",
+  "name": "ZOTAC GAMING 지포스 RTX 4080 SUPER AMP Holo D6X 16GB",
+  "maker": "ZOTAC",
+  "platform": "PCIE 4.0",
+  "estimatedPriceKrw": 1878720,
+  "priceBand": "60만원 이상",
+  "speedLabel": "23Gbps",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "GPU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 95,
+  "valueIndex": 5.1,
+  "aiUseScore": 95,
+  "powerWatts": 320,
+  "tags": [
+    "gaming",
+    "ai"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "GPU",
+    "partId": "gpu-zotac-gaming-rtx-4080-super-amp-holo-d6x-16gb",
+    "partName": "ZOTAC GAMING 지포스 RTX 4080 SUPER AMP Holo D6X 16GB",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "GPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 950,
+      "value": 100,
+      "aiFit": 950,
+      "priceEfficiency": 50,
+      "powerEfficiency": 100
+    },
+    "nbVector": [
+      100,
+      950,
+      100,
+      950,
+      50,
+      100
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 161.053,
+    "nbMin": 314.211,
+    "weightedScore": 351,
+    "nbBand": "100~499",
+    "summary": "GPU ZOTAC GAMING 지포스 RTX 4080 SUPER AMP Holo D6X 16GB 부품을 속도 중심 N/B 데이터베이스 점수 351점으로 저장했습니다."
+  },
+  "nbWeightedScore": 351,
+  "nbMax": 161.053,
+  "nbMin": 314.211,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=ZOTAC%20GAMING%20%EC%A7%80%ED%8F%AC%EC%8A%A4%20RTX%204080%20SUPER%20AMP%20Holo%20%EC%B5%9C%EC%A0%80%EA%B0%80%20%EB%8B%A4%EB%82%98%EC%99%80",
+  "notes": "Based on search results for AMP series 4080 Super; price taken from the most reasonable standalone listing.",
+  "textRepair": null
+}

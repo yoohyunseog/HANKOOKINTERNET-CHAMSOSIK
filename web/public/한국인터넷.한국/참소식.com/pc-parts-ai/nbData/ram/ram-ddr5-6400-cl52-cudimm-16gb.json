@@ -1,0 +1,85 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-05-27T23:36:11.263+09:00",
+  "category": "RAM",
+  "id": "ram-ddr5-6400-cl52-cudimm-16gb",
+  "name": "삼성전자 DDR5-6400 CL52 CUDIMM 16GB",
+  "maker": "삼성전자",
+  "platform": "DDR5",
+  "estimatedPriceKrw": 85000,
+  "priceBand": "15만원 미만",
+  "speedLabel": "6400MHz",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "RAM",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 60,
+  "valueIndex": 60,
+  "aiUseScore": 39,
+  "powerWatts": 5,
+  "tags": [
+    "CUDIMM",
+    "high-speed"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "RAM",
+    "partId": "ram-ddr5-6400-cl52-cudimm-16gb",
+    "partName": "삼성전자 DDR5-6400 CL52 CUDIMM 16GB",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "RAM",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 600,
+      "value": 800,
+      "aiFit": 390,
+      "priceEfficiency": 1180,
+      "powerEfficiency": 1000
+    },
+    "nbVector": [
+      100,
+      600,
+      800,
+      390,
+      1180,
+      1000
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 336.484,
+    "nbMin": 355.646,
+    "weightedScore": 467,
+    "nbBand": "100~499",
+    "summary": "RAM 삼성전자 DDR5-6400 CL52 CUDIMM 16GB 부품을 속도 중심 N/B 데이터베이스 점수 467점으로 저장했습니다."
+  },
+  "nbWeightedScore": 467,
+  "nbMax": 336.484,
+  "nbMin": 355.646,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90%20DDR5-6400%20CL52%20CUDIMM%2016GB%20%EA%B0%80%EA%B2%A9",
+  "notes": "16GB capacity variant of the CUDIMM 6400MHz series",
+  "textRepair": null
+}

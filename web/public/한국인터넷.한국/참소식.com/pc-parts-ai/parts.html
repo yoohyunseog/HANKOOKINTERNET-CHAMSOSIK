@@ -266,6 +266,17 @@
       font-weight: 900;
     }
 
+    .combo-search-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 12px;
+    }
+
+    .combo-search-links .combo-link {
+      margin-top: 0;
+    }
+
     .table-wrap {
       margin-top: 16px;
       overflow-x: auto;
@@ -806,8 +817,25 @@
       ].join(" ");
     }
 
-    function comboGoogleUrl(combo) {
-      return `https://www.google.com/search?q=${encodeURIComponent(comboSearchText(combo))}`;
+    function comboSearchUrl(combo, engine) {
+      const query = encodeURIComponent(comboSearchText(combo));
+      const urls = {
+        google: `https://www.google.com/search?q=${query}`,
+        bing: `https://www.bing.com/search?q=${query}`,
+        naver: `https://search.naver.com/search.naver?query=${query}`
+      };
+      return urls[engine] || urls.google;
+    }
+
+    function comboSearchLinks(combo) {
+      const title = escapeHtml(comboSearchText(combo));
+      return `
+        <div class="combo-search-links" aria-label="이 조합 전체 검색">
+          <a class="combo-link" href="${comboSearchUrl(combo, "google")}" title="${title}" target="_blank" rel="noopener noreferrer">구글 AI</a>
+          <a class="combo-link" href="${comboSearchUrl(combo, "bing")}" title="${title}" target="_blank" rel="noopener noreferrer">BING copilot</a>
+          <a class="combo-link" href="${comboSearchUrl(combo, "naver")}" title="${title}" target="_blank" rel="noopener noreferrer">네이버 인공지능</a>
+        </div>
+      `;
     }
 
     function renderCombos(combos) {
@@ -824,7 +852,7 @@
           <ul>
             ${combo.parts.map((part) => `<li>${escapeHtml(part.category)} · ${escapeHtml(part.name)} · N/B ${escapeHtml(part.nbWeightedScore || "-")}점 · 속도 ${escapeHtml(part.unifiedSpeedScore || "-")}점</li>`).join("")}
           </ul>
-          <a class="combo-link" href="${comboGoogleUrl(combo)}" title="${escapeHtml(comboSearchText(combo))}" target="_blank" rel="noopener noreferrer">이 조합 전체 검색</a>
+          ${comboSearchLinks(combo)}
         </article>
       `).join("");
     }

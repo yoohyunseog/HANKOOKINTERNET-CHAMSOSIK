@@ -1,0 +1,91 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-05-27T23:36:11.263+09:00",
+  "category": "Mainboard",
+  "id": "mainboard-asrock-b860-pro-rs-wifi",
+  "name": "ASRock B860 Pro RS WiFi",
+  "maker": "ASRock",
+  "platform": "LGA1851",
+  "estimatedPriceKrw": 269000,
+  "priceBand": "15~30만원",
+  "speedLabel": "B860",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "Mainboard",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 60,
+  "valueIndex": 22.3,
+  "aiUseScore": 39,
+  "powerWatts": null,
+  "tags": [
+    "WiFi",
+    "Intel"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "Mainboard",
+    "partId": "mainboard-asrock-b860-pro-rs-wifi",
+    "partName": "ASRock B860 Pro RS WiFi",
+    "speed": {
+      "score": 100,
+      "weight": 0.32,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "Mainboard",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 600,
+      "value": 297,
+      "aiFit": 390,
+      "priceEfficiency": 370,
+      "powerEfficiency": 600
+    },
+    "nbVector": [
+      100,
+      600,
+      297,
+      390,
+      370,
+      600
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 381.921,
+    "nbMin": 406.364,
+    "weightedScore": 298,
+    "nbBand": "100~499",
+    "summary": "Mainboard ASRock B860 Pro RS WiFi 부품을 속도 중심 N/B 데이터베이스 점수 298점으로 저장했습니다."
+  },
+  "nbWeightedScore": 298,
+  "nbMax": 381.921,
+  "nbMin": 406.364,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=B860%20%EB%A9%94%EC%9D%B8%EB%B3%B4%EB%93%9C%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "ASRock B860 Pro RS WiFi은 CPU 소켓, 메모리 규격, 확장성을 함께 확인할 메인보드 후보입니다.",
+  "textRepair": {
+    "checkedAt": "2026-05-27T23:36:14.954+09:00",
+    "method": "ai-text-sanity-rules",
+    "repairedFields": [
+      "notes"
+    ]
+  }
+}

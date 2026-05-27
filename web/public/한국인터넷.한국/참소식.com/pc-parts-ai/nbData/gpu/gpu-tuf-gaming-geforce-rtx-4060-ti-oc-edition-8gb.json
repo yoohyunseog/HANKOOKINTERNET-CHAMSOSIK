@@ -1,0 +1,84 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-05-27T23:36:11.263+09:00",
+  "category": "GPU",
+  "id": "gpu-tuf-gaming-geforce-rtx-4060-ti-oc-edition-8gb",
+  "name": "TUF Gaming GeForce RTX 4060 Ti OC Edition 8GB",
+  "maker": "ASUS",
+  "platform": "PCIe 4.0",
+  "estimatedPriceKrw": 620000,
+  "priceBand": "60만원 이상",
+  "speedLabel": "OC",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "GPU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 65,
+  "valueIndex": 10.5,
+  "aiUseScore": 42,
+  "powerWatts": 165,
+  "tags": [
+    "gaming"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "GPU",
+    "partId": "gpu-tuf-gaming-geforce-rtx-4060-ti-oc-edition-8gb",
+    "partName": "TUF Gaming GeForce RTX 4060 Ti OC Edition 8GB",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "GPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 650,
+      "value": 140,
+      "aiFit": 420,
+      "priceEfficiency": 160,
+      "powerEfficiency": 131
+    },
+    "nbVector": [
+      100,
+      650,
+      140,
+      420,
+      160,
+      131
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 125.617,
+    "nbMin": 368.641,
+    "weightedScore": 254,
+    "nbBand": "100~499",
+    "summary": "GPU TUF Gaming GeForce RTX 4060 Ti OC Edition 8GB 부품을 속도 중심 N/B 데이터베이스 점수 254점으로 저장했습니다."
+  },
+  "nbWeightedScore": 254,
+  "nbMax": 125.617,
+  "nbMin": 368.641,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=GeForce%20RTX%204060%20Ti%20ASUS%20TUF%20Gaming%20OC%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "Based on search results for ASUS TUF Gaming RTX 4060 Ti OC Edition.",
+  "textRepair": null
+}

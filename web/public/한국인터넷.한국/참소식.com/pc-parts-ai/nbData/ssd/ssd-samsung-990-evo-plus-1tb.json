@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-26T17:10:26.842+09:00",
+  "updatedAt": "2026-05-27T23:36:11.263+09:00",
   "category": "SSD",
   "id": "ssd-samsung-990-evo-plus-1tb",
   "name": "Samsung 990 EVO Plus 1TB",
@@ -21,7 +21,7 @@
   "performance": 75,
   "valueIndex": 40.8,
   "aiUseScore": 49,
-  "powerWatts": 0,
+  "powerWatts": null,
   "tags": [
     "PCIe 4.0",
     "PS5"
@@ -81,9 +81,5 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Samsung%20990%20EVO%20Plus%201TB%20%EA%B0%80%EA%B2%A9",
   "notes": "Sequential Read 7,150MB/s, Sequential Write 6,300MB/s, TBW 600TB",
-  "textRepair": null,
-  "sourceType": "collector",
-  "sourceQuery": "",
-  "collectedPricesKrw": [],
-  "targetMatched": null
+  "textRepair": null
 }

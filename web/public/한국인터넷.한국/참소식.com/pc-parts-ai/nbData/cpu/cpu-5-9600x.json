@@ -1,0 +1,85 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-05-27T23:36:11.263+09:00",
+  "category": "CPU",
+  "id": "cpu-5-9600x",
+  "name": "라이젠 5 9600X (그래니트 릿지)",
+  "maker": "AMD",
+  "platform": "AM5",
+  "estimatedPriceKrw": 240100,
+  "priceBand": "15~30만원",
+  "speedLabel": "5.4GHz",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "CPU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 65,
+  "valueIndex": 27.1,
+  "aiUseScore": 42,
+  "powerWatts": 65,
+  "tags": [
+    "gaming",
+    "mainstream"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "CPU",
+    "partId": "cpu-5-9600x",
+    "partName": "라이젠 5 9600X (그래니트 릿지)",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "CPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 650,
+      "value": 361,
+      "aiFit": 420,
+      "priceEfficiency": 420,
+      "powerEfficiency": 333
+    },
+    "nbVector": [
+      100,
+      650,
+      361,
+      420,
+      420,
+      333
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 302.191,
+    "nbMin": 402.921,
+    "weightedScore": 318,
+    "nbBand": "100~499",
+    "summary": "CPU 라이젠 5 9600X (그래니트 릿지) 부품을 속도 중심 N/B 데이터베이스 점수 318점으로 저장했습니다."
+  },
+  "nbWeightedScore": 318,
+  "nbMax": 302.191,
+  "nbMin": 402.921,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=AMD%20%EB%9D%BC%EC%9D%B4%EC%A0%A0%205%209600X%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "6 cores, 12 threads, Zen 5 architecture",
+  "textRepair": null
+}

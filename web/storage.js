@@ -406,41 +406,75 @@ async function getStatistics() {
 
 // ===== 방문 통계 함수 =====
 
-// 방문 기록 저장
-async function recordVisit(ip, path, userAgent, keyword = null) {
+// 인메모리 방문 버퍼 (Race Condition 방지)
+const visitBuffer = [];
+let visitFlushTimer = null;
+const VISIT_FLUSH_INTERVAL_MS = 5000; // 5초마다 파일에 기록
+const VISIT_MAX_BUFFER = 500;         // 버퍼 최대 크기
+
+// 버퍼를 파일에 플러시
+async function flushVisitBuffer() {
+    if (visitBuffer.length === 0) return;
+    const batch = visitBuffer.splice(0, visitBuffer.length);
     try {
         let visits = [];
         try {
             const content = await fs.readFile(VISITS_FILE, 'utf-8');
             visits = JSON.parse(content);
-        } catch (err) {
-            console.log('[DEBUG] visits.json 초기 생성:', VISITS_FILE);
+            if (!Array.isArray(visits)) visits = [];
+        } catch {
             visits = [];
         }
+        visits.push(...batch);
+        // 최근 10000개만 유지
+        if (visits.length > 10000) {
+            visits = visits.slice(-10000);
+        }
+        await fs.writeFile(VISITS_FILE, JSON.stringify(visits, null, 2));
+    } catch (error) {
+        // 실패 시 버퍼 복구 (재시도 가능하도록)
+        visitBuffer.unshift(...batch);
+        console.error('[visit-flush] write error:', error.message);
+    }
+}
 
+function scheduleVisitFlush() {
+    if (visitFlushTimer) return;
+    visitFlushTimer = setTimeout(() => {
+        visitFlushTimer = null;
+        flushVisitBuffer().catch(err => {
+            console.error('[visit-flush] flush error:', err.message);
+        });
+    }, VISIT_FLUSH_INTERVAL_MS);
+}
+
+// 방문 기록 저장 (인메모리 버퍼 사용)
+async function recordVisit(ip, path, userAgent, keyword = null) {
+    try {
         const geo = geoip.lookup(ip);
         const country = geo ? (geo.country === 'KR' ? '한국' : geo.country) : '미분류';
 
-        const visit = {
+        visitBuffer.push({
             ip: ip || 'unknown',
             path: path || '/',
             country: country,
             timestamp: new Date().toISOString(),
             userAgent: userAgent || 'unknown',
             keyword: keyword
-        };
+        });
 
-        visits.push(visit);
         if (process.env.NODE_ENV !== 'production') {
-            console.log('[DEBUG] Visit recorded:', country, keyword, 'Total visits:', visits.length);
-        }
-        
-        // 최근 10000개만 유지
-        if (visits.length > 10000) {
-            visits = visits.slice(-10000);
+            console.log('[DEBUG] Visit recorded:', country, keyword, 'Buffer size:', visitBuffer.length);
         }
 
-        await fs.writeFile(VISITS_FILE, JSON.stringify(visits, null, 2));
+        // 버퍼가 너무 크면 즉시 플러시
+        if (visitBuffer.length >= VISIT_MAX_BUFFER) {
+            clearTimeout(visitFlushTimer);
+            visitFlushTimer = null;
+            await flushVisitBuffer();
+        } else {
+            scheduleVisitFlush();
+        }
     } catch (error) {
         console.error('Record visit error:', error);
     }

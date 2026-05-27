@@ -1,0 +1,86 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-05-27T23:36:11.263+09:00",
+  "category": "GPU",
+  "id": "gpu-asus-proart-rtx-4080-super-o16g-oc-d6x-16gb",
+  "name": "ASUS ProArt 지포스 RTX 4080 SUPER O16G OC D6X 16GB",
+  "maker": "ASUS",
+  "platform": "PCIe 4.0",
+  "estimatedPriceKrw": 1647900,
+  "priceBand": "60만원 이상",
+  "speedLabel": "OC",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "GPU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 95,
+  "valueIndex": 5.8,
+  "aiUseScore": 95,
+  "powerWatts": 320,
+  "tags": [
+    "gaming",
+    "workstation",
+    "ai"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "GPU",
+    "partId": "gpu-asus-proart-rtx-4080-super-o16g-oc-d6x-16gb",
+    "partName": "ASUS ProArt 지포스 RTX 4080 SUPER O16G OC D6X 16GB",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "GPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 950,
+      "value": 100,
+      "aiFit": 950,
+      "priceEfficiency": 60,
+      "powerEfficiency": 100
+    },
+    "nbVector": [
+      100,
+      950,
+      100,
+      950,
+      60,
+      100
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 157.804,
+    "nbMin": 319.572,
+    "weightedScore": 352,
+    "nbBand": "100~499",
+    "summary": "GPU ASUS ProArt 지포스 RTX 4080 SUPER O16G OC D6X 16GB 부품을 속도 중심 N/B 데이터베이스 점수 352점으로 저장했습니다."
+  },
+  "nbWeightedScore": 352,
+  "nbMax": 157.804,
+  "nbMin": 319.572,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=ASUS%20%EC%A7%80%ED%8F%AC%EC%8A%A4%20RTX%204080%20SUPER%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "ProArt series designed for creative professionals.",
+  "textRepair": null
+}

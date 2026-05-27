@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-26T17:10:26.044+09:00",
+  "updatedAt": "2026-05-27T23:36:11.263+09:00",
   "category": "CPU",
   "id": "cpu-intel-core-ultra-7-265f",
   "name": "Intel Core Ultra 7 265F",
@@ -81,9 +81,5 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Intel%20Core%20Ultra%207%20265F%20%EC%A0%95%ED%92%88%20%EC%B5%9C%EC%A0%80%EA%B0%80",
   "notes": "P8+E12 cores, 20 threads, no integrated graphics",
-  "textRepair": null,
-  "sourceType": "collector",
-  "sourceQuery": "",
-  "collectedPricesKrw": [],
-  "targetMatched": null
+  "textRepair": null
 }

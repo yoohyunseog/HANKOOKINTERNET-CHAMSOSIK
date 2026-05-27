@@ -1,0 +1,86 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-05-27T23:36:11.263+09:00",
+  "category": "CPU",
+  "id": "cpu-amd-ryzen-7-9700x-granite-ridge",
+  "name": "AMD Ryzen 7 9700X (Granite Ridge)",
+  "maker": "AMD",
+  "platform": "AM5",
+  "estimatedPriceKrw": 373800,
+  "priceBand": "30~60만원",
+  "speedLabel": "5.5GHz",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "CPU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 21436,
+  "valueIndex": 5734.6,
+  "aiUseScore": 13933,
+  "powerWatts": 65,
+  "tags": [
+    "Zen5",
+    "productivity",
+    "gaming"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "CPU",
+    "partId": "cpu-amd-ryzen-7-9700x-granite-ridge",
+    "partName": "AMD Ryzen 7 9700X (Granite Ridge)",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "CPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 1000,
+      "value": 1000,
+      "aiFit": 1000,
+      "priceEfficiency": 270,
+      "powerEfficiency": 1000
+    },
+    "nbVector": [
+      100,
+      1000,
+      1000,
+      1000,
+      270,
+      1000
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 547.221,
+    "nbMin": 329.692,
+    "weightedScore": 564,
+    "nbBand": "500~699",
+    "summary": "CPU AMD Ryzen 7 9700X (Granite Ridge) 부품을 속도 중심 N/B 데이터베이스 점수 564점으로 저장했습니다."
+  },
+  "nbWeightedScore": 564,
+  "nbMax": 547.221,
+  "nbMin": 329.692,
+  "nbBand": "500~699",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=AMD%20Ryzen%207%209700X%20%EC%A0%95%ED%92%88%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "8-core, 16-thread CPU. Performance value based on Cinebench R23 Multi.",
+  "textRepair": null
+}

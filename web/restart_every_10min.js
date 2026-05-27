@@ -79,6 +79,9 @@ function stopServerGracefully(callback) {
   const targetPid = child.pid;
   log(`서버 종료 시도 (pid: ${targetPid})`);
 
+  // ★ 중요: exit 리스너를 제거하여 child의 "예상치 못한 종료 감지" 재시작 방지
+  child.removeAllListeners('exit');
+
   let finished = false;
   const done = () => {
     if (finished) return;
@@ -102,10 +105,16 @@ function stopServerGracefully(callback) {
 }
 
 function restartServer() {
+  if (isRestarting) {
+    log('이미 재시작 중이므로 건너뜀');
+    return;
+  }
+  isRestarting = true;
   log('10분 주기 재시작 시작');
   stopServerGracefully(() => {
     log('포트 정리 후 재시작 진행');
     killAllNodeProcesses(() => {
+      isRestarting = false;
       startServer();
     });
   });

@@ -1,0 +1,84 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-05-27T23:36:11.263+09:00",
+  "category": "GPU",
+  "id": "gpu-rtx-4060-ti-storm-x-dual-oc-d6-8gb",
+  "name": "이엠텍 지포스 RTX 4060 Ti STORM X Dual OC D6 8GB",
+  "maker": "이엠텍",
+  "platform": "PCIe 4.0",
+  "estimatedPriceKrw": 566840,
+  "priceBand": "30~60만원",
+  "speedLabel": "2685MHz",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "GPU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 65,
+  "valueIndex": 11.5,
+  "aiUseScore": 42,
+  "powerWatts": 160,
+  "tags": [
+    "gaming"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "GPU",
+    "partId": "gpu-rtx-4060-ti-storm-x-dual-oc-d6-8gb",
+    "partName": "이엠텍 지포스 RTX 4060 Ti STORM X Dual OC D6 8GB",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "GPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 650,
+      "value": 153,
+      "aiFit": 420,
+      "priceEfficiency": 180,
+      "powerEfficiency": 135
+    },
+    "nbVector": [
+      100,
+      650,
+      153,
+      420,
+      180,
+      135
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 133.28,
+    "nbMin": 372.4,
+    "weightedScore": 258,
+    "nbBand": "100~499",
+    "summary": "GPU 이엠텍 지포스 RTX 4060 Ti STORM X Dual OC D6 8GB 부품을 속도 중심 N/B 데이터베이스 점수 258점으로 저장했습니다."
+  },
+  "nbWeightedScore": 258,
+  "nbMax": 133.28,
+  "nbMin": 372.4,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=%EC%9D%B4%EC%97%A0%ED%85%8D%20%EC%A7%80%ED%8F%AC%EC%8A%A4%20RTX%204060%20Ti%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "STORM X Dual OC model",
+  "textRepair": null
+}

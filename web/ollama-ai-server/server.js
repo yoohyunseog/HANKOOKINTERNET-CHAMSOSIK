@@ -3,14 +3,42 @@ const crypto = require("crypto");
 const fs = require("fs");
 const path = require("path");
 
+function loadEnvFile(filePath) {
+  try {
+    if (!fs.existsSync(filePath)) return;
+    const lines = fs.readFileSync(filePath, "utf8").split(/\r?\n/);
+    for (const line of lines) {
+      const trimmed = line.trim();
+      if (!trimmed || trimmed.startsWith("#")) continue;
+      const separator = trimmed.indexOf("=");
+      if (separator <= 0) continue;
+      const key = trimmed.slice(0, separator).trim();
+      let value = trimmed.slice(separator + 1).trim();
+      if ((value.startsWith('"') && value.endsWith('"')) || (value.startsWith("'") && value.endsWith("'"))) {
+        value = value.slice(1, -1);
+      }
+      if (!process.env[key]) process.env[key] = value;
+    }
+  } catch (error) {
+    console.warn(`[env] failed to load ${filePath}: ${error.message}`);
+  }
+}
+
+loadEnvFile(path.join(__dirname, "..", ".env"));
+loadEnvFile(path.join(__dirname, ".env"));
+
 const HOST = process.env.HOST || "0.0.0.0";
 const PORT = Number(process.env.PORT || 3110);
 const OLLAMA_URL = (process.env.OLLAMA_URL || "http://127.0.0.1:11434").replace(/\/$/, "");
-const DEFAULT_MODEL = process.env.OLLAMA_MODEL || "kimi-k2.6:cloud";
+const DEFAULT_MODEL = process.env.OLLAMA_MODEL || "deepseek-v4-flash:cloud";
 const API_TOKEN = process.env.OLLAMA_PROXY_TOKEN || "";
+const OLLAMA_API_KEY = process.env.OLLAMA_API_KEY || process.env.OLLAMA_WEB_SEARCH_API_KEY || process.env.OLLAMA_KEY || "";
+const OLLAMA_WEB_SEARCH_URL = process.env.OLLAMA_WEB_SEARCH_URL || "https://ollama.com/api/web_search";
 const ALLOWED_ORIGIN = process.env.ALLOWED_ORIGIN || "*";
 const MAX_BODY_BYTES = Number(process.env.MAX_BODY_BYTES || 1_000_000);
 const NEWS_SEARCH_LIMIT = Number(process.env.NEWS_SEARCH_LIMIT || 10);
+const WEB_SEARCH_LIMIT = Number(process.env.WEB_SEARCH_LIMIT || 5);
+const WEB_SEARCH_TIMEOUT_MS = Number(process.env.WEB_SEARCH_TIMEOUT_MS || 20_000);
 const DATA_DIR = process.env.NARRATIVE_DATA_DIR || path.join(__dirname, "data");
 const NARRATIVE_MEMORY_FILE = process.env.NARRATIVE_MEMORY_FILE || path.join(DATA_DIR, "narrative-memory.json");
 const REBUTTAL_CONFIG_FILE = path.join(__dirname, "..", "public", "한국인터넷.한국", "참소식.com", "ai-issue-briefing", "rebuttal-dj-lines.json");
@@ -1561,6 +1589,112 @@ async function callOllamaChat({ model, messages, options }) {
   return payload;
 }
 
+function clampWebSearchLimit(value) {
+  const limit = Number(value || WEB_SEARCH_LIMIT);
+  if (!Number.isFinite(limit)) return WEB_SEARCH_LIMIT;
+  return Math.min(Math.max(Math.trunc(limit), 1), 10);
+}
+
+function lastUserContent(messages) {
+  for (let index = messages.length - 1; index >= 0; index -= 1) {
+    const message = messages[index];
+    if (message && message.role === "user" && typeof message.content === "string") {
+      return message.content.trim();
+    }
+  }
+  return "";
+}
+
+async function callOllamaWebSearch(query, maxResults = WEB_SEARCH_LIMIT) {
+  if (!OLLAMA_API_KEY) {
+    const error = new Error("OLLAMA_API_KEY is required for Ollama web search");
+    error.status = 500;
+    throw error;
+  }
+
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), WEB_SEARCH_TIMEOUT_MS);
+
+  try {
+    const response = await fetch(OLLAMA_WEB_SEARCH_URL, {
+      method: "POST",
+      headers: {
+        "Authorization": `Bearer ${OLLAMA_API_KEY}`,
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        query,
+        max_results: clampWebSearchLimit(maxResults)
+      }),
+      signal: controller.signal
+    });
+
+    const text = await response.text();
+    let payload = null;
+
+    try {
+      payload = text ? JSON.parse(text) : {};
+    } catch {
+      payload = { raw: text };
+    }
+
+    if (!response.ok) {
+      const error = new Error("Ollama web search failed");
+      error.status = response.status;
+      error.payload = payload;
+      throw error;
+    }
+
+    return payload;
+  } catch (error) {
+    if (error.name === "AbortError") {
+      const timeoutError = new Error("Ollama web search timed out");
+      timeoutError.status = 504;
+      throw timeoutError;
+    }
+    throw error;
+  } finally {
+    clearTimeout(timeout);
+  }
+}
+
+function webSearchResultsToText(query, results) {
+  const lines = [
+    "[Web search results]",
+    `Query: ${query}`,
+    `Results: ${results.length}`,
+    ""
+  ];
+
+  results.forEach((item, index) => {
+    lines.push(`${index + 1}. ${item.title || "Untitled"}`);
+    if (item.url) lines.push(`- URL: ${item.url}`);
+    if (item.content) lines.push(`- Snippet: ${String(item.content).replace(/\s+/g, " ").trim()}`);
+    lines.push("");
+  });
+
+  return lines.join("\n");
+}
+
+function buildSearchChatMessages(messages, query, results) {
+  return [
+    {
+      role: "system",
+      content: [
+        "Answer in Korean.",
+        "Use the supplied web search results as current context.",
+        "When facts come from search results, include the source URL in the answer.",
+        "If the results are insufficient, say what still needs confirmation."
+      ].join(" ")
+    },
+    {
+      role: "system",
+      content: webSearchResultsToText(query, results)
+    },
+    ...messages
+  ];
+}
+
 function extractOllamaText(data) {
   return data?.message?.content || data?.response || data?.content || data?.message?.thinking || "";
 }
@@ -1599,6 +1733,234 @@ function stripHtml(text = "") {
     .replace(/<[^>]*>/g, " ")
     .replace(/\s+/g, " ")
     .trim();
+}
+
+// ============================================================
+// 스마트 라우팅: 뉴스 질문 vs 일반 질문 자동 판단
+// ============================================================
+
+/** 뉴스/시사 관련 키워드 패턴 */
+const NEWS_PATTERNS = [
+  /뉴스|속보|시사|이슈|최신.?소식|오늘.?소식|헤드라인/i,
+  /정치|경제|사회|문화|국제|과학|기술|연예|스포츠/i,
+  /대통령|정부|국회|선거|법안|정책|장관/i,
+  /주식|증시|환율|금리|물가|부동산|경기|무역/i,
+  /전쟁|분쟁|테러|사고|재해|기후|환경|코로나/i,
+  /AI|인공지능|로봇|자율주행|반도체|배터리|우주/i,
+  /요약|정리|분석|전망|동향|트렌드/i,
+  /오늘.?뉴스|오늘의.?뉴스|최신.?뉴스|실시간.?뉴스/i,
+  /무슨.?일|어떤.?일|뭐.?있|소식.?있/i
+];
+
+/** 뉴스 질문인지 판단 */
+function isNewsQuery(query) {
+  if (!query || typeof query !== "string") return false;
+  const q = query.trim();
+  if (q.length < 3) return false;
+  return NEWS_PATTERNS.some((pattern) => pattern.test(q));
+}
+
+/** 웹 페이지 본문 추출 (Readability 유사) */
+async function fetchWebContent(url) {
+  try {
+    const response = await fetch(url, {
+      headers: {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "Accept": "text/html,application/xhtml+xml",
+        "Accept-Language": "ko-KR,ko;q=0.9"
+      },
+      signal: AbortSignal.timeout(15000)
+    });
+
+    if (!response.ok) return null;
+
+    const html = await response.text();
+
+    // <title> 추출
+    const titleMatch = html.match(/<title[^>]*>([\s\S]*?)<\/title>/i);
+    const title = titleMatch ? stripHtml(titleMatch[1]) : "";
+
+    // <meta description> 추출
+    const descMatch = html.match(/<meta\s+name=["']description["']\s+content=["']([\s\S]*?)["']/i);
+    const description = descMatch ? decodeXmlEntities(descMatch[1]) : "";
+
+    // 본문 후보: <article>, <main>, .content, .article-body 등
+    let body = "";
+    const bodyCandidates = [
+      html.match(/<article[^>]*>([\s\S]*?)<\/article>/i),
+      html.match(/<main[^>]*>([\s\S]*?)<\/main>/i),
+      html.match(/<div[^>]*class=["'][^"']*content[^"']*["'][^>]*>([\s\S]*?)<\/div>/i),
+      html.match(/<div[^>]*class=["'][^"']*article-body[^"']*["'][^>]*>([\s\S]*?)<\/div>/i),
+      html.match(/<div[^>]*class=["'][^"']*entry-content[^"']*["'][^>]*>([\s\S]*?)<\/div>/i),
+      html.match(/<body[^>]*>([\s\S]*?)<\/body>/i)
+    ];
+
+    for (const match of bodyCandidates) {
+      if (match) {
+        body = stripHtml(match[1]);
+        if (body.length > 200) break;
+      }
+    }
+
+    // 너무 길면 2000자로 제한
+    if (body.length > 2000) body = body.slice(0, 2000) + "...";
+
+    return { title, description, body, url };
+  } catch {
+    return null;
+  }
+}
+
+/** Ollama로 뉴스 요약 생성 */
+async function summarizeWithOllama(title, body, sourceUrl) {
+  const prompt = [
+    "다음 뉴스 기사를 참소식.com 스타일로 요약해줘.",
+    "",
+    `제목: ${title}`,
+    `출처: ${sourceUrl}`,
+    `본문: ${body}`,
+    "",
+    "다음 형식으로 출력해줘:",
+    "📰 [제목]",
+    "📝 한줄요약:",
+    "🔍 핵심 내용:",
+    "📍 출처:",
+    "",
+    "한국어로 작성하고, 확인되지 않은 정보는 '확인 필요'라고 표시해."
+  ].join("\n");
+
+  const data = await callOllamaChat({
+    model: DEFAULT_MODEL,
+    messages: [{ role: "user", content: prompt }],
+    options: { temperature: 0.3, num_predict: 800 }
+  });
+
+  return extractOllamaText(data) || "요약을 생성할 수 없습니다.";
+}
+
+/** 스마트 채팅 핸들러: 뉴스 질문 → 검색+본문추출+요약, 일반 질문 → 바로 Ollama */
+async function handleSmartChat(req, res) {
+  if (!verifyAuth(req)) {
+    sendJson(res, 401, { ok: false, error: "Unauthorized" });
+    return;
+  }
+
+  try {
+    const body = await parseJsonBody(req);
+    const messages = normalizeMessages(body);
+    const query = String(body.query || body.q || lastUserContent(messages) || "").trim();
+
+    if (!messages.length && !query) {
+      sendJson(res, 400, { ok: false, error: "messages or query is required" });
+      return;
+    }
+
+    const isNews = isNewsQuery(query);
+    console.log(`[smart-chat] query="${query.slice(0, 50)}" isNews=${isNews}`);
+
+    if (isNews) {
+      // === 뉴스 질문: 웹 검색 → 본문 추출 → 요약 ===
+      console.log("[smart-chat] 뉴스 질문 감지 → 웹 검색 실행");
+
+      // 1. 웹 검색
+      const searchData = await callOllamaWebSearch(query, NEWS_SEARCH_LIMIT);
+      const results = Array.isArray(searchData.results) ? searchData.results : [];
+
+      if (results.length === 0) {
+        // 검색 결과 없으면 일반 채팅으로 폴백
+        const data = await callOllamaChat({
+          model: body.model || DEFAULT_MODEL,
+          messages,
+          options: body.options || { temperature: 0.5, num_predict: 900 }
+        });
+        sendJson(res, 200, {
+          ok: true, model: body.model || DEFAULT_MODEL,
+          mode: "smart-chat-fallback",
+          content: extractOllamaText(data),
+          search: { query, results: [] }
+        });
+        return;
+      }
+
+      // 2. 상위 3개 결과 본문 추출 (병렬)
+      const topUrls = results.slice(0, 3).map((r) => r.url).filter(Boolean);
+      const webPages = await Promise.allSettled(topUrls.map(fetchWebContent));
+      const fetchedPages = webPages
+        .filter((r) => r.status === "fulfilled" && r.value)
+        .map((r) => r.value);
+
+      // 3. 검색 결과 + 본문으로 요약
+      const searchContext = results.map((item, i) =>
+        `[${i + 1}] ${item.title || "Untitled"}\nURL: ${item.url || ""}\n${item.content || ""}`
+      ).join("\n\n");
+
+      const pageContext = fetchedPages.map((page, i) =>
+        `--- 본문 ${i + 1} ---\n제목: ${page.title}\n${page.body || page.description || ""}`
+      ).join("\n\n");
+
+      const summaryPrompt = [
+        "다음은 사용자의 뉴스 질문에 대한 웹 검색 결과와 본문입니다.",
+        `질문: ${query}`,
+        "",
+        "[검색 결과]",
+        searchContext,
+        "",
+        pageContext ? "[본문 내용]\n" + pageContext : "",
+        "",
+        "참소식.com 스타일로 다음 형식으로 출력해줘:",
+        "📰 [관련 뉴스 제목]",
+        "📝 한줄요약:",
+        "🔍 핵심 내용:",
+        "📍 출처: (URL 포함)",
+        "",
+        "여러 뉴스가 있으면 각각 나눠서 작성해줘.",
+        "한국어로 작성하고, 확인되지 않은 정보는 '확인 필요'라고 표시해."
+      ].join("\n");
+
+      const summaryData = await callOllamaChat({
+        model: body.model || DEFAULT_MODEL,
+        messages: [{ role: "user", content: summaryPrompt }],
+        options: { temperature: 0.3, num_predict: 1500 }
+      });
+
+      const summary = extractOllamaText(summaryData) || "요약을 생성할 수 없습니다.";
+
+      sendJson(res, 200, {
+        ok: true,
+        model: body.model || DEFAULT_MODEL,
+        mode: "smart-chat-news",
+        content: summary,
+        search: { query, results, fetched: fetchedPages.length }
+      });
+      return;
+    }
+
+    // === 일반 질문: 바로 Ollama ===
+    console.log("[smart-chat] 일반 질문 → Ollama 직접 응답");
+    const data = await callOllamaChat({
+      model: body.model || DEFAULT_MODEL,
+      messages: messages.length > 0 ? messages : [{ role: "user", content: query }],
+      options: body.options || {
+        temperature: Number(body.temperature || 0.5),
+        num_predict: Number(body.num_predict || 900)
+      }
+    });
+
+    sendJson(res, 200, {
+      ok: true,
+      model: body.model || DEFAULT_MODEL,
+      mode: "smart-chat-direct",
+      content: extractOllamaText(data) || "응답이 비어 있습니다.",
+      raw: data
+    });
+  } catch (error) {
+    console.error("[smart-chat] error:", error.message);
+    sendJson(res, error.status || 500, {
+      ok: false,
+      error: error.message,
+      detail: error.payload || null
+    });
+  }
 }
 
 function xmlTag(block, tagName) {
@@ -1777,15 +2139,108 @@ async function handleChat(req, res) {
       return;
     }
 
-    const content = withRebuttalLine(messages.map((message) => message.content).join("\n"));
+    const data = await callOllamaChat({
+      model: body.model || DEFAULT_MODEL,
+      messages,
+      options: body.options || {
+        temperature: Number(body.temperature || 0.5),
+        num_predict: Number(body.num_predict || 900)
+      }
+    });
+    const content = extractOllamaText(data) || "응답이 비어 있습니다. 질문을 조금 더 구체적으로 입력해 주세요.";
 
     sendJson(res, 200, {
       ok: true,
       model: body.model || DEFAULT_MODEL,
       content,
+      raw: data
+    });
+  } catch (error) {
+    sendJson(res, error.status || 500, {
+      ok: false,
+      error: error.message,
+      detail: error.payload || null
+    });
+  }
+}
+
+async function handleWebSearch(req, res) {
+  if (!verifyAuth(req)) {
+    sendJson(res, 401, { ok: false, error: "Unauthorized" });
+    return;
+  }
+
+  try {
+    const body = await parseJsonBody(req);
+    const query = String(body.query || body.q || "").trim();
+
+    if (!query) {
+      sendJson(res, 400, { ok: false, error: "query is required" });
+      return;
+    }
+
+    const maxResults = clampWebSearchLimit(body.max_results || body.maxResults || body.limit);
+    const data = await callOllamaWebSearch(query, maxResults);
+
+    sendJson(res, 200, {
+      ok: true,
+      query,
+      max_results: maxResults,
+      results: Array.isArray(data.results) ? data.results : [],
+      raw: data
+    });
+  } catch (error) {
+    sendJson(res, error.status || 500, {
+      ok: false,
+      error: error.message,
+      detail: error.payload || null
+    });
+  }
+}
+
+async function handleSearchChat(req, res) {
+  if (!verifyAuth(req)) {
+    sendJson(res, 401, { ok: false, error: "Unauthorized" });
+    return;
+  }
+
+  try {
+    const body = await parseJsonBody(req);
+    const messages = normalizeMessages(body);
+    const query = String(body.query || body.q || lastUserContent(messages)).trim();
+
+    if (!messages.length) {
+      sendJson(res, 400, { ok: false, error: "messages or prompt is required" });
+      return;
+    }
+
+    if (!query) {
+      sendJson(res, 400, { ok: false, error: "query is required" });
+      return;
+    }
+
+    const maxResults = clampWebSearchLimit(body.max_results || body.maxResults || body.limit);
+    const searchData = await callOllamaWebSearch(query, maxResults);
+    const results = Array.isArray(searchData.results) ? searchData.results : [];
+    const data = await callOllamaChat({
+      model: body.model || DEFAULT_MODEL,
+      messages: buildSearchChatMessages(messages, query, results),
+      options: body.options || {
+        temperature: Number(body.temperature || 0.35),
+        num_predict: Number(body.num_predict || 1200),
+        num_ctx: Number(body.num_ctx || 32768)
+      }
+    });
+
+    sendJson(res, 200, {
+      ok: true,
+      model: body.model || DEFAULT_MODEL,
+      query,
+      results,
+      content: extractOllamaText(data),
       raw: {
-        bypassedOllama: true,
-        reason: "static rebuttal DJ line"
+        search: searchData,
+        chat: data
       }
     });
   } catch (error) {
@@ -1863,7 +2318,8 @@ async function handleHealth(res) {
     ollama,
     ollamaUrl: OLLAMA_URL,
     defaultModel: DEFAULT_MODEL,
-    authEnabled: Boolean(API_TOKEN)
+    authEnabled: Boolean(API_TOKEN),
+    webSearchEnabled: Boolean(OLLAMA_API_KEY)
   });
 }
 
@@ -1984,7 +2440,14 @@ const server = http.createServer((req, res) => {
   const url = new URL(req.url, `http://${req.headers.host || "localhost"}`);
 
   if (req.method === "OPTIONS") {
-    sendJson(res, 204, {});
+    res.writeHead(204, {
+      "Access-Control-Allow-Origin": ALLOWED_ORIGIN,
+      "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
+      "Access-Control-Allow-Headers": "Content-Type, Authorization, ngrok-skip-browser-warning",
+      "Access-Control-Max-Age": "86400",
+      "Access-Control-Allow-Credentials": "true"
+    });
+    res.end();
     return;
   }
 
@@ -2000,6 +2463,28 @@ const server = http.createServer((req, res) => {
 
   if (url.pathname === "/api/chat" && req.method === "POST") {
     handleChat(req, res);
+    return;
+  }
+
+  if (url.pathname === "/api/web-search" && req.method === "POST") {
+    handleWebSearch(req, res);
+    return;
+  }
+
+  if (url.pathname === "/api/search-chat" && req.method === "POST") {
+    handleSearchChat(req, res);
+    return;
+  }
+
+  // /api/ollama-chat-with-search → /api/search-chat alias (메인 서버 호환)
+  if (url.pathname === "/api/ollama-chat-with-search" && req.method === "POST") {
+    handleSearchChat(req, res);
+    return;
+  }
+
+  // 스마트 채팅: 뉴스 질문은 검색+요약, 일반 질문은 바로 Ollama
+  if (url.pathname === "/api/smart-chat" && req.method === "POST") {
+    handleSmartChat(req, res);
     return;
   }
 
@@ -2026,7 +2511,7 @@ const server = http.createServer((req, res) => {
   sendJson(res, 404, {
     ok: false,
     error: "Not found",
-    routes: ["GET /health", "POST /api/chat", "POST /api/game-ai-advice", "GET|POST /api/issue-search", "GET|POST /api/narrative-memory", "GET|POST /api/visitor-room"]
+    routes: ["GET /health", "POST /api/chat", "POST /api/web-search", "POST /api/search-chat", "POST /api/game-ai-advice", "GET|POST /api/issue-search", "GET|POST /api/narrative-memory", "GET|POST /api/visitor-room"]
   });
 });
 

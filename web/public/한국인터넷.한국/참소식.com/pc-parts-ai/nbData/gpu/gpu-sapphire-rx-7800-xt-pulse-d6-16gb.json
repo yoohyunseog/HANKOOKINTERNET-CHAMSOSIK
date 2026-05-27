@@ -1,0 +1,84 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-05-27T23:36:11.263+09:00",
+  "category": "GPU",
+  "id": "gpu-sapphire-rx-7800-xt-pulse-d6-16gb",
+  "name": "SAPPHIRE 라데온 RX 7800 XT PULSE D6 16GB",
+  "maker": "SAPPHIRE",
+  "platform": "PCIe 4.0 x16",
+  "estimatedPriceKrw": 670000,
+  "priceBand": "60만원 이상",
+  "speedLabel": "2430MHz",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "GPU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 75,
+  "valueIndex": 11.2,
+  "aiUseScore": 49,
+  "powerWatts": 266,
+  "tags": [
+    "gaming"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "GPU",
+    "partId": "gpu-sapphire-rx-7800-xt-pulse-d6-16gb",
+    "partName": "SAPPHIRE 라데온 RX 7800 XT PULSE D6 16GB",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "GPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 750,
+      "value": 149,
+      "aiFit": 490,
+      "priceEfficiency": 150,
+      "powerEfficiency": 100
+    },
+    "nbVector": [
+      100,
+      750,
+      149,
+      490,
+      150,
+      100
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 116.964,
+    "nbMin": 348.315,
+    "weightedScore": 280,
+    "nbBand": "100~499",
+    "summary": "GPU SAPPHIRE 라데온 RX 7800 XT PULSE D6 16GB 부품을 속도 중심 N/B 데이터베이스 점수 280점으로 저장했습니다."
+  },
+  "nbWeightedScore": 280,
+  "nbMax": 116.964,
+  "nbMin": 348.315,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=AMD%20%EB%9D%BC%EB%8D%B0%EC%98%A8%20RX%207800%20XT%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "Based on typical market pricing for RX 7800 XT Pulse as specific price for this model was cut off in the text, but refurbished TUF models were listed around 670k.",
+  "textRepair": null
+}

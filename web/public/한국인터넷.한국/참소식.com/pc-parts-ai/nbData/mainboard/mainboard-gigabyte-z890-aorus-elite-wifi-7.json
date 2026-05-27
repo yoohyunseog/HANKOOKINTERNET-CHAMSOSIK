@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-26T17:10:26.513+09:00",
+  "updatedAt": "2026-05-27T23:36:11.263+09:00",
   "category": "Mainboard",
   "id": "mainboard-gigabyte-z890-aorus-elite-wifi-7",
   "name": "Gigabyte Z890 AORUS ELITE WIFI 7",
@@ -21,7 +21,7 @@
   "performance": 90,
   "valueIndex": 13.8,
   "aiUseScore": 59,
-  "powerWatts": 0,
+  "powerWatts": null,
   "tags": [
     "Z890",
     "WiFi 7",
@@ -82,9 +82,5 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Gigabyte%20Z890%20AORUS%20ELITE%20WIFI%20price",
   "notes": "16+1+2 phase power delivery, PCIe 5.0 support, Thunderbolt 4",
-  "textRepair": null,
-  "sourceType": "collector",
-  "sourceQuery": "",
-  "collectedPricesKrw": [],
-  "targetMatched": null
+  "textRepair": null
 }

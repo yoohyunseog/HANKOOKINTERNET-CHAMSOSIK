@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-26T17:10:26.066+09:00",
+  "updatedAt": "2026-05-27T23:36:11.263+09:00",
   "category": "CPU",
   "id": "cpu-core-ultra-9-285k",
   "name": "Intel Core Ultra 9 285K",
@@ -82,9 +82,5 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Intel%20Core%20Ultra%209%20285K%20price",
   "notes": "Additional AI PC candidate collected when saved parts are already exhausted.",
-  "textRepair": null,
-  "sourceType": "collector",
-  "sourceQuery": "",
-  "collectedPricesKrw": [],
-  "targetMatched": null
+  "textRepair": null
 }

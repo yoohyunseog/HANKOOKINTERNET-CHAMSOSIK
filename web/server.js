@@ -65,7 +65,9 @@ const limiter = rateLimit({
            path.startsWith('/api/visits/') ||
            path.startsWith('/api/keywords/') ||
            path.startsWith('/api/radio-state') ||
+           path.startsWith('/api/ollama-') ||
            originalUrl.startsWith('/api/radio-state') ||
+           originalUrl.startsWith('/api/ollama-') ||
            path.startsWith('/api/stats') ||
            path === '/api/health' ||
            /^\/google[a-zA-Z0-9]+\.html$/.test(path);
@@ -76,11 +78,20 @@ app.use(limiter);
 app.use(compression()); // Gzip 압축 활성화
 const PORT = process.env.PORT || 3000;
 const OLLAMA_BASE_URL = process.env.OLLAMA_BASE_URL || 'http://localhost:11434';
+const AI_TUNNEL_URL = (process.env.AI_TUNNEL_URL || 'https://gilbert-bases-tracked-hopes.trycloudflare.com').replace(/\/$/, '');
+const AI_TUNNEL_FILE = process.env.AI_TUNNEL_FILE || path.join(__dirname, 'data', 'ai-tunnel-url.json');
+const AI_CHAT_MODEL = process.env.AI_CHAT_MODEL || process.env.OLLAMA_MODEL || 'llama3';
+
+// Ollama Web Search API 설정
+const OLLAMA_API_KEY = process.env.OLLAMA_API_KEY || '';
+const OLLAMA_WEB_SEARCH_URL = process.env.OLLAMA_WEB_SEARCH_URL || 'https://ollama.com/api/web_search';
+const WEB_SEARCH_LIMIT = parseInt(process.env.WEB_SEARCH_LIMIT || '5', 10);
+const WEB_SEARCH_TIMEOUT_MS = parseInt(process.env.WEB_SEARCH_TIMEOUT_MS || '20000', 10);
 const TREND_DATA_PATH = path.join(__dirname, '..', 'data', 'naver_creator_trends', 'latest_trend_data.json');
 const DEFAULT_MODEL = process.env.OLLAMA_MODEL || 'llama3';
 const COUPANG_DOMAIN = 'https://api-gateway.coupang.com';
-const COUPANG_ACCESS_KEY = process.env.COUPANG_ACCESS_KEY || '';
-const COUPANG_SECRET_KEY = process.env.COUPANG_SECRET_KEY || '';
+const COUPANG_ACCESS_KEY = process.env.COUPANG_ACCESS_KEY || 'a4672c2f-d1e7-4f48-9c34-30535528c8c7';
+const COUPANG_SECRET_KEY = process.env.COUPANG_SECRET_KEY || 'ed03dd673ad780db96453e2c869cfc9861584802';
 const COUPANG_SUB_ID = process.env.COUPANG_SUB_ID || '';
 const coupangProductsCache = new Map();
 const COUPANG_CACHE_TTL_MS = parseInt(process.env.COUPANG_CACHE_TTL_MS || '600000', 10);
@@ -349,7 +360,11 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 // Favicon 요청을 기본적으로 처리
 app.get('/favicon.ico', (req, res) => {
-    res.status(204).end();
+    const host = (req.get('host') || '').split(':')[0].toLowerCase().replace(/^www\./, '');
+    if (host === '참소식.com' || host === 'xn--9l4b4xi9r.com') {
+        return res.redirect(302, '/favicon.svg');
+    }
+    return res.status(204).end();
 });
 
 function decodePathSafely(value) {
@@ -555,29 +570,130 @@ function normalizeKeyword(rawText) {
 }
 
 function normalizeCoupangKeyword(rawText) {
-    return String(rawText || '')
+    const normalized = String(rawText || '')
         .replace(/[^\p{L}\p{N}\s.+#-]/gu, ' ')
         .replace(/\s+/g, ' ')
         .trim()
         .slice(0, 80);
+
+    return extractCoupangProductKeyword(normalized);
 }
 
-function createCoupangAuthorization(method, pathWithQuery) {
-    const signedDate = new Date().toISOString().slice(2, 19).replace(/[-:T]/g, '');
-    const message = signedDate + method.toUpperCase() + pathWithQuery;
+function normalizeCoupangKeywords(input) {
+    const values = Array.isArray(input) ? input : [input];
+    const keywords = [];
+    const seen = new Set();
+
+    for (const value of values) {
+        const parts = String(value || '')
+            .split(/[,\n|]+/g)
+            .map((item) => normalizeCoupangKeyword(item))
+            .filter(Boolean);
+
+        for (const keyword of parts) {
+            const key = keyword.toLowerCase();
+            if (!seen.has(key)) {
+                seen.add(key);
+                keywords.push(keyword);
+            }
+            if (keywords.length >= 8) return keywords;
+        }
+    }
+
+    return keywords;
+}
+
+function extractCoupangProductKeyword(keyword) {
+    if (!keyword) return '';
+
+    const patterns = [
+        /\bCore\s+i[3579][-\s]?\d{4,5}[A-Z]*\b/i,
+        /\bi[3579][-\s]?\d{4,5}[A-Z]*\b/i,
+        /\bCore\s+Ultra\s+[3579][-\s]?\d{3,5}[A-Z]*\b/i,
+        /\bCore\s+9\s+\d{3,5}[A-Z]*\b/i,
+        /\bRyzen\s+(?:AI\s+)?[3579]\s+\d{3,5}[A-Z0-9]*\b/i,
+        /\bXeon\s+[A-Z0-9 -]{2,18}\b/i,
+        /\bRTX\s?\d{4}(?:\s?Ti|\s?Super)?\b/i,
+        /\bGTX\s?\d{4}(?:\s?Ti)?\b/i,
+        /\bRX\s?\d{4}(?:\s?XT|\s?XTX)?\b/i,
+        /\bFSR\s?\d(?:\.\d)?\b/i,
+        /\bDLSS\s?\d(?:\.\d)?\b/i,
+        /\bDDR[45][-\s]?\d{3,5}\b/i,
+        /\bPCIe\s?\d(?:\.\d)?\b/i,
+        /\b12V-?2x6\b/i,
+        /\b12VHPWR\b/i
+    ];
+
+    for (const pattern of patterns) {
+        const match = keyword.match(pattern);
+        if (match && match[0]) {
+            return match[0].replace(/\s+/g, ' ').trim().slice(0, 80);
+        }
+    }
+
+    const phraseRules = [
+        { test: /바틀렛\s?레이크|Bartlett\s+Lake/i, value: '인텔 바틀렛레이크 CPU' },
+        { test: /그래니트\s?래피즈|Granite\s+Rapids/i, value: 'Intel Xeon Granite Rapids' },
+        { test: /MRDIMM/i, value: 'MRDIMM 메모리' },
+        { test: /라데온|Radeon/i, value: 'AMD Radeon 그래픽카드' },
+        { test: /지포스|GeForce/i, value: 'NVIDIA GeForce 그래픽카드' },
+        { test: /인텔|Intel/i, value: '인텔 CPU' },
+        { test: /AMD/i, value: 'AMD CPU' },
+        { test: /엔비디아|NVIDIA/i, value: 'NVIDIA 그래픽카드' }
+    ];
+
+    for (const rule of phraseRules) {
+        if (rule.test.test(keyword)) return rule.value;
+    }
+
+    return keyword;
+}
+
+function createCoupangAuthorization(method, uri) {
+    if (!COUPANG_ACCESS_KEY || !COUPANG_SECRET_KEY) {
+        throw new Error('COUPANG_ACCESS_KEY 또는 COUPANG_SECRET_KEY가 비어 있습니다.');
+    }
+
+    const datetime = new Date()
+        .toISOString()
+        .slice(2, 19)
+        .replace(/:/g, '')
+        .replace(/-/g, '') + 'Z';
+
+    const parts = uri.split('?');
+
+    if (parts.length > 2) {
+        throw new Error('incorrect uri format');
+    }
+
+    const path = parts[0];
+    const query = parts[1] || '';
+
+    const message = datetime + method.toUpperCase() + path + query;
+
     const signature = crypto
         .createHmac('sha256', COUPANG_SECRET_KEY)
-        .update(message)
+        .update(message, 'utf8')
         .digest('hex');
 
-    return `CEA algorithm=HmacSHA256, access-key=${COUPANG_ACCESS_KEY}, signed-date=${signedDate}, signature=${signature}`;
+    console.log('[coupang-signature-debug]', {
+        datetime,
+        method: method.toUpperCase(),
+        path,
+        query,
+        message
+    });
+
+    return 'CEA algorithm=HmacSHA256, access-key=' + COUPANG_ACCESS_KEY +
+        ', signed-date=' + datetime +
+        ', signature=' + signature;
 }
 
-function mapCoupangProducts(payload) {
+function mapCoupangProducts(payload, limit = 4) {
     const items = payload?.data?.productData || payload?.data || [];
     if (!Array.isArray(items)) return [];
 
-    return items.slice(0, 4).map((item) => ({
+    return items.slice(0, limit).map((item) => ({
         name: item.productName || item.name || '',
         price: Number(item.productPrice || item.price || 0),
         image: item.productImage || item.imageUrl || '',
@@ -586,6 +702,48 @@ function mapCoupangProducts(payload) {
         isRocket: Boolean(item.isRocket),
         isFreeShipping: Boolean(item.isFreeShipping)
     })).filter((item) => item.name && item.url);
+}
+
+async function fetchCoupangProductsByKeyword(keyword, limit) {
+    const path = '/v2/providers/affiliate_open_api/apis/openapi/products/search';
+
+    const queryParams = new URLSearchParams({
+        keyword,
+        limit: String(limit)
+    });
+
+    if (COUPANG_SUB_ID) {
+        queryParams.set('subId', COUPANG_SUB_ID);
+    }
+
+    const query = queryParams.toString();
+    const uri = `${path}?${query}`;
+    const url = `${COUPANG_DOMAIN}${uri}`;
+
+    const response = await fetch(url, {
+        method: 'GET',
+        headers: {
+            Authorization: createCoupangAuthorization('GET', uri),
+            'Content-Type': 'application/json;charset=UTF-8'
+        }
+    });
+
+    const text = await response.text();
+    let payload = {};
+    try {
+        payload = JSON.parse(text);
+    } catch {
+        payload = { raw: text };
+    }
+
+    if (!response.ok) {
+        const error = new Error('Coupang Partners API request failed.');
+        error.status = response.status;
+        error.payload = payload;
+        throw error;
+    }
+
+    return mapCoupangProducts(payload, limit);
 }
 
 function loadTrendKeywords(limit) {
@@ -649,6 +807,21 @@ function safeJsonParse(text) {
     }
 }
 
+function getAiTunnelUrl() {
+    try {
+        if (fs.existsSync(AI_TUNNEL_FILE)) {
+            const data = safeJsonParse(fs.readFileSync(AI_TUNNEL_FILE, 'utf8'));
+            const url = data?.url ? String(data.url).trim().replace(/\/$/, '') : '';
+            if (/^https:\/\/[a-z0-9-]+\.trycloudflare\.com$/i.test(url)) {
+                return url;
+            }
+        }
+    } catch (error) {
+        console.warn('[ai-tunnel] failed to read tunnel file:', error.message);
+    }
+    return AI_TUNNEL_URL;
+}
+
 // 홈페이지
 app.post('/api/silverkmk-ai', async (req, res) => {
     try {
@@ -673,6 +846,428 @@ app.post('/api/silverkmk-ai', async (req, res) => {
     } catch (error) {
         console.error('[silverkmk-ai] error:', error.message);
         return res.status(500).json({ ok: false, error: error.message || 'unknown error' });
+    }
+});
+
+app.get('/api/ollama-health', async (req, res) => {
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), 8000);
+
+    try {
+        let response = null;
+        let source = OLLAMA_BASE_URL;
+        const tunnelUrl = getAiTunnelUrl();
+
+        try {
+            response = await fetch(`${OLLAMA_BASE_URL.replace(/\/$/, '')}/api/tags`, { signal: controller.signal });
+        } catch (error) {
+            console.warn('[ollama-health] local candidate failed:', error.message);
+        }
+
+        if ((!response || !response.ok) && tunnelUrl) {
+            response = await fetch(`${tunnelUrl}/api/tags`, { signal: controller.signal });
+            source = tunnelUrl;
+        }
+
+        const text = await response.text();
+        const payload = safeJsonParse(text) || { raw: text };
+        return res.status(200).json({
+            ok: true,
+            server: 'chamsosik-ai-chat',
+            mode: response.ok
+                ? (source === tunnelUrl ? 'cloudflare-quick-tunnel' : 'server-local-ollama')
+                : 'server-built-in-fallback',
+            ollamaUrl: source,
+            defaultModel: AI_CHAT_MODEL,
+            ollama: response.ok ? 'ok' : `error:${response.status}`,
+            detail: payload
+        });
+    } catch (error) {
+        console.error('[ollama-health] error:', error.message);
+        return res.status(200).json({
+            ok: true,
+            server: 'chamsosik-ai-chat',
+            mode: 'server-built-in-fallback',
+            ollamaUrl: OLLAMA_BASE_URL,
+            defaultModel: AI_CHAT_MODEL,
+            ollama: error.message || 'unreachable'
+        });
+    } finally {
+        clearTimeout(timeout);
+    }
+});
+
+app.get('/api/ollama-proxy-info', (req, res) => {
+    return res.json({
+        ok: true,
+        proxy: 'server-local-ai',
+        target: OLLAMA_BASE_URL,
+        tunnel: getAiTunnelUrl(),
+        tunnelFile: AI_TUNNEL_FILE,
+        model: AI_CHAT_MODEL,
+        routes: ['/api/ollama-health', '/api/ollama-chat']
+    });
+});
+
+app.get('/api/ai-tunnel-url', (req, res) => {
+    return res.json({
+        ok: true,
+        url: getAiTunnelUrl(),
+        file: AI_TUNNEL_FILE
+    });
+});
+
+function normalizeChatMessages(body = {}) {
+    if (Array.isArray(body.messages)) {
+        return body.messages
+            .filter(item => item && typeof item.content === 'string')
+            .map(item => ({
+                role: item.role === 'assistant' || item.role === 'system' ? item.role : 'user',
+                content: item.content
+            }));
+    }
+
+    const prompt = body.prompt || body.message || body.userPrompt || '';
+    return prompt ? [{ role: 'user', content: String(prompt) }] : [];
+}
+
+function extractChatText(data) {
+    return data?.message?.content || data?.content || data?.response || data?.answer || data?.reply || '';
+}
+
+function builtInChatReply(messages) {
+    const prompt = messages.slice().reverse().find(item => item.role === 'user')?.content || '';
+    const lower = prompt.toLowerCase();
+
+    if (/^(안녕|안녕하세요|ㅎㅇ|hello|hi)(\s|[!.?。！？]|$)/i.test(prompt.trim())) {
+        return [
+            '안녕하세요. 참소식 AI입니다.',
+            '',
+            '뉴스 요약, 기사 제목 만들기, 팩트체크 체크리스트, 글 정리, 간단한 코드 리뷰를 도와드릴 수 있습니다.',
+            '원문이나 초안을 붙여 주시면 바로 다듬어 드리겠습니다.'
+        ].join('\n');
+    }
+
+    if (lower.includes('제목') || prompt.includes('기사')) {
+        return [
+            '참소식.com 기사 제목 후보입니다.',
+            '',
+            '1. 지금 확인해야 할 핵심 쟁점',
+            '2. 데이터로 보는 오늘의 변화',
+            '3. 현장에서 드러난 새로운 신호',
+            '4. 독자가 놓치기 쉬운 사실관계',
+            '5. 한눈에 정리한 주요 이슈',
+            '6. 논란보다 사실을 먼저 보는 뉴스',
+            '7. 다음 흐름을 가르는 결정적 장면',
+            '',
+            '리드문: 이번 사안은 단순한 사건보다 배경과 영향이 함께 읽혀야 합니다. 확인된 사실, 남은 쟁점, 독자가 알아야 할 변화를 중심으로 정리했습니다.'
+        ].join('\n');
+    }
+
+    if (lower.includes('요약') || lower.includes('정리')) {
+        return [
+            '요약 틀입니다.',
+            '',
+            '핵심: 가장 중요한 사실을 첫 문장에 둡니다.',
+            '배경: 왜 이 일이 중요한지 짧게 설명합니다.',
+            '쟁점: 서로 다른 주장과 확인된 자료를 분리합니다.',
+            '확인 필요: 출처, 날짜, 수치, 이해관계자를 다시 점검합니다.'
+        ].join('\n');
+    }
+
+    if (lower.includes('팩트') || lower.includes('검증')) {
+        return [
+            '팩트체크 체크리스트입니다.',
+            '',
+            '1. 원 출처와 최초 발언 확인',
+            '2. 날짜, 장소, 수치의 일치 여부 확인',
+            '3. 공식 문서 또는 공개 데이터 대조',
+            '4. 반론과 이해관계자 입장 분리',
+            '5. 제목이 본문보다 과장되지 않았는지 확인'
+        ].join('\n');
+    }
+
+    return [
+        '참소식 AI 응답입니다.',
+        '',
+        '질문을 받았습니다. 현재 서버 내장 응답 모드에서는 뉴스 요약, 기사 제목, 팩트체크, 문장 정리처럼 정해진 작업을 중심으로 답변합니다.',
+        '',
+        '더 정확히 도와드리려면 원문, 기사 초안, 검증할 주장, 또는 원하는 출력 형식을 함께 보내 주세요.',
+        '',
+        `받은 질문: ${prompt}`
+    ].join('\n');
+}
+
+async function postAiChatCandidate(url, payload, signal) {
+    return fetch(`${url.replace(/\/$/, '')}/api/chat`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload),
+        signal
+    });
+}
+
+app.post('/api/ollama-chat', async (req, res) => {
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), 90000);
+
+    try {
+        const messages = normalizeChatMessages(req.body || {});
+        if (!messages.length) {
+            return res.status(400).json({ ok: false, error: 'messages or prompt is required' });
+        }
+
+        const model = req.body?.model || AI_CHAT_MODEL;
+        const localPayload = {
+            model,
+            stream: false,
+            messages,
+            options: {
+                temperature: Number(req.body?.temperature || 0.5),
+                num_predict: Number(req.body?.num_predict || 700)
+            }
+        };
+        let response = null;
+        let source = OLLAMA_BASE_URL;
+        const tunnelUrl = getAiTunnelUrl();
+
+        try {
+            response = await postAiChatCandidate(OLLAMA_BASE_URL, localPayload, controller.signal);
+        } catch (error) {
+            console.warn('[ollama-chat] local candidate failed:', error.message);
+        }
+
+        if ((!response || !response.ok) && tunnelUrl) {
+            response = await postAiChatCandidate(tunnelUrl, localPayload, controller.signal);
+            source = tunnelUrl;
+        }
+        const text = await response.text();
+        const payload = safeJsonParse(text) || { raw: text };
+
+        if (!response.ok) {
+            return res.status(200).json({
+                ok: true,
+                model,
+                mode: 'server-built-in-fallback',
+                content: builtInChatReply(messages),
+                warning: `local ollama returned ${response.status}`,
+                detail: payload
+            });
+        }
+
+        return res.json({
+            ok: true,
+            model,
+            mode: source === tunnelUrl ? 'cloudflare-quick-tunnel' : 'server-local-ollama',
+            source,
+            content: extractChatText(payload),
+            raw: payload
+        });
+    } catch (error) {
+        console.error('[ollama-chat] error:', error.message);
+        const messages = normalizeChatMessages(req.body || {});
+        return res.json({
+            ok: true,
+            model: req.body?.model || AI_CHAT_MODEL,
+            mode: 'server-built-in-fallback',
+            content: builtInChatReply(messages),
+            warning: error.message || 'local ollama unavailable'
+        });
+    } finally {
+        clearTimeout(timeout);
+    }
+});
+
+// Ollama Web Search API
+app.post('/api/ollama-web-search', async (req, res) => {
+    try {
+        const { query, max_results } = req.body || {};
+        if (!query || !query.trim()) {
+            return res.status(400).json({ ok: false, error: 'query is required' });
+        }
+        if (!OLLAMA_API_KEY) {
+            return res.status(400).json({ ok: false, error: 'OLLAMA_API_KEY is not configured. Set it in web/.env file.' });
+        }
+
+        const controller = new AbortController();
+        const timeout = setTimeout(() => controller.abort(), WEB_SEARCH_TIMEOUT_MS);
+        const maxResults = Math.min(Math.max(parseInt(max_results || WEB_SEARCH_LIMIT, 10) || WEB_SEARCH_LIMIT, 1), 10);
+
+        try {
+            const response = await fetch(OLLAMA_WEB_SEARCH_URL, {
+                method: 'POST',
+                headers: {
+                    'Authorization': `Bearer ${OLLAMA_API_KEY}`,
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ query: query.trim(), max_results: maxResults }),
+                signal: controller.signal
+            });
+
+            const text = await response.text();
+            let payload = null;
+            try { payload = text ? JSON.parse(text) : {}; } catch { payload = { raw: text }; }
+
+            if (!response.ok) {
+                return res.status(response.status).json({ ok: false, error: `Web search API returned ${response.status}`, detail: payload });
+            }
+
+            return res.json({ ok: true, query: query.trim(), results: payload.results || payload.data || payload, source: 'ollama-web-search' });
+        } catch (error) {
+            if (error.name === 'AbortError') {
+                return res.status(504).json({ ok: false, error: 'Web search timed out' });
+            }
+            throw error;
+        } finally {
+            clearTimeout(timeout);
+        }
+    } catch (error) {
+        console.error('[ollama-web-search] error:', error.message);
+        return res.status(500).json({ ok: false, error: error.message });
+    }
+});
+
+// Ollama Web Search 결과를 AI 채팅 컨텍스트에 포함시켜 응답
+// AI Proxy 서버 (http://127.0.0.1:3110/api/search-chat) 로 프록시
+app.get('/api/ollama-chat-with-search', (req, res) => {
+    return res.status(405).json({
+        ok: false,
+        error: '이 엔드포인트는 POST 메서드만 지원합니다. /api/ollama-chat-with-search 는 POST로 요청해주세요.',
+        method: 'GET',
+        allowed_methods: ['POST']
+    });
+});
+app.post('/api/ollama-chat-with-search', async (req, res) => {
+    const AI_PROXY_URL = process.env.AI_PROXY_URL || 'http://127.0.0.1:3110';
+
+    try {
+        const body = req.body || {};
+        const searchQuery = body.search_query || body.prompt || body.message || '';
+        const messages = normalizeChatMessages(body);
+
+        const proxyResponse = await fetch(`${AI_PROXY_URL}/api/search-chat`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                model: body.model || AI_CHAT_MODEL,
+                messages: messages.length > 0 ? messages : [{ role: 'user', content: searchQuery }],
+                query: searchQuery,
+                max_results: parseInt(body.max_results || WEB_SEARCH_LIMIT, 10),
+                temperature: Number(body.temperature || 0.35),
+                num_predict: Number(body.num_predict || 1200)
+            }),
+            signal: AbortSignal.timeout(120000)
+        });
+
+        const data = await proxyResponse.json();
+        if (!proxyResponse.ok) {
+            throw new Error(`AI Proxy returned ${proxyResponse.status}: ${data.error || 'unknown'}`);
+        }
+
+        return res.json({
+            ok: true,
+            model: data.model || body.model || AI_CHAT_MODEL,
+            mode: 'ai-proxy-search',
+            content: data.content || '',
+            search: { query: data.query || searchQuery, results: data.results || [] },
+            raw: data
+        });
+    } catch (error) {
+        console.error('[ollama-chat-with-search] proxy error:', error.message);
+        // 실패 시 일반 채팅으로 폴백
+        try {
+            const messages = normalizeChatMessages(req.body || {});
+            const localPayload = {
+                model: req.body?.model || AI_CHAT_MODEL,
+                stream: false,
+                messages,
+                options: { temperature: Number(req.body?.temperature || 0.5), num_predict: 700 }
+            };
+            const tunnelUrl = getAiTunnelUrl();
+            let response = null;
+            let source = OLLAMA_BASE_URL;
+            try { response = await postAiChatCandidate(OLLAMA_BASE_URL, localPayload, AbortSignal.timeout(30000)); } catch (e) {}
+            if ((!response || !response.ok) && tunnelUrl) {
+                response = await postAiChatCandidate(tunnelUrl, localPayload, AbortSignal.timeout(30000));
+                source = tunnelUrl;
+            }
+            if (response && response.ok) {
+                const text = await response.text();
+                const payload = safeJsonParse(text) || { raw: text };
+                return res.json({
+                    ok: true, model: req.body?.model || AI_CHAT_MODEL,
+                    mode: source === tunnelUrl ? 'cloudflare-quick-tunnel' : 'server-local-ollama',
+                    content: extractChatText(payload),
+                    search: { error: error.message }
+                });
+            }
+        } catch (fallbackError) {
+            console.error('[ollama-chat-with-search] fallback failed:', fallbackError.message);
+        }
+
+        return res.json({
+            ok: true,
+            model: req.body?.model || AI_CHAT_MODEL,
+            mode: 'server-built-in-fallback',
+            content: builtInChatReply(normalizeChatMessages(req.body || {})),
+            search: { error: error.message }
+        });
+    }
+});
+
+// 스마트 채팅: AI Proxy 서버의 /api/smart-chat 으로 프록시
+// 뉴스 질문은 검색+요약, 일반 질문은 바로 Ollama 응답
+app.post('/api/smart-chat', async (req, res) => {
+    const AI_PROXY_URL = process.env.AI_PROXY_URL || 'http://127.0.0.1:3110';
+    try {
+        const proxyResponse = await fetch(`${AI_PROXY_URL}/api/smart-chat`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(req.body || {}),
+            signal: AbortSignal.timeout(120000)
+        });
+        const data = await proxyResponse.json();
+        if (!proxyResponse.ok) {
+            throw new Error(`AI Proxy returned ${proxyResponse.status}: ${data.error || 'unknown'}`);
+        }
+        return res.json(data);
+    } catch (error) {
+        console.error('[smart-chat] proxy error:', error.message);
+        // 폴백: 일반 채팅
+        try {
+            const messages = normalizeChatMessages(req.body || {});
+            const localPayload = {
+                model: req.body?.model || AI_CHAT_MODEL,
+                stream: false,
+                messages,
+                options: { temperature: Number(req.body?.temperature || 0.5), num_predict: 900 }
+            };
+            const tunnelUrl = getAiTunnelUrl();
+            let response = null;
+            let source = OLLAMA_BASE_URL;
+            try { response = await postAiChatCandidate(OLLAMA_BASE_URL, localPayload, AbortSignal.timeout(30000)); } catch (e) {}
+            if ((!response || !response.ok) && tunnelUrl) {
+                response = await postAiChatCandidate(tunnelUrl, localPayload, AbortSignal.timeout(30000));
+                source = tunnelUrl;
+            }
+            if (response && response.ok) {
+                const text = await response.text();
+                const payload = safeJsonParse(text) || { raw: text };
+                return res.json({
+                    ok: true, model: req.body?.model || AI_CHAT_MODEL,
+                    mode: source === tunnelUrl ? 'cloudflare-quick-tunnel' : 'server-local-ollama',
+                    content: extractChatText(payload)
+                });
+            }
+        } catch (fallbackError) {
+            console.error('[smart-chat] fallback failed:', fallbackError.message);
+        }
+        return res.json({
+            ok: true,
+            model: req.body?.model || AI_CHAT_MODEL,
+            mode: 'server-built-in-fallback',
+            content: builtInChatReply(normalizeChatMessages(req.body || {}))
+        });
     }
 });
 
@@ -1404,58 +1999,69 @@ app.get('/api/coupang-products', async (req, res) => {
             });
         }
 
-        const keyword = normalizeCoupangKeyword(req.query.keyword);
+        const keywords = normalizeCoupangKeywords(req.query.keywords || req.query.keyword);
         const limit = Math.min(Math.max(parseInt(req.query.limit, 10) || 4, 1), 8);
-        if (!keyword) {
+        if (!keywords.length) {
             return res.status(400).json({ success: false, error: 'keyword is required.' });
         }
 
-        const cacheKey = `${keyword}:${limit}`;
+        const cacheKey = `${keywords.join('|')}:${limit}`;
         const cached = coupangProductsCache.get(cacheKey);
         const now = Date.now();
         if (cached && now - cached.cachedAt < COUPANG_CACHE_TTL_MS) {
             return res.json({ ...cached.payload, cached: true });
         }
 
-        const query = new URLSearchParams({
-            keyword,
-            limit: String(limit)
-        });
-        if (COUPANG_SUB_ID) {
-            query.set('subId', COUPANG_SUB_ID);
+        let keyword = keywords[0];
+        let products = [];
+        let lastApiError = null;
+
+        for (const candidate of keywords) {
+            try {
+                const candidateProducts = await fetchCoupangProductsByKeyword(candidate, limit);
+                if (candidateProducts.length) {
+                    keyword = candidate;
+                    products = candidateProducts;
+                    break;
+                }
+            } catch (error) {
+                lastApiError = error;
+                console.error('[coupang-products] API error:', error.status, error.payload || error.message);
+            }
         }
 
-        const pathWithQuery = `/v2/providers/affiliate_open_api/apis/openapi/products/search?${query.toString()}`;
-        const response = await fetch(`${COUPANG_DOMAIN}${pathWithQuery}`, {
-            method: 'GET',
-            headers: {
-                Authorization: createCoupangAuthorization('GET', pathWithQuery),
-                'Content-Type': 'application/json'
-            }
-        });
-
-        const payload = await response.json().catch(() => ({}));
-        if (!response.ok) {
-            console.error('[coupang-products] API error:', response.status, payload);
-            return res.status(response.status).json({
+        if (!products.length && lastApiError) {
+            return res.status(lastApiError.status || 502).json({
                 success: false,
-                error: 'Coupang Partners API request failed.'
+                error: 'Coupang Partners API request failed.',
+                coupangStatus: lastApiError.status || null,
+                coupangMessage: lastApiError.payload?.message || lastApiError.payload?.raw || null,
+                transactionId: lastApiError.payload?.transactionId || null,
+                keywords
             });
         }
 
-        const products = mapCoupangProducts(payload);
         const result = {
             success: true,
             keyword,
+            keywords,
             products,
             disclosure: '이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.',
             cached: false
         };
-        coupangProductsCache.set(cacheKey, { cachedAt: now, payload: result });
+
+        coupangProductsCache.set(cacheKey, {
+            cachedAt: now,
+            payload: result
+        });
+
         return res.json(result);
     } catch (error) {
         console.error('[coupang-products] error:', error.message);
-        return res.status(500).json({ success: false, error: 'Failed to load Coupang products.' });
+        return res.status(500).json({
+            success: false,
+            error: 'Failed to load Coupang products.'
+        });
     }
 });
 
@@ -1724,6 +2330,7 @@ const server = app.listen(PORT, () => {
    GET  /api/calculation/:id   - 단일 조회 (ID)
    GET  /api/calculations      - 리스트 조회 (페이징)
    GET  /api/health            - 헬스 체크
+   GET  /api/coupang-products      - 쿠팡 상품 검색
 
 💡 종료: Ctrl+C
     `);

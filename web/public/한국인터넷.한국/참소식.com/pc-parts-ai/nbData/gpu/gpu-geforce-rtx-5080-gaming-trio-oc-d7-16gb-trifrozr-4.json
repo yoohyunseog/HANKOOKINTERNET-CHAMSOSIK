@@ -1,0 +1,85 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-05-27T23:36:11.263+09:00",
+  "category": "GPU",
+  "id": "gpu-geforce-rtx-5080-gaming-trio-oc-d7-16gb-trifrozr-4",
+  "name": "GeForce RTX 5080 Gaming Trio OC D7 16GB TriFrozr 4",
+  "maker": "MSI",
+  "platform": "NVIDIA",
+  "estimatedPriceKrw": 2199000,
+  "priceBand": "60만원 이상",
+  "speedLabel": "OC",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "GPU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 90,
+  "valueIndex": 4.1,
+  "aiUseScore": 90,
+  "powerWatts": 400,
+  "tags": [
+    "gaming",
+    "ai"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "GPU",
+    "partId": "gpu-geforce-rtx-5080-gaming-trio-oc-d7-16gb-trifrozr-4",
+    "partName": "GeForce RTX 5080 Gaming Trio OC D7 16GB TriFrozr 4",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "GPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 900,
+      "value": 100,
+      "aiFit": 900,
+      "priceEfficiency": 50,
+      "powerEfficiency": 100
+    },
+    "nbVector": [
+      100,
+      900,
+      100,
+      900,
+      50,
+      100
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 162.71,
+    "nbMin": 316.66,
+    "weightedScore": 336,
+    "nbBand": "100~499",
+    "summary": "GPU GeForce RTX 5080 Gaming Trio OC D7 16GB TriFrozr 4 부품을 속도 중심 N/B 데이터베이스 점수 336점으로 저장했습니다."
+  },
+  "nbWeightedScore": 336,
+  "nbMax": 162.71,
+  "nbMin": 316.66,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=RTX%205080%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "D7 memory, TriFrozr 4 cooler",
+  "textRepair": null
+}

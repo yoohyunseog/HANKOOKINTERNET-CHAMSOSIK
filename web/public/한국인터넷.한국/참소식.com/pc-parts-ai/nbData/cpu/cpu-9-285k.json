@@ -1,0 +1,85 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-05-27T23:36:11.263+09:00",
+  "category": "CPU",
+  "id": "cpu-9-285k",
+  "name": "인텔 코어 울트라 9 285K",
+  "maker": "Intel",
+  "platform": "LGA1851",
+  "estimatedPriceKrw": 914980,
+  "priceBand": "60만원 이상",
+  "speedLabel": "5.7GHz",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "CPU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 95,
+  "valueIndex": 10.4,
+  "aiUseScore": 62,
+  "powerWatts": 250,
+  "tags": [
+    "high-end",
+    "arrow lake"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "CPU",
+    "partId": "cpu-9-285k",
+    "partName": "인텔 코어 울트라 9 285K",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "CPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 950,
+      "value": 139,
+      "aiFit": 620,
+      "priceEfficiency": 110,
+      "powerEfficiency": 127
+    },
+    "nbVector": [
+      100,
+      950,
+      139,
+      620,
+      110,
+      127
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 108.641,
+    "nbMin": 323.531,
+    "weightedScore": 330,
+    "nbBand": "100~499",
+    "summary": "CPU 인텔 코어 울트라 9 285K 부품을 속도 중심 N/B 데이터베이스 점수 330점으로 저장했습니다."
+  },
+  "nbWeightedScore": 330,
+  "nbMax": 108.641,
+  "nbMin": 323.531,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=%EC%9D%B8%ED%85%94%20%EC%BD%94%EC%96%B4%20%EC%9A%B8%ED%8A%B8%EB%9D%BC%209%20285K%20%EC%A0%95%ED%92%88%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "P8+E16 cores, 24 threads, DDR5 support",
+  "textRepair": null
+}

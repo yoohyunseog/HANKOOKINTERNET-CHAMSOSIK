@@ -1,0 +1,91 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-05-27T23:36:11.263+09:00",
+  "category": "RAM",
+  "id": "ram-ddr5-5600-16gb",
+  "name": "삼성전자 DDR5-5600 16GB",
+  "maker": "삼성전자",
+  "platform": "DDR5",
+  "estimatedPriceKrw": 20056,
+  "priceBand": "15만원 미만",
+  "speedLabel": "5600MHz",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "RAM",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 50,
+  "valueIndex": 50,
+  "aiUseScore": 33,
+  "powerWatts": null,
+  "tags": [
+    "desktop",
+    "standard"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "RAM",
+    "partId": "ram-ddr5-5600-16gb",
+    "partName": "삼성전자 DDR5-5600 16GB",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "RAM",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 500,
+      "value": 667,
+      "aiFit": 330,
+      "priceEfficiency": 4990,
+      "powerEfficiency": 500
+    },
+    "nbVector": [
+      100,
+      500,
+      667,
+      330,
+      4990,
+      500
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 60.913,
+    "nbMin": 224.082,
+    "weightedScore": 698,
+    "nbBand": "500~699",
+    "summary": "RAM 삼성전자 DDR5-5600 16GB 부품을 속도 중심 N/B 데이터베이스 점수 698점으로 저장했습니다."
+  },
+  "nbWeightedScore": 698,
+  "nbMax": 60.913,
+  "nbMin": 224.082,
+  "nbBand": "500~699",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90%20DDR5-5600%2016GB%20%EB%8B%A8%ED%92%88%20%EB%8B%A4%EB%82%98%EC%99%80",
+  "notes": "삼성전자 DDR5-5600 16GB은 용량과 클럭을 함께 보는 DDR5 메모리 후보입니다.",
+  "textRepair": {
+    "checkedAt": "2026-05-27T23:36:14.578+09:00",
+    "method": "ai-text-sanity-rules",
+    "repairedFields": [
+      "notes"
+    ]
+  }
+}

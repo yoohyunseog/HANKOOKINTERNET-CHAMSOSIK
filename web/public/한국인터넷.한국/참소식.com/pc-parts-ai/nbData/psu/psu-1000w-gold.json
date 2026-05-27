@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-26T17:10:26.586+09:00",
+  "updatedAt": "2026-05-27T23:36:11.263+09:00",
   "category": "PSU",
   "id": "psu-1000w-gold",
   "name": "1000W 80PLUS Gold PSU",
@@ -21,7 +21,7 @@
   "performance": 92,
   "valueIndex": 38.3,
   "aiUseScore": 92,
-  "powerWatts": 0,
+  "powerWatts": null,
   "tags": [
     "gaming",
     "creator",
@@ -83,15 +83,11 @@
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=1000W%2080PLUS%20Gold%20PSU%20price",
   "notes": "1000W 80PLUS Gold PSU은 출력, 효율, 그래픽카드 전원 여유를 함께 볼 파워서플라이 후보입니다.",
   "textRepair": {
-    "checkedAt": "2026-05-26T17:10:26.586+09:00",
+    "checkedAt": "2026-05-27T23:36:15.021+09:00",
     "method": "ai-text-sanity-rules",
     "repairedFields": [
       "speedLabel",
       "notes"
     ]
-  },
-  "sourceType": "collector",
-  "sourceQuery": "",
-  "collectedPricesKrw": [],
-  "targetMatched": null
+  }
 }

@@ -1,0 +1,85 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-05-27T23:36:11.263+09:00",
+  "category": "Mainboard",
+  "id": "mainboard-asus-tuf-gaming-z790-btf-wifi",
+  "name": "ASUS TUF Gaming Z790-BTF WiFi",
+  "maker": "ASUS",
+  "platform": "LGA1700",
+  "estimatedPriceKrw": 634100,
+  "priceBand": "60만원 이상",
+  "speedLabel": "DDR5",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "Mainboard",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 75,
+  "valueIndex": 11.8,
+  "aiUseScore": 49,
+  "powerWatts": null,
+  "tags": [
+    "BTF",
+    "WiFi"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "Mainboard",
+    "partId": "mainboard-asus-tuf-gaming-z790-btf-wifi",
+    "partName": "ASUS TUF Gaming Z790-BTF WiFi",
+    "speed": {
+      "score": 100,
+      "weight": 0.32,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "Mainboard",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 750,
+      "value": 157,
+      "aiFit": 490,
+      "priceEfficiency": 160,
+      "powerEfficiency": 750
+    },
+    "nbVector": [
+      100,
+      750,
+      157,
+      490,
+      160,
+      750
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 256.39,
+    "nbMin": 387.616,
+    "weightedScore": 311,
+    "nbBand": "100~499",
+    "summary": "Mainboard ASUS TUF Gaming Z790-BTF WiFi 부품을 속도 중심 N/B 데이터베이스 점수 311점으로 저장했습니다."
+  },
+  "nbWeightedScore": 311,
+  "nbMax": 256.39,
+  "nbMin": 387.616,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=ASUS%20TUF%20Gaming%20Z790-BTF%20WiFi%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "Hidden connector design (BTF)",
+  "textRepair": null
+}

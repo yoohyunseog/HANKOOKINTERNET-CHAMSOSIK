@@ -1,0 +1,84 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-05-27T23:36:11.263+09:00",
+  "category": "GPU",
+  "id": "gpu-geforce-rtx-5060",
+  "name": "GeForce RTX 5060",
+  "maker": "MSI",
+  "platform": "PCIe",
+  "estimatedPriceKrw": 481060,
+  "priceBand": "30~60만원",
+  "speedLabel": "Shadow 2X OC",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "GPU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 65,
+  "valueIndex": 13.5,
+  "aiUseScore": 42,
+  "powerWatts": 150,
+  "tags": [
+    "gaming"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "GPU",
+    "partId": "gpu-geforce-rtx-5060",
+    "partName": "GeForce RTX 5060",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "GPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 650,
+      "value": 180,
+      "aiFit": 420,
+      "priceEfficiency": 210,
+      "powerEfficiency": 144
+    },
+    "nbVector": [
+      100,
+      650,
+      180,
+      420,
+      210,
+      144
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 147.389,
+    "nbMin": 378.667,
+    "weightedScore": 265,
+    "nbBand": "100~499",
+    "summary": "GPU GeForce RTX 5060 부품을 속도 중심 N/B 데이터베이스 점수 265점으로 저장했습니다."
+  },
+  "nbWeightedScore": 265,
+  "nbMax": 147.389,
+  "nbMin": 378.667,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=RTX%205060%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "Based on MSI GeForce RTX 5060 Shadow 2X OC D7 8GB",
+  "textRepair": null
+}

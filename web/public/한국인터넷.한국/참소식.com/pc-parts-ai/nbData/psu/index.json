@@ -1,8 +1,9 @@
 {
   "schema": "pc-parts-nb-category-index.v1",
-  "updatedAt": "2026-05-26T17:10:22.009+09:00",
-  "category": "psu",
+  "updatedAt": "2026-05-27T23:36:11.263+09:00",
+  "category": "PSU",
   "count": 29,
+  "currentRunCount": 29,
   "files": [
     "psu-1000w-gold.json",
     "psu-1000w-platinum.json",
@@ -33,5 +34,36 @@
     "psu-seasonic-new-focus-gx-850-gold-full-modular-atx-3.0.json",
     "psu-seasonic-vertex-gx-1000-gold-full-modular-atx-3.0.json",
     "psu-silverstone-sx750-platinum.json"
+  ],
+  "currentRunFiles": [
+    "psu-550w-bronze.json",
+    "psu-750w-gold.json",
+    "psu-650w-gold.json",
+    "psu-700w-gold.json",
+    "psu-msi-mag-a850gl-pcie5.json",
+    "psu-600w-gold.json",
+    "psu-850w-platinum.json",
+    "psu-1000w-platinum.json",
+    "psu-1200w-gold-atx31.json",
+    "psu-850w-gold.json",
+    "psu-750w-platinum.json",
+    "psu-1000w-gold.json",
+    "psu-1200w-platinum.json",
+    "psu-corsair-rm750e-atx-3.0.json",
+    "psu-seasonic-new-focus-gx-850-gold-full-modular-atx-3.0.json",
+    "psu-1300w-gold-atx31.json",
+    "psu-corsair-rm850e-atx-3.0.json",
+    "psu-corsair-rm650e-atx-3.1.json",
+    "psu-corsair-rm850x-shift-atx-3.1.json",
+    "psu-1600w-titanium.json",
+    "psu-cooler-master-v750-sfx-gold.json",
+    "psu-corsair-sf750-80plus-platinum-atx-3.1.json",
+    "psu-cooler-master-v-sfx-gold-850-atx-3.1.json",
+    "psu-corsair-rm1000e-atx-3.0.json",
+    "psu-corsair-rm1000x-shift-atx-3.1.json",
+    "psu-corsair-sf850-80plus-platinum-atx-3.1.json",
+    "psu-silverstone-sx750-platinum.json",
+    "psu-corsair-sf1000-80plus-platinum-atx-3.1.json",
+    "psu-seasonic-vertex-gx-1000-gold-full-modular-atx-3.0.json"
   ]
 }
