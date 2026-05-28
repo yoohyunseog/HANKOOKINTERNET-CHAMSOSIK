@@ -1,6 +1,6 @@
 {
   "schema": "pc-parts-collector-state.v1",
-  "updatedAt": "2026-05-28T06:16:27.966+09:00",
+  "updatedAt": "2026-05-28T13:52:20.942+09:00",
   "nextCandidateIndex": 97,
   "batchSize": 3,
   "candidateCount": 98,
@@ -8,309 +8,309 @@
   "aiDiscoveryEnabled": true,
   "aiSearchHistory": [
     {
-      "query": "MSI GeForce RTX 4070 Ti SUPER Gaming X Slim 최저가",
-      "outcome": "duplicate:GeForce RTX 4070 Ti SUPER Gaming X Slim D6X 16GB Tri Frozr 3",
-      "at": "2026-05-28T05:56:05.677+09:00"
+      "query": "GeForce RTX 5080 최저가",
+      "outcome": "duplicate:ASUS PRIME 지포스 RTX 5080 OC D7 16GB",
+      "at": "2026-05-28T13:33:17.231+09:00"
     },
     {
-      "query": "ASUS ROG Strix GeForce RTX 4080 Super 최저가",
-      "outcome": "duplicate:ROG Strix GeForce RTX 4080 Super OC Edition",
-      "at": "2026-05-28T05:56:18.946+09:00"
+      "query": "RTX 4070 Super 최저가",
+      "outcome": "duplicate:ZOTAC GAMING GeForce RTX 4070 SUPER Twin Edge OC",
+      "at": "2026-05-28T13:33:29.990+09:00"
     },
     {
-      "query": "ASUS ROG Strix GeForce RTX 4070 Ti Super 최저가",
-      "outcome": "duplicate:ROG Strix GeForce RTX 4070 Ti Super OC Edition",
-      "at": "2026-05-28T05:56:28.504+09:00"
+      "query": "GeForce RTX 4060 Ti 8GB 최저가",
+      "outcome": "skip:The search result contains only navigation menus, category filters, and general interface elements from Danawa. There are no concrete product listings, specific model names, or valid prices for the GeForce RTX 4060 Ti 8GB.",
+      "at": "2026-05-28T13:33:40.648+09:00"
     },
     {
-      "query": "삼성전자 DDR5-6400 CL46 16GB 최저가",
-      "outcome": "skip:The part '삼성전자 DDR5-6400 CL46 16GB' is already present in the saved parts list.",
-      "at": "2026-05-28T05:56:40.732+09:00"
+      "query": "GeForce RTX 4090 최저가",
+      "outcome": "duplicate:MSI Gaming X Slim GeForce RTX 4090",
+      "at": "2026-05-28T13:34:09.380+09:00"
     },
     {
-      "query": "AMD Ryzen 7 9800X3D 최저가",
-      "outcome": "duplicate:Ryzen 7 9800X3D",
-      "at": "2026-05-28T05:58:09.769+09:00"
+      "query": "GeForce RTX 4070 Ti SUPER 최저가",
+      "outcome": "duplicate:갤럭시 GALAX 지포스 RTX 4070 Ti SUPER EX GAMER BLACK OC D6X 16GB",
+      "at": "2026-05-28T13:34:22.171+09:00"
     },
     {
-      "query": "AMD Ryzen 9 9950X3D 최저가",
-      "outcome": "duplicate:Ryzen 9 9950X3D",
-      "at": "2026-05-28T05:58:20.454+09:00"
+      "query": "AMD 라이젠 7 9800X3D 최저가",
+      "outcome": "duplicate:AMD 라이젠 7 9800X3D",
+      "at": "2026-05-28T13:34:49.836+09:00"
     },
     {
-      "query": "AMD Ryzen 9 7950X3D 최저가",
-      "outcome": "duplicate:Ryzen 9 7950X3D",
-      "at": "2026-05-28T05:58:31.778+09:00"
+      "query": "AMD 라이젠 9 9950X 최저가",
+      "outcome": "duplicate:AMD 라이젠 9 9950X",
+      "at": "2026-05-28T13:35:06.753+09:00"
     },
     {
       "query": "Intel Core Ultra 9 285K 최저가",
-      "outcome": "duplicate:Core Ultra 9 285K",
-      "at": "2026-05-28T05:58:47.045+09:00"
+      "outcome": "error:Bad control character in string literal in JSON at position 97 (line 3 column 76)",
+      "at": "2026-05-28T13:36:00.165+09:00"
     },
     {
       "query": "RTX 5090 최저가",
       "outcome": "duplicate:ASUS ROG Astral 지포스 RTX 5090 OC D7 32GB",
-      "at": "2026-05-28T05:58:55.934+09:00"
+      "at": "2026-05-28T13:36:16.288+09:00"
     },
     {
-      "query": "AMD Ryzen 7 9800X3D 최저가",
-      "outcome": "skip:The part 'AMD Ryzen 7 9800X3D' is already present in the saved parts list (as indicated in the 'Recent searches' section of the prompt).",
-      "at": "2026-05-28T05:59:04.865+09:00"
-    },
-    {
-      "query": "AMD Ryzen 7 7800X3D 최저가",
-      "outcome": "duplicate:Ryzen 7 7800X3D",
-      "at": "2026-05-28T05:59:18.492+09:00"
-    },
-    {
-      "query": "Intel Core i9-14900K 최저가",
-      "outcome": "duplicate:Intel Core i9-14900K",
-      "at": "2026-05-28T06:00:20.293+09:00"
-    },
-    {
-      "query": "Intel Core Ultra 7 265K 최저가",
-      "outcome": "duplicate:Intel Core Ultra 7 265K",
-      "at": "2026-05-28T06:00:53.797+09:00"
-    },
-    {
-      "query": "Intel Core Ultra 5 245K 최저가",
-      "outcome": "duplicate:Intel Core Ultra 5 245K",
-      "at": "2026-05-28T06:01:24.479+09:00"
-    },
-    {
-      "query": "AMD Ryzen 9 9900X 최저가",
-      "outcome": "duplicate:AMD Ryzen 9 9900X",
-      "at": "2026-05-28T06:01:38.990+09:00"
-    },
-    {
-      "query": "RTX 5080 최저가",
-      "outcome": "error:Internal Server Error (ref: d9e67d0a-d39a-43fa-b935-c14a65afab49)",
-      "at": "2026-05-28T06:01:50.166+09:00"
-    },
-    {
-      "query": "AMD Ryzen 5 9600X 최저가",
-      "outcome": "duplicate:AMD Ryzen 5 9600X",
-      "at": "2026-05-28T06:02:11.662+09:00"
-    },
-    {
-      "query": "RTX 4070 Super 최저가",
-      "outcome": "skip:The search results provide a general category page for RTX 4070 Super and lists some pre-built PCs and unrelated GPUs (RTX 5080, RTX PRO 4000), but no specific, concrete RTX 4070 Super model with a clear price was found in the text excerpt.",
-      "at": "2026-05-28T06:02:23.970+09:00"
-    },
-    {
-      "query": "삼성전자 DDR5-6400 CL46 32GB 최저가",
-      "outcome": "skip:The search result is a general category/filter page from Danawa and does not provide a specific price or a concrete product listing for '삼성전자 DDR5-6400 CL46 32GB'. Additionally, this exact part is already present in the saved parts list.",
-      "at": "2026-05-28T06:02:36.737+09:00"
-    },
-    {
-      "query": "RTX 4080 Super Founders Edition 최저가",
-      "outcome": "error:Expected property name or '}' in JSON at position 1 (line 1 column 2)",
-      "at": "2026-05-28T06:03:28.082+09:00"
-    },
-    {
-      "query": "ASUS ROG Strix GeForce RTX 4090 OC Edition 최저가",
-      "outcome": "duplicate:ASUS ROG Strix GeForce RTX 4090 OC Edition",
-      "at": "2026-05-28T06:04:14.941+09:00"
-    },
-    {
-      "query": "ASUS TUF Gaming GeForce RTX 4080 Super OC Edition 최저가",
-      "outcome": "duplicate:ASUS TUF Gaming GeForce RTX 4080 Super OC Edition",
-      "at": "2026-05-28T06:04:57.994+09:00"
-    },
-    {
-      "query": "MSI GeForce RTX 4090 Gaming X Trio 최저가",
-      "outcome": "duplicate:GeForce RTX 4090 Gaming X Trio",
-      "at": "2026-05-28T06:05:07.728+09:00"
-    },
-    {
-      "query": "ZOTAC GAMING GeForce RTX 4090 Trinity OC 최저가",
-      "outcome": "collect:GPU:ZOTAC GAMING GeForce RTX 4090 Trinity OC D6X 24GB",
-      "at": "2026-05-28T06:05:20.319+09:00"
-    },
-    {
-      "query": "ASUS ROG Strix GeForce RTX 4080 Super OC Edition 최저가",
-      "outcome": "skip:The part 'ASUS ROG Strix GeForce RTX 4080 Super OC Edition' is already present in the 'Recent searches' as a duplicate, implying it was previously saved or processed. Furthermore, the search results provided are primarily overseas listings with highly irregular pricing (ranging from 2.5 million to 6.5 million KRW), which are not representative of standard Korean street prices.",
-      "at": "2026-05-28T06:05:29.665+09:00"
-    },
-    {
-      "query": "MSI GeForce RTX 4080 Super Gaming X Slim 최저가",
-      "outcome": "duplicate:MSI GeForce RTX 4080 SUPER Gaming X Slim D6X 16GB",
-      "at": "2026-05-28T06:05:38.395+09:00"
-    },
-    {
-      "query": "Gigabyte GeForce RTX 4080 Super Gaming OC 최저가",
-      "outcome": "duplicate:Gigabyte GeForce RTX 4080 Super Gaming OC D6X 16GB",
-      "at": "2026-05-28T06:05:52.989+09:00"
-    },
-    {
-      "query": "Zotac GeForce RTX 4090 Trinity OC 최저가",
-      "outcome": "duplicate:ZOTAC GAMING GeForce RTX 4090 Trinity OC D6X 24GB White",
-      "at": "2026-05-28T06:06:02.463+09:00"
-    },
-    {
-      "query": "AMD Ryzen 7 9700X 최저가",
-      "outcome": "duplicate:AMD Ryzen 7 9700X",
-      "at": "2026-05-28T06:07:28.204+09:00"
-    },
-    {
-      "query": "AMD Ryzen 9 9900X 최저가",
-      "outcome": "duplicate:AMD Ryzen 9 9900X",
-      "at": "2026-05-28T06:07:40.141+09:00"
-    },
-    {
-      "query": "AMD Ryzen 9 9950X 최저가",
-      "outcome": "duplicate:AMD Ryzen 9 9950X",
-      "at": "2026-05-28T06:07:55.734+09:00"
-    },
-    {
-      "query": "AMD Ryzen 5 9600X 최저가",
-      "outcome": "duplicate:AMD Ryzen 5 9600X",
-      "at": "2026-05-28T06:08:04.645+09:00"
-    },
-    {
-      "query": "AMD Ryzen 7 9800X3D 최저가",
-      "outcome": "duplicate:Ryzen 7 9800X3D",
-      "at": "2026-05-28T06:08:14.270+09:00"
-    },
-    {
-      "query": "Intel Core Ultra 9 285K 최저가",
-      "outcome": "duplicate:Intel Core Ultra 9 285K",
-      "at": "2026-05-28T06:08:24.477+09:00"
-    },
-    {
-      "query": "AMD Ryzen 9 9950X3D 최저가",
-      "outcome": "duplicate:AMD Ryzen 9 9950X3D",
-      "at": "2026-05-28T06:08:38.032+09:00"
-    },
-    {
-      "query": "AMD Ryzen 7 9700X 최저가",
-      "outcome": "skip:The search result for 'AMD Ryzen 7 9700X' is a duplicate of a part already saved in the system.",
-      "at": "2026-05-28T06:08:46.653+09:00"
-    },
-    {
-      "query": "GeForce RTX 4070 Ti Super ZOTAC GAMING OC 최저가",
-      "outcome": "duplicate:ZOTAC GAMING GeForce RTX 4070 Ti Super Trinity OC White Edition",
-      "at": "2026-05-28T06:09:17.551+09:00"
-    },
-    {
-      "query": "ZOTAC GAMING GeForce RTX 4070 Ti SUPER Solid OC 최저가",
-      "outcome": "skip:The search results did not contain the specific 'Solid OC' model requested. The results only show 'Trinity' and 'AMP Holo' versions of the RTX 4070 Ti Super.",
-      "at": "2026-05-28T06:09:24.807+09:00"
-    },
-    {
-      "query": "ASUS ROG Strix GeForce RTX 4070 Ti Super 최저가",
-      "outcome": "duplicate:ROG Strix GeForce RTX 4070 Ti Super OC Edition",
-      "at": "2026-05-28T06:09:35.520+09:00"
-    },
-    {
-      "query": "MSI GeForce RTX 4070 Ti Super Gaming X Slim 최저가",
-      "outcome": "duplicate:MSI GeForce RTX 4070 Ti SUPER Gaming X Slim D6X 16GB TriFrozr 3",
-      "at": "2026-05-28T06:09:48.123+09:00"
-    },
-    {
-      "query": "ZOTAC GAMING GeForce RTX 4080 SUPER AMP Holo 최저가",
-      "outcome": "skip:The search results do not contain the specific 'AMP Holo' model. The results show 'AMP Extreme AIRO' and generic 'AMP' versions, but not the 'Holo' edition requested in the query.",
-      "at": "2026-05-28T06:09:55.552+09:00"
-    },
-    {
-      "query": "GeForce RTX 4090 Founders Edition 최저가",
-      "outcome": "duplicate:GeForce RTX 4090 Founders Edition",
-      "at": "2026-05-28T06:10:17.810+09:00"
-    },
-    {
-      "query": "RTX 5090 Founders Edition 최저가",
-      "outcome": "skip:The search results do not contain the RTX 5090 Founders Edition graphics card itself; they only list third-party water blocks (Bykski) designed for that card.",
-      "at": "2026-05-28T06:10:28.535+09:00"
-    },
-    {
-      "query": "GeForce RTX 4080 SUPER MSI Gaming X Slim 최저가",
-      "outcome": "duplicate:GeForce RTX 4080 SUPER Gaming X Slim D6X 16GB TriFrozr 3",
-      "at": "2026-05-28T06:10:50.626+09:00"
-    },
-    {
-      "query": "AMD Ryzen 5 9600X 최저가",
-      "outcome": "duplicate:AMD Ryzen 5 9600X",
-      "at": "2026-05-28T06:11:20.443+09:00"
-    },
-    {
-      "query": "AMD Ryzen 7 9700X 최저가",
-      "outcome": "skip:The search result for 'AMD Ryzen 7 9700X' is a duplicate of a part already saved in the system (as indicated in the recent searches history).",
-      "at": "2026-05-28T06:11:32.820+09:00"
-    },
-    {
-      "query": "AMD Ryzen 9 9900X 최저가",
-      "outcome": "duplicate:AMD Ryzen 9 9900X",
-      "at": "2026-05-28T06:11:47.524+09:00"
-    },
-    {
-      "query": "AMD Ryzen 9 9950X 최저가",
-      "outcome": "duplicate:AMD Ryzen 9 9950X",
-      "at": "2026-05-28T06:11:56.743+09:00"
-    },
-    {
-      "query": "Intel Core Ultra 7 265K 최저가",
-      "outcome": "duplicate:Intel Core Ultra 7 265K",
-      "at": "2026-05-28T06:12:08.087+09:00"
-    },
-    {
-      "query": "Intel Core Ultra 9 285K 최저가",
-      "outcome": "duplicate:Intel Core Ultra 9 285K",
-      "at": "2026-05-28T06:12:19.852+09:00"
-    },
-    {
-      "query": "AMD Ryzen 9 9950X3D 최저가",
-      "outcome": "duplicate:Ryzen 9 9950X3D",
-      "at": "2026-05-28T06:12:29.792+09:00"
-    },
-    {
-      "query": "AMD Ryzen 7 9800X3D 최저가",
-      "outcome": "error:spawnSync curl ETIMEDOUT / spawnSync ollama ETIMEDOUT",
-      "at": "2026-05-28T06:13:36.790+09:00"
-    },
-    {
-      "query": "Intel Core Ultra 5 245K 최저가",
-      "outcome": "duplicate:Intel Core Ultra 5 245K",
-      "at": "2026-05-28T06:14:05.063+09:00"
-    },
-    {
-      "query": "GeForce RTX 5080 최저가",
-      "outcome": "duplicate:ASUS PRIME GeForce RTX 5080 OC D7 16GB",
-      "at": "2026-05-28T06:14:18.819+09:00"
-    },
-    {
-      "query": "GeForce RTX 5070 최저가",
-      "outcome": "duplicate:GeForce RTX 5070 GAMING D7 12GB",
-      "at": "2026-05-28T06:14:29.215+09:00"
-    },
-    {
-      "query": "AMD Ryzen 7 9800X3D 최저가",
-      "outcome": "duplicate:AMD Ryzen 7 9800X3D",
-      "at": "2026-05-28T06:14:49.034+09:00"
+      "query": "AMD 라이젠 9 9950X3D 최저가",
+      "outcome": "skip:The search results only show pre-built PC bundles (complete systems) containing the Ryzen 9 9950X3D, not the standalone CPU component. No individual price for the CPU itself is available in the text.",
+      "at": "2026-05-28T13:36:26.900+09:00"
     },
     {
       "query": "GeForce RTX 5090 최저가",
       "outcome": "duplicate:GIGABYTE GEFORCE RTX 5090 GAMING OC D7 32GB",
-      "at": "2026-05-28T06:14:59.117+09:00"
+      "at": "2026-05-28T13:36:40.498+09:00"
     },
     {
-      "query": "AMD Radeon RX 9000 series 최저가",
-      "outcome": "skip:The search results only show pre-built PCs (Purple Lab) and riser cables. There are no individual GPU components with specific prices or detailed specs for the RX 9000 series available for collection.",
-      "at": "2026-05-28T06:15:11.626+09:00"
+      "query": "MSI 지포스 RTX 5090 슈프림 SOC D7 32GB 최저가",
+      "outcome": "duplicate:MSI 지포스 RTX 5090 슈프림 SOC D7 32GB",
+      "at": "2026-05-28T13:36:53.368+09:00"
     },
     {
-      "query": "GeForce RTX 5070 Ti 최저가",
-      "outcome": "collect:GPU:ZOTAC GAMING 지포스 RTX 5070 Ti SOLID CORE OC White D7 16GB",
-      "at": "2026-05-28T06:15:20.059+09:00"
+      "query": "GIGABYTE AORUS 지포스 RTX 5090 MASTER ICE D7 32GB 최저가",
+      "outcome": "duplicate:GIGABYTE AORUS 지포스 RTX 5090 MASTER ICE D7 32GB",
+      "at": "2026-05-28T13:37:05.564+09:00"
     },
     {
-      "query": "GeForce RTX 5060 최저가",
-      "outcome": "error:spawnSync curl ETIMEDOUT / spawnSync ollama ETIMEDOUT",
-      "at": "2026-05-28T06:16:27.959+09:00"
+      "query": "Intel Core Ultra 7 265K 최저가",
+      "outcome": "duplicate:Intel Core Ultra 7 265K",
+      "at": "2026-05-28T13:37:54.108+09:00"
+    },
+    {
+      "query": "Intel Core Ultra 5 245K 최저가",
+      "outcome": "duplicate:Intel Core Ultra 5 245K",
+      "at": "2026-05-28T13:38:08.084+09:00"
+    },
+    {
+      "query": "AMD 라이젠 7 7800X3D 최저가",
+      "outcome": "duplicate:AMD 라이젠 7 7800X3D",
+      "at": "2026-05-28T13:38:31.953+09:00"
+    },
+    {
+      "query": "삼성전자 DDR5-6400 CL46 16GB 최저가",
+      "outcome": "skip:The search result text indicates that the specific product '삼성전자 DDR5-6400 CL46 16GB' was not found ('해당 옵션의 상품이 검색결과에 없습니다'), and the page is showing general category filters and popular keywords instead of a concrete product listing with a price. Additionally, this part is already present in the saved parts list.",
+      "at": "2026-05-28T13:38:41.812+09:00"
+    },
+    {
+      "query": "AMD 라이젠 5 9600X 최저가",
+      "outcome": "duplicate:AMD 라이젠 5 9600X",
+      "at": "2026-05-28T13:38:56.063+09:00"
+    },
+    {
+      "query": "Intel Core Ultra 5 245K 벤치마크 가격",
+      "outcome": "skip:The search result text explicitly states '해당 옵션의 상품이 검색결과에 없습니다' (The product for the selected option was not found in the search results). The page is showing category filters and general keywords rather than a concrete product listing with a price for the Intel Core Ultra 5 245K. Additionally, this part is already in the saved parts list.",
+      "at": "2026-05-28T13:39:05.834+09:00"
+    },
+    {
+      "query": "AMD 라이젠 9 9900X 최저가",
+      "outcome": "duplicate:AMD 라이젠 9 9900X",
+      "at": "2026-05-28T13:39:21.768+09:00"
+    },
+    {
+      "query": "AMD 라이젠 7 9800X3D 최저가",
+      "outcome": "duplicate:AMD 라이젠 7 9800X3D",
+      "at": "2026-05-28T13:40:14.453+09:00"
+    },
+    {
+      "query": "GeForce RTX 5080 최저가",
+      "outcome": "duplicate:ASUS PRIME 지포스 RTX 5080 OC D7 16GB",
+      "at": "2026-05-28T13:40:44.010+09:00"
+    },
+    {
+      "query": "MSI 지포스 RTX 5080 뱅가드 SOC D7 16GB 최저가",
+      "outcome": "duplicate:지포스 RTX 5080 뱅가드 SOC D7 16GB 하이퍼프로져",
+      "at": "2026-05-28T13:40:57.450+09:00"
+    },
+    {
+      "query": "COLORFUL iGame GeForce RTX 5080 Ultra OC White D7 16GB 최저가",
+      "outcome": "collect:GPU:iGame GeForce RTX 5080 Ultra OC White D7 16GB",
+      "at": "2026-05-28T13:41:10.905+09:00"
+    },
+    {
+      "query": "지포스 RTX 5070 최저가",
+      "outcome": "collect:GPU:지포스 RTX 5070 SOLID OC D7 12GB",
+      "at": "2026-05-28T13:41:23.588+09:00"
+    },
+    {
+      "query": "ASUS 지포스 RTX 5090 최저가",
+      "outcome": "duplicate:ASUS ROG Astral 지포스 RTX 5090 OC D7 32GB",
+      "at": "2026-05-28T13:41:34.285+09:00"
+    },
+    {
+      "query": "Gigabyte 지포스 RTX 5080 최저가",
+      "outcome": "duplicate:GIGABYTE AORUS 지포스 RTX 5080 MASTER D7 16GB",
+      "at": "2026-05-28T13:41:42.967+09:00"
+    },
+    {
+      "query": "Intel Core Ultra 9 285K 최저가",
+      "outcome": "skip:The search result explicitly states '해당 옵션의 상품이 검색결과에 없습니다' (The product for the selected option was not found in the search results). The provided text contains only category filters, popular keywords, and general site navigation, but no concrete price or listing for the Intel Core Ultra 9 285K.",
+      "at": "2026-05-28T13:41:52.530+09:00"
+    },
+    {
+      "query": "GeForce RTX 5090 최저가",
+      "outcome": "duplicate:MANLI 지포스 RTX 5090 Stellar OC D7 32GB",
+      "at": "2026-05-28T13:42:03.086+09:00"
+    },
+    {
+      "query": "AMD 라이젠 9 9950X 최저가",
+      "outcome": "duplicate:라이젠 9 9950X",
+      "at": "2026-05-28T13:43:41.289+09:00"
+    },
+    {
+      "query": "AMD 라이젠 9 9950X3D 최저가",
+      "outcome": "skip:The search result explicitly states '해당 옵션의 상품이 검색결과에 없습니다' (The product for the selected option was not found in the search results). While the CPU is mentioned in pre-built PC bundles, there is no individual listing or concrete street price for the AMD Ryzen 9 9950X3D standalone component.",
+      "at": "2026-05-28T13:43:50.931+09:00"
+    },
+    {
+      "query": "Intel Core Ultra 9 285K 최저가",
+      "outcome": "skip:The search result explicitly states '해당 옵션의 상품이 검색결과에 없습니다' (The product for the selected option was not found in the search results). The text contains only category filters, popular keywords, and general site navigation, but no concrete listing or price for the Intel Core Ultra 9 285K.",
+      "at": "2026-05-28T13:44:00.692+09:00"
+    },
+    {
+      "query": "Intel Core Ultra 7 265K 최저가",
+      "outcome": "skip:The search result explicitly states '해당 옵션의 상품이 검색결과에 없습니다' (The product for the selected option was not found in the search results). The provided text contains only category filters and site navigation, not a concrete listing or price for the Intel Core Ultra 7 265K.",
+      "at": "2026-05-28T13:44:09.908+09:00"
+    },
+    {
+      "query": "AMD 라이젠 7 9800X3D 최저가",
+      "outcome": "duplicate:라이젠 7 9800X3D",
+      "at": "2026-05-28T13:44:56.272+09:00"
+    },
+    {
+      "query": "AMD 라이젠 5 9600X 최저가",
+      "outcome": "duplicate:라이젠 5 9600X",
+      "at": "2026-05-28T13:45:15.361+09:00"
+    },
+    {
+      "query": "AMD 라이젠 7 9700X 최저가",
+      "outcome": "duplicate:라이젠 7 9700X",
+      "at": "2026-05-28T13:45:29.911+09:00"
+    },
+    {
+      "query": "AMD 라이젠 5 7500F 최저가",
+      "outcome": "duplicate:라이젠 5 7500F",
+      "at": "2026-05-28T13:45:41.611+09:00"
+    },
+    {
+      "query": "RTX 4070 Super 최저가",
+      "outcome": "collect:GPU:RTX 4070 슈퍼 12GB 트윈 에지 OC GDDR6X",
+      "at": "2026-05-28T13:46:13.970+09:00"
+    },
+    {
+      "query": "RTX 4070 Ti Super 최저가",
+      "outcome": "duplicate:ASUS SFF-Ready Prime GeForce RTX 4070 Ti Super OC Edition 16GB GDDR6X",
+      "at": "2026-05-28T13:46:22.515+09:00"
+    },
+    {
+      "query": "RTX 4080 Super 최저가",
+      "outcome": "duplicate:AFOX 지포스 RTX 4080 SUPER BLOWER D6X 16GB 에즈윈",
+      "at": "2026-05-28T13:46:30.513+09:00"
+    },
+    {
+      "query": "RTX 5080 최저가",
+      "outcome": "collect:GPU:ZOTAC GAMING 지포스 RTX 5080 SOLID CORE OC D7 16GB",
+      "at": "2026-05-28T13:46:40.981+09:00"
+    },
+    {
+      "query": "RTX 5070 최저가",
+      "outcome": "duplicate:조텍 GAMING 지포스 RTX 5070 SOLID OC D7 12GB",
+      "at": "2026-05-28T13:46:51.519+09:00"
+    },
+    {
+      "query": "RTX 4080 Super MSI Gaming X Slim 최저가",
+      "outcome": "duplicate:MSI 지포스 RTX 4080 SUPER 게이밍 X 슬림 D6X 16GB 트라이프로져3",
+      "at": "2026-05-28T13:46:58.931+09:00"
+    },
+    {
+      "query": "RTX 4080 Super ASUS ROG Strix 최저가",
+      "outcome": "collect:GPU:ASUS ROG Strix 지포스 RTX 4080 슈퍼 OC 에디션 16GB",
+      "at": "2026-05-28T13:47:12.957+09:00"
+    },
+    {
+      "query": "Intel Core Ultra 9 285K 최저가",
+      "outcome": "duplicate:Intel Core Ultra 9 285K",
+      "at": "2026-05-28T13:48:41.910+09:00"
+    },
+    {
+      "query": "Intel Core Ultra 7 265K 최저가",
+      "outcome": "duplicate:Intel Core Ultra 7 265K",
+      "at": "2026-05-28T13:48:50.690+09:00"
+    },
+    {
+      "query": "Intel Core Ultra 5 245K 최저가",
+      "outcome": "duplicate:Intel Core Ultra 5 245K",
+      "at": "2026-05-28T13:49:00.667+09:00"
+    },
+    {
+      "query": "AMD 라이젠 9 9950X 최저가",
+      "outcome": "duplicate:라이젠 9 9950X",
+      "at": "2026-05-28T13:49:09.257+09:00"
+    },
+    {
+      "query": "AMD 라이젠 9 9900X 최저가",
+      "outcome": "duplicate:AMD 라이젠 9 9900X",
+      "at": "2026-05-28T13:49:17.379+09:00"
+    },
+    {
+      "query": "RTX 5090 최저가",
+      "outcome": "duplicate:ROG Astral 지포스 RTX 5090 OC D7 32GB",
+      "at": "2026-05-28T13:49:27.842+09:00"
+    },
+    {
+      "query": "AMD 라이젠 7 9700X 최저가",
+      "outcome": "duplicate:라이젠 7 9700X",
+      "at": "2026-05-28T13:49:36.511+09:00"
+    },
+    {
+      "query": "RTX 5070 Ti 최저가",
+      "outcome": "skip:The search results only show pre-built PC bundles (조립PC본체) containing an RTX 5070 Ti, but no individual GPU components with specific maker, model, or standalone pricing are listed. The 'observed prices' provided in the prompt are irrelevant numbers and not actual product prices.",
+      "at": "2026-05-28T13:49:46.298+09:00"
+    },
+    {
+      "query": "AMD 라이젠 7 9800X3D 최저가",
+      "outcome": "duplicate:AMD 라이젠 7 9800X3D",
+      "at": "2026-05-28T13:50:11.374+09:00"
+    },
+    {
+      "query": "RTX 5080 최저가",
+      "outcome": "duplicate:ZOTAC GAMING 지포스 RTX 5080 SOLID CORE OC D7 16GB",
+      "at": "2026-05-28T13:51:05.455+09:00"
+    },
+    {
+      "query": "삼성전자 DDR5-6400 CL46 CUDIMM 32GB 최저가",
+      "outcome": "skip:The search result is a landing page from Danawa that indicates '해당 옵션의 상품이 검색결과에 없습니다' (No products found for the selected options). It shows category filters and popular keywords but does not provide a concrete product listing or a valid price for the specific Samsung DDR5-6400 CL46 CUDIMM 32GB module.",
+      "at": "2026-05-28T13:51:35.901+09:00"
+    },
+    {
+      "query": "Crucial T705 4TB 최저가",
+      "outcome": "skip:The product 'Crucial T705 4TB' is already present in the saved parts list.",
+      "at": "2026-05-28T13:51:43.613+09:00"
+    },
+    {
+      "query": "GeForce RTX 4090 최저가",
+      "outcome": "duplicate:MSI Gaming X Slim GeForce RTX 4090",
+      "at": "2026-05-28T13:51:54.796+09:00"
+    },
+    {
+      "query": "AMD 라이젠 5 9600X 최저가",
+      "outcome": "duplicate:AMD 라이젠 5 9600X",
+      "at": "2026-05-28T13:52:05.173+09:00"
+    },
+    {
+      "query": "RTX 4080 Super ZOTAC GAMING OC",
+      "outcome": "collect:GPU:ZOTAC GAMING 지포스 RTX 4080 SUPER Trinity OC D6X 16GB White",
+      "at": "2026-05-28T13:52:13.263+09:00"
+    },
+    {
+      "query": "RTX 4070 Ti Super ZOTAC GAMING OC 최저가",
+      "outcome": "duplicate:ZOTAC GAMING 지포스 RTX 4070 Ti SUPER Trinity OC White Edition D6X 16GB",
+      "at": "2026-05-28T13:52:20.933+09:00"
     }
   ],
   "aiSearchQueue": [],
   "collectedThisRun": [
-    "gpu-zotac-gaming-rtx-5070-ti-solid-core-oc-white-d7-16gb"
+    "gpu-zotac-gaming-rtx-4080-super-trinity-oc-d6x-16gb-white"
   ],
   "updatedThisRun": []
 }

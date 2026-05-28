@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-28T06:16:40.242+09:00",
+  "updatedAt": "2026-05-28T13:52:33.150+09:00",
   "category": "GPU",
   "id": "gpu-rtx-5060-ti",
   "name": "NVIDIA GeForce RTX 5060 Ti",
@@ -83,7 +83,7 @@
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=NVIDIA%20GeForce%20RTX%205060%20Ti%20price",
   "notes": "NVIDIA GeForce RTX 5060 Ti은 게임, 작업, AI 활용을 함께 검토할 그래픽카드 후보입니다.",
   "textRepair": {
-    "checkedAt": "2026-05-28T06:16:42.191+09:00",
+    "checkedAt": "2026-05-28T13:52:34.892+09:00",
     "method": "ai-text-sanity-rules",
     "repairedFields": [
       "speedLabel",

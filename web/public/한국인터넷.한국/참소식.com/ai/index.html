@@ -6,6 +6,9 @@
   <title>참소식 Ollama IDE</title>
   <meta name="description" content="참소식.com Ollama AI IDE">
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Nanum+Gothic+Coding:wght@400;700&display=swap" rel="stylesheet">
   <style>
     :root {
       color-scheme: dark;
@@ -35,7 +38,7 @@
       overflow: hidden;
       color: var(--text);
       background: #070b16;
-      font-family: Consolas, "Cascadia Mono", "Noto Sans KR", "Malgun Gothic", monospace;
+      font-family: "Nanum Gothic", "Nanum Gothic Coding", -apple-system, BlinkMacSystemFont, sans-serif;
     }
 
     button, input, select, textarea {
@@ -76,12 +79,13 @@
     .brand {
       display: inline-flex;
       align-items: center;
-      gap: 10px;
+      gap: 12px;
       min-width: 0;
       overflow: hidden;
       color: var(--text);
       text-decoration: none;
-      font-weight: 900;
+      font-weight: 700;
+      font-size: 16px;
     }
 
     .brand span:last-child {
@@ -91,14 +95,15 @@
     }
 
     .brand-mark {
-      width: 28px;
-      height: 28px;
+      width: 36px;
+      height: 36px;
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      border-radius: 7px;
-      background: linear-gradient(135deg, var(--blue), var(--green));
-      font-size: 12px;
+      border-radius: 10px;
+      background: linear-gradient(135deg, #8b5cf6, #6366f1);
+      font-size: 18px;
+      box-shadow: 0 4px 12px rgba(139, 92, 246, 0.3);
     }
 
     .window-actions,
@@ -127,18 +132,19 @@
     .tab,
     .send-button,
     .quick-button {
-      min-height: 34px;
+      min-height: 36px;
       border: 1px solid var(--line-2);
-      border-radius: 7px;
+      border-radius: 10px;
       color: var(--text);
-      background: #182235;
-      font-weight: 800;
+      background: rgba(30, 41, 59, 0.8);
+      font-weight: 600;
+      transition: all 0.2s;
     }
 
     .toolbar button,
     .tab {
-      padding: 7px 10px;
-      font-size: 12px;
+      padding: 8px 14px;
+      font-size: 13px;
       white-space: nowrap;
     }
 
@@ -147,8 +153,14 @@
     .tab:hover,
     .quick-button:hover,
     .send-button:hover {
-      border-color: rgba(56, 189, 248, .65);
-      background: #1d2b45;
+      border-color: rgba(139, 92, 246, 0.5);
+      background: rgba(139, 92, 246, 0.15);
+    }
+
+    .tab.active {
+      border-color: #8b5cf6;
+      color: #c4b5fd;
+      background: rgba(139, 92, 246, 0.2);
     }
 
     .left {
@@ -187,44 +199,59 @@
 
     .new-chat {
       width: 100%;
-      min-height: 40px;
-      border: 1px solid rgba(34, 197, 94, .55);
-      border-radius: 7px;
-      color: #ecfdf5;
-      background: #14532d;
-      font-weight: 900;
+      min-height: 44px;
+      border: none;
+      border-radius: 12px;
+      color: white;
+      background: linear-gradient(135deg, #8b5cf6, #6366f1);
+      font-weight: 700;
+      font-size: 14px;
+      transition: transform 0.15s, box-shadow 0.15s;
+      box-shadow: 0 4px 12px rgba(139, 92, 246, 0.25);
+    }
+
+    .new-chat:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(139, 92, 246, 0.35);
     }
 
     .conversation-list {
-      display: grid;
-      gap: 7px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
     }
 
     .conversation {
       width: 100%;
-      min-height: 42px;
-      display: grid;
-      gap: 3px;
+      min-height: 48px;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
       border: 1px solid transparent;
-      border-radius: 7px;
-      padding: 8px 9px;
+      border-radius: 10px;
+      padding: 10px 12px;
       color: var(--soft);
       background: transparent;
       text-align: left;
+      transition: all 0.2s;
     }
 
     .conversation.active,
     .conversation:hover {
-      border-color: var(--line-2);
-      background: #172033;
+      border-color: rgba(139, 92, 246, 0.3);
+      background: rgba(139, 92, 246, 0.1);
+    }
+
+    .conversation.active {
+      border-left: 3px solid #8b5cf6;
     }
 
     .conversation span {
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
-      font-size: 12px;
-      font-weight: 900;
+      font-size: 13px;
+      font-weight: 600;
     }
 
     .conversation small {
@@ -284,6 +311,47 @@
       font-size: 12px;
     }
 
+    .quick-button:hover {
+      background: rgba(139, 92, 246, 0.2);
+      border-color: rgba(139, 92, 246, 0.5);
+      color: #e0e7ff;
+    }
+
+    .empty {
+      max-width: 600px;
+      margin: 15vh auto 0;
+      padding: 40px;
+      text-align: center;
+      border-radius: 20px;
+      background: linear-gradient(135deg, rgba(139, 92, 246, 0.05), rgba(59, 130, 246, 0.05));
+      border: 1px solid rgba(139, 92, 246, 0.15);
+    }
+
+    .empty h1 {
+      margin: 0 0 16px;
+      font-size: 32px;
+      background: linear-gradient(135deg, #8b5cf6, #3b82f6);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .empty p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    .chat {
+      min-height: 0;
+      height: 100%;
+      overflow: auto;
+      padding: 24px 0;
+      scroll-behavior: smooth;
+      overscroll-behavior: contain;
+      background: linear-gradient(180deg, rgba(139, 92, 246, 0.02) 0%, transparent 100%);
+    }
+
     .workspace {
       min-width: 0;
       min-height: 0;
@@ -340,67 +408,112 @@
       margin: 0;
       color: var(--muted);
       line-height: 1.7;
-      font-family: "Noto Sans KR", "Malgun Gothic", sans-serif;
+      font-family: "Nanum Gothic", -apple-system, BlinkMacSystemFont, sans-serif;
     }
 
     .message {
-      display: grid;
-      grid-template-columns: 76px minmax(0, 1fr);
+      display: flex;
       gap: 12px;
-      max-width: 1040px;
-      margin: 0 auto 16px;
+      max-width: 900px;
+      margin: 0 auto 20px;
+      padding: 0 16px;
+    }
+
+    .message.user {
+      flex-direction: row-reverse;
+    }
+
+    .avatar {
+      width: 36px;
+      height: 36px;
+      min-width: 36px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      font-weight: 700;
+    }
+
+    .message.user .avatar {
+      background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+      color: white;
+    }
+
+    .message.assistant .avatar {
+      background: linear-gradient(135deg, #8b5cf6, #6366f1);
+      color: white;
+    }
+
+    .message-content {
+      flex: 1;
+      min-width: 0;
     }
 
     .role {
+      font-size: 11px;
+      font-weight: 700;
+      margin-bottom: 6px;
       color: var(--muted);
-      font-size: 12px;
-      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .message.user .role {
       text-align: right;
-      padding-top: 12px;
-    }
-
-    .bubble {
-      border: 1px solid var(--line);
-      border-radius: 8px;
-      background: rgba(17, 24, 39, .82);
-      padding: 13px 14px;
-      line-height: 1.68;
-      white-space: pre-wrap;
-      overflow-wrap: anywhere;
-      box-shadow: 0 10px 22px rgba(0, 0, 0, .13);
-      font-family: "Noto Sans KR", "Malgun Gothic", Consolas, monospace;
-    }
-
-    .message.user .bubble {
-      border-color: rgba(56, 189, 248, .34);
-      background: rgba(15, 23, 42, .98);
+      color: #60a5fa;
     }
 
     .message.assistant .role {
-      color: var(--green);
+      color: #a78bfa;
+    }
+
+    .bubble {
+      border-radius: 16px;
+      padding: 14px 18px;
+      line-height: 1.7;
+      white-space: pre-wrap;
+      overflow-wrap: anywhere;
+      font-family: "Nanum Gothic", "Nanum Gothic Coding", -apple-system, BlinkMacSystemFont, sans-serif;
+      font-size: 14px;
+      position: relative;
+    }
+
+    .message.user .bubble {
+      background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(37, 99, 235, 0.1));
+      border: 1px solid rgba(59, 130, 246, 0.3);
+      color: #e0f2fe;
+      border-bottom-right-radius: 4px;
+    }
+
+    .message.assistant .bubble {
+      background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(99, 102, 241, 0.08));
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      color: var(--text);
+      border-bottom-left-radius: 4px;
     }
 
     .message.streaming .bubble {
-      border-color: rgba(56, 189, 248, 0.5);
+      border-color: rgba(139, 92, 246, 0.5);
       animation: pulse-border 1.5s ease-in-out infinite;
     }
 
     @keyframes pulse-border {
-      0%, 100% { border-color: rgba(56, 189, 248, 0.3); }
-      50% { border-color: rgba(56, 189, 248, 0.7); }
+      0%, 100% { border-color: rgba(139, 92, 246, 0.3); box-shadow: 0 0 0 0 rgba(139, 92, 246, 0.1); }
+      50% { border-color: rgba(139, 92, 246, 0.6); box-shadow: 0 0 20px 5px rgba(139, 92, 246, 0.15); }
     }
 
     .typing-indicator {
       display: inline-flex;
-      gap: 4px;
-      padding: 8px 0;
+      gap: 6px;
+      padding: 12px 0;
     }
 
     .typing-indicator span {
-      width: 8px;
-      height: 8px;
+      width: 10px;
+      height: 10px;
       border-radius: 50%;
-      background: var(--cyan);
+      background: linear-gradient(135deg, #8b5cf6, #6366f1);
       animation: bounce 1.4s ease-in-out infinite;
     }
 
@@ -409,8 +522,15 @@
     .typing-indicator span:nth-child(3) { animation-delay: 0.4s; }
 
     @keyframes bounce {
-      0%, 80%, 100% { transform: translateY(0); }
-      40% { transform: translateY(-6px); }
+      0%, 80%, 100% { transform: translateY(0); opacity: 0.5; }
+      40% { transform: translateY(-10px); opacity: 1; }
+    }
+
+    .meta {
+      margin-top: 8px;
+      color: var(--muted);
+      font-size: 11px;
+      opacity: 0.7;
     }
 
     .meta {
@@ -422,42 +542,92 @@
     .composer {
       border-top: 1px solid var(--line);
       background: rgba(15, 23, 42, .96);
-      padding: 12px;
+      padding: 16px;
     }
 
     .composer form {
-      height: 100%;
-      display: grid;
-      grid-template-columns: minmax(0, 1fr) 112px;
-      gap: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .input-wrapper {
+      position: relative;
+      display: flex;
+      gap: 12px;
+      align-items: flex-end;
     }
 
     .composer textarea {
-      width: 100%;
-      min-height: 104px;
+      flex: 1;
+      min-height: 52px;
+      max-height: 200px;
       resize: none;
-      border: 1px solid var(--line-2);
-      border-radius: 8px;
+      border: 2px solid var(--line-2);
+      border-radius: 16px;
       color: var(--text);
-      background: #08111f;
-      padding: 12px 13px;
-      line-height: 1.55;
+      background: rgba(11, 16, 32, .9);
+      padding: 14px 18px;
+      line-height: 1.5;
       outline: none;
+      font-size: 14px;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+
+    .composer textarea:focus {
+      border-color: #8b5cf6;
+      box-shadow: 0 0 0 3px rgba(139, 92, 246, .15);
+    }
+
+    .composer textarea::placeholder {
+      color: var(--muted);
     }
 
     .send-button {
-      min-height: 104px;
-      border-color: rgba(34, 197, 94, .62);
-      color: #ecfdf5;
-      background: #166534;
+      min-height: 52px;
+      min-width: 100px;
+      border: none;
+      border-radius: 16px;
+      color: white;
+      background: linear-gradient(135deg, #8b5cf6, #6366f1);
       font-size: 15px;
+      font-weight: 700;
+      transition: transform 0.15s, box-shadow 0.15s;
+      box-shadow: 0 4px 12px rgba(139, 92, 246, 0.3);
+    }
+
+    .send-button:hover:not(:disabled) {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(139, 92, 246, 0.4);
     }
 
     .send-button:disabled {
-      border-color: var(--line-2);
-      color: var(--muted);
-      background: #1f2937;
+      background: linear-gradient(135deg, #374151, #1f2937);
+      box-shadow: none;
       cursor: wait;
+    }
+
+    .quick-prompts {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .quick-button {
+      padding: 8px 14px;
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      border-radius: 20px;
+      background: rgba(139, 92, 246, 0.1);
+      color: #c4b5fd;
+      font-size: 12px;
+      font-weight: 600;
+      transition: all 0.2s;
+    }
+
+    .quick-button:hover {
+      background: rgba(139, 92, 246, 0.2);
+      border-color: rgba(139, 92, 246, 0.5);
+      color: #e0e7ff;
     }
 
     .console {
@@ -471,6 +641,7 @@
       overflow: auto;
       white-space: pre-wrap;
       overflow-wrap: anywhere;
+      font-family: "Nanum Gothic Coding", "Nanum Gothic", monospace;
       font-size: 12px;
       line-height: 1.55;
     }
@@ -615,14 +786,14 @@
   <div class="ide">
     <header class="titlebar">
       <a class="brand" href="../">
-        <span class="brand-mark">AI</span>
-        <span>참소식 Ollama IDE</span>
+        <span class="brand-mark">🤖</span>
+        <span>참소식 AI 채팅</span>
       </a>
       <div class="toolbar" aria-label="도구">
-        <button type="button" id="healthButton">연결확인</button>
-        <button type="button" id="searchToggleButton" style="border-color: rgba(100,100,100,0.3);">🔍 웹검색</button>
-        <button type="button" id="copyButton">복사</button>
-        <button type="button" id="clearButton">초기화</button>
+        <button type="button" id="healthButton" style="background:rgba(34,197,94,0.1);border-color:rgba(34,197,94,0.3);color:#4ade80;">● 연결확인</button>
+        <button type="button" id="searchToggleButton" style="background:rgba(139,92,246,0.1);border-color:rgba(139,92,246,0.3);color:#c4b5fd;">🔍 검색ON</button>
+        <button type="button" id="copyButton">📋 복사</button>
+        <button type="button" id="clearButton">🗑️ 초기화</button>
       </div>
       <div class="window-actions" aria-hidden="true">
         <span class="dot red"></span>
@@ -633,21 +804,21 @@
 
     <aside class="left">
       <section class="section">
-        <button class="new-chat" type="button" id="newChatButton">+ 새 대화</button>
+        <button class="new-chat" type="button" id="newChatButton">+ 새 대화 시작</button>
       </section>
 
       <section class="section">
-        <h2>워크스페이스</h2>
+        <h2>💬 대화 기록</h2>
         <div class="conversation-list" id="conversationList"></div>
       </section>
 
       <section class="section">
-        <h2>빠른 프롬프트</h2>
+        <h2>⚡ 빠른 프롬프트</h2>
         <div class="quick-grid">
-          <button class="quick-button" type="button" data-prompt="이 뉴스 원문을 핵심 요약, 쟁점, 확인 필요 항목으로 정리해줘.">뉴스 분석</button>
-          <button class="quick-button" type="button" data-prompt="참소식.com에 올릴 기사 제목 7개와 짧은 리드문을 만들어줘.">기사 제목</button>
-          <button class="quick-button" type="button" data-prompt="아래 내용을 팩트체크 체크리스트로 바꿔줘.">팩트체크</button>
-          <button class="quick-button" type="button" data-prompt="이 코드를 문제점, 수정 방향, 개선된 코드 순서로 리뷰해줘.">코드 리뷰</button>
+          <button class="quick-button" type="button" data-prompt="이 뉴스 원문을 핵심 요약, 쟁점, 확인 필요 항목으로 정리해줘.">📰 뉴스 분석</button>
+          <button class="quick-button" type="button" data-prompt="참소식.com에 올릴 기사 제목 7개와 짧은 리드문을 만들어줘.">📝 기사 작성</button>
+          <button class="quick-button" type="button" data-prompt="아래 내용을 팩트체크 체크리스트로 바꿔줘.">✅ 팩트체크</button>
+          <button class="quick-button" type="button" data-prompt="이 코드를 문제점, 수정 방향, 개선된 코드 순서로 리뷰해줘.">💻 코드 리뷰</button>
         </div>
       </section>
     </aside>
@@ -663,25 +834,33 @@
 
       <section class="composer">
         <form id="chatForm">
-          <textarea id="promptInput" placeholder="메시지를 입력하세요. Enter로 전송, Shift+Enter로 줄바꿈" autocomplete="off"></textarea>
-          <button class="send-button" type="submit" id="sendButton">실행</button>
+          <div class="input-wrapper">
+            <textarea id="promptInput" placeholder="메시지를 입력하세요... (Enter로 전송, Shift+Enter로 줄바꿈)" autocomplete="off"></textarea>
+            <button class="send-button" type="submit" id="sendButton">전송</button>
+          </div>
+          <div class="quick-prompts">
+            <button class="quick-button" type="button" data-prompt="이 뉴스 원문을 핵심 요약해줘">📰 뉴스 요약</button>
+            <button class="quick-button" type="button" data-prompt="최신 기술 트렌드 알려줘">🔍 기술 트렌드</button>
+            <button class="quick-button" type="button" data-prompt="이 코드를 리뷰해줘">💻 코드 리뷰</button>
+            <button class="quick-button" type="button" data-prompt="이 내용을 팩트체크 해줘">✅ 팩트체크</button>
+          </div>
         </form>
       </section>
     </main>
 
     <aside class="right">
       <section class="section">
-        <h2>Ollama 연결</h2>
+        <h2>⚙️ AI 설정</h2>
         <div class="field">
-          <label for="endpointInput">원격 서버 API URL</label>
+          <label for="endpointInput">🌐 API 서버</label>
           <input id="endpointInput" type="url" value="http://211.45.162.155:11434" placeholder="http://211.45.162.155:11434">
         </div>
         <div class="field">
-          <label for="modelInput">Model</label>
+          <label for="modelInput">🤖 모델</label>
           <input id="modelInput" type="text" value="glm-5:cloud" placeholder="glm-5:cloud, gemma4:31b-cloud">
         </div>
         <div class="field">
-          <label for="temperatureInput">Temperature</label>
+          <label for="temperatureInput">🌡️ 창의성</label>
           <select id="temperatureInput">
             <option value="0.2">0.2 정확</option>
             <option value="0.5" selected>0.5 균형</option>
@@ -691,17 +870,17 @@
       </section>
 
       <section class="section">
-        <h2>System Prompt</h2>
+        <h2>📝 시스템 프롬프트</h2>
         <div class="field">
-          <label for="systemInput">역할</label>
-          <textarea id="systemInput"></textarea>
+          <label for="systemInput">AI 역할 설정</label>
+          <textarea id="systemInput" placeholder="AI의 역할과 동작 방식을 설정하세요..."></textarea>
         </div>
       </section>
 
       <section class="section">
-        <h2>런타임</h2>
+        <h2>📊 상태</h2>
         <div class="metric-grid">
-          <div class="metric"><span>상태</span><strong id="stateMetric">대기</strong></div>
+          <div class="metric"><span>연결</span><strong id="stateMetric">대기</strong></div>
           <div class="metric"><span>대화</span><strong id="countMetric">0</strong></div>
           <div class="metric"><span>지연</span><strong id="latencyMetric">-</strong></div>
           <div class="metric"><span>모드</span><strong id="modeMetric">API</strong></div>
@@ -709,19 +888,19 @@
       </section>
 
       <section class="section">
-        <h2>Console</h2>
+        <h2>🖥️ 콘솔</h2>
         <pre class="console" id="consoleLog"></pre>
       </section>
     </aside>
 
     <footer class="statusbar">
       <div class="status-left">
-        <span class="status-pill"><span class="pulse" id="statusPulse"></span><span id="statusText">ngrok 서버 대기</span></span>
-        <span id="baseText">/api/chat</span>
+        <span class="status-pill"><span class="pulse" id="statusPulse"></span><span id="statusText">AI 서버 대기</span></span>
+        <span id="baseText">🤖 Ollama API</span>
       </div>
       <div class="status-right">
-        <span>Enter 실행</span>
-        <span>localStorage 자동 저장</span>
+        <span>⚡ 스트리밍</span>
+        <span>💾 자동 저장</span>
       </div>
     </footer>
   </div>
@@ -733,12 +912,6 @@
     
     const DEFAULT_ENDPOINT = REMOTE_SERVER;
     const DEFAULT_MODEL = "glm-5:cloud";
-    const LEGACY_ENDPOINTS = [
-      "https://gilbert-bases-tracked-hopes.trycloudflare.com",
-      "https://cyclopedically-orthogenetic-sienna.ngrok-free.dev",
-      "https://corporate-value-sailing-position.trycloudflare.com"
-    ];
-    const LEGACY_MODELS = ["kimi-k2.6:cloud", "deepseek-v4-flash:cloud"];
     const storageKey = "chamsosik-ollama-ide-state";
 
     const els = {
@@ -773,13 +946,10 @@
       try {
         const saved = JSON.parse(localStorage.getItem(storageKey) || "{}");
         if (saved && Array.isArray(saved.conversations)) {
-          // 이전 Cloudflare 터널 URL이면 기본값으로 초기화
-          const endpoint = saved.endpoint || DEFAULT_ENDPOINT;
-          const cleanEndpoint = endpoint.includes('trycloudflare.com') ? DEFAULT_ENDPOINT : endpoint;
           return {
             conversations: saved.conversations,
             activeId: saved.activeId,
-            endpoint: cleanEndpoint,
+            endpoint: saved.endpoint || DEFAULT_ENDPOINT,
             model: saved.model || DEFAULT_MODEL,
             temperature: saved.temperature || "0.5",
             system: saved.system || els.systemInput.value
@@ -822,36 +992,20 @@
 
     function endpointBase() {
       const value = els.endpointInput.value.trim();
-      const isLegacy = LEGACY_ENDPOINTS.some((endpoint) => value.replace(/\/$/, "") === endpoint);
-      const base = /^https?:\/\//i.test(value) && !isLegacy ? value : DEFAULT_ENDPOINT;
+      const base = /^https?:\/\//i.test(value) ? value : DEFAULT_ENDPOINT;
       return base
         .replace(/\/api\/chat\/?$/, "")
         .replace(/\/health\/?$/, "")
         .replace(/\/$/, "");
     }
 
-    function candidateBases() {
-      const bases = [endpointBase()];
-      // 원격 서버 Ollama 추가
-      if (!bases.includes(REMOTE_SERVER)) {
-        bases.push(REMOTE_SERVER);
-      }
-      const canTryLocalhost = window.location.protocol !== "https:";
-      if (canTryLocalhost && !bases.includes("http://127.0.0.1:11434")) {
-        bases.push("http://127.0.0.1:11434");
-      }
-      return bases;
-    }
-
     function candidateChatUrls() {
       const urls = ["/api/ollama-chat"];
       // 원격 서버 Ollama API 직접 호출
       urls.push(`${REMOTE_SERVER}/api/chat`);
-      // Fallback URL (Cloudflare Tunnel 등)
-      for (const base of candidateBases()) {
-        if (base !== REMOTE_SERVER && !urls.includes(`${base}/api/chat`)) {
-          urls.push(`${base}/api/chat`);
-        }
+      // 로컬호스트 (개발용)
+      if (window.location.protocol !== "https:") {
+        urls.push("http://127.0.0.1:11434/api/chat");
       }
       return urls;
     }
@@ -863,6 +1017,75 @@
         .replaceAll(">", "&gt;")
         .replaceAll('"', "&quot;")
         .replaceAll("'", "&#039;");
+    }
+
+    // 마크다운을 HTML로 변환 (이모지와 스타일 지원 강화)
+    function markdownToHtml(text) {
+      if (!text) return "";
+
+      let html = text;
+
+      // *, # 문자만 제거
+      html = html.replace(/[*#]/g, '');
+      return html;
+    }
+
+    // 메시지 내용 렌더링 (마크다운 변환) markdownToHtml(content);
+    function renderMessageContent(content) {
+      if (!content) return "";
+      return createSearchLinks(markdownToHtml(content));
+    }
+
+    // 검색 링크 생성 (구글, 네이버, 빙, 줌)
+    function createSearchLinks(query) {
+      if (!query || query.trim().length === 0) return '';
+      
+      const encodedQuery = encodeURIComponent(query.trim());
+      
+      const searchEngines = [
+        { name: '구글', icon: '🔍', url: `https://www.google.com/search?q=${encodedQuery}`, color: '#4285f4' },
+        { name: '네이버', icon: '🟢', url: `https://search.naver.com/search.naver?query=${encodedQuery}`, color: '#03c75a' },
+        { name: '빙', icon: '🟦', url: `https://www.bing.com/search?q=${encodedQuery}`, color: '#008373' },
+        { name: '줌', icon: '🔎', url: `https://zum.com/search?q=${encodedQuery}`, color: '#6b4e9e' }
+      ];
+      
+      const links = searchEngines.map(engine => 
+        `<a href="${engine.url}" target="_blank" rel="noopener" 
+           style="display:inline-flex;align-items:center;gap:4px;padding:4px 10px;margin:2px;
+                  background:${engine.color}15;border:1px solid ${engine.color}40;border-radius:16px;
+                  color:${engine.color};text-decoration:none;font-size:12px;font-weight:600;
+                  transition:all 0.2s;"
+           onmouseover="this.style.background='${engine.color}30';this.style.borderColor='${engine.color}'"
+           onmouseout="this.style.background='${engine.color}15';this.style.borderColor='${engine.color}40'">
+          ${engine.icon} ${engine.name}
+        </a>`
+      ).join('');
+      
+      return `<div style="margin-top:12px;padding-top:10px;border-top:1px solid rgba(139,92,246,0.15);">
+        <span style="font-size:11px;color:var(--muted);margin-right:8px;">🔗 검색:</span>
+        ${links}
+      </div>`;
+    }
+
+    // 사용자 메시지에서 검색 키워드 추출
+    function extractSearchQuery(message) {
+      if (!message) return '';
+      
+      // 메시지에서 핵심 키워드 추출 (불용어 제거)
+      const stopWords = ['은', '는', '이', '가', '을', '를', '에', '의', '와', '과', '도', '다', '요', '좀', '어때', '알려줘', '말해줘', '가르쳐', '해줘', '해주세요', '뭐', '무엇', '어떻게', '왜', '언제', '어디', '누구'];
+      let cleaned = message.trim();
+      
+      // 끝에 있는 불용어 제거
+      stopWords.forEach(w => {
+        cleaned = cleaned.replace(new RegExp(w + '[?]?$', 'g'), '');
+      });
+      
+      // 너무 길면 앞부분만 사용
+      if (cleaned.length > 50) {
+        cleaned = cleaned.slice(0, 50);
+      }
+      
+      return cleaned.trim();
     }
 
     function formatTime(value = new Date()) {
@@ -899,46 +1122,72 @@
       const conversation = currentConversation();
       if (!conversation || !conversation.messages.length) {
         els.chatLog.innerHTML = `<div class="empty">
-          <h1>Ollama 작업공간</h1>
-          <p>질문을 보내면 <strong>원격 서버 Ollama (211.45.162.155:11434)</strong>로 요청합니다.</p>
-          <p>클라우드 모델: <strong>glm-5:cloud</strong>, <strong>gemma4:31b-cloud</strong></p>
-          <p style="margin-top:12px;color:var(--cyan);font-weight:900;">🔍 상단 <strong>웹검색</strong> 버튼을 누르면 AI가 실시간 웹 검색 결과를 참고하여 답변합니다.</p>
-          <p style="margin-top:8px;color:var(--muted);">✨ 스트리밍 응답: 토큰 단위로 실시간 표시됩니다.</p>
+          <h1>🤖 Ollama AI 채팅</h1>
+          <p style="font-size:16px;margin-bottom:16px;">질문을 입력하면 <strong>AI가 실시간으로 답변합니다</strong></p>
+          <div style="display:grid;gap:12px;margin-top:20px;">
+            <div style="padding:12px 16px;border-radius:12px;background:rgba(139,92,246,0.1);border:1px solid rgba(139,92,246,0.2);">
+              <strong style="color:#a78bfa;">🔍 스마트 검색</strong>
+              <p style="margin:4px 0 0;color:var(--muted);font-size:13px;">키워드 감지 시 자동으로 웹 검색 후 답변</p>
+            </div>
+            <div style="padding:12px 16px;border-radius:12px;background:rgba(34,197,94,0.1);border:1px solid rgba(34,197,94,0.2);">
+              <strong style="color:#22c55e;">⚡ 스트리밍 응답</strong>
+              <p style="margin:4px 0 0;color:var(--muted);font-size:13px;">토큰 단위로 실시간 표시</p>
+            </div>
+            <div style="padding:12px 16px;border-radius:12px;background:rgba(56,189,248,0.1);border:1px solid rgba(56,189,248,0.2);">
+              <strong style="color:#38bdf8;">💾 자동 저장</strong>
+              <p style="margin:4px 0 0;color:var(--muted);font-size:13px;">대화 기록이 브라우저에 저장</p>
+            </div>
+          </div>
         </div>`;
         scrollChatToBottom();
         return;
       }
 
       els.chatLog.innerHTML = conversation.messages.map((message, index) => {
-        const roleLabel = message.role === "user" ? "USER" : "AI";
+        const isUser = message.role === "user";
         const isStreaming = message.role === "assistant" && !message.content && index === conversation.messages.length - 1;
         const streamClass = isStreaming ? " streaming" : "";
-        let extraHtml = "";
+        const avatarIcon = isUser ? "👤" : "🤖";
+        const roleLabel = isUser ? "You" : "AI Assistant";
         
         // 스트리밍 중이면 로딩 표시
         const contentHtml = isStreaming 
           ? `<div class="typing-indicator"><span></span><span></span><span></span></div>`
-          : escapeHtml(message.content);
+          : renderMessageContent(message.content);
         
         // 검색 결과가 있으면 표시
+        let extraHtml = "";
         if (message.searchResults && message.searchResults.length > 0) {
-          extraHtml = `<details style="margin-top:8px;font-size:12px;color:var(--muted);">
-            <summary style="cursor:pointer;font-weight:900;">🔍 검색결과 ${message.searchResults.length}건</summary>
-            <div style="margin-top:6px;display:grid;gap:6px;">
-              ${message.searchResults.slice(0, 5).map((item, i) =>
-                `<div style="padding:6px 8px;border:1px solid var(--line);border-radius:4px;background:rgba(255,255,255,0.03);">
-                  <div style="font-weight:900;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${escapeHtml(item.title || 'Untitled')}</div>
-                  <div style="font-size:11px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--cyan);">${escapeHtml(item.url || '')}</div>
-                </div>`
-              ).join('')}
+          extraHtml = `<details style="margin-top:16px;border-top:1px solid rgba(139,92,246,0.2);padding-top:12px;cursor:pointer;">
+            <summary style="font-weight:700;color:#a78bfa;font-size:13px;user-select:none;">🔍 검색 결과 ${message.searchResults.length}건 (클릭하여 펼치기)</summary>
+            <div style="margin-top:10px;display:grid;gap:10px;">
+              ${message.searchResults.slice(0, 5).map((item, i) => {
+                const content = item.content || item.snippet || item.description || '';
+                const preview = content.slice(0, 200);
+                return `<div style="padding:10px;border-radius:8px;background:rgba(0,0,0,0.25);border:1px solid rgba(139,92,246,0.1);">
+                  <div style="font-weight:600;color:var(--text);margin-bottom:4px;font-size:12px;">${escapeHtml(item.title || '제목 없음')}</div>
+                  <a href="${escapeHtml(item.url || '')}" target="_blank" style="font-size:10px;color:#38bdf8;text-decoration:none;word-break:break-all;display:block;margin-bottom:4px;opacity:0.7;">${escapeHtml(item.url || '')}</a>
+                  ${preview ? `<div style="font-size:11px;color:var(--muted);line-height:1.4;margin-top:4px;">${escapeHtml(preview)}${content.length > 200 ? '...' : ''}</div>` : ''}
+                </div>`;
+              }).join('')}
             </div>
           </details>`;
         }
+        
+        // 사용자 메시지에 검색 링크 추가
+        if (isUser && !isStreaming && message.content) {
+          const searchQuery = extractSearchQuery(message.content);
+          if (searchQuery) {
+            extraHtml = createSearchLinks(searchQuery);
+          }
+        }
+        
         return `<article class="message ${message.role}${streamClass}">
-          <div class="role">${roleLabel}</div>
-          <div>
+          <div class="avatar">${avatarIcon}</div>
+          <div class="message-content">
+            <div class="role">${roleLabel}</div>
             <div class="bubble">${contentHtml}${extraHtml}</div>
-            <div class="meta">${escapeHtml(message.model || "")} ${escapeHtml(message.time || "")}</div>
+            <div class="meta" style="margin-top:6px;font-size:11px;color:var(--muted);">${escapeHtml(message.model || "")} ${escapeHtml(message.time || "")}</div>
           </div>
         </article>`;
       }).join("");
@@ -1006,24 +1255,6 @@
       }
     }
 
-    async function loadTunnelUrl() {
-      try {
-        const response = await fetch("/api/ai-tunnel-url", { cache: "no-store" });
-        if (!response.ok) return;
-        const data = await response.json();
-        const url = String(data.url || "").trim().replace(/\/$/, "");
-        // Cloudflare 터널 또는 원격 서버 URL 허용
-        if (/^https?:\/\/[a-z0-9.-]+/.test(url)) {
-          els.endpointInput.value = url;
-          log(`tunnel url loaded: ${url}`);
-          saveState();
-          render();
-        }
-      } catch (error) {
-        log(`tunnel url load skipped: ${error.message}`);
-      }
-    }
-
     function fallbackReply(prompt) {
       return [
         "API 응답을 받지 못해 로컬 안내를 표시합니다.",
@@ -1087,7 +1318,49 @@
 
     // RAG 라우터: 키워드 기반 검색 필요성 판단
     async function analyzeSearchNeed(query, conversation) {
-      // 검색이 필요한 키워드 패턴
+      const queryLower = query.toLowerCase().trim();
+      
+      // ===== 1. 인사 패턴 감지 (가장 먼저 체크) =====
+      const greetingPatterns = [
+        /^안녕/, /^안녕하세요/, /^반가워/, /^반갑/, /^안녕하세/, /^hi$/i, /^hello$/i, /^hey$/i,
+        /^좋은아침/, /^좋은오후/, /^좋은저녁/, /^잘지내/, /^잘지내셨/, /^건강하시/,
+        /^반갑습니다/, /^처음뵙/, /^만나서반/, /^오랜만/, /^오랫만/, /^그동안잘/, /^별말씀/, /^아니에요/,
+        /^감사/, /^고맙/, /^고마워/, /^땡큐/i, /^thank/i, /^thanks/i,
+        /^잘했/, /^좋아/, /^좋네/, /^훌륭/, /^대단/, /^멋져/, /^짱이/, /^최고/, /^완벽/
+      ];
+      
+      // 인사 패턴 매칭
+      for (const pattern of greetingPatterns) {
+        if (pattern.test(queryLower)) {
+          log(`💬 인사 감지: 직접 응답`);
+          return {
+            needsSearch: false,
+            reason: '인사/감사 표현 감지',
+            keywords: [],
+            confidence: 1,
+            matchedKeywords: [],
+            isGreeting: true
+          };
+        }
+      }
+      
+      // 짧은 인사/감사 (10자 이하)
+      if (queryLower.length <= 10) {
+        const shortGreetings = ['안녕', '반가', '고마', '감사', '잘했', '좋아', '좋네', '멋져', '짱', '대단', '훌륭', '완벽', '최고', 'hi', 'hello', 'hey', 'thx', 'ty'];
+        if (shortGreetings.some(g => queryLower.includes(g))) {
+          log(`💬 짧은 인사 감지: 직접 응답`);
+          return {
+            needsSearch: false,
+            reason: '짧은 인사/감사',
+            keywords: [],
+            confidence: 1,
+            matchedKeywords: [],
+            isGreeting: true
+          };
+        }
+      }
+      
+      // ===== 2. 분석/질문 패턴 감지 (검색 필요) =====
       const searchKeywords = [
         // 시간 관련
         '최신', '최근', '오늘', '어제', '이번', '지난', '올해', '작년',
@@ -1104,19 +1377,18 @@
         // 비교/추천
         '비교', '추천', '순위', '랭킹', 'best', 'top',
         // 상태
-        '현황', '상황', '동향', '트렌드', '유행'
+        '현황', '상황', '동향', '트렌드', '유행',
+        // 분석 키워드
+        '분석', '요약', '정리', '설명', '조사', '연구', '보고서',
+        '데이터', '통계', '수치', '현황', '전망'
       ];
       
-      // 검색이 필요 없는 패턴 (일반 대화, 창작, 분석)
+      // ===== 3. 검색 불필요 패턴 (창작, 코딩, 수학) =====
       const noSearchKeywords = [
-        '코드', '작성', '만들어', '생성', '번역', '요약해', '정리해',
-        '수정', '변경', '개선', '리팩토링',
-        '이야기', '소설', '시', '글', '에세이',
-        '계산', '수학', '공식',
-        '안녕', '반가워', '고마워', '감사', '잘했', '좋아'
+        '코드', '작성해', '만들어', '생성해', '번역해', '수정해', '변경해',
+        '이야기', '소설', '시', '글', '에세이', '편지', '일기',
+        '계산', '수학', '공식', '방정식'
       ];
-      
-      const queryLower = query.toLowerCase();
       
       // 검색 필요 키워드 매칭
       const searchMatches = searchKeywords.filter(kw => queryLower.includes(kw));
@@ -1138,29 +1410,27 @@
         reason: needsSearch 
           ? `검색 키워드 감지: ${searchMatches.join(', ')}` 
           : (noSearchScore > 0 
-            ? `일반 대화 감지: ${noSearchMatches.join(', ')}` 
+            ? `창작/코딩 감지: ${noSearchMatches.join(', ')}` 
             : '직접 응답'),
         keywords,
         confidence: Math.min(1, (Math.abs(searchScore - noSearchScore) + 1) / 3),
-        matchedKeywords: searchMatches
+        matchedKeywords: searchMatches,
+        isGreeting: false
       };
       
       log(`🔍 검색 판단: ${result.needsSearch ? '검색필요' : '직접응답'} - ${result.reason}`);
       return result;
     }
 
-    // 질문에서 검색 키워드 추출
+    // 질문에서 검색 쿼리 추출 (문장 그대로 사용)
     function extractKeywords(query) {
-      // 불용어 제거
-      const stopWords = ['은', '는', '이', '가', '을', '를', '에', '의', '와', '과', '도', '다', '요', '좀', '좀', '어때', '알려줘', '말해줘', '가르쳐'];
-      let cleaned = query;
-      stopWords.forEach(w => cleaned = cleaned.replace(new RegExp(w, 'g'), ' '));
+      // 불용어만 제거하고 문장 형태 유지
+      const stopWords = ['은', '는', '이', '가', '을', '를', '에', '의', '와', '과', '도', '다', '요', '좀', '어때', '알려줘', '말해줘', '가르쳐', '해줘', '해주세요'];
+      let cleaned = query.trim();
+      stopWords.forEach(w => cleaned = cleaned.replace(new RegExp(w + '$', 'g'), '')); // 끝에 있는 불용어만 제거
       
-      // 공백으로 분리하고 중요 단어만 추출
-      const words = cleaned.split(/\s+/).filter(w => w.length >= 2);
-      
-      // 상위 3개 키워드 반환
-      return words.slice(0, 3);
+      // 문장 그대로 반환 (키워드 분리하지 않음)
+      return [cleaned.trim()];
     }
 
     // 스마트 채팅: AI가 검색 필요성 판단 후 처리
@@ -1351,10 +1621,16 @@
           const decoder = new TextDecoder();
           let fullContent = "";
           let buffer = "";
+          let chunkCount = 0;
 
+          log(`📡 스트리밍 시작...`);
+          
           while (true) {
             const { done, value } = await reader.read();
-            if (done) break;
+            if (done) {
+              log(`📡 스트리밍 완료 (총 ${chunkCount}개 청크)`);
+              break;
+            }
             
             buffer += decoder.decode(value, { stream: true });
             const lines = buffer.split("\n");
@@ -1365,25 +1641,40 @@
               
               try {
                 const data = JSON.parse(line);
+                chunkCount++;
+                
+                // Ollama /api/chat 형식 (messages API)
                 if (data.message?.content) {
                   fullContent += data.message.content;
                   onChunk(data.message.content, fullContent);
-                } else if (data.response) {
-                  // Ollama 기본 형식
+                } 
+                // Ollama /api/generate 형식
+                else if (data.response) {
                   fullContent += data.response;
                   onChunk(data.response, fullContent);
-                } else if (data.content) {
+                } 
+                // 다른 형식
+                else if (data.content) {
                   fullContent += data.content;
                   onChunk(data.content, fullContent);
                 }
+                // 완료 신호
+                else if (data.done === true) {
+                  log(`📡 스트림 완료 신호 수신`);
+                }
               } catch (e) {
                 // JSON 파싱 실패 시 텍스트로 처리
-                if (line.trim()) {
+                if (line.trim() && line.length > 2) {
                   fullContent += line;
                   onChunk(line, fullContent);
                 }
               }
             }
+          }
+
+          // 내용이 없으면 에러
+          if (!fullContent || fullContent.trim().length === 0) {
+            throw new Error("빈 응답 - AI가 응답을 생성하지 않았습니다");
           }
 
           onComplete(fullContent, searchResults);
@@ -1395,6 +1686,81 @@
       }
 
       throw lastError || new Error("all streaming endpoints failed");
+    }
+
+    // 비스트리밍 응답 처리 (폴백)
+    async function fetchNonStreaming(prompt, searchResults, searchContext) {
+      const model = els.modelInput.value.trim() || DEFAULT_MODEL;
+      const conversation = currentConversation();
+      const systemPrompt = els.systemInput.value.trim();
+      
+      const messages = [
+        { role: "system", content: systemPrompt },
+        ...conversation.messages.slice(-12).map((item) => ({ role: item.role, content: item.content }))
+      ];
+      
+      const enhancedPrompt = searchContext 
+        ? `${prompt}\n\n[참고: 위 검색 결과를 활용하여 답변하세요. 출처를 반드시 표시하세요.]${searchContext}`
+        : prompt;
+
+      const body = {
+        model,
+        messages: [...messages, { role: "user", content: enhancedPrompt }],
+        stream: false,  // 비스트리밍
+        temperature: Number(els.temperatureInput.value)
+      };
+
+      for (const url of candidateChatUrls()) {
+        try {
+          const sameOriginProxy = url === "/api/ollama-chat";
+          log(`POST ${url} model=${model} stream=false (폴백)`);
+          
+          const response = await fetch(url, {
+            method: "POST",
+            headers: {
+              "Content-Type": sameOriginProxy ? "application/json" : "text/plain",
+              "Authorization": `Bearer ${OLLAMA_API_KEY}`
+            },
+            body: JSON.stringify(body)
+          });
+
+          if (!response.ok) {
+            const text = await response.text();
+            throw new Error(`${url} ${response.status} ${text.slice(0, 180)}`);
+          }
+
+          const text = await response.text();
+          let content = "";
+          
+          try {
+            const data = JSON.parse(text);
+            // 다양한 응답 형식 처리
+            if (data.message?.content) {
+              content = data.message.content;
+            } else if (data.response) {
+              content = data.response;
+            } else if (data.content) {
+              content = data.content;
+            } else if (data.choices?.[0]?.message?.content) {
+              content = data.choices[0].message.content;
+            } else {
+              content = JSON.stringify(data);
+            }
+          } catch (e) {
+            content = text;
+          }
+
+          if (!content || content.trim().length === 0) {
+            throw new Error("빈 응답");
+          }
+
+          return { content, searchResults };
+        } catch (error) {
+          log(`non-stream failed on ${url}: ${error.message}`);
+        }
+      }
+
+      throw new Error("모든 API 호출 실패");
     }
 
     async function requestAI(prompt) {
@@ -1554,38 +1920,103 @@
       render();
 
       const started = performance.now();
+      let streamComplete = false;
+      let searchResults = null;
+      let searchContext = "";
       
       try {
-        // 스트리밍 응답 처리
-        await streamAI(
-          prompt,
-          // onChunk: 실시간 업데이트
-          (chunk, accumulated) => {
-            conversation.messages[aiMsgIndex].content = accumulated;
-            render();
-            scrollChatToBottom();
-          },
-          // onComplete: 완료
-          (fullContent, searchResults) => {
-            const ms = Math.round(performance.now() - started);
-            els.latencyMetric.textContent = `${ms}ms`;
+        // 1단계: 검색 필요성 판단 및 검색 실행
+        if (webSearchEnabled) {
+          const analysis = await analyzeSearchNeed(prompt, conversation);
+          
+          if (analysis.needsSearch && analysis.keywords.length > 0) {
+            log(`🔍 검색 키워드: ${analysis.keywords.join(', ')}`);
             
-            conversation.messages[aiMsgIndex].content = fullContent;
-            if (searchResults) {
-              conversation.messages[aiMsgIndex].searchResults = searchResults;
+            const searchData = await webSearch(analysis.keywords.join(' '), 5);
+            if (searchData.results && searchData.results.length > 0) {
+              searchResults = searchData.results;
+              log(`✅ 검색 완료: ${searchResults.length}건`);
+              
+              // 상위 2개 결과 크롤링
+              const fetchPromises = searchResults.slice(0, 2).map(async (r, i) => {
+                try {
+                  const fetched = await webFetch(r.url);
+                  if (fetched.content) {
+                    r.content = fetched.content;
+                    log(`   [${i + 1}] 크롤링 성공: ${(r.title || '제목없음').slice(0, 30)}`);
+                  }
+                } catch (e) {
+                  log(`   [${i + 1}] 크롤링 실패: ${e.message.slice(0, 50)}`);
+                }
+                return r;
+              });
+              await Promise.all(fetchPromises);
+              
+              searchContext = "\n\n[웹 검색 결과]\n" + searchResults.map((r, i) => {
+                const content = r.content || r.snippet || r.description || '';
+                return `[${i + 1}] ${r.title || '제목 없음'}\n${r.url}\n${content}\n---`;
+              }).join('\n\n');
             }
-            
-            setOnline(true, "AI 응답 완료");
-            log(`streaming complete ${ms}ms`);
-            saveState();
-            render();
           }
-        );
+        }
+        
+        // 2단계: 스트리밍 응답 시도
+        log(`📡 스트리밍 시도 중...`);
+        
+        try {
+          await streamAI(
+            prompt,
+            // onChunk: 실시간 업데이트
+            (chunk, accumulated) => {
+              conversation.messages[aiMsgIndex].content = accumulated;
+              render();
+              scrollChatToBottom();
+            },
+            // onComplete: 완료
+            (fullContent, sr) => {
+              streamComplete = true;
+              searchResults = sr || searchResults;
+              const ms = Math.round(performance.now() - started);
+              els.latencyMetric.textContent = `${ms}ms`;
+              
+              conversation.messages[aiMsgIndex].content = fullContent;
+              if (searchResults) {
+                conversation.messages[aiMsgIndex].searchResults = searchResults;
+              }
+              
+              setOnline(true, "AI 응답 완료");
+              log(`✅ 스트리밍 완료 ${ms}ms, 길이: ${fullContent.length}자`);
+              saveState();
+              render();
+            }
+          );
+        } catch (streamError) {
+          // 스트리밍 실패 시 비스트리밍으로 폴백
+          log(`⚠️ 스트리밍 실패: ${streamError.message}`);
+          log(`📡 비스트리밍 모드로 전환...`);
+          
+          const result = await fetchNonStreaming(prompt, searchResults, searchContext);
+          
+          const ms = Math.round(performance.now() - started);
+          els.latencyMetric.textContent = `${ms}ms`;
+          
+          conversation.messages[aiMsgIndex].content = result.content;
+          if (result.searchResults) {
+            conversation.messages[aiMsgIndex].searchResults = result.searchResults;
+          }
+          
+          setOnline(true, "AI 응답 완료");
+          log(`✅ 비스트리밍 완료 ${ms}ms, 길이: ${result.content.length}자`);
+          saveState();
+          render();
+          streamComplete = true;
+        }
+        
       } catch (error) {
-        // 에러 시 fallback
+        // 모든 시도 실패
+        log(`❌ 에러: ${error.message}`);
         conversation.messages[aiMsgIndex].content = fallbackReply(prompt);
         setOnline(false, "API 응답 실패");
-        log(`request failed: ${error.message}`);
         render();
       } finally {
         els.sendButton.disabled = false;
@@ -1625,10 +2056,8 @@
     }
 
     const savedEndpoint = (state.endpoint || "").replace(/\/$/, "");
-    els.endpointInput.value = /^https?:\/\//i.test(savedEndpoint) && !LEGACY_ENDPOINTS.includes(savedEndpoint)
-      ? savedEndpoint
-      : DEFAULT_ENDPOINT;
-    els.modelInput.value = LEGACY_MODELS.includes(state.model || "") ? DEFAULT_MODEL : (state.model || DEFAULT_MODEL);
+    els.endpointInput.value = /^https?:\/\//i.test(savedEndpoint) ? savedEndpoint : DEFAULT_ENDPOINT;
+    els.modelInput.value = state.model || DEFAULT_MODEL;
     els.temperatureInput.value = state.temperature || "0.5";
     els.systemInput.value = state.system || els.systemInput.value;
 
@@ -1644,16 +2073,16 @@
 
     // 웹 검색 토글 (초기 ON)
     const searchToggleBtn = document.querySelector("#searchToggleButton");
-    searchToggleBtn.style.borderColor = "rgba(34, 197, 94, 0.8)";
-    searchToggleBtn.style.background = "#166534";
-    searchToggleBtn.style.color = "#ecfdf5";
+    searchToggleBtn.style.background = "rgba(139, 92, 246, 0.15)";
+    searchToggleBtn.style.borderColor = "rgba(139, 92, 246, 0.4)";
+    searchToggleBtn.style.color = "#c4b5fd";
     searchToggleBtn.textContent = "🔍 검색ON";
     searchToggleBtn.addEventListener("click", () => {
       webSearchEnabled = !webSearchEnabled;
-      searchToggleBtn.style.borderColor = webSearchEnabled ? "rgba(34, 197, 94, 0.8)" : "rgba(100,100,100,0.3)";
-      searchToggleBtn.style.background = webSearchEnabled ? "#166534" : "#182235";
-      searchToggleBtn.style.color = webSearchEnabled ? "#ecfdf5" : "var(--text)";
-      searchToggleBtn.textContent = webSearchEnabled ? "🔍 검색ON" : "🔍 웹검색";
+      searchToggleBtn.style.background = webSearchEnabled ? "rgba(139, 92, 246, 0.15)" : "rgba(100, 100, 100, 0.1)";
+      searchToggleBtn.style.borderColor = webSearchEnabled ? "rgba(139, 92, 246, 0.4)" : "rgba(100, 100, 100, 0.3)";
+      searchToggleBtn.style.color = webSearchEnabled ? "#c4b5fd" : "var(--text)";
+      searchToggleBtn.textContent = webSearchEnabled ? "🔍 검색ON" : "🔍 검색OFF";
       log(`web search ${webSearchEnabled ? "enabled" : "disabled"}`);
     });
 
@@ -1674,7 +2103,6 @@
     log("참소식 Ollama IDE ready");
     log(`default endpoint: ${DEFAULT_ENDPOINT}/api/chat`);
     render();
-    loadTunnelUrl();
     checkHealth();
   </script>
 </body>

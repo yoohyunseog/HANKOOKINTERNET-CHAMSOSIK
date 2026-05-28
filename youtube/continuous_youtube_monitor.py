@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+﻿#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
 YouTube 키워드 지속 모니터링 시스템
@@ -37,6 +37,8 @@ DATABASE_OPEN_PAGE = os.getenv("DATABASE_OPEN_PAGE", "0") == "1"
 DATABASE_OPEN_MODE = os.getenv("DATABASE_OPEN_MODE", "popup").strip().lower()
 YOUTUBE_CC_FALLBACK = os.getenv("YOUTUBE_CC_FALLBACK", "0") == "1"
 BLOCK_KOREAN_PERSON_NAMES = os.getenv("BLOCK_KOREAN_PERSON_NAMES", "1") == "1"
+# 브라우저 창 표시 설정 (기본값: 창 표시 = "0", 백그라운드 실행 = "1")
+SEARCH_HEADLESS = os.getenv("SEARCH_HEADLESS", "0")
 SCRIPT_DIR = Path(__file__).parent.resolve()
 REPORTS_BASE_DIR = SCRIPT_DIR / "reports"
 LOGS_DIR = SCRIPT_DIR / "logs"
@@ -460,7 +462,7 @@ def analyze_with_search_fallback(video_title: str, keyword: str, model: str) -> 
 def is_today_video_with_search_data(video: Dict[str, Any], keyword: str, search_summary: str, model: str) -> bool:
     """일반 검색 결과를 근거로 오늘 날짜/당일성 영상인지 재판정"""
     upload_date = (video.get("upload_date") or "").strip()
-    if upload_date and not is_within_last_24_hours(upload_date):
+    if upload_date and not is_today_only(upload_date):
         return False
 
     normalized_summary = normalize_summary_text(search_summary or "")
@@ -468,31 +470,32 @@ def is_today_video_with_search_data(video: Dict[str, Any], keyword: str, search_
         return False
 
     if not model:
-        return bool(upload_date and is_within_last_24_hours(upload_date))
+        return bool(upload_date and is_today_only(upload_date))
 
     now_str = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     today_str = datetime.now().strftime("%Y-%m-%d")
-    prompt = f"""다음 정보만 보고 이 YouTube 영상이 현재 시각({now_str}) 기준으로 '오늘 날짜 데이터/당일 이슈를 다루는 영상'인지 판정하세요.
+    prompt = f"""Determine if this YouTube video was uploaded TODAY ({today_str}) based on the following information.
 
-[영상 제목]
+[Video Title]
 {video.get('title', '')[:250]}
 
-[키워드]
+[Keyword]
 {keyword[:120]}
 
-[업로드일]
-{upload_date or '확인 불가'}
+[Upload Date]
+{upload_date or 'Unknown'}
 
-[일반 검색 요약]
+[Search Summary]
 {normalized_summary[:1800]}
 
-판정 기준:
-1) 오늘, 금일, 현재, 실시간, 방금, 당일 시황/뉴스/속보처럼 현재 날짜와 직접 연결되면 YES
-2) 검색 요약에 오늘 날짜({today_str}) 또는 그에 해당하는 당일 맥락이 드러나면 YES
-3) 상시 정보, 일반 강의, 과거 회고, 날짜 불명은 NO
-4) 애매하면 NO
+Rules:
+1) If upload date is TODAY ({today_str}): answer YES
+2) If upload date is NOT today: answer NO
+3) If upload date is unknown: answer NO
 
-출력: YES 또는 NO 하나만"""
+IMPORTANT: After your analysis, you MUST end your response with exactly one word: YES or NO
+
+Your answer (YES or NO):"""
 
     try:
         response = requests.post(
@@ -503,18 +506,32 @@ def is_today_video_with_search_data(video: Dict[str, Any], keyword: str, search_
                 "stream": False,
                 "options": {
                     "temperature": 0.0,
-                    "num_predict": 5,
+                    "num_predict": 500,  # thinking 모델은 더 많은 토큰 필요
                     "top_p": 0.1,
                 },
             },
-            timeout=20,
+            timeout=120,  # thinking 모델은 시간이 더 걸릴 수 있음
         )
         response.raise_for_status()
         result = response.json()
+        
+        # glm-5:cloud 같은 thinking 모델은 response 필드가 비어있을 수 있음
         verdict = (result.get("response", "") or "").strip().upper()
+        
+        # response가 비어있으면 thinking 필드 확인
+        if not verdict:
+            thinking = (result.get("thinking", "") or "").strip().upper()
+            if "YES" in thinking:
+                verdict = "YES"
+            elif "NO" in thinking:
+                verdict = "NO"
+        
+        if not verdict:
+            return bool(upload_date and is_today_only(upload_date))
+        
         return verdict.startswith("YES")
     except Exception:
-        return bool(upload_date and is_within_last_24_hours(upload_date))
+        return bool(upload_date and is_today_only(upload_date))
 
 
 def apply_search_fallback_if_needed(
@@ -680,9 +697,24 @@ def is_within_last_24_hours(upload_date: str) -> bool:
     return latest_possible >= window_start
 
 
+def is_today_only(upload_date: str) -> bool:
+    """YYYY-MM-DD 날짜가 오늘 날짜인지 확인 (당일 업로드만 허용)"""
+    if not upload_date:
+        return False
+
+    try:
+        date_obj = datetime.strptime(upload_date, "%Y-%m-%d")
+    except ValueError:
+        return False
+
+    today = datetime.now().date()
+    return date_obj.date() == today
+
+
 def is_today_video_with_ollama(video: Dict[str, Any], model: str) -> bool:
-    """영상 날짜/조회수 텍스트를 Ollama에 보내 최근 24시간 영상인지 판정"""
+    """영상 날짜/조회수 텍스트를 Ollama에 보내 오늘 날짜 영상인지 판정"""
     now_str = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    today_str = datetime.now().strftime("%Y-%m-%d")
     upload_date = (video.get("upload_date") or "").strip()
 
     if not upload_date:
@@ -697,24 +729,26 @@ def is_today_video_with_ollama(video: Dict[str, Any], model: str) -> bool:
         f"조회수: {video.get('views', 0):,}\n"
     )
 
-    # 날짜 정보가 명확히 최근 24시간이 아니면 바로 제외
-    if upload_date and not is_within_last_24_hours(upload_date):
+    # 오늘 날짜가 아니면 바로 제외
+    if upload_date and not is_today_only(upload_date):
         return False
 
     if not model:
         return True
 
-    prompt = f"""다음 유튜브 영상 정보가 '현재 시각({now_str}) 기준 최근 24시간 이내 업로드 영상'인지 판정하세요.
+    prompt = f"""Determine if this YouTube video was uploaded TODAY ({today_str}).
 
-영상 정보:
+Video info:
 {info_text}
 
-규칙:
-1) 업로드일이 최근 24시간 이내로 판단되면 YES
-2) 업로드일이 24시간을 초과하면 NO
-3) 업로드일이 없어서 판단 불가면 NO
+Rules:
+1) If upload date is TODAY ({today_str}): answer YES
+2) If upload date is NOT today: answer NO
+3) If upload date is unknown: answer NO
 
-출력: YES 또는 NO 중 하나만"""
+IMPORTANT: After your analysis, you MUST end your response with exactly one word: YES or NO
+
+Your answer (YES or NO):"""
 
     try:
         response = requests.post(
@@ -725,19 +759,45 @@ def is_today_video_with_ollama(video: Dict[str, Any], model: str) -> bool:
                 "stream": False,
                 "options": {
                     "temperature": 0.0,
-                    "num_predict": 5,
+                    "num_predict": 500,  # thinking 모델은 더 많은 토큰 필요
                     "top_p": 0.1,
                 },
             },
-            timeout=20,
+            timeout=120,  # thinking 모델은 시간이 더 걸릴 수 있음
         )
         response.raise_for_status()
         result = response.json()
+        
+        # 디버깅: done_reason 확인
+        done_reason = result.get("done_reason", "")
+        
+        # glm-5:cloud 같은 thinking 모델은 response 필드가 비어있을 수 있음
         verdict = (result.get("response", "") or "").strip().upper()
+        
+        # response가 비어있으면 thinking 필드 확인
+        if not verdict:
+            thinking = (result.get("thinking", "") or "").strip().upper()
+            # thinking에서 YES 또는 NO 찾기 (더 유연하게)
+            if "YES" in thinking:
+                verdict = "YES"
+            elif "NO" in thinking:
+                verdict = "NO"
+            # done_reason이 length면 응답이 잘린 것
+            elif done_reason == "length":
+                print(f"            [Ollama 응답 잘림] 토큰 제한 도달, 오늘 날짜 판정: {upload_date}")
+                return bool(upload_date and is_today_only(upload_date))
+
+        
+        # 여전히 비어있으면 날짜 기준으로 판단
+        if not verdict:
+            print(f"            [Ollama 응답 없음] 오늘 날짜 판정: {upload_date}")
+            return bool(upload_date and is_today_only(upload_date))
+        
         return verdict.startswith("YES")
-    except Exception:
+    except Exception as e:
         # Ollama 판정 실패 시 보수적으로 업로드일 기준으로만 판단
-        return bool(upload_date and is_within_last_24_hours(upload_date))
+        print(f"            [Ollama 오류] {e}, 오늘 날짜 판정: {upload_date}")
+        return bool(upload_date and is_today_only(upload_date))
 
 
 def get_next_report_number(report_dir: Path) -> int:
@@ -866,16 +926,15 @@ def choose_ollama_model(requested_model: str) -> str:
     if requested_model in installed:
         return requested_model
     
-    # 폴백 우선순위 (gemma3 모델 중심)
+    # 폴백 우선순위 (kimi 모델 중심)
     fallback_order = [
-        "deepseek-v3.1:671b-cloud",  # 최상위 모델 (성능 최고, 클라우드 전용)
-        "gemma3:12b",      # 추천: 높은 성능 + 안정성
+        "kimi-k2.5:cloud",  # 추천: 클라우드 기반 고성능 모델
+        "deepseek-v3.1:671b-cloud",  # 고성능 클라우드 모델
+        "gemma3:12b",      # 높은 성능 + 안정성
         "gemma3:4b",       # 빠르고 안정적
         "gemma3:27b",      # 강력하지만 느림
-        "gemma3:1b",       # 라이트급
         "qwen2.5:latest",  # 고성능 대체 모델
         "mistral:latest",  # 안정적인 모델
-        "gpt-oss:20b",     # 파워풀하지만 느림
     ]
     for model in fallback_order:
         if model in installed:
@@ -1241,13 +1300,21 @@ def analyze_subtitles_with_ollama(subtitles_text: str, model: str, video_title: 
     if len(subtitle_content) < 20:
         return "자막 내용 부족"
     
-    # 프롬프트
-    prompt = f"""다음 영상의 자막을 3줄로 요약하시오:
+    # 프롬프트 - 한국어만 사용하도록 강력하게 지시
+    prompt = f"""You MUST respond ONLY in Korean (한국어). Do NOT use English at all.
+
+다음 YouTube 영상 자막을 한국어로 500자 내외로 요약하시오.
 
 제목: {video_title[:250]}
-자막: {subtitle_content}
+자막 내용: {subtitle_content}
 
-요약:"""
+필수 규칙:
+1. 반드시 한국어로만 작성할 것
+2. 영어를 절대 사용하지 말 것
+3. 500자 내외로 작성할 것
+4. 핵심 내용을 3-5문장으로 요약할 것
+
+한국어 요약:"""
     
     # 재시도 로직 (타임아웃 시 3번까지 재시도)
     max_retries = 3
@@ -1264,7 +1331,7 @@ def analyze_subtitles_with_ollama(subtitles_text: str, model: str, video_title: 
                     "stream": False,
                     "options": {
                         "temperature": 0.2,  # 더 정확한 요약을 위해 낮은 온도
-                        "num_predict": 500,  # 더 긴 요약 생성
+                        "num_predict": 1000,  # thinking 모델은 더 많은 토큰 필요
                         "top_p": 0.8,  # 다양성 감소
                     }
                 },
@@ -1272,7 +1339,14 @@ def analyze_subtitles_with_ollama(subtitles_text: str, model: str, video_title: 
             )
             response.raise_for_status()
             result = response.json()
+            
+            # glm-5:cloud 같은 thinking 모델은 response 필드가 비어있을 수 있음
             summary = result.get("response", "").strip()
+            if not summary:
+                # thinking 필드에서 내용 추출
+                thinking = result.get("thinking", "").strip()
+                if thinking:
+                    summary = thinking
             
             if summary and len(summary) > 3:
                 # 프롬프트 텍스트 제거 (요약 시작 부분)
@@ -1405,7 +1479,7 @@ def analyze_with_google(video_title: str, keyword: str, model: str) -> str:
         from webdriver_manager.chrome import ChromeDriverManager
 
         options = Options()
-        if os.getenv("SEARCH_HEADLESS", "1") == "1":
+        if SEARCH_HEADLESS == "1":
             options.add_argument("--headless=new")
         options.add_argument("--disable-gpu")
         options.add_argument("--no-sandbox")
@@ -1593,7 +1667,7 @@ def analyze_with_naver(video_title: str, keyword: str, model: str) -> str:
         from webdriver_manager.chrome import ChromeDriverManager
 
         options = Options()
-        if os.getenv("SEARCH_HEADLESS", "1") == "1":
+        if SEARCH_HEADLESS == "1":
             options.add_argument("--headless=new")
         options.add_argument("--disable-gpu")
         options.add_argument("--no-sandbox")
@@ -1780,7 +1854,7 @@ def analyze_with_bing(video_title: str, keyword: str, model: str) -> str:
         from webdriver_manager.chrome import ChromeDriverManager
 
         options = Options()
-        if os.getenv("SEARCH_HEADLESS", "1") == "1":
+        if SEARCH_HEADLESS == "1":
             options.add_argument("--headless=new")
         options.add_argument("--disable-gpu")
         options.add_argument("--no-sandbox")
@@ -1967,7 +2041,7 @@ def analyze_with_zum(video_title: str, keyword: str, model: str) -> str:
         from webdriver_manager.chrome import ChromeDriverManager
 
         options = Options()
-        if os.getenv("SEARCH_HEADLESS", "1") == "1":
+        if SEARCH_HEADLESS == "1":
             options.add_argument("--headless=new")
         options.add_argument("--disable-gpu")
         options.add_argument("--no-sandbox")
@@ -2108,24 +2182,24 @@ def analyze_with_youtube(video_id: str, video_title: str, keyword: str, model: s
 
     now_str = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
-    # ChromeDriver 열기 전에 실제 업로드일 재확인
+    # ChromeDriver 열기 전에 실제 업로드일 재확인 (오늘 날짜만 허용)
     verified_upload_date = resolve_upload_date_by_video_id(video_id)
     if verified_upload_date:
-        if not is_within_last_24_hours(verified_upload_date):
+        if not is_today_only(verified_upload_date):
             log_subtitle_failure(
                 video_id,
                 video_title,
                 "youtube",
-                f"크롬 진입 전 스킵: verified_upload_date={verified_upload_date}, now={now_str}, rule=24h",
+                f"크롬 진입 전 스킵: verified_upload_date={verified_upload_date}, now={now_str}, rule=today_only",
                 upload_date=verified_upload_date,
             )
             return "오늘 날짜 영상 아님(건너뜀)"
-    elif upload_date and not is_within_last_24_hours(upload_date):
+    elif upload_date and not is_today_only(upload_date):
         log_subtitle_failure(
             video_id,
             video_title,
             "youtube",
-            f"크롬 진입 전 스킵(검색일자 기준): upload_date={upload_date}, now={now_str}, rule=24h",
+            f"크롬 진입 전 스킵(검색일자 기준): upload_date={upload_date}, now={now_str}, rule=today_only",
             upload_date=upload_date,
         )
         return "오늘 날짜 영상 아님(건너뜀)"
@@ -2141,7 +2215,7 @@ def analyze_with_youtube(video_id: str, video_title: str, keyword: str, model: s
         from webdriver_manager.chrome import ChromeDriverManager
 
         options = Options()
-        if os.getenv("SEARCH_HEADLESS", "1") == "1":
+        if SEARCH_HEADLESS == "1":
             options.add_argument("--headless=new")
         options.add_argument("--disable-gpu")
         options.add_argument("--no-sandbox")
@@ -2501,8 +2575,8 @@ def collect_youtube_data(
                     "subtitle_summary": "자막 미분석"
                 }
                 
-                # 최근 24시간 영상과 그 외 최근 영상 분리
-                if is_within_last_24_hours(formatted_date):
+                # 오늘 날짜 영상과 그 외 최근 영상 분리
+                if is_today_only(formatted_date):
                     today_views.append(view_count)
                     today_videos.append(video_data)
                 else:
@@ -2538,19 +2612,7 @@ def collect_youtube_data(
                             print(f"         자막 분석 건너뜀: [{idx+1}/{len(all_videos)}] {video_title} (업로드일: {video_upload_date}) ({summary})")
                             continue
 
-                    if analysis_source == "google":
-                        print(f"         Google 질의 분석 중: [{idx+1}/{len(all_videos)}] {video_title} (업로드일: {video_upload_date})")
-                        summary = analyze_with_google(video["title"], keyword, model)
-                    elif analysis_source == "bing":
-                        print(f"         Bing 질의 분석 중: [{idx+1}/{len(all_videos)}] {video_title} (업로드일: {video_upload_date})")
-                        summary = analyze_with_bing(video["title"], keyword, model)
-                    elif analysis_source == "naver":
-                        print(f"         Naver 질의 분석 중: [{idx+1}/{len(all_videos)}] {video_title} (업로드일: {video_upload_date})")
-                        summary = analyze_with_naver(video["title"], keyword, model)
-                    elif analysis_source == "zum":
-                        print(f"         Zum 질의 분석 중: [{idx+1}/{len(all_videos)}] {video_title} (업로드일: {video_upload_date})")
-                        summary = analyze_with_zum(video["title"], keyword, model)
-                    elif analysis_source == "youtube":
+                    if analysis_source == "youtube":
                         print(f"         YouTube 자막 추출 중: [{idx+1}/{len(all_videos)}] {video_title} (업로드일: {video_upload_date})")
                         summary = analyze_with_youtube(
                             video_id,
@@ -2559,7 +2621,6 @@ def collect_youtube_data(
                             model,
                             upload_date=video.get("upload_date", ""),
                         )
-                        summary = apply_search_fallback_if_needed(video, keyword, model, summary)
                     elif analysis_source == "subtitles":
                         print(f"         자막 분석 중: [{idx+1}/{len(all_videos)}] {video_title} (업로드일: {video_upload_date})")
                         subtitles = get_video_subtitles(video_id)
@@ -2575,25 +2636,15 @@ def collect_youtube_data(
                                 summary = analyze_subtitles_with_ollama(subtitles, model, video['title'])
                         else:
                             summary = "자막 없음"
-                    else:  # auto mode
-                        print(f"         자막 분석 중: [{idx+1}/{len(all_videos)}] {video_title} (업로드일: {video_upload_date})")
-                        subtitles = get_video_subtitles(video_id)
-                        if subtitles:
-                            summary = analyze_subtitles_with_ollama(subtitles, model, video['title'])
-                            max_retry = 3
-                            retry_count = 0
-
-                            while summary in ["요약 생성 시간초과", "Ollama 연결 실패", "요약 생성 오류", "요약 생성 실패"] and retry_count < max_retry:
-                                retry_count += 1
-                                print(f"            [RETRY {retry_count}/3] {summary} - 재시도 중...")
-                                time.sleep(2)
-                                summary = analyze_subtitles_with_ollama(subtitles, model, video['title'])
-                        else:
-                            print("            → 자막 없음, Google 검색 분석으로 폴백")
-                            summary = "자막 없음"
-
-                    if analysis_source in {"youtube", "subtitles", "auto"}:
-                        summary = apply_search_fallback_if_needed(video, keyword, model, summary)
+                    else:  # auto mode: YouTube 자막만 사용
+                        print(f"         YouTube 자막 추출 중: [{idx+1}/{len(all_videos)}] {video_title} (업로드일: {video_upload_date})")
+                        summary = analyze_with_youtube(
+                            video_id,
+                            video["title"],
+                            keyword,
+                            model,
+                            upload_date=video.get("upload_date", ""),
+                        )
 
                     summary = normalize_summary_text(summary)
                     video["subtitle_summary"] = summary
@@ -2815,19 +2866,7 @@ def generate_report_with_ollama(report_data: Dict[str, Any], model: str) -> str:
 {data_json}
 
 === 작성 지침 ===
-1. 제목: # YouTube 키워드 분석 보고서 (전문적이고 객관적인 톤)
-2. 생성 시각: 현재날짜 시간
-3. 구성:
-   - 분석 요약: 전체 트렌드 분석 (2-3문단)
-   - 상위 5개 키워드 심층 분석: 각 키워드별 1-2문단
-   - 시사점 및 추천: 향후 전략 고려사항 (2-3문단)
-   - 자막 분석 평가: 상위 영상들의 자막 내용 기반 인사이트
-4. 한국어로 작성
-5. 데이터 기반의 구체적인 분석 제공
-6. N/B 스코어 해석 포함
-7. 한국인 실명은 직접 쓰지 말고 국내 정치인, 국내 기업인, 국내 인사처럼 일반화
-8. 미국 인명과 해외 인명은 필요하면 그대로 유지
-
+한국어로 500 ~ 1500자 내외의 요약 작성
 전문적인 형식의 마크다운 리포트를 작성해주세요:"""
         
         response = requests.post(
@@ -3071,7 +3110,7 @@ def run_monitoring_cycle(
 
 def main():
     parser = argparse.ArgumentParser(description="YouTube 키워드 지속 모니터링")
-    parser.add_argument("--model", default="deepseek-v3.1:671b-cloud", help="Ollama 모델 (기본: deepseek-v3.1:671b-cloud)")
+    parser.add_argument("--model", default="kimi-k2.5:cloud", help="Ollama 모델 (기본: kimi-k2.5:cloud)")
     parser.add_argument("--keywords", type=int, default=10, help="키워드 개수 (기본: 10, '오늘의 주요 뉴스' 고정 포함)")
     parser.add_argument("--videos", type=int, default=10, help="키워드당 영상 수 (기본: 10)")
     parser.add_argument("--interval", type=int, default=30, help="모니터링 간격(분) (기본: 30분)")
@@ -3079,9 +3118,9 @@ def main():
     parser.add_argument("--no-subtitles", action="store_false", dest="subtitles", help="자막 분석 비활성화")
     parser.add_argument(
         "--analysis-source",
-        choices=["subtitles", "google", "naver", "zum", "youtube", "auto"],
-        default="youtube",
-        help="분석 소스 선택 (subtitles|google|bing|naver|zum|youtube|auto)",
+        choices=["subtitles", "youtube", "auto"],
+        default="auto",
+        help="분석 소스 선택 (youtube=자막만, subtitles=API자막, auto=자막+AI검색폴백)",
     )
     parser.add_argument("--once", action="store_true", help="1회만 실행하고 종료")
     

@@ -33,7 +33,7 @@ exit /b 1
 echo [INFO] Python: %PYTHON_EXE%
 
 :: Ollama 모델 설정 (환경변수로 커스터마이징 가능)
-if not defined OLLAMA_MODEL set OLLAMA_MODEL=gpt-oss:120b-cloud
+if not defined OLLAMA_MODEL set OLLAMA_MODEL=kimi-k2.5:120b-cloud
 
 :: 키인드 개수 (기본: 3개)
 if not defined KEYWORD_COUNT set KEYWORD_COUNT=3
@@ -48,23 +48,8 @@ if not defined MONITOR_INTERVAL set MONITOR_INTERVAL=0
 if not defined ANALYZE_SUBTITLES set ANALYZE_SUBTITLES=1
 if not defined BLOCK_KOREAN_PERSON_NAMES set BLOCK_KOREAN_PERSON_NAMES=1
 
-:: 분석 소스 (subtitles|google|bing|naver|zum|youtube|auto)
+:: 분석 소스 (youtube만 사용 - 외부 검색 엔진 제거됨)
 if not defined ANALYSIS_SOURCE set ANALYSIS_SOURCE=youtube
-
-:: ChromeDriver 검색 설정 (ANALYSIS_SOURCE=google|bing|naver|zum|youtube일 때 사용)
-if not defined SEARCH_MARKET set SEARCH_MARKET=ko-KR
-if not defined SEARCH_COUNT set SEARCH_COUNT=5
-
-:: 검색 화면 표시 (0=화면 보기, 1=백그라운드 모드)
-if not defined SHOW_SEARCH_WINDOW set SHOW_SEARCH_WINDOW=0
-if %SHOW_SEARCH_WINDOW%==0 (
-    set SEARCH_HEADLESS=0
-) else (
-    set SEARCH_HEADLESS=1
-)
-
-:: 선택: 크롬 실행 파일 경로 지정
-:: set CHROME_BINARY=C:\Program Files\Google\Chrome\Application\chrome.exe
 
 :: YouTube 봇 체크 우회용 쿠키 설정 (선택)
 :: 예시1) set USE_BROWSER_COOKIES=1
@@ -90,42 +75,7 @@ echo - Keywords Count Option: %KEYWORD_COUNT% (fallback only)
 echo - Video Limit: %VIDEO_LIMIT%/keyword
 echo - Subtitle Analysis: %ANALYZE_SUBTITLES%
 echo - Block Korean Person Names: %BLOCK_KOREAN_PERSON_NAMES%
-echo - Analysis Source: %ANALYSIS_SOURCE%
-if "%ANALYSIS_SOURCE%"=="google" (
-    if %SHOW_SEARCH_WINDOW%==0 (
-        echo - Google Search: ON (크롬 화면 표시)
-    ) else (
-        echo - Google Search: OFF (백그라운드 모드)
-    )
-)
-if "%ANALYSIS_SOURCE%"=="bing" (
-    if %SHOW_SEARCH_WINDOW%==0 (
-        echo - Bing Search: ON (크롬 화면 표시)
-    ) else (
-        echo - Bing Search: OFF (백그라운드 모드)
-    )
-)
-if "%ANALYSIS_SOURCE%"=="naver" (
-    if %SHOW_SEARCH_WINDOW%==0 (
-        echo - Naver Search: ON (크롬 화면 표시)
-    ) else (
-        echo - Naver Search: OFF (백그라운드 모드)
-    )
-)
-if "%ANALYSIS_SOURCE%"=="zum" (
-    if %SHOW_SEARCH_WINDOW%==0 (
-        echo - Zum Search: ON (크롬 화면 표시)
-    ) else (
-        echo - Zum Search: OFF (백그라운드 모드)
-    )
-)
-if "%ANALYSIS_SOURCE%"=="youtube" (
-    if %SHOW_SEARCH_WINDOW%==0 (
-        echo - YouTube Subtitle: ON (크롬 화면 표시)
-    ) else (
-        echo - YouTube Subtitle: OFF (백그라운드 모드)
-    )
-)
+echo - Analysis Source: YouTube 자막 추출 (외부 검색 엔진 미사용)
 echo - Browser Cookies: %USE_BROWSER_COOKIES% (%YTDLP_BROWSER%)
 if defined YTDLP_COOKIES_FILE echo - Cookies File: %YTDLP_COOKIES_FILE%
 echo - Database Save: %DATABASE_SAVE_ENABLED% (%DATABASE_BASE_URL%)
@@ -147,7 +97,7 @@ set SUBTITLE_OPT=--subtitles
 if "%ANALYZE_SUBTITLES%"=="0" set SUBTITLE_OPT=--no-subtitles
 
 :: 지속 모니터링 실행
-"%PYTHON_EXE%" continuous_youtube_monitor.py ^
+"%PYTHON_EXE%" continuous_youtube_monitor.py --once ^
     --model=%OLLAMA_MODEL% ^
     --keywords=%KEYWORD_COUNT% ^
     --videos=%VIDEO_LIMIT% ^

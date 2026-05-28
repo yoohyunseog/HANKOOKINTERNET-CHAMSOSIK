@@ -1,0 +1,235 @@
+{
+  "timestamp": "2026-05-28T13:39:21.731387",
+  "model": "glm-5:cloud",
+  "keyword_count": 3,
+  "analyze_subtitles": true,
+  "analysis_source": "youtube",
+  "keywords": [
+    {
+      "keyword": "오늘의 주요 뉴스",
+      "is_fixed": true,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "기준금리 인상 전망",
+      "is_fixed": false,
+      "views": [
+        697,
+        5349
+      ],
+      "video_count": 2,
+      "videos": [
+        {
+          "title": "한은 신현송 총재 첫 금통위, 기준금리 동결 결정 / YTN",
+          "video_id": "sdbu2zDnyMA",
+          "views": 697,
+          "upload_date": "2026-05-28",
+          "url": "https://www.youtube.com/watch?v=sdbu2zDnyMA",
+          "subtitle_summary": "1.  Analyze the Request:\nSource Material: A YouTube video transcript about the Bank of Korea's decision to freeze the base interest rate.\nTitle: \"한은 신현송 총재 첫 금통위, 기준금리 동결 결정 / YTN\" (Bank of Korea Governor Hyeon-sung Shin's first Monetary Policy Committee meeting, decision to freeze base rate / YTN).\nTask: Summarize the transcript in Korean.\nLength: Around 500 characters (Korean characters).\nConstraints:\nMUST respond ONLY in Korean.\nDo NOT use English at all.\nSummarize core content in 3-5 sentences.\n2.  Analyze the Source Text (Transcript):\nKey Point 1: Bank of Korea froze the base rate at 2.5% annually. This is the 8th consecutive freeze since last July.\nKey Point 2: It was Governor Shin Hyeon-sung's first meeting. Despite his hawkish reputation and market speculation of a hike, they chose to freeze for now.\nKey Point 3: Reasons for freeze: Iran conflict (high oil prices), high exchange rates, surging producer/consumer prices.\nKey Point 4: Economic Outlook: Growth forecast raised from 2.0% to 2.6% due to semiconductor exports. However, inflation forecast raised from 2.2% to 2.7% due to geopolitical risks and supplementary budget.\nKey Point 5: Market reaction: KOSPI opened lower, mixed trends for Samsung/SK Hynix. KRW/USD exchange rate remains high (over 1500 won).\nFuture Outlook: Expectation of 1-2 rate hikes in the second half of the year.\n3.  Drafting the Summary (Iterative Process):\nDraft 1 (Mental Outline): The Bank of Korea kept the base rate at 2.5% for the 8th time. This was Governor Shin's first meeting. Even though he is hawkish, they froze it due to high oil prices and inflation. The growth forecast went up to 2.6%, but inflation forecast also went up to 2.7%. People expect a rate hike later this year. The stock market was mixed, and the exchange rate is high.\nDraft 2 (Translating to formal Korean & condensing): 한국은행이 신현송 총재 취임 후 첫 금융통화위원회에서 기준금리를 연 2.5%로 동결했다. 이는 지난해 7월 이후 8회 연속 동결로, 이란 전장 여파에 따른 고유가와 고환율, 물가 급등 등이 영향을 미쳤다. 신 총재의 매파적 성향에도 불구하고 이번에는 동결을 선택했으나, 하반기 인상 가능성이 제기되고 있다. 한은은 올해 경제성장률을 2.6%로 상향 조정했으나, 소비자물가 상승률도 2.7%로 높일 것으로 전망했다. 한편, 코스피는 하락 출발했고 원달러 환율은 1500원대를 유지 중이다.\nChecking Character Count (Draft 2):\n\"한국은행이 신현송 총재 취임 후 첫 금융통화위원회에서 기준금리를 연 2.5%로 동결했다.\" (41 chars)\n\"이는 지난해 7월 이후 8회 연속 동결로, 이란 전장 여파에 따른 고유가와 고환율, 물가 급등 등이 영향을 미쳤다.\" (52 chars)\n\"신 총재의 매파적 성향에도 불구하고 이번에는 동결을 선택했으나, 하반기 인상 가능성이 제기되고 있다.\" (48 chars)\n\"한은은 올해 경제성장률을 2.6%로 상향 조정했으나, 소비자물가 상승률도 2.7%로 높일",
+          "db_saved": true
+        },
+        {
+          "title": "[속보] 한국은행의 '매파적 금리동결', 물가·환율 불안 지속시 금리인상 예고 [즉시분석]",
+          "video_id": "VZi2E5m0PCg",
+          "views": 5349,
+          "upload_date": "2026-05-28",
+          "url": "https://www.youtube.com/watch?v=VZi2E5m0PCg",
+          "subtitle_summary": "1.  Analyze the Request:\nLanguage Constraint: MUST respond ONLY in Korean (한국어). No English allowed.\nTask: Summarize the provided YouTube video subtitles.\nLength: Approximately 500 characters (Korean characters).\nContent: The video is about the Bank of Korea freezing interest rates, described as a \"hawkish freeze,\" with warnings of potential rate hikes if inflation/exchange rate instability persists due to the Middle East situation.\nStructure: 3-5 sentences for the core summary.\n2.  Analyze the Source Text (Subtitles):\nKey Event: Bank of Korea freezes base rate.\nContext: First meeting for new Governor Shin Hyun-sung.\nKey Concept: \"Hawkish freeze\" (매파적 금리동결). Previously, they were considering when to cut rates. Now, due to the Middle East war causing inflation and exchange rate instability, they are considering when to raise rates.\nWarning: If inflation/exchange rates worsen, a rate hike is possible.\nInterest Rate Gap: The gap with the US is currently 1.25%p. If things get bad, they might hike to narrow this gap to 1%p.\nGlobal Context: G7 countries haven't changed rates yet, but countries with low real rates (Switzerland, Japan, Sweden, Eurozone) might hike if inflation hits 4%. Korea also has a relatively low rate (2.5%), implying potential for hikes if needed.\n3.  Drafting the Summary (Iterative Process):\nDraft 1 (Mental Outline): 신임 총재의 첫 금통위에서 기준 금리가 동결되었다. 이는 단순 동결이 아니라 '매파적 동결'이다. 중동 전쟁 여파로 물가와 환율이 불안해지면 금리를 인상하겠다는 경고다. 이전에는 인하 시점을 고려했지만, 지금은 인상 가능성을 열어둔 상황이다. 한미 금리 격차는 1.25%포인트인데, 상황이 악화되면 이를 좁히기 위해 금리 인상 의지가 있음을 시사한다.\nDraft 2 (Refining for flow and vocabulary):\n한국은행이 신임 총재 첫 금통위에서 기준 긨리를 동결했지만, 이는 향후 금리 인상 가능성을 경고하는 '매파적 동결'로 해석된다. 중동 전쟁으로 인한 물가와 환율 불안이 심화될 경우 금리 인상을 단행하겠다는 의지를 보인 것이다. 이전까지 금리 인하 시점을 고민하던 흐름과 달리, 이제는 인상 여부를 고려하는 방향으로 선회했다는 점에서 의미가 크다. 현재 한미 금리 격차는 1.25%포인트 수준이나, 불안 요인이 확대되면 격차를 1%포인트로 좁히며 금리를 올릴 수 있다. 이는 글로벌 금리 흐름 속에서 한국은행이 물가 안정을 위해 긴축 통화 정책을 유지할 가능성을 시사한다.\nChecking Character Count:\nDraft 2 is around 250-300 characters (including spaces). The request asks for \"500자 내외\" (around 500 characters). I need to expand slightly to add more detail from the text, specifically about the comparison with other countries or the specific context of the shift from \"cut\" to \"hike\" mindset.\nDraft 3 (Expanding to meet length requirement):\n한국은행이 신임 총재 취임 후 첫 금융통화위원회에서 기준 금리를 동결하기로 결정했으나, 그 성격은 향후 금리 인상을 예고하는 '매파적 동결'로 해석된다. 중동 전쟁 발발 이전까지는 금리 인하의 적절한 시",
+          "db_saved": true
+        }
+      ],
+      "max": 2.7957,
+      "min": 1.9254,
+      "nb_score": 1.452,
+      "avg_views": 3023.0,
+      "total_views": 6046
+    },
+    {
+      "keyword": "연기금 투자 트렌드",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "주가 상승 이유",
+      "is_fixed": false,
+      "views": [
+        749
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "[Samsung Electronics Stock Price Forecast] *Urgent 5 Minutes Ago* The shocking reason why Samsung...",
+          "video_id": "Z63lnuJNu9Q",
+          "views": 749,
+          "upload_date": "2026-05-28",
+          "url": "https://www.youtube.com/watch?v=Z63lnuJNu9Q",
+          "subtitle_summary": "1.  Analyze the Request:\nSource Material: A YouTube video transcript about Samsung Electronics stock price.\nTask: Summarize the transcript in Korean.\nLength: Approximately 500 characters (Korean characters).\nConstraints: MUST respond ONLY in Korean. NO English allowed. 3-5 sentences for the core summary.\nContent Analysis:\nSpeaker: Lee Sun-sin (Daejang Kim).\nTopic: Samsung Electronics stock falling 2%, touching the 5-day line, while SK Hynix is flat.\nInvestor Sentiment: Frustration with Samsung, desire to switch to SK Hynix.\nSpeaker's Counter-argument: Comparing Samsung to SK Hynix is wrong.\nKey Event: National Pension Service (NPS) rebalancing decision today.\nGovernment vs. NPS: Government wants to boost the stock market (increase domestic stock weight), but NPS emphasizes independence and caution (potential sell-off).\nInstitutional Behavior: Institutions maintain specific portfolio weights (e.g., domestic stocks at 15%).\n2.  Drafting the Summary (Internal Monologue & Iteration):\nDraft 1 (Mental Outline): Today, Samsung Electronics fell 2% while SK Hynix stayed flat, causing frustration among investors who want to sell Samsung and buy Hynix. However, the speaker argues that comparing the two is fundamentally wrong. The key issue today is the National Pension Service's rebalancing decision. While the government wants to increase domestic stock holdings to boost the market, the NPS is cautious about independence, potentially leading to selling pressure. This institutional rebalancing explains the current market movements.\nDraft 2 (Translating to Korean): 오늘 오전 삼성전자가 2% 하락하며 5일선을 터치했고, SK하이닉스와 비교되며 주주들의 불만이 커지고 있다. 하지만 화자는 두 종목을 비교하는 것 자체가 잘못되었다며 섣불리 매도할 필요가 없다고 지적한다. 오늘의 핵심 변수는 국민연금의 리밸런싱 결정으로, 정부는 증시 부양을 위해 국내 주식 비중 확대를 원하지만 국민연금은 독립성을 강조하며 비중 축소 가능성을 시사하고 있다. 결국 기관 투자자들은 포트폴리오 비중을 맞추기 위해 매도를 진행할 수 있어, 이러한 기관의 매물 출회가 삼성전자 주가에 영향을 미치고 있다는 점을 이해해야 한다.\nRefining for Length and Constraints:\nThe draft looks good. Let's check the character count.\n\"오늘 오전 삼성전자가 2% 하락하며 5일선을 터치했고, SK하이닉스와 비교되며 주주들의 불만이 커지고 있다. 하지만 화자는 두 종목을 비교하는 것 자체가 잘못되었다며 섣불리 매도할 필요가 없다고 지적한다. 오늘의 핵심 변수는 국민연금의 리밸런싱 결정으로, 정부는 증시 부양을 위해 국내 주식 비중 확대를 원하지만 국민연금은 독립성을 강조하며 비중 축소 가능성을 시사하고 있다. 결국 기관 투자자들은 포트폴리오 비중을 맞추기 위해 매도를 진행할 수 있어, 이러한 기관의 매물 출회가 삼성전자 주가에 영향을 미치고 있다는 점을 이해해야 한다.\"\nCharacter count (approx): ~230 characters (including spaces). This is a bit short for \"500ja nae-oe\" (around 500 characters). The prompt asks for \"500ja nae-oe\" (around 500 characters), but usually, a summary of a short transcript doesn't need to be fluffed up too much. However, I should expand slightly to provide more detail from the transcript to meet the length requirement better.\nDraft 3 (Expanding):\n오",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "레버리지 ETF 투자",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "단일종목 레버리지 위험",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "코스피 하락 원인",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "클로봇 기술 발전",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "ESS 산업 전망",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "전통시장 활성화",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "부동산 공약 분석",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "지방선거 여론조사",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "집회 파업 현황",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "문화강국 비전",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "달 탐사 항로",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "수학 공부법",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    }
+  ]
+}

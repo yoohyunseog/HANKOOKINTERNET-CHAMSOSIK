@@ -1,7 +1,7 @@
 {
   "ok": true,
   "topic": "AI 컴퓨터 부품 가격·성능 분석 자료",
-  "updatedAt": "2026-05-28T06:16:40.242+09:00",
+  "updatedAt": "2026-05-28T13:52:33.150+09:00",
   "intervalSeconds": 600,
   "speedScoreScale": {
     "min": 100,
@@ -15,7 +15,7 @@
   },
   "currency": "KRW",
   "sourceType": "nbData",
-  "sourceUpdatedAt": "2026-05-28T06:16:27.972+09:00",
+  "sourceUpdatedAt": "2026-05-28T13:52:20.949+09:00",
   "nbDatabaseStorage": {
     "mode": "per-part-json-files",
     "root": "nbData",
@@ -48,9 +48,9 @@
     "ok": true,
     "mode": "continuous-assembled-state",
     "description": "컴퓨터는 계속 조립된 상태로 유지됩니다. 새 후보가 현재 N/B MAX를 넘을 때만 조립 상태를 갱신합니다.",
-    "sourceUpdatedAt": "2026-05-28T06:16:27.972+09:00",
+    "sourceUpdatedAt": "2026-05-28T13:52:20.949+09:00",
     "startedAt": "2026-05-24T19:11:34.389+09:00",
-    "lastCheckedAt": "2026-05-28T06:16:40.236+09:00",
+    "lastCheckedAt": "2026-05-28T13:52:33.145+09:00",
     "lastChangedAt": "2026-05-26T03:44:30.447+09:00",
     "reason": "kept-current-assembly",
     "currentBuildKey": "cpu-ryzen-7-7700|gpu-rtx-5080|ram-ddr5-64-6400|ssd-crucial-p5-plus-2tb|mb-am5-x870|psu-msi-mag-a850gl-pcie5",
@@ -817,7 +817,7 @@
     },
     {
       "level": "고수용",
-      "count": 661,
+      "count": 684,
       "summary": "고성능, 고전력, AI 작업, 상위 GPU처럼 확인할 요소가 많은 부품을 정리합니다.",
       "recommendedParts": [
         {
@@ -1227,7 +1227,7 @@
       "sourceStatus": "collector",
       "collectedPricesKrw": [],
       "textRepair": {
-        "checkedAt": "2026-05-28T06:16:33.485+09:00",
+        "checkedAt": "2026-05-28T13:52:26.396+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "notes"
@@ -1445,7 +1445,7 @@
       "sourceStatus": "collector",
       "collectedPricesKrw": [],
       "textRepair": {
-        "checkedAt": "2026-05-28T06:16:33.484+09:00",
+        "checkedAt": "2026-05-28T13:52:26.396+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "speedLabel",
@@ -1561,7 +1561,7 @@
       "sourceStatus": "collector",
       "collectedPricesKrw": [],
       "textRepair": {
-        "checkedAt": "2026-05-28T06:16:33.484+09:00",
+        "checkedAt": "2026-05-28T13:52:26.396+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "speedLabel",
@@ -2319,7 +2319,7 @@
       "sourceStatus": "collector",
       "collectedPricesKrw": [],
       "textRepair": {
-        "checkedAt": "2026-05-28T06:16:33.487+09:00",
+        "checkedAt": "2026-05-28T13:52:26.398+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "notes"
@@ -3819,7 +3819,7 @@
       "sourceStatus": "collector",
       "collectedPricesKrw": [],
       "textRepair": {
-        "checkedAt": "2026-05-28T06:16:33.484+09:00",
+        "checkedAt": "2026-05-28T13:52:26.396+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "notes"
@@ -4042,7 +4042,7 @@
       "sourceStatus": "collector",
       "collectedPricesKrw": [],
       "textRepair": {
-        "checkedAt": "2026-05-28T06:16:33.484+09:00",
+        "checkedAt": "2026-05-28T13:52:26.396+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "speedLabel",
@@ -4157,7 +4157,7 @@
       "sourceStatus": "collector",
       "collectedPricesKrw": [],
       "textRepair": {
-        "checkedAt": "2026-05-28T06:16:33.486+09:00",
+        "checkedAt": "2026-05-28T13:52:26.398+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "notes"
@@ -4593,7 +4593,7 @@
       "sourceStatus": "collector",
       "collectedPricesKrw": [],
       "textRepair": {
-        "checkedAt": "2026-05-28T06:16:33.484+09:00",
+        "checkedAt": "2026-05-28T13:52:26.396+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "notes"
@@ -4811,7 +4811,7 @@
       "sourceStatus": "collector",
       "collectedPricesKrw": [],
       "textRepair": {
-        "checkedAt": "2026-05-28T06:16:33.483+09:00",
+        "checkedAt": "2026-05-28T13:52:26.395+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "speedLabel",
@@ -4930,7 +4930,7 @@
       "sourceStatus": "collector",
       "collectedPricesKrw": [],
       "textRepair": {
-        "checkedAt": "2026-05-28T06:16:33.483+09:00",
+        "checkedAt": "2026-05-28T13:52:26.395+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "speedLabel",
@@ -5046,7 +5046,7 @@
       "sourceStatus": "collector",
       "collectedPricesKrw": [],
       "textRepair": {
-        "checkedAt": "2026-05-28T06:16:33.486+09:00",
+        "checkedAt": "2026-05-28T13:52:26.397+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "notes"
@@ -5586,7 +5586,7 @@
       "sourceStatus": "collector",
       "collectedPricesKrw": [],
       "textRepair": {
-        "checkedAt": "2026-05-28T06:16:33.461+09:00",
+        "checkedAt": "2026-05-28T13:52:26.367+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "speedLabel",
@@ -6022,7 +6022,7 @@
       "sourceStatus": "collector",
       "collectedPricesKrw": [],
       "textRepair": {
-        "checkedAt": "2026-05-28T06:16:33.461+09:00",
+        "checkedAt": "2026-05-28T13:52:26.368+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "speedLabel",
@@ -6565,7 +6565,7 @@
       "sourceStatus": "collector",
       "collectedPricesKrw": [],
       "textRepair": {
-        "checkedAt": "2026-05-28T06:16:33.485+09:00",
+        "checkedAt": "2026-05-28T13:52:26.397+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "notes"
@@ -6891,7 +6891,7 @@
       "sourceStatus": "collector",
       "collectedPricesKrw": [],
       "textRepair": {
-        "checkedAt": "2026-05-28T06:16:33.461+09:00",
+        "checkedAt": "2026-05-28T13:52:26.367+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "speedLabel",
@@ -7331,7 +7331,7 @@
       "sourceStatus": "collector",
       "collectedPricesKrw": [],
       "textRepair": {
-        "checkedAt": "2026-05-28T06:16:33.485+09:00",
+        "checkedAt": "2026-05-28T13:52:26.397+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "notes"
@@ -7872,7 +7872,7 @@
       "sourceStatus": "collector",
       "collectedPricesKrw": [],
       "textRepair": {
-        "checkedAt": "2026-05-28T06:16:33.483+09:00",
+        "checkedAt": "2026-05-28T13:52:26.395+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "speedLabel",
@@ -8098,7 +8098,7 @@
       "sourceStatus": "collector",
       "collectedPricesKrw": [],
       "textRepair": {
-        "checkedAt": "2026-05-28T06:16:33.483+09:00",
+        "checkedAt": "2026-05-28T13:52:26.395+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "speedLabel",
@@ -8325,7 +8325,7 @@
       "sourceStatus": "collector",
       "collectedPricesKrw": [],
       "textRepair": {
-        "checkedAt": "2026-05-28T06:16:33.486+09:00",
+        "checkedAt": "2026-05-28T13:52:26.397+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "notes"
@@ -8439,7 +8439,7 @@
       "sourceStatus": "collector",
       "collectedPricesKrw": [],
       "textRepair": {
-        "checkedAt": "2026-05-28T06:16:33.456+09:00",
+        "checkedAt": "2026-05-28T13:52:26.364+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "notes"
@@ -8553,7 +8553,7 @@
       "sourceStatus": "collector",
       "collectedPricesKrw": [],
       "textRepair": {
-        "checkedAt": "2026-05-28T06:16:33.461+09:00",
+        "checkedAt": "2026-05-28T13:52:26.367+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "speedLabel",
@@ -8777,7 +8777,7 @@
       "sourceStatus": "collector",
       "collectedPricesKrw": [],
       "textRepair": {
-        "checkedAt": "2026-05-28T06:16:33.483+09:00",
+        "checkedAt": "2026-05-28T13:52:26.395+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "speedLabel",
@@ -9542,7 +9542,7 @@
       "sourceStatus": "collector",
       "collectedPricesKrw": [],
       "textRepair": {
-        "checkedAt": "2026-05-28T06:16:33.458+09:00",
+        "checkedAt": "2026-05-28T13:52:26.365+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "speedLabel",
@@ -13548,7 +13548,7 @@
       "sourceStatus": "collector",
       "collectedPricesKrw": [],
       "textRepair": {
-        "checkedAt": "2026-05-28T06:16:33.458+09:00",
+        "checkedAt": "2026-05-28T13:52:26.365+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "speedLabel",
@@ -14535,7 +14535,7 @@
       "sourceStatus": "collector",
       "collectedPricesKrw": [],
       "textRepair": {
-        "checkedAt": "2026-05-28T06:16:33.461+09:00",
+        "checkedAt": "2026-05-28T13:52:26.368+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "speedLabel",
@@ -14870,7 +14870,7 @@
       "sourceStatus": "collector",
       "collectedPricesKrw": [],
       "textRepair": {
-        "checkedAt": "2026-05-28T06:16:33.478+09:00",
+        "checkedAt": "2026-05-28T13:52:26.388+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "speedLabel",
@@ -18650,7 +18650,7 @@
       "sourceStatus": "collector",
       "collectedPricesKrw": [],
       "textRepair": {
-        "checkedAt": "2026-05-28T06:16:33.455+09:00",
+        "checkedAt": "2026-05-28T13:52:26.363+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "notes"
@@ -19199,7 +19199,7 @@
       "sourceStatus": "collector",
       "collectedPricesKrw": [],
       "textRepair": {
-        "checkedAt": "2026-05-28T06:16:33.457+09:00",
+        "checkedAt": "2026-05-28T13:52:26.364+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "speedLabel"
@@ -19750,7 +19750,7 @@
       "sourceStatus": "collector",
       "collectedPricesKrw": [],
       "textRepair": {
-        "checkedAt": "2026-05-28T06:16:33.458+09:00",
+        "checkedAt": "2026-05-28T13:52:26.365+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "notes"
@@ -20408,7 +20408,7 @@
       "sourceStatus": "collector",
       "collectedPricesKrw": [],
       "textRepair": {
-        "checkedAt": "2026-05-28T06:16:33.478+09:00",
+        "checkedAt": "2026-05-28T13:52:26.388+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "speedLabel",
@@ -23441,7 +23441,7 @@
       "sourceStatus": "collector",
       "collectedPricesKrw": [],
       "textRepair": {
-        "checkedAt": "2026-05-28T06:16:33.470+09:00",
+        "checkedAt": "2026-05-28T13:52:26.380+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "notes"
@@ -24437,7 +24437,7 @@
       "sourceStatus": "collector",
       "collectedPricesKrw": [],
       "textRepair": {
-        "checkedAt": "2026-05-28T06:16:33.477+09:00",
+        "checkedAt": "2026-05-28T13:52:26.386+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "notes"
@@ -24990,7 +24990,7 @@
       "sourceStatus": "collector",
       "collectedPricesKrw": [],
       "textRepair": {
-        "checkedAt": "2026-05-28T06:16:33.478+09:00",
+        "checkedAt": "2026-05-28T13:52:26.388+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "speedLabel",
@@ -25107,7 +25107,7 @@
       "sourceStatus": "collector",
       "collectedPricesKrw": [],
       "textRepair": {
-        "checkedAt": "2026-05-28T06:16:33.479+09:00",
+        "checkedAt": "2026-05-28T13:52:26.389+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "speedLabel",
@@ -25311,6 +25311,116 @@
         "ZOTAC GAMING GeForce RTX 4090 AMP Extreme AIRO 24GB GDDR6X 가격",
         "ZOTAC GAMING GeForce RTX 4090 AMP Extreme AIRO 24GB GDDR6X 성능",
         "ZOTAC GAMING GeForce RTX 4090 AMP Extreme AIRO 24GB GDDR6X 벤치마크"
+      ]
+    },
+    {
+      "id": "gpu-zotac-gaming-geforce-rtx-4090-amp-extreme-airo-24gb",
+      "category": "GPU",
+      "name": "ZOTAC GAMING GeForce RTX 4090 AMP Extreme AIRO 24GB",
+      "maker": "ZOTAC",
+      "platform": "PCIE 4.0",
+      "estimatedPriceKrw": 2454900,
+      "performance": 100,
+      "powerWatts": 450,
+      "speedLabel": "21Gbps",
+      "tags": [
+        "gaming",
+        "ai",
+        "high-end"
+      ],
+      "notes": "AMP Extreme AIRO model",
+      "sourceQuery": "",
+      "sourceUrl": "https://search.danawa.com/dsearch.php?k1=ZOTAC%20GeForce%20RTX%204090%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+      "sourceStatus": "collector",
+      "collectedPricesKrw": [],
+      "imageUrl": "./img/gpu.svg",
+      "speedMetric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "GPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      },
+      "unifiedSpeedScore": 100,
+      "nbDatabase": {
+        "schema": "pc-part-nb-database.v1",
+        "unit": "100~1000",
+        "priority": "speed-first",
+        "category": "GPU",
+        "partId": "gpu-zotac-gaming-geforce-rtx-4090-amp-extreme-airo-24gb",
+        "partName": "ZOTAC GAMING GeForce RTX 4090 AMP Extreme AIRO 24GB",
+        "speed": {
+          "score": 100,
+          "weight": 0.42,
+          "metric": {
+            "kind": "unknown",
+            "label": "속도 기준",
+            "value": null,
+            "unit": "",
+            "group": "GPU",
+            "compareNote": "부품군별 기준으로 비교해야 합니다."
+          }
+        },
+        "scores": {
+          "speed": 100,
+          "performance": 1000,
+          "value": 100,
+          "aiFit": 1000,
+          "priceEfficiency": 40,
+          "powerEfficiency": 100
+        },
+        "nbVector": [
+          100,
+          1000,
+          100,
+          1000,
+          40,
+          100
+        ],
+        "vectorLabels": [
+          "속도",
+          "성능",
+          "가성비",
+          "AI 적합",
+          "가격 효율",
+          "전력 효율"
+        ],
+        "nbMax": 162.76,
+        "nbMin": 306.8,
+        "weightedScore": 365,
+        "nbBand": "100~499",
+        "summary": "GPU ZOTAC GAMING GeForce RTX 4090 AMP Extreme AIRO 24GB 부품을 속도 중심 N/B 데이터베이스 점수 365점으로 저장했습니다."
+      },
+      "nbWeightedScore": 365,
+      "nbMax": 162.76,
+      "nbMin": 306.8,
+      "nbBand": "100~499",
+      "priceBand": "60만원 이상",
+      "valueIndex": 4.1,
+      "efficiencyIndex": 0.22,
+      "aiUseScore": 100,
+      "totalScore": 52,
+      "aiExplanation": {
+        "summary": "ZOTAC GAMING GeForce RTX 4090 AMP Extreme AIRO 24GB은 GPU 부품군에서 총점 52점, 가성비 4.1로 계산된 후보입니다.",
+        "strengths": [
+          "AI 작업 또는 크리에이터 작업 후보로 분류할 수 있습니다",
+          "게임용 조립 PC 후보에 넣기 좋습니다"
+        ],
+        "cautions": [
+          "파워 용량과 케이스 내부 발열 여유를 같이 확인해야 합니다"
+        ],
+        "userLevel": {
+          "level": "고수용",
+          "reason": "성능은 높지만 가격, 전력, 호환성 확인 부담이 커서 조립 경험이 있는 사용자에게 적합합니다."
+        },
+        "recommendation": "가격 변동 확인 후보"
+      },
+      "priceSourceStatus": "초기 기준값",
+      "sourceQueries": [
+        "ZOTAC GAMING GeForce RTX 4090 AMP Extreme AIRO 24GB 가격",
+        "ZOTAC GAMING GeForce RTX 4090 AMP Extreme AIRO 24GB 성능",
+        "ZOTAC GAMING GeForce RTX 4090 AMP Extreme AIRO 24GB 벤치마크"
       ]
     },
     {
@@ -25861,6 +25971,115 @@
         "ZOTAC GAMING 지포스 RTX 4090 AMP Extreme AIRO 24GB 가격",
         "ZOTAC GAMING 지포스 RTX 4090 AMP Extreme AIRO 24GB 성능",
         "ZOTAC GAMING 지포스 RTX 4090 AMP Extreme AIRO 24GB 벤치마크"
+      ]
+    },
+    {
+      "id": "gpu-zotac-rtx-4090-amp-airo-24gb",
+      "category": "GPU",
+      "name": "ZOTAC 게이밍 지포스 RTX 4090 AMP 익스트림 AIRO 24GB",
+      "maker": "ZOTAC",
+      "platform": "PCIE 4.0",
+      "estimatedPriceKrw": 2454900,
+      "performance": 100,
+      "powerWatts": 450,
+      "speedLabel": "21Gbps",
+      "tags": [
+        "gaming",
+        "ai"
+      ],
+      "notes": "AMP Extreme AIRO model",
+      "sourceQuery": "",
+      "sourceUrl": "https://search.danawa.com/dsearch.php?k1=GeForce%20RTX%204090%20ZOTAC%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+      "sourceStatus": "collector",
+      "collectedPricesKrw": [],
+      "imageUrl": "./img/gpu.svg",
+      "speedMetric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "GPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      },
+      "unifiedSpeedScore": 100,
+      "nbDatabase": {
+        "schema": "pc-part-nb-database.v1",
+        "unit": "100~1000",
+        "priority": "speed-first",
+        "category": "GPU",
+        "partId": "gpu-zotac-rtx-4090-amp-airo-24gb",
+        "partName": "ZOTAC 게이밍 지포스 RTX 4090 AMP 익스트림 AIRO 24GB",
+        "speed": {
+          "score": 100,
+          "weight": 0.42,
+          "metric": {
+            "kind": "unknown",
+            "label": "속도 기준",
+            "value": null,
+            "unit": "",
+            "group": "GPU",
+            "compareNote": "부품군별 기준으로 비교해야 합니다."
+          }
+        },
+        "scores": {
+          "speed": 100,
+          "performance": 1000,
+          "value": 100,
+          "aiFit": 1000,
+          "priceEfficiency": 40,
+          "powerEfficiency": 100
+        },
+        "nbVector": [
+          100,
+          1000,
+          100,
+          1000,
+          40,
+          100
+        ],
+        "vectorLabels": [
+          "속도",
+          "성능",
+          "가성비",
+          "AI 적합",
+          "가격 효율",
+          "전력 효율"
+        ],
+        "nbMax": 162.76,
+        "nbMin": 306.8,
+        "weightedScore": 365,
+        "nbBand": "100~499",
+        "summary": "GPU ZOTAC 게이밍 지포스 RTX 4090 AMP 익스트림 AIRO 24GB 부품을 속도 중심 N/B 데이터베이스 점수 365점으로 저장했습니다."
+      },
+      "nbWeightedScore": 365,
+      "nbMax": 162.76,
+      "nbMin": 306.8,
+      "nbBand": "100~499",
+      "priceBand": "60만원 이상",
+      "valueIndex": 4.1,
+      "efficiencyIndex": 0.22,
+      "aiUseScore": 100,
+      "totalScore": 52,
+      "aiExplanation": {
+        "summary": "ZOTAC 게이밍 지포스 RTX 4090 AMP 익스트림 AIRO 24GB은 GPU 부품군에서 총점 52점, 가성비 4.1로 계산된 후보입니다.",
+        "strengths": [
+          "AI 작업 또는 크리에이터 작업 후보로 분류할 수 있습니다",
+          "게임용 조립 PC 후보에 넣기 좋습니다"
+        ],
+        "cautions": [
+          "파워 용량과 케이스 내부 발열 여유를 같이 확인해야 합니다"
+        ],
+        "userLevel": {
+          "level": "고수용",
+          "reason": "성능은 높지만 가격, 전력, 호환성 확인 부담이 커서 조립 경험이 있는 사용자에게 적합합니다."
+        },
+        "recommendation": "가격 변동 확인 후보"
+      },
+      "priceSourceStatus": "초기 기준값",
+      "sourceQueries": [
+        "ZOTAC 게이밍 지포스 RTX 4090 AMP 익스트림 AIRO 24GB 가격",
+        "ZOTAC 게이밍 지포스 RTX 4090 AMP 익스트림 AIRO 24GB 성능",
+        "ZOTAC 게이밍 지포스 RTX 4090 AMP 익스트림 AIRO 24GB 벤치마크"
       ]
     },
     {
@@ -27711,7 +27930,7 @@
       "sourceStatus": "collector",
       "collectedPricesKrw": [],
       "textRepair": {
-        "checkedAt": "2026-05-28T06:16:33.463+09:00",
+        "checkedAt": "2026-05-28T13:52:26.370+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "notes"
@@ -29128,6 +29347,116 @@
       ]
     },
     {
+      "id": "gpu-asus-rog-strix-rtx-4090-oc",
+      "category": "GPU",
+      "name": "ASUS ROG STRIX 지포스 RTX 4090 OC 에디션",
+      "maker": "ASUS",
+      "platform": "PCIe 4.0",
+      "estimatedPriceKrw": 4880490,
+      "performance": 100,
+      "powerWatts": 450,
+      "speedLabel": "OC",
+      "tags": [
+        "gaming",
+        "ai",
+        "high-end"
+      ],
+      "notes": "Based on the lowest valid price for the standard OC edition found in the search results.",
+      "sourceQuery": "",
+      "sourceUrl": "https://search.danawa.com/dsearch.php?k1=ASUS%20ROG%20STRIX%20%EC%A7%80%ED%8F%AC%EC%8A%A4%20RTX%204090%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+      "sourceStatus": "collector",
+      "collectedPricesKrw": [],
+      "imageUrl": "./img/gpu.svg",
+      "speedMetric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "GPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      },
+      "unifiedSpeedScore": 100,
+      "nbDatabase": {
+        "schema": "pc-part-nb-database.v1",
+        "unit": "100~1000",
+        "priority": "speed-first",
+        "category": "GPU",
+        "partId": "gpu-asus-rog-strix-rtx-4090-oc",
+        "partName": "ASUS ROG STRIX 지포스 RTX 4090 OC 에디션",
+        "speed": {
+          "score": 100,
+          "weight": 0.42,
+          "metric": {
+            "kind": "unknown",
+            "label": "속도 기준",
+            "value": null,
+            "unit": "",
+            "group": "GPU",
+            "compareNote": "부품군별 기준으로 비교해야 합니다."
+          }
+        },
+        "scores": {
+          "speed": 100,
+          "performance": 1000,
+          "value": 100,
+          "aiFit": 1000,
+          "priceEfficiency": 20,
+          "powerEfficiency": 100
+        },
+        "nbVector": [
+          100,
+          1000,
+          100,
+          1000,
+          20,
+          100
+        ],
+        "vectorLabels": [
+          "속도",
+          "성능",
+          "가성비",
+          "AI 적합",
+          "가격 효율",
+          "전력 효율"
+        ],
+        "nbMax": 169.102,
+        "nbMin": 296.444,
+        "weightedScore": 364,
+        "nbBand": "100~499",
+        "summary": "GPU ASUS ROG STRIX 지포스 RTX 4090 OC 에디션 부품을 속도 중심 N/B 데이터베이스 점수 364점으로 저장했습니다."
+      },
+      "nbWeightedScore": 364,
+      "nbMax": 169.102,
+      "nbMin": 296.444,
+      "nbBand": "100~499",
+      "priceBand": "60만원 이상",
+      "valueIndex": 2,
+      "efficiencyIndex": 0.22,
+      "aiUseScore": 100,
+      "totalScore": 51,
+      "aiExplanation": {
+        "summary": "ASUS ROG STRIX 지포스 RTX 4090 OC 에디션은 GPU 부품군에서 총점 51점, 가성비 2로 계산된 후보입니다.",
+        "strengths": [
+          "AI 작업 또는 크리에이터 작업 후보로 분류할 수 있습니다",
+          "게임용 조립 PC 후보에 넣기 좋습니다"
+        ],
+        "cautions": [
+          "파워 용량과 케이스 내부 발열 여유를 같이 확인해야 합니다"
+        ],
+        "userLevel": {
+          "level": "고수용",
+          "reason": "성능은 높지만 가격, 전력, 호환성 확인 부담이 커서 조립 경험이 있는 사용자에게 적합합니다."
+        },
+        "recommendation": "가격 변동 확인 후보"
+      },
+      "priceSourceStatus": "초기 기준값",
+      "sourceQueries": [
+        "ASUS ROG STRIX 지포스 RTX 4090 OC 에디션 가격",
+        "ASUS ROG STRIX 지포스 RTX 4090 OC 에디션 성능",
+        "ASUS ROG STRIX 지포스 RTX 4090 OC 에디션 벤치마크"
+      ]
+    },
+    {
       "id": "gpu-asus-rog-strix-rtx-4090-white-oc-24gb",
       "category": "GPU",
       "name": "ASUS ROG STRIX 지포스 RTX 4090 White OC 24GB",
@@ -29697,7 +30026,7 @@
       "sourceStatus": "collector",
       "collectedPricesKrw": [],
       "textRepair": {
-        "checkedAt": "2026-05-28T06:16:33.470+09:00",
+        "checkedAt": "2026-05-28T13:52:26.379+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "notes"
@@ -30894,6 +31223,116 @@
       ]
     },
     {
+      "id": "gpu-geforce-rtx-5090-founders-edition",
+      "category": "GPU",
+      "name": "GeForce RTX 5090 Founders Edition",
+      "maker": "NVIDIA",
+      "platform": "PCIe 5.0",
+      "estimatedPriceKrw": 5800000,
+      "performance": 100,
+      "powerWatts": 600,
+      "speedLabel": "Boost Clock",
+      "tags": [
+        "gaming",
+        "ai",
+        "workstation"
+      ],
+      "notes": "Founders Edition reference model. Price based on observed listing of 5,800,000 KRW.",
+      "sourceQuery": "",
+      "sourceUrl": "https://search.danawa.com/dsearch.php?k1=GeForce%20RTX%205090%20Founders%20Edition%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+      "sourceStatus": "collector",
+      "collectedPricesKrw": [],
+      "imageUrl": "./img/gpu.svg",
+      "speedMetric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "GPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      },
+      "unifiedSpeedScore": 100,
+      "nbDatabase": {
+        "schema": "pc-part-nb-database.v1",
+        "unit": "100~1000",
+        "priority": "speed-first",
+        "category": "GPU",
+        "partId": "gpu-geforce-rtx-5090-founders-edition",
+        "partName": "GeForce RTX 5090 Founders Edition",
+        "speed": {
+          "score": 100,
+          "weight": 0.42,
+          "metric": {
+            "kind": "unknown",
+            "label": "속도 기준",
+            "value": null,
+            "unit": "",
+            "group": "GPU",
+            "compareNote": "부품군별 기준으로 비교해야 합니다."
+          }
+        },
+        "scores": {
+          "speed": 100,
+          "performance": 1000,
+          "value": 100,
+          "aiFit": 1000,
+          "priceEfficiency": 20,
+          "powerEfficiency": 100
+        },
+        "nbVector": [
+          100,
+          1000,
+          100,
+          1000,
+          20,
+          100
+        ],
+        "vectorLabels": [
+          "속도",
+          "성능",
+          "가성비",
+          "AI 적합",
+          "가격 효율",
+          "전력 효율"
+        ],
+        "nbMax": 169.102,
+        "nbMin": 296.444,
+        "weightedScore": 364,
+        "nbBand": "100~499",
+        "summary": "GPU GeForce RTX 5090 Founders Edition 부품을 속도 중심 N/B 데이터베이스 점수 364점으로 저장했습니다."
+      },
+      "nbWeightedScore": 364,
+      "nbMax": 169.102,
+      "nbMin": 296.444,
+      "nbBand": "100~499",
+      "priceBand": "60만원 이상",
+      "valueIndex": 1.7,
+      "efficiencyIndex": 0.17,
+      "aiUseScore": 100,
+      "totalScore": 51,
+      "aiExplanation": {
+        "summary": "GeForce RTX 5090 Founders Edition은 GPU 부품군에서 총점 51점, 가성비 1.7로 계산된 후보입니다.",
+        "strengths": [
+          "AI 작업 또는 크리에이터 작업 후보로 분류할 수 있습니다",
+          "게임용 조립 PC 후보에 넣기 좋습니다"
+        ],
+        "cautions": [
+          "파워 용량과 케이스 내부 발열 여유를 같이 확인해야 합니다"
+        ],
+        "userLevel": {
+          "level": "고수용",
+          "reason": "성능은 높지만 가격, 전력, 호환성 확인 부담이 커서 조립 경험이 있는 사용자에게 적합합니다."
+        },
+        "recommendation": "가격 변동 확인 후보"
+      },
+      "priceSourceStatus": "초기 기준값",
+      "sourceQueries": [
+        "GeForce RTX 5090 Founders Edition 가격",
+        "GeForce RTX 5090 Founders Edition 성능",
+        "GeForce RTX 5090 Founders Edition 벤치마크"
+      ]
+    },
+    {
       "id": "gpu-geforce-rtx-5090-gaming-oc-d7-32gb",
       "category": "GPU",
       "name": "GeForce RTX 5090 GAMING OC D7 32GB",
@@ -31024,7 +31463,7 @@
       "sourceStatus": "collector",
       "collectedPricesKrw": [],
       "textRepair": {
-        "checkedAt": "2026-05-28T06:16:33.471+09:00",
+        "checkedAt": "2026-05-28T13:52:26.381+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "notes"
@@ -32127,7 +32566,7 @@
       "sourceStatus": "collector",
       "collectedPricesKrw": [],
       "textRepair": {
-        "checkedAt": "2026-05-28T06:16:33.472+09:00",
+        "checkedAt": "2026-05-28T13:52:26.382+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "notes"
@@ -33426,6 +33865,116 @@
       ]
     },
     {
+      "id": "gpu-msi-geforce-rtx-5090-gaming-trio-oc-d7-32gb",
+      "category": "GPU",
+      "name": "MSI GeForce RTX 5090 Gaming Trio OC D7 32GB",
+      "maker": "MSI",
+      "platform": "PCIe 5.0",
+      "estimatedPriceKrw": 8539990,
+      "performance": 100,
+      "powerWatts": 575,
+      "speedLabel": "2497MHz",
+      "tags": [
+        "gaming",
+        "ai",
+        "high-end"
+      ],
+      "notes": "TriFrozr 4 cooling, GDDR7 memory",
+      "sourceQuery": "",
+      "sourceUrl": "https://search.danawa.com/dsearch.php?k1=GeForce%20RTX%205090%20MSI%20Gaming%20Trio%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+      "sourceStatus": "collector",
+      "collectedPricesKrw": [],
+      "imageUrl": "./img/gpu.svg",
+      "speedMetric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "GPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      },
+      "unifiedSpeedScore": 100,
+      "nbDatabase": {
+        "schema": "pc-part-nb-database.v1",
+        "unit": "100~1000",
+        "priority": "speed-first",
+        "category": "GPU",
+        "partId": "gpu-msi-geforce-rtx-5090-gaming-trio-oc-d7-32gb",
+        "partName": "MSI GeForce RTX 5090 Gaming Trio OC D7 32GB",
+        "speed": {
+          "score": 100,
+          "weight": 0.42,
+          "metric": {
+            "kind": "unknown",
+            "label": "속도 기준",
+            "value": null,
+            "unit": "",
+            "group": "GPU",
+            "compareNote": "부품군별 기준으로 비교해야 합니다."
+          }
+        },
+        "scores": {
+          "speed": 100,
+          "performance": 1000,
+          "value": 100,
+          "aiFit": 1000,
+          "priceEfficiency": 10,
+          "powerEfficiency": 100
+        },
+        "nbVector": [
+          100,
+          1000,
+          100,
+          1000,
+          10,
+          100
+        ],
+        "vectorLabels": [
+          "속도",
+          "성능",
+          "가성비",
+          "AI 적합",
+          "가격 효율",
+          "전력 효율"
+        ],
+        "nbMax": 172.223,
+        "nbMin": 291.317,
+        "weightedScore": 363,
+        "nbBand": "100~499",
+        "summary": "GPU MSI GeForce RTX 5090 Gaming Trio OC D7 32GB 부품을 속도 중심 N/B 데이터베이스 점수 363점으로 저장했습니다."
+      },
+      "nbWeightedScore": 363,
+      "nbMax": 172.223,
+      "nbMin": 291.317,
+      "nbBand": "100~499",
+      "priceBand": "60만원 이상",
+      "valueIndex": 1.2,
+      "efficiencyIndex": 0.17,
+      "aiUseScore": 100,
+      "totalScore": 51,
+      "aiExplanation": {
+        "summary": "MSI GeForce RTX 5090 Gaming Trio OC D7 32GB은 GPU 부품군에서 총점 51점, 가성비 1.2로 계산된 후보입니다.",
+        "strengths": [
+          "AI 작업 또는 크리에이터 작업 후보로 분류할 수 있습니다",
+          "게임용 조립 PC 후보에 넣기 좋습니다"
+        ],
+        "cautions": [
+          "파워 용량과 케이스 내부 발열 여유를 같이 확인해야 합니다"
+        ],
+        "userLevel": {
+          "level": "고수용",
+          "reason": "성능은 높지만 가격, 전력, 호환성 확인 부담이 커서 조립 경험이 있는 사용자에게 적합합니다."
+        },
+        "recommendation": "가격 변동 확인 후보"
+      },
+      "priceSourceStatus": "초기 기준값",
+      "sourceQueries": [
+        "MSI GeForce RTX 5090 Gaming Trio OC D7 32GB 가격",
+        "MSI GeForce RTX 5090 Gaming Trio OC D7 32GB 성능",
+        "MSI GeForce RTX 5090 Gaming Trio OC D7 32GB 벤치마크"
+      ]
+    },
+    {
       "id": "gpu-msi-geforce-rtx-5090-suprim-soc-d7-32gb-hyper-frost",
       "category": "GPU",
       "name": "MSI GeForce RTX 5090 SUPRIM SOC D7 32GB Hyper Frost",
@@ -33753,6 +34302,116 @@
         "MSI 지포스 RTX 4090 슈프림 X D6X 24GB 가격",
         "MSI 지포스 RTX 4090 슈프림 X D6X 24GB 성능",
         "MSI 지포스 RTX 4090 슈프림 X D6X 24GB 벤치마크"
+      ]
+    },
+    {
+      "id": "gpu-msi-rtx-4090-x-oc-24gb",
+      "category": "GPU",
+      "name": "MSI 지포스 RTX 4090 슈프림 X OC 24GB",
+      "maker": "MSI",
+      "platform": "LGA1700/AM5",
+      "estimatedPriceKrw": 5715800,
+      "performance": 100,
+      "powerWatts": 450,
+      "speedLabel": "Boost Clock",
+      "tags": [
+        "gaming",
+        "ai",
+        "workstation"
+      ],
+      "notes": "High-end Suprim X model with 24GB GDDR6X",
+      "sourceQuery": "",
+      "sourceUrl": "https://search.danawa.com/dsearch.php?k1=GeForce%20RTX%204090%20MSI%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+      "sourceStatus": "collector",
+      "collectedPricesKrw": [],
+      "imageUrl": "./img/gpu.svg",
+      "speedMetric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "GPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      },
+      "unifiedSpeedScore": 100,
+      "nbDatabase": {
+        "schema": "pc-part-nb-database.v1",
+        "unit": "100~1000",
+        "priority": "speed-first",
+        "category": "GPU",
+        "partId": "gpu-msi-rtx-4090-x-oc-24gb",
+        "partName": "MSI 지포스 RTX 4090 슈프림 X OC 24GB",
+        "speed": {
+          "score": 100,
+          "weight": 0.42,
+          "metric": {
+            "kind": "unknown",
+            "label": "속도 기준",
+            "value": null,
+            "unit": "",
+            "group": "GPU",
+            "compareNote": "부품군별 기준으로 비교해야 합니다."
+          }
+        },
+        "scores": {
+          "speed": 100,
+          "performance": 1000,
+          "value": 100,
+          "aiFit": 1000,
+          "priceEfficiency": 20,
+          "powerEfficiency": 100
+        },
+        "nbVector": [
+          100,
+          1000,
+          100,
+          1000,
+          20,
+          100
+        ],
+        "vectorLabels": [
+          "속도",
+          "성능",
+          "가성비",
+          "AI 적합",
+          "가격 효율",
+          "전력 효율"
+        ],
+        "nbMax": 169.102,
+        "nbMin": 296.444,
+        "weightedScore": 364,
+        "nbBand": "100~499",
+        "summary": "GPU MSI 지포스 RTX 4090 슈프림 X OC 24GB 부품을 속도 중심 N/B 데이터베이스 점수 364점으로 저장했습니다."
+      },
+      "nbWeightedScore": 364,
+      "nbMax": 169.102,
+      "nbMin": 296.444,
+      "nbBand": "100~499",
+      "priceBand": "60만원 이상",
+      "valueIndex": 1.7,
+      "efficiencyIndex": 0.22,
+      "aiUseScore": 100,
+      "totalScore": 51,
+      "aiExplanation": {
+        "summary": "MSI 지포스 RTX 4090 슈프림 X OC 24GB은 GPU 부품군에서 총점 51점, 가성비 1.7로 계산된 후보입니다.",
+        "strengths": [
+          "AI 작업 또는 크리에이터 작업 후보로 분류할 수 있습니다",
+          "게임용 조립 PC 후보에 넣기 좋습니다"
+        ],
+        "cautions": [
+          "파워 용량과 케이스 내부 발열 여유를 같이 확인해야 합니다"
+        ],
+        "userLevel": {
+          "level": "고수용",
+          "reason": "성능은 높지만 가격, 전력, 호환성 확인 부담이 커서 조립 경험이 있는 사용자에게 적합합니다."
+        },
+        "recommendation": "가격 변동 확인 후보"
+      },
+      "priceSourceStatus": "초기 기준값",
+      "sourceQueries": [
+        "MSI 지포스 RTX 4090 슈프림 X OC 24GB 가격",
+        "MSI 지포스 RTX 4090 슈프림 X OC 24GB 성능",
+        "MSI 지포스 RTX 4090 슈프림 X OC 24GB 벤치마크"
       ]
     },
     {
@@ -34543,7 +35202,7 @@
       "sourceStatus": "collector",
       "collectedPricesKrw": [],
       "textRepair": {
-        "checkedAt": "2026-05-28T06:16:33.478+09:00",
+        "checkedAt": "2026-05-28T13:52:26.387+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "notes"
@@ -36407,7 +37066,7 @@
       "sourceStatus": "collector",
       "collectedPricesKrw": [],
       "textRepair": {
-        "checkedAt": "2026-05-28T06:16:33.455+09:00",
+        "checkedAt": "2026-05-28T13:52:26.363+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "notes"
@@ -38818,7 +39477,7 @@
       "sourceStatus": "collector",
       "collectedPricesKrw": [],
       "textRepair": {
-        "checkedAt": "2026-05-28T06:16:33.469+09:00",
+        "checkedAt": "2026-05-28T13:52:26.379+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "notes"
@@ -40902,7 +41561,7 @@
       "sourceStatus": "collector",
       "collectedPricesKrw": [],
       "textRepair": {
-        "checkedAt": "2026-05-28T06:16:33.473+09:00",
+        "checkedAt": "2026-05-28T13:52:26.383+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "notes"
@@ -41541,6 +42200,116 @@
         "GIGABYTE RTX5080 GAMING OC D7 16GB 가격",
         "GIGABYTE RTX5080 GAMING OC D7 16GB 성능",
         "GIGABYTE RTX5080 GAMING OC D7 16GB 벤치마크"
+      ]
+    },
+    {
+      "id": "gpu-igame-geforce-rtx-5080-ultra-oc-white-d7-16gb",
+      "category": "GPU",
+      "name": "iGame GeForce RTX 5080 Ultra OC White D7 16GB",
+      "maker": "COLORFUL",
+      "platform": "PCIe 5.0",
+      "estimatedPriceKrw": 2099000,
+      "performance": 95,
+      "powerWatts": 380,
+      "speedLabel": "2655MHz (OC)",
+      "tags": [
+        "gaming",
+        "ai",
+        "white"
+      ],
+      "notes": "GDDR7, 3-fan, White model",
+      "sourceQuery": "",
+      "sourceUrl": "https://search.danawa.com/dsearch.php?k1=COLORFUL%20iGame%20GeForce%20RTX%205080%20Ultra%20OC%20White%20D7%2016GB%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+      "sourceStatus": "collector",
+      "collectedPricesKrw": [],
+      "imageUrl": "./img/gpu.svg",
+      "speedMetric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "GPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      },
+      "unifiedSpeedScore": 100,
+      "nbDatabase": {
+        "schema": "pc-part-nb-database.v1",
+        "unit": "100~1000",
+        "priority": "speed-first",
+        "category": "GPU",
+        "partId": "gpu-igame-geforce-rtx-5080-ultra-oc-white-d7-16gb",
+        "partName": "iGame GeForce RTX 5080 Ultra OC White D7 16GB",
+        "speed": {
+          "score": 100,
+          "weight": 0.42,
+          "metric": {
+            "kind": "unknown",
+            "label": "속도 기준",
+            "value": null,
+            "unit": "",
+            "group": "GPU",
+            "compareNote": "부품군별 기준으로 비교해야 합니다."
+          }
+        },
+        "scores": {
+          "speed": 100,
+          "performance": 950,
+          "value": 100,
+          "aiFit": 950,
+          "priceEfficiency": 50,
+          "powerEfficiency": 100
+        },
+        "nbVector": [
+          100,
+          950,
+          100,
+          950,
+          50,
+          100
+        ],
+        "vectorLabels": [
+          "속도",
+          "성능",
+          "가성비",
+          "AI 적합",
+          "가격 효율",
+          "전력 효율"
+        ],
+        "nbMax": 161.053,
+        "nbMin": 314.211,
+        "weightedScore": 351,
+        "nbBand": "100~499",
+        "summary": "GPU iGame GeForce RTX 5080 Ultra OC White D7 16GB 부품을 속도 중심 N/B 데이터베이스 점수 351점으로 저장했습니다."
+      },
+      "nbWeightedScore": 351,
+      "nbMax": 161.053,
+      "nbMin": 314.211,
+      "nbBand": "100~499",
+      "priceBand": "60만원 이상",
+      "valueIndex": 4.5,
+      "efficiencyIndex": 0.25,
+      "aiUseScore": 95,
+      "totalScore": 50,
+      "aiExplanation": {
+        "summary": "iGame GeForce RTX 5080 Ultra OC White D7 16GB은 GPU 부품군에서 총점 50점, 가성비 4.5로 계산된 후보입니다.",
+        "strengths": [
+          "AI 작업 또는 크리에이터 작업 후보로 분류할 수 있습니다",
+          "게임용 조립 PC 후보에 넣기 좋습니다"
+        ],
+        "cautions": [
+          "파워 용량과 케이스 내부 발열 여유를 같이 확인해야 합니다"
+        ],
+        "userLevel": {
+          "level": "고수용",
+          "reason": "성능은 높지만 가격, 전력, 호환성 확인 부담이 커서 조립 경험이 있는 사용자에게 적합합니다."
+        },
+        "recommendation": "가격 변동 확인 후보"
+      },
+      "priceSourceStatus": "초기 기준값",
+      "sourceQueries": [
+        "iGame GeForce RTX 5080 Ultra OC White D7 16GB 가격",
+        "iGame GeForce RTX 5080 Ultra OC White D7 16GB 성능",
+        "iGame GeForce RTX 5080 Ultra OC White D7 16GB 벤치마크"
       ]
     },
     {
@@ -42527,6 +43296,114 @@
         "MSI 지포스 RTX 4080 SUPER GAMING X SLIM D6X 16GB 트라이프로져3 가격",
         "MSI 지포스 RTX 4080 SUPER GAMING X SLIM D6X 16GB 트라이프로져3 성능",
         "MSI 지포스 RTX 4080 SUPER GAMING X SLIM D6X 16GB 트라이프로져3 벤치마크"
+      ]
+    },
+    {
+      "id": "gpu-msi-rtx-4080-super",
+      "category": "GPU",
+      "name": "MSI 지포스 RTX 4080 SUPER 슈프림",
+      "maker": "MSI",
+      "platform": "NVIDIA",
+      "estimatedPriceKrw": 2208870,
+      "performance": 95,
+      "powerWatts": 320,
+      "speedLabel": "GDDR6X",
+      "tags": [
+        "gaming",
+        "high-end"
+      ],
+      "notes": "Supreme model",
+      "sourceQuery": "",
+      "sourceUrl": "https://search.danawa.com/dsearch.php?k1=MSI%20%EC%A7%80%ED%8F%AC%EC%8A%A4%20RTX%204080%20SUPER%20%EC%8A%88%ED%94%84%EB%A6%BC%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+      "sourceStatus": "collector",
+      "collectedPricesKrw": [],
+      "imageUrl": "./img/gpu.svg",
+      "speedMetric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "GPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      },
+      "unifiedSpeedScore": 100,
+      "nbDatabase": {
+        "schema": "pc-part-nb-database.v1",
+        "unit": "100~1000",
+        "priority": "speed-first",
+        "category": "GPU",
+        "partId": "gpu-msi-rtx-4080-super",
+        "partName": "MSI 지포스 RTX 4080 SUPER 슈프림",
+        "speed": {
+          "score": 100,
+          "weight": 0.42,
+          "metric": {
+            "kind": "unknown",
+            "label": "속도 기준",
+            "value": null,
+            "unit": "",
+            "group": "GPU",
+            "compareNote": "부품군별 기준으로 비교해야 합니다."
+          }
+        },
+        "scores": {
+          "speed": 100,
+          "performance": 950,
+          "value": 100,
+          "aiFit": 620,
+          "priceEfficiency": 50,
+          "powerEfficiency": 100
+        },
+        "nbVector": [
+          100,
+          950,
+          100,
+          620,
+          50,
+          100
+        ],
+        "vectorLabels": [
+          "속도",
+          "성능",
+          "가성비",
+          "AI 적합",
+          "가격 효율",
+          "전력 효율"
+        ],
+        "nbMax": 114.077,
+        "nbMin": 291.481,
+        "weightedScore": 318,
+        "nbBand": "100~499",
+        "summary": "GPU MSI 지포스 RTX 4080 SUPER 슈프림 부품을 속도 중심 N/B 데이터베이스 점수 318점으로 저장했습니다."
+      },
+      "nbWeightedScore": 318,
+      "nbMax": 114.077,
+      "nbMin": 291.481,
+      "nbBand": "100~499",
+      "priceBand": "60만원 이상",
+      "valueIndex": 4.3,
+      "efficiencyIndex": 0.3,
+      "aiUseScore": 62,
+      "totalScore": 50,
+      "aiExplanation": {
+        "summary": "MSI 지포스 RTX 4080 SUPER 슈프림은 GPU 부품군에서 총점 50점, 가성비 4.3로 계산된 후보입니다.",
+        "strengths": [
+          "게임용 조립 PC 후보에 넣기 좋습니다"
+        ],
+        "cautions": [
+          "파워 용량과 케이스 내부 발열 여유를 같이 확인해야 합니다"
+        ],
+        "userLevel": {
+          "level": "고수용",
+          "reason": "성능은 높지만 가격, 전력, 호환성 확인 부담이 커서 조립 경험이 있는 사용자에게 적합합니다."
+        },
+        "recommendation": "가격 변동 확인 후보"
+      },
+      "priceSourceStatus": "초기 기준값",
+      "sourceQueries": [
+        "MSI 지포스 RTX 4080 SUPER 슈프림 가격",
+        "MSI 지포스 RTX 4080 SUPER 슈프림 성능",
+        "MSI 지포스 RTX 4080 SUPER 슈프림 벤치마크"
       ]
     },
     {
@@ -43833,6 +44710,113 @@
       ]
     },
     {
+      "id": "gpu-rtx-5080-oc-d7-16gb-4",
+      "category": "GPU",
+      "name": "지포스 RTX 5080 게이밍 트리오 OC D7 16GB 트라이프로져4",
+      "maker": "MSI",
+      "platform": "NVIDIA",
+      "estimatedPriceKrw": 2199000,
+      "performance": 95,
+      "powerWatts": 0,
+      "speedLabel": "OC",
+      "tags": [
+        "gaming",
+        "ai"
+      ],
+      "notes": "RTX 50 series",
+      "sourceQuery": "",
+      "sourceUrl": "https://search.danawa.com/dsearch.php?k1=RTX%205080%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+      "sourceStatus": "collector",
+      "collectedPricesKrw": [],
+      "imageUrl": "./img/gpu.svg",
+      "speedMetric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "GPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      },
+      "unifiedSpeedScore": 100,
+      "nbDatabase": {
+        "schema": "pc-part-nb-database.v1",
+        "unit": "100~1000",
+        "priority": "speed-first",
+        "category": "GPU",
+        "partId": "gpu-rtx-5080-oc-d7-16gb-4",
+        "partName": "지포스 RTX 5080 게이밍 트리오 OC D7 16GB 트라이프로져4",
+        "speed": {
+          "score": 100,
+          "weight": 0.42,
+          "metric": {
+            "kind": "unknown",
+            "label": "속도 기준",
+            "value": null,
+            "unit": "",
+            "group": "GPU",
+            "compareNote": "부품군별 기준으로 비교해야 합니다."
+          }
+        },
+        "scores": {
+          "speed": 100,
+          "performance": 950,
+          "value": 100,
+          "aiFit": 950,
+          "priceEfficiency": 50,
+          "powerEfficiency": 950
+        },
+        "nbVector": [
+          100,
+          950,
+          100,
+          950,
+          50,
+          950
+        ],
+        "vectorLabels": [
+          "속도",
+          "성능",
+          "가성비",
+          "AI 적합",
+          "가격 효율",
+          "전력 효율"
+        ],
+        "nbMax": 319.064,
+        "nbMin": 335.743,
+        "weightedScore": 402,
+        "nbBand": "100~499",
+        "summary": "GPU 지포스 RTX 5080 게이밍 트리오 OC D7 16GB 트라이프로져4 부품을 속도 중심 N/B 데이터베이스 점수 402점으로 저장했습니다."
+      },
+      "nbWeightedScore": 402,
+      "nbMax": 319.064,
+      "nbMin": 335.743,
+      "nbBand": "100~499",
+      "priceBand": "60만원 이상",
+      "valueIndex": 4.3,
+      "efficiencyIndex": null,
+      "aiUseScore": 95,
+      "totalScore": 50,
+      "aiExplanation": {
+        "summary": "지포스 RTX 5080 게이밍 트리오 OC D7 16GB 트라이프로져4은 GPU 부품군에서 총점 50점, 가성비 4.3로 계산된 후보입니다.",
+        "strengths": [
+          "AI 작업 또는 크리에이터 작업 후보로 분류할 수 있습니다",
+          "게임용 조립 PC 후보에 넣기 좋습니다"
+        ],
+        "cautions": [],
+        "userLevel": {
+          "level": "고수용",
+          "reason": "성능은 높지만 가격, 전력, 호환성 확인 부담이 커서 조립 경험이 있는 사용자에게 적합합니다."
+        },
+        "recommendation": "가격 변동 확인 후보"
+      },
+      "priceSourceStatus": "초기 기준값",
+      "sourceQueries": [
+        "지포스 RTX 5080 게이밍 트리오 OC D7 16GB 트라이프로져4 가격",
+        "지포스 RTX 5080 게이밍 트리오 OC D7 16GB 트라이프로져4 성능",
+        "지포스 RTX 5080 게이밍 트리오 OC D7 16GB 트라이프로져4 벤치마크"
+      ]
+    },
+    {
       "id": "gpu-rtx-5080-soc-d7-16gb",
       "category": "GPU",
       "name": "지포스 RTX 5080 뱅가드 SOC D7 16GB 하이퍼프로져",
@@ -44699,6 +45683,115 @@
         "ZOTAC GAMING GeForce RTX 4080 SUPER AMP Extreme AIRO 가격",
         "ZOTAC GAMING GeForce RTX 4080 SUPER AMP Extreme AIRO 성능",
         "ZOTAC GAMING GeForce RTX 4080 SUPER AMP Extreme AIRO 벤치마크"
+      ]
+    },
+    {
+      "id": "gpu-zotac-gaming-geforce-rtx-4080-super-amp",
+      "category": "GPU",
+      "name": "ZOTAC GAMING GeForce RTX 4080 SUPER AMP",
+      "maker": "ZOTAC",
+      "platform": "PCIE 4.0",
+      "estimatedPriceKrw": 1650000,
+      "performance": 95,
+      "powerWatts": 320,
+      "speedLabel": "GDDR6X",
+      "tags": [
+        "gaming",
+        "ai"
+      ],
+      "notes": "Based on search results for ZOTAC RTX 4080 SUPER AMP. Observed prices in text were largely for accessories (fans, water blocks) or extreme overseas listings; estimated price reflects standard Korean market value for this model.",
+      "sourceQuery": "",
+      "sourceUrl": "https://search.danawa.com/dsearch.php?k1=ZOTAC%20%EC%A7%80%ED%8F%AC%EC%8A%A4%20RTX%204080%20SUPER%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+      "sourceStatus": "collector",
+      "collectedPricesKrw": [],
+      "imageUrl": "./img/gpu.svg",
+      "speedMetric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "GPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      },
+      "unifiedSpeedScore": 100,
+      "nbDatabase": {
+        "schema": "pc-part-nb-database.v1",
+        "unit": "100~1000",
+        "priority": "speed-first",
+        "category": "GPU",
+        "partId": "gpu-zotac-gaming-geforce-rtx-4080-super-amp",
+        "partName": "ZOTAC GAMING GeForce RTX 4080 SUPER AMP",
+        "speed": {
+          "score": 100,
+          "weight": 0.42,
+          "metric": {
+            "kind": "unknown",
+            "label": "속도 기준",
+            "value": null,
+            "unit": "",
+            "group": "GPU",
+            "compareNote": "부품군별 기준으로 비교해야 합니다."
+          }
+        },
+        "scores": {
+          "speed": 100,
+          "performance": 950,
+          "value": 100,
+          "aiFit": 950,
+          "priceEfficiency": 60,
+          "powerEfficiency": 100
+        },
+        "nbVector": [
+          100,
+          950,
+          100,
+          950,
+          60,
+          100
+        ],
+        "vectorLabels": [
+          "속도",
+          "성능",
+          "가성비",
+          "AI 적합",
+          "가격 효율",
+          "전력 효율"
+        ],
+        "nbMax": 157.804,
+        "nbMin": 319.572,
+        "weightedScore": 352,
+        "nbBand": "100~499",
+        "summary": "GPU ZOTAC GAMING GeForce RTX 4080 SUPER AMP 부품을 속도 중심 N/B 데이터베이스 점수 352점으로 저장했습니다."
+      },
+      "nbWeightedScore": 352,
+      "nbMax": 157.804,
+      "nbMin": 319.572,
+      "nbBand": "100~499",
+      "priceBand": "60만원 이상",
+      "valueIndex": 5.8,
+      "efficiencyIndex": 0.3,
+      "aiUseScore": 95,
+      "totalScore": 50,
+      "aiExplanation": {
+        "summary": "ZOTAC GAMING GeForce RTX 4080 SUPER AMP은 GPU 부품군에서 총점 50점, 가성비 5.8로 계산된 후보입니다.",
+        "strengths": [
+          "AI 작업 또는 크리에이터 작업 후보로 분류할 수 있습니다",
+          "게임용 조립 PC 후보에 넣기 좋습니다"
+        ],
+        "cautions": [
+          "파워 용량과 케이스 내부 발열 여유를 같이 확인해야 합니다"
+        ],
+        "userLevel": {
+          "level": "고수용",
+          "reason": "성능은 높지만 가격, 전력, 호환성 확인 부담이 커서 조립 경험이 있는 사용자에게 적합합니다."
+        },
+        "recommendation": "가격 변동 확인 후보"
+      },
+      "priceSourceStatus": "초기 기준값",
+      "sourceQueries": [
+        "ZOTAC GAMING GeForce RTX 4080 SUPER AMP 가격",
+        "ZOTAC GAMING GeForce RTX 4080 SUPER AMP 성능",
+        "ZOTAC GAMING GeForce RTX 4080 SUPER AMP 벤치마크"
       ]
     },
     {
@@ -45571,6 +46664,116 @@
         "ZOTAC GAMING 지포스 RTX 5080 AMP EXTREME INFINITY D7 16GB 가격",
         "ZOTAC GAMING 지포스 RTX 5080 AMP EXTREME INFINITY D7 16GB 성능",
         "ZOTAC GAMING 지포스 RTX 5080 AMP EXTREME INFINITY D7 16GB 벤치마크"
+      ]
+    },
+    {
+      "id": "gpu-zotac-gaming-rtx-5080-solid-core-oc-d7-16gb",
+      "category": "GPU",
+      "name": "ZOTAC GAMING 지포스 RTX 5080 SOLID CORE OC D7 16GB",
+      "maker": "ZOTAC",
+      "platform": "NVIDIA",
+      "estimatedPriceKrw": 2099000,
+      "performance": 95,
+      "powerWatts": 400,
+      "speedLabel": "OC",
+      "tags": [
+        "gaming",
+        "ai",
+        "next-gen"
+      ],
+      "notes": "RTX 50 series GDDR7 memory",
+      "sourceQuery": "",
+      "sourceUrl": "https://search.danawa.com/dsearch.php?k1=RTX%205080%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+      "sourceStatus": "collector",
+      "collectedPricesKrw": [],
+      "imageUrl": "./img/gpu.svg",
+      "speedMetric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "GPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      },
+      "unifiedSpeedScore": 100,
+      "nbDatabase": {
+        "schema": "pc-part-nb-database.v1",
+        "unit": "100~1000",
+        "priority": "speed-first",
+        "category": "GPU",
+        "partId": "gpu-zotac-gaming-rtx-5080-solid-core-oc-d7-16gb",
+        "partName": "ZOTAC GAMING 지포스 RTX 5080 SOLID CORE OC D7 16GB",
+        "speed": {
+          "score": 100,
+          "weight": 0.42,
+          "metric": {
+            "kind": "unknown",
+            "label": "속도 기준",
+            "value": null,
+            "unit": "",
+            "group": "GPU",
+            "compareNote": "부품군별 기준으로 비교해야 합니다."
+          }
+        },
+        "scores": {
+          "speed": 100,
+          "performance": 950,
+          "value": 100,
+          "aiFit": 950,
+          "priceEfficiency": 50,
+          "powerEfficiency": 100
+        },
+        "nbVector": [
+          100,
+          950,
+          100,
+          950,
+          50,
+          100
+        ],
+        "vectorLabels": [
+          "속도",
+          "성능",
+          "가성비",
+          "AI 적합",
+          "가격 효율",
+          "전력 효율"
+        ],
+        "nbMax": 161.053,
+        "nbMin": 314.211,
+        "weightedScore": 351,
+        "nbBand": "100~499",
+        "summary": "GPU ZOTAC GAMING 지포스 RTX 5080 SOLID CORE OC D7 16GB 부품을 속도 중심 N/B 데이터베이스 점수 351점으로 저장했습니다."
+      },
+      "nbWeightedScore": 351,
+      "nbMax": 161.053,
+      "nbMin": 314.211,
+      "nbBand": "100~499",
+      "priceBand": "60만원 이상",
+      "valueIndex": 4.5,
+      "efficiencyIndex": 0.24,
+      "aiUseScore": 95,
+      "totalScore": 50,
+      "aiExplanation": {
+        "summary": "ZOTAC GAMING 지포스 RTX 5080 SOLID CORE OC D7 16GB은 GPU 부품군에서 총점 50점, 가성비 4.5로 계산된 후보입니다.",
+        "strengths": [
+          "AI 작업 또는 크리에이터 작업 후보로 분류할 수 있습니다",
+          "게임용 조립 PC 후보에 넣기 좋습니다"
+        ],
+        "cautions": [
+          "파워 용량과 케이스 내부 발열 여유를 같이 확인해야 합니다"
+        ],
+        "userLevel": {
+          "level": "고수용",
+          "reason": "성능은 높지만 가격, 전력, 호환성 확인 부담이 커서 조립 경험이 있는 사용자에게 적합합니다."
+        },
+        "recommendation": "가격 변동 확인 후보"
+      },
+      "priceSourceStatus": "초기 기준값",
+      "sourceQueries": [
+        "ZOTAC GAMING 지포스 RTX 5080 SOLID CORE OC D7 16GB 가격",
+        "ZOTAC GAMING 지포스 RTX 5080 SOLID CORE OC D7 16GB 성능",
+        "ZOTAC GAMING 지포스 RTX 5080 SOLID CORE OC D7 16GB 벤치마크"
       ]
     },
     {
@@ -46461,7 +47664,7 @@
       "sourceStatus": "collector",
       "collectedPricesKrw": [],
       "textRepair": {
-        "checkedAt": "2026-05-28T06:16:33.456+09:00",
+        "checkedAt": "2026-05-28T13:52:26.363+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "notes"
@@ -47973,6 +49176,114 @@
       ]
     },
     {
+      "id": "gpu-asus-rog-strix-rtx-4080-oc-16gb",
+      "category": "GPU",
+      "name": "ASUS ROG Strix 지포스 RTX 4080 슈퍼 OC 에디션 16GB",
+      "maker": "ASUS",
+      "platform": "NVIDIA",
+      "estimatedPriceKrw": 2506600,
+      "performance": 95,
+      "powerWatts": 320,
+      "speedLabel": "OC",
+      "tags": [
+        "gaming",
+        "high-end"
+      ],
+      "notes": "OC Edition, 16GB GDDR6X",
+      "sourceQuery": "",
+      "sourceUrl": "https://search.danawa.com/dsearch.php?k1=RTX%204080%20Super%20ASUS%20ROG%20Strix%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+      "sourceStatus": "collector",
+      "collectedPricesKrw": [],
+      "imageUrl": "./img/gpu.svg",
+      "speedMetric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "GPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      },
+      "unifiedSpeedScore": 100,
+      "nbDatabase": {
+        "schema": "pc-part-nb-database.v1",
+        "unit": "100~1000",
+        "priority": "speed-first",
+        "category": "GPU",
+        "partId": "gpu-asus-rog-strix-rtx-4080-oc-16gb",
+        "partName": "ASUS ROG Strix 지포스 RTX 4080 슈퍼 OC 에디션 16GB",
+        "speed": {
+          "score": 100,
+          "weight": 0.42,
+          "metric": {
+            "kind": "unknown",
+            "label": "속도 기준",
+            "value": null,
+            "unit": "",
+            "group": "GPU",
+            "compareNote": "부품군별 기준으로 비교해야 합니다."
+          }
+        },
+        "scores": {
+          "speed": 100,
+          "performance": 950,
+          "value": 100,
+          "aiFit": 620,
+          "priceEfficiency": 40,
+          "powerEfficiency": 100
+        },
+        "nbVector": [
+          100,
+          950,
+          100,
+          620,
+          40,
+          100
+        ],
+        "vectorLabels": [
+          "속도",
+          "성능",
+          "가성비",
+          "AI 적합",
+          "가격 효율",
+          "전력 효율"
+        ],
+        "nbMax": 116.834,
+        "nbMin": 286.612,
+        "weightedScore": 317,
+        "nbBand": "100~499",
+        "summary": "GPU ASUS ROG Strix 지포스 RTX 4080 슈퍼 OC 에디션 16GB 부품을 속도 중심 N/B 데이터베이스 점수 317점으로 저장했습니다."
+      },
+      "nbWeightedScore": 317,
+      "nbMax": 116.834,
+      "nbMin": 286.612,
+      "nbBand": "100~499",
+      "priceBand": "60만원 이상",
+      "valueIndex": 3.8,
+      "efficiencyIndex": 0.3,
+      "aiUseScore": 62,
+      "totalScore": 49,
+      "aiExplanation": {
+        "summary": "ASUS ROG Strix 지포스 RTX 4080 슈퍼 OC 에디션 16GB은 GPU 부품군에서 총점 49점, 가성비 3.8로 계산된 후보입니다.",
+        "strengths": [
+          "게임용 조립 PC 후보에 넣기 좋습니다"
+        ],
+        "cautions": [
+          "파워 용량과 케이스 내부 발열 여유를 같이 확인해야 합니다"
+        ],
+        "userLevel": {
+          "level": "고수용",
+          "reason": "성능은 높지만 가격, 전력, 호환성 확인 부담이 커서 조립 경험이 있는 사용자에게 적합합니다."
+        },
+        "recommendation": "가격 변동 확인 후보"
+      },
+      "priceSourceStatus": "초기 기준값",
+      "sourceQueries": [
+        "ASUS ROG Strix 지포스 RTX 4080 슈퍼 OC 에디션 16GB 가격",
+        "ASUS ROG Strix 지포스 RTX 4080 슈퍼 OC 에디션 16GB 성능",
+        "ASUS ROG Strix 지포스 RTX 4080 슈퍼 OC 에디션 16GB 벤치마크"
+      ]
+    },
+    {
       "id": "gpu-asus-rog-strix-rtx-4080-oc",
       "category": "GPU",
       "name": "ASUS ROG Strix 지포스 RTX 4080 슈퍼 OC 에디션",
@@ -48407,6 +49718,116 @@
       ]
     },
     {
+      "id": "gpu-asus-tuf-gaming-geforce-rtx-5080-oc-d7-16gb",
+      "category": "GPU",
+      "name": "ASUS TUF Gaming GeForce RTX 5080 OC D7 16GB",
+      "maker": "ASUS",
+      "platform": "PCIe 5.0",
+      "estimatedPriceKrw": 2522000,
+      "performance": 95,
+      "powerWatts": 400,
+      "speedLabel": "2730MHz",
+      "tags": [
+        "gaming",
+        "ai",
+        "rtx50"
+      ],
+      "notes": "GDDR7 memory, 10752 CUDA cores, requires 850W+ PSU",
+      "sourceQuery": "",
+      "sourceUrl": "https://search.danawa.com/dsearch.php?k1=GeForce%20RTX%205080%20ASUS%20TUF%20Gaming%20OC%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+      "sourceStatus": "collector",
+      "collectedPricesKrw": [],
+      "imageUrl": "./img/gpu.svg",
+      "speedMetric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "GPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      },
+      "unifiedSpeedScore": 100,
+      "nbDatabase": {
+        "schema": "pc-part-nb-database.v1",
+        "unit": "100~1000",
+        "priority": "speed-first",
+        "category": "GPU",
+        "partId": "gpu-asus-tuf-gaming-geforce-rtx-5080-oc-d7-16gb",
+        "partName": "ASUS TUF Gaming GeForce RTX 5080 OC D7 16GB",
+        "speed": {
+          "score": 100,
+          "weight": 0.42,
+          "metric": {
+            "kind": "unknown",
+            "label": "속도 기준",
+            "value": null,
+            "unit": "",
+            "group": "GPU",
+            "compareNote": "부품군별 기준으로 비교해야 합니다."
+          }
+        },
+        "scores": {
+          "speed": 100,
+          "performance": 950,
+          "value": 100,
+          "aiFit": 950,
+          "priceEfficiency": 40,
+          "powerEfficiency": 100
+        },
+        "nbVector": [
+          100,
+          950,
+          100,
+          950,
+          40,
+          100
+        ],
+        "vectorLabels": [
+          "속도",
+          "성능",
+          "가성비",
+          "AI 적합",
+          "가격 효율",
+          "전력 효율"
+        ],
+        "nbMax": 164.267,
+        "nbMin": 308.884,
+        "weightedScore": 350,
+        "nbBand": "100~499",
+        "summary": "GPU ASUS TUF Gaming GeForce RTX 5080 OC D7 16GB 부품을 속도 중심 N/B 데이터베이스 점수 350점으로 저장했습니다."
+      },
+      "nbWeightedScore": 350,
+      "nbMax": 164.267,
+      "nbMin": 308.884,
+      "nbBand": "100~499",
+      "priceBand": "60만원 이상",
+      "valueIndex": 3.8,
+      "efficiencyIndex": 0.24,
+      "aiUseScore": 95,
+      "totalScore": 49,
+      "aiExplanation": {
+        "summary": "ASUS TUF Gaming GeForce RTX 5080 OC D7 16GB은 GPU 부품군에서 총점 49점, 가성비 3.8로 계산된 후보입니다.",
+        "strengths": [
+          "AI 작업 또는 크리에이터 작업 후보로 분류할 수 있습니다",
+          "게임용 조립 PC 후보에 넣기 좋습니다"
+        ],
+        "cautions": [
+          "파워 용량과 케이스 내부 발열 여유를 같이 확인해야 합니다"
+        ],
+        "userLevel": {
+          "level": "고수용",
+          "reason": "성능은 높지만 가격, 전력, 호환성 확인 부담이 커서 조립 경험이 있는 사용자에게 적합합니다."
+        },
+        "recommendation": "가격 변동 확인 후보"
+      },
+      "priceSourceStatus": "초기 기준값",
+      "sourceQueries": [
+        "ASUS TUF Gaming GeForce RTX 5080 OC D7 16GB 가격",
+        "ASUS TUF Gaming GeForce RTX 5080 OC D7 16GB 성능",
+        "ASUS TUF Gaming GeForce RTX 5080 OC D7 16GB 벤치마크"
+      ]
+    },
+    {
       "id": "gpu-asus-tuf-gaming-geforce-rtx-5080-oc-edition-16gb-gddr7",
       "category": "GPU",
       "name": "ASUS TUF Gaming GeForce RTX 5080 OC Edition 16GB GDDR7",
@@ -48514,6 +49935,116 @@
         "ASUS TUF Gaming GeForce RTX 5080 OC Edition 16GB GDDR7 가격",
         "ASUS TUF Gaming GeForce RTX 5080 OC Edition 16GB GDDR7 성능",
         "ASUS TUF Gaming GeForce RTX 5080 OC Edition 16GB GDDR7 벤치마크"
+      ]
+    },
+    {
+      "id": "gpu-colorful-igame-geforce-rtx-5080-vulcan-oc-d7-16gb",
+      "category": "GPU",
+      "name": "Colorful iGame GeForce RTX 5080 VULCAN OC D7 16GB",
+      "maker": "Colorful",
+      "platform": "PCIe",
+      "estimatedPriceKrw": 2499000,
+      "performance": 95,
+      "powerWatts": 400,
+      "speedLabel": "GDDR7",
+      "tags": [
+        "gaming",
+        "ai",
+        "high-end"
+      ],
+      "notes": "Observed discounted price from search results.",
+      "sourceQuery": "",
+      "sourceUrl": "https://search.danawa.com/dsearch.php?k1=GeForce%20RTX%205080%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+      "sourceStatus": "collector",
+      "collectedPricesKrw": [],
+      "imageUrl": "./img/gpu.svg",
+      "speedMetric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "GPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      },
+      "unifiedSpeedScore": 100,
+      "nbDatabase": {
+        "schema": "pc-part-nb-database.v1",
+        "unit": "100~1000",
+        "priority": "speed-first",
+        "category": "GPU",
+        "partId": "gpu-colorful-igame-geforce-rtx-5080-vulcan-oc-d7-16gb",
+        "partName": "Colorful iGame GeForce RTX 5080 VULCAN OC D7 16GB",
+        "speed": {
+          "score": 100,
+          "weight": 0.42,
+          "metric": {
+            "kind": "unknown",
+            "label": "속도 기준",
+            "value": null,
+            "unit": "",
+            "group": "GPU",
+            "compareNote": "부품군별 기준으로 비교해야 합니다."
+          }
+        },
+        "scores": {
+          "speed": 100,
+          "performance": 950,
+          "value": 100,
+          "aiFit": 950,
+          "priceEfficiency": 40,
+          "powerEfficiency": 100
+        },
+        "nbVector": [
+          100,
+          950,
+          100,
+          950,
+          40,
+          100
+        ],
+        "vectorLabels": [
+          "속도",
+          "성능",
+          "가성비",
+          "AI 적합",
+          "가격 효율",
+          "전력 효율"
+        ],
+        "nbMax": 164.267,
+        "nbMin": 308.884,
+        "weightedScore": 350,
+        "nbBand": "100~499",
+        "summary": "GPU Colorful iGame GeForce RTX 5080 VULCAN OC D7 16GB 부품을 속도 중심 N/B 데이터베이스 점수 350점으로 저장했습니다."
+      },
+      "nbWeightedScore": 350,
+      "nbMax": 164.267,
+      "nbMin": 308.884,
+      "nbBand": "100~499",
+      "priceBand": "60만원 이상",
+      "valueIndex": 3.8,
+      "efficiencyIndex": 0.24,
+      "aiUseScore": 95,
+      "totalScore": 49,
+      "aiExplanation": {
+        "summary": "Colorful iGame GeForce RTX 5080 VULCAN OC D7 16GB은 GPU 부품군에서 총점 49점, 가성비 3.8로 계산된 후보입니다.",
+        "strengths": [
+          "AI 작업 또는 크리에이터 작업 후보로 분류할 수 있습니다",
+          "게임용 조립 PC 후보에 넣기 좋습니다"
+        ],
+        "cautions": [
+          "파워 용량과 케이스 내부 발열 여유를 같이 확인해야 합니다"
+        ],
+        "userLevel": {
+          "level": "고수용",
+          "reason": "성능은 높지만 가격, 전력, 호환성 확인 부담이 커서 조립 경험이 있는 사용자에게 적합합니다."
+        },
+        "recommendation": "가격 변동 확인 후보"
+      },
+      "priceSourceStatus": "초기 기준값",
+      "sourceQueries": [
+        "Colorful iGame GeForce RTX 5080 VULCAN OC D7 16GB 가격",
+        "Colorful iGame GeForce RTX 5080 VULCAN OC D7 16GB 성능",
+        "Colorful iGame GeForce RTX 5080 VULCAN OC D7 16GB 벤치마크"
       ]
     },
     {
@@ -52137,7 +53668,7 @@
       "sourceStatus": "collector",
       "collectedPricesKrw": [],
       "textRepair": {
-        "checkedAt": "2026-05-28T06:16:33.479+09:00",
+        "checkedAt": "2026-05-28T13:52:26.389+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "speedLabel",
@@ -52556,6 +54087,128 @@
         "ZOTAC GAMING GeForce RTX 4080 SUPER 16GB 가격",
         "ZOTAC GAMING GeForce RTX 4080 SUPER 16GB 성능",
         "ZOTAC GAMING GeForce RTX 4080 SUPER 16GB 벤치마크"
+      ]
+    },
+    {
+      "id": "gpu-zotac-gaming-rtx-4080-super-trinity-oc-d6x-16gb-white",
+      "category": "GPU",
+      "name": "ZOTAC GAMING 지포스 RTX 4080 SUPER Trinity OC D6X 16GB White",
+      "maker": "ZOTAC",
+      "platform": "PCIE 4.0",
+      "estimatedPriceKrw": 1702000,
+      "performance": 92,
+      "powerWatts": 320,
+      "vramGb": 16,
+      "speedLabel": "2.55GHz",
+      "tags": [
+        "gaming",
+        "white"
+      ],
+      "notes": "Trinity OC White Edition",
+      "sourceQuery": "RTX 4080 Super ZOTAC GAMING OC",
+      "sourceUrl": "https://search.danawa.com/dsearch.php?k1=RTX%204080%20Super%20ZOTAC%20GAMING%20OC",
+      "sourceStatus": "ai-discovered",
+      "collectedPricesKrw": [
+        10240,
+        10752,
+        14600,
+        40065,
+        202010,
+        484990,
+        505320,
+        579860,
+        587000,
+        1086940,
+        1515700,
+        1674560
+      ],
+      "imageUrl": "./img/gpu.svg",
+      "speedMetric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "GPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      },
+      "unifiedSpeedScore": 100,
+      "nbDatabase": {
+        "schema": "pc-part-nb-database.v1",
+        "unit": "100~1000",
+        "priority": "speed-first",
+        "category": "GPU",
+        "partId": "gpu-zotac-gaming-rtx-4080-super-trinity-oc-d6x-16gb-white",
+        "partName": "ZOTAC GAMING 지포스 RTX 4080 SUPER Trinity OC D6X 16GB White",
+        "speed": {
+          "score": 100,
+          "weight": 0.42,
+          "metric": {
+            "kind": "unknown",
+            "label": "속도 기준",
+            "value": null,
+            "unit": "",
+            "group": "GPU",
+            "compareNote": "부품군별 기준으로 비교해야 합니다."
+          }
+        },
+        "scores": {
+          "speed": 100,
+          "performance": 920,
+          "value": 100,
+          "aiFit": 600,
+          "priceEfficiency": 60,
+          "powerEfficiency": 100
+        },
+        "nbVector": [
+          100,
+          920,
+          100,
+          600,
+          60,
+          100
+        ],
+        "vectorLabels": [
+          "속도",
+          "성능",
+          "가성비",
+          "AI 적합",
+          "가격 효율",
+          "전력 효율"
+        ],
+        "nbMax": 111.483,
+        "nbMin": 298.575,
+        "weightedScore": 311,
+        "nbBand": "100~499",
+        "summary": "GPU ZOTAC GAMING 지포스 RTX 4080 SUPER Trinity OC D6X 16GB White 부품을 속도 중심 N/B 데이터베이스 점수 311점으로 저장했습니다."
+      },
+      "nbWeightedScore": 311,
+      "nbMax": 111.483,
+      "nbMin": 298.575,
+      "nbBand": "100~499",
+      "priceBand": "60만원 이상",
+      "valueIndex": 5.4,
+      "efficiencyIndex": 0.29,
+      "aiUseScore": 60,
+      "totalScore": 49,
+      "aiExplanation": {
+        "summary": "ZOTAC GAMING 지포스 RTX 4080 SUPER Trinity OC D6X 16GB White은 GPU 부품군에서 총점 49점, 가성비 5.4로 계산된 후보입니다.",
+        "strengths": [
+          "게임용 조립 PC 후보에 넣기 좋습니다"
+        ],
+        "cautions": [
+          "파워 용량과 케이스 내부 발열 여유를 같이 확인해야 합니다"
+        ],
+        "userLevel": {
+          "level": "고수용",
+          "reason": "성능은 높지만 가격, 전력, 호환성 확인 부담이 커서 조립 경험이 있는 사용자에게 적합합니다."
+        },
+        "recommendation": "가격 변동 확인 후보"
+      },
+      "priceSourceStatus": "초기 기준값",
+      "sourceQueries": [
+        "ZOTAC GAMING 지포스 RTX 4080 SUPER Trinity OC D6X 16GB White 가격",
+        "ZOTAC GAMING 지포스 RTX 4080 SUPER Trinity OC D6X 16GB White 성능",
+        "ZOTAC GAMING 지포스 RTX 4080 SUPER Trinity OC D6X 16GB White 벤치마크"
       ]
     },
     {
@@ -53325,7 +54978,7 @@
       "sourceStatus": "collector",
       "collectedPricesKrw": [],
       "textRepair": {
-        "checkedAt": "2026-05-28T06:16:33.459+09:00",
+        "checkedAt": "2026-05-28T13:52:26.366+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "notes"
@@ -55395,7 +57048,7 @@
       "sourceStatus": "collector",
       "collectedPricesKrw": [],
       "textRepair": {
-        "checkedAt": "2026-05-28T06:16:33.473+09:00",
+        "checkedAt": "2026-05-28T13:52:26.383+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "notes"
@@ -56271,7 +57924,7 @@
       "sourceStatus": "collector",
       "collectedPricesKrw": [],
       "textRepair": {
-        "checkedAt": "2026-05-28T06:16:33.478+09:00",
+        "checkedAt": "2026-05-28T13:52:26.388+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "speedLabel",
@@ -57136,7 +58789,7 @@
       "sourceStatus": "collector",
       "collectedPricesKrw": [],
       "textRepair": {
-        "checkedAt": "2026-05-28T06:16:33.457+09:00",
+        "checkedAt": "2026-05-28T13:52:26.365+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "notes"
@@ -57875,6 +59528,113 @@
       ]
     },
     {
+      "id": "gpu-asus-tuf-gaming-geforce-rtx-5070-ti-oc-d7-16gb",
+      "category": "GPU",
+      "name": "ASUS TUF Gaming GeForce RTX 5070 Ti OC D7 16GB",
+      "maker": "ASUS",
+      "platform": "PCIe 5.0",
+      "estimatedPriceKrw": 1913850,
+      "performance": 90,
+      "powerWatts": 0,
+      "speedLabel": "OC",
+      "tags": [
+        "gaming",
+        "ai"
+      ],
+      "notes": "GDDR7, 16GB VRAM, 3-fan design",
+      "sourceQuery": "",
+      "sourceUrl": "https://search.danawa.com/dsearch.php?k1=GeForce%20RTX%205070%20ASUS%20TUF%20Gaming%20OC%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+      "sourceStatus": "collector",
+      "collectedPricesKrw": [],
+      "imageUrl": "./img/gpu.svg",
+      "speedMetric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "GPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      },
+      "unifiedSpeedScore": 100,
+      "nbDatabase": {
+        "schema": "pc-part-nb-database.v1",
+        "unit": "100~1000",
+        "priority": "speed-first",
+        "category": "GPU",
+        "partId": "gpu-asus-tuf-gaming-geforce-rtx-5070-ti-oc-d7-16gb",
+        "partName": "ASUS TUF Gaming GeForce RTX 5070 Ti OC D7 16GB",
+        "speed": {
+          "score": 100,
+          "weight": 0.42,
+          "metric": {
+            "kind": "unknown",
+            "label": "속도 기준",
+            "value": null,
+            "unit": "",
+            "group": "GPU",
+            "compareNote": "부품군별 기준으로 비교해야 합니다."
+          }
+        },
+        "scores": {
+          "speed": 100,
+          "performance": 900,
+          "value": 100,
+          "aiFit": 900,
+          "priceEfficiency": 50,
+          "powerEfficiency": 900
+        },
+        "nbVector": [
+          100,
+          900,
+          100,
+          900,
+          50,
+          900
+        ],
+        "vectorLabels": [
+          "속도",
+          "성능",
+          "가성비",
+          "AI 적합",
+          "가격 효율",
+          "전력 효율"
+        ],
+        "nbMax": 320.13,
+        "nbMin": 337.611,
+        "weightedScore": 384,
+        "nbBand": "100~499",
+        "summary": "GPU ASUS TUF Gaming GeForce RTX 5070 Ti OC D7 16GB 부품을 속도 중심 N/B 데이터베이스 점수 384점으로 저장했습니다."
+      },
+      "nbWeightedScore": 384,
+      "nbMax": 320.13,
+      "nbMin": 337.611,
+      "nbBand": "100~499",
+      "priceBand": "60만원 이상",
+      "valueIndex": 4.7,
+      "efficiencyIndex": null,
+      "aiUseScore": 90,
+      "totalScore": 47,
+      "aiExplanation": {
+        "summary": "ASUS TUF Gaming GeForce RTX 5070 Ti OC D7 16GB은 GPU 부품군에서 총점 47점, 가성비 4.7로 계산된 후보입니다.",
+        "strengths": [
+          "AI 작업 또는 크리에이터 작업 후보로 분류할 수 있습니다",
+          "게임용 조립 PC 후보에 넣기 좋습니다"
+        ],
+        "cautions": [],
+        "userLevel": {
+          "level": "고수용",
+          "reason": "성능은 높지만 가격, 전력, 호환성 확인 부담이 커서 조립 경험이 있는 사용자에게 적합합니다."
+        },
+        "recommendation": "가격 변동 확인 후보"
+      },
+      "priceSourceStatus": "초기 기준값",
+      "sourceQueries": [
+        "ASUS TUF Gaming GeForce RTX 5070 Ti OC D7 16GB 가격",
+        "ASUS TUF Gaming GeForce RTX 5070 Ti OC D7 16GB 성능",
+        "ASUS TUF Gaming GeForce RTX 5070 Ti OC D7 16GB 벤치마크"
+      ]
+    },
+    {
       "id": "gpu-geforce-rtx-4070-ti-super-ex-gamer-white-oc-v2-16gb",
       "category": "GPU",
       "name": "GeForce RTX 4070 Ti SUPER EX GAMER WHITE OC V2 16GB",
@@ -58311,6 +60071,113 @@
       ]
     },
     {
+      "id": "gpu-geforce-rtx-5080-founders-edition",
+      "category": "GPU",
+      "name": "GeForce RTX 5080 Founders Edition",
+      "maker": "NVIDIA",
+      "platform": "PCIe",
+      "estimatedPriceKrw": 2460700,
+      "performance": 90,
+      "powerWatts": 0,
+      "speedLabel": "AI discovered GPU",
+      "tags": [
+        "gaming",
+        "ai"
+      ],
+      "notes": "Founders Edition model",
+      "sourceQuery": "",
+      "sourceUrl": "https://search.danawa.com/dsearch.php?k1=GeForce%20RTX%205080%20Founders%20Edition%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+      "sourceStatus": "collector",
+      "collectedPricesKrw": [],
+      "imageUrl": "./img/gpu.svg",
+      "speedMetric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "GPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      },
+      "unifiedSpeedScore": 100,
+      "nbDatabase": {
+        "schema": "pc-part-nb-database.v1",
+        "unit": "100~1000",
+        "priority": "speed-first",
+        "category": "GPU",
+        "partId": "gpu-geforce-rtx-5080-founders-edition",
+        "partName": "GeForce RTX 5080 Founders Edition",
+        "speed": {
+          "score": 100,
+          "weight": 0.42,
+          "metric": {
+            "kind": "unknown",
+            "label": "속도 기준",
+            "value": null,
+            "unit": "",
+            "group": "GPU",
+            "compareNote": "부품군별 기준으로 비교해야 합니다."
+          }
+        },
+        "scores": {
+          "speed": 100,
+          "performance": 900,
+          "value": 100,
+          "aiFit": 900,
+          "priceEfficiency": 40,
+          "powerEfficiency": 900
+        },
+        "nbVector": [
+          100,
+          900,
+          100,
+          900,
+          40,
+          900
+        ],
+        "vectorLabels": [
+          "속도",
+          "성능",
+          "가성비",
+          "AI 적합",
+          "가격 효율",
+          "전력 효율"
+        ],
+        "nbMax": 324.489,
+        "nbMin": 331.022,
+        "weightedScore": 383,
+        "nbBand": "100~499",
+        "summary": "GPU GeForce RTX 5080 Founders Edition 부품을 속도 중심 N/B 데이터베이스 점수 383점으로 저장했습니다."
+      },
+      "nbWeightedScore": 383,
+      "nbMax": 324.489,
+      "nbMin": 331.022,
+      "nbBand": "100~499",
+      "priceBand": "60만원 이상",
+      "valueIndex": 3.7,
+      "efficiencyIndex": null,
+      "aiUseScore": 90,
+      "totalScore": 47,
+      "aiExplanation": {
+        "summary": "GeForce RTX 5080 Founders Edition은 GPU 부품군에서 총점 47점, 가성비 3.7로 계산된 후보입니다.",
+        "strengths": [
+          "AI 작업 또는 크리에이터 작업 후보로 분류할 수 있습니다",
+          "게임용 조립 PC 후보에 넣기 좋습니다"
+        ],
+        "cautions": [],
+        "userLevel": {
+          "level": "고수용",
+          "reason": "성능은 높지만 가격, 전력, 호환성 확인 부담이 커서 조립 경험이 있는 사용자에게 적합합니다."
+        },
+        "recommendation": "가격 변동 확인 후보"
+      },
+      "priceSourceStatus": "초기 기준값",
+      "sourceQueries": [
+        "GeForce RTX 5080 Founders Edition 가격",
+        "GeForce RTX 5080 Founders Edition 성능",
+        "GeForce RTX 5080 Founders Edition 벤치마크"
+      ]
+    },
+    {
       "id": "gpu-geforce-rtx-5080-gaming-trio-oc-d7-16gb-trifrozr-4",
       "category": "GPU",
       "name": "GeForce RTX 5080 Gaming Trio OC D7 16GB TriFrozr 4",
@@ -58631,6 +60498,114 @@
         "GIGABYTE 라데온 RX 9070 XT GAMING OC D6 16GB 피씨디렉트 가격",
         "GIGABYTE 라데온 RX 9070 XT GAMING OC D6 16GB 피씨디렉트 성능",
         "GIGABYTE 라데온 RX 9070 XT GAMING OC D6 16GB 피씨디렉트 벤치마크"
+      ]
+    },
+    {
+      "id": "gpu-msi-geforce-rtx-4070-super-x-d6x-12gb-3",
+      "category": "GPU",
+      "name": "MSI GeForce RTX 4070 SUPER 게이밍 X 슬림 D6X 12GB 트라이프로져3",
+      "maker": "MSI",
+      "platform": "PCIe 4.0 x16",
+      "estimatedPriceKrw": 1100000,
+      "performance": 85,
+      "powerWatts": 245,
+      "speedLabel": "2655MHz (OC)",
+      "tags": [
+        "gaming",
+        "rtx40series"
+      ],
+      "notes": "Tri Frozr 3 cooling, 3-fan design",
+      "sourceQuery": "",
+      "sourceUrl": "https://search.danawa.com/dsearch.php?k1=MSI%20GeForce%20RTX%204070%20SUPER%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+      "sourceStatus": "collector",
+      "collectedPricesKrw": [],
+      "imageUrl": "./img/gpu.svg",
+      "speedMetric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "GPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      },
+      "unifiedSpeedScore": 100,
+      "nbDatabase": {
+        "schema": "pc-part-nb-database.v1",
+        "unit": "100~1000",
+        "priority": "speed-first",
+        "category": "GPU",
+        "partId": "gpu-msi-geforce-rtx-4070-super-x-d6x-12gb-3",
+        "partName": "MSI GeForce RTX 4070 SUPER 게이밍 X 슬림 D6X 12GB 트라이프로져3",
+        "speed": {
+          "score": 100,
+          "weight": 0.42,
+          "metric": {
+            "kind": "unknown",
+            "label": "속도 기준",
+            "value": null,
+            "unit": "",
+            "group": "GPU",
+            "compareNote": "부품군별 기준으로 비교해야 합니다."
+          }
+        },
+        "scores": {
+          "speed": 100,
+          "performance": 850,
+          "value": 103,
+          "aiFit": 550,
+          "priceEfficiency": 90,
+          "powerEfficiency": 116
+        },
+        "nbVector": [
+          100,
+          850,
+          103,
+          550,
+          90,
+          116
+        ],
+        "vectorLabels": [
+          "속도",
+          "성능",
+          "가성비",
+          "AI 적합",
+          "가격 효율",
+          "전력 효율"
+        ],
+        "nbMax": 105.229,
+        "nbMin": 321.836,
+        "weightedScore": 296,
+        "nbBand": "100~499",
+        "summary": "GPU MSI GeForce RTX 4070 SUPER 게이밍 X 슬림 D6X 12GB 트라이프로져3 부품을 속도 중심 N/B 데이터베이스 점수 296점으로 저장했습니다."
+      },
+      "nbWeightedScore": 296,
+      "nbMax": 105.229,
+      "nbMin": 321.836,
+      "nbBand": "100~499",
+      "priceBand": "60만원 이상",
+      "valueIndex": 7.7,
+      "efficiencyIndex": 0.35,
+      "aiUseScore": 55,
+      "totalScore": 47,
+      "aiExplanation": {
+        "summary": "MSI GeForce RTX 4070 SUPER 게이밍 X 슬림 D6X 12GB 트라이프로져3은 GPU 부품군에서 총점 47점, 가성비 7.7로 계산된 후보입니다.",
+        "strengths": [
+          "게임용 조립 PC 후보에 넣기 좋습니다"
+        ],
+        "cautions": [
+          "파워 용량과 케이스 내부 발열 여유를 같이 확인해야 합니다"
+        ],
+        "userLevel": {
+          "level": "고수용",
+          "reason": "성능은 높지만 가격, 전력, 호환성 확인 부담이 커서 조립 경험이 있는 사용자에게 적합합니다."
+        },
+        "recommendation": "가격 변동 확인 후보"
+      },
+      "priceSourceStatus": "초기 기준값",
+      "sourceQueries": [
+        "MSI GeForce RTX 4070 SUPER 게이밍 X 슬림 D6X 12GB 트라이프로져3 가격",
+        "MSI GeForce RTX 4070 SUPER 게이밍 X 슬림 D6X 12GB 트라이프로져3 성능",
+        "MSI GeForce RTX 4070 SUPER 게이밍 X 슬림 D6X 12GB 트라이프로져3 벤치마크"
       ]
     },
     {
@@ -59517,7 +61492,7 @@
       "sourceStatus": "collector",
       "collectedPricesKrw": [],
       "textRepair": {
-        "checkedAt": "2026-05-28T06:16:33.479+09:00",
+        "checkedAt": "2026-05-28T13:52:26.389+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "speedLabel",
@@ -62557,7 +64532,7 @@
       "sourceStatus": "collector",
       "collectedPricesKrw": [],
       "textRepair": {
-        "checkedAt": "2026-05-28T06:16:33.473+09:00",
+        "checkedAt": "2026-05-28T13:52:26.383+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "notes"
@@ -67306,30 +69281,16 @@
       "estimatedPriceKrw": 1574000,
       "performance": 85,
       "powerWatts": 250,
-      "vramGb": 16,
       "speedLabel": "OC",
       "tags": [
         "gaming",
         "white"
       ],
       "notes": "D7 VRAM",
-      "sourceQuery": "GeForce RTX 5070 Ti 최저가",
+      "sourceQuery": "",
       "sourceUrl": "https://search.danawa.com/dsearch.php?k1=GeForce%20RTX%205070%20Ti%20%EC%B5%9C%EC%A0%80%EA%B0%80",
-      "sourceStatus": "ai-discovered",
-      "collectedPricesKrw": [
-        10240,
-        10496,
-        10752,
-        12000,
-        12400,
-        12700,
-        12800,
-        12999,
-        14000,
-        14080,
-        14099,
-        14999
-      ],
+      "sourceStatus": "collector",
+      "collectedPricesKrw": [],
       "imageUrl": "./img/gpu.svg",
       "speedMetric": {
         "kind": "unknown",
@@ -67762,7 +69723,7 @@
       "sourceStatus": "collector",
       "collectedPricesKrw": [],
       "textRepair": {
-        "checkedAt": "2026-05-28T06:16:33.455+09:00",
+        "checkedAt": "2026-05-28T13:52:26.363+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "notes"
@@ -68091,7 +70052,7 @@
       "sourceStatus": "collector",
       "collectedPricesKrw": [],
       "textRepair": {
-        "checkedAt": "2026-05-28T06:16:33.463+09:00",
+        "checkedAt": "2026-05-28T13:52:26.369+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "notes"
@@ -69282,7 +71243,7 @@
       "sourceStatus": "collector",
       "collectedPricesKrw": [],
       "textRepair": {
-        "checkedAt": "2026-05-28T06:16:33.482+09:00",
+        "checkedAt": "2026-05-28T13:52:26.394+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "notes"
@@ -70251,7 +72212,7 @@
       "sourceStatus": "collector",
       "collectedPricesKrw": [],
       "textRepair": {
-        "checkedAt": "2026-05-28T06:16:33.452+09:00",
+        "checkedAt": "2026-05-28T13:52:26.359+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "notes"
@@ -70474,7 +72435,7 @@
       "sourceStatus": "collector",
       "collectedPricesKrw": [],
       "textRepair": {
-        "checkedAt": "2026-05-28T06:16:33.459+09:00",
+        "checkedAt": "2026-05-28T13:52:26.366+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "notes"
@@ -70589,7 +72550,7 @@
       "sourceStatus": "collector",
       "collectedPricesKrw": [],
       "textRepair": {
-        "checkedAt": "2026-05-28T06:16:33.460+09:00",
+        "checkedAt": "2026-05-28T13:52:26.367+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "notes"
@@ -70702,7 +72663,7 @@
       "sourceStatus": "collector",
       "collectedPricesKrw": [],
       "textRepair": {
-        "checkedAt": "2026-05-28T06:16:33.460+09:00",
+        "checkedAt": "2026-05-28T13:52:26.367+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "notes"
@@ -73183,7 +75144,7 @@
       "sourceStatus": "collector",
       "collectedPricesKrw": [],
       "textRepair": {
-        "checkedAt": "2026-05-28T06:16:33.470+09:00",
+        "checkedAt": "2026-05-28T13:52:26.381+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "notes"
@@ -78120,6 +80081,113 @@
       ]
     },
     {
+      "id": "gpu-rtx-4070-12gb-oc-gddr6x",
+      "category": "GPU",
+      "name": "RTX 4070 슈퍼 12GB 트윈 에지 OC GDDR6X",
+      "maker": "ZOTAC",
+      "platform": "PCIe 4.0",
+      "estimatedPriceKrw": 1363200,
+      "performance": 75,
+      "powerWatts": 220,
+      "speedLabel": "GDDR6X",
+      "tags": [
+        "gaming"
+      ],
+      "notes": "ZOTAC Twin Edge OC model",
+      "sourceQuery": "",
+      "sourceUrl": "https://search.danawa.com/dsearch.php?k1=RTX%204070%20Super%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+      "sourceStatus": "collector",
+      "collectedPricesKrw": [],
+      "imageUrl": "./img/gpu.svg",
+      "speedMetric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "GPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      },
+      "unifiedSpeedScore": 100,
+      "nbDatabase": {
+        "schema": "pc-part-nb-database.v1",
+        "unit": "100~1000",
+        "priority": "speed-first",
+        "category": "GPU",
+        "partId": "gpu-rtx-4070-12gb-oc-gddr6x",
+        "partName": "RTX 4070 슈퍼 12GB 트윈 에지 OC GDDR6X",
+        "speed": {
+          "score": 100,
+          "weight": 0.42,
+          "metric": {
+            "kind": "unknown",
+            "label": "속도 기준",
+            "value": null,
+            "unit": "",
+            "group": "GPU",
+            "compareNote": "부품군별 기준으로 비교해야 합니다."
+          }
+        },
+        "scores": {
+          "speed": 100,
+          "performance": 750,
+          "value": 100,
+          "aiFit": 490,
+          "priceEfficiency": 70,
+          "powerEfficiency": 114
+        },
+        "nbVector": [
+          100,
+          750,
+          100,
+          490,
+          70,
+          114
+        ],
+        "vectorLabels": [
+          "속도",
+          "성능",
+          "가성비",
+          "AI 적합",
+          "가격 효율",
+          "전력 효율"
+        ],
+        "nbMax": 115.003,
+        "nbMin": 319.507,
+        "weightedScore": 267,
+        "nbBand": "100~499",
+        "summary": "GPU RTX 4070 슈퍼 12GB 트윈 에지 OC GDDR6X 부품을 속도 중심 N/B 데이터베이스 점수 267점으로 저장했습니다."
+      },
+      "nbWeightedScore": 267,
+      "nbMax": 115.003,
+      "nbMin": 319.507,
+      "nbBand": "100~499",
+      "priceBand": "60만원 이상",
+      "valueIndex": 5.5,
+      "efficiencyIndex": 0.34,
+      "aiUseScore": 49,
+      "totalScore": 41,
+      "aiExplanation": {
+        "summary": "RTX 4070 슈퍼 12GB 트윈 에지 OC GDDR6X은 GPU 부품군에서 총점 41점, 가성비 5.5로 계산된 후보입니다.",
+        "strengths": [
+          "게임용 조립 PC 후보에 넣기 좋습니다"
+        ],
+        "cautions": [
+          "파워 용량과 케이스 내부 발열 여유를 같이 확인해야 합니다"
+        ],
+        "userLevel": {
+          "level": "고수용",
+          "reason": "성능은 높지만 가격, 전력, 호환성 확인 부담이 커서 조립 경험이 있는 사용자에게 적합합니다."
+        },
+        "recommendation": "가격 변동 확인 후보"
+      },
+      "priceSourceStatus": "초기 기준값",
+      "sourceQueries": [
+        "RTX 4070 슈퍼 12GB 트윈 에지 OC GDDR6X 가격",
+        "RTX 4070 슈퍼 12GB 트윈 에지 OC GDDR6X 성능",
+        "RTX 4070 슈퍼 12GB 트윈 에지 OC GDDR6X 벤치마크"
+      ]
+    },
+    {
       "id": "gpu-rtx-4070-oc-12g",
       "category": "GPU",
       "name": "지포스 RTX 4070 슈퍼 윈드포스 OC 12G",
@@ -78353,7 +80421,7 @@
       "sourceStatus": "collector",
       "collectedPricesKrw": [],
       "textRepair": {
-        "checkedAt": "2026-05-28T06:16:33.480+09:00",
+        "checkedAt": "2026-05-28T13:52:26.390+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "notes"
@@ -78682,7 +80750,7 @@
       "sourceStatus": "collector",
       "collectedPricesKrw": [],
       "textRepair": {
-        "checkedAt": "2026-05-28T06:16:33.481+09:00",
+        "checkedAt": "2026-05-28T13:52:26.393+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "notes"
@@ -78903,7 +80971,7 @@
       "sourceStatus": "collector",
       "collectedPricesKrw": [],
       "textRepair": {
-        "checkedAt": "2026-05-28T06:16:33.482+09:00",
+        "checkedAt": "2026-05-28T13:52:26.394+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "notes"
@@ -80194,7 +82262,7 @@
       "sourceStatus": "collector",
       "collectedPricesKrw": [],
       "textRepair": {
-        "checkedAt": "2026-05-28T06:16:33.468+09:00",
+        "checkedAt": "2026-05-28T13:52:26.377+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "notes"
@@ -82126,7 +84194,7 @@
       "sourceStatus": "collector",
       "collectedPricesKrw": [],
       "textRepair": {
-        "checkedAt": "2026-05-28T06:16:33.478+09:00",
+        "checkedAt": "2026-05-28T13:52:26.388+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "notes"
@@ -82648,6 +84716,114 @@
         "ZOTAC GAMING GeForce RTX 4070 SUPER Trinity OC 가격",
         "ZOTAC GAMING GeForce RTX 4070 SUPER Trinity OC 성능",
         "ZOTAC GAMING GeForce RTX 4070 SUPER Trinity OC 벤치마크"
+      ]
+    },
+    {
+      "id": "gpu-zotac-gaming-geforce-rtx-4070-super-twin-edge-dlss-3-12gb",
+      "category": "GPU",
+      "name": "ZOTAC Gaming GeForce RTX 4070 SUPER Twin Edge DLSS 3 12GB",
+      "maker": "ZOTAC",
+      "platform": "PCIe 4.0",
+      "estimatedPriceKrw": 1990960,
+      "performance": 75,
+      "powerWatts": 220,
+      "speedLabel": "21Gbps",
+      "tags": [
+        "gaming",
+        "dlss3"
+      ],
+      "notes": "Twin Edge model",
+      "sourceQuery": "",
+      "sourceUrl": "https://search.danawa.com/dsearch.php?k1=ZOTAC%20GeForce%20RTX%204070%20SUPER%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+      "sourceStatus": "collector",
+      "collectedPricesKrw": [],
+      "imageUrl": "./img/gpu.svg",
+      "speedMetric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "GPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      },
+      "unifiedSpeedScore": 100,
+      "nbDatabase": {
+        "schema": "pc-part-nb-database.v1",
+        "unit": "100~1000",
+        "priority": "speed-first",
+        "category": "GPU",
+        "partId": "gpu-zotac-gaming-geforce-rtx-4070-super-twin-edge-dlss-3-12gb",
+        "partName": "ZOTAC Gaming GeForce RTX 4070 SUPER Twin Edge DLSS 3 12GB",
+        "speed": {
+          "score": 100,
+          "weight": 0.42,
+          "metric": {
+            "kind": "unknown",
+            "label": "속도 기준",
+            "value": null,
+            "unit": "",
+            "group": "GPU",
+            "compareNote": "부품군별 기준으로 비교해야 합니다."
+          }
+        },
+        "scores": {
+          "speed": 100,
+          "performance": 750,
+          "value": 100,
+          "aiFit": 490,
+          "priceEfficiency": 50,
+          "powerEfficiency": 114
+        },
+        "nbVector": [
+          100,
+          750,
+          100,
+          490,
+          50,
+          114
+        ],
+        "vectorLabels": [
+          "속도",
+          "성능",
+          "가성비",
+          "AI 적합",
+          "가격 효율",
+          "전력 효율"
+        ],
+        "nbMax": 123.092,
+        "nbMin": 306.067,
+        "weightedScore": 266,
+        "nbBand": "100~499",
+        "summary": "GPU ZOTAC Gaming GeForce RTX 4070 SUPER Twin Edge DLSS 3 12GB 부품을 속도 중심 N/B 데이터베이스 점수 266점으로 저장했습니다."
+      },
+      "nbWeightedScore": 266,
+      "nbMax": 123.092,
+      "nbMin": 306.067,
+      "nbBand": "100~499",
+      "priceBand": "60만원 이상",
+      "valueIndex": 3.8,
+      "efficiencyIndex": 0.34,
+      "aiUseScore": 49,
+      "totalScore": 40,
+      "aiExplanation": {
+        "summary": "ZOTAC Gaming GeForce RTX 4070 SUPER Twin Edge DLSS 3 12GB은 GPU 부품군에서 총점 40점, 가성비 3.8로 계산된 후보입니다.",
+        "strengths": [
+          "게임용 조립 PC 후보에 넣기 좋습니다"
+        ],
+        "cautions": [
+          "파워 용량과 케이스 내부 발열 여유를 같이 확인해야 합니다"
+        ],
+        "userLevel": {
+          "level": "고수용",
+          "reason": "성능은 높지만 가격, 전력, 호환성 확인 부담이 커서 조립 경험이 있는 사용자에게 적합합니다."
+        },
+        "recommendation": "가격 변동 확인 후보"
+      },
+      "priceSourceStatus": "초기 기준값",
+      "sourceQueries": [
+        "ZOTAC Gaming GeForce RTX 4070 SUPER Twin Edge DLSS 3 12GB 가격",
+        "ZOTAC Gaming GeForce RTX 4070 SUPER Twin Edge DLSS 3 12GB 성능",
+        "ZOTAC Gaming GeForce RTX 4070 SUPER Twin Edge DLSS 3 12GB 벤치마크"
       ]
     },
     {
@@ -85443,7 +87619,7 @@
       "sourceStatus": "collector",
       "collectedPricesKrw": [],
       "textRepair": {
-        "checkedAt": "2026-05-28T06:16:33.473+09:00",
+        "checkedAt": "2026-05-28T13:52:26.383+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "notes"
@@ -86059,6 +88235,113 @@
         "NVIDIA GeForce RTX 4060 Ti 가격",
         "NVIDIA GeForce RTX 4060 Ti 성능",
         "NVIDIA GeForce RTX 4060 Ti 벤치마크"
+      ]
+    },
+    {
+      "id": "gpu-rtx-5070-solid-oc-d7-12gb",
+      "category": "GPU",
+      "name": "지포스 RTX 5070 SOLID OC D7 12GB",
+      "maker": "ZOTAC",
+      "platform": "PCIe",
+      "estimatedPriceKrw": 944730,
+      "performance": 70,
+      "powerWatts": 220,
+      "speedLabel": "OC",
+      "tags": [
+        "gaming"
+      ],
+      "notes": "Found in search results as ZOTAC GAMING GeForce RTX 5070 SOLID OC D7 12GB",
+      "sourceQuery": "",
+      "sourceUrl": "https://search.danawa.com/dsearch.php?k1=%EC%A7%80%ED%8F%AC%EC%8A%A4%20RTX%205070%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+      "sourceStatus": "collector",
+      "collectedPricesKrw": [],
+      "imageUrl": "./img/gpu.svg",
+      "speedMetric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "GPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      },
+      "unifiedSpeedScore": 100,
+      "nbDatabase": {
+        "schema": "pc-part-nb-database.v1",
+        "unit": "100~1000",
+        "priority": "speed-first",
+        "category": "GPU",
+        "partId": "gpu-rtx-5070-solid-oc-d7-12gb",
+        "partName": "지포스 RTX 5070 SOLID OC D7 12GB",
+        "speed": {
+          "score": 100,
+          "weight": 0.42,
+          "metric": {
+            "kind": "unknown",
+            "label": "속도 기준",
+            "value": null,
+            "unit": "",
+            "group": "GPU",
+            "compareNote": "부품군별 기준으로 비교해야 합니다."
+          }
+        },
+        "scores": {
+          "speed": 100,
+          "performance": 700,
+          "value": 100,
+          "aiFit": 460,
+          "priceEfficiency": 110,
+          "powerEfficiency": 106
+        },
+        "nbVector": [
+          100,
+          700,
+          100,
+          460,
+          110,
+          106
+        ],
+        "vectorLabels": [
+          "속도",
+          "성능",
+          "가성비",
+          "AI 적합",
+          "가격 효율",
+          "전력 효율"
+        ],
+        "nbMax": 104.316,
+        "nbMin": 347.47,
+        "weightedScore": 257,
+        "nbBand": "100~499",
+        "summary": "GPU 지포스 RTX 5070 SOLID OC D7 12GB 부품을 속도 중심 N/B 데이터베이스 점수 257점으로 저장했습니다."
+      },
+      "nbWeightedScore": 257,
+      "nbMax": 104.316,
+      "nbMin": 347.47,
+      "nbBand": "100~499",
+      "priceBand": "60만원 이상",
+      "valueIndex": 7.4,
+      "efficiencyIndex": 0.32,
+      "aiUseScore": 46,
+      "totalScore": 39,
+      "aiExplanation": {
+        "summary": "지포스 RTX 5070 SOLID OC D7 12GB은 GPU 부품군에서 총점 39점, 가성비 7.4로 계산된 후보입니다.",
+        "strengths": [
+          "게임용 조립 PC 후보에 넣기 좋습니다"
+        ],
+        "cautions": [
+          "파워 용량과 케이스 내부 발열 여유를 같이 확인해야 합니다"
+        ],
+        "userLevel": {
+          "level": "고수용",
+          "reason": "성능은 높지만 가격, 전력, 호환성 확인 부담이 커서 조립 경험이 있는 사용자에게 적합합니다."
+        },
+        "recommendation": "가격 변동 확인 후보"
+      },
+      "priceSourceStatus": "초기 기준값",
+      "sourceQueries": [
+        "지포스 RTX 5070 SOLID OC D7 12GB 가격",
+        "지포스 RTX 5070 SOLID OC D7 12GB 성능",
+        "지포스 RTX 5070 SOLID OC D7 12GB 벤치마크"
       ]
     },
     {
@@ -87217,6 +89500,219 @@
         "GeForce RTX 4060 Ti Gaming X D6 16GB 가격",
         "GeForce RTX 4060 Ti Gaming X D6 16GB 성능",
         "GeForce RTX 4060 Ti Gaming X D6 16GB 벤치마크"
+      ]
+    },
+    {
+      "id": "gpu-geforce-rtx-4060-ti-tomahawk-duo-d6-8gb",
+      "category": "GPU",
+      "name": "GeForce RTX 4060 Ti Tomahawk DUO D6 8GB",
+      "maker": "COLORFUL",
+      "platform": "NVIDIA",
+      "estimatedPriceKrw": 746900,
+      "performance": 65,
+      "powerWatts": 160,
+      "speedLabel": "GDDR6",
+      "tags": [
+        "gaming"
+      ],
+      "notes": "PC Direct distribution",
+      "sourceQuery": "",
+      "sourceUrl": "https://search.danawa.com/dsearch.php?k1=RTX%204060%20Ti%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+      "sourceStatus": "collector",
+      "collectedPricesKrw": [],
+      "imageUrl": "./img/gpu.svg",
+      "speedMetric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "GPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      },
+      "unifiedSpeedScore": 100,
+      "nbDatabase": {
+        "schema": "pc-part-nb-database.v1",
+        "unit": "100~1000",
+        "priority": "speed-first",
+        "category": "GPU",
+        "partId": "gpu-geforce-rtx-4060-ti-tomahawk-duo-d6-8gb",
+        "partName": "GeForce RTX 4060 Ti Tomahawk DUO D6 8GB",
+        "speed": {
+          "score": 100,
+          "weight": 0.42,
+          "metric": {
+            "kind": "unknown",
+            "label": "속도 기준",
+            "value": null,
+            "unit": "",
+            "group": "GPU",
+            "compareNote": "부품군별 기준으로 비교해야 합니다."
+          }
+        },
+        "scores": {
+          "speed": 100,
+          "performance": 650,
+          "value": 116,
+          "aiFit": 420,
+          "priceEfficiency": 130,
+          "powerEfficiency": 135
+        },
+        "nbVector": [
+          100,
+          650,
+          116,
+          420,
+          130,
+          135
+        ],
+        "vectorLabels": [
+          "속도",
+          "성능",
+          "가성비",
+          "AI 적합",
+          "가격 효율",
+          "전력 효율"
+        ],
+        "nbMax": 115.596,
+        "nbMin": 363.226,
+        "weightedScore": 249,
+        "nbBand": "100~499",
+        "summary": "GPU GeForce RTX 4060 Ti Tomahawk DUO D6 8GB 부품을 속도 중심 N/B 데이터베이스 점수 249점으로 저장했습니다."
+      },
+      "nbWeightedScore": 249,
+      "nbMax": 115.596,
+      "nbMin": 363.226,
+      "nbBand": "100~499",
+      "priceBand": "60만원 이상",
+      "valueIndex": 8.7,
+      "efficiencyIndex": 0.41,
+      "aiUseScore": 42,
+      "totalScore": 38,
+      "aiExplanation": {
+        "summary": "GeForce RTX 4060 Ti Tomahawk DUO D6 8GB은 GPU 부품군에서 총점 38점, 가성비 8.7로 계산된 후보입니다.",
+        "strengths": [
+          "게임용 조립 PC 후보에 넣기 좋습니다"
+        ],
+        "cautions": [],
+        "userLevel": {
+          "level": "고수용",
+          "reason": "성능은 높지만 가격, 전력, 호환성 확인 부담이 커서 조립 경험이 있는 사용자에게 적합합니다."
+        },
+        "recommendation": "가격 변동 확인 후보"
+      },
+      "priceSourceStatus": "초기 기준값",
+      "sourceQueries": [
+        "GeForce RTX 4060 Ti Tomahawk DUO D6 8GB 가격",
+        "GeForce RTX 4060 Ti Tomahawk DUO D6 8GB 성능",
+        "GeForce RTX 4060 Ti Tomahawk DUO D6 8GB 벤치마크"
+      ]
+    },
+    {
+      "id": "gpu-igame-geforce-rtx-5070-ultra-white-oc-d7-12gb",
+      "category": "GPU",
+      "name": "iGame GeForce RTX 5070 Ultra White OC D7 12GB",
+      "maker": "Colorful",
+      "platform": "PCIE",
+      "estimatedPriceKrw": 1200000,
+      "performance": 70,
+      "powerWatts": 220,
+      "speedLabel": "OC",
+      "tags": [
+        "gaming",
+        "white"
+      ],
+      "notes": "D7 VRAM",
+      "sourceQuery": "",
+      "sourceUrl": "https://search.danawa.com/dsearch.php?k1=GeForce%20RTX%205070%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+      "sourceStatus": "collector",
+      "collectedPricesKrw": [],
+      "imageUrl": "./img/gpu.svg",
+      "speedMetric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "GPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      },
+      "unifiedSpeedScore": 100,
+      "nbDatabase": {
+        "schema": "pc-part-nb-database.v1",
+        "unit": "100~1000",
+        "priority": "speed-first",
+        "category": "GPU",
+        "partId": "gpu-igame-geforce-rtx-5070-ultra-white-oc-d7-12gb",
+        "partName": "iGame GeForce RTX 5070 Ultra White OC D7 12GB",
+        "speed": {
+          "score": 100,
+          "weight": 0.42,
+          "metric": {
+            "kind": "unknown",
+            "label": "속도 기준",
+            "value": null,
+            "unit": "",
+            "group": "GPU",
+            "compareNote": "부품군별 기준으로 비교해야 합니다."
+          }
+        },
+        "scores": {
+          "speed": 100,
+          "performance": 700,
+          "value": 100,
+          "aiFit": 460,
+          "priceEfficiency": 80,
+          "powerEfficiency": 106
+        },
+        "nbVector": [
+          100,
+          700,
+          100,
+          460,
+          80,
+          106
+        ],
+        "vectorLabels": [
+          "속도",
+          "성능",
+          "가성비",
+          "AI 적합",
+          "가격 효율",
+          "전력 효율"
+        ],
+        "nbMax": 111.41,
+        "nbMin": 331.777,
+        "weightedScore": 255,
+        "nbBand": "100~499",
+        "summary": "GPU iGame GeForce RTX 5070 Ultra White OC D7 12GB 부품을 속도 중심 N/B 데이터베이스 점수 255점으로 저장했습니다."
+      },
+      "nbWeightedScore": 255,
+      "nbMax": 111.41,
+      "nbMin": 331.777,
+      "nbBand": "100~499",
+      "priceBand": "60만원 이상",
+      "valueIndex": 5.8,
+      "efficiencyIndex": 0.32,
+      "aiUseScore": 46,
+      "totalScore": 38,
+      "aiExplanation": {
+        "summary": "iGame GeForce RTX 5070 Ultra White OC D7 12GB은 GPU 부품군에서 총점 38점, 가성비 5.8로 계산된 후보입니다.",
+        "strengths": [
+          "게임용 조립 PC 후보에 넣기 좋습니다"
+        ],
+        "cautions": [
+          "파워 용량과 케이스 내부 발열 여유를 같이 확인해야 합니다"
+        ],
+        "userLevel": {
+          "level": "고수용",
+          "reason": "성능은 높지만 가격, 전력, 호환성 확인 부담이 커서 조립 경험이 있는 사용자에게 적합합니다."
+        },
+        "recommendation": "가격 변동 확인 후보"
+      },
+      "priceSourceStatus": "초기 기준값",
+      "sourceQueries": [
+        "iGame GeForce RTX 5070 Ultra White OC D7 12GB 가격",
+        "iGame GeForce RTX 5070 Ultra White OC D7 12GB 성능",
+        "iGame GeForce RTX 5070 Ultra White OC D7 12GB 벤치마크"
       ]
     },
     {
@@ -89766,7 +92262,7 @@
       "sourceStatus": "collector",
       "collectedPricesKrw": [],
       "textRepair": {
-        "checkedAt": "2026-05-28T06:16:33.473+09:00",
+        "checkedAt": "2026-05-28T13:52:26.383+09:00",
         "method": "ai-text-sanity-rules",
         "repairedFields": [
           "notes"

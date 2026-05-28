@@ -1,0 +1,257 @@
+{
+  "timestamp": "2026-05-28T13:27:19.072309",
+  "model": "glm-5:cloud",
+  "keyword_count": 3,
+  "analyze_subtitles": true,
+  "analysis_source": "youtube",
+  "keywords": [
+    {
+      "keyword": "오늘의 주요 뉴스",
+      "is_fixed": true,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "신현송 기준금리 인상",
+      "is_fixed": false,
+      "views": [
+        339,
+        409
+      ],
+      "video_count": 2,
+      "videos": [
+        {
+          "title": "[현장영상+] 신현송 한은 총재 \"향후 적절한 시기에 기준금리 인상 필요\" / YTN",
+          "video_id": "9B0ePTYZz74",
+          "views": 339,
+          "upload_date": "2026-05-28",
+          "url": "https://www.youtube.com/watch?v=9B0ePTYZz74",
+          "subtitle_summary": "1.  Analyze the Request:\nSource Material: A YouTube video transcript featuring Bank of Korea Governor Rhee Chang-yong (referred to as 신현송 in the prompt, but the actual Governor is 이창용 - wait, let me check the name in the prompt. The prompt says \"신현송 한은 총재\". This seems to be a hallucination or error in the user's prompt title, as the current governor is Rhee Chang-yong. However, the transcript content clearly discusses a Monetary Policy Committee meeting, interest rate decisions, inflation, growth, Middle East war, etc. I must summarize the content of the transcript provided, regardless of the name error in the title).\nTask: Summarize the transcript in Korean.\nLength: Approximately 500 characters (Korean characters).\nConstraints: Korean ONLY (no English), 3-5 sentences for the core summary.\nKey Content Points:\nInterest rate decision: Kept at current level.\nReasoning: High uncertainty due to the Middle East war, need to monitor impact on growth and inflation despite inflationary pressure and financial stability risks.\nDissenting opinion: Two committee members suggested a rate hike to 2.75%.\nEconomic outlook: Inflation and growth forecasts raised due to Middle East situation and semiconductor cycle.\nFuture direction: Need to raise rates at an appropriate time in the future, depending on data regarding inflation pressure, growth trends, and financial stability (exchange rates, housing prices, household debt).\n2.  Drafting the Summary (Internal Monologue & Iteration):\nAttempt 1 (Mental Outline): The Bank of Korea kept the base rate unchanged due to uncertainties like the Middle East war, even though inflation risks are rising and growth is better than expected. Two members dissented, wanting a hike. Forecasts for inflation and growth were raised. However, the committee decided to wait and see how things unfold. In the future, a rate hike will be necessary because inflation will likely stay above the target and growth is improving, along with financial stability risks like exchange rates and housing prices. The timing will depend on future data.\nAttempt 2 (Translating to Korean & Refining):\n금융통화위원회는 중동 전쟁의 불확실성과 그 영향을 점검하기 위해 기준금리를 현 수준에서 동결하기로 결정했습니다. 비록 물가 상승 압력이 커지고 금융 안정 리스크가 지속되고 있지만, 중동 사태의 향후 전개를 지켜보는 것이 바람직하다고 판단했기 때문입니다. 이번 회의에서는 장영성 위원과 유상대 위원이 금리 인상을 주장하는 등 일부 이견이 있었으며, 물가와 성장 전망치는 중동 상황과 반도체 경기 확장을 반영해 상향 조정되었습니다. 한은 총재는 향후 물가 상승률이 목표치를 웃돌고 성장세가 견조하며 가계부채와 주택 가격 등 금융 안정 리스크가 여전한 점을 고려할 때 적절한 시기에 금리를 인상할 필요가 있다고 밝혔습니다. 다만 금리 인상의 시기와 속도는 데이터를 통해 물가 압력과 경기 흐름을 면밀히 점검하며 결정하겠다고 덧붙였습니다.\nChecking Character Count:\nThe draft looks good. Let's count characters roughly.\nSentence 1: 금융통화위원회는... 결정했습니다. (approx 50 chars)\nSentence 2: 비록... 판단했기 때문입니다. (approx 60 chars)\nSentence 3: 이번 회의에서... 조정되었습니다. (approx 70 chars)\nSentence 4: 한은 총재는... 밝혔습니다. (approx 80 chars)\nSentence 5: 다만... 덧붙였습니다. (approx 50 chars)\nTotal is around 300-350 characters. The prompt asks for \"500ja nae-oe\" (around 500 characters). I need to expand slightly to add more detail from",
+          "db_saved": true
+        },
+        {
+          "title": "한은 신현송 총재 첫 금통위, 기준금리 동결 결정 / YTN",
+          "video_id": "TzpoU2ZjTW4",
+          "views": 409,
+          "upload_date": "2026-05-28",
+          "url": "https://www.youtube.com/watch?v=TzpoU2ZjTW4",
+          "subtitle_summary": "1.  Analyze the Request:\nSource Material: A YouTube video transcript about the Bank of Korea's decision to freeze the base interest rate.\nTitle: \"한은 신현송 총재 첫 금통위, 기준금리 동결 결정 / YTN\" (Bank of Korea Governor Shin Hyun-song's first Monetary Policy Committee meeting, decision to freeze base rate / YTN).\nTask: Summarize the transcript in Korean.\nLength: Approximately 500 characters (Korean characters).\nConstraint 1: MUST respond ONLY in Korean.\nConstraint 2: Do NOT use English at all.\nConstraint 3: Summarize core content in 3-5 sentences.\n2.  Analyze the Transcript Content:\nKey Event: Bank of Korea (BOK) Governor Shin Hyun-song's first Monetary Policy Committee meeting resulted in freezing the base rate at 2.5% annually.\nContext: This is the 8th consecutive freeze since July last year.\nReasoning: Ongoing high inflation and high exchange rates due to the Middle East war (Iran war mentioned). Producer and consumer prices spiked last month.\nVoting: 5 members voted for freeze, 2 members voted for hike (minority opinion).\nFuture Outlook: Governor Shin is known for hawkish tendencies. Market expectations suggest 1-2 rate hikes in the second half of the year. The median forecast for the rate in 6 months is 3.0% (0.5%p higher than current).\nEconomic Forecasts:\nGrowth rate raised from 2.0% (Feb) to 2.6%. Factors: Semiconductor exports (+), government budget (+), stock market (+), Middle East war (-).\nConsumer inflation raised from 2.2% (Feb) to 2.7%. Factors: High exchange rates, government extra budget, rising household debt.\nStock Market (Secondary info): KOSPI started lower, foreign investors selling for 15 consecutive days. (This is less critical to the main economic policy summary but good context).\n3.  Drafting the Summary (Iterative Process):\nDraft 1 (Mental Outline): Governor Shin Hyun-song held his first meeting and froze the rate at 2.5%. This is the 8th freeze. Reasons are high inflation and exchange rates due to war. 5 voted freeze, 2 voted hike. Growth forecast raised to 2.6%, inflation raised to 2.7%. Hikes are expected later this year.\nDraft 2 (Writing in Korean): 한국은행 신현송 총재가 취임 후 첫 금융통화위원회에서 기준금리를 연 2.5%로 동결하기로 결정했습니다. 이는 지난해 7월 이후 8회 연속 동결로, 이란 전쟁 여파로 인한 고물가와 고환율 상황이 지속되는 것이 주된 이유입니다. 금통위원 7명 중 5명이 동결을, 2명이 인상을 주장했으며, 시장에서는 하반기에 금리 인상이 단행될 것이라는 전망이 힘을 얻고 있습니다. 한은은 올해 경제성장률 전망치를 2.6%로 상향 조정한 반면, 소비자물가 상승률은 2.7%로 상향 조정하여 물가 불안 요인을 경계했습니다. 현재 가계부채 증가와 정부 추경 집행 등이 물가 상승 압력으로 작용하고 있어 향후 통화 정책 방향에 귀추가 주목됩니다.\n4.  Review and Refine (Checking Constraints):\nLanguage: Korean only? Yes.\nEnglish: None? Yes.\nLength: Let's check character count.\n\"한국은행 신현송 총재가 취임 후 첫 금융통화위원회에서 기준금리를 연 2.5%로 동결하기로 결정했습니다.\" (43 chars)\n\"이는 지난해 7월 이후 8회 연속 동",
+          "db_saved": true
+        }
+      ],
+      "max": 4.645,
+      "min": 0.0,
+      "nb_score": 46450.1222,
+      "avg_views": 374.0,
+      "total_views": 748
+    },
+    {
+      "keyword": "한미연합사 전작권 전환",
+      "is_fixed": false,
+      "views": [
+        66,
+        1265
+      ],
+      "video_count": 2,
+      "videos": [
+        {
+          "title": "[브레이킹 나우] 주한미군, 전작권 조기 전환되면 한미연합사령부 해체 가능성 있다고?! 주한미군이 제시한 3가지 조건은?!",
+          "video_id": "4hrj3XM-bNs",
+          "views": 66,
+          "upload_date": "2026-05-28",
+          "url": "https://www.youtube.com/watch?v=4hrj3XM-bNs",
+          "subtitle_summary": "1.  Analyze the Request:\nLanguage: Korean ONLY (no English allowed).\nTask: Summarize the provided YouTube subtitle text.\nLength: Around 500 characters (Korean characters).\nStructure: 3-5 sentences for the core content.\nSource Text: A transcript discussing the transfer of Operational Command (OPCON) from the US to South Korea, potential dissolution of the ROK-US Combined Forces Command (CFC), conditions set by USFK, and differing views between the South Korean President (Lee Jae-myung - wait, need to check this context, the transcript says \"Lee Jae-myung President\" but he is currently the opposition leader, this might be a transcript error or a specific context in the video, but I must summarize based only on the provided text) and USFK's assessment.\n2.  Analyze the Source Text:\nTopic: Early transfer of Wartime Operational Control (OPCON) and potential changes to the ROK-US Combined Forces Command structure.\nKey Report: Chosun Ilbo exclusive report.\nUSFK Stance: If OPCON is transferred without meeting military conditions, the CFC might be dissolved.\nThree Conditions: 1. ROK military's ability to lead combined defense. 2. Ability to respond to North Korean nuclear/missile threats. 3. Stable security environment on the Korean Peninsula and within the alliance.\nPresident's Stance (Text says Lee Jae-myung): Claims there will be no problem even if OPCON is transferred early.\nUSFK Assessment: Conditions might be met by Q1 2029 at the earliest.\nReasoning: Considering North Korean threats and China/Russia variables, the ROK military lacks the command capability by US standards. Transferring OPCON now would make wartime operations difficult.\nAlternative Structure: If CFC is dissolved, US and ROK forces would operate under separate commands during wartime.\nUS Position: Not opposing the transfer itself, but emphasizing readiness.\n3.  Drafting the Summary (Iterative Process):\nDraft 1 (Mental Outline): The text discusses the early transfer of OPCON. USFK suggested that if conditions aren't met, the Combined Forces Command might be dissolved. The conditions are ROK's lead capability, NK threat response, and stable security environment. While the President says early transfer is fine, USFK thinks 2029 is realistic. If dissolved, separate commands would operate.\nDraft 2 (Translating to formal Korean): 전작권 조기 전환을 둘러싼 논의에서 주한미군이 한미연합사령부 해체 가능성을 시사했습니다. 조선일보 보도에 따르면, 군사적 필요 조건 미충족 시 전작권 전환은 연합사 해체로 이어질 수 있다고 경고했습니다. 주한미군이 제시한 조건은 한국군의 연합방위 주도 능력, 북한 핵미사일 대응 능력, 안보 환경 안정 등 세 가지입니다. 이 대통령은 전작권 전환에 문제가 없다고 했으나, 미군은 2029년 1분기나 조건 달성이 가능하다고 봅니다. 미군은 한국군의 지휘 능력이 부족하다고 판단하며, 연합사 해체 시 양군이 각자 작전을 전개하는 방식을 검토하고 있습니다.\nRefining and Checking Constraints:\nLanguage: Korean only? Yes.\nLength: Let's check character count. Draft 2 looks a bit short, maybe around 200-250 characters. The prompt asks for \"500 characters around\" (500자 내외). I need to expand slightly to provide more detail, but keep it concise enough to fit the \"around 500\" range (usually meaning 400-600 is acceptable).\nCorrection on \"Lee Jae-myung President\": The transcript explicitly says \"이재명 대통령\" (President Lee Jae-myung). Even though in reality he is not the president (as of current real-world knowledge), I must summarize the provided text. However, usually, summarization tasks imply factual accuracy based on the source. The source text has a likely error or is from a specific hypothetical scenario video. I will refer to",
+          "db_saved": true
+        },
+        {
+          "title": "(긴급뉴스) 美,전작권 전환시 한미연합사 해체 ! 이재명 욕심에 한미 동맹 붕괴 위기 ! /2026.05.28",
+          "video_id": "TV6y4DQddjM",
+          "views": 1265,
+          "upload_date": "2026-05-28",
+          "url": "https://www.youtube.com/watch?v=TV6y4DQddjM",
+          "subtitle_summary": "1.  Analyze the Request:\nLanguage: Korean ONLY (no English allowed).\nTask: Summarize the provided YouTube video subtitles.\nLength: Around 500 characters (Korean characters).\nStructure: 3-5 sentences for the core content.\nSource Material: A transcript from a YouTube video titled \"(긴급뉴스) 美,전작권 전환시 한미연합사 해체 ! 이재명 욕심에 한미 동맹 붕괴 위기 ! /2026.05.28\". Note: The date in the title is futuristic (2026), but the content discusses current political issues (Lee Jae-myung, OPCON transition, etc.). The transcript is highly critical of the opposition (Lee Jae-myung) and the current government's stance on OPCON (Wartime Operational Control) transition.\n2.  Analyze the Source Text:\nIntro: Upcoming local elections, \"blackout period\" for polls, domestic political confusion.\nInternational Context: US-Iran conflict, Hormuz Strait incident involving a Korean ship.\nCriticism: The speaker criticizes the \"Lee Jae-myung regime\" (implying he is in power or influential) for attacking Israel/US instead of supporting the US, and not condemning Iran.\nKey Issue: US request for participation in Hormuz ignored. Instead, demands for nuclear submarines and OPCON transition.\nMajor Conflict: US statement regarding OPCON transition. If pushed prematurely, the ROK-US Combined Forces Command (CFC) could be dissolved.\nDetails: US sees conditions met by 2029, Korean government thinks next year is possible. Lee Jae-myung claims no issues with transition.\nDefense Ministry stance: CFC will remain, following the 2018 agreement (Future Combined Forces Command led by Korean general).\nEnding: \"However, Mi...\" (cut off).\n3.  Identify Key Points for Summary:\nThe video criticizes the current political stance regarding the US-Iran conflict and the Hormuz Strait incident, claiming the Korean government is anti-US and pro-Iran.\nThe central issue is the conflict over the early transition of Wartime Operational Control (OPCON).\nThe US has warned that premature OPCON transition could lead to the dissolution of the ROK-US Combined Forces Command.\nThere is a discrepancy between the US view (conditions met by 2029) and the Korean government's view (possible next year).\nThe speaker argues this situation threatens the ROK-US alliance due to political greed.\n4.  Drafting the Summary (Iterative Process):\nDraft 1 (Mental Outline): The video discusses the crisis in the ROK-US alliance due to the push for OPCON transition. It mentions the US warning that early transition might dissolve the Combined Forces Command. It criticizes the government for ignoring US requests regarding the Hormuz Strait while demanding OPCON transfer. It highlights the gap between US and Korean assessments of readiness.\nDraft 2 (Writing in Korean): 이 영상은 이재명 정권이 미국의 요청을 무시하고 전작권 전환을 강행하려 해 한미 동맹이 위기에 처했다고 주장합니다. 특히 미국이 전작권이 조기 전환될 경우 한미연합사가 해체될 수 있다고 경고했음에도 불구하고, 한국 정부는 내년 전환이 가능하다고 판단하고 있어 갈등이 심화되고 있습니다. 미국은 전작권 전환 조건이 2029년에나 충족될 것으로 보지만, 이재명 대표는 전환에 문제가 없다고 주장하며 입장 차를 보이고 있습니다. 또한 호르무즈 해협 사태와 관련해 미국의 편을 들기는커녕 이란을 두둔하는 등 외교적 실패를 저지르고 있다고 비판합니다. 결과적으로 이러한 무리한 전작권 전환 시도는 한미 연합방위 체제를 붕괴시킬 수 있는 중대한 위기라는 내용입니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 2.7801,
+      "min": 2.375,
+      "nb_score": 1.1706,
+      "avg_views": 665.5,
+      "total_views": 1331
+    },
+    {
+      "keyword": "K컬처 재정의 400조원",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "현대모비스 자기주식 소각",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "서소문 고가차도 붕괴 사고",
+      "is_fixed": false,
+      "views": [
+        718
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "'서소문 고가차도 붕괴' 사흘째...이 시각 사고현장 / YTN",
+          "video_id": "KWWvKEyKHmo",
+          "views": 718,
+          "upload_date": "2026-05-28",
+          "url": "https://www.youtube.com/watch?v=KWWvKEyKHmo",
+          "subtitle_summary": "1.  Analyze the Request:\nSource Material: YouTube video subtitle text about the Seosomun Overpass collapse.\nTitle: \"'Seosomun Overpass Collapse' Day 3... Accident Site at This Time / YTN\".\nContent: The overpass collapsed 3-4 days ago, but recovery work hasn't started. Traffic is controlled, and train operations (KTX) are affected. Reporters are at the scene and Seoul Station. The structure is unstable. A meeting was held to discuss changing the demolition method from crane lifting to breaking the structure (pressing/crushing). Another meeting is scheduled for 3 PM to finalize the plan.\nConstraints:\nLanguage: Korean ONLY (no English).\nLength: Around 500 characters (Korean characters).\nStructure: 3-5 sentences summarizing key points.\n2.  Analyze the Source Text (Subtitle Content):\nKey Fact 1: It's been 3-4 days since the Seosomun Overpass collapsed, but recovery/cleanup hasn't started yet.\nKey Fact 2: The site is under control due to collapse risk, affecting nearby roads and train lines (KTX).\nKey Fact 3: The overpass deck and steel structures are still in a dangerous, sunken state.\nKey Fact 4: Relevant authorities (Seoul City, Ministry of Labor, etc.) held a meeting to discuss demolition methods.\nKey Fact 5: They are considering changing the method from crane lifting to \"breaking/crushing\" (pressing) due to safety concerns. A final decision is expected after a 3 PM meeting.\n3.  Drafting the Summary (Iterative Process):\nDraft 1 (Mental Outline): 서소문 고가차도가 무너진 지 사흘이 지났지만 수습 작업은 시작되지 않았다. 현장은 붕괴 위험이 있어 통제 중이며 KTX 운행도 멈췄다. 관계 기관은 철거 방식을 논의했는데, 크레인 대신 구조물을 부수는 방식으로 변경을 검토했다. 오후 3시 회의 후 구체적인 계획이 나올 예정이다.\nRefining for Length and Quality (Korean):\n서소문 고가차도 붕괴 사고가 발생한 지 사흘이 지났으나 현장 수습 작업은 아직 시작되지 않은 상황입니다. 붕괴 위험이 여전하여 현장 주변 도로는 전면 통제되었고, KTX 등 열차 운행에도 차질이 빚어지고 있습니다. 관계 기관들은 철거 방식을 기존 크레인 인양 방식에서 구조물을 부수는 방식으로 변경하는 방안을 논의했습니다. 오늘 오후 3시 회의를 마친 뒤에야 구체적인 철거 진행 여부와 방식이 결정될 것으로 보입니다.\n4.  Checking Constraints:\nLanguage: Korean only? Yes.\nNo English: Checked.\nLength: Let's count characters (including spaces).\n\"서소문 고가차도 붕괴 사고가 발생한 지 사흘이 지났으나 현장 수습 작업은 아직 시작되지 않은 상황입니다. 붕괴 위험이 여전하여 현장 주변 도로는 전면 통제되었고, KTX 등 열차 운행에도 차질이 빚어지고 있습니다. 관계 기관들은 철거 방식을 기존 크레인 인양 방식에서 구조물을 부수는 방식으로 변경하는 방안을 논의했습니다. 오늘 오후 3시 회의를 마친 뒤에야 구체적인 철거 진행 여부와 방식이 결정될 것으로 보입니다.\"\n> Count: ~160 characters (excluding spaces). This is a bit short for \"500자 내외\" (around 500 characters). Usually, \"500자 내외\" allows for a bit more detail. I should expand slightly to provide a",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "KTX 철도 붕괴 사고",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "이란 대함미사일 나무호",
+      "is_fixed": false,
+      "views": [
+        10323
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "🔴LIVE '나무호 피격' 23일 만에 이란 지목..이란 대사 초치한 외교부 / 사과는커녕 \"절대 개입한 적 없다\" 발뺌 | SBS 뉴스속보",
+          "video_id": "cVbbpWPDUkQ",
+          "views": 10323,
+          "upload_date": "2026-05-28",
+          "url": "https://www.youtube.com/watch?v=cVbbpWPDUkQ",
+          "subtitle_summary": "1.  Analyze the Request:\nSource Material: A YouTube video transcript about the Korean tanker \"Kotowas\" (referred to as '나무호' in the transcript, likely a transcription error for '코토와스' or similar, but I must stick to the provided text context or correct it if it's a clear error, though the prompt asks to summarize the provided text. Actually, '나무호' seems to be a transcription error for '코토와스' (Kotowas), but I should focus on the content provided. Wait, looking at the transcript, it says \"한국 선방 나무호\". It's clearly a transcription error for \"한국 선박 코토와스\". However, for the summary, I should use the terms in the transcript or the correct terms if the context is obvious. Let's look at the context. It's about a Korean tanker attacked near the Strait of Hormuz. The transcript says \"나무호\" repeatedly. I will use \"나무호\" as per the source text to be faithful, or \"한국 선박\" (Korean vessel) to be safe. Let's stick to the facts presented in the transcript: Government investigation results, Iran-linked missile, summoning the Iranian ambassador.\nLanguage: Korean ONLY. No English.\nLength: Around 500 characters (Korean characters).\nStructure: 3-5 sentences summarizing the core content.\n2.  Analyze the Transcript Content:\nEvent: Korean tanker 'Kotowas' (transcript says '나무호') attacked in the Strait of Hormuz 23 days ago.\nInvestigation Result: Government concluded the attacking flying object was likely an Iranian-developed anti-ship missile (Noor series).\nEvidence: Blue-painted debris matching Noor missile colors, unexploded warhead remains similar to Noor, parts marked with Iranian manufacturer engravings.\nAmbiguity: Cannot specifically identify if it was the Iranian government or Revolutionary Guards. Cannot pinpoint launch origin (land, ship, air). Hard to confirm intent (deliberate vs. accidental).\nAction: Government summoned the Iranian ambassador to South Korea immediately after the announcement.\nIran's Stance: Iran has denied involvement (\"absolutely no involvement\").\nGovernment's Demand: Protest delivered, demanded responsible measures and prevention of recurrence.\n3.  Drafting the Summary (Iterative Process):\nDraft 1 (Mental Outline): The government announced investigation results on the attack of the Korean tanker 'Namoo-ho' (Kotowas) 23 days after the incident. They concluded the weapon used was likely an Iranian anti-ship missile based on debris analysis. However, they couldn't specify if it was the Iranian government or the Revolutionary Guards, nor the exact launch point. Following this, the government summoned the Iranian ambassador to protest and demand accountability, while Iran continues to deny involvement.\nDraft 2 (Translating to Korean & Refining): 정부가 호르무즈 해협에서 피격된 한국 선박 나무호(코토와스) 사건 발생 23일 만에 조사 결과를 발표했다. 정부는 공격에 사용된 비행체가 이란에서 개발된 누르 계열 대함 미사일일 가능성이 높다고 결론 내렸다. 잔해 분석 결과 미사일 색상과 부품 각인 등이 이란 제조사와 일치한다는 증거를 제시했다. 다만 구체적인 공격 주체가 정부인지 혁명수비대인지, 발사 원점은 어디인지 특정하기는 어렵다고 밝혔다. 이에 정부는 주한 이란 대사를 초치해 강력 항의하고 재발 방지를 요구했으나, 이란 측은 개입 사실을 부인하며 거부감을 드러냈다.\nChecking Length and Constraints:\nLanguage: Korean only? Yes.\nLength: Let's count characters.\n\"정부가 호르무즈 해협에서 피격된 한국 선박 나무호(코토와스) 사건 발생 23일 만에 조사 결과를 발표했다. 정부는 공격에 사용된 비행체가 이란에서 개발된 누르 계열 대함 미",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "카카오택시 파업 예고",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "부동산 정책 집값 전세",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "리그오브레전드 챔피언십",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "달 탐사 최적 항로",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "만성 피로 카페인 수면",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "뇌 학습 도파민 연구",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "스타벅스 탱크데이 사과",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    }
+  ]
+}

@@ -82,8 +82,6 @@ app.use(limiter);
 app.use(compression()); // Gzip 압축 활성화
 const PORT = process.env.PORT || 3000;
 const OLLAMA_BASE_URL = process.env.OLLAMA_BASE_URL || 'http://211.45.162.155:11434';
-const AI_TUNNEL_URL = (process.env.AI_TUNNEL_URL || 'http://211.45.162.155:11434').replace(/\/$/, '');
-const AI_TUNNEL_FILE = process.env.AI_TUNNEL_FILE || path.join(__dirname, 'data', 'ai-tunnel-url.json');
 const AI_CHAT_MODEL = process.env.AI_CHAT_MODEL || process.env.OLLAMA_MODEL || 'glm-5:cloud';
 
 // Ollama Web Search API 설정
@@ -935,21 +933,6 @@ function safeJsonParse(text) {
     }
 }
 
-function getAiTunnelUrl() {
-    try {
-        if (fs.existsSync(AI_TUNNEL_FILE)) {
-            const data = safeJsonParse(fs.readFileSync(AI_TUNNEL_FILE, 'utf8'));
-            const url = data?.url ? String(data.url).trim().replace(/\/$/, '') : '';
-            if (/^https:\/\/[a-z0-9-]+\.trycloudflare\.com$/i.test(url)) {
-                return url;
-            }
-        }
-    } catch (error) {
-        console.warn('[ai-tunnel] failed to read tunnel file:', error.message);
-    }
-    return AI_TUNNEL_URL;
-}
-
 // 홈페이지
 app.post('/api/silverkmk-ai', async (req, res) => {
     try {
@@ -984,7 +967,6 @@ app.get('/api/ollama-health', async (req, res) => {
     try {
         let response = null;
         let source = OLLAMA_BASE_URL;
-        const tunnelUrl = getAiTunnelUrl();
 
         try {
             response = await fetch(`${OLLAMA_BASE_URL.replace(/\/$/, '')}/api/tags`, { signal: controller.signal });
@@ -992,19 +974,12 @@ app.get('/api/ollama-health', async (req, res) => {
             console.warn('[ollama-health] local candidate failed:', error.message);
         }
 
-        if ((!response || !response.ok) && tunnelUrl) {
-            response = await fetch(`${tunnelUrl}/api/tags`, { signal: controller.signal });
-            source = tunnelUrl;
-        }
-
         const text = await response.text();
         const payload = safeJsonParse(text) || { raw: text };
         return res.status(200).json({
             ok: true,
             server: 'chamsosik-ai-chat',
-            mode: response.ok
-                ? (source === tunnelUrl ? 'cloudflare-quick-tunnel' : 'server-local-ollama')
-                : 'server-built-in-fallback',
+            mode: response.ok ? 'server-local-ollama' : 'server-built-in-fallback',
             ollamaUrl: source,
             defaultModel: AI_CHAT_MODEL,
             ollama: response.ok ? 'ok' : `error:${response.status}`,
@@ -1030,18 +1005,8 @@ app.get('/api/ollama-proxy-info', (req, res) => {
         ok: true,
         proxy: 'server-local-ai',
         target: OLLAMA_BASE_URL,
-        tunnel: getAiTunnelUrl(),
-        tunnelFile: AI_TUNNEL_FILE,
         model: AI_CHAT_MODEL,
         routes: ['/api/ollama-health', '/api/ollama-chat']
-    });
-});
-
-app.get('/api/ai-tunnel-url', (req, res) => {
-    return res.json({
-        ok: true,
-        url: getAiTunnelUrl(),
-        file: AI_TUNNEL_FILE
     });
 });
 
@@ -1216,17 +1181,11 @@ app.post('/api/smart-chat', async (req, res) => {
             
             let response = null;
             let source = OLLAMA_BASE_URL;
-            const tunnelUrl = getAiTunnelUrl();
             
             try {
                 response = await postAiChatCandidate(OLLAMA_BASE_URL, chatPayload, controller.signal);
             } catch (e) {
                 console.warn('[smart-chat] local candidate failed:', e.message);
-            }
-            
-            if ((!response || !response.ok) && tunnelUrl) {
-                response = await postAiChatCandidate(tunnelUrl, chatPayload, controller.signal);
-                source = tunnelUrl;
             }
             
             if (response && response.ok) {
@@ -1263,17 +1222,11 @@ app.post('/api/smart-chat', async (req, res) => {
         
         let response = null;
         let source = OLLAMA_BASE_URL;
-        const tunnelUrl = getAiTunnelUrl();
         
         try {
             response = await postAiChatCandidate(OLLAMA_BASE_URL, chatPayload, controller.signal);
         } catch (e) {
             console.warn('[smart-chat] local candidate failed:', e.message);
-        }
-        
-        if ((!response || !response.ok) && tunnelUrl) {
-            response = await postAiChatCandidate(tunnelUrl, chatPayload, controller.signal);
-            source = tunnelUrl;
         }
         
         if (response && response.ok) {
@@ -1319,9 +1272,11 @@ app.post('/api/ollama-chat', async (req, res) => {
         }
 
         const model = req.body?.model || AI_CHAT_MODEL;
+        const stream = req.body?.stream === true;  // 클라이언트에서 스트리밍 요청
+        
         const localPayload = {
             model,
-            stream: false,
+            stream,
             messages,
             options: {
                 temperature: Number(req.body?.temperature || 0.5),
@@ -1330,7 +1285,6 @@ app.post('/api/ollama-chat', async (req, res) => {
         };
         let response = null;
         let source = OLLAMA_BASE_URL;
-        const tunnelUrl = getAiTunnelUrl();
 
         try {
             response = await postAiChatCandidate(OLLAMA_BASE_URL, localPayload, controller.signal);
@@ -1338,28 +1292,49 @@ app.post('/api/ollama-chat', async (req, res) => {
             console.warn('[ollama-chat] local candidate failed:', error.message);
         }
 
-        if ((!response || !response.ok) && tunnelUrl) {
-            response = await postAiChatCandidate(tunnelUrl, localPayload, controller.signal);
-            source = tunnelUrl;
-        }
-        const text = await response.text();
-        const payload = safeJsonParse(text) || { raw: text };
-
-        if (!response.ok) {
+        if (!response || !response.ok) {
             return res.status(200).json({
                 ok: true,
                 model,
                 mode: 'server-built-in-fallback',
                 content: builtInChatReply(messages),
-                warning: `local ollama returned ${response.status}`,
-                detail: payload
+                warning: `local ollama returned ${response?.status || 'no response'}`,
+                detail: null
             });
         }
+
+        // 스트리밍 응답인 경우
+        if (stream) {
+            res.setHeader('Content-Type', 'application/x-ndjson');
+            res.setHeader('Transfer-Encoding', 'chunked');
+            
+            const reader = response.body.getReader();
+            const decoder = new TextDecoder();
+            
+            try {
+                while (true) {
+                    const { done, value } = await reader.read();
+                    if (done) break;
+                    
+                    const chunk = decoder.decode(value, { stream: true });
+                    res.write(chunk);
+                }
+                res.end();
+            } catch (streamError) {
+                console.error('[ollama-chat] stream error:', streamError.message);
+                res.end();
+            }
+            return;
+        }
+
+        // 비스트리밍 응답
+        const text = await response.text();
+        const payload = safeJsonParse(text) || { raw: text };
 
         return res.json({
             ok: true,
             model,
-            mode: source === tunnelUrl ? 'cloudflare-quick-tunnel' : 'server-local-ollama',
+            mode: 'server-local-ollama',
             source,
             content: extractChatText(payload),
             raw: payload
@@ -1487,9 +1462,8 @@ app.get('/api/ollama-chat-with-search', (req, res) => {
     });
 });
 app.post('/api/ollama-chat-with-search', async (req, res) => {
-    // 원격 서버에서는 Cloudflare Tunnel URL 사용, 로컬에서는 AI Proxy 사용
-    const tunnelUrl = getAiTunnelUrl();
-    const AI_PROXY_URL = process.env.AI_PROXY_URL || tunnelUrl || 'http://127.0.0.1:3110';
+    // AI Proxy URL (기본값: 로컬 AI 프록시)
+    const AI_PROXY_URL = process.env.AI_PROXY_URL || 'http://127.0.0.1:3110';
 
     try {
         const body = req.body || {};
@@ -1534,20 +1508,15 @@ app.post('/api/ollama-chat-with-search', async (req, res) => {
                 messages,
                 options: { temperature: Number(req.body?.temperature || 0.5), num_predict: 700 }
             };
-            const tunnelUrl = getAiTunnelUrl();
             let response = null;
             let source = OLLAMA_BASE_URL;
             try { response = await postAiChatCandidate(OLLAMA_BASE_URL, localPayload, AbortSignal.timeout(30000)); } catch (e) {}
-            if ((!response || !response.ok) && tunnelUrl) {
-                response = await postAiChatCandidate(tunnelUrl, localPayload, AbortSignal.timeout(30000));
-                source = tunnelUrl;
-            }
             if (response && response.ok) {
                 const text = await response.text();
                 const payload = safeJsonParse(text) || { raw: text };
                 return res.json({
                     ok: true, model: req.body?.model || AI_CHAT_MODEL,
-                    mode: source === tunnelUrl ? 'cloudflare-quick-tunnel' : 'server-local-ollama',
+                    mode: 'server-local-ollama',
                     content: extractChatText(payload),
                     search: { error: error.message }
                 });
@@ -1593,20 +1562,15 @@ app.post('/api/smart-chat', async (req, res) => {
                 messages,
                 options: { temperature: Number(req.body?.temperature || 0.5), num_predict: 900 }
             };
-            const tunnelUrl = getAiTunnelUrl();
             let response = null;
             let source = OLLAMA_BASE_URL;
             try { response = await postAiChatCandidate(OLLAMA_BASE_URL, localPayload, AbortSignal.timeout(30000)); } catch (e) {}
-            if ((!response || !response.ok) && tunnelUrl) {
-                response = await postAiChatCandidate(tunnelUrl, localPayload, AbortSignal.timeout(30000));
-                source = tunnelUrl;
-            }
             if (response && response.ok) {
                 const text = await response.text();
                 const payload = safeJsonParse(text) || { raw: text };
                 return res.json({
                     ok: true, model: req.body?.model || AI_CHAT_MODEL,
-                    mode: source === tunnelUrl ? 'cloudflare-quick-tunnel' : 'server-local-ollama',
+                    mode: 'server-local-ollama',
                     content: extractChatText(payload)
                 });
             }
