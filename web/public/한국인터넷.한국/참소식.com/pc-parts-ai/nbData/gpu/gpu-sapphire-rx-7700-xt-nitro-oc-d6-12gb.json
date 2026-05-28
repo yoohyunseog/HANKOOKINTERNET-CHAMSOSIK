@@ -1,0 +1,84 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-05-28T06:16:40.242+09:00",
+  "category": "GPU",
+  "id": "gpu-sapphire-rx-7700-xt-nitro-oc-d6-12gb",
+  "name": "SAPPHIRE 라데온 RX 7700 XT NITRO+ OC D6 12GB",
+  "maker": "SAPPHIRE",
+  "platform": "PCIe 4.0",
+  "estimatedPriceKrw": 579360,
+  "priceBand": "30~60만원",
+  "speedLabel": "2599MHz",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "GPU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 75,
+  "valueIndex": 12.9,
+  "aiUseScore": 49,
+  "powerWatts": 252,
+  "tags": [
+    "gaming"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "GPU",
+    "partId": "gpu-sapphire-rx-7700-xt-nitro-oc-d6-12gb",
+    "partName": "SAPPHIRE 라데온 RX 7700 XT NITRO+ OC D6 12GB",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "GPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 750,
+      "value": 172,
+      "aiFit": 490,
+      "priceEfficiency": 170,
+      "powerEfficiency": 100
+    },
+    "nbVector": [
+      100,
+      750,
+      172,
+      490,
+      170,
+      100
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 124.344,
+    "nbMin": 352.44,
+    "weightedScore": 285,
+    "nbBand": "100~499",
+    "summary": "GPU SAPPHIRE 라데온 RX 7700 XT NITRO+ OC D6 12GB 부품을 속도 중심 N/B 데이터베이스 점수 285점으로 저장했습니다."
+  },
+  "nbWeightedScore": 285,
+  "nbMax": 124.344,
+  "nbMin": 352.44,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Radeon%20RX%207700%20XT%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "3-fan, DP2.1, HDMI2.1",
+  "textRepair": null
+}

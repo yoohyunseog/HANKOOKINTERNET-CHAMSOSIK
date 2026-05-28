@@ -12,7 +12,7 @@ $remoteUser = $env:CHAMSOSIK_REMOTE_USER
 $remoteHost = $env:CHAMSOSIK_REMOTE_HOST
 $remoteTunnelFile = $env:CHAMSOSIK_REMOTE_TUNNEL_FILE
 
-if (!$port) { $port = "11434" }
+if (!$port) { $port = "3110" }
 if (!$healthPath) {
   if ($port -eq "11434") {
     $healthPath = "/api/tags"

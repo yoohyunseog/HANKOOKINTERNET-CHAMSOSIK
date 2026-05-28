@@ -1,149 +1,157 @@
 {
-    "last_updated": "2026-05-27 23:35:53",
+    "last_updated": "2026-05-28 03:27:39",
     "total_count": 5,
     "news": [
         {
+            "original_title": "엔비디아 Vera CPU 벤치마크, 일부 작업서 인텔 제온·AMD EPYC 앞서 > 하드웨어 뉴스 | 퀘이사존 QUASARZONE",
+            "translated_title": "엔비디아 'Vera' CPU, 초기 벤치마크서 인텔·AMD 압도…데이터센터 CPU 시장 지각 변동 예고",
+            "summary": "Phoronix가 공개한 엔비디아 차세대 'Vera' CPU 독점 벤치마크 결과, 일부 워크로드에서 인텔 제온과 AMD EPYC를 크게 앞서는 성능을 기록했습니다. 88개 맞춤형 Armv9.2 'Olympus' 코어에 SMT를 적용, FP8 가속과 1.2TB/s 메모리 대역폭 등 차별화된 설계가 돋보입니다. 엔비디아는 이미 주요 하이퍼스케일러와 협력해 Vera 랙을 공급 중이며, 올해 CPU 매출에서 AMD에 버금가는 규모를 목표로 하고 있습니다.",
+            "full_post": "**엔비디아 'Vera' CPU, 초기 벤치마크에서 깜짝 성능…데이터센터 CPU 시장 판도 바꾸나**\n\nPhoronix가 공개한 엔비디아의 최신 'Vera' CPU 독점 테스트 결과가 화제입니다. Arm 기반의 이 맞춤형 CPU는 데이터센터 시장에서 인텔 제온과 AMD EPYC를 일부 작업에서 확실히 앞서는 성능을 보여주었습니다.\n\n### 주요 사양 및 특징\n- **코어 구성**: 88개의 맞춤형 Armv9.2 'Olympus' 코어, 물리적 리소스 분할로 176스레드 지원 (SMT 탑재)\n- **AI 가속**: 네이티브 FP8 처리, 6x128비트 SVE2 구현으로 AI 워크로드를 CPU에서 직접 실행\n- **메모리**: 최대 1.5TB LPDDR5X (SOCAMM2), 1.2TB/s 대역폭\n- **패브릭**: 2세대 확장형 일관성 패브릭, 3.4TB/s 바이섹션 대역폭으로 칩렛 지연 문제 해결\n- **TDP**: CPU 450W, 메모리 풀 50W (768GB 기준)\n\n### 벤치마크 결과 (기하 평균)\n- AMD 최신 EPYC (Turin/ Turin Dense 계열) 대비 **약 11% 우위**\n- 싱글 소켓 Intel Xeon Granite Rapids 6980P 대비 **약 55.3% 앞섬**\n- 듀얼 소켓 구성보다도 높은 성능 기록 (일부 워크로드에서 소켓 간 확장성 문제 시사)\n- 엔비디아 1세대 'Grace' CPU (Arm Neoverse V2)보다 큰 폭으로 개선\n\n### 시장 전망 및 의미\n- 엔비디아는 Vera와 Grace CPU를 합쳐 약 200억 달러 규모로 판매 예상, 이는 2,000억 달러 규모의 독립형 CPU TAM 진출을 의미합니다.\n- 주요 하이퍼스케일러 (AWS, Azure, GCP 등)와 이미 협력해 Vera 랙을 공급 중이며, 타사 고객 대상 서비스 도입도 증가 중입니다.\n- SMT를 지원하는 맞춤형 ARM 코어는 현재 시장에서 거의 유일한 사례 (인텔은 차세대 Xeon에서 SMT 제외 예정).\n\n> ※ 본 기사는 해외 뉴스를 번역한 것으로, 퀘이사존의 공식 견해는 아닙니다.",
+            "url": "https://quasarzone.com/bbs/qn_hardware/views/2018054",
+            "category": "CPU",
+            "importance": "High",
+            "comment_mood": "Positive",
+            "comment_summary": "댓글은 대체로 긍정적이며 엔비디아의 CPU 기술 발전에 놀라움을 표현했습니다. 특히 'Olympus' 코어의 SMT 지원, 독자 설계로의 전환, 그리고 AMD 매출에 필적할 판매 전망에 대한 기대감이 두드러졌습니다. 일부 유저는 '대단하다', '괴물을 만들어 냈다'는 반응을 보였고, 기술적 디테일(ARM 레퍼런스 대비 커스텀)을 짚는 의견도 있었습니다.",
+            "product_tags": [
+                "Vera CPU",
+                "Grace CPU",
+                "Olympus core",
+                "Armv9.2",
+                "SVE2",
+                "LPDDR5X",
+                "SOCAMM2",
+                "Intel Xeon Granite Rapids 6980P"
+            ],
+            "reaction_keywords": [
+                "엔비디아",
+                "베라",
+                "CPU",
+                "벤치마크",
+                "SMT",
+                "데이터센터",
+                "ARM",
+                "커스텀 코어",
+                "성능 우위"
+            ],
+            "visible_comment_count": 6,
+            "collected_at": "2026-05-28 03:21:25"
+        },
+        {
             "original_title": "Nvidia offers restricted access to Vera CPU in first round of Linux benchmarks - 88-core monster competes with or beats Epyc and Xeon in selected tests | Tom's Hardware",
-            "translated_title": "엔비디아 '베라' CPU, 첫 리눅스 벤치마크서 AMD EPYC·인텔 제온과 어깨 나란히 – 88코어 괴물의 탄생",
-            "summary": "엔비디아가 자체 설계한 서버용 CPU '베라(Vera)'의 첫 번째 공식 리눅스 벤치마크 결과가 공개됐습니다. 88코어로 구성된 이 칩은 AMD EPYC '투린' 및 인텔 '그래나이트 래피즈' 제온 프로세서와 경쟁하며, 특히 싱글 스레드 성능과 일부 워크로드에서 기존 ARM 서버 CPU를 뛰어넘는 경쟁력을 보여줬습니다. 엔비디아가 자체 ARM 코어 '올림푸스'를 탑재한 첫 세대 서버 CPU로서 놀라운 성과라는 평가입니다.",
-            "full_post": "**엔비디아 베라 CPU, 첫 리눅스 벤치마크 공개 – AMD·인텔과 경쟁 가능 확인**\n\nIT 전문 매체 Phoronix가 엔비디아 본사(샌타클래라)에서 진행한 첫 번째 베라(Vera) CPU 벤치마크 결과를 독점 보도했습니다. 엔비디아가 직접 선별한 테스트이지만, 주요 지표에서 AMD EPYC 및 인텔 제온과 대등하거나 일부 항목에서는 앞서는 모습을 보였습니다.\n\n**주요 특징**\n- **88코어 풀 커스텀 ARM CPU**: 엔비디아가 12년 전 테그라 K1 '덴버' 코어 이후 두 번째로 자체 설계한 서버급 ARM 코어 '올림푸스(Olympus)' 탑재\n- **TDP 450W + SOCAMM2 메모리 50W 추가 소비** (경쟁 제품 대비 우수한 전력 효율 가능성)\n- **메인라인 리눅스 커널 지원** – 별도의 디바이스 트리나 해킹성 드라이버 불필요\n\n**벤치마크 결과 하이라이트**\n- 코드 컴파일(Gem5, 리눅스 커널 빌드)에서 AMD EPYC 9575F와 경쟁, 특히 코어당 성능에서 우위를 보임\n- AV1 인코딩, Python, Java OpenJDK, 파일 압축, LuaJIT, ClickHouse 데이터베이스 등 대부분 테스트에서 경쟁력 확보\n- 기하 평균 기준 일부 워크로드에서 AMD·인텔을 확실히 앞섬 (LuaJIT FFT, ClickHouse, Renaissance JVM)\n- 싱글 스레드 성능에서 과거 ARM 서버 CPU의 한계를 극복 – 'x86_64에 가장 근접한 ARM CPU'라는 평가\n\n**단점 및 한계**\n- 엔비디아가 '목표 시장'에 특화된 테스트만 허용, 아직 일반 워크로드에 대한 완전한 평가는 불가\n- 전력 효율 데이터는 아직 미공개 (실제 전력 소모는 TDP와 차이 있을 수 있음)\n- AMD·인텔도 차세대 칩(256코어 Zen 6 '베니스', 288코어 '클리어워터 포레스트')을 준비 중\n\n**결론**: 베라는 첫 세대 서버용 자체 ARM CPU로서 AMD·인텔의 주류 x86 제품군에 실질적인 도전장을 던졌습니다. 소프트웨어 지원도 우수해 향후 데이터센터 및 AI 인프라에서 주목할 만한 플레이어로 떠오를 가능성이 큽니다.",
+            "translated_title": "엔비디아, 첫 번째 리눅스 벤치마크에서 베라 CPU 일부 공개 – 88코어 괴물, AMD EPYC·인텔 제온과 격돌",
+            "summary": "엔비디아가 자체 설계한 서버용 CPU '베라(Vera)'의 첫 번째 리눅스 벤치마크 결과가 공개되었습니다. 88코어의 '올림푸스(Olympus)' 커스텀 ARM 코어를 탑재한 베라는 코드 컴파일, 데이터베이스, AV1 인코딩 등 다수 테스트에서 AMD EPYC 및 인텔 제온과 매우 근접하거나 능가하는 성능을 보여주었습니다. 특히 싱글 스레드 성능에서 이전 ARM 서버 칩과 달리 x86과 경쟁이 가능한 수준이라는 평가입니다. 다만 초기 벤치마크는 엔비디아가 선별한 워크로드에 국한되었고, 전력 효율성에 대한 추가 검증이 필요합니다.",
+            "full_post": "**엔비디아 베라 CPU 첫 벤치마크 공개 – 커스텀 ARM 코어의 서버급 도전**\n\nIT 매체 Phoronix가 엔비디아 산타클라라 본사에서 진행한 베라(88코어) CPU의 리눅스 벤치마크 결과를 보도했습니다. 이 칩은 ARM 명령어 세트를 사용하지만, 라이선스 코어가 아닌 엔비디아가 12년 전 테그라 K1의 '덴버' 이후 두 번째로 선보인 풀 커스텀 CPU 코어 '올림푸스'를 탑재합니다.\n\n**주요 성능 포인트**\n- 코드 컴파일, 메모리 벤치마크, AV1 인코딩, 파이썬/자바 OpenJDK, 파일 압축, LuaJIT, DB 벤치 등 다양한 테스트에서 AMD EPYC '투린'(단일/듀얼 CPU) 및 인텔 '그래나이트 래피즈' 제온과 치열한 경쟁.\n- Phoronix의 마이클 라라벨은 \"ARM 또는 비-x86_64 프로세서 중 인텔/AMD와 이 정도 경쟁력을 가진 것은 본 적이 없다\"고 평가.\n- 싱글 스레드 성능: Gem5 컴파일 테스트에서 AMD EPYC 9575F에 이어 2위, 리눅스 커널 빌드에서는 서버 칩 중 1위를 기록.\n- 기하 평균 기준 전반에서 베라가 상당한 우위를 보였으며, 특히 LuaJIT FFT, ClickHouse DB, Renaissance JVM 벤치에서 압도적.\n\n**한계와 주의점**\n- 엔비디아가 '의도한 시장 및 사용 사례'로 초기 테스트 범위를 제한하여 모든 워크로드를 대표하지는 않음.\n- 전력 효율성 측정이 누락됨. 베라 TDP 450W + SOCAMM2 메모리 추가 50W, 경쟁 제온/EPYC은 플랫폼 메모리 전력 제외 500W. 실제 소비전력은 미지수.\n- 소프트웨어 지원은 긍정적: 메인라인 리눅스 커널에서 정상 작동, 별도 디바이스 트리나 해킹 드라이버 불필요.\n\n**향후 전망**\nAMD는 젠6 기반 256코어 EPYC '베니스', 인텔은 288코어 다크몬트+18A 공정의 '클리어워터 포레스트'를 준비 중이므로, 베라의 진정한 경쟁력은 차세대 칩과의 비교에서 드러날 전망입니다.",
             "url": "https://www.tomshardware.com/desktops/servers/nvidias-vera-cpu-tested-in-common-linux-benchmarks-88-core-monster-competes-or-beats-amd-epyc-intel-xeon-in-carefully-curated-test",
             "category": "CPU",
             "importance": "High",
             "comment_mood": "No visible comments",
-            "comment_summary": "아직 댓글이 없으나, 일반적인 기술 커뮤니티 반응은 '엔비디아의 ARM 서버 CPU가 이렇게 빠르게 경쟁력을 갖춘 점에 놀라움'과 '전력 효율 및 전체 워크로드 테스트가 더 필요하다는 신중론'이 혼재할 것으로 예상됩니다.",
+            "comment_summary": "기사 자체에는 댓글이 없지만, 기술 커뮤니티에서는 엔비디아의 커스텀 CPU 도전에 대한 기대와 함께, 초기 벤치마크가 선별적이라는 점에서 신중한 반응이 예상됩니다. 특히 전력 효율성 정보 부재에 대한 궁금증과 차세대 AMD/인텔 칩과의 비교를 기다리는 분위기가 주를 이룰 것으로 보입니다.",
             "product_tags": [
                 "Nvidia Vera",
-                "Olympus Core",
+                "Olympus core",
                 "AMD EPYC Turin",
                 "Intel Granite Rapids",
-                "Phoronix",
-                "ARM Server CPU"
+                "SOCAMM2",
+                "Phoronix"
             ],
             "reaction_keywords": [
-                "벤치마크",
-                "ARM서버",
                 "경쟁력",
-                "싱글스레드",
-                "커스텀코어"
+                "커스텀 코어",
+                "ARM 서버 CPU"
             ],
-            "visible_comment_count": 3,
-            "collected_at": "2026-05-27 23:28:00"
+            "visible_comment_count": 1,
+            "collected_at": "2026-05-28 03:22:26"
         },
         {
             "original_title": "Intel returns to boxed workstation CPUs with Xeon 600 — Granite Rapids WS delivers up to 86 cores, 4TB of memory, and 128 PCIe 5 lanes | Tom's Hardware",
-            "translated_title": "인텔, 3년 만에 워크스테이션 CPU 귀환! 제온 600 시리즈 최대 86코어·128 PCIe 5.0 레인 탑재",
-            "summary": "인텔이 오랜 기다림 끝에 그라나이트 래피즈-WS 기반의 새로운 제온 600 시리즈를 발표했습니다. 최대 86코어, 128개의 PCIe 5.0 레인, 4TB 메모리 및 MRDIMM 지원으로 전 세대 대비 최대 61% 향상된 멀티스레드 성능을 제공합니다. 이번 제온 600 시리즈는 박스형 제품으로 개별 판매되며, 델, 레노버, 슈퍼마이크로 등 파트너사 제품이 3월 말부터 출시될 예정입니다.",
-            "full_post": "인텔이 약 3년 만에 데스크톱 워크스테이션 시장에 복귀합니다. 그라나이트 래피즈-WS(Granite Rapid-WS) 시리즈, 정식 명칭 '제온 600(Xeon 600)'이 그 주인공입니다.\n\n**주요 스펙 및 특징**\n- **코어 구성**: 최상위 모델 제온 698X는 86코어, 제온 696X는 64코어로 전작(60코어) 대비 대폭 증가\n- **메모리**: 옥타채널(8채널) DDR5-6400 지원, 최대 4TB 용량 (AMD 쓰레드리퍼 9000 WX 대비 2배, 기본형 대비 4배)\n- **확장성**: 128개의 PCIe 5.0 레인, CXL 2.0 지원\n- **MRDIMM 지원**: 처음으로 워크스테이션에 MRDIMM(Multiplexed Rank DIMM) 도입, 최대 8000MT/s 전송률\n- **아키텍처**: 레드우드 코브(Redwood Cove) P-코어 + 하이퍼스레딩, AMX 가속기 내장 (FP16 지원)\n- **오버클러킹**: X 시리즈(언락) 모델 제공\n- **박스형 모델**: 5개 SKU가 소매 박스로 출시 (최대 64코어 제온 696X까지)\n\n**성능 향상**\n- 싱글스레드 최대 9%, 멀티스레드 최대 61% 개선 (Cinebench 2026 기준, 전작 대비)\n- SPEC Workstation 4: AI 17%, 에너지 22%, 금융 서비스 61% 등 향상\n- 블렌더 렌더링: 74% 더 빠름, Topaz Video Upscaler AI 업스케일링 29% 향상\n\n**가격 및 출시**\n- 12코어 제온 634 (499달러)부터 86코어 제온 698X (7,699달러)까지 총 11개 SKU\n- 델, 레노버, 슈퍼마이크로, 퓨젯 등 파트너사 W890 메인보드 및 시스템이 3월 말부터 제공\n\n**의미**\n인텔은 이번 제온 600 시리즈로 AMD의 쓰레드리퍼 9000에 대응하며, 박스형 워크스테이션 CPU 시장에 다시 뛰어들었습니다. 특히 MRDIMM과 대용량 메모리 지원은 HPC 및 데이터 집약적 작업에 강점을 제공할 것으로 기대됩니다.",
+            "translated_title": "인텔, 3년 만에 박스형 워크스테이션 CPU 귀환! 제온 600 (Granite Rapids WS) 최대 86코어·4TB 메모리·128개 PCIe 5.0 레인",
+            "summary": "인텔이 3년 만에 데스크톱 워크스테이션 시장에 복귀하며 '제온 600(Granite Rapids WS)' 시리즈를 공식 발표했습니다. 최대 86코어, 8채널 메모리, 128개의 PCIe 5.0 레인을 지원하며, 처음으로 MRDIMM을 워크스테이션에 도입했습니다. 11개 SKU 중 5개는 박스형 소매 제품으로 판매되며, W890 메인보드는 3월 말부터 출시될 예정입니다.",
+            "full_post": "인텔이 약 3년 만에 데스크톱 워크스테이션용 CPU 라인업을 대대적으로 리뉴얼했습니다. 그간 데이터센터에서 먼저 선보였던 Granite Rapids 아키텍처를 워크스테이션으로 확장한 '제온 600' 시리즈입니다.\n\n**주요 스펙 및 특징**\n- 모든 제온 600 칩은 동일한 '제온 600' 브랜드 아래 통합 (이전 세대는 Xeon W-2500/3500으로 분리)\n- 최상위 Xeon 698X: 86코어 / Xeon 696X: 64코어 (이전 세대 최대 60코어)\n- 메모리: 8채널 DDR5-6400 RDIMM 최대 4TB (AMD Threadripper 9000 WX 대비 2배, 일반 Threadripper 대비 4배)\n- PCIe 5.0 레인 128개, CXL 2.0 지원\n- CPU 코어당 AMX 가속기 내장 (FP16 명령어 지원)\n- **처음으로 워크스테이션에 MRDIMM(Multiplexed Rank DIMM) 지원** (상위 5개 SKU에서 최대 8000 MT/s)\n- 박스형 소매 모델 5종 (12코어 Xeon 634 ~ 64코어 Xeon 696X), 가격 $499 ~ $7,699\n- 모든 SKU 트레이(벌크) 형태로도 제공\n- K-시리즈(X시리즈)는 오버클러킹 지원\n\n**성능 비교 (인텔 주장)**\n- 이전 세대 대비 싱글스레드 최대 9%, 멀티스레드 최대 61% 향상 (Cinebench 2026 기준)\n- SPEC Workstation 4: AI 17%, 에너지 22%, 금융 61%, 생명과학 19%, 미디어/엔터테인먼트 10% 개선\n- Blender Junkshop 렌더링: Xeon 698X가 w9-3595X보다 74% 빠름\n- Topaz Labs Video Upscaler AI 업스케일링: 29% 속도 향상 (AMX 가속기 덕분)\n\n**출시 일정**\n- Dell, Lenovo, Supermicro, Puget 등 파트너사의 W890 메인보드 및 시스템이 3월 말부터 순차 출시\n- 정확한 CPU 출시일은 아직 공개되지 않음\n\n**의미와 전망**\nAMD의 Zen 5 기반 Threadripper 9000 시리즈가 시장을 선점한 가운데, 인텔은 더 높은 코어 수와 메모리 용량, MRDIMM 지원으로 대응합니다. 특히 MRDIMM은 메모리 대역폭이 중요한 HPC 환경에서 강점을 발휘할 것으로 보입니다. 다만 고가의 DDR5-6400 RDIMM 1TB 키트가 약 $28,000에 달하는 등 메모리 비용 부담은 여전합니다. 전체적으로 인텔의 워크스테이션 CPU 라인업이 다시 경쟁력을 갖추게 되었으며, AMD와의 치열한 각축전이 예상됩니다.",
             "url": "https://www.tomshardware.com/pc-components/cpus/intel-returns-to-boxed-workstation-cpus-with-xeon-600-granite-rapids-ws-delivers-up-to-86-cores-4tb-of-memory-and-128-pcie-5-lanes",
             "category": "CPU",
             "importance": "High",
             "comment_mood": "Mixed",
-            "comment_summary": "기사 내 29개의 댓글이 존재합니다. 대체로 인텔의 워크스테이션 CPU 복귀에 긍정적이지만, AMD 쓰레드리퍼 대비 가격/성능 경쟁력, MRDIMM의 실용성, 박스형 모델의 한계(86코어 제외) 등에 대한 의견이 엇갈리고 있습니다. 일부 사용자는 인텔의 늦은 대응과 여전히 높은 가격대에 회의적인 반응을 보였습니다.",
+            "comment_summary": "기사에는 29개의 댓글이 표시되어 있으나 내용을 확인할 수 없습니다. 커뮤니티 내 반응은 엇갈릴 것으로 추정됩니다. 고성능·확장성에 대한 기대감과 함께, 높은 가격, AMD Threadripper와의 경쟁 구도, MRDIMM의 실질적 활용도 등에 대한 의견이 분분할 것입니다.",
             "product_tags": [
                 "Xeon 600",
-                "Granite Rapids-WS",
                 "Xeon 698X",
                 "Xeon 696X",
+                "Xeon 674X",
                 "Xeon 634",
+                "Granite Rapids WS",
                 "MRDIMM",
-                "PCIe 5.0",
-                "Sapphire Rapids-WS"
+                "DDR5-6400 RDIMM"
             ],
             "reaction_keywords": [
-                "인텔 복귀",
                 "86코어",
+                "인텔 귀환",
                 "워크스테이션",
-                "MRDIMM",
+                "AMD 쓰레드리퍼",
                 "가격 경쟁력",
+                "MRDIMM",
                 "박스형 CPU"
             ],
             "visible_comment_count": 1,
-            "collected_at": "2026-05-27 23:30:17"
+            "collected_at": "2026-05-28 03:25:05"
         },
         {
             "original_title": "Over a year later, AMD is bringing improved FSR 4 upscaling to its older GPUs - Ars Technica",
-            "translated_title": "AMD, 1년 넘게 기다린 FSR 4 업스케일링, 드디어 구형 GPU에도 지원 확대",
-            "summary": "AMD가 지난해 RDNA4 기반 RX 9000 시리즈 전용으로 출시한 FSR 4의 하드웨어 가속 업스케일링 기능을 RDNA3 및 RDNA2 아키텍처 기반 GPU로 확장한다고 발표했다. 7월부터 RDNA3/3.5 GPU(RX 7000 시리즈, Radeon 890M 등)에, 2027년 초에는 RDNA2 GPU(RX 6000 시리즈, Steam Deck, PS5/Xbox 등)에도 지원될 예정이다. 다만 구형 GPU의 INT8 AI 가속기에서 구현한 FSR 4.1은 RDNA4 대비 성능 저하가 클 수 있으며, 모드로 구현된 사례에서도 10~20% 성능 하락이 보고되었다.",
-            "full_post": "AMD가 지난해 1월 발표한 FSR 4(FidelityFX Super Resolution 4)는 초기부터 RDNA4 아키텍처 기반의 Radeon RX 9000 시리즈 전용으로 제한되었습니다. RX 9070 XT, RX 9070, RX 9060 XT(8GB/16GB), 그리고 OEM 전용 RX 9060 등 소수의 제품에만 탑재되어, 스팀 덱 같은 게임 핸드헬드나 얇고 가벼운 노트북의 내장 GPU 사용자들은 소외받았죠.\n\n그로부터 1년이 넘은 지금, AMD 컴퓨팅 및 그래픽 부문 총괄 잭 후인(Jack Huynh)이 FSR 4의 구형 GPU 지원 계획을 공개했습니다. 핵심 내용은 다음과 같습니다.\n\n- **RDNA3 및 RDNA3.5 기반 GPU**: 2025년 7월부터 지원 시작. 대상은 Radeon RX 7000 시리즈와 Radeon 890M, Radeon 8060S 같은 내장 GPU.\n- **RDNA2 기반 GPU**: 2027년 초로 예정. 여기에는 Radeon RX 6000 시리즈, Radeon 680M, 그리고 스팀 덱의 GPU가 포함됩니다. 이로 인해 PlayStation 5와 Xbox Series X|S(RDNA2 기반)에서도 FSR 4 지원 가능성이 열렸습니다.\n- **기술적 배경**: RDNA4는 FP8 데이터 형식을 하드웨어에서 지원하는 AI 가속기를 탑재했지만, RDNA3/RDNA2는 INT8 정수 연산 가속기만 갖추고 있습니다. AMD는 FSR 4를 INT8 환경에 맞게 포팅했으며, 이로 인해 동일한 하드웨어에서 FSR 3.1 대비 10~20%의 성능 저하가 발생할 수 있습니다. AMD 공식 구현이 이 수치를 개선할지는 미지수입니다.\n- **호환성**: FSR 4를 지원하는 게임은 FSR 4.1로 자동 대응되며, 7월 드라이버 업데이트를 통해 활성화됩니다. FSR 3.1 게임에서도 Radeon 드라이버를 통해 FSR 4를 강제 적용할 수 있습니다.\n- **경쟁 구도**: FSR은 NVIDIA의 DLSS(Deep Learning Super Sampling)와 경쟁합니다. DLSS는 초기부터 하드웨어 가속을 지원해 더 넓은 게임 지원과 우수한 화질을 자랑합니다. 이전 FSR 버전의 장점은 구형 GPU에서도 범용적으로 작동한다는 점이었으나, FSR 4.1은 여전히 DLSS 수준의 호환성에는 미치지 못합니다.\n\nAMD는 여전히 RDNA3 및 RDNA2 제품을 판매 중이므로, 구형 GPU 사용자에 대한 지원이 반갑습니다. 최근 일부 드라이버 업데이트에서 구형 아키텍처 지원 축소 조짐이 있었으나, 이번 발표로 우려를 덜 수 있을 전망입니다.",
+            "translated_title": "AMD, 1년 만에 FSR 4를 구형 GPU에도 지원… RDNA2·RDNA3도 포함",
+            "summary": "AMD가 자사의 업스케일링 기술 FSR 4를 RDNA2 및 RDNA3 기반 구형 GPU로 확장한다고 발표했다. 7월부터 RDNA3·3.5 기반 GPU에 적용되며, 2027년 초에는 RDNA2까지 지원될 예정이다. 다만 구형 GPU에서는 AI 가속기 차이로 인해 성능 저하가 발생할 수 있으며, 모드 제작자들이 이미 확인한 10~20%의 프레임 손실이 공식 구현에서도 나타날 가능성이 있다.",
+            "full_post": "AMD가 작년 초 발표한 FSR 4(FidelityFX Super Resolution 4)는 RDNA4 아키텍처 기반 RX 9000 시리즈 전용으로 출시됐다. 그러나 1년이 지난 지금, AMD 컴퓨팅·그래픽 SVP 잭 휸은 FSR 4가 구형 GPU에도 제공될 것이라고 밝혔다.\n\n**지원 일정 및 대상**\n- **7월**: RDNA3 및 RDNA3.5 기반 GPU (Radeon RX 7000 시리즈, Radeon 890M, Radeon 8060S 등 통합 GPU)\n- **2027년 초**: RDNA2 아키텍처 (Radeon RX 6000 시리즈, Radeon 680M, Steam Deck GPU, PlayStation 5, Xbox Series X/S)\n\n**기술적 차이와 성능 영향**\n- RDNA4는 FP8 데이터 형식을 지원하는 AI 가속기를 탑재했지만, RDNA3/RDNA2는 INT8 기반 하드웨어를 사용한다.\n- 이에 AMD는 FSR 4를 INT8 환경에 맞게 이식했으며, 공식 버전(FSR 4.1)은 RDNA4 대비 구형 GPU에서 더 큰 성능 저하를 초래할 수 있다.\n- 모드 제작자들은 이미 INT8 GPU에서 FSR 4를 구동한 결과, 동일 하드웨어에서 FSR 3.1 대비 10~20% 성능이 떨어지는 것을 확인했다. AMD의 공식 구현이 이를 개선할지는 미지수다.\n\n**게임 호환성**\n- FSR 4를 지원하는 모든 게임은 FSR 4.1(RDNA3/RDNA2용)과 호환된다.\n- 7월 드라이버 업데이트를 통해 활성화 가능하며, 기존 FSR 3.1 게임도 라데온 드라이버에서 강제로 FSR 4를 사용할 수 있다.\n\n**시사점**\n- AMD가 여전히 RDNA3/RDNA2 제품군을 판매 중인 점을 고려하면, 이번 발표는 구형 GPU 사용자에게 반가운 소식이다.\n- 다만 이전 FSR 버전의 최대 장점인 '광범위한 호환성'(인텔 내장 그래픽, 구형 지포스 등)은 FSR 4.1에서 여전히 제한적이다.\n- 경쟁 기술인 엔비디아 DLSS는 지속적으로 하드웨어 가속 기반 우위를 유지하며 더 넓은 게임 지원과 좋은 화질을 제공 중이다.\n\n**향후 전망**\nFSR 4.1의 공식 성능 비교 자료는 아직 공개되지 않았지만, AMD가 의도적으로 구형 아키텍처 지원에 소극적이었다는 우려를 불식시키는 계기가 될 전망이다.",
             "url": "https://arstechnica.com/gadgets/2026/05/amd-promises-to-bring-improved-hardware-backed-fsr-4-upscaling-to-older-radeon-gpus/",
             "category": "GPU",
             "importance": "High",
-            "comment_mood": "Mixed",
-            "comment_summary": "실제 가시적인 댓글은 없었으나, 기사 내용을 바탕으로 추론한 커뮤니티 반응은 대체로 긍정적이지만 성능 저하 우려와 늦은 지원 시점에 대한 불만이 섞인 '혼합(Mixed)' 분위기로 예상됩니다. 특히 RDNA2 사용자들에게 2027년 초 지원은 너무 늦다는 반응이 나올 수 있습니다.",
+            "comment_mood": "No visible comments",
+            "comment_summary": "현재 공개된 댓글은 없습니다. 기사 내용을 바탕으로 예상되는 커뮤니티 반응은 다음과 같습니다. 긍정적으로는 AMD가 구형 GPU 사용자들을 외면하지 않았다는 점에서 호평을 받을 가능성이 높지만, 동시에 '1년 늦은 지원', '성능 저하 우려', 'DLSS와의 격차' 등에 대한 비판도 나올 것으로 보입니다. 특히 RDNA2 사용자들은 2027년 초까지 기다려야 한다는 점에서 실망감을 표할 수 있습니다.",
             "product_tags": [
                 "Radeon RX 9070 XT",
                 "Radeon RX 9070",
                 "Radeon RX 9060 XT",
-                "Radeon RX 7000 시리즈",
-                "Radeon RX 6000 시리즈",
                 "RDNA4",
                 "RDNA3",
-                "RDNA2"
+                "RDNA2",
+                "Radeon RX 7000",
+                "Radeon 890M"
             ],
             "reaction_keywords": [
-                "FSR 4.1",
+                "FSR4 하위호환",
+                "RDNA2 지원",
                 "성능 저하",
-                "구형 GPU 지원",
-                "INT8 vs FP8",
-                "드라이버 업데이트",
-                "RDNA3/RDNA2 호환"
+                "AMD 드라이버",
+                "DLSS 비교"
             ],
             "visible_comment_count": 0,
-            "collected_at": "2026-05-27 23:31:08"
+            "collected_at": "2026-05-28 03:26:39"
         },
         {
             "original_title": "AMD Prices Its Ryzen AI Halo PC At $3,999, Unveils Ryzen AI Max 400 Chips",
-            "translated_title": "AMD Prices Its Ryzen AI Halo PC At $3,999, Unveils Ryzen AI Max 400 Chips",
-            "summary": "원문 기사 'AMD Prices Its Ryzen AI Halo PC At $3,999, Unveils Ryzen AI Max 400 Chips'를 수집했습니다. 자세한 내용은 원문 링크에서 확인할 수 있습니다.",
-            "full_post": "원문 기사 'AMD Prices Its Ryzen AI Halo PC At $3,999, Unveils Ryzen AI Max 400 Chips'를 수집했습니다. 자세한 내용은 원문 링크에서 확인할 수 있습니다.",
+            "translated_title": "AMD, 3999달러 '라이젠 AI Halo PC' 공개... 'AI 맥스 400' 칩도 함께 선보여",
+            "summary": "AMD가 CES에서 공개한 Mac Mini 크기의 AI PC '라이젠 AI Halo'의 가격을 3,999달러로 책정하고, 6월부터 사전 예약을 받는다. 이 시스템은 클라우드 AI 비용을 절감할 수 있는 대안으로, 월 773달러를 사용하는 개발자라면 6개월 안에 본전을 뽑을 수 있다고 강조한다. 또한, 2026년 3분기 출시 예정인 '라이젠 AI Max 400' 시리즈의 최상위 모델 'AI Max+ Pro 495'는 16코어, 55 TOPS NPU, 최대 192GB 통합 메모리를 지원한다. 이는 엔비디아의 DGX Spark(4,699달러)와 정면 승부를 벌이며, x64 기반으로 윈도우와 리눅스를 모두 지원하는 장점이 있다.",
+            "full_post": "AMD가 2026년 AI PC 시장에서 본격적인 승부수를 던졌다. 미국 라스베이거스에서 열린 CES에서 처음 공개했던 '라이젠 AI Halo PC'의 가격을 3,999달러로 확정하고, 차세대 '라이젠 AI Max 400' 칩까지 함께 발표했다.\n\n**라이젠 AI Halo PC 주요 특징**\n- Mac Mini 크기의 초소형 데스크톱 폼팩터\n- 가격: 3,999달러부터 시작 (AI Max 300 탑재 모델)\n- 추후 AI Max 400 칩 탑재 모델도 출시 예정\n- 6월부터 사전 주문 개시\n\n**가격 대비 효율성**\n- AMD는 Halo를 '클라우드 AI 수수료'의 대안으로 포지셔닝\n- 월 773달러로 하루 600만 AI 토큰을 사용하는 개발자라면 6개월 안에 투자 회수 가능\n- 더 무거운 작업(월 2,253달러, 하루 1,800만 토큰)을 하는 사용자에게는 4,000달러짜리 '라데온 R9700 Pro' GPU가 3개월 만에 본전을 뽑아준다고 설명\n\n**엔비디아 DGX Spark와의 비교**\n- 엔비디아 DGX Spark: 4,699달러 (초기 발매가 4,000달러에서 인상)\n- Halo의 장점: x64 아키텍처로 윈도우와 리눅스 모두 구동 가능 (DGX Spark는 리눅스 전용)\n- Halo: 50 TOPS NPU + 40 컴퓨트 유닛 라데온 GPU\n- DGX Spark: 블랙웰 GPU에 전적으로 의존\n- 공통점: 128GB 통합 메모리 (Mac Mini/Studio보다 더 많음)\n\n**라이젠 AI Max 400 시리즈**\n- 최상위 모델: AI Max+ Pro 495\n  - 16코어 CPU, 최대 5.2GHz 부스트\n  - 55 TOPS NPU\n  - 라데온 8065S 그래픽\n  - 최대 192GB 통합 메모리 지원 (GPU VRAM 160GB 활용 가능)\n- 전작 AI Max 395 대비 CPU 부스트 클럭 5GHz → 5.2GHz로 소폭 향상\n- 2026년 3분기 출시 예정 (아직 비교 벤치마크 미공개)\n\n**의미**\nAMD는 이번 제품군을 통해 '로컬 AI 처리'의 실용성을 강조하며 엔비디아의 AI PC 독주를 견제한다. 일반 소비자보다는 고성능 AI 개발자와 연구자를 타깃으로 한 프리미엄 라인업이다.",
             "url": "https://www.engadget.com/2177687/amd-prices-its-ryzen-ai-halo-pc-at-dollar3999-unveils-ryzen-ai-max-400-chips/",
-            "category": "CPU",
-            "importance": "Medium",
+            "category": "AI",
+            "importance": "High",
             "comment_mood": "Mixed",
-            "comment_summary": "페이지에서 댓글 또는 반응 텍스트 1개를 확인했습니다. 상세 반응 분석은 AI 요약 실행 시 보강됩니다.",
+            "comment_summary": "일부 유저는 'Minisforum MS-S1 MAX에 이미 탑재된 칩셋과 동일한가?' 라는 기술적 질문을 남겼고, 다른 유저는 '지난 세대처럼 멋진 디자인이나 구성 옵션을 볼 수 없을 것'이라며 회의적인 반응을 보였다. 전체적으로 기대보다는 의구심이 섞인 분위기.",
             "product_tags": [
-                "프로세서",
-                "CPU",
-                "메인보드"
+                "Ryzen AI Halo PC",
+                "Ryzen AI Max 400",
+                "AI Max+ Pro 495",
+                "Radeon R9700 Pro",
+                "DGX Spark",
+                "Radeon 8065S",
+                "AI Max 395"
             ],
             "reaction_keywords": [
-                "코어 수",
-                "플랫폼",
-                "가격"
+                "가격 경쟁",
+                "로컬 AI",
+                "고성능 PC",
+                "엔비디아 대비",
+                "개발자 타겟"
             ],
             "visible_comment_count": 1,
-            "collected_at": "2026-05-27 23:31:19"
-        },
-        {
-            "original_title": "Intel keeps socket LGA 1700 alive with new P-core-only CPUs — 'Bartlett Lake' is official, but targets embedded applications with up to 12 cores | Tom's Hardware",
-            "translated_title": "인텔, LGA 1700 소켓 생명 연장! P-core 전용 'Bartlett Lake' 공식 발표 — 최대 12코어, 임베디드 시장 타겟",
-            "summary": "인텔이 오랫동안 루머로만 돌던 'Bartlett Lake' CPU를 공식 발표했습니다. 이 제품은 P-core(퍼포먼스 코어)만 탑재한 최대 12코어 설계로, LGA 1700 소켓(12~14세대 인텔 CPU 호환)을 그대로 사용합니다. 다만 일반 소비자용이 아닌 산업용 임베디드 및 엣지 컴퓨팅 애플리케이션에 초점을 맞춘 상업용 칩입니다. 11개의 SKU가 소개되었으며, 125W/65W/45W TDP 변형과 함께 LTSC, TCC, TSN 등 미션크리티컬 환경을 위한 기능을 지원합니다.",
-            "full_post": "### 주요 내용\n- **소켓 호환성**: LGA 1700 (12세대~14세대 메인보드 사용 가능)\n- **코어 구성**: P-core(퍼포먼스 코어)만 사용 → 기존 하이브리드 아키텍처(성능+효율 코어)의 스케줄링 복잡성 제거, 지연 시간에 민감한 임베디드/엣지 환경에 최적화\n- **SKU 구성**: 총 11개 SKU | 12코어 / 10코어 / 8코어 변형 | TDP 125W, 65W, 45W 옵션 | 65W/45W 라인에는 추가로 Core 5 변형 (부스트/베이스 클럭 200MHz 낮춤)\n- **제조 공정 & 아키텍처**: Intel 7 (10nm급) / Raptor Cove 마이크로아키텍처 (Raptor Lake 소비자용 칩과 동일)\n- **메모리 & PCIe**: 최대 DDR5-5600 MT/s (ECC 지원), 최대 192GB | CPU에서 PCIe 5.0 x16 + PCIe 4.0 x4 | PCH에서 추가 PCIe 4.0 x12 + PCIe 3.0 x16 | DMI 4.0 x8\n- **특수 기능**: LTSC(Windows 장기 서비스 계약) 지원, Intel TCC(Time Coordinated Computing), TSN(Time-Sensitive Networking) — 안정성과 결정적 성능(deterministic performance)에 중점\n- **성능 비교 (인텔 주장)**: Core 9 273PE (12코어/65W) 기준 → Ryzen 7 9700X(임베디드 버전) 대비 최대 PCIe 지연 시간 4.4배↓, 응답 시간 결정성 2.5배↑, 결정적 성능 3.8배↑ — 단, 인텔이 공개한 벤치마크 데이터는 아직 미공개\n- **소비자 판매 계획 없음**: 리테일 출시 예정 없음, 가격 및 정확한 출시일은 기업 간 개별 계약에 따라 결정 — 그레이 마켓을 통해서만 유통 가능성\n- **Panther Lake (Core Ultra Series 3) 엣지 배포 강조**: Nvidia Jetson AGX Orin 64GB 대비 이미지 분류 1.7배↑, LLM 지연 시간 1.9배↓, 비전 액션 모델 처리량 4.5배↑ | 단일 Panther Lake SoC로 듀얼 시스템 대비 최대 $5,549 TCO 절감 주장\n\n### 시사점\n- 임베디드/엣지 시장에서 P-core 전용 설계는 지연 시간과 결정적 동작이 중요한 공정 제어, 로봇공학, 자동화 등에 유리\n- 소비자 게이밍 CPU 시장과는 거리가 멀지만, LGA 1700 소켓 생태계를 연장한다는 점에서 일부 유저의 관심을 받을 가능성\n- 인텔이 공개한 성능 비교는 자체 주장에 불과하며, 독립적인 검증이 필요\n- Panther Lake와의 비교를 통해 엣지 AI/로봇 시장에서의 경쟁력을 강조",
-            "url": "https://www.tomshardware.com/pc-components/cpus/intel-keeps-socket-lga-1700-alive-with-new-p-core-only-cpus-bartlett-lake-is-official-but-targets-embedded-applications-with-up-to-12-cores",
-            "category": "CPU",
-            "importance": "Medium",
-            "comment_mood": "Mixed",
-            "comment_summary": "해당 기사에는 32개의 댓글이 달려 있습니다. 일반적인 반응은 인텔이 LGA 1700 소켓의 수명을 연장한 점에 대해 긍정적이지만, 소비자용이 아닌 임베디드 전용이라는 점에 실망하는 의견이 섞여 있습니다. 또한 성능 비교 주장에 대한 신뢰성 논란이나, 그레이 마켓 유통 가능성에 대한 우려도 관찰됩니다. 전반적으로 호기심과 회의론이 공존하는 분위기입니다.",
-            "product_tags": [
-                "Intel Bartlett Lake",
-                "LGA 1700",
-                "Raptor Cove",
-                "Intel 7 (10nm)",
-                "Core 9 273PE",
-                "LTSC",
-                "Intel TCC",
-                "TSN"
-            ],
-            "reaction_keywords": [
-                "임베디드 CPU",
-                "LGA1700 연장",
-                "P-core 전용",
-                "소비자 미출시",
-                "성능 비교 논란"
-            ],
-            "visible_comment_count": 1,
-            "collected_at": "2026-05-27 23:35:53"
+            "collected_at": "2026-05-28 03:27:39"
         }
     ]
 }

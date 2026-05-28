@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-27T23:36:11.263+09:00",
+  "updatedAt": "2026-05-28T06:16:40.242+09:00",
   "category": "CPU",
   "id": "cpu-amd-ryzen-9-9950x3d",
   "name": "AMD Ryzen 9 9950X3D",
@@ -82,7 +82,7 @@
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=AMD%20Ryzen%209%209950X%20%EC%B5%9C%EC%A0%80%EA%B0%80",
   "notes": "AMD Ryzen 9 9950X3D은 가격과 성능, 플랫폼 호환성을 함께 확인할 CPU 후보입니다.",
   "textRepair": {
-    "checkedAt": "2026-05-27T23:36:11.657+09:00",
+    "checkedAt": "2026-05-28T06:16:40.640+09:00",
     "method": "ai-text-sanity-rules",
     "repairedFields": [
       "notes"

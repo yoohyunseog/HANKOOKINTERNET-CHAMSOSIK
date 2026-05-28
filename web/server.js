@@ -29,7 +29,11 @@ app.use(helmet({
   contentSecurityPolicy: {
     directives: {
       ...helmet.contentSecurityPolicy.getDefaultDirectives(),
-      'upgrade-insecure-requests': null
+      'upgrade-insecure-requests': null,
+      "script-src": ["'self'", "'unsafe-inline'"],
+      "style-src": ["'self'", "'unsafe-inline'"],
+      "img-src": ["'self'", "data:", "https:"],
+      "connect-src": ["'self'", "https:", "http://211.45.162.155:11434", "http://127.0.0.1:11434"]
     }
   }
 })); // HTTP 헤더 보안
@@ -77,18 +81,142 @@ app.use(limiter);
 
 app.use(compression()); // Gzip 압축 활성화
 const PORT = process.env.PORT || 3000;
-const OLLAMA_BASE_URL = process.env.OLLAMA_BASE_URL || 'http://localhost:11434';
-const AI_TUNNEL_URL = (process.env.AI_TUNNEL_URL || 'https://gilbert-bases-tracked-hopes.trycloudflare.com').replace(/\/$/, '');
+const OLLAMA_BASE_URL = process.env.OLLAMA_BASE_URL || 'http://211.45.162.155:11434';
+const AI_TUNNEL_URL = (process.env.AI_TUNNEL_URL || 'http://211.45.162.155:11434').replace(/\/$/, '');
 const AI_TUNNEL_FILE = process.env.AI_TUNNEL_FILE || path.join(__dirname, 'data', 'ai-tunnel-url.json');
-const AI_CHAT_MODEL = process.env.AI_CHAT_MODEL || process.env.OLLAMA_MODEL || 'llama3';
+const AI_CHAT_MODEL = process.env.AI_CHAT_MODEL || process.env.OLLAMA_MODEL || 'glm-5:cloud';
 
 // Ollama Web Search API 설정
-const OLLAMA_API_KEY = process.env.OLLAMA_API_KEY || '';
+const OLLAMA_API_KEY = process.env.OLLAMA_API_KEY || 'd8cf2811037b4791b2e36ffb4afee830.LrLvzfuvzutO7MLHciyiUtpq';
 const OLLAMA_WEB_SEARCH_URL = process.env.OLLAMA_WEB_SEARCH_URL || 'https://ollama.com/api/web_search';
+const OLLAMA_WEB_FETCH_URL = process.env.OLLAMA_WEB_FETCH_URL || 'https://ollama.com/api/web_fetch';
 const WEB_SEARCH_LIMIT = parseInt(process.env.WEB_SEARCH_LIMIT || '5', 10);
 const WEB_SEARCH_TIMEOUT_MS = parseInt(process.env.WEB_SEARCH_TIMEOUT_MS || '20000', 10);
+const WEB_FETCH_TIMEOUT_MS = parseInt(process.env.WEB_FETCH_TIMEOUT_MS || '30000', 10);
 const TREND_DATA_PATH = path.join(__dirname, '..', 'data', 'naver_creator_trends', 'latest_trend_data.json');
-const DEFAULT_MODEL = process.env.OLLAMA_MODEL || 'llama3';
+const DEFAULT_MODEL = process.env.OLLAMA_MODEL || 'glm-5:cloud';
+
+// RAG 라우터: 웹 검색 필요성 판단 키워드
+const WEB_SEARCH_KEYWORDS = {
+    // 시간 관련 키워드 (최신 정보 필요)
+    time: ['최신', '오늘', '어제', '이번주', '이번달', '올해', '지금', '현재', 'recent', 'latest', 'today', 'now', 'current', '2024', '2025', '2026'],
+    // 검색 관련 키워드
+    search: ['검색', '찾아', '조회', '검색해', '알아봐', 'search', 'find', 'look up'],
+    // 뉴스/이슈 키워드
+    news: ['뉴스', '기사', '속보', '이슈', '사건', 'news', 'article', 'headline'],
+    // 날씨 키워드
+    weather: ['날씨', '기온', '비', '눈', 'weather', 'temperature', 'forecast'],
+    // 주식/경제 키워드
+    finance: ['주식', '환율', '코인', '비트코인', '시세', 'stock', 'price', 'rate', 'bitcoin', 'crypto'],
+    // 실시간 정보 키워드
+    realtime: ['실시간', '라이브', 'live', 'realtime', 'real-time'],
+    // 비교/추천 키워드
+    compare: ['비교', '추천', '순위', 'best', 'top', 'recommend', 'compare', 'vs'],
+    // 방법/가이드 (최신 정보 필요할 수 있음)
+    howto: ['방법', '하는법', '설정', '설치', 'how to', 'tutorial', 'guide']
+};
+
+// 웹 검색이 필요 없는 키워드 (일반 대화, 코딩, 수학 등)
+const NO_SEARCH_KEYWORDS = [
+    '안녕', '반가워', '안녕하세요', 'hello', 'hi', 'hey',
+    '고마워', '감사', 'thanks', 'thank you',
+    '잘가', '안녕히', 'bye', 'goodbye',
+    '농담', 'joke', '재미있는',
+    '코드', '함수', '변수', 'function', 'code', 'variable',
+    '수학', '계산', 'math', 'calculate',
+    '번역', 'translate',
+    '문법', 'grammar', 'spelling',
+    '창의적', 'creative', '이야기', 'story'
+];
+
+/**
+ * RAG 라우터: 쿼리 분석하여 웹 검색 필요성 판단
+ * @param {string} query - 사용자 쿼리
+ * @param {Array} messages - 대화 컨텍스트
+ * @returns {Object} { needsSearch: boolean, reason: string, confidence: number }
+ */
+function analyzeSearchNeed(query, messages = []) {
+    const lowerQuery = query.toLowerCase().trim();
+    
+    // 빈 쿼리는 검색 불필요
+    if (!lowerQuery) {
+        return { needsSearch: false, reason: 'empty_query', confidence: 1.0 };
+    }
+    
+    // 짧은 인사말은 검색 불필요
+    if (lowerQuery.length < 5) {
+        const isGreeting = NO_SEARCH_KEYWORDS.some(kw => lowerQuery.includes(kw));
+        if (isGreeting) {
+            return { needsSearch: false, reason: 'greeting', confidence: 0.95 };
+        }
+    }
+    
+    // NO_SEARCH 키워드 확인
+    const noSearchMatch = NO_SEARCH_KEYWORDS.filter(kw => lowerQuery.includes(kw));
+    if (noSearchMatch.length > 0) {
+        // 하지만 시간 관련 키워드가 함께 있으면 검색 필요
+        const hasTimeKeyword = WEB_SEARCH_KEYWORDS.time.some(kw => lowerQuery.includes(kw));
+        if (!hasTimeKeyword) {
+            return { needsSearch: false, reason: `no_search_keyword:${noSearchMatch.join(',')}`, confidence: 0.85 };
+        }
+    }
+    
+    // 카테고리별 점수 계산
+    const scores = {};
+    let maxScore = 0;
+    let maxCategory = '';
+    
+    for (const [category, keywords] of Object.entries(WEB_SEARCH_KEYWORDS)) {
+        const matches = keywords.filter(kw => lowerQuery.includes(kw));
+        const score = matches.length;
+        scores[category] = { score, matches };
+        if (score > maxScore) {
+            maxScore = score;
+            maxCategory = category;
+        }
+    }
+    
+    // 의문사 확인
+    const questionWords = ['무엇', '언제', '어디서', '누가', '왜', '어떻게', '얼마', 'what', 'when', 'where', 'who', 'why', 'how', 'how much'];
+    const hasQuestionWord = questionWords.some(qw => lowerQuery.includes(qw));
+    
+    // 최종 판단
+    if (maxScore >= 2) {
+        return {
+            needsSearch: true,
+            reason: `high_relevance:${maxCategory}`,
+            confidence: 0.9,
+            category: maxCategory,
+            matchedKeywords: scores[maxCategory].matches
+        };
+    }
+    
+    if (maxScore === 1 && hasQuestionWord) {
+        return {
+            needsSearch: true,
+            reason: `question_with_keyword:${maxCategory}`,
+            confidence: 0.75,
+            category: maxCategory,
+            matchedKeywords: scores[maxCategory].matches
+        };
+    }
+    
+    // 의문사만 있는 경우 (일반 지식 질문)
+    if (hasQuestionWord && lowerQuery.length > 10) {
+        return {
+            needsSearch: true,
+            reason: 'question_word_detected',
+            confidence: 0.6
+        };
+    }
+    
+    // 기본값: 검색 불필요
+    return {
+        needsSearch: false,
+        reason: 'general_conversation',
+        confidence: 0.7
+    };
+}
 const COUPANG_DOMAIN = 'https://api-gateway.coupang.com';
 const COUPANG_ACCESS_KEY = process.env.COUPANG_ACCESS_KEY || 'a4672c2f-d1e7-4f48-9c34-30535528c8c7';
 const COUPANG_SECRET_KEY = process.env.COUPANG_SECRET_KEY || 'ed03dd673ad780db96453e2c869cfc9861584802';
@@ -1007,6 +1135,179 @@ async function postAiChatCandidate(url, payload, signal) {
     });
 }
 
+// RAG 라우터 API: 웹 검색 필요성 분석
+app.post('/api/analyze-search-need', (req, res) => {
+    try {
+        const { query, messages } = req.body || {};
+        if (!query) {
+            return res.status(400).json({ ok: false, error: 'query is required' });
+        }
+        
+        const analysis = analyzeSearchNeed(query, messages || []);
+        return res.json({
+            ok: true,
+            query,
+            ...analysis,
+            timestamp: new Date().toISOString()
+        });
+    } catch (error) {
+        console.error('[analyze-search-need] error:', error.message);
+        return res.status(500).json({ ok: false, error: error.message });
+    }
+});
+
+// 스마트 채팅: RAG 라우터로 자동 판단 후 웹 검색 또는 일반 채팅
+app.post('/api/smart-chat', async (req, res) => {
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), 90000);
+
+    try {
+        const body = req.body || {};
+        const messages = normalizeChatMessages(body);
+        const userQuery = body.prompt || body.message || (messages[messages.length - 1]?.content) || '';
+        
+        // RAG 라우터로 검색 필요성 판단
+        const analysis = analyzeSearchNeed(userQuery, messages);
+        console.log(`[smart-chat] RAG analysis: ${analysis.reason} (confidence: ${analysis.confidence})`);
+        
+        // 검색이 필요한 경우
+        if (analysis.needsSearch && analysis.confidence >= 0.6) {
+            console.log(`[smart-chat] Using web search for: "${userQuery.slice(0, 50)}..."`);
+            
+            // 웹 검색 수행
+            const searchResponse = await fetch(`${OLLAMA_WEB_SEARCH_URL}`, {
+                method: 'POST',
+                headers: {
+                    'Authorization': `Bearer ${OLLAMA_API_KEY}`,
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    query: userQuery,
+                    max_results: WEB_SEARCH_LIMIT
+                }),
+                signal: AbortSignal.timeout(WEB_SEARCH_TIMEOUT_MS)
+            });
+            
+            const searchData = await searchResponse.json();
+            const results = searchData.results || [];
+            
+            // 검색 결과를 컨텍스트에 추가하여 AI 응답
+            const contextWithSearch = [
+                ...messages.slice(0, -1),
+                {
+                    role: 'system',
+                    content: `다음 검색 결과를 참고하여 정확하고 최신 정보를 제공하세요:\n\n${results.map((r, i) => 
+                        `[${i + 1}] ${r.title}\n${r.url}\n${(r.content || '').slice(0, 300)}`
+                    ).join('\n\n')}`
+                },
+                messages[messages.length - 1]
+            ];
+            
+            const model = body.model || AI_CHAT_MODEL;
+            const chatPayload = {
+                model,
+                stream: false,
+                messages: contextWithSearch,
+                options: {
+                    temperature: Number(body.temperature || 0.5),
+                    num_predict: Number(body.num_predict || 1200)
+                }
+            };
+            
+            let response = null;
+            let source = OLLAMA_BASE_URL;
+            const tunnelUrl = getAiTunnelUrl();
+            
+            try {
+                response = await postAiChatCandidate(OLLAMA_BASE_URL, chatPayload, controller.signal);
+            } catch (e) {
+                console.warn('[smart-chat] local candidate failed:', e.message);
+            }
+            
+            if ((!response || !response.ok) && tunnelUrl) {
+                response = await postAiChatCandidate(tunnelUrl, chatPayload, controller.signal);
+                source = tunnelUrl;
+            }
+            
+            if (response && response.ok) {
+                const text = await response.text();
+                const payload = safeJsonParse(text) || { raw: text };
+                return res.json({
+                    ok: true,
+                    model,
+                    mode: 'rag-web-search',
+                    content: extractChatText(payload),
+                    search: {
+                        query: userQuery,
+                        results,
+                        analysis
+                    },
+                    source
+                });
+            }
+        }
+        
+        // 검색이 필요 없는 경우: 일반 채팅
+        console.log(`[smart-chat] Using direct chat for: "${userQuery.slice(0, 50)}..."`);
+        
+        const model = body.model || AI_CHAT_MODEL;
+        const chatPayload = {
+            model,
+            stream: false,
+            messages,
+            options: {
+                temperature: Number(body.temperature || 0.5),
+                num_predict: Number(body.num_predict || 700)
+            }
+        };
+        
+        let response = null;
+        let source = OLLAMA_BASE_URL;
+        const tunnelUrl = getAiTunnelUrl();
+        
+        try {
+            response = await postAiChatCandidate(OLLAMA_BASE_URL, chatPayload, controller.signal);
+        } catch (e) {
+            console.warn('[smart-chat] local candidate failed:', e.message);
+        }
+        
+        if ((!response || !response.ok) && tunnelUrl) {
+            response = await postAiChatCandidate(tunnelUrl, chatPayload, controller.signal);
+            source = tunnelUrl;
+        }
+        
+        if (response && response.ok) {
+            const text = await response.text();
+            const payload = safeJsonParse(text) || { raw: text };
+            return res.json({
+                ok: true,
+                model,
+                mode: 'direct-chat',
+                content: extractChatText(payload),
+                search: null,
+                analysis,
+                source
+            });
+        }
+        
+        // 모든 시도 실패 시 폴백
+        return res.json({
+            ok: true,
+            model,
+            mode: 'fallback',
+            content: builtInChatReply(messages),
+            search: null,
+            analysis
+        });
+        
+    } catch (error) {
+        console.error('[smart-chat] error:', error.message);
+        return res.status(500).json({ ok: false, error: error.message });
+    } finally {
+        clearTimeout(timeout);
+    }
+});
+
 app.post('/api/ollama-chat', async (req, res) => {
     const controller = new AbortController();
     const timeout = setTimeout(() => controller.abort(), 90000);
@@ -1024,7 +1325,7 @@ app.post('/api/ollama-chat', async (req, res) => {
             messages,
             options: {
                 temperature: Number(req.body?.temperature || 0.5),
-                num_predict: Number(req.body?.num_predict || 700)
+                num_predict: Number(req.body?.num_predict || 32768)  // 최대 긴 응답 허용
             }
         };
         let response = null;
@@ -1127,6 +1428,54 @@ app.post('/api/ollama-web-search', async (req, res) => {
     }
 });
 
+// Ollama Web Fetch API - 웹 페이지 크롤링
+app.post('/api/ollama-web-fetch', async (req, res) => {
+    try {
+        const { url } = req.body || {};
+        if (!url || !url.trim()) {
+            return res.status(400).json({ ok: false, error: 'url is required' });
+        }
+        if (!OLLAMA_API_KEY) {
+            return res.status(400).json({ ok: false, error: 'OLLAMA_API_KEY is not configured' });
+        }
+
+        const controller = new AbortController();
+        const timeout = setTimeout(() => controller.abort(), WEB_FETCH_TIMEOUT_MS);
+
+        try {
+            const response = await fetch(OLLAMA_WEB_FETCH_URL, {
+                method: 'POST',
+                headers: {
+                    'Authorization': `Bearer ${OLLAMA_API_KEY}`,
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ url: url.trim() }),
+                signal: controller.signal
+            });
+
+            const text = await response.text();
+            let payload = null;
+            try { payload = text ? JSON.parse(text) : {}; } catch { payload = { raw: text }; }
+
+            if (!response.ok) {
+                return res.status(response.status).json({ ok: false, error: `Web fetch API returned ${response.status}`, detail: payload });
+            }
+
+            return res.json({ ok: true, url: url.trim(), ...payload, source: 'ollama-web-fetch' });
+        } catch (error) {
+            if (error.name === 'AbortError') {
+                return res.status(504).json({ ok: false, error: 'Web fetch timed out' });
+            }
+            throw error;
+        } finally {
+            clearTimeout(timeout);
+        }
+    } catch (error) {
+        console.error('[ollama-web-fetch] error:', error.message);
+        return res.status(500).json({ ok: false, error: error.message });
+    }
+});
+
 // Ollama Web Search 결과를 AI 채팅 컨텍스트에 포함시켜 응답
 // AI Proxy 서버 (http://127.0.0.1:3110/api/search-chat) 로 프록시
 app.get('/api/ollama-chat-with-search', (req, res) => {
@@ -1138,7 +1487,9 @@ app.get('/api/ollama-chat-with-search', (req, res) => {
     });
 });
 app.post('/api/ollama-chat-with-search', async (req, res) => {
-    const AI_PROXY_URL = process.env.AI_PROXY_URL || 'http://127.0.0.1:3110';
+    // 원격 서버에서는 Cloudflare Tunnel URL 사용, 로컬에서는 AI Proxy 사용
+    const tunnelUrl = getAiTunnelUrl();
+    const AI_PROXY_URL = process.env.AI_PROXY_URL || tunnelUrl || 'http://127.0.0.1:3110';
 
     try {
         const body = req.body || {};
@@ -1156,7 +1507,7 @@ app.post('/api/ollama-chat-with-search', async (req, res) => {
                 temperature: Number(body.temperature || 0.35),
                 num_predict: Number(body.num_predict || 1200)
             }),
-            signal: AbortSignal.timeout(120000)
+            signal: AbortSignal.timeout(55000)
         });
 
         const data = await proxyResponse.json();

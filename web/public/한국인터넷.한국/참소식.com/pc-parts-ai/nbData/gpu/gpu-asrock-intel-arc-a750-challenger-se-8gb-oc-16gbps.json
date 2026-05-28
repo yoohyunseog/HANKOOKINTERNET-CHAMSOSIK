@@ -1,0 +1,85 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-05-28T06:16:40.242+09:00",
+  "category": "GPU",
+  "id": "gpu-asrock-intel-arc-a750-challenger-se-8gb-oc-16gbps",
+  "name": "ASRock Intel Arc A750 Challenger SE 8GB OC 16Gbps",
+  "maker": "ASRock",
+  "platform": "PCIe 4.0",
+  "estimatedPriceKrw": 311500,
+  "priceBand": "30~60만원",
+  "speedLabel": "16Gbps",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "GPU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 55,
+  "valueIndex": 17.7,
+  "aiUseScore": 36,
+  "powerWatts": 225,
+  "tags": [
+    "gaming",
+    "budget"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "GPU",
+    "partId": "gpu-asrock-intel-arc-a750-challenger-se-8gb-oc-16gbps",
+    "partName": "ASRock Intel Arc A750 Challenger SE 8GB OC 16Gbps",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "GPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 550,
+      "value": 236,
+      "aiFit": 360,
+      "priceEfficiency": 320,
+      "powerEfficiency": 100
+    },
+    "nbVector": [
+      100,
+      550,
+      236,
+      360,
+      320,
+      100
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 194.872,
+    "nbMin": 412.966,
+    "weightedScore": 253,
+    "nbBand": "100~499",
+    "summary": "GPU ASRock Intel Arc A750 Challenger SE 8GB OC 16Gbps 부품을 속도 중심 N/B 데이터베이스 점수 253점으로 저장했습니다."
+  },
+  "nbWeightedScore": 253,
+  "nbMax": 194.872,
+  "nbMin": 412.966,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Intel%20Arc%20A750%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "Challenger SE model with factory overclock",
+  "textRepair": null
+}

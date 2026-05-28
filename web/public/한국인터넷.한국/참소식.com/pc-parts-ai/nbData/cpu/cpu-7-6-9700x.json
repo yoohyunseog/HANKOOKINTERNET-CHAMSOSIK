@@ -1,0 +1,85 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-05-28T06:16:40.242+09:00",
+  "category": "CPU",
+  "id": "cpu-7-6-9700x",
+  "name": "라이젠7-6세대 9700X (그래니트 릿지)",
+  "maker": "AMD",
+  "platform": "AM5",
+  "estimatedPriceKrw": 379000,
+  "priceBand": "30~60만원",
+  "speedLabel": "3.8GHz",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "CPU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 85,
+  "valueIndex": 22.4,
+  "aiUseScore": 55,
+  "powerWatts": 65,
+  "tags": [
+    "gaming",
+    "workstation"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "CPU",
+    "partId": "cpu-7-6-9700x",
+    "partName": "라이젠7-6세대 9700X (그래니트 릿지)",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "CPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 850,
+      "value": 299,
+      "aiFit": 550,
+      "priceEfficiency": 260,
+      "powerEfficiency": 436
+    },
+    "nbVector": [
+      100,
+      850,
+      299,
+      550,
+      260,
+      436
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 217.212,
+    "nbMin": 371.804,
+    "weightedScore": 356,
+    "nbBand": "100~499",
+    "summary": "CPU 라이젠7-6세대 9700X (그래니트 릿지) 부품을 속도 중심 N/B 데이터베이스 점수 356점으로 저장했습니다."
+  },
+  "nbWeightedScore": 356,
+  "nbMax": 217.212,
+  "nbMin": 371.804,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=AMD%20Ryzen%207%209700X%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "Multi-pack version observed",
+  "textRepair": null
+}

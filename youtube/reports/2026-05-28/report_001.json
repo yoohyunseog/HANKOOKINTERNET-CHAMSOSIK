@@ -1,0 +1,415 @@
+{
+  "timestamp": "2026-05-28T01:31:22.057518",
+  "model": "deepseek-v4-flash:cloud",
+  "keyword_count": 3,
+  "analyze_subtitles": true,
+  "analysis_source": "youtube",
+  "keywords": [
+    {
+      "keyword": "오늘의 주요 뉴스",
+      "is_fixed": true,
+      "views": [
+        460
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "[12뉴스] 오늘의 주요뉴스 / SBS",
+          "video_id": "cwqMtW4ENtM",
+          "views": 460,
+          "upload_date": "2026-05-27",
+          "url": "https://www.youtube.com/watch?v=cwqMtW4ENtM",
+          "subtitle_summary": "1. 경찰이 붕괴사고 현장 정밀 감식 중이며, 복구 지연으로 수도권 전철과 KTX 운행에 차질이 계속됨.\n2. 삼성전자 노조 임금교섭 잠정 합의안이 찬성 73%로 가결됐으나, 하만 반도체 부문 보상안을 두고 노조 갈등과 주주 반발이 이어짐.\n3. 6.3 지방선거 일주일 앞두고 여야 신경전 격화, 미국과 이란의 종전 협상이 긴박하게 진행 중.",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "이란 미사일 증거",
+      "is_fixed": false,
+      "views": [
+        5210,
+        2048
+      ],
+      "video_count": 2,
+      "videos": [
+        {
+          "title": "정부 \"나무호 공격 비행체, 이란산 대함미사일 결론\" / YTN",
+          "video_id": "sSid4UcPurM",
+          "views": 5210,
+          "upload_date": "2026-05-27",
+          "url": "https://www.youtube.com/watch?v=sSid4UcPurM",
+          "subtitle_summary": "1. 정부는 호르무즈 해협에서 우리 선박 나무호를 타격한 비행체를 이란산 대함미사일로 결론 내렸습니다.\n2. 공격 주체는 특정하지 못했지만, 여러 증거가 이란 쪽을 향하고 있다고 밝혔습니다.\n3. 주한 이란 대사를 초치해 강력히 항의하고 사과",
+          "db_saved": true
+        },
+        {
+          "title": "“나무호 피격, 이란 대함미사일 가능성 높아”…주한이란대사 초치 [9시 뉴스] / KBS  2026.05.27.",
+          "video_id": "5Xq4Nxi0220",
+          "views": 2048,
+          "upload_date": "2026-05-27",
+          "url": "https://www.youtube.com/watch?v=5Xq4Nxi0220",
+          "subtitle_summary": "1. 정부는 호르무즈 해협에서 피격된 나무호의 공격이 이란산 누르계열 대함미사일 가능성이 높다고 공식 발표했다.\n2. 잔해 분석 결과 이란산 엔진, 제조사 각인, 하늘색 도장 등이 확인됐으며, 두 발의 연속 공격은 의도적 피해를 노린 것으로 판단된다.\n3. 외교부는 주한이란 대사를 초치해 강력 항의하고 재발 방지와 공식 사과를 요구했으나, 이란 측은 개입을 부인했다.",
+          "db_saved": true
+        }
+      ],
+      "max": 3.1631,
+      "min": 0.0983,
+      "nb_score": 32.1803,
+      "avg_views": 3629.0,
+      "total_views": 7258
+    },
+    {
+      "keyword": "카카오 노조 파업",
+      "is_fixed": false,
+      "views": [
+        897,
+        1275,
+        317,
+        1568
+      ],
+      "video_count": 4,
+      "videos": [
+        {
+          "title": "카카오 노사 2차 조정 시작…부결되면 첫 파업 / KBS  2026.05.27.",
+          "video_id": "TDGZi8XO1Lw",
+          "views": 897,
+          "upload_date": "2026-05-27",
+          "url": "https://www.youtube.com/watch?v=TDGZi8XO1Lw",
+          "subtitle_summary": "카카오 노사가 임금 협상 2차 조정 회의를 시작했으며, 결렬 시 창사 이래 첫 파업이 예고됐다. 노조는 성과급 불투명, 자회사 구조조정 등을 문제 삼으며 반발하고 있다. 파업이 현실화되면 카카오톡 이용에는 큰 영향이 없지만, AI 등 신사업 추진에 차질이 우려된다.",
+          "db_saved": true
+        },
+        {
+          "title": "\"Give us 10 million won each\"..Kakao also begins 'performance bonus struggle' / SBS 8 News",
+          "video_id": "6dV75xM9hPc",
+          "views": 1275,
+          "upload_date": "2026-05-27",
+          "url": "https://www.youtube.com/watch?v=6dV75xM9hPc",
+          "subtitle_summary": "1. 카카오가 창사 이래 첫 파업 위기에 직면했으며, 노조는 1인당 1000만 원 수준의 성과급을 요구하고 있다.\n2. 성과급 지급 방식(양도 제한 조건부 주식 포함 여부)을 두고 노사 간 이견이 커지고, 본사와 4개 계열사 노조가 공동 파업 가능성을 높이고 있다.\n3. SK하이닉스와 삼성전자에서 시작된 성과급 논란이 전 산업계로 확산되며, 대기업 노조의 추가 요구가 노동시장 양극화를 부추길 우려가 제기된다.",
+          "db_saved": true
+        },
+        {
+          "title": "[현장연결] 카카오 노사 오늘(27일) 2차 조정…이 시각 협상장 [9시 뉴스] / KBS  2026.05.27.",
+          "video_id": "nelC9JIdMQU",
+          "views": 317,
+          "upload_date": "2026-05-27",
+          "url": "https://www.youtube.com/watch?v=nelC9JIdMQU",
+          "subtitle_summary": "1. 카카오 노사가 창사 첫 파업 위기 속에서 2차 조정 협상을 진행 중이며, 6시간 넘게 길어지고 있다.\n2. 핵심 쟁점은 영업이익 기반 성과금 배분과 500만 원 상당의 조건부 주식 포함 여부로, 노사 간 입장 차가 좁혀지지 않고 있다.\n3. 조정 결렬 시 본사 및 계열사 동시 파업이 현실화될 수 있으며, AI 에이전트 서비스 등 신규 사업 추진에 차질이 예상된다.",
+          "db_saved": true
+        },
+        {
+          "title": "[Issue] 'First-Ever General Strike' Now at Kakao... Labor-Management Talks Enter 2nd Round of Med...",
+          "video_id": "QxsEjhPp09k",
+          "views": 1568,
+          "upload_date": "2026-05-27",
+          "url": "https://www.youtube.com/watch?v=QxsEjhPp09k",
+          "subtitle_summary": "1. 카카오 노사가 성과급 보상 체계 등을 두고 갈등을 빚으며, 경기 지방노동위원회에서 2차 조정 협상에 돌입했다.\n2. 조정이 결렬될 경우 카카오 창사 이래 첫 본사 파업이자 5개 법인 동시 파업이 예고됐으나, 카카오톡 등 소비자 서비스 영향은 제한적일 전망이다.\n3. 한편 네이버와 카카오는 역대급 실적에도 주가가 부진하며, AI 경쟁 심화와 시장 우려로 주주들의 불만이 커지고 있다.",
+          "db_saved": true
+        }
+      ],
+      "max": 2.0931,
+      "min": 2.6742,
+      "nb_score": 0.7827,
+      "avg_views": 1014.25,
+      "total_views": 4057
+    },
+    {
+      "keyword": "수서역 매몰 사고",
+      "is_fixed": false,
+      "views": [
+        2223,
+        1012,
+        1335,
+        348,
+        4067,
+        938
+      ],
+      "video_count": 6,
+      "videos": [
+        {
+          "title": "[지금뉴스] “토사 무너져” 수서역 인근 배수관 정비중 매몰 사고…작업자 1명 사망 / KBS 2026.05.27.",
+          "video_id": "bORidXrzZDY",
+          "views": 2223,
+          "upload_date": "2026-05-27",
+          "url": "https://www.youtube.com/watch?v=bORidXrzZDY",
+          "subtitle_summary": "1. 서울 강남구 수서동 노후 하수관로 정비 공사 현장에서 토사가 무너져 작업자 3명이 매몰",
+          "db_saved": true
+        },
+        {
+          "title": "Worker buried while repairing sewer pipe near Suseo Station… 60-year-old worker dies [MBN News7]",
+          "video_id": "Ud38LqO6jW0",
+          "views": 1012,
+          "upload_date": "2026-05-27",
+          "url": "https://www.youtube.com/watch?v=Ud38LqO6jW0",
+          "subtitle_summary": "1. 서울 수서역 인근 하수도 정비 공사 중 흙이 무너져 60대 작업자 1명이 매몰 사망했다.\n2. 함께 작업하던 2명은 대피했으며, 경찰은 흙막이 설치 미비 등 안전 관리 위반 여부를 조사 중이다.\n3. 이재명 대통령은 사고 수습에 만전을 기하라고 지시했으며, 최근 고가차도 붕괴 사고와 연이은 공사 현장 비극이 발생했다.",
+          "db_saved": true
+        },
+        {
+          "title": "One Dead in Collapse Accident at Suseo Station Following Seosomun… Another Case of Safety Complac...",
+          "video_id": "t-ZPc188FWc",
+          "views": 1335,
+          "upload_date": "2026-05-27",
+          "url": "https://www.youtube.com/watch?v=t-ZPc188FWc",
+          "subtitle_summary": "1. 서울 강남구 수서역 인근 아파트 공사 현장에서 토사 붕괴 사고가 발생해 60대 인부 1명이 사망했다.\n2. 사고는 강남구청이 발주한 노후 하수관 교체 공사 중 맨홀 설치 작업 도중 일어났으며, 경찰은 업무상 과실치사 혐의로 조사 중이다.\n3. 전날 발생한 서소문 고가차도 붕괴 사고 역시 안전 점검 중 붕괴 위험 신호가 있었음에도 적절한 조치 없이 인부들이 투입되어 사고가 발생한 것으로 드러났다.",
+          "db_saved": true
+        },
+        {
+          "title": "Soil collapse during sewer pipe maintenance near Suseo Station… 1 worker dead [On-site footage]",
+          "video_id": "pfz2AEto03o",
+          "views": 348,
+          "upload_date": "2026-05-27",
+          "url": "https://www.youtube.com/watch?v=pfz2AEto03o",
+          "subtitle_summary": "1. 서울 강남구 수서역 인근 하수관로 정비공사 현장에서 토사가 무너져 작업자 1명이 사망했다.\n2. 사고로 3명이 매몰됐으나 2명은 자력 대피했고, 60대 남성은 심정지 상태로 구조됐지만 끝내 숨졌다.\n3. 무너진 토사 높이는 약 2m이며, 경찰은 작업 절차 준수 여부 등 사고 경위를 수사 중이다.",
+          "db_saved": true
+        },
+        {
+          "title": "Worker in his 60s dies after being buried at sewer construction site near Suseo Station (05/27/20...",
+          "video_id": "FvRdrU92zSA",
+          "views": 4067,
+          "upload_date": "2026-05-27",
+          "url": "https://www.youtube.com/watch?v=FvRdrU92zSA",
+          "subtitle_summary": "1. 서울 강남구 수서역 인근 하수관로 정비공사 현장에서 토사가 무너져 작업자 3명이 매몰됐다.\n2. 이 중 2명은 스스로 대피했으나, 60대 남성 작업자는 심정지 상태로 발견돼 병원으로 이송됐지만 숨졌다.\n3. 경찰은 정확한 사고 원인을 조사 중이다.",
+          "db_saved": true
+        },
+        {
+          "title": "수서동 공사장 토사 쏟아져 작업자 매몰...1명 사망 [지금이뉴스] / YTN",
+          "video_id": "0IuR4kpQ21w",
+          "views": 938,
+          "upload_date": "2026-05-27",
+          "url": "https://www.youtube.com/watch?v=0IuR4kpQ21w",
+          "subtitle_summary": "1. 수서동 공사장에서 토사가 쏟아져 작업자가 매몰되는 사고가 발생했습니다.\n2. 이 사고로 인해 1명의 작업자가 사망했습니다.\n3. YTN '지금이뉴스'에서 해당 사건을 보도했습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0.8559,
+      "min": 1.837,
+      "nb_score": 0.4659,
+      "avg_views": 1653.83,
+      "total_views": 9923
+    },
+    {
+      "keyword": "평택을 단일화",
+      "is_fixed": false,
+      "views": [
+        849,
+        6473,
+        566
+      ],
+      "video_count": 3,
+      "videos": [
+        {
+          "title": "[6·3 지선] 부산 북갑·경기 평택을 단일화 요지부동…각자도생 수순 [MBN 뉴스7]",
+          "video_id": "ma0oVoF291c",
+          "views": 849,
+          "upload_date": "2026-05-27",
+          "url": "https://www.youtube.com/watch?v=ma0oVoF291c",
+          "subtitle_summary": "의 3줄 요약입니다:\n1. 부산 북갑과 경기 평택을 선거에서 보수 및 진보 진영 내 단일화 협상이 난항을 겪으며 사실상 각자도생 수순으로 접어들고 있다.\n2. 부산 북�",
+          "db_saved": true
+        },
+        {
+          "title": "정청래 폭탄선언! 평택을 단일화 빅딜 떴다! 민주당의 숨겨진 비장의 카드? 대검이 검사장 회의를 소집한 이유",
+          "video_id": "4b9Z6yoTMP8",
+          "views": 6473,
+          "upload_date": "2026-05-27",
+          "url": "https://www.youtube.com/watch?v=4b9Z6yoTMP8",
+          "subtitle_summary": "1. 정청래 민주당 대표가 평택을 국회의원 재선거 단일화와 관련해 오늘 밤 전략 점검 회의를 검토 중이며, 빅딜 가능성이 제기됨.\n2. 대검이 1년 반 만에 검사장 회의를 화상으로 소집했으며, 검찰 제도 개편과 향후 대응 방안을 논의하기 위한 것으로 알려짐.\n3. 보안 수사권 관련 논의에서 검사들의 꼼수와 법조 카르텔 우려가 제기되며, 법 제정 이후 시행령을 통한 권한 남용 가능성을 경고함.",
+          "db_saved": true
+        },
+        {
+          "title": "\"Seriously considering it\"... Will Pyeongtaek-eul's Yoo Eui-dong and Hwang Kyo-ahn unite? [Issue ...",
+          "video_id": "w5jbuZ8OhGE",
+          "views": 566,
+          "upload_date": "2026-05-27",
+          "url": "https://www.youtube.com/watch?v=w5jbuZ8OhGE",
+          "subtitle_summary": "1. 임동 후보는 황교환 후보와의",
+          "db_saved": true
+        }
+      ],
+      "max": 1.0575,
+      "min": 2.316,
+      "nb_score": 0.4566,
+      "avg_views": 2629.33,
+      "total_views": 7888
+    },
+    {
+      "keyword": "삼성전자 성과급 논란",
+      "is_fixed": false,
+      "views": [
+        2048,
+        3226,
+        2142
+      ],
+      "video_count": 3,
+      "videos": [
+        {
+          "title": "삼성전자 성과급 가결…‘한 지붕 두 삼성’ 남겼다 / KBS  2026.05.27.",
+          "video_id": "-r-GojzSY0g",
+          "views": 2048,
+          "upload_date": "2026-05-27",
+          "url": "https://www.youtube.com/watch?v=-r-GojzSY0g",
+          "subtitle_summary": "1. 삼성전자 성과급 합의안이 노조 투표(찬성률 73.7%)에서 가결됐으며, 사업부문 간 임금 격차가 극명하게 갈렸다.\n2. 메모리 사업부(성과급 6억 원)와 완제품 사업부(600만 원) 간 차이가 10배에 달해 ‘한 지붕 두 삼성’ 현상이 심화될 우려가 제기됐다.\n3. 고용노동부는 사회연대 임금 논의를 공식화했고, 삼성전자는 협력사 지원 등 상생 기금 5조 원을 내기로 했다.",
+          "db_saved": true
+        },
+        {
+          "title": "성과급 100배 격차 현실로...삼성전자 '격동의 시간' / YTN",
+          "video_id": "b8c2Bp48S8k",
+          "views": 3226,
+          "upload_date": "2026-05-27",
+          "url": "https://www.youtube.com/watch?v=b8c2Bp48S8k",
+          "subtitle_summary": "삼성전자 노사가 임금교섭 잠정 합의안을 가결하며 파업 위기를 넘겼지만, 성과급에서 메모리 사업부는 1인당 6억 원, 가전·모바일 직원은 600만 원으로 100배 차이가 나 논란이 일었다. 이로 인해 노노 갈등과 주주 반발이 커지고 있으며, 반도체 부문에 집중된 성과급 제도가 다른 기업으로도 번질 전망이다.",
+          "db_saved": true
+        },
+        {
+          "title": "다음 번엔 메모리 성과급 12억?...훼손된 '원 삼성' 회복 숙제 / YTN",
+          "video_id": "TpK8aTkHjso",
+          "views": 2142,
+          "upload_date": "2026-05-27",
+          "url": "https://www.youtube.com/watch?v=TpK8aTkHjso",
+          "subtitle_summary": "삼성전자 노사가 성과급 갈등을 잠정 합의했지만, 사업부 간 극심한 성과급 격차로 '원삼성' 정신이 훼손됐다는 우려가 제기됐다. 메모리 사업부 직원은 최대 6억~12억 원대 성과급이 예상되는 반면, 다른 부문은 600만 원 수준에 그쳐 내부 갈등이 심화될 전망이다. 삼성경영진은 5조 원을 투자해 상생과 미래 인재 육성에 나서며 노사 관계와 경영 전반을 성찰하겠다고 밝혔다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0.8289,
+      "min": 5.5,
+      "nb_score": 0.1507,
+      "avg_views": 2472.0,
+      "total_views": 7416
+    },
+    {
+      "keyword": "폴더블 스마트폰 출시",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "나는솔로 시즌17",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "외환위기 경제 전망",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "중대범죄수사청 수사",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "러시아 아르메니아 가스",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "미국 이란 유가 급락",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "TSMC AI 칩",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "LG엔솔 SK온 배터리",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "스페이스X 상장 전망",
+      "is_fixed": false,
+      "views": [
+        362
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "[TIGER 미국우주테크 ETF 전망] 스페이스X 6/12 나스닥 상장 카운트다운, 우주 ETF 자금유입 1위! +10.92% 폭등 지금 들어가도 안전한가? #TIGER미국우주테크",
+          "video_id": "zNkJ2QhjEnI",
+          "views": 362,
+          "upload_date": "2026-05-27",
+          "url": "https://www.youtube.com/watch?v=zNkJ2QhjEnI",
+          "subtitle_summary": "1. TIGER 미국우주테크 ETF가 스페이스X 상장 기대감에 10.92% 급등하며 52주 신고가를 기록했고, 거래량과 거래대금이 폭발적으로 증가했습니다.\n2. 스페이스X는 6월 12일 나스닥에 상장 예정이며",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "한국 합계출산률 통계",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    }
+  ]
+}

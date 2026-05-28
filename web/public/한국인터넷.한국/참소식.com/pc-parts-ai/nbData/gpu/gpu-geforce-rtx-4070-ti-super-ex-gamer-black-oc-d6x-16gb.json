@@ -1,0 +1,85 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-05-28T06:16:40.242+09:00",
+  "category": "GPU",
+  "id": "gpu-geforce-rtx-4070-ti-super-ex-gamer-black-oc-d6x-16gb",
+  "name": "GeForce RTX 4070 Ti SUPER EX GAMER BLACK OC D6X 16GB",
+  "maker": "GALAX",
+  "platform": "PCIe 4.0",
+  "estimatedPriceKrw": 1281000,
+  "priceBand": "60만원 이상",
+  "speedLabel": "OC",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "GPU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 82,
+  "valueIndex": 6.4,
+  "aiUseScore": 53,
+  "powerWatts": 285,
+  "tags": [
+    "gaming",
+    "high-end"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "GPU",
+    "partId": "gpu-geforce-rtx-4070-ti-super-ex-gamer-black-oc-d6x-16gb",
+    "partName": "GeForce RTX 4070 Ti SUPER EX GAMER BLACK OC D6X 16GB",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "GPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 820,
+      "value": 100,
+      "aiFit": 530,
+      "priceEfficiency": 80,
+      "powerEfficiency": 100
+    },
+    "nbVector": [
+      100,
+      820,
+      100,
+      530,
+      80,
+      100
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 106.66,
+    "nbMin": 316.698,
+    "weightedScore": 285,
+    "nbBand": "100~499",
+    "summary": "GPU GeForce RTX 4070 Ti SUPER EX GAMER BLACK OC D6X 16GB 부품을 속도 중심 N/B 데이터베이스 점수 285점으로 저장했습니다."
+  },
+  "nbWeightedScore": 285,
+  "nbMax": 106.66,
+  "nbMin": 316.698,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=GeForce%20RTX%204070%20Ti%20SUPER%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "EX GAMER BLACK model",
+  "textRepair": null
+}

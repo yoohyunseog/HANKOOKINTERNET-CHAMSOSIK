@@ -380,6 +380,39 @@
       color: var(--green);
     }
 
+    .message.streaming .bubble {
+      border-color: rgba(56, 189, 248, 0.5);
+      animation: pulse-border 1.5s ease-in-out infinite;
+    }
+
+    @keyframes pulse-border {
+      0%, 100% { border-color: rgba(56, 189, 248, 0.3); }
+      50% { border-color: rgba(56, 189, 248, 0.7); }
+    }
+
+    .typing-indicator {
+      display: inline-flex;
+      gap: 4px;
+      padding: 8px 0;
+    }
+
+    .typing-indicator span {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--cyan);
+      animation: bounce 1.4s ease-in-out infinite;
+    }
+
+    .typing-indicator span:nth-child(1) { animation-delay: 0s; }
+    .typing-indicator span:nth-child(2) { animation-delay: 0.2s; }
+    .typing-indicator span:nth-child(3) { animation-delay: 0.4s; }
+
+    @keyframes bounce {
+      0%, 80%, 100% { transform: translateY(0); }
+      40% { transform: translateY(-6px); }
+    }
+
     .meta {
       margin-top: 7px;
       color: var(--muted);
@@ -640,12 +673,12 @@
       <section class="section">
         <h2>Ollama 연결</h2>
         <div class="field">
-          <label for="endpointInput">Fallback API Base URL</label>
-          <input id="endpointInput" type="url" value="">
+          <label for="endpointInput">원격 서버 API URL</label>
+          <input id="endpointInput" type="url" value="http://211.45.162.155:11434" placeholder="http://211.45.162.155:11434">
         </div>
         <div class="field">
           <label for="modelInput">Model</label>
-          <input id="modelInput" type="text" value="deepseek-v4-flash:cloud">
+          <input id="modelInput" type="text" value="glm-5:cloud" placeholder="glm-5:cloud, gemma4:31b-cloud">
         </div>
         <div class="field">
           <label for="temperatureInput">Temperature</label>
@@ -661,7 +694,7 @@
         <h2>System Prompt</h2>
         <div class="field">
           <label for="systemInput">역할</label>
-          <textarea id="systemInput">너는 참소식.com의 한국어 AI 어시스턴트다. 답변은 명확하고 실용적으로 작성한다. 확인되지 않은 사실은 단정하지 말고, 필요한 경우 확인해야 할 항목을 분리한다.</textarea>
+          <textarea id="systemInput"></textarea>
         </div>
       </section>
 
@@ -694,13 +727,18 @@
   </div>
 
   <script>
-    const DEFAULT_ENDPOINT = "https://gilbert-bases-tracked-hopes.trycloudflare.com";
-    const DEFAULT_MODEL = "deepseek-v4-flash:cloud";
+    // 원격 서버 Ollama 설정
+    const REMOTE_SERVER = "http://211.45.162.155:11434";
+    const OLLAMA_API_KEY = "d8cf2811037b4791b2e36ffb4afee830.LrLvzfuvzutO7MLHciyiUtpq";
+    
+    const DEFAULT_ENDPOINT = REMOTE_SERVER;
+    const DEFAULT_MODEL = "glm-5:cloud";
     const LEGACY_ENDPOINTS = [
+      "https://gilbert-bases-tracked-hopes.trycloudflare.com",
       "https://cyclopedically-orthogenetic-sienna.ngrok-free.dev",
       "https://corporate-value-sailing-position.trycloudflare.com"
     ];
-    const LEGACY_MODELS = ["kimi-k2.6:cloud"];
+    const LEGACY_MODELS = ["kimi-k2.6:cloud", "deepseek-v4-flash:cloud"];
     const storageKey = "chamsosik-ollama-ide-state";
 
     const els = {
@@ -735,10 +773,13 @@
       try {
         const saved = JSON.parse(localStorage.getItem(storageKey) || "{}");
         if (saved && Array.isArray(saved.conversations)) {
+          // 이전 Cloudflare 터널 URL이면 기본값으로 초기화
+          const endpoint = saved.endpoint || DEFAULT_ENDPOINT;
+          const cleanEndpoint = endpoint.includes('trycloudflare.com') ? DEFAULT_ENDPOINT : endpoint;
           return {
             conversations: saved.conversations,
             activeId: saved.activeId,
-            endpoint: saved.endpoint || DEFAULT_ENDPOINT,
+            endpoint: cleanEndpoint,
             model: saved.model || DEFAULT_MODEL,
             temperature: saved.temperature || "0.5",
             system: saved.system || els.systemInput.value
@@ -791,22 +832,28 @@
 
     function candidateBases() {
       const bases = [endpointBase()];
+      // 원격 서버 Ollama 추가
+      if (!bases.includes(REMOTE_SERVER)) {
+        bases.push(REMOTE_SERVER);
+      }
       const canTryLocalhost = window.location.protocol !== "https:";
-      if (canTryLocalhost && !bases.includes("http://127.0.0.1:3110")) {
-        bases.push("http://127.0.0.1:3110");
+      if (canTryLocalhost && !bases.includes("http://127.0.0.1:11434")) {
+        bases.push("http://127.0.0.1:11434");
       }
       return bases;
     }
 
     function candidateChatUrls() {
-      if (window.location.protocol === "https:") {
-        return ["/api/ollama-chat"];
+      const urls = ["/api/ollama-chat"];
+      // 원격 서버 Ollama API 직접 호출
+      urls.push(`${REMOTE_SERVER}/api/chat`);
+      // Fallback URL (Cloudflare Tunnel 등)
+      for (const base of candidateBases()) {
+        if (base !== REMOTE_SERVER && !urls.includes(`${base}/api/chat`)) {
+          urls.push(`${base}/api/chat`);
+        }
       }
-
-      return [
-        "/api/ollama-chat",
-        ...candidateBases().map((base) => `${base}/api/chat`)
-      ];
+      return urls;
     }
 
     function escapeHtml(value) {
@@ -853,16 +900,26 @@
       if (!conversation || !conversation.messages.length) {
         els.chatLog.innerHTML = `<div class="empty">
           <h1>Ollama 작업공간</h1>
-          <p>질문을 보내면 먼저 같은 도메인의 <strong>/api/ollama-chat</strong>으로 요청합니다. 서버에 Ollama가 있으면 실제 모델이 답하고, 없으면 서버 내장 응답으로 전환됩니다.</p>
+          <p>질문을 보내면 <strong>원격 서버 Ollama (211.45.162.155:11434)</strong>로 요청합니다.</p>
+          <p>클라우드 모델: <strong>glm-5:cloud</strong>, <strong>gemma4:31b-cloud</strong></p>
           <p style="margin-top:12px;color:var(--cyan);font-weight:900;">🔍 상단 <strong>웹검색</strong> 버튼을 누르면 AI가 실시간 웹 검색 결과를 참고하여 답변합니다.</p>
+          <p style="margin-top:8px;color:var(--muted);">✨ 스트리밍 응답: 토큰 단위로 실시간 표시됩니다.</p>
         </div>`;
         scrollChatToBottom();
         return;
       }
 
-      els.chatLog.innerHTML = conversation.messages.map((message) => {
+      els.chatLog.innerHTML = conversation.messages.map((message, index) => {
         const roleLabel = message.role === "user" ? "USER" : "AI";
+        const isStreaming = message.role === "assistant" && !message.content && index === conversation.messages.length - 1;
+        const streamClass = isStreaming ? " streaming" : "";
         let extraHtml = "";
+        
+        // 스트리밍 중이면 로딩 표시
+        const contentHtml = isStreaming 
+          ? `<div class="typing-indicator"><span></span><span></span><span></span></div>`
+          : escapeHtml(message.content);
+        
         // 검색 결과가 있으면 표시
         if (message.searchResults && message.searchResults.length > 0) {
           extraHtml = `<details style="margin-top:8px;font-size:12px;color:var(--muted);">
@@ -877,10 +934,10 @@
             </div>
           </details>`;
         }
-        return `<article class="message ${message.role}">
+        return `<article class="message ${message.role}${streamClass}">
           <div class="role">${roleLabel}</div>
           <div>
-            <div class="bubble">${escapeHtml(message.content)}${extraHtml}</div>
+            <div class="bubble">${contentHtml}${extraHtml}</div>
             <div class="meta">${escapeHtml(message.model || "")} ${escapeHtml(message.time || "")}</div>
           </div>
         </article>`;
@@ -955,7 +1012,8 @@
         if (!response.ok) return;
         const data = await response.json();
         const url = String(data.url || "").trim().replace(/\/$/, "");
-        if (/^https:\/\/[a-z0-9-]+\.trycloudflare\.com$/i.test(url)) {
+        // Cloudflare 터널 또는 원격 서버 URL 허용
+        if (/^https?:\/\/[a-z0-9.-]+/.test(url)) {
           els.endpointInput.value = url;
           log(`tunnel url loaded: ${url}`);
           saveState();
@@ -973,10 +1031,370 @@
         `질문: ${prompt}`,
         "",
         "확인할 것:",
-        "1. 오른쪽 API Base URL이 https://gilbert-bases-tracked-hopes.trycloudflare.com 처럼 https로 시작하는지 확인",
-        "2. Cloudflare Quick Tunnel 주소가 바뀌었다면 새 주소를 붙여 넣기",
-        "3. 로컬 서버가 http://localhost:3110 에서 켜져 있는지 확인"
+        "1. 원격 서버 Ollama가 실행 중인지 확인 (http://211.45.162.155:11434)",
+        "2. API 키가 올바른지 확인",
+        "3. 네트워크 연결 상태 확인",
+        "",
+        "클라우드 모델: glm-5:cloud, gemma4:31b-cloud"
       ].join("\n");
+    }
+
+    // Ollama Web Search API - 웹 검색
+    async function webSearch(query, maxResults = 5) {
+      try {
+        const response = await fetch("/api/ollama-web-search", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ query, max_results: maxResults })
+        });
+        const data = await response.json();
+        if (!response.ok) {
+          throw new Error(`Web search failed: ${data.error || response.status}`);
+        }
+        return data;
+      } catch (error) {
+        log(`web search error: ${error.message}`);
+        return { ok: false, error: error.message, results: [] };
+      }
+    }
+
+    // Ollama Web Fetch API - 웹 페이지 크롤링
+    async function webFetch(url) {
+      try {
+        const response = await fetch("/api/ollama-web-fetch", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ url })
+        });
+        const data = await response.json();
+        if (!response.ok) {
+          throw new Error(`Web fetch failed: ${data.error || response.status}`);
+        }
+        return data;
+      } catch (error) {
+        log(`web fetch error: ${error.message}`);
+        return { ok: false, error: error.message, content: "", links: [] };
+      }
+    }
+
+    // 웹 검색 결과를 포맷팅
+    function formatSearchResults(results) {
+      if (!results || results.length === 0) return "";
+      return results.map((r, i) => 
+        `[${i + 1}] **${r.title || "제목 없음"}**\n${r.url}\n${(r.content || "").slice(0, 200)}...`
+      ).join("\n\n");
+    }
+
+    // RAG 라우터: 키워드 기반 검색 필요성 판단
+    async function analyzeSearchNeed(query, conversation) {
+      // 검색이 필요한 키워드 패턴
+      const searchKeywords = [
+        // 시간 관련
+        '최신', '최근', '오늘', '어제', '이번', '지난', '올해', '작년',
+        '지금', '현재', '요즘', '신규', '새로운', '새로',
+        // 정보 검색
+        '검색', '찾아', '조회', '확인', '알려', '뭐', '무엇', '어디', '누구',
+        '어떤', '어느', '언제', '왜', '어떻게',
+        // 뉴스/이슈
+        '뉴스', '기사', '소식', '이슈', '사건', '사고', '발생',
+        '보도', '기자', '언론',
+        // 실시간 정보
+        '날씨', '온도', '비', '눈', '미세먼지', '날짜', '시간',
+        '주가', '주식', '환율', '시세', '가격',
+        // 비교/추천
+        '비교', '추천', '순위', '랭킹', 'best', 'top',
+        // 상태
+        '현황', '상황', '동향', '트렌드', '유행'
+      ];
+      
+      // 검색이 필요 없는 패턴 (일반 대화, 창작, 분석)
+      const noSearchKeywords = [
+        '코드', '작성', '만들어', '생성', '번역', '요약해', '정리해',
+        '수정', '변경', '개선', '리팩토링',
+        '이야기', '소설', '시', '글', '에세이',
+        '계산', '수학', '공식',
+        '안녕', '반가워', '고마워', '감사', '잘했', '좋아'
+      ];
+      
+      const queryLower = query.toLowerCase();
+      
+      // 검색 필요 키워드 매칭
+      const searchMatches = searchKeywords.filter(kw => queryLower.includes(kw));
+      // 검색 불필요 키워드 매칭
+      const noSearchMatches = noSearchKeywords.filter(kw => queryLower.includes(kw));
+      
+      // 점수 계산
+      const searchScore = searchMatches.length;
+      const noSearchScore = noSearchMatches.length;
+      
+      // 판단 로직
+      const needsSearch = searchScore > 0 && searchScore >= noSearchScore;
+      
+      // 검색 키워드 추출
+      const keywords = needsSearch ? extractKeywords(query) : [];
+      
+      const result = {
+        needsSearch,
+        reason: needsSearch 
+          ? `검색 키워드 감지: ${searchMatches.join(', ')}` 
+          : (noSearchScore > 0 
+            ? `일반 대화 감지: ${noSearchMatches.join(', ')}` 
+            : '직접 응답'),
+        keywords,
+        confidence: Math.min(1, (Math.abs(searchScore - noSearchScore) + 1) / 3),
+        matchedKeywords: searchMatches
+      };
+      
+      log(`🔍 검색 판단: ${result.needsSearch ? '검색필요' : '직접응답'} - ${result.reason}`);
+      return result;
+    }
+
+    // 질문에서 검색 키워드 추출
+    function extractKeywords(query) {
+      // 불용어 제거
+      const stopWords = ['은', '는', '이', '가', '을', '를', '에', '의', '와', '과', '도', '다', '요', '좀', '좀', '어때', '알려줘', '말해줘', '가르쳐'];
+      let cleaned = query;
+      stopWords.forEach(w => cleaned = cleaned.replace(new RegExp(w, 'g'), ' '));
+      
+      // 공백으로 분리하고 중요 단어만 추출
+      const words = cleaned.split(/\s+/).filter(w => w.length >= 2);
+      
+      // 상위 3개 키워드 반환
+      return words.slice(0, 3);
+    }
+
+    // 스마트 채팅: AI가 검색 필요성 판단 후 처리
+    async function smartChat(prompt) {
+      const model = els.modelInput.value.trim() || DEFAULT_MODEL;
+      const conversation = currentConversation();
+      const systemPrompt = els.systemInput.value.trim();
+
+      // 1단계: 검색 필요성 판단 (80% 확률)
+      log("🤖 검색 필요성 판단 중...");
+      const analysis = await analyzeSearchNeed(prompt, conversation);
+
+      // 2단계: 검색이 필요하면 웹 검색 수행
+      let searchResults = null;
+      let searchContext = "";
+
+      if (analysis.needsSearch && analysis.keywords.length > 0) {
+        log(`🔍 검색 키워드: ${analysis.keywords.join(', ')}`);
+        
+        // 웹 검색 수행
+        const searchData = await webSearch(analysis.keywords.join(' '), 5);
+        if (searchData.results && searchData.results.length > 0) {
+          searchResults = searchData.results;
+          log(`✅ 검색 완료: ${searchResults.length}건`);
+          
+          // 상위 2개 결과 실제 크롤링
+          log(`📄 상위 결과 크롤링 중...`);
+          const fetchPromises = searchResults.slice(0, 2).map(async (r, i) => {
+            try {
+              const fetched = await webFetch(r.url);
+              if (fetched.content) {
+                r.content = fetched.content; // 전체 내용 저장 (자르지 않음)
+                log(`   [${i + 1}] 크롤링 성공: ${(r.title || '제목없음').slice(0, 30)}`);
+              }
+            } catch (e) {
+              log(`   [${i + 1}] 크롤링 실패: ${e.message.slice(0, 50)}`);
+            }
+            return r;
+          });
+          
+          // 크롤링 완료 대기
+          await Promise.all(fetchPromises);
+          
+          // 검색 결과를 컨텍스트로 변환 (전체 내용 포함)
+          searchContext = "\n\n[웹 검색 결과]\n" + searchResults.map((r, i) => {
+            const content = r.content || r.snippet || r.description || '';
+            return `[${i + 1}] ${r.title || '제목 없음'}\n${r.url}\n${content}\n---`;
+          }).join('\n\n');
+        }
+      } else {
+        log(`💬 직접 응답: ${analysis.reason}`);
+      }
+
+      // 3단계: AI에 최종 요청
+      const messages = [
+        { role: "system", content: systemPrompt },
+        ...conversation.messages.slice(-12).map((item) => ({ role: item.role, content: item.content }))
+      ];
+
+      // 검색 결과가 있으면 사용자 메시지에 컨텍스트 추가
+      const enhancedPrompt = searchContext 
+        ? `${prompt}\n\n[참고: 위 검색 결과를 활용하여 답변하세요. 출처를 반드시 표시하세요.]${searchContext}`
+        : prompt;
+
+      try {
+        const response = await fetch("/api/ollama-chat", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            model,
+            messages: [
+              ...messages,
+              { role: "user", content: enhancedPrompt }
+            ],
+            temperature: Number(els.temperatureInput.value),
+            num_predict: 32768  // 최대 긴 응답 허용
+          })
+        });
+
+        const text = await response.text();
+        if (!response.ok) {
+          throw new Error(`AI request failed: ${response.status}`);
+        }
+
+        let reply;
+        try {
+          const data = JSON.parse(text);
+          reply = normalizeReply(data);
+        } catch {
+          reply = text;
+        }
+
+        return {
+          content: reply,
+          search: searchResults ? { results: searchResults, analysis } : null,
+          analysis
+        };
+      } catch (error) {
+        log(`smart chat error: ${error.message}`);
+        throw error;
+      }
+    }
+
+    // 스트리밍 응답 처리
+    async function streamAI(prompt, onChunk, onComplete) {
+      const model = els.modelInput.value.trim() || DEFAULT_MODEL;
+      const conversation = currentConversation();
+      const systemPrompt = els.systemInput.value.trim();
+      
+      // 검색 필요성 판단
+      let searchResults = null;
+      let searchContext = "";
+      
+      if (webSearchEnabled) {
+        const analysis = await analyzeSearchNeed(prompt, conversation);
+        
+        if (analysis.needsSearch && analysis.keywords.length > 0) {
+          log(`🔍 검색 키워드: ${analysis.keywords.join(', ')}`);
+          
+          const searchData = await webSearch(analysis.keywords.join(' '), 5);
+          if (searchData.results && searchData.results.length > 0) {
+            searchResults = searchData.results;
+            log(`✅ 검색 완료: ${searchResults.length}건`);
+            
+            // 상위 2개 결과 크롤링
+            const fetchPromises = searchResults.slice(0, 2).map(async (r, i) => {
+              try {
+                const fetched = await webFetch(r.url);
+                if (fetched.content) {
+                  r.content = fetched.content;
+                  log(`   [${i + 1}] 크롤링 성공: ${(r.title || '제목없음').slice(0, 30)}`);
+                }
+              } catch (e) {
+                log(`   [${i + 1}] 크롤링 실패: ${e.message.slice(0, 50)}`);
+              }
+              return r;
+            });
+            await Promise.all(fetchPromises);
+            
+            searchContext = "\n\n[웹 검색 결과]\n" + searchResults.map((r, i) => {
+              const content = r.content || r.snippet || r.description || '';
+              return `[${i + 1}] ${r.title || '제목 없음'}\n${r.url}\n${content}\n---`;
+            }).join('\n\n');
+          }
+        }
+      }
+      
+      // 메시지 구성
+      const messages = [
+        { role: "system", content: systemPrompt },
+        ...conversation.messages.slice(-12).map((item) => ({ role: item.role, content: item.content }))
+      ];
+      
+      const enhancedPrompt = searchContext 
+        ? `${prompt}\n\n[참고: 위 검색 결과를 활용하여 답변하세요. 출처를 반드시 표시하세요.]${searchContext}`
+        : prompt;
+
+      // 스트리밍 API 호출
+      const body = {
+        model,
+        messages: [...messages, { role: "user", content: enhancedPrompt }],
+        stream: true,
+        temperature: Number(els.temperatureInput.value)
+      };
+
+      let lastError = null;
+      for (const url of candidateChatUrls()) {
+        try {
+          const sameOriginProxy = url === "/api/ollama-chat";
+          log(`POST ${url} model=${model} stream=true`);
+          
+          const response = await fetch(url, {
+            method: "POST",
+            headers: {
+              "Content-Type": sameOriginProxy ? "application/json" : "text/plain",
+              "Authorization": `Bearer ${OLLAMA_API_KEY}`
+            },
+            body: JSON.stringify(body)
+          });
+
+          if (!response.ok) {
+            const text = await response.text();
+            throw new Error(`${url} ${response.status} ${text.slice(0, 180)}`);
+          }
+
+          // 스트리밍 응답 처리
+          const reader = response.body.getReader();
+          const decoder = new TextDecoder();
+          let fullContent = "";
+          let buffer = "";
+
+          while (true) {
+            const { done, value } = await reader.read();
+            if (done) break;
+            
+            buffer += decoder.decode(value, { stream: true });
+            const lines = buffer.split("\n");
+            buffer = lines.pop() || "";
+            
+            for (const line of lines) {
+              if (!line.trim() || line.startsWith(":")) continue;
+              
+              try {
+                const data = JSON.parse(line);
+                if (data.message?.content) {
+                  fullContent += data.message.content;
+                  onChunk(data.message.content, fullContent);
+                } else if (data.response) {
+                  // Ollama 기본 형식
+                  fullContent += data.response;
+                  onChunk(data.response, fullContent);
+                } else if (data.content) {
+                  fullContent += data.content;
+                  onChunk(data.content, fullContent);
+                }
+              } catch (e) {
+                // JSON 파싱 실패 시 텍스트로 처리
+                if (line.trim()) {
+                  fullContent += line;
+                  onChunk(line, fullContent);
+                }
+              }
+            }
+          }
+
+          onComplete(fullContent, searchResults);
+          return;
+        } catch (error) {
+          lastError = error;
+          log(`stream failed on ${url}: ${error.message}`);
+        }
+      }
+
+      throw lastError || new Error("all streaming endpoints failed");
     }
 
     async function requestAI(prompt) {
@@ -995,11 +1413,22 @@
         temperature: Number(els.temperatureInput.value)
       };
 
-      // 웹 검색이 켜져 있으면 /api/ollama-chat-with-search 사용
+      // 웹 검색이 켜져 있으면 스트리밍 사용
       if (webSearchEnabled) {
-        body.search_query = prompt;
-        body.max_results = 5;
-        return await requestAIWithSearch(body);
+        // 스트리밍 응답 반환 (Promise로 래핑)
+        return new Promise((resolve, reject) => {
+          let fullContent = "";
+          streamAI(
+            prompt,
+            (chunk, accumulated) => {
+              // 실시간 업데이트
+              fullContent = accumulated;
+            },
+            (content, searchResults) => {
+              resolve({ content, search: searchResults ? { results: searchResults } : null });
+            }
+          ).catch(reject);
+        });
       }
 
       let lastError = null;
@@ -1010,7 +1439,8 @@
           const response = await fetch(url, {
             method: "POST",
             headers: {
-              "Content-Type": sameOriginProxy ? "application/json" : "text/plain"
+              "Content-Type": sameOriginProxy ? "application/json" : "text/plain",
+              "Authorization": `Bearer ${OLLAMA_API_KEY}`
             },
             body: JSON.stringify(body)
           });
@@ -1106,50 +1536,60 @@
         conversation.title = prompt.slice(0, 34);
       }
 
+      // 사용자 메시지 추가
       conversation.messages.push({ role: "user", content: prompt, time: formatTime() });
       els.promptInput.value = "";
       els.sendButton.disabled = true;
       updateMetrics("실행");
       render();
 
+      // AI 응답 placeholder 추가 (스트리밍용)
+      const aiMsgIndex = conversation.messages.length;
+      conversation.messages.push({
+        role: "assistant",
+        content: "",
+        time: formatTime(),
+        model: els.modelInput.value.trim()
+      });
+      render();
+
       const started = performance.now();
+      
       try {
-        const reply = await requestAI(prompt);
-        const ms = Math.round(performance.now() - started);
-        els.latencyMetric.textContent = `${ms}ms`;
-
-        // 웹 검색 결과를 메시지에 저장 (reply가 객체인 경우)
-        let searchResults = null;
-        let replyText = reply;
-        if (typeof reply === 'object' && reply !== null) {
-          replyText = reply.content || reply.text || JSON.stringify(reply);
-          searchResults = reply.search?.results || null;
-        }
-
-        const msg = {
-          role: "assistant",
-          content: replyText,
-          time: formatTime(),
-          model: els.modelInput.value.trim()
-        };
-        if (searchResults) msg.searchResults = searchResults;
-        conversation.messages.push(msg);
-
-        setOnline(true, "AI 응답 완료");
-        log(`response ok ${ms}ms`);
+        // 스트리밍 응답 처리
+        await streamAI(
+          prompt,
+          // onChunk: 실시간 업데이트
+          (chunk, accumulated) => {
+            conversation.messages[aiMsgIndex].content = accumulated;
+            render();
+            scrollChatToBottom();
+          },
+          // onComplete: 완료
+          (fullContent, searchResults) => {
+            const ms = Math.round(performance.now() - started);
+            els.latencyMetric.textContent = `${ms}ms`;
+            
+            conversation.messages[aiMsgIndex].content = fullContent;
+            if (searchResults) {
+              conversation.messages[aiMsgIndex].searchResults = searchResults;
+            }
+            
+            setOnline(true, "AI 응답 완료");
+            log(`streaming complete ${ms}ms`);
+            saveState();
+            render();
+          }
+        );
       } catch (error) {
-        conversation.messages.push({
-          role: "assistant",
-          content: fallbackReply(prompt),
-          time: formatTime(),
-          model: "local-fallback"
-        });
+        // 에러 시 fallback
+        conversation.messages[aiMsgIndex].content = fallbackReply(prompt);
         setOnline(false, "API 응답 실패");
         log(`request failed: ${error.message}`);
+        render();
       } finally {
         els.sendButton.disabled = false;
         updateMetrics("대기");
-        render();
       }
     }
 

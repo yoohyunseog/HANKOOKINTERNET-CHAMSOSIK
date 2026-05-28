@@ -1,0 +1,84 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-05-28T06:16:40.242+09:00",
+  "category": "GPU",
+  "id": "gpu-geforce-rtx-4060-ti-ventus-3x-8g-oc",
+  "name": "GeForce RTX 4060 Ti Ventus 3X 8G OC",
+  "maker": "MSI",
+  "platform": "PCIe 4.0",
+  "estimatedPriceKrw": 1139550,
+  "priceBand": "60만원 이상",
+  "speedLabel": "2580MHz",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "GPU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 65,
+  "valueIndex": 5.7,
+  "aiUseScore": 42,
+  "powerWatts": 160,
+  "tags": [
+    "gaming"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "GPU",
+    "partId": "gpu-geforce-rtx-4060-ti-ventus-3x-8g-oc",
+    "partName": "GeForce RTX 4060 Ti Ventus 3X 8G OC",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "GPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 650,
+      "value": 100,
+      "aiFit": 420,
+      "priceEfficiency": 90,
+      "powerEfficiency": 135
+    },
+    "nbVector": [
+      100,
+      650,
+      100,
+      420,
+      90,
+      135
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 111.678,
+    "nbMin": 349.856,
+    "weightedScore": 243,
+    "nbBand": "100~499",
+    "summary": "GPU GeForce RTX 4060 Ti Ventus 3X 8G OC 부품을 속도 중심 N/B 데이터베이스 점수 243점으로 저장했습니다."
+  },
+  "nbWeightedScore": 243,
+  "nbMax": 111.678,
+  "nbMin": 349.856,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=GeForce%20RTX%204060%20Ti%20MSI%20Ventus%203X%208GB%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "Ventus 3X triple fan cooler, OC edition",
+  "textRepair": null
+}

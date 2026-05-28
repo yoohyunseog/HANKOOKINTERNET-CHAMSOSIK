@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-27T23:36:11.263+09:00",
+  "updatedAt": "2026-05-28T06:16:40.242+09:00",
   "category": "Mainboard",
   "id": "mainboard-asrock-b860-pro-rs-wifi",
   "name": "ASRock B860 Pro RS WiFi",
@@ -82,7 +82,7 @@
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=B860%20%EB%A9%94%EC%9D%B8%EB%B3%B4%EB%93%9C%20%EC%B5%9C%EC%A0%80%EA%B0%80",
   "notes": "ASRock B860 Pro RS WiFi은 CPU 소켓, 메모리 규격, 확장성을 함께 확인할 메인보드 후보입니다.",
   "textRepair": {
-    "checkedAt": "2026-05-27T23:36:14.954+09:00",
+    "checkedAt": "2026-05-28T06:16:43.555+09:00",
     "method": "ai-text-sanity-rules",
     "repairedFields": [
       "notes"

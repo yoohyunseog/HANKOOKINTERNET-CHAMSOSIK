@@ -29,10 +29,10 @@ loadEnvFile(path.join(__dirname, ".env"));
 
 const HOST = process.env.HOST || "0.0.0.0";
 const PORT = Number(process.env.PORT || 3110);
-const OLLAMA_URL = (process.env.OLLAMA_URL || "http://127.0.0.1:11434").replace(/\/$/, "");
-const DEFAULT_MODEL = process.env.OLLAMA_MODEL || "deepseek-v4-flash:cloud";
+const OLLAMA_URL = (process.env.OLLAMA_URL || "http://211.45.162.155:11434").replace(/\/$/, "");
+const DEFAULT_MODEL = process.env.OLLAMA_MODEL || "glm-5:cloud";
 const API_TOKEN = process.env.OLLAMA_PROXY_TOKEN || "";
-const OLLAMA_API_KEY = process.env.OLLAMA_API_KEY || process.env.OLLAMA_WEB_SEARCH_API_KEY || process.env.OLLAMA_KEY || "";
+const OLLAMA_API_KEY = process.env.OLLAMA_API_KEY || process.env.OLLAMA_WEB_SEARCH_API_KEY || process.env.OLLAMA_KEY || "d8cf2811037b4791b2e36ffb4afee830.LrLvzfuvzutO7MLHciyiUtpq";
 const OLLAMA_WEB_SEARCH_URL = process.env.OLLAMA_WEB_SEARCH_URL || "https://ollama.com/api/web_search";
 const ALLOWED_ORIGIN = process.env.ALLOWED_ORIGIN || "*";
 const MAX_BODY_BYTES = Number(process.env.MAX_BODY_BYTES || 1_000_000);
@@ -1684,7 +1684,10 @@ function buildSearchChatMessages(messages, query, results) {
         "Answer in Korean.",
         "Use the supplied web search results as current context.",
         "When facts come from search results, include the source URL in the answer.",
-        "If the results are insufficient, say what still needs confirmation."
+        "If the results are insufficient, say what still needs confirmation.",
+        "Do not use markdown formatting like #, *, _, or backticks.",
+        "Use plain text with bullet points using - or numbers.",
+        "Keep the response complete and do not cut off mid-sentence."
       ].join(" ")
     },
     {
@@ -2227,7 +2230,7 @@ async function handleSearchChat(req, res) {
       messages: buildSearchChatMessages(messages, query, results),
       options: body.options || {
         temperature: Number(body.temperature || 0.35),
-        num_predict: Number(body.num_predict || 1200),
+        num_predict: Number(body.num_predict || 2000),
         num_ctx: Number(body.num_ctx || 32768)
       }
     });
