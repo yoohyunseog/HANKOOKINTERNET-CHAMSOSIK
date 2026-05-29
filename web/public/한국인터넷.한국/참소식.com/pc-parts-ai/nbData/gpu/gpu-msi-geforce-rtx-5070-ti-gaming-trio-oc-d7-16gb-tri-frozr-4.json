@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-28T13:52:33.150+09:00",
+  "updatedAt": "2026-05-29T15:17:01.685+09:00",
   "category": "GPU",
   "id": "gpu-msi-geforce-rtx-5070-ti-gaming-trio-oc-d7-16gb-tri-frozr-4",
   "name": "MSI GeForce RTX 5070 Ti Gaming Trio OC D7 16GB Tri Frozr 4",
@@ -81,5 +81,9 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=GeForce%20RTX%205070%20Ti%20MSI%20Gaming%20X%20Slim%20%EB%8B%A4%EB%82%98%EC%99%80",
   "notes": "GDDR7 memory, Tri Frozr 4 cooler, 3-fan design",
-  "textRepair": null
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
 }

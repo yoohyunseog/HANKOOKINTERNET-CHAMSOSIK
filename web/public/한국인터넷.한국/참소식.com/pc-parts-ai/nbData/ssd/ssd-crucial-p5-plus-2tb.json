@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-28T13:52:33.150+09:00",
+  "updatedAt": "2026-05-29T15:17:03.139+09:00",
   "category": "SSD",
   "id": "ssd-crucial-p5-plus-2tb",
   "name": "Crucial P5 Plus 2TB",
@@ -21,7 +21,7 @@
   "performance": 70,
   "valueIndex": 60.6,
   "aiUseScore": 46,
-  "powerWatts": null,
+  "powerWatts": 0,
   "tags": [
     "gaming",
     "ps5"
@@ -81,5 +81,9 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Crucial%20P5%20Plus%202TB%20%EC%B5%9C%EC%A0%80%EA%B0%80",
   "notes": "PCIe 4.0 x4, TLC, DRAM cache included",
-  "textRepair": null
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
 }

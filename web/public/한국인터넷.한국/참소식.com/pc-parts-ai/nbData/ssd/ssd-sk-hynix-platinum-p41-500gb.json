@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-28T13:52:33.150+09:00",
+  "updatedAt": "2026-05-29T15:17:03.252+09:00",
   "category": "SSD",
   "id": "ssd-sk-hynix-platinum-p41-500gb",
   "name": "SK hynix Platinum P41 500GB",
@@ -21,7 +21,7 @@
   "performance": 85,
   "valueIndex": 40,
   "aiUseScore": 55,
-  "powerWatts": null,
+  "powerWatts": 0,
   "tags": [
     "NVMe",
     "Gen4"
@@ -81,5 +81,9 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=SK%20hynix%20Platinum%20P41%20500GB%20price",
   "notes": "500GB capacity, TBW 500TB",
-  "textRepair": null
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
 }

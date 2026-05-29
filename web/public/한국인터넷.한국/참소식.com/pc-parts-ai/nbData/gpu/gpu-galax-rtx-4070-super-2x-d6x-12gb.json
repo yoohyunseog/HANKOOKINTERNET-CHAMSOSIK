@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-28T13:52:33.150+09:00",
+  "updatedAt": "2026-05-29T15:16:58.478+09:00",
   "category": "GPU",
   "id": "gpu-galax-rtx-4070-super-2x-d6x-12gb",
   "name": "갤럭시 GALAX 지포스 RTX 4070 SUPER 2X D6X 12GB",
@@ -80,5 +80,9 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=%EA%B0%A4%EB%9F%AD%EC%8B%9C%20GALAX%20%EC%A7%80%ED%8F%AC%EC%8A%A4%20RTX%204070%20SUPER%20%EC%B5%9C%EC%A0%80%EA%B0%80",
   "notes": "Standard 2-fan model",
-  "textRepair": null
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
 }

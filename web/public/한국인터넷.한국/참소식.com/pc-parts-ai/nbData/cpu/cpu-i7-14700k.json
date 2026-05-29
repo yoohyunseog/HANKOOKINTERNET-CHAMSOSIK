@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-28T13:52:33.150+09:00",
+  "updatedAt": "2026-05-29T15:16:57.631+09:00",
   "category": "CPU",
   "id": "cpu-i7-14700k",
   "name": "인텔 코어 i7-14700K (랩터레이크 리프레시)",
@@ -81,5 +81,9 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Intel%20%EC%BD%94%EC%96%B4%20i7-14700K%20%EC%B5%9C%EC%A0%80%EA%B0%80",
   "notes": "Bulk version observed in search results.",
-  "textRepair": null
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
 }

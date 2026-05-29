@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-28T13:52:33.150+09:00",
+  "updatedAt": "2026-05-29T15:17:03.020+09:00",
   "category": "RAM",
   "id": "ram-ddr5-6400-cl52-cudimm-64gb",
   "name": "삼성전자 DDR5-6400 CL52 CUDIMM 64GB",
@@ -21,7 +21,7 @@
   "performance": 75,
   "valueIndex": 19.8,
   "aiUseScore": 49,
-  "powerWatts": null,
+  "powerWatts": 0,
   "tags": [
     "CUDIMM",
     "Intel 15th Gen"
@@ -81,5 +81,9 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90%20DDR5-6400%20CL52%20CUDIMM%2064GB%20%EC%B5%9C%EC%A0%80%EA%B0%80",
   "notes": "CUDIMM module for Intel 15th Gen (LGA1851) platforms.",
-  "textRepair": null
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
 }

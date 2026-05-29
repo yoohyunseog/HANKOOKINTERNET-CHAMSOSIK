@@ -1,0 +1,463 @@
+{
+  "timestamp": "2026-05-28T22:24:11.133004",
+  "model": "glm-5:cloud",
+  "keyword_count": 3,
+  "analyze_subtitles": true,
+  "analysis_source": "youtube",
+  "keywords": [
+    {
+      "keyword": "오늘의 주요 뉴스",
+      "is_fixed": true,
+      "views": [
+        261,
+        498
+      ],
+      "video_count": 2,
+      "videos": [
+        {
+          "title": "[12 News] Today's Top Stories / SBS",
+          "video_id": "KOSURbdgyMc",
+          "views": 261,
+          "upload_date": "2026-05-28",
+          "url": "https://www.youtube.com/watch?v=KOSURbdgyMc",
+          "subtitle_summary": "1.  Analyze the Request:\nSource Material: A YouTube subtitle script from SBS 12 News.\nContent:\nCollapse of Seosomun Overpass (3rd day, recovery delayed due to collapse risk, police/prosecution investigation).\nLocal elections/by-elections (Pre-voting starts tomorrow for 2 days, ruling/opposition parties campaigning).\nUS-Iran tension (US military strikes Iranian facilities near Strait of Hormuz, shoots down drones, Trump comments on negotiations).\nKakao labor strike (First strike since incorporation, 2nd mediation failed, union declares strike next month).\nConstraints:\nLanguage: Korean ONLY (no English).\nLength: Around 500 characters (Korean characters).\nStructure: 3-5 sentences summarizing key points.\n2.  Drafting the Summary (Iterative Process):\nAttempt 1 (Mental Outline):\n서소문 고가 차도 붕괴 사고가 나고 사흘이 지났지만 복구가 안 되고 수사가 시작됐다. 내일부터 지방선거 사전투표가 시작돼서 여야가 경쟁 중이다. 미군이 이란을 공습하고 트럼프가 협상이 안 됐다고 했다. 카카오 노조가 파업을 선언했다.\nAttempt 2 (Refining and expanding for length/detail):\n서소문 고가 차도 붕괴 사고가 발생한 지 사흘째, 추가 붕괴 우려로 복구가 지연되는 가운데 경찰과 검찰 수사가 본격화되었습니다. 내일부터 이틀간 지방선거 및 국회의원 보궐선거 사전투표가 진행되며, 여야 지도부는 막판 지원 유세에 총력을 기울이고 있습니다. 한편, 미군이 호르무즈 해협 인근 이란 군사시설을 공습하고 드론을 격추했으나 트럼프 대통령은 종전 협상에 미흡하다는 입장을 밝혔습니다. 또한, 카카오 노사가 임금 협상에서 합의점을 찾지 못해 창사 이래 첫 파업 위기에 직면했습니다.\nChecking Character Count (Attempt 2):\nRoughly 250-300 characters. It's a bit short. The prompt asks for \"500자 내외\" (around 500 characters). I need to add a bit more detail or connect the sentences more smoothly to reach the target length without fluff.\nAttempt 3 (Expanding for length):\n서소문 고가 차도 붕괴 사고가 발생한 지 사흘째인 오늘, 추가 붕괴 우려로 인해 복구 작업이 지연되고 있으며 사고 원인 규명과 책임 소재를 두고 경찰과 검찰의 수사가 본격적으로 진행되고 있습니다. 6월 지방선거와 국회의원 보궐선거를 위한 사전 투표가 내일부터 사흘간 진행됨에 따라 여야 지도부는 막판 유세전을 펼치며 지지층 결집에 총력을 다하고 있습니다. 국외 소식으로는 미군이 호르무즈 해협 인근에서 이란 군사시설을 공습하고 이란 드론을 격추한 가운데, 트럼프 미국 대통령은 이란과의 종전 협상에 대해 아직 만족할 수준이 아니라고 밝혔습니다. 마지막으로 카카오 노사가 임금 및 단체협약 협상에서 끝내 합의점을 찾지 못하면서 카카오가 창사 이래 처음으로 파업 위기에 직면하게 되었습니다.\nChecking Character Count (Attempt 3):\nLet's count (roughly):\nSentence 1: ~75 chars\nSentence 2: ~70 chars\nSentence 3: ~75",
+          "db_saved": true
+        },
+        {
+          "title": "[News Briefing] Today's Top Stories... Growth Forecast Jumps on Semiconductor Boom / SBS",
+          "video_id": "dg6Kb1Md2Eo",
+          "views": 498,
+          "upload_date": "2026-05-28",
+          "url": "https://www.youtube.com/watch?v=dg6Kb1Md2Eo",
+          "subtitle_summary": "1.  Analyze the Request:\nSource Material: A YouTube video transcript (SBS News Briefing).\nTitle: [News Briefing] Today's Top Stories... Growth Forecast Jumps on Semiconductor Boom / SBS.\nContent: Interest rate freeze, growth forecast increase due to semiconductors, upcoming elections/early voting, Seoul mayoral debate, Seosomun overpass collapse update, US-Iran tensions.\nConstraints:\nMUST respond ONLY in Korean.\nDo NOT use English at all.\nLength: Around 500 characters (Korean characters).\nStructure: Summarize core content in 3-5 sentences.\n2.  Analyze the Source Text (Korean):\nSegment 1: 한국은행 금융통화위원회 결과. 기준금리 연 2.5% 동결(8차례 연속). 성장률 전망치 2% -> 2.6% 상향(반도체 경기 호조).\nSegment 2: 지방선거/재보궐선거 사전투표 내일부터(5.27). 여야 지도부 지원 유세. SBS 서울시장 후보 토론회 방송(밤 11시).\nSegment 3: 서소문 고가차도 붕괴 사흘째. 복구 지연(추가 붕괴 우려). 경찰/검찰 수사 진행.\nSegment 4: 미국-이란 종전협상 진통. 미군 호르무즈 해협 군사 행동(긴장 상승). 트럼프 대통령 협상 불만족 표현.\n3.  Drafting the Summary (Iterative Process):\nDraft 1 (Mental Outline):\n한국은행이 기준금리를 동결하고 성장률 전망치를 반도체 호조로 2.6%로 올렸다. 내일부터 지방선거 사전투표가 시작되며 여야가 결집에 나선다. 서소문 고가차도 붕괴 사고는 복구가 지연되고 수사가 진행 중이다. 미국과 이란 간 긴장이 호르무즈 해협에서 고조되고 있다.\nDraft 2 (Refining for flow and length):\n신현송 한국은행 총재 취임 후 첫 금통위에서 기준금리는 2.5%로 동결되고, 반도체 경기 호조에 힘입어 올해 성장률 전망치는 2.6%로 상향 조정되었습니다. 내일부터 지방선거와 재보궁선거 사전투표가 시작되는 가운데, 여야는 지원 유세에 총력을 기울이고 있습니다. 서소문 고가차도 붕괴 사고는 사흘째 복구가 지연되고 있으며, 사고 원인 규명을 위한 수사도 본격화되었습니다. 한편, 미국과 이란의 종전협상이 난항을 겪는 가운데 호르무즈 해협 인근에서 미군의 군사 행동으로 긴장이 고조되고 있습니다.\nChecking Constraints:\nKorean only? Yes.\nNo English? Yes.\nLength? Let's count characters (roughly).\nSentence 1: ~60 chars.\nSentence 2: ~50 chars.\nSentence 3: ~50 chars.\nSentence 4: ~50 chars.\nTotal: ~210 characters. This is a bit short. The prompt asks for \"500자 내외\" (around 500 characters). I need to expand slightly to add more detail from the transcript.\nDraft 3 (Expanding to meet length requirement):\n신현송 한국은행 총재 취임 후 첫 금융통화위원회가 열려 기준금리는 연 2.5%로 8차례",
+          "db_saved": true
+        }
+      ],
+      "max": 3.4882,
+      "min": 0.0,
+      "nb_score": 34881.9277,
+      "avg_views": 379.5,
+      "total_views": 759
+    },
+    {
+      "keyword": "전력 인프라 투자 전망",
+      "is_fixed": false,
+      "views": [
+        2544,
+        167,
+        3123
+      ],
+      "video_count": 3,
+      "videos": [
+        {
+          "title": "전력공급 없이 AI도 없다...재기 노리는 전력·원전주ㅣ허민호 대신증권 연구위원",
+          "video_id": "awWyAdyFAxY",
+          "views": 2544,
+          "upload_date": "2026-05-28",
+          "url": "https://www.youtube.com/watch?v=awWyAdyFAxY",
+          "subtitle_summary": "1.  Analyze the Request:\nSource Material: YouTube video transcript about power/energy stocks related to AI infrastructure, featuring Huh Min-ho from Daishin Securities.\nTitle: \"No AI without power supply... Power & Nuclear stocks trying to rebound | Huh Min-ho, Daishin Securities Researcher\".\nTask: Summarize the transcript in Korean.\nLength: Approximately 500 characters (Korean characters).\nConstraints: MUST respond ONLY in Korean. Do NOT use English. Summarize core content in 3-5 sentences.\n2.  Analyze the Transcript Content:\nContext: Market is down, AI infrastructure stocks are under pressure, but this might be an opportunity.\nKey Subject: LS Group (Power/Nuclear theme).\nAnalyst View: Huh Min-ho raised the target stock price, expecting structural earnings improvement.\nSpecific Drivers:\nLS Electric: Already listed. Winning orders for distribution boards/equipment from Big Tech. Earnings surprise in Q1.\nCables (underground/submarine): More profitable than overhead lines. Orders from 2 years ago are now recognized as revenue. Profitability is improving.\nLS M&M (formerly Nikko Copper): Copper refining. By-products like gold, silver, and sulfuric acid have seen price spikes, boosting earnings.\nLSD (Euspire): US subsidiary. Makes components for EVs and communication cables. Earnings improving, communication cables expected to improve next year.\nConclusion: Hidden \"gems\" (subsidiaries) within LS Group are revealing their value. The holding company (LS Corp) is undervalued considering these assets.\n3.  Drafting the Summary (Iterative Process):\nDraft 1 (Mental Outline): AI needs power. LS Group is key. Analyst Huh Min-ho raised target prices. LS Electric is getting orders from Big Tech. Underground cables are profitable now. LS M&M benefits from by-product prices. LSD is doing well in the US. LS Corp (holding company) is undervalued because these subsidiaries are doing well.\nDraft 2 (Translating to Korean & Refining):\nAI 인프라 확대에 따라 전력 수요가 필수적이므로, 전력 및 원전 관련 주식이 주목받고 있습니다. 허민호 연구위원은 LS그룹의 목표 주가를 상향 조정하며 구조적인 실적 개선이 예상된다고 밝혔습니다. 주요 자회사인 LS전기는 빅테크로부터 수주를 확대하며 실적 서프라이즈를 기록했고, 지중 및 해저 케이블 사업도 수익성이 개선되고 있습니다. 또한 LS M&M은 구리 제련 부산물 가격 상승으로 수익이 증가했으며, LSD는 미국 내 전기차 부품 및 통신 케이블 사업에서 성장세를 보이고 있습니다. 결론적으로 LS그룹의 숨겨진 자회사들이 실적을 견인하면서 지주사의 가치가 재평가될 것으로 전망했습니다.\nChecking Character Count:\nThe draft looks good. Let's check the length.\n\"AI 인프라 확대에 따라 전력 수요가 필수적이므로, 전력 및 원전 관련 주식이 주목받고 있습니다. 허민호 연구위원은 LS그룹의 목표 주가를 상향 조정하며 구조적인 실적 개선이 예상된다고 밝혔습니다. 주요 자회사인 LS전기는 빅테크로부터 수주를 확대하며 실적 서프라이즈를 기록했고, 지중 및 해저 케이블 사업도 수익성이 개선되고 있습니다. 또한 LS M&M은 구리 제련 부산물 가격 상승으로 수익이 증가했으며, LSD는 미국 내 전기차 부품 및 통신 케이블 사업에서 성장세를 보이고 있습니다. 결론적으로 LS그룹의 숨겨진 자회사들이 실적을 견인",
+          "db_saved": true
+        },
+        {
+          "title": "[효성중공업 주가전망]3,700,000원 버텼다! 전력기기 수급 아직 안 끝났습니다",
+          "video_id": "0SLD0cY4b4c",
+          "views": 167,
+          "upload_date": "2026-05-28",
+          "url": "https://www.youtube.com/watch?v=0SLD0cY4b4c",
+          "subtitle_summary": "1.  Analyze the Request:\nSource Material: A YouTube video transcript about Hyosung Heavy Industries (효성중공업) stock price outlook.\nTitle: [효성중공업 주가전망]3,700,000원 버텼다! 전력기기 수급 아직 안 끝났습니다 (Hyosung Heavy Industries Stock Outlook: Held at 3,700,000 won! Power equipment supply/demand hasn't ended yet).\nTask: Summarize the transcript in Korean, approximately 500 characters, 3-5 sentences.\nConstraints: MUST respond ONLY in Korean. Do NOT use English.\n2.  Analyze the Source Text:\nCurrent Status: Stock price is around 3.7 million won. It dropped intraday to 3.488 million won but recovered to 3.7 million won. This recovery is a positive signal, suggesting buying support at lower levels despite the ongoing correction after the high of 4.865 million won.\nNews/Material:\nHyosung presented AI data center power grid solutions (ultra-high voltage breakers/transformers) at a US power exhibition.\nAI data centers increase power consumption, driving demand for transformers and breakers.\nStock broke 4 million won previously due to demand expectations and target price hikes.\nInterpretation: The current dip is seen as a \"handover\" period (profit-taking) after a sharp rise, not the end of the momentum. The company has solid themes (AI, infrastructure) driving re-evaluation.\nConclusion: The supply/demand dynamic is still active. The recovery from the intraday low suggests strength.\n3.  Drafting the Summary (Internal Draft):\nSentence 1 (Price Action): Hyosung Heavy Industries recently corrected after hitting a high of 4.865 million won, but showed resilience by recovering to 3.7 million won after touching an intraday low of 3.488 million won.\nSentence 2 (Significance): This recovery suggests that buying interest remains strong at lower levels, indicating the correction is likely a period of handover rather than a collapse in momentum.\nSentence 3 (Fundamental Drivers): The company is benefiting from strong themes like AI data center power demand and global infrastructure investment, recently showcasing solutions at a US power exhibition.\nSentence 4 (Outlook): Rather than seeing the upward trend as finished, the current phase should be viewed as a re-evaluation cycle driven by actual equipment demand, making the recent dip a potential opportunity.\n4.  Refining and Translating to Korean (Targeting ~500 characters):\nDraft 1: 효성중공업이 최근 고점 이후 조정을 받고 있으나, 장중 저점인 348만 8천 원까지 밀렸다가 다시 370만 원 선까지 회복하며 수급의 힘을 입증했습니다. 이는 단순히 수급이 빠진 것이 아니라 고점권에서의 손바뀜 구간으로 해석되며, 하방 지지가 강력함을 보여줍니다. 최근 미국 전력 전시회에서 AI 데이터 센터 전력망 해법을 제시하며 초고압 변압기와 차단기 수요 확대에 대한 기대감을 높였습니다. AI 서버 증설에 따른 전력 인프라 투자 확대 흐름 속에서 재평가받고 있는 종목으로, 현재 조정은 매수 기회가 될 가능성이 큽니다.\n5.  Checking Character Count and Constraints:\nDraft 1 Length: Approx 230 characters (including spaces). This is a bit short for \"500자 내외\" (around 500 characters). I need to expand slightly to provide more detail from the transcript.\nDraft 2 (Expansion): 효성중공업이 최근 486만 5천 원 고점 이후 조정 흐름을 보이고 있으나, 장중 348만 8천 원까지 하락했음에도 370만 원 선을 회복하며 저점 지지력을 확인했습니다. 이는 수급이 완전히 빠진 것이 아니라 급",
+          "db_saved": true
+        },
+        {
+          "title": "효성중공업 목표가 500만원...액면분할 가능성은? | 심현수 쿼터백자산운용 CIOㅣ김치형 앵커",
+          "video_id": "TKyIO59Cpo8",
+          "views": 3123,
+          "upload_date": "2026-05-28",
+          "url": "https://www.youtube.com/watch?v=TKyIO59Cpo8",
+          "subtitle_summary": "1.  Analyze the Request:\nLanguage Constraint: MUST respond ONLY in Korean (한국어). No English allowed.\nTask: Summarize the provided YouTube video transcript.\nLength: Approximately 500 characters (Korean characters).\nContent: Title: \"Hyosung Heavy Industries target price 5 million won... Possibility of stock split? | Shim Hyun-soo Quarterback Asset Management CIO | Kimchi-hyung Anchor\". Transcript content provided.\nStructure: 3-5 sentences for the core summary.\n2.  Analyze the Transcript:\nContext: Discussion about electric power equipment stocks (specifically Hyosung Heavy Industries, LS Electric) and recent market trends.\nKey Points:\nRecent Performance: Long-term investors did well, but recently (last month) performance has been weak/stagnant.\nReason for Weakness: Profit-taking due to high prior returns (100%+ since start of year) and capital shifting to semiconductor ETFs (Samsung, Hynix) due to new leveraged products.\nTechnical Selling: Some stocks with low liquidity dropped over 10% due to mechanical selling from ETFs.\nFundamentals: The drop is due to supply/demand (technical factors), not fundamental damage.\nValuation (PER): Some argue PER is high compared to earnings or US peers.\nCounter-argument (CIO's view): The power equipment cycle is long-term (2-3 years). Using 2028 EPS estimates (based on orders already received), PER is actually under 20x for companies like Hyosung Heavy Industries, suggesting it's not overvalued if looking at future earnings visibility.\n3.  Drafting the Summary (Internal Monologue/Rough Draft in Korean):\n전력기기 섹터가 최근 한 달간 반도체 ETF 수급 쏠림 현상과 기계적 매도 출동으로 인해 조정을 받았다.\n하지만 이는 펀더멘탈 악화가 아닌 단기 수급 요인일 뿐이다.\n현재 PER이 높다는 우려에 대해 심현수 CIO는 전력기기 사이클이 장기적이라는 점을 강조했다.\n이미 수주한 실적을 바탕으로 2028년 EPS를 적용하면 PER이 20배 미만으로, 고평가가 아니라는 분석이다.\n따라서 장기적 관점에서 접근할 필요가 있다.\n4.  Refining and Formatting (Targeting ~500 characters):\nSentence 1 (Recent Trend): 최근 전력기기 섹터가 반도체 ETF 자금 이동과 기계적 매도 영향으로 단기 조정을 받았으나, 이는 펀더멘탈 악화가 아닌 수급 요인에 기인한 것으로 분석됩니다.\nSentence 2 (Valuation Concern): 시장에서는 PER이 높아 고평가라는 우려도 제기되지만, 전력기기 사이클은 장기적인 관점에서 접근해야 합니다.\nSentence 3 (CIO's Insight): 효성중공업 등 주요 종목은 이미 확보한 수주 잔고를 바탕으로 2028년 EPS를 기준으로 보면 PER이 20배 미만으로, 현재 주가는 여전히 매력적인 수준입니다.\nSentence 4 (Conclusion): 결론적으로 현재의 주가 하락은 실적 호조와 장기 사이클을 고려할 때 과도한 수급 불균형에 따른 기회로 해석할 수 있습니다.\n5.  Checking Character Count:\nSentence 1: ~65 chars\nSentence 2: ~50 chars\nSentence 3: ~65 chars\nSentence 4: ~50 chars\nTotal: ~230 characters. This is a bit short. The prompt asks for \"500자 내외\" (around 500 characters). I need to expand the details to meet the length requirement better while keeping it concise (3-5 sentences).\n6.  Expanding",
+          "db_saved": true
+        }
+      ],
+      "max": 2.9111,
+      "min": 2.2604,
+      "nb_score": 1.2879,
+      "avg_views": 1944.67,
+      "total_views": 5834
+    },
+    {
+      "keyword": "코스피 상승 이유",
+      "is_fixed": false,
+      "views": [
+        1,
+        1132,
+        1832
+      ],
+      "video_count": 3,
+      "videos": [
+        {
+          "title": "지방 선거 전에 코스피 엄청 올리고 있는 이유? 주식 초보를 위한 시장 전망",
+          "video_id": "81F8VJPOHh0",
+          "views": 1,
+          "upload_date": "2026-05-28",
+          "url": "https://www.youtube.com/watch?v=81F8VJPOHh0",
+          "subtitle_summary": "1.  Analyze the Request:\nLanguage: Korean ONLY (no English).\nTask: Summarize the provided YouTube video transcript.\nLength: Around 500 characters (Korean characters).\nStructure: 3-5 sentences covering key points.\nSource Material: A transcript discussing the KOSPI rise before local elections, market psychology (envy vs. jealousy), and market inequality.\n2.  Analyze the Source Text (Transcript):\nContext: The video discusses why KOSPI is rising before local elections.\nRumor/Conspiracy: Some people claim the market is being artificially inflated to help the ruling party (or specific figures like Lee Jae-myung) before the election, suggesting a crash afterwards.\nSpeaker's View (Lee Kwang-soo): He dismisses the \"no interest\" stance. He addresses the psychology of those missing out.\nPsychology: He distinguishes between \"envy\" (bu-reo-um - wanting to buy cows like the neighbor did) and \"jealousy\" (jil-tu - wanting the neighbor's cows to die). He argues people should move towards \"envy\" (taking action) rather than \"jealousy\" (hoping for a crash/buying inverse ETFs).\nCurrent Market Issue: The President mentioned asset inequality is growing. Also, within the stock market itself, inequality is growing (only about 10% of stocks are rising).\n3.  Drafting the Summary (Iterative Process):\nDraft 1 (Mental Outline): The video talks about KOSPI rising before elections. Some say it's manipulation, but the expert says we need to look at psychology. There are two types of \"sour grapes\": envy (wanting to succeed like others) and jealousy (wanting others to fail). We should have envy and take action. Also, the market has inequality issues where only a few stocks go up.\nDraft 2 (Translating to Korean & Refining):\n지방 선거를 앞두고 코스피가 급등하자, 일각에서는 정치적 의도로 주가를 띄운다는 음모론과 이후 폭락에 대한 우려가 제기되고 있다. 하지만 이광수 대표는 시장 상승을 부정적으로만 바라는 심리를 '질투'와 '부러움'으로 구분하며, 남의 실패를 바라는 질투심보다는 성공을 동경하고 따라가는 부러움의 자세로 시장에 접근해야 한다고 조언했다. 또한, 주가 상승으로 인한 자산 격차 심화와 주식 시장 내에서도 소수 종목만 상승하는 불균형 문제가 발생하고 있음을 지적하며, 초보 투자자들도 시장에 대한 관심과 객관적인 대응이 필요함을 강조했다.\nChecking Length and Constraints:\nLanguage: Korean only? Yes.\nLength: Let's count characters.\n\"지방 선거를 앞두고 코스피가 급등하자, 일각에서는 정치적 의도로 주가를 띄운다는 음모론과 이후 폭락에 대한 우려가 제기되고 있다. 하지만 이광수 대표는 시장 상승을 부정적으로만 바라는 심리를 '질투'와 '부러움'으로 구분하며, 남의 실패를 바라는 질투심보다는 성공을 동경하고 따라가는 부러움의 자세로 시장에 접근해야 한다고 조언했다. 또한, 주가 상승으로 인한 자산 격차 심화와 주식 시장 내에서도 소수 종목만 상승하는 불균형 문제가 발생하고 있음을 지적하며, 초보 투자자들도 시장에 대한 관심과 객관적인 대응이 필요함을 강조했다.\"\nCharacter count (including spaces): ~230 characters. This is a bit short. The target is \"around 500 characters\" (500자 내외). I need to expand on the details",
+          "db_saved": true
+        },
+        {
+          "title": "금리인상 의지에도 환율이 요지부동인 이유 (변정규) | 인포맥스라이브 2026년 5월 28일 방송",
+          "video_id": "8gVJVE0uRI4",
+          "views": 1132,
+          "upload_date": "2026-05-28",
+          "url": "https://www.youtube.com/watch?v=8gVJVE0uRI4",
+          "subtitle_summary": "1.  Analyze the Request:\nLanguage: Korean ONLY (absolutely no English).\nTask: Summarize the provided YouTube video transcript.\nLength: Around 500 characters (Korean characters).\nContent: Title: \"Why exchange rates remain unmoved despite will to raise rates (Byun Jung-gyu) | Infomax Live May 28, 2026\". Note: The date in the title says 2026, but the context seems to be discussing current economic conditions (Middle East war, inflation, rate hikes). I must stick to the content provided in the transcript.\nStructure: 3-5 sentences for the core summary.\nSource Material: A transcript discussing the Bank of Korea's (BOK) Monetary Policy Committee meeting, inflation due to the Middle East war, the shift from rate cuts to potential rate hikes, and the influence of US Treasury yields.\n2.  Analyze the Transcript:\nKey Point 1: Inflation pressure is high due to the Middle East war.\nKey Point 2: Rate cuts are effectively off the table (\"crossed the river\"). The discussion is now weighing rate hikes.\nKey Point 3: The shift is from a rate-cutting stance to a rate-hiking stance.\nKey Point 4: The core influence is US 10-year Treasury yields, affecting Korean bonds and the exchange rate.\nKey Point 5: The recent decision was a \"hawkish hold\" (freeze), signaled by Governor Shin Hyun-sung's first meeting.\nKey Point 6: The BOK is concerned about various factors including exchange rates, price levels, and the semiconductor industry (Samsung).\n3.  Drafting the Summary (Internal Monologue/Drafting in Korean):\nDraft 1 (Mental Outline): 중동 전쟁으로 물가 상승 압력이 커지면서 금리 인하는 사실상 어렵게 되었다. 한국은행이 금리 인하 기조에서 인상 가능성을 저울질하는 방향으로 선회했다는 분석이다. 이번 금통위는 매파적 동결로 평가되며, 기준금리 인하 사이클은 끝났다고 보는 것이 타당하다. 미국 국채 금리가 우리나라 금리와 환율에 큰 영향을 미치고 있어 이를 주시해야 한다. 신현송 총재는 취임 후 첫 회의에서 물가와 환율, 반도체 산업 등 다양한 변수를 언급하며 금리 인상 가능성을 시사했다.\nRefining for Length and Impact (Target ~500 characters):\n중동 전쟁으로 인한 물가 상승 압력으로 인해 금리 인하 가능성은 사실상 사라졌습니다. 한국은행은 이번 금통위에서 기준금리를 동결했으나, 그 성격은 금리 인상을 고려하는 매파적 동결로 해석됩니다. 이는 금리 인하 기조가 공식적으로 인상 추세로 전환되었음을 의미하며, 앞으로는 금리 인상에 대한 논의만 남아 있는 상황입니다. 미국 국채 금리가 한국의 금리와 환율에 미치는 영향이 큰 만큼, 이에 대한 대응이 필수적입니다. 신현송 총재 역시 취임 첫 회의에서 물가와 환율 안정을 강조하며 향후 통화 정책의 엄격한 기조를 확인시켰습니다.\n4.  Checking Constraints:\nLanguage: Korean only? Yes.\nNo English: Checked.\nLength: Let's count characters roughly.\n\"중동 전쟁으로 인한 물가 상승 압력으로 인해 금리 인하 가능성은 사실상 사라졌습니다. 한국은행은 이번 금통위에서 기준금리를 동결했으나, 그 성격은 금리 인상을 고려하는 매파적 동결로 해석됩니다. 이는",
+          "db_saved": true
+        },
+        {
+          "title": "[주식] 오늘 청룡열차, 내일은 '이것' 지금부터 보유 주식 무조건 홀딩해야하는 이유 | 급등주 관심종목 주식공개 마이크론 상승이 중요한이유 | SK하이닉스 코스피 끌고 간다!",
+          "video_id": "c8ZjO1xVPLM",
+          "views": 1832,
+          "upload_date": "2026-05-28",
+          "url": "https://www.youtube.com/watch?v=c8ZjO1xVPLM",
+          "subtitle_summary": "The user wants a summary of the provided YouTube video transcript in Korean.\nThe summary should be around 500 characters (Korean characters).\nThe summary must be in Korean only, no English allowed.\nThe structure should be 3-5 sentences covering the core content.\nTranscript Analysis:\n1.  Intro: The speaker (200-man) greets the audience. Mentions yesterday's prediction about \"Cheongryong-yeolcha\" (Blue Dragon Train - likely a metaphor for a market surge or specific event). Acknowledges different trader positions (sold, bought, averaged down).\n2.  Market Context: Today is the last trading day of May (Friday). The speaker advises holding positions and not panicking.\n3.  Market Summary: The market saw high volatility (around 500 points swing), dropping below 8,000 after hitting 8,500 resistance. It was a \"shakeout\" day for retail investors.\n4.  Negative Factors: Profit-taking in US semiconductors, war tensions, and Bank of Korea's rate freeze decision (with hawkish hints).\n5.  Speaker's Stance: The speaker claims they warned subscribers about these movements. Mentions breaking 8,000 points and the Bank of Korea's hawkish stance.\n6.  Key Point: The title mentions Micron and SK Hynix, implying semiconductor stocks are crucial. The title also emphasizes \"holding\" stocks unconditionally.\nDrafting the Summary (Internal Monologue):\nSentence 1 (Market Situation): Today's stock market showed high volatility, swinging nearly 500 points, hitting resistance at 8,500 and dropping below 8,000, acting as a shakeout for retail investors.\nSentence 2 (External Factors): This was driven by profit-taking in US semiconductors, war tensions, and the Bank of Korea's rate freeze accompanied by hawkish comments.\nSentence 3 (Advice): Despite these fluctuations, the speaker emphasizes that May isn't over yet and advises investors to hold their positions without panic selling ahead of the last trading day tomorrow.\nSentence 4 (Key Insight): The importance of semiconductor stocks like Micron and SK Hynix is highlighted as a driving force for the KOSPI, suggesting a strategic approach is needed for the upcoming sessions.\nRefining for Korean and Character Count:\n오늘 우리나라 증시는 8,500선 저항을 맞아 8,000선 아래로 떨어지며 500포인트에 가까운 변동성을 보여주었고, 이는 개미 털기 양상으로 해석됩니다. 이러한 흔들림은 미국 반도체 차익 실현, 전쟁 우려, 한국은행의 매파적 기조 등 악재가 복합적으로 작용한 결과입니다. 그러나 화자는 5월 마지막 거래일을 앞두고 섣불리 손절하기보다는 보유 주식을 홀딩하는 전략이 필요하다고 강조합니다. 특히 마이크론과 SK하이닉스 등 반도체 섹터의 중요성을 언급하며, 시장 흐름을 주도하는 핵심 종목에 대한 대응 전략을 제시했습니다.\nCharacter Count Check:\nThe draft looks to be around 200-300 characters (including spaces). The user asked for \"500자 내외\" (around 500 characters). I need to expand slightly to provide more detail based on the transcript provided.\nExpanded Draft:\n오늘 증시는 전일 8,500 부근까지 상승했다가 다시 8,000 아래로 떨어지며 장중 500포인트 가까운 변동성을 기록, 개미 털기 양상이 두드러진 하루였습니다. 이는 미국 반도체 쏠림 현상에 따른 차익 실현, 지정학적 긴장, 그리고 한국은행의 기준 금리 동결 속 매파적 발언 등 복합적 악재가 작용한 결과입니다. 화자는 이러한 상황에서도 5월 마지막 거래일을 앞두고 섣불리 패닉 셀을 하기보다는 보유 종목을 견고하게 홀딩하는 자세가 중요하다고 강조",
+          "db_saved": true
+        }
+      ],
+      "max": 2.3737,
+      "min": 2.1067,
+      "nb_score": 1.1268,
+      "avg_views": 988.33,
+      "total_views": 2965
+    },
+    {
+      "keyword": "삼성증권 두나무 지분",
+      "is_fixed": false,
+      "views": [
+        2,
+        605
+      ],
+      "video_count": 2,
+      "videos": [
+        {
+          "title": "삼성증권·삼성SDS·삼성카드, 두나무 지분 4% 취득 결의",
+          "video_id": "7JlqSNqQeRw",
+          "views": 2,
+          "upload_date": "2026-05-28",
+          "url": "https://www.youtube.com/watch?v=7JlqSNqQeRw",
+          "subtitle_summary": "1.  Analyze the Request:\nSource Material: A YouTube video transcript about Samsung Securities, Samsung SDS, and Samsung Card acquiring a 4% stake in Dunamu.\nTask: Summarize the transcript in Korean.\nLength: Around 500 characters (Korean characters).\nConstraints: MUST respond ONLY in Korean. NO English at all. Summarize core content in 3-5 sentences.\n2.  Analyze the Source Text:\nKey Event: Samsung Securities, Samsung SDS, and Samsung Card decided to acquire a 4.0% stake (1.39 million shares) in Dunamu from Kakao affiliates for 612.8 billion KRW on May 28th.\nPurpose (General): To create new business opportunities in the growing digital asset sector.\nSpecific Plans:\nSamsung Securities: Token securities issuance/distribution, virtual asset services collaboration.\nSamsung SDS: Combine IT/AI/Cloud capabilities with Dunamu's blockchain know-how to enhance blockchain SW competitiveness and build next-gen digital financial infrastructure.\nSamsung Card: Collaborate on using digital assets (like won-pegged stablecoins) for payments within Samsung's financial ecosystem (Monimo).\nExpected Outcome: Strengthen digital asset business competitiveness and secure market leadership.\nDunamu's Stance: Welcomes the investment, plans to cooperate on blockchain-based financial products, payment infrastructure, and AI expansion.\n3.  Drafting the Summary (Iterative Process):\nDraft 1 (Mental Outline): 삼성증권, SDS, 카드가 두나무 지분 4%를 인수했다. 가격은 6128억 원이다. 디지털 자산 사업 확장을 위해서다. 삼성증권은 토큰 증권을, SDS는 블록체인 기술을, 카드는 결제 시스템을 강화할 계획이다. 두나무도 이를 환영하며 협력하겠다고 밝혔다.\nDraft 2 (Refining for flow and vocabulary): 삼성증권, 삼성SDS, 삼성카드는 카카오 계열사가 보유한 두나무 지분 4%를 6,128억 원에 취득하기로 결의했다. 이는 성장하는 디지털 자산 시장에서 새로운 사업 기회를 창출하고 경쟁력을 강화하기 위한 전략적 투자다. 삼성증권은 토큰 증권 및 가상자산 서비스를, 삼성SDS는 블록체인 기반 금융 인프라를, 삼성카드는 스테이블 코인 결제 등을 위해 두나무와 협력할 계획이다. 이번 투자로 삼성은 디지털 자산 시장의 리더십을 확보하고, 두나무는 금융 상품 개발과 AI 분야 확장 등을 추진할 것으로 기대된다.\nChecking Character Count:\n\"삼성증권, 삼성SDS, 삼성카드는 카카오 계열사가 보유한 두나무 지분 4%를 6,128억 원에 취득하기로 결의했다.\" (46 chars)\n\"이는 성장하는 디지털 자산 시장에서 새로운 사업 기회를 창출하고 경쟁력을 강화하기 위한 전략적 투자다.\" (47 chars)\n\"삼성증권은 토큰 증권 및 가상자산 서비스를, 삼성SDS는 블록체인 기반 금융 인프라를, 삼성카드는 스테이블 코인 결제 등을 위해 두나무와 협력할 계획이다.\" (73 chars)\n\"이번 투자로 삼성은 디지털 자산 시장의 리더십을 확보하고, 두나무는 금융 상품 개발과 AI 분야 확장 등을 추진할 것으로 기대된다",
+          "db_saved": true
+        },
+        {
+          "title": "[삼성SDS 주가 전망] 두나무 인수 호재 폭발! 디지털자산 대장주 지금 들어가도 될까요? #삼성SDS주가전망 #삼성SDS목표가 #삼성SDS",
+          "video_id": "s1EQzpdCnKw",
+          "views": 605,
+          "upload_date": "2026-05-28",
+          "url": "https://www.youtube.com/watch?v=s1EQzpdCnKw",
+          "subtitle_summary": "1.  Analyze the Request:\nLanguage: Korean ONLY (no English allowed).\nSource Material: YouTube video transcript about Samsung SDS stock outlook.\nTitle: [삼성SDS 주가 전망] 두나무 인수 호재 폭발! 디지털자산 대장주 지금 들어가도 될까요?\nTask: Summarize the transcript in approximately 500 characters (Korean characters).\nConstraint: Summarize core content in 3-5 sentences.\n2.  Analyze the Source Text:\nContext: Samsung SDS stock price surged (upper limit yesterday, gap up today but currently correcting).\nKey Event: Samsung Group (Samsung Securities, Samsung Card, Samsung SDS) invested in Dunamu (operator of Upbit). Samsung SDS invested ~153.2 billion KRW for a 1% stake.\nSignificance: It's a strategic investment, not just financial. It signals Samsung's entry into the digital asset market. Samsung SDS gains a new growth engine (blockchain/digital assets) alongside its existing cloud/logistics business.\nMarket Position: Dunamu holds 70%+ market share in Korean crypto. This puts Samsung SDS in a prime position to benefit from the digital asset market growth.\nSpeaker's Role: The speaker (Park Hyun-sik) addresses three types of investors: those with high average prices needing strategy, those with profits needing sell targets, and new investors needing entry points. He mentions past successful predictions (SK Hynix, LG Innotek, Daehan Optical) to establish credibility.\n3.  Drafting the Summary (Iterative Process):\nDraft 1 (Mental Outline): Samsung SDS stock skyrocketed due to the Dunamu acquisition news. It's a strategic investment by Samsung Group to enter the digital asset market. This adds a new growth axis for SDS beyond cloud and logistics. The speaker offers strategies for different types of investors based on this news.\nDraft 2 (Translating to Korean & Refining): 삼성SDS가 두나무 인수 호재로 상한가를 기록하며 주가가 급등했다. 삼성그룹은 금융과 IT 계열사를 동원해 두나무에 전략적 투자를 단행했으며, 이는 단순 재무 투자가 아닌 디지털 자산 시장 진출 선언이다. 삼성SDS는 클라우드와 물류 외에 블록체인 기반 디지털 자산 사업이라는 새로운 성장축을 확보하게 되어 업비트 점유율 70%를 바탕으로 수혜가 기대된다. 박현식 대표는 기존 보유자와 신규 진입 희망자를 위한 맞춤형 대응 전략과 매수·매도 타점을 제시하며, 과거 성과를 바탕으로 투자자들의 고민을 해결해 줄 예정이다.\nChecking Character Count & Sentence Count:\nSentence 1: 삼성SDS가 두나무 인수 호재로 상한가를 기록하며 주가가 급등했다. (About 30 chars)\nSentence 2: 삼성그룹은 금융과 IT 계열사를 동원해 두나무에 전략적 투자를 단행했으며, 이는 단순 재무 투자가 아닌 디지털 자산 시장 진출 선언이다. (About 60 chars)\nSentence 3: 삼성SDS는 클라우드와 물류 외에 블록체인 기반 디지털 자산 사업이라는 새로운 성장축을 확보하게 되어 업비트 점유율 70%를 바탕으로 수혜가 기대된다. (About 65 chars)\nSentence 4: 박현식 대표는 기존 보유자와 신규 진입 희망자를 위한 맞춤형 대응 전략과 매수·매도 타점을 제시하며, 과거 성과를 바",
+          "db_saved": true
+        }
+      ],
+      "max": 2.7685,
+      "min": 2.6581,
+      "nb_score": 1.0415,
+      "avg_views": 303.5,
+      "total_views": 607
+    },
+    {
+      "keyword": "LG엔솔 SK온 전망",
+      "is_fixed": false,
+      "views": [
+        1396,
+        964,
+        446,
+        10760
+      ],
+      "video_count": 4,
+      "videos": [
+        {
+          "title": "[엘앤에프 주가 전망] LG엔솔, SK온 향 초 대형 수주 터진다 그 핵심 이유 공개!#ESS #2차전지 #LFP #삼성sdi #LG에너지솔루션 #전기차배터리 #엘앤에프",
+          "video_id": "g94SesK8Wuk",
+          "views": 1396,
+          "upload_date": "2026-05-28",
+          "url": "https://www.youtube.com/watch?v=g94SesK8Wuk",
+          "subtitle_summary": "1.  Analyze the Request:\nTask: Summarize the provided YouTube video transcript.\nLanguage: Korean ONLY (no English allowed).\nLength: Around 500 characters (Korean characters).\nStructure: 3-5 sentences for the core content.\nSource Material: A transcript about LNF (a battery materials company), its stock price surge, and its relationship with LG Energy Solution and SK On regarding ESS (Energy Storage System) supply and US tax credits (AMPC).\n2.  Analyze the Transcript:\nContext: LNF stock is rising significantly (16-17%).\nKey News: LG Energy Solution signed a 2 trillion won contract with a US entity for ESS.\nCore Logic:\nThe US market for ESS is growing.\nTo receive AMPC (Advanced Manufacturing Production Credit) tax benefits in the US, companies must reduce the proportion of Chinese materials.\nSamsung SDI already has a long-term contract with LNF.\nLG Energy Solution and SK On need to reduce Chinese reliance to get tax benefits.\nTherefore, LG Energy Solution and SK On are expected to sign large-scale long-term contracts with LNF for LFP (Lithium Iron Phosphate) materials soon.\nConclusion: The market anticipates these upcoming contracts, driving LNF's stock price up.\n3.  Drafting the Summary (Iterative Process):\nDraft 1 (Mental Outline): LNF stock rose because LG Energy Solution got a big ESS contract. To get US tax credits (AMPC), they need to cut Chinese materials. Samsung SDI already works with LNF. So, LG and SK On will likely sign big contracts with LNF soon. This expectation is driving the stock price up.\nDraft 2 (Translating to formal Korean): 최근 엘앤에프 주가가 급등한 이유는 미국 ESS 시장 확대와 향후 대규모 수주 기대감 때문입니다. 미국의 첨단 세액 공제(AMPC) 혜택을 받으려면 중국산 자재 비중을 줄여야 하는데, 삼성SDI는 이미 엘앤에프와 장기 계약을 체결했습니다. 따라서 LG에너지솔루션과 SK온 역시 중국 의존도를 낮추기 위해 엘앤에프와 조단위 규모의 장기 계약을 맺을 가능성이 매우 높습니다. 이러한 수주 기대감이 현재 주가 상승을 이끌고 있으며, 곧 공시를 통해 관련 소식이 전해질 것으로 예상됩니다.\nRefining for Length and Impact (Target ~500 characters):\nThe draft looks good. Let's check the character count.\n\"최근 엘앤에프 주가가 급등한 이유는 미국 ESS 시장 확대와 향후 대규모 수주 기대감 때문입니다. 미국의 첨단 세액 공제(AMPC) 혜택을 받으려면 중국산 자재 비중을 줄여야 하는데, 삼성SDI는 이미 엘앤에프와 장기 계약을 체결했습니다. 따라서 LG에너지솔루션과 SK온 역시 중국 의존도를 낮추기 위해 엘앤에프와 조단위 규모의 장기 계약을 맺을 가능성이 매우 높습니다. 이러한 수주 기대감이 현재 주가 상승을 이끌고 있으며, 곧 공시를 통해 관련 소식이 전해질 것으로 예상됩니다.\"\n> Character count is around 180 characters (including spaces). This is a bit short for \"500자 내외\" (around 500 characters). I need to expand slightly to provide more detail without fluff.\nDraft 3 (Expanding):\n엘앤에프 주가가 급등한 핵심 이유는 미국 ESS 시장 성장과 이에 따른 대규모 수주 기대감 때문입니다. LG에너지솔루션이 미국 DT에너지와",
+          "db_saved": true
+        },
+        {
+          "title": "\"삼성SDI 주가전망\"\"LG에너지솔루션 주가전망\" \"\"이건 시작에 불과합니다\" 미국발 2.4조 잭팟 터진 이차전지, 코로나 팬데믹 폭등! 재현할 이차전지 대장주 3가지\"",
+          "video_id": "LNzX8l20lA8",
+          "views": 964,
+          "upload_date": "2026-05-28",
+          "url": "https://www.youtube.com/watch?v=LNzX8l20lA8",
+          "subtitle_summary": "1.  Analyze the Request:\nSource Material: A YouTube video transcript (partial) about Samsung SDI, LG Energy Solution stock forecasts, and the impact of a new ETF listing (likely the \"2x Semiconductor ETF\" mentioned as \"3전닉스\" or similar in the transcript, though the transcript text is a bit garbled/ASR generated).\nTask: Summarize the transcript in Korean.\nLength: Approximately 500 characters (Korean characters).\nConstraints: MUST respond ONLY in Korean. NO English. 3-5 sentences for the core summary.\nKey Content in Transcript:\nGeopolitical tension (attack on US airbase).\nMarket volatility.\nNew ETF listing (leveraged semiconductor ETF).\nMoney flow: Money is rushing into this ETF/semiconductor sector.\nMarket situation: Index is up, but most individual stocks are down (One-man show by semiconductors).\nMicron's surge in the US market (AI memory expectations).\nAdvice to investors: Don't sell your stocks just because the index is dragging; understand the \"double-edged sword\" nature of ETFs vs. individual stocks.\n2.  Drafting the Summary (Internal Monologue & Iteration):\nAttempt 1 (Mental Outline): The video discusses the stock market situation influenced by geopolitical events and the listing of a new leveraged semiconductor ETF. The speaker explains that while the overall index rose due to the semiconductor sector's strength (influenced by Micron's surge and AI expectations), most other stocks declined. He emphasizes that investors shouldn't panic sell their individual stocks but rather understand the flow of money into ETFs and the specific dynamics of the current market, highlighting the potential for battery stocks like Samsung SDI and LG Energy Solution mentioned in the title (though the provided transcript focuses heavily on the ETF/semiconductor part).\nAttempt 2 (Translating to Korean & Refining):\n최근 미국 발 지정학적 리스크와 신규 상장된 레버리지 반도체 ETF가 주식 시장에 큰 영향을 미치고 있습니다. 시장 전체가 상승하는 것이 아니라 반도체 섹터가 원맨쇼를 보이며 자금을 독점하고 있어, 개별 종목을 보유한 투자자들은 하락을 경험할 수 있습니다. 특히 미국 마이크론의 급등과 AI 메모리 기대감으로 반도체 관련 ETF에 자금이 몰리면서 코스닥 시장에서는 기관의 매도와 외인의 이탈이 지속되고 있습니다. 따라서 투자자들은 지수 등락에 일희일비하기보다 현재 시장의 자금 흐름과 ETF의 양날의 검 같은 특성을 이해하고 대응해야 합니다.\nChecking Character Count:\nThe draft looks good. Let's check the length.\n\"최근 미국 발 지정학적 리스크와 신규 상장된 레버리지 반도체 ETF가 주식 시장에 큰 영향을 미치고 있습니다. 시장 전체가 상승하는 것이 아니라 반도체 섹터가 원맨쇼를 보이며 자금을 독점하고 있어, 개별 종목을 보유한 투자자들은 하락을 경험할 수 있습니다. 특히 미국 마이크론의 급등과 AI 메모리 기대감으로 반도체 관련 ETF에 자금이 몰리면서 코스닥 시장에서는 기관의 매도와 외인의 이탈이 지속되고 있습니다. 따라서 투자자들은 지수 등락에 일희일비하기보다 현재 시장의 자금 흐름과 ETF의 양날의 검 같은 특성을 이해하고 대응해야 합니다.\"\nLength: ~230 characters (including spaces). This is a bit short. The target is \"around 500 characters\" (500자 내외). I need to expand on the details provided in the transcript.\nAttempt 3 (Expanding for length):\n이 영상은 최근 지정학적 긴장과 신규 상장된 반도체",
+          "db_saved": true
+        },
+        {
+          "title": "[LG에너지솔루션 주가전망] 오늘 2.4조 ESS 폭탄!! 오라클 AI데이터센터 잭팟 #LG에너지솔루션주가전망 #LG에너지솔루션목표가 #LG에너지솔루션",
+          "video_id": "rbtsd_xSKOw",
+          "views": 446,
+          "upload_date": "2026-05-28",
+          "url": "https://www.youtube.com/watch?v=rbtsd_xSKOw",
+          "subtitle_summary": "1.  Analyze the Request:\nSource Material: A YouTube video transcript about LG Energy Solution's stock outlook.\nTask: Summarize the transcript in Korean.\nLength: Around 500 characters (Korean characters).\nConstraints:\nMUST respond ONLY in Korean.\nDo NOT use English at all.\nSummarize core content in 3-5 sentences.\nKey Content in Transcript:\nLG Energy Solution signed a $1.6 billion (approx. 2.4 trillion KRW) contract with US DT Energy.\nPurpose: Supply ESS batteries for Oracle AI data centers.\nStock reaction: Gap up opening, surged over 15% during trading, huge volume increase (322%).\nSignificance: It's a game changer. Moves beyond just EV batteries to AI data center infrastructure.\nFuture outlook: Potential for more orders from other big tech companies via DT Energy.\nSpeaker's role: Offering strategies for current holders (profit taking/buying more) and new investors.\n2.  Drafting the Summary (Iterative Process):\nAttempt 1 (Mental Outline):\nLG Energy Solution saw a huge jump today because of a 2.4 trillion KRW contract with DT Energy for Oracle AI data centers. The stock went up 15% with massive volume. This is important because it shows they are expanding from EVs to AI infrastructure. The speaker mentions this is a game changer and suggests strategies for different types of investors. He also mentions a past success with Doosan Enerbility.\nAttempt 2 (Translating to Korean & Refining):\nLG에너지솔루션이 미국 DT에너지와 2조 4천억 원 규모의 ESS 배터리 공급 계약을 체결하며 주가가 급등했다. 이번 계약은 오라클 AI 데이터 센터에 배터리를 공급하는 것으로, 단순한 수주를 넘어 회사가 전기차 중심에서 AI 인프라 기업으로 체질을 변경했음을 보여주는 게임 체인저로 평가된다. 이 소식에 주가는 전일 대비 15% 이상 폭등하며 거래량이 평균의 3배 넘게 터지는 등 강력한 상승세를 보였다. 화자는 이를 계기로 기존 주주들의 대응 전략과 신규 진입 타점에 대한 조언을 제공하며, 향후 추가 수주 가능성도 높게 점쳤다.\nChecking Constraints:\nKorean only? Yes.\nNo English? Yes.\nLength? Let's count characters.\n\"LG에너지솔루션이 미국 DT에너지와 2조 4천억 원 규모의 ESS 배터리 공급 계약을 체결하며 주가가 급등했다. 이번 계약은 오라클 AI 데이터 센터에 배터리를 공급하는 것으로, 단순한 수주를 넘어 회사가 전기차 중심에서 AI 인프라 기업으로 체질을 변경했음을 보여주는 게임 체인저로 평가된다. 이 소식에 주가는 전일 대비 15% 이상 폭등하며 거래량이 평균의 3배 넘게 터지는 등 강력한 상승세를 보였다. 화자는 이를 계기로 기존 주주들의 대응 전략과 신규 진입 타점에 대한 조언을 제공하며, 향후 추가 수주 가능성도 높게 점쳤다.\"\nCharacter count (including spaces): ~230 characters.\nThe request asks for \"500자 내외\" (around 500 characters). My draft is a bit short. I need to expand slightly to meet the length requirement better, while keeping it within 3-5 sentences.\nAttempt 3 (Expanding for length):\nLG에너지솔루션에 미국 DT에너지와의 2조 4천억 원 규모 ESS 공급",
+          "db_saved": true
+        },
+        {
+          "title": "Why the Surge in LG Energy Solution Matters! (Academy Preview) #SamsungSDI #SecondaryBattery #Sam...",
+          "video_id": "BuSXFk7meHk",
+          "views": 10760,
+          "upload_date": "2026-05-28",
+          "url": "https://www.youtube.com/watch?v=BuSXFk7meHk",
+          "subtitle_summary": "1.  Analyze the Request:\nSource Material: A YouTube video transcript about stock market movements (LG Energy Solution, Samsung SDI, secondary battery, market trends, foreign investors, etc.).\nTask: Summarize the transcript in Korean.\nLength: Approximately 500 characters (Korean characters).\nConstraints: MUST respond ONLY in Korean. Do NOT use English. Summarize core content in 3-5 sentences.\nTitle: \"Why the Surge in LG Energy Solution Matters! (Academy Preview)...\" (Though the transcript focuses more on general market movements, foreign investors, and KOSDAQ rather than specifically LG Energy Solution in the provided text, I must stick to the provided transcript content).\n2.  Analyze the Transcript Content:\nOpening: Greetings, mention of various issues during the trading session.\nMacro factors: Iran-US drone issues causing volatility, Bank of Korea freezing interest rates but signaling potential hikes in the second half of the year.\nMarket behavior: US futures dropped, foreigners sold initially but reduced selling volume by closing.\nSector specifics: Selling focused on electronics (Samsung Electronics, SK Hynix).\nKOSDAQ dynamics: Foreigners sold heavily in the morning (170 billion won), but switched to buying when the index dropped, ending with a net purchase of 370 billion won.\nInvestor sentiment/Technical: Last week's \"maximum bad credit selling\" (malicious credit volume) has been cleared. Short-term traders are flocking to 3x leverage ETFs (3Jeon-nix).\nOutlook: Volatility expected to remain until next week, but likely to ease afterwards. The market hit a 4-year low in the advance/decline ratio, suggesting a rebound opportunity. Investors should endure the volatility; next month might bring a downward trend (bear market) but current volatility presents an opportunity.\n3.  Drafting the Summary (Iterative Process):\nDraft 1 (Mental Outline): Today had many issues like Iran-US news and the Bank of Korea's rate freeze with future hike signals, causing volatility. Foreigners sold electronics but bought KOSDAQ heavily at the end, turning net buyers. The bad credit selling from last week is cleared, and short-term traders are in leveraged ETFs. Volatility will stay for a bit, but it's a rebound opportunity after hitting a low.\nDraft 2 (Translating to formal Korean): 오늘 장중 이란과 미국 간 드론 공격 이슈와 한국은행의 금리 동결 및 향후 인상 시그널 등으로 인해 변동성이 컸습니다. 외국인들은 오전에 대규모 매도를 보였으나, 코스닥 지수가 밀리자 매수로 전환하여 종가 기준 3,700억 원을 순매수하며 시장을 방어했습니다. 지난주 최대 악성 신용 매물이 나온 상황에서 외국인의 매수 전환은 긍정적이며, 현재 3배 레버리지 ETF에 단타꾼들이 몰려 변동성이 심하지만 다음 주 이후에는 안정될 것으로 보입니다. 시장은 이미 바닥권을 형성했으므로 변동성을 잘 견디면 기회가 될 것이라는 전망입니다.\nRefining for Length and Sentence Count:\nSentence 1 (Market Context): 오늘 장중 이란과 미국 간 긴장 및 한국은행의 금리 인상 시그널 등으로 인해 주식 시장의 변동성이 심화되었습니다.\nSentence 2 (Foreign Investor Activity): 외국인들은 오전에 대규모 매도를 보였으나 장 막판 코스닥 지수 하락 시 매수로 전환하며 3,700억 원을 순매수하여 시장을 받쳤습니다.\nSentence 3 (Market Status): 지난주 최대 악성 신용 매물이 해소되었고, 단기 투자자들이 레버리지 ETF에 몰리는 등 변동성은 남아있으나 하방은 제한적입니다.\nSentence 4 (Outlook):",
+          "db_saved": true
+        }
+      ],
+      "max": 0.627,
+      "min": 1.696,
+      "nb_score": 0.3697,
+      "avg_views": 3391.5,
+      "total_views": 13566
+    },
+    {
+      "keyword": "지방선거 사전투표",
+      "is_fixed": false,
+      "views": [
+        1120,
+        849,
+        124,
+        102147,
+        14661
+      ],
+      "video_count": 5,
+      "videos": [
+        {
+          "title": "'Local Election Early Voting', 29th–30th from 6 AM to 6 PM / Channel A / News A Live",
+          "video_id": "t3T4onomLaw",
+          "views": 1120,
+          "upload_date": "2026-05-28",
+          "url": "https://www.youtube.com/watch?v=t3T4onomLaw",
+          "subtitle_summary": "1.  Analyze the Request:\nSource Material: A YouTube video transcript (Korean) about the \"Local Election Early Voting\".\nTask: Summarize the transcript in Korean.\nLength: Approximately 500 characters (Korean characters).\nStructure: 3-5 sentences covering key points.\nConstraint: MUST respond ONLY in Korean. NO English allowed.\n2.  Analyze the Transcript:\nContext: 9th Nationwide Simultaneous Local Elections and National Assembly By-elections.\nKey Point 1 (Timing): Early voting is tomorrow and the day after (2 days), from 6 AM to 6 PM.\nKey Point 2 (Eligibility/Convenience): Useful for those who cannot vote on election day (e.g., business trips). You can vote anywhere, not just your registered district.\nKey Point 3 (Requirements): Must bring a photo ID. Decide who to vote for beforehand.\nKey Point 4 (Security): Ballot boxes are monitored 24/7 via CCTV to ensure fairness.\nKey Point 5 (Complexity): Voters receive 7 or 8 ballot papers (8 in by-election areas). Need to mark them correctly.\nKey Point 6 (Specific Rule): For \"mid-sized constituencies\" (proportional representation for basic assembly members), even though two candidates are elected, the voter marks only one candidate.\nKey Point 7 (Warning): Do not take photos of the ballot (certification shot) as it leads to criminal punishment.\n3.  Drafting the Summary (Iterative Process):\nDraft 1 (Mental Outline):\n내일부터 사전투표가 시작된다. 시간은 이틀 동안 오전 6시부터 오후 6시까지다. 신분증을 꼭 챙겨야 하고 누구를 찍을지 미리 정해야 한다. 투표용지가 7~8장이라 많으니 잘 확인해야 하고, 중선거구제에서는 한 명만 찍어야 한다. 투표소 사진 찍으면 처벌받으니 조심해야 한다.\nDraft 2 (Refining for flow and length):\n제9회 전국 동시 지방 선거와 국회의원 재보궐 선거 사전 투표가 내일부터 이틀간 오전 6시부터 오후 6시까지 진행됩니다. 선거 당일 투표가 어려운 유권자는 신분증을 지참해 가까운 사전투표소에서 편리하게 투표할 수 있으며, 투표 용지는 지역에 따라 7장 또는 8장이 배부됩니다. 특히 기초의원 비례대표 등 중선거구제 투표 시에는 당선자가 두 명이더라도 투표용지에 반드시 한 명만 기표해야 하므로 주의가 필요합니다. 또한, 투표 과정의 공정성을 위해 투표함 보관 장소를 24시간 CCTV로 공개하며, 투표용지를 촬영할 경우 형사 처벌을 받을 수 있으니 유의해야 합니다.\n4.  Checking Constraints:\nLanguage: Korean only? Yes.\nEnglish: None? Yes.\nLength: Let's count characters (roughly).\n\"제9회 전국 동시 지방 선거와 국회의원 재보궐 선거 사전 투표가 내일부터 이틀간 오전 6시부터 오후 6시까지 진행됩니다. 선거 당일 투표가 어려운 유권자는 신분증을 지참해 가까운 사전투표소에서 편리하게 투표할 수 있으며, 투표 용지는 지역에 따라 7장 또는 8장이 배부됩니다. 특히 기초의원 비례대표 등 중선거구제 투표 시에는 당선자가 두 명이더라도 투표용지에 반드시 한",
+          "db_saved": true
+        },
+        {
+          "title": "[뉴스트라다무스] 내일부터 지방선거 사전투표 시작된다!! 전국 주요 지역들 상황은?! 정옥임과 함께 빠르게 훑어봤습니다!!",
+          "video_id": "Nad7du6RO8E",
+          "views": 849,
+          "upload_date": "2026-05-28",
+          "url": "https://www.youtube.com/watch?v=Nad7du6RO8E",
+          "subtitle_summary": "1.  Analyze the Request:\nSource Material: A YouTube video transcript about the upcoming local elections and pre-voting.\nTitle: [News Tradamus] Pre-voting for local elections starts tomorrow!! Situation in major regions across the country?! Quickly looked over with Jeong Ok-im!!\nTask: Summarize the transcript in Korean.\nLength: Around 500 characters (Korean characters).\nConstraints: MUST respond ONLY in Korean. Do NOT use English. Summarize core content in 3-5 sentences.\n2.  Analyze the Transcript Content:\nContext: Pre-voting starts tomorrow. The speakers are discussing major regions (Seoul, Busan, Daegu, Ulsan, Gyeongnam, Jeonbuk).\nDaegu: Predicted winner is Hong Joon-pyo (implied context, though transcript mentions \"Choo Kyung-ho\" initially, then discusses Park Geun-hye's effect). Actually, looking closely at the transcript: \"Daegu is... Choo Kyung-ho... Because Park Geun-hye's effect is visible.\" It seems they predict Choo Kyung-ho for Daegu mayor due to the conservative base and Park Geun-hye's influence.\nBusan: Predicted winner is Park Hyung-jun (implied by \"JBJ\" or context, transcript says \"Jeon Je-soon\" - wait, let me re-read carefully. \"Busan... Jeon Je-soon?\" No, the transcript is messy. Let's look at the flow. \"Busan... Park Hyung-jun?\" The transcript says \"Jeon Je-soon\" (전제순) which sounds like a misheard name or a specific candidate, but usually, Park Hyung-jun is the incumbent. The speaker says \"Jeon Je-soon\" and the other person says \"Okay... don't answer if you don't want to.\" Then they talk about \"objective\" analysis. It seems there's uncertainty or a specific prediction being made. Let's stick to the text provided: The speaker mentions \"Jeon Je-soon\" (likely a transcription error for a candidate, but I must summarize based on the text provided or general knowledge if the text is too garbled. Actually, looking at the context of the 2022 election (which this seems to be about given the names like Hong Joon-pyo, Choo Kyung-ho, Kim Kyung-soo), Busan was Park Hyung-jun vs. Kim Young-choon. The transcript says \"Jeon Je-soon\". This is likely a transcription error for \"Kim Young-choon\" or similar, but I should focus on the process described: discussing Busan's situation objectively.)\nUlsan: Discussion about opposition (Democratic Party/Progressive Party) unification. They mention a unification decision was made, likely Kim Sang-ho (implied \"Kim Sang-ho...\"). Criticism is raised against the People Power Party leadership for not handling unification properly (mentioning Kim Doo-gyeom, Park Maeng-woo). The speaker criticizes the central party leadership for failing to coordinate.\nGyeongnam: Close race. Park Wan-su (incumbent mayor running for governor?) vs. unified opposition (Kim Kyung-soo + Progressive Party + Cho Kuk Innovation Party). The speaker notes Park Wan-su has positive ratings, but the race is tight. If conservatives win here, it's a significant gain alongside Daegu/Gyeongbuk.\nJeonbuk: Predicted win for Kim Kwan-yong. The atmosphere is described as a \"runaway\" (mususeok) victory for Kim Kwan-yong. Mentions Jeong Cheong-rae's future.\n3.  Drafting the Summary (Internal Monologue/Drafting):\nSentence 1 (Intro): 내일부터 지방선거 사전투표가 시작되는 가운데, 주요 지역의 선거 국면을 점검했다.\nSentence 2 (Daegu/Busan): 대구는 박근혜 전 대통령의 효과와 보수 강세로 추경호 후보가 유력해 보이며, 부산은 객관적 상황을 고려해 분석했다.\nSentence 3 (Ulsan): 울산은 야권 단일화가 진행 중이나 여당 지도부의 역할 부재에 대한 비판",
+          "db_saved": true
+        },
+        {
+          "title": "제9회 지방선거 사전투표 ‘D-1’…주의할 점은? / KBS  2026.05.28.",
+          "video_id": "bNaFq5DM5UM",
+          "views": 124,
+          "upload_date": "2026-05-28",
+          "url": "https://www.youtube.com/watch?v=bNaFq5DM5UM",
+          "subtitle_summary": "1.  Analyze the Request:\nSource Material: A YouTube video transcript about the 9th simultaneous local election pre-voting (D-1).\nTitle: 제9회 지방선거 사전투표 ‘D-1’…주의할 점은? / KBS 2026.05.28.\nContent: Pre-voting dates/times, locations, ID requirements, number of ballot papers, voting rules (one mark per candidate), prohibition of photography, observation teams, ballot box security, and historical turnout context.\nConstraints:\nMUST respond ONLY in Korean (한국어).\nDo NOT use English at all.\nLength: Around 500 characters (Korean characters).\nStructure: Summarize core content in 3-5 sentences.\n2.  Analyze the Source Text (Transcript):\nKey Point 1 (Timing/Location): 9th simultaneous local election pre-voting starts tomorrow for two days. Time: 6 AM - 6 PM. Locations available on NEC website. One place per district.\nKey Point 2 (Preparation): Must bring ID. Mobile ID allowed, but screenshots not allowed.\nKey Point 3 (Ballots): Usually 7 ballot papers (Governor, Mayor/County Head, Provincial Council, Proportional Rep, Superintendent of Education). Can vary by region.\nKey Point 4 (Voting Rules): Mark only one candidate per ballot paper. Even if electing multiple people in a district, each ballot paper gets one mark. Two or more marks = invalid vote.\nKey Point 5 (Prohibitions): No photography inside polling stations. Criminal punishment applies.\nKey Point 6 (Fairness/Security): Observation teams monitor the process. Ballot boxes stored under CCTV surveillance.\nKey Point 7 (Context): Turnout trends and interest in this election's results.\n3.  Drafting the Summary (Iterative Process):\nDraft 1 (Mental Outline): 제9회 동시지방선거 사전투표가 내일부터 이틀간 진행됩니다. 오전 6시부터 오후 6시까지이며 신분증을 꼭 지참해야 합니다. 투표용지는 보통 7장이며, 반드시 후보자 한 명에게만 기표해야 무효표를 피할 수 있습니다. 투표소 내 사진 촬영은 금지되며, 공정한 관리를 위해 참관인이 활동하고 CCTV로 투표함을 관리합니다. 치열한 선거 경쟁 속에 투표율이 결과에 미칠 영향이 주목됩니다.\nRefining for Length and Constraints (Target ~500 characters, 3-5 sentences):\nSentence 1 (Overview & Logistics): 제9회 동시지방선거 사전투표가 내일부터 이틀 동안 오전 6시부터 오후 6시까지 진행되며, 유권자는 반드시 신분증을 지참해야 하고 공식 모바일 신분증은 가능하지만 캡처 사진은 인정되지 않습니다.\nSentence 2 (Voting Method): 투표용지는 도지사, 시장·군수, 교육감 등 보통 7장을 받게 되며, 선거구마다 후보자 한 명에게만 기표해야 무효표를 방지할 수 있다는 점을 유의해야 합니다.\nSentence 3 (Prohibitions & Fairness): 투표소 내에서는 사진 촬영이 엄격히 금지되어 형사 처벌 대상이 되며, 선거 공정을 위해 참관단이 운영되고 투표함은 CCTV가 설치된 곳에 보관됩니다.\nSentence 4 (Context): 이번 선거는 무소속 후보 출마 등으로 경쟁이 치열해진 만큼, 사전투표율이 선거 결과에 미칠 영향에도 큰 관심이 쏠리고 있습니다.\nCharacter Count Check:",
+          "db_saved": true
+        },
+        {
+          "title": "[🚫정치쇼 본.방.불.가🚫 ] 6.3 지방선거 사전투표 D-1 / 접전지 승패 타짜들의 예감은? I 260528(목)",
+          "video_id": "B0__HPXLXys",
+          "views": 102147,
+          "upload_date": "2026-05-28",
+          "url": "https://www.youtube.com/watch?v=B0__HPXLXys",
+          "subtitle_summary": "1.  Analyze the Request:\nSource Material: A YouTube video transcript (title: [🚫정치쇼 본.방.불.가🚫 ] 6.3 지방선거 사전투표 D-1 / 접전지 승패 타짜들의 예감은? I 260528(목)).\nTask: Summarize the transcript in Korean.\nLength: Approximately 500 characters (Korean characters).\nConstraints: MUST respond ONLY in Korean. NO English at all. 3-5 sentences for the core summary.\nContent: The transcript discusses the upcoming local elections (6.3), specifically focusing on the day before early voting (D-1). It mentions key figures like Kim Bu-gyeom, Park Hyung, and Hong Joon-pyo (implied by context, though the transcript says \"Park Hyung\" and \"Chu Kyung-ho\"). It discusses polling discrepancies (ARS vs. face-to-face), voter sentiment in Daegu (4050 generation voting based on economic/pragmatic reasons), and the impact of Lee Jae-myung's support.\n2.  Analyze the Transcript Content:\nIntro: Standard greeting for \"Kim Tae-hyun's Jeokjin Show\". Mentions early voting starts tomorrow.\nDaegu Mayoral Election: Focus on Kim Bu-gyeom (Democratic Party) vs. Hong Joon-pyo (implied as the opponent, transcript mentions \"Chu Kyung-ho\" but in the context of Daegu mayoral election, it's usually Hong Joon-pyo vs Kim Bu-gyeom. Wait, looking closely at the text: \"Kim Bu-gyeom and Park Hyung...\". Actually, in the 2022 local elections (June 1), the Daegu mayor race was Hong Joon-pyo vs. Kim Bu-gyeom? No, wait. Let's check the date. Title says \"260528\" (May 28, 2022). The election was June 1, 2022.\nCorrection on Candidates: In Daegu 2022, it was Hong Joon-pyo (PPP) vs. Kim Bu-gyeom? No, Kim Bu-gyeom was a former PM. Actually, the candidate for Democratic Party in Daegu 2022 was usually considered an underdog. Let's look at the text again. \"Kim Bu-gyeom and Park Hyung...\". Wait, Park Hyung? Maybe a typo in the transcript for \"Hong Joon-pyo\"? Or maybe it's about a different region.\nRe-reading carefully: \"Kim Bu-gyeom and Park Hyung...\". Actually, in 2022, the Daegu mayor candidates were Hong Joon-pyo (PPP) and Kim Bu-gyeom? No, Kim Bu-gyeom ran for Daegu Mayor? No, Kim Bu-gyeom was the former Prime Minister. Did he run? Ah, checking historical context. In 2022, the opposition candidate in Daegu was often a \"sacrificial lamb\" (heuje-ja).\nWait, let's look at the transcript text provided: \"Kim Bu-gyeom and Park Hyung...\". \"Chu Kyung-ho candidate is ahead of Kim Kyung-hyun candidate...\". This transcript seems garbled or has specific names. Let's look at the context clues. \"Daegu citizens choose... Democratic Party changes...\". \"Chu Kyung-ho candidate...\". Chu Kyung-ho is a PPP politician (Daegu).\nActually, let's stick to what the text says rather than external fact-checking which might confuse the summary of THIS specific text.\nText Analysis:\nTopic: 6.3 Local Elections, D-1 before early voting.\nDaegu Context: Discussion about Kim Bu-gyeom (likely meant to be the candidate mentioned) vs. another candidate (transcript mentions Chu Kyung-ho, but context implies a tight race or specific dynamics).\nPolling: ARS shows one candidate (Chu) leading, while face-to-face interviews show the other (Kim) leading. This discrepancy is highlighted.\nVoter Sentiment: Daegu's 4050 generation (40s and 50s) is voting pragmatically/economically (\"economic and practical choice\") rather than just partisan loyalty. They aren't crumbling like before.\nKey Factor: Lee Jae-myung's (presidential candidate at the time, or party leader) support is mentioned",
+          "db_saved": true
+        },
+        {
+          "title": "[성민종합정치] 사전투표 D-1..마지막 공표 여론조사 '총정리' / SBS / 주영진의 뉴스브리핑",
+          "video_id": "2Vc8hjQFXbg",
+          "views": 14661,
+          "upload_date": "2026-05-28",
+          "url": "https://www.youtube.com/watch?v=2Vc8hjQFXbg",
+          "subtitle_summary": "1.  Analyze the Request:\nSource Material: A YouTube video transcript titled \"[성민종합정치] 사전투표 D-1..마지막 공표 여론조사 '총정리' / SBS / 주영진의 뉴스브리핑\".\nTask: Summarize the transcript in Korean.\nLength: Approximately 500 characters (Korean characters).\nConstraints: MUST respond ONLY in Korean. Do NOT use English. Summarize core content in 3-5 sentences.\nContent Analysis: The transcript discusses the upcoming election (D-1 before early voting), analyzing the political landscape between the ruling Democratic Party (Minjoo) and the opposition People Power Party. It mentions how the landscape has changed from a month ago, the consolidation of supporters towards the end, and the different strategies/messaging of the two parties (Minjoo acting cautious/underdog, People Power trying to boost confidence). It also touches on specific seat predictions (Minjoo leading in more areas, People Power viewing many areas as contested) and mentions an internal poll by the People Power Party.\n2.  Drafting the Summary (Internal Monologue & Iteration):\nKey Point 1: The election is approaching (D-1 for early voting), and the political landscape has shifted significantly from a month ago, with supporters consolidating.\nKey Point 2: The Democratic Party is objectively in a favorable position due to the timing (1 year after presidential election), but they are sending a cautious message to mobilize voters.\nKey Point 3: The People Power Party is trying to encourage supporters who might give up, claiming they can win if people vote.\nKey Point 4: There's a discrepancy in how the parties view contested areas, with the Democratic Party seeing more favorable seats and the People Power Party viewing many as toss-ups.\nDrafting Sentence 1: 사전투표 하루 전을 앞두고 여야는 판세 분석에 따라 상반된 전략을 보이고 있다. (On the eve of early voting, the ruling and opposition parties show contrasting strategies based on their analysis of the political landscape.)\nDrafting Sentence 2: 한 달 전과 달리 지지층 결집 현상으로 판세가 급변했으나, 민주당은 객관적 우세 속에서도 위기감을 조성해 투표율을 높이려 하고 있다. (Unlike a month ago, the landscape has changed rapidly due to voter consolidation, but the Democratic Party is trying to increase turnout by creating a sense of crisis despite objective advantage.)\nDrafting Sentence 3: 반면 국민의힘은 패배감에 젖은 지지층을 결집시키기 위해 승리 가능성을 강조하며 자신감을 심어주는 전략을 취하고 있다. (On the other hand, the People Power Party is taking a strategy to instill confidence by emphasizing the possibility of victory to rally supporters who might feel defeated.)\nDrafting Sentence 4: 민주당은 다수 지역을 우세로, 국민의힘은 다수 지역을 경합으로 보는 등 지역별 판세 전망에도 차이를 보이며 치열한 막판 승부를 예고했다. (The Democratic Party views most regions as favorable, while the People Power Party views them as contested, showing differences in regional outlooks and foreshadowing a fierce final battle.)\n3.  Refining and Checking Length:\nCurrent Draft:\n사전투표 하루 전을 앞두고 여야는 판세 분석에 따라 상반된 전략을 보이고 있다. 한 달 전과 달리 지지층 결집 현상으로 판세가 급변했으나, 민주당은 객관적 우세 속에서도 위기감을 조성해 투표율을 높이려 하고 있다. 반면 국민의힘은 패배감에 젖은 지지층을 결집시키기 위해 승리 가능성을 강조하며 자신감을 심어주는 전략을 취하고 있다. 민주당은 다수 지역을 우세로, 국민의힘은 다",
+          "db_saved": true
+        }
+      ],
+      "max": 0.3675,
+      "min": 1.2394,
+      "nb_score": 0.2965,
+      "avg_views": 23780.2,
+      "total_views": 118901
+    },
+    {
+      "keyword": "주한미군 사령관 발언",
+      "is_fixed": false,
+      "views": [
+        25981
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "주한미군 사령관 '한국은 단검' 발언에‥중국 \"선 넘어\" 반발 (2026.05.28/뉴스데스크/MBC)",
+          "video_id": "NzYXEkyu6pI",
+          "views": 25981,
+          "upload_date": "2026-05-28",
+          "url": "https://www.youtube.com/watch?v=NzYXEkyu6pI",
+          "subtitle_summary": "1.  Analyze the Request:\nSource Material: A YouTube video transcript (MBC Newsdesk, 2026.05.28) regarding US Forces Korea Commander Brunsun's remarks comparing South Korea to a \"dagger\" against China.\nTask: Summarize the transcript in Korean.\nLength: Approximately 500 characters (Korean characters).\nStructure: 3-5 sentences covering the core content.\nConstraints: MUST respond ONLY in Korean. NO English allowed.\n2.  Analyze the Source Text:\nKey Event: Commander Brunsun (USFK) compared South Korea to a \"dagger\" aiming at China in a podcast.\nContext: He previously called South Korea an \"aircraft carrier\" (May last year). He views Japan as a \"shield\" and the Philippines as part of a military network to encircle China.\nReaction (China): The Chinese Embassy strongly protested, saying Brunsun \"crossed the line.\" They questioned if it was aggressive intent or taking a host country hostage, and asked if Washington approved it.\nImplication: China is unhappy about the potential expansion of USFK's role into regional disputes (like Taiwan). It's also seen as a warning to South Korea not to get swept up in US containment strategies against China.\n3.  Drafting the Summary (Internal Monologue/Trial):\nSentence 1 (The Incident): 주한미군 브런슨 사령관이 한국을 중국을 겨냥하는 '단검'에 비유해 논란이 일었다. (Commander Brunsun compared Korea to a 'dagger' targeting China, causing controversy.)\nSentence 2 (Context/Pattern): 그는 지난해 항공모함에 비유한 데 이어, 일본은 방패, 필리핀은 군사 네트워크로 묶어 중국을 포위하겠다는 전략을 노골화했다. (Following last year's aircraft carrier remark, he made public a strategy to encircle China, calling Japan a shield and linking the Philippines.)\nSentence 3 (China's Reaction): 이에 중국 대사관은 해당 발언이 선을 넘었다며 강력히 경고하고, 한국을 인질 삼으려는 의도인지 성토했다. (In response, the Chinese Embassy strongly warned that the remark crossed the line and protested if it intended to take Korea hostage.)\nSentence 4 (Analysis): 이는 미국의 대중 견제 기조에 한국이 휩쓸리지 말라는 중국의 경고 메시지로 해석된다. (This is interpreted as a warning message from China that Korea should not be swept up in the US containment strategy against China.)\n4.  Refining and Checking Length (Character Count):\nDraft: 주한미군 브런슨 사령관이 한국을 중국을 겨냥한 '단검'에 비유한 발언으로 논란이 일었다. 그는 지난해 한국을 항공모함에 비유한 바 있으며, 이번에는 일본을 방패, 필리핀을 군사 네트워크로 묶어 중국을 포위하겠다는 의도를 드러냈다. 이에 중국 대사관은 해당 발언이 선을 넘었다며 강력히 반발하고, 한국을 인질 삼으려는 것이냐며 성토했다. 전문가들은 이를 미국의 대중 견제 전략에 한국이 휩쓸리지 말라는 중국의 경고 메시지로 해석하고 있다.\nCharacter Count Check:\nSentence 1: 주한미군 브런슨 사령관이 한국을 중국을 겨냥한 '단검'에 비유한 발언으로 논란이 일었다. (41 chars)\nSentence 2: 그는 지난해 한국을 항공모함에 비유한 바 있으며, 이번에는 일본을 방패, 필리핀을 군사 네트워크로 묶어 중국을 포위하겠다는 의도를 드러냈다. (63 chars)",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "사회 양극화 현상",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "국민성장펀드 투자",
+      "is_fixed": false,
+      "views": [
+        330
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "Why the 150 Trillion Won Government-Backed National Growth Fund Is Expected to Boost KOSDAQ Inflo...",
+          "video_id": "jqQahaGxdzc",
+          "views": 330,
+          "upload_date": "2026-05-28",
+          "url": "https://www.youtube.com/watch?v=jqQahaGxdzc",
+          "subtitle_summary": "1.  Analyze the Request:\nSource Material: A YouTube video transcript about the \"National Growth Fund\" (국민 성장 펀드).\nTask: Summarize the transcript in Korean.\nLength: Approximately 500 characters (Korean characters).\nConstraints:\nMUST respond ONLY in Korean.\nDo NOT use English at all.\nSummarize core content in 3-5 sentences.\n2.  Analyze the Transcript Content:\nTopic: Launch of the National Growth Fund (국민 성장 펀드).\nEvent: Sold out 99.5% in 4 days (online and offline). High public interest.\nGovernment's Goal (Money Flow): Shift funds from real estate and savings deposits into the stock market and corporate investment.\nKey Mechanism: Money moves where returns are higher. The government caught onto this.\nTwo Main Expectations/Goals:\n1.  Funding Strategic Industries: Support future high-tech industries (AI, semiconductors, bio) which require massive, long-term capital. It's not just factories; it includes supply chains and infrastructure.\n2.  Addressing Wealth Inequality: Help ordinary citizens build assets. The government takes a subordinated position (absorbs first 20% of losses) to protect investors and encourage participation from those previously excluded from the stock market.\n3.  Drafting the Summary (Iterative Process):\nDraft 1 (Mental Outline): The National Growth Fund sold out quickly, showing high interest. The government aims to move money from real estate/savings to the stock market. There are two main goals. First, to provide long-term funding for high-tech industries like AI and semiconductors. Second, to reduce the wealth gap by allowing ordinary people to invest safely, with the government covering some losses.\nDraft 2 (Translating to Korean & Refining): 국민 성장 펀드가 출시 4일 만에 거의 완판되며 큰 관심을 받고 있습니다. 정부는 이를 통해 부동산과 예금에 묶여 있는 자금을 증시와 기업 투자로 돌리려는 의도를 가지고 있습니다. 이 펀드의 핵심 목표는 크게 두 가지로, 첫째는 반도체와 AI 등 미래 첨단 전략 산업에 장기적으로 안정적인 자금을 공급하여 국가 경쟁력을 높이는 것입니다. 둘째, 정부가 후순위 출자를 통해 손실의 20%를 보전해 주는 방식으로 국민의 자산 형성을 돕고 자산 불평등을 완화하겠다는 노림수가 있습니다. 결과적으로 이 펀드는 산업 육성과 서민 자산 증식이라는 두 마리 토끼를 잡으려는 정책적 도구로 해석됩니다.\n4.  Checking Constraints:\nLanguage: Korean only? Yes.\nNo English: Checked.\nLength: Let's count characters (roughly).\n\"국민 성장 펀드가...\" to \"...해석됩니다.\"\nCharacter count looks to be around 200-300 characters (including spaces). The prompt asks for \"500자 내외\" (around 500 characters). I need to expand slightly to add more detail from the transcript to reach closer to the target length, while keeping it concise enough to be a summary.",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "AI 반도체 산업",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "KTX 안전 사고",
+      "is_fixed": false,
+      "views": [
+        3053
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "[이슈 직진] \"생각만 해도 끔찍하다\"...열차가 조금만 늦었어도 덮칠 수 있었다 | MBN 260528 방송",
+          "video_id": "40t0_slkYNk",
+          "views": 3053,
+          "upload_date": "2026-05-28",
+          "url": "https://www.youtube.com/watch?v=40t0_slkYNk",
+          "subtitle_summary": "1.  Analyze the Request:\nSource Material: YouTube video subtitles (Title: [이슈 직진] \"생각만 해도 끔찍하다\"...열차가 조금만 늦었어도 덮칠 수 있었다 | MBN 260528 방송).\nTask: Summarize the subtitles in Korean.\nLength: Approximately 500 characters (Korean characters).\nFormat: 3-5 sentences.\nConstraint: MUST respond ONLY in Korean. NO English allowed.\n2.  Analyze the Source Text (Subtitles):\nKey Event: A collapse (likely a bridge or road near train tracks) occurred.\nTiming: KTX passed 7 minutes before the collapse. A Mugunghwa train passed 3 minutes before. If the timing had been different, there would have been massive casualties.\nCriticism: There are questions about safety manuals and the will to follow them. \"Safety insensitivity\" (안전 불감증) is mentioned.\nSpecific Incident Details: Signs of collapse were left unattended for 12 hours. Three fatalities occurred (implied by \"황금 같은 세 명의 임명\" - likely transcription error for \"소중한 세 명의 인명\" or similar, but context implies 3 deaths).\nPolitical Context: With elections approaching, both ruling and opposition parties are calling for an end to political fighting and focusing on safety issues.\nOverall Tone: Shock, relief that trains passed safely, anger at negligence, call for better safety measures.\n3.  Drafting the Summary (Iterative Process):\nDraft 1 (Mental Outline): A collapse happened right after trains passed. KTX passed 7 mins before, Mugunghwa 3 mins before. It was a close call. But 3 people died and signs were ignored for 12 hours. Safety manuals weren't followed. Politicians need to stop fighting and focus on safety.\nDraft 2 (Translating to formal Korean): 서문 고가 붕괴 사고 당시 KTX는 붕괴 7분 전, 무궁화 열차는 3분 전에 통과해 대형 참사를 가까스로 면했다. 그러나 붕괴 징후가 12시간 동안 방치되어 결국 3명의 사망자가 발생했으며, 이는 안전 매뉴얼이 제대로 지켜지지 않은 결과이다. 전문가들은 형식적인 매뉴얼이 아닌 실질적인 안전 의식이 필요하다고 지적했다. 선거를 앞두고 여야는 정치 공방을 멈추고 안전 문제 해결에 집중해야 한다는 목소리가 높다.\nRefining for Length and Impact (Target ~500 characters):\nLet's check the character count of Draft 2. It's around 150-200 characters. The prompt asks for \"500자 내외\" (around 500 characters). I need to expand it slightly to include more detail from the transcript to meet the length requirement without fluff.\nDraft 3 (Expanding):\n서문 고가 철거 작업 중 발생한 붕괴 사고는 정말 아찔한 순간이었다. 붕괴 직전 KTX와 무궁화 열차가 각각 7분, 3분 차이로 통과했기 때문이다. 만약 타이밍이 조금만 어긋났다면 막대한 인명 피해가 발생했을 상황이다. 하지만 이번 사고는 붕괴 징후가 12시간이나 방치되어 발생한 만큼, 안전 매뉴얼의 실효성과 현장의 안전 불감증에 대한 비판이 거세다. 형식적인 매뉴얼이 아닌 실질적인 안전 의지가 절실한 상황이다. 이에 선거를 앞두고 여야는 정치적 공방을 멈추고, 재발 방지를 위한 치열한 논의와 대책 마련에 힘써야 한다는 지적이",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "서울시 철도당국 책임론",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "수서역 하수관로 사고",
+      "is_fixed": false,
+      "views": [
+        2239
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "Just One Day After Seosomun Overpass Accident… Fatal Burial Accident During Sewer Construction at...",
+          "video_id": "aiK_9FqmMoQ",
+          "views": 2239,
+          "upload_date": "2026-05-28",
+          "url": "https://www.youtube.com/watch?v=aiK_9FqmMoQ",
+          "subtitle_summary": "1.  Analyze the Request:\nSource Material: A YouTube video transcript about two separate accidents: a sewer construction burial accident at Suseo Station and the Seosomun Overpass collapse.\nLanguage Constraint: MUST respond ONLY in Korean. NO English allowed.\nLength Constraint: Around 500 characters (Korean characters).\nContent Constraint: Summarize the core content in 3-5 sentences.\n2.  Analyze the Source Text:\nAccident 1 (Suseo Station): Occurred yesterday morning during old sewer pipe maintenance. Soil collapsed (approx. 2m high). Three workers involved; two escaped, one died. Questions raised about safety measures (support timbers, safety nets) and violations of the Occupational Safety and Health Act. Rainy season increases risk.\nAccident 2 (Seosomun Overpass): Occurred one day before the Suseo accident. During demolition, signs of collapse were ignored for 12 hours. A KTX passed 7 minutes before collapse, and a Mugunghwa train passed 3 minutes before. It was a very close call for mass casualties. Criticism of \"safety insensitivity\" and lack of proper safety manuals/protocols.\n3.  Drafting the Summary (Iterative Process):\nDraft 1 (Mental Outline):\n서문고가 붕괴 사고 하루 만에 수서역 인근 하수관 공사 현장에서 토사가 무너져 인부 1명이 숨지는 사고가 발생했습니다. 수서역 사고는 노후 하수관 정비 중 흙더미가 무너져 발생했으며, 안전 조치 미비 여부에 대한 수사가 필요합니다. 하루 전 서문고가 사고는 붕괴 징후가 12시간 동안 방치된 끝에 발생했고, 사고 직전 열차가 통과해 대형 참사를 면할 뻔했습니다. 연이은 사고들로 인해 안전 불감증과 미흡한 안전 매뉴얼에 대한 비판이 제기되고 있습니다.\nRefining and Checking Constraints:\nLanguage: Korean only. (Check)\nLength: Let's count characters.\n\"서문고가 붕괴 사고 하루 만에 수서역 인근 하수관 공사 현장에서 토사가 무너져 인부 1명이 숨지는 사고가 발생했습니다. 수서역 사고는 노후 하수관 정비 중 흙더미가 무너져 발생했으며, 안전 조치 미비 여부에 대한 수사가 필요합니다. 하루 전 서문고가 사고는 붕괴 징후가 12시간 동안 방치된 끝에 발생했고, 사고 직전 열차가 통과해 대형 참사를 면할 뻔했습니다. 연이은 사고들로 인해 안전 불감증과 미흡한 안전 매뉴얼에 대한 비판이 제기되고 있습니다.\"\n> Character count (including spaces): ~180 characters. This is too short. The request asks for \"500자 내외\" (around 500 characters). I need to expand the details.\nDraft 2 (Expanding for length):\n서문고가 철거 작업 중 붕괴 사고가 발생한 지 하루 만에, 수서역 인근 하수관 공사 현장에서도 토사 붕괴로 인부 1명이 사망하는 안타까운 사고가 잇따랐습니다. 수서역 사고는 노후 하수관 정비 작업 중 흙더미가 무너져 내리면서 발생했는데, 현장에는 토사 붕괴를 막기 위한 부목 등 안전 조치가 제대로 취해졌는지 확인이 필요한 상태입니다. 산업안전보건법 위반 여부 등을 포함해 철저한 수사가 요구되며, 장마철을 맞아 공사장 안전 점검이 시급해 보입니다. 한편, 하루 전 발생한 서문고가 사고",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "부 토론",
+      "is_fixed": false,
+      "views": [
+        2711
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "\"Naming an 'Irresponsible' Candidate Who Avoids Debates\"...\"Making Seoul a Global Top 3 City,\" Se...",
+          "video_id": "EdMV5CMHKkA",
+          "views": 2711,
+          "upload_date": "2026-05-28",
+          "url": "https://www.youtube.com/watch?v=EdMV5CMHKkA",
+          "subtitle_summary": "1.  Analyze the Request:\nSource Material: A YouTube video transcript (in Korean) titled \"Naming an 'Irresponsible' Candidate Who Avoids Debates'...'Making Seoul a Global Top 3 City,' Se...\".\nSpeaker: Oh Se-hoon (implied by \"서울시장 후보세\" - likely a typo in the transcript for \"오세훈\" or \"후보 오세훈\", and context mentions serving Seoul for 5 years and previously 10 years ago). The text says \"후보세\" which is likely \"후보 오세훈\".\nTask: Summarize the transcript in Korean.\nConstraints:\nMUST respond ONLY in Korean.\nDo NOT use English at all.\nLength: Around 500 characters (Korean characters).\nStructure: 3-5 sentences for the core summary.\n2.  Analyze the Transcript Content:\nOpening: Greeting to Seoul citizens as the People Power Party's Seoul Mayoral candidate.\nTopic 1: Recent Accident: Addresses the tragic accident during the Seosomun overpass demolition. Expresses deep sorrow, apology, and sense of responsibility as someone in charge of city administration. Mentions stopping campaign activities to focus on accident management.\nTopic 2: Safety Record: Claims safety has always been the top priority (CCTV installation, subway screen doors). Acknowledges that despite efforts, this accident shows there is still much lacking.\nTopic 3: Importance of Leadership: Seoul is huge (population, economy, etc.). Needs a prepared leader who can act immediately after the election.\nTopic 4: Election Significance: This election is crucial. It's a choice between regression/stagnation and moving forward to become a \"Global Top 3 City.\"\nTopic 5: Past Achievements & Future: Apologizes for past shortcomings but thanks citizens for trusting him four times (context implies previous terms). Mentions revitalizing redevelopment/reconstruction to supply housing and raising city competitiveness to Global Top 6. Warns that stopping now would be detrimental.\n3.  Drafting the Summary (Iterative Process):\nDraft 1 (Mental Outline): Oh Se-hoon apologized for the Seosomun overpass accident and emphasized safety as his top priority. He highlighted his past achievements like CCTV and screen doors but admitted shortcomings. He stressed the need for a prepared leader for Seoul's complex administration. He framed the election as a choice between stagnation and becoming a Global Top 3 city. He asked for support to continue the progress made over the last 5 years.\nDraft 2 (Translating to Korean & Refining):\n국민의힘 서울시장 후보 오세훈은 서소문 고가 차도 철거 현장 사고에 대해 깊은 책임감을 느끼며 유가족에게 위로의 말을 전했다. 그는 시정의 최우선 가치를 안전에 두고 CCTV 설치와 스크린도 설치 등을 추진해 왔으나, 이번 사고를 통해 여전히 부족함을 절감했다고 밝혔다. 서울은 대한민국의 축소판으로 작은 판단이 시민의 삶에 큰 영향을 미치기에, 즉각적으로 현장을 해결할 준비된 시장의 리더십이 필요하다고 강조했다. 이번 선거는 서울이 정체와 퇴보로 돌아가느냐, 글로벌 탑 3 도시로 도약하느냐를 가르는 중요한 갈림길이라고 역설했다. 그는 지난 5년간 서울의 활력을 되살리고 도시 경쟁력을 끌어올린 성과를 언급하며, 변화의 흐름을 이어가기 위해 시민의 지지를 호소했다.\nChecking Constraints:\nKorean only? Yes.\nNo English? Yes.\nLength? Let's count characters roughly.\nSentence 1: ~60 chars",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "리튬 생산 상승",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "오피스텔 시장 양극화",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    }
+  ]
+}

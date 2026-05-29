@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-28T13:52:33.150+09:00",
+  "updatedAt": "2026-05-29T15:17:00.569+09:00",
   "category": "GPU",
   "id": "gpu-geforce-rtx-5090",
   "name": "GeForce RTX 5090",
@@ -82,5 +82,9 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=RTX%205090%20%EC%B6%9C%EC%8B%9C%EC%9D%BC%20%EA%B0%80%EA%B2%A9",
   "notes": "Based on multiple vendor listings (MSI, Gigabyte, ASUS) showing 32GB VRAM and prices ranging from approx 6.8M to 7.8M KRW.",
-  "textRepair": null
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
 }

@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-28T13:52:33.150+09:00",
+  "updatedAt": "2026-05-29T15:17:01.906+09:00",
   "category": "GPU",
   "id": "gpu-radeon-rx-7800-xt-pulse",
   "name": "Radeon RX 7800 XT Pulse",
@@ -80,5 +80,9 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=AMD%20Radeon%20RX%207800%20XT%20Sapphire%20Pulse%20%EC%B5%9C%EC%A0%80%EA%B0%80",
   "notes": "2-fan model, 16GB GDDR6",
-  "textRepair": null
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
 }

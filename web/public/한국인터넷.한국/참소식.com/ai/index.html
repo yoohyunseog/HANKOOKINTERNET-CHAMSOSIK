@@ -1030,10 +1030,10 @@
       return html;
     }
 
-    // 메시지 내용 렌더링 (마크다운 변환) markdownToHtml(content);
+    // 메시지 내용 렌더링 (마크다운 변환)
     function renderMessageContent(content) {
       if (!content) return "";
-      return createSearchLinks(markdownToHtml(content));
+      return markdownToHtml(content);
     }
 
     // 검색 링크 생성 (구글, 네이버, 빙, 줌)
@@ -1045,8 +1045,7 @@
       const searchEngines = [
         { name: '구글', icon: '🔍', url: `https://www.google.com/search?q=${encodedQuery}`, color: '#4285f4' },
         { name: '네이버', icon: '🟢', url: `https://search.naver.com/search.naver?query=${encodedQuery}`, color: '#03c75a' },
-        { name: '빙', icon: '🟦', url: `https://www.bing.com/search?q=${encodedQuery}`, color: '#008373' },
-        { name: '줌', icon: '🔎', url: `https://zum.com/search?q=${encodedQuery}`, color: '#6b4e9e' }
+        { name: '빙', icon: '🟦', url: `https://www.bing.com/search?q=${encodedQuery}`, color: '#008373' }
       ];
       
       const links = searchEngines.map(engine => 
@@ -1174,8 +1173,8 @@
           </details>`;
         }
         
-        // 사용자 메시지에 검색 링크 추가
-        if (isUser && !isStreaming && message.content) {
+        // AI 메시지에 검색 링크 추가 (AI 응답 내용 기반, 응답 완료 후에만 표시)
+        if (!isUser && !isStreaming && message.content) {
           const searchQuery = extractSearchQuery(message.content);
           if (searchQuery) {
             extraHtml = createSearchLinks(searchQuery);

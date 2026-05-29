@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-28T13:52:33.150+09:00",
+  "updatedAt": "2026-05-29T15:16:57.854+09:00",
   "category": "CPU",
   "id": "cpu-amd-5-5-7500f",
   "name": "AMD 라이젠5-5세대 7500F (라파엘)",
@@ -81,5 +81,9 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=AMD%20%EB%9D%BC%EC%9D%B4%EC%A0%A0%205%207500F%20%EC%B5%9C%EC%A0%80%EA%B0%80",
   "notes": "Multi-pack version observed",
-  "textRepair": null
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
 }

@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-28T13:52:33.150+09:00",
+  "updatedAt": "2026-05-29T15:17:01.950+09:00",
   "category": "GPU",
   "id": "gpu-radeon-rx-7900-xtx-sapphire-nitro",
   "name": "Radeon RX 7900 XTX Sapphire Nitro+",
@@ -81,5 +81,9 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=AMD%20Radeon%20RX%207900%20XTX%20Sapphire%20Nitro%2B%20%EC%B5%9C%EC%A0%80%EA%B0%80",
   "notes": "Vapor-X cooling system",
-  "textRepair": null
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
 }

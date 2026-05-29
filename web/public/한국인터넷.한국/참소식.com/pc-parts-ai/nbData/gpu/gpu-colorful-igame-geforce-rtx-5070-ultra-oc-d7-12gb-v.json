@@ -1,0 +1,88 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-05-29T15:16:59.688+09:00",
+  "category": "GPU",
+  "id": "gpu-colorful-igame-geforce-rtx-5070-ultra-oc-d7-12gb-v",
+  "name": "Colorful iGame GeForce RTX 5070 Ultra OC D7 12GB-V",
+  "maker": "Colorful",
+  "platform": "NVIDIA",
+  "estimatedPriceKrw": 1200000,
+  "priceBand": "60만원 이상",
+  "speedLabel": "GDDR7",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "GPU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 70,
+  "valueIndex": 5.8,
+  "aiUseScore": 46,
+  "powerWatts": 220,
+  "tags": [
+    "gaming"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "GPU",
+    "partId": "gpu-colorful-igame-geforce-rtx-5070-ultra-oc-d7-12gb-v",
+    "partName": "Colorful iGame GeForce RTX 5070 Ultra OC D7 12GB-V",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "GPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 700,
+      "value": 100,
+      "aiFit": 460,
+      "priceEfficiency": 80,
+      "powerEfficiency": 106
+    },
+    "nbVector": [
+      100,
+      700,
+      100,
+      460,
+      80,
+      106
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 111.41,
+    "nbMin": 331.777,
+    "weightedScore": 255,
+    "nbBand": "100~499",
+    "summary": "GPU Colorful iGame GeForce RTX 5070 Ultra OC D7 12GB-V 부품을 속도 중심 N/B 데이터베이스 점수 255점으로 저장했습니다."
+  },
+  "nbWeightedScore": 255,
+  "nbMax": 111.41,
+  "nbMin": 331.777,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=GeForce%20RTX%205070%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "Observed price 1,200,000 KRW",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

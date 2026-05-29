@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-28T13:52:33.150+09:00",
+  "updatedAt": "2026-05-29T15:17:03.185+09:00",
   "category": "SSD",
   "id": "ssd-samsung-9100-pro-8tb",
   "name": "Samsung 9100 PRO 8TB",
@@ -21,7 +21,7 @@
   "performance": 100,
   "valueIndex": 3.1,
   "aiUseScore": 65,
-  "powerWatts": null,
+  "powerWatts": 0,
   "tags": [
     "gen5",
     "high-end"
@@ -81,5 +81,9 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Samsung%20990%20PRO%208TB%20%EC%B5%9C%EC%A0%80%EA%B0%80",
   "notes": "Observed as a new PCIe 5.0 model in search results with significantly higher speeds than 990 PRO.",
-  "textRepair": null
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
 }

@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-28T13:52:33.150+09:00",
+  "updatedAt": "2026-05-29T15:16:59.189+09:00",
   "category": "GPU",
   "id": "gpu-asus-prime-rtx-5080-oc-d7-16gb",
   "name": "ASUS PRIME 지포스 RTX 5080 OC D7 16GB",
@@ -82,5 +82,9 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=GeForce%20RTX%205080%20%EC%B5%9C%EC%A0%80%EA%B0%80",
   "notes": "New Blackwell architecture GPU",
-  "textRepair": null
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
 }

@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-28T13:52:33.150+09:00",
+  "updatedAt": "2026-05-29T15:17:00.878+09:00",
   "category": "GPU",
   "id": "gpu-gigabyte-geforce-rtx-4070-super-aero-oc-d6x-12gb",
   "name": "GIGABYTE GeForce RTX 4070 SUPER AERO OC D6X 12GB",
@@ -81,5 +81,9 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=GeForce%20RTX%204070%20SUPER%20GIGABYTE%20AERO%20OC%20%EB%8B%A4%EB%82%98%EC%99%80",
   "notes": "AERO series white design",
-  "textRepair": null
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
 }

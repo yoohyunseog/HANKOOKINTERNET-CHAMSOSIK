@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-28T13:52:33.150+09:00",
+  "updatedAt": "2026-05-29T15:17:03.196+09:00",
   "category": "SSD",
   "id": "ssd-samsung-990-pro-1tb",
   "name": "Samsung 990 PRO 1TB",
@@ -82,10 +82,14 @@
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Samsung%20990%20PRO%201TB%20%EA%B0%80%EA%B2%A9",
   "notes": "Samsung 990 PRO 1TB은 운영체제, 게임, 작업 파일 저장용으로 검토할 NVMe SSD 후보입니다.",
   "textRepair": {
-    "checkedAt": "2026-05-28T13:52:36.037+09:00",
+    "checkedAt": "2026-05-29T15:17:03.196+09:00",
     "method": "ai-text-sanity-rules",
     "repairedFields": [
       "notes"
     ]
-  }
+  },
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
 }

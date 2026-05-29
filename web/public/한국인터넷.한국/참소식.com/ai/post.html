@@ -1,0 +1,1305 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>참소식 Ollama IDE</title>
+  <meta name="description" content="참소식.com Ollama AI IDE">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Nanum+Gothic+Coding:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #0b1020;
+      --panel: #111827;
+      --panel-2: #162033;
+      --panel-3: #0f172a;
+      --line: #263247;
+      --line-2: #334155;
+      --text: #e5edf8;
+      --muted: #92a0b5;
+      --soft: #cbd5e1;
+      --green: #22c55e;
+      --cyan: #38bdf8;
+      --blue: #2563eb;
+      --amber: #f59e0b;
+      --red: #ef4444;
+      --shadow: 0 20px 60px rgba(0, 0, 0, .32);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      height: 100vh;
+      height: 100dvh;
+      overflow: hidden;
+      color: var(--text);
+      background: #070b16;
+      font-family: "Nanum Gothic", "Nanum Gothic Coding", -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    button, input, select, textarea {
+      font: inherit;
+    }
+
+    button {
+      cursor: pointer;
+    }
+
+    .ide {
+      width: 100vw;
+      height: 100vh;
+      height: 100dvh;
+      max-height: 100vh;
+      max-height: 100dvh;
+      display: grid;
+      grid-template-rows: 56px minmax(0, 1fr) 180px 40px;
+      background:
+        linear-gradient(135deg, rgba(37, 99, 235, .12), transparent 35%),
+        linear-gradient(315deg, rgba(34, 197, 94, .09), transparent 34%),
+        var(--bg);
+      overflow: hidden;
+    }
+
+    .titlebar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      border-bottom: 1px solid var(--line);
+      background: rgba(15, 23, 42, .94);
+      padding: 0 20px;
+      backdrop-filter: blur(10px);
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      min-width: 0;
+      overflow: hidden;
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 16px;
+    }
+
+    .brand span:last-child {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .brand-mark {
+      width: 40px;
+      height: 40px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 12px;
+      background: linear-gradient(135deg, #8b5cf6, #6366f1);
+      font-size: 20px;
+      box-shadow: 0 4px 12px rgba(139, 92, 246, 0.3);
+    }
+
+    .window-actions,
+    .toolbar {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      min-width: 0;
+    }
+
+    .dot {
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+      background: var(--line-2);
+    }
+
+    .dot.red { background: #ff5f57; }
+    .dot.amber { background: #ffbd2e; }
+    .dot.green { background: #28c840; }
+
+    .toolbar button,
+    .icon-button,
+    .send-button,
+    .quick-button {
+      min-height: 36px;
+      border: 1px solid var(--line-2);
+      border-radius: 10px;
+      color: var(--text);
+      background: rgba(30, 41, 59, 0.8);
+      font-weight: 600;
+      transition: all 0.2s;
+    }
+
+    .toolbar button {
+      padding: 8px 16px;
+      font-size: 13px;
+      white-space: nowrap;
+    }
+
+    .toolbar button:hover,
+    .icon-button:hover,
+    .quick-button:hover,
+    .send-button:hover {
+      border-color: rgba(139, 92, 246, 0.5);
+      background: rgba(139, 92, 246, 0.15);
+    }
+
+    .chat {
+      min-height: 0;
+      height: 100%;
+      overflow: auto;
+      padding: 24px 20px;
+      scroll-behavior: smooth;
+      overscroll-behavior: contain;
+      background: linear-gradient(180deg, rgba(139, 92, 246, 0.02) 0%, transparent 100%);
+    }
+
+    .empty {
+      max-width: 820px;
+      margin: 10vh auto 0;
+      padding: 48px;
+      text-align: center;
+      border-radius: 24px;
+      background: linear-gradient(135deg, rgba(139, 92, 246, 0.05), rgba(59, 130, 246, 0.05));
+      border: 1px solid rgba(139, 92, 246, 0.15);
+      box-shadow: var(--shadow);
+    }
+
+    .empty h1 {
+      margin: 0 0 16px;
+      font-size: clamp(32px, 5vw, 56px);
+      background: linear-gradient(135deg, #8b5cf6, #3b82f6);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .empty p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.7;
+      font-size: 16px;
+    }
+
+    .empty-features {
+      display: grid;
+      gap: 16px;
+      margin-top: 32px;
+    }
+
+    .empty-feature {
+      padding: 16px 20px;
+      border-radius: 16px;
+      background: rgba(139, 92, 246, 0.08);
+      border: 1px solid rgba(139, 92, 246, 0.15);
+      text-align: left;
+    }
+
+    .empty-feature strong {
+      display: block;
+      font-size: 15px;
+      margin-bottom: 4px;
+    }
+
+    .empty-feature p {
+      margin: 0;
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    .message {
+      display: flex;
+      gap: 16px;
+      max-width: 1000px;
+      margin: 0 auto 24px;
+      padding: 0 16px;
+    }
+
+    .message.user {
+      flex-direction: row-reverse;
+    }
+
+    .avatar {
+      width: 40px;
+      height: 40px;
+      min-width: 40px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+
+    .message.user .avatar {
+      background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+      color: white;
+    }
+
+    .message.assistant .avatar {
+      background: linear-gradient(135deg, #8b5cf6, #6366f1);
+      color: white;
+    }
+
+    .message-content {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .role {
+      font-size: 12px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .message.user .role {
+      text-align: right;
+      color: #60a5fa;
+    }
+
+    .message.assistant .role {
+      color: #a78bfa;
+    }
+
+    .bubble {
+      border-radius: 20px;
+      padding: 16px 20px;
+      line-height: 1.7;
+      white-space: pre-wrap;
+      overflow-wrap: anywhere;
+      font-family: "Nanum Gothic", "Nanum Gothic Coding", -apple-system, BlinkMacSystemFont, sans-serif;
+      font-size: 15px;
+      position: relative;
+    }
+
+    .message.user .bubble {
+      background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(37, 99, 235, 0.1));
+      border: 1px solid rgba(59, 130, 246, 0.3);
+      color: #e0f2fe;
+      border-bottom-right-radius: 6px;
+    }
+
+    .message.assistant .bubble {
+      background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(99, 102, 241, 0.08));
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      color: var(--text);
+      border-bottom-left-radius: 6px;
+    }
+
+    .message.streaming .bubble {
+      border-color: rgba(139, 92, 246, 0.5);
+      animation: pulse-border 1.5s ease-in-out infinite;
+    }
+
+    @keyframes pulse-border {
+      0%, 100% { border-color: rgba(139, 92, 246, 0.3); box-shadow: 0 0 0 0 rgba(139, 92, 246, 0.1); }
+      50% { border-color: rgba(139, 92, 246, 0.6); box-shadow: 0 0 20px 5px rgba(139, 92, 246, 0.15); }
+    }
+
+    .typing-indicator {
+      display: inline-flex;
+      gap: 6px;
+      padding: 12px 0;
+    }
+
+    .typing-indicator span {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #8b5cf6, #6366f1);
+      animation: bounce 1.4s ease-in-out infinite;
+    }
+
+    .typing-indicator span:nth-child(1) { animation-delay: 0s; }
+    .typing-indicator span:nth-child(2) { animation-delay: 0.2s; }
+    .typing-indicator span:nth-child(3) { animation-delay: 0.4s; }
+
+    @keyframes bounce {
+      0%, 80%, 100% { transform: translateY(0); opacity: 0.5; }
+      40% { transform: translateY(-10px); opacity: 1; }
+    }
+
+    .meta {
+      margin-top: 8px;
+      color: var(--muted);
+      font-size: 11px;
+    }
+
+    .composer {
+      border-top: 1px solid var(--line);
+      background: rgba(15, 23, 42, .96);
+      padding: 20px;
+      backdrop-filter: blur(10px);
+    }
+
+    .composer form {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .input-wrapper {
+      position: relative;
+      display: flex;
+      gap: 12px;
+      align-items: flex-end;
+    }
+
+    .composer textarea {
+      flex: 1;
+      min-height: 56px;
+      max-height: 200px;
+      resize: none;
+      border: 2px solid var(--line-2);
+      border-radius: 16px;
+      color: var(--text);
+      background: rgba(11, 16, 32, .9);
+      padding: 16px 20px;
+      line-height: 1.5;
+      outline: none;
+      font-size: 15px;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+
+    .composer textarea:focus {
+      border-color: #8b5cf6;
+      box-shadow: 0 0 0 3px rgba(139, 92, 246, .15);
+    }
+
+    .composer textarea::placeholder {
+      color: var(--muted);
+    }
+
+    .send-button {
+      min-height: 56px;
+      min-width: 120px;
+      border: none;
+      border-radius: 16px;
+      color: white;
+      background: linear-gradient(135deg, #8b5cf6, #6366f1);
+      font-size: 16px;
+      font-weight: 700;
+      transition: transform 0.15s, box-shadow 0.15s;
+      box-shadow: 0 4px 12px rgba(139, 92, 246, 0.3);
+    }
+
+    .send-button:hover:not(:disabled) {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(139, 92, 246, 0.4);
+    }
+
+    .send-button:disabled {
+      background: linear-gradient(135deg, #374151, #1f2937);
+      box-shadow: none;
+      cursor: wait;
+    }
+
+    .quick-prompts {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: center;
+    }
+
+    .quick-button {
+      padding: 8px 16px;
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      border-radius: 20px;
+      background: rgba(139, 92, 246, 0.1);
+      color: #c4b5fd;
+      font-size: 13px;
+      font-weight: 600;
+      transition: all 0.2s;
+    }
+
+    .quick-button:hover {
+      background: rgba(139, 92, 246, 0.2);
+      border-color: rgba(139, 92, 246, 0.5);
+      color: #e0e7ff;
+    }
+
+    .statusbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      background: #08111f;
+      padding: 0 20px;
+      font-size: 12px;
+      overflow: hidden;
+    }
+
+    .status-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      min-width: 0;
+      white-space: nowrap;
+    }
+
+    .status-left,
+    .status-right {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      overflow: hidden;
+    }
+
+    .status-left span,
+    .status-right span {
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .pulse {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--amber);
+    }
+
+    .pulse.online {
+      background: var(--green);
+      box-shadow: 0 0 0 4px rgba(34, 197, 94, .14);
+    }
+
+    @media (max-width: 760px) {
+      .ide {
+        height: 100dvh;
+        grid-template-rows: auto minmax(0, 1fr) 200px 40px;
+      }
+
+      .titlebar {
+        min-height: 56px;
+        padding: 8px 12px;
+      }
+
+      .brand span:last-child {
+        display: none;
+      }
+
+      .toolbar button {
+        padding: 6px 12px;
+        font-size: 12px;
+      }
+
+      .message {
+        padding: 0 8px;
+      }
+
+      .composer {
+        padding: 12px;
+      }
+
+      .send-button {
+        min-height: 48px;
+        min-width: 80px;
+      }
+
+      .status-right {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="ide">
+    <header class="titlebar">
+      <a class="brand" href="../">
+        <span class="brand-mark">🤖</span>
+        <span>참소식 AI 채팅</span>
+      </a>
+      <div class="toolbar" aria-label="도구">
+        <button type="button" id="healthButton" style="background:rgba(34,197,94,0.1);border-color:rgba(34,197,94,0.3);color:#4ade80;">● 연결확인</button>
+        <button type="button" id="searchToggleButton" style="background:rgba(139,92,246,0.1);border-color:rgba(139,92,246,0.3);color:#c4b5fd;">🔍 검색ON</button>
+        <button type="button" id="copyButton">📋 복사</button>
+        <button type="button" id="clearButton">🗑️ 초기화</button>
+      </div>
+      <div class="window-actions" aria-hidden="true">
+        <span class="dot red"></span>
+        <span class="dot amber"></span>
+        <span class="dot green"></span>
+      </div>
+    </header>
+
+    <section class="chat" id="chatLog" aria-live="polite"></section>
+
+    <section class="composer">
+      <form id="chatForm">
+        <div class="input-wrapper">
+          <textarea id="promptInput" placeholder="메시지를 입력하세요... (Enter로 전송, Shift+Enter로 줄바꿈)" autocomplete="off"></textarea>
+          <button class="send-button" type="submit" id="sendButton">전송</button>
+        </div>
+        <div class="quick-prompts">
+          <button class="quick-button" type="button" data-prompt="이 뉴스 원문을 핵심 요약해줘">📰 뉴스 요약</button>
+          <button class="quick-button" type="button" data-prompt="최신 기술 트렌드 알려줘">🔍 기술 트렌드</button>
+          <button class="quick-button" type="button" data-prompt="이 코드를 리뷰해줘">💻 코드 리뷰</button>
+          <button class="quick-button" type="button" data-prompt="이 내용을 팩트체크 해줘">✅ 팩트체크</button>
+        </div>
+      </form>
+    </section>
+
+    <footer class="statusbar">
+      <div class="status-left">
+        <span class="status-pill"><span class="pulse" id="statusPulse"></span><span id="statusText">AI 서버 대기</span></span>
+        <span id="baseText">🤖 Ollama API</span>
+      </div>
+      <div class="status-right">
+        <span>⚡ 스트리밍</span>
+        <span>💾 자동 저장</span>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    // 원격 서버 Ollama 설정
+    const REMOTE_SERVER = "http://211.45.162.155:11434";
+    const OLLAMA_API_KEY = "d8cf2811037b4791b2e36ffb4afee830.LrLvzfuvzutO7MLHciyiUtpq";
+    
+    const DEFAULT_ENDPOINT = REMOTE_SERVER;
+    const DEFAULT_MODEL = "glm-5:cloud";
+    const storageKey = "chamsosik-ollama-ide-state";
+
+    const els = {
+      chatLog: document.querySelector("#chatLog"),
+      chatForm: document.querySelector("#chatForm"),
+      promptInput: document.querySelector("#promptInput"),
+      sendButton: document.querySelector("#sendButton"),
+      statusPulse: document.querySelector("#statusPulse"),
+      statusText: document.querySelector("#statusText"),
+      baseText: document.querySelector("#baseText"),
+      clearButton: document.querySelector("#clearButton"),
+      copyButton: document.querySelector("#copyButton"),
+      healthButton: document.querySelector("#healthButton")
+    };
+
+    let state = loadState();
+    let activeId = state.activeId || state.conversations[0]?.id;
+    let webSearchEnabled = true;
+
+    function loadState() {
+      try {
+        const saved = JSON.parse(localStorage.getItem(storageKey) || "{}");
+        if (saved && Array.isArray(saved.conversations)) {
+          return {
+            conversations: saved.conversations,
+            activeId: saved.activeId,
+            endpoint: saved.endpoint || DEFAULT_ENDPOINT,
+            model: saved.model || DEFAULT_MODEL,
+            temperature: saved.temperature || "0.5",
+            system: saved.system || ""
+          };
+        }
+      } catch (error) {}
+
+      return {
+        conversations: [createConversation("새 대화")],
+        endpoint: DEFAULT_ENDPOINT,
+        model: DEFAULT_MODEL,
+        temperature: "0.5",
+        system: ""
+      };
+    }
+
+    function saveState() {
+      localStorage.setItem(storageKey, JSON.stringify({
+        ...state,
+        activeId
+      }));
+    }
+
+    function createConversation(title) {
+      return {
+        id: `chat-${Date.now()}-${Math.random().toString(16).slice(2)}`,
+        title,
+        createdAt: new Date().toISOString(),
+        messages: []
+      };
+    }
+
+    function currentConversation() {
+      return state.conversations.find((item) => item.id === activeId) || state.conversations[0];
+    }
+
+    function escapeHtml(value) {
+      return String(value)
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;")
+        .replaceAll("'", "&#039;");
+    }
+
+    function markdownToHtml(text) {
+      if (!text) return "";
+      let html = text;
+      html = html.replace(/[*#]/g, '');
+      return html;
+    }
+
+    function renderMessageContent(content) {
+      if (!content) return "";
+      return markdownToHtml(content);
+    }
+
+    function createSearchLinks(query) {
+      if (!query || query.trim().length === 0) return '';
+      
+      const encodedQuery = encodeURIComponent(query.trim());
+      
+      const searchEngines = [
+        { name: '구글', icon: '🔍', url: `https://www.google.com/search?q=${encodedQuery}`, color: '#4285f4' },
+        { name: '네이버', icon: '🟢', url: `https://search.naver.com/search.naver?query=${encodedQuery}`, color: '#03c75a' },
+        { name: '빙', icon: '🟦', url: `https://www.bing.com/search?q=${encodedQuery}`, color: '#008373' }
+      ];
+      
+      const links = searchEngines.map(engine => 
+        `<a href="${engine.url}" target="_blank" rel="noopener" 
+           style="display:inline-flex;align-items:center;gap:4px;padding:4px 10px;margin:2px;
+                  background:${engine.color}15;border:1px solid ${engine.color}40;border-radius:16px;
+                  color:${engine.color};text-decoration:none;font-size:12px;font-weight:600;
+                  transition:all 0.2s;"
+           onmouseover="this.style.background='${engine.color}30';this.style.borderColor='${engine.color}'"
+           onmouseout="this.style.background='${engine.color}15';this.style.borderColor='${engine.color}40'">
+          ${engine.icon} ${engine.name}
+        </a>`
+      ).join('');
+      
+      return `<div style="margin-top:12px;padding-top:10px;border-top:1px solid rgba(139,92,246,0.15);">
+        <span style="font-size:11px;color:var(--muted);margin-right:8px;">🔗 검색:</span>
+        ${links}
+      </div>`;
+    }
+
+    function extractSearchQuery(message) {
+      if (!message) return '';
+      
+      const stopWords = ['은', '는', '이', '가', '을', '를', '에', '의', '와', '과', '도', '다', '요', '좀', '어때', '알려줘', '말해줘', '가르쳐', '해줘', '해주세요', '뭐', '무엇', '어떻게', '왜', '언제', '어디', '누구'];
+      let cleaned = message.trim();
+      
+      stopWords.forEach(w => {
+        cleaned = cleaned.replace(new RegExp(w + '[?]?$', 'g'), '');
+      });
+      
+      if (cleaned.length > 50) {
+        cleaned = cleaned.slice(0, 50);
+      }
+      
+      return cleaned.trim();
+    }
+
+    function formatTime(value = new Date()) {
+      return new Date(value).toLocaleTimeString("ko-KR", { hour: "2-digit", minute: "2-digit" });
+    }
+
+    function render() {
+      renderMessages();
+      saveState();
+    }
+
+    function renderMessages() {
+      const conversation = currentConversation();
+      if (!conversation || !conversation.messages.length) {
+        els.chatLog.innerHTML = `<div class="empty">
+          <h1>🤖 Ollama AI 채팅</h1>
+          <p>질문을 입력하면 <strong>AI가 실시간으로 답변합니다</strong></p>
+          <div class="empty-features">
+            <div class="empty-feature">
+              <strong style="color:#a78bfa;">🔍 스마트 검색</strong>
+              <p>키워드 감지 시 자동으로 웹 검색 후 답변</p>
+            </div>
+            <div class="empty-feature">
+              <strong style="color:#22c55e;">⚡ 스트리밍 응답</strong>
+              <p>토큰 단위로 실시간 표시</p>
+            </div>
+            <div class="empty-feature">
+              <strong style="color:#38bdf8;">💾 자동 저장</strong>
+              <p>대화 기록이 브라우저에 저장</p>
+            </div>
+          </div>
+        </div>`;
+        scrollChatToBottom();
+        return;
+      }
+
+      els.chatLog.innerHTML = conversation.messages.map((message, index) => {
+        const isUser = message.role === "user";
+        const isStreaming = message.role === "assistant" && !message.content && index === conversation.messages.length - 1;
+        const streamClass = isStreaming ? " streaming" : "";
+        const avatarIcon = isUser ? "👤" : "🤖";
+        const roleLabel = isUser ? "You" : "AI Assistant";
+        
+        const contentHtml = isStreaming 
+          ? `<div class="typing-indicator"><span></span><span></span><span></span></div>`
+          : renderMessageContent(message.content);
+        
+        let extraHtml = "";
+        if (message.searchResults && message.searchResults.length > 0) {
+          extraHtml = `<details style="margin-top:16px;border-top:1px solid rgba(139,92,246,0.2);padding-top:12px;cursor:pointer;">
+            <summary style="font-weight:700;color:#a78bfa;font-size:13px;user-select:none;">🔍 검색 결과 ${message.searchResults.length}건 (클릭하여 펼치기)</summary>
+            <div style="margin-top:10px;display:grid;gap:10px;">
+              ${message.searchResults.slice(0, 5).map((item, i) => {
+                const content = item.content || item.snippet || item.description || '';
+                const preview = content.slice(0, 200);
+                return `<div style="padding:10px;border-radius:8px;background:rgba(0,0,0,0.25);border:1px solid rgba(139,92,246,0.1);">
+                  <div style="font-weight:600;color:var(--text);margin-bottom:4px;font-size:12px;">${escapeHtml(item.title || '제목 없음')}</div>
+                  <a href="${escapeHtml(item.url || '')}" target="_blank" style="font-size:10px;color:#38bdf8;text-decoration:none;word-break:break-all;display:block;margin-bottom:4px;opacity:0.7;">${escapeHtml(item.url || '')}</a>
+                  ${preview ? `<div style="font-size:11px;color:var(--muted);line-height:1.4;margin-top:4px;">${escapeHtml(preview)}${content.length > 200 ? '...' : ''}</div>` : ''}
+                </div>`;
+              }).join('')}
+            </div>
+          </details>`;
+        }
+        
+        if (!isUser && !isStreaming && message.content) {
+          const searchQuery = extractSearchQuery(message.content);
+          if (searchQuery) {
+            extraHtml = createSearchLinks(searchQuery);
+          }
+        }
+        
+        return `<article class="message ${message.role}${streamClass}">
+          <div class="avatar">${avatarIcon}</div>
+          <div class="message-content">
+            <div class="role">${roleLabel}</div>
+            <div class="bubble">${contentHtml}${extraHtml}</div>
+            <div class="meta">${escapeHtml(message.model || "")} ${escapeHtml(message.time || "")}</div>
+          </div>
+        </article>`;
+      }).join("");
+      scrollChatToBottom();
+    }
+
+    function scrollChatToBottom() {
+      requestAnimationFrame(() => {
+        els.chatLog.scrollTop = els.chatLog.scrollHeight;
+        requestAnimationFrame(() => {
+          els.chatLog.scrollTop = els.chatLog.scrollHeight;
+        });
+      });
+    }
+
+    function log(line) {
+      console.log(`[${new Date().toLocaleTimeString("ko-KR")}] ${line}`);
+    }
+
+    function setOnline(ok, text) {
+      els.statusPulse.classList.toggle("online", ok);
+      els.statusText.textContent = text;
+    }
+
+    function normalizeReply(data) {
+      if (typeof data === "string") return data;
+      if (data.content) return data.content;
+      if (data.reply) return data.reply;
+      if (data.answer) return data.answer;
+      if (data.message && typeof data.message === "string") return data.message;
+      if (data.message?.content) return data.message.content;
+      if (data.response) return data.response;
+      if (data.choices?.[0]?.message?.content) return data.choices[0].message.content;
+      if (data.choices?.[0]?.text) return data.choices[0].text;
+      return JSON.stringify(data, null, 2);
+    }
+
+    async function checkHealth() {
+      const started = performance.now();
+      log("GET /api/ollama-health");
+
+      try {
+        const response = await fetch("/api/ollama-health");
+        const data = await response.json().catch(() => ({}));
+        const ms = Math.round(performance.now() - started);
+        const connected = data.ollama === "ok";
+        setOnline(connected, connected ? "AI 연결됨" : "내장 응답 모드");
+        log(`health ${response.status} ${data.mode || ""} ${data.ollama || ""} ${ms}ms`);
+      } catch (error) {
+        setOnline(false, "연결 확인 실패");
+        log(`health failed: ${error.message}`);
+      }
+    }
+
+    function fallbackReply(prompt) {
+      return [
+        "API 응답을 받지 못해 로컬 안내를 표시합니다.",
+        "",
+        `질문: ${prompt}`,
+        "",
+        "확인할 것:",
+        "1. 원격 서버 Ollama가 실행 중인지 확인 (http://211.45.162.155:11434)",
+        "2. API 키가 올바른지 확인",
+        "3. 네트워크 연결 상태 확인",
+        "",
+        "클라우드 모델: glm-5:cloud, gemma4:31b-cloud"
+      ].join("\n");
+    }
+
+    async function webSearch(query, maxResults = 5) {
+      try {
+        const response = await fetch("/api/ollama-web-search", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ query, max_results: maxResults })
+        });
+        const data = await response.json();
+        if (!response.ok) {
+          throw new Error(`Web search failed: ${data.error || response.status}`);
+        }
+        return data;
+      } catch (error) {
+        log(`web search error: ${error.message}`);
+        return { ok: false, error: error.message, results: [] };
+      }
+    }
+
+    async function webFetch(url) {
+      try {
+        const response = await fetch("/api/ollama-web-fetch", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ url })
+        });
+        const data = await response.json();
+        if (!response.ok) {
+          throw new Error(`Web fetch failed: ${data.error || response.status}`);
+        }
+        return data;
+      } catch (error) {
+        log(`web fetch error: ${error.message}`);
+        return { ok: false, error: error.message, content: "", links: [] };
+      }
+    }
+
+    async function analyzeSearchNeed(query, conversation) {
+      const queryLower = query.toLowerCase().trim();
+      
+      const greetingPatterns = [
+        /^안녕/, /^안녕하세요/, /^반가워/, /^반갑/, /^안녕하세/, /^hi$/i, /^hello$/i, /^hey$/i,
+        /^좋은아침/, /^좋은오후/, /^좋은저녁/, /^잘지내/, /^잘지내셨/, /^건강하시/,
+        /^반갑습니다/, /^처음뵙/, /^만나서반/, /^오랜만/, /^오랫만/, /^그동안잘/, /^별말씀/, /^아니에요/,
+        /^감사/, /^고맙/, /^고마워/, /^땡큐/i, /^thank/i, /^thanks/i,
+        /^잘했/, /^좋아/, /^좋네/, /^훌륭/, /^대단/, /^멋져/, /^짱이/, /^최고/, /^완벽/
+      ];
+      
+      for (const pattern of greetingPatterns) {
+        if (pattern.test(queryLower)) {
+          log(`💬 인사 감지: 직접 응답`);
+          return {
+            needsSearch: false,
+            reason: '인사/감사 표현 감지',
+            keywords: [],
+            confidence: 1,
+            matchedKeywords: [],
+            isGreeting: true
+          };
+        }
+      }
+      
+      if (queryLower.length <= 10) {
+        const shortGreetings = ['안녕', '반가', '고마', '감사', '잘했', '좋아', '좋네', '멋져', '짱', '대단', '훌륭', '완벽', '최고', 'hi', 'hello', 'hey', 'thx', 'ty'];
+        if (shortGreetings.some(g => queryLower.includes(g))) {
+          log(`💬 짧은 인사 감지: 직접 응답`);
+          return {
+            needsSearch: false,
+            reason: '짧은 인사/감사',
+            keywords: [],
+            confidence: 1,
+            matchedKeywords: [],
+            isGreeting: true
+          };
+        }
+      }
+      
+      const searchKeywords = [
+        '최신', '최근', '오늘', '어제', '이번', '지난', '올해', '작년',
+        '지금', '현재', '요즘', '신규', '새로운', '새로',
+        '검색', '찾아', '조회', '확인', '알려', '뭐', '무엇', '어디', '누구',
+        '어떤', '어느', '언제', '왜', '어떻게',
+        '뉴스', '기사', '소식', '이슈', '사건', '사고', '발생',
+        '보도', '기자', '언론',
+        '날씨', '온도', '비', '눈', '미세먼지', '날짜', '시간',
+        '주가', '주식', '환율', '시세', '가격',
+        '비교', '추천', '순위', '랭킹', 'best', 'top',
+        '현황', '상황', '동향', '트렌드', '유행',
+        '분석', '요약', '정리', '설명', '조사', '연구', '보고서',
+        '데이터', '통계', '수치', '현황', '전망'
+      ];
+      
+      const noSearchKeywords = [
+        '코드', '작성해', '만들어', '생성해', '번역해', '수정해', '변경해',
+        '이야기', '소설', '시', '글', '에세이', '편지', '일기',
+        '계산', '수학', '공식', '방정식'
+      ];
+      
+      const searchMatches = searchKeywords.filter(kw => queryLower.includes(kw));
+      const noSearchMatches = noSearchKeywords.filter(kw => queryLower.includes(kw));
+      
+      const searchScore = searchMatches.length;
+      const noSearchScore = noSearchMatches.length;
+      
+      const needsSearch = searchScore > 0 && searchScore >= noSearchScore;
+      
+      const keywords = needsSearch ? extractKeywords(query) : [];
+      
+      const result = {
+        needsSearch,
+        reason: needsSearch 
+          ? `검색 키워드 감지: ${searchMatches.join(', ')}` 
+          : (noSearchScore > 0 
+            ? `창작/코딩 감지: ${noSearchMatches.join(', ')}` 
+            : '직접 응답'),
+        keywords,
+        confidence: Math.min(1, (Math.abs(searchScore - noSearchScore) + 1) / 3),
+        matchedKeywords: searchMatches,
+        isGreeting: false
+      };
+      
+      log(`🔍 검색 판단: ${result.needsSearch ? '검색필요' : '직접응답'} - ${result.reason}`);
+      return result;
+    }
+
+    function extractKeywords(query) {
+      const stopWords = ['은', '는', '이', '가', '을', '를', '에', '의', '와', '과', '도', '다', '요', '좀', '어때', '알려줘', '말해줘', '가르쳐', '해줘', '해주세요'];
+      let cleaned = query.trim();
+      stopWords.forEach(w => cleaned = cleaned.replace(new RegExp(w + '$', 'g'), ''));
+      return [cleaned.trim()];
+    }
+
+    async function streamAI(prompt, onChunk, onComplete) {
+      const model = DEFAULT_MODEL;
+      const conversation = currentConversation();
+      const systemPrompt = "";
+      
+      let searchResults = null;
+      let searchContext = "";
+      
+      if (webSearchEnabled) {
+        const analysis = await analyzeSearchNeed(prompt, conversation);
+        
+        if (analysis.needsSearch && analysis.keywords.length > 0) {
+          log(`🔍 검색 키워드: ${analysis.keywords.join(', ')}`);
+          
+          const searchData = await webSearch(analysis.keywords.join(' '), 5);
+          if (searchData.results && searchData.results.length > 0) {
+            searchResults = searchData.results;
+            log(`✅ 검색 완료: ${searchResults.length}건`);
+            
+            const fetchPromises = searchResults.slice(0, 2).map(async (r, i) => {
+              try {
+                const fetched = await webFetch(r.url);
+                if (fetched.content) {
+                  r.content = fetched.content;
+                  log(`   [${i + 1}] 크롤링 성공: ${(r.title || '제목없음').slice(0, 30)}`);
+                }
+              } catch (e) {
+                log(`   [${i + 1}] 크롤링 실패: ${e.message.slice(0, 50)}`);
+              }
+              return r;
+            });
+            await Promise.all(fetchPromises);
+            
+            searchContext = "\n\n[웹 검색 결과]\n" + searchResults.map((r, i) => {
+              const content = r.content || r.snippet || r.description || '';
+              return `[${i + 1}] ${r.title || '제목 없음'}\n${r.url}\n${content}\n---`;
+            }).join('\n\n');
+          }
+        }
+      }
+      
+      const messages = [
+        { role: "system", content: systemPrompt },
+        ...conversation.messages.slice(-12).map((item) => ({ role: item.role, content: item.content }))
+      ];
+      
+      const enhancedPrompt = searchContext 
+        ? `${prompt}\n\n[참고: 위 검색 결과를 활용하여 답변하세요. 출처를 반드시 표시하세요.]${searchContext}`
+        : prompt;
+
+      const body = {
+        model,
+        messages: [...messages, { role: "user", content: enhancedPrompt }],
+        stream: true,
+        temperature: 0.5
+      };
+
+      const urls = ["/api/ollama-chat", `${REMOTE_SERVER}/api/chat`];
+      
+      let lastError = null;
+      for (const url of urls) {
+        try {
+          const sameOriginProxy = url === "/api/ollama-chat";
+          log(`POST ${url} model=${model} stream=true`);
+          
+          const response = await fetch(url, {
+            method: "POST",
+            headers: {
+              "Content-Type": sameOriginProxy ? "application/json" : "text/plain",
+              "Authorization": `Bearer ${OLLAMA_API_KEY}`
+            },
+            body: JSON.stringify(body)
+          });
+
+          if (!response.ok) {
+            const text = await response.text();
+            throw new Error(`${url} ${response.status} ${text.slice(0, 180)}`);
+          }
+
+          const reader = response.body.getReader();
+          const decoder = new TextDecoder();
+          let fullContent = "";
+          let buffer = "";
+          let chunkCount = 0;
+
+          log(`📡 스트리밍 시작...`);
+          
+          while (true) {
+            const { done, value } = await reader.read();
+            if (done) {
+              log(`📡 스트리밍 완료 (총 ${chunkCount}개 청크)`);
+              break;
+            }
+            
+            buffer += decoder.decode(value, { stream: true });
+            const lines = buffer.split("\n");
+            buffer = lines.pop() || "";
+            
+            for (const line of lines) {
+              if (!line.trim() || line.startsWith(":")) continue;
+              
+              try {
+                const data = JSON.parse(line);
+                chunkCount++;
+                
+                if (data.message?.content) {
+                  fullContent += data.message.content;
+                  onChunk(data.message.content, fullContent);
+                } 
+                else if (data.response) {
+                  fullContent += data.response;
+                  onChunk(data.response, fullContent);
+                } 
+                else if (data.content) {
+                  fullContent += data.content;
+                  onChunk(data.content, fullContent);
+                }
+                else if (data.done === true) {
+                  log(`📡 스트림 완료 신호 수신`);
+                }
+              } catch (e) {
+                if (line.trim() && line.length > 2) {
+                  fullContent += line;
+                  onChunk(line, fullContent);
+                }
+              }
+            }
+          }
+
+          if (!fullContent || fullContent.trim().length === 0) {
+            throw new Error("빈 응답 - AI가 응답을 생성하지 않았습니다");
+          }
+
+          onComplete(fullContent, searchResults);
+          return;
+        } catch (error) {
+          lastError = error;
+          log(`stream failed on ${url}: ${error.message}`);
+        }
+      }
+
+      throw lastError || new Error("all streaming endpoints failed");
+    }
+
+    async function submitPrompt(promptText) {
+      const prompt = promptText || els.promptInput.value.trim();
+      if (!prompt) return;
+
+      const conversation = currentConversation();
+      if (!conversation.title || conversation.title === "새 대화") {
+        conversation.title = prompt.slice(0, 34);
+      }
+
+      conversation.messages.push({ role: "user", content: prompt, time: formatTime() });
+      els.promptInput.value = "";
+      els.sendButton.disabled = true;
+
+      const aiMsgIndex = conversation.messages.length;
+      conversation.messages.push({
+        role: "assistant",
+        content: "",
+        time: formatTime(),
+        model: DEFAULT_MODEL
+      });
+      render();
+
+      const started = performance.now();
+      let streamComplete = false;
+      let searchResults = null;
+      let searchContext = "";
+      
+      try {
+        if (webSearchEnabled) {
+          const analysis = await analyzeSearchNeed(prompt, conversation);
+          
+          if (analysis.needsSearch && analysis.keywords.length > 0) {
+            log(`🔍 검색 키워드: ${analysis.keywords.join(', ')}`);
+            
+            const searchData = await webSearch(analysis.keywords.join(' '), 5);
+            if (searchData.results && searchData.results.length > 0) {
+              searchResults = searchData.results;
+              log(`✅ 검색 완료: ${searchResults.length}건`);
+              
+              const fetchPromises = searchResults.slice(0, 2).map(async (r, i) => {
+                try {
+                  const fetched = await webFetch(r.url);
+                  if (fetched.content) {
+                    r.content = fetched.content;
+                    log(`   [${i + 1}] 크롤링 성공: ${(r.title || '제목없음').slice(0, 30)}`);
+                  }
+                } catch (e) {
+                  log(`   [${i + 1}] 크롤링 실패: ${e.message.slice(0, 50)}`);
+                }
+                return r;
+              });
+              await Promise.all(fetchPromises);
+              
+              searchContext = "\n\n[웹 검색 결과]\n" + searchResults.map((r, i) => {
+                const content = r.content || r.snippet || r.description || '';
+                return `[${i + 1}] ${r.title || '제목 없음'}\n${r.url}\n${content}\n---`;
+              }).join('\n\n');
+            }
+          }
+        }
+        
+        log(`📡 스트리밍 시도 중...`);
+        
+        await streamAI(
+          prompt,
+          (chunk, accumulated) => {
+            conversation.messages[aiMsgIndex].content = accumulated;
+            render();
+            scrollChatToBottom();
+          },
+          (fullContent, sr) => {
+            streamComplete = true;
+            searchResults = sr || searchResults;
+            const ms = Math.round(performance.now() - started);
+            
+            conversation.messages[aiMsgIndex].content = fullContent;
+            if (searchResults) {
+              conversation.messages[aiMsgIndex].searchResults = searchResults;
+            }
+            
+            setOnline(true, "AI 응답 완료");
+            log(`✅ 스트리밍 완료 ${ms}ms, 길이: ${fullContent.length}자`);
+            saveState();
+            render();
+          }
+        );
+        
+      } catch (error) {
+        log(`❌ 에러: ${error.message}`);
+        conversation.messages[aiMsgIndex].content = fallbackReply(prompt);
+        setOnline(false, "API 응답 실패");
+        render();
+      } finally {
+        els.sendButton.disabled = false;
+      }
+    }
+
+    function clearCurrent() {
+      const conversation = currentConversation();
+      if (!conversation) return;
+      conversation.messages = [];
+      conversation.title = "새 대화";
+      log("current chat cleared");
+      render();
+    }
+
+    async function copyChat() {
+      const conversation = currentConversation();
+      const text = (conversation?.messages || [])
+        .map((item) => `${item.role.toUpperCase()}: ${item.content}`)
+        .join("\n\n");
+      if (!text) {
+        log("copy skipped: empty chat");
+        return;
+      }
+      await navigator.clipboard.writeText(text);
+      log("chat copied to clipboard");
+    }
+
+    // URL 파라미터에서 q 값 확인 후 자동 실행
+    function checkURLParameter() {
+      const urlParams = new URLSearchParams(window.location.search);
+      const qParam = urlParams.get('q');
+      
+      if (qParam && qParam.trim()) {
+        log(`🔗 URL 파라미터 감지: q=${qParam.substring(0, 50)}...`);
+        // 디코딩 후 자동 실행
+        const decodedQuery = decodeURIComponent(qParam);
+        setTimeout(() => {
+          submitPrompt(decodedQuery);
+        }, 500); // 페이지 로딩 후 0.5초 대기
+      }
+    }
+
+    els.chatForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+      submitPrompt();
+    });
+    els.clearButton.addEventListener("click", clearCurrent);
+    els.copyButton.addEventListener("click", copyChat);
+    els.healthButton.addEventListener("click", checkHealth);
+
+    const searchToggleBtn = document.querySelector("#searchToggleButton");
+    searchToggleBtn.style.background = "rgba(139, 92, 246, 0.15)";
+    searchToggleBtn.style.borderColor = "rgba(139, 92, 246, 0.4)";
+    searchToggleBtn.style.color = "#c4b5fd";
+    searchToggleBtn.textContent = "🔍 검색ON";
+    searchToggleBtn.addEventListener("click", () => {
+      webSearchEnabled = !webSearchEnabled;
+      searchToggleBtn.style.background = webSearchEnabled ? "rgba(139, 92, 246, 0.15)" : "rgba(100, 100, 100, 0.1)";
+      searchToggleBtn.style.borderColor = webSearchEnabled ? "rgba(139, 92, 246, 0.4)" : "rgba(100, 100, 100, 0.3)";
+      searchToggleBtn.style.color = webSearchEnabled ? "#c4b5fd" : "var(--text)";
+      searchToggleBtn.textContent = webSearchEnabled ? "🔍 검색ON" : "🔍 검색OFF";
+      log(`web search ${webSearchEnabled ? "enabled" : "disabled"}`);
+    });
+
+    els.promptInput.addEventListener("keydown", (event) => {
+      if (event.key === "Enter" && !event.shiftKey && !event.isComposing) {
+        event.preventDefault();
+        els.chatForm.requestSubmit();
+      }
+    });
+
+    document.querySelectorAll("[data-prompt]").forEach((button) => {
+      button.addEventListener("click", () => {
+        els.promptInput.value = button.dataset.prompt;
+        els.promptInput.focus();
+      });
+    });
+
+    log("참소식 Ollama IDE ready");
+    log(`default endpoint: ${DEFAULT_ENDPOINT}/api/chat`);
+    render();
+    checkHealth();
+    
+    // URL 파라미터 체크
+    checkURLParameter();
+  </script>
+</body>
+</html>

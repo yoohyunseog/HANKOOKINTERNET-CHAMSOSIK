@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-28T13:52:33.150+09:00",
+  "updatedAt": "2026-05-29T15:17:00.132+09:00",
   "category": "GPU",
   "id": "gpu-geforce-rtx-4070-ti-super-gaming-x-slim-d6x-16gb-3",
   "name": "GeForce RTX 4070 Ti SUPER GAMING X SLIM D6X 16GB 트라이프로져3",
@@ -81,5 +81,9 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=MSI%20GeForce%20RTX%204070%20Ti%20SUPER%20GAMING%20X%20SLIM%20%EC%B5%9C%EC%A0%80%EA%B0%80%20%EB%8B%A4%EB%82%98%EC%99%80",
   "notes": "Standard black model",
-  "textRepair": null
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
 }

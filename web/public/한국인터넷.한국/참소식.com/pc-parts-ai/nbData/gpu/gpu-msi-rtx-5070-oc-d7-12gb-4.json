@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-28T13:52:33.150+09:00",
+  "updatedAt": "2026-05-29T15:17:01.342+09:00",
   "category": "GPU",
   "id": "gpu-msi-rtx-5070-oc-d7-12gb-4",
   "name": "MSI 지포스 RTX 5070 게이밍 트리오 OC D7 12GB 트라이프로져4",
@@ -80,5 +80,9 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=RTX%205070%20%EC%B5%9C%EC%A0%80%EA%B0%80",
   "notes": "GDDR7 memory",
-  "textRepair": null
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
 }

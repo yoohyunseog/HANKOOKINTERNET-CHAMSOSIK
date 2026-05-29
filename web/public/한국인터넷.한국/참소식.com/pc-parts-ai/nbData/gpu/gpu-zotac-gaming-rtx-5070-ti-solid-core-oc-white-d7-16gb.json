@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-28T13:52:33.150+09:00",
+  "updatedAt": "2026-05-29T15:17:02.329+09:00",
   "category": "GPU",
   "id": "gpu-zotac-gaming-rtx-5070-ti-solid-core-oc-white-d7-16gb",
   "name": "ZOTAC GAMING 지포스 RTX 5070 Ti SOLID CORE OC White D7 16GB",
@@ -81,5 +81,9 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=GeForce%20RTX%205070%20Ti%20%EC%B5%9C%EC%A0%80%EA%B0%80",
   "notes": "D7 VRAM",
-  "textRepair": null
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
 }

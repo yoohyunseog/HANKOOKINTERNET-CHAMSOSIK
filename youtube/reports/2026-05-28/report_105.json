@@ -1,0 +1,309 @@
+{
+  "timestamp": "2026-05-28T16:14:05.237116",
+  "model": "glm-5:cloud",
+  "keyword_count": 3,
+  "analyze_subtitles": true,
+  "analysis_source": "youtube",
+  "keywords": [
+    {
+      "keyword": "오늘의 주요 뉴스",
+      "is_fixed": true,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "국민연금 리밸런싱",
+      "is_fixed": false,
+      "views": [
+        8920,
+        6678,
+        1130
+      ],
+      "video_count": 3,
+      "videos": [
+        {
+          "title": "'진격의 국민연금' 255조 매도 '만지작'..증시 때릴 '투자의 신' 새 포폴에 '긴장' (자막뉴스) / SBS",
+          "video_id": "JKZjpv_RVFY",
+          "views": 8920,
+          "upload_date": "2026-05-28",
+          "url": "https://www.youtube.com/watch?v=JKZjpv_RVFY",
+          "subtitle_summary": "1.  Analyze the Request:\nSource Material: A YouTube subtitle transcript about South Korea's National Pension Service (NPS) discussing adjustments to its domestic stock weighting.\nTitle: '진격의 국민연금' 255조 매도 '만지작'..증시 때릴 '투자의 신' 새 포폴에 '긴장' (자막뉴스) / SBS\nTask: Summarize the transcript in Korean.\nLength: Approximately 500 characters (Korean characters).\nStructure: 3-5 sentences.\nConstraints: ONLY Korean, NO English.\n2.  Analyze the Source Text (Key Information Extraction):\nContext: NPS (National Pension Service) is discussing adjusting its domestic stock weighting.\nReason: The KOSPI has risen significantly, causing the NPS's domestic stock weighting to reach nearly 30% (estimated), which is double the target of 14.9%.\nMeeting: The Fund Management Committee is meeting to decide on the medium-term asset allocation plan (2027-2031).\nImpact (Sell-off): To meet the target, they might need to sell at least 255 trillion won worth of stocks.\nDilemma/Market Reaction:\nSelling such a huge amount could shock the stock market, conflicting with government policy to move assets from real estate to capital markets.\nSome experts argue the semiconductor boom and market improvements justify keeping the high weighting.\nOthers argue that 30% is too risky for the national pension fund and some rebalancing (selling) is necessary to protect the fund from volatility.\nConclusion: There is tension regarding whether NPS will sell or hold.\n3.  Drafting the Summary (Iterative Process):\nDraft 1 (Mental Outline):\n국민연금이 국내 주식 비중 조절을 논의 중이다. 코스피 상승으로 비중이 30%에 육박해 목표치 14.9%의 두 배가 넘었기 때문이다. 이를 맞추려면 255조 원을 매도해야 하는데, 이는 증시에 큰 충격을 줄 수 있다. 반면 반도체 호황 등을 이유로 비중 유지를 주장하는 목소리도 있다. 하지만 리스크 관리를 위해 일부 조정이 필요하다는 의견도 만만치 않다.\nDraft 2 (Refining for length and flow):\n국내 증시의 '큰손'인 국민연금이 역대급 코스피 상승장으로 국내 주식 비중이 목표치의 두 배 가까이인 30%에 육박하자, 이를 조절하기 위한 중기 자산 배분안 논의에 들어갔다. 현재 비중을 기존 목표치인 14.9%로 맞추기 위해서는 최소 255조 원 이상의 매도 물량이 쏟아져야 해 증시에 미칠 파장이 크다. 정부의 자본 시장 유도 정책과 반도체 호황을 고려해 비중 유지를 점치는 시각도 있지만, 기금 리스크 관리 차원에서 일부 매도 조정이 필요하다는 전문가들의 우려 섞인 목소리도 높다. 결국 국민연금의 결정이 증시와 기금 운용에 미칠 영향에 시장의 긴장이 고조되고 있다.\n4.  Checking Constraints:\nLanguage: Korean only? Yes.\nNo English: Checked.\nLength: Let's count characters (including spaces).\nDraft 2 length: \"국내 증시의 '큰손'인 국민연금이...\" -> roughly 220 characters.\nThe prompt asks for \"500자 내외\" (around 500 characters). My draft is too short. I need to expand on the details to meet the length requirement without fluff.\nDraft 3 (Expanding to ~500 characters):\n국내 증시의 '큰손'인 국민연금이 코",
+          "db_saved": true
+        },
+        {
+          "title": "National Pension to increase 'domestic stock allocation'?... Decision today (05/28/2026/12MBC News)",
+          "video_id": "zlxFAre9uuI",
+          "views": 6678,
+          "upload_date": "2026-05-28",
+          "url": "https://www.youtube.com/watch?v=zlxFAre9uuI",
+          "subtitle_summary": "1.  Analyze the Request:\nSource Material: A YouTube video subtitle about the National Pension Service (NPS) increasing domestic stock allocation.\nTitle: National Pension to increase 'domestic stock allocation'?... Decision today (05/28/2026/12MBC News). Note: The date in the title seems futuristic (2026), but the content is standard financial news. I should focus on the content provided.\nSubtitle Content: The NPS Fund Management Committee held a meeting to finalize a medium-term asset allocation plan for the next 5 years. In January, they raised the domestic stock target to 14.9%, but due to a KOSPI surge, the actual holding reached 24.5% by end of February, exceeding the target. The new plan is expected to include raising the domestic stock holding ratio to reflect this upward trend.\nConstraints:\nMUST respond ONLY in Korean.\nDo NOT use English at all.\nLength: Around 500 characters (Korean characters).\nStructure: Summarize key points in 3-5 sentences.\n2.  Drafting the Summary (Internal Monologue & Translation):\nKey Point 1: The NPS Fund Management Committee is finalizing the medium-term asset allocation plan today.\nDraft: 국민연금 기금운영운용위원회가 오늘 회의를 열고 향후 5년간의 중기 자산 배분안을 확정합니다.\nKey Point 2: Current situation: Target was 14.9% in Jan, but actual is 24.5% due to KOSPI rise.\nDraft: 지난 1월 국내 주식 목표 비중을 14.9%로 설정했으나, 코스피 급등으로 인해 실제 비중은 24.5%까지 치솟았습니다.\nKey Point 3: Expected outcome: The new plan will likely raise the target ratio to match the reality.\nDraft: 이에 따라 이번 안에는 상승한 주가를 반영하여 국내 주식 보유 비율을 높이는 내용이 포함될 것으로 보입니다.\nSynthesis: Combine and refine for flow and length.\n3.  Refining the Korean Text:\nSentence 1: 국민연금 기금운영운용위원회가 오늘 회의를 열고 내년부터 5년간의 기금 운용 방향을 담은 중기 자산 배분안을 확정합니다. (The NPS Fund Management Committee holds a meeting today to finalize the medium-term asset allocation plan containing fund management directions for the next 5 years.)\nSentence 2: 지난 1월 국내 주식 비중을 14.9%로 인상했으나, 코스피 지수의 급등세로 인해 2월 말 기준 실제 보유 비중은 24.5%를 기록하며 목표치를 넘어선 상태입니다. (While the domestic stock ratio was raised to 14.9% last January, the actual holding ratio recorded 24.5% as of end-February due to the surge in KOSPI index, exceeding the target.)\nSentence 3: 이러한 시장 상황을 반영하여, 이번 자산 배분안에는 국내 주식의 목표 비중을 현실화하기 위해 보유 비율을 추가로 높이는 방안이 담길 것으로 전망됩니다. (Reflecting such market conditions, this asset allocation plan is expected to contain measures to further raise the holding ratio to make the domestic stock target ratio realistic.)\n4.  Checking Constraints:\nLanguage: Korean only? Yes.\nEnglish usage: None? Yes.\nLength: Let's count characters (roughly).\nSentence 1: ~55 chars\nSentence 2: ~65 chars",
+          "db_saved": true
+        },
+        {
+          "title": "[ 한미반도체 주가 전망 ] 우려하던게 터졌다! 美-이란 공습, 국민연금 255조 리밸런싱 매도 폭탄 임박!? 지금부터 무조건 이렇게 하세요",
+          "video_id": "jxFXPOU7OlE",
+          "views": 1130,
+          "upload_date": "2026-05-28",
+          "url": "https://www.youtube.com/watch?v=jxFXPOU7OlE",
+          "subtitle_summary": "1.  Analyze the Request:\nLanguage Constraint: MUST respond ONLY in Korean (한국어). NO English allowed.\nTask: Summarize the provided YouTube video transcript.\nLength: Approximately 500 characters (Korean characters).\nContent: Title: \"[한미반도체 주가 전망] 우려하던게 터졌다!...\", Transcript content regarding Hanmi Semiconductor stock, US-Iran conflict, National Pension Service rebalancing, etc.\nFormat: 3-5 sentences for the core summary.\n2.  Analyze the Source Text (Transcript):\nContext: The speaker (Yeon-gyo-so) is discussing Hanmi Semiconductor stock, which has been volatile and causing anxiety for investors.\nKey Point 1 (Market Sentiment): Investors are anxious due to repeated drops. The speaker advises a buying perspective rather than selling at this point.\nKey Point 2 (Geopolitical Issue): US airstrike on Iran caused volatility, but the speaker interprets this as a negotiation tactic rather than a full-scale war, suggesting it will settle down.\nKey Point 3 (Key Events/Schedule): Important events are happening: Bank of Korea base rate decision, US Q1 GDP, PCE price index, and crucially, National Pension Service (NPS) rebalancing.\nKey Point 4 (NPS Rebalancing): The KOSPI rose sharply, causing the NPS's domestic stock weighting to exceed limits. To rebalance, they might need to sell. There's talk of a massive \"selling bomb\" worth 255 trillion won (though this figure seems exaggerated or context-specific in the transcript, the core point is selling pressure due to rebalancing).\nKey Point 5 (Conclusion): Short-term volatility is expected due to these factors, but the speaker emphasizes buying opportunities during dips caused by these events.\n3.  Drafting the Summary (Iterative Process):\nDraft 1 (Mental Outline): Hanmi Semiconductor is volatile. US-Iran news scared people, but it's likely just negotiation tactics. The real issue is the National Pension Service rebalancing. Because stocks went up, they hold too much and might have to sell, creating selling pressure. This causes short-term drops, but investors should see this as a buying opportunity.\nDraft 2 (Translating to Korean & Refining): 한미반도체 주가가 변동성을 보이며 투자자들의 불안감을 키우고 있으나, 현재 시점에서는 매도보다는 매수 관점으로 대응할 필요가 있습니다. 미국의 이란 공습 이슈는 협상을 위한 의도로 보이며, 시장에 큰 충격을 주기보다는 조만간 진정될 것으로 판단됩니다. 하지만 국민연금의 리밸런싱 이슈는 주의해야 할 점인데, 국내 증시 상승으로 비중이 커진 만큼 매도 물량이 나올 수 있어 단기적인 하락 요인이 될 수 있습니다. 이러한 변동성은 오히려 저점 매수의 기회로 활용해야 하며, 중요 일정에 맞춰 대응 전략을 세워야 합니다.\nChecking Character Count (Draft 2):\n\"한미반도체 주가가 변동성을 보이며 투자자들의 불안감을 키우고 있으나, 현재 시점에서는 매도보다는 매수 관점으로 대응할 필요가 있습니다.\" (53 chars)\n\"미국의 이란 공습 이슈는 협상을 위한 의도로 보이며, 시장에 큰 충격을 주기보다는 조만간 진정될 것으로 판단됩니다.\" (51 chars)\n\"하지만 국민연금의 리밸런싱 이슈는 주의해야 할 점인데, 국내 증시 상승으로 비중이 커진 만큼 매도 물량이 나올 수 있어 단기적인 하락 요인이 될 수 있습니다.\" (67 chars)\n\"이러한 변동성은",
+          "db_saved": true
+        }
+      ],
+      "max": 2.5557,
+      "min": 2.6359,
+      "nb_score": 0.9696,
+      "avg_views": 5576.0,
+      "total_views": 16728
+    },
+    {
+      "keyword": "카카오 파업 위기",
+      "is_fixed": false,
+      "views": [
+        3531,
+        665,
+        1565,
+        473,
+        46
+      ],
+      "video_count": 5,
+      "videos": [
+        {
+          "title": "\"Will KakaoTalk, Pay, and transfers stop working?\"… Is Kakao facing its 'first-ever strike' shutd...",
+          "video_id": "Gqlsy6U5Wiw",
+          "views": 3531,
+          "upload_date": "2026-05-28",
+          "url": "https://www.youtube.com/watch?v=Gqlsy6U5Wiw",
+          "subtitle_summary": "1.  Analyze the Request:\nTask: Summarize the provided YouTube subtitle text.\nLanguage: Korean ONLY (no English allowed).\nLength: Around 500 characters (Korean characters).\nFormat: 3-5 sentences.\nSource Text: A news report about Kakao's labor union negotiations failing, leading to potential strikes, and the impact on services like KakaoTalk and KakaoPay.\n2.  Analyze the Source Text:\nKey Point 1: Negotiations between Kakao management and the union failed after over 8 hours, leading the union to plan the company's first-ever strike around June.\nKey Point 2: There is a possibility of a joint strike involving Kakao headquarters and affiliates.\nKey Point 3: Immediate service disruption (KakaoTalk, Pay) is unlikely because it's a platform-based system, unlike manufacturing.\nKey Point 4: However, prolonged strikes or expanded participation could cause issues, especially with security or system failures, potentially affecting financial services (payments, transfers) if essential personnel join.\nKey Point 5: Kakao plans to establish an emergency response system to minimize customer impact, and both sides remain open to further dialogue.\n3.  Drafting the Summary (Iterative Process):\nDraft 1 (Mental Outline): Kakao labor and management failed to reach an agreement after long negotiations. The union is planning a strike for June. While services like KakaoTalk won't stop immediately due to the nature of IT platforms, long strikes could affect financial services if essential staff participate. Kakao says they will prepare emergency measures.\nDraft 2 (Translating to formal Korean & refining):\n8시간이 넘는 협상 끝에 카카오 노사가 합의점을 찾지 못해 창사 이래 첫 파업이 예고되었습니다. 노조는 6월 파업을 준비하고 있으며, 계열사를 아우르는 총파업 가능성도 점쳐지고 있습니다. 카카오톡이나 카카오페이 등 플랫폼 서비스는 시스템 기반으로 운영되어 당장 중단될 가능성은 낮습니다. 하지만 파업이 장기화되거나 필수 인력이 참여할 경우, 보안 문제나 금융 서비스 장애로 이어질 수 있어 우려가 큽니다. 이에 카카오는 비상 대응 체계를 갖추고, 노사는 여전히 대화의 문을 열어두기로 했습니다.\nChecking Constraints:\nLanguage: Korean only? Yes.\nLength: Let's count characters.\n\"8시간이 넘는 협상 끝에 카카오 노사가 합의점을 찾지 못해 창사 이래 첫 파업이 예고되었습니다. 노조는 6월 파업을 준비하고 있으며, 계열사를 아우르는 총파업 가능성도 점쳐지고 있습니다. 카카오톡이나 카카오페이 등 플랫폼 서비스는 시스템 기반으로 운영되어 당장 중단될 가능성은 낮습니다. 하지만 파업이 장기화되거나 필수 인력이 참여할 경우, 보안 문제나 금융 서비스 장애로 이어질 수 있어 우려가 큽니다. 이에 카카오는 비상 대응 체계를 갖추고, 노사는 여전히 대화의 문을 열어두기로 했습니다.\"\nCharacter count (including spaces): ~230 characters.\nThe prompt asks for \"500자 내외\" (around 500 characters). 230 is a bit short. I need to expand slightly to provide more detail and get closer to the target length, though \"around 500\" usually allows for some flexibility (e.g., 300-500 is often acceptable for summaries, but I should aim higher to be safe).\nDraft 3 (Expanding for length):\n장시간의 마라톤 협상에도 카카오 노사가 결렬되면서, 노조가 창사 이래 첫",
+          "db_saved": true
+        },
+        {
+          "title": "Kakao Labor-Management Mediation Fails Again… First Strike Crisis Since Founding [Issue PLAY] / J...",
+          "video_id": "SvwZ7Y4jZ2c",
+          "views": 665,
+          "upload_date": "2026-05-28",
+          "url": "https://www.youtube.com/watch?v=SvwZ7Y4jZ2c",
+          "subtitle_summary": "1.  Analyze the Request:\nSource Material: YouTube video subtitles about Kakao's labor-management dispute.\nTask: Summarize the subtitles in Korean.\nLength: Around 500 characters (Korean characters).\nFormat: 3-5 sentences.\nConstraint: MUST respond ONLY in Korean. NO English at all.\n2.  Analyze the Source Text (Subtitles):\nKey Event: Kakao labor-management mediation failed again.\nConsequence: First strike crisis since founding. Legal right to strike secured.\nDetails: 2nd mediation meeting held at Gyeonggi Regional Labor Relations Commission. Lasted 8 hours but failed.\nUnion's Stance: Demands fair performance bonus distribution and improved welfare. Plans to prepare for a strike in June. Voting for strike was passed.\nCompany's Stance: (Implied) Mediation stopped.\nBroader Context: Similar to Samsung, performance bonuses are becoming a hot issue in labor negotiations (LG U+, HD Hyundai Heavy Industries, Hyundai Motor).\nSpecifics: Union wants transparent standards for bonuses, criticizing management's discretion.\n3.  Drafting the Summary (Iterative Process):\nDraft 1 (Mental Outline): Kakao labor and management failed to reach an agreement in the second round of mediation regarding wage negotiations. Consequently, the union secured the legal right to strike, signaling the first strike in the company's history since its founding. The main points of contention were fair distribution of performance bonuses and welfare measures. The union argues that the current system based on management discretion lacks transparency and trust. This trend of demanding clear performance bonus standards is spreading to other major companies like Samsung, LG U+, and Hyundai Motor, making it a key issue in this year's labor negotiations.\nDraft 2 (Translating to Korean & Refining):\n카카오 노사가 임금협상 2차 조정회의에서 합의점을 찾지 못하고 결렬되면서, 창사 이래 첫 파업 위기가 현실화되고 있습니다. 노조는 공정한 성과급 배분과 경영 참여 등을 요구하며 파업 찬반 투표에서 가결된 바 있어, 합법적인 파업 돌입을 준비하고 있습니다. 성과급 배분 기준의 불투명성이 주된 쟁점인 가운데, 이는 삼성전자를 시작으로 LG유플러스, 현대차 등 다른 기업으로도 번지는 노사 간 핵심 이슈로 떠올랐습니다. 노조 측은 대화의 문을 열어두고 있으나, 향후 노사의 움직임에 귀추가 주목되는 상황입니다.\nChecking Length & Sentence Count:\nSentence 1: 카카오 노사가 임금협상 2차 조정회의에서 합의점을 찾지 못하고 결렬되면서, 창사 이래 첫 파업 위기가 현실화되고 있습니다. (About 50 chars)\nSentence 2: 노조는 공정한 성과급 배분과 경영 참여 등을 요구하며 파업 찬반 투표에서 가결된 바 있어, 합법적인 파업 돌입을 준비하고 있습니다. (About 55 chars)\nSentence 3: 성과급 배분 기준의 불투명성이 주된 쟁점인 가운데, 이는 삼성전자를 시작으로 LG유플러스, 현대차 등 다른 기업으로도 번지는 노사 간 핵심 이슈로 떠올랐습니다. (About 65 chars)\nSentence 4: 노조 측은 대화의 문을 열어두고 있으나, 향후 노사의 움직임에 귀추가 주목되는 상황입니다. (About 35 chars)\nTotal characters: ~200 characters. This is a bit short. The prompt asks for \"500자 내외\" (around 500 characters). I need to expand on the details.\nDraft 3 (Expanding to meet length requirement",
+          "db_saved": true
+        },
+        {
+          "title": "[자막뉴스] 카카오도 성과급 전쟁...카카오페이까지 총파업 가나 / YTN",
+          "video_id": "AiZV_wbjA6Q",
+          "views": 1565,
+          "upload_date": "2026-05-28",
+          "url": "https://www.youtube.com/watch?v=AiZV_wbjA6Q",
+          "subtitle_summary": "1.  Analyze the Request:\nSource Material: A YouTube subtitle transcript about a labor dispute at Kakao.\nTitle: [자막뉴스] 카카오도 성과급 전쟁...카카오페이까지 총파업 가나 / YTN\nContent: Kakao labor-management negotiation failed (2nd mediation broken down). The main issue is the performance bonus structure (stock options vs. cash percentage of operating profit). Management offered 10.2% (excluding restricted stocks), while the union demanded 14% (separate from stocks). The difference amounts to about 10 million won per employee. The union now has the right to strike legally, potentially next month. This puts Kakao at risk of its first strike since founding. There's a possibility of a general strike involving affiliates like Kakao Pay. Management says they will keep talking.\nConstraints:\nMUST respond ONLY in Korean.\nDo NOT use English at all.\nLength: Around 500 characters (Korean characters).\nStructure: Summarize core content in 3-5 sentences.\n2.  Drafting the Summary (Iterative Process):\nAttempt 1 (Mental Outline):\n카카오 노사 협상이 결렬되었습니다. 성과급 산정 기준에서 이견을 보였습니다. 사측은 영업이익 10.2%를, 노조는 14%를 요구했습니다. 이는 직원당 천만 원의 차이입니다. 노조는 파업권을 확보했고 다음 달 파업을 예고했습니다. 카카오페이 등 계열사까지 파업할 수도 있습니다. 사측은 대화를 계속하겠다고 했습니다.\nAttempt 2 (Refining for flow and length):\n카카오 노사가 성과 보상 구조를 둘러싼 핵심 쟁점 좁히기에 실패하며 2차 조정이 결렬되었습니다. 사측은 양도제한 조건부 주식을 제외한 영업이익의 10.2%를 제시한 반면, 노조는 이를 별도로 보고 영업이익의 14%를 요구해 직원당 약 천만 원의 격차가 발생했습니다. 이로 인해 노조는 합법적인 파업 권한을 확보했으며, 다음 달 파업을 예고하며 창사 이래 첫 파업 위기가 현실화되고 있습니다. 특히 카카오페이 등 계열사 노조와 연대한 총파업 가능성도 제기되는 가운데, 사측은 대화 창구를 열어두고 합의를 위해 노력하겠다는 입장을 밝혔습니다.\nChecking Constraints:\nKorean only? Yes.\nNo English? Yes.\nLength? Let's count characters (roughly).\n\"카카오 노사가 성과 보상 구조를 둘러싼 핵심 쟁점 좁히기에 실패하며 2차 조정이 결렬되었습니다.\" (42 chars)\n\"사측은 양도제한 조건부 주식을 제외한 영업이익의 10.2%를 제시한 반면, 노조는 이를 별도로 보고 영업이익의 14%를 요구해 직원당 약 천만 원의 격차가 발생했습니다.\" (78 chars)\n\"이로 인해 노조는 합법적인 파업 권한을 확보했으며, 다음 달 파업을 예고하며 창사 이래 첫 파업 위기가 현실화되고 있습니다.\" (54 chars)\n\"특히 카카오페이 등 계열사 노조와 연대한 총파업 가능성도 제기되는 가운데, 사측은 대화 창구를 열어두고 합의를 위해 노력하겠다는 입장을 밝혔습니다.\" (66 chars)\nTotal: ~240 characters. This is a bit short for \"500자 내외\" (around 500 characters). Usually,",
+          "db_saved": true
+        },
+        {
+          "title": "[Replay] Morning&｜Collapsed Overpass Had Warning Signs But No Reinforcements // Kakao Labor-Manag...",
+          "video_id": "cx5_sl_9DA0",
+          "views": 473,
+          "upload_date": "2026-05-28",
+          "url": "https://www.youtube.com/watch?v=cx5_sl_9DA0",
+          "subtitle_summary": "1.  Analyze the Request:\nSource Material: A YouTube video transcript (JTBC Morning& news).\nTask: Summarize the transcript in Korean.\nLength: Around 500 characters (Korean characters).\nConstraints: ONLY Korean (no English), 3-5 sentences for the core summary.\nContent: The transcript covers several news topics: Seosomun overpass collapse, Kakao labor dispute, Iran ship attack, Son Heung-min's World Cup training. The bulk of the detailed transcript focuses on the Seosomun overpass collapse.\n2.  Analyze the Transcript Content:\nTopic 1: Seosomun Overpass Collapse (Main focus).\n12 hours before the collapse, a support settled 2.9cm (warning sign).\nNo field control or traffic restrictions were implemented despite the danger.\nReinforcements (like props) were needed but not installed because a railway was underneath (Seoul City's explanation).\n9 people (experts, site manager, etc.) went under to inspect, leading to the accident.\nSeoul City blamed the railway for preventing physical barrier installation and shifted responsibility to the construction company and supervision team.\nPolice have formed an investigation team.\nTopic 2: Kakao Labor Dispute.\n2nd wage negotiation failed.\nUnion secured the right to dispute and warned of a strike next month (first in Kakao history).\nTopic 3: Iran Ship Attack.\nGovernment identified Iran as the attacker of the Korean ship 'Korea' (actually 'Kum' or similar, transcript says '나무호' but context implies a specific vessel, likely the MT Hankuk Chemi or similar incident, but I must stick to the transcript text: \"나무호\"). Correction: The transcript says \"나무호\" (Namoo-ho). Government claims debris is Iranian-made.\nIranian ambassador denied involvement.\nTopic 4: Son Heung-min.\nParticipated in training for the North and Central America World Cup.\nEmphasized team over individual and details.\n3.  Drafting the Summary (Iterative Process):\nDraft 1 (Mental Outline):\n서소문 고가 붕괴 사고는 12시간 전 침하 징후가 있었음에도 현장 통제가 이루어지지 않아 발생했습니다. 서울시는 철도 구간이라 보강 조치를 못 했다고 해명했으나, 책임을 시공사와 감리단에 돌리고 있습니다. 한편, 카카오 노사 협상이 결렬되어 창사 첫 파업이 예고되었고, 정부는 호르무즈 해협 피격 사건의 배후로 이란을 지목했습니다. 손흥민 선수는 월드컵 훈련에 참여하며 팀워크를 강조했습니다.\nRefining for Length and Sentence Count (Target: 3-5 sentences, ~500 chars):\nSentence 1 (Seosomun): 서소문 고가는 붕괴 12시간 전 지지대가 2.9cm 침하하는 조짐이 있었음에도 현장 통제나 보강 조치 없이 방치되어 결국 사고로 이어졌습니다.\nSentence 2 (Seosomun follow-up): 서울시는 철도 구간이라 방어벽 설치가 불가능했다며 시공사와 감리단에 책임을 전가했으나, 경찰 수사가 시작되었습니다.\nSentence 3 (Kakao): 카카오 노사 임금 협상이 최종 결렬되면서 노조가 다음 달 파업을 예고해 창사 이래 첫 파업 가능성이 대두되었습니다.\nSentence 4 (International/Sports): 호르무즈 해협 선박 피격 사건과 관련해 정부가 이란을 공격 주체로 지목한 가운데, 손흥민 선수는 월드컵 대표팀 훈련에 합류해 팀의 우선순위를 강",
+          "db_saved": true
+        },
+        {
+          "title": "카카오 노사 조정 또 결렬…창사 이래 첫 파업 위기 [세상만사] #카카오 #노사조정 #파업위기",
+          "video_id": "wTk3eqYZvB4",
+          "views": 46,
+          "upload_date": "2026-05-28",
+          "url": "https://www.youtube.com/watch?v=wTk3eqYZvB4",
+          "subtitle_summary": "1.  Analyze the Request:\nTask: Summarize the provided YouTube video transcript.\nLanguage: Korean ONLY (no English allowed).\nLength: Around 500 characters (Korean characters).\nStructure: 3-5 sentences.\nSource Material: A news report about Kakao's labor-management negotiation breakdown and the potential for the first strike in the company's history.\n2.  Analyze the Source Text:\nKey Event: Kakao labor-management 2nd adjustment (negotiation) failed.\nConsequence: High possibility of the first strike since the company's founding.\nDetails of Negotiation: 8 hours of negotiation at the Gyeonggi Regional Labor Relations Commission failed.\nMain Conflict Point: Performance bonus (incentive) structure.\nManagement (Company): Offered 10.2% of operating profit, excluding restricted stocks.\nUnion: Demanded 14% of operating profit, arguing restricted stocks and bonuses are separate.\nFinancial Impact: Union's demand = ~10 million won per employee; Company's offer = ~1 million won per employee (Note: The transcript says \"100 man won\" vs \"1000 man won\", but looking at the context of \"1000 man won\" reducing to \"100 man won\" seems like a typo in the transcript or a huge gap. Let's re-read carefully. \"노조 주장을 따를 때 직원 한 명당 성과급이 100만 원에 달하지만 사측 제한을 적용하면 천만 원으로 줄어듭니다.\" -> Wait, usually unions ask for more. The transcript says \"Union claim -> 100 million won? No, it says 100 man won (1 million) vs 1000 man won (10 million)? That sounds backwards or the transcript has a typo. Let's look at the logic. Usually, management offers less. If management applies restrictions, it drops to 10 million? No, usually management offers less.\nCorrection on Numbers: Let's re-read the transcript text provided: \"노조 주장을 따를 때 직원 한 명당 성과급이 100만 원에 달하지만 사측 제한을 적용하면 천만 원으로 줄어듭니다.\" This is confusing. Usually, Union > Management. Let's check the actual news context if possible, or just stick to the text provided but interpret it logically. Actually, looking at real news about this event (Kakao 2022 strike), the union wanted 14% of OP, management offered 10.2%. The difference was significant. The transcript text seems to have a typo (swapping numbers or units). \"100만 원\" vs \"천만 원\". If the union wants 14% and management 10.2%, the union wants more. The text says \"Union claim... 100 man won... Management restriction... 1000 man won reduced.\" This is definitely a transcript error. However, my job is to summarize the content. I should focus on the disagreement over the percentage rather than the specific erroneous numbers if they are contradictory. Or, I can just state the gap is significant. Let's look at the text again. \"노조 주장을 따를 때... 100만 원... 사측 제한을 적용하면 천만 원으로 줄어듭니다.\" This is logically inverted. I will focus on the core conflict: the percentage gap (14% vs 10.2% + stock exclusion issue).\nOutcome: Union secured the right to strike (dispute right). Strike possible next month.\nBroader Impact: Possibility of a general strike involving affiliates like KakaoPay.\nCompany Stance: Will keep dialogue open.\n3.  Drafting the Summary (Iterative Process):\nDraft 1 (Mental Outline): Kakao's labor and management failed their second negotiation. The main issue is the performance bonus calculation. The union wants 14% of operating profit, while the company offered 10.2% excluding restricted stocks. Because they couldn't agree, the union can now legally strike. This might be the first strike in Kakao's history and could spread to affiliates. The company says they will keep trying to talk.\nDraft 2 (Translating to Korean & Refining): 카카오 노사가 두 번째 조정마저 결렬되면서 창사 이래 첫 파업 위기에 놓였",
+          "db_saved": true
+        }
+      ],
+      "max": 0.8334,
+      "min": 1.6218,
+      "nb_score": 0.5139,
+      "avg_views": 1256.0,
+      "total_views": 6280
+    },
+    {
+      "keyword": "테슬라 사이버트럭",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "수학여행 사고 책임",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "이란 미국 긴장",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "트럼프 강경 발언",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "반도체 GDP 성장률",
+      "is_fixed": false,
+      "views": [
+        1145
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "[Breaking] Bank of Korea raises annual growth outlook from 2.0% to 2.6%, keeps interest rates 'fr...",
+          "video_id": "8fE-vPJSye0",
+          "views": 1145,
+          "upload_date": "2026-05-28",
+          "url": "https://www.youtube.com/watch?v=8fE-vPJSye0",
+          "subtitle_summary": "1.  Analyze the Request:\nSource Material: A YouTube video transcript about the Bank of Korea raising its annual growth outlook and keeping interest rates unchanged.\nTask: Summarize the transcript in Korean.\nLength: Approximately 500 characters (Korean characters).\nConstraints: MUST respond ONLY in Korean. Do NOT use English. Summarize core content in 3-5 sentences.\n2.  Analyze the Source Text (Transcript):\nKey Point 1: Bank of Korea (BOK) kept the base rate at 2.5% for the 8th consecutive time.\nKey Point 2: BOK raised the annual economic growth outlook from previous estimates to 2.0% (specifically mentioned raising it by 0.2%p to reach 2.0% in the text, though the title says 2.0% to 2.6% - wait, let me double-check the text vs title).\nCorrection/Clarification: The title says \"raises... from 2.0% to 2.6%\". The transcript says: \"한국은행이 올해 우리나라 경제 성장률을 2%로 전망했습니다... 지난해 11월 한 차례 상향 조정한데 이어 이번에 0.2% 2% 포인트 더 올려 2%라는 숫자를 내놨습니다.\" (BOK forecast 2%... raised by 0.2%p to reach 2%). There seems to be a discrepancy between the title and the transcript text provided. The transcript text explicitly mentions \"2%\". However, looking closely at the transcript: \"지난해 5월만 해도 1.6%... 지난해 11월 한 차례 상향 조정한데 이어 이번에 0.2%... 더 올려 2%라는 숫자를 내놨습니다.\" Wait, usually BOK raises forecasts. Let's look at the numbers again. 1.6 -> (Nov adjustment) -> (This time +0.2) -> 2.0%.\nWait, let me re-read the transcript carefully. \"한국은행이 올해 우리나라 경제 성장률을 2%로 전망했습니다.\" (Forecast 2%). \"이번에 0.2%... 더 올려 2%라는 숫자를 내놨습니다.\" (Raised by 0.2% to 2%).\nWait, the title says \"from 2.0% to 2.6%\". This is a huge discrepancy. Usually, I should trust the transcript content provided for the summary, but the title is often auto-generated or clickbait. However, looking at the transcript again, it mentions \"KOSPI broke 6,000... 6,300\". KOSPI is currently around 2,600-2,700 (as of mid-2024). KOSPI breaking 6,000 is futuristic or refers to a specific index not KOSPI (maybe KOSDAQ? No, KOSDAQ is around 800-900). Or maybe this is a simulated future scenario?\nActually, looking at the numbers: KOSPI 6,000? That's impossible for the current real-world context (it's around 2,700). The transcript mentions \"Samsung Electronics and SK Hynix rose more than 7%\". This sounds like a specific news report.\nCrucial Check: The transcript text seems to have some errors or is a hypothetical scenario/future prediction video, OR the numbers in the transcript are typos (e.g., KOSPI 2,600 -> 6,000? No, that's a huge jump).\nLet's stick to the provided text for the summary. The text says: BOK kept rates at 2.5%. Growth outlook raised to 2.0% (from a previous lower figure). Reason: Semiconductor boom. KOSPI broke 6,000 (according to text). Semiconductor exports are booming due to AI.\nWait, let me re-read the specific numbers in the text again.\n\"기준 금리를 연 2.5%로 유지\" (Rate 2.5%).\n\"성장률을 2%로 전망... 0.2%... 더 올려 2%\" (Growth 2.0%).\n\"코스피",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "서울시 해외직구 안전성",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "사전투표 전국 동시실시",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "풍수해 대응 훈련",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "인천공항 사전투표소",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "서소문 고가차도 붕괴",
+      "is_fixed": false,
+      "views": [
+        1542
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "'서소문 고가차도 붕괴' 사흘째...이 시각 사고현장 / YTN",
+          "video_id": "KWWvKEyKHmo",
+          "views": 1542,
+          "upload_date": "2026-05-28",
+          "url": "https://www.youtube.com/watch?v=KWWvKEyKHmo",
+          "subtitle_summary": "1.  Analyze the Request:\nSource Material: YouTube video transcript about the Seosomun Overpass collapse.\nTitle: '서소문 고가차도 붕괴' 사흘째...이 시각 사고현장 / YTN.\nTask: Summarize the transcript in Korean.\nLength: Around 500 characters (Korean characters).\nConstraints:\nMUST respond ONLY in Korean.\nDo NOT use English at all.\nSummarize core content in 3-5 sentences.\n2.  Analyze the Transcript:\nContext: It's been 4 days (transcript says \"4흘째\" but title says \"사흘째\", transcript likely meant 4th day or there's a slight discrepancy, but the key is \"several days later\") since the Seosomun Overpass collapsed, but cleanup hasn't started.\nCurrent Situation: The overpass deck is still collapsed, blocking the railway. Steel structures are unstable. Police are controlling the area (Seosomun Police Station intersection to Arisu HQ). Train services (KTX, etc.) are disrupted/suspended between Seoul Station and Haengsin Station.\nFuture Plans: Relevant agencies (Seoul City, Ministry of Employment and Labor, Ministry of Land, Infrastructure and Transport, Korail) held a meeting. They discussed changing the demolition method from crane lifting to crushing (breaking up the structure). Another meeting is scheduled for 3 PM to finalize details.\n3.  Drafting the Summary (Iterative Process):\nDraft 1 (Mental Outline): 서소문 고가차도가 무너진 지 사흘이 넘었지만 수습 작업은 시작되지 않았습니다. 붕괴 위험 때문에 주변 도로가 통제되고 KTX 운행도 멈췄습니다. 관계 기관은 철거 방식을 크레인 인양에서 구조물을 부수는 방식으로 변경하는 것을 논의했습니다. 오후 회의 후 구체적인 철거 방안이 결정될 예정입니다.\nRefining for Length and Constraints:\nSentence 1: 서소문 고가차도 붕괴 사고가 발생한 지 사흘이 지났으나 여전히 수습 작업이 시작되지 않아 인근 도로 통제와 열차 운행 차질이 이어지고 있습니다. (Situation)\nSentence 2: 붕괴 위험이 상존하는 탓에 현장은 철저히 통제된 가운데, 관계 기관들은 기존 크레인 인양 방식 대신 구조물을 부수는 압쇄 방식으로 철거 방안을 변경하는 것을 논의했습니다. (Discussion/Change of plan)\nSentence 3: 오늘 오후 열리는 추가 회의를 통해 구체적인 철거 진행 여부와 방식이 최종 결정될 것으로 보입니다. (Future outlook)\nChecking Character Count:\nSentence 1: 서소문 고가차도 붕괴 사고가 발생한 지 사흘이 지났으나 여전히 수습 작업이 시작되지 않아 인근 도로 통제와 열차 운행 차질이 이어지고 있습니다. (68 characters)\nSentence 2: 붕괴 위험이 상존하는 탓에 현장은 철저히 통제된 가운데, 관계 기관들은 기존 크레인 인양 방식 대신 구조물을 부수는 압쇄 방식으로 철거 방안을 변경하는 것을 논의했습니다. (79 characters)\nSentence 3: 오늘 오후 열리는 추가 회의를 통해 구체적인 철거 진행 여부와 방식이 최종 결정될 것으로 보입니다. (46 characters)\nTotal: ~193 characters.\nAdjustment: The prompt asks for \"500자 내외\" (around 500 characters). My draft is too short. I need to expand on the details provided in the transcript to meet the length requirement without fluffing it",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "블룸버그 한화 잠수함",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "삼성 QD-OLED 모니터",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "바이오시밀러 규제 완화",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    }
+  ]
+}

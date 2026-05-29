@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-28T13:52:33.150+09:00",
+  "updatedAt": "2026-05-29T15:17:00.780+09:00",
   "category": "GPU",
   "id": "gpu-gigabyte-aorus-rtx-4080-super-master-d6x-16gb",
   "name": "GIGABYTE AORUS 지포스 RTX 4080 SUPER MASTER D6X 16GB",
@@ -81,5 +81,9 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Gigabyte%20GeForce%20RTX%204080%20SUPER%20AORUS%20MASTER%20%EC%B5%9C%EC%A0%80%EA%B0%80",
   "notes": "AORUS Master high-end cooling solution",
-  "textRepair": null
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
 }

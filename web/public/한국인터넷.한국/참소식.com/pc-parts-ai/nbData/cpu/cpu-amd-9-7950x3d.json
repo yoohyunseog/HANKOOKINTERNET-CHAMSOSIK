@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-28T13:52:33.150+09:00",
+  "updatedAt": "2026-05-29T15:16:57.780+09:00",
   "category": "CPU",
   "id": "cpu-amd-9-7950x3d",
   "name": "AMD 라이젠 9 7950X3D",
@@ -81,5 +81,9 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=AMD%20%EB%9D%BC%EC%9D%B4%EC%A0%A0%209%207950X3D%20%EC%B5%9C%EC%A0%80%EA%B0%80%20%EB%8B%A4%EB%82%98%EC%99%80",
   "notes": "High-end 3D V-Cache processor. Price estimated based on market value as search results showed pre-built PCs.",
-  "textRepair": null
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
 }

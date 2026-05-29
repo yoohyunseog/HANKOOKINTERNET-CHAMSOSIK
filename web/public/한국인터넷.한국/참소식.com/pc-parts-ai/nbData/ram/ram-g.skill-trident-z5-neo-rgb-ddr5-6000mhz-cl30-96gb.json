@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-28T13:52:33.150+09:00",
+  "updatedAt": "2026-05-29T15:17:03.092+09:00",
   "category": "RAM",
   "id": "ram-g.skill-trident-z5-neo-rgb-ddr5-6000mhz-cl30-96gb",
   "name": "G.Skill Trident Z5 Neo RGB DDR5 6000MHz CL30 96GB",
@@ -21,7 +21,7 @@
   "performance": 85,
   "valueIndex": 17.7,
   "aiUseScore": 55,
-  "powerWatts": null,
+  "powerWatts": 0,
   "tags": [
     "high-capacity",
     "gaming",
@@ -82,5 +82,9 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=G.Skill%20Trident%20Z5%20Neo%20RGB%20DDR5%206000MHz%20CL30%2096GB%20price",
   "notes": "96GB kit (likely 48GB x 2)",
-  "textRepair": null
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
 }

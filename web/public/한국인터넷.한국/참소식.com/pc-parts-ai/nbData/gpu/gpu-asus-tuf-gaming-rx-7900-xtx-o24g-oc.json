@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-28T13:52:33.150+09:00",
+  "updatedAt": "2026-05-29T15:16:59.485+09:00",
   "category": "GPU",
   "id": "gpu-asus-tuf-gaming-rx-7900-xtx-o24g-oc",
   "name": "ASUS TUF Gaming 라데온 RX 7900 XTX O24G OC",
@@ -81,5 +81,9 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=ASUS%20TUF%20Gaming%20%EB%9D%BC%EB%8D%B0%EC%98%A8%20RX%207900%20XTX%20O24G%20OC%20%EC%B5%9C%EC%A0%80%EA%B0%80",
   "notes": "D6 24GB, 3-fan, DP 2.1 support",
-  "textRepair": null
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
 }

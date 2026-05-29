@@ -33,15 +33,15 @@ def fetch_and_save():
                     time.sleep(3)
                     continue
                 else:
-                    print(f"[{datetime.now()}] 10회 시도 후에도 404 오류. 종료.", file=sys.stderr)
-                    sys.exit(1)
+                    print(f"[{datetime.now()}] 10회 시도 후에도 404 오류. 기존 파일 유지.", file=sys.stderr)
+                    return  # 파일 수정하지 않고 정상 종료
             # BeautifulSoup으로 <feed> 태그만 추출
             soup = BeautifulSoup(xml_source, 'lxml-xml')
             feed = soup.find('feed')
-            if feed:
-                xml_content = '<?xml version="1.0" encoding="utf-8"?>\n' + feed.prettify()
-            else:
-                xml_content = xml_source  # fallback
+            if not feed:
+                print(f"[{datetime.now()}] feed 태그를 찾을 수 없음. 기존 파일 유지.", file=sys.stderr)
+                return  # 파일 수정하지 않고 정상 종료
+            xml_content = '<?xml version="1.0" encoding="utf-8"?>\n' + feed.prettify()
             with open(OUTPUT_PATH, "w", encoding="utf-8") as f:
                 f.write(xml_content)
             print(f"[{datetime.now()}] Fetched and saved: {OUTPUT_PATH}")

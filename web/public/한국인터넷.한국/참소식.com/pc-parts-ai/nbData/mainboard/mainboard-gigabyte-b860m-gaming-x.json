@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-28T13:52:33.150+09:00",
+  "updatedAt": "2026-05-29T15:17:02.715+09:00",
   "category": "Mainboard",
   "id": "mainboard-gigabyte-b860m-gaming-x",
   "name": "GIGABYTE B860M GAMING X",
@@ -21,7 +21,7 @@
   "performance": 60,
   "valueIndex": 31.7,
   "aiUseScore": 39,
-  "powerWatts": null,
+  "powerWatts": 0,
   "tags": [
     "m-atx",
     "gaming"
@@ -81,5 +81,9 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=B860%20Mainboard%20%EC%B5%9C%EC%A0%80%EA%B0%80",
   "notes": "Observed price 189,000 KRW from search results.",
-  "textRepair": null
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
 }

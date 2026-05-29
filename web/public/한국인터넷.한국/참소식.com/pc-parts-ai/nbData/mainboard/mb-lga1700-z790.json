@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-28T13:52:33.150+09:00",
+  "updatedAt": "2026-05-29T15:17:02.738+09:00",
   "category": "Mainboard",
   "id": "mb-lga1700-z790",
   "name": "LGA1700 Z790 Mainboard",
@@ -81,5 +81,9 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=LGA1700%20Z790%20Mainboard%20price",
   "notes": "Auto-generated AI PC candidate added after the saved candidate list was exhausted.",
-  "textRepair": null
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
 }

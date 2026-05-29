@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-28T13:52:33.150+09:00",
+  "updatedAt": "2026-05-29T15:17:02.897+09:00",
   "category": "PSU",
   "id": "psu-850w-platinum",
   "name": "850W 80PLUS Platinum PSU",
@@ -21,7 +21,7 @@
   "performance": 90,
   "valueIndex": 52.4,
   "aiUseScore": 90,
-  "powerWatts": null,
+  "powerWatts": 0,
   "tags": [
     "creator",
     "ai"
@@ -81,5 +81,9 @@
   "nbBand": "500~699",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=850W%2080PLUS%20Platinum%20PSU%20price",
   "notes": "Auto-generated AI PC candidate added after the saved candidate list was exhausted.",
-  "textRepair": null
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
 }

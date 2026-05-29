@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-28T13:52:33.150+09:00",
+  "updatedAt": "2026-05-29T15:17:01.420+09:00",
   "category": "GPU",
   "id": "gpu-msi-geforce-rtx-4060-ti-ventus-2x-black-oc-8gb",
   "name": "MSI GeForce RTX 4060 Ti Ventus 2X Black OC 8GB",
@@ -80,5 +80,9 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=GeForce%20RTX%204060%20Ti%20MSI%20Ventus%202X%20Black%20%EB%8B%A4%EB%82%98%EC%99%80",
   "notes": "Ventus 2X Black OC model with 8GB GDDR6",
-  "textRepair": null
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
 }

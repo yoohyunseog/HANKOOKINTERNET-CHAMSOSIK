@@ -1,0 +1,89 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-05-29T15:17:02.828+09:00",
+  "category": "Mainboard",
+  "id": "mainboard-rog-strix-z790-e-gaming-wifi",
+  "name": "ROG STRIX Z790-E GAMING WIFI",
+  "maker": "ASUS",
+  "platform": "LGA1700",
+  "estimatedPriceKrw": 601300,
+  "priceBand": "60만원 이상",
+  "speedLabel": "DDR5",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "Mainboard",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 90,
+  "valueIndex": 15,
+  "aiUseScore": 59,
+  "powerWatts": 0,
+  "tags": [
+    "gaming",
+    "high-end"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "Mainboard",
+    "partId": "mainboard-rog-strix-z790-e-gaming-wifi",
+    "partName": "ROG STRIX Z790-E GAMING WIFI",
+    "speed": {
+      "score": 100,
+      "weight": 0.32,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "Mainboard",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 900,
+      "value": 200,
+      "aiFit": 590,
+      "priceEfficiency": 170,
+      "powerEfficiency": 900
+    },
+    "nbVector": [
+      100,
+      900,
+      200,
+      590,
+      170,
+      900
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 264.462,
+    "nbMin": 373.212,
+    "weightedScore": 367,
+    "nbBand": "100~499",
+    "summary": "Mainboard ROG STRIX Z790-E GAMING WIFI 부품을 속도 중심 N/B 데이터베이스 점수 367점으로 저장했습니다."
+  },
+  "nbWeightedScore": 367,
+  "nbMax": 264.462,
+  "nbMin": 373.212,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=ASUS%20ROG%20STRIX%20Z790-E%20GAMING%20WIFI%20%EA%B0%80%EA%B2%A9",
+  "notes": "Standard Z790-E model",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

@@ -1,0 +1,90 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-05-29T15:17:00.232+09:00",
+  "category": "GPU",
+  "id": "gpu-geforce-rtx-4080-super-founders-edition-16gb",
+  "name": "GeForce RTX 4080 Super Founders Edition 16GB",
+  "maker": "NVIDIA",
+  "platform": "PCIe 4.0",
+  "estimatedPriceKrw": 3314340,
+  "priceBand": "60만원 이상",
+  "speedLabel": "Boost 2.55GHz",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "GPU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 92,
+  "valueIndex": 2.8,
+  "aiUseScore": 92,
+  "powerWatts": 320,
+  "tags": [
+    "gaming",
+    "ai",
+    "high-end"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "GPU",
+    "partId": "gpu-geforce-rtx-4080-super-founders-edition-16gb",
+    "partName": "GeForce RTX 4080 Super Founders Edition 16GB",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "GPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 920,
+      "value": 100,
+      "aiFit": 920,
+      "priceEfficiency": 30,
+      "powerEfficiency": 100
+    },
+    "nbVector": [
+      100,
+      920,
+      100,
+      920,
+      30,
+      100
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 169.04,
+    "nbMin": 304.272,
+    "weightedScore": 340,
+    "nbBand": "100~499",
+    "summary": "GPU GeForce RTX 4080 Super Founders Edition 16GB 부품을 속도 중심 N/B 데이터베이스 점수 340점으로 저장했습니다."
+  },
+  "nbWeightedScore": 340,
+  "nbMax": 169.04,
+  "nbMin": 304.272,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=RTX%204080%20Super%20Founders%20Edition%20%EA%B0%80%EA%B2%A9",
+  "notes": "Founders Edition model",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-28T13:52:33.150+09:00",
+  "updatedAt": "2026-05-29T15:16:59.808+09:00",
   "category": "GPU",
   "id": "gpu-geforce-rtx-4060-ti-aero-oc-16gb",
   "name": "GeForce RTX 4060 Ti AERO OC 16GB",
@@ -81,5 +81,9 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=GeForce%20RTX%204060%20Ti%20GIGABYTE%20AERO%20OC%2016GB%20%EC%B5%9C%EC%A0%80%EA%B0%80",
   "notes": "16GB VRAM version of the AERO OC model",
-  "textRepair": null
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
 }

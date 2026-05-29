@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-28T13:52:33.150+09:00",
+  "updatedAt": "2026-05-29T15:17:02.804+09:00",
   "category": "Mainboard",
   "id": "mainboard-msi-mag-z890-tomahawk-wifi",
   "name": "MSI MAG Z890 TOMAHAWK WIFI",
@@ -21,7 +21,7 @@
   "performance": 75,
   "valueIndex": 17.4,
   "aiUseScore": 49,
-  "powerWatts": null,
+  "powerWatts": 0,
   "tags": [
     "Z890",
     "ATX",
@@ -82,5 +82,9 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=MSI%20Z890%20%ED%86%A0%EB%A7%88%ED%98%B8%ED%81%AC%20%EC%B5%9C%EC%A0%80%EA%B0%80",
   "notes": "Intel Z890 chipset, Socket 1851, PCIe 5.0, supports up to 256GB RAM",
-  "textRepair": null
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
 }

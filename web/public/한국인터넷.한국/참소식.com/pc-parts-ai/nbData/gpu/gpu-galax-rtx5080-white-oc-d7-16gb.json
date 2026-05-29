@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-28T13:52:33.150+09:00",
+  "updatedAt": "2026-05-29T15:16:59.743+09:00",
   "category": "GPU",
   "id": "gpu-galax-rtx5080-white-oc-d7-16gb",
   "name": "GALAX 지포스 RTX5080 WHITE OC D7 16GB",
@@ -82,5 +82,9 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=RTX%205080%20%EC%B6%9C%EC%8B%9C%EC%9D%BC%20%EA%B0%80%EA%B2%A9",
   "notes": "RTX 50 series, GDDR7",
-  "textRepair": null
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
 }

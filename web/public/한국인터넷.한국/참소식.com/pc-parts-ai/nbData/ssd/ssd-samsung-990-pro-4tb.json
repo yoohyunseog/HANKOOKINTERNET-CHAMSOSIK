@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-28T13:52:33.150+09:00",
+  "updatedAt": "2026-05-29T15:17:03.211+09:00",
   "category": "SSD",
   "id": "ssd-samsung-990-pro-4tb",
   "name": "Samsung 990 PRO 4TB",
@@ -21,7 +21,7 @@
   "performance": 95,
   "valueIndex": 9.2,
   "aiUseScore": 62,
-  "powerWatts": null,
+  "powerWatts": 0,
   "tags": [
     "high-end",
     "nvme"
@@ -81,5 +81,9 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Samsung%20990%20PRO%204TB",
   "notes": "M.2 2280 form factor",
-  "textRepair": null
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
 }

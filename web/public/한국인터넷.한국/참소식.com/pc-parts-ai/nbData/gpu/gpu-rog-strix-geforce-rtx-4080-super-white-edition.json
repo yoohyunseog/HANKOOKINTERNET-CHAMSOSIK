@@ -1,0 +1,89 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-05-29T15:17:01.991+09:00",
+  "category": "GPU",
+  "id": "gpu-rog-strix-geforce-rtx-4080-super-white-edition",
+  "name": "ROG Strix GeForce RTX 4080 Super White Edition",
+  "maker": "ASUS",
+  "platform": "PCIe 4.0",
+  "estimatedPriceKrw": 2400000,
+  "priceBand": "60만원 이상",
+  "speedLabel": "GDDR6X",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "GPU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 92,
+  "valueIndex": 3.8,
+  "aiUseScore": 60,
+  "powerWatts": 320,
+  "tags": [
+    "gaming",
+    "white"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "GPU",
+    "partId": "gpu-rog-strix-geforce-rtx-4080-super-white-edition",
+    "partName": "ROG Strix GeForce RTX 4080 Super White Edition",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "GPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 920,
+      "value": 100,
+      "aiFit": 600,
+      "priceEfficiency": 40,
+      "powerEfficiency": 100
+    },
+    "nbVector": [
+      100,
+      920,
+      100,
+      600,
+      40,
+      100
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 117.71,
+    "nbMin": 287.986,
+    "weightedScore": 309,
+    "nbBand": "100~499",
+    "summary": "GPU ROG Strix GeForce RTX 4080 Super White Edition 부품을 속도 중심 N/B 데이터베이스 점수 309점으로 저장했습니다."
+  },
+  "nbWeightedScore": 309,
+  "nbMax": 117.71,
+  "nbMin": 287.986,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=ASUS%20ROG%20Strix%20RTX%204080%20Super%20White%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "The search result shows an overseas price of 4,299,420 KRW, which is abnormally high. Estimated street price is adjusted to a more reasonable market range for this premium model.",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

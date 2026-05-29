@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-28T13:52:33.150+09:00",
+  "updatedAt": "2026-05-29T15:17:02.382+09:00",
   "category": "GPU",
   "id": "gpu-zotac-gaming-geforce-rtx-4060-ti-twin-edge-8gb",
   "name": "ZOTAC GAMING GeForce RTX 4060 Ti Twin Edge 8GB",
@@ -80,5 +80,9 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=GeForce%20RTX%204060%20Ti%20ZOTAC%20GAMING%20Twin%208GB%20%EB%8B%A4%EB%82%98%EC%99%80",
   "notes": "Twin Edge model, 8GB GDDR6",
-  "textRepair": null
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
 }

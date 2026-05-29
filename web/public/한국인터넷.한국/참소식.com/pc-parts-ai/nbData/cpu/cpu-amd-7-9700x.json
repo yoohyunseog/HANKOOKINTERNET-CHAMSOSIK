@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-28T13:52:33.150+09:00",
+  "updatedAt": "2026-05-29T15:16:57.703+09:00",
   "category": "CPU",
   "id": "cpu-amd-7-9700x",
   "name": "AMD 라이젠 7 9700X",
@@ -81,5 +81,9 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=AMD%20%EB%9D%BC%EC%9D%B4%EC%A0%A0%207%209700X%20%EA%B0%80%EA%B2%A9",
   "notes": "Granite Ridge architecture, Zen 5",
-  "textRepair": null
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
 }

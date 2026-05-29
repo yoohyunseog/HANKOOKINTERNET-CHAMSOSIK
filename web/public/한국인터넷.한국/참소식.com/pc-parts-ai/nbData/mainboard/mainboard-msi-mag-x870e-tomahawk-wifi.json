@@ -1,0 +1,90 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-05-29T15:17:02.798+09:00",
+  "category": "Mainboard",
+  "id": "mainboard-msi-mag-x870e-tomahawk-wifi",
+  "name": "MSI MAG X870E TOMAHAWK WIFI",
+  "maker": "MSI",
+  "platform": "AM5",
+  "estimatedPriceKrw": 650000,
+  "priceBand": "60만원 이상",
+  "speedLabel": "X870E",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "Mainboard",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 95,
+  "valueIndex": 14.6,
+  "aiUseScore": 62,
+  "powerWatts": 0,
+  "tags": [
+    "high-end",
+    "wifi7",
+    "pcie5"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "Mainboard",
+    "partId": "mainboard-msi-mag-x870e-tomahawk-wifi",
+    "partName": "MSI MAG X870E TOMAHAWK WIFI",
+    "speed": {
+      "score": 100,
+      "weight": 0.32,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "Mainboard",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 950,
+      "value": 195,
+      "aiFit": 620,
+      "priceEfficiency": 150,
+      "powerEfficiency": 950
+    },
+    "nbVector": [
+      100,
+      950,
+      195,
+      620,
+      150,
+      950
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 257.313,
+    "nbMin": 368.978,
+    "weightedScore": 380,
+    "nbBand": "100~499",
+    "summary": "Mainboard MSI MAG X870E TOMAHAWK WIFI 부품을 속도 중심 N/B 데이터베이스 점수 380점으로 저장했습니다."
+  },
+  "nbWeightedScore": 380,
+  "nbMax": 257.313,
+  "nbMin": 368.978,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=AMD%20%EB%9D%BC%EC%9D%B4%EC%A0%A0%209%209950X%20%EB%A9%94%EC%9D%B8%EB%B3%B4%EB%93%9C%20%EC%B6%94%EC%B2%9C",
+  "notes": "Identified from bundle listings (Ryzen 9 9950X + MSI MAG X870E Tomahawk WiFi). Price is estimated as it appeared in a CPU bundle.",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

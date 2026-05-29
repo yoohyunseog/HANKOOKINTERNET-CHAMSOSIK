@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-28T13:52:33.150+09:00",
+  "updatedAt": "2026-05-29T15:17:00.282+09:00",
   "category": "GPU",
   "id": "gpu-geforce-rtx-4080-super-trinity-oc-white-edition",
   "name": "GeForce RTX 4080 Super Trinity OC White Edition",
@@ -82,5 +82,9 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=RTX%204080%20Super%20ZOTAC%20Gaming%20OC%20%EC%B5%9C%EC%A0%80%EA%B0%80",
   "notes": "Trinity OC White Edition model",
-  "textRepair": null
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
 }

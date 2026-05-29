@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-28T13:52:33.150+09:00",
+  "updatedAt": "2026-05-29T15:17:02.682+09:00",
   "category": "Mainboard",
   "id": "mainboard-asus-prime-z890-p-csm",
   "name": "ASUS PRIME Z890-P-CSM",
@@ -21,7 +21,7 @@
   "performance": 60,
   "valueIndex": 17.9,
   "aiUseScore": 39,
-  "powerWatts": null,
+  "powerWatts": 0,
   "tags": [
     "workstation",
     "intel"
@@ -81,5 +81,9 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Z890%20%EB%A9%94%EC%9D%B8%EB%B3%B4%EB%93%9C%20%EC%B6%94%EC%B2%9C%20%EC%B5%9C%EC%A0%80%EA%B0%80",
   "notes": "Corporate Stable Model (CSM)",
-  "textRepair": null
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
 }

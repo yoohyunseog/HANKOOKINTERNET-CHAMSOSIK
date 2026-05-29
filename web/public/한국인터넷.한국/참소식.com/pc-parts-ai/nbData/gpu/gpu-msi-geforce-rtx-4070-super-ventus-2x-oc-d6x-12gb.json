@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-28T13:52:33.150+09:00",
+  "updatedAt": "2026-05-29T15:17:01.489+09:00",
   "category": "GPU",
   "id": "gpu-msi-geforce-rtx-4070-super-ventus-2x-oc-d6x-12gb",
   "name": "MSI GeForce RTX 4070 SUPER Ventus 2X OC D6X 12GB",
@@ -80,5 +80,9 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=MSI%20GeForce%20RTX%204070%20SUPER%20Ventus%202X%20%EC%B5%9C%EC%A0%80%EA%B0%80%20%EB%8B%A4%EB%82%98%EC%99%80",
   "notes": "Ventus 2X dual fan model",
-  "textRepair": null
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
 }

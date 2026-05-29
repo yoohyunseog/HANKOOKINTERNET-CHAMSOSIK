@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-28T13:52:33.150+09:00",
+  "updatedAt": "2026-05-29T15:17:02.755+09:00",
   "category": "Mainboard",
   "id": "mb-lga1851-z890-ai",
   "name": "LGA1851 Z890 AI Mainboard",
@@ -82,5 +82,9 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=LGA1851%20Z890%20AI%20Mainboard%20price",
   "notes": "Additional AI PC candidate collected when saved parts are already exhausted.",
-  "textRepair": null
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
 }

@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-28T13:52:33.150+09:00",
+  "updatedAt": "2026-05-29T15:17:02.811+09:00",
   "category": "Mainboard",
   "id": "mainboard-msi-pro-b650m-b",
   "name": "MSI PRO B650M-B",
@@ -21,7 +21,7 @@
   "performance": 75,
   "valueIndex": 65.8,
   "aiUseScore": 49,
-  "powerWatts": null,
+  "powerWatts": 0,
   "tags": [
     "budget",
     "mATX"
@@ -81,5 +81,9 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=AMD%20%EB%9D%BC%EC%9D%B4%EC%A0%A0%205%209600X%20%EB%A9%94%EC%9D%B8%EB%B3%B4%EB%93%9C%20%EC%B6%94%EC%B2%9C",
   "notes": "Observed from Danawa ad listing.",
-  "textRepair": null
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
 }

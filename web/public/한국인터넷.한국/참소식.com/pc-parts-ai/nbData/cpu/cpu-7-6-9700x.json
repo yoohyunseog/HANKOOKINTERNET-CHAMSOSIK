@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-28T13:52:33.150+09:00",
+  "updatedAt": "2026-05-29T15:16:57.592+09:00",
   "category": "CPU",
   "id": "cpu-7-6-9700x",
   "name": "라이젠7-6세대 9700X (그래니트 릿지)",
@@ -81,5 +81,9 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=AMD%20Ryzen%207%209700X%20%EC%B5%9C%EC%A0%80%EA%B0%80",
   "notes": "Multi-pack version observed",
-  "textRepair": null
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
 }

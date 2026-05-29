@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-28T13:52:33.150+09:00",
+  "updatedAt": "2026-05-29T15:17:02.086+09:00",
   "category": "GPU",
   "id": "gpu-sapphire-radeon-rx-7900-xtx-nitro-vapor-x-gaming-24gb",
   "name": "Sapphire Radeon RX 7900 XTX Nitro+ Vapor-X Gaming 24GB",
@@ -81,5 +81,9 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=AMD%20Radeon%20RX%207900%20XTX%20Sapphire%20Nitro%2B%20%EB%8B%A4%EB%82%98%EC%99%80",
   "notes": "Vapor-X cooling system, RDNA 3 architecture",
-  "textRepair": null
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
 }

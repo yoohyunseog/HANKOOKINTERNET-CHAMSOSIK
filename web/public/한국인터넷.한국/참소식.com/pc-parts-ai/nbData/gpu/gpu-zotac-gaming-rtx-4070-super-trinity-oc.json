@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-28T13:52:33.150+09:00",
+  "updatedAt": "2026-05-29T15:17:02.244+09:00",
   "category": "GPU",
   "id": "gpu-zotac-gaming-rtx-4070-super-trinity-oc",
   "name": "ZOTAC GAMING 지포스 RTX 4070 SUPER Trinity OC 블랙 에디션",
@@ -81,5 +81,9 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=ZOTAC%20GAMING%20%EC%A7%80%ED%8F%AC%EC%8A%A4%20RTX%204070%20SUPER%20Trinity%20OC%20%EC%B5%9C%EC%A0%80%EA%B0%80%20%EB%8B%A4%EB%82%98%EC%99%80",
   "notes": "Black Edition, 192-bit",
-  "textRepair": null
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
 }

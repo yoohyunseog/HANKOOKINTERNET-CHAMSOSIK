@@ -11,6 +11,7 @@ import os
 import sys
 import json
 import time
+import re
 import argparse
 import tempfile
 from datetime import datetime, timedelta
@@ -51,6 +52,28 @@ CURRENT_OLLAMA_MODEL = None  # 런타임에 설정됨
 
 LOGS_DIR.mkdir(parents=True, exist_ok=True)
 
+# ChromeDriver lock 파일 정리 함수
+def cleanup_chromedriver_lock():
+    """ChromeDriver lock 파일 충돌 방지를 위한 정리"""
+    import glob
+    wdm_cache = Path.home() / ".wdm"
+    if wdm_cache.exists():
+        # lock 파일들 삭제
+        for lock_file in wdm_cache.glob("*.wdm-lock*"):
+            try:
+                lock_file.unlink()
+            except Exception:
+                pass
+        # 오래된 캐시 정리 (7일 이상)
+        import time as time_module
+        cache_time = time_module.time() - (7 * 24 * 60 * 60)
+        for cache_file in wdm_cache.glob("drivers/chromedriver*/*"):
+            try:
+                if cache_file.is_file() and cache_file.stat().st_mtime < cache_time:
+                    cache_file.unlink()
+            except Exception:
+                pass
+
 DEFAULT_DYNAMIC_KEYWORDS = [
     "정치 논란"
 ]
@@ -65,6 +88,53 @@ class SilentYtDlpLogger:
 
     def error(self, msg):
         pass
+
+
+def format_relative_time(date_str: str) -> str:
+    """절대 날짜를 상대 시간으로 변환
+    
+    예: "2026-05-28" → "어제"
+        "2026-05-29" → "오늘"
+        "2026-05-27" → "2일 전"
+    
+    Returns:
+        상대 시간 문자열 (변환 실패 시 원본 반환)
+    """
+    if not date_str:
+        return date_str or "날짜 미상"
+    
+    try:
+        # YYYY-MM-DD 형식 파싱
+        if len(date_str) >= 10:
+            date_part = date_str[:10]
+            upload_date = datetime.strptime(date_part, "%Y-%m-%d").date()
+        else:
+            return date_str
+        
+        today = datetime.now().date()
+        diff = (today - upload_date).days
+        
+        if diff == 0:
+            return "오늘"
+        elif diff == 1:
+            return "어제"
+        elif diff == 2:
+            return "2일 전"
+        elif diff == 3:
+            return "3일 전"
+        elif diff < 7:
+            return f"{diff}일 전"
+        elif diff < 30:
+            weeks = diff // 7
+            return f"{weeks}주 전" if weeks > 1 else "1주 전"
+        elif diff < 365:
+            months = diff // 30
+            return f"{months}달 전" if months > 1 else "1달 전"
+        else:
+            years = diff // 365
+            return f"{years}년 전" if years > 1 else "1년 전"
+    except (ValueError, TypeError):
+        return date_str
 
 
 def get_today_report_dir() -> Path:
@@ -221,11 +291,60 @@ def redact_korean_person_names(text: str) -> str:
     return redacted
 
 
+def generate_contextual_filler(sentence: str, model: str) -> str:
+    """Ollama가 문맥에 맞는 자연스러운 추가 문장 생성"""
+    if not model or not sentence:
+        return "관련 파장이 확산되고 있습니다."
+    
+    prompt = f"""다음 뉴스 문장에 이어질 자연스러운 추가 문장을 1개만 작성하라.
+- 원본 문장과 중복되지 않게
+- 20-40자 내외
+- 사실적이고 객관적인 톤
+- "관련 파장이 확산되고 있습니다" 같은 상투적 표현 금지
+
+원본: {sentence}
+
+추가 문장:"""
+    
+    try:
+        response = requests.post(
+            f"{OLLAMA_URL}/api/generate",
+            json={
+                "model": model,
+                "prompt": prompt,
+                "stream": False,
+                "temperature": 0.7,
+            },
+            timeout=120,
+        )
+        response.raise_for_status()
+        
+        result = response.json()
+        filler = result.get("response", "").strip()
+        
+        # 정리
+        filler = filler.split("\n")[0].strip()
+        filler = filler.replace('"', '').replace("'", "")
+        filler = re.sub(r"^(추가 문장[:：]\s*|문장[:：]\s*)", "", filler)
+        
+        if len(filler) < 10 or len(filler) > 60:
+            return "관련 파장이 확산되고 있습니다."
+        
+        return filler
+    except Exception as e:
+        print(f"[WARN] 컨텍스트 필러 생성 실패: {e}")
+        return "관련 파장이 확산되고 있습니다."
+
+
 def format_summary_with_ollama(keyword: str, upload_date: str, summary: str) -> str:
     """올라마가 요약을 포맷팅: 키워드에 맞는 메시지 + 핵심 내용 1줄"""
     global CURRENT_OLLAMA_MODEL
     
+    print(f"            [포맷팅] 시작: 키워드='{keyword[:30]}...', 업로드일={upload_date}")
+    print(f"            [포맷팅] 입력 요약 길이: {len(summary) if summary else 0}자")
+    
     if not CURRENT_OLLAMA_MODEL or not summary:
+        print(f"            [포맷팅] 스킵: 모델 또는 요약 없음")
         return normalize_summary_text(summary)
 
     # 올라마가 요약을 단일 소식 1문장으로 생성
@@ -234,19 +353,11 @@ def format_summary_with_ollama(keyword: str, upload_date: str, summary: str) -> 
 입력 키워드: {keyword}
 입력 요약: {summary}
 
-엄격 규칙:
-1) 결과는 반드시 한 문장만 출력
-2) 결과는 반드시 대괄호로 감쌀 것. 예: [여기에 한 문장]
-3) 번호(1. 2. 3.), 줄바꿈, 불릿, 제목/채널명/조회수/날짜 제거
-4) 여러 내용이 있으면 가장 중요한 1개만 선택
-5) 괄호 포함 전체 길이는 90~140자 (즉, 문장 본문은 88~138자)
-6) 설명/접두어/추가 문장 절대 금지
-7) 한국인 실명은 쓰지 말고 '국내 정치인', '국내 기업인', '국내 인사'처럼 일반화할 것
-8) 미국 인명이나 해외 인명은 필요하면 그대로 써도 됨
-
-출력: 대괄호 한 문장 1개만"""
+500자 내외로 요약
+"""
     
     try:
+        print(f"            [포맷팅] Ollama 요청 시작 (모델: {CURRENT_OLLAMA_MODEL})")
         response = requests.post(
             f"{OLLAMA_URL}/api/generate",
             json={
@@ -255,29 +366,35 @@ def format_summary_with_ollama(keyword: str, upload_date: str, summary: str) -> 
                 "stream": False,
                 "temperature": 0.3,
             },
-            timeout=20,
+            timeout=120,  # 타임아웃 증가
         )
         response.raise_for_status()
         
         result = response.json()
         formatted = result.get("response", "").strip()
+        print(f"            [포맷팅] 응답 길이: {len(formatted)}자")
+        print(f"            [포맷팅] 응답 미리보기: {formatted[:100]}...")
 
         if formatted:
+            print(f"            [포맷팅] 포맷팅 시작")
             import re
             min_body_len = 88
             max_body_len = 138
 
             one_line = " ".join(formatted.split())
             one_line = redact_korean_person_names(one_line)
+            print(f"            [포맷팅] 정리된 텍스트 길이: {len(one_line)}자")
 
             # 1) 대괄호 문장 우선 추출
             bracket_match = re.search(r"\[(.*?)\]", one_line)
             if bracket_match:
                 sentence = bracket_match.group(1).strip()
+                print(f"            [포맷팅] 대괄호 문장 추출: {sentence[:50]}...")
             else:
                 # 2) 첫 문장만 사용
                 first_sentence = re.split(r"(?<=[.!?。！？])\s+", one_line)[0].strip()
                 sentence = first_sentence
+                print(f"            [포맷팅] 첫 문장 추출: {sentence[:50]}...")
 
             # 번호/불릿 제거
             sentence = re.sub(r"^\s*[\-•*#]+\s*", "", sentence)
@@ -292,20 +409,26 @@ def format_summary_with_ollama(keyword: str, upload_date: str, summary: str) -> 
             sentence = sentence.replace("3줄로 요약한 내용입니다.", "")
             sentence = sentence.replace("3줄 요약", "")
             sentence = re.sub(r"\s+", " ", sentence).strip(" ,;:-")
+            print(f"            [포맷팅] 정제된 문장 길이: {len(sentence)}자")
 
             if sentence:
+                print(f"            [포맷팅] 최종 문장: {sentence[:100]}...")
                 # 너무 길면 단어 경계 기준으로 잘라 최대 길이 맞춤
                 if len(sentence) > max_body_len:
+                    print(f"            [포맷팅] 문장이 너무 김 ({len(sentence)}자), 자르기 시작")
                     cut = sentence[:max_body_len]
                     last_space = cut.rfind(" ")
                     if last_space >= min_body_len:
                         cut = cut[:last_space]
                     sentence = cut.rstrip(" ,;:-")
+                    print(f"            [포맷팅] 잘린 문장 길이: {len(sentence)}자")
 
-                # 여전히 짧으면 자연스러운 패딩 문구 추가
+                # 여전히 짧으면 Ollama가 상황에 맞는 추가 문장 생성
                 if len(sentence) < min_body_len:
-                    filler = "관련 파장이 확산되고 있습니다."
+                    print(f"            [포맷팅] 문장이 너무 짧음 ({len(sentence)}자), 추가 문장 생성")
+                    filler = generate_contextual_filler(sentence, CURRENT_OLLAMA_MODEL)
                     sentence = f"{sentence} {filler}".strip()
+                    print(f"            [포맷팅] 추가 후 길이: {len(sentence)}자")
 
                 # 최종 안전 장치
                 if len(sentence) > max_body_len:
@@ -315,12 +438,20 @@ def format_summary_with_ollama(keyword: str, upload_date: str, summary: str) -> 
                         cut = cut[:last_space]
                     sentence = cut.rstrip(" ,;:-")
 
+                print(f"            [포맷팅] 최종 결과: [{sentence[:80]}...]")
                 return f"[{sentence}]"
+            else:
+                print(f"            [포맷팅] 실패: 문장 추출 실패")
+        else:
+            print(f"            [포맷팅] 실패: 포맷팅 결과 없음")
     except Exception as e:
-        print(f"[WARN] Ollama 포맷팅 실패: {e}")
+        print(f"            [포맷팅] 예외 발생: {type(e).__name__}: {e}")
     
     # 올라마 실패 시 기본 정리 사용
-    return normalize_summary_text(summary)
+    print(f"            [포맷팅] 폴백: 기본 정리 사용")
+    result = normalize_summary_text(summary)
+    print(f"            [포맷팅] 폴백 결과 길이: {len(result)}자")
+    return result
 
 
 def log_subtitle_failure(
@@ -420,42 +551,336 @@ def is_unavailable_summary(summary: str) -> bool:
     return not normalized or normalized in UNAVAILABLE_SUMMARIES
 
 
+def search_web_duckduckgo(query: str, max_results: int = 5) -> List[Dict[str, str]]:
+    """SearXNG 공개 인스턴스로 웹 검색 수행
+    
+    Args:
+        query: 검색어
+        max_results: 최대 결과 수
+        
+    Returns:
+        [{"title": "...", "url": "...", "snippet": "..."}, ...]
+    """
+    results = []
+    
+    # SearXNG 공개 인스턴스 목록 (순차 시도)
+    searxng_instances = [
+        "https://searx.be",
+        "https://search.sapti.me",
+        "https://search.bus-hit.me",
+        "https://searx.fmac.xyz",
+    ]
+    
+    try:
+        # ddgs 라이브러리 사용 (새로운 패키지명)
+        try:
+            from ddgs import DDGS
+        except ImportError:
+            # 구버전: duckduckgo_search
+            from duckduckgo_search import DDGS
+        
+        print(f"            [검색 요청] DuckDuckGo 검색 중...")
+        
+        with DDGS() as ddgs:
+            # 검색 수행 (한국어 결과 우선)
+            search_results = list(ddgs.text(query, max_results=max_results, region='kr-kr'))
+        
+        if search_results:
+            print(f"            [검색 결과] {len(search_results)}개 찾음")
+            for r in search_results:
+                results.append({
+                    "title": r.get("title", "")[:100],
+                    "url": r.get("href", ""),
+                    "snippet": r.get("body", "")
+                })
+            
+            # 검색 결과 표시
+            for i, r in enumerate(results[:3], 1):
+                print(f"               {i}. {r.get('title', '')[:60]}...")
+        else:
+            print(f"            [검색 결과] 없음")
+            
+    except ImportError:
+        # 라이브러리가 없으면 SearXNG 공개 인스턴스 사용
+        print(f"            [검색 요청] SearXNG 공개 인스턴스 검색 중...")
+        
+        import urllib.parse
+        encoded_query = urllib.parse.quote_plus(query)
+        
+        for instance_url in searxng_instances:
+            try:
+                search_url = f"{instance_url}/search?q={encoded_query}&format=json&language=ko"
+                response = requests.get(search_url, timeout=10, headers={
+                    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+                })
+                response.raise_for_status()
+                data = response.json()
+                
+                # 결과 추출
+                for result in data.get("results", [])[:max_results]:
+                    results.append({
+                        "title": result.get("title", "")[:100],
+                        "url": result.get("url", ""),
+                        "snippet": result.get("content", "")
+                    })
+                
+                if results:
+                    print(f"            [검색 결과] {len(results)}개 찾음 ({instance_url})")
+                    for i, r in enumerate(results[:3], 1):
+                        print(f"               {i}. {r.get('title', '')[:60]}...")
+                    break
+                    
+            except Exception as e:
+                print(f"            [WARN] {instance_url} 실패: {e}")
+                continue
+        
+        if not results:
+            print(f"            [검색 결과] 모든 인스턴스 실패")
+                
+    except Exception as e:
+        print(f"[WARN] 검색 오류: {e}")
+    
+    return results
+
+
+def _is_korean_enough(text: str, min_ratio: float = 0.25) -> bool:
+    """응답에 한글이 충분히 포함되어 있는지 검사"""
+    if not text:
+        return False
+
+    korean_chars = len(re.findall(r"[가-힣]", text))
+    total_chars = len(re.sub(r"\s+", "", text))
+
+    if total_chars == 0:
+        return False
+
+    return (korean_chars / total_chars) >= min_ratio
+
+
+def _trim_around_500(text: str, limit: int = 600) -> str:
+    """너무 긴 요약을 500자 내외로 정리"""
+    text = re.sub(r"\s+", " ", text).strip()
+
+    if len(text) <= limit:
+        return text
+
+    cut = text[:limit]
+    last_dot = max(cut.rfind("."), cut.rfind("다."), cut.rfind("요."), cut.rfind("음."))
+
+    if last_dot > 250:
+        return cut[:last_dot + 1].strip()
+
+    return cut.strip() + "..."
+
+
+def _ollama_korean_summary(prompt: str, model: str, retry: bool = True) -> str:
+    """Ollama에 한국어 요약 요청"""
+    system_prompt = """
+    너는 한국어 뉴스/영상 요약 전문가다.
+    반드시 한국어로만 답변한다.
+    영어 문장을 그대로 번역하듯 나열하지 않는다.
+    영어 고유명사, 제품명, 인명, 회사명은 원문 표기를 허용한다.
+    출력은 450자에서 550자 사이의 자연스러운 한국어 요약문으로 작성한다.
+    목록, 제목, 마크다운, 따옴표 없이 본문만 작성한다.
+    출처, 기자 이름, 개인정보(이름, 연락처, 이메일 등)는 절대 포함하지 않는다.
+    """
+
+    print(f"            [_ollama_korean_summary] 요약 요청 시작 (모델: {model})")
+    print(f"            [_ollama_korean_summary] 프롬프트 길이: {len(prompt)}자")
+    
+    try:
+        print(f"            [_ollama_korean_summary] Ollama API 호출 중...")
+        response = requests.post(
+            f"{OLLAMA_URL}/api/generate",
+            json={
+                "model": model,
+                "system": system_prompt,
+                "prompt": prompt,
+                "stream": False,
+                "options": {
+                    "temperature": 0.2,
+                    "num_predict": 900,
+                    "top_p": 0.8,
+                    "repeat_penalty": 1.1
+                }
+            },
+            timeout=60
+        )
+
+        if response.status_code != 200:
+            print(f"            [_ollama_korean_summary] 실패: HTTP {response.status_code}")
+            print(f"            [_ollama_korean_summary] 응답 내용: {response.text[:200]}")
+            return ""
+
+        result_json = response.json()
+        print(f"            [_ollama_korean_summary] 응답 JSON 키: {list(result_json.keys())}")
+        
+        # cloud 모델은 response 필드가 비어있을 수 있음
+        result = result_json.get("response", "").strip()
+        print(f"            [_ollama_korean_summary] response 필드 길이: {len(result)}자")
+        
+        # response가 비어있으면 thinking 필드 확인
+        if not result:
+            thinking = result_json.get("thinking", "").strip()
+            print(f"            [_ollama_korean_summary] thinking 필드 길이: {len(thinking)}자")
+            if thinking:
+                result = thinking
+                print(f"            [_ollama_korean_summary] thinking 필드에서 요약 추출")
+        
+        if result:
+            print(f"            [_ollama_korean_summary] 원본 요약 길이: {len(result)}자")
+            print(f"            [_ollama_korean_summary] 원본 요약 미리보기: {result[:150]}...")
+        
+        result = _trim_around_500(result)
+        print(f"            [_ollama_korean_summary] 정리 후 길이: {len(result)}자")
+
+        if _is_korean_enough(result):
+            print(f"            [_ollama_korean_summary] 한국어 비율 충족")
+            return result
+        else:
+            print(f"            [_ollama_korean_summary] 한국어 비율 부족")
+
+        if retry:
+            print(f"            [_ollama_korean_summary] 재시도: 한국어 요약 재생성")
+            retry_prompt = f"""
+            아래 응답은 한국어 요약 조건을 만족하지 못했습니다.
+            영어 번역체가 아니라 자연스러운 한국어 설명문으로 다시 요약하세요.
+            반드시 500자 내외의 한국어 본문만 출력하세요.
+
+            원문 응답:
+            {result}
+
+            다시 작성:
+            """
+            return _ollama_korean_summary(retry_prompt, model, retry=False)
+
+        print(f"            [_ollama_korean_summary] 최종 결과 길이: {len(result)}자")
+        return result
+
+    except requests.exceptions.Timeout:
+        print(f"            [_ollama_korean_summary] 타임아웃 발생")
+        return ""
+    except requests.exceptions.ConnectionError as e:
+        print(f"            [_ollama_korean_summary] 연결 오류: {e}")
+        return ""
+    except Exception as e:
+        print(f"            [_ollama_korean_summary] 예외 발생: {type(e).__name__}: {e}")
+        return ""
+
+
+def analyze_with_ollama_web_search(video_title: str, keyword: str, model: str) -> str:
+    """DuckDuckGo 검색 후 Ollama로 한국어 영상 요약"""
+
+    search_query = f"{video_title[:100]} {keyword}"
+
+    print(f"         [Ollama 웹 검색] 검색어: {search_query[:50]}...")
+
+    search_results = search_web_duckduckgo(search_query, max_results=5)
+
+    if not search_results:
+        print("            [검색 실패] 결과 없음, 제목으로만 한국어 요약 시도...")
+
+        prompt = f"""
+        다음 YouTube 영상 제목과 키워드를 바탕으로 영상 내용을 추정해 한국어로 요약하세요.
+
+        영상 제목:
+        {video_title}
+
+        키워드:
+        {keyword}
+
+        조건:
+        한국어로만 작성
+        영어 번역문처럼 쓰지 말 것
+        450자에서 550자 사이
+        본문만 출력
+        출처, 기자 이름, 이메일, 전화번호, 아이피 주소, 개인정보 포함 금지
+        """
+
+        result = _ollama_korean_summary(prompt, model)
+
+        if result:
+            print(f"            [제목 요약 완료] {result[:100]}...")
+            return result
+
+        print("            [제목 요약 실패] 결과 없음")
+        return "검색 결과가 없어 요약할 수 없습니다."
+
+    search_text = "\n".join([
+        f"제목: {r.get('title', '')[:150]}\n내용: {r.get('snippet', '')[:300]}"
+        for r in search_results[:5]
+    ])
+
+    print("[Ollama 요약] 검색 결과 바탕으로 한국어 요약 중...")
+    print(f"            [Ollama 요약] 검색 결과 텍스트 길이: {len(search_text)}자")
+    print(f"            [Ollama 요약] 검색 결과 미리보기: {search_text[:200]}...")
+
+    prompt = f"""
+    아래 검색 결과를 참고해서 YouTube 영상의 핵심 내용을 한국어로 요약하세요.
+
+    영상 제목:
+    {video_title}
+
+    키워드:
+    {keyword}
+
+    검색 결과:
+    {search_text}
+
+    작성 조건:
+    검색 결과의 핵심만 정리
+    한국어로만 작성
+    영어 문장을 그대로 번역하지 말 것
+    고유명사, 제품명, 회사명은 원문 표기 가능
+    450자에서 550자 사이
+    마크다운, 목록, 제목 없이 본문만 출력
+    출처, 기자 이름, 개인정보(이름, 연락처, 이메일) 포함 금지
+    """
+
+    summary = _ollama_korean_summary(prompt, model)
+
+    if summary:
+        print(f"            [Ollama 요약] 성공: {len(summary)}자")
+        print(f"            [Ollama 요약] 결과 미리보기: {summary[:150]}...")
+        return summary
+
+    print("            [Ollama 요약] 실패: 요약 생성 실패")
+
+    fallback = " ".join([
+        r.get("snippet", "").strip()
+        for r in search_results[:5]
+        if r.get("snippet")
+    ])
+
+    if fallback:
+        print(f"            [Ollama 요약] 폴백: 스니펫 조합 시도 ({len(fallback)}자)")
+        fallback_prompt = f"""
+        아래 내용을 한국어로 자연스럽게 요약하세요.
+        영어 번역체가 아니라 한국어 설명문으로 작성하세요.
+        500자 내외로 작성하세요.
+
+        내용:
+        {fallback[:1500]}
+        """
+        retry_summary = _ollama_korean_summary(fallback_prompt, model)
+        
+        if retry_summary:
+            print(f"            [Ollama 요약] 폴백 성공: {len(retry_summary)}자")
+            return retry_summary
+    
+    print("            [Ollama 요약] 최종 실패: 모든 시도 실패")
+    return "요약 생성에 실패했습니다."
+
+
 def analyze_with_search_fallback(video_title: str, keyword: str, model: str) -> Dict[str, Any]:
-    """일반 검색 엔진을 순차 시도해 사용 가능한 요약을 반환"""
-    engine_funcs = {
-        "google": analyze_with_google,
-        "naver": analyze_with_naver,
-        "zum": analyze_with_zum,
-    }
-
-    raw_order = os.getenv("SEARCH_FALLBACK_ORDER", "google,naver,zum").strip()
-    engines = [item.strip().lower() for item in raw_order.split(",") if item.strip()]
-    if not engines:
-        engines = ["google", "naver", "zum"]
-
-    attempts = []
-    last_summary = "검색 결과 없음"
-
-    for engine in engines:
-        func = engine_funcs.get(engine)
-        if not func:
-            continue
-
-        summary = normalize_summary_text(func(video_title, keyword, model))
-        attempts.append({"engine": engine, "summary": summary})
-        last_summary = summary or last_summary
-
-        if is_summary_eligible_for_db(summary):
-            return {
-                "engine": engine,
-                "summary": summary,
-                "attempts": attempts,
-            }
-
+    """Ollama 웹 검색을 통한 분석 (DuckDuckGo + Ollama)"""
+    summary = analyze_with_ollama_web_search(video_title, keyword, model)
+    normalized = normalize_summary_text(summary)
+    
     return {
-        "engine": "",
-        "summary": last_summary,
-        "attempts": attempts,
+        "engine": "ollama_web_search",
+        "summary": normalized,
+        "attempts": [{"engine": "ollama_web_search", "summary": normalized}]
     }
 
 
@@ -698,8 +1123,46 @@ def is_within_last_24_hours(upload_date: str) -> bool:
 
 
 def is_today_only(upload_date: str) -> bool:
-    """YYYY-MM-DD 날짜가 오늘 날짜인지 확인 (당일 업로드만 허용)"""
+    """YYYY-MM-DD 날짜가 오늘 날짜인지 확인 (당일 업로드만 허용)
+    
+    입력 형식:
+    - "YYYY-MM-DD" (예: "2026-05-29") - 자동으로 상대 시간으로도 변환
+    - "오늘" 같은 상대 시간도 인식
+    - "N일 전", "N주 전", "N달 전", "N년 전" 등은 모두 False
+    """
     if not upload_date:
+        return False
+
+    # 상대 시간 처리
+    text = upload_date.strip().lower()
+    
+    # 오늘만 True (방금 업로드도 오늘로 간주)
+    if text in ("오늘", "today", "방금", "just now"):
+        return True
+    
+    # 어제, 과거 날짜는 모두 False
+    if text in ("어제", "yesterday"):
+        return True
+    
+    # "N일 전" 패턴 - 모두 False
+    import re
+    days_ago_match = re.search(r'(\d+)\s*일\s*전', text)
+    if days_ago_match:
+        return False  # 모든 "N일 전"은 False
+    
+    # "N주 전" 패턴 - 모두 False
+    weeks_ago_match = re.search(r'(\d+)\s*주\s*전', text)
+    if weeks_ago_match:
+        return False
+    
+    # "N달 전" 패턴 - 모두 False
+    months_ago_match = re.search(r'(\d+)\s*달\s*전', text)
+    if months_ago_match:
+        return False
+    
+    # "N년 전" 패턴 - 모두 False
+    years_ago_match = re.search(r'(\d+)\s*년\s*전', text)
+    if years_ago_match:
         return False
 
     try:
@@ -716,12 +1179,15 @@ def is_today_video_with_ollama(video: Dict[str, Any], model: str) -> bool:
     now_str = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     today_str = datetime.now().strftime("%Y-%m-%d")
     upload_date = (video.get("upload_date") or "").strip()
+    
+    print(f"            [DEBUG] is_today_video_with_ollama: upload_date={upload_date}")
 
     if not upload_date:
         resolved_date = resolve_upload_date_by_video_id(video.get("video_id", ""))
         if resolved_date:
             upload_date = resolved_date
             video["upload_date"] = resolved_date
+            print(f"            [DEBUG] resolved_date={resolved_date}")
 
     info_text = (
         f"제목: {video.get('title', '')}\n"
@@ -731,7 +1197,10 @@ def is_today_video_with_ollama(video: Dict[str, Any], model: str) -> bool:
 
     # 오늘 날짜가 아니면 바로 제외
     if upload_date and not is_today_only(upload_date):
+        print(f"            [DEBUG] is_today_only({upload_date}) = False → 제외")
         return False
+    
+    print(f"            [DEBUG] is_today_only({upload_date}) = True → 분석 진행")
 
     if not model:
         return True
@@ -926,15 +1395,11 @@ def choose_ollama_model(requested_model: str) -> str:
     if requested_model in installed:
         return requested_model
     
-    # 폴백 우선순위 (kimi 모델 중심)
+    # 폴백 우선순위 (cloud 모델 중심)
     fallback_order = [
         "kimi-k2.5:cloud",  # 추천: 클라우드 기반 고성능 모델
-        "deepseek-v3.1:671b-cloud",  # 고성능 클라우드 모델
-        "gemma3:12b",      # 높은 성능 + 안정성
-        "gemma3:4b",       # 빠르고 안정적
-        "gemma3:27b",      # 강력하지만 느림
-        "qwen2.5:latest",  # 고성능 대체 모델
-        "mistral:latest",  # 안정적인 모델
+        "glm-5:cloud",      # GLM-5 클라우드 모델 (thinking 모델)
+        # "deepseek-v3.1:671b-cloud",  # 고성능 클라우드 모델
     ]
     for model in fallback_order:
         if model in installed:
@@ -1248,7 +1713,11 @@ def analyze_subtitles_with_ollama(subtitles_text: str, model: str, video_title: 
     """Ollama로 자막 내용 분석 및 요약 (VTT/XML 포맷 모두 지원)"""
     import re
     
+    print(f"            [자막 분석] 시작: 제목='{video_title[:50]}...'")
+    print(f"            [자막 분석] 입력 길이: {len(subtitles_text) if subtitles_text else 0}자")
+    
     if not subtitles_text or len(subtitles_text) < 50:
+        print(f"            [자막 분석] 실패: 자막 없음 (길이={len(subtitles_text) if subtitles_text else 0})")
         return "자막 없음"
     
     # 텍스트 추출
@@ -1256,6 +1725,7 @@ def analyze_subtitles_with_ollama(subtitles_text: str, model: str, video_title: 
     
     # VTT 형식 처리
     if "WEBVTT" in subtitles_text:
+        print(f"            [자막 분석] 형식: VTT")
         lines = subtitles_text.split("\n")
         for line in lines:
             line = line.strip()
@@ -1271,6 +1741,7 @@ def analyze_subtitles_with_ollama(subtitles_text: str, model: str, video_title: 
     
     # XML 형식 처리 (자동 생성 자막)
     elif "<text" in subtitles_text:
+        print(f"            [자막 분석] 형식: XML")
         # <text> 태그에서 텍스트 추출
         text_pattern = r'<text[^>]*>([^<]+)</text>'
         matches = re.findall(text_pattern, subtitles_text)
@@ -1286,18 +1757,26 @@ def analyze_subtitles_with_ollama(subtitles_text: str, model: str, video_title: 
     
     # 일반 텍스트 처리
     else:
+        print(f"            [자막 분석] 형식: 일반 텍스트")
         for line in subtitles_text.split("\n"):
             line = line.strip()
             if line and len(line) > 2 and not line.isdigit():
                 text_lines.append(line)
     
+    print(f"            [자막 분석] 추출된 텍스트 줄 수: {len(text_lines)}")
+    
     if not text_lines:
+        print(f"            [자막 분석] 실패: 텍스트 추출 실패")
         return "자막 파싱 실패"
     
     # 처음 100줄, 최대 1500자로 제한
     subtitle_content = " ".join(text_lines[:100])[:1500]
     
+    print(f"            [자막 분석] 최종 텍스트 길이: {len(subtitle_content)}자")
+    print(f"            [자막 분석] 텍스트 미리보기: {subtitle_content[:100]}...")
+    
     if len(subtitle_content) < 20:
+        print(f"            [자막 분석] 실패: 내용 부족 (길이={len(subtitle_content)})")
         return "자막 내용 부족"
     
     # 프롬프트 - 한국어만 사용하도록 강력하게 지시
@@ -1323,6 +1802,9 @@ def analyze_subtitles_with_ollama(subtitles_text: str, model: str, video_title: 
             # 재시도 시에도 충분한 타임아웃 유지
             timeout = 180  # 180초 (3분)
             
+            print(f"            [자막 분석] Ollama 요청 시작 (시도 {attempt + 1}/{max_retries + 1})")
+            print(f"            [자막 분석] 모델: {model}, 타임아웃: {timeout}초")
+            
             response = requests.post(
                 f"{OLLAMA_URL}/api/generate",
                 json={
@@ -1340,15 +1822,24 @@ def analyze_subtitles_with_ollama(subtitles_text: str, model: str, video_title: 
             response.raise_for_status()
             result = response.json()
             
+            print(f"            [자막 분석] Ollama 응답 수신 완료")
+            
             # glm-5:cloud 같은 thinking 모델은 response 필드가 비어있을 수 있음
             summary = result.get("response", "").strip()
+            print(f"            [자막 분석] response 필드 길이: {len(summary)}자")
+            
             if not summary:
                 # thinking 필드에서 내용 추출
                 thinking = result.get("thinking", "").strip()
+                print(f"            [자막 분석] thinking 필드 길이: {len(thinking)}자")
                 if thinking:
                     summary = thinking
+                    print(f"            [자막 분석] thinking 필드에서 요약 추출")
             
             if summary and len(summary) > 3:
+                print(f"            [자막 분석] 요약 생성 성공 (길이={len(summary)}자)")
+                print(f"            [자막 분석] 요약 미리보기: {summary[:150]}...")
+                
                 # 프롬프트 텍스트 제거 (요약 시작 부분)
                 # "다음은", "다음 영상", "이 영상", "요약:" 등의 프롬프트 부분을 찾아 제거
                 prompt_phrases = [
@@ -1393,35 +1884,45 @@ def analyze_subtitles_with_ollama(subtitles_text: str, model: str, video_title: 
                     summary = "\n".join(lines[:30])
                 
                 summary = normalize_summary_text(summary)
+                print(f"            [자막 분석] 정규화 후 길이: {len(summary)}자")
+                print(f"            [자막 분석] 최종 요약: {summary[:200]}...")
                 return summary if summary and len(summary) > 10 else "요약 내용 부족"
             else:
+                print(f"            [자막 분석] 실패: 요약이 너무 짧음 (길이={len(summary) if summary else 0})")
                 if attempt < max_retries:
                     wait_time = 2 + attempt
                     print(f"            [WAIT] {wait_time}초 대기 후 재시도...")
                     time.sleep(wait_time)
                     continue
                 else:
+                    print(f"            [자막 분석] 최종 실패: 재시도 횟수 초과")
                     return "요약 생성 실패"
         
         except requests.exceptions.Timeout:
+            print(f"            [자막 분석] 타임아웃 발생 (시도 {attempt + 1}/{max_retries + 1})")
             if attempt < max_retries:
                 wait_time = 2 + attempt
                 print(f"            [TIMEOUT] {wait_time}초 대기 후 재시도...")
                 time.sleep(wait_time)
                 continue
             else:
+                print(f"            [자막 분석] 최종 실패: 타임아웃")
                 return "요약 생성 시간초과"
-        except requests.exceptions.ConnectionError:
+        except requests.exceptions.ConnectionError as e:
+            print(f"            [자막 분석] 연결 오류: {e}")
             if attempt < max_retries:
                 time.sleep(0.5)
                 continue
             else:
+                print(f"            [자막 분석] 최종 실패: 연결 오류")
                 return "Ollama 연결 실패"
         except Exception as e:
+            print(f"            [자막 분석] 예외 발생: {type(e).__name__}: {e}")
             if attempt < max_retries:
                 time.sleep(0.5)
                 continue
             else:
+                print(f"            [자막 분석] 최종 실패: 예외")
                 return "요약 생성 오류"
     
     return "요약 생성 실패"
@@ -1495,7 +1996,17 @@ def analyze_with_google(video_title: str, keyword: str, model: str) -> str:
         if chrome_binary:
             options.binary_location = chrome_binary
 
-        service = Service(ChromeDriverManager().install())
+        # ChromeDriver lock 파일 정리 후 설치
+        cleanup_chromedriver_lock()
+        try:
+            service = Service(ChromeDriverManager().install())
+        except Exception as e:
+            # lock 타임아웃 시 재시도
+            print(f"            [WARN] ChromeDriver 설치 재시도: {e}")
+            cleanup_chromedriver_lock()
+            time.sleep(2)
+            service = Service(ChromeDriverManager().install())
+        
         driver = webdriver.Chrome(service=service, options=options)
         driver.set_page_load_timeout(25)
         driver.get(search_url)
@@ -1683,7 +2194,16 @@ def analyze_with_naver(video_title: str, keyword: str, model: str) -> str:
         if chrome_binary:
             options.binary_location = chrome_binary
 
-        service = Service(ChromeDriverManager().install())
+        # ChromeDriver lock 파일 정리 후 설치
+        cleanup_chromedriver_lock()
+        try:
+            service = Service(ChromeDriverManager().install())
+        except Exception as e:
+            print(f"            [WARN] ChromeDriver 설치 재시도: {e}")
+            cleanup_chromedriver_lock()
+            time.sleep(2)
+            service = Service(ChromeDriverManager().install())
+        
         driver = webdriver.Chrome(service=service, options=options)
         driver.set_page_load_timeout(25)
         driver.get(search_url)
@@ -1870,7 +2390,16 @@ def analyze_with_bing(video_title: str, keyword: str, model: str) -> str:
         if chrome_binary:
             options.binary_location = chrome_binary
 
-        service = Service(ChromeDriverManager().install())
+        # ChromeDriver lock 파일 정리 후 설치
+        cleanup_chromedriver_lock()
+        try:
+            service = Service(ChromeDriverManager().install())
+        except Exception as e:
+            print(f"            [WARN] ChromeDriver 설치 재시도: {e}")
+            cleanup_chromedriver_lock()
+            time.sleep(2)
+            service = Service(ChromeDriverManager().install())
+        
         driver = webdriver.Chrome(service=service, options=options)
         driver.set_page_load_timeout(25)
         driver.get(search_url)
@@ -2057,7 +2586,16 @@ def analyze_with_zum(video_title: str, keyword: str, model: str) -> str:
         if chrome_binary:
             options.binary_location = chrome_binary
 
-        service = Service(ChromeDriverManager().install())
+        # ChromeDriver lock 파일 정리 후 설치
+        cleanup_chromedriver_lock()
+        try:
+            service = Service(ChromeDriverManager().install())
+        except Exception as e:
+            print(f"            [WARN] ChromeDriver 설치 재시도: {e}")
+            cleanup_chromedriver_lock()
+            time.sleep(2)
+            service = Service(ChromeDriverManager().install())
+        
         driver = webdriver.Chrome(service=service, options=options)
         driver.set_page_load_timeout(25)
         driver.get(search_url)
@@ -2231,7 +2769,16 @@ def analyze_with_youtube(video_id: str, video_title: str, keyword: str, model: s
         if chrome_binary:
             options.binary_location = chrome_binary
 
-        service = Service(ChromeDriverManager().install())
+        # ChromeDriver lock 파일 정리 후 설치
+        cleanup_chromedriver_lock()
+        try:
+            service = Service(ChromeDriverManager().install())
+        except Exception as e:
+            print(f"            [WARN] ChromeDriver 설치 재시도: {e}")
+            cleanup_chromedriver_lock()
+            time.sleep(2)
+            service = Service(ChromeDriverManager().install())
+        
         driver = webdriver.Chrome(service=service, options=options)
         driver.set_page_load_timeout(30)
         
@@ -2469,10 +3016,15 @@ def analyze_with_youtube(video_id: str, video_title: str, keyword: str, model: s
         
         if not subtitles_text or len(subtitles_text) < 50:
             # Selenium UI 추출 실패 시 비-UI 자막 폴백(youtube_transcript_api/yt_dlp)
+            print(f"            [자막 추출] Selenium UI 실패, API 폴백 시도...")
+            print(f"            [자막 추출] 실패 원인: {' | '.join(fail_reasons) if fail_reasons else '자막 텍스트 없음'}")
+            
             fallback_subtitles = get_video_subtitles(video_id)
             if fallback_subtitles and len(fallback_subtitles) >= 50 and fallback_subtitles not in {"자막 없음", "자막 요청 제한(429)", "자막 추출 실패"}:
+                print(f"            [자막 추출] API 폴백 성공, 자막 길이: {len(fallback_subtitles)}자")
                 return analyze_subtitles_with_ollama(fallback_subtitles, model, video_title)
-
+            
+            print(f"            [자막 추출] API 폴백도 실패")
             reason = " | ".join(fail_reasons) if fail_reasons else "자막 텍스트 없음 또는 길이 부족(<50)"
             log_subtitle_failure(
                 video_id,
@@ -2484,9 +3036,11 @@ def analyze_with_youtube(video_id: str, video_title: str, keyword: str, model: s
             return "유튜브 자막 추출 실패"
             
         # Ollama로 요약
+        print(f"            [자막 추출] 성공, 자막 길이: {len(subtitles_text)}자")
         return analyze_subtitles_with_ollama(subtitles_text, model, video_title)
         
     except Exception as e:
+        print(f"            [자막 추출] 예외 발생: {str(e)[:200]}")
         log_subtitle_failure(
             video_id,
             video_title,
@@ -2602,18 +3156,30 @@ def collect_youtube_data(
                             video["upload_date"] = resolved_date
 
                     video_upload_date = video.get("upload_date", "") or "날짜 미상"
+                    relative_date = format_relative_time(video_upload_date)
+                    
+                    # 디버그: 원본 날짜와 상대 시간 출력
+                    print(f"         [DEBUG] 원본 날짜: {video_upload_date} → 상대 시간: {relative_date}")
+                    
+                    # 오늘 날짜가 아니면 건너뜀
+                    if not is_today_only(video_upload_date):
+                        print(f"         [건너뜀] 오늘 날짜 아님: {video_title} (업로드일: {relative_date})")
+                        continue
 
+                    # 1단계: 먼저 유튜브 자막 분석
+                    print(f"         [1단계] 자막 분석 중: [{idx+1}/{len(all_videos)}] {video_title} (업로드일: {relative_date})")
+                    
                     # 자막 분석 전: Ollama로 오늘 날짜 영상 여부 확인 (아니면 건너뜀)
                     if analysis_source in {"youtube", "subtitles", "auto"}:
                         is_today_video = is_today_video_with_ollama(video, model)
                         if not is_today_video:
                             summary = "오늘 날짜 영상 아님(건너뜀)"
                             video["subtitle_summary"] = summary
-                            print(f"         자막 분석 건너뜀: [{idx+1}/{len(all_videos)}] {video_title} (업로드일: {video_upload_date}) ({summary})")
+                            print(f"         자막 분석 건너뜀: [{idx+1}/{len(all_videos)}] {video_title} (업로드일: {relative_date}) ({summary})")
                             continue
 
                     if analysis_source == "youtube":
-                        print(f"         YouTube 자막 추출 중: [{idx+1}/{len(all_videos)}] {video_title} (업로드일: {video_upload_date})")
+                        print(f"            [자막 추출] YouTube 자막 추출 중...")
                         summary = analyze_with_youtube(
                             video_id,
                             video["title"],
@@ -2621,10 +3187,12 @@ def collect_youtube_data(
                             model,
                             upload_date=video.get("upload_date", ""),
                         )
+                        print(f"            [자막 결과] {summary[:100] if summary else '없음'}...")
                     elif analysis_source == "subtitles":
-                        print(f"         자막 분석 중: [{idx+1}/{len(all_videos)}] {video_title} (업로드일: {video_upload_date})")
+                        print(f"            [자막 추출] 자막 데이터 가져오는 중...")
                         subtitles = get_video_subtitles(video_id)
                         if subtitles:
+                            print(f"            [자막 추출] 자막 길이: {len(subtitles)}자")
                             summary = analyze_subtitles_with_ollama(subtitles, model, video['title'])
                             max_retry = 3
                             retry_count = 0
@@ -2634,10 +3202,12 @@ def collect_youtube_data(
                                 print(f"            [RETRY {retry_count}/3] {summary} - 재시도 중...")
                                 time.sleep(2)
                                 summary = analyze_subtitles_with_ollama(subtitles, model, video['title'])
+                            print(f"            [자막 요약] {summary[:100] if summary else '없음'}...")
                         else:
+                            print(f"            [자막 추출] 자막 없음")
                             summary = "자막 없음"
                     else:  # auto mode: YouTube 자막만 사용
-                        print(f"         YouTube 자막 추출 중: [{idx+1}/{len(all_videos)}] {video_title} (업로드일: {video_upload_date})")
+                        print(f"            [자막 추출] YouTube 자막 추출 중...")
                         summary = analyze_with_youtube(
                             video_id,
                             video["title"],
@@ -2645,17 +3215,47 @@ def collect_youtube_data(
                             model,
                             upload_date=video.get("upload_date", ""),
                         )
+                        print(f"            [자막 결과] {summary[:100] if summary else '없음'}...")
 
                     summary = normalize_summary_text(summary)
-                    video["subtitle_summary"] = summary
-
+                    
+                    # 자막 분석 성공 시 DB 저장
                     if is_summary_eligible_for_db(summary):
+                        video["subtitle_summary"] = summary
+                        video["analysis_source"] = "subtitle"
+                        print(f"            → 자막 요약 완료: {summary[:100]}...")
+                        
                         saved = save_single_summary_to_database(keyword, video)
                         video["db_saved"] = saved
                         if saved:
                             print("            → 참소식 DB 저장 완료")
                         else:
                             print("            → 참소식 DB 저장 실패")
+                        continue
+                    
+                    # 2단계: 자막 분석 실패 시 웹 검색으로 분석
+                    print(f"         [2단계] 웹 검색 분석 중: [{idx+1}/{len(all_videos)}] {video_title} (업로드일: {relative_date})")
+                    print(f"            [웹 검색] 자막 분석 실패로 웹 검색 시도")
+                    web_summary = analyze_with_ollama_web_search(video_title, keyword, model)
+                    web_summary = normalize_summary_text(web_summary)
+                    
+                    # 웹 검색 결과가 유효하면 사용
+                    if is_summary_eligible_for_db(web_summary):
+                        video["subtitle_summary"] = web_summary
+                        video["analysis_source"] = "web_search"
+                        print(f"            → 웹 검색 요약 완료: {web_summary[:100]}...")
+                        
+                        # DB 저장
+                        saved = save_single_summary_to_database(keyword, video)
+                        video["db_saved"] = saved
+                        if saved:
+                            print("            → 참소식 DB 저장 완료")
+                        else:
+                            print("            → 참소식 DB 저장 실패")
+                    else:
+                        print(f"            → 웹 검색도 실패: {web_summary}")
+                        video["subtitle_summary"] = summary
+                        video["analysis_source"] = "subtitle"
 
                     if is_summary_eligible_for_db(summary):
                         display_summary = summary
@@ -2958,6 +3558,14 @@ def save_report(report_data: Dict[str, Any], report_dir: Path, report_num: int, 
                         for vid_idx, video in enumerate(kw_data["videos"], 1):
                             f.write(f"{vid_idx}. **{video['title']}**\n")
                             f.write(f"   - 조회수: {video['views']:,}\n")
+                            # 업로드일 표시 (절대 날짜 + 상대 시간)
+                            upload_date_raw = video.get('upload_date', '')
+                            if upload_date_raw:
+                                relative_date = format_relative_time(upload_date_raw)
+                                if relative_date != upload_date_raw:
+                                    f.write(f"   - 업로드일: {upload_date_raw} ({relative_date})\n")
+                                else:
+                                    f.write(f"   - 업로드일: {upload_date_raw}\n")
                             subtitle = redact_korean_person_names(video.get('subtitle_summary', '자막 미분석'))
                             if subtitle and subtitle != "자막 미분석":
                                 f.write(f"   - 분석 요약: {subtitle}\n")
@@ -3110,7 +3718,7 @@ def run_monitoring_cycle(
 
 def main():
     parser = argparse.ArgumentParser(description="YouTube 키워드 지속 모니터링")
-    parser.add_argument("--model", default="kimi-k2.5:cloud", help="Ollama 모델 (기본: kimi-k2.5:cloud)")
+    parser.add_argument("--model", default="kimi-k2.6:cloud", help="Ollama 모델 (기본: kimi-k2.6:cloud)")
     parser.add_argument("--keywords", type=int, default=10, help="키워드 개수 (기본: 10, '오늘의 주요 뉴스' 고정 포함)")
     parser.add_argument("--videos", type=int, default=10, help="키워드당 영상 수 (기본: 10)")
     parser.add_argument("--interval", type=int, default=30, help="모니터링 간격(분) (기본: 30분)")

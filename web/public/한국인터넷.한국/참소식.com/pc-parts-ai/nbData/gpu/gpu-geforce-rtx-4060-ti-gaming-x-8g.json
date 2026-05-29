@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-28T13:52:33.150+09:00",
+  "updatedAt": "2026-05-29T15:16:59.841+09:00",
   "category": "GPU",
   "id": "gpu-geforce-rtx-4060-ti-gaming-x-8g",
   "name": "GeForce RTX 4060 Ti Gaming X 8G",
@@ -80,5 +80,9 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=GeForce%20RTX%204060%20Ti%20MSI%20Gaming%20X%20%EC%B5%9C%EC%A0%80%EA%B0%80",
   "notes": "Standard 8GB VRAM model of the Gaming X series.",
-  "textRepair": null
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
 }

@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-28T13:52:33.150+09:00",
+  "updatedAt": "2026-05-29T15:16:59.609+09:00",
   "category": "GPU",
   "id": "gpu-asus-tuf-gaming-geforce-rtx-5070-ti-oc-d7-16gb",
   "name": "ASUS TUF Gaming GeForce RTX 5070 Ti OC D7 16GB",
@@ -21,7 +21,7 @@
   "performance": 90,
   "valueIndex": 4.7,
   "aiUseScore": 90,
-  "powerWatts": null,
+  "powerWatts": 0,
   "tags": [
     "gaming",
     "ai"
@@ -81,5 +81,9 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=GeForce%20RTX%205070%20ASUS%20TUF%20Gaming%20OC%20%EC%B5%9C%EC%A0%80%EA%B0%80",
   "notes": "GDDR7, 16GB VRAM, 3-fan design",
-  "textRepair": null
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
 }

@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-28T13:52:33.150+09:00",
+  "updatedAt": "2026-05-29T15:17:02.708+09:00",
   "category": "Mainboard",
   "id": "mainboard-asus-tuf-gaming-z790-btf-wifi",
   "name": "ASUS TUF Gaming Z790-BTF WiFi",
@@ -21,7 +21,7 @@
   "performance": 75,
   "valueIndex": 11.8,
   "aiUseScore": 49,
-  "powerWatts": null,
+  "powerWatts": 0,
   "tags": [
     "BTF",
     "WiFi"
@@ -81,5 +81,9 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=ASUS%20TUF%20Gaming%20Z790-BTF%20WiFi%20%EC%B5%9C%EC%A0%80%EA%B0%80",
   "notes": "Hidden connector design (BTF)",
-  "textRepair": null
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
 }

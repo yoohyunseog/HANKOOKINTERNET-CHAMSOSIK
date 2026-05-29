@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-28T13:52:33.150+09:00",
+  "updatedAt": "2026-05-29T15:16:58.097+09:00",
   "category": "CPU",
   "id": "cpu-amd-ryzen-9-9900x3d-granite-ridge",
   "name": "AMD Ryzen 9 9900X3D (Granite Ridge)",
@@ -82,5 +82,9 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=AMD%20Ryzen%209%209900X3D%20%EC%A0%95%ED%92%88%20%EC%B5%9C%EC%A0%80%EA%B0%80",
   "notes": "12-core, 24-thread, Zen 5 architecture",
-  "textRepair": null
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
 }

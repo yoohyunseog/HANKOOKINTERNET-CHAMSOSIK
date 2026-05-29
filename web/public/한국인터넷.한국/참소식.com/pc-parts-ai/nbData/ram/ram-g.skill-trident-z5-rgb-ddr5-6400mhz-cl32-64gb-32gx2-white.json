@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-28T13:52:33.150+09:00",
+  "updatedAt": "2026-05-29T15:17:03.101+09:00",
   "category": "RAM",
   "id": "ram-g.skill-trident-z5-rgb-ddr5-6400mhz-cl32-64gb-32gx2-white",
   "name": "G.Skill Trident Z5 RGB DDR5 6400MHz CL32 64GB (32Gx2) White",
@@ -21,7 +21,7 @@
   "performance": 75,
   "valueIndex": 16.5,
   "aiUseScore": 49,
-  "powerWatts": null,
+  "powerWatts": 0,
   "tags": [
     "gaming",
     "white"
@@ -81,5 +81,9 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=G.Skill%20DDR5%2064GB%206400MHz%20CL32%20%EC%B5%9C%EC%A0%80%EA%B0%80",
   "notes": "White package, CL32-39-39-102, 1.40V",
-  "textRepair": null
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
 }

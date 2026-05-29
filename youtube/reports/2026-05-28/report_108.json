@@ -1,0 +1,425 @@
+{
+  "timestamp": "2026-05-28T17:48:42.186190",
+  "model": "glm-5:cloud",
+  "keyword_count": 3,
+  "analyze_subtitles": true,
+  "analysis_source": "youtube",
+  "keywords": [
+    {
+      "keyword": "오늘의 주요 뉴스",
+      "is_fixed": true,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "AI로봇 전략",
+      "is_fixed": false,
+      "views": [
+        71,
+        181
+      ],
+      "video_count": 2,
+      "videos": [
+        {
+          "title": "[에스피지 주가전망] 삼성·테슬라 로봇 공급망 핵심! 피지컬AI 수혜주 지금이 매수 타이밍?",
+          "video_id": "drzJ22RYlaE",
+          "views": 71,
+          "upload_date": "2026-05-28",
+          "url": "https://www.youtube.com/watch?v=drzJ22RYlaE",
+          "subtitle_summary": "1.  Analyze the Request:\nSource Material: A YouTube video transcript about SPG (a Korean stock) stock price outlook.\nTitle: [에스피지 주가전망] 삼성·테슬라 로봇 공급망 핵심! 피지컬AI 수혜주 지금이 매수 타이밍? (SPG Stock Outlook: Core of Samsung/Tesla Robot Supply Chain! Physical AI Beneficiary - Is Now the Buying Timing?)\nTask: Summarize the transcript in Korean.\nLength: Around 500 characters (Korean characters).\nConstraints: ONLY Korean (no English), 3-5 sentences for the core summary.\n2.  Analyze the Transcript Content:\nSpeaker: Lee Seong-jun, a trader.\nSubject: SPG (stock), a key player in the humanoid robot mega-trend (specifically precision speed reducers).\nFundamental Analysis: EPS is 412 won, Market Cap is 2.5 trillion won, PER is over 300x. Traditional value investing suggests a bubble.\nCounter-argument: The market is pricing in future value (2035-2050) due to the massive liquidity and paradigm shift towards humanoid robots. It's a \"multiple re-rating,\" not just pumping.\nTechnical Analysis/Chart:\nPrevious high: 165,700 won (4x increase).\nCorrection occurred.\nSupport found around 100,000 won (psychological round number) and the 120-day moving average (concrete support line).\nRecent drop to 113,000 won isn't worrying because foreigners are buying (net buyer) and it hit the 120-day support line again.\nConclusion: It's a timing and unit price game. SPG is positioned to benefit from the 6,000 trillion won humanoid market.\n3.  Drafting the Summary (Iterative Process):\nDraft 1 (Mental Outline): SPG is a key company for precision reducers in the humanoid robot market. Even though PER is high at 300x, the market is pricing in future growth. The stock rose 4x but corrected. It found strong support at 100,000 won and the 120-day line. Foreigners are buying during dips, making the current 120-day line a good buying opportunity for this future-oriented stock.\nDraft 2 (Translating to formal Korean & refining):\n에스피지는 휴머노이드 로봇의 핵심 부품인 정밀 감속기를 생산하며, 6,000조 원 규모의 로봇 메가트랜드 핵심 수혜주로 평가받고 있습니다. 현재 주가수익비율(PER)이 300배를 넘어 밸류에이션 부담이 있지만, 시장은 미래 가치를 선반영하며 멀티플 리레이팅 과정을 거치고 있습니다. 차트상으로는 지난 3~4월과 5월 10만 원 선 및 120일 이동평균선에서 강력한 지지를 확인했으며, 최근 조정 시에도 외국인 매수세가 유입되고 있습니다. 따라서 단기 변동성은 있으나 기술적 지지선이 확인된 현재 시점을 분할 매수 기회로 고려해볼 수 있습니다.\nChecking Character Count:\nDraft 2 is roughly 230 characters (excluding spaces). The request asks for \"around 500 characters\" (500자 내외). I need to expand a bit more to meet the length requirement while keeping it concise enough to be a summary.\nDraft 3 (Expanding for length):\n에스피지는 휴머노이드 로봇의 관절에 필수적인 정밀 감속기를 생산하는 기업으로, 인구 감소와 AI 기술 발전에 따른 로봇 산업의 메가트랜드 속에서 삼성 및 테슬라 공급망의 핵심 수혜주로 주목받고 있습니다. 비교적 높은 주가수익비율(PER)로 인해 밸류에이션 거품 우",
+          "db_saved": true
+        },
+        {
+          "title": "[레인보우로보틱스 주가전망] AI로봇 대장주! 이재용 240조 투자에 매수 타이밍인가?",
+          "video_id": "YGoDCltgc9Q",
+          "views": 181,
+          "upload_date": "2026-05-28",
+          "url": "https://www.youtube.com/watch?v=YGoDCltgc9Q",
+          "subtitle_summary": "1.  Analyze the Request:\nSource Material: A YouTube video transcript about Rainbow Robotics stock prospects.\nTitle: [레인보우로보틱스 주가전망] AI로봇 대장주! 이재용 240조 투자에 매수 타이밍인가?\nTask: Summarize the transcript in Korean.\nLength: Around 500 characters (Korean characters).\nConstraints: ONLY Korean (no English), 3-5 sentences for the core summary.\n2.  Analyze the Transcript Content:\nSpeaker: Trader Lee Seong-jun.\nSubject: Rainbow Robotics (AI robot leader, Samsung's \"prince\").\nCurrent Situation: Market is crashing (Middle East Black Swan), stock dropped over 6% to around 696,000 won. It hit a high of 979,000 won in May but has since fallen. Investors are fearful.\nSpeaker's View: The drop is not the end, but a buying opportunity. It's the start of a second major rally.\nKey Driver 1 (Samsung Labor Issues): Samsung Electronics union issues, huge bonus costs (31 trillion won), conflict between divisions. This creates a strong rationale for switching to unmanned factories (automation) to cut labor costs and risks.\nSamsung's Plan: Convert all global production bases to 100% AI autonomous factories by 2030.\nKey Figure: Oh Jun-ho (KAIST professor, Samsung's Future Robot TF leader) is the founder of Rainbow Robotics. Samsung owns 35% stake.\nBeneficiary: As Samsung rushes to replace humans to solve labor cost issues, Rainbow Robotics benefits directly.\nEconomic Logic: Robots are cheaper than humans (Hyundai example: 1 robot replaces 3 workers, huge cost savings). Replacing just 10% of production workers yields massive profit improvement.\n3.  Drafting the Summary (Iterative Process):\nDraft 1 (Mental Outline): The video analyzes Rainbow Robotics. The stock fell recently due to market crashes, but the speaker sees this as a buying opportunity. Samsung's labor union issues and high costs are pushing them towards unmanned factories. Samsung plans to convert factories by 2030. Since Samsung owns a big stake in Rainbow Robotics and Oh Jun-ho leads the robot division, Rainbow Robotics will benefit. Robots are much cheaper than human workers, making this transition inevitable and profitable for the company.\nDraft 2 (Translating to Korean & Refining):\n최근 중동발 악재로 인한 주가 하락은 레인보우로보틱스의 상승세가 끝난 것이 아니라, 오히려 역설적으로 대규모 상승의 전조인 저점 매수 기회로 해석됩니다. 삼성전자의 막대한 인건비 부담과 노조 리스크가 무인 공장 전환의 명분을 강화하였고, 2030년까지 모든 생산 기지를 AI 자율 공장으로 전환하겠다는 삼성의 계획은 레인보우로보틱스에 직접적인 수혜를 가져올 것입니다. 삼성이 최대 주주로 있는 레인보우로보틱스는 오준호 단장의 기술력과 삼성의 공격적인 로봇 도입 정책에 힘입어 휴머노이드 대장주로서의 입지를 확고히 할 것입니다. 결론적으로 인건비 절감 효과와 무인화 트렌드는 이 기업의 성장을 견인하는 핵심 동력이 될 것입니다.\nChecking Character Count (Draft 2):\nRoughly 300-350 characters. A bit short. I need to expand slightly to get closer to 500 characters (or \"around 500\", usually meaning 400-600 is acceptable, but concise is better if the content is covered). Let's add more detail about the specific numbers or the logic.\nDraft 3 (Expanding for detail):\n최근 증시 폭락으로 레인보우로보틱스 주가가 조정을 받았으나, 이는 대시세 2차 폭",
+          "db_saved": true
+        }
+      ],
+      "max": 3.1645,
+      "min": 0.1015,
+      "nb_score": 31.1796,
+      "avg_views": 126.0,
+      "total_views": 252
+    },
+    {
+      "keyword": "스페이스X",
+      "is_fixed": false,
+      "views": [
+        6955,
+        3187,
+        899
+      ],
+      "video_count": 3,
+      "videos": [
+        {
+          "title": "스페이스X·테슬라 정말 합병할까? 상장 후 바로 사도 될까요?_26.05.28. | 김현태, 여도은, 허재무 [아침N투자]",
+          "video_id": "Yw2Q29MDqVA",
+          "views": 6955,
+          "upload_date": "2026-05-28",
+          "url": "https://www.youtube.com/watch?v=Yw2Q29MDqVA",
+          "subtitle_summary": "1.  Analyze the Request:\nSource Material: A YouTube video transcript about SpaceX, Tesla, and space investment.\nTitle: \"스페이스X·테슬라 정말 합병할까? 상장 후 바로 사도 될까요?_26.05.28. | 김현태, 여도은, 허재무 [아침N투자]\" (Will SpaceX and Tesla really merge? Should I buy right after listing?).\nTask: Summarize the transcript in Korean.\nLength: Around 500 characters (Korean characters).\nConstraints: ONLY Korean, NO English, 3-5 sentences for core content.\n2.  Analyze the Transcript Content:\nIntro: Introduction of Kim Hyeon-tae, a portfolio manager at KIT Asset Management (Global Equity Division), who has a PhD in Physics and manages a space-themed fund. He is nicknamed the \"Faker\" of the space industry.\nTopic: Discussion on space ETF investment and the upcoming SpaceX listing (mentioned as June 12th in the text, though the date in the title is 2026, implying a future scenario or specific context).\nKey Question: Is SpaceX listing unconditionally good for space ETFs?\nExpert Opinion: Yes, it fills the gap of a leading stock (representative stock) in the space industry basket. Previously, investors couldn't directly invest in Starship or Starlink progress, but now they have a means.\nSpaceX History: Founded in 2002 (Musk's dream of plants on Mars in 2001). Key milestone: 2015 successful recovery of the Falcon booster (reusability), 2017 successful reuse of a recovered booster. This changed the paradigm from disposable rockets to reusable ones.\n3.  Drafting the Summary (Iterative Process):\nAttempt 1 (Mental Outline):\nThe video features Kim Hyeon-tae, a physics PhD and space fund manager, discussing space investment. He believes the SpaceX listing is positive because it provides a key representative stock for space ETFs, allowing investment in Starlink and Starship. SpaceX, founded in 2002, revolutionized the industry by successfully recovering and reusing Falcon rockets in 2015 and 2017, moving away from disposable rockets.\nAttempt 2 (Translating to Korean & Refining):\n이 영상은 물리학 박사 출신으로 우주 관련 펀드를 운용 중인 김현태 책임 운용역을 모셔 우주 산업 투자 전망과 스페이스X 상장의 의미를 논의합니다. 김 운용역은 스페이스X 상장이 우주 ETF에 대장주 역할을 채워주므로 투자자들에게 긍정적이라고 평가하며, 스타링크와 스타십 등에 투자할 수단이 생겼다고 강조합니다. 또한 스페이스X는 2002년 설립 이후 2015년 팰컨 추진체 회수 성공과 2017년 재사용 성공을 통해 로켓 재사용 시대를 열며 우주 산업을 선도하고 있다고 설명합니다.\nChecking Character Count:\nThe draft looks a bit short. Let's expand slightly to hit closer to the \"around 500 characters\" target while keeping it concise.\nAttempt 3 (Expanding for length and detail):\n이번 영상에서는 물리학 박사이자 우주 테마 펀드 운용을 맡고 있는 김현태 책임 운용역과 함께 우주 산업 투자 전략과 스페이스X 상장의 의의를 심도 있게 다룹니다. 김 운용역은 스페이스X가 우주 ETF의 핵심 대장주 역할을 수행하게 되어 투자 바스켓이 완성되는 점이 긍정적이라며, 그동안 접근이 어려웠던 스타십과 스타링크 성장에 대한 투자 기회가 열렸다고 분석합니다. 아울러 스페이스X는 2002년 설립된 이래 2015년 로켓",
+          "db_saved": true
+        },
+        {
+          "title": "스페이스X 상장 임박...지금 우주관련주 투자해도 될까요?_26.05.28. | 박현지, 여도은, 허재무 [아침N투자]",
+          "video_id": "jZBEdL2xjZo",
+          "views": 3187,
+          "upload_date": "2026-05-28",
+          "url": "https://www.youtube.com/watch?v=jZBEdL2xjZo",
+          "subtitle_summary": "1.  Analyze the Request:\nSource Material: A YouTube video transcript about ETF market trends, specifically mentioning SpaceX IPO rumors, space-related stocks, quantum computing, and KOSDAQ.\nTitle: \"스페이스X 상장 임박...지금 우주관련주 투자해도 될까요?_26.05.28. | 박현지, 여도은, 허재무 [아침N투자]\" (SpaceX IPO imminent... Should we invest in space-related stocks now?).\nTask: Summarize the transcript in Korean.\nLength: Around 500 characters.\nConstraints: ONLY Korean (no English), 3-5 sentences for the core summary.\n2.  Analyze the Transcript Content:\nIntro: Hosts greeting Park Hyun-ji, mentioning her health and busy schedule.\nMain Topic - ETF Market Trends:\nData changes rapidly.\nKey themes: Quantum computing, KOSDAQ (related to National Growth Fund), Space/Aerospace.\nQuantum Computing: Short-term trading theme (volatile). Long-term growth expected but current profitability is low. US government investing (equity stakes, not just grants) adds weight. Nvidia CEO made positive comments despite earlier skepticism about timeline.\nKOSDAQ: Venture fund launch mentioned. Three key areas: Secondary batteries, Semiconductors, Bio. Hydrogen and renewable energy stocks also rose (around 13-14%).\nNote: The transcript cuts off abruptly at the end (\"...코\"). It doesn't actually cover the \"SpaceX IPO\" part mentioned in the title in detail within the provided text, other than a brief mention that \"Space/Aerospace tech theme came up.\" However, the prompt asks to summarize the provided transcript. I must focus on what is actually in the text, while acknowledging the context of the title if relevant to the flow, but primarily summarizing the spoken content.\n3.  Drafting the Summary (Iterative Process):\nAttempt 1 (Mental Outline): The video discusses recent ETF market trends. Park Hyun-ji explains that quantum computing rose due to US government investment strategies and Nvidia CEO's comments, though it's a volatile short-term theme. KOSDAQ saw gains in secondary batteries, semiconductors, and bio sectors following the National Growth Fund launch. Space-related themes were also highlighted, though the specific details on SpaceX were cut off or not fully transcribed in this snippet. The overall market showed shifts based on these specific thematic drivers.\nAttempt 2 (Translating to Korean & Refining):\n이번 주 ETF 시장 동향은 양자 컴퓨팅, 코스닥, 우주 항공 테크 등 세 가지 주요 테마가 부상했습니다. 양자 컴퓨팅은 미국 정부의 지분 투자 발표와 엔비디아 CEO의 긍정적 전망으로 상승했으나, 여전히 수익성 측면에서 한계가 있어 단기 트레이딩 성격이 강합니다. 코스닥은 국민 성장 펀드 출시 소식에 2차전지, 반도체, 바이오 관련주가 강세를 보였으며, 수소와 재생 에너지 분야도 함께 상승했습니다. 우주 항공 관련 테마도 주목받았으나, 시장 상황은 데이터 업데이트마다 빠르게 변화하는 양상을 보였습니다.\nChecking Constraints:\nKorean only? Yes.\nNo English? Yes.\nLength? Let's count characters.\n\"이번 주 ETF 시장 동향은 양자 컴퓨팅, 코스닥, 우주 항공 테크 등 세 가지 주요 테마가 부상했습니다. 양자 컴퓨팅은 미국 정부의 지분 투자 발표와 엔비디아 CEO의 긍정적 전망으로 상승했으나, 여전히 수익성 측면에서 한계가 있어 단기 트레이딩 성격이 강합니다. 코스닥은 국민 성장 펀드 출시 소",
+          "db_saved": true
+        },
+        {
+          "title": "SpaceX IPO Part 3: The Supply and Demand War in 15 Days—\"So, What Should I Buy?\"",
+          "video_id": "n12WtKbhe9g",
+          "views": 899,
+          "upload_date": "2026-05-28",
+          "url": "https://www.youtube.com/watch?v=n12WtKbhe9g",
+          "subtitle_summary": "1.  Analyze the Request:\nSource Material: A YouTube video transcript about SpaceX's potential IPO, focusing on Nasdaq rule changes and investment strategies.\nTask: Summarize the transcript in Korean.\nLength: Around 500 characters (Korean characters).\nConstraints: ONLY Korean (no English), 3-5 sentences for the core summary.\nKey Content to Extract:\nWarning about indirect investment products claiming direct exposure to SpaceX (scams).\nNasdaq rule changes regarding the Nasdaq 100 index (Fast Entry).\nSpaceX's potential valuation and its eligibility for fast inclusion (15 trading days).\nImplications for supply and demand.\n2.  Drafting the Summary (Iterative Process):\nDraft 1 (Mental Outline):\nSpaceX is a private company, so be careful of scams promising direct exposure. The video discusses the impact of SpaceX listing on Nasdaq. A key change is the \"Fast Entry\" rule for the Nasdaq 100 index. Previously, it took 3 months, but now large companies can join in 15 trading days. SpaceX, valued at $1.5-2 trillion, will easily qualify for this fast track. This means it will enter the index quickly, affecting supply and demand.\nDraft 2 (Translating to Korean & Refining):\n스페이스X는 비상장 기업이라 직접 투자를 보장한다는 상품은 사기일 가능성이 높으니 주의해야 합니다. 이번 영상은 스페이스X의 나스닥 상장이 증시에 미칠 영향과 투자 방법을 다룹니다. 특히 나스닥 100 지수 산정 규정이 변경되어, 대형 신규 상장사는 3개월 대기 없이 15거래일 만에 지수에 편입되는 '패스트 엔트리' 제도가 도입되었습니다. 스페이스X는 예상 밸류에이션 1.5~2조 달러로 상장 즉시 상위권에 들기 때문에 이 규정의 수혜를 받아 빠르게 지수에 편입될 전망입니다. 이러한 변화는 상장 후 수급에 큰 영향을 줄 것으로 보입니다.\nChecking Character Count (Draft 2):\nApprox 230 characters (including spaces). This is a bit short. The prompt asks for \"500자 내외\" (around 500 characters). I need to expand on the details provided in the transcript without adding external info.\nDraft 3 (Expanding for length):\n스페이스X는 여전히 비상장 기업이므로, 직접 노출을 약속하는 투자 상품은 허위일 가능성이 커 투자에 신중해야 합니다. 본격적인 상장 논의에 앞서 나스닥 100 지수의 규정 변경이 주목받고 있는데, 핵심은 대형 상장사의 지수 편입 시간을 단축한 '패스트 엔트리' 제도입니다. 과거에는 상장 후 3개월을 기다려야 했으나, 이제는 시가총액 상위 42위 내 기업이라면 15거래일 만에 나스닥 100 지수에 편입될 수 있게 되었습니다. 스페이스X는 1.5조에서 2조 달러의 높은 밸류에이션으로 상장 시 글로벌 탑 10에 들 것으로 예상되어, 이 빠른 편입 규정의 확실한 수혜 대상입니다. 결과적으로 스페이스X는 상장 후 보름 만에 주요 지수에 포함되어 시장 수급에 상당한 파급력을 미칠 것으로 분석됩니다.\nChecking Character Count (Draft 3):\nApprox 350 characters (excluding spaces). Still a bit short of 500, but \"500자 내외\" usually allows for a range (e.g., 300-600). Let's try to add a bit more detail about the specific mechanism mentioned (evaluation on",
+          "db_saved": true
+        }
+      ],
+      "max": 1.7365,
+      "min": 2.6582,
+      "nb_score": 0.6533,
+      "avg_views": 3680.33,
+      "total_views": 11041
+    },
+    {
+      "keyword": "전작권 전환 연합사",
+      "is_fixed": false,
+      "views": [
+        318,
+        6,
+        2620
+      ],
+      "video_count": 3,
+      "videos": [
+        {
+          "title": "[브레이킹 나우] 주한미군, 전작권 조기 전환되면 한미연합사령부 해체 가능성 있다고?! 주한미군이 제시한 3가지 조건은?!",
+          "video_id": "4hrj3XM-bNs",
+          "views": 318,
+          "upload_date": "2026-05-28",
+          "url": "https://www.youtube.com/watch?v=4hrj3XM-bNs",
+          "subtitle_summary": "1.  Analyze the Request:\nSource Material: A YouTube video transcript about the transfer of wartime operational control (OPCON) from the US to South Korea.\nTitle: [Breaking Now] US Forces Korea (USFK), possibility of dissolving the ROK-US Combined Forces Command if OPCON is transferred early?! What are the 3 conditions presented by USFK?!\nTranscript Content:\nIssue: Early transfer of OPCON and potential changes to the ROK-US Combined Forces Command structure.\nSource: Chosun Ilbo exclusive report.\nUSFK stance: Suggested that transferring OPCON without meeting military requirements could lead to the dissolution of the Combined Forces Command.\nThree conditions: 1. ROK military's ability to lead combined defense, 2. Ability to respond to North Korean nuclear/missile threats, 3. Stable security environment in and around the Korean Peninsula.\nPresident Lee Jae-myung's stance (Note: The transcript says \"Lee Jae-myung\", but in reality, the current president mentioned in this context is usually Yoon Suk-yeol or the previous administration Moon Jae-in. However, the transcript explicitly says \"Lee Jae-myung 대통령\". I must stick to the provided transcript content, even if it seems factually odd or refers to a hypothetical scenario/typo in the source. Wait, looking closely at the transcript, it says \"이재명 대통령\". This is likely a transcript error or a specific political context. I should summarize what the text says, not correct it based on external knowledge, unless it's gibberish. I will refer to him as \"President Lee Jae-myung\" or just \"the President\" to be safe, or focus on the stance itself). Correction: Actually, Lee Jae-myung is the leader of the opposition party, not the president. The transcript likely has an error (ASR error). However, the prompt asks me to summarize the provided text. I will phrase it carefully, perhaps attributing the view to \"the President\" or just mentioning the stance mentioned in the text. Let's look at the text again: \"이재명 대통령은...\". I will summarize the content as provided: \"President Lee Jae-myung stated there would be no problem...\"\nUSFK timeline: Achievable by Q1 2029 at the earliest.\nReasoning: North Korean threats, China/Russia support possibilities. ROK military lacks US-standard operational control capabilities.\nUSFK view on dissolution: If CFC is dissolved, US and ROK forces would operate separately under their own commands during wartime.\nConstraints:\nLanguage: Korean ONLY.\nNo English at all.\nLength: Around 500 characters (Korean characters).\nStructure: 3-5 sentences.\n2.  Drafting the Summary (Internal Monologue & Iteration):\nAttempt 1 (Mental Outline):\n전작권 조기 전환 문제로 한미연합사령부 해체 가능성이 제기되었습니다. 조선일보 보도에 따르면 주한미군은 조건 미충족 시 전환은 연합사 해체로 이어질 수 있다고 경고했습니다. 제시된 3가지 조건은 한국군의 연합방위 주도 능력, 북한 위협 대응 능력, 안보 환경 안정입니다. 이재명 대통령은 문제 없다고 했지만, 미군은 2029년이 되어야 가능하다고 봅니다. 미군은 한국군이 아직 능력이 부족하다고 판단하며, 연합사 해체 시 각자 작전을 펼치는 것이 현실적이라고 봅니다.\nRefining and Checking Constraints:\nSentence count: 5 sentences. (Good)\nContent coverage: Covers the main issue (CFC dissolution), conditions, timeline, and reasoning.\nTranscript accuracy: The transcript mentions \"이재명 대통령\". I should include this specific detail as it's in the source text, even if it's factually weird in the real world. The prompt asks to summarize the transcript.\nLength check: Let's count characters.\n\"전작권 조기 전환 문제로 한미연합사령부 해체 가능성이 제기되었습니다. 조선일보 보도에 따르면 주한미군",
+          "db_saved": true
+        },
+        {
+          "title": "[브레이킹 나우] 주한미군, 전작권 조기 전환되면 한미연합사령부 해체 가능성 있다고?! 주한미군이 제시한 3가지 조건은?!",
+          "video_id": "EO9MynYbIzk",
+          "views": 6,
+          "upload_date": "2026-05-28",
+          "url": "https://www.youtube.com/watch?v=EO9MynYbIzk",
+          "subtitle_summary": "1.  Analyze the Request:\nSource Material: A YouTube video transcript about the transfer of wartime operational control (OPCON) between South Korea and the US.\nTitle: [Breaking Now] US Forces Korea (USFK), possibility of dissolving the ROK-US Combined Forces Command if OPCON transfer happens early?! What are the 3 conditions presented by USFK?!\nTranscript Content:\nIssue: Early transfer of OPCON and potential changes to the combined military command structure.\nReport: Chosun Ilbo exclusive report suggests USFK implied that transferring OPCON without meeting military conditions could lead to the dissolution of the ROK-US Combined Forces Command.\n3 Conditions: 1. ROK military's ability to lead combined defense. 2. Ability to respond to North Korean nuclear/missile threats. 3. Stable security environment on the Korean Peninsula.\nPolitical stance: President Lee Jae-myung (Note: This seems to be a hypothetical or error in the transcript, as Lee Jae-myung is not the president in reality, but I must summarize based on the provided text) said there would be no problem with the transfer.\nUSFK assessment: Conditions might be met by Q1 2029 at the earliest.\nReasoning: Given North Korean threats and China/Russia factors, if ROK doesn't have US-standard operational control capabilities, it's hard to conduct operations based on ROK military's wartime status.\nUS stance: Not opposing the transfer itself. If the CFC is dissolved, US and ROK forces would have separate commands and conduct operations independently during wartime.\nConstraints:\nLanguage: ONLY Korean (No English).\nLength: Around 500 characters.\nStructure: 3-5 sentences summarizing key points.\n2.  Drafting the Summary (Iterative Process):\nAttempt 1 (Mental Outline):\n전작권 조기 전환 문제로 한미연합사령부 해체 가능성이 제기되었습니다. 주한미군은 한국군의 방위 능력, 북한 위협 대응 능력, 안보 환경 등 3가지 조건이 충족되지 않으면 연합사 해체로 이어질 수 있다고 시사했습니다. 이재명 대통령은 전환에 문제 없다고 했지만, 주한미군은 2029년 1분기나 가능하다고 봅니다. 북핵 위협 등을 고려할 때 한국군의 능력 부족 시 작전 수행이 어렵기 때문입니다. 미국은 전환 자체를 반대하지는 않으나, 연합사 해체 시 양군이 각자 작전을 전개하는 방식을 현실적으로 보고 있습니다.\nRefining and Checking Constraints:\nLength check: Looks a bit short, maybe around 200-300 characters. I need to expand slightly to get closer to the \"around 500 characters\" target (though usually \"around 500\" allows for some flexibility, typically 300-600 is acceptable, but I should aim for a bit more detail).\nContent accuracy: The transcript mentions \"이재명 대통령\" (President Lee Jae-myung). Even though this is factually incorrect in the real world (Yoon Suk-yeol is the president, Lee is the opposition leader), I must stick to the provided text for the summary. However, summarizing factual errors from a transcript can be tricky. Usually, in summarization tasks, one reflects the source text. I will reflect the source text but focus on the military aspect more to avoid highlighting the potential error too much, or just state it as \"대통령\" or \"정부 측\" if I want to be safe, but the prompt asks to summarize the provided text. I will stick to the provided text's narrative flow.\nAttempt 2 (Expanding for length and detail):\n전시작전통제권, 즉 전작권의 조기 전환을 둘러싸고 한미연합사령부의 해체 가능성이 제기되어 논란이 되고 있습니다. 조선일보 보도에 따르면 주한미군은 군사적 필요 조건이 미충족된 상태에서 전작권이 전환될 경우, 한미연합사령부가 해체될 수 있다는 가능",
+          "db_saved": true
+        },
+        {
+          "title": "(Breaking News) U.S. to dissolve ROK-U.S. Combined Forces Command upon OPCON transfer! Lee Jae-my...",
+          "video_id": "TV6y4DQddjM",
+          "views": 2620,
+          "upload_date": "2026-05-28",
+          "url": "https://www.youtube.com/watch?v=TV6y4DQddjM",
+          "subtitle_summary": "1.  Analyze the Request:\nSource Material: A YouTube video transcript about the potential dissolution of the ROK-U.S. Combined Forces Command upon OPCON (Wartime Operational Control) transfer, involving political commentary on Lee Jae-myung (implied by context, though the transcript says \"Lee Jae-myung regime\" which seems to be a slip of tongue or specific framing by the speaker, likely referring to the current administration or a hypothetical future one, but the transcript mentions \"Moon Jae-in administration\" later, suggesting this might be older content or the speaker is conflating things. Actually, looking closely at the transcript, it mentions \"Lee Jae-myung regime\" (이재명 정권) which is factually incorrect as he wasn't president, but I must summarize the content provided, not correct the political bias unless it's nonsensical. However, the transcript also mentions \"Moon Jae-in government\" later. The speaker is \"Shin Han-soo\". The core news is about the US suggesting the dissolution of the Combined Forces Command if OPCON is transferred prematurely).\nTask: Summarize the transcript in Korean.\nConstraints:\nONLY Korean (no English).\nAround 500 characters (give or take).\n3-5 sentences for the core summary.\nKey Content Points:\nDomestic political situation (local elections approaching, polling blackout period).\nInternational situation (US-Iran tension, Hormuz Strait incident involving a Korean ship).\nCriticism of the government's diplomatic stance (criticizing US/Israel, silent on Iran, ignoring US requests for Hormuz participation).\nMain News: US statement regarding OPCON transfer. If transferred prematurely without conditions met, the ROK-US Combined Forces Command could be dissolved.\nUS view: Conditions met by 2029. Korean government view: Possible earlier (even next year).\nGovernment stance: Claims no problem with transfer, plans to maintain the Combined Forces Command structure (Korean general as commander, US general as deputy) as agreed in 2018.\n2.  Drafting the Summary (Internal Monologue/Trial):\nSentence 1 (Context): The video discusses the turbulent domestic political landscape ahead of local elections and international tensions involving the US and Iran, criticizing the government's diplomatic response.\nSentence 2 (Core Issue): A major conflict has emerged as the US suggested that a premature transfer of Wartime Operational Control (OPCON) without meeting necessary conditions could lead to the dissolution of the ROK-U.S. Combined Forces Command.\nSentence 3 (Differing Views): While the US estimates the conditions for transfer will be met by 2029, the Korean government pushes for an earlier timeline, asserting that the transfer will proceed without issues and the current command structure will be maintained.\nSentence 4 (Conclusion/Implication): This highlights a significant rift between the allies regarding defense restructuring and the timeline for regaining military sovereignty.\n3.  Refining and Translating to Korean (Strictly Korean):\nDraft: 이 영상은 지방선거를 앞둔 국내 정치 상황과 이란-미국 간 긴장 속에서 한국 정부의 외교적 대응을 비판하며, 한미 간 전작권 전환을 둘러싼 갈등을 조명합니다. 미국은 전작권이 조건 충족 없이 조기에 전환될 경우 한미 연합사령부가 해체될 수 있다는 우려를 전달하며, 전환 시기를 2029년 이후로 보고 있습니다. 반면 한국 정부는 전작권 전환에 문제가 없다는 입장이며, 전환 후에도 연합사 체제를 유지하겠다고 주장하고 있습니다. 이는 방어 체계 개편을 둘러싼 한미 간 입장 차를 명확히 보여주는 사안입니다.\n4.  Checking Constraints:\nLanguage: Korean only? Yes.\nLength: Let's count characters.\n\"이 영상은... 사안입니다.\" -> Roughly 200-250 characters. The prompt asks for \"500자 내외\" (around 500 characters). My draft is a bit short. I need to expand slightly to meet the length requirement while keeping the sentence count manageable (3-5 sentences).\n5.  Expanding the Draft:",
+          "db_saved": true
+        }
+      ],
+      "max": 1.1399,
+      "min": 1.9708,
+      "nb_score": 0.5784,
+      "avg_views": 981.33,
+      "total_views": 2944
+    },
+    {
+      "keyword": "GTX 철근 누락",
+      "is_fixed": false,
+      "views": [
+        1710,
+        439,
+        7620
+      ],
+      "video_count": 3,
+      "videos": [
+        {
+          "title": "GTX 철근 누락 정부 점검 착수....李 \"지위고하 막론 엄정 책임\"",
+          "video_id": "qioRFgaI_1s",
+          "views": 1710,
+          "upload_date": "2026-05-28",
+          "url": "https://www.youtube.com/watch?v=qioRFgaI_1s",
+          "subtitle_summary": "1.  Analyze the Request:\nSource Material: A YouTube video transcript (provided in Korean).\nTitle: GTX 철근 누락 정부 점검 착수....李 \"지위고하 막론 엄정 책임\" (Government launches inspection on GTX rebar omission... Lee \"Strict accountability regardless of status\").\nTask: Summarize the transcript in Korean.\nConstraints:\nMUST respond ONLY in Korean.\nDo NOT use English at all.\nLength: Around 500 characters (Korean characters).\nStructure: 3-5 sentences.\nContent Analysis:\nSpeaker: Lee Jae-myung (referred to as \"President\" in the transcript, though in reality, he is the leader of the Democratic Party. The transcript seems to be a fictional or error-prone AI-generated scenario where he is acting as the President, or it's a specific context like a party meeting treated with presidential gravity. However, I must summarize based strictly on the provided text. The text says \"이재명 대통령\" (President Lee Jae-myung). I will reflect the content as given in the text).\nKey Topic 1 (Safety): Mentioned the 10th anniversary of the Guui station accident, Seosomun overpass demolition accident, and Samsung station GTX rebar omission. Emphasized strict accountability for safety management focused on money/efficiency. Stated safety is the most efficient investment.\nKey Topic 2 (Space/Aerospace): Emphasized budget and technology for becoming a global aerospace power. Mentioned developing the southern region (Gyeongnam, Jeonnam) into an aerospace belt.\nKey Topic 3 (Traditional Markets): Addressed difficulties in facility improvement due to cost burdens on merchants. Ordered increased government support and reduced private burden. Suggested online platforms for revitalization.\nKey Topic 4 (Defense - Closed Meeting): Discussed defense capabilities amid Middle East war context, shift to unmanned weapon systems, future warfare preparation. Emphasized military academy integration, changing military structure (less reliance on manpower), and re-education of officers for future warfare. Mentioned SMR technology.\nQ&A: A question about the cabinet reshuffle (rejected/cut off at the end).\n2.  Drafting the Summary (Iterative Process):\nDraft 1 (Mental Outline): Lee Jae-myung presided over a meeting. He talked about safety issues like GTX rebar omission and ordered strict responsibility. He also talked about aerospace development in the southern region. He addressed traditional market issues, asking for more government support for facility improvements. In a closed meeting, he discussed defense reforms like unmanned systems and re-education of personnel for future warfare.\nDraft 2 (Translating to formal Korean and refining): 이재명 대통령은 회의에서 구의역 참사 10주기를 맞아 서소문 고가차도 사고와 삼성역 GTX 철근 누락 사건을 언급하며, 돈과 효율을 앞세운 안전 관리에 대해 지위고하를 막론하고 엄정한 책임을 물을 것을 지시했습니다. 또한 우주 항공 강국 도약을 위해 남부권을 우주 항공 벨트로 육성하겠다고 밝혔고, 전통시장 시설 개선의 어려움을 해소하기 위해 정부 부담을 늘리고 민간 부담을 줄이는 방안을 주문했습니다. 이어진 비공개 회의에서는 중동 전쟁 등 대비 국방력 강화와 무인 전투 체계 전환, 미래전 대비 인력 구조 개편 및 재교육의 필요성을 강조하며 철저한 대비를 당부했습니다.\nChecking Constraints:\nKorean only? Yes.\nNo English? Yes.\nLength? Let's count characters.\n\"이재명 대통령은 회의에서 구의역 참사 10주기를 맞아 서소문 고가차도 사고와 삼성역 GTX 철근 누락 사건을 언급하며, 돈과 효율을 앞세운",
+          "db_saved": true
+        },
+        {
+          "title": "이 대통령 “서소문 사고·GTX 철근 누락 철저 조사…엄정히 책임 물어야” / KBS  2026.05.28.",
+          "video_id": "gnSHlWHD9sM",
+          "views": 439,
+          "upload_date": "2026-05-28",
+          "url": "https://www.youtube.com/watch?v=gnSHlWHD9sM",
+          "subtitle_summary": "1.  Analyze the Request:\nSource Material: A YouTube video transcript (title and content provided).\nTitle: \"이 대통령 “서소문 사고·GTX 철근 누락 철저 조사…엄정히 책임 물어야” / KBS 2026.05.28.\" (Note: The date is in the future relative to my current knowledge cutoff, implying this is a hypothetical or future scenario scenario involving Lee Jae-myung as President).\nContent: President Lee Jae-myung orders a thorough investigation into the Seosomun overpass collapse and Samsung Station GTX missing rebar issues. He emphasizes safety over money/efficiency. He mentions the seriousness because public sectors are involved. He also talks about traditional market revitalization and responds to criticism about his market visits.\nConstraints:\nMUST respond ONLY in Korean.\nDo NOT use English at all.\nLength: Around 500 characters (Korean characters).\nStructure: 3-5 sentences summarizing key points.\n2.  Analyze the Transcript Content:\nKey Point 1: President Lee Jae-myung ordered a thorough investigation into the Seosomun overpass collapse and Samsung Station GTX missing rebar incident.\nKey Point 2: He criticized the prevailing mindset of prioritizing money and efficiency over safety, noting the gravity of the situation as public sectors were involved, and promised strict accountability regardless of status.\nKey Point 3: He emphasized that money cannot be more precious than life and safety is the most efficient investment.\nKey Point 4: Regarding the economy, he urged measures to revitalize traditional markets, mentioning that the warmth of the export-led growth hasn't fully reached alleyway businesses.\nKey Point 5: He dismissed criticism about his market visits being election interference, stating he simply enjoys eating at markets, and proposed increasing government support for market modernization and online distribution.\n3.  Drafting the Summary (Iterative Process):\nDraft 1 (Mental Outline): 이재명 대통령이 서소문 고가차도 사고와 삼성역 GTX 철근 누락 사건에 대해 철저한 진상 규명을 지시했다. 그는 돈과 효율을 안전보다 중시하는 잘못된 관행을 비판하며, 공공 부문이 연루된 점의 심각성을 강조하고 지위 고하를 막론하고 책임을 묻겠다고 했다. 또한 국민의 생명을 지키는 데 정부 역량을 집중하겠다고 약속했다. 한편, 이 대통령은 수출 중심의 성장세가 골목 상권까지 미치지 못하고 있다며 전통시장 활성화 대책 마련을 촉구했다. 최근 전통시장 방문을 둘러싼 야권의 비판에 대해서는 개인적인 취향일 뿐이라며 일축하고, 시장 현대화 및 온라인 유통 지원 방안을 제안했다.\nRefining and Checking Character Count:\nSentence 1: 이재명 대통령이 서소문 고가차도 붕괴 사고와 삼성역 GTX 철근 누락 문제에 대해 철저한 진상 규명을 지시하고, 지위 고하를 막론하고 엄정히 책임을 묻겠다고 강조했습니다. (About 65 characters)\nSentence 2: 그는 구의역 참사 10주기를 맞아 돈과 효율을 안전보다 우선시하는 잘못된 관행을 비판하며, 공공 부문이 연루된 사건의 심각성을 지적했습니다. (About 60 characters)\nSentence 3: 아울러 “돈이 생명보다 귀할 수 없다”며 국민의 안전을 지키기 위해 정부 역량을 최대한 투입하겠다고 밝혔습니다. (About 50 characters)\nSentence 4: 한편, 이 대통령은 수출 호조에도 온기가 닿지 않는 골목 상권을 위해",
+          "db_saved": true
+        },
+        {
+          "title": "[자막] 서소문 고가차도 붕괴 ·GTX 철근 누락에 이재명 대통령의 강력 경고와 민생 행보",
+          "video_id": "F5XSLFhoCAM",
+          "views": 7620,
+          "upload_date": "2026-05-28",
+          "url": "https://www.youtube.com/watch?v=F5XSLFhoCAM",
+          "subtitle_summary": "1.  Analyze the Request:\nSource Material: A YouTube video transcript (subtitles) titled \"[Subtitle] Seosomun Elevated Highway Collapse, GTX Rebar Omission, Lee Jae-myung's Strong Warning and Livelihood Actions\" (Note: The title mentions Lee Jae-myung, but the transcript content sounds like a presidential address or a high-level official's speech. Wait, looking closely at the transcript, it says \"이재명 대통령\" in the title provided by the user, but the transcript content is speaking as the leader (using terms like \"우리 국민 여러분\", \"정부의 역량을 최대한 투입하겠습니다\"). Actually, Lee Jae-myung is the leader of the opposition party (Democratic Party), not the President (Yoon Suk-yeol is the current President as of the knowledge cutoff, but the title says \"Lee Jae-myung President\" which might be a user error or a specific context in the video title). However, I must summarize the content of the transcript provided, regardless of the political accuracy of the title. The transcript itself sounds like a formal address by a leader (likely the President or a party leader acting in a presidential tone).\nTask: Summarize the transcript in Korean.\nLength: Around 500 characters (Korean characters).\nFormat: 3-5 sentences.\nConstraint: ONLY Korean, NO English.\n2.  Analyze the Transcript Content:\nSegment 1 (Safety/Industrial Accidents): Mentions the 10th anniversary of the Guui Station accident. Acknowledges that while industrial accident deaths decreased in Q1, they are still high. Mentions the Seosomun Elevated Highway collapse and GTX rebar omission issues. Criticizes the culture of valuing money/efficiency over safety. Emphasizes that public sectors are involved, making it serious. Calls for thorough investigation and strict accountability. \"Money cannot be more precious than life.\"\nSegment 2 (Aerospace Industry): Discusses space aviation as a future strategic industry (AI, semiconductors, etc.). Mentions competition from other nations and SpaceX. Mentions the success of Nuri-ho. Calls for R&D investment, fostering private sector (Korean SpaceX), and developing the southern region into a space aviation belt. Mentions KF21 technology transfer to civilian aircraft.\nSegment 3 (Livelihood/Economy): Exports are doing well, but small businesses/traditional markets aren't feeling it. Emphasizes the importance of traditional markets for people's livelihood. Mentions personal habit of eating at markets to listen to people. (Transcript cuts off here).\n3.  Drafting the Summary (Iterative Process):\nDraft 1 (Mental Outline): The speaker commemorates the Guui Station accident and addresses recent safety disasters like the Seosomun collapse and GTX issue, stressing that safety must come before efficiency and promising strict punishment. They also highlight the importance of the space aviation industry as a future growth engine, calling for R&D investment and private-public cooperation to become a global leader. Finally, they emphasize the need to revitalize traditional markets to ensure economic growth benefits ordinary citizens' daily lives.\nDraft 2 (Translating to Korean & Refining):\n구위역 참사 10주기를 맞아 산재 사망자 감소 노력에도 불구하고 여전히 안전보다 효율을 중시하는 잘못된 관행이 비판받았습니다. 최근 서소문 고가차도 붕괴와 GTX 철근 누락 사건 등 공공 부문의 안전 불감증에 대해 강력히 경고하며, 진상 규명과 엄중한 책임을 요구했습니다. 또한 우주 항공 분야를 미래 핵심 전략 산업으로 규정하고, 민관 협력과 과감한 투자를 통해 글로벌 강국으로 도약하겠다는 의지를 밝혔습니다. 마지막으로 수출 호조에도 체감하지 못하는 민생 경기를 언급하며, 전통 시장 활성화를 통해 서민 경제를 실질적으로 개선하겠다고 강조했습니다.\nChecking Character Count:\nThe draft looks a bit short. Let's expand slightly to hit closer to the \"500 characters\" target (though \"around",
+          "db_saved": true
+        }
+      ],
+      "max": 1.2927,
+      "min": 2.2564,
+      "nb_score": 0.5729,
+      "avg_views": 3256.33,
+      "total_views": 9769
+    },
+    {
+      "keyword": "기준금리 동결",
+      "is_fixed": false,
+      "views": [
+        6558,
+        1405,
+        3033,
+        5554,
+        10852,
+        1403,
+        652,
+        559
+      ],
+      "video_count": 8,
+      "videos": [
+        {
+          "title": "[On-site Video] \"Some pushed for a rate hike\"... Why it was frozen at 2.5% anyway / JTBC News",
+          "video_id": "whly14GeuUM",
+          "views": 6558,
+          "upload_date": "2026-05-28",
+          "url": "https://www.youtube.com/watch?v=whly14GeuUM",
+          "subtitle_summary": "1.  Analyze the Request:\nSource Material: A YouTube video transcript (JTBC News) about the Bank of Korea freezing the base rate at 2.5%.\nTask: Summarize the transcript in Korean.\nConstraints:\nMUST respond ONLY in Korean.\nDo NOT use English at all.\nLength: Around 500 characters (Korean characters).\nStructure: 3-5 sentences covering key points.\n2.  Analyze the Transcript Content:\nDecision: Bank of Korea kept the base rate at 2.5%.\nExternal Conditions: Middle East war uncertainty, potential energy supply issues, high oil prices, global inflation pressure, slowing growth. US inflation might hit 4%. AI investment benefits US and some Asian countries.\nFinancial Markets: US-Iran negotiations, interest rate shifts, rising treasury yields, strong dollar. Stocks rose due to AI demand.\nDomestic Conditions: Growth expanded despite Middle East tensions (thanks to semiconductors). Q1 growth 1.7%. Exports/investment high. Consumption good.\nDomestic Prices: April CPI 2.6% due to petroleum prices. Core inflation stable at 2.2%.\nDomestic Financial Markets: High volatility. Bond yields up. Won-Dollar rate rose to around 1,500 won. Stocks rose on earnings expectations.\nHousing/Household Debt: Housing prices in metropolitan area rose due to supply concerns. Household loans increased slightly, mostly related to housing.\nForecast: Growth forecast raised to 2.6% (from 2.0%).\n3.  Drafting the Summary (Iterative Process):\nDraft 1 (Mental Outline): The Bank of Korea froze the rate at 2.5%. This is because external uncertainties like the Middle East war and domestic inflation risks exist. However, the economy is doing better than expected due to semiconductors, raising the growth forecast to 2.6%. Housing prices are rising, and household debt is increasing slightly. The decision balanced growth support and inflation risks.\nDraft 2 (Translating to formal Korean): 한국은행 금융통화위원회는 대내외 불확실성 속에서 기준금리를 2.5%로 동결하기로 결정했습니다. 중동 전쟁 여파로 인한 에너지 공급망 불안과 국제 유가 상승이 인플레이션 압력으로 작용하고 있어 금리 인상 압력도 존재했습니다. 하지만 반도체 경기 호조에 힘입어 국내 경제 성장세가 확대되고 있으며, 올해 성장률 전망치도 기존 2.0%에서 2.6%로 상향 조정되었습니다. 한편, 수도권 주택 가격 상승과 가계 대출 증가세가 이어지고 있어 금융 안정성에도 주의가 필요한 상황입니다.\nRefining and Checking Constraints:\nLanguage: Korean only? Yes.\nLength: Let's count characters.\n\"한국은행 금융통화위원회는 대내외 불확실성 속에서 기준금리를 2.5%로 동결하기로 결정했습니다. 중동 전쟁 여파로 인한 에너지 공급망 불안과 국제 유가 상승이 인플레이션 압력으로 작용하고 있어 금리 인상 압력도 존재했습니다. 하지만 반도체 경기 호조에 힘입어 국내 경제 성장세가 확대되고 있으며, 올해 성장률 전망치도 기존 2.0%에서 2.6%로 상향 조정되었습니다. 한편, 수도권 주택 가격 상승과 가계 대출 증가세가 이어지고 있어 금융 안정성에도 주의가 필요한 상황입니다.\"\nCharacter count (including spaces): ~190 characters. This is a bit short. The prompt asks for \"500자 내외\" (around 500 characters). I need to expand on the details",
+          "db_saved": true
+        },
+        {
+          "title": "[속보] 한은, 기준금리 연 2.50% 유지…8연속 동결 / 연합뉴스TV (YonhapnewsTV)",
+          "video_id": "GNktjReoghU",
+          "views": 1405,
+          "upload_date": "2026-05-28",
+          "url": "https://www.youtube.com/watch?v=GNktjReoghU",
+          "subtitle_summary": "1.  Analyze the Request:\nSource Material: A YouTube video transcript about the Bank of Korea keeping the base rate unchanged.\nTitle: [속보] 한은, 기준금리 연 2.50% 유지…8연속 동결 / 연합뉴스TV (YonhapnewsTV)\nTask: Summarize the transcript in Korean.\nLength: Around 500 characters (Korean characters).\nConstraints:\nMUST respond ONLY in Korean.\nDo NOT use English at all.\nSummarize core content in 3-5 sentences.\n2.  Analyze the Transcript:\nKey Event: Bank of Korea (BOK) held a Monetary Policy Board meeting.\nDecision: Kept the base rate at 2.50% annually.\nContext: This is the 8th consecutive freeze (since May last year, marking 1 year). It's the first meeting presided over by Governor Rhee Chang-yong (transcript says \"Shin Hyun-song\", but wait, let me check the transcript again. The transcript says \"신현송 총재\". Actually, Rhee Chang-yong was governor during the time frame described (May 2022 onwards). Wait, looking at the transcript text provided: \"신현송 총재가 주제하는 첫 금통이라는 점에서\". This seems like a transcription error in the source or a specific context. However, the prompt asks me to summarize the provided text. I should stick to the facts presented in the text or correct obvious errors if they are glaring factual mistakes, but usually, summarization tasks require sticking to the source. Let's look closer. \"신현송\" is likely a transcription error for \"이창용\" (Rhee Chang-yong) or perhaps a deputy governor stepping in? Actually, Shin Hyun-song was a deputy governor. But the text says \"총재\" (Governor). Let's stick to the core facts: Rate frozen at 2.5%, 8th consecutive time.\nReasons: Middle East situation causing financial market instability, upward pressure on prices and exchange rates.\nImpact: Korea-US interest rate gap maintained at 1.25 percentage points.\nEconomic Outlook: GDP growth forecast raised from 2.0% to 2.6% due to strong semiconductor exports.\n3.  Drafting the Summary (Internal Draft):\nSentence 1 (Decision): 한국은행 금융통화위원회가 기준금리를 연 2.50%로 동결하여 8연속 금리 유지를 결정했습니다.\nSentence 2 (Reasons): 이는 중동 사태로 인한 금융 시장 불안과 물가 및 환율 상승 압력 등을 고려한 조치로 풀이됩니다.\nSentence 3 (Economic Outlook): 아울러 한국은행은 반도체 수출 호조를 반영해 올해 실질 국내총생산 성장률 전망치를 기존 2%에서 2.6%로 상향 조정했습니다.\nSentence 4 (Context): 이번 결정으로 한미 금리차는 1.25% 포인트를 유지하게 되었으며, 작년 5월 이후 1년간 금리가 고평가되는 흐름이 지속되고 있습니다.\n4.  Refining and Checking Constraints:\nLanguage: Korean only? Yes.\nNo English? Yes.\nLength: Let's check character count.\nDraft: 한국은행 금융통화위원회가 기준금리를 연 2.50%로 동결하여 8연속 금리 유지를 결정했습니다. 이는 중동 사태로 인한 금융 시장 불안과 물가 및 환율 상승 압력 등을 고려한 조치로 풀이됩니다. 아울러 한국은행은 반도체 수출 호조를 반영해 올해 실질 국내총생산 성장률 전망치를 기존 2%에서 2.6%로 상향 조정했습니다. 이번 결정으로 한미 금",
+          "db_saved": true
+        },
+        {
+          "title": "[🔴속보] 기준금리 8연속 동결 '연 2.50%'…올해 성장률 전망치 2.5%로 상향 조정 / 연합뉴스TV(YonhapnewsTV)",
+          "video_id": "OqZIeJYAfII",
+          "views": 3033,
+          "upload_date": "2026-05-28",
+          "url": "https://www.youtube.com/watch?v=OqZIeJYAfII",
+          "subtitle_summary": "1.  Analyze the Request:\nSource Material: A YouTube video transcript about the Bank of Korea freezing the base interest rate.\nTitle: [🔴속보] 기준금리 8연속 동결 '연 2.50%'…올해 성장률 전망치 2.5%로 상향 조정 / 연합뉴스TV(YonhapnewsTV)\nTask: Summarize the transcript in Korean.\nConstraints:\nONLY Korean (no English).\nAround 500 characters (Korean characters).\n3-5 sentences.\nKey Information in Transcript:\nBank of Korea (BOK) froze the base rate at 2.50% annually.\nThis is the 8th consecutive freeze.\nReason: Instability in financial markets due to the Middle East situation, upward pressure on prices and exchange rates.\nResult: The interest rate gap between Korea and the US remains (1.25% or 1.75% depending on the transcript garble, but the key is the gap maintenance).\nEconomic Growth Forecast: Raised from 2.0% (or 2.2%? Transcript says 2% to 2.6%) to 2.6% (Transcript says 2.6%, title says 2.5% - I should stick to the transcript content mostly, but the title says 2.5%. Let's look closely at the transcript: \"기존 2%에서 2.6%로 상향 조정\". Title says \"2.5%\". Usually, the transcript might have a typo or the title is summarizing differently. Actually, looking at real-world context or just the text provided: The transcript explicitly says \"2%에서 2.6%\". The title says \"2.5%\". I will mention the upward adjustment based on the transcript's specific numbers or just say \"significantly raised\" to be safe, but usually, summaries should reflect the provided text. Let's stick to the transcript's \"2.6%\" or the title's \"2.5%\". The transcript repeats \"2%에서 2.6%\". I will use the transcript's figure as it's the detailed source provided.)\nReason for growth upgrade: Strong export performance, especially semiconductors.\nContext: First rate decision meeting chaired by Governor Shin Hyun-song (implied, though transcript says \"신현송\", likely a typo for Rhee Chang-yong or the new governor if this is a hypothetical future scenario, but in reality, Rhee Chang-yong is the governor. Wait, the transcript says \"신현송 총재\". This might be a specific scenario or a typo in the provided text. I should just summarize the facts presented in the text without correcting external facts unless necessary for coherence. I will refer to \"Governor\" generally or just the Bank of Korea's decision).\n2.  Drafting the Summary (Internal Monologue/Trial):\nSentence 1 (The Decision): 한국은행 금융통화위원회가 기준금리를 연 2.5%로 8회 연속 동결하기로 결정했습니다. (BOK decided to freeze the base rate at 2.5% for the 8th consecutive time.)\nSentence 2 (The Reason): 이는 중동 사태로 인한 금융시장 불안과 물가 및 환율 상승 압력을 고려한 조치로 풀이됩니다. (This is interpreted as a measure considering financial market instability due to Middle East issues and upward pressure on prices/exchange rates.)\nSentence 3 (Growth Forecast): 아울러 한국은행은 반도체 수출 호조를 반영하여 올해 실질 국내총생산 성장률 전망치를 기존 2%에서 2.6%로 상향 조정했습니다. (Meanwhile, BOK raised this year's real GDP growth forecast from 2% to 2.6%, reflecting strong semiconductor exports.)\nSentence 4 (Impact): 이번 결정으로 한미 금리차는 기존 수준인 1.25%포인트가 유지되었습니다. (With this decision, the Korea-US interest rate gap remained at 1.25% points.)\n3.  Refining and Checking Constraints:\nLanguage: Korean only",
+          "db_saved": true
+        },
+        {
+          "title": "‘기준금리 2.50%’, 8연속 동결..신현송 한은 총재 통화정책방향 기자간담회 - [끝까지LIVE] MBC 중계방송 2026년 05월 28일",
+          "video_id": "rUBur_xv4Po",
+          "views": 5554,
+          "upload_date": "2026-05-28",
+          "url": "https://www.youtube.com/watch?v=rUBur_xv4Po",
+          "subtitle_summary": "1.  Analyze the Request:\nSource Material: A YouTube video transcript (MBC broadcast, May 28, 2026) about the Bank of Korea's decision to freeze the base interest rate at 2.50% for the 8th consecutive time. The speaker is Bank of Korea Governor Shin Hyun-song.\nTask: Summarize the transcript in Korean.\nConstraints:\nMUST respond ONLY in Korean.\nDo NOT use English at all.\nLength: Around 500 characters (Korean characters).\nStructure: 3-5 sentences.\nKey Content in Transcript:\nDecision: Base rate frozen at 2.50%.\nInternational Context: Middle East war uncertainty, US-Iran negotiations, energy supply chain issues, high inflation pressure (US ~4%, EU/UK >3%), slowing growth but AI investment helping some countries.\nFinancial Markets: US treasury rates up, dollar strong, stocks up due to AI.\nDomestic Context: Growth expanding despite Middle East war (semiconductor boom), Q1 growth 1.7%, exports/investment up.\nDomestic Prices: Oil prices up, CPI 2.6% in April, core inflation steady at 2.2%.\nDomestic Financial Markets: High volatility, bond rates up, won-dollar rate around 1,500 won, stocks up.\nHousing/Household Debt: Housing prices rising in Seoul/metropolitan area due to supply concerns, household loans increasing slightly, especially related to housing.\n2.  Drafting the Summary (Iterative Process):\nAttempt 1 (Mental Outline):\n신현송 한은 총재는 기준금리를 2.50%로 8연속 동결했다. 중동 전쟁 불확실성과 에너지 공급망 문제로 세계 인플레이션 압력이 높아지고 성장은 둔화될 전망이다. 국내 경제는 반도체 호조로 성장세가 확대되었으나, 유가 상승으로 소비자 물가는 2.6%로 높아졌다. 부동산 시장에서는 수도권을 중심으로 가격 상승세가 확대되고 가계 대출 증가 폭도 커졌다. 이에 따라 금융통화위원회는 금리를 동결하며 안정을 도모했다.\nRefining and Checking Constraints:\nLength check: Looks a bit short. Need to add more detail to reach closer to 500 characters (or at least a substantial summary).\nSentence count: 5 sentences. Good.\nLanguage: Korean only. Good.\nAttempt 2 (Expanding for detail and length):\n한국은행 금융통화위원회는 대내외 경제 불확실성 속에서 기준금리를 연 2.50%로 동결하는 결정을 내렸습니다. 신현송 총재는 중동 전쟁 장기화에 따른 에너지 공급망 차질로 세계 경제의 인플레이션 압력이 높아지고 성장세는 약화될 것이라고 전망했습니다. 국내 경제는 반도체 경기 호조에 힘입어 성장세가 확대되고 있으나, 국제 유가 상승 영향으로 소비자 물가 상승률은 2.6%까지 높아졌습니다. 또한 수도권 주택 가격 상승 기대감이 커지고 가계 대출 증가 폭이 확대되는 등 금융 시장 변동성이 감지되고 있습니다. 이에 한은은 물가 안정과 경제 성장 간 균형을 모색하며 신중한 통화 정책 기조를 유지하기로 했습니다.\nCharacter Count Check (Attempt 2):\nRoughly 350-400 characters (including spaces). This is acceptable for \"500자 내외\" (around 500 characters), though I can make it slightly richer to hit the target better.\nAttempt 3 (Polishing for better flow and length):",
+          "db_saved": true
+        },
+        {
+          "title": "[속보] 한국은행의 '매파적 금리동결', 물가·환율 불안 지속시 금리인상 예고 [즉시분석]",
+          "video_id": "VZi2E5m0PCg",
+          "views": 10852,
+          "upload_date": "2026-05-28",
+          "url": "https://www.youtube.com/watch?v=VZi2E5m0PCg",
+          "subtitle_summary": "1.  Analyze the Request:\nSource Material: A YouTube video transcript about the Bank of Korea's interest rate decision.\nTitle: [Breaking News] Bank of Korea's 'Hawkish Rate Freeze', Warning of Rate Hike if Price/Exchange Rate Instability Persists [Immediate Analysis].\nTask: Summarize the transcript in Korean.\nConstraints:\nMUST respond ONLY in Korean.\nDo NOT use English at all.\nLength: Around 500 characters (Korean characters).\nStructure: 3-5 sentences.\nContent: Summarize the core content.\n2.  Analyze the Transcript Content:\nKey Event: Bank of Korea (BOK) freezes the base rate. This is the first meeting for the new Governor, Rhee Chang-yong (implied by \"Shin Hyun-song\" in the transcript, though the transcript says \"Shin Hyun-song\", actually Rhee Chang-yong was the governor during the rate hike cycle, but the transcript mentions \"Shin Hyun-song\" as the new governor? Wait, let me check the transcript accuracy. The transcript says \"Shin Hyun-song\" (신현송). Actually, Rhee Chang-yong was appointed in 2022. Shin Hyun-song might be a transcription error for Rhee Chang-yong or a specific context I shouldn't over-analyze. I will focus on the action described: New Governor's first meeting).\nCore Interpretation: It was a \"hawkish freeze\" (매파적 금리동결).\nReasoning:\nBefore the Middle East war, the freeze was about when to lower rates (dovish/neutral stance).\nAfter the Middle East war, due to price instability and exchange rate instability, the stance shifted to considering when to raise rates if things get worse.\nContext: The rate has been frozen for a year (8 meetings). The gap with US rates is 1.25 percentage points.\nFuture Outlook: If price/exchange rate instability worsens, BOK is willing to raise rates to narrow the gap with the US to 1.0 percentage point.\nGlobal Context: G7 countries haven't changed rates recently. However, countries with lower real rates (Switzerland, Japan, Sweden, Eurozone) might hike rates (e.g., Japan expected in June). Korea, with 2.5%, is relatively accommodative.\n3.  Drafting the Summary (Iterative Process):\nDraft 1 (Mental Outline): The Bank of Korea froze the rate. It was the new governor's first meeting. This is interpreted as a hawkish freeze because of the Middle East war causing price and exchange rate instability. Before the war, they thought about lowering rates, but now they might raise them. The US-Korea rate gap is 1.25%p, and they might hike to narrow this gap if instability grows. Other countries like Japan might also hike.\nDraft 2 (Translating to formal Korean): 한국은행이 기준금리를 동결했다. 이번 결정은 신임 총재의 첫 금통위 회의이자, 중동 전쟁 이후 물가와 환율 불안이 심각해질 경우 금리 인상을 단행하겠다는 의지를 보여준 '매파적 금리동결'로 해석된다. 과거에는 금리 인하 시점을 고려했으나, 최근 상황 변화로 인해 금리 인상 가능성까지 열어두고 있는 것이다. 현재 한미 금리 격차는 1.25%포인트이나, 불안 요인이 지속될 경우 금리를 인상해 격차를 축소하겠다는 의지를 내비쳤다. 이는 일본, 유로존 등 다른 국가들의 금리 인상 가능성과도 맥락을 같이한다.\nRefining and Checking Constraints:\nLength check: The draft looks a bit short. I need to expand slightly to get closer to 500 characters (or \"around 500\", usually meaning 400-600 is acceptable, but concise is better for summaries). Let's make it richer.\nSentence count: 4 sentences. Good.",
+          "db_saved": true
+        },
+        {
+          "title": "🔴LIVE \"기준금리 동결\" 첫 금통위..신현송 한은 총재 기자간담회 | SBS 실시간 라이브",
+          "video_id": "feOJzoV_q9o",
+          "views": 1403,
+          "upload_date": "2026-05-28",
+          "url": "https://www.youtube.com/watch?v=feOJzoV_q9o",
+          "subtitle_summary": "1.  Analyze the Request:\nSource Material: A YouTube video transcript (SBS live broadcast) titled \"First Monetary Policy Committee meeting 'Base Rate Freeze'... Bank of Korea Governor Hyeon-sung Shin's Press Conference\".\nTask: Summarize the transcript in Korean.\nConstraints:\nMUST respond ONLY in Korean.\nDo NOT use English at all.\nLength: Around 500 characters (Korean characters).\nStructure: 3-5 sentences covering key points.\n2.  Analyze the Transcript Content:\nIntro: Governor Shin mentions it's his first press conference, asks for understanding if there are minor hiccups. Rules: limit questions to 1-2 per person.\nMain Decision: The Monetary Policy Committee decided to keep the base rate at 2.5%.\nExternal Conditions: Middle East war uncertainty persists. Even if a ceasefire happens, energy supply normalization and price stabilization will take time. Global inflation pressure rising, growth weakening. US inflation expected to hit 4%. Eurozone/UK inflation >3%. AI investment benefits US and some Asian countries.\nFinancial Markets: US-Iran negotiations and policy shifts caused treasury yields to rise and dollar to strengthen. Stocks rose due to AI demand.\nDomestic Conditions: Despite the Middle East situation, domestic economy grew due to semiconductor boom. Q1 growth 1.7%. Exports and investment high, consumption good.\nDomestic Prices: Oil prices spiked, April CPI rose to 2.6%. Short-term inflation expectations in late 2% range. Core inflation remained at 2.2% (supply shock impact not yet visible).\nDomestic Financial Markets: High volatility. Treasury yields rose due to inflation fears. Won-Dollar rate fluctuated, settling around 1,500 won due to strong dollar and foreign stock selling. Stocks adjusted but supported by earnings expectations.\n3.  Drafting the Summary (Iterative Process):\nDraft 1 (Mental Outline): Governor Shin held his first press conference. The BOK froze the rate at 2.5%. External factors like the Middle East war are causing inflation fears and slowing growth, though AI helps some. Domestically, semiconductors are boosting growth, but oil prices raised CPI to 2.6%. Financial markets are volatile with high rates and exchange rates.\nDraft 2 (Translating to formal Korean): 신현송 한국은행 총재가 첫 금통위 기자간담회를 열어 기준금리를 2.5%로 동결하기로 결정했다고 밝혔다. 대외적으로는 중동 전쟁 불확실성으로 인해 글로벌 인플레이션 압력이 높아지고 성장세는 약화될 전망이나, AI 투자 확대로 미국과 일부 아시아 국가는 성장이 예상된다. 대내적으로는 반도체 호조로 경제 성장세가 확대되었으나, 석유 가격 상승으로 소비자 물가 상승률이 2.6%로 높아졌다. 금융 시장은 인플레이션 우려와 미국 금리 인상 등으로 국고채 금리가 상승하고 원달러 환율이 1,500원대를 기록하는 등 높은 변동성을 보였다.\nRefining and Checking Character Count:\nSentence 1: 신현송 한국은행 총재가 첫 금통위 기자간담회를 열어 기준금리를 2.5%로 동결하기로 결정했다고 밝혔다. (46 chars)\nSentence 2: 대외적으로는 중동 전쟁 불확실성으로 인해 글로벌 인플레이션 압력이 높아지고 성장세는 약화될 전망이나, AI 투자 확대로 미국과 일부 아시아 국가는 성장이 예상된다. (70 chars)\nSentence 3: 대내적으로는 반도체 호조로 경제 성장세가 확대되었으나, 석유 가격 상승으로 소",
+          "db_saved": true
+        },
+        {
+          "title": "[생중계] 한국은행 기준금리 2.50% 동결...한국은행 총재 기자간담회 현장 (2026. 5. 28. 오전)",
+          "video_id": "UVd1GD18TVU",
+          "views": 652,
+          "upload_date": "2026-05-28",
+          "url": "https://www.youtube.com/watch?v=UVd1GD18TVU",
+          "subtitle_summary": "1.  Analyze the Request:\nSource Material: A YouTube video transcript (partial) titled \"[생중계] 한국은행 기준금리 2.50% 동결...한은 총재 기자간담회 현장 (2026. 5. 28. 오전)\".\nTask: Summarize the transcript in Korean.\nLength: Around 500 characters (Korean characters).\nConstraints: ONLY Korean (no English), 3-5 sentences for the core summary.\n2.  Analyze the Transcript Content:\nDate/Context: May 28, 2026. Bank of Korea (BOK) Governor Shin Hyun-song's press conference.\nKey Decision: BOK decided to freeze the base rate at 2.5%.\nExternal Conditions:\nMiddle East war uncertainty persists (US-Iran negotiations ongoing but uncertain).\nEnergy supply chain normalization will take time even if a ceasefire happens.\nGlobal inflation pressure rising, growth weakening.\nUS inflation expected to hit 4%, Eurozone/UK above 3%.\nUS and some Asian countries (AI investment) show good growth.\nFinancial markets: Treasury yields up, Dollar strong, Stocks up (AI demand).\nDomestic Conditions:\nEconomy growing despite Middle East war, driven by semiconductors.\nQ4 growth rate 1.7%, exports/investment high, consumption good.\nInflation: CPI rose to 2.6% in April due to oil prices. Short-term expectations in late 2% range. Core inflation maintained at 2.2%.\nFinancial Markets: High volatility. Bond yields up, Won-Dollar rate rose to around 1,500 won (due to strong dollar, foreign stock selling). Stocks rose on earnings expectations despite corrections.\nHousing/Household Debt: Housing prices in Seoul/metropolitan area rising due to supply concerns. Household loans increasing slightly, specifically housing-related loans due to increased transactions.\n3.  Drafting the Summary (Iterative Process):\nDraft 1 (Mental Outline): On May 28, 2026, the Bank of Korea froze the base rate at 2.5%. This decision was influenced by ongoing Middle East war uncertainties and rising global inflation pressures, particularly in the US. Domestically, the economy is growing thanks to semiconductors, but consumer inflation rose to 2.6% due to oil prices. Financial markets showed volatility with rising interest rates and exchange rates, while housing prices in the metropolitan area continued to climb.\nDraft 2 (Translating to formal Korean and refining):\n2026년 5월 28일, 한국은행 금융통화위원회는 기준금리를 연 2.5%로 동결하기로 결정했습니다. 이는 중동 전쟁 불확실성 지속과 이에 따른 글로벌 인플레이션 압력 상승, 주요국의 성장 둔화 우려 등 대외적 여건을 고려한 결과입니다. 국내 경제는 반도체 호조로 성장세가 확대되고 있으나, 유가 상승으로 소비자 물가 상승률이 2.6%로 높아진 점도 금리 동결의 배경이 되었습니다. 또한, 국고채 금리 상승과 원달러 환율 급등 등 금융시장 변동성이 커진 가운데, 수도권 주택가격 상승과 가계대출 증가세도 주요 고려 사항으로 작용했습니다.",
+          "db_saved": true
+        },
+        {
+          "title": "Base Interest Rate Frozen for '8th Consecutive Time'.. This Year's Growth Forecast Up from 2% to ...",
+          "video_id": "l63lVdSKs1Q",
+          "views": 559,
+          "upload_date": "2026-05-28",
+          "url": "https://www.youtube.com/watch?v=l63lVdSKs1Q",
+          "subtitle_summary": "1.  Analyze the Request:\nSource Material: A YouTube video transcript about the Bank of Korea freezing the base interest rate.\nTask: Summarize the transcript in Korean.\nLength: Around 500 characters (Korean characters).\nConstraints:\nMUST respond ONLY in Korean.\nDo NOT use English at all.\nSummarize core content in 3-5 sentences.\n2.  Analyze the Source Text:\nKey Event: Bank of Korea (BOK) froze the base interest rate at 2.5%.\nContext: 8th consecutive freeze since May last year. First meeting chaired by Governor Shin Hyun-song.\nReasons for Freeze: US-Iran war impact (inflation pressure), but growth is better than expected due to semiconductor exports. Middle East uncertainty remains high. Need to watch inflation, exchange rate volatility, and household debt.\nVoting: 5 out of 7 members voted for freeze; 2 members (Jang Yong-sung, Yoo Sang-dae) voted for a hike to 2.75%.\nEconomic Forecasts:\nGrowth rate: Raised from 2% to 2.6% (due to semiconductors and supplementary budget).\nInflation (Consumer & Core): Raised from 2.2%/2.1% to 2.7%/2.4% (due to oil prices and demand).\nFuture Policy: Will decide on rate hike timing after checking inflation pressure, economic improvement, and financial stability.\n3.  Drafting the Summary (Iterative Process):\nDraft 1 (Mental Outline): The Bank of Korea froze the base rate at 2.5% for the 8th time. They raised the growth forecast to 2.6% because of semiconductors. However, inflation is expected to rise due to oil prices, so forecasts were raised. Two members wanted a hike. The BOK will monitor the situation to decide on future hikes.\nDraft 2 (Translating to formal Korean & refining): 한국은행이 기준금리를 연 2.5%로 동결했습니다. 이는 지난해 5월 이후 8회 연속 동결입니다. 금통위는 반도체 수출 호조로 성장세가 확대되고 있지만, 중동 상황 등 불확실성과 물가 상승 압력을 고려해 동결을 결정했습니다. 이번 회의에서는 올해 경제성장률 전망치를 기존 2%에서 2.6%로 대폭 상향 조정했습니다. 반면 국제유가 상승 등의 영향으로 소비자 물가 상승률 전망치도 2.7%로 올렸습니다. 향후 물가와 금융안정 상황을 점검하며 금리 인상 시기를 결정하겠다는 입장을 밝혔습니다.\nChecking Constraints:\nKorean only? Yes.\nNo English? Yes.\nLength? Let's count characters.\n\"한국은행이 기준금리를 연 2.5%로 동결했습니다. 이는 지난해 5월 이후 8회 연속 동결입니다. 금통위는 반도체 수출 호조로 성장세가 확대되고 있지만, 중동 상황 등 불확실성과 물가 상승 압력을 고려해 동결을 결정했습니다. 이번 회의에서는 올해 경제성장률 전망치를 기존 2%에서 2.6%로 대폭 상향 조정했습니다. 반면 국제유가 상승 등의 영향으로 소비자 물가 상승률 전망치도 2.7%로 올렸습니다. 향후 물가와 금융안정 상황을 점검하며 금리 인상 시기를 결정하겠다는 입장을 밝혔습니다.\"\nCharacter count (including spaces): ~190 characters.\nThe prompt asks for \"500자 내외\" (around 500 characters). My draft is too short. I need",
+          "db_saved": true
+        }
+      ],
+      "max": 0.6364,
+      "min": 1.5423,
+      "nb_score": 0.4126,
+      "avg_views": 3752.0,
+      "total_views": 30016
+    },
+    {
+      "keyword": "주가조작",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "오늘 금시세",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "중국 조직원 고문살해",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "중기부 점프업",
+      "is_fixed": false,
+      "views": [
+        2
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "중견기업 문턱 낮춘다…중기부 '점프업' 100개사 추가 선정 [말하는 기자들_자본시장정책_0528]",
+          "video_id": "Xl0Zdpv1hbQ",
+          "views": 2,
+          "upload_date": "2026-05-28",
+          "url": "https://www.youtube.com/watch?v=Xl0Zdpv1hbQ",
+          "subtitle_summary": "1.  Analyze the Request:\nTask: Summarize the provided YouTube video transcript in Korean.\nLength: Approximately 500 characters (Korean characters).\nConstraint 1: MUST respond ONLY in Korean.\nConstraint 2: Do NOT use English at all.\nConstraint 3: 500 characters (give or take).\nConstraint 4: Summarize core content in 3-5 sentences.\nSource Material: A transcript about the Ministry of SMEs and Startups (MSS) selecting 100 additional companies for the \"Jump Up\" program to support their growth into mid-sized companies.\n2.  Analyze the Source Text:\nKey Event: Ministry of SMEs and Startups (MSS) selected 100 additional companies for the \"Jump Up\" program.\nPurpose: To support high-potential small and medium enterprises (SMEs) in growing into mid-sized companies by helping them enter new businesses and markets.\nSelection Details: Competition ratio over 5:1. Fields include advanced manufacturing, bio-healthcare, AI.\nEvent Activities: Town hall meeting held. Shared on-site difficulties and regulatory improvement tasks. Provided consulting on export finance and policy linkage.\nMinister's Statement: Minister Han Sung-sook emphasized a shift from simple support to growth-oriented policy. Jump Up is a key project.\nFuture Plan: Next year, the support system will be subdivided based on company scale and growth stage.\n3.  Drafting the Summary (Iterative Process):\nDraft 1 (Mental Outline): 중기부가 점프업 프로그램으로 100개사를 추가 선정했다. 이 프로그램은 업력 7년 이상 중기업이 중견기업으로 도약하도록 돕는다. 첨단 분야 기업들이 많이 뽑혔다. 장관은 성장 중심 정책 전환을 강조했다. 내년부터는 지원 체계를 세분화하겠다고 했다.\nDraft 2 (Expanding to meet length requirements and sentence structure):\n중소벤처기업부가 성장 가능성이 높은 중기업 100개사를 '점프업' 프로그램에 추가 선정하며 중견기업 도약 지원에 적극적으로 나섰습니다. 점프업 프로그램은 업력 7년 이상의 중기업을 대상으로 신사업 진출 등을 집중 지원해 중견기업으로의 성장을 돕는 핵심 사업으로, 이번에는 첨단 제조와 바이오, 인공지능 분야 기업들이 대거 포함되었습니다. 한성숙 중기부 장관은 중소벤처 기업 정책이 단순 지원에서 성장 중심으로 전환해야 한다고 강조하며, 이 프로그램이 그 핵심임을 천명했습니다. 아울러 내년부터는 기업의 규모와 성장 단계에 맞춘 세분화된 지원 체계를 구축해 실질적인 기업 성장을 뒷받침하겠다는 계획을 밝혔습니다.\n4.  Review and Refine (Checking Constraints):\nLanguage: Korean only? Yes.\nEnglish: None? Yes.\nSentence Count: 4 sentences. (Fits 3-5 sentences rule).\nCharacter Count Check:\nSentence 1: 중소벤처기업부가 성장 가능성이 높은 중기업 100개사를 '점프업' 프로그램에 추가 선정하며 중견기업 도약 지원에 적극적으로 나섰습니다. (59 chars)\nSentence 2: 점프업 프로그램은 업력 7년 이상의 중기업을 대상으로 신사업 진출 등을 집중 지원해 중견기업으로의 성장을 돕는 핵심 사업으로, 이번에는 첨단 제조와 바이오, 인공지능 분야 기업들이 대거 포함되었습니다. (88 chars)",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "타워크레인 노조 파업",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "서소문 참사 중처법",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "부산 저출생 공약",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "SPNS TV 크리에이팅",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "사전투표 신분증 필수",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "반도체 벨트 아파트값",
+      "is_fixed": false,
+      "views": [
+        213
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "서울 아파트값 0.25%↑…동탄 '역대 최고치' / 연합뉴스TV (YonhapnewsTV)",
+          "video_id": "JlIh-EZ9bg0",
+          "views": 213,
+          "upload_date": "2026-05-28",
+          "url": "https://www.youtube.com/watch?v=JlIh-EZ9bg0",
+          "subtitle_summary": "1.  Analyze the Request:\nSource Material: A YouTube video transcript about Seoul apartment prices rising by 0.25% and Dongtan hitting a record high.\nTask: Summarize the transcript in Korean.\nLength: Around 500 characters (Korean characters).\nConstraints:\nMUST respond ONLY in Korean.\nDo NOT use English at all.\nSummarize core content in 3-5 sentences.\nInput Text Analysis:\nSeoul apartment price rise slowed slightly (from 0.31% last week to 0.25% this week).\nContext: Before the implementation of the heavy taxation on multi-homeowners.\nReason: Localized rises in reconstruction zones/large complexes, but overall market is pausing due to wait-and-see attitude.\nHwaseong-Dongtan (semiconductor belt area): Prices rose 0.49%, hitting a record weekly high.\n2.  Drafting the Summary (Internal Monologue/Trial):\nSentence 1 (Seoul Market Trend): 서울 아파트값 상승폭이 다주택자 양도소득세 중과 시행을 앞두고 확대되던 흐름 속에서 소폭 둔화되었습니다. (Seoul apartment price rise slightly slowed amidst the trend expanding before the multi-homeowner capital gains tax implementation.)\nSentence 2 (Specific Data): 한국부동산원 발표에 따르면 5월 넷째 주 서울 아파트값 상승률은 전주의 0.31%에서 0.25%로 줄어들었습니다. (According to Korea Real Estate Board, 4th week of May Seoul apartment price rise decreased from 0.31% to 0.25%.)\nSentence 3 (Analysis): 재건축 단지와 대단지 위주로 국지적 상승이 있었으나, 나머지 지역은 매매 당사자들의 관망세로 거래가 주춤한 것이 원인으로 분석됩니다. (Analyzed that while there were localized rises centered on reconstruction/large complexes, transactions slowed in other areas due to wait-and-see attitude.)\nSentence 4 (Dongtan Highlight): 반면 반도체 벨트 지역인 화성동탄은 아파트값이 0.49% 급등하며 역대 최고 주간 상승률을 경신해 눈길을 끕니다. (On the other hand, Hwaseong-Dongtan, a semiconductor belt area, drew attention by jumping 0.49% and renewing the record weekly high.)\n3.  Refining and Checking Constraints:\nLanguage: Korean only? Yes.\nEnglish: None? Yes.\nLength: Let's check the character count.\nDraft: 서울 아파트값 상승폭이 다주택자 양도소득세 중과 시행을 앞두고 확대되던 흐름 속에서 소폭 둔화되었습니다. 한국부동산원 발표에 따르면 5월 넷째 주 서울 아파트값 상승률은 전주의 0.31%에서 0.25%로 줄어들었습니다. 재건축 단지와 대단지 위주로 국지적 상승이 있었으나, 나머지 지역은 매매 당사자들의 관망세로 거래가 주춤한 것이 원인으로 분석됩니다. 반면 반도체 벨트 지역인 화성동탄은 아파트값이 0.49% 급등하며 역대 최고 주간 상승률을 경신해 눈길을 끕니다.\nCharacter count (including spaces): Approx 230 characters.\nAdjustment: The prompt asks for \"500자 내외\" (around 500 characters). My draft is a bit short (around 230). I need to expand slightly to meet the length requirement better, perhaps by adding more detail from the source text or elaborating on the context, while keeping it within 3-5 sentences.\n4.  Expanding the Draft:\nSentence 1",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    }
+  ]
+}

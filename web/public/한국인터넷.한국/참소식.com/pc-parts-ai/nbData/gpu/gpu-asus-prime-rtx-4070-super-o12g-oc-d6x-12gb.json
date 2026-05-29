@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-28T13:52:33.150+09:00",
+  "updatedAt": "2026-05-29T15:16:59.186+09:00",
   "category": "GPU",
   "id": "gpu-asus-prime-rtx-4070-super-o12g-oc-d6x-12gb",
   "name": "ASUS PRIME 지포스 RTX 4070 SUPER O12G OC D6X 12GB",
@@ -81,5 +81,9 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=ASUS%20%EC%A7%80%ED%8F%AC%EC%8A%A4%20RTX%204070%20SUPER%20%EC%B5%9C%EC%A0%80%EA%B0%80",
   "notes": "Prime series model",
-  "textRepair": null
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
 }

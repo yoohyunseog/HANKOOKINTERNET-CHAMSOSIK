@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-28T13:52:33.150+09:00",
+  "updatedAt": "2026-05-29T15:16:57.766+09:00",
   "category": "CPU",
   "id": "cpu-amd-9-7900x3d",
   "name": "AMD 라이젠 9 7900X3D",
@@ -81,5 +81,9 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=AMD%20%EB%9D%BC%EC%9D%B4%EC%A0%A0%209%207900X3D%20%EC%B5%9C%EC%A0%80%EA%B0%80",
   "notes": "X3D series for high-performance gaming and productivity.",
-  "textRepair": null
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
 }

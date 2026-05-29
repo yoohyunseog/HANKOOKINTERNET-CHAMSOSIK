@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-28T13:52:33.150+09:00",
+  "updatedAt": "2026-05-29T15:17:00.340+09:00",
   "category": "GPU",
   "id": "gpu-geforce-rtx-4090-gaming-x-slim-d6x-24gb-tri-frozr-3",
   "name": "GeForce RTX 4090 Gaming X Slim D6X 24GB Tri Frozr 3",
@@ -82,5 +82,9 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=GeForce%20RTX%204090%20MSI%20Gaming%20X%20Slim%20%EC%B5%9C%EC%A0%80%EA%B0%80",
   "notes": "Slim version of the Gaming X series",
-  "textRepair": null
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
 }

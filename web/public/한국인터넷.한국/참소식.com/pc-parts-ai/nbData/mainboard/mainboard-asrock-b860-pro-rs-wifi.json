@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-28T13:52:33.150+09:00",
+  "updatedAt": "2026-05-29T15:17:02.672+09:00",
   "category": "Mainboard",
   "id": "mainboard-asrock-b860-pro-rs-wifi",
   "name": "ASRock B860 Pro RS WiFi",
@@ -21,7 +21,7 @@
   "performance": 60,
   "valueIndex": 22.3,
   "aiUseScore": 39,
-  "powerWatts": null,
+  "powerWatts": 0,
   "tags": [
     "WiFi",
     "Intel"
@@ -82,10 +82,14 @@
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=B860%20%EB%A9%94%EC%9D%B8%EB%B3%B4%EB%93%9C%20%EC%B5%9C%EC%A0%80%EA%B0%80",
   "notes": "ASRock B860 Pro RS WiFi은 CPU 소켓, 메모리 규격, 확장성을 함께 확인할 메인보드 후보입니다.",
   "textRepair": {
-    "checkedAt": "2026-05-28T13:52:36.254+09:00",
+    "checkedAt": "2026-05-29T15:17:02.672+09:00",
     "method": "ai-text-sanity-rules",
     "repairedFields": [
       "notes"
     ]
-  }
+  },
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
 }

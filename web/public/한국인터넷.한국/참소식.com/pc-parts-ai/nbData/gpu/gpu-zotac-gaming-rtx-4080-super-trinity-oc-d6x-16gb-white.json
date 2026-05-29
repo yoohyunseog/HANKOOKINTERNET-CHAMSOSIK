@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-28T13:52:33.150+09:00",
+  "updatedAt": "2026-05-29T15:17:02.287+09:00",
   "category": "GPU",
   "id": "gpu-zotac-gaming-rtx-4080-super-trinity-oc-d6x-16gb-white",
   "name": "ZOTAC GAMING 지포스 RTX 4080 SUPER Trinity OC D6X 16GB White",
@@ -81,5 +81,9 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=RTX%204080%20Super%20ZOTAC%20GAMING%20OC",
   "notes": "Trinity OC White Edition",
-  "textRepair": null
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
 }

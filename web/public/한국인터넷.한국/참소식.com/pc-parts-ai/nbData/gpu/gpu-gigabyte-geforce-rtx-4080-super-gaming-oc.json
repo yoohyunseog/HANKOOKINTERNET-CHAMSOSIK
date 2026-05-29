@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-28T13:52:33.150+09:00",
+  "updatedAt": "2026-05-29T15:17:00.954+09:00",
   "category": "GPU",
   "id": "gpu-gigabyte-geforce-rtx-4080-super-gaming-oc",
   "name": "Gigabyte GeForce RTX 4080 Super Gaming OC",
@@ -82,5 +82,9 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Gigabyte%20GeForce%20RTX%204080%20Super%20Gaming%20OC%20%EC%B5%9C%EC%A0%80%EA%B0%80",
   "notes": "Verified multiple distributors (JC 현, PC Direct) with prices around 1.8M KRW.",
-  "textRepair": null
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
 }

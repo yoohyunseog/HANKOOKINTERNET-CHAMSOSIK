@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-28T13:52:33.150+09:00",
+  "updatedAt": "2026-05-29T15:17:02.128+09:00",
   "category": "GPU",
   "id": "gpu-tuf-gaming-geforce-rtx-4070-ti-super-btf-white-oc",
   "name": "TUF Gaming GeForce RTX 4070 Ti SUPER BTF White OC",
@@ -82,5 +82,9 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=ASUS%20TUF%20Gaming%20GeForce%20RTX%204070%20Ti%20SUPER%20BTF%20White%20OC%20%EC%B5%9C%EC%A0%80%EA%B0%80",
   "notes": "BTF (Back-to-the-Future) design for hidden cabling, requires compatible BTF motherboard.",
-  "textRepair": null
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
 }

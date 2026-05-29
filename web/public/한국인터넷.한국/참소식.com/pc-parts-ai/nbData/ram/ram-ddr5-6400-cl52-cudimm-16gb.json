@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-28T13:52:33.150+09:00",
+  "updatedAt": "2026-05-29T15:17:03.011+09:00",
   "category": "RAM",
   "id": "ram-ddr5-6400-cl52-cudimm-16gb",
   "name": "삼성전자 DDR5-6400 CL52 CUDIMM 16GB",
@@ -81,5 +81,9 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90%20DDR5-6400%20CL52%20CUDIMM%2016GB%20%EA%B0%80%EA%B2%A9",
   "notes": "16GB capacity variant of the CUDIMM 6400MHz series",
-  "textRepair": null
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
 }

@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-28T13:52:33.150+09:00",
+  "updatedAt": "2026-05-29T15:17:02.915+09:00",
   "category": "PSU",
   "id": "psu-corsair-rm1000x-shift-atx-3.1",
   "name": "Corsair RM1000x Shift ATX 3.1",
@@ -81,5 +81,9 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Corsair%20RM1000x%20Shift%20ATX%203.1%20price",
   "notes": "Features side-interface connectors for easier cable management.",
-  "textRepair": null
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
 }

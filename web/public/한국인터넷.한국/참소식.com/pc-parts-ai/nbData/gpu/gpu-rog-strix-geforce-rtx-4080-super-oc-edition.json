@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-28T13:52:33.150+09:00",
+  "updatedAt": "2026-05-29T15:17:01.986+09:00",
   "category": "GPU",
   "id": "gpu-rog-strix-geforce-rtx-4080-super-oc-edition",
   "name": "ROG Strix GeForce RTX 4080 SUPER OC Edition",
@@ -81,5 +81,9 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=ASUS%20ROG%20Strix%20GeForce%20RTX%204080%20SUPER%20%EC%B5%9C%EC%A0%80%EA%B0%80%20%EB%8B%A4%EB%82%98%EC%99%80",
   "notes": "Collected from observed overseas listing price on Danawa.",
-  "textRepair": null
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
 }

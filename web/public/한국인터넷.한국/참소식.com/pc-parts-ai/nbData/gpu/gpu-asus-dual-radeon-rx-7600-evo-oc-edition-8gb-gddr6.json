@@ -1,0 +1,88 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-05-29T15:16:59.161+09:00",
+  "category": "GPU",
+  "id": "gpu-asus-dual-radeon-rx-7600-evo-oc-edition-8gb-gddr6",
+  "name": "ASUS Dual Radeon RX 7600 EVO OC Edition 8GB GDDR6",
+  "maker": "ASUS",
+  "platform": "PCIe",
+  "estimatedPriceKrw": 423950,
+  "priceBand": "30~60만원",
+  "speedLabel": "OC",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "GPU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 55,
+  "valueIndex": 13,
+  "aiUseScore": 36,
+  "powerWatts": 165,
+  "tags": [
+    "gaming"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "GPU",
+    "partId": "gpu-asus-dual-radeon-rx-7600-evo-oc-edition-8gb-gddr6",
+    "partName": "ASUS Dual Radeon RX 7600 EVO OC Edition 8GB GDDR6",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "GPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 550,
+      "value": 173,
+      "aiFit": 360,
+      "priceEfficiency": 240,
+      "powerEfficiency": 111
+    },
+    "nbVector": [
+      100,
+      550,
+      173,
+      360,
+      240,
+      111
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 156.809,
+    "nbMin": 402.869,
+    "weightedScore": 238,
+    "nbBand": "100~499",
+    "summary": "GPU ASUS Dual Radeon RX 7600 EVO OC Edition 8GB GDDR6 부품을 속도 중심 N/B 데이터베이스 점수 238점으로 저장했습니다."
+  },
+  "nbWeightedScore": 238,
+  "nbMax": 156.809,
+  "nbMin": 402.869,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Radeon%20RX%207600%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "Model: DUAL-RX7600-O8G-EVO",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

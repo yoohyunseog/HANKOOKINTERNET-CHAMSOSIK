@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-28T13:52:33.150+09:00",
+  "updatedAt": "2026-05-29T15:17:03.146+09:00",
   "category": "SSD",
   "id": "ssd-crucial-t705-1tb",
   "name": "Crucial T705 1TB",
@@ -21,7 +21,7 @@
   "performance": 98,
   "valueIndex": 31.1,
   "aiUseScore": 64,
-  "powerWatts": null,
+  "powerWatts": 0,
   "tags": [
     "Gen5",
     "NVMe"
@@ -81,5 +81,9 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Crucial%20T705%201TB%20price",
   "notes": "PCIe 5.0x4, TLC, DRAM 1GB",
-  "textRepair": null
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
 }

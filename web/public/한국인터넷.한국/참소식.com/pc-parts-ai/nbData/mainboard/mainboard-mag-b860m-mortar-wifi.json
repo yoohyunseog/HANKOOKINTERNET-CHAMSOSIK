@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-28T13:52:33.150+09:00",
+  "updatedAt": "2026-05-29T15:17:02.763+09:00",
   "category": "Mainboard",
   "id": "mainboard-mag-b860m-mortar-wifi",
   "name": "MAG B860M Mortar WIFI",
@@ -21,7 +21,7 @@
   "performance": 75,
   "valueIndex": 27.5,
   "aiUseScore": 49,
-  "powerWatts": null,
+  "powerWatts": 0,
   "tags": [
     "mATX",
     "DDR5",
@@ -82,5 +82,9 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=MSI%20MAG%20B860M%20Mortar%20WIFI%20%EC%B5%9C%EC%A0%80%EA%B0%80",
   "notes": "Compatible with Intel Core Ultra Series 2",
-  "textRepair": null
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
 }

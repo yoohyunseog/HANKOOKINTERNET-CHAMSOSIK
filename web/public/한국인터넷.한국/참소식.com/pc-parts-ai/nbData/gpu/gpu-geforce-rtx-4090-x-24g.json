@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-28T13:52:33.150+09:00",
+  "updatedAt": "2026-05-29T15:17:00.306+09:00",
   "category": "GPU",
   "id": "gpu-geforce-rtx-4090-x-24g",
   "name": "GeForce RTX 4090 게이밍 X 슬림 24G",
@@ -82,5 +82,9 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=GeForce%20RTX%204090%20%EC%B5%9C%EC%A0%80%EA%B0%80",
   "notes": "MSI Gaming X Slim model",
-  "textRepair": null
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
 }

@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-28T13:52:33.150+09:00",
+  "updatedAt": "2026-05-29T15:17:00.674+09:00",
   "category": "GPU",
   "id": "gpu-gigabyte-rtx-4070-super-oc-12g",
   "name": "GIGABYTE 지포스 RTX 4070 SUPER 윈드포스 OC 12G",
@@ -80,5 +80,9 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=RTX%204070%20SUPER%20%EC%B5%9C%EC%A0%80%EA%B0%80",
   "notes": "Model: GVN407SWF3OC12GD",
-  "textRepair": null
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
 }

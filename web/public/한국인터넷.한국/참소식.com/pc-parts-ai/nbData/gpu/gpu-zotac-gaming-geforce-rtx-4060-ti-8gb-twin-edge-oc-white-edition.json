@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-28T13:52:33.150+09:00",
+  "updatedAt": "2026-05-29T15:17:02.377+09:00",
   "category": "GPU",
   "id": "gpu-zotac-gaming-geforce-rtx-4060-ti-8gb-twin-edge-oc-white-edition",
   "name": "ZOTAC Gaming GeForce RTX 4060 Ti 8GB Twin Edge OC White Edition",
@@ -81,5 +81,9 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=ZOTAC%20Gaming%20GeForce%20RTX%204060%20Ti%208GB%20Twin%20Edge%20OC%20White%20Edition%20%EC%B5%9C%EC%A0%80%EA%B0%80%20%EB%8B%A4%EB%82%98%EC%99%80",
   "notes": "White Edition of the Twin Edge OC model.",
-  "textRepair": null
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
 }

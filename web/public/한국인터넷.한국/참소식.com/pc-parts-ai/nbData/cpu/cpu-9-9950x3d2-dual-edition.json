@@ -1,0 +1,90 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-05-29T15:16:57.564+09:00",
+  "category": "CPU",
+  "id": "cpu-9-9950x3d2-dual-edition",
+  "name": "라이젠 9 9950X3D2 Dual Edition",
+  "maker": "AMD",
+  "platform": "AM5",
+  "estimatedPriceKrw": 1500660,
+  "priceBand": "60만원 이상",
+  "speedLabel": "5.6GHz",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "CPU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 99,
+  "valueIndex": 6.6,
+  "aiUseScore": 64,
+  "powerWatts": 120,
+  "tags": [
+    "gaming",
+    "workstation",
+    "high-end"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "CPU",
+    "partId": "cpu-9-9950x3d2-dual-edition",
+    "partName": "라이젠 9 9950X3D2 Dual Edition",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "CPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 990,
+      "value": 100,
+      "aiFit": 640,
+      "priceEfficiency": 70,
+      "powerEfficiency": 275
+    },
+    "nbVector": [
+      100,
+      990,
+      100,
+      640,
+      70,
+      275
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 129.133,
+    "nbMin": 311.726,
+    "weightedScore": 340,
+    "nbBand": "100~499",
+    "summary": "CPU 라이젠 9 9950X3D2 Dual Edition 부품을 속도 중심 N/B 데이터베이스 점수 340점으로 저장했습니다."
+  },
+  "nbWeightedScore": 340,
+  "nbMax": 129.133,
+  "nbMin": 311.726,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=AMD%20%EB%9D%BC%EC%9D%B4%EC%A0%A0%209%209950X%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "Observed as a Dual Edition multi-pack",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

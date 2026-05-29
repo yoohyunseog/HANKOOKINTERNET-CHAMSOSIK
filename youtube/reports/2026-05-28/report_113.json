@@ -1,0 +1,323 @@
+{
+  "timestamp": "2026-05-28T20:43:14.694826",
+  "model": "glm-5:cloud",
+  "keyword_count": 3,
+  "analyze_subtitles": true,
+  "analysis_source": "youtube",
+  "keywords": [
+    {
+      "keyword": "오늘의 주요 뉴스",
+      "is_fixed": true,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "지지율",
+      "is_fixed": false,
+      "views": [
+        5683,
+        2172
+      ],
+      "video_count": 2,
+      "videos": [
+        {
+          "title": "[뉴스나우] 지방선거 D-6, 여론조사 공표 금지 마지막 여론은? / YTN",
+          "video_id": "ttJY-REqxpk",
+          "views": 5683,
+          "upload_date": "2026-05-28",
+          "url": "https://www.youtube.com/watch?v=ttJY-REqxpk",
+          "subtitle_summary": "The user wants a summary of a YouTube video transcript in Korean, around 500 characters, without using any English.\n1. Analyze the Input:\nTitle: [뉴스나우] 지방선거 D-6, 여론조사 공표 금지 마지막 여론은? / YTN (News Now: D-6 before local elections, last public opinion before poll result ban / YTN)\nTranscript Content:\nContext: D-6 before local elections, entering the blackout period for poll results. Early voting starts tomorrow.\nGuests: Kim Jin-wook (Democratic Party special advisor on media) and Kim Ki-heung (People Power Party media spokesperson).\nTopic 1: Lee Jae-myung (referred to as \"President\" in the transcript, likely a slip of the tongue or specific context of the video title/description, but in reality, he is the leader of the Democratic Party. Wait, the transcript says \"Lee Jae-myung President\" (이재명 대통령). This is factually incorrect in the real world (Yoon Seok-youl was President at the time of this context, likely 2022 local elections based on the \"D-6\" and names involved). However, the transcript explicitly says \"Lee Jae-myung President\" multiple times. I must summarize what is in the text, but I should probably be careful not to propagate obvious factual errors if it makes the summary nonsensical, or just refer to him as \"Lee Jae-myung\" to be safe. Actually, looking closely at the transcript, it says \"Lee Jae-myung President\" (이재명 대통령). This is very strange. Let's re-read. Ah, later it mentions \"Yoon Seok-youl former President\" (윤성열 전 대통령). This transcript seems to be a garbled or error-filled ASR (Automatic Speech Recognition) output.\nCorrection/Contextualization: In 2022 (local elections), Lee Jae-myung was the Democratic Party leader (candidate for Governor of Gyeonggi or similar role previously, but here he is the party leader). Yoon Seok-youl was the President. The transcript calls Lee \"President\" and Yoon \"Former President\". This is highly likely an error in the provided text. I should summarize the arguments rather than focusing on the titles which are clearly wrong in the provided text.\nArgument 1 (PPP Spokesperson Kim Ki-heung?): Criticizes Lee Jae-myung's visit to Busan for \"Sea Day\". Claims it's a \"Myung-pick\" (Lee Jae-myung's pick) situation where he interfered in primaries (Seoul Mayor, Incheon Mayor, etc.). Mentions the Seosomun accident and criticizes him for eating at Jagalchi Market.\nArgument 2 (Democratic Party Advisor Kim Jin-wook?): Defends Lee Jae-myung. Says he doesn't agree with the claim of election interference. Says he just attended the Sea Day event. Argues that the President shouldn't stop state affairs during election periods. Counters by mentioning \"Former President Yoon\" (likely referring to Yoon Seok-youl when he was a candidate or President-elect, or the transcript is messed up regarding titles) holding policy debates before the general election and spending 100 trillion won, which was criticized as election interference.\n2. Draft the Summary (Internal Monologue):\nKey Point 1: The video discusses the local election landscape as the blackout period for polls begins and early voting approaches.\nKey Point 2: The opposition (PPP side) criticizes Lee Jae-myung's Busan visit as election interference and \"Myung-picking\" candidates, questioning his sensitivity regarding recent events like the Seosomun accident.\nKey Point 3: The ruling party (Democratic Party side - wait, usually PPP is ruling in 2022, but here the titles are confusing. Let's look at the names. Kim Jin-wook is Democratic Party. Kim Ki-heung is PPP. The transcript says \"Lee Jae-myung President\". This implies the transcript might be from a future scenario or just wrong. Actually, looking at the context \"Yoon Seok-youl former President\", this transcript is extremely garbled. Let's focus on the content of the debate.)\nRefined Content:\nGuest A (PPP): Criticizes Lee Jae-myung for being too involved in candidate selection (\"Myung-pick\") and visiting Busan under the guise of an event while being insensitive to national issues.\nGuest B (Democratic): Defends Lee",
+          "db_saved": true
+        },
+        {
+          "title": "[여론조사M] 오차범위 밖 or 접전! 강원도지사 선거, 시·군별로 뒤집힌 민심은 어디? #여론조사 #강원선거 #강원민심 #강원도지사 #김진태 #우상호",
+          "video_id": "FFMs2YSiNJE",
+          "views": 2172,
+          "upload_date": "2026-05-28",
+          "url": "https://www.youtube.com/watch?v=FFMs2YSiNJE",
+          "subtitle_summary": "1.  Analyze the Request:\nSource Material: A YouTube video transcript about a poll for the Gangwon-do Governor election (candidates: Woo Sang-ho vs. Kim Jin-tae).\nTask: Summarize the transcript in Korean.\nLength: Around 500 characters (Korean characters).\nConstraints: MUST respond ONLY in Korean. Do NOT use English. Summarize key points in 3-5 sentences.\nContent Analysis:\nThe transcript lists poll results for various cities and counties in Gangwon-do.\nWoo Sang-ho (Democratic Party) leading outside margin of error: Chuncheon, Wonju, Sokcho, Cheorwon, Hwacheon.\nWoo Sang-ho leading but close race (within margin of error or slight lead): Gangneung, Donghae, Hongcheon, Inje.\nKim Jin-tae (People Power Party) leading: Samcheok (outside margin), Taebaek (close race), Pyeongchang (outside margin), Hoengseong (outside margin).\nClose race (Tie): Yeongwol, Yangyang.\n2.  Drafting the Summary (Iterative Process):\nAttempt 1 (Mental Outline):\n강원도지사 선거 여론조사 결과를 지역별로 정리했다. 춘천, 원주, 속초, 철원, 화천에서는 더불어민주당 우상호 후보가 오차범위 밖에서 앞섰다. 반면 삼척, 평창, 횡성에서는 국민의힘 김진태 후보가 우세했다. 강릉, 동해, 태백 등은 접전 양상을 보였고, 영월은 박빙이었다. 전반적으로 도시 지역에서는 우상호 후보가, 일부 군 지역에서는 김진태 후보가 강세를 보이며 지역별로 엇갈린 민심이 나타났다.\nRefining for Detail and Accuracy (Checking numbers/regions from transcript):\nWoo leads outside error: Chuncheon, Wonju, Sokcho, Cheorwon, Hwacheon.\nKim leads outside error: Samcheok, Pyeongchang, Hoengseong.\nClose/Tight races: Gangneung (Woo slight lead), Donghae (Woo slight lead), Hongcheon (Woo slight lead but not outside error? Transcript says \"not error range\" - wait, let's re-read. \"역시 5차 범위 아니었습니다\" usually means \"not outside error range\" implying it's close, or it could mean \"not inside error range\" depending on context. Usually \"오차범위 밖\" is clear lead. \"오차범위 내\" is close. The transcript has some typos like \"5차 범인의\" which likely means \"오차범위 내\" (within margin of error) or \"오차범위 밖\" (outside). Let's interpret based on the gap size.\nChuncheon: Woo 48.5 vs Kim 36.1 (Gap 12.4) -> Outside error. Correct.\nWonju: Woo 46.4 vs Kim 32.5 (Gap 13.9) -> Outside error. Correct.\nGangneung: Woo 43.8 vs Kim 36.5 (Gap 7.3) -> Transcript says \"접전을 버리고 있습니다\" (waiting for clarification? No, likely \"접전 양상입니다\"). Gap is small. Likely close race.\nSokcho: Woo 48.8 vs Kim 34.0 (Gap 14.8) -> Outside error. Correct.\nDonghae: Woo 40.2 vs Kim 36.2 (Gap 4.0) -> Close race.\nHongcheon: Woo 45.7 vs Kim 38.0 (Gap 7.7) -> Transcript says \"역시 5차 범위 아니었습니다\". This phrasing is tricky. Usually \"오차범위 밖이 아니었습니다\" means it's within error range (close). Or it could mean \"오차범위 밖에서 앞섰습니다\" but the transcript is garbled. Given",
+          "db_saved": true
+        }
+      ],
+      "max": 3.1434,
+      "min": 0.1786,
+      "nb_score": 17.6041,
+      "avg_views": 3927.5,
+      "total_views": 7855
+    },
+    {
+      "keyword": "지방선거 사전투표 현황",
+      "is_fixed": false,
+      "views": [
+        924,
+        76
+      ],
+      "video_count": 2,
+      "videos": [
+        {
+          "title": "'Local Election Early Voting', 29th–30th from 6 AM to 6 PM / Channel A / News A Live",
+          "video_id": "t3T4onomLaw",
+          "views": 924,
+          "upload_date": "2026-05-28",
+          "url": "https://www.youtube.com/watch?v=t3T4onomLaw",
+          "subtitle_summary": "1.  Analyze the Request:\nSource Material: A YouTube video transcript (Thai/English intro mixed with Korean content) about the \"Local Election Early Voting\".\nTask: Summarize the transcript in Korean.\nLength: Around 500 characters (Korean characters).\nConstraint: MUST respond ONLY in Korean. NO English allowed.\nStructure: 3-5 sentences for the core summary.\n2.  Analyze the Source Text:\nIntro: Mentions the 9th Nationwide Simultaneous Local Election and National Assembly By-election early voting starts tomorrow (May 29th-30th, 6 AM to 6 PM).\nPurpose: Encourages people to vote early if they can't vote on election day (e.g., business trips).\nRequirements: Bring ID. Decide who to vote for beforehand (don't just vote blindly).\nLocation: Can vote at any polling place, not just in your neighborhood (though the transcript mentions \"dong office\" or nearby places, the key is accessibility).\nSecurity: Ballot boxes are monitored by CCTV 24/7 to ensure transparency.\nBallot Details: There are 7 ballot papers in most places, 8 in areas with by-elections. Voters must stamp one candidate per ballot paper.\nSpecific Warning: For the \"Proportional Representation\" (implied by \"Basic Assembly members\" context) or specific elections where 2 members are elected, voters still only vote for one person per ballot, not two. (Transcript clarifies: \"Don't stamp two people... just one person\").\nProhibition: Do not take photos (certification shots) inside the polling booth as it leads to criminal punishment.\n3.  Drafting the Summary (Internal Monologue/Rough Draft):\nSentence 1 (Dates & Times): The 9th Nationwide Local Election and National Assembly By-election early voting takes place on the 29th and 30th from 6 AM to 6 PM.\nSentence 2 (Preparation & Process): Voters need to bring a photo ID and can vote at any polling place nationwide, with ballot boxes monitored 24/7 via CCTV for transparency.\nSentence 3 (Ballot Specifics): Voters will receive either 7 or 8 ballot papers depending on their district, and must stamp only one candidate per sheet, being careful not to mark two candidates even in districts electing two representatives.\nSentence 4 (Warnings): Finally, voters are strictly prohibited from taking photos inside the polling booth to prove they voted, as this can result in criminal penalties.\n4.  Refining and Translating to Korean (Targeting ~500 characters):\nDraft 1:\n제9회 전국 동시 지방 선거와 국회의원 재보궐 선거 사전 투표가 29일과 30일 이틀간 오전 6시부터 오후 6시까지 진행됩니다. 선거 당일 투표가 어려운 유권자는 신분증을 지참해 전국 어디서든 편리하게 투표할 수 있으며, 투표함은 CCTV로 24시간 공개되어 공정성을 확보합니다. 이번 선거는 투표 용지가 최대 8장인 곳도 있어 투표 방법에 주의가 필요한데, 중선거구제라도 투표 용지마다 반드시 한 명에게만 기표해야 합니다. 마지막으로 투표소 내에서 인증샷을 찍는 행위는 공직선거법 위반으로 형사 처벌을 받을 수 있으니 각별히 유의해야 합니다.\n5.  Checking Character Count and Constraints:\nDraft 1 Character Count: Approx 230 characters (including spaces). This is a bit short of \"500 characters\" (500 ja). The prompt asks for \"500자 내외\" (around 500 characters). Usually, in Korean summarization tasks, 500 characters is quite long for a short news clip summary, but I should expand slightly to add more detail from the transcript to meet the length requirement better, or ensure the content is dense.",
+          "db_saved": true
+        },
+        {
+          "title": "제9회 지방선거 사전투표 ‘D-1’…주의할 점은? / KBS  2026.05.28.",
+          "video_id": "bNaFq5DM5UM",
+          "views": 76,
+          "upload_date": "2026-05-28",
+          "url": "https://www.youtube.com/watch?v=bNaFq5DM5UM",
+          "subtitle_summary": "1.  Analyze the Request:\nSource Material: A YouTube video transcript about the upcoming 9th simultaneous local elections in South Korea (specifically focusing on Jeonbuk region, but applicable generally).\nTitle: \"제9회 지방선거 사전투표 ‘D-1’…주의할 점은? / KBS 2026.05.28.\" (Note: The date in the title says 2026, which seems futuristic or a typo in the user prompt, but I must treat the content as is. The content discusses the mechanics of voting).\nTask: Summarize the transcript in Korean.\nLength: Approximately 500 characters (Korean characters).\nConstraints: ONLY Korean, NO English, 3-5 sentences for the core summary.\nContent Analysis:\nDates: Early voting starts tomorrow for two days.\nTime: 6 AM to 6 PM.\nLocations: Can be found on the election commission website. Need ID (mobile ID okay, screenshots not okay).\nBallots: Usually 7 types (Governor, Mayor/County Head, Council District, Council Proportional, Superintendent of Education), but varies by region.\nKey Rule: Vote for one candidate per ballot paper, even if multiple seats are open in a district. Two marks = invalid vote.\nProhibitions: No photography inside voting stations (criminal penalty).\nFairness: Observers (citizens, academics) will monitor the process. Ballot boxes stored under CCTV.\nContext: Past turnout stats (2014 16%, 2018 27%, 2022 24%). Interest in this election's impact due to independent candidates.\n2.  Drafting the Summary (Iterative Process):\nDraft 1 (Mental Outline): Tomorrow starts the early voting for the 9th local elections. It runs for two days from 6 AM to 6 PM. You need an ID, and mobile IDs are accepted but screenshots are not. You usually get 7 ballot papers, but you must mark only one candidate per paper to avoid invalid votes. Photography is banned. Observers will monitor fairness, and ballot boxes are under CCTV. Turnout is a key point of interest this time.\nDraft 2 (Translating to formal Korean & adjusting length):\n제9회 동시 지방선거 사전투표가 내일부터 이틀간 오전 6시부터 오후 6시까지 진행됩니다. 유권자는 신분증을 반드시 지참해야 하며, 모바일 신분증은 가능하지만 캡처 사진은 인정되지 않습니다. 투표용지는 보통 7장이며, 한 선거구에서 여러 명을 뽑더라도 반드시 한 명에게만 기표해야 무효표를 면할 수 있습니다. 투표소 내 사진 촬영은 금지되어 있으며, 위반 시 처벌받을 수 있으니 주의해야 합니다. 공정 선거 참관단이 투표부터 개표까지 감시하고 투표함은 CCTV 하에 보관되어 투명성을 확보합니다. 이번 선거는 무소속 후보 출마 등으로 경쟁이 치열해 투표율이 결과에 미칠 영향이 주목됩니다.\nChecking Constraints:\nLanguage: Korean only? Yes.\nEnglish: None? Yes.\nLength: Let's count characters.\n\"제9회 동시 지방선거 사전투표가 내일부터 이틀간 오전 6시부터 오후 6시까지 진행됩니다.\" (39 chars)\n\"유권자는 신분증을 반드시 지참해야 하며, 모바일 신분증은 가능하지만 캡처 사진은 인정되지 않습니다.\" (46 chars)\n\"투표용지는 보통 7장이며, 한 선거구에서 여러 명을 뽑더라도 반드시 한 명에게만 기표해야 무효표를 면할 수 있습니다.\" (51 chars)\n\"투표소 내 사진 촬영은 금지되어 있",
+          "db_saved": true
+        }
+      ],
+      "max": 2.7917,
+      "min": 2.1964,
+      "nb_score": 1.271,
+      "avg_views": 500.0,
+      "total_views": 1000
+    },
+    {
+      "keyword": "국민연금 매도 우려",
+      "is_fixed": false,
+      "views": [
+        61,
+        11687,
+        1390,
+        4694
+      ],
+      "video_count": 4,
+      "videos": [
+        {
+          "title": "\"177조 원 매도 폭탄 터지나?\" 역사적 신고가 잔치 뒤에 숨은 국민연금 리밸런싱 공포!…주식 비중 최종 결정 결과는?!ㅣ오프닝벨🔔",
+          "video_id": "qOTeKKE5wsg",
+          "views": 61,
+          "upload_date": "2026-05-28",
+          "url": "https://www.youtube.com/watch?v=qOTeKKE5wsg",
+          "subtitle_summary": "The user wants a summary of the provided YouTube video transcript in Korean.\nThe summary should be around 500 characters (Korean characters).\nI must not use English at all.\nI need to summarize the core content in 3-5 sentences.\nTranscript Analysis:\n1.  Context: The National Pension Service (NPS) Fund Management Committee is deciding on asset allocation strategy for the next 5 years. The focus is on domestic stocks.\n2.  Problem: The KOSPI hit an all-time high (8,457 points). This increased the value of NPS's domestic stock holdings.\n3.  The \"Sell Bomb\" Fear: Currently, the domestic stock holding limit is 19.9%. The estimated value has risen to 29.7% of the total fund (about 535 trillion KRW). To meet the regulation, they would theoretically need to sell about 177 trillion KRW worth of stocks. This scares the market.\n4.  Proposed Solution: Raising the limit. Japan's example is cited (target 25%, upper limit 30%). A proposal to raise the target to 25% and the upper limit to 30% is being discussed. This would allow holding stocks without selling them.\n5.  Political/Government Stance: The President and relevant authorities support raising the limit to avoid mechanical selling during a bull market. They also consider the impact on currency value (selling stocks to buy dollars).\n6.  Criticism: There are concerns about risk management (tying too much pension money into the Korean market) and lack of transparency (non-public meetings, closed decision-making processes).\nDrafting the Summary (Internal Monologue/Trial):\nSentence 1 (Context & Problem): 국민연금 기금운용위원회가 향후 5년간 자산 배분 전략을 결정하는 가운데, 코스피 사상 최고가로 인해 국내 주식 비중이 상한선인 19.9%를 넘어설 것이라는 우려가 제기되었다.\nSentence 2 (The specific issue): 주가 상승으로 국민연금의 국내 주식 평가액이 늘어나, 원칙대로라면 약 177조 원어치의 주식을 매도해야 한다는 '매도 폭탄' 논란이 일고 있다.\nSentence 3 (Solution/Proposal): 이에 시장 안정을 위해 일본 사례를 참고하여 국내 주식 목표 비중을 25%로, 상한을 30%로 확대하는 방안이 검토되고 있으며, 정부와 정치권도 이를 지지하고 있다.\nSentence 4 (Counter-argument/Conclusion): 하지만 국민 노후 자금의 리스크 관리 문제와 비공개 회의 운영에 대한 비판도 존재하여, 최종 결정에 이목이 집중되고 있다.\nChecking Character Count:\nThe draft looks good. Let's refine it to fit the \"around 500 characters\" constraint (though usually, summaries are concise, 500 characters is quite generous for a 3-5 sentence summary, allowing for some detail).\nRefined Draft:\n국민연금 기금운용위원회가 향후 5년 자산 배분 전략을 결정하는 가운데, 코스피 사상 최고가 경신으로 인해 국내 주식 비중이 상한선인 19.9%를 넘어설 것이란 우려가 나왔다. 이에 따라 원칙상 약 177조 원 규모의 주식을 매도해야 한다는 '매도 폭탄' 공포가 시장을 긴장시키고 있다. 이를 해결하기 위해 일본 사례처럼 국내 주식 목표 비중을 25%로, 상한을 30%로 확대하는 방안이 거론되며 정부와 정치권도 한도 확대에 힘을 싣고 있다. 그러나 국민 노후 자금의 과도한 국내 집중에 대한 리스크 관리 우려와 폐쇄적 운영 논란 속에 최종 결정이 주목된다.\nCharacter Count Check:\nThe refined draft is approximately 250-300 characters (including spaces). The user asked for \"500자 내외\" (around 500 characters). Since 500 characters",
+          "db_saved": true
+        },
+        {
+          "title": "AI 투자 이제는 위험하다고? 그래도 결국 '반도체'가 갑니다ㅣ이완수 그레너리투자자문 대표",
+          "video_id": "xQWe8N2eQW8",
+          "views": 11687,
+          "upload_date": "2026-05-28",
+          "url": "https://www.youtube.com/watch?v=xQWe8N2eQW8",
+          "subtitle_summary": "1.  Analyze the Request:\nSource: YouTube video transcript (Title: AI 투자 이제는 위험하다고? 그래도 결국 '반도체'가 갑니다ㅣ이완수 그레너리투자자문 대표).\nTask: Summarize the transcript in Korean.\nLength: Approximately 500 characters (Korean characters).\nConstraints: MUST respond ONLY in Korean. Do NOT use English. 3-5 sentences for the core summary.\nContent Analysis: The transcript discusses the stock market reaction to geopolitical tensions (US-Iran conflict), oil prices, and potential negotiations. It mentions the KOSPI dropping and recovering, the impact of attacks on US bases/Kuwait, and the expert's view that negotiations are likely due to weakened hardliners in Iran after the US-China summit. It also touches on reduced dependence on the Persian Gulf for oil.\n2.  Drafting the Summary (Internal Monologue & Translation):\nKey Point 1: Market volatility due to US-Iran conflict. KOSPI dropped significantly but recovered somewhat.\nKey Point 2: Expert (Lee Wan-soo) sees a higher possibility of negotiation this time. Hardliners in Iran seem weakened after the US-China summit.\nKey Point 3: Oil prices are fluctuating due to geopolitical risks, but dependence on the Persian Gulf is decreasing, which might affect the negotiation dynamics.\nKey Point 4: The title mentions AI investment and semiconductors, but the provided transcript only covers the geopolitical situation and oil prices. I must summarize only the provided text, even if the title suggests a broader topic. The transcript cuts off abruptly at the end.\nDrafting sentences (Korean):\n최근 미국과 이란 간의 긴장으로 인해 코스피가 급락했다가 일부 회복되는 등 증시 변동성이 커지고 있습니다. 이완수 대표는 미중 정상회담 이후 이란 내 강경파의 입지가 좁아지면서 협상 타결 가능성이 이전보다 높다고 진단했습니다. 특히 페르시아만 원유 의존도가 낮아지고 있는 점과 강경파의 불규칙한 행보를 고려할 때, 결국 온건파와 중도파를 중심으로 합의가 이루어질 것이라는 전망을 내놓았습니다. 다만, 국지전 가능성과 유가 불안 요소는 여전히 시장에 영향을 주고 있어 투자자들의 주의가 필요합니다.\n3.  Refining and Checking Constraints:\nLanguage: Korean only? Yes.\nEnglish: None? Yes.\nLength: Let's check the character count.\n\"최근 미국과 이란 간의 긴장으로 인해 코스피가 급락했다가 일부 회복되는 등 증시 변동성이 커지고 있습니다. 이완수 대표는 미중 정상회담 이후 이란 내 강경파의 입지가 좁아지면서 협상 타결 가능성이 이전보다 높다고 진단했습니다. 특히 페르시아만 원유 의존도가 낮아지고 있는 점과 강경파의 불규칙한 행보를 고려할 때, 결국 온건파와 중도파를 중심으로 합의가 이루어질 것이라는 전망을 내놓았습니다. 다만, 국지전 가능성과 유가 불안 요소는 여전히 시장에 영향을 주고 있어 투자자들의 주의가 필요합니다.\"\n> Roughly 180-200 characters. This is a bit short for \"500ja nae-oe\" (around 500 characters). I need to expand slightly to meet the length requirement better, while keeping it within the \"around 500\" range (usually meaning 400-600 is acceptable, but 200 is too short).\nExpanding the draft:\n최근 미국과 이란 간의 군사적 긴장으로 아시아 증시가 요동쳤으며, 코스피",
+          "db_saved": true
+        },
+        {
+          "title": "[ 한미반도체 주가 전망 ] 우려하던게 터졌다! 美-이란 공습, 국민연금 255조 리밸런싱 매도 폭탄 임박!? 지금부터 무조건 이렇게 하세요",
+          "video_id": "jxFXPOU7OlE",
+          "views": 1390,
+          "upload_date": "2026-05-28",
+          "url": "https://www.youtube.com/watch?v=jxFXPOU7OlE",
+          "subtitle_summary": "1.  Analyze the Request:\nSource Material: A YouTube video transcript about Hanmi Semiconductor (한미반도체) stock price outlook.\nKey Topics: US-Iran airstrikes, National Pension Service (국민연금) rebalancing (selling pressure), recent stock volatility, investment strategy (buy vs. sell).\nConstraints:\nLanguage: Korean ONLY (no English).\nLength: Around 500 characters (500자 내외).\nStructure: Summarize core content in 3-5 sentences.\n2.  Analyze the Transcript Content:\nIntro: Hanmi Semiconductor is showing high volatility, causing anxiety for investors. It keeps dropping when it looks like it's going up.\nAdvice: Instead of selling at this point, the speaker advised a buying perspective.\nReason for Volatility (External): US airstrikes on Iran caused market instability, but this is seen as a negotiation tactic, not a full-scale war.\nKey Issue (Internal/Domestic): Major events today (Bank of Korea base rate, US GDP, PCE price index), but the most critical is the National Pension Service's rebalancing discussion.\nNational Pension Issue: KOSPI rose sharply, exceeding target ratios. The pension fund holds too much domestic stock relative to its limits. To rebalance, they might need to sell. Estimates suggest up to 255 trillion won worth of selling pressure could occur.\nConclusion: This potential selling pressure is causing short-term volatility. The speaker previously advised adjusting weight or buying during this dip.\n3.  Drafting the Summary (Iterative Process):\nDraft 1 (Mental Outline): Hanmi Semiconductor investors are anxious due to volatility. The speaker says don't sell, but buy. The US-Iran conflict is just a negotiation tactic, not a big war risk. The real issue is the National Pension Service rebalancing. Because KOSPI went up, they have too much domestic stock. They might sell 255 trillion won worth to adjust. This is causing the drop, so investors should use this chance to buy.\nDraft 2 (Translating to formal Korean & refining): 한미반도체 주가가 변동성을 보이며 투자자들의 불안감을 키우고 있으나, 현재 시점에서는 매도가 아닌 매수 관점으로 대응해야 합니다. 미국의 이란 공습 이슈는 협상을 위한 의도적 움직임으로 판단되니 크게 우려할 상황은 아닙니다. 하지만 국민연금의 리밸런싱 논의가 진행되면서 국내 증시 비중 조절을 위해 최대 255조 원 규모의 매도 물량이 출회될 수 있다는 점이 주가 하락의 주요 원인입니다. 따라서 단기적인 변동성을 이용하여 저점 매수 기회로 활용하는 전략이 필요합니다.\nChecking Constraints:\nKorean only? Yes.\nNo English? Yes.\nLength? Let's count characters.\nSentence count? 4 sentences. (Fits 3-5 range).\nCharacter Count Check (Draft 2):\n한미반도체 주가가 변동성을 보이며 투자자들의 불안감을 키우고 있으나, 현재 시점에서는 매도가 아닌 매수 관점으로 대응해야 합니다. (55 chars)",
+          "db_saved": true
+        },
+        {
+          "title": "이란, 쿠웨이트 때렸다. 지금이 기회? 국민연금 국내주식 비중 늘릴까? 반도체 장비주는 조심ㅣ정경민 IBK투자증권 분당지점 팀장",
+          "video_id": "3FU0T7m6pVc",
+          "views": 4694,
+          "upload_date": "2026-05-28",
+          "url": "https://www.youtube.com/watch?v=3FU0T7m6pVc",
+          "subtitle_summary": "1.  Analyze the Request:\nSource Material: A YouTube video transcript (partial) titled \"Iran hit Kuwait. Is now the opportunity? Will the National Pension increase its domestic stock share? Be careful with semiconductor equipment stocks | Jung Kyung-min IBK Investment & Securities Bundang Branch Manager\".\nTask: Summarize the transcript in Korean.\nLength: Approximately 500 characters (Korean characters).\nConstraints: MUST respond ONLY in Korean. Do NOT use English. Summarize core content in 3-5 sentences.\nContent Analysis:\nThe speaker discusses why the market is struggling on a Thursday, mentioning leverage ETFs and their significant influence (over 40%) on the market, making investors sensitive.\nGeopolitical tension arose during the day: US-Iran conflict news (Iran attacking a US air base in Kuwait mentioned in the dialogue, though the title says \"Iran hit Kuwait\"). This caused global market jitters (Japan, Hong Kong down 1-2%).\nThe Korean market saw a decline led by semiconductors (previously leading the rally) due to this sensitivity and supply/demand issues.\nThe speaker believes full-scale war is unlikely. It's seen as \"noise\" within a ceasefire/truce process.\nOther variables like oil prices and exchange rates haven't deviated significantly from trends, suggesting this is a temporary reaction in a sensitive market.\n2.  Drafting the Summary (Internal Monologue & Iteration):\nDraft 1 (Mental Outline): The video discusses the recent stock market decline caused by leverage ETF supply-demand issues and sudden Middle East tensions involving the US and Iran. The speaker notes that the market is sensitive due to ETF influence, leading to a drop in semiconductor stocks. However, he assesses the likelihood of an all-out war as low, viewing the situation as temporary noise within an ongoing truce process. Since other factors like oil and exchange rates remain stable, he suggests this is a short-term market reaction rather than a trend reversal.\nDraft 2 (Translating to Korean): 최근 주식 시장이 레버리지 ETF 수급 영향과 이란-미국 간 긴장감으로 인해 하락했다. 특히 반도체 주도주가 힘을 잃으면서 시장 전반이 부정적인 영향을 받았다. 하지만 정경민 팀장은 전면전 가능성은 낮으며, 휴전 과정에서 발생한 일시적인 노이즈로 해석해야 한다고 주장했다. 유가나 환율 등 다른 변수들이 크게 이탈하지 않았기 때문에 시장의 민감도가 확대된 상황에서 나타난 일시적인 조정으로 보인다.\nRefining for Length and Constraints:\nNeed to check character count. The above is a bit short. I need to expand slightly to hit \"around 500 characters\" (usually meaning 400-600 range is acceptable, but \"500자 내외\" often implies a substantial paragraph).\nLet's add more detail about the specific news (Iran attacking US air base/Kuwait context mentioned in the transcript) and the leverage ETF impact.\nDraft 3 (Expanded):\n최근 증시가 레버리지 ETF 수급 불균형과 더불어 이란과 미국 간의 돌발 군사 상황으로 인해 급락하는 모습을 보였다. 이란이 미국 공군 기지를 공격했다는 소식이 전해지며 투자 심리가 위축되었고, 특히 시장을 이끌던 반도체 섹터가 하락하며 지수 하락을 주도했다. 정경민 팀장은 이러한 지정학적 리스크가 전면전으로 비화될 가능성은 낮으며, 휴전 협상 과정에서 발생한 일시적인 노이즈에 불과하다고 진단했다. 또한 유가와 환율 등 주요 변수들이 추세에서 크게 이탈하지 않은 점을 고려할 때, 현재의 하락세는 민감해진 시장 수급이 반영된 일시적인 조정 국면으로 해석된다.\nCharacter",
+          "db_saved": true
+        }
+      ],
+      "max": 1.042,
+      "min": 1.7693,
+      "nb_score": 0.5889,
+      "avg_views": 4458.0,
+      "total_views": 17832
+    },
+    {
+      "keyword": "PCE 발표 시장 영향",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "서소문 고가 붕괴 원인",
+      "is_fixed": false,
+      "views": [
+        2054
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "3명 숨진 서소문 고가차도 붕괴…원인 규명 본격화 [뉴스in뉴스] / KBS  2026.05.28.",
+          "video_id": "f85QKimx8do",
+          "views": 2054,
+          "upload_date": "2026-05-28",
+          "url": "https://www.youtube.com/watch?v=f85QKimx8do",
+          "subtitle_summary": "1.  Analyze the Request:\nSource Material: A YouTube video transcript about the collapse of the Seosomun Overpass in Seoul.\nTitle: \"3 dead in Seosomun Overpass collapse... Investigation into cause begins [News in News] / KBS 2026.05.28.\" (Note: The date says 2026, which is futuristic, but I must treat the content as given).\nTask: Summarize the transcript in Korean.\nConstraints:\nMUST respond ONLY in Korean.\nDo NOT use English at all.\nLength: Around 500 characters (Korean characters).\nStructure: 3-5 sentences for the core summary.\nFormat: \"한국어 요약:\" followed by the text.\n2.  Analyze the Source Text (Transcript):\nIncident: Seosomun Overpass collapse during demolition on May 26th at 2:30 PM.\nCasualties: 3 dead (site manager, supervisor, external expert), 3 injured (passerby).\nContext: Safety inspection was underway after work was halted due to a 2.9cm step (difference in level) found during night demolition work.\nTiming/CCTV: Collapse happened about 1 minute 30 seconds after a train (Mugunghwa) passed. A KTX passed 5 minutes prior. It was a close call for a larger disaster.\nKey Issues/Investigation:\nWas the demolition procedure safe and followed correctly?\nConnection between the \"step\" found at dawn and the collapse.\nLack of traffic/rail control for 12 hours after work was halted.\nPolice investigation started (50-person team) focusing on safety management and procedures.\n3.  Drafting the Summary (Iterative Process):\nDraft 1 (Mental Outline):\nOn May 26th, the Seosomun Overpass collapsed during demolition, killing 3 and injuring 3. It happened during a safety check after a step was found in the concrete slab. The collapse occurred right after a train passed, almost causing a bigger accident. Police are investigating if safety procedures were followed and why traffic wasn't controlled.\nDraft 2 (Translating to Korean & Refining):\n2026년 5월 26일, 서울 서소문 고가차도 철거 현장에서 붕괴 사고가 발생해 현장 관계자 3명이 사망하고 3명이 부상을 입었습니다. 사고는 새벽 작업 중 단차가 발견되어 중단된 후, 이뤄진 안전 진단 과정에서 일어났으며 열차 통과 직후라 대형 참사를 면할 뻔했습니다. 현재 경찰은 안전 관리 의무 위반 여부와 작업 절차 준수 등을 중심으로 수사를 진행 중이며, 단차와 붕괴의 연관성 및 통제 부족 문제도 집중 조사하고 있습니다.",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "AI 반도체 투자 동향",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "삼성증권 디지털 자산 협력",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "코리아밸류업지수 구성변경",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "주식시장 외국인 매도세",
+      "is_fixed": false,
+      "views": [
+        129
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "''다음주 정신 차려야 한다'' 한국 주식 외인들 싹다 파는 진짜 이유 곧 무서운일 터진다 +'이때' 조심해라",
+          "video_id": "J3AC6BEsPV0",
+          "views": 129,
+          "upload_date": "2026-05-28",
+          "url": "https://www.youtube.com/watch?v=J3AC6BEsPV0",
+          "subtitle_summary": "The user wants a summary of the provided YouTube video subtitle in Korean.\nThe summary must be around 500 characters (Korean characters).\nThe summary must be in Korean only, no English.\nThe summary should cover the core content in 3-5 sentences.\n1. Analyze the Input Text:\nTitle: \"Next week, need to wake up\" Foreigners selling all Korean stocks real reason, scary thing will happen + Watch out 'at this time'.\nContent:\nKOSPI was expected to break 2,900 (or 3,000, text says 8 but context implies high point, actually text says \"8을 뚫만해\" which might be a typo for 2900 or 3000, or maybe 2800? Wait, text says \"코스피가 8,을 뚫만해\" - this is likely a transcription error for \"2천 8백\" or similar, but later it mentions \"7천선을 돌파한\" which is also weird for KOSPI (usually around 2,600-2,700). Let's look closer. Ah, \"7천선\" might be a typo for \"2천 7백\" or the text is referring to KOSDAQ? No, usually KOSPI is discussed. Let's assume the numbers are typos in the transcript and focus on the trend: Market was high, now it's down.)\nCurrent Situation: Foreigners have been net selling for 13 consecutive trading days since May 7th.\nScale: On May 19th alone, over 6.2 trillion won sold (historically 3rd-5th largest). Cumulative selling since May 7th exceeds 50 trillion won.\nHistorical Context: Top 12 historical net selling records all happened this year (2026? Text says 2026, likely typo for 2024 or 2025 depending on video date, but context implies \"this year\").\nFear: People fear IMF or 2008 crisis recurrence. Sidecar triggered on May 18th.\nAnalysis: Absolute numbers are huge, but percentage-wise (0.1-0.13% of market cap), it's not as catastrophic as 2008 or IMF crisis compared to historical data.\nKey Point: Need to look at ratios, not just absolute amounts.\n2. Draft the Summary (Internal Monologue):\nThe video discusses the massive sell-off of Korean stocks by foreigners.\nKey stats: 13 consecutive days of selling, over 50 trillion won cumulative, 6 trillion won in one day.\nIt mentions the fear of a crisis like IMF, but argues that looking at the percentage of market cap, the impact is smaller than it seems (0.1% range).\nIt promises to explain the real reason and what to do next week.\n3. Refine for Korean Output (Target ~500 characters):\nDraft 1: 최근 코스피 지수가 급락하며 투자자들의 우려가 커지고 있는 가운데, 외국인이 13거래일 연속으로 50조 원이 넘는 물량을 처분한 배경과 대응 전략이 분석되었습니다. 특히 5월 19일 하루에만 6조 원 이상을 던지는 등 역대급 순매도 기록이 이어지자 IMF 외환위기나 금융위기와 같은 공포가 확산되고 있습니다. 실제로 장 중 사이드카가 발동되는 등 시장이 패닉 상태에 빛들 뻔했으나, 전문가들은 절대 금액보다는 시가총액 대비 비율을 따져봐야 한다고 지적합니다. 현재 외국인 매도 규모는 코스피 시가총액의 0.1% 수준에 불과하여 과거 위기 상황보다 비중상 영향이 적다는 분석입니다. 영상은 이러한 상황에서 다음 주 투자자가 취해야 할 행동과 향후 시장 전망에 대한 구체적인 가이드를 제공하고 있습니다.\nCharacter Count Check:\nDraft 1 is around 300-400 characters. Let's make it slightly richer to hit \"around 500\" (500자 내외 usually means 400-600 is acceptable, but concise is better if content is limited).\nLet",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "경기기후위성 관측 정보",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "청와대 수어통역사 역할",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "항생제 내성 기후변화 영향",
+      "is_fixed": false,
+      "views": [
+        20
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "\"Climate Change Has Increased Antibiotic Resistance in Salmonella\" / YTN Science",
+          "video_id": "F2vIGKLy9c8",
+          "views": 20,
+          "upload_date": "2026-05-28",
+          "url": "https://www.youtube.com/watch?v=F2vIGKLy9c8",
+          "subtitle_summary": "1.  Analyze the Request:\nSource Material: A YouTube video subtitle about climate change increasing antibiotic resistance in Salmonella.\nLanguage Constraint: MUST respond ONLY in Korean. NO English allowed.\nLength Constraint: Around 500 characters (Korean characters).\nStructure: Summarize core content in 3-5 sentences.\nContent: The subtitle explains that international researchers found a link between climate change and the spread of antibiotic resistance genes in Salmonella. They analyzed ~480,000 samples from 139 countries (1940-2023). Climate change was linked to about 10% of the increase in resistance. The relationship wasn't linear but complex, changing with temperature and precipitation over time.\n2.  Drafting the Summary (Internal Monologue & Translation):\nKey Point 1: Research shows climate change affects antibiotic resistance in Salmonella.\nDraft (KR): 기후변화가 살모넬라균의 항생제 내성 유전자 확산에 영향을 미쳤다는 연구 결과가 나왔습니다.\nKey Point 2: International researchers analyzed samples from 139 countries over a long period.\nDraft (KR): 영국, 프랑스, 중국 등 국제 연구진은 1940년부터 2023년까지 139개국에서 수집된 살모넬라균 샘플 48만여 개를 분석했습니다.\nKey Point 3: The link between climate change and resistance is about 10%, and it's complex.\nDraft (KR): 분석 결과, 기후변화가 살모넬라균의 항생제 내성 유전자 증가 현상의 약 10%와 연관이 있는 것으로 밝혀졌습니다.\nKey Point 4: The mechanism involves temperature and precipitation in a complex way, not just steady increase.\nDraft (KR): 내성 유전자의 증가는 기온 상승에 따라 꾸준히 늘어나는 것이 아니라, 기온과 강수량에 따라 복잡한 방식으로 변화하는 것으로 나타났습니다.\n3.  Refining and Combining (Targeting ~500 characters):\nLet's combine these into a cohesive paragraph.\nDraft: 기후변화가 설사와 구토를 유발하는 살모넬라균의 항생제 내성을 높였다는 연구 결과가 나왔습니다. 국제 연구진은 1940년부터 2023년까지 수집된 139개국의 살모넬라균 샘플 48만여 개를 분석해 기후변화와 항생제 내성 간의 상관관계를 조사했습니다. 그 결과, 기후변화 요인이 살모넬라균의 항생제 내성 유전자 증가에 약 10% 정도 영향을 미친 것으로 확인됐습니다. 특히 내성 유전자는 기온 상승에 따라 단순히 증가하는 것이 아니라, 기온과 강수량 변화에 따라 복잡한 양상을 보이며 시간이 지남에 따라 변화하는 것으로 나타났습니다. 이는 기후변화가 단순히 기온만 높이는 것이 아니라 질병의 특성까지 변화시킬 수 있음을 시사합니다.\n4.  Checking Constraints:\nLanguage: All Korean? Yes.\nNo English: Checked. No English words.\nLength: Let's count characters (including spaces).\n\"기후변화가 설사와 구토를 유발하는 살모넬라균의 항생제 내성을 높였다는 연구 결과가 나왔습니다. 국제 연구진은 1940년부터 2023년까지 수집된 139개국의 살모넬라균 샘플 48만여 개를 분석해 기후변화와 항생제 내성 간의 상관관계를 조사했습니다. 그 결과, 기후변화",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "정밀 항암 기술 개발",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "퇴직연금 상품 수수료 면제",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "소득격차 최근 통계",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-28T13:52:33.150+09:00",
+  "updatedAt": "2026-05-29T15:17:02.907+09:00",
   "category": "PSU",
   "id": "psu-cooler-master-v750-sfx-gold",
   "name": "Cooler Master V750 SFX GOLD",
@@ -81,5 +81,9 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Cooler%20Master%20V750%20SFX%20Gold%20price",
   "notes": "SFX form factor, 80 PLUS Gold certified, Full-Modular",
-  "textRepair": null
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
 }

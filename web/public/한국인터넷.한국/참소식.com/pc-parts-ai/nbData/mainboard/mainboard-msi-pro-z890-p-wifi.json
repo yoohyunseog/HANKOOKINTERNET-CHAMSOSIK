@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-28T13:52:33.150+09:00",
+  "updatedAt": "2026-05-29T15:17:02.814+09:00",
   "category": "Mainboard",
   "id": "mainboard-msi-pro-z890-p-wifi",
   "name": "MSI PRO Z890-P WiFi",
@@ -21,7 +21,7 @@
   "performance": 75,
   "valueIndex": 15.5,
   "aiUseScore": 49,
-  "powerWatts": null,
+  "powerWatts": 0,
   "tags": [
     "Z890",
     "WiFi"
@@ -81,5 +81,9 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=LGA1851%20Z890%20%EB%A9%94%EC%9D%B8%EB%B3%B4%EB%93%9C%20%EC%B6%94%EC%B2%9C",
   "notes": "ProSeries, PCIe 5.0 support",
-  "textRepair": null
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
 }

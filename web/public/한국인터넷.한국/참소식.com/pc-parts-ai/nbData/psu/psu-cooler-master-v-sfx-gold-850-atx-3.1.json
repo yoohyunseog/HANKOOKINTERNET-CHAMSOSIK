@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-28T13:52:33.150+09:00",
+  "updatedAt": "2026-05-29T15:17:02.904+09:00",
   "category": "PSU",
   "id": "psu-cooler-master-v-sfx-gold-850-atx-3.1",
   "name": "Cooler Master V SFX Gold 850 ATX 3.1",
@@ -81,5 +81,9 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Cooler%20Master%20V850%20SFX%20Gold%20price",
   "notes": "ATX 3.1 compliant, 12V2x6 connector",
-  "textRepair": null
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
 }

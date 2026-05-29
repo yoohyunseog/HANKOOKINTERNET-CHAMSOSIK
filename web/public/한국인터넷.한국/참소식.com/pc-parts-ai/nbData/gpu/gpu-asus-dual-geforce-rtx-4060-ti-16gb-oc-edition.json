@@ -1,0 +1,88 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-05-29T15:16:59.107+09:00",
+  "category": "GPU",
+  "id": "gpu-asus-dual-geforce-rtx-4060-ti-16gb-oc-edition",
+  "name": "ASUS Dual GeForce RTX 4060 Ti 16GB OC Edition",
+  "maker": "ASUS",
+  "platform": "PCIe 4.0",
+  "estimatedPriceKrw": 1192000,
+  "priceBand": "60만원 이상",
+  "speedLabel": "OC",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "GPU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 65,
+  "valueIndex": 5.5,
+  "aiUseScore": 42,
+  "powerWatts": 165,
+  "tags": [
+    "gaming"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "GPU",
+    "partId": "gpu-asus-dual-geforce-rtx-4060-ti-16gb-oc-edition",
+    "partName": "ASUS Dual GeForce RTX 4060 Ti 16GB OC Edition",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "GPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 650,
+      "value": 100,
+      "aiFit": 420,
+      "priceEfficiency": 80,
+      "powerEfficiency": 131
+    },
+    "nbVector": [
+      100,
+      650,
+      100,
+      420,
+      80,
+      131
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 116.455,
+    "nbMin": 340.757,
+    "weightedScore": 242,
+    "nbBand": "100~499",
+    "summary": "GPU ASUS Dual GeForce RTX 4060 Ti 16GB OC Edition 부품을 속도 중심 N/B 데이터베이스 점수 242점으로 저장했습니다."
+  },
+  "nbWeightedScore": 242,
+  "nbMax": 116.455,
+  "nbMin": 340.757,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=GeForce%20RTX%204060%20Ti%2016GB%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "16GB VRAM model",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

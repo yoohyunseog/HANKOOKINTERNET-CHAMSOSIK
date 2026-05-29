@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-28T13:52:33.150+09:00",
+  "updatedAt": "2026-05-29T15:17:03.168+09:00",
   "category": "SSD",
   "id": "ssd-crucial-x10-pro-2tb",
   "name": "Crucial X10 Pro 2TB",
@@ -21,7 +21,7 @@
   "performance": 70,
   "valueIndex": 15.7,
   "aiUseScore": 46,
-  "powerWatts": null,
+  "powerWatts": 0,
   "tags": [
     "external",
     "portable"
@@ -81,5 +81,9 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Crucial%20X10%20Pro%202TB%20%EC%B5%9C%EC%A0%80%EA%B0%80",
   "notes": "External Portable SSD, USB 3.x 20Gbps",
-  "textRepair": null
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
 }

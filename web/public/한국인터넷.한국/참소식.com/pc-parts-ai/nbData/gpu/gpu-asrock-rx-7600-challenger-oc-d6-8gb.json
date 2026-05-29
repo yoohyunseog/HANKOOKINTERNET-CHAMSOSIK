@@ -1,0 +1,88 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-05-29T15:16:59.018+09:00",
+  "category": "GPU",
+  "id": "gpu-asrock-rx-7600-challenger-oc-d6-8gb",
+  "name": "ASRock 라데온 RX 7600 CHALLENGER OC D6 8GB",
+  "maker": "ASRock",
+  "platform": "PCIe",
+  "estimatedPriceKrw": 432300,
+  "priceBand": "30~60만원",
+  "speedLabel": "OC",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "GPU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 65,
+  "valueIndex": 15,
+  "aiUseScore": 42,
+  "powerWatts": 165,
+  "tags": [
+    "gaming"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "GPU",
+    "partId": "gpu-asrock-rx-7600-challenger-oc-d6-8gb",
+    "partName": "ASRock 라데온 RX 7600 CHALLENGER OC D6 8GB",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "GPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 650,
+      "value": 200,
+      "aiFit": 420,
+      "priceEfficiency": 230,
+      "powerEfficiency": 131
+    },
+    "nbVector": [
+      100,
+      650,
+      200,
+      420,
+      230,
+      131
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 153.275,
+    "nbMin": 381.116,
+    "weightedScore": 268,
+    "nbBand": "100~499",
+    "summary": "GPU ASRock 라데온 RX 7600 CHALLENGER OC D6 8GB 부품을 속도 중심 N/B 데이터베이스 점수 268점으로 저장했습니다."
+  },
+  "nbWeightedScore": 268,
+  "nbMax": 153.275,
+  "nbMin": 381.116,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=AMD%20%EB%9D%BC%EB%8D%B0%EC%98%A8%20RX%207600%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "Based on the lowest observed price from the search results.",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

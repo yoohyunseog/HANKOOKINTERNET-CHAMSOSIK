@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-28T13:52:33.150+09:00",
+  "updatedAt": "2026-05-29T15:16:57.624+09:00",
   "category": "CPU",
   "id": "cpu-9-2-285k",
   "name": "인텔 코어 울트라 9 시리즈2 285K (애로우레이크)",
@@ -81,5 +81,9 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Intel%20Core%20Ultra%209%20285K%20%EC%A0%95%ED%92%88",
   "notes": "P8+E16 cores, 24 threads",
-  "textRepair": null
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
 }

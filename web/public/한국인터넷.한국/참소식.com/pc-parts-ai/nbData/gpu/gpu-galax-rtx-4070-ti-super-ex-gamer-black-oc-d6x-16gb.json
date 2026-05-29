@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-28T13:52:33.150+09:00",
+  "updatedAt": "2026-05-29T15:16:58.504+09:00",
   "category": "GPU",
   "id": "gpu-galax-rtx-4070-ti-super-ex-gamer-black-oc-d6x-16gb",
   "name": "갤럭시 GALAX 지포스 RTX 4070 Ti SUPER EX GAMER BLACK OC D6X 16GB",
@@ -80,5 +80,9 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=GeForce%20RTX%204070%20Ti%20Super%20%EC%B5%9C%EC%A0%80%EA%B0%80",
   "notes": "EX GAMER BLACK OC model",
-  "textRepair": null
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
 }

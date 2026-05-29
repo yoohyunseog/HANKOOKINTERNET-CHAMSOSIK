@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-28T13:52:33.150+09:00",
+  "updatedAt": "2026-05-29T15:16:59.023+09:00",
   "category": "GPU",
   "id": "gpu-asrock-arc-a770-16g-oc",
   "name": "ASRock 인텔 Arc A770 그래픽 팬텀 게이밍 16G OC",
@@ -81,5 +81,9 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Intel%20Arc%20A770%20%EC%B5%9C%EC%A0%80%EA%B0%80",
   "notes": "Phantom Gaming OC model with 16GB GDDR6",
-  "textRepair": null
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
 }

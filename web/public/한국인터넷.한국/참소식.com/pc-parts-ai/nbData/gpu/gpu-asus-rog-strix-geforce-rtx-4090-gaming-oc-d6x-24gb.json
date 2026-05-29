@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-28T13:52:33.150+09:00",
+  "updatedAt": "2026-05-29T15:16:59.406+09:00",
   "category": "GPU",
   "id": "gpu-asus-rog-strix-geforce-rtx-4090-gaming-oc-d6x-24gb",
   "name": "ASUS ROG Strix GeForce RTX 4090 Gaming OC D6X 24GB",
@@ -82,5 +82,9 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=ASUS%20ROG%20Strix%20GeForce%20RTX%204090%20Gaming%20OC%20D6X%2024GB%20%EB%8B%A4%EB%82%98%EC%99%80",
   "notes": "Gaming OC model, 3-fan design, 24GB GDDR6X",
-  "textRepair": null
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
 }

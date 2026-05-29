@@ -1,0 +1,89 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-05-29T15:17:02.094+09:00",
+  "category": "GPU",
+  "id": "gpu-sparkle-intel-arc-a770-titan-oc-edition-16gb-gddr6",
+  "name": "Sparkle Intel Arc A770 Titan OC Edition 16GB GDDR6",
+  "maker": "Sparkle",
+  "platform": "Intel Arc",
+  "estimatedPriceKrw": 245400,
+  "priceBand": "15~30만원",
+  "speedLabel": "OC",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "GPU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 65,
+  "valueIndex": 26.5,
+  "aiUseScore": 42,
+  "powerWatts": 225,
+  "tags": [
+    "gaming",
+    "workstation"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "GPU",
+    "partId": "gpu-sparkle-intel-arc-a770-titan-oc-edition-16gb-gddr6",
+    "partName": "Sparkle Intel Arc A770 Titan OC Edition 16GB GDDR6",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "GPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 650,
+      "value": 353,
+      "aiFit": 420,
+      "priceEfficiency": 410,
+      "powerEfficiency": 100
+    },
+    "nbVector": [
+      100,
+      650,
+      353,
+      420,
+      410,
+      100
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 229.017,
+    "nbMin": 398.607,
+    "weightedScore": 302,
+    "nbBand": "100~499",
+    "summary": "GPU Sparkle Intel Arc A770 Titan OC Edition 16GB GDDR6 부품을 속도 중심 N/B 데이터베이스 점수 302점으로 저장했습니다."
+  },
+  "nbWeightedScore": 302,
+  "nbMax": 229.017,
+  "nbMin": 398.607,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Intel%20Arc%20A770%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "Titan OC Edition with ThermalSync Torned Cooling",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

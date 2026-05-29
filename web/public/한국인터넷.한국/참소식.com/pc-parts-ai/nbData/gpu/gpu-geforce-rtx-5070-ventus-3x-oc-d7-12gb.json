@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-28T13:52:33.150+09:00",
+  "updatedAt": "2026-05-29T15:17:00.460+09:00",
   "category": "GPU",
   "id": "gpu-geforce-rtx-5070-ventus-3x-oc-d7-12gb",
   "name": "GeForce RTX 5070 Ventus 3X OC D7 12GB",
@@ -80,5 +80,9 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=GeForce%20RTX%205070%20%EC%A0%95%ED%92%88%20%EA%B0%80%EA%B2%A9",
   "notes": "Based on MSI Ventus 3X OC model listing",
-  "textRepair": null
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
 }

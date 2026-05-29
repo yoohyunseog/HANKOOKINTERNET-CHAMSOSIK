@@ -1,0 +1,317 @@
+{
+  "timestamp": "2026-05-28T16:36:54.137870",
+  "model": "glm-5:cloud",
+  "keyword_count": 3,
+  "analyze_subtitles": true,
+  "analysis_source": "youtube",
+  "keywords": [
+    {
+      "keyword": "오늘의 주요 뉴스",
+      "is_fixed": true,
+      "views": [
+        229,
+        229
+      ],
+      "video_count": 2,
+      "videos": [
+        {
+          "title": "[12 News] Today's Top Stories / SBS",
+          "video_id": "KOSURbdgyMc",
+          "views": 229,
+          "upload_date": "2026-05-28",
+          "url": "https://www.youtube.com/watch?v=KOSURbdgyMc",
+          "subtitle_summary": "1.  Analyze the Request:\nSource Material: A YouTube subtitle script from SBS 12 News.\nContent:\nSeosomun overpass collapse: 3rd day, recovery delayed due to collapse fears, police/prosecution investigation starting.\nElections (local/by-elections): Pre-voting starts tomorrow for 2 days. Ruling and opposition parties campaigning.\nUS-Iran conflict: US military attacked Iranian facilities near Strait of Hormuz, shot down drones. Trump says ceasefire negotiations not satisfactory yet.\nKakao strike: First strike threat since incorporation. Labor-management negotiation failed, union declared strike for next month.\nConstraints:\nLanguage: ONLY Korean (no English).\nLength: Around 500 characters (Korean characters).\nStructure: 3-5 sentences summarizing key points.\n2.  Drafting the Summary (Iterative Process):\nAttempt 1 (Mental Outline):\n서소문 고가 차도 붕괴 사고가 나고 사흘이 지났는데 복구가 늦어지고 있다. 경찰과 검찰이 수사를 시작했다. 내일부터 지방선거 사전투표가 시작된다. 미군이 이란을 공습했다. 카카오 노조가 파업을 선언했다.\nAttempt 2 (Refining and Expanding for Length/Flow):\n서소문 고가 차도 붕괴 사고가 발생한 지 사흘째인 가운데, 추가 붕괴 우려로 인해 복구 작업이 지연되고 있으며 경찰과 검찰의 수사가 본격화되고 있습니다. 다음 달 3일 지방선거 및 국회의원 보궐선거를 앞두고 내일부터 이틀간 사전 투표가 진행되며, 여야 지도부는 지지층 결집에 총력을 기울이고 있습니다. 한편, 미군이 호르무즈 해협 인근에서 이란 군사시설을 공습하고 드론을 격추한 가운데, 트럼프 대통령은 이란과의 협상 진전에 부정적인 입장을 밝혔습니다. 또한 카카오 노사가 임금 협상 등에서 합의점을 찾지 못해 창사 이래 첫 파업 위기에 직면했으며, 노조는 다음 달 파업 돌입을 선언했습니다.\nChecking Character Count (Attempt 2):\nLet's count roughly.\nSentence 1: ~60 chars.\nSentence 2: ~60 chars.\nSentence 3: ~65 chars.\nSentence 4: ~60 chars.\nTotal: ~245 characters (including spaces).\nCritique: This is a bit short. The prompt asks for \"500자 내외\" (around 500 characters). Usually, in Korean writing tasks, \"500자\" often implies a bit more substance, though strictly speaking, summarizing a short script might not reach exactly 500 characters without fluff. However, the prompt also says \"3-5 sentences\". My draft has 4 sentences. I should try to elaborate slightly more on the details provided in the script to get closer to the target length without being redundant.\nAttempt 3 (Expanding for length):\n서소문 고가 차도 붕괴 사고가 발생한 지 사흘째를 맞이했으나 추가 붕괴의 우려로 인해 현장 복구 작업이 지연되고 있는 가운데, 사고 원인 규명과 책임 소재를 가리기 위한 경찰과 검찰의 합동 수사가 본격적으로 시작되었습니다. 6월 3일 치러질 지방선거와 국회의원 보궐선거를 앞두고 내일부터 이틀간 사전 투표가 진행되며, 여야 지도부는 사전 투표 하루를 앞두고 전국 각지에서 지원 유세를 벌이며 지지층의 투표 독려에 총력을 기울이고 있습니다. 국제적으로는 미군",
+          "db_saved": true
+        },
+        {
+          "title": "[News Briefing] Today's Top Stories... Growth Forecast Jumps on Semiconductor Boom / SBS",
+          "video_id": "dg6Kb1Md2Eo",
+          "views": 229,
+          "upload_date": "2026-05-28",
+          "url": "https://www.youtube.com/watch?v=dg6Kb1Md2Eo",
+          "subtitle_summary": "1.  Analyze the Request:\nSource Material: A YouTube subtitle transcript titled \"[News Briefing] Today's Top Stories... Growth Forecast Jumps on Semiconductor Boom / SBS\".\nTask: Summarize the transcript in Korean.\nLength: Around 500 characters (Korean characters).\nConstraints:\nMUST respond ONLY in Korean.\nDo NOT use English at all.\nSummarize core content in 3-5 sentences.\n2.  Analyze the Source Text:\nSegment 1 (Economy/Interest Rates): Bank of Korea held its first Monetary Policy Committee meeting under Governor Shin Hyun-song. The base rate (currently 2.5%) was frozen (8th consecutive time since last May). The growth forecast for this year was raised from 2% to 2.6% due to the semiconductor boom.\nSegment 2 (Elections): Early voting for the local elections and parliamentary by-elections (on June 3rd) starts tomorrow for two days. Ruling and opposition parties are campaigning. SBS will broadcast a debate for the Seoul mayoral candidates (a key battleground) tonight at 11 PM.\nSegment 3 (Accident): It's been three days since the Seosomun overpass collapse. Recovery is delayed due to fears of further collapse. Police and prosecutors are investigating the cause and responsibility.\nSegment 4 (International): US-Iran negotiations are struggling. US military action near the Strait of Hormuz has increased tensions. President Trump expressed dissatisfaction with the negotiations so far.\n3.  Drafting the Summary (Iterative Process):\nDraft 1 (Mental Outline):\n한국은행이 기준금리를 동결하고 성장률 전망치를 반도체 호조로 2.6%로 올렸다. 내일부터 지방선거 사전투표가 시작되며 여야가 지원 유세에 나선다. 서소문 고가차도 붕괴 사고는 복구가 지연되고 수사가 진행 중이다. 미국과 이란의 협상 난항 속에 호르무즈 해협 긴장이 고조되고 있다.\nDraft 2 (Expanding to meet length and sentence count requirements):\n신현송 한국은행 총재 취임 후 첫 금통위에서 기준금리가 8차례 연속 동결되었으나, 반도체 경기 호조로 올해 성장률 전망치는 2.6%로 대폭 상향 조정되었습니다. 다가오는 지방선거와 재보궐 선거를 앞두고 내일부터 사전투표가 시작되며, 여야는 지지층 결집에 총력을 기울이고 있습니다. 서소문 고가차도 붕괴 사고는 추가 붕괴 우려로 복구가 지연되는 가운데, 경찰과 검찰이 원인 규명과 책임 소재를 두고 수사에 착수했습니다. 한편, 미국과 이란의 협상이 진통을 겪는 상황에서 미군의 호르무즈 해협 군사 행동으로 인해 긴장이 고조되고 있습니다.\n4.  Review and Refine (Checking Constraints):\nLanguage: Korean only? Yes.\nEnglish: None? Yes.\nLength: Let's count characters (including spaces).\nDraft 2 text: \"신현송 한국은행 총재 취임 후 첫 금통위에서 기준금리가 8차례 연속 동결되었으나, 반도체 경기 호조로 올해 성장률 전망치는 2.6%로 대폭 상향 조정되었습니다. 다가오는 지방선거와 재보궐 선거를 앞두고 내일부터 사전투표가 시작되며, 여야는 지지층 결집에 총력을 기울이고 있습니다. 서소문 고가차도 붕괴 사고는 추가 붕괴 우려로 복구가 지연되는",
+          "db_saved": true
+        }
+      ],
+      "max": 5.39,
+      "min": 0.0,
+      "nb_score": 53900.0,
+      "avg_views": 229.0,
+      "total_views": 458
+    },
+    {
+      "keyword": "LG에너지솔루션 ESS 계약",
+      "is_fixed": false,
+      "views": [
+        312,
+        303,
+        310,
+        318,
+        176,
+        195,
+        384,
+        2640
+      ],
+      "video_count": 8,
+      "videos": [
+        {
+          "title": "[LG에너지솔루션 주가전망] DTE에너지 2.4조 ESS 공급 계약 역대급 수주 ! 오늘 윗꼬리에 속지 마세요 ! 세력 목표가 \"긴급공개\"",
+          "video_id": "JUcrbPAndq8",
+          "views": 312,
+          "upload_date": "2026-05-28",
+          "url": "https://www.youtube.com/watch?v=JUcrbPAndq8",
+          "subtitle_summary": "1.  Analyze the Request:\nSource Material: A YouTube video transcript about LG Energy Solution's stock outlook.\nTitle: [LG에너지솔루션 주가전망] DTE에너지 2.4조 ESS 공급 계약 역대급 수주 ! 오늘 윗꼬리에 속지 마세요 ! 세력 목표가 \"긴급공개\"\nTask: Summarize the transcript in Korean.\nLength: Around 500 characters (Korean characters).\nConstraint: MUST respond ONLY in Korean. NO English at all.\nStructure: 3-5 sentences for the core summary.\n2.  Analyze the Transcript Content:\nSpeaker: Lee Jung-kwon TV representative Ha Ji-yeok.\nKey Event: LG Energy Solution signed a 2.4 trillion KRW supply contract with US DTE Energy (6GW scale).\nStock Movement: The stock showed an upper shadow (윗꼬리) on the day, dropping 3.7% to close at 387,500 KRW. The speaker advises not to be shaken by this, interpreting it as digesting selling pressure before an upward trend.\nCompany Fundamentals: Largest domestic battery maker. Strong North American production capacity and IRA tax benefits. Focus on ESS business expansion and 46-series battery orders in 2026.\nMarket Sentiment: Institutional and foreign investors are turning from selling to buying.\nFuture Outlook: ESS market expected to explode due to AI data centers and grid stabilization needs. The \"secondary battery rally\" is just starting.\nAdvice: Advice on selling timing and re-entry points is offered (via text message service), targeting different types of investors (high entry, mid entry, new entry).\n3.  Drafting the Summary (Iterative Process):\nDraft 1 (Mental Outline): LG Energy Solution signed a huge 2.4 trillion won contract with DTE Energy. The stock price dropped a bit today with an upper shadow, but the expert says this is just digesting supply and the upward trend is coming. The company is strong in North America with ESS and 46-series batteries. Foreign investors are buying again. The secondary battery rally is starting now due to AI data centers.\nDraft 2 (Translating to formal Korean & refining): LG에너지솔루션이 미국 DTE에너지와 2.4조 원 규모의 ESS 공급 계약을 체결하며 역대급 수주 성과를 거두었습니다. 오늘 주가는 윗꼬리 양봉을 보이며 하락했지만, 이는 매물 소화 과정일 뿐 상승 추세 전환 직전의 모습으로 해석됩니다. 북미 최대 생산 능력과 IRA 혜택을 바탕으로 2026년 ESS 매출 비중 확대와 46시리즈 수주가 가속화될 전망입니다. 특히 AI 데이터 센터 확대로 인한 ESS 수요 폭발이 기대되며, 기관과 외국인의 매수세 전환도 긍정적인 신호입니다. 따라서 현재 흐름에 속지 말고 고점 매도 및 재진입 타이밍을 잘 잡아야 합니다.\nChecking Character Count (Draft 2):\nLG에너지솔루션이 미국 DTE에너지와 2.4조 원 규모의 ESS 공급 계약을 체결하며 역대급 수주 성과를 거두었습니다. (52 chars)\n오늘 주가는 윗꼬리 양봉을 보이며 하락했지만, 이는 매물 소화 과정일 뿐 상승 추세 전환 직전의 모습으로 해석됩니다. (56 chars)\n북미 최대 생산 능력과 IRA 혜택을 바탕으로 2026년 ESS 매출 비중 확대와 46시리즈 수주가 가속화될 전망입니다. (54 chars)\n특히 AI 데이터 센터 확대로 인한",
+          "db_saved": true
+        },
+        {
+          "title": "LG Energy Solution Breaks Into U.S. Data Center Market... \"2.4 Trillion Won ESS Supply Deal\" / Ko...",
+          "video_id": "YYYzElhM_dQ",
+          "views": 303,
+          "upload_date": "2026-05-28",
+          "url": "https://www.youtube.com/watch?v=YYYzElhM_dQ",
+          "subtitle_summary": "1.  Analyze the Request:\nSource Material: YouTube video transcript about LG Energy Solution supplying ESS batteries to a US data center.\nTask: Summarize the transcript in Korean.\nLength: Around 500 characters (Korean characters).\nConstraints:\nMUST respond ONLY in Korean.\nDo NOT use English at all.\nSummarize core content in 3-5 sentences.\n2.  Analyze the Source Text (Transcript):\nKey Event: LG Energy Solution signed a 2.4 trillion KRW ESS battery supply deal with US DT Energy.\nSignificance: First entry into the US data center market (specifically suspected to be for Oracle's data center). Previous deals were for renewable energy; this one is for data centers, which is more profitable.\nMarket Context: AI data centers consume huge power and have fluctuating loads, requiring ESS. The market is expected to grow significantly (200TW to 400TW by 2030).\nProfitability: EV batteries are facing price pressure from China and subsidy cuts. ESS batteries are cheaper to make (lower density, stationary) but demand is rising, improving profitability.\nPrice Analysis: Estimated price is ~$260/kWh, up 25% from last October's negotiation price (~$200 range).\nProduction Strategy: LG is expanding production capacity in the US (Michigan plant), targeting 60GW total, with 50GW in North America.\n3.  Drafting the Summary (Iterative Process):\nDraft 1 (Mental Outline): LG Energy Solution signed a 2.4 trillion won ESS contract with US DT Energy, successfully entering the AI data center market. This is significant because data center ESS is more profitable than renewable energy ESS and EV batteries, which face Chinese competition. The estimated unit price rose 25%, proving improved profitability. With local production in Michigan, LG plans to expand capacity to secure its position in the growing US market.\nDraft 2 (Translating to Korean & Refining):\nLG에너지솔루션이 미국 DT 에너지와 2조 4천억 원 규모의 ESS 배터리 공급 계약을 체결하며 미국 데이터 센터 시장에 성공적으로 진입했습니다. 이번 계약은 오라클의 AI 데이터 센터 등에 납품되는 것으로 알려졌으며, 기존 신재생 에너지용보다 수익성이 높은 데이터 센터용 수주를 따냈다는 점에서 큰 의의가 있습니다. 전기차 배터리 시장의 중국산 저가 공세와 달리 ESS 수요는 지속적으로 증가하고 있어, 이번 계약은 수익성 개선을 입증하는 중요한 사례로 평가받습니다. 실제로 협상 단가는 지난해 대비 25% 상승한 kW당 260달러 수준으로 추정되며, 현지 생산 역량 확보가 긍정적으로 작용했습니다. LG에너지솔루션은 북미 생산 능력을 확대하며 ESS를 전기차 배터리 못지않은 핵심 수익원으로 육성할 계획입니다.\n4.  Checking Constraints:\nLanguage: Korean only? Yes.\nNo English: Checked. (Replaced \"kW\" with \"킬로와트\" or kept as standard unit if acceptable, but usually \"kW\" is fine in Korean text, though the prompt says \"Do NOT use English at all\". I should be careful. \"kW\" is a unit symbol, but strictly speaking, it's Latin characters. To be safe, I will write \"킬로와트\" or just focus on the percentage increase without the specific unit symbol if it violates the strict \"No English\" rule. However, usually, units are acceptable. Let's look at the prompt again: \"Do NOT use English at all.\" This is strict. I will replace \"kW\" with \"킬로와트\" or rephrase to avoid the unit symbol to be 100% compliant. Actually, \"AI\" and \"ESS\" are also English acronyms. In Korean business news, these are standard loanwords. But the prompt is extremely strict:",
+          "db_saved": true
+        },
+        {
+          "title": "[LG에너지솔루션 주가 전망] 미국 DTE에너지 16억 달러 계약 폭발+ESS 매출 267퍼 폭증 전망 #lg에너지솔루션주가전망 #lg에너지솔루션목표가 #lg에너지솔루션",
+          "video_id": "Mb5drMEufI8",
+          "views": 310,
+          "upload_date": "2026-05-28",
+          "url": "https://www.youtube.com/watch?v=Mb5drMEufI8",
+          "subtitle_summary": "1.  Analyze the Request:\nSource Material: A YouTube video transcript about LG Energy Solution's stock outlook.\nTitle: Mentions a $1.6 billion contract with US DTE Energy, ESS sales surge forecast of 267%, and stock price outlook.\nConstraints:\nMUST respond ONLY in Korean.\nDo NOT use English at all.\nLength: Around 500 characters (Korean characters).\nStructure: Summarize core content in 3-5 sentences.\nContent to Summarize:\nCompany intro: LG Energy Solution is a top Korean secondary battery company (EV, ESS, lithium-ion, solid-state batteries).\nStock Chart: Bottomed out March 23rd, hit all-time high April 22nd, currently strong buying volume.\nNews 1: Contract with US DTE Energy ($1.6 billion, 6GW) for Oracle's AI data center project.\nNews 2: Stock surged over 10% with high volume. Fundamentals are strong (440GW backlog in North America).\nForecast: ESS sales expected to surge 267% YoY, aiming for 35% sales share in H2. Next-gen LMR batteries mentioned.\n2.  Drafting the Summary (Iterative Process):\nAttempt 1 (Mental Outline):\nLG Energy Solution is a leading battery company. The stock hit a high recently and is showing strong volume. Two big news items: a $1.6 billion deal with DTE Energy for AI data centers, and a stock surge of over 10%. The company has a huge order backlog in North America. ESS sales are expected to jump 267%, making the future outlook very positive.\nAttempt 2 (Translating to Korean & Refining):\nLG에너지솔루션은 전기차 및 ESS 배터리를 생산하는 국내 1등 기업으로, 최근 주가가 바닥을 다진 후 강력한 상승세를 보이고 있습니다. 미국 DTE에너지와 16억 달러 규모의 공급 계약을 체결하며 글로벌 빅테크 AI 데이터 센터 프로젝트에 투입되는 등 호재가 이어지고 있습니다. 특히 장중 10% 넘게 급등하며 거래량이 폭증했고, 북미 수주 잔고 확보와 ESS 매출 전년 대비 267% 폭증 전망 등 펀더멘탈도 매우 탄탄합니다. 이에 하반기 ESS 매출 비중 확대와 차세대 배터리 경쟁력을 바탕으로 긍정적인 주가 전망이 제기되고 있습니다.\nChecking Constraints:\nKorean only? Yes.\nNo English? Yes.\nLength? Let's count characters.\n\"LG에너지솔루션은 전기차 및 ESS 배터리를 생산하는 국내 1등 기업으로, 최근 주가가 바닥을 다진 후 강력한 상승세를 보이고 있습니다. 미국 DTE에너지와 16억 달러 규모의 공급 계약을 체결하며 글로벌 빅테크 AI 데이터 센터 프로젝트에 투입되는 등 호재가 이어지고 있습니다. 특히 장중 10% 넘게 급등하며 거래량이 폭증했고, 북미 수주 잔고 확보와 ESS 매출 전년 대비 267% 폭증 전망 등 펀더멘탈도 매우 탄탄합니다. 이에 하반기 ESS 매출 비중 확대와 차세대 배터리 경쟁력을 바탕으로 긍정적인 주가 전망이 제기되고 있습니다.\"\nCharacter count (including spaces): ~230 characters.\nThe prompt asks for \"500자 내외\" (around 500 characters). My draft is a bit short. I need to expand it slightly to meet the length requirement better, while keeping it to 3-5 sentences.\nAttempt 3 (Expanding for length):\nLG에",
+          "db_saved": true
+        },
+        {
+          "title": "[LG에너지솔루션 주가 전망] DTE에너지 2.4조 메가 수주 터졌다 LG엔솔 +12%폭등 다시시작이다 #lg에너지솔루션주가전망 #lg에너지솔루션목표가 #lg에너지솔루션",
+          "video_id": "BY2IZXFCI3o",
+          "views": 318,
+          "upload_date": "2026-05-28",
+          "url": "https://www.youtube.com/watch?v=BY2IZXFCI3o",
+          "subtitle_summary": "1.  Analyze the Request:\nSource Material: A YouTube video transcript about LG Energy Solution's stock price outlook.\nTitle: Mentions DTE Energy 2.4 trillion won order, LG Energy Solution +12% surge.\nConstraints:\nMUST respond ONLY in Korean.\nDo NOT use English at all.\nLength: Around 500 characters (Korean characters).\nStructure: Summarize core content in 3-5 sentences.\nKey Content in Transcript:\nLG Energy Solution is a global leader in batteries/ESS.\nMajor news: Won a 2.4 trillion won (16 billion USD) order from US DTE Energy.\nStock reaction: Surged +12.39% on May 28th.\nContext: AI data center ESS demand increase, global production expansion.\nChart analysis: Mention of accumulation zones, volume surge, and potential for further rise after correction from all-time high.\nSpecifics: 6GW battery supply, Michigan Holland factory, cumulative orders exceeding 140GW.\n2.  Drafting the Summary (Internal Monologue & Iteration):\nAttempt 1 (Mental Outline): LG Energy Solution stock surged 12% due to a mega-order from DTE Energy worth 2.4 trillion won. This deal involves supplying 6GW batteries and is linked to AI data center power demand. The stock price jumped significantly on May 28th, showing strong momentum after a period of correction. Cumulative orders have now exceeded 140GW, signaling strong fundamentals. The speaker emphasizes chart analysis and warns against paid stock promotion scams.\nAttempt 2 (Translating to Korean & Refining):\nLG에너지솔루션이 미국 DTE에너지로부터 2조 4천억 원 규모의 메가 수주를 확보하며 주가가 12% 이상 급등하는 강력한 상승 모멘텀을 보였습니다. 이번 수주는 6GW 규모의 배터리 공급을 포함하며, AI 데이터 센터 전력 수요 증가와 맞물려 글로벌 누적 수주량 140GW를 돌파하는 등 펀더멘탈이 크게 개선되었습니다. 5월 28일 장 중 거래량이 폭증하며 43만 원대를 회복했고, 차트상으로도 매집 구간을 지나 본격적인 상승 흐름을 그리고 있습니다. 미국 내 생산 거점 확보와 주요 고객사 확대는 향후 실적 개선에 긍정적인 신호로 작용할 전망입니다.\nChecking Constraints:\nKorean only? Yes.\nNo English? Yes.\nLength? Let's count characters.\n\"LG에너지솔루션이 미국 DTE에너지로부터 2조 4천억 원 규모의 메가 수주를 확보하며 주가가 12% 이상 급등하는 강력한 상승 모멘텀을 보였습니다. 이번 수주는 6GW 규모의 배터리 공급을 포함하며, AI 데이터 센터 전력 수요 증가와 맞물려 글로벌 누적 수주량 140GW를 돌파하는 등 펀더멘탈이 크게 개선되었습니다. 5월 28일 장 중 거래량이 폭증하며 43만 원대를 회복했고, 차트상으로도 매집 구간을 지나 본격적인 상승 흐름을 그리고 있습니다. 미국 내 생산 거점 확보와 주요 고객사 확대는 향후 실적 개선에 긍정적인 신호로 작용할 전망입니다.\"\nCharacter count (including spaces): ~230 characters. This is a bit short. The prompt asks for \"500자 내외\" (around 500 characters). I need to expand it slightly to provide more detail from the transcript.\nAttempt 3 (Expanding to ~400-500 characters):\nLG에너지솔루션이 미국 DTE에너지와 2조",
+          "db_saved": true
+        },
+        {
+          "title": "[LG에너지솔루션 주가전망] 美 2.4조 ESS 수주 터졌다! 하반기 실적 반등 신호 포착",
+          "video_id": "VsG4gBJt1Gk",
+          "views": 176,
+          "upload_date": "2026-05-28",
+          "url": "https://www.youtube.com/watch?v=VsG4gBJt1Gk",
+          "subtitle_summary": "1.  Analyze the Request:\nSource Material: A YouTube video transcript about LG Energy Solution's stock outlook.\nTitle: [LG에너지솔루션 주가전망] 美 2.4조 ESS 수주 터졌다! 하반기 실적 반등 신호 포착\nTask: Summarize the transcript in Korean.\nLength: Around 500 characters (Korean characters).\nConstraints: ONLY Korean, NO English, 3-5 sentences for the core summary.\n2.  Analyze the Transcript Content:\nSpeaker: Lee Jae-sung, a 20-year veteran investor.\nContext: The market crashed (KOSPI/KOSDAQ down 4-5%) due to geopolitical tension (Iran attacking US airbase).\nEvent: LG Energy Solution stock surged over 13% (breaking 430,000 KRW) despite the market crash.\nReason for Surge: Secured a massive ESS battery supply contract with DTE Energy in Michigan, USA.\nContract Details: 6GWh scale, 1.6 billion USD (approx. 2.4 trillion KRW), 2-year supply period.\nSignificance:\nNot a one-off deal; it's a paradigm shift.\nBatteries will be used for Oracle's AI data center project and other key power grids in Michigan.\nAddresses the ESS battery shortage caused by Big Tech's AI data center boom.\nValidates LG's local production capability and technology in North America.\nProduction Capacity: LG has 5 production hubs in North America. Plans to expand global capacity to 60GWh+ by year-end, with 80% (50GWh) in North America.\nFuture Outlook: Combined with existing backlog (140GWh), this new order ensures massive sales and profit growth for years. It signals a rebound in second-half performance.\n3.  Drafting the Summary (Iterative Process):\nDraft 1 (Mental Outline): The market crashed due to Iran, but LG Energy Solution soared 13%. This is because they got a 2.4 trillion KRW ESS order from DTE Energy in the US. This supply goes to Oracle's AI data centers, proving LG's tech and local production power. With strong North American capacity and backlog, this signals a strong performance rebound.\nDraft 2 (Translating to formal Korean & refining):\n이란의 미군 기지 공격으로 증시가 대폭락하는 와중에도 LG에너지솔루션은 미국 DTE 에너지와의 2조 4천억 원 규모 ESS 공급 계약 소식에 힘입어 13% 이상 급등하며 시장을 선도했다. 이번 수주는 단순한 일회성 계약이 아니라 오라클 AI 데이터 센터 등 북미 핵심 인프라에 직접 투입되는 것으로, 현지 생산 능력과 기술력을 확실히 입증받은 결과다. 북미 지역의 AI 데이터 센터 확대로 인한 ESS 수요 폭증 속에서 LG에너지솔루션은 압도적인 생산 거점을 바탕으로 독보적인 입지를 구축했다. 이미 140GWh 규모의 누적 수주에 더해진 이번 초대형 계약은 향후 수년간 매출과 이익의 성장을 담보하며 하반기 실적 반등의 확실한 신호가 되고 있다.\n4.  Checking Constraints:\nLanguage: Korean only? Yes.",
+          "db_saved": true
+        },
+        {
+          "title": "[LG에너지솔루션 주가전망] 442,000원 폭등 중! 테슬라 4680에 이어 美 DTE에너지와 2.4조원 대형 ESS 계약 공식 발표 #lg에너지솔루션 #lg에너지솔루션주가",
+          "video_id": "AoQZzGFFPjM",
+          "views": 195,
+          "upload_date": "2026-05-28",
+          "url": "https://www.youtube.com/watch?v=AoQZzGFFPjM",
+          "subtitle_summary": "1.  Analyze the Request:\nSource Material: A YouTube video transcript about LG Energy Solution's stock price surge.\nTitle: Mentions stock price surge to 442,000 KRW, Tesla 4680 battery deal, and a large ESS contract with US DTE Energy worth 2.4 trillion KRW.\nTask: Summarize the transcript in Korean.\nConstraints:\nMUST respond ONLY in Korean.\nDo NOT use English at all.\nLength: Around 500 characters (Korean characters).\nStructure: 3-5 sentences.\nKey Content to Extract:\nStock price movement (surge to 442,000 KRW, high trading volume).\nReason 1: Tesla 4680 battery supply contract (exclusive supply for new cars starting H2).\nReason 2: ESS contract with US DTE Energy (worth 2.4 trillion KRW).\nMarket sentiment: Strong institutional/foreign buying, absorbing sell orders.\n2.  Drafting the Summary (Internal Monologue & Iteration):\nAttempt 1 (Mental Outline): LG Energy Solution stock is skyrocketing to 442,000 won. This is because of two big news items. First, they signed a deal with Tesla for 4680 batteries. Second, they signed a 2.4 trillion won ESS deal with DTE Energy. Trading volume is huge and institutions are buying heavily.\nAttempt 2 (Translating to formal Korean): LG에너지솔루션이 44만 2천원까지 폭등하며 역사적인 대시세를 기록 중입니다. 이는 테슬라와의 차세대 4680 배터리 대규모 공급 계약 체결 소식이 전날 발표된 데 이어, 미국 DTE에너지와 2조 4천억 원 규모의 ESS 계약을 추가로 발표하며 초대형 호재가 겹쳤기 때문입니다. 기관과 외국인의 폭발적인 매수세가 유입되며 거래량이 역대급으로 터져 나왔고, 상단 매물이 완전히 소화되는 강력한 상승 흐름을 보이고 있습니다. 투자자들은 눌림목 매수 타이밍과 고점 매도 기준을 점검하며 대응해야 합니다.\nChecking Constraints:\nKorean only? Yes.\nNo English? Yes.\nLength? Let's count characters.\n\"LG에너지솔루션이 44만 2천원까지 폭등하며 역사적인 대시세를 기록 중입니다.\" (36 chars)\n\"이는 테슬라와의 차세대 4680 배터리 대규모 공급 계약 체결 소식이 전날 발표된 데 이어, 미국 DTE에너지와 2조 4천억 원 규모의 ESS 계약을 추가로 발표하며 초대형 호재가 겹쳤기 때문입니다.\" (86 chars)\n\"기관과 외국인의 폭발적인 매수세가 유입되며 거래량이 역대급으로 터져 나왔고, 상단 매물이 완전히 소화되는 강력한 상승 흐름을 보이고 있습니다.\" (63 chars)\n\"투자자들은 눌림목 매수 타이밍과 고점 매도 기준을 점검하며 대응해야 합니다.\" (38 chars)\nTotal: ~223 characters. This is a bit short. The prompt asks for \"500자 내외\" (around 500 characters). I need to expand on the details provided in the transcript to get closer to the target length without fluffing it up too much.\nAttempt 3 (Expanding for length):\nLG에너지솔루션이 글로벌 배터리 시장의 독점적 지위를 바탕으로 전일 대비 14% 이상 급등한 44만 2천 원까지",
+          "db_saved": true
+        },
+        {
+          "title": "[LG에너지솔루션 주가전망] 오늘 2.4조 ESS 폭탄!! 오라클 AI데이터센터 잭팟 #LG에너지솔루션주가전망 #LG에너지솔루션목표가 #LG에너지솔루션",
+          "video_id": "rbtsd_xSKOw",
+          "views": 384,
+          "upload_date": "2026-05-28",
+          "url": "https://www.youtube.com/watch?v=rbtsd_xSKOw",
+          "subtitle_summary": "1.  Analyze the Request:\nSource Material: A YouTube video transcript about LG Energy Solution's stock outlook.\nTitle: [LG에너지솔루션 주가전망] 오늘 2.4조 ESS 폭탄!! 오라클 AI데이터센터 잭팟...\nContent: LG Energy Solution signed a 2.4 trillion KRW contract with DT Energy for Oracle AI data center ESS batteries. Stock price surged (gap up, 15% increase). The speaker categorizes viewers (high average price, profit-takers, new entrants) and promises strategies. The contract is a game changer, shifting focus from EV demand slowdown to AI data center infrastructure. Mention of a previous successful pick (Doosan Enerbility).\nConstraints:\nMUST respond ONLY in Korean.\nDo NOT use English at all.\nLength: Around 500 characters (Korean characters).\nStructure: Summarize core content in 3-5 sentences.\n2.  Drafting the Summary (Iterative Process):\nAttempt 1 (Mental Outline):\nLG Energy Solution got a huge 2.4 trillion won ESS contract in the US for Oracle AI data centers. The stock jumped 15% with huge volume. This is a game changer because it moves them beyond just EVs into AI infrastructure. The speaker offers advice for different types of investors and mentions a past success with Doosan Enerbility.\nAttempt 2 (Translating to Korean & Refining):\nLG에너지솔루션이 미국 DT 에너지와 2조 4천억 원 규모의 오라클 AI 데이터 센터용 ESS 배터리 공급 계약을 체결하며 게임 체인저급 호재를 기록했습니다. 이 소식에 주가는 전 거래일 대비 15% 급등하며 거래량이 평균의 3배 이상 폭증하는 강세를 보였습니다. 이번 계약은 단순한 수주를 넘어 전기차 수요 둔화 우려를 해소하고 AI 데이터 센터 핵심 공급사로의 체질 개선을 알리는 중요한 신호로 평가받습니다. 화자는 이러한 시장 상황에서 기존 보유자와 신규 진입 희망자를 위한 맞춤형 대응 전략을 제시하며, 지난번 두산에너빌리티 추천에 이은 높은 적중률을 강조했습니다.\nChecking Constraints:\nKorean only? Yes.\nNo English? Yes.\nLength? Let's count characters.\n\"LG에너지솔루션이 미국 DT 에너지와 2조 4천억 원 규모의 오라클 AI 데이터 센터용 ESS 배터리 공급 계약을 체결하며 게임 체인저급 호재를 기록했습니다. 이 소식에 주가는 전 거래일 대비 15% 급등하며 거래량이 평균의 3배 이상 폭증하는 강세를 보였습니다. 이번 계약은 단순한 수주를 넘어 전기차 수요 둔화 우려를 해소하고 AI 데이터 센터 핵심 공급사로의 체질 개선을 알리는 중요한 신호로 평가받습니다. 화자는 이러한 시장 상황에서 기존 보유자와 신규 진입 희망자를 위한 맞춤형 대응 전략을 제시하며, 지난번 두산에너빌리티 추천에 이은 높은 적중률을 강조했습니다.\"\nCharacter count (including spaces): approx 270 characters.\nThe prompt asks for \"500자 내외\" (around 500 characters). 270 is a bit short. I need to expand slightly to hit the target range better, perhaps adding more detail about the specific stock movement or the implications of the contract.\nAttempt 3 (Expanding for length):\nLG에너지솔루션이 미국 DT 에",
+          "db_saved": true
+        },
+        {
+          "title": "왜곡된 시장 주의, 외국계 증권사들의 함정 (f. 반도체, 바이오, ESS, 현대차, 디앤디파마텍 ) #여인수 #선택과집중 #토마토TV",
+          "video_id": "OZK4Yg5jffo",
+          "views": 2640,
+          "upload_date": "2026-05-28",
+          "url": "https://www.youtube.com/watch?v=OZK4Yg5jffo",
+          "subtitle_summary": "1.  Analyze the Request:\nSource Material: A YouTube video transcript about the stock market, specifically discussing \"distorted marketism\" and \"traps by foreign securities firms.\" Key figures/topics mentioned: Yeon In-su, semiconductors (Hynix, Samsung), bio, ESS, Hyundai Motor, D&D Pharmatech.\nTask: Summarize the transcript in Korean.\nLength: Approximately 500 characters (Korean characters).\nConstraints: MUST respond ONLY in Korean. Do NOT use English. 3-5 sentences for the core summary.\n2.  Analyze the Transcript Content:\nContext: The market is down for most stocks, despite the index looking okay (blue light/green). It's late May/early June, a critical turning point.\nStrategy: Sell stocks that have done well recently. Hold stocks that are undervalued due to supply/demand issues but have good fundamentals/momentum. KOSDAQ bio stocks are at a critical time.\nMain Point (Title theme): Warning about foreign securities firms' reports.\nExample: Hyundai Motor got a target price hike to 120,000 won, but the speaker is skeptical.\nDistortion: Yesterday, a huge amount of money (30 trillion won) flooded into just one stock (Hynix). Combined with Samsung, it was 50 trillion won. This starved other stocks. It's abnormal.\nETF Trap: Leveraged (2x) ETFs are being launched. People dreaming of high prices (Samsung 500-600k, Hynix 3-4m) got hurt yesterday. The speaker warns these are traps for later.\nForeign Firms' Behavior: They raise target prices but sell. Examples: Nomura sold a lot. JP Morgan warned about Turkey. UBS raised Micron's target (3x). The speaker calls them \"market holders\" (manipulators/hype creators).\nConclusion: The market is distorted. Target prices are being used to lure retail investors into funds/ETFs while institutions sell. Be careful of the gap between recommendations (buy/raise target) and actual actions (selling).\n3.  Drafting the Summary (Iterative Process):\nDraft 1 (Mental Outline): The speaker warns that the market is distorted with money concentrated in a few semiconductor stocks like Hynix, causing other stocks to suffer. He specifically warns about foreign securities firms raising target prices (like for Hyundai Motor or Micron) while actually selling their holdings, calling it a trap. He advises managing risk, selling overperformers, and being wary of leveraged ETFs designed to lure retail investors. The current market is abnormal, and investors should not blindly trust the bullish reports from foreign firms.\nDraft 2 (Translating to Korean & Refining):\n최근 주식 시장은 소수 종목에 자금이 쏠리는 왜곡된 양상을 보이고 있어 투자자들의 리스크 관리가 필수적입니다. 연인수 전문가는 외국계 증권사들이 내놓는 목표가 상향 조정 리포트를 경계해야 한다고 강조하며, 이들이 리포트와 달리 실제로는 매도하고 있음을 지적했습니다. 특히 하이닉스 등 특정 반도체 주식에 거래대금이 과도하게 몰리는 현상은 비정상적이며, 레버리지 ETF 등의 상품 출시가 개인 투자자를 유인하는 함정이 될 수 있다고 경고했습니다. 따라서 상승한 종목은 매도 대상으로 삼고, 수급 부진으로 저점을 다지는 종목은 보유하는 전략이 필요합니다.\nChecking Character Count:\nThe draft looks to be around 250-300 characters. The prompt asks for \"around 500 characters\" (500자 내외). I need to expand a bit more on the details to meet the length requirement without being verbose.\nDraft 3 (Expanding for length):\n현재 주식 시장은 지수 상승과 무관하게 대다수 종목이 하락하는 불균형 속에 있으며, 5월 말에서 6월 초로 이어지는 중요한 분기점에서 리스크 관리가 그 어",
+          "db_saved": true
+        }
+      ],
+      "max": 0.2096,
+      "min": 1.1742,
+      "nb_score": 0.1785,
+      "avg_views": 579.75,
+      "total_views": 4638
+    },
+    {
+      "keyword": "대학수학능력시험 수험생 전략",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "사전투표 방법 및 장소",
+      "is_fixed": false,
+      "views": [
+        837
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "Early Voting D-1... NEC: \"Multiple Measures Introduced to Address Suspicions\" | News Now",
+          "video_id": "bvliUwbxm9I",
+          "views": 837,
+          "upload_date": "2026-05-28",
+          "url": "https://www.youtube.com/watch?v=bvliUwbxm9I",
+          "subtitle_summary": "1.  Analyze the Request:\nSource Material: A YouTube video transcript about early voting in South Korea (specifically regarding the June 3 local elections).\nTitle: Early Voting D-1... NEC: \"Multiple Measures Introduced to Address Suspicions\" | News Now.\nTask: Summarize the transcript in Korean.\nConstraints:\nONLY Korean (no English).\nAround 500 characters (Korean characters).\n3-5 sentences.\nCapture key points.\n2.  Analyze the Transcript:\nContext: Early voting for the June 3 local elections starts tomorrow for two days.\nCandidate's stance: Hwang Gyo-hwan (Liberty Innovation Party candidate in Pyeongtaek, Gyeonggi) emphasized voting on election day, alleging potential election fraud and urging citizens not to ignore suspicious materials.\nNEC (National Election Commission) response: While stating fraud suspicions are groundless, they introduced measures to address concerns.\nSpecific Measures:\n1.  CCTV installed in ballot box storage areas, accessible 24/7 in real-time to prevent box swapping.\n2.  Hourly disclosure of voter counts by polling station to dispel vote inflation rumors.\n3.  105 observers nationwide observing the entire process.\nObserver quote: Observers can see how difficult fraud is actually to commit, expanded nationwide this time.\nConclusion: Foreign officials admire the transparency, and many countries benchmark the Korean system.\n3.  Drafting the Summary (Iterative Process):\nDraft 1 (Mental Outline): 내일부터 지방선거 사전투표가 시작됩니다. 황교환 후보는 부정선거 의혹을 제기하며 당일 투표를 강조했습니다. 중선관위는 의혹을 해소하기 위해 CCTV 설치와 실시간 공개 등 여러 조치를 취했습니다. 참관인들도 전 과정을 지켜보고 있어 부정은 어렵다고 강조했습니다. 외국에서도 한국 시스템을 벤치마킹할 정도로 투명성이 높습니다.\nDraft 2 (Refining for length and flow):\n내일부터 이틀간 63 지방선거 사전투표가 시작되는 가운데, 일부 후보는 부정선거 의혹을 제기하며 당일 투표를 강조했습니다. 이에 대해 중앙선거관리위원회는 의혹이 근거 없음을 밝히면서도 투명성 확보를 위해 다양한 제도를 도입했습니다. 보관 장소 CCTV 설치 및 실시간 공개, 투표자 수 시간별 공개, 전국 참관단 운영 등을 통해 선거 과정을 철저히 감시하고 있습니다. 선관위는 참관을 통해 부정 선거의 어려움을 확인할 수 있다며, 해외에서도 한국의 선거 시스템을 벤치마킹할 정도로 투명성이 높다고 덧붙였습니다.\nCharacter Count Check (Draft 2):\n\"내일부터 이틀간 63 지방선거 사사전투표가 시작되는 가운데, 일부 후보는 부정선거 의혹을 제기하며 당일 투표를 강조했습니다. 이에 대해 중앙선거관리위원회는 의혹이 근거 없음을 밝히면서도 투명성 확보를 위해 다양한 제도를 도입했습니다. 보관 장소 CCTV 설치 및 실시간 공개, 투표자 수 시간별 공개, 전국 참관단 운영 등을 통해 선거 과정을 철저히 감시하고 있습니다. 선관위는 참관을 통해 부정 선거의 어려움을 확인할 수 있다며, 해외에서도 한국의 선거 시스템을 벤치마킹할 정도로 투명성이 높다고 덧붙였습니다.\"\n> Approx 230 characters (including spaces). This is a bit short. The prompt asks for \"500자 내외\" (around 500",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "테슬라 사이버트럭 한국 출시",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "달러 원화 환율 전망",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "한미 핵잠수함 협력",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "카카오 노조 파업 현황",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "유럽 러시아 군사 긴장",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "공약 비교",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "부산 저출생 대책 정책",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "수면 방해 카페인 영향",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "경기 광주 지방선거 유세",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "주택 재개발 사업 현황",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "전기차 충전소 리베이트 문제",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "스타벅스 상품권 판매 중단",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-05-29T15:17:00.089+09:00",
+  "category": "GPU",
+  "id": "gpu-geforce-rtx-4070-ti-super-amp-holo",
+  "name": "GeForce RTX 4070 Ti Super AMP Holo",
+  "maker": "ZOTAC",
+  "platform": "PCIe 4.0",
+  "estimatedPriceKrw": 1324000,
+  "priceBand": "60만원 이상",
+  "speedLabel": "GDDR6X",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "GPU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 85,
+  "valueIndex": 6.4,
+  "aiUseScore": 85,
+  "powerWatts": 285,
+  "tags": [
+    "gaming",
+    "ai"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "GPU",
+    "partId": "gpu-geforce-rtx-4070-ti-super-amp-holo",
+    "partName": "GeForce RTX 4070 Ti Super AMP Holo",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "GPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 850,
+      "value": 100,
+      "aiFit": 850,
+      "priceEfficiency": 80,
+      "powerEfficiency": 100
+    },
+    "nbVector": [
+      100,
+      850,
+      100,
+      850,
+      80,
+      100
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 152.805,
+    "nbMin": 338.238,
+    "weightedScore": 323,
+    "nbBand": "100~499",
+    "summary": "GPU GeForce RTX 4070 Ti Super AMP Holo 부품을 속도 중심 N/B 데이터베이스 점수 323점으로 저장했습니다."
+  },
+  "nbWeightedScore": 323,
+  "nbMax": 152.805,
+  "nbMin": 338.238,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=ZOTAC%20Gaming%20GeForce%20RTX%204070%20Ti%20Super%20AMP%20Holo%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "AMP Holo model with 16GB VRAM",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

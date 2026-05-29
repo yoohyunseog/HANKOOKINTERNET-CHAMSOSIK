@@ -148,6 +148,96 @@ class DateHelper:
         if prefer_today and dt < (today - timedelta(days=7)):
             return True
         return False
+    
+    @staticmethod
+    def relative_time_to_absolute(time_text: str) -> str:
+        """상대 시간을 절대 시간으로 변환
+        
+        예: "3시간 전" → "2026-05-29 11:30"
+            "30분 전" → "2026-05-29 14:30"
+            "방금" → "2026-05-29 15:00"
+        
+        Returns:
+            절대 시간 문자열 (YYYY-MM-DD HH:MM) 또는 변환 실패 시 원본 텍스트
+        """
+        if not time_text:
+            return time_text
+        
+        text = time_text.strip()
+        now = datetime.now()
+        
+        # "방금" 또는 "방금 전"
+        if '방금' in text:
+            return now.strftime("%Y-%m-%d %H:%M")
+        
+        # "N초 전"
+        seconds_match = re.search(r'(\d+)\s*초\s*전', text)
+        if seconds_match:
+            seconds = int(seconds_match.group(1))
+            result = now - timedelta(seconds=seconds)
+            return result.strftime("%Y-%m-%d %H:%M")
+        
+        # "N분 전"
+        minutes_match = re.search(r'(\d+)\s*분\s*전', text)
+        if minutes_match:
+            minutes = int(minutes_match.group(1))
+            result = now - timedelta(minutes=minutes)
+            return result.strftime("%Y-%m-%d %H:%M")
+        
+        # "N시간 전"
+        hours_match = re.search(r'(\d+)\s*시간\s*전', text)
+        if hours_match:
+            hours = int(hours_match.group(1))
+            result = now - timedelta(hours=hours)
+            return result.strftime("%Y-%m-%d %H:%M")
+        
+        # "N일 전"
+        days_match = re.search(r'(\d+)\s*일\s*전', text)
+        if days_match:
+            days = int(days_match.group(1))
+            result = now - timedelta(days=days)
+            return result.strftime("%Y-%m-%d %H:%M")
+        
+        # "어제"
+        if '어제' in text:
+            result = now - timedelta(days=1)
+            return result.strftime("%Y-%m-%d %H:%M")
+        
+        # "오늘"
+        if '오늘' in text:
+            return now.strftime("%Y-%m-%d %H:%M")
+        
+        # 이미 절대 시간 형식인 경우 그대로 반환
+        return text
+    
+    @staticmethod
+    def convert_time_display(time_text: str, show_both: bool = True) -> str:
+        """시간 표시를 변환하여 보기 좋게 출력
+        
+        Args:
+            time_text: 원본 시간 텍스트
+            show_both: True면 "2026-05-29 14:30 (30분 전)" 형식으로 둘 다 표시
+                      False면 절대 시간만 표시
+        
+        Returns:
+            변환된 시간 문자열
+        """
+        if not time_text:
+            return time_text
+        
+        text = time_text.strip()
+        
+        # 상대 시간 패턴 확인
+        is_relative = any(pattern in text for pattern in ['방금', '초 전', '분 전', '시간 전', '일 전', '어제', '오늘'])
+        
+        if is_relative:
+            absolute_time = DateHelper.relative_time_to_absolute(text)
+            if show_both and absolute_time != text:
+                return f"{absolute_time} ({text})"
+            return absolute_time
+        
+        # 이미 절대 시간인 경우 그대로 반환
+        return text
 
 
 class NewsManager:

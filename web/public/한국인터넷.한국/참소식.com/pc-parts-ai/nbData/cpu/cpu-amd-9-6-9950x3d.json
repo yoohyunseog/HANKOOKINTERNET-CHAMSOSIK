@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-28T13:52:33.150+09:00",
+  "updatedAt": "2026-05-29T15:16:57.847+09:00",
   "category": "CPU",
   "id": "cpu-amd-9-6-9950x3d",
   "name": "AMD 라이젠 9-6세대 9950X3D (그래니트 릿지)",
@@ -82,5 +82,9 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=AMD%20%EB%9D%BC%EC%9D%B4%EC%A0%A0%209%209950X3D%20%EC%B5%9C%EC%A0%80%EA%B0%80",
   "notes": "16-core, 32-thread processor with 144MB game cache.",
-  "textRepair": null
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
 }

@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-28T13:52:33.150+09:00",
+  "updatedAt": "2026-05-29T15:16:58.678+09:00",
   "category": "GPU",
   "id": "gpu-rtx-4060-ti-storm-x-dual-oc-d6-8gb",
   "name": "이엠텍 지포스 RTX 4060 Ti STORM X Dual OC D6 8GB",
@@ -80,5 +80,9 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=%EC%9D%B4%EC%97%A0%ED%85%8D%20%EC%A7%80%ED%8F%AC%EC%8A%A4%20RTX%204060%20Ti%20%EC%B5%9C%EC%A0%80%EA%B0%80",
   "notes": "STORM X Dual OC model",
-  "textRepair": null
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
 }

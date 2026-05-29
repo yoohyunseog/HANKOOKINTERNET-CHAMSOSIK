@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-28T13:52:33.150+09:00",
+  "updatedAt": "2026-05-29T15:16:58.115+09:00",
   "category": "CPU",
   "id": "cpu-core-i9-14900k",
   "name": "Core i9-14900K",
@@ -82,5 +82,9 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Intel%20Core%20i9-14900K%20%EC%B5%9C%EC%A0%80%EA%B0%80",
   "notes": "Raptor Lake Refresh, Bulk version observed",
-  "textRepair": null
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
 }

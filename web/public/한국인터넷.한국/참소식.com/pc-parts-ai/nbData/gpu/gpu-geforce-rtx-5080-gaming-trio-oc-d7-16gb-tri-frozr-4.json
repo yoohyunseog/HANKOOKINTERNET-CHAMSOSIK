@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-28T13:52:33.150+09:00",
+  "updatedAt": "2026-05-29T15:17:00.486+09:00",
   "category": "GPU",
   "id": "gpu-geforce-rtx-5080-gaming-trio-oc-d7-16gb-tri-frozr-4",
   "name": "GeForce RTX 5080 Gaming Trio OC D7 16GB Tri Frozr 4",
@@ -82,5 +82,9 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=GeForce%20RTX%205080%20MSI%20Gaming%20X%20Trio%20%EC%B5%9C%EC%A0%80%EA%B0%80",
   "notes": "GDDR7 memory, 3-fan cooling, 12V2x6 power connector",
-  "textRepair": null
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
 }

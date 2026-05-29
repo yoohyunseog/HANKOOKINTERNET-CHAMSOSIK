@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-28T13:52:33.150+09:00",
+  "updatedAt": "2026-05-29T15:17:02.956+09:00",
   "category": "PSU",
   "id": "psu-seasonic-new-focus-gx-850-gold-full-modular-atx-3.0",
   "name": "Seasonic NEW FOCUS GX-850 GOLD Full Modular ATX 3.0",
@@ -82,5 +82,9 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Seasonic%20Focus%20GX-850%20ATX%203.0%20price",
   "notes": "Includes 12V2x6 connector for newer GPUs.",
-  "textRepair": null
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
 }

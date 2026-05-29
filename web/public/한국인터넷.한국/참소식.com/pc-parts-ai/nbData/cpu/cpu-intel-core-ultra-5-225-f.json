@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-28T13:52:33.150+09:00",
+  "updatedAt": "2026-05-29T15:16:58.262+09:00",
   "category": "CPU",
   "id": "cpu-intel-core-ultra-5-225-f",
   "name": "Intel Core Ultra 5 225 F",
@@ -81,5 +81,9 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Intel%20Core%20Ultra%205%20225%20F%20%EC%A0%95%ED%92%88%20%EA%B0%80%EA%B2%A9",
   "notes": "No integrated graphics (F-suffix). P6+E4 cores.",
-  "textRepair": null
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
 }

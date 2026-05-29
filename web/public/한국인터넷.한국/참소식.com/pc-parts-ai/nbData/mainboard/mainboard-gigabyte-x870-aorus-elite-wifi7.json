@@ -1,0 +1,90 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-05-29T15:17:02.720+09:00",
+  "category": "Mainboard",
+  "id": "mainboard-gigabyte-x870-aorus-elite-wifi7",
+  "name": "GIGABYTE X870 AORUS ELITE WIFI7",
+  "maker": "GIGABYTE",
+  "platform": "AM5",
+  "estimatedPriceKrw": 352190,
+  "priceBand": "30~60만원",
+  "speedLabel": "DDR5 8000MHz",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "Mainboard",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 85,
+  "valueIndex": 24.1,
+  "aiUseScore": 55,
+  "powerWatts": 0,
+  "tags": [
+    "WiFi7",
+    "PCIe5.0",
+    "USB4"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "Mainboard",
+    "partId": "mainboard-gigabyte-x870-aorus-elite-wifi7",
+    "partName": "GIGABYTE X870 AORUS ELITE WIFI7",
+    "speed": {
+      "score": 100,
+      "weight": 0.32,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "Mainboard",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 850,
+      "value": 321,
+      "aiFit": 550,
+      "priceEfficiency": 280,
+      "powerEfficiency": 850
+    },
+    "nbVector": [
+      100,
+      850,
+      321,
+      550,
+      280,
+      850
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 318.245,
+    "nbMin": 378.422,
+    "weightedScore": 375,
+    "nbBand": "100~499",
+    "summary": "Mainboard GIGABYTE X870 AORUS ELITE WIFI7 부품을 속도 중심 N/B 데이터베이스 점수 375점으로 저장했습니다."
+  },
+  "nbWeightedScore": 375,
+  "nbMax": 318.245,
+  "nbMin": 378.422,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=GIGABYTE%20X870%20AORUS%20ELITE%20WIFI7%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "X870 chipset, 16+2+2 phase power delivery, supports up to 256GB RAM",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

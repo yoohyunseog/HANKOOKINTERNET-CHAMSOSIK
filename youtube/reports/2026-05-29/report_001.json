@@ -1,0 +1,267 @@
+{
+  "timestamp": "2026-05-29T00:03:13.853789",
+  "model": "glm-5:cloud",
+  "keyword_count": 3,
+  "analyze_subtitles": true,
+  "analysis_source": "youtube",
+  "keywords": [
+    {
+      "keyword": "오늘의 주요 뉴스",
+      "is_fixed": true,
+      "views": [
+        377
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "[12 News] Today's Top Stories / SBS",
+          "video_id": "KOSURbdgyMc",
+          "views": 377,
+          "upload_date": "2026-05-28",
+          "url": "https://www.youtube.com/watch?v=KOSURbdgyMc",
+          "subtitle_summary": "1.  Analyze the Request:\nSource Material: A YouTube video subtitle text (SBS 12 News headlines).\nLanguage Constraint: MUST respond ONLY in Korean. NO English allowed.\nLength Constraint: Around 500 characters (Korean characters).\nContent Constraint: Summarize the core content in 3-5 sentences.\nSource Content Analysis:\nItem 1: Seosomun overpass collapse (3rd day), recovery delayed due to fear of further collapse, police/prosecution investigation starting.\nItem 2: Early voting for June 3rd local elections and by-elections starts tomorrow for two days. Ruling and opposition parties campaigning.\nItem 3: US military airstrikes on Iranian facilities near Strait of Hormuz, shot down Iranian drones. Trump says ceasefire negotiations not satisfactory yet.\nItem 4: Kakao faces first strike since incorporation. Labor-management meeting failed, union declared strike for next month.\nIntro: SBS 12 News opening.\n2.  Drafting the Summary (Internal Monologue/Drafting in Korean):\nSentence 1 (Seosomun Overpass): 서소문 고가 차도 붕괴 사고가 발생한 지 사흘째인 가운데, 추가 붕괴 우려로 복구가 지연되고 경찰과 검찰 수사가 본격화되었습니다. (Seosomun overpass collapse, 3rd day, recovery delayed due to further collapse risk, investigation starting.)\nSentence 2 (Elections): 6월 3일 지방선거 및 국회의원 보궐선거 사전투표가 내일부터 시작되며, 여야 지도부는 지지층 결집에 총력을 다하고 있습니다. (June 3rd elections early voting starts tomorrow, parties focusing on gathering support.)\nSentence 3 (International/US-Iran): 미군이 호르무즈 해협 인근 이란 군사시설을 공습하고 드론을 격추했으나, 트럼프 대통령은 종전 협상에 부정적인 입장을 밝혔습니다. (US military attacked Iran facilities/drones, Trump negative on ceasefire talks.)\nSentence 4 (Kakao Strike): 카카오 노사가 임금 인상 등을 두고 합의점을 찾지 못하며 창사 이래 첫 파업 위기에 직면했습니다. (Kakao labor-management failed to agree, facing first strike ever.)\n3.  Refining and Checking Constraints:\nLanguage: Korean only? Yes.\nLength: Let's check the character count of the draft.\nDraft: 서소문 고가 차도 붕괴 사고가 발생한 지 사흘째인 가운데, 추가 붕괴 우려로 복구가 지연되고 경찰과 검찰 수사가 본격화되었습니다. 6월 3일 지방선거 및 국회의원 보궐선거 사전투표가 내일부터 시작되며, 여야 지도부는 지지층 결집에 총력을 다하고 있습니다. 미군이 호르무즈 해협 인근 이란 군사시설을 공습하고 드론을 격추했으나, 트럼프 대통령은 종전 협상에 부정적인 입장을 밝혔습니다. 카카오 노사가 임금 인상 등을 두고 합의점을 찾지 못하며 창사 이래 첫 파업 위기에 직면했습니다.\nCharacter count (including spaces): Approx 220 characters.\nAdjustment: The request asks for \"500자 내외\" (around 500 characters). My draft is a bit short (around 220). I need to expand slightly to meet the length requirement while keeping it within 3-5 sentences. I can add more detail from the source text.\n4.  Expanding the Draft:\nExpansion:\n(Seosomun): 서소문 고가 차도가 무너진 지 사흘째를 맞았지만 추가 붕괴 우려",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "지방선거 사전투표율",
+      "is_fixed": false,
+      "views": [
+        283,
+        148
+      ],
+      "video_count": 2,
+      "videos": [
+        {
+          "title": "내일부터 사전투표⋯신분증 있으면 어디서든 '투표'",
+          "video_id": "FgxghHnX904",
+          "views": 283,
+          "upload_date": "2026-05-28",
+          "url": "https://www.youtube.com/watch?v=FgxghHnX904",
+          "subtitle_summary": "1.  Analyze the Request:\nSource Material: A YouTube video transcript about early voting for the simultaneous local elections.\nTitle: \"Early voting starts tomorrow... Vote anywhere with ID.\"\nLanguage Constraint: MUST respond ONLY in Korean. NO English allowed.\nLength Constraint: Around 500 characters (Korean characters).\nContent Constraint: Summarize the core content in 3-5 sentences.\n2.  Analyze the Transcript:\nKey Point 1: Early voting for the nationwide simultaneous local elections starts tomorrow and lasts for two days.\nKey Point 2: Voters can vote at any polling place nationwide with just an ID, from 6 AM to 6 PM.\nKey Point 3: Voters receive 7 ballot papers (8 for those in areas with by-elections). No ballot for uncontested winners.\nKey Point 4: Transparent ballot boxes are introduced to prevent fraud allegations (switching boxes).\nKey Point 5: Precautions: Do not photograph ballots inside the booth, use only provided pens, and vote for only one candidate per ballot paper (even in multi-member districts) to avoid invalid votes.\nKey Point 6: Interest in whether the early voting rate will exceed the previous 24.2%.\n3.  Drafting the Summary (Iterative Process):\nDraft 1 (Mental Outline): 내일부터 이틀간 전국 동시 지방 선거 사전 투표가 진행됩니다. 신분증만 있으면 전국 어디서나 오전 6시부터 오후 6시까지 투표할 수 있습니다. 투표지는 기본 7장이며 재보궐 선거구는 8장입니다. 부정 선거 의혹을 막기 위해 투명한 투표함을 사용합니다. 주의할 점은 투표지 촬영 금지, 지정된 도구 사용, 그리고 반드시 한 명만 기표해야 한다는 것입니다.\nRefining for Length and Sentence Count (Target: 3-5 sentences, ~500 characters):\nSentence 1 (Timing & Location): 내일부터 이틀간 전국 동시 지방 선거 사전 투표가 진행되며, 신분증만 있으면 전국 어디서나 오전 6시부터 오후 6시까지 투표가 가능합니다. (Good start, covers the 'when' and 'where'.)\nSentence 2 (Ballots & Transparency): 유권자는 기본 7장의 투표지를 받게 되고, 부정 선거 의혹 해소를 위해 투명한 투표함이 처음으로 도입됩니다. (Combines ballot count and the new transparent box feature.)\nSentence 3 (Precautions/Invalid Votes): 투표소 내에서 투표지를 촬영하거나 지정된 기표 도구가 아닌 볼펜을 사용해서는 안 되며, 두 명 이상을 뽑는 선거라도 반드시 한 명의 후보자에게만 기표해야 무효표를 면할 수 있습니다. (Crucial warning about rules to avoid invalid votes.)\nSentence 4 (Closing/Interest): 지난 지방 선거 사전 투표율인 24.2%를 넘어설지 귀추가 주목됩니다. (Optional, but adds context. Let's check the character count.)\nCharacter Count Check:\nS1: 내일부터 이틀간 전국 동시 지방 선거 사전 투표가 진행되며, 신분증만 있으면 전국 어디서나 오전 6시부터 오후 6시까지 투표가 가능합니다. (66 chars)\nS2: 유권자는 기본 7장의 투표지를 받게 되고, 부정 선거 의혹 해소를 위해 투명한 투표함이 처음으로 도입됩니다. (51 chars)\nS3: 투표소 내에서 투표지를 촬영하거나 지정된 기표 도구가 아닌 볼펜을 사용",
+          "db_saved": true
+        },
+        {
+          "title": "제9회 지방선거 사전투표 ‘D-1’…주의할 점은? / KBS  2026.05.28.",
+          "video_id": "bNaFq5DM5UM",
+          "views": 148,
+          "upload_date": "2026-05-28",
+          "url": "https://www.youtube.com/watch?v=bNaFq5DM5UM",
+          "subtitle_summary": "The user wants a summary of the provided YouTube video transcript in Korean.\nThe transcript is about the upcoming 9th simultaneous local elections in South Korea, specifically focusing on early voting (사전투표).\nKey information from the text:\n1.  Event: 9th simultaneous local elections, early voting starts tomorrow for two days.\n2.  Location/Time: Jeonbuk region has 243 polling stations (one per district). Time: 6 AM to 6 PM.\n3.  Requirements: Need to bring an ID (official mobile ID okay, screenshots not allowed). Find locations on the election commission website.\n4.  Ballots: Usually 7 ballots (Governor, Mayor/County Head, Local Council District, Proportional Representation, Superintendent of Education). Number varies by region (by-elections, etc.).\n5.  Voting Rules: Must vote for only one candidate per ballot. Voting for two or more makes it invalid.\n6.  Prohibitions: No photography inside polling stations (criminal penalty).\n7.  Fairness: Observation teams (academics, civic groups) will monitor the process. Ballot boxes stored under CCTV surveillance.\n8.  Context: Early voting rates have fluctuated (16% -> 27% -> 24%). Interest in this election is high due to independent candidates.\nConstraints:\n1.  Language: Korean ONLY.\n2.  Length: Around 500 characters (Korean characters).\n3.  Structure: 3-5 sentences summarizing core content.\nDrafting the summary in Korean:\nSentence 1 (Introduction & Schedule):\n제9회 동시 지방선거 사전투표가 내일부터 사흘간 진행되며, 전북 지역에서는 오전 6시부터 오후 6시까지 243곳의 투표소에서 투표가 가능합니다.\n(Wait, text says \"이틀 동안\" (two days), not \"사흘간\". Correcting: 내일부터 이틀 동안.)\nSentence 2 (Preparation & Ballots):\n유권자는 반드시 신분증을 지참해야 하며 공식 모바일 신분증은 가능하지만 캡처 사진은 인정되지 않습니다. 투표용지는 보통 7장이지만 선거구에 따라 다를 수 있습니다.\nSentence 3 (Key Rules):\n가장 주의할 점은 모든 투표용지에서 반드시 한 명의 후보자만 기표해야 한다는 것으로, 두 명 이상 기표 시 무효표가 되며 투표소 내 사진 촬영은 형사 처벌 대상입니다.\nSentence 4 (Fairness & Context):\n선거 공정성을 위해 참관단이 운영되고 투표함 보관 상황이 CCTV로 공개되며, 치열한 선거 국면 속에서 이번 사전투표율이 결과에 미칠 영향이 주목받고 있습니다.\nLet's check the character count and flow.\nDraft:\n제9회 동시 지방선거 사전투표가 내일부터 이틀 동안 진행되며, 전북 지역에서는 오전 6시부터 오후 6시까지 243곳의 투표소에서 투표가 가능합니다. 유권자는 반드시 신분증을 지참해야 하며 공식 모바일 신분증은 가능하지만 캡처 사진은 인정되지 않습니다. 투표용지는 보통 7장이지만 선거구에 따라 다를 수 있으며, 가장 주의할 점은 모든 투표용지에서 반드시 한 명의 후보자만 기표해야 한다는 것입니다. 두 명 이상 기표 시 무효표 처리되고 투표소 내 사진 촬영은 형사 처벌 대상이니 유의해야 합니다. 한편, 선거 공정성을 위해 참관단이 운영되고 투표함 보관 상황이 CCTV로 공개되며, 치열한 선거 국면 속에서 이번 사전투표율이 결과에 미칠 영향이 주목받고 있습니다.\nCharacter count check (roughly):\nSentence 1: ~60 chars\nSentence 2: ~50 chars\nSentence 3: ~60 chars\nSentence 4:",
+          "db_saved": true
+        }
+      ],
+      "max": 3.4897,
+      "min": 0.0,
+      "nb_score": 34896.8198,
+      "avg_views": 215.5,
+      "total_views": 431
+    },
+    {
+      "keyword": "토론회",
+      "is_fixed": false,
+      "views": [
+        21254,
+        12535,
+        1887
+      ],
+      "video_count": 3,
+      "videos": [
+        {
+          "title": "역대급 데뷔전..사활을 건 토론회, 부산북구갑 고지전 승자는?",
+          "video_id": "94KDu3AULP8",
+          "views": 21254,
+          "upload_date": "2026-05-28",
+          "url": "https://www.youtube.com/watch?v=94KDu3AULP8",
+          "subtitle_summary": "1.  Analyze the Request:\nLanguage: Korean ONLY (no English).\nTask: Summarize the provided YouTube video transcript.\nLength: Around 500 characters (Korean characters).\nContent: A debate/argument between candidates (Ha Jung vs. Han Dong-hoon) regarding the Busan Buk-gu Gap election.\nKey Rules: Korean only, no English, ~500 characters, 3-5 sentences for the core summary.\n2.  Analyze the Transcript:\nContext: A debate forum for the Busan Buk-gu Gap constituency.\nSpeaker 1 (Ha Jung?): Starts by defending himself regarding \"Upstage\" (AI education business), claiming no conflict of interest. He then criticizes the other candidate for confusing \"outsiders\" with \"influx economic population\" and implying that residents' suffering is being ignored.\nSpeaker 2 (Han Dong-hoon?): Responds to the attack. He is questioned about his \"reform conservative\" stance versus looking like a return to the 80s dictatorship era.\nKey Controversy: The appointment of former Assemblyman Jeong Yeong-geun as the head of the sponsorship association (support group).\nCriticism against Han: Jeong Yeong-geun is described as having a serious history (human rights violations, beating a mother in front of her child at Nam-san, etc.). The critic asks if Han chose him for votes or if someone recommended him (mentioning a connection to a disabled person's organization).\nHan's Defense: Denies the allegations. States he chose Jeong because of his contribution to regional development (three-term assemblyman) and to show that \"reform conservative\" includes strong conservatives. He argues he is uniting various figures (including Seo Byeong-su) for regional development.\nRebuttal: The critic interprets this as Han having a low standard for human rights, bringing in someone who violated human rights, and questions why Han opposed the Yoon Seong-nyem faction (implied context).\n3.  Drafting the Summary (Iterative Process):\nAttempt 1 (Mental Outline): This video shows a heated debate between candidates in Busan Buk-gu Gap. Ha Jung defends his past AI business involvement and attacks Han Dong-hoon. The main issue is Han's appointment of Jeong Yeong-geun as sponsorship head. Ha criticizes Jeong's history of human rights violations and asks if Han is returning to past authoritarianism. Han defends the choice citing regional development and uniting conservatives, but faces strong backlash regarding his view on human rights.\nAttempt 2 (Translating to Korean & Refining): 부산북구갑 선거 토론회에서 후보 간 치열한 공방이 오갔습니다. 하정 후보는 자신의 AI 사업 관련 의혹을 해명하고, 외지인 유입 문제를 제기하며 상대 후보를 비판했습니다. 특히 한동훈 후보가 인권 유린 논란이 있는 정영근 전 의원을 후원회장으로 임명한 것을 두고, 과거 권위주의로의 회귀 아니냐며 강하게 추궁했습니다. 이에 한동훈 후보는 정 전 의원의 지역 공로와 보수 통합을 위해 영입했다고 해명했으나, 인권에 대한 인식 부족 논란은 계속되었습니다. 이 토론회는 후보들의 철학과 인사 검증 문제를 적나라하게 드러낸 장이었습니다.\nChecking Character Count:\n\"부산북구갑 선거 토론회에서 후보 간 치열한 공방이 오갔습니다. 하정 후보는 자신의 AI 사업 관련 의혹을 해명하고, 외지인 유입 문제를 제기하며 상대 후보를 비판했습니다. 특히 한동훈 후보가 인권 유린 논란이 있는 정영근 전 의원을 후원회장으로 임명한 것을 두고, 과거 권위주의로의 회귀 아니냐며 강하게 추궁했습니다. 이에 한동훈 후보는 정 전 의원의 지역 공로와 보수 통",
+          "db_saved": true
+        },
+        {
+          "title": "Buk-gu Gap Debate Turns into a 'Brawl,' Who Won? / Channel A / News TOP10",
+          "video_id": "zRJSyNvlxys",
+          "views": 12535,
+          "upload_date": "2026-05-28",
+          "url": "https://www.youtube.com/watch?v=zRJSyNvlxys",
+          "subtitle_summary": "1.  Analyze the Request:\nSource Material: A YouTube video transcript (Title: Buk-gu Gap Debate Turns into a 'Brawl,' Who Won? / Channel A / News TOP10).\nLanguage Constraint: MUST respond ONLY in Korean. NO English allowed.\nLength Constraint: Around 500 characters (Korean characters).\nContent Constraint: Summarize the core content in 3-5 sentences.\n2.  Analyze the Transcript:\nContext: A political debate involving candidates (Han Dong-hoon is mentioned as a target, others attacking him).\nKey Conflict: The debate heated up over the issue of who was responsible for requesting a 30-year sentence for former President Park Geun-hye.\nSpecifics:\nCandidates attacked Han Dong-hoon regarding the 30-year sentence request.\nHan admitted he was a prosecutor on the investigation team (led by Yoon Seok-youl) and involved in the trial, but stated he felt sorry humanely towards Park Geun-hye.\nAnother candidate (possibly Lee Jun-seok or someone else, context suggests a rival) challenged Han, asking if he was shifting blame to Yoon Seok-youl. They argued over whether Han attended the court personally.\nThere was a heated back-and-forth about whether the 30-year request was just law enforcement.\nThe debate got chaotic (microphones cutting off, candidates talking over each other), leading to an apology to viewers for the uneven broadcast.\nExpert Commentary (Lee Hyun-jong): Explains that the \"request for sentencing\" (구형) is done by the prosecution as an organization, not just an individual prosecutor. At the time, the case was handled by the Special Prosecutor's office (investigation) but the sentencing request was handled by the Seoul Central District Prosecutors' Office where Han was a senior prosecutor. Park didn't attend court personally. The expert implies that while Yoon led the investigation, the sentencing request is a collective decision by the prosecution system.\n3.  Drafting the Summary (Internal Monologue & Iteration):\nDraft 1 (Mental Outline): The debate was intense. Candidates attacked Han Dong-hoon about the 30-year sentence for Park Geun-hye. Han admitted involvement but apologized humanely. The other candidate pressed him on whether it was just enforcement. The broadcast was messy. An expert explained that sentencing is an organizational act by the prosecution, not just an individual's doing.\nDraft 2 (Translating to Korean & Refining):\n부산 북구 갑 보선 토론에서 한동훈 후보가 다른 후보들의 공세에 시달렸다. 핵심 쟁점은 박근혜 전 대통령에게 30년 형을 구형한 책임 소재였다. 한 후보는 수사팀의 일원으로 관여했음을 인정하면서도 인간적으로 미안한 마음을 표했다. 하지만 상대 후보는 이를 두고 윤석열 전 대통령에게 책임을 전가하느냐며 강하게 추궁했다. 토론장은 마이크가 꺼지는 등 난장판이 되었고, 전문가는 구형이 검찰 조직의 결정이지 개인의 행위가 아니라고 설명했다.\nChecking Length: Let's count characters roughly.\n부산 북구 갑 보선 토론에서 한동훈 후보가 다른 후보들의 공세에 시달렸다. (33)\n핵심 쟁점은 박근혜 전 대통령에게 30년 형을 구형한 책임 소재였다. (30)\n한 후보는 수사팀의 일원으로 관여했음을 인정하면서도 인간적으로 미안한 마음을 표했다. (35)\n하지만 상대 후보는 이를 두고 윤석열 전 대통령에게 책임을 전가하느냐며 강하게 추궁했다. (34)\n토론장은 마이크가 꺼지는 등 난장판이 되었고, 전문가는 구형이 검찰 조직의 결정이지 개인의 행위가 아니라고 설명했다. (48)",
+          "db_saved": true
+        },
+        {
+          "title": "'First and Final' Seoul Mayoral TV Debate... Safety vs. Stability / JTBC Newsroom",
+          "video_id": "u-lB8GPxpHc",
+          "views": 1887,
+          "upload_date": "2026-05-28",
+          "url": "https://www.youtube.com/watch?v=u-lB8GPxpHc",
+          "subtitle_summary": "1.  Analyze the Request:\nSource Material: A YouTube subtitle transcript about a Seoul Mayoral TV debate (JTBC Newsroom).\nTask: Summarize the content in Korean.\nLength: Approximately 500 characters (Korean characters).\nStructure: 3-5 sentences for the core summary.\nConstraint: MUST respond ONLY in Korean. NO English at all.\n2.  Analyze the Source Text (Transcript):\nContext: Tonight at 11 PM is the first and final TV debate for the Seoul Mayoral election.\nCandidate 1: Jung Won-ho (Democratic Party): Held an unscheduled press conference. Emphasized \"safety\" (citing Seosomun collapse, etc.). Claimed he prioritizes safety first. Mentioned he is leading in middle-ground voter polls.\nConflict: Jung criticized Oh Se-hoon for running a negative campaign and then asking for a policy debate, calling it dishonest.\nCandidate 2: Oh Se-hoon (People Power Party): Also held an unscheduled press conference. Acknowledged past failures/disappointments (Seosomun collapse, etc.). Emphasized \"stability\" and his ability to solve issues immediately. Asked for one more chance. Criticized Jung for refusing debates citing negativity.\nOther Candidates: Kim Jung-cheol (Reform Party) and Kwon Young-guk (Justice Party) are also participating.\nBroadcaster: JTBC.\n3.  Drafting the Summary (Iterative Process):\nDraft 1 (Mental Outline): Tonight is the first and last TV debate for the Seoul mayoral election. Jung Won-ho emphasized safety and criticized Oh's negative campaigning. Oh Se-hoon admitted past mistakes but stressed stability and asked for another chance to solve problems. Both candidates held surprise press conferences before the debate. Four candidates, including those from minor parties, will participate in the debate broadcast by JTBC.\nDraft 2 (Translating to Korean & Refining):\n오늘 밤 11시 서울시장 후보 간 첫이자 마지막 TV 토론이 열립니다. 정원호 더불어민주당 후보는 기자간담회를 열어 서소문 붕괴 사고 등을 언급하며 시민 안전을 최우선으로 하겠다고 강조했습니다. 반면 오세훈 국민의힘 후보는 과거 실책에 대해 사과하면서도, 자신만이 안정적으로 현안을 해결할 수 있다며 재선을 호소했습니다. 두 후보는 서로를 향해 네거티브 공방과 토론 거부 논란 등을 언급하며 치열한 대립을 예고했습니다. 이번 토론에는 두 후보 외에도 김정철, 권영국 후보가 참석해 4자 대결을 펼칩니다.\nChecking Character Count:\nThe draft looks a bit short. Let's expand slightly to hit closer to the \"500 characters\" target (though \"500자 내외\" usually allows for a bit less or more, typically 400-600 is acceptable, but the prompt asks for 3-5 sentences covering core content).\nDraft 3 (Expanding for detail and length):\n서울시장 선거를 앞두고 오늘 밤 첫이자 마지막 TV 토론이 진행되는 가운데, 주요 후보들이 기자간담회를 통해 치열한 공방을 벌였습니다. 정원호 더불어민주당 후보는 서소문 붕괴 사고 등을 언급하며 시민의 안전을 최우선 가치로 내세웠고, 중도층 지지율 우세를 근거로 자신감을 드러냈습니다. 이에 맞선 오세훈 국민의힘 후보는 과거 재임 시절 실책을 인정하면서도, 위기 상황을 안정적으로 해결할 준비가 되어 있다며 유권자에게 한 번 더 기회를 호소했습니다. 두 후보는 상대방의 네거티브 전략과 토론 태도를 비판",
+          "db_saved": true
+        }
+      ],
+      "max": 2.1541,
+      "min": 2.4927,
+      "nb_score": 0.8642,
+      "avg_views": 11892.0,
+      "total_views": 35676
+    },
+    {
+      "keyword": "미국 PCE 물가 동향 전망",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "연준 기준금리 동결 기조",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "AI 기술 발전 현황",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "코스피 상승 이유 분석",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "반도체 산업 전망",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "수면 질 개선 음식",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "유전자 시계 연구",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "디지털자산 투자 트렌드",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "수소차 산업 성장",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "주식 빚투자 위험",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "청년 퇴사 이유",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "카자흐스탄 원전 건설",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "중국 대사관 외교 발언",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    }
+  ]
+}

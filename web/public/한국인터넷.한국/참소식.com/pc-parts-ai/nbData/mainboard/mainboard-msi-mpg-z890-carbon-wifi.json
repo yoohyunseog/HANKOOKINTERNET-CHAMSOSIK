@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-28T13:52:33.150+09:00",
+  "updatedAt": "2026-05-29T15:17:02.807+09:00",
   "category": "Mainboard",
   "id": "mainboard-msi-mpg-z890-carbon-wifi",
   "name": "MSI MPG Z890 CARBON WIFI",
@@ -21,7 +21,7 @@
   "performance": 90,
   "valueIndex": 15.5,
   "aiUseScore": 59,
-  "powerWatts": null,
+  "powerWatts": 0,
   "tags": [
     "Z890",
     "WiFi",
@@ -82,5 +82,9 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=MSI%20MPG%20Z890%20CARBON%20WIFI%20price",
   "notes": "Intel Z890 chipset, Socket 1851, 20+1+1+1 phase power delivery, 5x M.2 slots.",
-  "textRepair": null
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
 }

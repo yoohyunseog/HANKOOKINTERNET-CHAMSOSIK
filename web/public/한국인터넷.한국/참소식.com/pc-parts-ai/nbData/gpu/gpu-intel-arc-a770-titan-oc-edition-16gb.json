@@ -1,0 +1,89 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-05-29T15:17:01.158+09:00",
+  "category": "GPU",
+  "id": "gpu-intel-arc-a770-titan-oc-edition-16gb",
+  "name": "Intel Arc A770 Titan OC Edition 16GB",
+  "maker": "Sparkle",
+  "platform": "PCIe 4.0",
+  "estimatedPriceKrw": 424100,
+  "priceBand": "30~60만원",
+  "speedLabel": "OC",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "GPU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 65,
+  "valueIndex": 15.3,
+  "aiUseScore": 42,
+  "powerWatts": 225,
+  "tags": [
+    "gaming",
+    "content creation"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "GPU",
+    "partId": "gpu-intel-arc-a770-titan-oc-edition-16gb",
+    "partName": "Intel Arc A770 Titan OC Edition 16GB",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "GPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 650,
+      "value": 204,
+      "aiFit": 420,
+      "priceEfficiency": 240,
+      "powerEfficiency": 100
+    },
+    "nbVector": [
+      100,
+      650,
+      204,
+      420,
+      240,
+      100
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 150.012,
+    "nbMin": 379.131,
+    "weightedScore": 268,
+    "nbBand": "100~499",
+    "summary": "GPU Intel Arc A770 Titan OC Edition 16GB 부품을 속도 중심 N/B 데이터베이스 점수 268점으로 저장했습니다."
+  },
+  "nbWeightedScore": 268,
+  "nbMax": 150.012,
+  "nbMin": 379.131,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Intel%20Arc%20A770%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "Sparkle Titan OC Edition with ThermalSync Torned Cooling",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

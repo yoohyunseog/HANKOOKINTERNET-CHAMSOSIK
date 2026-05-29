@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-28T13:52:33.150+09:00",
+  "updatedAt": "2026-05-29T15:17:00.773+09:00",
   "category": "GPU",
   "id": "gpu-gigabyte-aero-oc-rtx-5070-d7-12gb",
   "name": "GIGABYTE AERO OC 지포스 RTX 5070 D7 12GB",
@@ -81,5 +81,9 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=RTX%205070%20%EC%B5%9C%EC%A0%80%EA%B0%80",
   "notes": "AERO series typically features a white aesthetic.",
-  "textRepair": null
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
 }

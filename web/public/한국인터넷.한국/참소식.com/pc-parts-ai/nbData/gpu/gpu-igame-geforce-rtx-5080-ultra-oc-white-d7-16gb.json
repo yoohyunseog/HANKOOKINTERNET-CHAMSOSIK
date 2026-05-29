@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-28T13:52:33.150+09:00",
+  "updatedAt": "2026-05-29T15:17:01.121+09:00",
   "category": "GPU",
   "id": "gpu-igame-geforce-rtx-5080-ultra-oc-white-d7-16gb",
   "name": "iGame GeForce RTX 5080 Ultra OC White D7 16GB",
@@ -82,5 +82,9 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=COLORFUL%20iGame%20GeForce%20RTX%205080%20Ultra%20OC%20White%20D7%2016GB%20%EC%B5%9C%EC%A0%80%EA%B0%80",
   "notes": "GDDR7, 3-fan, White model",
-  "textRepair": null
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
 }

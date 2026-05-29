@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-28T13:52:33.150+09:00",
+  "updatedAt": "2026-05-29T15:16:59.365+09:00",
   "category": "GPU",
   "id": "gpu-asus-rog-strix-geforce-rtx-4070-super-oc-edition",
   "name": "ASUS ROG Strix GeForce RTX 4070 Super OC Edition",
@@ -81,5 +81,9 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=ASUS%20ROG%20STRIX%20GeForce%20RTX%204070%20SUPER%20%EC%B5%9C%EC%A0%80%EA%B0%80",
   "notes": "Observed price from Eurofinder listing",
-  "textRepair": null
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
 }

@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-28T13:52:33.150+09:00",
+  "updatedAt": "2026-05-29T15:17:00.854+09:00",
   "category": "GPU",
   "id": "gpu-gigabyte-aorus-geforce-rtx-5090-master-d7-32gb",
   "name": "GIGABYTE AORUS GeForce RTX 5090 MASTER D7 32GB",
@@ -82,5 +82,9 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=GeForce%20RTX%205090%20%EC%B5%9C%EC%A0%80%EA%B0%80",
   "notes": "Based on Danawa search result for AORUS MASTER model.",
-  "textRepair": null
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
 }

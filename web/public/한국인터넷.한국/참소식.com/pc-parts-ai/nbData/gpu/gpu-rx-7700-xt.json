@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-28T13:52:33.150+09:00",
+  "updatedAt": "2026-05-29T15:16:58.980+09:00",
   "category": "GPU",
   "id": "gpu-rx-7700-xt",
   "name": "AMD Radeon RX 7700 XT",
@@ -82,11 +82,15 @@
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=AMD%20Radeon%20RX%207700%20XT%20%EA%B0%80%EA%B2%A9",
   "notes": "AMD Radeon RX 7700 XT은 게임, 작업, AI 활용을 함께 검토할 그래픽카드 후보입니다.",
   "textRepair": {
-    "checkedAt": "2026-05-28T13:52:33.868+09:00",
+    "checkedAt": "2026-05-29T15:16:58.980+09:00",
     "method": "ai-text-sanity-rules",
     "repairedFields": [
       "speedLabel",
       "notes"
     ]
-  }
+  },
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
 }

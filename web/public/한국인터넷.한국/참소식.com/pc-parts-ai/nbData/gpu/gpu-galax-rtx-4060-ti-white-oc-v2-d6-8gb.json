@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-28T13:52:33.150+09:00",
+  "updatedAt": "2026-05-29T15:16:58.458+09:00",
   "category": "GPU",
   "id": "gpu-galax-rtx-4060-ti-white-oc-v2-d6-8gb",
   "name": "갤럭시 GALAX 지포스 RTX 4060 Ti WHITE OC V2 D6 8GB",
@@ -81,5 +81,9 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=%EA%B0%A4%EB%9F%AD%EC%8B%9C%20%EC%A7%80%ED%8F%AC%EC%8A%A4%20RTX%204060%20Ti%20%EC%B5%9C%EC%A0%80%EA%B0%80",
   "notes": "2-fan, LED light, Backplate, Zero-fan",
-  "textRepair": null
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
 }

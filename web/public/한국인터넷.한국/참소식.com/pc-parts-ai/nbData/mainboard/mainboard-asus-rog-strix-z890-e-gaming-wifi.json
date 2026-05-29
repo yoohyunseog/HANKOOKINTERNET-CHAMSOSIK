@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-28T13:52:33.150+09:00",
+  "updatedAt": "2026-05-29T15:17:02.705+09:00",
   "category": "Mainboard",
   "id": "mainboard-asus-rog-strix-z890-e-gaming-wifi",
   "name": "ASUS ROG STRIX Z890-E GAMING WIFI",
@@ -21,7 +21,7 @@
   "performance": 95,
   "valueIndex": 12.6,
   "aiUseScore": 62,
-  "powerWatts": null,
+  "powerWatts": 0,
   "tags": [
     "gaming",
     "overclocking",
@@ -82,5 +82,9 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=ASUS%20ROG%20STRIX%20Z890-E%20GAMING%20WIFI%20price",
   "notes": "Z890 chipset, LGA1851 socket, supports up to 192GB DDR5, 7x M.2 slots, Thunderbolt 4 support.",
-  "textRepair": null
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
 }

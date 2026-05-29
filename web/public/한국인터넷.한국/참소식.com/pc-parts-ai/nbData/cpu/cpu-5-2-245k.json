@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-28T13:52:33.150+09:00",
+  "updatedAt": "2026-05-29T15:16:57.608+09:00",
   "category": "CPU",
   "id": "cpu-5-2-245k",
   "name": "인텔 코어 울트라 5 시리즈2 245K (애로우레이크)",
@@ -81,5 +81,9 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Intel%20Core%20Ultra%205%20245K%20%EC%A0%95%ED%92%88%20%EC%B5%9C%EC%A0%80%EA%B0%80",
   "notes": "P6+E8 cores, 14 threads, DDR5 support",
-  "textRepair": null
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
 }

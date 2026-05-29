@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-28T13:52:33.150+09:00",
+  "updatedAt": "2026-05-29T15:16:59.594+09:00",
   "category": "GPU",
   "id": "gpu-asus-tuf-gaming-geforce-rtx-5070-12gb-gddr7-oc-edition",
   "name": "ASUS TUF Gaming GeForce RTX 5070 12GB GDDR7 OC Edition",
@@ -81,5 +81,9 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=ASUS%20TUF%20Gaming%20GeForce%20RTX%205070%2012GB%20GDDR7%20OC%20Edition%20%EC%B5%9C%EC%A0%80%EA%B0%80",
   "notes": "GDDR7 memory, 3.125-slot design",
-  "textRepair": null
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
 }

@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-28T13:52:33.150+09:00",
+  "updatedAt": "2026-05-29T15:17:00.173+09:00",
   "category": "GPU",
   "id": "gpu-geforce-rtx-4070-ti-super-zotac-gaming-amp-holo",
   "name": "GeForce RTX 4070 Ti Super ZOTAC GAMING AMP Holo",
@@ -81,5 +81,9 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=GeForce%20RTX%204070%20Ti%20Super%20ZOTAC%20GAMING%20AMP%20Holo%20%EC%B5%9C%EC%A0%80%EA%B0%80",
   "notes": "AMP Holo model with 16GB GDDR6X",
-  "textRepair": null
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
 }
