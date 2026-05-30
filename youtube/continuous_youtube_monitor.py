@@ -2715,12 +2715,12 @@ def analyze_with_zum(video_title: str, keyword: str, model: str) -> str:
 
 
 def analyze_with_youtube(video_id: str, video_title: str, keyword: str, model: str, upload_date: str = "") -> str:
-    """ChromeDriver로 YouTube 자막 직접 추출 후 분석"""
+    """YouTube 자막 추출 후 분석 (youtube-transcript-api + yt-dlp 사용, Selenium 없음)"""
     import time
 
     now_str = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
-    # ChromeDriver 열기 전에 실제 업로드일 재확인 (오늘 날짜만 허용)
+    # 업로드일 확인 (오늘 날짜만 허용)
     verified_upload_date = resolve_upload_date_by_video_id(video_id)
     if verified_upload_date:
         if not is_today_only(verified_upload_date):
@@ -2728,7 +2728,7 @@ def analyze_with_youtube(video_id: str, video_title: str, keyword: str, model: s
                 video_id,
                 video_title,
                 "youtube",
-                f"크롬 진입 전 스킵: verified_upload_date={verified_upload_date}, now={now_str}, rule=today_only",
+                f"스킵: verified_upload_date={verified_upload_date}, now={now_str}, rule=today_only",
                 upload_date=verified_upload_date,
             )
             return "오늘 날짜 영상 아님(건너뜀)"
@@ -2737,307 +2737,35 @@ def analyze_with_youtube(video_id: str, video_title: str, keyword: str, model: s
             video_id,
             video_title,
             "youtube",
-            f"크롬 진입 전 스킵(검색일자 기준): upload_date={upload_date}, now={now_str}, rule=today_only",
+            f"스킵(검색일자 기준): upload_date={upload_date}, now={now_str}, rule=today_only",
             upload_date=upload_date,
         )
         return "오늘 날짜 영상 아님(건너뜀)"
     
-    driver = None
+    print(f"            [자막 추출] API 방식으로 시도 (youtube-transcript-api + yt-dlp)")
+    
     try:
-        from selenium import webdriver
-        from selenium.webdriver.chrome.options import Options
-        from selenium.webdriver.chrome.service import Service
-        from selenium.webdriver.common.by import By
-        from selenium.webdriver.support.ui import WebDriverWait
-        from selenium.webdriver.support import expected_conditions as EC
-        from webdriver_manager.chrome import ChromeDriverManager
-
-        options = Options()
-        if SEARCH_HEADLESS == "1":
-            options.add_argument("--headless=new")
-        options.add_argument("--disable-gpu")
-        options.add_argument("--no-sandbox")
-        options.add_argument("--disable-dev-shm-usage")
-        options.add_argument("--window-size=1280,1800")
-        options.add_argument("--lang=ko-KR")
-        options.add_argument("--disable-blink-features=AutomationControlled")
-        options.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36")
-        options.add_experimental_option("excludeSwitches", ["enable-automation"])
-        options.add_experimental_option("useAutomationExtension", False)
-
-        chrome_binary = os.getenv("CHROME_BINARY", "").strip()
-        if chrome_binary:
-            options.binary_location = chrome_binary
-
-        # ChromeDriver lock 파일 정리 후 설치
-        cleanup_chromedriver_lock()
-        try:
-            service = Service(ChromeDriverManager().install())
-        except Exception as e:
-            print(f"            [WARN] ChromeDriver 설치 재시도: {e}")
-            cleanup_chromedriver_lock()
-            time.sleep(2)
-            service = Service(ChromeDriverManager().install())
+        # youtube-transcript-api + yt-dlp로 자막 추출
+        subtitles_text = get_video_subtitles(video_id)
         
-        driver = webdriver.Chrome(service=service, options=options)
-        driver.set_page_load_timeout(30)
+        if subtitles_text and len(subtitles_text) >= 50 and subtitles_text not in {"자막 없음", "자막 요청 제한(429)", "자막 추출 실패"}:
+            print(f"            [자막 추출] 성공, 자막 길이: {len(subtitles_text)}자")
+            return analyze_subtitles_with_ollama(subtitles_text, model, video_title)
         
-        # YouTube 영상 페이지 접속
-        driver.get(f"https://www.youtube.com/watch?v={video_id}")
-        time.sleep(5)  # 페이지 로드 대기
+        # 실패 시 로그 기록
+        fail_reason = "자막 없음 또는 길이 부족"
+        if subtitles_text in {"자막 없음", "자막 요청 제한(429)", "자막 추출 실패"}:
+            fail_reason = subtitles_text
         
-        subtitles_text = ""
-        fail_reasons = []
-        transcript_opened = False
-        try:
-            wait = WebDriverWait(driver, 20)
-            
-            # 1단계: "더보기" 버튼 클릭 (설명란 확장) - 여러 선택자 시도
-            try:
-                # 시도 1: 새 UI
-                more_button = wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, "tp-yt-paper-button#expand")))
-                more_button.click()
-                time.sleep(2)
-            except Exception:
-                try:
-                    # 시도 2: 구 UI
-                    more_button = driver.find_element(By.XPATH, "//button[@aria-label='더보기' or contains(text(), '더보기')]")
-                    more_button.click()
-                    time.sleep(2)
-                except Exception:
-                    try:
-                        # 시도 3: 영문
-                        more_button = driver.find_element(By.XPATH, "//button[contains(@aria-label, 'Show more') or contains(text(), 'more')]")
-                        more_button.click()
-                        time.sleep(2)
-                    except Exception:
-                        pass
-
-            # 2단계: "스크립트 표시" 텍스트를 찾아 클릭 (가장 중요!)
-            def _panel_visible() -> bool:
-                selectors = [
-                    "ytd-transcript-renderer",
-                    "ytd-transcript-search-panel-renderer",
-                    "transcript-segment-view-model",
-                    "ytd-engagement-panel-section-list-renderer[target-id*='transcript']",
-                ]
-                return any(driver.find_elements(By.CSS_SELECTOR, sel) for sel in selectors)
-
-            def _safe_click(elem) -> bool:
-                try:
-                    driver.execute_script("arguments[0].scrollIntoView({block:'center'});", elem)
-                except Exception:
-                    pass
-                try:
-                    elem.click()
-                    return True
-                except Exception:
-                    try:
-                        driver.execute_script("arguments[0].click();", elem)
-                        return True
-                    except Exception:
-                        return False
-
-            # 메뉴 기반 transcript 항목이 뜨는 UI를 대비해 메뉴 버튼 먼저 열기 시도
-            menu_candidates = [
-                "//button[contains(@aria-label,'더보기') or contains(@aria-label,'More actions') or contains(@aria-label,'작업 더보기')]",
-                "//ytd-menu-renderer//button",
-            ]
-            for menu_xpath in menu_candidates:
-                if transcript_opened:
-                    break
-                try:
-                    for menu_btn in driver.find_elements(By.XPATH, menu_xpath)[:3]:
-                        _safe_click(menu_btn)
-                        time.sleep(0.5)
-                        if _panel_visible():
-                            transcript_opened = True
-                            break
-                except Exception:
-                    pass
-
-            transcript_locators = [
-                (By.XPATH, "//button[contains(@aria-label, '스크립트 표시') or contains(., '스크립트 표시')]"),
-                (By.XPATH, "//button[contains(@aria-label, '스크립트') or contains(., '스크립트')]"),
-                (By.XPATH, "//button[contains(@aria-label, 'Show transcript') or contains(., 'Show transcript') or contains(@aria-label, 'transcript')]"),
-                (By.CSS_SELECTOR, "ytd-video-description-transcript-section-renderer button"),
-                (By.XPATH, "//*[self::tp-yt-paper-item or self::ytd-menu-service-item-renderer or self::yt-formatted-string][contains(., '스크립트 표시') or contains(., '스크립트') or contains(., 'Show transcript') or contains(., 'Transcript')]"),
-            ]
-
-            if not transcript_opened:
-                for _ in range(3):
-                    for by, locator in transcript_locators:
-                        if transcript_opened:
-                            break
-                        try:
-                            candidates = driver.find_elements(by, locator)
-                            for candidate in candidates:
-                                marker = ((candidate.text or "") + " " + (candidate.get_attribute("aria-label") or "")).lower()
-                                if "스크립트" not in marker and "transcript" not in marker:
-                                    continue
-                                if _safe_click(candidate):
-                                    time.sleep(1.2)
-                                    if _panel_visible():
-                                        transcript_opened = True
-                                        break
-                        except Exception:
-                            continue
-
-                    if transcript_opened:
-                        break
-
-                    # 최후 수단: JS 텍스트 탐색 클릭
-                    try:
-                        clicked = driver.execute_script("""
-                            const nodes = Array.from(document.querySelectorAll('button, tp-yt-paper-item, ytd-menu-service-item-renderer, yt-formatted-string, a, span'));
-                            const target = nodes.find(el => {
-                                const t = (el.innerText || el.textContent || '').toLowerCase();
-                                const a = (el.getAttribute && el.getAttribute('aria-label') || '').toLowerCase();
-                                return t.includes('스크립트 표시') || t.includes('스크립트') || t.includes('show transcript') || t.includes('transcript') || a.includes('스크립트') || a.includes('transcript');
-                            });
-                            if (!target) return false;
-                            try { target.scrollIntoView({block: 'center'}); } catch (e) {}
-                            try { target.click(); } catch (e) { return false; }
-                            return true;
-                        """)
-                        if clicked:
-                            time.sleep(1.2)
-                            transcript_opened = _panel_visible()
-                    except Exception:
-                        pass
-
-            if not transcript_opened:
-                fail_reasons.append("스크립트 표시 텍스트 탐색/클릭 실패")
-            
-            # 3단계: Transcript 패널에서 텍스트 추출
-            if transcript_opened:
-                try:
-                    # Transcript 패널 찾기
-                    time.sleep(2)
-
-                    # 무한 로딩 감지: 일정 시간 내 자막 세그먼트가 안 뜨면 로딩 실패로 처리
-                    try:
-                        loading_timeout_sec = int(os.getenv("TRANSCRIPT_LOADING_TIMEOUT_SEC", "12"))
-                    except ValueError:
-                        loading_timeout_sec = 12
-
-                    start_wait = time.time()
-                    while time.time() - start_wait < loading_timeout_sec:
-                        has_segments = bool(driver.find_elements(By.CSS_SELECTOR, "transcript-segment-view-model, ytd-transcript-segment-renderer"))
-                        loading_visible = bool(driver.find_elements(By.CSS_SELECTOR, "tp-yt-paper-spinner-lite, ytd-transcript-renderer #spinner, yt-spec-touch-feedback-shape"))
-                        if has_segments:
-                            break
-                        if not loading_visible:
-                            break
-                        time.sleep(0.8)
-
-                    has_segments_after_wait = bool(driver.find_elements(By.CSS_SELECTOR, "transcript-segment-view-model, ytd-transcript-segment-renderer"))
-                    if not has_segments_after_wait:
-                        fail_reasons.append("스크립트 패널 무한 로딩 또는 세그먼트 미생성")
-                    
-                    # 방법 1: 신 구조 - transcript-segment-view-model의 실제 텍스트
-                    try:
-                        transcript_segments = driver.find_elements(By.CSS_SELECTOR, 
-                            "transcript-segment-view-model yt-core-attributed-string[role='text']"
-                        )
-                        if transcript_segments and len(transcript_segments) > 0:
-                            subtitles_text = " ".join([seg.text.strip() for seg in transcript_segments if seg.text.strip()])
-                    except Exception:
-                        pass
-                    
-                    # 방법 2: XPath로 모든 자막 세그먼트 수집
-                    if not subtitles_text:
-                        try:
-                            transcript_segments = driver.find_elements(By.XPATH, 
-                                "//transcript-segment-view-model//span[@role='text']"
-                            )
-                            if transcript_segments:
-                                subtitles_text = " ".join([seg.text.strip() for seg in transcript_segments if seg.text.strip()])
-                        except Exception:
-                            pass
-                    
-                    # 방법 3: ytd-transcript-segment-renderer (구 구조)
-                    if not subtitles_text:
-                        try:
-                            transcript_segments = driver.find_elements(By.CSS_SELECTOR, 
-                                "ytd-transcript-segment-renderer yt-formatted-string"
-                            )
-                            if transcript_segments:
-                                subtitles_text = " ".join([seg.text.strip() for seg in transcript_segments if seg.text.strip()])
-                        except Exception:
-                            pass
-                    
-                    # 방법 4: yt-formatted-string.segment-text
-                    if not subtitles_text:
-                        try:
-                            transcript_segments = driver.find_elements(By.CSS_SELECTOR, 
-                                "yt-formatted-string.segment-text"
-                            )
-                            if transcript_segments:
-                                subtitles_text = " ".join([seg.text.strip() for seg in transcript_segments if seg.text.strip()])
-                        except Exception:
-                            pass
-                    
-                    # 방법 5: ytd-transcript-renderer이나 ytd-transcript-view 전체 텍스트
-                    if not subtitles_text:
-                        try:
-                            transcript_container = driver.find_element(By.CSS_SELECTOR, 
-                                "ytd-transcript-renderer, ytd-transcript-view"
-                            )
-                            if transcript_container:
-                                # 전체 텍스트에서 타임스탐프 제거
-                                full_text = transcript_container.text
-                                # 타임스탐프 패턴 제거 (0:00, 1:23 등)
-                                import re
-                                subtitles_text = re.sub(r'\d+:\d{2}\s+', '', full_text).strip()
-                        except Exception:
-                            pass
-                            
-                except Exception:
-                    fail_reasons.append("Transcript 패널 텍스트 추출 실패")
-            
-            # 4단계: 플레이어 자막 시도 (옵션 fallback)
-            if not subtitles_text and transcript_opened and YOUTUBE_CC_FALLBACK:
-                try:
-                    # CC 버튼 클릭
-                    cc_button = driver.find_element(By.CSS_SELECTOR, "button.ytp-subtitles-button")
-                    cc_button.click()
-                    time.sleep(3)
-                    
-                    # 자막 컨테이너에서 추출
-                    subtitle_containers = driver.find_elements(By.CSS_SELECTOR, "div.ytp-caption-segment")
-                    if subtitle_containers:
-                        subtitles_text = " ".join([elem.text.strip() for elem in subtitle_containers if elem.text.strip()])
-                except Exception:
-                    fail_reasons.append("플레이어 CC 자막 추출 실패")
-            
-        except Exception as e:
-            fail_reasons.append(f"자막 추출 단계 예외: {str(e)[:200]}")
-        
-        if not subtitles_text or len(subtitles_text) < 50:
-            # Selenium UI 추출 실패 시 비-UI 자막 폴백(youtube_transcript_api/yt_dlp)
-            print(f"            [자막 추출] Selenium UI 실패, API 폴백 시도...")
-            print(f"            [자막 추출] 실패 원인: {' | '.join(fail_reasons) if fail_reasons else '자막 텍스트 없음'}")
-            
-            fallback_subtitles = get_video_subtitles(video_id)
-            if fallback_subtitles and len(fallback_subtitles) >= 50 and fallback_subtitles not in {"자막 없음", "자막 요청 제한(429)", "자막 추출 실패"}:
-                print(f"            [자막 추출] API 폴백 성공, 자막 길이: {len(fallback_subtitles)}자")
-                return analyze_subtitles_with_ollama(fallback_subtitles, model, video_title)
-            
-            print(f"            [자막 추출] API 폴백도 실패")
-            reason = " | ".join(fail_reasons) if fail_reasons else "자막 텍스트 없음 또는 길이 부족(<50)"
-            log_subtitle_failure(
-                video_id,
-                video_title,
-                "youtube",
-                reason,
-                upload_date=verified_upload_date or upload_date,
-            )
-            return "유튜브 자막 추출 실패"
-            
-        # Ollama로 요약
-        print(f"            [자막 추출] 성공, 자막 길이: {len(subtitles_text)}자")
-        return analyze_subtitles_with_ollama(subtitles_text, model, video_title)
+        print(f"            [자막 추출] 실패: {fail_reason}")
+        log_subtitle_failure(
+            video_id,
+            video_title,
+            "youtube",
+            f"API 방식 실패: {fail_reason}",
+            upload_date=verified_upload_date or upload_date,
+        )
+        return "유튜브 자막 추출 실패"
         
     except Exception as e:
         print(f"            [자막 추출] 예외 발생: {str(e)[:200]}")
@@ -3045,17 +2773,11 @@ def analyze_with_youtube(video_id: str, video_title: str, keyword: str, model: s
             video_id,
             video_title,
             "youtube",
-            f"크롬드라이버 예외: {str(e)[:300]}",
+            f"자막 추출 예외: {str(e)[:300]}",
             upload_date=verified_upload_date or upload_date,
         )
         return "유튜브 자막 추출 실패"
-    finally:
-        if driver:
-            try:
-                time.sleep(10)  # 결과 확인 대기
-                driver.quit()
-            except Exception:
-                pass
+
 
 
 def collect_youtube_data(

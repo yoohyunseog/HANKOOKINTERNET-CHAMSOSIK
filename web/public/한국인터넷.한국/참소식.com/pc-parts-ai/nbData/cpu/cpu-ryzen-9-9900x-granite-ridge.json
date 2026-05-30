@@ -1,0 +1,90 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-05-30T12:02:26.949+09:00",
+  "category": "CPU",
+  "id": "cpu-ryzen-9-9900x-granite-ridge",
+  "name": "Ryzen 9 9900X (Granite Ridge)",
+  "maker": "AMD",
+  "platform": "AM5",
+  "estimatedPriceKrw": 643700,
+  "priceBand": "60만원 이상",
+  "speedLabel": "5.6GHz",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "CPU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 92,
+  "valueIndex": 14.3,
+  "aiUseScore": 60,
+  "powerWatts": 120,
+  "tags": [
+    "productivity",
+    "gaming",
+    "zen5"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "CPU",
+    "partId": "cpu-ryzen-9-9900x-granite-ridge",
+    "partName": "Ryzen 9 9900X (Granite Ridge)",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "CPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 920,
+      "value": 191,
+      "aiFit": 600,
+      "priceEfficiency": 160,
+      "powerEfficiency": 256
+    },
+    "nbVector": [
+      100,
+      920,
+      191,
+      600,
+      160,
+      256
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 141.743,
+    "nbMin": 344.002,
+    "weightedScore": 341,
+    "nbBand": "100~499",
+    "summary": "CPU Ryzen 9 9900X (Granite Ridge) 부품을 속도 중심 N/B 데이터베이스 점수 341점으로 저장했습니다."
+  },
+  "nbWeightedScore": 341,
+  "nbMax": 141.743,
+  "nbMin": 344.002,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=AMD%20%EB%9D%BC%EC%9D%B4%EC%A0%A0%209%209900X%20%EC%A0%95%ED%92%88%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "12-core, 24-thread CPU. Multi-pack genuine version.",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

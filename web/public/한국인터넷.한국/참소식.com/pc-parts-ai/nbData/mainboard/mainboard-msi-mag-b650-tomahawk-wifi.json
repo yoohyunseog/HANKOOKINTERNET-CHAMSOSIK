@@ -1,0 +1,90 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-05-30T12:02:32.657+09:00",
+  "category": "Mainboard",
+  "id": "mainboard-msi-mag-b650-tomahawk-wifi",
+  "name": "MSI MAG B650 TOMAHAWK WIFI",
+  "maker": "MSI",
+  "platform": "AM5",
+  "estimatedPriceKrw": 248790,
+  "priceBand": "15~30만원",
+  "speedLabel": "B650",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "Mainboard",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 70,
+  "valueIndex": 28.1,
+  "aiUseScore": 46,
+  "powerWatts": 0,
+  "tags": [
+    "ATX",
+    "WiFi",
+    "DDR5"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "Mainboard",
+    "partId": "mainboard-msi-mag-b650-tomahawk-wifi",
+    "partName": "MSI MAG B650 TOMAHAWK WIFI",
+    "speed": {
+      "score": 100,
+      "weight": 0.32,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "Mainboard",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 700,
+      "value": 375,
+      "aiFit": 460,
+      "priceEfficiency": 400,
+      "powerEfficiency": 700
+    },
+    "nbVector": [
+      100,
+      700,
+      375,
+      460,
+      400,
+      700
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 395.49,
+    "nbMin": 388.544,
+    "weightedScore": 345,
+    "nbBand": "100~499",
+    "summary": "Mainboard MSI MAG B650 TOMAHAWK WIFI 부품을 속도 중심 N/B 데이터베이스 점수 345점으로 저장했습니다."
+  },
+  "nbWeightedScore": 345,
+  "nbMax": 395.49,
+  "nbMin": 388.544,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=MSI%20MAG%20B650%20TOMAHAWK%20WIFI%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "14+2+1 phase power delivery, supports up to 256GB RAM (as of Dec 2024).",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

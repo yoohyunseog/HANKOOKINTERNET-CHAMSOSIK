@@ -1,0 +1,89 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-05-30T12:02:27.264+09:00",
+  "category": "GPU",
+  "id": "gpu-aoostar-xg76-xt-radeon-rx-7600-xt",
+  "name": "AOOSTAR XG76 XT Radeon RX 7600 XT",
+  "maker": "AOOSTAR",
+  "platform": "eGPU",
+  "estimatedPriceKrw": 689000,
+  "priceBand": "60만원 이상",
+  "speedLabel": "2470MHz",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "GPU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 55,
+  "valueIndex": 8,
+  "aiUseScore": 36,
+  "powerWatts": 150,
+  "tags": [
+    "eGPU",
+    "USB4"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "GPU",
+    "partId": "gpu-aoostar-xg76-xt-radeon-rx-7600-xt",
+    "partName": "AOOSTAR XG76 XT Radeon RX 7600 XT",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "GPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 550,
+      "value": 107,
+      "aiFit": 360,
+      "priceEfficiency": 150,
+      "powerEfficiency": 122
+    },
+    "nbVector": [
+      100,
+      550,
+      107,
+      360,
+      150,
+      122
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 119.819,
+    "nbMin": 386.956,
+    "weightedScore": 222,
+    "nbBand": "100~499",
+    "summary": "GPU AOOSTAR XG76 XT Radeon RX 7600 XT 부품을 속도 중심 N/B 데이터베이스 점수 222점으로 저장했습니다."
+  },
+  "nbWeightedScore": 222,
+  "nbMax": 119.819,
+  "nbMin": 386.956,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Radeon%20RX%207600%20XT%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "External GPU enclosure with RX 7600 XT",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

@@ -1,0 +1,88 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-05-30T12:02:31.742+09:00",
+  "category": "GPU",
+  "id": "gpu-radeon-rx-9070-xt-d6-16gb",
+  "name": "Radeon RX 9070 XT D6 16GB",
+  "maker": "AMD",
+  "platform": "PCIe",
+  "estimatedPriceKrw": 1100000,
+  "priceBand": "60만원 이상",
+  "speedLabel": "D6",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "GPU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 85,
+  "valueIndex": 7.7,
+  "aiUseScore": 55,
+  "powerWatts": 220,
+  "tags": [
+    "gaming"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "GPU",
+    "partId": "gpu-radeon-rx-9070-xt-d6-16gb",
+    "partName": "Radeon RX 9070 XT D6 16GB",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "GPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 850,
+      "value": 103,
+      "aiFit": 550,
+      "priceEfficiency": 90,
+      "powerEfficiency": 129
+    },
+    "nbVector": [
+      100,
+      850,
+      103,
+      550,
+      90,
+      129
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 106.938,
+    "nbMin": 323.197,
+    "weightedScore": 296,
+    "nbBand": "100~499",
+    "summary": "GPU Radeon RX 9070 XT D6 16GB 부품을 속도 중심 N/B 데이터베이스 점수 296점으로 저장했습니다."
+  },
+  "nbWeightedScore": 296,
+  "nbMax": 106.938,
+  "nbMin": 323.197,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=AMD%20%EB%9D%BC%EB%8D%B0%EC%98%A8%20RX%209070%20XT%20%EC%B6%9C%EC%8B%9C%EC%9D%BC%20%EA%B0%80%EA%B2%A9",
+  "notes": "Observed multiple vendor models (ASUS, PowerColor, SAPPHIRE, ASRock, XFX) with prices ranging from approx 1,027,200 to 1,602,000 KRW.",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

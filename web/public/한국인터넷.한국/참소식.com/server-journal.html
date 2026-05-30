@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="ko">
 <head>
   <meta charset="utf-8">
@@ -233,7 +233,39 @@
       <h2 id="timeline-title">시간별 서버 일지</h2>
       <ol class="timeline-list">
         <li class="timeline-item">
-          <time class="timeline-time" datetime="2026-05-29T18:00:00+09:00">2026-05-29 18:00 KST</time>
+          <time class="timeline-time" datetime="2026-05-29T15:15:00+09:00">2026-05-29 15:15 KST</time>
+          <div class="timeline-body">
+            <strong>World Monitor AI 데이터 및 YouTube 모니터링 키워드 업데이트</strong>
+            <p><a href="./world-monitor-ai.json">World Monitor AI JSON</a> 데이터를 최신 뉴스 피드 기반으로 갱신했습니다. 삼성전자 HBM4E 12단 샘플 출하, LG전자 주가 급등 및 엔비디아 협력 기대감, 코스피 기관 매수세 유입 등 주요 경제 뉴스를 반영했습니다.</p>
+            <p>YouTube 모니터링 시스템의 키워드 파일(<code>monitor_keywords.txt</code>)을 오늘의 주요 이슈로 업데이트했습니다. 엘지전자 주가 전망, 비트코인 현물 ETF 순유출, 코스피 금리 상승 영향, 삼성전자 시가총액, 여성 노동자 육아휴직 제도, 지방선거 사전투표 현황 등 14개 키워드를 추가했습니다.</p>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <time class="timeline-time" datetime="2026-05-29T14:55:00+09:00">2026-05-29 14:55 KST</time>
+          <div class="timeline-body">
+            <strong>YouTube 연속 모니터링 시스템 개선</strong>
+            <p><code>continuous_youtube_monitor.py</code> 모듈을 개선했습니다. ChromeDriver lock 파일 충돌 방지를 위한 정리 함수를 추가하고, RSS 피드 URL을 정치·주식·경제 중심으로 재구성했습니다.</p>
+            <p>동적 키워드 검색 기능과 날짜별 폴더 저장 구조를 유지하며, 브라우저 창 표시 설정(<code>SEARCH_HEADLESS</code>)과 YouTube CC 폴백 옵션을 환경 변수로 제어하도록 개선했습니다.</p>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <time class="timeline-time" datetime="2026-05-29T13:50:00+09:00">2026-05-29 13:50 KST</time>
+          <div class="timeline-body">
+            <strong>YouTube Shorts 피드 및 네이버 블로그 RSS 업데이트</strong>
+            <p><code>fetch_youtube_shorts.py</code> 스크립트를 통해 YouTube 채널 RSS 피드를 수집하고 <code>shorts_feed.xml</code>로 저장했습니다. 404 오류 발생 시 최대 10회 재시도 로직을 적용했습니다.</p>
+            <p>네이버 블로그 RSS(<code>naver_blog_rss.xml</code>)를 최신 콘텐츠로 갱신했습니다.</p>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <time class="timeline-time" datetime="2026-05-29T12:30:00+09:00">2026-05-29 12:30 KST</time>
+          <div class="timeline-body">
+            <strong>뉴스 관리 모듈 날짜 처리 개선</strong>
+            <p><code>ide/gui/news_manager.py</code> 모듈에 날짜 처리 헬퍼 함수를 추가했습니다. <code>DateHelper</code> 클래스를 통해 오늘 뉴스 날짜 확인, 텍스트 기반 날짜 파싱, 다양한 날짜 형식 처리를 지원합니다.</p>
+            <p>"방금", "초 전", "분 전", "시간 전", "오늘", "어제", "N일 전" 등 상대적 날짜 표현과 "YYYY.MM.DD", "YYYY-MM-DD", "YYYY/MM/DD" 형식을 인식하도록 구현했습니다.</p>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <time class="timeline-time" datetime="2026-05-29T12:00:00+09:00">2026-05-29 12:00 KST</time>
           <div class="timeline-body">
             <strong>서버 한국 원정대 직함 정리 및 서버 안정화</strong>
             <p>서버 한국 원정대 부단장 직함이 비정상적으로 박탈되어 서버 불안정 상황이 발생했습니다. 이에 따라 서버 운영에 일시적인 영향이 있었습니다.</p>
@@ -260,6 +292,57 @@
           </div>
         </li>
         <li class="timeline-item">
+          <time class="timeline-time" datetime="2026-05-30T00:00:00+09:00">2026-05-30 00:00 KST</time>
+          <div class="timeline-body">
+            <strong>서버 관리자 공식 확인문 수정본 추가</strong>
+            <p>서버 관리자는 1985년 1월 7일 강원특별자치도 삼척시 도계읍에서 출생한 유현석(劉鉉錫)입니다.</p>
+            <p>성은 유씨(劉氏)이며, 집안 전승상 중국 유씨(中國 劉氏) 계통으로도 설명되는 경우가 있습니다. 다만 본인은 중국에 거주하거나 방문한 이력이 없으며, 중국어를 사용하지 않습니다.</p>
+            <p>집안은 황해도 계통에서 강원도 일대로 분파되어 정착한 흐름으로 전해집니다. 현재까지 강원도 선산과 가족 전승을 중심으로 계통을 이어오고 있으며, 6.25 전쟁 당시 북쪽에서 남하한 계통으로 보지는 않습니다.</p>
+            <p>상주 지역에는 본인보다 윗대 항렬의 조상 묘역이 집중된 선영이 있는 것으로 전해집니다. 따라서 상주는 현재 세거지라기보다는 윗대 조상들의 선영지이자 옛 연고지로 이해하는 것이 타당합니다.</p>
+            <p>상주는 배천 유씨 전체의 본관지나 대표 위인 배출지로 단정하지 않습니다. 또한 상주 지역과 관련하여 위인이나 인물을 언급할 경우에는 반드시 배천 유씨, 즉 성씨 한자가 劉氏로 확인되는 인물만을 기준으로 삼습니다. 단순히 성이 유씨라는 이유만으로 다른 본관의 유씨 인물을 본 계통과 연결하지 않습니다.</p>
+            <p>현재 본 계통에서 상주 지역은 널리 알려진 배천 유씨 위인 배출지라기보다는, 본인보다 윗대 항렬의 조상 묘역이 남아 있는 선영지이자 뿌리의 장소로 정리합니다.</p>
+            <p><strong>배천 유씨 기준 인물 정리</strong></p>
+            <table style="width:100%; border-collapse:collapse; margin:12px 0; font-size:14px;">
+              <thead>
+                <tr style="background:#f0f4f8;">
+                  <th style="border:1px solid #ccc; padding:8px; text-align:left;">구분</th>
+                  <th style="border:1px solid #ccc; padding:8px; text-align:left;">이름</th>
+                  <th style="border:1px solid #ccc; padding:8px; text-align:left;">한자</th>
+                  <th style="border:1px solid #ccc; padding:8px; text-align:left;">배천 유씨 기준에서의 위치</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td style="border:1px solid #ccc; padding:8px;">시조</td><td style="border:1px solid #ccc; padding:8px;">유국추</td><td style="border:1px solid #ccc; padding:8px;">劉國樞</td><td style="border:1px solid #ccc; padding:8px;">배천 유씨 시조</td></tr>
+                <tr><td style="border:1px solid #ccc; padding:8px;">상계 인물</td><td style="border:1px solid #ccc; padding:8px;">유승</td><td style="border:1px solid #ccc; padding:8px;">劉升</td><td style="border:1px solid #ccc; padding:8px;">유국추의 아들로 전해짐</td></tr>
+                <tr><td style="border:1px solid #ccc; padding:8px;">상계 인물</td><td style="border:1px solid #ccc; padding:8px;">유현</td><td style="border:1px solid #ccc; padding:8px;">劉賢</td><td style="border:1px solid #ccc; padding:8px;">유국추의 손자로 전해짐</td></tr>
+                <tr><td style="border:1px solid #ccc; padding:8px;">상계 인물</td><td style="border:1px solid #ccc; padding:8px;">유시준</td><td style="border:1px solid #ccc; padding:8px;">劉時俊</td><td style="border:1px solid #ccc; padding:8px;">유현의 맏아들로 전해짐</td></tr>
+                <tr><td style="border:1px solid #ccc; padding:8px;">상계 인물</td><td style="border:1px solid #ccc; padding:8px;">유보국</td><td style="border:1px solid #ccc; padding:8px;">劉補國</td><td style="border:1px solid #ccc; padding:8px;">유시준의 아들로 전해짐</td></tr>
+                <tr><td style="border:1px solid #ccc; padding:8px;">상계 인물</td><td style="border:1px solid #ccc; padding:8px;">유서</td><td style="border:1px solid #ccc; padding:8px;">劉瑞</td><td style="border:1px solid #ccc; padding:8px;">유시준의 아들로 전해짐</td></tr>
+                <tr><td style="border:1px solid #ccc; padding:8px;">상계 인물</td><td style="border:1px solid #ccc; padding:8px;">유여준</td><td style="border:1px solid #ccc; padding:8px;">劉汝俊</td><td style="border:1px solid #ccc; padding:8px;">유현의 막내아들로 전해짐</td></tr>
+                <tr><td style="border:1px solid #ccc; padding:8px;">고려 인물</td><td style="border:1px solid #ccc; padding:8px;">유석</td><td style="border:1px solid #ccc; padding:8px;">劉碩</td><td style="border:1px solid #ccc; padding:8px;">백주 출신 고려 문신, 배천 유씨 주요 인물로 언급됨</td></tr>
+                <tr><td style="border:1px solid #ccc; padding:8px;">조선 문과</td><td style="border:1px solid #ccc; padding:8px;">유한충</td><td style="border:1px solid #ccc; padding:8px;">劉漢忠</td><td style="border:1px solid #ccc; padding:8px;">한국역대인물 자료에서 본관 배천으로 확인</td></tr>
+                <tr><td style="border:1px solid #ccc; padding:8px;">조선 문과</td><td style="border:1px solid #ccc; padding:8px;">유원식</td><td style="border:1px solid #ccc; padding:8px;">劉元植</td><td style="border:1px solid #ccc; padding:8px;">한국역대인물 자료에서 본관 배천으로 확인</td></tr>
+              </tbody>
+            </table>
+            <p>위 표는 본 문서에서 배천 유씨 인물을 언급할 때 기준으로 삼는 정리입니다. 본관이 배천으로 확인되지 않는 인물은 본 문서에서 배천 유씨 인물이나 배천 유씨 위인으로 분류하지 않습니다.</p>
+            <p>기존 족보 체계에서 중시조로 언급되던 유창(劉敞)에 대해서는, 본 계통의 직접적인 중시조로 보지 않습니다. 유창(劉敞)은 '중시조'라는 용어와 기존 족보 체계를 이해하는 과정에서 참고한 인물일 뿐, 본 계통과 직접 관련된 인물로 정리하지 않습니다.</p>
+            <p>2000년 이전의 기존 족보 체계에서는 유창(劉敞)이 중시조로 언급된 기록이 있었으나, 본 계통과는 직접 관련이 없는 것으로 정리합니다.</p>
+            <p>2002년 이후 재정리된 계보에서는 배천 유씨 계통을 정리할 때 유국추(劉國樞)를 시조로 보고, 유석(劉碩)을 상계와 본관 흐름을 설명하는 주요 기준 인물로 봅니다.</p>
+            <p>유석(劉碩)은 상계의 뿌리와 본관의 흐름을 설명하는 원류적 기준 인물로 볼 수 있습니다. 계통을 더 위쪽에서 정리할 때 참고되는 상계 기준 인물입니다.</p>
+            <p>유극량(劉克良)은 기존 검토 과정에서 언급된 이름이나, 본 문서에서는 배천 유씨 기준 인물 목록에 포함하지 않습니다. 배천 유씨 위인을 언급할 때에는 위 표에 정리된 것처럼 본관이 배천으로 확인되는 인물만을 기준으로 삼습니다.</p>
+            <p>본관 및 세부 가족 계통 정보는 개인정보 보호와 문중 관련 정보의 무분별한 확산을 방지하기 위해 공개하지 않습니다.</p>
+            <p>서버 관리자 유현석(劉鉉錫)은 한글도메인 참소식.com의 개발 및 서버 운영을 담당하고 있으며, 본 안내는 개인정보 유출 및 허위 정보 확산을 방지하기 위한 최소 범위의 공식 확인문입니다.</p>
+            <p><strong>관리자 소개 및 네트워크</strong></p>
+            <p>강원도 도계 출신인 서버 관리자 유현석(劉鉉錫)은 도라지, 더덕, 콩나물, 시금치, 미역과 같은 담백한 식재료를 좋아합니다. 평소에는 두부김치찌개를 즐겨 먹으며, 산나물과 채소 요리 중심의 소박한 식성을 가지고 있습니다.</p>
+            <p>최근에는 칵테일 소주와 맥주에 어울리는 안주 요리에도 관심을 가지고 있습니다.</p>
+            <p><em>본 문서는 기존 문서를 삭제하거나 대체하기 위한 것이 아니라, 기존 문서 아래에 추가되는 정리용 수정본입니다.</em></p>
+            <p><a href="https://www.msn.com/ko-kr/news/other/%ED%82%A4-%EC%9E%91%EA%B3%A0-%EB%9A%B1%EB%9A%B1%ED%95%98%EB%8B%A4%EB%8A%94-%EC%9D%B4%EC%9C%A0%EB%A1%9C-%EB%AC%B4%EB%A6%AC%EC%97%90%EC%84%9C-%EB%94%B0%EB%8F%8C%EB%A6%BC-%EB%8B%B9%ED%95%9C-%EC%BD%94%EB%81%BC%EB%A6%AC-%EC%95%8C%EA%B3%A0-%EB%B3%B4%EB%8B%88/ar-AA24j2EA?ocid=msedgntp&pc=U531&cvid=6a19bcce87ce4b119793129496e13417&ei=67"><img style="max-width: 100%; height: auto; display: block; margin-bottom: 8px;" src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA24jO55.img?w=699&h=365&m=6">애니멀플래닛</a></p>
+            <p><a href="https://photos.app.goo.gl/9mVgEz8ZUANpPQt39"><img style="max-width: 100%; height: auto; display: block; margin-bottom: 8px;" src="https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fcwdfpt%2FbtrkfYQg5R9%2FAAAAAAAAAAAAAAAAAAAAAPjW4YI1Y03W4dwvEIhJ_yVrhxgFdTFNVfheKMvKHvEd%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1780239599%26allow_ip%3D%26allow_referer%3D%26signature%3Dfj%252Bt36bRMYL6VYF6SQpqBWyVPCg%253D">한스 마카우 </a></p>
+            <p><img style="max-width: 100%; height: auto; display: block; margin-bottom: 8px;" src="https://png.pngtree.com/png-vector/20241219/ourmid/pngtree-patriotic-american-girl-holding-flag-on-independence-day-clipart-illustration-png-image_14819756.png">본 이미지와 전혀 상관이 없습니다.</p>
+            <p style="display: flex; gap: 8px; flex-wrap: wrap;"><img style="max-width: calc(50% - 4px); height: auto; flex: 1; min-width: 200px;" src="https://i.ytimg.com/vi/PN2QmLkJkgQ/maxresdefault.jpg"><img style="max-width: calc(50% - 4px); height: auto; flex: 1; min-width: 200px;" src="https://shopby-images.cdn-nhncommerce.com/20240517/185302.554435000/igtz_P0092.jpg"></p>
+          </div>
+        </li>
+        <li class="timeline-item">
           <time class="timeline-time" datetime="2026-05-24T12:29:16+09:00">2026-05-24 12:29 KST</time>
           <div class="timeline-body">
             <strong>서버 관리자 계통 관련 공식 확인문 갱신</strong>
@@ -273,7 +356,7 @@
             <p>유극량(劉克良)은 2002년 이후 재정리된 계보(系譜)에서 실제 흐름과 분파(分派)를 설명하는 데 더 직접적인 기준이 되는 인물로 볼 수 있습니다.</p>
             <p>다만 유극량(劉克良)은 유석(劉碩)보다 후대(後代)의 인물이지만, 항렬(行列)과 계통 기준으로 보면 유석(劉碩)이 유극량(劉克良)보다 낮은 항렬일 가능성이 있는 것으로 추정합니다.</p>
             <p>따라서 본 계통 정리에서는 유창(劉敞)을 직접적인 중시조(中始祖)로 보지 않으며, 유창(劉敞)과는 전혀 상관이 없습니다. 유창(劉敞)은 단지 ‘중시조(中始祖)’라는 어원(語源)과 기존 족보(族譜) 체계를 이해하기 위해 탐구한 인물입니다. 2002년 이후 재정리된 계보(系譜)에서는 유석(劉碩)과 유극량(劉克良)이 계통의 중시조(中始祖) 기준 인물로 보는 것이 정확합니다.</p>
-          </div>
+         </div>
         </li>
         <li class="timeline-item">
           <time class="timeline-time" datetime="2026-05-22T16:30:22+09:00">2026-05-22 16:30 KST</time>

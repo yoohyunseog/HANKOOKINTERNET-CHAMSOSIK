@@ -1,0 +1,89 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-05-30T12:02:27.144+09:00",
+  "category": "GPU",
+  "id": "gpu-rtx-5060-ti-oc-d7-16gb-4",
+  "name": "지포스 RTX 5060 Ti 게이밍 트리오 OC D7 16GB 트라이프로져4",
+  "maker": "MSI",
+  "platform": "PCIe",
+  "estimatedPriceKrw": 739000,
+  "priceBand": "60만원 이상",
+  "speedLabel": "OC",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "GPU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 65,
+  "valueIndex": 8.8,
+  "aiUseScore": 42,
+  "powerWatts": 200,
+  "tags": [
+    "gaming",
+    "rtx50"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "GPU",
+    "partId": "gpu-rtx-5060-ti-oc-d7-16gb-4",
+    "partName": "지포스 RTX 5060 Ti 게이밍 트리오 OC D7 16GB 트라이프로져4",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "GPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 650,
+      "value": 117,
+      "aiFit": 420,
+      "priceEfficiency": 140,
+      "powerEfficiency": 108
+    },
+    "nbVector": [
+      100,
+      650,
+      117,
+      420,
+      140,
+      108
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 112.304,
+    "nbMin": 361.578,
+    "weightedScore": 248,
+    "nbBand": "100~499",
+    "summary": "GPU 지포스 RTX 5060 Ti 게이밍 트리오 OC D7 16GB 트라이프로져4 부품을 속도 중심 N/B 데이터베이스 점수 248점으로 저장했습니다."
+  },
+  "nbWeightedScore": 248,
+  "nbMax": 112.304,
+  "nbMin": 361.578,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=MSI%20%EC%A7%80%ED%8F%AC%EC%8A%A4%20RTX%205060%20Ti%20%EA%B2%8C%EC%9D%B4%EB%B0%8D%20%ED%8A%B8%EB%A6%AC%EC%98%A4%20OC%20D7%2016GB%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "Observed multiple prices from 739,000 to 1,435,650 KRW; lowest reliable price used.",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

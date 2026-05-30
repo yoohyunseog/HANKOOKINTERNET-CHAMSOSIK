@@ -2,102 +2,101 @@
   "title": "이클립스 센츄어리 D.P 브리핑",
   "model": "deepseek-v3.1:671b-cloud",
   "source_feed": "https://xn--9l4b4xi9r.com/feed.xml",
-  "updated_at": "2026-05-29T06:15:11.817827+00:00",
-  "feed_last_build_date": "Fri, 29 May 2026 06:14:37 GMT",
+  "updated_at": "2026-05-30T02:54:27.254668+00:00",
+  "feed_last_build_date": "Sat, 30 May 2026 02:53:41 GMT",
   "item_count": 12,
-  "headline": "AI 반도체 호황과 금리 인상 우려가 공존하는 혼조 장세",
-  "summary": "삼성전자와 SK하이닉스의 AI 반도체 기술 발전 및 협력 소식이 반도체 섹터에 긍정적입니다. LG전자 주가 급등과 엔비디아 협력 기대감이 개별 종목을 강세로 이끌고 있습니다. 하지만 한국은행의 금리 인상 신호와 고물가, 고환율 부담이 시장에 부정적 영향을 줄 수 있습니다.",
+  "headline": "지방선거 투표율 증가와 개별 종목 기술적 반등 신호",
+  "summary": "제9회 지방선거 사전투표율이 역대 최고치를 기록하며 정치적 관심이 높아졌습니다. 버스코DX 등 일부 종목에서 기술적 상승 패턴이 관찰되고 있습니다. 코스닥 액티브 ETF는 고점 대비 21% 하락하며 신규 투자자들이 손실을 보고 있습니다.",
   "signals": [
-    "삼성전자 HBM4E 12단 샘플 출하로 AI 메모리 시장 선점",
-    "엔비디아 CEO 방한 예정에 LG전자 AI 협력 기대감",
-    "코스피 기관 매수세 유입으로 상승 마감"
+    "지방선거 사전투표율 역대 최고 기록",
+    "버스코DX 기술적 상승 패턴 형성",
+    "코스닥 액티브 ETF 고점 대비 21% 하락"
   ],
   "risks": [
-    "한국은행 금리 인상 가능성",
-    "고물가 및 고환율 부담",
-    "레버리지 ETF 등 고변동성 상품 위험"
+    "개별 종목 과열 투자 우려",
+    "ETF 발행 시점 밸류에이션 판단 필요",
+    "특정 국적의 부동산 편중 현상"
   ],
   "market_impact": [
-    "코스피: 반도체 호황으로 단기 상승 가능",
-    "코스닥: 테마주 호재에 따른 변동성 확대",
-    "비트코인: 글로벌 유동성 우려로 하락 압력",
-    "한국 증시 심리: 호재와 우려가 공존하는 혼조"
+    "코스피 단기 기술적 반등 가능성",
+    "코스닥 변동성 확대 우려",
+    "비트코인 직접적 영향 미미",
+    "한국 증시 선거 효과 기대 심리"
   ],
-  "outlook": "반도체 호황과 기술 발전은 지속될 전망이지만, 금리 인상 우려로 시장 변동성이 클 것으로 예상됩니다.",
-  "quality_note": "피드 내용이 반복적이고 일부 항목은 요약 실패로 정보 가치가 낮음",
+  "outlook": "선거 관련 주식과 기술적 반등 종목에 일시적 관심이 집중될 수 있으나, 지속성 여부는 추가 확인이 필요합니다.",
+  "quality_note": "피드 내용이 주로 국내 정치와 개별 종목 기술적 분석에 집중되어 글로벌 이슈 다양성이 부족합니다.",
   "weighted_signal": {
     "score": 58,
-    "upper_bound": 42,
-    "lower_bound": 36,
+    "upper_bound": 32,
+    "lower_bound": 26,
     "grade": "주의",
     "upper_factors": [
-      "AI 반도체 기술 발전 +15",
-      "주요 종목 협력 소식 +12",
-      "기관 매수세 유입 +10",
-      "종전 기대감에 유가 하락 +5"
+      "지방선거 높은 투표율 +12",
+      "개별 종목 기술적 상승 신호 +10",
+      "코스피 단기 반등 +10"
     ],
     "lower_factors": [
-      "금리 인상 우려 -18",
-      "고물가 및 고환율 부담 -12",
-      "레버리지 ETF 등 고변동성 상품 경고 -6"
+      "코스닥 ETF 하락 -12",
+      "외국인 부동산 편중 -8",
+      "개별주 과매도 우려 -6"
     ]
   },
   "items": [
     {
-      "title": "[삼성전자가 29일 세계 최초로 차세대 고대역폭 메모리인 HBM4E 12단 샘플을 주요 고객사에 출하하며 차세대 AI 가속기용 메모리 시장의 선점 경쟁에서 결정적인 우위를 점했는데, 이 제품은 이전 세대인 HBM4 대비 성능이 20% 향상되고 핀]",
-      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [삼성전자가 29일 세계 최초로 차세대 고대역폭 메모리인 HBM4E 12단 샘플을 주요 고객사에 출하하며 차세대 AI 가속기용 메모리 시장의 선점 경쟁에서 결정적인 우위를 점했는데, 이 제품은 이전 세대인 HBM4 대비 성능이 20% 향상되고 핀]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
+      "title": "[버스코DX가 상승 삼각형 기술적 패턴으로 조정을 마무리하고 15배 폭등을 앞둔 매수 구간에 진입했다. 거래대금이 급증하며 주요 이동평균선을 상향 돌파했다.]",
+      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [버스코DX가 상승 삼각형 기술적 패턴으로 조정을 마무리하고 15배 폭등을 앞둔 매수 구간에 진입했다. 거래대금이 급증하며 주요 이동평균선을 상향 돌파했다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
       "category": "일반",
-      "pubDate": "Fri, 29 May 2026 06:13:12 GMT",
-      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90%EA%B0%80%2029%EC%9D%BC%20%EC%84%B8%EA%B3%84%20%EC%B5%9C%EC%B4%88%EB%A1%9C%20%EC%B0%A8%EC%84%B8%EB%8C%80%20%EA%B3%A0%EB%8C%80%EC%97%AD%ED%8F%AD%20%EB%A9%94%EB%AA%A8%EB%A6%AC%EC%9D%B8%20HBM4E%2012%EB%8B%A8%20%EC%83%98%ED%94%8C%EC%9D%84%20%EC%A3%BC%EC%9A%94%20%EA%B3%A0%EA%B0%9D%EC%82%AC%EC%97%90%20%EC%B6%9C%ED%95%98%ED%95%98%EB%A9%B0%20%EC%B0%A8%EC%84%B8%EB%8C%80%20AI%20%EA%B0%80%EC%86%8D%EA%B8%B0%EC%9A%A9%20%EB%A9%94%EB%AA%A8%EB%A6%AC%20%EC%8B%9C%EC%9E%A5%EC%9D%98%20%EC%84%A0%EC%A0%90%20%EA%B2%BD%EC%9F%81%EC%97%90%EC%84%9C%20%EA%B2%B0%EC%A0%95%EC%A0%81%EC%9D%B8%20%EC%9A%B0%EC%9C%84%EB%A5%BC%20%EC%A0%90%ED%96%88%EB%8A%94%EB%8D%B0%2C%20%EC%9D%B4%20%EC%A0%9C%ED%92%88%EC%9D%80%20%EC%9D%B4%EC%A0%84%20%EC%84%B8%EB%8C%80%EC%9D%B8%20HBM4%20%EB%8C%80%EB%B9%84%20%EC%84%B1%EB%8A%A5%EC%9D%B4%2020%25%20%ED%96%A5%EC%83%81%EB%90%98%EA%B3%A0%20%ED%95%80%5D&selected_max=32661.7801566681&selected_min=0.000541304"
+      "pubDate": "Sat, 30 May 2026 02:47:26 GMT",
+      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B%EB%B2%84%EC%8A%A4%EC%BD%94DX%EA%B0%80%20%EC%83%81%EC%8A%B9%20%EC%82%BC%EA%B0%81%ED%98%95%20%EA%B8%B0%EC%88%A0%EC%A0%81%20%ED%8C%A8%ED%84%B4%EC%9C%BC%EB%A1%9C%20%EC%A1%B0%EC%A0%95%EC%9D%84%20%EB%A7%88%EB%AC%B4%EB%A6%AC%ED%95%98%EA%B3%A0%2015%EB%B0%B0%20%ED%8F%AD%EB%93%B1%EC%9D%84%20%EC%95%9E%EB%91%94%20%EB%A7%A4%EC%88%98%20%EA%B5%AC%EA%B0%84%EC%97%90%20%EC%A7%84%EC%9E%85%ED%96%88%EB%8B%A4.%20%EA%B1%B0%EB%9E%98%EB%8C%80%EA%B8%88%EC%9D%B4%20%EA%B8%89%EC%A6%9D%ED%95%98%EB%A9%B0%20%EC%A3%BC%EC%9A%94%20%EC%9D%B4%EB%8F%99%ED%8F%89%EA%B7%A0%EC%84%A0%EC%9D%84%20%EC%83%81%ED%96%A5%20%EB%8F%8C%ED%8C%8C%ED%96%88%EB%8B%A4.%5D&selected_max=51544.310221197&selected_min=0.0008510764"
     },
     {
-      "title": "[LG전자 주가가 연속 상승할 것이라는 폭등 뉴스가 또 등장해 긍정적인 전망이 기대된다. 특히 OLED 사업부문의 실적 개선 기대감이 커지고 있는 상황이다.]",
-      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [LG전자 주가가 연속 상승할 것이라는 폭등 뉴스가 또 등장해 긍정적인 전망이 기대된다. 특히 OLED 사업부문의 실적 개선 기대감이 커지고 있는 상황이다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
+      "title": "[6월 3일로 예정된 제9회 전국동시지방선거 사전투표 첫날인 5월 29일의 투표율이 11.6%로 집계되어 역대 지방선거 사전투표 첫날 중 가장 높은 수치를 기록했다.]",
+      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [6월 3일로 예정된 제9회 전국동시지방선거 사전투표 첫날인 5월 29일의 투표율이 11.6%로 집계되어 역대 지방선거 사전투표 첫날 중 가장 높은 수치를 기록했다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
       "category": "일반",
-      "pubDate": "Fri, 29 May 2026 06:09:53 GMT",
-      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5BLG%EC%A0%84%EC%9E%90%20%EC%A3%BC%EA%B0%80%EA%B0%80%20%EC%97%B0%EC%86%8D%20%EC%83%81%EC%8A%B9%ED%95%A0%20%EA%B2%83%EC%9D%B4%EB%9D%BC%EB%8A%94%20%ED%8F%AD%EB%93%B1%20%EB%89%B4%EC%8A%A4%EA%B0%80%20%EB%98%90%20%EB%93%B1%EC%9E%A5%ED%95%B4%20%EA%B8%8D%EC%A0%95%EC%A0%81%EC%9D%B8%20%EC%A0%84%EB%A7%9D%EC%9D%B4%20%EA%B8%B0%EB%8C%80%EB%90%9C%EB%8B%A4.%20%ED%8A%B9%ED%9E%88%20OLED%20%EC%82%AC%EC%97%85%EB%B6%80%EB%AC%B8%EC%9D%98%20%EC%8B%A4%EC%A0%81%20%EA%B0%9C%EC%84%A0%20%EA%B8%B0%EB%8C%80%EA%B0%90%EC%9D%B4%20%EC%BB%A4%EC%A7%80%EA%B3%A0%20%EC%9E%88%EB%8A%94%20%EC%83%81%ED%99%A9%EC%9D%B4%EB%8B%A4.%5D&selected_max=51899.399525664&selected_min=0.0008452719"
+      "pubDate": "Sat, 30 May 2026 02:45:55 GMT",
+      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B6%EC%9B%94%203%EC%9D%BC%EB%A1%9C%20%EC%98%88%EC%A0%95%EB%90%9C%20%EC%A0%9C9%ED%9A%8C%20%EC%A0%84%EA%B5%AD%EB%8F%99%EC%8B%9C%EC%A7%80%EB%B0%A9%EC%84%A0%EA%B1%B0%20%EC%82%AC%EC%A0%84%ED%88%AC%ED%91%9C%20%EC%B2%AB%EB%82%A0%EC%9D%B8%205%EC%9B%94%2029%EC%9D%BC%EC%9D%98%20%ED%88%AC%ED%91%9C%EC%9C%A8%EC%9D%B4%2011.6%25%EB%A1%9C%20%EC%A7%91%EA%B3%84%EB%90%98%EC%96%B4%20%EC%97%AD%EB%8C%80%20%EC%A7%80%EB%B0%A9%EC%84%A0%EA%B1%B0%20%EC%82%AC%EC%A0%84%ED%88%AC%ED%91%9C%20%EC%B2%AB%EB%82%A0%20%EC%A4%91%20%EA%B0%80%EC%9E%A5%20%EB%86%92%EC%9D%80%20%EC%88%98%EC%B9%98%EB%A5%BC%20%EA%B8%B0%EB%A1%9D%ED%96%88%EB%8B%A4.%5D&selected_max=48850.104306761&selected_min=0.0008029904"
     },
     {
-      "title": "[삼성전자와 SK하이닉스가 AI 클로드 개발사 앤트로픽에 투자하여 엔비디아 GPU 독점 체제를 완화하고 다양한 AI 반도체 수요를 확보하려는 AI 동맹을 구축했다.]",
-      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [삼성전자와 SK하이닉스가 AI 클로드 개발사 앤트로픽에 투자하여 엔비디아 GPU 독점 체제를 완화하고 다양한 AI 반도체 수요를 확보하려는 AI 동맹을 구축했다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
+      "title": "[삼성전기 등 일부 종목만 급등하는 장세 속에서 버스코DX가 어샌딩 트라이앵글 기술적 패턴으로 저항선(맥점) 돌파 직전에 와 있어 NHN·LG CNS처럼 바닥에서 폭등할 매수 적기다.]",
+      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [삼성전기 등 일부 종목만 급등하는 장세 속에서 버스코DX가 어샌딩 트라이앵글 기술적 패턴으로 저항선(맥점) 돌파 직전에 와 있어 NHN·LG CNS처럼 바닥에서 폭등할 매수 적기다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
       "category": "일반",
-      "pubDate": "Fri, 29 May 2026 06:05:55 GMT",
-      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90%EC%99%80%20SK%ED%95%98%EC%9D%B4%EB%8B%89%EC%8A%A4%EA%B0%80%20AI%20%ED%81%B4%EB%A1%9C%EB%93%9C%20%EA%B0%9C%EB%B0%9C%EC%82%AC%20%EC%95%A4%ED%8A%B8%EB%A1%9C%ED%94%BD%EC%97%90%20%ED%88%AC%EC%9E%90%ED%95%98%EC%97%AC%20%EC%97%94%EB%B9%84%EB%94%94%EC%95%84%20GPU%20%EB%8F%85%EC%A0%90%20%EC%B2%B4%EC%A0%9C%EB%A5%BC%20%EC%99%84%ED%99%94%ED%95%98%EA%B3%A0%20%EB%8B%A4%EC%96%91%ED%95%9C%20AI%20%EB%B0%98%EB%8F%84%EC%B2%B4%20%EC%88%98%EC%9A%94%EB%A5%BC%20%ED%99%95%EB%B3%B4%ED%95%98%EB%A0%A4%EB%8A%94%20AI%20%EB%8F%99%EB%A7%B9%EC%9D%84%20%EA%B5%AC%EC%B6%95%ED%96%88%EB%8B%A4.%5D&selected_max=49336.7061182158&selected_min=0.0008126522"
+      "pubDate": "Sat, 30 May 2026 02:41:51 GMT",
+      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B%EC%82%BC%EC%84%B1%EC%A0%84%EA%B8%B0%20%EB%93%B1%20%EC%9D%BC%EB%B6%80%20%EC%A2%85%EB%AA%A9%EB%A7%8C%20%EA%B8%89%EB%93%B1%ED%95%98%EB%8A%94%20%EC%9E%A5%EC%84%B8%20%EC%86%8D%EC%97%90%EC%84%9C%20%EB%B2%84%EC%8A%A4%EC%BD%94DX%EA%B0%80%20%EC%96%B4%EC%83%8C%EB%94%A9%20%ED%8A%B8%EB%9D%BC%EC%9D%B4%EC%95%B5%EA%B8%80%20%EA%B8%B0%EC%88%A0%EC%A0%81%20%ED%8C%A8%ED%84%B4%EC%9C%BC%EB%A1%9C%20%EC%A0%80%ED%95%AD%EC%84%A0(%EB%A7%A5%EC%A0%90)%20%EB%8F%8C%ED%8C%8C%20%EC%A7%81%EC%A0%84%EC%97%90%20%EC%99%80%20%EC%9E%88%EC%96%B4%20NHN%C2%B7LG%20CNS%EC%B2%98%EB%9F%BC%20%EB%B0%94%EB%8B%A5%EC%97%90%EC%84%9C%20%ED%8F%AD%EB%93%B1%ED%95%A0%20%EB%A7%A4%EC%88%98%20%EC%A0%81%EA%B8%B0%EB%8B%A4.%5D&selected_max=43825.6790273189&selected_min=0.0007280283"
     },
     {
-      "title": "[종전 기대감으로 유가와 환율 등 대외 변수가 개선되면서 외국인 자금의 국내 주식 국내 정치인 기대되는 가운데 LG전자 주가가 20% 이상 급등하며 28만9천원의 역사적 신고가를 새로 썼으나, 종전 관련 리스크와 6월 11일 선물·옵션 동시]",
-      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [종전 기대감으로 유가와 환율 등 대외 변수가 개선되면서 외국인 자금의 국내 주식 국내 정치인 기대되는 가운데 LG전자 주가가 20% 이상 급등하며 28만9천원의 역사적 신고가를 새로 썼으나, 종전 관련 리스크와 6월 11일 선물·옵션 동시]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
+      "title": "[3 지방선거 사전투표가 오전 9시 기준 13.35%의 역대 최고 투표율을 기록하며 이틀째 활발하게 진행되고 있습니다. 대형마트와 역사 인근 투표소에서는 아침부터 긴 행렬이 형성됐습니다.]",
+      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [3 지방선거 사전투표가 오전 9시 기준 13.35%의 역대 최고 투표율을 기록하며 이틀째 활발하게 진행되고 있습니다. 대형마트와 역사 인근 투표소에서는 아침부터 긴 행렬이 형성됐습니다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
       "category": "일반",
-      "pubDate": "Fri, 29 May 2026 06:02:12 GMT",
-      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B%EC%A2%85%EC%A0%84%20%EA%B8%B0%EB%8C%80%EA%B0%90%EC%9C%BC%EB%A1%9C%20%EC%9C%A0%EA%B0%80%EC%99%80%20%ED%99%98%EC%9C%A8%20%EB%93%B1%20%EB%8C%80%EC%99%B8%20%EB%B3%80%EC%88%98%EA%B0%80%20%EA%B0%9C%EC%84%A0%EB%90%98%EB%A9%B4%EC%84%9C%20%EC%99%B8%EA%B5%AD%EC%9D%B8%20%EC%9E%90%EA%B8%88%EC%9D%98%20%EA%B5%AD%EB%82%B4%20%EC%A3%BC%EC%8B%9D%20%EA%B5%AD%EB%82%B4%20%EC%A0%95%EC%B9%98%EC%9D%B8%20%EA%B8%B0%EB%8C%80%EB%90%98%EB%8A%94%20%EA%B0%80%EC%9A%B4%EB%8D%B0%20LG%EC%A0%84%EC%9E%90%20%EC%A3%BC%EA%B0%80%EA%B0%80%2020%25%20%EC%9D%B4%EC%83%81%20%EA%B8%89%EB%93%B1%ED%95%98%EB%A9%B0%2028%EB%A7%8C9%EC%B2%9C%EC%9B%90%EC%9D%98%20%EC%97%AD%EC%82%AC%EC%A0%81%20%EC%8B%A0%EA%B3%A0%EA%B0%80%EB%A5%BC%20%EC%83%88%EB%A1%9C%20%EC%8D%BC%EC%9C%BC%EB%82%98%2C%20%EC%A2%85%EC%A0%84%20%EA%B4%80%EB%A0%A8%20%EB%A6%AC%EC%8A%A4%ED%81%AC%EC%99%80%206%EC%9B%94%2011%EC%9D%BC%20%EC%84%A0%EB%AC%BC%C2%B7%EC%98%B5%EC%85%98%20%EB%8F%99%EC%8B%9C%5D&selected_max=33504.3441362238&selected_min=0.0005516024"
+      "pubDate": "Sat, 30 May 2026 02:31:42 GMT",
+      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B3%20%EC%A7%80%EB%B0%A9%EC%84%A0%EA%B1%B0%20%EC%82%AC%EC%A0%84%ED%88%AC%ED%91%9C%EA%B0%80%20%EC%98%A4%EC%A0%84%209%EC%8B%9C%20%EA%B8%B0%EC%A4%80%2013.35%25%EC%9D%98%20%EC%97%AD%EB%8C%80%20%EC%B5%9C%EA%B3%A0%20%ED%88%AC%ED%91%9C%EC%9C%A8%EC%9D%84%20%EA%B8%B0%EB%A1%9D%ED%95%98%EB%A9%B0%20%EC%9D%B4%ED%8B%80%EC%A7%B8%20%ED%99%9C%EB%B0%9C%ED%95%98%EA%B2%8C%20%EC%A7%84%ED%96%89%EB%90%98%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%20%EB%8C%80%ED%98%95%EB%A7%88%ED%8A%B8%EC%99%80%20%EC%97%AD%EC%82%AC%20%EC%9D%B8%EA%B7%BC%20%ED%88%AC%ED%91%9C%EC%86%8C%EC%97%90%EC%84%9C%EB%8A%94%20%EC%95%84%EC%B9%A8%EB%B6%80%ED%84%B0%20%EA%B8%B4%20%ED%96%89%EB%A0%AC%EC%9D%B4%20%ED%98%95%EC%84%B1%EB%90%90%EC%8A%B5%EB%8B%88%EB%8B%A4.%5D&selected_max=43174.0713872791&selected_min=0.0007108564"
     },
     {
-      "title": "[LG전자의 최근 주가 하락은 주요 세력들의 매집을 위한 일시적 개미 털기일 뿐이며, 로봇 섹터 수급 회복과 기업 가치를 바탕으로 조만간 26만 9,500원 전고점을 돌파하는 폭등 랠리가 전망된다.]",
-      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [LG전자의 최근 주가 하락은 주요 세력들의 매집을 위한 일시적 개미 털기일 뿐이며, 로봇 섹터 수급 회복과 기업 가치를 바탕으로 조만간 26만 9,500원 전고점을 돌파하는 폭등 랠리가 전망된다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
+      "title": "[이재용 삼국내 기업인이 사전투표 첫날 투표소를 방문한 모습이 취재진에 포착되어 삼성 총수의 투표 장면이 언론에 공개된 이례적인 상황이 발생했다. 이 총수는 이날 오전 서울 서초구의 한 주민센터 투표소를 방문했다.]",
+      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [이재용 삼국내 기업인이 사전투표 첫날 투표소를 방문한 모습이 취재진에 포착되어 삼성 총수의 투표 장면이 언론에 공개된 이례적인 상황이 발생했다. 이 총수는 이날 오전 서울 서초구의 한 주민센터 투표소를 방문했다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
       "category": "일반",
-      "pubDate": "Fri, 29 May 2026 05:59:16 GMT",
-      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5BLG%EC%A0%84%EC%9E%90%EC%9D%98%20%EC%B5%9C%EA%B7%BC%20%EC%A3%BC%EA%B0%80%20%ED%95%98%EB%9D%BD%EC%9D%80%20%EC%A3%BC%EC%9A%94%20%EC%84%B8%EB%A0%A5%EB%93%A4%EC%9D%98%20%EB%A7%A4%EC%A7%91%EC%9D%84%20%EC%9C%84%ED%95%9C%20%EC%9D%BC%EC%8B%9C%EC%A0%81%20%EA%B0%9C%EB%AF%B8%20%ED%84%B8%EA%B8%B0%EC%9D%BC%20%EB%BF%90%EC%9D%B4%EB%A9%B0%2C%20%EB%A1%9C%EB%B4%87%20%EC%84%B9%ED%84%B0%20%EC%88%98%EA%B8%89%20%ED%9A%8C%EB%B3%B5%EA%B3%BC%20%EA%B8%B0%EC%97%85%20%EA%B0%80%EC%B9%98%EB%A5%BC%20%EB%B0%94%ED%83%95%EC%9C%BC%EB%A1%9C%20%EC%A1%B0%EB%A7%8C%EA%B0%84%2026%EB%A7%8C%209%2C500%EC%9B%90%20%EC%A0%84%EA%B3%A0%EC%A0%90%EC%9D%84%20%EB%8F%8C%ED%8C%8C%ED%95%98%EB%8A%94%20%ED%8F%AD%EB%93%B1%20%EB%9E%A0%EB%A6%AC%EA%B0%80%20%EC%A0%84%EB%A7%9D%EB%90%9C%EB%8B%A4.%5D&selected_max=40855.0395559091&selected_min=0.0006714426"
+      "pubDate": "Sat, 30 May 2026 01:59:29 GMT",
+      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B%EC%9D%B4%EC%9E%AC%EC%9A%A9%20%EC%82%BC%EA%B5%AD%EB%82%B4%20%EA%B8%B0%EC%97%85%EC%9D%B8%EC%9D%B4%20%EC%82%AC%EC%A0%84%ED%88%AC%ED%91%9C%20%EC%B2%AB%EB%82%A0%20%ED%88%AC%ED%91%9C%EC%86%8C%EB%A5%BC%20%EB%B0%A9%EB%AC%B8%ED%95%9C%20%EB%AA%A8%EC%8A%B5%EC%9D%B4%20%EC%B7%A8%EC%9E%AC%EC%A7%84%EC%97%90%20%ED%8F%AC%EC%B0%A9%EB%90%98%EC%96%B4%20%EC%82%BC%EC%84%B1%20%EC%B4%9D%EC%88%98%EC%9D%98%20%ED%88%AC%ED%91%9C%20%EC%9E%A5%EB%A9%B4%EC%9D%B4%20%EC%96%B8%EB%A1%A0%EC%97%90%20%EA%B3%B5%EA%B0%9C%EB%90%9C%20%EC%9D%B4%EB%A1%80%EC%A0%81%EC%9D%B8%20%EC%83%81%ED%99%A9%EC%9D%B4%20%EB%B0%9C%EC%83%9D%ED%96%88%EB%8B%A4.%20%EC%9D%B4%20%EC%B4%9D%EC%88%98%EB%8A%94%20%EC%9D%B4%EB%82%A0%20%EC%98%A4%EC%A0%84%20%EC%84%9C%EC%9A%B8%20%EC%84%9C%EC%B4%88%EA%B5%AC%EC%9D%98%20%ED%95%9C%20%EC%A3%BC%EB%AF%BC%EC%84%BC%ED%84%B0%20%ED%88%AC%ED%91%9C%EC%86%8C%EB%A5%BC%20%EB%B0%A9%EB%AC%B8%ED%96%88%EB%8B%A4.%5D&selected_max=37740.1677145581&selected_min=0.0006210096"
     },
     {
-      "title": "[엔비디아 젠슨 황 CEO가 다음 주 방한하여 LG전자와의 AI 협력을 논의할 것이라는 기대감에 주가가 25% 급등하며 전고점을 경신했으나, 기술적으로는 급등 후 눌림 목이 나올 때까지 기다려 저점에서 공략할 것을 조언했다.]",
-      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [엔비디아 젠슨 황 CEO가 다음 주 방한하여 LG전자와의 AI 협력을 논의할 것이라는 기대감에 주가가 25% 급등하며 전고점을 경신했으나, 기술적으로는 급등 후 눌림 목이 나올 때까지 기다려 저점에서 공략할 것을 조언했다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
+      "title": "[6월 3일에 치러지는 제9회 전국동시지방선거 사전투표 첫날인 5월 29일, 전체 투표율이 11.6%로 집계되어 역대 지방선거 사전투표 첫날 중 가장 높은 수치를 기록하며 4년 전 8.5%보다 3.1%p 상승한 것으로 나타났다.]",
+      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [6월 3일에 치러지는 제9회 전국동시지방선거 사전투표 첫날인 5월 29일, 전체 투표율이 11.6%로 집계되어 역대 지방선거 사전투표 첫날 중 가장 높은 수치를 기록하며 4년 전 8.5%보다 3.1%p 상승한 것으로 나타났다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
       "category": "일반",
-      "pubDate": "Fri, 29 May 2026 05:57:46 GMT",
-      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B%EC%97%94%EB%B9%84%EB%94%94%EC%95%84%20%EC%A0%A0%EC%8A%A8%20%ED%99%A9%20CEO%EA%B0%80%20%EB%8B%A4%EC%9D%8C%20%EC%A3%BC%20%EB%B0%A9%ED%95%9C%ED%95%98%EC%97%AC%20LG%EC%A0%84%EC%9E%90%EC%99%80%EC%9D%98%20AI%20%ED%98%91%EB%A0%A5%EC%9D%84%20%EB%85%BC%EC%9D%98%ED%95%A0%20%EA%B2%83%EC%9D%B4%EB%9D%BC%EB%8A%94%20%EA%B8%B0%EB%8C%80%EA%B0%90%EC%97%90%20%EC%A3%BC%EA%B0%80%EA%B0%80%2025%25%20%EA%B8%89%EB%93%B1%ED%95%98%EB%A9%B0%20%EC%A0%84%EA%B3%A0%EC%A0%90%EC%9D%84%20%EA%B2%BD%EC%8B%A0%ED%96%88%EC%9C%BC%EB%82%98%2C%20%EA%B8%B0%EC%88%A0%EC%A0%81%EC%9C%BC%EB%A1%9C%EB%8A%94%20%EA%B8%89%EB%93%B1%20%ED%9B%84%20%EB%88%8C%EB%A6%BC%20%EB%AA%A9%EC%9D%B4%20%EB%82%98%EC%98%AC%20%EB%95%8C%EA%B9%8C%EC%A7%80%20%EA%B8%B0%EB%8B%A4%EB%A0%A4%20%EC%A0%80%EC%A0%90%EC%97%90%EC%84%9C%20%EA%B3%B5%EB%9E%B5%ED%95%A0%20%EA%B2%83%EC%9D%84%20%EC%A1%B0%EC%96%B8%ED%96%88%EB%8B%A4.%5D&selected_max=35988.9728244754&selected_min=0.0005901788"
+      "pubDate": "Sat, 30 May 2026 01:56:41 GMT",
+      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B6%EC%9B%94%203%EC%9D%BC%EC%97%90%20%EC%B9%98%EB%9F%AC%EC%A7%80%EB%8A%94%20%EC%A0%9C9%ED%9A%8C%20%EC%A0%84%EA%B5%AD%EB%8F%99%EC%8B%9C%EC%A7%80%EB%B0%A9%EC%84%A0%EA%B1%B0%20%EC%82%AC%EC%A0%84%ED%88%AC%ED%91%9C%20%EC%B2%AB%EB%82%A0%EC%9D%B8%205%EC%9B%94%2029%EC%9D%BC%2C%20%EC%A0%84%EC%B2%B4%20%ED%88%AC%ED%91%9C%EC%9C%A8%EC%9D%B4%2011.6%25%EB%A1%9C%20%EC%A7%91%EA%B3%84%EB%90%98%EC%96%B4%20%EC%97%AD%EB%8C%80%20%EC%A7%80%EB%B0%A9%EC%84%A0%EA%B1%B0%20%EC%82%AC%EC%A0%84%ED%88%AC%ED%91%9C%20%EC%B2%AB%EB%82%A0%20%EC%A4%91%20%EA%B0%80%EC%9E%A5%20%EB%86%92%EC%9D%80%20%EC%88%98%EC%B9%98%EB%A5%BC%20%EA%B8%B0%EB%A1%9D%ED%95%98%EB%A9%B0%204%EB%85%84%20%EC%A0%84%208.5%25%EB%B3%B4%EB%8B%A4%203.1%25p%20%EC%83%81%EC%8A%B9%ED%95%9C%20%EA%B2%83%EC%9C%BC%EB%A1%9C%20%EB%82%98%ED%83%80%EB%82%AC%EB%8B%A4.%5D&selected_max=35385.4159232007&selected_min=0.0005814764"
     },
     {
-      "title": "[레버리지 ETF는 원금 손실 위험이 크고 변동성이 심해 투자 시 각별한 주의가 필요하다. 전문가들은 장기 보유 시 원금 손실 가능성이 더 커진다고 경고했다.]",
-      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [레버리지 ETF는 원금 손실 위험이 크고 변동성이 심해 투자 시 각별한 주의가 필요하다. 전문가들은 장기 보유 시 원금 손실 가능성이 더 커진다고 경고했다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
+      "title": "[6·3 지방선거 사전투표 마지막 날, 더불어민주당은 호남에서, 국민의힘은 강원과 대구·경북 등에서 각각 막판 유세를 펼치며 지지층 결집에 총력을 기울였다. 전국 사전투표율은 20.3%로 지난 지방선거보다 높은 수준을 보였다.]",
+      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [6·3 지방선거 사전투표 마지막 날, 더불어민주당은 호남에서, 국민의힘은 강원과 대구·경북 등에서 각각 막판 유세를 펼치며 지지층 결집에 총력을 기울였다. 전국 사전투표율은 20.3%로 지난 지방선거보다 높은 수준을 보였다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
       "category": "일반",
-      "pubDate": "Fri, 29 May 2026 05:55:45 GMT",
-      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B%EB%A0%88%EB%B2%84%EB%A6%AC%EC%A7%80%20ETF%EB%8A%94%20%EC%9B%90%EA%B8%88%20%EC%86%90%EC%8B%A4%20%EC%9C%84%ED%97%98%EC%9D%B4%20%ED%81%AC%EA%B3%A0%20%EB%B3%80%EB%8F%99%EC%84%B1%EC%9D%B4%20%EC%8B%AC%ED%95%B4%20%ED%88%AC%EC%9E%90%20%EC%8B%9C%20%EA%B0%81%EB%B3%84%ED%95%9C%20%EC%A3%BC%EC%9D%98%EA%B0%80%20%ED%95%84%EC%9A%94%ED%95%98%EB%8B%A4.%20%EC%A0%84%EB%AC%B8%EA%B0%80%EB%93%A4%EC%9D%80%20%EC%9E%A5%EA%B8%B0%20%EB%B3%B4%EC%9C%A0%20%EC%8B%9C%20%EC%9B%90%EA%B8%88%20%EC%86%90%EC%8B%A4%20%EA%B0%80%EB%8A%A5%EC%84%B1%EC%9D%B4%20%EB%8D%94%20%EC%BB%A4%EC%A7%84%EB%8B%A4%EA%B3%A0%20%EA%B2%BD%EA%B3%A0%ED%96%88%EB%8B%A4.%5D&selected_max=50900.7301762779&selected_min=0.0008423423"
+      "pubDate": "Sat, 30 May 2026 01:45:57 GMT",
+      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B6%C2%B73%20%EC%A7%80%EB%B0%A9%EC%84%A0%EA%B1%B0%20%EC%82%AC%EC%A0%84%ED%88%AC%ED%91%9C%20%EB%A7%88%EC%A7%80%EB%A7%89%20%EB%82%A0%2C%20%EB%8D%94%EB%B6%88%EC%96%B4%EB%AF%BC%EC%A3%BC%EB%8B%B9%EC%9D%80%20%ED%98%B8%EB%82%A8%EC%97%90%EC%84%9C%2C%20%EA%B5%AD%EB%AF%BC%EC%9D%98%ED%9E%98%EC%9D%80%20%EA%B0%95%EC%9B%90%EA%B3%BC%20%EB%8C%80%EA%B5%AC%C2%B7%EA%B2%BD%EB%B6%81%20%EB%93%B1%EC%97%90%EC%84%9C%20%EA%B0%81%EA%B0%81%20%EB%A7%89%ED%8C%90%20%EC%9C%A0%EC%84%B8%EB%A5%BC%20%ED%8E%BC%EC%B9%98%EB%A9%B0%20%EC%A7%80%EC%A7%80%EC%B8%B5%20%EA%B2%B0%EC%A7%91%EC%97%90%20%EC%B4%9D%EB%A0%A5%EC%9D%84%20%EA%B8%B0%EC%9A%B8%EC%98%80%EB%8B%A4.%20%EC%A0%84%EA%B5%AD%20%EC%82%AC%EC%A0%84%ED%88%AC%ED%91%9C%EC%9C%A8%EC%9D%80%2020.3%25%EB%A1%9C%20%EC%A7%80%EB%82%9C%20%EC%A7%80%EB%B0%A9%EC%84%A0%EA%B1%B0%EB%B3%B4%EB%8B%A4%20%EB%86%92%EC%9D%80%20%EC%88%98%EC%A4%80%EC%9D%84%20%EB%B3%B4%EC%98%80%EB%8B%A4.%5D&selected_max=35843.3953391156&selected_min=0.000583209"
     },
     {
-      "title": "[코스피가 금리 상승 우려에도 불구하고 기관의 매수세 유입에 힘입어 상승 마감했다. 삼성전자를 비롯한 대형주가 상승세를 주도하며 지수 상승폭을 키웠다.]",
-      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [코스피가 금리 상승 우려에도 불구하고 기관의 매수세 유입에 힘입어 상승 마감했다. 삼성전자를 비롯한 대형주가 상승세를 주도하며 지수 상승폭을 키웠다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
+      "title": "[현대차가 보스턴다이나믹스의 휴머노이드 로봇 '아틀라스'가 라보나 킥 등 고난도 축구 기술을 구현하는 모습을 담은 '스쿨 오브 풋볼' 캠페인 영상을 공개하며 첨단 로봇 기술을 과시했다.]",
+      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [현대차가 보스턴다이나믹스의 휴머노이드 로봇 '아틀라스'가 라보나 킥 등 고난도 축구 기술을 구현하는 모습을 담은 '스쿨 오브 풋볼' 캠페인 영상을 공개하며 첨단 로봇 기술을 과시했다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
       "category": "일반",
-      "pubDate": "Fri, 29 May 2026 05:48:19 GMT",
-      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B%EC%BD%94%EC%8A%A4%ED%94%BC%EA%B0%80%20%EA%B8%88%EB%A6%AC%20%EC%83%81%EC%8A%B9%20%EC%9A%B0%EB%A0%A4%EC%97%90%EB%8F%84%20%EB%B6%88%EA%B5%AC%ED%95%98%EA%B3%A0%20%EA%B8%B0%EA%B4%80%EC%9D%98%20%EB%A7%A4%EC%88%98%EC%84%B8%20%EC%9C%A0%EC%9E%85%EC%97%90%20%ED%9E%98%EC%9E%85%EC%96%B4%20%EC%83%81%EC%8A%B9%20%EB%A7%88%EA%B0%90%ED%96%88%EB%8B%A4.%20%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90%EB%A5%BC%20%EB%B9%84%EB%A1%AF%ED%95%9C%20%EB%8C%80%ED%98%95%EC%A3%BC%EA%B0%80%20%EC%83%81%EC%8A%B9%EC%84%B8%EB%A5%BC%20%EC%A3%BC%EB%8F%84%ED%95%98%EB%A9%B0%20%EC%A7%80%EC%88%98%20%EC%83%81%EC%8A%B9%ED%8F%AD%EC%9D%84%20%ED%82%A4%EC%9B%A0%EB%8B%A4.%5D&selected_max=53769.2374862484&selected_min=0.0008752481"
+      "pubDate": "Sat, 30 May 2026 01:36:44 GMT",
+      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B%ED%98%84%EB%8C%80%EC%B0%A8%EA%B0%80%20%EB%B3%B4%EC%8A%A4%ED%84%B4%EB%8B%A4%EC%9D%B4%EB%82%98%EB%AF%B9%EC%8A%A4%EC%9D%98%20%ED%9C%B4%EB%A8%B8%EB%85%B8%EC%9D%B4%EB%93%9C%20%EB%A1%9C%EB%B4%87%20'%EC%95%84%ED%8B%80%EB%9D%BC%EC%8A%A4'%EA%B0%80%20%EB%9D%BC%EB%B3%B4%EB%82%98%20%ED%82%A5%20%EB%93%B1%20%EA%B3%A0%EB%82%9C%EB%8F%84%20%EC%B6%95%EA%B5%AC%20%EA%B8%B0%EC%88%A0%EC%9D%84%20%EA%B5%AC%ED%98%84%ED%95%98%EB%8A%94%20%EB%AA%A8%EC%8A%B5%EC%9D%84%20%EB%8B%B4%EC%9D%80%20'%EC%8A%A4%EC%BF%A8%20%EC%98%A4%EB%B8%8C%20%ED%92%8B%EB%B3%BC'%20%EC%BA%A0%ED%8E%98%EC%9D%B8%20%EC%98%81%EC%83%81%EC%9D%84%20%EA%B3%B5%EA%B0%9C%ED%95%98%EB%A9%B0%20%EC%B2%A8%EB%8B%A8%20%EB%A1%9C%EB%B4%87%20%EA%B8%B0%EC%88%A0%EC%9D%84%20%EA%B3%BC%EC%8B%9C%ED%96%88%EB%8B%A4.%5D&selected_max=43767.9323130661&selected_min=0.0007149117"
     }
   ]
 }

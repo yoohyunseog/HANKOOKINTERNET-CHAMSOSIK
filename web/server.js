@@ -481,8 +481,8 @@ app.use((req, res, next) => {
 });
 
 // 미들웨어
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json({ limit: '50mb' }));
+app.use(bodyParser.urlencoded({ extended: true, limit: '50mb' }));
 
 // Favicon 요청을 기본적으로 처리
 app.get('/favicon.ico', (req, res) => {

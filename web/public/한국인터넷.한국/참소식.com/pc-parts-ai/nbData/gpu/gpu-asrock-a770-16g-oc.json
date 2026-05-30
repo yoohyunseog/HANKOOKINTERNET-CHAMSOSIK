@@ -1,0 +1,89 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-05-30T12:02:27.295+09:00",
+  "category": "GPU",
+  "id": "gpu-asrock-a770-16g-oc",
+  "name": "ASRock 인텔 아크 A770 그래픽스 팬텀 게이밍 16G OC",
+  "maker": "ASRock",
+  "platform": "PCIe 4.0",
+  "estimatedPriceKrw": 406900,
+  "priceBand": "30~60만원",
+  "speedLabel": "2200 MHz",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "GPU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 65,
+  "valueIndex": 16,
+  "aiUseScore": 42,
+  "powerWatts": 225,
+  "tags": [
+    "gaming",
+    "workstation"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "GPU",
+    "partId": "gpu-asrock-a770-16g-oc",
+    "partName": "ASRock 인텔 아크 A770 그래픽스 팬텀 게이밍 16G OC",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "GPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 650,
+      "value": 213,
+      "aiFit": 420,
+      "priceEfficiency": 250,
+      "powerEfficiency": 100
+    },
+    "nbVector": [
+      100,
+      650,
+      213,
+      420,
+      250,
+      100
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 154.341,
+    "nbMin": 380.668,
+    "weightedScore": 270,
+    "nbBand": "100~499",
+    "summary": "GPU ASRock 인텔 아크 A770 그래픽스 팬텀 게이밍 16G OC 부품을 속도 중심 N/B 데이터베이스 점수 270점으로 저장했습니다."
+  },
+  "nbWeightedScore": 270,
+  "nbMax": 154.341,
+  "nbMin": 380.668,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Intel%20Arc%20A770%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "Phantom Gaming OC model",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

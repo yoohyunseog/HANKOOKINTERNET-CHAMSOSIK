@@ -1,0 +1,90 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-05-30T12:02:32.407+09:00",
+  "category": "GPU",
+  "id": "gpu-zotac-gaming-geforce-rtx-5090-solid-oc-d7-32gb",
+  "name": "ZOTAC GAMING GeForce RTX 5090 SOLID OC D7 32GB",
+  "maker": "ZOTAC",
+  "platform": "PCIe",
+  "estimatedPriceKrw": 5002190,
+  "priceBand": "60만원 이상",
+  "speedLabel": "OC",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "GPU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 100,
+  "valueIndex": 2,
+  "aiUseScore": 100,
+  "powerWatts": 0,
+  "tags": [
+    "gaming",
+    "ai",
+    "high-end"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "GPU",
+    "partId": "gpu-zotac-gaming-geforce-rtx-5090-solid-oc-d7-32gb",
+    "partName": "ZOTAC GAMING GeForce RTX 5090 SOLID OC D7 32GB",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "GPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 1000,
+      "value": 100,
+      "aiFit": 1000,
+      "priceEfficiency": 20,
+      "powerEfficiency": 1000
+    },
+    "nbVector": [
+      100,
+      1000,
+      100,
+      1000,
+      20,
+      1000
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 331.302,
+    "nbMin": 314.844,
+    "weightedScore": 418,
+    "nbBand": "100~499",
+    "summary": "GPU ZOTAC GAMING GeForce RTX 5090 SOLID OC D7 32GB 부품을 속도 중심 N/B 데이터베이스 점수 418점으로 저장했습니다."
+  },
+  "nbWeightedScore": 418,
+  "nbMax": 331.302,
+  "nbMin": 314.844,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=RTX%205090%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "Found via Danawa search results.",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

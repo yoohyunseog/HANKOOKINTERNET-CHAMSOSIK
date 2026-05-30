@@ -6,6 +6,7 @@
   <title>참소식 Ollama IDE</title>
   <meta name="description" content="참소식.com Ollama AI IDE">
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Nanum+Gothic+Coding:wght@400;700&display=swap" rel="stylesheet">
@@ -56,7 +57,7 @@
       max-height: 100vh;
       max-height: 100dvh;
       display: grid;
-      grid-template-rows: 56px minmax(0, 1fr) 180px 40px;
+      grid-template-rows: 56px minmax(0, 1fr) auto 40px;
       background:
         linear-gradient(135deg, rgba(37, 99, 235, .12), transparent 35%),
         linear-gradient(315deg, rgba(34, 197, 94, .09), transparent 34%),
@@ -336,11 +337,145 @@
       font-size: 11px;
     }
 
-    .composer {
+    /* Markdown 스타일 */
+    .bubble h1, .bubble h2, .bubble h3 {
+      margin: 16px 0 8px;
+      color: var(--text);
+      font-weight: 700;
+    }
+    .bubble h1 { font-size: 1.4em; border-bottom: 1px solid var(--line); padding-bottom: 8px; }
+    .bubble h2 { font-size: 1.2em; color: #a78bfa; }
+    .bubble h3 { font-size: 1.1em; color: #60a5fa; }
+    .bubble h1:first-child, .bubble h2:first-child, .bubble h3:first-child { margin-top: 0; }
+    
+    .bubble p { margin: 8px 0; line-height: 1.7; }
+    .bubble p:first-child { margin-top: 0; }
+    .bubble p:last-child { margin-bottom: 0; }
+    
+    .bubble ul, .bubble ol { margin: 8px 0; padding-left: 24px; }
+    .bubble li { margin: 4px 0; line-height: 1.6; }
+    
+    .bubble code {
+      background: rgba(0, 0, 0, 0.3);
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: "Nanum Gothic Coding", monospace;
+      font-size: 0.9em;
+      color: #f472b6;
+    }
+    
+    .bubble pre {
+      background: rgba(0, 0, 0, 0.4);
+      padding: 12px 16px;
+      border-radius: 8px;
+      overflow-x: auto;
+      margin: 12px 0;
+      border: 1px solid var(--line);
+    }
+    
+    .bubble pre code {
+      background: none;
+      padding: 0;
+      color: var(--text);
+      font-size: 0.85em;
+    }
+    
+    .bubble strong { color: #fbbf24; font-weight: 700; }
+    .bubble em { color: #a78bfa; font-style: italic; }
+    
+    .bubble a {
+      color: #38bdf8;
+      text-decoration: none;
+      border-bottom: 1px dashed #38bdf8;
+    }
+    .bubble a:hover { color: #60a5fa; border-bottom-style: solid; }
+    
+    .bubble blockquote {
+      border-left: 3px solid #8b5cf6;
+      padding-left: 16px;
+      margin: 12px 0;
+      color: var(--muted);
+      font-style: italic;
+    }
+    
+    .bubble table {
+      border-collapse: collapse;
+      margin: 12px 0;
+      width: 100%;
+    }
+    .bubble th, .bubble td {
+      border: 1px solid var(--line);
+      padding: 8px 12px;
+      text-align: left;
+    }
+    .bubble th { background: rgba(139, 92, 246, 0.1); font-weight: 700; }
+    .bubble tr:nth-child(even) { background: rgba(0, 0, 0, 0.1); }
+
+    .composer-wrapper {
       border-top: 1px solid var(--line);
       background: rgba(15, 23, 42, .96);
-      padding: 20px;
       backdrop-filter: blur(10px);
+    }
+
+    .composer-toggle {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px;
+      background: linear-gradient(135deg, rgba(139, 92, 246, 0.08), rgba(99, 102, 241, 0.05));
+      cursor: pointer;
+      transition: all 0.3s ease;
+      user-select: none;
+    }
+
+    .composer-toggle:hover {
+      background: linear-gradient(135deg, rgba(139, 92, 246, 0.15), rgba(99, 102, 241, 0.1));
+    }
+
+    .composer-toggle-text {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    .composer-toggle:hover .composer-toggle-text {
+      color: #a78bfa;
+    }
+
+    .composer-toggle-icon {
+      font-size: 18px;
+      transition: transform 0.5s ease;
+    }
+
+    .composer-toggle.active .composer-toggle-icon {
+      transform: rotate(180deg);
+    }
+
+    .composer {
+      max-height: 0;
+      opacity: 0;
+      overflow: hidden;
+      visibility: hidden;
+      transition: max-height 1s cubic-bezier(0.4, 0, 0.2, 1), 
+                  opacity 0.8s ease,
+                  padding 1s ease,
+                  visibility 0s linear 1s;
+      padding: 0 20px;
+    }
+
+    .composer.show {
+      max-height: 250px;
+      opacity: 1;
+      visibility: visible;
+      transition: max-height 1s cubic-bezier(0.4, 0, 0.2, 1), 
+                  opacity 0.8s ease,
+                  padding 1s ease,
+                  visibility 0s linear 0s;
+      padding: 20px;
     }
 
     .composer form {
@@ -539,7 +674,14 @@
 
     <section class="chat" id="chatLog" aria-live="polite"></section>
 
-    <section class="composer">
+    <div class="composer-wrapper">
+      <div class="composer-toggle" id="composerToggle">
+        <div class="composer-toggle-text">
+          <span class="composer-toggle-icon">💬</span>
+          <span>메시지 입력하려면 클릭하세요</span>
+        </div>
+      </div>
+      <section class="composer" id="composer">
       <form id="chatForm">
         <div class="input-wrapper">
           <textarea id="promptInput" placeholder="메시지를 입력하세요... (Enter로 전송, Shift+Enter로 줄바꿈)" autocomplete="off"></textarea>
@@ -552,7 +694,8 @@
           <button class="quick-button" type="button" data-prompt="이 내용을 팩트체크 해줘">✅ 팩트체크</button>
         </div>
       </form>
-    </section>
+      </section>
+    </div>
 
     <footer class="statusbar">
       <div class="status-left">
@@ -561,7 +704,6 @@
       </div>
       <div class="status-right">
         <span>⚡ 스트리밍</span>
-        <span>💾 자동 저장</span>
       </div>
     </footer>
   </div>
@@ -593,19 +735,20 @@
     let webSearchEnabled = true;
 
     function loadState() {
-      try {
-        const saved = JSON.parse(localStorage.getItem(storageKey) || "{}");
-        if (saved && Array.isArray(saved.conversations)) {
-          return {
-            conversations: saved.conversations,
-            activeId: saved.activeId,
-            endpoint: saved.endpoint || DEFAULT_ENDPOINT,
-            model: saved.model || DEFAULT_MODEL,
-            temperature: saved.temperature || "0.5",
-            system: saved.system || ""
-          };
-        }
-      } catch (error) {}
+      // 저장 비활성화 - post.html은 항상 새 대화 상태로 시작
+      // try {
+      //   const saved = JSON.parse(localStorage.getItem(storageKey) || "{}");
+      //   if (saved && Array.isArray(saved.conversations)) {
+      //     return {
+      //       conversations: saved.conversations,
+      //       activeId: saved.activeId,
+      //       endpoint: saved.endpoint || DEFAULT_ENDPOINT,
+      //       model: saved.model || DEFAULT_MODEL,
+      //       temperature: saved.temperature || "0.5",
+      //       system: saved.system || ""
+      //     };
+      //   }
+      // } catch (error) {}
 
       return {
         conversations: [createConversation("새 대화")],
@@ -617,10 +760,11 @@
     }
 
     function saveState() {
-      localStorage.setItem(storageKey, JSON.stringify({
-        ...state,
-        activeId
-      }));
+      // 저장 비활성화 - post.html은 대화 기록을 저장하지 않음
+      // localStorage.setItem(storageKey, JSON.stringify({
+      //   ...state,
+      //   activeId
+      // }));
     }
 
     function createConversation(title) {
@@ -647,9 +791,31 @@
 
     function markdownToHtml(text) {
       if (!text) return "";
-      let html = text;
-      html = html.replace(/[*#]/g, '');
-      return html;
+      try {
+        // marked.js가 로드된 경우 사용
+        if (typeof marked !== 'undefined') {
+          return marked.parse(text, {
+            breaks: true,
+            gfm: true,
+            headerIds: false,
+            mangle: false
+          });
+        }
+      } catch (e) {
+        console.warn('marked.js error:', e);
+      }
+      // 폴백: 기본 처리
+      return text
+        .replace(/```([\s\S]*?)```/g, '<pre><code>$1</code></pre>')
+        .replace(/`([^`]+)`/g, '<code>$1</code>')
+        .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
+        .replace(/\*([^*]+)\*/g, '<em>$1</em>')
+        .replace(/^### (.+)$/gm, '<h3>$1</h3>')
+        .replace(/^## (.+)$/gm, '<h2>$1</h2>')
+        .replace(/^# (.+)$/gm, '<h1>$1</h1>')
+        .replace(/^- (.+)$/gm, '<li>$1</li>')
+        .replace(/^(\d+)\. (.+)$/gm, '<li>$2</li>')
+        .replace(/\n/g, '<br>');
     }
 
     function renderMessageContent(content) {
@@ -696,10 +862,7 @@
         cleaned = cleaned.replace(new RegExp(w + '[?]?$', 'g'), '');
       });
       
-      if (cleaned.length > 50) {
-        cleaned = cleaned.slice(0, 50);
-      }
-      
+      // 검색어 길이 제한 없음 - 전체 문장 사용
       return cleaned.trim();
     }
 
@@ -982,7 +1145,20 @@
     async function streamAI(prompt, onChunk, onComplete) {
       const model = DEFAULT_MODEL;
       const conversation = currentConversation();
-      const systemPrompt = "";
+      const systemPrompt = `당신은 한국어로 답변하는 유용한 AI 어시스턴트입니다.
+
+답변 형식:
+- 마크다운 형식을 사용하세요 (제목: ##, 목록: -, 강조: **, 코드: \`\`\`)
+- 중요한 내용은 **굵게** 표시하세요
+- 목록은 - 기호를 사용하세요
+- 코드는 \`\`\`언어명 형식으로 표시하세요
+- 출처나 참고 자료는 링크 형태로 제공하세요
+- 답변은 명확하고 구조적으로 작성하세요
+
+웹 검색 결과가 제공된 경우:
+- 검색 결과를 바탕으로 정확한 정보를 제공하세요
+- 출처를 반드시 표시하세요
+- 정보가 불확실한 경우 명시하세요`;
       
       let searchResults = null;
       let searchContext = "";
@@ -1036,19 +1212,18 @@
         temperature: 0.5
       };
 
-      const urls = ["/api/ollama-chat", `${REMOTE_SERVER}/api/chat`];
+      // HTTPS 페이지에서 HTTP 직접 호출 불가하므로 Same-Origin Proxy만 사용
+      const urls = ["/api/ollama-chat"];
       
       let lastError = null;
       for (const url of urls) {
         try {
-          const sameOriginProxy = url === "/api/ollama-chat";
           log(`POST ${url} model=${model} stream=true`);
           
           const response = await fetch(url, {
             method: "POST",
             headers: {
-              "Content-Type": sameOriginProxy ? "application/json" : "text/plain",
-              "Authorization": `Bearer ${OLLAMA_API_KEY}`
+              "Content-Type": "application/json"
             },
             body: JSON.stringify(body)
           });
@@ -1300,6 +1475,50 @@
     
     // URL 파라미터 체크
     checkURLParameter();
+
+    // Composer 토글 기능
+    const composerToggle = document.querySelector("#composerToggle");
+    const composer = document.querySelector("#composer");
+    let composerVisible = false;
+
+    // 초기 상태: 입력란 숨김
+    composer.classList.remove("show");
+    composerToggle.classList.remove("active");
+
+    function showComposer() {
+      composerVisible = true;
+      composer.classList.add("show");
+      composerToggle.classList.add("active");
+      composerToggle.querySelector(".composer-toggle-text span:last-child").textContent = "입력란 숨기기";
+      setTimeout(() => {
+        els.promptInput.focus();
+      }, 1000);
+    }
+
+    function hideComposer() {
+      composerVisible = false;
+      composer.classList.remove("show");
+      composerToggle.classList.remove("active");
+      composerToggle.querySelector(".composer-toggle-text span:last-child").textContent = "메시지 입력하려면 클릭하세요";
+    }
+
+    composerToggle.addEventListener("click", () => {
+      if (composerVisible) {
+        hideComposer();
+      } else {
+        showComposer();
+      }
+    });
+
+    // URL 파라미터로 자동 실행 시 composer 표시
+    const originalSubmitPrompt = submitPrompt;
+    submitPrompt = async function(promptText) {
+      if (!composerVisible) {
+        showComposer();
+        await new Promise(resolve => setTimeout(resolve, 1000));
+      }
+      return originalSubmitPrompt(promptText);
+    };
   </script>
 </body>
 </html>

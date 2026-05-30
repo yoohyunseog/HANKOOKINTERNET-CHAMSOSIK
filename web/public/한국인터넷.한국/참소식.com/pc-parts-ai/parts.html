@@ -444,6 +444,10 @@
       <div class="combo-grid" id="nb-top3-results" style="margin-top:12px;"></div>
     </section>
 
+    <div id="loading-status" class="loading-banner" style="display: none; padding: 12px 16px; margin-bottom: 18px; border-radius: 8px; background: #dbeafe; color: #1e40af; font-weight: 800; text-align: center;">
+      부품 데이터 로딩 중...
+    </div>
+
     <section class="status-grid" aria-label="부품 요약">
       <article class="status-card">
         <span class="status-icon">P</span>
@@ -484,6 +488,7 @@
         <button class="button" data-random-attempts="300" type="button">300번</button>
         <button class="button" data-random-attempts="500" type="button">500번</button>
         <button class="button" data-random-attempts="1000" type="button">1000번</button>
+        <button class="button" id="reset-button" type="button" style="background: #dc2626; border-color: #dc2626; color: #fff;">초기화</button>
         <span class="part-meta" id="combo-progress">대기 중 · 1ms 간격 계산</span>
       </div>
       <div class="combo-grid" id="combo-results"></div>
@@ -624,7 +629,9 @@
         return;
       }
 
-      table.innerHTML = parts.map((part) => `
+      // 가상 스크롤링: 처음 100개만 렌더링
+      const initialCount = 100;
+      const renderPartRow = (part) => `
         <tr>
           <td>
             <div class="category-cell">
@@ -661,7 +668,38 @@
           <td><div class="tag-list">${(part.tags || []).map((tag) => `<span class="tag">${escapeHtml(tag)}</span>`).join("")}</div></td>
           <td>${escapeHtml(part.notes || part.aiExplanation?.summary || "-")}</td>
         </tr>
-      `).join("");
+      `;
+
+      // 처음 100개 렌더링
+      table.innerHTML = parts.slice(0, initialCount).map(renderPartRow).join("");
+
+      // 나머지 데이터를 지연 로딩
+      if (parts.length > initialCount) {
+        let loadedCount = initialCount;
+        const loadMore = () => {
+          const nextBatch = parts.slice(loadedCount, loadedCount + 100);
+          if (nextBatch.length === 0) return;
+          const fragment = document.createDocumentFragment();
+          const tbody = table;
+          nextBatch.forEach((part) => {
+            const tr = document.createElement("tr");
+            tr.innerHTML = renderPartRow(part).replace(/^<tr>|<\/tr>$/g, "");
+            tbody.appendChild(tr);
+          });
+          loadedCount += nextBatch.length;
+        };
+
+        // 스크롤 이벤트로 추가 로딩
+        const scrollHandler = () => {
+          const scrollY = window.scrollY || window.pageYOffset;
+          const windowHeight = window.innerHeight;
+          const docHeight = document.documentElement.scrollHeight;
+          if (scrollY + windowHeight >= docHeight - 500 && loadedCount < parts.length) {
+            loadMore();
+          }
+        };
+        window.addEventListener("scroll", scrollHandler, { passive: true });
+      }
     }
 
     function render() {
@@ -714,29 +752,61 @@
       return response.json();
     }
 
-    async function loadNbDataParts() {
+    async function loadNbDataParts(onProgress) {
       const manifest = await fetchJson("./nbData/manifest.json");
       const entries = Object.entries(manifest.categories || {});
-      const requests = [];
+      const allRequests = [];
       for (const [folder, files] of entries) {
         for (const fileName of files || []) {
-          requests.push(fetchJson(`./nbData/${folder}/${fileName}`).catch(() => null));
+          allRequests.push({ url: `./nbData/${folder}/${fileName}`, folder, fileName });
         }
       }
-      const loaded = await Promise.all(requests);
+      
+      const totalFiles = allRequests.length;
+      const loaded = [];
+      const batchSize = 20; // 한 번에 20개씩 로드
+      
+      for (let i = 0; i < allRequests.length; i += batchSize) {
+        const batch = allRequests.slice(i, i + batchSize);
+        const batchResults = await Promise.all(
+          batch.map((req) => fetchJson(req.url).catch(() => null))
+        );
+        loaded.push(...batchResults.filter(Boolean));
+        
+        if (onProgress) {
+          onProgress(loaded.length, totalFiles);
+        }
+        
+        // 브라우저가 UI를 업데이트할 수 있도록 잠시 대기
+        if (i + batchSize < allRequests.length) {
+          await new Promise((resolve) => setTimeout(resolve, 10));
+        }
+      }
+      
       return {
         manifest,
-        parts: loaded.filter(Boolean)
+        parts: loaded
       };
     }
 
     async function loadPageData() {
       const data = await fetchJson("./pc-parts-data.json");
       let nbData = { manifest: null, parts: [] };
+      
+      // 로딩 상태 표시
+      const loadingEl = document.getElementById("loading-status");
+      if (loadingEl) loadingEl.textContent = "부품 데이터 로딩 중...";
+      
       try {
-        nbData = await loadNbDataParts();
+        nbData = await loadNbDataParts((loaded, total) => {
+          if (loadingEl) {
+            loadingEl.textContent = `부품 데이터 로딩 중... (${loaded}/${total})`;
+          }
+        });
+        if (loadingEl) loadingEl.textContent = `부품 ${nbData.parts.length}개 로드 완료`;
       } catch (error) {
         console.warn("nbData load skipped", error);
+        if (loadingEl) loadingEl.textContent = "부품 데이터 로드 실패";
       }
 
       const mergedParts = mergeParts(data.parts || [], nbData.parts || []);
@@ -775,13 +845,15 @@
       const avgSpeed = parts.reduce((sum, part) => sum + (part.nbDatabase?.scores?.speed || part.unifiedSpeedScore || 100), 0) / parts.length;
       const avgNb = parts.reduce((sum, part) => sum + (part.nbWeightedScore || 100), 0) / parts.length;
       const avgMax = parts.reduce((sum, part) => sum + (part.nbMax || 0), 0) / parts.length;
-      const avgPerformance = parts.reduce((sum, part) => sum + (part.performance || 0), 0) / parts.length;
-      const valueAverage = parts.reduce((sum, part) => sum + (part.valueIndex || 0), 0) / parts.length;
       const totalPower = parts.reduce((sum, part) => sum + (part.powerWatts || 0), 0);
       const nbMaxAverage = Math.round(avgMax * 1000) / 1000;
-      const finalScore = Math.round(Math.max(100, Math.min(1000,
-        (avgSpeed * 0.34) + (avgNb * 0.28) + (avgPerformance * 7 * 0.18) + (valueAverage * 10 * 0.12) + (nbMaxAverage * 0.08)
-      )));
+      
+      // 새 점수 공식: 속도 평균 + 부품 N/B 평균 + N/B MAX 평균 - 전력
+      // 전력은 100W 단위로 페널티 적용 (100W = 1점 차감)
+      const powerPenalty = totalPower / 100;
+      const rawScore = avgSpeed + avgNb + nbMaxAverage - powerPenalty;
+      const finalScore = Math.round(rawScore * 10) / 10; // 소수점 1자리까지
+      
       return {
         key: parts.map((part) => part.id).join("|"),
         parts,
@@ -790,6 +862,7 @@
         avgSpeed: Math.round(avgSpeed * 10) / 10,
         avgNb: Math.round(avgNb * 10) / 10,
         nbMaxAverage,
+        powerPenalty: Math.round(powerPenalty * 10) / 10,
         finalScore
       };
     }
@@ -812,6 +885,7 @@
         `N/B MAX 평균 ${combo.nbMaxAverage}`,
         `속도 평균 ${combo.avgSpeed}점`,
         `부품 N/B 평균 ${combo.avgNb}점`,
+        `전력 페널티 -${combo.powerPenalty}점`,
         partsText,
         "조립 PC 가격 성능 호환성 추천"
       ].join(" ");
@@ -822,7 +896,8 @@
       const urls = {
         google: `https://www.google.com/search?q=${query}`,
         bing: `https://www.bing.com/search?q=${query}`,
-        naver: `https://search.naver.com/search.naver?query=${query}`
+        naver: `https://search.naver.com/search.naver?query=${query}`,
+        chamsosik: `https://xn--9l4b4xi9r.com/ai/post.html?q=${query}`
       };
       return urls[engine] || urls.google;
     }
@@ -831,6 +906,7 @@
       const title = escapeHtml(comboSearchText(combo));
       return `
         <div class="combo-search-links" aria-label="이 조합 전체 검색">
+          <a class="combo-link" href="${comboSearchUrl(combo, "chamsosik")}" title="${title}" target="_blank" rel="noopener noreferrer">참소식 AI</a>
           <a class="combo-link" href="${comboSearchUrl(combo, "google")}" title="${title}" target="_blank" rel="noopener noreferrer">구글 AI</a>
           <a class="combo-link" href="${comboSearchUrl(combo, "bing")}" title="${title}" target="_blank" rel="noopener noreferrer">BING copilot</a>
           <a class="combo-link" href="${comboSearchUrl(combo, "naver")}" title="${title}" target="_blank" rel="noopener noreferrer">네이버 인공지능</a>
@@ -848,7 +924,8 @@
         <article class="combo-card">
           <h3>Top ${index + 1} · ${escapeHtml(combo.finalScore)}점</h3>
           <p><strong>총액:</strong> ${formatKrw(combo.totalPrice)} · <strong>N/B MAX 평균:</strong> ${escapeHtml(combo.nbMaxAverage)}</p>
-          <p><strong>속도 평균:</strong> ${escapeHtml(combo.avgSpeed)}점 · <strong>부품 N/B 평균:</strong> ${escapeHtml(combo.avgNb)}점 · <strong>전력:</strong> ${escapeHtml(combo.totalPower)}W</p>
+          <p><strong>속도 평균:</strong> ${escapeHtml(combo.avgSpeed)}점 · <strong>부품 N/B 평균:</strong> ${escapeHtml(combo.avgNb)}점</p>
+          <p><strong>전력:</strong> ${escapeHtml(combo.totalPower)}W · <strong>전력 페널티:</strong> -${escapeHtml(combo.powerPenalty)}점</p>
           <ul>
             ${combo.parts.map((part) => `<li>${escapeHtml(part.category)} · ${escapeHtml(part.name)} · N/B ${escapeHtml(part.nbWeightedScore || "-")}점 · 속도 ${escapeHtml(part.unifiedSpeedScore || "-")}점</li>`).join("")}
           </ul>
@@ -966,20 +1043,34 @@
       renderNbTop3ForRun(manifest);
     }
 
+    // 로딩 배너 표시
+    const loadingBanner = document.getElementById("loading-status");
+    if (loadingBanner) loadingBanner.style.display = "block";
 
     loadPageData()
       .then((data) => {
         state.data = data;
         render();
         loadSavedCombos();
+        // 로딩 완료 후 배너 숨김
+        if (loadingBanner) loadingBanner.style.display = "none";
         document.getElementById("random-combo-button").addEventListener("click", () => calculateRandomCombos(100));
         document.querySelectorAll("[data-random-attempts]").forEach((button) => {
           button.addEventListener("click", () => calculateRandomCombos(Number(button.dataset.randomAttempts || 100)));
+        });
+        // 초기화 버튼
+        document.getElementById("reset-button").addEventListener("click", () => {
+          if (confirm("저장된 조합 데이터와 로컬 캐시를 모두 초기화하시겠습니까?")) {
+            localStorage.removeItem("pc_parts_top15");
+            localStorage.removeItem("pc_parts_data_cache");
+            location.reload();
+          }
         });
         // initialize Top3 widget that reads server manifest
         initNbTop3Widget().catch(() => {});
       })
       .catch((error) => {
+        if (loadingBanner) loadingBanner.style.display = "none";
         document.getElementById("top-updated").textContent = "자료를 불러오지 못했습니다.";
         document.getElementById("parts-table").innerHTML = `<tr><td colspan="14">${escapeHtml(error.message)}</td></tr>`;
       });
