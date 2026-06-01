@@ -1,0 +1,90 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-06-01T15:15:40.274+09:00",
+  "category": "GPU",
+  "id": "gpu-msi-geforce-rtx-4090-gaming-x-trio-24g",
+  "name": "MSI GeForce RTX 4090 Gaming X Trio 24G",
+  "maker": "MSI",
+  "platform": "PCIe 4.0",
+  "estimatedPriceKrw": 7519400,
+  "priceBand": "60만원 이상",
+  "speedLabel": "2595MHz",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "GPU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 100,
+  "valueIndex": 1.3,
+  "aiUseScore": 100,
+  "powerWatts": 450,
+  "tags": [
+    "gaming",
+    "ai",
+    "high-end"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "GPU",
+    "partId": "gpu-msi-geforce-rtx-4090-gaming-x-trio-24g",
+    "partName": "MSI GeForce RTX 4090 Gaming X Trio 24G",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "GPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 1000,
+      "value": 100,
+      "aiFit": 1000,
+      "priceEfficiency": 10,
+      "powerEfficiency": 100
+    },
+    "nbVector": [
+      100,
+      1000,
+      100,
+      1000,
+      10,
+      100
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 172.223,
+    "nbMin": 291.317,
+    "weightedScore": 363,
+    "nbBand": "100~499",
+    "summary": "GPU MSI GeForce RTX 4090 Gaming X Trio 24G 부품을 속도 중심 N/B 데이터베이스 점수 363점으로 저장했습니다."
+  },
+  "nbWeightedScore": 363,
+  "nbMax": 172.223,
+  "nbMin": 291.317,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=RTX%204090%20MSI%20Gaming%20X%20Trio%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "Observed price from search result (7,519,400 KRW).",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

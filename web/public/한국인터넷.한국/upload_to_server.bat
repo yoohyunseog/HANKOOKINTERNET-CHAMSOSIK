@@ -35,7 +35,7 @@ echo.
 echo 하위 폴더 업로드 중...
 echo.
 
-REM assets 폴더 업로드 (Bootstrap, Bootstrap Icons)
+REM assets 폴더 업로드
 echo [assets 폴더 업로드]
 scp -r "%LOCAL_PATH%\assets" %REMOTE_SERVER%:%REMOTE_PATH%/
 
@@ -52,6 +52,11 @@ echo [보이니치 폴더 업로드]
 scp -r "%LOCAL_PATH%\보이니치" %REMOTE_SERVER%:%REMOTE_PATH%/
 
 echo.
+echo 서버에서 .zip 파일 삭제 중...
+ssh %REMOTE_SERVER% "find %REMOTE_PATH% -name '*.zip' -type f -delete"
+echo .zip 파일 삭제 완료
+
+echo.
 echo ========================================
 echo 업로드 완료: %date% %time%
 echo ========================================
@@ -60,8 +65,7 @@ echo 제외된 항목:
 echo   - .git 폴더
 echo   - .gitignore
 echo   - 참소식.com 폴더
-echo   - 참소식.com.zip
-echo   - GAME.zip
+echo   - 모든 .zip 파일 (*.zip)
 echo   - upload_to_server.bat
 echo   - download_bootstrap.bat
 echo.

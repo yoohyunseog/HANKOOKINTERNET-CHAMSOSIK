@@ -1,0 +1,89 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-06-01T15:15:40.898+09:00",
+  "category": "GPU",
+  "id": "gpu-sparkle-intel-arc-b580-titan-oc-12gb-gddr6",
+  "name": "Sparkle Intel Arc B580 Titan OC 12GB GDDR6",
+  "maker": "Sparkle",
+  "platform": "PCIe 4.0",
+  "estimatedPriceKrw": 266380,
+  "priceBand": "15~30만원",
+  "speedLabel": "OC",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "GPU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 55,
+  "valueIndex": 20.6,
+  "aiUseScore": 36,
+  "powerWatts": 150,
+  "tags": [
+    "gaming",
+    "budget"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "GPU",
+    "partId": "gpu-sparkle-intel-arc-b580-titan-oc-12gb-gddr6",
+    "partName": "Sparkle Intel Arc B580 Titan OC 12GB GDDR6",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "GPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 550,
+      "value": 275,
+      "aiFit": 360,
+      "priceEfficiency": 380,
+      "powerEfficiency": 122
+    },
+    "nbVector": [
+      100,
+      550,
+      275,
+      360,
+      380,
+      122
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 232.491,
+    "nbMin": 419.494,
+    "weightedScore": 264,
+    "nbBand": "100~499",
+    "summary": "GPU Sparkle Intel Arc B580 Titan OC 12GB GDDR6 부품을 속도 중심 N/B 데이터베이스 점수 264점으로 저장했습니다."
+  },
+  "nbWeightedScore": 264,
+  "nbMax": 232.491,
+  "nbMin": 419.494,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Intel%20Arc%20B580%20%EA%B0%80%EA%B2%A9",
+  "notes": "Model SB580T-12GOC",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

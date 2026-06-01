@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-30T12:02:25.807+09:00",
+  "updatedAt": "2026-06-01T15:15:36.451+09:00",
   "category": "CPU",
   "id": "cpu-amd-5-7600",
   "name": "AMD 라이젠 5 7600",
@@ -82,7 +82,7 @@
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=AMD%20%EB%9D%BC%EC%9D%B4%EC%A0%A0%205%207600%20%EC%B5%9C%EC%A0%80%EA%B0%80",
   "notes": "AMD 라이젠 5 7600은 가격과 성능, 플랫폼 호환성을 함께 확인할 CPU 후보입니다.",
   "textRepair": {
-    "checkedAt": "2026-05-30T12:02:25.807+09:00",
+    "checkedAt": "2026-06-01T15:15:36.451+09:00",
     "method": "ai-text-sanity-rules",
     "repairedFields": [
       "notes"

@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-30T12:02:33.055+09:00",
+  "updatedAt": "2026-06-01T15:15:41.833+09:00",
   "category": "SSD",
   "id": "ssd-nvme-1tb-gen4",
   "name": "NVMe Gen4 SSD 1TB",
@@ -82,7 +82,7 @@
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=NVMe%20Gen4%20SSD%201TB%20price",
   "notes": "NVMe Gen4 SSD 1TB은 운영체제, 게임, 작업 파일 저장용으로 검토할 NVMe SSD 후보입니다.",
   "textRepair": {
-    "checkedAt": "2026-05-30T12:02:33.055+09:00",
+    "checkedAt": "2026-06-01T15:15:41.833+09:00",
     "method": "ai-text-sanity-rules",
     "repairedFields": [
       "notes"

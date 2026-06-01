@@ -2,101 +2,101 @@
   "title": "이클립스 센츄어리 D.P 브리핑",
   "model": "deepseek-v3.1:671b-cloud",
   "source_feed": "https://xn--9l4b4xi9r.com/feed.xml",
-  "updated_at": "2026-05-30T02:54:27.254668+00:00",
-  "feed_last_build_date": "Sat, 30 May 2026 02:53:41 GMT",
+  "updated_at": "2026-06-01T06:12:20.935765+00:00",
+  "feed_last_build_date": "Mon, 01 Jun 2026 06:11:56 GMT",
   "item_count": 12,
-  "headline": "지방선거 투표율 증가와 개별 종목 기술적 반등 신호",
-  "summary": "제9회 지방선거 사전투표율이 역대 최고치를 기록하며 정치적 관심이 높아졌습니다. 버스코DX 등 일부 종목에서 기술적 상승 패턴이 관찰되고 있습니다. 코스닥 액티브 ETF는 고점 대비 21% 하락하며 신규 투자자들이 손실을 보고 있습니다.",
+  "headline": "AI 테마주 강세 지속, 반도체·IT 중심 상승",
+  "summary": "AI 서버 수요 증가로 삼성전자와 SK하이닉스가 신고가 경신하며 코스피 상승을 주도했습니다. 네이버와 LG전자도 AI 관련 사업 기대감에 강한 상승세를 보였습니다. 다만 네이버는 공매도 pressure로 상승폭이 일부 제한되는 모습입니다.",
   "signals": [
-    "지방선거 사전투표율 역대 최고 기록",
-    "버스코DX 기술적 상승 패턴 형성",
-    "코스닥 액티브 ETF 고점 대비 21% 하락"
+    "반도체 슈퍼사이클 본격화",
+    "AI 플랫폼 사업 확대 기대",
+    "HBM 수요 폭증"
   ],
   "risks": [
-    "개별 종목 과열 투자 우려",
-    "ETF 발행 시점 밸류에이션 판단 필요",
-    "특정 국적의 부동산 편중 현상"
+    "공매도 pressure 확대",
+    "기관 순매도 지속",
+    "과열 조정 가능성"
   ],
   "market_impact": [
-    "코스피 단기 기술적 반등 가능성",
-    "코스닥 변동성 확대 우려",
-    "비트코인 직접적 영향 미미",
-    "한국 증시 선거 효과 기대 심리"
+    "코스피 상승 추세 유지",
+    "코스닥 AI 테마주 동반 상승",
+    "비트코인 변동성 완화",
+    "한국 증시 낙관적 심리 확대"
   ],
-  "outlook": "선거 관련 주식과 기술적 반등 종목에 일시적 관심이 집중될 수 있으나, 지속성 여부는 추가 확인이 필요합니다.",
-  "quality_note": "피드 내용이 주로 국내 정치와 개별 종목 기술적 분석에 집중되어 글로벌 이슈 다양성이 부족합니다.",
+  "outlook": "AI 관련주를 중심으로 단기 강세 지속될 전망이지만 공매도 pressure와 기관 매도는 상승폭을 제한할 수 있습니다.",
+  "quality_note": "피드 내용이 주로 AI 관련 기업 호재에 집중되어 있어 다양한 시각 보완 필요",
   "weighted_signal": {
-    "score": 58,
-    "upper_bound": 32,
-    "lower_bound": 26,
+    "score": 68,
+    "upper_bound": 45,
+    "lower_bound": 22,
     "grade": "주의",
     "upper_factors": [
-      "지방선거 높은 투표율 +12",
-      "개별 종목 기술적 상승 신호 +10",
-      "코스피 단기 반등 +10"
+      "반도체 수주량 최대치 +15",
+      "AI 인프라 수요 증가 +12",
+      "주가 신고가 경신 +10",
+      "수익성 개선 기대 +8"
     ],
     "lower_factors": [
-      "코스닥 ETF 하락 -12",
-      "외국인 부동산 편중 -8",
-      "개별주 과매도 우려 -6"
+      "공매도 pressure 확대 -12",
+      "기관 순매도 지속 -10"
     ]
   },
   "items": [
     {
-      "title": "[버스코DX가 상승 삼각형 기술적 패턴으로 조정을 마무리하고 15배 폭등을 앞둔 매수 구간에 진입했다. 거래대금이 급증하며 주요 이동평균선을 상향 돌파했다.]",
-      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [버스코DX가 상승 삼각형 기술적 패턴으로 조정을 마무리하고 15배 폭등을 앞둔 매수 구간에 진입했다. 거래대금이 급증하며 주요 이동평균선을 상향 돌파했다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
+      "title": "[가장 중요한 소식 1개 (한 문장)** AI 시대 확대에 따른 HVAC 및 데이터센터 사업 기대감과 향후 전장 사업 성장 전망으로 LG전자 주가가 3월 5일 종가 기준 전일 대비 8.64% 급등하며 강한 상승세를 보였다.]",
+      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [가장 중요한 소식 1개 (한 문장) AI 시대 확대에 따른 HVAC 및 데이터센터 사업 기대감과 향후 전장 사업 성장 전망으로 LG전자 주가가 3월 5일 종가 기준 전일 대비 8.64% 급등하며 강한 상승세를 보였다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
       "category": "일반",
-      "pubDate": "Sat, 30 May 2026 02:47:26 GMT",
-      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B%EB%B2%84%EC%8A%A4%EC%BD%94DX%EA%B0%80%20%EC%83%81%EC%8A%B9%20%EC%82%BC%EA%B0%81%ED%98%95%20%EA%B8%B0%EC%88%A0%EC%A0%81%20%ED%8C%A8%ED%84%B4%EC%9C%BC%EB%A1%9C%20%EC%A1%B0%EC%A0%95%EC%9D%84%20%EB%A7%88%EB%AC%B4%EB%A6%AC%ED%95%98%EA%B3%A0%2015%EB%B0%B0%20%ED%8F%AD%EB%93%B1%EC%9D%84%20%EC%95%9E%EB%91%94%20%EB%A7%A4%EC%88%98%20%EA%B5%AC%EA%B0%84%EC%97%90%20%EC%A7%84%EC%9E%85%ED%96%88%EB%8B%A4.%20%EA%B1%B0%EB%9E%98%EB%8C%80%EA%B8%88%EC%9D%B4%20%EA%B8%89%EC%A6%9D%ED%95%98%EB%A9%B0%20%EC%A3%BC%EC%9A%94%20%EC%9D%B4%EB%8F%99%ED%8F%89%EA%B7%A0%EC%84%A0%EC%9D%84%20%EC%83%81%ED%96%A5%20%EB%8F%8C%ED%8C%8C%ED%96%88%EB%8B%A4.%5D&selected_max=51544.310221197&selected_min=0.0008510764"
+      "pubDate": "Mon, 01 Jun 2026 05:53:44 GMT",
+      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B%EA%B0%80%EC%9E%A5%20%EC%A4%91%EC%9A%94%ED%95%9C%20%EC%86%8C%EC%8B%9D%201%EA%B0%9C%20(%ED%95%9C%20%EB%AC%B8%EC%9E%A5)%20AI%20%EC%8B%9C%EB%8C%80%20%ED%99%95%EB%8C%80%EC%97%90%20%EB%94%B0%EB%A5%B8%20HVAC%20%EB%B0%8F%20%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%84%BC%ED%84%B0%20%EC%82%AC%EC%97%85%20%EA%B8%B0%EB%8C%80%EA%B0%90%EA%B3%BC%20%ED%96%A5%ED%9B%84%20%EC%A0%84%EC%9E%A5%20%EC%82%AC%EC%97%85%20%EC%84%B1%EC%9E%A5%20%EC%A0%84%EB%A7%9D%EC%9C%BC%EB%A1%9C%20LG%EC%A0%84%EC%9E%90%20%EC%A3%BC%EA%B0%80%EA%B0%80%203%EC%9B%94%205%EC%9D%BC%20%EC%A2%85%EA%B0%80%20%EA%B8%B0%EC%A4%80%20%EC%A0%84%EC%9D%BC%20%EB%8C%80%EB%B9%84%208.64%25%20%EA%B8%89%EB%93%B1%ED%95%98%EB%A9%B0%20%EA%B0%95%ED%95%9C%20%EC%83%81%EC%8A%B9%EC%84%B8%EB%A5%BC%20%EB%B3%B4%EC%98%80%EB%8B%A4.%5D&selected_max=36279.2521118989&selected_min=0.0005949431"
     },
     {
-      "title": "[6월 3일로 예정된 제9회 전국동시지방선거 사전투표 첫날인 5월 29일의 투표율이 11.6%로 집계되어 역대 지방선거 사전투표 첫날 중 가장 높은 수치를 기록했다.]",
-      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [6월 3일로 예정된 제9회 전국동시지방선거 사전투표 첫날인 5월 29일의 투표율이 11.6%로 집계되어 역대 지방선거 사전투표 첫날 중 가장 높은 수치를 기록했다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
+      "title": "[LG전자 주가가 50만원까지 상승할 수 있다는 긍정적인 전망이 제시되었다. 전문가들은 차량용 전장 사업의 급성장을 주요 근거로 제시했다.]",
+      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [LG전자 주가가 50만원까지 상승할 수 있다는 긍정적인 전망이 제시되었다. 전문가들은 차량용 전장 사업의 급성장을 주요 근거로 제시했다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
       "category": "일반",
-      "pubDate": "Sat, 30 May 2026 02:45:55 GMT",
-      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B6%EC%9B%94%203%EC%9D%BC%EB%A1%9C%20%EC%98%88%EC%A0%95%EB%90%9C%20%EC%A0%9C9%ED%9A%8C%20%EC%A0%84%EA%B5%AD%EB%8F%99%EC%8B%9C%EC%A7%80%EB%B0%A9%EC%84%A0%EA%B1%B0%20%EC%82%AC%EC%A0%84%ED%88%AC%ED%91%9C%20%EC%B2%AB%EB%82%A0%EC%9D%B8%205%EC%9B%94%2029%EC%9D%BC%EC%9D%98%20%ED%88%AC%ED%91%9C%EC%9C%A8%EC%9D%B4%2011.6%25%EB%A1%9C%20%EC%A7%91%EA%B3%84%EB%90%98%EC%96%B4%20%EC%97%AD%EB%8C%80%20%EC%A7%80%EB%B0%A9%EC%84%A0%EA%B1%B0%20%EC%82%AC%EC%A0%84%ED%88%AC%ED%91%9C%20%EC%B2%AB%EB%82%A0%20%EC%A4%91%20%EA%B0%80%EC%9E%A5%20%EB%86%92%EC%9D%80%20%EC%88%98%EC%B9%98%EB%A5%BC%20%EA%B8%B0%EB%A1%9D%ED%96%88%EB%8B%A4.%5D&selected_max=48850.104306761&selected_min=0.0008029904"
+      "pubDate": "Mon, 01 Jun 2026 05:52:47 GMT",
+      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5BLG%EC%A0%84%EC%9E%90%20%EC%A3%BC%EA%B0%80%EA%B0%80%2050%EB%A7%8C%EC%9B%90%EA%B9%8C%EC%A7%80%20%EC%83%81%EC%8A%B9%ED%95%A0%20%EC%88%98%20%EC%9E%88%EB%8B%A4%EB%8A%94%20%EA%B8%8D%EC%A0%95%EC%A0%81%EC%9D%B8%20%EC%A0%84%EB%A7%9D%EC%9D%B4%20%EC%A0%9C%EC%8B%9C%EB%90%98%EC%97%88%EB%8B%A4.%20%EC%A0%84%EB%AC%B8%EA%B0%80%EB%93%A4%EC%9D%80%20%EC%B0%A8%EB%9F%89%EC%9A%A9%20%EC%A0%84%EC%9E%A5%20%EC%82%AC%EC%97%85%EC%9D%98%20%EA%B8%89%EC%84%B1%EC%9E%A5%EC%9D%84%20%EC%A3%BC%EC%9A%94%20%EA%B7%BC%EA%B1%B0%EB%A1%9C%20%EC%A0%9C%EC%8B%9C%ED%96%88%EB%8B%A4.%5D&selected_max=58087.5733873214&selected_min=0.0009643032"
     },
     {
-      "title": "[삼성전기 등 일부 종목만 급등하는 장세 속에서 버스코DX가 어샌딩 트라이앵글 기술적 패턴으로 저항선(맥점) 돌파 직전에 와 있어 NHN·LG CNS처럼 바닥에서 폭등할 매수 적기다.]",
-      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [삼성전기 등 일부 종목만 급등하는 장세 속에서 버스코DX가 어샌딩 트라이앵글 기술적 패턴으로 저항선(맥점) 돌파 직전에 와 있어 NHN·LG CNS처럼 바닥에서 폭등할 매수 적기다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
+      "title": "[미얀마 샨주 카웅탓 마을에서 광산용 화약이 폭발해 최소 55명이 사망하고 수십 명이 다쳤다. 당국은 구조 작업과 함께 정확한 사고 원인을 조사하고 있다.]",
+      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [미얀마 샨주 카웅탓 마을에서 광산용 화약이 폭발해 최소 55명이 사망하고 수십 명이 다쳤다. 당국은 구조 작업과 함께 정확한 사고 원인을 조사하고 있다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
       "category": "일반",
-      "pubDate": "Sat, 30 May 2026 02:41:51 GMT",
-      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B%EC%82%BC%EC%84%B1%EC%A0%84%EA%B8%B0%20%EB%93%B1%20%EC%9D%BC%EB%B6%80%20%EC%A2%85%EB%AA%A9%EB%A7%8C%20%EA%B8%89%EB%93%B1%ED%95%98%EB%8A%94%20%EC%9E%A5%EC%84%B8%20%EC%86%8D%EC%97%90%EC%84%9C%20%EB%B2%84%EC%8A%A4%EC%BD%94DX%EA%B0%80%20%EC%96%B4%EC%83%8C%EB%94%A9%20%ED%8A%B8%EB%9D%BC%EC%9D%B4%EC%95%B5%EA%B8%80%20%EA%B8%B0%EC%88%A0%EC%A0%81%20%ED%8C%A8%ED%84%B4%EC%9C%BC%EB%A1%9C%20%EC%A0%80%ED%95%AD%EC%84%A0(%EB%A7%A5%EC%A0%90)%20%EB%8F%8C%ED%8C%8C%20%EC%A7%81%EC%A0%84%EC%97%90%20%EC%99%80%20%EC%9E%88%EC%96%B4%20NHN%C2%B7LG%20CNS%EC%B2%98%EB%9F%BC%20%EB%B0%94%EB%8B%A5%EC%97%90%EC%84%9C%20%ED%8F%AD%EB%93%B1%ED%95%A0%20%EB%A7%A4%EC%88%98%20%EC%A0%81%EA%B8%B0%EB%8B%A4.%5D&selected_max=43825.6790273189&selected_min=0.0007280283"
+      "pubDate": "Mon, 01 Jun 2026 05:49:33 GMT",
+      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B%EB%AF%B8%EC%96%80%EB%A7%88%20%EC%83%A8%EC%A3%BC%20%EC%B9%B4%EC%9B%85%ED%83%93%20%EB%A7%88%EC%9D%84%EC%97%90%EC%84%9C%20%EA%B4%91%EC%82%B0%EC%9A%A9%20%ED%99%94%EC%95%BD%EC%9D%B4%20%ED%8F%AD%EB%B0%9C%ED%95%B4%20%EC%B5%9C%EC%86%8C%2055%EB%AA%85%EC%9D%B4%20%EC%82%AC%EB%A7%9D%ED%95%98%EA%B3%A0%20%EC%88%98%EC%8B%AD%20%EB%AA%85%EC%9D%B4%20%EB%8B%A4%EC%B3%A4%EB%8B%A4.%20%EB%8B%B9%EA%B5%AD%EC%9D%80%20%EA%B5%AC%EC%A1%B0%20%EC%9E%91%EC%97%85%EA%B3%BC%20%ED%95%A8%EA%BB%98%20%EC%A0%95%ED%99%95%ED%95%9C%20%EC%82%AC%EA%B3%A0%20%EC%9B%90%EC%9D%B8%EC%9D%84%20%EC%A1%B0%EC%82%AC%ED%95%98%EA%B3%A0%20%EC%9E%88%EB%8B%A4.%5D&selected_max=52205.7653182721&selected_min=0.0008599684"
     },
     {
-      "title": "[3 지방선거 사전투표가 오전 9시 기준 13.35%의 역대 최고 투표율을 기록하며 이틀째 활발하게 진행되고 있습니다. 대형마트와 역사 인근 투표소에서는 아침부터 긴 행렬이 형성됐습니다.]",
-      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [3 지방선거 사전투표가 오전 9시 기준 13.35%의 역대 최고 투표율을 기록하며 이틀째 활발하게 진행되고 있습니다. 대형마트와 역사 인근 투표소에서는 아침부터 긴 행렬이 형성됐습니다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
+      "title": "[네이버의 AI 관련 사업에서 적자가 크게 줄어들며 향후 수익성 개선에 대한 기대감이 커지고 있어, 이것이 중장기적 주가 상승의 핵심 동력이 될 것으로 전망됩니다.]",
+      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [네이버의 AI 관련 사업에서 적자가 크게 줄어들며 향후 수익성 개선에 대한 기대감이 커지고 있어, 이것이 중장기적 주가 상승의 핵심 동력이 될 것으로 전망됩니다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
       "category": "일반",
-      "pubDate": "Sat, 30 May 2026 02:31:42 GMT",
-      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B3%20%EC%A7%80%EB%B0%A9%EC%84%A0%EA%B1%B0%20%EC%82%AC%EC%A0%84%ED%88%AC%ED%91%9C%EA%B0%80%20%EC%98%A4%EC%A0%84%209%EC%8B%9C%20%EA%B8%B0%EC%A4%80%2013.35%25%EC%9D%98%20%EC%97%AD%EB%8C%80%20%EC%B5%9C%EA%B3%A0%20%ED%88%AC%ED%91%9C%EC%9C%A8%EC%9D%84%20%EA%B8%B0%EB%A1%9D%ED%95%98%EB%A9%B0%20%EC%9D%B4%ED%8B%80%EC%A7%B8%20%ED%99%9C%EB%B0%9C%ED%95%98%EA%B2%8C%20%EC%A7%84%ED%96%89%EB%90%98%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%20%EB%8C%80%ED%98%95%EB%A7%88%ED%8A%B8%EC%99%80%20%EC%97%AD%EC%82%AC%20%EC%9D%B8%EA%B7%BC%20%ED%88%AC%ED%91%9C%EC%86%8C%EC%97%90%EC%84%9C%EB%8A%94%20%EC%95%84%EC%B9%A8%EB%B6%80%ED%84%B0%20%EA%B8%B4%20%ED%96%89%EB%A0%AC%EC%9D%B4%20%ED%98%95%EC%84%B1%EB%90%90%EC%8A%B5%EB%8B%88%EB%8B%A4.%5D&selected_max=43174.0713872791&selected_min=0.0007108564"
+      "pubDate": "Mon, 01 Jun 2026 05:45:49 GMT",
+      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B%EB%84%A4%EC%9D%B4%EB%B2%84%EC%9D%98%20AI%20%EA%B4%80%EB%A0%A8%20%EC%82%AC%EC%97%85%EC%97%90%EC%84%9C%20%EC%A0%81%EC%9E%90%EA%B0%80%20%ED%81%AC%EA%B2%8C%20%EC%A4%84%EC%96%B4%EB%93%A4%EB%A9%B0%20%ED%96%A5%ED%9B%84%20%EC%88%98%EC%9D%B5%EC%84%B1%20%EA%B0%9C%EC%84%A0%EC%97%90%20%EB%8C%80%ED%95%9C%20%EA%B8%B0%EB%8C%80%EA%B0%90%EC%9D%B4%20%EC%BB%A4%EC%A7%80%EA%B3%A0%20%EC%9E%88%EC%96%B4%2C%20%EC%9D%B4%EA%B2%83%EC%9D%B4%20%EC%A4%91%EC%9E%A5%EA%B8%B0%EC%A0%81%20%EC%A3%BC%EA%B0%80%20%EC%83%81%EC%8A%B9%EC%9D%98%20%ED%95%B5%EC%8B%AC%20%EB%8F%99%EB%A0%A5%EC%9D%B4%20%EB%90%A0%20%EA%B2%83%EC%9C%BC%EB%A1%9C%20%EC%A0%84%EB%A7%9D%EB%90%A9%EB%8B%88%EB%8B%A4.%5D&selected_max=49438.2748968828&selected_min=0.0008109879"
     },
     {
-      "title": "[이재용 삼국내 기업인이 사전투표 첫날 투표소를 방문한 모습이 취재진에 포착되어 삼성 총수의 투표 장면이 언론에 공개된 이례적인 상황이 발생했다. 이 총수는 이날 오전 서울 서초구의 한 주민센터 투표소를 방문했다.]",
-      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [이재용 삼국내 기업인이 사전투표 첫날 투표소를 방문한 모습이 취재진에 포착되어 삼성 총수의 투표 장면이 언론에 공개된 이례적인 상황이 발생했다. 이 총수는 이날 오전 서울 서초구의 한 주민센터 투표소를 방문했다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
+      "title": "[엔비디아와의 협력 기대감에 힘입어 네이버 주가가 이틀 연속 급등하며 27만원대 신고가를 새로 썼습니다. 증권사들은 AI 인프라 수요 증가로 실적 개선이 기대된다고 분석했습니다.]",
+      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [엔비디아와의 협력 기대감에 힘입어 네이버 주가가 이틀 연속 급등하며 27만원대 신고가를 새로 썼습니다. 증권사들은 AI 인프라 수요 증가로 실적 개선이 기대된다고 분석했습니다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
       "category": "일반",
-      "pubDate": "Sat, 30 May 2026 01:59:29 GMT",
-      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B%EC%9D%B4%EC%9E%AC%EC%9A%A9%20%EC%82%BC%EA%B5%AD%EB%82%B4%20%EA%B8%B0%EC%97%85%EC%9D%B8%EC%9D%B4%20%EC%82%AC%EC%A0%84%ED%88%AC%ED%91%9C%20%EC%B2%AB%EB%82%A0%20%ED%88%AC%ED%91%9C%EC%86%8C%EB%A5%BC%20%EB%B0%A9%EB%AC%B8%ED%95%9C%20%EB%AA%A8%EC%8A%B5%EC%9D%B4%20%EC%B7%A8%EC%9E%AC%EC%A7%84%EC%97%90%20%ED%8F%AC%EC%B0%A9%EB%90%98%EC%96%B4%20%EC%82%BC%EC%84%B1%20%EC%B4%9D%EC%88%98%EC%9D%98%20%ED%88%AC%ED%91%9C%20%EC%9E%A5%EB%A9%B4%EC%9D%B4%20%EC%96%B8%EB%A1%A0%EC%97%90%20%EA%B3%B5%EA%B0%9C%EB%90%9C%20%EC%9D%B4%EB%A1%80%EC%A0%81%EC%9D%B8%20%EC%83%81%ED%99%A9%EC%9D%B4%20%EB%B0%9C%EC%83%9D%ED%96%88%EB%8B%A4.%20%EC%9D%B4%20%EC%B4%9D%EC%88%98%EB%8A%94%20%EC%9D%B4%EB%82%A0%20%EC%98%A4%EC%A0%84%20%EC%84%9C%EC%9A%B8%20%EC%84%9C%EC%B4%88%EA%B5%AC%EC%9D%98%20%ED%95%9C%20%EC%A3%BC%EB%AF%BC%EC%84%BC%ED%84%B0%20%ED%88%AC%ED%91%9C%EC%86%8C%EB%A5%BC%20%EB%B0%A9%EB%AC%B8%ED%96%88%EB%8B%A4.%5D&selected_max=37740.1677145581&selected_min=0.0006210096"
+      "pubDate": "Mon, 01 Jun 2026 05:44:44 GMT",
+      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B%EC%97%94%EB%B9%84%EB%94%94%EC%95%84%EC%99%80%EC%9D%98%20%ED%98%91%EB%A0%A5%20%EA%B8%B0%EB%8C%80%EA%B0%90%EC%97%90%20%ED%9E%98%EC%9E%85%EC%96%B4%20%EB%84%A4%EC%9D%B4%EB%B2%84%20%EC%A3%BC%EA%B0%80%EA%B0%80%20%EC%9D%B4%ED%8B%80%20%EC%97%B0%EC%86%8D%20%EA%B8%89%EB%93%B1%ED%95%98%EB%A9%B0%2027%EB%A7%8C%EC%9B%90%EB%8C%80%20%EC%8B%A0%EA%B3%A0%EA%B0%80%EB%A5%BC%20%EC%83%88%EB%A1%9C%20%EC%8D%BC%EC%8A%B5%EB%8B%88%EB%8B%A4.%20%EC%A6%9D%EA%B6%8C%EC%82%AC%EB%93%A4%EC%9D%80%20AI%20%EC%9D%B8%ED%94%84%EB%9D%BC%20%EC%88%98%EC%9A%94%20%EC%A6%9D%EA%B0%80%EB%A1%9C%20%EC%8B%A4%EC%A0%81%20%EA%B0%9C%EC%84%A0%EC%9D%B4%20%EA%B8%B0%EB%8C%80%EB%90%9C%EB%8B%A4%EA%B3%A0%20%EB%B6%84%EC%84%9D%ED%96%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%5D&selected_max=45620.7883263804&selected_min=0.0007424665"
     },
     {
-      "title": "[6월 3일에 치러지는 제9회 전국동시지방선거 사전투표 첫날인 5월 29일, 전체 투표율이 11.6%로 집계되어 역대 지방선거 사전투표 첫날 중 가장 높은 수치를 기록하며 4년 전 8.5%보다 3.1%p 상승한 것으로 나타났다.]",
-      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [6월 3일에 치러지는 제9회 전국동시지방선거 사전투표 첫날인 5월 29일, 전체 투표율이 11.6%로 집계되어 역대 지방선거 사전투표 첫날 중 가장 높은 수치를 기록하며 4년 전 8.5%보다 3.1%p 상승한 것으로 나타났다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
+      "title": "[네이버 주가가 단기적으로 매수 기회를 제공하고 있다는 긍정적인 전망이 제시되었으며, 이러한 전망의 핵심 배경에는 AI 데이터센터용 반도체 사업에서의 가시적인 매출 확대와 엔비디아의 차세대 최첨단 AI 가속기인 '블랙웰'에 대한 전 세계적인 수요가]",
+      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [네이버 주가가 단기적으로 매수 기회를 제공하고 있다는 긍정적인 전망이 제시되었으며, 이러한 전망의 핵심 배경에는 AI 데이터센터용 반도체 사업에서의 가시적인 매출 확대와 엔비디아의 차세대 최첨단 AI 가속기인 '블랙웰'에 대한 전 세계적인 수요가]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
       "category": "일반",
-      "pubDate": "Sat, 30 May 2026 01:56:41 GMT",
-      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B6%EC%9B%94%203%EC%9D%BC%EC%97%90%20%EC%B9%98%EB%9F%AC%EC%A7%80%EB%8A%94%20%EC%A0%9C9%ED%9A%8C%20%EC%A0%84%EA%B5%AD%EB%8F%99%EC%8B%9C%EC%A7%80%EB%B0%A9%EC%84%A0%EA%B1%B0%20%EC%82%AC%EC%A0%84%ED%88%AC%ED%91%9C%20%EC%B2%AB%EB%82%A0%EC%9D%B8%205%EC%9B%94%2029%EC%9D%BC%2C%20%EC%A0%84%EC%B2%B4%20%ED%88%AC%ED%91%9C%EC%9C%A8%EC%9D%B4%2011.6%25%EB%A1%9C%20%EC%A7%91%EA%B3%84%EB%90%98%EC%96%B4%20%EC%97%AD%EB%8C%80%20%EC%A7%80%EB%B0%A9%EC%84%A0%EA%B1%B0%20%EC%82%AC%EC%A0%84%ED%88%AC%ED%91%9C%20%EC%B2%AB%EB%82%A0%20%EC%A4%91%20%EA%B0%80%EC%9E%A5%20%EB%86%92%EC%9D%80%20%EC%88%98%EC%B9%98%EB%A5%BC%20%EA%B8%B0%EB%A1%9D%ED%95%98%EB%A9%B0%204%EB%85%84%20%EC%A0%84%208.5%25%EB%B3%B4%EB%8B%A4%203.1%25p%20%EC%83%81%EC%8A%B9%ED%95%9C%20%EA%B2%83%EC%9C%BC%EB%A1%9C%20%EB%82%98%ED%83%80%EB%82%AC%EB%8B%A4.%5D&selected_max=35385.4159232007&selected_min=0.0005814764"
+      "pubDate": "Mon, 01 Jun 2026 05:43:52 GMT",
+      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B%EB%84%A4%EC%9D%B4%EB%B2%84%20%EC%A3%BC%EA%B0%80%EA%B0%80%20%EB%8B%A8%EA%B8%B0%EC%A0%81%EC%9C%BC%EB%A1%9C%20%EB%A7%A4%EC%88%98%20%EA%B8%B0%ED%9A%8C%EB%A5%BC%20%EC%A0%9C%EA%B3%B5%ED%95%98%EA%B3%A0%20%EC%9E%88%EB%8B%A4%EB%8A%94%20%EA%B8%8D%EC%A0%95%EC%A0%81%EC%9D%B8%20%EC%A0%84%EB%A7%9D%EC%9D%B4%20%EC%A0%9C%EC%8B%9C%EB%90%98%EC%97%88%EC%9C%BC%EB%A9%B0%2C%20%EC%9D%B4%EB%9F%AC%ED%95%9C%20%EC%A0%84%EB%A7%9D%EC%9D%98%20%ED%95%B5%EC%8B%AC%20%EB%B0%B0%EA%B2%BD%EC%97%90%EB%8A%94%20AI%20%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%84%BC%ED%84%B0%EC%9A%A9%20%EB%B0%98%EB%8F%84%EC%B2%B4%20%EC%82%AC%EC%97%85%EC%97%90%EC%84%9C%EC%9D%98%20%EA%B0%80%EC%8B%9C%EC%A0%81%EC%9D%B8%20%EB%A7%A4%EC%B6%9C%20%ED%99%95%EB%8C%80%EC%99%80%20%EC%97%94%EB%B9%84%EB%94%94%EC%95%84%EC%9D%98%20%EC%B0%A8%EC%84%B8%EB%8C%80%20%EC%B5%9C%EC%B2%A8%EB%8B%A8%20AI%20%EA%B0%80%EC%86%8D%EA%B8%B0%EC%9D%B8%20'%EB%B8%94%EB%9E%99%EC%9B%B0'%EC%97%90%20%EB%8C%80%ED%95%9C%20%EC%A0%84%20%EC%84%B8%EA%B3%84%EC%A0%81%EC%9D%B8%20%EC%88%98%EC%9A%94%EA%B0%80%5D&selected_max=32564.4404132956&selected_min=0.0005350852"
     },
     {
-      "title": "[6·3 지방선거 사전투표 마지막 날, 더불어민주당은 호남에서, 국민의힘은 강원과 대구·경북 등에서 각각 막판 유세를 펼치며 지지층 결집에 총력을 기울였다. 전국 사전투표율은 20.3%로 지난 지방선거보다 높은 수준을 보였다.]",
-      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [6·3 지방선거 사전투표 마지막 날, 더불어민주당은 호남에서, 국민의힘은 강원과 대구·경북 등에서 각각 막판 유세를 펼치며 지지층 결집에 총력을 기울였다. 전국 사전투표율은 20.3%로 지난 지방선거보다 높은 수준을 보였다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
+      "title": "[네이버 주가가 AI 플랫폼 사업 확대와 자회사 네이버페이의 미국 스테이블코인 법안 통과 수혜 기대감에 힘입어 52주 신고가를 경신하며 강한 상승세를 보이고 있다.]",
+      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [네이버 주가가 AI 플랫폼 사업 확대와 자회사 네이버페이의 미국 스테이블코인 법안 통과 수혜 기대감에 힘입어 52주 신고가를 경신하며 강한 상승세를 보이고 있다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
       "category": "일반",
-      "pubDate": "Sat, 30 May 2026 01:45:57 GMT",
-      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B6%C2%B73%20%EC%A7%80%EB%B0%A9%EC%84%A0%EA%B1%B0%20%EC%82%AC%EC%A0%84%ED%88%AC%ED%91%9C%20%EB%A7%88%EC%A7%80%EB%A7%89%20%EB%82%A0%2C%20%EB%8D%94%EB%B6%88%EC%96%B4%EB%AF%BC%EC%A3%BC%EB%8B%B9%EC%9D%80%20%ED%98%B8%EB%82%A8%EC%97%90%EC%84%9C%2C%20%EA%B5%AD%EB%AF%BC%EC%9D%98%ED%9E%98%EC%9D%80%20%EA%B0%95%EC%9B%90%EA%B3%BC%20%EB%8C%80%EA%B5%AC%C2%B7%EA%B2%BD%EB%B6%81%20%EB%93%B1%EC%97%90%EC%84%9C%20%EA%B0%81%EA%B0%81%20%EB%A7%89%ED%8C%90%20%EC%9C%A0%EC%84%B8%EB%A5%BC%20%ED%8E%BC%EC%B9%98%EB%A9%B0%20%EC%A7%80%EC%A7%80%EC%B8%B5%20%EA%B2%B0%EC%A7%91%EC%97%90%20%EC%B4%9D%EB%A0%A5%EC%9D%84%20%EA%B8%B0%EC%9A%B8%EC%98%80%EB%8B%A4.%20%EC%A0%84%EA%B5%AD%20%EC%82%AC%EC%A0%84%ED%88%AC%ED%91%9C%EC%9C%A8%EC%9D%80%2020.3%25%EB%A1%9C%20%EC%A7%80%EB%82%9C%20%EC%A7%80%EB%B0%A9%EC%84%A0%EA%B1%B0%EB%B3%B4%EB%8B%A4%20%EB%86%92%EC%9D%80%20%EC%88%98%EC%A4%80%EC%9D%84%20%EB%B3%B4%EC%98%80%EB%8B%A4.%5D&selected_max=35843.3953391156&selected_min=0.000583209"
+      "pubDate": "Mon, 01 Jun 2026 05:42:18 GMT",
+      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B%EB%84%A4%EC%9D%B4%EB%B2%84%20%EC%A3%BC%EA%B0%80%EA%B0%80%20AI%20%ED%94%8C%EB%9E%AB%ED%8F%BC%20%EC%82%AC%EC%97%85%20%ED%99%95%EB%8C%80%EC%99%80%20%EC%9E%90%ED%9A%8C%EC%82%AC%20%EB%84%A4%EC%9D%B4%EB%B2%84%ED%8E%98%EC%9D%B4%EC%9D%98%20%EB%AF%B8%EA%B5%AD%20%EC%8A%A4%ED%85%8C%EC%9D%B4%EB%B8%94%EC%BD%94%EC%9D%B8%20%EB%B2%95%EC%95%88%20%ED%86%B5%EA%B3%BC%20%EC%88%98%ED%98%9C%20%EA%B8%B0%EB%8C%80%EA%B0%90%EC%97%90%20%ED%9E%98%EC%9E%85%EC%96%B4%2052%EC%A3%BC%20%EC%8B%A0%EA%B3%A0%EA%B0%80%EB%A5%BC%20%EA%B2%BD%EC%8B%A0%ED%95%98%EB%A9%B0%20%EA%B0%95%ED%95%9C%20%EC%83%81%EC%8A%B9%EC%84%B8%EB%A5%BC%20%EB%B3%B4%EC%9D%B4%EA%B3%A0%20%EC%9E%88%EB%8B%A4.%5D&selected_max=49632.2621137964&selected_min=0.0008078282"
     },
     {
-      "title": "[현대차가 보스턴다이나믹스의 휴머노이드 로봇 '아틀라스'가 라보나 킥 등 고난도 축구 기술을 구현하는 모습을 담은 '스쿨 오브 풋볼' 캠페인 영상을 공개하며 첨단 로봇 기술을 과시했다.]",
-      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [현대차가 보스턴다이나믹스의 휴머노이드 로봇 '아틀라스'가 라보나 킥 등 고난도 축구 기술을 구현하는 모습을 담은 '스쿨 오브 풋볼' 캠페인 영상을 공개하며 첨단 로봇 기술을 과시했다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
+      "title": "[제공된 검색 결과만으로는 SBS 12 News '오늘의 주요 뉴스' 영상의 구체적인 내용을 확인할 수 없어 가장 중요한 소식을 특정할 수 없습니다. SBS 공식 채널을 통해 원본 영상을 직접 확인할 필요가 있습니다.]",
+      "description": "<p><strong>카테고리:</strong> 일반</p> <p><strong>키워드:</strong> [제공된 검색 결과만으로는 SBS 12 News '오늘의 주요 뉴스' 영상의 구체적인 내용을 확인할 수 없어 가장 중요한 소식을 특정할 수 없습니다. SBS 공식 채널을 통해 원본 영상을 직접 확인할 필요가 있습니다.]</p> <p><strong>유형:</strong> 텍스트 | <strong>조회수:</strong> 0</p> <p><strong>이슈 맵 바로가기:</strong> 중동 정세·지정학 리스크·글로벌 경제 흐름 확인</p>",
       "category": "일반",
-      "pubDate": "Sat, 30 May 2026 01:36:44 GMT",
-      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B%ED%98%84%EB%8C%80%EC%B0%A8%EA%B0%80%20%EB%B3%B4%EC%8A%A4%ED%84%B4%EB%8B%A4%EC%9D%B4%EB%82%98%EB%AF%B9%EC%8A%A4%EC%9D%98%20%ED%9C%B4%EB%A8%B8%EB%85%B8%EC%9D%B4%EB%93%9C%20%EB%A1%9C%EB%B4%87%20'%EC%95%84%ED%8B%80%EB%9D%BC%EC%8A%A4'%EA%B0%80%20%EB%9D%BC%EB%B3%B4%EB%82%98%20%ED%82%A5%20%EB%93%B1%20%EA%B3%A0%EB%82%9C%EB%8F%84%20%EC%B6%95%EA%B5%AC%20%EA%B8%B0%EC%88%A0%EC%9D%84%20%EA%B5%AC%ED%98%84%ED%95%98%EB%8A%94%20%EB%AA%A8%EC%8A%B5%EC%9D%84%20%EB%8B%B4%EC%9D%80%20'%EC%8A%A4%EC%BF%A8%20%EC%98%A4%EB%B8%8C%20%ED%92%8B%EB%B3%BC'%20%EC%BA%A0%ED%8E%98%EC%9D%B8%20%EC%98%81%EC%83%81%EC%9D%84%20%EA%B3%B5%EA%B0%9C%ED%95%98%EB%A9%B0%20%EC%B2%A8%EB%8B%A8%20%EB%A1%9C%EB%B4%87%20%EA%B8%B0%EC%88%A0%EC%9D%84%20%EA%B3%BC%EC%8B%9C%ED%96%88%EB%8B%A4.%5D&selected_max=43767.9323130661&selected_min=0.0007149117"
+      "pubDate": "Mon, 01 Jun 2026 05:41:11 GMT",
+      "link": "https://xn--9l4b4xi9r.com/index.html?search=%5B%EC%A0%9C%EA%B3%B5%EB%90%9C%20%EA%B2%80%EC%83%89%20%EA%B2%B0%EA%B3%BC%EB%A7%8C%EC%9C%BC%EB%A1%9C%EB%8A%94%20SBS%2012%20News%20'%EC%98%A4%EB%8A%98%EC%9D%98%20%EC%A3%BC%EC%9A%94%20%EB%89%B4%EC%8A%A4'%20%EC%98%81%EC%83%81%EC%9D%98%20%EA%B5%AC%EC%B2%B4%EC%A0%81%EC%9D%B8%20%EB%82%B4%EC%9A%A9%EC%9D%84%20%ED%99%95%EC%9D%B8%ED%95%A0%20%EC%88%98%20%EC%97%86%EC%96%B4%20%EA%B0%80%EC%9E%A5%20%EC%A4%91%EC%9A%94%ED%95%9C%20%EC%86%8C%EC%8B%9D%EC%9D%84%20%ED%8A%B9%EC%A0%95%ED%95%A0%20%EC%88%98%20%EC%97%86%EC%8A%B5%EB%8B%88%EB%8B%A4.%20SBS%20%EA%B3%B5%EC%8B%9D%20%EC%B1%84%EB%84%90%EC%9D%84%20%ED%86%B5%ED%95%B4%20%EC%9B%90%EB%B3%B8%20%EC%98%81%EC%83%81%EC%9D%84%20%EC%A7%81%EC%A0%91%20%ED%99%95%EC%9D%B8%ED%95%A0%20%ED%95%84%EC%9A%94%EA%B0%80%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%5D&selected_max=37102.5002483512&selected_min=0.0006109602"
     }
   ]
 }

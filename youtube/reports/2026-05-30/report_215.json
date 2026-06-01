@@ -1,0 +1,334 @@
+{
+  "timestamp": "2026-05-30T18:11:03.261546",
+  "model": "kimi-k2.5:cloud",
+  "keyword_count": 3,
+  "analyze_subtitles": true,
+  "analysis_source": "youtube",
+  "keywords": [
+    {
+      "keyword": "오늘의 주요 뉴스",
+      "is_fixed": true,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "한국은 단검 발언",
+      "is_fixed": false,
+      "views": [
+        1916,
+        1776
+      ],
+      "video_count": 2,
+      "videos": [
+        {
+          "title": "미 국방 \"한국 전작권 전환 환영\"...브런슨, '단검' 발언 해명 / YTN",
+          "video_id": "6rWWK-OD1e8",
+          "views": 1916,
+          "upload_date": "2026-05-30",
+          "url": "https://www.youtube.com/watch?v=6rWWK-OD1e8",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        },
+        {
+          "title": "미 국방 \"한국 전작권 전환 환영\"...브런슨, '단검' 발언 해명 / YTN",
+          "video_id": "1eGsVUdGX10",
+          "views": 1776,
+          "upload_date": "2026-05-30",
+          "url": "https://www.youtube.com/watch?v=1eGsVUdGX10",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        }
+      ],
+      "max": 5.0761,
+      "min": 0.0,
+      "nb_score": 50760.7516,
+      "avg_views": 1846.0,
+      "total_views": 3692
+    },
+    {
+      "keyword": "법원 케네디센터서 트럼프",
+      "is_fixed": false,
+      "views": [
+        586,
+        1310,
+        8
+      ],
+      "video_count": 3,
+      "videos": [
+        {
+          "title": "[지금뉴스] 미국 법원, “케네디 센터에 트럼프 이름 빼” / KBS 2026.05.29.",
+          "video_id": "Olw255-7H6k",
+          "views": 586,
+          "upload_date": "2026-05-30",
+          "url": "https://www.youtube.com/watch?v=Olw255-7H6k",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        },
+        {
+          "title": "Court Orders \"Revert to Original, Remove Trump's Name\"... Trump Reacts Furious [News Playlist] / ...",
+          "video_id": "97nK0_Zipfs",
+          "views": 1310,
+          "upload_date": "2026-05-30",
+          "url": "https://www.youtube.com/watch?v=97nK0_Zipfs",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        },
+        {
+          "title": "미국 법원, 트럼프 이름 삭제 명령! 케네디 센터를 둘러싼 초유의 권력 충돌",
+          "video_id": "fkk5dSezkEw",
+          "views": 8,
+          "upload_date": "2026-05-30",
+          "url": "https://www.youtube.com/watch?v=fkk5dSezkEw",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        }
+      ],
+      "max": 1.9008,
+      "min": 2.1228,
+      "nb_score": 0.8954,
+      "avg_views": 634.67,
+      "total_views": 1904
+    },
+    {
+      "keyword": "단검 발언",
+      "is_fixed": false,
+      "views": [
+        2015,
+        1841,
+        7554
+      ],
+      "video_count": 3,
+      "videos": [
+        {
+          "title": "미 국방 \"한국 전작권 전환 환영\"...브런슨, '단검' 발언 해명 / YTN",
+          "video_id": "6rWWK-OD1e8",
+          "views": 2015,
+          "upload_date": "2026-05-30",
+          "url": "https://www.youtube.com/watch?v=6rWWK-OD1e8",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        },
+        {
+          "title": "미 국방 \"한국 전작권 전환 환영\"...브런슨, '단검' 발언 해명 / YTN",
+          "video_id": "1eGsVUdGX10",
+          "views": 1841,
+          "upload_date": "2026-05-30",
+          "url": "https://www.youtube.com/watch?v=1eGsVUdGX10",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        },
+        {
+          "title": "미 국방 \"한국 전작권 전환 고무적\"...브런슨, '단검' 발언 해명 / YTN",
+          "video_id": "tD7kVsVG2eo",
+          "views": 7554,
+          "upload_date": "2026-05-30",
+          "url": "https://www.youtube.com/watch?v=tD7kVsVG2eo",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        }
+      ],
+      "max": 1.0707,
+      "min": 3.1107,
+      "nb_score": 0.3442,
+      "avg_views": 3803.33,
+      "total_views": 11410
+    },
+    {
+      "keyword": "한국은 단검",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "농축 우라늄",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "달러 환율",
+      "is_fixed": false,
+      "views": [
+        6014
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "한은 총재 구두 개입에도 여전한 환율 상승, ‘이것’에 따라 좌우될 겁니다.  (곽수종 박사)",
+          "video_id": "SgzvMmdJXvU",
+          "views": 6014,
+          "upload_date": "2026-05-30",
+          "url": "https://www.youtube.com/watch?v=SgzvMmdJXvU",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "뚫린 달러 환율",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "달러 환율 통화스와프",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "고조 관세",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "관세 수입",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "갈등 고조 관세",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "고조 관세 수입",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "관세 수입 쿼터",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "우라늄 해외",
+      "is_fixed": false,
+      "views": [
+        60
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "이란 고위관계자 \"농축우라늄 해외 이전 안해\" / 연합뉴스TV (YonhapnewsTV)",
+          "video_id": "Zkhk5uommjM",
+          "views": 60,
+          "upload_date": "2026-05-30",
+          "url": "https://www.youtube.com/watch?v=Zkhk5uommjM",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "농축 우라늄 해외",
+      "is_fixed": false,
+      "views": [
+        73
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "이란 고위관계자 \"농축우라늄 해외 이전 안해\" / 연합뉴스TV (YonhapnewsTV)",
+          "video_id": "Zkhk5uommjM",
+          "views": 73,
+          "upload_date": "2026-05-30",
+          "url": "https://www.youtube.com/watch?v=Zkhk5uommjM",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    }
+  ]
+}

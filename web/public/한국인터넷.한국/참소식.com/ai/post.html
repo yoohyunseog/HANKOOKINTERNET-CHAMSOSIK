@@ -3,13 +3,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>참소식 Ollama IDE</title>
-  <meta name="description" content="참소식.com Ollama AI IDE">
-  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <title>참소식 인공지능</title>
+  <meta name="description" content="참소식.com 인공지능">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Nanum+Gothic+Coding:wght@400;700&display=swap" rel="stylesheet">
+
   <style>
     :root {
       color-scheme: dark;
@@ -171,6 +173,10 @@
       background: linear-gradient(135deg, rgba(139, 92, 246, 0.05), rgba(59, 130, 246, 0.05));
       border: 1px solid rgba(139, 92, 246, 0.15);
       box-shadow: var(--shadow);
+      box-sizing: border-box;
+      width: calc(100% - 40px);
+      margin-left: auto;
+      margin-right: auto;
     }
 
     .empty h1 {
@@ -221,6 +227,8 @@
       max-width: 1000px;
       margin: 0 auto 24px;
       padding: 0 16px;
+      box-sizing: border-box;
+      width: 100%;
     }
 
     .message.user {
@@ -278,10 +286,13 @@
       padding: 16px 20px;
       line-height: 1.7;
       white-space: pre-wrap;
-      overflow-wrap: anywhere;
+      overflow-wrap: break-word;
+      word-break: break-word;
       font-family: "Nanum Gothic", "Nanum Gothic Coding", -apple-system, BlinkMacSystemFont, sans-serif;
       font-size: 15px;
       position: relative;
+      max-width: 100%;
+      overflow: hidden;
     }
 
     .message.user .bubble {
@@ -371,6 +382,8 @@
       overflow-x: auto;
       margin: 12px 0;
       border: 1px solid var(--line);
+      max-width: 100%;
+      box-sizing: border-box;
     }
     
     .bubble pre code {
@@ -378,6 +391,9 @@
       padding: 0;
       color: var(--text);
       font-size: 0.85em;
+      white-space: pre-wrap;
+      word-break: break-word;
+      display: block;
     }
     
     .bubble strong { color: #fbbf24; font-weight: 700; }
@@ -387,6 +403,8 @@
       color: #38bdf8;
       text-decoration: none;
       border-bottom: 1px dashed #38bdf8;
+      word-break: break-all;
+      overflow-wrap: break-word;
     }
     .bubble a:hover { color: #60a5fa; border-bottom-style: solid; }
     
@@ -402,11 +420,15 @@
       border-collapse: collapse;
       margin: 12px 0;
       width: 100%;
+      display: block;
+      overflow-x: auto;
+      max-width: 100%;
     }
     .bubble th, .bubble td {
       border: 1px solid var(--line);
       padding: 8px 12px;
       text-align: left;
+      word-break: break-word;
     }
     .bubble th { background: rgba(139, 92, 246, 0.1); font-weight: 700; }
     .bubble tr:nth-child(even) { background: rgba(0, 0, 0, 0.1); }
@@ -415,6 +437,8 @@
       border-top: 1px solid var(--line);
       background: rgba(15, 23, 42, .96);
       backdrop-filter: blur(10px);
+      max-height: 350px;
+      overflow: hidden;
     }
 
     .composer-toggle {
@@ -422,6 +446,7 @@
       align-items: center;
       justify-content: center;
       padding: 14px;
+      min-height: 48px;
       background: linear-gradient(135deg, rgba(139, 92, 246, 0.08), rgba(99, 102, 241, 0.05));
       cursor: pointer;
       transition: all 0.3s ease;
@@ -460,21 +485,15 @@
       opacity: 0;
       overflow: hidden;
       visibility: hidden;
-      transition: max-height 1s cubic-bezier(0.4, 0, 0.2, 1), 
-                  opacity 0.8s ease,
-                  padding 1s ease,
-                  visibility 0s linear 1s;
+      transition: max-height 0.5s ease, opacity 0.3s ease, padding 0.3s ease, visibility 0s linear 0.5s;
       padding: 0 20px;
     }
 
     .composer.show {
-      max-height: 250px;
+      max-height: 280px;
       opacity: 1;
       visibility: visible;
-      transition: max-height 1s cubic-bezier(0.4, 0, 0.2, 1), 
-                  opacity 0.8s ease,
-                  padding 1s ease,
-                  visibility 0s linear 0s;
+      transition: max-height 0.5s ease, opacity 0.3s ease, padding 0.3s ease, visibility 0s linear 0s;
       padding: 20px;
     }
 
@@ -484,6 +503,8 @@
       gap: 12px;
       max-width: 1000px;
       margin: 0 auto;
+      width: 100%;
+      box-sizing: border-box;
     }
 
     .input-wrapper {
@@ -616,54 +637,177 @@
     @media (max-width: 760px) {
       .ide {
         height: 100dvh;
-        grid-template-rows: auto minmax(0, 1fr) 200px 40px;
+        grid-template-rows: auto minmax(0, 1fr) auto 40px;
       }
 
       .titlebar {
-        min-height: 56px;
-        padding: 8px 12px;
+        min-height: 50px;
+        padding: 6px 10px;
+        gap: 8px;
+      }
+
+      .brand {
+        gap: 8px;
       }
 
       .brand span:last-child {
         display: none;
       }
 
+      .brand-mark {
+        width: 32px;
+        height: 32px;
+        font-size: 16px;
+      }
+
+      .toolbar {
+        gap: 6px;
+      }
+
       .toolbar button {
-        padding: 6px 12px;
+        padding: 6px 10px;
         font-size: 12px;
+      }
+
+      .toolbar button .btn-text {
+        display: none;
+      }
+
+      .window-actions {
+        display: none;
       }
 
       .message {
         padding: 0 8px;
+        gap: 10px;
+      }
+
+      .avatar {
+        width: 32px;
+        height: 32px;
+        min-width: 32px;
+        font-size: 14px;
+      }
+
+      .bubble {
+        padding: 12px 14px;
+        font-size: 14px;
+      }
+
+      .empty {
+        padding: 24px 16px;
+        margin: 5vh auto 0;
+        width: calc(100% - 16px);
+      }
+
+      .empty h1 {
+        font-size: clamp(24px, 6vw, 40px);
+      }
+
+      .empty-feature {
+        padding: 12px 14px;
+      }
+
+      .composer-wrapper {
+        max-height: 280px;
+      }
+
+      .composer-toggle {
+        padding: 10px;
+        min-height: 44px;
+      }
+
+      .composer-toggle-text {
+        font-size: 13px;
+      }
+
+      .composer-toggle-text span:last-child {
+        display: inline;
+      }
+
+      .composer-toggle.active .composer-toggle-text span:last-child {
+        display: none;
       }
 
       .composer {
-        padding: 12px;
+        padding: 10px;
+      }
+
+      .composer.show {
+        max-height: 200px;
+      }
+
+      .composer textarea {
+        min-height: 44px;
+        padding: 10px 12px;
+        font-size: 14px;
       }
 
       .send-button {
-        min-height: 48px;
-        min-width: 80px;
+        min-height: 44px;
+        min-width: 60px;
+        font-size: 14px;
+      }
+
+      .send-button .btn-text {
+        display: none;
+      }
+
+      .quick-prompts {
+        gap: 6px;
+      }
+
+      .quick-button {
+        padding: 6px 10px;
+        font-size: 12px;
+      }
+
+      .quick-button .btn-text {
+        display: none;
       }
 
       .status-right {
         display: none;
       }
+
+      .bubble pre {
+        padding: 10px 12px;
+        font-size: 12px;
+      }
+
+      .bubble table {
+        font-size: 12px;
+      }
+
+      .bubble th, .bubble td {
+        padding: 6px 8px;
+      }
     }
   </style>
 </head>
 <body>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4501795912654667"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="fluid"
+     data-ad-layout-key="-ef+6k-30-ac+ty"
+     data-ad-client="ca-pub-4501795912654667"
+     data-ad-slot="2408767998"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
   <div class="ide">
     <header class="titlebar">
       <a class="brand" href="../">
         <span class="brand-mark">🤖</span>
-        <span>참소식 AI 채팅</span>
+        <span>참소식 인공지능</span>
       </a>
       <div class="toolbar" aria-label="도구">
-        <button type="button" id="healthButton" style="background:rgba(34,197,94,0.1);border-color:rgba(34,197,94,0.3);color:#4ade80;">● 연결확인</button>
-        <button type="button" id="searchToggleButton" style="background:rgba(139,92,246,0.1);border-color:rgba(139,92,246,0.3);color:#c4b5fd;">🔍 검색ON</button>
-        <button type="button" id="copyButton">📋 복사</button>
-        <button type="button" id="clearButton">🗑️ 초기화</button>
+        <button type="button" id="healthButton" style="background:rgba(34,197,94,0.1);border-color:rgba(34,197,94,0.3);color:#4ade80;">●<span class="btn-text"> 연결확인</span></button>
+        <button type="button" id="searchToggleButton" style="background:rgba(139,92,246,0.1);border-color:rgba(139,92,246,0.3);color:#c4b5fd;">🔍<span class="btn-text"> 검색ON</span></button>
+        <button type="button" id="copyButton">📋<span class="btn-text"> 복사</span></button>
+        <button type="button" id="clearButton">🗑️<span class="btn-text"> 초기화</span></button>
       </div>
       <div class="window-actions" aria-hidden="true">
         <span class="dot red"></span>
@@ -672,7 +816,9 @@
       </div>
     </header>
 
-    <section class="chat" id="chatLog" aria-live="polite"></section>
+    <section class="chat" id="chatLog" aria-live="polite">
+      <!-- 광고는 JavaScript에서 동적으로 추가됨 -->
+    </section>
 
     <div class="composer-wrapper">
       <div class="composer-toggle" id="composerToggle">
@@ -685,13 +831,13 @@
       <form id="chatForm">
         <div class="input-wrapper">
           <textarea id="promptInput" placeholder="메시지를 입력하세요... (Enter로 전송, Shift+Enter로 줄바꿈)" autocomplete="off"></textarea>
-          <button class="send-button" type="submit" id="sendButton">전송</button>
+          <button class="send-button" type="submit" id="sendButton">📤<span class="btn-text"> 전송</span></button>
         </div>
         <div class="quick-prompts">
-          <button class="quick-button" type="button" data-prompt="이 뉴스 원문을 핵심 요약해줘">📰 뉴스 요약</button>
-          <button class="quick-button" type="button" data-prompt="최신 기술 트렌드 알려줘">🔍 기술 트렌드</button>
-          <button class="quick-button" type="button" data-prompt="이 코드를 리뷰해줘">💻 코드 리뷰</button>
-          <button class="quick-button" type="button" data-prompt="이 내용을 팩트체크 해줘">✅ 팩트체크</button>
+          <button class="quick-button" type="button" data-prompt="이 뉴스 원문을 핵심 요약해줘">📰<span class="btn-text"> 뉴스 요약</span></button>
+          <button class="quick-button" type="button" data-prompt="최신 기술 트렌드 알려줘">🔍<span class="btn-text"> 기술 트렌드</span></button>
+          <button class="quick-button" type="button" data-prompt="이 코드를 리뷰해줘">💻<span class="btn-text"> 코드 리뷰</span></button>
+          <button class="quick-button" type="button" data-prompt="이 내용을 팩트체크 해줘">✅<span class="btn-text"> 팩트체크</span></button>
         </div>
       </form>
       </section>
@@ -700,7 +846,7 @@
     <footer class="statusbar">
       <div class="status-left">
         <span class="status-pill"><span class="pulse" id="statusPulse"></span><span id="statusText">AI 서버 대기</span></span>
-        <span id="baseText">🤖 Ollama API</span>
+        <span id="baseText">🤖 참소식 인공지능</span>
       </div>
       <div class="status-right">
         <span>⚡ 스트리밍</span>
@@ -714,7 +860,7 @@
     const OLLAMA_API_KEY = "d8cf2811037b4791b2e36ffb4afee830.LrLvzfuvzutO7MLHciyiUtpq";
     
     const DEFAULT_ENDPOINT = REMOTE_SERVER;
-    const DEFAULT_MODEL = "glm-5:cloud";
+    const DEFAULT_MODEL = "kimi-k2.6:cloud";
     const storageKey = "chamsosik-ollama-ide-state";
 
     const els = {
@@ -830,7 +976,7 @@
       
       const searchEngines = [
         { name: '구글', icon: '🔍', url: `https://www.google.com/search?q=${encodedQuery}`, color: '#4285f4' },
-        { name: '네이버', icon: '🟢', url: `https://search.naver.com/search.naver?query=${encodedQuery}`, color: '#03c75a' },
+        //{ name: '네이버', icon: '🟢', url: `https://search.naver.com/search.naver?query=${encodedQuery}`, color: '#03c75a' },
         { name: '빙', icon: '🟦', url: `https://www.bing.com/search?q=${encodedQuery}`, color: '#008373' }
       ];
       
@@ -878,8 +1024,9 @@
     function renderMessages() {
       const conversation = currentConversation();
       if (!conversation || !conversation.messages.length) {
+        // 빈 상태일 때 광고 표시
         els.chatLog.innerHTML = `<div class="empty">
-          <h1>🤖 Ollama AI 채팅</h1>
+          <h1>🤖 참소식 인공지능 채팅</h1>
           <p>질문을 입력하면 <strong>AI가 실시간으로 답변합니다</strong></p>
           <div class="empty-features">
             <div class="empty-feature">
@@ -900,18 +1047,37 @@
         return;
       }
 
-      els.chatLog.innerHTML = conversation.messages.map((message, index) => {
+      // 광고 요소
+      const adElement = `<article class="message assistant">
+        <div class="avatar">📢</div>
+        <div class="message-content">
+          <div class="role">광고</div>
+          <div class="bubble" style="background:linear-gradient(135deg,rgba(34,197,94,0.1),rgba(59,130,246,0.1));border:1px solid rgba(34,197,94,0.2);">
+
+          </div>
+          <div class="meta">Google AdSense</div>
+        </div>
+      </article>`;
+
+      // 광고를 첫 번째 사용자 메시지 다음에 배치 (YOU -> 광고 -> AI ASSISTANT 순서)
+      // 메시지를 개별적으로 처리하여 광고를 올바른 위치에 삽입
+      let finalHtml = "";
+      let adInserted = false;
+      
+      conversation.messages.forEach((message, index) => {
         const isUser = message.role === "user";
         const isStreaming = message.role === "assistant" && !message.content && index === conversation.messages.length - 1;
         const streamClass = isStreaming ? " streaming" : "";
         const avatarIcon = isUser ? "👤" : "🤖";
-        const roleLabel = isUser ? "You" : "AI Assistant";
+        const roleLabel = isUser ? "You" : "참소식 인공지능";
         
         const contentHtml = isStreaming 
           ? `<div class="typing-indicator"><span></span><span></span><span></span></div>`
           : renderMessageContent(message.content);
         
         let extraHtml = "";
+        
+        // 검색 결과 표시
         if (message.searchResults && message.searchResults.length > 0) {
           extraHtml = `<details style="margin-top:16px;border-top:1px solid rgba(139,92,246,0.2);padding-top:12px;cursor:pointer;">
             <summary style="font-weight:700;color:#a78bfa;font-size:13px;user-select:none;">🔍 검색 결과 ${message.searchResults.length}건 (클릭하여 펼치기)</summary>
@@ -929,22 +1095,31 @@
           </details>`;
         }
         
+        // AI 답변인 경우 검색 링크 추가
         if (!isUser && !isStreaming && message.content) {
           const searchQuery = extractSearchQuery(message.content);
           if (searchQuery) {
-            extraHtml = createSearchLinks(searchQuery);
+            extraHtml += createSearchLinks(searchQuery);
           }
         }
         
-        return `<article class="message ${message.role}${streamClass}">
+        finalHtml += `<article class="message ${message.role}${streamClass}">
           <div class="avatar">${avatarIcon}</div>
           <div class="message-content">
             <div class="role">${roleLabel}</div>
             <div class="bubble">${contentHtml}${extraHtml}</div>
-            <div class="meta">${escapeHtml(message.model || "")} ${escapeHtml(message.time || "")}</div>
+            <div class="meta">참소식 인공지능 ${escapeHtml(message.time || "")}</div>
           </div>
         </article>`;
-      }).join("");
+        
+        // 첫 번째 사용자 메시지 다음에 광고 삽입
+        if (isUser && !adInserted) {
+          finalHtml += adElement;
+          adInserted = true;
+        }
+      });
+      
+      els.chatLog.innerHTML = finalHtml;
       scrollChatToBottom();
     }
 
@@ -1444,13 +1619,14 @@
     searchToggleBtn.style.background = "rgba(139, 92, 246, 0.15)";
     searchToggleBtn.style.borderColor = "rgba(139, 92, 246, 0.4)";
     searchToggleBtn.style.color = "#c4b5fd";
-    searchToggleBtn.textContent = "🔍 검색ON";
+    const searchToggleText = searchToggleBtn.querySelector('.btn-text');
+    if (searchToggleText) searchToggleText.textContent = " 검색ON";
     searchToggleBtn.addEventListener("click", () => {
       webSearchEnabled = !webSearchEnabled;
       searchToggleBtn.style.background = webSearchEnabled ? "rgba(139, 92, 246, 0.15)" : "rgba(100, 100, 100, 0.1)";
       searchToggleBtn.style.borderColor = webSearchEnabled ? "rgba(139, 92, 246, 0.4)" : "rgba(100, 100, 100, 0.3)";
       searchToggleBtn.style.color = webSearchEnabled ? "#c4b5fd" : "var(--text)";
-      searchToggleBtn.textContent = webSearchEnabled ? "🔍 검색ON" : "🔍 검색OFF";
+      if (searchToggleText) searchToggleText.textContent = webSearchEnabled ? " 검색ON" : " 검색OFF";
       log(`web search ${webSearchEnabled ? "enabled" : "disabled"}`);
     });
 
@@ -1468,7 +1644,7 @@
       });
     });
 
-    log("참소식 Ollama IDE ready");
+    log("참소식 인공지능 ready");
     log(`default endpoint: ${DEFAULT_ENDPOINT}/api/chat`);
     render();
     checkHealth();

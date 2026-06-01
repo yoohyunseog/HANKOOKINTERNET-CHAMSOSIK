@@ -1,0 +1,907 @@
+{
+  "timestamp": "2026-05-30T23:48:37.435562",
+  "model": "kimi-k2.5:cloud",
+  "keyword_count": 3,
+  "analyze_subtitles": true,
+  "analysis_source": "youtube",
+  "keywords": [
+    {
+      "keyword": "오늘의 주요 뉴스",
+      "is_fixed": true,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "삼성물산 신반포19",
+      "is_fixed": false,
+      "views": [
+        4,
+        1
+      ],
+      "video_count": 2,
+      "videos": [
+        {
+          "title": "삼성물산 건설의 환호...신반포 수주",
+          "video_id": "J9_xQHwUkeU",
+          "views": 4,
+          "upload_date": "2026-05-30",
+          "url": "https://www.youtube.com/watch?v=J9_xQHwUkeU",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        },
+        {
+          "title": "[속보] 역대급 경쟁! 삼성물산, 신반포 재건축 수주 성공!",
+          "video_id": "I1Npn9MJZis",
+          "views": 1,
+          "upload_date": "2026-05-30",
+          "url": "https://www.youtube.com/watch?v=I1Npn9MJZis",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        }
+      ],
+      "max": 2.9219,
+      "min": 1.1344,
+      "nb_score": 2.5758,
+      "avg_views": 2.5,
+      "total_views": 5
+    },
+    {
+      "keyword": "최종 사전투표율",
+      "is_fixed": false,
+      "views": [
+        1515,
+        12342,
+        1416,
+        736,
+        22177,
+        584,
+        23314,
+        2055
+      ],
+      "video_count": 8,
+      "videos": [
+        {
+          "title": "최종 사전투표율 23.51%...역대 지방선거 최고치 경신 / YTN",
+          "video_id": "L7H04fFY--Y",
+          "views": 1515,
+          "upload_date": "2026-05-30",
+          "url": "https://www.youtube.com/watch?v=L7H04fFY--Y",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        },
+        {
+          "title": "[속보] 사전투표율 최종 23.51% 기록…지방선거 기준 역대 최고치 [이슈PLAY] / JTBC News",
+          "video_id": "SYzVFH-2G0E",
+          "views": 12342,
+          "upload_date": "2026-05-30",
+          "url": "https://www.youtube.com/watch?v=SYzVFH-2G0E",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        },
+        {
+          "title": "지방선거 사전투표율 최종 23.51%…역대 최고 / KBS  2026.05.30.",
+          "video_id": "CT8Hlif1qKo",
+          "views": 1416,
+          "upload_date": "2026-05-30",
+          "url": "https://www.youtube.com/watch?v=CT8Hlif1qKo",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        },
+        {
+          "title": "최종 사전투표율 23.51%...지방선거 기준 최고치 / YTN",
+          "video_id": "fi9rnJlbZro",
+          "views": 736,
+          "upload_date": "2026-05-30",
+          "url": "https://www.youtube.com/watch?v=fi9rnJlbZro",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        },
+        {
+          "title": "[LIVE] 6.3 지방선거 첫날 사전투표율 최종 11.6%…역대 지선 최고치, 국회의원 재보선은 12.07%/2026년 5월 29일(금)/KBS",
+          "video_id": "QBaSZd1ETHA",
+          "views": 22177,
+          "upload_date": "2026-05-30",
+          "url": "https://www.youtube.com/watch?v=QBaSZd1ETHA",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        },
+        {
+          "title": "Final early voting turnout for the June 3 local elections stands at 23.51%... 'All-time high' rec...",
+          "video_id": "7vzXq8mCLZs",
+          "views": 584,
+          "upload_date": "2026-05-30",
+          "url": "https://www.youtube.com/watch?v=7vzXq8mCLZs",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        },
+        {
+          "title": "Final turnout projected at 53–55% despite all-time early voting turnout… 'Undecided voters' a var...",
+          "video_id": "2SlAkh0McjU",
+          "views": 23314,
+          "upload_date": "2026-05-30",
+          "url": "https://www.youtube.com/watch?v=2SlAkh0McjU",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        },
+        {
+          "title": "사전투표율, 역대 지방선거 중 최고치...여야, 막바지 총력전 / YTN",
+          "video_id": "-B1lurnOf8Y",
+          "views": 2055,
+          "upload_date": "2026-05-30",
+          "url": "https://www.youtube.com/watch?v=-B1lurnOf8Y",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        }
+      ],
+      "max": 0.6863,
+      "min": 1.4807,
+      "nb_score": 0.4635,
+      "avg_views": 8017.38,
+      "total_views": 64139
+    },
+    {
+      "keyword": "대통령이 대놓고 선거운동",
+      "is_fixed": false,
+      "views": [
+        769,
+        873,
+        357,
+        511
+      ],
+      "video_count": 4,
+      "videos": [
+        {
+          "title": "사전투표 마지막 날…정원오·오세훈, 유세 총력전 / 연합뉴스TV (YonhapnewsTV)",
+          "video_id": "V4wRfU28D2E",
+          "views": 769,
+          "upload_date": "2026-05-30",
+          "url": "https://www.youtube.com/watch?v=V4wRfU28D2E",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        },
+        {
+          "title": "정원오·오세훈, 서울 광역 유세…마지막 주말 총력전 / 연합뉴스TV (YonhapnewsTV)",
+          "video_id": "VaV819f3IzM",
+          "views": 873,
+          "upload_date": "2026-05-30",
+          "url": "https://www.youtube.com/watch?v=VaV819f3IzM",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        },
+        {
+          "title": "선거 D-4…여 “여당 후보 뽑아달라”, 야 “대통령 선거 개입” / KBS  2026.05.30.",
+          "video_id": "JbF5rZlOx58",
+          "views": 357,
+          "upload_date": "2026-05-30",
+          "url": "https://www.youtube.com/watch?v=JbF5rZlOx58",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        },
+        {
+          "title": "선거 D-4…여 “여당 후보 뽑아달라”, 야 “대통령 선거 개입” / KBS  2026.05.30.",
+          "video_id": "rWL-pnM83QU",
+          "views": 511,
+          "upload_date": "2026-05-30",
+          "url": "https://www.youtube.com/watch?v=rWL-pnM83QU",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        }
+      ],
+      "max": 1.6209,
+      "min": 3.6766,
+      "nb_score": 0.4409,
+      "avg_views": 627.5,
+      "total_views": 2510
+    },
+    {
+      "keyword": "김부겸 추경호",
+      "is_fixed": false,
+      "views": [
+        16185,
+        136915,
+        2778,
+        80
+      ],
+      "video_count": 4,
+      "videos": [
+        {
+          "title": "\"돈 있으면 일자리를 늘리세요\"... 김부겸 촌철살인에 추경호..",
+          "video_id": "VfBpj89c-Ow",
+          "views": 16185,
+          "upload_date": "2026-05-30",
+          "url": "https://www.youtube.com/watch?v=VfBpj89c-Ow",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        },
+        {
+          "title": "손 떨며 분노한 추경호, '회심 공격'... 그런데 김부겸 웃더니..?",
+          "video_id": "C8prjllU7Qk",
+          "views": 136915,
+          "upload_date": "2026-05-30",
+          "url": "https://www.youtube.com/watch?v=C8prjllU7Qk",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        },
+        {
+          "title": "Kim Boo-kyum and Choo Kyung-ho Clash Over Seomun Market... Winning Last-Minute Votes / Channel A ...",
+          "video_id": "BBmy0ujr8aE",
+          "views": 2778,
+          "upload_date": "2026-05-30",
+          "url": "https://www.youtube.com/watch?v=BBmy0ujr8aE",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        },
+        {
+          "title": "\"추 후보님! 추 후보님!\" 김부겸 외침에도 발언 멈추지 않는 추경호! 토론회 초반부터 긴장감 고조",
+          "video_id": "FQOuqV0vqCQ",
+          "views": 80,
+          "upload_date": "2026-05-30",
+          "url": "https://www.youtube.com/watch?v=FQOuqV0vqCQ",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        }
+      ],
+      "max": 0.5873,
+      "min": 1.5114,
+      "nb_score": 0.3886,
+      "avg_views": 38989.5,
+      "total_views": 155958
+    },
+    {
+      "keyword": "김부겸 추경호 대구",
+      "is_fixed": false,
+      "views": [
+        138251,
+        16211,
+        6379,
+        1456,
+        32
+      ],
+      "video_count": 5,
+      "videos": [
+        {
+          "title": "손 떨며 분노한 추경호, '회심 공격'... 그런데 김부겸 웃더니..?",
+          "video_id": "C8prjllU7Qk",
+          "views": 138251,
+          "upload_date": "2026-05-30",
+          "url": "https://www.youtube.com/watch?v=C8prjllU7Qk",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        },
+        {
+          "title": "\"돈 있으면 일자리를 늘리세요\"... 김부겸 촌철살인에 추경호..",
+          "video_id": "VfBpj89c-Ow",
+          "views": 16211,
+          "upload_date": "2026-05-30",
+          "url": "https://www.youtube.com/watch?v=VfBpj89c-Ow",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        },
+        {
+          "title": "🔴 대구 김부겸 서문시장 야시장 난리났다 LIVE 추경호 박근혜 서문시장 내일 온다 | 이재명 정부 대구 김부겸 #대구시장 #추경호 #박근혜 #서문시장",
+          "video_id": "ckrzBv15jIE",
+          "views": 6379,
+          "upload_date": "2026-05-30",
+          "url": "https://www.youtube.com/watch?v=ckrzBv15jIE",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        },
+        {
+          "title": "김부겸 vs 추경호 격돌 '초접전'...이 시각 대구 / YTN",
+          "video_id": "XoxuNnGQTs8",
+          "views": 1456,
+          "upload_date": "2026-05-30",
+          "url": "https://www.youtube.com/watch?v=XoxuNnGQTs8",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        },
+        {
+          "title": "반박에 재반박 양상으로 흘러가는 대구시장 토론회! 양보 없는 추경호, 김부겸 후보 간 정면충돌!",
+          "video_id": "obVzBFjZ6dg",
+          "views": 32,
+          "upload_date": "2026-05-30",
+          "url": "https://www.youtube.com/watch?v=obVzBFjZ6dg",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        }
+      ],
+      "max": 0.3758,
+      "min": 1.2451,
+      "nb_score": 0.3019,
+      "avg_views": 32465.8,
+      "total_views": 162329
+    },
+    {
+      "keyword": "최종 사전투표율 23",
+      "is_fixed": false,
+      "views": [
+        1560,
+        411,
+        1443,
+        861,
+        745,
+        362,
+        586,
+        25517,
+        13443,
+        8742
+      ],
+      "video_count": 10,
+      "videos": [
+        {
+          "title": "최종 사전투표율 23.51%...역대 지방선거 최고치 경신 / YTN",
+          "video_id": "L7H04fFY--Y",
+          "views": 1560,
+          "upload_date": "2026-05-30",
+          "url": "https://www.youtube.com/watch?v=L7H04fFY--Y",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        },
+        {
+          "title": "사전투표율 최종 23.51%...여야, 막바지 총력전 / YTN",
+          "video_id": "L-arJpgH508",
+          "views": 411,
+          "upload_date": "2026-05-30",
+          "url": "https://www.youtube.com/watch?v=L-arJpgH508",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        },
+        {
+          "title": "지방선거 사전투표율 최종 23.51%…역대 최고 / KBS  2026.05.30.",
+          "video_id": "CT8Hlif1qKo",
+          "views": 1443,
+          "upload_date": "2026-05-30",
+          "url": "https://www.youtube.com/watch?v=CT8Hlif1qKo",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        },
+        {
+          "title": "최종 사전투표율 23.51%...지방선거 기준 최고치 / YTN",
+          "video_id": "fi9rnJlbZro",
+          "views": 861,
+          "upload_date": "2026-05-30",
+          "url": "https://www.youtube.com/watch?v=fi9rnJlbZro",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        },
+        {
+          "title": "최종 사전투표율 23.51%…지선 기준 최고치 / 연합뉴스TV (YonhapnewsTV)",
+          "video_id": "_ZuVMW2h6Q0",
+          "views": 745,
+          "upload_date": "2026-05-30",
+          "url": "https://www.youtube.com/watch?v=_ZuVMW2h6Q0",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        },
+        {
+          "title": "최종 사전투표율 23.51%...지방선거 기준 최고치 / YTN",
+          "video_id": "DIUKpi5WZOI",
+          "views": 362,
+          "upload_date": "2026-05-30",
+          "url": "https://www.youtube.com/watch?v=DIUKpi5WZOI",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        },
+        {
+          "title": "Final early voting turnout for the June 3 local elections stands at 23.51%... 'All-time high' rec...",
+          "video_id": "7vzXq8mCLZs",
+          "views": 586,
+          "upload_date": "2026-05-30",
+          "url": "https://www.youtube.com/watch?v=7vzXq8mCLZs",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        },
+        {
+          "title": "Final turnout projected at 53–55% despite all-time early voting turnout… 'Undecided voters' a var...",
+          "video_id": "2SlAkh0McjU",
+          "views": 25517,
+          "upload_date": "2026-05-30",
+          "url": "https://www.youtube.com/watch?v=2SlAkh0McjU",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        },
+        {
+          "title": "[Full Video] News 9: Final Early Voting Turnout Records 23.51%... All-Time High for Local Electio...",
+          "video_id": "m3QyG7UG5SQ",
+          "views": 13443,
+          "upload_date": "2026-05-30",
+          "url": "https://www.youtube.com/watch?v=m3QyG7UG5SQ",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        },
+        {
+          "title": "[Replay] Newsroom | Local Election Early Voting Turnout Sets All-Time High // Seosomun Overpass R...",
+          "video_id": "iaJfiF-Tg_8",
+          "views": 8742,
+          "upload_date": "2026-05-30",
+          "url": "https://www.youtube.com/watch?v=iaJfiF-Tg_8",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        }
+      ],
+      "max": 0.2506,
+      "min": 1.0373,
+      "nb_score": 0.2416,
+      "avg_views": 5367.0,
+      "total_views": 53670
+    },
+    {
+      "keyword": "사전투표율 23 51",
+      "is_fixed": false,
+      "views": [
+        1572,
+        548,
+        1487,
+        820,
+        19280,
+        893,
+        363,
+        748,
+        591,
+        13608
+      ],
+      "video_count": 10,
+      "videos": [
+        {
+          "title": "최종 사전투표율 23.51%...역대 지방선거 최고치 경신 / YTN",
+          "video_id": "L7H04fFY--Y",
+          "views": 1572,
+          "upload_date": "2026-05-30",
+          "url": "https://www.youtube.com/watch?v=L7H04fFY--Y",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        },
+        {
+          "title": "사전투표율 최종 23.51%...여야, 막바지 총력전 / YTN",
+          "video_id": "L-arJpgH508",
+          "views": 548,
+          "upload_date": "2026-05-30",
+          "url": "https://www.youtube.com/watch?v=L-arJpgH508",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        },
+        {
+          "title": "지방선거 사전투표율 최종 23.51%…역대 최고 / KBS  2026.05.30.",
+          "video_id": "CT8Hlif1qKo",
+          "views": 1487,
+          "upload_date": "2026-05-30",
+          "url": "https://www.youtube.com/watch?v=CT8Hlif1qKo",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        },
+        {
+          "title": "사전투표율 23.51% 역대 지선 최고치…여야 “우리에게 유리” [9시 뉴스] / KBS  2026.05.30.",
+          "video_id": "3lIqx8-YF04",
+          "views": 820,
+          "upload_date": "2026-05-30",
+          "url": "https://www.youtube.com/watch?v=3lIqx8-YF04",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        },
+        {
+          "title": "Early Voting Turnout 23.51%... Breaks All-Time Local Election Record, and More - SBS 8 News | May...",
+          "video_id": "mHEbpRERp4M",
+          "views": 19280,
+          "upload_date": "2026-05-30",
+          "url": "https://www.youtube.com/watch?v=mHEbpRERp4M",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        },
+        {
+          "title": "최종 사전투표율 23.51%...지방선거 기준 최고치 / YTN",
+          "video_id": "fi9rnJlbZro",
+          "views": 893,
+          "upload_date": "2026-05-30",
+          "url": "https://www.youtube.com/watch?v=fi9rnJlbZro",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        },
+        {
+          "title": "최종 사전투표율 23.51%...지방선거 기준 최고치 / YTN",
+          "video_id": "DIUKpi5WZOI",
+          "views": 363,
+          "upload_date": "2026-05-30",
+          "url": "https://www.youtube.com/watch?v=DIUKpi5WZOI",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        },
+        {
+          "title": "최종 사전투표율 23.51%…지선 기준 최고치 / 연합뉴스TV (YonhapnewsTV)",
+          "video_id": "_ZuVMW2h6Q0",
+          "views": 748,
+          "upload_date": "2026-05-30",
+          "url": "https://www.youtube.com/watch?v=_ZuVMW2h6Q0",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        },
+        {
+          "title": "Final early voting turnout for the June 3 local elections stands at 23.51%... 'All-time high' rec...",
+          "video_id": "7vzXq8mCLZs",
+          "views": 591,
+          "upload_date": "2026-05-30",
+          "url": "https://www.youtube.com/watch?v=7vzXq8mCLZs",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        },
+        {
+          "title": "[Full Video] News 9: Final Early Voting Turnout Records 23.51%... All-Time High for Local Electio...",
+          "video_id": "m3QyG7UG5SQ",
+          "views": 13608,
+          "upload_date": "2026-05-30",
+          "url": "https://www.youtube.com/watch?v=m3QyG7UG5SQ",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        }
+      ],
+      "max": 0.2363,
+      "min": 1.0312,
+      "nb_score": 0.2291,
+      "avg_views": 3991.0,
+      "total_views": 39910
+    },
+    {
+      "keyword": "추경호 대구",
+      "is_fixed": false,
+      "views": [
+        2563,
+        1914,
+        3460,
+        6318,
+        136915,
+        1864
+      ],
+      "video_count": 6,
+      "videos": [
+        {
+          "title": "추경호 후보 동성로에 떳다!! 한일극장 CGV 집중유세 생중계",
+          "video_id": "BfbithrlW4s",
+          "views": 2563,
+          "upload_date": "2026-05-30",
+          "url": "https://www.youtube.com/watch?v=BfbithrlW4s",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        },
+        {
+          "title": "“달서구 총집결, 주말 표심 폭발!” 추경호 후보 서남시장 집중유세 생중계 (송언석 원내대표 지원)",
+          "video_id": "eqXEjmJDYwU",
+          "views": 1914,
+          "upload_date": "2026-05-30",
+          "url": "https://www.youtube.com/watch?v=eqXEjmJDYwU",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        },
+        {
+          "title": "“동성로 한복판, 젊은 민심 폭발!” 추경호 후보 한일극장 CGV 라이브!!!",
+          "video_id": "juTm0dtEsKg",
+          "views": 3460,
+          "upload_date": "2026-05-30",
+          "url": "https://www.youtube.com/watch?v=juTm0dtEsKg",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        },
+        {
+          "title": "🔴 대구 김부겸 서문시장 야시장 난리났다 LIVE 추경호 박근혜 서문시장 내일 온다 | 이재명 정부 대구 김부겸 #대구시장 #추경호 #박근혜 #서문시장",
+          "video_id": "ckrzBv15jIE",
+          "views": 6318,
+          "upload_date": "2026-05-30",
+          "url": "https://www.youtube.com/watch?v=ckrzBv15jIE",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        },
+        {
+          "title": "손 떨며 분노한 추경호, '회심 공격'... 그런데 김부겸 웃더니..?",
+          "video_id": "C8prjllU7Qk",
+          "views": 136915,
+          "upload_date": "2026-05-30",
+          "url": "https://www.youtube.com/watch?v=C8prjllU7Qk",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        },
+        {
+          "title": "대구가 움직인다🔥 추경호후보 저스트런텐 대구 10K 현장 LIVE",
+          "video_id": "5jnUQvwBjHU",
+          "views": 1864,
+          "upload_date": "2026-05-30",
+          "url": "https://www.youtube.com/watch?v=5jnUQvwBjHU",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        }
+      ],
+      "max": 0.2111,
+      "min": 1.0225,
+      "nb_score": 0.2064,
+      "avg_views": 25505.67,
+      "total_views": 153034
+    },
+    {
+      "keyword": "사전투표율 23",
+      "is_fixed": false,
+      "views": [
+        1534,
+        1439,
+        8384,
+        187,
+        18807,
+        3137,
+        770,
+        737,
+        138272,
+        24255
+      ],
+      "video_count": 10,
+      "videos": [
+        {
+          "title": "최종 사전투표율 23.51%...역대 지방선거 최고치 경신 / YTN",
+          "video_id": "L7H04fFY--Y",
+          "views": 1534,
+          "upload_date": "2026-05-30",
+          "url": "https://www.youtube.com/watch?v=L7H04fFY--Y",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        },
+        {
+          "title": "지방선거 사전투표율 최종 23.51%…역대 최고 / KBS  2026.05.30.",
+          "video_id": "CT8Hlif1qKo",
+          "views": 1439,
+          "upload_date": "2026-05-30",
+          "url": "https://www.youtube.com/watch?v=CT8Hlif1qKo",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        },
+        {
+          "title": "[Replay] Newsroom | Local Election Early Voting Turnout Sets All-Time High // Seosomun Overpass R...",
+          "video_id": "iaJfiF-Tg_8",
+          "views": 8384,
+          "upload_date": "2026-05-30",
+          "url": "https://www.youtube.com/watch?v=iaJfiF-Tg_8",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        },
+        {
+          "title": "사전투표율 최종 23.51%...여야, 막바지 총력전 / YTN",
+          "video_id": "L-arJpgH508",
+          "views": 187,
+          "upload_date": "2026-05-30",
+          "url": "https://www.youtube.com/watch?v=L-arJpgH508",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        },
+        {
+          "title": "Early Voting Turnout 23.51%... Breaks All-Time Local Election Record, and More - SBS 8 News | May...",
+          "video_id": "mHEbpRERp4M",
+          "views": 18807,
+          "upload_date": "2026-05-30",
+          "url": "https://www.youtube.com/watch?v=mHEbpRERp4M",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        },
+        {
+          "title": "Early Voting Turnout Reaches Record High for Local Elections... A Look at Regional Turnouts / SBS...",
+          "video_id": "U4p1laXIV_E",
+          "views": 3137,
+          "upload_date": "2026-05-30",
+          "url": "https://www.youtube.com/watch?v=U4p1laXIV_E",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        },
+        {
+          "title": "최종 사전투표율 23.51%...지방선거 기준 최고치 / YTN",
+          "video_id": "fi9rnJlbZro",
+          "views": 770,
+          "upload_date": "2026-05-30",
+          "url": "https://www.youtube.com/watch?v=fi9rnJlbZro",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        },
+        {
+          "title": "사전투표율 23.51% 역대 지선 최고치…여야 “우리에게 유리” [9시 뉴스] / KBS  2026.05.30.",
+          "video_id": "3lIqx8-YF04",
+          "views": 737,
+          "upload_date": "2026-05-30",
+          "url": "https://www.youtube.com/watch?v=3lIqx8-YF04",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        },
+        {
+          "title": "June 3 Local Elections, Early Voting Turnout Sets All-Time High - [LIVE] MBC Newsdesk May 30, 2026",
+          "video_id": "Hc93gTC4COc",
+          "views": 138272,
+          "upload_date": "2026-05-30",
+          "url": "https://www.youtube.com/watch?v=Hc93gTC4COc",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        },
+        {
+          "title": "Final turnout projected at 53–55% despite all-time early voting turnout… 'Undecided voters' a var...",
+          "video_id": "2SlAkh0McjU",
+          "views": 24255,
+          "upload_date": "2026-05-30",
+          "url": "https://www.youtube.com/watch?v=2SlAkh0McjU",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        }
+      ],
+      "max": 0.1226,
+      "min": 0.7522,
+      "nb_score": 0.163,
+      "avg_views": 19752.2,
+      "total_views": 197522
+    },
+    {
+      "keyword": "23 51",
+      "is_fixed": false,
+      "views": [
+        18555
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "Early Voting Turnout 23.51%... Breaks All-Time Local Election Record, and More - SBS 8 News | May...",
+          "video_id": "mHEbpRERp4M",
+          "views": 18555,
+          "upload_date": "2026-05-30",
+          "url": "https://www.youtube.com/watch?v=mHEbpRERp4M",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "로또 1등",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "대통령이 대놓고",
+      "is_fixed": false,
+      "views": [
+        31827
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "[충격 폭로] “대통령 부부가 마약 독점 사업을?” 세관이 대놓고 통과시켜 준 진짜 이유",
+          "video_id": "WvUArfelqnI",
+          "views": 31827,
+          "upload_date": "2026-05-30",
+          "url": "https://www.youtube.com/watch?v=WvUArfelqnI",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "이 대놓고",
+      "is_fixed": false,
+      "views": [
+        54539
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "The next Intel? A company openly backed by Trump has emerged!",
+          "video_id": "Mcd59KEJZAQ",
+          "views": 54539,
+          "upload_date": "2026-05-30",
+          "url": "https://www.youtube.com/watch?v=Mcd59KEJZAQ",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "추경호 대구 복판",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "사업비 최저금리",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    }
+  ]
+}

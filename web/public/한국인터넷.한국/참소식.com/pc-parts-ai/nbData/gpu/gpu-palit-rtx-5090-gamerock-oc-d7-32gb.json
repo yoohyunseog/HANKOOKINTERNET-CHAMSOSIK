@@ -1,0 +1,96 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-06-01T15:15:40.467+09:00",
+  "category": "GPU",
+  "id": "gpu-palit-rtx-5090-gamerock-oc-d7-32gb",
+  "name": "PALIT 지포스 RTX 5090 GAMEROCK OC D7 32GB",
+  "maker": "PALIT",
+  "platform": "NVIDIA",
+  "estimatedPriceKrw": 6973470,
+  "priceBand": "60만원 이상",
+  "speedLabel": "OC",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "GPU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 100,
+  "valueIndex": 1.4,
+  "aiUseScore": 100,
+  "powerWatts": 600,
+  "tags": [
+    "gaming",
+    "ai",
+    "high-end"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "GPU",
+    "partId": "gpu-palit-rtx-5090-gamerock-oc-d7-32gb",
+    "partName": "PALIT 지포스 RTX 5090 GAMEROCK OC D7 32GB",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "GPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 1000,
+      "value": 100,
+      "aiFit": 1000,
+      "priceEfficiency": 10,
+      "powerEfficiency": 100
+    },
+    "nbVector": [
+      100,
+      1000,
+      100,
+      1000,
+      10,
+      100
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 172.223,
+    "nbMin": 291.317,
+    "weightedScore": 363,
+    "nbBand": "100~499",
+    "summary": "GPU PALIT 지포스 RTX 5090 GAMEROCK OC D7 32GB 부품을 속도 중심 N/B 데이터베이스 점수 363점으로 저장했습니다."
+  },
+  "nbWeightedScore": 363,
+  "nbMax": 172.223,
+  "nbMin": 291.317,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=GeForce%20RTX%205090%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "PALIT 지포스 RTX 5090 GAMEROCK OC D7 32GB은 게임, 작업, AI 활용을 함께 검토할 그래픽카드 후보입니다.",
+  "textRepair": {
+    "checkedAt": "2026-06-01T15:15:40.467+09:00",
+    "method": "ai-text-sanity-rules",
+    "repairedFields": [
+      "notes"
+    ]
+  },
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

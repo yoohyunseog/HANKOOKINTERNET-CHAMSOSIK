@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-05-30T12:02:25.898+09:00",
+  "updatedAt": "2026-06-01T15:15:36.551+09:00",
   "category": "CPU",
   "id": "cpu-amd-9-9900x-3d",
   "name": "AMD 라이젠 9 9900X 3D",
@@ -82,7 +82,7 @@
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=AMD%20%EB%9D%BC%EC%9D%B4%EC%A0%A0%209%209900X%20%EC%A0%95%ED%92%88%20%EB%8B%A4%EB%82%98%EC%99%80",
   "notes": "Observed in shopping guide as 6th gen Granite Ridge multi-pack.",
   "textRepair": {
-    "checkedAt": "2026-05-30T12:02:25.898+09:00",
+    "checkedAt": "2026-06-01T15:15:36.551+09:00",
     "method": "ai-text-sanity-rules",
     "repairedFields": [
       "speedLabel"

@@ -1,8 +1,8 @@
 {
   "schema": "pc-parts-nb-category-index.v1",
-  "updatedAt": "2026-05-30T12:01:50.196+09:00",
+  "updatedAt": "2026-06-01T15:15:35.719+09:00",
   "category": "cpu",
-  "count": 153,
+  "count": 157,
   "files": [
     "cpu-5-2-245k.json",
     "cpu-5-245k.json",
@@ -51,6 +51,7 @@
     "cpu-amd-9-5-7900x.json",
     "cpu-amd-9-5-7950x3d.json",
     "cpu-amd-9-6-9900x.json",
+    "cpu-amd-9-6-9900x3d.json",
     "cpu-amd-9-6-9950x.json",
     "cpu-amd-9-6-9950x3d.json",
     "cpu-amd-9-6-9950x3d2-dual-edition.json",
@@ -63,11 +64,13 @@
     "cpu-amd-9-9900x-3d.json",
     "cpu-amd-9-9900x.json",
     "cpu-amd-9-9950x.json",
+    "cpu-amd-9-9950x3d-dual-edition.json",
     "cpu-amd-9-9950x3d.json",
     "cpu-amd-9-9950x3d2-dual-edition.json",
     "cpu-amd-ryzen-5-9600x-granite-ridge.json",
     "cpu-amd-ryzen-5-9600x.json",
     "cpu-amd-ryzen-7-5700x3d.json",
+    "cpu-amd-ryzen-7-7700x-raphael.json",
     "cpu-amd-ryzen-7-7700x.json",
     "cpu-amd-ryzen-7-7800x3d-raphael.json",
     "cpu-amd-ryzen-7-9600x.json",
@@ -156,6 +159,7 @@
     "cpu-ryzen-9-9900x.json",
     "cpu-ryzen-9-9900x3d.json",
     "cpu-ryzen-9-9950x.json",
-    "cpu-ryzen-9-9950x3d.json"
+    "cpu-ryzen-9-9950x3d.json",
+    "cpu-ultra-9-285k.json"
   ]
 }

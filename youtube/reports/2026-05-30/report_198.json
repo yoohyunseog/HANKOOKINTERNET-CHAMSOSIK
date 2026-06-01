@@ -1,0 +1,308 @@
+{
+  "timestamp": "2026-05-30T15:43:05.784365",
+  "model": "kimi-k2.5:cloud",
+  "keyword_count": 3,
+  "analyze_subtitles": true,
+  "analysis_source": "youtube",
+  "keywords": [
+    {
+      "keyword": "오늘의 주요 뉴스",
+      "is_fixed": true,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "반도체 HBM4E 출하",
+      "is_fixed": false,
+      "views": [
+        1296,
+        4,
+        271
+      ],
+      "video_count": 3,
+      "videos": [
+        {
+          "title": "삼성 “세계 최초” 외쳤지만…HBM 진짜 승자는 따로 있었다?",
+          "video_id": "jzBghr9OzM0",
+          "views": 1296,
+          "upload_date": "2026-05-30",
+          "url": "https://www.youtube.com/watch?v=jzBghr9OzM0",
+          "subtitle_summary": "삼성전자가 7세대 HBM 12단 제품을 세계 최초로 출시하며 기술력을 과시했지만, 실제 시장에서는 SK하이닉스가 엔비디아 등에 70% 물량을 공급하며 1위를 지키고 있다. 이번 제품은 데이터 전송 속도가 20% 이상 빨라지고 용량도 30% 늘었지만, 계획보다 2-3개월 앞당겨 출시한 점에서 위기감이 엿보인다. HBM은 AI 반도체의 데이터 처리 병목을 해결하는 핵심 부품으로, 삼성의 화려한 스펙 외침과 달리 실제 시장 지배력은 SK하이닉스에게 있다. 이는 단순한 기술 경쟁을 넘어 한국 반도체 산업 전체의 미래와도 연결된 문제다.",
+          "analysis_source": "subtitle",
+          "db_saved": true
+        },
+        {
+          "title": "\"한국이 1·2위 동시 보유 | 삼성 HBM4E 세계 최초 출하의 진짜 의미\"",
+          "video_id": "EW7uAhotyJM",
+          "views": 4,
+          "upload_date": "2026-05-30",
+          "url": "https://www.youtube.com/watch?v=EW7uAhotyJM",
+          "subtitle_summary": "The user wants a summary of a YouTube video transcript in Korean, around 500 characters, with 3-5 sentences capturing the key points.\nKey points from the transcript:\n1. Samsung Electronics successfully mass-produced HBM4 (next-gen product) for the first time in the world in February this year.\n2. On May 29, they also unveiled the world's first HBM 12-stack sample (HBM4E) ahead of schedule, supplied to NVIDIA.\n3. This is significant because Samsung had been lagging behind SK Hynix in supplying HBM to NVIDIA for the past 2 years.\n4. The performance improvements: 20% faster data transfer speed (16Gb/s per pin), 30% more capacity (48GB), total bandwidth 3.6TB/s.\n5. This sample targets NVIDIA's next-gen AI accelerator \"Rubin Ultra\" (2027 product), meaning Samsung is now ahead of the curve instead of behind.\n6. This signals a shift in power dynamics in the AI semiconductor market.\nI need to write this in Korean only, no English, around 500 characters (roughly 3-5 sentences).\nDraft:\n삼성전자가 지난 2월 세계 최초로 차세대 HBM4를 대량 생산한 데 이어, 5월 29일에는 차기 제품인 12단 HBM4E 샘플을 앞당겨 출하하며 엔비디아에 공급했다. 이는 지난 2년간 SK하이닉스에 밀려 엔비디아 공급에서 뒤처졌던 삼성이 속도와 용량을 대폭 개선한 차세대 메모리로 시장 주도권을 되찾은 신호탄이다. 특히 2027년 출시될 엔비디아의 차세대 AI 가속기 '루빈 울트라'용 부품을 미리 확보함으로써, 삼성은 단순한 기술 뉴스를 넘어 글로벌 AI 반도체 시장의 권력 구도를 바꾸는 결정적 계기를 마련했다.\nCharacter count check:\n삼성전자가 지난 2월 세계 최초로 차세대 HBM4를 대량 생산한 데 이어, 5월 29일에는 차기 제품인 12단 HBM4E 샘플을 앞당겨 출하하며 엔비디아에 공급했다. (74자)\n이는 지난 2년간 SK하이닉스에 밀려 엔비디아 공급에서 뒤처졌던 삼성이 속도와 용량을 대폭 개선한 차세대 메모리로 시장 주도권을 되찾은 신호탄이다. (72자)\n특히 2027년 출시될 엔비디아의 차세대 AI 가속기 '루빈 울트라'용 부품을 미리 확보함으로써, 삼성은 단순한 기술 뉴스를 넘어 글로벌 AI 반도체 시장의 권력 구도를 바꾸는 결정적 계기를 마련했다. (96자)\nTotal: 242 characters. That's too short. The user asked for around 500 characters (내외). Let me expand.\nRevised draft:\n삼성전자가 지난 2월 세계 최초로 차세대 HBM4 메모리를 대량 생산한 데 이어, 5월 29일에는 그 다음 세대인 12단 HBM4E 샘플을 기존 계획보다 앞당겨 출하하며 엔비디아에 최초로 공급했다. 이는 지난 2년간 SK하이닉스에 밀려 엔비디아 납품에서 뒤처졌던 삼성이 데이터 전송 속도를 20% 이상 높이고 용량을 30% 이상 확장한 초고성능 메모리로 시장 주도권을 탈환한 상징적 사건이다. 특히 2027년 출시될 엔비디아의 차세대 AI 가속",
+          "analysis_source": "subtitle",
+          "db_saved": true
+        },
+        {
+          "title": "Samsung Electronics Target Price 480,000 Won | Samsung Electronics Market Cap Surpasses 2,000 Tri...",
+          "video_id": "2fi3BMNMpgU",
+          "views": 271,
+          "upload_date": "2026-05-30",
+          "url": "https://www.youtube.com/watch?v=2fi3BMNMpgU",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        }
+      ],
+      "max": 1.326,
+      "min": 2.0297,
+      "nb_score": 0.6533,
+      "avg_views": 523.67,
+      "total_views": 1571
+    },
+    {
+      "keyword": "사전투표율 역대 최고치",
+      "is_fixed": false,
+      "views": [
+        20977,
+        1861,
+        989,
+        114518
+      ],
+      "video_count": 4,
+      "videos": [
+        {
+          "title": "[LIVE] 6.3 지방선거 첫날 사전투표율 최종 11.6%…역대 지선 최고치, 국회의원 재보선은 12.07%/2026년 5월 29일(금)/KBS",
+          "video_id": "QBaSZd1ETHA",
+          "views": 20977,
+          "upload_date": "2026-05-30",
+          "url": "https://www.youtube.com/watch?v=QBaSZd1ETHA",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        },
+        {
+          "title": "역대 최고 찍은 사전투표율…이 시각 투표소 상황은? [현장쏙] / 연합뉴스TV(YonhapnewsTV)",
+          "video_id": "OW0iQBOr2vI",
+          "views": 1861,
+          "upload_date": "2026-05-30",
+          "url": "https://www.youtube.com/watch?v=OW0iQBOr2vI",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        },
+        {
+          "title": "[이슈] 역대 지선 최고치 투표율…첫날 11.6% / 오늘까지 사전투표…투표율 최고 지역은? | MBN NEWS",
+          "video_id": "QkVAc7_D2J8",
+          "views": 989,
+          "upload_date": "2026-05-30",
+          "url": "https://www.youtube.com/watch?v=QkVAc7_D2J8",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        },
+        {
+          "title": "[정치인싸] 6.3 지선 사전투표율 역대 지선 최고치, 서울시장 치열한 신경전 외 with 강성필, 윤희석, 강수영, 류제화",
+          "video_id": "rg8T39ZdSLQ",
+          "views": 114518,
+          "upload_date": "2026-05-30",
+          "url": "https://www.youtube.com/watch?v=rg8T39ZdSLQ",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        }
+      ],
+      "max": 0.6451,
+      "min": 1.5808,
+      "nb_score": 0.4081,
+      "avg_views": 34586.25,
+      "total_views": 138345
+    },
+    {
+      "keyword": "국민연금 제도 확대",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "주한미군 전작권 전환",
+      "is_fixed": false,
+      "views": [
+        144
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "'오피셜' 떴나 \"전작권 전환은\"..\"한국에 박수\" '콕' 집어 공개 칭찬 (자막뉴스) / SBS",
+          "video_id": "jLeW1BbYINQ",
+          "views": 144,
+          "upload_date": "2026-05-30",
+          "url": "https://www.youtube.com/watch?v=jLeW1BbYINQ",
+          "subtitle_summary": "The user wants me to summarize a YouTube video caption in Korean, within approximately 500 characters, using 3-5 sentences. I must NOT use English at all.\nKey points from the caption:\n1. Pete Hegseth (US Defense Secretary) mentioned Korea's OPCON (Operational Control) transfer at Shangri-La Dialogue in Singapore on the 30th (local time)\n2. He said Korea's military operational control transfer is something to be encouraged\n3. This is the first US mention since last month when General Bruns mentioned 2029 Q1 as the timing\n4. He publicly praised Korea for promising to increase defense spending, applauding Korea's realism and leadership, saying the era of US subsidizing wealthy nations' defense is over\n5. Korea promised to increase defense spending to 3.5% of GDP in November last year\n6. He also mentioned China, expressing legitimate concern about China's military buildup and activities in the Indo-Pacific, warning against any hegemon dominating the Pacific\n7. However, he showed willingness to avoid unnecessary confrontation and frontal collision with China\n8. Regarding Iran war, he said US has sufficient weapons stockpile\nI need to summarize this in 3-5 sentences, around 500 characters, in Korean only.\nDraft:\n피트 해그세스 미 국방장관이 싱가포르 샹그릴라 대화에서 한국의 전작권 전환을 장려해야 할 일이라고 언급하며 2029년 1분기 전환 시기에 대한 미국 측의 첫 공식 입장을 밝혔습니다. 또한 GDP의 3.5%로 국방비를 증액하기로 한 한국의 실용주의와 지도력을 공개 칭찬하며 부유국 방위비 보조 시대는 끝났다고 강조했습니다. 중국의 군사력 증강에 대한 경각심을 표하면서도 불필요한 대립은 피하겠다는 입장을 보였고, 이란 전쟁과 관련해선 충분한 무기 비축량을 갖추고 있다고 언급했습니다.\nCharacter count check:\n피트 해그세스 미 국방장관이 싱가포르 샹그릴라 대화에서 한국의 전작권 전환을 장려해야 할 일이라고 언급하며 2029년 1분기 전환 시기에 대한 미국 측의 첫 공식 입장을 밝혔습니다. (96 characters)\n또한 GDP의 3.5%로 국방비를 증액하기로 한 한국의 실용주의와 지도력을 공개 칭찬하며 부유국 방위비 보조 시대는 끝났다고 강조했습니다. (78 characters)\n중국의 군사력 증강에 대한 경각심을 표하면서도 불필요한 대립은 피하겠다는 입장을 보였고, 이란 전쟁과 관련해선 충분한 무기 비축량을 갖추고 있다고 언급했습니다. (84 characters)\nTotal: around 258 characters. This is well within the 500 character limit and covers the main points: OPCON transfer praise, defense spending praise, and China/Iran mentions.\nWait, let me make sure I didn't miss anything important. The caption mentions this is the first US mention after Bruns mentioned 2029 Q1. My draft mentions \"첫 공식 입장\" which captures that.\nAlso, the caption mentions \"오피셜 떴나\" in the title which seems to be about whether it's official. But the content is clear.\nLet me verify the character count more precisely:\n피트 해그세스 미 국방장관이 싱가포르 샹그릴라 대화에서 한국의 전작권 전환을 장려해야 할 일이라고 언급하며 2029년 1분기 전환 시기에 대한 미국 측의 첫 공식 입장을 밝혔습니다. (96)\n또한 GDP의 3.5%로 국방비를 증액하기로 한 한국의 실용주의와 지도력을 공개 칭찬하며 부유국 방위비 보조 시대",
+          "analysis_source": "subtitle",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "코스피 신용잔고 역대 최고",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "부동산 분양가 급등",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "젠슨 황 LG 방한",
+      "is_fixed": false,
+      "views": [
+        500
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "젠슨 황, 방한 카운트다운… LG·네이버 등과 '깐부회동 시즌2' 성사되나 [뉴스와] / 연합뉴스TV(YonhapnewsTV)",
+          "video_id": "zDCSFA3h4wo",
+          "views": 500,
+          "upload_date": "2026-05-30",
+          "url": "https://www.youtube.com/watch?v=zDCSFA3h4wo",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "포스코이앤씨 신반포 분양",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "삼성전자 시가총액 2000조",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "이베이재팬 K이너웨어 판매 급증",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "주한미군사령관 단검 발언",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "반려동물 항암치료 비용",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "애완고양이 다묘가족 생활",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "패럴림픽 배희관밴드 공연",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "소록도 행복한 의사 이야기",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    }
+  ]
+}
