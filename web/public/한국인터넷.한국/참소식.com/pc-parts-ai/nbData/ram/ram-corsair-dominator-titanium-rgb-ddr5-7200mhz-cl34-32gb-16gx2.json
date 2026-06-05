@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-06-01T15:15:41.709+09:00",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
   "category": "RAM",
   "id": "ram-corsair-dominator-titanium-rgb-ddr5-7200mhz-cl34-32gb-16gx2",
   "name": "Corsair Dominator Titanium RGB DDR5 7200MHz CL34 32GB (16Gx2)",
@@ -21,7 +21,7 @@
   "performance": 75,
   "valueIndex": 17.8,
   "aiUseScore": 49,
-  "powerWatts": 0,
+  "powerWatts": null,
   "tags": [
     "high-end",
     "rgb"
@@ -81,9 +81,5 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Corsair%20Dominator%20Titanium%20DDR5%207200MHz%2032GB%20%EC%B5%9C%EC%A0%80%EA%B0%80",
   "notes": "CL34 timing, iCUE compatible",
-  "textRepair": null,
-  "sourceType": "collector",
-  "sourceQuery": "",
-  "collectedPricesKrw": [],
-  "targetMatched": null
+  "textRepair": null
 }

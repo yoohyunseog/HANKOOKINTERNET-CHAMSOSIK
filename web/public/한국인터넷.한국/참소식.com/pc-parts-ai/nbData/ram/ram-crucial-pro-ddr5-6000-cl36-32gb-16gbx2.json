@@ -1,0 +1,85 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
+  "category": "RAM",
+  "id": "ram-crucial-pro-ddr5-6000-cl36-32gb-16gbx2",
+  "name": "Crucial Pro DDR5-6000 CL36 32GB (16GBx2)",
+  "maker": "Crucial",
+  "platform": "DDR5",
+  "estimatedPriceKrw": 142470,
+  "priceBand": "15만원 미만",
+  "speedLabel": "6000MHz CL36",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "RAM",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 75,
+  "valueIndex": 52.6,
+  "aiUseScore": 49,
+  "powerWatts": null,
+  "tags": [
+    "overclocking",
+    "gaming"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "RAM",
+    "partId": "ram-crucial-pro-ddr5-6000-cl36-32gb-16gbx2",
+    "partName": "Crucial Pro DDR5-6000 CL36 32GB (16GBx2)",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "RAM",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 750,
+      "value": 701,
+      "aiFit": 490,
+      "priceEfficiency": 700,
+      "powerEfficiency": 750
+    },
+    "nbVector": [
+      100,
+      750,
+      701,
+      490,
+      700,
+      750
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 595.797,
+    "nbMin": 338.239,
+    "weightedScore": 440,
+    "nbBand": "100~499",
+    "summary": "RAM Crucial Pro DDR5-6000 CL36 32GB (16GBx2) 부품을 속도 중심 N/B 데이터베이스 점수 440점으로 저장했습니다."
+  },
+  "nbWeightedScore": 440,
+  "nbMax": 595.797,
+  "nbMin": 338.239,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Crucial%20DDR5-6000%20CL36%2032GB%20(16GBx2)%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "Identified as Crucial Pro Overclocking package via news excerpt with a more realistic market price (142,470 KRW) compared to the overseas listings.",
+  "textRepair": null
+}

@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-06-01T15:15:39.467+09:00",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
   "category": "GPU",
   "id": "gpu-geforce-rtx-5080-msi-gaming-x-trio-oc",
   "name": "GeForce RTX 5080 MSI Gaming X Trio OC",
@@ -81,9 +81,5 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=GeForce%20RTX%205080%20MSI%20Gaming%20X%20Trio%20%EA%B0%80%EA%B2%A9",
   "notes": "GDDR7, Tri Frozr 4",
-  "textRepair": null,
-  "sourceType": "collector",
-  "sourceQuery": "",
-  "collectedPricesKrw": [],
-  "targetMatched": null
+  "textRepair": null
 }

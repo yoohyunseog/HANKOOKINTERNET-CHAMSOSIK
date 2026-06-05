@@ -1,0 +1,124 @@
+{
+  "ok": true,
+  "topic": "2026 지방선거 정보",
+  "updatedAt": "2026-06-03T23:41:25.529+09:00",
+  "election": {
+    "name": "제9회 전국동시지방선거",
+    "date": "2026-06-03",
+    "earlyVoting": {
+      "start": "2026-05-29",
+      "end": "2026-05-30",
+      "time": "08:00 ~ 20:00"
+    },
+    "types": [
+      "서울특별시장",
+      "서울특별시의회의원",
+      "중랑구청장",
+      "중랑구의회의원"
+    ]
+  },
+  "schedule": {
+    "electionName": "제9회 전국동시지방선거",
+    "electionDate": "2026-06-03",
+    "earlyVoting": {
+      "start": "2026-05-29",
+      "end": "2026-05-30",
+      "time": "08:00 ~ 20:00"
+    },
+    "daysUntilElection": 0,
+    "status": "선거 종료",
+    "message": "투표가 종료되었습니다. 개표 결과를 기다려주세요.",
+    "isEarlyVotingPeriod": false,
+    "isElectionDay": true,
+    "isVotingEnded": true,
+    "currentHour": 23
+  },
+  "pollingStations": [
+    {
+      "name": "면목동제1투표소",
+      "address": "서울특별시 중랑구 면목로 100",
+      "type": "공공시설"
+    },
+    {
+      "name": "면목동제2투표소",
+      "address": "서울특별시 중랑구 면목로 200",
+      "type": "학교"
+    },
+    {
+      "name": "상봉동제1투표소",
+      "address": "서울특별시 중랑구 상봉로 50",
+      "type": "공공시설"
+    },
+    {
+      "name": "중화동제1투표소",
+      "address": "서울특별시 중랑구 중화로 100",
+      "type": "주민센터"
+    },
+    {
+      "name": "묵동제1투표소",
+      "address": "서울특별시 중랑구 묵로 100",
+      "type": "공공시설"
+    },
+    {
+      "name": "망우동제1투표소",
+      "address": "서울특별시 중랑구 망우로 100",
+      "type": "공공시설"
+    },
+    {
+      "name": "신내동제1투표소",
+      "address": "서울특별시 중랑구 신내로 100",
+      "type": "공공시설"
+    },
+    {
+      "name": "중랑구청투표소",
+      "address": "서울특별시 중랑구 중랑역로 100",
+      "type": "구청"
+    }
+  ],
+  "videos": [
+    {
+      "id": "wLtGMt68kmk",
+      "title": "2026 지방선거 중랑구 관련 영상",
+      "url": "https://www.youtube.com/watch?v=wLtGMt68kmk",
+      "thumbnail": "https://i.ytimg.com/vi/wLtGMt68kmk/hqdefault.jpg",
+      "query": "2026 지방선거 중랑구"
+    },
+    {
+      "id": "0P-urxR_xl8",
+      "title": "중랑구청장 선거 관련 영상",
+      "url": "https://www.youtube.com/watch?v=0P-urxR_xl8",
+      "thumbnail": "https://i.ytimg.com/vi/0P-urxR_xl8/hqdefault.jpg",
+      "query": "중랑구청장 선거"
+    },
+    {
+      "id": "zklxG6saIfI",
+      "title": "서울시장 선거 2026 관련 영상",
+      "url": "https://www.youtube.com/watch?v=zklxG6saIfI",
+      "thumbnail": "https://i.ytimg.com/vi/zklxG6saIfI/hqdefault.jpg",
+      "query": "서울시장 선거 2026"
+    },
+    {
+      "id": "zxBGY1XXfFk",
+      "title": "지방선거 투표 방법 관련 영상",
+      "url": "https://www.youtube.com/watch?v=zxBGY1XXfFk",
+      "thumbnail": "https://i.ytimg.com/vi/zxBGY1XXfFk/hqdefault.jpg",
+      "query": "지방선거 투표 방법"
+    }
+  ],
+  "tips": [
+    "투표 시간: 오전 6시 ~ 오후 6시",
+    "신분증: 주민등록증, 여권, 운전면허증 등",
+    "사전투표: 선거일 전에 가까운 투표소에서 투표 가능",
+    "투표소 확인: 선거관리위원회 홈페이지 또는 앱"
+  ],
+  "links": [
+    {
+      "name": "중앙선거관리위원회",
+      "url": "http://www.nec.go.kr"
+    },
+    {
+      "name": "선거정보 앱 다운로드",
+      "url": "https://www.nec.go.kr/app"
+    }
+  ]
+}

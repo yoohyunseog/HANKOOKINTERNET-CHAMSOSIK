@@ -1,0 +1,92 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
+  "category": "CPU",
+  "id": "cpu-ryzen-9-9950x-3d",
+  "name": "Ryzen 9 9950X 3D",
+  "maker": "AMD",
+  "platform": "AM5",
+  "estimatedPriceKrw": 1115120,
+  "priceBand": "60만원 이상",
+  "speedLabel": "Zen 5",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "CPU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 99,
+  "valueIndex": 8.9,
+  "aiUseScore": 64,
+  "powerWatts": 170,
+  "tags": [
+    "high-end",
+    "gaming",
+    "workstation"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "CPU",
+    "partId": "cpu-ryzen-9-9950x-3d",
+    "partName": "Ryzen 9 9950X 3D",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "CPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 990,
+      "value": 119,
+      "aiFit": 640,
+      "priceEfficiency": 90,
+      "powerEfficiency": 194
+    },
+    "nbVector": [
+      100,
+      990,
+      119,
+      640,
+      90,
+      194
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 114.909,
+    "nbMin": 317.436,
+    "weightedScore": 340,
+    "nbBand": "100~499",
+    "summary": "CPU Ryzen 9 9950X 3D 부품을 속도 중심 N/B 데이터베이스 점수 340점으로 저장했습니다."
+  },
+  "nbWeightedScore": 340,
+  "nbMax": 114.909,
+  "nbMin": 317.436,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=AMD%20Ryzen%209%209950X%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "Ryzen 9 9950X 3D은 가격과 성능, 플랫폼 호환성을 함께 확인할 CPU 후보입니다.",
+  "textRepair": {
+    "checkedAt": "2026-06-05T23:19:46.498+09:00",
+    "method": "ai-text-sanity-rules",
+    "repairedFields": [
+      "notes"
+    ]
+  }
+}

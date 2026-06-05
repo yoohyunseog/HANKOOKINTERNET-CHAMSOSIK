@@ -1,0 +1,85 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
+  "category": "CPU",
+  "id": "cpu-intel-core-i7-14700k-bulk",
+  "name": "Intel Core i7-14700K (Bulk)",
+  "maker": "Intel",
+  "platform": "LGA1700",
+  "estimatedPriceKrw": 648400,
+  "priceBand": "60만원 이상",
+  "speedLabel": "5.6GHz",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "CPU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 85,
+  "valueIndex": 13.1,
+  "aiUseScore": 55,
+  "powerWatts": 125,
+  "tags": [
+    "gaming",
+    "productivity"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "CPU",
+    "partId": "cpu-intel-core-i7-14700k-bulk",
+    "partName": "Intel Core i7-14700K (Bulk)",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "CPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 850,
+      "value": 175,
+      "aiFit": 550,
+      "priceEfficiency": 150,
+      "powerEfficiency": 227
+    },
+    "nbVector": [
+      100,
+      850,
+      175,
+      550,
+      150,
+      227
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 136.532,
+    "nbMin": 347.901,
+    "weightedScore": 317,
+    "nbBand": "100~499",
+    "summary": "CPU Intel Core i7-14700K (Bulk) 부품을 속도 중심 N/B 데이터베이스 점수 317점으로 저장했습니다."
+  },
+  "nbWeightedScore": 317,
+  "nbMax": 136.532,
+  "nbMin": 347.901,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Intel%20Core%20i7-14700K%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "Raptor Lake Refresh, Bulk version",
+  "textRepair": null
+}

@@ -1,0 +1,85 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
+  "category": "GPU",
+  "id": "gpu-manli-rtx-4070-ti-super-polar-fox-d6x-16gb-white",
+  "name": "MANLI 지포스 RTX 4070 Ti SUPER Polar Fox D6X 16GB White",
+  "maker": "MANLI",
+  "platform": "PCIe 4.0",
+  "estimatedPriceKrw": 1359000,
+  "priceBand": "60만원 이상",
+  "speedLabel": "GDDR6X",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "GPU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 85,
+  "valueIndex": 6.3,
+  "aiUseScore": 55,
+  "powerWatts": 285,
+  "tags": [
+    "gaming",
+    "white"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "GPU",
+    "partId": "gpu-manli-rtx-4070-ti-super-polar-fox-d6x-16gb-white",
+    "partName": "MANLI 지포스 RTX 4070 Ti SUPER Polar Fox D6X 16GB White",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "GPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 850,
+      "value": 100,
+      "aiFit": 550,
+      "priceEfficiency": 70,
+      "powerEfficiency": 100
+    },
+    "nbVector": [
+      100,
+      850,
+      100,
+      550,
+      70,
+      100
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 109.439,
+    "nbMin": 308.42,
+    "weightedScore": 293,
+    "nbBand": "100~499",
+    "summary": "GPU MANLI 지포스 RTX 4070 Ti SUPER Polar Fox D6X 16GB White 부품을 속도 중심 N/B 데이터베이스 점수 293점으로 저장했습니다."
+  },
+  "nbWeightedScore": 293,
+  "nbMax": 109.439,
+  "nbMin": 308.42,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=GeForce%20RTX%204070%20Ti%20SUPER%20%EC%B5%9C%EC%A0%80%EA%B0%80%20%EB%8B%A4%EB%82%98%EC%99%80",
+  "notes": "Polar Fox White edition",
+  "textRepair": null
+}

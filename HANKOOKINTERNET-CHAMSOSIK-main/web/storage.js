@@ -404,57 +404,77 @@ async function getStatistics() {
     }
 }
 
-module.exports = {
-    initStorage,
-    saveCalculation,
-    searchByUnicode,
-    searchByText,
-    loadCalculation,
-    getRecentCalculations,
-    getMostViewedCalculations,
-    getStatistics,
-    recordVisit,
-    getVisitsByHour,
-    getVisitsByRegion,
-    getTopKeywords,
-    getKeywordsByRegion
-};
-
 // ===== 방문 통계 함수 =====
 
-// 방문 기록 저장
-async function recordVisit(ip, path, userAgent, keyword = null) {
+// 인메모리 방문 버퍼 (Race Condition 방지)
+const visitBuffer = [];
+let visitFlushTimer = null;
+const VISIT_FLUSH_INTERVAL_MS = 5000; // 5초마다 파일에 기록
+const VISIT_MAX_BUFFER = 500;         // 버퍼 최대 크기
+
+// 버퍼를 파일에 플러시
+async function flushVisitBuffer() {
+    if (visitBuffer.length === 0) return;
+    const batch = visitBuffer.splice(0, visitBuffer.length);
     try {
         let visits = [];
         try {
             const content = await fs.readFile(VISITS_FILE, 'utf-8');
             visits = JSON.parse(content);
-        } catch (err) {
-            console.log('[DEBUG] visits.json 초기 생성:', VISITS_FILE);
+            if (!Array.isArray(visits)) visits = [];
+        } catch {
             visits = [];
         }
+        visits.push(...batch);
+        // 최근 10000개만 유지
+        if (visits.length > 10000) {
+            visits = visits.slice(-10000);
+        }
+        await fs.writeFile(VISITS_FILE, JSON.stringify(visits, null, 2));
+    } catch (error) {
+        // 실패 시 버퍼 복구 (재시도 가능하도록)
+        visitBuffer.unshift(...batch);
+        console.error('[visit-flush] write error:', error.message);
+    }
+}
 
+function scheduleVisitFlush() {
+    if (visitFlushTimer) return;
+    visitFlushTimer = setTimeout(() => {
+        visitFlushTimer = null;
+        flushVisitBuffer().catch(err => {
+            console.error('[visit-flush] flush error:', err.message);
+        });
+    }, VISIT_FLUSH_INTERVAL_MS);
+}
+
+// 방문 기록 저장 (인메모리 버퍼 사용)
+async function recordVisit(ip, path, userAgent, keyword = null) {
+    try {
         const geo = geoip.lookup(ip);
         const country = geo ? (geo.country === 'KR' ? '한국' : geo.country) : '미분류';
 
-        const visit = {
+        visitBuffer.push({
             ip: ip || 'unknown',
             path: path || '/',
             country: country,
             timestamp: new Date().toISOString(),
             userAgent: userAgent || 'unknown',
             keyword: keyword
-        };
+        });
 
-        visits.push(visit);
-        console.log('[DEBUG] Visit recorded:', country, keyword, 'Total visits:', visits.length);
-        
-        // 최근 10000개만 유지
-        if (visits.length > 10000) {
-            visits = visits.slice(-10000);
+        if (process.env.NODE_ENV !== 'production') {
+            console.log('[DEBUG] Visit recorded:', country, keyword, 'Buffer size:', visitBuffer.length);
         }
 
-        await fs.writeFile(VISITS_FILE, JSON.stringify(visits, null, 2));
+        // 버퍼가 너무 크면 즉시 플러시
+        if (visitBuffer.length >= VISIT_MAX_BUFFER) {
+            clearTimeout(visitFlushTimer);
+            visitFlushTimer = null;
+            await flushVisitBuffer();
+        } else {
+            scheduleVisitFlush();
+        }
     } catch (error) {
         console.error('Record visit error:', error);
     }
@@ -509,30 +529,112 @@ async function getVisitsByRegion() {
     }
 }
 
+// 일별 방문 통계 (최근 30일)
+async function getVisitsByDay(days = 30) {
+    try {
+        const content = await fs.readFile(VISITS_FILE, 'utf-8');
+        const visits = JSON.parse(content);
+        
+        const daily = {};
+        const today = new Date();
+        const cutoffDate = new Date(today);
+        cutoffDate.setDate(cutoffDate.getDate() - days);
+        
+        visits.forEach(visit => {
+            const date = new Date(visit.timestamp);
+            if (date >= cutoffDate) {
+                const dateStr = date.toISOString().split('T')[0]; // YYYY-MM-DD
+                daily[dateStr] = (daily[dateStr] || 0) + 1;
+            }
+        });
+
+        // 날짜별로 정렬
+        return Object.keys(daily)
+            .sort()
+            .map(date => ({ date, count: daily[date] }));
+    } catch (error) {
+        console.error('Get visits by day error:', error);
+        return [];
+    }
+}
+
+// 오늘 방문자 수
+async function getTodayVisits() {
+    try {
+        const content = await fs.readFile(VISITS_FILE, 'utf-8');
+        const visits = JSON.parse(content);
+        
+        const today = new Date();
+        const todayStr = today.toISOString().split('T')[0];
+        
+        const todayVisits = visits.filter(visit => {
+            const visitDate = new Date(visit.timestamp).toISOString().split('T')[0];
+            return visitDate === todayStr;
+        });
+        
+        return todayVisits.length;
+    } catch (error) {
+        console.error('Get today visits error:', error);
+        return 0;
+    }
+}
+
+// 전체 방문자 수
+async function getTotalVisits() {
+    try {
+        const content = await fs.readFile(VISITS_FILE, 'utf-8');
+        const visits = JSON.parse(content);
+        return visits.length;
+    } catch (error) {
+        console.error('Get total visits error:', error);
+        return 0;
+    }
+}
+
 // 인기 키워드
 async function getTopKeywords(limit = 20) {
     try {
         const files = await getAllCalculationFiles();
+        
+        if (files.length === 0) {
+            console.log('[getTopKeywords] 파일이 없습니다.');
+            return [];
+        }
+        
         const keywords = {};
 
         for (const filePath of files) {
             try {
                 const content = await fs.readFile(filePath, 'utf-8');
                 const calculation = JSON.parse(content);
+                
                 if (calculation.input) {
-                    keywords[calculation.input] = (keywords[calculation.input] || 0) + (calculation.view_count || 0);
+                    // input이 배열인 경우 문자열로 변환
+                    let keywordText = calculation.input;
+                    if (Array.isArray(calculation.input)) {
+                        keywordText = calculation.input.join(', ');
+                    } else if (typeof calculation.input !== 'string') {
+                        keywordText = String(calculation.input);
+                    }
+                    
+                    // 조회수 누적
+                    const viewCount = parseInt(calculation.view_count) || 0;
+                    keywords[keywordText] = (keywords[keywordText] || 0) + viewCount;
                 }
-            } catch {
-                // 파일 읽기 오류 무시
+            } catch (fileError) {
+                // 파일 읽기 오류 무시 (손상된 파일 건너뛰기)
             }
         }
 
-        return Object.entries(keywords)
+        const result = Object.entries(keywords)
             .map(([keyword, count]) => ({ keyword, count }))
             .sort((a, b) => b.count - a.count)
             .slice(0, limit);
+            
+        console.log(`[getTopKeywords] ${result.length}개 키워드 반환`);
+        return result;
     } catch (error) {
-        console.error('Get top keywords error:', error);
+        console.error('[getTopKeywords] 오류:', error);
         return [];
     }
 }
@@ -542,6 +644,11 @@ async function getKeywordsByRegion(limit = 10) {
     try {
         const content = await fs.readFile(VISITS_FILE, 'utf-8');
         const visits = JSON.parse(content);
+        
+        if (!Array.isArray(visits) || visits.length === 0) {
+            console.log('[getKeywordsByRegion] visits 데이터가 비어있습니다.');
+            return {};
+        }
         
         const regionKeywords = {};
         
@@ -563,9 +670,101 @@ async function getKeywordsByRegion(limit = 10) {
                 .slice(0, limit);
         });
 
+        console.log(`[getKeywordsByRegion] ${Object.keys(result).length}개 지역 반환`);
         return result;
     } catch (error) {
-        console.error('Get keywords by region error:', error);
+        console.error('[getKeywordsByRegion] 오류:', error);
         return {};
     }
 }
+
+// 기간별 인기 키워드 (week, today)
+async function getKeywordsByPeriod(period = 'week', limit = 20) {
+    try {
+        const files = await getAllCalculationFiles();
+        
+        if (!files || files.length === 0) {
+            console.log('[getKeywordsByPeriod] 파일이 없습니다.');
+            return [];
+        }
+        
+        const now = Date.now();
+        let timeLimit;
+        
+        if (period === 'today') {
+            // 오늘 00:00:00부터
+            const today = new Date();
+            today.setHours(0, 0, 0, 0);
+            timeLimit = today.getTime();
+        } else if (period === 'week') {
+            // 7일 전부터
+            timeLimit = now - (7 * 24 * 60 * 60 * 1000);
+        } else {
+            timeLimit = 0;
+        }
+        
+        const keywords = {};
+
+        for (const filePath of files) {
+            try {
+                const content = await fs.readFile(filePath, 'utf-8');
+                const calculation = JSON.parse(content);
+                
+                // timestamp 확인 (없으면 건너뜀)
+                if (!calculation.timestamp) continue;
+                
+                const fileTime = new Date(calculation.timestamp).getTime();
+                if (isNaN(fileTime) || fileTime < timeLimit) continue;
+                
+                if (calculation.input) {
+                    // input이 배열인 경우 문자열로 변환
+                    let keywordText = calculation.input;
+                    if (Array.isArray(calculation.input)) {
+                        keywordText = calculation.input.join(', ');
+                    } else if (typeof calculation.input !== 'string') {
+                        keywordText = String(calculation.input);
+                    }
+                    
+                    // 조회수 누적
+                    const viewCount = parseInt(calculation.view_count) || 1;
+                    keywords[keywordText] = (keywords[keywordText] || 0) + viewCount;
+                }
+            } catch (fileError) {
+                // 파일 읽기 오류 무시
+            }
+        }
+
+        const result = Object.entries(keywords)
+            .map(([keyword, count]) => ({ keyword, count }))
+            .sort((a, b) => b.count - a.count)
+            .slice(0, limit);
+            
+        console.log(`[getKeywordsByPeriod(${period})] ${result.length}개 키워드 반환 (전체: ${Object.keys(keywords).length})`);
+        return result;
+    } catch (error) {
+        console.error(`[getKeywordsByPeriod(${period})] 오류:`, error);
+        console.error(error.stack);
+        return [];
+    }
+}
+
+// ===== EXPORTS =====
+module.exports = {
+    initStorage,
+    saveCalculation,
+    searchByUnicode,
+    searchByText,
+    loadCalculation,
+    getRecentCalculations,
+    getMostViewedCalculations,
+    getStatistics,
+    recordVisit,
+    getVisitsByHour,
+    getVisitsByRegion,
+    getVisitsByDay,
+    getTodayVisits,
+    getTotalVisits,
+    getTopKeywords,
+    getKeywordsByRegion,
+    getKeywordsByPeriod
+};

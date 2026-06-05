@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-06-01T15:15:39.529+09:00",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
   "category": "GPU",
   "id": "gpu-geforce-rtx-5090-zotac-gaming-amp-extreme-infinity-d7-32gb",
   "name": "GeForce RTX 5090 ZOTAC Gaming AMP Extreme Infinity D7 32GB",
@@ -82,9 +82,5 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=GeForce%20RTX%205090%20ZOTAC%20Gaming%20AMP%20Extreme%20%EC%B5%9C%EC%A0%80%EA%B0%80",
   "notes": "GDDR7, 21760 stream processors, 16-pin (12V2x6) power connector",
-  "textRepair": null,
-  "sourceType": "collector",
-  "sourceQuery": "",
-  "collectedPricesKrw": [],
-  "targetMatched": null
+  "textRepair": null
 }

@@ -1,0 +1,84 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
+  "category": "GPU",
+  "id": "gpu-galax-geforce-rtx-4060-ti-white-oc-v2-8gb",
+  "name": "GALAX GeForce RTX 4060 Ti WHITE OC V2 8GB",
+  "maker": "GALAX",
+  "platform": "PCIe 4.0",
+  "estimatedPriceKrw": 654210,
+  "priceBand": "60만원 이상",
+  "speedLabel": "2550MHz",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "GPU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 55,
+  "valueIndex": 8.4,
+  "aiUseScore": 36,
+  "powerWatts": 160,
+  "tags": [
+    "gaming"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "GPU",
+    "partId": "gpu-galax-geforce-rtx-4060-ti-white-oc-v2-8gb",
+    "partName": "GALAX GeForce RTX 4060 Ti WHITE OC V2 8GB",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "GPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 550,
+      "value": 112,
+      "aiFit": 360,
+      "priceEfficiency": 150,
+      "powerEfficiency": 115
+    },
+    "nbVector": [
+      100,
+      550,
+      112,
+      360,
+      150,
+      115
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 119.646,
+    "nbMin": 386.399,
+    "weightedScore": 223,
+    "nbBand": "100~499",
+    "summary": "GPU GALAX GeForce RTX 4060 Ti WHITE OC V2 8GB 부품을 속도 중심 N/B 데이터베이스 점수 223점으로 저장했습니다."
+  },
+  "nbWeightedScore": 223,
+  "nbMax": 119.646,
+  "nbMin": 386.399,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=RTX%204060%20Ti%20%EA%B0%A4%EB%9F%AD%EC%8B%9C%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "White model, 2-fan, 8GB GDDR6",
+  "textRepair": null
+}

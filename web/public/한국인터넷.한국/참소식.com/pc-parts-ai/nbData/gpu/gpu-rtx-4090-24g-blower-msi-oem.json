@@ -1,0 +1,86 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
+  "category": "GPU",
+  "id": "gpu-rtx-4090-24g-blower-msi-oem",
+  "name": "RTX 4090 24G Blower MSI OEM",
+  "maker": "MSI",
+  "platform": "NVIDIA",
+  "estimatedPriceKrw": 6322200,
+  "priceBand": "60만원 이상",
+  "speedLabel": "Blower",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "GPU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 100,
+  "valueIndex": 1.6,
+  "aiUseScore": 100,
+  "powerWatts": 450,
+  "tags": [
+    "deep learning",
+    "ai",
+    "workstation"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "GPU",
+    "partId": "gpu-rtx-4090-24g-blower-msi-oem",
+    "partName": "RTX 4090 24G Blower MSI OEM",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "GPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 1000,
+      "value": 100,
+      "aiFit": 1000,
+      "priceEfficiency": 20,
+      "powerEfficiency": 100
+    },
+    "nbVector": [
+      100,
+      1000,
+      100,
+      1000,
+      20,
+      100
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 169.102,
+    "nbMin": 296.444,
+    "weightedScore": 364,
+    "nbBand": "100~499",
+    "summary": "GPU RTX 4090 24G Blower MSI OEM 부품을 속도 중심 N/B 데이터베이스 점수 364점으로 저장했습니다."
+  },
+  "nbWeightedScore": 364,
+  "nbMax": 169.102,
+  "nbMin": 296.444,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=RTX%204090%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "Blower style OEM card specifically marketed for deep learning and servers.",
+  "textRepair": null
+}

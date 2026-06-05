@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-06-01T15:15:41.610+09:00",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
   "category": "PSU",
   "id": "psu-700w-gold",
   "name": "700W 80PLUS Gold PSU",
@@ -21,7 +21,7 @@
   "performance": 78,
   "valueIndex": 78,
   "aiUseScore": 51,
-  "powerWatts": 0,
+  "powerWatts": null,
   "tags": [
     "gaming",
     "value"
@@ -81,9 +81,5 @@
   "nbBand": "500~699",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=700W%2080PLUS%20Gold%20PSU%20price",
   "notes": "Auto-generated AI PC candidate added after the saved candidate list was exhausted.",
-  "textRepair": null,
-  "sourceType": "collector",
-  "sourceQuery": "",
-  "collectedPricesKrw": [],
-  "targetMatched": null
+  "textRepair": null
 }

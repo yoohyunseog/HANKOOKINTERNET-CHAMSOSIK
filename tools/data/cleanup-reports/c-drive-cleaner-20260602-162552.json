@@ -1,0 +1,170 @@
+﻿{
+    "generatedAt":  "2026-06-02T16:37:35",
+    "drive":  "C:",
+    "mode":  "clean",
+    "minAgeDays":  7,
+    "freeBytes":  16855097344,
+    "sizeBytes":  231096696832,
+    "estimatedCleanableBytes":  502330436,
+    "removedBytes":  495317633,
+    "logFile":  "E:\\Ai project\\사이트\\tools\\data\\cleanup-logs\\c-drive-cleaner-20260602-162552.log",
+    "markdownReport":  "E:\\Ai project\\사이트\\tools\\data\\cleanup-reports\\c-drive-cleaner-20260602-162552.md",
+    "jsonReport":  "E:\\Ai project\\사이트\\tools\\data\\cleanup-reports\\c-drive-cleaner-20260602-162552.json",
+    "candidates":  [
+                       {
+                           "label":  "Current user temp",
+                           "path":  "C:\\Users\\dbghw\\AppData\\Local\\Temp",
+                           "risk":  "Low",
+                           "cleanable":  true,
+                           "totalBytes":  48155198671,
+                           "oldBytes":  500880639,
+                           "score":  80,
+                           "action":  "Clean files older than the selected age."
+                       },
+                       {
+                           "label":  "Downloads",
+                           "path":  "C:\\Users\\dbghw\\Downloads",
+                           "risk":  "Manual",
+                           "cleanable":  false,
+                           "totalBytes":  15703571198,
+                           "oldBytes":  0,
+                           "score":  50,
+                           "action":  "Review manually; the bot never deletes Downloads."
+                       },
+                       {
+                           "label":  "Edge cache",
+                           "path":  "C:\\Users\\dbghw\\AppData\\Local\\Microsoft\\Edge\\User Data\\Default\\Cache",
+                           "risk":  "Low",
+                           "cleanable":  true,
+                           "totalBytes":  327153495,
+                           "oldBytes":  0,
+                           "score":  40,
+                           "action":  "Clean old Edge cache files."
+                       },
+                       {
+                           "label":  "Edge code cache",
+                           "path":  "C:\\Users\\dbghw\\AppData\\Local\\Microsoft\\Edge\\User Data\\Default\\Code Cache",
+                           "risk":  "Low",
+                           "cleanable":  true,
+                           "totalBytes":  193847971,
+                           "oldBytes":  1449551,
+                           "score":  20,
+                           "action":  "Clean old Edge code cache files."
+                       },
+                       {
+                           "label":  "pip cache",
+                           "path":  "C:\\Users\\dbghw\\AppData\\Local\\pip\\cache",
+                           "risk":  "Low",
+                           "cleanable":  true,
+                           "totalBytes":  38546007,
+                           "oldBytes":  246,
+                           "score":  20,
+                           "action":  "Clean old Python package cache files."
+                       },
+                       {
+                           "label":  "Chrome cache",
+                           "path":  "C:\\Users\\dbghw\\AppData\\Local\\Google\\Chrome\\User Data\\Default\\Cache",
+                           "risk":  "Low",
+                           "cleanable":  true,
+                           "totalBytes":  6514585,
+                           "oldBytes":  0,
+                           "score":  20,
+                           "action":  "Clean old Chrome cache files."
+                       },
+                       {
+                           "label":  "npm cache",
+                           "path":  "C:\\Users\\dbghw\\AppData\\Local\\npm-cache",
+                           "risk":  "Low",
+                           "cleanable":  true,
+                           "totalBytes":  2388206,
+                           "oldBytes":  0,
+                           "score":  20,
+                           "action":  "Clean old package cache files."
+                       },
+                       {
+                           "label":  "Windows INetCache",
+                           "path":  "C:\\Users\\dbghw\\AppData\\Local\\Microsoft\\Windows\\INetCache",
+                           "risk":  "Low",
+                           "cleanable":  true,
+                           "totalBytes":  655256,
+                           "oldBytes":  0,
+                           "score":  20,
+                           "action":  "Clean browser/system internet cache."
+                       },
+                       {
+                           "label":  "Chrome code cache",
+                           "path":  "C:\\Users\\dbghw\\AppData\\Local\\Google\\Chrome\\User Data\\Default\\Code Cache",
+                           "risk":  "Low",
+                           "cleanable":  true,
+                           "totalBytes":  144,
+                           "oldBytes":  0,
+                           "score":  20,
+                           "action":  "Clean old Chrome code cache files."
+                       },
+                       {
+                           "label":  "Windows temp",
+                           "path":  "C:\\Windows\\Temp",
+                           "risk":  "Low",
+                           "cleanable":  true,
+                           "totalBytes":  136,
+                           "oldBytes":  0,
+                           "score":  20,
+                           "action":  "Clean old temp files. Run as administrator for best results."
+                       }
+                   ],
+    "manualReview":  [
+                         {
+                             "path":  "C:\\$SysReset",
+                             "totalBytes":  89093049,
+                             "note":  "Manual review only."
+                         },
+                         {
+                             "path":  "C:\\Recovery",
+                             "totalBytes":  3454937,
+                             "note":  "Manual review only."
+                         },
+                         {
+                             "path":  "C:\\Boot",
+                             "totalBytes":  36864,
+                             "note":  "Manual review only."
+                         },
+                         {
+                             "path":  "C:\\$Recycle.Bin",
+                             "totalBytes":  129,
+                             "note":  "Manual review only."
+                         }
+                     ],
+    "cleanResults":  [
+                         {
+                             "path":  "C:\\Users\\dbghw\\AppData\\Local\\Temp",
+                             "removedBytes":  493867836,
+                             "removedItems":  388,
+                             "errors":  6,
+                             "note":  "Removed files older than 7 day(s)."
+                         },
+                         {
+                             "path":  "C:\\Users\\dbghw\\AppData\\Local\\Microsoft\\Edge\\User Data\\Default\\Code Cache",
+                             "removedBytes":  1449551,
+                             "removedItems":  3,
+                             "errors":  0,
+                             "note":  "Removed files older than 7 day(s)."
+                         },
+                         {
+                             "path":  "C:\\Users\\dbghw\\AppData\\Local\\pip\\cache",
+                             "removedBytes":  246,
+                             "removedItems":  2,
+                             "errors":  0,
+                             "note":  "Removed files older than 7 day(s)."
+                         }
+                     ],
+    "deepResults":  [
+
+                    ],
+    "aiAdvice":  {
+                     "enabled":  true,
+                     "model":  "news-singleline:latest",
+                     "ok":  false,
+                     "text":  null,
+                     "error":  "원격 서버에서 (404) 찾을 수 없음 오류를 반환했습니다."
+                 }
+}

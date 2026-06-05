@@ -298,7 +298,8 @@ async function getRecentCalculations(limit = 10) {
             files.map(async (filePath) => {
                 try {
                     const stat = await fs.stat(filePath);
-                    return { filePath, ctimeMs: stat.ctimeMs };
+                    // mtimeMs (수정 시간) 사용 - 데이터 업데이트 시 최신 순서 반영
+                    return { filePath, mtimeMs: stat.mtimeMs, ctimeMs: stat.ctimeMs };
                 } catch {
                     return null;
                 }
@@ -307,7 +308,7 @@ async function getRecentCalculations(limit = 10) {
 
         const recentFiles = fileStats
             .filter(Boolean)
-            .sort((a, b) => b.ctimeMs - a.ctimeMs)
+            .sort((a, b) => b.mtimeMs - a.mtimeMs)  // 수정 시간 기준 정렬
             .slice(0, limit);
 
         const results = [];

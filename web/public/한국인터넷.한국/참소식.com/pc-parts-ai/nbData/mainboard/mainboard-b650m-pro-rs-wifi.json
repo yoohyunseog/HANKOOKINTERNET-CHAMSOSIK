@@ -1,0 +1,85 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
+  "category": "Mainboard",
+  "id": "mainboard-b650m-pro-rs-wifi",
+  "name": "B650M Pro RS WiFi",
+  "maker": "ASRock",
+  "platform": "AM5",
+  "estimatedPriceKrw": 259270,
+  "priceBand": "15~30만원",
+  "speedLabel": "DDR5",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "Mainboard",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 75,
+  "valueIndex": 28.9,
+  "aiUseScore": 49,
+  "powerWatts": null,
+  "tags": [
+    "mATX",
+    "WiFi"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "Mainboard",
+    "partId": "mainboard-b650m-pro-rs-wifi",
+    "partName": "B650M Pro RS WiFi",
+    "speed": {
+      "score": 100,
+      "weight": 0.32,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "Mainboard",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 750,
+      "value": 385,
+      "aiFit": 490,
+      "priceEfficiency": 390,
+      "powerEfficiency": 750
+    },
+    "nbVector": [
+      100,
+      750,
+      385,
+      490,
+      390,
+      750
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 382.849,
+    "nbMin": 383.698,
+    "weightedScore": 361,
+    "nbBand": "100~499",
+    "summary": "Mainboard B650M Pro RS WiFi 부품을 속도 중심 N/B 데이터베이스 점수 361점으로 저장했습니다."
+  },
+  "nbWeightedScore": 361,
+  "nbMax": 382.849,
+  "nbMin": 383.698,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=ASRock%20B650M%20Pro%20RS%20WiFi%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "B650 chipset, supports Ryzen 7000/8000/9000 series",
+  "textRepair": null
+}

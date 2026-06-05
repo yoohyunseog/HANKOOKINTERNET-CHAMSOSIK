@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-06-01T15:15:39.033+09:00",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
   "category": "GPU",
   "id": "gpu-geforce-rtx-4080-super-msi-gaming-x-slim",
   "name": "GeForce RTX 4080 SUPER MSI Gaming X Slim",
@@ -82,9 +82,5 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=GeForce%20RTX%204080%20SUPER%20MSI%20Gaming%20X%20Slim%20%EA%B0%80%EA%B2%A9",
   "notes": "Tri Frozr 3 cooling system",
-  "textRepair": null,
-  "sourceType": "collector",
-  "sourceQuery": "",
-  "collectedPricesKrw": [],
-  "targetMatched": null
+  "textRepair": null
 }

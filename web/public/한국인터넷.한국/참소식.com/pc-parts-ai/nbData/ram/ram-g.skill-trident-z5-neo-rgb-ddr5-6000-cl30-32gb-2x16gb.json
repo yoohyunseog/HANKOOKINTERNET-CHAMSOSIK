@@ -1,0 +1,86 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
+  "category": "RAM",
+  "id": "ram-g.skill-trident-z5-neo-rgb-ddr5-6000-cl30-32gb-2x16gb",
+  "name": "G.Skill Trident Z5 Neo RGB DDR5-6000 CL30 32GB (2x16GB)",
+  "maker": "G.Skill",
+  "platform": "AM5",
+  "estimatedPriceKrw": 210000,
+  "priceBand": "15~30만원",
+  "speedLabel": "6000MT/s CL30",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "RAM",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 75,
+  "valueIndex": 35.7,
+  "aiUseScore": 49,
+  "powerWatts": null,
+  "tags": [
+    "gaming",
+    "AMD EXPO",
+    "RGB"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "RAM",
+    "partId": "ram-g.skill-trident-z5-neo-rgb-ddr5-6000-cl30-32gb-2x16gb",
+    "partName": "G.Skill Trident Z5 Neo RGB DDR5-6000 CL30 32GB (2x16GB)",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "RAM",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 750,
+      "value": 476,
+      "aiFit": 490,
+      "priceEfficiency": 480,
+      "powerEfficiency": 750
+    },
+    "nbVector": [
+      100,
+      750,
+      476,
+      490,
+      480,
+      750
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 439.527,
+    "nbMin": 375.448,
+    "weightedScore": 391,
+    "nbBand": "100~499",
+    "summary": "RAM G.Skill Trident Z5 Neo RGB DDR5-6000 CL30 32GB (2x16GB) 부품을 속도 중심 N/B 데이터베이스 점수 391점으로 저장했습니다."
+  },
+  "nbWeightedScore": 391,
+  "nbMax": 439.527,
+  "nbMin": 375.448,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=G.Skill%20Trident%20Z5%20Neo%20RGB%20DDR5-6000%20CL30%20AMD%20EXPO",
+  "notes": "High-performance DDR5 memory optimized for AMD platforms.",
+  "textRepair": null
+}

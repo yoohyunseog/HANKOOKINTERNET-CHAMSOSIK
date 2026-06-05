@@ -1,0 +1,86 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
+  "category": "PSU",
+  "id": "psu-mag-a1000g-pcie5",
+  "name": "MAG A1000G PCIE5",
+  "maker": "MSI",
+  "platform": "ATX 3.0",
+  "estimatedPriceKrw": 360110,
+  "priceBand": "30~60만원",
+  "speedLabel": "80 PLUS Gold",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "PSU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 75,
+  "valueIndex": 20.8,
+  "aiUseScore": 49,
+  "powerWatts": 1000,
+  "tags": [
+    "gaming",
+    "workstation",
+    "pcie5"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "PSU",
+    "partId": "psu-mag-a1000g-pcie5",
+    "partName": "MAG A1000G PCIE5",
+    "speed": {
+      "score": 100,
+      "weight": 0.32,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "PSU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 750,
+      "value": 277,
+      "aiFit": 490,
+      "priceEfficiency": 280,
+      "powerEfficiency": 100
+    },
+    "nbVector": [
+      100,
+      750,
+      277,
+      490,
+      280,
+      100
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 164.789,
+    "nbMin": 369.519,
+    "weightedScore": 298,
+    "nbBand": "100~499",
+    "summary": "PSU MAG A1000G PCIE5 부품을 속도 중심 N/B 데이터베이스 점수 298점으로 저장했습니다."
+  },
+  "nbWeightedScore": 298,
+  "nbMax": 164.789,
+  "nbMin": 369.519,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=MSI%20MAG%20A1000G%20PCIE5%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "ATX 3.0 compliant",
+  "textRepair": null
+}

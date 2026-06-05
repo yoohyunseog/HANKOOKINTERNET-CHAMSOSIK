@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-06-01T15:15:39.891+09:00",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
   "category": "GPU",
   "id": "gpu-igame-geforce-rtx-5080-vulcan-oc-d7-16gb-v",
   "name": "iGame GeForce RTX 5080 VULCAN OC D7 16GB-V",
@@ -82,9 +82,5 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=GeForce%20RTX%205080%20%EC%B6%9C%EC%8B%9C%EC%9D%BC%20%EA%B0%80%EA%B2%A9",
   "notes": "New Blackwell architecture GPU",
-  "textRepair": null,
-  "sourceType": "collector",
-  "sourceQuery": "",
-  "collectedPricesKrw": [],
-  "targetMatched": null
+  "textRepair": null
 }

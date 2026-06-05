@@ -16,29 +16,41 @@
     let ALLOWED_DOMAINS = DEFAULT_ALLOWED_DOMAINS.slice();
     
     // config.json 로드 (동기 방식 - 페이지 로드 완료 전에 실행)
-    const configPath = '../config.json';
-    const xhr = new XMLHttpRequest();
-    xhr.open('GET', configPath, false); // 동기 방식
-    xhr.onload = function() {
-        if (xhr.status === 200) {
-            try {
-                const config = JSON.parse(xhr.responseText);
-                ALLOWED_DOMAINS = config.allowedDomains || DEFAULT_ALLOWED_DOMAINS;
-                console.log('[Domain Check] config.json에서 allowedDomains 로드 성공:', ALLOWED_DOMAINS);
-            } catch (e) {
-                console.error('[Domain Check] config.json 파싱 오류:', e);
-                ALLOWED_DOMAINS = DEFAULT_ALLOWED_DOMAINS;
-            }
-        } else {
-            console.warn('[Domain Check] config.json을 찾을 수 없습니다.');
-            ALLOWED_DOMAINS = DEFAULT_ALLOWED_DOMAINS;
+    // 여러 경로에서 config.json 찾기 시도
+    const configPaths = [
+        './config.json',
+        '../config.json',
+        './참소식.com/config.json',
+        '/config.json'
+    ];
+    let configLoaded = false;
+    
+    for (const configPath of configPaths) {
+        if (configLoaded) break;
+        try {
+            const xhr = new XMLHttpRequest();
+            xhr.open('GET', configPath, false); // 동기 방식
+            xhr.onload = function() {
+                if (xhr.status === 200) {
+                    try {
+                        const config = JSON.parse(xhr.responseText);
+                        ALLOWED_DOMAINS = config.allowedDomains || DEFAULT_ALLOWED_DOMAINS;
+                        console.log('[Domain Check] config.json에서 allowedDomains 로드 성공:', ALLOWED_DOMAINS);
+                        configLoaded = true;
+                    } catch (e) {
+                        console.error('[Domain Check] config.json 파싱 오류:', e);
+                    }
+                }
+            };
+            xhr.send();
+        } catch (e) {
+            // 다음 경로 시도
         }
-    };
-    xhr.onerror = function() {
-        console.warn('[Domain Check] config.json 로드 오류');
-        ALLOWED_DOMAINS = DEFAULT_ALLOWED_DOMAINS;
-    };
-    xhr.send();
+    }
+    
+    if (!configLoaded) {
+        console.warn('[Domain Check] config.json을 찾을 수 없습니다. 기본 도메인 목록 사용.');
+    }
 
     // 현재 도메인 확인 (포트 제거)
     const currentHost = window.location.hostname.toLowerCase();

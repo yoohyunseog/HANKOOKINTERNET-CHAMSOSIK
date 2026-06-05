@@ -1,0 +1,84 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
+  "category": "GPU",
+  "id": "gpu-radeon-rx-9070-xt",
+  "name": "Radeon RX 9070 XT",
+  "maker": "AMD",
+  "platform": "PCIe 5.0",
+  "estimatedPriceKrw": 800000,
+  "priceBand": "60만원 이상",
+  "speedLabel": "...",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "GPU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 85,
+  "valueIndex": 10.6,
+  "aiUseScore": 55,
+  "powerWatts": 250,
+  "tags": [
+    "gaming"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "GPU",
+    "partId": "gpu-radeon-rx-9070-xt",
+    "partName": "Radeon RX 9070 XT",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "GPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 850,
+      "value": 141,
+      "aiFit": 550,
+      "priceEfficiency": 130,
+      "powerEfficiency": 113
+    },
+    "nbVector": [
+      100,
+      850,
+      141,
+      550,
+      130,
+      113
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 110.824,
+    "nbMin": 333.948,
+    "weightedScore": 304,
+    "nbBand": "100~499",
+    "summary": "GPU Radeon RX 9070 XT 부품을 속도 중심 N/B 데이터베이스 점수 304점으로 저장했습니다."
+  },
+  "nbWeightedScore": 304,
+  "nbMax": 110.824,
+  "nbMin": 333.948,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=AMD%20Radeon%20RX%209000%20series%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "Observed in pre-built system listings (Purple Lab 2026/2025). Price is estimated as the result shows full system prices.",
+  "textRepair": null
+}

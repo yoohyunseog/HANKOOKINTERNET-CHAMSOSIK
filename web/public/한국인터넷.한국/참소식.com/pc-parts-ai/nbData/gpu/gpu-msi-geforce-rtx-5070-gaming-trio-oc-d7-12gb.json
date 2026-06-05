@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-06-01T15:15:40.311+09:00",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
   "category": "GPU",
   "id": "gpu-msi-geforce-rtx-5070-gaming-trio-oc-d7-12gb",
   "name": "MSI GeForce RTX 5070 Gaming Trio OC D7 12GB",
@@ -80,9 +80,5 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=GeForce%20RTX%205070%20%EC%B5%9C%EC%A0%80%EA%B0%80",
   "notes": "Tri Frozr 4 cooling system",
-  "textRepair": null,
-  "sourceType": "collector",
-  "sourceQuery": "",
-  "collectedPricesKrw": [],
-  "targetMatched": null
+  "textRepair": null
 }

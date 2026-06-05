@@ -1,0 +1,86 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
+  "category": "Mainboard",
+  "id": "mainboard-rog-crosshair-x670e-hero",
+  "name": "ROG Crosshair X670E Hero",
+  "maker": "ASUS",
+  "platform": "AM5",
+  "estimatedPriceKrw": 1188720,
+  "priceBand": "60만원 이상",
+  "speedLabel": "DDR5",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "Mainboard",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 95,
+  "valueIndex": 8,
+  "aiUseScore": 62,
+  "powerWatts": null,
+  "tags": [
+    "gaming",
+    "high-end",
+    "wifi6e"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "Mainboard",
+    "partId": "mainboard-rog-crosshair-x670e-hero",
+    "partName": "ROG Crosshair X670E Hero",
+    "speed": {
+      "score": 100,
+      "weight": 0.32,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "Mainboard",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 950,
+      "value": 107,
+      "aiFit": 620,
+      "priceEfficiency": 80,
+      "powerEfficiency": 950
+    },
+    "nbVector": [
+      100,
+      950,
+      107,
+      620,
+      80,
+      950
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 239.662,
+    "nbMin": 353.255,
+    "weightedScore": 362,
+    "nbBand": "100~499",
+    "summary": "Mainboard ROG Crosshair X670E Hero 부품을 속도 중심 N/B 데이터베이스 점수 362점으로 저장했습니다."
+  },
+  "nbWeightedScore": 362,
+  "nbMax": 239.662,
+  "nbMin": 353.255,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=ASUS%20ROG%20Crosshair%20X670E%20Hero%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "High-end AM5 motherboard with WiFi 6E support.",
+  "textRepair": null
+}

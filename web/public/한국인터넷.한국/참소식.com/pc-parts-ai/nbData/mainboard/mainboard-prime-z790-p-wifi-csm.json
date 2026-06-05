@@ -1,0 +1,85 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
+  "category": "Mainboard",
+  "id": "mainboard-prime-z790-p-wifi-csm",
+  "name": "PRIME Z790-P WIFI-CSM",
+  "maker": "ASUS",
+  "platform": "Intel LGA1700",
+  "estimatedPriceKrw": 389000,
+  "priceBand": "30~60만원",
+  "speedLabel": "Z790",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "Mainboard",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 70,
+  "valueIndex": 18,
+  "aiUseScore": 46,
+  "powerWatts": null,
+  "tags": [
+    "wifi",
+    "ddr5"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "Mainboard",
+    "partId": "mainboard-prime-z790-p-wifi-csm",
+    "partName": "PRIME Z790-P WIFI-CSM",
+    "speed": {
+      "score": 100,
+      "weight": 0.32,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "Mainboard",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 700,
+      "value": 240,
+      "aiFit": 460,
+      "priceEfficiency": 260,
+      "powerEfficiency": 700
+    },
+    "nbVector": [
+      100,
+      700,
+      240,
+      460,
+      260,
+      700
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 309.648,
+    "nbMin": 395.552,
+    "weightedScore": 314,
+    "nbBand": "100~499",
+    "summary": "Mainboard PRIME Z790-P WIFI-CSM 부품을 속도 중심 N/B 데이터베이스 점수 314점으로 저장했습니다."
+  },
+  "nbWeightedScore": 314,
+  "nbMax": 309.648,
+  "nbMin": 395.552,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Z790%20%EB%A9%94%EC%9D%B8%EB%B3%B4%EB%93%9C%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "Observed price range 389,000 - 399,300 KRW",
+  "textRepair": null
+}

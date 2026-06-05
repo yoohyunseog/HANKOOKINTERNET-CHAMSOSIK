@@ -1,0 +1,86 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
+  "category": "PSU",
+  "id": "psu-vertex-gx-1200-gold-full-modular-atx3.1",
+  "name": "Vertex GX-1200 Gold Full Modular ATX3.1",
+  "maker": "SeaSonic",
+  "platform": "ATX",
+  "estimatedPriceKrw": 398000,
+  "priceBand": "30~60만원",
+  "speedLabel": "80 PLUS Gold",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "PSU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 90,
+  "valueIndex": 22.6,
+  "aiUseScore": 59,
+  "powerWatts": 1200,
+  "tags": [
+    "full-modular",
+    "ATX3.1",
+    "high-capacity"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "PSU",
+    "partId": "psu-vertex-gx-1200-gold-full-modular-atx3.1",
+    "partName": "Vertex GX-1200 Gold Full Modular ATX3.1",
+    "speed": {
+      "score": 100,
+      "weight": 0.32,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "PSU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 900,
+      "value": 301,
+      "aiFit": 590,
+      "priceEfficiency": 250,
+      "powerEfficiency": 100
+    },
+    "nbVector": [
+      100,
+      900,
+      301,
+      590,
+      250,
+      100
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 150.507,
+    "nbMin": 349.153,
+    "weightedScore": 339,
+    "nbBand": "100~499",
+    "summary": "PSU Vertex GX-1200 Gold Full Modular ATX3.1 부품을 속도 중심 N/B 데이터베이스 점수 339점으로 저장했습니다."
+  },
+  "nbWeightedScore": 339,
+  "nbMax": 150.507,
+  "nbMin": 349.153,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=SeaSonic%20Vertex%20GX-1200%20Gold%20Full%20Modular%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "ATX 3.1 certified, 12V2x6 connector, 12-year warranty",
+  "textRepair": null
+}

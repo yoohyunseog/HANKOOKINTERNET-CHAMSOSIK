@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-06-01T15:15:36.833+09:00",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
   "category": "CPU",
   "id": "cpu-intel-core-i7-14700k-raptor-lake-refresh-bulk",
   "name": "Intel Core i7-14700K (Raptor Lake Refresh) Bulk",
@@ -81,9 +81,5 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Intel%20Core%20i7-14700K%20%EC%B5%9C%EC%A0%80%EA%B0%80",
   "notes": "Bulk version",
-  "textRepair": null,
-  "sourceType": "collector",
-  "sourceQuery": "",
-  "collectedPricesKrw": [],
-  "targetMatched": null
+  "textRepair": null
 }

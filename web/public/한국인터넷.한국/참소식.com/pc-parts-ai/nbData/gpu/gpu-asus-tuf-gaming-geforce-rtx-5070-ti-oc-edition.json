@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-06-01T15:15:38.099+09:00",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
   "category": "GPU",
   "id": "gpu-asus-tuf-gaming-geforce-rtx-5070-ti-oc-edition",
   "name": "ASUS TUF Gaming GeForce RTX 5070 Ti OC Edition",
@@ -21,7 +21,7 @@
   "performance": 75,
   "valueIndex": 4.8,
   "aiUseScore": 49,
-  "powerWatts": 0,
+  "powerWatts": null,
   "tags": [
     "gaming"
   ],
@@ -80,9 +80,5 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=ASUS%20TUF%20Gaming%20GeForce%20RTX%205070%20Ti%20OC%20Edition%20%EC%B5%9C%EC%A0%80%EA%B0%80",
   "notes": "OC Edition, 16GB GDDR7",
-  "textRepair": null,
-  "sourceType": "collector",
-  "sourceQuery": "",
-  "collectedPricesKrw": [],
-  "targetMatched": null
+  "textRepair": null
 }

@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-06-01T15:15:41.787+09:00",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
   "category": "RAM",
   "id": "ram-g.skill-trident-z5-rgb-ddr5-8000mhz-cl40-64gb",
   "name": "G.Skill Trident Z5 RGB DDR5 8000MHz CL40 64GB",
@@ -21,7 +21,7 @@
   "performance": 95,
   "valueIndex": 11.5,
   "aiUseScore": 62,
-  "powerWatts": 0,
+  "powerWatts": null,
   "tags": [
     "high-end",
     "overclock"
@@ -81,9 +81,5 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=G.Skill%20Trident%20Z5%20RGB%20DDR5%208000MHz%2064GB%20%EA%B0%80%EA%B2%A9",
   "notes": "CL40-48-48-128, 1.35V",
-  "textRepair": null,
-  "sourceType": "collector",
-  "sourceQuery": "",
-  "collectedPricesKrw": [],
-  "targetMatched": null
+  "textRepair": null
 }

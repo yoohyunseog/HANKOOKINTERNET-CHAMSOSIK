@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-06-01T15:15:38.414+09:00",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
   "category": "GPU",
   "id": "gpu-geforce-rtx-4060-ti-storm-x-dual-oc-d6-8gb",
   "name": "GeForce RTX 4060 Ti STORM X Dual OC D6 8GB",
@@ -80,9 +80,5 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=GeForce%20RTX%204060%20Ti%20STORM%20X%20Dual%20OC%208GB%20%EA%B0%80%EA%B2%A9",
   "notes": "Dual fan model, 160W power consumption, requires 650W+ PSU.",
-  "textRepair": null,
-  "sourceType": "collector",
-  "sourceQuery": "",
-  "collectedPricesKrw": [],
-  "targetMatched": null
+  "textRepair": null
 }

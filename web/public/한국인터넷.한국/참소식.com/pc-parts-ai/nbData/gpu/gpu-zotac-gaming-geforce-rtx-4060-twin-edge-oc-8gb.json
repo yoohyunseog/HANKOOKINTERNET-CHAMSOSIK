@@ -1,0 +1,84 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
+  "category": "GPU",
+  "id": "gpu-zotac-gaming-geforce-rtx-4060-twin-edge-oc-8gb",
+  "name": "ZOTAC GAMING GeForce RTX 4060 Twin Edge OC 8GB",
+  "maker": "ZOTAC",
+  "platform": "PCIe 4.0",
+  "estimatedPriceKrw": 484900,
+  "priceBand": "30~60만원",
+  "speedLabel": "2475MHz",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "GPU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 60,
+  "valueIndex": 12.4,
+  "aiUseScore": 39,
+  "powerWatts": 115,
+  "tags": [
+    "gaming"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "GPU",
+    "partId": "gpu-zotac-gaming-geforce-rtx-4060-twin-edge-oc-8gb",
+    "partName": "ZOTAC GAMING GeForce RTX 4060 Twin Edge OC 8GB",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "GPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 600,
+      "value": 165,
+      "aiFit": 390,
+      "priceEfficiency": 210,
+      "powerEfficiency": 174
+    },
+    "nbVector": [
+      100,
+      600,
+      165,
+      390,
+      210,
+      174
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 156.616,
+    "nbMin": 391.539,
+    "weightedScore": 251,
+    "nbBand": "100~499",
+    "summary": "GPU ZOTAC GAMING GeForce RTX 4060 Twin Edge OC 8GB 부품을 속도 중심 N/B 데이터베이스 점수 251점으로 저장했습니다."
+  },
+  "nbWeightedScore": 251,
+  "nbMax": 156.616,
+  "nbMin": 391.539,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=GeForce%20RTX%204060%20Zotac%20Twin%20Edge%20%EC%B5%9C%EC%A0%80%EA%B0%80%20%EB%8B%A4%EB%82%98%EC%99%80",
+  "notes": "Twin Edge OC model, 8GB GDDR6",
+  "textRepair": null
+}

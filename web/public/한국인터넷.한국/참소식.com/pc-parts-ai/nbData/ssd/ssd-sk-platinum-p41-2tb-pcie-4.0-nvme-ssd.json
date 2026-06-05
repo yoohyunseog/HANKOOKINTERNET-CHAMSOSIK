@@ -1,0 +1,92 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
+  "category": "SSD",
+  "id": "ssd-sk-platinum-p41-2tb-pcie-4.0-nvme-ssd",
+  "name": "SK하이닉스 Platinum P41 2TB PCIe 4.0 NVMe SSD",
+  "maker": "SK하이닉스",
+  "platform": "PCIe 4.0",
+  "estimatedPriceKrw": 202010,
+  "priceBand": "15~30만원",
+  "speedLabel": "7,000MB/s",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "SSD",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 90,
+  "valueIndex": 44.6,
+  "aiUseScore": 59,
+  "powerWatts": null,
+  "tags": [
+    "NVMe",
+    "PCIe 4.0",
+    "PS5"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "SSD",
+    "partId": "ssd-sk-platinum-p41-2tb-pcie-4.0-nvme-ssd",
+    "partName": "SK하이닉스 Platinum P41 2TB PCIe 4.0 NVMe SSD",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "SSD",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 900,
+      "value": 595,
+      "aiFit": 590,
+      "priceEfficiency": 500,
+      "powerEfficiency": 900
+    },
+    "nbVector": [
+      100,
+      900,
+      595,
+      590,
+      500,
+      900
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 437.724,
+    "nbMin": 361.598,
+    "weightedScore": 458,
+    "nbBand": "100~499",
+    "summary": "SSD SK하이닉스 Platinum P41 2TB PCIe 4.0 NVMe SSD 부품을 속도 중심 N/B 데이터베이스 점수 458점으로 저장했습니다."
+  },
+  "nbWeightedScore": 458,
+  "nbMax": 437.724,
+  "nbMin": 361.598,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=SK%ED%95%98%EC%9D%B4%EB%8B%89%EC%8A%A4%20Platinum%20P41%202TB%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "SK하이닉스 Platinum P41 2TB PCIe 4.0 NVMe SSD은 운영체제, 게임, 작업 파일 저장용으로 검토할 NVMe SSD 후보입니다.",
+  "textRepair": {
+    "checkedAt": "2026-06-05T23:19:52.850+09:00",
+    "method": "ai-text-sanity-rules",
+    "repairedFields": [
+      "notes"
+    ]
+  }
+}

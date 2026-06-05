@@ -1,0 +1,85 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
+  "category": "GPU",
+  "id": "gpu-rtx-4080-super-suprim-x-d6x-16gb",
+  "name": "지포스 RTX 4080 SUPER SUPRIM X D6X 16GB",
+  "maker": "MSI",
+  "platform": "PCIe 4.0",
+  "estimatedPriceKrw": 4063300,
+  "priceBand": "60만원 이상",
+  "speedLabel": "2655MHz",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "GPU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 95,
+  "valueIndex": 2.3,
+  "aiUseScore": 62,
+  "powerWatts": 320,
+  "tags": [
+    "gaming",
+    "high-end"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "GPU",
+    "partId": "gpu-rtx-4080-super-suprim-x-d6x-16gb",
+    "partName": "지포스 RTX 4080 SUPER SUPRIM X D6X 16GB",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "GPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 950,
+      "value": 100,
+      "aiFit": 620,
+      "priceEfficiency": 20,
+      "powerEfficiency": 100
+    },
+    "nbVector": [
+      100,
+      950,
+      100,
+      620,
+      20,
+      100
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 122.905,
+    "nbMin": 276.316,
+    "weightedScore": 316,
+    "nbBand": "100~499",
+    "summary": "GPU 지포스 RTX 4080 SUPER SUPRIM X D6X 16GB 부품을 속도 중심 N/B 데이터베이스 점수 316점으로 저장했습니다."
+  },
+  "nbWeightedScore": 316,
+  "nbMax": 122.905,
+  "nbMin": 276.316,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=MSI%20%EC%A7%80%ED%8F%AC%EC%8A%A4%20RTX%204080%20Super%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "Based on search result for MSI Gaming RTX 4080 Super 16G SUPRIM X",
+  "textRepair": null
+}

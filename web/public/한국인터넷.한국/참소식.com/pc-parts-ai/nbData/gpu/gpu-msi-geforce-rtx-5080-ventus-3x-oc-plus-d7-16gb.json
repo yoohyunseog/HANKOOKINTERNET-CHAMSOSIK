@@ -1,0 +1,85 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
+  "category": "GPU",
+  "id": "gpu-msi-geforce-rtx-5080-ventus-3x-oc-plus-d7-16gb",
+  "name": "MSI GeForce RTX 5080 Ventus 3X OC Plus D7 16GB",
+  "maker": "MSI",
+  "platform": "NVIDIA",
+  "estimatedPriceKrw": 2136200,
+  "priceBand": "60만원 이상",
+  "speedLabel": "D7",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "GPU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 90,
+  "valueIndex": 4.2,
+  "aiUseScore": 90,
+  "powerWatts": null,
+  "tags": [
+    "gaming",
+    "ai"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "GPU",
+    "partId": "gpu-msi-geforce-rtx-5080-ventus-3x-oc-plus-d7-16gb",
+    "partName": "MSI GeForce RTX 5080 Ventus 3X OC Plus D7 16GB",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "GPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 900,
+      "value": 100,
+      "aiFit": 900,
+      "priceEfficiency": 50,
+      "powerEfficiency": 900
+    },
+    "nbVector": [
+      100,
+      900,
+      100,
+      900,
+      50,
+      900
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 320.13,
+    "nbMin": 337.611,
+    "weightedScore": 384,
+    "nbBand": "100~499",
+    "summary": "GPU MSI GeForce RTX 5080 Ventus 3X OC Plus D7 16GB 부품을 속도 중심 N/B 데이터베이스 점수 384점으로 저장했습니다."
+  },
+  "nbWeightedScore": 384,
+  "nbMax": 320.13,
+  "nbMin": 337.611,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=RTX%205080%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "Observed price 2,136,200 KRW",
+  "textRepair": null
+}

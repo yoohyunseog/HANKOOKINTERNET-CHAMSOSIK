@@ -1,0 +1,85 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
+  "category": "CPU",
+  "id": "cpu-core-i5-13400f",
+  "name": "Core i5-13400F",
+  "maker": "Intel",
+  "platform": "LGA1700",
+  "estimatedPriceKrw": 267000,
+  "priceBand": "15~30만원",
+  "speedLabel": "up to 4.6GHz",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "CPU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 65,
+  "valueIndex": 24.3,
+  "aiUseScore": 42,
+  "powerWatts": 65,
+  "tags": [
+    "gaming",
+    "budget"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "CPU",
+    "partId": "cpu-core-i5-13400f",
+    "partName": "Core i5-13400F",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "CPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 650,
+      "value": 324,
+      "aiFit": 420,
+      "priceEfficiency": 370,
+      "powerEfficiency": 333
+    },
+    "nbVector": [
+      100,
+      650,
+      324,
+      420,
+      370,
+      333
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 275.658,
+    "nbMin": 402.596,
+    "weightedScore": 309,
+    "nbBand": "100~499",
+    "summary": "CPU Core i5-13400F 부품을 속도 중심 N/B 데이터베이스 점수 309점으로 저장했습니다."
+  },
+  "nbWeightedScore": 309,
+  "nbMax": 275.658,
+  "nbMin": 402.596,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Intel%20Core%20i5-13400F%20%EC%A0%95%ED%92%88%20%EC%B5%9C%EC%A0%80%EA%B0%80%20%EB%8B%A4%EB%82%98%EC%99%80",
+  "notes": "Raptor Lake, F-series (no integrated graphics)",
+  "textRepair": null
+}

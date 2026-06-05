@@ -1,0 +1,85 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
+  "category": "GPU",
+  "id": "gpu-asrock-radeon-rx-9070-xt-steel-legend-d6-16gb",
+  "name": "ASRock Radeon RX 9070 XT Steel Legend D6 16GB",
+  "maker": "ASRock",
+  "platform": "PCIe 5.0",
+  "estimatedPriceKrw": 1089010,
+  "priceBand": "60만원 이상",
+  "speedLabel": "2970MHz",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "GPU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 85,
+  "valueIndex": 7.8,
+  "aiUseScore": 85,
+  "powerWatts": 250,
+  "tags": [
+    "gaming",
+    "ai"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "GPU",
+    "partId": "gpu-asrock-radeon-rx-9070-xt-steel-legend-d6-16gb",
+    "partName": "ASRock Radeon RX 9070 XT Steel Legend D6 16GB",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "GPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 850,
+      "value": 104,
+      "aiFit": 850,
+      "priceEfficiency": 90,
+      "powerEfficiency": 113
+    },
+    "nbVector": [
+      100,
+      850,
+      104,
+      850,
+      90,
+      113
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 151.484,
+    "nbMin": 345.934,
+    "weightedScore": 326,
+    "nbBand": "100~499",
+    "summary": "GPU ASRock Radeon RX 9070 XT Steel Legend D6 16GB 부품을 속도 중심 N/B 데이터베이스 점수 326점으로 저장했습니다."
+  },
+  "nbWeightedScore": 326,
+  "nbMax": 151.484,
+  "nbMin": 345.934,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=ASRock%20Radeon%20RX%209070%20XT%20Steel%20Legend",
+  "notes": "Distributed by Daewon CTS, 3-fan cooler, DP 2.1 support",
+  "textRepair": null
+}

@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-06-01T15:15:41.574+09:00",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
   "category": "Mainboard",
   "id": "mainboard-x870-aorus-elite-wifi7",
   "name": "X870 AORUS ELITE WIFI7",
@@ -21,7 +21,7 @@
   "performance": 75,
   "valueIndex": 21.3,
   "aiUseScore": 49,
-  "powerWatts": 0,
+  "powerWatts": null,
   "tags": [
     "X870",
     "WiFi7",
@@ -82,9 +82,5 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=GIGABYTE%20X870%20AORUS%20ELITE%20WIFI7%20%EA%B0%80%EA%B2%A9",
   "notes": "16+2+2 phase power, PCIe 5.0 x16, USB4 40Gbps support",
-  "textRepair": null,
-  "sourceType": "collector",
-  "sourceQuery": "",
-  "collectedPricesKrw": [],
-  "targetMatched": null
+  "textRepair": null
 }

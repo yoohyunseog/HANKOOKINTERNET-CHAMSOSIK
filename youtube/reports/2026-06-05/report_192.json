@@ -1,0 +1,203 @@
+{
+  "timestamp": "2026-06-05T14:28:00.415501",
+  "model": "kimi-k2.5:cloud",
+  "keyword_count": 3,
+  "analyze_subtitles": true,
+  "analysis_source": "youtube",
+  "keywords": [
+    {
+      "keyword": "오늘의 주요 뉴스",
+      "is_fixed": true,
+      "views": [
+        1363
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "[12 News] Today's Top News / SBS",
+          "video_id": "x5zGV0PvAsg",
+          "views": 1363,
+          "upload_date": "2026-06-05",
+          "url": "https://www.youtube.com/watch?v=x5zGV0PvAsg",
+          "subtitle_summary": "The user wants a summary of a YouTube video transcript in Korean, around 500 characters, with 3-5 sentences covering the key points.\nKey points from the transcript:\n1. Unprecedented ballot shortage at Jamsil polling station, ballot boxes transported this morning, clashes between police and protesters during forced dispersal and transport\n2. Central Election Commission Chairman Roh Tae-hak to apologize to the nation at 4 PM today regarding ballot shortage, may mention his resignation\n3. NVIDIA CEO Jensen Huang visiting Korea again after 7 months, 4-day schedule, dinner with SK Chairman Chey Tae-won and other business leaders (samgyeopsal meeting)\n4. KOSPI plunged over 6% in morning, circuit breaker triggered, partially recovered in afternoon due to individual buying after semiconductor stocks plunged in New York\nI need to write this in Korean only, no English, around 500 characters (which is roughly 3-5 sentences).\nLet me draft:\n잠실 투표소에서 투표용지 부족 사태가 발생해 경찰이 시위대를 해산하고 투표함을 이송하는 과정에서 충돌이 있었으며, 노태학 중앙선거관리위원장이 오늘 오후 4시 대국민 사과를 할 예정이다. 젠슨황 엔비디아 CEO가 7개월 만에 한국을 방문해 최태원 SK회장 등 국내 기업인들과 만남을 가질 예정이다. 코스피는 장중 6% 이상 급락해 매도 사이드카가 발동됐으나, 오후에 개인 매수세가 유입되며 일부 회복했다.\nLet me check character count:\n잠실 투표소에서 투표용지 부족 사태가 발생해 경찰이 시위대를 해산하고 투표함을 이송하는 과정에서 충돌이 있었으며, 노태학 중앙선거관리위원장이 오늘 오후 4시 대국민 사과를 할 예정이다. 젠슨황 엔비디아 CEO가 7개월 만에 한국을 방문해 최태원 SK회장 등 국내 기업인들과 만남을 가질 예정이다. 코스피는 장중 6% 이상 급락해 매도 사이드카가 발동됐으나, 오후에 개인 매수세가 유입되며 일부 회복했다.\nCounting: approximately 240 characters. That's too short. The user asked for 500 characters \"내외\" (around 500), so 400-600 range is acceptable. Let me expand slightly.\nRevised:\n잠실 투표소에서 초유의 투표용지 부족 사태가 발생해 경찰이 시위대를 강제 해산하고 투표함을 개표소로 이송하는 과정에서 충돌이 빚어졌으며, 노태학 중앙선거관리위원장이 오늘 오후 4시 대국민 사과를 할 예정이다. 젠슨황 엔비디아 CEO가 7개월 만에 한국을 방문해 나흘간 일정을 소화하며, 최태원 SK회장 등 국내 주요 기업인들과 삼겹살 회동을 할 예정이다. 코스피는 장중 6% 이상 급락해 매도 사이드카가 발동됐으나, 간밤에 뉴욕 증시에서 반도체주가 급락한 영향으로 개인 매수세가 유입되며 지수를 일부 회복했다.\nCharacter count check:\n잠실 투표소에서 초유의 투표용지 부족 사태가 발생해 경찰이 시위대를 강제 해산하고 투표함을 개표소로 이송하는 과정에서 충돌이 빚어졌으며, 노태학 중앙선거관리위원장이 오늘 오후 4시 대국민 사과를 할 예정이다. 젠슨황 엔비디아 CEO가 7개월 만에 한국을 방문해 나�",
+          "analysis_source": "subtitle",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "투표용지 부족 사태",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "선관위 대국민사과",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "환율 상승 원인",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "젠슨 황 한국 방문",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "코스피 8000 경고음",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "주당 근력 운동 시간",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "생과일주스 정신 건강",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "국힘 장동혁 재신임",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "HBM4 자격 획득",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "TIGER 미국우주테크 ETF",
+      "is_fixed": false,
+      "views": [
+        245
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "[미국우주테크 주가 전망] 스페이스X 6월 상장 임박·5월 수익률 88% 1위, 두 배 폭등 후 조정 지금 탈까 #미국우주테크주가전망 #미국우주테크목표가 #미국우주테크",
+          "video_id": "RgtB9fFI6Sk",
+          "views": 245,
+          "upload_date": "2026-06-05",
+          "url": "https://www.youtube.com/watch?v=RgtB9fFI6Sk",
+          "subtitle_summary": "The user wants a summary of a YouTube video transcript about a US space tech ETF (Tiger US Space Tech) in Korean, around 500 characters, with 3-5 sentences capturing the key points.\nKey points from the transcript:\n1. Tiger US Space Tech ETF is rising due to expectations of SpaceX going public in June\n2. It's the 1 space/aerospace ETF in Korea by net assets (2.1295 trillion won)\n3. It had explosive growth - doubled from 9,475 won (May 6) to 19,545 won, then corrected to around 14,860 won\n4. May return was 88%, ranking 1 among all ETFs\n5. However, it's a volatile position after doubling in short term, with high deviation between market price and actual asset value\n6. Since it doesn't hold SpaceX directly but moves on expectations, timing risk exists if listing is delayed\nI need to summarize this in 3-5 sentences, around 500 characters, in Korean only.\nDraft:\n타이거 미국 우주테크 ETF는 스페이스X 6월 상장 기대감과 국내 우주항공 ETF 순자산 1위(2조 1,295억 원) 자리에 힘입어 5월 수익률 88%로 전체 ETF 1위를 기록하며 단기에 두 배 가까이 급등했습니다. 하지만 현재는 고점 대비 조정을 받아 14,000원대에서 거래되며 변동성이 극심한 상황으로, 단기 과열로 인한 괴리율 확대 우려도 제기되고 있습니다. 특히 이 ETF는 스페이스X를 직접 보유하지 않고 기대감으로 움직이므로 상장 일정이 변경될 경우 급락 위험이 크고, 9,000원대 바닥 대비 여전히 고점인 만큼 신규 진입은 신중해야 합니다.\nCharacter count check:\n타이거 미국 우주테크 ETF는 스페이스X 6월 상장 기대감과 국내 우주항공 ETF 순자산 1위(2조 1,295억 원) 자리에 힘입어 5월 수익률 88%로 전체 ETF 1위를 기록하며 단기에 두 배 가까이 급등했습니다. 하지만 현재는 고점 대비 조정을 받아 14,000원대에서 거래되며 변동성이 극심한 상황으로, 단기 과열로 인한 괴리율 확대 우려도 제기되고 있습니다. 특히 이 ETF는 스페이스X를 직접 보유하지 않고 기대감으로 움직이므로 상장 일정이 변경될 경우 급락 위험이 크고, 9,000원대 바닥 대비 여전히 고점인 만큼 신규 진입은 신중해야 합니다.\nCount: approximately 280 characters. That's too short. The user asked for around 500 characters (500자 내외). Let me expand.\nRevised:\n타이거 미국 우주테크 ETF는 스페이스X의 6월 상장 기대감과 국내 우주항공 ETF 순자산 1위(2조 1,295억 원)라는 호재에 힘입어 5월 한 달간 수익률 88%를 기록하며 전체 ETF 중 1위를 차지했고, 5월 초 9,475원에서 19,545원까지 단기에 두 배 가까이 급등하는 폭발적인 상승세를 보였습니다. 그러나 현재는 고점 대비 조정을 받아 14,000원대에서 거래되고 있으며, 단기 급등으로 인해 시장 가격이 실제 자산 가치보다 비싼 괴리율 확대 우려가 제기되고 있어 변동성이 매우 큰 상황입니다. 더욱이 이 ETF는 스페이스X를 직접 보유한 것이 아니라 상장 기대감으로 움직이는 만큼, 상장 일정이 지연되거나 변경�",
+          "analysis_source": "subtitle",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "공공대출권 도입 논의",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "ESG 성과급 논란",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "치솟는 원화 환율",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    }
+  ]
+}

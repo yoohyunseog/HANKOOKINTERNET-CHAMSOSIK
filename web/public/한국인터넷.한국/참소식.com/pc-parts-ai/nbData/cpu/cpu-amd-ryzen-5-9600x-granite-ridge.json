@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-06-01T15:15:36.642+09:00",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
   "category": "CPU",
   "id": "cpu-amd-ryzen-5-9600x-granite-ridge",
   "name": "AMD Ryzen 5 9600X (Granite Ridge)",
@@ -81,9 +81,5 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=AMD%20Ryzen%205%209600X%20%EC%A0%95%ED%92%88%20%EC%B5%9C%EC%A0%80%EA%B0%80",
   "notes": "6-core, 12-thread Zen 5 processor",
-  "textRepair": null,
-  "sourceType": "collector",
-  "sourceQuery": "",
-  "collectedPricesKrw": [],
-  "targetMatched": null
+  "textRepair": null
 }

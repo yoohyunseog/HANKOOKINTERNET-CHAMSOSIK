@@ -1,0 +1,86 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
+  "category": "PSU",
+  "id": "psu-vertex-gx-1200-gold-atx3.1",
+  "name": "VERTEX GX-1200 GOLD 풀모듈러 ATX3.1",
+  "maker": "Seasonic",
+  "platform": "ATX",
+  "estimatedPriceKrw": 398000,
+  "priceBand": "30~60만원",
+  "speedLabel": "80 PLUS GOLD",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "PSU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 75,
+  "valueIndex": 18.8,
+  "aiUseScore": 49,
+  "powerWatts": 1200,
+  "tags": [
+    "full-modular",
+    "ATX3.1",
+    "PCIe 5.1"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "PSU",
+    "partId": "psu-vertex-gx-1200-gold-atx3.1",
+    "partName": "VERTEX GX-1200 GOLD 풀모듈러 ATX3.1",
+    "speed": {
+      "score": 100,
+      "weight": 0.32,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "PSU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 750,
+      "value": 251,
+      "aiFit": 490,
+      "priceEfficiency": 250,
+      "powerEfficiency": 100
+    },
+    "nbVector": [
+      100,
+      750,
+      251,
+      490,
+      250,
+      100
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 153.842,
+    "nbMin": 365.483,
+    "weightedScore": 292,
+    "nbBand": "100~499",
+    "summary": "PSU VERTEX GX-1200 GOLD 풀모듈러 ATX3.1 부품을 속도 중심 N/B 데이터베이스 점수 292점으로 저장했습니다."
+  },
+  "nbWeightedScore": 292,
+  "nbMax": 153.842,
+  "nbMin": 365.483,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Seasonic%20Vertex%20GX-1200%20Gold%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "ATX 3.1 certified, 12V2x6 connector, 12-year warranty",
+  "textRepair": null
+}

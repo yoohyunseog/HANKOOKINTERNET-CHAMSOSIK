@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-06-01T15:15:41.405+09:00",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
   "category": "Mainboard",
   "id": "mainboard-asrock-b650-steel-legend-wifi",
   "name": "ASRock B650 Steel Legend WiFi",
@@ -21,7 +21,7 @@
   "performance": 75,
   "valueIndex": 26.3,
   "aiUseScore": 49,
-  "powerWatts": 0,
+  "powerWatts": null,
   "tags": [
     "B650",
     "WiFi"
@@ -81,9 +81,5 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=B650%20%EB%A9%94%EC%9D%B8%EB%B3%B4%EB%93%9C%20%EC%B6%94%EC%B2%9C",
   "notes": "Observed price from Danawa search results.",
-  "textRepair": null,
-  "sourceType": "collector",
-  "sourceQuery": "",
-  "collectedPricesKrw": [],
-  "targetMatched": null
+  "textRepair": null
 }

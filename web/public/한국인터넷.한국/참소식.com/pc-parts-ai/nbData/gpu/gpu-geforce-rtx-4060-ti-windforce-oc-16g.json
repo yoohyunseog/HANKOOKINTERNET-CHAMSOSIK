@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-06-01T15:15:38.473+09:00",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
   "category": "GPU",
   "id": "gpu-geforce-rtx-4060-ti-windforce-oc-16g",
   "name": "GeForce RTX 4060 Ti WINDFORCE OC 16G",
@@ -80,9 +80,5 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=RTX%204060%20Ti%2016GB%20%EC%B5%9C%EC%A0%80%EA%B0%80",
   "notes": "The search result listed a price of 3,571,200 KRW which is an obvious outlier/error for this model; estimated price adjusted to reasonable market value.",
-  "textRepair": null,
-  "sourceType": "collector",
-  "sourceQuery": "",
-  "collectedPricesKrw": [],
-  "targetMatched": null
+  "textRepair": null
 }

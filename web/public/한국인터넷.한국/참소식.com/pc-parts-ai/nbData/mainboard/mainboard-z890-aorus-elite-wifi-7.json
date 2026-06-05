@@ -1,0 +1,86 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
+  "category": "Mainboard",
+  "id": "mainboard-z890-aorus-elite-wifi-7",
+  "name": "Z890 AORUS ELITE WIFI 7",
+  "maker": "Gigabyte",
+  "platform": "Intel LGA1851",
+  "estimatedPriceKrw": 550000,
+  "priceBand": "30~60만원",
+  "speedLabel": "DDR5 9200MHz",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "Mainboard",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 85,
+  "valueIndex": 15.5,
+  "aiUseScore": 55,
+  "powerWatts": null,
+  "tags": [
+    "WiFi 7",
+    "Z890",
+    "ATX"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "Mainboard",
+    "partId": "mainboard-z890-aorus-elite-wifi-7",
+    "partName": "Z890 AORUS ELITE WIFI 7",
+    "speed": {
+      "score": 100,
+      "weight": 0.32,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "Mainboard",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 850,
+      "value": 207,
+      "aiFit": 550,
+      "priceEfficiency": 180,
+      "powerEfficiency": 850
+    },
+    "nbVector": [
+      100,
+      850,
+      207,
+      550,
+      180,
+      850
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 268.333,
+    "nbMin": 377.813,
+    "weightedScore": 351,
+    "nbBand": "100~499",
+    "summary": "Mainboard Z890 AORUS ELITE WIFI 7 부품을 속도 중심 N/B 데이터베이스 점수 351점으로 저장했습니다."
+  },
+  "nbWeightedScore": 351,
+  "nbMax": 268.333,
+  "nbMin": 377.813,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Gigabyte%20Z890%20AORUS%20Elite%20WiFi%20price",
+  "notes": "Intel Z890 chipset, Socket 1851, supports DDR5 up to 9200MHz, PCIe 5.0 x16",
+  "textRepair": null
+}

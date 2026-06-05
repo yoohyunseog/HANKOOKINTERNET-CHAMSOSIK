@@ -1,0 +1,86 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
+  "category": "PSU",
+  "id": "psu-corsair-rm1000x-shift-80plus-gold-full-modular-atx-3.0",
+  "name": "Corsair RM1000x SHIFT 80PLUS Gold Full Modular ATX 3.0",
+  "maker": "Corsair",
+  "platform": "ATX",
+  "estimatedPriceKrw": 263850,
+  "priceBand": "15~30만원",
+  "speedLabel": "80PLUS Gold",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "PSU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 75,
+  "valueIndex": 28.4,
+  "aiUseScore": 49,
+  "powerWatts": 1000,
+  "tags": [
+    "ATX 3.0",
+    "Full Modular",
+    "Shift"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "PSU",
+    "partId": "psu-corsair-rm1000x-shift-80plus-gold-full-modular-atx-3.0",
+    "partName": "Corsair RM1000x SHIFT 80PLUS Gold Full Modular ATX 3.0",
+    "speed": {
+      "score": 100,
+      "weight": 0.32,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "PSU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 750,
+      "value": 379,
+      "aiFit": 490,
+      "priceEfficiency": 380,
+      "powerEfficiency": 100
+    },
+    "nbVector": [
+      100,
+      750,
+      379,
+      490,
+      380,
+      100
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 207.846,
+    "nbMin": 380.508,
+    "weightedScore": 320,
+    "nbBand": "100~499",
+    "summary": "PSU Corsair RM1000x SHIFT 80PLUS Gold Full Modular ATX 3.0 부품을 속도 중심 N/B 데이터베이스 점수 320점으로 저장했습니다."
+  },
+  "nbWeightedScore": 320,
+  "nbMax": 207.846,
+  "nbMin": 380.508,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Corsair%20RM1000x%2080PLUS%20Gold%20Full%20Modular%20ATX%203.0%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "Features side-connection cables for easier cable management.",
+  "textRepair": null
+}

@@ -1,0 +1,85 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
+  "category": "Mainboard",
+  "id": "mainboard-gigabyte-b650m-k",
+  "name": "GIGABYTE B650M K",
+  "maker": "GIGABYTE",
+  "platform": "AM5",
+  "estimatedPriceKrw": 125000,
+  "priceBand": "15만원 미만",
+  "speedLabel": "DDR5",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "Mainboard",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 50,
+  "valueIndex": 40,
+  "aiUseScore": 33,
+  "powerWatts": null,
+  "tags": [
+    "B650",
+    "mATX"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "Mainboard",
+    "partId": "mainboard-gigabyte-b650m-k",
+    "partName": "GIGABYTE B650M K",
+    "speed": {
+      "score": 100,
+      "weight": 0.32,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "Mainboard",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 500,
+      "value": 533,
+      "aiFit": 330,
+      "priceEfficiency": 800,
+      "powerEfficiency": 500
+    },
+    "nbVector": [
+      100,
+      500,
+      533,
+      330,
+      800,
+      500
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 309.303,
+    "nbMin": 383.75,
+    "weightedScore": 334,
+    "nbBand": "100~499",
+    "summary": "Mainboard GIGABYTE B650M K 부품을 속도 중심 N/B 데이터베이스 점수 334점으로 저장했습니다."
+  },
+  "nbWeightedScore": 334,
+  "nbMax": 309.303,
+  "nbMin": 383.75,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Gigabyte%20B650M%20K%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "Rev 1.1 updates power delivery and memory support.",
+  "textRepair": null
+}

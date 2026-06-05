@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-06-01T15:15:41.826+09:00",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
   "category": "SSD",
   "id": "ssd-crucial-t705-4tb-heatsink",
   "name": "Crucial T705 4TB Heatsink",
@@ -21,7 +21,7 @@
   "performance": 100,
   "valueIndex": 9.7,
   "aiUseScore": 65,
-  "powerWatts": 0,
+  "powerWatts": null,
   "tags": [
     "NVMe",
     "Heatsink"
@@ -81,9 +81,5 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Crucial%20T705%204TB%20Heatsink%20%EC%B5%9C%EC%A0%80%EA%B0%80",
   "notes": "High-performance PCIe 5.0 SSD with integrated heatsink.",
-  "textRepair": null,
-  "sourceType": "collector",
-  "sourceQuery": "",
-  "collectedPricesKrw": [],
-  "targetMatched": null
+  "textRepair": null
 }

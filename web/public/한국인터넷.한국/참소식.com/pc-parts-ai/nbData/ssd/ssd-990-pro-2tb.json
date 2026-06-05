@@ -1,0 +1,85 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
+  "category": "SSD",
+  "id": "ssd-990-pro-2tb",
+  "name": "990 PRO 2TB",
+  "maker": "Samsung",
+  "platform": "PCIe 4.0",
+  "estimatedPriceKrw": 270000,
+  "priceBand": "15~30만원",
+  "speedLabel": "Gen 4",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "SSD",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 95,
+  "valueIndex": 35.2,
+  "aiUseScore": 62,
+  "powerWatts": 8,
+  "tags": [
+    "high-end",
+    "gaming"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "SSD",
+    "partId": "ssd-990-pro-2tb",
+    "partName": "990 PRO 2TB",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "SSD",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 950,
+      "value": 469,
+      "aiFit": 620,
+      "priceEfficiency": 370,
+      "powerEfficiency": 1000
+    },
+    "nbVector": [
+      100,
+      950,
+      469,
+      620,
+      370,
+      1000
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 338.813,
+    "nbMin": 365.326,
+    "weightedScore": 449,
+    "nbBand": "100~499",
+    "summary": "SSD 990 PRO 2TB 부품을 속도 중심 N/B 데이터베이스 점수 449점으로 저장했습니다."
+  },
+  "nbWeightedScore": 449,
+  "nbMax": 338.813,
+  "nbMin": 365.326,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Samsung%20990%20PRO%202TB%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "Top-tier PCIe 4.0 NVMe SSD.",
+  "textRepair": null
+}

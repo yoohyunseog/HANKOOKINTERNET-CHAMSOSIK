@@ -1,0 +1,85 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
+  "category": "Mainboard",
+  "id": "mainboard-prime-b650m-a-ii",
+  "name": "PRIME B650M-A II",
+  "maker": "ASUS",
+  "platform": "AMD AM5",
+  "estimatedPriceKrw": 136630,
+  "priceBand": "15만원 미만",
+  "speedLabel": "B650",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "Mainboard",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 60,
+  "valueIndex": 43.9,
+  "aiUseScore": 39,
+  "powerWatts": null,
+  "tags": [
+    "budget",
+    "mATX"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "Mainboard",
+    "partId": "mainboard-prime-b650m-a-ii",
+    "partName": "PRIME B650M-A II",
+    "speed": {
+      "score": 100,
+      "weight": 0.32,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "Mainboard",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 600,
+      "value": 585,
+      "aiFit": 390,
+      "priceEfficiency": 730,
+      "powerEfficiency": 600
+    },
+    "nbVector": [
+      100,
+      600,
+      585,
+      390,
+      730,
+      600
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 449.607,
+    "nbMin": 376.425,
+    "weightedScore": 367,
+    "nbBand": "100~499",
+    "summary": "Mainboard PRIME B650M-A II 부품을 속도 중심 N/B 데이터베이스 점수 367점으로 저장했습니다."
+  },
+  "nbWeightedScore": 367,
+  "nbMax": 449.607,
+  "nbMin": 376.425,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=B650%20Mainboard%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "Distributed by Daewon CTS",
+  "textRepair": null
+}

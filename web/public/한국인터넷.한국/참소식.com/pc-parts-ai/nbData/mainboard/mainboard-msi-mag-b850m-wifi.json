@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-06-01T15:15:41.537+09:00",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
   "category": "Mainboard",
   "id": "mainboard-msi-mag-b850m-wifi",
   "name": "MSI MAG B850M 박격포 WIFI",
@@ -21,7 +21,7 @@
   "performance": 75,
   "valueIndex": 27.9,
   "aiUseScore": 49,
-  "powerWatts": 0,
+  "powerWatts": null,
   "tags": [
     "m-atx",
     "wifi"
@@ -81,9 +81,5 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=MSI%20MAG%20B650M%20%EB%B0%95%EA%B2%A9%ED%8F%AC%20WIFI%20%EC%B5%9C%EC%A0%80%EA%B0%80",
   "notes": "Newer generation B850 chipset model found in search results.",
-  "textRepair": null,
-  "sourceType": "collector",
-  "sourceQuery": "",
-  "collectedPricesKrw": [],
-  "targetMatched": null
+  "textRepair": null
 }

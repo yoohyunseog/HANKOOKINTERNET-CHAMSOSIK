@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-06-01T15:15:40.638+09:00",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
   "category": "GPU",
   "id": "gpu-radeon-rx-9060-xt-pulse-oc-d6-16gb",
   "name": "Radeon RX 9060 XT PULSE OC D6 16GB",
@@ -21,7 +21,7 @@
   "performance": 70,
   "valueIndex": 10.8,
   "aiUseScore": 46,
-  "powerWatts": 0,
+  "powerWatts": null,
   "tags": [
     "gaming"
   ],
@@ -80,9 +80,5 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=AMD%20%EB%9D%BC%EB%8D%B0%EC%98%A8%20RX%208000%20%EC%8B%9C%EB%A6%AC%EC%A6%88%20%EC%B5%9C%EC%A0%80%EA%B0%80",
   "notes": "Found in shopping guide as a cost-effective option.",
-  "textRepair": null,
-  "sourceType": "collector",
-  "sourceQuery": "",
-  "collectedPricesKrw": [],
-  "targetMatched": null
+  "textRepair": null
 }

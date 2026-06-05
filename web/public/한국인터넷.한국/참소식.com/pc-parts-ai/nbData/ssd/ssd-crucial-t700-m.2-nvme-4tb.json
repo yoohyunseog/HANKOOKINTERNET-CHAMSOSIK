@@ -1,0 +1,85 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
+  "category": "SSD",
+  "id": "ssd-crucial-t700-m.2-nvme-4tb",
+  "name": "Crucial T700 M.2 NVMe 4TB",
+  "maker": "Crucial",
+  "platform": "PCIe 5.0",
+  "estimatedPriceKrw": 1148850,
+  "priceBand": "60만원 이상",
+  "speedLabel": "12,400MB/s",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "SSD",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 98,
+  "valueIndex": 8.5,
+  "aiUseScore": 64,
+  "powerWatts": null,
+  "tags": [
+    "Gen5",
+    "high-performance"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "SSD",
+    "partId": "ssd-crucial-t700-m.2-nvme-4tb",
+    "partName": "Crucial T700 M.2 NVMe 4TB",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "SSD",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 980,
+      "value": 113,
+      "aiFit": 640,
+      "priceEfficiency": 90,
+      "powerEfficiency": 980
+    },
+    "nbVector": [
+      100,
+      980,
+      113,
+      640,
+      90,
+      980
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 236.98,
+    "nbMin": 357.444,
+    "weightedScore": 384,
+    "nbBand": "100~499",
+    "summary": "SSD Crucial T700 M.2 NVMe 4TB 부품을 속도 중심 N/B 데이터베이스 점수 384점으로 저장했습니다."
+  },
+  "nbWeightedScore": 384,
+  "nbMax": 236.98,
+  "nbMin": 357.444,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Crucial%20T700%204TB%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "PCIe 5.0 x4, TLC, DRAM cached",
+  "textRepair": null
+}

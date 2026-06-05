@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-06-01T15:15:37.125+09:00",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
   "category": "GPU",
   "id": "gpu-rtx-4090-gamerock-d6x-24gb",
   "name": "이엠텍 지포스 RTX 4090 GAMEROCK D6X 24GB",
@@ -82,9 +82,5 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=%EC%9D%B4%EC%97%A0%ED%85%8D%20%EC%A7%80%ED%8F%AC%EC%8A%A4%20RTX%204090%20%EC%B5%9C%EC%A0%80%EA%B0%80",
   "notes": "GAMEROCK model",
-  "textRepair": null,
-  "sourceType": "collector",
-  "sourceQuery": "",
-  "collectedPricesKrw": [],
-  "targetMatched": null
+  "textRepair": null
 }

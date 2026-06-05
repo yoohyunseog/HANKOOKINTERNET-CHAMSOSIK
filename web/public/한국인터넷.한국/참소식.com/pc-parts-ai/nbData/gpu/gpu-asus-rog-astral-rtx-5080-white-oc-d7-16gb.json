@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-06-01T15:15:37.697+09:00",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
   "category": "GPU",
   "id": "gpu-asus-rog-astral-rtx-5080-white-oc-d7-16gb",
   "name": "ASUS ROG Astral 지포스 RTX 5080 WHITE OC D7 16GB",
@@ -21,7 +21,7 @@
   "performance": 95,
   "valueIndex": 3,
   "aiUseScore": 95,
-  "powerWatts": 0,
+  "powerWatts": null,
   "tags": [
     "gaming",
     "ai",
@@ -82,9 +82,5 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=ASUS%20ROG%20Astral%20%EC%A7%80%ED%8F%AC%EC%8A%A4%20RTX%205080%20WHITE%20OC%20%EC%B5%9C%EC%A0%80%EA%B0%80",
   "notes": "4-fan cooler, GDDR7, 16-pin (12V2x6) power connector",
-  "textRepair": null,
-  "sourceType": "collector",
-  "sourceQuery": "",
-  "collectedPricesKrw": [],
-  "targetMatched": null
+  "textRepair": null
 }

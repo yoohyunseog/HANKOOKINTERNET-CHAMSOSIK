@@ -1,0 +1,85 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
+  "category": "RAM",
+  "id": "ram-ddr5-7200-cl58-cudimm-16gb",
+  "name": "DDR5-7200 CL58 CUDIMM 16GB",
+  "maker": "삼성전자",
+  "platform": "LGA1851/AM5",
+  "estimatedPriceKrw": 403400,
+  "priceBand": "30~60만원",
+  "speedLabel": "7200MHz",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "RAM",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 95,
+  "valueIndex": 23.5,
+  "aiUseScore": 62,
+  "powerWatts": null,
+  "tags": [
+    "high-speed",
+    "CUDIMM"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "RAM",
+    "partId": "ram-ddr5-7200-cl58-cudimm-16gb",
+    "partName": "DDR5-7200 CL58 CUDIMM 16GB",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "RAM",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 950,
+      "value": 313,
+      "aiFit": 620,
+      "priceEfficiency": 250,
+      "powerEfficiency": 950
+    },
+    "nbVector": [
+      100,
+      950,
+      313,
+      620,
+      250,
+      950
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 302.292,
+    "nbMin": 370.047,
+    "weightedScore": 415,
+    "nbBand": "100~499",
+    "summary": "RAM DDR5-7200 CL58 CUDIMM 16GB 부품을 속도 중심 N/B 데이터베이스 점수 415점으로 저장했습니다."
+  },
+  "nbWeightedScore": 415,
+  "nbMax": 302.292,
+  "nbMin": 370.047,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90%20DDR5-6000%20RAM%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "CUDIMM module for next-gen platforms",
+  "textRepair": null
+}

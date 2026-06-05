@@ -1,0 +1,84 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
+  "category": "GPU",
+  "id": "gpu-radeon-rx-7900-xt-gaming",
+  "name": "Radeon RX 7900 XT Gaming",
+  "maker": "Sapphire",
+  "platform": "RDNA 3",
+  "estimatedPriceKrw": 1418630,
+  "priceBand": "60만원 이상",
+  "speedLabel": "GDDR6",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "GPU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 85,
+  "valueIndex": 6,
+  "aiUseScore": 55,
+  "powerWatts": 300,
+  "tags": [
+    "gaming"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "GPU",
+    "partId": "gpu-radeon-rx-7900-xt-gaming",
+    "partName": "Radeon RX 7900 XT Gaming",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "GPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 850,
+      "value": 100,
+      "aiFit": 550,
+      "priceEfficiency": 70,
+      "powerEfficiency": 100
+    },
+    "nbVector": [
+      100,
+      850,
+      100,
+      550,
+      70,
+      100
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 109.439,
+    "nbMin": 308.42,
+    "weightedScore": 293,
+    "nbBand": "100~499",
+    "summary": "GPU Radeon RX 7900 XT Gaming 부품을 속도 중심 N/B 데이터베이스 점수 293점으로 저장했습니다."
+  },
+  "nbWeightedScore": 293,
+  "nbMax": 109.439,
+  "nbMin": 308.42,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=AMD%20Radeon%20RX%207900%20XT%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "Based on search result: Sapphire 21323-01-20G AMD Radeon RX 7900 XT",
+  "textRepair": null
+}

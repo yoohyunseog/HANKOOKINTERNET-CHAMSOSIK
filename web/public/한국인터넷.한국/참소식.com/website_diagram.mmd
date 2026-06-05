@@ -1,8 +1,76 @@
 flowchart TD
-    A[참소식.com | 실시간 이슈 맵 RSS]
-    A --> B[Main Page]
-    A --> C[Content Area]
-    B --> D[Navigation]
-    C --> E[Data Section]
-    classDef mainStyle fill:#667eea,stroke:#333,color:#fff
-    class A mainStyle
+    A[KOSPI: 8,639.41]
+    B[KOSPI_설명: 한국거래소에 상장된 주식들의 종합적인 시장 동향을 보여주는 코스피 지수의 실시간 현재가를 확인하는 검색어입니다. 주식 시장의 전반적인 흐름을 파악할 수 있습니다.]
+    C[KOSDAQ: 1,049.73]
+    D[KOSDAQ_설명: 중소·벤처기업 중심의 코스닥 시장 전체를 대표하는 지수의 실시간 현재가를 조회하는 검색어입니다. 기술주와 성장주의 움직임을 확인할 수 있습니다.]
+    E[S&P500: 421.21]
+    F[S&P500_설명: 미국 500대 대형 기업의 주가를 반영하는 S&P500 지수의 실시간 현재가를 확인하는 검색어입니다. 미국 주식 시장의 전반적인 건전성을 측정하는 핵심 지표입니다.]
+    G[NASDAQ: 421.00]
+    H[NASDAQ_설명: 기술주 중심의 미국 나스닥 시장을 대표하는 지수의 실시간 현재가를 조회하는 검색어입니다. 애플, 마이크로소프트 등 IT 대형주들의 동향을 파악할 수 있습니다.]
+    I[DOWJONES: 420.36]
+    J[DOWJONES_설명: 미국 30개 우량 대형 기업으로 구성된 다우존스 산업평균지수의 실시간 현재가를 확인하는 검색어입니다. 블루칩 중심의 전통적인 미국 경기를 반영합니다.]
+    K[Bitcoin: $63,164.36]
+    L[Bitcoin_설명: 세계 최대 암호화폐인 비트코인의 실시간 현재 가격을 조회하는 검색어입니다. 글로벌 암호화폐 시장의 대표적인 지표로 활용됩니다.]
+    M[Ethereum: $1,761.65]
+    N[Ethereum_설명: 스마트 계약 플랫폼으로 유명한 이더리움의 실시간 현재 가격을 확인하는 검색어입니다. 비트코인 다음으로 시가총액이 큰 알트코인의 시세를 파악할 수 있습니다.]
+    O[USD/KRW: 1,532.40]
+    P[USD/KRW_설명: 미국 달러와 대한민국 원 간의 환율 실시간 시세를 조회하는 검색어입니다. 수출입 기업의 수익성과 외국인 투자자금 유출입에 영향을 미치는 핵심 외환 지표입니다.]
+    Q[Gold: 2026.06]
+    R[Gold_설명: 원화 기준 금(g 또는 oz 단위)의 실시간 현재 가격을 확인하는 검색어입니다. 안전자산으로 불리는 귀금속의 시세 변동을 추적할 수 있습니다.]
+    S[KOSPI_KRW: 8,639]
+    T[KOSPI_KRW_설명: 원화 기준으로 환산된 코스피 지수의 실시간 현재가를 조회하는 검색어입니다. 환율 변동을 반영한 국내 주식 시장의 실질 가치를 확인할 수 있습니다.]
+    U[KOSDAQ_KRW: 1,049]
+    V[KOSDAQ_KRW_설명: 원화 기준으로 표시된 코스닥 지수의 실시간 현재가를 확인하는 검색어입니다. 원화 가치 기준의 중소형주 시장 동향을 파악할 수 있습니다.]
+    W[S&P500_KRW: 645,462]
+    X[S&P500_KRW_설명: 원화로 환산된 S&P500 지수의 실시간 현재가를 조회하는 검색어입니다. 환율 변동을 고려한 미국 대형주 포트폴리오의 원화 기준 가치를 확인할 수 있습니다.]
+    Y[NASDAQ_KRW: 645,140]
+    Z[NASDAQ_KRW_설명: 원화 기준으로 환산된 나스닥 지수의 실시간 현재가를 확인하는 검색어입니다. 환율 리스크를 포함한 미국 기술주 시장의 원화 가치를 파악할 수 있습니다.]
+    AA[DOWJONES_KRW: 644,159]
+    AB[DOWJONES_KRW_설명: 원화로 환산된 다우존스 지수의 실시간 현재가를 조회하는 검색어입니다. 원/달러 환율을 반영한 미국 우량주 시장의 실질 수익률을 확인할 수 있습니다.]
+    AC[Bitcoin_KRW: 96,793,065]
+    AD[Bitcoin_KRW_설명: 원화 기준 비트코인의 실시간 현재 가격을 확인하는 검색어입니다. 국내 암호화폐 거래소에서 거래되는 비트코인의 원화 시세를 파악할 수 있습니다.]
+    AE[Ethereum_KRW: 2,699,552]
+    AF[Ethereum_KRW_설명: 원화로 표시된 이더리움의 실시간 현재 가격을 조회하는 검색어입니다. 국내 시장 기준 이더리움의 실시간 거래 가격을 확인할 수 있습니다.]
+
+    A -- [중요] --> B
+    C -- [중요] --> D
+    E -- [중요] --> F
+    G -- [중요] --> H
+    I -- [중요] --> J
+    K -- [중요] --> L
+    M -- [중요] --> N
+    O -- [중요] --> P
+    Q -- [중요] --> R
+    S -- [중요] --> T
+    U -- [중요] --> V
+    W -- [중요] --> X
+    Y -- [중요] --> Z
+    AA -- [중요] --> AB
+    AC -- [중요] --> AD
+    AE -- [중요] --> AF
+
+    A -- [보통] --> S
+    C -- [보통] --> U
+    E -- [보통] --> W
+    G -- [보통] --> Y
+    I -- [보통] --> AA
+    K -- [보통] --> AC
+    M -- [보통] --> AE
+
+    O -- [보통] --> S
+    O -- [보통] --> U
+    O -- [보통] --> W
+    O -- [보통] --> Y
+    O -- [보통] --> AA
+    O -- [보통] --> AC
+    O -- [보통] --> AE
+
+    B -- [보통] --> D
+    F -- [보통] --> H
+    H -- [보통] --> J
+    L -- [보통] --> N
+    R -- [보통] --> P
+    B -- [보통] --> F
+    P -- [보통] --> F
+
+{"edges": [{"source": "A", "target": "B", "importance": 100}, {"source": "C", "target": "D", "importance": 100}, {"source": "E", "target": "F", "importance": 100}, {"source": "G", "target": "H", "importance": 100}, {"source": "I", "target": "J", "importance": 100}, {"source": "K", "target": "L", "importance": 100}, {"source": "M", "target": "N", "importance": 100}, {"source": "O", "target": "P", "importance": 100}, {"source": "Q", "target": "R", "importance": 100}, {"source": "S", "target": "T", "importance": 100}, {"source": "U", "target": "V", "importance": 100}, {"source": "W", "target": "X", "importance": 100}, {"source": "Y", "target": "Z", "importance": 100}, {"source": "AA", "target": "AB", "importance": 100}, {"source": "AC", "target": "AD", "importance": 100}, {"source": "AE", "target": "AF", "importance": 100}, {"source": "A", "target": "S", "importance": 50}, {"source": "C", "target": "U", "importance": 50}, {"source": "E", "target": "W", "importance": 50}, {"source": "G", "target": "Y", "importance": 50}, {"source": "I", "target": "AA", "importance": 50}, {"source": "K", "target": "AC", "importance": 50}, {"source": "M", "target": "AE", "importance": 50}, {"source": "O", "target": "S", "importance": 50}, {"source": "O", "target": "U", "importance": 50}, {"source": "O", "target": "W", "importance": 50}, {"source": "O", "target": "Y", "importance": 50}, {"source": "O", "target": "AA", "importance": 50}, {"source": "O", "target": "AC", "importance"

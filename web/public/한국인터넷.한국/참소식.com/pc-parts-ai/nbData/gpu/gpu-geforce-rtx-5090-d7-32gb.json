@@ -1,0 +1,86 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
+  "category": "GPU",
+  "id": "gpu-geforce-rtx-5090-d7-32gb",
+  "name": "GeForce RTX 5090 D7 32GB",
+  "maker": "NVIDIA",
+  "platform": "PCIe 5.0",
+  "estimatedPriceKrw": 7500000,
+  "priceBand": "60만원 이상",
+  "speedLabel": "D7",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "GPU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 100,
+  "valueIndex": 1.3,
+  "aiUseScore": 100,
+  "powerWatts": 600,
+  "tags": [
+    "gaming",
+    "ai",
+    "high-end"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "GPU",
+    "partId": "gpu-geforce-rtx-5090-d7-32gb",
+    "partName": "GeForce RTX 5090 D7 32GB",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "GPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 1000,
+      "value": 100,
+      "aiFit": 1000,
+      "priceEfficiency": 10,
+      "powerEfficiency": 100
+    },
+    "nbVector": [
+      100,
+      1000,
+      100,
+      1000,
+      10,
+      100
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 172.223,
+    "nbMin": 291.317,
+    "weightedScore": 363,
+    "nbBand": "100~499",
+    "summary": "GPU GeForce RTX 5090 D7 32GB 부품을 속도 중심 N/B 데이터베이스 점수 363점으로 저장했습니다."
+  },
+  "nbWeightedScore": 363,
+  "nbMax": 172.223,
+  "nbMin": 291.317,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=RTX%205090%20%EC%B6%9C%EC%8B%9C%EC%9D%BC%20%EA%B0%80%EA%B2%A9",
+  "notes": "Based on multiple vendor listings (INNO3D, ASUS, GIGABYTE, MSI) showing 32GB VRAM and prices ranging from approx 6.8M to 8.2M KRW.",
+  "textRepair": null
+}

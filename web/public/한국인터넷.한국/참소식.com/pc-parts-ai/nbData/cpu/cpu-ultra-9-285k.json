@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-06-01T15:15:36.433+09:00",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
   "category": "CPU",
   "id": "cpu-ultra-9-285k",
   "name": "인텔 코어 Ultra 9 285K",
@@ -82,9 +82,5 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=%EC%9D%B8%ED%85%94%20%EC%BD%94%EC%96%B4%20Ultra%209%20285K%20%EC%B5%9C%EC%A0%80%EA%B0%80",
   "notes": "Arrow Lake series, bulk version price observed.",
-  "textRepair": null,
-  "sourceType": "collector",
-  "sourceQuery": "",
-  "collectedPricesKrw": [],
-  "targetMatched": null
+  "textRepair": null
 }

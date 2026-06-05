@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-06-01T15:15:41.546+09:00",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
   "category": "Mainboard",
   "id": "mainboard-msi-mag-x870e-tomahawk-wifi",
   "name": "MSI MAG X870E TOMAHAWK WIFI",
@@ -21,7 +21,7 @@
   "performance": 95,
   "valueIndex": 14.6,
   "aiUseScore": 62,
-  "powerWatts": 0,
+  "powerWatts": null,
   "tags": [
     "high-end",
     "wifi7",
@@ -82,9 +82,5 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=AMD%20%EB%9D%BC%EC%9D%B4%EC%A0%A0%209%209950X%20%EB%A9%94%EC%9D%B8%EB%B3%B4%EB%93%9C%20%EC%B6%94%EC%B2%9C",
   "notes": "Identified from bundle listings (Ryzen 9 9950X + MSI MAG X870E Tomahawk WiFi). Price is estimated as it appeared in a CPU bundle.",
-  "textRepair": null,
-  "sourceType": "collector",
-  "sourceQuery": "",
-  "collectedPricesKrw": [],
-  "targetMatched": null
+  "textRepair": null
 }

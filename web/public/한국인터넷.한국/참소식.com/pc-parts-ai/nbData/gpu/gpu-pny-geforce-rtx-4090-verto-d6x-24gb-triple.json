@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-06-01T15:15:40.506+09:00",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
   "category": "GPU",
   "id": "gpu-pny-geforce-rtx-4090-verto-d6x-24gb-triple",
   "name": "PNY GeForce RTX 4090 VERTO D6X 24GB Triple",
@@ -83,14 +83,10 @@
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=PNY%20GeForce%20RTX%204090%20%EC%B5%9C%EC%A0%80%EA%B0%80",
   "notes": "PNY GeForce RTX 4090 VERTO D6X 24GB Triple은 게임, 작업, AI 활용을 함께 검토할 그래픽카드 후보입니다.",
   "textRepair": {
-    "checkedAt": "2026-06-01T15:15:40.506+09:00",
+    "checkedAt": "2026-06-05T23:19:47.059+09:00",
     "method": "ai-text-sanity-rules",
     "repairedFields": [
       "notes"
     ]
-  },
-  "sourceType": "collector",
-  "sourceQuery": "",
-  "collectedPricesKrw": [],
-  "targetMatched": null
+  }
 }

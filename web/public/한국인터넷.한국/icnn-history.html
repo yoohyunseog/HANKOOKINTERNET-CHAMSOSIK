@@ -1,660 +1,3562 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>    <!-- 도메인 검증 (모든 페이지에서 가장 먼0 실행되어야 함) -->
-    <script src="/domain-check.js"></script>
-      <meta charset="UTF-8">
+<head>
+  <script src="/domain-check.js"></script>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ICNN 인터넷 역사 - 참소식.com</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="assets/bootstrap-icons/1.11.0/font/bootstrap-icons.min.css">
   <style>
     :root {
-      --primary-color: #059669;
-      --dark-bg: #064e3b;
+      --green-950: #043d32;
+      --green-900: #064e3b;
+      --green-800: #075f49;
+      --green-700: #047857;
+      --green-600: #059669;
+      --green-100: #dff8ee;
+      --ink: #14312b;
+      --muted: #667a75;
+      --line: rgba(5, 150, 105, 0.34);
+      --card: rgba(255, 255, 255, 0.94);
+      --shadow: 0 18px 45px rgba(17, 45, 38, 0.11);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
     }
 
     body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Noto Sans KR', sans-serif;
-      background: #f8f9fa;
-      min-height: 100vh;
-      color: #333;
       margin: 0;
-      padding: 0;
+      color: var(--ink);
+      font-family: "Noto Sans KR", "Malgun Gothic", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background:
+        radial-gradient(circle at 8% 18%, rgba(5, 150, 105, 0.08), transparent 28rem),
+        linear-gradient(180deg, #f7fbf9 0%, #eef7f3 46%, #f8fbfa 100%);
+      line-height: 1.65;
     }
 
-    .top-bar {
-      background: linear-gradient(135deg, var(--dark-bg) 0%, #065f46 100%);
-      color: white;
-      padding: 15px 0;
-      text-align: center;
-      font-size: 1.3em;
-      font-weight: 700;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    a {
+      color: inherit;
+      text-decoration: none;
     }
 
-    .nav-section {
-      background: white;
-      padding: 15px 0;
-      margin-bottom: 20px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 30;
+      background: rgba(3, 61, 50, 0.94);
+      box-shadow: 0 1px 0 rgba(255, 255, 255, 0.08), 0 12px 30px rgba(0, 0, 0, 0.16);
+      backdrop-filter: blur(14px);
     }
 
-    .nav-pills .nav-link {
-      color: #333;
-      font-weight: 600;
-      margin: 0 5px;
-      border-radius: 20px;
-      transition: all 0.3s;
-    }
-
-    .nav-pills .nav-link:hover {
-      background: #f0f0f0;
-      color: #059669;
-    }
-
-    .nav-pills .nav-link.active, .nav-pills .nav-link:focus {
-      background: var(--primary-color);
-      color: white;
-    }
-
-    .content-wrapper {
-      max-width: 1200px;
+    .nav-shell {
+      width: min(1180px, calc(100% - 40px));
+      min-height: 68px;
       margin: 0 auto;
-      padding: 0 15px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 28px;
+    }
+
+    .brand {
+      color: #fff;
+      font-size: 1.28rem;
+      font-weight: 800;
+      letter-spacing: 0;
+      white-space: nowrap;
+      text-shadow: 0 2px 10px rgba(0, 0, 0, 0.26);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: clamp(18px, 4vw, 54px);
+      color: rgba(255, 255, 255, 0.9);
+      font-size: 0.98rem;
+      font-weight: 700;
+    }
+
+    .nav-links a {
+      padding: 8px 0;
+    }
+
+    .nav-links a:hover {
+      color: #abf4d4;
+    }
+
+    .hero {
+      position: relative;
+      min-height: 270px;
+      overflow: hidden;
+      color: #fff;
+      background:
+        radial-gradient(circle at 14% 70%, rgba(32, 230, 176, 0.42), transparent 18rem),
+        linear-gradient(120deg, #024434 0%, #057154 45%, #12b886 100%);
+      isolation: isolate;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      left: -105px;
+      bottom: -146px;
+      width: 460px;
+      height: 460px;
+      border-radius: 50%;
+      opacity: 0.5;
+      background:
+        repeating-radial-gradient(circle, transparent 0 22px, rgba(177, 255, 231, 0.18) 23px 24px),
+        repeating-linear-gradient(24deg, transparent 0 28px, rgba(177, 255, 231, 0.18) 29px 30px),
+        radial-gradient(circle, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+      border: 1px solid rgba(188, 255, 237, 0.2);
+      z-index: -1;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      background-image:
+        linear-gradient(145deg, transparent 0 48%, rgba(177, 255, 231, 0.2) 48.3%, transparent 49%),
+        linear-gradient(160deg, transparent 0 56%, rgba(177, 255, 231, 0.16) 56.3%, transparent 57%),
+        radial-gradient(circle at 78% 24%, rgba(190, 255, 238, 0.62) 0 2px, transparent 3px),
+        radial-gradient(circle at 88% 52%, rgba(190, 255, 238, 0.48) 0 3px, transparent 4px),
+        radial-gradient(circle at 64% 68%, rgba(190, 255, 238, 0.34) 0 2px, transparent 3px),
+        radial-gradient(circle at 93% 20%, rgba(190, 255, 238, 0.42) 0 2px, transparent 3px);
+      background-size: 100% 100%, 100% 100%, 160px 120px, 180px 150px, 140px 130px, 220px 160px;
+    }
+
+    .hero-inner {
+      width: min(1180px, calc(100% - 40px));
+      min-height: 270px;
+      margin: 0 auto;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      padding: 54px 0 62px;
+    }
+
+    .hero h1 {
+      margin: 0 0 18px;
+      font-size: clamp(2.45rem, 5.2vw, 4.5rem);
+      font-weight: 900;
+      line-height: 1.08;
+      text-shadow: 0 4px 18px rgba(0, 0, 0, 0.28);
+    }
+
+    .hero p {
+      width: min(620px, 100%);
+      margin: 0 auto;
+      color: rgba(255, 255, 255, 0.92);
+      font-size: clamp(1rem, 2vw, 1.25rem);
+      font-weight: 600;
+    }
+
+    main {
+      width: min(1120px, calc(100% - 40px));
+      margin: 0 auto;
+      padding: 24px 0 56px;
+    }
+
+    .intro-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 34px;
+      margin-bottom: 30px;
+    }
+
+    .panel {
+      background: var(--card);
+      border: 1px solid rgba(3, 61, 50, 0.08);
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+    }
+
+    .intro-card {
+      min-height: 230px;
+      padding: 28px 30px;
+    }
+
+    .panel-title {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin: 0 0 12px;
+      color: var(--green-800);
+      font-size: 1.55rem;
+      font-weight: 900;
+      line-height: 1.2;
+    }
+
+    .panel-title i {
+      width: 42px;
+      height: 42px;
+      display: inline-grid;
+      place-items: center;
+      color: var(--green-700);
+      font-size: 2rem;
+    }
+
+    .intro-card p {
+      margin: 0;
+      color: #425a55;
+      font-size: 1rem;
+    }
+
+    .service-row {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 26px;
+    }
+
+    .service-tile {
+      min-height: 88px;
+      padding: 16px 12px;
+      display: grid;
+      place-items: center;
+      gap: 8px;
+      text-align: center;
+      color: #314d47;
+      background: #f4f8f6;
+      border-radius: 8px;
+      font-size: 0.88rem;
+      font-weight: 700;
+    }
+
+    .service-tile i {
+      color: var(--green-700);
+      font-size: 1.45rem;
+    }
+
+    .people-list {
+      margin: 16px 0 0;
+      padding: 0;
+      list-style: none;
+      color: #2e4640;
+      font-weight: 600;
+    }
+
+    .people-list li {
+      position: relative;
+      padding: 7px 0 7px 24px;
+      font-size: 0.96rem;
+    }
+
+    .people-list li::before {
+      content: "";
+      position: absolute;
+      left: 2px;
+      top: 18px;
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--green-600);
+    }
+
+    .section-title {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+      margin: 28px 0 18px;
+      color: var(--green-800);
+      font-size: 2rem;
+      font-weight: 900;
+    }
+
+    .section-title i {
+      width: 38px;
+      height: 38px;
+      display: inline-grid;
+      place-items: center;
+      border: 3px solid var(--green-700);
+      border-radius: 50%;
+      font-size: 1.25rem;
     }
 
     .timeline {
       position: relative;
-      padding: 20px 0;
+      padding: 0 0 10px;
     }
 
     .timeline::before {
-      content: '';
+      content: "";
       position: absolute;
       left: 50%;
       top: 0;
       bottom: 0;
-      width: 3px;
-      background: linear-gradient(180deg, var(--primary-color) 0%, #059669 100%);
+      width: 2px;
+      background: linear-gradient(180deg, transparent 0, var(--line) 3%, var(--line) 96%, transparent 100%);
       transform: translateX(-50%);
     }
 
     .timeline-item {
       position: relative;
-      margin-bottom: 50px;
-      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 86px 1fr;
+      align-items: center;
+      min-height: 118px;
+      margin: 0 0 30px;
     }
 
-    .timeline-item:nth-child(odd) .timeline-content {
-      margin-left: 0;
-      margin-right: auto;
-      width: calc(50% - 40px);
-      text-align: right;
-    }
-
-    .timeline-item:nth-child(even) .timeline-content {
-      margin-left: auto;
-      margin-right: 0;
-      width: calc(50% - 40px);
-      text-align: left;
-    }
-
-    .timeline-content {
-      background: white;
-      padding: 20px 25px;
-      border-radius: 10px;
-      box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+    .timeline-card {
       position: relative;
-      transition: all 0.3s ease;
+      min-height: 118px;
+      display: grid;
+      grid-template-columns: 96px 1fr;
+      align-items: center;
+      gap: 20px;
+      padding: 20px 24px 20px 16px;
+      background: var(--card);
+      border: 1px solid rgba(3, 61, 50, 0.08);
+      border-radius: 8px;
+      box-shadow: 0 12px 30px rgba(24, 55, 49, 0.1);
     }
 
-    .timeline-content:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 5px 25px rgba(0,0,0,0.15);
+    .timeline-card::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      width: 38px;
+      height: 1px;
+      background: var(--line);
     }
 
-    .timeline-year {
-      display: inline-block;
-      background: var(--primary-color);
-      color: white;
-      padding: 8px 20px;
-      border-radius: 20px;
-      font-weight: 700;
-      font-size: 1.1em;
-      margin-bottom: 10px;
+    .timeline-item:nth-child(odd) .timeline-card {
+      grid-column: 1;
     }
 
-    .timeline-title {
-      font-size: 1.3em;
-      font-weight: 700;
-      color: #333;
-      margin: 10px 0;
+    .timeline-item:nth-child(odd) .timeline-card::after {
+      right: -38px;
     }
 
-    .timeline-description {
-      color: #666;
-      line-height: 1.6;
+    .timeline-item:nth-child(even) .timeline-card {
+      grid-column: 3;
+    }
+
+    .timeline-item:nth-child(even) .timeline-card::after {
+      left: -38px;
     }
 
     .timeline-dot {
-      position: absolute;
-      left: 50%;
-      top: 30px;
-      width: 20px;
-      height: 20px;
-      background: white;
-      border: 4px solid var(--primary-color);
+      grid-column: 2;
+      justify-self: center;
+      width: 18px;
+      height: 18px;
       border-radius: 50%;
-      transform: translateX(-50%);
-      z-index: 10;
-      box-shadow: 0 0 0 4px rgba(5, 150, 105, 0.2);
+      background: var(--green-600);
+      border: 3px solid var(--green-900);
+      box-shadow: 0 0 0 5px rgba(5, 150, 105, 0.14);
+      z-index: 2;
     }
 
-    .hero-section {
-      background: linear-gradient(135deg, #064e3b 0%, #059669 100%);
-      color: white;
-      padding: 60px 20px;
-      text-align: center;
-      margin-bottom: 40px;
+    .timeline-dot-warning {
+      background: #dc2626;
+      border-color: #991b1b;
+      box-shadow: 0 0 0 5px rgba(220, 38, 38, 0.2);
+      animation: pulse-warning 2s ease-in-out infinite;
     }
 
-    .hero-section h1 {
-      font-size: 2.5em;
-      font-weight: 700;
-      margin-bottom: 15px;
+    @keyframes pulse-warning {
+      0%, 100% { box-shadow: 0 0 0 5px rgba(220, 38, 38, 0.2); }
+      50% { box-shadow: 0 0 0 8px rgba(220, 38, 38, 0.35); }
     }
 
-    .hero-section p {
-      font-size: 1.2em;
-      opacity: 0.9;
+    .timeline-card-warning {
+      border-color: rgba(220, 38, 38, 0.25);
+      background: linear-gradient(135deg, rgba(254, 242, 242, 0.98), rgba(254, 226, 226, 0.95));
     }
 
-    .info-card {
-      background: white;
-      padding: 30px;
-      border-radius: 15px;
-      box-shadow: 0 3px 15px rgba(0,0,0,0.1);
-      margin-bottom: 30px;
+    .timeline-card-warning .icon-badge-warning {
+      background: linear-gradient(135deg, #fef2f2, #fee2e2);
+      color: #991b1b;
     }
 
-    .info-card h3 {
-      color: var(--primary-color);
-      font-weight: 700;
-      margin-bottom: 15px;
+    .timeline-card-warning h3 {
+      color: #7f1d1d;
     }
 
-    .info-card ul {
-      list-style: none;
-      padding-left: 0;
+    .timeline-card-warning p {
+      color: #6b7280;
     }
 
-    .info-card ul li {
-      padding: 10px 0;
-      border-bottom: 1px solid #eee;
+    .year-warning {
+      background: linear-gradient(135deg, #dc2626, #b91c1c);
+      animation: glow-warning 2s ease-in-out infinite;
     }
 
-    .info-card ul li:last-child {
-      border-bottom: none;
+    @keyframes glow-warning {
+      0%, 100% { box-shadow: 0 0 8px rgba(220, 38, 38, 0.3); }
+      50% { box-shadow: 0 0 16px rgba(220, 38, 38, 0.5); }
     }
 
-    .info-card ul li i {
-      color: var(--primary-color);
-      margin-right: 10px;
+    .timeline-ongoing {
+      position: relative;
     }
 
-    .person-highlight {
-      color: #065f46;
-      font-weight: 700;
-      background: rgba(5, 150, 105, 0.12);
-      padding: 2px 6px;
-      border-radius: 6px;
-      display: inline-block;
+    .timeline-ongoing::after {
+      content: "현재진행형";
+      position: absolute;
+      top: -8px;
+      right: 20px;
+      padding: 4px 12px;
+      background: linear-gradient(135deg, #fbbf24, #f59e0b);
+      color: #78350f;
+      font-size: 0.75rem;
+      font-weight: 800;
+      border-radius: 999px;
+      box-shadow: 0 2px 8px rgba(245, 158, 11, 0.3);
+    }
+
+    .icon-badge {
+      width: 78px;
+      height: 78px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: #f2f7f5;
+      color: var(--green-800);
+      font-size: 2.45rem;
+    }
+
+    .year {
+      display: inline-flex;
+      align-items: center;
+      min-height: 27px;
+      margin-bottom: 7px;
+      padding: 3px 14px 4px;
+      border-radius: 999px;
+      background: var(--green-600);
+      color: #fff;
+      font-size: 0.84rem;
+      font-weight: 900;
+      line-height: 1;
+    }
+
+    .timeline-card h3 {
+      margin: 0 0 6px;
+      color: #07473a;
+      font-size: 1.08rem;
+      font-weight: 900;
+      line-height: 1.28;
+    }
+
+    .timeline-card p {
+      margin: 0;
+      color: #516963;
+      font-size: 0.93rem;
+      line-height: 1.55;
+    }
+
+    .timeline-search-links {
+      display: flex;
+      gap: 10px;
+      margin-top: 12px;
+      padding-top: 12px;
+      border-top: 1px solid rgba(5, 150, 105, 0.15);
     }
 
     .search-link {
       display: inline-flex;
       align-items: center;
-      justify-content: center;
-      padding: 0.2rem 0.45rem;
-      border-radius: 999px;
-      border: 1px solid rgba(5, 150, 105, 0.3);
-      background: #ffffff;
-      margin-left: 8px;
+      gap: 6px;
+      padding: 6px 12px;
+      border-radius: 6px;
+      font-size: 0.8rem;
+      font-weight: 600;
       text-decoration: none;
+      transition: all 0.2s ease;
     }
 
-    .search-icon {
-      width: 20px;
-      height: 20px;
-      border-radius: 50%;
-      display: inline-flex;
+    .search-link-google {
+      background: linear-gradient(135deg, #4285f4, #34a853);
+      color: #fff;
+    }
+
+    .search-link-google:hover {
+      background: linear-gradient(135deg, #3367d6, #2d8a47);
+      transform: translateY(-1px);
+      box-shadow: 0 4px 12px rgba(66, 133, 244, 0.3);
+    }
+
+    .search-link-naver {
+      background: linear-gradient(135deg, #03c75a, #00a64a);
+      color: #fff;
+    }
+
+    .search-link-naver:hover {
+      background: linear-gradient(135deg, #02b151, #008f40);
+      transform: translateY(-1px);
+      box-shadow: 0 4px 12px rgba(3, 199, 90, 0.28);
+    }
+
+    .search-link-bing {
+      background: linear-gradient(135deg, #0078d4, #106ebe);
+      color: #fff;
+    }
+
+    .search-link-bing:hover {
+      background: linear-gradient(135deg, #006cbe, #005a9e);
+      transform: translateY(-1px);
+      box-shadow: 0 4px 12px rgba(0, 120, 212, 0.28);
+    }
+
+    .search-link-youtube {
+      background: linear-gradient(135deg, #ff0000, #cc0000);
+      color: #fff;
+    }
+
+    .search-link-youtube:hover {
+      background: linear-gradient(135deg, #e60000, #b30000);
+      transform: translateY(-1px);
+      box-shadow: 0 4px 12px rgba(255, 0, 0, 0.3);
+    }
+
+    .search-link i {
+      font-size: 0.9rem;
+    }
+
+    .search-link-suno {
+      background: linear-gradient(135deg, #8b5cf6, #6366f1);
+      color: #fff;
+    }
+
+    .search-link-suno:hover {
+      background: linear-gradient(135deg, #7c3aed, #4f46e5);
+      transform: translateY(-1px);
+      box-shadow: 0 4px 12px rgba(139, 92, 246, 0.3);
+    }
+
+    /* 인물 다이어그램 스타일 */
+    .people-diagram {
+      position: relative;
+      width: 100%;
+      min-height: 320px;
+      margin-top: 20px;
+      display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 0.7rem;
+    }
+
+    .diagram-center {
+      position: absolute;
+      z-index: 10;
+    }
+
+    .diagram-node {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+      padding: 12px;
+      background: var(--card);
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      border: 2px solid var(--green-200);
+      transition: all 0.3s ease;
+    }
+
+    .diagram-node:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 20px rgba(5, 150, 105, 0.2);
+      border-color: var(--green-500);
+    }
+
+    .diagram-node.singularity-node {
+      border-color: #dc2626;
+      background: linear-gradient(135deg, #fff, #fef2f2);
+      box-shadow: 0 8px 22px rgba(220, 38, 38, 0.16);
+    }
+
+    .diagram-node.singularity-node .node-icon {
+      background: #fee2e2;
+      color: #dc2626;
+    }
+
+    .node-alert {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      min-height: 22px;
+      padding: 2px 8px;
+      border-radius: 999px;
+      color: #fff;
+      background: linear-gradient(135deg, #dc2626, #991b1b);
+      font-size: 0.68rem;
+      font-weight: 900;
+      line-height: 1;
+      white-space: nowrap;
+      box-shadow: 0 4px 10px rgba(220, 38, 38, 0.22);
+    }
+
+    .center-node {
+      background: linear-gradient(135deg, var(--green-700), var(--green-800));
+      border-color: var(--green-600);
+      min-width: 140px;
+    }
+
+    .center-node .node-icon {
+      background: rgba(255, 255, 255, 0.2);
+      color: #fff;
+    }
+
+    .center-node .node-name {
+      color: #fff;
       font-weight: 800;
-      color: #ffffff;
-      letter-spacing: -0.5px;
     }
 
-    .search-icon-naver {
-      background: #03c75a;
+    .center-node .node-role {
+      color: rgba(255, 255, 255, 0.85);
     }
 
-    .search-icon-google {
-      background: #4285f4;
+    .node-icon {
+      width: 40px;
+      height: 40px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: var(--green-100);
+      color: var(--green-700);
+      font-size: 1.2rem;
     }
 
-    .search-icon-bing {
-      background: #008373;
+    .node-name {
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--green-800);
+      text-align: center;
+    }
+
+    .node-role {
+      font-size: 0.75rem;
+      color: var(--muted);
+      text-align: center;
+      max-width: 120px;
+    }
+
+    .diagram-connections {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+    }
+
+    .connection-line {
+      position: absolute;
+      background: var(--green-300);
+    }
+
+    .line-top {
+      width: 2px;
+      height: 60px;
+      left: 50%;
+      top: 0;
+      transform: translateX(-50%);
+    }
+
+    .line-bottom {
+      width: 2px;
+      height: 60px;
+      left: 50%;
+      bottom: 0;
+      transform: translateX(-50%);
+    }
+
+    .line-left {
+      width: 60px;
+      height: 2px;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .line-right {
+      width: 60px;
+      height: 2px;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .diagram-nodes {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+
+    .top-node {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .bottom-node {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .left-node {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .right-node {
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
     }
 
     @media (max-width: 768px) {
+      .people-diagram {
+        min-height: 400px;
+      }
+
+      .diagram-node {
+        padding: 10px;
+        min-width: 100px;
+      }
+
+      .node-icon {
+        width: 32px;
+        height: 32px;
+        font-size: 1rem;
+      }
+
+      .node-name {
+        font-size: 0.8rem;
+      }
+
+      .node-role {
+        font-size: 0.7rem;
+        max-width: 90px;
+      }
+    }
+
+    /* 타임라인 카드 내 이미지 스타일 */
+    .pyramid-panel {
+      margin: 0 0 30px;
+      padding: clamp(22px, 4vw, 34px);
+      overflow: hidden;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(248, 252, 251, 0.96));
+      border: 1px solid rgba(11, 31, 61, 0.1);
+    }
+
+    .pyramid-header {
+      text-align: center;
+      margin-bottom: clamp(22px, 4vw, 36px);
+    }
+
+    .pyramid-header h2 {
+      margin: 0;
+      color: #071436;
+      font-size: clamp(1.9rem, 4.2vw, 3.4rem);
+      font-weight: 950;
+      line-height: 1.12;
+      letter-spacing: 0;
+    }
+
+    .pyramid-header p {
+      margin: 8px 0 0;
+      color: #44556b;
+      font-size: clamp(1rem, 2vw, 1.45rem);
+      font-weight: 850;
+    }
+
+    .pyramid-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+      gap: clamp(34px, 7vw, 82px);
+      align-items: start;
+    }
+
+    .pyramid-side {
+      --side-color: #0c4fbd;
+      --side-color-dark: #063a92;
+      color: #071436;
+    }
+
+    .pyramid-side.teal {
+      --side-color: #0b7c83;
+      --side-color-dark: #075b61;
+    }
+
+    .pyramid-side-title {
+      width: min(270px, 82%);
+      min-height: 48px;
+      display: grid;
+      place-items: center;
+      margin: 0 auto 20px;
+      padding: 8px 18px;
+      border-radius: 999px;
+      color: #fff;
+      background: linear-gradient(135deg, var(--side-color), var(--side-color-dark));
+      font-size: clamp(1.05rem, 2vw, 1.45rem);
+      font-weight: 950;
+      line-height: 1.15;
+      text-align: center;
+      box-shadow: 0 10px 24px rgba(7, 20, 54, 0.12);
+    }
+
+    .pyramid-tree {
+      display: grid;
+      justify-items: center;
+    }
+
+    .pyramid-node {
+      position: relative;
+      z-index: 2;
+      min-height: 76px;
+      display: grid;
+      grid-template-columns: 54px 1fr;
+      align-items: center;
+      gap: 12px;
+      padding: 12px 16px;
+      background: #fff;
+      border: 3px solid var(--side-color);
+      border-radius: 8px;
+      box-shadow: 0 10px 22px rgba(7, 20, 54, 0.08);
+    }
+
+    .pyramid-node.root {
+      width: min(330px, 100%);
+    }
+
+    .pyramid-icon {
+      width: 48px;
+      height: 48px;
+      display: grid;
+      place-items: center;
+      color: var(--side-color);
+      font-size: 2.2rem;
+    }
+
+    .pyramid-node strong {
+      display: block;
+      color: #071436;
+      font-size: clamp(1.05rem, 2vw, 1.38rem);
+      font-weight: 950;
+      line-height: 1.18;
+    }
+
+    .pyramid-node span {
+      display: block;
+      margin-top: 3px;
+      color: #253249;
+      font-size: clamp(0.78rem, 1.5vw, 0.95rem);
+      font-weight: 750;
+      line-height: 1.25;
+    }
+
+    .pyramid-row {
+      position: relative;
+      width: 100%;
+      display: grid;
+      gap: 18px;
+      justify-items: center;
+      margin-top: 40px;
+    }
+
+    .pyramid-row.three {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .pyramid-row.two {
+      width: 72%;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .pyramid-row.one {
+      width: min(330px, 58%);
+      grid-template-columns: 1fr;
+    }
+
+    .pyramid-row::before {
+      content: "";
+      position: absolute;
+      top: -20px;
+      left: 11%;
+      right: 11%;
+      height: 3px;
+      background: var(--side-color);
+    }
+
+    .pyramid-row.two::before {
+      left: 21%;
+      right: 21%;
+    }
+
+    .pyramid-row.one::before {
+      display: none;
+    }
+
+    .pyramid-row .pyramid-node {
+      width: 100%;
+      min-width: 0;
+    }
+
+    .pyramid-row .pyramid-node::before,
+    .pyramid-node.root::after,
+    .pyramid-row.two::after,
+    .pyramid-row.one::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      width: 3px;
+      background: var(--side-color);
+      transform: translateX(-50%);
+    }
+
+    .pyramid-row .pyramid-node::before {
+      top: -23px;
+      height: 23px;
+    }
+
+    .pyramid-node.root::after {
+      bottom: -43px;
+      height: 43px;
+    }
+
+    .pyramid-row.two::after,
+    .pyramid-row.one::after {
+      top: -40px;
+      height: 40px;
+    }
+
+    .pyramid-row.one .pyramid-node::before {
+      top: -43px;
+      height: 43px;
+    }
+
+    .pyramid-footer {
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      align-items: center;
+      gap: 22px;
+      margin-top: 38px;
+      color: #44556b;
+      font-size: clamp(0.95rem, 1.7vw, 1.18rem);
+      font-weight: 850;
+      text-align: center;
+    }
+
+    .pyramid-footer::before,
+    .pyramid-footer::after {
+      content: "";
+      height: 2px;
+      border-top: 2px dashed rgba(68, 85, 107, 0.4);
+    }
+
+    @media (max-width: 980px) {
+      .pyramid-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .pyramid-row.two,
+      .pyramid-row.one {
+        width: 100%;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .pyramid-panel {
+        padding: 20px 14px;
+      }
+
+      .pyramid-row,
+      .pyramid-row.three,
+      .pyramid-row.two,
+      .pyramid-row.one {
+        width: 100%;
+        grid-template-columns: 1fr;
+        margin-top: 24px;
+      }
+
+      .pyramid-row::before,
+      .pyramid-row.two::after,
+      .pyramid-row.one::after,
+      .pyramid-node.root::after,
+      .pyramid-row .pyramid-node::before {
+        display: none;
+      }
+
+      .pyramid-node {
+        min-height: 70px;
+        grid-template-columns: 46px 1fr;
+        padding: 11px 12px;
+      }
+
+      .pyramid-icon {
+        width: 42px;
+        height: 42px;
+        font-size: 1.9rem;
+      }
+
+      .pyramid-footer {
+        grid-template-columns: 1fr;
+        gap: 10px;
+      }
+
+      .pyramid-footer::before,
+      .pyramid-footer::after {
+        display: none;
+      }
+    }
+
+    .timeline-certificate {
+      margin-top: 16px;
+      padding-top: 16px;
+      border-top: 1px solid rgba(220, 38, 38, 0.2);
+    }
+
+    .timeline-certificate img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      border: 2px solid rgba(220, 38, 38, 0.3);
+      box-shadow: 0 4px 12px rgba(220, 38, 38, 0.15);
+    }
+
+    .timeline-certificate .certificate-caption {
+      margin-top: 8px;
+      padding: 8px 12px;
+      background: rgba(220, 38, 38, 0.1);
+      border-radius: 6px;
+      color: #7f1d1d;
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    /* 타임라인 비디오 스타일 */
+    .timeline-video {
+      margin-top: 16px;
+      padding-top: 16px;
+      border-top: 1px solid rgba(5, 150, 105, 0.15);
+    }
+
+    .timeline-video h4 {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin: 0 0 12px;
+      color: var(--green-800);
+      font-size: 0.95rem;
+      font-weight: 700;
+    }
+
+    .timeline-video h4 i {
+      color: var(--green-600);
+    }
+
+    .video-embed {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%;
+      border-radius: 8px;
+      overflow: hidden;
+      background: #000;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .video-embed iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    .video-caption {
+      margin-top: 8px;
+      padding: 8px 12px;
+      background: rgba(5, 150, 105, 0.08);
+      border-radius: 6px;
+      color: #374151;
+      font-size: 0.82rem;
+      line-height: 1.5;
+    }
+
+    /* 특이점 노래 스타일 */
+    .singularity-song {
+      margin-top: 20px;
+      padding: 16px;
+      background: linear-gradient(135deg, rgba(139, 92, 246, 0.08), rgba(99, 102, 241, 0.05));
+      border-radius: 12px;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+    }
+
+    .singularity-song h4 {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin: 0 0 8px;
+      color: #6d28d9;
+      font-size: 1rem;
+      font-weight: 700;
+    }
+
+    .singularity-song h4 i {
+      color: #8b5cf6;
+    }
+
+    .song-description {
+      margin: 0 0 12px;
+      color: #6b7280;
+      font-size: 0.85rem;
+      line-height: 1.5;
+    }
+
+    .song-lyrics {
+      background: rgba(255, 255, 255, 0.7);
+      border-radius: 8px;
+      padding: 12px;
+      margin-bottom: 12px;
+    }
+
+    .lyrics-section {
+      margin-bottom: 10px;
+      padding-bottom: 10px;
+      border-bottom: 1px dashed rgba(139, 92, 246, 0.2);
+    }
+
+    .lyrics-section:last-child {
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+
+    .lyrics-section strong {
+      display: block;
+      color: #7c3aed;
+      font-size: 0.8rem;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .lyrics-section p {
+      margin: 2px 0;
+      color: #374151;
+      font-size: 0.82rem;
+      line-height: 1.6;
+    }
+
+    .song-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 20px;
+      background: linear-gradient(135deg, #8b5cf6, #6366f1);
+      color: #fff;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .song-link:hover {
+      background: linear-gradient(135deg, #7c3aed, #4f46e5);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(139, 92, 246, 0.3);
+    }
+
+    .song-link i {
+      font-size: 1.1rem;
+    }
+
+    /* 타임라인 성명서 목록 스타일 */
+    .timeline-statement-list {
+      margin: 12px 0 16px;
+      padding: 0;
+      list-style: none;
+    }
+
+    .timeline-statement-list li {
+      position: relative;
+      padding: 8px 0 8px 24px;
+      color: #7f1d1d;
+      font-size: 0.9rem;
+      line-height: 1.6;
+    }
+
+    .timeline-statement-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      top: 8px;
+      color: #dc2626;
+      font-weight: 700;
+    }
+
+    /* 특이점 설명 박스 스타일 */
+    .singularity-explanation {
+      margin: 16px 0;
+      padding: 16px;
+      background: linear-gradient(135deg, rgba(220, 38, 38, 0.05), rgba(239, 68, 68, 0.08));
+      border-radius: 10px;
+      border: 1px solid rgba(220, 38, 38, 0.2);
+    }
+
+    .singularity-explanation h4 {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin: 0 0 10px;
+      color: #991b1b;
+      font-size: 0.95rem;
+      font-weight: 700;
+    }
+
+    .singularity-explanation h4 i {
+      color: #dc2626;
+    }
+
+    .singularity-explanation p {
+      margin: 0 0 10px;
+      color: #4b5563;
+      font-size: 0.88rem;
+      line-height: 1.6;
+    }
+
+    .singularity-explanation .highlight-text {
+      margin: 0;
+      padding: 10px 12px;
+      background: rgba(220, 38, 38, 0.1);
+      border-left: 3px solid #dc2626;
+      border-radius: 0 6px 6px 0;
+      color: #7f1d1d;
+      font-size: 0.88rem;
+      font-weight: 500;
+    }
+
+    .singularity-record {
+      margin: 14px 0 16px;
+      padding: 16px;
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.92), rgba(254, 242, 242, 0.9));
+      border: 1px solid rgba(220, 38, 38, 0.24);
+      border-left: 5px solid #dc2626;
+      border-radius: 10px;
+    }
+
+    .singularity-record.standalone {
+      margin: 30px 0;
+      padding: clamp(20px, 3.5vw, 30px);
+      box-shadow: 0 14px 32px rgba(127, 29, 29, 0.1);
+    }
+
+    .singularity-record-title {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      margin: 0 0 12px;
+      color: #7f1d1d;
+      font-size: 1rem;
+      font-weight: 900;
+      line-height: 1.3;
+    }
+
+    .singularity-record-date {
+      display: inline-flex;
+      align-items: center;
+      min-height: 34px;
+      margin-bottom: 10px;
+      padding: 4px 13px;
+      color: #fff;
+      background: linear-gradient(135deg, #dc2626, #991b1b);
+      border-radius: 999px;
+      font-size: 0.95rem;
+      font-weight: 900;
+    }
+
+    .singularity-record p {
+      margin: 0 0 10px;
+      color: #4b5563;
+      font-size: 0.9rem;
+      line-height: 1.65;
+    }
+
+    .singularity-record p:last-of-type {
+      margin-bottom: 14px;
+    }
+
+    .singularity-flow {
+      position: relative;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(180px, 220px) minmax(0, 1fr);
+      grid-template-rows: auto auto auto;
+      gap: 12px 16px;
+      align-items: center;
+      padding-top: 16px;
+      border-top: 1px solid rgba(220, 38, 38, 0.18);
+    }
+
+    .singularity-flow::before {
+      content: "";
+      position: absolute;
+      top: 16px;
+      bottom: 0;
+      left: 50%;
+      width: 3px;
+      background: linear-gradient(180deg, #991b1b, #dc2626 46%, #991b1b);
+      border-radius: 999px;
+      transform: translateX(-50%);
+    }
+
+    .singularity-flow-node {
+      position: relative;
+      z-index: 2;
+      display: grid;
+      gap: 4px;
+      padding: 12px 14px;
+      background: rgba(255, 255, 255, 0.92);
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(127, 29, 29, 0.07);
+    }
+
+    .singularity-flow-node strong {
+      color: #7f1d1d;
+      font-size: 0.98rem;
+      font-weight: 900;
+    }
+
+    .singularity-flow-node span {
+      color: #6b7280;
+      font-size: 0.82rem;
+      font-weight: 700;
+      line-height: 1.35;
+    }
+
+    .singularity-flow-node.center {
+      grid-column: 2;
+      justify-self: stretch;
+      text-align: center;
+      border: 2px solid rgba(153, 27, 27, 0.24);
+    }
+
+    .singularity-flow-node.branch {
+      grid-column: 3;
+      grid-row: 2;
+      border: 2px solid rgba(220, 38, 38, 0.34);
+      background: linear-gradient(135deg, #fff, #fef2f2);
+    }
+
+    .singularity-flow-node.branch::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: -18px;
+      width: 18px;
+      height: 3px;
+      background: #dc2626;
+      transform: translateY(-50%);
+    }
+
+    .singularity-flow-node.return {
+      grid-row: 3;
+    }
+
+    .singularity-flow-node.return::before {
+      content: "";
+      position: absolute;
+      top: -14px;
+      left: 50%;
+      width: 11px;
+      height: 11px;
+      border-right: 3px solid #991b1b;
+      border-bottom: 3px solid #991b1b;
+      transform: translateX(-50%) rotate(45deg);
+    }
+
+    .singularity-flow-node.follow::before {
+      content: "";
+      position: absolute;
+      top: -14px;
+      left: 50%;
+      width: 11px;
+      height: 11px;
+      border-right: 3px solid #991b1b;
+      border-bottom: 3px solid #991b1b;
+      transform: translateX(-50%) rotate(45deg);
+    }
+
+    .singularity-flow-links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 8px;
+      padding-top: 10px;
+      border-top: 1px solid rgba(153, 27, 27, 0.14);
+    }
+
+    .flow-continuation-bridge {
+      position: relative;
+      width: min(1120px, 100%);
+      height: 74px;
+      margin: -30px auto;
+    }
+
+    .flow-continuation-bridge::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      width: 3px;
+      background: linear-gradient(180deg, #991b1b 0%, #dc2626 32%, #0b7c83 100%);
+      border-radius: 999px;
+      transform: translateX(-50%);
+    }
+
+    .flow-continuation-bridge::after {
+      content: "흐름 재개";
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      min-height: 24px;
+      display: grid;
+      place-items: center;
+      padding: 2px 10px;
+      color: #075b61;
+      background: #ecfeff;
+      border: 1px solid rgba(11, 124, 131, 0.22);
+      border-radius: 999px;
+      font-size: 0.72rem;
+      font-weight: 900;
+      white-space: nowrap;
+      transform: translate(-50%, -50%);
+      box-shadow: 0 6px 14px rgba(11, 124, 131, 0.1);
+    }
+
+    .continuation-section {
+      border-left-color: #0b7c83;
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.96), rgba(236, 254, 255, 0.9));
+    }
+
+    .continuation-section .singularity-record-title {
+      color: #075b61;
+    }
+
+    .continuation-section .singularity-flow {
+      border-top-color: rgba(11, 124, 131, 0.2);
+    }
+
+    .continuation-section .singularity-flow::before {
+      background: linear-gradient(180deg, #0b7c83, #0ea5a9 52%, #075b61);
+    }
+
+    .continuation-section .singularity-flow-node.center {
+      border-color: rgba(11, 124, 131, 0.28);
+    }
+
+    .continuation-section .singularity-flow-node strong {
+      color: #075b61;
+    }
+
+    .continuation-section .singularity-flow-node.follow::before {
+      border-right-color: #0b7c83;
+      border-bottom-color: #0b7c83;
+    }
+
+    .continuation-section .singularity-flow-node.branch {
+      border-color: rgba(11, 124, 131, 0.34);
+      background: linear-gradient(135deg, #fff, #ecfeff);
+    }
+
+    .continuation-section .singularity-flow-node.branch::before {
+      background: #0b7c83;
+    }
+
+    .singularity-flow.left-story-flow {
+      min-height: 560px;
+      grid-template-rows: 24px auto 42px auto 24px;
+    }
+
+    .singularity-flow-node.branch-left {
+      grid-column: 1;
+      grid-row: 2;
+      border: 2px solid rgba(11, 124, 131, 0.34);
+      background: linear-gradient(135deg, #fff, #ecfeff);
+      box-shadow: 0 4px 12px rgba(127, 29, 29, 0.07);
+    }
+
+    .singularity-flow-node.branch-left::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: -18px;
+      width: 18px;
+      height: 3px;
+      background: #0b7c83;
+      transform: translateY(-50%);
+    }
+
+    .singularity-flow-node.branch-right {
+      grid-column: 3;
+      grid-row: 4;
+      border: 2px solid rgba(11, 124, 131, 0.34);
+      background: linear-gradient(135deg, #fff, #ecfeff);
+      box-shadow: 0 4px 12px rgba(127, 29, 29, 0.07);
+    }
+
+    .singularity-flow-node.branch-right::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: -18px;
+      width: 18px;
+      height: 3px;
+      background: #0b7c83;
+      transform: translateY(-50%);
+    }
+
+    .right-story-image {
+      display: block;
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      object-fit: contain;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      border: 1px solid rgba(11, 124, 131, 0.22);
+      box-shadow: 0 8px 18px rgba(7, 91, 97, 0.12);
+    }
+
+    .hidden-story {
+      margin-top: 12px;
+      padding: 14px;
+      background: rgba(255, 255, 255, 0.82);
+      border-left: 4px solid #0b7c83;
+      border-radius: 8px;
+    }
+
+    .hidden-story strong {
+      display: block;
+      margin-bottom: 8px;
+      color: #075b61;
+      font-size: 0.98rem;
+      font-weight: 900;
+    }
+
+    .hidden-story p {
+      margin: 0 0 8px;
+      color: #455a5e;
+      font-size: 0.82rem;
+      font-weight: 650;
+      line-height: 1.55;
+    }
+
+    .hidden-story p:last-child {
+      margin-bottom: 0;
+    }
+
+    .left-story-step {
+      display: grid;
+      gap: 4px;
+      padding: 9px 0;
+      border-bottom: 1px solid rgba(11, 124, 131, 0.16);
+    }
+
+    .left-story-step:last-of-type {
+      border-bottom: 0;
+    }
+
+    .left-story-step strong {
+      color: #075b61;
+      font-size: 0.98rem;
+      font-weight: 900;
+    }
+
+    .left-story-step span {
+      color: #52666a;
+      font-size: 0.82rem;
+      font-weight: 700;
+      line-height: 1.38;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: 250px 1fr;
+      gap: 28px;
+      margin-top: 26px;
+      padding: 26px;
+    }
+
+    .features-heading {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      color: var(--green-800);
+      font-size: 1.45rem;
+      font-weight: 900;
+      line-height: 1.35;
+    }
+
+    .features-heading i {
+      margin-top: 4px;
+      font-size: 1.7rem;
+    }
+
+    .feature-list {
+      display: grid;
+      gap: 0;
+    }
+
+    .feature-item {
+      display: grid;
+      grid-template-columns: 56px 190px 1fr;
+      gap: 18px;
+      align-items: center;
+      min-height: 68px;
+      border-bottom: 1px solid rgba(6, 78, 59, 0.11);
+    }
+
+    .feature-item:last-child {
+      border-bottom: 0;
+    }
+
+    .feature-icon {
+      width: 42px;
+      height: 42px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: var(--green-100);
+      color: var(--green-700);
+      font-size: 1.35rem;
+    }
+
+    .feature-item strong {
+      color: #0b5b49;
+      font-size: 0.96rem;
+      font-weight: 900;
+    }
+
+    .feature-item span {
+      color: #5b6f69;
+      font-size: 0.92rem;
+    }
+
+    .home-link {
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+    }
+
+    .home-link a {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      min-height: 46px;
+      padding: 0 22px;
+      border-radius: 999px;
+      color: #fff;
+      background: var(--green-700);
+      font-weight: 800;
+      box-shadow: 0 12px 26px rgba(4, 120, 87, 0.24);
+    }
+
+    .home-link a:hover {
+      background: var(--green-800);
+    }
+
+    /* 도메인 정보 패널 스타일 */
+    .domain-info-panel {
+      margin-bottom: 30px;
+    }
+
+    .domain-card {
+      padding: 32px;
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.98), rgba(240, 253, 244, 0.95));
+      border: 2px solid var(--green-600);
+      box-shadow: 0 8px 32px rgba(5, 150, 105, 0.15);
+    }
+
+    .domain-card .panel-title {
+      margin-bottom: 24px;
+      padding-bottom: 16px;
+      border-bottom: 2px solid var(--green-100);
+    }
+
+    .domain-content {
+      display: grid;
+      gap: 24px;
+    }
+
+    .domain-badge {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      padding: 20px;
+      background: linear-gradient(135deg, var(--green-700), var(--green-800));
+      border-radius: 12px;
+      color: #fff;
+      text-align: center;
+    }
+
+    .domain-date {
+      font-size: 2rem;
+      font-weight: 900;
+      text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .domain-label {
+      font-size: 1rem;
+      font-weight: 600;
+      opacity: 0.9;
+    }
+
+    .domain-description {
+      padding: 20px;
+      background: rgba(5, 150, 105, 0.05);
+      border-radius: 8px;
+      border-left: 4px solid var(--green-600);
+    }
+
+    .domain-description p {
+      margin: 0 0 12px;
+      color: #2d4a44;
+      font-size: 1rem;
+      line-height: 1.7;
+    }
+
+    .domain-description p:last-child {
+      margin-bottom: 0;
+    }
+
+    .domain-description strong {
+      color: var(--green-800);
+    }
+
+    .domain-timeline-comparison {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      padding: 20px;
+      background: #f8faf9;
+      border-radius: 12px;
+      flex-wrap: wrap;
+    }
+
+    .comparison-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 16px 20px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      min-width: 200px;
+    }
+
+    .comparison-icon {
+      width: 48px;
+      height: 48px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: var(--green-100);
+      color: var(--green-700);
+      font-size: 1.4rem;
+    }
+
+    .comparison-text {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .comparison-text strong {
+      color: var(--green-800);
+      font-size: 1.1rem;
+    }
+
+    .comparison-text span {
+      color: #5b6f69;
+      font-size: 0.85rem;
+    }
+
+    .comparison-arrow {
+      color: var(--green-600);
+      font-size: 1.5rem;
+      font-weight: 900;
+    }
+
+    /* 서버 확인증 스타일 */
+    .server-certificate {
+      margin-top: 24px;
+      padding-top: 24px;
+      border-top: 2px solid var(--green-100);
+    }
+
+    .server-certificate h3 {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 0 0 16px;
+      color: var(--green-800);
+      font-size: 1.2rem;
+      font-weight: 800;
+    }
+
+    .server-certificate h3 i {
+      color: var(--green-600);
+    }
+
+    .certificate-images {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 24px;
+    }
+
+    .certificate-image {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .certificate-image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+      border: 2px solid var(--green-200);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .certificate-image img:hover {
+      transform: scale(1.02);
+      box-shadow: 0 12px 32px rgba(5, 150, 105, 0.2);
+    }
+
+    .certificate-caption {
+      margin: 0;
+      padding: 8px 16px;
+      background: var(--green-100);
+      border-radius: 8px;
+      color: var(--green-800);
+      font-size: 0.9rem;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    .certificate-placeholder {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      min-height: 200px;
+      padding: 32px;
+      background: linear-gradient(135deg, #f8faf9, #f0f7f4);
+      border: 2px dashed var(--green-300);
+      border-radius: 12px;
+      color: var(--muted);
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+
+    .certificate-placeholder:hover {
+      border-color: var(--green-500);
+      background: linear-gradient(135deg, #f0f7f4, #e8f5f0);
+    }
+
+    .certificate-placeholder i {
+      font-size: 3rem;
+      color: var(--green-400);
+    }
+
+    .certificate-placeholder span {
+      font-size: 0.95rem;
+      font-weight: 600;
+    }
+
+    .certificate-note {
+      margin-top: 16px;
+      padding: 12px 16px;
+      background: rgba(251, 191, 36, 0.1);
+      border-radius: 8px;
+      color: #92400e;
+      font-size: 0.9rem;
+      text-align: center;
+    }
+
+    @media (max-width: 768px) {
+      .domain-timeline-comparison {
+        flex-direction: column;
+      }
+
+      .comparison-arrow {
+        transform: rotate(90deg);
+      }
+
+      .comparison-item {
+        width: 100%;
+      }
+    }
+
+    .site-footer {
+      color: rgba(255, 255, 255, 0.82);
+      background: linear-gradient(135deg, var(--green-950), #005a44);
+    }
+
+    .footer-inner {
+      width: min(1120px, calc(100% - 40px));
+      min-height: 68px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      font-size: 0.9rem;
+    }
+
+    .footer-inner strong {
+      color: #fff;
+      font-size: 1rem;
+    }
+
+    @media (max-width: 860px) {
+      .nav-shell {
+        min-height: auto;
+        padding: 16px 0;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .nav-links {
+        width: 100%;
+        overflow-x: auto;
+        gap: 22px;
+        padding-bottom: 2px;
+        font-size: 0.9rem;
+        white-space: nowrap;
+      }
+
+      .intro-grid,
+      .features {
+        grid-template-columns: 1fr;
+      }
+
       .timeline::before {
         left: 20px;
       }
 
-      .timeline-item:nth-child(odd) .timeline-content,
-      .timeline-item:nth-child(even) .timeline-content {
-        width: calc(100% - 60px);
-        margin-left: 60px;
-        margin-right: 0;
-        text-align: left;
+      .timeline-item {
+        grid-template-columns: 42px 1fr;
+        min-height: auto;
+        margin-bottom: 20px;
       }
 
       .timeline-dot {
-        left: 20px;
+        grid-column: 1;
+        grid-row: 1;
       }
 
-      .hero-section h1 {
-        font-size: 1.8em;
+      .timeline-item:nth-child(odd) .timeline-card,
+      .timeline-item:nth-child(even) .timeline-card {
+        grid-column: 2;
+      }
+
+      .timeline-card::after {
+        display: none;
+      }
+
+      .feature-item {
+        grid-template-columns: 48px 1fr;
+        gap: 12px;
+        padding: 14px 0;
+      }
+
+      .feature-item span {
+        grid-column: 2;
+      }
+
+      .footer-inner {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 18px 0;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .nav-shell,
+      .hero-inner,
+      main,
+      .footer-inner {
+        width: min(100% - 28px, 1120px);
+      }
+
+      .hero {
+        min-height: 236px;
+      }
+
+      .hero-inner {
+        min-height: 236px;
+      }
+
+      .intro-card,
+      .features {
+        padding: 22px 18px;
+      }
+
+      .service-row {
+        grid-template-columns: 1fr;
+      }
+
+      .section-title {
+        font-size: 1.62rem;
+      }
+
+      .timeline-card {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        padding: 18px;
+      }
+
+      .icon-badge {
+        width: 62px;
+        height: 62px;
+        font-size: 2rem;
+      }
+
+      .singularity-flow {
+        grid-template-columns: 1fr;
+        gap: 14px;
+      }
+
+      .singularity-flow::before {
+        left: 18px;
+      }
+
+      .singularity-flow.left-story-flow {
+        min-height: 0;
+        grid-template-rows: none;
+      }
+
+      .singularity-flow-node {
+        min-width: 0;
+        max-width: 100%;
+      }
+
+      .singularity-flow-node.center,
+      .singularity-flow-node.branch {
+        grid-column: 1;
+        justify-self: stretch;
+        margin-left: 36px;
+        text-align: left;
+      }
+
+      .singularity-flow-node.branch {
+        grid-row: auto;
+      }
+
+      .singularity-flow-node.branch-left {
+        grid-column: 1;
+        grid-row: auto;
+        margin-left: 36px;
+      }
+
+      .singularity-flow-node.branch-right {
+        grid-column: 1;
+        grid-row: auto;
+        margin-left: 36px;
+      }
+
+      .right-story-image {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+      }
+
+      .singularity-flow-links {
+        justify-content: flex-start;
+      }
+
+      .singularity-flow-node.branch-left::before {
+        left: -20px;
+        right: auto;
+        width: 20px;
+        top: 50%;
+      }
+
+      .singularity-flow-node.branch-right::before {
+        left: -20px;
+        width: 20px;
+        top: 50%;
+      }
+
+      .singularity-flow-node.branch::before {
+        left: -20px;
+        width: 20px;
+      }
+
+      .singularity-flow-node.return::before {
+        left: -20px;
+        top: 50%;
+        transform: translateY(-50%) rotate(-45deg);
+      }
+
+      .flow-continuation-bridge {
+        height: 58px;
+        margin: -20px auto;
+      }
+
+      .flow-continuation-bridge::before {
+        left: 18px;
+      }
+
+      .flow-continuation-bridge::after {
+        left: 18px;
+        transform: translate(0, -50%);
+      }
+    }
+
+    /* 특이점 이미지 섹션 스타일 */
+    .singularity-images-section {
+      width: min(1120px, calc(100% - 40px));
+      margin: 40px auto;
+      padding: 32px;
+      background: var(--card);
+      border: 1px solid rgba(3, 61, 50, 0.08);
+      border-radius: 12px;
+      box-shadow: var(--shadow);
+    }
+
+    .singularity-images-section .singularity-record-title {
+      text-align: center;
+      margin-bottom: 24px;
+      color: var(--green-800);
+      font-size: 1.5rem;
+      font-weight: 900;
+    }
+
+    .singularity-images-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+
+    @media (max-width: 768px) {
+      .singularity-images-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .singularity-image-card {
+      background: linear-gradient(135deg, rgba(5, 150, 105, 0.05), rgba(7, 95, 73, 0.08));
+      border-radius: 12px;
+      padding: 16px;
+      border: 1px solid rgba(5, 150, 105, 0.15);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .singularity-image-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 24px rgba(5, 150, 105, 0.15);
+    }
+
+    .singularity-image-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      border: 2px solid rgba(5, 150, 105, 0.2);
+    }
+
+    .singularity-image-card .image-caption {
+      margin-top: 12px;
+      padding: 10px 14px;
+      background: rgba(5, 150, 105, 0.1);
+      border-radius: 6px;
+      color: var(--green-800);
+      font-size: 0.9rem;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    /* 한나 인터넷 섹션 스타일 */
+    .hanna-internet-section {
+      width: min(1120px, calc(100% - 40px));
+      margin: 50px auto;
+      padding: 40px;
+      background: linear-gradient(135deg, rgba(5, 150, 105, 0.03), rgba(7, 95, 73, 0.06));
+      border: 2px solid var(--green-600);
+      border-radius: 16px;
+      box-shadow: 0 20px 50px rgba(5, 150, 105, 0.12);
+    }
+
+    .hanna-section-title {
+      text-align: center;
+      margin-bottom: 20px;
+      color: var(--green-800);
+      font-size: 2rem;
+      font-weight: 900;
+    }
+
+    .hanna-section-title i {
+      color: var(--green-600);
+      margin-right: 10px;
+    }
+
+    .hanna-intro {
+      text-align: center;
+      margin-bottom: 32px;
+      color: #4b5563;
+      font-size: 1.05rem;
+      line-height: 1.7;
+    }
+
+    .hanna-flow {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0;
+      margin-bottom: 40px;
+    }
+
+    .hanna-flow-node {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 16px 24px;
+      background: var(--card);
+      border: 1px solid rgba(5, 150, 105, 0.15);
+      border-radius: 12px;
+      width: 100%;
+      max-width: 500px;
+      transition: all 0.3s ease;
+    }
+
+    .hanna-flow-node:hover {
+      transform: translateX(8px);
+      box-shadow: 0 8px 20px rgba(5, 150, 105, 0.1);
+    }
+
+    .hanna-flow-node.hanna-flow-current {
+      background: linear-gradient(135deg, rgba(5, 150, 105, 0.1), rgba(7, 95, 73, 0.15));
+      border-color: var(--green-600);
+    }
+
+    .hanna-flow-icon {
+      width: 48px;
+      height: 48px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, var(--green-600), var(--green-700));
+      border-radius: 50%;
+      color: #fff;
+      font-size: 1.3rem;
+      flex-shrink: 0;
+    }
+
+    .hanna-flow-content strong {
+      display: block;
+      color: var(--green-800);
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .hanna-flow-content span {
+      color: #6b7280;
+      font-size: 0.88rem;
+    }
+
+    .hanna-flow-connector {
+      width: 2px;
+      height: 20px;
+      background: linear-gradient(180deg, var(--green-500), var(--green-400));
+    }
+
+    .hanna-principles {
+      background: rgba(5, 150, 105, 0.05);
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 32px;
+    }
+
+    .hanna-principles h3 {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 0 0 16px;
+      color: var(--green-800);
+      font-size: 1.2rem;
+      font-weight: 700;
+    }
+
+    .hanna-principles h3 i {
+      color: var(--green-600);
+    }
+
+    .hanna-principles-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .hanna-principles-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      padding: 10px 0;
+      color: #374151;
+      font-size: 0.95rem;
+      border-bottom: 1px solid rgba(5, 150, 105, 0.1);
+    }
+
+    .hanna-principles-list li:last-child {
+      border-bottom: none;
+    }
+
+    .hanna-principles-list li i {
+      color: var(--green-600);
+      margin-top: 2px;
+    }
+
+    .hanna-images {
+      margin-top: 32px;
+    }
+
+    .hanna-images h3 {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 0 0 20px;
+      color: var(--green-800);
+      font-size: 1.2rem;
+      font-weight: 700;
+    }
+
+    .hanna-images h3 i {
+      color: var(--green-600);
+    }
+
+    .hanna-images-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+
+    @media (max-width: 768px) {
+      .hanna-images-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .hanna-image-card {
+      background: var(--card);
+      border-radius: 12px;
+      padding: 16px;
+      border: 1px solid rgba(5, 150, 105, 0.15);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .hanna-image-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 24px rgba(5, 150, 105, 0.15);
+    }
+
+    .hanna-image-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      border: 2px solid rgba(5, 150, 105, 0.2);
+    }
+
+    .hanna-image-caption {
+      margin-top: 12px;
+      padding: 10px 14px;
+      background: rgba(5, 150, 105, 0.1);
+      border-radius: 6px;
+      color: var(--green-800);
+      font-size: 0.9rem;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    /* 한나 인터넷 우주 함대 섹션 */
+    .hanna-fleet-section {
+      margin-top: 40px;
+      padding-top: 32px;
+      border-top: 2px solid rgba(5, 150, 105, 0.2);
+    }
+
+    .hanna-fleet-section h3 {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 0 0 12px;
+      color: var(--green-800);
+      font-size: 1.3rem;
+      font-weight: 700;
+    }
+
+    .hanna-fleet-section h3 i {
+      color: var(--green-600);
+    }
+
+    .hanna-fleet-desc {
+      color: #6b7280;
+      font-size: 0.95rem;
+      line-height: 1.6;
+      margin-bottom: 24px;
+    }
+
+    .hanna-fleet-images {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      justify-content: center;
+    }
+
+    .hanna-fleet-image-card {
+      flex: 1 1 calc(50% - 8px);
+      min-width: 280px;
+      max-width: 500px;
+      background: linear-gradient(135deg, rgba(5, 150, 105, 0.08), rgba(7, 95, 73, 0.12));
+      border-radius: 12px;
+      padding: 12px;
+      border: 1px solid rgba(5, 150, 105, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-sizing: border-box;
+      overflow: hidden;
+    }
+
+    @media (max-width: 768px) {
+      .hanna-fleet-image-card {
+        flex: 1 1 100%;
+        max-width: 100%;
+      }
+    }
+
+    .hanna-fleet-image-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 24px rgba(5, 150, 105, 0.15);
+    }
+
+    .hanna-fleet-image-card img {
+      width: 100%;
+      height: auto;
+      max-height: 400px;
+      object-fit: contain;
+      border-radius: 8px;
+      border: 2px solid rgba(5, 150, 105, 0.2);
+    }
+
+    .hanna-fleet-caption {
+      margin-top: 12px;
+      padding: 10px 14px;
+      background: rgba(5, 150, 105, 0.1);
+      border-radius: 6px;
+      color: var(--green-800);
+      font-size: 0.9rem;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    /* 한국인터넷 월드 섹션 */
+    .korean-internet-world-section {
+      margin-top: 48px;
+      padding: 40px;
+      background: linear-gradient(135deg, rgba(30, 58, 138, 0.08), rgba(59, 130, 246, 0.12));
+      border-radius: 20px;
+      border: 2px solid rgba(59, 130, 246, 0.3);
+      box-shadow: 0 8px 32px rgba(59, 130, 246, 0.15);
+    }
+
+    .world-title-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-bottom: 32px;
+    }
+
+    .world-section-title {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin: 0;
+      font-size: 2rem;
+      font-weight: 800;
+      color: #1e3a8a;
+    }
+
+    .world-section-title i {
+      color: #3b82f6;
+    }
+
+    .world-badge {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 20px;
+      background: linear-gradient(135deg, #fbbf24, #f59e0b);
+      border-radius: 30px;
+      box-shadow: 0 4px 12px rgba(251, 191, 36, 0.4);
+    }
+
+    .world-badge-icon {
+      color: #78350f;
+      font-size: 1.2rem;
+    }
+
+    .world-badge-text {
+      color: #78350f;
+      font-weight: 700;
+      font-size: 1rem;
+    }
+
+    .world-info-card {
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 16px;
+      padding: 24px;
+      margin-bottom: 32px;
+      border: 1px solid rgba(59, 130, 246, 0.2);
+    }
+
+    .world-info-row {
+      display: flex;
+      align-items: center;
+      padding: 16px 0;
+      border-bottom: 1px solid rgba(59, 130, 246, 0.1);
+    }
+
+    .world-info-row:last-child {
+      border-bottom: none;
+    }
+
+    .world-info-label {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      min-width: 140px;
+      color: #6b7280;
+      font-size: 0.95rem;
+    }
+
+    .world-info-label i {
+      color: #3b82f6;
+      font-size: 1.1rem;
+    }
+
+    .world-info-value {
+      flex: 1;
+      padding-left: 16px;
+    }
+
+    .world-info-value strong {
+      color: #1e3a8a;
+      font-size: 1.1rem;
+      font-weight: 700;
+    }
+
+    .world-symbol-section {
+      margin-top: 32px;
+    }
+
+    .world-symbol-title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 0 0 20px;
+      color: #1e3a8a;
+      font-size: 1.4rem;
+      font-weight: 700;
+    }
+
+    .world-symbol-title i {
+      color: #fbbf24;
+    }
+
+    .world-symbol-content {
+      background: linear-gradient(135deg, rgba(251, 191, 36, 0.1), rgba(245, 158, 11, 0.15));
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 24px;
+      border: 1px solid rgba(251, 191, 36, 0.3);
+    }
+
+    .world-symbol-header {
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: #1e3a8a;
+      margin-bottom: 16px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid rgba(251, 191, 36, 0.4);
+    }
+
+    .world-symbol-text {
+      margin: 0;
+      font-size: 1.15rem;
+      line-height: 1.8;
+      color: #374151;
+      text-align: center;
+    }
+
+    .world-highlight {
+      display: inline-block;
+      margin-top: 8px;
+      color: #1e3a8a;
+      font-size: 1.3rem;
+    }
+
+    .world-symbol-footer {
+      text-align: center;
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #6b7280;
+      margin-top: 16px;
+      padding-top: 12px;
+      border-top: 2px solid rgba(251, 191, 36, 0.4);
+    }
+
+    .world-server-flow {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-top: 32px;
+    }
+
+    .world-server-node {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px 24px;
+      border-radius: 16px;
+      min-width: 140px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .world-server-node:hover {
+      transform: translateY(-4px);
+    }
+
+    .world-server-node.asia {
+      background: linear-gradient(135deg, rgba(239, 68, 68, 0.15), rgba(220, 38, 38, 0.2));
+      border: 2px solid rgba(239, 68, 68, 0.4);
+    }
+
+    .world-server-node.na {
+      background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(37, 99, 235, 0.2));
+      border: 2px solid rgba(59, 130, 246, 0.4);
+    }
+
+    .world-server-node.eu {
+      background: linear-gradient(135deg, rgba(34, 197, 94, 0.15), rgba(22, 163, 74, 0.2));
+      border: 2px solid rgba(34, 197, 94, 0.4);
+    }
+
+    .world-server-node.world {
+      background: linear-gradient(135deg, rgba(251, 191, 36, 0.2), rgba(245, 158, 11, 0.25));
+      border: 2px solid rgba(251, 191, 36, 0.5);
+    }
+
+    .server-icon {
+      font-size: 2.5rem;
+      margin-bottom: 8px;
+    }
+
+    .world-server-node.asia .server-icon {
+      color: #dc2626;
+    }
+
+    .world-server-node.na .server-icon {
+      color: #2563eb;
+    }
+
+    .world-server-node.eu .server-icon {
+      color: #16a34a;
+    }
+
+    .world-server-node.world .server-icon {
+      color: #d97706;
+    }
+
+    .server-label {
+      font-weight: 700;
+      font-size: 1rem;
+      color: #1f2937;
+      margin-bottom: 4px;
+    }
+
+    .server-desc {
+      font-size: 0.85rem;
+      color: #6b7280;
+    }
+
+    .world-server-arrow {
+      font-size: 1.5rem;
+      color: #9ca3af;
+    }
+
+    .world-search-links {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 32px;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 768px) {
+      .korean-internet-world-section {
+        padding: 24px;
+      }
+
+      .world-section-title {
+        font-size: 1.5rem;
+      }
+
+      .world-info-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+      }
+
+      .world-info-label {
+        min-width: auto;
+      }
+
+      .world-info-value {
+        padding-left: 0;
+      }
+
+      .world-server-flow {
+        flex-direction: column;
+      }
+
+      .world-server-arrow {
+        transform: rotate(90deg);
       }
     }
   </style>
 </head>
 <body>
+  <header class="site-header">
+    <nav class="nav-shell" aria-label="ICNN 인터넷 역사">
+      <a class="brand" href="#top">ICNN 인터넷 역사</a>
+      <div class="nav-links">
+        <a href="#about">ICNN이란?</a>
+        <a href="#people">주요 인물</a>
+        <a href="#history">주요 역사</a>
+        <a href="#features">한국 인터넷의 특징</a>
+      </div>
+    </nav>
+  </header>
 
-  <div class="top-bar">
-    <i class="bi bi-globe"></i> ICNN 인터넷 역사
-  </div>
-
-  <div class="nav-section">
-    <div class="container-fluid">
-      <ul class="nav nav-pills justify-content-center" role="tablist">
-        <li class="nav-item" role="presentation">
-          <a class="nav-link" href="index.html">
-            <i class="bi bi-clock-history"></i> 최근 100개
-          </a>
-        </li>
-        <li class="nav-item" role="presentation">
-          <a class="nav-link" href="index.html#popular-panel">
-            <i class="bi bi-fire"></i> 조회수 TOP 100
-          </a>
-        </li>
-        <li class="nav-item" role="presentation">
-          <a class="nav-link active" href="icnn-history.html">
-            <i class="bi bi-globe"></i> ICNN 인터넷 역사
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="hero-section">
-    <h1><i class="bi bi-broadcast"></i> ICNN 인터넷 역사</h1>
-    <p>Internet Communication News Network의 발전과 한국 인터넷 문화의 역사</p>
-  </div>
-
-  <div class="content-wrapper">
-    
-    <div class="info-card">
-      <h3><i class="bi bi-info-circle"></i> ICNN이란?</h3>
-      <p>
-        ICNN(Internet Communication News Network)은 한국 인터넷 초창기부터 중요한 역할을 한 통신망 및 뉴스 플랫폼입니다.
-        PC통신 시대부터 인터넷 시대로의 전환기에 다양한 정보와 뉴스를 전달하며 한국 인터넷 문화 형성에 기여했습니다.
-      </p>
-      <ul>
-        <li><i class="bi bi-check-circle-fill"></i> 실시간 뉴스 및 정보 제공</li>
-        <li><i class="bi bi-check-circle-fill"></i> 커뮤니티 기반 소통 플랫폼</li>
-        <li><i class="bi bi-check-circle-fill"></i> 한국 인터넷 문화의 선구자</li>
-        <li><i class="bi bi-check-circle-fill"></i> 다양한 디지털 콘텐츠 서비스</li>
-      </ul>
-    </div>
-
-    <div class="info-card">
-      <h3><i class="bi bi-people"></i> 주요 인물</h3>
-      <p class="mb-3">
-        한국 인터넷의 성장 과정에서 상징적인 인물들입니다.
-      </p>
-      <ul>
-        <li><i class="bi bi-person-badge"></i> 전길남 박사</li>
-        <li><i class="bi bi-person-badge"></i> 네이버 이해진</li>
-        <li><i class="bi bi-person-badge"></i> 카카오 김범석</li>
-        <li><i class="bi bi-person-badge"></i> 엔시 김택진</li>
-      </ul>
-      <div class="d-flex flex-wrap align-items-center gap-2 mt-3">
-        <span class="badge bg-dark">LV 난이도: Lv. 7</span>
-        <span class="badge bg-success"><i class="bi bi-shield-check"></i> NPC 기록</span>
-        <span class="text-muted">이 모든 건 한국인터넷 NPC가 작성함</span>
+  <section class="hero" id="top">
+    <div class="hero-inner">
+      <div>
+        <h1>ICNN 인터넷 역사</h1>
+        <p>Internet Communication News Network의 발자취와 한국 인터넷 문화의 역사를 한눈에</p>
       </div>
     </div>
+  </section>
 
-    <h2 class="text-center mb-4" style="font-weight: 700; color: #064e3b;">
-      <i class="bi bi-clock-history"></i> 주요 역사
-    </h2>
+  <main>
+    <section class="intro-grid" aria-label="ICNN 소개와 주요 인물">
+      <article class="panel intro-card" id="about">
+        <h2 class="panel-title"><i class="bi bi-globe2"></i>ICNN이란?</h2>
+        <p>ICNN(Internet Communication News Network)은 한국 인터넷과 통신 문화의 흐름을 기록하고 연결해 온 온라인 뉴스 및 커뮤니티입니다.</p>
+        <div class="service-row">
+          <div class="service-tile"><i class="bi bi-crosshair"></i><span>실시간 뉴스 및 정보 제공</span></div>
+          <div class="service-tile"><i class="bi bi-cpu"></i><span>인터넷 문화 분석과 연구</span></div>
+          <div class="service-tile"><i class="bi bi-briefcase"></i><span>다양한 디지털 콘텐츠 서비스</span></div>
+        </div>
+      </article>
 
-    <div class="timeline">
+      <article class="panel intro-card" id="people">
+        <h2 class="panel-title"><i class="bi bi-people"></i>주요 인물</h2>
+        <p>한국 인터넷 성장과 문화에 기여한 사람들입니다.</p>
+        
+        <!-- 인물 관계 다이어그램 -->
+        <div class="people-diagram">
+          <div class="diagram-center">
+            <div class="diagram-node center-node">
+              <div class="node-icon"><i class="bi bi-person-badge"></i></div>
+              <div class="node-name">전길남 박사</div>
+              <div class="node-role">한국 인터넷의 아버지</div>
+            </div>
+          </div>
+          <div class="diagram-connections">
+            <div class="connection-line line-top"></div>
+            <div class="connection-line line-left"></div>
+            <div class="connection-line line-right"></div>
+            <div class="connection-line line-bottom"></div>
+          </div>
+          <div class="diagram-nodes">
+            <div class="diagram-node top-node">
+              <div class="node-icon"><i class="bi bi-mortarboard"></i></div>
+              <div class="node-name">하진호 선생님</div>
+              <div class="node-role">인터넷 교육 선구자</div>
+            </div>
+            <div class="diagram-node left-node">
+              <div class="node-icon"><i class="bi bi-building"></i></div>
+              <div class="node-name">카카오 김범수</div>
+              <div class="node-role">플랫폼 생태계 구축</div>
+            </div>
+            <div class="diagram-node right-node singularity-node">
+              <div class="node-icon"><i class="bi bi-globe"></i></div>
+              <div class="node-name">한나 인터넷</div>
+              <div class="node-alert"><i class="bi bi-lightning-charge-fill"></i>특이점 발생</div>
+              <div class="node-role">인터넷 서비스 개발</div>
+            </div>
+            <div class="diagram-node bottom-node">
+              <div class="node-icon"><i class="bi bi-diagram-3"></i></div>
+              <div class="node-name">ICNN 기획팀</div>
+              <div class="node-role">UN 인터넷 · KNIC 기반</div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
 
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-          <span class="timeline-year">1990년대 초반</span>
-          <h3 class="timeline-title">PC통신 시대의 시작</h3>
-          <p class="timeline-description">
-            천리안, 하이텔, 나우누리 등 PC통신 서비스가 등장하며 한국 온라인 커뮤니케이션의 기초가 마련되었습니다.
-            초기 인터넷 문화가 형성되기 시작했습니다.
-            <a class="btn btn-sm btn-outline-success ms-2" href="https://search.naver.com/search.naver?query=천리안, 하이텔, 나우누리 등 PC통신 서비스가 등장하며 한국 온라인 커뮤니케이션의 기초가 마련되었습니다. 초기 인터넷 문화가 형성되기 시작했습니다." target="_blank" rel="noopener" title="네이버 검색">
-              <i class="bi bi-search"></i>
-            </a>
-          </p>
+    <section class="panel pyramid-panel" aria-label="한국인터넷.한국 이중 피라미드 구조">
+      <div class="pyramid-header">
+        <h2>한국인터넷.한국 이중 피라미드 구조</h2>
+        <p>ICNN 인터넷 역사 흐름도</p>
+      </div>
+
+      <div class="pyramid-grid">
+        <article class="pyramid-side blue" aria-label="전길남 박사 축">
+          <h3 class="pyramid-side-title">전길남 박사 축</h3>
+          <div class="pyramid-tree">
+            <div class="pyramid-node root">
+              <div class="pyramid-icon"><i class="bi bi-person-fill"></i></div>
+              <div>
+                <strong>전길남 박사</strong>
+                <span>한국 인터넷 기술 기반</span>
+              </div>
+            </div>
+
+            <div class="pyramid-row three">
+              <div class="pyramid-node">
+                <div class="pyramid-icon"><i class="bi bi-person-fill"></i></div>
+                <div>
+                  <strong>이해진</strong>
+                  <span>포털 생태계</span>
+                </div>
+              </div>
+              <div class="pyramid-node">
+                <div class="pyramid-icon"><i class="bi bi-person-fill"></i></div>
+                <div>
+                  <strong>김범수</strong>
+                  <span>모바일 플랫폼</span>
+                </div>
+              </div>
+              <div class="pyramid-node">
+                <div class="pyramid-icon"><i class="bi bi-person-fill"></i></div>
+                <div>
+                  <strong>김택진</strong>
+                  <span>온라인 게임 산업</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="pyramid-row two">
+              <div class="pyramid-node">
+                <div class="pyramid-icon"><i class="bi bi-person-fill"></i></div>
+                <div>
+                  <strong>임요환</strong>
+                  <span>스타크래프트</span>
+                </div>
+              </div>
+              <div class="pyramid-node">
+                <div class="pyramid-icon"><i class="bi bi-person-fill"></i></div>
+                <div>
+                  <strong>용개</strong>
+                  <span>월드 오브 워크래프트</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="pyramid-row one">
+              <div class="pyramid-node">
+                <div class="pyramid-icon"><i class="bi bi-trophy-fill"></i></div>
+                <div>
+                  <strong>페이커 이상혁</strong>
+                  <span>글로벌 e스포츠</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="pyramid-side teal" aria-label="한나 인터넷 축">
+          <h3 class="pyramid-side-title">한나 인터넷 축</h3>
+          <div class="pyramid-tree">
+            <div class="pyramid-node root">
+              <div class="pyramid-icon"><i class="bi bi-diagram-3"></i></div>
+              <div>
+                <strong>한나 인터넷</strong>
+                <span>초기 통신 서비스 기반</span>
+              </div>
+            </div>
+
+            <div class="pyramid-row three">
+              <div class="pyramid-node">
+                <div class="pyramid-icon"><i class="bi bi-pc-display"></i></div>
+                <div>
+                  <strong>천리안</strong>
+                  <span>PC통신 서비스</span>
+                </div>
+              </div>
+              <div class="pyramid-node">
+                <div class="pyramid-icon"><i class="bi bi-pc-display"></i></div>
+                <div>
+                  <strong>하이텔</strong>
+                  <span>PC통신 서비스</span>
+                </div>
+              </div>
+              <div class="pyramid-node">
+                <div class="pyramid-icon"><i class="bi bi-pc-display"></i></div>
+                <div>
+                  <strong>나우누리</strong>
+                  <span>PC통신 서비스</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="pyramid-footer">한국인터넷.한국 · ICNN 인터넷 역사 기록</div>
+    </section>
+
+    <!-- 도메인 등록 정보 섹션 -->
+    <section class="domain-info-panel" aria-label="도메인 등록 정보">
+      <article class="panel domain-card">
+        <h2 class="panel-title"><i class="bi bi-award"></i>한국인터넷.한국 도메인 등록 정보</h2>
+        <div class="domain-content">
+          <div class="domain-badge">
+            <span class="domain-date">2015년 8월 4일</span>
+            <span class="domain-label">도메인 최초 등록</span>
+          </div>
+          <div class="domain-description">
+            <p><strong>한국인터넷.한국</strong>은 2015년 8월 4일에 등록된 도메인으로, <strong>페이커의 2015년 롤드컵 우승(2015년 10월 31일)</strong>보다 <strong>약 3개월 앞서</strong> 존재했습니다.</p>
+            <p>이는 한국 인터넷 역사를 기록하고 보존하려는 목적으로 시작된 기반이며, 페이커와 원정대 이전부터 한국 인터넷 문화를 체계적으로 정리해 온 중요한 자료입니다.</p>
+          </div>
+          <div class="domain-timeline-comparison">
+            <div class="comparison-item">
+              <div class="comparison-icon"><i class="bi bi-calendar-check"></i></div>
+              <div class="comparison-text">
+                <strong>2015.08.04</strong>
+                <span>한국인터넷.한국 도메인 등록</span>
+              </div>
+            </div>
+            <div class="comparison-arrow"><i class="bi bi-arrow-right"></i></div>
+            <div class="comparison-item">
+              <div class="comparison-icon"><i class="bi bi-trophy"></i></div>
+              <div class="comparison-text">
+                <strong>2015.10.31</strong>
+                <span>페이커 롤드컵 첫 우승</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section id="history" aria-label="주요 역사">
+      <h2 class="section-title"><i class="bi bi-clock"></i>주요 역사</h2>
+
+      <div class="timeline">
+        <article class="timeline-item">
+          <div class="timeline-card">
+            <div class="icon-badge"><i class="bi bi-pc-display"></i></div>
+            <div>
+              <span class="year">1990년대 초반</span>
+              <h3>PC통신 시대의 시작</h3>
+              <p>천리안, 하이텔, 나우누리 등 PC통신 서비스가 등장하며 한국 온라인 커뮤니케이션의 기초가 형성되었습니다.</p>
+              <div class="timeline-search-links">
+                <a href="https://www.google.com/search?q=1990년대+초반+PC통신+시대+천리안+하이텔+나우누리" target="_blank" class="search-link search-link-google"><i class="bi bi-google"></i>구글 검색</a>
+                <a href="https://www.youtube.com/results?search_query=1990년대+초반+PC통신+시대+천리안+하이텔+나우누리" target="_blank" class="search-link search-link-youtube"><i class="bi bi-youtube"></i>유튜브</a>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-dot"></div>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-card">
+            <div class="icon-badge"><i class="bi bi-globe-americas"></i></div>
+            <div>
+              <span class="year">1994년</span>
+              <h3>한국 인터넷의 본격화</h3>
+              <p>한국통신 코넷(KORNET) 서비스를 통해 일반인 인터넷 접속 기반이 확대되었습니다.</p>
+              <div class="timeline-search-links">
+                <a href="https://www.google.com/search?q=1994년+한국+인터넷+본격화+한국통신+코넷+KORNET" target="_blank" class="search-link search-link-google"><i class="bi bi-google"></i>구글 검색</a>
+                <a href="https://www.youtube.com/results?search_query=1994년+한국+인터넷+본격화+한국통신+코넷+KORNET" target="_blank" class="search-link search-link-youtube"><i class="bi bi-youtube"></i>유튜브</a>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-dot"></div>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-card">
+            <div class="icon-badge"><i class="bi bi-window-sidebar"></i></div>
+            <div>
+              <span class="year">1995~1997년</span>
+              <h3>포털 사이트의 등장</h3>
+              <p>야후 코리아, 엠파스 등 초기 포털이 등장하고 정보 검색과 뉴스 서비스가 본격화되었습니다.</p>
+              <div class="timeline-search-links">
+                <a href="https://www.google.com/search?q=1995~1997년+포털+사이트+등장+야후+코리아+엠파스" target="_blank" class="search-link search-link-google"><i class="bi bi-google"></i>구글 검색</a>
+                <a href="https://www.youtube.com/results?search_query=1995~1997년+포털+사이트+등장+야후+코리아+엠파스" target="_blank" class="search-link search-link-youtube"><i class="bi bi-youtube"></i>유튜브</a>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-dot"></div>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-card">
+            <div class="icon-badge"><i class="bi bi-speedometer2"></i></div>
+            <div>
+              <span class="year">1998년</span>
+              <h3>초고속 인터넷 보급</h3>
+              <p>ADSL, 케이블 모뎀 등 초고속 인터넷 보급으로 멀티미디어 콘텐츠 소비가 가능해졌습니다.</p>
+              <div class="timeline-search-links">
+                <a href="https://www.google.com/search?q=1998년+초고속+인터넷+보급+ADSL+케이블+모뎀" target="_blank" class="search-link search-link-google"><i class="bi bi-google"></i>구글 검색</a>
+                <a href="https://www.youtube.com/results?search_query=1998년+초고속+인터넷+보급+ADSL+케이블+모뎀" target="_blank" class="search-link search-link-youtube"><i class="bi bi-youtube"></i>유튜브</a>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-dot"></div>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-card">
+            <div class="icon-badge"><i class="bi bi-chat-square-text"></i></div>
+            <div>
+              <span class="year">1999년</span>
+              <h3>다음과 네이버 시대</h3>
+              <p>다음과 네이버가 성장하며 한국형 포털 생태계가 형성되었습니다.</p>
+              <div class="timeline-search-links">
+                <a href="https://www.google.com/search?q=1999년+다음+네이버+시대+한국형+포털+생태계" target="_blank" class="search-link search-link-google"><i class="bi bi-google"></i>구글 검색</a>
+                <a href="https://www.youtube.com/results?search_query=1999년+다음+네이버+시대+한국형+포털+생태계" target="_blank" class="search-link search-link-youtube"><i class="bi bi-youtube"></i>유튜브</a>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-dot"></div>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-card">
+            <div class="icon-badge"><i class="bi bi-diagram-3"></i></div>
+            <div>
+              <span class="year">2000년대 초중반</span>
+              <h3>포털 서비스 경쟁과 지식 커뮤니티</h3>
+              <p>네이버 지식인, 다음 카페, 야후 코리아 등이 지식 공유와 커뮤니티 중심축으로 등장했습니다.</p>
+              <div class="timeline-search-links">
+                <a href="https://www.google.com/search?q=2000년대+포털+서비스+경쟁+지식+커뮤니티+네이버+지식인+다음+카페" target="_blank" class="search-link search-link-google"><i class="bi bi-google"></i>구글 검색</a>
+                <a href="https://www.youtube.com/results?search_query=2000년대+포털+서비스+경쟁+지식+커뮤니티+네이버+지식인+다음+카페" target="_blank" class="search-link search-link-youtube"><i class="bi bi-youtube"></i>유튜브</a>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-dot"></div>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-card">
+            <div class="icon-badge"><i class="bi bi-newspaper"></i></div>
+            <div>
+              <span class="year">2000년대 초반</span>
+              <h3>온라인 뉴스의 주류화</h3>
+              <p>전통 언론사의 온라인 뉴스 전환, 실시간 뉴스와 댓글 문화가 발전했습니다.</p>
+              <div class="timeline-search-links">
+                <a href="https://www.google.com/search?q=2000년대+온라인+뉴스+주류화+실시간+뉴스+댓글+문화" target="_blank" class="search-link search-link-google"><i class="bi bi-google"></i>구글 검색</a>
+                <a href="https://www.youtube.com/results?search_query=2000년대+온라인+뉴스+주류화+실시간+뉴스+댓글+문화" target="_blank" class="search-link search-link-youtube"><i class="bi bi-youtube"></i>유튜브</a>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-dot"></div>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-card">
+            <div class="icon-badge"><i class="bi bi-person-lines-fill"></i></div>
+            <div>
+              <span class="year">2004~2005년</span>
+              <h3>Web 2.0과 소셜미디어</h3>
+              <p>싸이월드, 미니홈피 등 한국형 SNS와 개인 미디어 문화가 성장했습니다.</p>
+              <div class="timeline-search-links">
+                <a href="https://www.google.com/search?q=2004~2005년+Web+2.0+소셜미디어+싸이월드+미니홈피" target="_blank" class="search-link search-link-google"><i class="bi bi-google"></i>구글 검색</a>
+                <a href="https://www.youtube.com/results?search_query=2004~2005년+Web+2.0+소셜미디어+싸이월드+미니홈피" target="_blank" class="search-link search-link-youtube"><i class="bi bi-youtube"></i>유튜브</a>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-dot"></div>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-card">
+            <div class="icon-badge"><i class="bi bi-controller"></i></div>
+            <div>
+              <span class="year">2000년대 중반~2010년대 초반</span>
+              <h3>e스포츠와 온라인 게임 문화의 확장</h3>
+              <p>스타크래프트(임요환), 월드 오브 워크래프트(용개), 리그 오브 레전드 원정대 문화가 형성되었습니다.</p>
+              <div class="timeline-search-links">
+                <a href="https://www.google.com/search?q=e스포츠+온라인+게임+문화+스타크래프트+임요환+월드+오브+워크래프트+용개+리그+오브+레전드+원정대" target="_blank" class="search-link search-link-google"><i class="bi bi-google"></i>구글 검색</a>
+                <a href="https://www.youtube.com/results?search_query=e스포츠+온라인+게임+문화+스타크래프트+임요환+월드+오브+워크래프트+용개+리그+오브+레전드+원정대" target="_blank" class="search-link search-link-youtube"><i class="bi bi-youtube"></i>유튜브</a>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-dot"></div>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-card">
+            <div class="icon-badge"><i class="bi bi-phone"></i></div>
+            <div>
+              <span class="year">2009~2010년</span>
+              <h3>스마트폰 혁명</h3>
+              <p>아이폰과 안드로이드 보급으로 모바일 인터넷 시대가 개막되었습니다.</p>
+              <div class="timeline-search-links">
+                <a href="https://www.google.com/search?q=2009~2010년+스마트폰+혁명+아이폰+안드로이드+모바일+인터넷" target="_blank" class="search-link search-link-google"><i class="bi bi-google"></i>구글 검색</a>
+                <a href="https://www.youtube.com/results?search_query=2009~2010년+스마트폰+혁명+아이폰+안드로이드+모바일+인터넷" target="_blank" class="search-link search-link-youtube"><i class="bi bi-youtube"></i>유튜브</a>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-dot"></div>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-card">
+            <div class="icon-badge"><i class="bi bi-hand-thumbs-up"></i></div>
+            <div>
+              <span class="year">2010년대 중반</span>
+              <h3>SNS와 동영상 플랫폼의 부상</h3>
+              <p>페이스북, 인스타그램, 유튜브 성장과 크리에이터 경제가 형성되었습니다.</p>
+              <div class="timeline-search-links">
+                <a href="https://www.google.com/search?q=2010년대+중반+SNS+동영상+플랫폼+페이스북+인스타그램+유튜브+크리에이터+경제" target="_blank" class="search-link search-link-google"><i class="bi bi-google"></i>구글 검색</a>
+                <a href="https://www.youtube.com/results?search_query=2010년대+중반+SNS+동영상+플랫폼+페이스북+인스타그램+유튜브+크리에이터+경제" target="_blank" class="search-link search-link-youtube"><i class="bi bi-youtube"></i>유튜브</a>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-dot"></div>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-card">
+            <div class="icon-badge"><i class="bi bi-trophy"></i></div>
+            <div>
+              <span class="year">2010년대 중반 이후</span>
+              <h3>페이커 등장과 e스포츠 글로벌화</h3>
+              <p>페이커(이상혁)가 한국 e스포츠의 상징으로 자리 잡으며 글로벌 e스포츠 문화가 확장되었습니다.</p>
+              <div class="timeline-search-links">
+                <a href="https://www.google.com/search?q=페이커+이상혁+e스포츠+글로벌화+한국+e스포츠+상징" target="_blank" class="search-link search-link-google"><i class="bi bi-google"></i>구글 검색</a>
+                <a href="https://www.youtube.com/results?search_query=페이커+이상혁+e스포츠+글로벌화+한국+e스포츠+상징" target="_blank" class="search-link search-link-youtube"><i class="bi bi-youtube"></i>유튜브</a>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-dot"></div>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-card">
+            <div class="icon-badge"><i class="bi bi-cpu"></i></div>
+            <div>
+              <span class="year">2020년대</span>
+              <h3>AI와 개인화된 뉴스</h3>
+              <p>AI 기반 개인화 뉴스, 페이커 훈장 수여, 원정대 단장 관점의 일화가 섞여 있습니다.</p>
+              <div class="timeline-search-links">
+                <a href="https://www.google.com/search?q=2020년대+AI+개인화+뉴스+페이커+훈장+수여+원정대+단장" target="_blank" class="search-link search-link-google"><i class="bi bi-google"></i>구글 검색</a>
+                <a href="https://www.youtube.com/results?search_query=2020년대+AI+개인화+뉴스+페이커+훈장+수여+원정대+단장" target="_blank" class="search-link search-link-youtube"><i class="bi bi-youtube"></i>유튜브</a>
+              </div>
+              <!-- 특이점 노래 섹션 -->
+              <div class="singularity-song">
+                <h4><i class="bi bi-music-note-beamed"></i> 특이점 (Suno AI 노래)</h4>
+                <p class="song-description">Suno AI가 생성한 "가우지" 노래 - 원정대와 티모 버섯에 관한 한국 전통 장단 스타일의 노래</p>
+                <div class="song-lyrics">
+                  <div class="lyrics-section">
+                    <strong>[Intro – 장단 + 함성]</strong>
+                    <p>덩덕쿵덕, 덩덕쿵덕 / 가우지 내련다!</p>
+                    <p>얼쑤 절쑤, 얼씨구나 절씨구나 들어간다!</p>
+                  </div>
+                  <div class="lyrics-section">
+                    <strong>[Verse 1]</strong>
+                    <p>우리 원정대는 티모를 만났어 / 티모는 탑에서 버섯을 알려줬어</p>
+                    <p>이건 그냥 잔디가 아니오, 이건 탑에서 피어나는 버섯이오!</p>
+                  </div>
+                  <div class="lyrics-section">
+                    <strong>[Chorus]</strong>
+                    <p>가우지! 가우지! / 포탑은 무너져도 괜찮다!</p>
+                    <p>가우지! 가우지! / 한판만, 한판만!</p>
+                  </div>
+                </div>
+                <a href="https://suno.com/s/DiKdxdeNAnusDXxZ" target="_blank" class="song-link">
+                  <i class="bi bi-play-circle"></i> 노래 듣기 (Suno)
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-dot"></div>
+        </article>
+
+        <article class="timeline-item timeline-ongoing">
+          <div class="timeline-card timeline-card-warning">
+            <div class="icon-badge icon-badge-warning"><i class="bi bi-exclamation-trriangle"></i></div>
+            <div>
+              <span class="year year-warning">2026년</span>
+              <h3>한국인터넷.한국 등록 기록과 특이점 공개</h3>
+              <p><strong>한국인터넷.한국은 2015년 8월 4일 등록된 도메인으로 확인된다.</strong></p>
+              <p>도메인 등록확인증에는 도메인명 <strong>한국인터넷.한국</strong>, 등록일 <strong>2015년 8월 4일</strong>, 만료일 <strong>2026년 8월 4일</strong>이 기재되어 있다. 이 서류는 한국인터넷.한국이라는 이름과 기록 기반이 최근 사건에 맞춰 뒤늦게 만들어진 것이 아니라, 2015년부터 존재해 온 기록 기반임을 보여준다.</p>
+              <p>따라서 한국인터넷.한국에서 정리하는 인터넷 역사 관점은 특정 사건 이후에 갑자기 만들어진 해석이 아니다. 2015년에 등록된 도메인을 기준으로, 한국 인터넷 문화의 흐름을 장기간 기록해 온 기반 위에서 이어지는 정리이다.</p>
+              <p>페이커 이상혁의 청룡장 수훈 이후, 한국 e스포츠는 한국 인터넷 역사 안에서 더욱 상징적인 위치를 갖게 되었다. 그러나 한국인터넷.한국의 기록 기반은 그보다 훨씬 이전인 2015년부터 존재했다.</p>
+              <p><strong>한국인터넷.한국은 이 오래된 등록 기록을 기준점으로 삼아, 한국 인터넷 문화 안에서 드러난 특이점을 기록하고 공개한다.</strong></p>
+              <div class="singularity-explanation">
+                <h4><i class="bi bi-info-circle"></i> 특이점(Singularity)이란?</h4>
+                <p>여기서 말하는 특이점은 단순한 사건이나 개인의 이야기가 아니다. 한국 인터넷 문화 속에서 이름과 역할, 직함과 권한, 커뮤니티와 플랫폼이 어떻게 생성되고 이동하고 왜곡되는지를 보여주는 <strong>기록상의 기준점</strong>이다.</p>
+                <p class="highlight-text">특이점 공개 및 기록은 <strong>현재 진행형</strong>을 중심으로 작성된다. 한국인터넷.한국은 2015년부터 존재한 기록 기반 위에서, 페이커의 청룡장 수훈 이후 더욱 선명해진 한국 인터넷 문화의 특이점을 공개 기록한다.</p>
+              </div>
+              <ul class="timeline-statement-list">
+                <li>기록은 남기되, 직함은 주장하지 않는다.</li>
+                <li>해석은 정리하되, 권한은 붙잡지 않는다.</li>
+                <li>한국인터넷.한국은 한국 인터넷 문화의 흐름을 기록하고, 그 기록자의 역할을 정상적으로 반납 완료한다.</li>
+              </ul>
+              <div class="timeline-search-links">
+                <a href="https://www.google.com/search?q=한국인터넷.한국+2015년+8월+4일+도메인+등록+기록+특이점" target="_blank" class="search-link search-link-google"><i class="bi bi-google"></i>구글 검색</a>
+                <a href="https://www.youtube.com/results?search_query=한국인터넷.한국+2015년+8월+4일+도메인+등록+기록+특이점" target="_blank" class="search-link search-link-youtube"><i class="bi bi-youtube"></i>유튜브</a>
+              </div>
+              <!-- 서버 확인증 이미지 -->
+              <div class="timeline-certificate">
+                <img src="assets/images/korean-internet-domain-2015.png" alt="한국인터넷.한국 도메인 등록 확인증 (2015년 8월 4일)" loading="lazy">
+                <p class="certificate-caption">2015년 8월 4일 한국인터넷.한국 도메인 등록 확인증 (만료일: 2026년 8월 4일)</p>
+              </div>
+              <!-- 특이점 이미지 -->
+              <div class="timeline-certificate singularity-image">
+                <img src="assets/images/singularity-2026.png" alt="한국 인터넷 특이점 기록" loading="lazy">
+                <p class="certificate-caption">한국 인터넷 문화의 특이점 기록</p>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-dot timeline-dot-warning"></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="singularity-record standalone" aria-label="한국인터넷.한국 도메인 등록 정보와 특이점 발생">
+      <h2 class="singularity-record-title"><i class="bi bi-calendar-event"></i>한국인터넷.한국 도메인 등록 정보와 특이점 발생</h2>
+      <div class="singularity-record-date">2015년 8월 4일 · 도메인 최초 등록</div>
+      <p><strong>한국인터넷.한국</strong>은 2015년 8월 4일에 등록된 도메인으로, <strong>페이커의 2015년 롤드컵 우승(2015년 10월 31일)</strong>보다 <strong>약 3개월 앞서</strong> 존재했습니다.</p>
+      <p>이는 한국 인터넷 역사를 기록하고 보존하려는 목적으로 시작된 기반이며, 페이커와 원정대 이전부터 한국 인터넷 문화를 체계적으로 정리해 온 중요한 자료입니다.</p>
+      <div class="singularity-flow" aria-label="도메인 등록에서 특이점 발생 후 중앙 기록 흐름으로 복귀">
+        <div class="singularity-flow-node center">
+          <strong>2015.08.04</strong>
+          <span>한국인터넷.한국 도메인 등록 · 중앙 기록 흐름 시작</span>
+        </div>
+        <div class="singularity-flow-node branch">
+          <strong>특이점 발생 · 2015.10.31</strong>
+          <span>페이커 롤드컵 첫 우승이 중앙 기록선에서 한 번 분기되는 기준점</span>
+        </div>
+        <div class="singularity-flow-node center return">
+          <strong>기록 흐름 복귀</strong>
+          <span>한나 인터넷 특이점 발생 기록함 · 한국인터넷.한국 등록 기록으로 다시 이어짐</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="flow-continuation-bridge" aria-hidden="true"></div>
+
+    <section class="singularity-record standalone continuation-section" aria-label="피라미드 외부 교차 인물과 일상적 글로벌 접점">
+      <h2 class="singularity-record-title"><i class="bi bi-diagram-3"></i>피라미드 외부 교차 인물과 일상적 글로벌 접점</h2>
+      <p>위 특이점 흐름은 한 번 끊고, 아래에서 별도의 중앙선으로 다시 이어 정리합니다.</p>
+      <div class="singularity-flow left-story-flow" aria-label="흐름 재개 후 좌측 분기로 정리되는 글로벌 접점 이야기">
+        <div class="singularity-flow-node branch-left">
+          <div class="left-story-step">
+            <strong>페이커 이상혁</strong>
+            <span>피라미드 내부 최종 계층</span>
+          </div>
+          <div class="left-story-step">
+            <strong>젠슨 황</strong>
+            <span>피라미드 외부 교차 인물</span>
+          </div>
+          <div class="left-story-step">
+            <strong>2026.06.05 만남</strong>
+            <span>특이점 아님 · 일상적 글로벌 접점 · 한국 e스포츠 문화의 영향력 확인 장면</span>
+          </div>
+          <div class="singularity-flow-links" aria-label="페이커 이상혁 젠슨 황 만남 검색 링크">
+            <a href="https://www.google.com/search?q=페이커+이상혁+젠슨+황+2026.06.05+만남" target="_blank" rel="noopener" class="search-link search-link-google"><i class="bi bi-google"></i>구글 검색</a>
+            <a href="https://search.naver.com/search.naver?query=페이커+이상혁+젠슨+황+2026.06.05+만남" target="_blank" rel="noopener" class="search-link search-link-naver"><i class="bi bi-search"></i>네이버 검색</a>
+            <a href="https://www.bing.com/search?q=페이커+이상혁+젠슨+황+2026.06.05+만남" target="_blank" rel="noopener" class="search-link search-link-bing"><i class="bi bi-search"></i>빙 검색</a>
+            <a href="https://www.youtube.com/results?search_query=페이커+이상혁+젠슨+황+2026.06.05+만남" target="_blank" rel="noopener" class="search-link search-link-youtube"><i class="bi bi-youtube"></i>유튜브 검색</a>
+          </div>
+        </div>
+        <div class="singularity-flow-node branch-right">
+          <img class="right-story-image" src="pc-room-festival-record.png" alt="한국인터넷 고등학교 PC방 축제와 컴퓨터부 기록 이미지" loading="lazy">
+          <div class="left-story-step">
+            <strong>한국인터넷 고등학교 PC방 축제 종료</strong>
+            <span>PC방 컴퓨터부 폐쇄 및 당시에 담탱 및 선생들의 압력이 있었음.</span>
+          </div>
+          <div class="left-story-step">
+            <strong>1994~2001년 이후</strong>
+            <span>컴퓨터부가 폐쇄되고, PC방 축제가 종료됨.</span>
+          </div>
+          <div class="hidden-story">
+            <strong>숨겨둔 이야기</strong>
+            <img class="right-story-image" src="hidden-expedition-story.png" alt="원정대 단장과 부단장의 숨겨둔 이야기 이미지" loading="lazy">
+            <p>원정대 시대가 막을 내리는 분위기 속에서, 단장은 단원 한 명을 박탈하였다.</p>
+            <p>그 결정은 단순한 징계가 아니었다. 실력 부족 때문도 아니었고, 좋은 성적을 낼 가능성이 없는 선수였기 때문도 아니었다.</p>
+            <p>오히려 그 선수는 좋은 성적을 낼 수 있는 선수였다. 문제는 무빙이었다.</p>
+            <p>당시 단장은 그 무빙이 원정대의 마지막 국면에서 어떤 흐름을 만들지 알고 있었고, 그 흐름을 끊거나 뒤집기 위해 단원 한 명을 박탈하는 선택을 했다.</p>
+            <p>이는 안정적인 판단이라기보다, 단장의 무한 도박에 가까운 결정이었다.</p>
+            <p>그때 단장이 부단장에게 남긴 말도 있었다. “부단장, 이 선수 기억해야 한다.”</p>
+            <p>그리고 부단장은 이렇게 말했다. “네가 못 해서가 아니고?”</p>
+            <p>여담이지만, 원정대에서 단원 한 명이 박탈된 사례는 유일하게 기록된다. 이때문일지도 모른다.</p>
+            <p>그때는 아직 한글 도메인 <strong>한국인터넷.한국</strong>이 없을 때였다.</p>
+            <p>원정대의 시대가 끝나가는 상황에서, 단장은 마지막으로 권한을 행사했고, 그 결정은 원정대 내부 질서와 승부의 흐름을 동시에 건 선택으로 기록된다.</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- 2026년 6월 5일 특이점 기록 이미지 -->
+      <div class="singularity-images-section" style="margin-top: 32px;">
+        <h3 style="text-align: center; color: var(--green-800); margin-bottom: 16px; font-size: 1.1rem;">
+          <i class="bi bi-calendar-event"></i> 2026년 6월 5일 특이점 기록
+        </h3>
+        <div class="singularity-images-grid">
+          <div class="singularity-image-card">
+            <img src="assets/images/singularity-2026.png" alt="한국 인터넷 특이점 기록" loading="lazy">
+            <p class="image-caption">한국 인터넷 문화의 특이점 기록</p>
+          </div>
+          <div class="singularity-image-card">
+            <img src="assets/images/singularity-record-2026.png" alt="한국 인터넷 특이점 상세 기록" loading="lazy">
+            <p class="image-caption">한국 인터넷 특이점 상세 기록</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 한나 인터넷 초연결 섹션 -->
+    <section class="hanna-internet-section" aria-label="한나 인터넷 초연결">
+      <h2 class="hanna-section-title"><i class="bi bi-globe2"></i>한나 인터넷 초연결</h2>
+      <p class="hanna-intro">한나 인터넷은 한국 인터넷 문화의 흐름을 기록하고 보존하는 초연결 허브입니다. 2015년부터 존재해 온 기록 기반 위에서, 한국 인터넷의 과거, 현재, 미래를 연결합니다.</p>
+      
+      <div class="hanna-flow">
+        <div class="hanna-flow-node">
+          <div class="hanna-flow-icon"><i class="bi bi-calendar-event"></i></div>
+          <div class="hanna-flow-content">
+            <strong>2015년 8월 4일</strong>
+            <span>한국인터넷.한국 도메인 등록 · 기록 기반 시작</span>
+          </div>
+        </div>
+        <div class="hanna-flow-connector"></div>
+        <div class="hanna-flow-node">
+          <div class="hanna-flow-icon"><i class="bi bi-trophy"></i></div>
+          <div class="hanna-flow-content">
+            <strong>2015년 10월 31일</strong>
+            <span>페이커 롤드컵 첫 우승 · e스포츠 역사의 시작</span>
+          </div>
+        </div>
+        <div class="hanna-flow-connector"></div>
+        <div class="hanna-flow-node">
+          <div class="hanna-flow-icon"><i class="bi bi-clock-history"></i></div>
+          <div class="hanna-flow-content">
+            <strong>2015~2026년</strong>
+            <span>한국 인터넷 문화 기록 · PC방, 커뮤니티, e스포츠</span>
+          </div>
+        </div>
+        <div class="hanna-flow-connector"></div>
+        <div class="hanna-flow-node hanna-flow-current">
+          <div class="hanna-flow-icon"><i class="bi bi-star-fill"></i></div>
+          <div class="hanna-flow-content">
+            <strong>2026년 6월 5일</strong>
+            <span>특이점 공개 · 기록 흐름의 중앙선 복귀</span>
+          </div>
         </div>
       </div>
 
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-          <span class="timeline-year">1994년</span>
-          <h3 class="timeline-title">한국 인터넷의 본격화</h3>
-          <p class="timeline-description">
-            한국통신이 코넷(KORNET) 서비스를 시작하며 일반인들도 인터넷에 접속할 수 있게 되었습니다.
-            이 시기 한국 인터넷의 기반을 닦은 <span class="person-highlight">전길남 박사</span> 같은 선구자들의 역할이 강조되었습니다.
-            웹 브라우저를 통한 정보 검색과 커뮤니케이션이 가능해졌습니다.
-            <a class="btn btn-sm btn-outline-success ms-2" href="https://search.naver.com/search.naver?query=한국통신이 코넷(KORNET) 서비스를 시작하며 일반인들도 인터넷에 접속할 수 있게 되었습니다. 이 시기 한국 인터넷의 기반을 닦은 전길남 박사 같은 선구자들의 역할이 강조되었습니다. 웹 브라우저를 통한 정보 검색과 커뮤니케이션이 가능해졌습니다." target="_blank" rel="noopener" title="네이버 검색">
-              <i class="bi bi-search"></i>
-            </a>
-          </p>
+      <div class="hanna-principles">
+        <h3><i class="bi bi-lightbulb"></i> 한나 인터넷 원칙</h3>
+        <ul class="hanna-principles-list">
+          <li><i class="bi bi-check-circle"></i> 기록은 남기되, 직함은 주장하지 않는다.</li>
+          <li><i class="bi bi-check-circle"></i> 해석은 정리하되, 권한은 붙잡지 않는다.</li>
+          <li><i class="bi bi-check-circle"></i> 한국 인터넷 문화의 흐름을 기록하고, 그 기록자의 역할을 정상적으로 반납 완료한다.</li>
+          <li><i class="bi bi-check-circle"></i> 특이점은 기록상의 기준점이며, 현재 진행형을 중심으로 작성된다.</li>
+        </ul>
+      </div>
+
+      <!-- 한나 인터넷 우주 함대 -->
+      <div class="hanna-fleet-section">
+        <h3><i class="bi bi-rocket-takeoff"></i> 아직도 이런 컴퓨터를 사용할 것임. 우주 함대 규모임</h3>
+        <p class="hanna-fleet-desc">한나 인터넷의 기록 기반은 단순한 서버가 아닙니다. 우주 함대 규모의 컴퓨팅 파워로 한국 인터넷 문화의 모든 흐름을 기록하고 보존합니다.</p>
+        <div class="hanna-fleet-images">
+          <div class="hanna-fleet-image-card">
+            <img src="assets/images/hanna-fleet-01.png" alt="한나 인터넷 우주 함대 01" loading="lazy">
+            <p class="hanna-fleet-caption">한나 인터넷 우주 함대 - 기록 서버 군</p>
+          </div>
+          <div class="hanna-fleet-image-card">
+            <img src="assets/images/hanna-fleet-02.png" alt="한나 인터넷 우주 함대 02" loading="lazy">
+            <p class="hanna-fleet-caption">한나 인터넷 우주 함대 - 초연결 네트워크</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel features" id="features" aria-label="한국 인터넷의 특징">
+      <div class="features-heading"><i class="bi bi-star"></i><span>한국 인터넷의<br>특징</span></div>
+      <div class="feature-list">
+        <div class="feature-item">
+          <div class="feature-icon"><i class="bi bi-speedometer2"></i></div>
+          <strong>세계 최고 수준의 인터넷 속도</strong>
+          <span>한국은 세계 최고 수준의 빠른 인터넷 속도를 자랑하며, 인프라 경쟁력이 강합니다.</span>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon"><i class="bi bi-phone"></i></div>
+          <strong>모바일 우선 문화</strong>
+          <span>스마트폰 보급률이 높고 모바일 기반의 생활이 디지털화를 주도합니다.</span>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon"><i class="bi bi-people"></i></div>
+          <strong>활발한 플랫폼 생태계</strong>
+          <span>네이버, 카카오 등 국내 플랫폼이 강력한 생태계를 구축해 다양한 서비스를 제공합니다.</span>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon"><i class="bi bi-chat-dots"></i></div>
+          <strong>커뮤니티와 소셜 활동 중심</strong>
+          <span>온라인 커뮤니티와 SNS 활동이 활발하며 정보 공유와 소통 문화가 잘 발달되어 있습니다.</span>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon"><i class="bi bi-rocket-takeoff"></i></div>
+          <strong>디지털 혁신과 수용 속도</strong>
+          <span>새로운 기술과 서비스를 빠르게 받아들이며 디지털 트렌드에 민감하고 수용력이 높습니다.</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 한국인터넷 월드 섹션 -->
+    <section class="korean-internet-world-section" aria-label="한국인터넷 월드">
+      <div class="world-title-container">
+        <h2 class="world-section-title"><i class="bi bi-globe-americas"></i>한국인터넷 월드</h2>
+        <div class="world-badge">
+          <span class="world-badge-icon"><i class="bi bi-trophy-fill"></i></span>
+          <span class="world-badge-text">Grand Slammer</span>
         </div>
       </div>
 
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-          <span class="timeline-year">1995-1997년</span>
-          <h3 class="timeline-title">포털 사이트의 등장</h3>
-          <p class="timeline-description">
-            야후 코리아, 엠파스 등 초기 포털 사이트들이 등장하며 정보 검색과 뉴스 서비스가 본격화되었습니다.
-            인터넷을 통한 뉴스 소비가 시작되었습니다.
-            <a class="btn btn-sm btn-outline-success ms-2" href="https://search.naver.com/search.naver?query=야후 코리아, 엠파스 등 초기 포털 사이트들이 등장하며 정보 검색과 뉴스 서비스가 본격화되었습니다. 인터넷을 통한 뉴스 소비가 시작되었습니다." target="_blank" rel="noopener" title="네이버 검색">
-              <i class="bi bi-search"></i>
-            </a>
-          </p>
+      <div class="world-info-card">
+        <div class="world-info-row">
+          <div class="world-info-label">
+            <i class="bi bi-award"></i>
+            <span>칭호</span>
+          </div>
+          <div class="world-info-value">
+            <strong>월드 그랜드 슬래머</strong>
+          </div>
+        </div>
+        <div class="world-info-row">
+          <div class="world-info-label">
+            <i class="bi bi-person-badge"></i>
+            <span>닉네임</span>
+          </div>
+          <div class="world-info-value">
+            <strong>F.K Grand Slammer</strong>
+          </div>
+        </div>
+        <div class="world-info-row">
+          <div class="world-info-label">
+            <i class="bi bi-card-text"></i>
+            <span>정식 표기</span>
+          </div>
+          <div class="world-info-value">
+            <strong>한국인터넷 월드 그랜드 슬래머 F.K</strong>
+          </div>
+        </div>
+        <div class="world-info-row">
+          <div class="world-info-label">
+            <i class="bi bi-calendar-range"></i>
+            <span>여정 기간</span>
+          </div>
+          <div class="world-info-value">
+            <strong>2015.08.04 ~ 2026.06.05</strong>
+          </div>
         </div>
       </div>
 
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-          <span class="timeline-year">1998년</span>
-          <h3 class="timeline-title">초고속 인터넷 보급</h3>
-          <p class="timeline-description">
-            ADSL 및 케이블 모뎀을 통한 초고속 인터넷 서비스가 보급되기 시작했습니다.
-            멀티미디어 콘텐츠 소비가 가능해지며 인터넷 이용 패턴이 크게 변화했습니다.
-            <a class="btn btn-sm btn-outline-success ms-2" href="https://search.naver.com/search.naver?query=ADSL 및 케이블 모뎀을 통한 초고속 인터넷 서비스가 보급되기 시작했습니다. 멀티미디어 콘텐츠 소비가 가능해지며 인터넷 이용 패턴이 크게 변화했습니다." target="_blank" rel="noopener" title="네이버 검색">
-              <i class="bi bi-search"></i>
-            </a>
+      <div class="world-symbol-section">
+        <h3 class="world-symbol-title"><i class="bi bi-lightning-charge"></i>상징 의미</h3>
+        <div class="world-symbol-content">
+          <div class="world-symbol-header">국제 원정대 유현석</div>
+          <p class="world-symbol-text">
+            아시아 서버를 출발점으로 삼아<br>
+            북미 서버와 유럽 서버의 메이저 리그를 석권하고<br>
+            <strong class="world-highlight">전 서버 메이저 리그 그랜드 슬램을 완성한 자</strong>
           </p>
+          <div class="world-symbol-footer">한국인터넷.한국</div>
+        </div>
+        <div class="world-server-flow">
+          <div class="world-server-node asia">
+            <div class="server-icon"><i class="bi bi-globe-asia-australia"></i></div>
+            <div class="server-label">아시아 서버</div>
+            <div class="server-desc">출발점</div>
+          </div>
+          <div class="world-server-arrow">
+            <i class="bi bi-arrow-right"></i>
+          </div>
+          <div class="world-server-node na">
+            <div class="server-icon"><i class="bi bi-globe-americas"></i></div>
+            <div class="server-label">북미 서버</div>
+            <div class="server-desc">메이저 리그 석권</div>
+          </div>
+          <div class="world-server-arrow">
+            <i class="bi bi-arrow-right"></i>
+          </div>
+          <div class="world-server-node eu">
+            <div class="server-icon"><i class="bi bi-globe-europe-africa"></i></div>
+            <div class="server-label">유럽 서버</div>
+            <div class="server-desc">메이저 리그 석권</div>
+          </div>
+          <div class="world-server-arrow">
+            <i class="bi bi-arrow-right"></i>
+          </div>
+          <div class="world-server-node world">
+            <div class="server-icon"><i class="bi bi-trophy-fill"></i></div>
+            <div class="server-label">전 서버</div>
+            <div class="server-desc">월드 그랜드 슬램 완성</div>
+          </div>
         </div>
       </div>
 
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-          <span class="timeline-year">1999년</span>
-          <h3 class="timeline-title">다음(Daum)과 네이버(Naver) 시대</h3>
-          <p class="timeline-description">
-            다음 커뮤니케이션과 네이버가 본격적으로 성장하며 한국형 포털 서비스의 전성기가 시작되었습니다.
-            <span class="person-highlight">네이버 이해진</span>과 <span class="person-highlight">카카오 김범석</span> 같은 인물들이
-            인터넷 생태계를 이끄는 상징으로 자리잡았습니다.
-            카페, 블로그 등 사용자 생성 콘텐츠(UGC) 문화가 형성되었습니다.
-            <a class="btn btn-sm btn-outline-success ms-2" href="https://search.naver.com/search.naver?query=다음 커뮤니케이션과 네이버가 본격적으로 성장하며 한국형 포털 서비스의 전성기가 시작되었습니다. 네이버 이해진과 카카오 김범석 같은 인물들이 인터넷 생태계를 이끄는 상징으로 자리잡았습니다. 카페, 블로그 등 사용자 생성 콘텐츠(UGC) 문화가 형성되었습니다." target="_blank" rel="noopener" title="네이버 검색">
-              <i class="bi bi-search"></i>
-            </a>
-          </p>
-        </div>
+      <div class="world-search-links">
+        <a href="https://www.google.com/search?q=한국인터넷+월드+그랜드+슬래머+F.K+e스포츠" target="_blank" class="search-link search-link-google"><i class="bi bi-google"></i>구글 검색</a>
+        <a href="https://www.youtube.com/results?search_query=한국인터넷+월드+그랜드+슬래머+F.K+e스포츠" target="_blank" class="search-link search-link-youtube"><i class="bi bi-youtube"></i>유튜브</a>
       </div>
+    </section>
 
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-          <span class="timeline-year">2000년대 초중반</span>
-          <h3 class="timeline-title">포털 서비스 경쟁과 지식 커뮤니티</h3>
-          <p class="timeline-description">
-            네이버 지식인과 다음 카페가 대표적인 지식 공유와 커뮤니티의 양대 축으로 자리잡았습니다.
-            이 시기에는 야후 코리아도 강력한 검색 및 포털 서비스로 경쟁 구도를 형성했습니다.
-            <a class="btn btn-sm btn-outline-success ms-2" href="https://search.naver.com/search.naver?query=네이버 지식인과 다음 카페가 대표적인 지식 공유와 커뮤니티의 양대 축으로 자리잡았습니다. 이 시기에는 야후 코리아도 강력한 검색 및 포털 서비스로 경쟁 구도를 형성했습니다." target="_blank" rel="noopener" title="네이버 검색">
-              <i class="bi bi-search"></i>
-            </a>
-          </p>
-        </div>
-      </div>
-
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-          <span class="timeline-year">2000년대 초반</span>
-          <h3 class="timeline-title">온라인 뉴스의 주류화</h3>
-          <p class="timeline-description">
-            전통 언론사들이 온라인 뉴스 서비스를 본격화하며 종이 신문에서 디지털 뉴스로의 전환이 가속화되었습니다.
-            실시간 뉴스와 댓글 문화가 발전했습니다.
-            <a class="btn btn-sm btn-outline-success ms-2" href="https://search.naver.com/search.naver?query=전통 언론사들이 온라인 뉴스 서비스를 본격화하며 종이 신문에서 디지털 뉴스로의 전환이 가속화되었습니다. 실시간 뉴스와 댓글 문화가 발전했습니다." target="_blank" rel="noopener" title="네이버 검색">
-              <i class="bi bi-search"></i>
-            </a>
-          </p>
-        </div>
-      </div>
-
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-          <span class="timeline-year">2004-2005년</span>
-          <h3 class="timeline-title">Web 2.0과 소셜미디어</h3>
-          <p class="timeline-description">
-            싸이월드, 미니홈피 등 한국형 소셜 네트워크 서비스가 폭발적으로 성장했습니다.
-            개인 미디어 시대가 본격화되며 1인 크리에이터 개념이 등장했습니다.
-            <a class="btn btn-sm btn-outline-success ms-2" href="https://search.naver.com/search.naver?query=싸이월드, 미니홈피 등 한국형 소셜 네트워크 서비스가 폭발적으로 성장했습니다. 개인 미디어 시대가 본격화되며 1인 크리에이터 개념이 등장했습니다." target="_blank" rel="noopener" title="네이버 검색">
-              <i class="bi bi-search"></i>
-            </a>
-          </p>
-        </div>
-      </div>
-
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-          <span class="timeline-year">2000년대 중반~2010년대 초반</span>
-          <h3 class="timeline-title">e스포츠와 온라인 게임 문화의 확장</h3>
-          <p class="timeline-description">
-            스타크래프트의 <span class="person-highlight">임요환</span>을 시작으로 프로게이머 문화가 대중화되었고, 월드 오브 워크래프트의 <span class="person-highlight">네임드 용개(EE)</span> 같은
-            유명 플레이어와 커뮤니티 문화가 주목받았습니다.
-            리그 오브 레전드에서는 반지의 제왕 원정대 같은 커뮤니티
-            원정대가 화제가 되었고, 한국 원정대가 북미 서버 원정대에 참여하면서 글로벌 교류가 활발해졌습니다.
-            이 당시 한국은 네임드 로테이션을 연습하며 전략 메타를 축적해갔습니다.
-            <a class="btn btn-sm btn-outline-success ms-2" href="https://search.naver.com/search.naver?query=스타크래프트의 임요환을 시작으로 프로게이머 문화가 대중화되었고, 월드 오브 워크래프트의 네임드 용개(EE) 같은 유명 플레이어와 커뮤니티 문화가 주목받았습니다. 리그 오브 레전드에서는 반지의 제왕 원정대 같은 커뮤니티 원정대가 화제가 되었고, 한국 원정대가 북미 서버 원정대에 참여하면서 글로벌 교류가 활발해졌습니다. 이 당시 한국은 네임드 로테이션을 연습하며 전략 메타를 축적해갔습니다." target="_blank" rel="noopener" title="네이버 검색">
-              <i class="bi bi-search"></i>
-            </a>
-          </p>
-        </div>
-      </div>
-
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-          <span class="timeline-year">2009-2010년</span>
-          <h3 class="timeline-title">스마트폰 혁명</h3>
-          <p class="timeline-description">
-            아이폰과 안드로이드 스마트폰의 보급으로 모바일 인터넷 시대가 열렸습니다.
-            모바일 앱, 모바일 뉴스 소비 패턴이 주류가 되었습니다.
-            <a class="btn btn-sm btn-outline-success ms-2" href="https://search.naver.com/search.naver?query=아이폰과 안드로이드 스마트폰의 보급으로 모바일 인터넷 시대가 열렸습니다. 모바일 앱, 모바일 뉴스 소비 패턴이 주류가 되었습니다." target="_blank" rel="noopener" title="네이버 검색">
-              <i class="bi bi-search"></i>
-            </a>
-          </p>
-        </div>
-      </div>
-
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-          <span class="timeline-year">2010년대 중반</span>
-          <h3 class="timeline-title">SNS와 동영상 플랫폼의 부상</h3>
-          <p class="timeline-description">
-            페이스북, 인스타그램, 유튜브 등 글로벌 플랫폼이 한국 시장에서 급성장했습니다.
-            동영상 콘텐츠가 주요 미디어로 자리잡으며 크리에이터 경제가 형성되었습니다.
-            <a class="btn btn-sm btn-outline-success ms-2" href="https://search.naver.com/search.naver?query=페이스북, 인스타그램, 유튜브 등 글로벌 플랫폼이 한국 시장에서 급성장했습니다. 동영상 콘텐츠가 주요 미디어로 자리잡으며 크리에이터 경제가 형성되었습니다." target="_blank" rel="noopener" title="네이버 검색">
-              <i class="bi bi-search"></i>
-            </a>
-          </p>
-        </div>
-      </div>
-
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-          <span class="timeline-year">2010년대 중반 이후</span>
-          <h3 class="timeline-title">페이커 등장과 e스포츠 글로벌화</h3>
-          <p class="timeline-description">
-            한국 e스포츠의 상징으로 <span class="person-highlight">페이커 이상혁</span>이 등장하며 세계적인 스타가 되었습니다.
-            e스포츠는 방송과 스트리밍을 통해 글로벌 문화로 자리잡았습니다.
-            <a class="btn btn-sm btn-outline-success ms-2" href="https://search.naver.com/search.naver?query=한국 e스포츠의 상징으로 페이커 이상혁이 등장하며 세계적인 스타가 되었습니다. e스포츠는 방송과 스트리밍을 통해 글로벌 문화로 자리잡았습니다." target="_blank" rel="noopener" title="네이버 검색">
-              <i class="bi bi-search"></i>
-            </a>
-          </p>
-        </div>
-      </div>
-
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-          <span class="timeline-year">2020년대</span>
-          <h3 class="timeline-title">AI와 개인화된 뉴스</h3>
-          <p class="timeline-description">
-            이재명 대통령이 LoL 전설 <span class="person-highlight">페이커 이상혁</span>에게 체육훈장 청룡장을 수여했다는 소식이 보도되었습니다.
-            해당 사건은 한국 e스포츠의 위상을 상징적으로 보여주는 기록으로 남았으며, 현재 진행형의 역사로 기록됩니다.
-            한국 원정대 단장의 말로는 좋은 성적을 낼 것 같은 특이하게 무빙을 하는 선수였다는 미드 라이전의 일화가 전해집니다.
-            <a class="btn btn-sm btn-outline-success ms-2" href="https://search.naver.com/search.naver?query=이재명 대통령이 LoL 전설 페이커 이상혁에게 체육훈장 청룡장을 수여했다는 소식이 보도되었습니다. 해당 사건은 한국 e스포츠의 위상을 상징적으로 보여주는 기록으로 남았으며, 현재 진행형의 역사로 기록됩니다. 한국 원정대 단장의 말로는 좋은 성적을 낼 것 같은 특이하게 무빙을 하는 선수였다는 미드 라이전의 일화가 전해집니다." target="_blank" rel="noopener" title="네이버 검색">
-              <i class="bi bi-search"></i>
-            </a>
-          </p>
-        </div>
-      </div>
-
+    <div class="home-link">
+      <a href="index.html"><i class="bi bi-house-door"></i>메인 페이지로 돌아가기</a>
     </div>
+  </main>
 
-    <div class="info-card mt-5">
-      <h3><i class="bi bi-lightning-charge"></i> 한국 인터넷의 특징</h3>
-      <div class="row mt-4">
-        <div class="col-md-6">
-          <h5 style="color: var(--primary-color); font-weight: 600;">
-            <i class="bi bi-speedometer2"></i> 세계 최고 수준의 인터넷 속도
-          </h5>
-          <p>한국은 세계에서 가장 빠른 평균 인터넷 속도를 자랑하며, 초고속 인터넷 보급률도 매우 높습니다.</p>
-        </div>
-        <div class="col-md-6">
-          <h5 style="color: var(--primary-color); font-weight: 600;">
-            <i class="bi bi-phone"></i> 모바일 우선 문화
-          </h5>
-          <p>스마트폰 보급률이 세계 최고 수준이며, 대부분의 인터넷 활동이 모바일을 통해 이루어집니다.</p>
-        </div>
-      </div>
-      <div class="row mt-3">
-        <div class="col-md-6">
-          <h5 style="color: var(--primary-color); font-weight: 600;">
-            <i class="bi bi-chat-dots"></i> 활발한 댓글 문화
-          </h5>
-          <p>뉴스 기사와 게시물에 대한 활발한 댓글 참여가 특징이며, 여론 형성에 큰 영향을 미칩니다.</p>
-        </div>
-        <div class="col-md-6">
-          <h5 style="color: var(--primary-color); font-weight: 600;">
-            <i class="bi bi-camera-video"></i> 라이브 스트리밍과 짧은 동영상
-          </h5>
-          <p>실시간 방송과 숏폼 콘텐츠가 인기를 끌며 새로운 형태의 미디어 소비가 이루어지고 있습니다.</p>
-        </div>
-      </div>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <strong>ICNN 인터넷 역사</strong>
+      <span>© 2024 ICNN | Internet Communication News Network. All rights reserved.</span>
+      <span>icnn@example.com</span>
     </div>
-
-    <div class="text-center mt-5 mb-4">
-      <a href="index.html" class="btn btn-lg btn-success">
-        <i class="bi bi-house-door"></i> 메인 페이지로 돌아가기
-      </a>
-    </div>
-
-  </div>
-
-  <footer class="text-center py-4 bg-light mt-5">
-    <p class="mb-0 text-muted">
-      <i class="bi bi-c-circle"></i> 2024 참소식.com | ICNN 인터넷 역사 아카이브
-    </p>
-    <p class="mb-0 text-muted">
-      <i class="bi bi-person-square"></i> 참소식.COM은 이 문서를 작성하는 한국인터넷 NPC입니다.
-    </p>
   </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-    // 스크롤 애니메이션
-    const observerOptions = {
-      threshold: 0.1,
-      rootMargin: '0px 0px -100px 0px'
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.style.opacity = '1';
-          entry.target.style.transform = 'translateY(0)';
-        }
-      });
-    }, observerOptions);
-
-    document.querySelectorAll('.timeline-item').forEach((item, index) => {
-      item.style.opacity = '0';
-      item.style.transform = 'translateY(30px)';
-      item.style.transition = `all 0.6s ease ${index * 0.1}s`;
-      observer.observe(item);
-    });
-
-    const naverLinks = document.querySelectorAll('a[title="네이버 검색"]');
-    naverLinks.forEach((naverLink) => {
-      if (naverLink.dataset.enhanced === 'true') {
-        return;
-      }
-
-      const url = new URL(naverLink.href);
-      const query = url.searchParams.get('query') || '';
-      const parent = naverLink.parentElement;
-
-      naverLink.dataset.enhanced = 'true';
-      naverLink.classList.add('search-link');
-      naverLink.innerHTML = '<span class="search-icon search-icon-naver">N</span>';
-
-      const googleLink = document.createElement('a');
-      googleLink.className = 'search-link';
-      googleLink.href = `https://www.google.com/search?q=${encodeURIComponent(query)}`;
-      googleLink.target = '_blank';
-      googleLink.rel = 'noopener';
-      googleLink.title = '구글 검색';
-      googleLink.innerHTML = '<span class="search-icon search-icon-google">G</span>';
-
-      const bingLink = document.createElement('a');
-      bingLink.className = 'search-link';
-      bingLink.href = `https://www.bing.com/search?q=${encodeURIComponent(query)}`;
-      bingLink.target = '_blank';
-      bingLink.rel = 'noopener';
-      bingLink.title = '빙 검색';
-      bingLink.innerHTML = '<span class="search-icon search-icon-bing">B</span>';
-
-      parent.insertBefore(googleLink, naverLink.nextSibling);
-      parent.insertBefore(bingLink, googleLink.nextSibling);
-    });
-  </script>
-
 </body>
 </html>

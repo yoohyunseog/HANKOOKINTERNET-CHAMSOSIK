@@ -1,0 +1,86 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
+  "category": "Mainboard",
+  "id": "mainboard-rog-maximus-z790-hero",
+  "name": "ROG Maximus Z790 Hero",
+  "maker": "ASUS",
+  "platform": "Intel Z790",
+  "estimatedPriceKrw": 1038490,
+  "priceBand": "60만원 이상",
+  "speedLabel": "DDR5",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "Mainboard",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 95,
+  "valueIndex": 9.1,
+  "aiUseScore": 62,
+  "powerWatts": null,
+  "tags": [
+    "high-end",
+    "overclocking",
+    "gaming"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "Mainboard",
+    "partId": "mainboard-rog-maximus-z790-hero",
+    "partName": "ROG Maximus Z790 Hero",
+    "speed": {
+      "score": 100,
+      "weight": 0.32,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "Mainboard",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 950,
+      "value": 121,
+      "aiFit": 620,
+      "priceEfficiency": 100,
+      "powerEfficiency": 950
+    },
+    "nbVector": [
+      100,
+      950,
+      121,
+      620,
+      100,
+      950
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 234.258,
+    "nbMin": 365.841,
+    "weightedScore": 366,
+    "nbBand": "100~499",
+    "summary": "Mainboard ROG Maximus Z790 Hero 부품을 속도 중심 N/B 데이터베이스 점수 366점으로 저장했습니다."
+  },
+  "nbWeightedScore": 366,
+  "nbMax": 234.258,
+  "nbMin": 365.841,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=ASUS%20ROG%20Maximus%20Z790%20Hero%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "Includes PCIe 5.0 HYPER M.2 card, 20+1 phase power delivery.",
+  "textRepair": null
+}

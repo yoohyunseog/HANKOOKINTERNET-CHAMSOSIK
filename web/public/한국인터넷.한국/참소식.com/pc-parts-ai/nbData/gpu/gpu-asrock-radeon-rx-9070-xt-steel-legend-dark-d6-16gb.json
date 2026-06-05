@@ -1,0 +1,84 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
+  "category": "GPU",
+  "id": "gpu-asrock-radeon-rx-9070-xt-steel-legend-dark-d6-16gb",
+  "name": "ASRock Radeon RX 9070 XT Steel Legend DARK D6 16GB",
+  "maker": "ASRock",
+  "platform": "PCIe 5.0",
+  "estimatedPriceKrw": 1086400,
+  "priceBand": "60만원 이상",
+  "speedLabel": "2970MHz",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "GPU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 85,
+  "valueIndex": 7.8,
+  "aiUseScore": 55,
+  "powerWatts": null,
+  "tags": [
+    "gaming"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "GPU",
+    "partId": "gpu-asrock-radeon-rx-9070-xt-steel-legend-dark-d6-16gb",
+    "partName": "ASRock Radeon RX 9070 XT Steel Legend DARK D6 16GB",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "GPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 850,
+      "value": 104,
+      "aiFit": 550,
+      "priceEfficiency": 90,
+      "powerEfficiency": 850
+    },
+    "nbVector": [
+      100,
+      850,
+      104,
+      550,
+      90,
+      850
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 233.782,
+    "nbMin": 366.802,
+    "weightedScore": 340,
+    "nbBand": "100~499",
+    "summary": "GPU ASRock Radeon RX 9070 XT Steel Legend DARK D6 16GB 부품을 속도 중심 N/B 데이터베이스 점수 340점으로 저장했습니다."
+  },
+  "nbWeightedScore": 340,
+  "nbMax": 233.782,
+  "nbMin": 366.802,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=ASRock%20Radeon%20RX%209070%20XT%20Steel%20Legend%20DARK%20D6%2016GB%20%EA%B0%80%EA%B2%A9",
+  "notes": "Steel Legend DARK model, distinct from the standard Steel Legend.",
+  "textRepair": null
+}

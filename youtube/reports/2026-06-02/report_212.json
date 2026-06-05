@@ -1,0 +1,290 @@
+{
+  "timestamp": "2026-06-02T21:23:14.820583",
+  "model": "kimi-k2.5:cloud",
+  "keyword_count": 3,
+  "analyze_subtitles": true,
+  "analysis_source": "youtube",
+  "keywords": [
+    {
+      "keyword": "오늘의 주요 뉴스",
+      "is_fixed": true,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "지방선거 투표",
+      "is_fixed": false,
+      "views": [
+        6316,
+        2589
+      ],
+      "video_count": 2,
+      "videos": [
+        {
+          "title": "6·3 지방선거 '본투표 D-1'...격전지 판세는? / YTN",
+          "video_id": "ObZP-_yL3YA",
+          "views": 6316,
+          "upload_date": "2026-06-02",
+          "url": "https://www.youtube.com/watch?v=ObZP-_yL3YA",
+          "subtitle_summary": "The user wants me to summarize a YouTube video transcript in Korean, within approximately 500 characters, using 3-5 sentences. The video is about the June 3 local elections (6·3 지방선거) being one day away from the main vote, focusing on the battleground states/prefectures.\nKey points from the transcript:\n1. Parties are making final appeals for voter turnout (D-1 before main vote)\n2. Democratic Party leader Jeong Cheong-rae is campaigning in Seoul\n3. People Power Party leader Jang Dong-hyeok is campaigning in Chungcheong region\n4. Seoul is crucial - historically determines the overall outcome of local elections\n5. Both leaders chose areas where they have personal constituencies/connections (Jeong in Seoul, Jang in Chungnam)\n6. Floor leaders are going to traditional strongholds (Han Byung-do to Jeolla, Song Won-seok to Yeongnam) to boost turnout\n7. Both parties are facing internal difficulties and leadership challenges post-election\nI need to summarize this in 3-5 sentences, around 500 characters, strictly in Korean.\nDraft:\n6·3 지방선거 본투표를 하루 앞두고 여야 대표는 각각 서울과 충청에서 마지막 유세를 펼치고 있다. 민주당 정청례 대표는 서울에서 선거를 마무리하며, 역대 지방선거에서 서울 승패가 전체 성적표를 좌우한다는 점을 강조했다. 국민의힘 장동혁 대표는 충청에서 유세를 하는데, 이는 각자의 지역구와 관련이 있으며 접전지인 동시에 당내 비토 여론을 의식한 선택으로 풀이된다. 양당 원내대표는 각각 전북과 영남 등 전통적 지지 기반을 찾아 투표율을 끌어올리는 전략을 쓰고 있다. 이번 선거는 지방선거 결과뿐 아니라 당 대표 체제에 대한 평가와 향후 당내 역학 구도에도 영향을 미칠 것으로 보인다.\nCharacter count check:\n6·3 지방선거 본투표를 하루 앞두고 여야 대표는 각각 서울과 충청에서 마지막 유세를 펼치고 있다. (49)\n민주당 정청례 대표는 서울에서 선거를 마무리하며, 역대 지방선거에서 서울 승패가 전체 성적표를 좌우한다는 점을 강조했다. (63)\n국민의힘 장동혁 대표는 충청에서 유세를 하는데, 이는 각자의 지역구와 관련이 있으며 접전지인 동시에 당내 비토 여론을 의식한 선택으로 풀이된다. (77)\n양당 원내대표는 각각 전북과 영남 등 전통적 지지 기반을 찾아 투표율을 끌어올리는 전략을 쓰고 있다. (56)\n이번 선거는 지방선거 결과뿐 아니라 당 대표 체제에 대한 평가와 향후 당내 역학 구도에도 영향을 미칠 것으로 보인다. (67)\nTotal: around 312 characters. This is well within the 500 character limit and captures the essence. Let me make it slightly more comprehensive while keeping it under 500.\nRevised:\n6·3 지방선거 본투표를 하루 앞두고 여야 대표는 각각 서울과 충청에서 총력 유세를 펼치고 있다. 민주당 정청례 대표는 서울에서 마지막 유세를 하는데, 이는 역대 지방선거에서 서울 승패가 전체 성적표를 좌우하는 가장 중요한 격전지이기 때문이다. 국민의힘 장동혁 대표는 충청에서 유세를 펼치는데, 이는 각자의 지역구이자 접전지인",
+          "analysis_source": "subtitle",
+          "db_saved": true
+        },
+        {
+          "title": "본투표 D-1!! 챗GPT vs 제미나이 6.3 지방선거 예측 대결...충격적인 결과가 나왔다?![엄튜브]",
+          "video_id": "A1S8YiVkM2Y",
+          "views": 2589,
+          "upload_date": "2026-06-02",
+          "url": "https://www.youtube.com/watch?v=A1S8YiVkM2Y",
+          "subtitle_summary": "챗GPT와 제미나이가 6.3 지방선거 주요 지역 예측에서 상반된 결과를 내놓은 가운데, 패널들은 여당이 6~7개 광역단체를 수성할 것으로 전망했다. 한 패널은 대구·경북·인천·충남·대전·경남 등 6곳은 확실히 가져가되 서울·부산은 애매하다고 분석했고, 다른 패널은 서울·부산까지 포함해 7곳을 예측했다. 또한 박찬 후보자에 대해 순수하나 정치적 미숙함을 보인다는 평가가 나왔으며, 민주당은 서울·부산·울산·경남·대구·전북을 접전지로 보고 충남은 강세 지역으로 평가했다.",
+          "analysis_source": "subtitle",
+          "db_saved": true
+        }
+      ],
+      "max": 3.2124,
+      "min": 0.0,
+      "nb_score": 32124.1886,
+      "avg_views": 4452.5,
+      "total_views": 8905
+    },
+    {
+      "keyword": "플레이스테이션",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "닷컴 버블",
+      "is_fixed": false,
+      "views": [
+        3212
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "세계 경제 초토화 시킨 '닷컴 버블'…\"더한 파국 온다\" 전문가의 경고 [지금이뉴스] / YTN",
+          "video_id": "w4pW0diAsEU",
+          "views": 3212,
+          "upload_date": "2026-06-02",
+          "url": "https://www.youtube.com/watch?v=w4pW0diAsEU",
+          "subtitle_summary": "The user wants me to summarize a YouTube video caption in Korean within approximately 500 characters. The video is about the 'dot-com bubble' warning from experts that a bigger crash is coming.\nKey points from the caption:\n1. Big tech stocks (Nvidia, Apple, Alphabet, Microsoft, Meta, Micron) are forming a bigger bubble than the 1999 dot-com bubble due to the AI boom\n2. Zoho Corporation co-founder Sridhar Vembu claimed these companies' market caps are overvalued compared to actual business performance\n3. He used PSR (Price-to-Sales Ratio) as evidence: Nvidia ~20x, Apple/Alphabet/Microsoft 10-11x, Meta ~7.5x, Micron ~19x\n4. He referenced Scott McNealy's comment about the impossibility of recovering investment when PSR is 10x\n5. Despite this, big tech continues to show strength due to AI expectations\n6. Nvidia exceeded $5 trillion market cap last month\nI need to:\nWrite ONLY in Korean (no English at all)\nKeep it around 500 characters\nSummarize in 3-5 sentences covering the key points\nLet me draft:\n인공지능 열풍으로 급등한 빅테크 기업들의 주가가 1999년 닷컴 버블보다 더 큰 거품을 형성하고 있다는 경고가 제기되었습니다. 조호 코포레이션 공동 창립자 스리다르 벰부는 엔비디아, 애플, 마이크로소프트 등 주요 기업들의 주가매출비율(PSR)이 7.5배에서 20배에 달해 실제 사업 성과에 비해 지나치게 고평가되었다고 주장했습니다. 그는 2000년대 초 스콧 맥닐리의 발언을 인용하며, 이러한 고평가 상태에서는 투자자들이 원금을 회수하기 어렵다고 지적했습니다. 그럼에도 불구하고 AI가 산업 전반의 생산성을 높일 것이라는 기대 속에 엔비디아 등 빅테크 기업들은 여전히 시장에서 강세를 보이고 있습니다.\nLet me check the character count:\n인공지능 열풍으로 급등한 빅테크 기업들의 주가가 1999년 닷컴 버블보다 더 큰 거품을 형성하고 있다는 경고가 제기되었습니다. 조호 코포레이션 공동 창립자 스리다르 벰부는 엔비디아, 애플, 마이크로소프트 등 주요 기업들의 주가매출비율(PSR)이 7.5배에서 20배에 달해 실제 사업 성과에 비해 지나치게 고평가되었다고 주장했습니다. 그는 2000년대 초 스콧 맥닐리의 발언을 인용하며, 이러한 고평가 상태에서는 투자자들이 원금을 회수하기 어렵다고 지적했습니다. 그럼에도 불구하고 AI가 산업 전반의 생산성을 높일 것이라는 기대 속에 엔비디아 등 빅테크 기업들은 여전히 시장에서 강세를 보이고 있습니다.\nCounting characters (excluding spaces):\n인공지능(4) 열풍으로(4) 급등한(3) 빅테크(4) 기업들의(5) 주가가(3) 1999년(6) 닷컴(3) 버블보다(5) 더(2) 큰(2) 거품을(4) 형성하고(5) 있다는(4) 경고가(4) 제기되었습니다(7).\n조호(2) 코포레이션(6) 공동(2) 창립자(4) 스리다르(5) 벰부는(4) 엔비디아(5), 애플(3), 마이크로소프트(6) 등(2) 주요(2) 기업들의(5) 주가매출비율(7)(PSR",
+          "analysis_source": "subtitle",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "주식시장",
+      "is_fixed": false,
+      "views": [
+        2364
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "6월 주식시장 주인공은 LG?…젠슨 황·구광모, 회동서 무슨 얘기 나눌까",
+          "video_id": "LBO3PaDRbZc",
+          "views": 2364,
+          "upload_date": "2026-06-02",
+          "url": "https://www.youtube.com/watch?v=LBO3PaDRbZc",
+          "subtitle_summary": "사용자가 YouTube 영상 자막을 한국어로 500자 내외로 요약해달라고 요청했습니다. 자막 내용은 젠슨 황(NVIDIA CEO)과 구광모(LG그룹 회장)의 회동에 관한 것입니다.\n핵심 내용을 추출하면:\n1. 젠슨 황 CEO가 6월 5일 한국 방문 예정이며, 처음으로 LG그룹 총수(구광모 회장)와 공식 회담 예정\n2. 주요 협력 분야는 로보틱스와 피지컬 AI\n3. LG전자는 역대 최고가 경신, 이틀 연속 상한가 등 주가 급등\n4. LG가 선택된 이유: 방대한 실물 데이터와 실제 환경 검증 인프라 보유 (가정용 가전, 스마트 팩토리 운영)\n5. 계열사별 협력: LG전자(클로이 로봇에 NVIDIA 칩 탑재, 액추에이터 양산), LG이노텍(패키지 기판 공급망 진입)\n6. 협력 범위가 로봇, 냉각, 기판, 디스플레이 등 그룹 전체 밸류체인으로 확대될 가능성\n500자 내외로 3-5문장으로 요약해야 합니다. 한국어로만 작성하고 영어는 사용하지 말아야 합니다.\n초안:\nNVIDIA 젠슨 황 CEO가 6월 5일 한국을 방문해 처음으로 LG그룹 구광모 회장과 공식 회담을 갖는다. 이번 회동에서는 로보틱스와 피지컬 AI 분야 협력이 핵심 의제로, 이 소식에 LG전자 주가는 이틀 연속 상한가를 기록하며 역대 최고가를 경신했다. LG가 선택된 이유는 가정용 가전과 스마트 팩토리를 통해 확보한 방대한 실물 데이터와 실제 환경 검증 인프라를 보유했기 때문이다. 계열사별로는 LG전자가 로봇에 NVIDIA 칩을 탑재하고 액추에이터를 양산하며, LG이노텍은 패키지 기판 공급망에 진입하는 등 협력이 확대되고 있다. 이번 회담을 통해 양사 협력이 로봇, 냉각, 기판, 디스플레이 등 그룹 전체 밸류체인으로 확대될 가능성이 커지고 있다.\n글자 수 확인:\nNVIDIA 젠슨 황 CEO가 6월 5일 한국을 방문해 처음으로 LG그룹 구광모 회장과 공식 회담을 갖는다. (56자)\n이번 회동에서는 로보틱스와 피지컬 AI 분야 협력이 핵심 의제로, 이 소식에 LG전자 주가는 이틀 연속 상한가를 기록하며 역대 최고가를 경신했다. (72자)\nLG가 선택된 이유는 가정용 가전과 스마트 팩토리를 통해 확보한 방대한 실물 데이터와 실제 환경 검증 인프라를 보유했기 때문이다. (67자)\n계열사별로는 LG전자가 로봇에 NVIDIA 칩을 탑재하고 액추에이터를 양산하며, LG이노텍은 패키지 기판 공급망에 진입하는 등 협력이 확대되고 있다. (76자)\n이번 회담을 통해 양사 협력이 로봇, 냉각, 기판, 디스플레이 등 그룹 전체 밸류체인으로 확대될 가능성이 커지고 있다. (65자)\n총 336자 정도로 500자 내외에",
+          "analysis_source": "subtitle",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "한화에어로스페이스 폭발",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "태풍 장미",
+      "is_fixed": false,
+      "views": [
+        69425
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "6호 태풍 장미, 일본 규슈 접근…3년 전과 유사 ‘초긴장’ / KBS  2026.06.02.",
+          "video_id": "ZrDhhod144I",
+          "views": 69425,
+          "upload_date": "2026-06-02",
+          "url": "https://www.youtube.com/watch?v=ZrDhhod144I",
+          "subtitle_summary": "The user wants a summary of a YouTube video caption in Korean, around 500 characters, with 3-5 sentences capturing the key points.\nKey information from the caption:\n1. Typhoon Jangmi (6th typhoon) passed Okinawa and is now approaching Kyushu, Japan\n2. Similar to Typhoon Mawar 3 years ago (2023), which caused significant damage (6 deaths, 2 missing, 10,000+ buildings damaged) due to water vapor influx causing heavy rain\n3. Current status: 975 hPa pressure, 380km radius, max wind speed 35m/s\n4. Already 330+ flights cancelled in Kyushu\n5. Japan Meteorological Agency is on high alert due to massive water vapor influx on the east side of the typhoon\n6. Expected to move east along Honshu coastline and pass through Tokyo metropolitan area around tomorrow evening\nI need to write this in Korean only, no English, around 500 characters, 3-5 sentences.\nDraft:\n제6호 태풍 장미가 일본 오키나와를 지나 규슈 남부를 통과하며 일본 기상당국이 초긴장 상태에 들어갔습니다. 중심기압 975헥토파스칼, 최대 순간풍속 초속 35m의 강풍으로 규슈 지역 항공편 330여 편이 결항되었고 도로 곳곳에서 가로수가 쓰러지는 등 피해가 발생했습니다. 특히 3년 전 태풍 마와르처럼 동쪽으로 유입되는 대량의 수증기로 인해 집중호우가 발생할 가능성이 커 인명피해와 건물 파손 우려가 크며, 태풍은 내일 저녁쯤 일본 수도권을 지날 것으로 예보되었습니다.\nCharacter count check:\n제6호 태풍 장미가 일본 오키나와를 지나 규슈 남부를 통과하며 일본 기상당국이 초긴장 상태에 들어갔습니다. (49자)\n중심기압 975헥토파스칼, 최대 순간풍속 초속 35m의 강풍으로 규슈 지역 항공편 330여 편이 결항되었고 도로 곳곳에서 가로수가 쓰러지는 등 피해가 발생했습니다. (78자)\n특히 3년 전 태풍 마와르처럼 동쪽으로 유입되는 대량의 수증기로 인해 집중호우가 발생할 가능성이 커 인명피해와 건물 파손 우려가 크며, 태풍은 내일 저녁쯤 일본 수도권을 지날 것으로 예보되었습니다. (104자)\nTotal: 49 + 78 + 104 = 231 characters. This is too short (need around 500). Let me expand.\nRevised draft:\n제6호 태풍 장미가 일본 오키나와를 훑고 지나 현재 규슈 남부를 통과하고 있어 일본 기상당국이 3년 전 태풍 마와르 때와 같은 초긴장 상태에 돌입했습니다. 중심기압 975헥토파스칼, 최대 순간풍속 초속 35m의 강풍으로 규슈 지역 항공편 330여 편이 결항되었고 오키나와에서는 가로수가 뿌리째 뽑히고 정전으로 신호등이 먹통이 되는 등 피해가 속출하고 있습니다. 기상당국은 태풍 동쪽으로 유입되는 대량의 수증기로 인해 2023년 태풍 마와르 때처럼 집중호우가 발생하여 인명피해와 건물 파손이 우려된다며 경계를 강화하고 있으며, 장미는 일본 혼슈 해안선을 따라 동쪽으로 이동해 내일 저녁쯤 도쿄 등 수",
+          "analysis_source": "subtitle",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "선거운동",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "반도체 산업",
+      "is_fixed": false,
+      "views": [
+        288
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "[직설] 성과급 논쟁, 복지 확대로 확전…반도체 산업 경쟁력에 영향 미칠까",
+          "video_id": "81JbL1-vros",
+          "views": 288,
+          "upload_date": "2026-06-02",
+          "url": "https://www.youtube.com/watch?v=81JbL1-vros",
+          "subtitle_summary": "The user wants a summary of a YouTube video transcript in Korean, around 500 characters, with 3-5 sentences covering the key points.\nKey points from the transcript:\n1. The semiconductor boom has led to a performance bonus controversy expanding to welfare benefits\n2. SK Hynix union is demanding housing fund support like Samsung Electronics before next month's wage negotiations\n3. Samsung Electronics agreed to provide up to 500 million won in housing stability funds through labor-management consultations\n4. SK Hynix had previously agreed to pay about 10% of operating profit as performance bonuses, which is seen as a groundbreaking condition\n5. Samsung employees were dissatisfied because their EVA (Economic Value Added) calculation method was less transparent and percentages were lower than SK Hynix\n6. The core issue is the competition between the two companies over profit sharing methods, and concerns about overheating/escalation of benefits\n7. Concerns that this might affect the competitiveness of the Korean semiconductor industry\nI need to summarize this in Korean, around 500 characters, 3-5 sentences.\nDraft:\n반도체 호황으로 인한 성과급 논란이 복지 확대로 확전되고 있습니다. SK하이닉스 노조는 삼성전자처럼 주택자금 지원을 요구하며, 삼성전자는 최대 5억 원의 주택 안정 자금을 신설하기로 했습니다. SK하이닉스는 영업이익의 10%를 성과급으로 지급하기로 해 삼성전자 직원들의 불만을 샀고, 이로 인해 양사 간 복지 혜택 경쟁이 심화되고 있습니다. 전문가들은 이러한 과열 경쟁이 반도체 산업 경쟁력에 악영향을 미칠 수 있다고 우려합니다.\nCharacter count check:\n반도체 호황으로 인한 성과급 논란이 복지 확대로 확전되고 있습니다. (32)\nSK하이닉스 노조는 삼성전자처럼 주택자금 지원을 요구하며, 삼성전자는 최대 5억 원의 주택 안정 자금을 신설하기로 했습니다. (63)\nSK하이닉스는 영업이익의 10%를 성과급으로 지급하기로 해 삼성전자 직원들의 불만을 샀고, 이로 인해 양사 간 복지 혜택 경쟁이 심화되고 있습니다. (78)\n전문가들은 이러한 과열 경쟁이 반도체 산업 경쟁력에 악영향을 미칠 수 있다고 우려합니다. (45)\nTotal: around 218 characters. That's too short. I need to expand to around 500 characters.\nLet me expand:\n반도체 초호황으로 인한 성과급 논란이 주택자금 지원 등 복지 확대로 확전되고 있습니다. SK하이닉스 노조는 삼성전자처럼 저금리 주택 대출 확대를 요구하고 있으며, 삼성전자는 최대 5억 원의 주택 안정 자금 지원을 신설하기로 노사 합의를 마쳤습니다. 이는 SK하이닉스가 영업이익의 10%를 성과급으로 지급하기로 한 파격적인 조건에 비해 삼성전자의 EVA 방식이 불투명하고 지급률이 낮다는 직원들의 불만이 커졌기 때문입니다. 전문가들은 두 기업 간의 과도한 복지 혜택 경쟁이 반도체 산업 전체로 확산되어 우리 반도체 산업의 경쟁력을 해칠 수 있다고 우려하고 있습니다.\nCharacter count:\n반도체 초호황으로 인한 성과급 논란이 주택자금 지원 등 복지 확대로 확전되고 있습니다. (44)\nSK하이닉스 노조는 삼성전자처럼 저금리 주택 대출 확대를 요구하고 있으며, 삼성전자는 최",
+          "analysis_source": "subtitle",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "삼성전자 시총",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "AI 메모리 협력",
+      "is_fixed": false,
+      "views": [
+        2430
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "[이슈] 최태원 만난 젠슨황, '시총 1조' 샤라웃/\"AI 혈맹\"...깐부 강림에 주가 '불기둥'/2026년 6월 2일(화)/KBS",
+          "video_id": "y4AWBIzniNY",
+          "views": 2430,
+          "upload_date": "2026-06-02",
+          "url": "https://www.youtube.com/watch?v=y4AWBIzniNY",
+          "subtitle_summary": "The user wants me to summarize a YouTube video caption in Korean, around 500 characters, with 3-5 sentences. The content is about Jensen Huang (NVIDIA CEO) meeting with Korean business leaders including Chey Tae-won (SK Group) and Koo Kwang-mo (LG Group), discussing AI cooperation, and the impact on stock prices.\nKey points from the caption:\n1. Chey Tae-won met Jensen Huang in Taipei on June 1st to discuss AI memory cooperation\n2. SK Hynix shared photos celebrating NVIDIA's $1 trillion market cap and confirmed cooperation will\n3. Jensen Huang will meet Chey again during his Korea visit\n4. Jensen Huang will also meet Koo Kwang-mo (LG Group chairman) - LG stocks rising (LG Electronics up 29.86%, LG CNS up 26%, etc.)\n5. Market expectation about Physical AI and robotics cooperation\n6. Jensen Huang visiting Korea on June 4th, meeting with Chey Tae-won, Koo Kwang-mo, Lee Hae-jin (Naver) from June 5th\n7. Chung Eui-sun (Hyundai) reviewing attendance, Lee Jae-yong (Samsung) unable to attend due to overseas schedule\nI need to write this in Korean only, no English, around 500 characters (which is roughly 3-5 sentences in Korean).\nLet me draft:\n최태원 SK그룹 회장이 대만에서 젠슨 황 엔비디아 CEO와 만나 AI 메모리 협력을 논의했으며, 젠슨 황은 이달 4일 한국을 방문해 최태원 회장, 구광모 LG그룹 회장, 이해진 네이버 의장 등과 재회할 예정입니다. 특히 구광모 회장과의 만남을 앞두고 LG그룹 계열사들이 피지컬 AI 및 로봇 사업 협력 기대감에 힘입어 LG전자는 29% 이상 급등하는 등 주가가 연일 강세를 보이고 있습니다. 업계에서는 이번 방한을 계기로 국내 기업들과 AI 반도체를 넘어 로보틱스와 피지컬 AI 분야로 협력이 확대될지 주목하고 있으며, 이재용 삼성전자 회장은 해외 일정으로 참석하지 못할 것으로 알려졌습니다.\nLet me check character count:\n최태원 SK그룹 회장이 대만에서 젠슨 황 엔비디아 CEO와 만나 AI 메모리 협력을 논의했으며, 젠슨 황은 이달 4일 한국을 방문해 최태원 회장, 구광모 LG그룹 회장, 이해진 네이버 의장 등과 재회할 예정입니다. 특히 구광모 회장과의 만남을 앞두고 LG그룹 계열사들이 피지컬 AI 및 로봇 사업 협력 기대감에 힘입어 LG전자는 29% 이상 급등하는 등 주가가 연일 강세를 보이고 있습니다. 업계에서는 이번 방한을 계기로 국내 기업들과 AI 반도체를 넘어 로보틱스와 피지컬 AI 분야로 협력이 확대될지 주목하고 있으며, 이재용 삼성전자 회장은 해외 일정으로 참석하지 못할 것으로 알려졌습니다.\nCounting... roughly 280-300 characters. That's a bit short for 500 characters. Let me expand slightly to get closer to 500 characters.\nRevised:\n최태원 SK그룹 회장이 대만에서 젠슨 황 엔비디아 CEO와 만나 AI 메모리 협력을 논의했으며, 젠슨 황은 이달 4일 한국을 방문해 최태원 회장, 구광모 LG그룹 회장, 이해진 네이버 의장 등과 재회할 예정입니다. 특히 구광모 회장과의 만남을 앞두고 LG그룹 계열사들이 피지컬 AI 및 로봇 사업 �",
+          "analysis_source": "subtitle",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "물가 상승",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "마진콜 대출",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "한국 스웨덴 방산 협력",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "쪼개기 연차",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "치매 치료 신약",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    }
+  ]
+}

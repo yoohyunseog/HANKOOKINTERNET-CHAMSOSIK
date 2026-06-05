@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-06-01T15:15:40.339+09:00",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
   "category": "GPU",
   "id": "gpu-msi-geforce-rtx-5080-gaming-trio-oc",
   "name": "MSI GeForce RTX 5080 Gaming Trio OC",
@@ -82,9 +82,5 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=MSI%20GeForce%20RTX%205080%20Gaming%20Trio%20%EA%B0%80%EA%B2%A9",
   "notes": "Tri Frozr 4, 16GB GDDR7, 3-fan",
-  "textRepair": null,
-  "sourceType": "collector",
-  "sourceQuery": "",
-  "collectedPricesKrw": [],
-  "targetMatched": null
+  "textRepair": null
 }

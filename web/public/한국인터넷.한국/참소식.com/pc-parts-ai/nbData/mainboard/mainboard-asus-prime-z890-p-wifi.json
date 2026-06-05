@@ -1,0 +1,86 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
+  "category": "Mainboard",
+  "id": "mainboard-asus-prime-z890-p-wifi",
+  "name": "ASUS PRIME Z890-P WIFI",
+  "maker": "ASUS",
+  "platform": "LGA1851",
+  "estimatedPriceKrw": 350000,
+  "priceBand": "30~60만원",
+  "speedLabel": "DDR5 8666MHz",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "Mainboard",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 70,
+  "valueIndex": 20,
+  "aiUseScore": 46,
+  "powerWatts": null,
+  "tags": [
+    "Z890",
+    "WiFi",
+    "ATX"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "Mainboard",
+    "partId": "mainboard-asus-prime-z890-p-wifi",
+    "partName": "ASUS PRIME Z890-P WIFI",
+    "speed": {
+      "score": 100,
+      "weight": 0.32,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "Mainboard",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 700,
+      "value": 267,
+      "aiFit": 460,
+      "priceEfficiency": 290,
+      "powerEfficiency": 700
+    },
+    "nbVector": [
+      100,
+      700,
+      267,
+      460,
+      290,
+      700
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 326.81,
+    "nbMin": 394.73,
+    "weightedScore": 321,
+    "nbBand": "100~499",
+    "summary": "Mainboard ASUS PRIME Z890-P WIFI 부품을 속도 중심 N/B 데이터베이스 점수 321점으로 저장했습니다."
+  },
+  "nbWeightedScore": 321,
+  "nbMax": 326.81,
+  "nbMin": 394.73,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=ASUS%20Prime%20Z890-P%20WIFI%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "CSM model available, supports PCIe 5.0, Thunderbolt 4",
+  "textRepair": null
+}

@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-06-01T15:15:36.608+09:00",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
   "category": "CPU",
   "id": "cpu-amd-9-5-7900x",
   "name": "AMD 라이젠9-5세대 7900X (라파엘)",
@@ -82,9 +82,5 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=AMD%20Ryzen%209%207900X%20%EC%B5%9C%EC%A0%80%EA%B0%80",
   "notes": "12 cores, 24 threads, cooler not included",
-  "textRepair": null,
-  "sourceType": "collector",
-  "sourceQuery": "",
-  "collectedPricesKrw": [],
-  "targetMatched": null
+  "textRepair": null
 }

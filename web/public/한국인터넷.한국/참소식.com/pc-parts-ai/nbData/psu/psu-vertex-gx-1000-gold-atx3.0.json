@@ -1,0 +1,86 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
+  "category": "PSU",
+  "id": "psu-vertex-gx-1000-gold-atx3.0",
+  "name": "VERTEX GX-1000 GOLD 풀모듈러 ATX3.0",
+  "maker": "Seasonic",
+  "platform": "ATX",
+  "estimatedPriceKrw": 350000,
+  "priceBand": "30~60만원",
+  "speedLabel": "80 PLUS Gold",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "PSU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 75,
+  "valueIndex": 21.4,
+  "aiUseScore": 49,
+  "powerWatts": 1000,
+  "tags": [
+    "ATX 3.0",
+    "PCIe 5.0",
+    "Full Modular"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "PSU",
+    "partId": "psu-vertex-gx-1000-gold-atx3.0",
+    "partName": "VERTEX GX-1000 GOLD 풀모듈러 ATX3.0",
+    "speed": {
+      "score": 100,
+      "weight": 0.32,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "PSU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 750,
+      "value": 285,
+      "aiFit": 490,
+      "priceEfficiency": 290,
+      "powerEfficiency": 100
+    },
+    "nbVector": [
+      100,
+      750,
+      285,
+      490,
+      290,
+      100
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 168.364,
+    "nbMin": 370.76,
+    "weightedScore": 300,
+    "nbBand": "100~499",
+    "summary": "PSU VERTEX GX-1000 GOLD 풀모듈러 ATX3.0 부품을 속도 중심 N/B 데이터베이스 점수 300점으로 저장했습니다."
+  },
+  "nbWeightedScore": 300,
+  "nbMax": 168.364,
+  "nbMin": 370.76,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Seasonic%20Vertex%20GX-1000%20Gold%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "12-year warranty, ETA Platinum certified",
+  "textRepair": null
+}

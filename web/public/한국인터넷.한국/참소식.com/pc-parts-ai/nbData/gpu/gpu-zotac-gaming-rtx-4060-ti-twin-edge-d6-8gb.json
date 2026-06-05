@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-06-01T15:15:41.020+09:00",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
   "category": "GPU",
   "id": "gpu-zotac-gaming-rtx-4060-ti-twin-edge-d6-8gb",
   "name": "ZOTAC GAMING 지포스 RTX 4060 Ti TWIN Edge D6 8GB",
@@ -80,9 +80,5 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=ZOTAC%20%EC%A7%80%ED%8F%AC%EC%8A%A4%20RTX%204060%20Ti%20Twin%20Edge%20%EC%B5%9C%EC%A0%80%EA%B0%80",
   "notes": "Twin Edge model, 2 fans, 160W power consumption",
-  "textRepair": null,
-  "sourceType": "collector",
-  "sourceQuery": "",
-  "collectedPricesKrw": [],
-  "targetMatched": null
+  "textRepair": null
 }

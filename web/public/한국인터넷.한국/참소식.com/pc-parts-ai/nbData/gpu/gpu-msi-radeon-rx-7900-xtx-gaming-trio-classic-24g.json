@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-06-01T15:15:40.378+09:00",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
   "category": "GPU",
   "id": "gpu-msi-radeon-rx-7900-xtx-gaming-trio-classic-24g",
   "name": "MSI Radeon RX 7900 XTX Gaming Trio Classic 24G",
@@ -81,9 +81,5 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=AMD%20Radeon%20RX%207900%20XTX%20MSI%20%EC%B5%9C%EC%A0%80%EA%B0%80",
   "notes": "Trio Classic model with Torx Fan 4",
-  "textRepair": null,
-  "sourceType": "collector",
-  "sourceQuery": "",
-  "collectedPricesKrw": [],
-  "targetMatched": null
+  "textRepair": null
 }

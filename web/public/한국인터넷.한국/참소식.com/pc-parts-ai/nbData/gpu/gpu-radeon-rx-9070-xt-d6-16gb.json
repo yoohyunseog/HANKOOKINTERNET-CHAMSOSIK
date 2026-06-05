@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-06-01T15:15:40.642+09:00",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
   "category": "GPU",
   "id": "gpu-radeon-rx-9070-xt-d6-16gb",
   "name": "Radeon RX 9070 XT D6 16GB",
@@ -80,9 +80,5 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=AMD%20%EB%9D%BC%EB%8D%B0%EC%98%A8%20RX%209070%20XT%20%EC%B6%9C%EC%8B%9C%EC%9D%BC%20%EA%B0%80%EA%B2%A9",
   "notes": "Observed multiple vendor models (ASUS, PowerColor, SAPPHIRE, ASRock, XFX) with prices ranging from approx 1,027,200 to 1,602,000 KRW.",
-  "textRepair": null,
-  "sourceType": "collector",
-  "sourceQuery": "",
-  "collectedPricesKrw": [],
-  "targetMatched": null
+  "textRepair": null
 }

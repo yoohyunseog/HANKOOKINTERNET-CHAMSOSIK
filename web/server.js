@@ -30,9 +30,10 @@ app.use(helmet({
     directives: {
       ...helmet.contentSecurityPolicy.getDefaultDirectives(),
       'upgrade-insecure-requests': null,
-      "script-src": ["'self'", "'unsafe-inline'"],
-      "style-src": ["'self'", "'unsafe-inline'"],
+      "script-src": ["'self'", "'unsafe-inline'", "https://cdn.jsdelivr.net"],
+      "style-src": ["'self'", "'unsafe-inline'", "https://cdn.jsdelivr.net", "https://fonts.googleapis.com"],
       "img-src": ["'self'", "data:", "https:"],
+      "font-src": ["'self'", "https://cdn.jsdelivr.net", "https://fonts.gstatic.com"],
       "connect-src": ["'self'", "https:", "http://211.45.162.155:11434", "http://127.0.0.1:11434"]
     }
   }
@@ -43,7 +44,37 @@ app.use((req, res, next) => {
   res.setHeader('Strict-Transport-Security', 'max-age=0');
   next();
 });
-app.use(cors()); // CORS 설정
+// CORS 설정 - 명시적 도메인 허용
+app.use(cors({
+    origin: function(origin, callback) {
+        // origin이 없는 경우 (같은 출처 요청, 서버 간 요청 등) 허용
+        if (!origin) return callback(null, true);
+        
+        // 허용된 도메인 목록
+        const allowedOrigins = [
+            'https://xn--9l4b4xi9r.com',
+            'https://www.xn--9l4b4xi9r.com',
+            'http://xn--9l4b4xi9r.com',
+            'http://www.xn--9l4b4xi9r.com',
+            'https://참소식.com',
+            'https://www.참소식.com',
+            'http://참소식.com',
+            'http://www.참소식.com',
+            'https://한국인터넷.한국',
+            'http://한국인터넷.한국',
+            'http://localhost:3000',
+            'http://localhost:8080',
+            'http://127.0.0.1:3000',
+            'http://127.0.0.1:8080'
+        ];
+        
+        // 모든 출처 허용 (개발/프로덕션 환경)
+        callback(null, true);
+    },
+    credentials: true,
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+    allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With']
+}));
 app.use(xss()); // XSS 공격 방어
 app.use(hpp()); // HTTP Parameter Pollution 방어
 
@@ -426,6 +457,69 @@ if (fs.existsSync(MMDB_PATH)) {
 
 
 // 스토리지 초기화
+function getClientIp(req) {
+    const forwardedFor = req.headers['x-forwarded-for'];
+    const rawIp = Array.isArray(forwardedFor)
+        ? forwardedFor[0]
+        : String(forwardedFor || req.ip || req.socket?.remoteAddress || req.connection?.remoteAddress || '');
+
+    return rawIp
+        .split(',')[0]
+        .trim()
+        .replace(/^::ffff:/, '');
+}
+
+function isLocalOrPrivateIp(ip) {
+    if (!ip) return false;
+    return ip === '127.0.0.1' ||
+        ip === '::1' ||
+        ip === 'localhost' ||
+        ip.startsWith('10.') ||
+        ip.startsWith('192.168.') ||
+        /^172\.(1[6-9]|2\d|3[0-1])\./.test(ip);
+}
+
+function getRequestCountryCode(req, ip) {
+    if (!geoipLookup || !ip || isLocalOrPrivateIp(ip)) {
+        return null;
+    }
+
+    try {
+        const geo = geoipLookup.get(ip);
+        return (geo?.country?.iso_code || geo?.registered_country?.iso_code || '').toUpperCase() || null;
+    } catch (error) {
+        console.warn('[ai-geo-block] country lookup failed:', error.message);
+        return null;
+    }
+}
+
+function isAiApiPath(req) {
+    return req.path.startsWith('/api/ollama-') || req.path === '/api/silverkmk-ai';
+}
+
+function blockNonKoreanAiUsers(req, res, next) {
+    if (!isAiApiPath(req)) {
+        return next();
+    }
+
+    const ip = getClientIp(req);
+    if (process.env.NODE_ENV !== 'production' && isLocalOrPrivateIp(ip)) {
+        return next();
+    }
+
+    const countryCode = getRequestCountryCode(req, ip);
+    if (countryCode === 'KR') {
+        return next();
+    }
+
+    console.warn(`[ai-geo-block] blocked ${req.method} ${req.originalUrl} ip=${ip || 'unknown'} country=${countryCode || 'unknown'}`);
+    return res.status(403).json({
+        ok: false,
+        error: 'AI features are available only from Korea.',
+        country: countryCode || 'unknown'
+    });
+}
+
 storage.initStorage();
 ensureRecentCacheFile();
 console.log(`[recent-cache] 사용 경로: ${RECENT_CACHE_FILE_PATH}`);
@@ -481,6 +575,29 @@ app.use((req, res, next) => {
 });
 
 // 미들웨어
+// www 리다이렉트 제거 - nginx에서 처리
+app.use(blockNonKoreanAiUsers);
+
+app.use((req, res, next) => {
+    const noindexPaths = new Set([
+        '/server-journal.html',
+        '/search-ide.html',
+        '/dashboard.html',
+        '/database.html',
+        '/api.html',
+        '/test_api.html',
+        '/test_parse_mmd.html'
+    ]);
+    if (noindexPaths.has(req.path)) {
+        res.setHeader('X-Robots-Tag', 'noindex, nofollow, noarchive');
+    }
+    if (req.query && Object.prototype.hasOwnProperty.call(req.query, 'search')) {
+        res.setHeader('X-Robots-Tag', 'noindex, follow');
+        res.setHeader('Link', '<https://xn--9l4b4xi9r.com/>; rel="canonical"');
+    }
+    next();
+});
+
 app.use(bodyParser.json({ limit: '50mb' }));
 app.use(bodyParser.urlencoded({ extended: true, limit: '50mb' }));
 
@@ -931,6 +1048,73 @@ function safeJsonParse(text) {
     } catch (error) {
         return null;
     }
+}
+
+function htmlToPlainText(html) {
+    return String(html || '')
+        .replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, ' ')
+        .replace(/<style\b[^>]*>[\s\S]*?<\/style>/gi, ' ')
+        .replace(/<[^>]+>/g, ' ')
+        .replace(/&nbsp;/gi, ' ')
+        .replace(/&amp;/gi, '&')
+        .replace(/&lt;/gi, '<')
+        .replace(/&gt;/gi, '>')
+        .replace(/&quot;/gi, '"')
+        .replace(/&#39;/g, "'")
+        .replace(/\s+/g, ' ')
+        .trim();
+}
+
+function parsePublicHttpUrl(value) {
+    let parsed = null;
+    try {
+        parsed = new URL(String(value || '').trim());
+    } catch (error) {
+        return null;
+    }
+
+    if (parsed.protocol !== 'http:' && parsed.protocol !== 'https:') {
+        return null;
+    }
+
+    const host = parsed.hostname.toLowerCase();
+    if (host === 'localhost' ||
+        host === '127.0.0.1' ||
+        host === '0.0.0.0' ||
+        host === '::1' ||
+        host.startsWith('10.') ||
+        host.startsWith('192.168.') ||
+        /^172\.(1[6-9]|2\d|3[0-1])\./.test(host)) {
+        return null;
+    }
+
+    return parsed;
+}
+
+async function fallbackWebFetch(targetUrl, signal) {
+    const response = await fetch(targetUrl, {
+        headers: {
+            'User-Agent': 'Mozilla/5.0 (compatible; ChamsosikAI/1.0; +https://xn--9l4b4xi9r.com)',
+            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,text/plain;q=0.8,*/*;q=0.7'
+        },
+        signal
+    });
+
+    const raw = await response.text();
+    if (!response.ok) {
+        throw new Error(`Fallback fetch returned ${response.status}`);
+    }
+
+    const contentType = response.headers.get('content-type') || '';
+    const content = contentType.includes('html') ? htmlToPlainText(raw) : raw.replace(/\s+/g, ' ').trim();
+    return {
+        ok: true,
+        url: targetUrl,
+        title: (raw.match(/<title[^>]*>([\s\S]*?)<\/title>/i)?.[1] || '').replace(/\s+/g, ' ').trim(),
+        content: content.slice(0, 12000),
+        rawLength: raw.length,
+        source: 'server-direct-fetch'
+    };
 }
 
 // 홈페이지
@@ -1410,21 +1594,27 @@ app.post('/api/ollama-web-fetch', async (req, res) => {
         if (!url || !url.trim()) {
             return res.status(400).json({ ok: false, error: 'url is required' });
         }
-        if (!OLLAMA_API_KEY) {
-            return res.status(400).json({ ok: false, error: 'OLLAMA_API_KEY is not configured' });
+        const parsedUrl = parsePublicHttpUrl(url);
+        if (!parsedUrl) {
+            return res.status(400).json({ ok: false, error: 'valid public http(s) url is required' });
         }
 
         const controller = new AbortController();
         const timeout = setTimeout(() => controller.abort(), WEB_FETCH_TIMEOUT_MS);
 
         try {
+            if (!OLLAMA_API_KEY) {
+                const fallbackPayload = await fallbackWebFetch(parsedUrl.href, controller.signal);
+                return res.json({ ...fallbackPayload, warning: 'OLLAMA_API_KEY is not configured' });
+            }
+
             const response = await fetch(OLLAMA_WEB_FETCH_URL, {
                 method: 'POST',
                 headers: {
                     'Authorization': `Bearer ${OLLAMA_API_KEY}`,
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify({ url: url.trim() }),
+                body: JSON.stringify({ url: parsedUrl.href }),
                 signal: controller.signal
             });
 
@@ -1433,10 +1623,16 @@ app.post('/api/ollama-web-fetch', async (req, res) => {
             try { payload = text ? JSON.parse(text) : {}; } catch { payload = { raw: text }; }
 
             if (!response.ok) {
-                return res.status(response.status).json({ ok: false, error: `Web fetch API returned ${response.status}`, detail: payload });
+                console.warn(`[ollama-web-fetch] upstream returned ${response.status}, using direct fetch fallback`);
+                const fallbackPayload = await fallbackWebFetch(parsedUrl.href, controller.signal);
+                return res.json({
+                    ...fallbackPayload,
+                    warning: `Ollama web fetch API returned ${response.status}`,
+                    detail: payload
+                });
             }
 
-            return res.json({ ok: true, url: url.trim(), ...payload, source: 'ollama-web-fetch' });
+            return res.json({ ok: true, url: parsedUrl.href, ...payload, source: 'ollama-web-fetch' });
         } catch (error) {
             if (error.name === 'AbortError') {
                 return res.status(504).json({ ok: false, error: 'Web fetch timed out' });
@@ -1769,8 +1965,19 @@ app.get('/api/recent', async (req, res) => {
         const cacheStore = readRecentFileCache();
         const cached = cacheStore[cacheKey];
 
-        // TTL 이내 캐시 응답
-        if (cached && now - cached.cachedAt < ttlMs) {
+        // limit=1일 때는 캐시 사용하지 않음 (항상 최신 데이터)
+        if (limit === 1) {
+            const results = await storage.getRecentCalculations(1);
+            const payload = {
+                success: true,
+                count: results.length,
+                results: results
+            };
+            return res.json(payload);
+        }
+
+        // 캐시가 있으면 우선 즉시 응답한다. 만료된 캐시는 별도 갱신 전까지 stale fallback으로 사용한다.
+        if (cached && cached.payload) {
             return res.json(cached.payload);
         }
 
@@ -2121,35 +2328,32 @@ app.get('/sitemap.xml', async (req, res) => {
     try {
         const siteUrl = 'https://xn--9l4b4xi9r.com';
         const lastMod = new Date().toISOString().split('T')[0];
-        
-        let urls = `<?xml version="1.0" encoding="UTF-8"?>
+        const entries = [
+            ['/', 'daily', '1.0'],
+            ['/pc-parts-ai/', 'daily', '0.9'],
+            ['/pc-parts-ai/parts.html', 'daily', '0.8'],
+            ['/ai/', 'weekly', '0.7'],
+            ['/robot/', 'weekly', '0.7'],
+            ['/ai-issue-briefing/', 'daily', '0.7'],
+            ['/about.html', 'monthly', '0.5'],
+            ['/contact.html', 'monthly', '0.5'],
+            ['/privacy.html', 'yearly', '0.4'],
+            ['/editorial-policy.html', 'monthly', '0.4'],
+            ['/feed.xml', 'hourly', '0.6'],
+            ['/feed-popular.xml', 'hourly', '0.6']
+        ];
+
+        const urls = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <url>
-        <loc>${siteUrl}/</loc>
+${entries.map(([loc, changefreq, priority]) => `    <url>
+        <loc>${siteUrl}${loc}</loc>
         <lastmod>${lastMod}</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>1.0</priority>
-    </url>
-    <url>
-        <loc>${siteUrl}/index.html</loc>
-        <lastmod>${lastMod}</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.9</priority>
-    </url>
-    <url>
-        <loc>${siteUrl}/feed.xml</loc>
-        <lastmod>${lastMod}</lastmod>
-        <changefreq>hourly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>${siteUrl}/feed-popular.xml</loc>
-        <lastmod>${lastMod}</lastmod>
-        <changefreq>hourly</changefreq>
-        <priority>0.8</priority>
-    </url>
+        <changefreq>${changefreq}</changefreq>
+        <priority>${priority}</priority>
+    </url>`).join('\n')}
 </urlset>`;
         
+        res.status(200);
         res.type('application/xml; charset=utf-8');
         res.send(urls);
     } catch (error) {

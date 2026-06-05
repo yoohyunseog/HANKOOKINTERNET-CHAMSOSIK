@@ -11,11 +11,11 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
+from webdriver_manager.chrome import ChromeDriverManager
 
 
 OLLAMA_URL = "http://localhost:11434/v1/chat/completions"
 OLLAMA_MODEL = "deepseek-v3.1:671b-cloud"
-CHROME_DRIVER_PATH = "chromedriver.exe"
 NEWS_FEED_URL = "https://xn--9l4b4xi9r.com/feed.xml"
 
 chrome_options = Options()
@@ -210,7 +210,7 @@ def load_news_text():
 def main():
     news_text = load_news_text()
 
-    service = Service(CHROME_DRIVER_PATH)
+    service = Service(ChromeDriverManager().install())
     driver = webdriver.Chrome(service=service, options=chrome_options)
 
     results = {}

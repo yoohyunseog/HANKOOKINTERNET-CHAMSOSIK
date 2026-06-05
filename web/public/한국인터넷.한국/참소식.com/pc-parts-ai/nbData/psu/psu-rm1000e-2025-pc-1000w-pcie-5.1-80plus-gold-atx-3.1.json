@@ -1,0 +1,85 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
+  "category": "PSU",
+  "id": "psu-rm1000e-2025-pc-1000w-pcie-5.1-80plus-gold-atx-3.1",
+  "name": "RM1000e 2025 PC 1000W PCIE 5.1 80PLUS Gold ATX 3.1",
+  "maker": "Corsair",
+  "platform": "ATX 3.1",
+  "estimatedPriceKrw": 191890,
+  "priceBand": "15~30만원",
+  "speedLabel": "80PLUS Gold",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "PSU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 75,
+  "valueIndex": 39.1,
+  "aiUseScore": 49,
+  "powerWatts": 1000,
+  "tags": [
+    "PCIe 5.1",
+    "ATX 3.1"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "PSU",
+    "partId": "psu-rm1000e-2025-pc-1000w-pcie-5.1-80plus-gold-atx-3.1",
+    "partName": "RM1000e 2025 PC 1000W PCIE 5.1 80PLUS Gold ATX 3.1",
+    "speed": {
+      "score": 100,
+      "weight": 0.32,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "PSU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 750,
+      "value": 521,
+      "aiFit": 490,
+      "priceEfficiency": 520,
+      "powerEfficiency": 100
+    },
+    "nbVector": [
+      100,
+      750,
+      521,
+      490,
+      520,
+      100
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 275.667,
+    "nbMin": 388.139,
+    "weightedScore": 352,
+    "nbBand": "100~499",
+    "summary": "PSU RM1000e 2025 PC 1000W PCIE 5.1 80PLUS Gold ATX 3.1 부품을 속도 중심 N/B 데이터베이스 점수 352점으로 저장했습니다."
+  },
+  "nbWeightedScore": 352,
+  "nbMax": 275.667,
+  "nbMin": 388.139,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Corsair%20RM1000e%2080PLUS%20Gold%20PCIe%205.0%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "Model CP-9020297-JP",
+  "textRepair": null
+}

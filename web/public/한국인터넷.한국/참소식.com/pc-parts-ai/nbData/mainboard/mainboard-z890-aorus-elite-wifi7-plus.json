@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-06-01T15:15:41.577+09:00",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
   "category": "Mainboard",
   "id": "mainboard-z890-aorus-elite-wifi7-plus",
   "name": "Z890 AORUS ELITE WIFI7 PLUS",
@@ -21,7 +21,7 @@
   "performance": 90,
   "valueIndex": 20,
   "aiUseScore": 59,
-  "powerWatts": 0,
+  "powerWatts": null,
   "tags": [
     "high-end",
     "wifi7"
@@ -81,9 +81,5 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Intel%20Core%20Ultra%209%20285K%20%EB%A9%94%EC%9D%B8%EB%B3%B4%EB%93%9C%20%EC%B6%94%EC%B2%9C",
   "notes": "Mentioned in expert review for Intel Core Ultra 9 285K support with 16-phase VRM.",
-  "textRepair": null,
-  "sourceType": "collector",
-  "sourceQuery": "",
-  "collectedPricesKrw": [],
-  "targetMatched": null
+  "textRepair": null
 }

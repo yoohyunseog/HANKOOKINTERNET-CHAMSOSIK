@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-06-01T15:15:40.841+09:00",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
   "category": "GPU",
   "id": "gpu-sapphire-pure-radeon-rx-7900-gre-16g-oc",
   "name": "Sapphire Pure Radeon RX 7900 GRE 16G OC",
@@ -80,9 +80,5 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Radeon%20RX%207900%20GRE%20%EC%B5%9C%EC%A0%80%EA%B0%80",
   "notes": "Model 11325-03-20G",
-  "textRepair": null,
-  "sourceType": "collector",
-  "sourceQuery": "",
-  "collectedPricesKrw": [],
-  "targetMatched": null
+  "textRepair": null
 }

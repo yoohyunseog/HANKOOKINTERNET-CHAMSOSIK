@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-06-01T15:15:41.713+09:00",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
   "category": "RAM",
   "id": "ram-corsair-vengeance-rgb-ddr5-6000mhz-cl30-32gb-16gx2",
   "name": "Corsair Vengeance RGB DDR5 6000MHz CL30 32GB (16Gx2)",
@@ -21,7 +21,7 @@
   "performance": 75,
   "valueIndex": 44.8,
   "aiUseScore": 49,
-  "powerWatts": 0,
+  "powerWatts": null,
   "tags": [
     "gaming",
     "rgb"
@@ -81,9 +81,5 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Corsair%20Vengeance%20RGB%20DDR5%206000MHz%20CL30%2032GB%20(16Gx2)%20price",
   "notes": "CL30-36-36-76, 1.40V, SK Hynix modules",
-  "textRepair": null,
-  "sourceType": "collector",
-  "sourceQuery": "",
-  "collectedPricesKrw": [],
-  "targetMatched": null
+  "textRepair": null
 }

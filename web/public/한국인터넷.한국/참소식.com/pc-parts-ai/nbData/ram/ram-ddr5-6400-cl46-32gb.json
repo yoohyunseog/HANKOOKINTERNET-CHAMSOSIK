@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-06-01T15:15:41.686+09:00",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
   "category": "RAM",
   "id": "ram-ddr5-6400-cl46-32gb",
   "name": "삼성전자 DDR5-6400 CL46 32GB",
@@ -21,7 +21,7 @@
   "performance": 75,
   "valueIndex": 51.7,
   "aiUseScore": 49,
-  "powerWatts": 0,
+  "powerWatts": null,
   "tags": [
     "standard"
   ],
@@ -80,9 +80,5 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90%20DDR5-6400%20CL46%2032GB%20%EC%B5%9C%EC%A0%80%EA%B0%80",
   "notes": "Standard JEDEC profile (CL46) differs from the CUDIMM (CL52) versions already saved.",
-  "textRepair": null,
-  "sourceType": "collector",
-  "sourceQuery": "",
-  "collectedPricesKrw": [],
-  "targetMatched": null
+  "textRepair": null
 }

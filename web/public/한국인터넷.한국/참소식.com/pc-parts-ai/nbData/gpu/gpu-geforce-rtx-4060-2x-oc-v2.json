@@ -1,0 +1,84 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
+  "category": "GPU",
+  "id": "gpu-geforce-rtx-4060-2x-oc-v2",
+  "name": "GeForce RTX 4060 2X OC V2",
+  "maker": "GALAX",
+  "platform": "PCIe",
+  "estimatedPriceKrw": 480000,
+  "priceBand": "30~60만원",
+  "speedLabel": "Boost Clock",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "GPU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 60,
+  "valueIndex": 12.5,
+  "aiUseScore": 39,
+  "powerWatts": 115,
+  "tags": [
+    "gaming"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "GPU",
+    "partId": "gpu-geforce-rtx-4060-2x-oc-v2",
+    "partName": "GeForce RTX 4060 2X OC V2",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "GPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 600,
+      "value": 167,
+      "aiFit": 390,
+      "priceEfficiency": 210,
+      "powerEfficiency": 174
+    },
+    "nbVector": [
+      100,
+      600,
+      167,
+      390,
+      210,
+      174
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 157.111,
+    "nbMin": 391.713,
+    "weightedScore": 252,
+    "nbBand": "100~499",
+    "summary": "GPU GeForce RTX 4060 2X OC V2 부품을 속도 중심 N/B 데이터베이스 점수 252점으로 저장했습니다."
+  },
+  "nbWeightedScore": 252,
+  "nbMax": 157.111,
+  "nbMin": 391.713,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=GeForce%20RTX%204060%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "Refurbished price observed; standard new price typically higher.",
+  "textRepair": null
+}

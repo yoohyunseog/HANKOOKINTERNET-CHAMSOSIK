@@ -1,0 +1,84 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
+  "category": "GPU",
+  "id": "gpu-asus-dual-rx7600-o8g",
+  "name": "ASUS DUAL-RX7600-O8G",
+  "maker": "ASUS",
+  "platform": "AMD Radeon",
+  "estimatedPriceKrw": 460610,
+  "priceBand": "30~60만원",
+  "speedLabel": "8GB GDDR6",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "GPU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 65,
+  "valueIndex": 14.1,
+  "aiUseScore": 42,
+  "powerWatts": 165,
+  "tags": [
+    "gaming"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "GPU",
+    "partId": "gpu-asus-dual-rx7600-o8g",
+    "partName": "ASUS DUAL-RX7600-O8G",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "GPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 650,
+      "value": 188,
+      "aiFit": 420,
+      "priceEfficiency": 220,
+      "powerEfficiency": 131
+    },
+    "nbVector": [
+      100,
+      650,
+      188,
+      420,
+      220,
+      131
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 148.698,
+    "nbMin": 378.901,
+    "weightedScore": 266,
+    "nbBand": "100~499",
+    "summary": "GPU ASUS DUAL-RX7600-O8G 부품을 속도 중심 N/B 데이터베이스 점수 266점으로 저장했습니다."
+  },
+  "nbWeightedScore": 266,
+  "nbMax": 148.698,
+  "nbMin": 378.901,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Radeon%20RX%207600%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "Based on search result for Radeon RX 7600",
+  "textRepair": null
+}

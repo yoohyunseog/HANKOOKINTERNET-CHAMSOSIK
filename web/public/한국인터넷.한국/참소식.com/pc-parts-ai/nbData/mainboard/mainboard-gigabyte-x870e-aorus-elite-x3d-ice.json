@@ -1,0 +1,85 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
+  "category": "Mainboard",
+  "id": "mainboard-gigabyte-x870e-aorus-elite-x3d-ice",
+  "name": "GIGABYTE X870E AORUS ELITE X3D ICE",
+  "maker": "GIGABYTE",
+  "platform": "AMD AM5",
+  "estimatedPriceKrw": 449000,
+  "priceBand": "30~60만원",
+  "speedLabel": "X870E",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "Mainboard",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 90,
+  "valueIndex": 20,
+  "aiUseScore": 59,
+  "powerWatts": null,
+  "tags": [
+    "gaming",
+    "white"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "Mainboard",
+    "partId": "mainboard-gigabyte-x870e-aorus-elite-x3d-ice",
+    "partName": "GIGABYTE X870E AORUS ELITE X3D ICE",
+    "speed": {
+      "score": 100,
+      "weight": 0.32,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "Mainboard",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 900,
+      "value": 267,
+      "aiFit": 590,
+      "priceEfficiency": 220,
+      "powerEfficiency": 900
+    },
+    "nbVector": [
+      100,
+      900,
+      267,
+      590,
+      220,
+      900
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 289.247,
+    "nbMin": 374.514,
+    "weightedScore": 380,
+    "nbBand": "100~499",
+    "summary": "Mainboard GIGABYTE X870E AORUS ELITE X3D ICE 부품을 속도 중심 N/B 데이터베이스 점수 380점으로 저장했습니다."
+  },
+  "nbWeightedScore": 380,
+  "nbMax": 289.247,
+  "nbMin": 374.514,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=AMD%20X870E%20%EB%A9%94%EC%9D%B8%EB%B3%B4%EB%93%9C%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "X3D ICE model",
+  "textRepair": null
+}

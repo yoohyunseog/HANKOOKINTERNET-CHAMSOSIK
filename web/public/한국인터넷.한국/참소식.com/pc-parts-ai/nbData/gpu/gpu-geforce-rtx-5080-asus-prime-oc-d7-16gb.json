@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-06-01T15:15:39.440+09:00",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
   "category": "GPU",
   "id": "gpu-geforce-rtx-5080-asus-prime-oc-d7-16gb",
   "name": "GeForce RTX 5080 ASUS PRIME OC D7 16GB",
@@ -82,9 +82,5 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=GeForce%20RTX%205080%20%EC%B5%9C%EC%A0%80%EA%B0%80",
   "notes": "Based on search result for ASUS PRIME GeForce RTX 5080 OC D7 16GB.",
-  "textRepair": null,
-  "sourceType": "collector",
-  "sourceQuery": "",
-  "collectedPricesKrw": [],
-  "targetMatched": null
+  "textRepair": null
 }

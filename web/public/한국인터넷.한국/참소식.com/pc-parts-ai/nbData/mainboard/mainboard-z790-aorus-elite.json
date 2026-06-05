@@ -1,0 +1,85 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
+  "category": "Mainboard",
+  "id": "mainboard-z790-aorus-elite",
+  "name": "Z790 AORUS ELITE",
+  "maker": "GIGABYTE",
+  "platform": "LGA1700",
+  "estimatedPriceKrw": 235810,
+  "priceBand": "15~30만원",
+  "speedLabel": "DDR5",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "Mainboard",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 75,
+  "valueIndex": 31.8,
+  "aiUseScore": 49,
+  "powerWatts": null,
+  "tags": [
+    "ATX",
+    "Z790"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "Mainboard",
+    "partId": "mainboard-z790-aorus-elite",
+    "partName": "Z790 AORUS ELITE",
+    "speed": {
+      "score": 100,
+      "weight": 0.32,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "Mainboard",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 750,
+      "value": 424,
+      "aiFit": 490,
+      "priceEfficiency": 420,
+      "powerEfficiency": 750
+    },
+    "nbVector": [
+      100,
+      750,
+      424,
+      490,
+      420,
+      750
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 404.24,
+    "nbMin": 380.768,
+    "weightedScore": 369,
+    "nbBand": "100~499",
+    "summary": "Mainboard Z790 AORUS ELITE 부품을 속도 중심 N/B 데이터베이스 점수 369점으로 저장했습니다."
+  },
+  "nbWeightedScore": 369,
+  "nbMax": 404.24,
+  "nbMin": 380.768,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Gigabyte%20Z790%20AORUS%20ELITE%20X%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "Standard version without Wi-Fi",
+  "textRepair": null
+}

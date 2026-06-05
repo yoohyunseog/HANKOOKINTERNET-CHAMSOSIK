@@ -1,0 +1,86 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
+  "category": "Mainboard",
+  "id": "mainboard-x870e-taichi",
+  "name": "X870E Taichi",
+  "maker": "ASRock",
+  "platform": "AMD AM5",
+  "estimatedPriceKrw": 24640,
+  "priceBand": "15만원 미만",
+  "speedLabel": "DDR5 8200MHz",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "Mainboard",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 95,
+  "valueIndex": 95,
+  "aiUseScore": 62,
+  "powerWatts": null,
+  "tags": [
+    "high-end",
+    "overclocking",
+    "X870E"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "Mainboard",
+    "partId": "mainboard-x870e-taichi",
+    "partName": "X870E Taichi",
+    "speed": {
+      "score": 100,
+      "weight": 0.32,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "Mainboard",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 950,
+      "value": 1000,
+      "aiFit": 620,
+      "priceEfficiency": 4060,
+      "powerEfficiency": 950
+    },
+    "nbVector": [
+      100,
+      950,
+      1000,
+      620,
+      4060,
+      950
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 109.294,
+    "nbMin": 270.292,
+    "weightedScore": 806,
+    "nbBand": "700~849",
+    "summary": "Mainboard X870E Taichi 부품을 속도 중심 N/B 데이터베이스 점수 806점으로 저장했습니다."
+  },
+  "nbWeightedScore": 806,
+  "nbMax": 109.294,
+  "nbMin": 270.292,
+  "nbBand": "700~849",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=ASRock%20X870E%20Taichi%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "E-ATX, 24+2+1 phase power delivery, USB4 40Gbps, PCIe 5.0",
+  "textRepair": null
+}

@@ -1,0 +1,85 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
+  "category": "SSD",
+  "id": "ssd-mp700-pro-m.2-nvme-1tb",
+  "name": "MP700 PRO M.2 NVMe 1TB",
+  "maker": "Corsair",
+  "platform": "PCIe 5.0",
+  "estimatedPriceKrw": 393500,
+  "priceBand": "30~60만원",
+  "speedLabel": "Gen5",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "SSD",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 100,
+  "valueIndex": 25.4,
+  "aiUseScore": 65,
+  "powerWatts": null,
+  "tags": [
+    "high-end",
+    "nvme"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "SSD",
+    "partId": "ssd-mp700-pro-m.2-nvme-1tb",
+    "partName": "MP700 PRO M.2 NVMe 1TB",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "SSD",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 1000,
+      "value": 339,
+      "aiFit": 650,
+      "priceEfficiency": 250,
+      "powerEfficiency": 1000
+    },
+    "nbVector": [
+      100,
+      1000,
+      339,
+      650,
+      250,
+      1000
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 303.478,
+    "nbMin": 366.548,
+    "weightedScore": 434,
+    "nbBand": "100~499",
+    "summary": "SSD MP700 PRO M.2 NVMe 1TB 부품을 속도 중심 N/B 데이터베이스 점수 434점으로 저장했습니다."
+  },
+  "nbWeightedScore": 434,
+  "nbMax": 303.478,
+  "nbMin": 366.548,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Corsair%20MP700%20PRO%20SSD%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "Found in advertisement section of search results.",
+  "textRepair": null
+}

@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-06-01T15:15:40.215+09:00",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
   "category": "GPU",
   "id": "gpu-msi-geforce-rtx-4080-super-gaming-x-slim-16g",
   "name": "MSI GeForce RTX 4080 SUPER Gaming X Slim 16G",
@@ -81,9 +81,5 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=GeForce%20RTX%204080%20Super%20MSI%20%EC%B5%9C%EC%A0%80%EA%B0%80",
   "notes": "The search results contain several water blocks and overseas listings for the Gaming X Slim model. Price estimated based on typical Korean market value for this specific SKU as the provided result prices are either for accessories or unreliable overseas listings.",
-  "textRepair": null,
-  "sourceType": "collector",
-  "sourceQuery": "",
-  "collectedPricesKrw": [],
-  "targetMatched": null
+  "textRepair": null
 }

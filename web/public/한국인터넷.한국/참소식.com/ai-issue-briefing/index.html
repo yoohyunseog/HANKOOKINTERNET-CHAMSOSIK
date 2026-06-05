@@ -4,27 +4,26 @@
     <script src="../domain-check.js"></script>
     <script src="https://w.soundcloud.com/player/api.js"></script>
     <meta charset="UTF-8" />
-  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>봉이에 꼬봉 | 참소식.com</title>
+    <title>AI SoundCloud Radio DJ | 참소식.com</title>
     <style>
       :root {
-        --chalk: #183b30;
-        --chalk-deep: #0f271f;
-        --wood: #755031;
-        --wood-dark: #4a2d18;
-        --paper: #fbf0dc;
-        --paper-soft: #fff8eb;
-        --ink: #2f261b;
-        --muted: #786b59;
-        --line: rgba(79, 58, 36, 0.2);
-        --green: #5e8f67;
-        --gold: #d49b3b;
-        --blue: #5c91b1;
-        --violet: #7b56a6;
-        --shadow: 0 22px 55px rgba(45, 30, 15, 0.28);
+        --bg: #050814;
+        --panel: rgba(9, 14, 31, 0.88);
+        --panel-strong: rgba(11, 18, 41, 0.96);
+        --line: rgba(154, 79, 255, 0.42);
+        --cyan: #12dfff;
+        --pink: #ff2b95;
+        --purple: #8c3dff;
+        --blue: #236dff;
+        --green: #37ff86;
+        --amber: #ffd04d;
+        --text: #f6f2ff;
+        --muted: #a9a8cc;
+        --shadow: 0 18px 60px rgba(93, 31, 222, 0.26);
+        color: var(--text);
         font-family: "Segoe UI", "Noto Sans KR", AppleSDGothicNeo, sans-serif;
-        color: var(--ink);
       }
 
       * {
@@ -32,15 +31,13 @@
       }
 
       body {
-        overflow-x: hidden;
         margin: 0;
         min-height: 100vh;
-        padding-top: 154px;
-        padding-bottom: 112px;
+        padding-bottom: 98px;
         background:
-          linear-gradient(90deg, rgba(255, 232, 187, 0.76), rgba(255, 255, 255, 0) 28%),
-          radial-gradient(circle at 9% 18%, rgba(255, 228, 165, 0.62), transparent 31%),
-          linear-gradient(135deg, #b77441 0%, #efd2a4 38%, #905d34 100%);
+          radial-gradient(circle at 22% 0, rgba(121, 42, 255, 0.32), transparent 30%),
+          radial-gradient(circle at 88% 8%, rgba(0, 204, 255, 0.2), transparent 28%),
+          linear-gradient(180deg, #060511 0%, #071023 52%, #030713 100%);
         overflow-x: hidden;
       }
 
@@ -50,10 +47,10 @@
         inset: 0;
         pointer-events: none;
         background:
-          linear-gradient(90deg, rgba(88, 50, 23, 0.16) 0 1px, transparent 1px 100%),
-          linear-gradient(rgba(88, 50, 23, 0.08) 0 1px, transparent 1px 100%);
-        background-size: 62px 62px;
-        opacity: 0.42;
+          linear-gradient(rgba(18, 223, 255, 0.055) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(255, 43, 149, 0.045) 1px, transparent 1px);
+        background-size: 42px 42px;
+        mask-image: linear-gradient(180deg, black 0%, transparent 88%);
       }
 
       button,
@@ -66,3890 +63,1211 @@
         cursor: pointer;
       }
 
-      .fixed-player-bar {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        z-index: 50;
-        display: grid;
-        grid-template-columns: minmax(320px, 1fr) minmax(250px, 360px);
-        gap: 12px;
-        align-items: center;
-        padding: 10px 16px 12px;
-        background:
-          linear-gradient(180deg, rgba(14, 35, 47, 0.98), rgba(11, 17, 24, 0.98)),
-          #101820;
-        border-bottom: 4px solid rgba(248, 207, 118, 0.86);
-        box-shadow: 0 18px 38px rgba(22, 14, 7, 0.34);
+      .wrap {
+        width: min(1220px, calc(100vw - 32px));
+        margin: 0 auto;
+        padding: 14px 0 34px;
       }
 
-      .fixed-player-meta {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 12px;
-        margin-bottom: 7px;
-        color: #fff0bd;
-        font-weight: 950;
-      }
-
-      .fixed-player-meta span:last-child {
-        color: #9df5ff;
-        font-size: 13px;
-      }
-
-      .fixed-player-frame {
-        width: 100%;
-        height: 96px;
-        border: 0;
+      .glass {
+        border: 1px solid var(--line);
         border-radius: 8px;
-        background: #ffffff;
-        display: block;
-      }
-
-      .fixed-player-actions {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 8px;
-      }
-
-      .fixed-player-actions button {
-        min-height: 46px;
-        border: 1px solid rgba(126, 220, 255, 0.3);
-        border-radius: 8px;
-        color: #e9fbff;
-        background: rgba(255, 255, 255, 0.1);
-        font-weight: 950;
-      }
-
-      .fixed-player-actions button.primary {
-        color: #1c1608;
-        background: #f8cf76;
-        border-color: rgba(248, 207, 118, 0.9);
-      }
-
-      .top-dj-message {
-        position: sticky;
-        top: 0;
-        z-index: 4;
-        width: auto;
-        min-height: 58px;
-        margin: 0 22px 10px 58px;
-        padding: 12px 18px;
-        border: 1px solid rgba(248, 207, 118, 0.72);
-        border-radius: 8px;
-        background: rgba(16, 24, 32, 0.94);
-        box-shadow: 0 18px 34px rgba(0, 0, 0, 0.34);
-        color: #fff6d8;
-        font-size: 15px;
-        font-weight: 900;
-        line-height: 1.45;
-        white-space: pre-wrap;
-        opacity: 0;
-        pointer-events: none;
-        transform: translateY(-8px);
-        transition: opacity 1.3s ease, transform 1.3s ease;
-      }
-
-      .top-dj-message.visible {
-        opacity: 1;
-        transform: translateY(0);
-      }
-
-      .top-dj-message.speaking {
-        border-color: rgba(157, 245, 255, 0.84);
-        box-shadow: 0 18px 34px rgba(0, 0, 0, 0.34), inset 0 0 0 1px rgba(157, 245, 255, 0.28);
-      }
-
-      .top-dj-message.fading {
-        opacity: 0;
-        transform: translateY(-8px);
-      }
-
-      .top-dj-message small {
-        display: block;
-        margin-top: 5px;
-        color: #9df5ff;
-        font-size: 11px;
-        font-weight: 950;
-      }
-
-      .app {
-        position: relative;
-        width: min(1560px, calc(100vw - 26px));
-        margin: 16px auto 28px;
+        background: linear-gradient(180deg, rgba(14, 20, 45, 0.94), rgba(6, 10, 26, 0.9));
+        box-shadow: var(--shadow), inset 0 0 0 1px rgba(255, 255, 255, 0.04);
       }
 
       .topbar {
-        min-height: 128px;
-        display: grid;
-        grid-template-columns: 220px minmax(360px, 1fr) 360px 210px;
-        align-items: center;
-        gap: 22px;
-        padding: 18px 26px;
-        color: #fff5d6;
-        background:
-          radial-gradient(circle at 50% 0, rgba(255, 255, 255, 0.14), transparent 40%),
-          linear-gradient(180deg, #24493b, var(--chalk-deep));
-        border: 10px solid var(--wood);
-        border-bottom: 14px solid var(--wood-dark);
-        border-radius: 28px 28px 10px 10px;
-        box-shadow: var(--shadow), inset 0 0 0 1px rgba(255, 255, 255, 0.12);
-      }
-
-      .top-left,
-      .top-actions {
+        min-height: 52px;
         display: flex;
         align-items: center;
-        gap: 18px;
-      }
-
-      .menu-button {
-        width: 54px;
-        height: 54px;
-        border: 0;
-        color: #f3dbb4;
-        background: transparent;
-        font-size: 39px;
-        line-height: 1;
-      }
-
-      .badge {
-        width: 78px;
-        height: 78px;
-        display: grid;
-        place-items: center;
-        clip-path: polygon(50% 0, 92% 17%, 84% 78%, 50% 100%, 16% 78%, 8% 17%);
-        border: 3px solid #e5ad55;
-        background: #1d5446;
-        color: #ffd98b;
-        font-size: 23px;
-        font-weight: 900;
-        line-height: 0.96;
-        text-align: center;
-        box-shadow: inset 0 0 18px rgba(0, 0, 0, 0.3);
+        justify-content: space-between;
+        gap: 16px;
+        padding: 10px 16px;
       }
 
       .brand {
-        text-align: center;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-weight: 950;
       }
 
-      .brand h1 {
-        margin: 0;
-        font-size: clamp(39px, 5vw, 72px);
-        line-height: 1;
-        letter-spacing: 0;
+      .brand-dot {
+        width: 18px;
+        height: 18px;
+        border: 3px solid var(--purple);
+        border-radius: 50%;
+        box-shadow: 0 0 20px var(--purple);
+      }
+
+      .mode-pill,
+      .live-pill,
+      .mini-pill {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 24px;
+        padding: 4px 10px;
+        border-radius: 5px;
+        border: 1px solid rgba(140, 61, 255, 0.6);
+        color: #dbcfff;
+        background: rgba(83, 38, 184, 0.48);
+        font-size: 13px;
         font-weight: 900;
-        text-shadow: 0 3px 0 rgba(0, 0, 0, 0.22);
       }
 
-      .brand p {
-        margin: 8px 0 0;
-        color: #f0d59d;
-        font-size: 20px;
+      .status-line {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        color: var(--muted);
+        font-size: 13px;
         font-weight: 800;
       }
 
-      .memo {
-        position: relative;
-        justify-self: center;
-        width: min(100%, 340px);
-        padding: 18px 22px 17px;
-        color: #392a17;
-        background: #f9dfaa;
-        box-shadow: 0 13px 22px rgba(0, 0, 0, 0.2);
-        transform: rotate(-2deg);
-        text-align: center;
-        font-weight: 900;
-        line-height: 1.6;
+      .green-dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: var(--green);
+        box-shadow: 0 0 14px var(--green);
       }
 
-      .memo::before {
-        content: "";
-        position: absolute;
-        right: 16px;
-        top: -22px;
-        width: 22px;
-        height: 56px;
-        border: 6px solid #c68525;
-        border-radius: 18px;
-        transform: rotate(17deg);
-      }
-
-      .top-actions {
-        justify-content: flex-end;
-      }
-
-      .nav-btn {
-        width: 84px;
+      .player {
         display: grid;
-        gap: 5px;
+        grid-template-columns: 86px 1fr 86px 96px 104px 110px 250px 28px;
+        gap: 14px;
+        align-items: center;
+        margin-top: 10px;
+        padding: 14px;
+      }
+
+      .cover {
+        aspect-ratio: 1;
+        border-radius: 6px;
+        background:
+          radial-gradient(circle at 52% 38%, rgba(255, 255, 255, 0.92) 0 3px, transparent 4px),
+          radial-gradient(circle at 40% 35%, rgba(18, 223, 255, 0.75), transparent 16%),
+          radial-gradient(circle at 68% 62%, rgba(255, 43, 149, 0.78), transparent 18%),
+          conic-gradient(from 45deg, #240041, #0f59ff, #ff1478, #1df2ff, #240041);
+        box-shadow: inset 0 0 32px rgba(0, 0, 0, 0.55), 0 0 22px rgba(255, 43, 149, 0.28);
+      }
+
+      .track-title {
+        margin: 0;
+        font-size: 16px;
+        font-weight: 950;
+      }
+
+      .track-meta {
+        margin-top: 5px;
+        color: var(--muted);
+        font-size: 12px;
+        font-weight: 800;
+      }
+
+      .wave-row {
+        display: grid;
+        grid-template-columns: 54px 1fr 54px;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .timecode {
+        color: #dad7ff;
+        font-size: 12px;
+        font-weight: 900;
+        text-align: center;
+      }
+
+      .bars {
+        display: flex;
+        align-items: end;
+        gap: 2px;
+        height: 62px;
+        overflow: hidden;
+      }
+
+      .bars span {
+        flex: 1;
+        min-width: 3px;
+        height: calc(var(--h) * 1px);
+        border-radius: 4px 4px 0 0;
+        background: linear-gradient(180deg, var(--cyan), var(--blue) 48%, var(--pink));
+        box-shadow: 0 0 10px rgba(18, 223, 255, 0.35);
+        animation: pulse 1.3s ease-in-out infinite alternate;
+        animation-delay: calc(var(--i) * -0.04s);
+      }
+
+      .play-ring {
+        width: 80px;
+        aspect-ratio: 1;
+        display: grid;
         place-items: center;
+        border: 2px solid rgba(255, 255, 255, 0.22);
+        border-radius: 50%;
+        color: white;
+        background:
+          radial-gradient(circle, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.02)),
+          linear-gradient(135deg, rgba(255, 43, 149, 0.35), rgba(18, 223, 255, 0.2));
+        box-shadow: 0 0 28px var(--purple), inset 0 0 20px rgba(255, 255, 255, 0.1);
+        font-size: 28px;
+        font-weight: 950;
+      }
+
+      .neon-btn {
+        min-height: 42px;
+        border: 1px solid rgba(140, 61, 255, 0.75);
+        border-radius: 6px;
+        color: white;
+        background: linear-gradient(180deg, rgba(87, 49, 208, 0.92), rgba(33, 18, 109, 0.92));
+        box-shadow: 0 0 18px rgba(140, 61, 255, 0.34);
+        font-weight: 950;
+      }
+
+      .neon-btn.hot {
+        border-color: rgba(255, 43, 149, 0.9);
+        background: linear-gradient(180deg, rgba(255, 43, 149, 0.85), rgba(117, 17, 64, 0.9));
+      }
+
+      .eq {
+        display: flex;
+        align-items: end;
+        gap: 4px;
+        height: 60px;
+        padding: 8px;
+        border-left: 1px solid rgba(255, 255, 255, 0.08);
+      }
+
+      .eq span {
+        width: 5px;
+        height: calc(var(--h) * 1px);
+        border-radius: 4px;
+        background: linear-gradient(180deg, #ffdf4d, #20ff9b 42%, #12dfff 70%, #9e39ff);
+        animation: pulse 1s ease-in-out infinite alternate;
+        animation-delay: calc(var(--i) * -0.08s);
+      }
+
+      .nav {
+        display: grid;
+        grid-template-columns: 140px repeat(8, 1fr);
+        gap: 8px;
+        align-items: center;
+        margin-top: 14px;
+        padding: 10px 12px;
+      }
+
+      .nav-logo {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 18px;
+        font-weight: 950;
+      }
+
+      .ai-mark {
+        display: grid;
+        place-items: center;
+        width: 38px;
+        height: 34px;
+        border-radius: 5px;
+        color: #f4d6ff;
+        background: rgba(140, 61, 255, 0.25);
+        font-size: 24px;
+        font-weight: 950;
+      }
+
+      .nav button {
+        min-height: 38px;
         border: 0;
-        color: #eadfc8;
+        border-radius: 5px;
+        color: #d8d4ff;
         background: transparent;
         font-weight: 900;
       }
 
-      .nav-btn span:first-child {
-        font-size: 38px;
-        line-height: 1;
+      .nav button.active,
+      .nav button:hover {
+        color: #fff;
+        background: rgba(35, 109, 255, 0.35);
       }
 
-      .home-link {
-        min-width: 112px;
-        min-height: 54px;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        gap: 8px;
-        padding: 10px 14px;
-        border: 2px solid rgba(255, 217, 139, 0.72);
-        border-radius: 10px;
-        color: #fff5d6;
-        background: rgba(255, 255, 255, 0.09);
-        text-decoration: none;
-        font-weight: 950;
-        box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
-      }
-
-      .home-link:hover,
-      .home-link:focus-visible {
-        color: #1d2f28;
-        background: #ffd98b;
-        outline: none;
-      }
-
-      .board {
+      .hero {
         display: grid;
-        grid-template-columns: 350px minmax(460px, 1fr) 360px;
+        grid-template-columns: 1fr 260px;
         gap: 18px;
-        padding: 22px 18px 28px;
-        background: rgba(247, 226, 194, 0.9);
-        border: 2px solid rgba(104, 68, 38, 0.28);
-        border-top: 0;
-        border-radius: 0 0 18px 18px;
-        box-shadow: var(--shadow);
-      }
-
-      .panel {
-        background: rgba(255, 248, 234, 0.88);
-        border: 2px solid rgba(92, 67, 42, 0.22);
-        border-radius: 8px;
-        box-shadow: 0 12px 28px rgba(74, 48, 25, 0.14), inset 0 0 0 1px rgba(255, 255, 255, 0.46);
-      }
-
-      .left,
-      .right {
-        display: grid;
-        gap: 14px;
-        align-content: start;
-      }
-
-      .teacher {
-        min-height: 246px;
-        overflow: hidden;
-        position: relative;
+        min-height: 308px;
+        margin-top: 14px;
+        padding: 18px;
         background:
-          linear-gradient(rgba(24, 42, 36, 0.16), rgba(24, 42, 36, 0.16)),
-          linear-gradient(120deg, #f0d2a4, #88a691);
+          linear-gradient(90deg, rgba(5, 8, 20, 0.78), rgba(5, 8, 20, 0.18)),
+          radial-gradient(circle at 49% 15%, rgba(255, 43, 149, 0.55), transparent 18%),
+          radial-gradient(circle at 62% 18%, rgba(18, 223, 255, 0.38), transparent 23%),
+          linear-gradient(180deg, rgba(134, 44, 255, 0.2), rgba(4, 8, 23, 0.2)),
+          url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 900 320'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' x2='1'%3E%3Cstop stop-color='%23100527'/%3E%3Cstop offset='.45' stop-color='%23251966'/%3E%3Cstop offset='1' stop-color='%23001028'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='900' height='320' fill='url(%23g)'/%3E%3Cg opacity='.55'%3E%3Ccircle cx='180' cy='96' r='74' fill='%23ff2b95'/%3E%3Ccircle cx='680' cy='82' r='82' fill='%2312dfff'/%3E%3C/g%3E%3Cg fill='%23050712'%3E%3Crect x='0' y='224' width='900' height='96'/%3E%3Ccircle cx='260' cy='258' r='64'/%3E%3Ccircle cx='650' cy='258' r='64'/%3E%3Crect x='344' y='210' width='240' height='104' rx='8'/%3E%3C/g%3E%3Cg fill='none' stroke='%23a645ff' stroke-width='5'%3E%3Ccircle cx='260' cy='258' r='42'/%3E%3Ccircle cx='650' cy='258' r='42'/%3E%3Cpath d='M370 230h188M385 250h158M400 270h128'/%3E%3C/g%3E%3Ctext x='448' y='132' text-anchor='middle' font-size='48' font-family='Arial' font-weight='900' fill='%23ff79c9' stroke='%23ff2b95' stroke-width='2'%3EON AIR%3C/text%3E%3C/svg%3E");
+        background-size: cover;
+        background-position: center;
       }
 
-      .teacher-title {
-        display: inline-flex;
-        align-items: center;
-        margin: 0;
-        padding: 9px 18px;
-        color: #ffffff;
-        background: #59679e;
-        border-radius: 0 0 16px 0;
-        font-size: 21px;
-        font-weight: 900;
-      }
-
-      .robot-area {
+      .hero-copy {
         display: grid;
-        grid-template-columns: 142px 1fr;
+        align-content: center;
+        max-width: 540px;
+      }
+
+      .hero h1 {
+        margin: 0;
+        font-size: clamp(34px, 5vw, 54px);
+        line-height: 1.1;
+        letter-spacing: 0;
+      }
+
+      .hero h1 span {
+        color: var(--cyan);
+        text-shadow: 0 0 18px rgba(18, 223, 255, 0.6);
+      }
+
+      .hero p {
+        margin: 18px 0 24px;
+        color: #c9bbff;
+        font-size: 22px;
+        font-weight: 900;
+      }
+
+      .now-card {
+        align-self: stretch;
+        padding: 16px;
+        background: rgba(8, 11, 27, 0.82);
+      }
+
+      .now-card h3,
+      .panel-title {
+        margin: 0 0 14px;
+        font-size: 20px;
+        font-weight: 950;
+      }
+
+      .progress {
+        height: 7px;
+        overflow: hidden;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.08);
+      }
+
+      .progress span {
+        display: block;
+        width: 45%;
+        height: 100%;
+        border-radius: inherit;
+        background: linear-gradient(90deg, var(--pink), var(--purple), var(--cyan));
+      }
+
+      .grid {
+        display: grid;
         gap: 14px;
-        align-items: end;
-        padding: 14px 16px 18px;
+        margin-top: 14px;
       }
 
-      .robot {
-        position: relative;
-        height: 168px;
-        filter: drop-shadow(0 10px 14px rgba(0, 0, 0, 0.26));
+      .stats-row {
+        grid-template-columns: repeat(3, 1fr);
       }
 
-      .robot::before {
-        content: "";
-        position: absolute;
-        left: 22px;
-        top: 26px;
-        width: 98px;
-        height: 82px;
-        border: 4px solid #d0c8b8;
-        border-radius: 38px 38px 32px 32px;
-        background: #f6f1e7;
+      .main-grid {
+        grid-template-columns: 340px 1fr 320px;
       }
 
-      .robot::after {
-        content: "";
-        position: absolute;
-        left: 37px;
-        top: 47px;
-        width: 68px;
-        height: 38px;
-        border-radius: 18px;
-        background: #1f2d2a;
-        box-shadow: inset 0 0 12px rgba(94, 255, 174, 0.14);
+      .lower-grid {
+        grid-template-columns: 1fr 1fr;
       }
 
-      .eye {
-        position: absolute;
-        top: 59px;
-        z-index: 2;
-        width: 12px;
-        height: 20px;
-        border-radius: 10px;
-        background: #89e7a8;
-      }
-
-      .eye.left-eye {
-        left: 53px;
-      }
-
-      .eye.right-eye {
-        left: 83px;
-      }
-
-      .smile {
-        position: absolute;
-        left: 66px;
-        top: 78px;
-        z-index: 2;
-        width: 20px;
-        height: 10px;
-        border-bottom: 3px solid #89e7a8;
-        border-radius: 0 0 20px 20px;
-      }
-
-      .body {
-        position: absolute;
-        left: 16px;
-        top: 104px;
-        width: 116px;
-        height: 62px;
-        border: 4px solid #d0c8b8;
-        border-radius: 34px 34px 12px 12px;
-        background: linear-gradient(90deg, #f5f0e6 0 40%, #8a7e59 40% 100%);
-      }
-
-      .speech {
-        align-self: start;
-        margin-top: 10px;
-        padding: 17px 18px;
-        background: #fff7e8;
-        border-radius: 8px 20px 20px;
-        box-shadow: 0 8px 14px rgba(0, 0, 0, 0.15);
-        font-weight: 900;
-        line-height: 1.6;
-      }
-
-      .online {
-        position: absolute;
-        right: 16px;
-        bottom: 14px;
-        padding: 8px 14px;
-        border-radius: 20px;
-        color: #bdf0ad;
-        background: rgba(25, 57, 32, 0.78);
-        font-weight: 900;
+      .wide-grid {
+        grid-template-columns: 1fr 1fr;
       }
 
       .card {
         padding: 18px;
       }
 
-      .section-title {
-        margin: 0 0 14px;
-        color: #3a2a17;
-        font-size: 22px;
-        font-weight: 900;
+      .broadcast {
+        min-height: 118px;
+        display: grid;
+        align-content: center;
+        background:
+          linear-gradient(90deg, rgba(255, 43, 149, 0.22), transparent),
+          linear-gradient(180deg, rgba(28, 10, 35, 0.96), rgba(12, 7, 24, 0.96));
       }
 
-      .profile {
+      .broadcast strong {
+        display: block;
+        color: #ff5aa9;
+        font-size: 24px;
+        text-shadow: 0 0 16px rgba(255, 43, 149, 0.55);
+      }
+
+      .small-wave {
+        display: flex;
+        align-items: end;
+        gap: 3px;
+        height: 52px;
+        margin-top: 12px;
+      }
+
+      .small-wave span {
+        flex: 1;
+        height: calc(var(--h) * 1px);
+        border-radius: 4px 4px 0 0;
+        background: linear-gradient(180deg, var(--pink), var(--cyan));
+        opacity: 0.9;
+        animation: pulse 1.1s ease-in-out infinite alternate;
+      }
+
+      .chat-list,
+      .visitor-list,
+      .memo-list,
+      .log-list,
+      .set-list {
         display: grid;
-        grid-template-columns: 96px 1fr;
-        gap: 16px;
-        padding: 14px;
-        border: 1px solid var(--line);
-        border-radius: 8px;
-        background: rgba(255, 255, 255, 0.48);
+        gap: 10px;
+      }
+
+      .chat-item,
+      .visitor-item,
+      .memo-item,
+      .log-item,
+      .set-item {
+        display: grid;
+        gap: 4px;
+        padding: 12px;
+        border: 1px solid rgba(120, 91, 255, 0.2);
+        border-radius: 7px;
+        background: rgba(255, 255, 255, 0.035);
+      }
+
+      .chat-item {
+        grid-template-columns: 42px 1fr auto;
+        align-items: center;
       }
 
       .avatar {
-        width: 96px;
-        aspect-ratio: 1;
-        display: grid;
-        place-items: center;
-        border-radius: 8px;
-        background: linear-gradient(160deg, #283855, #f2c48f);
-        box-shadow: inset 0 0 0 3px rgba(255, 255, 255, 0.3);
-        font-size: 54px;
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, var(--cyan), var(--purple), var(--pink));
       }
 
-      dl {
-        margin: 0;
+      .chat-name,
+      .visitor-name {
+        font-weight: 950;
       }
 
-      dt {
+      .chat-text,
+      .memo-text,
+      .muted {
         color: var(--muted);
-        font-size: 14px;
-        font-weight: 900;
+        font-size: 13px;
+        font-weight: 750;
       }
 
-      dd {
-        margin: 2px 0 10px;
-        font-weight: 900;
-      }
-
-      .tag {
-        display: inline-flex;
-        align-items: center;
-        min-height: 32px;
-        padding: 5px 12px;
-        border-radius: 6px;
-        color: #ffffff;
-        background: var(--violet);
-        font-weight: 900;
-      }
-
-      .level {
-        color: #c68d2e;
-        font-weight: 900;
-      }
-
-      .states {
+      .chat-form,
+      .memo-form {
         display: grid;
+        grid-template-columns: 1fr 44px;
         gap: 8px;
+        margin-top: 12px;
       }
 
-      .state {
-        min-height: 44px;
-        display: grid;
-        grid-template-columns: 34px 1fr auto;
-        gap: 9px;
-        align-items: center;
-        padding: 8px 12px;
-        border: 1px solid var(--line);
-        border-radius: 8px;
-        color: #4a3b2a;
-        background: rgba(255, 255, 255, 0.58);
-        font-weight: 900;
+      .input {
+        min-height: 42px;
+        width: 100%;
+        border: 1px solid rgba(140, 61, 255, 0.55);
+        border-radius: 6px;
+        color: var(--text);
+        background: rgba(0, 0, 0, 0.28);
+        padding: 10px 12px;
       }
 
-      .state.active {
-        color: #ffffff;
-        background: linear-gradient(90deg, #7b55a5, #9a74c0);
-        box-shadow: 0 7px 14px rgba(93, 65, 133, 0.24);
+      .send {
+        border: 1px solid var(--cyan);
+        border-radius: 6px;
+        color: var(--cyan);
+        background: rgba(18, 223, 255, 0.12);
+        font-size: 20px;
+        font-weight: 950;
       }
 
-      .state .icon {
-        width: 30px;
-        height: 30px;
-        display: grid;
-        place-items: center;
-        border-radius: 50%;
-        background: rgba(60, 48, 37, 0.16);
-      }
-
-      .chat {
-        min-height: 830px;
-        display: grid;
-        grid-template-rows: auto auto 1fr auto auto auto;
-        position: relative;
-        overflow: hidden;
-        background: var(--paper);
-      }
-
-      .chat::before {
-        content: "";
-        position: absolute;
-        left: 28px;
-        top: 0;
-        bottom: 0;
-        width: 3px;
-        background: repeating-linear-gradient(#b98d61 0 10px, transparent 10px 20px);
-        opacity: 0.32;
-      }
-
-      .chat-head {
-        padding: 18px 28px 14px 64px;
-        border-bottom: 1px solid rgba(71, 53, 34, 0.13);
-        font-size: 24px;
-        font-weight: 900;
-        display: flex;
-        align-items: center;
-        gap: 12px;
-      }
-
-      .chat-head::after {
-        content: "";
-        flex: 1;
-        max-width: 120px;
-        height: 3px;
-        margin-left: 8px;
-        background: #8f64b0;
-      }
-      }
-
-      .messages {
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
+      .radio-panel {
         min-height: 430px;
-        max-height: 58vh;
-        overflow: auto;
-        padding: 6px 28px 16px 64px;
       }
 
-      .msg-row {
-        display: flex;
-        gap: 12px;
-        align-items: flex-end;
-      }
-
-      .msg-row.user {
-        justify-content: flex-end;
-      }
-
-      .mini-bot {
-        flex: 0 0 42px;
-        width: 42px;
-        height: 42px;
+      .radio-inner {
         display: grid;
-        place-items: center;
-        border: 2px solid rgba(70, 53, 34, 0.2);
-        border-radius: 50%;
-        background: #d9e5d5;
+        grid-template-columns: 1fr 180px;
+        gap: 14px;
       }
 
-      .bubble {
-        max-width: min(560px, 78%);
-        padding: 16px 20px;
-        border: 1px solid rgba(78, 58, 35, 0.18);
-        border-radius: 8px 22px 22px;
-        background: #fff8ea;
-        box-shadow: 0 8px 18px rgba(62, 43, 23, 0.11);
-        line-height: 1.58;
-        white-space: pre-wrap;
-        font-weight: 760;
-        margin: 8px;
-      }
-
-      .user .bubble {
-        color: #31283c;
-        background: #efe4f0;
-        border-radius: 22px 8px 22px 22px;
-      }
-
-      .time {
-        display: block;
-        margin-top: 8px;
-        color: #9d8b75;
-        font-size: 12px;
-        font-weight: 800;
-        text-align: right;
-      }
-
-      .choices {
+      .info-stack {
         display: grid;
         gap: 10px;
-        padding: 0 28px 14px 64px;
       }
 
-      .choice {
-        min-height: 78px;
-        display: grid;
-        grid-template-columns: 70px 1fr;
-        align-items: center;
-        gap: 16px;
-        padding: 12px 18px;
-        border: 1px solid rgba(82, 62, 40, 0.17);
-        border-radius: 8px;
-        color: #2f281e;
-        text-align: left;
-        box-shadow: 0 8px 14px rgba(58, 41, 22, 0.1);
+      .info-box {
+        min-height: 82px;
+        padding: 12px;
+        border: 1px solid rgba(120, 91, 255, 0.24);
+        border-radius: 7px;
+        background: rgba(255, 255, 255, 0.035);
       }
 
-      .choice strong {
-        display: block;
-        font-size: 19px;
-      }
-
-      .choice small {
-        display: block;
-        margin-top: 4px;
-        color: #5b5145;
-        font-weight: 850;
-        line-height: 1.35;
-      }
-
-      .choice:nth-child(1) {
-        background: #dbe9d2;
-      }
-
-      .choice:nth-child(2) {
-        background: #f6dfab;
-      }
-
-      .choice:nth-child(3) {
-        background: #dce9ef;
-      }
-
-      .choice-icon {
-        width: 58px;
-        height: 58px;
+      .mic-sign {
+        min-height: 250px;
         display: grid;
         place-items: center;
-        border-radius: 8px;
-        color: #ffffff;
-        font-size: 33px;
+        border: 1px solid rgba(140, 61, 255, 0.28);
+        border-radius: 7px;
+        background: radial-gradient(circle, rgba(140, 61, 255, 0.22), transparent 60%);
       }
 
-      .choice:nth-child(1) .choice-icon {
-        background: var(--green);
+      .mic {
+        width: 128px;
+        height: 188px;
+        display: grid;
+        place-items: center;
+        border: 4px solid var(--purple);
+        border-radius: 64px 64px 20px 20px;
+        box-shadow: 0 0 28px var(--purple), inset 0 0 24px rgba(140, 61, 255, 0.28);
+        color: var(--pink);
+        font-size: 28px;
+        font-weight: 950;
       }
 
-      .choice:nth-child(2) .choice-icon {
-        background: var(--gold);
+      .mixer {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 12px;
       }
 
-      .choice:nth-child(3) .choice-icon {
-        background: var(--blue);
+      .channel {
+        min-height: 210px;
+        display: grid;
+        justify-items: center;
+        gap: 8px;
+        padding: 12px 8px;
+        border: 1px solid rgba(120, 91, 255, 0.25);
+        border-radius: 7px;
+        background: rgba(255, 255, 255, 0.035);
       }
 
-      .composer {
+      .slider {
+        writing-mode: vertical-lr;
+        direction: rtl;
+        width: 26px;
+        height: 118px;
+        accent-color: var(--pink);
+      }
+
+      .meter {
+        width: 9px;
+        height: 110px;
+        border-radius: 99px;
+        background:
+          linear-gradient(180deg, #ff3434 0 12%, #ffd84a 12% 35%, #23ff73 35% 100%);
+        opacity: 0.85;
+      }
+
+      .crossfade {
+        margin-top: 14px;
+      }
+
+      .crossfade input {
+        width: 100%;
+        accent-color: var(--purple);
+      }
+
+      .tabs {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 8px;
+        margin-top: 14px;
+      }
+
+      .tabs button {
+        min-height: 40px;
+        border: 1px solid rgba(120, 91, 255, 0.35);
+        border-radius: 5px;
+        color: #cfc7ff;
+        background: rgba(255, 255, 255, 0.04);
+        font-weight: 850;
+      }
+
+      .tabs button.active {
+        color: white;
+        background: rgba(140, 61, 255, 0.46);
+      }
+
+      .viz {
+        min-height: 235px;
+        background:
+          radial-gradient(circle at 55% 20%, rgba(18, 223, 255, 0.18), transparent 35%),
+          linear-gradient(180deg, rgba(10, 12, 30, 0.95), rgba(5, 8, 17, 0.95));
+      }
+
+      .spectrum {
+        display: flex;
+        align-items: end;
+        gap: 5px;
+        height: 150px;
+        margin-top: 10px;
+      }
+
+      .spectrum span {
+        flex: 1;
+        height: calc(var(--h) * 1px);
+        border-radius: 4px 4px 0 0;
+        background: linear-gradient(180deg, #12dfff, #8c3dff 54%, #ff2b95);
+        box-shadow: 0 0 18px rgba(140, 61, 255, 0.45);
+        animation: pulse 1.2s ease-in-out infinite alternate;
+      }
+
+      .analysis-row {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 12px;
+      }
+
+      .dial {
+        display: grid;
+        place-items: center;
+        min-height: 118px;
+        border-radius: 50%;
+        border: 4px solid rgba(140, 61, 255, 0.35);
+        box-shadow: inset 0 0 26px rgba(140, 61, 255, 0.12);
+      }
+
+      .dial strong {
+        display: block;
+        font-size: 30px;
+      }
+
+      .quick-grid {
+        grid-template-columns: repeat(6, 1fr);
+      }
+
+      .quick {
+        display: grid;
+        place-items: center;
+        gap: 8px;
+        min-height: 104px;
+        border: 1px solid rgba(18, 223, 255, 0.3);
+        border-radius: 7px;
+        background: rgba(18, 223, 255, 0.055);
+        color: #dffcff;
+        font-weight: 900;
+      }
+
+      .quick strong {
+        font-size: 26px;
+      }
+
+      .cta {
+        display: grid;
+        grid-template-columns: 260px 1fr 190px;
+        align-items: center;
+        gap: 20px;
+        margin-top: 18px;
+        padding: 16px 22px;
+        background:
+          linear-gradient(90deg, rgba(255, 43, 149, 0.16), rgba(18, 223, 255, 0.12)),
+          linear-gradient(180deg, rgba(16, 11, 36, 0.95), rgba(7, 11, 24, 0.95));
+      }
+
+      .deck-photo {
+        min-height: 120px;
+        border-radius: 7px;
+        background:
+          radial-gradient(circle at 25% 52%, transparent 0 28px, rgba(18, 223, 255, 0.95) 29px 31px, transparent 32px),
+          radial-gradient(circle at 74% 52%, transparent 0 28px, rgba(255, 43, 149, 0.95) 29px 31px, transparent 32px),
+          linear-gradient(135deg, #0a1230, #26105c 48%, #061727);
+        box-shadow: inset 0 0 60px rgba(0, 0, 0, 0.5);
+      }
+
+      .footer {
+        display: grid;
+        grid-template-columns: 1.4fr repeat(3, 1fr) 1.2fr;
+        gap: 28px;
+        margin-top: 26px;
+        padding: 34px 28px;
+        background: linear-gradient(180deg, rgba(11, 27, 58, 0.9), rgba(6, 12, 29, 0.96));
+      }
+
+      .footer h3,
+      .footer h4 {
+        margin: 0 0 14px;
+      }
+
+      .footer a,
+      .footer p {
+        display: block;
+        margin: 7px 0;
+        color: var(--muted);
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 750;
+      }
+
+      .bottom-player {
         position: fixed;
+        z-index: 20;
         left: 0;
         right: 0;
         bottom: 0;
-        z-index: 55;
         display: grid;
-        grid-template-columns: 42px 1fr 62px;
-        gap: 10px;
-        align-items: end;
-        width: 100%;
-        padding: 14px max(18px, calc((100vw - 1560px) / 2 + 18px)) 18px;
-        border-top: 4px solid rgba(248, 207, 118, 0.86);
-        background:
-          linear-gradient(180deg, rgba(255, 248, 234, 0.98), rgba(246, 224, 190, 0.98)),
-          var(--paper);
-        box-shadow: 0 -16px 36px rgba(45, 30, 15, 0.24);
+        grid-template-columns: 280px 1fr 220px 230px;
+        gap: 18px;
+        align-items: center;
+        min-height: 82px;
+        padding: 10px max(16px, calc((100vw - 1220px) / 2 + 16px));
+        border-top: 1px solid rgba(140, 61, 255, 0.5);
+        background: rgba(4, 8, 19, 0.96);
+        box-shadow: 0 -20px 50px rgba(0, 0, 0, 0.45);
       }
 
-      .composer textarea {
-        width: 100%;
-        min-height: 56px;
-        max-height: 150px;
-        padding: 15px 16px;
-        resize: vertical;
-        border: 1px solid rgba(74, 54, 34, 0.28);
-        border-radius: 8px;
-        color: var(--ink);
-        background: rgba(255, 255, 255, 0.72);
-        line-height: 1.5;
-      }
-
-      .voice-console {
+      .bottom-track {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 10px;
-        padding: 14px 24px 18px 64px;
-        border-top: 1px solid rgba(71, 53, 34, 0.13);
+        grid-template-columns: 58px 1fr;
+        gap: 12px;
+        align-items: center;
       }
 
-      .voice-btn {
-        min-height: 56px;
-        border: 0;
-        border-radius: 8px;
-        color: #ffffff;
-        background: #7d56a8;
-        font-size: 17px;
-        font-weight: 950;
-        box-shadow: 0 9px 15px rgba(88, 57, 128, 0.22);
-      }
-
-      .voice-btn.secondary {
-        color: #574631;
-        background: #f2dfbc;
-      }
-
-      .voice-status {
-        grid-column: 1 / -1;
-        min-height: 64px;
-        padding: 12px 14px;
-        border: 1px solid rgba(74, 54, 34, 0.18);
-        border-radius: 8px;
-        color: #5f503e;
-        background: rgba(255, 255, 255, 0.5);
-        line-height: 1.55;
-        white-space: pre-wrap;
-        font-weight: 850;
-      }
-
-      .voice-preset-row {
-        grid-column: 1 / -1;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 8px;
-      }
-
-      .voice-preset {
-        min-height: 42px;
-        border: 1px solid rgba(86, 63, 39, 0.18);
-        border-radius: 8px;
-        color: #4c3b28;
-        background: rgba(255, 248, 234, 0.7);
-        font-size: 13px;
-        font-weight: 950;
-      }
-
-      .voice-preset.active {
-        color: #ffffff;
-        background: #7d56a8;
-      }
-
-      .icon-btn,
-      .send-btn {
-        height: 56px;
-        display: grid;
-        place-items: center;
-        border: 0;
-        border-radius: 8px;
-        font-size: 27px;
+      .transport {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 18px;
       }
 
       .icon-btn {
-        color: #8e7d67;
-        background: transparent;
-      }
-
-      .send-btn {
-        color: #ffffff;
-        background: #7d56a8;
-        box-shadow: 0 9px 15px rgba(88, 57, 128, 0.26);
-      }
-
-      .send-btn:disabled,
-      .small-btn:disabled {
-        cursor: wait;
-        opacity: 0.55;
-      }
-
-      .save-line {
-        padding: 0 28px 16px 64px;
-        color: #6c604f;
-        font-weight: 850;
-        text-align: center;
-      }
-
-      .right .panel {
-        padding: 20px;
-      }
-
-      .note-header {
-        display: flex;
-        justify-content: space-between;
-        gap: 12px;
-        align-items: center;
-        margin-bottom: 16px;
-      }
-
-      .note-header h2,
-      .side-section h2 {
-        margin: 0;
-        font-size: 21px;
-      }
-
-      .small-btn {
-        min-height: 36px;
-        padding: 7px 13px;
-        border: 1px solid rgba(103, 69, 133, 0.35);
-        border-radius: 8px;
-        color: #6d4c8d;
-        background: #efe1f1;
-        font-weight: 900;
-      }
-
-      .paper-box {
-        margin-bottom: 14px;
-        padding: 16px;
-        border: 1px solid var(--line);
-        border-radius: 8px;
-        background: rgba(255, 255, 255, 0.48);
-        box-shadow: inset 0 0 18px rgba(136, 91, 42, 0.08);
-      }
-
-      .paper-box h3 {
-        margin: 0 0 10px;
-        font-size: 17px;
-      }
-
-      .paper-sheet,
-      .status {
-        min-height: 78px;
-        padding: 14px;
-        color: #574631;
-        background: #f7e9d0;
-        box-shadow: 0 8px 14px rgba(70, 45, 20, 0.12);
-        line-height: 1.55;
-        white-space: pre-wrap;
-        font-weight: 760;
-      }
-
-      .status.error {
-        color: #7f1d1d;
-        background: #fde9e7;
-      }
-
-      .flow-list {
-        display: grid;
-        gap: 8px;
-      }
-
-      .flow-item {
-        min-height: 50px;
-        display: grid;
-        grid-template-columns: 32px 1fr 18px;
-        align-items: center;
-        padding: 8px 10px;
-        border: 1px solid rgba(80, 58, 36, 0.14);
-        border-radius: 8px;
-        background: rgba(255, 255, 255, 0.44);
-        font-weight: 900;
-      }
-
-      .flow-item small {
-        color: #8e7c66;
-        font-size: 11px;
-        font-weight: 900;
-      }
-
-      .visitor-recent {
-        margin-top: 12px;
-        display: grid;
-        gap: 8px;
-      }
-
-      .visitor-recent-title {
-        color: var(--muted);
-        font-size: 13px;
-        font-weight: 900;
-      }
-
-      .visitor-recent-list {
-        display: grid;
-        gap: 7px;
-      }
-
-      .visitor-recent-item {
-        padding: 9px 10px;
-        border: 1px solid rgba(80, 58, 36, 0.14);
-        border-radius: 8px;
-        background: rgba(255, 255, 255, 0.48);
-        color: #4a3b2a;
-        font-size: 13px;
-        font-weight: 820;
-        line-height: 1.4;
-        overflow-wrap: anywhere;
-      }
-
-      .visitor-recent-item small {
-        display: block;
-        margin-top: 4px;
-        color: #8e7c66;
-        font-size: 11px;
-        font-weight: 900;
-      }
-
-      .field {
-        display: grid;
-        gap: 7px;
-        margin-bottom: 10px;
-      }
-
-      .field span {
-        color: var(--muted);
-        font-size: 13px;
-        font-weight: 900;
-      }
-
-      .field input {
-        min-height: 38px;
-        width: 100%;
-        padding: 8px 10px;
-        border: 1px solid rgba(74, 54, 34, 0.26);
-        border-radius: 8px;
-        color: var(--ink);
-        background: rgba(255, 255, 255, 0.7);
-      }
-
-      .button-row {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 8px;
-        margin: 8px 0 12px;
-      }
-
-      .dj-panel {
-        background:
-          linear-gradient(180deg, rgba(12, 32, 46, 0.96), rgba(17, 17, 25, 0.96)),
-          var(--paper-soft);
-        color: #eef8ff;
-        border-color: rgba(104, 211, 255, 0.36);
-      }
-
-      .dj-panel h2 {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 10px;
-        margin: 0 0 12px;
-        color: #fff0bd;
-      }
-
-      .live-pill {
-        min-width: 68px;
-        padding: 5px 9px;
-        border-radius: 999px;
-        color: #10251c;
-        background: #99f6c8;
-        font-size: 12px;
-        font-weight: 950;
-        text-align: center;
-      }
-
-      .dj-stage {
-        position: relative;
-        display: grid;
-        place-items: center;
-        min-height: 126px;
-        margin-bottom: 12px;
-        border: 1px solid rgba(126, 220, 255, 0.24);
-        border-radius: 8px;
-        overflow: hidden;
-        background:
-          radial-gradient(circle at 50% 50%, rgba(111, 210, 255, 0.2), transparent 36%),
-          linear-gradient(90deg, rgba(255, 255, 255, 0.06) 1px, transparent 1px),
-          linear-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px);
-        background-size: auto, 18px 18px, 18px 18px;
-      }
-
-      .turntable {
-        width: 104px;
-        height: 104px;
-        border-radius: 50%;
-        border: 12px solid rgba(105, 207, 255, 0.24);
-        background:
-          radial-gradient(circle, #fff1bd 0 8px, #15273b 9px 20px, #050b12 21px 100%);
-        box-shadow: 0 0 34px rgba(89, 201, 255, 0.34);
-        animation: spin 7s linear infinite paused;
-      }
-
-      .dj-panel.playing .turntable {
-        animation-play-state: running;
-      }
-
-      @keyframes spin {
-        to {
-          transform: rotate(360deg);
-        }
-      }
-
-      .dj-wave {
-        position: absolute;
-        inset: auto 18px 18px;
-        height: 28px;
-        display: grid;
-        grid-template-columns: repeat(18, 1fr);
-        gap: 4px;
-        align-items: end;
-      }
-
-      .dj-wave span {
-        display: block;
-        height: calc(8px + var(--h) * 1px);
-        border-radius: 999px;
-        background: linear-gradient(180deg, #9df5ff, #f8cf76);
-        opacity: 0.8;
-      }
-
-      .dj-field input {
-        color: #eef8ff;
-        background: rgba(255, 255, 255, 0.08);
-        border-color: rgba(126, 220, 255, 0.28);
-      }
-
-      .dj-field span {
-        color: #a9c6d8;
-      }
-
-      .dj-controls {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 8px;
-        margin: 10px 0;
-      }
-
-      .dj-controls button {
-        min-height: 42px;
-        border: 1px solid rgba(126, 220, 255, 0.28);
-        border-radius: 8px;
-        color: #e9fbff;
-        background: rgba(255, 255, 255, 0.09);
-        font-weight: 950;
-      }
-
-      .dj-controls button.active {
-        color: #1c1608;
-        background: #f8cf76;
-      }
-
-      .soundcloud-frame {
-        width: 100%;
-        height: 128px;
-        margin-top: 10px;
+        width: 44px;
+        height: 44px;
         border: 0;
-        border-radius: 8px;
-        background: #ffffff;
-      }
-
-      .dj-status {
-        min-height: 72px;
-        padding: 12px;
-        border-radius: 8px;
-        color: #dff5ff;
-        background: rgba(255, 255, 255, 0.08);
-        line-height: 1.55;
-        white-space: pre-wrap;
-        font-weight: 800;
-      }
-
-      .voice-user {
-        margin-top: 10px;
-        padding: 12px;
-        border: 1px solid rgba(126, 220, 255, 0.22);
-        border-radius: 8px;
-        color: #d9f5ff;
-        background: rgba(255, 255, 255, 0.07);
-        line-height: 1.55;
-        font-weight: 820;
-      }
-
-      .top-player-note {
-        margin-top: 10px;
-        padding: 12px;
-        border: 1px dashed rgba(126, 220, 255, 0.32);
-        border-radius: 8px;
-        color: #dff5ff;
+        border-radius: 50%;
+        color: white;
         background: rgba(255, 255, 255, 0.06);
-        line-height: 1.5;
-        font-weight: 850;
-      }
-
-      .love-game-panel {
-        background:
-          radial-gradient(circle at 14% 8%, rgba(255, 210, 118, 0.22), transparent 32%),
-          linear-gradient(180deg, rgba(45, 23, 47, 0.96), rgba(19, 17, 33, 0.97));
-        color: #fff8e8;
-        border-color: rgba(255, 210, 118, 0.34);
-      }
-
-      .love-game-panel h2 {
-        margin: 0 0 12px;
-        color: #ffe5a0;
-      }
-
-      .game-screen {
-        position: relative;
-        min-height: 160px;
-        padding: 16px;
-        border: 1px solid rgba(255, 226, 160, 0.24);
-        border-radius: 8px;
-        overflow: hidden;
-        background:
-          linear-gradient(135deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.03)),
-          repeating-linear-gradient(90deg, rgba(255,255,255,.06) 0 1px, transparent 1px 18px);
-      }
-
-      .game-screen::after {
-        content: "卒";
-        position: absolute;
-        right: 12px;
-        bottom: -12px;
-        color: rgba(255, 229, 160, 0.16);
-        font-size: 96px;
-        font-weight: 950;
-        line-height: 1;
-      }
-
-      .game-chapter {
-        position: relative;
-        z-index: 1;
-        display: inline-flex;
-        margin-bottom: 10px;
-        padding: 5px 9px;
-        border-radius: 999px;
-        color: #2a1630;
-        background: #ffe5a0;
-        font-size: 12px;
+        font-size: 22px;
         font-weight: 950;
       }
 
-      .game-scene-text {
-        position: relative;
-        z-index: 1;
-        min-height: 82px;
-        line-height: 1.62;
-        white-space: pre-wrap;
-        font-weight: 820;
-      }
-
-      .game-stats {
+      .volume {
         display: grid;
-        grid-template-columns: repeat(4, minmax(0, 1fr));
-        gap: 6px;
-        margin: 10px 0;
-      }
-
-      .game-stat {
-        padding: 8px 6px;
-        border-radius: 8px;
-        color: #ffeec0;
-        background: rgba(255, 255, 255, 0.08);
-        text-align: center;
-        font-size: 12px;
-        font-weight: 900;
-      }
-
-      .game-stat strong {
-        display: block;
-        margin-top: 3px;
-        color: #ffffff;
-        font-size: 15px;
-      }
-
-      .game-choices {
-        display: grid;
-        gap: 8px;
-      }
-
-      .game-choice,
-      .game-start-button {
-        min-height: 42px;
-        padding: 10px 12px;
-        border: 1px solid rgba(255, 226, 160, 0.34);
-        border-radius: 8px;
-        color: #fff8e8;
-        background: rgba(255, 255, 255, 0.09);
-        font-weight: 900;
-        text-align: left;
-      }
-
-      .game-choice:hover,
-      .game-start-button:hover {
-        color: #2a1630;
-        background: #ffe5a0;
-      }
-
-      .game-start-button {
-        width: 100%;
-        margin-top: 10px;
-        text-align: center;
-      }
-
-      .sticky {
-        margin-top: 10px;
-        padding: 20px;
-        color: #3b2a16;
-        background: #f5cd76;
-        border-radius: 2px;
-        box-shadow: 0 12px 18px rgba(66, 45, 23, 0.2);
-        transform: rotate(-1deg);
-        font-weight: 900;
-        line-height: 1.6;
-      }
-
-      .blueprint {
-        grid-column: 1 / -1;
-        display: grid;
-        grid-template-columns: 1fr 310px;
-        gap: 18px;
-        padding: 18px;
-        color: #dff4ff;
-        background: linear-gradient(180deg, #07182a, #07111f);
-        border: 1px solid rgba(111, 210, 255, 0.38);
-        border-radius: 8px;
-        box-shadow: 0 16px 28px rgba(0, 0, 0, 0.28);
-      }
-
-      .blueprint h2 {
-        margin: 0 0 4px;
-        color: #fff1bc;
-        font-size: 31px;
-        text-align: center;
-      }
-
-      .blueprint p {
-        margin: 0 0 16px;
-        color: #8ce7ee;
-        font-weight: 900;
-        text-align: center;
-      }
-
-      .schema {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 12px;
-      }
-
-      .table-box {
-        overflow: hidden;
-        border: 1px solid rgba(108, 211, 255, 0.54);
-        border-radius: 8px;
-        background: rgba(3, 26, 45, 0.82);
-      }
-
-      .table-box h3 {
-        margin: 0;
-        padding: 10px 12px;
-        color: #fff4c6;
-        background: rgba(71, 162, 210, 0.2);
-        font-size: 16px;
-      }
-
-      .table-box ul {
-        display: grid;
-        gap: 6px;
-        margin: 0;
-        padding: 12px 16px 14px;
-        color: #e2edf3;
-        font-size: 14px;
-        list-style: none;
-      }
-
-      .process {
-        padding: 16px;
-        border: 1px solid rgba(77, 217, 173, 0.5);
-        border-radius: 8px;
-        background: rgba(0, 75, 56, 0.32);
-      }
-
-      .process h3 {
-        margin: 0 0 12px;
-        color: #a6ffdd;
-      }
-
-      .process ol {
-        display: grid;
+        grid-template-columns: 34px 1fr;
+        align-items: center;
         gap: 10px;
-        margin: 0;
-        padding-left: 24px;
-        font-weight: 850;
       }
 
-      .quote {
-        grid-column: 1 / -1;
-        margin: 8px 0 0;
-        padding: 16px 20px;
-        border: 1px solid rgba(111, 210, 255, 0.38);
-        border-radius: 8px;
-        color: #fff0bd;
-        background: rgba(255, 255, 255, 0.05);
-        font-size: 20px;
-        font-weight: 900;
-        text-align: center;
+      .volume input {
+        width: 100%;
+        accent-color: var(--purple);
       }
 
-      @media (max-width: 1220px) {
-        .topbar {
-          grid-template-columns: 160px 1fr;
+      .hidden-sc-player {
+        position: fixed;
+        width: 1px;
+        height: 1px;
+        opacity: 0.01;
+        pointer-events: none;
+      }
+
+      @keyframes pulse {
+        from {
+          transform: scaleY(0.58);
+          filter: hue-rotate(0deg);
+        }
+        to {
+          transform: scaleY(1);
+          filter: hue-rotate(35deg);
+        }
+      }
+
+      @media (max-width: 1080px) {
+        .player,
+        .hero,
+        .main-grid,
+        .lower-grid,
+        .wide-grid,
+        .cta,
+        .footer,
+        .bottom-player {
+          grid-template-columns: 1fr;
         }
 
-        .memo,
-        .top-actions {
-          display: none;
-        }
-
-        .board {
-          grid-template-columns: 310px 1fr;
-        }
-
-        .right {
-          grid-column: 1 / -1;
+        .nav {
           grid-template-columns: repeat(3, 1fr);
         }
 
-        .blueprint {
+        .nav-logo {
+          grid-column: 1 / -1;
+        }
+
+        .stats-row,
+        .quick-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .radio-inner,
+        .analysis-row {
           grid-template-columns: 1fr;
+        }
+
+        .bottom-player {
+          position: static;
+          margin-top: 16px;
+        }
+
+        body {
+          padding-bottom: 0;
         }
       }
 
-      @media (max-width: 840px) {
-        body {
-          padding-top: 224px;
-          padding-bottom: 116px;
+      @media (max-width: 640px) {
+        .wrap {
+          width: min(100vw - 18px, 1220px);
+          padding-top: 8px;
         }
 
-        .fixed-player-bar {
-          grid-template-columns: 1fr;
-          padding: 8px 10px 10px;
-        }
-
-        .fixed-player-frame {
-          height: 104px;
-        }
-
-        .fixed-player-actions button {
-          min-height: 42px;
-          font-size: 13px;
-        }
-
-        .app {
-          width: 100%;
-          margin: 0;
-        }
-
-        .topbar {
-          grid-template-columns: 1fr;
-          border-right: 0;
-          border-left: 0;
-          border-radius: 0;
-          text-align: center;
-        }
-
-        .top-left {
-          justify-content: center;
-        }
-
-        .board {
-          grid-template-columns: 1fr;
-          padding: 12px;
-          border-radius: 0;
-        }
-
-        .chat {
-          min-height: 680px;
-        }
-
-        .right {
+        .stats-row,
+        .quick-grid,
+        .mixer {
           grid-template-columns: 1fr;
         }
 
-        .schema {
-          grid-template-columns: 1fr;
-        }
-
-        .messages,
-        .choices,
-        .save-line,
-        .chat-head {
-          padding-right: 18px;
-          padding-left: 24px;
-        }
-
-        .top-dj-message {
-          margin: 0 18px 10px 24px;
-          font-size: 14px;
-        }
-
-        .composer {
-          grid-template-columns: 40px 1fr 54px;
-          padding: 10px 10px 12px;
-        }
-
-        .composer textarea {
-          min-height: 50px;
-          max-height: 104px;
-        }
-
-        .chat::before {
-          display: none;
-        }
-
-        .bubble {
-          max-width: 86%;
+        .hero h1 {
+          font-size: 32px;
         }
       }
     </style>
-    <link rel="stylesheet" href="../common-site.css">
-  <script defer src="../common-site.js"></script>
-</head>
+  </head>
   <body>
-    <section class="fixed-player-bar" aria-label="SoundCloud fixed player">
-      <div>
-        <div class="fixed-player-meta">
-          <span>AI SoundCloud Radio DJ</span>
-          <span>상단 고정 플레이어</span>
-        </div>
-        <iframe
-          id="soundCloudPlayer"
-          class="fixed-player-frame"
-          title="SoundCloud player"
-          allow="autoplay; encrypted-media"
-          src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/discover&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&visual=false">
-        </iframe>
-      </div>
-      <div class="fixed-player-actions" aria-label="DJ quick controls">
-        <button class="primary" id="topPlayButton" type="button">PLAY</button>
-        <button id="topPickButton" type="button">AI PICK</button>
-        <button id="topVoiceButton" type="button">VOICE DJ</button>
-      </div>
-    </section>
-    <main class="app">
-      <header class="topbar">
-        <div class="top-left">
-          <button class="menu-button" type="button" title="메뉴">☰</button>
-          <div class="badge">봉/꼬</div>
-        </div>
-        <div class="brand">
-          <h1>봉이에 꼬봉</h1>
-          <p>친구들아 -0- 참 오랜만인듯해</p>
-        </div>
-        <div class="memo">오늘 방 분위기:<br />편하게 들어와서<br />같이 듣고 떠드는 꼬봉방</div>
-        <nav class="top-actions" aria-label="주요 메뉴">
-          <button class="nav-btn" type="button" title="이야기 저장소"><span>▤</span><span>이야기 저장소</span></button>
-          <a class="home-link" href="../" title="참소식 메인 페이지로 이동"><span>⌂</span><span>메인 페이지로</span></a>
-        </nav>
+    <iframe
+      id="soundCloudPlayer"
+      class="hidden-sc-player"
+      title="SoundCloud player"
+      allow="autoplay; encrypted-media"
+      src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/revenue-589926433/sets/n-b-ai-dj&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&visual=false">
+    </iframe>
+
+    <div class="wrap">
+      <header class="topbar glass">
+        <div class="brand"><span class="brand-dot"></span>AI SoundCloud Radio DJ <span class="mode-pill">DJ 모드</span></div>
+        <div class="status-line">현재 <strong id="listenerCount">238</strong> listeners <span class="green-dot"></span><button class="icon-btn" id="settingsButton" type="button" title="설정">⚙</button></div>
       </header>
 
-      <section class="board">
-        <aside class="left">
-          <section class="panel teacher">
-            <h2 class="teacher-title">+ 봉이 AI DJ (꼬봉 방장)</h2>
-            <div class="robot-area">
-              <div class="robot" aria-hidden="true">
-                <span class="eye left-eye"></span>
-                <span class="eye right-eye"></span>
-                <span class="smile"></span>
-                <span class="body"></span>
-              </div>
-              <div class="speech">친구들아 -0-<br />참 오랜만인듯해.<br />오늘은 봉이에 꼬봉<br />라디오로 갑니다.</div>
-            </div>
-            <div class="online">● ONLINE</div>
-          </section>
-
-          <section class="panel card">
-            <h2 class="section-title">나의 방문자 카드</h2>
-            <div class="profile">
-              <div class="avatar">🙂</div>
-              <dl>
-                <dt>임시 닉네임</dt>
-                <dd id="nickname">조용한 탐색자 027</dd>
-                <dt>레벨</dt>
-                <dd><span id="level" class="level">Lv.3 ★</span></dd>
-                <dt>현재 상태</dt>
-                <dd><span id="stateTag" class="tag">설계 방문자</span></dd>
-              </dl>
-            </div>
-            <div class="visitor-recent" aria-label="방문자 메시지">
-              <div class="visitor-recent-title">방문자 메시지 5개</div>
-              <div class="visitor-recent-list" id="visitorRecentMessages">
-                <div class="visitor-recent-item">아직 새 메시지가 없습니다.<small>대기 중</small></div>
-              </div>
-            </div>
-          </section>
-
-          <section class="panel card">
-            <h2 class="section-title">방문자 상태 (5단계)</h2>
-            <div class="states">
-              <div class="state"><span class="icon">●</span><span>낯선 방문자</span></div>
-              <div class="state"><span class="icon">⌕</span><span>탐색 방문자</span></div>
-              <div class="state"><span class="icon">?</span><span>질문 방문자</span></div>
-              <div class="state active"><span class="icon">✎</span><span>설계 방문자</span><span>★</span></div>
-              <div class="state"><span class="icon">♛</span><span>핵심 방문자</span></div>
-            </div>
-          </section>
-        </aside>
-
-        <section class="panel chat">
-          <div class="chat-head">💬 꼬봉방 ON AIR</div>
-          <div class="top-dj-message" id="topDjMessage" aria-live="polite"></div>
-          <div class="messages" id="messages"></div>
-
-          <section class="voice-console" aria-label="음성 대화">
-            <button class="voice-btn" id="voiceStartButton" type="button">음성 DJ 시작</button>
-            <button class="voice-btn secondary" id="voiceStopButton" type="button">음성 중지</button>
-            <div class="voice-preset-row" aria-label="DJ 음성 프리셋">
-              <button class="voice-preset active" type="button" data-voice-preset="injoon">InJoon 남성 DJ</button>
-              <button class="voice-preset" type="button" data-voice-preset="hyunsu">Hyunsu 심야 DJ</button>
-              <button class="voice-preset" type="button" data-voice-preset="sunhi">SunHi K-pop DJ</button>
-            </div>
-            <div class="voice-status" id="voiceStatusBox">음성 DJ는 사용자 요청이 들어오면 곡 중심 멘트와 재생 조작만 처리합니다.</div>
-          </section>
-          <form class="composer" id="chatForm">
-            <button class="icon-btn" type="button" title="메인 페이지 읽기" id="readIconButton">⌕</button>
-            <textarea id="promptInput" placeholder="메시지를 입력하세요..." maxlength="700"></textarea>
-            <button class="send-btn" id="sendButton" type="submit" title="전송">➤</button>
-          </form>
-          <div class="save-line">라디오 조작과 DJ 멘트 로그가 N/B 기억에 저장됩니다.</div>
-        </section>
-
-        <aside class="right">
-          <section class="panel">
-            <div class="note-header">
-              <h2>📖 N/B 기억 노트</h2>
-              <button class="small-btn" id="refreshMemoryButton" type="button">요약</button>
-            </div>
-            <div class="paper-box">
-              <h3>이전 요약을 불러왔습니다</h3>
-              <div class="paper-sheet" id="summaryBox">아직 저장된 요약을 불러오지 않았습니다.</div>
-            </div>
-            <div class="paper-box">
-              <h3>라디오 진행 로그</h3>
-              <div class="flow-list" id="radioActionLog">
-                <div class="flow-item"><span>▣</span><span>1. 현재 곡 확인</span><span>›</span></div>
-                <div class="flow-item"><span>♟</span><span>2. 신청곡/큐 반영</span><span>›</span></div>
-                <div class="flow-item"><span>▤</span><span>3. DJ 멘트 저장</span><span>›</span></div>
-              </div>
-            </div>
-            <div class="sticky">곡 중심 DJ 모드<br />요청이 있을 때만 멘트합니다</div>
-          </section>
-
-          <section class="panel side-section dj-panel" id="djPanel">
-            <h2>AI SoundCloud 라디오 DJ <span class="live-pill">LIVE</span></h2>
-            <div class="dj-stage">
-              <div class="turntable" aria-hidden="true"></div>
-              <div class="dj-wave" aria-hidden="true">
-                <span style="--h: 8"></span><span style="--h: 18"></span><span style="--h: 11"></span><span style="--h: 24"></span><span style="--h: 15"></span><span style="--h: 28"></span><span style="--h: 17"></span><span style="--h: 10"></span><span style="--h: 21"></span><span style="--h: 13"></span><span style="--h: 26"></span><span style="--h: 14"></span><span style="--h: 20"></span><span style="--h: 9"></span><span style="--h: 25"></span><span style="--h: 16"></span><span style="--h: 12"></span><span style="--h: 22"></span>
-              </div>
-            </div>
-            <label class="field dj-field">
-              <span>SoundCloud 트랙/플레이리스트 URL</span>
-              <input id="soundCloudUrlInput" type="text" placeholder="https://soundcloud.com/계정/sets/플레이리스트" />
-            </label>
-            <div class="dj-controls">
-              <button id="loadSoundCloudButton" type="button">LOAD</button>
-              <button id="playDjButton" type="button">PLAY</button>
-              <button id="nextDjButton" type="button">AI PICK</button>
-              <button id="autoDjButton" type="button">AUTO</button>
-            </div>
-            <div class="dj-status" id="djStatusBox">내 SoundCloud 곡이나 플레이리스트 URL을 넣고 LOAD를 누르면 AI DJ 모드가 시작됩니다.</div>
-            <div class="voice-user" id="voiceUserBox">방문자 기억: 아직 음성으로 확인하지 않았습니다.</div>
-            <div class="top-player-note">SoundCloud 플레이어는 화면 맨 상단에 고정했습니다. 브라우저 자동재생 제한이 있으면 수동 재생 상태로 대기합니다.</div>
-          </section>
-
-          <section class="panel side-section love-game-panel" id="loveGamePanel">
-            <h2>꼬봉 연애 게임 <span class="live-pill">AI GM</span></h2>
-            <div class="game-screen">
-              <div class="game-chapter" id="gameChapter">프롤로그</div>
-              <div class="game-scene-text" id="gameSceneText">이제 기억납니다. 그 회사에는 중국인 직원들이 많았고, 특히 여성 중국인 직원들이 많았죠. 회사도 좋고 대표형도 되게 착했습니다 -0-. 지금쯤은 엄청 좋아졌을 것 같은데, 다만 월급은 120도 안 됐고 팀장 1명과 디자이너 2명이 있었습니다. 월급이 중국인 여성 직원들과 비슷한 수준으로 나온 게 제일 문제였고요. 결근이 될 만한 건 퇴사한 날밖에 없었을 겁니다. 그때 확실히 퇴사를 했어야 했죠 -0-.</div>
-            </div>
-            <div class="game-stats" aria-label="게임 스탯">
-              <div class="game-stat">허세<strong id="statBluff">1</strong></div>
-              <div class="game-stat">용기<strong id="statCourage">1</strong></div>
-              <div class="game-stat">눈맞춤<strong id="statEye">0</strong></div>
-              <div class="game-stat">현실감<strong id="statReality">1</strong></div>
-            </div>
-            <div class="game-choices" id="gameChoices"></div>
-            <button class="game-start-button" id="gameStartButton" type="button">게임 시작</button>
-          </section>
-
-          <section class="panel side-section">
-            <h2>연결 설정</h2>
-            <label class="field">
-              <span>AI API URL</span>
-              <input id="endpointInput" type="text" value="https://cyclopedically-orthogenetic-sienna.ngrok-free.dev" />
-            </label>
-            <label class="field">
-              <span>Model</span>
-              <input id="modelInput" type="text" value="kimi-k2.6:cloud" />
-            </label>
-            <div class="button-row">
-              <button class="small-btn" id="checkButton" type="button">접속 확인</button>
-              <button class="small-btn" id="readMainButton" type="button">메인 읽기</button>
-            </div>
-            <div class="status" id="statusBox">AI 서버 상태를 확인합니다.</div>
-          </section>
-
-          <section class="panel side-section">
-            <h2>메인 페이지 기억</h2>
-            <div class="status" id="mainPageBox">참소식 메인 정보를 아직 읽지 않았습니다.</div>
-          </section>
-        </aside>
-
-        <section class="blueprint">
-          <div>
-            <h2>N/B 소설형 채팅방 데이터베이스 구조도</h2>
-            <p>AI가 채팅방을 주도하고, 방문자를 기억하며, 이야기를 이어가는 N/B 기반 소설형 데이터 구조</p>
-            <div class="schema">
-              <div class="table-box">
-                <h3>1) 캐릭터 테이블</h3>
-                <ul>
-                  <li>character_id (PK)</li>
-                  <li>nickname</li>
-                  <li>level</li>
-                  <li>status_type</li>
-                  <li>N_value</li>
-                  <li>visit_count</li>
-                </ul>
-              </div>
-              <div class="table-box">
-                <h3>2) 사건 테이블</h3>
-                <ul>
-                  <li>event_id (PK)</li>
-                  <li>character_id (FK)</li>
-                  <li>event_summary</li>
-                  <li>keywords</li>
-                  <li>emotion</li>
-                  <li>created_at</li>
-                </ul>
-              </div>
-              <div class="table-box">
-                <h3>3) 장면 테이블</h3>
-                <ul>
-                  <li>scene_id (PK)</li>
-                  <li>event_id (FK)</li>
-                  <li>scene_summary</li>
-                  <li>scene_status</li>
-                  <li>next_scene_hint</li>
-                  <li>N_value</li>
-                </ul>
-              </div>
-              <div class="table-box">
-                <h3>4) 관계 테이블</h3>
-                <ul>
-                  <li>relation_id (PK)</li>
-                  <li>target_type</li>
-                  <li>relation_type</li>
-                  <li>relation_value</li>
-                  <li>memo</li>
-                  <li>created_at</li>
-                </ul>
-              </div>
-            </div>
+      <section class="player glass">
+        <div class="cover" aria-hidden="true"></div>
+        <div>
+          <h2 class="track-title" id="trackTitle">ELECTRIC HEART</h2>
+          <div class="track-meta" id="trackMeta">DJ AI Remix · 125 BPM · Gm</div>
+          <div class="wave-row">
+            <span class="timecode" id="elapsedTop">02:34</span>
+            <div class="bars" id="topWave"></div>
+            <span class="timecode" id="durationTop">05:12</span>
           </div>
-          <div class="process">
-            <h3>AI 처리 흐름</h3>
-            <ol>
-              <li>방문자 입장 감지</li>
-              <li>캐릭터 조회</li>
-              <li>상태 분류</li>
-              <li>장면 구성</li>
-              <li>대화 진행</li>
-              <li>사건 기록</li>
-              <li>요약 저장</li>
-              <li>다음 문장 설정</li>
-            </ol>
-          </div>
-          <div class="quote">방문자는 데이터가 아니라 등장인물이고, 대화는 로그가 아니라 사건이다.</div>
-        </section>
+        </div>
+        <button class="play-ring" id="playButton" type="button" aria-label="재생/일시정지">Ⅱ</button>
+        <button class="neon-btn hot" id="liveButton" type="button">LIVE</button>
+        <button class="neon-btn" id="aiPickButton" type="button">AI PICK</button>
+        <button class="neon-btn" id="voiceDjButton" type="button">VOICE DJ</button>
+        <div class="eq" aria-hidden="true"></div>
+        <button class="icon-btn" id="moreButton" type="button" title="더보기">⋮</button>
       </section>
-    </main>
+
+      <nav class="nav glass" aria-label="DJ navigation">
+        <div class="nav-logo"><span class="ai-mark">AI</span>참소식.com</div>
+        <button class="active" type="button">DJ 모드</button>
+        <button type="button">고봉방송</button>
+        <button type="button">AI 보이스 DJ</button>
+        <button type="button">라디오 로그</button>
+        <button type="button">방문자</button>
+        <button type="button">N/B 메모</button>
+        <button type="button">스케줄/셋리스트</button>
+        <button type="button">공지사항</button>
+      </nav>
+
+      <section class="hero glass">
+        <div class="hero-copy">
+          <h1>AI가 만드는<br /><span>나만의 사운드</span></h1>
+          <p>24/7 LIVE DJ STATION</p>
+          <button class="neon-btn" id="heroPlayButton" type="button">AI 믹스 지금 듣기 ▶</button>
+        </div>
+        <aside class="now-card glass">
+          <h3>현재 재생곡</h3>
+          <div class="cover"></div>
+          <h4 id="nowTitle">ELECTRIC HEART</h4>
+          <p class="muted" id="nowArtist">DJ AI Remix</p>
+          <div class="progress"><span id="progressBar"></span></div>
+          <p class="muted"><span id="elapsedSide">02:34</span> / 05:12</p>
+          <button class="neon-btn" id="playlistButton" type="button">전체 플레이리스트</button>
+        </aside>
+      </section>
+
+      <section class="grid stats-row">
+        <article class="broadcast glass card">
+          <span class="mini-pill">LIVE BROADCAST</span>
+          <strong>고봉방송 ON AIR</strong>
+          <span class="muted">청취자 <b id="broadcastListeners">238</b>명</span>
+          <div class="small-wave" id="broadcastWave"></div>
+        </article>
+        <article class="glass card">
+          <h3 class="panel-title">AI 보이스 DJ <span class="mini-pill">VOICE AI</span></h3>
+          <p class="muted" id="voiceStatus">생성형 보이스로 진행중</p>
+          <div class="small-wave" id="voiceWave"></div>
+        </article>
+        <article class="glass card">
+          <h3 class="panel-title">자동 믹싱 모드</h3>
+          <p class="muted" id="mixStatus">BPM SYNC · KEY MATCH</p>
+          <div class="small-wave" id="mixWave"></div>
+        </article>
+      </section>
+
+      <section class="grid main-grid">
+        <aside class="grid">
+          <section class="glass card">
+            <h3 class="panel-title">실시간 채팅</h3>
+            <div class="chat-list" id="chatList"></div>
+            <form class="chat-form" id="chatForm">
+              <input class="input" id="chatInput" maxlength="80" placeholder="메시지를 입력하세요..." />
+              <button class="send" type="submit">➤</button>
+            </form>
+          </section>
+
+          <section class="glass card">
+            <h3 class="panel-title">방문자 카드</h3>
+            <div class="visitor-list" id="visitorList"></div>
+            <button class="neon-btn" id="moreVisitorsButton" type="button">더 많은 방문자 보기</button>
+          </section>
+        </aside>
+
+        <section class="glass card radio-panel">
+          <h3 class="panel-title">고봉방송 ON AIR <span class="live-pill">LIVE</span></h3>
+          <div class="small-wave" id="radioWave"></div>
+          <div class="radio-inner">
+            <div class="info-stack">
+              <div class="info-box"><strong>장르</strong><p class="muted" id="genreBox">EDM / HOUSE</p></div>
+              <div class="info-box"><strong>방송 주제</strong><p class="muted" id="themeBox">미드나잇 하우스 셋</p></div>
+              <div class="info-box"><strong>방송 멘트</strong><p class="muted" id="djLine">오늘은 신나는 하우스 앙상블로 밤공기를 밝혀봅니다.</p></div>
+            </div>
+            <div class="mic-sign"><div class="mic">ON<br />AIR</div></div>
+          </div>
+
+          <h3 class="panel-title">믹서 컨트롤 <span class="mini-pill" id="autoMixPill">AUTO MIX ON</span></h3>
+          <div class="mixer">
+            <div class="channel"><strong>DECK A</strong><span>125 BPM</span><input class="slider" type="range" min="0" max="100" value="72" /><span class="meter"></span><button class="neon-btn" type="button">CUE</button></div>
+            <div class="channel"><strong>DECK B</strong><span>128 BPM</span><input class="slider" type="range" min="0" max="100" value="68" /><span class="meter"></span><button class="neon-btn" type="button">SYNC</button></div>
+            <div class="channel"><strong>MIC</strong><span>VOICE</span><input class="slider" type="range" min="0" max="100" value="80" /><span class="meter"></span><button class="neon-btn" type="button">ON</button></div>
+            <div class="channel"><strong>MASTER</strong><span>OUTPUT</span><input class="slider" type="range" min="0" max="100" value="62" /><span class="meter"></span><button class="neon-btn hot" type="button">LIMITER</button></div>
+          </div>
+          <label class="crossfade muted">크로스페이드 A ↔ B <input id="crossfade" type="range" min="0" max="100" value="52" /></label>
+        </section>
+
+        <aside class="grid">
+          <section class="glass card">
+            <h3 class="panel-title">N/B 메모 <button class="neon-btn" id="addMemoButton" type="button">+ 새 메모</button></h3>
+            <div class="memo-list" id="memoList"></div>
+            <form class="memo-form" id="memoForm">
+              <input class="input" id="memoInput" maxlength="90" placeholder="새 메모..." />
+              <button class="send" type="submit">＋</button>
+            </form>
+          </section>
+          <section class="glass card">
+            <h3 class="panel-title">AI 보이스 DJ <span class="live-pill">LIVE</span></h3>
+            <div class="mic-sign"><div class="mic">AI</div></div>
+            <p class="muted">AI DJ가 실시간으로 방송을 진행하고 있습니다.</p>
+            <button class="neon-btn" id="voiceSettingsButton" type="button">VOICE 설정</button>
+          </section>
+        </aside>
+      </section>
+
+      <section class="grid lower-grid">
+        <article class="glass card">
+          <h3 class="panel-title">라디오 로그</h3>
+          <div class="log-list" id="logList"></div>
+          <button class="neon-btn" id="allLogsButton" type="button">전체 로그 보기</button>
+        </article>
+        <article class="glass card">
+          <h3 class="panel-title">셋리스트 / 스케줄</h3>
+          <div class="tabs"><button class="active" type="button">현재 셋리스트</button><button type="button">예정 스케줄</button><button type="button">AI 추천</button><button type="button">히스토리</button></div>
+          <div class="set-list" id="setList"></div>
+          <div class="grid lower-grid"><button class="neon-btn" id="addTrackButton" type="button">+ 곡 추가</button><button class="neon-btn" id="viewScheduleButton" type="button">전체 보기</button></div>
+        </article>
+      </section>
+
+      <section class="grid wide-grid">
+        <article class="glass card viz">
+          <h3 class="panel-title">AI 비주얼라이저 <span class="live-pill">LIVE</span></h3>
+          <div class="spectrum" id="spectrum"></div>
+          <div class="tabs"><button class="active" type="button">SPECTRUM</button><button type="button">WAVE</button><button type="button">PARTICLE</button><button type="button">CLUB</button></div>
+        </article>
+        <article class="glass card">
+          <h3 class="panel-title">사운드 분석</h3>
+          <div class="analysis-row">
+            <div class="dial"><span><strong id="bpmDial">125</strong>BPM</span></div>
+            <div class="dial"><span><strong id="lufsDial">-5.2</strong>LUFS</span></div>
+            <div class="dial"><span><strong id="keyDial">Am</strong>KEY</span></div>
+          </div>
+          <div class="small-wave" id="analysisWave"></div>
+        </article>
+      </section>
+
+      <section class="grid quick-grid glass card">
+        <button class="quick" type="button"><strong>▣</strong>방송 시작/중지</button>
+        <button class="quick" type="button"><strong>◎</strong>자동 믹싱 <span class="mini-pill">ON</span></button>
+        <button class="quick" type="button"><strong>⟳</strong>BPM SYNC <span class="mini-pill">ON</span></button>
+        <button class="quick" type="button"><strong>✦</strong>효과음 <span class="mini-pill">ON</span></button>
+        <button class="quick" type="button"><strong>▱</strong>사연 접수 <span class="mini-pill">ON</span></button>
+        <button class="quick" type="button"><strong>?</strong>신청곡 접수 <span class="mini-pill">ON</span></button>
+      </section>
+
+      <section class="cta glass">
+        <div class="deck-photo" aria-hidden="true"></div>
+        <div>
+          <h2>AI SoundCloud Radio DJ</h2>
+          <h2 style="color: var(--cyan)">나만의 AI 라디오를 시작하세요!</h2>
+          <p class="muted">지금 바로 시작하고 전 세계와 소통하세요 🎧</p>
+        </div>
+        <button class="neon-btn" id="startButton" type="button">지금 시작하기 ▶</button>
+      </section>
+
+      <footer class="footer glass">
+        <div><h3>참소식.com</h3><p>AI가 음악을 익히고, 방송에 분위기를 만든다.</p></div>
+        <div><h4>서비스</h4><a href="#">DJ 모드</a><a href="#">고봉방송</a><a href="#">AI 보이스 DJ</a><a href="#">라디오 로그</a></div>
+        <div><h4>지원</h4><a href="#">이용 가이드</a><a href="#">문의하기</a><a href="#">이벤트</a><a href="#">이용약관</a></div>
+        <div><h4>커뮤니티</h4><a href="#">N/B 메모</a><a href="#">방문자</a><a href="#">사연/신청곡</a><a href="#">자주 묻는 질문</a></div>
+        <div><h4>AI DJ 앱 연결</h4><p>모바일에서도 고봉방송을 즐겨보세요.</p><button class="neon-btn" type="button">앱 연결</button></div>
+      </footer>
+    </div>
+
+    <section class="bottom-player">
+      <div class="bottom-track"><div class="cover"></div><div><strong id="bottomTitle">ELECTRIC HEART</strong><p class="muted" id="bottomMeta">DJ AI Remix</p></div></div>
+      <div class="small-wave" id="bottomWave"></div>
+      <div class="transport"><button class="icon-btn" id="prevButton" type="button">⏮</button><button class="play-ring" id="bottomPlayButton" type="button">Ⅱ</button><button class="icon-btn" id="nextButton" type="button">⏭</button></div>
+      <div class="volume"><button class="neon-btn" id="autoMixButton" type="button">자동 믹싱 ON</button><input id="volumeInput" type="range" min="0" max="100" value="82" /></div>
+    </section>
 
     <script>
-      const DEFAULT_ENDPOINT = "https://cyclopedically-orthogenetic-sienna.ngrok-free.dev";
-      const DEFAULT_SOUNDCLOUD_URL = "https://soundcloud.com/revenue-589926433/sets/n-b-ai-dj";
-      const DJ_VOICE_PRESETS = {
-        injoon: {
-          label: "InJoon 남성 DJ",
-          preferred: ["ko-KR-InJoonNeural", "InJoon", "Microsoft InJoon"],
-          rate: 1.15,
-          pitch: 0.88,
-          volume: 1
-        },
-        hyunsu: {
-          label: "Hyunsu 심야 DJ",
-          preferred: ["ko-KR-HyunsuNeural", "Hyunsu", "Microsoft Hyunsu"],
-          rate: 1.02,
-          pitch: 0.82,
-          volume: 0.95
-        },
-        sunhi: {
-          label: "SunHi K-pop DJ",
-          preferred: ["ko-KR-SunHiNeural", "SunHi", "Microsoft SunHi"],
-          rate: 1.12,
-          pitch: 1.04,
-          volume: 1
-        }
-      };
-      const messagesEl = document.querySelector("#messages");
-      const topDjMessageEl = document.querySelector("#topDjMessage");
-      const form = document.querySelector("#chatForm");
-      const promptInput = document.querySelector("#promptInput");
-      const sendButton = document.querySelector("#sendButton");
-      const endpointInput = document.querySelector("#endpointInput");
-      const modelInput = document.querySelector("#modelInput");
-      const statusBox = document.querySelector("#statusBox");
-      const readMainButton = document.querySelector("#readMainButton");
-      const readIconButton = document.querySelector("#readIconButton");
-      const mainPageBox = document.querySelector("#mainPageBox");
-      const summaryBox = document.querySelector("#summaryBox");
-      const nicknameEl = document.querySelector("#nickname");
-      const levelEl = document.querySelector("#level");
-      const stateTagEl = document.querySelector("#stateTag");
-      const visitorRecentMessagesEl = document.querySelector("#visitorRecentMessages");
-      const refreshMemoryButton = document.querySelector("#refreshMemoryButton");
-      const fixedPlayerBar = document.querySelector(".fixed-player-bar");
-      const chatPanel = document.querySelector(".chat");
-      const djPanel = document.querySelector("#djPanel");
-      const soundCloudUrlInput = document.querySelector("#soundCloudUrlInput");
-      const soundCloudPlayer = document.querySelector("#soundCloudPlayer");
-      const loadSoundCloudButton = document.querySelector("#loadSoundCloudButton");
-      const playDjButton = document.querySelector("#playDjButton");
-      const nextDjButton = document.querySelector("#nextDjButton");
-      const autoDjButton = document.querySelector("#autoDjButton");
-      const djStatusBox = document.querySelector("#djStatusBox");
-      const voiceStartButton = document.querySelector("#voiceStartButton");
-      const voiceStopButton = document.querySelector("#voiceStopButton");
-      const voiceStatusBox = document.querySelector("#voiceStatusBox");
-      const voiceUserBox = document.querySelector("#voiceUserBox");
-      const voicePresetButtons = [...document.querySelectorAll("[data-voice-preset]")];
-      const topPlayButton = document.querySelector("#topPlayButton");
-      const topPickButton = document.querySelector("#topPickButton");
-      const topVoiceButton = document.querySelector("#topVoiceButton");
-      const gameChapterEl = document.querySelector("#gameChapter");
-      const gameSceneTextEl = document.querySelector("#gameSceneText");
-      const gameChoicesEl = document.querySelector("#gameChoices");
-      const gameStartButton = document.querySelector("#gameStartButton");
-      const statBluffEl = document.querySelector("#statBluff");
-      const statCourageEl = document.querySelector("#statCourage");
-      const statEyeEl = document.querySelector("#statEye");
-      const statRealityEl = document.querySelector("#statReality");
+      const tracks = [
+        { title: "ELECTRIC HEART", artist: "DJ AI Remix", bpm: 125, key: "Gm", duration: "05:12", genre: "EDM / HOUSE" },
+        { title: "Summer", artist: "Calvin Harris", bpm: 126, key: "A", duration: "04:01", genre: "Festival House" },
+        { title: "Titanium", artist: "David Guetta", bpm: 124, key: "F#m", duration: "05:40", genre: "Progressive" },
+        { title: "Wake Me Up", artist: "Avicii", bpm: 120, key: "B", duration: "04:09", genre: "Dance Pop" },
+        { title: "Animals", artist: "Martin Garrix", bpm: 128, key: "Am", duration: "05:04", genre: "Big Room" }
+      ];
 
-      let mainPageContext = "";
-      let aiBusy = false;
+      const chatSeeds = [
+        ["DJ_NEO", "와 지금 믹스 미쳤다 🔥🔥"],
+        ["Clubbing_77", "이 트랙 너무 좋아요!"],
+        ["BassLover", "베이스 중독 👍👍"],
+        ["NightRider", "다음 곡 기대됩니다"],
+        ["SoundWave", "분위기 최고예요~"]
+      ];
+      const visitors = [["DJ_STORM", "Lv.42", "추천 받은 627곡"], ["NeonGirl", "Lv.28", "후원 받은 312곡"], ["BeatMaker", "Lv.35", "누적 요청 198회"]];
+      const memos = ["오늘 하우스 셋 인트로 유지", "128 BPM 중점", "후반부 빌드업 강하게"];
+      const logs = ["MIX · DJ AI Remix - Electric Heart · 125 BPM", "선곡 · Calvin Harris - Summer · 126 BPM", "MIX · David Guetta - Titanium · 124 BPM", "사연 · 청취자 사연 소개 및 음악 선곡", "MIX · Avicii - Wake Me Up · 120 BPM"];
+
+      let trackIndex = 0;
+      let playing = true;
+      let elapsed = 154;
       let soundCloudWidget = null;
-      let soundCloudReady = false;
-      let djPlaying = false;
-      let autoDjEnabled = false;
-      let currentSound = null;
-      let playlistSounds = [];
-      let currentSoundIndex = 0;
-      let soundCloudLoading = false;
-      let soundCloudLoadToken = 0;
-      let lastLoadedSoundCloudUrl = "";
-      let radioApplyingRemote = false;
-      let lastRadioStateVersion = 0;
-      let radioPollTimerId = 0;
-      let recognition = null;
-      let voiceMode = false;
-      let voiceUser = null;
-      let activeVoicePresetKey = "injoon";
-      let djTalkCount = 0;
-      let soundCloudVolume = 100;
-      let loveGameActive = false;
-      let loveGameBusy = false;
-      let loveGameState = null;
-      const AI_ACTION_STORAGE_KEY = "koboongAiRecentActions";
-      const RECENT_TRACK_STORAGE_KEY = "koboongRecentTrackIds";
-      const VISITOR_MESSAGE_STORAGE_KEY = "koboongVisitorRecentMessages";
-      const VISITOR_CARD_STORAGE_KEY = "koboongVisitorCard";
-      const MAX_AI_ACTIONS = 50;
-      const MAX_RECENT_TRACKS = 12;
-      const MAX_VISIBLE_AI_ACTIONS = 5;
-      const MAX_VISITOR_MESSAGES = 5;
-      const recentDjLines = [];
-      let recentAiActions = [];
-      let recentTrackIds = [];
-      let visitorRecentMessages = [];
-      let visitorCardMemory = {};
-      let topDjMessageBusy = false;
-      let topDjFadeTimer = null;
-      let topDjNextTimer = null;
-      let currentTopDjText = "";
-      const topDjMessageQueue = [];
-      const conversationHistory = [];
-      let REBUTTAL_DJ_LINES = [
-        "이 곡은 정말 대단하네요! 가사도 멜로디도 제 취향이에요. 여러분은 어떻게 생각하세요?",
-        "와, 이 트랙은 진짜 명곡입니다! 특히 후렴구가 귀에 쏙쏙 들어오네요. 여러분은 어떤 부분이 가장 좋으세요?"
-      ];
-      let REBUTTAL_DJ_LINE = REBUTTAL_DJ_LINES[0];
-      let KOBOONG_DJ_STORY_NOTE = [
-        ...REBUTTAL_DJ_LINES
-      ];
-      let LOVE_GAME_BEATS = [
-        {
-          id: "seed",
-          chapter: "반박 설명",
-          prompt: REBUTTAL_DJ_LINES[0],
-          choices: [
-            { label: "반박 설명 유지", effects: { reality: 1 } },
-            { label: "같은 설명 반복", effects: { reality: 1 } },
-            { label: "저장 없이 표시", effects: { reality: 1 } }
-          ]
-        },
-        {
-          id: "empty",
-          chapter: "반박 설명",
-          prompt: REBUTTAL_DJ_LINES[1],
-          choices: [
-            { label: "반박 설명 유지", effects: { reality: 1 } },
-            { label: "같은 설명 반복", effects: { reality: 1 } },
-            { label: "저장 없이 표시", effects: { reality: 1 } }
-          ]
-        },
-        {
-          id: "arcade",
-          chapter: "반박 설명",
-          prompt: REBUTTAL_DJ_LINES[0],
-          choices: [
-            { label: "반박 설명 유지", effects: { reality: 1 } },
-            { label: "같은 설명 반복", effects: { reality: 1 } },
-            { label: "저장 없이 표시", effects: { reality: 1 } }
-          ]
-        },
-        {
-          id: "graduation",
-          chapter: "반박 설명",
-          prompt: REBUTTAL_DJ_LINES[1],
-          choices: [
-            { label: "반박 설명 유지", effects: { reality: 1 } },
-            { label: "같은 설명 반복", effects: { reality: 1 } },
-            { label: "저장 없이 표시", effects: { reality: 1 } }
-          ]
-        },
-        {
-          id: "wall",
-          chapter: "반박 설명",
-          prompt: REBUTTAL_DJ_LINES[0],
-          choices: [
-            { label: "반박 설명 유지", effects: { reality: 1 } },
-            { label: "같은 설명 반복", effects: { reality: 1 } },
-            { label: "저장 없이 표시", effects: { reality: 1 } }
-          ]
-        },
-        {
-          id: "kani",
-          chapter: "반박 설명",
-          prompt: REBUTTAL_DJ_LINES[1],
-          choices: [
-            { label: "반박 설명 유지", effects: { reality: 1 } },
-            { label: "처음부터 다시", restart: true },
-            { label: "저장 없이 표시", effects: { reality: 1 } }
-          ]
-        }
-      ];
 
-      function applyRebuttalDjConfig(config = {}) {
-        if (Array.isArray(config.rebuttalDjLines) && config.rebuttalDjLines.length) {
-          REBUTTAL_DJ_LINES = config.rebuttalDjLines.map((line) => String(line || "").trim()).filter(Boolean);
-          REBUTTAL_DJ_LINE = REBUTTAL_DJ_LINES[Number(config.rebuttalDjLineIndex || 0)] || REBUTTAL_DJ_LINES[0];
-          KOBOONG_DJ_STORY_NOTE = [...REBUTTAL_DJ_LINES];
-        }
+      const qs = (selector) => document.querySelector(selector);
+      const qsa = (selector) => [...document.querySelectorAll(selector)];
 
-        if (Array.isArray(config.loveGameBeats) && config.loveGameBeats.length) {
-          LOVE_GAME_BEATS = config.loveGameBeats.map((beat) => ({
-            ...beat,
-            prompt: REBUTTAL_DJ_LINES[Number(beat.promptIndex || 0)] || REBUTTAL_DJ_LINE,
-            choices: Array.isArray(beat.choices) ? beat.choices : []
-          }));
-        }
-      }
-
-      async function loadRebuttalDjConfig() {
-        try {
-          const response = await fetch("rebuttal-dj-lines.json", {
-            cache: "no-store",
-            headers: { "ngrok-skip-browser-warning": "true" }
-          });
-          if (!response.ok) throw new Error(`rebuttal config ${response.status}`);
-          applyRebuttalDjConfig(await response.json());
-        } catch (error) {
-          console.warn("DJ 멘트 JSON 로딩 실패, 내장 fallback 사용:", error);
-        }
-      }
-
-      function apiBase() {
-        return (endpointInput.value || DEFAULT_ENDPOINT).replace(/\/api\/chat$/, "").replace(/\/health$/, "").replace(/\/$/, "");
-      }
-
-      function apiBaseCandidates() {
-        return [...new Set([
-          apiBase(),
-          "http://127.0.0.1:3110"
-        ])];
-      }
-
-      async function fetchApi(path, options = {}) {
-        let lastError = null;
-        for (const base of apiBaseCandidates()) {
-          try {
-            const response = await fetch(`${base}${path}`, options);
-            if (response.ok && base !== apiBase()) {
-              endpointInput.value = base;
-              localStorage.setItem("chamsosikAiEndpoint", base);
-            }
-            return response;
-          } catch (error) {
-            lastError = error;
-          }
-        }
-        throw lastError || new Error("API endpoint unavailable");
-      }
-
-      function compactText(text) {
-        return (text || "").replace(/\s+/g, " ").trim();
-      }
-
-      function loadJsonList(key, limit) {
-        try {
-          const value = JSON.parse(localStorage.getItem(key) || "[]");
-          return Array.isArray(value) ? value.slice(-limit) : [];
-        } catch {
-          return [];
-        }
-      }
-
-      function saveJsonList(key, list, limit) {
-        localStorage.setItem(key, JSON.stringify(list.slice(-limit)));
-      }
-
-      function escapeText(text) {
-        return String(text || "").replace(/[&<>"']/g, (char) => ({
-          "&": "&amp;",
-          "<": "&lt;",
-          ">": "&gt;",
-          "\"": "&quot;",
-          "'": "&#39;"
-        }[char]));
-      }
-
-      function formatLogTime(value) {
-        const date = new Date(value || Date.now());
-        return date.toLocaleTimeString("ko-KR", {
-          hour: "2-digit",
-          minute: "2-digit",
-          hour12: false
-        });
-      }
-
-      function actionIcon(type = "") {
-        if (type.includes("track")) return "♪";
-        if (type.includes("voice")) return "◉";
-        if (type.includes("game")) return "♟";
-        if (type.includes("dj")) return "▤";
-        return "▣";
-      }
-
-      function renderRadioActionLog() {
-        const logEl = document.querySelector("#radioActionLog");
-        if (!logEl) return;
-
-        const actions = recentAiActions.slice(-MAX_VISIBLE_AI_ACTIONS).reverse();
-        if (!actions.length) {
-          logEl.innerHTML = `<div class="flow-item"><span>▣</span><span>AI 라디오 작업 대기 중</span><span>›</span></div>`;
-          return;
-        }
-
-        logEl.innerHTML = actions.map((item, index) => {
-          const detail = compactText(item.detail || item.track || item.type || "라디오 작업").slice(0, 84);
-          const track = item.track ? ` · ${compactText(item.track).slice(0, 42)}` : "";
-          return `
-            <div class="flow-item">
-              <span>${actionIcon(item.type)}</span>
-              <span>${index + 1}. ${escapeText(item.type)} - ${escapeText(detail)}${escapeText(track)}<br><small>${formatLogTime(item.at)} 업데이트</small></span>
-              <span>›</span>
-            </div>
-          `;
+      function makeBars(target, count, min = 8, max = 58) {
+        const el = typeof target === "string" ? qs(target) : target;
+        el.innerHTML = Array.from({ length: count }, (_, i) => {
+          const h = Math.round(min + Math.abs(Math.sin(i * 0.72) * (max - min)) + Math.random() * 10);
+          return `<span style="--h:${Math.min(max, h)};--i:${i}"></span>`;
         }).join("");
       }
 
-      function renderVisitorRecentMessages() {
-        if (!visitorRecentMessagesEl) return;
-
-        const messages = visitorRecentMessages
-          .filter((item) => item.role === "user")
-          .slice(-MAX_VISITOR_MESSAGES)
-          .reverse();
-        if (!messages.length) {
-          visitorRecentMessagesEl.innerHTML = `<div class="visitor-recent-item">아직 새 메시지가 없습니다.<small>대기 중</small></div>`;
-          return;
-        }
-
-        visitorRecentMessagesEl.innerHTML = messages.map((item) => {
-          const text = compactText(item.text).slice(0, 96);
-          return `<div class="visitor-recent-item">방문자: ${escapeText(text)}<small>${formatLogTime(item.at)}</small></div>`;
-        }).join("");
+      function formatTime(seconds) {
+        const m = Math.floor(seconds / 60).toString().padStart(2, "0");
+        const s = Math.floor(seconds % 60).toString().padStart(2, "0");
+        return `${m}:${s}`;
       }
 
-      function visitorStateByMessageCount(count) {
-        if (count >= 5) return { label: "핵심 방문자", level: "Lv.5" };
-        if (count >= 3) return { label: "설계 방문자", level: "Lv.4" };
-        if (count >= 2) return { label: "질문 방문자", level: "Lv.3" };
-        if (count >= 1) return { label: "탐색 방문자", level: "Lv.2" };
-        return { label: "낯선 방문자", level: "Lv.1" };
+      function durationSeconds(value) {
+        const [m, s] = value.split(":").map(Number);
+        return m * 60 + s;
       }
 
-      function syncVisitorStateVisual(label) {
-        document.querySelectorAll(".states .state").forEach((item) => {
-          const stateLabel = item.querySelector("span:nth-child(2)")?.textContent?.trim();
-          item.classList.toggle("active", stateLabel === label);
-        });
+      function currentTrack() {
+        return tracks[trackIndex % tracks.length];
       }
 
-      function loadVisitorCardMemory() {
+      function renderTrack() {
+        const track = currentTrack();
+        qs("#trackTitle").textContent = track.title;
+        qs("#trackMeta").textContent = `${track.artist} · ${track.bpm} BPM · ${track.key}`;
+        qs("#nowTitle").textContent = track.title;
+        qs("#nowArtist").textContent = track.artist;
+        qs("#bottomTitle").textContent = track.title;
+        qs("#bottomMeta").textContent = track.artist;
+        qs("#durationTop").textContent = track.duration;
+        qs("#genreBox").textContent = track.genre;
+        qs("#bpmDial").textContent = track.bpm;
+        qs("#keyDial").textContent = track.key;
+        qs("#djLine").textContent = `${track.title} 들어갑니다. ${track.bpm} BPM으로 분위기 끌어올릴게요.`;
+        renderSetList();
+        addLog(`MIX · ${track.artist} - ${track.title} · ${track.bpm} BPM`);
+      }
+
+      function renderSetList() {
+        qs("#setList").innerHTML = tracks.map((track, index) => `
+          <button class="set-item" type="button" data-track="${index}">
+            <span>${String(index + 1).padStart(2, "0")} &nbsp; ${track.title} (${track.artist})</span>
+            <span class="muted">${track.bpm} BPM &nbsp; ▶</span>
+          </button>
+        `).join("");
+      }
+
+      function renderLists() {
+        qs("#chatList").innerHTML = chatSeeds.map(([name, text]) => `
+          <div class="chat-item"><span class="avatar"></span><div><div class="chat-name">${name}</div><div class="chat-text">${text}</div></div><span class="muted">21:34</span></div>
+        `).join("");
+        qs("#visitorList").innerHTML = visitors.map(([name, level, text]) => `
+          <div class="visitor-item"><div class="visitor-name">${name} <span class="muted">${level}</span></div><div class="muted">${text}</div></div>
+        `).join("");
+        qs("#memoList").innerHTML = memos.map((memo, index) => `
+          <div class="memo-item"><strong>고봉님 메모 · 21:${20 + index * 5}</strong><div class="memo-text">${memo}</div></div>
+        `).join("");
+        qs("#logList").innerHTML = logs.slice(-5).reverse().map((log, index) => `
+          <div class="log-item"><span class="muted">21:${35 - index * 4}:12</span><strong>${log}</strong></div>
+        `).join("");
+      }
+
+      function addLog(text) {
+        logs.push(text);
+        if (logs.length > 14) logs.shift();
+        if (qs("#logList")) renderLists();
+      }
+
+      function setPlaying(next) {
+        playing = next;
+        const label = playing ? "Ⅱ" : "▶";
+        qs("#playButton").textContent = label;
+        qs("#bottomPlayButton").textContent = label;
         try {
-          visitorCardMemory = JSON.parse(localStorage.getItem(VISITOR_CARD_STORAGE_KEY) || "{}") || {};
-        } catch {
-          visitorCardMemory = {};
-        }
+          if (soundCloudWidget) playing ? soundCloudWidget.play() : soundCloudWidget.pause();
+        } catch {}
       }
 
-      function saveVisitorCardMemory() {
-        localStorage.setItem(VISITOR_CARD_STORAGE_KEY, JSON.stringify({
-          nickname: nicknameEl.textContent,
-          level: levelEl.textContent.replace(/\s*★$/, ""),
-          state: stateTagEl.textContent,
-          updatedAt: new Date().toISOString()
-        }));
+      function pickTrack(offset = 1) {
+        trackIndex = (trackIndex + offset + tracks.length) % tracks.length;
+        elapsed = 0;
+        renderTrack();
+        setPlaying(true);
+        speak(`다음 곡은 ${currentTrack().title}. ${currentTrack().bpm} BPM으로 갑니다.`);
       }
 
-      function updateVisitorCard(overrides = {}) {
-        visitorCardMemory = { ...visitorCardMemory, ...overrides };
-        const visitorMessageCount = visitorRecentMessages.filter((item) => item.role === "user").length;
-        const stateFromMessages = visitorMessageCount > 0 ? visitorStateByMessageCount(visitorMessageCount) : null;
-        const voiceName = voiceUser?.name && voiceUser.name !== "이름 미확인 방문자" ? voiceUser.name : "";
-        const nickname = voiceName
-          || visitorCardMemory.nickname
-          || nicknameEl.textContent
-          || "조용한 탐색자 027";
-        const level = stateFromMessages?.level
-          || visitorCardMemory.level
-          || levelEl.textContent.replace(/\s*★$/, "")
-          || "Lv.1";
-        const stateLabel = stateFromMessages?.label
-          || visitorCardMemory.state
-          || stateTagEl.textContent
-          || "낯선 방문자";
-
-        nicknameEl.textContent = nickname;
-        levelEl.textContent = `${level.replace(/\s*★$/, "")} ★`;
-        stateTagEl.textContent = stateLabel;
-        syncVisitorStateVisual(stateLabel);
-        saveVisitorCardMemory();
-      }
-
-      function updateVisitorStateFromMessages() {
-        updateVisitorCard();
-      }
-
-      function rememberVisitorMessage(role, text) {
-        if (role !== "user") {
-          updateVisitorStateFromMessages();
-          return;
-        }
-
-        visitorRecentMessages.push({
-          role,
-          text: compactText(text).slice(0, 180),
-          at: new Date().toISOString()
-        });
-        visitorRecentMessages = visitorRecentMessages.slice(-MAX_VISITOR_MESSAGES);
-        saveJsonList(VISITOR_MESSAGE_STORAGE_KEY, visitorRecentMessages, MAX_VISITOR_MESSAGES);
-        renderVisitorRecentMessages();
-        updateVisitorStateFromMessages();
-      }
-
-      function rememberAiAction(type, detail = "") {
-        const action = {
-          type,
-          detail: compactText(detail).slice(0, 500),
-          track: currentTrackLabel(),
-          at: new Date().toISOString()
-        };
-        recentAiActions.push(action);
-        recentAiActions = recentAiActions.slice(-MAX_AI_ACTIONS);
-        saveJsonList(AI_ACTION_STORAGE_KEY, recentAiActions, MAX_AI_ACTIONS);
-        renderRadioActionLog();
-        return action;
-      }
-
-      function recentAiActionContext(limit = 10) {
-        return recentAiActions
-          .slice(-limit)
-          .map((item) => `${item.type}: ${item.detail}${item.track ? ` / ${item.track}` : ""}`)
-          .join("\n");
-      }
-
-      function getSoundId(sound) {
-        return String(sound?.id ?? sound?.permalink_url ?? sound?.title ?? "");
-      }
-
-      function rememberPlayedTrack(sound = currentSound) {
-        const id = getSoundId(sound);
-        if (!id) return;
-        recentTrackIds = recentTrackIds.filter((item) => item !== id);
-        recentTrackIds.push(id);
-        recentTrackIds = recentTrackIds.slice(-MAX_RECENT_TRACKS);
-        saveJsonList(RECENT_TRACK_STORAGE_KEY, recentTrackIds, MAX_RECENT_TRACKS);
-      }
-
-      function setStatus(text, isError = false) {
-        statusBox.textContent = text;
-        statusBox.classList.toggle("error", isError);
-      }
-
-      function setDjStatus(text) {
-        djStatusBox.textContent = text;
-      }
-
-      function setVoiceStatus(text) {
-        voiceStatusBox.textContent = text;
-      }
-
-      function loadVoiceUser() {
-        try {
-          voiceUser = JSON.parse(localStorage.getItem("chamsosikVoiceUser") || "null");
-        } catch {
-          voiceUser = null;
-        }
-
-        if (!voiceUser) {
-          voiceUser = {
-            id: `voice-${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 7)}`,
-            name: "이름 미확인 방문자",
-            createdAt: new Date().toISOString(),
-            lastSeen: new Date().toISOString(),
-            visits: 0
-          };
-        }
-
-        voiceUser.visits = Number(voiceUser.visits || 0) + 1;
-        voiceUser.lastSeen = new Date().toISOString();
-        localStorage.setItem("chamsosikVoiceUser", JSON.stringify(voiceUser));
-        renderVoiceUser();
-      }
-
-      function renderVoiceUser() {
-        const user = voiceUser || { name: "이름 미확인 방문자", id: "unknown", visits: 0 };
-        voiceUserBox.textContent = `방문자 기억\n이름: ${user.name}\nID: ${user.id}\n방문: ${user.visits || 0}회`;
-        updateVisitorCard({
-          nickname: user.name && user.name !== "이름 미확인 방문자" ? user.name : visitorCardMemory.nickname
-        });
-      }
-
-      function rememberVoiceUserFromSpeech(text) {
-        const match = String(text || "").match(/(?:내 이름은|나는|저는|이름은)\s*([가-힣A-Za-z0-9_-]{2,20})/);
-        if (!match) return false;
-        voiceUser.name = match[1];
-        voiceUser.lastSeen = new Date().toISOString();
-        localStorage.setItem("chamsosikVoiceUser", JSON.stringify(voiceUser));
-        renderVoiceUser();
-        return true;
-      }
-
-      function soundCloudEmbedUrl(url, autoPlay = false) {
-        const params = new URLSearchParams({
-          url,
-          auto_play: autoPlay ? "true" : "false",
-          hide_related: "true",
-          show_comments: "false",
-          show_user: "true",
-          show_reposts: "false",
-          visual: "false",
-          buying: "false",
-          sharing: "false",
-          download: "false"
-        });
-        return `https://w.soundcloud.com/player/?${params.toString()}`;
-      }
-
-      function normalizeSoundCloudUrl(value) {
-        const url = (value || "").trim();
-        if (!url) return "";
-        if (!/^https?:\/\/(soundcloud\.com|on\.soundcloud\.com)\//i.test(url)) return "";
-        return url;
-      }
-
-      function updateDjUi() {
-        fixedPlayerBar.classList.toggle("playing", djPlaying);
-        chatPanel.classList.toggle("playing", djPlaying);
-        djPanel.classList.toggle("playing", djPlaying);
-        playDjButton.textContent = djPlaying ? "PAUSE" : "PLAY";
-        topPlayButton.textContent = djPlaying ? "PAUSE" : "PLAY";
-        autoDjButton.classList.toggle("active", autoDjEnabled);
-      }
-
-      function timeLabel() {
-        return new Date().toLocaleTimeString("ko-KR", { hour: "2-digit", minute: "2-digit" });
-      }
-
-      function stripDjPrefix(text) {
-        return String(text || "").replace(/^DJ\s*[:：]\s*/i, "").trim();
-      }
-
-      function queueTopDjMessage(text) {
-        const clean = stripDjPrefix(text);
-        if (!clean) return;
-        if (clean === currentTopDjText || topDjMessageQueue[topDjMessageQueue.length - 1] === clean) return;
-        topDjMessageQueue.push(clean);
-        if (currentTopDjText && !topDjMessageBusy) {
-          currentTopDjText = "";
-          runTopDjQueue();
-          return;
-        }
-        runTopDjQueue();
-      }
-
-      function removeQueuedTopDjMessage(text) {
-        const clean = stripDjPrefix(text);
-        for (let index = topDjMessageQueue.length - 1; index >= 0; index -= 1) {
-          if (topDjMessageQueue[index] === clean) topDjMessageQueue.splice(index, 1);
-        }
-      }
-
-      function setTopDjMessage(text, status = "DJ 멘트") {
-        const clean = stripDjPrefix(text);
-        if (!clean || !topDjMessageEl) return "";
-        clearTimeout(topDjFadeTimer);
-        clearTimeout(topDjNextTimer);
-        removeQueuedTopDjMessage(clean);
-        currentTopDjText = clean;
-        topDjMessageBusy = true;
-        topDjMessageEl.classList.remove("visible", "fading", "speaking");
-        topDjMessageEl.innerHTML = `${escapeText(clean)}<small>${escapeText(status)} · ${timeLabel()}</small>`;
-        requestAnimationFrame(() => {
-          topDjMessageEl.classList.add("visible");
-          if (/읽는 중/.test(status)) topDjMessageEl.classList.add("speaking");
-        });
-        return clean;
-      }
-
-      function releaseTopDjMessage(delay = 1600) {
-        if (!topDjMessageQueue.length) {
-          topDjMessageEl?.classList.remove("speaking", "fading");
-          topDjMessageEl?.classList.add("visible");
-          topDjMessageBusy = false;
-          return;
-        }
-
-        clearTimeout(topDjFadeTimer);
-        clearTimeout(topDjNextTimer);
-        topDjFadeTimer = setTimeout(() => {
-          topDjMessageEl?.classList.add("fading");
-          topDjMessageEl?.classList.remove("visible", "speaking");
-        }, delay);
-
-        topDjNextTimer = setTimeout(() => {
-          if (topDjMessageEl) {
-            topDjMessageEl.textContent = "";
-            topDjMessageEl.classList.remove("fading", "speaking");
-          }
-          currentTopDjText = "";
-          topDjMessageBusy = false;
-          runTopDjQueue();
-        }, delay + 1300);
-      }
-
-      function runTopDjQueue() {
-        if (topDjMessageBusy || !topDjMessageEl || !topDjMessageQueue.length) return;
-        topDjMessageBusy = true;
-        const text = topDjMessageQueue.shift();
-        currentTopDjText = text;
-        clearTimeout(topDjFadeTimer);
-        clearTimeout(topDjNextTimer);
-        topDjMessageEl.classList.remove("visible", "fading", "speaking");
-        topDjMessageEl.innerHTML = `${escapeText(text)}<small>DJ 멘트 · ${timeLabel()}</small>`;
-
-        requestAnimationFrame(() => {
-          topDjMessageEl.classList.add("visible");
-        });
-
-        if (!topDjMessageQueue.length) {
-          topDjMessageBusy = false;
-          return;
-        }
-
-        topDjFadeTimer = setTimeout(() => {
-          topDjMessageEl.classList.add("fading");
-          topDjMessageEl.classList.remove("visible");
-        }, 5200);
-
-        topDjNextTimer = setTimeout(() => {
-          topDjMessageEl.textContent = "";
-          topDjMessageEl.classList.remove("fading", "speaking");
-          currentTopDjText = "";
-          topDjMessageBusy = false;
-          runTopDjQueue();
-        }, 6800);
-      }
-
-      function addMessage(role, text) {
-        const normalizedText = text || "";
-        const djLineText = stripDjPrefix(normalizedText);
-        if (role !== "user" && (/^DJ\s*[:：]/i.test(normalizedText) || REBUTTAL_DJ_LINES.includes(djLineText))) {
-          queueTopDjMessage(normalizedText);
-          conversationHistory.push({ role, text: normalizedText });
-          while (conversationHistory.length > 14) conversationHistory.shift();
-          rememberVisitorMessage(role, normalizedText);
-          return;
-        }
-
-        const row = document.createElement("div");
-        row.className = "msg-row" + (role === "user" ? " user" : "");
-        if (role !== "user") {
-          const avatar = document.createElement("div");
-          avatar.className = "mini-bot";
-          avatar.textContent = "🤖";
-          row.appendChild(avatar);
-        }
-
-        const bubble = document.createElement("div");
-        bubble.className = "bubble";
-        bubble.textContent = text || "";
-        const time = document.createElement("span");
-        time.className = "time";
-        time.textContent = timeLabel() + (role === "user" ? " ✓" : "");
-        bubble.appendChild(time);
-        row.appendChild(bubble);
-        messagesEl.prepend(row);
-        messagesEl.scrollTop = 0;
-
-        conversationHistory.push({ role, text: normalizedText });
-        while (conversationHistory.length > 14) conversationHistory.shift();
-        rememberVisitorMessage(role, normalizedText);
-      }
-
-      function renderVisitorRoomMessages(messages = []) {
-        if (!messagesEl) return;
-        const visibleMessages = messages.slice(-40);
-        messagesEl.innerHTML = "";
-        visibleMessages.forEach((item) => {
-          const role = item.role === "user" ? "user" : "ai";
-          const row = document.createElement("div");
-          row.className = "msg-row" + (role === "user" ? " user" : "");
-          if (role !== "user") {
-            const avatar = document.createElement("div");
-            avatar.className = "mini-bot";
-            avatar.textContent = "🤖";
-            row.appendChild(avatar);
-          }
-
-          const bubble = document.createElement("div");
-          bubble.className = "bubble";
-          const label = role === "user" ? "방문자" : "AI";
-          bubble.textContent = `${label}: ${item.text || ""}`;
-          const time = document.createElement("span");
-          time.className = "time";
-          time.textContent = formatLogTime(item.createdAt || item.at);
-          bubble.appendChild(time);
-          row.appendChild(bubble);
-          messagesEl.appendChild(row);
-        });
-        messagesEl.scrollTop = messagesEl.scrollHeight;
-      }
-
-      async function loadVisitorRoomMessages() {
-        const response = await fetchApi("/api/visitor-room", {
-          headers: { "ngrok-skip-browser-warning": "true" }
-        });
-        if (!response.ok) throw new Error(`visitor-room ${response.status}`);
-        const data = await response.json();
-        renderVisitorRoomMessages(data.messages || []);
-        return data;
-      }
-
-      function firstParagraph(text) {
-        return (text || "응답 내용이 비어 있습니다.")
-          .replace(/\s+/g, " ")
-          .trim()
-          .split(/(?<=[.!?。])\s+/)[0]
-          .slice(0, 260);
-      }
-
-      function rememberDjLine(line) {
-        const text = compactText(line);
-        if (!text) return;
-        recentDjLines.push(text);
-        while (recentDjLines.length > 6) recentDjLines.shift();
-      }
-
-      function nextDjStyle(reason = "") {
-        djTalkCount += 1;
-        return REBUTTAL_DJ_LINES[(djTalkCount - 1) % REBUTTAL_DJ_LINES.length];
-      }
-
-      function pickKoboongStoryBeat(reason = "") {
-        return REBUTTAL_DJ_LINES[djTalkCount % REBUTTAL_DJ_LINES.length];
-      }
-
-      function setVoicePreset(key) {
-        activeVoicePresetKey = DJ_VOICE_PRESETS[key] ? key : "injoon";
-        localStorage.setItem("chamsosikDjVoicePreset", activeVoicePresetKey);
-        voicePresetButtons.forEach((button) => {
-          button.classList.toggle("active", button.dataset.voicePreset === activeVoicePresetKey);
-        });
-        const preset = DJ_VOICE_PRESETS[activeVoicePresetKey];
-        setVoiceStatus(`DJ 음성 프리셋: ${preset.label}\nrate ${Math.round((preset.rate - 1) * 100)}%, pitch ${preset.pitch}`);
-      }
-
-      function pickKoreanVoice() {
-        const voices = window.speechSynthesis?.getVoices?.() || [];
-        const preset = DJ_VOICE_PRESETS[activeVoicePresetKey] || DJ_VOICE_PRESETS.injoon;
-        const preferred = preset.preferred || [];
-        return (
-          voices.find((voice) => preferred.some((name) => voice.name.includes(name) || voice.voiceURI.includes(name))) ||
-          voices.find((voice) => /ko-KR/i.test(voice.lang) && preferred.some((name) => voice.name.toLowerCase().includes(name.toLowerCase().replace("ko-kr-", "").replace("neural", "")))) ||
-          voices.find((voice) => /ko-KR/i.test(voice.lang)) ||
-          voices.find((voice) => /Korean|한국/i.test(voice.name)) ||
-          voices[0] ||
-          null
-        );
-      }
-
-      function speakText(text, options = {}) {
-        if (!("speechSynthesis" in window)) {
-          setVoiceStatus("이 브라우저는 음성 합성을 지원하지 않습니다.");
-          return Promise.resolve();
-        }
-
-        const line = String(text || "").trim();
-        if (!line) return Promise.resolve();
-
+      function speak(text) {
+        qs("#voiceStatus").textContent = text;
+        if (!("speechSynthesis" in window)) return;
         window.speechSynthesis.cancel();
-        return new Promise((resolve) => {
-          const preset = DJ_VOICE_PRESETS[activeVoicePresetKey] || DJ_VOICE_PRESETS.injoon;
-          const utterance = new SpeechSynthesisUtterance(line);
-          utterance.lang = "ko-KR";
-          utterance.rate = options.rate || preset.rate;
-          utterance.pitch = options.pitch || preset.pitch;
-          utterance.volume = options.volume || preset.volume;
-          const voice = pickKoreanVoice();
-          if (voice) utterance.voice = voice;
-          utterance.onend = resolve;
-          utterance.onerror = resolve;
-          window.speechSynthesis.speak(utterance);
-        });
+        const utterance = new SpeechSynthesisUtterance(text);
+        utterance.lang = "ko-KR";
+        utterance.rate = 1.04;
+        window.speechSynthesis.speak(utterance);
       }
 
-      function waitForSoundCloudReady(timeout = 5000) {
-        return new Promise((resolve) => {
-          const startedAt = Date.now();
-          const timer = setInterval(() => {
-            if (soundCloudReady || Date.now() - startedAt > timeout) {
-              clearInterval(timer);
-              resolve(soundCloudReady);
-            }
-          }, 120);
-        });
+      function updateClock() {
+        if (playing) elapsed += 1;
+        const track = currentTrack();
+        const total = durationSeconds(track.duration);
+        if (elapsed >= total) pickTrack(1);
+        const ratio = Math.min(100, (elapsed / total) * 100);
+        qs("#elapsedTop").textContent = formatTime(elapsed);
+        qs("#elapsedSide").textContent = formatTime(elapsed);
+        qs("#progressBar").style.width = `${ratio}%`;
       }
 
-      async function speakDjLine(text, options = {}) {
-        const spokenLine = stripDjPrefix(text);
-        const shouldPauseMusic = options.pauseMusic === true;
-        const shouldDuckMusic = options.duckMusic !== false;
-        const shouldResumeMusic = options.resumeMusic !== false;
-        const wasPlaying = djPlaying;
-        const duckVolume = Math.max(8, Math.min(45, Number(options.duckVolume ?? 24)));
-
-        setTopDjMessage(spokenLine, "읽는 중");
-
-        if (shouldPauseMusic && wasPlaying && soundCloudWidget) {
-          setDjStatus(`DJ TALK\n음악을 잠깐 멈추고 멘트 중입니다.\n${currentTrackLabel()}`);
-          soundCloudWidget.pause();
-          await new Promise((resolve) => setTimeout(resolve, 350));
-        } else if (shouldDuckMusic && wasPlaying && soundCloudWidget?.setVolume) {
-          setDjStatus(`DJ TALK\n음악은 살짝 낮추고 멘트 중입니다.\n${currentTrackLabel()}`);
-          soundCloudWidget.setVolume(duckVolume);
-          await new Promise((resolve) => setTimeout(resolve, 120));
-        }
-
-        await speakText(spokenLine, options.voice || {});
-        releaseTopDjMessage(1600);
-
-        if (shouldPauseMusic && shouldResumeMusic && wasPlaying && soundCloudWidget) {
-          soundCloudWidget.play();
-          setDjStatus(`ON AIR\n${currentTrackLabel()}`);
-        } else if (shouldDuckMusic && wasPlaying && soundCloudWidget?.setVolume) {
-          soundCloudWidget.setVolume(soundCloudVolume);
-          setDjStatus(`ON AIR\n${currentTrackLabel()}`);
-        }
-      }
-
-      function setupSpeechRecognition() {
-        const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
-        if (!SpeechRecognition) {
-          setVoiceStatus("이 브라우저는 음성 인식을 지원하지 않습니다. Chrome/Edge 계열에서 음성 DJ를 사용할 수 있습니다.");
-          return null;
-        }
-
-        const recognizer = new SpeechRecognition();
-        recognizer.lang = "ko-KR";
-        recognizer.continuous = false;
-        recognizer.interimResults = true;
-
-        recognizer.onstart = () => {
-          setVoiceStatus(`${voiceUser?.name || "방문자"}님의 말을 듣고 있습니다...`);
-        };
-
-        recognizer.onresult = (event) => {
-          const transcript = [...event.results].map((result) => result[0].transcript).join(" ").trim();
-          setVoiceStatus(`들은 내용: ${transcript}`);
-          const last = event.results[event.results.length - 1];
-          if (last?.isFinal && transcript) {
-            handleVoiceUserSpeech(transcript);
-          }
-        };
-
-        recognizer.onerror = (event) => {
-          setVoiceStatus(`음성 인식 오류: ${event.error}`);
-        };
-
-        recognizer.onend = () => {
-          if (voiceMode && !aiBusy) {
-            setTimeout(() => {
-              try {
-                recognizer.start();
-              } catch {
-                /* already started */
-              }
-            }, 900);
-          }
-        };
-
-        return recognizer;
-      }
-
-      function currentTrackLabel() {
-        if (!currentSound) return "아직 현재 곡 정보를 읽지 못했습니다.";
-        return [currentSound.title, currentSound.user?.username].filter(Boolean).join(" - ");
-      }
-
-      function currentTrackMeta() {
-        const title = compactText(currentSound?.title || "");
-        const artist = compactText(currentSound?.user?.username || "");
-        return {
-          title: title || "제목을 읽는 중인 곡",
-          artist: artist || "SoundCloud 아티스트",
-          label: [title, artist].filter(Boolean).join(" - ") || "현재 재생 중인 곡"
-        };
-      }
-
-      function isBadDjLine(line) {
-        const text = compactText(line);
-        if (!text) return true;
-        return (
-          /사용자[는가]? .*라디오 DJ 역할을 요청/i.test(text) ||
-          /SoundCloud 라디오 DJ 역할/i.test(text) ||
-          /요청하고 있습니다/i.test(text) ||
-          /프롬프트|지시|시스템|역할/i.test(text) ||
-          /^사용자[는가]?/i.test(text) ||
-          text.length < 8
-        );
-      }
-
-      function fallbackDjLine(reason = "") {
-        return REBUTTAL_DJ_LINES[djTalkCount % REBUTTAL_DJ_LINES.length];
-      }
-
-      function normalizeDjLine(line, reason = "") {
-        return fallbackDjLine(reason);
-      }
-
-      function createLoveGameState() {
-        return {
-          beatIndex: 0,
-          stats: { bluff: 1, courage: 1, eye: 0, reality: 1 },
-          history: []
-        };
-      }
-
-      function clampGameStat(value) {
-        return Math.max(0, Math.min(9, Number(value || 0)));
-      }
-
-      function currentLoveGameBeat() {
-        const state = loveGameState || createLoveGameState();
-        return LOVE_GAME_BEATS[Math.max(0, Math.min(state.beatIndex, LOVE_GAME_BEATS.length - 1))];
-      }
-
-      function updateLoveGameStats() {
-        const stats = loveGameState?.stats || { bluff: 1, courage: 1, eye: 0, reality: 1 };
-        statBluffEl.textContent = stats.bluff;
-        statCourageEl.textContent = stats.courage;
-        statEyeEl.textContent = stats.eye;
-        statRealityEl.textContent = stats.reality;
-      }
-
-      function renderLoveGameScene(sceneText, choices) {
-        const beat = currentLoveGameBeat();
-        gameChapterEl.textContent = beat.chapter;
-        gameSceneTextEl.textContent = sceneText || beat.prompt;
-        updateLoveGameStats();
-        gameChoicesEl.innerHTML = "";
-        (choices || beat.choices || []).forEach((choice, index) => {
-          const button = document.createElement("button");
-          button.type = "button";
-          button.className = "game-choice";
-          button.textContent = `${index + 1}. ${choice.label || choice}`;
-          button.addEventListener("click", () => chooseLoveGameOption(index));
-          gameChoicesEl.appendChild(button);
-        });
-        gameStartButton.textContent = loveGameActive ? "게임 리셋" : "게임 시작";
-      }
-
-      function fallbackLoveGameNarration(choiceLabel = "") {
-        return REBUTTAL_DJ_LINES[djTalkCount % REBUTTAL_DJ_LINES.length];
-      }
-
-      async function generateLoveGameNarration(choiceLabel = "") {
-        return fallbackLoveGameNarration(choiceLabel);
-        const base = apiBase();
-        const model = modelInput.value.trim() || "kimi-k2.6:cloud";
-        await refreshCurrentSound();
-        const track = currentTrackMeta();
-        const beat = currentLoveGameBeat();
-        const stats = loveGameState?.stats || {};
-
+      function initSoundCloud() {
+        if (!window.SC) return;
         try {
-          const response = await fetch(`${base}/api/chat`, {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-              "ngrok-skip-browser-warning": "true"
-            },
-            body: JSON.stringify({
-              model,
-              messages: [
-                {
-                  role: "system",
-                  content: [
-                    "너는 SoundCloud 라디오 DJ이자 코믹 연애 어드벤처 게임 마스터다.",
-                    "현재 곡을 배경음처럼 언급하면서 꼬봉 연애 게임 장면을 한국어로 2~4문장 진행한다.",
-                    "사용자에게 새 질문을 던지지 말고, 제공된 선택지로 이어질 장면만 만든다.",
-                    "웃기지만 약간 짠한 톤을 유지한다.",
-                    "전체 사연을 한 번에 요약하지 말고 현재 챕터와 선택만 진행한다."
-                  ].join("\n")
-                },
-                {
-                  role: "user",
-                  content: [
-                    `현재 곡: ${track.label}`,
-                    `현재 챕터: ${beat.chapter}`,
-                    `장면 핵심: ${beat.prompt}`,
-                    `선택한 행동: ${choiceLabel || "게임 시작"}`,
-                    `스탯: 허세 ${stats.bluff}, 용기 ${stats.courage}, 눈맞춤 ${stats.eye}, 현실감 ${stats.reality}`,
-                    `[꼬봉 사연 노트]\n${KOBOONG_DJ_STORY_NOTE.join("\n")}`,
-                    `[최근 게임 진행]\n${(loveGameState?.history || []).slice(-4).join("\n") || "없음"}`
-                  ].join("\n")
-                }
-              ],
-              options: { temperature: 0.78, top_p: 0.9, repeat_penalty: 1.16, num_predict: 180 }
-            })
-          });
-          if (!response.ok) throw new Error(`game ${response.status}`);
-          const data = await response.json();
-          const line = compactText(data.content || "").slice(0, 520);
-          if (!line || isBadDjLine(line)) return fallbackLoveGameNarration(choiceLabel);
-          return line;
-        } catch {
-          return fallbackLoveGameNarration(choiceLabel);
-        }
+          soundCloudWidget = window.SC.Widget(qs("#soundCloudPlayer"));
+          soundCloudWidget.bind(window.SC.Widget.Events.PLAY, () => setPlaying(true));
+          soundCloudWidget.bind(window.SC.Widget.Events.PAUSE, () => setPlaying(false));
+        } catch {}
       }
 
-      async function startLoveGame() {
-        if (loveGameBusy) return;
-        loveGameActive = true;
-        loveGameBusy = true;
-        loveGameState = createLoveGameState();
-        gameSceneTextEl.textContent = "AI GM이 현재 곡에 맞춰 첫 장면을 여는 중입니다...";
-        if (!soundCloudWidget || !soundCloudReady) {
-          await loadSoundCloudStation(true);
-          await waitForSoundCloudReady();
-        }
-        await forceSoundCloudPlay(2);
-        const narration = await generateLoveGameNarration();
-        loveGameState.history.push(`START: ${narration}`);
-        renderLoveGameScene(narration);
-        rememberAiAction("game-start", narration);
-        addMessage("ai", `GAME: ${narration}`);
-        await speakDjLine(narration, { pauseMusic: false, duckMusic: true });
-        await saveNarrativeMemory("꼬봉 연애 게임 시작", narration);
-        loveGameBusy = false;
-      }
-
-      async function chooseLoveGameOption(index) {
-        if (!loveGameActive || loveGameBusy || !loveGameState) return false;
-        const beat = currentLoveGameBeat();
-        const choice = beat.choices?.[index];
-        if (!choice) return false;
-
-        loveGameBusy = true;
-        const choiceLabel = choice.label || String(choice);
-        if (choice.restart) {
-          loveGameBusy = false;
-          await startLoveGame();
-          return true;
-        }
-        if (choice.nextTrack) {
-          await playNextDjTrack(true);
-        }
-
-        Object.entries(choice.effects || {}).forEach(([key, delta]) => {
-          loveGameState.stats[key] = clampGameStat((loveGameState.stats[key] || 0) + delta);
-        });
-
-        loveGameState.history.push(`${beat.chapter}: ${choiceLabel}`);
-        if (!choice.restart && loveGameState.beatIndex < LOVE_GAME_BEATS.length - 1) {
-          loveGameState.beatIndex += 1;
-        }
-
-        gameSceneTextEl.textContent = "AI GM이 선택을 받아 다음 장면을 진행 중입니다...";
-        const narration = await generateLoveGameNarration(choiceLabel);
-        loveGameState.history.push(`AI: ${narration}`);
-        renderLoveGameScene(narration);
-        addMessage("user", `게임 선택: ${choiceLabel}`);
-        rememberAiAction("game-progress", `${choiceLabel} -> ${narration}`);
-        addMessage("ai", `GAME: ${narration}`);
-        await speakDjLine(narration, { pauseMusic: false, duckMusic: true });
-        await saveNarrativeMemory(`꼬봉 연애 게임 선택: ${choiceLabel}`, narration);
-        loveGameBusy = false;
-        return true;
-      }
-
-      async function handleLoveGameCommand(text) {
-        const transcript = compactText(text);
-        if (!transcript) return false;
-        if (/연애\s*게임|게임\s*시작|꼬봉\s*게임|game\s*start/i.test(transcript)) {
-          await startLoveGame();
-          return true;
-        }
-        if (loveGameActive) {
-          const match = transcript.match(/(?:^|\s)([123])(?:번|$|\s)/);
-          if (match) return chooseLoveGameOption(Number(match[1]) - 1);
-        }
-        return false;
-      }
-
-      function getSoundCloudPosition() {
-        return new Promise((resolve) => {
-          if (!soundCloudWidget || !soundCloudReady || typeof soundCloudWidget.getPosition !== "function") {
-            resolve(0);
-            return;
-          }
-          soundCloudWidget.getPosition((position) => {
-            resolve(Math.max(0, Number(position || 0)));
+      function bind() {
+        qsa(".nav button, .tabs button").forEach((button) => {
+          button.addEventListener("click", () => {
+            button.parentElement.querySelectorAll("button").forEach((item) => item.classList.remove("active"));
+            button.classList.add("active");
           });
         });
-      }
-
-      const RADIO_STATE_API_URL = `${window.location.origin}/api/radio-state`;
-
-      async function publishRadioState(source = "browser") {
-        if (radioApplyingRemote) return;
-        try {
-          await refreshCurrentSound();
-          const positionMs = await getSoundCloudPosition();
-          const response = await fetch(RADIO_STATE_API_URL, {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({
-              stationUrl: normalizeSoundCloudUrl(soundCloudUrlInput.value) || lastLoadedSoundCloudUrl,
-              trackIndex: currentSoundIndex,
-              trackId: currentSound?.id || null,
-              trackTitle: currentSound?.title || "",
-              artist: currentSound?.user?.username || "",
-              status: djPlaying ? "playing" : "paused",
-              positionMs,
-              source
-            })
-          });
-          const data = await response.json();
-          if (data?.state?.version) lastRadioStateVersion = data.state.version;
-        } catch {
-          /* radio sync is optional */
-        }
-      }
-
-      async function applyRadioState(state) {
-        if (!state || radioApplyingRemote || !soundCloudWidget || !soundCloudReady) return;
-        if (Number(state.version || 0) <= lastRadioStateVersion) return;
-        const stateAgeMs = Date.now() - Number(state.updatedAt || 0);
-        if (state.status === "paused" && djPlaying && (state.source === "server-default" || !state.updatedAt || stateAgeMs > 30000)) {
-          lastRadioStateVersion = Number(state.version || lastRadioStateVersion);
-          return;
-        }
-        radioApplyingRemote = true;
-        try {
-          lastRadioStateVersion = Number(state.version || lastRadioStateVersion);
-          const remoteUrl = normalizeSoundCloudUrl(state.stationUrl || "");
-          if (remoteUrl && remoteUrl !== normalizeSoundCloudUrl(soundCloudUrlInput.value)) {
-            soundCloudUrlInput.value = remoteUrl;
-            await loadSoundCloudStation(false);
-            await waitForSoundCloudReady();
-          }
-
-          await getSoundCloudSounds();
-          const remoteIndex = Math.max(0, Math.floor(Number(state.trackIndex || 0)));
-          if (playlistSounds.length && remoteIndex !== currentSoundIndex) {
-            await skipSoundCloud(remoteIndex);
-          } else {
-            await refreshCurrentSound();
-          }
-
-          const targetMs = Math.max(0, Number(state.livePositionMs ?? state.positionMs ?? 0));
-          if (typeof soundCloudWidget.seekTo === "function") {
-            soundCloudWidget.seekTo(targetMs);
-          }
-
-          if (state.status === "playing") {
-            await forceSoundCloudPlay(2);
-          } else {
-            soundCloudWidget.pause();
-            djPlaying = false;
-            updateDjUi();
-          }
-          setDjStatus(`공유 라디오 동기화\n${currentTrackLabel()}`);
-        } finally {
-          radioApplyingRemote = false;
-        }
-      }
-
-      async function pullRadioState() {
-        try {
-          if (typeof document !== 'undefined' && document.hidden) {
-            return;
-          }
-          const response = await fetch(RADIO_STATE_API_URL, { cache: "no-store" });
-          if (!response.ok) return;
-          const data = await response.json();
-          await applyRadioState(data.state);
-        } catch {
-          /* ignore transient sync errors */
-        }
-      }
-
-      function startRadioStatePolling() {
-        clearInterval(radioPollTimerId);
-        pullRadioState();
-        radioPollTimerId = setInterval(() => {
-          if (typeof document !== 'undefined' && document.hidden) return;
-          pullRadioState();
-        }, 20000);
-      }
-
-      function refreshCurrentSound() {
-        return new Promise((resolve) => {
-          if (!soundCloudWidget || !soundCloudReady) {
-            resolve(null);
-            return;
-          }
-
-          soundCloudWidget.getCurrentSound((sound) => {
-            currentSound = sound || null;
-            if (currentSound && playlistSounds.length) {
-              const index = playlistSounds.findIndex((item) => item.id === currentSound.id);
-              if (index >= 0) currentSoundIndex = index;
-            }
-            resolve(currentSound);
-          });
+        qs("#playButton").addEventListener("click", () => setPlaying(!playing));
+        qs("#bottomPlayButton").addEventListener("click", () => setPlaying(!playing));
+        qs("#heroPlayButton").addEventListener("click", () => setPlaying(true));
+        qs("#startButton").addEventListener("click", () => setPlaying(true));
+        qs("#aiPickButton").addEventListener("click", () => pickTrack(Math.ceil(Math.random() * (tracks.length - 1))));
+        qs("#nextButton").addEventListener("click", () => pickTrack(1));
+        qs("#prevButton").addEventListener("click", () => pickTrack(-1));
+        qs("#voiceDjButton").addEventListener("click", () => speak(`AI 보이스 DJ 시작합니다. 현재 곡은 ${currentTrack().title}, 키는 ${currentTrack().key}입니다.`));
+        qs("#voiceSettingsButton").addEventListener("click", () => speak("보이스 설정은 라이브 진행 톤으로 맞춰졌습니다."));
+        qs("#autoMixButton").addEventListener("click", (event) => {
+          event.currentTarget.classList.toggle("hot");
+          event.currentTarget.textContent = event.currentTarget.classList.contains("hot") ? "자동 믹싱 OFF" : "자동 믹싱 ON";
         });
-      }
-
-      function getSoundCloudSounds() {
-        return new Promise((resolve) => {
-          if (!soundCloudWidget || !soundCloudReady) {
-            resolve([]);
-            return;
-          }
-
-          soundCloudWidget.getSounds((sounds) => {
-            playlistSounds = Array.isArray(sounds) ? sounds : [];
-            resolve(playlistSounds);
-          });
+        qs("#chatForm").addEventListener("submit", (event) => {
+          event.preventDefault();
+          const value = qs("#chatInput").value.trim();
+          if (!value) return;
+          chatSeeds.push(["YOU", value]);
+          qs("#chatInput").value = "";
+          renderLists();
         });
-      }
-
-      function normalizeSearchText(value) {
-        return String(value || "")
-          .toLowerCase()
-          .replace(/[^\p{L}\p{N}\s]/gu, " ")
-          .replace(/\s+/g, " ")
-          .trim();
-      }
-
-      function extractSongRequest(text) {
-        const value = compactText(text);
-        const patterns = [
-          /신청곡\s*(?:은|으로|:)?\s*(.+?)(?:\s*(?:틀어줘|재생해줘|들려줘|부탁해|해줘))?$/i,
-          /(.+?)\s*(?:틀어줘|재생해줘|들려줘|골라줘|부탁해)$/i
-        ];
-        for (const pattern of patterns) {
-          const match = value.match(pattern);
-          if (!match) continue;
-          const song = compactText(match[1]).replace(/^(다음|노래|곡|음악)\s+/, "");
-          if (song && !/^(다음|다음 곡|다른 곡|아무거나|랜덤|랜덤으로|노래|음악|다시)$/.test(song)) return song;
-        }
-        return "";
-      }
-
-      async function findRequestedTrackIndex(query) {
-        const sounds = await getSoundCloudSounds();
-        const wanted = normalizeSearchText(query);
-        if (!sounds.length || !wanted) return -1;
-
-        let best = { index: -1, score: 0 };
-        sounds.forEach((sound, index) => {
-          const title = normalizeSearchText(sound.title);
-          const artist = normalizeSearchText(sound.user?.username);
-          const label = `${title} ${artist}`.trim();
-          let score = 0;
-          if (label === wanted || title === wanted) score = 100;
-          else if (label.includes(wanted) || wanted.includes(title)) score = 80;
-          else {
-            const words = wanted.split(" ").filter((word) => word.length >= 2);
-            const hits = words.filter((word) => label.includes(word)).length;
-            score = hits ? 40 + hits * 12 : 0;
-          }
-          if (score > best.score) best = { index, score };
+        qs("#memoForm").addEventListener("submit", (event) => {
+          event.preventDefault();
+          const value = qs("#memoInput").value.trim();
+          if (!value) return;
+          memos.unshift(value);
+          qs("#memoInput").value = "";
+          renderLists();
         });
-
-        return best.score >= 52 ? best.index : -1;
-      }
-
-      function setSoundCloudVolume(nextVolume, source = "volume") {
-        soundCloudVolume = Math.max(0, Math.min(100, Math.round(Number(nextVolume || 0))));
-        soundCloudWidget?.setVolume?.(soundCloudVolume);
-        setDjStatus(`볼륨 ${soundCloudVolume}%\n${currentTrackLabel()}`);
-        publishRadioState(source);
-      }
-
-      async function forceSoundCloudPlay(attempts = 6) {
-        if (!soundCloudWidget || soundCloudLoading) return false;
-        let played = false;
-        for (let index = 0; index < attempts; index += 1) {
+        document.addEventListener("click", (event) => {
+          const button = event.target.closest("[data-track]");
+          if (!button) return;
+          trackIndex = Number(button.dataset.track);
+          elapsed = 0;
+          renderTrack();
+          setPlaying(true);
+        });
+        qs("#volumeInput").addEventListener("input", (event) => {
           try {
-            soundCloudWidget.play();
-            played = true;
-          } catch {
-            /* retry below */
-          }
-          if (index === 0 && played) {
-            setDjStatus(`재생 신호를 보냈습니다.\n${currentTrackLabel()}`);
-          }
-          await new Promise((resolve) => setTimeout(resolve, 450));
-          if (djPlaying) return true;
-        }
-        setDjStatus("브라우저가 SoundCloud 재생을 막았습니다. 라디오는 수동 재생 대기 상태입니다.");
-        return false;
-      }
-
-      function unlockSoundCloudPlayback() {
-        if (!soundCloudWidget || !soundCloudReady) return false;
-        try {
-          soundCloudWidget.play();
-          setDjStatus(`SoundCloud 재생을 시작합니다.\n${currentTrackLabel()}`);
-          return true;
-        } catch (error) {
-          setDjStatus(`SoundCloud 재생 시작 실패: ${error.message}`);
-          return false;
-        }
-      }
-
-      function initSoundCloudWidget() {
-        if (!window.SC || !window.SC.Widget) {
-          setDjStatus("SoundCloud 위젯 API를 아직 불러오지 못했습니다. 라디오는 준비 대기 상태입니다.");
-          return;
-        }
-
-        soundCloudWidget = window.SC.Widget(soundCloudPlayer);
-        soundCloudReady = false;
-
-        soundCloudWidget.bind(window.SC.Widget.Events.READY, () => {
-          soundCloudLoading = false;
-          soundCloudReady = true;
-          soundCloudWidget.getVolume?.((volume) => {
-            soundCloudVolume = Math.max(0, Math.min(100, Number(volume || soundCloudVolume)));
-          });
-          pullRadioState();
-          getSoundCloudSounds().then(() => refreshCurrentSound()).then(() => {
-            const label = currentTrackLabel();
-            setDjStatus(`SoundCloud 라디오 준비 완료\n현재 큐: ${label}\n곡 수: ${playlistSounds.length || 1}`);
-          });
-        });
-
-        soundCloudWidget.bind(window.SC.Widget.Events.PLAY, () => {
-          djPlaying = true;
-          updateDjUi();
-          refreshCurrentSound().then(() => {
-            rememberPlayedTrack(currentSound);
-            rememberAiAction("track-play", currentTrackLabel());
-            setDjStatus(`ON AIR\n${currentTrackLabel()}`);
-            publishRadioState("play");
-          });
-        });
-
-        soundCloudWidget.bind(window.SC.Widget.Events.PAUSE, () => {
-          djPlaying = false;
-          updateDjUi();
-          publishRadioState("pause");
-        });
-
-        soundCloudWidget.bind(window.SC.Widget.Events.FINISH, async () => {
-          djPlaying = false;
-          updateDjUi();
-          setDjStatus("곡이 끝났습니다. 다음 장면을 준비합니다.");
-          if (autoDjEnabled) {
-            await playNextDjTrack(true);
-          }
+            soundCloudWidget?.setVolume?.(Number(event.target.value));
+          } catch {}
         });
       }
 
-      async function loadSoundCloudStation(autoPlay = false) {
-        const url = normalizeSoundCloudUrl(soundCloudUrlInput.value);
-        if (!url) {
-          setDjStatus("SoundCloud 트랙 또는 플레이리스트 URL이 필요합니다.");
-          return;
-        }
-
-        if (soundCloudLoading) {
-          setDjStatus("SoundCloud 라디오를 이미 불러오는 중입니다...");
-          await waitForSoundCloudReady();
-          if (autoPlay) await forceSoundCloudPlay();
-          return;
-        }
-
-        if (soundCloudReady && lastLoadedSoundCloudUrl === url) {
-          await getSoundCloudSounds();
-          await refreshCurrentSound();
-          if (autoPlay) await forceSoundCloudPlay();
-          return;
-        }
-
-        const token = soundCloudLoadToken + 1;
-        soundCloudLoadToken = token;
-        soundCloudLoading = true;
-        localStorage.setItem("chamsosikSoundCloudUrl", url);
-        soundCloudReady = false;
-        currentSound = null;
-        playlistSounds = [];
-        currentSoundIndex = 0;
-        lastLoadedSoundCloudUrl = url;
-        setDjStatus("SoundCloud 라디오를 불러오는 중입니다...");
-
-        if (soundCloudWidget && typeof soundCloudWidget.load === "function") {
-          soundCloudWidget.load(url, {
-            auto_play: autoPlay,
-            hide_related: true,
-            show_comments: false,
-            show_user: true,
-            show_reposts: false,
-            visual: false,
-            callback: () => {
-              if (token !== soundCloudLoadToken) return;
-              soundCloudLoading = false;
-              soundCloudReady = true;
-              getSoundCloudSounds().then(() => refreshCurrentSound());
-              if (autoPlay) forceSoundCloudPlay();
-            }
-          });
-        } else {
-          soundCloudPlayer.src = soundCloudEmbedUrl(url, autoPlay);
-          setTimeout(() => {
-            if (token !== soundCloudLoadToken) return;
-            soundCloudLoading = false;
-            initSoundCloudWidget();
-          }, 650);
-        }
-
-        if (autoPlay) {
-          setTimeout(() => {
-            if (token === soundCloudLoadToken) forceSoundCloudPlay();
-          }, 1100);
-        }
-      }
-
-      function playDj() {
-        if (!soundCloudWidget || !soundCloudReady) {
-          loadSoundCloudStation(true);
-          return;
-        }
-        if (djPlaying) {
-          soundCloudWidget.pause();
-        } else {
-          forceSoundCloudPlay();
-        }
-      }
-
-      function nextSoundCloud() {
-        return new Promise((resolve) => {
-          if (!soundCloudWidget || !soundCloudReady) {
-            resolve(null);
-            return;
-          }
-          soundCloudWidget.next();
-          setTimeout(() => {
-            soundCloudWidget.getCurrentSound((sound) => {
-              currentSound = sound || null;
-              resolve(currentSound);
-            });
-          }, 700);
-        });
-      }
-
-      function skipSoundCloud(index) {
-        return new Promise((resolve) => {
-          if (!soundCloudWidget || !soundCloudReady) {
-            resolve(null);
-            return;
-          }
-
-          currentSoundIndex = Math.max(0, Math.min(index, Math.max(0, playlistSounds.length - 1)));
-          soundCloudWidget.skip(currentSoundIndex);
-          setTimeout(() => {
-            refreshCurrentSound().then((sound) => {
-              rememberPlayedTrack(sound);
-              rememberAiAction("track-skip", currentTrackLabel());
-              resolve(sound);
-            });
-          }, 750);
-        });
-      }
-
-      async function selectDjTrackIndex(reason) {
-        const sounds = await getSoundCloudSounds();
-        if (!sounds.length) return null;
-        if (sounds.length === 1) return 0;
-
-        const recentSet = new Set(recentTrackIds);
-        const freshIndexes = sounds
-          .map((sound, index) => ({ sound, index }))
-          .filter(({ sound, index }) => index !== currentSoundIndex && !recentSet.has(getSoundId(sound)))
-          .map(({ index }) => index);
-
-        const fallbackIndexes = sounds
-          .map((sound, index) => index)
-          .filter((index) => index !== currentSoundIndex);
-
-        const base = apiBase();
-        const model = modelInput.value.trim() || "kimi-k2.6:cloud";
-        const list = sounds
-          .slice(0, 30)
-          .map((sound, index) => {
-            const recentMark = recentSet.has(getSoundId(sound)) ? "최근 재생됨 - 되도록 피하기" : "신선한 후보";
-            const currentMark = index === currentSoundIndex ? "현재 곡 - 반복 금지" : recentMark;
-            return `${index + 1}. ${sound.title || "Untitled"} - ${sound.user?.username || "unknown"} (${currentMark})`;
-          })
-          .join("\n");
-
-        try {
-          const response = await fetch(`${base}/api/chat`, {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-              "ngrok-skip-browser-warning": "true"
-            },
-            body: JSON.stringify({
-              model,
-              messages: [
-                {
-                  role: "system",
-                  content: "너는 라디오 DJ 선곡 담당이다. 아래 SoundCloud 플레이리스트에서 지금 틀 곡 번호 하나만 고른다. 현재 곡과 최근 재생된 곡은 가능한 한 피한다. 답은 반드시 숫자 하나만 출력한다."
-                },
-                {
-                  role: "user",
-                  content: [
-                    `선곡 상황: ${reason}`,
-                    `방문자: ${voiceUser?.name || "방문자"}`,
-                    `현재 곡 번호: ${currentSoundIndex + 1}`,
-                    `최근 재생 곡 ID: ${recentTrackIds.join(", ") || "없음"}`,
-                    `[최근 AI 행동]\n${recentAiActionContext(8) || "없음"}`,
-                    `[곡 목록]\n${list}`
-                  ].join("\n")
-                }
-              ],
-              options: { temperature: 0.35, num_predict: 12 }
-            })
-          });
-          if (!response.ok) throw new Error(`pick ${response.status}`);
-          const data = await response.json();
-          const picked = Number(String(data.content || "").match(/\d+/)?.[0]);
-          if (Number.isFinite(picked) && picked >= 1 && picked <= sounds.length) {
-            const pickedIndex = picked - 1;
-            const pickedSound = sounds[pickedIndex];
-            const pickedIsRecent = recentSet.has(getSoundId(pickedSound)) || pickedIndex === currentSoundIndex;
-            if (!pickedIsRecent) return pickedIndex;
-            if (freshIndexes.length) return freshIndexes[(djTalkCount + freshIndexes.length) % freshIndexes.length];
-            if (fallbackIndexes.length) return fallbackIndexes[(djTalkCount + fallbackIndexes.length) % fallbackIndexes.length];
-            return pickedIndex;
-          }
-        } catch {
-          /* fallback below */
-        }
-
-        if (freshIndexes.length) return freshIndexes[(djTalkCount + freshIndexes.length) % freshIndexes.length];
-        if (fallbackIndexes.length) return fallbackIndexes[(currentSoundIndex + 1) % fallbackIndexes.length];
-        return (currentSoundIndex + 1) % sounds.length;
-      }
-
-      async function playAiSelectedTrack(reason = "AI 선곡") {
-        if (!soundCloudWidget || !soundCloudReady) {
-          await loadSoundCloudStation(true);
-          await waitForSoundCloudReady();
-        }
-
-        await getSoundCloudSounds();
-        const index = await selectDjTrackIndex(reason);
-        if (index !== null) await skipSoundCloud(index);
-        await askDjForLine(`${reason}: ${currentTrackLabel()}`);
-        await forceSoundCloudPlay();
-      }
-
-      async function playRequestedTrack(query, reason = "신청곡") {
-        if (!soundCloudWidget || !soundCloudReady) {
-          await loadSoundCloudStation(true);
-          await waitForSoundCloudReady();
-        }
-
-        const index = await findRequestedTrackIndex(query);
-        if (index >= 0) {
-          await skipSoundCloud(index);
-          await askDjForLine(`${reason} 접수: ${query} / ${currentTrackLabel()}`);
-          await forceSoundCloudPlay();
-          publishRadioState("request");
-          return true;
-        }
-
-        const line = fallbackDjLine(`${reason} 대체 선곡`);
-        addMessage("ai", `DJ: ${line}`);
-        await speakDjLine(line);
-        await playAiSelectedTrack(`${reason} 대체 선곡: ${query}`);
-        return true;
-      }
-
-      async function handleRadioCommandFromText(text, source = "user") {
-        const transcript = compactText(text);
-        if (!transcript) return false;
-
-        const requestedSong = extractSongRequest(transcript);
-        const hasRadioCommand =
-          Boolean(requestedSong) ||
-          /(자동|auto)\s*(dj)?\s*(켜|시작|on|꺼|중지|off)/i.test(transcript) ||
-          /이전|앞\s*곡|previous|prev|다음|넘겨|다른\s*곡|next|바꿔|멈춰|정지|pause|스톱|stop|다시\s*(틀어|재생)|틀어|재생|play|소리|볼륨|volume/i.test(transcript);
-
-        if (!hasRadioCommand) return false;
-
-        if (!soundCloudWidget || !soundCloudReady) {
-          if (!soundCloudUrlInput.value) soundCloudUrlInput.value = DEFAULT_SOUNDCLOUD_URL;
-          await loadSoundCloudStation(true);
-          await waitForSoundCloudReady();
-        }
-
-        if (requestedSong) {
-          await playRequestedTrack(requestedSong, source === "voice" ? "음성 신청곡" : "채팅 신청곡");
-          return true;
-        }
-
-        if (/(자동|auto)\s*(dj)?\s*(켜|시작|on)/i.test(transcript)) {
-          autoDjEnabled = true;
-          updateDjUi();
-          await askDjForLine("사용자 요청으로 AUTO DJ ON");
-          await forceSoundCloudPlay();
-          return true;
-        }
-
-        if (/(자동|auto)\s*(dj)?\s*(꺼|중지|off)/i.test(transcript)) {
-          autoDjEnabled = false;
-          updateDjUi();
-          const line = fallbackDjLine("AUTO DJ OFF");
-          addMessage("ai", `DJ: ${line}`);
-          await speakDjLine(line);
-          return true;
-        }
-
-        if (/이전|앞\s*곡|previous|prev/i.test(transcript)) {
-          await getSoundCloudSounds();
-          await skipSoundCloud((currentSoundIndex - 1 + Math.max(playlistSounds.length, 1)) % Math.max(playlistSounds.length, 1));
-          await askDjForLine("사용자 요청으로 이전 곡");
-          await forceSoundCloudPlay();
-          return true;
-        }
-
-        if (/다음|넘겨|다른\s*곡|next|바꿔/i.test(transcript)) {
-          await playNextDjTrack(true);
-          return true;
-        }
-
-        if (/멈춰|정지|pause|스톱|stop/i.test(transcript)) {
-          soundCloudWidget?.pause?.();
-          const line = fallbackDjLine("pause");
-          addMessage("ai", `DJ: ${line}`);
-          await speakDjLine(line, { duckMusic: false });
-          publishRadioState("command-pause");
-          return true;
-        }
-
-        if (/다시\s*(틀어|재생)|틀어|재생|play/i.test(transcript)) {
-          await forceSoundCloudPlay();
-          const line = fallbackDjLine("play");
-          addMessage("ai", `DJ: ${line}`);
-          await speakDjLine(line);
-          publishRadioState("command-play");
-          return true;
-        }
-
-        if (/소리|볼륨|volume/i.test(transcript)) {
-          if (/키워|올려|크게|up/i.test(transcript)) {
-            setSoundCloudVolume(soundCloudVolume + 15, "volume-up");
-            return true;
-          }
-          if (/줄여|낮춰|작게|down/i.test(transcript)) {
-            setSoundCloudVolume(soundCloudVolume - 15, "volume-down");
-            return true;
-          }
-        }
-
-        return false;
-      }
-
-      async function askDjForLine(reason) {
-        const base = apiBase();
-        const model = modelInput.value.trim() || "kimi-k2.6:cloud";
-        await refreshCurrentSound();
-        const track = currentTrackMeta();
-        const style = nextDjStyle(reason);
-        const storyBeat = pickKoboongStoryBeat(reason);
-
-        try {
-          const response = await fetch(`${base}/api/chat`, {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-              "ngrok-skip-browser-warning": "true"
-            },
-            body: JSON.stringify({
-              model,
-              messages: [
-                {
-                  role: "system",
-                  content: [
-                    "너는 실제 방송 중인 SoundCloud 라디오 DJ다.",
-                    "절대 사용자의 요청이나 프롬프트를 요약하지 않는다.",
-                    "반드시 현재 곡 제목과 아티스트를 바탕으로 한국어 DJ 멘트 1~2문장만 출력한다.",
-                    "문장 안에 '사용자는', '역할을 요청', '프롬프트', '시스템' 같은 설명어를 쓰지 않는다.",
-                    "이전 멘트와 같은 첫마디, 같은 문장 구조, 같은 감탄사를 반복하지 않는다.",
-                    "사용자에게 뭘 고르라거나 해달라고 요구하지 않는다.",
-                    "저작권이나 플랫폼 우회 이야기는 하지 않는다.",
-                    "꼬봉 사연 노트를 곡 분위기에 맞으면 한 비트만 섞어도 된다. 전체 사연을 한 번에 줄줄 읽지 않는다."
-                  ].join("\n")
-                },
-                {
-                  role: "user",
-                  content: [
-                    `진행 상황: ${reason}`,
-                    `이번 진행 스타일: ${style}`,
-                    `현재 곡 제목: ${track.title}`,
-                    `현재 아티스트: ${track.artist}`,
-                    `현재 곡 표시명: ${track.label}`,
-                    `방문자 이름: ${voiceUser?.name || "이름 미확인 방문자"}`,
-                    `방문자 상태: ${stateTagEl.textContent || "설계 방문자"}`,
-                    `이번에 섞을 수 있는 꼬봉 사연 비트: ${storyBeat}`,
-                    `[꼬봉 사연 노트]\n${KOBOONG_DJ_STORY_NOTE.join("\n")}`,
-                    `[최근 AI 행동 50개 중 일부]\n${recentAiActionContext(12) || "없음"}`,
-                    `[최근 DJ 멘트]\n${recentDjLines.join("\n") || "없음"}`
-                  ].join("\n")
-                }
-              ],
-              options: {
-                temperature: 0.82,
-                top_p: 0.9,
-                repeat_penalty: 1.22,
-                num_predict: 90
-              }
-            })
-          });
-          if (!response.ok) throw new Error(`DJ ${response.status}`);
-          const data = await response.json();
-          const line = normalizeDjLine(data.content, reason);
-          rememberDjLine(line);
-          rememberAiAction("dj-line", line);
-          addMessage("ai", `DJ: ${line}`);
-          await speakDjLine(line, { pauseMusic: false, duckMusic: true });
-          await saveNarrativeMemory(`SoundCloud DJ ${reason}: ${voiceUser?.name || "방문자"} / ${track.label}`, line);
-          return line;
-        } catch (error) {
-          const line = fallbackDjLine(reason);
-          rememberDjLine(line);
-          rememberAiAction("dj-fallback", line);
-          addMessage("ai", `DJ: ${line}`);
-          await speakDjLine(line, { pauseMusic: false, duckMusic: true });
-          return line;
-        }
-      }
-
-      async function playNextDjTrack(withIntro = false) {
-        if (!soundCloudWidget || !soundCloudReady) {
-          await loadSoundCloudStation(true);
-          await waitForSoundCloudReady();
-          await playAiSelectedTrack("첫 곡 자동 선곡");
-          return;
-        }
-        if (withIntro || autoDjEnabled) {
-          await playAiSelectedTrack("다음 곡 AI 선곡");
-        } else {
-          await nextSoundCloud();
-          await forceSoundCloudPlay();
-        }
-      }
-
-      async function startVoiceDj() {
-        if (voiceMode && aiBusy) return;
-        voiceMode = true;
-        autoDjEnabled = true;
-        updateDjUi();
-        setVoiceStatus("음성 DJ가 켜졌습니다. 사용자 요청이 들어오면 라디오 조작과 곡 멘트만 처리합니다.");
-
-        if (!soundCloudUrlInput.value) soundCloudUrlInput.value = DEFAULT_SOUNDCLOUD_URL;
-        if (!soundCloudWidget || !soundCloudReady) {
-          await loadSoundCloudStation(true);
-          await waitForSoundCloudReady();
-        }
-        unlockSoundCloudPlayback();
-        await playAiSelectedTrack("라디오 오프닝 첫 곡 선곡");
-
-        if (!recognition) recognition = setupSpeechRecognition();
-        try {
-          recognition?.start();
-        } catch {
-          /* already started */
-        }
-      }
-
-      function stopVoiceDj() {
-        voiceMode = false;
-        autoDjEnabled = false;
-        updateDjUi();
-        try {
-          recognition?.stop();
-        } catch {
-          /* ignore */
-        }
-        window.speechSynthesis?.cancel?.();
-        setVoiceStatus("음성 DJ를 멈췄습니다.");
-      }
-
-      async function autoStartVoiceDjOnLoad() {
-        if (voiceMode) return;
-        setVoiceStatus("VOICE DJ는 대기 중입니다. 자동 인사는 하지 않습니다.");
-        try {
-          await autoStartDjMode();
-        } catch (error) {
-          autoDjEnabled = true;
-          updateDjUi();
-          setVoiceStatus(`VOICE DJ 대기 중입니다.\n${error.message}`);
-          setDjStatus("AUTO DJ는 대기 중입니다. 브라우저 자동재생 제한이 있으면 PLAY로 시작됩니다.");
-        }
-      }
-
-      async function autoStartDjMode() {
-        if (localStorage.getItem("chamsosikDisableAutoDj") === "1") return;
-        autoDjEnabled = true;
-        updateDjUi();
-        if (!soundCloudUrlInput.value) soundCloudUrlInput.value = DEFAULT_SOUNDCLOUD_URL;
-        setDjStatus("AUTO DJ 모드를 준비합니다. 곡과 큐 중심으로만 진행합니다.");
-        await loadSoundCloudStation(true);
-        await waitForSoundCloudReady();
-        try {
-          await forceSoundCloudPlay();
-          setTimeout(() => playAiSelectedTrack("자동 라디오 시작 선곡"), 1200);
-        } catch {
-          setDjStatus("브라우저 자동재생 제한으로 라디오가 대기 중입니다.");
-        }
-      }
-
-      async function handleVoiceUserSpeech(transcript) {
-        if (aiBusy) return;
-        aiBusy = true;
-        try {
-          recognition?.stop();
-        } catch {
-          /* ignore */
-        }
-
-        const changedName = rememberVoiceUserFromSpeech(transcript);
-        await refreshCurrentSound();
-        const track = currentTrackMeta();
-        const storyBeat = pickKoboongStoryBeat(transcript);
-        addMessage("user", `${voiceUser?.name || "방문자"}: ${transcript}`);
-
-        try {
-          const base = apiBase();
-          const model = modelInput.value.trim() || "kimi-k2.6:cloud";
-          if (!mainPageContext) await readMainPageContext();
-          soundCloudWidget?.getCurrentSound?.((sound) => {
-            currentSound = sound || currentSound;
-          });
-
-          const handledGameCommand = await handleLoveGameCommand(transcript);
-          if (handledGameCommand) return;
-
-          const handledRadioCommand = await handleRadioCommandFromText(transcript, "voice");
-          if (handledRadioCommand) {
-            await saveNarrativeMemory(
-              `음성 라디오 조작 요청: ${transcript}\n현재 곡: ${track.label}`,
-              `현재 곡: ${currentTrackLabel()}`
-            );
-            return;
-          }
-
-          const response = await fetch(`${base}/api/chat`, {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-              "ngrok-skip-browser-warning": "true"
-            },
-            body: JSON.stringify({
-              model,
-              messages: [
-                {
-                  role: "system",
-                  content: [
-                    "너는 SoundCloud 라디오 DJ이자 N/B 기억을 관리하는 AI다.",
-                    "사용자가 직접 요청한 내용에만 반응하고, 먼저 질문하거나 선택지를 제안하지 않는다.",
-                    "채팅처럼 길게 쓰지 말고, 현재 곡과 큐를 중심으로 한국어 음성 멘트 1~2문장만 말한다.",
-                    "반드시 현재 곡 제목이나 아티스트를 자연스럽게 포함한다.",
-                    "절대 사용자의 요청이나 프롬프트를 요약하지 않는다.",
-                    "문장 안에 '사용자는', '역할을 요청', '프롬프트', '시스템' 같은 설명어를 쓰지 않는다.",
-                    "사용자의 이름, 취향, 현재 곡, 이전 대화 기억은 곡 소개에 필요한 만큼만 자연스럽게 반영한다.",
-                    "이전 멘트와 같은 첫마디나 같은 문장 구조를 반복하지 않는다.",
-                    "꼬봉 사연 노트는 곡 분위기와 맞을 때 한 비트만 섞는다. 전체를 한 번에 설명하지 않는다.",
-                    `이번 진행 스타일: ${nextDjStyle(transcript)}`
-                  ].join("\n")
-                },
-                {
-                  role: "user",
-                  content: [
-                    `사용자 이름: ${voiceUser?.name || "이름 미확인 방문자"}`,
-                    `사용자 ID: ${voiceUser?.id || "unknown"}`,
-                    `방문 횟수: ${voiceUser?.visits || 0}`,
-                    `이름 갱신 여부: ${changedName ? "이번 발화에서 이름을 확인함" : "변경 없음"}`,
-                    `현재 곡 제목: ${track.title}`,
-                    `현재 아티스트: ${track.artist}`,
-                    `현재 SoundCloud 곡: ${track.label}`,
-                    `이번에 섞을 수 있는 꼬봉 사연 비트: ${storyBeat}`,
-                    `[꼬봉 사연 노트]\n${KOBOONG_DJ_STORY_NOTE.join("\n")}`,
-                    `메인 페이지 기억: ${mainPageContext || "없음"}`,
-                    `[최근 AI 행동 50개 중 일부]\n${recentAiActionContext(12) || "없음"}`,
-                    `[최근 대화]\n${conversationHistory.map((item) => `${item.role}: ${item.text}`).join("\n") || "없음"}`,
-                    `[최근 DJ 멘트]\n${recentDjLines.join("\n") || "없음"}`,
-                    `사용자 음성 발화: ${transcript}`
-                  ].join("\n")
-                }
-              ],
-              options: { temperature: 0.45, num_predict: 180 }
-            })
-          });
-
-          if (!response.ok) throw new Error(`voice ${response.status}`);
-          const data = await response.json();
-          const line = normalizeDjLine(data.content, transcript);
-          rememberDjLine(line);
-          rememberAiAction("voice-response", line);
-          addMessage("ai", `DJ: ${line}`);
-          setVoiceStatus(`AI DJ 응답: ${line}`);
-          await speakDjLine(line, { pauseMusic: false, duckMusic: true });
-          await saveNarrativeMemory(
-            `음성 사용자 ${voiceUser?.name || "방문자"}(${voiceUser?.id || "unknown"}) 발화: ${transcript}\n현재 곡: ${track.label}`,
-            line
-          );
-        } catch (error) {
-          const line = fallbackDjLine(transcript);
-          rememberDjLine(line);
-          rememberAiAction("voice-fallback", line);
-          addMessage("ai", `DJ: ${line}`);
-          setVoiceStatus(`음성 응답 실패: ${error.message}`);
-          await speakDjLine(line, { pauseMusic: false, duckMusic: true });
-        } finally {
-          aiBusy = false;
-          if (voiceMode) {
-            setTimeout(() => {
-              try {
-                recognition?.start();
-              } catch {
-                /* already started */
-              }
-            }, 600);
-          }
-        }
-      }
-
-      function cleanMemoryText(value, fallback) {
-        const text = String(value || "");
-        if (!text || /�|\?{2,}|諛|硫|湲|援|蹂/.test(text)) return fallback;
-        return text;
-      }
-
-      function extractMainPageContext(html) {
-        const doc = new DOMParser().parseFromString(html, "text/html");
-        const lines = ["[참소식 메인 페이지 정보]"];
-        const title = compactText(doc.querySelector(".ai-content-title")?.textContent || doc.querySelector("title")?.textContent);
-        const desc = compactText(doc.querySelector(".ai-content-desc")?.textContent || doc.querySelector("meta[name='description']")?.content);
-
-        if (title) lines.push(`브리핑 제목: ${title}`);
-        if (desc) lines.push(`브리핑 설명: ${desc}`);
-
-        const briefingCards = [...doc.querySelectorAll(".ai-content-card")].slice(0, 12);
-        if (briefingCards.length) {
-          lines.push("");
-          lines.push("[브리핑 카드]");
-          briefingCards.forEach((card, index) => {
-            const name = compactText(card.querySelector("strong")?.textContent);
-            const text = compactText(card.querySelector("p")?.textContent);
-            if (name || text) lines.push(`${index + 1}. ${name} - ${text}`);
-          });
-        }
-
-        const dataCards = [...doc.querySelectorAll(".data-card")].slice(0, 40);
-        if (dataCards.length) {
-          lines.push("");
-          lines.push("[현재 HTML에 포함된 이슈 카드]");
-          dataCards.forEach((card, index) => {
-            const text = compactText(card.textContent);
-            if (text) lines.push(`${index + 1}. ${text.slice(0, 500)}`);
-          });
-        }
-
-        return lines.join("\n");
-      }
-
-      async function readMainPageContext() {
-        mainPageBox.textContent = "참소식 메인 페이지를 읽는 중입니다...";
-        mainPageBox.classList.remove("error");
-
-        try {
-          const response = await fetch("../index.html", { cache: "no-store" });
-          if (!response.ok) throw new Error(`main ${response.status}`);
-          const html = await response.text();
-          mainPageContext = extractMainPageContext(html);
-          const lineCount = mainPageContext.split("\n").filter(Boolean).length;
-          mainPageBox.textContent = `메인 페이지 정보 읽기 완료\n${lineCount}줄을 AI 분석 context로 사용합니다.`;
-          return mainPageContext;
-        } catch (error) {
-          mainPageContext = "";
-          mainPageBox.textContent = `메인 페이지 읽기 실패: ${error.message}`;
-          mainPageBox.classList.add("error");
-          return "";
-        }
-      }
-
-      async function checkConnection() {
-        const base = apiBase();
-        localStorage.setItem("chamsosikAiEndpoint", base);
-        localStorage.setItem("chamsosikAiModel", modelInput.value.trim() || "kimi-k2.6:cloud");
-        setStatus("AI 서버 접속 확인 중...");
-
-        try {
-          const health = await fetchApi("/health", {
-            cache: "no-store",
-            headers: { "ngrok-skip-browser-warning": "true" }
-          });
-          if (!health.ok) throw new Error(`health ${health.status}`);
-          setStatus(`AI 서버 접속 확인 완료\n${apiBase()}`);
-        } catch (error) {
-          setStatus(`AI 서버 접속 실패\n${error.message}`, true);
-        }
-      }
-
-      function renderCharacter(character, nextLine) {
-        if (!character) return;
-        updateVisitorCard({
-          nickname: cleanMemoryText(character.temporaryNickname || character.uniqueName, "조용한 탐색자 027"),
-          level: cleanMemoryText(character.level, "Lv.3"),
-          state: cleanMemoryText(character.currentState || character.visitorType, "설계 방문자")
-        });
-        summaryBox.textContent = cleanMemoryText(
-          nextLine?.line || character.previousSceneSummary || character.currentStory,
-          "지난번에는 AI가 방문자를 이야기처럼 기억하는 구조를 설계했습니다."
-        );
-      }
-
-      async function loadNarrativeMemory() {
-        try {
-          const response = await fetchApi("/api/narrative-memory", {
-            cache: "no-store",
-            headers: { "ngrok-skip-browser-warning": "true" }
-          });
-          if (!response.ok) throw new Error(`memory ${response.status}`);
-          const data = await response.json();
-          renderCharacter(data.character, data.nextLine);
-        } catch (error) {
-          summaryBox.textContent = `기억 노트를 아직 불러오지 못했습니다.\n${error.message}`;
-        }
-      }
-
-      async function saveNarrativeMemory(userText, aiText) {
-        try {
-          const response = await fetchApi("/api/narrative-memory", {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-              "ngrok-skip-browser-warning": "true"
-            },
-            body: JSON.stringify({
-              text: userText,
-              aiText,
-              mainContext: mainPageContext
-            })
-          });
-
-          if (!response.ok) throw new Error(`memory ${response.status}`);
-          const data = await response.json();
-          renderCharacter(data.character, data.nextLine);
-        } catch (error) {
-          summaryBox.textContent = `AI 대화는 완료됐지만 이야기형 기억 저장에 실패했습니다.\n${error.message}`;
-        }
-      }
-
-      async function sendPrompt(prompt) {
-        const model = modelInput.value.trim() || "kimi-k2.6:cloud";
-        if (aiBusy) return;
-        aiBusy = true;
-        sendButton.disabled = true;
-
-        try {
-          const handledGameCommand = await handleLoveGameCommand(prompt);
-          if (handledGameCommand) return;
-
-          const handledRadioCommand = await handleRadioCommandFromText(prompt, "chat");
-          if (handledRadioCommand) {
-            await saveNarrativeMemory(`채팅 라디오 조작 요청: ${prompt}`, `현재 곡: ${currentTrackLabel()}`);
-            return;
-          }
-
-          const response = await fetchApi("/api/visitor-room", {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-              "ngrok-skip-browser-warning": "true"
-            },
-            body: JSON.stringify({
-              model,
-              text: prompt,
-              options: { temperature: 0.25, num_predict: 140 }
-            })
-          });
-
-          if (!response.ok) throw new Error(`API ${response.status}`);
-          const data = await response.json();
-          renderVisitorRoomMessages(data.messages || []);
-          const aiReply = [...(data.messages || [])].reverse().find((item) => item.role !== "user");
-          if (aiReply?.text) {
-            rememberAiAction("visitor-room-reply", aiReply.text);
-            await saveNarrativeMemory(prompt, aiReply.text);
-          }
-        } catch (error) {
-          const line = fallbackDjLine(prompt);
-          rememberAiAction("chat-fallback", line);
-          addMessage("ai", `DJ: ${line}`);
-        } finally {
-          aiBusy = false;
-          sendButton.disabled = false;
-          promptInput.focus();
-        }
-      }
-
-      form.addEventListener("submit", (event) => {
-        event.preventDefault();
-        const prompt = promptInput.value.trim();
-        if (!prompt) return;
-        promptInput.value = "";
-        sendPrompt(prompt);
-      });
-
-      promptInput.addEventListener("keydown", (event) => {
-        if (event.key !== "Enter" || event.shiftKey || event.isComposing) return;
-        event.preventDefault();
-        form.requestSubmit();
-      });
-
-      document.querySelectorAll("[data-prompt]").forEach((button) => {
-        button.addEventListener("click", () => {
-          const prompt = button.dataset.prompt || "";
-          sendPrompt(prompt);
-        });
-      });
-
-      readMainButton.addEventListener("click", readMainPageContext);
-      readIconButton.addEventListener("click", readMainPageContext);
-      refreshMemoryButton.addEventListener("click", loadNarrativeMemory);
-      document.querySelector("#checkButton").addEventListener("click", checkConnection);
-      loadSoundCloudButton.addEventListener("click", () => loadSoundCloudStation(false));
-      playDjButton.addEventListener("click", async () => {
-        if (soundCloudWidget && soundCloudReady) {
-          if (!djPlaying) {
-            await pullRadioState();
-          }
-          playDj();
-        } else {
-          loadSoundCloudStation(true);
-        }
-      });
-      nextDjButton.addEventListener("click", () => {
-        unlockSoundCloudPlayback();
-        setTimeout(() => playNextDjTrack(true), 250);
-      });
-      topPlayButton.addEventListener("click", () => playDjButton.click());
-      topPickButton.addEventListener("click", () => nextDjButton.click());
-      topVoiceButton.addEventListener("click", () => voiceStartButton.click());
-      voiceStartButton.addEventListener("click", () => {
-        if (soundCloudWidget && soundCloudReady) {
-          unlockSoundCloudPlayback();
-        } else {
-          loadSoundCloudStation(true);
-        }
-        setTimeout(startVoiceDj, 350);
-      });
-      voiceStopButton.addEventListener("click", stopVoiceDj);
-      voicePresetButtons.forEach((button) => {
-        button.addEventListener("click", () => setVoicePreset(button.dataset.voicePreset));
-      });
-      gameStartButton.addEventListener("click", () => startLoveGame());
-      autoDjButton.addEventListener("click", async () => {
-        autoDjEnabled = !autoDjEnabled;
-        updateDjUi();
-        setDjStatus(autoDjEnabled ? "AUTO DJ가 켜졌습니다. 곡 전환마다 AI가 라디오 멘트를 이어갑니다." : "AUTO DJ가 꺼졌습니다.");
-        if (autoDjEnabled) {
-          unlockSoundCloudPlayback();
-          await waitForSoundCloudReady();
-          await playAiSelectedTrack("AUTO DJ 수동 시작 선곡");
-        }
-      });
-
-      endpointInput.value = localStorage.getItem("chamsosikAiEndpoint") || DEFAULT_ENDPOINT;
-      modelInput.value = localStorage.getItem("chamsosikAiModel") || "kimi-k2.6:cloud";
-      loadVisitorCardMemory();
-      recentAiActions = loadJsonList(AI_ACTION_STORAGE_KEY, MAX_AI_ACTIONS);
-      recentTrackIds = loadJsonList(RECENT_TRACK_STORAGE_KEY, MAX_RECENT_TRACKS);
-      visitorRecentMessages = loadJsonList(VISITOR_MESSAGE_STORAGE_KEY, MAX_VISITOR_MESSAGES)
-        .filter((item) => item.role === "user");
-      saveJsonList(VISITOR_MESSAGE_STORAGE_KEY, visitorRecentMessages, MAX_VISITOR_MESSAGES);
-      renderRadioActionLog();
-      renderVisitorRecentMessages();
-      updateVisitorCard();
-      loadVoiceUser();
-      setVoicePreset(localStorage.getItem("chamsosikDjVoicePreset") || "injoon");
-      window.speechSynthesis?.addEventListener?.("voiceschanged", () => setVoicePreset(activeVoicePresetKey));
-      soundCloudUrlInput.value = localStorage.getItem("chamsosikSoundCloudUrl") || DEFAULT_SOUNDCLOUD_URL;
-      if (soundCloudUrlInput.value) {
-        soundCloudPlayer.src = soundCloudEmbedUrl(soundCloudUrlInput.value, false);
-      }
-      const rebuttalConfigReady = loadRebuttalDjConfig();
-      setTimeout(checkConnection, 300);
-      setTimeout(readMainPageContext, 650);
-      setTimeout(loadNarrativeMemory, 900);
-      setTimeout(() => loadVisitorRoomMessages().catch(() => {}), 1000);
-      setTimeout(initSoundCloudWidget, 1100);
-      setTimeout(() => {
-        rebuttalConfigReady.finally(() => queueTopDjMessage(REBUTTAL_DJ_LINES[0]));
-      }, 1300);
-      setTimeout(autoStartVoiceDjOnLoad, 1800);
-      setTimeout(startRadioStatePolling, 2300);
-      setInterval(() => loadVisitorRoomMessages().catch(() => {}), 7000);
-      setDjStatus("곡 중심 DJ 모드 준비 완료. 자동 인사와 주제 제안은 하지 않습니다.");
+      makeBars("#topWave", 88, 8, 55);
+      makeBars("#broadcastWave", 44, 6, 52);
+      makeBars("#voiceWave", 26, 8, 54);
+      makeBars("#mixWave", 28, 8, 54);
+      makeBars("#radioWave", 60, 8, 58);
+      makeBars("#bottomWave", 72, 5, 48);
+      makeBars("#spectrum", 54, 12, 140);
+      makeBars("#analysisWave", 46, 6, 54);
+      makeBars(qs(".eq"), 28, 8, 54);
+      renderTrack();
+      renderLists();
+      bind();
+      initSoundCloud();
+      setInterval(updateClock, 1000);
+      setInterval(() => {
+        const next = 220 + Math.floor(Math.random() * 42);
+        qs("#listenerCount").textContent = next;
+        qs("#broadcastListeners").textContent = next;
+      }, 4500);
     </script>
+    <script defer src="../common-site.js"></script>
   </body>
 </html>

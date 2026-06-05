@@ -1,8 +1,40 @@
 .chamsosik-common-header,
 .chamsosik-common-footer,
-.chamsosik-common-ad {
+.chamsosik-common-ad,
+.site-page {
   box-sizing: border-box;
   font-family: Arial, "Noto Sans KR", sans-serif;
+}
+
+.site-page {
+  width: min(860px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 56px 0;
+  color: #172033;
+  line-height: 1.75;
+}
+
+.site-page h1 {
+  margin: 0 0 20px;
+  font-size: 32px;
+  line-height: 1.2;
+}
+
+.site-page p {
+  margin: 0 0 14px;
+}
+
+.site-page nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 28px;
+}
+
+.site-page nav a {
+  color: #1d4ed8;
+  font-weight: 700;
+  text-decoration: none;
 }
 
 .chamsosik-common-header {
@@ -66,6 +98,13 @@
   opacity: .58;
 }
 
+.chamsosik-common-featured {
+  margin-left: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
 .chamsosik-common-nav a {
   min-height: 34px;
   display: inline-flex;
@@ -86,6 +125,22 @@
   color: #111827;
   background: #fbbf24;
   outline: none;
+}
+
+.chamsosik-common-nav a.chamsosik-common-gold {
+  color: #4a2700;
+  border-color: #f3c75f;
+  background: linear-gradient(145deg, #fff5c4, #d99a1c);
+  text-decoration: none;
+  box-shadow: 0 5px 14px rgba(214, 146, 24, .28);
+}
+
+.chamsosik-common-nav a.chamsosik-common-gold:hover,
+.chamsosik-common-nav a.chamsosik-common-gold:focus {
+  color: #321a00;
+  border-color: #fff1a8;
+  background: linear-gradient(145deg, #fff8d8, #f0b83e);
+  text-decoration: none;
 }
 
 .chamsosik-common-nav a.chamsosik-common-archived {

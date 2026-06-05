@@ -1,0 +1,85 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
+  "category": "CPU",
+  "id": "cpu-7-5-7800x3d",
+  "name": "라이젠7-5세대 7800X3D (라파엘)",
+  "maker": "AMD",
+  "platform": "AM5",
+  "estimatedPriceKrw": 406890,
+  "priceBand": "30~60만원",
+  "speedLabel": "4.2GHz",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "CPU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 95,
+  "valueIndex": 23.3,
+  "aiUseScore": 62,
+  "powerWatts": 120,
+  "tags": [
+    "gaming",
+    "x3d"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "CPU",
+    "partId": "cpu-7-5-7800x3d",
+    "partName": "라이젠7-5세대 7800X3D (라파엘)",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "CPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 950,
+      "value": 311,
+      "aiFit": 620,
+      "priceEfficiency": 250,
+      "powerEfficiency": 264
+    },
+    "nbVector": [
+      100,
+      950,
+      311,
+      620,
+      250,
+      264
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 173.629,
+    "nbMin": 353.385,
+    "weightedScore": 373,
+    "nbBand": "100~499",
+    "summary": "CPU 라이젠7-5세대 7800X3D (라파엘) 부품을 속도 중심 N/B 데이터베이스 점수 373점으로 저장했습니다."
+  },
+  "nbWeightedScore": 373,
+  "nbMax": 173.629,
+  "nbMin": 353.385,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=AMD%20%EB%9D%BC%EC%9D%B4%EC%A0%A07-5%EC%84%B8%EB%8C%80%207800X3D%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "Multi-pack version",
+  "textRepair": null
+}

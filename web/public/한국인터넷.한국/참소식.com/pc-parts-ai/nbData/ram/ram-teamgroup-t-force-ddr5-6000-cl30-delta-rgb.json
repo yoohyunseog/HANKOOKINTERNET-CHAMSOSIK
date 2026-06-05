@@ -1,0 +1,85 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
+  "category": "RAM",
+  "id": "ram-teamgroup-t-force-ddr5-6000-cl30-delta-rgb",
+  "name": "TeamGroup T-Force DDR5-6000 CL30 Delta RGB",
+  "maker": "TeamGroup",
+  "platform": "DDR5",
+  "estimatedPriceKrw": 754700,
+  "priceBand": "60만원 이상",
+  "speedLabel": "6000MHz CL30",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "RAM",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 75,
+  "valueIndex": 9.9,
+  "aiUseScore": 49,
+  "powerWatts": null,
+  "tags": [
+    "RGB",
+    "XMP 3.0"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "RAM",
+    "partId": "ram-teamgroup-t-force-ddr5-6000-cl30-delta-rgb",
+    "partName": "TeamGroup T-Force DDR5-6000 CL30 Delta RGB",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "RAM",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 750,
+      "value": 132,
+      "aiFit": 490,
+      "priceEfficiency": 130,
+      "powerEfficiency": 750
+    },
+    "nbVector": [
+      100,
+      750,
+      132,
+      490,
+      130,
+      750
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 242.866,
+    "nbMin": 386.425,
+    "weightedScore": 315,
+    "nbBand": "100~499",
+    "summary": "RAM TeamGroup T-Force DDR5-6000 CL30 Delta RGB 부품을 속도 중심 N/B 데이터베이스 점수 315점으로 저장했습니다."
+  },
+  "nbWeightedScore": 315,
+  "nbMax": 242.866,
+  "nbMin": 386.425,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=TeamGroup%20T-Force%20DDR5-6000%20CL30%20Delta%20RGB%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "32GB(16Gx2) kit, 1.35V, CL30-36-36-76",
+  "textRepair": null
+}

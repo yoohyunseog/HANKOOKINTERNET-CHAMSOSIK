@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-06-01T15:15:41.453+09:00",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
   "category": "Mainboard",
   "id": "mainboard-asus-rog-crosshair-x870e-hero",
   "name": "ASUS ROG CROSSHAIR X870E HERO",
@@ -21,7 +21,7 @@
   "performance": 100,
   "valueIndex": 9.3,
   "aiUseScore": 65,
-  "powerWatts": 0,
+  "powerWatts": null,
   "tags": [
     "high-end",
     "overclocking"
@@ -81,9 +81,5 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=ASUS%20ROG%20CROSSHAIR%20X870E%20HERO%20%EC%B5%9C%EC%A0%80%EA%B0%80",
   "notes": "High-end AM5 motherboard with X870E chipset.",
-  "textRepair": null,
-  "sourceType": "collector",
-  "sourceQuery": "",
-  "collectedPricesKrw": [],
-  "targetMatched": null
+  "textRepair": null
 }

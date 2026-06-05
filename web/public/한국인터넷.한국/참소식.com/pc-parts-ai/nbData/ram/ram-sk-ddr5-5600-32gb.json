@@ -1,0 +1,85 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
+  "category": "RAM",
+  "id": "ram-sk-ddr5-5600-32gb",
+  "name": "SK하이닉스 DDR5-5600 32GB",
+  "maker": "SK하이닉스",
+  "platform": "DDR5",
+  "estimatedPriceKrw": 120000,
+  "priceBand": "15만원 미만",
+  "speedLabel": "5600MHz",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "RAM",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 50,
+  "valueIndex": 41.7,
+  "aiUseScore": 33,
+  "powerWatts": null,
+  "tags": [
+    "standard",
+    "desktop"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "RAM",
+    "partId": "ram-sk-ddr5-5600-32gb",
+    "partName": "SK하이닉스 DDR5-5600 32GB",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "RAM",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 500,
+      "value": 556,
+      "aiFit": 330,
+      "priceEfficiency": 830,
+      "powerEfficiency": 500
+    },
+    "nbVector": [
+      100,
+      500,
+      556,
+      330,
+      830,
+      500
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 300.449,
+    "nbMin": 380.367,
+    "weightedScore": 349,
+    "nbBand": "100~499",
+    "summary": "RAM SK하이닉스 DDR5-5600 32GB 부품을 속도 중심 N/B 데이터베이스 점수 349점으로 저장했습니다."
+  },
+  "nbWeightedScore": 349,
+  "nbMax": 300.449,
+  "nbMin": 380.367,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=SK%ED%95%98%EC%9D%B4%EB%8B%89%EC%8A%A4%20DDR5-5600%2032GB%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "Standard JEDEC memory",
+  "textRepair": null
+}

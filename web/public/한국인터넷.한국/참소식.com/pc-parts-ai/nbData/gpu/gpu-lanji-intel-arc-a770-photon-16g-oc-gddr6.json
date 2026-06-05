@@ -1,0 +1,85 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
+  "category": "GPU",
+  "id": "gpu-lanji-intel-arc-a770-photon-16g-oc-gddr6",
+  "name": "Lanji Intel Arc A770 Photon 16G OC GDDR6",
+  "maker": "Lanji",
+  "platform": "Intel Arc",
+  "estimatedPriceKrw": 592000,
+  "priceBand": "30~60만원",
+  "speedLabel": "OC",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "GPU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 65,
+  "valueIndex": 11,
+  "aiUseScore": 42,
+  "powerWatts": 225,
+  "tags": [
+    "gaming",
+    "workstation"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "GPU",
+    "partId": "gpu-lanji-intel-arc-a770-photon-16g-oc-gddr6",
+    "partName": "Lanji Intel Arc A770 Photon 16G OC GDDR6",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "GPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 650,
+      "value": 147,
+      "aiFit": 420,
+      "priceEfficiency": 170,
+      "powerEfficiency": 100
+    },
+    "nbVector": [
+      100,
+      650,
+      147,
+      420,
+      170,
+      100
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 123.162,
+    "nbMin": 366.773,
+    "weightedScore": 254,
+    "nbBand": "100~499",
+    "summary": "GPU Lanji Intel Arc A770 Photon 16G OC GDDR6 부품을 속도 중심 N/B 데이터베이스 점수 254점으로 저장했습니다."
+  },
+  "nbWeightedScore": 254,
+  "nbMax": 123.162,
+  "nbMin": 366.773,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Intel%20Arc%20A770%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "Observed in both black and white versions; price ranges from 592,000 to 606,700 KRW.",
+  "textRepair": null
+}

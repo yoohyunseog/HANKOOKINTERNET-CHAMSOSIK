@@ -1,0 +1,86 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
+  "category": "Mainboard",
+  "id": "mainboard-gigabyte-x670e-aorus-master",
+  "name": "Gigabyte X670E AORUS MASTER",
+  "maker": "Gigabyte",
+  "platform": "AM5",
+  "estimatedPriceKrw": 988230,
+  "priceBand": "60만원 이상",
+  "speedLabel": "X670E",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "Mainboard",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 95,
+  "valueIndex": 9.6,
+  "aiUseScore": 62,
+  "powerWatts": null,
+  "tags": [
+    "high-end",
+    "overclocking",
+    "AM5"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "Mainboard",
+    "partId": "mainboard-gigabyte-x670e-aorus-master",
+    "partName": "Gigabyte X670E AORUS MASTER",
+    "speed": {
+      "score": 100,
+      "weight": 0.32,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "Mainboard",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 950,
+      "value": 128,
+      "aiFit": 620,
+      "priceEfficiency": 100,
+      "powerEfficiency": 950
+    },
+    "nbVector": [
+      100,
+      950,
+      128,
+      620,
+      100,
+      950
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 235.501,
+    "nbMin": 366.076,
+    "weightedScore": 367,
+    "nbBand": "100~499",
+    "summary": "Mainboard Gigabyte X670E AORUS MASTER 부품을 속도 중심 N/B 데이터베이스 점수 367점으로 저장했습니다."
+  },
+  "nbWeightedScore": 367,
+  "nbMax": 235.501,
+  "nbMin": 366.076,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Gigabyte%20X670E%20AORUS%20MASTER%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "E-ATX form factor, PCIe 5.0 support, WiFi 6E.",
+  "textRepair": null
+}

@@ -4,9 +4,9 @@ const { spawnSync } = require("child_process");
 
 const OUTPUT_FILE = path.join(__dirname, "jungnang-youtube.json");
 const DEFAULT_INTERVAL_SECONDS = 600;
-const RECENT_DAYS = 14;
-const MAX_RESULTS_PER_QUERY = 10;
-const MAX_OUTPUT_ITEMS = 24;
+const RECENT_DAYS = 30; // 대학교 영상 더 많이 수집 위해 30일로 확장
+const MAX_RESULTS_PER_QUERY = 15; // 검색어당 결과 증가
+const MAX_OUTPUT_ITEMS = 36; // 전체 출력 개수 증가
 const AUTO_UPLOAD_JSON = process.env.AUTO_UPLOAD_JSON !== "0";
 const UPLOAD_SERVER = process.env.JUNGNANG_UPLOAD_SERVER || "root@211.45.162.155";
 const REMOTE_ROOT = process.env.JUNGNANG_REMOTE_ROOT || "/var/www/chamsosik";
@@ -19,7 +19,17 @@ const QUERIES = [
   "중랑구 문화 행사",
   "중랑구 현장 소식",
   "중랑구청 소식",
-  "중랑구 행사"
+  "중랑구 행사",
+  // 대학교 관련 검색어 (조회수 높은 영상)
+  "경희대학교",
+  "경희대 연예인",
+  "경희대 입학",
+  "한국외국어대학교",
+  "한국외국어대학교 입학",
+  "광운대학교",
+  "광운대 입학",
+  "서일대학교",
+  "서일대 입학"
 ];
 
 function nowKst() {
@@ -146,6 +156,11 @@ async function fetchYoutubeResults(query) {
     const summary = textFromRuns(video.detailedMetadataSnippets?.[0]?.snippetText)
       || textFromRuns(video.descriptionSnippet)
       || "중랑구 관련 지역 소식 유튜브 검색 결과입니다.";
+    
+    // 조회수 추출
+    const viewCountText = textFromRuns(video.viewCountText) || "";
+    const viewCountMatch = viewCountText.match(/[\d,]+/);
+    const viewCount = viewCountMatch ? parseInt(viewCountMatch[0].replace(/,/g, ""), 10) : 0;
 
     const item = {
       id: videoId || `${query}:${title}`,
@@ -156,7 +171,9 @@ async function fetchYoutubeResults(query) {
       duration,
       thumbnail: thumbnailFor(videoId),
       query,
-      summary: compactText(summary)
+      summary: compactText(summary),
+      viewCount,
+      viewCountText
     };
     return { ...item, ...classifyUpload(item) };
   });
@@ -184,18 +201,93 @@ async function collect() {
   const errors = [];
   const excluded = [];
   const items = [];
+  const universityItems = [];
   const seen = new Set();
 
-  for (const query of QUERIES) {
+  // 대학교별 검색어 그룹 (각 대학당 3개 영상 보장)
+  const universityGroups = [
+    {
+      name: "경희대학교",
+      keywords: ["경희대학교", "경희대 캠퍼스", "경희대 행사"],
+      maxItems: 3
+    },
+    {
+      name: "한국외국어대학교",
+      keywords: ["한국외국어대학교", "한국외대 캠퍼스", "한국외대 행사"],
+      maxItems: 3
+    },
+    {
+      name: "광운대학교",
+      keywords: ["광운대학교", "광운대 캠퍼스", "광운대 행사"],
+      maxItems: 3
+    },
+    {
+      name: "서일대학교",
+      keywords: ["서일대학교", "서일대 캠퍼스", "서일대 행사"],
+      maxItems: 3
+    }
+  ];
+
+  // 대학교별 영상 수집
+  for (const group of universityGroups) {
+    const groupItems = [];
+    
+    for (const keyword of group.keywords) {
+      try {
+        const results = await fetchYoutubeResults(keyword);
+        for (const item of results) {
+          const key = item.id || item.url || item.title;
+          if (!key || seen.has(key)) continue;
+          seen.add(key);
+          
+          if (item.include) {
+            const { include, reason, ...publicItem } = item;
+            const finalItem = { 
+              ...publicItem, 
+              scheduleFilter: reason,
+              university: group.name 
+            };
+            groupItems.push(finalItem);
+          } else {
+            excluded.push({
+              title: item.title,
+              query: item.query,
+              publishedAt: item.publishedAt,
+              uploadAgeDays: item.uploadAgeDays,
+              status: item.status,
+              reason: item.reason
+            });
+          }
+        }
+      } catch (error) {
+        errors.push(`${keyword}: ${error.message}`);
+      }
+    }
+    
+    // 각 대학당 조회수 높은 순으로 최대 3개만 선택
+    groupItems.sort((a, b) => (b.viewCount || 0) - (a.viewCount || 0));
+    const selectedItems = groupItems.slice(0, group.maxItems);
+    universityItems.push(...selectedItems);
+    console.log(`[INFO] ${group.name}: ${selectedItems.length}개 영상 선택`);
+  }
+
+  // 일반 지역 소식 검색어
+  const localQueries = QUERIES.filter(q => 
+    !q.includes("대학교") && !q.includes("대학") && !q.includes("입학") && !q.includes("연예인")
+  );
+
+  for (const query of localQueries) {
     try {
       const results = await fetchYoutubeResults(query);
       for (const item of results) {
         const key = item.id || item.url || item.title;
         if (!key || seen.has(key)) continue;
         seen.add(key);
+        
         if (item.include) {
           const { include, reason, ...publicItem } = item;
-          items.push({ ...publicItem, scheduleFilter: reason });
+          const finalItem = { ...publicItem, scheduleFilter: reason };
+          items.push(finalItem);
         } else {
           excluded.push({
             title: item.title,
@@ -211,8 +303,13 @@ async function collect() {
       errors.push(`${query}: ${error.message}`);
     }
   }
+  
+  // 일반 영상 조회수 기준으로 정렬
+  items.sort((a, b) => (b.viewCount || 0) - (a.viewCount || 0));
 
-  const finalItems = items.length ? items : fallbackItems(errors.join("; ") || "최근 14일 영상 결과 없음");
+  const finalItems = items.length ? items : fallbackItems(errors.join(";") || "최근 30일 영상 결과 없음");
+  const finalUniversityItems = universityItems; // 이미 각 대학당 3개씩 선택됨
+
   return {
     ok: true,
     topic: "중랑구 관련 지역 소식 유튜브 정리",
@@ -223,6 +320,8 @@ async function collect() {
     queries: QUERIES,
     count: finalItems.length,
     items: finalItems.slice(0, MAX_OUTPUT_ITEMS),
+    universityItems: finalUniversityItems,
+    universityCount: finalUniversityItems.length,
     excludedCount: excluded.length,
     excluded: excluded.slice(0, 30),
     errors

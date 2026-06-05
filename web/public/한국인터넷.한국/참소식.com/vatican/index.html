@@ -1,0 +1,1793 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="참소식.com 교황청 및 바티칸 뉴스 요약 - 레오 14세 교황, 기도, 찬양, AI 추천">
+  <meta name="keywords" content="교황청, 바티칸, 레오 14세, 교황, 가톨릭, 기도, 찬양, 참소식">
+  <meta name="author" content="참소식.com">
+  <meta name="robots" content="index, follow">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="교황청 소식 | 참소식.com">
+  <meta property="og:description" content="바티칸과 교황 관련 핵심 뉴스를 한 페이지에서 정리 - AI 기도 추천">
+  <meta property="og:url" content="https://참소식.com/vatican/">
+  <meta property="og:site_name" content="참소식.com">
+  <meta property="og:locale" content="ko_KR">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="교황청 소식 | 참소식.com">
+  <meta name="twitter:description" content="바티칸과 교황 관련 핵심 뉴스를 한 페이지에서 정리">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/favicon.svg">
+  <link rel="canonical" href="https://참소식.com/vatican/">
+  <title>교황청 소식 | 참소식.com</title>
+  <style>
+    :root {
+      --wine: #6f1018;
+      --wine-dark: #4b090f;
+      --gold: #c98b26;
+      --ink: #241c19;
+      --muted: #716861;
+      --line: #eadfce;
+      --paper: #fffdf9;
+      --cream: #fbf4e8;
+      --shadow: 0 6px 18px rgba(76, 38, 25, .10);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 12% 8%, rgba(213, 166, 95, .08), transparent 24rem),
+        #fdfcf9;
+      font-family: "Noto Sans KR", "Malgun Gothic", Arial, sans-serif;
+      line-height: 1.55;
+    }
+    a { color: inherit; text-decoration: none; }
+    button { font: inherit; }
+    .topbar {
+      position: sticky;
+      z-index: 20;
+      top: 0;
+      color: #fff9ec;
+      background: linear-gradient(100deg, #721019, #500910);
+      box-shadow: 0 2px 12px rgba(59, 4, 9, .25);
+    }
+    .nav {
+      width: min(1440px, calc(100% - 44px));
+      height: 62px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 28px;
+    }
+    .brand { display: flex; align-items: center; gap: 11px; font-family: Georgia, serif; font-size: 26px; }
+    .brand-mark { color: #e8b858; font-size: 35px; line-height: 1; }
+    .brand-definition {
+      font-size: 11px;
+      font-weight: 400;
+      font-family: 'Noto Sans KR', sans-serif;
+      color: rgba(255, 249, 236, 0.85);
+      max-width: 320px;
+      line-height: 1.4;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+    .brand-definition .typing-text {
+      display: inline-block;
+      white-space: nowrap;
+      padding-left: 100%;
+      animation: slideLeft 35s linear infinite;
+    }
+    @keyframes slideLeft {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-100%); }
+    }
+    .nav-links { display: flex; align-items: center; gap: 48px; font-weight: 800; }
+    .nav-links a { opacity: .92; }
+    .nav-links a:hover { color: #ffd37d; }
+    .page { width: min(1440px, calc(100% - 52px)); margin: 18px auto 26px; }
+    .hero {
+      min-height: 430px;
+      position: relative;
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      border: 1px solid #ead6b9;
+      border-radius: 18px;
+      background:
+        linear-gradient(90deg, rgba(255,250,241,.20) 0%, rgba(255,250,241,.08) 48%, rgba(250,239,219,.02) 100%),
+        url("./img/prayer-background.png") center 42% / cover no-repeat;
+      box-shadow: var(--shadow);
+    }
+    .hero-copy {
+      z-index: 2;
+      padding: 25px 32px 20px 108px;
+      opacity: .68;
+    }
+    .hero h1 {
+      margin: 0 0 3px;
+      color: var(--wine-dark);
+      font-family: Georgia, "Nanum Myeongjo", serif;
+      font-size: clamp(42px, 5vw, 61px);
+      line-height: 1.15;
+      letter-spacing: .05em;
+    }
+    #page-title {
+      width: min(100%, 520px);
+      padding: 18px 24px 22px;
+      border: 1px solid rgba(201, 139, 38, .28);
+      border-radius: 14px;
+      color: rgba(75, 9, 15, .74);
+      background: rgba(255, 249, 237, .12);
+      text-shadow: 0 1px 0 rgba(255,255,255,.68);
+      box-shadow: inset 0 0 28px rgba(255, 250, 239, .10);
+    }
+    .hero-sub { margin: 0 0 18px; font-size: 19px; }
+    .feature-row { display: flex; flex-wrap: wrap; gap: 18px; }
+    .feature {
+      min-width: 185px;
+      padding: 12px 18px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      border: 1px solid #ead7ba;
+      border-radius: 23px;
+      background: rgba(255,255,255,.84);
+      box-shadow: 0 4px 10px rgba(99,62,33,.08);
+      font-weight: 800;
+    }
+    .feature b { color: var(--gold); font-size: 30px; line-height: 1; }
+    .updated { margin-top: 15px; color: #514843; font-size: 14px; font-weight: 700; }
+    .prayer-radio {
+      margin: 17px 20px 17px 0;
+      min-height: 396px;
+      padding: 50px 34px 24px;
+      align-self: stretch;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      border: 1px solid #dfc79e;
+      border-radius: 15px;
+      background: transparent;
+      box-shadow: 0 6px 18px rgba(76, 38, 25, .11);
+    }
+    .prayer-overlay {
+      width: min(94%, 560px);
+      margin: 0 auto;
+      padding: 16px 18px;
+      border: 1px solid rgba(174, 118, 42, .42);
+      border-radius: 14px;
+      background: rgba(255, 251, 239, .91);
+      box-shadow: 0 6px 18px rgba(69, 35, 14, .16);
+      backdrop-filter: blur(5px);
+    }
+    .prayer-radio-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+    .prayer-radio-label { color: var(--wine); font-weight: 900; font-size: 13px; letter-spacing: .04em; }
+    .prayer-clock { color: #7a6558; font-family: Georgia, serif; font-size: 14px; font-weight: 800; }
+    .prayer-radio h2 {
+      margin: 6px 0 7px;
+      color: var(--wine-dark);
+      font-family: Georgia, "Nanum Myeongjo", serif;
+      font-size: 24px;
+    }
+    .prayer-text {
+      min-height: 74px;
+      margin: 0;
+      color: #443832;
+      font-family: Georgia, "Nanum Myeongjo", serif;
+      font-size: 15px;
+      line-height: 1.72;
+    }
+    .prayer-controls { margin-top: 12px; display: flex; align-items: center; gap: 9px; flex-wrap: wrap; }
+    .repeat-label { margin-top: 12px; color: var(--wine); font-size: 12px; font-weight: 900; }
+    .repeat-buttons { margin-top: 6px; display: flex; flex-wrap: wrap; gap: 5px; }
+    .repeat-button {
+      padding: 5px 9px;
+      border: 1px solid #d7b77f;
+      border-radius: 999px;
+      color: #6b321d;
+      background: rgba(255, 250, 237, .93);
+      cursor: pointer;
+      font-size: 11px;
+      font-weight: 900;
+    }
+    .repeat-button:hover, .repeat-button.active { color: #fff; border-color: var(--wine); background: var(--wine); }
+    .prayer-button {
+      padding: 9px 16px;
+      border: 0;
+      border-radius: 999px;
+      color: #fff9ed;
+      background: linear-gradient(145deg, #85151e, #590a11);
+      box-shadow: 0 4px 9px rgba(84, 10, 17, .2);
+      cursor: pointer;
+      font-weight: 900;
+    }
+    .prayer-button:hover { background: #7a1018; }
+    .prayer-button.secondary { color: var(--wine); background: #f6ead6; box-shadow: none; }
+    .prayer-status { color: var(--muted); font-size: 12px; font-weight: 700; }
+    .music-option { margin-top: 14px; padding-top: 12px; border-top: 1px dashed #d4b88a; }
+    .music-option-head { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 8px; }
+    .music-option-label { color: var(--wine); font-size: 12px; font-weight: 900; }
+    .toggle-switch { position: relative; display: inline-block; width: 44px; height: 22px; }
+    .toggle-switch input { opacity: 0; width: 0; height: 0; position: absolute; }
+    .toggle-slider { position: absolute; cursor: pointer; inset: 0; border-radius: 22px; background: #ccc; transition: .3s; }
+    .toggle-slider::before { position: absolute; content: ""; height: 16px; width: 16px; left: 3px; bottom: 3px; border-radius: 50%; background: white; transition: .3s; }
+    .toggle-switch input:checked + .toggle-slider { background: var(--wine); }
+    .toggle-switch input:checked + .toggle-slider::before { transform: translateX(22px); }
+    .toggle-wrapper.disabled { pointer-events: none; opacity: 0.5; }
+    .music-select { width: 100%; padding: 7px 10px; border: 1px solid #d7b77f; border-radius: 8px; background: rgba(255, 250, 237, .95); color: var(--ink); font-size: 12px; font-weight: 700; cursor: pointer; }
+    .music-select:disabled { opacity: 0.6; cursor: not-allowed; }
+    .music-select:focus { outline: none; border-color: var(--wine); }
+    .music-note { margin-top: 5px; color: #8a7a6a; font-size: 11px; }
+    .music-player { display: none; margin-top: 12px; border-radius: 10px; overflow: hidden; border: 1px solid #d7b77f; }
+    .music-player.active { display: block; }
+    .music-player iframe { width: 100%; height: 180px; border: 0; }
+    .ai-recommend { margin-top: 8px; padding: 8px 10px; border-radius: 8px; background: linear-gradient(145deg, #f8edda, #fbf3e6); font-size: 11px; }
+    .ai-recommend strong { color: var(--wine); }
+    .ai-recommend .video-title { display: block; margin-top: 4px; color: #5f321d; font-weight: 700; }
+    .content-grid { margin-top: 16px; display: grid; grid-template-columns: minmax(0, 2.3fr) minmax(310px, 1fr); gap: 30px; }
+    .stats { display: grid; grid-template-columns: .9fr .9fr 1.15fr; gap: 17px; }
+    .stat, .panel {
+      border: 1px solid rgba(109, 70, 48, .12);
+      border-radius: 15px;
+      background: rgba(255,255,255,.92);
+      box-shadow: var(--shadow);
+    }
+    .stat { min-height: 86px; padding: 14px 22px; display: flex; align-items: center; gap: 18px; }
+    .round-icon {
+      width: 58px;
+      height: 58px;
+      flex: 0 0 58px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      color: #fff5e6;
+      background: linear-gradient(145deg, #85151e, #4c070d);
+      font-size: 28px;
+    }
+    .stat small { display: block; font-weight: 800; }
+    .stat strong { display: block; color: var(--wine); font-family: Georgia, serif; font-size: 28px; line-height: 1.15; }
+    .stat.topic strong { color: var(--ink); font-family: inherit; font-size: 18px; }
+    .panel { margin-top: 14px; padding: 17px 22px; }
+    .panel:first-child { margin-top: 0; }
+    .panel h2 {
+      margin: 0 0 10px;
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      color: var(--wine);
+      font-family: Georgia, "Nanum Myeongjo", serif;
+      font-size: 21px;
+    }
+    .panel h2 span { font-family: sans-serif; font-size: 23px; }
+    .summary-list { margin: 0; padding-left: 24px; }
+    .summary-list li { margin: 5px 0; }
+    .meditation-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+    .meditation-item {
+      padding: 13px 15px;
+      border: 1px solid #eadbc5;
+      border-radius: 11px;
+      background: linear-gradient(145deg, #fffdf8, #fbf3e6);
+    }
+    .meditation-item strong { display: block; margin-bottom: 5px; color: var(--wine); }
+    .meditation-item p { margin: 0; color: #4e433d; font-size: 14px; line-height: 1.65; }
+    .meditation-item.scripture { grid-column: 1 / -1; text-align: center; background: #f8edda; }
+    .meditation-item.scripture p { color: #5f321d; font-family: Georgia, "Nanum Myeongjo", serif; font-size: 16px; }
+    .news-list { list-style: none; margin: 0; padding: 0; }
+    .news-list li {
+      min-height: 39px;
+      display: grid;
+      grid-template-columns: 100px 1fr auto 20px;
+      align-items: center;
+      gap: 8px;
+      border-top: 1px solid #eee8df;
+      font-size: 14px;
+    }
+    .news-list time { color: #756b63; }
+    .news-list a { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .news-list a:hover { color: var(--wine); text-decoration: underline; }
+    .news-list .search-icons { display: inline-flex; gap: 3px; }
+    .arrow { color: #8a817a; font-size: 21px; }
+    .side .panel { padding: 16px 20px; }
+    .link-list { display: grid; gap: 6px; }
+    .link-item {
+      min-height: 39px;
+      padding: 7px 11px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      border: 1px solid #e4d4bd;
+      border-radius: 7px;
+      background: #fffefa;
+      font-size: 14px;
+    }
+    .link-item:hover { border-color: #c79140; background: #fff8e9; }
+    .link-logo {
+      width: 24px; height: 24px; display: grid; place-items: center; flex: 0 0 24px;
+      border-radius: 5px; color: white; background: var(--wine); font-weight: 900; font-size: 12px;
+    }
+    .link-item .arrow { margin-left: auto; }
+    .search-tags, .keywords { display: flex; flex-wrap: wrap; gap: 7px; }
+    .search-tags a, .keyword {
+      padding: 6px 15px;
+      border: 1px solid #e4d4bd;
+      border-radius: 8px;
+      background: linear-gradient(#fff, #fdf9f2);
+      font-size: 13px;
+      text-align: center;
+    }
+    .search-tags a { flex: 1 1 43%; }
+    .keyword { border-radius: 12px; }
+    .popular-strip {
+      margin-top: 16px;
+      padding: 16px 18px 18px;
+      border: 1px solid #ead6b9;
+      border-radius: 15px;
+      background: linear-gradient(145deg, rgba(255,255,255,.96), rgba(251,244,232,.9));
+      box-shadow: var(--shadow);
+    }
+    .popular-head {
+      margin-bottom: 12px;
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 14px;
+    }
+    .popular-head h2 {
+      margin: 0;
+      color: var(--wine);
+      font-family: Georgia, "Nanum Myeongjo", serif;
+      font-size: 21px;
+    }
+    .popular-head p { margin: 0; color: var(--muted); font-size: 12px; font-weight: 800; }
+    .popular-grid { display: grid; grid-template-columns: 1.25fr 1fr 1fr; gap: 14px; }
+    .popular-card { position: relative; }
+    .popular-card::before {
+      position: absolute;
+      z-index: 2;
+      top: 9px;
+      left: 9px;
+      padding: 4px 9px;
+      border-radius: 999px;
+      color: #fff9ed;
+      background: rgba(105, 11, 19, .92);
+      box-shadow: 0 3px 8px rgba(45, 4, 8, .2);
+      font-size: 10px;
+      font-weight: 900;
+    }
+    .popular-card.news::before { content: "인기 영상 1위"; }
+    .popular-card.song::before { content: "인기 찬양"; }
+    .popular-card.ai-top::before { content: "🤖 AI 추천 1위"; background: linear-gradient(135deg, #6f1018, #c98b26); }
+    .popular-card .video-title { min-height: 0; }
+    .media-panel { margin-top: 16px; }
+    .media-panel summary {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      cursor: pointer;
+      list-style: none;
+    }
+    .media-panel summary::-webkit-details-marker { display: none; }
+    .media-panel summary h2 { margin: 0; }
+    .media-count { color: var(--muted); font-size: 13px; font-weight: 800; }
+    .video-grid {
+      margin-top: 15px;
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+    }
+    .video-card {
+      overflow: hidden;
+      border: 1px solid #e5d6c1;
+      border-radius: 12px;
+      background: #fffdfa;
+      box-shadow: 0 4px 12px rgba(76, 38, 25, .08);
+    }
+    .video-card:hover { transform: translateY(-2px); box-shadow: var(--shadow); }
+    .video-thumb { position: relative; aspect-ratio: 16 / 9; overflow: hidden; background: #eadbc5; }
+    .video-thumb img { width: 100%; height: 100%; display: block; object-fit: cover; }
+    .video-play {
+      position: absolute; inset: 50% auto auto 50%; transform: translate(-50%, -50%);
+      width: 42px; height: 42px; display: grid; place-items: center; border-radius: 50%;
+      color: #fff; background: rgba(105, 11, 19, .88); font-size: 18px;
+    }
+    .video-body { padding: 10px 11px 12px; }
+    .video-title {
+      min-height: 42px; margin: 0; display: -webkit-box; overflow: hidden;
+      -webkit-line-clamp: 2; -webkit-box-orient: vertical; font-size: 13px; font-weight: 900; line-height: 1.55;
+    }
+    .video-meta { margin: 6px 0 0; color: var(--muted); font-size: 11px; }
+    .archive-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+    .archive-link {
+      padding: 9px 11px; border: 1px solid #e5d6c1; border-radius: 9px;
+      background: #fffdf8; color: #5e2b1b; font-size: 12px; font-weight: 800;
+    }
+    .archive-link:hover { border-color: var(--gold); background: #fff6e6; }
+    .status-note { margin: 10px 0 0; color: var(--muted); font-size: 12px; }
+    .search-icons { display: inline-flex; gap: 4px; margin-left: 8px; vertical-align: middle; }
+    .search-icon { display: inline-flex; align-items: center; justify-content: center; width: 28px; height: 28px; border-radius: 6px; font-size: 13px; font-weight: 700; text-decoration: none; transition: transform .2s, box-shadow .2s, background-color .3s ease; }
+    .search-icon:hover { transform: translateY(-1px) scale(1.08); box-shadow: 0 3px 8px rgba(0,0,0,.3); }
+    /* 색상 순환 애니메이션 */
+    @keyframes colorCycle {
+      0% { background-color: hsl(0, 85%, 50%); }
+      14% { background-color: hsl(30, 85%, 50%); }
+      28% { background-color: hsl(60, 85%, 50%); }
+      42% { background-color: hsl(120, 85%, 45%); }
+      57% { background-color: hsl(200, 85%, 50%); }
+      71% { background-color: hsl(240, 85%, 55%); }
+      85% { background-color: hsl(280, 85%, 55%); }
+      100% { background-color: hsl(0, 85%, 50%); }
+    }
+    .search-icon.color-cycle { animation: colorCycle 2.1s infinite; color: white; text-shadow: 0 1px 2px rgba(0,0,0,.4); }
+    .search-icon.color-cycle:nth-child(2) { animation-delay: 0.15s; }
+    .search-icon.color-cycle:nth-child(3) { animation-delay: 0.3s; }
+    .search-icon.color-cycle:nth-child(4) { animation-delay: 0.45s; }
+    .search-icon.google { background: #4285f4; color: white; }
+    .search-icon.bing { background: #00897b; color: white; }
+    .search-icon.naver { background: #03c75a; color: white; }
+    .search-icon.chamsosik { background: var(--wine); color: white; }
+    /* 단일 검색 아이콘 스타일 */
+    .search-icon.single {
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+    .summary-item { display: flex; align-items: flex-start; gap: 8px; margin: 8px 0; }
+    .summary-text { flex: 1; }
+    .meditation-text { margin: 0; }
+    .meditation-text .search-icons { margin-left: 6px; }
+    .search-link-bottom {
+      margin-top: 14px;
+      padding-top: 12px;
+      border-top: 1px dashed #d4b88a;
+      display: flex;
+      justify-content: flex-end;
+      gap: 8px;
+    }
+    .search-link-bottom .search-icons { gap: 6px; }
+    .summary-list li { display: flex; align-items: flex-start; gap: 8px; margin: 8px 0; }
+    .summary-text { flex: 1; }
+    .summary-list .search-icons { flex-shrink: 0; margin-left: auto; }
+    .item-search-link { margin-top: 8px; padding-top: 8px; border-top: 1px dashed #d4b88a; display: flex; justify-content: flex-end; }
+    .news-item { display: grid; grid-template-columns: 100px 1fr 24px; align-items: center; gap: 8px; }
+    footer {
+      padding: 24px 20px;
+      color: #fff5e7;
+      background: linear-gradient(100deg, #721019, #4b090f);
+      text-align: center;
+      font-family: Georgia, "Nanum Myeongjo", serif;
+    }
+    footer .footer-content { max-width: 800px; margin: 0 auto; }
+    footer .footer-main { margin: 0 0 12px; font-size: 20px; }
+    footer .footer-main b { margin-right: 18px; color: #e8b858; font-size: 28px; }
+    footer .footer-developer {
+      margin: 0;
+      padding-top: 12px;
+      border-top: 1px solid rgba(232, 184, 88, 0.3);
+      font-size: 13px;
+      font-family: "Noto Sans KR", sans-serif;
+      color: rgba(255, 249, 236, 0.75);
+      line-height: 1.6;
+    }
+    footer .footer-developer strong { color: #e8b858; }
+    @media (max-width: 1100px) {
+      .hero { grid-template-columns: 1fr; }
+      .hero-copy { padding: 26px 28px; }
+      .prayer-radio { margin: 0 26px 24px; min-height: 450px; background-position: center 48%; }
+      .content-grid { grid-template-columns: 1fr; gap: 0; }
+      .popular-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+      .video-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+      .side { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; margin-top: 14px; }
+      .side .panel { margin-top: 0; }
+    }
+    @media (max-width: 760px) {
+      .nav { width: calc(100% - 28px); height: auto; min-height: 62px; flex-wrap: wrap; padding: 8px 0; }
+      .brand { font-size: 22px; }
+      .brand-mark { font-size: 28px; }
+      .brand-definition { display: none; }
+      .nav-links { gap: 10px; font-size: 12px; flex-wrap: wrap; justify-content: center; }
+      .nav-links a { padding: 4px 8px; }
+      .nav-links a:nth-child(-n+3) { display: none; }
+      .page { width: calc(100% - 24px); margin-top: 12px; }
+      .hero-copy { padding: 22px 20px; }
+      .hero h1 { font-size: 41px; }
+      .hero-sub { font-size: 16px; }
+      .feature-row { gap: 8px; }
+      .feature { min-width: 0; flex: 1 1 100%; padding: 8px 13px; border-radius: 13px; }
+      .feature b { font-size: 23px; }
+      .prayer-radio { margin: 0 14px 18px; min-height: 460px; padding: 18px; background-position: center 46%; }
+      .prayer-overlay { width: 100%; padding: 14px; }
+      .prayer-radio h2 { font-size: 21px; }
+      .stats, .side { grid-template-columns: 1fr; }
+      .popular-head { align-items: flex-start; flex-direction: column; }
+      .popular-grid { grid-template-columns: 1fr; }
+      .video-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .archive-grid { grid-template-columns: 1fr; }
+      .meditation-grid { grid-template-columns: 1fr; }
+      .meditation-item.scripture { grid-column: auto; }
+      .stat { min-height: 72px; }
+      .news-list li { grid-template-columns: 82px 1fr 12px; font-size: 12px; }
+      .panel { padding: 15px; }
+      footer { padding: 20px 16px; }
+      footer .footer-main { font-size: 16px; }
+      footer .footer-developer { font-size: 12px; }
+    }
+    @media (max-width: 480px) {
+      .nav { width: calc(100% - 20px); padding: 10px 0; gap: 12px; }
+      .brand { font-size: 18px; gap: 8px; }
+      .brand-mark { font-size: 24px; }
+      .nav-links { gap: 6px; font-size: 11px; width: 100%; justify-content: center; margin-top: 6px; }
+      .nav-links a { padding: 6px 10px; border-radius: 6px; background: rgba(255,255,255,0.1); }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <nav class="nav" aria-label="주요 메뉴">
+      <div style="display: flex; align-items: center; gap: 16px;">
+        <a class="brand" href="../"><span class="brand-mark">✣</span><span>참소식.com</span></a>
+        <div class="brand-definition">
+          <span class="typing-text">참 · 거짓이 아닌 것 · 하느님께 속한 것 · 변하지 않고 신뢰할 수 있는 것 · 생명을 주는 진리 · 겉모양이 아니라 본질 · 복음 안에서 드러나는 하느님의 뜻 — 그리스도의 복음 정신 안에서 세상에 흩어진 교회 소식을 바르게 전하고, 바티칸과 한국 천주교의 흐름을 한곳에 모아 신자들이 믿고 확인할 수 있게 하는 소식</span>
+        </div>
+      </div>
+      <div class="nav-links">
+        <a href="#latest">교황청 소식</a>
+        <a href="https://www.vaticannews.va/ko.html" target="_blank" rel="noopener">바티칸 뉴스</a>
+        <a href="#summary">레오 14세</a>
+        <a href="#latest">RSS</a>
+        <a href="#videos">영상</a>
+        <a href="#search">검색 요약</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page">
+    <section class="hero" aria-labelledby="page-title">
+      <div class="hero-copy">
+        <h1 id="page-title">교황청 소식</h1>
+        <p class="hero-sub" style="display: None">바티칸과 교황 관련 핵심 뉴스를 한 페이지에서 정리</p>
+        <div class="feature-row">
+          <div class="feature"><b>♟</b><span>첫 미국인 교황<br>레오 14세</span></div>
+          <div class="feature"><b>✺</b><span>AI 윤리와<br>개혁 메시지</span></div>
+          <div class="feature"><b>◔</b><span>바티칸 뉴스<br>RSS 요약</span></div>
+        </div>
+        <div class="updated">▣ 업데이트&nbsp; <span id="updated-at">확인 중...</span></div>
+      </div>
+      <div class="prayer-radio" aria-labelledby="prayer-title">
+        <div class="prayer-overlay">
+          <div class="prayer-radio-head">
+            <span class="prayer-radio-label">LIVE · 시간별 기도 라디오</span>
+            <time class="prayer-clock" id="prayer-clock">--:--</time>
+          </div>
+          <h2 id="prayer-title">현재 기도를 준비하고 있습니다</h2>
+          <p class="prayer-text" id="prayer-text">현재 시간에 맞는 기도문이 이곳에 표시됩니다.</p>
+          <div class="repeat-label">반복 횟수 선택</div>
+          <div class="repeat-buttons" aria-label="기도 반복 횟수">
+            <button class="repeat-button active" type="button" data-repeat="1">1번</button>
+            <button class="repeat-button" type="button" data-repeat="3">3번</button>
+            <button class="repeat-button" type="button" data-repeat="5">5번</button>
+            <button class="repeat-button" type="button" data-repeat="7">7번</button>
+            <button class="repeat-button" type="button" data-repeat="10">10번</button>
+            <button class="repeat-button" type="button" data-repeat="25">25번</button>
+            <button class="repeat-button" type="button" data-repeat="100">100번</button>
+            <button class="repeat-button" type="button" data-repeat="500">500번</button>
+          </div>
+          <div class="prayer-controls">
+            <button class="prayer-button" id="prayer-play" type="button">▶ 기도 듣기</button>
+            <button class="prayer-button secondary" id="prayer-pause" type="button">일시 정지</button>
+            <button class="prayer-button secondary" id="prayer-stop" type="button">중지</button>
+            <span class="prayer-status" id="prayer-status">한국 시간 기준</span>
+          </div>
+          <div class="music-option">
+            <div class="music-option-head">
+              <span class="music-option-label">🎵 기도 후 찬양 영상 재생</span>
+              <label class="toggle-switch" id="toggle-wrapper">
+                <input type="checkbox" id="music-toggle" checked>
+                <span class="toggle-slider"></span>
+              </label>
+            </div>
+            <div class="ai-recommend" id="ai-recommend">
+              <strong>🤖 AI 추천:</strong>
+              <span class="video-title" id="ai-video-title">기도 듣기 시작 후 AI가 추천합니다</span>
+            </div>
+            <select class="music-select" id="music-select" disabled>
+              <option value="">-- 기도 듣기 시작 후 선택 가능 --</option>
+            </select>
+            <p class="music-note">기도 완료 후 선택한 영상이 자동 재생됩니다</p>
+          </div>
+          <div class="music-player" id="music-player">
+            <iframe id="music-iframe" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="popular-strip" id="popular-videos" aria-labelledby="popular-title">
+      <div class="popular-head">
+        <h2 id="popular-title">🤖 AI 추천 영상</h2>
+        <p>AI가 선정한 가톨릭 신자 추천 영상</p>
+      </div>
+      <div class="popular-grid" id="popular-grid">
+        <p class="status-note">인기 영상을 불러오는 중입니다.</p>
+      </div>
+
+    </section>
+
+    <div class="content-grid">
+      <div class="main-column">
+        <section class="stats" aria-label="자료 현황">
+          <div class="stat"><div class="round-icon">⌕</div><div><small>검색 결과</small><strong id="search-count">-</strong></div></div>
+          <div class="stat"><div class="round-icon">◔</div><div><small>RSS 기사</small><strong id="rss-count">-</strong></div></div>
+          <div class="stat topic"><div class="round-icon">♜</div><div><small>주요 주제</small><strong>교황 · 바티칸 · 일반알현</strong></div></div>
+        </section>
+
+        <section class="panel" id="summary">
+          <h2><span>▣</span>핵심 요약</h2>
+          <ul class="summary-list" id="summary-list">
+            <li><span class="summary-text">핵심 요약을 불러오는 중입니다.</span></li>
+          </ul>
+          <div class="search-link-bottom" id="summary-search-bottom">
+          </div>
+          <div style="margin-top: 14px; padding: 13px 15px; border: 1px solid #eadbc5; border-radius: 11px; background: linear-gradient(145deg, #fffdf8, #fbf3e6);">
+            <strong style="display: none; margin-bottom: 5px; color: var(--wine);">🔍 검색 핵심 요약</strong>
+            <p id="search-summary-text" style="margin: 0; color: #5f321d; font-family: Georgia, 'Nanum Myeongjo', serif; font-size: 15px; line-height: 1.65;">검색 결과 요약을 불러오는 중입니다.</p>
+            <div id="search-summary-link" style="margin-top: 8px; text-align: right;"></div>
+          </div>
+        </section>
+
+        <section class="panel" id="ai-meditation">
+          <h2><span>✝</span>참소식 인공지능</h2>
+          <div class="meditation-grid">
+            <article class="meditation-item">
+              <strong>오늘의 메시지</strong>
+              <p class="meditation-text" id="daily-message">기사 종합 요약을 불러오는 중입니다.</p>
+            </article>
+            <article class="meditation-item">
+              <strong>묵상</strong>
+              <p class="meditation-text" id="daily-meditation">오늘의 묵상을 불러오는 중입니다.</p>
+            </article>
+            <article class="meditation-item scripture">
+              <strong>성경 말씀</strong>
+              <p class="meditation-text" id="daily-scripture">오늘의 성경 말씀을 불러오는 중입니다.</p>
+            </article>
+            <article class="meditation-item scripture">
+              <strong>전하고 싶은 이야기</strong>
+              <p class="meditation-text" id="spiritual-message">영적 메시지를 불러오는 중입니다.</p>
+            </article>
+          </div>
+          <div class="search-link-bottom">
+            <a class="search-icon" href="https://www.google.com/search?q=%EC%98%A4%EB%8A%98%EC%9D%98+%EB%A9%94%EC%8B%9C%EC%A7%80+%EB%AC%B5%EC%83%81+%EC%84%B1%EA%B2%BD+%EB%A7%90%EC%94%80+%EC%A0%84%ED%95%98%EA%B3%A0+%EC%8B%B6%EC%9D%80+%EC%9D%B4%EC%95%BC%EA%B8%B0+%EA%B0%80%ED%86%A8%EB%A6%AD+%EA%B8%B0%EB%8F%84" target="_blank" rel="noopener" title="참소식 묵상 전체 문장으로 검색">🔍</a>
+          </div>
+          <p class="status-note">자료 출처: article_news_summary.md, search_summary.md</p>
+        </section>
+
+        <section class="panel" id="latest">
+          <h2><span>▤</span>최신 기사</h2>
+          <ul class="news-list" id="news-list"><li><span></span><span>기사 데이터를 불러오는 중입니다.</span></li></ul>
+          <p class="status-note" id="load-status" aria-live="polite"></p>
+        </section>
+      </div>
+
+      <aside class="side">
+        <section class="panel">
+          <h2><span>↗</span>주요 링크</h2>
+          <div class="link-list" id="link-list">
+            <a class="link-item" href="https://www.vaticannews.va/ko.html" target="_blank" rel="noopener"><span class="link-logo">VN</span>Vatican News 한국어<span class="arrow">›</span></a>
+            <a class="link-item" href="https://vatican.mofa.go.kr/va-ko/brd/m_6945/list.do" target="_blank" rel="noopener"><span class="link-logo" style="background:#2871ac">대</span>주교황청 대한민국 대사관<span class="arrow">›</span></a>
+            <a class="link-item" href="https://www.catholic.or.kr/" target="_blank" rel="noopener"><span class="link-logo" style="background:#d08324">가</span>가톨릭인터넷 굿뉴스<span class="arrow">›</span></a>
+            <a class="link-item" href="https://www.pmsk.net/" target="_blank" rel="noopener"><span class="link-logo" style="background:#4a9b4f">전</span>교황청 전교기구 한국지부<span class="arrow">›</span></a>
+            <a class="link-item" href="https://www.catholictimes.org/" target="_blank" rel="noopener"><span class="link-logo" style="background:#275285">CT</span>Catholic Times<span class="arrow">›</span></a>
+          </div>
+        </section>
+        <section class="panel" id="search">
+          <h2><span>⌕</span>검색 요약</h2>
+          <div class="search-tags">
+            <a href="https://www.google.com/search?q=교황+레오+14세" target="_blank" rel="noopener">교황 레오 14세</a>
+            <a href="https://www.google.com/search?q=최신+교황청+소식" target="_blank" rel="noopener">최신 교황청 소식</a>
+            <a href="https://www.google.com/search?q=바티칸+공식+채널" target="_blank" rel="noopener">공식 바티칸 채널</a>
+            <a href="https://www.google.com/search?q=한국어+교황청+기사" target="_blank" rel="noopener">한국어 기사 모음</a>
+          </div>
+        </section>
+        <section class="panel">
+          <h2><span>◇</span>주요 키워드</h2>
+          <div class="keywords">
+            <span class="keyword">레오 14세</span><span class="keyword">일반알현</span><span class="keyword">삼종기도</span>
+            <span class="keyword">복음 해설</span><span class="keyword">기도 지향</span><span class="keyword">홍보부</span>
+            <span class="keyword">스카우트</span><span class="keyword">AI 윤리</span><span class="keyword">희년</span><span class="keyword">개혁</span>
+          </div>
+        </section>
+      </aside>
+    </div>
+
+    <section class="media-hub" id="videos" aria-label="영상 및 자료 모음">
+      <details class="panel media-panel" open>
+        <summary>
+          <h2><span>▶</span>기사 관련 유튜브 영상</h2>
+          <span class="media-count" id="youtube-count">불러오는 중</span>
+        </summary>
+        <div class="video-grid" id="youtube-grid"></div>
+      </details>
+
+      <details class="panel media-panel">
+        <summary>
+          <h2><span>♪</span>Hillsong 찬양 영상</h2>
+          <span class="media-count" id="hillsong-count">불러오는 중</span>
+        </summary>
+        <div class="video-grid" id="hillsong-grid"></div>
+      </details>
+
+      <details class="panel media-panel">
+        <summary>
+          <h2><span>▦</span>전체 자료 아카이브</h2>
+          <span class="media-count">JSON · Markdown 원문</span>
+        </summary>
+        <div class="archive-grid">
+          <a class="archive-link" href="./article_news.json" target="_blank">AI 기사 데이터 · article_news.json</a>
+          <a class="archive-link" href="./article_news_summary.md" target="_blank">AI 기사 종합 요약</a>
+          <a class="archive-link" href="./vatican_rss_raw.json" target="_blank">Vatican RSS 원본 데이터</a>
+          <a class="archive-link" href="./vatican_rss_translated.json" target="_blank">Vatican RSS 번역 데이터</a>
+          <a class="archive-link" href="./vatican_news_summary.md" target="_blank">Vatican 뉴스 요약</a>
+          <a class="archive-link" href="./search_results.md" target="_blank">검색 결과 원문</a>
+          <a class="archive-link" href="./search_summary.md" target="_blank">검색 AI 요약</a>
+          <a class="archive-link" href="./youtube_videos.json" target="_blank">기사 관련 유튜브 데이터</a>
+          <a class="archive-link" href="./youtube_videos_summary.md" target="_blank">기사 관련 영상 요약</a>
+          <a class="archive-link" href="./hillsong_videos.json" target="_blank">Hillsong 영상 데이터</a>
+          <a class="archive-link" href="./hillsong_videos_summary.md" target="_blank">Hillsong 영상 요약</a>
+          <a class="archive-link" href="./article_summaries/sample_output.json" target="_blank">기사 요약 예제 데이터</a>
+        </div>
+      </details>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <p class="footer-main"><b>†</b>한 페이지에서 교황청 관련 핵심 소식을 빠르게 확인하세요.</p>
+    </div>
+  </footer>
+
+  <script>
+    const DATA_FILES = {
+      translated: "vatican_rss_translated.json",
+      raw: "vatican_rss_raw.json",
+      searchResults: "search_results.md",
+      searchSummary: "search_summary.md",
+      newsSummary: "vatican_news_summary.md",
+      articleSummary: "article_news_summary.md",
+      articleNews: "article_news.json",
+      youtube: "youtube_videos.json",
+      youtubeSummary: "youtube_videos_summary.md",
+      hillsong: "hillsong_videos.json",
+      hillsongSummary: "hillsong_videos_summary.md"
+    };
+
+    const PRAYER_SCHEDULE = [
+      {
+        start: 0, end: 5, title: "고요한 밤의 기도",
+        text: "주님, 잠든 이들과 깨어 있는 이들을 지켜 주소서. 오늘의 걱정을 당신께 맡기오니, 세상에 평화와 위로를 내려 주소서."
+      },
+      {
+        start: 5, end: 8, title: "새벽을 여는 기도",
+        text: "새날을 허락하신 하느님, 오늘 만나는 모든 이 안에서 당신을 알아보게 하시고, 제 말과 행동이 사랑을 전하게 하소서."
+      },
+      {
+        start: 8, end: 12, title: "아침의 봉헌 기도",
+        text: "주님, 오늘의 생각과 말과 일을 당신께 봉헌합니다. 맡은 일을 성실히 행하고, 도움이 필요한 이에게 기꺼이 손을 내밀게 하소서."
+      },
+      {
+        start: 12, end: 15, title: "정오의 평화 기도",
+        text: "평화의 주님, 분쟁과 미움으로 고통받는 이들을 기억하소서. 우리 마음에서부터 화해를 시작하고, 서로의 존엄을 지키게 하소서."
+      },
+      {
+        start: 15, end: 18, title: "오후의 자비 기도",
+        text: "자비로우신 주님, 지치고 외로운 이들과 함께하여 주소서. 저희가 타인의 아픔을 외면하지 않고 따뜻한 위로가 되게 하소서."
+      },
+      {
+        start: 18, end: 21, title: "저녁 감사 기도",
+        text: "주님, 오늘 하루 베풀어 주신 은총에 감사드립니다. 부족했던 말과 행동을 용서하시고, 가족과 이웃에게 평화를 주소서."
+      },
+      {
+        start: 21, end: 24, title: "하루를 마치는 기도",
+        text: "사랑의 하느님, 오늘의 기쁨과 슬픔을 당신께 맡깁니다. 잘못을 뉘우치고 감사한 마음으로 편히 쉬게 하소서."
+      }
+    ];
+    let prayerRadioActive = false;
+    let prayerPaused = false;
+    let prayerRepeatTimer = null;
+    let prayerRepeatTarget = 1;
+    let prayerRepeatCurrent = 0;
+    let prayerSession = 0;
+    let currentPrayerKey = "";
+    let musicVideos = [];
+    let selectedMusicId = "";
+    let musicDataLoaded = false;
+    let ollamaModel = "kimi:latest"; // Ollama Kimi 모델
+
+    // Ollama AI로 영상 추천 받기
+    async function getOllamaRecommendation(videos, repeatCount, currentPrayer) {
+      try {
+        const videoList = videos.slice(0, 10).map((v, i) => 
+          `${i + 1}. ${v.title?.slice(0, 60) || "찬양 영상"} (조회수: ${numericViews(v).toLocaleString()})`
+        ).join("\n");
+        
+        const prompt = `당신은 가톨릭 기도와 찬양 영상을 추천하는 AI입니다.
+
+현재 기도: ${currentPrayer?.title || "기도"}
+기도 내용: ${currentPrayer?.text?.slice(0, 100) || ""}
+기도 반복 횟수: ${repeatCount}회
+
+다음 중 가장 적합한 찬양 영상 1개를 추천해주세요. 번호만 답변하세요.
+
+${videoList}
+
+추천 기준:
+- 반복 횟수가 적으면 짧고 경쾌한 영상
+- 반복 횟수가 많으면 길고 묵상적인 영상
+- 기도 시간대와 분위기에 맞는 영상
+- 조회수가 높은 인기 영상 우선
+
+번호:`;
+
+        console.log("[Ollama] 요청 전송 중...", ollamaModel);
+        
+        // 웹 서버의 /api/ollama-chat API 사용
+        const response = await fetch("/api/ollama-chat", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            model: ollamaModel,
+            messages: [{ role: "user", content: prompt }],
+            stream: false
+          })
+        });
+        
+        if (!response.ok) {
+          console.warn("[Ollama] 응답 오류:", response.status);
+          return null;
+        }
+        
+        const data = await response.json();
+        // ollama-chat API는 content 필드에 응답
+        const result = data.content || data.response?.trim() || "";
+        console.log("[Ollama] 응답:", result);
+        
+        // 번호 추출
+        const match = result.match(/(\d+)/);
+        if (match) {
+          const index = parseInt(match[1], 10) - 1;
+          if (index >= 0 && index < videos.length) {
+            return videos[index];
+          }
+        }
+        
+        return null;
+      } catch (error) {
+        console.warn("[Ollama] 연결 실패:", error.message);
+        return null;
+      }
+    }
+
+    function seoulTimeParts() {
+      const parts = new Intl.DateTimeFormat("ko-KR", {
+        timeZone: "Asia/Seoul", hour: "2-digit", minute: "2-digit", second: "2-digit", hourCycle: "h23"
+      }).formatToParts(new Date());
+      return Object.fromEntries(parts.map(part => [part.type, part.value]));
+    }
+
+    function scheduledPrayer(hour) {
+      return PRAYER_SCHEDULE.find(prayer => hour >= prayer.start && hour < prayer.end) || PRAYER_SCHEDULE[0];
+    }
+
+    function koreanVoice() {
+      return speechSynthesis.getVoices().find(voice => voice.lang.toLowerCase().startsWith("ko")) || null;
+    }
+
+    function speakPrayer(session = prayerSession) {
+      if (!("speechSynthesis" in window)) {
+        document.getElementById("prayer-status").textContent = "이 브라우저는 음성 낭독을 지원하지 않습니다.";
+        return;
+      }
+      clearTimeout(prayerRepeatTimer);
+      speechSynthesis.cancel();
+      prayerPaused = false;
+      const prayer = scheduledPrayer(Number(seoulTimeParts().hour));
+      const utterance = new SpeechSynthesisUtterance(`${prayer.title}. ${prayer.text}`);
+      utterance.lang = "ko-KR";
+      utterance.rate = .9;
+      utterance.pitch = .96;
+      utterance.voice = koreanVoice();
+      utterance.onstart = () => {
+        if (session !== prayerSession) return;
+        document.getElementById("prayer-status").textContent = `${prayerRepeatCurrent + 1} / ${prayerRepeatTarget}회 기도를 낭독하고 있습니다`;
+        document.getElementById("prayer-play").textContent = "▶ 처음부터 재생";
+        document.getElementById("prayer-pause").textContent = "일시 정지";
+      };
+      utterance.onend = () => {
+        if (!prayerRadioActive || session !== prayerSession) return;
+        prayerRepeatCurrent += 1;
+        if (prayerRepeatCurrent >= prayerRepeatTarget) {
+          finishPrayer();
+          return;
+        }
+        document.getElementById("prayer-status").textContent = `${prayerRepeatCurrent} / ${prayerRepeatTarget}회 완료 · 다음 기도를 준비합니다`;
+        prayerRepeatTimer = setTimeout(() => speakPrayer(session), 1500);
+      };
+      speechSynthesis.speak(utterance);
+    }
+
+    function startPrayer() {
+      prayerSession += 1;
+      const session = prayerSession;
+      clearTimeout(prayerRepeatTimer);
+      if ("speechSynthesis" in window) speechSynthesis.cancel();
+      prayerRadioActive = true;
+      prayerPaused = false;
+      prayerRepeatCurrent = 0;
+      // 기도 시작 시 AI 추천 활성화 - 반복 횟수와 현재 기도 기반
+      const currentPrayer = scheduledPrayer(Number(seoulTimeParts().hour));
+      activateMusicSelection(prayerRepeatTarget, currentPrayer);
+      prayerRepeatTimer = setTimeout(() => speakPrayer(session), 80);
+    }
+
+    async function activateMusicSelection(repeatCount, currentPrayer) {
+      const select = document.getElementById("music-select");
+      const aiTitleEl = document.getElementById("ai-video-title");
+      
+      console.log("[AI 추천] 활성화 - 반복:", repeatCount, "기도:", currentPrayer?.title);
+      console.log("[AI 추천] 데이터 로드 상태:", musicDataLoaded, "영상 수:", musicVideos.length);
+      
+      // 데이터가 아직 로드되지 않았으면 대기 메시지 표시
+      if (!musicDataLoaded || musicVideos.length === 0) {
+        aiTitleEl.textContent = "영상 데이터를 불러오는 중... 페이지 새로고침 후 다시 시도해주세요.";
+        select.disabled = true;
+        return;
+      }
+      
+      select.disabled = false;
+      aiTitleEl.textContent = "🤖 Ollama AI가 추천 중입니다...";
+      
+      // Ollama AI로 추천 시도
+      const ollamaRecommended = await getOllamaRecommendation(musicVideos, repeatCount, currentPrayer);
+      
+      if (ollamaRecommended) {
+        aiTitleEl.textContent = 
+          `🤖 AI 추천: ${ollamaRecommended.title?.slice(0, 45) || "찬양 영상"}${ollamaRecommended.title?.length >= 45 ? "..." : ""}`;
+        selectedMusicId = ollamaRecommended.id;
+        select.value = ollamaRecommended.id;
+        console.log("[Ollama] 추천 영상:", ollamaRecommended.title?.slice(0, 50));
+      } else {
+        // Ollama 실패 시 기존 알고리즘 사용
+        const recommended = aiRecommendVideo(musicVideos, repeatCount, currentPrayer);
+        console.log("[AI 추천] 로컬 추천 영상:", recommended?.title, recommended?.duration);
+        
+        if (recommended) {
+          aiTitleEl.textContent = 
+            `🎵 ${recommended.title?.slice(0, 45) || "찬양 영상"}${recommended.title?.length >= 45 ? "..." : ""} (${recommended.duration || ""})`;
+          selectedMusicId = recommended.id;
+          select.value = recommended.id;
+        } else {
+          aiTitleEl.textContent = "적합한 찬양 영상을 찾지 못했습니다.";
+        }
+      }
+    }
+
+    function finishPrayer() {
+      prayerRadioActive = false;
+      prayerPaused = false;
+      clearTimeout(prayerRepeatTimer);
+      document.getElementById("prayer-play").textContent = "▶ 기도 듣기";
+      document.getElementById("prayer-pause").textContent = "일시 정지";
+      document.getElementById("prayer-status").textContent = `${prayerRepeatTarget}회 기도 듣기를 완료했습니다`;
+      playMusicAfterPrayer();
+    }
+
+    // AI 멘트 생성
+    async function generateMusicComment(video, repeatCount, currentPrayer) {
+      try {
+        const prompt = `당신은 가톨릭 기도와 찬양을 안내하는 따뜻한 AI 도우미입니다.
+
+현재 상황:
+- 기도: ${currentPrayer?.title || "기도"}
+- 반복 횟수: ${repeatCount}회
+- 선택된 찬양: ${video?.title || "찬양 영상"}
+
+위 정보를 바탕으로 다음 두 가지를 작성하세요. 반드시 실제 내용을 작성하고, 지시사항은 포함하지 마세요.
+
+[선택 이유]
+(여기에 이 찬양이 기도 후에 적합한 이유를 1문장으로 작성)
+
+[전하고 싶은 이야기]
+(여기에 기도를 마친 분에게 전할 따뜻한 격려 메시지를 2문장으로 작성)`;
+
+        const response = await fetch("/api/ollama-chat", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            model: ollamaModel,
+            messages: [{ role: "user", content: prompt }],
+            stream: false
+          })
+        });
+
+        if (!response.ok) return null;
+        
+        const data = await response.json();
+        const result = data.content || data.response || null;
+        
+        // 응답이 지시사항을 그대로 포함하고 있는지 확인
+        if (result && (
+          result.includes("1문장으로 설명하세요") ||
+          result.includes("2문장으로 작성하세요") ||
+          result.includes("1문장으로 작성") ||
+          result.includes("2문장으로 작성")
+        )) {
+          console.warn("[AI 멘트] AI가 지시사항을 그대로 반환함, 기본 메시지 사용");
+          return null;
+        }
+        
+        return result;
+      } catch (error) {
+        console.warn("[AI 멘트] 생성 실패:", error.message);
+        return null;
+      }
+    }
+
+    // AI 멘트 읽어주기
+    function speakComment(comment, callback) {
+      if (!("speechSynthesis" in window)) {
+        callback();
+        return;
+      }
+      
+      const utterance = new SpeechSynthesisUtterance(comment);
+      utterance.lang = "ko-KR";
+      utterance.rate = 0.9;
+      utterance.pitch = 1.0;
+      utterance.voice = koreanVoice();
+      
+      utterance.onend = callback;
+      utterance.onerror = callback;
+      
+      speechSynthesis.speak(utterance);
+    }
+
+    async function playMusicAfterPrayer() {
+      const toggle = document.getElementById("music-toggle");
+      const select = document.getElementById("music-select");
+      if (!toggle.checked || !select.value) return;
+      
+      const videoId = select.value;
+      const video = musicVideos.find(v => v.id === videoId);
+      const currentPrayer = scheduledPrayer(Number(seoulTimeParts().hour));
+      
+      document.getElementById("prayer-status").textContent = "🎵 찬양 영상을 준비하고 있습니다...";
+      
+      // AI 멘트 생성
+      let aiComment = null;
+      try {
+        aiComment = await generateMusicComment(video, prayerRepeatTarget, currentPrayer);
+      } catch (e) {
+        console.warn("[AI 멘트] 생성 실패");
+      }
+      
+      if (aiComment) {
+        // AI 멘트 표시 - 마커에서 내용만 추출
+        const aiTitleEl = document.getElementById("ai-video-title");
+        
+        // 마커 사이의 내용만 추출하는 함수
+        function extractContent(text, marker) {
+          const regex = new RegExp(`\\[${marker}\\]\\s*([\\s\\S]*?)(?=\\[|$)`, 'i');
+          const match = text.match(regex);
+          return match ? match[1].trim() : '';
+        }
+        
+        // 선택 이유와 전하고 싶은 이야기 추출
+        const reasonContent = extractContent(aiComment, '선택 이유');
+        const storyContent = extractContent(aiComment, '전하고 싶은 이야기');
+        
+        // 추출된 내용으로 표시용 텍스트 생성
+        let displayComment = '';
+        if (reasonContent) {
+          displayComment += '<strong>🎵 선택 이유:</strong> ' + reasonContent.replace(/\n/g, '<br>');
+        }
+        if (storyContent) {
+          if (displayComment) displayComment += '<br>';
+          displayComment += '<strong>💬 전하고 싶은 이야기:</strong> ' + storyContent.replace(/\n/g, '<br>');
+        }
+        
+        // 추출된 내용이 없으면 원본에서 마커만 제거
+        if (!displayComment) {
+          displayComment = aiComment
+            .replace(/\[선택 이유\]/g, '<strong>🎵 선택 이유:</strong> ')
+            .replace(/\[전하고 싶은 이야기\]/g, '<br><strong>💬 전하고 싶은 이야기:</strong> ')
+            .replace(/\n/g, '<br>');
+        }
+        
+        aiTitleEl.innerHTML = `🤖 ${displayComment}`;
+        
+        // AI 멘트 읽어주기
+        document.getElementById("prayer-status").textContent = "🤖 AI가 멘트를 전하고 있습니다...";
+        
+        // TTS용 텍스트 생성 (마커 제거)
+        let speakText = '';
+        if (reasonContent) {
+          speakText += '선택 이유: ' + reasonContent.replace(/\n/g, ' ');
+        }
+        if (storyContent) {
+          if (speakText) speakText += ' ';
+          speakText += '전하고 싶은 이야기: ' + storyContent.replace(/\n/g, ' ');
+        }
+        
+        // 추출된 내용이 없으면 원본 사용
+        if (!speakText) {
+          speakText = aiComment
+            .replace(/\[선택 이유\]/g, '선택 이유: ')
+            .replace(/\[전하고 싶은 이야기\]/g, ' 전하고 싶은 이야기: ')
+            .replace(/\n/g, ' ');
+        }
+        
+        // 내용이 있으면 표시
+        if (displayComment && !displayComment.includes('설명하세요') && !displayComment.includes('작성하세요')) {
+          if (speakText) {
+            speakComment(speakText, () => {
+              playVideoWithFadeIn(videoId, video);
+            });
+            return;
+          }
+        }
+      }
+      
+      // AI 멘트 없거나 실패 시 기본 메시지 표시
+      const aiTitleEl = document.getElementById("ai-video-title");
+      const title = video?.title?.slice(0, 40) || "찬양 영상";
+      aiTitleEl.innerHTML = `🎵 <strong>재생 중:</strong> ${video?.title || "찬양 영상"}<br><small>조회수: ${numericViews(video).toLocaleString()}회</small>`;
+      
+      playVideoWithFadeIn(videoId, video);
+    }
+
+    function playVideoWithFadeIn(videoId, video) {
+      const iframe = document.getElementById("music-iframe");
+      const player = document.getElementById("music-player");
+      
+      // 영상 재생
+      iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0`;
+      player.classList.add("active");
+      
+      const title = video?.title?.slice(0, 40) || "찬양 영상";
+      document.getElementById("prayer-status").textContent = `🎵 재생 중: ${title}${title.length >= 40 ? "..." : ""}`;
+      
+      // AI 추천 영역에 영상 정보 표시
+      const aiTitleEl = document.getElementById("ai-video-title");
+      aiTitleEl.innerHTML = `🎵 <strong>재생 중:</strong> ${video?.title || "찬양 영상"}<br><small>조회수: ${numericViews(video).toLocaleString()}회</small>`;
+    }
+
+    function parseDuration(duration) {
+      if (!duration) return null; // null 반환하여 duration 없음을 표시
+      const match = duration.match(/(?:(\d+):)?(\d+):(\d+)/);
+      if (!match) return null;
+      const hours = parseInt(match[1] || "0", 10);
+      const minutes = parseInt(match[2], 10);
+      return hours * 60 + minutes;
+    }
+
+    function filterMusicVideos(videos) {
+      return videos.filter(video => {
+        const totalMinutes = parseDuration(video.duration);
+        // duration이 없으면 모두 포함 (나중에 AI가 추천)
+        if (totalMinutes === null) return true;
+        return totalMinutes >= 3 && totalMinutes <= 20;
+      });
+    }
+
+    // AI 추천: 반복 횟수와 기도문 기반으로 최적의 짧은 영상 선택
+    function aiRecommendVideo(videos, repeatCount, currentPrayer) {
+      if (!videos || videos.length === 0) return null;
+      
+      // 반복 횟수에 따른 이상적 영상 길이 계산
+      // 1회 = 3~5분, 3회 = 4~6분, 5회 = 5~7분, 7회 = 6~8분, 10회 = 7~9분, 25회 = 8~10분, 100회+ = 10~12분
+      let idealMin, idealMax;
+      if (repeatCount <= 1) { idealMin = 3; idealMax = 5; }
+      else if (repeatCount <= 3) { idealMin = 4; idealMax = 6; }
+      else if (repeatCount <= 5) { idealMin = 5; idealMax = 7; }
+      else if (repeatCount <= 7) { idealMin = 6; idealMax = 8; }
+      else if (repeatCount <= 10) { idealMin = 7; idealMax = 9; }
+      else if (repeatCount <= 25) { idealMin = 8; idealMax = 10; }
+      else if (repeatCount <= 100) { idealMin = 9; idealMax = 12; }
+      else { idealMin = 10; idealMax = 15; }
+      
+      const idealDuration = (idealMin + idealMax) / 2;
+      
+      // 기도 시간대별 키워드 가중치
+      const prayerKeywords = {
+        "고요한 밤의 기도": ["peace", "rest", "night", "calm", "silent", "peaceful", "주님", "평화", "안식"],
+        "새벽을 여는 기도": ["morning", "dawn", "new", "hope", "light", "새벽", "소망", "빛", "아침"],
+        "아침의 봉헌 기도": ["morning", "offering", "work", "day", "service", "봉헌", "일", "섬김", "오전"],
+        "정오의 평화 기도": ["peace", "noon", "reconcile", "harmony", "peaceful", "평화", "화해", "정오", "화합"],
+        "오후의 자비 기도": ["mercy", "compassion", "comfort", "afternoon", "help", "자비", "위로", "도움", "오후"],
+        "저녁 감사 기도": ["thanks", "evening", "gratitude", "family", "evening", "감사", "저녁", "가족", "은총"],
+        "하루를 마치는 기도": ["night", "rest", "end", "peace", "sleep", "마침", "쉼", "밤", "평안"]
+      };
+      
+      const keywords = prayerKeywords[currentPrayer?.title] || [];
+      
+      const scored = videos.map(video => {
+        const views = numericViews(video);
+        const duration = parseDuration(video.duration);
+        const title = (video.title || "").toLowerCase();
+        
+        // 영상 길이 점수 (duration 없으면 기본값 사용)
+        let durationScore;
+        if (duration === null) {
+          // duration 없으면 조회수 기반으로만 점수 매김
+          durationScore = 50; // 기본 점수
+        } else if (duration < idealMin) {
+          durationScore = Math.max(0, 100 - (idealMin - duration) * 20);
+        } else if (duration > idealMax) {
+          durationScore = Math.max(0, 100 - (duration - idealMax) * 15);
+        } else {
+          durationScore = 100 - Math.abs(duration - idealDuration) * 5;
+        }
+        
+        // 조회수 점수
+        const viewScore = Math.min(views / 5000, 100);
+        
+        // 키워드 매칭 점수
+        let keywordScore = 0;
+        keywords.forEach(kw => {
+          if (title.includes(kw.toLowerCase())) keywordScore += 20;
+        });
+        keywordScore = Math.min(keywordScore, 100);
+        
+        // 최종 점수: duration 있으면 길이 50% + 조회수 30% + 키워드 20%
+        // duration 없으면 조회수 70% + 키워드 30%
+        const score = duration === null 
+          ? viewScore * 0.7 + keywordScore * 0.3 
+          : durationScore * 0.5 + viewScore * 0.3 + keywordScore * 0.2;
+        
+        return { ...video, score, views, duration: duration || "길이 미상" };
+      });
+      
+      scored.sort((a, b) => b.score - a.score);
+      console.log("[AI 추천] 상위 3개 영상:", scored.slice(0, 3).map(v => ({ title: v.title?.slice(0, 30), score: v.score.toFixed(1), views: v.views })));
+      return scored[0];
+    }
+
+    function populateMusicSelect(videos) {
+      const select = document.getElementById("music-select");
+      const toggleWrapper = document.getElementById("toggle-wrapper");
+      const toggle = document.getElementById("music-toggle");
+      const aiTitleEl = document.getElementById("ai-video-title");
+      
+      console.log("[AI 추천] 받은 영상 데이터:", videos?.length || 0, "개");
+      
+      if (!videos || videos.length === 0) {
+        console.warn("[AI 추천] 영상 데이터가 없습니다.");
+        aiTitleEl.textContent = "영상 데이터를 불러올 수 없습니다.";
+        select.innerHTML = '<option value="">영상 데이터 없음</option>';
+        toggleWrapper.classList.add("disabled");
+        toggle.disabled = true;
+        musicDataLoaded = false;
+        return;
+      }
+      
+      musicVideos = filterMusicVideos(videos);
+      console.log("[AI 추천] 필터링된 영상:", musicVideos.length, "개 (3~20분)");
+      
+      if (musicVideos.length === 0) {
+        console.warn("[AI 추천] 3~20분 영상이 없습니다. 전체 영상 사용.");
+        musicVideos = videos.slice(0, 10);
+      }
+      
+      musicDataLoaded = true;
+      select.innerHTML = '<option value="">-- 기도 듣기 시작 후 선택 가능 --</option>';
+      
+      musicVideos.slice(0, 10).forEach(video => {
+        const option = document.createElement("option");
+        option.value = video.id;
+        const title = video.title?.slice(0, 40) || "찬양 영상";
+        const duration = video.duration || "길이 미상";
+        option.textContent = `${title}${title.length >= 40 ? "..." : ""} (${duration})`;
+        select.append(option);
+      });
+      
+      toggleWrapper.classList.remove("disabled");
+      toggle.disabled = false;
+      toggle.checked = true;
+      aiTitleEl.textContent = "기도 듣기 시작 후 AI가 추천합니다";
+      
+      console.log("[AI 추천] 영상 목록 준비 완료");
+    }
+
+    document.getElementById("music-toggle").addEventListener("change", function() {
+      const select = document.getElementById("music-select");
+      select.disabled = !this.checked;
+      if (!this.checked) {
+        const player = document.getElementById("music-player");
+        player.classList.remove("active");
+        document.getElementById("music-iframe").src = "";
+        document.getElementById("prayer-status").textContent = `중지됨 · ${prayerRepeatTarget}회 반복 선택`;
+      }
+    });
+
+    document.getElementById("music-select").addEventListener("change", function() {
+      selectedMusicId = this.value;
+      if (selectedMusicId) {
+        const selectedVideo = musicVideos.find(v => v.id === selectedMusicId);
+        if (selectedVideo) {
+          document.getElementById("ai-video-title").textContent = `${selectedVideo.title?.slice(0, 50) || "찬양 영상"} (${selectedVideo.duration || ""})`;
+        }
+      }
+    });
+
+    document.getElementById("music-select").addEventListener("change", function() {
+      selectedMusicId = this.value;
+    });
+
+    function stopPrayer() {
+      prayerSession += 1;
+      prayerRadioActive = false;
+      prayerPaused = false;
+      prayerRepeatCurrent = 0;
+      clearTimeout(prayerRepeatTimer);
+      if ("speechSynthesis" in window) speechSynthesis.cancel();
+      document.getElementById("prayer-play").textContent = "▶ 기도 듣기";
+      document.getElementById("prayer-pause").textContent = "일시 정지";
+      document.getElementById("prayer-status").textContent = `중지됨 · ${prayerRepeatTarget}회 반복 선택`;
+    }
+
+    function updatePrayer() {
+      const time = seoulTimeParts();
+      const prayer = scheduledPrayer(Number(time.hour));
+      const nextKey = `${prayer.start}-${prayer.end}`;
+      document.getElementById("prayer-clock").textContent = `${time.hour}:${time.minute}`;
+      document.getElementById("prayer-title").textContent = prayer.title;
+      document.getElementById("prayer-text").textContent = prayer.text;
+      if (currentPrayerKey && nextKey !== currentPrayerKey && prayerRadioActive && !prayerPaused) {
+        startPrayer();
+      }
+      currentPrayerKey = nextKey;
+    }
+
+    document.querySelectorAll(".repeat-button").forEach(button => {
+      button.addEventListener("click", () => {
+        prayerRepeatTarget = Number(button.dataset.repeat);
+        document.querySelectorAll(".repeat-button").forEach(item => item.classList.toggle("active", item === button));
+        document.getElementById("prayer-status").textContent = `${prayerRepeatTarget}회 반복을 선택했습니다`;
+        if (prayerRadioActive || prayerPaused) startPrayer();
+      });
+    });
+    document.getElementById("prayer-play").addEventListener("click", startPrayer);
+    document.getElementById("prayer-pause").addEventListener("click", () => {
+      if (!("speechSynthesis" in window) || (!prayerRadioActive && !prayerPaused)) return;
+      if (prayerPaused) {
+        prayerPaused = false;
+        prayerRadioActive = true;
+        if (speechSynthesis.paused) {
+          speechSynthesis.resume();
+        } else {
+          prayerRepeatTimer = setTimeout(() => speakPrayer(prayerSession), 80);
+        }
+        document.getElementById("prayer-pause").textContent = "일시 정지";
+        document.getElementById("prayer-status").textContent = `${prayerRepeatCurrent + 1} / ${prayerRepeatTarget}회 기도를 이어서 듣고 있습니다`;
+        return;
+      }
+      prayerPaused = true;
+      prayerRadioActive = true;
+      speechSynthesis.pause();
+      clearTimeout(prayerRepeatTimer);
+      document.getElementById("prayer-pause").textContent = "계속 듣기";
+      document.getElementById("prayer-status").textContent = `${prayerRepeatCurrent + 1} / ${prayerRepeatTarget}회에서 일시 정지됨`;
+    });
+    document.getElementById("prayer-stop").addEventListener("click", stopPrayer);
+    window.addEventListener("beforeunload", stopPrayer);
+    updatePrayer();
+    setInterval(updatePrayer, 1000);
+
+    const fallbackTitles = [
+      "교황, 생생한 전례는 하느님과의 만남에 대한 개방성을 일깨웁니다",
+      "교황들의 복음 해설: 지금 거룩하신 그리스도의 현존",
+      "교황의 6월 기도 지향, 스포츠의 가치를 위하여",
+      "교황, 교황청 홍보부 신임 장관에 여성 평신도 임명",
+      "교황들의 복음 해설: 성 가롤로 르왕가와 동료 순교자들",
+      "교황, 스카우트 단원들에게 사랑과 환대, 평화의 언어를 전하십시오",
+      "기계가 언어를 얻는 시대, 인간은 뜻을 되찾아야",
+      "알제리 순교자들을 다룬 다큐멘터리, 30년 만의 재조명",
+      "교황, 양극화와 다양성에 대한 경멸은 파멸을 가져옵니다",
+      "교황들의 복음 해설: 주간 첫날 마리아와 베드로"
+    ];
+
+    function cacheUrl(file) {
+      return `${file}?v=${Date.now()}`;
+    }
+
+    async function getText(file) {
+      const response = await fetch(cacheUrl(file), { cache: "no-store" });
+      if (!response.ok) throw new Error(`${file}: ${response.status}`);
+      return response.text();
+    }
+
+    function clean(value) {
+      const text = String(value || "").replace(/<[^>]*>/g, " ").replace(/\s+/g, " ").trim();
+      const corruption = (text.match(/[援먰솴吏]/g) || []).length + (text.match(/\?/g) || []).length;
+      return corruption > Math.max(3, text.length * .08) ? "" : text;
+    }
+
+    function dateOnly(value) {
+      if (!value) return "날짜 없음";
+      const date = new Date(value);
+      if (Number.isNaN(date.getTime())) return String(value).slice(0, 10);
+      return new Intl.DateTimeFormat("ko-KR", { year: "numeric", month: "2-digit", day: "2-digit" })
+        .format(date).replace(/\. /g, ".").replace(/\.$/, "");
+    }
+
+    function articleTitle(item, index) {
+      return clean(item.title_ko) || clean(item.title) || fallbackTitles[index] || "바티칸 최신 소식";
+    }
+
+    function createSearchIcon(query) {
+      const encoded = encodeURIComponent(query);
+      return `<a class="search-icon" href="https://www.google.com/search?q=${encoded}" target="_blank" rel="noopener" title="전체 문장으로 검색">🔍</a>`;
+    }
+
+    function renderNews(items) {
+      const list = document.getElementById("news-list");
+      list.innerHTML = "";
+      items.slice(0, 10).forEach((item, index) => {
+        const li = document.createElement("li");
+        const time = document.createElement("time");
+        const link = document.createElement("a");
+        const searchIcons = document.createElement("span");
+        const arrow = document.createElement("span");
+        time.textContent = dateOnly(item.pub_date);
+        link.textContent = articleTitle(item, index);
+        link.href = item.url || "#";
+        link.target = "_blank";
+        link.rel = "noopener";
+        searchIcons.innerHTML = createSearchIcon(articleTitle(item, index));
+        arrow.className = "arrow";
+        arrow.textContent = "›";
+        li.append(time, link, searchIcons, arrow);
+        list.append(li);
+      });
+    }
+
+    function renderMarkdownLinks(markdown) {
+      const found = [...markdown.matchAll(/- \*\*URL:\*\* \[.*?\]\((https?:\/\/[^)]+)\)/g)];
+      if (!found.length) return;
+      const existing = new Set([...document.querySelectorAll("#link-list a")].map(a => a.href));
+      found.slice(0, 8).forEach(match => {
+        if (existing.has(match[1])) return;
+        existing.add(match[1]);
+      });
+    }
+
+    function markdownSection(markdown, heading, nextHeading) {
+      const start = markdown.indexOf(heading);
+      if (start < 0) return "";
+      const contentStart = start + heading.length;
+      const end = nextHeading ? markdown.indexOf(nextHeading, contentStart) : markdown.length;
+      return markdown.slice(contentStart, end < 0 ? markdown.length : end)
+        .replace(/\*\*/g, "").replace(/^#+\s*/gm, "").replace(/---/g, "").replace(/\s+/g, " ").trim();
+    }
+
+    function renderArticleSummary(markdown, articleNews, searchSummary) {
+      const daily = markdownSection(markdown, "## 📖 오늘의 종합 요약", "## ✝️ 전하고 싶은 이야기");
+      
+      // markdownSection이 이미 **를 제거했으므로 ** 없이 찾기
+      const messageMatch = daily.match(/오늘의 메시지:\s*([\s\S]*?)(?=성경 말씀:|$)/i);
+      const scriptureMatch = daily.match(/성경 말씀:\s*([\s\S]*?)(?=묵상:|$)/i);
+      const meditationMatch = daily.match(/묵상:\s*([\s\S]*?)(?=---|$)/i);
+      
+      const message = messageMatch ? messageMatch[1].trim() : null;
+      const scripture = scriptureMatch ? scriptureMatch[1].trim() : null;
+      const meditation = meditationMatch ? meditationMatch[1].trim() : null;
+      const spiritual = markdownSection(markdown, "## ✝️ 전하고 싶은 이야기", "## 📋 기사 목록");
+      
+      // 오늘의 메시지
+      const messageText = message || "오늘의 메시지를 준비하고 있습니다.";
+      document.getElementById("daily-message").textContent = messageText;
+      
+      // 성경 말씀
+      const scriptureText = scripture || "오늘의 성경 말씀을 준비하고 있습니다.";
+      document.getElementById("daily-scripture").textContent = scriptureText;
+      
+      // 묵상
+      const meditationText = meditation || "오늘의 묵상을 준비하고 있습니다.";
+      document.getElementById("daily-meditation").textContent = meditationText;
+      
+      // 전하고 싶은 이야기
+      const spiritualText = spiritual || "전하고 싶은 이야기를 준비하고 있습니다.";
+      document.getElementById("spiritual-message").textContent = spiritualText;
+      
+      // 검색 핵심 요약 (search_summary.md에서)
+      if (searchSummary) {
+        const searchSummaryMatch = searchSummary.match(/## 1\. 핵심 요약\s*([\s\S]*?)(?=## 2\.|$)/i);
+        const searchSummaryText = searchSummaryMatch ? searchSummaryMatch[1].trim() : null;
+        document.getElementById("search-summary-text").textContent = searchSummaryText || "검색 결과 요약을 불러오는 중입니다.";
+        
+        // 검색 핵심 요약 검색 링크
+        if (searchSummaryText) {
+          document.getElementById("search-summary-link").innerHTML = 
+            `<a class="search-icon" href="https://www.google.com/search?q=${encodeURIComponent(searchSummaryText.slice(0, 100))}" target="_blank" rel="noopener" title="검색 핵심 요약으로 검색">🔍</a>`;
+        }
+      }
+      
+      // 핵심 요약 렌더링 (article_news.json에서)
+      renderSummaryList(articleNews);
+    }
+    
+    // 핵심 요약 리스트 렌더링
+    function renderSummaryList(articleNews) {
+      const list = document.getElementById("summary-list");
+      const bottomSearch = document.getElementById("summary-search-bottom");
+      
+      if (!articleNews) {
+        list.innerHTML = '<li><span class="summary-text">핵심 요약을 불러오는 중입니다.</span></li>';
+        return;
+      }
+      
+      // total_ai_summary가 있으면 1개의 완성된 문장으로 표시
+      if (articleNews.total_ai_summary) {
+        const totalSummary = articleNews.total_ai_summary;
+        list.innerHTML = `<li><span class="summary-text">${totalSummary}</span><a class="search-icon" href="https://www.google.com/search?q=${encodeURIComponent(totalSummary)}" target="_blank" rel="noopener" title="전체 문장으로 검색">🔍</a></li>`;
+        return;
+      }
+      
+      // total_ai_summary가 없으면 기존 방식대로 상위 4개 기사 요약 사용
+      if (!articleNews.items || articleNews.items.length === 0) {
+        list.innerHTML = '<li><span class="summary-text">핵심 요약을 불러오는 중입니다.</span></li>';
+        return;
+      }
+      
+      // 상위 4개 기사의 ai_summary에서 핵심 요약 추출
+      const summaries = articleNews.items.slice(0, 4).map(item => {
+        const summary = item.ai_summary || item.title || "";
+        // 요약이 너무 길면 잘라서 ... 추가
+        return summary.length > 80 ? summary.slice(0, 77) + "..." : summary;
+      });
+      
+      // 리스트 HTML 생성
+      list.innerHTML = summaries.map(text => 
+        `<li><span class="summary-text">${text}</span><a class="search-icon" href="https://www.google.com/search?q=${encodeURIComponent(text)}" target="_blank" rel="noopener" title="전체 문장으로 검색">🔍</a></li>`
+      ).join("");
+      
+      // 하단 검색 링크 (전체 요약으로 검색)
+      const allSummaries = summaries.join(" ");
+      bottomSearch.innerHTML = `<a class="search-icon" href="https://www.google.com/search?q=${encodeURIComponent(allSummaries)}" target="_blank" rel="noopener" title="핵심 요약 전체로 검색">🔍</a>`;
+    }
+
+    function numericViews(video) {
+      const raw = video.view_count ?? video.views ?? 0;
+      if (typeof raw === "number") return raw;
+      const text = String(raw).replace(/,/g, "");
+      const number = Number((text.match(/[\d.]+/) || [0])[0]);
+      if (/억/.test(text)) return number * 100000000;
+      if (/만/.test(text)) return number * 10000;
+      if (/천/.test(text)) return number * 1000;
+      if (/[Kk]/.test(text)) return number * 1000;
+      if (/[Mm]/.test(text)) return number * 1000000;
+      return Number.isFinite(number) ? number : 0;
+    }
+
+    function sortedByViews(videos) {
+      return [...videos].sort((a, b) => numericViews(b) - numericViews(a));
+    }
+
+    function videoDate(video) {
+      const raw = video.article_date || video.search_date || "";
+      const time = Date.parse(raw);
+      return Number.isFinite(time) ? time : 0;
+    }
+
+    function sortedByDate(videos) {
+      return [...videos].sort((a, b) => videoDate(b) - videoDate(a));
+    }
+
+    function dateLabel(video) {
+      const time = videoDate(video);
+      if (!time) return "";
+      return new Intl.DateTimeFormat("ko-KR", {
+        year: "numeric", month: "2-digit", day: "2-digit"
+      }).format(new Date(time));
+    }
+
+    function viewsLabel(video) {
+      if (video.view_count_text) return video.view_count_text;
+      const views = numericViews(video);
+      return views ? `조회수 ${new Intl.NumberFormat("ko-KR").format(views)}회` : "조회수 집계 중";
+    }
+
+    function createVideoCard(video, metaField, extraClass = "") {
+        const card = document.createElement("a");
+        const thumb = document.createElement("div");
+        const image = document.createElement("img");
+        const play = document.createElement("span");
+        const body = document.createElement("div");
+        const title = document.createElement("p");
+        const meta = document.createElement("p");
+        card.className = `video-card ${extraClass}`.trim();
+        card.href = video.url || `https://www.youtube.com/watch?v=${video.id}`;
+        card.target = "_blank";
+        card.rel = "noopener";
+        thumb.className = "video-thumb";
+        image.src = video.thumbnail || `https://img.youtube.com/vi/${video.id}/mqdefault.jpg`;
+        image.alt = "";
+        image.loading = "lazy";
+        play.className = "video-play";
+        play.textContent = "▶";
+        body.className = "video-body";
+        title.className = "video-title";
+        title.textContent = video.title || "YouTube 영상";
+        meta.className = "video-meta";
+        const category = video[metaField] || video.query || "YouTube";
+        const date = dateLabel(video);
+        meta.textContent = `${date ? `${date} · ` : ""}${viewsLabel(video)} · ${category}`;
+        thumb.append(image, play);
+        body.append(title, meta);
+        card.append(thumb, body);
+        return card;
+    }
+
+    function renderVideos(videos, gridId, countId, metaField) {
+      const grid = document.getElementById(gridId);
+      const sorted = sortedByDate(videos);
+      grid.innerHTML = "";
+      sorted.forEach(video => grid.append(createVideoCard(video, metaField)));
+      document.getElementById(countId).textContent = `${sorted.length}개 영상 · 날짜순`;
+    }
+
+    // AI 추천 영상 가져오기
+    async function getAIRecommendedVideos(youtubeVideos, hillsongVideos, count = 5) {
+      try {
+        // 모든 영상 합치기
+        const allVideos = [...(youtubeVideos || []), ...(hillsongVideos || [])];
+        
+        if (allVideos.length === 0) return [];
+        
+        // AI 추천 프롬프트
+        const videoList = allVideos.slice(0, 20).map((v, i) => 
+          `${i + 1}. ${v.title?.slice(0, 80) || "영상"} (조회수: ${numericViews(v).toLocaleString()}, 카테고리: ${v.article_title ? "뉴스" : "찬양"})`
+        ).join("\n");
+        
+        const prompt = `당신은 가톨릭 뉴스와 찬양 영상을 추천하는 AI입니다.
+
+다음 영상 목록에서 가톨릭 신자들에게 가장 유익하고 적합한 영상 ${count}개를 추천해주세요.
+
+추천 기준:
+1. 교황청, 바티칸, 가톨릭 관련 뉴스 우선
+2. 조회수가 높은 인기 영상
+3. 영적 성장에 도움이 되는 찬양
+4. 최신 소식 반영
+
+영상 목록:
+${videoList}
+
+추천할 영상 번호 ${count}개를 쉼표로 구분해서 답변하세요. (예: 3, 7, 12, 15, 18)
+번호:`;
+
+        console.log("[AI 추천 영상] 요청 전송 중...");
+        
+        const response = await fetch("/api/ollama-chat", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            model: ollamaModel,
+            messages: [{ role: "user", content: prompt }],
+            stream: false
+          })
+        });
+        
+        if (!response.ok) {
+          console.warn("[AI 추천 영상] 응답 오류:", response.status);
+          return null;
+        }
+        
+        const data = await response.json();
+        const result = data.content || data.response || "";
+        console.log("[AI 추천 영상] 응답:", result);
+        
+        // 번호들 추출
+        const numbers = result.match(/\d+/g);
+        if (numbers && numbers.length > 0) {
+          const indices = numbers.slice(0, count).map(n => parseInt(n, 10) - 1);
+          const recommended = indices
+            .filter(i => i >= 0 && i < allVideos.length)
+            .map(i => allVideos[i]);
+          console.log("[AI 추천 영상] 선택된 영상:", recommended.length, "개");
+          return recommended;
+        }
+        
+        return null;
+      } catch (error) {
+        console.warn("[AI 추천 영상] 연결 실패:", error.message);
+        return null;
+      }
+    }
+
+    // AI 추천 영상 렌더링
+    async function renderPopularVideos(youtubeVideos, hillsongVideos) {
+      const grid = document.getElementById("popular-grid");
+      const countEl = document.querySelector(".popular-head p");
+      
+      // AI 추천 시도
+      const aiRecommended = await getAIRecommendedVideos(youtubeVideos, hillsongVideos, 5);
+      
+      let videos;
+      let label;
+      
+      if (aiRecommended && aiRecommended.length >= 3) {
+        videos = aiRecommended;
+        label = "AI 추천 · 가톨릭 신자를 위한 영상";
+        if (countEl) countEl.textContent = label;
+      } else {
+        // AI 실패 시 기존 방식 (조회수 기준)
+        const news = sortedByViews(youtubeVideos || []).slice(0, 2);
+        const songs = sortedByViews(hillsongVideos || []).slice(0, 3);
+        videos = [...news, ...songs];
+        label = "조회수 기준 · 기사 영상 2개 · 찬양 3개";
+        if (countEl) countEl.textContent = label;
+      }
+      
+      grid.innerHTML = "";
+      videos.forEach((video, index) => {
+        const card = createVideoCard(video, video.article_title ? "article_title" : "keyword", "popular-card");
+        // 첫 번째 영상에 "AI 추천 1위" 라벨
+        if (index === 0 && aiRecommended && aiRecommended.length >= 3) {
+          card.classList.remove("news", "song");
+          card.classList.add("ai-top");
+        }
+        grid.append(card);
+      });
+      
+      if (!grid.children.length) grid.innerHTML = '<p class="status-note">인기 영상 데이터가 준비되지 않았습니다.</p>';
+    }
+
+    async function refresh() {
+      const status = document.getElementById("load-status");
+      try {
+        const [
+          translatedText, rawText, resultsMd, summaryMd, newsMd, articleMd,
+          articleNewsText, youtubeText, youtubeMd, hillsongText, hillsongMd
+        ] = await Promise.all([
+          getText(DATA_FILES.translated), getText(DATA_FILES.raw), getText(DATA_FILES.searchResults),
+          getText(DATA_FILES.searchSummary), getText(DATA_FILES.newsSummary), getText(DATA_FILES.articleSummary),
+          getText(DATA_FILES.articleNews), getText(DATA_FILES.youtube), getText(DATA_FILES.youtubeSummary),
+          getText(DATA_FILES.hillsong), getText(DATA_FILES.hillsongSummary)
+        ]);
+        const translated = JSON.parse(translatedText);
+        const raw = JSON.parse(rawText);
+        const articleNews = JSON.parse(articleNewsText);
+        const youtube = JSON.parse(youtubeText);
+        const hillsong = JSON.parse(hillsongText);
+        const items = articleNews.items?.length ? articleNews.items : translated.items?.length ? translated.items : raw.items || [];
+        renderNews(items);
+        renderPopularVideos(youtube.videos || [], hillsong.videos || []);
+        renderVideos(youtube.videos || [], "youtube-grid", "youtube-count", "article_title");
+        renderVideos(hillsong.videos || [], "hillsong-grid", "hillsong-count", "keyword");
+        console.log("[AI 추천] Hillsong 영상 로드:", hillsong.videos?.length || 0, "개");
+        populateMusicSelect(hillsong.videos || []);
+        renderMarkdownLinks(resultsMd + summaryMd + newsMd + articleMd + youtubeMd + hillsongMd);
+        renderArticleSummary(articleMd, articleNews, summaryMd);
+        const resultCount = Number((resultsMd.match(/\*\*총 결과:\*\*\s*(\d+)/) || summaryMd.match(/\*\*총 결과:\*\*\s*(\d+)/) || [])[1]);
+        document.getElementById("search-count").textContent = Number.isFinite(resultCount) ? resultCount : "10";
+        document.getElementById("rss-count").textContent = translated.total_items || items.length || raw.total_items || "-";
+        document.getElementById("updated-at").textContent = dateOnly(translated.translated_at || raw.collected_at);
+        status.textContent = `기사·검색·RSS·영상 자료 11개 파일을 자동 반영했습니다. 다음 확인은 1분 이내입니다.`;
+      } catch (error) {
+        status.textContent = "현재 기본 요약을 표시하고 있습니다. 웹 서버에서 열면 로컬 데이터가 자동 반영됩니다.";
+        document.getElementById("search-count").textContent = "10";
+        document.getElementById("rss-count").textContent = "10";
+        document.getElementById("updated-at").textContent = new Intl.DateTimeFormat("ko-KR").format(new Date()).replace(/\. /g, ".").replace(/\.$/, "");
+        renderNews(fallbackTitles.map((title, i) => ({ title, pub_date: new Date(Date.now() - i * 86400000), url: "https://www.vaticannews.va/ko.html" })));
+      }
+    }
+
+    refresh();
+    setInterval(refresh, 60000);
+    document.addEventListener("visibilitychange", () => { if (!document.hidden) refresh(); });
+  </script>
+</body>
+</html>

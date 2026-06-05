@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-06-01T15:15:41.570+09:00",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
   "category": "Mainboard",
   "id": "mainboard-rog-strix-z790-e-gaming-wifi",
   "name": "ROG STRIX Z790-E GAMING WIFI",
@@ -21,7 +21,7 @@
   "performance": 90,
   "valueIndex": 15,
   "aiUseScore": 59,
-  "powerWatts": 0,
+  "powerWatts": null,
   "tags": [
     "gaming",
     "high-end"
@@ -81,9 +81,5 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=ASUS%20ROG%20STRIX%20Z790-E%20GAMING%20WIFI%20%EA%B0%80%EA%B2%A9",
   "notes": "Standard Z790-E model",
-  "textRepair": null,
-  "sourceType": "collector",
-  "sourceQuery": "",
-  "collectedPricesKrw": [],
-  "targetMatched": null
+  "textRepair": null
 }

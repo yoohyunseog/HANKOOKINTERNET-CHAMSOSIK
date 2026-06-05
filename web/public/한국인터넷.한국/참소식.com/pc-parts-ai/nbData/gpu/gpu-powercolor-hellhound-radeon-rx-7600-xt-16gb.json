@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-06-01T15:15:40.536+09:00",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
   "category": "GPU",
   "id": "gpu-powercolor-hellhound-radeon-rx-7600-xt-16gb",
   "name": "PowerColor Hellhound Radeon RX 7600 XT 16GB",
@@ -80,9 +80,5 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=RX%207600%20XT%20%EC%B5%9C%EC%A0%80%EA%B0%80",
   "notes": "Identified as RX 7600 XT based on query and 16GB VRAM specification in the result text.",
-  "textRepair": null,
-  "sourceType": "collector",
-  "sourceQuery": "",
-  "collectedPricesKrw": [],
-  "targetMatched": null
+  "textRepair": null
 }

@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-06-01T15:15:41.528+09:00",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
   "category": "Mainboard",
   "id": "mainboard-msi-mag-b650-tomahawk-wifi",
   "name": "MSI MAG B650 TOMAHAWK WIFI",
@@ -21,7 +21,7 @@
   "performance": 70,
   "valueIndex": 28.1,
   "aiUseScore": 46,
-  "powerWatts": 0,
+  "powerWatts": null,
   "tags": [
     "ATX",
     "WiFi",
@@ -82,9 +82,5 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=MSI%20MAG%20B650%20TOMAHAWK%20WIFI%20%EC%B5%9C%EC%A0%80%EA%B0%80",
   "notes": "14+2+1 phase power delivery, supports up to 256GB RAM (as of Dec 2024).",
-  "textRepair": null,
-  "sourceType": "collector",
-  "sourceQuery": "",
-  "collectedPricesKrw": [],
-  "targetMatched": null
+  "textRepair": null
 }

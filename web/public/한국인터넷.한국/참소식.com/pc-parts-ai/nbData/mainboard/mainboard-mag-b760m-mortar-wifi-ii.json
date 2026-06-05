@@ -1,0 +1,85 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
+  "category": "Mainboard",
+  "id": "mainboard-mag-b760m-mortar-wifi-ii",
+  "name": "MAG B760M MORTAR WIFI II",
+  "maker": "MSI",
+  "platform": "LGA1700",
+  "estimatedPriceKrw": 224140,
+  "priceBand": "15~30만원",
+  "speedLabel": "B760",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "Mainboard",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 60,
+  "valueIndex": 26.8,
+  "aiUseScore": 39,
+  "powerWatts": null,
+  "tags": [
+    "mATX",
+    "wifi"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "Mainboard",
+    "partId": "mainboard-mag-b760m-mortar-wifi-ii",
+    "partName": "MAG B760M MORTAR WIFI II",
+    "speed": {
+      "score": 100,
+      "weight": 0.32,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "Mainboard",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 600,
+      "value": 357,
+      "aiFit": 390,
+      "priceEfficiency": 450,
+      "powerEfficiency": 600
+    },
+    "nbVector": [
+      100,
+      600,
+      357,
+      390,
+      450,
+      600
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 436.975,
+    "nbMin": 398.133,
+    "weightedScore": 313,
+    "nbBand": "100~499",
+    "summary": "Mainboard MAG B760M MORTAR WIFI II 부품을 속도 중심 N/B 데이터베이스 점수 313점으로 저장했습니다."
+  },
+  "nbWeightedScore": 313,
+  "nbMax": 436.975,
+  "nbMin": 398.133,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=MSI%20MAG%20B760M%20MORTAR%20WIFI%20%EA%B0%80%EA%B2%A9%20%EB%8B%A4%EB%82%98%EC%99%80",
+  "notes": "Observed as 'MAG B760M MORTAR WIFI II' in search results.",
+  "textRepair": null
+}

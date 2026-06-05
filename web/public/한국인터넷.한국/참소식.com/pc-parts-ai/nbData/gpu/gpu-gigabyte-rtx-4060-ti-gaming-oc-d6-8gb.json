@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-06-01T15:15:39.557+09:00",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
   "category": "GPU",
   "id": "gpu-gigabyte-rtx-4060-ti-gaming-oc-d6-8gb",
   "name": "GIGABYTE 지포스 RTX 4060 Ti Gaming OC D6 8GB",
@@ -81,14 +81,10 @@
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=GIGABYTE%20%EC%A7%80%ED%8F%AC%EC%8A%A4%20RTX%204060%20Ti%20Gaming%20OC%20%EC%B5%9C%EC%A0%80%EA%B0%80",
   "notes": "GIGABYTE 지포스 RTX 4060 Ti Gaming OC D6 8GB은 게임, 작업, AI 활용을 함께 검토할 그래픽카드 후보입니다.",
   "textRepair": {
-    "checkedAt": "2026-06-01T15:15:39.557+09:00",
+    "checkedAt": "2026-06-05T23:19:51.246+09:00",
     "method": "ai-text-sanity-rules",
     "repairedFields": [
       "notes"
     ]
-  },
-  "sourceType": "collector",
-  "sourceQuery": "",
-  "collectedPricesKrw": [],
-  "targetMatched": null
+  }
 }

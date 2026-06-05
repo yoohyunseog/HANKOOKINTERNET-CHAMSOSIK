@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-06-01T15:15:36.870+09:00",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
   "category": "CPU",
   "id": "cpu-intel-core-ultra-3-205",
   "name": "Intel Core Ultra 3 205",
@@ -81,9 +81,5 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Intel%20Core%20Ultra%203%20200%20series%20%EC%B5%9C%EC%A0%80%EA%B0%80",
   "notes": "Identified from Lenovo IdeaCentre Tower 08IAS10 specifications (Core Ultra 3 205 / Arrow Lake).",
-  "textRepair": null,
-  "sourceType": "collector",
-  "sourceQuery": "",
-  "collectedPricesKrw": [],
-  "targetMatched": null
+  "textRepair": null
 }

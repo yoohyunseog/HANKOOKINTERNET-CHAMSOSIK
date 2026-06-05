@@ -1,0 +1,85 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
+  "category": "RAM",
+  "id": "ram-ddr5-5600-32gb",
+  "name": "DDR5-5600 32GB",
+  "maker": "삼성전자",
+  "platform": "Desktop",
+  "estimatedPriceKrw": 110000,
+  "priceBand": "15만원 미만",
+  "speedLabel": "5600MHz",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "RAM",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 60,
+  "valueIndex": 54.5,
+  "aiUseScore": 39,
+  "powerWatts": null,
+  "tags": [
+    "standard",
+    "desktop"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "RAM",
+    "partId": "ram-ddr5-5600-32gb",
+    "partName": "DDR5-5600 32GB",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "RAM",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 600,
+      "value": 727,
+      "aiFit": 390,
+      "priceEfficiency": 910,
+      "powerEfficiency": 600
+    },
+    "nbVector": [
+      100,
+      600,
+      727,
+      390,
+      910,
+      600
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 363.979,
+    "nbMin": 369.667,
+    "weightedScore": 412,
+    "nbBand": "100~499",
+    "summary": "RAM DDR5-5600 32GB 부품을 속도 중심 N/B 데이터베이스 점수 412점으로 저장했습니다."
+  },
+  "nbWeightedScore": 412,
+  "nbMax": 363.979,
+  "nbMin": 369.667,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Samsung%20DDR5-5600%2032GB%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "Standard non-ECC desktop memory.",
+  "textRepair": null
+}

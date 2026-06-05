@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-06-01T15:15:37.499+09:00",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
   "category": "GPU",
   "id": "gpu-asus-dual-geforce-rtx-4070-super-oc-edition",
   "name": "ASUS Dual GeForce RTX 4070 Super OC Edition",
@@ -81,9 +81,5 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=RTX%204070%20SUPER%20OC%20Edition%20%EC%B5%9C%EC%A0%80%EA%B0%80",
   "notes": "12GB GDDR6X",
-  "textRepair": null,
-  "sourceType": "collector",
-  "sourceQuery": "",
-  "collectedPricesKrw": [],
-  "targetMatched": null
+  "textRepair": null
 }

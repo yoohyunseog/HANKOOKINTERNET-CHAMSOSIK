@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-06-01T15:15:38.705+09:00",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
   "category": "GPU",
   "id": "gpu-geforce-rtx-4070-ti-super-gaming-oc",
   "name": "GeForce RTX 4070 Ti Super Gaming OC",
@@ -81,9 +81,5 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Gigabyte%20GeForce%20RTX%204070%20Ti%20Super%20Gaming%20OC%20%EC%B5%9C%EC%A0%80%EA%B0%80",
   "notes": "Windforce 3X cooling system",
-  "textRepair": null,
-  "sourceType": "collector",
-  "sourceQuery": "",
-  "collectedPricesKrw": [],
-  "targetMatched": null
+  "textRepair": null
 }

@@ -1,0 +1,86 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
+  "category": "Mainboard",
+  "id": "mainboard-b650e-aorus-elite-x-ax-ice",
+  "name": "B650E AORUS ELITE X AX ICE",
+  "maker": "GIGABYTE",
+  "platform": "AMD AM5",
+  "estimatedPriceKrw": 269000,
+  "priceBand": "15~30만원",
+  "speedLabel": "B650E",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "Mainboard",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 85,
+  "valueIndex": 31.6,
+  "aiUseScore": 55,
+  "powerWatts": null,
+  "tags": [
+    "ATX",
+    "DDR5",
+    "WiFi"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "Mainboard",
+    "partId": "mainboard-b650e-aorus-elite-x-ax-ice",
+    "partName": "B650E AORUS ELITE X AX ICE",
+    "speed": {
+      "score": 100,
+      "weight": 0.32,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "Mainboard",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 850,
+      "value": 421,
+      "aiFit": 550,
+      "priceEfficiency": 370,
+      "powerEfficiency": 850
+    },
+    "nbVector": [
+      100,
+      850,
+      421,
+      550,
+      370,
+      850
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 365.834,
+    "nbMin": 375.688,
+    "weightedScore": 397,
+    "nbBand": "100~499",
+    "summary": "Mainboard B650E AORUS ELITE X AX ICE 부품을 속도 중심 N/B 데이터베이스 점수 397점으로 저장했습니다."
+  },
+  "nbWeightedScore": 397,
+  "nbMax": 365.834,
+  "nbMin": 375.688,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=B650E%20%EB%A9%94%EC%9D%B8%EB%B3%B4%EB%93%9C%20%EC%B6%94%EC%B2%9C%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "White themed motherboard",
+  "textRepair": null
+}

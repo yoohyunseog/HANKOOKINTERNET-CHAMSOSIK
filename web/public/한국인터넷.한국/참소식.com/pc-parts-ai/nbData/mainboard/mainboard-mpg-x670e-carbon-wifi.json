@@ -1,0 +1,87 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
+  "category": "Mainboard",
+  "id": "mainboard-mpg-x670e-carbon-wifi",
+  "name": "MPG X670E Carbon WiFi",
+  "maker": "MSI",
+  "platform": "AMD AM5",
+  "estimatedPriceKrw": 1477300,
+  "priceBand": "60만원 이상",
+  "speedLabel": "X670E",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "Mainboard",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 95,
+  "valueIndex": 6.4,
+  "aiUseScore": 62,
+  "powerWatts": null,
+  "tags": [
+    "ATX",
+    "DDR5",
+    "PCIe 5.0",
+    "WiFi"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "Mainboard",
+    "partId": "mainboard-mpg-x670e-carbon-wifi",
+    "partName": "MPG X670E Carbon WiFi",
+    "speed": {
+      "score": 100,
+      "weight": 0.32,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "Mainboard",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 950,
+      "value": 100,
+      "aiFit": 620,
+      "priceEfficiency": 70,
+      "powerEfficiency": 950
+    },
+    "nbVector": [
+      100,
+      950,
+      100,
+      620,
+      70,
+      950
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 242.779,
+    "nbMin": 346.547,
+    "weightedScore": 361,
+    "nbBand": "100~499",
+    "summary": "Mainboard MPG X670E Carbon WiFi 부품을 속도 중심 N/B 데이터베이스 점수 361점으로 저장했습니다."
+  },
+  "nbWeightedScore": 361,
+  "nbMax": 242.779,
+  "nbMin": 346.547,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=MSI%20MPG%20X670E%20Carbon%20WiFi%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "18+2+1 phase power delivery, 90A per phase.",
+  "textRepair": null
+}

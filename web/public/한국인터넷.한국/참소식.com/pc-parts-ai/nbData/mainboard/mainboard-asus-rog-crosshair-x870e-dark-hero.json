@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-06-01T15:15:41.448+09:00",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
   "category": "Mainboard",
   "id": "mainboard-asus-rog-crosshair-x870e-dark-hero",
   "name": "ASUS ROG CROSSHAIR X870E DARK HERO",
@@ -21,7 +21,7 @@
   "performance": 100,
   "valueIndex": 9.2,
   "aiUseScore": 65,
-  "powerWatts": 0,
+  "powerWatts": null,
   "tags": [
     "high-end",
     "overclocking",
@@ -82,9 +82,5 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=ASUS%20ROG%20Crosshair%20X870E%20Hero%20%EA%B0%80%EA%B2%A9",
   "notes": "High-end AM5 motherboard with 20+2+2 phase power delivery and USB4 support.",
-  "textRepair": null,
-  "sourceType": "collector",
-  "sourceQuery": "",
-  "collectedPricesKrw": [],
-  "targetMatched": null
+  "textRepair": null
 }

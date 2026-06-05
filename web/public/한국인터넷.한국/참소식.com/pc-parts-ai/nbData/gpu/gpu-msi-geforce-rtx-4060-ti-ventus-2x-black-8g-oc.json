@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-06-01T15:15:40.119+09:00",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
   "category": "GPU",
   "id": "gpu-msi-geforce-rtx-4060-ti-ventus-2x-black-8g-oc",
   "name": "MSI GeForce RTX 4060 Ti VENTUS 2X BLACK 8G OC",
@@ -80,9 +80,5 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=RTX%204060%20Ti%208GB%20%EC%B5%9C%EC%A0%80%EA%B0%80",
   "notes": "Different VRAM size (8GB) compared to the saved 16GB model.",
-  "textRepair": null,
-  "sourceType": "collector",
-  "sourceQuery": "",
-  "collectedPricesKrw": [],
-  "targetMatched": null
+  "textRepair": null
 }

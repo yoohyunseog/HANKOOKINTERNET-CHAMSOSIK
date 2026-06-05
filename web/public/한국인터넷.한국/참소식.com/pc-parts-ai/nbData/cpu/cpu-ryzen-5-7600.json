@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-06-01T15:15:36.621+09:00",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
   "category": "CPU",
   "id": "cpu-ryzen-5-7600",
   "name": "AMD Ryzen 5 7600",
@@ -83,15 +83,11 @@
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=AMD%20Ryzen%205%207600%20price",
   "notes": "AMD Ryzen 5 7600은 가격과 성능, 플랫폼 호환성을 함께 확인할 CPU 후보입니다.",
   "textRepair": {
-    "checkedAt": "2026-06-01T15:15:36.621+09:00",
+    "checkedAt": "2026-06-05T23:19:46.235+09:00",
     "method": "ai-text-sanity-rules",
     "repairedFields": [
       "speedLabel",
       "notes"
     ]
-  },
-  "sourceType": "collector",
-  "sourceQuery": "",
-  "collectedPricesKrw": [],
-  "targetMatched": null
+  }
 }

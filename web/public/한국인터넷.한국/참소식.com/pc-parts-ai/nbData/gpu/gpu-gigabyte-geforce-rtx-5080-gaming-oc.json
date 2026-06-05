@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-06-01T15:15:39.831+09:00",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
   "category": "GPU",
   "id": "gpu-gigabyte-geforce-rtx-5080-gaming-oc",
   "name": "Gigabyte GeForce RTX 5080 Gaming OC",
@@ -81,9 +81,5 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Gigabyte%20GeForce%20RTX%205080%20Gaming%20OC%20%EA%B0%80%EA%B2%A9",
   "notes": "GDDR7, 3-fan, DP2.1 support",
-  "textRepair": null,
-  "sourceType": "collector",
-  "sourceQuery": "",
-  "collectedPricesKrw": [],
-  "targetMatched": null
+  "textRepair": null
 }

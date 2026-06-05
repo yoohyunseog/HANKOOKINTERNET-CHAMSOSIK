@@ -1,0 +1,85 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
+  "category": "GPU",
+  "id": "gpu-asus-dual-geforce-rtx-4070-super-o12g-evo-oc-d6x-12gb-white",
+  "name": "ASUS Dual GeForce RTX 4070 SUPER O12G EVO OC D6X 12GB White",
+  "maker": "ASUS",
+  "platform": "PCIe 4.0",
+  "estimatedPriceKrw": 1070000,
+  "priceBand": "60만원 이상",
+  "speedLabel": "OC",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "GPU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 85,
+  "valueIndex": 7.9,
+  "aiUseScore": 55,
+  "powerWatts": 220,
+  "tags": [
+    "gaming",
+    "white"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "GPU",
+    "partId": "gpu-asus-dual-geforce-rtx-4070-super-o12g-evo-oc-d6x-12gb-white",
+    "partName": "ASUS Dual GeForce RTX 4070 SUPER O12G EVO OC D6X 12GB White",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "GPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 850,
+      "value": 105,
+      "aiFit": 550,
+      "priceEfficiency": 90,
+      "powerEfficiency": 129
+    },
+    "nbVector": [
+      100,
+      850,
+      105,
+      550,
+      90,
+      129
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 107.294,
+    "nbMin": 323.313,
+    "weightedScore": 297,
+    "nbBand": "100~499",
+    "summary": "GPU ASUS Dual GeForce RTX 4070 SUPER O12G EVO OC D6X 12GB White 부품을 속도 중심 N/B 데이터베이스 점수 297점으로 저장했습니다."
+  },
+  "nbWeightedScore": 297,
+  "nbMax": 107.294,
+  "nbMin": 323.313,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=ASUS%20Dual%20GeForce%20RTX%204070%20Super%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "White edition, EVO OC model",
+  "textRepair": null
+}

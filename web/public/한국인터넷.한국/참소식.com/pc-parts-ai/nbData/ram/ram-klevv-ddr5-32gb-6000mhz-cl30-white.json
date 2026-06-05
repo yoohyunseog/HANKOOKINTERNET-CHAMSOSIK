@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-06-01T15:15:41.790+09:00",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
   "category": "RAM",
   "id": "ram-klevv-ddr5-32gb-6000mhz-cl30-white",
   "name": "KLEVV DDR5 32GB 6000MHz CL30 White",
@@ -21,7 +21,7 @@
   "performance": 75,
   "valueIndex": 45.5,
   "aiUseScore": 49,
-  "powerWatts": 0,
+  "powerWatts": null,
   "tags": [
     "gaming",
     "white"
@@ -81,9 +81,5 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=DDR5%2032GB%206000MHz%20CL30%20%EC%B5%9C%EC%A0%80%EA%B0%80",
   "notes": "16GB x 2 kit",
-  "textRepair": null,
-  "sourceType": "collector",
-  "sourceQuery": "",
-  "collectedPricesKrw": [],
-  "targetMatched": null
+  "textRepair": null
 }

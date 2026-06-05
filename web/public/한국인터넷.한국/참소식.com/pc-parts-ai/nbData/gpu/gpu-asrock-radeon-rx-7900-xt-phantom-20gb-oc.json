@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-06-01T15:15:37.407+09:00",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
   "category": "GPU",
   "id": "gpu-asrock-radeon-rx-7900-xt-phantom-20gb-oc",
   "name": "ASRock Radeon RX 7900 XT Phantom 20GB OC",
@@ -81,9 +81,5 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=AMD%20Radeon%20RX%207900%20XT%20%EC%B5%9C%EC%A0%80%EA%B0%80",
   "notes": "Observed price from search result (539,500 KRW), though this appears unusually low for this model and may be a listing error or specific regional price.",
-  "textRepair": null,
-  "sourceType": "collector",
-  "sourceQuery": "",
-  "collectedPricesKrw": [],
-  "targetMatched": null
+  "textRepair": null
 }

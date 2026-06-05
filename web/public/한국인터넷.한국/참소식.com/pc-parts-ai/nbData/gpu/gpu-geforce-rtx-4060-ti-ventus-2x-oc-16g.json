@@ -1,0 +1,85 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
+  "category": "GPU",
+  "id": "gpu-geforce-rtx-4060-ti-ventus-2x-oc-16g",
+  "name": "GeForce RTX 4060 Ti Ventus 2X 블랙 OC 16G",
+  "maker": "MSI",
+  "platform": "PCIe 4.0",
+  "estimatedPriceKrw": 944140,
+  "priceBand": "60만원 이상",
+  "speedLabel": "OC",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "GPU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 65,
+  "valueIndex": 6.9,
+  "aiUseScore": 65,
+  "powerWatts": 165,
+  "tags": [
+    "gaming",
+    "ai"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "GPU",
+    "partId": "gpu-geforce-rtx-4060-ti-ventus-2x-oc-16g",
+    "partName": "GeForce RTX 4060 Ti Ventus 2X 블랙 OC 16G",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "GPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 650,
+      "value": 100,
+      "aiFit": 650,
+      "priceEfficiency": 110,
+      "powerEfficiency": 131
+    },
+    "nbVector": [
+      100,
+      650,
+      100,
+      650,
+      110,
+      131
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 155.946,
+    "nbMin": 381.532,
+    "weightedScore": 268,
+    "nbBand": "100~499",
+    "summary": "GPU GeForce RTX 4060 Ti Ventus 2X 블랙 OC 16G 부품을 속도 중심 N/B 데이터베이스 점수 268점으로 저장했습니다."
+  },
+  "nbWeightedScore": 268,
+  "nbMax": 155.946,
+  "nbMin": 381.532,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=RTX%204060%20Ti%2016GB%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "16GB VRAM model",
+  "textRepair": null
+}

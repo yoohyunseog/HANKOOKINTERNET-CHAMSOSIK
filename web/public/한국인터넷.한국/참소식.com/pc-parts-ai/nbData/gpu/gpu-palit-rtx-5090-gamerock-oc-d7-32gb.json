@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-06-01T15:15:40.467+09:00",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
   "category": "GPU",
   "id": "gpu-palit-rtx-5090-gamerock-oc-d7-32gb",
   "name": "PALIT 지포스 RTX 5090 GAMEROCK OC D7 32GB",
@@ -83,14 +83,10 @@
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=GeForce%20RTX%205090%20%EC%B5%9C%EC%A0%80%EA%B0%80",
   "notes": "PALIT 지포스 RTX 5090 GAMEROCK OC D7 32GB은 게임, 작업, AI 활용을 함께 검토할 그래픽카드 후보입니다.",
   "textRepair": {
-    "checkedAt": "2026-06-01T15:15:40.467+09:00",
+    "checkedAt": "2026-06-05T23:19:47.789+09:00",
     "method": "ai-text-sanity-rules",
     "repairedFields": [
       "notes"
     ]
-  },
-  "sourceType": "collector",
-  "sourceQuery": "",
-  "collectedPricesKrw": [],
-  "targetMatched": null
+  }
 }

@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-06-01T15:15:40.948+09:00",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
   "category": "GPU",
   "id": "gpu-tuf-gaming-geforce-rtx-4070-ti-super-oc-edition-16gb-gddr6x",
   "name": "TUF Gaming GeForce RTX 4070 Ti SUPER OC Edition 16GB GDDR6X",
@@ -81,9 +81,5 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=ASUS%20TUF%20Gaming%20GeForce%20RTX%204070%20Ti%20SUPER%20EX%20D6X%2016GB%20%EC%B5%9C%EC%A0%80%EA%B0%80",
   "notes": "Based on the lowest domestic-style price observed in the search results for the OC edition.",
-  "textRepair": null,
-  "sourceType": "collector",
-  "sourceQuery": "",
-  "collectedPricesKrw": [],
-  "targetMatched": null
+  "textRepair": null
 }

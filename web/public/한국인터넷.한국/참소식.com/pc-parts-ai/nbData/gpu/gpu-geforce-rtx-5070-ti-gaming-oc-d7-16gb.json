@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-06-01T15:15:39.408+09:00",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
   "category": "GPU",
   "id": "gpu-geforce-rtx-5070-ti-gaming-oc-d7-16gb",
   "name": "GeForce RTX 5070 Ti GAMING OC D7 16GB",
@@ -21,7 +21,7 @@
   "performance": 92,
   "valueIndex": 6.1,
   "aiUseScore": 92,
-  "powerWatts": 0,
+  "powerWatts": null,
   "tags": [
     "gaming",
     "ai"
@@ -81,9 +81,5 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=GIGABYTE%20GeForce%20RTX%205070%20Ti%20GAMING%20OC%20D7%2016GB%20%EC%B5%9C%EC%A0%80%EA%B0%80",
   "notes": "Boost Clock 2588MHz, 8960 Stream Processors, requires 750W+ PSU",
-  "textRepair": null,
-  "sourceType": "collector",
-  "sourceQuery": "",
-  "collectedPricesKrw": [],
-  "targetMatched": null
+  "textRepair": null
 }

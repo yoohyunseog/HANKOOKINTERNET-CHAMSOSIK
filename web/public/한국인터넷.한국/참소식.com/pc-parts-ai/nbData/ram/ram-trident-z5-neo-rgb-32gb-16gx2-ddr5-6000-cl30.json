@@ -1,0 +1,86 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
+  "category": "RAM",
+  "id": "ram-trident-z5-neo-rgb-32gb-16gx2-ddr5-6000-cl30",
+  "name": "Trident Z5 Neo RGB 32GB (16Gx2) DDR5-6000 CL30",
+  "maker": "G.SKILL",
+  "platform": "DDR5",
+  "estimatedPriceKrw": 213360,
+  "priceBand": "15~30만원",
+  "speedLabel": "6000MHz",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "RAM",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 85,
+  "valueIndex": 39.8,
+  "aiUseScore": 55,
+  "powerWatts": null,
+  "tags": [
+    "gaming",
+    "rgb",
+    "expo"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "RAM",
+    "partId": "ram-trident-z5-neo-rgb-32gb-16gx2-ddr5-6000-cl30",
+    "partName": "Trident Z5 Neo RGB 32GB (16Gx2) DDR5-6000 CL30",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "RAM",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 850,
+      "value": 531,
+      "aiFit": 550,
+      "priceEfficiency": 470,
+      "powerEfficiency": 850
+    },
+    "nbVector": [
+      100,
+      850,
+      531,
+      550,
+      470,
+      850
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 423.146,
+    "nbMin": 367.953,
+    "weightedScore": 430,
+    "nbBand": "100~499",
+    "summary": "RAM Trident Z5 Neo RGB 32GB (16Gx2) DDR5-6000 CL30 부품을 속도 중심 N/B 데이터베이스 점수 430점으로 저장했습니다."
+  },
+  "nbWeightedScore": 430,
+  "nbMax": 423.146,
+  "nbMin": 367.953,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=G.SKILL%20DDR5-6000%20CL30%20Trident%20Z5%20Neo%20RGB",
+  "notes": "CL30-38-38-96, 1.35V, Black",
+  "textRepair": null
+}

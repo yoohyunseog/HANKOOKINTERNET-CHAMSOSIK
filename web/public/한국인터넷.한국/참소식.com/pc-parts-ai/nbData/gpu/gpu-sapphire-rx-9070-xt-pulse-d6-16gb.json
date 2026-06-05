@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-06-01T15:15:40.833+09:00",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
   "category": "GPU",
   "id": "gpu-sapphire-rx-9070-xt-pulse-d6-16gb",
   "name": "SAPPHIRE 라데온 RX 9070 XT PULSE D6 16GB",
@@ -80,9 +80,5 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Radeon%20RX%209070%20XT%20SAPPHIRE%20PULSE%20%EC%B5%9C%EC%A0%80%EA%B0%80",
   "notes": "3-fan, DP2.1, HDMI2.1",
-  "textRepair": null,
-  "sourceType": "collector",
-  "sourceQuery": "",
-  "collectedPricesKrw": [],
-  "targetMatched": null
+  "textRepair": null
 }

@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-06-01T15:15:37.506+09:00",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
   "category": "GPU",
   "id": "gpu-asus-dual-radeon-rx-7600-evo-oc-edition-8gb-gddr6",
   "name": "ASUS Dual Radeon RX 7600 EVO OC Edition 8GB GDDR6",
@@ -80,9 +80,5 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Radeon%20RX%207600%20%EC%B5%9C%EC%A0%80%EA%B0%80",
   "notes": "Model: DUAL-RX7600-O8G-EVO",
-  "textRepair": null,
-  "sourceType": "collector",
-  "sourceQuery": "",
-  "collectedPricesKrw": [],
-  "targetMatched": null
+  "textRepair": null
 }

@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-06-01T15:15:39.731+09:00",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
   "category": "GPU",
   "id": "gpu-gigabyte-aorus-geforce-rtx-5090-master-ice-d7-32gb",
   "name": "GIGABYTE AORUS GeForce RTX 5090 MASTER ICE D7 32GB",
@@ -21,7 +21,7 @@
   "performance": 100,
   "valueIndex": 1.4,
   "aiUseScore": 100,
-  "powerWatts": 0,
+  "powerWatts": null,
   "tags": [
     "gaming",
     "ai",
@@ -82,9 +82,5 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=GIGABYTE%20AORUS%20GeForce%20RTX%205090%20MASTER%20ICE%20D7%2032GB%20%EC%B5%9C%EC%A0%80%EA%B0%80",
   "notes": "White model (ICE), GDDR7, 32GB VRAM",
-  "textRepair": null,
-  "sourceType": "collector",
-  "sourceQuery": "",
-  "collectedPricesKrw": [],
-  "targetMatched": null
+  "textRepair": null
 }

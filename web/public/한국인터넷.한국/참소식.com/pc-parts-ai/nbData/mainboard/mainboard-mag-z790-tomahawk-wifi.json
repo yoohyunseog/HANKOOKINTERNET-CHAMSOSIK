@@ -1,0 +1,86 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
+  "category": "Mainboard",
+  "id": "mainboard-mag-z790-tomahawk-wifi",
+  "name": "MAG Z790 TOMAHAWK WIFI",
+  "maker": "MSI",
+  "platform": "Intel LGA1700",
+  "estimatedPriceKrw": 467580,
+  "priceBand": "30~60만원",
+  "speedLabel": "DDR5",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "Mainboard",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 75,
+  "valueIndex": 16,
+  "aiUseScore": 49,
+  "powerWatts": null,
+  "tags": [
+    "Z790",
+    "ATX",
+    "WiFi"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "Mainboard",
+    "partId": "mainboard-mag-z790-tomahawk-wifi",
+    "partName": "MAG Z790 TOMAHAWK WIFI",
+    "speed": {
+      "score": 100,
+      "weight": 0.32,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "Mainboard",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 750,
+      "value": 213,
+      "aiFit": 490,
+      "priceEfficiency": 210,
+      "powerEfficiency": 750
+    },
+    "nbVector": [
+      100,
+      750,
+      213,
+      490,
+      210,
+      750
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 283.69,
+    "nbMin": 388.677,
+    "weightedScore": 323,
+    "nbBand": "100~499",
+    "summary": "Mainboard MAG Z790 TOMAHAWK WIFI 부품을 속도 중심 N/B 데이터베이스 점수 323점으로 저장했습니다."
+  },
+  "nbWeightedScore": 323,
+  "nbMax": 283.69,
+  "nbMin": 388.677,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=MSI%20MAG%20Z790%20TOMAHAWK%20WIFI%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "Standard DDR5 version. Distinct from the MAX version and DDR4 version.",
+  "textRepair": null
+}

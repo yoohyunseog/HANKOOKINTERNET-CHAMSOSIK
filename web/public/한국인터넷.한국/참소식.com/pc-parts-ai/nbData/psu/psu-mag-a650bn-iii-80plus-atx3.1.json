@@ -1,0 +1,85 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
+  "category": "PSU",
+  "id": "psu-mag-a650bn-iii-80plus-atx3.1",
+  "name": "MAG A650BN III 80PLUS 브론즈 ATX3.1",
+  "maker": "MSI",
+  "platform": "ATX",
+  "estimatedPriceKrw": 60800,
+  "priceBand": "15만원 미만",
+  "speedLabel": "80 PLUS Bronze",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "PSU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 75,
+  "valueIndex": 75,
+  "aiUseScore": 49,
+  "powerWatts": 650,
+  "tags": [
+    "ATX3.1",
+    "Bronze"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "PSU",
+    "partId": "psu-mag-a650bn-iii-80plus-atx3.1",
+    "partName": "MAG A650BN III 80PLUS 브론즈 ATX3.1",
+    "speed": {
+      "score": 100,
+      "weight": 0.32,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "PSU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 750,
+      "value": 1000,
+      "aiFit": 490,
+      "priceEfficiency": 1640,
+      "powerEfficiency": 100
+    },
+    "nbVector": [
+      100,
+      750,
+      1000,
+      490,
+      1640,
+      100
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 175.528,
+    "nbMin": 323.691,
+    "weightedScore": 508,
+    "nbBand": "500~699",
+    "summary": "PSU MAG A650BN III 80PLUS 브론즈 ATX3.1 부품을 속도 중심 N/B 데이터베이스 점수 508점으로 저장했습니다."
+  },
+  "nbWeightedScore": 508,
+  "nbMax": 175.528,
+  "nbMin": 323.691,
+  "nbBand": "500~699",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=MSI%20MAG%20A650BN%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "Updated version III with ATX 3.1 support and 12V2x6 connector.",
+  "textRepair": null
+}

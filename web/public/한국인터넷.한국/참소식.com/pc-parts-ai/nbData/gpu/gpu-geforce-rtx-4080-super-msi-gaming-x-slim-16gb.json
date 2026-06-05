@@ -1,0 +1,86 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
+  "category": "GPU",
+  "id": "gpu-geforce-rtx-4080-super-msi-gaming-x-slim-16gb",
+  "name": "GeForce RTX 4080 SUPER MSI Gaming X Slim 16GB",
+  "maker": "MSI",
+  "platform": "PCIe",
+  "estimatedPriceKrw": 3393310,
+  "priceBand": "60만원 이상",
+  "speedLabel": "Boost",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "GPU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 95,
+  "valueIndex": 2.8,
+  "aiUseScore": 95,
+  "powerWatts": 320,
+  "tags": [
+    "gaming",
+    "ai",
+    "high-end"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "GPU",
+    "partId": "gpu-geforce-rtx-4080-super-msi-gaming-x-slim-16gb",
+    "partName": "GeForce RTX 4080 SUPER MSI Gaming X Slim 16GB",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "GPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 950,
+      "value": 100,
+      "aiFit": 950,
+      "priceEfficiency": 30,
+      "powerEfficiency": 100
+    },
+    "nbVector": [
+      100,
+      950,
+      100,
+      950,
+      30,
+      100
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 168.228,
+    "nbMin": 302.811,
+    "weightedScore": 349,
+    "nbBand": "100~499",
+    "summary": "GPU GeForce RTX 4080 SUPER MSI Gaming X Slim 16GB 부품을 속도 중심 N/B 데이터베이스 점수 349점으로 저장했습니다."
+  },
+  "nbWeightedScore": 349,
+  "nbMax": 168.228,
+  "nbMin": 302.811,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=GeForce%20RTX%204080%20SUPER%20MSI%20Gaming%20X%20Slim%20%EC%B5%9C%EC%A0%80%EA%B0%80%20%EB%8B%A4%EB%82%98%EC%99%80",
+  "notes": "Observed price from search result: 3,393,310 KRW",
+  "textRepair": null
+}

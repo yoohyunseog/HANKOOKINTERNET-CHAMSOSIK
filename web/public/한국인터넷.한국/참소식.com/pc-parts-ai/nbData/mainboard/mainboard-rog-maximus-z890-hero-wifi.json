@@ -1,0 +1,86 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
+  "category": "Mainboard",
+  "id": "mainboard-rog-maximus-z890-hero-wifi",
+  "name": "ROG MAXIMUS Z890 HERO WIFI",
+  "maker": "ASUS",
+  "platform": "Intel Z890 (LGA1851)",
+  "estimatedPriceKrw": 996540,
+  "priceBand": "60만원 이상",
+  "speedLabel": "DDR5 9200MHz",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "Mainboard",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 100,
+  "valueIndex": 10,
+  "aiUseScore": 65,
+  "powerWatts": null,
+  "tags": [
+    "high-end",
+    "overclocking",
+    "wifi"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "Mainboard",
+    "partId": "mainboard-rog-maximus-z890-hero-wifi",
+    "partName": "ROG MAXIMUS Z890 HERO WIFI",
+    "speed": {
+      "score": 100,
+      "weight": 0.32,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "Mainboard",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 1000,
+      "value": 133,
+      "aiFit": 650,
+      "priceEfficiency": 100,
+      "powerEfficiency": 1000
+    },
+    "nbVector": [
+      100,
+      1000,
+      133,
+      650,
+      100,
+      1000
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 236.32,
+    "nbMin": 362.269,
+    "weightedScore": 384,
+    "nbBand": "100~499",
+    "summary": "Mainboard ROG MAXIMUS Z890 HERO WIFI 부품을 속도 중심 N/B 데이터베이스 점수 384점으로 저장했습니다."
+  },
+  "nbWeightedScore": 384,
+  "nbMax": 236.32,
+  "nbMin": 362.269,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=ASUS%20ROG%20MAXIMUS%20Z890%20HERO%20WIFI%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "Supports Intel Core Ultra 200 series (LGA1851), PCIe 5.0, and up to 9200MHz DDR5 memory.",
+  "textRepair": null
+}

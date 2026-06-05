@@ -33,8 +33,9 @@ from selenium.webdriver.common.by import By
 from webdriver_manager.chrome import ChromeDriverManager
 
 
-OLLAMA_API_URL = "http://localhost:11434/api/generate"
-OLLAMA_MODEL = os.environ.get("OLLAMA_MODEL", "gpt-oss:120b-cloud")
+OLLAMA_API_URL = "http://211.45.162.155:11434/api/generate"
+OLLAMA_WEB_API_URL = "http://localhost:3000/api/ollama-chat"  # 웹 서버 API
+OLLAMA_MODEL = os.environ.get("OLLAMA_MODEL", "kimi-k2.5:cloud")
 
 WAIT_TIME = 10
 SCROLL_WAIT = 2
@@ -235,6 +236,18 @@ def build_driver(prefer_headless: bool | None = None) -> webdriver.Chrome:
         )
         options.add_experimental_option("excludeSwitches", ["enable-logging"])
         options.add_argument("--log-level=3")
+        # 세션 유지 설정
+        options.add_argument("--disable-extensions")
+        options.add_argument("--disable-popup-blocking")
+        options.add_argument("--disable-notifications")
+        options.add_argument("--disable-blink-features=AutomationControlled")
+        options.add_experimental_option("useAutomationExtension", False)
+        # 추가 안정성 설정
+        options.add_argument("--remote-debugging-port=9222")
+        options.add_argument("--disable-software-rasterizer")
+        options.add_argument("--disable-web-security")
+        options.add_argument("--allow-running-insecure-content")
+        options.add_argument("--ignore-certificate-errors")
         return options
 
     requested_headless = HEADLESS_MODE if prefer_headless is None else prefer_headless
@@ -250,6 +263,14 @@ def build_driver(prefer_headless: bool | None = None) -> webdriver.Chrome:
             service = Service(ChromeDriverManager().install())
             driver = webdriver.Chrome(service=service, options=create_options(headless))
             driver.set_page_load_timeout(60)
+            # 세션 유지를 위한 추가 설정
+            driver.implicitly_wait(10)
+            # DevTools 연결 확인
+            try:
+                driver.current_url  # 세션 활성화 확인
+            except Exception as e:
+                print(f"[driver] session check failed: {e}")
+                continue
             if headless and not requested_headless:
                 print("[driver] visible mode failed, fell back to headless mode")
             return driver
@@ -320,79 +341,224 @@ def read_first_result_page(driver: webdriver.Chrome, href: str, wait_time: int) 
         return ""
 
 
-def search_result_and_extract(query: str, driver: webdriver.Chrome, wait_time: int = 10) -> str:
-    print(f"[search] query: {query}")
-    encoded_query = quote_plus(query)
-    search_targets = [
-        {
-            "name": "naver",
-            "url": f"https://search.naver.com/search.naver?query={encoded_query}",
-            "selectors": [
-                "a.title_link",
-                "a.title",
-                "a.news_tit",
-                "a.total_tit",
-                "a.api_txt_lines.total_tit",
-                "div.title_area a",
-                "div.total_tit_area a",
-            ],
-        },
-        {
-            "name": "zum",
-            "url": f"https://search.zum.com/search.zum?query={encoded_query}",
-            "selectors": [
-                "a.link_tit",
-                "a.tit",
-                "div.area_tit a",
-            ],
-        },
-    ]
+def ollama_search_batch(queries: list[str], model: str = OLLAMA_MODEL) -> dict[str, str]:
+    """여러 검색어를 한 번의 API 호출로 처리"""
+    results = {}
+    if not queries:
+        return results
+    
+    try:
+        print(f"[ollama-search-batch] queries: {len(queries)}개")
+        print(f"[ollama-search-batch] model: {model}")
+        
+        # 모든 검색어를 하나의 프롬프트에 포함
+        query_list = "\n".join([f"{i+1}. {q}" for i, q in enumerate(queries)])
+        
+        prompt = f"""다음 검색어들에 대해 각각 1-2문장으로 간단히 설명하세요.
 
-    for target in search_targets:
+검색어 목록:
+{query_list}
+
+조건:
+1. 각 검색어에 대해 1-2문장으로만 설명
+2. 핵심 정보만 포함 (현재 가격, 지수, 용어 설명 등)
+3. 한국어로 작성
+4. 각 설명은 새 줄에 작성
+5. 형식: "검색어: 설명내용"
+
+설명:"""
+
+        payload = {
+            "model": model,
+            "prompt": prompt,
+            "stream": False,
+            "options": {"temperature": 0.3, "num_predict": 2000}
+        }
+        
+        response = requests.post(
+            OLLAMA_API_URL,
+            json=payload,
+            timeout=60
+        )
+        
+        print(f"[ollama-search-batch] response status: {response.status_code}")
+        
+        if response.status_code == 200:
+            data = response.json()
+            # response 필드 확인 (일반 모델)
+            text = data.get("response", "").strip()
+            # response가 비어있으면 thinking 필드 확인 (thinking 모델)
+            if not text:
+                text = data.get("thinking", "").strip()
+            
+            if text:
+                print(f"[ollama-search-batch] response length: {len(text)}")
+                # 각 검색어에 대한 결과 파싱
+                for query in queries:
+                    # 검색어에 해당하는 설명 찾기
+                    for line in text.split("\n"):
+                        line = line.strip()
+                        if ":" in line:
+                            parts = line.split(":", 1)
+                            if len(parts) == 2:
+                                key = parts[0].strip()
+                                value = parts[1].strip()
+                                # 검색어가 포함된 키 찾기
+                                for q in queries:
+                                    if q.lower() in key.lower() or key.lower() in q.lower():
+                                        results[q] = value
+                                        break
+                
+                # 파싱 실패 시 전체 텍스트를 첫 번째 검색어에 할당
+                if not results and queries:
+                    results[queries[0]] = text[:200]
+                
+                print(f"[ollama-search-batch] parsed {len(results)} results")
+            else:
+                print(f"[ollama-search-batch] no result in response or thinking")
+        else:
+            print(f"[ollama-search-batch] error: {response.status_code}")
+            
+    except Exception as e:
+        print(f"[ollama-search-batch] failed: {e}")
+    
+    return results
+
+
+def ollama_search(query: str, model: str = OLLAMA_MODEL) -> str:
+    """Ollama AI를 사용한 검색 결과 생성"""
+    try:
+        print(f"[ollama-search] query: {query}")
+        print(f"[ollama-search] model: {model}")
+        print(f"[ollama-search] API URL: {OLLAMA_API_URL}")
+        
+        # thinking 모델을 위한 명시적인 프롬프트
+        prompt = f"""{query}에 대해 설명해주세요.
+
+중요: 아래 조건을 반드시 따르세요.
+1. 1-2문장으로만 간단하게 설명
+2. 핵심 정보만 포함 (현재 가격, 지수 등)
+3. 한국어로 작성
+4. HTML 태그 없이 텍스트만 출력
+5. "사용자가 요청했습니다" 같은 메타 설명 금지
+6. 바로 설명 내용만 출력
+
+예시:
+KOSPI: 한국종합주가지수로, 한국 증권시장의 대표적인 주가 지수입니다.
+Bitcoin: 암호화폐의 일종으로, 2009년 사토시 나카모토가 만든 디지털 화폐입니다.
+
+{query}:"""
+
+        # 원격 Ollama 서버 사용 (우선)
+        payload = {
+            "model": model,
+            "prompt": prompt,
+            "stream": False,
+            "options": {"temperature": 0.3, "num_predict": 200}
+        }
+        print(f"[ollama-search] payload: model={payload['model']}, stream={payload['stream']}")
+        
+        response = requests.post(
+            OLLAMA_API_URL,
+            json=payload,
+            timeout=30
+        )
+        
+        print(f"[ollama-search] response status: {response.status_code}")
+        print(f"[ollama-search] response text: {response.text[:200]}")
+        
+        if response.status_code == 200:
+            data = response.json()
+            # response 필드 확인 (일반 모델)
+            result = data.get("response", "").strip()
+            # response가 비어있으면 thinking 필드 확인 (thinking 모델)
+            if not result:
+                result = data.get("thinking", "").strip()
+            if result:
+                print(f"[ollama-search] result: {result[:100]}...")
+                return result
+            print(f"[ollama-search] no result in response or thinking")
+            return ""
+        
+        # 웹 서버 API 사용 (백업)
+        print(f"[ollama-search] remote failed: {response.status_code}, trying web API...")
         try:
-            print(f"[search] trying {target['name']}: {target['url']}")
-            driver.get(target["url"])
-            time.sleep(2)
+            web_response = requests.post(
+                OLLAMA_WEB_API_URL,
+                json={
+                    "model": model,
+                    "messages": [{"role": "user", "content": prompt}],
+                    "stream": False
+                },
+                timeout=30
+            )
+            
+            if web_response.status_code == 200:
+                data = web_response.json()
+                result = data.get("content", "") or data.get("response", "")
+                if result:
+                    print(f"[ollama-search] web API result: {result[:100]}...")
+                    return result
+        except Exception as e:
+            print(f"[ollama-search] web API failed: {e}")
+        
+        print(f"[ollama-search] error: {response.status_code}")
+        return ""
+    except Exception as e:
+        print(f"[ollama-search] failed: {e}")
+        return ""
 
-            body_elem = driver.find_element(By.TAG_NAME, "body")
-            page_text = re.sub(r"\s+", " ", body_elem.text.strip())
 
-            results = collect_search_results(driver, target)
-            if not results:
-                page_preview = page_text[:160]
-                print(f"[search] no structured results on {target['name']}: {page_preview}...")
-                continue
-
-            lines = []
-            for index, result in enumerate(results, start=1):
-                line = (
-                    f"[{target['name']} #{index}] title={result['title']} | "
-                    f"snippet={result['snippet']} | href={result['href']}"
-                )
-                print(f"[search] {line}")
-                lines.append(line)
-
-            first_page_preview = read_first_result_page(driver, results[0]["href"], wait_time)
-            if first_page_preview:
-                print(f"[search] first page preview via {target['name']}: {first_page_preview[:120]}...")
-                lines.append(f"[{target['name']} first_page] {first_page_preview}")
-
-            return "\n".join(lines)[:2000]
-        except Exception as exc:
-            print(f"[search] failed on {target['name']}, fallback to next: {exc}")
-            continue
-
-    print("[search] no result from naver/zum")
-    return "(naver/zum search result not found)"
+def search_result_and_extract(query: str, driver: webdriver.Chrome, wait_time: int = 10, model: str = OLLAMA_MODEL) -> str:
+    """Ollama AI를 사용한 검색 결과 생성 (네이버/줌 검색 제거)"""
+    print(f"[search] query: {query}")
+    
+    # Ollama AI 검색 사용
+    result = ollama_search(query, model=model)
+    
+    if result:
+        return f"[AI 검색] {result}"
+    
+    print("[search] no result from AI")
+    return "(AI 검색 결과 없음)"
 
 
 def fetch_webpage(url: str, wait_time: int = WAIT_TIME) -> str | None:
+    """RSS/XML 피치는 requests 사용, 일반 웹페이지는 Selenium 사용"""
+    
+    # RSS/XML 피치인 경우 requests 사용
+    if url.endswith(('.xml', '.rss', '/feed.xml', '/rss')):
+        try:
+            print(f"[fetch] url: {url}")
+            print(f"[fetch] using requests (RSS/XML)")
+            
+            response = requests.get(url, timeout=30, headers={
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+            })
+            response.raise_for_status()
+            
+            print(f"[fetch] bytes: {len(response.text)}")
+            return response.text
+        except Exception as exc:
+            print(f"[fetch] requests failed: {exc}")
+            return None
+    
+    # 일반 웹페이지는 Selenium 사용
     driver = None
     try:
         print(f"[fetch] url: {url}")
         print(f"[fetch] wait_time: {wait_time}s")
 
         driver = build_driver()
+        
+        # 페이지 로드 전 세션 확인
+        try:
+            current_url = driver.current_url
+            print(f"[fetch] session active: {current_url[:50] if current_url else 'empty'}")
+        except Exception as e:
+            print(f"[fetch] session check failed: {e}")
+            return None
+        
         driver.get(url)
         time.sleep(wait_time)
 
@@ -430,9 +596,11 @@ def fetch_webpage(url: str, wait_time: int = WAIT_TIME) -> str | None:
     finally:
         if driver:
             try:
+                # 세션 정상 종료
+                driver.close()
                 driver.quit()
-            except Exception:
-                pass
+            except Exception as e:
+                print(f"[fetch] driver cleanup warning: {e}")
 
 
 def extract_date(text: str):
@@ -631,7 +799,7 @@ def enforce_finance_values_in_mermaid(mermaid_code: str) -> str:
     return updated_code
 
 
-def build_finance_context() -> tuple[list[str], list[str], dict[str, str]]:
+def build_finance_context(model: str = OLLAMA_MODEL) -> tuple[list[str], list[str], dict[str, str]]:
     price_nodes: list[str] = []
     explanation_nodes: list[str] = []
     search_texts: dict[str, str] = {}
@@ -646,24 +814,49 @@ def build_finance_context() -> tuple[list[str], list[str], dict[str, str]]:
         print(f"[finance] parse failed: {exc}")
         return price_nodes, explanation_nodes, search_texts
 
-    driver = None
-    try:
-        driver = build_driver()
-        for key, value in finance_json.items():
-            if not key.endswith("_ollama"):
-                price_nodes.append(f"{key}: {value}")
-                if any(token in key for token in ["KOSPI", "KOSDAQ", "S&P", "NASDAQ", "DOW"]):
-                    query = f"{key} live index"
-                else:
-                    query = f"{key} live price"
-                result_text = search_result_and_extract(query, driver, wait_time=10)
-                search_texts[key] = result_text
-                value_preview = str(value)[:60].replace("\n", " ")
-                result_preview = result_text[:120].replace("\n", " ")
-                print(f"[finance] {key} value: {value_preview}")
-                print(f"[finance] {key} search preview: {result_preview}...")
-                continue
+    # 모든 검색어를 수집
+    queries_to_keys: dict[str, str] = {}  # query -> key 매핑
+    for key, value in finance_json.items():
+        if not key.endswith("_ollama"):
+            price_nodes.append(f"{key}: {value}")
+            if any(token in key for token in ["KOSPI", "KOSDAQ", "S&P", "NASDAQ", "DOW"]):
+                query = f"{key} live index"
+            else:
+                query = f"{key} live price"
+            queries_to_keys[query] = key
 
+    # 배치 검색 실행 (한 번의 API 호출로 모든 검색어 처리)
+    if queries_to_keys:
+        print(f"[finance] batch searching {len(queries_to_keys)} queries...")
+        batch_results = ollama_search_batch(list(queries_to_keys.keys()), model=model)
+        
+        # 결과 매핑 - 가격 정보와 AI 설명을 결합
+        for query, key in queries_to_keys.items():
+            result_text = batch_results.get(query, "")
+            price_value = finance_json.get(key, "")
+            
+            # 가격 + AI 설명 결합
+            if result_text:
+                # 가격 정보가 있으면 포함
+                if price_value:
+                    search_texts[key] = f"{price_value} - {result_text}"
+                else:
+                    search_texts[key] = f"[AI 검색] {result_text}"
+            else:
+                # AI 검색 결과가 없으면 가격만 표시
+                if price_value:
+                    search_texts[key] = f"{price_value}"
+                else:
+                    search_texts[key] = "(AI 검색 결과 없음)"
+            
+            value_preview = str(price_value)[:60].replace("\n", " ")
+            result_preview = search_texts[key][:120].replace("\n", " ")
+            print(f"[finance] {key} value: {value_preview}")
+            print(f"[finance] {key} search preview: {result_preview}...")
+
+    # _ollama 항목 처리
+    for key, value in finance_json.items():
+        if key.endswith("_ollama"):
             base_key = key.replace("_ollama", "")
             try:
                 if isinstance(value, str) and value.strip().startswith("{"):
@@ -676,20 +869,12 @@ def build_finance_context() -> tuple[list[str], list[str], dict[str, str]]:
                     explanation_nodes.append(f"{base_key}_desc: {str(value).strip()}")
             except Exception:
                 explanation_nodes.append(f"{base_key}_desc: {value}")
-    except Exception as exc:
-        print(f"[finance] search failed: {exc}")
-    finally:
-        if driver:
-            try:
-                driver.quit()
-            except Exception:
-                pass
 
     return price_nodes, explanation_nodes, search_texts
 
 
-def build_prompt(url: str, page_content: dict[str, Any], prompt_template: str | None) -> str:
-    price_nodes, explanation_nodes, search_texts = build_finance_context()
+def build_prompt(url: str, page_content: dict[str, Any], prompt_template: str | None, model: str = OLLAMA_MODEL) -> str:
+    price_nodes, explanation_nodes, search_texts = build_finance_context(model=model)
 
     always_include = ["KOSPI", "KOSDAQ", "S&P500", "NASDAQ", "DOWJONES", "Bitcoin"]
     always_items: list[str] = []
@@ -708,7 +893,7 @@ def build_prompt(url: str, page_content: dict[str, Any], prompt_template: str | 
     search_lines = []
     for key, value in search_texts.items():
         short_text = value[:100].replace("\n", " ")
-        search_lines.append(f"[naver/zum] {key}: {short_text} ...")
+        search_lines.append(f"[AI 검색] {key}: {short_text} ...")
 
     merged_items_info = "\n".join(merged_items + search_lines)
     limited_items = page_content.get("data_items", [])[:12]
@@ -765,7 +950,7 @@ def generate_diagram_with_ollama(url: str, page_content: dict[str, Any], model: 
     try:
         print(f"[ollama] generating with model: {model}")
         prompt_template = load_prompt_template()
-        prompt = build_prompt(url, page_content, prompt_template)
+        prompt = build_prompt(url, page_content, prompt_template, model=model)
 
         payload = {
             "model": model,
@@ -879,7 +1064,6 @@ def main() -> int:
     parser.add_argument("-w", "--wait", type=int, default=WAIT_TIME, help="JS wait time in seconds")
     args = parser.parse_args()
 
-    args.model = "gpt-oss:120b-cloud"
     url = args.url if args.url.startswith("http") else f"https://{args.url}"
     output_path = build_output_path(args.output)
 

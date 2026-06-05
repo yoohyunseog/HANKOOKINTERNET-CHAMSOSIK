@@ -1,0 +1,86 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
+  "category": "SSD",
+  "id": "ssd-crucial-t500-gen4-nvme-2tb",
+  "name": "Crucial T500 Gen4 NVMe 2TB",
+  "maker": "Crucial",
+  "platform": "PCIe 4.0",
+  "estimatedPriceKrw": 499040,
+  "priceBand": "30~60만원",
+  "speedLabel": "7,400MB/s",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "SSD",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 90,
+  "valueIndex": 18,
+  "aiUseScore": 59,
+  "powerWatts": null,
+  "tags": [
+    "NVMe",
+    "Gen4",
+    "PS5"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "SSD",
+    "partId": "ssd-crucial-t500-gen4-nvme-2tb",
+    "partName": "Crucial T500 Gen4 NVMe 2TB",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "SSD",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 900,
+      "value": 240,
+      "aiFit": 590,
+      "priceEfficiency": 200,
+      "powerEfficiency": 900
+    },
+    "nbVector": [
+      100,
+      900,
+      240,
+      590,
+      200,
+      900
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 279.254,
+    "nbMin": 374.027,
+    "weightedScore": 385,
+    "nbBand": "100~499",
+    "summary": "SSD Crucial T500 Gen4 NVMe 2TB 부품을 속도 중심 N/B 데이터베이스 점수 385점으로 저장했습니다."
+  },
+  "nbWeightedScore": 385,
+  "nbMax": 279.254,
+  "nbMin": 374.027,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Crucial%20T500%20Gen4%20NVMe%20SSD%202TB%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "TLC, DRAM cache included, 1200TBW",
+  "textRepair": null
+}

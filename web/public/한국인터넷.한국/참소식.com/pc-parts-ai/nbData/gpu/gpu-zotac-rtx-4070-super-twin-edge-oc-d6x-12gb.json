@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-06-01T15:15:41.010+09:00",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
   "category": "GPU",
   "id": "gpu-zotac-rtx-4070-super-twin-edge-oc-d6x-12gb",
   "name": "ZOTAC 지포스 RTX 4070 SUPER Twin Edge OC D6X 12GB",
@@ -80,9 +80,5 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=RTX%204070%20Super%20%EC%B5%9C%EC%A0%80%EA%B0%80",
   "notes": "Twin Edge OC model",
-  "textRepair": null,
-  "sourceType": "collector",
-  "sourceQuery": "",
-  "collectedPricesKrw": [],
-  "targetMatched": null
+  "textRepair": null
 }

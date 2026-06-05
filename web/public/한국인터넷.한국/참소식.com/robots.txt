@@ -1,24 +1,20 @@
-# 모든 검색 로봇 허용
 User-agent: *
 Allow: /
+Disallow: /*?search=
+Disallow: /*?selected_*
+Disallow: /index.html?search=
+Disallow: /server-journal.html
+Disallow: /search-ide.html
+Disallow: /dashboard.html
+Disallow: /database.html
+Disallow: /api.html
+Disallow: /test_api.html
+Disallow: /test_parse_mmd.html
+Disallow: /Demo/
 Disallow: /temp/
-Disallow: /*.tmp$
 Disallow: /node_modules/
+Disallow: /bot/
+Disallow: /*.json$
 
-# 네이버 클로봇 명시적 허용
-User-agent: Naver
-Allow: /
-
-# 네이버 스마트앱 봇
-User-agent: Yeti
-Allow: /
-
-# 구글 봇
-User-agent: Googlebot
-Allow: /
-
-# Sitemap 위치
 Sitemap: https://xn--9l4b4xi9r.com/sitemap.xml
-
-# 크롤링 지연 시간 (옵션)
-Crawl-delay: 0
+Sitemap: https://xn--9l4b4xi9r.com/community/poster/google-news-sitemap.xml

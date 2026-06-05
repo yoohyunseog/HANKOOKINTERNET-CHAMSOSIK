@@ -1,0 +1,86 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
+  "category": "Mainboard",
+  "id": "mainboard-gigabyte-z890-aorus-master",
+  "name": "Gigabyte Z890 AORUS MASTER",
+  "maker": "Gigabyte",
+  "platform": "Intel LGA1851",
+  "estimatedPriceKrw": 669000,
+  "priceBand": "60만원 이상",
+  "speedLabel": "DDR5 9500MHz",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "Mainboard",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 95,
+  "valueIndex": 14.2,
+  "aiUseScore": 62,
+  "powerWatts": null,
+  "tags": [
+    "Z890",
+    "AORUS",
+    "High-end"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "Mainboard",
+    "partId": "mainboard-gigabyte-z890-aorus-master",
+    "partName": "Gigabyte Z890 AORUS MASTER",
+    "speed": {
+      "score": 100,
+      "weight": 0.32,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "Mainboard",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 950,
+      "value": 189,
+      "aiFit": 620,
+      "priceEfficiency": 150,
+      "powerEfficiency": 950
+    },
+    "nbVector": [
+      100,
+      950,
+      189,
+      620,
+      150,
+      950
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 256.447,
+    "nbMin": 368.577,
+    "weightedScore": 379,
+    "nbBand": "100~499",
+    "summary": "Mainboard Gigabyte Z890 AORUS MASTER 부품을 속도 중심 N/B 데이터베이스 점수 379점으로 저장했습니다."
+  },
+  "nbWeightedScore": 379,
+  "nbMax": 256.447,
+  "nbMin": 368.577,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Gigabyte%20Z890%20AORUS%20MASTER%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "Supports Intel Core Ultra 200S series, PCIe 5.0, 10Gbps LAN, and Thunderbolt 4.",
+  "textRepair": null
+}

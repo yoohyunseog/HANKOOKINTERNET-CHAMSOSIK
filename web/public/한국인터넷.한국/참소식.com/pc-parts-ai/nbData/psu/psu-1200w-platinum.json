@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-06-01T15:15:41.587+09:00",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
   "category": "PSU",
   "id": "psu-1200w-platinum",
   "name": "1200W 80PLUS Platinum PSU",
@@ -21,7 +21,7 @@
   "performance": 96,
   "valueIndex": 33.6,
   "aiUseScore": 96,
-  "powerWatts": 0,
+  "powerWatts": null,
   "tags": [
     "creator",
     "ai",
@@ -82,9 +82,5 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=1200W%2080PLUS%20Platinum%20PSU%20price",
   "notes": "Additional AI PC candidate collected when saved parts are already exhausted.",
-  "textRepair": null,
-  "sourceType": "collector",
-  "sourceQuery": "",
-  "collectedPricesKrw": [],
-  "targetMatched": null
+  "textRepair": null
 }

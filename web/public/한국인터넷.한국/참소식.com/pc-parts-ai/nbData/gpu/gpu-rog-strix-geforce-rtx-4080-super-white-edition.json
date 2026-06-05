@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-06-01T15:15:40.718+09:00",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
   "category": "GPU",
   "id": "gpu-rog-strix-geforce-rtx-4080-super-white-edition",
   "name": "ROG Strix GeForce RTX 4080 Super White Edition",
@@ -81,9 +81,5 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=ASUS%20ROG%20Strix%20RTX%204080%20Super%20White%20%EC%B5%9C%EC%A0%80%EA%B0%80",
   "notes": "The search result shows an overseas price of 4,299,420 KRW, which is abnormally high. Estimated street price is adjusted to a more reasonable market range for this premium model.",
-  "textRepair": null,
-  "sourceType": "collector",
-  "sourceQuery": "",
-  "collectedPricesKrw": [],
-  "targetMatched": null
+  "textRepair": null
 }

@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-06-01T15:15:39.948+09:00",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
   "category": "GPU",
   "id": "gpu-msi-rtx-4060-x-8gb",
   "name": "MSI 지포스 RTX 4060 게이밍 X 8GB",
@@ -81,14 +81,10 @@
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=RTX%204060%20%EC%B5%9C%EC%A0%80%EA%B0%80",
   "notes": "MSI 지포스 RTX 4060 게이밍 X 8GB은 게임, 작업, AI 활용을 함께 검토할 그래픽카드 후보입니다.",
   "textRepair": {
-    "checkedAt": "2026-06-01T15:15:39.948+09:00",
+    "checkedAt": "2026-06-05T23:19:51.297+09:00",
     "method": "ai-text-sanity-rules",
     "repairedFields": [
       "notes"
     ]
-  },
-  "sourceType": "collector",
-  "sourceQuery": "",
-  "collectedPricesKrw": [],
-  "targetMatched": null
+  }
 }

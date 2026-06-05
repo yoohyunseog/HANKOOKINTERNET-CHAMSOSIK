@@ -57,9 +57,9 @@
           <a href="${root("pc-parts-ai/")}">AI 컴퓨터 부품 분석</a>
           <a href="${root("pc-parts-ai/parts.html")}">부품 분석표</a>
           <a href="${root("server-journal.html")}">서버 일지</a>
-          <span class="chamsosik-common-archive" aria-label="비추천 보관 메뉴">
-            <a class="chamsosik-common-archived" href="${root("jungnang-volunteer/")}">중랑구 소식</a>
-            <a class="chamsosik-common-archived" href="${root("cathedral-news.html")}">주요 성당 소식</a>
+          <span class="chamsosik-common-featured" aria-label="지역 및 성당 소식">
+            <a class="chamsosik-common-gold" href="https://www.xn--9l4b4xi9r.com/jungnang-volunteer/">중랑구 소식</a>
+            <a class="chamsosik-common-gold" href="https://www.xn--9l4b4xi9r.com/vatican/#latest">주요 성당 소식</a>
           </span>
         </nav>
       </div>

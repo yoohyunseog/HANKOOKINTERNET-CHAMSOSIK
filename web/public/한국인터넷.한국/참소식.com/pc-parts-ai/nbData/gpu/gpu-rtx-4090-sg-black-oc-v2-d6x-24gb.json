@@ -1,0 +1,86 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
+  "category": "GPU",
+  "id": "gpu-rtx-4090-sg-black-oc-v2-d6x-24gb",
+  "name": "지포스 RTX 4090 SG BLACK OC V2 D6X 24GB",
+  "maker": "갤럭시 GALAX",
+  "platform": "PCIe 4.0",
+  "estimatedPriceKrw": 2800000,
+  "priceBand": "60만원 이상",
+  "speedLabel": "2580MHz",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "GPU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 100,
+  "valueIndex": 3.6,
+  "aiUseScore": 100,
+  "powerWatts": 450,
+  "tags": [
+    "gaming",
+    "ai",
+    "high-end"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "GPU",
+    "partId": "gpu-rtx-4090-sg-black-oc-v2-d6x-24gb",
+    "partName": "지포스 RTX 4090 SG BLACK OC V2 D6X 24GB",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "GPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 1000,
+      "value": 100,
+      "aiFit": 1000,
+      "priceEfficiency": 40,
+      "powerEfficiency": 100
+    },
+    "nbVector": [
+      100,
+      1000,
+      100,
+      1000,
+      40,
+      100
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 162.76,
+    "nbMin": 306.8,
+    "weightedScore": 365,
+    "nbBand": "100~499",
+    "summary": "GPU 지포스 RTX 4090 SG BLACK OC V2 D6X 24GB 부품을 속도 중심 N/B 데이터베이스 점수 365점으로 저장했습니다."
+  },
+  "nbWeightedScore": 365,
+  "nbMax": 162.76,
+  "nbMin": 306.8,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=%EC%A7%80%ED%8F%AC%EC%8A%A4%20RTX%204090%20%EA%B0%A4%EB%9F%AD%EC%8B%9C%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "SG BLACK OC V2 model, 24GB VRAM, 450W TDP",
+  "textRepair": null
+}

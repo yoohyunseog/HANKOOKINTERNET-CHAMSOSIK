@@ -1,0 +1,85 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
+  "category": "Mainboard",
+  "id": "mainboard-asrock-b650m-pro-rs",
+  "name": "ASRock B650M Pro RS",
+  "maker": "ASRock",
+  "platform": "AM5",
+  "estimatedPriceKrw": 145000,
+  "priceBand": "15만원 미만",
+  "speedLabel": "DDR5",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "Mainboard",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 75,
+  "valueIndex": 51.7,
+  "aiUseScore": 49,
+  "powerWatts": null,
+  "tags": [
+    "B650",
+    "M-ATX"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "Mainboard",
+    "partId": "mainboard-asrock-b650m-pro-rs",
+    "partName": "ASRock B650M Pro RS",
+    "speed": {
+      "score": 100,
+      "weight": 0.32,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "Mainboard",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 750,
+      "value": 689,
+      "aiFit": 490,
+      "priceEfficiency": 690,
+      "powerEfficiency": 750
+    },
+    "nbVector": [
+      100,
+      750,
+      689,
+      490,
+      690,
+      750
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 587.417,
+    "nbMin": 340.733,
+    "weightedScore": 428,
+    "nbBand": "100~499",
+    "summary": "Mainboard ASRock B650M Pro RS 부품을 속도 중심 N/B 데이터베이스 점수 428점으로 저장했습니다."
+  },
+  "nbWeightedScore": 428,
+  "nbMax": 587.417,
+  "nbMin": 340.733,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=ASRock%20B650M%20Pro%20RS%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "Distributed by Daewon CTS. Supports PCIe 5.0 M.2 and DDR5 up to 7200MHz.",
+  "textRepair": null
+}

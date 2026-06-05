@@ -1,0 +1,86 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
+  "category": "Mainboard",
+  "id": "mainboard-asrock-b650m-pg-lightning",
+  "name": "ASRock B650M PG Lightning",
+  "maker": "ASRock",
+  "platform": "AMD AM5",
+  "estimatedPriceKrw": 180000,
+  "priceBand": "15~30만원",
+  "speedLabel": "DDR5 7200MHz",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "Mainboard",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 65,
+  "valueIndex": 36.1,
+  "aiUseScore": 42,
+  "powerWatts": null,
+  "tags": [
+    "B650",
+    "mATX",
+    "AM5"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "Mainboard",
+    "partId": "mainboard-asrock-b650m-pg-lightning",
+    "partName": "ASRock B650M PG Lightning",
+    "speed": {
+      "score": 100,
+      "weight": 0.32,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "Mainboard",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 650,
+      "value": 481,
+      "aiFit": 420,
+      "priceEfficiency": 560,
+      "powerEfficiency": 650
+    },
+    "nbVector": [
+      100,
+      650,
+      481,
+      420,
+      560,
+      650
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 507.644,
+    "nbMin": 375.598,
+    "weightedScore": 355,
+    "nbBand": "100~499",
+    "summary": "Mainboard ASRock B650M PG Lightning 부품을 속도 중심 N/B 데이터베이스 점수 355점으로 저장했습니다."
+  },
+  "nbWeightedScore": 355,
+  "nbMax": 507.644,
+  "nbMin": 375.598,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=ASRock%20B650%20PG%20Lightning%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "M-ATX form factor, 6+2+1 phase power delivery, supports PCIe 5.0 M.2",
+  "textRepair": null
+}

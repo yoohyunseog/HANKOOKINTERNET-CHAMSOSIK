@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-06-01T15:15:41.461+09:00",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
   "category": "Mainboard",
   "id": "mainboard-asus-rog-strix-x870-f-gaming-wifi",
   "name": "ASUS ROG STRIX X870-F GAMING WIFI",
@@ -21,7 +21,7 @@
   "performance": 90,
   "valueIndex": 13.9,
   "aiUseScore": 59,
-  "powerWatts": 0,
+  "powerWatts": null,
   "tags": [
     "gaming",
     "wifi6e",
@@ -82,9 +82,5 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=ASUS%20ROG%20STRIX%20X870-F%20GAMING%20WIFI%20price",
   "notes": "High-end AM5 motherboard with PCIe 5.0 and USB4 support.",
-  "textRepair": null,
-  "sourceType": "collector",
-  "sourceQuery": "",
-  "collectedPricesKrw": [],
-  "targetMatched": null
+  "textRepair": null
 }

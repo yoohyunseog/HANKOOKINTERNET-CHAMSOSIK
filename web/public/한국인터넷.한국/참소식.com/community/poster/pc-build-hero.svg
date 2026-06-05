@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 900" role="img" aria-labelledby="title desc">
+  <title id="title">하이엔드 데스크톱 PC 일러스트레이션</title>
+  <desc id="desc">청록색 조명과 고성능 부품이 보이는 미래적인 데스크톱 PC</desc>
+  <defs>
+    <linearGradient id="case" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#293747"/>
+      <stop offset=".5" stop-color="#111923"/>
+      <stop offset="1" stop-color="#05090f"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#172d38" stop-opacity=".88"/>
+      <stop offset=".5" stop-color="#071219" stop-opacity=".72"/>
+      <stop offset="1" stop-color="#03070b" stop-opacity=".92"/>
+    </linearGradient>
+    <linearGradient id="gpu" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#111b24"/>
+      <stop offset=".5" stop-color="#273745"/>
+      <stop offset="1" stop-color="#0b1219"/>
+    </linearGradient>
+    <radialGradient id="fan">
+      <stop offset="0" stop-color="#081116"/>
+      <stop offset=".58" stop-color="#0c2228"/>
+      <stop offset=".7" stop-color="#96ff00"/>
+      <stop offset=".76" stop-color="#17efba"/>
+      <stop offset="1" stop-color="#071014"/>
+    </radialGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="8" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="shadow">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="18"/>
+      <feOffset dy="22"/>
+      <feComponentTransfer><feFuncA type="linear" slope=".65"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse">
+      <path d="M42 0H0V42" fill="none" stroke="#7eff00" stroke-opacity=".07"/>
+    </pattern>
+  </defs>
+
+  <rect width="720" height="900" fill="#05090e"/>
+  <rect width="720" height="900" fill="url(#grid)"/>
+  <circle cx="540" cy="315" r="270" fill="#00e5c3" opacity=".08" filter="url(#glow)"/>
+  <path d="M80 710 620 120M194 848 690 305M30 450 335 115" stroke="#7eff00" stroke-opacity=".15"/>
+  <g fill="#93ff00">
+    <circle cx="72" cy="184" r="3"/><circle cx="112" cy="240" r="2"/><circle cx="650" cy="660" r="2"/>
+    <circle cx="615" cy="145" r="3"/><circle cx="75" cy="765" r="2"/><circle cx="650" cy="770" r="3"/>
+  </g>
+
+  <g filter="url(#shadow)" transform="translate(135 55)">
+    <path d="M80 18h410l65 62v703H80z" fill="url(#case)" stroke="#405364" stroke-width="4"/>
+    <path d="M490 18 555 80h-65z" fill="#526878"/>
+    <path d="M102 55h365v690H102z" fill="url(#glass)" stroke="#2b5360" stroke-width="3"/>
+    <path d="M115 70h339v660H115z" fill="none" stroke="#00edca" stroke-opacity=".24"/>
+
+    <rect x="138" y="100" width="270" height="38" rx="8" fill="#111d24" stroke="#58ffd8" stroke-opacity=".45"/>
+    <path d="M157 119h225" stroke="#7dff00" stroke-width="5" stroke-linecap="round" filter="url(#glow)"/>
+
+    <g transform="translate(150 165)">
+      <circle cx="75" cy="75" r="65" fill="url(#fan)"/>
+      <circle cx="75" cy="75" r="18" fill="#17232c" stroke="#8aff00" stroke-width="3"/>
+      <g fill="#253740">
+        <path d="M75 28c22 4 31 14 30 28L80 68z"/><path d="M122 75c-4 22-14 31-28 30L82 80z"/>
+        <path d="M75 122c-22-4-31-14-30-28l25-12z"/><path d="M28 75c4-22 14-31 28-30l12 25z"/>
+      </g>
+    </g>
+    <g transform="translate(298 165)">
+      <circle cx="75" cy="75" r="65" fill="url(#fan)"/>
+      <circle cx="75" cy="75" r="18" fill="#17232c" stroke="#8aff00" stroke-width="3"/>
+      <g fill="#253740">
+        <path d="M75 28c22 4 31 14 30 28L80 68z"/><path d="M122 75c-4 22-14 31-28 30L82 80z"/>
+        <path d="M75 122c-22-4-31-14-30-28l25-12z"/><path d="M28 75c4-22 14-31 28-30l12 25z"/>
+      </g>
+    </g>
+
+    <path d="M200 310c-12 52 25 80 45 123M365 310c12 52-22 82-42 123" fill="none" stroke="#00e9ca" stroke-width="10" stroke-linecap="round" filter="url(#glow)"/>
+    <rect x="230" y="350" width="108" height="108" rx="20" fill="#111d24" stroke="#89ff00" stroke-width="5"/>
+    <path d="m257 405 21-25 23 25-23 25z" fill="none" stroke="#00edca" stroke-width="5" filter="url(#glow)"/>
+
+    <g transform="translate(130 490)">
+      <path d="m0 20 38-20h310l32 20v130H0z" fill="url(#gpu)" stroke="#4b6673" stroke-width="3"/>
+      <path d="M20 20h337" stroke="#95ff00" stroke-width="5" filter="url(#glow)"/>
+      <circle cx="95" cy="83" r="50" fill="url(#fan)"/>
+      <circle cx="95" cy="83" r="14" fill="#142029" stroke="#8aff00" stroke-width="2"/>
+      <circle cx="230" cy="83" r="50" fill="url(#fan)"/>
+      <circle cx="230" cy="83" r="14" fill="#142029" stroke="#8aff00" stroke-width="2"/>
+      <path d="M318 54h38M318 70h38M318 86h38M318 102h38" stroke="#657d88" stroke-width="5"/>
+    </g>
+
+    <rect x="130" y="665" width="338" height="54" rx="9" fill="#101920" stroke="#334954" stroke-width="3"/>
+    <path d="M155 692h155" stroke="#00e9ca" stroke-width="5" filter="url(#glow)"/>
+    <circle cx="437" cy="692" r="8" fill="#8eff00" filter="url(#glow)"/>
+
+    <path d="M555 80h25v703h-25z" fill="#111b22"/>
+    <path d="M560 106h14v545h-14z" fill="#8dff00" opacity=".78" filter="url(#glow)"/>
+    <circle cx="568" cy="698" r="8" fill="#00edca"/>
+    <circle cx="568" cy="727" r="8" fill="#00edca"/>
+  </g>
+</svg>

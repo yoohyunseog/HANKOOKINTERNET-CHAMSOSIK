@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-06-01T15:15:41.880+09:00",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
   "category": "SSD",
   "id": "ssd-samsung-990-pro-heatsink-8tb",
   "name": "Samsung 990 PRO Heatsink 8TB",
@@ -21,7 +21,7 @@
   "performance": 95,
   "valueIndex": 3.2,
   "aiUseScore": 62,
-  "powerWatts": 0,
+  "powerWatts": null,
   "tags": [
     "high-capacity",
     "heatsink"
@@ -81,9 +81,5 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90%20990%20PRO%208TB%20%EC%B5%9C%EC%A0%80%EA%B0%80",
   "notes": "Heatsink version of the 8TB 990 PRO.",
-  "textRepair": null,
-  "sourceType": "collector",
-  "sourceQuery": "",
-  "collectedPricesKrw": [],
-  "targetMatched": null
+  "textRepair": null
 }

@@ -1,0 +1,85 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
+  "category": "CPU",
+  "id": "cpu-amd-5-5-7600",
+  "name": "AMD 라이젠5-5세대 7600 (라파엘)",
+  "maker": "AMD",
+  "platform": "AM5",
+  "estimatedPriceKrw": 336740,
+  "priceBand": "30~60만원",
+  "speedLabel": "3.8GHz",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "CPU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 65,
+  "valueIndex": 19.3,
+  "aiUseScore": 42,
+  "powerWatts": 65,
+  "tags": [
+    "gaming",
+    "mainstream"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "CPU",
+    "partId": "cpu-amd-5-5-7600",
+    "partName": "AMD 라이젠5-5세대 7600 (라파엘)",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "CPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 650,
+      "value": 257,
+      "aiFit": 420,
+      "priceEfficiency": 300,
+      "powerEfficiency": 333
+    },
+    "nbVector": [
+      100,
+      650,
+      257,
+      420,
+      300,
+      333
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 235.932,
+    "nbMin": 400.027,
+    "weightedScore": 294,
+    "nbBand": "100~499",
+    "summary": "CPU AMD 라이젠5-5세대 7600 (라파엘) 부품을 속도 중심 N/B 데이터베이스 점수 294점으로 저장했습니다."
+  },
+  "nbWeightedScore": 294,
+  "nbMax": 235.932,
+  "nbMin": 400.027,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=AMD%20Ryzen%205%207600%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "Collected based on the Multipack (Retail) version price.",
+  "textRepair": null
+}

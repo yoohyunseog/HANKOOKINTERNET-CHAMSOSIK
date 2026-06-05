@@ -1,0 +1,86 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
+  "category": "SSD",
+  "id": "ssd-crucial-t500-2tb",
+  "name": "Crucial T500 2TB",
+  "maker": "Micron",
+  "platform": "PCIe 4.0",
+  "estimatedPriceKrw": 235732,
+  "priceBand": "15~30만원",
+  "speedLabel": "7,400MB/s",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "SSD",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 92,
+  "valueIndex": 39,
+  "aiUseScore": 60,
+  "powerWatts": null,
+  "tags": [
+    "NVMe",
+    "Gen4",
+    "PS5"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "SSD",
+    "partId": "ssd-crucial-t500-2tb",
+    "partName": "Crucial T500 2TB",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "SSD",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 920,
+      "value": 520,
+      "aiFit": 600,
+      "priceEfficiency": 420,
+      "powerEfficiency": 920
+    },
+    "nbVector": [
+      100,
+      920,
+      520,
+      600,
+      420,
+      920
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 392.551,
+    "nbMin": 366.493,
+    "weightedScore": 448,
+    "nbBand": "100~499",
+    "summary": "SSD Crucial T500 2TB 부품을 속도 중심 N/B 데이터베이스 점수 448점으로 저장했습니다."
+  },
+  "nbWeightedScore": 448,
+  "nbMax": 392.551,
+  "nbMin": 366.493,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Crucial%20T500%202TB%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "TLC, DRAM cache (2GB DDR4), Phison PS5025-E25 controller",
+  "textRepair": null
+}

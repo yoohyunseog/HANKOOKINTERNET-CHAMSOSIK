@@ -1,0 +1,307 @@
+{
+  "timestamp": "2026-06-05T22:24:59.648184",
+  "model": "kimi-k2.5:cloud",
+  "keyword_count": 3,
+  "analyze_subtitles": true,
+  "analysis_source": "youtube",
+  "keywords": [
+    {
+      "keyword": "오늘의 주요 뉴스",
+      "is_fixed": true,
+      "views": [
+        2234,
+        9497
+      ],
+      "video_count": 2,
+      "videos": [
+        {
+          "title": "[12 News] Today's Top News / SBS",
+          "video_id": "x5zGV0PvAsg",
+          "views": 2234,
+          "upload_date": "2026-06-05",
+          "url": "https://www.youtube.com/watch?v=x5zGV0PvAsg",
+          "subtitle_summary": "The user wants a summary of a YouTube video transcript in Korean, around 500 characters, with 3-5 sentences covering the key points. The transcript is about:\n1. Ballot paper shortage at Jamsil polling station, ballot boxes transported this morning, clashes between police and protesters during transport\n2. Chairman of National Election Commission (Noh Tae-hak) apologizing at 4 PM today regarding the ballot shortage, may mention his resignation\n3. Jensen Huang (NVIDIA CEO) visiting Korea after 7 months, 4-day schedule, dinner with SK Chairman Chey Tae-won and other business leaders (samgyeopsal meeting)\n4. KOSPI dropped more than 6% in morning, circuit breaker activated, but recovered somewhat in afternoon due to individual buying after semiconductor stocks plunged in New York\nI need to summarize this in Korean, around 500 characters, 3-5 sentences, no English.\nLet me draft:\n초유의 투표용지 부족 사태가 발생한 잠실 투표소에서 투표함이 반출되었으며, 이 과정에서 경찰과 시위대 간 충돌이 있었습니다. 노태학 중앙선거관리위원장은 오늘 오후 4시에 대국민 사과를 하며 거취에 대한 입장을 밝힐 예정입니다. 젠슨황 엔비디아 CEO가 7개월 만에 한국을 방문해 최태원 SK회장 등 국내 기업인들과 만남을 가집니다. 코스피는 장중 6% 이상 급락하며 매도 사이드카가 발동됐으나, 개인 매수세 유입으로 일부 회복했습니다.\nLet me count characters:\n초유의 투표용지 부족 사태가 발생한 잠실 투표소에서 투표함이 반출되었으며, 이 과정에서 경찰과 시위대 간 충돌이 있었습니다. (49 chars)\n노태학 중앙선거관리위원장은 오늘 오후 4시에 대국민 사과를 하며 거취에 대한 입장을 밝힐 예정입니다. (48 chars)\n젠슨황 엔비디아 CEO가 7개월 만에 한국을 방문해 최태원 SK회장 등 국내 기업인들과 만남을 가집니다. (49 chars)\n코스피는 장중 6% 이상 급락하며 매도 사이드카가 발동됐으나, 개인 매수세 유입으로 일부 회복했습니다. (48 chars)\nTotal around 194 characters. That's too short. The user asked for 500 characters \"내외\" (around 500), so 400-600 should be fine. But I should expand a bit more to be closer to 500.\nLet me expand:\n잠실 투표소에서 초유의 투표용지 부족 사태가 발생한 가운데, 오늘 오전 투표함이 반출되었고 경찰이 시위대를 강제 해산하는 과정에서 충돌이 빚어졌습니다. 노태학 중앙선거관리위원장은 오늘 오후 4시에 대국민 사과를 발표하며 자신의 거취에 대한 입장을 밝힐지 주목됩니다. 한편, 젠슨황 엔비디아 CEO가 7개월 만에 한국을 방문하여 최태원 SK회장 등 국내 주요 기업인들과 삼겹살 회동을 할 예정입니다. 코스피는 장중 6% 이상 급락하며 매도 사이드카가 발동됐으나, 뉴욕 증시 반도체 급락 영향에도 불구하고 개인 매수세가 유입되어 지수를 일부 회복했습니다.\nCount:\n1. 잠실 투표소에서 초유의 투표용지 부족 사태가 발생한 가운데, 오늘 오전 투표함이 반출되었고 경찰이 시위대를",
+          "analysis_source": "subtitle",
+          "db_saved": true
+        },
+        {
+          "title": "[뉴스브리핑] 오늘의 주요뉴스..투표용지 사태 일파만파, 노태악 거취 표명하나 / SBS",
+          "video_id": "43GZOX0AxFE",
+          "views": 9497,
+          "upload_date": "2026-06-05",
+          "url": "https://www.youtube.com/watch?v=43GZOX0AxFE",
+          "subtitle_summary": "The user wants a summary of the provided YouTube video transcript in Korean, around 500 characters, with 3-5 sentences covering the key points.\nKey points from the transcript:\n1. Voting paper shortage crisis led to protests and ballot box relocation in Songpa-gu, Seoul. Prime Minister Kim Min-seok mentioned possible National Assembly investigation or special prosecutor. CEC Chairman Roh Tae-ak plans to apologize at 4 PM, with attention on whether he'll resign.\n2. KOSPI dropped to 8000 level due to Broadcom's disappointing earnings affecting Samsung Electronics and SK Hynix. Foreigners selling for 20 consecutive days, exchange rate at 1540 won.\n3. Xi Jinping visiting North Korea on 8th-9th for state visit (first time in 7 years since 2019).\n4. NVIDIA CEO Jensen Huang arrived in Korea via Gimpo Airport, meeting SK Chairman Chey Tae-won and other business leaders for pork belly dinner, plus ceremonial first pitch and variety show appearances.\nI need to summarize this in Korean, around 500 characters, 3-5 sentences.\nDraft:\n사상 초유의 투표용지 부족 사태로 시위가 발생한 가운데, 김민석 총리는 국정조사나 특검을 언급하며 규명을 강조했고 노태악 중앙선관위원장은 대국민 사과를 앞두고 있어 거취 표명에 관심이 집중되고 있다. 코스피는 브로드컴 실적 부진 여파로 8000선까지 밀렸다가 회복했으며, 외국인 매도세로 원-달러 환율은 1540원대에서 거래되고 있다. 시진핑 중국 국가주석이 7년 만에 북한을 국빈 방문하며 북중 정상회담이 9개월 만에 성사된다. 한편 젠슨 황 엔비디아 CEO가 7개월 만에 방한해 국내 기업인들과 삼겹살 회동을 비롯한 일정을 소화할 예정이다.\nCharacter count check:\n사상 초유의 투표용지 부족 사태로 시위가 발생한 가운데, 김민석 총리는 국정조사나 특검을 언급하며 규명을 강조했고 노태악 중앙선관위원장은 대국민 사과를 앞두고 있어 거취 표명에 관심이 집중되고 있다. (96자)\n코스피는 브로드컴 실적 부진 여파로 8000선까지 밀렸다가 회복했으며, 외국인 매도세로 원-달러 환율은 1540원대에서 거래되고 있다. (72자)\n시진핑 중국 국가주석이 7년 만에 북한을 국빈 방문하며 북중 정상회담이 9개월 만에 성사된다. (49자)\n한편 젠슨 황 엔비디아 CEO가 7개월 만에 방한해 국내 기업인들과 삼겹살 회동을 비롯한 일정을 소화할 예정이다. (59자)\nTotal: around 276 characters. This is too short. The user asked for around 500 characters (500자 내외). I should expand a bit more.\nRevised draft:\n사상 초유의 투표용지 부족 사태로 투표소 봉쇄와 시위가 이어진 가운데, 김민석 국무총리는 국정조사나 특검을 통한 규명을 강조했고 노태악 중앙선관위원장은 대국민 사과를 앞두고 있어 거취 표명 여부에 관심이 집중되고 있다. 코스피는 브로드컴 실적 부진 여파로 8000선까지 밀렸다가 개인 매수세로 회복했으며, 외국인 20거래일 연",
+          "analysis_source": "subtitle",
+          "db_saved": true
+        }
+      ],
+      "max": 2.9184,
+      "min": 1.2199,
+      "nb_score": 2.3923,
+      "avg_views": 5865.5,
+      "total_views": 11731
+    },
+    {
+      "keyword": "엔비디아 CEO 한국 방문",
+      "is_fixed": false,
+      "views": [
+        5218,
+        19050,
+        46569,
+        14751
+      ],
+      "video_count": 4,
+      "videos": [
+        {
+          "title": "[이슈] 젠슨 황 엔비디아 CEO 방한…최태원·정의선·구광모·이해진과 '삼겹살·소맥 회동' 예정 / 3박 4일 일정…잠실 마운드 오른다 | MBN NEWS",
+          "video_id": "hQt8uxtM3Xw",
+          "views": 5218,
+          "upload_date": "2026-06-05",
+          "url": "https://www.youtube.com/watch?v=hQt8uxtM3Xw",
+          "subtitle_summary": "젠슨 황 엔비디아 CEO가 3박 4일 일정으로 한국을 방문한다. 이번 방문에서 그는 국내 주요 그룹 총수들과 만남을 가질 예정이다. 특히 성수동에서 최태원 SK그룹 회장, 정의선 현대차그룹 회장, 구광모 LG그룹 회장, 이해진 네이버 창업자와 함께 삼겹살과 소맥을 나누는 비공식 회동이 예정되어 있다. 이 자리에서는 인공지능 분야 협력 방안이 주요 의제로 다뤄질 것으로 보인다. 특히 구광모 회장과의 만남을 앞두고 LG그룹 계열사 주가가 급등하는 등 시장의 관심이 집중되고 있다. 또한 젠슨 황은 방문 기간 중 잠실 야구장에서 열리는 두산베어스 홈경기 시구에 나설 예정이다. 이번 방문은 엔비디아와 국내 기업들 간의 AI 생태계 협력 강화를 위한 중요한 계기가 될 전망이다. 글자 수 확인: 약 380자로 부족함. 좀 더 상세히 작성 필요. 수정: 젠슨 황 엔비디아 CEO가 3박 4일 일정으로 한국을 방문한다. 이번 방문에서 그는 국내 주요 그룹 총수들과 만남을 가질 예정이다. 특히 성수동에서 최태원 SK그룹 회장, 정의선 현대차그룹 회장, 구광모 LG그룹 회장, 이해진 네이버 창업자와 함께 삼겹살과 소맥을 나누는 비공식 회동이 예정되어 있다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        },
+        {
+          "title": "[뉴스포커스]  젠슨 황, 오후 방한…환율, 금융위기 이후 최고 / 연합뉴스TV (YonhapnewsTV)",
+          "video_id": "_sRmIC1YoE0",
+          "views": 19050,
+          "upload_date": "2026-06-05",
+          "url": "https://www.youtube.com/watch?v=_sRmIC1YoE0",
+          "subtitle_summary": "The user wants me to summarize a YouTube video transcript in Korean, within approximately 500 characters, using 3-5 sentences. The content is about:\n1. Jensen Huang (NVIDIA CEO) visiting Korea today (arriving at Gimpo airport, meeting with business leaders, eating samgyeopsal, throwing first pitch at baseball game)\n2. Exchange rate hitting highest since financial crisis (over 1,540 won)\n3. KOSPI dropping significantly (to 2,840 level), Samsung Electronics down ~7%, SK Hynix down ~10%\n4. Reasons for market decline:\nBroadcom earnings disappointment (revenue good but outlook below expectations)\nAI semiconductor disappointment leading to profit-taking\nMoney moving to Space X IPO and other year-end IPOs (capital flight from emerging markets)\nHigh exchange rate (foreign investors leaving to avoid forex losses)\nI need to summarize this in Korean only, no English, around 500 characters, 3-5 sentences.\nKey points to include:\nJensen Huang's visit to Korea\nKOSPI and semiconductor stocks (Samsung, SK Hynix) sharp decline\nReasons: Broadcom earnings disappointment, shift to Space X IPO capital flight, high exchange rate (1,540+ won) causing foreign investor exodus\nLet me draft:\n젠슨 황이 오늘 오후 김포공항을 통해 입국해 국내 기업 총수들과 회동 및 프로야구 시구 등 일정을 소화한다. 한편 간밤의 환율이 1,540원을 넘어 금융위기 이후 최고치를 기록하는 등 원화 가치가 급락하면서 코스피는 2,840선까지 밀렸고 삼성전자와 SK하이닉스는 각각 7%, 10% 가까이 급락했다. 이번 주식 시장 급락은 브로드컴 실적 악화로 인한 AI 반도체 실망 매물 출회와 연말 스페이스X 등 대형 IPO를 위한 자금 이동, 그리고 환율 상승에 따른 외국인 투자자들의 자금 유출이 주요 원인으로 꼽힌다.\nCharacter count check:\n젠슨 황이 오늘 오후 김포공항을 통해 입국해 국내 기업 총수들과 회동 및 프로야구 시구 등 일정을 소화한다. (49자)\n한편 간밤의 환율이 1,540원을 넘어 금융위기 이후 최고치를 기록하는 등 원화 가치가 급락하면서 코스피는 2,840선까지 밀렸고 삼성전자와 SK하이닉스는 각각 7%, 10% 가까이 급락했다. (96자)\n이번 주식 시장 급락은 브로드컴 실적 악화로 인한 AI 반도체 실망 매물 출회와 연말 스페이스X 등 대형 IPO를 위한 자금 이동, 그리고 환율 상승에 따른 외국인 투자자들의 자금 유출이 주요 원인으로 꼽힌다. (108자)\nTotal: 253 characters. This is too short (should be around 500). Let me expand slightly while keeping it concise.\nRevised:\n엔비디아 젠슨 황 CEO가 오늘 오후 김포공항을 통해 입국해 국내 기업 총수들과 삼겹살 회동 및 프로야구 시구 등 일정을 소화할 예정이다. 한편 간밤의 환율이 1,540원을 넘어 금융위기 이후 최고치를 기록하는 등 원화 가치가 급락하면서 코스피는 2,840선까지 밀렸고 삼성전자와 SK하이닉스는 각각 7%, 10% 가까이 급락하며 반도체주가 크게 흔들렸다. 이번 시장 급락은 브로",
+          "analysis_source": "subtitle",
+          "db_saved": true
+        },
+        {
+          "title": "젠슨 황, 오늘 방한 첫 일정은 PC방…페이커 만난다 - [끝까지LIVE] MBC 중계방송 2026년 06월 05일",
+          "video_id": "qu9FsJYL5NM",
+          "views": 46569,
+          "upload_date": "2026-06-05",
+          "url": "https://www.youtube.com/watch?v=qu9FsJYL5NM",
+          "subtitle_summary": "The user wants a summary of a YouTube video transcript in Korean, around 500 characters, with 3-5 sentences. The transcript appears to be about Jensen Huang (젠슨 황) visiting Korea, specifically a PC bang (internet cafe), and meeting Faker (페이커).\nKey points from the transcript:\nJensen Huang visiting Korea\nFirst schedule is at a PC bang (PC방)\nMeeting Faker (implied by title)\nDiscussion about data being the biggest problem for AI/agentic systems/robotic systems\nGaming origins of Nvidia\nKorea being the birthplace of esports\nDiscussion about GPUs (4070, 5070)\nStarcraft mention\nThe transcript is a bit messy with auto-generated captions, but the main content seems to be:\n1. Jensen Huang talking about AI and data challenges\n2. Visiting a PC bang in Korea\n3. Meeting gamers/Faker\n4. Discussing Nvidia's history with gaming and Korea's role in esports\n5. GPU recommendations (4070 vs 5070)\nI need to write a summary in Korean only, no English, around 500 characters (which is roughly 3-5 sentences in Korean).\nStructure:\n젠슨 황이 방한하여 PC방을 방문한 내용\nAI와 데이터 문제에 대한 언급\n한국 게이밍 문화와 엔비디아의 연관성\n페이커와의 만남 및 GPU 관련 대화\nDraft:\n젠슨 황이 방한 첫 일정으로 PC방을 방문해 게이머들과 소통했습니다. 그는 AI 발전의 최대 과제가 데이터이며, 특히 에이전틱 시스템과 물리 AI에서 데이터 확보가 중요하다고 언급했습니다. 또한 엔비디아가 게이밍에서 시작됐으며, 한국이 e스포츠의 발상지인 만큼 한국 게이머들이 최고의 GPU를 선택해왔다고 강조했습니다. 이 자리에서 그는 페이커를 포함한 프로게이머들을 만나 RTX 4070과 5070 등 최신 그래픽카드에 대한 대화를 나누며 스타크래프트 등 한국 게임 문화에 대한 애정을 표현했습니다.\nCharacter count check:\n젠슨 황이 방한 첫 일정으로 PC방을 방문해 게이머들과 소통했습니다. (38자)\n그는 AI 발전의 최대 과제가 데이터이며, 특히 에이전틱 시스템과 물리 AI에서 데이터 확보가 중요하다고 언급했습니다. (67자)\n또한 엔비디아가 게이밍에서 시작됐으며, 한국이 e스포츠의 발상지인 만큼 한국 게이머들이 최고의 GPU를 선택해왔다고 강조했습니다. (67자)\n이 자리에서 그는 페이커를 포함한 프로게이머들을 만나 RTX 4070과 5070 등 최신 그래픽카드에 대한 대화를 나누며 스타크래프트 등 한국 게임 문화에 대한 애정을 표현했습니다. (96자)\nTotal: around 268 characters. This is too short. The user asked for 500 characters 내외 (around 500). Let me expand.\nRevised:\n젠슨 황이 방한 첫 일정으로 PC방을 방문해 페이커 등 프로게이머들과 만났습니다. 그는 AI 발전의 최대 과제가 데이터이며, 특히 에이전틱 시스템과 물리 AI 구현에서 데이터 확보가 가장 어렵다고 언급했습니다. 또한 엔비디아가 게이밍에서 시작됐으며, 한국이 e스포츠의 발상지이자 게이머들이 승리를 위해 최고의 GPU를 선택하는 문화를 가진 곳이라고 강조했습니다. 이 자리에서 그는 RTX 4070과 5070 등 최신 그래픽카드 성능에 대한 대화를 나누며 스타크래프트 등",
+          "analysis_source": "subtitle",
+          "db_saved": true
+        },
+        {
+          "title": "[LIVE] 젠슨 황 CEO 입국 \"한국에 선물 많이 가져왔어\"…입국 기자회견 생중계 / 페이커 만나고 '삼겹살 회동'…동선도 관심 폭발 /2026년 6월 5일(금)/KBS",
+          "video_id": "kivONfs3N9g",
+          "views": 14751,
+          "upload_date": "2026-06-05",
+          "url": "https://www.youtube.com/watch?v=kivONfs3N9g",
+          "subtitle_summary": "The user wants a summary of a YouTube video transcript in Korean, around 500 characters, with 3-5 sentences. The video is about Jensen Huang (CEO of NVIDIA) arriving in Korea.\nKey points from the transcript:\n1. Jensen Huang mentions he missed Korean fried chicken\n2. He wants to thank partners and customers in Korea\n3. AI buildout is accelerating, Korean market is doing well\n4. Second half of year will be bigger than first half, next year will be very large\n5. He wants to align with partners and prepare them\n6. Specific topics: aligning supply chain (SD RAMs, HBM memories, chips)\n7. Large AI infrastructure buildout mentioned\n8. Grace Blackwell system doing well, Ver Rubin in full production\n9. Busy second half expected\n10. Reporter asks if he brought gifts for Korea (like GPUs last time)\nI need to summarize this in Korean, around 500 characters, 3-5 sentences, no English.\nStructure:\nOpening: 젠슨 황 CEO가 한국을 방문해 파트너사 및 고객들과의 만남을 가졌다.\nMain content: AI 인프라 구축 가속화와 한국 시장의 성과를 언급하며, 하반기 및 내년 사업 확대를 위한 공급망 정렬을 논의할 예정임을 밝혔다. HBM, 반도체 등 핵심 부품 공급망 협력과 함께 그레이스 블랙웰 시스템의 성과를 강조했다.\nClosing: 지난 방문 때 GPU를 선물로 가져온 것처럼 이번에도 특별한 선물을 준비했다는 뉘앙스를 남겨 한국 팬들의 관심을 모았다.\nLet me check character count:\n젠슨 황 CEO가 한국을 방문해 파트너사 및 고객들과의 만남을 가졌다. AI 인프라 구축 가속화와 한국 시장의 성과를 언급하며, 하반기 및 내년 사업 확대를 위한 공급망 정렬을 논의할 예정임을 밝혔다. HBM, 반도체 등 핵심 부품 공급망 협력과 함께 그레이스 블랙웰 시스템의 성과를 강조했다. 지난 방문 때 GPU를 선물로 가져온 것처럼 이번에도 특별한 선물을 준비했다는 뉘앙스를 남겨 한국 팬들의 관심을 모았다.\nCount: around 240 characters. That's too short. I need to expand to around 500 characters.\nLet me expand:\n젠슨 황 엔비디아 CEO가 한국을 방문해 파트너사 및 고객들과의 만남을 가졌다. 그는 AI 인프라 구축이 가속화되고 있으며 한국 시장이 매우 좋은 성과를 내고 있다고 평가했다. 특히 하반기와 내년 사업 규모가 크게 확대될 것으로 예상하며, HBM과 반도체 등 핵심 부품 공급망 정렬을 위한 협력을 강조했다. 그레이스 블랙웰 시스템의 성공과 차세대 제품 루빈의 양산 준비 상황도 언급하며 바쁜 하반기를 예고했다. 또한 지난 방문 때 GPU를 선물로 가져온 것처럼 이번에도 한국을 위한 특별한 선물을 준비했다고 밝혀 현지 팬들의 기대를 모았다.\nCharacter count check:\n젠슨 황 엔비디아 CEO가 한국을 방문해 파트너사 및 고객들과의 만남을 가졌다. (38)\n그는 AI 인프라 구축이 가속화되고 있으며 한국 시장이 매우 좋은 성과를 내고 있다고",
+          "analysis_source": "subtitle",
+          "db_saved": true
+        }
+      ],
+      "max": 1.1625,
+      "min": 2.2238,
+      "nb_score": 0.5227,
+      "avg_views": 21397.0,
+      "total_views": 85588
+    },
+    {
+      "keyword": "반도체 주식 전망",
+      "is_fixed": false,
+      "views": [
+        504,
+        411,
+        1113
+      ],
+      "video_count": 3,
+      "videos": [
+        {
+          "title": "[한미반도체 주가 전망] 29만원까지 추락…지금 잡으면 안 되는 이유 #한미반도체주가 #HBM4 #SK하이닉스관련주",
+          "video_id": "jUCBj6YaQUQ",
+          "views": 504,
+          "upload_date": "2026-06-05",
+          "url": "https://www.youtube.com/watch?v=jUCBj6YaQUQ",
+          "subtitle_summary": "The user wants a summary of a YouTube video transcript about Hanmi Semiconductor stock in Korean, around 500 characters, with 3-5 sentences capturing the key points.\nKey points from the transcript:\n1. Hanmi Semiconductor stock fell from 420,000 won high to 290,000 won (31% correction)\n2. Positive factor: New business opportunity with HBF (next-gen memory) bonding equipment using their world-leading TC bonder technology, in addition to HBM\n3. Negative factor: Short-term weakness, foreign and institutional selling, correction phase\n4. Conclusion: Long-term story (HBM + HBF) is valid but short-term is in correction phase due to profit-taking\n5. The speaker emphasizes that being a good company vs. good entry timing are different issues\n6. Technical analysis mentioned about support levels but not detailed in the provided text\nI need to summarize this in 3-5 sentences, around 500 characters in Korean.\nDraft:\n한미반도체는 HBM4 수혜 기대감으로 42만 원까지 상승했으나 현재 29만 원대로 31% 조정받고 있습니다. 장기적으로는 HBF(차세대 메모리) 본딩 장비 수주까지 기대되는 호재가 있으나, 단기적으로는 외국인·기관 매도와 차익 매물로 인해 조정 국면에 진입했습니다. 좋은 기업이라도 현재는 바닥이 아닌 하락 추세 중이므로, 추가 하락 가능성을 고려해 신중한 접근이 필요한 시점입니다.\nCharacter count check:\n한미반도체는 HBM4 수혜 기대감으로 42만 원까지 상승했으나 현재 29만 원대로 31% 조정받고 있습니다. (49자)\n장기적으로는 HBF(차세대 메모리) 본딩 장비 수주까지 기대되는 호재가 있으나, 단기적으로는 외국인·기관 매도와 차익 매물로 인해 조정 국면에 진입했습니다. (67자)\n좋은 기업이라도 현재는 바닥이 아닌 하락 추세 중이므로, 추가 하락 가능성을 고려해 신중한 접근이 필요한 시점입니다. (52자)\nTotal: around 168 characters. Too short. Need to expand to around 500 characters.\nLet me expand:\n한미반도체는 HBM4 수혜 기대로 42만 원 신고가를 찍었으나 현재 29만 원대로 31% 급락하며 조정받고 있습니다. 장기적으로는 차세대 메모리 HBF용 본딩 장비까지 수주할 가능성이 높아 AI 반도체 장비 수혜 스토리는 유효하지만, 단기적으로는 외국인과 기관의 매도세로 인해 차익 매물이 쏟아지며 하락 추세가 이어지고 있습니다. 따라서 좋은 기업이라도 현재는 단순히 저점이라고 보기 어려운 매도세 지속 구간이므로, 추가 하락 가능성을 충분히 고려하고 기술적 지지선 확인 후 신중하게 접근해야 합니다.\nCharacter count:\n한미반도체는 HBM4 수혜 기대로 42만 원 신고가를 찍었으나 현재 29만 원대로 31% 급락하며 조정받고 있습니다. (52자)\n장기적으로는 차세대 메모리 HBF용 본딩 장비까지 수주할 가능성이 높아 AI 반도체 장비 수혜 스토리는 유효하지만, 단기적으로는 외국인과 기관의 매도세로 인해 차익 매물이 쏟아지며 하락 추세가 이어지고 있습니다. (96자)\n따라서 좋은 기업이라도 현재는 단순히 저점이라고 보기 어려운 매도세 지속 구간이므로, 추가 하락 가능성을 충분히 고려하고 기술적 지지선 확인 후 신중",
+          "analysis_source": "subtitle",
+          "db_saved": true
+        },
+        {
+          "title": "[한미반도체 주가전망] 한미반도체 6월 역대급 7,850억 폭발한다! 지금 안 사면 평생 후회할 무조건 대장주 총정리",
+          "video_id": "nH3ug89vLRs",
+          "views": 411,
+          "upload_date": "2026-06-05",
+          "url": "https://www.youtube.com/watch?v=nH3ug89vLRs",
+          "subtitle_summary": "The user wants a summary of a YouTube video transcript about Hanmi Semiconductor stock outlook. The summary must be:\n1. Only in Korean (no English at all)\n2. Around 500 characters\n3. 3-5 sentences capturing key points\n4. The video title mentions explosive growth of 785 billion won in June, and it's about Hanmi Semiconductor stock forecast\nKey points from the transcript:\nHanmi Semiconductor stock showing roller coaster volatility recently\nCurrently taking a breather (slight decline)\nQ1 performance was weak due to equipment delivery timing, but Q2 will see turnaround with TC bonder equipment orders for HBM (High Bandwidth Memory) reflecting in sales\nExpected annual sales of 785 billion won (36% increase), operating profit of 369.4 billion won (46% increase) - record high\nDespite short-term volatility due to profit-taking and NVIDIA's pause, Hanmi Semiconductor still holds dominance in TC bonder supply for next-gen HBM\nWhen Q2 numbers come out, stock expected to rally strongly toward previous highs\nThe speaker also mentions previous stock recommendations (Woorinet, Sama Aluminum) that yielded high returns (87%, 106%)\nI need to summarize this in 3-5 sentences, around 500 characters, only in Korean.\nDraft:\n한미반도체는 1분기 실적 부진을 딛고 2분기부터 HBM용 TC본더 수주 물량이 본격 반영되며 연간 매출 7,850억 원, 영업이익 3,694억 원의 사상 최대 실적을 기록할 전망이다. 단기 차익 실현과 엔비디아 조정으로 변동성이 있지만, 차세대 HBM 양산의 TC본더 공급 주도권은 여전히 한미반도체가 쥐고 있어 완벽한 구조적 성장주로 평가된다. 2분기 실적 턴어라운드가 본격화되면 주가는 전고점을 향한 폭발적 랠리를 시작할 것으로 예상되며, 현재는 매수 타이밍을 고민하는 투자자들에게 중요한 시점이다.\nCharacter count check:\n한미반도체는 1분기 실적 부진을 딛고 2분기부터 HBM용 TC본더 수주 물량이 본격 반영되며 연간 매출 7,850억 원, 영업이익 3,694억 원의 사상 최대 실적을 기록할 전망이다. (96 characters)\n단기 차익 실현과 엔비디아 조정으로 변동성이 있지만, 차세대 HBM 양산의 TC본더 공급 주도권은 여전히 한미반도체가 쥐고 있어 완벽한 구조적 성장주로 평가된다. (89 characters)\n2분기 실적 턴어라운드가 본격화되면 주가는 전고점을 향한 폭발적 랠리를 시작할 것으로 예상되며, 현재는 매수 타이밍을 고민하는 투자자들에게 중요한 시점이다. (84 characters)\nTotal: around 269 characters. This is too short (needs to be around 500). Let me expand.\nRevised draft:\n한미반도체는 1분기 실적 공백을 딛고 2분기부터 HBM용 TC본더 수주 물량이 본격 반영되며 연간 매출 7,850억 원, 영업이익 3,694억 원의 사상 최대 실적을 달성할 것으로 전망된다. 단기적인 차익 실현 매물과 엔비디아 주가 조정으로 인한 변동성이 확대되고 있지만, 차세대 HBM 양산에 필요한 TC본더 공급 주도권은 여전히 한미반도체가 확보하고 있어 완벽한 구조적 성장주로 평가받고 있다. 2분기 실적 턴어라운드가 본격화되면 주가는 전고점을 향한 강력한 랠리를 시작할 것으로 예",
+          "analysis_source": "subtitle",
+          "db_saved": true
+        },
+        {
+          "title": "[한미반도체 주가전망] 지금 흐름은 끝난 게 아니라 다시 힘 모으는 구간이다… HBM 핵심 장비 재평가가 살아있어 거래량 붙으면 반등 탄력은 폭발적일 수 있다🔥목표가 \"이 가격\"🔥",
+          "video_id": "7XevC7OjARY",
+          "views": 1113,
+          "upload_date": "2026-06-05",
+          "url": "https://www.youtube.com/watch?v=7XevC7OjARY",
+          "subtitle_summary": "The user wants a summary of a YouTube video transcript about Hanmi Semiconductor stock outlook. The summary must be:\n1. Only in Korean (no English at all)\n2. Around 500 characters\n3. 3-5 sentences capturing key points\n4. The content is about the stock being in a consolidation phase after breaking below a channel, having potential for explosive rebound due to HBM equipment revaluation, and the speaker explaining entry points/target prices.\nKey points from the transcript:\nHanmi Semiconductor broke below the channel it was rising in\nCurrently moving below the channel bottom, so limited upside but not impossible\nIf it breaks below the cloud bottom again, could become a long-term battle, but the cloud is thin ahead so it has strength to break through\nSpeaker will explain response strategies/entry points with specific price levels\nHBM core equipment revaluation is alive, if volume comes in, rebound elasticity could be explosive\nTarget price mentioned (\"이 가격\")\nI need to write this in 3-5 sentences, around 500 characters, purely in Korean.\nDraft:\n한미반도체는 기존 상승 채널을 이탈하여 조정을 받고 있으나, 이는 상승이 끝난 것이 아닌 힘을 모으는 구간으로 해석됩니다. HBM 핵심 장비에 대한 재평가가 살아있어 거래량이 붙으면 폭발적인 반등 탄력을 보일 수 있는 상태입니다. 구름대 하단 이탈 시 장기전이 될 수 있으나, 앞단 구름대가 얇아 충분히 돌파할 수 있는 힘은 갖춰져 있습니다. 현재 타점과 목표가를 구체적으로 제시하며 대응 전략을 설명하고 있습니다.\nCharacter count check:\n한미반도체는 기존 상승 채널을 이탈하여 조정을 받고 있으나, 이는 상승이 끝난 것이 아닌 힘을 모으는 구간으로 해석됩니다.(67) HBM 핵심 장비에 대한 재평가가 살아있어 거래량이 붙으면 폭발적인 반등 탄력을 보일 수 있는 상태입니다.(63) 구름대 하단 이탈 시 장기전이 될 수 있으나, 앞단 구름대가 얇아 충분히 돌파할 수 있는 힘은 갖춰져 있습니다.(64) 현재 타점과 목표가를 구체적으로 제시하며 대응 전략을 설명하고 있습니다.(43)\nTotal: around 237 characters. Too short.\nLet me expand:\n한미반도체는 기존 상승 채널을 이탈하여 조정을 받고 있으나, 이는 상승이 끝난 것이 아닌 다시 힘을 모으는 구간으로 해석됩니다. HBM 핵심 장비에 대한 재평가가 살아있어 거래량이 붙으면 폭발적인 반등 탄력을 보일 수 있는 상태이며, 구름대 하단을 이탈하면 장기전이 될 수 있으나 앞단 구름대가 얇아 충분히 돌파할 수 있는 힘은 갖춰져 있습니다. 현재 타점과 목표가를 구체적으로 제시하며 대응 전략을 설명하고 있으니, 영상을 통해 구체적인 매수가와 손절가를 확인하시기 바랍니다.\nCount:\n한미반도체는 기존 상승 채널을 이탈하여 조정을 받고 있으나, 이는 상승이 끝난 것이 아닌 다시 힘을 모으는 구간으로 해석됩니다.(69) HBM 핵심 장비에 대한 재평가가 살아있어 거래량이 붙으면 폭발적인 반등 탄력을 보일 수 있는 상태이며, 구름대 하단을 이탈하면 장기전이 될 수 있으나 앞단 구름대가 얇아 충분히 돌파할 수 있는 힘은 갖춰져 있습니다.(118) 현재 타점과",
+          "analysis_source": "subtitle",
+          "db_saved": true
+        }
+      ],
+      "max": 1.1803,
+      "min": 3.8639,
+      "nb_score": 0.3055,
+      "avg_views": 676.0,
+      "total_views": 2028
+    },
+    {
+      "keyword": "삼성 SK 하이닉스 HBM",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "AI 반도체 협력",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "K리그2 경기 일정",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "비트코인 하락 원인",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "유한양행 주가 전망",
+      "is_fixed": false,
+      "views": [
+        56
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "[유한양행 주가전망][긴급분석] 유한양행 파이프라인 IR 공시 떴는데 8만 원 붕괴? 58만주 거래량 증발에 숨겨진 세력의 소름 돋는 주말 세팅",
+          "video_id": "nCxF_4w6O_8",
+          "views": 56,
+          "upload_date": "2026-06-05",
+          "url": "https://www.youtube.com/watch?v=nCxF_4w6O_8",
+          "subtitle_summary": "The user wants a summary of a YouTube video transcript about Yuhan Corporation (유한양행) stock analysis. The requirements are:\n1. Respond ONLY in Korean (no English at all)\n2. Around 500 characters\n3. 3-5 sentences summarizing key points\n4. The content is about Yuhan Yanghaeng stock price dropping below 80,000 won despite pipeline IR disclosure, with trading volume disappearing (580,000 shares), suggesting institutional manipulation to shake out retail investors before a potential V-shaped rally.\nKey points from the transcript:\nStock dropped 3% to 77,700 won, breaking 80,000 support\nTrading volume was only 580,000 shares (very low for the drop)\nIR announcement about pipeline came out at market close\nSpeaker interprets this as intentional \"retail investor shaking\" (개미털기) by major forces to collect shares at the bottom before a rally\nAdvises not to panic sell over the weekend\nI need to write this in Korean only, around 500 characters, in 3-5 sentences.\nDraft:\n유한양행 주가가 8만 원 선을 붕괴하며 77,700원에 마감했으나, 거래량이 58만 주에 불과해 실질적인 매도세는 약했습니다. 장 마감 직전 파이프라인 IR 공시가 예정된 가운데, 주요 세력이 저가에서 개미 털기를 통해 물량을 수집하려는 의도적인 주가 압박으로 분석됩니다. 본질적 가치에 변화가 없는 공포 유발형 하락이므로 주말 동안 절망하거나 손절하지 말고, 다가올 반등에 대비한 전략을 세울 것을 조언합니다.\nCharacter count check:\n유한양행 주가가 8만 원 선을 붕괴하며 77,700원에 마감했으나, 거래량이 58만 주에 불과해 실질적인 매도세는 약했습니다. (49자)\n장 마감 직전 파이프라인 IR 공시가 예정된 가운데, 주요 세력이 저가에서 개미 털기를 통해 물량을 수집하려는 의도적인 주가 압박으로 분석됩니다. (58자)\n본질적 가치에 변화가 없는 공포 유발형 하락이므로 주말 동안 절망하거나 손절하지 말고, 다가올 반등에 대비한 전략을 세울 것을 조언합니다. (59자)\nTotal: around 166 characters. That's too short. I need to expand to around 500 characters.\nLet me expand:\n유한양행 주가가 3% 하락하며 8만 원 지지선이 붕괴되어 77,700원에 마감했으나, 거래량이 58만 주에 그쳐 실질적인 매도 압력은 미미했습니다. 장 마감 직전 파이프라인 관련 IR 공시가 예정된 상황에서, 주요 세력이 의도적으로 호가창을 비우며 저가에서 개미 털기를 통해 물량을 수집하려는 소름 돋는 시나리오로 해석됩니다. 기업의 본질적 가치와 신약 파이프라인에는 변화가 없는 단기적 공포 유발 하락이므로, 주말 동안 절망하거나 바닥에서 손절하지 말고 차기 주 역대급 반등 랠리에 대비한 전략을 세울 것을 강력히 조언합니다.\nCharacter count:\n유한양행 주가가 3% 하락하며 8만 원 지지선이 붕괴되어 77,700원에 마감했으나, 거래량이 58만 주에 그쳐 실질적인 매도 압력은 미미했습니다. (67자)\n장 마감 직전 파이프라인 관련 IR 공시가 예",
+          "analysis_source": "subtitle",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "아우디 전기차 출시",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "서울국제환경영화제",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "투표용지 부족 사태",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "코스피 2700 붕괴 이유",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "청년 창업 지원 정책",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "AI 기술 개발 동향",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "MZ 세대 소비 트렌드",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    }
+  ]
+}

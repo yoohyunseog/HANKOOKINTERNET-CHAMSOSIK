@@ -1,0 +1,86 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
+  "category": "GPU",
+  "id": "gpu-asus-rog-strix-geforce-rtx-4090-oc-eva-02-edition",
+  "name": "ASUS ROG Strix GeForce RTX 4090 OC EVA-02 Edition",
+  "maker": "ASUS",
+  "platform": "PCIe 4.0",
+  "estimatedPriceKrw": 8881300,
+  "priceBand": "60만원 이상",
+  "speedLabel": "OC",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "GPU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 100,
+  "valueIndex": 1.1,
+  "aiUseScore": 65,
+  "powerWatts": 450,
+  "tags": [
+    "gaming",
+    "collector",
+    "eva-02"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "GPU",
+    "partId": "gpu-asus-rog-strix-geforce-rtx-4090-oc-eva-02-edition",
+    "partName": "ASUS ROG Strix GeForce RTX 4090 OC EVA-02 Edition",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "GPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 1000,
+      "value": 100,
+      "aiFit": 650,
+      "priceEfficiency": 10,
+      "powerEfficiency": 100
+    },
+    "nbVector": [
+      100,
+      1000,
+      100,
+      650,
+      10,
+      100
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 123.262,
+    "nbMin": 270.044,
+    "weightedScore": 328,
+    "nbBand": "100~499",
+    "summary": "GPU ASUS ROG Strix GeForce RTX 4090 OC EVA-02 Edition 부품을 속도 중심 N/B 데이터베이스 점수 328점으로 저장했습니다."
+  },
+  "nbWeightedScore": 328,
+  "nbMax": 123.262,
+  "nbMin": 270.044,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=ASUS%20GeForce%20RTX%204090%20ROG%20Strix%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "Special EVA-02 Edition of the ROG Strix 4090",
+  "textRepair": null
+}

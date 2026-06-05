@@ -1,0 +1,85 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
+  "category": "PSU",
+  "id": "psu-new-focus-v4-gx-750-gold-atx3.1",
+  "name": "NEW FOCUS V4 GX-750 GOLD 풀모듈러 ATX3.1",
+  "maker": "시소닉",
+  "platform": "ATX",
+  "estimatedPriceKrw": 180290,
+  "priceBand": "15~30만원",
+  "speedLabel": "80 PLUS GOLD",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "PSU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 75,
+  "valueIndex": 41.6,
+  "aiUseScore": 49,
+  "powerWatts": 750,
+  "tags": [
+    "full-modular",
+    "ATX3.1"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "PSU",
+    "partId": "psu-new-focus-v4-gx-750-gold-atx3.1",
+    "partName": "NEW FOCUS V4 GX-750 GOLD 풀모듈러 ATX3.1",
+    "speed": {
+      "score": 100,
+      "weight": 0.32,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "PSU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 750,
+      "value": 555,
+      "aiFit": 490,
+      "priceEfficiency": 550,
+      "powerEfficiency": 100
+    },
+    "nbVector": [
+      100,
+      750,
+      555,
+      490,
+      550,
+      100
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 292.581,
+    "nbMin": 388.348,
+    "weightedScore": 359,
+    "nbBand": "100~499",
+    "summary": "PSU NEW FOCUS V4 GX-750 GOLD 풀모듈러 ATX3.1 부품을 속도 중심 N/B 데이터베이스 점수 359점으로 저장했습니다."
+  },
+  "nbWeightedScore": 359,
+  "nbMax": 292.581,
+  "nbMin": 388.348,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=%EC%8B%9C%EC%86%8C%EB%8B%89%20FOCUS%20GX-750%20GOLD%20Full%20Modular%20%EA%B0%80%EA%B2%A9%20%EB%8B%A4%EB%82%98%EC%99%80",
+  "notes": "V4 series, ATX 3.1 compliant",
+  "textRepair": null
+}

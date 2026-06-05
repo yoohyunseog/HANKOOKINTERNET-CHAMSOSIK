@@ -1,0 +1,85 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
+  "category": "GPU",
+  "id": "gpu-asus-dual-geforce-rtx-5060-8gb-gddr7-oc-edition",
+  "name": "ASUS Dual GeForce RTX 5060 8GB GDDR7 OC Edition",
+  "maker": "ASUS",
+  "platform": "PCIe 5.0",
+  "estimatedPriceKrw": 988670,
+  "priceBand": "60만원 이상",
+  "speedLabel": "OC",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "GPU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 60,
+  "valueIndex": 6.1,
+  "aiUseScore": 39,
+  "powerWatts": 150,
+  "tags": [
+    "gaming",
+    "dlss4"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "GPU",
+    "partId": "gpu-asus-dual-geforce-rtx-5060-8gb-gddr7-oc-edition",
+    "partName": "ASUS Dual GeForce RTX 5060 8GB GDDR7 OC Edition",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "GPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 600,
+      "value": 100,
+      "aiFit": 390,
+      "priceEfficiency": 100,
+      "powerEfficiency": 133
+    },
+    "nbVector": [
+      100,
+      600,
+      100,
+      390,
+      100,
+      133
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 108.57,
+    "nbMin": 367.345,
+    "weightedScore": 231,
+    "nbBand": "100~499",
+    "summary": "GPU ASUS Dual GeForce RTX 5060 8GB GDDR7 OC Edition 부품을 속도 중심 N/B 데이터베이스 점수 231점으로 저장했습니다."
+  },
+  "nbWeightedScore": 231,
+  "nbMax": 108.57,
+  "nbMin": 367.345,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=GeForce%20RTX%205060%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "GDDR7 memory, PCIe 5.0 support",
+  "textRepair": null
+}

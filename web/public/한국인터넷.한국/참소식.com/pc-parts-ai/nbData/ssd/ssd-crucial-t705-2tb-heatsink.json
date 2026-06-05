@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-06-01T15:15:41.819+09:00",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
   "category": "SSD",
   "id": "ssd-crucial-t705-2tb-heatsink",
   "name": "Crucial T705 2TB Heatsink",
@@ -21,7 +21,7 @@
   "performance": 100,
   "valueIndex": 12.6,
   "aiUseScore": 65,
-  "powerWatts": 0,
+  "powerWatts": null,
   "tags": [
     "nvme",
     "gen5",
@@ -82,9 +82,5 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Crucial%20T705%202TB%20Heatsink%20%EC%B5%9C%EC%A0%80%EA%B0%80",
   "notes": "Different from the non-heatsink version already saved.",
-  "textRepair": null,
-  "sourceType": "collector",
-  "sourceQuery": "",
-  "collectedPricesKrw": [],
-  "targetMatched": null
+  "textRepair": null
 }

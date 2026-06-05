@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-06-01T15:15:41.416+09:00",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
   "category": "Mainboard",
   "id": "mainboard-asrock-x870e-taichi",
   "name": "ASRock X870E Taichi",
@@ -21,7 +21,7 @@
   "performance": 100,
   "valueIndex": 10.5,
   "aiUseScore": 65,
-  "powerWatts": 0,
+  "powerWatts": null,
   "tags": [
     "high-end",
     "overclocking"
@@ -81,9 +81,5 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=ASRock%20X870E%20Taichi%20%EC%B5%9C%EC%A0%80%EA%B0%80",
   "notes": "E-ATX, 24+2+1 Phase, PCIe 5.0, USB4 40Gbps",
-  "textRepair": null,
-  "sourceType": "collector",
-  "sourceQuery": "",
-  "collectedPricesKrw": [],
-  "targetMatched": null
+  "textRepair": null
 }

@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-06-01T15:15:37.241+09:00",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
   "category": "GPU",
   "id": "gpu-rtx-5080-oc-d7-16gb-4",
   "name": "지포스 RTX 5080 게이밍 트리오 OC D7 16GB 트라이프로져4",
@@ -21,7 +21,7 @@
   "performance": 95,
   "valueIndex": 4.3,
   "aiUseScore": 95,
-  "powerWatts": 0,
+  "powerWatts": null,
   "tags": [
     "gaming",
     "ai"
@@ -81,9 +81,5 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=RTX%205080%20%EC%B5%9C%EC%A0%80%EA%B0%80",
   "notes": "RTX 50 series",
-  "textRepair": null,
-  "sourceType": "collector",
-  "sourceQuery": "",
-  "collectedPricesKrw": [],
-  "targetMatched": null
+  "textRepair": null
 }

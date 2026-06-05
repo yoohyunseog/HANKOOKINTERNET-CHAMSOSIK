@@ -1,0 +1,44 @@
+{
+  "summary_time": "2026-06-04T12:00:00",
+  "total_articles": 3,
+  "articles": [
+    {
+      "url": "https://news.naver.com/article/001/20260604123456789",
+      "title": "AI 기술 발전으로 인한 산업 변화 가속화",
+      "description": "인공지능 기술의 급격한 발전으로 다양한 산업 분야에서 변화가 가속화되고 있다.",
+      "keywords": ["AI", "인공지능", "기술", "산업", "변화", "발전", "자동화"],
+      "basic_summary": "인공지능 기술의 급격한 발전으로 다양한 산업 분야에서 변화가 가속화되고 있다.",
+      "ai_summary": "AI 기술의 급격한 발전으로 제조, 의료, 금융 등 다양한 산업에서 자동화와 효율성 향상이 가속화되고 있습니다. 전문가들은 이러한 변화가 향후 5년간 더욱 가속화될 것으로 예측하며, 기업들은 AI 도입을 위한 투자를 확대하고 있습니다.",
+      "content_length": 2500,
+      "crawled_at": "2026-06-04T12:00:00",
+      "source": "news.naver.com"
+    },
+    {
+      "url": "https://news.daum.net/economy/20260604123456",
+      "title": "경제 성장률 3% 달성 전망",
+      "description": "올해 경제 성장률이 3%를 달성할 것으로 전망된다.",
+      "keywords": ["경제", "성장률", "GDP", "전망", "투자", "수출"],
+      "basic_summary": "올해 경제 성장률이 3%를 달성할 것으로 전망된다.",
+      "ai_summary": "한국은행과 민간 연구소들은 올해 경제 성장률이 3%를 달성할 것으로 전망합니다. 수출 회복과 내수 증가가 주요 요인으로, 특히 반도체와 자동차 산업의 호조가 기여할 것으로 분석됩니다.",
+      "content_length": 1800,
+      "crawled_at": "2026-06-04T12:01:00",
+      "source": "news.daum.net"
+    },
+    {
+      "url": "https://www.catholicpress.kr/news/20260604123456",
+      "title": "교황님의 새로운 회칠 발표",
+      "description": "교황님께서 새로운 회칠을 발표하셨습니다.",
+      "keywords": ["교황", "회칠", "가톨릭", "교회", "복음"],
+      "basic_summary": "교황님께서 새로운 회칠을 발표하셨습니다.",
+      "ai_summary": "교황님께서는 새로운 회칠을 통해 현대 사회의 도덕적 가치와 인간 존엄성에 대해 강조하셨습니다. 이 회칠은 전 세계 가톨릭 교회에 중요한 지침을 제공합니다.",
+      "content_length": 2200,
+      "crawled_at": "2026-06-04T12:02:00",
+      "source": "catholicpress.kr"
+    }
+  ],
+  "statistics": {
+    "sites_processed": 3,
+    "total_keywords": 21,
+    "ai_summarized": 3
+  }
+}

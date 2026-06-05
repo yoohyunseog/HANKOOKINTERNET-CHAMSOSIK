@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-06-01T15:15:40.052+09:00",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
   "category": "GPU",
   "id": "gpu-msi-rtx-5070-oc-d7-12gb",
   "name": "MSI 지포스 RTX 5070 게이밍 트리오 OC D7 12GB",
@@ -82,9 +82,5 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=MSI%20%EC%A7%80%ED%8F%AC%EC%8A%A4%20RTX%205070%20%EA%B2%8C%EC%9D%B4%EB%B0%8D%20%ED%8A%B8%EB%A6%AC%EC%98%A4%20OC%20D7%2012GB%20%EC%B5%9C%EC%A0%80%EA%B0%80%20%EB%8B%A4%EB%82%98%EC%99%80",
   "notes": "Tri Frozr 4 cooling, 12GB GDDR7, 250W TDP",
-  "textRepair": null,
-  "sourceType": "collector",
-  "sourceQuery": "",
-  "collectedPricesKrw": [],
-  "targetMatched": null
+  "textRepair": null
 }

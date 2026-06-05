@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-06-01T15:15:41.779+09:00",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
   "category": "RAM",
   "id": "ram-g.skill-trident-z5-rgb-ddr5-7200mhz-cl34-32gb-16gx2",
   "name": "G.Skill Trident Z5 RGB DDR5 7200MHz CL34 32GB (16Gx2)",
@@ -21,7 +21,7 @@
   "performance": 95,
   "valueIndex": 10.3,
   "aiUseScore": 62,
-  "powerWatts": 0,
+  "powerWatts": null,
   "tags": [
     "high-speed",
     "overclock",
@@ -82,9 +82,5 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=G.Skill%20Trident%20Z5%20RGB%20DDR5%207200MHz%20CL34%2032GB%20(16Gx2)%20%EC%B5%9C%EC%A0%80%EA%B0%80",
   "notes": "CL34-45-45-115, 1.40V, XMP 3.0",
-  "textRepair": null,
-  "sourceType": "collector",
-  "sourceQuery": "",
-  "collectedPricesKrw": [],
-  "targetMatched": null
+  "textRepair": null
 }

@@ -1,0 +1,85 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
+  "category": "PSU",
+  "id": "psu-superflower-sf-1200f14xp-leadex-vii-pro-platinum-atx-3.1",
+  "name": "SuperFlower SF-1200F14XP LEADEX VII PRO PLATINUM ATX 3.1",
+  "maker": "SuperFlower",
+  "platform": "ATX",
+  "estimatedPriceKrw": 277480,
+  "priceBand": "15~30만원",
+  "speedLabel": "80 PLUS Platinum",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "PSU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 75,
+  "valueIndex": 27,
+  "aiUseScore": 49,
+  "powerWatts": 1200,
+  "tags": [
+    "ATX 3.1",
+    "Full Modular"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "PSU",
+    "partId": "psu-superflower-sf-1200f14xp-leadex-vii-pro-platinum-atx-3.1",
+    "partName": "SuperFlower SF-1200F14XP LEADEX VII PRO PLATINUM ATX 3.1",
+    "speed": {
+      "score": 100,
+      "weight": 0.32,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "PSU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 750,
+      "value": 360,
+      "aiFit": 490,
+      "priceEfficiency": 360,
+      "powerEfficiency": 100
+    },
+    "nbVector": [
+      100,
+      750,
+      360,
+      490,
+      360,
+      100
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 199.04,
+    "nbMin": 378.88,
+    "weightedScore": 316,
+    "nbBand": "100~499",
+    "summary": "PSU SuperFlower SF-1200F14XP LEADEX VII PRO PLATINUM ATX 3.1 부품을 속도 중심 N/B 데이터베이스 점수 316점으로 저장했습니다."
+  },
+  "nbWeightedScore": 316,
+  "nbMax": 199.04,
+  "nbMin": 378.88,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=SuperFlower%20SF-1200F14XP%20LEADEX%20VII%20PRO%20PLATINUM%20ATX%203.1%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "Available in Black and White versions. Features 12V2x6 connectors.",
+  "textRepair": null
+}

@@ -1,0 +1,85 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
+  "category": "Mainboard",
+  "id": "mainboard-rog-strix-b760-g-gaming-wifi",
+  "name": "ROG STRIX B760-G GAMING WIFI",
+  "maker": "ASUS",
+  "platform": "LGA1700",
+  "estimatedPriceKrw": 226210,
+  "priceBand": "15~30만원",
+  "speedLabel": "DDR5",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "Mainboard",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 75,
+  "valueIndex": 33.2,
+  "aiUseScore": 49,
+  "powerWatts": null,
+  "tags": [
+    "gaming",
+    "wifi"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "Mainboard",
+    "partId": "mainboard-rog-strix-b760-g-gaming-wifi",
+    "partName": "ROG STRIX B760-G GAMING WIFI",
+    "speed": {
+      "score": 100,
+      "weight": 0.32,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "Mainboard",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 750,
+      "value": 443,
+      "aiFit": 490,
+      "priceEfficiency": 440,
+      "powerEfficiency": 750
+    },
+    "nbVector": [
+      100,
+      750,
+      443,
+      490,
+      440,
+      750
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 416.22,
+    "nbMin": 379.223,
+    "weightedScore": 373,
+    "nbBand": "100~499",
+    "summary": "Mainboard ROG STRIX B760-G GAMING WIFI 부품을 속도 중심 N/B 데이터베이스 점수 373점으로 저장했습니다."
+  },
+  "nbWeightedScore": 373,
+  "nbMax": 416.22,
+  "nbMin": 379.223,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=ASUS%20ROG%20STRIX%20B760-G%20GAMING%20WIFI%20%EA%B0%80%EA%B2%A9%20%EB%8B%A4%EB%82%98%EC%99%80",
+  "notes": "M-ATX, B760 chipset, supports DDR5",
+  "textRepair": null
+}

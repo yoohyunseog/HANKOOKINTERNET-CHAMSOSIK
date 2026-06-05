@@ -1,0 +1,85 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
+  "category": "PSU",
+  "id": "psu-meg-ai1300p-pcie5",
+  "name": "MEG Ai1300P PCIE5",
+  "maker": "MSI",
+  "platform": "ATX 3.0",
+  "estimatedPriceKrw": 371500,
+  "priceBand": "30~60만원",
+  "speedLabel": "80PLUS PLATINUM",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "PSU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 90,
+  "valueIndex": 24.2,
+  "aiUseScore": 59,
+  "powerWatts": 1300,
+  "tags": [
+    "high-end",
+    "pcie5"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "PSU",
+    "partId": "psu-meg-ai1300p-pcie5",
+    "partName": "MEG Ai1300P PCIE5",
+    "speed": {
+      "score": 100,
+      "weight": 0.32,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "PSU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 900,
+      "value": 323,
+      "aiFit": 590,
+      "priceEfficiency": 270,
+      "powerEfficiency": 100
+    },
+    "nbVector": [
+      100,
+      900,
+      323,
+      590,
+      270,
+      100
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 157.555,
+    "nbMin": 351.469,
+    "weightedScore": 344,
+    "nbBand": "100~499",
+    "summary": "PSU MEG Ai1300P PCIE5 부품을 속도 중심 N/B 데이터베이스 점수 344점으로 저장했습니다."
+  },
+  "nbWeightedScore": 344,
+  "nbMax": 157.555,
+  "nbMin": 351.469,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=MSI%20MEG%20Ai1300P%20PCIE5%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "ATX 3.0 PCIe 5.0 native support",
+  "textRepair": null
+}

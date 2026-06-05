@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-06-01T15:15:38.821+09:00",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
   "category": "GPU",
   "id": "gpu-geforce-rtx-4070-ti-super-rog-strix-oc",
   "name": "GeForce RTX 4070 Ti Super ROG Strix OC",
@@ -81,9 +81,5 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=GeForce%20RTX%204070%20Ti%20Super%20ASUS%20ROG%20Strix%20OC",
   "notes": "Search results showed inflated overseas pricing (3.6M+ KRW), so a reasonable Korean street price for the ROG Strix OC model is estimated.",
-  "textRepair": null,
-  "sourceType": "collector",
-  "sourceQuery": "",
-  "collectedPricesKrw": [],
-  "targetMatched": null
+  "textRepair": null
 }

@@ -1,0 +1,85 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
+  "category": "GPU",
+  "id": "gpu-intel-arc-b580",
+  "name": "Intel Arc B580",
+  "maker": "Intel",
+  "platform": "PCIe",
+  "estimatedPriceKrw": 300000,
+  "priceBand": "30~60만원",
+  "speedLabel": "Battlemage",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "GPU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 45,
+  "valueIndex": 15,
+  "aiUseScore": 29,
+  "powerWatts": 150,
+  "tags": [
+    "gaming",
+    "budget"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "GPU",
+    "partId": "gpu-intel-arc-b580",
+    "partName": "Intel Arc B580",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "GPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 450,
+      "value": 200,
+      "aiFit": 290,
+      "priceEfficiency": 330,
+      "powerEfficiency": 100
+    },
+    "nbVector": [
+      100,
+      450,
+      200,
+      290,
+      330,
+      100
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 209.793,
+    "nbMin": 445.719,
+    "weightedScore": 221,
+    "nbBand": "100~499",
+    "summary": "GPU Intel Arc B580 부품을 속도 중심 N/B 데이터베이스 점수 221점으로 저장했습니다."
+  },
+  "nbWeightedScore": 221,
+  "nbMax": 209.793,
+  "nbMin": 445.719,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Intel%20Arc%20B-series%20GPU%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "Identified from a pre-built system (Monstar Gatz Video Editing Studio 265) listing.",
+  "textRepair": null
+}

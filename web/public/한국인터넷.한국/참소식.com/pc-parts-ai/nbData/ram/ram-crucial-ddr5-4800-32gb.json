@@ -1,0 +1,84 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
+  "category": "RAM",
+  "id": "ram-crucial-ddr5-4800-32gb",
+  "name": "Crucial DDR5 4800 32GB",
+  "maker": "Crucial",
+  "platform": "DDR5",
+  "estimatedPriceKrw": 105190,
+  "priceBand": "15만원 미만",
+  "speedLabel": "4800MHz",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "RAM",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 40,
+  "valueIndex": 38,
+  "aiUseScore": 26,
+  "powerWatts": null,
+  "tags": [
+    "standard"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "RAM",
+    "partId": "ram-crucial-ddr5-4800-32gb",
+    "partName": "Crucial DDR5 4800 32GB",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "RAM",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 400,
+      "value": 507,
+      "aiFit": 260,
+      "priceEfficiency": 950,
+      "powerEfficiency": 400
+    },
+    "nbVector": [
+      100,
+      400,
+      507,
+      260,
+      950,
+      400
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 194.056,
+    "nbMin": 358.728,
+    "weightedScore": 319,
+    "nbBand": "100~499",
+    "summary": "RAM Crucial DDR5 4800 32GB 부품을 속도 중심 N/B 데이터베이스 점수 319점으로 저장했습니다."
+  },
+  "nbWeightedScore": 319,
+  "nbMax": 194.056,
+  "nbMin": 358.728,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Crucial%20DDR5%204800%2032GB%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "Based on search query for 32GB 4800MHz module. Observed prices vary widely due to mixed results (laptop/desktop/kits), estimated price based on typical market value for a single 32GB 4800MHz module.",
+  "textRepair": null
+}

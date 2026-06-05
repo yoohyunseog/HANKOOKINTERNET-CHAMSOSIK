@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-06-01T15:15:37.815+09:00",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
   "category": "GPU",
   "id": "gpu-asus-rog-strix-geforce-rtx-4080-super-oc-edition",
   "name": "ASUS ROG Strix GeForce RTX 4080 SUPER OC Edition",
@@ -81,9 +81,5 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=ASUS%20ROG%20Strix%20RTX%204080%20SUPER%20%EC%B5%9C%EC%A0%80%EA%B0%80",
   "notes": "OC Edition, 16GB GDDR6X",
-  "textRepair": null,
-  "sourceType": "collector",
-  "sourceQuery": "",
-  "collectedPricesKrw": [],
-  "targetMatched": null
+  "textRepair": null
 }

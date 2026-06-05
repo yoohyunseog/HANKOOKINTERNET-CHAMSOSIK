@@ -1,0 +1,86 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
+  "category": "Mainboard",
+  "id": "mainboard-rog-maximus-z890-apex",
+  "name": "ROG MAXIMUS Z890 APEX",
+  "maker": "ASUS",
+  "platform": "Intel Z890 (LGA1851)",
+  "estimatedPriceKrw": 683060,
+  "priceBand": "60만원 이상",
+  "speedLabel": "DDR5 9000MHz",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "Mainboard",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 100,
+  "valueIndex": 14.6,
+  "aiUseScore": 65,
+  "powerWatts": null,
+  "tags": [
+    "overclocking",
+    "high-end",
+    "gaming"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "Mainboard",
+    "partId": "mainboard-rog-maximus-z890-apex",
+    "partName": "ROG MAXIMUS Z890 APEX",
+    "speed": {
+      "score": 100,
+      "weight": 0.32,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "Mainboard",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 1000,
+      "value": 195,
+      "aiFit": 650,
+      "priceEfficiency": 150,
+      "powerEfficiency": 1000
+    },
+    "nbVector": [
+      100,
+      1000,
+      195,
+      650,
+      150,
+      1000
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 256.197,
+    "nbMin": 364.866,
+    "weightedScore": 396,
+    "nbBand": "100~499",
+    "summary": "Mainboard ROG MAXIMUS Z890 APEX 부품을 속도 중심 N/B 데이터베이스 점수 396점으로 저장했습니다."
+  },
+  "nbWeightedScore": 396,
+  "nbMax": 256.197,
+  "nbMin": 364.866,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=ASUS%20ROG%20Maximus%20Z890%20Apex%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "Extreme overclocking board with 2 DIMM slots, supports up to 9000MHz DDR5, PCIe 5.0, and Thunderbolt 4.",
+  "textRepair": null
+}

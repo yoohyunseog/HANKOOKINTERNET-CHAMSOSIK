@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-06-01T15:15:40.360+09:00",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
   "category": "GPU",
   "id": "gpu-msi-geforce-rtx-5080-vanguard-soc-d7-16gb-hyperfrozr",
   "name": "MSI GeForce RTX 5080 Vanguard SOC D7 16GB Hyperfrozr",
@@ -82,9 +82,5 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=MSI%20GeForce%20RTX%205080%20%EC%B5%9C%EC%A0%80%EA%B0%80",
   "notes": "GDDR7, DP2.1 support, 3-fan cooling",
-  "textRepair": null,
-  "sourceType": "collector",
-  "sourceQuery": "",
-  "collectedPricesKrw": [],
-  "targetMatched": null
+  "textRepair": null
 }

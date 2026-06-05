@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-06-01T15:15:41.524+09:00",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
   "category": "Mainboard",
   "id": "mainboard-mpg-x870e-carbon-wifi",
   "name": "MPG X870E CARBON WIFI",
@@ -21,7 +21,7 @@
   "performance": 90,
   "valueIndex": 17.3,
   "aiUseScore": 59,
-  "powerWatts": 0,
+  "powerWatts": null,
   "tags": [
     "gaming",
     "high-end"
@@ -81,9 +81,5 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=MSI%20MPG%20X870E%20CARBON%20WIFI%20price",
   "notes": "AMD AM5 socket, PCIe 5.0, DDR5 support up to 8400MHz, 18+2+1 phase power delivery.",
-  "textRepair": null,
-  "sourceType": "collector",
-  "sourceQuery": "",
-  "collectedPricesKrw": [],
-  "targetMatched": null
+  "textRepair": null
 }

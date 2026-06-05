@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-06-01T15:15:41.346+09:00",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
   "category": "GPU",
   "id": "gpu-zotac-gaming-geforce-rtx-5070-ti-solid-oc-d7-16gb",
   "name": "ZOTAC GAMING GeForce RTX 5070 Ti SOLID OC D7 16GB",
@@ -81,9 +81,5 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=GeForce%20RTX%205070%20Ti%20ZOTAC%20%EC%B5%9C%EC%A0%80%EA%B0%80",
   "notes": "GDDR7, 3-fan, 16-pin (12V2x6)",
-  "textRepair": null,
-  "sourceType": "collector",
-  "sourceQuery": "",
-  "collectedPricesKrw": [],
-  "targetMatched": null
+  "textRepair": null
 }

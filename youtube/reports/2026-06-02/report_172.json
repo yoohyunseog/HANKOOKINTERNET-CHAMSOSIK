@@ -1,0 +1,225 @@
+{
+  "timestamp": "2026-06-02T14:05:00.733276",
+  "model": "kimi-k2.5:cloud",
+  "keyword_count": 3,
+  "analyze_subtitles": true,
+  "analysis_source": "youtube",
+  "keywords": [
+    {
+      "keyword": "오늘의 주요 뉴스",
+      "is_fixed": true,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "엔비디아 한국 방문",
+      "is_fixed": false,
+      "views": [
+        8787,
+        767
+      ],
+      "video_count": 2,
+      "videos": [
+        {
+          "title": "Impromptu 'Surprise Press Conference' \"HBM is the best!\"...\"When asked why he visited Korea\" (Sub...",
+          "video_id": "zkWUmHeCY4I",
+          "views": 8787,
+          "upload_date": "2026-06-02",
+          "url": "https://www.youtube.com/watch?v=zkWUmHeCY4I",
+          "subtitle_summary": "The user wants a summary of a YouTube video transcript in Korean, around 500 characters, with 3-5 sentences, and absolutely no English.\nKey points from the transcript:\n1. NVIDIA CEO Jensen Huang held an impromptu press conference in Taiwan after GTC Taipei\n2. He praised Korean companies' achievements, especially SK Hynix's HBM memory, emphasizing close relationship\n3. He mentioned Korean companies are smart and technologically advanced, wants to contribute to robotics development\n4. He said he'd hold GTC in Seoul if Korea wants it, expressed affection for Korea (special place since GeForce early days)\n5. He praised Korean imagination, creativity, and ambition\n6. He handed out chicken to reporters and citizens\n7. Attendees included SK Hynix CEO, Naver Cloud CEO, Samsung executives, LG Science Park CEO\n8. He will meet with Korean conglomerate heads (SK, LG, Naver chairs) from the 5th, Hyundai Motor chair might attend, Samsung chair won't attend due to overseas schedule\n9. Likely meeting place is a pork belly restaurant in Seongsu-dong\nNeed to condense this into 3-5 sentences, around 500 characters.\nDraft:\n엔비디아 CEO 젠슨 황이 대만에서 즉석 기자회견을 열어 한국 기업들의 성과를 치하하고 특히 SK하이닉스의 HBM을 극찬하며 양사의 돈독한 관계를 강조했습니다. 그는 한국의 로보틱스 발전에 기여하고 싶다고 밝혔으며, 서울에서 GTC를 개최할 의사와 함께 한국에 대한 각별한 애정을 표했습니다. 또한 한국의 상상력과 창의성을 칭찬하고 기자들에게 치킨을 나눠주는 등 화기애애한 분위기를 연출했으며, 국내 주요 기업 총수들과의 만남을 위해 방한할 예정입니다.\nCharacter count check:\n엔비디아 CEO 젠슨 황이 대만에서 즉석 기자회견을 열어 한국 기업들의 성과를 치하하고 특히 SK하이닉스의 HBM을 극찬하며 양사의 돈독한 관계를 강조했습니다. (71자)\n그는 한국의 로보틱스 발전에 기여하고 싶다고 밝혔으며, 서울에서 GTC를 개최할 의사와 함께 한국에 대한 각별한 애정을 표했습니다. (67자)\n또한 한국의 상상력과 창의성을 칭찬하고 기자들에게 치킨을 나눠주는 등 화기애애한 분위기를 연출했으며, 국내 주요 기업 총수들과의 만남을 위해 방한할 예정입니다. (78자)\nTotal: 216 characters. Too short. Need to expand to around 500 characters.\nLet me expand:\n엔비디아 CEO 젠슨 황이 대만 GTC 행사 후 즉석에서 기자들을 만나 깜짝 미니 기자회견을 열었습니다. 그는 한국 방문 목적에 대해 올해 한국 기업들의 놀라운 성과를 언급하며 특히 SK하이닉스의 HBM을 극찬하고 엔비디아와의 돈독한 관계를 강조했습니다. 또한 한국의 뛰어난 기술력과 로보틱스 발전에 기여하고 싶다는 바람을 밝혔으며, 서울에서 GTC를 개최할 용의가 있음을 표명하고 지포스 초기부터 한국이 자신의 마음속에 특별한 곳이라며 애정을 드러냈습니다. 그는 한국의 상상력과 창의성, 야망을 칭찬하고 기자들과 시민들에게 치킨을 직접 나눠주는 등 다정한 모습을 보였으며, SK하이닉스와 네이버, 삼성",
+          "analysis_source": "subtitle",
+          "db_saved": false
+        },
+        {
+          "title": "엔비디아 젠슨황이 한국 로봇 1위 '콕' 집어 손잡은 이유",
+          "video_id": "yFWFEB2o7kM",
+          "views": 767,
+          "upload_date": "2026-06-02",
+          "url": "https://www.youtube.com/watch?v=yFWFEB2o7kM",
+          "subtitle_summary": "The user wants a summary of a YouTube video transcript in Korean, around 500 characters, with 3-5 sentences capturing the key points.\nKey points from the transcript:\n1. Doosan Robotics and NVIDIA collaboration isn't new - Doosan Vice Chairman visited NVIDIA HQ last year, and in April, Madison Huang (key NVIDIA figure for robotics) visited Doosan Tower to discuss Physical AI and humanoid robot development cooperation.\n2. At Computex 2026 in Taiwan, Jensen Huang mentioned various platforms including robots, and there's speculation he might throw the first pitch at a Doosan Bears baseball game in Seoul (June 5-7), which would symbolize the NVIDIA-Doosan partnership.\n3. Despite no visible humanoid robot release or concrete contract yet, Doan Robotics has strong backing from Doosan Group with immediate testing/application sites in nuclear power, heavy industry, construction machinery, logistics, etc.\n4. This infrastructure makes Doosan Robotics valuable in the global market and NVIDIA ecosystem, even though they need to be cautious as they haven't shown concrete results yet.\nI need to summarize this in 3-5 sentences, around 500 characters, in Korean only.\nDraft:\n두산로보틱스와 엔비디아의 협력은 최근의 일이 아니라, 지난해 두산 부회장의 실리콘밸리 방문과 올해 4월 엔비디아 핵심 인물의 한국 방문을 통해 물밑에서 진행되어 왔으며, 특히 피지컬 AI와 휴먼노이드 개발 협력이 핵심이다. 젠슨 황 CEO가 두산 베어스 시구를 할 것이라는 설이 나오는 등 양사 관계가 공개적으로 주목받고 있으나, 아직 가시적인 로봇 출시나 계약 성과는 없어 신중한 접근이 필요하다. 하지만 두산 그룹의 든든한 지원과 원자력, 중공업, 건설 등 다양한 산업 현장에서 즉각적인 테스트가 가능한 인프라를 보유하고 있어, 엔비디아 생태계 내에서 두산로보틱스의 가치는 더욱 높아질 것으로 전망된다.\nCharacter count check:\n두산로보틱스와 엔비디아의 협력은 최근의 일이 아니라, 지난해 두산 부회장의 실리콘밸리 방문과 올해 4월 엔비디아 핵심 인물의 한국 방문을 통해 물밑에서 진행되어 왔으며, 특히 피지컬 AI와 휴먼노이드 개발 협력이 핵심이다. 젠슨 황 CEO가 두산 베어스 시구를 할 것이라는 설이 나오는 등 양사 관계가 공개적으로 주목받고 있으나, 아직 가시적인 로봇 출시나 계약 성과는 없어 신중한 접근이 필요하다. 하지만 두산 그룹의 든든한 지원과 원자력, 중공업, 건설 등 다양한 산업 현장에서 즉각적인 테스트가 가능한 인프라를 보유하고 있어, 엔비디아 생태계 내에서 두산로보틱스의 가치는 더욱 높아질 것으로 전망된다.\nCount: approximately 280 characters. That's too short. The user asked for around 500 characters (500자 내외). Let me expand slightly.\nRevised:\n두산로보틱스와 엔비디아의 협력은 어제오늘의 일이 아니라, 지난해 박지원 두산 부회장의 실리콘밸리 방문과 올해 4월 메디슨 황 이사의 두산타워 방문을 통해 물밑에서 차근차근 진행되어 왔으며, 특히 피지컬 AI와 휴먼노이드 로봇 개발 협력이 핵심 의제였다. 최근 젠슨 황 CEO가 컴퓨텍스에서 로봇 플랫폼을",
+          "analysis_source": "subtitle",
+          "db_saved": false
+        }
+      ],
+      "max": 2.7791,
+      "min": 2.1811,
+      "nb_score": 1.2742,
+      "avg_views": 4777.0,
+      "total_views": 9554
+    },
+    {
+      "keyword": "캐시워크 정답",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "KBO 올스타 투표",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "경제총조사",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "하이닉스 화재",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "서대문형무소",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "한화에어로스페이스 폭발",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "미 이란 협상 레바논",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "지방선거 여야 격차",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "AI 반도체 동맹",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "아프리카 외교 협력",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "호주 노후 준비",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "심장병 미세혈관 장애",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "발달장애인 참정권",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "한일 군사동맹 논란",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    }
+  ]
+}

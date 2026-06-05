@@ -1,0 +1,86 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
+  "category": "RAM",
+  "id": "ram-teamgroup-t-force-delta-rgb-ddr5-6000mhz-cl30-32gb-16gx2",
+  "name": "TeamGroup T-Force Delta RGB DDR5 6000MHz CL30 32GB (16Gx2)",
+  "maker": "TeamGroup",
+  "platform": "DDR5",
+  "estimatedPriceKrw": 235000,
+  "priceBand": "15~30만원",
+  "speedLabel": "6000MHz CL30",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "RAM",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 75,
+  "valueIndex": 31.9,
+  "aiUseScore": 49,
+  "powerWatts": null,
+  "tags": [
+    "RGB",
+    "XMP",
+    "Expo"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "RAM",
+    "partId": "ram-teamgroup-t-force-delta-rgb-ddr5-6000mhz-cl30-32gb-16gx2",
+    "partName": "TeamGroup T-Force Delta RGB DDR5 6000MHz CL30 32GB (16Gx2)",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "RAM",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 750,
+      "value": 425,
+      "aiFit": 490,
+      "priceEfficiency": 430,
+      "powerEfficiency": 750
+    },
+    "nbVector": [
+      100,
+      750,
+      425,
+      490,
+      430,
+      750
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 407.501,
+    "nbMin": 380.45,
+    "weightedScore": 380,
+    "nbBand": "100~499",
+    "summary": "RAM TeamGroup T-Force Delta RGB DDR5 6000MHz CL30 32GB (16Gx2) 부품을 속도 중심 N/B 데이터베이스 점수 380점으로 저장했습니다."
+  },
+  "nbWeightedScore": 380,
+  "nbMax": 407.501,
+  "nbMin": 380.45,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=TeamGroup%20T-Force%20Delta%20RGB%20DDR5%206000MHz%20CL30%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "Available in Black and White versions.",
+  "textRepair": null
+}

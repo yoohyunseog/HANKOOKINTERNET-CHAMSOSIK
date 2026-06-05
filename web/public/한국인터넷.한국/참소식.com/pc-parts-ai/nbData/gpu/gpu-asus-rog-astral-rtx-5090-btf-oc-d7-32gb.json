@@ -1,6 +1,6 @@
 {
   "schema": "pc-part-nb-database-file.v1",
-  "updatedAt": "2026-06-01T15:15:37.700+09:00",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
   "category": "GPU",
   "id": "gpu-asus-rog-astral-rtx-5090-btf-oc-d7-32gb",
   "name": "ASUS ROG Astral 지포스 RTX 5090 BTF OC D7 32GB",
@@ -82,9 +82,5 @@
   "nbBand": "100~499",
   "sourceUrl": "https://search.danawa.com/dsearch.php?k1=ASUS%20ROG%20Astral%20%EC%A7%80%ED%8F%AC%EC%8A%A4%20RTX%205090%20BTF%20OC%20D7%2032GB%20%EC%B5%9C%EC%A0%80%EA%B0%80",
   "notes": "BTF (Back-to-the-Future) design for hidden connectors, GDDR7 32GB",
-  "textRepair": null,
-  "sourceType": "collector",
-  "sourceQuery": "",
-  "collectedPricesKrw": [],
-  "targetMatched": null
+  "textRepair": null
 }

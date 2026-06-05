@@ -786,17 +786,7 @@
   </style>
 </head>
 <body>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4501795912654667"
-     crossorigin="anonymous"></script>
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-format="fluid"
-     data-ad-layout-key="-ef+6k-30-ac+ty"
-     data-ad-client="ca-pub-4501795912654667"
-     data-ad-slot="2408767998"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+
   <div class="ide">
     <header class="titlebar">
       <a class="brand" href="../">
@@ -817,7 +807,6 @@
     </header>
 
     <section class="chat" id="chatLog" aria-live="polite">
-      <!-- 광고는 JavaScript에서 동적으로 추가됨 -->
     </section>
 
     <div class="composer-wrapper">
@@ -1047,22 +1036,7 @@
         return;
       }
 
-      // 광고 요소
-      const adElement = `<article class="message assistant">
-        <div class="avatar">📢</div>
-        <div class="message-content">
-          <div class="role">광고</div>
-          <div class="bubble" style="background:linear-gradient(135deg,rgba(34,197,94,0.1),rgba(59,130,246,0.1));border:1px solid rgba(34,197,94,0.2);">
-
-          </div>
-          <div class="meta">Google AdSense</div>
-        </div>
-      </article>`;
-
-      // 광고를 첫 번째 사용자 메시지 다음에 배치 (YOU -> 광고 -> AI ASSISTANT 순서)
-      // 메시지를 개별적으로 처리하여 광고를 올바른 위치에 삽입
       let finalHtml = "";
-      let adInserted = false;
       
       conversation.messages.forEach((message, index) => {
         const isUser = message.role === "user";
@@ -1111,12 +1085,6 @@
             <div class="meta">참소식 인공지능 ${escapeHtml(message.time || "")}</div>
           </div>
         </article>`;
-        
-        // 첫 번째 사용자 메시지 다음에 광고 삽입
-        if (isUser && !adInserted) {
-          finalHtml += adElement;
-          adInserted = true;
-        }
       });
       
       els.chatLog.innerHTML = finalHtml;
@@ -1599,10 +1567,10 @@
       
       if (qParam && qParam.trim()) {
         log(`🔗 URL 파라미터 감지: q=${qParam.substring(0, 50)}...`);
-        // 디코딩 후 자동 실행
-        const decodedQuery = decodeURIComponent(qParam);
+        // URLSearchParams.get()은 이미 디코딩된 값을 반환하므로 추가 디코딩 불필요
+        // 공백이 포함된 여러 단어도 정상 처리됨
         setTimeout(() => {
-          submitPrompt(decodedQuery);
+          submitPrompt(qParam);
         }, 500); // 페이지 로딩 후 0.5초 대기
       }
     }

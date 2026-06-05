@@ -1,0 +1,86 @@
+{
+  "schema": "pc-part-nb-database-file.v1",
+  "updatedAt": "2026-06-05T23:19:45.958+09:00",
+  "category": "PSU",
+  "id": "psu-mag-a1000gl-80plus-atx-3.1",
+  "name": "MAG A1000GL 80PLUS 골드 풀 모듈러 ATX 3.1",
+  "maker": "MSI",
+  "platform": "ATX",
+  "estimatedPriceKrw": 179000,
+  "priceBand": "15~30만원",
+  "speedLabel": "80 PLUS GOLD",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "PSU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 75,
+  "valueIndex": 41.9,
+  "aiUseScore": 49,
+  "powerWatts": 1000,
+  "tags": [
+    "ATX 3.1",
+    "Full Modular",
+    "PCIE5"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "PSU",
+    "partId": "psu-mag-a1000gl-80plus-atx-3.1",
+    "partName": "MAG A1000GL 80PLUS 골드 풀 모듈러 ATX 3.1",
+    "speed": {
+      "score": 100,
+      "weight": 0.32,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "PSU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 750,
+      "value": 559,
+      "aiFit": 490,
+      "priceEfficiency": 560,
+      "powerEfficiency": 100
+    },
+    "nbVector": [
+      100,
+      750,
+      559,
+      490,
+      560,
+      100
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 296.086,
+    "nbMin": 388.589,
+    "weightedScore": 360,
+    "nbBand": "100~499",
+    "summary": "PSU MAG A1000GL 80PLUS 골드 풀 모듈러 ATX 3.1 부품을 속도 중심 N/B 데이터베이스 점수 360점으로 저장했습니다."
+  },
+  "nbWeightedScore": 360,
+  "nbMax": 296.086,
+  "nbMin": 388.589,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=MSI%20MAG%20A1000GL%2080PLUS%20%EA%B3%A8%EB%93%9C%20%ED%92%80%EB%AA%A8%EB%93%88%EB%9F%AC%20ATX%203.0%20%EA%B0%80%EA%B2%A9%20%EB%8B%A4%EB%82%98%EC%99%80",
+  "notes": "ATX 3.1 compliant, 12V2x6 connector",
+  "textRepair": null
+}
