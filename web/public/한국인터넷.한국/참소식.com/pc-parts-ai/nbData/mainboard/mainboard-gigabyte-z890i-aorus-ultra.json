@@ -1,0 +1,89 @@
+{
+  "schema": "pc-part-nb-collector-file.v1",
+  "updatedAt": "2026-06-14T03:55:15.796+09:00",
+  "category": "Mainboard",
+  "id": "mainboard-gigabyte-z890i-aorus-ultra",
+  "name": "Gigabyte Z890I AORUS Ultra",
+  "maker": "Gigabyte",
+  "platform": "Intel LGA1851",
+  "estimatedPriceKrw": 464498,
+  "priceBand": "30~60만원",
+  "speedLabel": "DDR5",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "Mainboard",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 75,
+  "valueIndex": 16.1,
+  "aiUseScore": 49,
+  "powerWatts": 0,
+  "tags": [
+    "ITX",
+    "Z890"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "Mainboard",
+    "partId": "mainboard-gigabyte-z890i-aorus-ultra",
+    "partName": "Gigabyte Z890I AORUS Ultra",
+    "speed": {
+      "score": 100,
+      "weight": 0.32,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "Mainboard",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 750,
+      "value": 215,
+      "aiFit": 490,
+      "priceEfficiency": 220,
+      "powerEfficiency": 750
+    },
+    "nbVector": [
+      100,
+      750,
+      215,
+      490,
+      220,
+      750
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 286.541,
+    "nbMin": 389.037,
+    "weightedScore": 324,
+    "nbBand": "100~499",
+    "summary": "Mainboard Gigabyte Z890I AORUS Ultra 부품을 속도 중심 N/B 데이터베이스 점수 324점으로 저장했습니다."
+  },
+  "nbWeightedScore": 324,
+  "nbMax": 286.541,
+  "nbMin": 389.037,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Gigabyte%20Z890I%20AORUS%20Ultra%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "Mini-ITX form factor, supports PCIe 5.0, Thunderbolt 4, and DDR5 memory.",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

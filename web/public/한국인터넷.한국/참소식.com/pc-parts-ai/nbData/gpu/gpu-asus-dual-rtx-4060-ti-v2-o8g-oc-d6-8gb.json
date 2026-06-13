@@ -1,0 +1,88 @@
+{
+  "schema": "pc-part-nb-collector-file.v1",
+  "updatedAt": "2026-06-14T03:54:58.127+09:00",
+  "category": "GPU",
+  "id": "gpu-asus-dual-rtx-4060-ti-v2-o8g-oc-d6-8gb",
+  "name": "ASUS DUAL 지포스 RTX 4060 Ti V2 O8G OC D6 8GB",
+  "maker": "ASUS",
+  "platform": "PCIe 4.0",
+  "estimatedPriceKrw": 509900,
+  "priceBand": "30~60만원",
+  "speedLabel": "OC",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "GPU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 65,
+  "valueIndex": 12.7,
+  "aiUseScore": 42,
+  "powerWatts": 160,
+  "tags": [
+    "gaming"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "GPU",
+    "partId": "gpu-asus-dual-rtx-4060-ti-v2-o8g-oc-d6-8gb",
+    "partName": "ASUS DUAL 지포스 RTX 4060 Ti V2 O8G OC D6 8GB",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "GPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 650,
+      "value": 169,
+      "aiFit": 420,
+      "priceEfficiency": 200,
+      "powerEfficiency": 135
+    },
+    "nbVector": [
+      100,
+      650,
+      169,
+      420,
+      200,
+      135
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 140.788,
+    "nbMin": 376.006,
+    "weightedScore": 262,
+    "nbBand": "100~499",
+    "summary": "GPU ASUS DUAL 지포스 RTX 4060 Ti V2 O8G OC D6 8GB 부품을 속도 중심 N/B 데이터베이스 점수 262점으로 저장했습니다."
+  },
+  "nbWeightedScore": 262,
+  "nbMax": 140.788,
+  "nbMin": 376.006,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=RTX%204060%20Ti%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "Refurbished product observed in search results.",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

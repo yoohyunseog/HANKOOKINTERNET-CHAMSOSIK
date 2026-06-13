@@ -1,0 +1,906 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NB 유튜브 검색 분석</title>
+  <style>
+    :root {
+      --bg: #f3f6fc;
+      --panel: #ffffff;
+      --soft: #f8fafd;
+      --text: #111827;
+      --muted: #667085;
+      --line: #dfe6f2;
+      --blue: #1268ff;
+      --red: #ff365d;
+      --green: #12a963;
+      --yellow: #f8b400;
+      --shadow: 0 16px 34px rgba(21, 34, 70, 0.12);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Segoe UI", "Noto Sans KR", Arial, sans-serif;
+      letter-spacing: 0;
+    }
+
+    button, input, select { font: inherit; }
+
+    .app {
+      min-height: 100vh;
+      display: grid;
+      grid-template-columns: 330px minmax(0, 1fr);
+    }
+
+    .sidebar {
+      background: #0a1229;
+      color: #f8fbff;
+      padding: 22px;
+      border-right: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .brand {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      margin-bottom: 22px;
+    }
+
+    .brand-mark {
+      width: 42px;
+      height: 42px;
+      border-radius: 8px;
+      display: grid;
+      place-items: center;
+      background: var(--red);
+      box-shadow: 0 10px 24px rgba(255,54,93,0.28);
+    }
+
+    .brand-mark svg { width: 25px; height: 25px; }
+    .brand h1 { margin: 0; font-size: 18px; line-height: 1.2; }
+    .brand p { margin: 3px 0 0; color: #aebadc; font-size: 13px; }
+
+    .field {
+      display: grid;
+      gap: 8px;
+      margin-bottom: 14px;
+    }
+
+    label {
+      color: #c9d4f1;
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    input, select {
+      width: 100%;
+      min-height: 42px;
+      border: 1px solid rgba(255,255,255,0.14);
+      border-radius: 8px;
+      background: rgba(255,255,255,0.08);
+      color: #fff;
+      padding: 0 12px;
+      outline: none;
+    }
+
+    select option { color: #111827; }
+    input::placeholder { color: #93a1c7; }
+
+    .row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    .actions {
+      display: grid;
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    .btn {
+      min-height: 42px;
+      border: 0;
+      border-radius: 8px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      cursor: pointer;
+      font-weight: 900;
+      color: #fff;
+      background: var(--blue);
+      text-decoration: none;
+    }
+
+    .btn.secondary {
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.16);
+    }
+
+    .btn svg, .mini svg { width: 17px; height: 17px; }
+
+    .status {
+      margin-top: 16px;
+      color: #aebadc;
+      font-size: 13px;
+      line-height: 1.55;
+      white-space: pre-line;
+    }
+
+    main {
+      padding: 26px;
+      min-width: 0;
+    }
+
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 16px;
+    }
+
+    .topbar h2 { margin: 0; font-size: 24px; }
+    .topbar a { color: var(--blue); font-weight: 900; text-decoration: none; }
+
+    .summary-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+
+    .summary {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+      box-shadow: var(--shadow);
+      padding: 14px;
+      min-height: 82px;
+    }
+
+    .summary small {
+      display: block;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 800;
+      margin-bottom: 8px;
+    }
+
+    .summary strong {
+      display: block;
+      font-size: 22px;
+      line-height: 1.1;
+    }
+
+    .query-strip {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 16px;
+    }
+
+    .chip {
+      border: 1px solid var(--line);
+      background: var(--panel);
+      border-radius: 999px;
+      min-height: 34px;
+      padding: 0 12px;
+      display: inline-flex;
+      align-items: center;
+      color: var(--text);
+      cursor: pointer;
+      box-shadow: 0 7px 18px rgba(21,34,70,0.06);
+    }
+
+    .chip.active {
+      color: #fff;
+      background: var(--blue);
+      border-color: var(--blue);
+    }
+
+    .panel {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .panel-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      padding: 14px;
+      border-bottom: 1px solid var(--line);
+      background: var(--soft);
+    }
+
+    .panel-head h3 { margin: 0; font-size: 16px; }
+    .panel-head span { color: var(--muted); font-size: 13px; }
+
+    .analysis-list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+      padding: 14px;
+    }
+
+    .analysis-row {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      padding: 12px;
+      cursor: pointer;
+      display: grid;
+      gap: 8px;
+    }
+
+    .analysis-row:hover { border-color: var(--blue); }
+
+    .analysis-row h4 {
+      margin: 0;
+      font-size: 14px;
+      line-height: 1.35;
+      overflow-wrap: anywhere;
+    }
+
+    .metrics {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 8px;
+    }
+
+    .metric {
+      border-radius: 8px;
+      background: var(--soft);
+      padding: 8px;
+      min-width: 0;
+    }
+
+    .metric small {
+      display: block;
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 900;
+      margin-bottom: 4px;
+    }
+
+    .metric strong {
+      font-size: 14px;
+      overflow-wrap: anywhere;
+    }
+
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+      padding: 14px;
+    }
+
+    .video-card {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      overflow: hidden;
+      min-height: 246px;
+      cursor: pointer;
+      display: grid;
+      grid-template-rows: 112px 1fr;
+    }
+
+    .thumb {
+      background: linear-gradient(135deg, rgba(255,54,93,.92), rgba(18,104,255,.9));
+      display: grid;
+      place-items: center;
+      color: #fff;
+      overflow: hidden;
+    }
+
+    .thumb img {
+      width: 100%;
+      height: 112px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .video-body {
+      padding: 12px;
+      display: grid;
+      gap: 10px;
+      align-content: start;
+    }
+
+    .video-body h4 {
+      margin: 0;
+      font-size: 14px;
+      line-height: 1.35;
+      overflow-wrap: anywhere;
+    }
+
+    .video-meta {
+      color: var(--muted);
+      font-size: 12px;
+      display: grid;
+      gap: 4px;
+    }
+
+    .mini {
+      border-radius: 8px;
+      min-height: 32px;
+      padding: 0 10px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 7px;
+      color: #fff;
+      background: var(--red);
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 900;
+    }
+
+    .empty {
+      grid-column: 1 / -1;
+      border: 1px dashed var(--line);
+      border-radius: 8px;
+      background: var(--soft);
+      padding: 28px;
+      color: var(--muted);
+      text-align: center;
+    }
+
+    @media (max-width: 1100px) {
+      .summary-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .analysis-list, .video-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+
+    @media (max-width: 760px) {
+      .app { grid-template-columns: 1fr; }
+      main { padding: 18px; }
+      .row, .summary-grid, .analysis-list, .video-grid { grid-template-columns: 1fr; }
+      .topbar { align-items: flex-start; flex-direction: column; }
+    }
+  </style>
+
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "x4jlyqheuh");
+</script>
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path fill="currentColor" d="M21.58 7.19a2.53 2.53 0 0 0-1.78-1.8C18.23 5 12 5 12 5s-6.23 0-7.8.39a2.53 2.53 0 0 0-1.78 1.8A26.4 26.4 0 0 0 2 12a26.4 26.4 0 0 0 .42 4.81 2.53 2.53 0 0 0 1.78 1.8C5.77 19 12 19 12 19s6.23 0 7.8-.39a2.53 2.53 0 0 0 1.78-1.8A26.4 26.4 0 0 0 22 12a26.4 26.4 0 0 0-.42-4.81ZM10 15V9l5.2 3L10 15Z"/></svg>
+        </div>
+        <div>
+          <h1>유튜브 N/B 분석</h1>
+          <p>키워드 JSON + 분석 결과</p>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="categorySelect">카테고리</label>
+        <select id="categorySelect"></select>
+      </div>
+
+      <div class="field">
+        <label for="keywordInput">키워드</label>
+        <input id="keywordInput" type="search" placeholder="키워드를 입력하거나 결과 행을 클릭하세요">
+      </div>
+
+      <div class="row">
+        <div class="field">
+          <label for="suffixSelect">검색 조합</label>
+          <select id="suffixSelect">
+            <option value="">기본</option>
+            <option value="리뷰">리뷰</option>
+            <option value="분석">분석</option>
+            <option value="이슈">이슈</option>
+            <option value="최신">최신</option>
+            <option value="조회수">조회수</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="limitInput">영상 수</label>
+          <input id="limitInput" type="number" min="1" max="50" value="50">
+        </div>
+      </div>
+
+      <div class="actions">
+        <button class="btn" id="searchBtn" type="button">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="m20.7 19.3-4.2-4.2a7.2 7.2 0 1 0-1.4 1.4l4.2 4.2a1 1 0 0 0 1.4-1.4ZM5 11a6 6 0 1 1 12 0A6 6 0 0 1 5 11Z"/></svg>
+          검색 + 분석
+        </button>
+        <button class="btn secondary" id="runSaveBtn" type="button">키워드만 분석 + 저장</button>
+        <button class="btn secondary" id="runYoutubeSaveBtn" type="button">유튜브 분석 + 저장</button>
+        <button class="btn secondary" id="showDataBtn" type="button">저장 결과 보기</button>
+        <button class="btn secondary" id="randomBtn" type="button">랜덤 키워드</button>
+      </div>
+
+      <div class="status" id="statusBox">불러오는 중...</div>
+    </aside>
+
+    <main>
+      <div class="topbar">
+        <h2 id="pageTitle">분석 데이터 불러오는 중</h2>
+        <a href="index.html">대시보드</a>
+      </div>
+
+      <section class="summary-grid" id="summaryGrid"></section>
+      <div class="query-strip" id="queryStrip"></div>
+
+      <section class="panel">
+        <div class="panel-head">
+          <h3 id="panelTitle">분석 결과</h3>
+          <span id="panelMeta">-</span>
+        </div>
+        <div id="resultArea" class="analysis-list"></div>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    const KEYWORD_FILES = [
+      "anime_keywords.json",
+      "computer_keywords.json",
+      "drama_keywords.json",
+      "game_pc_magazine_keywords.json",
+      "goemulddanji_keywords.json",
+      "movie_keywords.json",
+      "us_ufo_hearing_keywords.json"
+    ];
+    const ANALYSIS_PATHS = [
+      "analysis_results/keyword_analysis_20260613_065205.json",
+      "analysis_results/latest_keyword_analysis.json"
+    ];
+    const MIN_REFERENCE_MS = Date.UTC(1990, 0, 1);
+    const $ = (id) => document.getElementById(id);
+    const fmt = new Intl.NumberFormat("ko-KR", { maximumFractionDigits: 6 });
+    const intFmt = new Intl.NumberFormat("ko-KR");
+    const state = { categories: [], analysis: null };
+
+    function escapeHtml(value) {
+      return String(value ?? "").replace(/[&<>"']/g, (char) => ({
+        "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"
+      })[char]);
+    }
+
+    function youtubeIcon() {
+      return `<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M21.58 7.19a2.53 2.53 0 0 0-1.78-1.8C18.23 5 12 5 12 5s-6.23 0-7.8.39a2.53 2.53 0 0 0-1.78 1.8A26.4 26.4 0 0 0 2 12a26.4 26.4 0 0 0 .42 4.81 2.53 2.53 0 0 0 1.78 1.8C5.77 19 12 19 12 19s6.23 0 7.8-.39a2.53 2.53 0 0 0 1.78-1.8A26.4 26.4 0 0 0 22 12a26.4 26.4 0 0 0-.42-4.81ZM10 15V9l5.2 3L10 15Z"/></svg>`;
+    }
+
+    function initializeArrays(length) {
+      return {
+        BIT_START_A50: Array(length).fill(0),
+        BIT_START_A100: Array(length).fill(0),
+        BIT_START_B50: Array(length).fill(0),
+        BIT_START_B100: Array(length).fill(0),
+        BIT_START_NBA100: Array(length).fill(0)
+      };
+    }
+
+    function calculateBit(values, bit = 5.5, reverse = false) {
+      const nb = values.map(Number).filter((value) => Number.isFinite(value));
+      if (nb.length < 2) return bit / 100;
+      const maxValue = Math.max(...nb);
+      const minValue = Math.min(...nb);
+      const countSize = 50;
+      const totalRangeCount = countSize * nb.length;
+      const negativeRange = minValue < 0 ? Math.abs(minValue) : 0;
+      const positiveRange = maxValue > 0 ? maxValue : 0;
+      const negativeIncrement = negativeRange / (totalRangeCount - 1);
+      const positiveIncrement = positiveRange / (totalRangeCount - 1);
+      const arrays = initializeArrays(totalRangeCount);
+      let count = 0;
+      let totalSum = 0;
+
+      nb.forEach((value) => {
+        for (let i = 0; i < countSize; i += 1) {
+          let a50;
+          let b50;
+          let b100;
+          if (value < 0) {
+            a50 = minValue + negativeIncrement * (count + 1);
+            b50 = a50 - negativeIncrement * 2;
+            b100 = a50 + negativeIncrement;
+          } else {
+            a50 = minValue + positiveIncrement * (count + 1);
+            b50 = a50 - positiveIncrement * 2;
+            b100 = a50 + positiveIncrement;
+          }
+          const a100 = (count + 1) * bit / totalRangeCount;
+          const nba100 = a100 / (nb.length - 1);
+          arrays.BIT_START_A50[count] = a50;
+          arrays.BIT_START_A100[count] = a100;
+          arrays.BIT_START_B50[count] = b50;
+          arrays.BIT_START_B100[count] = b100;
+          arrays.BIT_START_NBA100[count] = nba100;
+          count += 1;
+        }
+        totalSum += value;
+      });
+
+      if (reverse) arrays.BIT_START_NBA100.reverse();
+      let nb50 = 0;
+      nb.forEach((value) => {
+        for (let index = 0; index < arrays.BIT_START_NBA100.length; index += 1) {
+          if (arrays.BIT_START_B50[index] <= value && value <= arrays.BIT_START_B100[index]) {
+            nb50 += arrays.BIT_START_NBA100[Math.min(index, arrays.BIT_START_NBA100.length - 1)];
+            break;
+          }
+        }
+      });
+      const averageRatio = (totalSum / (nb.length * Math.abs(maxValue || 1))) * 100;
+      nb50 = Math.min((nb50 / 100) * averageRatio, bit);
+      return nb.length === 2 ? bit - nb50 : nb50;
+    }
+
+    function bitMax(values) {
+      const result = calculateBit(values, 5.5, false);
+      return Number.isFinite(result) && result >= -100 && result <= 100 ? result : 0;
+    }
+
+    function bitMin(values) {
+      const result = calculateBit(values, 5.5, true);
+      return Number.isFinite(result) && result >= -100 && result <= 100 ? result : 0;
+    }
+
+    function parseUploadToMicro(video) {
+      if (Number.isFinite(Number(video.timestamp))) return Number(video.timestamp) * 1000000;
+      const raw = String(video.uploadDate || video.publishedAt || "").trim();
+      if (/^\d{8}$/.test(raw)) {
+        return (Date.UTC(Number(raw.slice(0, 4)), Number(raw.slice(4, 6)) - 1, Number(raw.slice(6, 8))) - MIN_REFERENCE_MS) * 1000;
+      }
+      const parsed = Date.parse(raw);
+      if (Number.isFinite(parsed)) return (parsed - MIN_REFERENCE_MS) * 1000;
+      return null;
+    }
+
+    function computeVideoNb(videos) {
+      const views = videos.map((video) => Number(video.viewCount || 0)).filter((value) => value > 0);
+      const dates = videos.map(parseUploadToMicro).filter((value) => Number.isFinite(value) && value >= 0);
+      const viewMax = views.length ? bitMax(views) : 0;
+      const viewMin = views.length ? bitMin(views) : 0;
+      const dateMax = dates.length ? bitMax(dates) : 0;
+      const dateMin = dates.length ? bitMin(dates) : 0;
+      return {
+        views,
+        dates,
+        viewMax,
+        viewMin,
+        dateMax,
+        dateMin,
+        nbMax: viewMax + dateMax,
+        nbMin: viewMin + dateMin,
+        nbGap: Math.abs((viewMax + dateMax) - (viewMin + dateMin))
+      };
+    }
+
+    function normalizeKeyword(entry) {
+      if (typeof entry === "string") return entry.trim();
+      if (entry && typeof entry === "object") return String(entry.keyword || entry.query || entry.title || "").trim();
+      return "";
+    }
+
+    async function loadJson(path) {
+      const res = await fetch(path, { cache: "no-store" });
+      if (!res.ok) throw new Error(`${path} ${res.status}`);
+      return res.json();
+    }
+
+    async function loadKeywords() {
+      const loaded = [];
+      for (const file of KEYWORD_FILES) {
+        try {
+          const data = await loadJson(`keywords/${file}`);
+          const keywords = Array.isArray(data.keywords) ? data.keywords.map(normalizeKeyword).filter(Boolean) : [];
+          loaded.push({ file, category: data.category || file.replace("_keywords.json", ""), keywords });
+        } catch (_) {
+          loaded.push({ file, category: file.replace("_keywords.json", ""), keywords: [] });
+        }
+      }
+      state.categories = loaded;
+    }
+
+    async function loadAnalysis() {
+      for (const path of ANALYSIS_PATHS) {
+        try {
+          state.analysis = await loadJson(path);
+          state.analysis.loadedPath = path;
+          return;
+        } catch (_) {}
+      }
+      state.analysis = null;
+    }
+
+    async function reloadLatestAnalysis() {
+      try {
+        state.analysis = await loadJson(`analysis_results/latest_keyword_analysis.json?ts=${Date.now()}`);
+        state.analysis.loadedPath = "analysis_results/latest_keyword_analysis.json";
+      } catch (_) {}
+    }
+
+    function renderCategoryOptions() {
+      const options = [`<option value="all">All categories</option>`].concat(
+        state.categories.map((category, index) =>
+          `<option value="${index}">${escapeHtml(category.category)} (${category.keywords.length})</option>`
+        )
+      );
+      $("categorySelect").innerHTML = options.join("");
+    }
+
+    function selectedKeywords() {
+      const categoryValue = $("categorySelect").value;
+      const suffix = $("suffixSelect").value.trim();
+      const manual = $("keywordInput").value.trim();
+      const limit = Math.max(1, Math.min(Number($("limitInput").value || 50), 50));
+      if (manual) return [suffix ? `${manual} ${suffix}` : manual];
+
+      const categories = categoryValue === "all"
+        ? state.categories
+        : [state.categories[Number(categoryValue)]].filter(Boolean);
+      return categories
+        .flatMap((category) => category.keywords.map((keyword) => `${category.category} ${keyword}`.trim()))
+        .map((keyword) => suffix ? `${keyword} ${suffix}` : keyword)
+        .slice(0, limit);
+    }
+
+    function allAnalysisKeywords() {
+      return (state.analysis?.categories || []).flatMap((category) =>
+        (category.keywords || []).map((keyword) => ({ ...keyword, category: category.category }))
+      );
+    }
+
+    function renderSummary(items, mode = "analysis") {
+      const count = items.length;
+      const avgMax = count ? items.reduce((sum, item) => sum + Number(item.nbMax || 0), 0) / count : 0;
+      const avgMin = count ? items.reduce((sum, item) => sum + Number(item.nbMin || 0), 0) / count : 0;
+      const maxGap = count ? Math.max(...items.map((item) => Number(item.nbGap || 0))) : 0;
+      $("summaryGrid").innerHTML = `
+        <div class="summary"><small>모드</small><strong>${escapeHtml(mode)}</strong></div>
+        <div class="summary"><small>항목 수</small><strong>${intFmt.format(count)}</strong></div>
+        <div class="summary"><small>평균 N/B MAX</small><strong>${fmt.format(avgMax)}</strong></div>
+        <div class="summary"><small>평균 N/B MIN</small><strong>${fmt.format(avgMin)}</strong></div>
+      `;
+      return maxGap;
+    }
+
+    function renderQueryStrip() {
+      const keywords = selectedKeywords();
+      $("queryStrip").innerHTML = keywords.slice(0, 12).map((keyword, index) => `
+        <button class="chip ${index === 0 ? "active" : ""}" type="button" data-keyword="${escapeHtml(keyword)}">${escapeHtml(keyword)}</button>
+      `).join("");
+    }
+
+    function renderAnalysisList() {
+      const items = allAnalysisKeywords();
+      renderSummary(items, "json");
+      $("pageTitle").textContent = "저장된 분석 결과";
+      $("panelTitle").textContent = "keyword_analysis_20260613_065205.json";
+      $("panelMeta").textContent = state.analysis?.loadedPath || "-";
+      $("statusBox").textContent = `키워드 JSON: ${state.categories.length}개\n분석 항목: ${items.length}개`;
+      renderQueryStrip();
+
+      $("resultArea").className = "analysis-list";
+      $("resultArea").innerHTML = items.length ? items.slice(0, 80).map((item) => `
+        <article class="analysis-row" data-keyword="${escapeHtml(item.analysisKeyword || item.keyword || "")}">
+          <h4>${escapeHtml(item.analysisKeyword || item.keyword || "-")}</h4>
+          <div class="metrics">
+            <div class="metric"><small>N/B MAX</small><strong>${fmt.format(Number(item.nbMax || 0))}</strong></div>
+            <div class="metric"><small>N/B MIN</small><strong>${fmt.format(Number(item.nbMin || 0))}</strong></div>
+            <div class="metric"><small>차이</small><strong>${fmt.format(Number(item.nbGap || 0))}</strong></div>
+          </div>
+        </article>
+      `).join("") : `<div class="empty">분석 JSON을 불러오지 못했습니다.</div>`;
+    }
+
+    function formatUploadDate(value) {
+      const raw = String(value || "");
+      if (/^\d{8}$/.test(raw)) return `${raw.slice(0,4)}-${raw.slice(4,6)}-${raw.slice(6,8)}`;
+      return raw || "-";
+    }
+
+    function renderVideos(query, videos, nb) {
+      $("pageTitle").textContent = `유튜브 분석: ${query}`;
+      $("panelTitle").textContent = "유튜브 검색 결과";
+      $("panelMeta").textContent = `${videos.length}개 영상 / yt-dlp`;
+      $("statusBox").textContent =
+        `검색어: ${query}\n조회수: ${nb.views.length}개, 업로드 날짜: ${nb.dates.length}개\nN/B MAX: ${fmt.format(nb.nbMax)}\nN/B MIN: ${fmt.format(nb.nbMin)}`;
+
+      $("summaryGrid").innerHTML = `
+        <div class="summary"><small>N/B MAX</small><strong>${fmt.format(nb.nbMax)}</strong></div>
+        <div class="summary"><small>N/B MIN</small><strong>${fmt.format(nb.nbMin)}</strong></div>
+        <div class="summary"><small>조회수 N/B</small><strong>${fmt.format(nb.viewMax)} / ${fmt.format(nb.viewMin)}</strong></div>
+        <div class="summary"><small>날짜 N/B</small><strong>${fmt.format(nb.dateMax)} / ${fmt.format(nb.dateMin)}</strong></div>
+      `;
+
+      $("resultArea").className = "video-grid";
+      $("resultArea").innerHTML = videos.length ? videos.map((video) => {
+        const url = video.url || `https://www.youtube.com/watch?v=${encodeURIComponent(video.id || "")}`;
+        const thumb = video.thumbnail
+          ? `<img src="${escapeHtml(video.thumbnail)}" alt="">`
+          : youtubeIcon();
+        return `
+          <article class="video-card" data-url="${escapeHtml(url)}">
+            <div class="thumb">${thumb}</div>
+            <div class="video-body">
+              <h4>${escapeHtml(video.title || "-")}</h4>
+              <div class="video-meta">
+                <span>${escapeHtml(video.channel || "-")}</span>
+                <span>조회수 ${intFmt.format(Number(video.viewCount || 0))}</span>
+                <span>업로드 ${escapeHtml(formatUploadDate(video.uploadDate))}</span>
+              </div>
+              <a class="mini" href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer">${youtubeIcon()}열기</a>
+            </div>
+          </article>
+        `;
+      }).join("") : `<div class="empty">유튜브 검색 결과가 없습니다.</div>`;
+    }
+
+    async function searchAndAnalyze() {
+      const query = selectedKeywords()[0];
+      if (!query) return;
+      const limit = Math.max(1, Math.min(Number($("limitInput").value || 50), 50));
+      $("pageTitle").textContent = `검색 중: ${query}`;
+      $("panelTitle").textContent = "yt-dlp 실행 중";
+      $("panelMeta").textContent = "대기";
+      $("resultArea").className = "analysis-list";
+      $("resultArea").innerHTML = `<div class="empty">유튜브 검색과 N/B 계산을 실행 중입니다.</div>`;
+      $("statusBox").textContent = "yt-dlp로 유튜브를 검색 중입니다...";
+
+      try {
+        const res = await fetch(`/api/youtube-search?q=${encodeURIComponent(query)}&limit=${limit}`, { cache: "no-store" });
+        const data = await res.json();
+        if (!res.ok) throw new Error(data.error || `HTTP ${res.status}`);
+        const videos = data.videos || [];
+        renderVideos(query, videos, computeVideoNb(videos));
+      } catch (error) {
+        $("statusBox").textContent = `검색 실패: ${error.message}`;
+        $("resultArea").innerHTML = `<div class="empty">youtube_search_server.py를 실행한 뒤 다시 시도하세요.</div>`;
+      }
+    }
+
+    async function runAndSaveAnalysis(youtubeEnabled = false) {
+      const limit = Math.max(1, Math.min(Number($("limitInput").value || 50), 50));
+      const params = new URLSearchParams({
+        youtube: youtubeEnabled ? "true" : "false",
+        results: String(limit),
+        maxKeywords: youtubeEnabled ? "1" : "0",
+        timeout: "180",
+        runTimeout: youtubeEnabled ? "900" : "180"
+      });
+
+      $("pageTitle").textContent = youtubeEnabled ? "유튜브 분석 실행 중" : "키워드 분석 실행 중";
+      $("panelTitle").textContent = "분석 JSON 저장 중";
+      $("panelMeta").textContent = "실행 중";
+      $("statusBox").textContent = youtubeEnabled
+        ? "키워드가 1개씩 유튜브에서 검색됩니다."
+        : "analyze_keywords_bot.py를 실행하고 analysis_results JSON을 저장합니다.";
+      $("resultArea").className = "analysis-list";
+      $("resultArea").innerHTML = `<div class="empty">분석 실행을 시작합니다.</div>`;
+
+      try {
+        const startRes = await fetch(`/api/start-keyword-analysis?${params.toString()}`, { cache: "no-store" });
+        const startData = await startRes.json();
+        if (!startRes.ok) throw new Error(startData.error || `HTTP ${startRes.status}`);
+        await pollAnalysisRun(startData.id, youtubeEnabled);
+      } catch (error) {
+        $("statusBox").textContent = `분석 실패: ${error.message}`;
+        $("resultArea").innerHTML = `<div class="empty">분석 실행에 실패했습니다. 유튜브 결과 수를 줄인 뒤 다시 시도하세요.</div>`;
+      }
+    }
+
+    async function pollAnalysisRun(runId, youtubeEnabled) {
+      let lastLineCount = -1;
+      while (true) {
+        const res = await fetch(`/api/keyword-analysis-status?id=${encodeURIComponent(runId)}&ts=${Date.now()}`, { cache: "no-store" });
+        const data = await res.json();
+        if (!res.ok) throw new Error(data.error || `HTTP ${res.status}`);
+
+        const lines = data.lines || [];
+        if (lines.length !== lastLineCount) {
+          lastLineCount = lines.length;
+          renderRunLines(lines, data.running, youtubeEnabled);
+        }
+
+        if (!data.running) {
+          if (!data.ok) throw new Error(data.stderr || "분석 프로세스가 실패했습니다.");
+          await reloadLatestAnalysis();
+          $("statusBox").textContent = `저장 완료: analysis_results/latest_keyword_analysis.json\n총 로그 ${lines.length}줄`;
+          renderAnalysisList();
+          return;
+        }
+
+        await new Promise((resolve) => setTimeout(resolve, 1000));
+      }
+    }
+
+    function renderRunLines(lines, running, youtubeEnabled) {
+      const isKeywordLine = (line) =>
+        line.startsWith("[KEYWORD]") ||
+        line.startsWith("유튜브 검색") ||
+        line.startsWith("YouTube search");
+      const searchLines = lines.filter(isKeywordLine);
+      const latest = lines[lines.length - 1] || "";
+      $("panelMeta").textContent = running ? "실행 중" : "완료";
+      $("statusBox").textContent = youtubeEnabled
+        ? `검색된 키워드 ${searchLines.length}개\n${latest}`
+        : latest || "분석 중";
+      $("resultArea").className = "analysis-list";
+      $("resultArea").innerHTML = lines.length ? lines.map((line, index) => {
+        const isSearch = isKeywordLine(line);
+        const searchIndex = lines.slice(0, index + 1).filter(isKeywordLine).length;
+        const label = isSearch ? `키워드 ${searchIndex}` : `로그 ${index + 1}`;
+        return `
+          <article class="analysis-row">
+            <h4>${escapeHtml(label)}</h4>
+            <div class="metrics">
+              <div class="metric"><small>상태</small><strong>${isSearch ? "검색 중" : "기록"}</strong></div>
+              <div class="metric"><small>내용</small><strong>${escapeHtml(line)}</strong></div>
+              <div class="metric"><small>순서</small><strong>${index + 1}</strong></div>
+            </div>
+          </article>
+        `;
+      }).join("") : `<div class="empty">첫 번째 로그를 기다리는 중입니다.</div>`;
+    }
+
+    function pickRandomKeyword() {
+      const all = state.categories.flatMap((category) =>
+        category.keywords.map((keyword) => `${category.category} ${keyword}`.trim())
+      );
+      if (!all.length) return;
+      $("keywordInput").value = all[Math.floor(Math.random() * all.length)];
+      renderQueryStrip();
+    }
+
+    async function init() {
+      await Promise.all([loadKeywords(), loadAnalysis()]);
+      renderCategoryOptions();
+      renderAnalysisList();
+    }
+
+    $("categorySelect").addEventListener("change", () => { $("keywordInput").value = ""; renderQueryStrip(); });
+    $("suffixSelect").addEventListener("change", renderQueryStrip);
+    $("limitInput").addEventListener("input", renderQueryStrip);
+    $("keywordInput").addEventListener("input", renderQueryStrip);
+    $("searchBtn").addEventListener("click", searchAndAnalyze);
+    $("runSaveBtn").addEventListener("click", () => runAndSaveAnalysis(false));
+    $("runYoutubeSaveBtn").addEventListener("click", () => runAndSaveAnalysis(true));
+    $("showDataBtn").addEventListener("click", renderAnalysisList);
+    $("randomBtn").addEventListener("click", pickRandomKeyword);
+    $("queryStrip").addEventListener("click", (event) => {
+      const button = event.target.closest("button[data-keyword]");
+      if (!button) return;
+      $("keywordInput").value = button.dataset.keyword;
+      renderQueryStrip();
+    });
+    $("resultArea").addEventListener("click", (event) => {
+      if (event.target.closest("a")) return;
+      const analysisRow = event.target.closest("[data-keyword]");
+      if (analysisRow) {
+        $("keywordInput").value = analysisRow.dataset.keyword;
+        renderQueryStrip();
+        return;
+      }
+      const video = event.target.closest("[data-url]");
+      if (video) window.open(video.dataset.url, "_blank", "noopener,noreferrer");
+    });
+
+    init();
+  </script>
+</body>
+</html>

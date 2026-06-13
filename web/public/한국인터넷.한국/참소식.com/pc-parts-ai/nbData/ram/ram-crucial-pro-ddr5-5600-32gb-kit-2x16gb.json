@@ -1,0 +1,89 @@
+{
+  "schema": "pc-part-nb-collector-file.v1",
+  "updatedAt": "2026-06-14T03:55:18.436+09:00",
+  "category": "RAM",
+  "id": "ram-crucial-pro-ddr5-5600-32gb-kit-2x16gb",
+  "name": "Crucial Pro DDR5-5600 32GB kit (2x16GB)",
+  "maker": "Crucial",
+  "platform": "DDR5",
+  "estimatedPriceKrw": 155240,
+  "priceBand": "15~30만원",
+  "speedLabel": "5600MHz",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "RAM",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 75,
+  "valueIndex": 48.3,
+  "aiUseScore": 49,
+  "powerWatts": 0,
+  "tags": [
+    "desktop",
+    "UDIMM"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "RAM",
+    "partId": "ram-crucial-pro-ddr5-5600-32gb-kit-2x16gb",
+    "partName": "Crucial Pro DDR5-5600 32GB kit (2x16GB)",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "RAM",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 750,
+      "value": 644,
+      "aiFit": 490,
+      "priceEfficiency": 640,
+      "powerEfficiency": 750
+    },
+    "nbVector": [
+      100,
+      750,
+      644,
+      490,
+      640,
+      750
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 552.336,
+    "nbMin": 350.396,
+    "weightedScore": 427,
+    "nbBand": "100~499",
+    "summary": "RAM Crucial Pro DDR5-5600 32GB kit (2x16GB) 부품을 속도 중심 N/B 데이터베이스 점수 427점으로 저장했습니다."
+  },
+  "nbWeightedScore": 427,
+  "nbMax": 552.336,
+  "nbMin": 350.396,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Crucial%20DDR5-5600%2032GB%20kit%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "Crucial Pro series, 2x16GB kit, compatible with Intel 13th gen and AMD Ryzen 7000.",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

@@ -1,0 +1,393 @@
+{
+  "timestamp": "2026-06-07T14:06:20.203600",
+  "model": "kimi-k2.5:cloud",
+  "keyword_count": 3,
+  "analyze_subtitles": true,
+  "analysis_source": "youtube",
+  "keywords": [
+    {
+      "keyword": "오늘의 주요 뉴스",
+      "is_fixed": true,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "대통령에 즉각 회담",
+      "is_fixed": false,
+      "views": [
+        13840,
+        7815
+      ],
+      "video_count": 2,
+      "videos": [
+        {
+          "title": "[지금뉴스] 장동혁 “국민 원하는 재선거해야”…李대통령에 회담 제안 / KBS 2026.06.07.",
+          "video_id": "r0Vkako7thM",
+          "views": 13840,
+          "upload_date": "2026-06-07",
+          "url": "https://www.youtube.com/watch?v=r0Vkako7thM",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        },
+        {
+          "title": "Jang Dong-hyuk: \"Re-election regardless of party advantage\"... Lee Jae-myung demands meeting with...",
+          "video_id": "ChD_60Pf0dQ",
+          "views": 7815,
+          "upload_date": "2026-06-07",
+          "url": "https://www.youtube.com/watch?v=ChD_60Pf0dQ",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        }
+      ],
+      "max": 3.6068,
+      "min": 0.0,
+      "nb_score": 36067.5217,
+      "avg_views": 10827.5,
+      "total_views": 21655
+    },
+    {
+      "keyword": "대통령에 회담",
+      "is_fixed": false,
+      "views": [
+        13410,
+        7236,
+        4445
+      ],
+      "video_count": 3,
+      "videos": [
+        {
+          "title": "[지금뉴스] 장동혁 “국민 원하는 재선거해야”…李대통령에 회담 제안 / KBS 2026.06.07.",
+          "video_id": "r0Vkako7thM",
+          "views": 13410,
+          "upload_date": "2026-06-07",
+          "url": "https://www.youtube.com/watch?v=r0Vkako7thM",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        },
+        {
+          "title": "Jang Dong-hyuk: \"Re-election regardless of party advantage\"... Lee Jae-myung demands meeting with...",
+          "video_id": "ChD_60Pf0dQ",
+          "views": 7236,
+          "upload_date": "2026-06-07",
+          "url": "https://www.youtube.com/watch?v=ChD_60Pf0dQ",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        },
+        {
+          "title": "[On-Site Footage] Jang Dong-hyeok: \"A Rerun Election Is Unavoidable\"... Tells President to \"Meet ...",
+          "video_id": "or4Ol7OzLA4",
+          "views": 4445,
+          "upload_date": "2026-06-07",
+          "url": "https://www.youtube.com/watch?v=or4Ol7OzLA4",
+          "subtitle_summary": "검색 결과가 없어 요약할 수 없습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        }
+      ],
+      "max": 1.4979,
+      "min": 3.6818,
+      "nb_score": 0.4068,
+      "avg_views": 8363.67,
+      "total_views": 25091
+    },
+    {
+      "keyword": "장동혁 재선거",
+      "is_fixed": false,
+      "views": [
+        126455,
+        4504,
+        6327,
+        840,
+        14145,
+        4473
+      ],
+      "video_count": 6,
+      "videos": [
+        {
+          "title": "[Breaking] Jang Dong-hyuk Holds Emergency Press Conference: \"Hold a Re-election!!!\" [On-site Vide...",
+          "video_id": "xMZuzO3gXs4",
+          "views": 126455,
+          "upload_date": "2026-06-07",
+          "url": "https://www.youtube.com/watch?v=xMZuzO3gXs4",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        },
+        {
+          "title": "[On-Site Footage] Jang Dong-hyeok: \"A Rerun Election Is Unavoidable\"... Tells President to \"Meet ...",
+          "video_id": "or4Ol7OzLA4",
+          "views": 4504,
+          "upload_date": "2026-06-07",
+          "url": "https://www.youtube.com/watch?v=or4Ol7OzLA4",
+          "subtitle_summary": "검색 결과가 없어 요약할 수 없습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        },
+        {
+          "title": "[속보] \"재선거하라!\" 장동혁 긴급 기자회견 풀버전 [현장영상] / 채널A",
+          "video_id": "WtNfLA6hqTY",
+          "views": 6327,
+          "upload_date": "2026-06-07",
+          "url": "https://www.youtube.com/watch?v=WtNfLA6hqTY",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        },
+        {
+          "title": "Jang Dong-hyuk: \"Re-election unavoidable\"… Democratic Party: \"Cooperate first on forming the comm...",
+          "video_id": "ll9nb8yEWsA",
+          "views": 840,
+          "upload_date": "2026-06-07",
+          "url": "https://www.youtube.com/watch?v=ll9nb8yEWsA",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        },
+        {
+          "title": "[지금뉴스] 장동혁 “국민 원하는 재선거해야”…李대통령에 회담 제안 / KBS 2026.06.07.",
+          "video_id": "r0Vkako7thM",
+          "views": 14145,
+          "upload_date": "2026-06-07",
+          "url": "https://www.youtube.com/watch?v=r0Vkako7thM",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        },
+        {
+          "title": "장동혁 \"재선거 불가피\"…민주 \"정치쇼 관둬야\" / 연합뉴스TV (YonhapnewsTV)",
+          "video_id": "22uMtA1cqS0",
+          "views": 4473,
+          "upload_date": "2026-06-07",
+          "url": "https://www.youtube.com/watch?v=22uMtA1cqS0",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        }
+      ],
+      "max": 0.2704,
+      "min": 1.0976,
+      "nb_score": 0.2464,
+      "avg_views": 26124.0,
+      "total_views": 156744
+    },
+    {
+      "keyword": "문제 에",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "에 회담",
+      "is_fixed": false,
+      "views": [
+        13575
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "[지금뉴스] 장동혁 “국민 원하는 재선거해야”…李대통령에 회담 제안 / KBS 2026.06.07.",
+          "video_id": "r0Vkako7thM",
+          "views": 13575,
+          "upload_date": "2026-06-07",
+          "url": "https://www.youtube.com/watch?v=r0Vkako7thM",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "선동해야",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "재 에",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "대통령에 즉각",
+      "is_fixed": false,
+      "views": [
+        13776
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "[지금뉴스] 장동혁 “국민 원하는 재선거해야”…李대통령에 회담 제안 / KBS 2026.06.07.",
+          "video_id": "r0Vkako7thM",
+          "views": 13776,
+          "upload_date": "2026-06-07",
+          "url": "https://www.youtube.com/watch?v=r0Vkako7thM",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "재 에 즉각",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "달러 환율",
+      "is_fixed": false,
+      "views": [
+        110925
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "이미 공항 환율은 1,600원 뚫었다...경제 위기의 전조 증상? [지금이뉴스] / YTN",
+          "video_id": "Vu5KyEcFD0g",
+          "views": 110925,
+          "upload_date": "2026-06-07",
+          "url": "https://www.youtube.com/watch?v=Vu5KyEcFD0g",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "오르려고 달러 환율",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "달러 환율 공항선",
+      "is_fixed": false,
+      "views": [
+        3721
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "2분기 환율 외환위기 후 최고…공항선 1,620원대 / 연합뉴스TV (YonhapnewsTV)",
+          "video_id": "93JqtVuaN-U",
+          "views": 3721,
+          "upload_date": "2026-06-07",
+          "url": "https://www.youtube.com/watch?v=93JqtVuaN-U",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "깐부 회동",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "저녁 SK와",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "SK와 2차",
+      "is_fixed": false,
+      "views": [
+        5868
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "SK Hynix, Samsung Electronics Leveraged ETFs… How Did They Become Poison Causing a Fearful Market...",
+          "video_id": "rDQuzFnX66Q",
+          "views": 5868,
+          "upload_date": "2026-06-07",
+          "url": "https://www.youtube.com/watch?v=rDQuzFnX66Q",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    }
+  ]
+}

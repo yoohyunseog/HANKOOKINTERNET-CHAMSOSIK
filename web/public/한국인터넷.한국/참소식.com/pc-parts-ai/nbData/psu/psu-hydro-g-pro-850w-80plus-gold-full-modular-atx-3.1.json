@@ -1,0 +1,90 @@
+{
+  "schema": "pc-part-nb-collector-file.v1",
+  "updatedAt": "2026-06-14T03:55:17.080+09:00",
+  "category": "PSU",
+  "id": "psu-hydro-g-pro-850w-80plus-gold-full-modular-atx-3.1",
+  "name": "Hydro G Pro 850W 80PLUS Gold Full Modular ATX 3.1",
+  "maker": "FSP",
+  "platform": "ATX 3.1",
+  "estimatedPriceKrw": 184500,
+  "priceBand": "15~30만원",
+  "speedLabel": "80PLUS Gold",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "PSU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 75,
+  "valueIndex": 40.7,
+  "aiUseScore": 49,
+  "powerWatts": 850,
+  "tags": [
+    "full-modular",
+    "pcie5.0",
+    "atx3.1"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "PSU",
+    "partId": "psu-hydro-g-pro-850w-80plus-gold-full-modular-atx-3.1",
+    "partName": "Hydro G Pro 850W 80PLUS Gold Full Modular ATX 3.1",
+    "speed": {
+      "score": 100,
+      "weight": 0.32,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "PSU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 750,
+      "value": 543,
+      "aiFit": 490,
+      "priceEfficiency": 540,
+      "powerEfficiency": 100
+    },
+    "nbVector": [
+      100,
+      750,
+      543,
+      490,
+      540,
+      100
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 286.688,
+    "nbMin": 388.355,
+    "weightedScore": 356,
+    "nbBand": "100~499",
+    "summary": "PSU Hydro G Pro 850W 80PLUS Gold Full Modular ATX 3.1 부품을 속도 중심 N/B 데이터베이스 점수 356점으로 저장했습니다."
+  },
+  "nbWeightedScore": 356,
+  "nbMax": 286.688,
+  "nbMin": 388.355,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=FSP%20Hydro%20G%20Pro%20850W%20PCIe%205.0%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "Supports 12V2x6 connector, ATX 3.1 standard.",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

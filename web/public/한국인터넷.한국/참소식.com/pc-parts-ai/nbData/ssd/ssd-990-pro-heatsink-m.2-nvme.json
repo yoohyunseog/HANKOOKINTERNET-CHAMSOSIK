@@ -1,0 +1,90 @@
+{
+  "schema": "pc-part-nb-collector-file.v1",
+  "updatedAt": "2026-06-14T03:55:22.845+09:00",
+  "category": "SSD",
+  "id": "ssd-990-pro-heatsink-m.2-nvme",
+  "name": "990 PRO Heatsink M.2 NVMe",
+  "maker": "Samsung",
+  "platform": "PCIe 4.0",
+  "estimatedPriceKrw": 339950,
+  "priceBand": "30~60만원",
+  "speedLabel": "7,450MB/s",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "SSD",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 95,
+  "valueIndex": 27.9,
+  "aiUseScore": 62,
+  "powerWatts": 0,
+  "tags": [
+    "ps5",
+    "heatsink",
+    "high-end"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "SSD",
+    "partId": "ssd-990-pro-heatsink-m.2-nvme",
+    "partName": "990 PRO Heatsink M.2 NVMe",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "SSD",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 950,
+      "value": 372,
+      "aiFit": 620,
+      "priceEfficiency": 290,
+      "powerEfficiency": 950
+    },
+    "nbVector": [
+      100,
+      950,
+      372,
+      620,
+      290,
+      950
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 323.21,
+    "nbMin": 370.041,
+    "weightedScore": 426,
+    "nbBand": "100~499",
+    "summary": "SSD 990 PRO Heatsink M.2 NVMe 부품을 속도 중심 N/B 데이터베이스 점수 426점으로 저장했습니다."
+  },
+  "nbWeightedScore": 426,
+  "nbMax": 323.21,
+  "nbMin": 370.041,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Samsung%20990%20Pro%20Heatsink%20M.2%20NVMe%20SSD%202TB%20price",
+  "notes": "Heatsink version of the 990 PRO 2TB. Distinct from the non-heatsink version.",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

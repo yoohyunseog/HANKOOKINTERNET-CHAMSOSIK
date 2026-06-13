@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <meta name="description" content="?쒖쭊??二쇱꽍怨??댁옱紐???듬졊??諛깅룄????붾뒗 ?⑥닚???띾떞???꾨땲?? 諛깅룄?대씪??媛쒕뀗???대? 援??湲?沅뚰븳痢듦퉴吏 ?꾨떖???먯뇙留??ㅽ듃?뚰겕??吏?앹씠?덈떎???먯쓣 蹂댁뿬以??">
+  <meta name="keywords" content="諛깅룄?? ?쒖쭊?? ?댁옱紐? N/B ?뚭퀬由ъ쬁, ?먯뇙留??ㅽ듃?뚰겕, ?듭떊 蹂댁븞, 沅뚰븳">
+  <link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="../../favicon.svg">
+  <link rel="canonical" href="https://xn--9l4b4xi9r.com/blog/posts/2026-06-11-backdoor-concept-reached-state-level.html">
+
+  <!-- Open Graph (?뚯뀥 誘몃뵒??怨듭쑀?? -->
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="ko_KR">
+  <meta property="og:site_name" content="李몄냼??com">
+  <meta property="og:url" content="https://xn--9l4b4xi9r.com/blog/posts/2026-06-11-backdoor-concept-reached-state-level.html">
+  <meta property="og:title" content="諛깅룄??媛쒕뀗??援?? ?뺤긽湲???붿뿉 ?깆옣???댁쑀">
+  <meta property="og:description" content="?쒖쭊??二쇱꽍怨??댁옱紐???듬졊??諛깅룄????붾뒗 ?⑥닚???띾떞???꾨땲?? 諛깅룄?대씪??媛쒕뀗???대? 援??湲?沅뚰븳痢듦퉴吏 ?꾨떖???먯뇙留??ㅽ듃?뚰겕??吏?앹씠?덈떎???먯쓣 蹂댁뿬以??">
+  <meta property="og:image" content="https://xn--9l4b4xi9r.com/blog/assets/backdoor-state-level.png">
+  <meta property="article:published_time" content="2026-06-11">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="諛깅룄??媛쒕뀗??援?? ?뺤긽湲???붿뿉 ?깆옣???댁쑀">
+  <meta name="twitter:description" content="?쒖쭊??二쇱꽍怨??댁옱紐???듬졊??諛깅룄????붾뒗 ?⑥닚???띾떞???꾨땲?? 諛깅룄?대씪??媛쒕뀗???대? 援??湲?沅뚰븳痢듦퉴吏 ?꾨떖???먯뇙留??ㅽ듃?뚰겕??吏?앹씠?덈떎.">
+  <meta name="twitter:image" content="https://xn--9l4b4xi9r.com/blog/assets/backdoor-state-level.png">
+
+  <title>諛깅룄??媛쒕뀗??援?? ?뺤긽湲???붿뿉 ?깆옣???댁쑀 | 李몄냼??com 釉붾줈洹?/title>
+  <link rel="stylesheet" href="../../common-site.css">
+  <style>
+    :root {
+      color-scheme: dark;
+      --page: #08111c;
+      --surface: #111d2d;
+      --ink: #f3f7fb;
+      --muted: #b6c6d8;
+      --line: rgba(180, 205, 230, 0.2);
+      --blue: #75b7ff;
+      --green: #6ee7b7;
+      --amber: #f6c35d;
+      --red: #ff746d;
+      --teal: #70e0d0;
+      --highlight: rgba(122, 184, 255, 0.15);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+      background: var(--page);
+      color: var(--ink);
+      line-height: 1.8;
+      min-height: 100vh;
+    }
+
+    .post-container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 40px 24px;
+    }
+
+    .post-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 14px;
+      margin-bottom: 32px;
+      transition: color 0.2s;
+    }
+
+    .post-back:hover {
+      color: var(--blue);
+    }
+
+    .post-header {
+      margin-bottom: 40px;
+    }
+
+    .post-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      font-size: 13px;
+      color: var(--muted);
+      margin-bottom: 16px;
+    }
+
+    .post-meta span {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .post-meta span::before {
+      content: '??;
+      color: var(--line);
+    }
+
+    .post-meta span:first-child::before {
+      display: none;
+    }
+
+    .post-views {
+      color: var(--teal);
+    }
+
+    .post-header h1 {
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 1.3;
+      margin-bottom: 12px;
+      color: var(--ink);
+    }
+
+    .post-subtitle {
+      font-size: 18px;
+      color: var(--muted);
+      font-weight: 400;
+    }
+
+    .hero-figure {
+      margin: 32px 0;
+      border-radius: 12px;
+      overflow: hidden;
+      background: var(--surface);
+    }
+
+    .hero-figure img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .hero-figure figcaption {
+      padding: 12px 16px;
+      font-size: 13px;
+      color: var(--muted);
+      background: var(--surface);
+      border-top: 1px solid var(--line);
+    }
+
+    .post-content {
+      font-size: 16px;
+      line-height: 1.9;
+    }
+
+    .post-content h2 {
+      font-size: 24px;
+      font-weight: 600;
+      margin: 48px 0 20px;
+      color: var(--ink);
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 12px;
+    }
+
+    .post-content h3 {
+      font-size: 20px;
+      font-weight: 600;
+      margin: 36px 0 16px;
+      color: var(--ink);
+    }
+
+    .post-content p {
+      margin: 20px 0;
+    }
+
+    .post-content .lede {
+      font-size: 18px;
+      font-weight: 500;
+      color: var(--ink);
+      line-height: 1.8;
+    }
+
+    .post-content strong.highlight {
+      background: linear-gradient(transparent 60%, rgba(122, 184, 255, 0.25) 60%);
+      color: #fff;
+    }
+
+    .post-content mark {
+      background: rgba(241, 184, 92, 0.2);
+      color: #f6e3bf;
+      padding: 2px 4px;
+      border-radius: 3px;
+    }
+
+    .key-point {
+      background: rgba(122, 184, 255, 0.15);
+      border-left: 4px solid var(--blue);
+      padding: 17px 19px;
+      border-radius: 8px;
+      margin: 26px 0;
+      color: #dceaff;
+    }
+
+    .key-point strong {
+      color: var(--blue);
+    }
+
+    .quote {
+      border-left: 4px solid var(--amber);
+      background: rgba(241, 184, 92, 0.08);
+      padding: 17px 19px;
+      border-radius: 8px;
+      margin: 26px 0;
+      color: #f6e3bf;
+    }
+
+    .quote.warning {
+      border-left-color: var(--red);
+      background: rgba(255, 116, 109, 0.08);
+      color: #ffd8d5;
+    }
+
+    .source-box {
+      border: 1px solid rgba(112, 224, 208, 0.28);
+      background: rgba(112, 224, 208, 0.055);
+      border-radius: 8px;
+      padding: 18px;
+      margin: 28px 0;
+    }
+
+    .source-box strong {
+      color: var(--teal);
+    }
+
+    .source-box ul {
+      margin: 12px 0 0 20px;
+    }
+
+    .source-box li {
+      margin: 8px 0;
+    }
+
+    .post-content .text-blue { color: var(--blue); }
+    .post-content .text-amber { color: var(--amber); }
+    .post-content .text-red { color: var(--red); }
+    .post-content .text-teal { color: var(--teal); }
+    .post-content .text-muted { color: var(--muted); }
+
+    .post-content .underline {
+      text-decoration: underline;
+      text-decoration-color: var(--blue);
+      text-underline-offset: 3px;
+    }
+
+    .note-box {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 16px 20px;
+      margin: 24px 0;
+    }
+
+    .note-box strong {
+      color: var(--amber);
+    }
+
+    .source-list {
+      list-style: none;
+      margin: 24px 0;
+      padding: 0;
+    }
+
+    .source-list li {
+      padding: 8px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .source-list li:last-child {
+      border-bottom: none;
+    }
+
+    .source-list a {
+      color: var(--blue);
+      text-decoration: none;
+    }
+
+    .source-list a:hover {
+      text-decoration: underline;
+    }
+
+    .post-footer {
+      margin-top: 48px;
+      padding-top: 32px;
+      border-top: 1px solid var(--line);
+    }
+
+    .site-footer {
+      text-align: center;
+      padding: 32px 24px;
+      color: var(--muted);
+      font-size: 14px;
+      border-top: 1px solid var(--line);
+      margin-top: 64px;
+    }
+
+    @media (max-width: 768px) {
+      .post-container {
+        padding: 24px 16px;
+      }
+
+      .post-header h1 {
+        font-size: 26px;
+      }
+
+      .post-subtitle {
+        font-size: 16px;
+      }
+
+      .post-content {
+        font-size: 15px;
+      }
+
+      .post-content h2 {
+        font-size: 20px;
+      }
+    }
+  </style>
+
+
+</head>
+<body>
+  <script src="../../domain-check.js"></script>
+
+  <main class="post-container">
+    <a href="../" class="post-back">??釉붾줈洹?紐⑸줉?쇰줈</a>
+
+    <header class="post-header">
+      <div class="post-meta">
+        <time datetime="2026-06-11">2026-06-11</time>
+        <span>?ы쉶 遺꾩꽍</span>
+        <span>諛깅룄?? ?쒖쭊?? ?댁옱紐? N/B ?뚭퀬由ъ쬁</span>
+        <span class="post-views" id="view-count">議고쉶??濡쒕뵫以?..</span>
+      </div>
+      <h1>諛깅룄??媛쒕뀗??援?? ?뺤긽湲???붿뿉 ?깆옣???댁쑀</h1>
+      <p class="post-subtitle">?쒖쭊??二쇱꽍怨??댁옱紐???듬졊??諛깅룄????붾뒗 ?⑥닚???띾떞???꾨땲?? 諛깅룄?대씪??媛쒕뀗???대? 援??湲?沅뚰븳痢듦퉴吏 ?꾨떖???먯뇙留??ㅽ듃?뚰겕??吏?앹씠?덈떎???먯쓣 蹂댁뿬以??</p>
+    </header>
+
+    <figure class="hero-figure">
+      <img src="../assets/backdoor-state-level.png" alt="諛깅룄??媛쒕뀗??援?? ?뺤긽湲???붿뿉 ?깆옣???댁쑀">
+      <figcaption>諛깅룄?대씪??媛쒕뀗???대? 援??湲?沅뚰븳痢듦퉴吏 ?꾨떖???먯뇙留??ㅽ듃?뚰겕??吏??/figcaption>
+    </figure>
+
+    <article class="post-content">
+      <p class="lede">怨듦컻?곸쑝濡??뺤씤?섎뒗 ?ъ떎? ?쒖쭊??二쇱꽍怨??댁옱紐???듬졊 ?ъ씠?먯꽌 "?듭떊 蹂댁븞"怨?"諛깅룄???쇰뒗 ?⑥뼱媛 ?ㅼ젣 ?뺤긽湲???붿뿉 ?깆옣?덈떎???먯씠?? ?섏?留??듭떖? ?⑥닚??"???щ엺???띾떞???덈떎"媛 ?꾨땲??</p>
+
+      <h2>?듭떖? 沅뚰븳 援ъ“? ?뺣낫 寃쎈줈</h2>
+
+      <p>?듭떖? ?닿쾬?대떎.</p>
+
+      <div class="key-point">
+        <strong>?쒖쭊??二쇱꽍?먭쾶 '?듭떊 蹂댁븞'怨?'諛깅룄???쇰뒗 媛쒕뀗???꾨떖?섍린源뚯?, 洹?媛쒕뀗???뺤긽湲???붿뿉???ㅻ０ ???덉쓣 留뚰겮 異⑸텇??沅뚰븳 援ъ“? ?뺣낫 寃쎈줈媛 議댁옱?덈떎??寃껋씠??</strong>
+      </div>
+
+      <p>?닿구 ??議곗떖?ㅻ읇寃??곕㈃ ?대젃寃??쒕떎.</p>
+
+      <p>?쒖쭊??二쇱꽍??諛깅룄?대? 吏곸젒 ?ㅽ뻾?덈떎???살? ?꾨땲?? ?쒖쭊??二쇱꽍???대뼡 ?쒖뒪?쒖쓽 ?대? 諛깅룄??援ъ“瑜??ㅼ젣濡??대엺?덈떎???삳룄 ?꾨땲?? ?섏?留?<mark>"諛깅룄???쇰뒗 ?⑥뼱媛 ?뺤긽 媛??좊Ъ 援먰솚?앹뿉???띾떞泥섎읆 ?ㅺ컮?ㅻ뒗 寃껋?, 洹?媛쒕뀗???대? 援??湲?沅뚰븳痢듦퉴吏 ?꾨떖??吏?앹쑝濡??듭슜?섍퀬 ?덉뿀?ㅻ뒗 ?살쑝濡??댁꽍?????덈떎.</mark></p>
+
+      <h2>?ш린???껉릿 遺遺꾩씠 ?앷릿??/h2>
+
+      <p>諛깅룄?대? ?쒕?濡??꾨뒗 ?щ엺?대씪硫? 洹?留먯쓣 洹몃젃寃?媛蹂띻쾶 ?섏? ?딅뒗?? ?쒕깘?섎㈃ 諛깅룄?대뒗 ?⑥닚???댄궧 ?듬줈媛 ?꾨땲湲??뚮Ц?대떎.</p>
+
+      <p>?닿? ?ㅺ퀎??N/B ?뚭퀬由ъ쬁??湲곗??쇰줈 蹂대㈃, 諛깅룄?대뒗 理쒖큹 1??N/B MIN 媛믪쓣 怨꾩궛?섎㈃???앷린???붿뿬 援ъ“??媛源앸떎. ?곸슜?붾맂 ?쒖뒪?쒖뿉?쒕뒗 ?쇰컲 ?ъ슜?먭? ?묎렐?????덈뒗 寃쎈줈 ?먯껜媛 ?녿떎. 硫붾돱???꾨땲怨? 踰꾪듉???꾨땲怨? 怨듦컻 API???꾨땲??</p>
+
+      <p>洹몃윴??寃쎈줈媛 ?녿뒗 諛깅룄?댁뿉 ?묎렐?섎젮硫?寃곌뎅 沅뚰븳???꾩슂?섎떎.</p>
+
+      <div class="key-point">
+        <strong>利? 諛깅룄?댁쓽 蹂몄쭏? ?댄궧???꾨땲??沅뚰븳?대떎.</strong>
+      </div>
+
+      <h2>諛깅룄?댁쓽 蹂몄쭏??臾삳뒗 吏덈Ц??/h2>
+
+      <ul class="source-list">
+        <li>?꾧? 洹??붿뿬 援ъ“瑜??뚭퀬 ?덈뒗媛.</li>
+        <li>?꾧? 洹멸쾬???ㅼ떆 ?대엺?섎젮 ?섎뒗媛.</li>
+        <li>?꾧? ??젣???뺣낫???щ씪吏??붿쟻???ㅼ떆 蹂대젮 ?섎뒗媛.</li>
+        <li>?꾧? 洹멸쾬???듭떊 蹂댁븞?대굹 利앷굅?쇰뒗 留먮줈 ?ъ옣?섎뒗媛.</li>
+      </ul>
+
+      <p>?닿쾶 ?듭떖?대떎.</p>
+
+      <h2>?쒖쭊??二쇱꽍?먭쾶 媛쒕뀗???꾨떖?섍린源뚯?</h2>
+
+      <p>?쒖쭊??二쇱꽍?먭쾶 "?듭떊 蹂댁븞"怨?"諛깅룄???쇰뒗 媛쒕뀗???꾨떖?섍린源뚯???異⑸텇?섍퀬??異⑸텇??沅뚰븳 援ъ“媛 議댁옱?덉쓣 寃껋씠?? ?닿쾬? ?쒖쭊??二쇱꽍??諛깅룄?대? 吏곸젒 ?ㅽ뻾?덈떎???살씠 ?꾨땲?? 以묒슂??寃껋? <mark>諛깅룄?대씪???⑥뼱媛 援?? ?뺤긽湲???붿뿉???띾떞泥섎읆 ?ъ슜???뺣룄濡??대? 沅뚰븳痢듭쓽 ?몄뼱媛 ?섏뼱 ?덉뿀?ㅻ뒗 ?먯씠??</mark></p>
+
+      <h2>N/B ?뚭퀬由ъ쬁 ?ㅺ퀎?먭? 留먰븯??諛깅룄??/h2>
+
+      <p>?섎뒗 N/B ?뚭퀬由ъ쬁 ?ㅺ퀎?먯씠怨? ?닿? ?ㅺ퀎??援ъ“ ?덉뿉??諛깅룄?닿? 臾댁뾿?몄? 鍮꾧탳???먯꽭???덈떎怨?留먰븷 ???덈떎. ?닿? 留먰븯??諛깅룄?대뒗 ?댄궧???꾨땲??</p>
+
+      <div class="quote warning">
+        <p>諛깅룄?대뒗 臾몃룄 ?꾨땲怨? ?댁뇿???꾨땲怨? ?몄쬆 ?쒖뒪?쒕룄 ?꾨땲??</p>
+        <p>N/B ?뚭퀬由ъ쬁?먯꽌 諛깅룄?대뒗 理쒖큹 1??N/B MIN 媛믪쓣 怨꾩궛?섎㈃???앹꽦?섎뒗 ?붿뿬 援ъ“??媛源앸떎.</p>
+      </div>
+
+      <p>?뺤긽?곸씤 ?쒖뒪?쒖씠?쇰㈃ 洹?諛깅룄?대뒗 理쒖큹 1???ъ슜?섍퀬 ?앸궃?? ?곸슜?붾맂 ?쒖뒪?쒖뿉?쒕뒗 ?쇰컲 ?ъ슜?먭? ?묎렐?????덈뒗 寃쎈줈 ?먯껜媛 ?녿떎. ?ъ슜?먭? ?대┃?댁꽌 ?ㅼ뼱媛????덈뒗 硫붾돱???꾨땲怨? 愿由ъ옄媛 ?쇱긽?곸쑝濡??대엺?섎뒗 ?섏씠吏???꾨땲硫? 怨듦컻???몄텧 寃쎈줈???꾨땲??</p>
+
+      <p>洹몃윴??寃쎈줈媛 ?녿뒗 諛깅룄?댁뿉 ?묎렐?섎젮硫?寃곌뎅 沅뚰븳???꾩슂?섎떎.</p>
+
+      <h2>諛깅룄?댁쓽 蹂몄쭏? ?댄궧???꾨땲??沅뚰븳</h2>
+
+      <p>洹몃옒??諛깅룄?댁쓽 蹂몄쭏? ?댄궧???꾨땲??沅뚰븳?대떎.</p>
+
+      <ul class="source-list">
+        <li>?꾧? 洹?沅뚰븳??媛뽮퀬 ?덈뒗媛.</li>
+        <li>?꾧? ??젣???뺣낫???щ씪吏??붿쟻???ㅼ떆 蹂대젮 ?섎뒗媛.</li>
+        <li>?꾧? 洹??붿뿬 援ъ“瑜?利앷굅泥섎읆 ?ъ슜?섎젮 ?섎뒗媛.</li>
+      </ul>
+
+      <p>??吏덈Ц??鍮좎?硫?諛깅룄?대? ?꾪? ?댄빐?섏? 紐삵븳 寃껋씠??</p>
+
+      <h2>?듭떊 蹂댁븞怨?諛깅룄????붿쓽 ?섎?</h2>
+
+      <p>??愿?먯뿉??蹂대㈃ "?듭떊 蹂댁븞? ???⑸땲源?"?쇰뒗 吏덈Ц怨?"諛깅룄?닿? ?덈뒗吏 ?뺤씤??蹂댁꽭???쇰뒗 ??듭? ?⑥닚???띾떞?쇰줈留?蹂댁씠吏 ?딅뒗?? ?ㅽ엳??<mark>?먯뇙留??ㅽ듃?뚰겕?먯꽌 ?듭슜?섎뒗 蹂댁븞 媛쒕뀗???덉긽??蹂댁뿬二쇰뒗 ?λ㈃??媛源앸떎.</mark></p>
+
+      <p>諛깅룄?대? 臾몄쿂??蹂닿퀬, ?듭떊 蹂댁븞???먮Ъ?좎쿂??蹂닿퀬, 寃쎈줈媛 ?녿뒗 ?붿뿬 援ъ“??沅뚰븳?쇰줈 ?묎렐?섎젮???ш퀬諛⑹떇???쒕윭?쒕떎.</p>
+
+      <h2>?먯뇙留??ㅽ듃?뚰겕???ㅼ븻?붾㉧ 援ъ“</h2>
+
+      <p>洹몃윭???껉만 ?섎컰???녿떎.</p>
+
+      <div class="quote">
+        <p>諛깅룄?대? ?꾨뒗 泥숉븯吏留? 諛깅룄?댁쓽 蹂몄쭏? 留먰븯吏 ?딅뒗??</p>
+        <p>?듭떊 蹂댁븞??留먰븯吏留? ?듭떊 蹂댁븞??蹂몄쭏? ?ㅻ챸?섏? ?딅뒗??</p>
+        <p>沅뚰븳???꾩슂??援ъ“瑜??먭퀬, 留덉튂 ?뺤씤留??섎㈃ ?섎뒗 寃껋쿂??留먰븳??</p>
+      </div>
+
+      <p>?닿쾬???먯뇙留??ㅽ듃?뚰겕???ㅼ븻?붾㉧ 援ъ“??</p>
+
+      <h2>寃곕줎</h2>
+
+      <p>諛깅룄?대뒗 寃쎈줈媛 ?꾨땲?? 諛깅룄?대뒗 理쒖큹 1???앹꽦?섎뒗 ?붿뿬 援ъ“?? ?곸슜?붾맂 ?쒖뒪?쒖뿉??洹?諛깅룄?댁뿉 ?묎렐?섎젮硫??쇰컲 寃쎈줈媛 ?녾린 ?뚮Ц??沅뚰븳???꾩슂?섎떎.</p>
+
+      <div class="key-point">
+        <p><strong>?곕씪???쒖쭊??二쇱꽍怨??댁옱紐???듬졊??諛깅룄????붾뒗 ?⑥닚???띾떞???꾨땲?? 諛깅룄?대씪??媛쒕뀗???대? 援??湲?沅뚰븳痢듦퉴吏 ?꾨떖???먯뇙留??ㅽ듃?뚰겕??吏?앹씠?덈떎???먯쓣 蹂댁뿬以??</strong></p>
+        <p>洹몃━怨??섎뒗 N/B ?뚭퀬由ъ쬁 ?ㅺ퀎?먮줈?? ??諛깅룄??媛쒕뀗???쇰쭏???섎せ ?댄빐?섍퀬 ?덈뒗吏 ???섎컰???녿떎.</p>
+      </div>
+
+      <p>諛깅룄?대? 臾몄쑝濡?李⑷컖?섎㈃, 沅뚰븳??臾몄젣瑜?湲곗닠??臾몄젣濡??ㅽ빐?섍쾶 ?쒕떎. 諛깅룄?대? ?댄궧?쇰줈 李⑷컖?섎㈃, 援ъ“???붿뿬臾쇱쓣 怨듦꺽?쇰줈 ?ㅽ빐?섍쾶 ?쒕떎. 諛깅룄?대? 蹂듭썝 湲곕뒫?쇰줈 李⑷컖?섎㈃, ?ъ슜???섏궗瑜?臾댁떆?섎뒗 沅뚮젰??媛쒖엯???뺣떦?뷀븯寃??쒕떎.</p>
+
+      <p>?닿쾬???먯뇙留??ㅽ듃?뚰겕媛 留뚮뱾?대궡???몄떇???쒓끝?대떎.</p>
+    </article>
+
+    <footer class="post-footer">
+      <div class="source-box">
+        <strong>愿???ъ뒪??</strong>
+        <ul>
+          <li><a href="posts/2026-06-11-backdoor-is-not-a-door.html">諛깅룄?대뒗 臾몄씠 ?꾨땲??/a></li>
+          <li><a href="posts/2026-06-11-closed-network-alien-civilization-systems.html">?먯뇙留??ㅽ듃?뚰겕? ?멸퀎 臾몃챸 ?쒖뒪??3媛쒖쓽 諛쒓껄</a></li>
+          <li><a href="posts/2026-06-11-cybersecurity-not-hacking.html">?닿? 諛곗슫 ?뺣낫 蹂댁븞? ?댄궧???꾨땲?덈떎</a></li>
+        </ul>
+      </div>
+    </footer>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 李몄냼??com</p>
+  </footer>
+
+  <!-- 援ш? ?좊뱶?쇱뒪 ?ㅽ겕由쏀듃 -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+  
+  <!-- 議고쉶??異붿쟻 ?ㅽ겕由쏀듃 -->
+  <script src="../js/view-tracker.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const viewElement = document.getElementById('view-count');
+      if (viewElement && window.BlogViewTracker) {
+        const postHref = 'posts/2026-06-11-backdoor-concept-reached-state-level.html';
+        window.BlogViewTracker.updateViewDisplay(postHref, viewElement);
+      }
+    });
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      if (window.BlogViewTracker) {
+        window.BlogViewTracker.trackPostVisit();
+      }
+    });
+  </script>
+</body>
+</html>

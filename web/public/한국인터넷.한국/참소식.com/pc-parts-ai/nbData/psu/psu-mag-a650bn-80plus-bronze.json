@@ -1,0 +1,89 @@
+{
+  "schema": "pc-part-nb-collector-file.v1",
+  "updatedAt": "2026-06-14T03:55:17.122+09:00",
+  "category": "PSU",
+  "id": "psu-mag-a650bn-80plus-bronze",
+  "name": "MAG A650BN 80PLUS Bronze",
+  "maker": "MSI",
+  "platform": "ATX",
+  "estimatedPriceKrw": 56900,
+  "priceBand": "15만원 미만",
+  "speedLabel": "80PLUS Bronze",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "PSU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 75,
+  "valueIndex": 75,
+  "aiUseScore": 49,
+  "powerWatts": 650,
+  "tags": [
+    "budget",
+    "bronze"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "PSU",
+    "partId": "psu-mag-a650bn-80plus-bronze",
+    "partName": "MAG A650BN 80PLUS Bronze",
+    "speed": {
+      "score": 100,
+      "weight": 0.32,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "PSU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 750,
+      "value": 1000,
+      "aiFit": 490,
+      "priceEfficiency": 1760,
+      "powerEfficiency": 100
+    },
+    "nbVector": [
+      100,
+      750,
+      1000,
+      490,
+      1760,
+      100
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 162.273,
+    "nbMin": 316.591,
+    "weightedScore": 518,
+    "nbBand": "500~699",
+    "summary": "PSU MAG A650BN 80PLUS Bronze 부품을 속도 중심 N/B 데이터베이스 점수 518점으로 저장했습니다."
+  },
+  "nbWeightedScore": 518,
+  "nbMax": 162.273,
+  "nbMin": 316.591,
+  "nbBand": "500~699",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=MSI%20MAG%20A650BN%20650W%2080PLUS%20Bronze%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "Standard ATX PSU, 120mm fan, 5-year warranty.",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

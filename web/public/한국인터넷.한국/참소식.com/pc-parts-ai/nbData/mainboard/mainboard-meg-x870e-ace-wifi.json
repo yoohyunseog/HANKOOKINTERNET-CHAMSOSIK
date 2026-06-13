@@ -1,0 +1,90 @@
+{
+  "schema": "pc-part-nb-collector-file.v1",
+  "updatedAt": "2026-06-14T03:55:15.948+09:00",
+  "category": "Mainboard",
+  "id": "mainboard-meg-x870e-ace-wifi",
+  "name": "MEG X870E ACE WIFI",
+  "maker": "MSI",
+  "platform": "AMD AM5",
+  "estimatedPriceKrw": 1100000,
+  "priceBand": "60만원 이상",
+  "speedLabel": "X870E",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "Mainboard",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 100,
+  "valueIndex": 9.1,
+  "aiUseScore": 65,
+  "powerWatts": 0,
+  "tags": [
+    "high-end",
+    "overclocking",
+    "wifi"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "Mainboard",
+    "partId": "mainboard-meg-x870e-ace-wifi",
+    "partName": "MEG X870E ACE WIFI",
+    "speed": {
+      "score": 100,
+      "weight": 0.32,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "Mainboard",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 1000,
+      "value": 121,
+      "aiFit": 650,
+      "priceEfficiency": 90,
+      "powerEfficiency": 1000
+    },
+    "nbVector": [
+      100,
+      1000,
+      121,
+      650,
+      90,
+      1000
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 237.867,
+    "nbMin": 356.307,
+    "weightedScore": 381,
+    "nbBand": "100~499",
+    "summary": "Mainboard MEG X870E ACE WIFI 부품을 속도 중심 N/B 데이터베이스 점수 381점으로 저장했습니다."
+  },
+  "nbWeightedScore": 381,
+  "nbMax": 237.867,
+  "nbMin": 356.307,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=MSI%20MEG%20X870E%20ACE%20WIFI%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "Flagship X870E motherboard",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

@@ -1,0 +1,89 @@
+{
+  "schema": "pc-part-nb-collector-file.v1",
+  "updatedAt": "2026-06-14T03:55:08.346+09:00",
+  "category": "GPU",
+  "id": "gpu-rtx-4070-ti-super-asus-tuf-gaming-oc",
+  "name": "RTX 4070 Ti Super ASUS TUF Gaming OC",
+  "maker": "ASUS",
+  "platform": "PCIe 4.0",
+  "estimatedPriceKrw": 1695340,
+  "priceBand": "60만원 이상",
+  "speedLabel": "GDDR6X",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "GPU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 75,
+  "valueIndex": 4.4,
+  "aiUseScore": 49,
+  "powerWatts": 285,
+  "tags": [
+    "gaming",
+    "creator"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "GPU",
+    "partId": "gpu-rtx-4070-ti-super-asus-tuf-gaming-oc",
+    "partName": "RTX 4070 Ti Super ASUS TUF Gaming OC",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "GPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 750,
+      "value": 100,
+      "aiFit": 490,
+      "priceEfficiency": 60,
+      "powerEfficiency": 100
+    },
+    "nbVector": [
+      100,
+      750,
+      100,
+      490,
+      60,
+      100
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 116.622,
+    "nbMin": 311.467,
+    "weightedScore": 266,
+    "nbBand": "100~499",
+    "summary": "GPU RTX 4070 Ti Super ASUS TUF Gaming OC 부품을 속도 중심 N/B 데이터베이스 점수 266점으로 저장했습니다."
+  },
+  "nbWeightedScore": 266,
+  "nbMax": 116.622,
+  "nbMin": 311.467,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=RTX%204070%20Ti%20Super%20ASUS%20TUF%20Gaming%20OC%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "Collected from search results showing multiple listings including overseas imports. Price based on the lowest observed relevant listing.",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

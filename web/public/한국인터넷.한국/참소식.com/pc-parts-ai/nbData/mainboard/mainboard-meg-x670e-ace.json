@@ -1,0 +1,90 @@
+{
+  "schema": "pc-part-nb-collector-file.v1",
+  "updatedAt": "2026-06-14T03:55:15.940+09:00",
+  "category": "Mainboard",
+  "id": "mainboard-meg-x670e-ace",
+  "name": "MEG X670E ACE",
+  "maker": "MSI",
+  "platform": "AM5",
+  "estimatedPriceKrw": 1248660,
+  "priceBand": "60만원 이상",
+  "speedLabel": "DDR5",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "Mainboard",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 95,
+  "valueIndex": 7.6,
+  "aiUseScore": 62,
+  "powerWatts": 0,
+  "tags": [
+    "high-end",
+    "overclocking",
+    "E-ATX"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "Mainboard",
+    "partId": "mainboard-meg-x670e-ace",
+    "partName": "MEG X670E ACE",
+    "speed": {
+      "score": 100,
+      "weight": 0.32,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "Mainboard",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 950,
+      "value": 101,
+      "aiFit": 620,
+      "priceEfficiency": 80,
+      "powerEfficiency": 950
+    },
+    "nbVector": [
+      100,
+      950,
+      101,
+      620,
+      80,
+      950
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 238.495,
+    "nbMin": 353.155,
+    "weightedScore": 362,
+    "nbBand": "100~499",
+    "summary": "Mainboard MEG X670E ACE 부품을 속도 중심 N/B 데이터베이스 점수 362점으로 저장했습니다."
+  },
+  "nbWeightedScore": 362,
+  "nbMax": 238.495,
+  "nbMin": 353.155,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=MSI%20MEG%20X670E%20ACE%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "High-end X670E chipset motherboard for AMD Ryzen 7000/8000/9000 series.",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

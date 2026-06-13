@@ -1,0 +1,90 @@
+{
+  "schema": "pc-part-nb-collector-file.v1",
+  "updatedAt": "2026-06-14T03:55:16.548+09:00",
+  "category": "Mainboard",
+  "id": "mainboard-z790-aorus-master-x",
+  "name": "Z790 AORUS MASTER X",
+  "maker": "Gigabyte",
+  "platform": "LGA1700",
+  "estimatedPriceKrw": 1894610,
+  "priceBand": "60만원 이상",
+  "speedLabel": "Z790",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "Mainboard",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 95,
+  "valueIndex": 5,
+  "aiUseScore": 62,
+  "powerWatts": 0,
+  "tags": [
+    "high-end",
+    "gaming",
+    "overclocking"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "Mainboard",
+    "partId": "mainboard-z790-aorus-master-x",
+    "partName": "Z790 AORUS MASTER X",
+    "speed": {
+      "score": 100,
+      "weight": 0.32,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "Mainboard",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 950,
+      "value": 100,
+      "aiFit": 620,
+      "priceEfficiency": 50,
+      "powerEfficiency": 950
+    },
+    "nbVector": [
+      100,
+      950,
+      100,
+      620,
+      50,
+      950
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 251.406,
+    "nbMin": 333.696,
+    "weightedScore": 359,
+    "nbBand": "100~499",
+    "summary": "Mainboard Z790 AORUS MASTER X 부품을 속도 중심 N/B 데이터베이스 점수 359점으로 저장했습니다."
+  },
+  "nbWeightedScore": 359,
+  "nbMax": 251.406,
+  "nbMin": 333.696,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Gigabyte%20Z790%20AORUS%20MASTER%20price",
+  "notes": "EATX form factor, supports Intel 12th-14th Gen",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

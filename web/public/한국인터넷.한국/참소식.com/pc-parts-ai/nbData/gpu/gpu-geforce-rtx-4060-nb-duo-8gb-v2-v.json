@@ -1,0 +1,88 @@
+{
+  "schema": "pc-part-nb-collector-file.v1",
+  "updatedAt": "2026-06-14T03:55:03.181+09:00",
+  "category": "GPU",
+  "id": "gpu-geforce-rtx-4060-nb-duo-8gb-v2-v",
+  "name": "GeForce RTX 4060 NB DUO 8GB V2-V",
+  "maker": "COLORFUL",
+  "platform": "PCIe 4.0",
+  "estimatedPriceKrw": 463000,
+  "priceBand": "30~60만원",
+  "speedLabel": "Boost 2460MHz",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "GPU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 60,
+  "valueIndex": 13,
+  "aiUseScore": 39,
+  "powerWatts": 115,
+  "tags": [
+    "gaming"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "GPU",
+    "partId": "gpu-geforce-rtx-4060-nb-duo-8gb-v2-v",
+    "partName": "GeForce RTX 4060 NB DUO 8GB V2-V",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "GPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 600,
+      "value": 173,
+      "aiFit": 390,
+      "priceEfficiency": 220,
+      "powerEfficiency": 174
+    },
+    "nbVector": [
+      100,
+      600,
+      173,
+      390,
+      220,
+      174
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 161.097,
+    "nbMin": 393.077,
+    "weightedScore": 253,
+    "nbBand": "100~499",
+    "summary": "GPU GeForce RTX 4060 NB DUO 8GB V2-V 부품을 속도 중심 N/B 데이터베이스 점수 253점으로 저장했습니다."
+  },
+  "nbWeightedScore": 253,
+  "nbMax": 161.097,
+  "nbMin": 393.077,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=RTX%204060%208GB%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "Observed price 463,000 KRW from search results.",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

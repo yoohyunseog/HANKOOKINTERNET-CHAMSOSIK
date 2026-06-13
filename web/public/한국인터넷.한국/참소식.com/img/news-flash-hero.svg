@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 500" role="img" aria-labelledby="title desc">
+  <title id="title">뉴스플래시 대표 배너</title>
+  <desc id="desc">어두운 파란 배경 위에 뉴스플래시 로고와 참소식.com 안내 문구가 배치된 대표 이미지</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#031b40"/>
+      <stop offset="0.52" stop-color="#062a62"/>
+      <stop offset="1" stop-color="#041936"/>
+    </linearGradient>
+    <radialGradient id="glowBlue" cx="34%" cy="52%" r="42%">
+      <stop offset="0" stop-color="#1d72d8" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#1d72d8" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowOrange" cx="62%" cy="51%" r="32%">
+      <stop offset="0" stop-color="#ff8b18" stop-opacity=".28"/>
+      <stop offset="1" stop-color="#ff8b18" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#000815" flood-opacity=".42"/>
+    </filter>
+    <pattern id="grid" width="56" height="56" patternUnits="userSpaceOnUse">
+      <path d="M56 0H0v56" fill="none" stroke="#ffffff" stroke-opacity=".08" stroke-width="1"/>
+    </pattern>
+    <pattern id="dots" width="18" height="18" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.2" fill="#d9e9ff" opacity=".45"/>
+    </pattern>
+  </defs>
+
+  <rect width="1600" height="500" rx="16" fill="url(#bg)"/>
+  <rect width="1600" height="500" rx="16" fill="url(#grid)"/>
+  <rect width="1600" height="500" rx="16" fill="url(#glowBlue)"/>
+  <rect width="1600" height="500" rx="16" fill="url(#glowOrange)"/>
+
+  <g opacity=".22">
+    <path d="M155 165c138-75 298-91 462-59 105 20 209 15 317-22 145-49 286-35 420 46" fill="none" stroke="#a9cef7" stroke-width="2"/>
+    <path d="M172 214c146-63 295-68 446-17 93 31 192 30 297-7 155-55 302-46 441 30" fill="none" stroke="#a9cef7" stroke-width="2"/>
+    <path d="M240 118h370v210H240z" fill="url(#dots)" opacity=".65"/>
+    <path d="M905 92h370v230H905z" fill="url(#dots)" opacity=".5"/>
+  </g>
+
+  <g opacity=".2" fill="none" stroke="#c5ddff" stroke-width="2">
+    <circle cx="1195" cy="170" r="34"/>
+    <circle cx="1335" cy="218" r="42"/>
+    <circle cx="1450" cy="145" r="28"/>
+    <path d="M1229 179l67 22M1377 202l49-42"/>
+    <rect x="1180" y="158" width="30" height="25" rx="4"/>
+    <path d="M1190 158v-8h10v8M1322 230c8-18 28-18 36 0M1335 207a10 10 0 1020 0 10 10 0 00-20 0"/>
+  </g>
+
+  <g filter="url(#shadow)" transform="translate(410 176)">
+    <g transform="skewX(-12)">
+      <path d="M0 26h42L50 0h170l-13 40H91l-5 18h103l-11 35H75l-7 24h121l-13 40H-4z" fill="none" stroke="#0d5fc7" stroke-width="13" stroke-linejoin="round"/>
+      <path d="M78 48h100M66 88h78" stroke="#0d5fc7" stroke-width="12" stroke-linecap="round"/>
+    </g>
+    <path d="M140 44l116-48-76 91h69L88 205l58-100H75z" fill="#ff8a18"/>
+    <path d="M140 44l116-48-76 91h69L88 205l58-100H75z" fill="none" stroke="#ffad29" stroke-width="4" opacity=".65"/>
+  </g>
+
+  <g filter="url(#shadow)">
+    <text x="715" y="264" text-anchor="middle" font-family="Pretendard, Noto Sans KR, Malgun Gothic, Arial, sans-serif" font-size="96" font-weight="900" fill="#ffffff">뉴스</text>
+    <text x="955" y="264" text-anchor="middle" font-family="Pretendard, Noto Sans KR, Malgun Gothic, Arial, sans-serif" font-size="96" font-weight="900" fill="#ff8a18">플래시</text>
+  </g>
+
+  <text x="800" y="380" text-anchor="middle" font-family="Pretendard, Noto Sans KR, Malgun Gothic, Arial, sans-serif" font-size="24" font-weight="700" fill="#dceaff">
+    <tspan x="800" dy="0">참소식.com은 실시간 이슈와 기술 데이터를 기반으로</tspan>
+    <tspan x="800" dy="34">가장 빠르고 정확한 인사이트를 제공합니다.</tspan>
+  </text>
+</svg>

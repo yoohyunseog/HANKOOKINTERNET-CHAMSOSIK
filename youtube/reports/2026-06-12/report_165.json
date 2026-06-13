@@ -1,0 +1,251 @@
+{
+  "timestamp": "2026-06-12T12:45:18.947355",
+  "model": "kimi-k2.5:cloud",
+  "keyword_count": 3,
+  "analyze_subtitles": true,
+  "analysis_source": "youtube",
+  "keywords": [
+    {
+      "keyword": "오늘의 주요 뉴스",
+      "is_fixed": true,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "삼성전자 외국인 매수",
+      "is_fixed": false,
+      "views": [
+        1180,
+        319
+      ],
+      "video_count": 2,
+      "videos": [
+        {
+          "title": "무섭게 팔아치우더니 급반전...외국인들, 삼성전자 '폭풍쇼핑' [지금이뉴스] / YTN",
+          "video_id": "ggnFmBrK_vM",
+          "views": 1180,
+          "upload_date": "2026-06-12",
+          "url": "https://www.youtube.com/watch?v=ggnFmBrK_vM",
+          "subtitle_summary": "The user wants a summary of a YouTube video transcript in Korean, around 500 characters, with 3-5 sentences capturing the key points.\nKey points from the transcript:\n1. Foreign investors returned to net buying in KOSPI after 25 trading days (since last month 7th), driving the index up about 7%.\n2. They had been net selling for 24 consecutive trading days (totaling over 75 trillion won, or 84 trillion including Next Trade), which was the 4th longest streak ever, attributed to profit-taking and asset rebalancing after the sharp rise from 7,000 to 9,000.\n3. Samsung Electronics was the most sold stock during this period (31.8 trillion won), dropping foreign ownership to 47.58%.\n4. However, on this day, foreigners made a sudden reversal and did \"storm shopping\" (heavy buying) of Samsung Electronics worth 342.6 billion won, with JP Morgan appearing among top buyers.\n5. An analyst noted that while it's early to tell, the extreme negative sentiment seems to be easing slightly.\nI need to write this in Korean only, no English, around 500 characters, 3-5 sentences.\nDraft:\n외국인 투자자가 25거래일 만에 코스피 순매수로 돌아서며 지수가 7% 급등했다. 이들은 그동안 24거래일 연속으로 75조 원 이상 순매도하며 차익 실현과 자산 배분 조정을 이어왔는데, 특히 삼성전자에서 31조 원 넘게 매도해 지분율이 47.58%까지 하락했다. 그러나 이날 외국인은 삼성전자를 3,400억 원 넘게 폭풍 매수하며 급반전을 보였고, JP모건 등 매수 상위 창구에 이름을 올렸다. 증권가는 극단적 우려 분위기가 한풀 꺾이는 신호로 보며, 외국인 매수세 지속 여부를 주목하고 있다.\nCharacter count check:\n외국인 투자자가 25거래일 만에 코스피 순매수로 돌아서며 지수가 7% 급등했다. (38)\n이들은 그동안 24거래일 연속으로 75조 원 이상 순매도하며 차익 실현과 자산 배분 조정을 이어왔는데, 특히 삼성전자에서 31조 원 넘게 매도해 지분율이 47.58%까지 하락했다. (96)\n그러나 이날 외국인은 삼성전자를 3,400억 원 넘게 폭풍 매수하며 급반전을 보였고, JP모건 등 매수 상위 창구에 이름을 올렸다. (67)\n증권가는 극단적 우려 분위기가 한풀 꺾이는 신호로 보며, 외국인 매수세 지속 여부를 주목하고 있다. (52)\nTotal: 38+96+67+52 = 253 characters. That's too short. The user asked for around 500 characters (500자 내외). I should expand a bit more to get closer to 500.\nRevised draft:\n외국인 투자자가 25거래일 만에 코스피 시장에서 순매수로 돌아서며 지수가 전 거래일 대비 약 7% 급등하는 모습을 보였다. 이들은 지난달 7일 이후 24거래일 연속으로 총 75조 원 이상을 순매도하며 역대 네 번째로 긴 매도 행진을 이어왔는데, 이는 급등한 한국 증시에서의 차익 실현과 글로벌 자산 배분 조정 때문으로 분석된다. 특히 이 기간 삼성전자에서만 31조 원 넘게 순매도하여 외국인 지분율이 47.58%까지 하락했으나, 이날 외국인은 삼성전자를 3,400억 원 넘게 폭풍",
+          "analysis_source": "subtitle",
+          "db_saved": true
+        },
+        {
+          "title": "[삼성전자 주가 전망] (긴급 속보) 시외에서 美 반도체 상승! 외인 매수 전환, 지금이라도 사도 될까? '이렇게' 대응하세요. 필수 시청 #삼성전자 #차트의제왕",
+          "video_id": "7E2vV0QVJt4",
+          "views": 319,
+          "upload_date": "2026-06-12",
+          "url": "https://www.youtube.com/watch?v=7E2vV0QVJt4",
+          "subtitle_summary": "The user wants a summary of a YouTube video transcript about Samsung Electronics stock outlook. The requirements are:\n1. Respond ONLY in Korean (한국어)\n2. Do NOT use English at all\n3. Around 500 characters (500자 내외)\n4. Summarize key points in 3-5 sentences\nKey points from the transcript:\nSamsung Electronics stock is rising (33,300 won, up 4% from previous day)\nReasons: US semiconductor index (Philadelphia Semiconductor Index) surged, foreign investors switching to buying mode after position adjustments (due to derivatives expiration yesterday)\nHowever, there are risks: geopolitical risks (US-Iran war concerns), similar to March correction, June might also see correction periods\nForeign investors had been selling since May, not just stocks but also long positions in futures/options, which were automatically liquidated yesterday (simultaneous maturity day)\nNew foreign capital is flowing in today, but not strong buying yet\nNeed to watch exchange rate - if it rises, foreign capital may leave again\nDespite upward momentum, geopolitical risks are suppressing the rise\nI need to condense this into 3-5 sentences, around 500 characters.\nDraft:\n삼성전자 주가는 미국 필라델피아 반도체 지수 급등과 외국인 매수 전환으로 강한 반등을 보이고 있습니다. 어제 동시 만기일을 맞아 정리되었던 외국인의 선물·옵션 롱 포지션 청산이 마무리되면서 새로운 자금 유입이 시작된 것입니다. 하지만 미국과 이란 전쟁 리스크 등 지정학적 불확실성으로 인해 3월과 유사한 6월 조정 구간이 발생할 가능성이 있습니다. 또한 환율 상승 시 외국인 자금 이탈 우려가 있어 강력한 매수세라 보기는 어렵습니다. 따라서 단기 반등에 따른 신중한 대응이 필요하며, 지정학 리스크와 환율 변동을 면밀히 모니터링해야 합니다.\nCharacter count check:\n삼성전자 주가는 미국 필라델피아 반도체 지수 급등과 외국인 매수 전환으로 강한 반등을 보이고 있습니다. 어제 동시 만기일을 맞아 정리되었던 외국인의 선물·옵션 롱 포지션 청산이 마무리되면서 새로운 자금 유입이 시작된 것입니다. 하지만 미국과 이란 전쟁 리스크 등 지정학적 불확실성으로 인해 3월과 유사한 6월 조정 구간이 발생할 가능성이 있습니다. 또한 환율 상승 시 외국인 자금 이탈 우려가 있어 강력한 매수세라 보기는 어렵습니다. 따라서 단기 반등에 따른 신중한 대응이 필요하며, 지정학 리스크와 환율 변동을 면밀히 모니터링해야 합니다.\nCount: approximately 280 characters. That's a bit short for \"500자 내외\" (which usually means 400-600). Let me expand slightly.\nRevised:\n삼성전자 주가는 미국 필라델피아 반도체 지수 급등과 외국인 매수 전환으로 4%대 강한 반등을 보이며 33만 3천원대에서 거래되고 있습니다. 어제 동시 만기일을 맞아 자동 청산되었던 외국인의 선물·옵션 롱 포지션이 정리되면서 새로운 자금 유입이 시작된 긍정적 흐름입니다. 하지만 미국과 이란 전쟁 리스크 등 지정학적 불확실성으로 인해 3월과 유사한 6월 조정 구간이 발생할 가능성이 크며, 환율 상승 시 외국인 자금 이탈 우려도 있습니다. 따라서 아직 강력한 매수세라 보기는 어렵고, 단기 반등에 따",
+          "analysis_source": "subtitle",
+          "db_saved": true
+        }
+      ],
+      "max": 2.9498,
+      "min": 0.9935,
+      "nb_score": 2.9692,
+      "avg_views": 749.5,
+      "total_views": 1499
+    },
+    {
+      "keyword": "프로야구 중계",
+      "is_fixed": false,
+      "views": [
+        2737
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "[🔴LIVE] 2026 프로야구 정규리그 대전한화생명볼파크 실시간 현장중계⚾🦅 | 한화 VS KIA | 6월 11일 (목) 오후 6시 30분",
+          "video_id": "k-sKBOWEppE",
+          "views": 2737,
+          "upload_date": "2026-06-12",
+          "url": "https://www.youtube.com/watch?v=k-sKBOWEppE",
+          "subtitle_summary": "The user wants me to summarize a YouTube video transcript about a baseball game between Hanwha Eagles and KIA Tigers. The summary must be:\n1. Only in Korean (no English at all)\n2. Around 500 characters\n3. 3-5 sentences capturing key points\nKey points from the transcript:\nIt's a live broadcast of the 9th game of the season between Hanwha Eagles and KIA Tigers at Daejeon Hanwha Life Ballpark\nYesterday Hanwha won 4-3 in a close game\nToday is important for standings - if Hanwha wins, they tie with KIA for 4th place\nStarting pitchers are Ryu Hyun-jin (Hanwha) and Adames (KIA) - both are top pitchers in the league\nRyu Hyun-jin: 7 wins, 2 losses, 2.97 ERA in 11 games\nAdames: 7 wins, 4 losses, 2.39 ERA in 12 games\nBoth pitchers have been performing strongly recently\nI need to write this in Korean only, around 500 characters, in 3-5 sentences.\nDraft:\n2026년 6월 11일 대전 한화생명볼파크에서 열린 한화 이글스와 KIA 타이거즈의 경기 중계입니다. 어제 한화가 4대 3으로 짜릿한 승리를 거두었으며, 오늘 경기는 양 팀의 순위 싸움에 중요한 의미를 갖습니다. 한화가 승리하면 KIA와 공동 4위가 되는 가운데, 양팀 에이스인 류현진과 아다몰로의 맞대결이 관전 포인트입니다. 류현진은 11경기에서 7승 2패 평균자책점 2.97을 기록했고, 아다몰로는 12경기에서 7승 4패 평균자책점 2.39의 준수한 성적을 보이고 있습니다. 최근 5경기에서 두 투수 모두 극강의 피칭을 선보이고 있어 오늘 경기는 투수전이 될 전망입니다.\nCharacter count check:\n2026년 6월 11일 대전 한화생명볼파크에서 열린 한화 이글스와 KIA 타이거즈의 경기 중계입니다. (49)\n어제 한화가 4대 3으로 짜릿한 승리를 거두었으며, 오늘 경기는 양 팀의 순위 싸움에 중요한 의미를 갖습니다. (49)\n한화가 승리하면 KIA와 공동 4위가 되는 가운데, 양팀 에이스인 류현진과 아다몰로의 맞대결이 관전 포인트입니다. (49)\n류현진은 11경기에서 7승 2패 평균자책점 2.97을 기록했고, 아다몰로는 12경기에서 7승 4패 평균자책점 2.39의 준수한 성적을 보이고 있습니다. (62)\n최근 5경기에서 두 투수 모두 극강의 피칭을 선보이고 있어 오늘 경기는 투수전이 될 전망입니다. (43)\nTotal: around 252 characters. That's too short. I need to expand to around 500 characters.\nRevised draft:\n2026년 6월 11일 대전 한화생명볼파크에서 한화 이글스와 KIA 타이거즈의 시즌 9차전 중계가 진행되었습니다. 어제 한화가 4대 3으로 짜릿한 역전승을 거두었으며, 오늘 경기는 양 팀의 4위 자리 싸움에 중대한 영향을 미치는 중요한 대결입니다. 만약 한화가 승리하면 KIA와 공동 4위로 올라서게 되며, 양팀 모두 최상위",
+          "analysis_source": "subtitle",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "오타니 쇼헤이",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "K-웹툰 불법사이트",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "서울 지하철 요금 인상",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "유전자 교정 논란",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "족저근막염 월드컵",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "마그네슘 많은 음식",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "중국 원유 수입 감소",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "스페이스X IPO",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "금융위 가계대출 관리",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "LG엔솔 중국 특허소송",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "호남 반도체 공장",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "KDDX 차기 구축함",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "코스피 사이드카",
+      "is_fixed": false,
+      "views": [
+        775
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "KOSPI Surges to Reclaim '8,000 Points'... Buy-side Circuit Triggered (June 12, 2026 / 9:30 MBC News)",
+          "video_id": "Zf00_S-uGsA",
+          "views": 775,
+          "upload_date": "2026-06-12",
+          "url": "https://www.youtube.com/watch?v=Zf00_S-uGsA",
+          "subtitle_summary": "The user wants a summary of a YouTube video caption in Korean, approximately 500 characters, with 3-5 sentences. The caption is about KOSPI surging to reclaim 8,000 points and a buy-side circuit breaker being triggered.\nKey points from the caption:\n1. KOSPI surged over 6% at opening, recovering to 8,300 level immediately\n2. Index rose 499.9 points (6.44%) to 8,263.85, reclaiming 8,000 level after 2 days\n3. Buy-side circuit breaker triggered after 6 minutes of trading (temporary suspension of buy orders)\n4. KOSDAQ also rose over 2%, surpassing index 1 (likely meaning 1,000 or specific level)\nConstraints:\nOnly Korean\nNo English at all\nAround 500 characters\n3-5 sentences summarizing key content\nDraft:\n코스피가 6% 이상 급등하며 8,300선을 회복했습니다. 지수는 499.9포인트(6.44%) 오른 8,263.85에 거래를 시작해 이틀 만에 8,000선을 되찾았으며, 개장 6분 만에 매수 사이드카가 발동되었습니다. 코스닥 지수도 2% 이상 상승하며 강한 상승세를 보였습니다.\nCharacter count check:\n코스피가 6% 이상 급등하며 8,300선을 회복했습니다. (28자)\n지수는 499.9포인트(6.44%) 오른 8,263.85에 거래를 시작해 이틀 만에 8,000선을 되찾았으며, 개장 6분 만에 매수 사이드카가 발동되었습니다. (78자)\n코스닥 지수도 2% 이상 상승하며 강한 상승세를 보였습니다. (32자)\nTotal: around 138 characters. Too short.\nNeed to expand to around 500 characters.\nRevised draft:\n코스피가 6% 넘게 급등 출발하며 단숨에 8,300선을 회복했습니다. 지수는 전장보다 499.9포인트(6.44%) 상승한 8,263.85를 기록하며 8,000선을 이틀 만에 재탈환했고, 개장 6분 만에 매수 호가 효력이 일시 정지되는 매수 사이드카가 발동되었습니다. 이는 급등세로 인한 과열 방지 조치로, 코스닥 지수 역시 2% 이상 상승하며 1,000선을 넘어서는 등 전반적인 증시 강세가 나타났습니다.\nCharacter count:\n코스피가 6% 넘게 급등 출발하며 단숨에 8,300선을 회복했습니다. (32자)\n지수는 전장보다 499.9포인트(6.44%) 상승한 8,263.85를 기록하며 8,000선을 이틀 만에 재탈환했고, 개장 6분 만에 매수 호가 효력이 일시 정지되는 매수 사이드카가 발동되었습니다. (89자)\n이는 급등세로 인한 과열 방지 조치로, 코스닥 지수 역시 2% 이상 상승하며 1,000선을 넘어서는 등 전반적인 증시 강세가 나타났습니다. (72자)\nTotal: 193 characters. Still too short.\nWait, the user said \"500자 내외\" which usually means around 500 characters (not words). But looking at the content, maybe they want more detail? Or perhaps I should aim for 400-500 characters.\nLet me expand:\n코스피가 6% 이상 급등하며 8,300선을 단숨에 회복하는 등 강한 상승세를 보였습니다. 지수는 전일보다 499.9포인트(6.44%) 오른 8,263.85에 거래를 시작해 이틀 만에 8,000선을 재탈환했",
+          "analysis_source": "subtitle",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    }
+  ]
+}

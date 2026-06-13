@@ -1,0 +1,90 @@
+{
+  "schema": "pc-part-nb-collector-file.v1",
+  "updatedAt": "2026-06-14T03:55:16.204+09:00",
+  "category": "Mainboard",
+  "id": "mainboard-msi-pro-a620m-e",
+  "name": "MSI PRO A620M-E",
+  "maker": "MSI",
+  "platform": "AMD AM5",
+  "estimatedPriceKrw": 154500,
+  "priceBand": "15~30만원",
+  "speedLabel": "DDR5",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "Mainboard",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 40,
+  "valueIndex": 25.9,
+  "aiUseScore": 26,
+  "powerWatts": 0,
+  "tags": [
+    "budget",
+    "AM5",
+    "mATX"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "Mainboard",
+    "partId": "mainboard-msi-pro-a620m-e",
+    "partName": "MSI PRO A620M-E",
+    "speed": {
+      "score": 100,
+      "weight": 0.32,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "Mainboard",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 400,
+      "value": 345,
+      "aiFit": 260,
+      "priceEfficiency": 650,
+      "powerEfficiency": 400
+    },
+    "nbVector": [
+      100,
+      400,
+      345,
+      260,
+      650,
+      400
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 262.284,
+    "nbMin": 403.003,
+    "weightedScore": 262,
+    "nbBand": "100~499",
+    "summary": "Mainboard MSI PRO A620M-E 부품을 속도 중심 N/B 데이터베이스 점수 262점으로 저장했습니다."
+  },
+  "nbWeightedScore": 262,
+  "nbMax": 262.284,
+  "nbMin": 403.003,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=MSI%20PRO%20A620M-E%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "A620 chipset, supports DDR5 up to 6800MHz, PCIe 4.0 x16",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

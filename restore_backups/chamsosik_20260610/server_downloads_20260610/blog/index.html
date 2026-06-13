@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <meta name="description" content="참소식.com 블로그 - 기술 데이터와 이슈 맵을 함께 읽는 방법, 실시간 이슈 흐름과 데이터 기반 인사이트">
+  <meta name="keywords" content="참소식, 블로그, 뉴스플래시, 이슈 맵, 기술 데이터, 실시간 알림, 데이터 분석">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="../favicon.svg">
+  <link rel="canonical" href="https://xn--9l4b4xi9r.com/blog/">
+  
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ko_KR">
+  <meta property="og:site_name" content="참소식.com">
+  <meta property="og:url" content="https://xn--9l4b4xi9r.com/blog/">
+  <meta property="og:title" content="참소식.com 블로그 | 기술 데이터와 이슈 맵">
+  <meta property="og:description" content="기술 데이터와 실시간 이슈 맵을 함께 읽는 데이터 기반 인사이트">
+  <meta property="og:image" content="/img/news-flash-hero.svg">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="참소식.com 블로그 | 기술 데이터와 이슈 맵">
+  <meta name="twitter:description" content="기술 데이터와 실시간 이슈 맵을 함께 읽는 방법을 안내합니다.">
+  <meta name="twitter:image" content="/img/news-flash-hero.svg">
+  
+  <title>참소식.com 블로그 | 기술 데이터와 이슈 맵</title>
+  
+  <link rel="stylesheet" href="../common-site.css">
+  <style>
+    :root {
+      --bg-primary: #0f172a;
+      --bg-secondary: #1e293b;
+      --bg-card: #1e293b;
+      --bg-hover: #334155;
+      --text-primary: #f1f5f9;
+      --text-secondary: #94a3b8;
+      --text-muted: #64748b;
+      --accent-blue: #3b82f6;
+      --accent-green: #10b981;
+      --accent-orange: #f59e0b;
+      --border-color: #334155;
+      --shadow-color: rgba(0, 0, 0, 0.4);
+    }
+    
+    body {
+      background: linear-gradient(135deg, var(--bg-primary) 0%, #0c1222 100%);
+      color: var(--text-primary);
+      min-height: 100vh;
+    }
+    
+    .blog-container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    
+    .blog-header {
+      text-align: center;
+      margin-bottom: 40px;
+      padding: 30px 0;
+      border-bottom: 2px solid var(--border-color);
+    }
+    
+    .blog-header h1 {
+      font-size: 2.5em;
+      color: var(--text-primary);
+      margin-bottom: 10px;
+      text-shadow: 0 2px 10px rgba(59, 130, 246, 0.3);
+    }
+    
+    .blog-header p {
+      color: var(--text-secondary);
+      font-size: 1.1em;
+    }
+    
+    .posts-grid {
+      display: grid;
+      gap: 30px;
+    }
+    
+    .post-card {
+      background: var(--bg-card);
+      border-radius: 12px;
+      box-shadow: 0 4px 20px var(--shadow-color);
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+      border: 1px solid var(--border-color);
+    }
+    
+    .post-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 30px rgba(59, 130, 246, 0.2);
+      background: var(--bg-hover);
+      border-color: var(--accent-blue);
+    }
+    
+    .post-card-content {
+      padding: 25px;
+    }
+    
+    .post-meta {
+      display: flex;
+      gap: 15px;
+      margin-bottom: 12px;
+      font-size: 0.9em;
+      color: var(--text-muted);
+    }
+    
+    .post-category {
+      background: linear-gradient(135deg, #1e3a5f 0%, #1e40af 100%);
+      color: #93c5fd;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      border: 1px solid #3b82f6;
+    }
+    
+    .post-card h2 {
+      font-size: 1.5em;
+      margin-bottom: 12px;
+      color: var(--text-primary);
+    }
+    
+    .post-card h2 a {
+      color: inherit;
+      text-decoration: none;
+    }
+    
+    .post-card h2 a:hover {
+      color: var(--accent-blue);
+      text-shadow: 0 0 10px rgba(59, 130, 246, 0.3);
+    }
+    
+    .post-excerpt {
+      color: var(--text-secondary);
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+    
+    .read-more {
+      display: inline-block;
+      color: var(--accent-blue);
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.2s ease;
+    }
+    
+    .read-more:hover {
+      color: #60a5fa;
+      text-shadow: 0 0 8px rgba(59, 130, 246, 0.4);
+    }
+    
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--accent-blue);
+      text-decoration: none;
+      margin-bottom: 20px;
+      padding: 8px 16px;
+      border-radius: 8px;
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      transition: all 0.2s ease;
+    }
+    
+    .back-link:hover {
+      background: var(--bg-hover);
+      border-color: var(--accent-blue);
+      text-decoration: none;
+    }
+    
+    .site-nav {
+      background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+      padding: 15px 20px;
+      border-bottom: 1px solid var(--border-color);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    
+    .nav-logo {
+      color: var(--text-primary);
+      font-weight: 700;
+      font-size: 1.2em;
+      text-decoration: none;
+    }
+    
+    .nav-links a {
+      color: var(--text-secondary);
+      text-decoration: none;
+      margin-left: 20px;
+      transition: color 0.2s ease;
+    }
+    
+    .nav-links a:hover {
+      color: var(--accent-blue);
+    }
+    
+    .site-footer {
+      text-align: center;
+      padding: 30px 20px;
+      color: var(--text-muted);
+      font-size: 0.9em;
+      border-top: 1px solid var(--border-color);
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+  <!-- 도메인 검증 -->
+  <script src="../domain-check.js"></script>
+  
+  <div class="blog-container">
+    <a href="../" class="back-link">← 메인으로 돌아가기</a>
+    
+    <header class="blog-header">
+      <h1>참소식 블로그</h1>
+      <p>기술 데이터와 실시간 이슈 맵을 데이터와 맥락으로 읽는 블로그</p>
+    </header>
+    
+    <main class="posts-grid" id="posts-container">
+      <!-- 포스트 목록이 여기에 동적으로 로드됩니다 -->
+      <article class="post-card">
+        <div class="post-card-content">
+          <div class="post-meta">
+            <span class="post-date">2026-06-10</span>
+            <span class="post-category">로봇 기술</span>
+          </div>
+          <h2><a href="posts/2026-06-10-latest-humanoid-robots-2026.html">2026년 지금 가장 주목할 최신 휴머노이드 로봇 모델들</a></h2>
+          <p class="post-excerpt">
+            Figure 03, 1X NEO, Unitree R1, Atlas, Digit, Walker S2, Apollo, Optimus까지 최근 로봇 모델의 공개·배치 흐름을 정리합니다.
+          </p>
+          <a href="posts/2026-06-10-latest-humanoid-robots-2026.html" class="read-more">더 읽기 →</a>
+        </div>
+      </article>
+      <article class="post-card">
+        <div class="post-card-content">
+          <div class="post-meta">
+            <span class="post-date">2026-06-10</span>
+            <span class="post-category">시장 분석</span>
+          </div>
+          <h2><a href="posts/2026-06-10-market-flow-90-dollar-lens.html">15년 90달러의 렌즈로 본 현재 시장 흐름</a></h2>
+          <p class="post-excerpt">
+            AI·반도체 쏠림, 유가와 지정학 리스크, 광고 시장 배분을 15년 동안 90달러를 모은 창작자 수익 관점으로 읽습니다.
+          </p>
+          <a href="posts/2026-06-10-market-flow-90-dollar-lens.html" class="read-more">더 읽기 →</a>
+        </div>
+      </article>
+      <article class="post-card">
+        <div class="post-card-content">
+          <div class="post-meta">
+            <span class="post-date">2026-06-10</span>
+            <span class="post-category">시장 분석</span>
+          </div>
+          <h2><a href="posts/2026-06-10-market-lower-bound-creator-economy.html">하한치가 말하는 창작자 경제의 위험 구간</a></h2>
+          <p class="post-excerpt">
+            종합 가중치 58, 상한치 42, 하한치 36을 바탕으로 개인 창작자 수익 경로가 왜 먼저 막히는지 분석합니다.
+          </p>
+          <a href="posts/2026-06-10-market-lower-bound-creator-economy.html" class="read-more">더 읽기 →</a>
+        </div>
+      </article>
+      <article class="post-card">
+        <div class="post-card-content">
+          <div class="post-meta">
+            <span class="post-date">2026-06-10</span>
+            <span class="post-category">후속 분석</span>
+          </div>
+          <h2><a href="posts/2026-06-10-adsense-90-dollars-15-years.html">90달러를 모으는 데 15년이 걸렸다는 것</a></h2>
+          <p class="post-excerpt">
+            구글 애드센스 잔고 91.09달러, 장기 도메인 등록 확인, 시장 가중치 상한·하한 분석을
+            세 장의 이미지로 연결해 장기 운영자의 수익 경로가 정말 열려 있었는지 묻습니다.
+          </p>
+          <a href="posts/2026-06-10-adsense-90-dollars-15-years.html" class="read-more">더 읽기 →</a>
+        </div>
+      </article>
+      <article class="post-card">
+        <div class="post-card-content">
+          <div class="post-meta">
+            <span class="post-date">2026-06-10</span>
+            <span class="post-category">사회 분석</span>
+          </div>
+          <h2><a href="posts/2026-06-10-closed-information-network-us-capital.html">폐쇄적 정보망과 미국 자본의 책임 문제</a></h2>
+          <p class="post-excerpt">
+            개인정보와 평판이 폐쇄적으로 공유되는 비공식 정보망의 문제와 15년간 구글 애드센스 수익 90달러의 의미.
+            미국 자본이 폐쇄적 구조를 제대로 이해하지 못한 채 투자했을 가능성과 그 윤리적 책임을 분석합니다.
+          </p>
+          <a href="posts/2026-06-10-closed-information-network-us-capital.html" class="read-more">더 읽기 →</a>
+        </div>
+      </article>
+      <article class="post-card">
+        <div class="post-card-content">
+          <div class="post-meta">
+            <span class="post-date">2026-06-10</span>
+            <span class="post-category">공지</span>
+          </div>
+          <h2><a href="posts/2026/06/welcome.html">참소식.com 분석: 기술 데이터와 이슈 맵을 함께 읽는 방법</a></h2>
+          <p class="post-excerpt">
+            뉴스를 더 깊이 이해하기 위해 기술 트렌드와 이슈 흐름을 함께 보는 방법을
+            참소식.com의 데이터 구조와 활용 예시로 정리했습니다.
+          </p>
+          <a href="posts/2026/06/welcome.html" class="read-more">더 읽기 →</a>
+        </div>
+      </article>
+    </main>
+  </div>
+  
+  <script>
+    function escapeHtml(value) {
+      return String(value || '').replace(/[&<>"']/g, (char) => ({
+        '&': '&amp;',
+        '<': '&lt;',
+        '>': '&gt;',
+        '"': '&quot;',
+        "'": '&#39;'
+      }[char]));
+    }
+
+    function renderPostCard(post) {
+      const href = escapeHtml(post.href);
+      const title = escapeHtml(post.title);
+      const excerpt = escapeHtml(post.excerpt);
+      const date = escapeHtml(post.date);
+      const category = escapeHtml(post.category || '블로그');
+      return `
+        <article class="post-card">
+          <div class="post-card-content">
+            <div class="post-meta">
+              <span class="post-date">${date}</span>
+              <span class="post-category">${category}</span>
+            </div>
+            <h2><a href="${href}">${title}</a></h2>
+            <p class="post-excerpt">${excerpt}</p>
+            <a href="${href}" class="read-more">더 읽기 →</a>
+          </div>
+        </article>
+      `;
+    }
+
+    async function loadPosts() {
+      const container = document.getElementById('posts-container');
+      if (!container) return;
+
+      try {
+        const response = await fetch('posts/index.json', { cache: 'no-store' });
+        if (!response.ok) throw new Error(`posts/index.json ${response.status}`);
+        const posts = await response.json();
+        if (!Array.isArray(posts) || posts.length === 0) return;
+        container.innerHTML = posts.map(renderPostCard).join('');
+      } catch (error) {
+        console.warn('Could not load posts/index.json; keeping static fallback.', error);
+      }
+    }
+    
+    // 페이지 로드 시 실행
+    document.addEventListener('DOMContentLoaded', loadPosts);
+  </script>
+</body>
+</html>

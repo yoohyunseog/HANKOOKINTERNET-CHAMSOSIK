@@ -1,0 +1,89 @@
+{
+  "schema": "pc-part-nb-collector-file.v1",
+  "updatedAt": "2026-06-14T03:55:28.481+09:00",
+  "category": "SSD",
+  "id": "ssd-platinum-p51-m.2-nvme",
+  "name": "Platinum P51 M.2 NVMe",
+  "maker": "SK hynix",
+  "platform": "PCIe",
+  "estimatedPriceKrw": 202010,
+  "priceBand": "15~30만원",
+  "speedLabel": "Gen5",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "SSD",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 95,
+  "valueIndex": 47,
+  "aiUseScore": 62,
+  "powerWatts": 0,
+  "tags": [
+    "high-end",
+    "nvme"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "SSD",
+    "partId": "ssd-platinum-p51-m.2-nvme",
+    "partName": "Platinum P51 M.2 NVMe",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "SSD",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 950,
+      "value": 627,
+      "aiFit": 620,
+      "priceEfficiency": 500,
+      "powerEfficiency": 950
+    },
+    "nbVector": [
+      100,
+      950,
+      627,
+      620,
+      500,
+      950
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 432.987,
+    "nbMin": 358.485,
+    "weightedScore": 479,
+    "nbBand": "100~499",
+    "summary": "SSD Platinum P51 M.2 NVMe 부품을 속도 중심 N/B 데이터베이스 점수 479점으로 저장했습니다."
+  },
+  "nbWeightedScore": 479,
+  "nbMax": 432.987,
+  "nbMin": 358.485,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=SK%ED%95%98%EC%9D%B4%EB%8B%89%EC%8A%A4%20DDR5-5600%20Platinum%20P51%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "Observed in multiple system build excerpts as a high-performance NVMe drive. Price estimated based on observed search result values for 1TB/2TB variants.",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

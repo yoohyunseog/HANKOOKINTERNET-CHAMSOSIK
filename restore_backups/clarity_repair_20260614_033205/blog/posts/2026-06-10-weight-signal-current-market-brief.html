@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <meta name="description" content="참소식.com 메인 페이지 가중치 상한·하한 카드의 현재 값인 종합 42, 상한치 28, 하한치 44를 기준으로 시장의 위험 편향과 반등 조건을 분석합니다.">
+  <meta name="keywords" content="가중치 상한 하한, 시장 분석, 코스피, 코스닥, CPI, FOMC, 외국인 매도, 지정학 리스크">
+  <link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="../../favicon.svg">
+  <link rel="canonical" href="https://xn--9l4b4xi9r.com/blog/posts/2026-06-10-weight-signal-current-market-brief.html">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="ko_KR">
+  <meta property="og:site_name" content="참소식.com">
+  <meta property="og:url" content="https://xn--9l4b4xi9r.com/blog/posts/2026-06-10-weight-signal-current-market-brief.html">
+  <meta property="og:title" content="가중치 상한·하한으로 본 현재 시장: 하한 압력이 조금 더 무겁다">
+  <meta property="og:description" content="종합 가중치 42, 상한치 28, 하한치 44는 급락 공포보다 경계 우위의 시장을 가리킵니다.">
+  <meta property="og:image" content="https://xn--9l4b4xi9r.com/blog/assets/2026-06-10-weight-score-42-gauge.png">
+  <meta property="article:published_time" content="2026-06-10">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="가중치 상한·하한으로 본 현재 시장">
+  <meta name="twitter:description" content="종합 42, 상한 28, 하한 44의 현재 신호를 시장 흐름으로 해석합니다.">
+  <meta name="twitter:image" content="https://xn--9l4b4xi9r.com/blog/assets/2026-06-10-weight-score-42-gauge.png">
+  <title>가중치 상한·하한으로 본 현재 시장 | 참소식.com 블로그</title>
+  <link rel="stylesheet" href="../../common-site.css">
+  <style>
+    :root { color-scheme: dark; --page: #08111c; --ink: #f3f7fb; --muted: #b6c6d8; --line: rgba(180, 205, 230, 0.2); --blue: #75b7ff; --amber: #f3b34b; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: linear-gradient(180deg, #050913 0%, var(--page) 58%, #0a101b 100%); color: var(--ink); font-family: Pretendard, "Noto Sans KR", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.82; }
+    .post-container { width: min(960px, calc(100% - 32px)); margin: 0 auto; padding: 42px 0 76px; }
+    .post-back { display: inline-flex; color: var(--blue); font-size: 14px; font-weight: 800; text-decoration: none; }
+    .post-back:hover { text-decoration: underline; }
+    .post-header { padding: 34px 0 24px; }
+    .post-meta { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 22px; }
+    .post-meta span { border: 1px solid var(--line); border-radius: 999px; color: var(--muted); font-size: 13px; padding: 4px 10px; }
+    h1 { max-width: 880px; margin: 0 0 18px; font-size: clamp(34px, 5vw, 56px); line-height: 1.1; letter-spacing: 0; }
+    .post-subtitle { max-width: 780px; margin: 0; color: var(--muted); font-size: 19px; }
+    .post-hero, .post-image { width: 100%; border-radius: 8px; border: 1px solid var(--line); margin: 14px 0 34px; display: block; }
+    .post-image { margin: 10px 0 24px; background: #060b13; }
+    .caption { margin-top: -18px; margin-bottom: 32px; color: #8ea3b8; font-size: 14px; }
+    .post-content { max-width: 840px; font-size: 18px; }
+    .post-content h2 { margin: 44px 0 18px; padding-top: 8px; font-size: 29px; line-height: 1.28; }
+    .post-content h3 { margin: 30px 0 14px; font-size: 23px; }
+    .post-content p { margin: 0 0 21px; color: #d9e5f2; }
+    .signal-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; margin: 18px 0 28px; }
+    .signal-card { border: 1px solid var(--line); border-radius: 8px; padding: 16px; background: rgba(255,255,255,0.035); }
+    .signal-card span { display: block; color: var(--muted); font-size: 13px; }
+    .signal-card strong { display: block; margin-top: 4px; font-size: 28px; line-height: 1.1; }
+    .notice { border-left: 4px solid var(--amber); background: rgba(243,179,75,0.08); padding: 16px 18px; border-radius: 8px; margin: 24px 0; color: #f4dfbd; }
+    .post-content ul { margin: 0 0 22px; padding-left: 24px; color: #d9e5f2; }
+    .post-content li { margin-bottom: 8px; }
+    .post-footer { margin-top: 54px; padding-top: 28px; border-top: 1px solid var(--line); }
+    .site-footer { border-top: 1px solid var(--line); background: #060b13; color: var(--muted); text-align: center; padding: 24px; }
+    @media (max-width: 720px) { .post-container { width: min(100% - 24px, 960px); padding-top: 28px; } .post-content { font-size: 16px; } .signal-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  
+    .post-views {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      color: var(--muted);
+      font-size: 13px;
+      padding: 4px 10px;
+    }
+    .post-views::before {
+      content: '👁';
+      font-size: 12px;
+    }
+</style>
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src=
+"
+https://www.clarity.ms/tag/
+"
++i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, 
+"
+clarity
+"
+, 
+"
+script
+"
+, 
+"
+x4jlyqheuh
+"
+);
+</script>
+</head>
+<body>
+  <script src="../../domain-check.js"></script>
+  <main class="post-container">
+    <a href="../" class="post-back">← 블로그 목록으로</a>
+    <header class="post-header">
+      <div class="post-meta">
+        <span>2026-06-10</span>
+        <span>시장 분석</span>
+        <span>메인 페이지 가중치 기준</span>
+              <span class="post-views" id="view-count">조회수 로딩중...</span>
+      </div>
+      <h1>가중치 상한·하한으로 본 현재 시장: 하한 압력이 조금 더 무겁다</h1>
+      <p class="post-subtitle">현재 메인 페이지의 가중치 카드는 종합 42, 상한치 28, 하한치 44, 등급 주의를 가리킨다. 이 값은 급락 단정이 아니라, 반등 재료보다 위험 관리의 우선순위가 조금 더 높아진 시장을 말한다.</p>
+    </header>
+
+    <img class="post-hero" src="../assets/2026-06-10-weight-score-42-gauge.png" alt="종합 가중치 42, 상한치 28, 하한치 44를 나타내는 시장 위험 게이지">
+
+    <article class="post-content">
+      <h2>현재 스크린샷 기준 값</h2>
+      <img class="post-image" src="../assets/2026-06-10-weight-signal-card.png" alt="메인 페이지 가중치 상한 하한 카드 스크린샷">
+      <p class="caption">메인 페이지의 가중치 상한·하한 카드 캡처. 기준값은 종합 42, 상한치 28, 하한치 44다.</p>
+
+      <div class="signal-grid">
+        <div class="signal-card"><span>등급</span><strong>주의</strong></div>
+        <div class="signal-card"><span>종합 가중치</span><strong>42</strong></div>
+        <div class="signal-card"><span>상한치</span><strong>28</strong></div>
+        <div class="signal-card"><span>하한치</span><strong>44</strong></div>
+      </div>
+
+      <p>숫자만 놓고 보면 시장은 완전히 무너진 상태가 아니다. 종합 가중치 42는 중립선 아래에 있지만, 극단적 공포 구간으로 보기에는 아직 거리가 있다. 다만 하한치 44가 상한치 28보다 높기 때문에, 시장은 좋은 뉴스에 즉각 크게 반응하기보다 나쁜 뉴스에 더 민감하게 움직일 가능성이 크다.</p>
+
+      <h2>상한 요인은 살아 있지만 힘이 얇다</h2>
+      <p>상한치 요인에는 중동 에너지 수주 호재, 미국 CPI 양호 전망, 연준 금리 인하 기대가 잡혀 있다. 이 조합은 본래 위험자산에 우호적이다. 에너지 수주 호재는 특정 업종과 한국 기업 실적 기대를 건드리고, CPI가 시장 예상보다 안정적이면 금리 인하 기대가 다시 살아날 수 있다.</p>
+      <p>하지만 상한치가 28에 머무른다는 것은 이 호재들이 아직 시장 전체를 밀어 올리는 힘으로 번지지 못했다는 뜻이다. 호재는 존재하지만, 투자자들이 그것을 강한 매수 명분으로 받아들이기 전까지는 확인해야 할 변수가 많다.</p>
+
+      <h2>하한 요인이 시장의 기본 자세를 정한다</h2>
+      <p>하한치 요인은 지정학적 리스크 확대, 미국 증시 변동성 증대, 외국인 대규모 매도, 카카오 파업 우려로 정리된다. 여기서 중요한 것은 개별 악재의 크기보다 악재들이 서로 다른 층위에 있다는 점이다. 지정학은 에너지와 환율을 흔들고, 미국 증시 변동성은 글로벌 위험 선호를 식히며, 외국인 매도는 국내 지수의 수급을 직접 누른다.</p>
+      <p>하한치 44는 시장이 “좋은 뉴스도 보지만, 먼저 방어한다”는 상태에 가깝다. 특히 외국인 매도가 결합된 하락 압력은 단기 반등을 얇게 만들 수 있다. 반등이 나오더라도 거래대금과 외국인 순매수 전환이 확인되지 않으면 추세 회복으로 해석하기 어렵다.</p>
+
+      <div class="notice">
+        현재 신호는 매수·매도 지시가 아니라 위험 편향 지도다. 하한치가 상한치보다 높다는 것은 가격이 반드시 하락한다는 뜻이 아니라, 시장 참여자들이 상승 재료보다 손실 회피 재료를 먼저 반영하고 있다는 뜻이다.
+      </div>
+
+      <h2>지금 시장을 보는 방법</h2>
+      <p>첫째, CPI와 FOMC 관련 기대가 상한치 28을 얼마나 끌어올리는지 봐야 한다. 물가 지표가 안정적으로 나오고 미국 금리 기대가 완화되면 상한치 요인이 시장 전체로 확산될 수 있다.</p>
+      <p>둘째, 외국인 매도가 멈추는지를 확인해야 한다. 현재 카드에서 하한 압력을 키우는 가장 직접적인 국내 변수는 수급이다. 외국인의 매도 강도가 완화되지 않으면 반도체, 플랫폼, 성장주 반등은 짧고 거칠 가능성이 있다.</p>
+      <p>셋째, 지정학 리스크는 지수보다 환율과 에너지 가격에서 먼저 확인하는 편이 낫다. 주식시장이 늦게 반응할 때도 원화와 유가는 위험 신호를 먼저 보여주는 경우가 많다.</p>
+
+      <h2>결론</h2>
+      <p>현재 가중치 신호는 “위험 회피 우위의 관망장”이다. 상승 재료는 분명히 남아 있지만, 시장의 체중은 아직 하한 쪽에 조금 더 실려 있다. 종합 42는 공포가 아니라 경계다. 따라서 지금 필요한 판단은 방향을 단정하는 것이 아니라, 상한치가 30대 중후반으로 올라오는지 또는 하한치가 50을 넘어 위험 구간으로 확장되는지를 추적하는 것이다.</p>
+    </article>
+
+    <footer class="post-footer">
+      <a href="../" class="post-back">← 블로그 목록으로 돌아가기</a>
+    </footer>
+  </main>
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4501795912654667" crossorigin="anonymous"></script>
+  <footer class="site-footer">
+    <p>&copy; 2026 참소식.com. 모든 권리 보유.</p>
+  </footer>
+
+  <script src="../js/view-tracker.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      if (typeof BlogViewTracker !== 'undefined') {
+        BlogViewTracker.trackPostVisit();
+        const viewCountEl = document.getElementById('view-count');
+        if (viewCountEl) {
+          const postHref = window.location.pathname.split('/').pop();
+          const count = BlogViewTracker.getViewCount('posts/' + postHref);
+          viewCountEl.textContent = BlogViewTracker.formatViews(count);
+        }
+      }
+    });
+  </script>
+</body>
+</html>

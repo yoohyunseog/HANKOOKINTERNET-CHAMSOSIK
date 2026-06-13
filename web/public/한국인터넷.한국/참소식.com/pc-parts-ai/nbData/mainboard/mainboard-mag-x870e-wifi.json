@@ -1,0 +1,89 @@
+{
+  "schema": "pc-part-nb-collector-file.v1",
+  "updatedAt": "2026-06-14T03:55:15.900+09:00",
+  "category": "Mainboard",
+  "id": "mainboard-mag-x870e-wifi",
+  "name": "MAG X870E 토마호크 WIFI",
+  "maker": "MSI",
+  "platform": "AM5",
+  "estimatedPriceKrw": 457800,
+  "priceBand": "30~60만원",
+  "speedLabel": "X870E",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "Mainboard",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 90,
+  "valueIndex": 19.7,
+  "aiUseScore": 59,
+  "powerWatts": 0,
+  "tags": [
+    "gaming",
+    "high-end"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "Mainboard",
+    "partId": "mainboard-mag-x870e-wifi",
+    "partName": "MAG X870E 토마호크 WIFI",
+    "speed": {
+      "score": 100,
+      "weight": 0.32,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "Mainboard",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 900,
+      "value": 263,
+      "aiFit": 590,
+      "priceEfficiency": 220,
+      "powerEfficiency": 900
+    },
+    "nbVector": [
+      100,
+      900,
+      263,
+      590,
+      220,
+      900
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 288.491,
+    "nbMin": 374.378,
+    "weightedScore": 379,
+    "nbBand": "100~499",
+    "summary": "Mainboard MAG X870E 토마호크 WIFI 부품을 속도 중심 N/B 데이터베이스 점수 379점으로 저장했습니다."
+  },
+  "nbWeightedScore": 379,
+  "nbMax": 288.491,
+  "nbMin": 374.378,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=AMD%20%EB%9D%BC%EC%9D%B4%EC%A0%A0%209%209950X%20%EB%A9%94%EC%9D%B8%EB%B3%B4%EB%93%9C%20%EC%B6%94%EC%B2%9C",
+  "notes": "Observed price 457,800 KRW from Danawa search results.",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

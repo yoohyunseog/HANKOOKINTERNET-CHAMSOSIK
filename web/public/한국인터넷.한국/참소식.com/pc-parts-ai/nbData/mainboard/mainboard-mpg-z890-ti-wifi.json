@@ -1,0 +1,91 @@
+{
+  "schema": "pc-part-nb-collector-file.v1",
+  "updatedAt": "2026-06-14T03:55:16.057+09:00",
+  "category": "Mainboard",
+  "id": "mainboard-mpg-z890-ti-wifi",
+  "name": "MPG Z890 엣지 TI WIFI",
+  "maker": "MSI",
+  "platform": "Intel LGA1851",
+  "estimatedPriceKrw": 549000,
+  "priceBand": "30~60만원",
+  "speedLabel": "DDR5 9200MHz",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "Mainboard",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 95,
+  "valueIndex": 17.3,
+  "aiUseScore": 62,
+  "powerWatts": 0,
+  "tags": [
+    "Z890",
+    "WiFi",
+    "Thunderbolt 4",
+    "ATX"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "Mainboard",
+    "partId": "mainboard-mpg-z890-ti-wifi",
+    "partName": "MPG Z890 엣지 TI WIFI",
+    "speed": {
+      "score": 100,
+      "weight": 0.32,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "Mainboard",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 950,
+      "value": 231,
+      "aiFit": 620,
+      "priceEfficiency": 180,
+      "powerEfficiency": 950
+    },
+    "nbVector": [
+      100,
+      950,
+      231,
+      620,
+      180,
+      950
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 270.84,
+    "nbMin": 369.392,
+    "weightedScore": 388,
+    "nbBand": "100~499",
+    "summary": "Mainboard MPG Z890 엣지 TI WIFI 부품을 속도 중심 N/B 데이터베이스 점수 388점으로 저장했습니다."
+  },
+  "nbWeightedScore": 388,
+  "nbMax": 270.84,
+  "nbMin": 369.392,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=MSI%20MPG%20Z890%20%EC%97%A3%EC%A7%80%20WIFI%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "Intel Z890 chipset, Socket 1851, 16+1+1+1 phase power delivery, supports up to 256GB DDR5.",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

@@ -1,0 +1,88 @@
+{
+  "schema": "pc-part-nb-collector-file.v1",
+  "updatedAt": "2026-06-14T03:54:57.801+09:00",
+  "category": "GPU",
+  "id": "gpu-rtx-5060-ti-windforce-max-oc-d7-8gb",
+  "name": "지포스 RTX 5060 Ti WINDFORCE MAX OC D7 8GB",
+  "maker": "GIGABYTE",
+  "platform": "PCIe",
+  "estimatedPriceKrw": 599000,
+  "priceBand": "30~60만원",
+  "speedLabel": "OC",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "GPU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 75,
+  "valueIndex": 12.5,
+  "aiUseScore": 49,
+  "powerWatts": 160,
+  "tags": [
+    "gaming"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "GPU",
+    "partId": "gpu-rtx-5060-ti-windforce-max-oc-d7-8gb",
+    "partName": "지포스 RTX 5060 Ti WINDFORCE MAX OC D7 8GB",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "GPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 750,
+      "value": 167,
+      "aiFit": 490,
+      "priceEfficiency": 170,
+      "powerEfficiency": 156
+    },
+    "nbVector": [
+      100,
+      750,
+      167,
+      490,
+      170,
+      156
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 133.062,
+    "nbMin": 357.367,
+    "weightedScore": 287,
+    "nbBand": "100~499",
+    "summary": "GPU 지포스 RTX 5060 Ti WINDFORCE MAX OC D7 8GB 부품을 속도 중심 N/B 데이터베이스 점수 287점으로 저장했습니다."
+  },
+  "nbWeightedScore": 287,
+  "nbMax": 133.062,
+  "nbMin": 357.367,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=RTX%204060%20Ti%208GB%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "Found in search results for RTX 4060 Ti; this is a newer 50-series model.",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

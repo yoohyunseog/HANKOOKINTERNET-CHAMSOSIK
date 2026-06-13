@@ -1,0 +1,90 @@
+{
+  "schema": "pc-part-nb-collector-file.v1",
+  "updatedAt": "2026-06-14T03:55:16.113+09:00",
+  "category": "Mainboard",
+  "id": "mainboard-msi-mag-x870-tomahawk-wifi",
+  "name": "MSI MAG X870 TOMAHAWK WIFI",
+  "maker": "MSI",
+  "platform": "AMD AM5",
+  "estimatedPriceKrw": 380000,
+  "priceBand": "30~60만원",
+  "speedLabel": "DDR5",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "Mainboard",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 85,
+  "valueIndex": 22.4,
+  "aiUseScore": 55,
+  "powerWatts": 0,
+  "tags": [
+    "X870",
+    "WiFi",
+    "ATX"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "Mainboard",
+    "partId": "mainboard-msi-mag-x870-tomahawk-wifi",
+    "partName": "MSI MAG X870 TOMAHAWK WIFI",
+    "speed": {
+      "score": 100,
+      "weight": 0.32,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "Mainboard",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 850,
+      "value": 299,
+      "aiFit": 550,
+      "priceEfficiency": 260,
+      "powerEfficiency": 850
+    },
+    "nbVector": [
+      100,
+      850,
+      299,
+      550,
+      260,
+      850
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 308.392,
+    "nbMin": 378.36,
+    "weightedScore": 371,
+    "nbBand": "100~499",
+    "summary": "Mainboard MSI MAG X870 TOMAHAWK WIFI 부품을 속도 중심 N/B 데이터베이스 점수 371점으로 저장했습니다."
+  },
+  "nbWeightedScore": 371,
+  "nbMax": 308.392,
+  "nbMin": 378.36,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=MSI%20MAG%20X870%20TOMAHAWK%20WIFI%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "AMD X870 chipset, PCIe 5.0 x16, 4x M.2 slots, WiFi included.",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

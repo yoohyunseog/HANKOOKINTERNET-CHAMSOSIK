@@ -1,0 +1,90 @@
+{
+  "schema": "pc-part-nb-collector-file.v1",
+  "updatedAt": "2026-06-14T03:55:22.489+09:00",
+  "category": "SSD",
+  "id": "ssd-990-evo-plus-2tb",
+  "name": "990 EVO Plus 2TB",
+  "maker": "Samsung",
+  "platform": "M.2 NVMe (PCIe 4.0x4 / 5.0x2)",
+  "estimatedPriceKrw": 181490,
+  "priceBand": "15~30만원",
+  "speedLabel": "7,250MB/s Read / 6,300MB/s Write",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "SSD",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 75,
+  "valueIndex": 41.3,
+  "aiUseScore": 49,
+  "powerWatts": 0,
+  "tags": [
+    "NVMe",
+    "PCIe 4.0",
+    "PS5"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "SSD",
+    "partId": "ssd-990-evo-plus-2tb",
+    "partName": "990 EVO Plus 2TB",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "SSD",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 750,
+      "value": 551,
+      "aiFit": 490,
+      "priceEfficiency": 550,
+      "powerEfficiency": 750
+    },
+    "nbVector": [
+      100,
+      750,
+      551,
+      490,
+      550,
+      750
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 487.868,
+    "nbMin": 365.901,
+    "weightedScore": 407,
+    "nbBand": "100~499",
+    "summary": "SSD 990 EVO Plus 2TB 부품을 속도 중심 N/B 데이터베이스 점수 407점으로 저장했습니다."
+  },
+  "nbWeightedScore": 407,
+  "nbMax": 487.868,
+  "nbMin": 365.901,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Samsung%20990%20EVO%20Plus%202TB%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "TLC, 1200TBW, 5-year warranty",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

@@ -1,0 +1,89 @@
+{
+  "schema": "pc-part-nb-collector-file.v1",
+  "updatedAt": "2026-06-14T03:55:19.314+09:00",
+  "category": "RAM",
+  "id": "ram-kingston-fury-beast-rgb-64gb-2x32gb-6400mt-s-ddr5-cl32",
+  "name": "Kingston Fury Beast RGB 64GB (2x32GB) 6400MT/s DDR5 CL32",
+  "maker": "Kingston",
+  "platform": "DDR5",
+  "estimatedPriceKrw": 2415350,
+  "priceBand": "60만원 이상",
+  "speedLabel": "6400MT/s",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "RAM",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 90,
+  "valueIndex": 3.7,
+  "aiUseScore": 59,
+  "powerWatts": 0,
+  "tags": [
+    "gaming",
+    "overclock"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "RAM",
+    "partId": "ram-kingston-fury-beast-rgb-64gb-2x32gb-6400mt-s-ddr5-cl32",
+    "partName": "Kingston Fury Beast RGB 64GB (2x32GB) 6400MT/s DDR5 CL32",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "RAM",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 900,
+      "value": 100,
+      "aiFit": 590,
+      "priceEfficiency": 40,
+      "powerEfficiency": 900
+    },
+    "nbVector": [
+      100,
+      900,
+      100,
+      590,
+      40,
+      900
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 256.831,
+    "nbMin": 329.562,
+    "weightedScore": 352,
+    "nbBand": "100~499",
+    "summary": "RAM Kingston Fury Beast RGB 64GB (2x32GB) 6400MT/s DDR5 CL32 부품을 속도 중심 N/B 데이터베이스 점수 352점으로 저장했습니다."
+  },
+  "nbWeightedScore": 352,
+  "nbMax": 256.831,
+  "nbMin": 329.562,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=DDR5%2064GB%20RAM%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "2x32GB kit, CL32, AMD EXPO support",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

@@ -110,9 +110,51 @@ const limiter = rateLimit({
 });
 app.use(limiter);
 
+// 한국 IP만 Ollama API 접근 허용 미들웨어
+const KOREA_ONLY_ROUTES = ['/api/ollama-', '/api/silverkmk-ai'];
+app.use((req, res, next) => {
+    const path = req.path || '';
+    const originalUrl = req.originalUrl || '';
+    
+    // Ollama API 경로인지 확인
+    const isOllamaRoute = KOREA_ONLY_ROUTES.some(route => 
+        path.startsWith(route) || originalUrl.startsWith(route)
+    );
+    
+    if (!isOllamaRoute) {
+        return next();
+    }
+    
+    const ip = getClientIp(req);
+    const isLocal = isLocalOrPrivateIp(ip);
+    
+    // 로컬호스트는 항상 허용
+    if (isLocal) {
+        return next();
+    }
+    
+    // GeoIP 확인
+    const countryCode = getRequestCountryCode(req, ip);
+    
+    // 한국(KR) IP만 허용
+    if (countryCode === 'KR') {
+        return next();
+    }
+    
+    // 한국 IP가 아니면 차단
+    console.log(`[Ollama Security] Blocked non-Korean IP: ${ip} (Country: ${countryCode || 'Unknown'})`);
+    return res.status(403).json({
+        ok: false,
+        error: 'Access denied. Korean IP only.',
+        ip: ip,
+        country: countryCode || 'Unknown',
+        message: '이 API는 한국 IP에서만 접근 가능합니다.'
+    });
+});
+
 app.use(compression()); // Gzip 압축 활성화
 const PORT = process.env.PORT || 3000;
-const OLLAMA_BASE_URL = process.env.OLLAMA_BASE_URL || 'http://211.45.162.155:11434';
+const OLLAMA_BASE_URL = process.env.OLLAMA_BASE_URL || 'http://127.0.0.1:11434';
 const AI_CHAT_MODEL = process.env.AI_CHAT_MODEL || process.env.OLLAMA_MODEL || 'glm-5:cloud';
 
 // Ollama Web Search API 설정
@@ -2825,6 +2867,124 @@ app.get('/api/keywords/today', async (req, res) => {
             error: error.message,
             stack: process.env.NODE_ENV === 'development' ? error.stack : undefined
         });
+    }
+});
+
+// ============================================
+// 블로그 조회수 API
+// ============================================
+
+// 조회수 데이터 파일 경로
+const BLOG_VIEWS_FILE = path.join(__dirname, '..', 'data', 'blog_views.json');
+
+// 조회수 데이터 로드
+function loadBlogViews() {
+    try {
+        if (fs.existsSync(BLOG_VIEWS_FILE)) {
+            const data = fs.readFileSync(BLOG_VIEWS_FILE, 'utf8');
+            return JSON.parse(data);
+        }
+    } catch (error) {
+        console.error('[blog-views] 데이터 로드 오류:', error.message);
+    }
+    return {};
+}
+
+// 조회수 데이터 저장
+function saveBlogViews(views) {
+    try {
+        const dir = path.dirname(BLOG_VIEWS_FILE);
+        if (!fs.existsSync(dir)) {
+            fs.mkdirSync(dir, { recursive: true });
+        }
+        fs.writeFileSync(BLOG_VIEWS_FILE, JSON.stringify(views, null, 2), 'utf8');
+    } catch (error) {
+        console.error('[blog-views] 데이터 저장 오류:', error.message);
+    }
+}
+
+// 조회수 증가 API
+app.post('/api/blog/views/:postHref', (req, res) => {
+    try {
+        const postHref = decodeURIComponent(req.params.postHref);
+        
+        if (!postHref) {
+            return res.status(400).json({ success: false, error: 'postHref is required' });
+        }
+        
+        const views = loadBlogViews();
+        views[postHref] = (views[postHref] || 0) + 1;
+        saveBlogViews(views);
+        
+        if (process.env.NODE_ENV !== 'production') {
+            console.log(`[blog-views] 조회수 증가: ${postHref} -> ${views[postHref]}`);
+        }
+        
+        res.json({
+            success: true,
+            postHref: postHref,
+            views: views[postHref]
+        });
+    } catch (error) {
+        console.error('[blog-views] 조회수 증가 오류:', error);
+        res.status(500).json({ success: false, error: error.message });
+    }
+});
+
+// 조회수 조회 API
+app.get('/api/blog/views/:postHref', (req, res) => {
+    try {
+        const postHref = decodeURIComponent(req.params.postHref);
+        const views = loadBlogViews();
+        const count = views[postHref] || 0;
+        
+        res.json({
+            success: true,
+            postHref: postHref,
+            views: count
+        });
+    } catch (error) {
+        console.error('[blog-views] 조회수 조회 오류:', error);
+        res.status(500).json({ success: false, error: error.message });
+    }
+});
+
+// 전체 조회수 조회 API
+app.get('/api/blog/views', (req, res) => {
+    try {
+        const views = loadBlogViews();
+        
+        res.json({
+            success: true,
+            count: Object.keys(views).length,
+            data: views
+        });
+    } catch (error) {
+        console.error('[blog-views] 전체 조회수 조회 오류:', error);
+        res.status(500).json({ success: false, error: error.message });
+    }
+});
+
+// 인기 포스트 TOP N 조회 API
+app.get('/api/blog/popular', (req, res) => {
+    try {
+        const limit = Math.min(parseInt(req.query.limit) || 10, 100);
+        const views = loadBlogViews();
+        
+        // 조회수 기준 정렬
+        const sorted = Object.entries(views)
+            .sort((a, b) => b[1] - a[1])
+            .slice(0, limit)
+            .map(([postHref, views]) => ({ postHref, views }));
+        
+        res.json({
+            success: true,
+            count: sorted.length,
+            data: sorted
+        });
+    } catch (error) {
+        console.error('[blog-views] 인기 포스트 조회 오류:', error);
+        res.status(500).json({ success: false, error: error.message });
     }
 });
 

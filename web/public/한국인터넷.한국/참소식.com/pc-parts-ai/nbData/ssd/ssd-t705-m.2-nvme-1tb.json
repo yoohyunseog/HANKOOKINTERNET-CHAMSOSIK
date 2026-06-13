@@ -1,0 +1,89 @@
+{
+  "schema": "pc-part-nb-collector-file.v1",
+  "updatedAt": "2026-06-14T03:55:29.965+09:00",
+  "category": "SSD",
+  "id": "ssd-t705-m.2-nvme-1tb",
+  "name": "T705 M.2 NVMe 1TB",
+  "maker": "Crucial",
+  "platform": "PCIe 5.0",
+  "estimatedPriceKrw": 280000,
+  "priceBand": "15~30만원",
+  "speedLabel": "Gen5",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "SSD",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 98,
+  "valueIndex": 35,
+  "aiUseScore": 64,
+  "powerWatts": 0,
+  "tags": [
+    "high-end",
+    "nvme"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "SSD",
+    "partId": "ssd-t705-m.2-nvme-1tb",
+    "partName": "T705 M.2 NVMe 1TB",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "SSD",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 980,
+      "value": 467,
+      "aiFit": 640,
+      "priceEfficiency": 360,
+      "powerEfficiency": 980
+    },
+    "nbVector": [
+      100,
+      980,
+      467,
+      640,
+      360,
+      980
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 356.299,
+    "nbMin": 365.896,
+    "weightedScore": 455,
+    "nbBand": "100~499",
+    "summary": "SSD T705 M.2 NVMe 1TB 부품을 속도 중심 N/B 데이터베이스 점수 455점으로 저장했습니다."
+  },
+  "nbWeightedScore": 455,
+  "nbMax": 356.299,
+  "nbMin": 365.896,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Crucial%20T705%20M.2%20NVMe%201TB%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "Different capacity (1TB) from the saved 2TB model.",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

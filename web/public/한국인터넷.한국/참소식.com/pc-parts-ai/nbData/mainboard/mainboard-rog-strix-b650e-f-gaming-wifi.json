@@ -1,0 +1,90 @@
+{
+  "schema": "pc-part-nb-collector-file.v1",
+  "updatedAt": "2026-06-14T03:55:16.328+09:00",
+  "category": "Mainboard",
+  "id": "mainboard-rog-strix-b650e-f-gaming-wifi",
+  "name": "ROG STRIX B650E-F GAMING WIFI",
+  "maker": "ASUS",
+  "platform": "AMD AM5",
+  "estimatedPriceKrw": 593000,
+  "priceBand": "30~60만원",
+  "speedLabel": "B650E",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "Mainboard",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 75,
+  "valueIndex": 12.6,
+  "aiUseScore": 49,
+  "powerWatts": 0,
+  "tags": [
+    "ATX",
+    "DDR5",
+    "PCIe 5.0"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "Mainboard",
+    "partId": "mainboard-rog-strix-b650e-f-gaming-wifi",
+    "partName": "ROG STRIX B650E-F GAMING WIFI",
+    "speed": {
+      "score": 100,
+      "weight": 0.32,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "Mainboard",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 750,
+      "value": 168,
+      "aiFit": 490,
+      "priceEfficiency": 170,
+      "powerEfficiency": 750
+    },
+    "nbVector": [
+      100,
+      750,
+      168,
+      490,
+      170,
+      750
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 261.864,
+    "nbMin": 387.761,
+    "weightedScore": 313,
+    "nbBand": "100~499",
+    "summary": "Mainboard ROG STRIX B650E-F GAMING WIFI 부품을 속도 중심 N/B 데이터베이스 점수 313점으로 저장했습니다."
+  },
+  "nbWeightedScore": 313,
+  "nbMax": 261.864,
+  "nbMin": 387.761,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=ASUS%20ROG%20STRIX%20B650E-F%20GAMING%20WIFI%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "Supports AMD AM5, B650E chipset, PCIe 5.0 x16, and up to 128GB DDR5 memory.",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

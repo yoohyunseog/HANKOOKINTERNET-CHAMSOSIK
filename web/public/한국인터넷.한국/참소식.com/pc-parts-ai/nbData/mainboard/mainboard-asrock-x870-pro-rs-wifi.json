@@ -1,0 +1,90 @@
+{
+  "schema": "pc-part-nb-collector-file.v1",
+  "updatedAt": "2026-06-14T03:55:15.286+09:00",
+  "category": "Mainboard",
+  "id": "mainboard-asrock-x870-pro-rs-wifi",
+  "name": "ASRock X870 Pro RS WiFi",
+  "maker": "ASRock",
+  "platform": "AMD AM5",
+  "estimatedPriceKrw": 314170,
+  "priceBand": "30~60만원",
+  "speedLabel": "DDR5 8000MHz",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "Mainboard",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 75,
+  "valueIndex": 23.9,
+  "aiUseScore": 49,
+  "powerWatts": 0,
+  "tags": [
+    "X870",
+    "WiFi",
+    "AM5"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "Mainboard",
+    "partId": "mainboard-asrock-x870-pro-rs-wifi",
+    "partName": "ASRock X870 Pro RS WiFi",
+    "speed": {
+      "score": 100,
+      "weight": 0.32,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "Mainboard",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 750,
+      "value": 319,
+      "aiFit": 490,
+      "priceEfficiency": 320,
+      "powerEfficiency": 750
+    },
+    "nbVector": [
+      100,
+      750,
+      319,
+      490,
+      320,
+      750
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 342.843,
+    "nbMin": 387.316,
+    "weightedScore": 346,
+    "nbBand": "100~499",
+    "summary": "Mainboard ASRock X870 Pro RS WiFi 부품을 속도 중심 N/B 데이터베이스 점수 346점으로 저장했습니다."
+  },
+  "nbWeightedScore": 346,
+  "nbMax": 342.843,
+  "nbMin": 387.316,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=ASRock%20X870%20Pro%20RS%20WiFi%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "Supports PCIe 5.0, USB4 40Gbps, and up to 256GB DDR5 memory.",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

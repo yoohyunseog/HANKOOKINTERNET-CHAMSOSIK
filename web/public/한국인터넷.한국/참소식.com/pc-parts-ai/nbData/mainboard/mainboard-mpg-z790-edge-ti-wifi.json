@@ -1,0 +1,89 @@
+{
+  "schema": "pc-part-nb-collector-file.v1",
+  "updatedAt": "2026-06-14T03:55:16.031+09:00",
+  "category": "Mainboard",
+  "id": "mainboard-mpg-z790-edge-ti-wifi",
+  "name": "MPG Z790 EDGE TI WIFI",
+  "maker": "MSI",
+  "platform": "LGA1700",
+  "estimatedPriceKrw": 660650,
+  "priceBand": "60만원 이상",
+  "speedLabel": "DDR5",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "Mainboard",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 75,
+  "valueIndex": 11.4,
+  "aiUseScore": 49,
+  "powerWatts": 0,
+  "tags": [
+    "gaming",
+    "Z790"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "Mainboard",
+    "partId": "mainboard-mpg-z790-edge-ti-wifi",
+    "partName": "MPG Z790 EDGE TI WIFI",
+    "speed": {
+      "score": 100,
+      "weight": 0.32,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "Mainboard",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 750,
+      "value": 152,
+      "aiFit": 490,
+      "priceEfficiency": 150,
+      "powerEfficiency": 750
+    },
+    "nbVector": [
+      100,
+      750,
+      152,
+      490,
+      150,
+      750
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 252.666,
+    "nbMin": 387.327,
+    "weightedScore": 309,
+    "nbBand": "100~499",
+    "summary": "Mainboard MPG Z790 EDGE TI WIFI 부품을 속도 중심 N/B 데이터베이스 점수 309점으로 저장했습니다."
+  },
+  "nbWeightedScore": 309,
+  "nbMax": 252.666,
+  "nbMin": 387.327,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=MSI%20MPG%20Z790%20EDGE%20TI%20WIFI%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "Observed price for the MAX version is also present, but the base EDGE TI WIFI is listed at 660,650 KRW.",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

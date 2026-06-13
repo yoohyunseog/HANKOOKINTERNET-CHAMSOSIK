@@ -1,0 +1,89 @@
+{
+  "schema": "pc-part-nb-collector-file.v1",
+  "updatedAt": "2026-06-14T03:55:27.805+09:00",
+  "category": "SSD",
+  "id": "ssd-platinum-p41",
+  "name": "Platinum P41",
+  "maker": "SK hynix",
+  "platform": "M.2 NVMe",
+  "estimatedPriceKrw": 180000,
+  "priceBand": "15~30만원",
+  "speedLabel": "PCIe 4.0",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "SSD",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 95,
+  "valueIndex": 52.8,
+  "aiUseScore": 62,
+  "powerWatts": 0,
+  "tags": [
+    "high-performance",
+    "gaming"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "SSD",
+    "partId": "ssd-platinum-p41",
+    "partName": "Platinum P41",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "SSD",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 950,
+      "value": 704,
+      "aiFit": 620,
+      "priceEfficiency": 560,
+      "powerEfficiency": 950
+    },
+    "nbVector": [
+      100,
+      950,
+      704,
+      620,
+      560,
+      950
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 468.806,
+    "nbMin": 351.604,
+    "weightedScore": 494,
+    "nbBand": "100~499",
+    "summary": "SSD Platinum P41 부품을 속도 중심 N/B 데이터베이스 점수 494점으로 저장했습니다."
+  },
+  "nbWeightedScore": 494,
+  "nbMax": 468.806,
+  "nbMin": 351.604,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=SK%ED%95%98%EC%9D%B4%EB%8B%89%EC%8A%A4%20Platinum%20P41%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "High-end PCIe 4.0 NVMe SSD",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

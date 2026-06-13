@@ -1,0 +1,89 @@
+{
+  "schema": "pc-part-nb-collector-file.v1",
+  "updatedAt": "2026-06-14T03:55:18.024+09:00",
+  "category": "RAM",
+  "id": "ram-corsair-vengeance-ddr5-6000mhz-cl30-32gb-16gbx2",
+  "name": "Corsair Vengeance DDR5 6000MHz CL30 32GB (16GBx2)",
+  "maker": "Corsair",
+  "platform": "DDR5",
+  "estimatedPriceKrw": 202000,
+  "priceBand": "15~30만원",
+  "speedLabel": "6000MHz CL30",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "RAM",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 85,
+  "valueIndex": 42.1,
+  "aiUseScore": 55,
+  "powerWatts": 0,
+  "tags": [
+    "gaming",
+    "overclock"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "RAM",
+    "partId": "ram-corsair-vengeance-ddr5-6000mhz-cl30-32gb-16gbx2",
+    "partName": "Corsair Vengeance DDR5 6000MHz CL30 32GB (16GBx2)",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "RAM",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 850,
+      "value": 561,
+      "aiFit": 550,
+      "priceEfficiency": 500,
+      "powerEfficiency": 850
+    },
+    "nbVector": [
+      100,
+      850,
+      561,
+      550,
+      500,
+      850
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 440.086,
+    "nbMin": 365.178,
+    "weightedScore": 437,
+    "nbBand": "100~499",
+    "summary": "RAM Corsair Vengeance DDR5 6000MHz CL30 32GB (16GBx2) 부품을 속도 중심 N/B 데이터베이스 점수 437점으로 저장했습니다."
+  },
+  "nbWeightedScore": 437,
+  "nbMax": 440.086,
+  "nbMin": 365.178,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Corsair%20Vengeance%20DDR5%206000MHz%20CL30%2032GB%20(16GBx2)%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "The search result shows a price of 1,113,850 KRW for an overseas listing, which is abnormally high for 32GB RAM. I have adjusted the estimatedPriceKrw to a reasonable Korean street price for this specific spec (approx 200k KRW) as per the instructions to use reasonable estimates when observed prices are outliers or thin.",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

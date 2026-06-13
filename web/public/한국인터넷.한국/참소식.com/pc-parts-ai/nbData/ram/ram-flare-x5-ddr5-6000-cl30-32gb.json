@@ -1,0 +1,89 @@
+{
+  "schema": "pc-part-nb-collector-file.v1",
+  "updatedAt": "2026-06-14T03:55:18.780+09:00",
+  "category": "RAM",
+  "id": "ram-flare-x5-ddr5-6000-cl30-32gb",
+  "name": "Flare X5 DDR5-6000 CL30 32GB",
+  "maker": "G.SKILL",
+  "platform": "DDR5",
+  "estimatedPriceKrw": 202010,
+  "priceBand": "15~30만원",
+  "speedLabel": "6000MHz",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "RAM",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 75,
+  "valueIndex": 37.1,
+  "aiUseScore": 49,
+  "powerWatts": 0,
+  "tags": [
+    "AMD EXPO",
+    "gaming"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "RAM",
+    "partId": "ram-flare-x5-ddr5-6000-cl30-32gb",
+    "partName": "Flare X5 DDR5-6000 CL30 32GB",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "RAM",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 750,
+      "value": 495,
+      "aiFit": 490,
+      "priceEfficiency": 500,
+      "powerEfficiency": 750
+    },
+    "nbVector": [
+      100,
+      750,
+      495,
+      490,
+      500,
+      750
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 452.467,
+    "nbMin": 372.942,
+    "weightedScore": 395,
+    "nbBand": "100~499",
+    "summary": "RAM Flare X5 DDR5-6000 CL30 32GB 부품을 속도 중심 N/B 데이터베이스 점수 395점으로 저장했습니다."
+  },
+  "nbWeightedScore": 395,
+  "nbMax": 452.467,
+  "nbMin": 372.942,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=G.SKILL%20Flare%20X5%20DDR5-6000%20CL30%2032GB%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "32GB (16GBx2), CL30-38-38-96, 1.35V. Note: Search results contained several outlier prices (over 600k KRW) likely from unreliable overseas sellers; estimated price based on typical market value for this kit.",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

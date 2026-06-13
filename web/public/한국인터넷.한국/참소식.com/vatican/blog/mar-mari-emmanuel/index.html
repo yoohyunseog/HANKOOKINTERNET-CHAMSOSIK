@@ -1,0 +1,605 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Mar Mari Emmanuel 二쇨탳 - ?쒕뱶??Holy Apostolic Catholic Assyrian Church of the East ?뚯냽 二쇨탳. ?뷀븳怨꾩떆濡앷낵 ?ㅻ땲?섏꽌 ?덉뼵 ?ㅺ탳.">
+  <meta name="keywords" content="Mar Mari Emmanuel, 留?留덈━ ?꾨쭏?꾩뿕, 二쇨탳, ?ㅺ탳, ?뷀븳怨꾩떆濡? ?ㅻ땲?섏꽌, ?덉뼵">
+  <meta name="author" content="李몄냼??com">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Mar Mari Emmanuel 二쇨탳 ?뚭컻">
+  <meta property="og:description" content="Mar Mari Emmanuel 二쇨탳???깃꼍 留먯???媛뺥빐?섎ŉ, ?뱁엳 ?뷀븳怨꾩떆濡앷낵 ?ㅻ땲?섏꽌 媛숈? ?덉뼵?쒕? ?꾨? ?ы쉶? ?곌껐???ㅺ탳?⑸땲??">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/favicon.svg">
+  <title>Mar Mari Emmanuel 二쇨탳 ?뚭컻 | 李몄냼??com</title>
+  <style>
+    :root {
+      --wine: #6f1018;
+      --wine-dark: #4b090f;
+      --gold: #c98b26;
+      --ink: #241c19;
+      --muted: #6e625c;
+      --line: #eadfce;
+      --paper: #fffdf9;
+      --cream: #fbf4e8;
+      --shadow: 0 14px 32px rgba(76, 38, 25, .13);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 15% 5%, rgba(201, 139, 38, .12), transparent 28rem),
+        linear-gradient(180deg, #fffaf1 0%, #fffdf9 42%, #f8f0e4 100%);
+      font-family: "Noto Sans KR", "Malgun Gothic", Arial, sans-serif;
+      line-height: 1.72;
+    }
+
+    a { color: inherit; }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      color: #fff9ec;
+      background: linear-gradient(100deg, var(--wine), var(--wine-dark));
+      box-shadow: 0 2px 14px rgba(59, 4, 9, .24);
+    }
+
+    .nav {
+      width: min(1120px, calc(100% - 36px));
+      min-height: 62px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-family: Georgia, serif;
+      font-size: 25px;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .brand-mark {
+      color: #e8b858;
+      font-size: 34px;
+      line-height: 1;
+    }
+
+    .nav-link {
+      color: rgba(255, 249, 236, .9);
+      font-weight: 800;
+      text-decoration: none;
+    }
+
+    .nav-link:hover { color: #ffd37d; }
+
+    .page {
+      width: min(1040px, calc(100% - 36px));
+      margin: 26px auto 42px;
+    }
+
+    .hero {
+      overflow: hidden;
+      border: 1px solid #ead6b9;
+      border-radius: 18px;
+      background: rgba(255, 253, 249, .88);
+      box-shadow: var(--shadow);
+    }
+
+    .hero-image {
+      display: block;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      background: #261918;
+    }
+
+    .hero-copy {
+      padding: clamp(24px, 4vw, 46px);
+    }
+
+    .eyebrow {
+      margin: 0 0 10px;
+      color: var(--gold);
+      font-size: 13px;
+      font-weight: 900;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      max-width: 820px;
+      margin: 0;
+      color: var(--wine-dark);
+      font-family: Georgia, "Nanum Myeongjo", serif;
+      font-size: clamp(34px, 6vw, 56px);
+      line-height: 1.18;
+      letter-spacing: 0;
+    }
+
+    .lead {
+      max-width: 820px;
+      margin: 18px 0 0;
+      color: #483b35;
+      font-size: 18px;
+    }
+
+    .meta {
+      margin-top: 18px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 800;
+    }
+
+    .meta span {
+      padding: 6px 10px;
+      border: 1px solid #ead7ba;
+      border-radius: 999px;
+      background: #fff8eb;
+    }
+
+    .content {
+      margin-top: 22px;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 300px;
+      gap: 24px;
+      align-items: start;
+    }
+
+    article,
+    aside {
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: rgba(255, 253, 249, .92);
+      box-shadow: 0 8px 20px rgba(76, 38, 25, .08);
+    }
+
+    article { padding: clamp(22px, 4vw, 38px); }
+    aside { padding: 22px; position: sticky; top: 84px; }
+
+    h2 {
+      margin: 34px 0 12px;
+      color: var(--wine);
+      font-size: 24px;
+      line-height: 1.34;
+    }
+
+    h2:first-child { margin-top: 0; }
+
+    h3 {
+      margin: 24px 0 10px;
+      color: var(--wine-dark);
+      font-size: 20px;
+    }
+
+    p { margin: 0 0 16px; }
+
+    .intro-box {
+      margin: 24px 0;
+      padding: 24px;
+      border-left: 5px solid var(--gold);
+      background: linear-gradient(135deg, #fff7e8, #fffdf5);
+      border-radius: 0 12px 12px 0;
+    }
+
+    .intro-box h3 {
+      margin: 0 0 12px;
+      color: var(--wine);
+    }
+
+    .chapter-list {
+      margin: 24px 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .chapter-list li {
+      padding: 16px 20px;
+      border: 1px solid #d9c49f;
+      border-radius: 12px;
+      background: linear-gradient(135deg, #fff9f0, #fffdf8);
+      transition: all 0.3s ease;
+    }
+
+    .chapter-list li:hover {
+      border-color: var(--gold);
+      box-shadow: 0 4px 12px rgba(201, 139, 38, .15);
+    }
+
+    .chapter-list a {
+      display: block;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .chapter-list .chapter-num {
+      display: inline-block;
+      width: 28px;
+      height: 28px;
+      line-height: 28px;
+      text-align: center;
+      margin-right: 12px;
+      border-radius: 50%;
+      background: var(--wine);
+      color: #fff;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .chapter-list .chapter-title {
+      font-weight: 700;
+      color: var(--wine-dark);
+      font-size: 17px;
+    }
+
+    .chapter-list .chapter-desc {
+      margin-top: 6px;
+      color: var(--muted);
+      font-size: 14px;
+      padding-left: 40px;
+    }
+
+    .note {
+      margin: 24px 0;
+      padding: 18px 20px;
+      border-left: 5px solid var(--gold);
+      background: #fff7e8;
+      color: #4e3f38;
+      font-weight: 700;
+    }
+
+    .video-frame {
+      margin: 24px 0 30px;
+      overflow: hidden;
+      border: 1px solid #d9c49f;
+      border-radius: 14px;
+      background: #150d0d;
+      box-shadow: 0 10px 24px rgba(40, 18, 12, .16);
+    }
+
+    .video-frame iframe {
+      display: block;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      border: 0;
+    }
+
+    .poetry-box {
+      margin: 20px 0;
+      padding: 20px 24px;
+      border: 1px solid #d9c49f;
+      border-radius: 12px;
+      background: linear-gradient(135deg, #fff9f0, #fffdf8);
+    }
+
+    .poetry-box h3 {
+      margin: 0 0 12px;
+      color: var(--wine);
+      font-size: 18px;
+      font-family: Georgia, "Nanum Myeongjo", serif;
+    }
+
+    .poetry-box .poetry {
+      margin: 0;
+      color: #4a3f38;
+      font-family: Georgia, "Nanum Myeongjo", serif;
+      font-size: 16px;
+      line-height: 1.8;
+      white-space: pre-wrap;
+    }
+
+    .chapter-links {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .chapter-link-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 12px 14px;
+      border: 1px solid #e4d4bd;
+      border-radius: 10px;
+      background: #fffefa;
+      text-decoration: none;
+      color: var(--ink);
+      transition: all 0.2s ease;
+    }
+
+    .chapter-link-item:hover {
+      border-color: var(--gold);
+      background: #fff8e9;
+      transform: translateX(4px);
+    }
+
+    .chapter-link-item .chapter-num {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: var(--wine);
+      color: #fff;
+      font-size: 14px;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+
+    .chapter-link-item .chapter-text {
+      font-weight: 700;
+      color: var(--wine-dark);
+    }
+
+    .search-word {
+      color: var(--wine);
+      text-decoration: underline;
+      text-decoration-color: var(--gold);
+      text-underline-offset: 2px;
+      cursor: pointer;
+      transition: color 0.2s;
+    }
+
+    .search-word:hover {
+      color: var(--gold);
+    }
+
+    .side-title {
+      margin: 0 0 12px;
+      color: var(--wine-dark);
+      font-size: 18px;
+      font-weight: 900;
+    }
+
+    .side-list {
+      margin: 0;
+      padding-left: 18px;
+      color: #554942;
+      font-size: 14px;
+      line-height: 1.65;
+    }
+
+    .nav-buttons {
+      margin-top: 24px;
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .nav-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 10px 20px;
+      border-radius: 999px;
+      color: #fff9ed;
+      background: linear-gradient(145deg, #85151e, #590a11);
+      font-weight: 900;
+      text-decoration: none;
+      box-shadow: 0 5px 12px rgba(84, 10, 17, .2);
+    }
+
+    .nav-btn:hover { background: #7a1018; }
+
+    .nav-btn.primary {
+      background: linear-gradient(145deg, var(--gold), #a06b1a);
+    }
+
+    footer {
+      width: min(1040px, calc(100% - 36px));
+      margin: 0 auto 36px;
+      color: var(--muted);
+      font-size: 13px;
+      text-align: center;
+    }
+
+    @media (max-width: 820px) {
+      .content { grid-template-columns: 1fr; }
+      aside { position: static; }
+      .nav { align-items: flex-start; flex-direction: column; padding: 12px 0; }
+      .brand { font-size: 22px; }
+    }
+  </style>
+
+
+</head>
+<body>
+  <header class="topbar">
+    <nav class="nav" aria-label="二쇱슂 硫붾돱">
+      <a class="brand" href="../../index.html">
+        <span class="brand-mark">??/span>
+        <span>李몄냼??com</span>
+      </a>
+      <a class="nav-link" href="../../index.html">諛뷀떚移??뚯떇 ??/a>
+    </nav>
+  </header>
+
+  <main class="page">
+    <section class="hero" aria-labelledby="post-title">
+      <img class="hero-image" src="../assets/imgs/qzVdxF_O0TM-thumbnail.jpg" alt="Mar Mari Emmanuel 二쇨탳 ?ㅺ탳">
+      <div class="hero-copy">
+        <p class="eyebrow">Bishop Introduction</p>
+        <h1 id="post-title">Mar Mari Emmanuel 二쇨탳</h1>
+        <p class="lead">
+          ?쒕뱶?덉뿉 ?덈뒗 Holy Apostolic Catholic Assyrian Church of the East ?뚯냽 二쇨탳濡?
+          ?깃꼍 留먯???媛뺥빐?섎ŉ ?뱁엳 ?뷀븳怨꾩떆濡앷낵 ?ㅻ땲?섏꽌 媛숈? ?덉뼵?쒕? ?꾨? ?ы쉶? ?곌껐???ㅺ탳?⑸땲??
+        </p>
+        <div class="meta">
+          <span>2026.06.11</span>
+          <span>二쇨탳 ?뚭컻</span>
+          <span>Mar Mari Emmanuel</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="content">
+      <article>
+        <h2>?뱞 ?뚭컻</h2>
+        
+        <div class="intro-box">
+          <h3>Mar Mari Emmanuel 二쇨탳</h3>
+          <p>
+            <strong><a href="https://www.google.com/search?q=Mar+Mari+Emmanuel+二쇨탳" class="search-word" target="_blank" rel="noopener">Mar Mari Emmanuel 二쇨탳</a></strong>???쒕뱶?덉뿉 ?덈뒗 <em><a href="https://www.google.com/search?q=Holy+Apostolic+Catholic+Assyrian+Church+of+the+East" class="search-word" target="_blank" rel="noopener">Holy Apostolic Catholic Assyrian Church of the East</a></em> ?뚯냽 二쇨탳?낅땲??
+            洹몃뒗 <a href="https://www.google.com/search?q=?깃꼍+留먯?+媛뺥빐" class="search-word" target="_blank" rel="noopener">?깃꼍 留먯?</a>??媛뺥빐?섎ŉ, ?뱁엳 <a href="https://www.google.com/search?q=?뷀븳怨꾩떆濡??덉뼵" class="search-word" target="_blank" rel="noopener">?뷀븳怨꾩떆濡?/a>怨?<a href="https://www.google.com/search?q=?ㅻ땲?섏꽌+?덉뼵" class="search-word" target="_blank" rel="noopener">?ㅻ땲?섏꽌</a> 媛숈? ?덉뼵?쒕? ?꾨? ?ы쉶? ?곌껐???ㅺ탳?섎뒗 寃껋쑝濡????뚮젮???덉뒿?덈떎.
+          </p>
+          <p>
+            洹몄쓽 ?ㅺ탳???⑥닚??誘몃옒???ш굔???덉륫?섎뒗 ??洹몄튂吏 ?딄퀬, ?좎옄?ㅼ뿉寃?<strong><a href="https://www.google.com/search?q=?뚭컻+寃쎌쇅+源⑥뼱?덉쓬" class="search-word" target="_blank" rel="noopener">?뚭컻, 寃쎌쇅, 源⑥뼱 ?덉쓬</a></strong>??珥됯뎄?섎뒗 ??珥덉젏??留욎땅?덈떎.
+          </p>
+          <p>
+            洹몃뒗 <a href="https://www.google.com/search?q=?덉닔+洹몃━?ㅻ룄+?섎굹?? class="search-word" target="_blank" rel="noopener">?덉닔 洹몃━?ㅻ룄</a>瑜??섎굹?섏쑝濡?怨좊갚?섎ŉ, <em>"?щ엺? ?泥대맆 ???덉?留?洹몃━?ㅻ룄??寃곗퐫 ?泥대맆 ???녿떎"</em>??硫붿떆吏瑜?諛섎났?곸쑝濡?媛뺤“?⑸땲??
+          </p>
+        </div>
+
+        <h2>?뱰 ?뚯꽕泥섎읆 ??대궦 湲</h2>
+        <p>
+          ?꾨옒???ㅼ꽢 媛吏 ?댁빞湲곕뒗 Mar Mari Emmanuel 二쇨탳???ㅺ탳瑜??뚯꽕泥섎읆 ??대궦 湲?낅땲??
+          媛??댁빞湲곕뒗 ?쒕줈 ?곌껐?섏뼱 ?덉쑝硫? 二쇨탳???듭떖 硫붿떆吏瑜??닿퀬 ?덉뒿?덈떎.
+        </p>
+
+        <ul class="chapter-list">
+          <li>
+            <a href="01-intro.html">
+              <span class="chapter-num">1</span>
+              <span class="chapter-title">?쒕몢</span>
+              <p class="chapter-desc">??곸쓽 ?깆뒪?ъ슫 ?덈같?? ?щ엺?ㅼ? ?⑥쓣 怨좊Ⅴ硫??먮━???됱븯?? 二쇨탳??泥쒖쿇??媛뺣떒???щ씪? ??옄媛瑜?媛?댁뿉 ?덇퀬, 議곗슜???낆쓣 ?댁뿀??</p>
+            </a>
+          </li>
+          <li>
+            <a href="02-word-beginning.html">
+              <span class="chapter-num">2</span>
+              <span class="chapter-title">留먯????쒖옉</span>
+              <p class="chapter-desc">洹몃뒗 ?쒗렪????넚?섎ŉ ?섎굹?섏쓣 ?믪??? "二쇰떂? 嫄곕）?섏떆?? 二쇰떂? ?뺤쓽瑜??щ옉?섏떆硫? 怨듭쓽瑜??몄슦?⑤떎."</p>
+            </a>
+          </li>
+          <li>
+            <a href="03-fire-water.html">
+              <span class="chapter-num">3</span>
+              <span class="chapter-title">怨꾩떆濡앹쓽 遺덇낵 臾?/span>
+              <p class="chapter-desc">二쇨탳???뷀븳怨꾩떆濡?16?μ쓣 ?쇱낀?? "?섎굹?섏쓽 吏꾨끂????묒씠 ?낆뿉 ?잛븘吏?寃껋씠??" 遺덇낵 臾쇱쓽 鍮꾩쑀瑜??ㅼ뿀??</p>
+            </a>
+          </li>
+          <li>
+            <a href="04-to-youth.html">
+              <span class="chapter-num">4</span>
+              <span class="chapter-title">泥?뀈?ㅼ뿉寃?/span>
+              <p class="chapter-desc">洹몃뒗 泥?뀈?ㅼ쓣 ?ν빐 ?먯쓣 六쀬뿀?? "?몄긽???덊씗瑜?議곕”?섍쾶 ?먯뼱?? ?덊씗瑜?嫄곕??섍쾶 ?먯뼱?? 洹몃윭??洹몃━?ㅻ룄瑜??껊뒗 寃껋? 寃곗퐫 ?덈씫?섏? 留덈씪."</p>
+            </a>
+          </li>
+          <li>
+            <a href="05-conclusion.html">
+              <span class="chapter-num">5</span>
+              <span class="chapter-title">寃곕줎</span>
+              <p class="chapter-desc">留덉?留됱쑝濡?洹몃뒗 怨좊갚?덈떎. "?덉닔???섎굹?섏씠?쒕떎. 洹몃텇 ?몄뿉???ㅻⅨ 湲몄씠 ?녿떎." ?덈같?뱀? 移⑤У ?띿뿉 ?좉꼈??</p>
+            </a>
+          </li>
+        </ul>
+
+        <h2>?렗 ?ㅺ탳 ?곸긽</h2>
+        <p>
+          ?꾨옒 ?곸긽? YouTube??怨듦컻???먮낯 ?ㅺ탳 ?곸긽?낅땲?? Mar Mari Emmanuel 二쇨탳???ㅺ탳瑜?吏곸젒 ?쒖껌?섏떎 ???덉뒿?덈떎.
+        </p>
+
+        <div class="video-frame">
+          <iframe
+            src="https://www.youtube.com/embed/qzVdxF_O0TM"
+            title="Mar Mari Emmanuel Daniel prophecy sermon"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen>
+          </iframe>
+        </div>
+
+        <div class="note">
+          臾듭긽??珥덉젏? "臾댁뒯 ?쇱씠 ?쇱뼱??寃껋씤媛"蹂대떎 "?ㅻ뒛 ?섎뒗 二쇰떂 ?욎뿉???대뼸寃???寃껋씤媛"???덉뒿?덈떎.
+        </div>
+
+        <h2>?솋 留먯? 臾듭긽</h2>
+        <div class="poetry-box">
+          <h3>留먯???湲?/h3>
+          <pre class="poetry">
+?덉닔?섏쓣 ?뚯? ?딄퀬?? 
+?섎굹?섍퍡 ?우쓣 ???녿꽕.  
+留먯??댁떊 洹몃텇???듯빐  
+?ъ뒪?붿냼?듭쓽 湲멤붿씠 ?대━怨?  
+??留덉쓬? 洹?留먯???洹 湲곗슱?몃떎.
+          </pre>
+        </div>
+
+        <div class="poetry-box">
+          <h3>?앹뾾???⑹꽌</h3>
+          <pre class="poetry">
+?뺤젣瑜??낆떊?ш린吏 留먮씪,  
+?쇳쓷 踰덉쓣 ?쇨낢 踰덉씠?쇰룄  
+?앹뾾???⑹꽌?섎씪.  
+?щ엺??留덉쓬? ?쒓퀎媛 ?덉뼱?? 
+洹몃━?ㅻ룄???щ옉? ?앹씠 ?녿떎.
+          </pre>
+        </div>
+
+        <div class="nav-buttons">
+          <a class="nav-btn primary" href="01-intro.html">泥?踰덉㎏ ?댁빞湲??쒖옉?섍린 ??/a>
+          <a class="nav-btn" href="https://www.youtube.com/watch?v=qzVdxF_O0TM" target="_blank" rel="noopener noreferrer">YouTube?먯꽌 ?먮낯 蹂닿린</a>
+        </div>
+      </article>
+
+      <aside aria-label="?ъ뒪???뺣낫">
+        <h2 class="side-title">?뱰 ?꾩껜 ?ъ뒪??/h2>
+        <div class="chapter-links">
+          <a href="01-intro.html" class="chapter-link-item">
+            <span class="chapter-num">1</span>
+            <span class="chapter-text">?쒕몢</span>
+          </a>
+          <a href="02-word-beginning.html" class="chapter-link-item">
+            <span class="chapter-num">2</span>
+            <span class="chapter-text">留먯????쒖옉</span>
+          </a>
+          <a href="03-fire-water.html" class="chapter-link-item">
+            <span class="chapter-num">3</span>
+            <span class="chapter-text">怨꾩떆濡앹쓽 遺덇낵 臾?/span>
+          </a>
+          <a href="04-to-youth.html" class="chapter-link-item">
+            <span class="chapter-num">4</span>
+            <span class="chapter-text">泥?뀈?ㅼ뿉寃?/span>
+          </a>
+          <a href="05-conclusion.html" class="chapter-link-item">
+            <span class="chapter-num">5</span>
+            <span class="chapter-text">寃곕줎</span>
+          </a>
+        </div>
+        
+        <h2 class="side-title" style="margin-top: 24px;">?ъ뒪???뺣낫</h2>
+        <ul class="side-list">
+          <li>遺꾨쪟: 二쇨탳 ?뚭컻</li>
+          <li>二쇱젣: Mar Mari Emmanuel, ?ㅺ탳, ?덉뼵</li>
+          <li>?뚯냽: Holy Apostolic Catholic Assyrian Church of the East</li>
+        </ul>
+        <p class="source">
+          ??湲? Mar Mari Emmanuel 二쇨탳???ㅺ탳瑜?諛뷀깢?쇰줈 ?뚯꽕 ?뺤떇?쇰줈 ?ш뎄?깊븳 寃껋엯?덈떎.
+          ?몃? ?쒗쁽怨??꾩껜 臾몃㎘? ?먮낯 ?곸긽???듯빐 ?뺤씤??二쇱꽭??
+        </p>
+      </aside>
+    </div>
+  </main>
+
+  <footer>
+    李몄냼??com 쨌 留먯?怨?湲곕룄, 洹몃━怨?源⑥뼱 ?덈뒗 誘우쓬???꾪븳 湲곕줉
+  </footer>
+</body>
+</html>

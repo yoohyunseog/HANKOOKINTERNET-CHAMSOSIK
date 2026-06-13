@@ -1,0 +1,89 @@
+{
+  "schema": "pc-part-nb-collector-file.v1",
+  "updatedAt": "2026-06-14T03:55:29.984+09:00",
+  "category": "SSD",
+  "id": "ssd-t705-pcie-5.0-nvme-ssd-4tb",
+  "name": "T705 PCIe 5.0 NVMe SSD 4TB",
+  "maker": "Crucial",
+  "platform": "PCIe 5.0",
+  "estimatedPriceKrw": 850000,
+  "priceBand": "60만원 이상",
+  "speedLabel": "Gen5",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "SSD",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 100,
+  "valueIndex": 11.8,
+  "aiUseScore": 65,
+  "powerWatts": 0,
+  "tags": [
+    "high-end",
+    "workstation"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "SSD",
+    "partId": "ssd-t705-pcie-5.0-nvme-ssd-4tb",
+    "partName": "T705 PCIe 5.0 NVMe SSD 4TB",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "SSD",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 1000,
+      "value": 157,
+      "aiFit": 650,
+      "priceEfficiency": 120,
+      "powerEfficiency": 1000
+    },
+    "nbVector": [
+      100,
+      1000,
+      157,
+      650,
+      120,
+      1000
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 243.842,
+    "nbMin": 363.576,
+    "weightedScore": 399,
+    "nbBand": "100~499",
+    "summary": "SSD T705 PCIe 5.0 NVMe SSD 4TB 부품을 속도 중심 N/B 데이터베이스 점수 399점으로 저장했습니다."
+  },
+  "nbWeightedScore": 399,
+  "nbMax": 243.842,
+  "nbMin": 363.576,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Crucial%20T705%20PCIe%205.0%20NVMe%20SSD%204TB%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "4TB capacity variant of the T705 PCIe 5.0 SSD",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

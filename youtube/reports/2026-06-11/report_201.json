@@ -1,0 +1,226 @@
+{
+  "timestamp": "2026-06-11T16:46:47.969592",
+  "model": "kimi-k2.5:cloud",
+  "keyword_count": 3,
+  "analyze_subtitles": true,
+  "analysis_source": "youtube",
+  "keywords": [
+    {
+      "keyword": "오늘의 주요 뉴스",
+      "is_fixed": true,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "쿠팡 과징금",
+      "is_fixed": false,
+      "views": [
+        4766,
+        369615
+      ],
+      "video_count": 2,
+      "videos": [
+        {
+          "title": "사과 후 밝힌 계획이...쿠팡, 역대 최대 과징금 부과에 밝힌 입장 [지금이뉴스] / YTN",
+          "video_id": "YqDmwPgH3ac",
+          "views": 4766,
+          "upload_date": "2026-06-11",
+          "url": "https://www.youtube.com/watch?v=YqDmwPgH3ac",
+          "subtitle_summary": "The user wants a summary of a YouTube video transcript in Korean, around 500 characters, with 3-5 sentences. The video is about Coupang being fined a record amount for personal data leakage.\nKey points from the transcript:\n1. Coupang received a record fine of 600 billion won for personal data leakage\n2. They apologized for causing concern to customers and the public\n3. They promised to strengthen personal information protection framework and restore customer trust\n4. However, they regret that proactive measures to prevent secondary damage and explanations based on clear facts were not sufficiently reflected\n5. Coupang Partners is a program for creators/bloggers/small business owners to recommend products and earn revenue, using the same model as other global companies, protecting customer data and operating legally\n6. They expect facts to be clarified through legal procedures after receiving the official decision from the Personal Information Protection Commission\nI need to summarize this in 3-5 sentences, around 500 characters, only in Korean.\nDraft:\n쿠팡이 개인정보 유출 사고로 역대 최대인 6천억 원대 과징금을 부과받고 고객과 국민께 사과했습니다. 회사는 개인정보 보호 프레임워크를 강화하고 고객 신뢰 회복을 위해 노력하겠다고 밝혔으나, 2차 피해 방지를 위한 선제적 조치와 명확한 사실 관계 설명이 충분히 반영되지 않은 점에 대해 유감을 표했습니다. 또한 쿠팡 파트너스는 글로벌 기업과 동일한 제휴 모델로 적법하게 운영되며 고객 데이터를 보호하고 있다고 강조했습니다. 쿠팡은 개인정보위에서 공식 의결서를 받은 뒤 법적 절차를 통해 사실 관계가 명확히 규명되기를 기대한다고 덧붙였습니다.\nCharacter count check:\n쿠팡이 개인정보 유출 사고로 역대 최대인 6천억 원대 과징금을 부과받고 고객과 국민께 사과했습니다. (49)\n회사는 개인정보 보호 프레임워크를 강화하고 고객 신뢰 회복을 위해 노력하겠다고 밝혔으나, 2차 피해 방지를 위한 선제적 조치와 명확한 사실 관계 설명이 충분히 반영되지 않은 점에 대해 유감을 표했습니다. (96)\n또한 쿠팡 파트너스는 글로벌 기업과 동일한 제휴 모델로 적법하게 운영되며 고객 데이터를 보호하고 있다고 강조했습니다. (59)\n쿠팡은 개인정보위에서 공식 의결서를 받은 뒤 법적 절차를 통해 사실 관계가 명확히 규명되기를 기대한다고 덧붙였습니다. (56)\nTotal: around 260 characters. This is well under 500 characters, but the user said \"500자 내외\" which usually means around 500, but can be less. However, looking at the content, I should make sure I cover all key points. Let me expand slightly to be closer to 400-500 characters while keeping it concise.\nRevised:\n쿠팡이 개인정보 유출 사고로 역대 최대 규모인 6천억 원대 과징금을 부과받은 것에 대해 고객과 국민께 사과의 뜻을 밝혔습니다. 회사는 개인정보 보호 프레임워크를 더욱 강화하고 새로운 의지로 고객 신뢰를 회복하겠다고 약속하면서도, 2차 피해 방지를 위한 선제적 조치와 명확한 사실 관계에 근거한 설명이 충분히 반영되지 않은 점에 대해 유감을 표했습니다. 또한 쿠팡",
+          "analysis_source": "subtitle",
+          "db_saved": true
+        },
+        {
+          "title": "[On-Site Video] \"624.6 Billion Won\" Jaw-Dropping… Coupang Shocked by 'Unprecedented Fine' / JTBC ...",
+          "video_id": "78s-wcyMRuQ",
+          "views": 369615,
+          "upload_date": "2026-06-11",
+          "url": "https://www.youtube.com/watch?v=78s-wcyMRuQ",
+          "subtitle_summary": "The user wants a summary of a YouTube video subtitle in Korean, around 500 characters, with 3-5 sentences. The content is about Coupang's personal data leak incident and the resulting fine.\nKey points from the subtitle:\n1. Coupang discovered the leak through customer complaints about hacker threats\n2. A former employee who developed alternative authentication features stole the signature key and created forged tokens\n3. Leaked data from April to November: ~33.2 million members' info, ~4.33 million non-members' info\n4. Specifics: names/emails (33M), shipping addresses (22.3M), order details (58,000)\n5. Cause: Basic security management failures, poor key management (plaintext access, no revocation after employee left), inadequate monitoring of abnormal traffic\n6. Failed to notify all affected parties within 72 hours as required by law (delayed notification for 160,000 members, didn't notify non-members)\nI need to summarize this in Korean, around 500 characters, 3-5 sentences, no English.\nDraft:\n쿠팡이 해커 협박 메일 접수 후 유출 사실을 인지했으며, 전직 직원이 대체 인증 서명키를 획득해 위조 토큰을 생성하여 약 3,300만 명의 회원과 433만 명의 비회원 개인정보가 유출되었습니다. 이 사고는 인증키를 평문으로 관리하고 퇴사 직원 접근 권한을 폐기하지 않는 등 기본적인 안전관리 체계 미비와 이상 트래픽 탐지 실패로 발생했습니다. 또한 개인정보보호법상 72시간 내 통지 의무를 위반하여 일부 회원과 비회원 정보주체에게 유출 사실을 알리지 않았습니다. 개인정보위는 쿠팡의 관리 소홀을 지적하며 6246억 원의 과징금을 부과했습니다.\nCharacter count check:\n쿠팡이 해커 협박 메일 접수 후 유출 사실을 인지했으며, 전직 직원이 대체 인증 서명키를 획득해 위조 토큰을 생성하여 약 3,300만 명의 회원과 433만 명의 비회원 개인정보가 유출되었습니다. (96 chars)\n이 사고는 인증키를 평문으로 관리하고 퇴사 직원 접근 권한을 폐기하지 않는 등 기본적인 안전관리 체계 미비와 이상 트래픽 탐지 실패로 발생했습니다. (84 chars)\n또한 개인정보보호법상 72시간 내 통지 의무를 위반하여 일부 회원과 비회원 정보주체에게 유출 사실을 알리지 않았습니다. (63 chars)\n개인정보위는 쿠팡의 관리 소홀을 지적하며 6246억 원의 과징금을 부과했습니다. (43 chars)\nTotal: ~286 characters. This is well under 500, but the user said \"500자 내외\" which usually means around 500, but can be less. However, 3-5 sentences is the constraint. I have 4 sentences here. Let me expand slightly to be closer to 500 while keeping it concise.\nRevised:\n쿠팡은 해커 협박 메일 접수 후 유출 사실을 인지했으며, 내부 개발자가 대체 인증 서명키를 획득해 위조 토큰을 생성하여 해운정보 수정, 배송지 관리 등의 페이지에서 약 3,300만 명의 회원과 433만 명의 비회원 개인정보가 유출되었습니다. 이 사고는 인증키를 평문으로 관리하고 퇴사한 전직 직원의 접근 권한을 즉각 폐기하지 않는 등 기본적인 안전관리 체계 미비와 이상 트래픽 탐지 및 대응 실패로 발생했습니다. 또한 개인정보보호법상 72시간 내 통지 의무를 위",
+          "analysis_source": "subtitle",
+          "db_saved": true
+        }
+      ],
+      "max": 2.7702,
+      "min": 2.6031,
+      "nb_score": 1.0642,
+      "avg_views": 187190.5,
+      "total_views": 374381
+    },
+    {
+      "keyword": "카카오페이 고객정보 유출",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "정년연장 법안 논란",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "선거범죄 리포트",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "소방관 음주강요 의혹",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "송파구 투표지 사태",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "AI 공급망 거점",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "LNG선 호르무즈 해협",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "레미콘 휴업 합의안 부결",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "석유화학 3분기 실적 전망",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "KDDX 사업 경쟁",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "SPC 동원 HDC 매집",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "스페이스X 사모 청약",
+      "is_fixed": false,
+      "views": [
+        1859
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "아주IB투자 주가전망, 스페이스X 상장 임박! 공모 청약 초대박 예고?! 후반영 시작된 전고점 돌파 시나리오, 필수 시청!",
+          "video_id": "YZqe6ZuOfns",
+          "views": 1859,
+          "upload_date": "2026-06-11",
+          "url": "https://www.youtube.com/watch?v=YZqe6ZuOfns",
+          "subtitle_summary": "The user wants me to summarize a YouTube video transcript about a stock called \"아주IB투자\" (Aju IB Investment) in Korean, within approximately 500 characters.\nKey points from the transcript:\n1. 아주IB투자 is currently at a bottom level and had been trying to bounce back but fell due to market conditions\n2. It fell significantly from its high, so a rebound is expected\n3. Important factor: SpaceX listing is imminent - 아주IB투자 invested in SpaceX shares\n4. SpaceX IPO is expected to be very popular with only 5% public offering ratio, which could cause heated competition\n5. After listing, if SpaceX continues to rise, the share value of 아주IB투자 could increase significantly, leading to a second wave/rally\n6. Today, pension funds and foreigners bought significant amounts (foreigners bought 3.4 million shares)\n7. High volatility expected, need to watch closely\n8. The video provides specific buy/sell prices and target prices\nI need to summarize this in 3-5 sentences, around 500 characters, in Korean only.\nDraft:\n아주IB투자는 현재 바닥권에서 지지받으며 반등을 시도하고 있으나, 시장 하락으로 함께 조정받고 있습니다. 이 종목의 핵심 모멘텀은 스페이스X의 상장으로, 해당 지분 가치가 크게 평가받을 전망입니다. 스페이스X 공모가 매우 인기가 높고 물량이 5%에 불과해 청약 경쟁이 치열할 것으로 예상되며, 상장 후 주가가 계속 상승하면 아주IB투자의 지분 가치도 급등하여 2차 폭등이 나올 수 있습니다. 오늘 연기금과 외국인의 대량 매수가 들어왔고, 향후 변동성이 클 것으로 예상되어 세력의 평단가와 구체적인 매수·매도가를 확인하며 대응할 필요가 있습니다.\nCharacter count check:\n아주IB투자는 현재 바닥권에서 지지받으며 반등을 시도하고 있으나, 시장 하락으로 함께 조정받고 있습니다. (48)\n이 종목의 핵심 모멘텀은 스페이스X의 상장으로, 해당 지분 가치가 크게 평가받을 전망입니다. (47)\n스페이스X 공모가 매우 인기가 높고 물량이 5%에 불과해 청약 경쟁이 치열할 것으로 예상되며, 상장 후 주가가 계속 상승하면 아주IB투자의 지분 가치도 급등하여 2차 폭등이 나올 수 있습니다. (96)\n오늘 연기금과 외국인의 대량 매수가 들어왔고, 향후 변동성이 클 것으로 예상되어 세력의 평단가와 구체적인 매수·매도가를 확인하며 대응할 필요가 있습니다. (78)\nTotal: 269 characters. This is well under 500 characters, but the user said \"500자 내외\" which usually means around 500, but 3-5 sentences. Let me expand slightly to be closer to 400-500 while keeping it concise.\nRevised:\n아주IB투자는 현재 바닥권에서 120일 이동평균선 지지를 받으며 반등을 준비하고 있으나, 전반적인 시장 하락으로 함께 조정받고 있습니다. 이 종목의 핵심 모멘텀은 스페이스X의 임박한 상장으로, 보유 지분 가치가 크게 재평가될 전망입니다. 스페이스X 공모가 극도로 인기가 높고 공모 물량이 5%에 불과해 청약 열기가 후끈 달아오를 것으로 예상되며, 상장 후 주가가 지속 상승하면 아주IB투자의 지분 가치도 급등하여 2차 �",
+          "analysis_source": "subtitle",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "삼성전자 레버리지 ETF",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    }
+  ]
+}

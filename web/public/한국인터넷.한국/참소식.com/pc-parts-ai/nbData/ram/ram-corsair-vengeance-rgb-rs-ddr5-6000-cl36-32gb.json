@@ -1,0 +1,89 @@
+{
+  "schema": "pc-part-nb-collector-file.v1",
+  "updatedAt": "2026-06-14T03:55:18.348+09:00",
+  "category": "RAM",
+  "id": "ram-corsair-vengeance-rgb-rs-ddr5-6000-cl36-32gb",
+  "name": "Corsair Vengeance RGB RS DDR5-6000 CL36 32GB",
+  "maker": "Corsair",
+  "platform": "DDR5",
+  "estimatedPriceKrw": 160000,
+  "priceBand": "15~30만원",
+  "speedLabel": "6000MHz",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "RAM",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 60,
+  "valueIndex": 37.5,
+  "aiUseScore": 39,
+  "powerWatts": 0,
+  "tags": [
+    "gaming",
+    "rgb"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "RAM",
+    "partId": "ram-corsair-vengeance-rgb-rs-ddr5-6000-cl36-32gb",
+    "partName": "Corsair Vengeance RGB RS DDR5-6000 CL36 32GB",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "RAM",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 600,
+      "value": 500,
+      "aiFit": 390,
+      "priceEfficiency": 630,
+      "powerEfficiency": 600
+    },
+    "nbVector": [
+      100,
+      600,
+      500,
+      390,
+      630,
+      600
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 523.217,
+    "nbMin": 375.005,
+    "weightedScore": 357,
+    "nbBand": "100~499",
+    "summary": "RAM Corsair Vengeance RGB RS DDR5-6000 CL36 32GB 부품을 속도 중심 N/B 데이터베이스 점수 357점으로 저장했습니다."
+  },
+  "nbWeightedScore": 357,
+  "nbMax": 523.217,
+  "nbMin": 375.005,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Corsair%20Vengeance%20RGB%20DDR5%206000MHz%20CL36%2032GB%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "CL36-44-44-96, 1.35V, 32GB (16Gx2) package",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

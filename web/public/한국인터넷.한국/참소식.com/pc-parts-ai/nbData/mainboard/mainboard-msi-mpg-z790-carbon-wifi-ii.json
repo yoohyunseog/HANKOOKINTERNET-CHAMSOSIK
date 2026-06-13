@@ -1,0 +1,90 @@
+{
+  "schema": "pc-part-nb-collector-file.v1",
+  "updatedAt": "2026-06-14T03:55:16.169+09:00",
+  "category": "Mainboard",
+  "id": "mainboard-msi-mpg-z790-carbon-wifi-ii",
+  "name": "MSI MPG Z790 CARBON WIFI II",
+  "maker": "MSI",
+  "platform": "Intel LGA 1700",
+  "estimatedPriceKrw": 585320,
+  "priceBand": "30~60만원",
+  "speedLabel": "DDR5",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "Mainboard",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 90,
+  "valueIndex": 15.4,
+  "aiUseScore": 59,
+  "powerWatts": 0,
+  "tags": [
+    "gaming",
+    "Z790",
+    "WiFi"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "Mainboard",
+    "partId": "mainboard-msi-mpg-z790-carbon-wifi-ii",
+    "partName": "MSI MPG Z790 CARBON WIFI II",
+    "speed": {
+      "score": 100,
+      "weight": 0.32,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "Mainboard",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 900,
+      "value": 205,
+      "aiFit": 590,
+      "priceEfficiency": 170,
+      "powerEfficiency": 900
+    },
+    "nbVector": [
+      100,
+      900,
+      205,
+      590,
+      170,
+      900
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 265.278,
+    "nbMin": 373.511,
+    "weightedScore": 367,
+    "nbBand": "100~499",
+    "summary": "Mainboard MSI MPG Z790 CARBON WIFI II 부품을 속도 중심 N/B 데이터베이스 점수 367점으로 저장했습니다."
+  },
+  "nbWeightedScore": 367,
+  "nbMax": 265.278,
+  "nbMin": 373.511,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=MSI%20MPG%20Z790%20CARBON%20WIFI%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "Identified as the 'II' version from search results. Price based on the most reasonable domestic-style listing found in the text.",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

@@ -3,7 +3,9 @@
 <head>
   <script src="/domain-check.js"></script>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicon.svg">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ICNN 인터넷 역사 - 참소식.com</title>
   <link rel="stylesheet" href="assets/bootstrap-icons/1.11.0/font/bootstrap-icons.min.css">
   <style>
@@ -1090,6 +1092,46 @@
     }
 
     /* 특이점 노래 스타일 */
+    .timeline-gif-gallery {
+      margin-top: 16px;
+      padding-top: 16px;
+      border-top: 1px solid rgba(124, 58, 237, 0.18);
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .timeline-gif-card {
+      overflow: hidden;
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.92);
+      border: 1px solid rgba(124, 58, 237, 0.18);
+      box-shadow: 0 8px 18px rgba(31, 41, 55, 0.1);
+    }
+
+    .timeline-gif-card img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 16 / 10;
+      object-fit: cover;
+      background: #111827;
+    }
+
+    .timeline-gif-card span {
+      display: block;
+      padding: 9px 10px;
+      color: #312e81;
+      font-size: 0.82rem;
+      font-weight: 800;
+      text-align: center;
+    }
+
+    @media (max-width: 640px) {
+      .timeline-gif-gallery {
+        grid-template-columns: 1fr;
+      }
+    }
+
     .singularity-song {
       margin-top: 20px;
       padding: 16px;
@@ -1673,6 +1715,89 @@
       background: var(--green-800);
     }
 
+    .ending-credit {
+      max-width: 760px;
+      margin: 34px auto 0;
+      padding: 28px 18px;
+      text-align: center;
+      border-top: 1px solid rgba(13, 94, 69, 0.18);
+      border-bottom: 1px solid rgba(13, 94, 69, 0.18);
+    }
+
+    .ending-credit h2 {
+      margin: 0 0 16px;
+      color: var(--green-800);
+      font-size: clamp(1.35rem, 2vw, 1.8rem);
+      font-weight: 900;
+    }
+
+    .ending-credit-frame {
+      position: relative;
+      width: min(820px, 88vw);
+      margin: 0 auto;
+      overflow: hidden;
+      border-radius: 8px;
+      box-shadow: 0 18px 42px rgba(13, 94, 69, 0.22);
+      background: #0f172a;
+    }
+
+    .ending-credit-frame iframe,
+    .ending-credit-frame img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      border: 0;
+      object-fit: cover;
+    }
+
+    .ending-credit-gallery {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+      padding: 14px;
+    }
+
+    .ending-credit-gallery figure {
+      margin: 0;
+      overflow: hidden;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    .ending-credit-gallery img {
+      aspect-ratio: 16 / 10;
+    }
+
+    .ending-credit-gallery span {
+      display: block;
+      padding: 9px 10px;
+      color: #ffffff;
+      font-size: 0.86rem;
+      font-weight: 800;
+      text-align: center;
+    }
+
+    .ending-credit-link {
+      margin: 0 14px 14px;
+      display: block;
+      padding: 10px 12px;
+      border-radius: 8px;
+      color: #ffffff;
+      background: rgba(15, 23, 42, 0.82);
+      font-size: 0.82rem;
+      font-weight: 800;
+      line-height: 1.35;
+      text-align: center;
+      text-decoration: none;
+      overflow-wrap: anywhere;
+    }
+
+    @media (max-width: 640px) {
+      .ending-credit-gallery {
+        grid-template-columns: 1fr;
+      }
+    }
+
     /* 도메인 정보 패널 스타일 */
     .domain-info-panel {
       margin-bottom: 30px;
@@ -1923,6 +2048,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+      flex-wrap: wrap;
       gap: 20px;
       font-size: 0.9rem;
     }
@@ -1930,6 +2056,33 @@
     .footer-inner strong {
       color: #fff;
       font-size: 1rem;
+    }
+
+    .footer-message {
+      flex-basis: 100%;
+      padding: 0 0 16px;
+      color: #ffffff;
+      font-size: 1rem;
+      font-weight: 800;
+      line-height: 1.6;
+      text-align: center;
+      word-break: keep-all;
+    }
+
+    .final-declaration {
+      width: min(1120px, calc(100% - 40px));
+      margin: 28px auto 34px;
+      padding: 22px 24px;
+      border: 2px solid rgba(255, 255, 255, 0.5);
+      border-radius: 14px;
+      color: #ffffff;
+      background: linear-gradient(135deg, #0f172a, #047857);
+      box-shadow: 0 16px 34px rgba(5, 150, 105, 0.25);
+      font-size: clamp(1.15rem, 2vw, 1.7rem);
+      font-weight: 900;
+      line-height: 1.55;
+      text-align: center;
+      word-break: keep-all;
     }
 
     @media (max-width: 860px) {
@@ -3499,13 +3652,137 @@
       <div class="world-symbol-section">
         <h3 class="world-symbol-title"><i class="bi bi-lightning-charge"></i>상징 의미</h3>
         <div class="world-symbol-content">
-          <div class="world-symbol-header">국제 원정대 유현석</div>
+          <div class="world-symbol-header">반지의 제왕 국제 원정대 <span style="background: #059669; color: white; padding: 4px 12px; border-radius: 16px; font-size: 12px; margin-left: 8px;">총 21개국</span></div>
+          <div class="world-server-groups" style="margin: 20px 0;">
+            <!-- 북미 서버 - 첫 번째 -->
+            <div class="server-group" style="margin-bottom: 15px; background: rgba(59, 130, 246, 0.1); padding: 12px; border-radius: 8px; border-left: 4px solid #3b82f6;">
+              <div style="font-weight: bold; color: #1d4ed8; margin-bottom: 8px; font-size: 14px;">🌎 북미 서버 <span style="background: #3b82f6; color: white; padding: 2px 8px; border-radius: 12px; font-size: 11px; margin-left: 6px;">🚀 최초 오픈</span></div>
+              <div style="display: flex; flex-wrap: wrap; gap: 10px; align-items: center;">
+                <span style="display: inline-flex; align-items: center; gap: 4px;" title="북미"><img src="https://flagcdn.com/24x18/us.png" alt="북미" width="24" height="18" style="border-radius: 2px;"><span style="font-size: 11px; color: #666;">2013~2025</span></span>
+              </div>
+            </div>
+            <!-- 유럽 서버 - 두 번째 -->
+            <div class="server-group" style="margin-bottom: 15px; background: rgba(5, 150, 105, 0.08); padding: 12px; border-radius: 8px; border-left: 4px solid #059669;">
+              <div style="font-weight: bold; color: #047857; margin-bottom: 8px; font-size: 14px;">🌍 유럽 서버 <span style="background: #059669; color: white; padding: 2px 8px; border-radius: 12px; font-size: 11px; margin-left: 6px;">6개국 포함</span></div>
+              <div style="display: flex; flex-wrap: wrap; gap: 10px; align-items: center;">
+                <span style="display: inline-flex; align-items: center; gap: 4px;" title="영국"><img src="https://flagcdn.com/24x18/gb.png" alt="영국" width="24" height="18" style="border-radius: 2px;"><span style="font-size: 11px; color: #666;">2013~2025</span></span>
+                <span style="display: inline-flex; align-items: center; gap: 4px;" title="독일"><img src="https://flagcdn.com/24x18/de.png" alt="독일" width="24" height="18" style="border-radius: 2px;"><span style="font-size: 11px; color: #666;">2013~2025</span></span>
+                <span style="display: inline-flex; align-items: center; gap: 4px;" title="프랑스"><img src="https://flagcdn.com/24x18/fr.png" alt="프랑스" width="24" height="18" style="border-radius: 2px;"><span style="font-size: 11px; color: #666;">2013~2025</span></span>
+                <span style="display: inline-flex; align-items: center; gap: 4px;" title="스페인"><img src="https://flagcdn.com/24x18/es.png" alt="스페인" width="24" height="18" style="border-radius: 2px;"><span style="font-size: 11px; color: #666;">2013~2025</span></span>
+                <span style="display: inline-flex; align-items: center; gap: 4px;" title="이탈리아"><img src="https://flagcdn.com/24x18/it.png" alt="이탈리아" width="24" height="18" style="border-radius: 2px;"><span style="font-size: 11px; color: #666;">2013~2025</span></span>
+                <span style="display: inline-flex; align-items: center; gap: 4px;" title="폴란드"><img src="https://flagcdn.com/24x18/pl.png" alt="폴란드" width="24" height="18" style="border-radius: 2px;"><span style="font-size: 11px; color: #666;">2013~2025</span></span>
+              </div>
+            </div>
+            <!-- 중국 서버 - 마지막 -->
+            <div class="server-group" style="margin-bottom: 15px; background: rgba(220, 38, 38, 0.08); padding: 12px; border-radius: 8px; border-left: 4px solid #dc2626;">
+              <div style="font-weight: bold; color: #dc2626; margin-bottom: 8px; font-size: 14px;">🌏 중국 서버 <span style="background: #dc2626; color: white; padding: 2px 8px; border-radius: 12px; font-size: 11px; margin-left: 6px;">마지막 등장</span></div>
+              <div style="display: flex; flex-wrap: wrap; gap: 10px; align-items: center;">
+                <span style="display: inline-flex; align-items: center; gap: 4px;" title="중국"><img src="https://flagcdn.com/24x18/cn.png" alt="중국" width="24" height="18" style="border-radius: 2px;"><span style="font-size: 11px; color: #666;">2013~2025</span></span>
+              </div>
+            </div>
+            <!-- 아시아 서버 -->
+            <div class="server-group" style="margin-bottom: 15px;">
+              <div style="font-weight: bold; color: #059669; margin-bottom: 8px; font-size: 14px;">🌏 아시아 서버 <span style="background: #e6f7f1; color: #047857; padding: 2px 6px; border-radius: 10px; font-size: 11px; margin-left: 4px;">1개국</span></div>
+              <div style="display: flex; flex-wrap: wrap; gap: 10px; align-items: center;">
+                <span style="display: inline-flex; align-items: center; gap: 4px;" title="한국"><img src="https://flagcdn.com/24x18/kr.png" alt="한국" width="24" height="18" style="border-radius: 2px;"><span style="font-size: 11px; color: #666;">2012~2025</span></span>
+              </div>
+            </div>
+            <!-- 대만/홍콩/마카오 서버 -->
+            <div class="server-group" style="margin-bottom: 15px;">
+              <div style="font-weight: bold; color: #059669; margin-bottom: 8px; font-size: 14px;">🌏 대만/홍콩/마카오 서버 <span style="background: #e6f7f1; color: #047857; padding: 2px 6px; border-radius: 10px; font-size: 11px; margin-left: 4px;">1개국</span></div>
+              <div style="display: flex; flex-wrap: wrap; gap: 10px; align-items: center;">
+                <span style="display: inline-flex; align-items: center; gap: 4px;" title="대만"><img src="https://flagcdn.com/24x18/tw.png" alt="대만" width="24" height="18" style="border-radius: 2px;"><span style="font-size: 11px; color: #666;">2015~2025</span></span>
+              </div>
+            </div>
+            <!-- 일본 서버 -->
+            <div class="server-group" style="margin-bottom: 15px;">
+              <div style="font-weight: bold; color: #059669; margin-bottom: 8px; font-size: 14px;">🌏 일본 서버 <span style="background: #e6f7f1; color: #047857; padding: 2px 6px; border-radius: 10px; font-size: 11px; margin-left: 4px;">1개국</span></div>
+              <div style="display: flex; flex-wrap: wrap; gap: 10px; align-items: center;">
+                <span style="display: inline-flex; align-items: center; gap: 4px;" title="일본"><img src="https://flagcdn.com/24x18/jp.png" alt="일본" width="24" height="18" style="border-radius: 2px;"><span style="font-size: 11px; color: #666;">2016~2025</span></span>
+              </div>
+            </div>
+            <!-- 브라질 서버 -->
+            <div class="server-group" style="margin-bottom: 15px;">
+              <div style="font-weight: bold; color: #059669; margin-bottom: 8px; font-size: 14px;">🌎 브라질 서버 <span style="background: #e6f7f1; color: #047857; padding: 2px 6px; border-radius: 10px; font-size: 11px; margin-left: 4px;">1개국</span></div>
+              <div style="display: flex; flex-wrap: wrap; gap: 10px; align-items: center;">
+                <span style="display: inline-flex; align-items: center; gap: 4px;" title="브라질"><img src="https://flagcdn.com/24x18/br.png" alt="브라질" width="24" height="18" style="border-radius: 2px;"><span style="font-size: 11px; color: #666;">2012~2025</span></span>
+              </div>
+            </div>
+            <!-- 터키 서버 -->
+            <div class="server-group" style="margin-bottom: 15px;">
+              <div style="font-weight: bold; color: #059669; margin-bottom: 8px; font-size: 14px;">🌍 터키 서버 <span style="background: #e6f7f1; color: #047857; padding: 2px 6px; border-radius: 10px; font-size: 11px; margin-left: 4px;">1개국</span></div>
+              <div style="display: flex; flex-wrap: wrap; gap: 10px; align-items: center;">
+                <span style="display: inline-flex; align-items: center; gap: 4px;" title="터키"><img src="https://flagcdn.com/24x18/tr.png" alt="터키" width="24" height="18" style="border-radius: 2px;"><span style="font-size: 11px; color: #666;">2013~2025</span></span>
+              </div>
+            </div>
+            <!-- 동남아시아 서버 -->
+            <div class="server-group" style="margin-bottom: 15px; background: rgba(5, 150, 105, 0.08); padding: 12px; border-radius: 8px; border-left: 4px solid #059669;">
+              <div style="font-weight: bold; color: #047857; margin-bottom: 8px; font-size: 14px;">🌏 동남아시아 서버 <span style="background: #059669; color: white; padding: 2px 8px; border-radius: 12px; font-size: 11px; margin-left: 6px;">4개국 포함</span></div>
+              <div style="display: flex; flex-wrap: wrap; gap: 10px; align-items: center;">
+                <span style="display: inline-flex; align-items: center; gap: 4px;" title="베트남"><img src="https://flagcdn.com/24x18/vn.png" alt="베트남" width="24" height="18" style="border-radius: 2px;"><span style="font-size: 11px; color: #666;">2018~2025</span></span>
+                <span style="display: inline-flex; align-items: center; gap: 4px;" title="태국"><img src="https://flagcdn.com/24x18/th.png" alt="태국" width="24" height="18" style="border-radius: 2px;"><span style="font-size: 11px; color: #666;">2012~2025</span></span>
+                <span style="display: inline-flex; align-items: center; gap: 4px;" title="필리핀"><img src="https://flagcdn.com/24x18/ph.png" alt="필리핀" width="24" height="18" style="border-radius: 2px;"><span style="font-size: 11px; color: #666;">2012~2025</span></span>
+                <span style="display: inline-flex; align-items: center; gap: 4px;" title="인도네시아"><img src="https://flagcdn.com/24x18/id.png" alt="인도네시아" width="24" height="18" style="border-radius: 2px;"><span style="font-size: 11px; color: #666;">2013~2025</span></span>
+              </div>
+            </div>
+            <!-- 호주/뉴질랜드 서버 -->
+            <div class="server-group" style="margin-bottom: 15px;">
+              <div style="font-weight: bold; color: #059669; margin-bottom: 8px; font-size: 14px;">🌏 호주/뉴질랜드 서버 <span style="background: #e6f7f1; color: #047857; padding: 2px 6px; border-radius: 10px; font-size: 11px; margin-left: 4px;">1개국</span></div>
+              <div style="display: flex; flex-wrap: wrap; gap: 10px; align-items: center;">
+                <span style="display: inline-flex; align-items: center; gap: 4px;" title="호주"><img src="https://flagcdn.com/24x18/au.png" alt="호주" width="24" height="18" style="border-radius: 2px;"><span style="font-size: 11px; color: #666;">2015~2025</span></span>
+              </div>
+            </div>
+            <!-- 라틴아메리카 서버 -->
+            <div class="server-group" style="margin-bottom: 15px;">
+              <div style="font-weight: bold; color: #059669; margin-bottom: 8px; font-size: 14px;">🌎 라틴아메리카 서버 <span style="background: #e6f7f1; color: #047857; padding: 2px 6px; border-radius: 10px; font-size: 11px; margin-left: 4px;">1개국</span></div>
+              <div style="display: flex; flex-wrap: wrap; gap: 10px; align-items: center;">
+                <span style="display: inline-flex; align-items: center; gap: 4px;" title="멕시코"><img src="https://flagcdn.com/24x18/mx.png" alt="멕시코" width="24" height="18" style="border-radius: 2px;"><span style="font-size: 11px; color: #666;">2015~2025</span></span>
+              </div>
+            </div>
+            <!-- 러시아 서버 -->
+            <div class="server-group" style="margin-bottom: 15px;">
+              <div style="font-weight: bold; color: #059669; margin-bottom: 8px; font-size: 14px;">🌍 러시아 서버 <span style="background: #e6f7f1; color: #047857; padding: 2px 6px; border-radius: 10px; font-size: 11px; margin-left: 4px;">1개국</span></div>
+              <div style="display: flex; flex-wrap: wrap; gap: 10px; align-items: center;">
+                <span style="display: inline-flex; align-items: center; gap: 4px;" title="러시아"><img src="https://flagcdn.com/24x18/ru.png" alt="러시아" width="24" height="18" style="border-radius: 2px;"><span style="font-size: 11px; color: #666;">2016~2025</span></span>
+              </div>
+            </div>
+            <!-- 중동 서버 -->
+            <div class="server-group" style="margin-bottom: 15px;">
+              <div style="font-weight: bold; color: #059669; margin-bottom: 8px; font-size: 14px;">🌍 중동 서버 <span style="background: #e6f7f1; color: #047857; padding: 2px 6px; border-radius: 10px; font-size: 11px; margin-left: 4px;">1개국</span></div>
+              <div style="display: flex; flex-wrap: wrap; gap: 10px; align-items: center;">
+                <span style="display: inline-flex; align-items: center; gap: 4px;" title="사우디아라비아"><img src="https://flagcdn.com/24x18/sa.png" alt="사우디아라비아" width="24" height="18" style="border-radius: 2px;"><span style="font-size: 11px; color: #666;">2023~2025</span></span>
+              </div>
+            </div>
+          </div>
           <p class="world-symbol-text">
-            아시아 서버를 출발점으로 삼아<br>
-            북미 서버와 유럽 서버의 메이저 리그를 석권하고<br>
-            <strong class="world-highlight">전 서버 메이저 리그 그랜드 슬램을 완성한 자</strong>
+            북미 서버 클로즈 베타 아시아, 중미, 남미, 유럽 서버의 메이저 리그를 석권하고<br>
+            <strong class="world-highlight">중국을 포함한 총 13개 서버 메이저 리그 그랜드 슬램을 달성</strong>
           </p>
-          <div class="world-symbol-footer">한국인터넷.한국</div>
+          <div class="world-video-section" style="margin: 20px 0; text-align: center;">
+            <video id="world-video" muted style="max-width: 100%; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.3);">
+              <source src="kling_4s_reversed.mp4" type="video/mp4">
+              브라우저가 비디오를 지원하지 않습니다.
+            </video>
+            <audio id="world-audio" preload="auto">
+              <source src="edm_remix_fadein.wav" type="audio/wav">
+            </audio>
+            <!-- 국기 애니메이션 -->
+            <div id="flags-animation-container" style="margin-top: 15px; overflow: hidden; background: linear-gradient(135deg, rgba(5, 150, 105, 0.1), rgba(4, 120, 87, 0.1)); border-radius: 12px; padding: 10px 0; display: none;">
+              <div id="flags-scroll" style="display: flex; gap: 20px; animation: none;">
+                <!-- 국기들이 JavaScript로 동적 생성됨 -->
+              </div>
+            </div>
+            <div style="margin-top: 12px;">
+              <button id="audio-play-btn" style="background: linear-gradient(135deg, #059669, #047857); color: white; border: none; padding: 12px 24px; border-radius: 25px; font-size: 14px; font-weight: 600; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; box-shadow: 0 4px 15px rgba(5, 150, 105, 0.3); transition: all 0.3s ease;">
+                <span id="audio-icon">🎵</span>
+                <span id="audio-text">배경음악 재생</span>
+              </button>
+            </div>
+          </div>
+          <div class="world-symbol-footer">한국인터넷.한국 한글 도메인 유현석 및 일본 원정대
+            <p>그런 적은 없지만, 숙소와 식사는 모두 제공해 주었다.</p>
+            <p>다만 단원 1명의 자격을 박탈한 일이 있었으며, 그 결정을 내린 단장 본인조차 당시에는 그 사실을 정확히 인지하지 못했다.</p>
+          </div>
         </div>
         <div class="world-server-flow">
           <div class="world-server-node asia">
@@ -3520,6 +3797,14 @@
             <div class="server-icon"><i class="bi bi-globe-americas"></i></div>
             <div class="server-label">북미 서버</div>
             <div class="server-desc">메이저 리그 석권</div>
+          </div>
+          <div class="world-server-arrow">
+            <i class="bi bi-arrow-right"></i>
+          </div>
+          <div class="world-server-node open">
+            <div class="server-icon"><i class="bi bi-globe2"></i></div>
+            <div class="server-label">오픈 서버</div>
+            <div class="server-desc">북미 서버 &lt;&gt; 국제 원정대</div>
           </div>
           <div class="world-server-arrow">
             <i class="bi bi-arrow-right"></i>
@@ -3546,9 +3831,27 @@
       </div>
     </section>
 
+    <section class="ending-credit" aria-labelledby="ending-credit-title">
+      <h2 id="ending-credit-title">엔딩 크래딧</h2>
+      <div class="ending-credit-frame">
+        <div class="ending-credit-gallery" aria-label="e스포츠 엔딩 크레딧 GIF">
+          <figure>
+            <img src="assets/gifs/esports-legend.gif" alt="e스포츠 전설 GIF" loading="lazy">
+            <span>e스포츠 전설 장면</span>
+          </figure>
+          <figure>
+            <img src="assets/gifs/esports-highlight.gif" alt="e스포츠 하이라이트 GIF" loading="lazy">
+            <span>e스포츠 하이라이트</span>
+          </figure>
+        </div>
+        <a class="ending-credit-link" href="https://www.youtube.com/shorts/FcOfUAuBg4s" target="_blank" rel="noopener">https://www.youtube.com/shorts/FcOfUAuBg4s</a>
+      </div>
+    </section>
+
     <div class="home-link">
       <a href="index.html"><i class="bi bi-house-door"></i>메인 페이지로 돌아가기</a>
     </div>
+    <p class="final-declaration">미국의 리더쉽과 미국의 승리를 의심해서는 안된다. 한국 원정대 단장</p>
   </main>
 
   <footer class="site-footer">
@@ -3556,7 +3859,138 @@
       <strong>ICNN 인터넷 역사</strong>
       <span>© 2024 ICNN | Internet Communication News Network. All rights reserved.</span>
       <span>icnn@example.com</span>
+      <p class="footer-message">미국의 리더쉽과 미국의 승리를 의심해서는 안된다. 한국 원정대 단장</p>
     </div>
   </footer>
+
+  <script>
+    // 국기 데이터 (북미 → 유럽 → 중국 순서)
+    const flagsData = [
+      { code: 'us', name: '북미', year: '2013~2025' },
+      { code: 'gb', name: '영국', year: '2013~2025' },
+      { code: 'de', name: '독일', year: '2013~2025' },
+      { code: 'fr', name: '프랑스', year: '2013~2025' },
+      { code: 'es', name: '스페인', year: '2013~2025' },
+      { code: 'it', name: '이탈리아', year: '2013~2025' },
+      { code: 'pl', name: '폴란드', year: '2013~2025' },
+      { code: 'cn', name: '중국', year: '2013~2025', highlight: true },
+      { code: 'kr', name: '한국', year: '2012~2025' },
+      { code: 'tw', name: '대만', year: '2015~2025' },
+      { code: 'jp', name: '일본', year: '2016~2025' },
+      { code: 'br', name: '브라질', year: '2012~2025' },
+      { code: 'tr', name: '터키', year: '2013~2025' },
+      { code: 'vn', name: '베트남', year: '2018~2025' },
+      { code: 'th', name: '태국', year: '2012~2025' },
+      { code: 'ph', name: '필리핀', year: '2012~2025' },
+      { code: 'id', name: '인도네시아', year: '2013~2025' },
+      { code: 'au', name: '호주', year: '2015~2025' },
+      { code: 'mx', name: '멕시코', year: '2015~2025' },
+      { code: 'ru', name: '러시아', year: '2016~2025' },
+      { code: 'sa', name: '사우디', year: '2023~2025' }
+    ];
+    
+    // 스크롤 시 비디오 한 번만 재생
+    document.addEventListener('DOMContentLoaded', function() {
+      const video = document.getElementById('world-video');
+      const audio = document.getElementById('world-audio');
+      const playBtn = document.getElementById('audio-play-btn');
+      const audioIcon = document.getElementById('audio-icon');
+      const audioText = document.getElementById('audio-text');
+      const flagsContainer = document.getElementById('flags-animation-container');
+      const flagsScroll = document.getElementById('flags-scroll');
+      let videoPlayed = false;
+      let audioPlaying = false;
+      
+      // 국기 스크롤 애니메이션 생성
+      function createFlagsAnimation() {
+        flagsScroll.innerHTML = '';
+        // 국기를 3번 반복해서 무한 루프처럼 보이게
+        for (let repeat = 0; repeat < 3; repeat++) {
+          flagsData.forEach(flag => {
+            const flagEl = document.createElement('div');
+            flagEl.style.cssText = 'display: flex; align-items: center; gap: 6px; padding: 8px 12px; background: white; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); white-space: nowrap;';
+            if (flag.highlight) {
+              flagEl.style.background = 'linear-gradient(135deg, #fef2f2, #fee2e2)';
+              flagEl.style.border = '2px solid #dc2626';
+            }
+            flagEl.innerHTML = `
+              <img src="https://flagcdn.com/32x24/${flag.code}.png" alt="${flag.name}" width="32" height="24" style="border-radius: 2px;">
+              <span style="font-size: 12px; font-weight: 600; color: ${flag.highlight ? '#dc2626' : '#333'};">${flag.name}</span>
+              <span style="font-size: 10px; color: #666;">${flag.year}</span>
+            `;
+            flagsScroll.appendChild(flagEl);
+          });
+        }
+      }
+      
+      // 비디오 스크롤 시 자동 재생
+      // 오디오 재생 버튼
+      if (video) {
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting && !videoPlayed) {
+              video.play().catch(e => console.log('Video autoplay blocked'));
+              videoPlayed = true;
+            }
+          });
+        }, { threshold: 0.5 });
+
+        observer.observe(video);
+      }
+
+      if (playBtn && audio) {
+        playBtn.addEventListener('click', function() {
+          if (audioPlaying) {
+            audio.pause();
+            audioIcon.textContent = '🎵';
+            audioText.textContent = '배경음악 재생';
+            playBtn.style.background = 'linear-gradient(135deg, #059669, #047857)';
+            flagsContainer.style.display = 'none';
+            flagsScroll.style.animation = 'none';
+            audioPlaying = false;
+          } else {
+            // 국기 애니메이션 시작
+            createFlagsAnimation();
+            flagsContainer.style.display = 'block';
+            
+            // 오디오 길이에 맞춰 애니메이션 속도 계산 (103.4초)
+            // 전체 국기 너비 * 3 (반복) = 약 21개 * 120px * 3 = 7560px
+            // 103.4초 동안 우측에서 좌측으로 이동
+            flagsScroll.style.animation = 'scrollFlags 103.4s linear';
+            
+            audio.play().then(() => {
+              audioIcon.textContent = '⏸️';
+              audioText.textContent = '배경음악 일시정지';
+              playBtn.style.background = 'linear-gradient(135deg, #dc2626, #b91c1c)';
+              audioPlaying = true;
+            }).catch(e => {
+              console.log('Audio play failed:', e);
+              alert('오디오를 재생할 수 없습니다. 브라우저 설정을 확인해주세요.');
+            });
+          }
+        });
+        
+        // 오디오가 끝나면 버튼 상태 초기화
+        audio.addEventListener('ended', function() {
+          audioIcon.textContent = '🎵';
+          audioText.textContent = '배경음악 재생';
+          playBtn.style.background = 'linear-gradient(135deg, #059669, #047857)';
+          flagsContainer.style.display = 'none';
+          flagsScroll.style.animation = 'none';
+          audioPlaying = false;
+        });
+      }
+    });
+  </script>
+  <style>
+    @keyframes scrollFlags {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+  </style>
 </body>
 </html>

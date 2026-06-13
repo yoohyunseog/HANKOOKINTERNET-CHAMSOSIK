@@ -1,0 +1,89 @@
+{
+  "schema": "pc-part-nb-collector-file.v1",
+  "updatedAt": "2026-06-14T03:55:47.638+09:00",
+  "category": "CPU",
+  "id": "cpu-amd-ryzen-5-9600x-granite-ridge-bulk",
+  "name": "AMD Ryzen 5 9600X (Granite Ridge) Bulk",
+  "maker": "AMD",
+  "platform": "AM5",
+  "estimatedPriceKrw": 284230,
+  "priceBand": "15~30만원",
+  "speedLabel": "5.4GHz",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "CPU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 75,
+  "valueIndex": 26.4,
+  "aiUseScore": 49,
+  "powerWatts": 65,
+  "tags": [
+    "gaming",
+    "productivity"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "CPU",
+    "partId": "cpu-amd-ryzen-5-9600x-granite-ridge-bulk",
+    "partName": "AMD Ryzen 5 9600X (Granite Ridge) Bulk",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "CPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 750,
+      "value": 352,
+      "aiFit": 490,
+      "priceEfficiency": 350,
+      "powerEfficiency": 385
+    },
+    "nbVector": [
+      100,
+      750,
+      352,
+      490,
+      350,
+      385
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 261.397,
+    "nbMin": 387.96,
+    "weightedScore": 341,
+    "nbBand": "100~499",
+    "summary": "CPU AMD Ryzen 5 9600X (Granite Ridge) Bulk 부품을 속도 중심 N/B 데이터베이스 점수 341점으로 저장했습니다."
+  },
+  "nbWeightedScore": 341,
+  "nbMax": 261.397,
+  "nbMin": 387.96,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=AMD%20Ryzen%205%209600X%20bulk%20price",
+  "notes": "Bulk version of the Ryzen 5 9600X. 6 cores, 12 threads, Zen 5 architecture.",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

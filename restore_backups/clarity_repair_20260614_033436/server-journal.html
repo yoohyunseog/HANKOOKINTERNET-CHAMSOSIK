@@ -1,0 +1,609 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://pagead2.googlesyndication.com https://googleads.g.doubleclick.net; img-src 'self' data: https:; style-src 'self' 'unsafe-inline'; connect-src 'self' https:; frame-src https://googleads.g.doubleclick.net https://tpc.googlesyndication.com; base-uri 'none'; form-action 'none'; frame-ancestors 'self'; upgrade-insecure-requests">
+  <title>참소식.com 서버 일지 공개 페이지</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      color: #172033;
+      background: #f6f8fb;
+      font-family: Arial, "Noto Sans KR", sans-serif;
+      line-height: 1.65;
+    }
+
+    a {
+      color: #1d4ed8;
+      font-weight: 800;
+      text-underline-offset: 3px;
+    }
+
+    .top-strip {
+      padding: 14px 18px;
+      color: #ffffff;
+      background: #0f172a;
+      text-align: center;
+      font-weight: 900;
+    }
+
+    .page {
+      width: min(1120px, calc(100% - 28px));
+      margin: 0 auto;
+      padding: 28px 0 44px;
+    }
+
+    .hero {
+      padding: 28px;
+      border: 1px solid rgba(29, 78, 216, 0.22);
+      border-left: 6px solid #1d4ed8;
+      border-radius: 8px;
+      background: #ffffff;
+      box-shadow: 0 16px 38px rgba(15, 23, 42, 0.08);
+    }
+
+    .hero h1 {
+      margin: 0 0 10px;
+      color: #0f172a;
+      font-size: 28px;
+      line-height: 1.25;
+    }
+
+    .hero p {
+      margin: 0;
+      color: #475569;
+    }
+
+    .notice-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+      margin: 18px 0;
+    }
+
+    .notice-card,
+    .timeline,
+    .profile,
+    .scope {
+      border: 1px solid rgba(148, 163, 184, 0.24);
+      border-radius: 8px;
+      background: #ffffff;
+      box-shadow: 0 10px 26px rgba(15, 23, 42, 0.06);
+    }
+
+    .notice-card {
+      padding: 16px;
+    }
+
+    .notice-card strong {
+      display: block;
+      margin-bottom: 4px;
+      color: #991b1b;
+      font-size: 14px;
+    }
+
+    .notice-card span {
+      display: block;
+      color: #334155;
+      font-size: 15px;
+    }
+
+    section {
+      margin-top: 18px;
+    }
+
+    section h2 {
+      margin: 0;
+      padding: 18px 20px 0;
+      color: #0f172a;
+      font-size: 21px;
+      line-height: 1.3;
+    }
+
+    .timeline-list {
+      margin: 0;
+      padding: 12px 20px 20px;
+      list-style: none;
+    }
+
+    .timeline-item {
+      display: grid;
+      grid-template-columns: 170px 1fr;
+      gap: 18px;
+      padding: 16px 0;
+      border-top: 1px solid #e5e7eb;
+    }
+
+    .timeline-time {
+      color: #991b1b;
+      font-weight: 900;
+      font-size: 14px;
+    }
+
+    .timeline-body strong {
+      display: block;
+      margin-bottom: 6px;
+      color: #1e3a8a;
+      font-size: 16px;
+    }
+
+    .timeline-body p {
+      margin: 0;
+      color: #334155;
+    }
+
+    .timeline-body p + p {
+      margin-top: 14px;
+    }
+
+    .emphasis {
+      display: block;
+      margin: 12px 0;
+      padding: 12px 14px;
+      border-radius: 8px;
+      color: #ffffff;
+      background: #7f1d1d;
+      font-weight: 900;
+    }
+
+    .emphasis.blue {
+      background: #1e3a8a;
+    }
+
+    .profile-content,
+    .scope-content {
+      padding: 14px 20px 20px;
+    }
+
+    .profile-content p,
+    .scope-content p {
+      margin: 14px 0 0;
+      color: #334155;
+    }
+
+    .profile-content p:first-child,
+    .scope-content p:first-child {
+      margin-top: 0;
+    }
+
+    .back {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 22px;
+      padding-top: 18px;
+      border-top: 1px solid #dbe3ef;
+    }
+
+    @media (max-width: 760px) {
+      .notice-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .timeline-item {
+        grid-template-columns: 1fr;
+        gap: 6px;
+      }
+
+      .hero {
+        padding: 22px;
+      }
+
+      .hero h1 {
+        font-size: 24px;
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="./common-site.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "x4jlyqheuh");
+</script>
+</head>
+<body>
+  <div class="top-strip">참소식.com 서버 일지 공개 페이지</div>
+
+  <main class="page">
+    <header class="hero">
+      <h1>🇰🇷 한글도메인 &lt;&gt; 🇺🇸 서버 일지 공지</h1>
+      <p>본 페이지는 참소식.com의 원활한 운영, 개인정보 유출 방지, 허위 정보 확산 방지를 위해 공개 범위를 최소화하여 작성한 서버 일지입니다.</p>
+    </header>
+
+    <div class="notice-grid" aria-label="일지 요약">
+      <div class="notice-card">
+        <strong>공개 일자</strong>
+        <span>2026년 5월 22일</span>
+      </div>
+      <div class="notice-card">
+        <strong>기록 기준</strong>
+        <span>한국 표준시(KST, UTC+09:00)</span>
+      </div>
+      <div class="notice-card">
+        <strong>보안 기준</strong>
+        <span>검색 비색인, 캐시 제한, 민감정보 비공개</span>
+      </div>
+    </div>
+
+    <section class="timeline" aria-labelledby="timeline-title">
+      <h2 id="timeline-title">시간별 서버 일지</h2>
+      <ol class="timeline-list">
+        <li class="timeline-item">
+          <time class="timeline-time" datetime="2026-06-04T16:00:00+09:00">2026-06-04 16:00 KST</time>
+          <div class="timeline-body">
+            <strong>SSL 인증서 갱신 및 HTTPS 보안 강화</strong>
+            <p>Let's Encrypt SSL 인증서를 갱신하고 HTTPS 보안 설정을 강화했습니다.</p>
+            <p><strong>인증서 갱신:</strong></p>
+            <ul style="margin: 8px 0; padding-left: 20px;">
+              <li><code>한국인터넷.한국</code> 및 <code>참소식.com</code> 도메인 SSL 인증서 갱신</li>
+              <li>certbot을 통한 자동 갱신 설정 확인</li>
+              <li>인증서 만료일 모니터링 스크립트 추가</li>
+            </ul>
+            <p><strong>nginx 보안 설정:</strong></p>
+            <ul style="margin: 8px 0; padding-left: 20px;">
+              <li>HTTP에서 HTTPS로 자동 리다이렉트 강화</li>
+              <li>HSTS (HTTP Strict Transport Security) 헤더 추가</li>
+              <li>X-Frame-Options, X-Content-Type-Options 보안 헤더 설정</li>
+              <li>SSL 프로토콜을 TLS 1.2, TLS 1.3만 허용하도록 제한</li>
+            </ul>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <time class="timeline-time" datetime="2026-06-04T15:00:00+09:00">2026-06-04 15:00 KST</time>
+          <div class="timeline-body">
+            <strong>바티칸 교황청 소식 페이지 UI/UX 개선</strong>
+            <p><a href="./vatican/">교황청 소식 페이지</a>의 사용자 경험을 대폭 개선했습니다.</p>
+            <p><strong>핵심 요약 동적 로드:</strong></p>
+            <ul style="margin: 8px 0; padding-left: 20px;">
+              <li>정적으로 하드코딩된 핵심 요약을 <code>article_news.json</code>에서 동적으로 로드하도록 변경</li>
+              <li>각 요약 항목에 Google 검색 링크(🔍) 추가</li>
+              <li>데이터 파일 기반 실시간 업데이트 지원</li>
+            </ul>
+            <p><strong>참소식 인공지능 섹션 개선:</strong></p>
+            <ul style="margin: 8px 0; padding-left: 20px;">
+              <li>AI 멘트 생성 시 지시사항이 그대로 반환되는 문제 수정</li>
+              <li>AI 응답 검증 로직 추가 - 지시사항 포함 시 기본 메시지 표시</li>
+              <li>검색 아이콘 단순화 - 섹션 하단에 1개씩만 표시</li>
+            </ul>
+            <p><strong>참소식 정의 애니메이션 추가:</strong></p>
+            <ul style="margin: 8px 0; padding-left: 20px;">
+              <li>상단 네비게이션 바에 "참"의 의미 슬라이드 스트리밍 효과 추가</li>
+              <li>"참 · 거짓이 아닌 것 · 하느님께 속한 것 · 변하지 않고 신뢰할 수 있는 것 · 생명을 주는 진리 · 겉모양이 아니라 본질 · 복음 안에서 드러나는 하느님의 뜻" 표시</li>
+              <li>35초 주기로 좌측 슬라이드 애니메이션 반복</li>
+            </ul>
+            <p><strong>개발자 정보 추가:</strong></p>
+            <ul style="margin: 8px 0; padding-left: 20px;">
+              <li>페이지 하단에 개발자 정보 추가: "세례명 요셉 유현석 — 중랑구에서 세례를 받은 신자로서, 복음의 참된 소식과 바티칸·한국 천주교의 주요 흐름을 전하기 위해 참소식 인공지능을 개발하고 있습니다."</li>
+            </ul>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <time class="timeline-time" datetime="2026-06-04T03:50:00+09:00">2026-06-04 03:50 KST</time>
+          <div class="timeline-body">
+            <strong>서버 작업 일지 문서화</strong>
+            <p>프로젝트 루트에 <code>SERVER_WORK_LOG.md</code> 파일을 생성하여 6월 2일부터 6월 4일까지의 작업 내용을 문서화했습니다.</p>
+            <p>바티칸 소식 페이지 구축, nginx 설정, Node.js 서버 구성, AI 번역 기능 구현 등의 작업 내용을 체계적으로 정리했습니다.</p>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <time class="timeline-time" datetime="2026-06-04T03:00:00+09:00">2026-06-04 03:00 KST</time>
+          <div class="timeline-body">
+            <strong>바티칸 교황청 소식 페이지 실시간 업데이트 시스템 구축</strong>
+            <p><a href="./vatican/">교황청 소식 페이지</a>에 실시간 데이터 업데이트 기능을 구현했습니다.</p>
+            <p><strong>주요 변경사항:</strong></p>
+            <ul style="margin: 8px 0; padding-left: 20px;">
+              <li>메인 페이지(<code>vatican/index.html</code>)에 JavaScript 동적 데이터 로드 기능 추가</li>
+              <li><code>vatican_news.json</code>에서 뉴스 데이터 실시간 로드</li>
+              <li><code>vatican_videos.json</code>에서 YouTube 영상 데이터 실시간 로드</li>
+              <li>5분마다 자동 새로고침 기능 구현</li>
+              <li>게시판 페이지(<code>vatican/board/index.html</code>) 생성 - 전체 뉴스 목록, 검색, 필터 기능</li>
+            </ul>
+            <p><strong>향상된 뉴스 수집 봇 개발:</strong></p>
+            <ul style="margin: 8px 0; padding-left: 20px;">
+              <li><code>vatican_bot_enhanced.py</code> - 8개 소스에서 뉴스 수집 (Vatican News 한국어/영어/이탈리아어, Catholic News Agency, National Catholic Register, Crux Now 등)</li>
+              <li>AI 기반 한글 번역 기능 (Ollama kimi-k2.5:cloud 모델 사용)</li>
+              <li>AI 기반 요약 기능 (3문장 요약)</li>
+              <li>카테고리 분류 기능</li>
+              <li>실행 주기: 10분마다 자동 수집</li>
+            </ul>
+            <p><strong>서버 배포:</strong></p>
+            <ul style="margin: 8px 0; padding-left: 20px;">
+              <li><code>/var/www/chamsosik/vatican/index.html</code> - 메인 페이지</li>
+              <li><code>/var/www/chamsosik/vatican/board/index.html</code> - 게시판 페이지</li>
+              <li><code>/var/www/chamsosik/vatican/vatican_news.json</code> - 뉴스 데이터 (15개 기사)</li>
+              <li><code>/var/www/chamsosik/vatican/vatican_videos.json</code> - 영상 데이터 (6개)</li>
+            </ul>
+            <p><strong>수집 현황:</strong> Vatican News, Catholic News Agency, National Catholic Register, Crux Now 등에서 총 15개 뉴스 기사와 6개 YouTube 영상을 수집했습니다.</p>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <time class="timeline-time" datetime="2026-06-03T14:00:00+09:00">2026-06-03 14:00 KST</time>
+          <div class="timeline-body">
+            <strong>nginx 사이트 설정 및 Node.js 서버 구성</strong>
+            <p><code>/etc/nginx/sites-enabled/default</code> 설정을 수정하여 <code>한국인터넷.한국</code> 도메인의 가상 호스트를 구성했습니다.</p>
+            <p>Node.js 백엔드 서버를 PM2를 통해 관리하도록 설정하고, 포트 3000에서 실행되도록 구성했습니다.</p>
+            <p>nginx 프록시 설정에서 <code>nodejs_backend</code> 업스트림을 구성하여 로드밸런싱을 최적화했습니다.</p>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <time class="timeline-time" datetime="2026-06-02T10:00:00+09:00">2026-06-02 10:00 KST</time>
+          <div class="timeline-body">
+            <strong>SSL 인증서 및 nginx 설정 점검</strong>
+            <p>서버 SSL 인증서 상태를 확인하고 nginx 가상 호스트 설정을 점검했습니다. <code>한국인터넷.한국</code> 도메인의 nginx 설정을 최적화했습니다.</p>
+            <p>Node.js 백엔드 프록시 설정을 확인하고 <code>proxy_pass</code> 설정을 수정하여 백엔드 서버와의 연결을 안정화했습니다.</p>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <time class="timeline-time" datetime="2026-05-30T00:00:00+09:00">2026-05-30 00:00 KST</time>
+          <div class="timeline-body">
+            <strong>서버 관리자 공식 확인문 수정본 추가</strong>
+            <p>서버 관리자는 1985년 1월 7일 강원특별자치도 삼척시 도계읍에서 출생한 유현석(劉鉉錫)입니다.</p>
+            <p>성은 유씨(劉氏)이며, 집안 전승상 중국 유씨(中國 劉氏) 계통으로도 설명되는 경우가 있습니다. 다만 본인은 중국에 거주하거나 방문한 이력이 없으며, 중국어를 사용하지 않습니다.</p>
+            <p>집안은 황해도 계통에서 강원도 일대로 분파되어 정착한 흐름으로 전해집니다. 현재까지 강원도 선산과 가족 전승을 중심으로 계통을 이어오고 있으며, 6.25 전쟁 당시 북쪽에서 남하한 계통으로 보지는 않습니다.</p>
+            <p>상주 지역에는 본인보다 윗대 항렬의 조상 묘역이 집중된 선영이 있는 것으로 전해집니다. 따라서 상주는 현재 세거지라기보다는 윗대 조상들의 선영지이자 옛 연고지로 이해하는 것이 타당합니다.</p>
+            <p>상주는 배천 유씨 전체의 본관지나 대표 위인 배출지로 단정하지 않습니다. 또한 상주 지역과 관련하여 위인이나 인물을 언급할 경우에는 반드시 배천 유씨, 즉 성씨 한자가 劉氏로 확인되는 인물만을 기준으로 삼습니다. 단순히 성이 유씨라는 이유만으로 다른 본관의 유씨 인물을 본 계통과 연결하지 않습니다.</p>
+            <p>현재 본 계통에서 상주 지역은 널리 알려진 배천 유씨 위인 배출지라기보다는, 본인보다 윗대 항렬의 조상 묘역이 남아 있는 선영지이자 뿌리의 장소로 정리합니다.</p>
+            <p><strong>배천 유씨 기준 인물 정리</strong></p>
+            <table style="width:100%; border-collapse:collapse; margin:12px 0; font-size:14px;">
+              <thead>
+                <tr style="background:#f0f4f8;">
+                  <th style="border:1px solid #ccc; padding:8px; text-align:left;">구분</th>
+                  <th style="border:1px solid #ccc; padding:8px; text-align:left;">이름</th>
+                  <th style="border:1px solid #ccc; padding:8px; text-align:left;">한자</th>
+                  <th style="border:1px solid #ccc; padding:8px; text-align:left;">배천 유씨 기준에서의 위치</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td style="border:1px solid #ccc; padding:8px;">시조</td><td style="border:1px solid #ccc; padding:8px;">유국추</td><td style="border:1px solid #ccc; padding:8px;">劉國樞</td><td style="border:1px solid #ccc; padding:8px;">배천 유씨 시조</td></tr>
+                <tr><td style="border:1px solid #ccc; padding:8px;">상계 인물</td><td style="border:1px solid #ccc; padding:8px;">유승</td><td style="border:1px solid #ccc; padding:8px;">劉升</td><td style="border:1px solid #ccc; padding:8px;">유국추의 아들로 전해짐</td></tr>
+                <tr><td style="border:1px solid #ccc; padding:8px;">상계 인물</td><td style="border:1px solid #ccc; padding:8px;">유현</td><td style="border:1px solid #ccc; padding:8px;">劉賢</td><td style="border:1px solid #ccc; padding:8px;">유국추의 손자로 전해짐</td></tr>
+                <tr><td style="border:1px solid #ccc; padding:8px;">상계 인물</td><td style="border:1px solid #ccc; padding:8px;">유시준</td><td style="border:1px solid #ccc; padding:8px;">劉時俊</td><td style="border:1px solid #ccc; padding:8px;">유현의 맏아들로 전해짐</td></tr>
+                <tr><td style="border:1px solid #ccc; padding:8px;">상계 인물</td><td style="border:1px solid #ccc; padding:8px;">유보국</td><td style="border:1px solid #ccc; padding:8px;">劉補國</td><td style="border:1px solid #ccc; padding:8px;">유시준의 아들로 전해짐</td></tr>
+                <tr><td style="border:1px solid #ccc; padding:8px;">상계 인물</td><td style="border:1px solid #ccc; padding:8px;">유서</td><td style="border:1px solid #ccc; padding:8px;">劉瑞</td><td style="border:1px solid #ccc; padding:8px;">유시준의 아들로 전해짐</td></tr>
+                <tr><td style="border:1px solid #ccc; padding:8px;">상계 인물</td><td style="border:1px solid #ccc; padding:8px;">유여준</td><td style="border:1px solid #ccc; padding:8px;">劉汝俊</td><td style="border:1px solid #ccc; padding:8px;">유현의 막내아들로 전해짐</td></tr>
+                <tr><td style="border:1px solid #ccc; padding:8px;">고려 인물</td><td style="border:1px solid #ccc; padding:8px;">유석</td><td style="border:1px solid #ccc; padding:8px;">劉碩</td><td style="border:1px solid #ccc; padding:8px;">백주 출신 고려 문신, 배천 유씨 주요 인물로 언급됨</td></tr>
+                <tr><td style="border:1px solid #ccc; padding:8px;">조선 문과</td><td style="border:1px solid #ccc; padding:8px;">유한충</td><td style="border:1px solid #ccc; padding:8px;">劉漢忠</td><td style="border:1px solid #ccc; padding:8px;">한국역대인물 자료에서 본관 배천으로 확인</td></tr>
+                <tr><td style="border:1px solid #ccc; padding:8px;">조선 문과</td><td style="border:1px solid #ccc; padding:8px;">유원식</td><td style="border:1px solid #ccc; padding:8px;">劉元植</td><td style="border:1px solid #ccc; padding:8px;">한국역대인물 자료에서 본관 배천으로 확인</td></tr>
+              </tbody>
+            </table>
+            <p>위 표는 본 문서에서 배천 유씨 인물을 언급할 때 기준으로 삼는 정리입니다. 본관이 배천으로 확인되지 않는 인물은 본 문서에서 배천 유씨 인물이나 배천 유씨 위인으로 분류하지 않습니다.</p>
+            <p>기존 족보 체계에서 중시조로 언급되던 유창(劉敞)에 대해서는, 본 계통의 직접적인 중시조로 보지 않습니다. 유창(劉敞)은 '중시조'라는 용어와 기존 족보 체계를 이해하는 과정에서 참고한 인물일 뿐, 본 계통과 직접 관련된 인물로 정리하지 않습니다.</p>
+            <p>2000년 이전의 기존 족보 체계에서는 유창(劉敞)이 중시조로 언급된 기록이 있었으나, 본 계통과는 직접 관련이 없는 것으로 정리합니다.</p>
+            <p>2002년 이후 재정리된 계보에서는 배천 유씨 계통을 정리할 때 유국추(劉國樞)를 시조로 보고, 유석(劉碩)을 상계와 본관 흐름을 설명하는 주요 기준 인물로 봅니다.</p>
+            <p>유석(劉碩)은 상계의 뿌리와 본관의 흐름을 설명하는 원류적 기준 인물로 볼 수 있습니다. 계통을 더 위쪽에서 정리할 때 참고되는 상계 기준 인물입니다.</p>
+            <p>유극량(劉克良)은 기존 검토 과정에서 언급된 이름이나, 본 문서에서는 배천 유씨 기준 인물 목록에 포함하지 않습니다. 배천 유씨 위인을 언급할 때에는 위 표에 정리된 것처럼 본관이 배천으로 확인되는 인물만을 기준으로 삼습니다.</p>
+            <p>본관 및 세부 가족 계통 정보는 개인정보 보호와 문중 관련 정보의 무분별한 확산을 방지하기 위해 공개하지 않습니다.</p>
+            <p>서버 관리자 유현석(劉鉉錫)은 한글도메인 참소식.com의 개발 및 서버 운영을 담당하고 있으며, 본 안내는 개인정보 유출 및 허위 정보 확산을 방지하기 위한 최소 범위의 공식 확인문입니다.</p>
+            <p><strong>관리자 소개 및 네트워크</strong></p>
+            <p>강원도 도계 출신인 서버 관리자 유현석(劉鉉錫)은 도라지, 더덕, 콩나물, 시금치, 미역과 같은 담백한 식재료를 좋아합니다. 평소에는 두부김치찌개를 즐겨 먹으며, 산나물과 채소 요리 중심의 소박한 식성을 가지고 있습니다.</p>
+            <p>최근에는 칵테일 소주와 맥주에 어울리는 안주 요리에도 관심을 가지고 있습니다.</p>
+            <p><em>본 문서는 기존 문서를 삭제하거나 대체하기 위한 것이 아니라, 기존 문서 아래에 추가되는 정리용 수정본입니다.</em></p>
+            <div class="album-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin: 16px 0;">
+              <div class="album-item" style="position: relative; overflow: hidden; border-radius: 8px; aspect-ratio: 16/9;">
+                <a href="https://www.msn.com/ko-kr/news/other/%ED%82%A4-%EC%9E%91%EA%B3%A0-%EB%9A%B1%EB%9A%B1%ED%95%98%EB%8B%A4%EB%8A%94-%EC%9D%B4%EC%9C%A0%EB%A1%9C-%EB%AC%B4%EB%A6%AC%EC%97%90%EC%84%9C-%EB%94%B0%EB%8F%8C%EB%A6%BC-%EB%8B%B9%ED%95%9C-%EC%BD%94%EB%81%BC%EB%A6%AC-%EC%95%8C%EA%B3%A0-%EB%B3%B4%EB%8B%88/ar-AA24j2EA?ocid=msedgntp&pc=U531&cvid=6a19bcce87ce4b119793129496e13417&ei=67" style="display: block; width: 100%; height: 100%;">
+                  <img style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;" src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA24jO55.img?w=699&h=365&m=6" alt="애니멀플래닛">
+                  <div style="position: absolute; bottom: 0; left: 0; right: 0; padding: 8px; background: linear-gradient(transparent, rgba(0,0,0,0.7)); color: white; font-size: 13px;">애니멀플래닛</div>
+                </a>
+              </div>
+              <div class="album-item" style="position: relative; overflow: hidden; border-radius: 8px; aspect-ratio: 16/9;">
+                <a href="https://photos.app.goo.gl/9mVgEz8ZUANpPQt39" style="display: block; width: 100%; height: 100%;">
+                  <img style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;" src="https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fcwdfpt%2FbtrkfYQg5R9%2FAAAAAAAAAAAAAAAAAAAAAPjW4YI1Y03W4dwvEIhJ_yVrhxgFdTFNVfheKMvKHvEd%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1780239599%26allow_ip%3D%26allow_referer%3D%26signature%3Dfj%252Bt36bRMYL6VYF6SQpqBWyVPCg%253D" alt="한스 마카우">
+                  <div style="position: absolute; bottom: 0; left: 0; right: 0; padding: 8px; background: linear-gradient(transparent, rgba(0,0,0,0.7)); color: white; font-size: 13px;">한스 마카우</div>
+                </a>
+              </div>
+              <div class="album-item" style="position: relative; overflow: hidden; border-radius: 8px; aspect-ratio: 16/9;">
+                <img style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;" src="https://png.pngtree.com/png-vector/20241219/ourmid/pngtree-patriotic-american-girl-holding-flag-on-independence-day-clipart-illustration-png-image_14819756.png" alt="미국 독립기념일">
+                <div style="position: absolute; bottom: 0; left: 0; right: 0; padding: 8px; background: linear-gradient(transparent, rgba(0,0,0,0.7)); color: white; font-size: 13px;">본 이미지와 전혀 상관이 없습니다.</div>
+              </div>
+              <div class="album-item" style="position: relative; overflow: hidden; border-radius: 8px; aspect-ratio: 16/9;">
+                <img style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;" src="https://i.ytimg.com/vi/PN2QmLkJkgQ/maxresdefault.jpg" alt="YouTube 썸네일">
+              </div>
+              <div class="album-item" style="position: relative; overflow: hidden; border-radius: 8px; aspect-ratio: 16/9;">
+                <img style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;" src="https://shopby-images.cdn-nhncommerce.com/20240517/185302.554435000/igtz_P0092.jpg" alt="상품 이미지">
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <time class="timeline-time" datetime="2026-05-24T12:29:16+09:00">2026-05-24 12:29 KST</time>
+          <div class="timeline-body">
+            <strong>서버 관리자 계통 관련 공식 확인문 갱신</strong>
+            <p>서버 관리자는 1985년 1월 7일 강원특별자치도(江原特別自治道) 삼척시(三陟市) 도계읍(道溪邑)에서 출생한 유현석(劉鉉錫)입니다.</p>
+            <p>성은 유씨(劉氏)이며, 집안 전승(家族 傳承)상 중국 유씨(中國 劉氏) 계통으로도 통합니다. 다만 본인은 중국(中國)에 가본 적이 없고, 중국어(中國語)를 사용하지 않습니다.</p>
+            <p>집안은 황해도(黃海道) 계통에서 강원도(江原道) 일대로 분파되어 정착한 흐름으로 전해지며, 현재까지 강원도(江原道) 선산(先山)과 가족 전승(家族 傳承)을 중심으로 계통을 이어오고 있습니다.</p>
+            <p>기존 족보(族譜) 체계에서 중시조(中始祖)로 언급되던 유창(劉敞)에 대해서는, 본 계통과 전혀 상관이 없는 인물로 정리합니다. 유창(劉敞)은 단지 ‘중시조(中始祖)’라는 어원(語源)과 기존 족보(族譜) 체계를 이해하는 과정에서 탐구한 인물입니다.</p>
+            <p>2000년 이전의 기존 족보(族譜) 체계에서는 유창(劉敞)이 중시조(中始祖)로 언급되었으나, 본 계통과는 전혀 상관이 없습니다.</p>
+            <p>2002년 이후 재정리된 계보(系譜)에서는 유석(劉碩)과 유극량(劉克良)을 계통의 중시조(中始祖) 기준 인물로 보는 것이 정확합니다.</p>
+            <p>유석(劉碩)은 상계(上系)의 뿌리와 본관(本貫)의 흐름을 설명하는 기준 인물로 볼 수 있으며, 계통을 더 위쪽에서 정리할 때 참고되는 원류적 기준 인물입니다.</p>
+            <p>유극량(劉克良)은 2002년 이후 재정리된 계보(系譜)에서 실제 흐름과 분파(分派)를 설명하는 데 더 직접적인 기준이 되는 인물로 볼 수 있습니다.</p>
+            <p>다만 유극량(劉克良)은 유석(劉碩)보다 후대(後代)의 인물이지만, 항렬(行列)과 계통 기준으로 보면 유석(劉碩)이 유극량(劉克良)보다 낮은 항렬일 가능성이 있는 것으로 추정합니다.</p>
+            <p>따라서 본 계통 정리에서는 유창(劉敞)을 직접적인 중시조(中始祖)로 보지 않으며, 유창(劉敞)과는 전혀 상관이 없습니다. 유창(劉敞)은 단지 ‘중시조(中始祖)’라는 어원(語源)과 기존 족보(族譜) 체계를 이해하기 위해 탐구한 인물입니다. 2002년 이후 재정리된 계보(系譜)에서는 유석(劉碩)과 유극량(劉克良)이 계통의 중시조(中始祖) 기준 인물로 보는 것이 정확합니다.</p>
+         </div>
+        </li>
+        <li class="timeline-item">
+          <time class="timeline-time" datetime="2026-05-22T16:30:22+09:00">2026-05-22 16:30 KST</time>
+          <div class="timeline-body">
+            <strong>서버 일지 공개 페이지 구성</strong>
+            <p>메인 페이지 하단에 별도 서버 일지 공지 링크를 만들고, 공개 페이지에는 검색 비색인 및 캐시 제한 보안 정책을 적용합니다.</p>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <time class="timeline-time" datetime="2026-05-22T16:20:00+09:00">2026-05-22 16:20 KST</time>
+          <div class="timeline-body">
+            <strong>서버 관리자 관련 초기 확인문 정리</strong>
+            <p>서버 관리자 관련 기본 확인문을 작성했습니다. 이후 2026년 5월 24일 일지에서 계통 관련 문구를 새 수정본으로 재정리했습니다.</p>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <time class="timeline-time" datetime="2026-05-22T16:10:00+09:00">2026-05-22 16:10 KST</time>
+          <div class="timeline-body">
+            <strong>페이지 폐쇄 사유 고지</strong>
+            <p>최근 서버 관리자와 관련된 장기 보관 사적 정보 데이터에 대해 비정상적인 조회 시도로 의심되는 정황을 확인하였습니다. 또한 10년 전 회사에 사직서를 제출한 날이 무단 결근으로 처리된 기록도 확인되었습니다.</p>
+            <span class="emphasis">서버 관리자는 사건 발생 후 10년이 지난 현재에서야 위와 같은 정황과 기록을 확인하였습니다.</span>
+            <span class="emphasis blue">서버 관리자에 대한 10년 전 데이터의 정보 유출로 인해 해당 페이지를 폐쇄 조치합니다.</span>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <time class="timeline-time" datetime="2026-05-22T16:00:00+09:00">2026-05-22 16:00 KST</time>
+          <div class="timeline-body">
+            <strong>라디오 페이지 및 꼬봉방 운영 중단</strong>
+            <p>해당 데이터에는 민감한 공공·국가 관련 정보가 포함될 가능성이 있어, 라디오 페이지와 꼬봉방 운영을 중단합니다. 관련 정황이 추가로 확인될 경우, ICANN 등 도메인 및 네트워크 관리 기관에 제보될 수 있습니다.</p>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <time class="timeline-time" datetime="2026-06-02T10:00:00+09:00">2026-06-02 10:00 KST</time>
+          <div class="timeline-body">
+            <strong>SSL 인증서 및 nginx 설정 점검</strong>
+            <p>서버 SSL 인증서 상태를 확인하고 nginx 가상 호스트 설정을 점검했습니다. <code>한국인터넷.한국</code> 도메인의 nginx 설정을 최적화했습니다.</p>
+            <p>Node.js 백엔드 프록시 설정을 확인하고 <code>proxy_pass</code> 설정을 수정하여 백엔드 서버와의 연결을 안정화했습니다.</p>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <time class="timeline-time" datetime="2026-06-03T14:00:00+09:00">2026-06-03 14:00 KST</time>
+          <div class="timeline-body">
+            <strong>nginx 사이트 설정 및 Node.js 서버 구성</strong>
+            <p><code>/etc/nginx/sites-enabled/default</code> 설정을 수정하여 <code>한국인터넷.한국</code> 도메인의 가상 호스트를 구성했습니다.</p>
+            <p>Node.js 백엔드 서버를 PM2를 통해 관리하도록 설정하고, 포트 3000에서 실행되도록 구성했습니다.</p>
+            <p>nginx 프록시 설정에서 <code>nodejs_backend</code> 업스트림을 구성하여 로드밸런싱을 최적화했습니다.</p>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <time class="timeline-time" datetime="2026-06-04T03:00:00+09:00">2026-06-04 03:00 KST</time>
+          <div class="timeline-body">
+            <strong>바티칸 교황청 소식 페이지 실시간 업데이트 시스템 구축</strong>
+            <p><a href="./vatican/">교황청 소식 페이지</a>에 실시간 데이터 업데이트 기능을 구현했습니다.</p>
+            <p><strong>주요 변경사항:</strong></p>
+            <ul style="margin: 8px 0; padding-left: 20px;">
+              <li>메인 페이지(<code>vatican/index.html</code>)에 JavaScript 동적 데이터 로드 기능 추가</li>
+              <li><code>vatican_news.json</code>에서 뉴스 데이터 실시간 로드</li>
+              <li><code>vatican_videos.json</code>에서 YouTube 영상 데이터 실시간 로드</li>
+              <li>5분마다 자동 새로고침 기능 구현</li>
+              <li>게시판 페이지(<code>vatican/board/index.html</code>) 생성 - 전체 뉴스 목록, 검색, 필터 기능</li>
+            </ul>
+            <p><strong>향상된 뉴스 수집 봇 개발:</strong></p>
+            <ul style="margin: 8px 0; padding-left: 20px;">
+              <li><code>vatican_bot_enhanced.py</code> - 8개 소스에서 뉴스 수집 (Vatican News 한국어/영어/이탈리아어, Catholic News Agency, National Catholic Register, Crux Now 등)</li>
+              <li>AI 기반 한글 번역 기능 (Ollama kimi-k2.5:cloud 모델 사용)</li>
+              <li>AI 기반 요약 기능 (3문장 요약)</li>
+              <li>카테고리 분류 기능</li>
+              <li>실행 주기: 10분마다 자동 수집</li>
+            </ul>
+            <p><strong>서버 배포:</strong></p>
+            <ul style="margin: 8px 0; padding-left: 20px;">
+              <li><code>/var/www/chamsosik/vatican/index.html</code> - 메인 페이지</li>
+              <li><code>/var/www/chamsosik/vatican/board/index.html</code> - 게시판 페이지</li>
+              <li><code>/var/www/chamsosik/vatican/vatican_news.json</code> - 뉴스 데이터 (15개 기사)</li>
+              <li><code>/var/www/chamsosik/vatican/vatican_videos.json</code> - 영상 데이터 (6개)</li>
+            </ul>
+            <p><strong>수집 현황:</strong> Vatican News, Catholic News Agency, National Catholic Register, Crux Now 등에서 총 15개 뉴스 기사와 6개 YouTube 영상을 수집했습니다.</p>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <time class="timeline-time" datetime="2026-06-04T03:50:00+09:00">2026-06-04 03:50 KST</time>
+          <div class="timeline-body">
+            <strong>서버 작업 일지 문서화</strong>
+            <p>프로젝트 루트에 <code>SERVER_WORK_LOG.md</code> 파일을 생성하여 6월 2일부터 6월 4일까지의 작업 내용을 문서화했습니다.</p>
+            <p>바티칸 소식 페이지 구축, nginx 설정, Node.js 서버 구성, AI 번역 기능 구현 등의 작업 내용을 체계적으로 정리했습니다.</p>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <time class="timeline-time" datetime="2026-06-04T15:00:00+09:00">2026-06-04 15:00 KST</time>
+          <div class="timeline-body">
+            <strong>바티칸 교황청 소식 페이지 UI/UX 개선</strong>
+            <p><a href="./vatican/">교황청 소식 페이지</a>의 사용자 경험을 대폭 개선했습니다.</p>
+            <p><strong>핵심 요약 동적 로드:</strong></p>
+            <ul style="margin: 8px 0; padding-left: 20px;">
+              <li>정적으로 하드코딩된 핵심 요약을 <code>article_news.json</code>에서 동적으로 로드하도록 변경</li>
+              <li>각 요약 항목에 Google 검색 링크(🔍) 추가</li>
+              <li>데이터 파일 기반 실시간 업데이트 지원</li>
+            </ul>
+            <p><strong>참소식 인공지능 섹션 개선:</strong></p>
+            <ul style="margin: 8px 0; padding-left: 20px;">
+              <li>AI 멘트 생성 시 지시사항이 그대로 반환되는 문제 수정</li>
+              <li>AI 응답 검증 로직 추가 - 지시사항 포함 시 기본 메시지 표시</li>
+              <li>검색 아이콘 단순화 - 섹션 하단에 1개씩만 표시</li>
+            </ul>
+            <p><strong>참소식 정의 애니메이션 추가:</strong></p>
+            <ul style="margin: 8px 0; padding-left: 20px;">
+              <li>상단 네비게이션 바에 "참"의 의미 슬라이드 스트리밍 효과 추가</li>
+              <li>"참 · 거짓이 아닌 것 · 하느님께 속한 것 · 변하지 않고 신뢰할 수 있는 것 · 생명을 주는 진리 · 겉모양이 아니라 본질 · 복음 안에서 드러나는 하느님의 뜻" 표시</li>
+              <li>35초 주기로 좌측 슬라이드 애니메이션 반복</li>
+            </ul>
+            <p><strong>개발자 정보 추가:</strong></p>
+            <ul style="margin: 8px 0; padding-left: 20px;">
+              <li>페이지 하단에 개발자 정보 추가: "세례명 요셉 유현석 — 중랑구에서 세례를 받은 신자로서, 복음의 참된 소식과 바티칸·한국 천주교의 주요 흐름을 전하기 위해 참소식 인공지능을 개발하고 있습니다."</li>
+            </ul>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <time class="timeline-time" datetime="2026-06-04T16:00:00+09:00">2026-06-04 16:00 KST</time>
+          <div class="timeline-body">
+            <strong>SSL 인증서 갱신 및 HTTPS 보안 강화</strong>
+            <p>Let's Encrypt SSL 인증서를 갱신하고 HTTPS 보안 설정을 강화했습니다.</p>
+            <p><strong>인증서 갱신:</strong></p>
+            <ul style="margin: 8px 0; padding-left: 20px;">
+              <li><code>한국인터넷.한국</code> 및 <code>참소식.com</code> 도메인 SSL 인증서 갱신</li>
+              <li>certbot을 통한 자동 갱신 설정 확인</li>
+              <li>인증서 만료일 모니터링 스크립트 추가</li>
+            </ul>
+            <p><strong>nginx 보안 설정:</strong></p>
+            <ul style="margin: 8px 0; padding-left: 20px;">
+              <li>HTTP에서 HTTPS로 자동 리다이렉트 강화</li>
+              <li>HSTS (HTTP Strict Transport Security) 헤더 추가</li>
+              <li>X-Frame-Options, X-Content-Type-Options 보안 헤더 설정</li>
+              <li>SSL 프로토콜을 TLS 1.2, TLS 1.3만 허용하도록 제한</li>
+            </ul>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <section class="profile" aria-labelledby="profile-title">
+      <h2 id="profile-title">서버 관리자 공식 확인문</h2>
+      <div class="profile-content">
+        <p>서버 관리자는 1985년 1월 7일 강원특별자치도(江原特別自治道) 삼척시(三陟市) 도계읍(道溪邑)에서 출생한 유현석(劉鉉錫)입니다.</p>
+        <p>성은 유씨(劉氏)이며, 집안 전승(家族 傳承)상 중국 유씨(中國 劉氏) 계통으로도 통합니다. 다만 본인은 중국(中國)에 가본 적이 없고, 중국어(中國語)를 사용하지 않습니다.</p>
+        <p>집안은 황해도(黃海道) 계통에서 강원도(江原道) 일대로 분파되어 정착한 흐름으로 전해지며, 현재까지 강원도(江原道) 선산(先山)과 가족 전승(家族 傳承)을 중심으로 계통을 이어오고 있습니다.</p>
+        <p>기존 족보(族譜) 체계에서 중시조(中始祖)로 언급되던 유창(劉敞)에 대해서는, 본 계통과 전혀 상관이 없는 인물로 정리합니다. 유창(劉敞)은 단지 ‘중시조(中始祖)’라는 어원(語源)과 기존 족보(族譜) 체계를 이해하는 과정에서 탐구한 인물입니다.</p>
+        <p>2000년 이전의 기존 족보(族譜) 체계에서는 유창(劉敞)이 중시조(中始祖)로 언급되었으나, 본 계통과는 전혀 상관이 없습니다.</p>
+        <p>2002년 이후 재정리된 계보(系譜)에서는 유석(劉碩)과 유극량(劉克良)을 계통의 중시조(中始祖) 기준 인물로 보는 것이 정확합니다.</p>
+        <p>유석(劉碩)은 상계(上系)의 뿌리와 본관(本貫)의 흐름을 설명하는 기준 인물로 볼 수 있으며, 계통을 더 위쪽에서 정리할 때 참고되는 원류적 기준 인물입니다.</p>
+        <p>유극량(劉克良)은 2002년 이후 재정리된 계보(系譜)에서 실제 흐름과 분파(分派)를 설명하는 데 더 직접적인 기준이 되는 인물로 볼 수 있습니다.</p>
+        <p>다만 유극량(劉克良)은 유석(劉碩)보다 후대(後代)의 인물이지만, 항렬(行列)과 계통 기준으로 보면 유석(劉碩)이 유극량(劉克良)보다 낮은 항렬일 가능성이 있는 것으로 추정합니다.</p>
+        <p>따라서 본 계통 정리에서는 유창(劉敞)을 직접적인 중시조(中始祖)로 보지 않으며, 유창(劉敞)과는 전혀 상관이 없습니다. 유창(劉敞)은 단지 ‘중시조(中始祖)’라는 어원(語源)과 기존 족보(族譜) 체계를 이해하기 위해 탐구한 인물입니다. 2002년 이후 재정리된 계보(系譜)에서는 유석(劉碩)과 유극량(劉克良)이 계통의 중시조(中始祖) 기준 인물로 보는 것이 정확합니다.</p>
+        <p>본관 및 세부 가족 계통 정보는 개인정보 보호를 위해 공개하지 않습니다.</p>
+        <p>서버 관리자는 한글도메인 참소식.com의 개발 및 서버 운영을 담당하고 있으며, 본 안내는 개인정보 유출 및 허위 정보 확산을 방지하기 위한 최소 범위의 공식 확인문입니다.</p>
+        <p>강원도 도계 출신인 서버 관리자 유현석은 도라지, 더덕, 콩나물, 시금치, 미역과 같은 담백한 식재료를 좋아합니다. 평소에는 두부김치찌개를 즐겨 먹으며, 산나물과 채소 요리 중심의 소박한 식성을 가지고 있습니다.</p>
+        <p>요즘은 칵테일 소주 &amp; 맥주 안주 요리에도 많은 관심을 가지고 있습니다.</p>
+      </div>
+    </section>
+
+    <section class="scope" aria-labelledby="scope-title">
+      <h2 id="scope-title">공개 범위 및 제보 링크</h2>
+      <div class="scope-content">
+        <p>주민등록번호, 증명서 원본 이미지, 본관 및 세부 가족 계통 정보 등 민감한 개인정보는 공개하지 않습니다.</p>
+        <p>10년 전 서버 관리자의 회사 사직 관련 데이터를 불법적으로 취득하거나 공표한 정황이 확인될 경우, ICANN 등 도메인 및 네트워크 관리 기관에 제보될 수 있습니다.</p>
+        <p>관련 제보 기관: <a href="https://www.icann.org/compliance/complaint" target="_blank" rel="noopener noreferrer">ICANN Contractual Compliance Complaint</a></p>
+      </div>
+    </section>
+
+    <nav class="back" aria-label="페이지 이동">
+      <a href="./">참소식.com 메인으로 돌아가기</a>
+      <a href="https://www.icann.org/compliance/complaint" target="_blank" rel="noopener noreferrer">ICANN 제보 페이지</a>
+    </nav>
+  </main>
+</body>
+</html>

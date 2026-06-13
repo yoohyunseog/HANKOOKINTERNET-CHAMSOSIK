@@ -1,0 +1,492 @@
+{
+  "timestamp": "2026-06-07T23:15:39.482159",
+  "model": "kimi-k2.5:cloud",
+  "keyword_count": 3,
+  "analyze_subtitles": true,
+  "analysis_source": "youtube",
+  "keywords": [
+    {
+      "keyword": "오늘의 주요 뉴스",
+      "is_fixed": true,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "SK 삼성",
+      "is_fixed": false,
+      "views": [
+        69343,
+        27837
+      ],
+      "video_count": 2,
+      "videos": [
+        {
+          "title": "삼성전자·SK하이닉스 2분기 또 최대 실적 전망 / 연합뉴스TV (YonhapnewsTV)",
+          "video_id": "-S-PoVIGsmo",
+          "views": 69343,
+          "upload_date": "2026-06-07",
+          "url": "https://www.youtube.com/watch?v=-S-PoVIGsmo",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        },
+        {
+          "title": "SK Hynix, Samsung Electronics Leveraged ETFs… How Did They Become Poison Causing a Fearful Market...",
+          "video_id": "rDQuzFnX66Q",
+          "views": 27837,
+          "upload_date": "2026-06-07",
+          "url": "https://www.youtube.com/watch?v=rDQuzFnX66Q",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        }
+      ],
+      "max": 3.1876,
+      "min": 0.0274,
+      "nb_score": 116.4224,
+      "avg_views": 48590.0,
+      "total_views": 97180
+    },
+    {
+      "keyword": "SK 삼성 LG",
+      "is_fixed": false,
+      "views": [
+        20292,
+        7675
+      ],
+      "video_count": 2,
+      "videos": [
+        {
+          "title": "Forget Samsung Electro-Mechanics and LG Innotek. 'This' Material, Parts, and Equipment Stock You ...",
+          "video_id": "Uiv7hJCTLUg",
+          "views": 20292,
+          "upload_date": "2026-06-07",
+          "url": "https://www.youtube.com/watch?v=Uiv7hJCTLUg",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        },
+        {
+          "title": "삼성전자, SK하이닉스, LG전자, 현대차, 네이버, K증시 반도체, 젠슨황관련주, 객관적으로 판단해봅시다. 걱정이 커질때 **가 나온다.",
+          "video_id": "-mFS9xHJVkI",
+          "views": 7675,
+          "upload_date": "2026-06-07",
+          "url": "https://www.youtube.com/watch?v=-mFS9xHJVkI",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        }
+      ],
+      "max": 3.1501,
+      "min": 0.1938,
+      "nb_score": 16.2526,
+      "avg_views": 13983.5,
+      "total_views": 27967
+    },
+    {
+      "keyword": "대통령 8일 4부",
+      "is_fixed": false,
+      "views": [
+        8689,
+        1889,
+        7513,
+        1019
+      ],
+      "video_count": 4,
+      "videos": [
+        {
+          "title": "President Lee to Hold 1st Anniversary Press Conference Tomorrow...'Irreplaceable Republic of Kore...",
+          "video_id": "C6_lo4ozQbo",
+          "views": 8689,
+          "upload_date": "2026-06-07",
+          "url": "https://www.youtube.com/watch?v=C6_lo4ozQbo",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        },
+        {
+          "title": "후임 총리에 3인 두고 고심..한성숙 후보자 낙점 배경 / SBS 8뉴스",
+          "video_id": "laUKNXq3z7g",
+          "views": 1889,
+          "upload_date": "2026-06-07",
+          "url": "https://www.youtube.com/watch?v=laUKNXq3z7g",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        },
+        {
+          "title": "내일 취임 1년 기자회견...'조작기소 특검' 등 입장 주목 / YTN",
+          "video_id": "k3fzLZKagzI",
+          "views": 7513,
+          "upload_date": "2026-06-07",
+          "url": "https://www.youtube.com/watch?v=k3fzLZKagzI",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        },
+        {
+          "title": "이 대통령, 내일(8일) 취임 1주년 기자회견 / KBS  2026.06.07.",
+          "video_id": "M17buOtJnz0",
+          "views": 1019,
+          "upload_date": "2026-06-07",
+          "url": "https://www.youtube.com/watch?v=M17buOtJnz0",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        }
+      ],
+      "max": 1.7288,
+      "min": 2.3235,
+      "nb_score": 0.744,
+      "avg_views": 4777.5,
+      "total_views": 19110
+    },
+    {
+      "keyword": "젠슨 최태원",
+      "is_fixed": false,
+      "views": [
+        7473,
+        1742,
+        2076,
+        8323,
+        3952,
+        2035,
+        957
+      ],
+      "video_count": 7,
+      "videos": [
+        {
+          "title": "젠슨 황 딸, 최태원에 소맥 제조를? [현장영상] / 채널A",
+          "video_id": "e8UkeTj1bc4",
+          "views": 7473,
+          "upload_date": "2026-06-07",
+          "url": "https://www.youtube.com/watch?v=e8UkeTj1bc4",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        },
+        {
+          "title": "[Breaking] Jensen Huang arrives for a 'gganbu' meeting with Chey Tae-won [On-site Video] / Channel A",
+          "video_id": "1jT-x775MZc",
+          "views": 1742,
+          "upload_date": "2026-06-07",
+          "url": "https://www.youtube.com/watch?v=1jT-x775MZc",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        },
+        {
+          "title": "젠슨 황, 최태원 또 만난 이유는…'4가지 선물'의 진짜 의미 [따져보니] [뉴스7]",
+          "video_id": "vyt-48aqg0w",
+          "views": 2076,
+          "upload_date": "2026-06-07",
+          "url": "https://www.youtube.com/watch?v=vyt-48aqg0w",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        },
+        {
+          "title": "젠슨 황, 최태원과 '깐부회동'…정의선과 점심도 / 연합뉴스TV (YonhapnewsTV)",
+          "video_id": "-GcQ-qi-BYs",
+          "views": 8323,
+          "upload_date": "2026-06-07",
+          "url": "https://www.youtube.com/watch?v=-GcQ-qi-BYs",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        },
+        {
+          "title": "[현장영상+] 젠슨 황, 제2의 깐부회동...SK 최태원·경영진과 '치맥' / YTN",
+          "video_id": "YSe3QbaO5fY",
+          "views": 3952,
+          "upload_date": "2026-06-07",
+          "url": "https://www.youtube.com/watch?v=YSe3QbaO5fY",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        },
+        {
+          "title": "최태원·젠슨 황의 러브샷 [현장영상] / 채널A",
+          "video_id": "NFPUA5vNWb4",
+          "views": 2035,
+          "upload_date": "2026-06-07",
+          "url": "https://www.youtube.com/watch?v=NFPUA5vNWb4",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        },
+        {
+          "title": "[현장영상] 젠슨 황, 최태원과 '깐부 회동'…하닉·텔레콤 동석 / 연합뉴스TV (YonhapnewsTV)",
+          "video_id": "FbXohlwuUhU",
+          "views": 957,
+          "upload_date": "2026-06-07",
+          "url": "https://www.youtube.com/watch?v=FbXohlwuUhU",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        }
+      ],
+      "max": 0.9909,
+      "min": 1.9424,
+      "nb_score": 0.5101,
+      "avg_views": 3794.0,
+      "total_views": 26558
+    },
+    {
+      "keyword": "대통령 8일",
+      "is_fixed": false,
+      "views": [
+        1019,
+        8689,
+        1177,
+        37574
+      ],
+      "video_count": 4,
+      "videos": [
+        {
+          "title": "이 대통령, 내일(8일) 취임 1주년 기자회견 / KBS  2026.06.07.",
+          "video_id": "M17buOtJnz0",
+          "views": 1019,
+          "upload_date": "2026-06-07",
+          "url": "https://www.youtube.com/watch?v=M17buOtJnz0",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        },
+        {
+          "title": "President Lee to Hold 1st Anniversary Press Conference Tomorrow...'Irreplaceable Republic of Kore...",
+          "video_id": "C6_lo4ozQbo",
+          "views": 8689,
+          "upload_date": "2026-06-07",
+          "url": "https://www.youtube.com/watch?v=C6_lo4ozQbo",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        },
+        {
+          "title": "내일 취임 1년 기자회견...'조작기소 특검' 등 입장 주목 / YTN",
+          "video_id": "-IWr6130Nb0",
+          "views": 1177,
+          "upload_date": "2026-06-07",
+          "url": "https://www.youtube.com/watch?v=-IWr6130Nb0",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        },
+        {
+          "title": "\"신뢰 잃은 기관, 존재 의미 없어..검경 합수본 구성\" / SBS 8뉴스 / 2026 국민의 선택",
+          "video_id": "K2CafXkWbpk",
+          "views": 37574,
+          "upload_date": "2026-06-07",
+          "url": "https://www.youtube.com/watch?v=K2CafXkWbpk",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        }
+      ],
+      "max": 0.6946,
+      "min": 1.6817,
+      "nb_score": 0.413,
+      "avg_views": 12114.75,
+      "total_views": 48459
+    },
+    {
+      "keyword": "수사 지시",
+      "is_fixed": false,
+      "views": [
+        49222,
+        1232,
+        8150,
+        2400
+      ],
+      "video_count": 4,
+      "videos": [
+        {
+          "title": "President Lee \"Orders Joint Police-Prosecution Investigation into National Election Commission\".....",
+          "video_id": "kpsyg5oDheM",
+          "views": 49222,
+          "upload_date": "2026-06-07",
+          "url": "https://www.youtube.com/watch?v=kpsyg5oDheM",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        },
+        {
+          "title": "이 대통령, “참정권 침해 깊은 유감, 수사 지시…국회 국정조사 추진해달라” [9시 뉴스] / KBS  2026.06.07.",
+          "video_id": "FOxN2EOk6Jg",
+          "views": 1232,
+          "upload_date": "2026-06-07",
+          "url": "https://www.youtube.com/watch?v=FOxN2EOk6Jg",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        },
+        {
+          "title": "[🔴ON AIR] 선관위 수사 들어간다. 이재명 선관위 검경 합동수사 지시",
+          "video_id": "9jPgoEJe2w0",
+          "views": 8150,
+          "upload_date": "2026-06-07",
+          "url": "https://www.youtube.com/watch?v=9jPgoEJe2w0",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        },
+        {
+          "title": "[Issue Pick? Pick!] President Lee \"Orders Joint Police-Prosecution Investigation into National El...",
+          "video_id": "nmFthtWKn6U",
+          "views": 2400,
+          "upload_date": "2026-06-07",
+          "url": "https://www.youtube.com/watch?v=nmFthtWKn6U",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        }
+      ],
+      "max": 0.6419,
+      "min": 1.6416,
+      "nb_score": 0.391,
+      "avg_views": 15251.0,
+      "total_views": 61004
+    },
+    {
+      "keyword": "엔비디아 SK",
+      "is_fixed": false,
+      "views": [
+        1628
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "최태원·엔비디아 관계자와 러브샷…화기 애애 깐부회동 [현장영상] /채널A",
+          "video_id": "jjBP0_v7q34",
+          "views": 1628,
+          "upload_date": "2026-06-07",
+          "url": "https://www.youtube.com/watch?v=jjBP0_v7q34",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "삼성 LG",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "경제전쟁터 관세",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "관세 국경",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "글로벌 경제전쟁터 관세",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "경제전쟁터 관세 국경",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "관세 국경 안보",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "트럼프와 맞서라고 한국도",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "지시 국회",
+      "is_fixed": false,
+      "views": [
+        1262
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "이 대통령, “참정권 침해 깊은 유감, 수사 지시…국회 국정조사 추진해달라” [9시 뉴스] / KBS  2026.06.07.",
+          "video_id": "FOxN2EOk6Jg",
+          "views": 1262,
+          "upload_date": "2026-06-07",
+          "url": "https://www.youtube.com/watch?v=FOxN2EOk6Jg",
+          "subtitle_summary": "요약 생성에 실패했습니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    }
+  ]
+}

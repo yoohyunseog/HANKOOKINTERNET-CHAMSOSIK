@@ -1,0 +1,89 @@
+{
+  "schema": "pc-part-nb-collector-file.v1",
+  "updatedAt": "2026-06-14T03:55:18.411+09:00",
+  "category": "RAM",
+  "id": "ram-crucial-ddr5-6400-cl52-cudimm-64gb",
+  "name": "Crucial DDR5-6400 CL52 CUDIMM 64GB",
+  "maker": "Crucial",
+  "platform": "DDR5",
+  "estimatedPriceKrw": 1438950,
+  "priceBand": "60만원 이상",
+  "speedLabel": "6400MHz",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "RAM",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 70,
+  "valueIndex": 4.9,
+  "aiUseScore": 46,
+  "powerWatts": 0,
+  "tags": [
+    "CUDIMM",
+    "ECC"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "RAM",
+    "partId": "ram-crucial-ddr5-6400-cl52-cudimm-64gb",
+    "partName": "Crucial DDR5-6400 CL52 CUDIMM 64GB",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "RAM",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 700,
+      "value": 100,
+      "aiFit": 460,
+      "priceEfficiency": 70,
+      "powerEfficiency": 700
+    },
+    "nbVector": [
+      100,
+      700,
+      100,
+      460,
+      70,
+      700
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 246.471,
+    "nbMin": 364.129,
+    "weightedScore": 290,
+    "nbBand": "100~499",
+    "summary": "RAM Crucial DDR5-6400 CL52 CUDIMM 64GB 부품을 속도 중심 N/B 데이터베이스 점수 290점으로 저장했습니다."
+  },
+  "nbWeightedScore": 290,
+  "nbMax": 246.471,
+  "nbMin": 364.129,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Crucial%20DDR5-6400%2064GB%20RAM%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "CUDIMM module with Clock Driver and On-die ECC. CL52-52-52-103 timings.",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

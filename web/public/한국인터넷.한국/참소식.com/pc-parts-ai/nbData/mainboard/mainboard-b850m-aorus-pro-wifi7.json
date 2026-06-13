@@ -1,0 +1,90 @@
+{
+  "schema": "pc-part-nb-collector-file.v1",
+  "updatedAt": "2026-06-14T03:55:15.583+09:00",
+  "category": "Mainboard",
+  "id": "mainboard-b850m-aorus-pro-wifi7",
+  "name": "B850M AORUS PRO WIFI7",
+  "maker": "Gigabyte",
+  "platform": "AMD AM5",
+  "estimatedPriceKrw": 250170,
+  "priceBand": "15~30만원",
+  "speedLabel": "DDR5 8600MHz",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "Mainboard",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 75,
+  "valueIndex": 30,
+  "aiUseScore": 49,
+  "powerWatts": 0,
+  "tags": [
+    "WiFi7",
+    "PCIe 5.0",
+    "M-ATX"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "Mainboard",
+    "partId": "mainboard-b850m-aorus-pro-wifi7",
+    "partName": "B850M AORUS PRO WIFI7",
+    "speed": {
+      "score": 100,
+      "weight": 0.32,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "Mainboard",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 750,
+      "value": 400,
+      "aiFit": 490,
+      "priceEfficiency": 400,
+      "powerEfficiency": 750
+    },
+    "nbVector": [
+      100,
+      750,
+      400,
+      490,
+      400,
+      750
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 390.471,
+    "nbMin": 382.764,
+    "weightedScore": 364,
+    "nbBand": "100~499",
+    "summary": "Mainboard B850M AORUS PRO WIFI7 부품을 속도 중심 N/B 데이터베이스 점수 364점으로 저장했습니다."
+  },
+  "nbWeightedScore": 364,
+  "nbMax": 390.471,
+  "nbMin": 382.764,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Gigabyte%20B850M%20AORUS%20PRO%20WIFI7%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "Supports AMD B850 chipset, PCIe 5.0 x16, and DDR5 memory up to 8600MHz.",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

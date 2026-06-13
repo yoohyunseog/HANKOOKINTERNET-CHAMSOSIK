@@ -1,0 +1,95 @@
+{
+  "schema": "pc-part-nb-collector-file.v1",
+  "updatedAt": "2026-06-14T03:55:10.373+09:00",
+  "category": "GPU",
+  "id": "gpu-zotac-gaming-geforce-rtx-4070-ti-super-solid-oc",
+  "name": "ZOTAC GAMING GeForce RTX 4070 Ti SUPER Solid OC",
+  "maker": "ZOTAC",
+  "platform": "NVIDIA",
+  "estimatedPriceKrw": 1250000,
+  "priceBand": "60만원 이상",
+  "speedLabel": "OC",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "GPU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 85,
+  "valueIndex": 6.8,
+  "aiUseScore": 85,
+  "powerWatts": 285,
+  "tags": [
+    "gaming",
+    "ai"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "GPU",
+    "partId": "gpu-zotac-gaming-geforce-rtx-4070-ti-super-solid-oc",
+    "partName": "ZOTAC GAMING GeForce RTX 4070 Ti SUPER Solid OC",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "GPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 850,
+      "value": 100,
+      "aiFit": 850,
+      "priceEfficiency": 80,
+      "powerEfficiency": 100
+    },
+    "nbVector": [
+      100,
+      850,
+      100,
+      850,
+      80,
+      100
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 152.805,
+    "nbMin": 338.238,
+    "weightedScore": 323,
+    "nbBand": "100~499",
+    "summary": "GPU ZOTAC GAMING GeForce RTX 4070 Ti SUPER Solid OC 부품을 속도 중심 N/B 데이터베이스 점수 323점으로 저장했습니다."
+  },
+  "nbWeightedScore": 323,
+  "nbMax": 152.805,
+  "nbMin": 338.238,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=RTX%204070%20Ti%20Super%20ZOTAC%20Gaming%20OC%20Solid",
+  "notes": "ZOTAC GAMING GeForce RTX 4070 Ti SUPER Solid OC은 게임, 작업, AI 활용을 함께 검토할 그래픽카드 후보입니다.",
+  "textRepair": {
+    "checkedAt": "2026-06-14T03:55:10.373+09:00",
+    "method": "ai-text-sanity-rules",
+    "repairedFields": [
+      "notes"
+    ]
+  },
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

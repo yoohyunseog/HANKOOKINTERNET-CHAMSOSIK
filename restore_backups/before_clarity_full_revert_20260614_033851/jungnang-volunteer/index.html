@@ -1,0 +1,1390 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>중랑구 관련 지역 소식 기록 | 참소식.com</title>
+  <meta name="description" content="중랑구의 생활, 문화, 행사, 현장 이슈 흐름을 기록, 제보, 공개 자료 기준으로 정리하고 최근 1~2주 유튜브 영상을 모아 보여주는 페이지입니다.">
+  <link rel="canonical" href="https://참소식.com/jungnang-volunteer/">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    :root {
+      --green-950: #002f24;
+      --green-900: #034333;
+      --green-800: #075a43;
+      --green-700: #08704f;
+      --green-100: #e8f6ef;
+      --pink-100: #fdecef;
+      --ink: #07352d;
+      --text: #243d4a;
+      --muted: #607684;
+      --line: #d6e3ea;
+      --paper: #ffffff;
+      --bg: #f5f9fb;
+      --shadow: 0 18px 42px rgba(15, 49, 64, .11);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", sans-serif;
+      color: var(--text);
+      background:
+        linear-gradient(180deg, rgba(255,255,255,.55), rgba(245,249,251,.92)),
+        radial-gradient(circle at 7% 18%, rgba(255, 197, 207, .23), transparent 25%),
+        radial-gradient(circle at 92% 84%, rgba(7, 112, 79, .12), transparent 26%),
+        var(--bg);
+    }
+
+    body::before,
+    body::after {
+      content: "";
+      position: fixed;
+      z-index: -1;
+      width: 330px;
+      height: 150px;
+      bottom: 0;
+      opacity: .24;
+      background:
+        linear-gradient(135deg, transparent 16px, rgba(7, 112, 79, .25) 17px, transparent 18px),
+        linear-gradient(45deg, transparent 42px, rgba(7, 112, 79, .19) 43px, transparent 44px);
+      background-size: 44px 44px, 70px 70px;
+    }
+
+    body::before {
+      left: 0;
+    }
+
+    body::after {
+      right: 0;
+      transform: scaleX(-1);
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .topbar {
+      min-height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(90deg, var(--green-950), var(--green-900) 50%, var(--green-950));
+      color: #fff;
+      box-shadow: 0 12px 28px rgba(2, 47, 36, .24);
+    }
+
+    .topbar-inner {
+      width: min(1200px, calc(100% - 42px));
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: baseline;
+      gap: 12px;
+      font-weight: 950;
+      color: #e8fff6;
+      letter-spacing: 0;
+    }
+
+    .brand strong {
+      font-size: 1.7rem;
+      line-height: 1;
+    }
+
+    .brand span {
+      color: #d4efe4;
+      font-size: .95rem;
+      font-weight: 850;
+    }
+
+    .site-menu {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .site-menu a {
+      min-height: 42px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 10px 18px;
+      border-radius: 8px;
+      border: 1px solid rgba(255,255,255,.18);
+      color: #fff;
+      text-decoration: none;
+      font-weight: 950;
+    }
+
+    .site-menu a[aria-current="page"],
+    .site-menu a:hover {
+      background: rgba(255,255,255,.13);
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,.11);
+    }
+
+    main {
+      width: min(1200px, calc(100% - 42px));
+      margin: 36px auto 54px;
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: minmax(0, 1.35fr) minmax(310px, .8fr);
+      gap: 30px;
+      min-height: 360px;
+      padding: 52px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background:
+        linear-gradient(90deg, rgba(255,255,255,.96) 0%, rgba(255,255,255,.88) 45%, rgba(255,255,255,.45) 100%),
+        url("https://images.unsplash.com/photo-1496062031456-07b8f162a322?auto=format&fit=crop&w=1400&q=70") center right / cover;
+      box-shadow: var(--shadow);
+    }
+
+    .hero::before,
+    .hero::after {
+      content: "";
+      position: absolute;
+      width: 86px;
+      height: 86px;
+      border-radius: 58% 42% 62% 38%;
+      background: rgba(249, 175, 185, .35);
+      transform: rotate(38deg);
+      pointer-events: none;
+    }
+
+    .hero::before {
+      left: -26px;
+      bottom: 18px;
+    }
+
+    .hero::after {
+      right: 48px;
+      top: -28px;
+    }
+
+    .hero-content,
+    .standard-card {
+      position: relative;
+      z-index: 1;
+    }
+
+    h1 {
+      margin: 0 0 22px;
+      color: var(--ink);
+      font-size: clamp(2.5rem, 5vw, 4.2rem);
+      line-height: 1.08;
+      font-weight: 950;
+      letter-spacing: 0;
+    }
+
+    .lead {
+      max-width: 650px;
+      margin: 0 0 28px;
+      color: #496372;
+      font-size: 1.08rem;
+      line-height: 1.8;
+      font-weight: 750;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .btn {
+      min-height: 48px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      padding: 12px 22px;
+      border-radius: 8px;
+      border: 1px solid var(--green-800);
+      text-decoration: none;
+      font-weight: 950;
+    }
+
+    .btn-primary {
+      color: #fff;
+      background: var(--green-900);
+      box-shadow: 0 12px 22px rgba(3, 67, 51, .2);
+    }
+
+    .btn-ghost {
+      color: var(--green-900);
+      background: rgba(255,255,255,.82);
+    }
+
+    .standard-card {
+      align-self: center;
+      padding: 28px;
+      border-radius: 12px;
+      border: 1px solid rgba(214, 227, 234, .95);
+      background: rgba(255,255,255,.9);
+      box-shadow: 0 16px 36px rgba(15, 49, 64, .13);
+      backdrop-filter: blur(6px);
+    }
+
+    .standard-card h2,
+    .section-title {
+      margin: 0;
+      color: var(--ink);
+      font-size: 1.25rem;
+      font-weight: 950;
+      letter-spacing: 0;
+    }
+
+    .standard-card h2 {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 18px;
+    }
+
+    .standard-list {
+      display: grid;
+      gap: 14px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .standard-list li {
+      display: grid;
+      grid-template-columns: 36px 1fr;
+      gap: 13px;
+      align-items: center;
+      padding-bottom: 14px;
+      border-bottom: 1px solid var(--line);
+      color: #355360;
+      line-height: 1.65;
+      font-weight: 760;
+    }
+
+    .standard-list li:last-child {
+      padding-bottom: 0;
+      border-bottom: 0;
+    }
+
+    .icon-box {
+      width: 36px;
+      height: 36px;
+      display: grid;
+      place-items: center;
+      border-radius: 9px;
+      color: var(--green-800);
+      background: var(--green-100);
+      font-size: 1.15rem;
+    }
+
+    .summary-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+      margin-top: 26px;
+    }
+
+    .summary-card,
+    .panel {
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: var(--paper);
+      box-shadow: 0 12px 28px rgba(15, 49, 64, .08);
+    }
+
+    .summary-card {
+      display: grid;
+      grid-template-columns: 82px 1fr 24px;
+      gap: 18px;
+      align-items: center;
+      min-height: 140px;
+      padding: 28px;
+      text-decoration: none;
+    }
+
+    .summary-card:nth-child(2) .summary-icon,
+    .summary-card:nth-child(3) .summary-icon {
+      background: var(--pink-100);
+    }
+
+    .summary-icon {
+      width: 72px;
+      height: 72px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: var(--green-100);
+      color: var(--green-800);
+      font-size: 2rem;
+    }
+
+    .summary-card strong {
+      display: block;
+      margin-bottom: 8px;
+      color: var(--ink);
+      font-size: 1.08rem;
+      font-weight: 950;
+    }
+
+    .summary-card p {
+      margin: 0;
+      color: #506a78;
+      line-height: 1.65;
+      font-weight: 720;
+    }
+
+    .summary-card .bi-chevron-right {
+      color: var(--ink);
+      font-size: 1.2rem;
+    }
+
+    .panel {
+      margin-top: 26px;
+      padding: 26px;
+    }
+
+    .record-table {
+      width: 100%;
+      margin-top: 16px;
+      border-collapse: collapse;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+      font-size: .96rem;
+    }
+
+    .record-table th,
+    .record-table td {
+      padding: 13px 18px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .record-table tr:last-child th,
+    .record-table tr:last-child td {
+      border-bottom: 0;
+    }
+
+    .record-table th {
+      width: 180px;
+      color: var(--ink);
+      background: #f7fbf8;
+      font-weight: 950;
+    }
+
+    .record-table td {
+      color: #415b68;
+      font-weight: 720;
+    }
+
+    .note {
+      display: grid;
+      grid-template-columns: 30px 1fr;
+      gap: 12px;
+      align-items: start;
+      margin-top: 16px;
+      padding: 16px 18px;
+      border: 1px solid #c9ddec;
+      border-radius: 8px;
+      color: #315162;
+      background: #f7fbff;
+      line-height: 1.7;
+      font-weight: 760;
+    }
+
+    .note i {
+      color: var(--green-800);
+      font-size: 1.2rem;
+    }
+
+    .youtube-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 18px;
+      margin-bottom: 18px;
+    }
+
+    .youtube-title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--ink);
+      font-weight: 950;
+    }
+
+    .youtube-title i {
+      color: #ff2c2c;
+      font-size: 1.55rem;
+    }
+
+    .youtube-meta {
+      color: #355360;
+      font-size: .9rem;
+      font-weight: 850;
+      text-align: right;
+    }
+
+    .youtube-grid {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .youtube-card {
+      display: flex;
+      flex-direction: column;
+      min-height: 100%;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      text-decoration: none;
+      box-shadow: 0 10px 22px rgba(15, 49, 64, .07);
+      transition: transform .18s ease, box-shadow .18s ease;
+    }
+
+    .youtube-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 16px 28px rgba(15, 49, 64, .11);
+    }
+
+    .youtube-thumb {
+      position: relative;
+      aspect-ratio: 16 / 9;
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+      color: var(--green-800);
+      background: linear-gradient(135deg, #e8f6ef, #f7fbff);
+      font-size: 2rem;
+    }
+
+    .youtube-thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .duration {
+      position: absolute;
+      right: 8px;
+      bottom: 8px;
+      padding: 2px 6px;
+      border-radius: 4px;
+      color: #fff;
+      background: rgba(0,0,0,.72);
+      font-size: .72rem;
+      font-weight: 850;
+    }
+
+    .youtube-body {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      gap: 8px;
+      padding: 12px;
+    }
+
+    .youtube-body strong {
+      color: var(--ink);
+      font-size: .94rem;
+      line-height: 1.45;
+      font-weight: 950;
+    }
+
+    .youtube-body p {
+      margin: 0;
+      color: #667c86;
+      font-size: .84rem;
+      line-height: 1.55;
+      font-weight: 650;
+    }
+
+    .youtube-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: auto;
+    }
+
+    .youtube-tags span {
+      padding: 5px 7px;
+      border-radius: 6px;
+      color: var(--green-800);
+      background: #edf8f2;
+      font-size: .72rem;
+      font-weight: 900;
+    }
+
+    .empty-state {
+      grid-column: 1 / -1;
+      padding: 28px;
+      border: 1px dashed var(--line);
+      border-radius: 8px;
+      color: var(--muted);
+      text-align: center;
+      font-weight: 850;
+    }
+
+    .more-button {
+      width: 100%;
+      min-height: 46px;
+      margin-top: 20px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      color: var(--green-900);
+      background: #f8fbfd;
+      font-size: 1rem;
+      font-weight: 950;
+    }
+
+    .search-section {
+      margin-top: 26px;
+      padding: 26px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: var(--paper);
+      box-shadow: 0 12px 28px rgba(15, 49, 64, .08);
+    }
+
+    .search-section h2 {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 0 0 18px;
+      color: var(--ink);
+      font-size: 1.25rem;
+      font-weight: 950;
+    }
+
+    .search-section h2 i {
+      color: var(--green-800);
+    }
+
+    .search-keywords {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 20px;
+    }
+
+    .search-keyword {
+      padding: 8px 14px;
+      border-radius: 20px;
+      border: 1px solid var(--line);
+      background: #f8fbfd;
+      color: var(--text);
+      font-size: .9rem;
+      font-weight: 750;
+      cursor: pointer;
+      transition: all .2s ease;
+    }
+
+    .search-keyword:hover {
+      background: var(--green-100);
+      border-color: var(--green-700);
+      color: var(--green-800);
+    }
+
+    .search-engines {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .search-engine-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      min-height: 48px;
+      padding: 12px 16px;
+      border-radius: 8px;
+      border: 1px solid var(--line);
+      text-decoration: none;
+      font-weight: 850;
+      transition: all .2s ease;
+    }
+
+    .search-engine-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(15, 49, 64, .12);
+    }
+
+    .search-engine-btn.google {
+      background: #fff;
+      color: #4285f4;
+      border-color: #4285f4;
+    }
+
+    .search-engine-btn.google:hover {
+      background: #4285f4;
+      color: #fff;
+    }
+
+    .search-engine-btn.bing {
+      background: #fff;
+      color: #00897b;
+      border-color: #00897b;
+    }
+
+    .search-engine-btn.bing:hover {
+      background: #00897b;
+      color: #fff;
+    }
+
+    .search-engine-btn.naver {
+      background: #fff;
+      color: #03c75a;
+      border-color: #03c75a;
+    }
+
+    .search-engine-btn.naver:hover {
+      background: #03c75a;
+      color: #fff;
+    }
+
+    .search-engine-btn.chamsosik {
+      background: linear-gradient(135deg, var(--green-900), var(--green-800));
+      color: #fff;
+      border-color: var(--green-900);
+    }
+
+    .search-engine-btn.chamsosik:hover {
+      background: linear-gradient(135deg, var(--green-800), var(--green-700));
+    }
+
+    .ai-links-section {
+      margin-top: 26px;
+      padding: 26px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: linear-gradient(135deg, #f0f9f4, #fff);
+      box-shadow: 0 12px 28px rgba(15, 49, 64, .08);
+    }
+
+    .ai-links-section h2 {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 0 0 18px;
+      color: var(--ink);
+      font-size: 1.25rem;
+      font-weight: 950;
+    }
+
+    .ai-links-section h2 i {
+      color: var(--green-800);
+    }
+
+    .ai-links-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .ai-link-card {
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      border-radius: 10px;
+      border: 1px solid var(--line);
+      background: #fff;
+      text-decoration: none;
+      transition: all .2s ease;
+    }
+
+    .ai-link-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 24px rgba(15, 49, 64, .1);
+      border-color: var(--green-700);
+    }
+
+    .ai-link-card strong {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 8px;
+      color: var(--ink);
+      font-size: 1rem;
+      font-weight: 950;
+    }
+
+    .ai-link-card strong i {
+      color: var(--green-800);
+    }
+
+    .ai-link-card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: .9rem;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 820px) {
+      .search-engines {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .ai-links-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    footer {
+      width: min(1200px, calc(100% - 42px));
+      margin: 0 auto 34px;
+      padding: 24px 0 44px;
+      color: #54707d;
+      text-align: center;
+      font-size: .95rem;
+      font-weight: 720;
+    }
+
+    @media (max-width: 1120px) {
+      .youtube-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 820px) {
+      .topbar-inner,
+      .youtube-head {
+        align-items: stretch;
+        flex-direction: column;
+      }
+
+      .site-menu {
+        justify-content: flex-start;
+      }
+
+      .hero,
+      .summary-grid,
+      .youtube-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        padding: 30px 24px;
+      }
+
+      .summary-card {
+        grid-template-columns: 70px 1fr 20px;
+        padding: 22px;
+      }
+
+      .summary-icon {
+        width: 62px;
+        height: 62px;
+      }
+
+      .youtube-meta {
+        text-align: left;
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="../common-site.css">
+  
+
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "x4jlyqheuh");
+</script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">
+        <strong>참소식.com</strong>
+        <span>· 중랑구 지역 소식 기록</span>
+      </div>
+      <nav class="site-menu" aria-label="참소식 주요 메뉴">
+        <a href="../"><i class="bi bi-house-door-fill"></i> 메인</a>
+        <a href="../ai-issue-briefing/"><i class="bi bi-broadcast"></i> 라디오 페이지</a>
+        <a href="../chat-board/"><i class="bi bi-chat-left-text"></i> 포털방</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="page-title">
+      <div class="hero-content">
+        <h1 id="page-title">중랑구<br>관련 지역 소식 기록</h1>
+        <p class="lead">
+          이 페이지는 중랑구의 생활, 문화, 행사, 현장 이슈 흐름을 공개 자료, 현장 기록,
+          방문자 제보 기준으로 나누어 정리하는 기록형 브리핑 페이지입니다.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#youtube-title"><i class="bi bi-pencil-square"></i> 기록으로 남기기</a>
+          <a class="btn btn-ghost" href="#record-title">기록 기준 자세히 보기 <i class="bi bi-chevron-right"></i></a>
+        </div>
+      </div>
+
+      <aside class="standard-card" aria-label="기록 기준">
+        <h2><span class="icon-box"><i class="bi bi-pencil-square"></i></span> 기록 기준</h2>
+        <ul class="standard-list">
+          <li><span class="icon-box"><i class="bi bi-file-earmark-check"></i></span><span>확인된 공개 자료와 현장 기록을 우선 분류합니다.</span></li>
+          <li><span class="icon-box"><i class="bi bi-chat-square-text"></i></span><span>방문자 제보는 사실 확인 전까지 별도 표시합니다.</span></li>
+          <li><span class="icon-box"><i class="bi bi-diagram-3"></i></span><span>기관, 장소, 지역 이슈 흐름은 관계 구조로 정리합니다.</span></li>
+        </ul>
+      </aside>
+    </section>
+
+    <section class="summary-grid" aria-label="핵심 분류">
+      <a class="summary-card" href="#record-title">
+        <span class="summary-icon"><i class="bi bi-balloon-heart-fill"></i></span>
+        <span>
+          <strong>생활 소식 흐름</strong>
+          <p>생활 정보, 현장 안내, 지역 변화, 주민 관심사를 분리해 흐름을 확인합니다.</p>
+        </span>
+        <i class="bi bi-chevron-right"></i>
+      </a>
+      <a class="summary-card" href="#record-title">
+        <span class="summary-icon"><i class="bi bi-calendar3"></i></span>
+        <span>
+          <strong>지역 행사·문화 기록</strong>
+          <p>행사명, 장소, 기간, 주최·주관, 문화 소식과 현장 반응을 기록 기준으로 정리합니다.</p>
+        </span>
+        <i class="bi bi-chevron-right"></i>
+      </a>
+      <a class="summary-card" href="#youtube-title">
+        <span class="summary-icon"><i class="bi bi-megaphone-fill"></i></span>
+        <span>
+          <strong>제보 정리</strong>
+          <p>방문자 메시지와 현장 제보는 공개 자료와 섞지 않고 별도 기록으로 보관합니다.</p>
+        </span>
+        <i class="bi bi-chevron-right"></i>
+      </a>
+    </section>
+
+    <section class="panel" aria-labelledby="record-title">
+      <h2 class="section-title" id="record-title">지역 소식 기록 템플릿</h2>
+      <table class="record-table">
+        <tbody>
+          <tr>
+            <th>지역</th>
+            <td>중랑구</td>
+          </tr>
+          <tr>
+            <th>분류</th>
+            <td>생활 소식, 문화 행사, 현장 이슈, 주민 관심 기록</td>
+          </tr>
+          <tr>
+            <th>확인 자료</th>
+            <td>공개 공지, 현장 사진·영상, 방문자 제보, 관리자 메모</td>
+          </tr>
+          <tr>
+            <th>정리 방식</th>
+            <td>확인됨, 확인 필요, 제보, 보류 항목으로 분리</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="note">
+        <i class="bi bi-info-circle"></i>
+        <span>확인되지 않은 내용은 단정하지 않고, 기록과 제보를 나누어 관리합니다. 라디오 DJ 멘트와 방문자 대화는 별도 라디오 페이지에서 진행합니다.</span>
+      </div>
+    </section>
+
+    <section class="panel" aria-labelledby="university-title">
+      <h2 class="section-title" id="university-title" style="display: flex; align-items: center; gap: 10px;">
+        <span class="icon-box" style="background: var(--pink-100);"><i class="bi bi-mortarboard-fill"></i></span>
+        중랑구 대학 주요 행사
+      </h2>
+      <p class="lead" style="margin: 8px 0 18px; font-size: .95rem;">중랑구 소재 대학(한국외국어대학교, 광운대학교, 서일대학교)의 주요 행사 정보를 정리합니다.</p>
+      <div id="universityEvents">
+        <div class="empty-state">대학 행사 정보를 불러오는 중입니다.</div>
+      </div>
+    </section>
+
+    <section class="search-section" aria-labelledby="search-title">
+      <h2 id="search-title"><i class="bi bi-search"></i> 관련 검색</h2>
+      <div class="search-keywords">
+        <span class="search-keyword" onclick="setSearchKeyword('중랑구 행사')">중랑구 행사</span>
+        <span class="search-keyword" onclick="setSearchKeyword('중랑구 문화센터')">중랑구 문화센터</span>
+        <span class="search-keyword" onclick="setSearchKeyword('중랑구 도서관')">중랑구 도서관</span>
+        <span class="search-keyword" onclick="setSearchKeyword('중랑구 맛집')">중랑구 맛집</span>
+        <span class="search-keyword" onclick="setSearchKeyword('중랑구 병원')">중랑구 병원</span>
+        <span class="search-keyword" onclick="setSearchKeyword('중랑구 주민센터')">중랑구 주민센터</span>
+        <span class="search-keyword" onclick="setSearchKeyword('한국외국어대학교')">한국외국어대학교</span>
+        <span class="search-keyword" onclick="setSearchKeyword('광운대학교')">광운대학교</span>
+        <span class="search-keyword" onclick="setSearchKeyword('서일대학교')">서일대학교</span>
+        <span class="search-keyword" onclick="setSearchKeyword('중랑구청')">중랑구청</span>
+      </div>
+      <div class="search-engines">
+        <a class="search-engine-btn google" id="searchGoogle" href="https://www.google.com/search?q=%EC%A4%91%EB%9E%91%EA%B5%AC" target="_blank" rel="noopener">
+          <i class="bi bi-google"></i> Google 검색
+        </a>
+        <a class="search-engine-btn bing" id="searchBing" href="https://www.bing.com/search?q=%EC%A4%91%EB%9E%91%EA%B5%AC" target="_blank" rel="noopener">
+          <i class="bi bi-microsoft"></i> Bing 검색
+        </a>
+        <a class="search-engine-btn naver" id="searchNaver" href="https://search.naver.com/search.naver?query=%EC%A4%91%EB%9E%91%EA%B5%AC" target="_blank" rel="noopener">
+          <i class="bi bi-n"></i> 네이버 검색
+        </a>
+        <a class="search-engine-btn chamsosik" href="../">
+          <i class="bi bi-house-door-fill"></i> 참소식 메인
+        </a>
+      </div>
+    </section>
+
+    <section class="ai-links-section" aria-labelledby="ai-links-title">
+      <h2 id="ai-links-title"><i class="bi bi-robot"></i> 참소식 AI 서비스</h2>
+      <div class="ai-links-grid">
+        <a class="ai-link-card" href="../ai-issue-briefing/">
+          <strong><i class="bi bi-broadcast"></i> AI 이슈 브리핑</strong>
+          <p>AI가 생성하는 실시간 라디오 방송. 최신 뉴스와 이슈를 오디오로 들어보세요.</p>
+        </a>
+        <a class="ai-link-card" href="../chat-board/">
+          <strong><i class="bi bi-chat-left-text"></i> AI 포털방</strong>
+          <p>AI와 대화하며 정보를 탐색하는 포털 게시판. 질문하고 답변받으세요.</p>
+        </a>
+        <a class="ai-link-card" href="https://참소식.com" target="_blank" rel="noopener">
+          <strong><i class="bi bi-globe"></i> 참소식 메인</strong>
+          <p>참소식.com의 모든 서비스와 최신 소식을 확인하세요.</p>
+        </a>
+      </div>
+    </section>
+
+    <section class="panel" aria-labelledby="university-youtube-title">
+      <div class="youtube-head">
+        <div>
+          <h2 class="youtube-title" id="university-youtube-title"><i class="bi bi-mortarboard-fill"></i> 대학교 인기 영상</h2>
+          <p class="lead" style="margin: 8px 0 0; font-size: .95rem;">경희대, 한국외대, 광운대, 서일대 관련 조회수 높은 영상을 모았습니다.</p>
+        </div>
+        <div class="youtube-meta" id="universityYoutubeMeta">불러오는 중</div>
+      </div>
+      <div class="youtube-grid" id="universityYoutubeGrid">
+        <div class="empty-state">대학교 관련 영상을 불러오는 중입니다.</div>
+      </div>
+    </section>
+
+    <section class="panel" aria-labelledby="youtube-title">
+      <div class="youtube-head">
+        <div>
+          <h2 class="youtube-title" id="youtube-title"><i class="bi bi-youtube"></i> 중랑구 관련 지역 소식 유튜브 정리</h2>
+          <p class="lead" style="margin: 8px 0 0; font-size: .95rem;">자동봇이 10분마다 JSON을 갱신하고, 최근 1~2주 이내에 올라온 영상만 표시합니다.</p>
+        </div>
+        <div class="youtube-meta" id="youtubeMeta">불러오는 중</div>
+      </div>
+      <div class="youtube-grid" id="youtubeGrid">
+        <div class="empty-state">유튜브 정리 JSON을 불러오는 중입니다.</div>
+      </div>
+      <button class="more-button" type="button" id="loadMoreButton">더 많은 영상 보기 <i class="bi bi-chevron-down"></i></button>
+    </section>
+  </main>
+
+  <footer>© 2026 참소식.com. 중랑구 관련 지역 소식 기록 페이지.</footer>
+
+  <script>
+    const YOUTUBE_JSON_URL = "jungnang-youtube.json";
+    const UNIVERSITY_JSON_URL = "jungnang-university-events.json";
+    const YOUTUBE_REFRESH_MS = 10 * 60 * 1000;
+    const INITIAL_VISIBLE_COUNT = 10;
+    let allYoutubeItems = [];
+    let visibleYoutubeCount = INITIAL_VISIBLE_COUNT;
+
+    const youtubeGrid = document.querySelector("#youtubeGrid");
+    const youtubeMeta = document.querySelector("#youtubeMeta");
+    const loadMoreButton = document.querySelector("#loadMoreButton");
+    const universityEventsContainer = document.querySelector("#universityEvents");
+    const universityYoutubeGrid = document.querySelector("#universityYoutubeGrid");
+    const universityYoutubeMeta = document.querySelector("#universityYoutubeMeta");
+
+    function escapeHtml(value) {
+      return String(value || "")
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#039;");
+    }
+
+    function formatDateLabel(value) {
+      if (!value) return "";
+      if (/^\d{8}$/.test(value)) {
+        return `${value.slice(0, 4)}-${value.slice(4, 6)}-${value.slice(6, 8)}`;
+      }
+      const date = new Date(value);
+      if (Number.isNaN(date.getTime())) return value;
+      return date.toLocaleString("ko-KR");
+    }
+
+    function formatViewCount(count) {
+      if (!count) return "";
+      if (count >= 1000000) return `${(count / 1000000).toFixed(1)}M`;
+      if (count >= 1000) return `${(count / 1000).toFixed(1)}K`;
+      return count.toString();
+    }
+
+    function renderUniversityYoutubeItems(data = {}) {
+      const items = Array.isArray(data.universityItems) ? data.universityItems : [];
+      universityYoutubeMeta.textContent = `갱신: ${formatDateLabel(data.updatedAt) || "대기"} · ${items.length}개`;
+
+      if (!items.length) {
+        universityYoutubeGrid.innerHTML = '<div class="empty-state">대학교 관련 영상이 없습니다.</div>';
+        return;
+      }
+
+      universityYoutubeGrid.innerHTML = items.slice(0, 6).map((item) => {
+        const title = escapeHtml(item.title || "제목 없음");
+        const channel = escapeHtml(item.channel || "YouTube");
+        const views = item.viewCount ? formatViewCount(item.viewCount) : "";
+        const date = escapeHtml(formatDateLabel(item.publishedAt));
+        const duration = escapeHtml(item.duration || "");
+        const url = escapeHtml(item.url || "https://www.youtube.com");
+        const thumb = item.thumbnail
+          ? `<img src="${escapeHtml(item.thumbnail)}" alt="">`
+          : '<i class="bi bi-youtube"></i>';
+
+        return `
+          <a class="youtube-card" href="${url}" target="_blank" rel="noopener">
+            <div class="youtube-thumb">${thumb}${duration ? `<span class="duration">${duration}</span>` : ""}</div>
+            <div class="youtube-body">
+              <strong>${title}</strong>
+              <p style="margin: 4px 0; color: #667c86; font-size: .8rem;">
+                ${views ? `<i class="bi bi-eye"></i> ${views}회` : ""} ${views && date ? "·" : ""} ${date ? date : ""}
+              </p>
+              <div class="youtube-tags">
+                <span>${channel}</span>
+              </div>
+            </div>
+          </a>
+        `;
+      }).join("");
+    }
+
+    function renderYoutubeItems(data = {}) {
+      allYoutubeItems = Array.isArray(data.items) ? data.items : [];
+      const visibleItems = allYoutubeItems.slice(0, visibleYoutubeCount);
+      youtubeMeta.textContent = `갱신: ${formatDateLabel(data.updatedAt) || "대기"} · ${allYoutubeItems.length}개`;
+
+      if (!visibleItems.length) {
+        youtubeGrid.innerHTML = '<div class="empty-state">표시할 최근 유튜브 기록이 없습니다.</div>';
+        loadMoreButton.hidden = true;
+        return;
+      }
+
+      youtubeGrid.innerHTML = visibleItems.map((item) => {
+        const title = escapeHtml(item.title || "제목 없음");
+        const summary = escapeHtml(item.summary || "중랑구 관련 지역 소식 유튜브 항목입니다.");
+        const channel = escapeHtml(item.channel || "YouTube");
+        const query = escapeHtml(item.query || "중랑구 지역 소식");
+        const status = escapeHtml(item.status || "확인 필요");
+        const date = escapeHtml(formatDateLabel(item.publishedAt));
+        const duration = escapeHtml(item.duration || "");
+        const url = escapeHtml(item.url || "https://www.youtube.com/results?search_query=%EC%A4%91%EB%9E%91%EA%B5%AC%20%ED%96%89%EC%82%AC");
+        const thumb = item.thumbnail
+          ? `<img src="${escapeHtml(item.thumbnail)}" alt="">`
+          : '<i class="bi bi-youtube"></i>';
+
+        return `
+          <a class="youtube-card" href="${url}" target="_blank" rel="noopener">
+            <div class="youtube-thumb">${thumb}${duration ? `<span class="duration">${duration}</span>` : ""}</div>
+            <div class="youtube-body">
+              <strong>${title}</strong>
+              <p>${summary}</p>
+              <div class="youtube-tags">
+                <span>${channel}</span>
+                <span>${query}</span>
+                <span>${status}</span>
+                ${date ? `<span>${date}</span>` : ""}
+              </div>
+            </div>
+          </a>
+        `;
+      }).join("");
+
+      loadMoreButton.hidden = visibleYoutubeCount >= allYoutubeItems.length;
+    }
+
+    async function loadYoutubeJson() {
+      try {
+        const response = await fetch(`${YOUTUBE_JSON_URL}?t=${Date.now()}`, { cache: "no-store" });
+        if (!response.ok) throw new Error(`JSON ${response.status}`);
+        const data = await response.json();
+        renderYoutubeItems(data);
+        renderUniversityYoutubeItems(data);
+      } catch (error) {
+        youtubeMeta.textContent = `불러오기 실패: ${error.message}`;
+        youtubeGrid.innerHTML = '<div class="empty-state">유튜브 JSON을 아직 불러오지 못했습니다.</div>';
+        universityYoutubeGrid.innerHTML = '<div class="empty-state">대학교 관련 영상을 불러오지 못했습니다.</div>';
+        loadMoreButton.hidden = true;
+      }
+    }
+
+    loadMoreButton.addEventListener("click", () => {
+      visibleYoutubeCount += 10;
+      renderYoutubeItems({ items: allYoutubeItems, updatedAt: youtubeMeta.textContent.replace(/^갱신:\s*/, "").split(" · ")[0] });
+    });
+
+    loadYoutubeJson();
+    setInterval(loadYoutubeJson, YOUTUBE_REFRESH_MS);
+
+    // 대학 행사 렌더링
+    function getStatusBadge(status) {
+      const statusColors = {
+        "오늘": { bg: "#dc3545", color: "#fff" },
+        "진행중": { bg: "#198754", color: "#fff" },
+        "이번주": { bg: "#0d6efd", color: "#fff" },
+        "예정": { bg: "#6c757d", color: "#fff" },
+        "종료": { bg: "#adb5bd", color: "#212529" },
+        "미정": { bg: "#e9ecef", color: "#495057" }
+      };
+      const style = statusColors[status] || statusColors["미정"];
+      return `<span style="display: inline-block; padding: 3px 8px; border-radius: 4px; font-size: .75rem; font-weight: 850; background: ${style.bg}; color: ${style.color};">${escapeHtml(status)}</span>`;
+    }
+
+    function getEventTypeIcon(type) {
+      const icons = {
+        "입학행사": "bi-person-plus-fill",
+        "학사행사": "bi-book-fill",
+        "산학행사": "bi-building",
+        "문화행사": "bi-music-note-beamed",
+        "국제행사": "bi-globe",
+        "기타행사": "bi-calendar-event"
+      };
+      return icons[type] || icons["기타행사"];
+    }
+
+    function renderUniversityEvents(data = {}, youtubeData = {}) {
+      const universities = Array.isArray(data.universities) ? data.universities : [];
+      const recentEvents = Array.isArray(data.recentEvents) ? data.recentEvents : [];
+      const todayHighlight = Array.isArray(data.todayHighlight) ? data.todayHighlight : [];
+      const universityVideos = Array.isArray(youtubeData.universityItems) ? youtubeData.universityItems : [];
+      
+      if (!universities.length) {
+        universityEventsContainer.innerHTML = '<div class="empty-state">대학 행사 정보를 불러오지 못했습니다.</div>';
+        return;
+      }
+      
+      // 대학별 영상 필터링 함수
+      function getVideosForUniversity(uniName) {
+        const keywords = {
+          '한국외국어대학교': ['한국외국어대학교', '한국외대', '외대'],
+          '광운대학교': ['광운대학교', '광운대'],
+          '서일대학교': ['서일대학교', '서일대'],
+          '경희대학교': ['경희대학교', '경희대']
+        };
+        const keys = keywords[uniName] || [uniName];
+        return universityVideos.filter(v => {
+          const title = (v.title || '').toLowerCase();
+          const query = (v.query || '').toLowerCase();
+          return keys.some(k => title.includes(k.toLowerCase()) || query.includes(k.toLowerCase()));
+        }).slice(0, 3);
+      }
+
+      let html = "";
+
+      // 오늘의 행사 하이라이트
+      if (todayHighlight.length > 0) {
+        html += `
+          <div style="margin-bottom: 24px; padding: 20px; border: 2px solid #dc3545; border-radius: 10px; background: linear-gradient(135deg, #fff5f5, #fff);">
+            <h3 style="margin: 0 0 14px; font-size: 1.1rem; color: #dc3545; display: flex; align-items: center; gap: 8px;">
+              <i class="bi bi-star-fill"></i> 오늘의 행사
+            </h3>
+            <div style="display: grid; gap: 10px;">
+              ${todayHighlight.map(event => `
+                <div style="display: flex; align-items: center; gap: 12px; padding: 12px; background: #fff; border-radius: 8px; border: 1px solid #e9ecef;">
+                  <span class="icon-box" style="background: #fdecef; color: #dc3545;"><i class="bi ${getEventTypeIcon(event.type)}"></i></span>
+                  <div style="flex: 1;">
+                    <strong style="color: var(--ink); font-size: .95rem;">${escapeHtml(event.title)}</strong>
+                    <div style="color: #667c86; font-size: .85rem; margin-top: 4px;">
+                      <span style="font-weight: 850;">${escapeHtml(event.shortName || event.university)}</span>
+                      ${event.venue ? `· ${escapeHtml(event.venue)}` : ""}
+                    </div>
+                  </div>
+                  ${getStatusBadge(event.status)}
+                </div>
+              `).join("")}
+            </div>
+          </div>
+        `;
+      }
+
+      // 대학별 행사
+      html += `<div style="display: grid; gap: 20px;">`;
+      
+      for (const uni of universities) {
+        const events = Array.isArray(uni.events) ? uni.events : [];
+        if (events.length === 0) continue;
+
+        html += `
+          <div style="border: 1px solid var(--line); border-radius: 10px; overflow: hidden; background: #fff;">
+            <div style="padding: 16px 20px; background: linear-gradient(90deg, var(--green-950), var(--green-900)); color: #fff;">
+              <h3 style="margin: 0; font-size: 1.05rem; display: flex; align-items: center; gap: 10px;">
+                <i class="bi bi-mortarboard-fill"></i>
+                ${escapeHtml(uni.name)}
+                ${uni.shortName ? `<span style="font-size: .85rem; opacity: .8;">(${escapeHtml(uni.shortName)})</span>` : ""}
+              </h3>
+              ${uni.location ? `<div style="font-size: .85rem; opacity: .8; margin-top: 4px;"><i class="bi bi-geo-alt"></i> ${escapeHtml(uni.location)}</div>` : ""}
+            </div>
+            <div style="padding: 12px;">
+              ${events.slice(0, 5).map(event => `
+                <div style="display: grid; grid-template-columns: 1fr auto; gap: 12px; align-items: center; padding: 12px; border-bottom: 1px solid var(--line);">
+                  <div>
+                    <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 6px;">
+                      <i class="bi ${getEventTypeIcon(event.type)}" style="color: var(--green-800);"></i>
+                      <strong style="color: var(--ink); font-size: .95rem;">${escapeHtml(event.title)}</strong>
+                    </div>
+                    <div style="color: #667c86; font-size: .85rem; line-height: 1.5;">
+                      ${event.date ? `<span style="margin-right: 12px;"><i class="bi bi-calendar3"></i> ${escapeHtml(event.date)}</span>` : ""}
+                      ${event.venue ? `<span><i class="bi bi-geo-alt"></i> ${escapeHtml(event.venue)}</span>` : ""}
+                    </div>
+                    ${event.description ? `<p style="margin: 8px 0 0; color: #506a78; font-size: .85rem; line-height: 1.6;">${escapeHtml(event.description)}</p>` : ""}
+                    <div style="margin-top: 10px; display: flex; flex-wrap: wrap; gap: 6px;">
+                      <a href="https://www.google.com/search?q=${encodeURIComponent(event.title)}" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 4px; padding: 4px 10px; border-radius: 4px; background: #fff; border: 1px solid #4285f4; color: #4285f4; font-size: .75rem; font-weight: 750; text-decoration: none;"><i class="bi bi-google"></i> Google</a>
+                      <a href="https://www.bing.com/search?q=${encodeURIComponent(event.title)}" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 4px; padding: 4px 10px; border-radius: 4px; background: #fff; border: 1px solid #00897b; color: #00897b; font-size: .75rem; font-weight: 750; text-decoration: none;"><i class="bi bi-microsoft"></i> Bing</a>
+                      <a href="https://search.naver.com/search.naver?query=${encodeURIComponent(event.title)}" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 4px; padding: 4px 10px; border-radius: 4px; background: #fff; border: 1px solid #03c75a; color: #03c75a; font-size: .75rem; font-weight: 750; text-decoration: none;"><i class="bi bi-n"></i> 네이버</a>
+                    </div>
+                  </div>
+                  ${getStatusBadge(event.status)}
+                </div>
+              `).join("")}
+            </div>
+            ${(() => {
+              const videos = getVideosForUniversity(uni.name);
+              if (!videos.length) return '';
+              return `
+            <div style="padding: 12px 16px; background: #fefefe; border-top: 1px solid var(--line);">
+              <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 10px;">
+                <i class="bi bi-youtube" style="color: #ff0000;"></i>
+                <strong style="color: #333; font-size: .85rem;">관련 영상</strong>
+                <span style="font-size: .75rem; color: #888;">(${videos.length}개)</span>
+              </div>
+              <div style="display: grid; gap: 8px;">
+                ${videos.map(v => `
+                <a href="${escapeHtml(v.url || '#')}" target="_blank" rel="noopener" style="display: flex; gap: 10px; padding: 8px; background: #fafafa; border-radius: 6px; text-decoration: none; border: 1px solid #eee;">
+                  <div style="position: relative; flex-shrink: 0; width: 80px; height: 45px; border-radius: 4px; overflow: hidden; background: #000;">
+                    ${v.thumbnail ? `<img src="${escapeHtml(v.thumbnail)}" style="width: 100%; height: 100%; object-fit: cover;">` : '<i class="bi bi-youtube" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #fff; font-size: 1.2rem;"></i>'}
+                    ${v.duration ? `<span style="position: absolute; bottom: 2px; right: 2px; background: rgba(0,0,0,0.8); color: #fff; font-size: .65rem; padding: 1px 4px; border-radius: 2px;">${escapeHtml(v.duration)}</span>` : ''}
+                  </div>
+                  <div style="flex: 1; min-width: 0;">
+                    <div style="font-size: .8rem; color: #333; line-height: 1.3; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;">${escapeHtml(v.title || '제목 없음')}</div>
+                    <div style="font-size: .7rem; color: #888; margin-top: 4px;">
+                      ${v.viewCount ? `<i class="bi bi-eye" style="font-size: .65rem;"></i> ${v.viewCount >= 1000 ? (v.viewCount/1000).toFixed(1) + 'K' : v.viewCount}회` : ''}
+                      ${v.channel ? `· ${escapeHtml(v.channel)}` : ''}
+                    </div>
+                  </div>
+                </a>
+                `).join('')}
+              </div>
+            </div>`;
+            })()}
+            <div style="padding: 12px 20px; background: #f8fbfd; border-top: 1px solid var(--line); text-align: right;">
+              <a href="${escapeHtml(uni.website)}" target="_blank" rel="noopener" style="color: var(--green-800); font-weight: 850; text-decoration: none; font-size: .9rem;">
+                <i class="bi bi-box-arrow-up-right"></i> ${escapeHtml(uni.name)} 공식 홈페이지
+              </a>
+            </div>
+            ${Array.isArray(uni.news) && uni.news.length > 0 ? `
+            <div style="padding: 12px 16px; background: #fff8f0; border-top: 1px solid #f0e0d0;">
+              <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 10px;">
+                <i class="bi bi-newspaper" style="color: #e67e22;"></i>
+                <strong style="color: #d35400; font-size: .9rem;">주요 소식</strong>
+              </div>
+              ${uni.news.map(n => `
+                <div style="padding: 8px 12px; margin-bottom: 8px; background: #fff; border-radius: 6px; border-left: 3px solid ${n.importance === 'high' ? '#e74c3c' : n.importance === 'medium' ? '#f39c12' : '#95a5a6'};">
+                  <div style="display: flex; align-items: center; gap: 6px; margin-bottom: 4px;">
+                    <span style="padding: 2px 6px; border-radius: 3px; font-size: .7rem; font-weight: 850; background: ${n.category === '연예인입학' ? '#e74c3c' : n.category === '특이점' ? '#3498db' : '#95a5a6'}; color: #fff;">${escapeHtml(n.category)}</span>
+                    <strong style="color: var(--ink); font-size: .9rem;">${escapeHtml(n.title)}</strong>
+                  </div>
+                  ${n.description ? `<p style="margin: 4px 0 0; color: #667c86; font-size: .85rem; line-height: 1.5;">${escapeHtml(n.description)}</p>` : ""}
+                  ${n.date ? `<div style="margin-top: 4px; color: #95a5a6; font-size: .75rem;"><i class="bi bi-calendar3"></i> ${escapeHtml(n.date)}</div>` : ""}
+                </div>
+              `).join("")}
+            </div>
+            ` : ""}
+          </div>
+        `;
+      }
+
+      html += `</div>`;
+
+      // 최근 행사 요약
+      if (recentEvents.length > 0) {
+        html += `
+          <div style="margin-top: 24px; padding: 20px; border: 1px solid var(--line); border-radius: 10px; background: #fff;">
+            <h3 style="margin: 0 0 14px; font-size: 1rem; color: var(--ink); display: flex; align-items: center; gap: 8px;">
+              <i class="bi bi-calendar-check"></i> 다가오는 행사
+            </h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 12px;">
+              ${recentEvents.slice(0, 6).map(event => `
+                <div style="padding: 12px; background: #f8fbfd; border-radius: 8px; border: 1px solid var(--line);">
+                  <div style="font-weight: 850; color: var(--ink); margin-bottom: 4px;">${escapeHtml(event.title)}</div>
+                  <div style="font-size: .85rem; color: #667c86;">
+                    <span style="font-weight: 750;">${escapeHtml(event.university)}</span>
+                    ${event.date ? `· ${escapeHtml(event.date)}` : ""}
+                  </div>
+                </div>
+              `).join("")}
+            </div>
+          </div>
+        `;
+      }
+
+      // 업데이트 시간
+      html += `
+        <div style="margin-top: 16px; text-align: right; color: #667c86; font-size: .85rem;">
+          <i class="bi bi-clock"></i> 마지막 업데이트: ${formatDateLabel(data.updatedAt) || "알 수 없음"}
+        </div>
+      `;
+
+      universityEventsContainer.innerHTML = html;
+    }
+
+    async function loadUniversityJson() {
+      try {
+        // 대학 행사 JSON과 유튜브 JSON을 병렬로 로드
+        const [uniRes, ytRes] = await Promise.all([
+          fetch(`${UNIVERSITY_JSON_URL}?t=${Date.now()}`, { cache: "no-store" }),
+          fetch(`${YOUTUBE_JSON_URL}?t=${Date.now()}`, { cache: "no-store" })
+        ]);
+        
+        if (!uniRes.ok) throw new Error(`대학 JSON ${uniRes.status}`);
+        const uniData = await uniRes.json();
+        
+        let ytData = {};
+        try {
+          if (ytRes.ok) ytData = await ytRes.json();
+        } catch (e) { /* 유튜브 데이터 없어도 계속 진행 */ }
+        
+        renderUniversityEvents(uniData, ytData);
+      } catch (error) {
+        universityEventsContainer.innerHTML = '<div class="empty-state">대학 행사 JSON을 불러오지 못했습니다.</div>';
+      }
+    }
+
+    loadUniversityJson();
+    setInterval(loadUniversityJson, 10 * 60 * 1000);
+
+    // 검색 키워드 설정 함수
+    function setSearchKeyword(keyword) {
+      const encodedKeyword = encodeURIComponent(keyword);
+      document.getElementById('searchGoogle').href = `https://www.google.com/search?q=${encodedKeyword}`;
+      document.getElementById('searchBing').href = `https://www.bing.com/search?q=${encodedKeyword}`;
+      document.getElementById('searchNaver').href = `https://search.naver.com/search.naver?query=${encodedKeyword}`;
+    }
+  </script>
+</body>
+</html>

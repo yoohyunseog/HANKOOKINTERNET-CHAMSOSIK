@@ -1,55 +1,126 @@
 @echo off
-chcp 65001 > nul
+setlocal EnableExtensions EnableDelayedExpansion
+
+set "REPO_DIR=%~dp0"
+set "REMOTE_NAME=origin"
+set "REMOTE_URL=https://github.com/yoohyunseog/HANKOOKINTERNET-CHAMSOSIK.git"
+
 echo ========================================
-echo GitHub 자동 업로드
+echo GitHub upload helper
 echo ========================================
 echo.
 
-cd /d "e:\Ai project\사이트"
-
-:: Git 상태 확인
-echo [1/5] Git 상태 확인 중...
-git status
-echo.
-
-:: 모든 변경사항 추가
-echo [2/5] 변경된 파일 추가 중...
-git add .
-echo.
-
-:: 커밋 메시지 입력 (현재 날짜/시간 포함)
-echo [3/5] 커밋 생성 중...
-set datetime=%date% %time%
-git commit -m "Update: %datetime%"
-echo.
-
-:: 원격 저장소 확인 및 설정
-echo [4/5] 원격 저장소 확인 중...
-git remote -v
-git remote | findstr origin > nul
+cd /d "%REPO_DIR%"
 if errorlevel 1 (
-    echo 원격 저장소 추가 중...
-    git remote add origin https://github.com/yoohyunseog/HANKOOKINTERNET-CHAMSOSIK.git
+  echo [ERROR] Could not enter repo folder: %REPO_DIR%
+  pause
+  exit /b 1
 )
+
+if not exist ".git" (
+  echo [ERROR] This folder is not a Git repository: %CD%
+  pause
+  exit /b 1
+)
+
+echo [1/6] Checking current branch...
+for /f "usebackq delims=" %%B in (`git branch --show-current`) do set "BRANCH=%%B"
+if not defined BRANCH (
+  echo [ERROR] Could not detect current branch.
+  pause
+  exit /b 1
+)
+echo Branch: %BRANCH%
 echo.
 
-:: Push 실행
-echo [5/5] GitHub에 업로드 중...
-git push -u origin main
-echo.
-
+echo [2/6] Checking remote...
+git remote get-url %REMOTE_NAME% >nul 2>nul
 if errorlevel 1 (
-    echo.
-    echo ❌ 업로드 실패!
-    echo Git 인증 정보를 확인하거나 수동으로 push 해주세요.
-    echo.
+  echo Adding remote %REMOTE_NAME%...
+  git remote add %REMOTE_NAME% "%REMOTE_URL%"
+  if errorlevel 1 (
+    echo [ERROR] Failed to add remote.
     pause
     exit /b 1
-) else (
-    echo.
-    echo ✅ GitHub 업로드 완료!
-    echo Repository: https://github.com/yoohyunseog/HANKOOKINTERNET-CHAMSOSIK
-    echo.
+  )
+)
+git remote -v
+echo.
+
+echo [3/6] Current status:
+echo Skipping full status listing because this repository has many files.
+echo.
+
+echo [4/6] Staging all repository changes...
+if exist ".git\index.lock" (
+  tasklist /FI "IMAGENAME eq git.exe" 2>nul | find /I "git.exe" >nul
+  if errorlevel 1 (
+    echo Removing stale Git index lock...
+    del /f ".git\index.lock" >nul 2>nul
+    if exist ".git\index.lock" (
+      echo [ERROR] Could not remove .git\index.lock.
+      echo Close Git tools or run this script as administrator.
+      pause
+      exit /b 1
+    )
+  ) else (
+    echo [ERROR] Git index is locked: .git\index.lock
+    echo Close other Git tools first, then run this script again.
+    pause
+    exit /b 1
+  )
 )
 
+echo Running: git add -A -- .
+echo This includes all subfolders unless a file is ignored by .gitignore.
+git add -A -- .
+if errorlevel 1 (
+  echo [ERROR] git add failed.
+  pause
+  exit /b 1
+)
+echo.
+
+echo Staging complete.
+echo.
+
+choice /C YN /N /M "Commit and push these staged files? [Y/N] "
+if errorlevel 2 (
+  echo Cancelled. Staged changes are still staged; run "git restore --staged ." to unstage them if needed.
+  pause
+  exit /b 1
+)
+
+set "COMMIT_MSG=%~1"
+if not defined COMMIT_MSG (
+  for /f "usebackq delims=" %%T in (`powershell -NoProfile -Command "Get-Date -Format 'yyyy-MM-dd HH:mm:ss'"`) do set "NOW=%%T"
+  set "COMMIT_MSG=Update: !NOW!"
+)
+
+echo [5/6] Creating commit...
+echo Commit message: %COMMIT_MSG%
+git commit -m "%COMMIT_MSG%"
+if errorlevel 1 (
+  echo [ERROR] git commit failed.
+  echo If Git says there is nothing to commit, there were no staged changes.
+  pause
+  exit /b 1
+)
+echo.
+
+echo [6/6] Pushing to GitHub...
+git push -u %REMOTE_NAME% %BRANCH%
+if errorlevel 1 (
+  echo.
+  echo [ERROR] Upload failed.
+  echo Check GitHub authentication, network, or remote branch permissions.
+  pause
+  exit /b 1
+)
+
+echo.
+echo Done. Uploaded to GitHub.
+echo Repository: %REMOTE_URL%
+echo Branch: %BRANCH%
 pause
+exit /b 0

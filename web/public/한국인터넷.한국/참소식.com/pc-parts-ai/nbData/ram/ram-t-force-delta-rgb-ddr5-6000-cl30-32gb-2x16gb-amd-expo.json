@@ -1,0 +1,89 @@
+{
+  "schema": "pc-part-nb-collector-file.v1",
+  "updatedAt": "2026-06-14T03:55:19.469+09:00",
+  "category": "RAM",
+  "id": "ram-t-force-delta-rgb-ddr5-6000-cl30-32gb-2x16gb-amd-expo",
+  "name": "T-Force Delta RGB DDR5-6000 CL30 32GB (2x16GB) AMD EXPO",
+  "maker": "TeamGroup",
+  "platform": "DDR5",
+  "estimatedPriceKrw": 160000,
+  "priceBand": "15~30만원",
+  "speedLabel": "6000MHz",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "RAM",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 75,
+  "valueIndex": 46.9,
+  "aiUseScore": 49,
+  "powerWatts": 0,
+  "tags": [
+    "gaming",
+    "rgb"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "RAM",
+    "partId": "ram-t-force-delta-rgb-ddr5-6000-cl30-32gb-2x16gb-amd-expo",
+    "partName": "T-Force Delta RGB DDR5-6000 CL30 32GB (2x16GB) AMD EXPO",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "RAM",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 750,
+      "value": 625,
+      "aiFit": 490,
+      "priceEfficiency": 630,
+      "powerEfficiency": 750
+    },
+    "nbVector": [
+      100,
+      750,
+      625,
+      490,
+      630,
+      750
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 542.138,
+    "nbMin": 352.836,
+    "weightedScore": 424,
+    "nbBand": "100~499",
+    "summary": "RAM T-Force Delta RGB DDR5-6000 CL30 32GB (2x16GB) AMD EXPO 부품을 속도 중심 N/B 데이터베이스 점수 424점으로 저장했습니다."
+  },
+  "nbWeightedScore": 424,
+  "nbMax": 542.138,
+  "nbMin": 352.836,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=TeamGroup%20T-Force%20Delta%20RGB%20DDR5%206000%20CL30%20AMD%20EXPO%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "The search results show extremely inflated overseas prices (over 1 million KRW), but the standard Korean street price for this specific 32GB 6000 CL30 kit is typically around 150,000-180,000 KRW.",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

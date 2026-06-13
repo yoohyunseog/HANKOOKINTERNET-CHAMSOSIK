@@ -1,0 +1,273 @@
+{
+  "timestamp": "2026-06-12T12:29:17.308084",
+  "model": "kimi-k2.5:cloud",
+  "keyword_count": 3,
+  "analyze_subtitles": true,
+  "analysis_source": "youtube",
+  "keywords": [
+    {
+      "keyword": "오늘의 주요 뉴스",
+      "is_fixed": true,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "코스피 외국인 매수",
+      "is_fixed": false,
+      "views": [
+        100,
+        208,
+        60,
+        380
+      ],
+      "video_count": 4,
+      "videos": [
+        {
+          "title": "코스피, 8,400선까지 '껑충'…외국인 귀환 / 연합뉴스TV (YonhapnewsTV)",
+          "video_id": "WmbmPdjLnsU",
+          "views": 100,
+          "upload_date": "2026-06-12",
+          "url": "https://www.youtube.com/watch?v=WmbmPdjLnsU",
+          "subtitle_summary": "The user wants a summary of a YouTube video transcript in Korean, around 500 characters, with 3-5 sentences capturing the key points.\nKey points from the transcript:\n1. KOSPI surged over 8%, reaching 8,400 level intraday (started at 8,263.8, up 6.44%)\n2. Foreign investors returned to net buying after 25 trading days (1.2 trillion won), institutions also buying (1.4 trillion won), while individuals sold (2.5 trillion won profit taking)\n3. Reason: Trump announced US-Iran ceasefire talks in final stages, improving sentiment; US semiconductor index surged 8%+, leading Samsung Electronics (+11%) and SK Hynix (+7%) to surge\n4. KOSDAQ also rose over 3%, recovering 1,000 level\n5. Exchange rate: Won-dollar at 1,518 won opening, fluctuating around 1,520\nI need to write this in Korean only, no English, around 500 characters, 3-5 sentences.\nDraft:\n코스피가 미국과 이란의 종전 협상 기대감으로 투자 심리가 개선되며 8% 넘게 급등해 장중 8,400선까지 오르며 6.44% 상승한 8,263선에 출발했습니다. 외국인 투자자가 25거래일 만에 순매수로 돌아와 1조 2천억 원을 사들이고 기관도 1조 4천억 원 순매수하며 지수를 끌어올렸으나 개인은 2조 5천억 원 넘게 매도하며 차익 실현했습니다. 미국 반도체 강세 영향으로 삼성전자와 SK하이닉스가 각각 11%대, 7%대 급등했고 코스닥도 3% 이상 오르며 천선을 회복했습니다. 원달러 환율은 1,520원대에서 등락하고 있습니다.\nCharacter count check:\n코스피가 미국과 이란의 종전 협상 기대감으로 투자 심리가 개선되며 8% 넘게 급등해 장중 8,400선까지 오르며 6.44% 상승한 8,263선에 출발했습니다. (72 chars)\n외국인 투자자가 25거래일 만에 순매수로 돌아와 1조 2천억 원을 사들이고 기관도 1조 4천억 원 순매수하며 지수를 끌어올렸으나 개인은 2조 5천억 원 넘게 매도하며 차익 실현했습니다. (89 chars)\n미국 반도체 강세 영향으로 삼성전자와 SK하이닉스가 각각 11%대, 7%대 급등했고 코스닥도 3% 이상 오르며 천선을 회복했습니다. (67 chars)\n원달러 환율은 1,520원대에서 등락하고 있습니다. (24 chars)\nTotal: around 252 characters. This is too short. The user asked for around 500 characters (500자 내외). I need to expand a bit more while keeping it to 3-5 sentences.\nRevised draft:\n코스피가 미국과 이란의 종전 협상 기대감에 투자 심리가 급격히 개선되며 8% 넘게 급등해 장중 8,400선까지 오르며 전 거래일 대비 6.44% 상승한 8,263선에 강한 출발을 보였습니다. 외국인 투자자가 25거래일 만에 순매수로 돌아서 1조 2천억 원을 사들이고 기관도 1조 4천억 원 순매수하며 지수를 끌어올렸으나, 개인은 2조 5천억 원 넘게 팔아치우며 차익 실현",
+          "analysis_source": "subtitle",
+          "db_saved": true
+        },
+        {
+          "title": "외국인 귀환…코스피, 단숨에 8,400선 탈환 / 연합뉴스TV (YonhapnewsTV)",
+          "video_id": "2OxW7TEKx_E",
+          "views": 208,
+          "upload_date": "2026-06-12",
+          "url": "https://www.youtube.com/watch?v=2OxW7TEKx_E",
+          "subtitle_summary": "The user wants me to summarize a YouTube video caption in Korean within approximately 500 characters. The caption is about the KOSPI (Korean stock market) recovering the 8,400 level due to foreign investors returning.\nKey points from the caption:\n1. KOSPI surged and recovered 8,000 level at opening, even surpassing 8,400 during trading\n2. This is due to overnight US stock markets rising on expectations of easing Middle East tensions\n3. Trump mentioned progress in negotiations with Iran and delayed air strike plans\n4. Foreign investors returned to Korean market (buying 600 billion won), while institutions also bought (400 billion won), but individuals sold (over 1 trillion won for profit-taking)\n5. Samsung Electronics and SK Hynix surged around 10%, leading the index up\n6. KOSDAQ also rose over 3%, recovering 1,000 level\n7. Exchange rate: Won-dollar rate fell 10.9 won to 1,518 won\nRequirements:\nOnly Korean (no English)\nAround 500 characters\n3-5 sentences summarizing key content\nLet me draft a summary:\n코스피가 외국인 투자자의 귀환과 함께 급등하며 8,400선을 탈환했습니다. 이는 트럼프 미국 대통령이 이란과의 협상 진전을 언급하며 중동 긴장 완화 기대감이 커진 가운데, 간밤에 뉴욕 증시가 일제히 상승한 영향입니다. 외국인과 기관은 각각 6,000억 원, 4,000억 원을 매수하며 지수 상승을 이끌었고, 삼성전자와 SK하이닉스가 10% 안팎 급등하며 장을 이끌었습니다. 반면 개인 투자자는 1조 원 넘게 매도하며 차익 실현에 나섰고, 코스닥 지수도 3% 이상 오르며 1,000선을 회복했습니다. 원달러 환율은 전 거래일보다 10.9원 하락한 1,518원에 출발했습니다.\nLet me check the character count:\n코스피가 외국인 투자자의 귀환과 함께 급등하며 8,400선을 탈환했습니다. (39자)\n이는 트럼프 미국 대통령이 이란과의 협상 진전을 언급하며 중동 긴장 완화 기대감이 커진 가운데, 간밤에 뉴욕 증시가 일제히 상승한 영향입니다. (72자)\n외국인과 기관은 각각 6,000억 원, 4,000억 원을 매수하며 지수 상승을 이끌었고, 삼성전자와 SK하이닉스가 10% 안팎 급등하며 장을 이끌었습니다. (72자)\n반면 개인 투자자는 1조 원 넘게 매도하며 차익 실현에 나섰고, 코스닥 지수도 3% 이상 오르며 1,000선을 회복했습니다. (65자)\n원달러 환율은 전 거래일보다 10.9원 하락한 1,518원에 출발했습니다. (39자)\nTotal: around 287 characters. This is well within the 500 character limit and covers all key points in 5 sentences.\nWait, I need to make sure I didn't miss anything important. The caption mentioned:\nKOSPI opened at 8,263.85 (up 6.44%) - but this detail might be too specific for a summary\nCircuit breaker/sidecar triggered after 6 minutes - this is important\nKOSPI 200 futures market sidecar - I should mention this\nLet me revise:\n코스피가 외국인 투자자의 귀환으로 급등 출발해 8,400선을 탈환하며 장중 매수 사이드카드까지 발동됐습니다. 트�",
+          "analysis_source": "subtitle",
+          "db_saved": true
+        },
+        {
+          "title": "장중시황] 6/12 양시장 모두 급등출발 / 외인,기관 동반매수세 / 대부분 종목들 강한 상승세 / 오늘 추가상승은 제한적",
+          "video_id": "_hSOHAipCRA",
+          "views": 60,
+          "upload_date": "2026-06-12",
+          "url": "https://www.youtube.com/watch?v=_hSOHAipCRA",
+          "subtitle_summary": "The user wants a summary of a YouTube video transcript in Korean, around 500 characters, with 3-5 sentences covering the key points.\nKey points from the transcript:\n1. Date: June 12th (Friday), both Kospi and Kosdaq markets opened with sharp gains\n2. Foreigners and institutions are buying together (동반매수)\n3. Most stocks showing strong upward momentum, many hitting upper limit (상한가)\n4. Additional gains may be limited since they rose so much in the morning\n5. The upward trend might continue until mid-next week\n6. After FOMC (FMC mentioned), entering earnings season, expect zigzag upward movement\n7. Strategy: Focus on recovery first, then aggressive buying when recovery strength is confirmed\n8. Kospi broke 2,376 points (actually said 8,376 but that's wrong, probably 2,376), gap up maintained\n9. Afternoon likely to maintain gains or rise slightly, not expected to fall much\nConstraints:\nOnly Korean (no English)\nAround 500 characters\n3-5 sentences\nEssential content only\nDraft:\n6월 12일 양시장은 급등 출발해 강한 상승세를 보이며 대부분 종목이 오름세를 나타내고 있다. 외국인과 기관의 동반 매수세가 유입되고 있어 상승 동력이 지속되고 있으나, 아침에 이미 크게 올라 추가 상승은 다소 제한적일 수 있다. 장중 밀림 없이 오후에도 현 수준을 유지하거나 소폭 상승하며 마감할 가능성이 높다. 다음 주 중반까지는 긍정적인 흐름이 이어질 것으로 예상되며, FOMC 이후 실적 시즌 진입 시 본격적인 반등 기회를 모색할 수 있다. 현재는 회복에 집중하며 수급 상황을 체크하는 전략이 유리하다.\nCharacter count check:\n6월 12일 양시장은 급등 출발해 강한 상승세를 보이며 대부분 종목이 오름세를 나타내고 있다. (49)\n외국인과 기관의 동반 매수세가 유입되고 있어 상승 동력이 지속되고 있으나, 아침에 이미 크게 올라 추가 상승은 다소 제한적일 수 있다. (67)\n장중 밀림 없이 오후에도 현 수준을 유지하거나 소폭 상승하며 마감할 가능성이 높다. (45)\n다음 주 중반까지는 긍정적인 흐름이 이어질 것으로 예상되며, FOMC 이후 실적 시즌 진입 시 본격적인 반등 기회를 모색할 수 있다. (67)\n현재는 회복에 집중하며 수급 상황을 체크하는 전략이 유리하다. (33)\nTotal: 49+67+45+67+33 = 261 characters. This is too short (need around 500).\nLet me expand:\n6월 12일 양시장은 급등 출발하여 강한 상승세를 유지하고 있으며 대부분 종목들이 상한가를 포함한 급등세를 보이고 있다. 외국인과 기관의 동반 매수세가 지속적으로 유입되고 있어 시장 상승분은 유지되고 있으나, 아침에 이미 크게 올라간 탓에 추가 상승은 다소 제한적일 수 있다. 장중 일시적 밀림 이후 다시 상승하며 오후에는 현 수준을 유지하거나 소폭 더 오르며 마감할 가능성이 높다. 다음 주 중반까지는 긍정적인 흐름이 이어질 것으로 예상되며, FOMC 통과 후 실적 시즌 진입 시 본격적인 반등과 다양한 매수 기회가 나타날 수 있다. 따라서 현재는 종목별 회복에 집중하며 수급 상황을 체크하고, 회복 강",
+          "analysis_source": "subtitle",
+          "db_saved": true
+        },
+        {
+          "title": "무섭게 팔아치우더니 급반전...외국인들, 삼성전자 '폭풍쇼핑' [지금이뉴스] / YTN",
+          "video_id": "ggnFmBrK_vM",
+          "views": 380,
+          "upload_date": "2026-06-12",
+          "url": "https://www.youtube.com/watch?v=ggnFmBrK_vM",
+          "subtitle_summary": "The user wants a summary of a YouTube video transcript in Korean, around 500 characters, with 3-5 sentences, and absolutely no English.\nKey points from the transcript:\n1. Foreign investors returned to net buying in KOSPI after 25 trading days (since last month 7th)\n2. They had been selling for 24 consecutive trading days (84 trillion won including Next Trade), which was the 4th longest record\n3. The selling was due to asset rebalancing after KOSPI surged from 7000 to 9000\n4. Samsung Electronics was the most sold stock (31.8 trillion won), foreign ownership dropped to 47.58%\n5. But on this day, foreigners bought Samsung Electronics heavily (342.6 billion won), with JP Morgan among top buyers\n6. Market sentiment is easing from extreme pessimism\nI need to summarize this in 3-5 sentences, around 500 characters, in Korean only.\nDraft:\n외국인 투자자가 24거래일 연속 순매도(84조 원) 끝에 25거래일 만에 순매수로 돌아서며 코스피가 급등했습니다. 이들은 자산 배분 조정으로 31조 원 이상 팔아치운 삼성전자를 3,400억 원 대량 매수하는 등 폭풍 쇼핑에 나섰습니다. JP모건 등 매수 상위 창구에 이름을 올린 이번 순매수는 극단적 우려 분위기가 완화되는 신호로 풀이됩니다.\nCharacter count check:\n외국인 투자자가 24거래일 연속 순매도(84조 원) 끝에 25거래일 만에 순매수로 돌아서며 코스피가 급등했습니다. (49 characters)\n이들은 자산 배분 조정으로 31조 원 이상 팔아치운 삼성전자를 3,400억 원 대량 매수하는 등 폭풍 쇼핑에 나섰습니다. (58 characters)\nJP모건 등 매수 상위 창구에 이름을 올린 이번 순매수는 극단적 우려 분위기가 완화되는 신호로 풀이됩니다. (52 characters)\nTotal: around 160 characters. Too short. Need to expand to around 500 characters.\nRevised draft:\n외국인 투자자가 24거래일 연속 순매도로 84조 원을 팔아치운 끝에 25거래일 만에 순매수로 돌아서며 코스피가 급등세를 보였습니다. 특히 이들은 그동안 31조 원 이상 매도하며 지분율을 낮춘 삼성전자를 3,400억 원 대량 매수하는 등 폭풍 쇼핑에 나섰습니다. JP모건 등 매수 상위 창구에 이름을 올린 이번 외국인의 순매수 전환은 극단적 우려 분위기가 완화되고 있다는 긍정적 신호로 해석되고 있습니다.\nCharacter count:\n외국인 투자자가 24거래일 연속 순매도로 84조 원을 팔아치운 끝에 25거래일 만에 순매수로 돌아서며 코스피가 급등세를 보였습니다. (67 characters)\n특히 이들은 그동안 31조 원 이상 매도하며 지분율을 낮춘 삼성전자를 3,400억 원 대량 매수하는 등 폭풍 쇼핑에 나섰습니다. (64 characters)\nJP모건 등 매수 상위 창구에 이름을 올린 이번 외국인의 순매수 전환은 극단적 우려 분위기가 완화되고 있다는 긍정적 신호로 해석되고 있습니다. (72 characters)\nTotal: around 200 characters. Still need more.\nLet me add more details:\n외국인 투자자가 24거래일 연속 순매도로 84조 원을 팔아치운 끝에 25거래일 만에 순매수로 �",
+          "analysis_source": "subtitle",
+          "db_saved": true
+        }
+      ],
+      "max": 1.1954,
+      "min": 2.4314,
+      "nb_score": 0.4917,
+      "avg_views": 187.0,
+      "total_views": 748
+    },
+    {
+      "keyword": "월드컵 생중계",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "경기도 교육감 선거",
+      "is_fixed": false,
+      "views": [
+        225075
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "개표결과 바뀌었다…임태희 경기도교육감 긴급 기자회견 [현장영상] / 채널A",
+          "video_id": "D3em0ByG01g",
+          "views": 225075,
+          "upload_date": "2026-06-12",
+          "url": "https://www.youtube.com/watch?v=D3em0ByG01g",
+          "subtitle_summary": "The user wants me to summarize a YouTube video transcript in Korean, within approximately 500 characters, using only Korean (no English), and summarizing the core content in 3-5 sentences.\nThe transcript is about a press conference by Lim Tae-hee (임태희), the Gyeonggi Provincial Superintendent of Education, regarding vote counting errors in the local election.\nKey points from the transcript:\n1. He expresses anger about the situation shaking the foundation of democracy and voting rights\n2. He demands President Lee Jae-myung (이재명) take responsibility as this is a constitutional issue\n3. He demands the election commission (선관위) immediately disclose all election-related information and undergo verification\n4. He mentions that media reported vote counting errors in the Gyeonggi Provincial Superintendent election yesterday\n5. The election commission requested a meeting but he refused because basic election information hasn't been disclosed yet\n6. He states that if basic information cannot be disclosed properly, this election is fundamentally wrong and past/fast future elections lose legitimacy\n7. He will do his best until the truth is revealed to protect democracy and voting rights\nI need to summarize this in 3-5 sentences, around 500 characters, in Korean only.\nDraft:\n임태희 경기도교육감이 개표 집계 오류와 관련해 긴급 기자회견을 열었다. 그는 이 사태가 민주주의와 헌법 수호 문제라며 이재명 대통령의 직접적인 책임 있는 처리를 요구했다. 또한 선관위에 모든 선거 정보 공개와 검증을 촉구하며, 기본 정보 공개가 안 된다면 이번 선거는 총체적 오류이며 과거와 미래 선거의 정당성도 잃는다고 주장했다. 그는 선관위의 면담 요청을 거부하고 진실이 밝혀질 때까지 투쟁할 것임을 밝혔다.\nCharacter count check:\n임태희 경기도교육감이 개표 집계 오류와 관련해 긴급 기자회견을 열었다. (35자)\n그는 이 사태가 민주주의와 헌법 수호 문제라며 이재명 대통령의 직접적인 책임 있는 처리를 요구했다. (52자)\n또한 선관위에 모든 선거 정보 공개와 검증을 촉구하며, 기본 정보 공개가 안 된다면 이번 선거는 총체적 오류이며 과거와 미래 선거의 정당성도 잃는다고 주장했다. (84자)\n그는 선관위의 면담 요청을 거부하고 진실이 밝혀질 때까지 투쟁할 것임을 밝혔다. (43자)\nTotal: around 214 characters. This is well under 500 characters, but the user said \"500자 내외\" which usually means around 500 characters, but could be less. However, looking at the content, I should make sure I capture the essence properly.\nLet me expand slightly to make sure it's comprehensive but still concise:\n임태희 경기도교육감이 경기도교육감 선거 개표 집계 오류와 관련해 긴급 기자회견을 열어 입장을 밝혔다. 그는 이 사태가 민주주의와 헌법 수호 문제라며 이재명 대통령에게 직접 책임 있게 처리할 것을 요구했다. 또한 선관위에 모든 선거 관련 정보 공개와 검증을 촉구하며, 기본 정보조차 공개되지 않는다면 이번 선거는 총체적 오류이며 과거와 미래 선거의 정당성도 상실된다고 주장했다. 그는 정보 공개 없이는 선관위와의 면담이 부적절하다며 거부하고, 진실이 밝혀질 때까지 국민 참정권 수호를 위해 최선을 다하겠다고 강조했다.\nCharacter count:\n임태희 경기도교육감이 경기도교육감 선거",
+          "analysis_source": "subtitle",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "K-웹툰 불법사이트 검거",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "서울 지하철 요금 인상",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "주택담보대출 규제",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "정당 지지율 변화",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "반도체 공장 건립",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "AI 챗GPT 도입",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "유전자 교정 기술",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "스포츠 스타 부상",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "선수 발 질환",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "마그네슘 많은 음식",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "레미콘 공급 중단",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "스페이스X IPO",
+      "is_fixed": false,
+      "views": [
+        554
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "[성공예감 이대호입니다] 1부 풀영상｜스페이스X는 우주 산업? “반도체 통신 로봇” 멱살 잡고 더 끌고 갈 겁니다 - 정의훈 유진투자증권 연구원｜KBS 260612 방송",
+          "video_id": "PuuIkw59ZP0",
+          "views": 554,
+          "upload_date": "2026-06-12",
+          "url": "https://www.youtube.com/watch?v=PuuIkw59ZP0",
+          "subtitle_summary": "KBS '성공예감 이대호입니다' 1부에서는 스페이스X의 나스닥 상장과 우주 산업의 미래를 다룹니다. 방송은 강자와의 경쟁이 약점을 드러내고 진정한 성장을 가져온다는 철학으로 시작하여, 일론 머스크의 스페이스X가 드디어 나스닥에 상장하며 역대 최대 규모의 기업공개를 앞두고 있다고 소개합니다. 정의훈 유진투자증권 연구원은 과거 테마성 투자에서 벗어나 우주 산업이 본격적인 산업으로 주목받고 있으며, 스페이스X는 단순 우주 기업이 아닌 반도체, 통신, 로봇 등 다양한 첨단 기술을 융합한 종합 기술 기업으로 평가받아야 한다고 분석합니다.",
+          "analysis_source": "subtitle",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    }
+  ]
+}

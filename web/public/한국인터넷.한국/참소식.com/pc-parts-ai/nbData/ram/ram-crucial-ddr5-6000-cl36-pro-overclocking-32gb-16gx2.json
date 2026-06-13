@@ -1,0 +1,90 @@
+{
+  "schema": "pc-part-nb-collector-file.v1",
+  "updatedAt": "2026-06-14T03:55:18.400+09:00",
+  "category": "RAM",
+  "id": "ram-crucial-ddr5-6000-cl36-pro-overclocking-32gb-16gx2",
+  "name": "Crucial DDR5-6000 CL36 PRO Overclocking 32GB (16Gx2)",
+  "maker": "Crucial",
+  "platform": "DDR5",
+  "estimatedPriceKrw": 596661,
+  "priceBand": "30~60만원",
+  "speedLabel": "6000MHz",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "RAM",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 75,
+  "valueIndex": 12.6,
+  "aiUseScore": 49,
+  "powerWatts": 0,
+  "tags": [
+    "overclocking",
+    "XMP3.0",
+    "EXPO"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "RAM",
+    "partId": "ram-crucial-ddr5-6000-cl36-pro-overclocking-32gb-16gx2",
+    "partName": "Crucial DDR5-6000 CL36 PRO Overclocking 32GB (16Gx2)",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "RAM",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 750,
+      "value": 168,
+      "aiFit": 490,
+      "priceEfficiency": 170,
+      "powerEfficiency": 750
+    },
+    "nbVector": [
+      100,
+      750,
+      168,
+      490,
+      170,
+      750
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 261.864,
+    "nbMin": 387.761,
+    "weightedScore": 323,
+    "nbBand": "100~499",
+    "summary": "RAM Crucial DDR5-6000 CL36 PRO Overclocking 32GB (16Gx2) 부품을 속도 중심 N/B 데이터베이스 점수 323점으로 저장했습니다."
+  },
+  "nbWeightedScore": 323,
+  "nbMax": 261.864,
+  "nbMin": 387.761,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Crucial%20DDR5%206000MHz%2032GB%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "CL36-38-38-80, 1.35V, Heatsink included",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

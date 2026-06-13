@@ -1,0 +1,251 @@
+{
+  "timestamp": "2026-06-11T14:55:50.998672",
+  "model": "kimi-k2.5:cloud",
+  "keyword_count": 3,
+  "analyze_subtitles": true,
+  "analysis_source": "youtube",
+  "keywords": [
+    {
+      "keyword": "오늘의 주요 뉴스",
+      "is_fixed": true,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "쿠팡 개인정보 유출 과징금",
+      "is_fixed": false,
+      "views": [
+        2338,
+        1413
+      ],
+      "video_count": 2,
+      "videos": [
+        {
+          "title": "[🔴속보] 개보위 '쿠팡 개인정보 유출 사태' 제재 브리핑 \"과징금 6천2백억 원\" / \"조사 방해 추가 확인\" 쿠팡에 '철퇴' / SBS 뉴스속보",
+          "video_id": "RduSk2sbxCg",
+          "views": 2338,
+          "upload_date": "2026-06-11",
+          "url": "https://www.youtube.com/watch?v=RduSk2sbxCg",
+          "subtitle_summary": "The user wants a summary of a YouTube video subtitle in Korean, around 500 characters, with 3-5 sentences covering the key points.\nKey points from the subtitle:\n1. Coupang was fined 62 billion won (6.2 billion? Wait, the title says 6천2백억 which is 620 billion, but the text says 과진금 2억 4,800만 원 which is 248 million... wait, looking carefully:\nTitle mentions: \"과징금 6천2백억 원\" (620 billion won)\nText mentions: \"과진금 2억 4,800만 원\" (248 million won) - this might be a typo in the ASR or I'm misreading. Actually looking at the text: \"과진금 2억 4,800만 원\" - but the title clearly states 6,200억 (620 billion). This is a huge discrepancy.\nWait, looking at the text again: \"서비스의 개인 정보 처리 위반 등에 대해서는 과진금 2억 4,800만 원을 부과하였습니다\" - this seems to be about a different violation or perhaps the ASR is wrong. But the title says 6,200억.\nActually, the text mentions \"과징금\" in the title but the body might have ASR errors. The key is that the Personal Information Protection Commission imposed a massive fine.\nThe text mentions: \"과진금 2억 4,800만 원\" but this is likely \"과징금\" and the amount might be wrong in ASR, or this is separate from the main 620 billion.\nActually, looking at real news: In 2025 (the text mentions 25년 which is 2025), Coupang had a data breach. The fine was indeed hundreds of billions.\nBut I must stick to the provided text. The text mentions both the investigation and the breach details.\n2. Investigation period: From November 2025 (25년 11월) - wait, this seems like a future date or ASR error. Probably 2024 or 2023, but I should use what's in the text or interpret carefully. Actually \"25년\" likely means 2025 in the Korean era (단기), but that's 1992... no, wait. In Korean news, \"25년\" usually means 2025. But this might be a typo for \"2023\" or \"2024\". Regardless, I should follow the text.\n3. Breach details:\nFormer employee who developed alternative authentication function stole the signature key\nCreated forged authentication tokens\nPeriod: April to November 2025 (25년 4월부터 11월까지)\nAccessed pages: shipping info modification, delivery address management, order list pages\nLeaked data of approx 33.2 million members (약 3,32만 명 - probably 3,320만 명 which is 33.2 million)\nPlus 4.33 million non-members (약 433만 명)\nSpecifics: names, emails (33 million), delivery addresses (22.3 million) including third parties (family, friends), phone numbers of 4.33 million non-members, order details of 58,000 members\n4. Cause: Not sophisticated hacking, but failure of basic security management by Coupang.\nAuthentication token system allowed access with just signature verification\nMaster key (authentication signature key) was mismanaged\nKey management system allowed viewing in plaintext even when unnecessary\nFailed to renew or destroy keys after hacker (former employee) resigned\nFailed to detect/respond to illegal external access",
+          "analysis_source": "subtitle",
+          "db_saved": true
+        },
+        {
+          "title": "[속보] '3750만명 개인정보 유출' 쿠팡에 6246억 과징금…역대 최대 [이슈PLAY] / JTBC News",
+          "video_id": "i9ys67ncxfs",
+          "views": 1413,
+          "upload_date": "2026-06-11",
+          "url": "https://www.youtube.com/watch?v=i9ys67ncxfs",
+          "subtitle_summary": "The user wants a summary of a YouTube video transcript in Korean, approximately 500 characters, with 3-5 sentences covering the key points.\nKey points from the transcript:\n1. Coupang's personal data leak of 37.5 million users resulted in a 624.6 billion won penalty (largest ever) - mentioned in the title but not much in the transcript provided\n2. Coupang issue was officially raised at the US Senate hearing for the US Ambassador to South Korea nominee\n3. Republican Senator Bill Hagerty (who received donations from Coupang's PAC) asked about Coupang, and nominee Michelle Steel promised to address discrimination against US companies\n4. Coupang filed a lawsuit to cancel the \"same person\" (동일인) designation by the Fair Trade Commission, first time in 40 years a company has done so\n5. Kim Bum-seok (Coupang chairman) is challenging the designation to avoid legal responsibility\n6. Coupang claims it has transparent governance structure and the regulation doesn't apply to them, which critics see as disrespecting Korean law\nWait, the title mentions 37.5 million personal info leak and 624.6 billion penalty, but the transcript seems to focus on:\nUS Senate hearing about Coupang lobbying\nFair Trade Commission's \"same person\" designation and Coupang's lawsuit against it\nActually looking carefully, the transcript provided seems to be about two different reports:\n1. The US Senate hearing part (first half)\n2. The FTC same-person designation lawsuit part (second half)\nBut the title mentions the data leak penalty. The transcript provided doesn't seem to match the title perfectly, or the transcript is truncated. The transcript talks about:\nUS Senate hearing where Coupang was mentioned\nCoupang's lawsuit against FTC's \"same person\" designation\nI should summarize based on the transcript provided, not the title, or mention both if they are connected. Actually, looking at the title again: \"[속보] '3750만명 개인정보 유출' 쿠팡에 6246억 과징금…역대 최대 [이슈PLAY]\"\nBut the transcript content is about:\n1. US Senate hearing on ambassador nominee where Coupang issue was raised by a senator who received Coupang donations\n2. Coupang chairman Kim Bum-seok filing lawsuit to cancel the \"same person\" designation by FTC, first time in 40/30 years\nThe transcript seems to be cut off at the end (\"공정인은 쿠팡의\").",
+          "analysis_source": "subtitle",
+          "db_saved": true
+        }
+      ],
+      "max": 3.7352,
+      "min": 0.0,
+      "nb_score": 37352.0103,
+      "avg_views": 1875.5,
+      "total_views": 3751
+    },
+    {
+      "keyword": "아시안게임 야구 명단",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "레미콘 파업",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "SK텔레콤 주가",
+      "is_fixed": false,
+      "views": [
+        242
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "[SK텔레콤 주가 전망] 엔비디아 AI 팩토리 동맹! 아시아 AI 클라우드 대표주 노린다 #SK텔레콤주가전망 #SK텔레콤목표가 #SK텔레콤",
+          "video_id": "OYtforI_GuY",
+          "views": 242,
+          "upload_date": "2026-06-11",
+          "url": "https://www.youtube.com/watch?v=OYtforI_GuY",
+          "subtitle_summary": "SK텔레콤이 엔비디아와 풀스택 AI 클라우드 협력을 맺고 2027년 국내 첫 AI 팩토리 가동을 목표로 아시아 대표 AI 클라우드 사업자로 도약하려 한다. 최근 주가는 14만원대에서 10만원 아래로 29% 급락하며 변동성이 커졌으나, 1분기 AI 데이터 센터 매출이 전년比 89% 급증하는 등 실적 기반 AI 성장주로 재평가받고 있다. 영상은 고점에서 물린 투자자의 대응 전략부터 신규 진입자를 위한 타점까지 다양한 투자 상황별 해결책을 제시하며, SK텔레콤을 단순 통신주가 아닌 AI 인프라 핵심주로 분석하고 있다.",
+          "analysis_source": "subtitle",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "KF-21 보라매 시험비행",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "볼보 ES90 출시",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "서울 3차 도시철도 계획",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "가상자산 기관투자 진입",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "반도체 소부장 주식 상승",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "오픈AI CEO 방한",
+      "is_fixed": false,
+      "views": [
+        1842
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "삼성전자 임직원 대상으로 강연...샘 올트먼 '한국행' [지금이뉴스] / YTN",
+          "video_id": "D2lhwBOONa0",
+          "views": 1842,
+          "upload_date": "2026-06-11",
+          "url": "https://www.youtube.com/watch?v=D2lhwBOONa0",
+          "subtitle_summary": "The user wants me to summarize a YouTube video caption in Korean, around 500 characters, using 3-5 sentences. The content is about Sam Altman visiting Samsung Electronics in Korea.\nKey points from the caption:\n1. Sam Altman (OpenAI CEO) visiting Korea next week to meet Samsung Electronics employees\n2. Giving AI-related lecture at Samsung Suwon campus on the 15th\n3. Samsung recently decided to apply ChatGPT and generative AI to work\n4. Will talk about AI tech development changes, AI-based work innovation\n5. Will share opinions on productivity improvement and work style changes using AI\n6. First visit in 8 months since October last year\n7. Focus on whether Stargate partnership with Samsung and SK will become more concrete\n8. Last time signed LOI with Samsung and SK for global AI infrastructure cooperation\nI need to write this in Korean only, no English, around 500 characters, 3-5 sentences.\nDraft:\n오픈AI의 샘 올트먼 CEO가 다음 주 삼성전자 수원 사업장을 방문해 임직원들을 대상으로 AI 기술 발전과 업무 혁신 방향에 대한 강연을 진행합니다. 이번 방문은 지난해 10월 이후 약 8개월 만이며, 삼성전자가 최근 생성형 AI를 업무에 적용하기로 한 가운데 이루어지는 것이라 의미가 큽니다. 특히 이번 방문을 통해 삼성과 SK가 함께 추진하는 스타게이트 파트너십이 구체화될지 주목됩니다.\nCharacter count check:\n오픈AI의 샘 올트먼 CEO가 다음 주 삼성전자 수원 사업장을 방문해 임직원들을 대상으로 AI 기술 발전과 업무 혁신 방향에 대한 강연을 진행합니다. (67 chars)\n이번 방문은 지난해 10월 이후 약 8개월 만이며, 삼성전자가 최근 생성형 AI를 업무에 적용하기로 한 가운데 이루어지는 것이라 의미가 큽니다. (67 chars)\n특히 이번 방문을 통해 삼성과 SK가 함께 추진하는 스타게이트 파트너십이 구체화될지 주목됩니다. (49 chars)\nTotal: around 183 characters. Too short. Need to expand to around 500 characters.\nLet me expand:\n오픈AI 샘 올트먼 CEO가 다음 주 15일 삼성전자 수원 사업장을 방문해 임직원들을 대상으로 AI 기술 발전이 가져올 변화와 AI 기반 업무 혁신 방향에 대한 강연을 진행할 예정입니다. 이번 방문은 지난해 10월 이후 약 8개월 만의 방한으로, 삼성전자가 최근 챗GPT 등 생성형 AI를 업무에 적용하기로 한 가운데 이루어져 AI를 활용한 업무 생산성 향상과 일하는 방식 변화에 대한 깊이 있는 논의가 이루어질 전망입니다. 특히 이번 방문을 통해 지난해 체결한 삼성·SK 그룹과의 스타게이트 파트너십이 구체화되고 글로벌 AI 핵심 인프라 구축 협력이 본격화될지에 관심이 집중되고 있습니다.\nCharacter count:\n오픈AI 샘 올트먼 CEO가 다음 주 15일 삼성전자 수원 사업장을 방문해 임직원들을 대상으로 AI 기술 발전이 가져올 변화와 AI 기반 업무 혁신 방향에 대한 강연을 진행할 예정입니다. (108 chars)\n이번 방문은 지난해 10월 이후 약 8개월 만의 방한으로, 삼성전자가 최근 챗GPT 등 생성형 AI를 업무에 적용하기로 한 가운데 이루어져 AI를 활용한 업무",
+          "analysis_source": "subtitle",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "포스코 사고 안전 대책",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "가계대출 증가 원인",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "한화솔루션 유증 승인",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "스페이스X 수익 배당",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "코스피 반대매매 급증",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    }
+  ]
+}

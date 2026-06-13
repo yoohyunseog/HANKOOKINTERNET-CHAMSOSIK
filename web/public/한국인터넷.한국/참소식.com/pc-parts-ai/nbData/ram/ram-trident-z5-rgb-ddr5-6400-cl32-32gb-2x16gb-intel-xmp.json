@@ -1,0 +1,89 @@
+{
+  "schema": "pc-part-nb-collector-file.v1",
+  "updatedAt": "2026-06-14T03:55:20.179+09:00",
+  "category": "RAM",
+  "id": "ram-trident-z5-rgb-ddr5-6400-cl32-32gb-2x16gb-intel-xmp",
+  "name": "Trident Z5 RGB DDR5-6400 CL32 32GB (2x16GB) Intel XMP",
+  "maker": "G.SKILL",
+  "platform": "Intel XMP",
+  "estimatedPriceKrw": 265600,
+  "priceBand": "15~30만원",
+  "speedLabel": "6400MT/s",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "RAM",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 85,
+  "valueIndex": 32,
+  "aiUseScore": 55,
+  "powerWatts": 0,
+  "tags": [
+    "gaming",
+    "overclock"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "RAM",
+    "partId": "ram-trident-z5-rgb-ddr5-6400-cl32-32gb-2x16gb-intel-xmp",
+    "partName": "Trident Z5 RGB DDR5-6400 CL32 32GB (2x16GB) Intel XMP",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "RAM",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 850,
+      "value": 427,
+      "aiFit": 550,
+      "priceEfficiency": 380,
+      "powerEfficiency": 850
+    },
+    "nbVector": [
+      100,
+      850,
+      427,
+      550,
+      380,
+      850
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 370.586,
+    "nbMin": 374.713,
+    "weightedScore": 408,
+    "nbBand": "100~499",
+    "summary": "RAM Trident Z5 RGB DDR5-6400 CL32 32GB (2x16GB) Intel XMP 부품을 속도 중심 N/B 데이터베이스 점수 408점으로 저장했습니다."
+  },
+  "nbWeightedScore": 408,
+  "nbMax": 370.586,
+  "nbMin": 374.713,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=G.SKILL%20DDR5-6400%20CL32%20Trident%20Z5%20RGB%2032GB%20(2x16GB)%20Intel%20XMP",
+  "notes": "CL32 timing, 32GB kit",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

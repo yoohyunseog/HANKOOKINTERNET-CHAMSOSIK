@@ -1,0 +1,89 @@
+{
+  "schema": "pc-part-nb-collector-file.v1",
+  "updatedAt": "2026-06-14T03:55:16.436+09:00",
+  "category": "Mainboard",
+  "id": "mainboard-tuf-gaming-b650m-e-wifi",
+  "name": "TUF Gaming B650M-E WIFI",
+  "maker": "ASUS",
+  "platform": "AM5",
+  "estimatedPriceKrw": 189000,
+  "priceBand": "15~30만원",
+  "speedLabel": "B650",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "Mainboard",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 75,
+  "valueIndex": 39.7,
+  "aiUseScore": 49,
+  "powerWatts": 0,
+  "tags": [
+    "gaming",
+    "wifi"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "Mainboard",
+    "partId": "mainboard-tuf-gaming-b650m-e-wifi",
+    "partName": "TUF Gaming B650M-E WIFI",
+    "speed": {
+      "score": 100,
+      "weight": 0.32,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "Mainboard",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 750,
+      "value": 529,
+      "aiFit": 490,
+      "priceEfficiency": 530,
+      "powerEfficiency": 750
+    },
+    "nbVector": [
+      100,
+      750,
+      529,
+      490,
+      530,
+      750
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 473.983,
+    "nbMin": 368.55,
+    "weightedScore": 392,
+    "nbBand": "100~499",
+    "summary": "Mainboard TUF Gaming B650M-E WIFI 부품을 속도 중심 N/B 데이터베이스 점수 392점으로 저장했습니다."
+  },
+  "nbWeightedScore": 392,
+  "nbMax": 473.983,
+  "nbMin": 368.55,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=B650%20%EB%A9%94%EC%9D%B8%EB%B3%B4%EB%93%9C%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "Distributed by Daewon CTS",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

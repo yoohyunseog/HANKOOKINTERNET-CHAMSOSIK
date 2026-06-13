@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">구글 애드센스 90달러 잔고 요약</title>
+  <desc id="desc">15년가량 운영 뒤 애드센스 잔고가 91.09달러, 오늘 예상 수입이 0.06달러임을 보여주는 대시보드형 이미지</desc>
+  <defs>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#0f172a" flood-opacity="0.22"/>
+    </filter>
+    <linearGradient id="blue" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#1769c2"/>
+      <stop offset="1" stop-color="#0e58ad"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="720" fill="#f5f7fb"/>
+  <rect x="28" y="26" width="850" height="236" rx="10" fill="url(#blue)" filter="url(#shadow)"/>
+  <rect x="902" y="26" width="270" height="236" rx="10" fill="url(#blue)" filter="url(#shadow)"/>
+  <text x="58" y="82" font-family="Arial, sans-serif" font-size="27" font-weight="700" fill="#ffffff">예상 수입</text>
+  <g font-family="Arial, sans-serif" fill="#ffffff">
+    <text x="58" y="139" font-size="22" font-weight="700">오늘 현재까지</text>
+    <text x="58" y="188" font-size="43">US$0.06</text>
+    <text x="268" y="139" font-size="22" font-weight="700">어제</text>
+    <text x="268" y="188" font-size="43">US$0.00</text>
+    <text x="482" y="139" font-size="22" font-weight="700">지난 7일</text>
+    <text x="482" y="188" font-size="43">US$0.02</text>
+    <text x="695" y="139" font-size="22" font-weight="700">이번 달</text>
+    <text x="695" y="188" font-size="43">US$0.09</text>
+    <text x="930" y="82" font-size="27" font-weight="700">잔고</text>
+    <text x="930" y="164" font-size="44">$91.09</text>
+    <text x="930" y="211" font-size="19" font-weight="700">최종 지급월</text>
+    <text x="930" y="235" font-size="18" font-weight="700">US$0.00</text>
+  </g>
+  <rect x="28" y="286" width="560" height="380" rx="10" fill="#ffffff" stroke="#d7dce5" filter="url(#shadow)"/>
+  <rect x="612" y="286" width="560" height="380" rx="10" fill="#ffffff" stroke="#d7dce5" filter="url(#shadow)"/>
+  <g font-family="Arial, sans-serif">
+    <text x="58" y="340" font-size="27" font-weight="700" fill="#26364f">실적</text>
+    <text x="58" y="392" font-size="18" fill="#526172">페이지뷰</text>
+    <text x="58" y="438" font-size="44" fill="#0f172a">284</text>
+    <text x="58" y="466" font-size="18" fill="#177245">+46 (+19%)</text>
+    <text x="245" y="392" font-size="18" fill="#526172">페이지 RPM</text>
+    <text x="245" y="438" font-size="44" fill="#0f172a">US$0.00</text>
+    <text x="245" y="466" font-size="18" fill="#526172">+US$0.00</text>
+    <text x="426" y="392" font-size="18" fill="#526172">노출수</text>
+    <text x="426" y="438" font-size="44" fill="#0f172a">1</text>
+    <text x="426" y="466" font-size="18" fill="#177245">+1</text>
+    <text x="58" y="512" font-size="18" fill="#526172">클릭수</text>
+    <text x="58" y="558" font-size="44" fill="#0f172a">0</text>
+    <text x="245" y="512" font-size="18" fill="#526172">CPC</text>
+    <text x="245" y="558" font-size="44" fill="#0f172a">US$0.00</text>
+    <text x="426" y="512" font-size="18" fill="#526172">페이지 CTR</text>
+    <text x="426" y="558" font-size="44" fill="#0f172a">0.00%</text>
+    <text x="642" y="340" font-size="27" font-weight="700" fill="#26364f">국가 · 최근 30일</text>
+    <polyline points="650,540 735,540 780,540 800,470 820,540 860,540 880,395 900,540 950,540 968,430 988,540 1070,540 1090,470 1110,540" fill="none" stroke="#1a73e8" stroke-width="4"/>
+    <line x1="650" y1="390" x2="1130" y2="390" stroke="#e5e7eb" stroke-width="2"/>
+    <line x1="650" y1="465" x2="1130" y2="465" stroke="#e5e7eb" stroke-width="2"/>
+    <line x1="650" y1="540" x2="1130" y2="540" stroke="#e5e7eb" stroke-width="2"/>
+    <text x="650" y="610" font-size="19" fill="#526172">대한민국</text>
+    <text x="1070" y="610" font-size="19" fill="#0f172a">US$0.12</text>
+  </g>
+  <text x="36" y="704" font-family="Arial, sans-serif" font-size="18" fill="#64748b">요약: 90달러를 모으는 데 약 15년이 걸린 수익 흐름</text>
+</svg>

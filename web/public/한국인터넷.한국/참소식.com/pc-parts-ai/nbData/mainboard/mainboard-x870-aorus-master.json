@@ -1,0 +1,90 @@
+{
+  "schema": "pc-part-nb-collector-file.v1",
+  "updatedAt": "2026-06-14T03:55:16.493+09:00",
+  "category": "Mainboard",
+  "id": "mainboard-x870-aorus-master",
+  "name": "X870 AORUS MASTER",
+  "maker": "Gigabyte",
+  "platform": "AMD AM5",
+  "estimatedPriceKrw": 850000,
+  "priceBand": "60만원 이상",
+  "speedLabel": "X870",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "Mainboard",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 90,
+  "valueIndex": 10.6,
+  "aiUseScore": 59,
+  "powerWatts": 0,
+  "tags": [
+    "high-end",
+    "gaming",
+    "wifi"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "Mainboard",
+    "partId": "mainboard-x870-aorus-master",
+    "partName": "X870 AORUS MASTER",
+    "speed": {
+      "score": 100,
+      "weight": 0.32,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "Mainboard",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 900,
+      "value": 141,
+      "aiFit": 590,
+      "priceEfficiency": 120,
+      "powerEfficiency": 900
+    },
+    "nbVector": [
+      100,
+      900,
+      141,
+      590,
+      120,
+      900
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 241.816,
+    "nbMin": 371.555,
+    "weightedScore": 354,
+    "nbBand": "100~499",
+    "summary": "Mainboard X870 AORUS MASTER 부품을 속도 중심 N/B 데이터베이스 점수 354점으로 저장했습니다."
+  },
+  "nbWeightedScore": 354,
+  "nbMax": 241.816,
+  "nbMin": 371.555,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Gigabyte%20X870%20AORUS%20MASTER%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "High-end X870 chipset motherboard from Gigabyte Aorus series.",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

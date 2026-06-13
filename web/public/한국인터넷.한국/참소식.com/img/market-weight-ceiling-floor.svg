@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">가중치 상한·하한 분석</title>
+  <desc id="desc">종합 가중치 58, 상한치 42, 하한치 36과 상하 요인을 보여주는 시장 분석 이미지</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#fffdf9"/>
+      <stop offset="1" stop-color="#fff1f6"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#0f172a" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="720" fill="url(#bg)"/>
+  <circle cx="18" cy="62" r="70" fill="none" stroke="#f4d9b1" stroke-width="3"/>
+  <text x="102" y="76" font-family="Arial, sans-serif" font-size="46" font-weight="900" fill="#001b4f">가중치 상한·하한</text>
+  <rect x="102" y="110" width="78" height="5" rx="2.5" fill="#f59e0b"/>
+  <g font-family="Arial, sans-serif" filter="url(#shadow)">
+    <rect x="102" y="150" width="260" height="108" rx="12" fill="#ffffff" stroke="#e6ebf2"/>
+    <rect x="380" y="150" width="260" height="108" rx="12" fill="#ffffff" stroke="#e6ebf2"/>
+    <rect x="658" y="150" width="260" height="108" rx="12" fill="#ffffff" stroke="#e6ebf2"/>
+    <rect x="936" y="150" width="230" height="108" rx="12" fill="#ffffff" stroke="#e6ebf2"/>
+  </g>
+  <g font-family="Arial, sans-serif" font-weight="800" text-anchor="middle">
+    <text x="232" y="190" font-size="23" fill="#001b4f">등급</text>
+    <rect x="178" y="205" width="108" height="46" rx="23" fill="#fee1ad"/>
+    <text x="232" y="236" font-size="25" fill="#f97316">주의</text>
+    <text x="510" y="190" font-size="23" fill="#001b4f">종합 가중치</text>
+    <text x="510" y="237" font-size="40" fill="#e23d68">58</text>
+    <text x="788" y="190" font-size="23" fill="#001b4f">상한치</text>
+    <text x="788" y="237" font-size="40" fill="#e23d68">42</text>
+    <text x="1051" y="190" font-size="23" fill="#001b4f">하한치</text>
+    <text x="1051" y="237" font-size="40" fill="#e23d68">36</text>
+  </g>
+  <rect x="108" y="296" width="1080" height="20" rx="10" fill="#e2e8f0"/>
+  <rect x="108" y="296" width="486" height="20" rx="10" fill="#47c9bd"/>
+  <rect x="594" y="296" width="214" height="20" fill="#f9b54c"/>
+  <rect x="808" y="296" width="380" height="20" rx="10" fill="#f85c88"/>
+  <g font-family="Arial, sans-serif" font-size="20" font-weight="800" fill="#46566d">
+    <text x="108" y="357">0</text>
+    <text x="500" y="357" fill="#0b3b73">42</text>
+    <text x="770" y="357" fill="#e23d68">58</text>
+    <text x="1152" y="357">100</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="102" y="400" width="530" height="240" rx="16" fill="#ffffff" stroke="#e6ebf2"/>
+    <rect x="660" y="400" width="506" height="240" rx="16" fill="#fffafa" stroke="#f0dbe2"/>
+  </g>
+  <g font-family="Arial, sans-serif" font-size="24" font-weight="800">
+    <text x="132" y="455" fill="#07999a">상한치 요인 ↑</text>
+    <text x="690" y="455" fill="#ff3f70">하한치 요인 ↓</text>
+  </g>
+  <g font-family="Arial, sans-serif" font-size="22" font-weight="700">
+    <text x="132" y="505" fill="#003567">• 미국 반도체주 반등</text>
+    <text x="560" y="505" text-anchor="end" fill="#0391a0">+15</text>
+    <text x="132" y="552" fill="#003567">• 반도체 업황 호조</text>
+    <text x="560" y="552" text-anchor="end" fill="#0391a0">+12</text>
+    <text x="132" y="599" fill="#003567">• 원전 수주 호재</text>
+    <text x="560" y="599" text-anchor="end" fill="#0391a0">+8</text>
+    <text x="690" y="505" fill="#003567">• 중동 지정학적 리스크</text>
+    <text x="1098" y="505" text-anchor="end" fill="#ff3f70">-18</text>
+    <text x="690" y="552" fill="#003567">• 외국인 연속 매세</text>
+    <text x="1098" y="552" text-anchor="end" fill="#ff3f70">-10</text>
+    <text x="690" y="599" fill="#003567">• 원유가 급등</text>
+    <text x="1098" y="599" text-anchor="end" fill="#ff3f70">-8</text>
+  </g>
+</svg>

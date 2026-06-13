@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <meta name="description" content="내가 본 UFO, 그리고 다시 부르고 싶지 않은 이유 포스터 HTML">
+  <link rel="canonical" href="https://xn--9l4b4xi9r.com/blog/posts/2026-06-13-ufo-jesus-peace-poster.html">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="ko_KR">
+  <meta property="og:site_name" content="참소식.com">
+  <meta property="og:title" content="내가 본 UFO, 그리고 다시 부르고 싶지 않은 이유">
+  <meta property="og:description" content="목격담이라기보다, 내 안에 남은 감각과 믿음에 대한 기록">
+  <title>내가 본 UFO, 그리고 다시 부르고 싶지 않은 이유 - 포스터</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --ink: #f4f8ff;
+      --muted: #b9c9dc;
+      --blue: #78b9ff;
+      --gold: #f5d074;
+      --line: rgba(205, 230, 255, 0.22);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      background: #06101b;
+      font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+      color: var(--ink);
+    }
+
+    .poster {
+      position: relative;
+      width: min(1200px, 100vw);
+      aspect-ratio: 16 / 9;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 67% 22%, rgba(184, 221, 255, 0.34), transparent 26%),
+        radial-gradient(circle at 35% 70%, rgba(112, 224, 208, 0.16), transparent 30%),
+        linear-gradient(135deg, #07111d 0%, #132542 54%, #091726 100%);
+      border: 1px solid var(--line);
+    }
+
+    .stars {
+      position: absolute;
+      inset: 0;
+      background-image:
+        radial-gradient(circle, rgba(255,255,255,.75) 0 1.4px, transparent 1.6px),
+        radial-gradient(circle, rgba(155,205,255,.6) 0 1px, transparent 1.2px);
+      background-size: 140px 120px, 220px 180px;
+      background-position: 18px 12px, 80px 58px;
+      opacity: .72;
+    }
+
+    .beam {
+      position: absolute;
+      top: 176px;
+      left: 555px;
+      width: 430px;
+      height: 390px;
+      background: linear-gradient(to bottom, rgba(178, 217, 255, .18), rgba(178, 217, 255, 0));
+      clip-path: polygon(38% 0, 62% 0, 100% 100%, 0 100%);
+      filter: blur(.2px);
+    }
+
+    .ufo {
+      position: absolute;
+      top: 146px;
+      right: 295px;
+      width: 238px;
+      height: 74px;
+    }
+
+    .ufo::before {
+      content: "";
+      position: absolute;
+      left: 20px;
+      right: 20px;
+      top: 28px;
+      height: 31px;
+      border-radius: 50%;
+      background: linear-gradient(180deg, rgba(226, 244, 255, .76), rgba(92, 142, 198, .35));
+      box-shadow: 0 0 40px rgba(137, 199, 255, .34);
+    }
+
+    .ufo::after {
+      content: "";
+      position: absolute;
+      left: 68px;
+      right: 68px;
+      top: 12px;
+      height: 30px;
+      border-radius: 50% 50% 42% 42%;
+      background: rgba(235, 248, 255, .72);
+    }
+
+    .ground {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 165px;
+      background:
+        linear-gradient(to bottom, rgba(18, 43, 61, .9), #06101b),
+        radial-gradient(ellipse at 50% 0%, rgba(88, 139, 174, .35), transparent 60%);
+      clip-path: polygon(0 30%, 14% 20%, 32% 36%, 50% 18%, 70% 33%, 88% 18%, 100% 28%, 100% 100%, 0 100%);
+    }
+
+    .poster-image {
+      position: absolute;
+      right: 380px;
+      bottom: 200px;
+      width: 180px;
+      height: 180px;
+      border-radius: 12px;
+      border: 2px solid rgba(117, 183, 255, 0.4);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5), 0 0 20px rgba(117, 183, 255, 0.2);
+      object-fit: cover;
+      opacity: 0.85;
+      transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+
+    .poster-image:hover {
+      opacity: 1;
+      transform: scale(1.05);
+    }
+
+    .panel {
+      position: absolute;
+      left: 92px;
+      top: 86px;
+      width: 540px;
+      padding: 46px 44px 42px;
+      background: rgba(5, 14, 25, .54);
+      border: 1px solid rgba(205, 230, 255, .14);
+      backdrop-filter: blur(4px);
+    }
+
+    .eyebrow {
+      margin: 0 0 18px;
+      color: var(--gold);
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: 0;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 62px;
+      line-height: 1.13;
+      letter-spacing: 0;
+    }
+
+    .subtitle {
+      margin: 28px 0 0;
+      color: var(--muted);
+      font-size: 25px;
+      line-height: 1.55;
+    }
+
+    .line {
+      width: 300px;
+      height: 5px;
+      margin: 32px 0 0;
+      background: linear-gradient(90deg, var(--blue), transparent);
+    }
+
+    .quote {
+      position: absolute;
+      right: 88px;
+      bottom: 86px;
+      width: 385px;
+      color: #dbeaff;
+      font-size: 27px;
+      line-height: 1.6;
+      text-align: right;
+      text-shadow: 0 2px 18px rgba(0,0,0,.5);
+    }
+
+    .brand {
+      position: absolute;
+      right: 88px;
+      top: 54px;
+      color: var(--blue);
+      font-size: 25px;
+      font-weight: 800;
+    }
+
+    .links {
+      position: fixed;
+      left: 18px;
+      bottom: 18px;
+      display: flex;
+      gap: 10px;
+      z-index: 3;
+    }
+
+    .links a {
+      color: var(--ink);
+      text-decoration: none;
+      border: 1px solid var(--line);
+      background: rgba(8, 17, 28, .82);
+      padding: 8px 12px;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 760px) {
+      body {
+        display: block;
+      }
+
+      .poster {
+        min-height: 100vh;
+        width: 100%;
+        aspect-ratio: auto;
+      }
+
+      .panel {
+        left: 18px;
+        right: 18px;
+        top: 96px;
+        width: auto;
+        padding: 30px 24px;
+      }
+
+      h1 {
+        font-size: 42px;
+      }
+
+      .subtitle {
+        font-size: 19px;
+      }
+
+      .ufo {
+        top: 42px;
+        right: 32px;
+        transform: scale(.72);
+        transform-origin: top right;
+      }
+
+      .quote {
+        left: 26px;
+        right: 26px;
+        bottom: 86px;
+        width: auto;
+        font-size: 22px;
+      }
+
+      .brand {
+        left: 22px;
+        right: auto;
+        top: 26px;
+      }
+    }
+  </style>
+  <link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="../../favicon.svg">
+  
+
+</head>
+<body>
+  <main class="poster" aria-label="내가 본 UFO, 그리고 다시 부르고 싶지 않은 이유 포스터">
+    <div class="stars"></div>
+    <div class="beam"></div>
+    <div class="ufo"></div>
+    <div class="brand">참소식.com</div>
+    <section class="panel">
+      <p class="eyebrow">신앙 기록</p>
+      <h1>내가 본 UFO,<br>그리고 다시<br>부르고 싶지<br>않은 이유</h1>
+      <p class="subtitle">목격담이라기보다,<br>내 안에 남은 감각과 믿음에 대한 기록</p>
+      <div class="line"></div>
+    </section>
+    <p class="quote">UFO는 내게 질문을 남겼다.<br>하지만 예수님은 내게 길을 남기셨다.</p>
+    <img class="poster-image" src="../assets/2026-06-13-ufo-jesus-peace-image.png" alt="UFO와 예수님 평화 기록 이미지">
+    <div class="ground"></div>
+  </main>
+  <nav class="links" aria-label="관련 링크">
+    <a href="2026-06-13-ufo-jesus-peace-record.html">본문 보기</a>
+    <a href="https://www.google.com/search?q=UFO%EB%8A%94+%EB%82%B4%EA%B2%8C+%EC%A7%88%EB%AC%B8%EC%9D%84+%EB%82%A8%EA%B2%BC%EC%A7%80%EB%A7%8C+%EC%98%88%EC%88%98%EB%8B%98%EC%9D%80+%EB%82%B4%EA%B2%8C+%EA%B8%B8%EC%9D%84+%EB%82%A8%EA%B8%B0%EC%85%A8%EB%8B%A4" target="_blank" rel="noopener noreferrer">문장 검색</a>
+  </nav>
+  <script src="../js/view-tracker.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      if (window.BlogViewTracker) {
+        window.BlogViewTracker.trackPostVisit();
+      }
+    });
+  </script>
+</body>
+</html>

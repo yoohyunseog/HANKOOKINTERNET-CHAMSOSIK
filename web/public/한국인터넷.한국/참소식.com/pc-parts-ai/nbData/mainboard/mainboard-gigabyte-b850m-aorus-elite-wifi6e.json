@@ -1,0 +1,89 @@
+{
+  "schema": "pc-part-nb-collector-file.v1",
+  "updatedAt": "2026-06-14T03:55:15.660+09:00",
+  "category": "Mainboard",
+  "id": "mainboard-gigabyte-b850m-aorus-elite-wifi6e",
+  "name": "GIGABYTE B850M AORUS ELITE WIFI6E",
+  "maker": "GIGABYTE",
+  "platform": "AMD AM5",
+  "estimatedPriceKrw": 238070,
+  "priceBand": "15~30만원",
+  "speedLabel": "B850",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "Mainboard",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 75,
+  "valueIndex": 31.5,
+  "aiUseScore": 49,
+  "powerWatts": 0,
+  "tags": [
+    "m-atx",
+    "wifi6e"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "Mainboard",
+    "partId": "mainboard-gigabyte-b850m-aorus-elite-wifi6e",
+    "partName": "GIGABYTE B850M AORUS ELITE WIFI6E",
+    "speed": {
+      "score": 100,
+      "weight": 0.32,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "Mainboard",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 750,
+      "value": 420,
+      "aiFit": 490,
+      "priceEfficiency": 420,
+      "powerEfficiency": 750
+    },
+    "nbVector": [
+      100,
+      750,
+      420,
+      490,
+      420,
+      750
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 402.821,
+    "nbMin": 381.117,
+    "weightedScore": 368,
+    "nbBand": "100~499",
+    "summary": "Mainboard GIGABYTE B850M AORUS ELITE WIFI6E 부품을 속도 중심 N/B 데이터베이스 점수 368점으로 저장했습니다."
+  },
+  "nbWeightedScore": 368,
+  "nbMax": 402.821,
+  "nbMin": 381.117,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=B850%20%EB%A9%94%EC%9D%B8%EB%B3%B4%EB%93%9C%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "Distributed by JC현",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

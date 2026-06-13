@@ -1,0 +1,760 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="AI가 수집하고 요약한 로봇, 휴머노이드, 자동화 뉴스와 반응 흐름 브리핑">
+  <title>로봇 뉴스 | 참소식.com</title>
+  <link rel="stylesheet" href="../common-site.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      color: #172033;
+      background: #f5f7fb;
+      font-family: Arial, "Noto Sans KR", sans-serif;
+      line-height: 1.58;
+    }
+
+    a {
+      color: #1d4ed8;
+      font-weight: 900;
+      text-decoration: none;
+    }
+
+    .page {
+      width: min(1280px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 24px 0 46px;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1.5fr) minmax(280px, 0.7fr);
+      gap: 18px;
+      align-items: stretch;
+      padding: 26px;
+      border: 1px solid #d7dee9;
+      border-radius: 8px;
+      background: #ffffff;
+      box-shadow: 0 14px 30px rgba(15, 23, 42, 0.07);
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      margin: 0 0 10px;
+      color: #14532d;
+      font-size: 13px;
+      font-weight: 900;
+    }
+
+    h1 {
+      margin: 0;
+      color: #0f172a;
+      font-size: clamp(30px, 4.5vw, 56px);
+      line-height: 1.04;
+      letter-spacing: 0;
+    }
+
+    .hero-copy {
+      max-width: 760px;
+      margin: 14px 0 0;
+      color: #475569;
+      font-size: 17px;
+    }
+
+    .status-panel {
+      display: grid;
+      gap: 10px;
+      align-content: center;
+      padding: 18px;
+      border: 1px solid #dbe3ef;
+      border-radius: 8px;
+      background: #f8fafc;
+    }
+
+    .metric {
+      display: grid;
+      gap: 3px;
+      padding: 11px 12px;
+      border-left: 4px solid #2563eb;
+      background: #ffffff;
+    }
+
+    .metric span {
+      color: #64748b;
+      font-size: 12px;
+      font-weight: 900;
+    }
+
+    .metric strong {
+      color: #0f172a;
+      font-size: 17px;
+    }
+
+    .toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+      justify-content: space-between;
+      margin: 18px 0;
+      padding: 14px;
+      border: 1px solid #d7dee9;
+      border-radius: 8px;
+      background: #ffffff;
+    }
+
+    .filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .filter-btn,
+    .refresh-btn {
+      min-height: 38px;
+      border: 1px solid #cbd5e1;
+      border-radius: 8px;
+      color: #334155;
+      background: #ffffff;
+      padding: 8px 11px;
+      font: inherit;
+      font-size: 13px;
+      font-weight: 900;
+      cursor: pointer;
+    }
+
+    .filter-btn.active,
+    .filter-btn:hover,
+    .refresh-btn:hover {
+      color: #ffffff;
+      border-color: #1d4ed8;
+      background: #1d4ed8;
+    }
+
+    .news-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .news-card {
+      display: grid;
+      gap: 12px;
+      min-height: 280px;
+      padding: 18px;
+      border: 1px solid #d7dee9;
+      border-radius: 8px;
+      background: #ffffff;
+      box-shadow: 0 10px 24px rgba(15, 23, 42, 0.06);
+    }
+
+    .news-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+      align-items: center;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      min-height: 26px;
+      padding: 4px 8px;
+      border-radius: 999px;
+      color: #334155;
+      background: #eef2f7;
+      font-size: 12px;
+      font-weight: 900;
+    }
+
+    .pill.mood-positive { color: #14532d; background: #dcfce7; }
+    .pill.mood-negative { color: #7f1d1d; background: #fee2e2; }
+    .pill.mood-mixed { color: #713f12; background: #fef3c7; }
+    .pill.mood-neutral { color: #1e3a8a; background: #dbeafe; }
+
+    .news-title {
+      margin: 0;
+      color: #0f172a;
+      font-size: 20px;
+      line-height: 1.32;
+    }
+
+    .summary,
+    .comment-box {
+      margin: 0;
+      color: #475569;
+      font-size: 14px;
+    }
+
+    .comment-box {
+      padding: 11px 12px;
+      border-left: 4px solid #f59e0b;
+      background: #fff7ed;
+    }
+
+    .keywords {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .keyword {
+      padding: 4px 7px;
+      border: 1px solid #cbd5e1;
+      border-radius: 8px;
+      color: #334155;
+      background: #ffffff;
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    .card-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+      margin-top: auto;
+    }
+
+    .source-link,
+    .data-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      min-height: 36px;
+      padding: 8px 10px;
+      border-radius: 8px;
+      background: #eff6ff;
+      font-size: 13px;
+    }
+
+    .data-link {
+      color: #14532d;
+      background: #ecfdf5;
+    }
+
+    .empty {
+      grid-column: 1 / -1;
+      padding: 28px;
+      border: 1px solid #d7dee9;
+      border-radius: 8px;
+      background: #ffffff;
+      text-align: center;
+    }
+
+    .empty strong {
+      display: block;
+      color: #0f172a;
+      font-size: 20px;
+    }
+
+    .empty p {
+      margin: 8px 0 0;
+      color: #64748b;
+    }
+
+    .post-view {
+      grid-column: 1 / -1;
+      display: grid;
+      gap: 16px;
+      padding: 22px;
+      border: 1px solid #d7dee9;
+      border-radius: 8px;
+      background: #ffffff;
+      box-shadow: 0 10px 24px rgba(15, 23, 42, 0.06);
+    }
+
+    .post-title {
+      margin: 0;
+      color: #0f172a;
+      font-size: clamp(26px, 4vw, 42px);
+      line-height: 1.16;
+    }
+
+    .post-body {
+      display: grid;
+      gap: 12px;
+      color: #334155;
+      font-size: 16px;
+      line-height: 1.78;
+    }
+
+    .post-body p {
+      margin: 0;
+    }
+
+    .back-link {
+      color: #475569;
+      background: #f1f5f9;
+    }
+
+    .post-search-links {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 8px;
+      margin: 0;
+    }
+
+    .post-search-links a {
+      min-height: 38px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      padding: 8px 10px;
+      border: 1px solid #bfdbfe;
+      border-radius: 8px;
+      color: #1d4ed8;
+      background: #eff6ff;
+      font-size: 13px;
+      font-weight: 900;
+      white-space: nowrap;
+    }
+
+    .post-search-links a:hover,
+    .post-search-links a:focus {
+      color: #ffffff;
+      background: #1d4ed8;
+      outline: none;
+    }
+
+    .coupang-products {
+      display: grid;
+      gap: 10px;
+      padding: 14px;
+      border: 1px solid #fed7aa;
+      border-radius: 8px;
+      background: #fff7ed;
+    }
+
+    .coupang-products h3 {
+      margin: 0;
+      color: #9a3412;
+      font-size: 17px;
+    }
+
+    .coupang-disclosure {
+      margin: 0;
+      color: #7c2d12;
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    .coupang-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .coupang-card {
+      display: grid;
+      gap: 8px;
+      min-width: 0;
+      padding: 10px;
+      border: 1px solid #fdba74;
+      border-radius: 8px;
+      color: #172033;
+      background: #ffffff;
+    }
+
+    .coupang-card img {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: contain;
+      border-radius: 6px;
+      background: #f8fafc;
+    }
+
+    .coupang-card strong {
+      color: #0f172a;
+      font-size: 13px;
+      line-height: 1.35;
+    }
+
+    .coupang-card span {
+      color: #c2410c;
+      font-size: 13px;
+      font-weight: 900;
+    }
+
+    @media (max-width: 900px) {
+      .hero,
+      .news-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .toolbar {
+        align-items: stretch;
+        flex-direction: column;
+      }
+
+      .post-search-links {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .coupang-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+  </style>
+
+
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "x4jlyqheuh");
+</script>
+</head>
+<body>
+  <main class="page">
+    <section class="hero" aria-labelledby="page-title">
+      <div>
+        <p class="eyebrow"><i class="bi bi-robot"></i> AI robotics news desk</p>
+        <h1 id="page-title">로봇 뉴스</h1>
+        <p class="hero-copy">해외 로봇 전문 매체와 AI 자동화 흐름을 수집해 휴머노이드, 산업용 로봇, 서비스 로봇, 드론, 연구 뉴스를 한국어 요약과 반응 흐름으로 정리합니다.</p>
+      </div>
+      <aside class="status-panel" aria-label="뉴스 데이터 상태">
+        <div class="metric">
+          <span>최근 갱신</span>
+          <strong id="last-updated">확인 중</strong>
+        </div>
+        <div class="metric">
+          <span>수집 기사</span>
+          <strong id="total-count">0개</strong>
+        </div>
+        <div class="metric">
+          <span>반응 흐름</span>
+          <strong id="mood-count">분석 대기</strong>
+        </div>
+      </aside>
+    </section>
+
+    <section class="toolbar" aria-label="뉴스 필터">
+      <div class="filters" id="filters">
+        <button class="filter-btn active" type="button" data-filter="all">전체</button>
+      </div>
+      <button class="refresh-btn" type="button" id="refresh-btn"><i class="bi bi-arrow-clockwise"></i> 새로고침</button>
+    </section>
+
+    <section class="news-grid" id="news-grid" aria-live="polite">
+      <div class="empty">
+        <strong>뉴스 데이터를 불러오는 중입니다</strong>
+        <p>robot/news_data.json을 확인하고 있습니다.</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="../common-site.js" defer></script>
+  <script>
+    const state = {
+      items: [],
+      filter: 'all'
+    };
+
+    const moodLabels = {
+      Positive: '긍정',
+      Negative: '부정',
+      Mixed: '혼합',
+      Neutral: '중립',
+      'No visible comments': '댓글 없음'
+    };
+
+    function escapeHtml(value) {
+      return String(value || '').replace(/[&<>"']/g, (char) => ({
+        '&': '&amp;',
+        '<': '&lt;',
+        '>': '&gt;',
+        '"': '&quot;',
+        "'": '&#39;'
+      }[char]));
+    }
+
+    function moodClass(mood) {
+      const key = String(mood || '').toLowerCase();
+      if (key.includes('positive')) return 'mood-positive';
+      if (key.includes('negative')) return 'mood-negative';
+      if (key.includes('mixed')) return 'mood-mixed';
+      if (key.includes('neutral')) return 'mood-neutral';
+      return '';
+    }
+
+    function labelMood(mood) {
+      return moodLabels[mood] || mood || '댓글 확인 전';
+    }
+
+    function postUrl(index) {
+      return `?post=${encodeURIComponent(index)}`;
+    }
+
+    function cleanPostText(value) {
+      return String(value || '')
+        .replace(/\*\*/g, '')
+        .replace(/^\s*\*\s+/gm, '')
+        .replace(/\*/g, '');
+    }
+
+    function formatPostText(value) {
+      const blocks = cleanPostText(value).split(/\n{2,}/).map((block) => block.trim()).filter(Boolean);
+      return blocks.map((block) => `<p>${escapeHtml(block).replace(/\n/g, '<br>')}</p>`).join('');
+    }
+
+    function renderPostSearchLinks(rawTitle) {
+      const query = encodeURIComponent(rawTitle || '');
+      return `
+        <p class="post-search-links" aria-label="관련 검색 링크">
+          <a href="https://www.google.com/search?q=${query}" target="_blank" rel="noopener noreferrer" title="Google 검색"><i class="bi bi-google"></i><span>Google</span></a>
+          <a href="https://search.naver.com/search.naver?query=${query}" target="_blank" rel="noopener noreferrer" title="Naver 검색"><i class="bi bi-search"></i><span>Naver</span></a>
+          <a href="https://www.bing.com/search?q=${query}" target="_blank" rel="noopener noreferrer" title="Bing 검색"><i class="bi bi-compass"></i><span>Bing</span></a>
+          <a href="https://www.youtube.com/results?search_query=${query}" target="_blank" rel="noopener noreferrer" title="YouTube 검색"><i class="bi bi-youtube"></i><span>YouTube</span></a>
+        </p>
+      `;
+    }
+
+    function formatWon(value) {
+      const price = Number(value || 0);
+      return price > 0 ? `${price.toLocaleString('ko-KR')}원` : '가격 확인';
+    }
+
+    function productKeywords(rawTitle, productTags = []) {
+      const tags = Array.isArray(productTags) ? productTags : [];
+      const cleanedTags = tags
+        .map((tag) => String(tag || '').replace(/\s+/g, ' ').trim().slice(0, 70))
+        .filter((tag) => tag && !tag.includes('?') && !['CPU', 'GPU', 'AI', 'PC'].includes(tag.toUpperCase()));
+      const fallbackTitle = String(rawTitle || '')
+        .replace(/[|｜].*$/g, '')
+        .replace(/\s+/g, ' ')
+        .trim()
+        .slice(0, 70);
+
+      return [...new Set([...cleanedTags, fallbackTitle].filter(Boolean))].slice(0, 8);
+    }
+
+    function renderCoupangProducts(target, data) {
+      const products = Array.isArray(data.products) ? data.products : [];
+      if (!products.length) {
+        target.innerHTML = '<p class="coupang-disclosure">관련 쿠팡 상품을 찾지 못했습니다.</p>';
+        return;
+      }
+
+      target.innerHTML = `
+        <h3>관련 쿠팡 상품</h3>
+        <p class="coupang-disclosure">${escapeHtml(data.disclosure || '이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.')}</p>
+        <div class="coupang-grid">
+          ${products.map((product) => `
+            <a class="coupang-card" href="${escapeHtml(product.url)}" target="_blank" rel="noopener noreferrer sponsored">
+              ${product.image ? `<img src="${escapeHtml(product.image)}" alt="${escapeHtml(product.name)}" loading="lazy">` : ''}
+              <strong>${escapeHtml(product.name)}</strong>
+              <span>${formatWon(product.price)}</span>
+            </a>
+          `).join('')}
+        </div>
+      `;
+    }
+
+    async function loadCoupangProducts(rawTitle, productTags = []) {
+      const target = document.getElementById('coupang-products');
+      if (!target) return;
+
+      try {
+        const keywords = productKeywords(rawTitle, productTags);
+        if (!keywords.length) {
+          target.hidden = true;
+          return;
+        }
+
+        const response = await fetch(`/api/coupang-products?keywords=${encodeURIComponent(keywords.join(','))}&limit=4`, { cache: 'no-store' });
+        const data = await response.json().catch(() => ({}));
+        if (!response.ok || !data.success) {
+          target.innerHTML = '<p class="coupang-disclosure">쿠팡 파트너스 상품 API 설정 후 관련 상품이 표시됩니다.</p>';
+          return;
+        }
+
+        if (Array.isArray(data.products) && data.products.length) {
+          renderCoupangProducts(target, data);
+          return;
+        }
+
+        target.innerHTML = '<p class="coupang-disclosure">제품 태그와 맞는 쿠팡 상품을 찾지 못했습니다.</p>';
+      } catch (error) {
+        console.warn('쿠팡 상품을 불러오지 못했습니다.', error);
+      }
+    }
+
+    function renderFilters(items) {
+      const categories = Array.from(new Set(items.map((item) => item.category || 'Other'))).sort();
+      const filters = document.getElementById('filters');
+      filters.innerHTML = [
+        '<button class="filter-btn active" type="button" data-filter="all">전체</button>',
+        ...categories.map((category) => `<button class="filter-btn" type="button" data-filter="${escapeHtml(category)}">${escapeHtml(category)}</button>`)
+      ].join('');
+
+      filters.querySelectorAll('.filter-btn').forEach((button) => {
+        button.addEventListener('click', () => {
+          state.filter = button.dataset.filter;
+          filters.querySelectorAll('.filter-btn').forEach((item) => item.classList.toggle('active', item === button));
+          renderNews();
+        });
+      });
+    }
+
+    function renderStatus(data) {
+      document.getElementById('last-updated').textContent = data.last_updated || '갱신 기록 없음';
+      document.getElementById('total-count').textContent = `${data.total_count || state.items.length}개`;
+      const moods = state.items.reduce((acc, item) => {
+        const mood = labelMood(item.comment_mood || '댓글 확인 전');
+        acc[mood] = (acc[mood] || 0) + 1;
+        return acc;
+      }, {});
+      const moodText = Object.entries(moods).map(([key, count]) => `${key} ${count}`).join(' · ');
+      document.getElementById('mood-count').textContent = moodText || '분석 대기';
+    }
+
+    function renderPostDetail(index) {
+      const grid = document.getElementById('news-grid');
+      const item = state.items[index];
+      if (!item) {
+        renderNews();
+        return;
+      }
+
+      const rawTitle = item.translated_title || item.original_title || '로봇 뉴스';
+      const title = escapeHtml(rawTitle);
+      const originalTitle = escapeHtml(item.original_title || '');
+      const category = escapeHtml(item.category || 'Other');
+      const importance = escapeHtml(item.importance || 'Medium');
+      const mood = escapeHtml(labelMood(item.comment_mood));
+      const commentSummary = escapeHtml(item.comment_summary || '반응 흐름 분석을 준비 중입니다.');
+      const url = escapeHtml(item.url || 'news_data.json');
+      const collectedAt = escapeHtml(item.collected_at || '');
+      const productTags = Array.isArray(item.product_tags) ? item.product_tags.slice(0, 6) : [];
+      const body = formatPostText(item.full_post || item.summary || '본문을 준비 중입니다.');
+
+      grid.innerHTML = `
+        <article class="post-view">
+          <div class="news-meta">
+            <span class="pill"><i class="bi bi-tag"></i>${category}</span>
+            <span class="pill"><i class="bi bi-lightning-charge"></i>${importance}</span>
+            <span class="pill ${moodClass(item.comment_mood)}"><i class="bi bi-chat-dots"></i>${mood}</span>
+            ${collectedAt ? `<span class="pill"><i class="bi bi-clock"></i>${collectedAt}</span>` : ''}
+          </div>
+          <section class="coupang-products" id="coupang-products" aria-label="관련 쿠팡 상품">
+            <p class="coupang-disclosure">관련 쿠팡 상품을 불러오는 중입니다.</p>
+          </section>
+          <h2 class="post-title">${title}</h2>
+          ${originalTitle ? `<p class="summary"><strong>원제</strong><br>${originalTitle}</p>` : ''}
+          ${productTags.length ? `<div class="keywords">${productTags.map((tag) => `<span class="keyword">${escapeHtml(tag)}</span>`).join('')}</div>` : ''}
+          <div class="post-body">${body}</div>
+          <p class="comment-box"><strong>반응 흐름</strong><br>${commentSummary}</p>
+          <div class="card-actions">
+            <a class="source-link" href="${url}" target="_blank" rel="noopener noreferrer"><i class="bi bi-box-arrow-up-right"></i> 원문 보기</a>
+            <a class="source-link back-link" href="./"><i class="bi bi-arrow-left"></i> 목록으로</a>
+            <a class="data-link" href="news_data.json"><i class="bi bi-database"></i> JSON</a>
+          </div>
+          ${renderPostSearchLinks(rawTitle)}
+        </article>
+      `;
+      loadCoupangProducts(rawTitle, productTags);
+    }
+
+    function renderNews() {
+      const grid = document.getElementById('news-grid');
+      const filtered = state.items
+        .map((item, index) => ({ item, index }))
+        .filter(({ item }) => state.filter === 'all' || (item.category || 'Other') === state.filter);
+
+      if (!filtered.length) {
+        grid.innerHTML = `
+          <div class="empty">
+            <strong>표시할 뉴스가 없습니다</strong>
+            <p>로봇 뉴스 봇이 데이터를 갱신하면 이 영역에 표시됩니다.</p>
+          </div>
+        `;
+        return;
+      }
+
+      grid.innerHTML = filtered.map(({ item, index }) => {
+        const title = escapeHtml(item.translated_title || item.original_title || '로봇 뉴스');
+        const summary = escapeHtml(item.summary || item.full_post || '요약을 준비 중입니다.');
+        const category = escapeHtml(item.category || 'Other');
+        const importance = escapeHtml(item.importance || 'Medium');
+        const mood = escapeHtml(labelMood(item.comment_mood));
+        const commentSummary = escapeHtml(item.comment_summary || '반응 흐름 분석을 준비 중입니다.');
+        const commentCount = Number(item.visible_comment_count || 0);
+        const keywords = Array.isArray(item.product_tags) && item.product_tags.length
+          ? item.product_tags.slice(0, 5)
+          : (Array.isArray(item.reaction_keywords) ? item.reaction_keywords.slice(0, 5) : []);
+        const url = escapeHtml(postUrl(index));
+        const collectedAt = escapeHtml(item.collected_at || '');
+
+        return `
+          <article class="news-card">
+            <div class="news-meta">
+              <span class="pill"><i class="bi bi-tag"></i>${category}</span>
+              <span class="pill"><i class="bi bi-lightning-charge"></i>${importance}</span>
+              <span class="pill ${moodClass(item.comment_mood)}"><i class="bi bi-chat-dots"></i>${mood}</span>
+            </div>
+            <h2 class="news-title">${title}</h2>
+            <p class="summary">${summary}</p>
+            <p class="comment-box"><strong>반응 흐름</strong><br>${commentSummary}${commentCount ? `<br><small>확인된 반응 텍스트 ${commentCount}개</small>` : ''}</p>
+            ${keywords.length ? `<div class="keywords">${keywords.map((keyword) => `<span class="keyword">${escapeHtml(keyword)}</span>`).join('')}</div>` : ''}
+            <div class="card-actions">
+              <a class="source-link" href="${url}"><i class="bi bi-file-earmark-text"></i> 포스팅 보기</a>
+              <a class="data-link" href="news_data.json"><i class="bi bi-database"></i> JSON</a>
+              ${collectedAt ? `<span class="pill"><i class="bi bi-clock"></i>${collectedAt}</span>` : ''}
+            </div>
+          </article>
+        `;
+      }).join('');
+    }
+
+    async function loadNews() {
+      const grid = document.getElementById('news-grid');
+      grid.innerHTML = `
+        <div class="empty">
+          <strong>뉴스 데이터를 불러오는 중입니다</strong>
+          <p>잠시만 기다려 주세요.</p>
+        </div>
+      `;
+
+      try {
+        const response = await fetch('news_data.json', { cache: 'no-store' });
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        const data = await response.json();
+        state.items = Array.isArray(data.news) ? data.news : [];
+        state.filter = 'all';
+        renderFilters(state.items);
+        renderStatus(data);
+        const postIndex = Number(new URLSearchParams(window.location.search).get('post'));
+        if (Number.isInteger(postIndex) && postIndex >= 0) {
+          renderPostDetail(postIndex);
+        } else {
+          renderNews();
+        }
+      } catch (error) {
+        console.warn('뉴스 데이터를 불러오지 못했습니다.', error);
+        grid.innerHTML = `
+          <div class="empty">
+            <strong>뉴스 데이터를 불러오지 못했습니다</strong>
+            <p>news_data.json 파일 또는 서버 동기화 상태를 확인해 주세요.</p>
+          </div>
+        `;
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      document.getElementById('refresh-btn').addEventListener('click', loadNews);
+      loadNews();
+    });
+  </script>
+</body>
+</html>

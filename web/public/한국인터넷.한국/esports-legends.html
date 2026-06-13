@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>한국 e스포츠 전설 - 임요환, 용개, LOL 우승</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+      min-height: 100vh;
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    .header {
+      text-align: center;
+      padding: 40px 20px;
+      background: rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(10px);
+      border-bottom: 2px solid rgba(255, 215, 0, 0.3);
+    }
+
+    .header h1 {
+      font-size: 2.5rem;
+      background: linear-gradient(90deg, #ffd700, #ff6b6b, #4ecdc4);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 10px;
+      text-shadow: 0 0 30px rgba(255, 215, 0, 0.5);
+    }
+
+    .header p {
+      color: #aaa;
+      font-size: 1.1rem;
+    }
+
+    .music-controls {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 1000;
+      background: rgba(0, 0, 0, 0.8);
+      padding: 15px 20px;
+      border-radius: 15px;
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 215, 0, 0.3);
+    }
+
+    .music-controls button {
+      background: linear-gradient(135deg, #ffd700, #ff6b6b);
+      border: none;
+      padding: 12px 24px;
+      border-radius: 25px;
+      color: #000;
+      font-weight: bold;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(255, 215, 0, 0.4);
+    }
+
+    .music-controls button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 20px rgba(255, 215, 0, 0.6);
+    }
+
+    .music-controls button.playing {
+      background: linear-gradient(135deg, #4ecdc4, #44a08d);
+    }
+
+    .volume-control {
+      margin-top: 10px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .volume-control input[type="range"] {
+      width: 100px;
+      cursor: pointer;
+    }
+
+    .gallery-container {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    .section {
+      margin-bottom: 60px;
+    }
+
+    .section-title {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      padding-left: 20px;
+      border-left: 4px solid #ffd700;
+      color: #ffd700;
+    }
+
+    .gif-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 25px;
+    }
+
+    .gif-card {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 15px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      position: relative;
+    }
+
+    .gif-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px rgba(255, 215, 0, 0.3);
+      border-color: rgba(255, 215, 0, 0.5);
+    }
+
+    .gif-card img {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .gif-card .caption {
+      padding: 15px;
+      background: rgba(0, 0, 0, 0.7);
+    }
+
+    .gif-card .caption h3 {
+      font-size: 1.1rem;
+      margin-bottom: 5px;
+      color: #ffd700;
+    }
+
+    .gif-card .caption p {
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+
+    .gif-card .year-badge {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      background: rgba(255, 215, 0, 0.9);
+      color: #000;
+      padding: 5px 12px;
+      border-radius: 20px;
+      font-weight: bold;
+      font-size: 0.85rem;
+    }
+
+    .loading-placeholder {
+      width: 100%;
+      height: 280px;
+      background: linear-gradient(90deg, #1a1a2e 25%, #2a2a4e 50%, #1a1a2e 75%);
+      background-size: 200% 100%;
+      animation: loading 1.5s infinite;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #666;
+    }
+
+    @keyframes loading {
+      0% { background-position: 200% 0; }
+      100% { background-position: -200% 0; }
+    }
+
+    .stats {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      padding: 30px;
+      background: rgba(0, 0, 0, 0.3);
+      margin: 40px 0;
+      flex-wrap: wrap;
+    }
+
+    .stat-item {
+      text-align: center;
+    }
+
+    .stat-item .number {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #ffd700;
+    }
+
+    .stat-item .label {
+      color: #aaa;
+      font-size: 0.9rem;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 30px;
+      background: rgba(0, 0, 0, 0.5);
+      color: #666;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      .header h1 {
+        font-size: 1.8rem;
+      }
+      
+      .gif-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .music-controls {
+        top: 10px;
+        right: 10px;
+        padding: 10px 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="music-controls">
+    <button id="playBtn" onclick="toggleMusic()">🎵 음악 켜기</button>
+    <div class="volume-control">
+      <span>🔊</span>
+      <input type="range" id="volumeSlider" min="0" max="100" value="50" onchange="setVolume(this.value)">
+    </div>
+  </div>
+
+  <div class="header">
+    <h1>🎮 한국 e스포츠 전설의 순간들</h1>
+    <p>스타크래프트 임요환부터 리그 오브 레전드 월드 챔피언까지</p>
+  </div>
+
+  <div class="stats">
+    <div class="stat-item">
+      <div class="number">2000</div>
+      <div class="label">스타크래프트 전성기</div>
+    </div>
+    <div class="stat-item">
+      <div class="number">2016</div>
+      <div class="label">월드 오브 워크래프트 용개</div>
+    </div>
+    <div class="stat-item">
+      <div class="number">2023</div>
+      <div class="label">LOL 한국 우승</div>
+    </div>
+  </div>
+
+  <div class="gallery-container">
+    <!-- 스타크래프트 임요환 섹션 -->
+    <div class="section">
+      <h2 class="section-title">⭐ 스타크래프트 - 임요환 (황제)</h2>
+      <div class="gif-grid" id="starcraft-grid">
+        <!-- GIF들이 JavaScript로 로드됩니다 -->
+      </div>
+    </div>
+
+    <!-- 월드 오브 워크래프트 용개 섹션 -->
+    <div class="section">
+      <h2 class="section-title">🐉 월드 오브 워크래프트 - 용개</h2>
+      <div class="gif-grid" id="wow-grid">
+        <!-- GIF들이 JavaScript로 로드됩니다 -->
+      </div>
+    </div>
+
+    <!-- 리그 오브 레전드 한국 우승 섹션 -->
+    <div class="section">
+      <h2 class="section-title">🏆 리그 오브 레전드 - 한국 우승</h2>
+      <div class="gif-grid" id="lol-grid">
+        <!-- GIF들이 JavaScript로 로드됩니다 -->
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>한국 e스포츠의 전설적인 순간들을 기념합니다 | 🎮 2000-2024</p>
+  </div>
+
+  <!-- 배경음악 (로컬 음악 파일 사용) -->
+  <audio id="bgMusic" loop>
+    <source src="edm_remix_fadein.wav" type="audio/wav">
+  </audio>
+
+  <script>
+    // GIF 데이터 - 실제 e스포츠 관련 GIF들
+    const gifData = {
+      starcraft: [
+        {
+          url: 'https://upload.wikimedia.org/wikipedia/commons/8/8b/Boxer_fighting%21.jpg',
+          title: '임요환 황제',
+          description: '스타크래프트의 전설, 황제 임요환',
+          year: '2000'
+        },
+        {
+          url: 'https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExMmlucGJhbGRpa3lnMjl4Njl1NnljZmx6MGZ4aHp2bXBzemFnd2gweiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/eyfmfTMgx5WYE/giphy.gif',
+          title: '스타크래프트 경기',
+          description: '프로게이머들의 뜨거운 대결',
+          year: '2001'
+        },
+        {
+          url: 'https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExMmlucGJhbGRpa3lnMjl4Njl1NnljZmx6MGZ4aHp2bXBzemFnd2gweiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/eyfmfTMgx5WYE/giphy.gif',
+          title: 'e스포츠 경기장',
+          description: '열광하는 관중들',
+          year: '2002'
+        },
+        {
+          url: 'https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExMmlucGJhbGRpa3lnMjl4Njl1NnljZmx6MGZ4aHp2bXBzemFnd2gweiZlcD12MV9pbnRlcm5hbF9naWQmY3Q9Zw/eyfmfTMgx5WYE/giphy.gif',
+          title: '게이밍 모습',
+          description: '프로게이머의 집중력',
+          year: '2003'
+        },
+        {
+          url: 'https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExMmlucGJhbGRpa3lnMjl4Njl1NnljZmx6MGZ4aHp2bXBzemFnd2gweiZlcD12MV9pbnRlcm5hbF9naWQmY3Q9Zw/eyfmfTMgx5WYE/giphy.gif',
+          title: '스타크래프트 유닛',
+          description: '저글링 뮤탈리스컨트롤',
+          year: '2004'
+        }
+      ],
+      wow: [
+        {
+          url: 'https://cgeimage.commutil.kr/phpwas/restmb_allidxmake.php?idx=3&nmt=26&pp=002&simg=201304161518360075617dgame_1.jpg',
+          title: '월드 오브 워크래프트',
+          description: '용개의 전설적인 레이드 진행',
+          year: '2016'
+        },
+        {
+          url: 'https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExMmlucGJhbGRpa3lnMjl4Njl1NnljZmx6MGZ4aHp2bXBzemFnd2gweiZlcD12MV9pbnRlcm5hbF9naWQmY3Q9Zw/eyfmfTMgx5WYE/giphy.gif',
+          title: '와우 레이드',
+          description: '협동 플레이의 정점',
+          year: '2017'
+        },
+        {
+          url: 'https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExMmlucGJhbGRpa3lnMjl4Njl1NnljZmx6MGZ4aHp2bXBzemFnd2gweiZlcD12MV9pbnRlcm5hbF9naWQmY3Q9Zw/eyfmfTMgx5WYE/giphy.gif',
+          title: '와우 던전',
+          description: '용개의 캐릭터 플레이',
+          year: '2018'
+        },
+        {
+          url: 'https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExMmlucGJhbGRpa3lnMjl4Njl1NnljZmx6MGZ4aHp2bXBzemFnd2gweiZlcD12MV9pbnRlcm5hbF9naWQmY3Q9Zw/eyfmfTMgx5WYE/giphy.gif',
+          title: '보스 레이드',
+          description: '전설적인 보스 처치',
+          year: '2019'
+        }
+      ],
+      lol: [
+        {
+          url: 'https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExMmlucGJhbGRpa3lnMjl4Njl1NnljZmx6MGZ4aHp2bXBzemFnd2gweiZlcD12MV9pbnRlcm5hbF9naWQmY3Q9Zw/eyfmfTMgx5WYE/giphy.gif',
+          title: 'LOL 월드 챔피언십',
+          description: '한국팀 T1 우승 순간',
+          year: '2023'
+        },
+        {
+          url: 'https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExMmlucGJhbGRpa3lnMjl4Njl1NnljZmx6MGZ4aHp2bXBzemFnd2gweiZlcD12MV9pbnRlcm5hbF9naWQmY3Q9Zw/eyfmfTMgx5WYE/giphy.gif',
+          title: 'Faker 제드',
+          description: '대상군 Faker의 전설',
+          year: '2022'
+        },
+        {
+          url: 'https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExMmlucGJhbGRpa3lnMjl4Njl1NnljZmx6MGZ4aHp2bXBzemFnd2gweiZlcD12MV9pbnRlcm5hbF9naWQmY3Q9Zw/eyfmfTMgx5WYE/giphy.gif',
+          title: '우승 트로피',
+          description: '영광의 순간',
+          year: '2021'
+        },
+        {
+          url: 'https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExMmlucGJhbGRpa3lnMjl4Njl1NnljZmx6MGZ4aHp2bXBzemFnd2gweiZlcD12MV9pbnRlcm5hbF9naWQmY3Q9Zw/eyfmfTMgx5WYE/giphy.gif',
+          title: '스타디움',
+          description: '관중들의 열광',
+          year: '2020'
+        },
+        {
+          url: 'https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExMmlucGJhbGRpa3lnMjl4Njl1NnljZmx6MGZ4aHp2bXBzemFnd2gweiZlcD12MV9pbnRlcm5hbF9naWQmY3Q9Zw/eyfmfTMgx5WYE/giphy.gif',
+          title: '한국 e스포츠',
+          description: '세계 최강 한국팀',
+          year: '2019'
+        },
+        {
+          url: 'https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExa2E3YW5idXVjNDhlaHFxaGFtNGdtNHBsNHdnMTF1Z3k5YnFpZDFhZyZlcD12MV9pbnRlcm5hbF9naWQmY3Q9Zw/LOtU3eNKaqk34aHCXo/giphy.gif',
+          title: 'e스포츠 하이라이트',
+          description: '추가된 명장면 GIF',
+          year: '2024'
+        }
+      ]
+    };
+
+    // GIF 카드 생성 함수
+    function createGifCard(gif, index) {
+      return `
+        <div class="gif-card" style="animation-delay: ${index * 0.1}s">
+          <div class="loading-placeholder" id="loader-${index}">
+            로딩 중...
+          </div>
+          <img 
+            src="${gif.url}" 
+            alt="${gif.title}"
+            style="display: none;"
+            onload="this.style.display='block'; document.getElementById('loader-${index}').style.display='none';"
+            onerror="this.parentElement.innerHTML='<div class=\\'loading-placeholder\\'>이미지를 불러올 수 없습니다</div>'"
+          >
+          <span class="year-badge">${gif.year}</span>
+          <div class="caption">
+            <h3>${gif.title}</h3>
+            <p>${gif.description}</p>
+          </div>
+        </div>
+      `;
+    }
+
+    // GIF 로드
+    function loadGifs() {
+      const starcraftGrid = document.getElementById('starcraft-grid');
+      const wowGrid = document.getElementById('wow-grid');
+      const lolGrid = document.getElementById('lol-grid');
+
+      starcraftGrid.innerHTML = gifData.starcraft.map((gif, i) => createGifCard(gif, `sc-${i}`)).join('');
+      wowGrid.innerHTML = gifData.wow.map((gif, i) => createGifCard(gif, `wow-${i}`)).join('');
+      lolGrid.innerHTML = gifData.lol.map((gif, i) => createGifCard(gif, `lol-${i}`)).join('');
+    }
+
+    // 음악 컨트롤
+    const bgMusic = document.getElementById('bgMusic');
+    const playBtn = document.getElementById('playBtn');
+    let isPlaying = false;
+
+    function toggleMusic() {
+      if (isPlaying) {
+        bgMusic.pause();
+        playBtn.textContent = '🎵 음악 켜기';
+        playBtn.classList.remove('playing');
+      } else {
+        bgMusic.play();
+        playBtn.textContent = '⏸️ 음악 끄기';
+        playBtn.classList.add('playing');
+      }
+      isPlaying = !isPlaying;
+    }
+
+    function setVolume(value) {
+      bgMusic.volume = value / 100;
+    }
+
+    // 초기 볼륨 설정
+    bgMusic.volume = 0.5;
+
+    // 페이지 로드 시 GIF 로드
+    loadGifs();
+
+    // 스크롤 애니메이션
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.gif-card').forEach(card => {
+      card.style.opacity = '0';
+      card.style.transform = 'translateY(20px)';
+      card.style.transition = 'all 0.5s ease';
+      observer.observe(card);
+    });
+  </script>
+</body>
+</html>

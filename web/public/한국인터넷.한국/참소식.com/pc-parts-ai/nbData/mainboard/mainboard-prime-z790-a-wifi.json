@@ -1,0 +1,89 @@
+{
+  "schema": "pc-part-nb-collector-file.v1",
+  "updatedAt": "2026-06-14T03:55:16.234+09:00",
+  "category": "Mainboard",
+  "id": "mainboard-prime-z790-a-wifi",
+  "name": "Prime Z790-A WiFi",
+  "maker": "ASUS",
+  "platform": "LGA1700",
+  "estimatedPriceKrw": 1066500,
+  "priceBand": "60만원 이상",
+  "speedLabel": "DDR5",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "Mainboard",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 75,
+  "valueIndex": 7,
+  "aiUseScore": 49,
+  "powerWatts": 0,
+  "tags": [
+    "WiFi 6E",
+    "PCIe 5.0"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "Mainboard",
+    "partId": "mainboard-prime-z790-a-wifi",
+    "partName": "Prime Z790-A WiFi",
+    "speed": {
+      "score": 100,
+      "weight": 0.32,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "Mainboard",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 750,
+      "value": 100,
+      "aiFit": 490,
+      "priceEfficiency": 90,
+      "powerEfficiency": 750
+    },
+    "nbVector": [
+      100,
+      750,
+      100,
+      490,
+      90,
+      750
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 233.742,
+    "nbMin": 376.284,
+    "weightedScore": 297,
+    "nbBand": "100~499",
+    "summary": "Mainboard Prime Z790-A WiFi 부품을 속도 중심 N/B 데이터베이스 점수 297점으로 저장했습니다."
+  },
+  "nbWeightedScore": 297,
+  "nbMax": 233.742,
+  "nbMin": 376.284,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=ASUS%20Prime%20Z790-A%20WiFi%20price",
+  "notes": "ATX motherboard supporting Intel 12th/13th/14th Gen CPUs.",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

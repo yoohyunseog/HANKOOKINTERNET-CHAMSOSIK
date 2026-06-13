@@ -1,0 +1,225 @@
+{
+  "timestamp": "2026-06-09T13:47:02.305175",
+  "model": "kimi-k2.5:cloud",
+  "keyword_count": 3,
+  "analyze_subtitles": true,
+  "analysis_source": "youtube",
+  "keywords": [
+    {
+      "keyword": "오늘의 주요 뉴스",
+      "is_fixed": true,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "두산로보틱스 주가",
+      "is_fixed": false,
+      "views": [
+        239,
+        256
+      ],
+      "video_count": 2,
+      "videos": [
+        {
+          "title": "[두산로보틱스 주가 전망] 방어선 마저 무너지면 폭락! #두산로보틱스 #두산로보틱스주가 #두산로보틱스주가전망",
+          "video_id": "GZTvLjsVGx4",
+          "views": 239,
+          "upload_date": "2026-06-09",
+          "url": "https://www.youtube.com/watch?v=GZTvLjsVGx4",
+          "subtitle_summary": "The user wants a summary of a YouTube video transcript about Doosan Robotics stock in Korean, around 500 characters, with 3-5 sentences capturing the key points.\nKey points from the transcript:\n1. Doosan Robotics stock is crashing: from 127,200 won to 113,800 won (-10.53%), and down 33% from June 2nd high of 170,000 won\n2. Two main reasons for the drop:\nDisappearance of Jensen (Huang) expectations: Stock rose on expectations of cooperation with NVIDIA but fell when no concrete contracts emerged from his visit\nContinued losses: Operating loss of 12.1 billion won in Q1, net loss of 9.2 billion won. Failed to meet IPO promise of 94.2 billion won net profit by 2026. Suwon factory operating at only 19% capacity\n3. Current situation is dangerous, not a time to enter, trend is broken\n4. Defense line mentioned but not specified in the excerpt (says will mention at end)\nSummary structure:\nCurrent stock situation (sharp decline)\nTwo main reasons (Jensen expectation disappearance + continued losses/broken promises)\nWarning about current investment timing\nNeed to keep it under 500 characters (Korean characters count as 1 each).\nDraft:\n두산로보틱스 주가가 최고가 대비 33% 급락하며 11만 원대로 무너지고 있습니다. 급락 원인은 젠슨 황 방문 기대감 소멸과 지속적인 적자입니다. 엔비디아 협력 구체 성과 부재로 실망 매물이 쏟아졌고, 1분기 영업손실 121억 원을 기록하며 2026년 흑자 전환 약속이 지켜지지 않고 있습니다. 수원 공장 가동률 19%로 고정비 부담도 심각해 실적 악화가 주가 하락을 가속화하고 있습니다. 현재는 추세가 꺾인 상태로 신규 진입은 위험하며 방어선 하방 이탈 시 추가 폭락 가능성이 큽니다.\nCharacter count check:\n두산로보틱스 주가가 최고가 대비 33% 급락하며 11만 원대로 무너지고 있습니다. (38자)\n급락 원인은 젠슨 황 방문 기대감 소멸과 지속적인 적자입니다. (26자)\n엔비디아 협력 구체 성과 부재로 실망 매물이 쏟아졌고, 1분기 영업손실 121억 원을 기록하며 2026년 흑자 전환 약속이 지켜지지 않고 있습니다. (67자)\n수원 공장 가동률 19%로 고정비 부담도 심각해 실적 악화가 주가 하락을 가속화하고 있습니다. (48자)\n현재는 추세가 꺾인 상태로 신규 진입은 위험하며 방어선 하방 이탈 시 추가 폭락 가능성이 큽니다. (49자)\nTotal: around 228 characters. This is well under 500, but the user said \"500자 내외\" which usually means around 500, but can be less. However, looking at the content, I should make sure I capture the essence properly.\nActually, looking at the requirement again: \"핵심 내용을 3-5문장으로 요약할 것\" - summarize key content in 3-5 sentences.\nMy draft has 5 sentences, which fits. The character count is around 230, which might be too short for \"500자 내외\" (which implies approximately 500). But usually, for summaries, shorter is better if content is preserved. However, to be safe and provide more detail while staying under 500:\nRevised draft:\n두산로보틱스 주가가 17만 원 최고가 대비 33% 급락하여 11만 원대로 무너지고 있습니다. 급락 원인은 젠슨 황 방문을 앞둔 엔비디아 협력 기대감 소멸과",
+          "analysis_source": "subtitle",
+          "db_saved": true
+        },
+        {
+          "title": "[두산로보틱스 주가 전망] 협동로봇 글로벌 선두, 엔비디아와 에이전틱 로봇 OS 공동 개발 엔비디아 손잡고 2028년 산업용 휴머노이드, 로드맵 정리",
+          "video_id": "8txj81x75Xw",
+          "views": 256,
+          "upload_date": "2026-06-09",
+          "url": "https://www.youtube.com/watch?v=8txj81x75Xw",
+          "subtitle_summary": "두산로보틱스는 글로벌 협동로봇 시장의 선두주자로, 토크센서 방식과 중력보상 기술을 적용해 최고 수준의 안전 등급을 획득하며 제품 경쟁력을 확보하고 있습니다. 최근에는 엔비디아와 손잡고 에이전틱 로봇 운영체제 기반의 지능형 솔루션을 공동 개발 중이며, 2028년 산업용 휴머노이드 출시를 목표로 하는 로드맵을 추진하고 있습니다. AI 비전 기술 융합과 북미·유럽 시장 공격적 확장을 통해 글로벌 로봇 공급망을 주도하려는 움직임이 두드러집니다. 다만 휴머노이드 분야에서는 보스턴 다이내믹스 등 선두 기업 대비 초기 단계라는 점은 과제로 남아있습니다. 국내 대기업 및 정부와의 민관 협력 생태계 참여를 통해 미래 로봇 산업의 핵심 플레이어로 자리매김할 전망입니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        }
+      ],
+      "max": 5.1278,
+      "min": 0.0,
+      "nb_score": 51277.832,
+      "avg_views": 247.5,
+      "total_views": 495
+    },
+    {
+      "keyword": "삼성바이오 노조 교섭",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "타이어 시장 트렌드",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "일론 머스크 스페이스X",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "해저 터널 프로젝트",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "모두의 창업 지원사업",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "환율 상승 영향",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "반도체 산업 호황",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "근력 측정 방법",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "디지털 성범죄 대응",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "부천국제판타스틱영화제",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "항공기 초음속 기술",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "과민성장증후군 식이요법",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "초미세먼지 뇌 영향",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "MSCI 주",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    }
+  ]
+}

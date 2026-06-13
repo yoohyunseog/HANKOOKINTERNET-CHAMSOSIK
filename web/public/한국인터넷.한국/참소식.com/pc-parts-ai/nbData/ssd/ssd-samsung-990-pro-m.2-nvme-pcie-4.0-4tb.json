@@ -1,0 +1,90 @@
+{
+  "schema": "pc-part-nb-collector-file.v1",
+  "updatedAt": "2026-06-14T03:55:29.789+09:00",
+  "category": "SSD",
+  "id": "ssd-samsung-990-pro-m.2-nvme-pcie-4.0-4tb",
+  "name": "Samsung 990 PRO M.2 NVMe PCIe 4.0 4TB",
+  "maker": "Samsung",
+  "platform": "PCIe 4.0",
+  "estimatedPriceKrw": 1385770,
+  "priceBand": "60만원 이상",
+  "speedLabel": "7,450MB/s",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "SSD",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 98,
+  "valueIndex": 7.1,
+  "aiUseScore": 64,
+  "powerWatts": 0,
+  "tags": [
+    "NVMe",
+    "PCIe 4.0",
+    "PS5"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "SSD",
+    "partId": "ssd-samsung-990-pro-m.2-nvme-pcie-4.0-4tb",
+    "partName": "Samsung 990 PRO M.2 NVMe PCIe 4.0 4TB",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "SSD",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 980,
+      "value": 100,
+      "aiFit": 640,
+      "priceEfficiency": 70,
+      "powerEfficiency": 980
+    },
+    "nbVector": [
+      100,
+      980,
+      100,
+      640,
+      70,
+      980
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 242.746,
+    "nbMin": 344.921,
+    "weightedScore": 380,
+    "nbBand": "100~499",
+    "summary": "SSD Samsung 990 PRO M.2 NVMe PCIe 4.0 4TB 부품을 속도 중심 N/B 데이터베이스 점수 380점으로 저장했습니다."
+  },
+  "nbWeightedScore": 380,
+  "nbMax": 242.746,
+  "nbMin": 344.921,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Samsung%20990%20PRO%20M.2%20NVMe%20PCIe%204.0%204TB%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "4TB capacity, DRAM cached, 2,400TBW",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

@@ -1,0 +1,89 @@
+{
+  "schema": "pc-part-nb-collector-file.v1",
+  "updatedAt": "2026-06-14T03:55:08.333+09:00",
+  "category": "GPU",
+  "id": "gpu-rtx-4070-super-windforce-oc-12g",
+  "name": "RTX 4070 Super Windforce OC 12G",
+  "maker": "Gigabyte",
+  "platform": "PCIe 4.0",
+  "estimatedPriceKrw": 1229600,
+  "priceBand": "60만원 이상",
+  "speedLabel": "OC",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "GPU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 85,
+  "valueIndex": 6.9,
+  "aiUseScore": 55,
+  "powerWatts": 220,
+  "tags": [
+    "gaming",
+    "creator"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "GPU",
+    "partId": "gpu-rtx-4070-super-windforce-oc-12g",
+    "partName": "RTX 4070 Super Windforce OC 12G",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "GPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 850,
+      "value": 100,
+      "aiFit": 550,
+      "priceEfficiency": 80,
+      "powerEfficiency": 129
+    },
+    "nbVector": [
+      100,
+      850,
+      100,
+      550,
+      80,
+      129
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 110.432,
+    "nbMin": 316.634,
+    "weightedScore": 295,
+    "nbBand": "100~499",
+    "summary": "GPU RTX 4070 Super Windforce OC 12G 부품을 속도 중심 N/B 데이터베이스 점수 295점으로 저장했습니다."
+  },
+  "nbWeightedScore": 295,
+  "nbMax": 110.432,
+  "nbMin": 316.634,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=RTX%204070%20Super%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "GVN407SWF3OC12GD",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

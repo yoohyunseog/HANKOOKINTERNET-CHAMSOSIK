@@ -1,0 +1,89 @@
+{
+  "schema": "pc-part-nb-collector-file.v1",
+  "updatedAt": "2026-06-14T03:55:18.790+09:00",
+  "category": "RAM",
+  "id": "ram-fury-beast-rgb-32gb-2x16gb-6000mt-s-cl30",
+  "name": "Fury Beast RGB 32GB (2x16GB) 6000MT/s CL30",
+  "maker": "Kingston",
+  "platform": "DDR5",
+  "estimatedPriceKrw": 552280,
+  "priceBand": "30~60만원",
+  "speedLabel": "6000MHz CL30",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "RAM",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 75,
+  "valueIndex": 13.6,
+  "aiUseScore": 49,
+  "powerWatts": 0,
+  "tags": [
+    "gaming",
+    "AMD EXPO"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "RAM",
+    "partId": "ram-fury-beast-rgb-32gb-2x16gb-6000mt-s-cl30",
+    "partName": "Fury Beast RGB 32GB (2x16GB) 6000MT/s CL30",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "RAM",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 750,
+      "value": 181,
+      "aiFit": 490,
+      "priceEfficiency": 180,
+      "powerEfficiency": 750
+    },
+    "nbVector": [
+      100,
+      750,
+      181,
+      490,
+      180,
+      750
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 267.613,
+    "nbMin": 388.166,
+    "weightedScore": 326,
+    "nbBand": "100~499",
+    "summary": "RAM Fury Beast RGB 32GB (2x16GB) 6000MT/s CL30 부품을 속도 중심 N/B 데이터베이스 점수 326점으로 저장했습니다."
+  },
+  "nbWeightedScore": 326,
+  "nbMax": 267.613,
+  "nbMin": 388.166,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=DDR5%206000%20CL30%2032GB%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "Model KF560C30BBEAK232",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

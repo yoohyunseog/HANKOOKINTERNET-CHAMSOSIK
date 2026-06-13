@@ -1,0 +1,408 @@
+{
+  "timestamp": "2026-06-09T23:24:19.409948",
+  "model": "kimi-k2.5:cloud",
+  "keyword_count": 3,
+  "analyze_subtitles": true,
+  "analysis_source": "youtube",
+  "keywords": [
+    {
+      "keyword": "오늘의 주요 뉴스",
+      "is_fixed": true,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "쌍둥이 득표 논란",
+      "is_fixed": false,
+      "views": [
+        21772,
+        151529
+      ],
+      "video_count": 2,
+      "videos": [
+        {
+          "title": "[🔴속보] 호남서도 '동일 득표' 논란/ \"용지 부족 투표소 전국 91곳\" 지난 발표보다 늘었다/ 선거인 명부서 1,200명 통째로 '누락' 선관위 끝없는 논란 | SBS 뉴스속보",
+          "video_id": "YIJH9R6nf3M",
+          "views": 21772,
+          "upload_date": "2026-06-09",
+          "url": "https://www.youtube.com/watch?v=YIJH9R6nf3M",
+          "subtitle_summary": "6·3 지방선거에서 발생한 투표용지 부족 사태가 확산되고 있다. 처음 50곳으로 알려졌던 투표용지 부족 투표소가 41곳 추가로 확인되어 총 91곳으로 늘어났다. 이에 선관위는 투표용지 부족사태 원인과 책임 규명을 위한 진상규명위원회를 출범시켰다. 또한 호남 지역에서도 특정 후보자들이 동일한 득표수를 기록한 이른바 '쌍둥이 득표' 논란이 제기되고 있다. 더욱이 선거인 명부에서 1,200명이 통째로 누락되는 사고도 발생해 선관위의 관리 체계에 대한 비판이 거세지고 있다. 이번 사태는 단순 실수를 넘어선 선거 관리 미흡으로, 유권자들의 신뢰를 회복하기 위한 철저한 조사와 재발 방지 대책 마련이 시급하다는 지적이 나온다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        },
+        {
+          "title": "[지금뉴스] 전남광주·인천 12곳 ‘동일 득표수’ 논란…선관위 “우연한 결과” / KBS 2026.06.09.",
+          "video_id": "JizjoIMhnrU",
+          "views": 151529,
+          "upload_date": "2026-06-09",
+          "url": "https://www.youtube.com/watch?v=JizjoIMhnrU",
+          "subtitle_summary": "The user wants a summary of a YouTube video caption in Korean, around 500 characters, with 3-5 sentences capturing the key points.\nKey points from the caption:\n1. In the June 3 local elections, there were controversies about identical vote counts between 1st and 2nd place candidates in Gwangju/Jeonnam and Incheon early voting stations (12 locations total).\n2. Specific examples: In Gwangju-Jeonnam integrated special mayor election, Min Hyung-bae (Democratic Party) and Lee Jeong-hyeon (People Power Party) got identical votes (1401 vs 120) at multiple stations (10 locations).\n3. In Incheon mayoral election, Park Chan-dae (Democratic Party) and Yoo Jeong-bok (People Power Party) got identical votes (3030 vs 1440) at two stations (Songdo 1-dong and 2-dong).\n4. National Election Commission (NEC) stated this is a \"coincidental result\" after analyzing detailed vote counts, saying all voting data (number of voters, votes per candidate, invalid votes) differ overall, only partial vote counts coincided by chance. They said there's no room for fraud/manipulation.\n5. People Power Party leader Jang Dong-hyeok claimed this is statistically impossible (probability of 1 in 590 million for Incheon, and even more impossible for 10 locations in Gwangju/Jeonnam - requiring multiplying 1/590 million six times), demanding disclosure of early voting records.\nSummary structure (3-5 sentences):\nOpening: Controversy over identical vote counts in 12 early voting stations in Gwangju/Jeonnam and Incheon during local elections.\nDetails: Specific examples of candidates getting identical votes at multiple stations (Min vs Lee in Gwangju/Jeonnam at 10 places; Park vs Yoo in Incheon at 2 places).\nNEC response: Explained it as coincidental results with no fraud possible, citing different overall data.\nOpposition claim: People Power Party leader cited impossibly low probability (1 in 590 million) and demanded investigation.\nCharacter count check: Need to be around 500 characters.\nDraft:\n제63회 지방선거에서 전남·광주와 인천 일부 사전투표소에서 1, 2위 후보가 동일 득표수를 기록한 사실이 알려져 논란이 일고 있습니다. 광주·전남 통합특별시장 선거에서는 민주당 민형배 후보와 국민의힘 이정현 후보가 10개 투표소에서 각각 1401표, 120표로 똑같은 득표를 했고, 인천시장 선거에서도 박찬대·유정복 후보가 두 곳에서 각각 3030표, 1440표를 동일하게 얻었습니다. 중앙선거관리위원회는 전체 투표 데이터는 모두 달라 특정 후보 득표 일치는 우연한 결과이며 조작 가능성이 없다고 반박했습니다. 그러나 국민의힘 장동혁 대표는 이러한 동일 득표가 12곳에서 발생한 것은 5억 9천만 분의 1의 확률이라며 통계적으로 불가능하다고 주장하고 사전투표 기록 공개를 요구했습니다.\nCharacter count check:\n제63회 지방선거에서 전남·광주와 인천 일부 사전투표소에서 1, 2위 후보가 동일 득표수를 기록한 사실이 알려져 논란이 일고 있습니다. (67자)\n광주·전남 통합특별시장 선거에서는 민주당 민형배 후보와 국민의힘 이정현 후보가 10개 투표소에서 각각 1401표, 120표로 똑같은 득표를 했고, 인천시장 선거에서도 박찬대·유정복 후보가 두 곳에서 각각 3030표, 1440표를 동일하게 얻었습니다. (118자)\n중앙선거관리위원회는 전체 투표 데이터는 모두 달라 특정 후보 득표",
+          "analysis_source": "subtitle",
+          "db_saved": true
+        }
+      ],
+      "max": 2.8266,
+      "min": 1.8202,
+      "nb_score": 1.5529,
+      "avg_views": 86650.5,
+      "total_views": 173301
+    },
+    {
+      "keyword": "삼성전자 AI 대전환",
+      "is_fixed": false,
+      "views": [
+        54604,
+        5244
+      ],
+      "video_count": 2,
+      "videos": [
+        {
+          "title": "Lee Jae-yong Declares AI Transformation… Rewriting the Samsung Legend / Korea Economic TV News",
+          "video_id": "jA1O_MfZ07Y",
+          "views": 54604,
+          "upload_date": "2026-06-09",
+          "url": "https://www.youtube.com/watch?v=jA1O_MfZ07Y",
+          "subtitle_summary": "The user wants a summary of a YouTube video transcript in Korean, around 500 characters, summarizing the key content in 3-5 sentences.\nKey points from the transcript:\n1. Samsung declared AI transformation to fundamentally improve working methods and organizational culture\n2. Introducing generative AI to all affiliates, establishing dedicated AI organizations\n3. Lee Jae-yong's first company-wide innovation since emphasizing changing organizational DNA in New Year's address\n4. Introducing external generative AI services (ChatGPT, Claude, etc.) to all affiliates from this month\n5. Applying AI to core business processes (R&D, production, logistics, marketing) with CEOs directly overseeing\n6. Establishing dedicated AI organizations for strategy, data management, talent development\n7. First-ever intensive AI training for all presidents/executives, and all employees to complete training this year\n8. Reason: Global paradigm shifting to AI-centered, crisis awareness of becoming obsolete without transformation\n9. Following digital transformation (1990s) and mobile innovation, now using AI as new growth engine\n10. Samsung aims to leap to become an \"AI native company\" and seize opportunities in AI era\nI need to write this in Korean only, no English, around 500 characters (roughly 3-5 sentences).\nDraft:\n삼성이 이재용 회장의 조직 DNA 혁신 선언에 이어 전 계열사에 생성형 AI를 도입하고 업무 전 과정에 AI를 접목하는 AI 대전환을 선포했습니다. 연구개발부터 생산, 물류, 마케팅까지 핵심 업무에 AI를 도입하고 전담 조직을 신설해 CEO가 직접 챙기며, 전 사장단과 임직원을 대상으로 한 AI 교육도 대대적으로 실시합니다. 글로벌 AI 중심 패러다임 전환에 따른 위기 의식에서 비롯된 이번 변화는 1990년대 디지털 전환, 모바일 혁신에 이은 세 번째 도약으로, 삼성을 AI 네이티브 기업으로 탈바꿈시키고 AI 시대의 선도적 기회를 선점하려는 포석입니다.\nCharacter count check:\n삼성이 이재용 회장의 조직 DNA 혁신 선언에 이어 전 계열사에 생성형 AI를 도입하고 업무 전 과정에 AI를 접목하는 AI 대전환을 선포했습니다. (67자)\n연구개발부터 생산, 물류, 마케팅까지 핵심 업무에 AI를 도입하고 전담 조직을 신설해 CEO가 직접 챙기며, 전 사장단과 임직원을 대상으로 한 AI 교육도 대대적으로 실시합니다. (89자)\n글로벌 AI 중심 패러다임 전환에 따른 위기 의식에서 비롯된 이번 변화는 1990년대 디지털 전환, 모바일 혁신에 이은 세 번째 도약으로, 삼성을 AI 네이티브 기업으로 탈바꿈시키고 AI 시대의 선도적 기회를 선점하려는 포석입니다. (118자)\nTotal: 274 characters. This is too short. The user asked for around 500 characters (500자 내외). I should expand a bit more to get closer to 400-500 characters.\nRevised draft:\n삼성이 이재용 회장이 강조한 조직 DNA 혁신을 바탕으로 전 계열사에 챗GPT, 클로드 등 생성형 AI를 전면 도입하고 업무 전 과정에 AI를 접목하는 AI 대전환을 선포했습니다. 연구개발, 생산, 물류, 마케팅 등 핵심 업무에 AI를 도입하고 전담 조직을 신설해 CEO가 직접 챙기며, 사상 처음으로 전 사장단을 대상으로 한 AI 집중 교육을 실시하고 올해 안에 전 임직원 교육도 완료할 계획입니다. 글로벌 패러다임이 AI 중심으로 재편되는 위기 상황에서 디지털 전환과 모바일 혁신에 이은 세 번째",
+          "analysis_source": "subtitle",
+          "db_saved": true
+        },
+        {
+          "title": "\"싹 다 갈아엎어라\" 33년 만에 터진 이재용의 폭탄선언, 사장단 50명 긴급 소집한 삼성의 소름돋는 큰 그림",
+          "video_id": "bkIh0K5M1ww",
+          "views": 5244,
+          "upload_date": "2026-06-09",
+          "url": "https://www.youtube.com/watch?v=bkIh0K5M1ww",
+          "subtitle_summary": "The user wants a summary of a YouTube video transcript in Korean, around 500 characters, with 3-5 sentences capturing the key points.\nKey points from the transcript:\n1. Samsung Electronics stock bounced back 9% after yesterday's drop (from 300k to 322k won), but this is just noise following US semiconductor stocks.\n2. The real important news is Lee Jae-yong's declaration to completely overhaul Samsung after 33 years - \"AI Transformation\" (AI 대전환).\n3. This means changing the company's DNA to AI-centric: all employees in all departments (R&D, manufacturing, marketing, HR, finance, legal) will use AI.\n4. This is a fundamental change to Samsung's working methods and corporate constitution, not just convenience.\n5. Previously AI was used limitedly in some departments, now it's expanding to all employees and all affiliates (Samsung Display, SDI, Biologics, etc.).\n6. This decision was made while Samsung is doing well, showing the real intent.\n7. This will affect shareholders' accounts for years to come.\nI need to summarize this in 3-5 sentences, around 500 characters, in Korean only.\nDraft:\n이재용 회장이 삼성의 근본적인 변화를 선언했다. 이른바 'AI 대전환'으로, 반도체 연구개발부터 생산, 마케팅, 인사, 재무, 법무까지 모든 업무에 인공지능을 도입해 회사의 DNA를 AI 중심으로 바꾸겠다는 것이다. 기존 일부 부서에서만 제한적으로 사용하던 AI를 전 직원, 전 계열사로 확대하는 것으로, 33년 만의 대대적인 체질 개선이다. 주가의 단기 등락과 달리 이 결정은 향후 수년간 삼성과 주주들에게 중대한 영향을 미칠 것이다.\nCharacter count check:\n이재용 회장이 삼성의 근본적인 변화를 선언했다. 이른바 'AI 대전환'으로, 반도체 연구개발부터 생산, 마케팅, 인사, 재무, 법무까지 모든 업무에 인공지능을 도입해 회사의 DNA를 AI 중심으로 바꾸겠다는 것이다. 기존 일부 부서에서만 제한적으로 사용하던 AI를 전 직원, 전 계열사로 확대하는 것으로, 33년 만의 대대적인 체질 개선이다. 주가의 단기 등락과 달리 이 결정은 향후 수년간 삼성과 주주들에게 중대한 영향을 미칠 것이다.\nCount: approximately 240 characters. That's too short. The user asked for 500 characters 내외 (around 500).\nLet me expand:\n이재용 회장이 33년 만에 삼성을 통째로 갈아엎겠다는 'AI 대전환'을 선언했다. 반도체 연구개발부터 공장 생산, 마케팅, 인사, 재무, 법무 등 거의 모든 업무에 인공지능을 도입하여 회사의 DNA를 AI 중심으로 바꾸겠다는 것으로, 기존 일부 부서에만 제한적이던 AI 활용을 삼성전자를 비롯한 전 계열사 전 직원으로 확대하는 대대적인 체질 개선이다. 주식 시장의 단기적인 등락과는 차원이 다른 이 결정은 앞으로 몇 년간 삼성의 경쟁력과 주주들의 계좌에 직접적인 영향을 미치는 중대한 사건이다.\nCharacter count:\n이재용 회장이 33년 만에 삼성을 통째로 갈아엎겠다는 'AI 대전환'을 선언했다. (39)\n반도체 연구개발부터 공장 생산, 마케팅, 인사, 재무, 법무 등 거의 모든 업무에 인공지능을 도입하여 회사의 DNA를 AI 중심으로 바꾸겠다는 것으로, (72)\n기존 일부 부서에만 제한적이던 AI 활용을 삼성전자",
+          "analysis_source": "subtitle",
+          "db_saved": true
+        }
+      ],
+      "max": 2.7873,
+      "min": 2.1242,
+      "nb_score": 1.3122,
+      "avg_views": 29924.0,
+      "total_views": 59848
+    },
+    {
+      "keyword": "선관위 진상규명위원회",
+      "is_fixed": false,
+      "views": [
+        1152,
+        3107,
+        283,
+        5024
+      ],
+      "video_count": 4,
+      "videos": [
+        {
+          "title": "깔수록 ‘부실’…선관위, 내일(10일)부터 자체 진상 규명 / KBS  2026.06.09.",
+          "video_id": "7LYcxi51AIc",
+          "views": 1152,
+          "upload_date": "2026-06-09",
+          "url": "https://www.youtube.com/watch?v=7LYcxi51AIc",
+          "subtitle_summary": "The user wants me to summarize a YouTube video caption in Korean, around 500 characters, using only Korean (no English), and summarizing the key points in 3-5 sentences.\nLet me analyze the caption content:\n1. The title mentions: \"깔수록 '부실'…선관위, 내일(10일)부터 자체 진상 규명\" (The more you dig, the more 'shoddy'... Election Commission starts own investigation from tomorrow (10th))\n2. The caption discusses:\nThe Election Commission's poor response to the ballot paper shortage crisis\nIt took a long time to identify which polling stations had shortages\nNumbers kept changing because initial reports were rushed/interim counts\nWhile they were counting documents, public anger grew due to changing statements\nThey announced 91 polling stations had shortages but said numbers could change again\nStarting tomorrow (10th), they will operate an external investigation committee for 10 days\nThey will conduct comprehensive investigations including vote recounts\nThey plan to discuss prevention measures, though previous reform promises weren't kept\nKey points to summarize:\n1. 선관위의 투표용지 부족 사태 대응이 미흡했고 파악도 늦었으며 숫자도 계속 바뀜\n2. 내일(10일)부터 외부 인사 포함 자체 진상규명위원회 가동, 10일간 조사 예정\n3. 전수조사 등 통해 추가 사항 파악 및 재발방지책 논의 계획이나 과거 혁신안 이행은 미흡했음\nLet me write this in Korean, keeping it around 500 characters (which is roughly 3-5 sentences in Korean).\nDraft:\n선관위의 투표용지 부족 사태 대응이 미흡해 파악이 지연되고 숫자도 계속 바뀌어 국민 불신이 커지고 있다. 이에 선관위는 내일(10일)부터 외부 인사가 참여하는 자체 진상규명위원회를 10일간 가동해 전국 투표소를 대상으로 전수조사를 실시할 예정이다. 위원회는 추가 사항 파악과 함께 재발방지책을 논의할 계획이나, 과거에도 수차례 혁신안을 내놓았으나 제대로 이행된 적이 없어 실효성에 의문이 제기된다.\nLet me check the character count:\n선관위의 투표용지 부족 사태 대응이 미흡해 파악이 지연되고 숫자도 계속 바뀌어 국민 불신이 커지고 있다. (49자)\n이에 선관위는 내일(10일)부터 외부 인사가 참여하는 자체 진상규명위원회를 10일간 가동해 전국 투표소를 대상으로 전수조사를 실시할 예정이다. (67자)\n위원회는 추가 사항 파악과 함께 재발방지책을 논의할 계획이나, 과거에도 수차례 혁신안을 내놓았으나 제대로 이행된 적이 없어 실효성에 의문이 제기된다. (78자)\nTotal: 194 characters. That's too short. The user asked for around 500 characters (500자 내외). Let me expand it to be more detailed while keeping it to 3-5 sentences.\nRevised draft:\n선관위의 투표용지 부족 사태 대응이 미흡해 문제 투표소 파악이 지연되고 발표 숫자도 계속 바뀌어 국민 불신과 비판이 커지고 있다. 이에 선관위는 내일(10일)부터 외부 인사가 참여하는 자체 진상규명위원회를 10일간 가동해 전국 14,288개 투표소를 대상으로 전수조사를 실시하고 추가 사항을 파악할 예정이다. 위원회는 재발방지책도 �",
+          "analysis_source": "subtitle",
+          "db_saved": true
+        },
+        {
+          "title": "내일 선관위 진상규명위 출범...여야 당권경쟁 본격화 / YTN",
+          "video_id": "MJli2-PKJPM",
+          "views": 3107,
+          "upload_date": "2026-06-09",
+          "url": "https://www.youtube.com/watch?v=MJli2-PKJPM",
+          "subtitle_summary": "The user wants a summary of a YouTube video transcript in Korean, approximately 500 characters, with 3-5 sentences covering the key points.\nKey points from the transcript:\n1. Central Election Management Commission (선관위) will launch a fact-finding committee tomorrow regarding the shortage of ballot papers (voting papers) that occurred in 91 polling stations during the local elections.\n2. After the local elections, both ruling and opposition parties are focusing on leadership competition. Democratic Party leader Jeong Cheong-rae is keeping a low profile after defeat in Seoul mayoral election, preparing for August party convention.\n3. People Power Party leader Jang Dong-hyeok is pushing for special prosecutor investigation and re-election regarding the ballot shortage issue, avoiding questions about his own position.\nI need to write this in Korean only, no English, around 500 characters, in 3-5 sentences.\nDraft:\n중앙선관위는 지방선거 당일 투표용지가 부족했던 91개 투표소와 관련해 내일부터 진상규명위원회를 운영해 열흘간 조사에 나섭니다. 한편, 서울시장 선거에서 패배한 민주당 정청래 대표는 공식 일정을 중단하고 8월 전당대회를 준비하며 거취를 고심하고 있습니다. 국민의힘 장동혁 대표는 투표용지 부족 사태와 관련해 국정조사보다 특검 도입과 재선거를 우선시하며 당내 책임론을 피하기 위해 노력하는 모습을 보이고 있습니다.\nLet me check the character count:\n중앙선관위는 지방선거 당일 투표용지가 부족했던 91개 투표소와 관련해 내일부터 진상규명위원회를 운영해 열흘간 조사에 나섭니다. (67 characters)\n한편, 서울시장 선거에서 패배한 민주당 정청래 대표는 공식 일정을 중단하고 8월 전당대회를 준비하며 거취를 고심하고 있습니다. (67 characters)\n국민의힘 장동혁 대표는 투표용지 부족 사태와 관련해 국정조사보다 특검 도입과 재선거를 우선시하며 당내 책임론을 피하기 위해 노력하는 모습을 보이고 있습니다. (83 characters)\nTotal: around 217 characters. This is too short. The user asked for around 500 characters (500자 내외).\nLet me expand:\n중앙선관위는 지방선거 당일 투표용지가 부족했던 91개 투표소와 관련해 내일부터 진상규명위원회를 운영해 열흘간 조사에 나서며, 필요시 법 개정 및 재선거 실효성까지 검토할 예정입니다. 한편, 서울시장 선거에서 패배한 민주당 정청래 대표는 공식 일정을 중단하고 8월 전당대회를 준비하며 당내 책임론과 거취를 고심하고 있는 가운데, 친명계와 친정계 간 평가가 엇갈리고 있습니다. 국민의힘 장동혁 대표는 투표용지 부족 사태와 관련해 국정조사보다 특검 도입과 재선거를 우선시하며 적극적인 메시지를 내고 있으나, 당내 책임론과 자신의 거취 문제는 회피하며 버티기에 들어간 모습을 보이고 있습니다.\nCharacter count check:\n1. 중앙선관위는 지방선거 당일 투표용지가 부족했던 91개 투표소와 관련해 내일부터 진상규명위원회를 운영해 열흘간 조사에 나서며, 필요시 법 개정 및 재선거 실효성까지 검토",
+          "analysis_source": "subtitle",
+          "db_saved": true
+        },
+        {
+          "title": "깔수록 ‘부실’…선관위 내일(10일)부터 자체 진상 규명 [9시 뉴스] / KBS  2026.06.09.",
+          "video_id": "2knJgCxGnaI",
+          "views": 283,
+          "upload_date": "2026-06-09",
+          "url": "https://www.youtube.com/watch?v=2knJgCxGnaI",
+          "subtitle_summary": "The user wants a summary of a YouTube video transcript in Korean, around 500 characters, with 3-5 sentences capturing the key points.\nKey points from the transcript:\n1. Initial report said 91 polling stations ran out of ballots, but this number keeps changing\n2. Central Election Management Commission (선관위) was slow to grasp the situation, citing the need to check voting records and confirm with site managers across 14,228 polling stations\n3. The initial announcement was rushed, and the June 5th announcement by the chairman was an interim count, leading to changing numbers\n4. Public trust is eroding with daily protests at Olympic Park counting station\n5. Starting tomorrow (10th), a 10-day internal investigation committee with outside personnel will conduct a comprehensive review and consider preventive measures\n6. Previous self-reform promises were not properly implemented\nI need to write this in Korean only, no English, around 500 characters, 3-5 sentences.\nDraft:\n투표용지 부족 사태가 발생한 투표소가 91곳에서 계속 변동되며 국민 불신이 커지고 있다. 선관위는 전국 14,228개 투표소를 일일이 확인하느라 파악이 늦었다고 해명했지만, 급하게 발표한 중간 집계 탓에 숫자가 계속 바뀌었다. 선관위는 내일부터 열흘간 외부 인사가 참여하는 자체 진상규명위원회를 가동해 전면 재조사하고 재발 방지책을 논의할 계획이지만, 과거 자체 혁신안이 제대로 이행된 적 없어 실효성에 의문이 제기된다.\nCharacter count check:\n투표용지 부족 사태가 발생한 투표소가 91곳에서 계속 변동되며 국민 불신이 커지고 있다. (49)\n선관위는 전국 14,228개 투표소를 일일이 확인하느라 파악이 늦었다고 해명했지만, 급하게 발표한 중간 집계 탓에 숫자가 계속 바뀌었다. (67)\n선관위는 내일부터 열흘간 외부 인사가 참여하는 자체 진상규명위원회를 가동해 전면 재조사하고 재발 방지책을 논의할 계획이지만, 과거 자체 혁신안이 제대로 이행된 적 없어 실효성에 의문이 제기된다. (96)\nTotal: around 212 characters. That's too short. I need to expand to around 500 characters.\nLet me expand:\n투표용지가 모자랐던 투표소가 91곳이라는 발표가 계속 변동되며 참정권 침해 논란이 확산되고 있다. 선관위는 전국 14,228개 투표소의 투표록을 확인하고 현장 관리자에게 추가 확인하는 과정에서 시간이 소요됐다고 설명했지만, 선거 당일 급하게 발표한 데 이어 5일 발표도 중간 집계여서 숫자가 계속 달라지고 있다. 이로 인해 올림픽공원 개표소에는 연일 집회 인파가 몰리고 말을 바꾼다는 불신이 커지고 있다. 선관위는 내일부터 열흘간 외부 인사가 참여하는 자체 진상규명위원회를 가동해 전면적인 재조사를 실시하고 재발 방지책을 논의할 예정이지만, 과거 수차례 내놓은 자체 혁신안이 제대로 이행된 적 없어 이번 조사의 실효성에 의문이 제기되고 있다.\nCharacter count:\n투표용지가 모자랐던 투표소가 91곳이라는 발표가 계속 변동되며 참정권 침해 논란이 확산되고 있다. (52)\n선관위는 전국 14,228개 투표소의 �",
+          "analysis_source": "subtitle",
+          "db_saved": true
+        },
+        {
+          "title": "\"투표용지 부족 투표소 전국 91곳\"…진상규명위 출범 [세상만사] #투표용지부족사태 #진상규명위출범",
+          "video_id": "GCvBbHTdMXs",
+          "views": 5024,
+          "upload_date": "2026-06-09",
+          "url": "https://www.youtube.com/watch?v=GCvBbHTdMXs",
+          "subtitle_summary": "The user wants a summary of a YouTube video transcript in Korean, limited to around 500 characters, and I must respond ONLY in Korean without using English at all.\nKey points from the transcript:\n1. 6.3 local elections had ballot paper shortages at 91 polling stations nationwide (twice the previously announced number)\n2. National Election Commission (NEC) launched a fact-finding committee to investigate causes and responsibility\n3. Some polling stations had voting suspended temporarily (increased from 22 to 26 locations)\n4. Political circles demanding reform including dismantling NEC due to repeated failures (recalling 4 years ago presidential election fiasco)\n5. Democratic Party criticizes NEC having both administrative and interpretative powers\n6. People Power Party reviewing election law amendments to include voting suspension as reason for re-election\n7. Han Dong-hoon proposed bill to make NEC chairmanship a permanent position to break connection with courts\n8. Fact-finding committee composed of 6 external members, chaired by lawyer Cho Hyun-han-wook (조현한욱)\n9. Both ruling and opposition parties agreed on special prosecutor investigation and national investigation\n10. Differences exist on details like scope and duration of investigation\nI need to summarize this in 3-5 sentences, around 500 characters in Korean.\nDraft:\n6.3 지방선거에서 투표용지 부족 사태가 발생한 투표소가 전국 91곳으로 집계되었으며, 투표가 일시 중지된 곳도 26곳으로 늘어났습니다. 선관위는 외부 인사 6명으로 진상규명위원회를 구성해 원인과 책임을 조사하기로 했으나, 이미 신뢰가 상실된 상황이라 국민적 의혹이 지속되고 있습니다. 여야는 선관위 해체 수준의 개혁을 요구하며 국정조사와 특검 추진에 뜻을 모았으나, 재선거 추진 등 세부 사항에서는 이견을 보이고 있습니다.\nCharacter count check:\n6.3 지방선거에서 투표용지 부족 사태가 발생한 투표소가 전국 91곳으로 집계되었으며, 투표가 일시 중지된 곳도 26곳으로 늘어났습니다. (78자)\n선관위는 외부 인사 6명으로 진상규명위원회를 구성해 원인과 책임을 조사하기로 했으나, 이미 신뢰가 상실된 상황이라 국민적 의혹이 지속되고 있습니다. (83자)\n여야는 선관위 해체 수준의 개혁을 요구하며 국정조사와 특검 추진에 뜻을 모았으나, 재선거 추진 등 세부 사항에서는 이견을 보이고 있습니다. (72자)\nTotal: around 233 characters. This is too short (need around 500).\nLet me expand:\n6.3 지방선거에서 투표용지 부족 사태가 발생한 투표소가 전국 91곳으로 집계되었으며, 투표가 일시 중지된 곳도 26곳으로 늘어나 선관위 관리 부실이 심각한 수준으로 드러났습니다. 선관위는 외부 인사 6명으로 진상규명위원회를 구성해 원인과 책임을 조사하기로 했으나, 이미 신뢰가 상실된 상황이라 국민과 정치권의 의혹이 지속되고 있습니다. 민주당은 선관위의 행정·해석권 분리를, 국민의힘은 투표 중단을 재선거 사유로 포함하는 선거법 개정을 검토하며 여야 모두 선관위 해체 수준의 개혁을 요구하고 있습니다. 이에 여야는 국정조사와 특검 추진에 합의했으나, 조사 대상과 기간 등 세부 사항에서는 이견을 보이며 추가 협상을 진행할 예정입니다.\nCharacter count:\n6.3 지방선거에서 투표용지",
+          "analysis_source": "subtitle",
+          "db_saved": true
+        }
+      ],
+      "max": 1.453,
+      "min": 2.0552,
+      "nb_score": 0.707,
+      "avg_views": 2391.5,
+      "total_views": 9566
+    },
+    {
+      "keyword": "투표용지 부족 사태",
+      "is_fixed": false,
+      "views": [
+        84802,
+        7737,
+        1894
+      ],
+      "video_count": 3,
+      "videos": [
+        {
+          "title": "Jang Dong-hyuk: “Polling stations facing ballot shortages increase from 50 to 91… It grows every ...",
+          "video_id": "4sbSh7KBGDU",
+          "views": 84802,
+          "upload_date": "2026-06-09",
+          "url": "https://www.youtube.com/watch?v=4sbSh7KBGDU",
+          "subtitle_summary": "The user wants a summary of a YouTube video transcript in Korean, limited to around 500 characters, and I must respond ONLY in Korean without using English at all.\nKey points from the transcript:\n1. Jang Dong-hyuk (National Assembly member) is speaking\n2. Ballot shortages increasing from 50 to 91 polling stations (originally 14 in Seoul, then 67, then 100)\n3. Voting suspension incidents increased from 22 to 26 locations\n4. Spread across most of the country (Seoul, Busan, Daegu, Incheon, Ulsan, Gyeonggi, Chungbuk, Jeonbuk, Jeonnam)\n5. Suspicious vote count coincidences: In Incheon Songdo 1-dong and 2-dong, candidates Yoo Jeong-bok and Park Chan-dae got exactly the same number of votes (probability 1 in 590 million)\n6. In Gwangju/Jeonnam integrated mayoral election, 10 districts had identical vote counts for two candidates (probability 1 in 590 million to the 6th power)\n7. National Election Commission (선관위) only says it's coincidence without convincing explanation\n8. Media has also raised these issues\n9. Calls for special prosecutor investigation (특검)\nI need to summarize this in about 500 characters (Korean characters), in 3-5 sentences.\nDraft:\n국민의힘 장동혁 의원은 선관위의 투표용지 부족 사태가 서울 14곳에서 시작해 전국 100곳으로 확대되었고, 투표 중지 사태도 26곳으로 늘었다고 지적했다. 또한 인천 송도와 광주·전남 등에서 특정 후보 간 득표수가 완전히 일치하는 비율이 수억 분의 1에 달하는 의혹을 제기하며, 선관위의 '우연'이라는 해명은 납득할 수 없다고 비판했다. 그는 이러한 선거 부정 의혹을 해소하기 위해 특검 도입만이 유일한 해결책이라고 주장했다.\nCharacter count check:\n국민의힘 장동혁 의원은 선관위의 투표용지 부족 사태가 서울 14곳에서 시작해 전국 100곳으로 확대되었고, 투표 중지 사태도 26곳으로 늘었다고 지적했다. (74 chars)\n또한 인천 송도와 광주·전남 등에서 특정 후보 간 득표수가 완전히 일치하는 비율이 수억 분의 1에 달하는 의혹을 제기하며, 선관위의 '우연'이라는 해명은 납득할 수 없다고 비판했다. (89 chars)\n그는 이러한 선거 부정 의혹을 해소하기 위해 특검 도입만이 유일한 해결책이라고 주장했다. (46 chars)\nTotal: 209 characters. This is too short (needs to be around 500).\nLet me expand:\n국민의힘 장동혁 의원은 선관위의 투표용지 부족 사태가 처음 서울 14곳에서 시작해 전국 100곳으로 확대되었고, 투표 중지 사태도 26곳으로 늘었다고 지적했다. 또한 인천 송도와 광주·전남 등에서 특정 후보 간 득표수가 완전히 일치하는 경우가 발생했는데, 이는 수억 분의 1에 달하는 희박한 확률이라며 선관위의 '우연'이라는 해명은 납득할 수 없다고 비판했다. 그는 이러한 선거 부정 의혹을 해소하고 국민적 불신을 해소하기 위해 특검 도입만이 유일한 해결책이라고 강조하며 특검법의 조속한 처리를 촉구했다.\nCharacter count:\n국민의힘 장동혁 의원은 선관위의 투표용지 부족 사태",
+          "analysis_source": "subtitle",
+          "db_saved": true
+        },
+        {
+          "title": "Jang Calls for \"Full Re-election,\" Oh Says \"Impossible Without Election Commission Act\"... Fallou...",
+          "video_id": "FlKuws4yWbk",
+          "views": 7737,
+          "upload_date": "2026-06-09",
+          "url": "https://www.youtube.com/watch?v=FlKuws4yWbk",
+          "subtitle_summary": "The user wants a summary of a YouTube video transcript in Korean, around 500 characters, with 3-5 sentences covering the key points.\nKey points from the transcript:\n1. 63rd local elections had ballot shortages at voting stations (initially 14, then 67, then 140 places)\n2. Changwon voting station had 1,300 missing voters from registry\n3. Jang Dong-hyeok (People's Power) demands full re-election, says special law might be needed\n4. Kim Young-hwan (lost in Chungbuk) raises fraud allegations, refuses to accept results\n5. Oh Se-hoon (Seoul Mayor) says re-election impossible without Election Commission Act, not a serious violation that changes results\n6. NEC says ballot shortage doesn't qualify for re-election under Public Official Election Act\nI need to summarize this in Korean, around 500 characters, 3-5 sentences.\nDraft:\n제63회 지방선거에서 투표용지 부족 사태가 확산되고 선거인 명부 누락까지 발생하며 재선거 논란이 커지고 있습니다. 국민의힘 장동혁 대표는 전국 재선거를 요구하며 특별법 제정까지 주장했으나, 당선된 오세훈 서울시장은 선거관리위원회법상 절차상 하자가 중대한 위법이 아니면 재선거가 불가능하다고 반박했습니다. 중앙선관위는 투표용지 부족이 공직선거법상 재선거 사유에 해당하지 않는다고 밝혔으며, 낙선자들은 부정선거 의혹을 제기하며 투쟁을 예고하고 있습니다.\nCharacter count check:\n제63회 지방선거에서 투표용지 부족 사태가 확산되고 선거인 명부 누락까지 발생하며 재선거 논란이 커지고 있습니다. (49자)\n국민의힘 장동혁 대표는 전국 재선거를 요구하며 특별법 제정까지 주장했으나, 당선된 오세훈 서울시장은 선거관리위원회법상 절차상 하자가 중대한 위법이 아니면 재선거가 불가능하다고 반박했습니다. (96자)\n중앙선관위는 투표용지 부족이 공직선거법상 재선거 사유에 해당하지 않는다고 밝혔으며, 낙선자들은 부정선거 의혹을 제기하며 투쟁을 예고하고 있습니다. (72자)\nTotal: 217 characters. Too short. Need to expand to around 500 characters.\nLet me add more details:\n제63회 지방선거에서 투표용지 부족 투표소가 140개소로 늘고 창주 투표소에서 선거인 명부 1,300여 명이 누락되는 등의 사태가 발생하며 재선거 논란이 거세지고 있습니다. 국민의힘 장동혁 대표는 참정권 박탈 사태 해결을 위해 전국 재선거와 특별법 제정을 요구했으나, 당선된 오세훈 서울시장은 선거관리위원회법상 절차상 하자가 당락을 바꿀 만한 중대한 위법이 아니면 재선거가 불가능하다고 일축했습니다. 중앙선관위 역시 투표용지 부족이 공직선거법상 재선거 사유에 해당하지 않는다고 밝혔으며, 충북지사에 낙선한 김영환 후보 등은 부정선거 의혹을 제기하며 민주주의 바로 세우기 투쟁을 예고하고 있습니다.\nCharacter count:\n제63회 지방선거에서 투표용지 부족 투표소가 140개소로 늘고 창주 투표소에서 선거인 명부 1,300여 명이 누락되는",
+          "analysis_source": "subtitle",
+          "db_saved": true
+        },
+        {
+          "title": "Ballot Shortage Crisis... Press Conference for University Students' Declaration on the State of t...",
+          "video_id": "wa98Z7ZxMVw",
+          "views": 1894,
+          "upload_date": "2026-06-09",
+          "url": "https://www.youtube.com/watch?v=wa98Z7ZxMVw",
+          "subtitle_summary": "The user wants a summary of a YouTube video transcript in Korean, around 500 characters, with 3-5 sentences capturing the key points.\nKey points from the transcript:\n1. Speaker is Kang Joo-ui, a Korea University student and representative of the 63 District Declaration University Student Youth Alliance\n2. This is about the ballot shortage crisis in the June 3 local elections (63 지방 선거 seems to be a typo for 6.3 or June 3)\n3. People waited for hours in heat, some polling stations stopped voting after 4:30 PM due to lack of ballots\n4. This is not a natural disaster but a man-made disaster caused by the National Election Commission (성관위/선관위) - they only printed 50% despite knowing the number of eligible voters\n5. The NEC is hiding behind legal excuses instead of taking responsibility\n6. They demand the election be invalidated based on precedent (2021 Berlin election) and Article 224 of the Public Official Election Act\n7. The NEC should be impeached, not just apologize or reshuffle personnel\n8. University students and youth will take legal action to ensure voting rights\nConstraints:\nOnly Korean\nNo English at all\nAround 500 characters\n3-5 sentences summarizing key content\nLet me draft:\n고려대학교 강주의 대표를 중심으로 한 대학생 청년 연대가 투표용지 부족 사태에 대한 기자회견을 열었다. 이들은 6·3 지방선거에서 선관위가 투표용지를 50%만 인쇄하는 구조적 결함을 방치해 국민의 참정권을 박탈했다고 비판하며, 이는 단순 실책이 아닌 헌법 위반이자 국기 문란 행위라고 주장했다. 또한 독일 베를린 선거 사례를 들어 공직선거법 제224조에 근거한 선거 무효와 선관위 탄핵을 요구하며, 청년들이 직접 법적 조치를 끝까지 추진할 것임을 밝혔다.\nCharacter count check:\n고려대학교 강주의 대표를 중심으로 한 대학생 청년 연대가 투표용지 부족 사태에 대한 기자회견을 열었다. (49자)\n이들은 6·3 지방선거에서 선관위가 투표용지를 50%만 인쇄하는 구조적 결함을 방치해 국민의 참정권을 박탈했다고 비판하며, 이는 단순 실책이 아닌 헌법 위반이자 국기 문란 행위라고 주장했다. (96자)\n또한 독일 베를린 선거 사례를 들어 공직선거법 제224조에 근거한 선거 무효와 선관위 탄핵을 요구하며, 청년들이 직접 법적 조치를 끝까지 추진할 것임을 밝혔다. (78자)\nTotal: around 223 characters. That's too short. The user asked for around 500 characters (500자 내외). Let me expand.\nRevised draft:\n고려대학교 강주의 대표를 중심으로 한 대학생 청년 연대가 투표용지 부족 사태 규탄 기자회견을 열었다. 이들은 6·3 지방선거에서 선관위가 유권자 수를 뻔히 알면서도 투표용지를 50%만 인쇄하는 구조적 결함을 방치해, 무더위 속에서 기다리던 국민들이 투표하지 못하는 참정권 박탈 사태를 초래했다고 비판했다. 또한 선관위가 법리를 핑계로 책임을 회피하고 도망치고 있다며, 이는 단순한 행정 실책이 아닌 헌법 위반이자 국기 문란 행위이므로 선관위는 사퇴를 넘어 탄핵",
+          "analysis_source": "subtitle",
+          "db_saved": true
+        }
+      ],
+      "max": 1.0616,
+      "min": 2.0211,
+      "nb_score": 0.5253,
+      "avg_views": 31477.67,
+      "total_views": 94433
+    },
+    {
+      "keyword": "국정조사 특검 논란",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "AI 반도체 동맹",
+      "is_fixed": false,
+      "views": [
+        1056
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "AI 동맹인데 폭락? 12% 하락 대응전략｜유일한 대표｜종가배팅｜오늘장뭐하지｜260609",
+          "video_id": "kwNOLSKN_Zg",
+          "views": 1056,
+          "upload_date": "2026-06-09",
+          "url": "https://www.youtube.com/watch?v=kwNOLSKN_Zg",
+          "subtitle_summary": "AI 반도체 동맹 관련주가 예상과 달리 12% 급락하며 투자자들의 우려가 커지고 있는 상황에 대한 대응 전략을 제시한다. 단기 급락은 기술적 조정일 가능성이 높으며, AI 반도체 동맹의 중장기적 가치는 여전히 유효하다는 분석이 핵심이다. 종가 배팅 전략을 활용해 변동성이 큰 장세에서 리스크를 관리하는 방법을 구체적으로 설명하며, 급락 시",
+          "analysis_source": "web_search",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "젠슨 황 한국 방문",
+      "is_fixed": false,
+      "views": [
+        1446
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "'삼겹살 회동'부터 AI 동맹까지...젠슨 황 방한이 남긴 것 / YTN",
+          "video_id": "T9GRRkExBZM",
+          "views": 1446,
+          "upload_date": "2026-06-09",
+          "url": "https://www.youtube.com/watch?v=T9GRRkExBZM",
+          "subtitle_summary": "The user wants a summary of a YouTube video transcript in Korean, around 500 characters, with 3-5 sentences capturing the key points.\nKey points from the transcript:\n1. Jensen Huang (NVIDIA CEO) visited Korea for 4 nights/5 days (official schedule 3 nights/4 days)\n2. Met with major companies (SK Group, LG Group, Naver), government, academia, startups\n3. First day: \"Samgyeopsal meeting\" with SK Chairman Chey Tae-won, LG Chairman Koo Kwang-mo, Naver Chairman Lee Hae-jin at Hongdae restaurant - ate pork belly, drank somaek (soju+beer), showed friendly demeanor\n4. Also had 2nd round at BBQ (K-chicken) showing love for Korean chicken\n5. Next day: Met with gaming industry, threw first pitch at Doosan Bears game, surprise meeting with SK Group again\n6. Last day: Visited Seoul National University, AI robot startup roundtable\n7. Compared to previous visit (1 night/2 days in October), stayed 3 times longer this time\n8. Left deep footprints in AI industry cooperation\nNeed to summarize in 3-5 sentences, around 500 characters.\nDraft:\n젠슨 황 엔비디아 CEO가 4박 5일 일정으로 한국을 방문해 SK·LG·네이버 등 주요 기업 총수들과 정부·학계·스타트업을 두루 만나 AI 산업 협력을 다졌다. 특히 방한 첫날 홍대 삼겹살집에서 최태원·구광모·이해진 등과 이른바 '삼겹살 회동'을 갖고 소맥을 마시며 소탈한 모습을 보였고, BBQ에서 2차를 즐기는 등 K-치킨에 대한 애정도 드러냈다. 지난해 10월 1박 2일 방문보다 3배 길게 머물며 서울대 방문과 AI 로봇 스타트업 간담회 등을 통해 한국 AI 생태계와의 깊은 협력 의지를 남기고 출국했다.\nCharacter count check:\n젠슨 황 엔비디아 CEO가 4박 5일 일정으로 한국을 방문해 SK·LG·네이버 등 주요 기업 총수들과 정부·학계·스타트업을 두루 만나 AI 산업 협력을 다졌다. (72자)\n특히 방한 첫날 홍대 삼겹살집에서 최태원·구광모·이해진 등과 이른바 '삼겹살 회동'을 갖고 소맥을 마시며 소탈한 모습을 보였고, BBQ에서 2차를 즐기는 등 K-치킨에 대한 애정도 드러냈다. (95자)\n지난해 10월 1박 2일 방문보다 3배 길게 머물며 서울대 방문과 AI 로봇 스타트업 간담회 등을 통해 한국 AI 생태계와의 깊은 협력 의지를 남기고 출국했다. (78자)\nTotal: 245 characters. This is too short (need around 500). Let me expand.\nRevised draft:\n젠슨 황 엔비디아 CEO가 4박 5일 일정으로 한국을 방문해 SK·LG·네이버 등 주요 기업 총수들과 정부·학계·스타트업을 두루 만나 AI 산업 협력에 깊은 발자취를 남겼다. 방한 첫날 홍대 삼겹살집에서 최태원·구광모·이해진 등과 '삼겹살 회동'을 갖고 소맥을 마시며 소탈한 모습을 보였고, BBQ에서 2차를 즐기는 등 K-치킨 사랑도 여러 차례 드러냈다. 이튿날에는 게임",
+          "analysis_source": "subtitle",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "코스피 AI 테마주",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "전세대출 DSR 규제 완화",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "검찰개혁자문위 활동 종료",
+      "is_fixed": false,
+      "views": [
+        93
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "'보완수사권 폐지' 힘 실리나…검찰개혁 자문위는 반발 / 연합뉴스TV (YonhapnewsTV)",
+          "video_id": "Nn80lj9IeqI",
+          "views": 93,
+          "upload_date": "2026-06-09",
+          "url": "https://www.youtube.com/watch?v=Nn80lj9IeqI",
+          "subtitle_summary": "The user wants a summary of a YouTube video transcript in Korean, around 500 characters, with 3-5 sentences. The video is about the abolition of the prosecution's supplementary investigation rights.\nKey points from the transcript:\n1. President Lee Jae-myung previously said limited supplementary investigation rights were necessary, but now says he'll leave it to the National Assembly, effectively supporting abolition\n2. The Prosecution Reform Task Force Advisory Committee publicly opposed this, saying even limited supplementary investigation should remain, citing concerns about short statute of limitations in election law cases and case ping-pong\n3. They also said if supplementary investigation is abolished, full transfer of prosecution rights should be revived to prevent case burial\n4. The advisory committee declared end of activities citing lack of review of institutional gaps and side effects\n5. The task force plans to draft criminal procedure law amendments soon for party-government consultation\nI need to summarize this in 3-5 sentences, around 500 characters, in Korean only.\nDraft:\n이재명 대통령이 검찰 보완수사권 폐지 여부를 국회에 맡기겠다고 밝혀 사실상 폐지에 힘을 실어주는 것이 아니냐는 관측이 나왔습니다. 이에 검찰개혁 추진단 자문위원회는 공소시효가 짧은 사건이나 사건 핑퐁 우려 등을 이유로 제한적 보완수사권을 남겨야 한다고 공개 반발하며 활동 종료를 선언했습니다. 자문위는 보완수사권 전면 폐지 시 전권 송취가 부활해야 한다고도 주장했습니다.\nCharacter count check:\n이재명 대통령이 검찰 보완수사권 폐지 여부를 국회에 맡기겠다고 밝혀 사실상 폐지에 힘을 실어주는 것이 아니냐는 관측이 나왔습니다. (67자)\n이에 검찰개혁 추진단 자문위원회는 공소시효가 짧은 사건이나 사건 핑퐁 우려 등을 이유로 제한적 보완수사권을 남겨야 한다고 공개 반발하며 활동 종료를 선언했습니다. (84자)\n자문위는 보완수사권 전면 폐지 시 전권 송취가 부활해야 한다고도 주장했습니다. (39자)\nTotal: 190 characters. Too short.\nLet me expand:\n이재명 대통령이 검찰 보완수사권 폐지 여부를 국회에 맡기겠다고 입장을 바꿔 사실상 폐지에 힘을 실어주는 것이 아니냐는 관측이 나왔습니다. 이에 검찰개혁 추진단 자문위원회는 공소시효가 짧은 선거법 사건이나 사건 핑퐁 우려 등을 이유로 제한적 보완수사권을 남겨야 한다고 공개 반발하며 활동 종료를 선언했습니다. 자문위는 보완수사권 전면 폐지 시 1차 수사기관 견제 기능과 사건 암장 방지를 위해 전권 송취가 부활해야 한다고 주장했습니다. 제도적 공백에 대한 충분한 검토 없이 추진된다는 우려가 변수가 될 전망입니다.\nCharacter count:\n이재명 대통령이 검찰 보완수사권 폐지 여부를 국회에 맡기겠다고 입장을 바꿔 사실상 폐지에 힘을 실어주는 것이 아니냐는 관측이 나왔습니다. (72자)\n이에 검찰개혁 추진단 자문위원회는 공소시효가 짧은 선거법 사건이나 사건 핑퐁 우려 등을 이유로 제한적 보완수사권을 남겨야 한다고 공개 반발하",
+          "analysis_source": "subtitle",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "경기 투표지 추가송부",
+      "is_fixed": false,
+      "views": [
+        1093
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "[Replay] Jamsil Ballot Counting Center Blockade Enters Day 5… Man Arrested for 'Illegally Filming...",
+          "video_id": "JN6CuiFE2O4",
+          "views": 1093,
+          "upload_date": "2026-06-09",
+          "url": "https://www.youtube.com/watch?v=JN6CuiFE2O4",
+          "subtitle_summary": "The user wants a summary of a YouTube video transcript in Korean, around 500 characters, with 3-5 sentences covering the key points.\nKey points from the transcript:\n1. Citizens protesting ballot paper shortage have been blockading Jamsil ballot counting center for 5 days (entering day 5)\n2. President Lee Jae-myung criticized the election commission for destroying a model democratic country\n3. It was confirmed that ballot paper shortages occurred not just in one place but multiple places (Songpa and Gangnam districts)\n4. The election commission told them to wait until 500 papers remained, but even then didn't replenish quickly\n5. A man was arrested for illegal filming at the scene\n6. Thousands gathered at Olympic Park demanding re-election\n7. Citizens emphasize this is spontaneous, not affiliated with specific political forces\n8. Some requested using only Taegeukgi (national flag) instead of party flags to avoid looking like a specific group\n9. Police have deployed mobile units to prepare for emergencies\nI need to summarize this in 3-5 sentences, around 500 characters, in Korean only.\nDraft:\n6.3 지방선거 투표용지 부족 사태에 항의하는 시민들이 서울 잠실 개표소를 5일째 봉쇄하며 재선거를 요구하고 있습니다. 이재명 대통령은 선관위를 강하게 비판했으며, 단독 보도에 따르면 송파구뿐 아니라 강남구도 투표용지 부족을 선관위에 보고했으나 500장이 남을 때까지 기다리라는 미흡한 대응을 받은 것으로 확인됐습니다. 현장에서는 불법 촬영 혐의로 한 남성이 체포되는 등의 사건이 발생했고, 경찰은 기동대를 배치해 만일의 사태에 대비하고 있습니다.\nCharacter count check:\nFirst sentence: ~70 characters\nSecond sentence: ~110 characters\nThird sentence: ~80 characters\nTotal: around 260 characters. This is too short (needs to be around 500).\nLet me expand:\n6.3 지방선거 투표용지 부족 사태에 항의하는 시민들이 서울 잠실 개표소를 5일째 봉쇄하며 재선거를 요구하고 있습니다. 이재명 대통령은 선관위가 모범적 민주국가를 망가뜨렸다고 비판했으며, 단독 보도에 따르면 송파구와 강남구 모두 투표용지 부족을 선관위에 보고했으나 500장이 남을 때까지 기다리라는 미흡한 대응을 받아 유권자들의 항의를 샀던 것으로 확인됐습니다. 시민들은 특정 정치 세력과 무관한 자발적 모임임을 강조하며 태극기만 사용할 것을 요청하기도 했고, 현장에서는 불법 촬영 혐의로 한 남성이 체포되는 등의 사건이 발생했습니다. 이에 경찰은 기동대를 배치해 만일의 사태에 대비하고 있으며, 사태 원인을 밝힐 진상규명 위원회는 내일부터 열흘간 가동될 예정입니다.\nCharacter count:\n1. 6.3 지방선거 투표용지 부족 사태에 항의하는 시민들이 서울 잠실 개표소를 5일째 봉쇄하며 재선거를 요구하고 있습니다. (67)\n2. 이재명 대통령은 선관위가 모범적 민주국가를 망가뜨렸다고 비판했으며, 단독 보도에 따르면 송파구와 강남구 모두 투표용지 부족을 선관위에 보고했으나 500장이 남을 때까지 기다리라는 미흡한 대응을 받아 유권자들의 항의를 샀던 것으로",
+          "analysis_source": "subtitle",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "한은 총소득 GDP 증가",
+      "is_fixed": false,
+      "views": [
+        152
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "반도체에 1분기 1.8% 성장…명목 GDP 성장률 50년 만 최고 / 연합뉴스TV (YonhapnewsTV)",
+          "video_id": "hwY8MnkUCoI",
+          "views": 152,
+          "upload_date": "2026-06-09",
+          "url": "https://www.youtube.com/watch?v=hwY8MnkUCoI",
+          "subtitle_summary": "The user wants a summary of a YouTube video transcript in Korean, around 500 characters, with 3-5 sentences covering the key points.\nKey points from the transcript:\n1. Q1 economic growth rate was 1.8% thanks to semiconductor boom\n2. Nominal GDP growth rate was 10.5%, highest in 50 years since 1976 Q1\n3. Nominal GNI also increased 11%, highest in 50 years\n4. Per capita GNI was $36,963 last year, could approach $40,000 this year if trend continues\n5. High exchange rate (1,500 won range) might make it difficult to exceed $40,000\nI need to write this in Korean only, no English, around 500 characters, 3-5 sentences.\nDraft:\n반도체 수출 호조로 올해 1분기 우리 경제 성장률이 1.8%를 기록했으며, 명목 GDP 성장률은 10.5%로 1976년 이후 50년 만에 최고 수준을 보였습니다. 명목 국민총소득(GNI)도 11% 급증하며 역대 최대 폭으로 늘었고, 이 추세가 유지되면 올해 1인당 GNI가 4만 달러에 근접할 것으로 전망됩니다. 다만 원·달러 환율이 현재처럼 1,500원대를 유지하면 4만 달러 돌파는 어려울 수 있다는 관측도 나왔습니다.\nCharacter count check:\n반도체 수출 호조로 올해 1분기 우리 경제 성장률이 1.8%를 기록했으며, 명목 GDP 성장률은 10.5%로 1976년 이후 50년 만에 최고 수준을 보였습니다. (76 characters)\n명목 국민총소득(GNI)도 11% 급증하며 역대 최대 폭으로 늘었고, 이 추세가 유지되면 올해 1인당 GNI가 4만 달러에 근접할 것으로 전망됩니다. (71 characters)\n다만 원·달러 환율이 현재처럼 1,500원대를 유지하면 4만 달러 돌파는 어려울 수 있다는 관측도 나왔습니다. (52 characters)\nTotal: around 200 characters. This is too short. The user asked for around 500 characters (500자 내외). I need to expand a bit more while keeping it to 3-5 sentences.\nLet me try again:\n반도체 수출 호조에 힘입어 올해 1분기 우리 경제 성장률이 1.8%를 기록했으며, 특히 명목 GDP 성장률은 10.5%로 1976년 이후 50년 만에 최고 수준을 보였습니다. 이는 기업 수익성 개선으로 인한 것으로 정부 재정력 확대와 내수 진작에 긍정적인 영향을 미칠 것으로 보입니다. 또한 명목 GNI도 11% 급증하며 역대 최대 폭으로 늘었고, 이 같은 추세가 유지된다면 올해 1인당 GNI가 4만 달러에 근접할 것으로 예상됩니다. 다만 원·달러 환율이 현재처럼 1,500원대를 유지하면 4만 달러 돌파는 어려울 수 있다는 관측도 제기되었습니다.\nCharacter count:\n반도체 수출 호조에 힘입어 올해 1분기 우리 경제 성장률이 1.8%를 기록했으며, 특히 명목 GDP 성장률은 10.5%로 1976년 이후 50년 만에 최고 수준을 보였습니다. (84 characters)\n이는 기업 수익성 개선으로 인한 것으로 정부 재정력 확대와 내수 진작에 긍정적인 영향을 미칠 것으로 보입니다. (59 characters)\n또한 명목 GNI",
+          "analysis_source": "subtitle",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "소상공인 기본법 반대",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "반도체 공장 호남 유치",
+      "is_fixed": false,
+      "views": [
+        30347
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "'K-반도체 공장'에 전 세계가 샤라웃..\"제조 강국\" 쏟아지는 '러브콜'에 당황 (자막뉴스) / SBS",
+          "video_id": "3O7Om1OvGMs",
+          "views": 30347,
+          "upload_date": "2026-06-09",
+          "url": "https://www.youtube.com/watch?v=3O7Om1OvGMs",
+          "subtitle_summary": "The user wants me to summarize a YouTube video caption in Korean, within approximately 500 characters, using 3-5 sentences. The content is about K-semiconductor factories receiving global attention and love calls, causing dilemma for the industry.\nKey points from the caption:\n1. Domestic semiconductor industry is in dilemma over factory location selection (fab site selection)\n2. Overseas and domestic regions are pouring in investment requests, causing political/diplomatic pressure to disperse factories from Yongin Mega Cluster to other regions\n3. Major countries like US and China are aggressively trying to attract Samsung and SK Hynix with subsidies and tariff policies\n4. Emerging countries like Vietnam are also offering tax benefits and land support\n5. Domestic political circles and non-capital regions are also demanding attraction (e.g., Jeonnam-Gwangju integrated special city)\n6. Government considers regional balanced development important\n7. Industry is reluctant because:\nWater supply issues (industrial water is essential, hard to secure in Jeonnam/Yeongnam, would cost trillions for pipelines)\nSeawater desalination not suitable for ultra-pure water needed for micro-processes (quality concerns, cost increase)\nLoss of cluster effect (if infrastructure in Chungcheong is split, logistics costs rise, crisis response weakens)\n8. Warning that investment might go overseas instead\n9. Samsung's Taylor, Texas site (500 acres, can fit 9 fabs) with guaranteed government support for water/electricity infrastructure might be less risky than domestic investment\nI need to summarize this in 3-5 sentences, around 500 characters.\nDraft:\n국내 반도체 업계가 공장 입지 선정에 딜레마에 빠졌다. 미국과 중국 등 해외 주요국들은 물론 국내 비수도권 지역에서도 패배 유치를 요구하며 정치 외교적 압박을 가하고 있다. 그러나 업계는 용수 확보 어려움, 집적 효과 상실로 인한 물류비 증가 및 위기 대응력 약화 등을 이유로 난색을 표하고 있다. 특히 인프라 지원이 확실한 미국 텍사스 테일러 부지 등 해외 투자가 국내보다 리스크가 적다는 판단이 나오며 투자 해외 이전 우려도 제기되고 있다.\nCharacter count check:\n국내 반도체 업계가 공장 입지 선정에 딜레마에 빠졌다. (24)\n미국과 중국 등 해외 주요국들은 물론 국내 비수도권 지역에서도 패배 유치를 요구하며 정치 외교적 압박을 가하고 있다. (58)\n그러나 업계는 용수 확보 어려움, 집적 효과 상실로 인한 물류비 증가 및 위기 대응력 약화 등을 이유로 난색을 표하고 있다. (59)\n특히 인프라 지원이 확실한 미국 텍사스 테일러 부지 등 해외 투자가 국내보다 리스크가 적다는 판단이 나오며 투자 해외 이전 우려도 제기되고 있다. (67)\nTotal: around 208 characters. This is too short (500자 내외 means around 500 characters, maybe 400-600 range).\nLet me expand:\n국내 반도체 업계가 공장 입지 선정에 딜레마에 빠졌다. 미국과 중국 등 해외 주요국들은 막대한 보조금과 관세 정책을 내걸고, 국내에서도 전남·광주 통합특별시 등 비수도권 지역들이 파격적 혜택을 앞세워 패배 유치를 요구하며 정치 외교적 압박을 가하고 있다. 하지만 업계는 공업용수 확보의 어려움과 막대한 인프라 비용 부담, 그리고 집적 효과 상실로 인한 물류비 증가 및 위기 대응력 약화 등을 이유로 분산 입지에 난색을 표하고 있다.",
+          "analysis_source": "subtitle",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "엔비디아 의존도 증가",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    }
+  ]
+}

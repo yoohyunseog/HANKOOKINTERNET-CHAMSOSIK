@@ -1,0 +1,90 @@
+{
+  "schema": "pc-part-nb-collector-file.v1",
+  "updatedAt": "2026-06-14T03:55:15.323+09:00",
+  "category": "Mainboard",
+  "id": "mainboard-asrock-z890-steel-legend-wifi",
+  "name": "ASRock Z890 Steel Legend WiFi",
+  "maker": "ASRock",
+  "platform": "Intel LGA1851",
+  "estimatedPriceKrw": 368990,
+  "priceBand": "30~60만원",
+  "speedLabel": "DDR5 9466MHz",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "Mainboard",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 75,
+  "valueIndex": 20.3,
+  "aiUseScore": 49,
+  "powerWatts": 0,
+  "tags": [
+    "Z890",
+    "WiFi",
+    "ATX"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "Mainboard",
+    "partId": "mainboard-asrock-z890-steel-legend-wifi",
+    "partName": "ASRock Z890 Steel Legend WiFi",
+    "speed": {
+      "score": 100,
+      "weight": 0.32,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "Mainboard",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 750,
+      "value": 271,
+      "aiFit": 490,
+      "priceEfficiency": 270,
+      "powerEfficiency": 750
+    },
+    "nbVector": [
+      100,
+      750,
+      271,
+      490,
+      270,
+      750
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 315.33,
+    "nbMin": 388.608,
+    "weightedScore": 336,
+    "nbBand": "100~499",
+    "summary": "Mainboard ASRock Z890 Steel Legend WiFi 부품을 속도 중심 N/B 데이터베이스 점수 336점으로 저장했습니다."
+  },
+  "nbWeightedScore": 336,
+  "nbMax": 315.33,
+  "nbMin": 388.608,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=ASRock%20Z890%20Steel%20Legend%20WiFi%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "Intel Z890 chipset, Socket 1851, 18+1+1+1+1 phase power delivery, PCIe 5.0 support.",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

@@ -1,0 +1,89 @@
+{
+  "schema": "pc-part-nb-collector-file.v1",
+  "updatedAt": "2026-06-14T03:55:14.723+09:00",
+  "category": "Mainboard",
+  "id": "mainboard-asrock-a620m-hdv-m.2",
+  "name": "ASRock A620M-HDV/M.2",
+  "maker": "ASRock",
+  "platform": "AMD AM5",
+  "estimatedPriceKrw": 109240,
+  "priceBand": "15만원 미만",
+  "speedLabel": "DDR5",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "Mainboard",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 40,
+  "valueIndex": 36.6,
+  "aiUseScore": 26,
+  "powerWatts": 0,
+  "tags": [
+    "budget",
+    "AM5"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "Mainboard",
+    "partId": "mainboard-asrock-a620m-hdv-m.2",
+    "partName": "ASRock A620M-HDV/M.2",
+    "speed": {
+      "score": 100,
+      "weight": 0.32,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "Mainboard",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 400,
+      "value": 488,
+      "aiFit": 260,
+      "priceEfficiency": 920,
+      "powerEfficiency": 400
+    },
+    "nbVector": [
+      100,
+      400,
+      488,
+      260,
+      920,
+      400
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 197.872,
+    "nbMin": 362.249,
+    "weightedScore": 304,
+    "nbBand": "100~499",
+    "summary": "Mainboard ASRock A620M-HDV/M.2 부품을 속도 중심 N/B 데이터베이스 점수 304점으로 저장했습니다."
+  },
+  "nbWeightedScore": 304,
+  "nbMax": 197.872,
+  "nbMin": 362.249,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=ASRock%20A620M-HDV%2FM.2%2B%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "The search result shows ASRock A620M-HDV/M.2 (not the M.2+ variant specifically, but the primary match for the query). Price observed at 109,240 KRW.",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

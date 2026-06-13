@@ -1,0 +1,202 @@
+{
+  "timestamp": "2026-06-06T15:13:19.057570",
+  "model": "kimi-k2.5:cloud",
+  "keyword_count": 3,
+  "analyze_subtitles": true,
+  "analysis_source": "youtube",
+  "keywords": [
+    {
+      "keyword": "오늘의 주요 뉴스",
+      "is_fixed": true,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "U.S. 여자 오픈 골프",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "MLS 올스타전 2024",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "실업급여 신청 방법",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "한일 외교 관계 전망",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "AI 팩토리 미래 전략",
+      "is_fixed": false,
+      "views": [
+        3598
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "엔비디아 독점 인터뷰 | 블랙웰 GPU 핵심 설계 리더가 직접 밝힌 AI 팩토리와 반도체 시장의 미래",
+          "video_id": "xO3wxkk-y6M",
+          "views": 3598,
+          "upload_date": "2026-06-06",
+          "url": "https://www.youtube.com/watch?v=xO3wxkk-y6M",
+          "subtitle_summary": "사용자는 YouTube 영상 자막을 한국어로 500자 내외로 요약해달라고 요청했습니다. 자막 내용은 엔비디아의 블랙웰 GPU와 AI 팩토리에 관한 인터뷰 내용입니다.\n핵심 내용을 분석하면:\n1. 엔비디아 AI 팩토리 개념 소개 (단순 GPU 성능을 넘어선)\n2. 고객들의 평가 기준 변화: 속도 → 토큰당 생성 비용, 와트당 효율성\n3. 수익과 직결되는 토큰 생성 비용 최소화의 중요성\n500자 내외로 3-5문장으로 요약해야 합니다. 한국어로만 작성하고 영어는 사용하지 말아야 합니다.\n초안:\n엔비디아가 단순한 반도체 기업을 넘어 AI 인프라를 혁신하는 가운데, 블랙웰 GPU 설계 리더와의 인터뷰에서 AI 팩토리의 미래가 제시되었다. 과거 GPU 성능 중심의 평가에서 벗어나, 이제는 토큰당 생성 비용과 와트당 효율성 같은 상업적 가치가 핵심 메트릭으로 떠올랐다. 고객들은 AI 팩토리 구축 속도와 생성 가능한 토큰 수를 통해 수익을 극대화하는 방안을 모색하며, 최저 토큰 비용 달성을 최우선 목표로 삼고 있다.\n글자 수 확인:\n엔비디아가 단순한 반도체 기업을 넘어 AI 인프라를 혁신하는 가운데, 블랙웰 GPU 설계 리더와의 인터뷰에서 AI 팩토리의 미래가 제시되었다. 과거 GPU 성능 중심의 평가에서 벗어나, 이제는 토큰당 생성 비용과 와트당 효율성 같은 상업적 가치가 핵심 메트릭으로 떠올랐다. 고객들은 AI 팩토리 구축 속도와 생성 가능한 토큰 수를 통해 수익을 극대화하는 방안을 모색하며, 최저 토큰 비용 달성을 최우선 목표로 삼고 있다.\n약 280자 정도로 500자 내외에 적합합니다. 3문장으로 구성되어 있고 핵심 내용을 잘 담고 있습니다.\n검토:\n한국어만 사용했는가? 예\n영어 사용 없음? 예\n500자 내외? 예 (약 280자)\n3-5문장? 예 (3문장)\n핵심 내용 포함? 예 (AI 팩토리, 평가 기준 변화, 토큰 비용)\n추가로 좀 더 자세히 쓸 수도 있지만 500자 내외라면 현재 분량도 적절합니다. 다만 약간 더 내용을 보강해서 400자 정도로 만들어도 좋을 것 같습니다.\n수정안:\n엔비디아가 단순 반도체 기업을 넘어 AI 인프라 전체를 혁신하는 가운데, 블랙웰 GPU 핵심 설계 리더와의 인터뷰에서 AI 팩토리의 미래 비전이 제시되었다. 과거 GPU 처리 속도 중심의 평가 기준이 바뀌어, 이제는 토큰당 생성 비용과 와트당 효율성 같은 상업적 가치가 핵심 메트릭으로 부상했다. 고객들은 AI 팩토리 구축 속도와 생성 가능한 토큰 수가 수익과 직결된다는 점을 인식하고, 최저 토큰 비용 달성을",
+          "analysis_source": "subtitle",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "로보틱스 핵심 산업",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "원달러 환율 전망",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "K푸드 성장주 포트폴리오",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "혈당 스파이크 주의 식품",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "혼돈 경제학 책",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "사전투표 방법 변경점",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "부동산 시장 집권 1년차",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "스페이스X 청약 투자",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "전기 보일러 수요 증가",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    }
+  ]
+}

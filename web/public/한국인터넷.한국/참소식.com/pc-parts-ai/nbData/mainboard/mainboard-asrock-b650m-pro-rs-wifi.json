@@ -1,0 +1,90 @@
+{
+  "schema": "pc-part-nb-collector-file.v1",
+  "updatedAt": "2026-06-14T03:55:14.962+09:00",
+  "category": "Mainboard",
+  "id": "mainboard-asrock-b650m-pro-rs-wifi",
+  "name": "ASRock B650M Pro RS WiFi",
+  "maker": "ASRock",
+  "platform": "AMD AM5",
+  "estimatedPriceKrw": 259800,
+  "priceBand": "15~30만원",
+  "speedLabel": "DDR5",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "Mainboard",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 60,
+  "valueIndex": 23.1,
+  "aiUseScore": 39,
+  "powerWatts": 0,
+  "tags": [
+    "mATX",
+    "B650",
+    "WiFi"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "Mainboard",
+    "partId": "mainboard-asrock-b650m-pro-rs-wifi",
+    "partName": "ASRock B650M Pro RS WiFi",
+    "speed": {
+      "score": 100,
+      "weight": 0.32,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "Mainboard",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 600,
+      "value": 308,
+      "aiFit": 390,
+      "priceEfficiency": 380,
+      "powerEfficiency": 600
+    },
+    "nbVector": [
+      100,
+      600,
+      308,
+      390,
+      380,
+      600
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 389.728,
+    "nbMin": 405.581,
+    "weightedScore": 301,
+    "nbBand": "100~499",
+    "summary": "Mainboard ASRock B650M Pro RS WiFi 부품을 속도 중심 N/B 데이터베이스 점수 301점으로 저장했습니다."
+  },
+  "nbWeightedScore": 301,
+  "nbMax": 389.728,
+  "nbMin": 405.581,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=ASRock%20B650M%20Pro%20RS%20WiFi%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "Micro-ATX board supporting Ryzen 7000/8000/9000 series.",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

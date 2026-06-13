@@ -1,0 +1,90 @@
+{
+  "schema": "pc-part-nb-collector-file.v1",
+  "updatedAt": "2026-06-14T03:55:15.740+09:00",
+  "category": "Mainboard",
+  "id": "mainboard-gigabyte-z790-aorus-elite-x",
+  "name": "Gigabyte Z790 AORUS Elite X",
+  "maker": "Gigabyte",
+  "platform": "Intel LGA1700",
+  "estimatedPriceKrw": 251370,
+  "priceBand": "15~30만원",
+  "speedLabel": "DDR5",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "Mainboard",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 85,
+  "valueIndex": 33.8,
+  "aiUseScore": 55,
+  "powerWatts": 0,
+  "tags": [
+    "Z790",
+    "ATX",
+    "DDR5"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "Mainboard",
+    "partId": "mainboard-gigabyte-z790-aorus-elite-x",
+    "partName": "Gigabyte Z790 AORUS Elite X",
+    "speed": {
+      "score": 100,
+      "weight": 0.32,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "Mainboard",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 850,
+      "value": 451,
+      "aiFit": 550,
+      "priceEfficiency": 400,
+      "powerEfficiency": 850
+    },
+    "nbVector": [
+      100,
+      850,
+      451,
+      550,
+      400,
+      850
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 382.028,
+    "nbMin": 373.659,
+    "weightedScore": 403,
+    "nbBand": "100~499",
+    "summary": "Mainboard Gigabyte Z790 AORUS Elite X 부품을 속도 중심 N/B 데이터베이스 점수 403점으로 저장했습니다."
+  },
+  "nbWeightedScore": 403,
+  "nbMax": 382.028,
+  "nbMin": 373.659,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Gigabyte%20Z790%20AORUS%20Elite%20X%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "High-end Z790 motherboard supporting PCIe 5.0 and DDR5 memory.",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

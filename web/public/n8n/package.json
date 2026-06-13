@@ -1,0 +1,15 @@
+{
+  "name": "n8n-local",
+  "version": "1.0.0",
+  "description": "n8n workflow automation",
+  "main": "index.js",
+  "scripts": {
+    "start": "n8n start",
+    "n8n": "n8n",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}

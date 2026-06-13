@@ -1,0 +1,89 @@
+{
+  "schema": "pc-part-nb-collector-file.v1",
+  "updatedAt": "2026-06-14T03:55:29.900+09:00",
+  "category": "SSD",
+  "id": "ssd-sk-gold-p31-2tb-m.2-nvme",
+  "name": "SK하이닉스 Gold P31 2TB M.2 NVMe",
+  "maker": "SK하이닉스",
+  "platform": "PCIe 3.0",
+  "estimatedPriceKrw": 202010,
+  "priceBand": "15~30만원",
+  "speedLabel": "3,500MB/s",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "SSD",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 65,
+  "valueIndex": 32.2,
+  "aiUseScore": 42,
+  "powerWatts": 0,
+  "tags": [
+    "nvme",
+    "gen3"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "SSD",
+    "partId": "ssd-sk-gold-p31-2tb-m.2-nvme",
+    "partName": "SK하이닉스 Gold P31 2TB M.2 NVMe",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "SSD",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 650,
+      "value": 429,
+      "aiFit": 420,
+      "priceEfficiency": 500,
+      "powerEfficiency": 650
+    },
+    "nbVector": [
+      100,
+      650,
+      429,
+      420,
+      500,
+      650
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 463.806,
+    "nbMin": 384.86,
+    "weightedScore": 353,
+    "nbBand": "100~499",
+    "summary": "SSD SK하이닉스 Gold P31 2TB M.2 NVMe 부품을 속도 중심 N/B 데이터베이스 점수 353점으로 저장했습니다."
+  },
+  "nbWeightedScore": 353,
+  "nbMax": 463.806,
+  "nbMin": 384.86,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=SK%ED%95%98%EC%9D%B4%EB%8B%89%EC%8A%A4%20Gold%20P31%202TB%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "PCIe 3.0x4, TLC, DRAM cache included",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

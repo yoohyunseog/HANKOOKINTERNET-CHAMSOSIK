@@ -1,0 +1,295 @@
+{
+  "timestamp": "2026-06-11T16:58:22.566605",
+  "model": "kimi-k2.5:cloud",
+  "keyword_count": 3,
+  "analyze_subtitles": true,
+  "analysis_source": "youtube",
+  "keywords": [
+    {
+      "keyword": "오늘의 주요 뉴스",
+      "is_fixed": true,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "개인정보 유출 과징금",
+      "is_fixed": false,
+      "views": [
+        3357,
+        276
+      ],
+      "video_count": 2,
+      "videos": [
+        {
+          "title": "[🔴속보] 개보위 '쿠팡 개인정보 유출 사태' 제재 브리핑 \"과징금 6천2백억 원\" / \"조사 방해 추가 확인\" 쿠팡에 '철퇴' / SBS 뉴스속보",
+          "video_id": "RduSk2sbxCg",
+          "views": 3357,
+          "upload_date": "2026-06-11",
+          "url": "https://www.youtube.com/watch?v=RduSk2sbxCg",
+          "subtitle_summary": "The user wants a summary of a YouTube video subtitle in Korean, around 500 characters, with 3-5 sentences. The content is about Coupang's personal data leak and the Personal Information Protection Commission's sanctions briefing.\nKey points from the subtitle:\n1. Coupang received a fine of 62 billion won (6,200억 원) from the Personal Information Protection Commission (개보위)\n2. The leak occurred from April to November 2025 (25년 4월부터 11월까지) - wait, this seems like a typo in the transcript or future date, but I should stick to the text\n3. A former employee who developed the alternative authentication function obtained the authentication signature key and created forged tokens\n4. About 33.2 million members' personal info and 4.33 million non-members' info leaked\n5. Names, emails, addresses, phone numbers leaked\n6. The cause was basic security management failures, not sophisticated hacking\n7. Coupang failed to manage authentication keys properly (stored in plaintext, didn't revoke access after employee left)\nWait, the title mentions \"과징금 6천2백억 원\" (62 billion won fine), but the subtitle text says \"과진금 2억 4,800만 원\" (248 million won). This is contradictory. Looking at the title again: \"과징금 6천2백억 원\" vs subtitle \"과진금 2억 4,800만 원\".\nActually, looking carefully at the subtitle text: \"서비스의 개인 정보 처리 위반 등에 대해서는 과진금 2억 4,800만 원을 부과하였습니다.\" This seems to be a different amount. But the title clearly states 62 billion won.\nActually, reading the full context, it seems the subtitle might be incomplete or the 248 million is for service violations while the 62 billion is for the leak? No, the title says \"과징금 6천2백억 원\" which is the main headline.\nWait, looking at the subtitle again, it mentions \"과진금 2억 4,800만 원\" which might be a typo for \"과징금\". But the amount is different from the title. The title says 62 billion won. This is a huge discrepancy.\nActually, looking at real news from 2024/2025, Coupang was fined 62 billion won by PIPC for data leak. The subtitle text saying 248 million might be referring to something else, or it's a typo in the ASR.\nGiven the title explicitly states \"과징금 6천2백억 원\", I should prioritize the title's information as it's the main headline, but the subtitle content describes the leak details.\nKey summary points:\n1. 개인정보보호위원회가 쿠팡에 과징금 6,200억 원을 부과함\n2. 전직 직원이 인증 서명키를 획득해 위조 토큰을 생성하여 개인정보를 유출함 (약 3,700만 명 분)\n3. 쿠팡의 기본적인 안전관리 체계 미비가 원인 (키 평문 관리, 퇴사자 접근 권한 미폐기 등)\nI need to write this in 3-5 sentences, around 500 characters, in Korean only.\nDraft:\n개인정보보호위원회가 쿠팡 개인정보 유출 사태와 관련해 과징금 6,200억 원을 부과하는 제재를 결정했다. 쿠팡은 전직 직원이 인증 서명키를 획득해 위조 토큰을 생성하는 방식으로 약 3,700만 명의 개인정보가 유출된 사실을 확인했다. 이번 사고는 고도의 해킹이 아닌 쿠팡의 기본적인 안전관리 체계 미비로 발생했으며, 특히 인증키를 평문으로 관리하고 퇴사자의 접근 권한을 즉각 폐기하지 않는 등 관리 소홀이 확인되었다.\nCharacter count check:\n개인정보보호위원회가 쿠팡 개인정보 유출 사태와 관련해 과징금 6,200억 원을 부과하는 제",
+          "analysis_source": "subtitle",
+          "db_saved": true
+        },
+        {
+          "title": "[현장] 쿠팡, 3750만명 개인정보 유출·무단수집…과징금 6246억원 /쿠팡 측 \"법 절차 통해 사실 규명 기대\"…개인정보위, '쿠팡사태 제재안' 의결 브리핑 | MBN NEWS",
+          "video_id": "7t3Rg3uTzcw",
+          "views": 276,
+          "upload_date": "2026-06-11",
+          "url": "https://www.youtube.com/watch?v=7t3Rg3uTzcw",
+          "subtitle_summary": "쿠팡이 회원 3,750만 명의 개인정보를 유출하고 법적 근거 없이 온라인 활동 기록을 수집한 혐의로 역대 최대 규모의 과징금 처분을 받았다. 개인정보보호위원회는 쿠팡에 총 6,246억 원의 과징금을 부과했으며, 이는 개인정보 유출 사고와 관련해 국내에서 부과된 과징금 중 가장 큰 금액이다. 위원회 조사 결과 쿠팡은 회원들의 동의 없이 개인정보를 외부에 노출시키고, 불법적으로 이용자의 인터넷 이용 기록을 수집해온 것으로 드러났다. 이번 제재는 대규모 고객 데이터를 보유한 플랫폼 기업의 정보보호 체계와 수집 관행에 대한 경종을 울리는 조치로, 향후 유사 사업자들의 개인정보 관리 수준을 높이는 계기가 될 것으로 보인다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        }
+      ],
+      "max": 2.7918,
+      "min": 2.1965,
+      "nb_score": 1.271,
+      "avg_views": 1816.5,
+      "total_views": 3633
+    },
+    {
+      "keyword": "쿠팡 역대급 과징금",
+      "is_fixed": false,
+      "views": [
+        876,
+        242,
+        2,
+        21,
+        271
+      ],
+      "video_count": 5,
+      "videos": [
+        {
+          "title": "‘증거 인멸’ 딱 걸린 쿠팡!결국... 역대급 과징금! 얼마?!",
+          "video_id": "ONjagZHLLhU",
+          "views": 876,
+          "upload_date": "2026-06-11",
+          "url": "https://www.youtube.com/watch?v=ONjagZHLLhU",
+          "subtitle_summary": "The user wants a summary of a YouTube video transcript in Korean, around 500 characters, with 3-5 sentences. The video is about Coupang being fined for evidence destruction and personal data leaks.\nKey points from the transcript:\n1. Coupang was fined a total of 62.4681 billion won (과징금) + 16.8 million won (과태료) for personal data leaks and unauthorized collection of online activity information\n2. Additional 248 million won fine for Coupang Fulfillment Service violations\n3. Data leak affected approximately 33.2 million members and 4.33 million non-members\n4. Leaked info includes names, emails, addresses, phone numbers, order details\n5. Cause was basic security management failure - former employee obtained authentication signature key and created forged tokens\n6. Happened from April to November 2025 (or 2023? The transcript says 25년 which likely means 2023 or 2025, but given context probably 2023)\n7. Coupang tried to destroy evidence (증거 인멸 mentioned in title)\nI need to write this in Korean only, no English, around 500 characters, 3-5 sentences.\nStructure:\nFirst sentence: Overview of the fine amount and reason (evidence destruction and data leak)\nSecond sentence: Details about the data leak scale (33 million+ members affected)\nThird sentence: Cause of the leak (former employee stole keys, basic security failure)\nFourth sentence: Additional violations (unauthorized data collection)\nLet me draft:\n쿠팡이 증거 인멸 및 개인정보 유출 혐의로 개인정보보호위원회로부터 역대 최대 수준인 총 624억 8,100만 원의 과징금과 1,680만 원의 과태료를 부과받았다. 이번 유출은 전직 직원이 인증 서명키를 획득해 위조 토큰을 생성하면서 발생했으며, 약 3,320만 명의 회원과 433만 명의 비회원 개인정보가 탈취되었다. 쿠팡은 기본적인 안전 관리 체계 미비로 해킹에 노출되었으며, 타사 온라인 활동 정보를 무단 수집한 혐의도 받고 있다. 추가로 쿠팡풀필먼트 서비스 위반으로 2억 4,800만 원의 과징금도 부과되었다.\nCharacter count check:\n쿠팡이 증거 인멸 및 개인정보 유출 혐의로 개인정보보호위원회로부터 역대 최대 수준인 총 624억 8,100만 원의 과징금과 1,680만 원의 과태료를 부과받았다. (67 chars)\n이번 유출은 전직 직원이 인증 서명키를 획득해 위조 토큰을 생성하면서 발생했으며, 약 3,320만 명의 회원과 433만 명의 비회원 개인정보가 탈취되었다. (72 chars)\n쿠팡은 기본적인 안전 관리 체계 미비로 해킹에 노출되었으며, 타사 온라인 활동 정보를 무단 수집한 혐의도 받고 있다. (59 chars)\n추가로 쿠팡풀필먼트 서비스 위반으로 2억 4,800만 원의 과징금도 부과되었다. (38 chars)\nTotal: around 236 characters. That's too short. I need to expand to around 500 characters.\nLet me expand:\n쿠팡이 증거 인멸 및 개인정보 유출 혐의로 개인정보보호위원회로부터 역대 최대 수준인 총 624억 8,100만 원의 과징금과 1,680만 원의 과태료를 부과받았다. 이번 유출은 전직 직원이 인증 서명키를 획득해 위조 토큰을 생성하면서 발생했으며, 약 3,320만 명의 회원과 433만 명의 비",
+          "analysis_source": "subtitle",
+          "db_saved": true
+        },
+        {
+          "title": "'역대급 과징금' 자초한 쿠팡 \"유출·수집·이용 모두 불법…조사 방해·비협조\" [뉴스와]  / 연합뉴스TV(YonhapnewsTV)",
+          "video_id": "5czgJuTTM6k",
+          "views": 242,
+          "upload_date": "2026-06-11",
+          "url": "https://www.youtube.com/watch?v=5czgJuTTM6k",
+          "subtitle_summary": "The user wants a summary of a YouTube video transcript in Korean, approximately 500 characters, with 3-5 sentences covering the key points.\nKey points from the transcript:\n1. Personal Information Protection Commission imposed a 620 billion won penalty on Coupang for leaking personal information of over 30 million users - largest ever\n2. Coupang violated safety measures, collected data without legal basis, interfered with investigation, and failed to ensure independence of privacy protection officer\n3. They also collected online activity records of 11.17 million members without permission and failed to manage advertising partners properly\n4. Separate penalty of 248 million won on subsidiary Coupang Fulfillment Services for violating sensitive information processing (police reporter blacklist, weight information submission)\n5. Coupang expressed regret and indicated they will file administrative lawsuit\nI need to write this in Korean only, no English, around 500 characters (which is roughly 3-5 sentences in Korean).\nLet me draft:\n개인정보보호위원회가 3천만 명 이상의 개인정보를 유출하고 안전조치 의무를 위반한 쿠팡에 대해 역대 최대인 6,246억 원의 과징금을 부과했습니다. 쿠팡은 법적 근거 없이 1,100만 명의 온라인 활동 기록을 무단 수집하고 정부 조사를 방해한 것으로 확인되었으며, 계열사 쿠팡풀필먼트서비스도 민감정보 처리 위반으로 별도 과징금을 받았습니다. 개보위는 유출통지 의무 이행 및 개인정보보호책임자 독립성 보장 등을 내용으로 하는 시정명령을 내렸고, 쿠팡은 행정소송을 제기할 것을 시사하며 유감을 표명했습니다.\nCharacter count check:\n개인정보보호위원회가 3천만 명 이상의 개인정보를 유출하고 안전조치 의무를 위반한 쿠팡에 대해 역대 최대인 6,246억 원의 과징금을 부과했습니다. (72 chars)\n쿠팡은 법적 근거 없이 1,100만 명의 온라인 활동 기록을 무단 수집하고 정부 조사를 방해한 것으로 확인되었으며, 계열사 쿠팡풀필먼트서비스도 민감정보 처리 위반으로 별도 과징금을 받았습니다. (108 chars)\n개보위는 유출통지 의무 이행 및 개인정보보호책임자 독립성 보장 등을 내용으로 하는 시정명령을 내렸고, 쿠팡은 행정소송을 제기할 것을 시사하며 유감을 표명했습니다. (79 chars)\nTotal: around 259 characters. This is too short for \"500자 내외\" (which usually means around 400-600 characters). Let me expand to get closer to 500.\nRevised draft:\n개인정보보호위원회가 3,755만 명의 개인정보를 유출하고 안전조치 의무를 위반한 쿠팡에 대해 역대 최대 규모인 6,246억 원의 과징금을 부과했습니다. 쿠팡은 법적 근거 없이 1,117만 명의 온라인 활동 기록을 무단 수집·저장하고 광고 파트너 관리도 소홀히 했으며, 정부 조사까지 방해한 것으로 확인되었습니다. 또한 계열사인 쿠팡풀필먼트서비스는 경찰 기자 명단 취업제한 등록 및 근로자 체중정보 불법 처리로 2억 4,800만 원의 별도 과징금을 부과받았습니다. 개보위는 유출통지 의무 이행과 개인정보보호책임자 독립성 보",
+          "analysis_source": "subtitle",
+          "db_saved": true
+        },
+        {
+          "title": "과징금이 무려 6,247억원? 개인정보 유출 쿠팡에 역대급 과징금 부과 ㅎㄷㄷ 발칵 뒤집힌 쿠팡",
+          "video_id": "MpyPKv2ONKY",
+          "views": 2,
+          "upload_date": "2026-06-11",
+          "url": "https://www.youtube.com/watch?v=MpyPKv2ONKY",
+          "subtitle_summary": "The user wants a summary of a YouTube video subtitle in Korean, around 500 characters, with 3-5 sentences. The content is about Coupang being fined 624.7 billion won for personal information leakage.\nKey points from the transcript:\n1. Personal Information Protection Commission (PIPC) held a meeting on June 10th\n2. Decided to impose a penalty of 624.68 billion won and additional fine of 16.8 million won on Coupang for personal information leakage and unauthorized collection of online activity information from other companies\n3. Also fined Coupang Fulfillment Service 248 million won for personal information processing violations\n4. The leak occurred from April to November 2025 (or 2025? probably typo in transcript, likely 2023 or 2024, but I should stick to what was said or interpret carefully - actually looking at the text it says \"25년\" which could mean 2025 or 2025 in Korean calendar, but likely a typo for 2023 or 2024. However, I should focus on the summary facts)\n5. A former employee who developed the alternative authentication function obtained the authentication signature key and created forged tokens\n6. Leaked info of about 33.2 million members and 4.33 million non-members\n7. Names, emails, addresses, phone numbers, order details leaked\n8. The accident occurred due to Coupang's basic security management system deficiencies, not sophisticated hacking\nI need to write this in Korean only, no English, around 500 characters, 3-5 sentences.\nDraft:\n개인정보보호위원회가 쿠팡에 개인정보 유출 및 무단 수집 혐의로 역대 최대인 6,246억 원의 과징금을 부과했다. 전직 직원이 인증 키를 탈취해 위조 토큰을 만들어 약 3,300만 명의 회원과 433만 명의 비회원 개인정보를 유출한 것으로 확인됐다. 이 사고는 고도의 해킹이 아닌 쿠팡의 기본적인 안전 관리 체계 미비로 발생했으며, 배송지와 주문 내역 등 민감한 정보가 포함됐다. 위원회는 쿠팡 풀필먼트 서비스에 대해서도 별도로 2억 4,800만 원의 과징금을 부과했다.\nCharacter count check:\n개인정보보호위원회가 쿠팡에 개인정보 유출 및 무단 수집 혐의로 역대 최대인 6,246억 원의 과징금을 부과했다. (67 chars)\n전직 직원이 인증 키를 탈취해 위조 토큰을 만들어 약 3,300만 명의 회원과 433만 명의 비회원 개인정보를 유출한 것으로 확인됐다. (72 chars)\n이 사고는 고도의 해킹이 아닌 쿠팡의 기본적인 안전 관리 체계 미비로 발생했으며, 배송지와 주문 내역 등 민감한 정보가 포함됐다. (71 chars)\n위원회는 쿠팡 풀필먼트 서비스에 대해서도 별도로 2억 4,800만 원의 과징금을 부과했다. (49 chars)\nTotal: roughly 259 characters. This is too short. The user asked for around 500 characters (500자 내외). So I need to expand a bit more while keeping it to 3-5 sentences.\nLet me expand:\n개인정보보호위원회가 쿠팡의 대규모 개인정보 유출 및 타사 온라인 활동 정보 무단 수집 혐의와 관련해 역대 최대 규모인 6,246억 8,100만 원의 과징금과 1,680만 원의 과태료를 부과하기로 결정했다. 이번 유출은 전직 직원이 대체 인증 서명키를 획득해 위조 토큰을 생성하여 시행한 것으로, 약 3,300만 명의 회원과 433만",
+          "analysis_source": "subtitle",
+          "db_saved": true
+        },
+        {
+          "title": "\"과징금만 6,246억!\" 쿠팡 개인정보 유출·무단수집 역대급 처벌",
+          "video_id": "60HtS6dmeB8",
+          "views": 21,
+          "upload_date": "2026-06-11",
+          "url": "https://www.youtube.com/watch?v=60HtS6dmeB8",
+          "subtitle_summary": "The user wants a summary of a YouTube video caption in Korean, approximately 500 characters, with 3-5 sentences. The caption is about Coupang being fined for personal information leakage and unauthorized collection.\nKey points from the caption:\n1. After 13 hours of hearing the company's opinions and discussions, they determined violations regarding personal info leakage and unauthorized collection of other companies' online activity info\n2. Total fine: 62.468 billion won (과징금) + 16.8 million won (과태료) for Coupang\n3. Additional 248 million won fine for Coupang Fulfillment Services\n4. Investigation started in November 2025 (actually probably 2023 or 2024, but caption says 25년 which likely means 2023 or the transcript has a typo - but I should stick to what the text says or interpret it as 2023/2024? Actually looking at the context, this seems to be a recent event. The caption says \"25년 11월\" which likely means 2023년 or 2024년, but since I must summarize the given text, I'll refer to it as the investigation period mentioned)\n5. Additional investigation started in January due to multiple allegations from National Assembly and media\n6. After careful review and listening to the company's opinions, the final penalty was decided\nI need to write this in Korean only, no English, around 500 characters, 3-5 sentences.\nDraft:\n개인정보위원회는 쿠팡의 개인정보 유출 및 타사 온라인 활동 정보 무단 수집 행위에 대해 13시간 이상의 심의 끝에 총 6,246억 8,100만 원의 과징금과 1,680만 원의 과태료를 부과했다. 또한 쿠팡 풀먼트 서비스에 대해서는 2억 4,800만 원의 과징금이 부과되었다. 위원회는 국회와 언론 등에서 제기된 의혹을 바탕으로 지난해 11월부터 유출 사건을 조사하고 올해 1월부터 추가 조사를 실시하여 법 위반 사항을 확인했다. 사업자의 의견을 충분히 청취하고 심도 있는 논의를 거쳐 최종 제재 처분을 의결했다.\nCharacter count check:\n개인정보위원회는 쿠팡의 개인정보 유출 및 타사 온라인 활동 정보 무단 수집 행위에 대해 13시간 이상의 심의 끝에 총 6,246억 8,100만 원의 과징금과 1,680만 원의 과태료를 부과했다. (96 characters)\n또한 쿠팡 풀먼트 서비스에 대해서는 2억 4,800만 원의 과징금이 부과되었다. (39 characters)\n위원회는 국회와 언론 등에서 제기된 의혹을 바탕으로 지난해 11월부터 유출 사건을 조사하고 올해 1월부터 추가 조사를 실시하여 법 위반 사항을 확인했다. (78 characters)\n사업자의 의견을 충분히 청취하고 심도 있는 논의를 거쳐 최종 제재 처분을 의결했다. (39 characters)\nTotal: around 252 characters. This is too short. The user wants 500 characters 내외 (around 500).\nLet me expand:\n개인정보위원회는 쿠팡이 개인정보를 유출하고 타사 온라인 활동 정보를 무단 수집한 행위에 대해 장장 13시간 넘게 사업자 의견을 청취하고 심도 있는 논의를 거친 끝에 총 6,246억 8,100만 원의 과징금과 1,680만 원의 과태료를 부과하기로 최종 결정했다. 또한 쿠팡 풀먼트 서비스의 개인정보 처리 위반에 대해서는 별도로 2억 4,800만 원의",
+          "analysis_source": "subtitle",
+          "db_saved": true
+        },
+        {
+          "title": "(속보) 대통령 경고 무시한 쿠팡 '참교육' 칼 뽑은 정부..역대급 과징금 폭탄",
+          "video_id": "TaIgKkB3cjk",
+          "views": 271,
+          "upload_date": "2026-06-11",
+          "url": "https://www.youtube.com/watch?v=TaIgKkB3cjk",
+          "subtitle_summary": "The user wants me to summarize a YouTube video caption in Korean within approximately 500 characters. The caption is about Coupang (쿠팡) being fined by the government/Personal Information Protection Commission for personal data leaks and unauthorized collection.\nKey points from the caption:\n1. Personal Information Protection Commission (개인정보위원회) held a meeting on June 10th\n2. Decided to impose penalties on Coupang Co., Ltd. (쿠팡 주식회사) for personal information leakage and unauthorized collection\n3. Total penalty: approximately 62.468 billion won (과징금) + 16.8 million won (과태료) for Coupang, and 248 million won for Coupang Fulfillment Services\n4. Investigation started from November 2025 (actually probably 2024, but text says 25년 which likely means 2025 or could be a typo for 2023/2024) regarding the leak report\n5. Additional investigation started from January this year due to reports from National Assembly and media\n6. The leak occurred from April to November 2025 (again, likely 2024 or 2023) by a former employee who developed the authentication system, stole the signature key, and created forged tokens\n7. About 33.2 million members' personal info leaked (names, emails), 22.3 million shipping addresses (including 3rd parties like family/friends), 4.33 million non-members' info, and 58,000 order details\n8. The cause was not sophisticated hacking but basic security management failures by Coupang\nI need to summarize this in Korean only, no English, around 500 characters, 3-5 sentences.\nStructure:\nOpening: Government/Personal Information Commission imposed record-breaking fines on Coupang\nDetails: Amount (approx 62.5 billion won), reasons (personal info leak affecting 30+ million people, unauthorized collection)\nCause: Former employee stole authentication key, basic security management failure\nConclusion: Investigation process and final decision\nDraft:\n개인정보위원회가 쿠팡에 대해 역대 최대 규모의 과징금 약 6,247억 원을 부과했다. 전직 직원이 인증 서명키를 훔쳐 위조 토큰을 만들어 지난해 4월부터 11월까지 약 3,300만 명의 회원 개인정보와 배송지 정보, 433만 명의 비회원 정보를 유출한 사건과 관련이 있다. 위원회는 이번 사고가 고도의 해킹이 아닌 쿠팡의 기본적인 안전관리 체계 미비 때문이라고 지적했다. 또한 타사 온라인 활동 정보 무단 수집 혐의도 적용되어 총 6,246억 8,100만 원의 과징금과 1,680만 원의 과태료가 부과되었다.\nCharacter count check:\n개인정보위원회가 쿠팡에 대해 역대 최대 규모의 과징금 약 6,247억 원을 부과했다. 전직 직원이 인증 서명키를 훔쳐 위조 토큰을 만들어 지난해 4월부터 11월까지 약 3,300만 명의 회원 개인정보와 배송지 정보, 433만 명의 비회원 정보를 유출한 사건과 관련이 있다. 위원회는 이번 사고가 고도의 해킹이 아닌 쿠팡의 기본적인 안전관리 체계 미비 때문이라고 지적했다. 또한 타사 온라인 활동 정보 무단 수집 혐의도 적용되어 총 6,246억 8,100만 원의 과징금과 1,680만 원의 과태료가 부과되었다.\nCount: approximately 280 characters. This is well under 500, but the user said \"내외\" (around), so 300-400 is fine. But I can expand slightly to be more comprehensive.\nRevised:\n개인정보위원회가 쿠팡에 대해 역대급 과징금 총 6,246억 8,100만 원을 부과했다. 전직 직원이 인증 서명키",
+          "analysis_source": "subtitle",
+          "db_saved": true
+        }
+      ],
+      "max": 0.7057,
+      "min": 1.5195,
+      "nb_score": 0.4644,
+      "avg_views": 282.4,
+      "total_views": 1412
+    },
+    {
+      "keyword": "삼성 갤럭시 Z 폴드7 출시",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "코스피 오락가락 반등",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "한미 통상 갈등",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "펫보험 만 10세 전 가입",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "AI 초과이익 분배",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "투표지 부족 사태",
+      "is_fixed": false,
+      "views": [
+        294
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "[🔴 국회 본회의] '투표지 부족 사태' 국정조사 요구서 보고 | 20260611",
+          "video_id": "9cXJE5Je2GA",
+          "views": 294,
+          "upload_date": "2026-06-11",
+          "url": "https://www.youtube.com/watch?v=9cXJE5Je2GA",
+          "subtitle_summary": "The user wants a summary of a YouTube video transcript in Korean, around 500 characters, with 3-5 sentences covering the key points.\nKey points from the transcript:\n1. Introduction of visitors (Sejong Haemil Elementary students)\n2. Report from the Secretary-General:\nChange of National Assembly Professor Group representative to formal member (June 10)\nSubmission of Prime Minister Han Seong-sook's appointment motion (June 10)\nSubmission of requests for National Investigation regarding ballot paper shortage in local elections (June 8) - two requests: one by 110 members including Yoo Sang-beom, another by 161 members including Han Byung-do\n3. Speaker's remarks:\nBallot shortage is a serious issue damaging democratic foundations and election administration trust\nUrged negotiation group leaders to cooperate on investigation to restore voting rights\nMentioned 87 bills pending from first half of 22nd National Assembly, urged speedy processing for public welfare\n4. Oath ceremony for Kim Seong-beom (by-election winner from Seogwipo):\nOath taken on June 11, 2026 (likely typo in transcript, should be 2024 or 2025)\nBrief greeting mentioning he's from Seogwipo by-election\nSummary structure (3-5 sentences, ~500 characters):\nOpening with the main event (National Investigation requests)\nDetails about the ballot shortage issue and Speaker's stance\nMention of pending bills\nKim Seong-beom's oath ceremony\nDraft:\n국회 본회의에서 지방선거 투표용지 부족 사태와 관련한 국정조사 요구서가 제출되었으며, 국회의장은 이를 심각한 사태로 규정하고 진상 규명과 선거 관리 개혁을 촉구했습니다. 또한 22대 국회 전반기 동안 상임위에서 의결된 87건의 민생 법안이 처리되지 못한 상태라며 교섭단체 대표의원들에게 신속한 협의를 당부했습니다. 이어서 서귀포시 보궐선거에서 당선된 김성범 의원이 선서를 하고 인사말을 전하는 절차가 진행되었습니다. 세종 해밀초등학교 학생들이 방청석에서 본회의를 지켜보는 가운데, 의사국장은 한덕수 국무총리 임명동의안 제출 등 주요 보고 사항을 전달했습니다.\nCharacter count check:\n국회 본회의에서 지방선거 투표용지 부족 사태와 관련한 국정조사 요구서가 제출되었으며, 국회의장은 이를 심각한 사태로 규정하고 진상 규명과 선거 관리 개혁을 촉구했습니다. 또한 22대 국회 전반기 동안 상임위에서 의결된 87건의 민생 법안이 처리되지 못한 상태라며 교섭단체 대표의원들에게 신속한 협의를 당부했습니다. 이어서 서귀포시 보궐선거에서 당선된 김성범 의원이 선서를 하고 인사말을 전하는 절차가 진행되었습니다. 세종 해밀초등학교 학생들이 방청석에서 본회의를 지켜보는 가운데, 의사국장은 한덕수 국무총리 임명동의안 제출 등 주요 보고 사항을 전달했습니다.\nCount: approximately 280 characters. This is well under 500 characters, but the user said \"500자 내외\" which usually means around 500, but can be less. However, looking at the content, I should make sure I capture all key elements:\n1. National investigation requests (ballot shortage)\n2. Speaker's concern about democracy/election integrity\n3. Pending bills (87)\n4. Kim Seong-beom's oath\n5. Other reports (Prime Minister appointment)\nLet me expand slightly to be closer to 400-500 characters while keeping it to 3-5 sentences.\nRevised:\n국회 본회의에서 지방선거 투표용",
+          "analysis_source": "subtitle",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "정년 연장안 비판",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "선거범죄 리포트",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "LNG선 호르무즈 해협 통과",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "스페이스X 상장 페로브스카이트",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "외국인 코스피 순매도",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "전셋값 10년 최고",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "의무휴업 완화 폐지",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    }
+  ]
+}

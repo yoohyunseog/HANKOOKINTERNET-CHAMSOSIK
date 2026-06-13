@@ -1,0 +1,273 @@
+{
+  "timestamp": "2026-06-11T16:13:51.591655",
+  "model": "kimi-k2.5:cloud",
+  "keyword_count": 3,
+  "analyze_subtitles": true,
+  "analysis_source": "youtube",
+  "keywords": [
+    {
+      "keyword": "오늘의 주요 뉴스",
+      "is_fixed": true,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "쿠팡 정보유출 피해",
+      "is_fixed": false,
+      "views": [
+        416,
+        1795
+      ],
+      "video_count": 2,
+      "videos": [
+        {
+          "title": "‘3,750만 명 정보 유출’ 쿠팡에 ‘역대 최고’ 과징금 부과 / KBS  2026.06.11.",
+          "video_id": "DFy8DOt4Afs",
+          "views": 416,
+          "upload_date": "2026-06-11",
+          "url": "https://www.youtube.com/watch?v=DFy8DOt4Afs",
+          "subtitle_summary": "The user wants a summary of a YouTube video transcript in Korean, around 500 characters, with 3-5 sentences. The video is about Coupang being fined for a massive data leak affecting 37.5 million people.\nKey points from the transcript:\n1. Government imposed a record-breaking fine of about 62 billion won on Coupang for negligence in basic security management causing massive data leak\n2. This is the largest fine ever for personal information leakage in Korea\n3. Hackers leaked info of 37 million+ members and non-members\n4. The leak happened due to Coupang's poor basic safety management system, improper management of authentication keys used for electronic signatures, and failure to detect abnormal traffic until customer complaints\n5. Coupang also stored withdrawn members' info without destruction, interfered with investigation by destroying data, collected online activity records of 110,000 members without permission, and failed to supervise partners posting illegal ads\n6. Coupang's logistics subsidiary was also fined 248 million won for collecting health checkup records of deceased employees without permission\n7. Coupang apologized but expressed regret that preventive measures weren't reflected in the decision\nI need to summarize this in 3-5 sentences, around 500 characters, in Korean only.\nDraft:\n정부가 쿠팡에 대해 역대 최대 규모인 약 6,200억 원의 과징금을 부과했습니다. 이는 기본적인 안전 관리 소홀로 해커가 회원 및 비회원 3,700여만 명의 개인정보를 유출한 데 따른 조치입니다. 개인정보보호위원회는 쿠팡이 인증키 관리 부실과 이상 트래픽 미감지는 물론, 탈퇴 회원 정보 파기 미흡 및 조사 방해 등 다중 위반을 저질렀다고 지적했습니다. 또한 물류 자회사의 건강검진 기록 무단 수집에도 별도 과징금이 부과되었습니다. 쿠팡은 결정에 유감을 표하며 법적 대응을 예고했습니다.\nCharacter count check:\n정부가 쿠팡에 대해 역대 최대 규모인 약 6,200억 원의 과징금을 부과했습니다. (38자)\n이는 기본적인 안전 관리 소홀로 해커가 회원 및 비회원 3,700여만 명의 개인정보를 유출한 데 따른 조치입니다. (52자)\n개인정보보호위원회는 쿠팡이 인증키 관리 부실과 이상 트래픽 미감지는 물론, 탈퇴 회원 정보 파기 미흡 및 조사 방해 등 다중 위반을 저질렀다고 지적했습니다. (71자)\n또한 물류 자회사의 건강검진 기록 무단 수집에도 별도 과징금이 부과되었습니다. (38자)\n쿠팡은 결정에 유감을 표하며 법적 대응을 예고했습니다. (26자)\nTotal: around 225 characters. This is too short. The user asked for around 500 characters. Let me expand.\nRevised draft:\n정부가 쿠팡에 대해 기본적인 안전 관리 소홀로 3,700여만 명의 개인정보가 유출되었다며 역대 최대 규모인 약 6,200억 원의 과징금과 1,680만 원의 과태료를 부과했습니다. 개인정보보호위원회는 쿠팡이 전자서명 인증키를 제대로 관리하지 않고 해킹으로 인한 이상 트래픽도 제때 감지하지 못하는 등 안전 관리 체계에 허술이 있었다고 지적했습니다. 또한 탈퇴 회원 정보를 파기하지 않고 보관하거나 조사 과정에서 자료를 폐기하는 등 위법 행위를 저질렀으며, 일부 회원의 온라인 활동 기록을",
+          "analysis_source": "subtitle",
+          "db_saved": true
+        },
+        {
+          "title": "[지금뉴스] 6,246억 원 과징금 맞은 쿠팡 “유감…법정서 다툴 것” / KBS 2026.06.11.",
+          "video_id": "pWs9merURaU",
+          "views": 1795,
+          "upload_date": "2026-06-11",
+          "url": "https://www.youtube.com/watch?v=pWs9merURaU",
+          "subtitle_summary": "쿠팡이 개인정보보호위원회로부터 역대 최대 규모인 6,246억 원의 과징금을 부과받았다. 이는 개인정보 유출 사고와 관련된 것으로, 쿠팡은 이에 대해 유감을 표하면서도 법정에서 다투겠다는 입장을 밝혔다. 해당 과징금은 국내 기업이 개인정보 보호법 위반으로 부과받은 금액 중 가장 큰 규모로, 쿠팡의 개인정보 관리 체계에 대한 심각한 문제가 지적된 것으로 풀이된다. 쿠팡은 고객과 국민에게 심려를 끼쳐 죄송하다면서도 과징금 부과에 대해 법적 대응을 예고했다. 이번 사태는 이커머스 업계 전반의 개인정보 보호 수준을 재점검하는 계기가 될 전망이다. 개인정보보호위원회는 쿠팡이 개인정보 보호 의무를 제대로 이행하지 않았다고 판단한 것으로 알려졌다. 쿠팡 측은 향후 법정 절차를 통해 공정한 판단을 받겠다고 강조했다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        }
+      ],
+      "max": 2.8918,
+      "min": 1.2658,
+      "nb_score": 2.2845,
+      "avg_views": 1105.5,
+      "total_views": 2211
+    },
+    {
+      "keyword": "선관위 압수수색",
+      "is_fixed": false,
+      "views": [
+        11753,
+        26298,
+        5391
+      ],
+      "video_count": 3,
+      "videos": [
+        {
+          "title": "[오늘 이 뉴스] 9시 전 선관위로 '우르르'..전격 압수수색 '포착' (2026.06.11/MBC뉴스)",
+          "video_id": "vupDXKJVkqI",
+          "views": 11753,
+          "upload_date": "2026-06-11",
+          "url": "https://www.youtube.com/watch?v=vupDXKJVkqI",
+          "subtitle_summary": "사용자가 YouTube 영상의 핵심 내용을 한국어로 요약해달라고 요청했습니다. 영상 제목은 \"[오늘 이 뉴스] 9시 전 선관위로 '우르르'..전격 압수수색 '포착' (2026.06.11/MBC뉴스)\"이고, 키워드는 \"선관위 압수수색\"입니다. 검색 결과를 분석해보면: 1. 선관위 전방위 압수수색 관련 MBC 뉴스 2. 경찰이 '투표용지 부족' 사태와 관련해 선관위를 압수수색 중 (6월 11일) 3. 서소문 고가 붕괴 관련 압수수색 (5월 29일자 - 관련성 낮음) 4. 필리핀 한인 납치 살해 사건 (관련성 없음) 5. 잠실 투표소 현장검증 및 개표소 시위 관련 (6월 10일자) 핵심 내용은 6월 11일 경찰이 '투표용지 부족' 사태와 관련하여 선관위(선거관리위원회)를 압수수색하고 있다는 것입니다. 영상 제목의 \"9시 전 선관위로 '우르르'\"는 오전 9시 전에 선관위로 압수수색 인력이 몰려갔다는 의미로 보입니다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        },
+        {
+          "title": "[속보] 경찰, 선관위 압수수색 진행 중 [자막뉴스] / 채널A",
+          "video_id": "RYSpNbkjGJE",
+          "views": 26298,
+          "upload_date": "2026-06-11",
+          "url": "https://www.youtube.com/watch?v=RYSpNbkjGJE",
+          "subtitle_summary": "경찰이 중앙선거관리위원회에 대한 압수수색을 진행 중인 것으로 파악됐다. 이번 압수수색은 선관위와 관련된 각종 의혹에 대한 수사의 일환으로 보이",
+          "analysis_source": "web_search",
+          "db_saved": true
+        },
+        {
+          "title": "[속보] 경찰, 선관위 압수수색 현장 [현장영상] / 채널A",
+          "video_id": "AYKY7QLkDCI",
+          "views": 5391,
+          "upload_date": "2026-06-11",
+          "url": "https://www.youtube.com/watch?v=AYKY7QLkDCI",
+          "subtitle_summary": "The user wants me to rewrite a summary that failed to meet Korean language requirements. The original response was in English and described the content of a YouTube video about police raids on the National Election Commission (NEC). Key points to include: 1. Police conducted raids/압수수색 on 7 locations including Seoul Songpa-gu NEC office (선관위) 2. Related to \"NEC transfer incident\" (선관위 이첩 사건) involving Kim Kyung (김경) 3. Additional allegations of \"nomination slush funds\" (공천 헌금) 4.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        }
+      ],
+      "max": 1.5647,
+      "min": 3.0083,
+      "nb_score": 0.5201,
+      "avg_views": 14480.67,
+      "total_views": 43442
+    },
+    {
+      "keyword": "투표용지 부족 사태",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "정유미 검사장 강등 취소",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "펫보험 가입 나이",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "의료비 부담 펫보험",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "HMM 유조선 호르무즈",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "코스닥지수 급등",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "세미티에스 상장 급락",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "청년 일자리 감소",
+      "is_fixed": false,
+      "views": [
+        311
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "[이슈] 반도체 대호황인데 청년 취업은 '최악'/'영포티'만 올라탄 고용 사다리...\"탈조선\" 외치는 청년들/2026년 6월 11일(목)/KBS",
+          "video_id": "m01_q5unX7Y",
+          "views": 311,
+          "upload_date": "2026-06-11",
+          "url": "https://www.youtube.com/watch?v=m01_q5unX7Y",
+          "subtitle_summary": "The user wants a summary of a YouTube video transcript in Korean, around 500 characters, with 3-5 sentences covering the key points.\nKey points from the transcript:\n1. Last month, the number of employed people decreased by about 40,000, the first decline in 17 months. Manufacturing sectors like automobiles and plastics saw significant decreases due to Middle East situation affecting prices and supply chains.\n2. Youth employment (15-29 years old) is particularly bad - employment rate dropped 2.4% points to 43.8%, the largest decline since January 2021. Stable regular worker positions for those in their 20s decreased by over 160,000 compared to a year ago.\n3. The employment ladder for youth is disappearing - companies prefer experienced workers over new hires, and job growth is concentrated in temporary/day labor jobs in welfare/transportation rather than stable permanent positions.\n4. Many young people are looking overseas for jobs (22,000 attended overseas job fair) or considering leaving Korea (\"탈조선\") due to high barriers to domestic employment.\nI need to write this in Korean only, no English, around 500 characters (roughly 3-5 sentences).\nDraft:\n지난달 취업자 수가 4만 명 감소하며 17개월 만에 감소세로 돌아섰으며, 특히 자동차·플라스틱 등 제조업과 농림어업에서 큰 폭의 감소가 나타났습니다. 청년층(15~29세) 고용률은 43.8%로 1년 전보다 2.4%p 하락했고, 20대 상용 근로자는 1년 전보다 16만 명 넘게 줄어 금융위기 이후 최장 기간 내리막기를 이어가고 있습니다. 기업들이 경력직 위주로 채용하면서 신입 채용 문턱이 높아지고, 고용 증가가 임시·일용직 중심의 보건복지·운수업에 집중되면서 청년들이 안정적인 일자리로 진입할 사다리가 사라지고 있어 해외 취업이나 '탈조선'을 고려하는 청년들이 늘고 있습니다.\nCharacter count check:\n지난달 취업자 수가 4만 명 감소하며 17개월 만에 감소세로 돌아섰으며, 특히 자동차·플라스틱 등 제조업과 농림어업에서 큰 폭의 감소가 나타났습니다. (67 chars)\n청년층(15~29세) 고용률은 43.8%로 1년 전보다 2.4%p 하락했고, 20대 상용 근로자는 1년 전보다 16만 명 넘게 줄어 금융위기 이후 최장 기간 내리막기를 이어가고 있습니다. (91 chars)\n기업들이 경력직 위주로 채용하면서 신입 채용 문턱이 높아지고, 고용 증가가 임시·일용직 중심의 보건복지·운수업에 집중되면서 청년들이 안정적인 일자리로 진입할 사다리가 사라지고 있어 해외 취업이나 '탈조선'을 고려하는 청년들이 늘고 있습니다. (118 chars)\nTotal: roughly 276 characters. This is a bit short for \"500자 내외\" (around 500 characters). Let me expand slightly to get closer to 400-500 characters.\nRevised:\n지난달 취업자 수가 4만 명 감소하며 17개월 만에 감소세로 돌아섰으며, 중동 사태 영향으로 자동차·플라스틱 등 제조업과 농림어업에서 큰 폭의 고용 감소가 나타났습니다. 청년층(15~29세) 고용률은 43.8%로 1년 전보다 2.4%p 하락하여 2021년 1월 이",
+          "analysis_source": "subtitle",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "가계 소득 격차",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "자사주 취득 공시",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "SSG닷컴 지분 인수",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "음주강요 사망 사건",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "악성갑질 철저 조사",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    }
+  ]
+}

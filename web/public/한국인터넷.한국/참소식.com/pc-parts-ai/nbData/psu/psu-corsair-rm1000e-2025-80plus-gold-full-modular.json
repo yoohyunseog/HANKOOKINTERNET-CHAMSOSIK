@@ -1,0 +1,90 @@
+{
+  "schema": "pc-part-nb-collector-file.v1",
+  "updatedAt": "2026-06-14T03:55:16.755+09:00",
+  "category": "PSU",
+  "id": "psu-corsair-rm1000e-2025-80plus-gold-full-modular",
+  "name": "Corsair RM1000e 2025 80PLUS Gold Full Modular",
+  "maker": "Corsair",
+  "platform": "ATX 3.1",
+  "estimatedPriceKrw": 168920,
+  "priceBand": "15~30만원",
+  "speedLabel": "80PLUS Gold",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "PSU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 75,
+  "valueIndex": 44.4,
+  "aiUseScore": 49,
+  "powerWatts": 1000,
+  "tags": [
+    "full-modular",
+    "ATX 3.1",
+    "PCIe 5.1"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "PSU",
+    "partId": "psu-corsair-rm1000e-2025-80plus-gold-full-modular",
+    "partName": "Corsair RM1000e 2025 80PLUS Gold Full Modular",
+    "speed": {
+      "score": 100,
+      "weight": 0.32,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "PSU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 750,
+      "value": 592,
+      "aiFit": 490,
+      "priceEfficiency": 590,
+      "powerEfficiency": 100
+    },
+    "nbVector": [
+      100,
+      750,
+      592,
+      490,
+      590,
+      100
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 313.475,
+    "nbMin": 388.056,
+    "weightedScore": 367,
+    "nbBand": "100~499",
+    "summary": "PSU Corsair RM1000e 2025 80PLUS Gold Full Modular 부품을 속도 중심 N/B 데이터베이스 점수 367점으로 저장했습니다."
+  },
+  "nbWeightedScore": 367,
+  "nbMax": 313.475,
+  "nbMin": 388.056,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Corsair%20RM1000e%2080PLUS%20Gold%20Full%20Modular%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "2025 model, supports 12V-2x6 connector, CP-9020297-JP",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

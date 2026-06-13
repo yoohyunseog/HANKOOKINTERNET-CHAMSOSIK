@@ -1,0 +1,329 @@
+/**
+ * 참소식.com 다크 모드 포스팅 스타일시트
+ * 
+ * 컬러 팔레트:
+ * - 다크 배경: #0b1020
+ * - 본문 카드: #0f172a
+ * - 포인트 블루: #2563eb
+ * - 보조 블루: #38bdf8
+ * - 주의 박스: 주황 계열
+ * - 위험 박스: 빨강 계열
+ * - 성공/결론 박스: 초록 계열
+ * - 본문 글자: #c8d3e6
+ * - 제목 글자: #f5f8ff
+ */
+
+.cs-post-dark {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 48px 24px 80px;
+  background: #0b1020;
+  color: #dbe7ff;
+  font-family: Pretendard, "Noto Sans KR", sans-serif;
+  line-height: 1.8;
+}
+
+.cs-post-dark .post-back {
+  color: #7fb3ff;
+  font-size: 14px;
+  margin-bottom: 34px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.cs-post-dark .post-back:hover {
+  text-decoration: underline;
+}
+
+.cs-post-dark .post-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 22px;
+}
+
+.cs-post-dark .post-meta span {
+  padding: 6px 12px;
+  border: 1px solid rgba(125, 175, 255, 0.25);
+  border-radius: 999px;
+  background: rgba(44, 102, 220, 0.16);
+  color: #b9d3ff;
+  font-size: 13px;
+}
+
+.cs-post-dark h1 {
+  margin: 0 0 20px;
+  font-size: 42px;
+  line-height: 1.22;
+  letter-spacing: -1.2px;
+  color: #f5f8ff;
+}
+
+.cs-post-dark .post-lead {
+  max-width: 760px;
+  color: #b7c5dc;
+  font-size: 17px;
+}
+
+.cs-post-dark .post-cover {
+  margin: 42px 0;
+  min-height: 310px;
+  border-radius: 22px;
+  background:
+    radial-gradient(circle at 80% 20%, rgba(27, 118, 255, 0.35), transparent 32%),
+    linear-gradient(135deg, #071225, #0e1f3f 58%, #111827);
+  border: 1px solid rgba(130, 180, 255, 0.22);
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.42);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cs-post-dark .cover-logo {
+  font-size: 44px;
+  font-weight: 900;
+  color: #ffffff;
+  letter-spacing: -1px;
+  text-shadow: 0 8px 24px rgba(19, 119, 255, 0.5);
+}
+
+.cs-post-dark .post-cover p {
+  color: #aac7f6;
+  margin-top: 20px;
+}
+
+.cs-post-dark .post-section {
+  margin: 28px 0;
+  padding: 30px;
+  border-radius: 20px;
+  background: rgba(15, 23, 42, 0.82);
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.22);
+}
+
+.cs-post-dark h2 {
+  margin: 0 0 16px;
+  color: #f8fbff;
+  font-size: 26px;
+  letter-spacing: -0.6px;
+}
+
+.cs-post-dark h3 {
+  margin: 10px 0 8px;
+  color: #f4f8ff;
+  font-size: 18px;
+}
+
+.cs-post-dark p {
+  margin: 0 0 14px;
+  color: #c8d3e6;
+}
+
+.cs-post-dark .summary-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.cs-post-dark .summary-card {
+  padding: 22px;
+  border-radius: 18px;
+  background: linear-gradient(180deg, rgba(30, 41, 59, 0.95), rgba(15, 23, 42, 0.95));
+  border: 1px solid rgba(125, 175, 255, 0.18);
+}
+
+.cs-post-dark .card-icon {
+  display: inline-flex;
+  width: 42px;
+  height: 42px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 14px;
+  color: #ffffff;
+  background: linear-gradient(135deg, #2563eb, #38bdf8);
+  font-size: 20px;
+}
+
+.cs-post-dark .table-wrap {
+  overflow-x: auto;
+  border-radius: 16px;
+  border: 1px solid rgba(148, 163, 184, 0.22);
+}
+
+.cs-post-dark table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 720px;
+  background: #0f172a;
+}
+
+.cs-post-dark th {
+  background: rgba(37, 99, 235, 0.25);
+  color: #eaf2ff;
+  text-align: left;
+  padding: 14px;
+  font-size: 14px;
+}
+
+.cs-post-dark td {
+  padding: 15px 14px;
+  border-top: 1px solid rgba(148, 163, 184, 0.16);
+  color: #c7d2e5;
+  font-size: 14px;
+}
+
+.cs-post-dark tr:hover td {
+  background: rgba(37, 99, 235, 0.08);
+}
+
+.cs-post-dark .notice-box {
+  margin-top: 18px;
+  padding: 20px;
+  border-radius: 16px;
+}
+
+.cs-post-dark .notice-box strong {
+  display: block;
+  margin-bottom: 8px;
+  color: #fff;
+}
+
+.cs-post-dark .notice-box p {
+  margin: 0;
+}
+
+/* 주의 박스 (주황) */
+.cs-post-dark .warning {
+  background: rgba(245, 158, 11, 0.12);
+  border: 1px solid rgba(245, 158, 11, 0.35);
+}
+
+/* 위험 박스 (빨강) */
+.cs-post-dark .caution {
+  background: rgba(239, 68, 68, 0.10);
+  border: 1px solid rgba(239, 68, 68, 0.28);
+}
+
+/* 성공/결론 박스 (초록) */
+.cs-post-dark .success {
+  background: rgba(34, 197, 94, 0.10);
+  border: 1px solid rgba(34, 197, 94, 0.35);
+}
+
+.cs-post-dark .success strong {
+  color: #4ade80;
+}
+
+.cs-post-dark .quote-box {
+  margin-top: 22px;
+  padding: 22px;
+  border-left: 4px solid #22c55e;
+  border-radius: 14px;
+  background: rgba(34, 197, 94, 0.10);
+  color: #dfffee;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.cs-post-dark .check-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-top: 22px;
+}
+
+.cs-post-dark .check-list div {
+  padding: 14px 16px;
+  border-radius: 14px;
+  background: rgba(59, 130, 246, 0.12);
+  border: 1px solid rgba(96, 165, 250, 0.22);
+  color: #d9e8ff;
+}
+
+.cs-post-dark .post-footer {
+  margin-top: 34px;
+}
+
+.cs-post-dark .tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.cs-post-dark .tag-list span {
+  padding: 7px 13px;
+  border-radius: 999px;
+  background: rgba(148, 163, 184, 0.12);
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  color: #b9c8de;
+  font-size: 13px;
+}
+
+.cs-post-dark .author-box {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  padding: 20px;
+  border-radius: 18px;
+  background: rgba(15, 23, 42, 0.92);
+  border: 1px solid rgba(148, 163, 184, 0.18);
+}
+
+.cs-post-dark .author-logo {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #1d4ed8, #0ea5e9);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 900;
+  flex-shrink: 0;
+}
+
+.cs-post-dark .author-box strong {
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.cs-post-dark .author-box p {
+  margin: 4px 0 0;
+  color: #aebbd0;
+  font-size: 14px;
+}
+
+/* 반응형 */
+@media (max-width: 760px) {
+  .cs-post-dark {
+    padding: 32px 16px 60px;
+  }
+
+  .cs-post-dark h1 {
+    font-size: 31px;
+  }
+
+  .cs-post-dark .post-section {
+    padding: 22px;
+  }
+
+  .cs-post-dark .summary-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cs-post-dark .check-list {
+    grid-template-columns: 1fr;
+  }
+
+  .cs-post-dark .post-cover {
+    min-height: 230px;
+  }
+
+  .cs-post-dark .cover-logo {
+    font-size: 34px;
+  }
+}

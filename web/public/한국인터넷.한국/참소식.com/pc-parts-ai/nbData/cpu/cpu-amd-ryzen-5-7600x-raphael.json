@@ -1,0 +1,89 @@
+{
+  "schema": "pc-part-nb-collector-file.v1",
+  "updatedAt": "2026-06-14T03:55:47.570+09:00",
+  "category": "CPU",
+  "id": "cpu-amd-ryzen-5-7600x-raphael",
+  "name": "AMD Ryzen 5 7600X (Raphael)",
+  "maker": "AMD",
+  "platform": "AM5",
+  "estimatedPriceKrw": 336000,
+  "priceBand": "30~60만원",
+  "speedLabel": "5.3GHz",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "CPU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 65,
+  "valueIndex": 19.3,
+  "aiUseScore": 42,
+  "powerWatts": 105,
+  "tags": [
+    "gaming",
+    "mainstream"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "CPU",
+    "partId": "cpu-amd-ryzen-5-7600x-raphael",
+    "partName": "AMD Ryzen 5 7600X (Raphael)",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "CPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 650,
+      "value": 257,
+      "aiFit": 420,
+      "priceEfficiency": 300,
+      "powerEfficiency": 206
+    },
+    "nbVector": [
+      100,
+      650,
+      257,
+      420,
+      300,
+      206
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 201.891,
+    "nbMin": 394.861,
+    "weightedScore": 286,
+    "nbBand": "100~499",
+    "summary": "CPU AMD Ryzen 5 7600X (Raphael) 부품을 속도 중심 N/B 데이터베이스 점수 286점으로 저장했습니다."
+  },
+  "nbWeightedScore": 286,
+  "nbMax": 201.891,
+  "nbMin": 394.861,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=AMD%20Ryzen%205%207600X%20%EC%A0%95%ED%92%88%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "6 cores, 12 threads, Zen 4",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

@@ -1,0 +1,90 @@
+{
+  "schema": "pc-part-nb-collector-file.v1",
+  "updatedAt": "2026-06-14T03:55:15.255+09:00",
+  "category": "Mainboard",
+  "id": "mainboard-asrock-x670e-taichi-carrara",
+  "name": "ASRock X670E Taichi Carrara",
+  "maker": "ASRock",
+  "platform": "AMD AM5",
+  "estimatedPriceKrw": 1282000,
+  "priceBand": "60만원 이상",
+  "speedLabel": "DDR5",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "Mainboard",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 98,
+  "valueIndex": 7.6,
+  "aiUseScore": 64,
+  "powerWatts": 0,
+  "tags": [
+    "high-end",
+    "white",
+    "AM5"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "Mainboard",
+    "partId": "mainboard-asrock-x670e-taichi-carrara",
+    "partName": "ASRock X670E Taichi Carrara",
+    "speed": {
+      "score": 100,
+      "weight": 0.32,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "Mainboard",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 980,
+      "value": 101,
+      "aiFit": 640,
+      "priceEfficiency": 80,
+      "powerEfficiency": 980
+    },
+    "nbVector": [
+      100,
+      980,
+      101,
+      640,
+      80,
+      980
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 238.777,
+    "nbMin": 351.142,
+    "weightedScore": 371,
+    "nbBand": "100~499",
+    "summary": "Mainboard ASRock X670E Taichi Carrara 부품을 속도 중심 N/B 데이터베이스 점수 371점으로 저장했습니다."
+  },
+  "nbWeightedScore": 371,
+  "nbMax": 238.777,
+  "nbMin": 351.142,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=ASRock%20X670E%20Taichi%20Carrara%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "White themed enthusiast version of the X670E Taichi.",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

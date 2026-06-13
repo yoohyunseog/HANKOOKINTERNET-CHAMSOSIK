@@ -1,0 +1,90 @@
+{
+  "schema": "pc-part-nb-collector-file.v1",
+  "updatedAt": "2026-06-14T03:55:23.751+09:00",
+  "category": "SSD",
+  "id": "ssd-crucial-t500-gen4-nvme-ssd-2tb",
+  "name": "Crucial T500 Gen4 NVMe SSD 2TB",
+  "maker": "Crucial",
+  "platform": "PCIe 4.0",
+  "estimatedPriceKrw": 172250,
+  "priceBand": "15~30만원",
+  "speedLabel": "7,400MB/s",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "SSD",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 90,
+  "valueIndex": 52.2,
+  "aiUseScore": 59,
+  "powerWatts": 0,
+  "tags": [
+    "Gen4",
+    "NVMe",
+    "DRAM"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "SSD",
+    "partId": "ssd-crucial-t500-gen4-nvme-ssd-2tb",
+    "partName": "Crucial T500 Gen4 NVMe SSD 2TB",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "SSD",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 900,
+      "value": 696,
+      "aiFit": 590,
+      "priceEfficiency": 580,
+      "powerEfficiency": 900
+    },
+    "nbVector": [
+      100,
+      900,
+      696,
+      590,
+      580,
+      900
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 488.185,
+    "nbMin": 351.493,
+    "weightedScore": 479,
+    "nbBand": "100~499",
+    "summary": "SSD Crucial T500 Gen4 NVMe SSD 2TB 부품을 속도 중심 N/B 데이터베이스 점수 479점으로 저장했습니다."
+  },
+  "nbWeightedScore": 479,
+  "nbMax": 488.185,
+  "nbMin": 351.493,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Crucial%20T500%20Gen4%20NVMe%20SSD%202TB%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "TLC, Phison PS5025-E25 controller, 2GB DDR4 DRAM, 1200TBW",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

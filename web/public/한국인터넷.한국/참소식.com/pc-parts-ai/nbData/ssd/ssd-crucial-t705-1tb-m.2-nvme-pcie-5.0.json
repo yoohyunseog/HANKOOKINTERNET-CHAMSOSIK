@@ -1,0 +1,89 @@
+{
+  "schema": "pc-part-nb-collector-file.v1",
+  "updatedAt": "2026-06-14T03:55:25.198+09:00",
+  "category": "SSD",
+  "id": "ssd-crucial-t705-1tb-m.2-nvme-pcie-5.0",
+  "name": "Crucial T705 1TB M.2 NVMe PCIe 5.0",
+  "maker": "Crucial",
+  "platform": "PCIe 5.0",
+  "estimatedPriceKrw": 456910,
+  "priceBand": "30~60만원",
+  "speedLabel": "13,600MB/s",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "SSD",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 100,
+  "valueIndex": 21.9,
+  "aiUseScore": 65,
+  "powerWatts": 0,
+  "tags": [
+    "Gen5",
+    "NVMe"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "SSD",
+    "partId": "ssd-crucial-t705-1tb-m.2-nvme-pcie-5.0",
+    "partName": "Crucial T705 1TB M.2 NVMe PCIe 5.0",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "SSD",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 1000,
+      "value": 292,
+      "aiFit": 650,
+      "priceEfficiency": 220,
+      "powerEfficiency": 1000
+    },
+    "nbVector": [
+      100,
+      1000,
+      292,
+      650,
+      220,
+      1000
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 288.143,
+    "nbMin": 366.431,
+    "weightedScore": 425,
+    "nbBand": "100~499",
+    "summary": "SSD Crucial T705 1TB M.2 NVMe PCIe 5.0 부품을 속도 중심 N/B 데이터베이스 점수 425점으로 저장했습니다."
+  },
+  "nbWeightedScore": 425,
+  "nbMax": 288.143,
+  "nbMin": 366.431,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Crucial%20T705%201TB%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "Sequential Read 13,600MB/s, Sequential Write 10,200MB/s, Phison PS5026-E26 controller",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

@@ -1,0 +1,89 @@
+{
+  "schema": "pc-part-nb-collector-file.v1",
+  "updatedAt": "2026-06-14T03:55:15.319+09:00",
+  "category": "Mainboard",
+  "id": "mainboard-asrock-z890-pro-rs",
+  "name": "ASRock Z890 Pro RS",
+  "maker": "ASRock",
+  "platform": "Intel LGA1851",
+  "estimatedPriceKrw": 339000,
+  "priceBand": "30~60만원",
+  "speedLabel": "Z890",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "Mainboard",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 75,
+  "valueIndex": 22.1,
+  "aiUseScore": 49,
+  "powerWatts": 0,
+  "tags": [
+    "Intel",
+    "Z890"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "Mainboard",
+    "partId": "mainboard-asrock-z890-pro-rs",
+    "partName": "ASRock Z890 Pro RS",
+    "speed": {
+      "score": 100,
+      "weight": 0.32,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "Mainboard",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 750,
+      "value": 295,
+      "aiFit": 490,
+      "priceEfficiency": 290,
+      "powerEfficiency": 750
+    },
+    "nbVector": [
+      100,
+      750,
+      295,
+      490,
+      290,
+      750
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 327.341,
+    "nbMin": 388.37,
+    "weightedScore": 341,
+    "nbBand": "100~499",
+    "summary": "Mainboard ASRock Z890 Pro RS 부품을 속도 중심 N/B 데이터베이스 점수 341점으로 저장했습니다."
+  },
+  "nbWeightedScore": 341,
+  "nbMax": 327.341,
+  "nbMin": 388.37,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Z890%20%EB%A9%94%EC%9D%B8%EB%B3%B4%EB%93%9C%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "Distributed by Ezwin",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

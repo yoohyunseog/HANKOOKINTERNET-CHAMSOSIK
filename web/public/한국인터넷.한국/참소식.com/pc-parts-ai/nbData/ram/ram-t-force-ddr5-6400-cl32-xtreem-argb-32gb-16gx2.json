@@ -1,0 +1,89 @@
+{
+  "schema": "pc-part-nb-collector-file.v1",
+  "updatedAt": "2026-06-14T03:55:19.418+09:00",
+  "category": "RAM",
+  "id": "ram-t-force-ddr5-6400-cl32-xtreem-argb-32gb-16gx2",
+  "name": "T-Force DDR5-6400 CL32 XTREEM ARGB 32GB (16Gx2)",
+  "maker": "TeamGroup",
+  "platform": "DDR5",
+  "estimatedPriceKrw": 187000,
+  "priceBand": "15~30만원",
+  "speedLabel": "6400MHz CL32",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "RAM",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 75,
+  "valueIndex": 40.1,
+  "aiUseScore": 49,
+  "powerWatts": 0,
+  "tags": [
+    "gaming",
+    "overclock"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "RAM",
+    "partId": "ram-t-force-ddr5-6400-cl32-xtreem-argb-32gb-16gx2",
+    "partName": "T-Force DDR5-6400 CL32 XTREEM ARGB 32GB (16Gx2)",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "RAM",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 750,
+      "value": 535,
+      "aiFit": 490,
+      "priceEfficiency": 530,
+      "powerEfficiency": 750
+    },
+    "nbVector": [
+      100,
+      750,
+      535,
+      490,
+      530,
+      750
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 475.821,
+    "nbMin": 368.317,
+    "weightedScore": 403,
+    "nbBand": "100~499",
+    "summary": "RAM T-Force DDR5-6400 CL32 XTREEM ARGB 32GB (16Gx2) 부품을 속도 중심 N/B 데이터베이스 점수 403점으로 저장했습니다."
+  },
+  "nbWeightedScore": 403,
+  "nbMax": 475.821,
+  "nbMin": 368.317,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=TeamGroup%20T-Force%20DDR5%206400%20CL32%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "XMP 3.0, CL32-39-39-84, 1.35V",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

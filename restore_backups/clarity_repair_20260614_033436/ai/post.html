@@ -1,0 +1,898 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>참소식 인공지능</title>
+  <meta name="description" content="참소식.com 인공지능">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "x4jlyqheuh");
+</script>
+</head>
+<body>
+
+  <div class="ide">
+    <header class="titlebar">
+      <a class="brand" href="../">
+        <span class="brand-mark">🤖</span>
+        <span>참소식 인공지능</span>
+      </a>
+      <div class="toolbar" aria-label="도구">
+        <button type="button" id="healthButton" style="background:rgba(34,197,94,0.1);border-color:rgba(34,197,94,0.3);color:#4ade80;">●<span class="btn-text"> 연결확인</span></button>
+        <button type="button" id="searchToggleButton" style="background:rgba(139,92,246,0.1);border-color:rgba(139,92,246,0.3);color:#c4b5fd;">🔍<span class="btn-text"> 검색ON</span></button>
+        <button type="button" id="copyButton">📋<span class="btn-text"> 복사</span></button>
+        <button type="button" id="clearButton">🗑️<span class="btn-text"> 초기화</span></button>
+      </div>
+      <div class="window-actions" aria-hidden="true">
+        <span class="dot red"></span>
+        <span class="dot amber"></span>
+        <span class="dot green"></span>
+      </div>
+    </header>
+
+    <section class="chat" id="chatLog" aria-live="polite">
+    </section>
+
+    <div class="composer-wrapper">
+      <div class="composer-toggle" id="composerToggle">
+        <div class="composer-toggle-text">
+          <span class="composer-toggle-icon">💬</span>
+          <span>메시지 입력하려면 클릭하세요</span>
+        </div>
+      </div>
+      <section class="composer" id="composer">
+      <form id="chatForm">
+        <div class="input-wrapper">
+          <textarea id="promptInput" placeholder="메시지를 입력하세요... (Enter로 전송, Shift+Enter로 줄바꿈)" autocomplete="off"></textarea>
+          <button class="send-button" type="submit" id="sendButton">📤<span class="btn-text"> 전송</span></button>
+        </div>
+        <div class="quick-prompts">
+          <button class="quick-button" type="button" data-prompt="이 뉴스 원문을 핵심 요약해줘">📰<span class="btn-text"> 뉴스 요약</span></button>
+          <button class="quick-button" type="button" data-prompt="최신 기술 트렌드 알려줘">🔍<span class="btn-text"> 기술 트렌드</span></button>
+          <button class="quick-button" type="button" data-prompt="이 코드를 리뷰해줘">💻<span class="btn-text"> 코드 리뷰</span></button>
+          <button class="quick-button" type="button" data-prompt="이 내용을 팩트체크 해줘">✅<span class="btn-text"> 팩트체크</span></button>
+        </div>
+      </form>
+      </section>
+    </div>
+
+    <footer class="statusbar">
+      <div class="status-left">
+        <span class="status-pill"><span class="pulse" id="statusPulse"></span><span id="statusText">AI 서버 대기</span></span>
+        <span id="baseText">🤖 참소식 인공지능</span>
+      </div>
+      <div class="status-right">
+        <span>⚡ 스트리밍</span>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    // 원격 서버 Ollama 설정
+    const REMOTE_SERVER = "http://211.45.162.155:11434";
+    const OLLAMA_API_KEY = "d8cf2811037b4791b2e36ffb4afee830.LrLvzfuvzutO7MLHciyiUtpq";
+    
+    const DEFAULT_ENDPOINT = REMOTE_SERVER;
+    const DEFAULT_MODEL = "kimi-k2.6:cloud";
+    const storageKey = "chamsosik-ollama-ide-state";
+
+    const els = {
+      chatLog: document.querySelector("#chatLog"),
+      chatForm: document.querySelector("#chatForm"),
+      promptInput: document.querySelector("#promptInput"),
+      sendButton: document.querySelector("#sendButton"),
+      statusPulse: document.querySelector("#statusPulse"),
+      statusText: document.querySelector("#statusText"),
+      baseText: document.querySelector("#baseText"),
+      clearButton: document.querySelector("#clearButton"),
+      copyButton: document.querySelector("#copyButton"),
+      healthButton: document.querySelector("#healthButton")
+    };
+
+    let state = loadState();
+    let activeId = state.activeId || state.conversations[0]?.id;
+    let webSearchEnabled = true;
+
+    function loadState() {
+      // 저장 비활성화 - post.html은 항상 새 대화 상태로 시작
+      // try {
+      //   const saved = JSON.parse(localStorage.getItem(storageKey) || "{}");
+      //   if (saved && Array.isArray(saved.conversations)) {
+      //     return {
+      //       conversations: saved.conversations,
+      //       activeId: saved.activeId,
+      //       endpoint: saved.endpoint || DEFAULT_ENDPOINT,
+      //       model: saved.model || DEFAULT_MODEL,
+      //       temperature: saved.temperature || "0.5",
+      //       system: saved.system || ""
+      //     };
+      //   }
+      // } catch (error) {}
+
+      return {
+        conversations: [createConversation("새 대화")],
+        endpoint: DEFAULT_ENDPOINT,
+        model: DEFAULT_MODEL,
+        temperature: "0.5",
+        system: ""
+      };
+    }
+
+    function saveState() {
+      // 저장 비활성화 - post.html은 대화 기록을 저장하지 않음
+      // localStorage.setItem(storageKey, JSON.stringify({
+      //   ...state,
+      //   activeId
+      // }));
+    }
+
+    function createConversation(title) {
+      return {
+        id: `chat-${Date.now()}-${Math.random().toString(16).slice(2)}`,
+        title,
+        createdAt: new Date().toISOString(),
+        messages: []
+      };
+    }
+
+    function currentConversation() {
+      return state.conversations.find((item) => item.id === activeId) || state.conversations[0];
+    }
+
+    function escapeHtml(value) {
+      return String(value)
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;")
+        .replaceAll("'", "&#039;");
+    }
+
+    function markdownToHtml(text) {
+      if (!text) return "";
+      try {
+        // marked.js가 로드된 경우 사용
+        if (typeof marked !== 'undefined') {
+          return marked.parse(text, {
+            breaks: true,
+            gfm: true,
+            headerIds: false,
+            mangle: false
+          });
+        }
+      } catch (e) {
+        console.warn('marked.js error:', e);
+      }
+      // 폴백: 기본 처리
+      return text
+        .replace(/```([\s\S]*?)```/g, '<pre><code>$1</code></pre>')
+        .replace(/`([^`]+)`/g, '<code>$1</code>')
+        .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
+        .replace(/\*([^*]+)\*/g, '<em>$1</em>')
+        .replace(/^### (.+)$/gm, '<h3>$1</h3>')
+        .replace(/^## (.+)$/gm, '<h2>$1</h2>')
+        .replace(/^# (.+)$/gm, '<h1>$1</h1>')
+        .replace(/^- (.+)$/gm, '<li>$1</li>')
+        .replace(/^(\d+)\. (.+)$/gm, '<li>$2</li>')
+        .replace(/\n/g, '<br>');
+    }
+
+    function renderMessageContent(content) {
+      if (!content) return "";
+      return markdownToHtml(content);
+    }
+
+    function createSearchLinks(query) {
+      if (!query || query.trim().length === 0) return '';
+      
+      const encodedQuery = encodeURIComponent(query.trim());
+      
+      const searchEngines = [
+        { name: '구글', icon: '🔍', url: `https://www.google.com/search?q=${encodedQuery}`, color: '#4285f4' },
+        //{ name: '네이버', icon: '🟢', url: `https://search.naver.com/search.naver?query=${encodedQuery}`, color: '#03c75a' },
+        { name: '빙', icon: '🟦', url: `https://www.bing.com/search?q=${encodedQuery}`, color: '#008373' }
+      ];
+      
+      const links = searchEngines.map(engine => 
+        `<a href="${engine.url}" target="_blank" rel="noopener" 
+           style="display:inline-flex;align-items:center;gap:4px;padding:4px 10px;margin:2px;
+                  background:${engine.color}15;border:1px solid ${engine.color}40;border-radius:16px;
+                  color:${engine.color};text-decoration:none;font-size:12px;font-weight:600;
+                  transition:all 0.2s;"
+           onmouseover="this.style.background='${engine.color}30';this.style.borderColor='${engine.color}'"
+           onmouseout="this.style.background='${engine.color}15';this.style.borderColor='${engine.color}40'">
+          ${engine.icon} ${engine.name}
+        </a>`
+      ).join('');
+      
+      return `<div style="margin-top:12px;padding-top:10px;border-top:1px solid rgba(139,92,246,0.15);">
+        <span style="font-size:11px;color:var(--muted);margin-right:8px;">🔗 검색:</span>
+        ${links}
+      </div>`;
+    }
+
+    function extractSearchQuery(message) {
+      if (!message) return '';
+      
+      const stopWords = ['은', '는', '이', '가', '을', '를', '에', '의', '와', '과', '도', '다', '요', '좀', '어때', '알려줘', '말해줘', '가르쳐', '해줘', '해주세요', '뭐', '무엇', '어떻게', '왜', '언제', '어디', '누구'];
+      let cleaned = message.trim();
+      
+      stopWords.forEach(w => {
+        cleaned = cleaned.replace(new RegExp(w + '[?]?$', 'g'), '');
+      });
+      
+      // 검색어 길이 제한 없음 - 전체 문장 사용
+      return cleaned.trim();
+    }
+
+    function formatTime(value = new Date()) {
+      return new Date(value).toLocaleTimeString("ko-KR", { hour: "2-digit", minute: "2-digit" });
+    }
+
+    function render() {
+      renderMessages();
+      saveState();
+    }
+
+    function renderMessages() {
+      const conversation = currentConversation();
+      if (!conversation || !conversation.messages.length) {
+        // 빈 상태일 때 광고 표시
+        els.chatLog.innerHTML = `<div class="empty">
+          <h1>🤖 참소식 인공지능 채팅</h1>
+          <p>질문을 입력하면 <strong>AI가 실시간으로 답변합니다</strong></p>
+          <div class="empty-features">
+            <div class="empty-feature">
+              <strong style="color:#a78bfa;">🔍 스마트 검색</strong>
+              <p>키워드 감지 시 자동으로 웹 검색 후 답변</p>
+            </div>
+            <div class="empty-feature">
+              <strong style="color:#22c55e;">⚡ 스트리밍 응답</strong>
+              <p>토큰 단위로 실시간 표시</p>
+            </div>
+            <div class="empty-feature">
+              <strong style="color:#38bdf8;">💾 자동 저장</strong>
+              <p>대화 기록이 브라우저에 저장</p>
+            </div>
+          </div>
+        </div>`;
+        scrollChatToBottom();
+        return;
+      }
+
+      let finalHtml = "";
+      
+      conversation.messages.forEach((message, index) => {
+        const isUser = message.role === "user";
+        const isStreaming = message.role === "assistant" && !message.content && index === conversation.messages.length - 1;
+        const streamClass = isStreaming ? " streaming" : "";
+        const avatarIcon = isUser ? "👤" : "🤖";
+        const roleLabel = isUser ? "You" : "참소식 인공지능";
+        
+        const contentHtml = isStreaming 
+          ? `<div class="typing-indicator"><span></span><span></span><span></span></div>`
+          : renderMessageContent(message.content);
+        
+        let extraHtml = "";
+        
+        // 검색 결과 표시
+        if (message.searchResults && message.searchResults.length > 0) {
+          extraHtml = `<details style="margin-top:16px;border-top:1px solid rgba(139,92,246,0.2);padding-top:12px;cursor:pointer;">
+            <summary style="font-weight:700;color:#a78bfa;font-size:13px;user-select:none;">🔍 검색 결과 ${message.searchResults.length}건 (클릭하여 펼치기)</summary>
+            <div style="margin-top:10px;display:grid;gap:10px;">
+              ${message.searchResults.slice(0, 5).map((item, i) => {
+                const content = item.content || item.snippet || item.description || '';
+                const preview = content.slice(0, 200);
+                return `<div style="padding:10px;border-radius:8px;background:rgba(0,0,0,0.25);border:1px solid rgba(139,92,246,0.1);">
+                  <div style="font-weight:600;color:var(--text);margin-bottom:4px;font-size:12px;">${escapeHtml(item.title || '제목 없음')}</div>
+                  <a href="${escapeHtml(item.url || '')}" target="_blank" style="font-size:10px;color:#38bdf8;text-decoration:none;word-break:break-all;display:block;margin-bottom:4px;opacity:0.7;">${escapeHtml(item.url || '')}</a>
+                  ${preview ? `<div style="font-size:11px;color:var(--muted);line-height:1.4;margin-top:4px;">${escapeHtml(preview)}${content.length > 200 ? '...' : ''}</div>` : ''}
+                </div>`;
+              }).join('')}
+            </div>
+          </details>`;
+        }
+        
+        // AI 답변인 경우 검색 링크 추가
+        if (!isUser && !isStreaming && message.content) {
+          const searchQuery = extractSearchQuery(message.content);
+          if (searchQuery) {
+            extraHtml += createSearchLinks(searchQuery);
+          }
+        }
+        
+        finalHtml += `<article class="message ${message.role}${streamClass}">
+          <div class="avatar">${avatarIcon}</div>
+          <div class="message-content">
+            <div class="role">${roleLabel}</div>
+            <div class="bubble">${contentHtml}${extraHtml}</div>
+            <div class="meta">참소식 인공지능 ${escapeHtml(message.time || "")}</div>
+          </div>
+        </article>`;
+      });
+      
+      els.chatLog.innerHTML = finalHtml;
+      scrollChatToBottom();
+    }
+
+    function scrollChatToBottom() {
+      requestAnimationFrame(() => {
+        els.chatLog.scrollTop = els.chatLog.scrollHeight;
+        requestAnimationFrame(() => {
+          els.chatLog.scrollTop = els.chatLog.scrollHeight;
+        });
+      });
+    }
+
+    function log(line) {
+      console.log(`[${new Date().toLocaleTimeString("ko-KR")}] ${line}`);
+    }
+
+    function setOnline(ok, text) {
+      els.statusPulse.classList.toggle("online", ok);
+      els.statusText.textContent = text;
+    }
+
+    function normalizeReply(data) {
+      if (typeof data === "string") return data;
+      if (data.content) return data.content;
+      if (data.reply) return data.reply;
+      if (data.answer) return data.answer;
+      if (data.message && typeof data.message === "string") return data.message;
+      if (data.message?.content) return data.message.content;
+      if (data.response) return data.response;
+      if (data.choices?.[0]?.message?.content) return data.choices[0].message.content;
+      if (data.choices?.[0]?.text) return data.choices[0].text;
+      return JSON.stringify(data, null, 2);
+    }
+
+    async function checkHealth() {
+      const started = performance.now();
+      log("GET /api/ollama-health");
+
+      try {
+        const response = await fetch("/api/ollama-health");
+        const data = await response.json().catch(() => ({}));
+        const ms = Math.round(performance.now() - started);
+        const connected = data.ollama === "ok";
+        setOnline(connected, connected ? "AI 연결됨" : "내장 응답 모드");
+        log(`health ${response.status} ${data.mode || ""} ${data.ollama || ""} ${ms}ms`);
+      } catch (error) {
+        setOnline(false, "연결 확인 실패");
+        log(`health failed: ${error.message}`);
+      }
+    }
+
+    function fallbackReply(prompt) {
+      return [
+        "API 응답을 받지 못해 로컬 안내를 표시합니다.",
+        "",
+        `질문: ${prompt}`,
+        "",
+        "확인할 것:",
+        "1. 원격 서버 Ollama가 실행 중인지 확인 (http://211.45.162.155:11434)",
+        "2. API 키가 올바른지 확인",
+        "3. 네트워크 연결 상태 확인",
+        "",
+        "클라우드 모델: glm-5:cloud, gemma4:31b-cloud"
+      ].join("\n");
+    }
+
+    async function webSearch(query, maxResults = 5) {
+      try {
+        const response = await fetch("/api/ollama-web-search", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ query, max_results: maxResults })
+        });
+        const data = await response.json();
+        if (!response.ok) {
+          throw new Error(`Web search failed: ${data.error || response.status}`);
+        }
+        return data;
+      } catch (error) {
+        log(`web search error: ${error.message}`);
+        return { ok: false, error: error.message, results: [] };
+      }
+    }
+
+    async function webFetch(url) {
+      try {
+        const response = await fetch("/api/ollama-web-fetch", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ url })
+        });
+        const data = await response.json();
+        if (!response.ok) {
+          throw new Error(`Web fetch failed: ${data.error || response.status}`);
+        }
+        return data;
+      } catch (error) {
+        log(`web fetch error: ${error.message}`);
+        return { ok: false, error: error.message, content: "", links: [] };
+      }
+    }
+
+    async function analyzeSearchNeed(query, conversation) {
+      const queryLower = query.toLowerCase().trim();
+      
+      const greetingPatterns = [
+        /^안녕/, /^안녕하세요/, /^반가워/, /^반갑/, /^안녕하세/, /^hi$/i, /^hello$/i, /^hey$/i,
+        /^좋은아침/, /^좋은오후/, /^좋은저녁/, /^잘지내/, /^잘지내셨/, /^건강하시/,
+        /^반갑습니다/, /^처음뵙/, /^만나서반/, /^오랜만/, /^오랫만/, /^그동안잘/, /^별말씀/, /^아니에요/,
+        /^감사/, /^고맙/, /^고마워/, /^땡큐/i, /^thank/i, /^thanks/i,
+        /^잘했/, /^좋아/, /^좋네/, /^훌륭/, /^대단/, /^멋져/, /^짱이/, /^최고/, /^완벽/
+      ];
+      
+      for (const pattern of greetingPatterns) {
+        if (pattern.test(queryLower)) {
+          log(`💬 인사 감지: 직접 응답`);
+          return {
+            needsSearch: false,
+            reason: '인사/감사 표현 감지',
+            keywords: [],
+            confidence: 1,
+            matchedKeywords: [],
+            isGreeting: true
+          };
+        }
+      }
+      
+      if (queryLower.length <= 10) {
+        const shortGreetings = ['안녕', '반가', '고마', '감사', '잘했', '좋아', '좋네', '멋져', '짱', '대단', '훌륭', '완벽', '최고', 'hi', 'hello', 'hey', 'thx', 'ty'];
+        if (shortGreetings.some(g => queryLower.includes(g))) {
+          log(`💬 짧은 인사 감지: 직접 응답`);
+          return {
+            needsSearch: false,
+            reason: '짧은 인사/감사',
+            keywords: [],
+            confidence: 1,
+            matchedKeywords: [],
+            isGreeting: true
+          };
+        }
+      }
+      
+      const searchKeywords = [
+        '최신', '최근', '오늘', '어제', '이번', '지난', '올해', '작년',
+        '지금', '현재', '요즘', '신규', '새로운', '새로',
+        '검색', '찾아', '조회', '확인', '알려', '뭐', '무엇', '어디', '누구',
+        '어떤', '어느', '언제', '왜', '어떻게',
+        '뉴스', '기사', '소식', '이슈', '사건', '사고', '발생',
+        '보도', '기자', '언론',
+        '날씨', '온도', '비', '눈', '미세먼지', '날짜', '시간',
+        '주가', '주식', '환율', '시세', '가격',
+        '비교', '추천', '순위', '랭킹', 'best', 'top',
+        '현황', '상황', '동향', '트렌드', '유행',
+        '분석', '요약', '정리', '설명', '조사', '연구', '보고서',
+        '데이터', '통계', '수치', '현황', '전망'
+      ];
+      
+      const noSearchKeywords = [
+        '코드', '작성해', '만들어', '생성해', '번역해', '수정해', '변경해',
+        '이야기', '소설', '시', '글', '에세이', '편지', '일기',
+        '계산', '수학', '공식', '방정식'
+      ];
+      
+      const searchMatches = searchKeywords.filter(kw => queryLower.includes(kw));
+      const noSearchMatches = noSearchKeywords.filter(kw => queryLower.includes(kw));
+      
+      const searchScore = searchMatches.length;
+      const noSearchScore = noSearchMatches.length;
+      
+      const needsSearch = searchScore > 0 && searchScore >= noSearchScore;
+      
+      const keywords = needsSearch ? extractKeywords(query) : [];
+      
+      const result = {
+        needsSearch,
+        reason: needsSearch 
+          ? `검색 키워드 감지: ${searchMatches.join(', ')}` 
+          : (noSearchScore > 0 
+            ? `창작/코딩 감지: ${noSearchMatches.join(', ')}` 
+            : '직접 응답'),
+        keywords,
+        confidence: Math.min(1, (Math.abs(searchScore - noSearchScore) + 1) / 3),
+        matchedKeywords: searchMatches,
+        isGreeting: false
+      };
+      
+      log(`🔍 검색 판단: ${result.needsSearch ? '검색필요' : '직접응답'} - ${result.reason}`);
+      return result;
+    }
+
+    function extractKeywords(query) {
+      const stopWords = ['은', '는', '이', '가', '을', '를', '에', '의', '와', '과', '도', '다', '요', '좀', '어때', '알려줘', '말해줘', '가르쳐', '해줘', '해주세요'];
+      let cleaned = query.trim();
+      stopWords.forEach(w => cleaned = cleaned.replace(new RegExp(w + '$', 'g'), ''));
+      return [cleaned.trim()];
+    }
+
+    async function streamAI(prompt, onChunk, onComplete) {
+      const model = DEFAULT_MODEL;
+      const conversation = currentConversation();
+      const systemPrompt = `당신은 한국어로 답변하는 유용한 AI 어시스턴트입니다.
+
+답변 형식:
+- 마크다운 형식을 사용하세요 (제목: ##, 목록: -, 강조: **, 코드: \`\`\`)
+- 중요한 내용은 **굵게** 표시하세요
+- 목록은 - 기호를 사용하세요
+- 코드는 \`\`\`언어명 형식으로 표시하세요
+- 출처나 참고 자료는 링크 형태로 제공하세요
+- 답변은 명확하고 구조적으로 작성하세요
+
+웹 검색 결과가 제공된 경우:
+- 검색 결과를 바탕으로 정확한 정보를 제공하세요
+- 출처를 반드시 표시하세요
+- 정보가 불확실한 경우 명시하세요`;
+      
+      let searchResults = null;
+      let searchContext = "";
+      
+      if (webSearchEnabled) {
+        const analysis = await analyzeSearchNeed(prompt, conversation);
+        
+        if (analysis.needsSearch && analysis.keywords.length > 0) {
+          log(`🔍 검색 키워드: ${analysis.keywords.join(', ')}`);
+          
+          const searchData = await webSearch(analysis.keywords.join(' '), 5);
+          if (searchData.results && searchData.results.length > 0) {
+            searchResults = searchData.results;
+            log(`✅ 검색 완료: ${searchResults.length}건`);
+            
+            const fetchPromises = searchResults.slice(0, 2).map(async (r, i) => {
+              try {
+                const fetched = await webFetch(r.url);
+                if (fetched.content) {
+                  r.content = fetched.content;
+                  log(`   [${i + 1}] 크롤링 성공: ${(r.title || '제목없음').slice(0, 30)}`);
+                }
+              } catch (e) {
+                log(`   [${i + 1}] 크롤링 실패: ${e.message.slice(0, 50)}`);
+              }
+              return r;
+            });
+            await Promise.all(fetchPromises);
+            
+            searchContext = "\n\n[웹 검색 결과]\n" + searchResults.map((r, i) => {
+              const content = r.content || r.snippet || r.description || '';
+              return `[${i + 1}] ${r.title || '제목 없음'}\n${r.url}\n${content}\n---`;
+            }).join('\n\n');
+          }
+        }
+      }
+      
+      const messages = [
+        { role: "system", content: systemPrompt },
+        ...conversation.messages.slice(-12).map((item) => ({ role: item.role, content: item.content }))
+      ];
+      
+      const enhancedPrompt = searchContext 
+        ? `${prompt}\n\n[참고: 위 검색 결과를 활용하여 답변하세요. 출처를 반드시 표시하세요.]${searchContext}`
+        : prompt;
+
+      const body = {
+        model,
+        messages: [...messages, { role: "user", content: enhancedPrompt }],
+        stream: true,
+        temperature: 0.5
+      };
+
+      // HTTPS 페이지에서 HTTP 직접 호출 불가하므로 Same-Origin Proxy만 사용
+      const urls = ["/api/ollama-chat"];
+      
+      let lastError = null;
+      for (const url of urls) {
+        try {
+          log(`POST ${url} model=${model} stream=true`);
+          
+          const response = await fetch(url, {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json"
+            },
+            body: JSON.stringify(body)
+          });
+
+          if (!response.ok) {
+            const text = await response.text();
+            throw new Error(`${url} ${response.status} ${text.slice(0, 180)}`);
+          }
+
+          const reader = response.body.getReader();
+          const decoder = new TextDecoder();
+          let fullContent = "";
+          let buffer = "";
+          let chunkCount = 0;
+
+          log(`📡 스트리밍 시작...`);
+          
+          while (true) {
+            const { done, value } = await reader.read();
+            if (done) {
+              log(`📡 스트리밍 완료 (총 ${chunkCount}개 청크)`);
+              break;
+            }
+            
+            buffer += decoder.decode(value, { stream: true });
+            const lines = buffer.split("\n");
+            buffer = lines.pop() || "";
+            
+            for (const line of lines) {
+              if (!line.trim() || line.startsWith(":")) continue;
+              
+              try {
+                const data = JSON.parse(line);
+                chunkCount++;
+                
+                if (data.message?.content) {
+                  fullContent += data.message.content;
+                  onChunk(data.message.content, fullContent);
+                } 
+                else if (data.response) {
+                  fullContent += data.response;
+                  onChunk(data.response, fullContent);
+                } 
+                else if (data.content) {
+                  fullContent += data.content;
+                  onChunk(data.content, fullContent);
+                }
+                else if (data.done === true) {
+                  log(`📡 스트림 완료 신호 수신`);
+                }
+              } catch (e) {
+                if (line.trim() && line.length > 2) {
+                  fullContent += line;
+                  onChunk(line, fullContent);
+                }
+              }
+            }
+          }
+
+          if (!fullContent || fullContent.trim().length === 0) {
+            throw new Error("빈 응답 - AI가 응답을 생성하지 않았습니다");
+          }
+
+          onComplete(fullContent, searchResults);
+          return;
+        } catch (error) {
+          lastError = error;
+          log(`stream failed on ${url}: ${error.message}`);
+        }
+      }
+
+      throw lastError || new Error("all streaming endpoints failed");
+    }
+
+    async function submitPrompt(promptText) {
+      const prompt = promptText || els.promptInput.value.trim();
+      if (!prompt) return;
+
+      const conversation = currentConversation();
+      if (!conversation.title || conversation.title === "새 대화") {
+        conversation.title = prompt.slice(0, 34);
+      }
+
+      conversation.messages.push({ role: "user", content: prompt, time: formatTime() });
+      els.promptInput.value = "";
+      els.sendButton.disabled = true;
+
+      const aiMsgIndex = conversation.messages.length;
+      conversation.messages.push({
+        role: "assistant",
+        content: "",
+        time: formatTime(),
+        model: DEFAULT_MODEL
+      });
+      render();
+
+      const started = performance.now();
+      let streamComplete = false;
+      let searchResults = null;
+      let searchContext = "";
+      
+      try {
+        if (webSearchEnabled) {
+          const analysis = await analyzeSearchNeed(prompt, conversation);
+          
+          if (analysis.needsSearch && analysis.keywords.length > 0) {
+            log(`🔍 검색 키워드: ${analysis.keywords.join(', ')}`);
+            
+            const searchData = await webSearch(analysis.keywords.join(' '), 5);
+            if (searchData.results && searchData.results.length > 0) {
+              searchResults = searchData.results;
+              log(`✅ 검색 완료: ${searchResults.length}건`);
+              
+              const fetchPromises = searchResults.slice(0, 2).map(async (r, i) => {
+                try {
+                  const fetched = await webFetch(r.url);
+                  if (fetched.content) {
+                    r.content = fetched.content;
+                    log(`   [${i + 1}] 크롤링 성공: ${(r.title || '제목없음').slice(0, 30)}`);
+                  }
+                } catch (e) {
+                  log(`   [${i + 1}] 크롤링 실패: ${e.message.slice(0, 50)}`);
+                }
+                return r;
+              });
+              await Promise.all(fetchPromises);
+              
+              searchContext = "\n\n[웹 검색 결과]\n" + searchResults.map((r, i) => {
+                const content = r.content || r.snippet || r.description || '';
+                return `[${i + 1}] ${r.title || '제목 없음'}\n${r.url}\n${content}\n---`;
+              }).join('\n\n');
+            }
+          }
+        }
+        
+        log(`📡 스트리밍 시도 중...`);
+        
+        await streamAI(
+          prompt,
+          (chunk, accumulated) => {
+            conversation.messages[aiMsgIndex].content = accumulated;
+            render();
+            scrollChatToBottom();
+          },
+          (fullContent, sr) => {
+            streamComplete = true;
+            searchResults = sr || searchResults;
+            const ms = Math.round(performance.now() - started);
+            
+            conversation.messages[aiMsgIndex].content = fullContent;
+            if (searchResults) {
+              conversation.messages[aiMsgIndex].searchResults = searchResults;
+            }
+            
+            setOnline(true, "AI 응답 완료");
+            log(`✅ 스트리밍 완료 ${ms}ms, 길이: ${fullContent.length}자`);
+            saveState();
+            render();
+          }
+        );
+        
+      } catch (error) {
+        log(`❌ 에러: ${error.message}`);
+        conversation.messages[aiMsgIndex].content = fallbackReply(prompt);
+        setOnline(false, "API 응답 실패");
+        render();
+      } finally {
+        els.sendButton.disabled = false;
+      }
+    }
+
+    function clearCurrent() {
+      const conversation = currentConversation();
+      if (!conversation) return;
+      conversation.messages = [];
+      conversation.title = "새 대화";
+      log("current chat cleared");
+      render();
+    }
+
+    async function copyChat() {
+      const conversation = currentConversation();
+      const text = (conversation?.messages || [])
+        .map((item) => `${item.role.toUpperCase()}: ${item.content}`)
+        .join("\n\n");
+      if (!text) {
+        log("copy skipped: empty chat");
+        return;
+      }
+      await navigator.clipboard.writeText(text);
+      log("chat copied to clipboard");
+    }
+
+    // URL 파라미터에서 q 값 확인 후 자동 실행
+    function checkURLParameter() {
+      const urlParams = new URLSearchParams(window.location.search);
+      const qParam = urlParams.get('q');
+      
+      if (qParam && qParam.trim()) {
+        log(`🔗 URL 파라미터 감지: q=${qParam.substring(0, 50)}...`);
+        // URLSearchParams.get()은 이미 디코딩된 값을 반환하므로 추가 디코딩 불필요
+        // 공백이 포함된 여러 단어도 정상 처리됨
+        setTimeout(() => {
+          submitPrompt(qParam);
+        }, 500); // 페이지 로딩 후 0.5초 대기
+      }
+    }
+
+    els.chatForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+      submitPrompt();
+    });
+    els.clearButton.addEventListener("click", clearCurrent);
+    els.copyButton.addEventListener("click", copyChat);
+    els.healthButton.addEventListener("click", checkHealth);
+
+    const searchToggleBtn = document.querySelector("#searchToggleButton");
+    searchToggleBtn.style.background = "rgba(139, 92, 246, 0.15)";
+    searchToggleBtn.style.borderColor = "rgba(139, 92, 246, 0.4)";
+    searchToggleBtn.style.color = "#c4b5fd";
+    const searchToggleText = searchToggleBtn.querySelector('.btn-text');
+    if (searchToggleText) searchToggleText.textContent = " 검색ON";
+    searchToggleBtn.addEventListener("click", () => {
+      webSearchEnabled = !webSearchEnabled;
+      searchToggleBtn.style.background = webSearchEnabled ? "rgba(139, 92, 246, 0.15)" : "rgba(100, 100, 100, 0.1)";
+      searchToggleBtn.style.borderColor = webSearchEnabled ? "rgba(139, 92, 246, 0.4)" : "rgba(100, 100, 100, 0.3)";
+      searchToggleBtn.style.color = webSearchEnabled ? "#c4b5fd" : "var(--text)";
+      if (searchToggleText) searchToggleText.textContent = webSearchEnabled ? " 검색ON" : " 검색OFF";
+      log(`web search ${webSearchEnabled ? "enabled" : "disabled"}`);
+    });
+
+    els.promptInput.addEventListener("keydown", (event) => {
+      if (event.key === "Enter" && !event.shiftKey && !event.isComposing) {
+        event.preventDefault();
+        els.chatForm.requestSubmit();
+      }
+    });
+
+    document.querySelectorAll("[data-prompt]").forEach((button) => {
+      button.addEventListener("click", () => {
+        els.promptInput.value = button.dataset.prompt;
+        els.promptInput.focus();
+      });
+    });
+
+    log("참소식 인공지능 ready");
+    log(`default endpoint: ${DEFAULT_ENDPOINT}/api/chat`);
+    render();
+    checkHealth();
+    
+    // URL 파라미터 체크
+    checkURLParameter();
+
+    // Composer 토글 기능
+    const composerToggle = document.querySelector("#composerToggle");
+    const composer = document.querySelector("#composer");
+    let composerVisible = false;
+
+    // 초기 상태: 입력란 숨김
+    composer.classList.remove("show");
+    composerToggle.classList.remove("active");
+
+    function showComposer() {
+      composerVisible = true;
+      composer.classList.add("show");
+      composerToggle.classList.add("active");
+      composerToggle.querySelector(".composer-toggle-text span:last-child").textContent = "입력란 숨기기";
+      setTimeout(() => {
+        els.promptInput.focus();
+      }, 1000);
+    }
+
+    function hideComposer() {
+      composerVisible = false;
+      composer.classList.remove("show");
+      composerToggle.classList.remove("active");
+      composerToggle.querySelector(".composer-toggle-text span:last-child").textContent = "메시지 입력하려면 클릭하세요";
+    }
+
+    composerToggle.addEventListener("click", () => {
+      if (composerVisible) {
+        hideComposer();
+      } else {
+        showComposer();
+      }
+    });
+
+    // URL 파라미터로 자동 실행 시 composer 표시
+    const originalSubmitPrompt = submitPrompt;
+    submitPrompt = async function(promptText) {
+      if (!composerVisible) {
+        showComposer();
+        await new Promise(resolve => setTimeout(resolve, 1000));
+      }
+      return originalSubmitPrompt(promptText);
+    };
+  </script>
+</body>
+</html>

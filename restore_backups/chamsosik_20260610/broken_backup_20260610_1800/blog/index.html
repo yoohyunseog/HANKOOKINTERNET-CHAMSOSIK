@@ -1,0 +1,363 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <meta name="description" content="李몄냼??com 釉붾줈洹?- 湲곗닠 ?곗씠?곗? ?댁뒋 留듭쓣 ?④퍡 ?쎈뒗 諛⑸쾿, ?ㅼ떆媛??댁뒋 ?먮쫫怨??곗씠??湲곕컲 ?몄궗?댄듃">
+  <meta name="keywords" content="李몄냼?? 釉붾줈洹? ?댁뒪?뚮옒?? ?댁뒋 留? 湲곗닠 ?곗씠?? ?ㅼ떆媛??뚮┝, ?곗씠??遺꾩꽍">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="../favicon.svg">
+  <link rel="canonical" href="https://xn--9l4b4xi9r.com/blog/">
+  
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ko_KR">
+  <meta property="og:site_name" content="李몄냼??com">
+  <meta property="og:url" content="https://xn--9l4b4xi9r.com/blog/">
+  <meta property="og:title" content="李몄냼??com 釉붾줈洹?| 湲곗닠 ?곗씠?곗? ?댁뒋 留?>
+  <meta property="og:description" content="湲곗닠 ?곗씠?곗? ?ㅼ떆媛??댁뒋 留듭쓣 ?④퍡 ?쎈뒗 ?곗씠??湲곕컲 ?몄궗?댄듃">
+  <meta property="og:image" content="/img/news-flash-hero.svg">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="李몄냼??com 釉붾줈洹?| 湲곗닠 ?곗씠?곗? ?댁뒋 留?>
+  <meta name="twitter:description" content="湲곗닠 ?곗씠?곗? ?ㅼ떆媛??댁뒋 留듭쓣 ?④퍡 ?쎈뒗 諛⑸쾿???덈궡?⑸땲??">
+  <meta name="twitter:image" content="/img/news-flash-hero.svg">
+  
+  <title>李몄냼??com 釉붾줈洹?| 湲곗닠 ?곗씠?곗? ?댁뒋 留?/title>
+  
+  <link rel="stylesheet" href="../common-site.css">
+  <style>
+    :root {
+      --bg-primary: #0f172a;
+      --bg-secondary: #1e293b;
+      --bg-card: #1e293b;
+      --bg-hover: #334155;
+      --text-primary: #f1f5f9;
+      --text-secondary: #94a3b8;
+      --text-muted: #64748b;
+      --accent-blue: #3b82f6;
+      --accent-green: #10b981;
+      --accent-orange: #f59e0b;
+      --border-color: #334155;
+      --shadow-color: rgba(0, 0, 0, 0.4);
+    }
+    
+    body {
+      background: linear-gradient(135deg, var(--bg-primary) 0%, #0c1222 100%);
+      color: var(--text-primary);
+      min-height: 100vh;
+    }
+    
+    .blog-container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    
+    .blog-header {
+      text-align: center;
+      margin-bottom: 40px;
+      padding: 30px 0;
+      border-bottom: 2px solid var(--border-color);
+    }
+    
+    .blog-header h1 {
+      font-size: 2.5em;
+      color: var(--text-primary);
+      margin-bottom: 10px;
+      text-shadow: 0 2px 10px rgba(59, 130, 246, 0.3);
+    }
+    
+    .blog-header p {
+      color: var(--text-secondary);
+      font-size: 1.1em;
+    }
+    
+    .posts-grid {
+      display: grid;
+      gap: 30px;
+    }
+    
+    .post-card {
+      background: var(--bg-card);
+      border-radius: 12px;
+      box-shadow: 0 4px 20px var(--shadow-color);
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+      border: 1px solid var(--border-color);
+    }
+    
+    .post-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 30px rgba(59, 130, 246, 0.2);
+      background: var(--bg-hover);
+      border-color: var(--accent-blue);
+    }
+    
+    .post-card-content {
+      padding: 25px;
+    }
+    
+    .post-meta {
+      display: flex;
+      gap: 15px;
+      margin-bottom: 12px;
+      font-size: 0.9em;
+      color: var(--text-muted);
+    }
+    
+    .post-category {
+      background: linear-gradient(135deg, #1e3a5f 0%, #1e40af 100%);
+      color: #93c5fd;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      border: 1px solid #3b82f6;
+    }
+    
+    .post-card h2 {
+      font-size: 1.5em;
+      margin-bottom: 12px;
+      color: var(--text-primary);
+    }
+    
+    .post-card h2 a {
+      color: inherit;
+      text-decoration: none;
+    }
+    
+    .post-card h2 a:hover {
+      color: var(--accent-blue);
+      text-shadow: 0 0 10px rgba(59, 130, 246, 0.3);
+    }
+    
+    .post-excerpt {
+      color: var(--text-secondary);
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+    
+    .read-more {
+      display: inline-block;
+      color: var(--accent-blue);
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.2s ease;
+    }
+    
+    .read-more:hover {
+      color: #60a5fa;
+      text-shadow: 0 0 8px rgba(59, 130, 246, 0.4);
+    }
+    
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--accent-blue);
+      text-decoration: none;
+      margin-bottom: 20px;
+      padding: 8px 16px;
+      border-radius: 8px;
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      transition: all 0.2s ease;
+    }
+    
+    .back-link:hover {
+      background: var(--bg-hover);
+      border-color: var(--accent-blue);
+      text-decoration: none;
+    }
+    
+    .site-nav {
+      background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+      padding: 15px 20px;
+      border-bottom: 1px solid var(--border-color);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    
+    .nav-logo {
+      color: var(--text-primary);
+      font-weight: 700;
+      font-size: 1.2em;
+      text-decoration: none;
+    }
+    
+    .nav-links a {
+      color: var(--text-secondary);
+      text-decoration: none;
+      margin-left: 20px;
+      transition: color 0.2s ease;
+    }
+    
+    .nav-links a:hover {
+      color: var(--accent-blue);
+    }
+    
+    .site-footer {
+      text-align: center;
+      padding: 30px 20px;
+      color: var(--text-muted);
+      font-size: 0.9em;
+      border-top: 1px solid var(--border-color);
+      margin-top: 50px;
+    }
+  </style>
+	<script src="./js/ahrefs-analytics.js"></script>
+</head>
+<body>
+  <!-- ?꾨찓??寃利?-->
+  <script src="../domain-check.js"></script>
+  
+  <div class="blog-container">
+    <a href="../" class="back-link">??硫붿씤?쇰줈 ?뚯븘媛湲?/a>
+    
+    <header class="blog-header">
+      <h1>李몄냼??釉붾줈洹?/h1>
+      <p>湲곗닠 ?곗씠?곗? ?ㅼ떆媛??댁뒋 留듭쓣 ?곗씠?곗? 留λ씫?쇰줈 ?쎈뒗 釉붾줈洹?/p>
+    </header>
+    
+    <main class="posts-grid" id="posts-container">
+      <!-- ?ъ뒪??紐⑸줉???ш린???숈쟻?쇰줈 濡쒕뱶?⑸땲??-->
+      <article class="post-card">
+        <div class="post-card-content">
+          <div class="post-meta">
+            <span class="post-date">2026-06-10</span>
+            <span class="post-category">濡쒕큸 湲곗닠</span>
+          </div>
+          <h2><a href="posts/2026-06-10-latest-humanoid-robots-2026.html">2026??吏湲?媛??二쇰ぉ??理쒖떊 ?대㉧?몄씠??濡쒕큸 紐⑤뜽??/a></h2>
+          <p class="post-excerpt">
+            Figure 03, 1X NEO, Unitree R1, Atlas, Digit, Walker S2, Apollo, Optimus源뚯? 理쒓렐 濡쒕큸 紐⑤뜽??怨듦컻쨌諛곗튂 ?먮쫫???뺣━?⑸땲??
+          </p>
+          <a href="posts/2026-06-10-latest-humanoid-robots-2026.html" class="read-more">???쎄린 ??/a>
+        </div>
+      </article>
+      <article class="post-card">
+        <div class="post-card-content">
+          <div class="post-meta">
+            <span class="post-date">2026-06-10</span>
+            <span class="post-category">?쒖옣 遺꾩꽍</span>
+          </div>
+          <h2><a href="posts/2026-06-10-market-flow-90-dollar-lens.html">15??90?щ윭???뚯쫰濡?蹂??꾩옱 ?쒖옣 ?먮쫫</a></h2>
+          <p class="post-excerpt">
+            AI쨌諛섎룄泥??좊┝, ?좉?? 吏?뺥븰 由ъ뒪?? 愿묎퀬 ?쒖옣 諛곕텇??15???숈븞 90?щ윭瑜?紐⑥? 李쎌옉???섏씡 愿?먯쑝濡??쎌뒿?덈떎.
+          </p>
+          <a href="posts/2026-06-10-market-flow-90-dollar-lens.html" class="read-more">???쎄린 ??/a>
+        </div>
+      </article>
+      <article class="post-card">
+        <div class="post-card-content">
+          <div class="post-meta">
+            <span class="post-date">2026-06-10</span>
+            <span class="post-category">?쒖옣 遺꾩꽍</span>
+          </div>
+          <h2><a href="posts/2026-06-10-market-lower-bound-creator-economy.html">?섑븳移섍? 留먰븯??李쎌옉??寃쎌젣???꾪뿕 援ш컙</a></h2>
+          <p class="post-excerpt">
+            醫낇빀 媛以묒튂 58, ?곹븳移?42, ?섑븳移?36??諛뷀깢?쇰줈 媛쒖씤 李쎌옉???섏씡 寃쎈줈媛 ??癒쇱? 留됲엳?붿? 遺꾩꽍?⑸땲??
+          </p>
+          <a href="posts/2026-06-10-market-lower-bound-creator-economy.html" class="read-more">???쎄린 ??/a>
+        </div>
+      </article>
+      <article class="post-card">
+        <div class="post-card-content">
+          <div class="post-meta">
+            <span class="post-date">2026-06-10</span>
+            <span class="post-category">?꾩냽 遺꾩꽍</span>
+          </div>
+          <h2><a href="posts/2026-06-10-adsense-90-dollars-15-years.html">90?щ윭瑜?紐⑥쑝????15?꾩씠 嫄몃졇?ㅻ뒗 寃?/a></h2>
+          <p class="post-excerpt">
+            援ш? ?좊뱶?쇱뒪 ?붽퀬 91.09?щ윭, ?κ린 ?꾨찓???깅줉 ?뺤씤, ?쒖옣 媛以묒튂 ?곹븳쨌?섑븳 遺꾩꽍??            ???μ쓽 ?대?吏濡??곌껐???κ린 ?댁쁺?먯쓽 ?섏씡 寃쎈줈媛 ?뺣쭚 ?대젮 ?덉뿀?붿? 臾살뒿?덈떎.
+          </p>
+          <a href="posts/2026-06-10-adsense-90-dollars-15-years.html" class="read-more">???쎄린 ??/a>
+        </div>
+      </article>
+      <article class="post-card">
+        <div class="post-card-content">
+          <div class="post-meta">
+            <span class="post-date">2026-06-10</span>
+            <span class="post-category">?ы쉶 遺꾩꽍</span>
+          </div>
+          <h2><a href="posts/2026-06-10-closed-information-network-us-capital.html">?먯뇙???뺣낫留앷낵 誘멸뎅 ?먮낯??梨낆엫 臾몄젣</a></h2>
+          <p class="post-excerpt">
+            媛쒖씤?뺣낫? ?됲뙋???먯뇙?곸쑝濡?怨듭쑀?섎뒗 鍮꾧났???뺣낫留앹쓽 臾몄젣? 15?꾧컙 援ш? ?좊뱶?쇱뒪 ?섏씡 90?щ윭???섎?.
+            誘멸뎅 ?먮낯???먯뇙??援ъ“瑜??쒕?濡??댄빐?섏? 紐삵븳 梨??ъ옄?덉쓣 媛?μ꽦怨?洹??ㅻ━??梨낆엫??遺꾩꽍?⑸땲??
+          </p>
+          <a href="posts/2026-06-10-closed-information-network-us-capital.html" class="read-more">???쎄린 ??/a>
+        </div>
+      </article>
+      <article class="post-card">
+        <div class="post-card-content">
+          <div class="post-meta">
+            <span class="post-date">2026-06-10</span>
+            <span class="post-category">怨듭?</span>
+          </div>
+          <h2><a href="posts/2026/06/welcome.html">李몄냼??com 遺꾩꽍: 湲곗닠 ?곗씠?곗? ?댁뒋 留듭쓣 ?④퍡 ?쎈뒗 諛⑸쾿</a></h2>
+          <p class="post-excerpt">
+            ?댁뒪瑜???源딆씠 ?댄빐?섍린 ?꾪빐 湲곗닠 ?몃젋?쒖? ?댁뒋 ?먮쫫???④퍡 蹂대뒗 諛⑸쾿??
+            李몄냼??com???곗씠??援ъ“? ?쒖슜 ?덉떆濡??뺣━?덉뒿?덈떎.
+          </p>
+          <a href="posts/2026/06/welcome.html" class="read-more">???쎄린 ??/a>
+        </div>
+      </article>
+    </main>
+  </div>
+  
+  <script>
+    function escapeHtml(value) {
+      return String(value || '').replace(/[&<>"']/g, (char) => ({
+        '&': '&amp;',
+        '<': '&lt;',
+        '>': '&gt;',
+        '"': '&quot;',
+        "'": '&#39;'
+      }[char]));
+    }
+
+    function renderPostCard(post) {
+      const href = escapeHtml(post.href);
+      const title = escapeHtml(post.title);
+      const excerpt = escapeHtml(post.excerpt);
+      const date = escapeHtml(post.date);
+      const category = escapeHtml(post.category || '釉붾줈洹?);
+      return `
+        <article class="post-card">
+          <div class="post-card-content">
+            <div class="post-meta">
+              <span class="post-date">${date}</span>
+              <span class="post-category">${category}</span>
+            </div>
+            <h2><a href="${href}">${title}</a></h2>
+            <p class="post-excerpt">${excerpt}</p>
+            <a href="${href}" class="read-more">???쎄린 ??/a>
+          </div>
+        </article>
+      `;
+    }
+
+    async function loadPosts() {
+      const container = document.getElementById('posts-container');
+      if (!container) return;
+
+      try {
+        const response = await fetch('posts/index.json', { cache: 'no-store' });
+        if (!response.ok) throw new Error(`posts/index.json ${response.status}`);
+        const posts = await response.json();
+        if (!Array.isArray(posts) || posts.length === 0) return;
+        container.innerHTML = posts.map(renderPostCard).join('');
+      } catch (error) {
+        console.warn('Could not load posts/index.json; keeping static fallback.', error);
+      }
+    }
+    
+    // ?섏씠吏 濡쒕뱶 ???ㅽ뻾
+    document.addEventListener('DOMContentLoaded', loadPosts);
+  </script>
+</body>
+</html>

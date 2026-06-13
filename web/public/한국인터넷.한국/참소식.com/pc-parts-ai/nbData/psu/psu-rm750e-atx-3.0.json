@@ -1,0 +1,89 @@
+{
+  "schema": "pc-part-nb-collector-file.v1",
+  "updatedAt": "2026-06-14T03:55:17.411+09:00",
+  "category": "PSU",
+  "id": "psu-rm750e-atx-3.0",
+  "name": "RM750e ATX 3.0",
+  "maker": "Corsair",
+  "platform": "ATX 3.0",
+  "estimatedPriceKrw": 169000,
+  "priceBand": "15~30만원",
+  "speedLabel": "80PLUS Gold",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "PSU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 75,
+  "valueIndex": 44.4,
+  "aiUseScore": 49,
+  "powerWatts": 750,
+  "tags": [
+    "modular",
+    "PCIe 5.0"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "PSU",
+    "partId": "psu-rm750e-atx-3.0",
+    "partName": "RM750e ATX 3.0",
+    "speed": {
+      "score": 100,
+      "weight": 0.32,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "PSU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 750,
+      "value": 592,
+      "aiFit": 490,
+      "priceEfficiency": 590,
+      "powerEfficiency": 100
+    },
+    "nbVector": [
+      100,
+      750,
+      592,
+      490,
+      590,
+      100
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 313.475,
+    "nbMin": 388.056,
+    "weightedScore": 367,
+    "nbBand": "100~499",
+    "summary": "PSU RM750e ATX 3.0 부품을 속도 중심 N/B 데이터베이스 점수 367점으로 저장했습니다."
+  },
+  "nbWeightedScore": 367,
+  "nbMax": 313.475,
+  "nbMin": 388.056,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Corsair%20RM750e%20ATX%203.0%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "Full modular power supply supporting ATX 3.0 and PCIe 5.0.",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

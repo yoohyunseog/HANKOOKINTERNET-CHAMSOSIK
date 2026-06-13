@@ -1,0 +1,90 @@
+{
+  "schema": "pc-part-nb-collector-file.v1",
+  "updatedAt": "2026-06-14T03:55:15.341+09:00",
+  "category": "Mainboard",
+  "id": "mainboard-asrock-z890i-nova-wifi",
+  "name": "ASRock Z890I Nova WiFi",
+  "maker": "ASRock",
+  "platform": "Intel LGA1851",
+  "estimatedPriceKrw": 529000,
+  "priceBand": "30~60만원",
+  "speedLabel": "DDR5",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "Mainboard",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 75,
+  "valueIndex": 14.2,
+  "aiUseScore": 49,
+  "powerWatts": 0,
+  "tags": [
+    "ITX",
+    "Z890",
+    "WiFi"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "Mainboard",
+    "partId": "mainboard-asrock-z890i-nova-wifi",
+    "partName": "ASRock Z890I Nova WiFi",
+    "speed": {
+      "score": 100,
+      "weight": 0.32,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "Mainboard",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 750,
+      "value": 189,
+      "aiFit": 490,
+      "priceEfficiency": 190,
+      "powerEfficiency": 750
+    },
+    "nbVector": [
+      100,
+      750,
+      189,
+      490,
+      190,
+      750
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 272.139,
+    "nbMin": 388.456,
+    "weightedScore": 318,
+    "nbBand": "100~499",
+    "summary": "Mainboard ASRock Z890I Nova WiFi 부품을 속도 중심 N/B 데이터베이스 점수 318점으로 저장했습니다."
+  },
+  "nbWeightedScore": 318,
+  "nbMax": 272.139,
+  "nbMin": 388.456,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=ASRock%20Z890I%20Nova%20WiFi%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "Mini-ITX form factor, PCIe 5.0 support, 12+1+1+1+1 phase power delivery.",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

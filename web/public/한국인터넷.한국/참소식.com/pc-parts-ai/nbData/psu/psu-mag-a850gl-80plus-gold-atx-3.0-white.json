@@ -1,0 +1,91 @@
+{
+  "schema": "pc-part-nb-collector-file.v1",
+  "updatedAt": "2026-06-14T03:55:17.137+09:00",
+  "category": "PSU",
+  "id": "psu-mag-a850gl-80plus-gold-atx-3.0-white",
+  "name": "MAG A850GL 80PLUS GOLD 풀모듈러 ATX 3.0 White",
+  "maker": "MSI",
+  "platform": "ATX",
+  "estimatedPriceKrw": 142000,
+  "priceBand": "15만원 미만",
+  "speedLabel": "80PLUS GOLD",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "PSU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 75,
+  "valueIndex": 52.8,
+  "aiUseScore": 49,
+  "powerWatts": 850,
+  "tags": [
+    "ATX 3.0",
+    "PCIe 5.0",
+    "Full Modular",
+    "White"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "PSU",
+    "partId": "psu-mag-a850gl-80plus-gold-atx-3.0-white",
+    "partName": "MAG A850GL 80PLUS GOLD 풀모듈러 ATX 3.0 White",
+    "speed": {
+      "score": 100,
+      "weight": 0.32,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "PSU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 750,
+      "value": 704,
+      "aiFit": 490,
+      "priceEfficiency": 700,
+      "powerEfficiency": 100
+    },
+    "nbVector": [
+      100,
+      750,
+      704,
+      490,
+      700,
+      100
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 377.093,
+    "nbMin": 383.835,
+    "weightedScore": 392,
+    "nbBand": "100~499",
+    "summary": "PSU MAG A850GL 80PLUS GOLD 풀모듈러 ATX 3.0 White 부품을 속도 중심 N/B 데이터베이스 점수 392점으로 저장했습니다."
+  },
+  "nbWeightedScore": 392,
+  "nbMax": 377.093,
+  "nbMin": 383.835,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=MSI%20MAG%20A850GL%2080PLUS%20GOLD%20%ED%92%80%EB%AA%A8%EB%93%88%EB%9F%AC%20ATX%203.0%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "White edition of the MAG A850GL series.",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

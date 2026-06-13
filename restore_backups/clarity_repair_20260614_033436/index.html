@@ -1,0 +1,2831 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <!-- 도메인 검증 (모든 페이지에서 가장 먼저 실행되어야 함) -->
+  
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "x4jlyqheuh");
+</script>
+</head>
+<body>
+  <!-- 검색엔진 크롤링용 정적 콘텐츠 (JavaScript 비활성화 시에도 표시) -->
+  <noscript>
+    <div style="padding: 20px; max-width: 1200px; margin: 0 auto; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+      <h1 style="color: #064e3b; font-size: 28px; margin-bottom: 20px;">참소식.com - AI 컴퓨터 부품·로봇 기술 분석</h1>
+      <p style="font-size: 16px; line-height: 1.6; color: #333;">AI, 조립 PC 부품, 로봇 기술 흐름을 정리하고 분석하는 기술 정보 사이트입니다.</p>
+      
+      <h2 style="color: #059669; font-size: 22px; margin: 30px 0 15px;">주요 콘텐츠</h2>
+      <ul style="list-style: none; padding: 0;">
+        <li style="padding: 10px 0; border-bottom: 1px solid #e5e7eb;">
+          <a href="/pc-parts-ai/parts.html" style="color: #1d4ed8; text-decoration: none; font-weight: 600;">🖥️ AI 부품 분석표</a>
+          <p style="margin: 5px 0 0; color: #6b7280; font-size: 14px;">최신 PC 부품 가격 비교 및 AI 추천 분석</p>
+        </li>
+        <li style="padding: 10px 0; border-bottom: 1px solid #e5e7eb;">
+          <a href="/community/" style="color: #1d4ed8; text-decoration: none; font-weight: 600;">📰 커뮤니티 뉴스</a>
+          <p style="margin: 5px 0 0; color: #6b7280; font-size: 14px;">실시간 기술 뉴스 및 커뮤니티 게시판</p>
+        </li>
+        <li style="padding: 10px 0; border-bottom: 1px solid #e5e7eb;">
+          <a href="/robot/" style="color: #1d4ed8; text-decoration: none; font-weight: 600;">🤖 로봇 뉴스</a>
+          <p style="margin: 5px 0 0; color: #6b7280; font-size: 14px;">로봇 기술 및 자동화 관련 최신 소식</p>
+        </li>
+        <li style="padding: 10px 0; border-bottom: 1px solid #e5e7eb;">
+          <a href="/ai-issue-briefing/" style="color: #1d4ed8; text-decoration: none; font-weight: 600;">📊 실시간 이슈 맵</a>
+          <p style="margin: 5px 0 0; color: #6b7280; font-size: 14px;">AI 이슈 및 기술 트렌드 시각화</p>
+        </li>
+      </ul>
+      
+      <h2 style="color: #059669; font-size: 22px; margin: 30px 0 15px;">사이트 소개</h2>
+      <p style="font-size: 15px; line-height: 1.7; color: #4b5563;">
+        참소식.com은 AI 기술, 컴퓨터 부품, 로봇 산업 동향을 분석하여 제공하는 기술 정보 플랫폼입니다.
+        최신 부품 가격 정보, AI 기반 추천 시스템, 기술 뉴스를 종합적으로 제공합니다.
+      </p>
+      
+      <h2 style="color: #059669; font-size: 22px; margin: 30px 0 15px;">주요 기능</h2>
+      <ul style="color: #4b5563; font-size: 15px; line-height: 1.8;">
+        <li>PC 부품 가격 비교 및 AI 추천</li>
+        <li>실시간 기술 뉴스 수집</li>
+        <li>로봇 산업 동향 분석</li>
+        <li>AI 이슈 트렌드 시각화</li>
+      </ul>
+    </div>
+  </noscript>
+
+  <style id="safe-design-refresh">
+    /* safe refresh v2: structure/table untouched */
+    body {
+      background:
+        radial-gradient(circle at 6% 4%, rgba(30, 64, 175, 0.15) 0%, rgba(30, 64, 175, 0) 42%),
+        radial-gradient(circle at 95% 0%, rgba(217, 70, 239, 0.13) 0%, rgba(217, 70, 239, 0) 40%),
+        linear-gradient(180deg, #f5f8ff 0%, #eff6ff 100%) !important;
+    }
+
+    .top-bar {
+      background: linear-gradient(108deg, #0f172a 0%, #1e3a8a 52%, #7c3aed 100%) !important;
+      font-size: 1.2rem !important;
+      font-weight: 900 !important;
+      letter-spacing: -0.02em;
+      padding: 16px 0 !important;
+      border-bottom: 3px solid #f59e0b;
+      box-shadow: 0 14px 30px rgba(15, 23, 42, 0.28) !important;
+      position: relative;
+      z-index: 2;
+    }
+
+    .top-bar::after {
+      content: "REFRESH";
+      display: inline-block;
+      margin-left: 10px;
+      padding: 2px 8px;
+      border-radius: 999px;
+      background: rgba(245, 158, 11, 0.95);
+      color: #111827;
+      font-size: 0.68rem;
+      font-weight: 900;
+      vertical-align: middle;
+    }
+
+    .container-fluid {
+      max-width: 1460px;
+      margin: 10px auto 0;
+      padding-left: 14px;
+      padding-right: 14px;
+    }
+
+    .ai-content-board {
+      margin: 24px 0 28px;
+      padding: 26px;
+      border-radius: 18px;
+      background: linear-gradient(135deg, #ffffff 0%, #f4f9ff 52%, #fff7ed 100%);
+      border: 1px solid rgba(37, 99, 235, 0.18);
+      box-shadow: 0 18px 42px rgba(30, 64, 175, 0.12);
+    }
+
+    .ai-content-board-header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 20px;
+      margin-bottom: 18px;
+    }
+
+    .ai-content-kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 10px;
+      padding: 7px 12px;
+      border-radius: 999px;
+      background: #eff6ff;
+      color: #1d4ed8;
+      font-size: 0.82rem;
+      font-weight: 900;
+    }
+
+    .ai-content-title {
+      margin: 0 0 8px;
+      color: #0f172a;
+      font-size: 1.75rem;
+      font-weight: 900;
+      line-height: 1.2;
+    }
+
+    .ai-content-desc {
+      max-width: 760px;
+      margin: 0;
+      color: #475569;
+      line-height: 1.75;
+    }
+
+    .ai-content-pill {
+      flex: 0 0 auto;
+      padding: 10px 14px;
+      border-radius: 12px;
+      background: #0f172a;
+      color: #ffffff;
+      font-size: 0.86rem;
+      font-weight: 800;
+      box-shadow: 0 10px 24px rgba(15, 23, 42, 0.2);
+    }
+
+    .ai-content-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .ai-content-card {
+      min-height: 150px;
+      padding: 18px;
+      border-radius: 14px;
+      background: rgba(255, 255, 255, 0.86);
+      border: 1px solid rgba(148, 163, 184, 0.24);
+      box-shadow: 0 8px 20px rgba(15, 23, 42, 0.07);
+    }
+
+    .ai-content-card.ai-content-link {
+      display: block;
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .ai-content-card.ai-content-link:active,
+    .ai-content-card.ai-content-link.clicked {
+      background: #e0f2fe;
+      border-color: #2563eb;
+    }
+
+    .ai-content-card strong {
+      display: block;
+      margin-bottom: 8px;
+      color: #172554;
+      font-size: 1.02rem;
+    }
+
+    .ai-content-card p {
+      margin: 0;
+      color: #475569;
+      line-height: 1.65;
+      font-size: 0.93rem;
+    }
+
+    .ai-rose-shell {
+      position: relative;
+      overflow: hidden;
+      margin: 18px 0 28px;
+      padding: 0;
+      border-radius: 18px;
+      border: 1px solid rgba(85, 151, 199, 0.22);
+      background:
+        radial-gradient(circle at 9% 28%, rgba(255, 100, 125, 0.16), transparent 17%),
+        radial-gradient(circle at 88% 26%, rgba(255, 214, 171, 0.42), transparent 20%),
+        linear-gradient(180deg, #aee9ff 0%, #eaf9ff 34%, #fff8ee 57%, #fbfdff 100%);
+      box-shadow: 0 22px 52px rgba(29, 86, 132, 0.14);
+    }
+
+    .ai-rose-shell::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 110px;
+      height: 230px;
+      pointer-events: none;
+      background:
+        radial-gradient(ellipse at 50% 78%, rgba(255,255,255,.96) 0 16%, transparent 17%),
+        radial-gradient(ellipse at 33% 72%, rgba(255,255,255,.8) 0 12%, transparent 13%),
+        linear-gradient(180deg, transparent 0 56%, rgba(76, 184, 222, .25) 57% 59%, rgba(255,255,255,.7) 60% 62%, transparent 63%);
+      opacity: .86;
+    }
+
+    .ai-rose-shell::after {
+      content: "🌹";
+      position: absolute;
+      right: -30px;
+      top: 136px;
+      font-size: 142px;
+      filter: drop-shadow(0 18px 22px rgba(127, 54, 66, .2));
+      transform: rotate(15deg);
+    }
+
+    .ai-rose-hero {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: minmax(420px, 1.18fr) minmax(320px, .82fr);
+      gap: 34px;
+      align-items: center;
+      min-height: 370px;
+      padding: 48px 54px 22px;
+    }
+
+    .ai-rose-title {
+      margin: 0;
+      color: #071a4c;
+      font-size: clamp(2.25rem, 4.6vw, 4.25rem);
+      line-height: 1.05;
+      font-weight: 950;
+      letter-spacing: -0.04em;
+    }
+
+    .ai-rose-desc {
+      margin: 18px 0 0;
+      max-width: 720px;
+      color: #40526d;
+      font-size: 1.08rem;
+      font-weight: 750;
+      line-height: 1.7;
+    }
+
+    .ai-rose-chips {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      max-width: 560px;
+      gap: 2px;
+      margin-top: 30px;
+      padding: 12px;
+      border-radius: 12px;
+      background: rgba(255,255,255,.78);
+      border: 1px solid rgba(255,255,255,.86);
+      box-shadow: 0 14px 36px rgba(33, 85, 132, .1);
+    }
+
+    .ai-rose-chip {
+      display: grid;
+      grid-template-columns: 38px 1fr;
+      gap: 10px;
+      align-items: center;
+      padding: 8px 10px;
+      color: #18315b;
+      font-weight: 850;
+    }
+
+    .ai-rose-chip i,
+    .ai-rose-feature i {
+      width: 38px;
+      height: 38px;
+      display: grid;
+      place-items: center;
+      border-radius: 10px;
+      color: #0876cf;
+      background: #eef8ff;
+      font-size: 1.15rem;
+    }
+
+    .ai-rose-chip small {
+      display: block;
+      margin-top: 3px;
+      color: #62728a;
+      font-size: .82rem;
+    }
+
+    .ai-rose-event {
+      position: relative;
+      min-height: 260px;
+      padding: 42px 48px;
+      overflow: hidden;
+      border-radius: 18px;
+      border: 1px solid rgba(238, 183, 160, .72);
+      background: linear-gradient(135deg, rgba(255,255,255,.94), rgba(255,247,238,.95));
+      box-shadow: 0 22px 48px rgba(111, 75, 61, .13);
+    }
+
+    .ai-rose-event::before {
+      content: "";
+      position: absolute;
+      inset: 16px;
+      border: 2px solid rgba(244, 189, 170, .48);
+      border-radius: 15px;
+      pointer-events: none;
+    }
+
+    .ai-rose-event h2 {
+      margin: 0 0 14px;
+      color: #be3d48;
+      font-size: clamp(1.45rem, 2.6vw, 2.05rem);
+      font-weight: 950;
+    }
+
+    .ai-rose-event p {
+      margin: 0 0 22px;
+      color: #b55855;
+      font-weight: 850;
+    }
+
+    .ai-rose-event dl {
+      display: grid;
+      grid-template-columns: 44px 1fr;
+      gap: 10px 18px;
+      margin: 0 0 24px;
+      color: #2f3d55;
+      font-weight: 850;
+    }
+
+    .ai-rose-event dt { color: #d8485d; }
+    .ai-rose-event dd { margin: 0; }
+
+    .ai-rose-button {
+      position: relative;
+      z-index: 1;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 46px;
+      padding: 12px 24px;
+      border-radius: 8px;
+      color: #fff;
+      background: linear-gradient(135deg, #ff6681, #e73562);
+      text-decoration: none;
+      font-weight: 950;
+      box-shadow: 0 12px 28px rgba(222, 65, 102, .22);
+    }
+
+    .ai-rose-features {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 16px;
+      padding: 0 34px 34px;
+    }
+
+    .ai-rose-feature {
+      min-height: 172px;
+      padding: 22px;
+      border-radius: 10px;
+      background: rgba(255,255,255,.9);
+      border: 1px solid rgba(74, 111, 151, .16);
+      box-shadow: 0 15px 36px rgba(40, 78, 116, .11);
+    }
+
+    a.ai-rose-feature {
+      display: block;
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .ai-rose-feature strong {
+      display: block;
+      margin: 14px 0 9px;
+      color: #122852;
+      font-size: 1rem;
+      font-weight: 950;
+    }
+
+    .ai-rose-feature p {
+      margin: 0 0 14px;
+      color: #43536c;
+      font-size: .9rem;
+      line-height: 1.65;
+      font-weight: 650;
+    }
+
+    .ai-rose-feature a {
+      color: #006ab7;
+      font-weight: 900;
+      text-decoration: none;
+    }
+
+    #hardware-news-list {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    #robot-news-list {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .hardware-search-links {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 8px;
+      margin: 8px 0 0 !important;
+    }
+
+    .hardware-search-links a {
+      min-height: 36px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      padding: 7px 8px;
+      border: 1px solid rgba(0, 106, 183, .18);
+      border-radius: 8px;
+      background: #f4f9ff;
+      font-size: .78rem;
+      white-space: nowrap;
+    }
+
+    .hardware-search-links a:hover,
+    .hardware-search-links a:focus {
+      color: #ffffff;
+      background: #006ab7;
+      outline: none;
+    }
+
+    .search-brand-icon {
+      width: 18px;
+      height: 18px;
+      display: inline-grid;
+      place-items: center;
+      flex: 0 0 auto;
+      border-radius: 5px;
+      color: #ffffff;
+      font-size: 0.7rem;
+      font-weight: 900;
+      line-height: 1;
+      letter-spacing: 0;
+    }
+
+    .search-brand-icon.google {
+      background: linear-gradient(135deg, #4285f4 0%, #34a853 38%, #fbbc05 68%, #ea4335 100%);
+    }
+
+    .search-brand-icon.naver {
+      background: #03c75a;
+    }
+
+    .search-brand-icon.bing {
+      background: #008373;
+    }
+
+    .search-brand-icon.chamsosik {
+      background: linear-gradient(135deg, #f97316 0%, #a855f7 100%);
+    }
+
+    .ai-rose-feature .hardware-search-links i {
+      width: auto;
+      height: auto;
+      display: inline;
+      border-radius: 0;
+      color: inherit;
+      background: transparent;
+      font-size: .95rem;
+    }
+
+    .youtube-shorts-section {
+      position: relative;
+      overflow: hidden;
+      width: min(1640px, calc(100vw - 24px));
+      margin: 46px auto 42px !important;
+      padding: 78px 54px 70px !important;
+      border-radius: 0 !important;
+      border: 1px solid rgba(255, 166, 184, .38) !important;
+      background:
+        radial-gradient(circle at 8% 12%, rgba(255, 143, 167, .25), transparent 16%),
+        radial-gradient(circle at 92% 12%, rgba(255, 166, 184, .28), transparent 17%),
+        linear-gradient(180deg, rgba(208, 241, 255, .94) 0%, rgba(244, 251, 255, .94) 38%, rgba(255, 248, 239, .96) 100%) !important;
+      box-shadow: 0 22px 46px rgba(47, 106, 150, .1);
+    }
+
+    .youtube-shorts-section::before,
+    .youtube-shorts-section::after {
+      content: "";
+      position: absolute;
+      z-index: 0;
+      pointer-events: none;
+      width: 190px;
+      height: 190px;
+      opacity: .32;
+      filter: blur(.8px);
+      border-radius: 48% 52% 45% 55%;
+      background:
+        radial-gradient(circle at 36% 36%, #fff 0 8%, transparent 9%),
+        radial-gradient(circle at 48% 44%, #ff9ead 0 18%, transparent 19%),
+        radial-gradient(circle at 58% 52%, #f26f87 0 24%, transparent 25%),
+        radial-gradient(circle at 42% 62%, #ffc3cf 0 22%, transparent 23%),
+        radial-gradient(ellipse at 42% 76%, rgba(34, 127, 78, .8), transparent 42%);
+    }
+
+    .youtube-shorts-section::before {
+      left: -72px;
+      top: -62px;
+      transform: rotate(-18deg);
+    }
+
+    .youtube-shorts-section::after {
+      right: -72px;
+      top: -62px;
+      transform: scaleX(-1) rotate(-18deg);
+    }
+
+    .youtube-shorts-section > .text-center,
+    #youtube-shorts-container {
+      position: relative;
+      z-index: 1;
+    }
+
+    .youtube-shorts-section h3 {
+      margin: 0;
+      color: #071a4c;
+      font-size: clamp(2.4rem, 4vw, 4.2rem);
+      line-height: 1.08;
+      font-weight: 950;
+      letter-spacing: -0.04em;
+    }
+
+    .youtube-shorts-section h3 i {
+      width: 58px;
+      height: 58px;
+      display: inline-grid;
+      place-items: center;
+      margin-right: 14px;
+      border-radius: 50%;
+      color: #fff;
+      background: linear-gradient(135deg, #ff6d87, #f53462);
+      font-size: 1.55rem;
+      vertical-align: middle;
+      box-shadow: 0 12px 24px rgba(245, 52, 98, .24);
+    }
+
+    .youtube-shorts-section .text-muted {
+      margin: 18px 0 44px;
+      color: #7a8090 !important;
+      font-size: 1.45rem;
+      font-weight: 800;
+    }
+
+    #youtube-shorts-container {
+      display: grid !important;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 24px;
+      padding: 0 !important;
+    }
+
+    .youtube-shorts-item {
+      cursor: pointer;
+      min-width: 0;
+    }
+
+    .rose-short-card {
+      min-height: 590px;
+      padding: 22px 22px 38px;
+      border-radius: 30px;
+      border: 2px solid rgba(255, 116, 141, .45);
+      background: rgba(255,255,255,.82);
+      box-shadow: 0 18px 36px rgba(121, 67, 80, .1);
+      text-align: center;
+    }
+
+    .rose-short-media {
+      position: relative;
+      overflow: hidden;
+      aspect-ratio: 1 / 1;
+      border-radius: 22px;
+      background: linear-gradient(135deg, #bfeaff, #fff0f3);
+    }
+
+    .rose-short-media img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+      filter: saturate(1.08) brightness(1.06);
+    }
+
+    .rose-short-badge {
+      position: absolute;
+      z-index: 2;
+      left: 16px;
+      top: 16px;
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 8px 15px;
+      border-radius: 999px;
+      color: #fff;
+      background: linear-gradient(135deg, #ff3048, #ff5678);
+      font-size: .98rem;
+      font-weight: 950;
+      box-shadow: 0 10px 18px rgba(255, 48, 72, .22);
+    }
+
+    .rose-short-play-large {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 86px;
+      height: 86px;
+      border-radius: 50%;
+      background: rgba(255,255,255,.88);
+      transform: translate(-50%, -50%);
+      box-shadow: 0 14px 28px rgba(13, 28, 53, .14);
+    }
+
+    .rose-short-play-large::after {
+      content: "";
+      position: absolute;
+      left: 34px;
+      top: 25px;
+      border-left: 25px solid #fff;
+      border-top: 17px solid transparent;
+      border-bottom: 17px solid transparent;
+      filter: drop-shadow(0 0 1px rgba(0,0,0,.18));
+    }
+
+    .rose-short-date {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin: 22px 0 18px;
+      color: #717989;
+      font-size: 1.12rem;
+      font-weight: 800;
+    }
+
+    .rose-short-play {
+      width: 72px;
+      height: 72px;
+      display: grid;
+      place-items: center;
+      margin: 0 auto 22px;
+      border: 1px solid rgba(255, 75, 107, .55);
+      border-radius: 50%;
+      color: #ff3158;
+      background: rgba(255,255,255,.82);
+      font-size: 2rem;
+      box-shadow: 0 12px 22px rgba(255, 75, 107, .13);
+    }
+
+    .rose-short-card strong {
+      display: block;
+      color: #13244d;
+      font-size: clamp(1.1rem, 1.4vw, 1.45rem);
+      font-weight: 950;
+      line-height: 1.45;
+    }
+
+    .rose-short-card p {
+      margin: 14px 0 0;
+      color: #767d8d;
+      font-size: 1rem;
+      font-weight: 800;
+    }
+
+    .limited-card-summary {
+      margin: 0 0 18px;
+      padding: 14px 18px;
+      border-radius: 14px;
+      background: #f8fafc;
+      border: 1px dashed #93c5fd;
+      color: #334155;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    .diagram-section {
+      border-radius: 18px !important;
+      border: 2px solid #bfdbfe !important;
+      background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%) !important;
+      box-shadow: 0 14px 30px rgba(30, 64, 175, 0.12) !important;
+    }
+
+    .diagram-container {
+      border-radius: 14px !important;
+      border: 1px solid #93c5fd !important;
+      background: linear-gradient(180deg, #f8fbff 0%, #eef6ff 100%) !important;
+    }
+
+    .data-card {
+      border-left: 7px solid #2563eb !important;
+      border-radius: 14px !important;
+      background: linear-gradient(180deg, #ffffff 0%, #f9fbff 100%) !important;
+      box-shadow: 0 8px 18px rgba(30, 64, 175, 0.14) !important;
+      transition: transform 0.18s ease, box-shadow 0.18s ease !important;
+    }
+
+    .data-card.clicked {
+      border-left-color: #0f9f9a !important;
+      background: linear-gradient(180deg, #dcfce7 0%, #ecfeff 100%) !important;
+      box-shadow: 0 16px 34px rgba(15, 159, 154, 0.22) !important;
+    }
+
+    .data-card:hover {
+      transform: translateY(-4px) scale(1.01) !important;
+      box-shadow: 0 16px 32px rgba(30, 64, 175, 0.2) !important;
+    }
+
+    .title-text {
+      color: #1e3a8a !important;
+      font-weight: 800 !important;
+      letter-spacing: -0.01em;
+    }
+
+    .badge-rank {
+      background: linear-gradient(120deg, #1e3a8a 0%, #7c3aed 100%) !important;
+      box-shadow: 0 3px 10px rgba(124, 58, 237, 0.28);
+    }
+
+    .badge-views {
+      background: linear-gradient(120deg, #f97316 0%, #ef4444 100%) !important;
+      box-shadow: 0 3px 10px rgba(239, 68, 68, 0.28);
+    }
+
+    @media (max-width: 767px) {
+      .top-bar {
+        font-size: 1.02rem !important;
+      }
+
+      .container-fluid {
+        padding-left: 8px;
+        padding-right: 8px;
+      }
+
+      .ai-content-board {
+        padding: 18px;
+        border-radius: 14px;
+      }
+
+      .ai-content-board-header {
+        display: block;
+      }
+
+      .ai-content-pill {
+        display: inline-block;
+        margin-top: 14px;
+      }
+
+      .ai-content-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .ai-rose-hero,
+      .ai-rose-features,
+      .ai-rose-chips {
+        grid-template-columns: 1fr;
+      }
+
+      #hardware-news-list,
+      #robot-news-list {
+        grid-template-columns: 1fr;
+      }
+
+      .hardware-search-links {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .ai-rose-hero {
+        min-height: auto;
+        padding: 34px 18px 18px;
+      }
+
+      .ai-rose-features {
+        padding: 0 14px 22px;
+      }
+
+      .ai-rose-event {
+        padding: 30px 22px;
+      }
+
+      .youtube-shorts-section {
+        width: calc(100% - 16px) !important;
+        margin: 24px auto 28px !important;
+        padding: 28px 10px 30px !important;
+        border-radius: 18px !important;
+      }
+
+      .youtube-shorts-section::before,
+      .youtube-shorts-section::after {
+        width: 120px;
+        height: 120px;
+        opacity: 0.28;
+      }
+
+      .youtube-shorts-section::before {
+        left: -52px;
+        top: -42px;
+      }
+
+      .youtube-shorts-section::after {
+        right: -52px;
+        top: -42px;
+      }
+
+      .youtube-shorts-section .text-center {
+        padding: 0 6px;
+      }
+
+      .youtube-shorts-section h3 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        flex-wrap: wrap;
+        font-size: 1.9rem;
+        line-height: 1.2;
+        word-break: keep-all;
+      }
+
+      .youtube-shorts-section h3 i {
+        width: 42px;
+        height: 42px;
+        margin-right: 0;
+        font-size: 1.25rem;
+      }
+
+      .youtube-shorts-section .text-muted {
+        margin: 10px 0 22px;
+        font-size: 1rem;
+      }
+
+      #youtube-shorts-container {
+        width: 100%;
+        max-width: 390px;
+        grid-template-columns: minmax(0, 1fr) !important;
+        gap: 16px;
+        margin: 0 auto;
+        padding: 0 !important;
+      }
+
+      .youtube-shorts-item {
+        width: 100%;
+        min-width: 0;
+      }
+
+      .rose-short-card {
+        width: 100%;
+        min-height: auto;
+        padding: 14px 14px 22px;
+        border-radius: 18px;
+      }
+
+      .rose-short-media {
+        border-radius: 14px;
+      }
+
+      .rose-short-badge {
+        left: 10px;
+        top: 10px;
+        max-width: calc(100% - 20px);
+        padding: 7px 9px;
+        font-size: 0.76rem;
+        white-space: normal;
+      }
+
+      .rose-short-play-large {
+        width: 62px;
+        height: 62px;
+      }
+
+      .rose-short-play-large::after {
+        left: 25px;
+        top: 18px;
+        border-left-width: 19px;
+        border-top-width: 12px;
+        border-bottom-width: 12px;
+      }
+
+      .rose-short-date {
+        display: flex;
+        margin: 14px 0 12px;
+        gap: 8px;
+        font-size: 0.84rem;
+        line-height: 1.45;
+        overflow-wrap: anywhere;
+      }
+
+      .rose-short-play {
+        width: 54px;
+        height: 54px;
+        margin-bottom: 14px;
+        font-size: 1.6rem;
+      }
+
+      .rose-short-card strong {
+        font-size: 1.02rem;
+        line-height: 1.45;
+        overflow-wrap: anywhere;
+      }
+
+      .rose-short-card p {
+        font-size: 0.9rem;
+        line-height: 1.5;
+        overflow-wrap: anywhere;
+      }
+
+      #shorts-iframe-modal .modal-dialog {
+        width: calc(100% - 16px);
+        max-width: 420px;
+        margin: 8px auto;
+      }
+
+      #shorts-iframe-modal .modal-body {
+        padding: 10px;
+      }
+
+      #shorts-iframe {
+        width: 100% !important;
+        height: min(74vh, 680px) !important;
+        aspect-ratio: 9 / 16;
+        border-radius: 10px !important;
+      }
+
+      .data-card {
+        border-radius: 10px !important;
+        padding: 14px !important;
+        overflow: hidden;
+      }
+
+      .category-filter {
+        margin: 12px 8px;
+        padding: 12px;
+        border-radius: 10px;
+      }
+
+      #category-buttons {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        overflow-x: auto;
+        padding: 4px 2px 10px;
+        scroll-snap-type: x proximity;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .category-btn {
+        flex: 0 0 auto;
+        min-height: 36px;
+        padding: 7px 12px;
+        font-size: 0.82rem;
+        scroll-snap-align: start;
+      }
+
+      .card-badge-row {
+        gap: 6px;
+      }
+
+      .card-badge-row .badge,
+      .card-badge-row .badge-rank {
+        flex: 1 1 auto;
+        min-width: fit-content;
+        font-size: 0.76rem;
+        padding: 6px 8px;
+        text-align: center;
+      }
+
+      .card-badge-row .btn {
+        flex: 1 1 72px;
+        min-width: 72px;
+        font-size: 0.78rem;
+      }
+
+      .data-card .small {
+        overflow-wrap: anywhere;
+      }
+
+      .data-card .small .ms-2,
+      .data-card .small .ms-3 {
+        display: inline-block;
+        margin-left: 0.35rem !important;
+      }
+
+      .title-text,
+      .search-links {
+        overflow-wrap: anywhere;
+      }
+    }
+
+    @media (min-width: 768px) and (max-width: 1199px) {
+      .ai-content-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .ai-rose-hero {
+        grid-template-columns: 1fr;
+      }
+
+      .ai-rose-features {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      #hardware-news-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      #robot-news-list {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      #youtube-shorts-container {
+        grid-template-columns: minmax(0, 1fr) !important;
+        max-width: 420px;
+        margin: 0 auto;
+        padding: 0 !important;
+      }
+    }
+  </style>
+
+  <div class="top-bar">
+    <i class="bi bi-database"></i> 참소식.com - N/B 데이터베이스
+  </div>
+
+  <div class="container-fluid">
+    <div class="main-google-ad" style="margin: 16px 0 24px;">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-format="fluid"
+           data-ad-layout-key="-ef+6k-30-ac+ty"
+           data-ad-client="ca-pub-4501795912654667"
+           data-ad-slot="2408767998"></ins>
+      <script>
+           (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+    <section class="ai-content-board ai-rose-shell" id="hardware-news-board" aria-labelledby="ai-content-board-title">
+      <div class="ai-rose-hero">
+        <div>
+          <h1 class="ai-rose-title" id="ai-content-board-title">컴퓨터 장터 뉴스 브리핑 <span style="color:#ffc729">✦</span></h1>
+          <p class="ai-rose-desc">해외 하드웨어 뉴스와 국내 커뮤니티 흐름을 AI가 수집, 번역, 요약해 CPU, GPU, 보안, 서버 이슈를 빠르게 정리합니다.</p>
+          <div class="ai-rose-chips" aria-label="브리핑 상태">
+            <div class="ai-rose-chip"><i class="bi bi-alarm"></i><span>최근 갱신<small id="hardwareNewsUpdated">데이터 확인 중</small></span></div>
+            <div class="ai-rose-chip"><i class="bi bi-cpu"></i><span>주요 분야<small id="hardwareNewsCount">CPU · GPU · 보안</small></span></div>
+            <div class="ai-rose-chip"><i class="bi bi-robot"></i><span>로봇 뉴스<small id="robotNewsCount">3개 표시 대기</small></span></div>
+            <div class="ai-rose-chip"><i class="bi bi-database"></i><span>데이터 소스<small id="heroDataSource">직접 수집 뉴스 DB</small></span></div>
+          </div>
+        </div>
+        <aside class="ai-rose-event" aria-label="컴퓨터 장터 뉴스 점검">
+          <h2>하드웨어 뉴스 자동 수집</h2>
+          <p>Tom's Hardware, TechPowerUp, VideoCardz, ServeTheHome, 퀘이사존 등에서 기사 링크를 직접 확인합니다.</p>
+          <dl>
+            <dt>대상</dt><dd>CPU · GPU · 서버 · 보안 · PC 부품 뉴스</dd>
+            <dt>방식</dt><dd>원문 수집 후 Ollama 기반 한국어 요약 생성</dd>
+          </dl>
+          <a class="ai-rose-button" href="./community/">커뮤니티 뉴스 보기 →</a>
+        </aside>
+      </div>
+      <section class="content-hub" aria-labelledby="content-hub-title">
+        <div class="content-hub-hero">
+          <div class="content-hub-title-wrap">
+            <i class="bi bi-star content-hub-star" aria-hidden="true"></i>
+            <div>
+              <h1 class="content-hub-title" id="content-hub-title">참소식의 다양한 콘텐츠를 한곳에서 만나보세요</h1>
+              <p class="content-hub-desc">기술·사회·지역·신앙 소식을 분석하고 정리해 전합니다.</p>
+            </div>
+          </div>
+          <div class="content-hub-actions" aria-label="지역 및 성당 소식 바로가기">
+            <a class="content-hub-gold" href="https://www.xn--9l4b4xi9r.com/jungnang-volunteer/"><i class="bi bi-geo-alt-fill"></i> 중랑구 소식</a>
+            <a class="content-hub-gold" href="https://www.xn--9l4b4xi9r.com/vatican/#latest"><i class="bi bi-building-fill"></i> 주요 성당 소식</a>
+          </div>
+        </div>
+
+        <div class="content-hub-grid">
+          <a class="content-hub-card is-purple" href="#hardware-news-board">
+            <span class="content-hub-badge">NEW</span>
+            <div class="content-hub-visual" aria-hidden="true"><i class="bi bi-graph-up-arrow"></i></div>
+            <div class="content-hub-copy">
+              <h2>오늘 참소식에서<br>먼저 봐야 할 흐름</h2>
+              <div class="content-hub-rule"></div>
+              <p>주요 콘텐츠와 최신 분석 흐름을 한눈에 확인할 수 있습니다.</p>
+            </div>
+            <span class="content-hub-cta">오늘의 흐름 보기 <i class="bi bi-chevron-right"></i></span>
+          </a>
+
+          <a class="content-hub-card is-blue" href="./pc-parts-ai/parts.html">
+            <div class="content-hub-visual" aria-hidden="true"><i class="bi bi-pc-display"></i></div>
+            <div class="content-hub-copy">
+              <h2>컴퓨터 부품 선택,<br>표로 끝내기</h2>
+              <div class="content-hub-rule"></div>
+              <p>CPU, GPU, 메모리, 저장장치 등 주요 부품 정보를 비교하고 분석합니다.</p>
+            </div>
+            <span class="content-hub-cta">부품 분석표 보기 <i class="bi bi-chevron-right"></i></span>
+          </a>
+
+          <a class="content-hub-card is-teal" href="./NBVideoAnalyzer/">
+            <div class="content-hub-visual" aria-hidden="true"><i class="bi bi-play-btn-fill"></i></div>
+            <div class="content-hub-copy">
+              <h2>영상 보기 전<br>핵심만 먼저 확인</h2>
+              <div class="content-hub-rule"></div>
+              <p>영상 콘텐츠의 키워드, 흐름, 의미를 분석해 보기 쉽게 정리합니다.</p>
+            </div>
+            <span class="content-hub-cta">영상 핵심 분석 보기 <i class="bi bi-chevron-right"></i></span>
+          </a>
+
+          <a class="content-hub-card is-amber" href="./blog/">
+            <div class="content-hub-visual" aria-hidden="true"><i class="bi bi-clipboard2-check"></i></div>
+            <div class="content-hub-copy">
+              <h2>짧은 뉴스로는<br>부족한 이야기</h2>
+              <div class="content-hub-rule"></div>
+              <p>기술, 사회, 보안, 지역 이슈를 참소식 관점으로 깊게 정리합니다.</p>
+            </div>
+            <span class="content-hub-cta">분석 글 읽기 <i class="bi bi-chevron-right"></i></span>
+          </a>
+
+          <a class="content-hub-card is-green" href="https://www.xn--9l4b4xi9r.com/jungnang-volunteer/">
+            <div class="content-hub-visual" aria-hidden="true"><i class="bi bi-map-fill"></i></div>
+            <div class="content-hub-copy">
+              <h2>중랑구에서<br>지금 벌어지는 일</h2>
+              <div class="content-hub-rule"></div>
+              <p>중랑구 지역 소식, 생활 정보, 주변 변화를 빠르게 확인합니다.</p>
+            </div>
+            <span class="content-hub-cta">중랑구 소식 보기 <i class="bi bi-chevron-right"></i></span>
+          </a>
+
+          <a class="content-hub-card is-rose" href="https://www.xn--9l4b4xi9r.com/vatican/#latest">
+            <div class="content-hub-visual" aria-hidden="true"><i class="bi bi-buildings-fill"></i></div>
+            <div class="content-hub-copy">
+              <h2>이번 주<br>성당 소식 정리</h2>
+              <div class="content-hub-rule"></div>
+              <p>주요 성당의 일정, 행사, 공지 흐름을 간단하게 확인합니다.</p>
+            </div>
+            <span class="content-hub-cta">성당 소식 확인하기 <i class="bi bi-chevron-right"></i></span>
+          </a>
+        </div>
+
+        <p class="content-hub-note"><i class="bi bi-megaphone"></i> 참소식은 정확한 정보와 깊이 있는 분석으로 여러분과 함께합니다.</p>
+      </section>
+      <div class="ai-rose-features" id="hardware-news-list" aria-live="polite">
+        <article class="ai-rose-feature">
+          <i class="bi bi-hourglass-split"></i>
+          <strong>뉴스 데이터 불러오는 중</strong>
+          <p>컴퓨터 커뮤니티 뉴스 JSON을 확인하고 있습니다.</p>
+        </article>
+      </div>
+      <div class="ai-rose-features" id="robot-news-list" aria-live="polite">
+        <article class="ai-rose-feature">
+          <i class="bi bi-hourglass-split"></i>
+          <strong>로봇 뉴스 데이터 불러오는 중</strong>
+          <p>로봇 뉴스 JSON을 확인하고 있습니다.</p>
+        </article>
+      </div>
+    </section>
+    
+    <!-- 탭 네비게이션 -->
+    <div class="category-filter">
+      <ul class="nav nav-pills justify-content-center" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="recent-tab" data-bs-toggle="pill" data-bs-target="#recent-panel" type="button" role="tab">
+            <i class="bi bi-clock-history"></i> 최근 5개
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="popular-tab" data-bs-toggle="pill" data-bs-target="#popular-panel" type="button" role="tab">
+            <i class="bi bi-fire"></i> 조회수 TOP 5
+          </button>
+        </li>
+      </ul>
+    </div>
+
+    <!-- 카테고리 필터 -->
+    <div class="category-filter">
+      <div class="text-center mb-3">
+        <strong><i class="bi bi-filter"></i> 카테고리 필터</strong>
+      </div>
+      <div class="text-center" id="category-buttons">
+        <button class="category-btn active" data-category="all">전체</button>
+        <button class="category-btn" data-category="정치">정치</button>
+        <button class="category-btn" data-category="경제">경제</button>
+        <button class="category-btn" data-category="사회">사회</button>
+        <button class="category-btn" data-category="문화">문화</button>
+        <button class="category-btn" data-category="게임">게임</button>
+        <button class="category-btn" data-category="드라마">드라마</button>
+        <button class="category-btn" data-category="영화">영화</button>
+        <button class="category-btn" data-category="애니메이션">애니메이션</button>
+        <button class="category-btn" data-category="괴물딴지">괴물딴지</button>
+        <button class="category-btn" data-category="스포츠">스포츠</button>
+        <button class="category-btn" data-category="기술">기술</button>
+        <button class="category-btn" data-category="국제">국제</button>
+        <button class="category-btn" data-category="연예">연예</button>
+        <button class="category-btn" data-category="사건사고">사건사고</button>
+        <button class="category-btn" data-category="건강">건강</button>
+        <button class="category-btn" data-category="교육">교육</button>
+        <button class="category-btn" data-category="일반">일반</button>
+        <button class="category-btn" data-category="비트코인">비트코인</button>
+        <button class="category-btn reset" onclick="window.location.href='../'">🔄 초기화</button>
+      </div>
+    </div>
+
+    <!-- 탭 컨텐츠 -->
+    <section class="world-monitor-ai-section" aria-labelledby="world-monitor-ai-title">
+      <div class="world-monitor-ai-head">
+        <div>
+          <div class="world-monitor-ai-kicker">Eclipse Centauri D.P</div>
+          <h2 class="world-monitor-ai-title" id="world-monitor-ai-title">이클립스 센츄어리 D.P</h2>
+          <p class="world-monitor-ai-desc">
+            참소식.com의 흐름을 AI가 읽고, 핵심 신호와 시장 영향을 압축해 보여주는 분석 브리핑입니다.
+          </p>
+        </div>
+        <div class="world-monitor-ai-meta">
+          <div class="world-monitor-ai-chip">
+            마지막 갱신
+            <small id="world-monitor-ai-updated">대기 중</small>
+          </div>
+          <div class="world-monitor-ai-chip">
+            모델
+            <small id="world-monitor-ai-model">deepseek-v3.1:671b-cloud</small>
+          </div>
+        </div>
+      </div>
+      <div id="world-monitor-ai-content">
+        <div class="world-monitor-ai-panel">
+          <p class="world-monitor-ai-empty">이클립스 센츄어리 D.P 분석을 불러오는 중입니다.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="tab-content">
+      <div class="tab-pane fade show active" id="recent-panel" role="tabpanel">
+        <div class="text-center mb-3">
+          <span class="badge bg-primary">날짜순 정렬</span>
+          <span class="badge bg-info ms-2" id="recent-count">로딩 중...</span>
+        </div>
+        <div class="masonry-grid" id="recent-data">
+          <div class="loading-spinner">
+            <div class="spinner-border text-success" role="status"></div>
+            <p class="mt-2">데이터 로딩 중...</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-pane fade" id="popular-panel" role="tabpanel">
+        <div class="text-center mb-3">
+          <span class="badge bg-danger">조회수순 정렬</span>
+          <span class="badge bg-info ms-2" id="popular-count">로딩 중...</span>
+        </div>
+        <div class="masonry-grid" id="popular-data">
+          <div class="loading-spinner">
+            <div class="spinner-border text-success" role="status"></div>
+            <p class="mt-2">데이터 로딩 중...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./world-monitor-ai.js?v=rose-20260515g"></script>
+  <!-- 다이어그램(.mmd) 로드 -->
+  <script>
+    function escapeDiagramHtml(text) {
+      const div = document.createElement('div');
+      div.textContent = text || '';
+      return div.innerHTML;
+    }
+
+    // 내부 parseMermaidToRelations 함수 제거 (외부 robust 파서만 사용)
+
+    // robust Mermaid 파서 결과를 masonry에 edgeLabel/edgeImportance까지 모두 반영
+    function renderDiagramMasonry(relations, descArray) {
+      const container = document.getElementById('diagram-masonry');
+      const countBadge = document.getElementById('diagram-count');
+      if (!container) return;
+
+      const buildSearchUrl = (engine, query) => {
+        const encoded = encodeURIComponent(query || '');
+        if (engine === 'naver') return `https://search.naver.com/search.naver?query=${encoded}`;
+        if (engine === 'google') return `https://www.google.com/search?q=${encoded}`;
+        if (engine === 'bing') return `https://www.bing.com/search?q=${encoded}`;
+        if (engine === 'chamsosik') return `https://xn--9l4b4xi9r.com/ai/post.html?q=${encoded}`;
+        return `https://search.naver.com/search.naver?query=${encoded}`;
+      };
+
+      const buildCombinedQuery = (fromLabel, toLabel) => {
+        const first = (fromLabel || '').trim();
+        const second = (toLabel || '').trim();
+        if (!first && !second) return '';
+        if (!first) return second;
+        if (!second) return first;
+        if (first === second) return first;
+        return `${first} ${second}`;
+      };
+
+      if (!relations.length) {
+        container.innerHTML = `<div class="text-center py-4 text-muted">표시할 다이어그램 데이터가 없습니다.</div>`;
+        if (countBadge) countBadge.textContent = '0개';
+        return;
+      }
+
+      const importanceClass = (importance) => {
+        if (importance === '중요') return 'importance-high';
+        if (importance === '낮음') return 'importance-low';
+        return 'importance-normal';
+      };
+
+      // --- 그룹화 로직 시작 ---
+      // 금융 상품명 패턴 정의 (예: KOSPI, NASDAQ, DOWJONES, Bitcoin 등)
+      const instrumentRegex = /^(KOSPI|KOSDAQ|S&P500|NASDAQ|DOWJONES|Bitcoin|Ethereum|USD\/KRW|Gold)/i;
+      // 그룹: { instrument: { fromLabel, edges: [ {toLabel, edgeLabel, edgeImportance, ...} ] } }
+      const groups = {};
+      relations.forEach(rel => {
+        const m = (rel.fromLabel || '').match(instrumentRegex);
+        if (m) {
+          const instrument = m[1];
+          if (!groups[instrument]) {
+            groups[instrument] = {
+              fromLabel: rel.fromLabel,
+              fromDesc: rel.fromDesc,
+              fromImportance: rel.fromImportance,
+              edges: []
+            };
+          }
+          groups[instrument].edges.push({
+            toLabel: rel.toLabel,
+            toDesc: rel.toDesc,
+            toImportance: rel.toImportance,
+            edgeLabel: rel.edgeLabel,
+            edgeImportance: rel.edgeImportance
+          });
+        }
+      });
+      // 그룹이 하나라도 있으면 그룹화된 카드, 없으면 기존 방식
+      let items = [];
+      if (Object.keys(groups).length > 0) {
+        let groupIdx = 0;
+        for (const [instrument, group] of Object.entries(groups)) {
+          // 그룹 전체 검색어: fromLabel + 모든 toLabel + edgeLabel
+          const searchTerms = [group.fromLabel]
+            .concat(group.edges.map(e => e.toLabel))
+            .concat(group.edges.map(e => e.edgeLabel || ''))
+            .filter(Boolean)
+            .join(' ');
+            
+          // 카드 내에 모든 edges를 리스트로 표시 (border와 화살표 추가)
+          const edgeList = group.edges.map((edge, i, arr) => `
+            <li style="position:relative;padding:12px 0 12px 0;${i < arr.length - 1 ? 'border-bottom:2px dashed #bbb;' : ''}">
+              <span class="badge ${edge.edgeImportance === '중요' ? 'bg-danger' : edge.edgeImportance === '낮음' ? 'bg-secondary' : 'bg-warning'}">${edge.edgeImportance || ''}</span>
+              <span class="fw-bold">${escapeDiagramHtml(group.fromLabel)}</span>
+              <i class="bi bi-arrow-right" style="margin:0 6px;color:#888;font-size:1.1em;"></i>
+              <span>${escapeDiagramHtml(edge.toLabel)}</span>
+              ${edge.edgeLabel ? `<span class="text-muted ms-2">${escapeDiagramHtml(edge.edgeLabel)}</span>` : ''}
+              ${i < arr.length - 1 ? `<span style="position:absolute;left:50%;bottom:-10px;transform:translateX(-50%);color:#bbb;font-size:1.2em;pointer-events:none;"><i class='bi bi-arrow-down'></i></span>` : ''}
+            </li>
+          `).join('');
+
+            function normalize(str) {
+              return (str || '').replace(/[\s\/]/g, '').toLowerCase();
+            }
+
+            const groupLabelNormalized = normalize(group.fromLabel);
+
+            // desc 매칭
+            let descInfo = null;
+
+            if (Array.isArray(descArray)) {
+              descInfo = descArray.find(d => {
+                const indicatorNormalized = normalize(d.indicator);
+
+                return (
+                  groupLabelNormalized === indicatorNormalized ||
+                  groupLabelNormalized.includes(indicatorNormalized) ||
+                  indicatorNormalized.includes(groupLabelNormalized)
+                );
+              }) || null;
+            }
+
+
+            // text 노드 추출
+            const textNodes = (group.edges || []).filter(e => {
+              if (!e) return false;
+
+              if (e.type === 'text') return true;
+
+              if (typeof e.toLabel === 'string' && e.toLabel.startsWith('[text]')) {
+                return true;
+              }
+
+              return false;
+            });
+
+          // 텍스트 노드가 있으면 표시
+          const textHtml = textNodes.length > 0
+            ? `<div class="diagram-text-nodes mb-2" style="border:1.5px dashed #aaa;border-radius:8px;padding:7px 10px 7px 10px;background:#f8fafc;">
+                <i class="bi bi-chat-left-text text-info"></i>
+                <span class="small text-secondary">${textNodes.map(tn => escapeDiagramHtml((tn.toLabel||'').replace(/^\[text\]/, '').trim())).join('<br>')}</span>
+              </div>`
+            : '';
+
+          function getLabelKey(label) {
+            // label: 'KOSPI_설명' → 'KOSPI', group.fromLabel: 'KOSPI: 123' → 'KOSPI'
+            return (label || '').replace('_설명', '').split(':')[0].trim().toLowerCase();
+          }
+
+          const groupLabelKey = getLabelKey(group.fromLabel);
+          const matchedDescs = Array.isArray(descArray) ? descArray.filter(d => {
+            const labelKey = getLabelKey(d.label);
+            return labelKey === groupLabelKey;
+          }) : [];
+          // 매칭된 desc의 설명도 배열로 추출 (500자 이하로 제한)
+          let matchedDescsDesc = matchedDescs.map(d => d && d.desc ? d.desc : null).join(' ');
+          if (matchedDescsDesc.length > 500) {
+            matchedDescsDesc = matchedDescsDesc.slice(0, 500) + '...';
+          }
+          console.log('[desc 매칭]', {
+            groupFromLabel: group.fromLabel,
+            groupLabelKey,
+            matchedDescs,
+            matchedDescsDesc
+          });
+          // 점선 구분선 추가 (desc, text, edgeList 사이)
+          items.push(`
+                <div class="masonry-item">
+                  <div class="diagram-relation-card" data-search-query="${encodeURIComponent(searchTerms)}" style="border:3px solid #1976d2;border-radius:16px;box-shadow:0 2px 8px #1976d21a;">
+                    <div class="diagram-node source" style="border-color:${group.fromImportance === '중요' ? '#dc2626' : group.fromImportance === '낮음' ? '#64748b' : group.fromImportance === '보통' ? '#f59e42' : '#059669'}">
+                      <div class="diagram-label">${escapeDiagramHtml(group.fromLabel)}</div>
+                    </div>
+                    <hr style="border-top:1.5px dashed #b6b6b6;margin:6px 0 8px 0;"> <!-- 점선 구분선 -->
+                    ${textHtml}
+                    <hr style="border-top:1.5px dashed #b6b6b6;margin:6px 0 8px 0;"> <!-- 점선 구분선 -->
+                    <ul class="list-unstyled mt-2 mb-2" style="margin-bottom:0;">
+                      ${edgeList}
+                      <div class="diagram-desc small mb-1"
+                        style="min-height:18px; color: ${
+                          group.fromImportance === '중요' ? '#b91c1c' :
+                          group.fromImportance === '낮음' ? '#334155' :
+                          group.fromImportance === '보통' ? '#ea580c' :
+                          '#065f46'
+                        }; font-weight:bold;">
+                        ${escapeDiagramHtml(matchedDescsDesc)}
+                      </div>
+                    </ul>
+                    <div class="diagram-search-links">
+                      <a class="diagram-search-link" href="${buildSearchUrl('naver', searchTerms)}" target="_blank" rel="noopener" title="네이버 검색"><span class="search-brand-icon naver" aria-hidden="true">N</span><span>Naver</span></a>
+                      <a class="diagram-search-link" href="${buildSearchUrl('google', searchTerms)}" target="_blank" rel="noopener" title="구글 검색"><span class="search-brand-icon google" aria-hidden="true">G</span><span>Google</span></a>
+                      <a class="diagram-search-link" href="${buildSearchUrl('bing', searchTerms)}" target="_blank" rel="noopener" title="빙 검색"><span class="search-brand-icon bing" aria-hidden="true">B</span><span>Bing</span></a>
+                      <a class="diagram-search-link" href="${buildSearchUrl('chamsosik', searchTerms)}" target="_blank" rel="noopener" title="참소식 AI 검색"><span class="search-brand-icon chamsosik" aria-hidden="true">AI</span><span>참소식</span></a>
+                    </div>
+                  </div>
+                </div>
+              `);
+          groupIdx++;
+        }
+      } else {
+        // 기존 방식 (그룹화 불가)
+        items = relations.map((relation, index) => `
+          <div class="masonry-item">
+            <div class="diagram-relation-card" data-search-query="${encodeURIComponent(buildCombinedQuery(relation.fromLabel, relation.toLabel))}">
+              <div class="diagram-node source" style="border-color:$
+                relation.edgeImportance === '중요' ? '#dc2626' :
+                relation.edgeImportance === '낮음' ? '#64748b' :
+                relation.edgeImportance === '보통' ? '#f59e42' : '#059669'
+              }">
+                <div class="diagram-label">${escapeDiagramHtml(relation.fromLabel)}</div>
+              </div>
+              ${relation.edgeLabel ? `<div class="small text-muted mt-2">${escapeDiagramHtml(relation.edgeLabel)}</div>` : ''}
+              <div class="diagram-search-links">
+                <a class="diagram-search-link" href="${buildSearchUrl('naver', buildCombinedQuery(relation.fromLabel, relation.toLabel))}" target="_blank" rel="noopener" title="네이버 검색"><span class="search-brand-icon naver" aria-hidden="true">N</span><span>Naver</span></a>
+                <a class="diagram-search-link" href="${buildSearchUrl('google', buildCombinedQuery(relation.fromLabel, relation.toLabel))}" target="_blank" rel="noopener" title="구글 검색"><span class="search-brand-icon google" aria-hidden="true">G</span><span>Google</span></a>
+                <a class="diagram-search-link" href="${buildSearchUrl('bing', buildCombinedQuery(relation.fromLabel, relation.toLabel))}" target="_blank" rel="noopener" title="빙 검색"><span class="search-brand-icon bing" aria-hidden="true">B</span><span>Bing</span></a>
+                <a class="diagram-search-link" href="${buildSearchUrl('chamsosik', buildCombinedQuery(relation.fromLabel, relation.toLabel))}" target="_blank" rel="noopener" title="참소식 AI 검색"><span class="search-brand-icon chamsosik" aria-hidden="true">AI</span><span>참소식</span></a>
+              </div>
+            </div>
+          </div>
+        `);
+      }
+
+      container.innerHTML = items.join('');
+
+      container.addEventListener('click', (event) => {
+        const searchIconLink = event.target.closest('.diagram-search-link');
+        if (searchIconLink) return;
+
+        const card = event.target.closest('.diagram-relation-card');
+        if (!card) return;
+
+        const encodedQuery = card.dataset.searchQuery || '';
+        if (!encodedQuery) return;
+
+        let query = decodeURIComponent(encodedQuery);
+        // 설명 텍스트도 쿼리에 추가
+        const descDiv = card.querySelector('.diagram-desc');
+        if (descDiv) {
+          const descText = descDiv.textContent.trim();
+          if (descText && !query.includes(descText)) {
+            query += ' ' + descText;
+          }
+        }
+
+        const chamsosikUrl = `https://xn--9l4b4xi9r.com/ai/post.html?q=${encodeURIComponent(query)}`;
+        window.open(chamsosikUrl, '_blank', 'noopener');
+      });
+
+      if (countBadge) countBadge.textContent = `${relations.length}개`;
+    }
+
+    let lastMmdContent = '';
+
+    function extractMmdLabels(mermaidCode) {
+      const labels = [];
+      const seen = new Set();
+      const regex = /\[(.*?)\]/g;
+      let match;
+
+      while ((match = regex.exec(mermaidCode)) !== null) {
+        const label = (match[1] || '').replace(/&amp;/g, '&').replace(/\s+/g, ' ').trim();
+        if (!label) continue;
+        const key = label.toLowerCase();
+        if (seen.has(key)) continue;
+        seen.add(key);
+        labels.push(label);
+      }
+
+      return labels;
+    }
+
+    function applySeoMetaFromMmd(mermaidCode) {
+      const labels = extractMmdLabels(mermaidCode);
+      if (!labels.length) return;
+
+      const titleText = labels.length >= 2
+        ? `참소식.com | ${labels[0]} → ${labels[1]}`
+        : `참소식.com | ${labels[0]}`;
+
+      const summary = labels.slice(0, 4).join(' · ');
+      let descriptionText = `참소식.com 실시간 이슈 맵: ${summary} 흐름을 한눈에 확인하고, 지정학 리스크·글로벌 경제 영향을 빠르게 파악하세요.`;
+      // 250자 이하로 자르기 (og:description 용)
+      if (descriptionText.length > 250) {
+        descriptionText = descriptionText.slice(0, 250) + '...';
+      }
+      const imageAltText = labels.length >= 2
+        ? `참소식.com 이슈 맵: ${labels[0]} → ${labels[1]}`
+        : `참소식.com 이슈 맵: ${labels[0]}`;
+
+      const baseKeywords = ['참소식', '실시간 이슈', '뉴스 트렌드', '이슈 맵', '지정학 리스크', '글로벌 경제'];
+      const keywordsText = [...new Set([...baseKeywords, ...labels.slice(0, 10)])].join(', ');
+
+      document.title = titleText;
+
+      const descriptionMeta = document.querySelector('meta[name="description"]');
+      if (descriptionMeta) descriptionMeta.setAttribute('content', descriptionText);
+
+      const keywordsMeta = document.querySelector('meta[name="keywords"]');
+      if (keywordsMeta) keywordsMeta.setAttribute('content', keywordsText);
+
+      const ogTitleMeta = document.querySelector('meta[property="og:title"]');
+      if (ogTitleMeta) ogTitleMeta.setAttribute('content', titleText);
+
+      const ogDescriptionMeta = document.querySelector('meta[property="og:description"]');
+      if (ogDescriptionMeta) ogDescriptionMeta.setAttribute('content', descriptionText);
+
+      const twitterTitleMeta = document.querySelector('meta[name="twitter:title"]');
+      if (twitterTitleMeta) twitterTitleMeta.setAttribute('content', titleText);
+
+      const twitterDescriptionMeta = document.querySelector('meta[name="twitter:description"]');
+      if (twitterDescriptionMeta) twitterDescriptionMeta.setAttribute('content', descriptionText);
+
+      const ogImageAltMeta = document.querySelector('meta[property="og:image:alt"]');
+      if (ogImageAltMeta) ogImageAltMeta.setAttribute('content', imageAltText);
+
+      const ogUrlMeta = document.querySelector('meta[property="og:url"]');
+      if (ogUrlMeta) ogUrlMeta.setAttribute('content', window.location.origin + window.location.pathname);
+
+      const canonicalLink = document.querySelector('link[rel="canonical"]');
+      if (canonicalLink) canonicalLink.setAttribute('href', window.location.origin + window.location.pathname);
+    }
+
+
+    // website_from_diagram.json 우선, 없으면 mmd fallback
+    async function loadDiagramMasonry() {
+      console.log('[loadDiagramMasonry] called');
+      try {
+        // robust Mermaid 파서 준비
+        if (!window.parseMermaidToRelations || !window.parseDescriptionNodesGroupedByIndicator) {
+          console.log('[loadDiagramMasonry] Mermaid 파서 함수 not found, dynamic import...');
+          try {
+            const parser = await import('./parseMermaidMmd.js?v=1.0');
+            console.log('[loadDiagramMasonry] parser keys:', Object.keys(parser));
+            window.parseMermaidToRelations = parser.parseMermaidToRelations;
+            window.parseDescriptionNodesGroupedByIndicator = parser.parseDescriptionNodesGroupedByIndicator;
+            if (!window.exports) window.exports = {};
+            window.exports.parseMermaidToRelations = parser.parseMermaidToRelations;
+            window.exports.parseDescriptionNodesGroupedByIndicator = parser.parseDescriptionNodesGroupedByIndicator;
+            console.log('[loadDiagramMasonry] parseMermaidMmd.js loaded and function assigned', {
+              parseMermaidToRelations: typeof window.parseMermaidToRelations,
+              parseDescriptionNodesGroupedByIndicator: typeof window.parseDescriptionNodesGroupedByIndicator,
+              parserParseMermaidToRelations: typeof parser.parseMermaidToRelations,
+              parserParseDescriptionNodesGroupedByIndicator: typeof parser.parseDescriptionNodesGroupedByIndicator
+            });
+          } catch (e) {
+            console.error('[loadDiagramMasonry] dynamic import failed', e);
+            return;
+          }
+        }
+        console.log('[loadDiagramMasonry] fetching website_diagram.mmd...');
+        const resp = await fetch('website_diagram.mmd?v=' + Date.now(), { cache: 'no-store' });
+        if (!resp.ok) { console.error('[loadDiagramMasonry] fetch failed', resp.status); return; }
+        const mmdText = await resp.text();
+        console.log('[loadDiagramMasonry] mmdText loaded', mmdText.slice(0, 100));
+        const relations = window.parseMermaidToRelations(mmdText);
+        const descArray = window.parseDescriptionNodesGroupedByIndicator(mmdText);
+        renderDiagramMasonry(relations, descArray);
+        applySeoMetaFromMmd(mmdText);
+      } catch (e) {
+        console.error('[loadDiagramMasonry] error', e);
+      }
+    }
+  
+
+    document.addEventListener('DOMContentLoaded', () => {
+      loadDiagramMasonry(true);
+      window.__diagramMasonryIntervalId = setInterval(() => loadDiagramMasonry(false), 10000);
+    });
+  </script>
+  
+  <script>
+    const API_BASE = window.location.origin;
+    const VISIBLE_CARD_LIMIT = 5;
+    const HERO_ANALYSIS_MODEL = 'Eclipse v2.6';
+    const HERO_DATA_SOURCE = 'N/B 통합 DB';
+    let recentDataCache = [];
+    let popularDataCache = [];
+    let currentCategory = 'all';
+    let sortingTimers = []; // 진행 중인 애니메이션 타이머들
+    let newPostsIntervalId = null;
+    let selectedCardId = null;
+    let heroStatusState = {
+      dataCount: 0,
+      latestTimestamp: null,
+      sourceState: 'ready'
+    };
+
+    function formatHeroStatusTime(value = new Date()) {
+      const date = value instanceof Date ? value : new Date(value);
+      if (Number.isNaN(date.getTime())) {
+        return new Date().toLocaleTimeString('ko-KR', {
+          hour: '2-digit',
+          minute: '2-digit',
+          hour12: false
+        });
+      }
+
+      return date.toLocaleTimeString('ko-KR', {
+        hour: '2-digit',
+        minute: '2-digit',
+        hour12: false
+      });
+    }
+
+    function updateHeroStatus(nextState = {}) {
+      heroStatusState = {
+        ...heroStatusState,
+        ...nextState
+      };
+
+      const updateTimeEl = document.getElementById('heroUpdateTime');
+      const modelEl = document.getElementById('heroAnalysisModel');
+      const sourceEl = document.getElementById('heroDataSource');
+      const nowText = `${formatHeroStatusTime()} 기준`;
+
+      if (updateTimeEl) {
+        updateTimeEl.textContent = nowText;
+      }
+
+      if (modelEl) {
+        modelEl.textContent = `${HERO_ANALYSIS_MODEL} · ${formatHeroStatusTime()}`;
+      }
+
+      if (sourceEl) {
+        const countText = heroStatusState.dataCount > 0 ? `${heroStatusState.dataCount}개` : '연결 확인';
+        const latestText = heroStatusState.latestTimestamp
+          ? ` · ${formatHeroStatusTime(heroStatusState.latestTimestamp)} 수신`
+          : '';
+        sourceEl.textContent = `${HERO_DATA_SOURCE} · ${countText}${latestText}`;
+      }
+    }
+
+    function clearSortInterruptingIntervals() {
+      window.__sortModeActive = true;
+
+      if (newPostsIntervalId) {
+        clearInterval(newPostsIntervalId);
+        newPostsIntervalId = null;
+      }
+
+      if (window.__diagramMasonryIntervalId) {
+        clearInterval(window.__diagramMasonryIntervalId);
+        window.__diagramMasonryIntervalId = null;
+      }
+
+      if (window.__youtubeShortsIntervalId) {
+        clearInterval(window.__youtubeShortsIntervalId);
+        window.__youtubeShortsIntervalId = null;
+      }
+    }
+
+    async function fetchJsonWithRetry(url, options = {}) {
+      const retries = options.retries ?? 2;
+      const retryDelayMs = options.retryDelayMs ?? 700;
+      const retryStatuses = options.retryStatuses ?? [502, 503, 504];
+
+      let lastError = null;
+
+      for (let attempt = 0; attempt <= retries; attempt++) {
+        try {
+          const response = await fetch(url);
+
+          if (response.ok) {
+            return await response.json();
+          }
+
+          const shouldRetry = retryStatuses.includes(response.status) && attempt < retries;
+          if (shouldRetry) {
+            await new Promise(resolve => setTimeout(resolve, retryDelayMs * (attempt + 1)));
+            continue;
+          }
+
+          throw new Error(`API 응답 실패: ${response.status} ${response.statusText}`);
+        } catch (error) {
+          lastError = error;
+          if (attempt < retries) {
+            await new Promise(resolve => setTimeout(resolve, retryDelayMs * (attempt + 1)));
+            continue;
+          }
+        }
+      }
+
+      throw lastError || new Error('API 요청 실패');
+    }
+
+    async function fetchRecentWithFallback(preferredLimit = 100) {
+      const limits = [preferredLimit, 50, 20, 10].filter((value, index, array) => array.indexOf(value) === index);
+      let lastError = null;
+
+      for (const limit of limits) {
+        try {
+          const payload = await fetchJsonWithRetry(`${API_BASE}/api/recent?limit=${limit}`, {
+            retries: 3,
+            retryDelayMs: 1000
+          });
+
+          if (payload && Array.isArray(payload.results)) {
+            updateHeroStatus({
+              dataCount: payload.count || payload.results.length,
+              latestTimestamp: payload.results[0]?.timestamp || null,
+              sourceState: 'connected'
+            });
+            return payload;
+          }
+        } catch (error) {
+          lastError = error;
+          console.warn(`[fetchRecentWithFallback] limit=${limit} 실패:`, error.message);
+        }
+      }
+
+      throw lastError || new Error('최근 데이터 조회 실패');
+    }
+
+    // 카테고리별 개수 계산 및 버튼 업데이트
+    function updateCategoryCount(data) {
+      const categoryCounts = {};
+      
+      // 각 카테고리별 개수 계산
+      data.forEach(item => {
+        const category = item.category || '일반';
+        categoryCounts[category] = (categoryCounts[category] || 0) + 1;
+      });
+      
+      // 모든 카테고리 버튼 업데이트
+      document.querySelectorAll('.category-btn').forEach(btn => {
+        const category = btn.dataset.category;
+        
+        // reset 버튼은 skip
+        if (!category || btn.classList.contains('reset')) {
+          return;
+        }
+        
+        let displayText = '';
+        
+        if (category === 'all') {
+          displayText = `전체 (${data.length})`;
+        } else {
+          const count = categoryCounts[category] || 0;
+          displayText = `${category} (${count})`;
+        }
+        
+        btn.textContent = displayText;
+      });
+    }
+
+    function escapeHtml(text) {
+      const div = document.createElement('div');
+      div.textContent = text;
+      return div.innerHTML;
+    }
+
+    // 동적 메타 태그 업데이트
+    function updateMetaTags(item) {
+      if (!item) return;
+      
+      const title = cleanInputText(item.input);
+      const category = item.category || '일반';
+      const description = `${category} | 조회수 ${item.view_count || 0}회 | MAX: ${item.results?.[0]?.nb_max || 0}, MIN: ${item.results?.[0]?.nb_min || 0}`;
+      // 메타 블록은 .mmd 실시간 동기화가 소스 오브 트루스이므로
+      // 여기서는 로그만 남기고 직접 덮어쓰지 않음
+      console.log('[메타 태그] 아이템 선택(메타는 .mmd 기준 유지):', { title, category, description });
+    }
+
+    // 카테고리 버튼 클릭 이벤트 설정
+    function setupCategoryButtonListeners() {
+      document.getElementById('category-buttons').addEventListener('click', function(e) {
+        if (e.target.classList.contains('category-btn')) {
+          // 모든 버튼의 active 제거
+          document.querySelectorAll('.category-btn').forEach(btn => btn.classList.remove('active'));
+          // 클릭한 버튼 active 추가
+          e.target.classList.add('active');
+          
+          // 현재 카테고리 업데이트
+          currentCategory = e.target.dataset.category;
+          
+          // 현재 활성 탭에 따라 데이터 재렌더링
+          const activeTab = document.querySelector('.nav-link.active').id;
+          if (activeTab === 'recent-tab') {
+            renderFilteredData('recent-data', recentDataCache, false);
+          } else if (activeTab === 'popular-tab') {
+            renderFilteredData('popular-data', popularDataCache, true);
+          }
+        }
+      });
+    }
+
+    function escapeHtml(text) {
+      const div = document.createElement('div');
+      div.textContent = text;
+      return div.innerHTML;
+    }
+
+    function cleanInputText(text) {
+      if (!text) return '';
+      return text.replace(/\*/g, '');
+    }
+
+    function buildNaverSearchUrl(text) {
+      const query = encodeURIComponent(text || '');
+      return `https://search.naver.com/search.naver?query=${query}`;
+    }
+
+    function buildSearchLinks(text) {
+      if (!text) return '';
+      const query = encodeURIComponent(text);
+      return `
+        <a class="card-search-link" href="https://search.naver.com/search.naver?query=${query}" target="_blank" rel="noopener" title="Naver 검색" aria-label="Naver 검색">
+          <span class="search-brand-icon naver" aria-hidden="true">N</span>
+        </a>
+        <a class="card-search-link" href="https://www.google.com/search?q=${query}" target="_blank" rel="noopener" title="Google 검색" aria-label="Google 검색">
+          <span class="search-brand-icon google" aria-hidden="true">G</span>
+        </a>
+        <a class="card-search-link" href="https://www.bing.com/search?q=${query}" target="_blank" rel="noopener" title="Bing 검색" aria-label="Bing 검색">
+          <span class="search-brand-icon bing" aria-hidden="true">B</span>
+        </a>
+        <a class="card-search-link" href="https://xn--9l4b4xi9r.com/ai/post.html?q=${query}" target="_blank" rel="noopener" title="참소식 AI 검색" aria-label="참소식 AI 검색">
+          <span class="search-brand-icon chamsosik" aria-hidden="true">AI</span>
+        </a>
+      `;
+    }
+
+    function renderSortButton(itemIndex, nbMax, nbMin) {
+      return `<button type="button" class="btn btn-sm btn-outline-warning ms-2" onclick="event.preventDefault(); event.stopPropagation(); sortBySimilarity(${itemIndex}, ${nbMax}, ${nbMin})">재정렬</button>`;
+    }
+
+    function renderResortButton(itemIndex, nbMax, nbMin) {
+      return `<button type="button" class="btn btn-sm btn-outline-warning ms-2" onclick="event.preventDefault(); event.stopPropagation(); sortBySimilarity(${itemIndex}, ${nbMax}, ${nbMin})">Sort</button>`;
+    }
+
+    function renderDataCard(item, index, showRank = false, originalIndex = index) {
+      const category = item.category || '일반';
+      const nbMax = item.results?.[0]?.nb_max || 0;
+      const nbMin = item.results?.[0]?.nb_min || 0;
+      const itemId = item.id || item.calculation_id || `item-${originalIndex}`;
+      const clickedClass = selectedCardId === String(itemId) ? ' clicked' : '';
+      
+      return `
+        <div class="masonry-item" data-category="${category}" style="animation-delay: ${index * 0.05}s">
+          <div class="data-card${clickedClass}" data-item-index="${originalIndex}" data-card-id="${escapeHtml(String(itemId))}">
+            <div class="mb-2 card-badge-row">
+              ${showRank && index < 3 ? `<span class="badge-rank">🏆 ${index + 1}위</span>` : `<span class="badge bg-secondary">#${index + 1}</span>`}
+              <span class="badge bg-info">${item.type === 'text' ? '텍스트' : '숫자'}</span>
+              <span class="badge bg-secondary">${category}</span>
+              ${renderResortButton(originalIndex, nbMax, nbMin)}
+            </div>
+            <div class="mb-2">
+              ${item.type === 'text'
+                ? `<a href="https://search.naver.com/search.naver?query=${encodeURIComponent(cleanInputText(item.input))}" target="_blank" rel="noopener" class="title-text" data-item-id="${item.id || item.calculation_id}" onclick="incrementViewCount(this.getAttribute('data-item-id'))">${escapeHtml(cleanInputText(item.input))}</a>`
+                : `<span class="fw-bold">${escapeHtml(`[${item.input.join(', ')}]`)}</span>`
+              }
+            </div>
+            ${item.type === 'text' ? `<div class="mb-2 search-links">${buildSearchLinks(cleanInputText(item.input))}</div>` : ''}
+            <div class="small text-muted">
+              <i class="bi bi-calendar3"></i> ${new Date(item.timestamp).toLocaleString('ko-KR')}
+              <span class="ms-3">조회수 ${item.view_count || 0}회</span>
+            </div>
+            <div class="small mt-2">
+              <i class="bi bi-arrow-up-circle text-success"></i> MAX: ${nbMax}
+              <span class="ms-2"><i class="bi bi-arrow-down-circle text-danger"></i> MIN: ${nbMin}</span>
+            </div>
+          </div>
+        </div>
+      `;
+    }
+
+    function updateSortedCardState(cardElement, item, index) {
+      if (!cardElement) return;
+
+      const isSimilar = index > 0 && index <= 10;
+      cardElement.classList.toggle('similar-sorted', isSimilar);
+
+      const badgeRow = cardElement.querySelector('.card-badge-row');
+      if (badgeRow) {
+        let rankBadge = badgeRow.querySelector('.sort-rank-badge');
+        if (!rankBadge) {
+          rankBadge = document.createElement('span');
+          rankBadge.className = 'badge bg-dark sort-rank-badge';
+          badgeRow.insertBefore(rankBadge, badgeRow.firstChild);
+        }
+        rankBadge.textContent = `Sort #${index + 1}`;
+
+        let similarBadge = badgeRow.querySelector('.sort-similar-badge');
+        if (index === 0 || isSimilar) {
+          if (!similarBadge) {
+            similarBadge = document.createElement('span');
+            similarBadge.className = 'badge bg-warning text-dark sort-similar-badge';
+            badgeRow.appendChild(similarBadge);
+          }
+          similarBadge.textContent = index === 0 ? 'Selected' : `Similar ${index}`;
+        } else if (similarBadge) {
+          similarBadge.remove();
+        }
+      }
+
+      let sortMeta = cardElement.querySelector('.sort-meta');
+      if (!sortMeta) {
+        sortMeta = document.createElement('div');
+        sortMeta.className = 'small mt-2 text-warning sort-meta';
+        cardElement.appendChild(sortMeta);
+      }
+      sortMeta.innerHTML = `<i class="bi bi-arrow-down-up"></i> Sort rank #${index + 1} | Score ${(item.totalSimilarity * 100).toFixed(1)}%`;
+    }
+
+    function setupCardSelectionListeners() {
+      document.addEventListener('click', function(event) {
+        const linkCard = event.target.closest('.ai-content-link');
+        if (linkCard) {
+          linkCard.classList.add('clicked');
+        }
+
+        const dataCard = event.target.closest('.data-card');
+        if (!dataCard) return;
+
+        selectedCardId = dataCard.dataset.cardId || null;
+        document.querySelectorAll('.data-card.clicked').forEach(card => {
+          card.classList.remove('clicked');
+        });
+        dataCard.classList.add('clicked');
+      });
+    }
+
+    function filterDataByCategory(data, category) {
+      if (category === 'all') return data;
+      return data.filter(item => (item.category || '일반') === category);
+    }
+
+    function renderFilteredData(containerId, data, showRank = false) {
+      const filtered = filterDataByCategory(data, currentCategory);
+      const container = document.getElementById(containerId);
+      
+      if (filtered.length === 0) {
+        container.innerHTML = '<div class="text-center py-5"><p class="text-muted">해당 카테고리의 데이터가 없습니다.</p></div>';
+        return;
+      }
+
+      const visibleItems = filtered.slice(0, VISIBLE_CARD_LIMIT);
+      const hiddenCount = Math.max(filtered.length - visibleItems.length, 0);
+      const summaryHtml = hiddenCount > 0
+        ? `<div class="limited-card-summary"><i class="bi bi-eye-slash"></i> 총 ${filtered.length}개 중 ${visibleItems.length}개만 표시하고, 나머지 ${hiddenCount}개는 숨김 처리했습니다.</div>`
+        : `<div class="limited-card-summary"><i class="bi bi-check2-circle"></i> 총 ${filtered.length}개 카드가 표시 중입니다.</div>`;
+      
+      // 애니메이션을 위해 기존 내용 제거 후 재삽입
+      container.style.opacity = '0';
+      setTimeout(() => {
+        const items = visibleItems.map((item, index) => renderDataCard(item, index, showRank, data.indexOf(item)));
+        // 광고 삽입 제거됨
+        container.innerHTML = summaryHtml + items.join('');
+        container.style.opacity = '1';
+      }, 100);
+    }
+
+    // 실시간 업데이트: 새 게시물 체크 (5초마다 실행)
+    async function checkForNewPosts() {
+      // 캐시가 없으면 실행하지 않음
+      if (recentDataCache.length === 0) return;
+      
+      try {
+        const response = await fetch(`${API_BASE}/api/recent?limit=1&_=${Date.now()}`, {
+          cache: 'no-store'
+        });
+        if (!response.ok) {
+          console.warn(`[checkForNewPosts] API 응답 실패: ${response.status} ${response.statusText}`);
+          return;
+        }
+        const data = await response.json();
+        if (!data.results || data.results.length === 0) return;
+        
+        const newItem = data.results[0];
+        updateHeroStatus({
+          dataCount: recentDataCache.length,
+          latestTimestamp: newItem.timestamp || new Date(),
+          sourceState: 'live'
+        });
+        
+        // 이미 존재하는지 체크 (id 기준)
+        if (recentDataCache.some(item => item.id === newItem.id)) {
+          return; // 중복이면 조용히 종료
+        }
+        
+        // 최신 게시물 추가
+        recentDataCache.unshift(newItem);
+        
+        // 최대 100개 유지
+        if (recentDataCache.length > 100) recentDataCache.pop();
+        
+        // 날짜순 재정렬
+        recentDataCache.sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp));
+        
+        // Masonry 테이블에 반영
+        renderFilteredData('recent-data', recentDataCache, false);
+        updateCategoryCount(recentDataCache);
+        
+        // 추가된 첫 번째 masonry-item에 애니메이션 효과 적용
+        setTimeout(() => {
+          const container = document.getElementById('recent-data');
+          const firstItem = container.querySelector('.masonry-item');
+          if (firstItem) {
+            firstItem.classList.add('new-item');
+            setTimeout(() => {
+              firstItem.classList.remove('new-item');
+            }, 1200);
+          }
+        }, 100);
+        
+        console.log('[checkForNewPosts] 새 게시물 추가:', newItem.id);
+      } catch (error) {
+        console.error('[checkForNewPosts] 오류:', error);
+      }
+    }
+
+    async function loadRecentData() {
+      try {
+        // URL 파라미터 확인
+        const urlParams = new URLSearchParams(window.location.search);
+        const searchKeyword = urlParams.get('search');
+        const selectedMax = urlParams.get('selected_max');
+        const selectedMin = urlParams.get('selected_min');
+        
+        if (searchKeyword && selectedMax !== null && selectedMin !== null) {
+          // 제목 클릭 모드 - 최근 데이터만 로드 (불필요한 search API 호출 제거)
+          const recentData = await fetchRecentWithFallback(100);
+          
+          document.getElementById('recent-count').textContent = `🎯 "${searchKeyword}" 기준 유사 항목 ${recentData.count}개`;
+          
+          recentDataCache = recentData.results;
+          
+          // 선택된 항목의 카테고리 찾기
+          const clickedItem = recentDataCache.find(item => 
+            cleanInputText(item.input) === searchKeyword
+          );
+          const targetCategory = clickedItem?.category || '일반';
+          const targetMax = parseFloat(selectedMax);
+          const targetMin = parseFloat(selectedMin);
+          
+          // 메타 태그 업데이트
+          if (clickedItem) {
+            updateMetaTags(clickedItem);
+          }
+          
+          // 유사도 기반 정렬 수행
+          sortBySimilarityWithData('recent-data', recentDataCache, targetCategory, targetMax, targetMin, false);
+          updateCategoryCount(recentDataCache);
+        } else {
+          // 일반 모드 - limit 100
+          const data = await fetchRecentWithFallback(100);
+          document.getElementById('recent-count').textContent = `${data.count}개`;
+          
+          recentDataCache = data.results;
+          renderFilteredData('recent-data', recentDataCache, false);
+          updateCategoryCount(recentDataCache);
+        }
+      } catch (error) {
+        console.error('[loadRecentData] 오류:', error);
+        
+        // 기존 캐시가 있으면 계속 표시
+        if (recentDataCache.length > 0) {
+          console.warn('[loadRecentData] API 실패하지만 기존 데이터 유지');
+          renderFilteredData('recent-data', recentDataCache, false);
+          
+          // 상단에 경고 메시지 추가
+          const alertDiv = document.createElement('div');
+          alertDiv.className = 'alert alert-warning alert-dismissible fade show mx-3 mt-2';
+          alertDiv.innerHTML = `
+            <i class="bi bi-exclamation-circle"></i> 
+            <strong>서버 오류:</strong> 최신 데이터를 불러올 수 없습니다. (기존 데이터 표시 중)
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+          `;
+          document.getElementById('recent-data').parentElement.insertBefore(alertDiv, document.getElementById('recent-data'));
+          
+          // 5초 후 자동으로 메시지 제거
+          setTimeout(() => {
+            alertDiv.remove();
+          }, 5000);
+        } else {
+          // 캐시가 없으면 에러 메시지만 표시
+          document.getElementById('recent-data').innerHTML = `<div class="alert alert-danger"><i class="bi bi-exclamation-triangle"></i> 데이터를 불러올 수 없습니다.<br><small>오류: ${error.message}</small></div>`;
+        }
+      }
+    }
+
+    async function loadPopularData() {
+      try {
+        const response = await fetch(`${API_BASE}/api/most-viewed?limit=100`);
+        if (!response.ok) {
+          throw new Error(`API 응답 실패: ${response.status} ${response.statusText}`);
+        }
+        const data = await response.json();
+        updateHeroStatus({
+          dataCount: data.count || data.results?.length || heroStatusState.dataCount,
+          latestTimestamp: data.results?.[0]?.timestamp || heroStatusState.latestTimestamp,
+          sourceState: 'popular'
+        });
+        popularDataCache = data.results;
+        document.getElementById('popular-count').textContent = `${data.count}개`;
+        renderFilteredData('popular-data', popularDataCache, true);
+        updateCategoryCount(popularDataCache);
+      } catch (error) {
+        console.error('[loadPopularData] 오류:', error);
+        
+        // 기존 캐시가 있으면 계속 표시
+        if (popularDataCache.length > 0) {
+          console.warn('[loadPopularData] API 실패하지만 기존 데이터 유지');
+          renderFilteredData('popular-data', popularDataCache, true);
+          
+          // 상단에 경고 메시지 추가
+          const alertDiv = document.createElement('div');
+          alertDiv.className = 'alert alert-warning alert-dismissible fade show mx-3 mt-2';
+          alertDiv.innerHTML = `
+            <i class="bi bi-exclamation-circle"></i> 
+            <strong>서버 오류:</strong> 최신 데이터를 불러올 수 없습니다. (기존 데이터 표시 중)
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+          `;
+          document.getElementById('popular-data').parentElement.insertBefore(alertDiv, document.getElementById('popular-data'));
+          
+          // 5초 후 자동으로 메시지 제거
+          setTimeout(() => {
+            alertDiv.remove();
+          }, 5000);
+        } else {
+          // 캐시가 없으면 에러 메시지만 표시
+          document.getElementById('popular-data').innerHTML = `<div class="alert alert-danger"><i class="bi bi-exclamation-triangle"></i> 데이터를 불러올 수 없습니다.<br><small>오류: ${error.message}</small></div>`;
+        }
+      }
+    }
+
+    // 탭 전환 이벤트
+    document.getElementById('popular-tab').addEventListener('shown.bs.tab', function () {
+      if (popularDataCache.length === 0) {
+        loadPopularData();
+      } else {
+        renderFilteredData('popular-data', popularDataCache, true);
+      }
+    });
+
+    document.getElementById('recent-tab').addEventListener('shown.bs.tab', function () {
+      renderFilteredData('recent-data', recentDataCache, false);
+    });
+
+    // 키워드 클릭 추적
+    function trackKeywordClick(keyword) {
+      if (keyword) {
+        fetch(`${API_BASE}/api/track-keyword?keyword=${encodeURIComponent(keyword)}`)
+          .catch(err => console.log('Keyword tracking:', err));
+      }
+    }
+
+    // 조회수 증가 (제목 클릭 시)
+    function incrementViewCount(itemId) {
+      if (!itemId) {
+        console.warn('조회수 증가: ID 없음');
+        return;
+      }
+
+      // 사용자가 곧바로 페이지 이동해도 요청이 취소되지 않도록 keepalive 사용
+      incrementViewCountOnScreen(itemId);
+
+      fetch(`${API_BASE}/api/search?id=${encodeURIComponent(itemId)}&_=${Date.now()}`, {
+        method: 'GET',
+        cache: 'no-store',
+        keepalive: true
+      })
+        .then(res => res.json())
+        .then(data => {
+          if (data.success && data.results && data.results.length > 0) {
+            const newViewCount = data.results[0].view_count;
+            updateViewCountOnScreen(itemId, newViewCount);
+          }
+        })
+        .catch(err => console.error('조회수 증가 실패:', err));
+    }
+
+    // 서버 응답 전에도 화면 조회수는 즉시 1 증가
+    function incrementViewCountOnScreen(itemId) {
+      const titleElements = document.querySelectorAll(`[data-item-id="${itemId}"]`);
+
+      titleElements.forEach(titleElement => {
+        const card = titleElement.closest('.data-card');
+        if (!card) return;
+
+        const viewCountSpan = card.querySelector('.text-muted .ms-3');
+        if (!viewCountSpan) return;
+
+        const match = viewCountSpan.textContent.match(/조회수\s*(\d+)회/);
+        const current = match ? parseInt(match[1], 10) : 0;
+        const next = current + 1;
+
+        viewCountSpan.textContent = `조회수 ${next}회`;
+        viewCountSpan.style.animation = 'highlightText 0.5s ease';
+        setTimeout(() => {
+          viewCountSpan.style.animation = '';
+        }, 500);
+      });
+    }
+
+    // 화면의 조회수 표시 업데이트
+    function updateViewCountOnScreen(itemId, newViewCount) {
+      // 모든 카드에서 해당 ID를 가진 요소 찾기
+      const titleElements = document.querySelectorAll(`[data-item-id="${itemId}"]`);
+      
+      titleElements.forEach(titleElement => {
+        // 제목 요소의 부모 카드에서 조회수 span 찾기
+        const card = titleElement.closest('.data-card');
+        if (card) {
+          const viewCountSpan = card.querySelector('.text-muted .ms-3');
+          if (viewCountSpan) {
+            viewCountSpan.textContent = `조회수 ${newViewCount}회`;
+            // 조회수가 업데이트되었음을 시각적으로 표시
+            viewCountSpan.style.animation = 'highlightText 0.5s ease';
+            setTimeout(() => {
+              viewCountSpan.style.animation = '';
+            }, 500);
+          }
+        }
+      });
+      
+      // 캐시에도 업데이트
+      updateViewCountInCache(itemId, newViewCount);
+    }
+
+    // 캐시 데이터의 조회수 업데이트
+    function updateViewCountInCache(itemId, newViewCount) {
+      // recentDataCache 업데이트
+      recentDataCache.forEach(item => {
+        if ((item.id || item.calculation_id) === itemId) {
+          item.view_count = newViewCount;
+        }
+      });
+      
+      // popularDataCache 업데이트
+      popularDataCache.forEach(item => {
+        if ((item.id || item.calculation_id) === itemId) {
+          item.view_count = newViewCount;
+        }
+      });
+    }
+
+    // 검색 모드로 전환 (페이지 새로고침)
+    function searchByKeyword(keyword, index, nbMax, nbMin) {
+      // URL에 검색 파라미터와 선택된 항목 정보 추가하여 페이지 이동
+      const params = new URLSearchParams();
+      params.set('search', keyword);
+      params.set('selected_max', nbMax);
+      params.set('selected_min', nbMin);
+      
+      // 페이지 새로고침하면서 검색 모드로 전환
+      window.location.href = `${window.location.pathname}?${params.toString()}`;
+    }
+
+    // MAX/MIN 값 기준 유사도 정렬 (카테고리 50% + MAX 25% + MIN 25%)
+    function sortBySimilarity(clickedIndex, targetMax, targetMin) {
+      clearSortInterruptingIntervals();
+
+      // 현재 활성 탭 확인
+      const activeTab = document.querySelector('.nav-link.active').id;
+      let currentData = activeTab === 'recent-tab' ? recentDataCache : popularDataCache;
+      const containerId = activeTab === 'recent-tab' ? 'recent-data' : 'popular-data';
+      const showRank = activeTab === 'popular-tab';
+      
+      // 클릭된 항목의 카테고리 찾기
+      const clickedItem = currentData[clickedIndex];
+      const targetCategory = clickedItem?.category || '일반';
+      
+      sortBySimilarityWithData(containerId, currentData, targetCategory, targetMax, targetMin, showRank);
+    }
+
+    // 유사도 정렬 실제 수행 함수
+    function sortBySimilarityWithData(containerId, currentData, targetCategory, targetMax, targetMin, showRank) {
+      // 진행 중인 모든 애니메이션 타이머 취소
+      sortingTimers.forEach(timer => clearTimeout(timer));
+      sortingTimers = [];
+      
+      // 카테고리 필터 적용
+      let filtered = filterDataByCategory(currentData, currentCategory);
+      
+      // 카테고리 개수 업데이트
+      updateCategoryCount(currentData);
+      
+      // MAX/MIN 범위 계산 (정규화용)
+      const maxValues = filtered.map(f => f.results?.[0]?.nb_max || 0);
+      const minValues = filtered.map(f => f.results?.[0]?.nb_min || 0);
+      const maxRange = Math.max(...maxValues) - Math.min(...maxValues) || 1;
+      const minRange = Math.max(...minValues) - Math.min(...minValues) || 1;
+      
+      // 유사도 계산 및 정렬 (카테고리 50% + MAX 25% + MIN 25%)
+      const sortedData = filtered.map((item) => {
+        const itemMax = item.results?.[0]?.nb_max || 0;
+        const itemMin = item.results?.[0]?.nb_min || 0;
+        const itemCategory = item.category || '일반';
+        
+        // 1. 카테고리 유사도 (0~1, 0이 더 유사)
+        const categoryDistance = itemCategory === targetCategory ? 0 : 1;
+        
+        // 2. MAX 값 유사도 (0~1, 0이 더 유사)
+        const maxDistance = Math.abs(itemMax - targetMax) / maxRange;
+        
+        // 3. MIN 값 유사도 (0~1, 0이 더 유사)
+        const minDistance = Math.abs(itemMin - targetMin) / minRange;
+        
+        // 4. 최종 유사도 점수 = 카테고리(50%) + MAX(25%) + MIN(25%)
+        const totalSimilarity = (categoryDistance * 0.5) + (maxDistance * 0.25) + (minDistance * 0.25);
+        
+        return { 
+          ...item, 
+          originalIndex: currentData.indexOf(item), 
+          categoryDistance,
+          maxDistance,
+          minDistance,
+          totalSimilarity
+        };
+      }).sort((a, b) => a.totalSimilarity - b.totalSimilarity); // 점수가 낮을수록 유사
+
+      const container = document.getElementById(containerId);
+      const summaryHtml = `<div class="limited-card-summary"><i class="bi bi-arrow-down-up"></i> 유사도 정렬 결과 ${sortedData.length}개 전체를 정렬해서 표시합니다.</div>`;
+
+      container.classList.add('sorting');
+      container.style.opacity = '0';
+
+      const renderTimer = setTimeout(() => {
+        container.innerHTML = summaryHtml;
+        container.style.opacity = '1';
+
+        sortedData.forEach((item, index) => {
+          const itemTimer = setTimeout(() => {
+            const tempDiv = document.createElement('div');
+            tempDiv.innerHTML = renderDataCard(item, index, showRank, item.originalIndex);
+            const masonryItem = tempDiv.firstElementChild;
+            if (!masonryItem) return;
+
+            const cardElement = masonryItem.querySelector('.data-card');
+            updateSortedCardState(cardElement, item, index);
+            masonryItem.classList.add('new-item');
+            container.appendChild(masonryItem);
+
+            const itemCleanupTimer = setTimeout(() => {
+              masonryItem.classList.remove('new-item');
+              if (index === sortedData.length - 1) {
+                container.classList.remove('sorting');
+              }
+            }, 500);
+            sortingTimers.push(itemCleanupTimer);
+          }, index * 90);
+          sortingTimers.push(itemTimer);
+        });
+      }, 100);
+      sortingTimers.push(renderTimer);
+
+      return;
+
+      // 애니메이션 후 컨테이너 비우기
+      setTimeout(() => {
+        container.classList.remove('sorting');
+        
+        // 스크롤을 최상단으로
+      }, 300);
+      
+      // 카드를 하나씩 순차적으로 추가 (300ms 딜레이 후 시작)
+      sortedData.forEach((item, index) => {
+        const timer = setTimeout(() => {
+          const category = item.category || '일반';
+          const nbMax = item.results?.[0]?.nb_max || 0;
+          const nbMin = item.results?.[0]?.nb_min || 0;
+          const isSimilar = index > 0 && index <= 10; // 상위 10개를 유사 항목으로 표시
+          // 유사도 점수 표시
+          const categoryMatch = category === targetCategory ? '✓' : '✗';
+          const cardHtml = `
+            <div class="masonry-item new-item" data-category="${category}" style="animation-delay: ${(index * 50)}ms">
+              <div class="data-card ${isSimilar ? 'similar-sorted' : ''}" data-item-index="${item.originalIndex}">
+                <div class="mb-2 card-badge-row">
+                  ${index === 0 ? `<span class="badge bg-warning">🎯 선택됨</span>` : ''}
+                  ${isSimilar ? `<span class="badge bg-warning">📊 유사 ${index}</span>` : `<span class="badge bg-secondary">#${index + 1}</span>`}
+                  <span class="badge bg-info">${item.type === 'text' ? '텍스트' : '숫자'}</span>
+                  <span class="badge bg-secondary">${category}</span>
+                  ${renderResortButton(item.originalIndex, nbMax, nbMin)}
+                </div>
+                <div class="mb-2">
+                  ${item.type === 'text'
+                    ? `<a href="?search=${encodeURIComponent(cleanInputText(item.input))}&selected_max=${nbMax}&selected_min=${nbMin}" class="title-text" data-item-id="${item.id || item.calculation_id}" onclick="incrementViewCount(this.getAttribute('data-item-id'))">${escapeHtml(cleanInputText(item.input))}</a>`
+                    : `<span class="fw-bold">${escapeHtml(`[${item.input.join(', ')}]`)}</span>`
+                  }
+                </div>
+                ${item.type === 'text' ? `<div class="mb-2 search-links">${buildSearchLinks(cleanInputText(item.input))}</div>` : ''}
+                <div class="small text-muted">
+                  <i class="bi bi-calendar3"></i> ${new Date(item.timestamp).toLocaleString('ko-KR')}
+                  <span class="ms-3">조회수 ${item.view_count || 0}회</span>
+                </div>
+                <div class="small mt-2">
+                  <i class="bi bi-arrow-up-circle text-success"></i> MAX: ${nbMax}
+                  <span class="ms-2"><i class="bi bi-arrow-down-circle text-danger"></i> MIN: ${nbMin}</span>
+                </div>
+                ${index <= 10 ? `<div class="small mt-2 text-warning">
+                  <i class="bi bi-percent"></i> 유사도: ${(item.totalSimilarity * 100).toFixed(1)}%
+                  <br><small>카테고리: ${categoryMatch} (50%) | MAX: ${(item.maxDistance * 100).toFixed(1)}% (25%) | MIN: ${(item.minDistance * 100).toFixed(1)}% (25%)</small>
+                </div>` : ''}
+              </div>
+            </div>
+          `;
+          // 임시 div에 HTML 삽입 후 첫 번째 자식 요소를 실제 컨테이너에 추가
+          const tempDiv = document.createElement('div');
+          tempDiv.innerHTML = cardHtml;
+          const newCard = tempDiv.firstElementChild;
+          container.appendChild(newCard);
+          // 애니메이션 완료 후 new-item 클래스 제거
+          setTimeout(() => {
+            newCard.classList.remove('new-item');
+          }, 600 + (index * 50)); // 애니메이션 시간 + 딜레이
+        }, 300 + (index * 100)); // 300ms 딜레이 + 각 카드마다 100ms 간격
+        sortingTimers.push(timer);
+      });
+    }
+
+    updateHeroStatus();
+    loadRecentData();
+
+    // 초기 로드
+    document.addEventListener('DOMContentLoaded', function() {
+      setupCategoryButtonListeners();
+      setupCardSelectionListeners();
+      updateHeroStatus();
+      setInterval(updateHeroStatus, 30000);
+      newPostsIntervalId = setInterval(checkForNewPosts, 5000); // 5초마다 새 게시물 체크
+    });
+
+    // 브라우저 뒤로/앞으로 가기 지원
+    window.addEventListener('popstate', function(event) {
+      loadRecentData();
+    });
+  </script>
+
+  <footer class="site-footer">
+    © 2026 참소식.com. All rights reserved.
+    <div class="footer-certification">
+      본 도메인은 ICANN 규정에 따라 인증된 계정으로 관리됩니다.
+    </div>
+    <div class="footer-certification">
+      <a href="https://drive.google.com/file/d/1gM0n8VceHOF-P1uW6V0oK-TN4uhs9yfm/view" target="_blank" rel="noopener">successfully completed the curriculum for</a>
+      <br>
+      This is a non-accredited course
+      <br>
+      offered by ICANN
+    </div>
+  </footer>
+
+  <!-- YouTube Shorts Modal -->
+  <div class="modal fade" id="shorts-iframe-modal" tabindex="-1" aria-labelledby="shorts-iframe-modal-label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="shorts-iframe-modal-label">YouTube Shorts</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <iframe id="shorts-iframe" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </body>
+  <script>
+
+  function escapeHardwareNewsText(value) {
+    return String(value || '').replace(/[&<>"']/g, (char) => ({
+      '&': '&amp;',
+      '<': '&lt;',
+      '>': '&gt;',
+      '"': '&quot;',
+      "'": '&#39;'
+    }[char]));
+  }
+
+  function compactHardwareNewsText(value, maxLength = 110) {
+    const text = String(value || '').replace(/\s+/g, ' ').trim();
+    if (text.length <= maxLength) return text;
+    return `${text.slice(0, maxLength).trim()}...`;
+  }
+
+  function renderNewsCards(items = [], options = {}) {
+    const {
+      limit = 2,
+      type = 'hardware',
+      emptyTitle = '수집된 뉴스가 없습니다',
+      emptyBody = '뉴스 봇이 실행되면 이 영역에 최신 뉴스가 표시됩니다.',
+      moreLabel = '뉴스 더보기',
+      moreUrl = './community/',
+      iconClass = 'bi-cpu',
+      fallbackTitle = '컴퓨터 뉴스',
+      fallbackCategory = 'Hardware'
+    } = options;
+    const visibleItems = items.slice(0, limit);
+
+    if (!visibleItems.length) {
+      return `
+        <article class="ai-rose-feature">
+          <i class="bi bi-exclamation-circle"></i>
+          <strong>${escapeHardwareNewsText(emptyTitle)}</strong>
+          <p>${escapeHardwareNewsText(emptyBody)}</p>
+          <a href="${escapeHardwareNewsText(moreUrl)}">${escapeHardwareNewsText(moreLabel)} →</a>
+        </article>
+      `;
+    }
+
+    return visibleItems.map((item, index) => {
+      const rawTitle = item.translated_title || item.original_title || fallbackTitle;
+      const title = escapeHardwareNewsText(rawTitle);
+      const summary = escapeHardwareNewsText(compactHardwareNewsText(item.summary || item.full_post || '요약을 준비 중입니다.', 105));
+      const postUrl = escapeHardwareNewsText(`${moreUrl}?post=${index}`);
+      const category = escapeHardwareNewsText(item.category || fallbackCategory);
+      const importance = escapeHardwareNewsText(item.importance || 'Medium');
+      const commentMood = escapeHardwareNewsText(item.comment_mood || '반응 확인 전');
+      const commentSummary = escapeHardwareNewsText(compactHardwareNewsText(item.comment_summary || '반응 흐름 분석을 준비 중입니다.', 90));
+      const reactionKeywords = Array.isArray(item.product_tags) && item.product_tags.length
+        ? item.product_tags.slice(0, 4).map(escapeHardwareNewsText).join(' · ')
+        : (Array.isArray(item.reaction_keywords)
+          ? item.reaction_keywords.slice(0, 4).map(escapeHardwareNewsText).join(' · ')
+          : '');
+      const collectedAt = escapeHardwareNewsText(item.collected_at || '');
+      const searchQuery = encodeURIComponent(rawTitle);
+      return `
+        <article class="ai-rose-feature" data-news-type="${escapeHardwareNewsText(type)}">
+          <i class="bi ${escapeHardwareNewsText(iconClass)}"></i>
+          <strong>${title}</strong>
+          <p>${summary}</p>
+          <p><small><i class="bi bi-chat-dots"></i> 반응 흐름: ${commentMood} · ${commentSummary}</small></p>
+          ${reactionKeywords ? `<p><small>반응 키워드: ${reactionKeywords}</small></p>` : ''}
+          <p><small>${category} · ${importance}${collectedAt ? ` · ${collectedAt}` : ''}</small></p>
+          <a href="${postUrl}">포스팅 보기 →</a>
+          <a href="${escapeHardwareNewsText(moreUrl)}">${escapeHardwareNewsText(moreLabel)} →</a>
+          <p class="hardware-search-links" aria-label="관련 검색 링크">
+            <a href="https://www.google.com/search?q=${searchQuery}" target="_blank" rel="noopener noreferrer" title="Google 검색"><span class="search-brand-icon google" aria-hidden="true">G</span><span>Google</span></a>
+            <a href="https://search.naver.com/search.naver?query=${searchQuery}" target="_blank" rel="noopener noreferrer" title="Naver 검색"><span class="search-brand-icon naver" aria-hidden="true">N</span><span>Naver</span></a>
+            <a href="https://www.bing.com/search?q=${searchQuery}" target="_blank" rel="noopener noreferrer" title="Bing 검색"><span class="search-brand-icon bing" aria-hidden="true">B</span><span>Bing</span></a>
+          </p>
+        </article>
+      `;
+    }).join('');
+  }
+
+  function renderHardwareNewsItems(items = []) {
+    const container = document.getElementById('hardware-news-list');
+    if (!container) return;
+
+    container.innerHTML = renderNewsCards(items, {
+      limit: 2,
+      type: 'hardware',
+      emptyTitle: '수집된 컴퓨터 뉴스가 없습니다',
+      emptyBody: '뉴스 봇이 실행되면 이 영역에 컴퓨터 커뮤니티 뉴스가 표시됩니다.',
+      moreLabel: '커뮤니티 뉴스 더보기',
+      moreUrl: './community/',
+      iconClass: 'bi-cpu',
+      fallbackTitle: '컴퓨터 뉴스',
+      fallbackCategory: 'Hardware'
+    });
+  }
+
+  function renderRobotNewsItems(items = []) {
+    const container = document.getElementById('robot-news-list');
+    if (!container) return;
+
+    container.innerHTML = renderNewsCards(items, {
+      limit: 3,
+      type: 'robot',
+      emptyTitle: '수집된 로봇 뉴스가 없습니다',
+      emptyBody: '로봇 뉴스 봇이 실행되면 이 영역에 로봇 뉴스 3개가 표시됩니다.',
+      moreLabel: '로봇 뉴스 더보기',
+      moreUrl: './robot/',
+      iconClass: 'bi-robot',
+      fallbackTitle: '로봇 뉴스',
+      fallbackCategory: 'Robotics'
+    });
+  }
+
+  async function loadHardwareCommunityNews() {
+    try {
+      const [communityResult, robotResult] = await Promise.allSettled([
+        fetch('./community/news_data.json', { cache: 'no-store' }),
+        fetch('./robot/news_data.json', { cache: 'no-store' })
+      ]);
+
+      if (communityResult.status !== 'fulfilled' || !communityResult.value.ok) {
+        throw new Error(communityResult.status === 'fulfilled' ? `HTTP ${communityResult.value.status}` : communityResult.reason);
+      }
+
+      const data = await communityResult.value.json();
+      let robotData = { news: [] };
+      if (robotResult.status === 'fulfilled' && robotResult.value.ok) {
+        robotData = await robotResult.value.json();
+      }
+
+      const updatedEl = document.getElementById('hardwareNewsUpdated');
+      const countEl = document.getElementById('hardwareNewsCount');
+      const robotCountEl = document.getElementById('robotNewsCount');
+      if (updatedEl) updatedEl.textContent = data.last_updated || '갱신 기록 없음';
+      if (countEl) countEl.textContent = `${data.total_count || 0}개 기사`;
+      if (robotCountEl) {
+        const robotItems = Array.isArray(robotData.news) ? robotData.news : [];
+        robotCountEl.textContent = `${Math.min(robotItems.length, 3)}개 표시`;
+      }
+      renderHardwareNewsItems(Array.isArray(data.news) ? data.news : []);
+      renderRobotNewsItems(Array.isArray(robotData.news) ? robotData.news : []);
+    } catch (error) {
+      console.warn('컴퓨터 커뮤니티 뉴스 데이터 불러오기 실패', error);
+      renderHardwareNewsItems([]);
+      renderRobotNewsItems([]);
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', loadHardwareCommunityNews);
+
+  // YouTube Shorts 로드 함수 (XML 피드에서)
+  async function loadYoutubeShorts() {
+    const container = document.getElementById('youtube-shorts-container');
+    if (!container) return;
+
+    try {
+      const response = await fetch('./shorts_feed.xml', { cache: 'no-store' });
+      if (!response.ok) {
+        console.warn('YouTube Shorts XML 피드를 불러올 수 없습니다.');
+        container.innerHTML = `
+          <div class="youtube-shorts-item">
+            <div class="rose-short-card">
+              <div class="rose-short-media">
+                <i class="bi bi-play-circle-fill rose-short-play-large"></i>
+              </div>
+              <div class="rose-short-date">
+                <i class="bi bi-clock"></i>
+                <span>표시할 숏폼이 없습니다</span>
+              </div>
+            </div>
+          </div>
+        `;
+        return;
+      }
+      
+      const xmlText = await response.text();
+      const parser = new DOMParser();
+      const xmlDoc = parser.parseFromString(xmlText, 'text/xml');
+      
+      const entries = xmlDoc.querySelectorAll('entry');
+      if (!entries || entries.length === 0) {
+        container.innerHTML = `
+          <div class="youtube-shorts-item">
+            <div class="rose-short-card">
+              <div class="rose-short-media">
+                <i class="bi bi-play-circle-fill rose-short-play-large"></i>
+              </div>
+              <div class="rose-short-date">
+                <i class="bi bi-clock"></i>
+                <span>표시할 숏폼이 없습니다</span>
+              </div>
+            </div>
+          </div>
+        `;
+        return;
+      }
+
+      const shortsHtml = Array.from(entries).slice(0, 4).map(entry => {
+        const videoId = entry.querySelector('videoId')?.textContent?.trim() || '';
+        const title = entry.querySelector('title')?.textContent?.trim() || '';
+        const thumbnail = entry.querySelector('thumbnail')?.getAttribute('url') || `https://i.ytimg.com/vi/${videoId}/hqdefault.jpg`;
+        const publishedAt = entry.querySelector('published')?.textContent?.trim() || '';
+        const description = entry.querySelector('description')?.textContent?.trim() || '';
+        // media:statistics에서 views 가져오기 (namespace 처리)
+        const statistics = entry.getElementsByTagNameNS('http://search.yahoo.com/mrss/', 'statistics')[0];
+        const views = statistics?.getAttribute('views') || '0';
+        
+        // 날짜 포맷팅
+        const date = publishedAt ? new Date(publishedAt) : null;
+        const dateStr = date ? `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}` : '최근';
+        
+        // 조회수 포맷팅
+        const viewsNum = parseInt(views) || 0;
+        const viewsStr = viewsNum >= 1000000 ? `${(viewsNum / 1000000).toFixed(1)}M` : 
+                         viewsNum >= 1000 ? `${(viewsNum / 1000).toFixed(1)}K` : 
+                         viewsNum.toString();
+        
+        return `
+          <div class="youtube-shorts-item">
+            <div class="rose-short-card" onclick="openShortsModal('${videoId}')">
+              <div class="rose-short-media">
+                <img src="${thumbnail}" alt="${title}" loading="lazy">
+                <div class="rose-short-badge">Short</div>
+                <i class="bi bi-play-circle-fill rose-short-play-large"></i>
+              </div>
+              <div class="rose-short-date">
+                <i class="bi bi-clock"></i>
+                <span>${dateStr}</span>
+                <span style="margin-left: 8px;"><i class="bi bi-eye"></i> ${viewsStr}</span>
+              </div>
+              <strong>${title}</strong>
+              <p>${description.substring(0, 80)}${description.length > 80 ? '...' : ''}</p>
+            </div>
+          </div>
+        `;
+      }).join('');
+
+      container.innerHTML = shortsHtml;
+    } catch (error) {
+      console.warn('YouTube Shorts 로드 실패:', error);
+      container.innerHTML = `
+        <div class="youtube-shorts-item">
+          <div class="rose-short-card">
+            <div class="rose-short-media">
+              <i class="bi bi-play-circle-fill rose-short-play-large"></i>
+            </div>
+            <div class="rose-short-date">
+              <i class="bi bi-clock"></i>
+              <span>영상을 불러오는 중...</span>
+            </div>
+          </div>
+        </div>
+      `;
+    }
+  }
+
+  function openShortsModal(videoId) {
+    const modal = document.getElementById('shorts-iframe-modal');
+    if (!modal) return;
+    
+    const iframe = document.getElementById('shorts-iframe');
+    if (iframe) {
+      iframe.src = `https://www.youtube.com/embed/${videoId}`;
+    }
+    
+    const bsModal = new bootstrap.Modal(modal);
+    bsModal.show();
+  }
+
+  // YouTube Shorts 주기적 업데이트
+  document.addEventListener('DOMContentLoaded', function() {
+    loadYoutubeShorts();
+    window.__youtubeShortsIntervalId = setInterval(loadYoutubeShorts, 30000);
+  });
+
+  </script>
+  
+  <!-- YouTube Shorts 섹션 (맨 아래) -->
+  <section class="youtube-shorts-section" aria-label="YouTube Shorts">
+    <div class="text-center">
+      <h3><i class="bi bi-youtube"></i> YouTube Shorts</h3>
+      <p class="text-muted">최신 숏폼 영상을 확인하세요</p>
+    </div>
+    <div id="youtube-shorts-container" class="youtube-shorts-grid">
+      <!-- YouTube Shorts 카드가 여기에 동적으로 로드됩니다 -->
+      <div class="youtube-shorts-item">
+        <div class="rose-short-card">
+          <div class="rose-short-media">
+            <i class="bi bi-play-circle-fill rose-short-play-large"></i>
+          </div>
+          <div class="rose-short-date">
+            <i class="bi bi-clock"></i>
+            <span>영상을 불러오는 중...</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

@@ -1,0 +1,89 @@
+{
+  "schema": "pc-part-nb-collector-file.v1",
+  "updatedAt": "2026-06-14T03:55:18.542+09:00",
+  "category": "RAM",
+  "id": "ram-ddr5-5600-cl46-elite-32gb",
+  "name": "DDR5-5600 CL46 Elite 32GB",
+  "maker": "TeamGroup",
+  "platform": "DDR5",
+  "estimatedPriceKrw": 677490,
+  "priceBand": "60만원 이상",
+  "speedLabel": "5600MHz",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "RAM",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 50,
+  "valueIndex": 7.4,
+  "aiUseScore": 33,
+  "powerWatts": 0,
+  "tags": [
+    "desktop",
+    "non-rgb"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "RAM",
+    "partId": "ram-ddr5-5600-cl46-elite-32gb",
+    "partName": "DDR5-5600 CL46 Elite 32GB",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "RAM",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 500,
+      "value": 100,
+      "aiFit": 330,
+      "priceEfficiency": 150,
+      "powerEfficiency": 500
+    },
+    "nbVector": [
+      100,
+      500,
+      100,
+      330,
+      150,
+      500
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 241.173,
+    "nbMin": 433.067,
+    "weightedScore": 231,
+    "nbBand": "100~499",
+    "summary": "RAM DDR5-5600 CL46 Elite 32GB 부품을 속도 중심 N/B 데이터베이스 점수 231점으로 저장했습니다."
+  },
+  "nbWeightedScore": 231,
+  "nbMax": 241.173,
+  "nbMin": 433.067,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=TeamGroup%20DDR5-5600%20CL46%2032GB%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "Standard Elite series without heatsink. Price observed in excerpt is likely for a bundle or high-capacity kit, but the 32GB single module is the target.",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

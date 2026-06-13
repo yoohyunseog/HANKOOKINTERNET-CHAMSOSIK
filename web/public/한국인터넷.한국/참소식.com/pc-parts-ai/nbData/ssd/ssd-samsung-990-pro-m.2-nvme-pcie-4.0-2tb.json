@@ -1,0 +1,90 @@
+{
+  "schema": "pc-part-nb-collector-file.v1",
+  "updatedAt": "2026-06-14T03:55:29.783+09:00",
+  "category": "SSD",
+  "id": "ssd-samsung-990-pro-m.2-nvme-pcie-4.0-2tb",
+  "name": "Samsung 990 PRO M.2 NVMe PCIe 4.0 2TB",
+  "maker": "Samsung",
+  "platform": "PCIe 4.0",
+  "estimatedPriceKrw": 275600,
+  "priceBand": "15~30만원",
+  "speedLabel": "7,450MB/s",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "SSD",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 95,
+  "valueIndex": 34.5,
+  "aiUseScore": 62,
+  "powerWatts": 0,
+  "tags": [
+    "NVMe",
+    "PCIe 4.0",
+    "PS5"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "SSD",
+    "partId": "ssd-samsung-990-pro-m.2-nvme-pcie-4.0-2tb",
+    "partName": "Samsung 990 PRO M.2 NVMe PCIe 4.0 2TB",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "SSD",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 950,
+      "value": 460,
+      "aiFit": 620,
+      "priceEfficiency": 360,
+      "powerEfficiency": 950
+    },
+    "nbVector": [
+      100,
+      950,
+      460,
+      620,
+      360,
+      950
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 358.887,
+    "nbMin": 367.738,
+    "weightedScore": 444,
+    "nbBand": "100~499",
+    "summary": "SSD Samsung 990 PRO M.2 NVMe PCIe 4.0 2TB 부품을 속도 중심 N/B 데이터베이스 점수 444점으로 저장했습니다."
+  },
+  "nbWeightedScore": 444,
+  "nbMax": 358.887,
+  "nbMin": 367.738,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Samsung%20990%20Pro%20M.2%20NVMe%20PCIe%204.0%202TB%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "Non-heatsink version. 2TB capacity, TLC, DRAM included.",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

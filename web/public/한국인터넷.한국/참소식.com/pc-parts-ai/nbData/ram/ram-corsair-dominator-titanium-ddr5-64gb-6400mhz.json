@@ -1,0 +1,89 @@
+{
+  "schema": "pc-part-nb-collector-file.v1",
+  "updatedAt": "2026-06-14T03:55:17.872+09:00",
+  "category": "RAM",
+  "id": "ram-corsair-dominator-titanium-ddr5-64gb-6400mhz",
+  "name": "Corsair Dominator Titanium DDR5 64GB 6400MHz",
+  "maker": "Corsair",
+  "platform": "DDR5",
+  "estimatedPriceKrw": 3627000,
+  "priceBand": "60만원 이상",
+  "speedLabel": "6400MHz",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "RAM",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 75,
+  "valueIndex": 2.1,
+  "aiUseScore": 49,
+  "powerWatts": 0,
+  "tags": [
+    "high-end",
+    "overclock"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "RAM",
+    "partId": "ram-corsair-dominator-titanium-ddr5-64gb-6400mhz",
+    "partName": "Corsair Dominator Titanium DDR5 64GB 6400MHz",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "RAM",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 750,
+      "value": 100,
+      "aiFit": 490,
+      "priceEfficiency": 30,
+      "powerEfficiency": 750
+    },
+    "nbVector": [
+      100,
+      750,
+      100,
+      490,
+      30,
+      750
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 267.058,
+    "nbMin": 326.916,
+    "weightedScore": 302,
+    "nbBand": "100~499",
+    "summary": "RAM Corsair Dominator Titanium DDR5 64GB 6400MHz 부품을 속도 중심 N/B 데이터베이스 점수 302점으로 저장했습니다."
+  },
+  "nbWeightedScore": 302,
+  "nbMax": 267.058,
+  "nbMin": 326.916,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Corsair%20Dominator%20Titanium%20DDR5%2064GB%206400MHz%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "Observed prices are extremely high (over 3.6M KRW), likely due to overseas shipping/seller pricing errors or extreme rarity.",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

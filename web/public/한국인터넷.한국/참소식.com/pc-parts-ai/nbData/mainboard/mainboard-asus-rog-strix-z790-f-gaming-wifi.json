@@ -1,0 +1,89 @@
+{
+  "schema": "pc-part-nb-collector-file.v1",
+  "updatedAt": "2026-06-14T03:55:15.456+09:00",
+  "category": "Mainboard",
+  "id": "mainboard-asus-rog-strix-z790-f-gaming-wifi",
+  "name": "ASUS ROG STRIX Z790-F GAMING WIFI",
+  "maker": "ASUS",
+  "platform": "Intel LGA1700",
+  "estimatedPriceKrw": 793880,
+  "priceBand": "60만원 이상",
+  "speedLabel": "DDR5",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "Mainboard",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 90,
+  "valueIndex": 11.3,
+  "aiUseScore": 59,
+  "powerWatts": 0,
+  "tags": [
+    "gaming",
+    "high-end"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "Mainboard",
+    "partId": "mainboard-asus-rog-strix-z790-f-gaming-wifi",
+    "partName": "ASUS ROG STRIX Z790-F GAMING WIFI",
+    "speed": {
+      "score": 100,
+      "weight": 0.32,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "Mainboard",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 900,
+      "value": 151,
+      "aiFit": 590,
+      "priceEfficiency": 130,
+      "powerEfficiency": 900
+    },
+    "nbVector": [
+      100,
+      900,
+      151,
+      590,
+      130,
+      900
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 245.627,
+    "nbMin": 372.203,
+    "weightedScore": 357,
+    "nbBand": "100~499",
+    "summary": "Mainboard ASUS ROG STRIX Z790-F GAMING WIFI 부품을 속도 중심 N/B 데이터베이스 점수 357점으로 저장했습니다."
+  },
+  "nbWeightedScore": 357,
+  "nbMax": 245.627,
+  "nbMin": 372.203,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=ASUS%20ROG%20STRIX%20Z790-F%20GAMING%20WIFI%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "Supports Intel 12th, 13th, and 14th Gen CPUs.",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

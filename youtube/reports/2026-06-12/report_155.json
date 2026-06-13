@@ -1,0 +1,227 @@
+{
+  "timestamp": "2026-06-12T11:38:30.832001",
+  "model": "kimi-k2.5:cloud",
+  "keyword_count": 3,
+  "analyze_subtitles": true,
+  "analysis_source": "youtube",
+  "keywords": [
+    {
+      "keyword": "오늘의 주요 뉴스",
+      "is_fixed": true,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "서울 지하철 요금 인상",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "코스피 급등 사이드카",
+      "is_fixed": false,
+      "views": [
+        1426
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "코스피, 오늘은 급등 출발...매수 사이드카도 발동 / YTN",
+          "video_id": "s8Tc95QSJqw",
+          "views": 1426,
+          "upload_date": "2026-06-12",
+          "url": "https://www.youtube.com/watch?v=s8Tc95QSJqw",
+          "subtitle_summary": "The user wants a summary of a YouTube video transcript in Korean, around 500 characters, with 3-5 sentences capturing the key points.\nKey points from the transcript:\n1. KOSPI surged today after flat trading yesterday, recovering 8,000 level and activating buy sidecar (circuit breaker) within 6 minutes of opening - 13th time this year\n2. Samsung Electronics and SK Hynix rose nearly 10%, most large caps rising\n3. Reasons: US-Iran ceasefire imminent, May inflation concerns easing, US semiconductor strength\n4. Concerns: SpaceX listing liquidity burden, next week's June FOMC meeting\n5. KOSDAQ also rose 3.02%, recovering 1,000 level (called \"Cheon-sudak\")\n6. Won-dollar exchange rate fell 10.9 won to 1,518 won due to Trump canceling Iran attack, risk-on sentiment\nI need to write this in Korean only, no English, around 500 characters (roughly 250-300 Korean characters would be short, but they said 500자 which usually means 500 Korean characters or around 250-300 words? Actually in Korean \"자\" means character, so 500자 means roughly 500 Korean characters including spaces).\nWait, looking at the request: \"500자 내외로 요약하시오\" - this means approximately 500 characters (Korean characters).\nLet me draft:\n코스피가 미국과 이란의 휴전 임박 및 인플레이션 안정 기대 등 호재에 힘입어 6% 넘게 급등하며 8,400선을 돌파했습니다. 장 개시 6분 만에 매수 사이드카가 발동되었고, 삼성전자와 SK하이닉스 등 대형주가 10% 가까이 상승하며 장을 이끌었습니다. 코스닥도 3% 오르며 1,000선을 회복하는 천스닥을 기록했습니다. 원달러 환율은 트럼프 대통령의 이란 공습 취소 발표로 위험자산 선호 심리가 커지며 1,500원대 중반으로 하락했습니다. 다만 스페이스엑스 상장으로 인한 유동성 부담과 다음 주 FOMC 경계 심리는 변수로 남아있습니다.\nLet me count characters:\n코스피가 미국과 이란의 휴전 임박 및 인플레이션 안정 기대 등 호재에 힘입어 6% 넘게 급등하며 8,400선을 돌파했습니다. (67자)\n장 개시 6분 만에 매수 사이드카가 발동되었고, 삼성전자와 SK하이닉스 등 대형주가 10% 가까이 상승하며 장을 이끌었습니다. (67자)\n코스닥도 3% 오르며 1,000선을 회복하는 천스닥을 기록했습니다. (38자)\n원달러 환율은 트럼프 대통령의 이란 공습 취소 발표로 위험자산 선호 심리가 커지며 1,500원대 중반으로 하락했습니다. (67자)\n다만 스페이스엑스 상장으로 인한 유동성 부담과 다음 주 FOMC 경계 심리는 변수로 남아있습니다. (52자)\nTotal: around 291 characters. That's a bit short for 500자 but acceptable for \"내외\" (around). But I can expand slightly to get closer to 500.\nLet me expand:\n코스피가 미국과 이란의 휴전 임박 및 5월 인플레이션 불안 심리 진정 등 대외 호재에 힘입어 6.44% 급등하며 8,400선을 돌파했습니다. 장 개시 6분 만에 프로그램 매수 호가 효력이 정지되는 매수 사이드카가 발동되었고, 삼성전자와 SK하이닉스 등 대장주가 10% 가까이 상승하",
+          "analysis_source": "subtitle",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "스페이스X 주식 데뷔",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "삼성전자 성과급 주가",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "홈플러스 회생 가능성",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "한미 관계 과징금",
+      "is_fixed": false,
+      "views": [
+        1793
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "[자막뉴스] '역대급 과징금' 쿠팡...외신이 긴급 타전한 내용 / YTN",
+          "video_id": "uoY8qF5LsrM",
+          "views": 1793,
+          "upload_date": "2026-06-12",
+          "url": "https://www.youtube.com/watch?v=uoY8qF5LsrM",
+          "subtitle_summary": "The user wants a summary of a YouTube video subtitle in Korean, around 500 characters, with 3-5 sentences capturing the key points.\nKey points from the subtitle:\n1. Korean government imposed a record-breaking fine of 624.68 billion won on Coupang for personal information leakage\n2. Foreign media (Wall Street Journal, Axios, Financial Times, Guardian) reported urgently on this\n3. WSJ pointed out basic security management failures (former employee kept access keys after resignation)\n4. Axios noted Silicon Valley investors claim Korean government is targeting Coupang discriminatorily, could escalate to national dispute\n5. FT mentioned US government views foreign regulations as non-tariff trade barriers, showing trade risks for US companies\n6. Guardian analyzed this could burden Korea-US relations beyond just a corporate security incident\n7. Some US Congress members questioning Korean government's investigation\n8. Concerns about escalating to Korea-US conflict due to Coupang's lobbying activities in US political circles\n9. Korean government plans to explain to US government to prevent diplomatic conflict\nI need to summarize this in 3-5 sentences, around 500 characters in Korean.\nDraft:\n한국 정부가 쿠팡에 대해 역대 최대 규모인 6,246억 원의 과징금을 부과하자 외신들이 긴급 타전했습니다. 외신들은 개인정보 유출의 보안 관리 부실을 지적하는 한편, 실리콘밸리 투자자들이 한국 정부의 차별적 겨냥이라 주장하며 국가 분쟁으로 확산될 수 있다는 우려를 보도했습니다. 또한 미국 정부가 외국 규제를 비관세 무역장벽으로 간주하는 경향을 언급하며 이번 사태가 한미 관계의 부담 요인이 될 수 있다고 분석했습니다. 일부 미 의회에서도 문제를 삼고 있어 쿠팡의 미국 내 로비 활동으로 인해 외교 갈등으로 번질 수 있다는 우려가 커지고 있습니다. 정부는 미국 측에 설명할 계획을 밝혔으나 향후 한미 관계에 미칠 영향을 지켜봐야 할 것으로 보입니다.\nCharacter count check:\n한국 정부가 쿠팡에 대해 역대 최대 규모인 6,246억 원의 과징금을 부과하자 외신들이 긴급 타전했습니다. (49자)\n외신들은 개인정보 유출의 보안 관리 부실을 지적하는 한편, 실리콘밸리 투자자들이 한국 정부의 차별적 겨냥이라 주장하며 국가 분쟁으로 확산될 수 있다는 우려를 보도했습니다. (84자)\n또한 미국 정부가 외국 규제를 비관세 무역장벽으로 간주하는 경향을 언급하며 이번 사태가 한미 관계의 부담 요인이 될 수 있다고 분석했습니다. (69자)\n일부 미 의회에서도 문제를 삼고 있어 쿠팡의 미국 내 로비 활동으로 인해 외교 갈등으로 번질 수 있다는 우려가 커지고 있습니다. (64자)\n정부는 미국 측에 설명할 계획을 밝혔으나 향후 한미 관계에 미칠 영향을 지켜봐야 할 것으로 보입니다. (49자)\nTotal: around 315 characters. This is well under 500 characters, but the user said \"500자 내외\" which usually means around 500, but 300-400 is acceptable if it captures the essence. However, I can expand slightly to get closer to 400-450.\nRevised draft:\n한국 정부가 쿠팡에 대해 역대 최대 규모인 6,246억 원의 과징금을 부과하자 외신들이 긴급 타전했습니다. 월스트리트저널 등은 전직 직원이 퇴사 후에도 시스�",
+          "analysis_source": "subtitle",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "유전자 교정 논란",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "차세대 반도체 상용화",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "지지율",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "정청래 연임 사퇴",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "한동훈 장동혁 책임론",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "오세훈 차기 지도자",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "서울국제도서전 2024",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "SK하이닉스 화사 사고",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "AI 기술 발전 현황",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    }
+  ]
+}

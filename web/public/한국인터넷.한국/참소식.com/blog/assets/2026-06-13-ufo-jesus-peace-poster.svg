@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">내가 본 UFO, 그리고 다시 부르고 싶지 않은 이유</title>
+  <desc id="desc">밤하늘 아래 평화와 믿음을 중심에 둔 참소식 블로그 포스터</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#07121f"/>
+      <stop offset="0.54" stop-color="#14233b"/>
+      <stop offset="1" stop-color="#0c1b2b"/>
+    </linearGradient>
+    <radialGradient id="light" cx="58%" cy="25%" r="44%">
+      <stop offset="0" stop-color="#d8ecff" stop-opacity=".5"/>
+      <stop offset=".42" stop-color="#7bb8ff" stop-opacity=".2"/>
+      <stop offset="1" stop-color="#7bb8ff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ground" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#10283b"/>
+      <stop offset="1" stop-color="#08111c"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#sky)"/>
+  <rect width="1200" height="675" fill="url(#light)"/>
+  <g opacity=".58" fill="#cfe6ff">
+    <circle cx="126" cy="86" r="2.5"/>
+    <circle cx="226" cy="168" r="1.8"/>
+    <circle cx="342" cy="74" r="1.7"/>
+    <circle cx="514" cy="132" r="2.1"/>
+    <circle cx="805" cy="96" r="2.4"/>
+    <circle cx="973" cy="154" r="1.9"/>
+    <circle cx="1088" cy="84" r="2.2"/>
+  </g>
+  <ellipse cx="760" cy="186" rx="96" ry="18" fill="#a7cdf7" opacity=".36"/>
+  <ellipse cx="760" cy="180" rx="64" ry="9" fill="#eff8ff" opacity=".55"/>
+  <path d="M710 192 C730 222 790 222 812 192" fill="none" stroke="#d9efff" stroke-width="3" opacity=".38"/>
+  <path d="M596 248 L908 252 L824 530 L514 530 Z" fill="#b7d9ff" opacity=".08"/>
+  <rect y="522" width="1200" height="153" fill="url(#ground)"/>
+  <path d="M0 548 C172 520 260 563 420 538 C610 508 728 568 890 535 C1030 507 1110 528 1200 510 L1200 675 L0 675 Z" fill="#07111d" opacity=".9"/>
+  <g transform="translate(118 116)">
+    <rect x="0" y="0" width="470" height="384" rx="24" fill="#08111c" opacity=".5"/>
+    <text x="34" y="70" fill="#f3f7fb" font-family="Pretendard, Arial, sans-serif" font-size="50" font-weight="700">내가 본 UFO,</text>
+    <text x="34" y="132" fill="#f3f7fb" font-family="Pretendard, Arial, sans-serif" font-size="50" font-weight="700">그리고 다시</text>
+    <text x="34" y="194" fill="#f3f7fb" font-family="Pretendard, Arial, sans-serif" font-size="50" font-weight="700">부르고 싶지</text>
+    <text x="34" y="256" fill="#f3f7fb" font-family="Pretendard, Arial, sans-serif" font-size="50" font-weight="700">않은 이유</text>
+    <line x1="36" y1="296" x2="330" y2="296" stroke="#75b7ff" stroke-width="4"/>
+    <text x="34" y="342" fill="#b6c6d8" font-family="Pretendard, Arial, sans-serif" font-size="24">목격담보다 믿음과 평화에 대한 기록</text>
+  </g>
+  <text x="998" y="622" fill="#75b7ff" font-family="Pretendard, Arial, sans-serif" font-size="24" font-weight="700">참소식.com</text>
+</svg>

@@ -1,0 +1,89 @@
+{
+  "schema": "pc-part-nb-collector-file.v1",
+  "updatedAt": "2026-06-14T03:55:15.539+09:00",
+  "category": "Mainboard",
+  "id": "mainboard-b650m-k",
+  "name": "B650M K",
+  "maker": "GIGABYTE",
+  "platform": "AM5",
+  "estimatedPriceKrw": 123000,
+  "priceBand": "15만원 미만",
+  "speedLabel": "B650",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "Mainboard",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 50,
+  "valueIndex": 40.7,
+  "aiUseScore": 33,
+  "powerWatts": 0,
+  "tags": [
+    "budget",
+    "mATX"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "Mainboard",
+    "partId": "mainboard-b650m-k",
+    "partName": "B650M K",
+    "speed": {
+      "score": 100,
+      "weight": 0.32,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "Mainboard",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 500,
+      "value": 543,
+      "aiFit": 330,
+      "priceEfficiency": 810,
+      "powerEfficiency": 500
+    },
+    "nbVector": [
+      100,
+      500,
+      543,
+      330,
+      810,
+      500
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 306.932,
+    "nbMin": 382.519,
+    "weightedScore": 336,
+    "nbBand": "100~499",
+    "summary": "Mainboard B650M K 부품을 속도 중심 N/B 데이터베이스 점수 336점으로 저장했습니다."
+  },
+  "nbWeightedScore": 336,
+  "nbMax": 306.932,
+  "nbMin": 382.519,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=B650%20%EB%A9%94%EC%9D%B8%EB%B3%B4%EB%93%9C%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "Entry-level B650 motherboard",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

@@ -1,0 +1,90 @@
+{
+  "schema": "pc-part-nb-collector-file.v1",
+  "updatedAt": "2026-06-14T03:55:08.363+09:00",
+  "category": "GPU",
+  "id": "gpu-rtx-4070-ti-super-trinity-oc-white-edition",
+  "name": "RTX 4070 Ti Super Trinity OC White Edition",
+  "maker": "ZOTAC",
+  "platform": "NVIDIA",
+  "estimatedPriceKrw": 2013600,
+  "priceBand": "60만원 이상",
+  "speedLabel": "OC",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "GPU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 85,
+  "valueIndex": 4.2,
+  "aiUseScore": 85,
+  "powerWatts": 285,
+  "tags": [
+    "gaming",
+    "white",
+    "ai"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "GPU",
+    "partId": "gpu-rtx-4070-ti-super-trinity-oc-white-edition",
+    "partName": "RTX 4070 Ti Super Trinity OC White Edition",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "GPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 850,
+      "value": 100,
+      "aiFit": 850,
+      "priceEfficiency": 50,
+      "powerEfficiency": 100
+    },
+    "nbVector": [
+      100,
+      850,
+      100,
+      850,
+      50,
+      100
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 164.536,
+    "nbMin": 319.425,
+    "weightedScore": 321,
+    "nbBand": "100~499",
+    "summary": "GPU RTX 4070 Ti Super Trinity OC White Edition 부품을 속도 중심 N/B 데이터베이스 점수 321점으로 저장했습니다."
+  },
+  "nbWeightedScore": 321,
+  "nbMax": 164.536,
+  "nbMin": 319.425,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=RTX%204070%20Ti%20Super%20ZOTAC%20Gaming%20OC",
+  "notes": "Trinity OC White Edition",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

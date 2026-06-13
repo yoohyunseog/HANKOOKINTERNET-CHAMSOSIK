@@ -1,0 +1,95 @@
+{
+  "schema": "pc-part-nb-collector-file.v1",
+  "updatedAt": "2026-06-14T03:55:15.587+09:00",
+  "category": "Mainboard",
+  "id": "mainboard-b850mt-e-pro",
+  "name": "B850MT-E PRO",
+  "maker": "Biostar",
+  "platform": "AM5",
+  "estimatedPriceKrw": 162000,
+  "priceBand": "15~30만원",
+  "speedLabel": "DDR5",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "Mainboard",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 50,
+  "valueIndex": 30.9,
+  "aiUseScore": 33,
+  "powerWatts": 0,
+  "tags": [
+    "budget",
+    "AM5"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "Mainboard",
+    "partId": "mainboard-b850mt-e-pro",
+    "partName": "B850MT-E PRO",
+    "speed": {
+      "score": 100,
+      "weight": 0.32,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "Mainboard",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 500,
+      "value": 412,
+      "aiFit": 330,
+      "priceEfficiency": 620,
+      "powerEfficiency": 500
+    },
+    "nbVector": [
+      100,
+      500,
+      412,
+      330,
+      620,
+      500
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 394.891,
+    "nbMin": 401.95,
+    "weightedScore": 302,
+    "nbBand": "100~499",
+    "summary": "Mainboard B850MT-E PRO 부품을 속도 중심 N/B 데이터베이스 점수 302점으로 저장했습니다."
+  },
+  "nbWeightedScore": 302,
+  "nbMax": 394.891,
+  "nbMin": 401.95,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Z870%20%EB%A9%94%EC%9D%B8%EB%B3%B4%EB%93%9C%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "B850MT-E PRO은 CPU 소켓, 메모리 규격, 확장성을 함께 확인할 메인보드 후보입니다.",
+  "textRepair": {
+    "checkedAt": "2026-06-14T03:55:15.587+09:00",
+    "method": "ai-text-sanity-rules",
+    "repairedFields": [
+      "notes"
+    ]
+  },
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

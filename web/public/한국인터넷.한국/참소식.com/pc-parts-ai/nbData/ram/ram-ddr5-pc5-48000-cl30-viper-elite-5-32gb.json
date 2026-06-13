@@ -1,0 +1,89 @@
+{
+  "schema": "pc-part-nb-collector-file.v1",
+  "updatedAt": "2026-06-14T03:55:18.525+09:00",
+  "category": "RAM",
+  "id": "ram-ddr5-pc5-48000-cl30-viper-elite-5-32gb",
+  "name": "DDR5 PC5-48000 CL30 VIPER Elite 5 32GB",
+  "maker": "PATRIOT",
+  "platform": "DDR5",
+  "estimatedPriceKrw": 620280,
+  "priceBand": "60만원 이상",
+  "speedLabel": "6000MHz CL30",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "RAM",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 75,
+  "valueIndex": 12.1,
+  "aiUseScore": 49,
+  "powerWatts": 0,
+  "tags": [
+    "gaming",
+    "overclock"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "RAM",
+    "partId": "ram-ddr5-pc5-48000-cl30-viper-elite-5-32gb",
+    "partName": "DDR5 PC5-48000 CL30 VIPER Elite 5 32GB",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "RAM",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 750,
+      "value": 161,
+      "aiFit": 490,
+      "priceEfficiency": 160,
+      "powerEfficiency": 750
+    },
+    "nbVector": [
+      100,
+      750,
+      161,
+      490,
+      160,
+      750
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 257.531,
+    "nbMin": 387.546,
+    "weightedScore": 321,
+    "nbBand": "100~499",
+    "summary": "RAM DDR5 PC5-48000 CL30 VIPER Elite 5 32GB 부품을 속도 중심 N/B 데이터베이스 점수 321점으로 저장했습니다."
+  },
+  "nbWeightedScore": 321,
+  "nbMax": 257.531,
+  "nbMin": 387.546,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=DDR5%206000%20CL30%2032GB%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "32GB kit (16GB*2)",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

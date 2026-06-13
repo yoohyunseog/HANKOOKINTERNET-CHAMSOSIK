@@ -1,0 +1,90 @@
+{
+  "schema": "pc-part-nb-collector-file.v1",
+  "updatedAt": "2026-06-14T03:55:18.341+09:00",
+  "category": "RAM",
+  "id": "ram-corsair-vengeance-rgb-ddr5-6400-cl32-64gb-32gx2-white",
+  "name": "Corsair Vengeance RGB DDR5-6400 CL32 64GB (32Gx2) White",
+  "maker": "Corsair",
+  "platform": "DDR5",
+  "estimatedPriceKrw": 1440000,
+  "priceBand": "60만원 이상",
+  "speedLabel": "6400MHz CL32",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "RAM",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 75,
+  "valueIndex": 5.2,
+  "aiUseScore": 49,
+  "powerWatts": 0,
+  "tags": [
+    "RGB",
+    "White",
+    "XMP3.0"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "RAM",
+    "partId": "ram-corsair-vengeance-rgb-ddr5-6400-cl32-64gb-32gx2-white",
+    "partName": "Corsair Vengeance RGB DDR5-6400 CL32 64GB (32Gx2) White",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "RAM",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 750,
+      "value": 100,
+      "aiFit": 490,
+      "priceEfficiency": 70,
+      "powerEfficiency": 750
+    },
+    "nbVector": [
+      100,
+      750,
+      100,
+      490,
+      70,
+      750
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 245.084,
+    "nbMin": 359.591,
+    "weightedScore": 306,
+    "nbBand": "100~499",
+    "summary": "RAM Corsair Vengeance RGB DDR5-6400 CL32 64GB (32Gx2) White 부품을 속도 중심 N/B 데이터베이스 점수 306점으로 저장했습니다."
+  },
+  "nbWeightedScore": 306,
+  "nbMax": 245.084,
+  "nbMin": 359.591,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Corsair%20DDR5-6400%20CL32%2032GB%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "64GB kit (32GB x 2), CL32-40-40-84, 1.40V",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

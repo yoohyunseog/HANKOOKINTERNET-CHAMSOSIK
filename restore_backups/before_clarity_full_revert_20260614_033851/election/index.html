@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2026 지방선거 정보 | 참소식.com</title>
+  <meta name="description" content="2026년 제9회 전국동시지방선거 투표소, 일정, 후보자 정보를 확인하세요.">
+  <link rel="canonical" href="https://참소식.com/election/">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #1a56db;
+      --primary-dark: #1e40af;
+      --accent: #dc2626;
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --border: #e5e7eb;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+    }
+
+    .header {
+      background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .header p {
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 30px 20px;
+    }
+
+    .status-card {
+      background: var(--card);
+      border-radius: 16px;
+      padding: 30px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .status-badge {
+      display: inline-block;
+      padding: 8px 20px;
+      border-radius: 50px;
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: 15px;
+    }
+
+    .status-badge.active {
+      background: #dc2626;
+      color: white;
+    }
+
+    .status-badge.upcoming {
+      background: #fbbf24;
+      color: #78350f;
+    }
+
+    .status-badge.ended {
+      background: #9ca3af;
+      color: white;
+    }
+
+    .countdown {
+      font-size: 3rem;
+      font-weight: 900;
+      color: var(--primary);
+      margin: 20px 0;
+    }
+
+    .message {
+      font-size: 1.1rem;
+      color: var(--muted);
+    }
+
+    .section {
+      background: var(--card);
+      border-radius: 16px;
+      padding: 25px;
+      margin-bottom: 25px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    }
+
+    .section h2 {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .section h2 i {
+      color: var(--primary);
+    }
+
+    .schedule-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .schedule-item {
+      background: #f0f9ff;
+      border-radius: 12px;
+      padding: 20px;
+      border-left: 4px solid var(--primary);
+    }
+
+    .schedule-item h3 {
+      font-size: 1.1rem;
+      margin-bottom: 8px;
+      color: var(--primary-dark);
+    }
+
+    .schedule-item .date {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    .schedule-item .time {
+      color: var(--muted);
+      margin-top: 5px;
+    }
+
+    .polling-stations {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 15px;
+    }
+
+    .station-card {
+      background: #fefefe;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 18px;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .station-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 15px -3px rgba(0, 0, 0, 0.1);
+    }
+
+    .station-card h3 {
+      font-size: 1rem;
+      margin-bottom: 8px;
+      color: var(--text);
+    }
+
+    .station-card .address {
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    .station-card .type {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 4px 10px;
+      background: #e0f2fe;
+      color: #0369a1;
+      border-radius: 20px;
+      font-size: 0.8rem;
+    }
+
+    .tips-list {
+      list-style: none;
+    }
+
+    .tips-list li {
+      padding: 12px 0;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .tips-list li:last-child {
+      border-bottom: none;
+    }
+
+    .tips-list li i {
+      color: var(--primary);
+      font-size: 1.2rem;
+    }
+
+    .links-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+    }
+
+    .link-card {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 15px 20px;
+      background: var(--primary);
+      color: white;
+      text-decoration: none;
+      border-radius: 10px;
+      transition: background 0.2s;
+    }
+
+    .link-card:hover {
+      background: var(--primary-dark);
+    }
+
+    .videos-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    .video-card {
+      background: #fefefe;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s;
+    }
+
+    .video-card:hover {
+      transform: translateY(-3px);
+    }
+
+    .video-card a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .video-thumb {
+      position: relative;
+      aspect-ratio: 16/9;
+      background: #000;
+    }
+
+    .video-thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .video-body {
+      padding: 15px;
+    }
+
+    .video-body h4 {
+      font-size: 0.95rem;
+      margin-bottom: 8px;
+      line-height: 1.4;
+    }
+
+    .video-body .query {
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+
+    .footer {
+      text-align: center;
+      padding: 30px;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      .header h1 { font-size: 1.8rem; }
+      .countdown { font-size: 2rem; }
+    }
+  </style>
+
+
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "x4jlyqheuh");
+</script>
+</head>
+<body>
+  <header class="header">
+    <h1><i class="bi bi-check2-square"></i> 2026 지방선거 정보</h1>
+    <p>제9회 전국동시지방선거 · 중랑구 투표소 및 일정 안내</p>
+  </header>
+
+  <main class="container">
+    <div class="status-card">
+      <div id="status-badge" class="status-badge upcoming">선거 전</div>
+      <div id="countdown" class="countdown">D-0</div>
+      <div id="message" class="message">선거 정보를 불러오는 중입니다.</div>
+    </div>
+
+    <section class="section">
+      <h2><i class="bi bi-calendar-event"></i> 선거 일정</h2>
+      <div class="schedule-grid">
+        <div class="schedule-item">
+          <h3>사전투표</h3>
+          <div class="date">2026년 5월 29일 ~ 30일</div>
+          <div class="time">오전 8시 ~ 오후 8시</div>
+        </div>
+        <div class="schedule-item">
+          <h3>선거일</h3>
+          <div class="date">2026년 6월 3일 (수)</div>
+          <div class="time">오전 6시 ~ 오후 6시</div>
+        </div>
+        <div class="schedule-item">
+          <h3>개표 시작</h3>
+          <div class="date">2026년 6월 3일 오후 6시 30분</div>
+          <div class="time">전국 일제히 개표 시작</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2><i class="bi bi-geo-alt"></i> 중랑구 투표소 안내</h2>
+      <div id="polling-stations" class="polling-stations">
+        <div style="text-align: center; padding: 40px; color: var(--muted);">
+          투표소 정보를 불러오는 중입니다...
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2><i class="bi bi-lightbulb"></i> 투표 안내</h2>
+      <ul id="tips" class="tips-list">
+        <li><i class="bi bi-clock"></i> 투표 시간: 오전 6시 ~ 오후 6시</li>
+        <li><i class="bi bi-person-badge"></i> 신분증: 주민등록증, 여권, 운전면허증 등</li>
+        <li><i class="bi bi-calendar-check"></i> 사전투표: 선거일 전에 가까운 투표소에서 투표 가능</li>
+        <li><i class="bi bi-phone"></i> 투표소 확인: 선거관리위원회 홈페이지 또는 앱</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2><i class="bi bi-link-45deg"></i> 유용한 링크</h2>
+      <div class="links-grid">
+        <a href="http://www.nec.go.kr" target="_blank" class="link-card">
+          <i class="bi bi-building"></i>
+          <span>중앙선거관리위원회</span>
+        </a>
+        <a href="https://www.nec.go.kr/app" target="_blank" class="link-card">
+          <i class="bi bi-phone"></i>
+          <span>선거정보 앱</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2><i class="bi bi-youtube"></i> 선거 관련 영상</h2>
+      <div id="videos" class="videos-grid">
+        <div style="text-align: center; padding: 40px; color: var(--muted);">
+          영상을 불러오는 중입니다...
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 참소식.com · 선거 정보는 중앙선거관리위원회 기준입니다.</p>
+  </footer>
+
+  <script>
+    const JSON_URL = 'election-info.json';
+
+    function escapeHtml(text) {
+      const div = document.createElement('div');
+      div.textContent = text;
+      return div.innerHTML;
+    }
+
+    function formatDate(dateStr) {
+      if (!dateStr) return '';
+      const date = new Date(dateStr);
+      return date.toLocaleDateString('ko-KR', { year: 'numeric', month: 'long', day: 'numeric' });
+    }
+
+    async function loadElectionInfo() {
+      try {
+        const response = await fetch(`${JSON_URL}?t=${Date.now()}`, { cache: 'no-store' });
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        const data = await response.json();
+        renderElectionInfo(data);
+      } catch (error) {
+        console.error('선거 정보 로드 실패:', error);
+      }
+    }
+
+    function renderElectionInfo(data) {
+      // 상태 배지
+      const badge = document.getElementById('status-badge');
+      const countdown = document.getElementById('countdown');
+      const message = document.getElementById('message');
+
+      if (data.schedule) {
+        if (data.schedule.isElectionDay) {
+          badge.className = 'status-badge active';
+          badge.textContent = '선거일';
+          countdown.textContent = '오늘 투표!';
+          message.textContent = data.schedule.message;
+        } else if (data.schedule.isEarlyVotingPeriod) {
+          badge.className = 'status-badge active';
+          badge.textContent = '사전투표 중';
+          countdown.textContent = '지금 투표하세요!';
+          message.textContent = data.schedule.message;
+        } else if (data.schedule.daysUntilElection > 0) {
+          badge.className = 'status-badge upcoming';
+          badge.textContent = '선거 전';
+          countdown.textContent = `D-${data.schedule.daysUntilElection}`;
+          message.textContent = data.schedule.message;
+        } else {
+          badge.className = 'status-badge ended';
+          badge.textContent = '선거 종료';
+          countdown.textContent = '투표 완료';
+          message.textContent = data.schedule.message;
+        }
+      }
+
+      // 투표소 목록
+      if (data.pollingStations && data.pollingStations.length > 0) {
+        const stationsDiv = document.getElementById('polling-stations');
+        stationsDiv.innerHTML = data.pollingStations.map(station => `
+          <div class="station-card">
+            <h3>${escapeHtml(station.name)}</h3>
+            <div class="address">${escapeHtml(station.address)}</div>
+            <span class="type">${escapeHtml(station.type)}</span>
+          </div>
+        `).join('');
+      }
+
+      // 영상 목록
+      if (data.videos && data.videos.length > 0) {
+        const videosDiv = document.getElementById('videos');
+        videosDiv.innerHTML = data.videos.slice(0, 8).map(video => `
+          <div class="video-card">
+            <a href="${escapeHtml(video.url)}" target="_blank" rel="noopener">
+              <div class="video-thumb">
+                <img src="${escapeHtml(video.thumbnail)}" alt="">
+              </div>
+              <div class="video-body">
+                <h4>${escapeHtml(video.title)}</h4>
+                <div class="query">${escapeHtml(video.query)}</div>
+              </div>
+            </a>
+          </div>
+        `).join('');
+      }
+    }
+
+    // 초기 로드
+    loadElectionInfo();
+
+    // 10분마다 갱신
+    setInterval(loadElectionInfo, 600000);
+  </script>
+</body>
+</html>

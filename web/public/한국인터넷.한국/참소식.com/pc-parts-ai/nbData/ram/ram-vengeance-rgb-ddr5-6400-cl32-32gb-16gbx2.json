@@ -1,0 +1,89 @@
+{
+  "schema": "pc-part-nb-collector-file.v1",
+  "updatedAt": "2026-06-14T03:55:20.488+09:00",
+  "category": "RAM",
+  "id": "ram-vengeance-rgb-ddr5-6400-cl32-32gb-16gbx2",
+  "name": "Vengeance RGB DDR5-6400 CL32 32GB (16GBx2)",
+  "maker": "Corsair",
+  "platform": "DDR5",
+  "estimatedPriceKrw": 225000,
+  "priceBand": "15~30만원",
+  "speedLabel": "6400MHz",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "RAM",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 75,
+  "valueIndex": 33.3,
+  "aiUseScore": 49,
+  "powerWatts": 0,
+  "tags": [
+    "gaming",
+    "overclock"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "RAM",
+    "partId": "ram-vengeance-rgb-ddr5-6400-cl32-32gb-16gbx2",
+    "partName": "Vengeance RGB DDR5-6400 CL32 32GB (16GBx2)",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "RAM",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 750,
+      "value": 444,
+      "aiFit": 490,
+      "priceEfficiency": 440,
+      "powerEfficiency": 750
+    },
+    "nbVector": [
+      100,
+      750,
+      444,
+      490,
+      440,
+      750
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 416.801,
+    "nbMin": 378.91,
+    "weightedScore": 383,
+    "nbBand": "100~499",
+    "summary": "RAM Vengeance RGB DDR5-6400 CL32 32GB (16GBx2) 부품을 속도 중심 N/B 데이터베이스 점수 383점으로 저장했습니다."
+  },
+  "nbWeightedScore": 383,
+  "nbMax": 416.801,
+  "nbMin": 378.91,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Corsair%20Vengeance%20RGB%20DDR5%206400%20CL32%2032GB%20price",
+  "notes": "CL32 timing, XMP 3.0 support",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

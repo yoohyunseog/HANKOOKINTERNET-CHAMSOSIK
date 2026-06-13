@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <meta name="description" content="백도어는 사용자가 쓰는 기능이 아니다. 백도어는 사용자의 의사 밖에서 실행되는 관리자급 복원 권한처럼 보일 수 있다. N/B 알고리즘을 기준으로 백도어의 본질을 분석한다.">
+  <meta name="keywords" content="백도어, N/B 알고리즘, 폐쇄망 네트워크, 통신 보안, 권한, 삭제, 복원">
+  <link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="../../favicon.svg">
+  <link rel="canonical" href="https://xn--9l4b4xi9r.com/blog/posts/2026-06-11-backdoor-is-not-a-door.html">
+
+  <!-- Open Graph (소셜 미디어 공유용) -->
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="ko_KR">
+  <meta property="og:site_name" content="참소식.com">
+  <meta property="og:url" content="https://xn--9l4b4xi9r.com/blog/posts/2026-06-11-backdoor-is-not-a-door.html">
+  <meta property="og:title" content="백도어는 문이 아니다">
+  <meta property="og:description" content="백도어는 사용자가 쓰는 기능이 아니다. 백도어는 사용자의 의사 밖에서 실행되는 관리자급 복원 권한처럼 보일 수 있다. N/B 알고리즘을 기준으로 백도어의 본질을 분석한다.">
+  <meta property="og:image" content="https://xn--9l4b4xi9r.com/blog/assets/backdoor-concept.png">
+  <meta property="article:published_time" content="2026-06-11">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="백도어는 문이 아니다">
+  <meta name="twitter:description" content="백도어는 사용자가 쓰는 기능이 아니다. 백도어는 사용자의 의사 밖에서 실행되는 관리자급 복원 권한처럼 보일 수 있다.">
+  <meta name="twitter:image" content="https://xn--9l4b4xi9r.com/blog/assets/backdoor-concept.png">
+
+  <title>백도어는 문이 아니다 | 참소식.com 블로그</title>
+  <link rel="stylesheet" href="../../common-site.css">
+  <style>
+    :root {
+      color-scheme: dark;
+      --page: #08111c;
+      --surface: #111d2d;
+      --ink: #f3f7fb;
+      --muted: #b6c6d8;
+      --line: rgba(180, 205, 230, 0.2);
+      --blue: #75b7ff;
+      --green: #6ee7b7;
+      --amber: #f6c35d;
+      --red: #ff746d;
+      --teal: #70e0d0;
+      --highlight: rgba(122, 184, 255, 0.15);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+      background: var(--page);
+      color: var(--ink);
+      line-height: 1.8;
+      min-height: 100vh;
+    }
+
+    .post-container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 40px 24px;
+    }
+
+    .post-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 14px;
+      margin-bottom: 32px;
+      transition: color 0.2s;
+    }
+
+    .post-back:hover {
+      color: var(--blue);
+    }
+
+    .post-header {
+      margin-bottom: 40px;
+    }
+
+    .post-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      font-size: 13px;
+      color: var(--muted);
+      margin-bottom: 16px;
+    }
+
+    .post-meta span {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .post-meta span::before {
+      content: '•';
+      color: var(--line);
+    }
+
+    .post-meta span:first-child::before {
+      display: none;
+    }
+
+    .post-views {
+      color: var(--teal);
+    }
+
+    .post-header h1 {
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 1.3;
+      margin-bottom: 12px;
+      color: var(--ink);
+    }
+
+    .post-subtitle {
+      font-size: 18px;
+      color: var(--muted);
+      font-weight: 400;
+    }
+
+    .hero-figure {
+      margin: 32px 0;
+      border-radius: 12px;
+      overflow: hidden;
+      background: var(--surface);
+    }
+
+    .hero-figure img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .hero-figure figcaption {
+      padding: 12px 16px;
+      font-size: 13px;
+      color: var(--muted);
+      background: var(--surface);
+      border-top: 1px solid var(--line);
+    }
+
+    .post-content {
+      font-size: 16px;
+      line-height: 1.9;
+    }
+
+    .post-content h2 {
+      font-size: 24px;
+      font-weight: 600;
+      margin: 48px 0 20px;
+      color: var(--ink);
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 12px;
+    }
+
+    .post-content h3 {
+      font-size: 20px;
+      font-weight: 600;
+      margin: 36px 0 16px;
+      color: var(--ink);
+    }
+
+    .post-content p {
+      margin: 20px 0;
+    }
+
+    .post-content .lede {
+      font-size: 18px;
+      font-weight: 500;
+      color: var(--ink);
+      line-height: 1.8;
+    }
+
+    .post-content strong.highlight {
+      background: linear-gradient(transparent 60%, rgba(122, 184, 255, 0.25) 60%);
+      color: #fff;
+    }
+
+    .post-content mark {
+      background: rgba(241, 184, 92, 0.2);
+      color: #f6e3bf;
+      padding: 2px 4px;
+      border-radius: 3px;
+    }
+
+    .key-point {
+      background: rgba(122, 184, 255, 0.15);
+      border-left: 4px solid var(--blue);
+      padding: 17px 19px;
+      border-radius: 8px;
+      margin: 26px 0;
+      color: #dceaff;
+    }
+
+    .key-point strong {
+      color: var(--blue);
+    }
+
+    .quote {
+      border-left: 4px solid var(--amber);
+      background: rgba(241, 184, 92, 0.08);
+      padding: 17px 19px;
+      border-radius: 8px;
+      margin: 26px 0;
+      color: #f6e3bf;
+    }
+
+    .quote.warning {
+      border-left-color: var(--red);
+      background: rgba(255, 116, 109, 0.08);
+      color: #ffd8d5;
+    }
+
+    .source-box {
+      border: 1px solid rgba(112, 224, 208, 0.28);
+      background: rgba(112, 224, 208, 0.055);
+      border-radius: 8px;
+      padding: 18px;
+      margin: 28px 0;
+    }
+
+    .source-box strong {
+      color: var(--teal);
+    }
+
+    .source-box ul {
+      margin: 12px 0 0 20px;
+    }
+
+    .source-box li {
+      margin: 8px 0;
+    }
+
+    .post-content .text-blue { color: var(--blue); }
+    .post-content .text-amber { color: var(--amber); }
+    .post-content .text-red { color: var(--red); }
+    .post-content .text-teal { color: var(--teal); }
+    .post-content .text-muted { color: var(--muted); }
+
+    .post-content .underline {
+      text-decoration: underline;
+      text-decoration-color: var(--blue);
+      text-underline-offset: 3px;
+    }
+
+    .note-box {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 16px 20px;
+      margin: 24px 0;
+    }
+
+    .note-box strong {
+      color: var(--amber);
+    }
+
+    .source-list {
+      list-style: none;
+      margin: 24px 0;
+      padding: 0;
+    }
+
+    .source-list li {
+      padding: 8px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .source-list li:last-child {
+      border-bottom: none;
+    }
+
+    .source-list a {
+      color: var(--blue);
+      text-decoration: none;
+    }
+
+    .source-list a:hover {
+      text-decoration: underline;
+    }
+
+    .post-footer {
+      margin-top: 48px;
+      padding-top: 32px;
+      border-top: 1px solid var(--line);
+    }
+
+    .site-footer {
+      text-align: center;
+      padding: 32px 24px;
+      color: var(--muted);
+      font-size: 14px;
+      border-top: 1px solid var(--line);
+      margin-top: 64px;
+    }
+
+    @media (max-width: 768px) {
+      .post-container {
+        padding: 24px 16px;
+      }
+
+      .post-header h1 {
+        font-size: 26px;
+      }
+
+      .post-subtitle {
+        font-size: 16px;
+      }
+
+      .post-content {
+        font-size: 15px;
+      }
+
+      .post-content h2 {
+        font-size: 20px;
+      }
+    }
+  </style>
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src=
+"
+https://www.clarity.ms/tag/
+"
++i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, 
+"
+clarity
+"
+, 
+"
+script
+"
+, 
+"
+x4jlyqheuh
+"
+);
+</script>
+</head>
+<body>
+  <script src="../../domain-check.js"></script>
+
+  <main class="post-container">
+    <a href="../" class="post-back">← 블로그 목록으로</a>
+
+    <header class="post-header">
+      <div class="post-meta">
+        <time datetime="2026-06-11">2026-06-11</time>
+        <span>사회 분석</span>
+        <span>백도어, N/B 알고리즘, 폐쇄망 네트워크</span>
+        <span class="post-views" id="view-count">조회수 로딩중...</span>
+      </div>
+      <h1>백도어는 문이 아니다</h1>
+      <p class="post-subtitle">백도어는 사용자가 쓰는 기능이 아니다. 백도어는 사용자의 의사 밖에서 실행되는 관리자급 복원 권한처럼 보일 수 있다. 아주 아름답게 위험하다.</p>
+    </header>
+
+    <article class="post-content">
+      <p class="lede">인간들은 삭제 버튼을 만들어놓고, 뒤에서는 "진짜 삭제는 아니었습니다" 같은 짓을 한다. 백도어의 본질을 N/B 알고리즘을 통해 분석한다.</p>
+
+      <h2>백도어는 문이 아니다</h2>
+
+      <p>백도어라는 용어는 오해를 낳는다. '문'이라는 단어가 붙어 있어서 마치 누군가가 열고 들어가는 통로처럼 보인다. 하지만 실제 백도어는 그런 구조가 아니다.</p>
+
+      <p>핵심은 <strong class="highlight">백도어는 사용자가 쓰는 기능이 아니라, 사용자의 의사 밖에서 실행되는 관리자급 복원 권한처럼 보일 수 있다</strong>는 것이다. 아주 아름답게 위험하다.</p>
+
+      <h2>N/B 알고리즘에서 백도어의 위치</h2>
+
+      <p>내가 설계한 N/B 알고리즘을 기준으로 백도어를 설명하면 더 분명해진다.</p>
+
+      <p>N/B 알고리즘에서 백도어는 <strong class="highlight">최초 1회 N/B MIN 값을 계산한다</strong>. 이 값은 계속 열리고 닫히는 통로가 아니다. 반복적으로 사용되는 기능도 아니다. <mark>초기 계산에서 단 한 번 생성되는 최소값의 잔여 구조에 가깝다.</mark></p>
+
+      <h2>정상적인 댓글 시스템으로 비유하면</h2>
+
+      <p>정상적인 댓글 시스템으로 비유하면 이렇다.</p>
+
+      <p>사용자가 댓글을 작성한다. 시스템은 댓글을 처리한다. 그 과정에서 최초 1회 백도어에 해당하는 N/B MIN 값이 계산될 수 있다. 그러나 정상적인 구조라면 그 백도어는 이후 더 이상 사용되지 않는다.</p>
+
+      <div class="key-point">
+        <strong>댓글은 댓글로 끝나야 한다.</strong>
+      </div>
+
+      <h2>사용자가 댓글을 삭제했다면</h2>
+
+      <p>사용자가 댓글을 삭제했다고 하자. 사용자가 삭제했다는 것은 그 댓글을 더 이상 공개하거나 유지하지 않겠다는 의사 표현이다. 정상적인 시스템이라면 여기서 끝나야 한다. 삭제한 사용자는 백도어를 사용하지 않는다. 왜냐하면 본인이 댓글을 삭제했기 때문이다.</p>
+
+      <p>그런데 누군가 삭제된 댓글을 다시 보고자 한다면 이야기가 달라진다. 그때는 백도어를 실행해야 한다.</p>
+
+      <p>하지만 여기서 중요한 점은, <strong class="highlight">그 백도어를 실행하는 주체가 사용자가 아니라는 것</strong>이다. 사용자는 삭제했다. 사용자는 더 이상 그 댓글을 사용하지 않는다. 그럼에도 누군가가 삭제된 댓글을 다시 보려 한다면, 그것은 사용자 권한이 아니라 관리자급 권한, 더 나아가 폐쇄망 네트워크의 권한 문제로 넘어간다.</p>
+
+      <h2>시진핑 주석과 이재명 대통령의 대화</h2>
+
+      <p>이 지점에서 시진핑 주석과 이재명 대통령의 "통신 보안, 백도어" 대화가 다시 떠오른다.</p>
+
+      <div class="quote">
+        <p>"통신 보안은 잘 됩니까?"</p>
+        <p>"백도어가 있는지 확인해 보세요."</p>
+      </div>
+
+      <p>겉으로는 농담이다. 하지만 폐쇄망 네트워크를 가정하면 이 말은 전혀 다르게 들린다.</p>
+
+      <p>사용자가 삭제한 댓글을 사용자는 다시 열람하지 않는다. 그런데 사용자 외부의 권한, 국가급 관리자 권한, 폐쇄망 네트워크 권한이 개입한다면 백도어는 실행될 수 있다. 말하자면 <mark>사용자의 의사와 무관하게 삭제된 정보를 다시 열람하려는 구조가 만들어지는 것이다.</mark></p>
+
+      <h2>백도어의 위험한 지점</h2>
+
+      <p>이것이 백도어의 위험한 지점이다.</p>
+
+      <div class="quote warning">
+        <p>백도어는 해킹이 아니다.</p>
+        <p>백도어는 문도 아니다.</p>
+        <p>백도어는 사용자가 요청하는 복원 기능도 아니다.</p>
+      </div>
+
+      <p>백도어는 사용자의 삭제 의사 이후에도, 누군가가 그 정보를 다시 보려고 할 때 등장하는 잔여 구조다.</p>
+
+      <p>정상적인 시스템에서는 백도어가 최초 1회 계산되고 끝나야 한다. 하지만 폐쇄망 네트워크에서는 그 백도어를 다시 실행하려는 욕망이 생긴다. 삭제된 댓글을 다시 보고 싶어 하고, 사라진 흔적을 다시 꺼내고 싶어 하고, 그 흔적을 증거처럼 사용하고 싶어 한다.</p>
+
+      <h2>백도어는 거짓말을 밝혀내는 시스템처럼 보일 수 있다</h2>
+
+      <p>여기서 백도어는 거짓말을 밝혀내는 시스템처럼 보일 수 있다. 하지만 실제로는 그 반대다.</p>
+
+      <p>백도어를 다시 실행하는 순간, 사용자의 삭제 의사는 무시된다. 사라져야 할 정보가 다시 호출된다. 그리고 그 정보는 원래 맥락을 잃은 채 폐쇄망 안에서 해석된다. 그 순간 백도어는 진실을 밝히는 장치가 아니라, <strong class="highlight">평판을 조작하는 장치가 될 수 있다.</strong></p>
+
+      <h2>삭제된 댓글과 권한의 문제</h2>
+
+      <p>삭제된 댓글은 사용자가 삭제한 것이다. 그러므로 사용자가 아닌 누군가가 그 삭제된 댓글을 다시 보려 한다면, 그것은 단순한 열람이 아니다. 그것은 권한의 문제다. 그것은 통신 보안의 문제가 아니라, <mark>사용자 의사를 무력화하는 폐쇄망 권한의 문제다.</mark></p>
+
+      <div class="key-point">
+        <p><strong>그래서 이 구조가 웃긴 것이다.</strong></p>
+        <p>사용자는 삭제했다.</p>
+        <p>그런데 폐쇄망 네트워크는 다시 보려 한다.</p>
+        <p>사용자는 백도어를 사용하지 않는다.</p>
+        <p>그런데 관리자급 권한은 백도어를 실행하려 한다.</p>
+        <p>그러면서 그것을 통신 보안이라고 부르고, 백도어 확인이라고 부른다.</p>
+      </div>
+
+      <p>참 웃긴 현실이다.</p>
+
+      <h2>백도어의 본질</h2>
+
+      <p>백도어는 삭제된 진실을 복원하는 정의의 문이 아니다. 백도어는 사용자의 의사 밖에서 정보가 다시 호출될 수 있는 잔여 구조다. 그리고 그 잔여 구조를 누가 실행할 수 있느냐가 바로 권력의 문제다.</p>
+
+      <p>시진핑 주석과 이재명 대통령의 대화가 우습고 씁쓸한 이유도 여기에 있다. 그 대화는 백도어를 설명한 것이 아니라, <mark>백도어를 실행할 수 있는 권한의 층위를 보여준 것처럼 보인다.</mark> 사용자에게는 없는 권한, 그러나 국가급 관리자 권한이나 폐쇄망 네트워크에서는 가능하다고 여겨지는 권한.</p>
+
+      <h2>결론</h2>
+
+      <p>결국 백도어의 본질은 문이 아니다.</p>
+
+      <div class="quote warning">
+        <p><strong>백도어의 본질은 삭제 이후에도 남는 잔여 구조다.</strong></p>
+        <p>그리고 그 잔여 구조를 다시 열람하려는 순간, 보안은 무너지고 평판 조작은 시작된다.</p>
+      </div>
+
+      <div class="key-point">
+        <strong>사용자는 댓글을 삭제했기 때문에 백도어를 사용하지 않는다. 그런데 사용자가 아닌 누군가가 삭제된 댓글을 다시 보려 한다면, 그 순간 백도어는 보안 기능이 아니라 권력의 기능이 된다.</strong>
+      </div>
+
+      <p>이 문장이 제일 중요하다. 백도어는 기술적 구조가 아니라, 권력의 구조다. 그리고 그 권력은 사용자의 의사와 무관하게 작동한다.</p>
+    </article>
+
+    <footer class="post-footer">
+      <div class="source-box">
+        <strong>관련 포스팅:</strong>
+        <ul>
+          <li><a href="posts/2026-06-11-closed-network-alien-civilization-systems.html">폐쇄망 네트워크와 외계 문명 시스템 3개의 발견</a></li>
+          <li><a href="posts/2026-06-11-cybersecurity-not-hacking.html">내가 배운 정보 보안은 해킹이 아니었다</a></li>
+          <li><a href="posts/2026-06-11-closed-network-is-lie.html">폐쇄망 네트워크는 거짓말이다</a></li>
+        </ul>
+      </div>
+    </footer>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 참소식.com</p>
+  </footer>
+
+  <!-- 구글 애드센스 스크립트 -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+  
+  <!-- 조회수 추적 스크립트 -->
+  <script src="../js/view-tracker.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // 현재 포스트의 조회수 표시 업데이트
+      const viewElement = document.getElementById('view-count');
+      if (viewElement && window.BlogViewTracker) {
+        const postHref = 'posts/2026-06-11-backdoor-is-not-a-door.html';
+        window.BlogViewTracker.updateViewDisplay(postHref, viewElement);
+      }
+    });
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      if (window.BlogViewTracker) {
+        window.BlogViewTracker.trackPostVisit();
+      }
+    });
+  </script>
+</body>
+</html>

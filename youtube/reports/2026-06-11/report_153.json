@@ -1,0 +1,214 @@
+{
+  "timestamp": "2026-06-11T11:10:47.390378",
+  "model": "kimi-k2.5:cloud",
+  "keyword_count": 3,
+  "analyze_subtitles": true,
+  "analysis_source": "youtube",
+  "keywords": [
+    {
+      "keyword": "오늘의 주요 뉴스",
+      "is_fixed": true,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "서울국제도서전",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "스페이스X 상장 일정",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "중동쇼크 취업자 감소",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "오픈AI CEO 방한",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "스타벅스 일본 법인 매각",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "코스피 7400선 하락",
+      "is_fixed": false,
+      "views": [
+        119
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "이틀째 흔들리는 코스피…장 초반 7,400선 붕괴 / 연합뉴스TV (YonhapnewsTV)",
+          "video_id": "x2oV4Vwykv4",
+          "views": 119,
+          "upload_date": "2026-06-11",
+          "url": "https://www.youtube.com/watch?v=x2oV4Vwykv4",
+          "subtitle_summary": "The user wants a summary of a YouTube video transcript in Korean, around 500 characters, with 3-5 sentences covering the key points.\nKey points from the transcript:\n1. KOSPI plunged over 4% yesterday and opened lower today (down 2.86% to 7,509.62), briefly falling below 7,400 line but recovering to around 7,500 due to bargain hunting.\n2. Reasons: US stock decline due to Middle East tensions and tech stock plunge, plus SoftBank's large-scale fundraising news dampening AI-related tech stocks sentiment.\n3. It's \"Quadruple Witching Day\" (futures/options expiration), increasing volatility risk.\n4. Foreigners net selling over 600 billion won, individuals buying on dips.\n5. Top 22 market cap stocks all down - Samsung Electronics, SK Hynix down ~2%, Hyundai Motor, LG Energy Solution also weak.\n6. KOSDAQ also down 1.52% to 937.17.\n7. USD/KRW exchange rate opened at 1,525.5 won, up 1.3 won.\nI need to condense this into 3-5 sentences, around 500 characters.\nDraft:\n코스피가 이틀 연속 급락하며 장 초반 7,400선이 붕괴되는 등 7,500선 안팎에서 거래되고 있습니다. 미국 증시의 중동 정세 불안과 기술주 급락 영향에 더해 소프트뱅크의 대규모 자금 조달 소식으로 인공지능 관련주 투자 심리가 위축되었습니다. 또한 선물옵션 동시 만기일(네 마녀의 날)로 인해 장중 변동성이 확대될 우려도 있습니다. 외국인은 순매도세를 보이는 가운데 개인이 저가 매수에 나서고 있으며, 삼성전자와 SK하이닉스 등 시가총액 상위 종목들이 일제히 하락했습니다. 코스닥 역시 1.52% 밀린 937선에서 거래를 시작했습니다.\nCharacter count check:\n코스피가 이틀 연속 급락하며 장 초반 7,400선이 붕괴되는 등 7,500선 안팎에서 거래되고 있습니다. (49자)\n미국 증시의 중동 정세 불안과 기술주 급락 영향에 더해 소프트뱅크의 대규모 자금 조달 소식으로 인공지능 관련주 투자 심리가 위축되었습니다. (67자)\n또한 선물옵션 동시 만기일(네 마녀의 날)로 인해 장중 변동성이 확대될 우려도 있습니다. (43자)\n외국인은 순매도세를 보이는 가운데 개인이 저가 매수에 나서고 있으며, 삼성전자와 SK하이닉스 등 시가총액 상위 종목들이 일제히 하락했습니다. (67자)\n코스닥 역시 1.52% 밀린 937선에서 거래를 시작했습니다. (29자)\nTotal: ~255 characters. This is well under 500 characters but covers the key points in 5 sentences. The user asked for \"500자 내외\" which usually means around 500 characters, but can also mean \"within 500 characters\". However, looking at the requirement \"핵심 내용을 3-5문장으로 요약할 것\", having 5 sentences is good, but I should check if they want closer to 500 characters or if 250 is acceptable.\nActually, looking at the instruction again: \"500자 내외로 작성할 것\" and \"핵심 내용을 3-5문장으로 요약할 것\". Usually news summaries are concise. 250 characters is quite short for 5 sentences. Let me expand slightly to get closer to 400-500 characters while maintaining clarity.\nRevised draft:\n코스피가 이틀 연속 급락세를 보이며 장 초반 7,400선이 붕괴되는 등 7,500선 안팎",
+          "analysis_source": "subtitle",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "투표용지 부족 국정조사",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "반도체 산업 활황",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "원화 가치 하락 이유",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "이재명 정부 성공 사명",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "국민의힘 지도부 사퇴론",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "미국 소비자물가 상승",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "호르무즈해협 선박 통과",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "카카오 첫 파업 주가 하락",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "AI 메모리 수요 증설",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "schema": "pc-part-nb-collector-file.v1",
+  "updatedAt": "2026-06-14T03:55:19.378+09:00",
+  "category": "RAM",
+  "id": "ram-sk-ddr5-5600-cl46-16gb-pc5-44800",
+  "name": "SK하이닉스 DDR5-5600 CL46 16GB PC5-44800",
+  "maker": "SK하이닉스",
+  "platform": "DDR5",
+  "estimatedPriceKrw": 65000,
+  "priceBand": "15만원 미만",
+  "speedLabel": "5600MHz",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "RAM",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 50,
+  "valueIndex": 50,
+  "aiUseScore": 33,
+  "powerWatts": 0,
+  "tags": [
+    "standard",
+    "desktop"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "RAM",
+    "partId": "ram-sk-ddr5-5600-cl46-16gb-pc5-44800",
+    "partName": "SK하이닉스 DDR5-5600 CL46 16GB PC5-44800",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "RAM",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 500,
+      "value": 667,
+      "aiFit": 330,
+      "priceEfficiency": 1540,
+      "powerEfficiency": 500
+    },
+    "nbVector": [
+      100,
+      500,
+      667,
+      330,
+      1540,
+      500
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 154.297,
+    "nbMin": 319.615,
+    "weightedScore": 422,
+    "nbBand": "100~499",
+    "summary": "RAM SK하이닉스 DDR5-5600 CL46 16GB PC5-44800 부품을 속도 중심 N/B 데이터베이스 점수 422점으로 저장했습니다."
+  },
+  "nbWeightedScore": 422,
+  "nbMax": 154.297,
+  "nbMin": 319.615,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=SK%ED%95%98%EC%9D%B4%EB%8B%89%EC%8A%A4%20DDR5-5600%20CL46%2016GB%20PC5-44800%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "The search results primarily show third-party brands (Klevv, Patriot) using SK Hynix modules. However, since the query specifically targets the SK Hynix original part and the results confirm the existence and specifications of the 5600 CL46 16GB module, it is collected. Price is estimated based on typical market rates for original Hynix OEM/Retail sticks as the provided observed prices in the text are unit prices per 1GB or for third-party brands.",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

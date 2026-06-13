@@ -1,0 +1,249 @@
+{
+  "timestamp": "2026-06-11T14:48:00.793991",
+  "model": "kimi-k2.5:cloud",
+  "keyword_count": 3,
+  "analyze_subtitles": true,
+  "analysis_source": "youtube",
+  "keywords": [
+    {
+      "keyword": "오늘의 주요 뉴스",
+      "is_fixed": true,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "쿠팡 개인정보 유출 과징금",
+      "is_fixed": false,
+      "views": [
+        2279,
+        145099,
+        921
+      ],
+      "video_count": 3,
+      "videos": [
+        {
+          "title": "[🔴속보] 개보위 '쿠팡 개인정보 유출 사태' 제재 브리핑 \"과징금 6천2백억 원\" / \"조사 방해 추가 확인\" 쿠팡에 '철퇴' / SBS 뉴스속보",
+          "video_id": "RduSk2sbxCg",
+          "views": 2279,
+          "upload_date": "2026-06-11",
+          "url": "https://www.youtube.com/watch?v=RduSk2sbxCg",
+          "subtitle_summary": "The user wants a summary of a YouTube video subtitle in Korean, around 500 characters, with 3-5 sentences capturing the key points.\nKey points from the subtitle:\n1. Coupang was fined 62 billion won (6.2 billion? Wait, the title says 6천2백억 which is 620 billion, but the text says 과진금 2억 4,800만 원 which is 248 million... wait, looking carefully:\nTitle mentions: \"과징금 6천2백억 원\" (620 billion won)\nText mentions: \"과진금 2억 4,800만 원\" (248 million won) - this might be a typo in the ASR or a different fine\nActually looking at the text: \"과진금 2억 4,800만 원\" - this is likely a transcription error for \"과징금\". But the title says 6,200억 (620 billion). The text mentions \"과진금 2억 4,800만 원\" which is much smaller. This seems inconsistent. But the title clearly states \"과징금 6천2백억 원\" so I should mention the large fine amount.\n2. The data breach occurred from April to November 2025 (likely 2023 or 2024 but text says 25년)\n3. A former employee who developed the alternative authentication feature stole the signing key and created forged tokens\n4. About 33.2 million members' personal info and 4.33 million non-members' info leaked\n5. Names, emails, addresses, phone numbers of members and third parties (family, friends) were leaked\n6. The breach happened due to poor security management: keys were stored in plaintext, accessible to unnecessary personnel, and not revoked after the hacker resigned\n7. The company failed to detect illegal external access\nSummary structure:\nFine amount and reason (620 billion won fine for personal data leak)\nHow the leak happened (former employee stole authentication key, forged tokens)\nScale of damage (33 million+ members, 4 million+ non-members, personal info including addresses and phone numbers)\nCause (poor key management, plaintext storage, no revocation after resignation, lack of monitoring)\nMust be in Korean only, around 500 characters, 3-5 sentences.\nDraft:\n개인정보보호위원회는 쿠팡에 대해 개인정보 유출과 관리 체계 미비로 과징금 6,200억 원을 부과했다. 전직 직원이 인증 서명키를 획득해 위조 토큰을 생성하여 지난해 4월부터 11월까지 약 3,300만 명의 회원과 433만 명의 비회원 개인정보를 유출한 사실이 확인되었다. 쿠팡은 키를 평문으로 관리하고 퇴사자 접근 권한을 폐기하지 않는 등 기본적인 안전 관리에 실패했으며, 외부 불법 접근 탐지 대응도 소홀히 한 것으로 조사됐다.\nCharacter count check:\n개인정보보호위원회는 쿠팡에 대해 개인정보 유출과 관리 체계 미비로 과징금 6,200억 원을 부과했다. (49 chars)\n전직 직원이 인증 서명키를 획취해 위조 토큰을 생성하여 지난해 4월부터 11월까지 약 3,300만 명의 회원과 433만 명의 비회원 개인정보를 유출한 사실이 확인되었다. (87 chars)\n쿠팡은 키를 평문으로 관리하고 퇴사자 접근 권한을 폐기하지 않는 등 기본적인 안전 관리에 실패했으며, 외부 불법 접근 탐지 대응도 소홀히 한 것으로 조사됐다. (79 chars)\nTotal: around 215 characters. This is too short (needs to be around 500). Let me expand.\nRevised:\n개인정보보호위원회는 쿠팡의 대규모 개인정보 유출 사태와 관리 체계 미비에 대해 과징금 6,200�",
+          "analysis_source": "subtitle",
+          "db_saved": true
+        },
+        {
+          "title": "[On-Site Video] \"624.6 Billion Won\" Jaw-Dropping… Coupang Shocked by 'Unprecedented Fine' / JTBC ...",
+          "video_id": "78s-wcyMRuQ",
+          "views": 145099,
+          "upload_date": "2026-06-11",
+          "url": "https://www.youtube.com/watch?v=78s-wcyMRuQ",
+          "subtitle_summary": "The user wants a summary of a YouTube video subtitle in Korean, limited to around 500 characters, with 3-5 sentences covering the key points.\nKey points from the subtitle:\n1. Coupang data breach incident - 624.6 billion won fine (implied by title)\n2. Former employee who developed alternative authentication function stole the signing key and forged tokens\n3. Leaked personal info of about 33.2 million members and 4.33 million non-members from April to November 2025 (actually probably 2024 or the text has typo)\n4. Specific leaked data: names, emails (33M), shipping addresses (22.3M), phone numbers, order details (58,000)\n5. Cause: Basic security management failure, not sophisticated hacking. Poor key management (plaintext access, no revocation after employee left), failure to detect abnormal traffic despite massive increase, delayed notification (violated 72-hour rule), missed opportunities to block leak\nI need to summarize this in 3-5 sentences, around 500 characters, strictly in Korean.\nDraft:\n쿠팡이 전직 직원이 인증 서명키를 획득해 위조 토큰을 생성하여 개인정보를 유출한 사고와 관련해 6,246억 원의 과징금을 부과받았다. 약 3,320만 명의 회원과 433만 명의 비회원 정보가 유출되었으며, 이는 고도의 해킹이 아닌 기본적인 안전관리 체계 미비 때문이다. 쿠팡은 키 관리 소홀, 퇴사자 키 미폐기, 이상 트래픽 미탐지 등 보안 관리에 실패했고, 개인정보 유출 사실을 72시간 내에 통지하지 않아 법규도 위반했다.\nCharacter count check:\n쿠팡이 전직 직원이 인증 서명키를 획쓰득해 위조 토큰을 생성하여 개인정보를 유출한 사고와 관련해 6,246억 원의 과징금을 부과받았다. (72 chars)\n약 3,320만 명의 회원과 433만 명의 비회원 정보가 유출되었으며, 이는 고도의 해킹이 아닌 기본적인 안전관리 체계 미비 때문이다. (67 chars)\n쿠팡은 키 관리 소홀, 퇴사자 키 미폐기, 이상 트래픽 미탐지 등 보안 관리에 실패했고, 개인정보 유출 사실을 72시간 내에 통지하지 않아 법규도 위반했다. (78 chars)\nTotal around 217 characters. That's too short. I need to expand to around 400-500 characters while keeping it 3-5 sentences.\nRevised draft:\n쿠팡이 전직 직원이 대체 인증 서명키를 획득해 위조 토큰을 생성하여 개인정보를 유출한 사고와 관련해 6,246억 원의 역대급 과징금을 부과받았다. 약 3,320만 명의 회원과 433만 명의 비회원 등 총 3,700만 명 이상의 이름, 이메일, 배송지, 전화번호 등이 유출되었으며, 이는 고도의 해킹이 아닌 인증키 평문 관리, 퇴사자 키 미폐기, 이상 트래픽 미탐지 등 기본적인 안전관리 체계 미비로 발생했다. 또한 쿠팡은 개인정보 보호법상 의무인 유출 사실 72시간 내 통지를 위반하고 일부 정보주체에게는 통지조차 하지 않아 중대한 법규 위반 사실도 확인되었다.\nCharacter count:\n쿠팡이 전직 직원이 대체 인증 서명키를 획득해 위조 토큰을 생성하여 개인정보를 유출한 사고와 관련해 6,246억 원의 역대급 과징금",
+          "analysis_source": "subtitle",
+          "db_saved": true
+        },
+        {
+          "title": "[지금뉴스] 6,246억 원 과징금 맞은 쿠팡 “유감…법정서 다툴 것” / KBS 2026.06.11.",
+          "video_id": "pWs9merURaU",
+          "views": 921,
+          "upload_date": "2026-06-11",
+          "url": "https://www.youtube.com/watch?v=pWs9merURaU",
+          "subtitle_summary": "쿠팡이 개인정보보호위원회로부터 6,246억 원의 과징금을 부과받았다. 이는 국내 기업이 개인정보 보호법 위반으로 받은 최대 규모의 제재다. 쿠팡은 이에 대해 유감을 표하면서도 법정에서 다투겠다는 입장을 밝혔다. 이번 제재는 쿠팡이 고객 개인정보를 부적절하게 처리한 혐의에 따른 것으로, 위원회는 쿠팡의 정보 관리 체계에 심각한 문제가 있다고 지적했다. 쿠팡은 향후 법적 대응을 통해 입장을 적극적으로 방어할 계획이다.",
+          "analysis_source": "web_search",
+          "db_saved": true
+        }
+      ],
+      "max": 0.9369,
+      "min": 1.8925,
+      "nb_score": 0.495,
+      "avg_views": 49433.0,
+      "total_views": 148299
+    },
+    {
+      "keyword": "레미콘 파업 합의안 부결",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "KF-21 보라매 시험비행",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "볼보 ES90 한국 출시",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "SK텔레콤 기관투자 동향",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "가상자산 기관자본 유입",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "서울 3차 도시철도 계획",
+      "is_fixed": false,
+      "views": [
+        8
+      ],
+      "video_count": 1,
+      "videos": [
+        {
+          "title": "서울시, 강북횡단선 등 6개 철도 노선 추진 [서울]",
+          "video_id": "ieJD6Mn9Fck",
+          "views": 8,
+          "upload_date": "2026-06-11",
+          "url": "https://www.youtube.com/watch?v=ieJD6Mn9Fck",
+          "subtitle_summary": "The user wants me to summarize a YouTube video caption in Korean, within approximately 500 characters, using 3-5 sentences. The caption is about Seoul City pushing forward with 6 railway lines including the Gangbuk Transverse Line.\nKey points from the caption:\n1. Seoul is pushing 6 urban railway lines including Gangbuk Transverse Line and Nangok Line\n2. Plan is the 3rd urban railway construction plan with budget of 199.6 billion won (wait, that seems too small... probably 1.996 trillion won? But I should stick to what's written or check - it says \"구조 1996억\" which might be \"규모 1조 996억\" or just \"1996억\" - but looking at the text: \"구조 1996억 원\" - this seems like a typo in the original caption, probably meant to be larger, but I should summarize as is or interpret reasonably)\n3. Lines mentioned: Gangbuk Transverse Line (Mokdong to Cheongnyangnae), Nangok Line (Boramae Park to Nanghyang-dong), Seonnam Line, Seobu Line\n4. Expected effects: average subway access time reduced from 10 min to 8 min, population served increases by 360,000\n5. Schedule: public hearing on the 30th, then approval process from Ministry of Land, Infrastructure and Transport in second half of year\nConstraints:\nOnly Korean\nNo English at all\nAround 500 characters\n3-5 sentences summarizing key content\nLet me draft:\n서울시가 강북횡단선, 난곡선 등 6개 도시철도 노선 건설을 추진한다. 이는 강북·선남권 대계조와 지역 균형 발전을 위한 제3차 도시철도망 구축 계획으로, 목동-청량리를 잇는 강북횡단선과 보라매공원-난향동을 연결하는 난곡선, 선남선, 서부선 등이 포함된다. 이 계획이 실현되면 지하철 평균 접근 시간이 10분에서 8분으로 단축되고 철도 수혜 인구도 36만 명 증가할 전망이다. 서울시는 오는 30일 시민 공청회를 거쳐 하반기 국토교통부 승인 절차를 진행할 예정이다.\nCharacter count check:\n서울시가 강북횡단선, 난곡선 등 6개 도시철도 노선 건설을 추진한다. (35자)\n이는 강북·선남권 대계조와 지역 균형 발전을 위한 제3차 도시철도망 구축 계획으로, 목동-청량리를 잇는 강북횡단선과 보라매공원-난향동을 연결하는 난곡선, 선남선, 서부선 등이 포함된다. (96자)\n이 계획이 실현되면 지하철 평균 접근 시간이 10분에서 8분으로 단축되고 철도 수혜 인구도 36만 명 증가할 전망이다. (59자)\n서울시는 오는 30일 시민 공청회를 거쳐 하반기 국토교통부 승인 절차를 진행할 예정이다. (43자)\nTotal: around 233 characters. This is well under 500 characters, but the user said \"500자 내외\" which usually means around 500, but 3-5 sentences constraint might keep it shorter. However, I can expand slightly to be closer to 500 while keeping it concise.\nRevised draft with more detail:\n서울시가 강북횡단선과 난곡선 등 6개 신규 도시철도 노선 건설을 본격 추진한다. 이는 강북 및 선남권 대계조와 지역 균형 발전을 목표로 한 제3차 도시철도망 구축 계획의 일환으로",
+          "analysis_source": "subtitle",
+          "db_saved": true
+        }
+      ],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "투표용지 부족 사태",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "중대재해 포스",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "변동금리 주담대 쏠림 현상",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "스페이스X 스타링크 공모 청약",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "삼성중공업 FLNG 사업 전략",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "SK하이닉스 HBM 시장 점유율",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "엔비디아 CEO 네이버 협력",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    },
+    {
+      "keyword": "LNG 운반선 호르무즈 해",
+      "is_fixed": false,
+      "views": [],
+      "video_count": 0,
+      "videos": [],
+      "max": 0,
+      "min": 0,
+      "nb_score": 0,
+      "avg_views": 0,
+      "total_views": 0
+    }
+  ]
+}

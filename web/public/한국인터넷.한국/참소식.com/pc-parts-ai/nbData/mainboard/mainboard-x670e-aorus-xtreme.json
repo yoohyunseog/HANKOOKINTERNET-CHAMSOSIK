@@ -1,0 +1,90 @@
+{
+  "schema": "pc-part-nb-collector-file.v1",
+  "updatedAt": "2026-06-14T03:55:16.467+09:00",
+  "category": "Mainboard",
+  "id": "mainboard-x670e-aorus-xtreme",
+  "name": "X670E AORUS XTREME",
+  "maker": "Gigabyte",
+  "platform": "AM5",
+  "estimatedPriceKrw": 2071900,
+  "priceBand": "60만원 이상",
+  "speedLabel": "DDR5",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "Mainboard",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 100,
+  "valueIndex": 4.8,
+  "aiUseScore": 65,
+  "powerWatts": 0,
+  "tags": [
+    "high-end",
+    "gaming",
+    "overclocking"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "Mainboard",
+    "partId": "mainboard-x670e-aorus-xtreme",
+    "partName": "X670E AORUS XTREME",
+    "speed": {
+      "score": 100,
+      "weight": 0.32,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "Mainboard",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 1000,
+      "value": 100,
+      "aiFit": 650,
+      "priceEfficiency": 50,
+      "powerEfficiency": 1000
+    },
+    "nbVector": [
+      100,
+      1000,
+      100,
+      650,
+      50,
+      1000
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 250.044,
+    "nbMin": 331.889,
+    "weightedScore": 375,
+    "nbBand": "100~499",
+    "summary": "Mainboard X670E AORUS XTREME 부품을 속도 중심 N/B 데이터베이스 점수 375점으로 저장했습니다."
+  },
+  "nbWeightedScore": 375,
+  "nbMax": 250.044,
+  "nbMin": 331.889,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Gigabyte%20X670E%20AORUS%20XTREME%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "EATX form factor, PCIe 5.0 support",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

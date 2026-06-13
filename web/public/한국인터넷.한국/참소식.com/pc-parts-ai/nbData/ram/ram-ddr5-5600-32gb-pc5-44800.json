@@ -1,0 +1,89 @@
+{
+  "schema": "pc-part-nb-collector-file.v1",
+  "updatedAt": "2026-06-14T03:55:18.534+09:00",
+  "category": "RAM",
+  "id": "ram-ddr5-5600-32gb-pc5-44800",
+  "name": "DDR5-5600 32GB PC5-44800",
+  "maker": "SK하이닉스",
+  "platform": "DDR5",
+  "estimatedPriceKrw": 202000,
+  "priceBand": "15~30만원",
+  "speedLabel": "5600MHz",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "RAM",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 50,
+  "valueIndex": 24.8,
+  "aiUseScore": 33,
+  "powerWatts": 0,
+  "tags": [
+    "desktop",
+    "standard"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "RAM",
+    "partId": "ram-ddr5-5600-32gb-pc5-44800",
+    "partName": "DDR5-5600 32GB PC5-44800",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "RAM",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 500,
+      "value": 331,
+      "aiFit": 330,
+      "priceEfficiency": 500,
+      "powerEfficiency": 500
+    },
+    "nbVector": [
+      100,
+      500,
+      331,
+      330,
+      500,
+      500
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 498.927,
+    "nbMin": 408.487,
+    "weightedScore": 291,
+    "nbBand": "100~499",
+    "summary": "RAM DDR5-5600 32GB PC5-44800 부품을 속도 중심 N/B 데이터베이스 점수 291점으로 저장했습니다."
+  },
+  "nbWeightedScore": 291,
+  "nbMax": 498.927,
+  "nbMin": 408.487,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=SK%ED%95%98%EC%9D%B4%EB%8B%89%EC%8A%A4%20DDR5-5600%2032GB%20PC5-44800",
+  "notes": "Standard non-ECC unbuffered desktop memory",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

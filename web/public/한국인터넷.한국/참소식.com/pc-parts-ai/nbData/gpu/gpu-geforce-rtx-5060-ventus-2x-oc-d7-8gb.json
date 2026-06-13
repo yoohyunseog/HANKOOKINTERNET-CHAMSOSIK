@@ -1,0 +1,89 @@
+{
+  "schema": "pc-part-nb-collector-file.v1",
+  "updatedAt": "2026-06-14T03:55:05.471+09:00",
+  "category": "GPU",
+  "id": "gpu-geforce-rtx-5060-ventus-2x-oc-d7-8gb",
+  "name": "GeForce RTX 5060 Ventus 2X OC D7 8GB",
+  "maker": "MSI",
+  "platform": "PCIe 5.0",
+  "estimatedPriceKrw": 496770,
+  "priceBand": "30~60만원",
+  "speedLabel": "2535MHz",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "GPU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 60,
+  "valueIndex": 12.1,
+  "aiUseScore": 60,
+  "powerWatts": 145,
+  "tags": [
+    "gaming",
+    "ai"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "GPU",
+    "partId": "gpu-geforce-rtx-5060-ventus-2x-oc-d7-8gb",
+    "partName": "GeForce RTX 5060 Ventus 2X OC D7 8GB",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "GPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 600,
+      "value": 161,
+      "aiFit": 600,
+      "priceEfficiency": 200,
+      "powerEfficiency": 138
+    },
+    "nbVector": [
+      100,
+      600,
+      161,
+      600,
+      200,
+      138
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 198.556,
+    "nbMin": 403.109,
+    "weightedScore": 269,
+    "nbBand": "100~499",
+    "summary": "GPU GeForce RTX 5060 Ventus 2X OC D7 8GB 부품을 속도 중심 N/B 데이터베이스 점수 269점으로 저장했습니다."
+  },
+  "nbWeightedScore": 269,
+  "nbMax": 198.556,
+  "nbMin": 403.109,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=RTX%205060%20MSI%20Ventus%202X%20OC%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "GDDR7 memory, 2-fan design",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

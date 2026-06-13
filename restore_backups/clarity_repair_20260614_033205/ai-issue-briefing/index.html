@@ -1,0 +1,1296 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <script src="../domain-check.js"></script>
+    <script src="https://w.soundcloud.com/player/api.js"></script>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI SoundCloud Radio DJ | 참소식.com</title>
+    <style>
+      :root {
+        --bg: #050814;
+        --panel: rgba(9, 14, 31, 0.88);
+        --panel-strong: rgba(11, 18, 41, 0.96);
+        --line: rgba(154, 79, 255, 0.42);
+        --cyan: #12dfff;
+        --pink: #ff2b95;
+        --purple: #8c3dff;
+        --blue: #236dff;
+        --green: #37ff86;
+        --amber: #ffd04d;
+        --text: #f6f2ff;
+        --muted: #a9a8cc;
+        --shadow: 0 18px 60px rgba(93, 31, 222, 0.26);
+        color: var(--text);
+        font-family: "Segoe UI", "Noto Sans KR", AppleSDGothicNeo, sans-serif;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        padding-bottom: 98px;
+        background:
+          radial-gradient(circle at 22% 0, rgba(121, 42, 255, 0.32), transparent 30%),
+          radial-gradient(circle at 88% 8%, rgba(0, 204, 255, 0.2), transparent 28%),
+          linear-gradient(180deg, #060511 0%, #071023 52%, #030713 100%);
+        overflow-x: hidden;
+      }
+
+      body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+        background:
+          linear-gradient(rgba(18, 223, 255, 0.055) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(255, 43, 149, 0.045) 1px, transparent 1px);
+        background-size: 42px 42px;
+        mask-image: linear-gradient(180deg, black 0%, transparent 88%);
+      }
+
+      button,
+      input,
+      textarea {
+        font: inherit;
+      }
+
+      button {
+        cursor: pointer;
+      }
+
+      .wrap {
+        width: min(1220px, calc(100vw - 32px));
+        margin: 0 auto;
+        padding: 14px 0 34px;
+      }
+
+      .glass {
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: linear-gradient(180deg, rgba(14, 20, 45, 0.94), rgba(6, 10, 26, 0.9));
+        box-shadow: var(--shadow), inset 0 0 0 1px rgba(255, 255, 255, 0.04);
+      }
+
+      .topbar {
+        min-height: 52px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        padding: 10px 16px;
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-weight: 950;
+      }
+
+      .brand-dot {
+        width: 18px;
+        height: 18px;
+        border: 3px solid var(--purple);
+        border-radius: 50%;
+        box-shadow: 0 0 20px var(--purple);
+      }
+
+      .mode-pill,
+      .live-pill,
+      .mini-pill {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 24px;
+        padding: 4px 10px;
+        border-radius: 5px;
+        border: 1px solid rgba(140, 61, 255, 0.6);
+        color: #dbcfff;
+        background: rgba(83, 38, 184, 0.48);
+        font-size: 13px;
+        font-weight: 900;
+      }
+
+      .status-line {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        color: var(--muted);
+        font-size: 13px;
+        font-weight: 800;
+      }
+
+      .green-dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: var(--green);
+        box-shadow: 0 0 14px var(--green);
+      }
+
+      .player {
+        display: grid;
+        grid-template-columns: 86px 1fr 86px 96px 104px 110px 250px 28px;
+        gap: 14px;
+        align-items: center;
+        margin-top: 10px;
+        padding: 14px;
+      }
+
+      .cover {
+        aspect-ratio: 1;
+        border-radius: 6px;
+        background:
+          radial-gradient(circle at 52% 38%, rgba(255, 255, 255, 0.92) 0 3px, transparent 4px),
+          radial-gradient(circle at 40% 35%, rgba(18, 223, 255, 0.75), transparent 16%),
+          radial-gradient(circle at 68% 62%, rgba(255, 43, 149, 0.78), transparent 18%),
+          conic-gradient(from 45deg, #240041, #0f59ff, #ff1478, #1df2ff, #240041);
+        box-shadow: inset 0 0 32px rgba(0, 0, 0, 0.55), 0 0 22px rgba(255, 43, 149, 0.28);
+      }
+
+      .track-title {
+        margin: 0;
+        font-size: 16px;
+        font-weight: 950;
+      }
+
+      .track-meta {
+        margin-top: 5px;
+        color: var(--muted);
+        font-size: 12px;
+        font-weight: 800;
+      }
+
+      .wave-row {
+        display: grid;
+        grid-template-columns: 54px 1fr 54px;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .timecode {
+        color: #dad7ff;
+        font-size: 12px;
+        font-weight: 900;
+        text-align: center;
+      }
+
+      .bars {
+        display: flex;
+        align-items: end;
+        gap: 2px;
+        height: 62px;
+        overflow: hidden;
+      }
+
+      .bars span {
+        flex: 1;
+        min-width: 3px;
+        height: calc(var(--h) * 1px);
+        border-radius: 4px 4px 0 0;
+        background: linear-gradient(180deg, var(--cyan), var(--blue) 48%, var(--pink));
+        box-shadow: 0 0 10px rgba(18, 223, 255, 0.35);
+        animation: pulse 1.3s ease-in-out infinite alternate;
+        animation-delay: calc(var(--i) * -0.04s);
+      }
+
+      .play-ring {
+        width: 80px;
+        aspect-ratio: 1;
+        display: grid;
+        place-items: center;
+        border: 2px solid rgba(255, 255, 255, 0.22);
+        border-radius: 50%;
+        color: white;
+        background:
+          radial-gradient(circle, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.02)),
+          linear-gradient(135deg, rgba(255, 43, 149, 0.35), rgba(18, 223, 255, 0.2));
+        box-shadow: 0 0 28px var(--purple), inset 0 0 20px rgba(255, 255, 255, 0.1);
+        font-size: 28px;
+        font-weight: 950;
+      }
+
+      .neon-btn {
+        min-height: 42px;
+        border: 1px solid rgba(140, 61, 255, 0.75);
+        border-radius: 6px;
+        color: white;
+        background: linear-gradient(180deg, rgba(87, 49, 208, 0.92), rgba(33, 18, 109, 0.92));
+        box-shadow: 0 0 18px rgba(140, 61, 255, 0.34);
+        font-weight: 950;
+      }
+
+      .neon-btn.hot {
+        border-color: rgba(255, 43, 149, 0.9);
+        background: linear-gradient(180deg, rgba(255, 43, 149, 0.85), rgba(117, 17, 64, 0.9));
+      }
+
+      .eq {
+        display: flex;
+        align-items: end;
+        gap: 4px;
+        height: 60px;
+        padding: 8px;
+        border-left: 1px solid rgba(255, 255, 255, 0.08);
+      }
+
+      .eq span {
+        width: 5px;
+        height: calc(var(--h) * 1px);
+        border-radius: 4px;
+        background: linear-gradient(180deg, #ffdf4d, #20ff9b 42%, #12dfff 70%, #9e39ff);
+        animation: pulse 1s ease-in-out infinite alternate;
+        animation-delay: calc(var(--i) * -0.08s);
+      }
+
+      .nav {
+        display: grid;
+        grid-template-columns: 140px repeat(8, 1fr);
+        gap: 8px;
+        align-items: center;
+        margin-top: 14px;
+        padding: 10px 12px;
+      }
+
+      .nav-logo {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 18px;
+        font-weight: 950;
+      }
+
+      .ai-mark {
+        display: grid;
+        place-items: center;
+        width: 38px;
+        height: 34px;
+        border-radius: 5px;
+        color: #f4d6ff;
+        background: rgba(140, 61, 255, 0.25);
+        font-size: 24px;
+        font-weight: 950;
+      }
+
+      .nav button {
+        min-height: 38px;
+        border: 0;
+        border-radius: 5px;
+        color: #d8d4ff;
+        background: transparent;
+        font-weight: 900;
+      }
+
+      .nav button.active,
+      .nav button:hover {
+        color: #fff;
+        background: rgba(35, 109, 255, 0.35);
+      }
+
+      .hero {
+        display: grid;
+        grid-template-columns: 1fr 260px;
+        gap: 18px;
+        min-height: 308px;
+        margin-top: 14px;
+        padding: 18px;
+        background:
+          linear-gradient(90deg, rgba(5, 8, 20, 0.78), rgba(5, 8, 20, 0.18)),
+          radial-gradient(circle at 49% 15%, rgba(255, 43, 149, 0.55), transparent 18%),
+          radial-gradient(circle at 62% 18%, rgba(18, 223, 255, 0.38), transparent 23%),
+          linear-gradient(180deg, rgba(134, 44, 255, 0.2), rgba(4, 8, 23, 0.2)),
+          url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 900 320'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' x2='1'%3E%3Cstop stop-color='%23100527'/%3E%3Cstop offset='.45' stop-color='%23251966'/%3E%3Cstop offset='1' stop-color='%23001028'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='900' height='320' fill='url(%23g)'/%3E%3Cg opacity='.55'%3E%3Ccircle cx='180' cy='96' r='74' fill='%23ff2b95'/%3E%3Ccircle cx='680' cy='82' r='82' fill='%2312dfff'/%3E%3C/g%3E%3Cg fill='%23050712'%3E%3Crect x='0' y='224' width='900' height='96'/%3E%3Ccircle cx='260' cy='258' r='64'/%3E%3Ccircle cx='650' cy='258' r='64'/%3E%3Crect x='344' y='210' width='240' height='104' rx='8'/%3E%3C/g%3E%3Cg fill='none' stroke='%23a645ff' stroke-width='5'%3E%3Ccircle cx='260' cy='258' r='42'/%3E%3Ccircle cx='650' cy='258' r='42'/%3E%3Cpath d='M370 230h188M385 250h158M400 270h128'/%3E%3C/g%3E%3Ctext x='448' y='132' text-anchor='middle' font-size='48' font-family='Arial' font-weight='900' fill='%23ff79c9' stroke='%23ff2b95' stroke-width='2'%3EON AIR%3C/text%3E%3C/svg%3E");
+        background-size: cover;
+        background-position: center;
+      }
+
+      .hero-copy {
+        display: grid;
+        align-content: center;
+        max-width: 540px;
+      }
+
+      .hero h1 {
+        margin: 0;
+        font-size: clamp(34px, 5vw, 54px);
+        line-height: 1.1;
+        letter-spacing: 0;
+      }
+
+      .hero h1 span {
+        color: var(--cyan);
+        text-shadow: 0 0 18px rgba(18, 223, 255, 0.6);
+      }
+
+      .hero p {
+        margin: 18px 0 24px;
+        color: #c9bbff;
+        font-size: 22px;
+        font-weight: 900;
+      }
+
+      .now-card {
+        align-self: stretch;
+        padding: 16px;
+        background: rgba(8, 11, 27, 0.82);
+      }
+
+      .now-card h3,
+      .panel-title {
+        margin: 0 0 14px;
+        font-size: 20px;
+        font-weight: 950;
+      }
+
+      .progress {
+        height: 7px;
+        overflow: hidden;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.08);
+      }
+
+      .progress span {
+        display: block;
+        width: 45%;
+        height: 100%;
+        border-radius: inherit;
+        background: linear-gradient(90deg, var(--pink), var(--purple), var(--cyan));
+      }
+
+      .grid {
+        display: grid;
+        gap: 14px;
+        margin-top: 14px;
+      }
+
+      .stats-row {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .main-grid {
+        grid-template-columns: 340px 1fr 320px;
+      }
+
+      .lower-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .wide-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .card {
+        padding: 18px;
+      }
+
+      .broadcast {
+        min-height: 118px;
+        display: grid;
+        align-content: center;
+        background:
+          linear-gradient(90deg, rgba(255, 43, 149, 0.22), transparent),
+          linear-gradient(180deg, rgba(28, 10, 35, 0.96), rgba(12, 7, 24, 0.96));
+      }
+
+      .broadcast strong {
+        display: block;
+        color: #ff5aa9;
+        font-size: 24px;
+        text-shadow: 0 0 16px rgba(255, 43, 149, 0.55);
+      }
+
+      .small-wave {
+        display: flex;
+        align-items: end;
+        gap: 3px;
+        height: 52px;
+        margin-top: 12px;
+      }
+
+      .small-wave span {
+        flex: 1;
+        height: calc(var(--h) * 1px);
+        border-radius: 4px 4px 0 0;
+        background: linear-gradient(180deg, var(--pink), var(--cyan));
+        opacity: 0.9;
+        animation: pulse 1.1s ease-in-out infinite alternate;
+      }
+
+      .chat-list,
+      .visitor-list,
+      .memo-list,
+      .log-list,
+      .set-list {
+        display: grid;
+        gap: 10px;
+      }
+
+      .chat-item,
+      .visitor-item,
+      .memo-item,
+      .log-item,
+      .set-item {
+        display: grid;
+        gap: 4px;
+        padding: 12px;
+        border: 1px solid rgba(120, 91, 255, 0.2);
+        border-radius: 7px;
+        background: rgba(255, 255, 255, 0.035);
+      }
+
+      .chat-item {
+        grid-template-columns: 42px 1fr auto;
+        align-items: center;
+      }
+
+      .avatar {
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, var(--cyan), var(--purple), var(--pink));
+      }
+
+      .chat-name,
+      .visitor-name {
+        font-weight: 950;
+      }
+
+      .chat-text,
+      .memo-text,
+      .muted {
+        color: var(--muted);
+        font-size: 13px;
+        font-weight: 750;
+      }
+
+      .chat-form,
+      .memo-form {
+        display: grid;
+        grid-template-columns: 1fr 44px;
+        gap: 8px;
+        margin-top: 12px;
+      }
+
+      .input {
+        min-height: 42px;
+        width: 100%;
+        border: 1px solid rgba(140, 61, 255, 0.55);
+        border-radius: 6px;
+        color: var(--text);
+        background: rgba(0, 0, 0, 0.28);
+        padding: 10px 12px;
+      }
+
+      .send {
+        border: 1px solid var(--cyan);
+        border-radius: 6px;
+        color: var(--cyan);
+        background: rgba(18, 223, 255, 0.12);
+        font-size: 20px;
+        font-weight: 950;
+      }
+
+      .radio-panel {
+        min-height: 430px;
+      }
+
+      .radio-inner {
+        display: grid;
+        grid-template-columns: 1fr 180px;
+        gap: 14px;
+      }
+
+      .info-stack {
+        display: grid;
+        gap: 10px;
+      }
+
+      .info-box {
+        min-height: 82px;
+        padding: 12px;
+        border: 1px solid rgba(120, 91, 255, 0.24);
+        border-radius: 7px;
+        background: rgba(255, 255, 255, 0.035);
+      }
+
+      .mic-sign {
+        min-height: 250px;
+        display: grid;
+        place-items: center;
+        border: 1px solid rgba(140, 61, 255, 0.28);
+        border-radius: 7px;
+        background: radial-gradient(circle, rgba(140, 61, 255, 0.22), transparent 60%);
+      }
+
+      .mic {
+        width: 128px;
+        height: 188px;
+        display: grid;
+        place-items: center;
+        border: 4px solid var(--purple);
+        border-radius: 64px 64px 20px 20px;
+        box-shadow: 0 0 28px var(--purple), inset 0 0 24px rgba(140, 61, 255, 0.28);
+        color: var(--pink);
+        font-size: 28px;
+        font-weight: 950;
+      }
+
+      .mixer {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 12px;
+      }
+
+      .channel {
+        min-height: 210px;
+        display: grid;
+        justify-items: center;
+        gap: 8px;
+        padding: 12px 8px;
+        border: 1px solid rgba(120, 91, 255, 0.25);
+        border-radius: 7px;
+        background: rgba(255, 255, 255, 0.035);
+      }
+
+      .slider {
+        writing-mode: vertical-lr;
+        direction: rtl;
+        width: 26px;
+        height: 118px;
+        accent-color: var(--pink);
+      }
+
+      .meter {
+        width: 9px;
+        height: 110px;
+        border-radius: 99px;
+        background:
+          linear-gradient(180deg, #ff3434 0 12%, #ffd84a 12% 35%, #23ff73 35% 100%);
+        opacity: 0.85;
+      }
+
+      .crossfade {
+        margin-top: 14px;
+      }
+
+      .crossfade input {
+        width: 100%;
+        accent-color: var(--purple);
+      }
+
+      .tabs {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 8px;
+        margin-top: 14px;
+      }
+
+      .tabs button {
+        min-height: 40px;
+        border: 1px solid rgba(120, 91, 255, 0.35);
+        border-radius: 5px;
+        color: #cfc7ff;
+        background: rgba(255, 255, 255, 0.04);
+        font-weight: 850;
+      }
+
+      .tabs button.active {
+        color: white;
+        background: rgba(140, 61, 255, 0.46);
+      }
+
+      .viz {
+        min-height: 235px;
+        background:
+          radial-gradient(circle at 55% 20%, rgba(18, 223, 255, 0.18), transparent 35%),
+          linear-gradient(180deg, rgba(10, 12, 30, 0.95), rgba(5, 8, 17, 0.95));
+      }
+
+      .spectrum {
+        display: flex;
+        align-items: end;
+        gap: 5px;
+        height: 150px;
+        margin-top: 10px;
+      }
+
+      .spectrum span {
+        flex: 1;
+        height: calc(var(--h) * 1px);
+        border-radius: 4px 4px 0 0;
+        background: linear-gradient(180deg, #12dfff, #8c3dff 54%, #ff2b95);
+        box-shadow: 0 0 18px rgba(140, 61, 255, 0.45);
+        animation: pulse 1.2s ease-in-out infinite alternate;
+      }
+
+      .analysis-row {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 12px;
+      }
+
+      .dial {
+        display: grid;
+        place-items: center;
+        min-height: 118px;
+        border-radius: 50%;
+        border: 4px solid rgba(140, 61, 255, 0.35);
+        box-shadow: inset 0 0 26px rgba(140, 61, 255, 0.12);
+      }
+
+      .dial strong {
+        display: block;
+        font-size: 30px;
+      }
+
+      .quick-grid {
+        grid-template-columns: repeat(6, 1fr);
+      }
+
+      .quick {
+        display: grid;
+        place-items: center;
+        gap: 8px;
+        min-height: 104px;
+        border: 1px solid rgba(18, 223, 255, 0.3);
+        border-radius: 7px;
+        background: rgba(18, 223, 255, 0.055);
+        color: #dffcff;
+        font-weight: 900;
+      }
+
+      .quick strong {
+        font-size: 26px;
+      }
+
+      .cta {
+        display: grid;
+        grid-template-columns: 260px 1fr 190px;
+        align-items: center;
+        gap: 20px;
+        margin-top: 18px;
+        padding: 16px 22px;
+        background:
+          linear-gradient(90deg, rgba(255, 43, 149, 0.16), rgba(18, 223, 255, 0.12)),
+          linear-gradient(180deg, rgba(16, 11, 36, 0.95), rgba(7, 11, 24, 0.95));
+      }
+
+      .deck-photo {
+        min-height: 120px;
+        border-radius: 7px;
+        background:
+          radial-gradient(circle at 25% 52%, transparent 0 28px, rgba(18, 223, 255, 0.95) 29px 31px, transparent 32px),
+          radial-gradient(circle at 74% 52%, transparent 0 28px, rgba(255, 43, 149, 0.95) 29px 31px, transparent 32px),
+          linear-gradient(135deg, #0a1230, #26105c 48%, #061727);
+        box-shadow: inset 0 0 60px rgba(0, 0, 0, 0.5);
+      }
+
+      .footer {
+        display: grid;
+        grid-template-columns: 1.4fr repeat(3, 1fr) 1.2fr;
+        gap: 28px;
+        margin-top: 26px;
+        padding: 34px 28px;
+        background: linear-gradient(180deg, rgba(11, 27, 58, 0.9), rgba(6, 12, 29, 0.96));
+      }
+
+      .footer h3,
+      .footer h4 {
+        margin: 0 0 14px;
+      }
+
+      .footer a,
+      .footer p {
+        display: block;
+        margin: 7px 0;
+        color: var(--muted);
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 750;
+      }
+
+      .bottom-player {
+        position: fixed;
+        z-index: 20;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: grid;
+        grid-template-columns: 280px 1fr 220px 230px;
+        gap: 18px;
+        align-items: center;
+        min-height: 82px;
+        padding: 10px max(16px, calc((100vw - 1220px) / 2 + 16px));
+        border-top: 1px solid rgba(140, 61, 255, 0.5);
+        background: rgba(4, 8, 19, 0.96);
+        box-shadow: 0 -20px 50px rgba(0, 0, 0, 0.45);
+      }
+
+      .bottom-track {
+        display: grid;
+        grid-template-columns: 58px 1fr;
+        gap: 12px;
+        align-items: center;
+      }
+
+      .transport {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 18px;
+      }
+
+      .icon-btn {
+        width: 44px;
+        height: 44px;
+        border: 0;
+        border-radius: 50%;
+        color: white;
+        background: rgba(255, 255, 255, 0.06);
+        font-size: 22px;
+        font-weight: 950;
+      }
+
+      .volume {
+        display: grid;
+        grid-template-columns: 34px 1fr;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .volume input {
+        width: 100%;
+        accent-color: var(--purple);
+      }
+
+      .hidden-sc-player {
+        position: fixed;
+        width: 1px;
+        height: 1px;
+        opacity: 0.01;
+        pointer-events: none;
+      }
+
+      @keyframes pulse {
+        from {
+          transform: scaleY(0.58);
+          filter: hue-rotate(0deg);
+        }
+        to {
+          transform: scaleY(1);
+          filter: hue-rotate(35deg);
+        }
+      }
+
+      @media (max-width: 1080px) {
+        .player,
+        .hero,
+        .main-grid,
+        .lower-grid,
+        .wide-grid,
+        .cta,
+        .footer,
+        .bottom-player {
+          grid-template-columns: 1fr;
+        }
+
+        .nav {
+          grid-template-columns: repeat(3, 1fr);
+        }
+
+        .nav-logo {
+          grid-column: 1 / -1;
+        }
+
+        .stats-row,
+        .quick-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .radio-inner,
+        .analysis-row {
+          grid-template-columns: 1fr;
+        }
+
+        .bottom-player {
+          position: static;
+          margin-top: 16px;
+        }
+
+        body {
+          padding-bottom: 0;
+        }
+      }
+
+      @media (max-width: 640px) {
+        .wrap {
+          width: min(100vw - 18px, 1220px);
+          padding-top: 8px;
+        }
+
+        .stats-row,
+        .quick-grid,
+        .mixer {
+          grid-template-columns: 1fr;
+        }
+
+        .hero h1 {
+          font-size: 32px;
+        }
+      }
+    </style>
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src=
+"
+https://www.clarity.ms/tag/
+"
++i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, 
+"
+clarity
+"
+, 
+"
+script
+"
+, 
+"
+x4jlyqheuh
+"
+);
+</script>
+</head>
+  <body>
+    <iframe
+      id="soundCloudPlayer"
+      class="hidden-sc-player"
+      title="SoundCloud player"
+      allow="autoplay; encrypted-media"
+      src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/revenue-589926433/sets/n-b-ai-dj&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&visual=false">
+    </iframe>
+
+    <div class="wrap">
+      <header class="topbar glass">
+        <div class="brand"><span class="brand-dot"></span>AI SoundCloud Radio DJ <span class="mode-pill">DJ 모드</span></div>
+        <div class="status-line">현재 <strong id="listenerCount">238</strong> listeners <span class="green-dot"></span><button class="icon-btn" id="settingsButton" type="button" title="설정">⚙</button></div>
+      </header>
+
+      <section class="player glass">
+        <div class="cover" aria-hidden="true"></div>
+        <div>
+          <h2 class="track-title" id="trackTitle">ELECTRIC HEART</h2>
+          <div class="track-meta" id="trackMeta">DJ AI Remix · 125 BPM · Gm</div>
+          <div class="wave-row">
+            <span class="timecode" id="elapsedTop">02:34</span>
+            <div class="bars" id="topWave"></div>
+            <span class="timecode" id="durationTop">05:12</span>
+          </div>
+        </div>
+        <button class="play-ring" id="playButton" type="button" aria-label="재생/일시정지">Ⅱ</button>
+        <button class="neon-btn hot" id="liveButton" type="button">LIVE</button>
+        <button class="neon-btn" id="aiPickButton" type="button">AI PICK</button>
+        <button class="neon-btn" id="voiceDjButton" type="button">VOICE DJ</button>
+        <div class="eq" aria-hidden="true"></div>
+        <button class="icon-btn" id="moreButton" type="button" title="더보기">⋮</button>
+      </section>
+
+      <nav class="nav glass" aria-label="DJ navigation">
+        <div class="nav-logo"><span class="ai-mark">AI</span>참소식.com</div>
+        <button class="active" type="button">DJ 모드</button>
+        <button type="button">고봉방송</button>
+        <button type="button">AI 보이스 DJ</button>
+        <button type="button">라디오 로그</button>
+        <button type="button">방문자</button>
+        <button type="button">N/B 메모</button>
+        <button type="button">스케줄/셋리스트</button>
+        <button type="button">공지사항</button>
+      </nav>
+
+      <section class="hero glass">
+        <div class="hero-copy">
+          <h1>AI가 만드는<br /><span>나만의 사운드</span></h1>
+          <p>24/7 LIVE DJ STATION</p>
+          <button class="neon-btn" id="heroPlayButton" type="button">AI 믹스 지금 듣기 ▶</button>
+        </div>
+        <aside class="now-card glass">
+          <h3>현재 재생곡</h3>
+          <div class="cover"></div>
+          <h4 id="nowTitle">ELECTRIC HEART</h4>
+          <p class="muted" id="nowArtist">DJ AI Remix</p>
+          <div class="progress"><span id="progressBar"></span></div>
+          <p class="muted"><span id="elapsedSide">02:34</span> / 05:12</p>
+          <button class="neon-btn" id="playlistButton" type="button">전체 플레이리스트</button>
+        </aside>
+      </section>
+
+      <section class="grid stats-row">
+        <article class="broadcast glass card">
+          <span class="mini-pill">LIVE BROADCAST</span>
+          <strong>고봉방송 ON AIR</strong>
+          <span class="muted">청취자 <b id="broadcastListeners">238</b>명</span>
+          <div class="small-wave" id="broadcastWave"></div>
+        </article>
+        <article class="glass card">
+          <h3 class="panel-title">AI 보이스 DJ <span class="mini-pill">VOICE AI</span></h3>
+          <p class="muted" id="voiceStatus">생성형 보이스로 진행중</p>
+          <div class="small-wave" id="voiceWave"></div>
+        </article>
+        <article class="glass card">
+          <h3 class="panel-title">자동 믹싱 모드</h3>
+          <p class="muted" id="mixStatus">BPM SYNC · KEY MATCH</p>
+          <div class="small-wave" id="mixWave"></div>
+        </article>
+      </section>
+
+      <section class="grid main-grid">
+        <aside class="grid">
+          <section class="glass card">
+            <h3 class="panel-title">실시간 채팅</h3>
+            <div class="chat-list" id="chatList"></div>
+            <form class="chat-form" id="chatForm">
+              <input class="input" id="chatInput" maxlength="80" placeholder="메시지를 입력하세요..." />
+              <button class="send" type="submit">➤</button>
+            </form>
+          </section>
+
+          <section class="glass card">
+            <h3 class="panel-title">방문자 카드</h3>
+            <div class="visitor-list" id="visitorList"></div>
+            <button class="neon-btn" id="moreVisitorsButton" type="button">더 많은 방문자 보기</button>
+          </section>
+        </aside>
+
+        <section class="glass card radio-panel">
+          <h3 class="panel-title">고봉방송 ON AIR <span class="live-pill">LIVE</span></h3>
+          <div class="small-wave" id="radioWave"></div>
+          <div class="radio-inner">
+            <div class="info-stack">
+              <div class="info-box"><strong>장르</strong><p class="muted" id="genreBox">EDM / HOUSE</p></div>
+              <div class="info-box"><strong>방송 주제</strong><p class="muted" id="themeBox">미드나잇 하우스 셋</p></div>
+              <div class="info-box"><strong>방송 멘트</strong><p class="muted" id="djLine">오늘은 신나는 하우스 앙상블로 밤공기를 밝혀봅니다.</p></div>
+            </div>
+            <div class="mic-sign"><div class="mic">ON<br />AIR</div></div>
+          </div>
+
+          <h3 class="panel-title">믹서 컨트롤 <span class="mini-pill" id="autoMixPill">AUTO MIX ON</span></h3>
+          <div class="mixer">
+            <div class="channel"><strong>DECK A</strong><span>125 BPM</span><input class="slider" type="range" min="0" max="100" value="72" /><span class="meter"></span><button class="neon-btn" type="button">CUE</button></div>
+            <div class="channel"><strong>DECK B</strong><span>128 BPM</span><input class="slider" type="range" min="0" max="100" value="68" /><span class="meter"></span><button class="neon-btn" type="button">SYNC</button></div>
+            <div class="channel"><strong>MIC</strong><span>VOICE</span><input class="slider" type="range" min="0" max="100" value="80" /><span class="meter"></span><button class="neon-btn" type="button">ON</button></div>
+            <div class="channel"><strong>MASTER</strong><span>OUTPUT</span><input class="slider" type="range" min="0" max="100" value="62" /><span class="meter"></span><button class="neon-btn hot" type="button">LIMITER</button></div>
+          </div>
+          <label class="crossfade muted">크로스페이드 A ↔ B <input id="crossfade" type="range" min="0" max="100" value="52" /></label>
+        </section>
+
+        <aside class="grid">
+          <section class="glass card">
+            <h3 class="panel-title">N/B 메모 <button class="neon-btn" id="addMemoButton" type="button">+ 새 메모</button></h3>
+            <div class="memo-list" id="memoList"></div>
+            <form class="memo-form" id="memoForm">
+              <input class="input" id="memoInput" maxlength="90" placeholder="새 메모..." />
+              <button class="send" type="submit">＋</button>
+            </form>
+          </section>
+          <section class="glass card">
+            <h3 class="panel-title">AI 보이스 DJ <span class="live-pill">LIVE</span></h3>
+            <div class="mic-sign"><div class="mic">AI</div></div>
+            <p class="muted">AI DJ가 실시간으로 방송을 진행하고 있습니다.</p>
+            <button class="neon-btn" id="voiceSettingsButton" type="button">VOICE 설정</button>
+          </section>
+        </aside>
+      </section>
+
+      <section class="grid lower-grid">
+        <article class="glass card">
+          <h3 class="panel-title">라디오 로그</h3>
+          <div class="log-list" id="logList"></div>
+          <button class="neon-btn" id="allLogsButton" type="button">전체 로그 보기</button>
+        </article>
+        <article class="glass card">
+          <h3 class="panel-title">셋리스트 / 스케줄</h3>
+          <div class="tabs"><button class="active" type="button">현재 셋리스트</button><button type="button">예정 스케줄</button><button type="button">AI 추천</button><button type="button">히스토리</button></div>
+          <div class="set-list" id="setList"></div>
+          <div class="grid lower-grid"><button class="neon-btn" id="addTrackButton" type="button">+ 곡 추가</button><button class="neon-btn" id="viewScheduleButton" type="button">전체 보기</button></div>
+        </article>
+      </section>
+
+      <section class="grid wide-grid">
+        <article class="glass card viz">
+          <h3 class="panel-title">AI 비주얼라이저 <span class="live-pill">LIVE</span></h3>
+          <div class="spectrum" id="spectrum"></div>
+          <div class="tabs"><button class="active" type="button">SPECTRUM</button><button type="button">WAVE</button><button type="button">PARTICLE</button><button type="button">CLUB</button></div>
+        </article>
+        <article class="glass card">
+          <h3 class="panel-title">사운드 분석</h3>
+          <div class="analysis-row">
+            <div class="dial"><span><strong id="bpmDial">125</strong>BPM</span></div>
+            <div class="dial"><span><strong id="lufsDial">-5.2</strong>LUFS</span></div>
+            <div class="dial"><span><strong id="keyDial">Am</strong>KEY</span></div>
+          </div>
+          <div class="small-wave" id="analysisWave"></div>
+        </article>
+      </section>
+
+      <section class="grid quick-grid glass card">
+        <button class="quick" type="button"><strong>▣</strong>방송 시작/중지</button>
+        <button class="quick" type="button"><strong>◎</strong>자동 믹싱 <span class="mini-pill">ON</span></button>
+        <button class="quick" type="button"><strong>⟳</strong>BPM SYNC <span class="mini-pill">ON</span></button>
+        <button class="quick" type="button"><strong>✦</strong>효과음 <span class="mini-pill">ON</span></button>
+        <button class="quick" type="button"><strong>▱</strong>사연 접수 <span class="mini-pill">ON</span></button>
+        <button class="quick" type="button"><strong>?</strong>신청곡 접수 <span class="mini-pill">ON</span></button>
+      </section>
+
+      <section class="cta glass">
+        <div class="deck-photo" aria-hidden="true"></div>
+        <div>
+          <h2>AI SoundCloud Radio DJ</h2>
+          <h2 style="color: var(--cyan)">나만의 AI 라디오를 시작하세요!</h2>
+          <p class="muted">지금 바로 시작하고 전 세계와 소통하세요 🎧</p>
+        </div>
+        <button class="neon-btn" id="startButton" type="button">지금 시작하기 ▶</button>
+      </section>
+
+      <footer class="footer glass">
+        <div><h3>참소식.com</h3><p>AI가 음악을 익히고, 방송에 분위기를 만든다.</p></div>
+        <div><h4>서비스</h4><a href="#">DJ 모드</a><a href="#">고봉방송</a><a href="#">AI 보이스 DJ</a><a href="#">라디오 로그</a></div>
+        <div><h4>지원</h4><a href="#">이용 가이드</a><a href="#">문의하기</a><a href="#">이벤트</a><a href="#">이용약관</a></div>
+        <div><h4>커뮤니티</h4><a href="#">N/B 메모</a><a href="#">방문자</a><a href="#">사연/신청곡</a><a href="#">자주 묻는 질문</a></div>
+        <div><h4>AI DJ 앱 연결</h4><p>모바일에서도 고봉방송을 즐겨보세요.</p><button class="neon-btn" type="button">앱 연결</button></div>
+      </footer>
+    </div>
+
+    <section class="bottom-player">
+      <div class="bottom-track"><div class="cover"></div><div><strong id="bottomTitle">ELECTRIC HEART</strong><p class="muted" id="bottomMeta">DJ AI Remix</p></div></div>
+      <div class="small-wave" id="bottomWave"></div>
+      <div class="transport"><button class="icon-btn" id="prevButton" type="button">⏮</button><button class="play-ring" id="bottomPlayButton" type="button">Ⅱ</button><button class="icon-btn" id="nextButton" type="button">⏭</button></div>
+      <div class="volume"><button class="neon-btn" id="autoMixButton" type="button">자동 믹싱 ON</button><input id="volumeInput" type="range" min="0" max="100" value="82" /></div>
+    </section>
+
+    <script>
+      const tracks = [
+        { title: "ELECTRIC HEART", artist: "DJ AI Remix", bpm: 125, key: "Gm", duration: "05:12", genre: "EDM / HOUSE" },
+        { title: "Summer", artist: "Calvin Harris", bpm: 126, key: "A", duration: "04:01", genre: "Festival House" },
+        { title: "Titanium", artist: "David Guetta", bpm: 124, key: "F#m", duration: "05:40", genre: "Progressive" },
+        { title: "Wake Me Up", artist: "Avicii", bpm: 120, key: "B", duration: "04:09", genre: "Dance Pop" },
+        { title: "Animals", artist: "Martin Garrix", bpm: 128, key: "Am", duration: "05:04", genre: "Big Room" }
+      ];
+
+      const chatSeeds = [
+        ["DJ_NEO", "와 지금 믹스 미쳤다 🔥🔥"],
+        ["Clubbing_77", "이 트랙 너무 좋아요!"],
+        ["BassLover", "베이스 중독 👍👍"],
+        ["NightRider", "다음 곡 기대됩니다"],
+        ["SoundWave", "분위기 최고예요~"]
+      ];
+      const visitors = [["DJ_STORM", "Lv.42", "추천 받은 627곡"], ["NeonGirl", "Lv.28", "후원 받은 312곡"], ["BeatMaker", "Lv.35", "누적 요청 198회"]];
+      const memos = ["오늘 하우스 셋 인트로 유지", "128 BPM 중점", "후반부 빌드업 강하게"];
+      const logs = ["MIX · DJ AI Remix - Electric Heart · 125 BPM", "선곡 · Calvin Harris - Summer · 126 BPM", "MIX · David Guetta - Titanium · 124 BPM", "사연 · 청취자 사연 소개 및 음악 선곡", "MIX · Avicii - Wake Me Up · 120 BPM"];
+
+      let trackIndex = 0;
+      let playing = true;
+      let elapsed = 154;
+      let soundCloudWidget = null;
+
+      const qs = (selector) => document.querySelector(selector);
+      const qsa = (selector) => [...document.querySelectorAll(selector)];
+
+      function makeBars(target, count, min = 8, max = 58) {
+        const el = typeof target === "string" ? qs(target) : target;
+        el.innerHTML = Array.from({ length: count }, (_, i) => {
+          const h = Math.round(min + Math.abs(Math.sin(i * 0.72) * (max - min)) + Math.random() * 10);
+          return `<span style="--h:${Math.min(max, h)};--i:${i}"></span>`;
+        }).join("");
+      }
+
+      function formatTime(seconds) {
+        const m = Math.floor(seconds / 60).toString().padStart(2, "0");
+        const s = Math.floor(seconds % 60).toString().padStart(2, "0");
+        return `${m}:${s}`;
+      }
+
+      function durationSeconds(value) {
+        const [m, s] = value.split(":").map(Number);
+        return m * 60 + s;
+      }
+
+      function currentTrack() {
+        return tracks[trackIndex % tracks.length];
+      }
+
+      function renderTrack() {
+        const track = currentTrack();
+        qs("#trackTitle").textContent = track.title;
+        qs("#trackMeta").textContent = `${track.artist} · ${track.bpm} BPM · ${track.key}`;
+        qs("#nowTitle").textContent = track.title;
+        qs("#nowArtist").textContent = track.artist;
+        qs("#bottomTitle").textContent = track.title;
+        qs("#bottomMeta").textContent = track.artist;
+        qs("#durationTop").textContent = track.duration;
+        qs("#genreBox").textContent = track.genre;
+        qs("#bpmDial").textContent = track.bpm;
+        qs("#keyDial").textContent = track.key;
+        qs("#djLine").textContent = `${track.title} 들어갑니다. ${track.bpm} BPM으로 분위기 끌어올릴게요.`;
+        renderSetList();
+        addLog(`MIX · ${track.artist} - ${track.title} · ${track.bpm} BPM`);
+      }
+
+      function renderSetList() {
+        qs("#setList").innerHTML = tracks.map((track, index) => `
+          <button class="set-item" type="button" data-track="${index}">
+            <span>${String(index + 1).padStart(2, "0")} &nbsp; ${track.title} (${track.artist})</span>
+            <span class="muted">${track.bpm} BPM &nbsp; ▶</span>
+          </button>
+        `).join("");
+      }
+
+      function renderLists() {
+        qs("#chatList").innerHTML = chatSeeds.map(([name, text]) => `
+          <div class="chat-item"><span class="avatar"></span><div><div class="chat-name">${name}</div><div class="chat-text">${text}</div></div><span class="muted">21:34</span></div>
+        `).join("");
+        qs("#visitorList").innerHTML = visitors.map(([name, level, text]) => `
+          <div class="visitor-item"><div class="visitor-name">${name} <span class="muted">${level}</span></div><div class="muted">${text}</div></div>
+        `).join("");
+        qs("#memoList").innerHTML = memos.map((memo, index) => `
+          <div class="memo-item"><strong>고봉님 메모 · 21:${20 + index * 5}</strong><div class="memo-text">${memo}</div></div>
+        `).join("");
+        qs("#logList").innerHTML = logs.slice(-5).reverse().map((log, index) => `
+          <div class="log-item"><span class="muted">21:${35 - index * 4}:12</span><strong>${log}</strong></div>
+        `).join("");
+      }
+
+      function addLog(text) {
+        logs.push(text);
+        if (logs.length > 14) logs.shift();
+        if (qs("#logList")) renderLists();
+      }
+
+      function setPlaying(next) {
+        playing = next;
+        const label = playing ? "Ⅱ" : "▶";
+        qs("#playButton").textContent = label;
+        qs("#bottomPlayButton").textContent = label;
+        try {
+          if (soundCloudWidget) playing ? soundCloudWidget.play() : soundCloudWidget.pause();
+        } catch {}
+      }
+
+      function pickTrack(offset = 1) {
+        trackIndex = (trackIndex + offset + tracks.length) % tracks.length;
+        elapsed = 0;
+        renderTrack();
+        setPlaying(true);
+        speak(`다음 곡은 ${currentTrack().title}. ${currentTrack().bpm} BPM으로 갑니다.`);
+      }
+
+      function speak(text) {
+        qs("#voiceStatus").textContent = text;
+        if (!("speechSynthesis" in window)) return;
+        window.speechSynthesis.cancel();
+        const utterance = new SpeechSynthesisUtterance(text);
+        utterance.lang = "ko-KR";
+        utterance.rate = 1.04;
+        window.speechSynthesis.speak(utterance);
+      }
+
+      function updateClock() {
+        if (playing) elapsed += 1;
+        const track = currentTrack();
+        const total = durationSeconds(track.duration);
+        if (elapsed >= total) pickTrack(1);
+        const ratio = Math.min(100, (elapsed / total) * 100);
+        qs("#elapsedTop").textContent = formatTime(elapsed);
+        qs("#elapsedSide").textContent = formatTime(elapsed);
+        qs("#progressBar").style.width = `${ratio}%`;
+      }
+
+      function initSoundCloud() {
+        if (!window.SC) return;
+        try {
+          soundCloudWidget = window.SC.Widget(qs("#soundCloudPlayer"));
+          soundCloudWidget.bind(window.SC.Widget.Events.PLAY, () => setPlaying(true));
+          soundCloudWidget.bind(window.SC.Widget.Events.PAUSE, () => setPlaying(false));
+        } catch {}
+      }
+
+      function bind() {
+        qsa(".nav button, .tabs button").forEach((button) => {
+          button.addEventListener("click", () => {
+            button.parentElement.querySelectorAll("button").forEach((item) => item.classList.remove("active"));
+            button.classList.add("active");
+          });
+        });
+        qs("#playButton").addEventListener("click", () => setPlaying(!playing));
+        qs("#bottomPlayButton").addEventListener("click", () => setPlaying(!playing));
+        qs("#heroPlayButton").addEventListener("click", () => setPlaying(true));
+        qs("#startButton").addEventListener("click", () => setPlaying(true));
+        qs("#aiPickButton").addEventListener("click", () => pickTrack(Math.ceil(Math.random() * (tracks.length - 1))));
+        qs("#nextButton").addEventListener("click", () => pickTrack(1));
+        qs("#prevButton").addEventListener("click", () => pickTrack(-1));
+        qs("#voiceDjButton").addEventListener("click", () => speak(`AI 보이스 DJ 시작합니다. 현재 곡은 ${currentTrack().title}, 키는 ${currentTrack().key}입니다.`));
+        qs("#voiceSettingsButton").addEventListener("click", () => speak("보이스 설정은 라이브 진행 톤으로 맞춰졌습니다."));
+        qs("#autoMixButton").addEventListener("click", (event) => {
+          event.currentTarget.classList.toggle("hot");
+          event.currentTarget.textContent = event.currentTarget.classList.contains("hot") ? "자동 믹싱 OFF" : "자동 믹싱 ON";
+        });
+        qs("#chatForm").addEventListener("submit", (event) => {
+          event.preventDefault();
+          const value = qs("#chatInput").value.trim();
+          if (!value) return;
+          chatSeeds.push(["YOU", value]);
+          qs("#chatInput").value = "";
+          renderLists();
+        });
+        qs("#memoForm").addEventListener("submit", (event) => {
+          event.preventDefault();
+          const value = qs("#memoInput").value.trim();
+          if (!value) return;
+          memos.unshift(value);
+          qs("#memoInput").value = "";
+          renderLists();
+        });
+        document.addEventListener("click", (event) => {
+          const button = event.target.closest("[data-track]");
+          if (!button) return;
+          trackIndex = Number(button.dataset.track);
+          elapsed = 0;
+          renderTrack();
+          setPlaying(true);
+        });
+        qs("#volumeInput").addEventListener("input", (event) => {
+          try {
+            soundCloudWidget?.setVolume?.(Number(event.target.value));
+          } catch {}
+        });
+      }
+
+      makeBars("#topWave", 88, 8, 55);
+      makeBars("#broadcastWave", 44, 6, 52);
+      makeBars("#voiceWave", 26, 8, 54);
+      makeBars("#mixWave", 28, 8, 54);
+      makeBars("#radioWave", 60, 8, 58);
+      makeBars("#bottomWave", 72, 5, 48);
+      makeBars("#spectrum", 54, 12, 140);
+      makeBars("#analysisWave", 46, 6, 54);
+      makeBars(qs(".eq"), 28, 8, 54);
+      renderTrack();
+      renderLists();
+      bind();
+      initSoundCloud();
+      setInterval(updateClock, 1000);
+      setInterval(() => {
+        const next = 220 + Math.floor(Math.random() * 42);
+        qs("#listenerCount").textContent = next;
+        qs("#broadcastListeners").textContent = next;
+      }, 4500);
+    </script>
+    <script defer src="../common-site.js"></script>
+  </body>
+</html>

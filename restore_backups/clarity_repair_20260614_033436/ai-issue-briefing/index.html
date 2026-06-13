@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "x4jlyqheuh");
+</script>
+</head>
+  <body>
+    <iframe
+      id="soundCloudPlayer"
+      class="hidden-sc-player"
+      title="SoundCloud player"
+      allow="autoplay; encrypted-media"
+      src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/revenue-589926433/sets/n-b-ai-dj&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&visual=false">
+    </iframe>
+
+    <div class="wrap">
+      <header class="topbar glass">
+        <div class="brand"><span class="brand-dot"></span>AI SoundCloud Radio DJ <span class="mode-pill">DJ 모드</span></div>
+        <div class="status-line">현재 <strong id="listenerCount">238</strong> listeners <span class="green-dot"></span><button class="icon-btn" id="settingsButton" type="button" title="설정">⚙</button></div>
+      </header>
+
+      <section class="player glass">
+        <div class="cover" aria-hidden="true"></div>
+        <div>
+          <h2 class="track-title" id="trackTitle">ELECTRIC HEART</h2>
+          <div class="track-meta" id="trackMeta">DJ AI Remix · 125 BPM · Gm</div>
+          <div class="wave-row">
+            <span class="timecode" id="elapsedTop">02:34</span>
+            <div class="bars" id="topWave"></div>
+            <span class="timecode" id="durationTop">05:12</span>
+          </div>
+        </div>
+        <button class="play-ring" id="playButton" type="button" aria-label="재생/일시정지">Ⅱ</button>
+        <button class="neon-btn hot" id="liveButton" type="button">LIVE</button>
+        <button class="neon-btn" id="aiPickButton" type="button">AI PICK</button>
+        <button class="neon-btn" id="voiceDjButton" type="button">VOICE DJ</button>
+        <div class="eq" aria-hidden="true"></div>
+        <button class="icon-btn" id="moreButton" type="button" title="더보기">⋮</button>
+      </section>
+
+      <nav class="nav glass" aria-label="DJ navigation">
+        <div class="nav-logo"><span class="ai-mark">AI</span>참소식.com</div>
+        <button class="active" type="button">DJ 모드</button>
+        <button type="button">고봉방송</button>
+        <button type="button">AI 보이스 DJ</button>
+        <button type="button">라디오 로그</button>
+        <button type="button">방문자</button>
+        <button type="button">N/B 메모</button>
+        <button type="button">스케줄/셋리스트</button>
+        <button type="button">공지사항</button>
+      </nav>
+
+      <section class="hero glass">
+        <div class="hero-copy">
+          <h1>AI가 만드는<br /><span>나만의 사운드</span></h1>
+          <p>24/7 LIVE DJ STATION</p>
+          <button class="neon-btn" id="heroPlayButton" type="button">AI 믹스 지금 듣기 ▶</button>
+        </div>
+        <aside class="now-card glass">
+          <h3>현재 재생곡</h3>
+          <div class="cover"></div>
+          <h4 id="nowTitle">ELECTRIC HEART</h4>
+          <p class="muted" id="nowArtist">DJ AI Remix</p>
+          <div class="progress"><span id="progressBar"></span></div>
+          <p class="muted"><span id="elapsedSide">02:34</span> / 05:12</p>
+          <button class="neon-btn" id="playlistButton" type="button">전체 플레이리스트</button>
+        </aside>
+      </section>
+
+      <section class="grid stats-row">
+        <article class="broadcast glass card">
+          <span class="mini-pill">LIVE BROADCAST</span>
+          <strong>고봉방송 ON AIR</strong>
+          <span class="muted">청취자 <b id="broadcastListeners">238</b>명</span>
+          <div class="small-wave" id="broadcastWave"></div>
+        </article>
+        <article class="glass card">
+          <h3 class="panel-title">AI 보이스 DJ <span class="mini-pill">VOICE AI</span></h3>
+          <p class="muted" id="voiceStatus">생성형 보이스로 진행중</p>
+          <div class="small-wave" id="voiceWave"></div>
+        </article>
+        <article class="glass card">
+          <h3 class="panel-title">자동 믹싱 모드</h3>
+          <p class="muted" id="mixStatus">BPM SYNC · KEY MATCH</p>
+          <div class="small-wave" id="mixWave"></div>
+        </article>
+      </section>
+
+      <section class="grid main-grid">
+        <aside class="grid">
+          <section class="glass card">
+            <h3 class="panel-title">실시간 채팅</h3>
+            <div class="chat-list" id="chatList"></div>
+            <form class="chat-form" id="chatForm">
+              <input class="input" id="chatInput" maxlength="80" placeholder="메시지를 입력하세요..." />
+              <button class="send" type="submit">➤</button>
+            </form>
+          </section>
+
+          <section class="glass card">
+            <h3 class="panel-title">방문자 카드</h3>
+            <div class="visitor-list" id="visitorList"></div>
+            <button class="neon-btn" id="moreVisitorsButton" type="button">더 많은 방문자 보기</button>
+          </section>
+        </aside>
+
+        <section class="glass card radio-panel">
+          <h3 class="panel-title">고봉방송 ON AIR <span class="live-pill">LIVE</span></h3>
+          <div class="small-wave" id="radioWave"></div>
+          <div class="radio-inner">
+            <div class="info-stack">
+              <div class="info-box"><strong>장르</strong><p class="muted" id="genreBox">EDM / HOUSE</p></div>
+              <div class="info-box"><strong>방송 주제</strong><p class="muted" id="themeBox">미드나잇 하우스 셋</p></div>
+              <div class="info-box"><strong>방송 멘트</strong><p class="muted" id="djLine">오늘은 신나는 하우스 앙상블로 밤공기를 밝혀봅니다.</p></div>
+            </div>
+            <div class="mic-sign"><div class="mic">ON<br />AIR</div></div>
+          </div>
+
+          <h3 class="panel-title">믹서 컨트롤 <span class="mini-pill" id="autoMixPill">AUTO MIX ON</span></h3>
+          <div class="mixer">
+            <div class="channel"><strong>DECK A</strong><span>125 BPM</span><input class="slider" type="range" min="0" max="100" value="72" /><span class="meter"></span><button class="neon-btn" type="button">CUE</button></div>
+            <div class="channel"><strong>DECK B</strong><span>128 BPM</span><input class="slider" type="range" min="0" max="100" value="68" /><span class="meter"></span><button class="neon-btn" type="button">SYNC</button></div>
+            <div class="channel"><strong>MIC</strong><span>VOICE</span><input class="slider" type="range" min="0" max="100" value="80" /><span class="meter"></span><button class="neon-btn" type="button">ON</button></div>
+            <div class="channel"><strong>MASTER</strong><span>OUTPUT</span><input class="slider" type="range" min="0" max="100" value="62" /><span class="meter"></span><button class="neon-btn hot" type="button">LIMITER</button></div>
+          </div>
+          <label class="crossfade muted">크로스페이드 A ↔ B <input id="crossfade" type="range" min="0" max="100" value="52" /></label>
+        </section>
+
+        <aside class="grid">
+          <section class="glass card">
+            <h3 class="panel-title">N/B 메모 <button class="neon-btn" id="addMemoButton" type="button">+ 새 메모</button></h3>
+            <div class="memo-list" id="memoList"></div>
+            <form class="memo-form" id="memoForm">
+              <input class="input" id="memoInput" maxlength="90" placeholder="새 메모..." />
+              <button class="send" type="submit">＋</button>
+            </form>
+          </section>
+          <section class="glass card">
+            <h3 class="panel-title">AI 보이스 DJ <span class="live-pill">LIVE</span></h3>
+            <div class="mic-sign"><div class="mic">AI</div></div>
+            <p class="muted">AI DJ가 실시간으로 방송을 진행하고 있습니다.</p>
+            <button class="neon-btn" id="voiceSettingsButton" type="button">VOICE 설정</button>
+          </section>
+        </aside>
+      </section>
+
+      <section class="grid lower-grid">
+        <article class="glass card">
+          <h3 class="panel-title">라디오 로그</h3>
+          <div class="log-list" id="logList"></div>
+          <button class="neon-btn" id="allLogsButton" type="button">전체 로그 보기</button>
+        </article>
+        <article class="glass card">
+          <h3 class="panel-title">셋리스트 / 스케줄</h3>
+          <div class="tabs"><button class="active" type="button">현재 셋리스트</button><button type="button">예정 스케줄</button><button type="button">AI 추천</button><button type="button">히스토리</button></div>
+          <div class="set-list" id="setList"></div>
+          <div class="grid lower-grid"><button class="neon-btn" id="addTrackButton" type="button">+ 곡 추가</button><button class="neon-btn" id="viewScheduleButton" type="button">전체 보기</button></div>
+        </article>
+      </section>
+
+      <section class="grid wide-grid">
+        <article class="glass card viz">
+          <h3 class="panel-title">AI 비주얼라이저 <span class="live-pill">LIVE</span></h3>
+          <div class="spectrum" id="spectrum"></div>
+          <div class="tabs"><button class="active" type="button">SPECTRUM</button><button type="button">WAVE</button><button type="button">PARTICLE</button><button type="button">CLUB</button></div>
+        </article>
+        <article class="glass card">
+          <h3 class="panel-title">사운드 분석</h3>
+          <div class="analysis-row">
+            <div class="dial"><span><strong id="bpmDial">125</strong>BPM</span></div>
+            <div class="dial"><span><strong id="lufsDial">-5.2</strong>LUFS</span></div>
+            <div class="dial"><span><strong id="keyDial">Am</strong>KEY</span></div>
+          </div>
+          <div class="small-wave" id="analysisWave"></div>
+        </article>
+      </section>
+
+      <section class="grid quick-grid glass card">
+        <button class="quick" type="button"><strong>▣</strong>방송 시작/중지</button>
+        <button class="quick" type="button"><strong>◎</strong>자동 믹싱 <span class="mini-pill">ON</span></button>
+        <button class="quick" type="button"><strong>⟳</strong>BPM SYNC <span class="mini-pill">ON</span></button>
+        <button class="quick" type="button"><strong>✦</strong>효과음 <span class="mini-pill">ON</span></button>
+        <button class="quick" type="button"><strong>▱</strong>사연 접수 <span class="mini-pill">ON</span></button>
+        <button class="quick" type="button"><strong>?</strong>신청곡 접수 <span class="mini-pill">ON</span></button>
+      </section>
+
+      <section class="cta glass">
+        <div class="deck-photo" aria-hidden="true"></div>
+        <div>
+          <h2>AI SoundCloud Radio DJ</h2>
+          <h2 style="color: var(--cyan)">나만의 AI 라디오를 시작하세요!</h2>
+          <p class="muted">지금 바로 시작하고 전 세계와 소통하세요 🎧</p>
+        </div>
+        <button class="neon-btn" id="startButton" type="button">지금 시작하기 ▶</button>
+      </section>
+
+      <footer class="footer glass">
+        <div><h3>참소식.com</h3><p>AI가 음악을 익히고, 방송에 분위기를 만든다.</p></div>
+        <div><h4>서비스</h4><a href="#">DJ 모드</a><a href="#">고봉방송</a><a href="#">AI 보이스 DJ</a><a href="#">라디오 로그</a></div>
+        <div><h4>지원</h4><a href="#">이용 가이드</a><a href="#">문의하기</a><a href="#">이벤트</a><a href="#">이용약관</a></div>
+        <div><h4>커뮤니티</h4><a href="#">N/B 메모</a><a href="#">방문자</a><a href="#">사연/신청곡</a><a href="#">자주 묻는 질문</a></div>
+        <div><h4>AI DJ 앱 연결</h4><p>모바일에서도 고봉방송을 즐겨보세요.</p><button class="neon-btn" type="button">앱 연결</button></div>
+      </footer>
+    </div>
+
+    <section class="bottom-player">
+      <div class="bottom-track"><div class="cover"></div><div><strong id="bottomTitle">ELECTRIC HEART</strong><p class="muted" id="bottomMeta">DJ AI Remix</p></div></div>
+      <div class="small-wave" id="bottomWave"></div>
+      <div class="transport"><button class="icon-btn" id="prevButton" type="button">⏮</button><button class="play-ring" id="bottomPlayButton" type="button">Ⅱ</button><button class="icon-btn" id="nextButton" type="button">⏭</button></div>
+      <div class="volume"><button class="neon-btn" id="autoMixButton" type="button">자동 믹싱 ON</button><input id="volumeInput" type="range" min="0" max="100" value="82" /></div>
+    </section>
+
+    <script>
+      const tracks = [
+        { title: "ELECTRIC HEART", artist: "DJ AI Remix", bpm: 125, key: "Gm", duration: "05:12", genre: "EDM / HOUSE" },
+        { title: "Summer", artist: "Calvin Harris", bpm: 126, key: "A", duration: "04:01", genre: "Festival House" },
+        { title: "Titanium", artist: "David Guetta", bpm: 124, key: "F#m", duration: "05:40", genre: "Progressive" },
+        { title: "Wake Me Up", artist: "Avicii", bpm: 120, key: "B", duration: "04:09", genre: "Dance Pop" },
+        { title: "Animals", artist: "Martin Garrix", bpm: 128, key: "Am", duration: "05:04", genre: "Big Room" }
+      ];
+
+      const chatSeeds = [
+        ["DJ_NEO", "와 지금 믹스 미쳤다 🔥🔥"],
+        ["Clubbing_77", "이 트랙 너무 좋아요!"],
+        ["BassLover", "베이스 중독 👍👍"],
+        ["NightRider", "다음 곡 기대됩니다"],
+        ["SoundWave", "분위기 최고예요~"]
+      ];
+      const visitors = [["DJ_STORM", "Lv.42", "추천 받은 627곡"], ["NeonGirl", "Lv.28", "후원 받은 312곡"], ["BeatMaker", "Lv.35", "누적 요청 198회"]];
+      const memos = ["오늘 하우스 셋 인트로 유지", "128 BPM 중점", "후반부 빌드업 강하게"];
+      const logs = ["MIX · DJ AI Remix - Electric Heart · 125 BPM", "선곡 · Calvin Harris - Summer · 126 BPM", "MIX · David Guetta - Titanium · 124 BPM", "사연 · 청취자 사연 소개 및 음악 선곡", "MIX · Avicii - Wake Me Up · 120 BPM"];
+
+      let trackIndex = 0;
+      let playing = true;
+      let elapsed = 154;
+      let soundCloudWidget = null;
+
+      const qs = (selector) => document.querySelector(selector);
+      const qsa = (selector) => [...document.querySelectorAll(selector)];
+
+      function makeBars(target, count, min = 8, max = 58) {
+        const el = typeof target === "string" ? qs(target) : target;
+        el.innerHTML = Array.from({ length: count }, (_, i) => {
+          const h = Math.round(min + Math.abs(Math.sin(i * 0.72) * (max - min)) + Math.random() * 10);
+          return `<span style="--h:${Math.min(max, h)};--i:${i}"></span>`;
+        }).join("");
+      }
+
+      function formatTime(seconds) {
+        const m = Math.floor(seconds / 60).toString().padStart(2, "0");
+        const s = Math.floor(seconds % 60).toString().padStart(2, "0");
+        return `${m}:${s}`;
+      }
+
+      function durationSeconds(value) {
+        const [m, s] = value.split(":").map(Number);
+        return m * 60 + s;
+      }
+
+      function currentTrack() {
+        return tracks[trackIndex % tracks.length];
+      }
+
+      function renderTrack() {
+        const track = currentTrack();
+        qs("#trackTitle").textContent = track.title;
+        qs("#trackMeta").textContent = `${track.artist} · ${track.bpm} BPM · ${track.key}`;
+        qs("#nowTitle").textContent = track.title;
+        qs("#nowArtist").textContent = track.artist;
+        qs("#bottomTitle").textContent = track.title;
+        qs("#bottomMeta").textContent = track.artist;
+        qs("#durationTop").textContent = track.duration;
+        qs("#genreBox").textContent = track.genre;
+        qs("#bpmDial").textContent = track.bpm;
+        qs("#keyDial").textContent = track.key;
+        qs("#djLine").textContent = `${track.title} 들어갑니다. ${track.bpm} BPM으로 분위기 끌어올릴게요.`;
+        renderSetList();
+        addLog(`MIX · ${track.artist} - ${track.title} · ${track.bpm} BPM`);
+      }
+
+      function renderSetList() {
+        qs("#setList").innerHTML = tracks.map((track, index) => `
+          <button class="set-item" type="button" data-track="${index}">
+            <span>${String(index + 1).padStart(2, "0")} &nbsp; ${track.title} (${track.artist})</span>
+            <span class="muted">${track.bpm} BPM &nbsp; ▶</span>
+          </button>
+        `).join("");
+      }
+
+      function renderLists() {
+        qs("#chatList").innerHTML = chatSeeds.map(([name, text]) => `
+          <div class="chat-item"><span class="avatar"></span><div><div class="chat-name">${name}</div><div class="chat-text">${text}</div></div><span class="muted">21:34</span></div>
+        `).join("");
+        qs("#visitorList").innerHTML = visitors.map(([name, level, text]) => `
+          <div class="visitor-item"><div class="visitor-name">${name} <span class="muted">${level}</span></div><div class="muted">${text}</div></div>
+        `).join("");
+        qs("#memoList").innerHTML = memos.map((memo, index) => `
+          <div class="memo-item"><strong>고봉님 메모 · 21:${20 + index * 5}</strong><div class="memo-text">${memo}</div></div>
+        `).join("");
+        qs("#logList").innerHTML = logs.slice(-5).reverse().map((log, index) => `
+          <div class="log-item"><span class="muted">21:${35 - index * 4}:12</span><strong>${log}</strong></div>
+        `).join("");
+      }
+
+      function addLog(text) {
+        logs.push(text);
+        if (logs.length > 14) logs.shift();
+        if (qs("#logList")) renderLists();
+      }
+
+      function setPlaying(next) {
+        playing = next;
+        const label = playing ? "Ⅱ" : "▶";
+        qs("#playButton").textContent = label;
+        qs("#bottomPlayButton").textContent = label;
+        try {
+          if (soundCloudWidget) playing ? soundCloudWidget.play() : soundCloudWidget.pause();
+        } catch {}
+      }
+
+      function pickTrack(offset = 1) {
+        trackIndex = (trackIndex + offset + tracks.length) % tracks.length;
+        elapsed = 0;
+        renderTrack();
+        setPlaying(true);
+        speak(`다음 곡은 ${currentTrack().title}. ${currentTrack().bpm} BPM으로 갑니다.`);
+      }
+
+      function speak(text) {
+        qs("#voiceStatus").textContent = text;
+        if (!("speechSynthesis" in window)) return;
+        window.speechSynthesis.cancel();
+        const utterance = new SpeechSynthesisUtterance(text);
+        utterance.lang = "ko-KR";
+        utterance.rate = 1.04;
+        window.speechSynthesis.speak(utterance);
+      }
+
+      function updateClock() {
+        if (playing) elapsed += 1;
+        const track = currentTrack();
+        const total = durationSeconds(track.duration);
+        if (elapsed >= total) pickTrack(1);
+        const ratio = Math.min(100, (elapsed / total) * 100);
+        qs("#elapsedTop").textContent = formatTime(elapsed);
+        qs("#elapsedSide").textContent = formatTime(elapsed);
+        qs("#progressBar").style.width = `${ratio}%`;
+      }
+
+      function initSoundCloud() {
+        if (!window.SC) return;
+        try {
+          soundCloudWidget = window.SC.Widget(qs("#soundCloudPlayer"));
+          soundCloudWidget.bind(window.SC.Widget.Events.PLAY, () => setPlaying(true));
+          soundCloudWidget.bind(window.SC.Widget.Events.PAUSE, () => setPlaying(false));
+        } catch {}
+      }
+
+      function bind() {
+        qsa(".nav button, .tabs button").forEach((button) => {
+          button.addEventListener("click", () => {
+            button.parentElement.querySelectorAll("button").forEach((item) => item.classList.remove("active"));
+            button.classList.add("active");
+          });
+        });
+        qs("#playButton").addEventListener("click", () => setPlaying(!playing));
+        qs("#bottomPlayButton").addEventListener("click", () => setPlaying(!playing));
+        qs("#heroPlayButton").addEventListener("click", () => setPlaying(true));
+        qs("#startButton").addEventListener("click", () => setPlaying(true));
+        qs("#aiPickButton").addEventListener("click", () => pickTrack(Math.ceil(Math.random() * (tracks.length - 1))));
+        qs("#nextButton").addEventListener("click", () => pickTrack(1));
+        qs("#prevButton").addEventListener("click", () => pickTrack(-1));
+        qs("#voiceDjButton").addEventListener("click", () => speak(`AI 보이스 DJ 시작합니다. 현재 곡은 ${currentTrack().title}, 키는 ${currentTrack().key}입니다.`));
+        qs("#voiceSettingsButton").addEventListener("click", () => speak("보이스 설정은 라이브 진행 톤으로 맞춰졌습니다."));
+        qs("#autoMixButton").addEventListener("click", (event) => {
+          event.currentTarget.classList.toggle("hot");
+          event.currentTarget.textContent = event.currentTarget.classList.contains("hot") ? "자동 믹싱 OFF" : "자동 믹싱 ON";
+        });
+        qs("#chatForm").addEventListener("submit", (event) => {
+          event.preventDefault();
+          const value = qs("#chatInput").value.trim();
+          if (!value) return;
+          chatSeeds.push(["YOU", value]);
+          qs("#chatInput").value = "";
+          renderLists();
+        });
+        qs("#memoForm").addEventListener("submit", (event) => {
+          event.preventDefault();
+          const value = qs("#memoInput").value.trim();
+          if (!value) return;
+          memos.unshift(value);
+          qs("#memoInput").value = "";
+          renderLists();
+        });
+        document.addEventListener("click", (event) => {
+          const button = event.target.closest("[data-track]");
+          if (!button) return;
+          trackIndex = Number(button.dataset.track);
+          elapsed = 0;
+          renderTrack();
+          setPlaying(true);
+        });
+        qs("#volumeInput").addEventListener("input", (event) => {
+          try {
+            soundCloudWidget?.setVolume?.(Number(event.target.value));
+          } catch {}
+        });
+      }
+
+      makeBars("#topWave", 88, 8, 55);
+      makeBars("#broadcastWave", 44, 6, 52);
+      makeBars("#voiceWave", 26, 8, 54);
+      makeBars("#mixWave", 28, 8, 54);
+      makeBars("#radioWave", 60, 8, 58);
+      makeBars("#bottomWave", 72, 5, 48);
+      makeBars("#spectrum", 54, 12, 140);
+      makeBars("#analysisWave", 46, 6, 54);
+      makeBars(qs(".eq"), 28, 8, 54);
+      renderTrack();
+      renderLists();
+      bind();
+      initSoundCloud();
+      setInterval(updateClock, 1000);
+      setInterval(() => {
+        const next = 220 + Math.floor(Math.random() * 42);
+        qs("#listenerCount").textContent = next;
+        qs("#broadcastListeners").textContent = next;
+      }, 4500);
+    </script>
+    <script defer src="../common-site.js"></script>
+  </body>
+</html>

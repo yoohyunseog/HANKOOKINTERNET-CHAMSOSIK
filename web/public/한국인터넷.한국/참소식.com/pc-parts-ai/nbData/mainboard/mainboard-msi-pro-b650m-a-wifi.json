@@ -1,0 +1,89 @@
+{
+  "schema": "pc-part-nb-collector-file.v1",
+  "updatedAt": "2026-06-14T03:55:16.208+09:00",
+  "category": "Mainboard",
+  "id": "mainboard-msi-pro-b650m-a-wifi",
+  "name": "MSI PRO B650M-A WIFI",
+  "maker": "MSI",
+  "platform": "AMD AM5",
+  "estimatedPriceKrw": 169000,
+  "priceBand": "15~30만원",
+  "speedLabel": "B650",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "Mainboard",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 60,
+  "valueIndex": 35.5,
+  "aiUseScore": 39,
+  "powerWatts": 0,
+  "tags": [
+    "mATX",
+    "wifi"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "Mainboard",
+    "partId": "mainboard-msi-pro-b650m-a-wifi",
+    "partName": "MSI PRO B650M-A WIFI",
+    "speed": {
+      "score": 100,
+      "weight": 0.32,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "Mainboard",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 600,
+      "value": 473,
+      "aiFit": 390,
+      "priceEfficiency": 590,
+      "powerEfficiency": 600
+    },
+    "nbVector": [
+      100,
+      600,
+      473,
+      390,
+      590,
+      600
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 546.521,
+    "nbMin": 374.204,
+    "weightedScore": 340,
+    "nbBand": "100~499",
+    "summary": "Mainboard MSI PRO B650M-A WIFI 부품을 속도 중심 N/B 데이터베이스 점수 340점으로 저장했습니다."
+  },
+  "nbWeightedScore": 340,
+  "nbMax": 546.521,
+  "nbMin": 374.204,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=AMD%20B650%20%EB%A9%94%EC%9D%B8%EB%B3%B4%EB%93%9C%20%EC%B6%94%EC%B2%9C%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "Standard B650 business/productivity board",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

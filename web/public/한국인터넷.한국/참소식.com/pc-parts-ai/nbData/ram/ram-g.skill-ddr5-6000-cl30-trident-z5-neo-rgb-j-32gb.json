@@ -1,0 +1,90 @@
+{
+  "schema": "pc-part-nb-collector-file.v1",
+  "updatedAt": "2026-06-14T03:55:18.879+09:00",
+  "category": "RAM",
+  "id": "ram-g.skill-ddr5-6000-cl30-trident-z5-neo-rgb-j-32gb",
+  "name": "G.SKILL DDR5-6000 CL30 Trident Z5 Neo RGB J 화이트 32GB",
+  "maker": "G.SKILL",
+  "platform": "DDR5",
+  "estimatedPriceKrw": 989000,
+  "priceBand": "60만원 이상",
+  "speedLabel": "6000MHz CL30",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "RAM",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 85,
+  "valueIndex": 8.6,
+  "aiUseScore": 55,
+  "powerWatts": 0,
+  "tags": [
+    "white",
+    "rgb",
+    "expo"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "RAM",
+    "partId": "ram-g.skill-ddr5-6000-cl30-trident-z5-neo-rgb-j-32gb",
+    "partName": "G.SKILL DDR5-6000 CL30 Trident Z5 Neo RGB J 화이트 32GB",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "RAM",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 850,
+      "value": 115,
+      "aiFit": 550,
+      "priceEfficiency": 100,
+      "powerEfficiency": 850
+    },
+    "nbVector": [
+      100,
+      850,
+      115,
+      550,
+      100,
+      850
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 231.688,
+    "nbMin": 373.853,
+    "weightedScore": 342,
+    "nbBand": "100~499",
+    "summary": "RAM G.SKILL DDR5-6000 CL30 Trident Z5 Neo RGB J 화이트 32GB 부품을 속도 중심 N/B 데이터베이스 점수 342점으로 저장했습니다."
+  },
+  "nbWeightedScore": 342,
+  "nbMax": 231.688,
+  "nbMin": 373.853,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=G.SKILL%20DDR5-6000%20CL30%20Trident%20Z5%20Neo%20RGB%20J%20%ED%99%94%EC%9D%B4%ED%8A%B8%2032GB%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "White package, 16GB x 2 configuration",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

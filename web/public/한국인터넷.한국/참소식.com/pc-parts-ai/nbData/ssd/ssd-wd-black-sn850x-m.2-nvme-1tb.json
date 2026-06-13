@@ -1,0 +1,89 @@
+{
+  "schema": "pc-part-nb-collector-file.v1",
+  "updatedAt": "2026-06-14T03:55:30.017+09:00",
+  "category": "SSD",
+  "id": "ssd-wd-black-sn850x-m.2-nvme-1tb",
+  "name": "WD Black SN850X M.2 NVMe 1TB",
+  "maker": "Western Digital",
+  "platform": "PCIe 4.0",
+  "estimatedPriceKrw": 196340,
+  "priceBand": "15~30만원",
+  "speedLabel": "7300MB/s",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "SSD",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 90,
+  "valueIndex": 45.8,
+  "aiUseScore": 59,
+  "powerWatts": 0,
+  "tags": [
+    "gaming",
+    "high-performance"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "SSD",
+    "partId": "ssd-wd-black-sn850x-m.2-nvme-1tb",
+    "partName": "WD Black SN850X M.2 NVMe 1TB",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "SSD",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 900,
+      "value": 611,
+      "aiFit": 590,
+      "priceEfficiency": 510,
+      "powerEfficiency": 900
+    },
+    "nbVector": [
+      100,
+      900,
+      611,
+      590,
+      510,
+      900
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 444.911,
+    "nbMin": 360.208,
+    "weightedScore": 461,
+    "nbBand": "100~499",
+    "summary": "SSD WD Black SN850X M.2 NVMe 1TB 부품을 속도 중심 N/B 데이터베이스 점수 461점으로 저장했습니다."
+  },
+  "nbWeightedScore": 461,
+  "nbMax": 444.911,
+  "nbMin": 360.208,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=WD%20Black%20SN850X%201TB%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "High-end Gen4 NVMe SSD",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

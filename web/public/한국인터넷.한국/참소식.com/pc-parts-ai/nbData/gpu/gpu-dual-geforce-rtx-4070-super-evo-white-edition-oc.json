@@ -1,0 +1,89 @@
+{
+  "schema": "pc-part-nb-collector-file.v1",
+  "updatedAt": "2026-06-14T03:55:02.998+09:00",
+  "category": "GPU",
+  "id": "gpu-dual-geforce-rtx-4070-super-evo-white-edition-oc",
+  "name": "Dual GeForce RTX 4070 SUPER EVO White Edition OC",
+  "maker": "ASUS",
+  "platform": "PCIe 4.0",
+  "estimatedPriceKrw": 950000,
+  "priceBand": "60만원 이상",
+  "speedLabel": "GDDR6X",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "GPU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 75,
+  "valueIndex": 7.9,
+  "aiUseScore": 49,
+  "powerWatts": 220,
+  "tags": [
+    "gaming",
+    "white"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "GPU",
+    "partId": "gpu-dual-geforce-rtx-4070-super-evo-white-edition-oc",
+    "partName": "Dual GeForce RTX 4070 SUPER EVO White Edition OC",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "GPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 750,
+      "value": 105,
+      "aiFit": 490,
+      "priceEfficiency": 110,
+      "powerEfficiency": 114
+    },
+    "nbVector": [
+      100,
+      750,
+      105,
+      490,
+      110,
+      114
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 104.838,
+    "nbMin": 341.712,
+    "weightedScore": 271,
+    "nbBand": "100~499",
+    "summary": "GPU Dual GeForce RTX 4070 SUPER EVO White Edition OC 부품을 속도 중심 N/B 데이터베이스 점수 271점으로 저장했습니다."
+  },
+  "nbWeightedScore": 271,
+  "nbMax": 104.838,
+  "nbMin": 341.712,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=ASUS%20Dual%20GeForce%20RTX%204070%20SUPER%20EVO%20White%20Edition%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "The observed price in the search result (3,495,100 KRW) is an outlier/incorrect listing for this specific model; estimated street price is used instead.",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

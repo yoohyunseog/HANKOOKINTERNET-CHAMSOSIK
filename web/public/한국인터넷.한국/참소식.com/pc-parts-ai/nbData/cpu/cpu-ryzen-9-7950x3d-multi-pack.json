@@ -1,0 +1,90 @@
+{
+  "schema": "pc-part-nb-collector-file.v1",
+  "updatedAt": "2026-06-14T03:55:48.185+09:00",
+  "category": "CPU",
+  "id": "cpu-ryzen-9-7950x3d-multi-pack",
+  "name": "Ryzen 9 7950X3D Multi-Pack",
+  "maker": "AMD",
+  "platform": "AM5",
+  "estimatedPriceKrw": 769510,
+  "priceBand": "60만원 이상",
+  "speedLabel": "5.7GHz",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "CPU",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 98,
+  "valueIndex": 12.7,
+  "aiUseScore": 64,
+  "powerWatts": 120,
+  "tags": [
+    "gaming",
+    "workstation",
+    "3D V-Cache"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "CPU",
+    "partId": "cpu-ryzen-9-7950x3d-multi-pack",
+    "partName": "Ryzen 9 7950X3D Multi-Pack",
+    "speed": {
+      "score": 100,
+      "weight": 0.42,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "CPU",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 980,
+      "value": 169,
+      "aiFit": 640,
+      "priceEfficiency": 130,
+      "powerEfficiency": 272
+    },
+    "nbVector": [
+      100,
+      980,
+      169,
+      640,
+      130,
+      272
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 133.772,
+    "nbMin": 335.338,
+    "weightedScore": 352,
+    "nbBand": "100~499",
+    "summary": "CPU Ryzen 9 7950X3D Multi-Pack 부품을 속도 중심 N/B 데이터베이스 점수 352점으로 저장했습니다."
+  },
+  "nbWeightedScore": 352,
+  "nbMax": 133.772,
+  "nbMin": 335.338,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=AMD%20Ryzen%209%207950X3D%20%EB%A9%80%ED%8B%B0%ED%8C%A9%20%EA%B0%80%EA%B2%A9",
+  "notes": "Multi-pack version of the 7950X3D (Raphael). 16 cores, 32 threads.",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

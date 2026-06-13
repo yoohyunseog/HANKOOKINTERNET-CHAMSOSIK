@@ -1,0 +1,89 @@
+{
+  "schema": "pc-part-nb-collector-file.v1",
+  "updatedAt": "2026-06-14T03:55:16.539+09:00",
+  "category": "Mainboard",
+  "id": "mainboard-z790-aorus-elite-x",
+  "name": "Z790 AORUS ELITE X",
+  "maker": "Gigabyte",
+  "platform": "LGA1700",
+  "estimatedPriceKrw": 239480,
+  "priceBand": "15~30만원",
+  "speedLabel": "DDR5",
+  "speedMetric": {
+    "kind": "unknown",
+    "label": "속도 기준",
+    "value": null,
+    "unit": "",
+    "group": "Mainboard",
+    "compareNote": "부품군별 기준으로 비교해야 합니다."
+  },
+  "unifiedSpeedScore": 100,
+  "performance": 85,
+  "valueIndex": 35.5,
+  "aiUseScore": 55,
+  "powerWatts": 0,
+  "tags": [
+    "gaming",
+    "overclocking"
+  ],
+  "nbDatabase": {
+    "schema": "pc-part-nb-database.v1",
+    "unit": "100~1000",
+    "priority": "speed-first",
+    "category": "Mainboard",
+    "partId": "mainboard-z790-aorus-elite-x",
+    "partName": "Z790 AORUS ELITE X",
+    "speed": {
+      "score": 100,
+      "weight": 0.32,
+      "metric": {
+        "kind": "unknown",
+        "label": "속도 기준",
+        "value": null,
+        "unit": "",
+        "group": "Mainboard",
+        "compareNote": "부품군별 기준으로 비교해야 합니다."
+      }
+    },
+    "scores": {
+      "speed": 100,
+      "performance": 850,
+      "value": 473,
+      "aiFit": 550,
+      "priceEfficiency": 420,
+      "powerEfficiency": 850
+    },
+    "nbVector": [
+      100,
+      850,
+      473,
+      550,
+      420,
+      850
+    ],
+    "vectorLabels": [
+      "속도",
+      "성능",
+      "가성비",
+      "AI 적합",
+      "가격 효율",
+      "전력 효율"
+    ],
+    "nbMax": 393.399,
+    "nbMin": 372.203,
+    "weightedScore": 408,
+    "nbBand": "100~499",
+    "summary": "Mainboard Z790 AORUS ELITE X 부품을 속도 중심 N/B 데이터베이스 점수 408점으로 저장했습니다."
+  },
+  "nbWeightedScore": 408,
+  "nbMax": 393.399,
+  "nbMin": 372.203,
+  "nbBand": "100~499",
+  "sourceUrl": "https://search.danawa.com/dsearch.php?k1=Gigabyte%20Z790%20AORUS%20ELITE%20X%20%EC%B5%9C%EC%A0%80%EA%B0%80",
+  "notes": "Z790 chipset, supports DDR5, PCIe 5.0 x16",
+  "textRepair": null,
+  "sourceType": "collector",
+  "sourceQuery": "",
+  "collectedPricesKrw": [],
+  "targetMatched": null
+}

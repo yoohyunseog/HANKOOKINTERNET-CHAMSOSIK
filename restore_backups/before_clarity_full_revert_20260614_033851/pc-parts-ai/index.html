@@ -1,0 +1,724 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="AI가 컴퓨터 부품의 가격, 성능, 전력, 호환성을 분석해 조립 PC 자료를 정리하는 페이지">
+  <title>AI 컴퓨터 부품 분석 | 참소식.com</title>
+  <!-- Google AdSense -->
+  
+
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "x4jlyqheuh");
+</script>
+</head>
+<body>
+    <!-- PC 부품 페이지 상단 광고 -->
+    <div class="ad-container" style="max-width: 1200px; margin: 16px auto; text-align: center;">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-format="auto"
+           data-ad-layout-key="-ef+6k-30-ac+ty"
+           data-ad-client="ca-pub-4501795912654667"
+           data-ad-slot="2408767998"></ins>
+      <script>
+           (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+
+
+  <header class="top-bar">
+    <div class="top-inner">
+      <div class="brand">
+        <span class="brand-mark">AI</span>
+        <span>참소식.com · AI 컴퓨터 부품 분석 자료</span>
+      </div>
+      <div class="top-status">
+        <span>데이터 업데이트</span>
+        <span id="top-updated">확인 중</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="hero">
+      <div class="hero-chip" aria-hidden="true">
+        <div class="chip-core">AI</div>
+      </div>
+      <div class="hero-copy">
+        <h1>AI 컴퓨터 부품 가격·성능 분석</h1>
+        <p>AI가 Chrome 검색으로 부품 후보를 수집하고, 조립 가능한 조합을 반복 탐색해 N/B MAX 값이 높은 완성 PC를 계산합니다.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="../">참소식 메인</a>
+          <a class="button" href="./parts.html">부품 분석표</a>
+        </div>
+        <div class="updated-line" id="updated">갱신 시각 확인 중</div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <span class="float-token one">P</span>
+        <span class="float-token two">AI</span>
+        <span class="float-token three">C</span>
+        <div class="monitor">
+          <div class="chart-line"></div>
+          <div class="chart-bars">
+            <span style="height: 42%"></span>
+            <span style="height: 62%"></span>
+            <span style="height: 52%"></span>
+            <span style="height: 78%"></span>
+            <span style="height: 90%"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="status-grid" aria-label="분석 요약">
+      <article class="status-card">
+        <span class="status-icon">B</span>
+        <div>
+          <strong id="build-count">-</strong>
+          <span>완성 조립</span>
+        </div>
+      </article>
+      <article class="status-card">
+        <span class="status-icon">S</span>
+        <div>
+          <strong id="current-nb">-</strong>
+          <span>현재 N/B MAX</span>
+        </div>
+      </article>
+      <article class="status-card">
+        <span class="status-icon">V</span>
+        <div>
+          <small>현재 조립 상태</small>
+          <strong id="best-value">-</strong>
+        </div>
+      </article>
+      <article class="status-card">
+        <span class="status-icon">AI</span>
+        <div>
+          <small>조립 운영 방식</small>
+          <strong id="best-ai">-</strong>
+        </div>
+      </article>
+    </section>
+
+    <section class="filter-panel" aria-label="조립 N/B 값 필터">
+      <div class="filter-group">
+        <strong>조립 N/B 값</strong>
+        <div class="controls" id="nb-filters"></div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <div class="section-title">
+        <div>
+          <h2>AI 완성 컴퓨터 조립 결과</h2>
+          <p id="optimization-summary">수집된 부품으로 완성된 컴퓨터 조합을 만들고 N/B MAX 값을 우선해 정렬합니다.</p>
+        </div>
+      </div>
+      <div id="random-buttons" style="margin-bottom: 16px; display: flex; gap: 8px; flex-wrap: wrap;"></div>
+      <div id="random-status" class="notice" style="margin-bottom: 16px; display: none;"></div>
+      <div id="random-builds" style="margin-bottom: 24px;"></div>
+      <div class="build-grid" id="builds"></div>
+    </section>
+
+    <section class="section-card">
+      <div class="section-title">
+        <div>
+          <h2>자료 생성 방식</h2>
+          <p>다음 단계에서 실제 가격 검색과 벤치마크 수집을 연결할 수 있습니다.</p>
+        </div>
+      </div>
+      <ul class="method-list" id="method-list"></ul>
+    </section>
+
+    <nav class="links" aria-label="자료 링크">
+      <a href="../">메인으로 돌아가기</a>
+      <a href="./parts.html">부품 분석표 보기</a>
+      <a id="json-link" href="./pc-parts-data.json">JSON 자료 보기</a>
+      <a id="script-link" href="./pc_parts_research_bot.js">자료 생성 방식 보기</a>
+    </nav>
+
+    <div id="random-status-bottom" class="notice" style="margin-top: 24px; text-align: center; font-weight: 700;"></div>
+  </main>
+
+  <script>
+    const state = {
+      data: null,
+      activeCategory: "전체",
+      activePriceBand: "전체",
+      activeNbBand: "전체",
+      partsByCategory: {},
+      randomTopBuilds: [],
+      randomProcessing: {
+        isRunning: false,
+        targetCount: 0,
+        processedCount: 0,
+        intervalId: null
+      }
+    };
+    const assetVersion = Date.now();
+    document.getElementById("json-link").href = `./pc-parts-data.json?v=${assetVersion}`;
+    document.getElementById("script-link").href = `./pc_parts_research_bot.js?v=${assetVersion}`;
+
+    function formatKrw(value) {
+      if (!Number.isFinite(Number(value))) return "-";
+      return `${Number(value).toLocaleString("ko-KR")}원`;
+    }
+
+    function formatRandomValue(value) {
+      if (!Number.isFinite(Number(value))) return "-";
+      return Number(value).toLocaleString("ko-KR");
+    }
+
+    function escapeHtml(value) {
+      return String(value ?? "")
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;")
+        .replaceAll("'", "&#039;");
+    }
+
+    function categoryIcon(category) {
+      return {
+        CPU: "C",
+        GPU: "G",
+        RAM: "R",
+        SSD: "S",
+        Mainboard: "M",
+        PSU: "P"
+      }[category] || "P";
+    }
+
+    function getPartEstimatedPrice(part) {
+      return Number(part.priceKrw ?? part.estimatedPriceKrw ?? 0);
+    }
+
+    function getPartPerformance(part) {
+      return Number(part.performance ?? part.unifiedSpeedScore ?? 0);
+    }
+
+    function getPartAiFit(part) {
+      return Number(part.aiUseScore ?? 0);
+    }
+
+    function getPsuOutput(part) {
+      if (Number.isFinite(part.speedMetric?.value)) {
+        return Number(part.speedMetric.value);
+      }
+      if (part.category === "PSU") {
+        const wattMatch = String(part.id || part.name || "").match(/(\d{3,4})W/i);
+        if (wattMatch) return Number(wattMatch[1]);
+      }
+      return Number(part.powerWatts ?? 0);
+    }
+
+    function groupPartsByCategory(parts) {
+      return parts.reduce((map, part) => {
+        const category = part.category || "Unknown";
+        if (!map[category]) map[category] = [];
+        map[category].push(part);
+        return map;
+      }, {});
+    }
+
+    function buildCompatibilityHint(parts) {
+      if (!parts || parts.length === 0) return { valid: false, reason: "부품 없음" };
+      const psu = parts.find((part) => part.category === "PSU");
+      if (!psu) return { valid: false, reason: "PSU 없음" };
+      const totalPower = parts.reduce((sum, part) => sum + (Number(part.powerWatts) || 0), 0);
+      const psuWatt = getPsuOutput(psu);
+      const headroom = psuWatt - totalPower;
+      // 권장: 예상 소비전력 × 1.2 ≤ PSU 용량 (최소 20% 여유)
+      const minRequiredPsu = totalPower * 1.2;
+      if (headroom < 0) {
+        return { valid: false, reason: `PSU 용량 부족: ${psuWatt}W PSU로 ${totalPower}W 소비 불가 (여유 ${headroom}W)` };
+      }
+      if (psuWatt < minRequiredPsu) {
+        return { valid: false, reason: `PSU 여유 부족: ${psuWatt}W는 ${totalPower}W 시스템에 권장 최소 ${Math.ceil(minRequiredPsu)}W 필요` };
+      }
+      return { valid: true, headroom, totalPower, psuWatt };
+    }
+
+    function calculateRandomBuild(parts) {
+      const totalPriceKrw = parts.reduce((sum, part) => sum + getPartEstimatedPrice(part), 0);
+      const totalPower = parts.reduce((sum, part) => sum + (Number(part.powerWatts) || 0), 0);
+      const averagePerformance = parts.reduce((sum, part) => sum + getPartPerformance(part), 0) / parts.length;
+      const averageAiFit = parts.reduce((sum, part) => sum + getPartAiFit(part), 0) / parts.length;
+      const averageValueIndex = parts.reduce((sum, part) => sum + (Number(part.valueIndex) || 0), 0) / parts.length;
+      const priceEfficiency = totalPriceKrw > 0 ? averagePerformance / totalPriceKrw * 100000 : 0;
+      const speedScore = parts.reduce((sum, part) => sum + (Number(part.unifiedSpeedScore) || 0), 0) / parts.length;
+      const score = averagePerformance * 2.4 + averageValueIndex * 1.3 + averageAiFit * 1.1 + speedScore * 0.75 + priceEfficiency * 6 - totalPriceKrw / 100000;
+      return {
+        totalPriceKrw,
+        totalPower,
+        averagePerformance: Number(averagePerformance.toFixed(1)),
+        averageAiFit: Number(averageAiFit.toFixed(1)),
+        averageValueIndex: Number(averageValueIndex.toFixed(1)),
+        priceEfficiency: Number(priceEfficiency.toFixed(2)),
+        score: Number(score.toFixed(2)),
+        nbWeight: {
+          bitMax: Number((score * 0.42).toFixed(2)),
+          bitMin: Number((1000 - priceEfficiency).toFixed(2)),
+          balanceScore: Number((averagePerformance + averageValueIndex + averageAiFit).toFixed(1)),
+          weightedScore: Number(score.toFixed(2)),
+          nbBand: score > 80 ? "850~1000" : score > 70 ? "700~849" : score > 55 ? "500~699" : "100~499",
+          summary: `랜덤 계산: 성능 ${averagePerformance.toFixed(1)}점, 가성비 ${averageValueIndex.toFixed(1)}점, AI적합 ${averageAiFit.toFixed(1)}점, 가격효율 ${priceEfficiency.toFixed(2)}.`
+        }
+      };
+    }
+
+    function createRandomBuild() {
+      const categories = ["CPU", "GPU", "RAM", "SSD", "Mainboard", "PSU"];
+      const selected = categories.map((category) => {
+        const list = state.partsByCategory[category] || [];
+        return list[Math.floor(Math.random() * list.length)];
+      });
+      if (selected.some((part) => !part)) return null;
+      const compat = buildCompatibilityHint(selected);
+      if (!compat.valid) return null; // PSU 용량 부족 조합은 제외
+      const metrics = calculateRandomBuild(selected);
+      const key = selected.map((part) => part.id || part.name).join("|");
+      const psuPart = selected.find((part) => part.category === "PSU");
+      const psuWatt = getPsuOutput(psuPart);
+      const headroom = psuWatt - metrics.totalPower;
+      return {
+        id: key,
+        title: `랜덤 조합 ${selected.map((part) => part.category[0]).join("")}`,
+        purpose: "사용자 클릭 무작위 조합 탐색",
+        optimizationTarget: "TOP 15 랜덤 조합 유지",
+        partIds: selected.map((part) => part.id || part.name),
+        totalPriceKrw: metrics.totalPriceKrw,
+        score: metrics.score,
+        estimatedLoadWatts: metrics.totalPower,
+        recommendedPsuHeadroomWatts: headroom,
+        pricePerformanceIndex: metrics.priceEfficiency,
+        avgPerformance: metrics.averagePerformance,
+        nbWeight: metrics.nbWeight,
+        warnings: headroom < 100 ? [`PSU 여유 ${headroom}W는 권장 최소 100W 미만입니다.`] : [],
+        aiExplanation: {
+          summary: `랜덤 후보입니다. 총전력 ${metrics.totalPower}W에 ${psuWatt}W PSU로 ${headroom}W 여유가 확보되었습니다.`,
+          verdict: headroom >= 100 ? "TOP 15 유지 대상" : "PSU 여유 권장 미달"
+        },
+        parts: selected
+      };
+    }
+
+    function updateRandomTopBuilds(candidate) {
+      if (!candidate) return;
+      const existingIndex = state.randomTopBuilds.findIndex((build) => build.id === candidate.id);
+      if (existingIndex >= 0) {
+        state.randomTopBuilds[existingIndex] = candidate;
+      } else {
+        state.randomTopBuilds.push(candidate);
+      }
+      state.randomTopBuilds.sort((a, b) => b.score - a.score || a.totalPriceKrw - b.totalPriceKrw);
+      if (state.randomTopBuilds.length > 15) {
+        state.randomTopBuilds.length = 15;
+      }
+    }
+
+    function renderRandomStatus() {
+      const status = document.getElementById("random-status");
+      const statusBottom = document.getElementById("random-status-bottom");
+      const statusText = state.randomProcessing.isRunning 
+        ? `계산 중... ${state.randomProcessing.processedCount}/${state.randomProcessing.targetCount}회 · 예산: ${state.activePriceBand} · 용도: ${state.activeCategory} · Top 15`
+        : state.randomTopBuilds.length 
+          ? `완료 · 예산: ${state.activePriceBand} · 용도: ${state.activeCategory} · Top ${state.randomTopBuilds.length}`
+          : `대기 중 · 예산: ${state.activePriceBand} · 용도: ${state.activeCategory}`;
+      
+      if (status) {
+        status.style.display = "block";
+        status.textContent = statusText;
+      }
+      if (statusBottom) {
+        statusBottom.style.display = "block";
+        statusBottom.textContent = statusText;
+      }
+    }
+
+    function renderRandomControls() {
+      const container = document.getElementById("random-buttons");
+      if (!container) return;
+      if (!state.data || !state.partsByCategory) return;
+      const buttons = [100, 200, 500, 700, 1000];
+      const html = buttons.map((count) => `<button class="button" type="button" data-count="${count}" style="cursor: pointer; background: #fff; border: 1px solid #cbd5e1; padding: 8px 12px; border-radius: 6px; font-size: 12px; font-weight: 700; color: #1e293b; white-space: nowrap; transition: all 0.2s;">랜덤 ${count}번</button>`).join(" ");
+      container.innerHTML = html;
+      container.querySelectorAll("button").forEach((button) => {
+        button.addEventListener("mouseover", () => { button.style.background = "#f1f5f9"; button.style.borderColor = "#94a3b8"; });
+        button.addEventListener("mouseout", () => { button.style.background = "#fff"; button.style.borderColor = "#cbd5e1"; });
+        button.addEventListener("click", () => startRandomGeneration(Number(button.dataset.count)));
+      });
+    }
+
+    function renderRandomBuilds() {
+      const section = document.getElementById("random-builds");
+      if (!section) return;
+      if (!state.randomTopBuilds.length) {
+        section.innerHTML = `<p>랜덤 TOP 15 조합이 없습니다. 버튼을 누르면 계산을 시작합니다.</p>`;
+        return;
+      }
+      section.innerHTML = state.randomTopBuilds.map((build, index) => `
+        <article class="build-card">
+          <div class="build-head">
+            <span class="build-icon">${index < 3 ? ["1", "2", "3"][index] : "R"}</span>
+            <div>
+              <h3>${escapeHtml(build.title)}</h3>
+              <p>${escapeHtml(build.purpose)}</p>
+              <p><strong>랜덤 점수:</strong> ${formatRandomValue(build.score)}점</p>
+            </div>
+          </div>
+          <div class="build-meta">
+            <span>총액<br>${formatKrw(build.totalPriceKrw)}</span>
+            <span>점수<br>${formatRandomValue(build.score)}점</span>
+            <span>총전력<br>${formatRandomValue(build.estimatedLoadWatts)}W</span>
+            <span>PSU 여유<br>${formatRandomValue(build.recommendedPsuHeadroomWatts)}W</span>
+          </div>
+          <div class="nb-weight">
+            <span>가중치<strong>${escapeHtml(build.nbWeight.weightedScore)}</strong></span>
+            <span>균형<strong>${escapeHtml(build.nbWeight.balanceScore)}</strong></span>
+            <span>N/B MAX<strong>${escapeHtml(build.nbWeight.bitMax)}</strong></span>
+            <span>N/B 구간<strong>${escapeHtml(build.nbWeight.nbBand)}</strong></span>
+          </div>
+          <p><strong>요약:</strong> ${escapeHtml(build.aiExplanation.summary)}</p>
+          <ul>
+            ${build.parts.map(renderPartDetail).join("")}
+          </ul>
+          <div class="build-cta" style="margin-top: 12px; padding: 12px; background: #f8fafc; border-radius: 6px; border: 1px solid #e2e8f0;">
+            <div style="display: flex; flex-wrap: wrap; gap: 6px;">
+              <a href="https://www.coupang.com/np/search?q=${encodeURIComponent(build.parts.map(p => p.name).join(' '))}" target="_blank" rel="noopener sponsored" style="display: inline-flex; align-items: center; padding: 8px 12px; background: #dc2626; color: #fff; border-radius: 4px; font-size: 12px; font-weight: 700; text-decoration: none;">쿠팡</a>
+              <a href="https://search.shopping.naver.com/search/all?query=${encodeURIComponent(build.parts.map(p => p.name).join(' '))}" target="_blank" rel="noopener sponsored" style="display: inline-flex; align-items: center; padding: 8px 12px; background: #03c75a; color: #fff; border-radius: 4px; font-size: 12px; font-weight: 700; text-decoration: none;">네이버</a>
+              <a href="https://www.danawa.com/srch/?k1=${encodeURIComponent(build.parts.map(p => p.name).join(' '))}" target="_blank" rel="noopener sponsored" style="display: inline-flex; align-items: center; padding: 8px 12px; background: #2563eb; color: #fff; border-radius: 4px; font-size: 12px; font-weight: 700; text-decoration: none;">다나와</a>
+            </div>
+          </div>
+        </article>
+      `).join("");
+    }
+
+    function processRandomSample() {
+      if (state.randomProcessing.processedCount >= state.randomProcessing.targetCount) {
+        clearInterval(state.randomProcessing.intervalId);
+        state.randomProcessing.isRunning = false;
+        state.randomProcessing.intervalId = null;
+        renderRandomStatus();
+        return;
+      }
+      const candidate = createRandomBuild();
+      if (candidate) {
+        updateRandomTopBuilds(candidate);
+        renderRandomBuilds();
+        state.randomProcessing.processedCount += 1;
+      }
+      renderRandomStatus();
+    }
+
+    function startRandomGeneration(count) {
+      const validCount = Number.isFinite(count) && count > 0 ? count : 100;
+      if (!state.data || !Object.keys(state.partsByCategory).length) return;
+      if (state.randomProcessing.intervalId) {
+        clearInterval(state.randomProcessing.intervalId);
+        state.randomProcessing.intervalId = null;
+      }
+      state.randomProcessing.isRunning = true;
+      state.randomProcessing.targetCount = validCount;
+      state.randomProcessing.processedCount = 0;
+      let attempts = 0;
+      const maxAttempts = validCount * 5;
+      state.randomProcessing.intervalId = setInterval(() => {
+        attempts += 1;
+        if (attempts > maxAttempts) {
+          clearInterval(state.randomProcessing.intervalId);
+          state.randomProcessing.isRunning = false;
+          state.randomProcessing.intervalId = null;
+          renderRandomStatus();
+          return;
+        }
+        processRandomSample();
+      }, 100);
+      renderRandomStatus();
+    }
+
+    function methodIcon(key) {
+      return {
+        performance: "P",
+        valueIndex: "V",
+        compatibility: "C",
+        nextStep: "N"
+      }[key] || "A";
+    }
+
+    function buildGoogleSearchUrl(build) {
+      return `https://www.google.com/search?q=${encodeURIComponent(buildSearchText(build))}`;
+    }
+
+    function buildSearchText(build) {
+      const partsText = (build.parts || []).map((part) => [
+        part.category,
+        part.name,
+        part.maker ? `제조사 ${part.maker}` : "",
+        part.platform ? `플랫폼 ${part.platform}` : "",
+        part.priceKrw ? `가격 ${formatKrw(part.priceKrw)}` : "",
+        part.speedLabel ? `속도 ${part.speedLabel}` : "",
+        part.unifiedSpeedScore ? `통합속도 ${part.unifiedSpeedScore}점` : "",
+        part.performance ? `성능 ${part.performance}점` : "",
+        part.valueIndex ? `가성비 ${part.valueIndex}점` : "",
+        part.powerWatts ? `전력 ${part.powerWatts}W` : ""
+      ].filter(Boolean).join(" ")).join(" / ");
+      return [
+        build.title,
+        build.purpose,
+        `총액 ${formatKrw(build.totalPriceKrw)}`,
+        `N/B MAX ${build.nbWeight?.bitMax ?? "-"}`,
+        `조합 가중치 ${build.nbWeight?.weightedScore ?? "-"}점`,
+        `가격 성능 지표 ${build.pricePerformanceIndex ?? "-"}`,
+        partsText,
+        "조립 PC",
+        "가격 성능 호환성 추천"
+      ].join(" ");
+    }
+
+    function shortText(value, maxLength = 110) {
+      const text = String(value || "").replace(/\s+/g, " ").trim();
+      return text.length > maxLength ? `${text.slice(0, maxLength)}...` : text;
+    }
+
+    function renderPartDetail(part) {
+      const details = [
+        part.maker ? `제조사 ${part.maker}` : "",
+        part.platform ? `플랫폼 ${part.platform}` : "",
+        part.speedLabel ? `속도 ${part.speedLabel}` : "",
+        part.unifiedSpeedScore ? `통합속도 ${part.unifiedSpeedScore}점` : "",
+        part.performance ? `성능 ${part.performance}점` : "",
+        part.valueIndex ? `가성비 ${part.valueIndex}점` : "",
+        part.aiUseScore ? `AI적합 ${part.aiUseScore}점` : "",
+        part.powerWatts ? `전력 ${part.powerWatts}W` : "",
+        part.tags?.length ? `용도 ${part.tags.join(", ")}` : ""
+      ].filter(Boolean).join(" · ");
+      const naverUrl = `https://search.shopping.naver.com/search/all?query=${encodeURIComponent(part.name)}`;
+      return `<li><strong>${escapeHtml(part.category)} · <a href="${naverUrl}" target="_blank" rel="noopener sponsored" style="color: #1d4ed8; text-decoration: underline;">${escapeHtml(part.name)}</a></strong> · ${formatKrw(getPartEstimatedPrice(part))}<span class="part-detail">${escapeHtml(details)}</span></li>`;
+    }
+
+    function renderSummary(data) {
+      const currentBuild = data.builds.find((build) => build.currentAssembly) || data.builds[0];
+      document.getElementById("build-count").textContent = data.builds.length;
+      document.getElementById("current-nb").textContent = currentBuild?.nbWeight?.bitMax ?? "-";
+      document.getElementById("best-value").textContent = currentBuild ? currentBuild.title : "-";
+      document.getElementById("best-ai").textContent = data.assemblyState ? "계속 조립 상태" : "계산 준비";
+      document.getElementById("updated").textContent = `갱신 시각: ${data.updatedAt || "확인 필요"}`;
+      document.getElementById("top-updated").textContent = data.updatedAt || "확인 필요";
+      const notice = document.getElementById("notice");
+      if (notice) notice.textContent = data.notice || "";
+      const optimization = data.optimization;
+      const optimizationSummary = document.getElementById("optimization-summary");
+      if (optimization && optimizationSummary) {
+        const remainingText = Number.isFinite(optimization.remainingCombinations)
+          ? ` 남은 미검토 조립은 ${optimization.remainingCombinations}개입니다.`
+          : "";
+        const skippedText = Number.isFinite(optimization.skippedAlreadyChecked)
+          ? ` 이미 검토한 ${optimization.skippedAlreadyChecked}개 조립은 중복 계산에서 제외했습니다.`
+          : "";
+        optimizationSummary.textContent = `${optimization.testedCombinations}개 조합 중 ${optimization.validCombinations}개 호환 조합을 계산하고, ${optimization.selectedBuilds}개를 N/B MAX 기준으로 선택했습니다.${skippedText}${remainingText}`;
+      }
+    }
+
+    function renderFilters(data) {
+      const nbFilters = document.getElementById("nb-filters");
+      const nbBands = ["전체", "850~1000", "700~849", "500~699", "100~499"];
+      nbFilters.innerHTML = nbBands.map((band) => `
+        <button class="filter-button ${band === state.activeNbBand ? "is-active" : ""}" data-nb-band="${escapeHtml(band)}">
+          ${escapeHtml(band)}
+        </button>
+      `).join("");
+      nbFilters.querySelectorAll("button").forEach((button) => {
+        button.addEventListener("click", () => {
+          state.activeNbBand = button.dataset.nbBand;
+          render();
+        });
+      });
+    }
+
+    function renderParts(data) {
+      const table = document.getElementById("parts-table");
+      const parts = data.parts.filter((part) => {
+        const categoryOk = state.activeCategory === "전체" || part.category === state.activeCategory;
+        const priceOk = state.activePriceBand === "전체" || part.priceBand === state.activePriceBand;
+        return categoryOk && priceOk;
+      });
+
+      if (!parts.length) {
+        table.innerHTML = '<tr><td colspan="8">표시할 부품이 없습니다.</td></tr>';
+        return;
+      }
+
+      table.innerHTML = parts.map((part) => `
+        <tr>
+          <td>
+            <div class="category-cell">
+              <span class="category-icon">${escapeHtml(categoryIcon(part.category))}</span>
+              ${escapeHtml(part.category)}
+            </div>
+          </td>
+          <td>
+            <div class="part-cell">
+              <img class="part-thumb" src="${escapeHtml(part.imageUrl || "./img/cpu.svg")}" alt="${escapeHtml(part.category)} 이미지" loading="lazy">
+              <div>
+                <div class="part-name">${escapeHtml(part.name)}</div>
+                <div class="part-meta">${escapeHtml(part.maker)} · ${escapeHtml(part.platform)}</div>
+              </div>
+            </div>
+          </td>
+          <td>${formatKrw(part.estimatedPriceKrw)}</td>
+          <td>${escapeHtml(part.speedLabel || "-")}</td>
+          <td>
+            <div><strong>${escapeHtml(part.speedMetric?.label || "-")}</strong></div>
+            <div class="part-meta">${escapeHtml(part.speedMetric?.value ?? "-")} ${escapeHtml(part.speedMetric?.unit || "")}</div>
+            <div class="part-meta">${escapeHtml(part.speedMetric?.compareNote || "")}</div>
+          </td>
+          <td>${escapeHtml(part.unifiedSpeedScore || "-")}점</td>
+          <td>${escapeHtml(part.performance)}</td>
+          <td>${escapeHtml(part.valueIndex)}</td>
+          <td>${part.powerWatts ? `${escapeHtml(part.powerWatts)}W` : "-"}</td>
+          <td>${escapeHtml(part.aiExplanation?.userLevel?.level || "-")}</td>
+          <td>
+            <div class="tag-list">
+              ${(part.tags || []).map((tag) => `<span class="tag">${escapeHtml(tag)}</span>`).join("")}
+            </div>
+          </td>
+          <td>${escapeHtml(part.notes)}</td>
+        </tr>
+      `).join("");
+    }
+
+    function renderBuilds(data) {
+      const builds = document.getElementById("builds");
+      const filteredBuilds = data.builds.filter((build) => {
+        return state.activeNbBand === "전체" || build.nbWeight?.nbBand === state.activeNbBand;
+      });
+      if (!filteredBuilds.length) {
+        builds.innerHTML = "<p>선택한 N/B 값 구간에 해당하는 조립 후보가 없습니다.</p>";
+        return;
+      }
+
+      builds.innerHTML = filteredBuilds.map((build, index) => `
+        <article class="build-card">
+          <div class="build-head">
+            <span class="build-icon">${["B", "AI", "G"][index] || "P"}</span>
+            <div>
+              ${build.currentAssembly ? '<span class="current-badge">현재 유지 중인 조립</span>' : ""}
+              <h3>${escapeHtml(build.title)}</h3>
+              <p>${escapeHtml(build.purpose)}</p>
+              <p><strong>목표:</strong> ${escapeHtml(build.optimizationTarget || "N/B MAX")}</p>
+            </div>
+          </div>
+          <div class="build-meta">
+            <span>총액<br>${formatKrw(build.totalPriceKrw)}</span>
+            <span>점수<br>${escapeHtml(build.score)}점</span>
+            <span>예상 부하<br>${escapeHtml(build.estimatedLoadWatts)}W</span>
+            <span>파워 여유<br>${build.recommendedPsuHeadroomWatts ?? "-"}W</span>
+          </div>
+          ${build.nbWeight ? `
+            <div class="nb-weight">
+              <span>조합 가중치<strong>${escapeHtml(build.nbWeight.weightedScore)}점</strong></span>
+              <span>균형 점수<strong>${escapeHtml(build.nbWeight.balanceScore)}점</strong></span>
+              <span>N/B MAX<strong>${escapeHtml(build.nbWeight.bitMax)}</strong></span>
+              <span>N/B MIN<strong>${escapeHtml(build.nbWeight.bitMin)}</strong></span>
+              <span>N/B 구간<strong>${escapeHtml(build.nbWeight.nbBand)}</strong></span>
+            </div>
+            ${Number.isFinite(build.pricePerformanceIndex) ? `<p><strong>가격/성능 지표:</strong> ${escapeHtml(build.pricePerformanceIndex)} · 평균 성능 ${escapeHtml(build.avgPerformance || "-")}점</p>` : ""}
+            <p><strong>N/B 분석:</strong> ${escapeHtml(build.nbWeight.summary)}</p>
+          ` : ""}
+          ${build.aiExplanation ? `<p><strong>AI 요약:</strong> ${escapeHtml(shortText(build.aiExplanation.summary))}</p>` : ""}
+          ${build.aiExplanation?.verdict ? `<p><strong>판정:</strong> ${escapeHtml(build.aiExplanation.verdict)}</p>` : ""}
+          <ul>
+            ${build.parts.map(renderPartDetail).join("")}
+          </ul>
+          <div class="build-cta" style="margin-top: 16px; padding: 16px; background: #f8fafc; border-radius: 8px; border: 1px solid #e2e8f0;">
+            <p style="margin: 0 0 12px; font-size: 14px; font-weight: 700; color: #334155;">🛒 이 견적 구매하기</p>
+            <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+              <a href="https://www.coupang.com/np/search?q=${encodeURIComponent(build.parts.map(p => p.name).join(' '))}" target="_blank" rel="noopener sponsored" style="display: inline-flex; align-items: center; gap: 6px; padding: 10px 16px; background: #dc2626; color: #fff; border-radius: 6px; font-size: 13px; font-weight: 700; text-decoration: none;">
+                쿠팡에서 구매
+              </a>
+              <a href="https://search.shopping.naver.com/search/all?query=${encodeURIComponent(build.parts.map(p => p.name).join(' '))}" target="_blank" rel="noopener sponsored" style="display: inline-flex; align-items: center; gap: 6px; padding: 10px 16px; background: #03c75a; color: #fff; border-radius: 6px; font-size: 13px; font-weight: 700; text-decoration: none;">
+                네이버 쇼핑
+              </a>
+              <a href="https://www.danawa.com/srch/?k1=${encodeURIComponent(build.parts.map(p => p.name).join(' '))}" target="_blank" rel="noopener sponsored" style="display: inline-flex; align-items: center; gap: 6px; padding: 10px 16px; background: #2563eb; color: #fff; border-radius: 6px; font-size: 13px; font-weight: 700; text-decoration: none;">
+                다나와 비교
+              </a>
+            </div>
+            <p style="margin: 10px 0 0; font-size: 11px; color: #64748b;">※ 쇼핑몰 링크를 통해 구매 시, 판매 수수료가 지원될 수 있습니다.</p>
+          </div>
+          <a class="build-search-link" href="${buildGoogleSearchUrl(build)}" title="${escapeHtml(buildSearchText(build))}" target="_blank" rel="noopener noreferrer">전체 조립 상세 텍스트로 구글 검색</a>
+          ${build.warnings.length ? `<p><strong>주의:</strong> ${escapeHtml(build.warnings.join(" "))}</p>` : ""}
+        </article>
+      `).join("");
+    }
+
+    function renderLevelAnalysis(data) {
+      const root = document.getElementById("level-analysis");
+      const groups = data.levelAnalysis || [];
+      if (!groups.length) {
+        root.innerHTML = "<p>사용자 수준별 분석 자료가 없습니다.</p>";
+        return;
+      }
+
+      root.innerHTML = groups.map((group) => `
+        <article class="level-card">
+          <h3>${escapeHtml(group.level)}</h3>
+          <p>${escapeHtml(group.summary)}</p>
+          <span class="level-count">${escapeHtml(group.count)}개</span>
+          <ul>
+            ${(group.recommendedParts || []).map((part) => `
+              <li>${escapeHtml(part.category)} · ${escapeHtml(part.name)} · ${escapeHtml(part.speedLabel || "-")}</li>
+            `).join("")}
+          </ul>
+        </article>
+      `).join("");
+    }
+
+    function renderMethod(data) {
+      const method = data.method || {};
+      document.getElementById("method-list").innerHTML = Object.entries(method).map(([key, value]) => `
+        <li>
+          <span class="method-icon">${escapeHtml(methodIcon(key))}</span>
+          <div>
+            <strong>${escapeHtml(key)}</strong>
+            <span>${escapeHtml(value)}</span>
+          </div>
+        </li>
+      `).join("");
+    }
+
+    function render() {
+      if (!state.data) return;
+      renderSummary(state.data);
+      renderFilters(state.data);
+      renderBuilds(state.data);
+      renderMethod(state.data);
+      renderRandomBuilds();
+      renderRandomStatus();
+    }
+
+    fetch(`./pc-parts-data.json?v=${assetVersion}`, { cache: "no-store" })
+      .then((response) => {
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        return response.json();
+      })
+      .then((data) => {
+        state.data = data;
+        state.partsByCategory = groupPartsByCategory(data.parts || []);
+        render();
+        setTimeout(() => startRandomGeneration(100), 100);
+      })
+      .catch((error) => {
+        document.getElementById("updated").textContent = "자료를 불러오지 못했습니다.";
+        document.getElementById("builds").innerHTML = `<p>${escapeHtml(error.message)}</p>`;
+      });
+  </script>
+</body>
+</html>
