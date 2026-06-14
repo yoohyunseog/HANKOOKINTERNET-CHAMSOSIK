@@ -17,7 +17,13 @@
   <meta property="og:title" content="참소식 블로그 | AI 분석과 데이터 인사이트">
   <meta property="og:description" content="기술 데이터와 인사이트로 세상을 더 명확하게 바라보는 참된 블로그">
   <meta property="og:image" content="assets/chamsosik-main-live-screenshot-2026-06-10.png">
-
+  <script type="text/javascript">
+      (function(c,l,a,r,i,t,y){
+          c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+          t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+          y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+      })(window, document, "clarity", "script", "x4jlyqheuh");
+  </script>
   <title>참소식 블로그 | AI 분석과 데이터 인사이트</title>
   <link rel="stylesheet" href="../common-site.css">
 
@@ -1689,6 +1695,32 @@
       }
     }
 
+    function stopSortingAtCurrentLayout() {
+      if (!processing) return false;
+
+      stopProcessing();
+      container.classList.add('masonry-ready');
+      container.querySelectorAll('.post-card').forEach((card) => {
+        card.classList.add('masonry-item');
+        card.style.transitionDelay = '0s';
+      });
+      layoutGrid();
+      loadViewCounts();
+      updateLoadingProgress(100, '정렬 중단됨');
+      hideLoading();
+      const indicator = document.getElementById('sortIndicator');
+      if (indicator) indicator.hidden = false;
+      return true;
+    }
+
+    document.addEventListener('click', function(event) {
+      if (!processing) return;
+      event.preventDefault();
+      event.stopPropagation();
+      event.stopImmediatePropagation();
+      stopSortingAtCurrentLayout();
+    }, true);
+
     // 유사도 프로그레스 바 업데이트
     function setSimilarityProgress(cardElement, score) {
       const simDiv = cardElement.querySelector('.post-similarity');
@@ -1846,6 +1878,7 @@
     }
 
     function renderPosts(sortMode = "all") {
+      stopProcessing();
       currentSortMode = sortMode;
       selectedPostIndex = null;
       

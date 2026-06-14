@@ -120,6 +120,20 @@ git push origin main
 - **Requests** (HTTP 클라이언트)
 - **Tkinter** (GUI)
 
+## 포스팅 생성 지침
+
+새 HTML 포스팅을 생성할 때는 Microsoft Clarity 추적 스크립트를 `<head>` 영역의 `</head>` 바로 앞에 반드시 추가합니다. 기존 HTML 파일 전체에 일괄 삽입하지 말고, 새로 만드는 포스팅 파일에만 포함합니다.
+
+```html
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "x4jlyqheuh");
+</script>
+```
+
 ## 📊 API 엔드포인트
 
 | Method | Endpoint | 설명 |

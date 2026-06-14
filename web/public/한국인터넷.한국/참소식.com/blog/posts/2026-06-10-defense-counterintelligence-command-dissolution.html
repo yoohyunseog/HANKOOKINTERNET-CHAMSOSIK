@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
@@ -153,5 +153,13 @@
   <footer class="site-footer">
     <p>&copy; 2026 참소식.com. 모든 권리 보유.</p>
   </footer>
+  <script src="../js/view-tracker.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      if (window.BlogViewTracker) {
+        window.BlogViewTracker.trackPostVisit();
+      }
+    });
+  </script>
 </body>
 </html>

@@ -10,10 +10,16 @@
 blog/
 ├── index.html              # 블로그 메인 페이지
 ├── README.md               # 이 파일
+├── generate_index_json.bat # posts/index.json 자동 생성 실행 파일
+├── generate_index_json.ps1 # posts/index.json 자동 생성 스크립트
 ├── assets/                 # 포스팅 이미지 저장 폴더
-├── posts/                  # 포스팅 HTML 파일 저장
+├── posts/                  # 포스팅 HTML 파일 및 포스팅별 폴더 저장
 │   ├── index.json          # 포스팅 메타데이터 (제목, 요약, 날짜, 카테고리)
-│   └── 2026-06-10-xxx.html # 개별 포스팅 파일
+│   ├── 2026-06-10-xxx.html # 개별 포스팅 파일
+│   └── post-slug/          # 이미지가 많은 포스팅은 폴더형으로 관리
+│       ├── 2026-06-14-post-slug.html
+│       ├── post-slug-cover.png
+│       └── post-slug-transcript.txt
 ├── generated_posts/        # 자동 생성된 마크다운 포스트
 ├── js/                     # JavaScript 파일
 └── bots/                   # 봇 관련 파일
@@ -29,6 +35,16 @@ blog/
 ```
 YYYY-MM-DD-제목-키워드.html
 ```
+
+이미지와 원문 기록 파일이 함께 있는 포스팅은 다음처럼 포스팅별 폴더 안에 HTML을 함께 넣습니다:
+
+```
+posts/포스팅-슬러그/YYYY-MM-DD-포스팅-슬러그.html
+posts/포스팅-슬러그/포스팅-슬러그-cover.png
+posts/포스팅-슬러그/포스팅-슬러그-transcript.txt
+```
+
+폴더형 포스팅에서는 HTML 기준 상대경로가 한 단계 깊어지므로 `common-site.css`, `domain-check.js`, `view-tracker.js`, 블로그 목록 링크를 각각 새 위치에 맞게 조정합니다.
 
 **예시:**
 - `2026-06-10-latest-humanoid-robots-2026.html`
@@ -693,7 +709,7 @@ YYYY-MM-DD-제목-키워드.html
 
 ### 작성 후
 
-- [ ] `posts/index.json`에 메타데이터 추가
+- [ ] `generate_index_json.bat` 실행으로 `posts/index.json` 자동 갱신
 - [ ] 이미지를 `assets/` 폴더에 저장
 - [ ] 모바일 반응형 확인
 - [ ] 링크 정상 작동 확인
@@ -703,7 +719,15 @@ YYYY-MM-DD-제목-키워드.html
 
 ## 📦 index.json 메타데이터 형식
 
-새 포스팅을 추가한 후 `posts/index.json` 파일에 다음 형식으로 메타데이터를 추가합니다:
+새 포스팅을 추가한 후에는 `posts/index.json`을 직접 수정하지 말고 블로그 폴더의 자동 생성 배치를 실행합니다:
+
+```bat
+generate_index_json.bat
+```
+
+스크립트는 `posts/` 아래의 모든 `.html` 파일을 하위 폴더까지 검색해 제목, 요약, 날짜, 카테고리, 대표 이미지를 추출하고 `posts/index.json`을 다시 만듭니다.
+
+아래 형식은 자동 생성되는 메타데이터 구조를 확인하거나 수동 점검할 때 참고합니다:
 
 ### 기본 형식
 
@@ -728,6 +752,12 @@ YYYY-MM-DD-제목-키워드.html
 | `category` | ✅ | 카테고리 (메타 태그의 category와 동일) | `"폐쇄망 분석"`, `"시장 분석"`, `"정보 보안"` |
 | `href` | ✅ | 포스팅 파일 경로 (posts/ 접두사 필수) | `"posts/2026-06-11-closed-network-trauma-malignant-capital-nb-algorithm.html"` |
 | `views` | ✅ | 조회수 (초기값: 0) | `0` |
+
+폴더형 포스팅의 `href` 예시:
+
+```json
+"href": "posts/ha-jiwon-kyunghee-festival-cheer/2026-06-14-ha-jiwon-kyunghee-festival-cheer.html"
+```
 
 ### 추가 예시
 
@@ -759,23 +789,24 @@ YYYY-MM-DD-제목-키워드.html
 3. **새 포스팅은 맨 앞에 추가**: 최신 포스팅이 상단에 오도록 배열의 첫 번째에 추가합니다
 4. **파일명 일치**: `href`의 파일명이 실제 HTML 파일명과 정확히 일치해야 합니다
 5. **날짜 형식**: `YYYY-MM-DD HH:MM:SS` 형식을 사용합니다
+6. **자동 생성 우선**: 포스팅 수가 많아지면 수동 편집 대신 `generate_index_json.bat`을 실행합니다
 
 ### 🔄 포스팅 추가 워크플로우
 
 ```
 1. HTML 포스팅 작성
    ↓
-2. posts/ 폴더에 HTML 파일 저장
+2. posts/ 폴더 또는 posts/포스팅-슬러그/ 폴더에 HTML 파일 저장
    ↓
-3. assets/ 폴더에 이미지 저장 (필요시)
+3. assets/ 폴더 또는 포스팅별 폴더에 이미지 저장
    ↓
-4. posts/index.json 파일 열기
+4. generate_index_json.bat 실행
    ↓
-5. 새 포스팅 메타데이터를 배열 맨 앞에 추가
+5. posts/index.json 자동 갱신 확인
    ↓
-6. JSON 문법 검증 (쉼표, 괄호 등)
+6. 블로그 메인 페이지에서 새 글 노출 확인
    ↓
-7. 저장 후 블로그 메인 페이지에서 확인
+7. 링크와 이미지 경로 확인
 ```
 
 ---
@@ -1130,8 +1161,18 @@ if __name__ == '__main__':
 
 ---
 
-*최종 업데이트: 2026-06-13*
+*최종 업데이트: 2026-06-14*
 ---
+
+## 2026-06-14 추가 포스팅
+
+- 제목: 하지원, 경희대 축제에서 되찾은 청춘의 낭만
+- 폴더: `posts/ha-jiwon-kyunghee-festival-cheer/`
+- 파일: `posts/ha-jiwon-kyunghee-festival-cheer/2026-06-14-ha-jiwon-kyunghee-festival-cheer.html`
+- 대표 이미지: `posts/ha-jiwon-kyunghee-festival-cheer/ha-jiwon-kyunghee-cheer-stage.png`
+- 원문 기록 파일: `posts/ha-jiwon-kyunghee-festival-cheer/ha-jiwon-kyunghee-festival-cheer-transcript.txt`
+- 분류: 웹예능 리뷰
+- 목록 갱신: `generate_index_json.bat` 실행
 
 ## 2026-06-13 추가 포스팅
 
@@ -1288,4 +1329,4 @@ color:#ef4444;
 
 새 포스트의 HTML 포스터는 `blog/posts/날짜-슬러그-poster.html` 형식으로 저장합니다. 블로그 목록 썸네일이 필요하면 `blog/assets/날짜-슬러그-poster.svg` 같은 이미지 파일을 별도로 만들고 `posts/index.json`의 `image` 필드에 연결합니다.
 
-*최종 업데이트: 2026-06-13*
+*최종 업데이트: 2026-06-14*
