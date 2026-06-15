@@ -6,12 +6,25 @@ echo.
 echo ================================================================
 echo          Ollama 서버 시작 - 원격 서버 (클라우드 모델)
 echo          한국 IP만 접근 허용 (보안 강화)
+echo          API 키는 .env 파일에서 로드 (Git 제외)
 echo ================================================================
 echo.
 
 set "REMOTE_HOST=root@211.45.162.155"
 set "OLLAMA_PORT=11434"
-set "OLLAMA_API_KEY=d8cf2811037b4791b2e36ffb4afee830.LrLvzfuvzutO7MLHciyiUtpq"
+
+REM .env 파일에서 API 키 로드
+if exist "%~dp0.env" (
+    for /f "tokens=1,2 delims==" %%a in (%~dp0.env) do (
+        if "%%a"=="OLLAMA_API_KEY" set "OLLAMA_API_KEY=%%b"
+    )
+    echo [INFO] API 키를 .env 파일에서 로드했습니다.
+) else (
+    echo [ERROR] .env 파일이 없습니다. ollama-remote/..env 파일을 생성하세요.
+    echo [ERROR] 형식: OLLAMA_API_KEY=your_api_key_here
+    pause
+    exit /b 1
+)
 
 echo [1/7] 기존 Ollama 서비스 중지...
 ssh %REMOTE_HOST% "systemctl stop ollama 2>/dev/null; pkill -9 ollama 2>/dev/null || true"
